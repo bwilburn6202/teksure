@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        teksure: {
+          teal: "hsl(var(--teksure-teal) / <alpha-value>)",
+          success: "hsl(var(--teksure-success) / <alpha-value>)",
+          warning: "hsl(var(--teksure-warning) / <alpha-value>)",
+          info: "hsl(var(--teksure-info) / <alpha-value>)",
+        },
+      },
+      fontFamily: {
+        sans: ["DM Sans", "system-ui", "-apple-system", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
