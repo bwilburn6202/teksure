@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import HowItWorks from "./pages/HowItWorks";
 import Pricing from "./pages/Pricing";
+import Guides from "./pages/Guides";
+import GuideDetail from "./pages/GuideDetail";
 import CustomerDashboard from "./pages/customer/Dashboard";
 import CustomerJobRoom from "./pages/customer/JobRoom";
 import TechDashboard from "./pages/tech/Dashboard";
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/signup" element={<Signup />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/guides/:slug" element={<GuideDetail />} />
             <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
             <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
             <Route path="/tech" element={<ProtectedRoute allowedRoles={['tech']}><TechDashboard /></ProtectedRoute>} />
