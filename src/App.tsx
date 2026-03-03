@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import HowItWorks from "./pages/HowItWorks";
 import Pricing from "./pages/Pricing";
+import Guides from "./pages/Guides";
+import GuideDetail from "./pages/GuideDetail";
 import CustomerDashboard from "./pages/customer/Dashboard";
 import CustomerJobRoom from "./pages/customer/JobRoom";
 import TechDashboard from "./pages/tech/Dashboard";
