@@ -43,7 +43,7 @@ const Index = () => {
                 <Link to="/signup">Get Started <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="btn-hero-outline">
-                <Link to="/how-it-works">Learn More</Link>
+                <Link to="/how-it-works">Learn How TekSure Works</Link>
               </Button>
             </div>
           </motion.div>
