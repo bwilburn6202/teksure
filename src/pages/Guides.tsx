@@ -11,10 +11,10 @@ import { Footer } from '@/components/layout/Footer';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 
 const categoryIcons: Record<GuideCategory, typeof BookOpen> = {
-  'troubleshooting': BookOpen,
-  'knowledge-base': HelpCircle,
-  'blog': Newspaper,
-  'video': Video,
+  'windows-guides': BookOpen,
+  'mac-guides': HelpCircle,
+  'essential-skills': Newspaper,
+  'tips-tricks': Video,
 };
 
 const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
