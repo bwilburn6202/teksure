@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, BookOpen, HelpCircle, Newspaper, Video, ArrowRight } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -10,11 +10,11 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 
-const categoryIcons: Record<GuideCategory, typeof BookOpen> = {
-  'windows-guides': BookOpen,
-  'mac-guides': HelpCircle,
-  'essential-skills': Newspaper,
-  'tips-tricks': Video,
+const categoryIcons: Record<GuideCategory, typeof Monitor> = {
+  'windows-guides': Monitor,
+  'mac-guides': Apple,
+  'essential-skills': Lightbulb,
+  'tips-tricks': Sparkles,
 };
 
 const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
