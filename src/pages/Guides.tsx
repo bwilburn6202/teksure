@@ -11,10 +11,10 @@ import { Footer } from '@/components/layout/Footer';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 
 const categoryIcons: Record<GuideCategory, typeof BookOpen> = {
-  'troubleshooting': BookOpen,
-  'knowledge-base': HelpCircle,
-  'blog': Newspaper,
-  'video': Video,
+  'windows-guides': BookOpen,
+  'mac-guides': HelpCircle,
+  'essential-skills': Newspaper,
+  'tips-tricks': Video,
 };
 
 const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
@@ -64,7 +64,7 @@ const Guides = () => {
     return results;
   }, [search, activeTab]);
 
-  const categories: ('all' | GuideCategory)[] = ['all', 'troubleshooting', 'knowledge-base', 'blog', 'video'];
+  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'];
 
   return (
     <div className="min-h-screen">
@@ -101,7 +101,7 @@ const Guides = () => {
       {/* Category Stats */}
       <section className="container -mt-8 relative z-10 mb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {(['troubleshooting', 'knowledge-base', 'blog', 'video'] as GuideCategory[]).map((cat, i) => {
+          {(['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'] as GuideCategory[]).map((cat, i) => {
             const Icon = categoryIcons[cat];
             const count = guides.filter(g => g.category === cat).length;
             return (
