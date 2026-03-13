@@ -101,7 +101,7 @@ const Guides = () => {
       {/* Category Stats */}
       <section className="container -mt-8 relative z-10 mb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {(['troubleshooting', 'knowledge-base', 'blog', 'video'] as GuideCategory[]).map((cat, i) => {
+          {(['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'] as GuideCategory[]).map((cat, i) => {
             const Icon = categoryIcons[cat];
             const count = guides.filter(g => g.category === cat).length;
             return (
