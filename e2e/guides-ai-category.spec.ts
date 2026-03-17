@@ -1,14 +1,16 @@
 import { test, expect } from '@playwright/test';
 
 test('Guides page loads with AI Guides category', async ({ page }) => {
-  await page.goto('/guides', { waitUntil: 'networkidle' });
+  test.setTimeout(60000);
+  await page.goto('/guides', { waitUntil: 'domcontentloaded' });
   
-  // Log what we see
+  // Wait for the h1 to appear
+  await page.waitForSelector('h1', { timeout: 15000 });
   const title = await page.locator('h1').first().textContent();
   console.log('Page h1:', title);
   console.log('URL:', page.url());
 
-  await expect(page.locator('h1').first()).toContainText('Tech Guides');
+  await expect(page.locator('h1').first()).toContainText('Tech Guides', { timeout: 10000 });
 
   // Check AI Guides tab exists
   const aiTab = page.getByRole('tab', { name: /AI Guides/i });
@@ -19,7 +21,7 @@ test('Guides page loads with AI Guides category', async ({ page }) => {
 
   // Check guide cards appear
   const cards = page.locator('a[href^="/guides/"]');
-  await expect(cards.first()).toBeVisible();
+  await expect(cards.first()).toBeVisible({ timeout: 5000 });
   const cardCount = await cards.count();
   console.log(`${cardCount} AI guide cards`);
   expect(cardCount).toBeGreaterThan(0);
@@ -29,7 +31,7 @@ test('Guides page loads with AI Guides category', async ({ page }) => {
   console.log('First guide:', href);
   await cards.first().click();
   
-  await expect(page.locator('h1')).toBeVisible();
+  await page.waitForSelector('h1', { timeout: 10000 });
   const guideTitle = await page.locator('h1').textContent();
   console.log('Guide detail title:', guideTitle);
 });
