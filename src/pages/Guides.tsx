@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -15,6 +15,7 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'mac-guides': Apple,
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
+  'ai-guides': Bot,
 };
 
 const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
@@ -64,7 +65,7 @@ const Guides = () => {
     return results;
   }, [search, activeTab]);
 
-  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'];
+  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
 
   return (
     <div className="min-h-screen">
