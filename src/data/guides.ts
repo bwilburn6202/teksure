@@ -1,5 +1,13 @@
 export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides';
 
+export interface GuideStep {
+  title: string;
+  content: string;
+  screenshotDesc?: string;
+  tip?: string;
+  warning?: string;
+}
+
 export interface Guide {
   slug: string;
   title: string;
@@ -10,7 +18,8 @@ export interface Guide {
   videoUrl?: string;
   thumbnailEmoji: string;
   publishedAt: string;
-  steps?: { title: string; content: string }[];
+  difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
+  steps?: GuideStep[];
   body?: string;
 }
 
@@ -45,12 +54,13 @@ export const guides: Guide[] = [
     readTime: '3 min',
     thumbnailEmoji: '🖥️',
     publishedAt: '2026-01-05',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
-      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
-      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.' },
-      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.' },
-      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.', screenshotDesc: 'Close-up of a laptop keyboard with the power button highlighted in the top-right corner, showing the universal power symbol (circle with line).' },
+      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.', screenshotDesc: 'Windows boot screen showing the Windows 11 logo with a loading spinner on a dark blue background.' },
+      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', screenshotDesc: 'Windows 11 lock screen showing user avatar, PIN entry field with number pad, and "Sign-in options" link below.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
+      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', screenshotDesc: 'Windows Start menu open with Power options visible — Sleep, Shut Down, and Restart — cursor hovering on Shut Down.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
+      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', screenshotDesc: 'Windows Start menu Power options with cursor hovering on Sleep option.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
     ],
   },
   {
@@ -62,12 +72,13 @@ export const guides: Guide[] = [
     readTime: '3 min',
     thumbnailEmoji: '📶',
     publishedAt: '2026-01-06',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it.' },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', screenshotDesc: 'Windows taskbar bottom-right corner with Wi-Fi icon, volume, and battery icons. Wi-Fi icon is highlighted with a tooltip "Not connected – connections available".' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotDesc: 'Windows Quick Settings panel showing Wi-Fi toggle in OFF state (grayed out), with Bluetooth and Airplane Mode toggles next to it.' },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotDesc: 'Wi-Fi network dropdown list showing 6 networks: "HomeNetwork_5G" (highlighted in blue), "Neighbors_WiFi", "CoffeeShop_Free", "DIRECT-printer", "Xfinity-2G", and "Hidden network".', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotDesc: 'Wi-Fi password entry dialog titled "Enter the network security key" with a password field showing asterisks (••••••••), a "Show password" eye icon, a checked "Connect automatically" checkbox, and a blue Connect button.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.' },
     ],
   },
   {
@@ -281,11 +292,12 @@ export const guides: Guide[] = [
     readTime: '2 min',
     thumbnailEmoji: '🔄',
     publishedAt: '2026-01-19',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.' },
-      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.' },
-      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.' },
-      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.' },
+      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.', screenshotDesc: 'Windows Start menu open with Power options visible — Sleep, Shut Down, and Restart. Cursor hovering on "Restart" which is highlighted in blue.' },
+      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.', screenshotDesc: 'Ctrl+Alt+Delete screen showing options: Lock, Switch User, Sign Out, Task Manager. Power icon visible in bottom-right corner of screen.' },
+      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!' },
+      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', screenshotDesc: 'Close-up of a laptop power button with a finger pressing and holding it. A timer overlay shows "Hold 5-10 seconds".', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
     ],
   },
   {
@@ -297,12 +309,13 @@ export const guides: Guide[] = [
     readTime: '4 min',
     thumbnailEmoji: '💿',
     publishedAt: '2026-01-20',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Check available storage', content: 'Open Settings → System → Storage to see a breakdown of what\'s using your disk space.' },
-      { title: 'Run Storage Sense', content: 'Enable Storage Sense to automatically delete temporary files, empty the Recycle Bin, and clean downloads.' },
-      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size to find the biggest apps you no longer need.' },
-      { title: 'Use Disk Cleanup', content: 'Search for "Disk Cleanup" in Start. Select your drive and check all the categories you want to clean.' },
-      { title: 'Move files to external storage', content: 'Move large files like photos and videos to an external hard drive or USB drive to free up space.' },
+      { title: 'Check your storage', content: 'Open File Explorer → This PC. You\'ll see your drives with colored bars showing used/free space.', screenshotDesc: 'File Explorer "This PC" view showing C: drive with a red storage bar (92% full, 23 GB free of 256 GB) and D: drive with a blue bar (45% full).' },
+      { title: 'Run Disk Cleanup', content: 'Right-click your C: drive → Properties → Disk Cleanup. Check all boxes and click Delete Files.', screenshotDesc: 'Disk Cleanup wizard with all checkboxes checked: Temporary files, Recycle Bin, Thumbnails, Delivery Optimization. Shows "Total amount of disk space you gain: 4.1 GB".', tip: 'Click "Clean up system files" for even more space — this removes old Windows Update files.' },
+      { title: 'Find large files', content: 'In File Explorer, go to your Downloads folder. Click "Sort" → Sort by Size. Look for files you no longer need.', screenshotDesc: 'Downloads folder sorted by size descending, showing large video files at top: "vacation_2024.mp4" (2.3 GB), "screen_recording.mp4" (1.8 GB), "software_installer.exe" (950 MB).' },
+      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size. Uninstall anything you don\'t recognize or use.', screenshotDesc: 'Windows Settings Apps list sorted by size showing: "Game_Title" (45 GB), "Video Editor" (2.1 GB), "Old Software" (1.5 GB) with blue Uninstall buttons.' },
+      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', screenshotDesc: 'Windows Storage Settings page showing Storage Sense toggle ON, with options for automatic cleanup frequency and temporary file deletion.', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule.' },
     ],
   },
   {
@@ -876,12 +889,14 @@ export const guides: Guide[] = [
     readTime: '5 min',
     thumbnailEmoji: '🛡️',
     publishedAt: '2026-02-23',
+    difficulty: 'Advanced',
     steps: [
-      { title: 'Open Windows Security', content: 'Search "Windows Security" in Start or go to Settings → Privacy & Security → Windows Security.' },
-      { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.' },
-      { title: 'Check protection status', content: 'The main dashboard shows green checkmarks if everything is protected. Yellow or red means action needed.' },
-      { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.' },
-      { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.' },
+      { title: 'Open Windows Security', content: 'Search "Windows Security" in Start or go to Settings → Privacy & Security → Windows Security.', screenshotDesc: 'Windows Start menu search showing "Windows Security" with the shield icon app result highlighted at the top.' },
+      { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.', screenshotDesc: 'Windows Security app showing Virus & Threat Protection page with green checkmarks next to "Real-time protection: On" and a blue "Quick Scan" button prominently displayed.', tip: 'Run a Quick Scan weekly and a Full Scan monthly for best protection.' },
+      { title: 'Check protection status', content: 'The main dashboard shows green checkmarks if everything is protected. Yellow or red means action needed.', screenshotDesc: 'Windows Security dashboard showing 7 protection areas with icons: Virus protection (green ✓), Firewall (green ✓), App & browser (green ✓), Device security (green ✓), Device performance (green ✓), Family options (green ✓).' },
+      { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', screenshotDesc: 'Fake virus alert pop-up with red warning design saying "YOUR COMPUTER IS INFECTED!" with a phone number and "Call Now" button. A large red "FAKE" stamp is overlaid on the entire pop-up, and an X close button is highlighted.', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.' },
+      { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.', screenshotDesc: 'Virus & Threat Protection settings page showing three toggles all in ON position: "Real-time protection", "Cloud-delivered protection", and "Automatic sample submission".' },
+      { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.', screenshotDesc: 'Protection History page showing a list of recent threats with severity badges (green=Allowed, yellow=Quarantined, red=Blocked) and timestamps.' },
     ],
   },
   {
@@ -1590,13 +1605,14 @@ export const guides: Guide[] = [
     readTime: '5 min',
     thumbnailEmoji: '🛡️',
     publishedAt: '2026-01-07',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).' },
-      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."' },
-      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.' },
-      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.' },
-      { title: 'Save backup codes', content: 'Most services provide backup codes. Save these in a secure place in case you lose your phone.' },
-      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.' },
+      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).', screenshotDesc: 'Diagram showing a lock icon with two keys labeled "Password" and "Phone Code" — both required to unlock an account.' },
+      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."', screenshotDesc: 'Google Account settings page with the "Security" tab highlighted in the left sidebar, showing "2-Step Verification: Off" with a blue "Turn On" button.' },
+      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.' },
+      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.', screenshotDesc: 'Phone screen showing Google Authenticator app with a QR code scanner active, pointed at a computer screen displaying a QR code labeled "Scan this code".' },
+      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', screenshotDesc: 'Backup codes page showing 10 eight-digit codes in a grid, with "Download Codes" and "Print Codes" buttons below.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.' },
+      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.' },
     ],
   },
   {
