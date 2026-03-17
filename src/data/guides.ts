@@ -309,12 +309,13 @@ export const guides: Guide[] = [
     readTime: '4 min',
     thumbnailEmoji: '💿',
     publishedAt: '2026-01-20',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Check available storage', content: 'Open Settings → System → Storage to see a breakdown of what\'s using your disk space.' },
-      { title: 'Run Storage Sense', content: 'Enable Storage Sense to automatically delete temporary files, empty the Recycle Bin, and clean downloads.' },
-      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size to find the biggest apps you no longer need.' },
-      { title: 'Use Disk Cleanup', content: 'Search for "Disk Cleanup" in Start. Select your drive and check all the categories you want to clean.' },
-      { title: 'Move files to external storage', content: 'Move large files like photos and videos to an external hard drive or USB drive to free up space.' },
+      { title: 'Check your storage', content: 'Open File Explorer → This PC. You\'ll see your drives with colored bars showing used/free space.', screenshotDesc: 'File Explorer "This PC" view showing C: drive with a red storage bar (92% full, 23 GB free of 256 GB) and D: drive with a blue bar (45% full).' },
+      { title: 'Run Disk Cleanup', content: 'Right-click your C: drive → Properties → Disk Cleanup. Check all boxes and click Delete Files.', screenshotDesc: 'Disk Cleanup wizard with all checkboxes checked: Temporary files, Recycle Bin, Thumbnails, Delivery Optimization. Shows "Total amount of disk space you gain: 4.1 GB".', tip: 'Click "Clean up system files" for even more space — this removes old Windows Update files.' },
+      { title: 'Find large files', content: 'In File Explorer, go to your Downloads folder. Click "Sort" → Sort by Size. Look for files you no longer need.', screenshotDesc: 'Downloads folder sorted by size descending, showing large video files at top: "vacation_2024.mp4" (2.3 GB), "screen_recording.mp4" (1.8 GB), "software_installer.exe" (950 MB).' },
+      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size. Uninstall anything you don\'t recognize or use.', screenshotDesc: 'Windows Settings Apps list sorted by size showing: "Game_Title" (45 GB), "Video Editor" (2.1 GB), "Old Software" (1.5 GB) with blue Uninstall buttons.' },
+      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', screenshotDesc: 'Windows Storage Settings page showing Storage Sense toggle ON, with options for automatic cleanup frequency and temporary file deletion.', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule.' },
     ],
   },
   {
