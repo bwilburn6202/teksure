@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides';
 
 export interface Guide {
   slug: string;
