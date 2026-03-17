@@ -72,12 +72,13 @@ export const guides: Guide[] = [
     readTime: '3 min',
     thumbnailEmoji: '📶',
     publishedAt: '2026-01-06',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it.' },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', screenshotDesc: 'Windows taskbar bottom-right corner with Wi-Fi icon, volume, and battery icons. Wi-Fi icon is highlighted with a tooltip "Not connected – connections available".' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotDesc: 'Windows Quick Settings panel showing Wi-Fi toggle in OFF state (grayed out), with Bluetooth and Airplane Mode toggles next to it.' },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotDesc: 'Wi-Fi network dropdown list showing 6 networks: "HomeNetwork_5G" (highlighted in blue), "Neighbors_WiFi", "CoffeeShop_Free", "DIRECT-printer", "Xfinity-2G", and "Hidden network".', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotDesc: 'Wi-Fi password entry dialog titled "Enter the network security key" with a password field showing asterisks (••••••••), a "Show password" eye icon, a checked "Connect automatically" checkbox, and a blue Connect button.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.' },
     ],
   },
   {
