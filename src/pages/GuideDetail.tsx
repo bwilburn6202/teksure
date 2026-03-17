@@ -1,50 +1,74 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { guides, categoryLabels } from '@/data/guides';
+import { guides, categoryLabels, type GuideStep } from '@/data/guides';
 
-/** Mock OS screenshot component — styled like HowToGeek / WikiHow visuals */
+/** Mock OS screenshot — styled like HowToGeek / WikiHow */
 const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
   const toolbarLabel = osHint === 'browser' ? 'Browser' : osHint === 'mac' ? 'Finder' : osHint === 'windows' ? 'Windows' : 'Screen';
+  const addressText = osHint === 'browser' ? 'https://example.com' : osHint === 'windows' ? '⊞ Settings' : osHint === 'mac' ? '⌘ System Preferences' : '⚙ Settings';
 
   return (
     <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
-      {/* Toolbar */}
       <div className="flex items-center gap-2 px-3 py-2 bg-muted border-b border-border">
-        {/* Traffic light dots */}
         <div className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-red-400" />
           <span className="w-3 h-3 rounded-full bg-yellow-400" />
           <span className="w-3 h-3 rounded-full bg-green-400" />
         </div>
-        {/* Fake address bar */}
         <div className="flex-1 mx-3 h-6 rounded-md bg-background/80 border border-border flex items-center px-3">
-          <span className="text-[10px] text-muted-foreground truncate">
-            {osHint === 'browser' ? 'https://example.com' : osHint === 'windows' ? '⊞ Settings' : osHint === 'mac' ? '⌘ System Preferences' : '⚙ Settings'}
-          </span>
+          <span className="text-[10px] text-muted-foreground truncate">{addressText}</span>
         </div>
         <span className="text-[10px] text-muted-foreground hidden sm:inline">{toolbarLabel}</span>
       </div>
-      {/* Screenshot content area */}
       <div className="bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[120px]">
         <div className="flex items-start gap-3 max-w-md">
           <Info className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-          <p className="text-sm text-muted-foreground leading-relaxed italic">
-            {description}
-          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
         </div>
       </div>
     </div>
   );
 };
 
-/** Infer OS hint from guide category */
+/** 💡 Pro Tip callout */
+const ProTip = ({ children }: { children: React.ReactNode }) => (
+  <div className="mt-3 rounded-lg border border-teksure-teal/30 bg-teksure-teal/5 px-4 py-3 flex items-start gap-3">
+    <span className="text-lg shrink-0">💡</span>
+    <div>
+      <p className="text-xs font-semibold text-secondary mb-0.5">Pro Tip</p>
+      <p className="text-sm text-muted-foreground italic">{children}</p>
+    </div>
+  </div>
+);
+
+/** ⚠️ Warning callout */
+const WarningBox = ({ children }: { children: React.ReactNode }) => (
+  <div className="mt-3 rounded-lg border border-teksure-warning/30 bg-teksure-warning/5 px-4 py-3 flex items-start gap-3">
+    <span className="text-lg shrink-0">⚠️</span>
+    <div>
+      <p className="text-xs font-semibold text-teksure-warning mb-0.5">Warning</p>
+      <p className="text-sm text-muted-foreground">{children}</p>
+    </div>
+  </div>
+);
+
+/** 🎉 Completion banner */
+const CompletionBanner = ({ guideTitle }: { guideTitle: string }) => (
+  <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
+    <span className="text-3xl mb-2 block">🎉</span>
+    <p className="font-bold text-base mb-1">You Did It!</p>
+    <p className="text-sm text-muted-foreground">You've completed: <strong>{guideTitle}</strong></p>
+    <p className="text-xs text-muted-foreground mt-2">Need more help? <Link to="/signup" className="text-secondary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
+  </div>
+);
+
 const getOsHint = (category: string, stepContent: string): 'windows' | 'mac' | 'browser' | 'generic' => {
   if (category === 'windows-guides') return 'windows';
   if (category === 'mac-guides') return 'mac';
@@ -86,6 +110,15 @@ const GuideDetail = () => {
               <Badge variant="secondary" className="capitalize">
                 {categoryLabels[guide.category]}
               </Badge>
+              {guide.difficulty && (
+                <Badge variant="outline" className={
+                  guide.difficulty === 'Beginner' ? 'border-teksure-success/50 text-teksure-success' :
+                  guide.difficulty === 'Intermediate' ? 'border-teksure-warning/50 text-teksure-warning' :
+                  'border-destructive/50 text-destructive'
+                }>
+                  {guide.difficulty === 'Beginner' ? '🟢' : guide.difficulty === 'Intermediate' ? '🟡' : '🔴'} {guide.difficulty}
+                </Badge>
+              )}
               <span className="flex items-center gap-1 text-sm text-muted-foreground">
                 <Clock className="h-3.5 w-3.5" /> {guide.readTime}
               </span>
@@ -103,11 +136,11 @@ const GuideDetail = () => {
             <p className="text-lg text-muted-foreground">{guide.excerpt}</p>
           </div>
 
-          {/* Quick jump — table of contents */}
+          {/* Table of contents */}
           {guide.steps && guide.steps.length > 3 && (
             <Card className="mb-8 bg-muted/50">
               <CardContent className="py-4">
-                <p className="text-sm font-semibold mb-2">📋 In this guide:</p>
+                <p className="text-sm font-semibold mb-2">📋 In this guide ({guide.steps.length} steps):</p>
                 <ol className="space-y-1">
                   {guide.steps.map((step, i) => (
                     <li key={i}>
@@ -125,7 +158,7 @@ const GuideDetail = () => {
             </Card>
           )}
 
-          {/* Video Embed */}
+          {/* Video */}
           {guide.videoUrl && (
             <div className="mb-8">
               <div className="relative aspect-video rounded-xl overflow-hidden bg-muted">
@@ -138,14 +171,14 @@ const GuideDetail = () => {
                 />
               </div>
               <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
-                <Play className="h-3 w-3" /> Video tutorial — watch along or read the summary below
+                <Play className="h-3 w-3" /> Video tutorial — watch along or read below
               </p>
             </div>
           )}
 
           <Separator className="mb-8" />
 
-          {/* Step-by-step content with screenshots */}
+          {/* Steps with screenshots, tips, warnings */}
           {guide.steps && (
             <div className="space-y-8 mb-8">
               {guide.steps.map((step, i) => (
@@ -167,11 +200,17 @@ const GuideDetail = () => {
                           <h3 className="font-semibold text-base mb-2">{step.title}</h3>
                           <p className="text-sm text-muted-foreground leading-relaxed">{step.content}</p>
 
-                          {/* Mock screenshot for every step */}
+                          {/* Screenshot mockup */}
                           <MockScreenshot
-                            description={step.content}
+                            description={step.screenshotDesc || step.content}
                             osHint={getOsHint(guide.category, step.content)}
                           />
+
+                          {/* Pro Tip */}
+                          {step.tip && <ProTip>{step.tip}</ProTip>}
+
+                          {/* Warning */}
+                          {step.warning && <WarningBox>{step.warning}</WarningBox>}
                         </div>
                       </div>
                     </CardContent>
@@ -181,35 +220,31 @@ const GuideDetail = () => {
             </div>
           )}
 
+          {/* Completion banner */}
+          {guide.steps && guide.steps.length > 0 && (
+            <CompletionBanner guideTitle={guide.title} />
+          )}
+
           {/* Body content */}
           {guide.body && (
             <div className="prose prose-sm max-w-none mb-8">
               {guide.body.split('\n\n').map((paragraph, i) => {
                 if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                  return (
-                    <h3 key={i} className="text-lg font-semibold mt-6 mb-2">
-                      {paragraph.replace(/\*\*/g, '')}
-                    </h3>
-                  );
+                  return <h3 key={i} className="text-lg font-semibold mt-6 mb-2">{paragraph.replace(/\*\*/g, '')}</h3>;
                 }
                 if (paragraph.startsWith('**')) {
                   const [boldPart, ...rest] = paragraph.split('**').filter(Boolean);
                   return (
                     <div key={i} className="mb-4">
                       <h3 className="text-base font-semibold mb-1">{boldPart}</h3>
-                      {rest.length > 0 && (
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {rest.join('')}
-                        </p>
-                      )}
+                      {rest.length > 0 && <p className="text-sm text-muted-foreground leading-relaxed">{rest.join('')}</p>}
                     </div>
                   );
                 }
                 if (paragraph.startsWith('- ') || paragraph.startsWith('🔒') || paragraph.startsWith('🪪') || paragraph.startsWith('🔍') || paragraph.startsWith('✅')) {
-                  const items = paragraph.split('\n');
                   return (
                     <ul key={i} className="space-y-2 mb-4">
-                      {items.map((item, j) => (
+                      {paragraph.split('\n').map((item, j) => (
                         <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
                           <CheckCircle className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
                           <span>{item.replace(/^[-•]\s*/, '')}</span>
@@ -219,25 +254,18 @@ const GuideDetail = () => {
                   );
                 }
                 if (paragraph.match(/^\d+\./)) {
-                  const items = paragraph.split('\n');
                   return (
                     <ol key={i} className="space-y-2 mb-4">
-                      {items.map((item, j) => (
+                      {paragraph.split('\n').map((item, j) => (
                         <li key={j} className="flex items-start gap-3 text-sm text-muted-foreground">
-                          <span className="shrink-0 w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-xs font-semibold">
-                            {j + 1}
-                          </span>
+                          <span className="shrink-0 w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-xs font-semibold">{j + 1}</span>
                           <span>{item.replace(/^\d+\.\s*/, '')}</span>
                         </li>
                       ))}
                     </ol>
                   );
                 }
-                return (
-                  <p key={i} className="text-sm text-muted-foreground leading-relaxed mb-4">
-                    {paragraph}
-                  </p>
-                );
+                return <p key={i} className="text-sm text-muted-foreground leading-relaxed mb-4">{paragraph}</p>;
               })}
             </div>
           )}
@@ -246,22 +274,18 @@ const GuideDetail = () => {
           <div className="flex flex-wrap items-center gap-2 mb-8">
             <Tag className="h-4 w-4 text-muted-foreground" />
             {guide.tags.map(tag => (
-              <Badge key={tag} variant="outline" className="text-xs">
-                {tag}
-              </Badge>
+              <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
             ))}
           </div>
 
-          {/* Prev/Next navigation */}
+          {/* Prev/Next */}
           <div className="grid grid-cols-2 gap-4 mb-8">
             {prevGuide ? (
               <Link to={`/guides/${prevGuide.slug}`} className="group">
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
                     <p className="text-xs text-muted-foreground mb-1">← Previous</p>
-                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">
-                      {prevGuide.title}
-                    </p>
+                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{prevGuide.title}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -271,9 +295,7 @@ const GuideDetail = () => {
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
                     <p className="text-xs text-muted-foreground mb-1">Next →</p>
-                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">
-                      {nextGuide.title}
-                    </p>
+                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{nextGuide.title}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -287,13 +309,11 @@ const GuideDetail = () => {
             <CardContent className="py-10 text-center">
               <h2 className="text-2xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
               <p className="opacity-90 mb-6 max-w-md mx-auto">
-                Our verified technicians can fix this issue for you — remotely or in person. Fast, secure, and guaranteed.
+                Our verified technicians can fix this issue for you — remotely or in person.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Button asChild size="lg" variant="secondary">
-                  <Link to="/signup">
-                    Book a Verified Tech <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  <Link to="/signup">Book a Verified Tech <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="btn-hero-outline">
                   <Link to="/pricing">See Pricing</Link>
@@ -302,7 +322,7 @@ const GuideDetail = () => {
             </CardContent>
           </Card>
 
-          {/* Related Guides */}
+          {/* Related */}
           {relatedGuides.length > 0 && (
             <div>
               <h2 className="text-xl font-semibold mb-6">Related Guides</h2>
@@ -312,9 +332,7 @@ const GuideDetail = () => {
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
                         <div className="text-2xl mb-2">{g.thumbnailEmoji}</div>
-                        <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">
-                          {g.title}
-                        </p>
+                        <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1">{g.readTime}</p>
                       </CardContent>
                     </Card>
