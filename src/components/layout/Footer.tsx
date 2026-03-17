@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
-    <footer className="border-t bg-card">
+    <footer className="border-t" style={{ backgroundColor: 'hsl(222 47% 11%)', color: 'hsl(210 20% 92%)' }}>
       <div className="container py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
