@@ -1,5 +1,13 @@
 export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides';
 
+export interface GuideStep {
+  title: string;
+  content: string;
+  screenshotDesc?: string;
+  tip?: string;
+  warning?: string;
+}
+
 export interface Guide {
   slug: string;
   title: string;
@@ -10,7 +18,8 @@ export interface Guide {
   videoUrl?: string;
   thumbnailEmoji: string;
   publishedAt: string;
-  steps?: { title: string; content: string }[];
+  difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
+  steps?: GuideStep[];
   body?: string;
 }
 
