@@ -292,11 +292,12 @@ export const guides: Guide[] = [
     readTime: '2 min',
     thumbnailEmoji: '🔄',
     publishedAt: '2026-01-19',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.' },
-      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.' },
-      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.' },
-      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.' },
+      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.', screenshotDesc: 'Windows Start menu open with Power options visible — Sleep, Shut Down, and Restart. Cursor hovering on "Restart" which is highlighted in blue.' },
+      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.', screenshotDesc: 'Ctrl+Alt+Delete screen showing options: Lock, Switch User, Sign Out, Task Manager. Power icon visible in bottom-right corner of screen.' },
+      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!' },
+      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', screenshotDesc: 'Close-up of a laptop power button with a finger pressing and holding it. A timer overlay shows "Hold 5-10 seconds".', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
     ],
   },
   {
