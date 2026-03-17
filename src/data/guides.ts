@@ -54,12 +54,13 @@ export const guides: Guide[] = [
     readTime: '3 min',
     thumbnailEmoji: '🖥️',
     publishedAt: '2026-01-05',
+    difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
-      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
-      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.' },
-      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.' },
-      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.', screenshotDesc: 'Close-up of a laptop keyboard with the power button highlighted in the top-right corner, showing the universal power symbol (circle with line).' },
+      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.', screenshotDesc: 'Windows boot screen showing the Windows 11 logo with a loading spinner on a dark blue background.' },
+      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', screenshotDesc: 'Windows 11 lock screen showing user avatar, PIN entry field with number pad, and "Sign-in options" link below.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
+      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', screenshotDesc: 'Windows Start menu open with Power options visible — Sleep, Shut Down, and Restart — cursor hovering on Shut Down.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
+      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', screenshotDesc: 'Windows Start menu Power options with cursor hovering on Sleep option.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
     ],
   },
   {
