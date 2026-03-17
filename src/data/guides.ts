@@ -27,6 +27,7 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'mac-guides': 'Beginner to advanced guides for navigating and mastering macOS',
   'essential-skills': 'Universal digital literacy skills for any device or platform',
   'tips-tricks': 'Quick tips, shortcuts, and productivity hacks across all platforms',
+  'ai-guides': 'Learn how to use AI tools, chatbots, and smart assistants to boost your productivity',
 };
 
 export const guides: Guide[] = [
