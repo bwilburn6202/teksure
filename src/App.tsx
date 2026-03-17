@@ -18,6 +18,7 @@ import TechDashboard from "./pages/tech/Dashboard";
 import TechJobRoom from "./pages/tech/JobRoom";
 import AdminConsole from "./pages/admin/Console";
 import OpportunityDashboard from "./pages/OpportunityDashboard";
+import Glossary from "./pages/Glossary";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
             <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
             <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
+            <Route path="/glossary" element={<Glossary />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
