@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,11 +9,58 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { guides, categoryLabels } from '@/data/guides';
 
+/** Mock OS screenshot component — styled like HowToGeek / WikiHow visuals */
+const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
+  const toolbarLabel = osHint === 'browser' ? 'Browser' : osHint === 'mac' ? 'Finder' : osHint === 'windows' ? 'Windows' : 'Screen';
+
+  return (
+    <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
+      {/* Toolbar */}
+      <div className="flex items-center gap-2 px-3 py-2 bg-muted border-b border-border">
+        {/* Traffic light dots */}
+        <div className="flex items-center gap-1.5">
+          <span className="w-3 h-3 rounded-full bg-red-400" />
+          <span className="w-3 h-3 rounded-full bg-yellow-400" />
+          <span className="w-3 h-3 rounded-full bg-green-400" />
+        </div>
+        {/* Fake address bar */}
+        <div className="flex-1 mx-3 h-6 rounded-md bg-background/80 border border-border flex items-center px-3">
+          <span className="text-[10px] text-muted-foreground truncate">
+            {osHint === 'browser' ? 'https://example.com' : osHint === 'windows' ? '⊞ Settings' : osHint === 'mac' ? '⌘ System Preferences' : '⚙ Settings'}
+          </span>
+        </div>
+        <span className="text-[10px] text-muted-foreground hidden sm:inline">{toolbarLabel}</span>
+      </div>
+      {/* Screenshot content area */}
+      <div className="bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[120px]">
+        <div className="flex items-start gap-3 max-w-md">
+          <Info className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+          <p className="text-sm text-muted-foreground leading-relaxed italic">
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/** Infer OS hint from guide category */
+const getOsHint = (category: string, stepContent: string): 'windows' | 'mac' | 'browser' | 'generic' => {
+  if (category === 'windows-guides') return 'windows';
+  if (category === 'mac-guides') return 'mac';
+  if (stepContent.toLowerCase().includes('browser') || stepContent.toLowerCase().includes('website') || stepContent.toLowerCase().includes('url')) return 'browser';
+  return 'generic';
+};
+
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const guide = guides.find(g => g.slug === slug);
 
   if (!guide) return <Navigate to="/guides" replace />;
+
+  const currentIndex = guides.findIndex(g => g.slug === slug);
+  const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
+  const nextGuide = currentIndex < guides.length - 1 ? guides[currentIndex + 1] : null;
 
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.tags.some(t => guide.tags.includes(t)))
@@ -56,6 +103,28 @@ const GuideDetail = () => {
             <p className="text-lg text-muted-foreground">{guide.excerpt}</p>
           </div>
 
+          {/* Quick jump — table of contents */}
+          {guide.steps && guide.steps.length > 3 && (
+            <Card className="mb-8 bg-muted/50">
+              <CardContent className="py-4">
+                <p className="text-sm font-semibold mb-2">📋 In this guide:</p>
+                <ol className="space-y-1">
+                  {guide.steps.map((step, i) => (
+                    <li key={i}>
+                      <a
+                        href={`#step-${i + 1}`}
+                        className="text-sm text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2"
+                      >
+                        <span className="text-xs font-mono text-secondary">{i + 1}.</span>
+                        {step.title}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </CardContent>
+            </Card>
+          )}
+
           {/* Video Embed */}
           {guide.videoUrl && (
             <div className="mb-8">
@@ -76,25 +145,33 @@ const GuideDetail = () => {
 
           <Separator className="mb-8" />
 
-          {/* Step-by-step content */}
+          {/* Step-by-step content with screenshots */}
           {guide.steps && (
-            <div className="space-y-6 mb-8">
+            <div className="space-y-8 mb-8">
               {guide.steps.map((step, i) => (
                 <motion.div
                   key={i}
+                  id={`step-${i + 1}`}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.08 }}
+                  className="scroll-mt-20"
                 >
-                  <Card>
+                  <Card className="overflow-hidden">
                     <CardContent className="py-5">
                       <div className="flex gap-4">
-                        <div className="shrink-0 w-8 h-8 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-sm font-bold mt-0.5">
+                        <div className="shrink-0 w-9 h-9 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-sm font-bold mt-0.5">
                           {i + 1}
                         </div>
-                        <div>
+                        <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-base mb-2">{step.title}</h3>
                           <p className="text-sm text-muted-foreground leading-relaxed">{step.content}</p>
+
+                          {/* Mock screenshot for every step */}
+                          <MockScreenshot
+                            description={step.content}
+                            osHint={getOsHint(guide.category, step.content)}
+                          />
                         </div>
                       </div>
                     </CardContent>
@@ -104,7 +181,7 @@ const GuideDetail = () => {
             </div>
           )}
 
-          {/* Body content (for KB, blog, video summaries) */}
+          {/* Body content */}
           {guide.body && (
             <div className="prose prose-sm max-w-none mb-8">
               {guide.body.split('\n\n').map((paragraph, i) => {
@@ -175,9 +252,37 @@ const GuideDetail = () => {
             ))}
           </div>
 
+          {/* Prev/Next navigation */}
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            {prevGuide ? (
+              <Link to={`/guides/${prevGuide.slug}`} className="group">
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardContent className="py-4">
+                    <p className="text-xs text-muted-foreground mb-1">← Previous</p>
+                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">
+                      {prevGuide.title}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : <div />}
+            {nextGuide ? (
+              <Link to={`/guides/${nextGuide.slug}`} className="group text-right">
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardContent className="py-4">
+                    <p className="text-xs text-muted-foreground mb-1">Next →</p>
+                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">
+                      {nextGuide.title}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : <div />}
+          </div>
+
           <Separator className="mb-8" />
 
-          {/* CTA — "Still stuck?" */}
+          {/* CTA */}
           <Card className="hero-gradient text-primary-foreground mb-12 overflow-hidden">
             <CardContent className="py-10 text-center">
               <h2 className="text-2xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
