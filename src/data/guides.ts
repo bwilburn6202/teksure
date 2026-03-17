@@ -19,6 +19,7 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'mac-guides': 'Mac Guides',
   'essential-skills': 'Essential Skills',
   'tips-tricks': 'Tips & Tricks',
+  'ai-guides': 'AI Guides',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
