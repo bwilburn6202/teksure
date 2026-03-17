@@ -22,9 +22,10 @@ export function Navbar() {
         <>
           <Link to="/how-it-works" className={linkClass}>How It Works</Link>
           <Link to="/guides" className={linkClass}>Guides</Link>
+          <Link to="/quick-fixes" className={linkClass}>Quick Fixes</Link>
+          <Link to="/device-hub" className={linkClass}>Devices</Link>
           <Link to="/glossary" className={linkClass}>Glossary</Link>
           <Link to="/pricing" className={linkClass}>Pricing</Link>
-          <Link to="/opportunity-dashboard" className={linkClass}>Business Opportunities</Link>
           <Button variant="ghost" onClick={() => navigate('/login')}>Log In</Button>
           <Button onClick={() => navigate('/signup')}>Sign Up</Button>
         </>

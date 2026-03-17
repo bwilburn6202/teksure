@@ -47,6 +47,8 @@ const App = () => (
             <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
             <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
             <Route path="/glossary" element={<Glossary />} />
+            <Route path="/quick-fixes" element={<QuickFixes />} />
+            <Route path="/device-hub" element={<DeviceHub />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
