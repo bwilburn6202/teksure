@@ -17,6 +17,7 @@ import CustomerJobRoom from "./pages/customer/JobRoom";
 import TechDashboard from "./pages/tech/Dashboard";
 import TechJobRoom from "./pages/tech/JobRoom";
 import AdminConsole from "./pages/admin/Console";
+import OpportunityDashboard from "./pages/OpportunityDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
