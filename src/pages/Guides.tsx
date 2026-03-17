@@ -65,7 +65,7 @@ const Guides = () => {
     return results;
   }, [search, activeTab]);
 
-  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'];
+  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
 
   return (
     <div className="min-h-screen">
