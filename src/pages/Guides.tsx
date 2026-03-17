@@ -15,6 +15,7 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'mac-guides': Apple,
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
+  'ai-guides': Bot,
 };
 
 const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
