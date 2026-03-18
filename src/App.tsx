@@ -51,6 +51,7 @@ const AppContent = () => {
         <Route path="/guides" element={<Guides />} />
         <Route path="/guides/:slug" element={<GuideDetail />} />
         <Route path="/about" element={<About />} />
+        <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
         <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
