@@ -79,6 +79,7 @@ const AppContent = () => {
         <Route path="/tools/keyboard-shortcuts" element={<KeyboardShortcuts />} />
         <Route path="/tools/email-templates" element={<EmailTemplates />} />
         <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
+        <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -65,6 +65,14 @@ const tools = [
     color: 'text-teal-500',
     badge: 'Productivity',
   },
+  {
+    title: 'Error Message Decoder',
+    description: 'Search 20 common error messages and get plain-English explanations with 3 practical fixes each.',
+    icon: AlertCircle,
+    path: '/tools/error-decoder',
+    color: 'text-destructive',
+    badge: 'Troubleshooting',
+  },
 ];
 
 export default function Tools() {
