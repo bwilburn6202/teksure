@@ -18,11 +18,13 @@ export function Navbar() {
       : 'text-sm text-muted-foreground hover:text-foreground transition-colors';
 
     if (!user) {
+      const pillClass = 'text-sm font-medium px-3 py-1.5 rounded-full border border-secondary/40 bg-secondary/10 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-colors';
+
       return (
         <>
-          <Link to="/how-it-works" className={linkClass}>How It Works</Link>
-          <Link to="/guides" className={linkClass}>Guides</Link>
-          <Link to="/quick-fixes" className={linkClass}>Quick Fixes</Link>
+          <Link to="/how-it-works" className={mobile ? linkClass : pillClass}>How It Works</Link>
+          <Link to="/guides" className={mobile ? linkClass : pillClass}>Guides</Link>
+          <Link to="/quick-fixes" className={mobile ? linkClass : pillClass}>Quick Fixes</Link>
           <Link to="/device-hub" className={linkClass}>Devices</Link>
           <Link to="/glossary" className={linkClass}>Glossary</Link>
           <Link to="/pricing" className={linkClass}>Pricing</Link>
