@@ -36,6 +36,7 @@ import KeyboardShortcuts from "./pages/tools/KeyboardShortcuts";
 import EmailTemplates from "./pages/EmailTemplates";
 import ScamAlerts from "./pages/ScamAlerts";
 import ErrorDecoder from "./pages/ErrorDecoder";
+import Tips from "./pages/Tips";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -80,6 +81,7 @@ const AppContent = () => {
         <Route path="/tools/email-templates" element={<EmailTemplates />} />
         <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
         <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
+        <Route path="/tips" element={<Tips />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -67,7 +67,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
   { title: 'Copy-Paste Code Snippets', description: 'One-click copy buttons for any settings or text you need to enter.', status: 'live', category: 'Tools' },
   { title: 'Estimated Time to Complete', description: 'Each guide shows roughly how long it takes so you can plan your time.', status: 'live', category: 'UX' },
-  { title: 'Seasonal Tech Tips', description: 'Timely advice for holiday shopping, tax season, back-to-school, and more.', status: 'planned', category: 'Content' },
+  { title: 'Seasonal Tech Tips', description: 'Timely advice for holiday shopping, tax season, back-to-school, and more.', status: 'live', category: 'Content' },
 
   // ── EXPLORING (50) ─────────────────────────────────────────
   { title: 'Parental Controls Guide', description: 'Learn how to set up safety features on devices used by children or grandchildren.', status: 'exploring', category: 'Safety' },
