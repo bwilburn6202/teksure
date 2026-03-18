@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail,
+  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle,
 } from 'lucide-react';
 
 const tools = [
@@ -64,6 +64,14 @@ const tools = [
     path: '/tools/email-templates',
     color: 'text-teal-500',
     badge: 'Productivity',
+  },
+  {
+    title: 'Error Message Decoder',
+    description: 'Search 20 common error messages and get plain-English explanations with 3 practical fixes each.',
+    icon: AlertCircle,
+    path: '/tools/error-decoder',
+    color: 'text-destructive',
+    badge: 'Troubleshooting',
   },
 ];
 

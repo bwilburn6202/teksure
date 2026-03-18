@@ -117,7 +117,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Monthly Webinars', description: 'Join live online workshops where we walk through tech topics together.', status: 'exploring', category: 'Community' },
   { title: 'Tech Anxiety Resources', description: 'Gentle resources for anyone who feels overwhelmed or anxious about technology.', status: 'exploring', category: 'Support' },
   { title: 'Quick Reference Cards', description: 'Printable cheat sheets with the most important steps for common tasks.', status: 'exploring', category: 'Tools' },
-  { title: 'Error Message Decoder', description: 'Paste any error message and get a simple explanation of what went wrong.', status: 'exploring', category: 'AI' },
+  { title: 'Error Message Decoder', description: 'Paste any error message and get a simple explanation of what went wrong.', status: 'live', category: 'AI' },
   { title: 'TekSure Mobile App', description: 'A dedicated phone app for quick access to TekSure help on the go.', status: 'exploring', category: 'UX' },
   { title: 'AI Personal Tech Tutor', description: 'An AI-powered tutor that learns your pace and adapts lessons just for you.', status: 'exploring', category: 'AI' },
 ];
