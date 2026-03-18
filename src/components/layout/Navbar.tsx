@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Menu, Shield } from 'lucide-react';
+import { Menu, Shield, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useAuth } from '@/contexts/AuthContext';
@@ -27,6 +27,7 @@ export function Navbar() {
           <Link to="/glossary" className={linkClass}>Glossary</Link>
           <Link to="/pricing" className={linkClass}>Pricing</Link>
           <Link to="/opportunity-dashboard" className={linkClass}>Business</Link>
+          <Link to="/about" className={linkClass}>About</Link>
           <Button variant="ghost" onClick={() => navigate('/login')}>Log In</Button>
           <Button onClick={() => navigate('/signup')}>Sign Up</Button>
         </>
@@ -52,6 +53,14 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-6">
           <NavLinks />
+          <button
+            onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
+            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border bg-muted/50 text-xs text-muted-foreground hover:bg-muted transition-colors"
+            style={{ minHeight: '32px' }}
+          >
+            <Search className="h-3.5 w-3.5" />
+            <span>⌘K</span>
+          </button>
         </nav>
 
         <Sheet>
