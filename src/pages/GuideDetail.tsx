@@ -138,7 +138,7 @@ const HelpfulSection = () => {
         <p className="font-semibold mb-3">Was this guide helpful?</p>
         {vote ? (
           <p className="text-sm text-muted-foreground">
-            {vote === 'up' ? '👍 Thanks for the feedback! Glad it helped.' : '👎 Thanks for letting us know. We'll work on improving it.'}
+            {vote === 'up' ? '👍 Thanks for the feedback! Glad it helped.' : '👎 Thanks for letting us know. We\'ll work on improving it.'}
           </p>
         ) : (
           <div className="flex items-center justify-center gap-4">
