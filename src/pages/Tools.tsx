@@ -5,8 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  KeyRound, Wifi, Wrench, Zap, BookOpen, Smartphone,
-  Type, Printer, ClipboardCopy, ExternalLink,
+  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type,
 } from 'lucide-react';
 
 const tools = [
@@ -27,52 +26,36 @@ const tools = [
     badge: 'Connectivity',
   },
   {
-    title: 'Quick Fixes',
-    description: 'Instant solutions for the most common tech problems — slow computers, WiFi issues, printing errors, and more.',
-    icon: Zap,
-    path: '/quick-fixes',
-    color: 'text-yellow-500',
-    badge: 'Troubleshooting',
+    title: 'Tech Health Check',
+    description: 'Take a quick 5-question quiz to find out how healthy your device is — with colour-coded results and tips.',
+    icon: HeartPulse,
+    path: '/tools/health-check',
+    color: 'text-rose-500',
+    badge: 'Quiz',
   },
   {
-    title: 'Tech Glossary',
-    description: 'Over 80 tech terms explained in everyday language with helpful analogies anyone can understand.',
-    icon: BookOpen,
-    path: '/glossary',
+    title: 'Device Comparison',
+    description: 'Compare two devices side by side — price, battery life, ease of use, storage, and our verdict.',
+    icon: ArrowLeftRight,
+    path: '/tools/device-compare',
     color: 'text-purple-500',
-    badge: 'Reference',
-  },
-  {
-    title: 'Device Hub',
-    description: 'Browse help organized by device type — phones, tablets, laptops, smart TVs, and more.',
-    icon: Smartphone,
-    path: '/device-hub',
-    color: 'text-teal-500',
     badge: 'Devices',
   },
   {
-    title: 'Print-Friendly Guides',
-    description: 'Every guide includes a print button for clean, ink-friendly printouts — no ads, no clutter.',
-    icon: Printer,
-    path: '/guides',
-    color: 'text-orange-500',
-    badge: 'Guides',
-  },
-  {
-    title: 'Copy-Paste Snippets',
-    description: 'One-click copy buttons on every code block, command, and setting so you never mis-type anything.',
-    icon: ClipboardCopy,
-    path: '/guides',
-    color: 'text-cyan-500',
-    badge: 'Guides',
-  },
-  {
     title: 'Font Size Adjuster',
-    description: 'Use the A+/A- button in the top navigation bar to switch between Normal, Large, and Extra Large text.',
+    description: 'Use the A+/A- button in the top navigation bar to cycle between Normal → Large → XL text sizes.',
     icon: Type,
     path: null,
     color: 'text-indigo-500',
-    badge: 'Accessibility',
+    badge: 'Beginner',
+  },
+  {
+    title: 'More Tools Coming Soon',
+    description: 'We\'re building keyboard shortcut cheat sheets, email templates, and more. Check the roadmap for updates!',
+    icon: Wrench,
+    path: '/roadmap',
+    color: 'text-muted-foreground',
+    badge: 'Roadmap',
   },
 ];
 
@@ -81,7 +64,7 @@ export default function Tools() {
     <>
       <SEOHead
         title="Tools & Utilities | TekSure"
-        description="Free tech tools — password checker, WiFi speed test, quick fixes, glossary, and more. No data stored."
+        description="Free tech tools — password checker, WiFi speed test, health check quiz, device comparison, and more."
         path="/tools"
       />
       <Navbar />
@@ -91,38 +74,29 @@ export default function Tools() {
           <h1 className="text-3xl font-bold">Tools &amp; Utilities</h1>
         </div>
         <p className="text-muted-foreground mb-10 max-w-2xl">
-          Everything you need in one place — check your passwords, test your WiFi, look up tech terms,
-          troubleshoot common problems, and more. All free, all private — no data is stored or sent anywhere.
+          Everything you need in one place — check your passwords, test your WiFi, quiz your device health,
+          compare gadgets, and more. All free, all private.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool) => {
+          {tools.map((tool, i) => {
             const content = (
               <Card className="h-full transition-all hover:shadow-lg hover:border-secondary/50 group">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <tool.icon className={`h-10 w-10 mb-3 ${tool.color} transition-transform group-hover:scale-110`} />
-                    <Badge variant="secondary" className="text-xs font-normal">
-                      {tool.badge}
-                    </Badge>
+                    <Badge variant="secondary" className="text-xs font-normal">{tool.badge}</Badge>
                   </div>
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    {tool.title}
-                    {tool.path && !tool.path.startsWith('/tools') && (
-                      <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
-                    )}
-                  </CardTitle>
+                  <CardTitle className="text-lg">{tool.title}</CardTitle>
                   <CardDescription>{tool.description}</CardDescription>
                 </CardHeader>
               </Card>
             );
 
-            if (!tool.path) {
-              return <div key={tool.title}>{content}</div>;
-            }
+            if (!tool.path) return <div key={i}>{content}</div>;
 
             return (
-              <Link key={tool.path + tool.title} to={tool.path} className="group">
+              <Link key={tool.path} to={tool.path} className="group">
                 {content}
               </Link>
             );
