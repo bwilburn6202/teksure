@@ -40,6 +40,7 @@ import Tips from "./pages/Tips";
 import JargonTranslator from "./pages/tools/JargonTranslator";
 import QuickReference from "./pages/tools/QuickReference";
 import ParentalControls from "./pages/ParentalControls";
+import Favorites from "./pages/Favorites";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
