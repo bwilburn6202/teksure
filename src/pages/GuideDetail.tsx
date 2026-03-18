@@ -210,7 +210,8 @@ const GuideDetail = () => {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           {/* Header */}
-          <div className="mb-8">
+          <div className="mb-8 relative">
+            <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
             <div className="text-5xl mb-4">{guide.thumbnailEmoji}</div>
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">
