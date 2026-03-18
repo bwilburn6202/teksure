@@ -37,6 +37,7 @@ import EmailTemplates from "./pages/EmailTemplates";
 import ScamAlerts from "./pages/ScamAlerts";
 import ErrorDecoder from "./pages/ErrorDecoder";
 import Tips from "./pages/Tips";
+import JargonTranslator from "./pages/tools/JargonTranslator";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
