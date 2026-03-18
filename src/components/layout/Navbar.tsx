@@ -3,6 +3,7 @@ import { Menu, Shield, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useAuth } from '@/contexts/AuthContext';
+import { FontSizeToggle } from '@/components/FontSizeToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
