@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
-import { NeedHelpButton } from "@/components/NeedHelpButton";
+import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
@@ -36,7 +36,7 @@ const AppContent = () => {
   return (
     <BrowserRouter>
       <SearchModal open={open} onClose={onClose} />
-      <NeedHelpButton />
+      <TekBot />
       <Toaster />
       <Sonner />
       <Routes>
