@@ -27,6 +27,8 @@ import DeviceHub from "./pages/DeviceHub";
 import About from "./pages/About";
 import Roadmap from "./pages/Roadmap";
 import SearchResults from "./pages/SearchResults";
+import PasswordStrength from "./pages/tools/PasswordStrength";
+import WifiSpeed from "./pages/tools/WifiSpeed";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
