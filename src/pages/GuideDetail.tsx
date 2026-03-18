@@ -94,17 +94,62 @@ const GuideDetail = () => {
     .filter(g => g.slug !== slug && g.tags.some(t => guide.tags.includes(t)))
     .slice(0, 3);
 
+  const howToJsonLd = guide.steps ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: guide.title,
+    description: guide.excerpt,
+    step: guide.steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.title,
+      text: s.content,
+    })),
+  } : undefined;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://teksure.lovable.app/' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://teksure.lovable.app/guides' },
+      { '@type': 'ListItem', position: 3, name: categoryLabels[guide.category], item: `https://teksure.lovable.app/guides?category=${guide.category}` },
+      { '@type': 'ListItem', position: 4, name: guide.title },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={`${guide.title} — Step-by-Step Guide | TekSure`}
+        description={guide.excerpt}
+        path={`/guides/${guide.slug}`}
+        type="article"
+        jsonLd={[howToJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
+      />
       <Navbar />
 
       <article className="container py-8 max-w-3xl">
-        <Link
-          to="/guides"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6"
-        >
-          <ArrowLeft className="h-4 w-4" /> Back to Guides
-        </Link>
+        {/* Breadcrumbs */}
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild><Link to="/">Home</Link></BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild><Link to="/guides">Guides</Link></BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild><Link to={`/guides?category=${guide.category}`}>{categoryLabels[guide.category]}</Link></BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{guide.title}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           {/* Header */}
