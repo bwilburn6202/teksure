@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Shield, Search, LogOut, User } from 'lucide-react';
+import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -20,25 +20,91 @@ export function Navbar() {
     ? user.fullName.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
     : '';
 
+  const navGroups = [
+    {
+      label: 'Learn',
+      icon: BookOpen,
+      links: [
+        { to: '/how-it-works', label: 'How It Works' },
+        { to: '/guides', label: 'Guides' },
+        { to: '/tips', label: 'Tips' },
+        { to: '/glossary', label: 'Glossary' },
+      ],
+    },
+    {
+      label: 'Fix',
+      icon: Zap,
+      links: [
+        { to: '/quick-fixes', label: 'Quick Fixes' },
+        { to: '/device-hub', label: 'Devices' },
+      ],
+    },
+    {
+      label: 'Tools',
+      icon: Wrench,
+      links: [
+        { to: '/tools', label: 'All Tools' },
+        { to: '/favorites', label: 'Favorites' },
+      ],
+    },
+    {
+      label: 'Safety',
+      icon: ShieldCheck,
+      links: [
+        { to: '/safety/scam-alerts', label: 'Scam Alerts' },
+      ],
+    },
+    {
+      label: 'About',
+      icon: Info,
+      links: [
+        { to: '/about', label: 'About Us' },
+        { to: '/pricing', label: 'Pricing' },
+        { to: '/roadmap', label: 'Roadmap' },
+      ],
+    },
+  ];
+
   const PublicLinks = ({ mobile = false }: { mobile?: boolean }) => {
-    const linkClass = mobile
-      ? 'text-lg font-medium py-2'
-      : 'text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors';
+    if (mobile) {
+      return (
+        <>
+          {navGroups.map((group) => (
+            <div key={group.label} className="space-y-1">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 pt-3 pb-1">{group.label}</p>
+              {group.links.map((link) => (
+                <Link key={link.to} to={link.to} className="block text-lg font-medium py-2">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          ))}
+        </>
+      );
+    }
 
     return (
       <>
-        <Link to="/how-it-works" className={linkClass}>How It Works</Link>
-        <Link to="/guides" className={linkClass}>Guides</Link>
-        <Link to="/quick-fixes" className={linkClass}>Quick Fixes</Link>
-        <Link to="/tips" className={linkClass}>Tips</Link>
-        <Link to="/favorites" className={linkClass}>Favorites</Link>
-        <Link to="/tools" className={linkClass}>Tools</Link>
-        <Link to="/safety/scam-alerts" className={linkClass}>Safety</Link>
-        <Link to="/device-hub" className={linkClass}>Devices</Link>
-        <Link to="/glossary" className={linkClass}>Glossary</Link>
-        <Link to="/pricing" className={linkClass}>Pricing</Link>
-        <Link to="/about" className={linkClass}>About</Link>
-        <Link to="/roadmap" className={linkClass}>Roadmap</Link>
+        {navGroups.map((group) => (
+          <DropdownMenu key={group.label}>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
+                <group.icon className="h-3.5 w-3.5" />
+                {group.label}
+                <ChevronDown className="h-3 w-3 opacity-50" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="min-w-[160px]">
+              {group.links.map((link) => (
+                <DropdownMenuItem key={link.to} asChild>
+                  <Link to={link.to} className="w-full cursor-pointer">
+                    {link.label}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ))}
       </>
     );
   };
