@@ -85,6 +85,7 @@ const AppContent = () => {
         <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
         <Route path="/tips" element={<Tips />} />
         <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
+        <Route path="/tools/quick-reference" element={<QuickReference />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -81,6 +81,14 @@ const tools = [
     color: 'text-cyan-500',
     badge: 'Reference',
   },
+  {
+    title: 'Quick Reference Cards',
+    description: 'Printable cheat-sheet cards for shortcuts, safety tips, and troubleshooting — stick them next to your screen.',
+    icon: CreditCard,
+    path: '/tools/quick-reference',
+    color: 'text-emerald-500',
+    badge: 'Printable',
+  },
 ];
 
 export default function Tools() {
