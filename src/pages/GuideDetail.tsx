@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep } from '@/data/guides';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
+import { useAuth } from '@/contexts/AuthContext';
 
 /** Mock OS screenshot — styled like HowToGeek / WikiHow */
 const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
@@ -165,9 +166,15 @@ const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string;
 
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { user } = useAuth();
+  const location = useLocation();
   const guide = guides.find(g => g.slug === slug);
 
   if (!guide) return <Navigate to="/guides" replace />;
+
+  if (!user) {
+    return <Navigate to="/login" state={{ message: 'Create a free account to read this guide.', from: location.pathname }} replace />;
+  }
 
   const currentIndex = guides.findIndex(g => g.slug === slug);
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
