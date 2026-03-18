@@ -1,52 +1,62 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { Menu, Shield, Search } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Menu, Shield, Search, LogOut, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const dashboardPath = user
     ? user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin'
     : '/';
 
-  const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
+  const initials = user?.fullName
+    ? user.fullName.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
+    : '';
+
+  const PublicLinks = ({ mobile = false }: { mobile?: boolean }) => {
+    const linkClass = mobile
+      ? 'text-lg font-medium py-2'
+      : 'text-sm text-muted-foreground hover:text-foreground transition-colors';
+    const pillClass = mobile
+      ? linkClass
+      : 'text-sm font-medium px-3 py-1.5 rounded-full border border-secondary/40 bg-secondary/10 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-colors';
+
+    return (
+      <>
+        <Link to="/how-it-works" className={pillClass}>How It Works</Link>
+        <Link to="/guides" className={pillClass}>Guides</Link>
+        <Link to="/quick-fixes" className={pillClass}>Quick Fixes</Link>
+        <Link to="/tips" className={linkClass}>Tips</Link>
+        <Link to="/favorites" className={linkClass}>Favorites</Link>
+        <Link to="/tools" className={linkClass}>Tools</Link>
+        <Link to="/safety/scam-alerts" className={linkClass}>Safety</Link>
+        <Link to="/device-hub" className={linkClass}>Devices</Link>
+        <Link to="/glossary" className={linkClass}>Glossary</Link>
+        <Link to="/pricing" className={linkClass}>Pricing</Link>
+        <Link to="/about" className={linkClass}>About</Link>
+        <Link to="/roadmap" className={linkClass}>Roadmap</Link>
+      </>
+    );
+  };
+
+  const AuthLinks = ({ mobile = false }: { mobile?: boolean }) => {
     const linkClass = mobile
       ? 'text-lg font-medium py-2'
       : 'text-sm text-muted-foreground hover:text-foreground transition-colors';
 
-    if (!user) {
-      const pillClass = 'text-sm font-medium px-3 py-1.5 rounded-full border border-secondary/40 bg-secondary/10 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-colors';
-
-      return (
-        <>
-          <Link to="/how-it-works" className={mobile ? linkClass : pillClass}>How It Works</Link>
-          <Link to="/guides" className={mobile ? linkClass : pillClass}>Guides</Link>
-          <Link to="/quick-fixes" className={mobile ? linkClass : pillClass}>Quick Fixes</Link>
-          <Link to="/tips" className={linkClass}>Tips</Link>
-          <Link to="/favorites" className={linkClass}>Favorites</Link>
-          <Link to="/tools" className={linkClass}>Tools</Link>
-          <Link to="/safety/scam-alerts" className={linkClass}>Safety</Link>
-          <Link to="/device-hub" className={linkClass}>Devices</Link>
-          <Link to="/glossary" className={linkClass}>Glossary</Link>
-          <Link to="/pricing" className={linkClass}>Pricing</Link>
-          <Link to="/opportunity-dashboard" className={linkClass}>Business</Link>
-          <Link to="/about" className={linkClass}>About</Link>
-          <Link to="/roadmap" className={linkClass}>Roadmap</Link>
-          <Button variant="ghost" onClick={() => navigate('/login')}>Log In</Button>
-          <Button onClick={() => navigate('/signup')}>Sign Up</Button>
-        </>
-      );
-    }
-
     return (
       <>
         <Link to={dashboardPath} className={linkClass}>Dashboard</Link>
-        <span className="text-xs text-muted-foreground capitalize">{user.role}</span>
-        <Button variant="ghost" onClick={() => { logout(); navigate('/'); }}>Log Out</Button>
+        <Link to="/guides" className={linkClass}>Guides</Link>
+        <Link to="/favorites" className={linkClass}>Favorites</Link>
+        <Link to="/tools" className={linkClass}>Tools</Link>
       </>
     );
   };
@@ -60,7 +70,7 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <NavLinks />
+          {user ? <AuthLinks /> : <PublicLinks />}
           <FontSizeToggle />
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
@@ -70,6 +80,35 @@ export function Navbar() {
             <Search className="h-3.5 w-3.5" />
             <span>⌘K</span>
           </button>
+
+          {user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <Avatar className="h-8 w-8">
+                    <AvatarFallback className="bg-secondary text-secondary-foreground text-xs">{initials}</AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <div className="px-2 py-1.5 text-sm">
+                  <p className="font-medium">{user.fullName}</p>
+                  <p className="text-xs text-muted-foreground">{user.email}</p>
+                </div>
+                <DropdownMenuItem onClick={() => navigate(dashboardPath)}>
+                  <User className="h-4 w-4 mr-2" /> Dashboard
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => { logout(); navigate('/'); }}>
+                  <LogOut className="h-4 w-4 mr-2" /> Sign Out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <>
+              <Button variant="ghost" onClick={() => navigate('/login', { state: { from: location.pathname } })}>Sign In</Button>
+              <Button onClick={() => navigate('/login', { state: { from: location.pathname } })}>Sign Up</Button>
+            </>
+          )}
         </nav>
 
         <Sheet>
@@ -78,7 +117,29 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent>
             <nav className="flex flex-col gap-4 mt-8">
-              <NavLinks mobile />
+              {user ? (
+                <>
+                  <div className="flex items-center gap-3 mb-2">
+                    <Avatar className="h-10 w-10">
+                      <AvatarFallback className="bg-secondary text-secondary-foreground">{initials}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-medium text-sm">{user.fullName}</p>
+                      <p className="text-xs text-muted-foreground">{user.email}</p>
+                    </div>
+                  </div>
+                  <AuthLinks mobile />
+                  <Button variant="ghost" className="justify-start" onClick={() => { logout(); navigate('/'); }}>
+                    <LogOut className="h-4 w-4 mr-2" /> Sign Out
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <PublicLinks mobile />
+                  <Button variant="ghost" onClick={() => navigate('/login')}>Sign In</Button>
+                  <Button onClick={() => navigate('/login')}>Sign Up</Button>
+                </>
+              )}
             </nav>
           </SheetContent>
         </Sheet>

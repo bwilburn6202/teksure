@@ -1,6 +1,8 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
 import type { UserRole } from '@/types/database';
 
+const STORAGE_KEY = 'teksure_user';
+
 interface AuthUser {
   id: string;
   email: string;
@@ -16,31 +18,54 @@ interface AuthContextType {
   logout: () => void;
 }
 
+function loadUser(): AuthUser | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveUser(user: AuthUser | null) {
+  if (user) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
+  } else {
+    localStorage.removeItem(STORAGE_KEY);
+  }
+}
+
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<AuthUser | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(loadUser);
   const [isLoading, setIsLoading] = useState(false);
 
   const login = useCallback(async (email: string, _password: string) => {
     setIsLoading(true);
-    // TODO: Replace with Supabase auth
     await new Promise(r => setTimeout(r, 600));
     let role: UserRole = 'customer';
     if (email.includes('tech')) role = 'tech';
     if (email.includes('admin')) role = 'admin';
-    setUser({ id: crypto.randomUUID(), email, role, fullName: email.split('@')[0] });
+    const newUser: AuthUser = { id: crypto.randomUUID(), email, role, fullName: email.split('@')[0] };
+    saveUser(newUser);
+    setUser(newUser);
     setIsLoading(false);
   }, []);
 
   const signup = useCallback(async (email: string, _password: string, role: UserRole, fullName: string) => {
     setIsLoading(true);
     await new Promise(r => setTimeout(r, 600));
-    setUser({ id: crypto.randomUUID(), email, role, fullName });
+    const newUser: AuthUser = { id: crypto.randomUUID(), email, role, fullName };
+    saveUser(newUser);
+    setUser(newUser);
     setIsLoading(false);
   }, []);
 
-  const logout = useCallback(() => setUser(null), []);
+  const logout = useCallback(() => {
+    saveUser(null);
+    setUser(null);
+  }, []);
 
   return (
     <AuthContext.Provider value={{ user, isLoading, login, signup, logout }}>
