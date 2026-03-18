@@ -194,6 +194,18 @@ export default function ScamAlerts() {
             </Card>
           ))}
         </div>
+
+        <Card className="mt-10 bg-secondary/5 border-secondary/30">
+          <CardContent className="py-5 flex items-center gap-3">
+            <Baby className="h-6 w-6 text-secondary shrink-0" />
+            <div>
+              <p className="text-sm font-semibold">Keeping kids safe online?</p>
+              <Link to="/safety/parental-controls" className="text-sm text-secondary hover:underline">
+                Read our Parental Controls Guide →
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
       </main>
       <Footer />
     </>
