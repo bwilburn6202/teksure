@@ -27,9 +27,9 @@ export function Navbar() {
 
     return (
       <>
-        <Link to="/how-it-works" className={pillClass}>How It Works</Link>
-        <Link to="/guides" className={pillClass}>Guides</Link>
-        <Link to="/quick-fixes" className={pillClass}>Quick Fixes</Link>
+        <Link to="/how-it-works" className={linkClass}>How It Works</Link>
+        <Link to="/guides" className={linkClass}>Guides</Link>
+        <Link to="/quick-fixes" className={linkClass}>Quick Fixes</Link>
         <Link to="/tips" className={linkClass}>Tips</Link>
         <Link to="/favorites" className={linkClass}>Favorites</Link>
         <Link to="/tools" className={linkClass}>Tools</Link>
