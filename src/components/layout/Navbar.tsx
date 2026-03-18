@@ -23,10 +23,7 @@ export function Navbar() {
   const PublicLinks = ({ mobile = false }: { mobile?: boolean }) => {
     const linkClass = mobile
       ? 'text-lg font-medium py-2'
-      : 'text-sm text-muted-foreground hover:text-foreground transition-colors';
-    const pillClass = mobile
-      ? linkClass
-      : 'text-sm font-medium px-3 py-1.5 rounded-full border border-secondary/40 bg-secondary/10 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-colors';
+      : 'text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors';
 
     return (
       <>
