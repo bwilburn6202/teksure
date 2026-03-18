@@ -48,7 +48,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Community Forum', description: 'A friendly space to ask questions, share tips, and help fellow users.', status: 'planned', category: 'Community' },
   { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention.', status: 'planned', category: 'Support' },
   { title: 'Guided Setup Wizard', description: 'A step-by-step walkthrough that helps new users get started with TekSure.', status: 'planned', category: 'UX' },
-  { title: 'Tech Health Check', description: 'A simple questionnaire that identifies potential issues with your devices.', status: 'planned', category: 'Tools' },
+  { title: 'Tech Health Check', description: 'A simple questionnaire that identifies potential issues with your devices.', status: 'live', category: 'Tools' },
   { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click.', status: 'planned', category: 'Guides' },
   { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages.', status: 'planned', category: 'Accessibility' },
   { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'planned', category: 'Guides' },
