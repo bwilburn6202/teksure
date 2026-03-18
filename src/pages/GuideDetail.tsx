@@ -258,7 +258,20 @@ const GuideDetail = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-base mb-2">{step.title}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{step.content}</p>
+                          <div className="text-sm text-muted-foreground leading-relaxed">
+                            {step.content.split(/(`[^`]+`)/).map((part, pi) => {
+                              if (part.startsWith('`') && part.endsWith('`')) {
+                                const code = part.slice(1, -1);
+                                return (
+                                  <span key={pi} className="inline-flex items-center gap-1 bg-muted px-1.5 py-0.5 rounded font-mono text-xs">
+                                    {code}
+                                    <CopyButton text={code} />
+                                  </span>
+                                );
+                              }
+                              return <span key={pi}>{part}</span>;
+                            })}
+                          </div>
 
                           {/* Screenshot mockup */}
                           <MockScreenshot
