@@ -109,6 +109,38 @@
   }
 }
 
+/* Font size adjuster classes */
+html.font-size-large {
+  font-size: 22px;
+}
+html.font-size-xl {
+  font-size: 26px;
+}
+
+/* Print styles */
+@media print {
+  header, footer, nav, .no-print, [data-radix-popper-content-wrapper],
+  .fixed, button:not(.print-btn) {
+    display: none !important;
+  }
+  body {
+    color: #000 !important;
+    background: #fff !important;
+    font-size: 14pt;
+  }
+  .hero-gradient {
+    background: none !important;
+    color: #000 !important;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .shadow-sm, .shadow-md, .shadow-lg {
+    box-shadow: none !important;
+  }
+}
+
 @layer utilities {
   .text-gradient {
     -webkit-background-clip: text;

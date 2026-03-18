@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -8,6 +8,7 @@ import { Separator } from '@/components/ui/separator';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { CopyButton } from '@/components/CopyButton';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -183,6 +184,16 @@ const GuideDetail = () => {
               {guide.title}
             </h1>
             <p className="text-lg text-muted-foreground">{guide.excerpt}</p>
+
+            {/* Print button */}
+            <Button
+              variant="outline"
+              size="sm"
+              className="mt-4 gap-2 no-print"
+              onClick={() => window.print()}
+            >
+              <Printer className="h-4 w-4" /> Print Guide
+            </Button>
           </div>
 
           {/* Table of contents */}
@@ -247,7 +258,20 @@ const GuideDetail = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-base mb-2">{step.title}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{step.content}</p>
+                          <div className="text-sm text-muted-foreground leading-relaxed">
+                            {step.content.split(/(`[^`]+`)/).map((part, pi) => {
+                              if (part.startsWith('`') && part.endsWith('`')) {
+                                const code = part.slice(1, -1);
+                                return (
+                                  <span key={pi} className="inline-flex items-center gap-1 bg-muted px-1.5 py-0.5 rounded font-mono text-xs">
+                                    {code}
+                                    <CopyButton text={code} />
+                                  </span>
+                                );
+                              }
+                              return <span key={pi}>{part}</span>;
+                            })}
+                          </div>
 
                           {/* Screenshot mockup */}
                           <MockScreenshot

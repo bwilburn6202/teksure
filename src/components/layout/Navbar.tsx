@@ -3,6 +3,7 @@ import { Menu, Shield, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useAuth } from '@/contexts/AuthContext';
+import { FontSizeToggle } from '@/components/FontSizeToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -56,6 +57,7 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-6">
           <NavLinks />
+          <FontSizeToggle />
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
             className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border bg-muted/50 text-xs text-muted-foreground hover:bg-muted transition-colors"

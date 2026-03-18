@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -19,32 +19,48 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'ai-guides': Bot,
 };
 
-const GuideCard = ({ guide }: { guide: typeof guides[0] }) => (
-  <Link to={`/guides/${guide.slug}`}>
-    <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
-      <CardContent className="pt-6">
-        <div className="text-4xl mb-4">{guide.thumbnailEmoji}</div>
-        <div className="flex items-center gap-2 mb-3">
-          <Badge variant="secondary" className="text-xs capitalize">
-            {categoryLabels[guide.category]}
-          </Badge>
-          <span className="text-xs text-muted-foreground">{guide.readTime}</span>
-        </div>
-        <h3 className="font-semibold text-lg mb-2 group-hover:text-secondary transition-colors leading-snug">
-          {guide.title}
-        </h3>
-        <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
-        <div className="flex flex-wrap gap-1.5 mt-3">
-          {guide.tags.slice(0, 3).map(tag => (
-            <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-              {tag}
+const difficultyConfig = {
+  Beginner: { emoji: '🟢', className: 'border-[hsl(var(--teksure-success)/0.5)] text-[hsl(var(--teksure-success))]' },
+  Intermediate: { emoji: '🟡', className: 'border-[hsl(var(--teksure-warning)/0.5)] text-[hsl(var(--teksure-warning))]' },
+  Advanced: { emoji: '🔴', className: 'border-destructive/50 text-destructive' },
+};
+
+const GuideCard = ({ guide }: { guide: typeof guides[0] }) => {
+  const diff = guide.difficulty ? difficultyConfig[guide.difficulty] : null;
+  return (
+    <Link to={`/guides/${guide.slug}`}>
+      <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
+        <CardContent className="pt-6">
+          <div className="text-4xl mb-4">{guide.thumbnailEmoji}</div>
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
+            <Badge variant="secondary" className="text-xs capitalize">
+              {categoryLabels[guide.category]}
+            </Badge>
+            {diff && (
+              <Badge variant="outline" className={`text-xs ${diff.className}`}>
+                {diff.emoji} {guide.difficulty}
+              </Badge>
+            )}
+            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+              <Clock className="h-3 w-3" /> {guide.readTime}
             </span>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  </Link>
-);
+          </div>
+          <h3 className="font-semibold text-lg mb-2 group-hover:text-secondary transition-colors leading-snug">
+            {guide.title}
+          </h3>
+          <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
+          <div className="flex flex-wrap gap-1.5 mt-3">
+            {guide.tags.slice(0, 3).map(tag => (
+              <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
+  );
+};
 
 const Guides = () => {
   const [search, setSearch] = useState('');
