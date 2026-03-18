@@ -33,6 +33,8 @@ import WifiSpeed from "./pages/tools/WifiSpeed";
 import HealthCheck from "./pages/tools/HealthCheck";
 import DeviceCompare from "./pages/tools/DeviceCompare";
 import KeyboardShortcuts from "./pages/tools/KeyboardShortcuts";
+import EmailTemplates from "./pages/EmailTemplates";
+import ScamAlerts from "./pages/ScamAlerts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
