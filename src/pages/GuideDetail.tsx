@@ -166,9 +166,15 @@ const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string;
 
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { user } = useAuth();
+  const location = useLocation();
   const guide = guides.find(g => g.slug === slug);
 
   if (!guide) return <Navigate to="/guides" replace />;
+
+  if (!user) {
+    return <Navigate to="/login" state={{ message: 'Create a free account to read this guide.', from: location.pathname }} replace />;
+  }
 
   const currentIndex = guides.findIndex(g => g.slug === slug);
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
