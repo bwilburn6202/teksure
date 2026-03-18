@@ -81,6 +81,7 @@ const AppContent = () => {
         <Route path="/tools/email-templates" element={<EmailTemplates />} />
         <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
         <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
+        <Route path="/tips" element={<Tips />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
