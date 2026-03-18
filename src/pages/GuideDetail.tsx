@@ -14,6 +14,7 @@ import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep } from '@/data/guides';
+import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 
 /** Mock OS screenshot — styled like HowToGeek / WikiHow */
 const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
