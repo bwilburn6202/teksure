@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
