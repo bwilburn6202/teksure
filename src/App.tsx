@@ -27,6 +27,7 @@ import DeviceHub from "./pages/DeviceHub";
 import About from "./pages/About";
 import Roadmap from "./pages/Roadmap";
 import SearchResults from "./pages/SearchResults";
+import Tools from "./pages/Tools";
 import PasswordStrength from "./pages/tools/PasswordStrength";
 import WifiSpeed from "./pages/tools/WifiSpeed";
 import NotFound from "./pages/NotFound";
