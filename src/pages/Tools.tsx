@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { KeyRound, Wifi, Wrench } from 'lucide-react';
