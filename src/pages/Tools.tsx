@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages,
+  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
 } from 'lucide-react';
 
 const tools = [
@@ -80,6 +80,14 @@ const tools = [
     path: '/tools/jargon-translator',
     color: 'text-cyan-500',
     badge: 'Reference',
+  },
+  {
+    title: 'Quick Reference Cards',
+    description: 'Printable cheat-sheet cards for shortcuts, safety tips, and troubleshooting — stick them next to your screen.',
+    icon: CreditCard,
+    path: '/tools/quick-reference',
+    color: 'text-emerald-500',
+    badge: 'Printable',
   },
 ];
 
