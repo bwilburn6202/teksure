@@ -25,6 +25,7 @@ import Glossary from "./pages/Glossary";
 import QuickFixes from "./pages/QuickFixes";
 import DeviceHub from "./pages/DeviceHub";
 import About from "./pages/About";
+import Roadmap from "./pages/Roadmap";
 import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 
