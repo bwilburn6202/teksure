@@ -25,7 +25,7 @@ const tools = [
 export default function Tools() {
   return (
     <>
-      <SEOHead title="Tools | TekSure" description="Free tech tools to check your password strength, test WiFi speed, and more." />
+      <SEOHead title="Tools | TekSure" description="Free tech tools to check your password strength, test WiFi speed, and more." path="/tools" />
       <Navbar />
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2">
