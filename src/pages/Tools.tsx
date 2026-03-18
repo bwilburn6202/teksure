@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle,
+  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages,
 } from 'lucide-react';
 
 const tools = [
@@ -72,6 +72,14 @@ const tools = [
     path: '/tools/error-decoder',
     color: 'text-destructive',
     badge: 'Troubleshooting',
+  },
+  {
+    title: 'Tech Jargon Translator',
+    description: 'Type any confusing tech word and get a plain-English explanation anyone can understand.',
+    icon: Languages,
+    path: '/tools/jargon-translator',
+    color: 'text-cyan-500',
+    badge: 'Reference',
   },
 ];
 

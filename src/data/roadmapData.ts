@@ -107,7 +107,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'File Management 101', description: 'Organize your files and folders so you can always find what you need.', status: 'exploring', category: 'Guides' },
   { title: 'Screen Recording Guide', description: 'Learn to record your screen — great for showing someone a problem.', status: 'exploring', category: 'Guides' },
   { title: 'Two-Factor Authentication Setup', description: 'Add an extra layer of security to your important accounts.', status: 'exploring', category: 'Safety' },
-  { title: 'Tech Jargon Translator', description: 'Paste any confusing tech message and get a plain-language explanation.', status: 'exploring', category: 'AI' },
+  { title: 'Tech Jargon Translator', description: 'Paste any confusing tech message and get a plain-language explanation.', status: 'live', category: 'AI' },
   { title: 'Personalized Learning Path', description: 'Get a custom sequence of guides based on your experience level and interests.', status: 'exploring', category: 'AI' },
   { title: 'Accessibility Score', description: 'Rate how accessible your own devices and apps are with a simple checklist.', status: 'exploring', category: 'Accessibility' },
   { title: 'Community Ambassadors', description: 'Recognize and reward community members who help others learn technology.', status: 'exploring', category: 'Community' },
