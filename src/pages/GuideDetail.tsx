@@ -186,15 +186,18 @@ const GuideDetail = () => {
             </h1>
             <p className="text-lg text-muted-foreground">{guide.excerpt}</p>
 
-            {/* Print button */}
-            <Button
-              variant="outline"
-              size="sm"
-              className="mt-4 gap-2 no-print"
-              onClick={() => window.print()}
-            >
-              <Printer className="h-4 w-4" /> Print Guide
-            </Button>
+            {/* Print & Listen buttons */}
+            <div className="flex gap-2 mt-4">
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-2 no-print"
+                onClick={() => window.print()}
+              >
+                <Printer className="h-4 w-4" /> Print Guide
+              </Button>
+              <ListenButton guide={guide} />
+            </div>
           </div>
 
           {/* Table of contents */}
