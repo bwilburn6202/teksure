@@ -88,6 +88,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="TekSure — Free Tech Help for Beginners | Step-by-Step Guides"
+        description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
+        path="/"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'TekSure',
+          url: 'https://teksure.lovable.app',
+          description: 'The #1 tech help resource for beginners. Free step-by-step guides, quick fixes, and verified tech support.',
+        }}
+      />
       <Navbar />
 
       {/* Hero */}

@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 
 const categoryIcons: Record<GuideCategory, typeof Monitor> = {
