@@ -50,12 +50,12 @@ const tools = [
     badge: 'Beginner',
   },
   {
-    title: 'More Tools Coming Soon',
-    description: 'We\'re building keyboard shortcut cheat sheets, email templates, and more. Check the roadmap for updates!',
-    icon: Wrench,
-    path: '/roadmap',
-    color: 'text-muted-foreground',
-    badge: 'Roadmap',
+    title: 'Keyboard Shortcuts',
+    description: 'Printable cheat sheets for Windows, Mac, browsers, email, Word/Docs, and Excel/Sheets.',
+    icon: Keyboard,
+    path: '/tools/keyboard-shortcuts',
+    color: 'text-orange-500',
+    badge: 'Reference',
   },
 ];
 
