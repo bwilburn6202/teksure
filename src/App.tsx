@@ -70,6 +70,8 @@ const AppContent = () => {
         <Route path="/tools" element={<Tools />} />
         <Route path="/tools/password-strength" element={<PasswordStrength />} />
         <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
+        <Route path="/tools/health-check" element={<HealthCheck />} />
+        <Route path="/tools/device-compare" element={<DeviceCompare />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
