@@ -34,35 +34,33 @@ const AppContent = () => {
   const { open, onClose } = useSearchModal();
 
   return (
-    <>
+    <BrowserRouter>
       <SearchModal open={open} onClose={onClose} />
       <NeedHelpButton />
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/guides" element={<Guides />} />
-          <Route path="/guides/:slug" element={<GuideDetail />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/search" element={<SearchResults />} />
-          <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
-          <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
-          <Route path="/tech" element={<ProtectedRoute allowedRoles={['tech']}><TechDashboard /></ProtectedRoute>} />
-          <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
-          <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
-          <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
-          <Route path="/glossary" element={<Glossary />} />
-          <Route path="/quick-fixes" element={<QuickFixes />} />
-          <Route path="/device-hub" element={<DeviceHub />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/guides" element={<Guides />} />
+        <Route path="/guides/:slug" element={<GuideDetail />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
+        <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
+        <Route path="/tech" element={<ProtectedRoute allowedRoles={['tech']}><TechDashboard /></ProtectedRoute>} />
+        <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
+        <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
+        <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
+        <Route path="/glossary" element={<Glossary />} />
+        <Route path="/quick-fixes" element={<QuickFixes />} />
+        <Route path="/device-hub" element={<DeviceHub />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
