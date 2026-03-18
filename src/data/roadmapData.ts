@@ -65,8 +65,8 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Achievement Badges', description: 'Earn fun badges as you complete guides and learn new tech skills.', status: 'planned', category: 'Gamification' },
   { title: 'Tech Difficulty Ratings', description: 'Every guide shows a difficulty level so you can start with the easiest ones.', status: 'live', category: 'Guides' },
   { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
-  { title: 'Copy-Paste Code Snippets', description: 'One-click copy buttons for any settings or text you need to enter.', status: 'planned', category: 'Tools' },
-  { title: 'Estimated Time to Complete', description: 'Each guide shows roughly how long it takes so you can plan your time.', status: 'planned', category: 'UX' },
+  { title: 'Copy-Paste Code Snippets', description: 'One-click copy buttons for any settings or text you need to enter.', status: 'live', category: 'Tools' },
+  { title: 'Estimated Time to Complete', description: 'Each guide shows roughly how long it takes so you can plan your time.', status: 'live', category: 'UX' },
   { title: 'Seasonal Tech Tips', description: 'Timely advice for holiday shopping, tax season, back-to-school, and more.', status: 'planned', category: 'Content' },
 
   // ── EXPLORING (50) ─────────────────────────────────────────
