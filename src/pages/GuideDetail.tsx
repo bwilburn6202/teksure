@@ -137,6 +137,32 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
   );
 };
 
+/** ⭐ Bookmark button */
+const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string; excerpt: string }) => {
+  const [saved, setSaved] = useState(() => isFavorite(slug));
+
+  const toggle = () => {
+    if (saved) {
+      removeFavorite(slug);
+    } else {
+      addFavorite({ slug, title, excerpt });
+    }
+    setSaved(!saved);
+  };
+
+  return (
+    <Button
+      variant="ghost"
+      size="icon"
+      className="absolute top-0 right-0 no-print"
+      onClick={toggle}
+      aria-label={saved ? 'Remove from favorites' : 'Add to favorites'}
+    >
+      <Heart className={`h-5 w-5 transition-colors ${saved ? 'fill-destructive text-destructive' : 'text-muted-foreground'}`} />
+    </Button>
+  );
+};
+
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const guide = guides.find(g => g.slug === slug);
