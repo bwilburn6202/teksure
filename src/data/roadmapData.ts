@@ -53,7 +53,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages.', status: 'planned', category: 'Accessibility' },
   { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'planned', category: 'Guides' },
   { title: 'Keyboard Shortcut Cheat Sheets', description: 'Downloadable reference cards with the most useful keyboard shortcuts.', status: 'planned', category: 'Tools' },
-  { title: 'Device Comparison Tool', description: 'Compare two devices side by side to decide which one is right for you.', status: 'planned', category: 'Tools' },
+  { title: 'Device Comparison Tool', description: 'Compare two devices side by side to decide which one is right for you.', status: 'live', category: 'Tools' },
   { title: 'Tech News for Beginners', description: 'Important tech news explained in simple language so you stay informed.', status: 'planned', category: 'Content' },
   { title: 'Scam Alert Center', description: 'Stay up to date on the latest scams and learn how to protect yourself.', status: 'planned', category: 'Safety' },
   { title: 'Password Strength Checker', description: 'Test how strong your password is and get suggestions to make it safer.', status: 'live', category: 'Safety' },
