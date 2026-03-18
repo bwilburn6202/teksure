@@ -57,7 +57,7 @@ const Index = () => {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (search.trim()) {
-      navigate(`/guides?q=${encodeURIComponent(search.trim())}`);
+      navigate(`/search?q=${encodeURIComponent(search.trim())}`);
     }
   };
 
