@@ -42,7 +42,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Video Tutorials', description: 'Watch short video walkthroughs that show you exactly what to do on screen.', status: 'planned', category: 'Guides' },
   { title: 'Bookmark Favorites', description: 'Save your favorite guides and articles for quick access later.', status: 'planned', category: 'UX' },
   { title: 'Progress Tracking', description: 'See which guides you\'ve completed and track your learning journey.', status: 'planned', category: 'Gamification' },
-  { title: 'Text-to-Speech', description: 'Listen to any guide read aloud — perfect if you prefer hearing over reading.', status: 'planned', category: 'Accessibility' },
+  { title: 'Text-to-Speech', description: 'Listen to any guide read aloud — perfect if you prefer hearing over reading.', status: 'live', category: 'Accessibility' },
   { title: 'Font Size Adjuster', description: 'Easily increase or decrease the text size across the entire site to your comfort.', status: 'live', category: 'Accessibility' },
   { title: 'AI-Powered TekBot Upgrade', description: 'Smarter AI responses that understand context and provide more personalized help.', status: 'planned', category: 'AI' },
   { title: 'Community Forum', description: 'A friendly space to ask questions, share tips, and help fellow users.', status: 'planned', category: 'Community' },
