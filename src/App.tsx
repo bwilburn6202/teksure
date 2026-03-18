@@ -76,6 +76,8 @@ const AppContent = () => {
         <Route path="/tools/health-check" element={<HealthCheck />} />
         <Route path="/tools/device-compare" element={<DeviceCompare />} />
         <Route path="/tools/keyboard-shortcuts" element={<KeyboardShortcuts />} />
+        <Route path="/tools/email-templates" element={<EmailTemplates />} />
+        <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

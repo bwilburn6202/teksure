@@ -57,6 +57,14 @@ const tools = [
     color: 'text-orange-500',
     badge: 'Reference',
   },
+  {
+    title: 'Email Templates',
+    description: '10 ready-to-use email templates for complaints, returns, job enquiries, IT support, and more.',
+    icon: Mail,
+    path: '/tools/email-templates',
+    color: 'text-teal-500',
+    badge: 'Productivity',
+  },
 ];
 
 export default function Tools() {

@@ -27,6 +27,7 @@ export function Navbar() {
           <Link to="/guides" className={mobile ? linkClass : pillClass}>Guides</Link>
           <Link to="/quick-fixes" className={mobile ? linkClass : pillClass}>Quick Fixes</Link>
           <Link to="/tools" className={linkClass}>Tools</Link>
+          <Link to="/safety/scam-alerts" className={linkClass}>Safety</Link>
           <Link to="/device-hub" className={linkClass}>Devices</Link>
           <Link to="/glossary" className={linkClass}>Glossary</Link>
           <Link to="/pricing" className={linkClass}>Pricing</Link>
