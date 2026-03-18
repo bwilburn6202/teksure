@@ -73,6 +73,14 @@ const tools = [
     color: 'text-destructive',
     badge: 'Troubleshooting',
   },
+  {
+    title: 'Tech Jargon Translator',
+    description: 'Type any confusing tech word and get a plain-English explanation anyone can understand.',
+    icon: Languages,
+    path: '/tools/jargon-translator',
+    color: 'text-cyan-500',
+    badge: 'Reference',
+  },
 ];
 
 export default function Tools() {
