@@ -13,6 +13,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 
 const categoryIcons: Record<GuideCategory, typeof Monitor> = {
@@ -56,7 +57,7 @@ const Index = () => {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (search.trim()) {
-      navigate(`/guides?q=${encodeURIComponent(search.trim())}`);
+      navigate(`/search?q=${encodeURIComponent(search.trim())}`);
     }
   };
 
@@ -87,6 +88,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="TekSure — Free Tech Help for Beginners | Step-by-Step Guides"
+        description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
+        path="/"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'TekSure',
+          url: 'https://teksure.lovable.app',
+          description: 'The #1 tech help resource for beginners. Free step-by-step guides, quick fixes, and verified tech support.',
+        }}
+      />
       <Navbar />
 
       {/* Hero */}

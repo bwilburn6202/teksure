@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels } from '@/data/guides';
 
 interface DeviceType {
@@ -94,6 +95,11 @@ const DeviceHub = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Device Help Hub — Find Guides by Device | TekSure"
+        description="Select your device — Windows PC, Mac, iPhone, Android, tablet, printer, or router — and find the right tech guides instantly."
+        path="/device-hub"
+      />
       <Navbar />
 
       {/* Hero */}

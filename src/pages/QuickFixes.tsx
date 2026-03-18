@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 
 interface QuickFix {
   emoji: string;
@@ -139,8 +140,27 @@ const QuickFixes = () => {
     return results;
   }, [search, category]);
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: quickFixes.map(f => ({
+      '@type': 'Question',
+      name: f.problem,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.steps.join('. '),
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Quick Tech Fixes — Instant Solutions | TekSure"
+        description="Instant solutions to the most common tech problems. Click to reveal step-by-step fixes for slow computers, Wi-Fi issues, and more."
+        path="/quick-fixes"
+        jsonLd={faqJsonLd}
+      />
       <Navbar />
 
       {/* Hero */}

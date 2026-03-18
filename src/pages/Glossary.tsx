@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 
 interface GlossaryTerm {
   term: string;
@@ -116,6 +117,11 @@ const Glossary = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Tech Glossary for Beginners | TekSure"
+        description="Every tech term explained in plain English. Browse 65+ definitions with analogies — no jargon, just answers."
+        path="/glossary"
+      />
       <Navbar />
 
       {/* Hero */}
