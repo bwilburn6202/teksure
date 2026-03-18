@@ -36,7 +36,7 @@ const AppContent = () => {
   return (
     <BrowserRouter>
       <SearchModal open={open} onClose={onClose} />
-      <NeedHelpButton />
+      <TekBot />
       <Toaster />
       <Sonner />
       <Routes>
