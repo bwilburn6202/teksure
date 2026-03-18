@@ -70,6 +70,11 @@ const Guides = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Tech Guides for Beginners | TekSure"
+        description="Browse 300+ free step-by-step tech guides for Windows, Mac, essential skills, tips, and AI tools. Written for beginners."
+        path="/guides"
+      />
       <Navbar />
 
       {/* Hero */}

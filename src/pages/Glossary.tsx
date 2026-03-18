@@ -117,6 +117,11 @@ const Glossary = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Tech Glossary for Beginners | TekSure"
+        description="Every tech term explained in plain English. Browse 65+ definitions with analogies — no jargon, just answers."
+        path="/glossary"
+      />
       <Navbar />
 
       {/* Hero */}

@@ -95,6 +95,11 @@ const DeviceHub = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Device Help Hub — Find Guides by Device | TekSure"
+        description="Select your device — Windows PC, Mac, iPhone, Android, tablet, printer, or router — and find the right tech guides instantly."
+        path="/device-hub"
+      />
       <Navbar />
 
       {/* Hero */}
