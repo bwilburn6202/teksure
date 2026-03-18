@@ -61,7 +61,7 @@ const questions: Question[] = [
     question: '5. Do you have antivirus or security software?',
     options: [
       { value: 'yes', label: 'Yes, active and updated', score: 'green', tip: 'Well done — keep it running and let it update automatically.' },
-      { value: 'builtin', label: 'Just the built-in one (Windows Defender, etc.)', score: 'amber', tip: 'Built-in protection is decent, but make sure it's enabled and scanning regularly.' },
+      { value: 'builtin', label: 'Just the built-in one (Windows Defender, etc.)', score: 'amber', tip: 'Built-in protection is decent, but make sure it\'s enabled and scanning regularly.' },
       { value: 'no', label: 'No / not sure', score: 'red', tip: 'Install a reputable free antivirus (like Windows Defender or Avast Free) right away to protect your device.' },
     ],
   },
