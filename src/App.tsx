@@ -65,6 +65,7 @@ const AppContent = () => {
         <Route path="/glossary" element={<Glossary />} />
         <Route path="/quick-fixes" element={<QuickFixes />} />
         <Route path="/device-hub" element={<DeviceHub />} />
+        <Route path="/tools" element={<Tools />} />
         <Route path="/tools/password-strength" element={<PasswordStrength />} />
         <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
         <Route path="*" element={<NotFound />} />
