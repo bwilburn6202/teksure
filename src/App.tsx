@@ -27,6 +27,7 @@ import DeviceHub from "./pages/DeviceHub";
 import About from "./pages/About";
 import Roadmap from "./pages/Roadmap";
 import SearchResults from "./pages/SearchResults";
+import Tools from "./pages/Tools";
 import PasswordStrength from "./pages/tools/PasswordStrength";
 import WifiSpeed from "./pages/tools/WifiSpeed";
 import NotFound from "./pages/NotFound";
@@ -64,6 +65,7 @@ const AppContent = () => {
         <Route path="/glossary" element={<Glossary />} />
         <Route path="/quick-fixes" element={<QuickFixes />} />
         <Route path="/device-hub" element={<DeviceHub />} />
+        <Route path="/tools" element={<Tools />} />
         <Route path="/tools/password-strength" element={<PasswordStrength />} />
         <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
         <Route path="*" element={<NotFound />} />
