@@ -1,0 +1,123 @@
+export type RoadmapStatus = 'live' | 'in-progress' | 'planned' | 'exploring';
+
+export type RoadmapCategory =
+  | 'Guides' | 'Search' | 'AI' | 'UX' | 'SEO'
+  | 'Accessibility' | 'Community' | 'Support'
+  | 'Tools' | 'Safety' | 'Content' | 'Gamification';
+
+export interface RoadmapItem {
+  title: string;
+  description: string;
+  status: RoadmapStatus;
+  category: RoadmapCategory;
+}
+
+export const roadmapItems: RoadmapItem[] = [
+  // ── LIVE (15) ──────────────────────────────────────────────
+  { title: 'Step-by-Step Guides Library', description: 'A growing collection of plain-language guides that walk you through common tech tasks one step at a time.', status: 'live', category: 'Guides' },
+  { title: 'Smart Search', description: 'Instantly search across guides, glossary terms, and quick fixes to find the help you need.', status: 'live', category: 'Search' },
+  { title: 'TekBot Chat Assistant', description: 'A friendly AI chat helper that answers your tech questions right on every page.', status: 'live', category: 'AI' },
+  { title: 'Device-Specific Help', description: 'Browse helpful information organized by device type — phones, tablets, laptops, and more.', status: 'live', category: 'Guides' },
+  { title: 'SEO Optimization', description: 'Every page is optimized so you can find TekSure easily through Google and other search engines.', status: 'live', category: 'SEO' },
+  { title: 'Senior-Friendly Design', description: 'Large text, clear buttons, and simple layouts designed for comfortable reading and navigation.', status: 'live', category: 'UX' },
+  { title: 'Quick Fixes Section', description: 'Short, focused solutions for the most common tech problems — no long articles required.', status: 'live', category: 'Support' },
+  { title: 'Business Tech Guides', description: 'Guides tailored for small business owners who need practical tech help.', status: 'live', category: 'Guides' },
+  { title: 'Tech Glossary', description: 'Over 80 tech terms explained in everyday language with helpful analogies.', status: 'live', category: 'Content' },
+  { title: 'Public Roadmap', description: 'This page! See exactly what we\'re working on and what\'s coming next.', status: 'live', category: 'Community' },
+  { title: 'Breadcrumb Navigation', description: 'A trail of links at the top of each page so you always know where you are.', status: 'live', category: 'UX' },
+  { title: 'Responsive Mobile Design', description: 'Every page looks great and works perfectly on phones, tablets, and desktops.', status: 'live', category: 'UX' },
+  { title: 'About Page', description: 'Learn about TekSure\'s mission to make technology accessible for everyone.', status: 'live', category: 'Content' },
+  { title: 'Pricing Page', description: 'Transparent, easy-to-understand pricing for all TekSure service tiers.', status: 'live', category: 'Content' },
+  { title: 'How It Works Page', description: 'A clear explanation of how TekSure helps you get tech support step by step.', status: 'live', category: 'Content' },
+
+  // ── IN PROGRESS (5) ────────────────────────────────────────
+  { title: 'Interactive Troubleshooter', description: 'Answer simple yes/no questions and we\'ll guide you to the right fix for your problem.', status: 'in-progress', category: 'Support' },
+  { title: 'Was This Helpful Ratings', description: 'Rate guides and quick fixes so we know what\'s working and what needs improvement.', status: 'in-progress', category: 'UX' },
+  { title: 'Related Guides Suggestions', description: 'At the bottom of each guide, see links to other articles you might find useful.', status: 'in-progress', category: 'Guides' },
+  { title: 'Dark Mode Toggle', description: 'Switch to a darker color scheme that\'s easier on your eyes, especially at night.', status: 'in-progress', category: 'Accessibility' },
+  { title: 'Newsletter Signup', description: 'Subscribe to receive weekly tech tips and new guide announcements by email.', status: 'in-progress', category: 'Community' },
+
+  // ── PLANNED (30) ───────────────────────────────────────────
+  { title: 'Print-Friendly Guides', description: 'Download or print any guide in a clean, easy-to-read format for offline reference.', status: 'planned', category: 'Guides' },
+  { title: 'Video Tutorials', description: 'Watch short video walkthroughs that show you exactly what to do on screen.', status: 'planned', category: 'Guides' },
+  { title: 'Bookmark Favorites', description: 'Save your favorite guides and articles for quick access later.', status: 'planned', category: 'UX' },
+  { title: 'Progress Tracking', description: 'See which guides you\'ve completed and track your learning journey.', status: 'planned', category: 'Gamification' },
+  { title: 'Text-to-Speech', description: 'Listen to any guide read aloud — perfect if you prefer hearing over reading.', status: 'planned', category: 'Accessibility' },
+  { title: 'Font Size Adjuster', description: 'Easily increase or decrease the text size across the entire site to your comfort.', status: 'planned', category: 'Accessibility' },
+  { title: 'AI-Powered TekBot Upgrade', description: 'Smarter AI responses that understand context and provide more personalized help.', status: 'planned', category: 'AI' },
+  { title: 'Community Forum', description: 'A friendly space to ask questions, share tips, and help fellow users.', status: 'planned', category: 'Community' },
+  { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention.', status: 'planned', category: 'Support' },
+  { title: 'Guided Setup Wizard', description: 'A step-by-step walkthrough that helps new users get started with TekSure.', status: 'planned', category: 'UX' },
+  { title: 'Tech Health Check', description: 'A simple questionnaire that identifies potential issues with your devices.', status: 'planned', category: 'Tools' },
+  { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click.', status: 'planned', category: 'Guides' },
+  { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages.', status: 'planned', category: 'Accessibility' },
+  { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'planned', category: 'Guides' },
+  { title: 'Keyboard Shortcut Cheat Sheets', description: 'Downloadable reference cards with the most useful keyboard shortcuts.', status: 'planned', category: 'Tools' },
+  { title: 'Device Comparison Tool', description: 'Compare two devices side by side to decide which one is right for you.', status: 'planned', category: 'Tools' },
+  { title: 'Tech News for Beginners', description: 'Important tech news explained in simple language so you stay informed.', status: 'planned', category: 'Content' },
+  { title: 'Scam Alert Center', description: 'Stay up to date on the latest scams and learn how to protect yourself.', status: 'planned', category: 'Safety' },
+  { title: 'Password Strength Checker', description: 'Test how strong your password is and get suggestions to make it safer.', status: 'planned', category: 'Safety' },
+  { title: 'WiFi Speed Test', description: 'Check your internet speed right from TekSure — no extra apps needed.', status: 'planned', category: 'Tools' },
+  { title: 'Email Template Library', description: 'Ready-made email templates for common situations like complaints or thank-you notes.', status: 'planned', category: 'Tools' },
+  { title: 'App Recommendation Engine', description: 'Get personalized app suggestions based on what you want to do with your device.', status: 'planned', category: 'AI' },
+  { title: 'Weekly Tech Tip', description: 'A new, easy-to-follow tech tip delivered to your dashboard every week.', status: 'planned', category: 'Content' },
+  { title: 'User Profiles', description: 'Customize your profile with a photo and preferences for a personalized experience.', status: 'planned', category: 'UX' },
+  { title: 'Achievement Badges', description: 'Earn fun badges as you complete guides and learn new tech skills.', status: 'planned', category: 'Gamification' },
+  { title: 'Tech Difficulty Ratings', description: 'Every guide shows a difficulty level so you can start with the easiest ones.', status: 'planned', category: 'Guides' },
+  { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
+  { title: 'Copy-Paste Code Snippets', description: 'One-click copy buttons for any settings or text you need to enter.', status: 'planned', category: 'Tools' },
+  { title: 'Estimated Time to Complete', description: 'Each guide shows roughly how long it takes so you can plan your time.', status: 'planned', category: 'UX' },
+  { title: 'Seasonal Tech Tips', description: 'Timely advice for holiday shopping, tax season, back-to-school, and more.', status: 'planned', category: 'Content' },
+
+  // ── EXPLORING (50) ─────────────────────────────────────────
+  { title: 'Parental Controls Guide', description: 'Learn how to set up safety features on devices used by children or grandchildren.', status: 'exploring', category: 'Safety' },
+  { title: 'Smart Home Setup Hub', description: 'Step-by-step help for setting up smart speakers, lights, thermostats, and more.', status: 'exploring', category: 'Guides' },
+  { title: 'Telehealth Tech Help', description: 'Get comfortable with video doctor visits — we\'ll walk you through the technology.', status: 'exploring', category: 'Support' },
+  { title: 'Photo Organization Guide', description: 'Learn to sort, find, and back up your photos so you never lose a memory.', status: 'exploring', category: 'Guides' },
+  { title: 'Social Media Safety', description: 'Protect your privacy and stay safe on Facebook, Instagram, and other platforms.', status: 'exploring', category: 'Safety' },
+  { title: 'Streaming Setup Guide', description: 'Get Netflix, YouTube, and other streaming services running on your TV or device.', status: 'exploring', category: 'Guides' },
+  { title: 'Video Calling Mastery', description: 'Master FaceTime, Zoom, and Google Meet to stay connected with family and friends.', status: 'exploring', category: 'Guides' },
+  { title: 'Banking App Help', description: 'Learn to use your bank\'s app safely and confidently for everyday transactions.', status: 'exploring', category: 'Safety' },
+  { title: 'Medication Reminder Apps', description: 'Set up phone reminders so you never miss a dose of your medication.', status: 'exploring', category: 'Guides' },
+  { title: 'E-Reader Setup', description: 'Get started with Kindle, Kobo, or other e-readers for easy digital reading.', status: 'exploring', category: 'Guides' },
+  { title: 'Ride-Sharing Guide', description: 'Learn how to use Uber, Lyft, and other ride services safely and easily.', status: 'exploring', category: 'Guides' },
+  { title: 'Online Shopping Safety', description: 'Tips for shopping online without falling for scams or overpaying.', status: 'exploring', category: 'Safety' },
+  { title: 'Digital Legacy Planning', description: 'Organize your digital accounts and passwords for your loved ones.', status: 'exploring', category: 'Safety' },
+  { title: 'Hearing Aid Phone Setup', description: 'Connect your hearing aids to your phone for better calls and audio.', status: 'exploring', category: 'Accessibility' },
+  { title: 'Large Print Mode', description: 'An extra-large text mode for users who need maximum readability.', status: 'exploring', category: 'Accessibility' },
+  { title: 'Voice Command Guide', description: 'Use Siri, Google Assistant, or Alexa to control your device with your voice.', status: 'exploring', category: 'Guides' },
+  { title: 'Accessibility Review Tool', description: 'Check if a website or app is easy to use with a simple accessibility score.', status: 'exploring', category: 'Accessibility' },
+  { title: 'Caregiver Dashboard', description: 'Let a trusted family member or caregiver help manage your tech support requests.', status: 'exploring', category: 'Support' },
+  { title: 'Tech Support Scheduling', description: 'Book a specific date and time for a technician to help you.', status: 'exploring', category: 'Support' },
+  { title: 'Warranty Repair Finder', description: 'Check if your device is still under warranty and find authorized repair shops.', status: 'exploring', category: 'Tools' },
+  { title: 'Data Backup Wizard', description: 'A guided tool that helps you back up your important files step by step.', status: 'exploring', category: 'Tools' },
+  { title: 'Internet Safety Course', description: 'A free mini-course covering the basics of staying safe online.', status: 'exploring', category: 'Safety' },
+  { title: 'Tech Gift Guide', description: 'Find the perfect tech gift for any occasion with our curated recommendations.', status: 'exploring', category: 'Content' },
+  { title: 'Browser Extension Guide', description: 'Learn about useful browser add-ons like ad blockers and password managers.', status: 'exploring', category: 'Guides' },
+  { title: 'Cloud Storage Explained', description: 'Understand what the cloud is and how to use it to store your files safely.', status: 'exploring', category: 'Guides' },
+  { title: 'Podcast & Audiobook Setup', description: 'Learn to find and listen to podcasts and audiobooks on any device.', status: 'exploring', category: 'Guides' },
+  { title: 'Calendar Reminder Setup', description: 'Set up calendar alerts so you never forget appointments or important dates.', status: 'exploring', category: 'Guides' },
+  { title: 'Home Network Security', description: 'Secure your home Wi-Fi and connected devices from unauthorized access.', status: 'exploring', category: 'Safety' },
+  { title: 'Text Messaging Mastery', description: 'Learn texting tricks — group chats, photos, emojis, and voice messages.', status: 'exploring', category: 'Guides' },
+  { title: 'Tablet vs Laptop Chooser', description: 'Not sure which device to buy? Answer a few questions and we\'ll recommend one.', status: 'exploring', category: 'Tools' },
+  { title: 'Software Update Guide', description: 'Understand why updates matter and how to install them safely.', status: 'exploring', category: 'Guides' },
+  { title: 'Email Declutter Tool', description: 'Clean up your inbox by unsubscribing from unwanted emails in one click.', status: 'exploring', category: 'Tools' },
+  { title: 'QR Code Scanner Guide', description: 'Learn what QR codes are and how to scan them with your phone\'s camera.', status: 'exploring', category: 'Guides' },
+  { title: 'Bluetooth Troubleshooter', description: 'Fix common Bluetooth connection problems with headphones, speakers, and more.', status: 'exploring', category: 'Support' },
+  { title: 'File Management 101', description: 'Organize your files and folders so you can always find what you need.', status: 'exploring', category: 'Guides' },
+  { title: 'Screen Recording Guide', description: 'Learn to record your screen — great for showing someone a problem.', status: 'exploring', category: 'Guides' },
+  { title: 'Two-Factor Authentication Setup', description: 'Add an extra layer of security to your important accounts.', status: 'exploring', category: 'Safety' },
+  { title: 'Tech Jargon Translator', description: 'Paste any confusing tech message and get a plain-language explanation.', status: 'exploring', category: 'AI' },
+  { title: 'Personalized Learning Path', description: 'Get a custom sequence of guides based on your experience level and interests.', status: 'exploring', category: 'AI' },
+  { title: 'Accessibility Score', description: 'Rate how accessible your own devices and apps are with a simple checklist.', status: 'exploring', category: 'Accessibility' },
+  { title: 'Community Ambassadors', description: 'Recognize and reward community members who help others learn technology.', status: 'exploring', category: 'Community' },
+  { title: 'Local Tech Help Finder', description: 'Find trusted tech help near you — repair shops, classes, and volunteers.', status: 'exploring', category: 'Support' },
+  { title: 'Family Tech Sharing', description: 'Share your TekSure subscription and guides with family members.', status: 'exploring', category: 'Community' },
+  { title: 'Senior Tech Blog', description: 'Stories, tips, and advice written specifically for older adults learning technology.', status: 'exploring', category: 'Content' },
+  { title: 'Monthly Webinars', description: 'Join live online workshops where we walk through tech topics together.', status: 'exploring', category: 'Community' },
+  { title: 'Tech Anxiety Resources', description: 'Gentle resources for anyone who feels overwhelmed or anxious about technology.', status: 'exploring', category: 'Support' },
+  { title: 'Quick Reference Cards', description: 'Printable cheat sheets with the most important steps for common tasks.', status: 'exploring', category: 'Tools' },
+  { title: 'Error Message Decoder', description: 'Paste any error message and get a simple explanation of what went wrong.', status: 'exploring', category: 'AI' },
+  { title: 'TekSure Mobile App', description: 'A dedicated phone app for quick access to TekSure help on the go.', status: 'exploring', category: 'UX' },
+  { title: 'AI Personal Tech Tutor', description: 'An AI-powered tutor that learns your pace and adapts lessons just for you.', status: 'exploring', category: 'AI' },
+];
