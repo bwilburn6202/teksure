@@ -40,7 +40,7 @@ export const roadmapItems: RoadmapItem[] = [
   // ── PLANNED (30) ───────────────────────────────────────────
   { title: 'Print-Friendly Guides', description: 'Download or print any guide in a clean, easy-to-read format for offline reference.', status: 'live', category: 'Guides' },
   { title: 'Video Tutorials', description: 'Watch short video walkthroughs that show you exactly what to do on screen.', status: 'planned', category: 'Guides' },
-  { title: 'Bookmark Favorites', description: 'Save your favorite guides and articles for quick access later.', status: 'planned', category: 'UX' },
+  { title: 'Bookmark Favorites', description: 'Save your favorite guides and articles for quick access later.', status: 'live', category: 'UX' },
   { title: 'Progress Tracking', description: 'See which guides you\'ve completed and track your learning journey.', status: 'planned', category: 'Gamification' },
   { title: 'Text-to-Speech', description: 'Listen to any guide read aloud — perfect if you prefer hearing over reading.', status: 'live', category: 'Accessibility' },
   { title: 'Font Size Adjuster', description: 'Easily increase or decrease the text size across the entire site to your comfort.', status: 'live', category: 'Accessibility' },

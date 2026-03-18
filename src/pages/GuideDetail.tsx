@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -14,6 +14,7 @@ import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep } from '@/data/guides';
+import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 
 /** Mock OS screenshot — styled like HowToGeek / WikiHow */
 const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
@@ -136,6 +137,32 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
   );
 };
 
+/** ⭐ Bookmark button */
+const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string; excerpt: string }) => {
+  const [saved, setSaved] = useState(() => isFavorite(slug));
+
+  const toggle = () => {
+    if (saved) {
+      removeFavorite(slug);
+    } else {
+      addFavorite({ slug, title, excerpt });
+    }
+    setSaved(!saved);
+  };
+
+  return (
+    <Button
+      variant="ghost"
+      size="icon"
+      className="absolute top-0 right-0 no-print"
+      onClick={toggle}
+      aria-label={saved ? 'Remove from favorites' : 'Add to favorites'}
+    >
+      <Heart className={`h-5 w-5 transition-colors ${saved ? 'fill-destructive text-destructive' : 'text-muted-foreground'}`} />
+    </Button>
+  );
+};
+
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const guide = guides.find(g => g.slug === slug);
@@ -209,7 +236,8 @@ const GuideDetail = () => {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           {/* Header */}
-          <div className="mb-8">
+          <div className="mb-8 relative">
+            <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
             <div className="text-5xl mb-4">{guide.thumbnailEmoji}</div>
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">
