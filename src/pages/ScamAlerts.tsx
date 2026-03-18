@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ShieldAlert, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { ShieldAlert, AlertTriangle, CheckCircle2, Baby } from 'lucide-react';
 
 interface Scam {
   title: string;
