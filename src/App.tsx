@@ -33,6 +33,8 @@ import WifiSpeed from "./pages/tools/WifiSpeed";
 import HealthCheck from "./pages/tools/HealthCheck";
 import DeviceCompare from "./pages/tools/DeviceCompare";
 import KeyboardShortcuts from "./pages/tools/KeyboardShortcuts";
+import EmailTemplates from "./pages/EmailTemplates";
+import ScamAlerts from "./pages/ScamAlerts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -74,6 +76,8 @@ const AppContent = () => {
         <Route path="/tools/health-check" element={<HealthCheck />} />
         <Route path="/tools/device-compare" element={<DeviceCompare />} />
         <Route path="/tools/keyboard-shortcuts" element={<KeyboardShortcuts />} />
+        <Route path="/tools/email-templates" element={<EmailTemplates />} />
+        <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard,
+  KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail,
 } from 'lucide-react';
 
 const tools = [
@@ -56,6 +56,14 @@ const tools = [
     path: '/tools/keyboard-shortcuts',
     color: 'text-orange-500',
     badge: 'Reference',
+  },
+  {
+    title: 'Email Templates',
+    description: '10 ready-to-use email templates for complaints, returns, job enquiries, IT support, and more.',
+    icon: Mail,
+    path: '/tools/email-templates',
+    color: 'text-teal-500',
+    badge: 'Productivity',
   },
 ];
 
