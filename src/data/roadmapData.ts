@@ -63,7 +63,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Weekly Tech Tip', description: 'A new, easy-to-follow tech tip delivered to your dashboard every week.', status: 'planned', category: 'Content' },
   { title: 'User Profiles', description: 'Customize your profile with a photo and preferences for a personalized experience.', status: 'planned', category: 'UX' },
   { title: 'Achievement Badges', description: 'Earn fun badges as you complete guides and learn new tech skills.', status: 'planned', category: 'Gamification' },
-  { title: 'Tech Difficulty Ratings', description: 'Every guide shows a difficulty level so you can start with the easiest ones.', status: 'planned', category: 'Guides' },
+  { title: 'Tech Difficulty Ratings', description: 'Every guide shows a difficulty level so you can start with the easiest ones.', status: 'live', category: 'Guides' },
   { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
   { title: 'Copy-Paste Code Snippets', description: 'One-click copy buttons for any settings or text you need to enter.', status: 'planned', category: 'Tools' },
   { title: 'Estimated Time to Complete', description: 'Each guide shows roughly how long it takes so you can plan your time.', status: 'planned', category: 'UX' },
