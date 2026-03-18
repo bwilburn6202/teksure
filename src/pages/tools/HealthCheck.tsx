@@ -35,7 +35,7 @@ const questions: Question[] = [
     options: [
       { value: 'no', label: 'No, runs fine', score: 'green', tip: 'Excellent! Your device is performing well.' },
       { value: 'sometimes', label: 'Sometimes', score: 'amber', tip: 'Try closing unused apps, clearing your browser cache, and restarting regularly.' },
-      { value: 'yes', label: 'Yes, noticeably slower', score: 'red', tip: 'Run a disk cleanup, uninstall apps you don't use, and check for malware. A factory reset may help as a last resort.' },
+      { value: 'yes', label: 'Yes, noticeably slower', score: 'red', tip: 'Run a disk cleanup, uninstall apps you don\'t use, and check for malware. A factory reset may help as a last resort.' },
     ],
   },
   {
