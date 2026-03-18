@@ -30,6 +30,8 @@ import SearchResults from "./pages/SearchResults";
 import Tools from "./pages/Tools";
 import PasswordStrength from "./pages/tools/PasswordStrength";
 import WifiSpeed from "./pages/tools/WifiSpeed";
+import HealthCheck from "./pages/tools/HealthCheck";
+import DeviceCompare from "./pages/tools/DeviceCompare";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
