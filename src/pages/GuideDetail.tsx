@@ -1,6 +1,7 @@
+import { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, PartyPopper, Printer, Volume2, Square } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -79,6 +80,60 @@ const getOsHint = (category: string, stepContent: string): 'windows' | 'mac' | '
   if (category === 'mac-guides') return 'mac';
   if (stepContent.toLowerCase().includes('browser') || stepContent.toLowerCase().includes('website') || stepContent.toLowerCase().includes('url')) return 'browser';
   return 'generic';
+};
+
+/** 🔊 Listen button using Web Speech API */
+const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string } }) => {
+  const [speaking, setSpeaking] = useState(false);
+
+  const getFullText = useCallback(() => {
+    let text = `${guide.title}. ${guide.excerpt}. `;
+    if (guide.steps) {
+      guide.steps.forEach((s, i) => {
+        text += `Step ${i + 1}: ${s.title}. ${s.content}. `;
+        if (s.tip) text += `Tip: ${s.tip}. `;
+      });
+    }
+    if (guide.body) text += guide.body;
+    return text;
+  }, [guide]);
+
+  useEffect(() => {
+    const handleEnd = () => setSpeaking(false);
+    window.speechSynthesis.addEventListener?.('voiceschanged', () => {});
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, []);
+
+  const handleListen = () => {
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      setSpeaking(false);
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(getFullText());
+    utterance.rate = 0.95;
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utterance);
+    setSpeaking(true);
+  };
+
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      className="gap-2 no-print"
+      onClick={handleListen}
+    >
+      {speaking ? (
+        <><Square className="h-4 w-4" /> Stop</>
+      ) : (
+        <><Volume2 className="h-4 w-4" /> Listen</>
+      )}
+    </Button>
+  );
 };
 
 const GuideDetail = () => {
@@ -185,15 +240,18 @@ const GuideDetail = () => {
             </h1>
             <p className="text-lg text-muted-foreground">{guide.excerpt}</p>
 
-            {/* Print button */}
-            <Button
-              variant="outline"
-              size="sm"
-              className="mt-4 gap-2 no-print"
-              onClick={() => window.print()}
-            >
-              <Printer className="h-4 w-4" /> Print Guide
-            </Button>
+            {/* Print & Listen buttons */}
+            <div className="flex gap-2 mt-4">
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-2 no-print"
+                onClick={() => window.print()}
+              >
+                <Printer className="h-4 w-4" /> Print Guide
+              </Button>
+              <ListenButton guide={guide} />
+            </div>
           </div>
 
           {/* Table of contents */}
