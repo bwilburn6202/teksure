@@ -20,6 +20,7 @@ const mainPages = [
   { path: '/how-it-works', priority: '0.8', changefreq: 'weekly' },
   { path: '/pricing', priority: '0.8', changefreq: 'weekly' },
   { path: '/about', priority: '0.8', changefreq: 'weekly' },
+  { path: '/roadmap', priority: '0.8', changefreq: 'weekly' },
   { path: '/search', priority: '0.8', changefreq: 'weekly' },
   { path: '/login', priority: '0.8', changefreq: 'weekly' },
   { path: '/signup', priority: '0.8', changefreq: 'weekly' },

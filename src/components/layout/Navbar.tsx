@@ -28,6 +28,7 @@ export function Navbar() {
           <Link to="/pricing" className={linkClass}>Pricing</Link>
           <Link to="/opportunity-dashboard" className={linkClass}>Business</Link>
           <Link to="/about" className={linkClass}>About</Link>
+          <Link to="/roadmap" className={linkClass}>Roadmap</Link>
           <Button variant="ghost" onClick={() => navigate('/login')}>Log In</Button>
           <Button onClick={() => navigate('/signup')}>Sign Up</Button>
         </>
