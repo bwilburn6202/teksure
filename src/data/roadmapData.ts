@@ -70,7 +70,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Seasonal Tech Tips', description: 'Timely advice for holiday shopping, tax season, back-to-school, and more.', status: 'live', category: 'Content' },
 
   // ── EXPLORING (50) ─────────────────────────────────────────
-  { title: 'Parental Controls Guide', description: 'Learn how to set up safety features on devices used by children or grandchildren.', status: 'exploring', category: 'Safety' },
+  { title: 'Parental Controls Guide', description: 'Learn how to set up safety features on devices used by children or grandchildren.', status: 'live', category: 'Safety' },
   { title: 'Smart Home Setup Hub', description: 'Step-by-step help for setting up smart speakers, lights, thermostats, and more.', status: 'exploring', category: 'Guides' },
   { title: 'Telehealth Tech Help', description: 'Get comfortable with video doctor visits — we\'ll walk you through the technology.', status: 'exploring', category: 'Support' },
   { title: 'Photo Organization Guide', description: 'Learn to sort, find, and back up your photos so you never lose a memory.', status: 'exploring', category: 'Guides' },
