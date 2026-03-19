@@ -168,7 +168,7 @@ export function Navbar() {
                 <DropdownMenuItem onClick={() => navigate(dashboardPath)}>
                   <User className="h-4 w-4 mr-2" /> Dashboard
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => { logout(); navigate('/'); }}>
+                <DropdownMenuItem onClick={async () => { await logout(); navigate('/'); }}>
                   <LogOut className="h-4 w-4 mr-2" /> Sign Out
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -199,7 +199,7 @@ export function Navbar() {
                     </div>
                   </div>
                   <AuthLinks mobile />
-                  <Button variant="ghost" className="justify-start" onClick={() => { logout(); navigate('/'); }}>
+                  <Button variant="ghost" className="justify-start" onClick={async () => { await logout(); navigate('/'); }}>
                     <LogOut className="h-4 w-4 mr-2" /> Sign Out
                   </Button>
                 </>

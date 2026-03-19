@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Shield } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Shield, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -18,6 +18,8 @@ const Login = () => {
   const [signupPassword, setSignupPassword] = useState('');
   const [signupName, setSignupName] = useState('');
   const [signupRole, setSignupRole] = useState<UserRole>('customer');
+  const [error, setError] = useState('');
+  const [showConfirmation, setShowConfirmation] = useState(false);
   const { user, login, signup, isLoading } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,19 +29,52 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate(from, { replace: true });
+      const path = user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin';
+      navigate(from !== '/' ? from : path, { replace: true });
     }
   }, [user, navigate, from]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    await login(loginEmail, loginPassword);
+    setError('');
+    const result = await login(loginEmail, loginPassword);
+    if (result.error) setError(result.error);
   };
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
-    await signup(signupEmail, signupPassword, signupRole, signupName);
+    setError('');
+    const result = await signup(signupEmail, signupPassword, signupRole, signupName);
+    if (result.error) {
+      setError(result.error);
+    } else if (result.needsConfirmation) {
+      setShowConfirmation(true);
+    }
   };
+
+  if (showConfirmation) {
+    return (
+      <div className="min-h-screen">
+        <Navbar />
+        <div className="container flex items-center justify-center py-20">
+          <Card className="w-full max-w-md text-center">
+            <CardHeader>
+              <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-2" />
+              <CardTitle>Check your email</CardTitle>
+              <CardDescription>
+                We sent a confirmation link to <strong>{signupEmail}</strong>. Click the link in your email to activate your account, then come back and sign in.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button variant="outline" onClick={() => setShowConfirmation(false)}>
+                Back to Sign In
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">
@@ -56,6 +91,11 @@ const Login = () => {
             )}
           </CardHeader>
           <CardContent>
+            {error && (
+              <div className="mb-4 rounded-md bg-destructive/10 p-3 text-sm text-destructive">
+                {error}
+              </div>
+            )}
             <Tabs defaultValue="signin">
               <TabsList className="grid w-full grid-cols-2 mb-4">
                 <TabsTrigger value="signin">Sign In</TabsTrigger>
@@ -76,9 +116,6 @@ const Login = () => {
                     {isLoading ? 'Signing in...' : 'Sign In'}
                   </Button>
                 </form>
-                <p className="text-center text-xs text-muted-foreground mt-3">
-                  Demo: use <span className="font-mono text-foreground">tech@</span> or <span className="font-mono text-foreground">admin@</span> in email to switch roles
-                </p>
               </TabsContent>
 
               <TabsContent value="create">
@@ -93,7 +130,7 @@ const Login = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="signup-password">Password</Label>
-                    <Input id="signup-password" type="password" value={signupPassword} onChange={e => setSignupPassword(e.target.value)} required />
+                    <Input id="signup-password" type="password" value={signupPassword} onChange={e => setSignupPassword(e.target.value)} required minLength={6} />
                   </div>
                   <div className="space-y-2">
                     <Label>I am a...</Label>
