@@ -1,7 +1,7 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import type { User, Session } from '@supabase/supabase-js';
 import type { UserRole } from '@/types/database';
-
-const STORAGE_KEY = 'teksure_user';
 
 interface AuthUser {
   id: string;
@@ -12,63 +12,109 @@ interface AuthUser {
 
 interface AuthContextType {
   user: AuthUser | null;
+  session: Session | null;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<void>;
-  signup: (email: string, password: string, role: UserRole, fullName: string) => Promise<void>;
-  logout: () => void;
-}
-
-function loadUser(): AuthUser | null {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
-}
-
-function saveUser(user: AuthUser | null) {
-  if (user) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
-  } else {
-    localStorage.removeItem(STORAGE_KEY);
-  }
+  login: (email: string, password: string) => Promise<{ error: string | null }>;
+  signup: (email: string, password: string, role: UserRole, fullName: string) => Promise<{ error: string | null; needsConfirmation: boolean }>;
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
+async function fetchProfile(userId: string): Promise<{ role: UserRole; fullName: string } | null> {
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('role, full_name')
+    .eq('id', userId)
+    .single();
+  if (error || !data) return null;
+  return { role: data.role as UserRole, fullName: data.full_name || '' };
+}
+
+function buildAuthUser(supaUser: User, profile: { role: UserRole; fullName: string }): AuthUser {
+  return {
+    id: supaUser.id,
+    email: supaUser.email || '',
+    role: profile.role,
+    fullName: profile.fullName,
+  };
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<AuthUser | null>(loadUser);
-  const [isLoading, setIsLoading] = useState(false);
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const login = useCallback(async (email: string, _password: string) => {
-    setIsLoading(true);
-    await new Promise(r => setTimeout(r, 600));
-    let role: UserRole = 'customer';
-    if (email.includes('tech')) role = 'tech';
-    if (email.includes('admin')) role = 'admin';
-    const newUser: AuthUser = { id: crypto.randomUUID(), email, role, fullName: email.split('@')[0] };
-    saveUser(newUser);
-    setUser(newUser);
-    setIsLoading(false);
+  useEffect(() => {
+    // Set up auth listener FIRST
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, newSession) => {
+      setSession(newSession);
+      if (newSession?.user) {
+        // Use setTimeout to avoid Supabase client deadlock
+        setTimeout(async () => {
+          const profile = await fetchProfile(newSession.user.id);
+          if (profile) {
+            setUser(buildAuthUser(newSession.user, profile));
+          } else {
+            // Fallback to metadata if profile isn't ready yet
+            setUser({
+              id: newSession.user.id,
+              email: newSession.user.email || '',
+              role: (newSession.user.user_metadata?.role as UserRole) || 'customer',
+              fullName: (newSession.user.user_metadata?.full_name as string) || '',
+            });
+          }
+          setIsLoading(false);
+        }, 0);
+      } else {
+        setUser(null);
+        setIsLoading(false);
+      }
+    });
+
+    // THEN check existing session
+    supabase.auth.getSession().then(async ({ data: { session: existingSession } }) => {
+      setSession(existingSession);
+      if (existingSession?.user) {
+        const profile = await fetchProfile(existingSession.user.id);
+        if (profile) {
+          setUser(buildAuthUser(existingSession.user, profile));
+        }
+      }
+      setIsLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
-  const signup = useCallback(async (email: string, _password: string, role: UserRole, fullName: string) => {
-    setIsLoading(true);
-    await new Promise(r => setTimeout(r, 600));
-    const newUser: AuthUser = { id: crypto.randomUUID(), email, role, fullName };
-    saveUser(newUser);
-    setUser(newUser);
-    setIsLoading(false);
+  const login = useCallback(async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    return { error: error?.message || null };
   }, []);
 
-  const logout = useCallback(() => {
-    saveUser(null);
+  const signup = useCallback(async (email: string, password: string, role: UserRole, fullName: string) => {
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: { role, full_name: fullName },
+        emailRedirectTo: window.location.origin,
+      },
+    });
+    if (error) return { error: error.message, needsConfirmation: false };
+    // If user exists but identities is empty, email is already taken
+    const needsConfirmation = !!data.user && !data.session;
+    return { error: null, needsConfirmation };
+  }, []);
+
+  const logout = useCallback(async () => {
+    await supabase.auth.signOut();
     setUser(null);
+    setSession(null);
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, isLoading, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, session, isLoading, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );

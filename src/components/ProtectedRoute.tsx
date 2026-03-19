@@ -18,7 +18,9 @@ export function ProtectedRoute({ children, allowedRoles }: Props) {
     );
   }
 
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) {
+    return <Navigate to="/login" state={{ message: 'Please sign in to continue.' }} replace />;
+  }
 
   if (!allowedRoles.includes(user.role)) {
     const path = user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin';
