@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info, Zap } from 'lucide-react';
+import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
