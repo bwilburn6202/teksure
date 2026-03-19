@@ -89,17 +89,17 @@ export function Navbar() {
     return (
       <>
         {directLinks.map((link) => (
-          <Link key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
+          <Link key={link.to} to={link.to} className="text-sm font-medium text-foreground/80 bg-muted hover:bg-accent border border-border hover:border-border px-3 py-1.5 rounded-lg transition-colors">
             {link.label}
           </Link>
         ))}
         {navGroups.map((group) => (
           <DropdownMenu key={group.label}>
             <DropdownMenuTrigger asChild>
-              <button className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
-                <group.icon className="h-3.5 w-3.5" />
+              <button className="flex items-center gap-1.5 text-sm font-medium text-foreground/80 bg-muted hover:bg-accent border border-border px-3 py-1.5 rounded-lg transition-colors">
+                <group.icon className="h-3.5 w-3.5 text-muted-foreground" />
                 {group.label}
-                <ChevronDown className="h-3 w-3 opacity-50" />
+                <ChevronDown className="h-3 w-3 text-muted-foreground" />
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="min-w-[160px]">

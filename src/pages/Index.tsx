@@ -129,10 +129,10 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1]">
               Tech made <span className="text-secondary">simple.</span>
             </h1>
-            <p className="text-lg md:text-xl opacity-80 mb-3 max-w-xl mx-auto">
-              Free step-by-step guides, expert tips, and on-demand tech support.
+            <p className="text-lg md:text-xl opacity-80 mb-2 max-w-xl mx-auto">
+              Free guides, quick fixes, and real human support — all in one place.
             </p>
-            <p className="text-sm opacity-60 mb-8">No jargon, just answers.</p>
+            <p className="text-sm opacity-55 mb-8">No jargon. No robots. Just answers.</p>
 
             {/* Search */}
             <form onSubmit={handleSearch} className="max-w-lg mx-auto mb-6">
@@ -167,19 +167,19 @@ const Index = () => {
               ))}
             </div>
 
-            {/* Get Help CTA */}
-            <div className="flex items-center justify-center gap-3 mb-8">
+            {/* Primary CTAs */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
               <Link
                 to="/get-help"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-semibold text-sm hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-xl shadow-secondary/30"
               >
-                <Phone className="h-4 w-4" /> Talk to a Real Person
+                <Phone className="h-5 w-5" /> Get Help Now
               </Link>
               <Link
                 to="/guides"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground font-semibold text-sm transition-colors border border-primary-foreground/20"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-primary-foreground font-semibold text-base transition-colors border border-white/25"
               >
-                Browse Free Guides
+                <BookOpen className="h-5 w-5" /> Browse Free Guides
               </Link>
             </div>
 
@@ -238,6 +238,30 @@ const Index = () => {
               </Card>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* Get Help Banner */}
+      <section className="bg-slate-900 text-white">
+        <div className="container py-14">
+          <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="text-center md:text-left">
+              <p className="text-secondary font-semibold text-sm uppercase tracking-wider mb-2">Still Stuck?</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2">Talk to a real person — not a chatbot.</h2>
+              <p className="text-slate-400 text-base">
+                Just give us a phone number or email. We'll reach out within hours and help you get it sorted.
+              </p>
+            </div>
+            <div className="shrink-0 flex flex-col items-center gap-3">
+              <Link
+                to="/get-help"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20 whitespace-nowrap"
+              >
+                <Phone className="h-5 w-5" /> Get Help Now
+              </Link>
+              <p className="text-slate-500 text-xs">Free · No account required</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -385,18 +409,18 @@ const Index = () => {
 
       {/* How It Works */}
       <section className="container py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-          Need hands-on help?
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
+          How TekSure Works
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
-          Can't fix it yourself? Get matched with a verified technician in minutes.
+        <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">
+          Three steps — simpler than calling your cable company.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
-            { step: '1', icon: '💬', title: 'Describe Your Issue', desc: "WiFi down, slow PC, printer jams — tell us what's wrong." },
-            { step: '2', icon: '🔍', title: 'Get Matched', desc: 'We pair you with a verified tech based on skill, location, and availability.' },
-            { step: '3', icon: '✅', title: 'Get It Fixed', desc: 'Remote or in-person support. Pay securely when the job is done.' },
+            { step: '1', emoji: '📝', title: 'Tell Us What\'s Wrong', desc: 'Fill out one quick form. Just your phone or email — that\'s all we need to get started.' },
+            { step: '2', emoji: '📞', title: 'We Reach Out to You', desc: 'A real person calls or texts you. No chatbots. No waiting on hold. Usually within a few hours.' },
+            { step: '3', emoji: '✅', title: 'Problem Solved', desc: 'We walk you through the fix step by step, or send a tech if needed. Plain English, no jargon.' },
           ].map((s, i) => (
             <motion.div
               key={s.step}
@@ -404,21 +428,22 @@ const Index = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.12 }}
               viewport={{ once: true }}
-              className="text-center"
             >
-              <div className="text-5xl mb-4">{s.icon}</div>
-              <div className="w-8 h-8 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-sm font-bold mx-auto mb-3">
-                {s.step}
+              <div className="bg-card border border-border rounded-2xl p-6 h-full relative">
+                <div className="absolute -top-3.5 left-6 w-7 h-7 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold shadow-md">
+                  {s.step}
+                </div>
+                <div className="text-4xl mb-4 mt-2">{s.emoji}</div>
+                <h3 className="font-bold text-lg mb-2">{s.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
               </div>
-              <h3 className="font-semibold text-lg mb-2">{s.title}</h3>
-              <p className="text-muted-foreground text-sm">{s.desc}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="text-center mt-10">
-          <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-            <Link to="/how-it-works">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+          <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+            <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
           </Button>
         </div>
       </section>
@@ -426,12 +451,13 @@ const Index = () => {
       {/* Why TekSure */}
       <section className="bg-muted py-16">
         <div className="container">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">Why TekSure?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3">Why TekSure?</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">Built for people who just want their tech to work — without the confusion.</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: Zap, title: 'Fast Matching', desc: 'Get matched with a qualified tech in minutes, not hours.' },
-              { icon: Shield, title: 'Verified Techs', desc: 'Every technician goes through ID and background verification.' },
-              { icon: Star, title: 'Transparent Pricing', desc: 'See rates upfront. Pay securely. No hidden fees.' },
+              { icon: Users, title: 'Real People, Real Help', desc: 'No automated chatbots. When you reach out, a real person responds — in plain English, no tech speak.' },
+              { icon: BookOpen, title: '100+ Free Guides', desc: 'Step-by-step articles written for beginners. No assumed knowledge. No jargon. Just clear answers.' },
+              { icon: Shield, title: 'Safe & Trustworthy', desc: 'We never push unnecessary upgrades or confusing packages. Honest advice you can actually act on.' },
             ].map((f, i) => (
               <motion.div
                 key={f.title}
@@ -445,7 +471,7 @@ const Index = () => {
                   <f.icon className="h-7 w-7 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
-                <p className="text-muted-foreground text-sm">{f.desc}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -461,19 +487,26 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to solve your tech problems?
+              Tech trouble? We've got you covered.
             </h2>
-            <p className="opacity-80 mb-8 max-w-md mx-auto">
-              Browse {guides.length}+ free guides or connect with a verified technician today.
+            <p className="opacity-80 mb-8 max-w-lg mx-auto text-lg">
+              Browse {guides.length}+ free guides — or skip the reading and get a real person to help you right now.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild size="lg" variant="secondary">
-                <Link to="/guides">Browse Guides <BookOpen className="ml-2 h-4 w-4" /></Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="btn-hero-outline">
-                <Link to="/signup">Get Tech Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
+              <Link
+                to="/get-help"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-xl shadow-secondary/30"
+              >
+                <Phone className="h-5 w-5" /> Get Help Now
+              </Link>
+              <Link
+                to="/guides"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-primary-foreground font-semibold text-base transition-colors border border-white/25"
+              >
+                <BookOpen className="h-5 w-5" /> Browse Free Guides
+              </Link>
             </div>
+            <p className="mt-5 text-sm opacity-50">Free · No account required · No robots</p>
           </motion.div>
         </div>
       </section>
