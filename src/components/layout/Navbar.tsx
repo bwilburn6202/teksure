@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info, Zap } from 'lucide-react';
+import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -20,46 +20,43 @@ export function Navbar() {
     ? user.fullName.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
     : '';
 
+  const directLinks = [
+    { to: '/how-it-works', label: 'How It Works' },
+  ];
+
   const navGroups = [
     {
-      label: 'Learn',
+      label: 'Resources',
       icon: BookOpen,
       links: [
-        { to: '/how-it-works', label: 'How It Works' },
         { to: '/guides', label: 'Guides' },
-        { to: '/tips', label: 'Tips' },
-        { to: '/glossary', label: 'Glossary' },
-      ],
-    },
-    {
-      label: 'Fix',
-      icon: Zap,
-      links: [
         { to: '/quick-fixes', label: 'Quick Fixes' },
-        { to: '/device-hub', label: 'Devices' },
+        { to: '/tips', label: 'Tips' },
+        { to: '/favorites', label: 'Favorites' },
       ],
     },
     {
       label: 'Tools',
       icon: Wrench,
       links: [
-        { to: '/tools', label: 'All Tools' },
-        { to: '/favorites', label: 'Favorites' },
+        { to: '/tools', label: 'Tools Dashboard' },
+        { to: '/glossary', label: 'Glossary' },
       ],
     },
     {
       label: 'Safety',
       icon: ShieldCheck,
       links: [
-        { to: '/safety/scam-alerts', label: 'Scam Alerts' },
+        { to: '/safety/scam-alerts', label: 'Safety' },
+        { to: '/device-hub', label: 'Devices' },
       ],
     },
     {
       label: 'About',
       icon: Info,
       links: [
-        { to: '/about', label: 'About Us' },
         { to: '/pricing', label: 'Pricing' },
+        { to: '/about', label: 'About' },
         { to: '/roadmap', label: 'Roadmap' },
       ],
     },
@@ -69,6 +66,11 @@ export function Navbar() {
     if (mobile) {
       return (
         <>
+          {directLinks.map((link) => (
+            <Link key={link.to} to={link.to} className="block text-lg font-medium py-2">
+              {link.label}
+            </Link>
+          ))}
           {navGroups.map((group) => (
             <div key={group.label} className="space-y-1">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 pt-3 pb-1">{group.label}</p>
@@ -85,6 +87,11 @@ export function Navbar() {
 
     return (
       <>
+        {directLinks.map((link) => (
+          <Link key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
+            {link.label}
+          </Link>
+        ))}
         {navGroups.map((group) => (
           <DropdownMenu key={group.label}>
             <DropdownMenuTrigger asChild>
