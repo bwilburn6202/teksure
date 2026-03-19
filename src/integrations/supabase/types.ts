@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      help_requests: {
+        Row: {
+          created_at: string
+          device_type: string | null
+          email: string | null
+          id: string
+          name: string | null
+          phone: string | null
+          problem_description: string | null
+          status: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          device_type?: string | null
+          email?: string | null
+          id?: string
+          name?: string | null
+          phone?: string | null
+          problem_description?: string | null
+          status?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          device_type?: string | null
+          email?: string | null
+          id?: string
+          name?: string | null
+          phone?: string | null
+          problem_description?: string | null
+          status?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
