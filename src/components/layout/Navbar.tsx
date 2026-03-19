@@ -20,46 +20,43 @@ export function Navbar() {
     ? user.fullName.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
     : '';
 
+  const directLinks = [
+    { to: '/how-it-works', label: 'How It Works' },
+  ];
+
   const navGroups = [
     {
-      label: 'Learn',
+      label: 'Resources',
       icon: BookOpen,
       links: [
-        { to: '/how-it-works', label: 'How It Works' },
         { to: '/guides', label: 'Guides' },
-        { to: '/tips', label: 'Tips' },
-        { to: '/glossary', label: 'Glossary' },
-      ],
-    },
-    {
-      label: 'Fix',
-      icon: Zap,
-      links: [
         { to: '/quick-fixes', label: 'Quick Fixes' },
-        { to: '/device-hub', label: 'Devices' },
+        { to: '/tips', label: 'Tips' },
+        { to: '/favorites', label: 'Favorites' },
       ],
     },
     {
       label: 'Tools',
       icon: Wrench,
       links: [
-        { to: '/tools', label: 'All Tools' },
-        { to: '/favorites', label: 'Favorites' },
+        { to: '/tools', label: 'Tools Dashboard' },
+        { to: '/glossary', label: 'Glossary' },
       ],
     },
     {
       label: 'Safety',
       icon: ShieldCheck,
       links: [
-        { to: '/safety/scam-alerts', label: 'Scam Alerts' },
+        { to: '/safety/scam-alerts', label: 'Safety' },
+        { to: '/device-hub', label: 'Devices' },
       ],
     },
     {
       label: 'About',
       icon: Info,
       links: [
-        { to: '/about', label: 'About Us' },
         { to: '/pricing', label: 'Pricing' },
+        { to: '/about', label: 'About' },
         { to: '/roadmap', label: 'Roadmap' },
       ],
     },
