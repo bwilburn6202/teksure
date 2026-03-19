@@ -1,4 +1,3 @@
-import { Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -8,9 +7,8 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 font-bold text-lg mb-2">
-              <Shield className="h-5 w-5 text-secondary" />
-              TekSure
+            <Link to="/" className="flex items-center mb-2">
+              <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto" style={{ filter: 'brightness(0) invert(1)' }} />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               The #1 tech help resource for beginners. Free guides, quick fixes, and verified tech support.

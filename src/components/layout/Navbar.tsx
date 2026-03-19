@@ -137,9 +137,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full glass">
       <div className="container flex h-16 items-center justify-between">
-        <Link to={user ? dashboardPath : '/'} className="flex items-center gap-2 font-bold text-xl">
-          <Shield className="h-6 w-6 text-secondary" />
-          <span>TekSure</span>
+        <Link to={user ? dashboardPath : '/'} className="flex items-center">
+          <img src="/teksure-logo.svg" alt="TekSure" className="h-9 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
