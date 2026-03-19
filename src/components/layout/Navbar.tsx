@@ -66,6 +66,11 @@ export function Navbar() {
     if (mobile) {
       return (
         <>
+          {directLinks.map((link) => (
+            <Link key={link.to} to={link.to} className="block text-lg font-medium py-2">
+              {link.label}
+            </Link>
+          ))}
           {navGroups.map((group) => (
             <div key={group.label} className="space-y-1">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 pt-3 pb-1">{group.label}</p>
@@ -82,6 +87,11 @@ export function Navbar() {
 
     return (
       <>
+        {directLinks.map((link) => (
+          <Link key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
+            {link.label}
+          </Link>
+        ))}
         {navGroups.map((group) => (
           <DropdownMenu key={group.label}>
             <DropdownMenuTrigger asChild>
