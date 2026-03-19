@@ -41,6 +41,8 @@ import JargonTranslator from "./pages/tools/JargonTranslator";
 import QuickReference from "./pages/tools/QuickReference";
 import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
+import GetHelp from "./pages/GetHelp";
+import MyRequests from "./pages/MyRequests";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -90,6 +92,8 @@ const AppContent = () => {
         <Route path="/tools/quick-reference" element={<QuickReference />} />
         <Route path="/safety/parental-controls" element={<ParentalControls />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/get-help" element={<GetHelp />} />
+        <Route path="/my-requests" element={<MyRequests />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

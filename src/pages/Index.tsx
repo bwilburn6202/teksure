@@ -5,7 +5,7 @@ import {
   Search, Shield, Zap, Star, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, TrendingUp, Users, ChevronRight, Clock,
   Wifi, Printer, Lock, HardDrive, MousePointer, Smartphone,
-  AlertTriangle, ThumbsUp
+  AlertTriangle, ThumbsUp, Phone
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -165,6 +165,22 @@ const Index = () => {
                   {topic.label}
                 </button>
               ))}
+            </div>
+
+            {/* Get Help CTA */}
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <Link
+                to="/get-help"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-semibold text-sm hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20"
+              >
+                <Phone className="h-4 w-4" /> Talk to a Real Person
+              </Link>
+              <Link
+                to="/guides"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground font-semibold text-sm transition-colors border border-primary-foreground/20"
+              >
+                Browse Free Guides
+              </Link>
             </div>
 
             {/* Trust stats */}

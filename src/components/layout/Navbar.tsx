@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info } from 'lucide-react';
+import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -29,6 +29,7 @@ export function Navbar() {
       label: 'Resources',
       icon: BookOpen,
       links: [
+        { to: '/get-help', label: 'Get Help' },
         { to: '/guides', label: 'Guides' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/tips', label: 'Tips' },
@@ -125,6 +126,8 @@ export function Navbar() {
       <>
         <Link to={dashboardPath} className={linkClass}>Dashboard</Link>
         <Link to="/guides" className={linkClass}>Guides</Link>
+        <Link to="/my-requests" className={linkClass}>My Requests</Link>
+        <Link to="/get-help" className={linkClass}>Get Help</Link>
         <Link to="/favorites" className={linkClass}>Favorites</Link>
         <Link to="/tools" className={linkClass}>Tools</Link>
       </>
@@ -167,6 +170,9 @@ export function Navbar() {
                 </div>
                 <DropdownMenuItem onClick={() => navigate(dashboardPath)}>
                   <User className="h-4 w-4 mr-2" /> Dashboard
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate('/my-requests')}>
+                  <MessageSquare className="h-4 w-4 mr-2" /> My Requests
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={async () => { await logout(); navigate('/'); }}>
                   <LogOut className="h-4 w-4 mr-2" /> Sign Out
