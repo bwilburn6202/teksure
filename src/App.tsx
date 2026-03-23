@@ -46,6 +46,7 @@ import SafetyCourse from "./pages/tools/SafetyCourse";
 import Setup from "./pages/Setup";
 import AppRecommender from "./pages/tools/AppRecommender";
 import WarrantyChecker from "./pages/tools/WarrantyChecker";
+import Book from "./pages/Book";
 import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
@@ -105,6 +106,7 @@ const AppContent = () => {
         <Route path="/setup" element={<Setup />} />
         <Route path="/tools/app-recommender" element={<AppRecommender />} />
         <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
+        <Route path="/book" element={<Book />} />
         <Route path="/safety/parental-controls" element={<ParentalControls />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/get-help" element={<GetHelp />} />

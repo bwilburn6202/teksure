@@ -57,6 +57,189 @@ function timeAgo(iso: string) {
   return `${Math.floor(hrs / 24)}d ago`;
 }
 
+// ─── Bookings tab ─────────────────────────────────────────────────────────────
+
+interface Booking {
+  id: string;
+  name: string;
+  email: string | null;
+  phone: string | null;
+  service_type: string;
+  device_type: string | null;
+  preferred_date: string;
+  preferred_slot: string;
+  problem_description: string | null;
+  status: string;
+  created_at: string;
+}
+
+const BOOKING_STATUS_OPTIONS = ['pending', 'confirmed', 'completed', 'cancelled'] as const;
+type BookingStatus = typeof BOOKING_STATUS_OPTIONS[number];
+
+const bookingStatusConfig: Record<BookingStatus, { label: string; color: string; dot: string }> = {
+  pending:   { label: 'Pending',   color: 'bg-amber-500/10 text-amber-600 border-amber-500/20',  dot: 'bg-amber-500' },
+  confirmed: { label: 'Confirmed', color: 'bg-blue-500/10 text-blue-600 border-blue-500/20',     dot: 'bg-blue-500' },
+  completed: { label: 'Completed', color: 'bg-green-500/10 text-green-600 border-green-500/20',  dot: 'bg-green-500' },
+  cancelled: { label: 'Cancelled', color: 'bg-muted/50 text-muted-foreground border-border',      dot: 'bg-muted-foreground' },
+};
+
+const serviceLabels: Record<string, string> = {
+  wifi: '📶 WiFi & Internet', setup: '🖥️ Device Setup', security: '🔒 Security',
+  printer: '🖨️ Printer', phone: '📱 Phone / Tablet', general: '🔧 General Help',
+};
+
+function BookingsTab() {
+  const [bookings, setBookings] = useState<Booking[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [updatingId, setUpdatingId] = useState<string | null>(null);
+  const [filterStatus, setFilterStatus] = useState<BookingStatus | 'all'>('all');
+
+  const fetchBookings = async () => {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('bookings')
+      .select('*')
+      .order('preferred_date', { ascending: true });
+    if (!error && data) setBookings(data as Booking[]);
+    setLoading(false);
+  };
+
+  useEffect(() => { fetchBookings(); }, []);
+
+  const updateBookingStatus = async (id: string, newStatus: BookingStatus) => {
+    setUpdatingId(id);
+    const { error } = await supabase.from('bookings').update({ status: newStatus }).eq('id', id);
+    if (!error) setBookings(prev => prev.map(b => b.id === id ? { ...b, status: newStatus } : b));
+    setUpdatingId(null);
+  };
+
+  const filtered = bookings.filter(b => filterStatus === 'all' || b.status === filterStatus);
+
+  const counts = {
+    all: bookings.length,
+    pending: bookings.filter(b => b.status === 'pending').length,
+    confirmed: bookings.filter(b => b.status === 'confirmed').length,
+    completed: bookings.filter(b => b.status === 'completed').length,
+    cancelled: bookings.filter(b => b.status === 'cancelled').length,
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Stat cards */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {(['all', 'pending', 'confirmed', 'completed'] as const).map(s => {
+          const cfg = s === 'all' ? null : bookingStatusConfig[s];
+          return (
+            <button
+              key={s}
+              onClick={() => setFilterStatus(s)}
+              className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-secondary shadow-sm' : ''}`}
+            >
+              <p className="text-xs text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
+              <p className="text-2xl font-bold">{counts[s]}</p>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Filter pills */}
+      <div className="flex flex-wrap gap-2">
+        {(['all', ...BOOKING_STATUS_OPTIONS] as const).map(s => {
+          const cfg = s === 'all' ? null : bookingStatusConfig[s];
+          return (
+            <button
+              key={s}
+              onClick={() => setFilterStatus(s)}
+              className={`rounded-full border px-3 py-1 text-xs transition-all ${
+                filterStatus === s ? 'bg-secondary text-secondary-foreground border-secondary' : 'hover:bg-muted text-muted-foreground'
+              }`}
+            >
+              {s === 'all' ? `All (${counts.all})` : `${cfg?.label} (${counts[s]})`}
+            </button>
+          );
+        })}
+      </div>
+
+      <Card>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Name</TableHead>
+              <TableHead>Service</TableHead>
+              <TableHead>Date</TableHead>
+              <TableHead>Status</TableHead>
+              <TableHead></TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {loading ? (
+              <TableRow><TableCell colSpan={5} className="text-center py-8 text-muted-foreground">Loading…</TableCell></TableRow>
+            ) : filtered.length === 0 ? (
+              <TableRow><TableCell colSpan={5} className="text-center py-8 text-muted-foreground">No bookings found.</TableCell></TableRow>
+            ) : filtered.map(b => {
+              const cfg = bookingStatusConfig[b.status as BookingStatus] || bookingStatusConfig.pending;
+              const isExpanded = expandedId === b.id;
+              return (
+                <>
+                  <TableRow key={b.id} className="cursor-pointer hover:bg-muted/50" onClick={() => setExpandedId(isExpanded ? null : b.id)}>
+                    <TableCell className="font-medium">{b.name}</TableCell>
+                    <TableCell className="text-muted-foreground">{serviceLabels[b.service_type] || b.service_type}</TableCell>
+                    <TableCell className="text-sm">
+                      {new Date(b.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                      <span className="text-muted-foreground ml-1 capitalize">· {b.preferred_slot}</span>
+                    </TableCell>
+                    <TableCell>
+                      <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${cfg.color}`}>
+                        <span className={`h-1.5 w-1.5 rounded-full ${cfg.dot}`} />
+                        {cfg.label}
+                      </span>
+                    </TableCell>
+                    <TableCell>{isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}</TableCell>
+                  </TableRow>
+                  {isExpanded && (
+                    <TableRow key={`${b.id}-detail`} className="bg-muted/30">
+                      <TableCell colSpan={5} className="py-4">
+                        <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                          <div className="space-y-1.5">
+                            {b.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${b.email}`} className="hover:underline text-foreground">{b.email}</a></div>}
+                            {b.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${b.phone}`} className="hover:underline text-foreground">{b.phone}</a></div>}
+                            {b.device_type && <div className="flex items-center gap-2 text-muted-foreground"><Monitor className="h-4 w-4" /><span>{b.device_type}</span></div>}
+                            <p className="text-xs text-muted-foreground pt-1">Booked {timeAgo(b.created_at)} · Ref: {b.id.slice(0, 8).toUpperCase()}</p>
+                          </div>
+                          {b.problem_description && (
+                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{b.problem_description}</p>
+                          )}
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
+                          <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
+                          {BOOKING_STATUS_OPTIONS.filter(s => s !== b.status).map(s => {
+                            const c = bookingStatusConfig[s];
+                            return (
+                              <button
+                                key={s}
+                                disabled={updatingId === b.id}
+                                onClick={e => { e.stopPropagation(); updateBookingStatus(b.id, s); }}
+                                className={`rounded-full border px-3 py-1 text-xs font-medium transition-all hover:shadow-sm disabled:opacity-50 ${c.color}`}
+                              >
+                                {updatingId === b.id ? '…' : c.label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  )}
+                </>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </Card>
+    </div>
+  );
+}
+
 // ─── Placeholder data for future features ────────────────────────────────────
 
 const mockJobs = [
@@ -314,6 +497,7 @@ const AdminConsole = () => (
       <Tabs defaultValue="requests">
         <TabsList className="mb-6">
           <TabsTrigger value="requests">Help Requests</TabsTrigger>
+          <TabsTrigger value="bookings">Bookings</TabsTrigger>
           <TabsTrigger value="jobs">Jobs</TabsTrigger>
           <TabsTrigger value="disputes">Disputes</TabsTrigger>
           <TabsTrigger value="techs">Tech Verification</TabsTrigger>
@@ -322,6 +506,11 @@ const AdminConsole = () => (
         {/* ── Help Requests (live Supabase data) ── */}
         <TabsContent value="requests">
           <HelpRequestsTab />
+        </TabsContent>
+
+        {/* ── Bookings (live Supabase data) ── */}
+        <TabsContent value="bookings">
+          <BookingsTab />
         </TabsContent>
 
         {/* ── Jobs (placeholder — technician booking coming soon) ── */}
