@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep } from '@/data/guides';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
+import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { useAuth } from '@/contexts/AuthContext';
 
 /* ── Helpers ────────────────────────────────────── */
@@ -83,14 +84,32 @@ const WarningBox = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const CompletionBanner = ({ guideTitle }: { guideTitle: string }) => (
-  <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
-    <span className="text-3xl mb-2 block">🎉</span>
-    <p className="font-bold text-base mb-1">You Did It!</p>
-    <p className="text-sm text-muted-foreground">You've completed: <strong>{guideTitle}</strong></p>
-    <p className="text-xs text-muted-foreground mt-2">Need more help? <Link to="/signup" className="text-secondary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
-  </div>
-);
+const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: string }) => {
+  const [completed, setCompleted] = useState(() => isGuideCompleted(slug));
+
+  const handleComplete = () => {
+    markGuideCompleted(slug);
+    setCompleted(true);
+  };
+
+  return (
+    <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
+      <span className="text-3xl mb-2 block">🎉</span>
+      <p className="font-bold text-base mb-1">You Did It!</p>
+      <p className="text-sm text-muted-foreground mb-4">You've completed: <strong>{guideTitle}</strong></p>
+      {completed ? (
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teksure-success/20 text-teksure-success text-sm font-medium">
+          <CheckCircle className="h-4 w-4" /> Marked as complete!
+        </div>
+      ) : (
+        <Button size="sm" variant="outline" onClick={handleComplete} className="gap-2 border-teksure-success/50 text-teksure-success hover:bg-teksure-success/10">
+          <CheckCircle className="h-4 w-4" /> Mark as Complete
+        </Button>
+      )}
+      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-secondary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
+    </div>
+  );
+};
 
 const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string } }) => {
   const [speaking, setSpeaking] = useState(false);
@@ -391,7 +410,7 @@ const GuideDetail = () => {
           )}
 
           {/* Completion banner */}
-          {guide.steps && guide.steps.length > 0 && <CompletionBanner guideTitle={guide.title} />}
+          {guide.steps && guide.steps.length > 0 && <CompletionBanner guideTitle={guide.title} slug={guide.slug} />}
 
           {/* Body content */}
           {guide.body && (

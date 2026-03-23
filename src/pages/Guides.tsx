@@ -1,7 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock, CheckCircle2 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -10,6 +10,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
+import { getCompletedGuides, getProgressCount } from '@/lib/progress';
+import { Progress } from '@/components/ui/progress';
 
 const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'windows-guides': Monitor,
@@ -25,11 +27,16 @@ const difficultyConfig = {
   Advanced: { emoji: '🔴', className: 'border-destructive/50 text-destructive' },
 };
 
-const GuideCard = ({ guide }: { guide: typeof guides[0] }) => {
+const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
   const diff = guide.difficulty ? difficultyConfig[guide.difficulty] : null;
   return (
     <Link to={`/guides/${guide.slug}`}>
-      <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
+      <Card className={`h-full hover:shadow-lg transition-all hover:-translate-y-1 group relative ${completed ? 'border-green-500/30 bg-green-500/5 dark:bg-green-500/10' : ''}`}>
+        {completed && (
+          <div className="absolute top-3 right-3">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+          </div>
+        )}
         <CardContent className="pt-6">
           <div className="text-4xl mb-4">{guide.thumbnailEmoji}</div>
           <div className="flex items-center gap-2 mb-3 flex-wrap">
@@ -65,6 +72,16 @@ const GuideCard = ({ guide }: { guide: typeof guides[0] }) => {
 const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
+  const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
+
+  useEffect(() => {
+    const handleUpdate = () => setCompletedSlugs(getCompletedGuides());
+    window.addEventListener('teksure-progress-update', handleUpdate);
+    return () => window.removeEventListener('teksure-progress-update', handleUpdate);
+  }, []);
+
+  const allSlugs = useMemo(() => guides.map(g => g.slug), []);
+  const progressStats = getProgressCount(allSlugs);
 
   const filtered = useMemo(() => {
     let results = guides;
@@ -154,6 +171,22 @@ const Guides = () => {
         </div>
       </section>
 
+      {/* Progress Banner */}
+      {progressStats.completed > 0 && (
+        <section className="container mb-4">
+          <div className="flex items-center gap-4 p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+            <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-medium text-green-700 dark:text-green-400">
+                {progressStats.completed} of {progressStats.total} guides completed
+              </p>
+              <Progress value={progressStats.pct} className="h-1.5 mt-1.5 bg-green-200 dark:bg-green-900" />
+            </div>
+            <span className="text-sm font-bold text-green-600 dark:text-green-400 shrink-0">{progressStats.pct}%</span>
+          </div>
+        </section>
+      )}
+
       {/* Guides Grid */}
       <section className="container pb-20">
         <Tabs value={activeTab} onValueChange={v => setActiveTab(v as typeof activeTab)}>
@@ -188,7 +221,7 @@ const Guides = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: Math.min(i * 0.05, 0.3) }}
                     >
-                      <GuideCard guide={guide} />
+                      <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
                     </motion.div>
                   ))}
                 </div>

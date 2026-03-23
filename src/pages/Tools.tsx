@@ -6,9 +6,42 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/ca
 import { Badge } from '@/components/ui/badge';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
+  HelpCircle, Laptop, HardDrive, GraduationCap,
 } from 'lucide-react';
 
 const tools = [
+  {
+    title: 'Interactive Troubleshooter',
+    description: 'Answer yes/no questions and get guided step-by-step to the exact fix for WiFi, printers, passwords, phones, and more.',
+    icon: HelpCircle,
+    path: '/tools/troubleshooter',
+    color: 'text-secondary',
+    badge: 'Popular',
+  },
+  {
+    title: 'Device Chooser Quiz',
+    description: 'Not sure whether to buy a tablet, laptop, or desktop? Answer 5 quick questions for a personalised recommendation.',
+    icon: Laptop,
+    path: '/tools/device-chooser',
+    color: 'text-violet-500',
+    badge: 'Buying Guide',
+  },
+  {
+    title: 'Data Backup Wizard',
+    description: 'Step-by-step personalised backup plan for your photos, documents, and contacts — covering cloud, USB drives, and more.',
+    icon: HardDrive,
+    path: '/tools/backup-wizard',
+    color: 'text-sky-500',
+    badge: 'Safety',
+  },
+  {
+    title: 'Internet Safety Course',
+    description: 'Five bite-sized lessons on spotting scams, strong passwords, safe shopping, privacy, and what to do when things go wrong.',
+    icon: GraduationCap,
+    path: '/tools/safety-course',
+    color: 'text-amber-500',
+    badge: 'Course',
+  },
   {
     title: 'Password Strength Checker',
     description: 'Test how strong your password is with real-time feedback, a visual strength meter, and a security checklist.',

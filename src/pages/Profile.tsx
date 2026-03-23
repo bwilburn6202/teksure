@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User, Mail, Shield, Save, Loader2, CheckCircle, ArrowRight, MessageSquare, BookOpen } from 'lucide-react';
+import { User, Mail, Shield, Save, Loader2, CheckCircle, ArrowRight, MessageSquare, BookOpen, Trophy } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -11,6 +11,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
+import { evaluateBadges, type Badge as TekBadge } from '@/lib/badges';
+import { getProgressCount } from '@/lib/progress';
+import { guides } from '@/data/guides';
 
 const roleColors: Record<string, string> = {
   customer: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
@@ -31,6 +34,19 @@ export default function Profile() {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState('');
+  const [badges, setBadges] = useState<TekBadge[]>(() => evaluateBadges());
+  const allSlugs = guides.map(g => g.slug);
+  const progressStats = getProgressCount(allSlugs);
+
+  useEffect(() => {
+    const refresh = () => setBadges(evaluateBadges());
+    window.addEventListener('teksure-progress-update', refresh);
+    window.addEventListener('teksure-badge-earned', refresh);
+    return () => {
+      window.removeEventListener('teksure-progress-update', refresh);
+      window.removeEventListener('teksure-badge-earned', refresh);
+    };
+  }, []);
 
   if (!user) {
     navigate('/login');
@@ -157,6 +173,69 @@ export default function Profile() {
                 )}
               </Button>
             </form>
+          </CardContent>
+        </Card>
+
+        {/* Progress */}
+        <Card className="mb-6">
+          <CardContent className="pt-5 pb-4">
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              Learning Progress
+            </p>
+            <div className="flex items-end justify-between mb-2">
+              <p className="text-sm font-medium">{progressStats.completed} guides completed</p>
+              <p className="text-lg font-bold text-secondary">{progressStats.pct}%</p>
+            </div>
+            <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+              <div
+                className="h-2 rounded-full bg-secondary transition-all duration-500"
+                style={{ width: `${progressStats.pct}%` }}
+              />
+            </div>
+            <p className="text-xs text-muted-foreground mt-2">
+              {progressStats.completed === 0
+                ? 'Complete your first guide to start tracking progress!'
+                : `${progressStats.total - progressStats.completed} more to go — keep it up!`}
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Badges */}
+        <Card className="mb-6">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Trophy className="h-4 w-4 text-amber-500" />
+              Achievement Badges
+              <Badge variant="secondary" className="text-xs ml-auto">
+                {badges.filter(b => b.earned).length} / {badges.length}
+              </Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pb-5">
+            {badges.filter(b => b.earned).length === 0 && (
+              <p className="text-sm text-muted-foreground mb-4">Complete guides to earn your first badge!</p>
+            )}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {badges.map(badge => (
+                <div
+                  key={badge.id}
+                  className={`flex flex-col items-center gap-1.5 p-3 rounded-xl border text-center transition-all ${
+                    badge.earned
+                      ? 'border-amber-400/40 bg-amber-50 dark:bg-amber-950/20'
+                      : 'border-border bg-muted/30 opacity-50 grayscale'
+                  }`}
+                >
+                  <span className="text-2xl">{badge.emoji}</span>
+                  <p className="text-xs font-semibold leading-tight">{badge.title}</p>
+                  <p className="text-xs text-muted-foreground leading-tight">{badge.description}</p>
+                  {badge.earned && badge.earnedAt && (
+                    <p className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
+                      {new Date(badge.earnedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
           </CardContent>
         </Card>
 
