@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
-  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star,
+  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone,
 } from 'lucide-react';
 
 interface Tip {
@@ -17,17 +17,23 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Back Up Your Photos Before It\'s Too Late',
-  summary: 'Your phone holds years of memories. If it breaks or gets lost, those photos could be gone forever.',
-  full: 'Set up automatic cloud backups using Google Photos, iCloud, or OneDrive. It takes 5 minutes and means your photos are always safe — even if your phone ends up in a puddle. Go to your phone\'s settings, find "Backup" or "Photos", and turn on automatic uploads over WiFi. You can also plug your phone into a computer once a month and copy your photos to an external hard drive for extra peace of mind.',
-  category: 'Security',
-  icon: Camera,
+  title: 'Review Your App Permissions',
+  summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
+  full: 'Every app you install on your phone can request access to sensitive features — your camera, microphone, location, contacts, and more. Many apps ask for more than they actually need to do their job. It\'s a good habit to review these permissions every few months. On iPhone, go to Settings → Privacy & Security to see a list of features and which apps can access each one. On Android, go to Settings → Privacy → Permission Manager. If an app doesn\'t genuinely need a permission — for example, a weather app wanting access to your microphone — tap to turn it off. Restricting unnecessary permissions costs you nothing and significantly reduces the risk of your data being collected or misused.',
+  category: 'Safety',
+  icon: Smartphone,
 };
 
 const pastTips: Tip[] = [
   {
-    title: 'Back Up Your Photos',
-    summary: 'Set up automatic cloud backups so your memories are safe even if your phone breaks or gets lost.',
+    title: 'Hang Up on Tech Support Scammers',
+    summary: 'Genuine companies like Microsoft or Apple will never call you out of the blue to say your computer has a virus. If you get this call — hang up.',
+    category: 'Safety',
+    icon: PhoneOff,
+  },
+  {
+    title: 'Back Up Your Photos Before It\'s Too Late',
+    summary: 'Set up automatic cloud backups using Google Photos, iCloud, or OneDrive — it takes 5 minutes and keeps your memories safe forever.',
     category: 'Security',
     icon: Camera,
   },

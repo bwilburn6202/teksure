@@ -60,6 +60,18 @@ const GetHelp = () => {
       return;
     }
 
+    // Fire-and-forget confirmation + admin notification emails.
+    // Non-blocking — form succeeds even if email fails.
+    supabase.functions.invoke('send-help-confirmation', {
+      body: {
+        name: name.trim() || undefined,
+        email: email.trim() || undefined,
+        phone: phone.trim() || undefined,
+        device_type: deviceType || undefined,
+        problem_description: description.trim() || undefined,
+      },
+    }).catch(err => console.warn('Email notification failed (non-fatal):', err));
+
     setSubmitted(true);
   };
 
