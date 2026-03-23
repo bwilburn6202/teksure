@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
-  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone,
+  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck,
 } from 'lucide-react';
 
 interface Tip {
@@ -17,14 +17,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Review Your App Permissions',
-  summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
-  full: 'Every app you install on your phone can request access to sensitive features — your camera, microphone, location, contacts, and more. Many apps ask for more than they actually need to do their job. It\'s a good habit to review these permissions every few months. On iPhone, go to Settings → Privacy & Security to see a list of features and which apps can access each one. On Android, go to Settings → Privacy → Permission Manager. If an app doesn\'t genuinely need a permission — for example, a weather app wanting access to your microphone — tap to turn it off. Restricting unnecessary permissions costs you nothing and significantly reduces the risk of your data being collected or misused.',
-  category: 'Safety',
-  icon: Smartphone,
+  title: 'Check If Your Email Was in a Data Breach',
+  summary: 'Visit haveibeenpwned.com to find out if your email address has appeared in any known data breaches. If it has, change your password for those affected accounts right away.',
+  full: 'Head to haveibeenpwned.com — a free, trusted tool run by a well-known security researcher — and type in your email address. It checks your address against billions of leaked records from thousands of known data breaches. If your email shows up, don\'t panic: simply change the password for any affected accounts and make sure you\'re not reusing that password elsewhere. It takes less than a minute to check, and it\'s one of the most useful security checks you can do right now.',
+  category: 'Security',
+  icon: ShieldCheck,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Review Your App Permissions',
+    summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
+    category: 'Safety',
+    icon: Smartphone,
+  },
   {
     title: 'Hang Up on Tech Support Scammers',
     summary: 'Genuine companies like Microsoft or Apple will never call you out of the blue to say your computer has a virus. If you get this call — hang up.',
