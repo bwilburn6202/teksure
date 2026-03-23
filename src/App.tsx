@@ -43,6 +43,9 @@ import Troubleshooter from "./pages/tools/Troubleshooter";
 import DeviceChooser from "./pages/tools/DeviceChooser";
 import BackupWizard from "./pages/tools/BackupWizard";
 import SafetyCourse from "./pages/tools/SafetyCourse";
+import Setup from "./pages/Setup";
+import AppRecommender from "./pages/tools/AppRecommender";
+import WarrantyChecker from "./pages/tools/WarrantyChecker";
 import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
@@ -99,6 +102,9 @@ const AppContent = () => {
         <Route path="/tools/device-chooser" element={<DeviceChooser />} />
         <Route path="/tools/backup-wizard" element={<BackupWizard />} />
         <Route path="/tools/safety-course" element={<SafetyCourse />} />
+        <Route path="/setup" element={<Setup />} />
+        <Route path="/tools/app-recommender" element={<AppRecommender />} />
+        <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
         <Route path="/safety/parental-controls" element={<ParentalControls />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/get-help" element={<GetHelp />} />

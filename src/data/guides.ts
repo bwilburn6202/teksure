@@ -70,6 +70,7 @@ export const guides: Guide[] = [
     category: 'windows-guides',
     tags: ['beginner', 'windows', 'wifi', 'network'],
     readTime: '3 min',
+    videoUrl: 'https://www.youtube.com/embed/GHX3ILBFqNE',
     thumbnailEmoji: '📶',
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
@@ -122,6 +123,7 @@ export const guides: Guide[] = [
     category: 'windows-guides',
     tags: ['beginner', 'windows', 'screenshot', 'snipping-tool'],
     readTime: '3 min',
+    videoUrl: 'https://www.youtube.com/embed/s8EkEFqRHuQ',
     thumbnailEmoji: '📸',
     publishedAt: '2026-01-09',
     steps: [
@@ -508,6 +510,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'update-windows',
+    videoUrl: 'https://www.youtube.com/embed/AKLbPpNzpBM',
     title: 'How to Update Windows',
     excerpt: 'Keep your PC secure and running smoothly by installing the latest Windows updates.',
     category: 'windows-guides',

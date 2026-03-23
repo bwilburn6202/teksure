@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/ca
 import { Badge } from '@/components/ui/badge';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
-  HelpCircle, Laptop, HardDrive, GraduationCap,
+  HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
 } from 'lucide-react';
 
 const tools = [
@@ -41,6 +41,22 @@ const tools = [
     path: '/tools/safety-course',
     color: 'text-amber-500',
     badge: 'Course',
+  },
+  {
+    title: 'App Recommender',
+    description: 'Not sure which app to use? Answer 3 questions about what you want to do and your device — get personalised recommendations.',
+    icon: Smartphone,
+    path: '/tools/app-recommender',
+    color: 'text-rose-500',
+    badge: 'Recommended',
+  },
+  {
+    title: 'Warranty & Repair Finder',
+    description: 'Check how long your device warranty lasts, how to verify it\'s still active, and find authorised repair options.',
+    icon: ShieldCheck,
+    path: '/tools/warranty-checker',
+    color: 'text-lime-600',
+    badge: 'Support',
   },
   {
     title: 'Password Strength Checker',
