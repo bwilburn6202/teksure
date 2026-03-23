@@ -8,6 +8,9 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import DeviceHealthDashboard from "./pages/tools/DeviceHealthDashboard";
+import BluetoothTroubleshooter from "./pages/tools/BluetoothTroubleshooter";
+import TechHealthQuiz from "./pages/tools/TechHealthQuiz";
+import StorageCleanup from "./pages/tools/StorageCleanup";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -132,6 +135,9 @@ const AppContent = () => {
         <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
         <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
         <Route path="/tools/device-health" element={<DeviceHealthDashboard />} />
+        <Route path="/tools/bluetooth-troubleshooter" element={<BluetoothTroubleshooter />} />
+        <Route path="/tools/tech-health-quiz" element={<TechHealthQuiz />} />
+        <Route path="/tools/storage-cleanup" element={<StorageCleanup />} />
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />

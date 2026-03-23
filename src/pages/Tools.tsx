@@ -8,6 +8,7 @@ import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
   MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
+  Bluetooth, ClipboardCheck, Trash2,
 } from 'lucide-react';
 
 const tools = [
@@ -57,6 +58,30 @@ const tools = [
     icon: Activity,
     path: '/tools/device-health',
     color: 'text-emerald-500',
+    badge: 'New',
+  },
+  {
+    title: 'Bluetooth Troubleshooter',
+    description: 'Fix Bluetooth connection problems with headphones, speakers, keyboards, and more — guided step by step with simple yes/no questions.',
+    icon: Bluetooth,
+    path: '/tools/bluetooth-troubleshooter',
+    color: 'text-blue-500',
+    badge: 'New',
+  },
+  {
+    title: 'Tech Health Quiz',
+    description: '8 quick questions covering security, backup, privacy, battery, and scam awareness. Get a grade and personalised action steps.',
+    icon: ClipboardCheck,
+    path: '/tools/tech-health-quiz',
+    color: 'text-violet-500',
+    badge: 'New',
+  },
+  {
+    title: 'Storage Cleanup Wizard',
+    description: 'Free up space on your Windows PC, Mac, iPhone, or Android phone with a step-by-step checklist — no tech knowledge needed.',
+    icon: Trash2,
+    path: '/tools/storage-cleanup',
+    color: 'text-orange-500',
     badge: 'New',
   },
   {
