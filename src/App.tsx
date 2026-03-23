@@ -43,6 +43,7 @@ import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
 import MyRequests from "./pages/MyRequests";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -94,6 +95,7 @@ const AppContent = () => {
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/get-help" element={<GetHelp />} />
         <Route path="/my-requests" element={<MyRequests />} />
+        <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -6,6 +6,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
+import { DarkModeToggle } from '@/components/DarkModeToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -144,6 +145,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           {user ? <AuthLinks /> : <PublicLinks />}
           <FontSizeToggle />
+          <DarkModeToggle />
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
             className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border bg-muted/50 text-xs text-muted-foreground hover:bg-muted transition-colors"
@@ -172,6 +174,9 @@ export function Navbar() {
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate('/my-requests')}>
                   <MessageSquare className="h-4 w-4 mr-2" /> My Requests
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate('/profile')}>
+                  <User className="h-4 w-4 mr-2" /> My Profile
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={async () => { await logout(); navigate('/'); }}>
                   <LogOut className="h-4 w-4 mr-2" /> Sign Out

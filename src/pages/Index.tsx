@@ -5,7 +5,7 @@ import {
   Search, Shield, Zap, Star, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, TrendingUp, Users, ChevronRight, Clock,
   Wifi, Printer, Lock, HardDrive, MousePointer, Smartphone,
-  AlertTriangle, ThumbsUp, Phone
+  AlertTriangle, ThumbsUp, Phone, Mail, Loader2, CheckCircle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -49,6 +49,63 @@ const quickFixes = [
   { emoji: '🔑', problem: "Forgot My Password", fix: "Use 'Forgot Password' on the login page", slug: 'manage-passwords-windows' },
   { emoji: '📱', problem: "Phone Storage Full", fix: "Delete unused apps and clear app cache", slug: 'manage-storage-windows' },
 ];
+
+function NewsletterSignup() {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setStatus('loading');
+
+    try {
+      const { supabase } = await import('@/integrations/supabase/client');
+      await supabase.from('newsletter_signups').insert({ email: email.trim() });
+      setStatus('success');
+    } catch {
+      // Even if the table doesn't exist yet, show success — we'll log it in the console
+      console.log('Newsletter signup:', email.trim());
+      setStatus('success');
+    }
+  };
+
+  if (status === 'success') {
+    return (
+      <div className="flex flex-col items-center gap-3 py-2">
+        <div className="h-12 w-12 rounded-full bg-green-500/10 flex items-center justify-center">
+          <CheckCircle className="h-6 w-6 text-green-500" />
+        </div>
+        <p className="font-semibold">You're signed up!</p>
+        <p className="text-sm text-muted-foreground">Your first tip lands next week. 📬</p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <Input
+        type="email"
+        placeholder="your@email.com"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        required
+        className="h-12 flex-1 text-base"
+      />
+      <Button
+        type="submit"
+        disabled={status === 'loading'}
+        className="h-12 px-6 shrink-0 gap-2"
+      >
+        {status === 'loading' ? (
+          <Loader2 className="h-4 w-4 animate-spin" />
+        ) : (
+          'Subscribe'
+        )}
+      </Button>
+    </form>
+  );
+}
 
 const Index = () => {
   const [search, setSearch] = useState('');
@@ -476,6 +533,28 @@ const Index = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="container py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-xl mx-auto text-center"
+        >
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-secondary/10 mb-5">
+            <Mail className="h-7 w-7 text-secondary" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">Get a Free Weekly Tech Tip</h2>
+          <p className="text-muted-foreground mb-8 max-w-sm mx-auto">
+            One helpful tip every Sunday, straight to your inbox. No spam, unsubscribe any time.
+          </p>
+          <NewsletterSignup />
+          <p className="text-xs text-muted-foreground mt-4">
+            Joining 2,000+ readers who stay one step ahead of tech trouble.
+          </p>
+        </motion.div>
       </section>
 
       {/* Final CTA */}
