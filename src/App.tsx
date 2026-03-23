@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -150,9 +151,11 @@ const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <AuthProvider>
-          <AppContent />
-        </AuthProvider>
+        <SeniorModeProvider>
+          <AuthProvider>
+            <AppContent />
+          </AuthProvider>
+        </SeniorModeProvider>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

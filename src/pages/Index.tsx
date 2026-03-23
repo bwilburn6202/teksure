@@ -244,21 +244,55 @@ const Index = () => {
               </Link>
             </div>
 
-            {/* Trust stats */}
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm opacity-70">
-              <span className="flex items-center gap-1.5">
-                <ThumbsUp className="h-4 w-4" /> 50,000+ Problems Solved
-              </span>
-              <span className="hidden sm:inline">·</span>
-              <span className="flex items-center gap-1.5">
-                <Star className="h-4 w-4 fill-current" /> 4.9★ Average Rating
-              </span>
-              <span className="hidden sm:inline">·</span>
-              <span>Free to Use</span>
+            {/* Trust badges */}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
+              {[
+                { icon: ThumbsUp, label: '50,000+ Problems Solved' },
+                { icon: Star,     label: '4.9★ Average Rating' },
+                { icon: BookOpen, label: '180+ Free Guides' },
+                { icon: Shield,   label: 'No Sign-up Needed' },
+                { icon: Users,    label: '12,000+ Members' },
+              ].map(({ icon: Icon, label }) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 border border-primary-foreground/15 text-primary-foreground/80 text-xs font-medium"
+                >
+                  <Icon className="h-3.5 w-3.5 text-secondary" />
+                  {label}
+                </span>
+              ))}
             </div>
           </motion.div>
         </div>
       </section>
+
+
+      {/* Social proof strip */}
+      <div className="border-y border-border bg-muted/40">
+        <div className="container py-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-muted-foreground">
+            <span className="flex items-center gap-2 font-medium text-foreground">
+              <Users className="h-4 w-4 text-secondary" />
+              Trusted by <strong className="text-foreground">12,000+</strong> members
+            </span>
+            <span className="hidden sm:block w-px h-4 bg-border" />
+            <span className="flex items-center gap-2">
+              <BookOpen className="h-4 w-4 text-primary/60" />
+              <strong className="text-foreground">180+</strong> free step-by-step guides
+            </span>
+            <span className="hidden sm:block w-px h-4 bg-border" />
+            <span className="flex items-center gap-2">
+              <Star className="h-4 w-4 text-amber-500 fill-amber-500" />
+              <strong className="text-foreground">4.9/5</strong> average technician rating
+            </span>
+            <span className="hidden sm:block w-px h-4 bg-border" />
+            <span className="flex items-center gap-2">
+              <Shield className="h-4 w-4 text-primary/60" />
+              No jargon. No hidden fees.
+            </span>
+          </div>
+        </div>
+      </div>
 
       {/* Quick Fixes */}
       <section className="container py-16">

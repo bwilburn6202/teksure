@@ -177,3 +177,29 @@ html.font-size-xxl {
     color: hsl(var(--destructive));
   }
 }
+
+/* ── Senior Tech Mode ───────────────────────────────────────────────── */
+html.senior-mode {
+  font-size: 20px;
+}
+
+html.senior-mode button,
+html.senior-mode a,
+html.senior-mode [role="button"] {
+  min-height: 52px !important;
+  min-width: 52px !important;
+}
+
+html.senior-mode .senior-hide {
+  display: none !important;
+}
+
+html.senior-mode .senior-simplify {
+  gap: 1.5rem !important;
+}
+
+html.senior-mode * {
+  transition-duration: 0.05ms !important;
+  animation-duration: 0.05ms !important;
+  animation-iteration-count: 1 !important;
+}
