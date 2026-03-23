@@ -47,6 +47,9 @@ import Setup from "./pages/Setup";
 import AppRecommender from "./pages/tools/AppRecommender";
 import WarrantyChecker from "./pages/tools/WarrantyChecker";
 import Book from "./pages/Book";
+import ForumIndex from "./pages/forum/Index";
+import ThreadDetail from "./pages/forum/ThreadDetail";
+import NewThread from "./pages/forum/NewThread";
 import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
@@ -107,6 +110,9 @@ const AppContent = () => {
         <Route path="/tools/app-recommender" element={<AppRecommender />} />
         <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/forum" element={<ForumIndex />} />
+        <Route path="/forum/new" element={<NewThread />} />
+        <Route path="/forum/:id" element={<ThreadDetail />} />
         <Route path="/safety/parental-controls" element={<ParentalControls />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/get-help" element={<GetHelp />} />

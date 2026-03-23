@@ -34,6 +34,7 @@ export function Navbar() {
         { to: '/guides', label: 'Guides' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/tips', label: 'Tips' },
+        { to: '/forum', label: 'Community Forum' },
         { to: '/favorites', label: 'Favorites' },
       ],
     },
@@ -127,6 +128,7 @@ export function Navbar() {
       <>
         <Link to={dashboardPath} className={linkClass}>Dashboard</Link>
         <Link to="/guides" className={linkClass}>Guides</Link>
+        <Link to="/forum" className={linkClass}>Forum</Link>
         <Link to="/my-requests" className={linkClass}>My Requests</Link>
         <Link to="/get-help" className={linkClass}>Get Help</Link>
         <Link to="/favorites" className={linkClass}>Favorites</Link>
