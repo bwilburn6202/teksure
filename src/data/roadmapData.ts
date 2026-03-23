@@ -41,6 +41,8 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Tech Health Check', description: 'A simple questionnaire that identifies potential issues with your devices.', status: 'live', category: 'Tools' },
   { title: 'Tech Health Quiz', description: '8-question quiz covering security, backup, privacy, battery, and scam awareness — get a grade and personalised tips.', status: 'live', category: 'Tools' },
   { title: 'Storage Cleanup Wizard', description: 'Step-by-step checklist to free up space on Windows, Mac, iPhone, or Android — no tech knowledge needed.', status: 'live', category: 'Tools' },
+  { title: 'VPN Setup Guide', description: 'Plain-English guide to VPNs — what they are, when you need one, and how to set one up in under 10 minutes.', status: 'live', category: 'Safety' },
+  { title: 'App Permission Auditor', description: 'Review and revoke risky app permissions (location, camera, mic) across iPhone, Android, Windows, and Mac.', status: 'live', category: 'Safety' },
   { title: 'Keyboard Shortcut Cheat Sheets', description: 'Downloadable reference cards with the most useful keyboard shortcuts.', status: 'live', category: 'Tools' },
   { title: 'Device Comparison Tool', description: 'Compare two devices side by side to decide which one is right for you.', status: 'live', category: 'Tools' },
   { title: 'Tech News for Beginners', description: 'Important tech news explained in simple language so you stay informed.', status: 'live', category: 'Content' },

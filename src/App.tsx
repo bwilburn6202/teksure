@@ -11,6 +11,8 @@ import DeviceHealthDashboard from "./pages/tools/DeviceHealthDashboard";
 import BluetoothTroubleshooter from "./pages/tools/BluetoothTroubleshooter";
 import TechHealthQuiz from "./pages/tools/TechHealthQuiz";
 import StorageCleanup from "./pages/tools/StorageCleanup";
+import VpnGuide from "./pages/tools/VpnGuide";
+import AppPermissions from "./pages/tools/AppPermissions";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -138,6 +140,8 @@ const AppContent = () => {
         <Route path="/tools/bluetooth-troubleshooter" element={<BluetoothTroubleshooter />} />
         <Route path="/tools/tech-health-quiz" element={<TechHealthQuiz />} />
         <Route path="/tools/storage-cleanup" element={<StorageCleanup />} />
+        <Route path="/tools/vpn-guide" element={<VpnGuide />} />
+        <Route path="/tools/app-permissions" element={<AppPermissions />} />
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />

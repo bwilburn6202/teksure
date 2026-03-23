@@ -9,6 +9,7 @@ import {
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
   MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
   Bluetooth, ClipboardCheck, Trash2,
+  ShieldHalf, Sliders,
 } from 'lucide-react';
 
 const tools = [
@@ -82,6 +83,22 @@ const tools = [
     icon: Trash2,
     path: '/tools/storage-cleanup',
     color: 'text-orange-500',
+    badge: 'New',
+  },
+  {
+    title: 'VPN Setup Guide',
+    description: 'Learn what a VPN is, whether you need one, and how to set it up in under 10 minutes. Includes trusted free and paid recommendations.',
+    icon: ShieldHalf,
+    path: '/tools/vpn-guide',
+    color: 'text-teal-600',
+    badge: 'New',
+  },
+  {
+    title: 'App Permission Auditor',
+    description: 'Find out which apps have access to your location, camera, microphone, and contacts — then learn how to revoke risky permissions.',
+    icon: Sliders,
+    path: '/tools/app-permissions',
+    color: 'text-rose-500',
     badge: 'New',
   },
   {
