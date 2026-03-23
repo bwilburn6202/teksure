@@ -152,6 +152,7 @@ export default function Webinars() {
       <SEOHead
         title="Free Tech Webinars — TekSure"
         description="Join free online webinars hosted by TekSure. Learn about cybersecurity, smartphones, AI tools, and more in friendly, beginner-friendly sessions."
+      path="/webinars"
       />
       <Navbar />
 

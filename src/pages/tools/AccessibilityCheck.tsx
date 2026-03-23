@@ -208,6 +208,7 @@ export default function AccessibilityCheck() {
       <SEOHead
         title="Accessibility Check — TekSure"
         description="Find out how accessible your device setup is and get personalised tips to make tech easier to use."
+      path="/tools/accessibility-check"
       />
       <Navbar />
 

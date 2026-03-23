@@ -174,6 +174,7 @@ export default function PhishingScanner() {
       <SEOHead
         title="Phishing URL Scanner — TekSure"
         description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyses URLs for warning signs."
+      path="/tools/phishing-scanner"
       />
       <Navbar />
 

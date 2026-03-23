@@ -233,6 +233,7 @@ export default function EmailDeclutter() {
       <SEOHead
         title="Email Declutter Tool — TekSure"
         description="Clean up your email inbox step by step. Works with Gmail, Outlook, and Apple Mail — no sign-in required."
+      path="/tools/email-declutter"
       />
       <Navbar />
 

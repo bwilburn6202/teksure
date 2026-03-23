@@ -121,6 +121,7 @@ function TechnicianDirectory() {
       <SEOHead
         title="Our Technicians — TekSure"
         description="Browse TekSure's vetted, friendly technicians. Each one is ID-verified and rated by real customers."
+      path="/technicians"
       />
       <Navbar />
       <main className="min-h-screen bg-background">
@@ -145,7 +146,7 @@ function TechnicianDirectory() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h3 className="font-semibold text-sm">{tech.name}</h3>
-                        {tech.verified && <Shield className="h-3 w-3 text-blue-500 shrink-0" title="ID Verified" />}
+                        {tech.verified && <span title="ID Verified"><Shield className="h-3 w-3 text-blue-500 shrink-0" aria-label="ID Verified" /></span>}
                       </div>
                       <p className="text-xs text-muted-foreground">{tech.title}</p>
                       <div className="flex items-center gap-1 mt-1">
@@ -199,6 +200,7 @@ export default function TechnicianProfile() {
       <SEOHead
         title={`${tech.name} — TekSure Technician`}
         description={`${tech.title} in ${tech.location}. ${tech.rating} stars from ${tech.reviewCount} reviews.`}
+      path={`/technicians/${tech.id}`}
       />
       <Navbar />
 

@@ -300,9 +300,9 @@ export default function Profile() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className={`text-sm font-medium leading-tight truncate ${done ? 'line-through text-muted-foreground' : ''}`}>
-                        {guide.emoji} {guide.title}
+                        {guide.thumbnailEmoji} {guide.title}
                       </p>
-                      <p className="text-xs text-muted-foreground truncate">{guide.description}</p>
+                      <p className="text-xs text-muted-foreground truncate">{guide.excerpt}</p>
                     </div>
                     {isNext && (
                       <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">Next up</span>

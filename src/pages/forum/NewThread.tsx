@@ -33,7 +33,7 @@ export default function NewThread() {
   const createThread = useMutation({
     mutationFn: async () => {
       const { data, error } = await supabase
-        .from('forum_threads')
+        .from('forum_threads' as any)
         .insert({
           title: title.trim(),
           body: body.trim(),
@@ -70,7 +70,7 @@ export default function NewThread() {
 
   return (
     <>
-      <SEOHead title="Start a Discussion — TekSure Forum" description="Ask a question or share a tip with the TekSure community." />
+      <SEOHead title="Start a Discussion — TekSure Forum" description="Ask a question or share a tip with the TekSure community." path="/forum/new" />
       <Navbar />
 
       <main className="min-h-screen bg-background">

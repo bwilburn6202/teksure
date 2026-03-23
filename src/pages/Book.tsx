@@ -113,7 +113,7 @@ export default function Book() {
     if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number so we can reach you.'); return; }
 
     setSubmitting(true);
-    const { data, error: dbError } = await supabase.from('bookings').insert({
+    const { data, error: dbError } = await (supabase as any).from('bookings').insert({
       user_id: user?.id ?? null,
       name: form.name.trim(),
       email: form.email.trim() || null,

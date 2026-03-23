@@ -98,10 +98,10 @@ function BookingsTab() {
   const fetchBookings = async () => {
     setLoading(true);
     const { data, error } = await supabase
-      .from('bookings')
+      .from('bookings' as any)
       .select('*')
       .order('preferred_date', { ascending: true });
-    if (!error && data) setBookings(data as Booking[]);
+    if (!error && data) setBookings(data as unknown as Booking[]);
     setLoading(false);
   };
 
@@ -109,7 +109,7 @@ function BookingsTab() {
 
   const updateBookingStatus = async (id: string, newStatus: BookingStatus) => {
     setUpdatingId(id);
-    const { error } = await supabase.from('bookings').update({ status: newStatus }).eq('id', id);
+    const { error } = await supabase.from('bookings' as any).update({ status: newStatus }).eq('id', id);
     if (!error) setBookings(prev => prev.map(b => b.id === id ? { ...b, status: newStatus } : b));
     setUpdatingId(null);
   };

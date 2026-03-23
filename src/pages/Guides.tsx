@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock, CheckCircle2 } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -19,6 +19,8 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
   'ai-guides': Bot,
+  'safety-guides': ShieldCheck,
+  'how-to': BookOpen,
 };
 
 const difficultyConfig = {

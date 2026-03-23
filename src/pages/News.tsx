@@ -179,6 +179,7 @@ export default function News() {
       <SEOHead
         title="Tech News for Beginners — TekSure"
         description="Stay up to date with the latest tech news, scam alerts, and tips — explained in plain English with no jargon."
+      path="/news"
       />
       <Navbar />
 

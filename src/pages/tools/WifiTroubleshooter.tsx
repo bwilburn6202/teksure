@@ -251,6 +251,7 @@ export default function WifiTroubleshooter() {
       <SEOHead
         title="Wi-Fi Troubleshooter — TekSure"
         description="Fix your Wi-Fi problems step by step. Our interactive wizard diagnoses your connection issue and gives you clear instructions to fix it."
+      path="/tools/wifi-troubleshooter"
       />
       <Navbar />
 

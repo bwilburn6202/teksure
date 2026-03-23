@@ -65,7 +65,7 @@ function NewsletterSignup() {
 
     try {
       const { supabase } = await import('@/integrations/supabase/client');
-      await supabase.from('newsletter_signups').insert({ email: email.trim() });
+      await (supabase as any).from('newsletter_signups').insert({ email: email.trim() });
       setStatus('success');
     } catch {
       // Even if the table doesn't exist yet, show success — we'll log it in the console

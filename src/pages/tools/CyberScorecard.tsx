@@ -89,6 +89,7 @@ export default function CyberScorecard() {
       <SEOHead
         title="Cybersecurity Scorecard — TekSure"
         description="Check how secure your digital life is with our quick 13-question cybersecurity scorecard. Get a personalised score and actionable tips."
+      path="/tools/cyber-scorecard"
       />
       <Navbar />
 

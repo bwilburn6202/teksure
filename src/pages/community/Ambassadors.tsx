@@ -113,6 +113,7 @@ export default function Ambassadors() {
       <SEOHead
         title="Community Ambassadors — TekSure"
         description="Meet the TekSure Community Ambassadors — real people dedicated to helping others learn technology. Find out how to become an Ambassador yourself."
+      path="/community/ambassadors"
       />
       <Navbar />
 

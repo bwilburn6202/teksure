@@ -44,12 +44,12 @@ export default function ThreadDetail() {
     queryKey: ['forum-thread', id],
     queryFn: async () => {
       const { data, error } = await supabase
-        .from('forum_threads')
+        .from('forum_threads' as any)
         .select('*')
         .eq('id', id)
         .single();
       if (error) throw error;
-      return data as ForumThread;
+      return data as unknown as ForumThread;
     },
     enabled: !!id,
   });
@@ -58,12 +58,12 @@ export default function ThreadDetail() {
     queryKey: ['forum-replies', id],
     queryFn: async () => {
       const { data, error } = await supabase
-        .from('forum_replies')
+        .from('forum_replies' as any)
         .select('*')
         .eq('thread_id', id)
         .order('created_at', { ascending: true });
       if (error) throw error;
-      return data as ForumReply[];
+      return data as unknown as ForumReply[];
     },
     enabled: !!id,
   });
@@ -71,7 +71,7 @@ export default function ThreadDetail() {
   const postReply = useMutation({
     mutationFn: async (body: string) => {
       if (!user) throw new Error('Not logged in');
-      const { error } = await supabase.from('forum_replies').insert({
+      const { error } = await supabase.from('forum_replies' as any).insert({
         thread_id: id,
         body,
         user_id: user.id,
@@ -135,7 +135,7 @@ export default function ThreadDetail() {
 
   return (
     <>
-      <SEOHead title={`${thread.title} — TekSure Forum`} description={thread.body.slice(0, 150)} />
+      <SEOHead title={`${thread.title} — TekSure Forum`} description={thread.body.slice(0, 150)} path={`/forum/${thread.id}`} />
       <Navbar />
 
       <main className="min-h-screen bg-background">

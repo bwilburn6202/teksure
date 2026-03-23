@@ -51,7 +51,7 @@ export default function ForumIndex() {
     queryKey: ['forum-threads', activeCategory],
     queryFn: async () => {
       let query = supabase
-        .from('forum_threads')
+        .from('forum_threads' as any)
         .select('*')
         .order('updated_at', { ascending: false });
 
@@ -61,7 +61,7 @@ export default function ForumIndex() {
 
       const { data, error } = await query;
       if (error) throw error;
-      return data as ForumThread[];
+      return data as unknown as ForumThread[];
     },
   });
 
@@ -78,6 +78,7 @@ export default function ForumIndex() {
       <SEOHead
         title="Community Forum — TekSure"
         description="Ask questions, share tips, and get help from the TekSure community. No question is too simple!"
+      path="/forum"
       />
       <Navbar />
 

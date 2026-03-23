@@ -208,7 +208,7 @@ export default function Blog() {
   if (detailPost) {
     return (
       <>
-        <SEOHead title={`${detailPost.title} — TekSure Blog`} description={detailPost.excerpt} />
+        <SEOHead title={`${detailPost.title} — TekSure Blog`} description={detailPost.excerpt} path={`/blog/${detailPost.slug}`} />
         <Navbar />
         <main className="min-h-screen bg-background">
           <PostDetail post={detailPost} />
@@ -227,6 +227,7 @@ export default function Blog() {
       <SEOHead
         title="Tech Blog for Beginners — TekSure"
         description="Simple, jargon-free articles about technology, security, and staying safe online. Written for everyone."
+        path="/blog"
       />
       <Navbar />
 
