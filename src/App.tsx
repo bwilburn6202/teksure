@@ -13,6 +13,7 @@ import TechHealthQuiz from "./pages/tools/TechHealthQuiz";
 import StorageCleanup from "./pages/tools/StorageCleanup";
 import VpnGuide from "./pages/tools/VpnGuide";
 import AppPermissions from "./pages/tools/AppPermissions";
+import TwoFactorSetup from "./pages/tools/TwoFactorSetup";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -142,6 +143,7 @@ const AppContent = () => {
         <Route path="/tools/storage-cleanup" element={<StorageCleanup />} />
         <Route path="/tools/vpn-guide" element={<VpnGuide />} />
         <Route path="/tools/app-permissions" element={<AppPermissions />} />
+        <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />

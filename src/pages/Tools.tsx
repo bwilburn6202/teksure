@@ -9,7 +9,7 @@ import {
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
   MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
   Bluetooth, ClipboardCheck, Trash2,
-  ShieldHalf, Sliders,
+  ShieldHalf, Sliders, KeySquare,
 } from 'lucide-react';
 
 const tools = [
@@ -99,6 +99,14 @@ const tools = [
     icon: Sliders,
     path: '/tools/app-permissions',
     color: 'text-rose-500',
+    badge: 'New',
+  },
+  {
+    title: '2FA Setup Wizard',
+    description: 'Set up two-factor authentication on Google, Apple, Facebook, Amazon, and your bank — the single most powerful thing you can do for account security.',
+    icon: KeySquare,
+    path: '/tools/two-factor-setup',
+    color: 'text-indigo-600',
     badge: 'New',
   },
   {
