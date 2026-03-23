@@ -34,7 +34,11 @@ export function Navbar() {
         { to: '/guides', label: 'Guides' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/tips', label: 'Tips' },
+        { to: '/blog', label: 'Blog' },
+        { to: '/webinars', label: 'Webinars' },
+        { to: '/news', label: 'Tech News' },
         { to: '/forum', label: 'Community Forum' },
+        { to: '/community/ambassadors', label: 'Ambassadors' },
         { to: '/favorites', label: 'Favorites' },
       ],
     },
@@ -58,6 +62,7 @@ export function Navbar() {
       label: 'About',
       icon: Info,
       links: [
+        { to: '/technicians', label: 'Our Technicians' },
         { to: '/pricing', label: 'Pricing' },
         { to: '/about', label: 'About' },
         { to: '/roadmap', label: 'Roadmap' },
@@ -128,6 +133,7 @@ export function Navbar() {
       <>
         <Link to={dashboardPath} className={linkClass}>Dashboard</Link>
         <Link to="/guides" className={linkClass}>Guides</Link>
+        <Link to="/news" className={linkClass}>News</Link>
         <Link to="/forum" className={linkClass}>Forum</Link>
         <Link to="/my-requests" className={linkClass}>My Requests</Link>
         <Link to="/get-help" className={linkClass}>Get Help</Link>

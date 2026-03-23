@@ -7,9 +7,50 @@ import { Badge } from '@/components/ui/badge';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
+  MailCheck, Eye, Lock, ShieldAlert, WifiOff,
 } from 'lucide-react';
 
 const tools = [
+  {
+    title: 'Phishing URL Scanner',
+    description: 'Paste any suspicious link and find out instantly if it\'s safe, risky, or a known phishing trap — all analysed privately in your browser.',
+    icon: ShieldAlert,
+    path: '/tools/phishing-scanner',
+    color: 'text-red-500',
+    badge: 'New',
+  },
+  {
+    title: 'WiFi Troubleshooter',
+    description: 'Answer a few quick questions and follow a guided step-by-step path to fix your WiFi — no router manual needed.',
+    icon: WifiOff,
+    path: '/tools/wifi-troubleshooter',
+    color: 'text-blue-500',
+    badge: 'New',
+  },
+  {
+    title: 'Cybersecurity Scorecard',
+    description: '13 quick yes/no questions across passwords, devices, network, and email safety. Get a grade and a personalised action plan.',
+    icon: Lock,
+    path: '/tools/cyber-scorecard',
+    color: 'text-violet-600',
+    badge: 'New',
+  },
+  {
+    title: 'Accessibility Check',
+    description: 'Answer 10 questions about your vision, hearing, motor skills, and cognitive preferences — then get tailored device settings to make tech easier.',
+    icon: Eye,
+    path: '/tools/accessibility-check',
+    color: 'text-indigo-500',
+    badge: 'New',
+  },
+  {
+    title: 'Email Inbox Declutter',
+    description: 'A step-by-step guide to unsubscribing, archiving, and organising your Gmail, Outlook, or Apple Mail inbox in under 20 minutes.',
+    icon: MailCheck,
+    path: '/tools/email-declutter',
+    color: 'text-teal-500',
+    badge: 'New',
+  },
   {
     title: 'Interactive Troubleshooter',
     description: 'Answer yes/no questions and get guided step-by-step to the exact fix for WiFi, printers, passwords, phones, and more.',

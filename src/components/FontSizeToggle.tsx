@@ -3,19 +3,21 @@ import { AArrowUp, AArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 
-const SIZES = ['normal', 'large', 'xl'] as const;
+const SIZES = ['normal', 'large', 'xl', 'xxl'] as const;
 type FontSize = typeof SIZES[number];
 
 const LABELS: Record<FontSize, string> = {
   normal: 'Normal',
   large: 'Large',
   xl: 'Extra Large',
+  xxl: 'Large Print',
 };
 
 const CSS_CLASSES: Record<FontSize, string> = {
   normal: '',
   large: 'font-size-large',
   xl: 'font-size-xl',
+  xxl: 'font-size-xxl',
 };
 
 export function FontSizeToggle() {
@@ -26,7 +28,7 @@ export function FontSizeToggle() {
 
   useEffect(() => {
     const html = document.documentElement;
-    html.classList.remove('font-size-large', 'font-size-xl');
+    html.classList.remove('font-size-large', 'font-size-xl', 'font-size-xxl');
     if (CSS_CLASSES[size]) {
       html.classList.add(CSS_CLASSES[size]);
     }
@@ -48,7 +50,7 @@ export function FontSizeToggle() {
           className="h-9 w-9 min-h-0"
           aria-label={`Font size: ${LABELS[size]}. Click to change.`}
         >
-          {size === 'xl' ? (
+          {size === 'xxl' ? (
             <AArrowDown className="h-4 w-4" />
           ) : (
             <AArrowUp className="h-4 w-4" />

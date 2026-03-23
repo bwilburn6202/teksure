@@ -46,6 +46,15 @@ import SafetyCourse from "./pages/tools/SafetyCourse";
 import Setup from "./pages/Setup";
 import AppRecommender from "./pages/tools/AppRecommender";
 import WarrantyChecker from "./pages/tools/WarrantyChecker";
+import EmailDeclutter from "./pages/tools/EmailDeclutter";
+import AccessibilityCheck from "./pages/tools/AccessibilityCheck";
+import CyberScorecard from "./pages/tools/CyberScorecard";
+import Blog from "./pages/Blog";
+import Webinars from "./pages/Webinars";
+import Ambassadors from "./pages/community/Ambassadors";
+import PhishingScanner from "./pages/tools/PhishingScanner";
+import WifiTroubleshooter from "./pages/tools/WifiTroubleshooter";
+import TechnicianProfile from "./pages/TechnicianProfile";
 import Book from "./pages/Book";
 import ForumIndex from "./pages/forum/Index";
 import ThreadDetail from "./pages/forum/ThreadDetail";
@@ -55,6 +64,7 @@ import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
 import MyRequests from "./pages/MyRequests";
 import Profile from "./pages/Profile";
+import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -109,7 +119,19 @@ const AppContent = () => {
         <Route path="/setup" element={<Setup />} />
         <Route path="/tools/app-recommender" element={<AppRecommender />} />
         <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
+        <Route path="/tools/email-declutter" element={<EmailDeclutter />} />
+        <Route path="/tools/accessibility-check" element={<AccessibilityCheck />} />
+        <Route path="/tools/cyber-scorecard" element={<CyberScorecard />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<Blog />} />
+        <Route path="/webinars" element={<Webinars />} />
+        <Route path="/community/ambassadors" element={<Ambassadors />} />
+        <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
+        <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
+        <Route path="/technicians" element={<TechnicianProfile />} />
+        <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/news" element={<News />} />
         <Route path="/forum" element={<ForumIndex />} />
         <Route path="/forum/new" element={<NewThread />} />
         <Route path="/forum/:id" element={<ThreadDetail />} />

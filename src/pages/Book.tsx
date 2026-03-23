@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import {
   Calendar, Clock, Wrench, CheckCircle2, ChevronRight, ArrowRight,
   Wifi, Shield, Monitor, Printer, Smartphone, HelpCircle, Loader2,
-  User, Mail, Phone as PhoneIcon, FileText,
+  User, Mail, Phone as PhoneIcon, FileText, CreditCard, Lock,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -83,7 +83,8 @@ const slide = {
 export default function Book() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const [step, setStep] = useState(0); // 0=service, 1=datetime, 2=details, 3=confirm
+  const [step, setStep] = useState(0); // 0=service, 1=datetime, 2=details, 3=payment, 4=success
+  const [paymentOption, setPaymentOption] = useState<'deposit' | 'day'>('day');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [bookingRef, setBookingRef] = useState('');
@@ -100,7 +101,7 @@ export default function Book() {
   });
 
   const availableDates = getAvailableDates();
-  const progress = ((step) / 3) * 100;
+  const progress = (step / 4) * 100;
 
   const selectedService = services.find(s => s.id === form.serviceType);
   const selectedDate = availableDates.find(d => d.date === form.date);
@@ -147,11 +148,11 @@ export default function Book() {
     }).catch(err => console.warn('Booking email failed (non-fatal):', err));
 
     setBookingRef(data?.id?.slice(0, 8).toUpperCase() ?? 'TEKSURE');
-    setStep(4);
+    setStep(5);
   };
 
-  // Step 4 = success screen
-  if (step === 4) {
+  // Step 5 = success screen
+  if (step === 5) {
     return (
       <>
         <SEOHead title="Booking Confirmed | TekSure" description="Your TekSure booking is confirmed." path="/book" />
@@ -209,8 +210,8 @@ export default function Book() {
         {/* Progress */}
         <div className="mb-8">
           <div className="flex justify-between text-sm text-muted-foreground mb-1">
-            <span>Step {step + 1} of 3</span>
-            <span>{['Choose service', 'Pick a time', 'Your details'][step]}</span>
+            <span>Step {step + 1} of 4</span>
+            <span>{['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}</span>
           </div>
           <Progress value={progress} className="h-2" />
         </div>
@@ -412,11 +413,120 @@ export default function Book() {
               <div className="flex gap-3">
                 <Button variant="ghost" onClick={() => setStep(1)}>← Back</Button>
                 <Button
-                  onClick={handleSubmit}
-                  disabled={submitting}
+                  onClick={() => {
+                    if (!form.name.trim()) { setError('Please enter your name.'); return; }
+                    if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number.'); return; }
+                    setError('');
+                    setStep(3);
+                  }}
                   className="ml-auto gap-2"
                 >
-                  {submitting ? <><Loader2 className="h-4 w-4 animate-spin" /> Booking…</> : <>Confirm Booking <CheckCircle2 className="h-4 w-4" /></>}
+                  Continue to Payment <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+            </motion.div>
+          )}
+
+          {/* ── Step 3: Payment ── */}
+          {step === 3 && (
+            <motion.div key="payment" {...slide}>
+              <h2 className="text-xl font-semibold mb-1">Payment</h2>
+              <p className="text-muted-foreground text-sm mb-5">Choose how you'd like to pay for your technician visit.</p>
+
+              {/* Pricing info */}
+              <Card className="mb-5 bg-muted/30">
+                <CardContent className="p-4">
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Pricing</p>
+                  <div className="flex justify-between text-sm mb-1">
+                    <span>First hour</span><strong>£49</strong>
+                  </div>
+                  <div className="flex justify-between text-sm text-muted-foreground mb-3">
+                    <span>Each additional hour</span><span>£29</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for the time spent — no fix, no charge.</p>
+                </CardContent>
+              </Card>
+
+              {/* Payment options */}
+              <div className="space-y-3 mb-5">
+                <button
+                  onClick={() => setPaymentOption('day')}
+                  className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 transition-all text-left ${paymentOption === 'day' ? 'border-secondary bg-secondary/5' : 'border-border hover:border-secondary/40'}`}
+                >
+                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-secondary' : 'border-border'}`}>
+                    {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-secondary" />}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Pay on the day <span className="text-green-600 font-normal text-xs ml-1">Free to book</span></p>
+                    <p className="text-xs text-muted-foreground mt-0.5">Pay the technician directly after the visit. Cash, card, or bank transfer accepted.</p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => setPaymentOption('deposit')}
+                  className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 transition-all text-left ${paymentOption === 'deposit' ? 'border-secondary bg-secondary/5' : 'border-border hover:border-secondary/40'}`}
+                >
+                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-secondary' : 'border-border'}`}>
+                    {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-secondary" />}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Pay £15 deposit now</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">Secure your booking with a small deposit. The remainder is paid on the day. Fully refundable if you cancel 24+ hours before.</p>
+                  </div>
+                </button>
+              </div>
+
+              {/* Stripe checkout placeholder */}
+              {paymentOption === 'deposit' && (
+                <Card className="mb-5 border-dashed border-secondary/40">
+                  <CardContent className="p-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <CreditCard className="h-4 w-4 text-secondary" />
+                      <p className="text-sm font-medium">Card details</p>
+                      <span className="ml-auto flex items-center gap-1 text-xs text-muted-foreground">
+                        <Lock className="h-3 w-3" /> Secured by Stripe
+                      </span>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-10 rounded-md bg-muted border border-border flex items-center px-3 text-sm text-muted-foreground">
+                        Card number — payment coming soon
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="h-10 rounded-md bg-muted border border-border" />
+                        <div className="h-10 rounded-md bg-muted border border-border" />
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">Online payments will be available soon. Please select "Pay on the day" to complete your booking now.</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Booking summary */}
+              <Card className="mb-5 bg-muted/40">
+                <CardContent className="p-4 text-sm space-y-1">
+                  <p className="font-semibold mb-2">Booking summary</p>
+                  <p>🔧 <strong>{selectedService?.label}</strong></p>
+                  <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
+                  <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
+                  <p>👤 <strong>{form.name}</strong></p>
+                  <p>💳 <strong>{paymentOption === 'deposit' ? 'Deposit £15 now + remainder on day' : 'Pay on the day'}</strong></p>
+                </CardContent>
+              </Card>
+
+              {error && <p className="text-destructive text-sm mb-4">{error}</p>}
+
+              <div className="flex gap-3">
+                <Button variant="ghost" onClick={() => setStep(2)}>← Back</Button>
+                <Button
+                  onClick={handleSubmit}
+                  disabled={submitting || paymentOption === 'deposit'}
+                  className="ml-auto gap-2"
+                >
+                  {submitting
+                    ? <><Loader2 className="h-4 w-4 animate-spin" /> Booking…</>
+                    : paymentOption === 'deposit'
+                    ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit (coming soon)</>
+                    : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
                 </Button>
               </div>
             </motion.div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User, Mail, Shield, Save, Loader2, CheckCircle, ArrowRight, MessageSquare, BookOpen, Trophy } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { User, Mail, Shield, Save, Loader2, CheckCircle, ArrowRight, MessageSquare, BookOpen, Trophy, Map, CheckCircle2, Lock } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -12,7 +13,7 @@ import { Badge } from '@/components/ui/badge';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
 import { evaluateBadges, type Badge as TekBadge } from '@/lib/badges';
-import { getProgressCount } from '@/lib/progress';
+import { getProgressCount, getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
 
 const roleColors: Record<string, string> = {
@@ -37,6 +38,66 @@ export default function Profile() {
   const [badges, setBadges] = useState<TekBadge[]>(() => evaluateBadges());
   const allSlugs = guides.map(g => g.slug);
   const progressStats = getProgressCount(allSlugs);
+
+  // Personalized learning path — curated sequences by experience level
+  const LEARNING_PATHS = [
+    {
+      id: 'beginner',
+      label: '🌱 Beginner Path',
+      description: 'Start with the most important basics',
+      slugs: ['staying-safe-online', 'creating-strong-passwords', 'windows-basics', 'wifi-connection', 'avoiding-scams'],
+    },
+    {
+      id: 'essential',
+      label: '🛡️ Safety Essentials',
+      description: 'Keep yourself safe online',
+      slugs: ['two-factor-auth', 'social-media-safety', 'phishing-emails', 'home-network-security', 'software-updates'],
+    },
+    {
+      id: 'practical',
+      label: '💡 Practical Skills',
+      description: 'Everyday tech you\'ll actually use',
+      slugs: ['video-calls', 'file-management', 'photo-organization', 'email-basics', 'screen-recording'],
+    },
+    {
+      id: 'devices',
+      label: '📱 Devices & Apps',
+      description: 'Get the most from your devices',
+      slugs: ['iphone-basics', 'android-basics', 'smart-home-setup', 'streaming-setup', 'banking-apps'],
+    },
+    {
+      id: 'ai',
+      label: '🤖 AI & Modern Tech',
+      description: 'Stay up to date with AI tools',
+      slugs: ['chatgpt-basics', 'google-ai-tools', 'ai-image-tools', 'ai-safety', 'digital-legacy'],
+    },
+  ];
+
+  const completedGuides = getCompletedGuides();
+  const getBestPath = () => {
+    // Pick the path the user has the least progress on but has started, else beginner
+    let best = LEARNING_PATHS[0];
+    let bestScore = Infinity;
+    for (const path of LEARNING_PATHS) {
+      const validSlugs = path.slugs.filter(s => allSlugs.includes(s));
+      if (validSlugs.length === 0) continue;
+      const done = validSlugs.filter(s => completedGuides.has(s)).length;
+      const pct = done / validSlugs.length;
+      // Prefer paths that are started but not finished
+      if (done > 0 && pct < 1 && pct < bestScore) {
+        bestScore = pct;
+        best = path;
+      }
+    }
+    // If no started paths, return beginner
+    return best;
+  };
+
+  const activePath = getBestPath();
+  const pathGuides = activePath.slugs
+    .map(slug => guides.find(g => g.slug === slug))
+    .filter(Boolean)
+    .slice(0, 5) as typeof guides;
 
   useEffect(() => {
     const refresh = () => setBadges(evaluateBadges());
@@ -197,6 +258,70 @@ export default function Profile() {
                 ? 'Complete your first guide to start tracking progress!'
                 : `${progressStats.total - progressStats.completed} more to go — keep it up!`}
             </p>
+          </CardContent>
+        </Card>
+
+        {/* Personalized Learning Path */}
+        <Card className="mb-6">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Map className="h-4 w-4 text-primary" />
+              Your Learning Path
+            </CardTitle>
+            <p className="text-xs text-muted-foreground mt-0.5">{activePath.label} — {activePath.description}</p>
+          </CardHeader>
+          <CardContent className="pb-5">
+            <div className="space-y-2">
+              {pathGuides.map((guide, index) => {
+                const done = completedGuides.has(guide.slug);
+                const prevDone = index === 0 || completedGuides.has(pathGuides[index - 1]?.slug ?? '');
+                const isNext = !done && prevDone;
+                return (
+                  <Link
+                    key={guide.slug}
+                    to={`/guides/${guide.slug}`}
+                    className={`flex items-center gap-3 p-3 rounded-lg border transition-all ${
+                      done
+                        ? 'border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20'
+                        : isNext
+                        ? 'border-primary/40 bg-primary/5 hover:bg-primary/10'
+                        : 'border-border bg-muted/30 hover:bg-muted/50'
+                    }`}
+                  >
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
+                      done ? 'bg-green-100 dark:bg-green-900' : isNext ? 'bg-primary/10' : 'bg-muted'
+                    }`}>
+                      {done
+                        ? <CheckCircle2 className="h-4 w-4 text-green-600" />
+                        : isNext
+                        ? <span className="text-sm font-bold text-primary">{index + 1}</span>
+                        : <Lock className="h-3.5 w-3.5 text-muted-foreground" />
+                      }
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className={`text-sm font-medium leading-tight truncate ${done ? 'line-through text-muted-foreground' : ''}`}>
+                        {guide.emoji} {guide.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground truncate">{guide.description}</p>
+                    </div>
+                    {isNext && (
+                      <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">Next up</span>
+                    )}
+                    {done && (
+                      <span className="text-xs text-green-600 shrink-0">Done ✓</span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="mt-3 w-full text-xs text-muted-foreground"
+              onClick={() => navigate('/guides')}
+            >
+              Browse all guides <ArrowRight className="h-3 w-3 ml-1" />
+            </Button>
           </CardContent>
         </Card>
 

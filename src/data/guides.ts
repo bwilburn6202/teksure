@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'safety-guides' | 'how-to';
 
 export interface GuideStep {
   title: string;
@@ -29,6 +29,8 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'essential-skills': 'Essential Skills',
   'tips-tricks': 'Tips & Tricks',
   'ai-guides': 'AI Guides',
+  'safety-guides': 'Safety & Privacy',
+  'how-to': 'How-To Guides',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -37,6 +39,8 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'essential-skills': 'Universal digital literacy skills for any device or platform',
   'tips-tricks': 'Quick tips, shortcuts, and productivity hacks across all platforms',
   'ai-guides': 'Learn how to use AI tools, chatbots, and smart assistants to boost your productivity',
+  'safety-guides': 'Stay safe online — protect your accounts, privacy, and personal information',
+  'how-to': 'Step-by-step guides for everyday tasks on any device',
 };
 
 export const guides: Guide[] = [
@@ -3622,6 +3626,516 @@ export const guides: Guide[] = [
       { title: 'Hit the message limit', content: 'Free tiers have limits. Workaround: switch between ChatGPT, Gemini, Claude, and Copilot to spread usage across free tiers.' },
       { title: 'AI refuses to help', content: 'Rephrase your request. AI has safety filters that sometimes trigger on legitimate requests. Clarify your intent and explain why you need the information.' },
       { title: 'Outdated information', content: 'Most AI models have training cutoffs. For current info, use Gemini (web-connected), Perplexity, or ChatGPT with browsing enabled.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // SAFETY & PRIVACY GUIDES
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'home-network-security',
+    title: 'How to Secure Your Home Wi-Fi Network',
+    excerpt: 'Simple steps to lock down your home router, keep strangers off your network, and protect every device in your house.',
+    category: 'safety-guides',
+    tags: ['security', 'wifi', 'router', 'network', 'privacy'],
+    readTime: '8 min',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Change the default router password',
+        content: 'Open a browser and type 192.168.1.1 (or 192.168.0.1) into the address bar. Log in with your router\'s default credentials (usually printed on the label underneath the router — often "admin" / "admin" or "admin" / "password"). Once in, find "Administration" or "Advanced Settings" and change the password to something only you know.',
+        tip: 'Use a password that\'s at least 12 characters and different from your Wi-Fi password. Write it on the router label once you\'ve changed it.',
+        warning: 'The default username and password are public knowledge — anyone on your network could access your router settings if you haven\'t changed them.',
+      },
+      {
+        title: 'Change your Wi-Fi network name (SSID)',
+        content: 'In your router settings, find "Wireless" or "Wi-Fi". Change the network name (called the SSID) to something that doesn\'t identify you — avoid using your name, address, or "Home Network". A neutral name like "Bluebell" or "Network42" is perfect.',
+        tip: 'Avoid names like "John\'s House" or "24 Oak Street" — these tell strangers exactly where the network is.',
+      },
+      {
+        title: 'Use WPA3 or WPA2 encryption',
+        content: 'Still in the Wireless settings, look for "Security Type" or "Encryption". Select WPA3 if available. If not, choose WPA2-PSK (AES). Avoid WEP or WPA — these are old and easy to crack. Save your settings.',
+        tip: 'WPA3 is the newest and strongest. Most routers from 2019 onwards support it.',
+      },
+      {
+        title: 'Set a strong Wi-Fi password',
+        content: 'Change your Wi-Fi password to something long and memorable — 15+ characters works well. A short phrase like "PurpleSunset2024!" is both strong and easy to remember. Update all your devices with the new password after saving.',
+        tip: 'Once you\'ve set it, take a photo of the password on your phone so you can share it easily with guests.',
+      },
+      {
+        title: 'Set up a Guest Network for visitors',
+        content: 'Most modern routers have a "Guest Network" option. Enable it and give it a separate password. When friends or repairmen visit, give them the guest password — not your main one. Guest networks are isolated, so visitors can\'t see your computers or smart home devices.',
+        screenshotDesc: 'Router admin panel showing Guest Network toggle switched on, with separate SSID and password fields.',
+      },
+      {
+        title: 'Check who\'s connected to your network',
+        content: 'In your router admin panel, look for "Connected Devices", "DHCP Clients", or "Device List". You should recognise every device listed. If you see something unfamiliar, change your Wi-Fi password immediately.',
+        tip: 'Run this check every few months. Most routers show the device name and type, making it easy to spot anything suspicious.',
+      },
+      {
+        title: 'Keep your router firmware updated',
+        content: 'Router manufacturers release security updates (called firmware). In your router admin panel, look for "Firmware Update" or "Software Update" under Advanced settings. Many modern routers can update automatically — enable this if available.',
+        tip: 'An outdated router is one of the most common ways homes get hacked. This 2-minute check is worth doing every 6 months.',
+      },
+    ],
+  },
+
+  {
+    slug: 'two-factor-auth',
+    title: 'Setting Up Two-Factor Authentication (2FA) on Any Account',
+    excerpt: 'Add a second layer of security to your most important accounts. This one change stops most account takeovers cold.',
+    category: 'safety-guides',
+    tags: ['security', '2fa', 'authentication', 'accounts', 'passwords'],
+    readTime: '7 min',
+    thumbnailEmoji: '🔑',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What is two-factor authentication?',
+        content: 'Two-factor authentication (2FA) means you need two things to log in: your password AND a second code. Even if someone steals your password, they still can\'t get into your account without that second code. It\'s like a deadbolt in addition to a normal door lock.',
+        tip: 'Enable 2FA on your email, bank, and social media accounts first — these are the most valuable to protect.',
+      },
+      {
+        title: 'Option 1: SMS (text message) codes',
+        content: 'The simplest option. When you log in, the site sends a 6-digit code to your phone by text message. You enter it to complete login. To set this up: go to the account\'s Security Settings, find "Two-Factor Authentication" or "Login Verification", choose "Text Message", and enter your phone number.',
+        tip: 'SMS codes are convenient and much better than no 2FA — but if you can, use an authenticator app (see below) for even stronger protection.',
+      },
+      {
+        title: 'Option 2: Authenticator app (recommended)',
+        content: 'An authenticator app generates a fresh 6-digit code every 30 seconds without needing a mobile signal. Download Google Authenticator or Microsoft Authenticator (both free) from the App Store or Google Play. Then in your account\'s 2FA settings, choose "Authenticator App" — you\'ll be shown a QR code to scan with the app.',
+        tip: 'Google Authenticator and Microsoft Authenticator both work on iPhone and Android. Many people find Microsoft Authenticator slightly easier as it includes cloud backup.',
+        screenshotDesc: 'Smartphone screen showing Google Authenticator app with two account entries, each displaying a 6-digit code with a countdown circle showing seconds remaining.',
+      },
+      {
+        title: 'Setting up 2FA on Gmail / Google',
+        content: 'Go to myaccount.google.com → Security → 2-Step Verification → Get Started. Choose your preferred method (Google prompt on your phone is the easiest). Follow the on-screen steps. Once set up, you\'ll get a prompt on your phone whenever someone tries to log into your Google account.',
+        screenshotDesc: 'Google Account Security page showing 2-Step Verification section with status showing "On" and a green checkmark.',
+      },
+      {
+        title: 'Setting up 2FA on Facebook / Instagram',
+        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu (☰) → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.',
+      },
+      {
+        title: 'Save your backup codes',
+        content: 'When you set up 2FA, most services give you a set of one-time backup codes. These let you get back into your account if you lose your phone. Download and print these — store them somewhere safe like a locked drawer. Do not save them on your phone.',
+        warning: 'If you lose your phone AND your backup codes, getting back into an account with 2FA can be very difficult. Always save backup codes.',
+      },
+    ],
+  },
+
+  {
+    slug: 'social-media-safety',
+    title: 'Staying Safe on Social Media',
+    excerpt: 'How to protect your privacy on Facebook and Instagram, spot fake accounts, and avoid the most common social media traps.',
+    category: 'safety-guides',
+    tags: ['security', 'privacy', 'social', 'facebook', 'instagram'],
+    readTime: '8 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Lock down your Facebook privacy settings',
+        content: 'On Facebook: tap your profile photo → Settings → Privacy. Set "Who can see your future posts?" to Friends. Set "Who can send you friend requests?" to Friends of Friends. Set "Who can look you up using your email?" to Friends. These three changes alone dramatically reduce how much strangers can see about you.',
+        screenshotDesc: 'Facebook Privacy Settings screen on mobile, showing the three key options with "Friends" selected for each.',
+        tip: 'Do this check every 6 months — Facebook occasionally resets privacy settings after updates.',
+      },
+      {
+        title: 'Review your Instagram account settings',
+        content: 'On Instagram: Profile → Menu (☰) → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you\'ll want to keep it public — but make sure your personal account is private.',
+      },
+      {
+        title: 'Be careful what you share publicly',
+        content: 'Avoid posting: your home address, phone number, or email; your daily routine or "I\'m away on holiday" posts (these tell burglars you\'re not home); full birthday including year (this is used for identity theft); photos of financial documents, passports, or tickets.',
+        warning: 'Posting "off on holiday for two weeks!" is essentially advertising to the entire internet that your home is unoccupied.',
+      },
+      {
+        title: 'Spot and avoid fake profiles',
+        content: 'Fake profiles often: have very few posts or photos; use stock photo profile pictures (do a reverse image search using Google Images to check); send friend requests without mutual friends; quickly ask for money, gift cards, or personal information. If something feels off, trust that feeling.',
+        tip: 'If you get a friend request from someone you think you\'re already friends with, check — scammers often clone real accounts.',
+      },
+      {
+        title: 'Beware of "too good to be true" posts',
+        content: 'Scams on social media often look like: competitions you didn\'t enter; celebrity giveaways; shocking news stories asking you to click a link; requests to share a post to "win" something. Legitimate competitions don\'t ask you to share posts to enter.',
+        warning: 'If you\'re asked to click a link in a social media message — even from a friend — be very cautious. Their account may have been hacked.',
+      },
+      {
+        title: 'How to report suspicious accounts',
+        content: 'On Facebook: go to the profile → tap the three dots (···) → Find Support or Report. On Instagram: tap the three dots on a post or profile → Report. Both platforms take reports seriously and act quickly on fake accounts and scams.',
+        tip: 'Reporting fake accounts doesn\'t just protect you — it protects everyone else that account might target next.',
+      },
+    ],
+  },
+
+  {
+    slug: 'banking-apps',
+    title: 'Using Your Bank\'s App Safely',
+    excerpt: 'How to download your bank\'s app, set up Face ID login, check your balance, and spot fake banking apps before they steal your money.',
+    category: 'safety-guides',
+    tags: ['banking', 'security', 'finance', 'apps', 'face-id'],
+    readTime: '7 min',
+    thumbnailEmoji: '🏦',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Download the official app — from the official source',
+        content: 'Only download your bank\'s app from the App Store (iPhone) or Google Play Store (Android). Search for your bank\'s name and look for the official listing — it should have thousands of reviews and show the bank\'s real website as the developer. Never install a banking app from a link in an email or text message.',
+        warning: 'Fake banking apps exist on both app stores. If reviews are few or mostly negative, or the developer name looks odd, do not install it.',
+        screenshotDesc: 'App Store search results for a bank, with the official bank app highlighted showing "Verified" badge and the bank\'s official website URL as the developer.',
+      },
+      {
+        title: 'Set up Face ID or fingerprint login',
+        content: 'Once installed and logged in, go to the app\'s Settings and look for "Biometric Login", "Face ID", or "Touch ID". Enable it. This means you can log in by just looking at your phone or pressing your finger — no typing your password every time.',
+        tip: 'Biometric login is actually more secure than typing a password in public where someone could watch over your shoulder.',
+      },
+      {
+        title: 'Check your balance and transactions',
+        content: 'Your home screen in the app should show your account balance and recent transactions. Tap any transaction to see more detail. Get into the habit of checking once a week — the sooner you spot an unfamiliar charge, the sooner you can report it.',
+        tip: 'Enable push notifications for transactions. You\'ll get an instant alert every time money leaves your account.',
+      },
+      {
+        title: 'Pay bills and set up payments',
+        content: 'Most banking apps let you pay bills, transfer money, and set up standing orders. Look for "Payments" or "Transfer". You\'ll need the recipient\'s sort code and account number (in the UK) or routing/account number (in the US). Always double-check these before sending.',
+        warning: 'Never send money to someone you haven\'t met in person, even if they claim to be from your bank, HMRC/IRS, or a well-known company.',
+      },
+      {
+        title: 'Spot fake banking apps',
+        content: 'Signs of a fake banking app: it asks for your full card number and PIN on first setup (real apps never need your PIN); it has spelling mistakes or a slightly wrong bank name; it was found via a link rather than searching the official app store; reviews mention money going missing.',
+        warning: 'If you\'ve accidentally installed a fake app and entered your details, call your bank immediately using the number on the back of your card.',
+      },
+      {
+        title: 'Log out when you\'re done',
+        content: 'Get into the habit of logging out of your banking app when you\'ve finished. If your phone is lost or stolen while you\'re logged in, someone could access your account. Most apps have a logout button in Settings or the main menu.',
+        tip: 'Set your phone to lock automatically after 30 seconds or 1 minute of inactivity — this adds an important extra layer of protection.',
+      },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // HOW-TO GUIDES
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'software-updates',
+    title: 'How (and Why) to Keep Your Devices Updated',
+    excerpt: 'A plain-English guide to updating Windows, macOS, iPhone, Android, and your browser — and why skipping updates is risky.',
+    category: 'how-to',
+    tags: ['updates', 'security', 'windows', 'mac', 'iphone', 'android'],
+    readTime: '7 min',
+    thumbnailEmoji: '⬆️',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Why updates matter',
+        content: 'Every update fixes security holes that hackers exploit. Think of it like a lock manufacturer sending you a better lock for free — refusing the update leaves the old, weaker lock on your door. Most successful phone and computer hacks target people running old software. Staying updated is the single most effective thing you can do for digital safety.',
+        tip: 'Updates also bring new features and fix annoying bugs — so there\'s really no downside.',
+      },
+      {
+        title: 'Update Windows',
+        content: 'Click the Start menu → Settings (⚙️) → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.',
+        tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.',
+        screenshotDesc: 'Windows Update settings page showing "You\'re up to date" with a green checkmark and the "Check for updates" button.',
+      },
+      {
+        title: 'Update macOS',
+        content: 'Click the Apple menu (🍎) in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.',
+        tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.',
+      },
+      {
+        title: 'Update your iPhone',
+        content: 'Go to Settings → General → Software Update. If an update is available, tap "Download and Install". Make sure your iPhone is plugged in and on Wi-Fi first — updates can be large. Updates install while you sleep if you have automatic updates enabled.',
+        tip: 'To turn on automatic updates: Settings → General → Software Update → Automatic Updates → toggle on.',
+      },
+      {
+        title: 'Update Android',
+        content: 'The exact steps vary by phone maker, but generally: Settings → About Phone → Software Update → Check for Updates. On Samsung: Settings → Software Update → Download and Install.',
+        screenshotDesc: 'Android Settings screen showing "Software Update" option with a blue download icon and "Latest updates downloaded" status.',
+      },
+      {
+        title: 'Update your browser (Chrome, Edge, Safari, Firefox)',
+        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu (☰) → Help → About Firefox.',
+        tip: 'A coloured dot or arrow next to the browser menu usually means an update is waiting. Don\'t ignore it — browsers are a primary target for hackers.',
+      },
+      {
+        title: 'Set up automatic updates everywhere',
+        content: 'The easiest approach: turn on automatic updates on every device and browser. You\'ll be prompted to restart when needed, but you won\'t have to remember to check manually. Most updates download overnight and only ask for a restart in the morning.',
+        tip: 'Schedule restarts for a time that works for you — both Windows and macOS let you set "Active Hours" so it won\'t restart mid-video call.',
+      },
+    ],
+  },
+
+  {
+    slug: 'streaming-setup',
+    title: 'How to Set Up Netflix, YouTube, and Streaming Apps on Your TV',
+    excerpt: 'Step-by-step guide to watching Netflix, YouTube, BBC iPlayer, and more on your Smart TV, Apple TV, Fire Stick, or Chromecast.',
+    category: 'how-to',
+    tags: ['streaming', 'netflix', 'youtube', 'tv', 'smart-tv', 'firestick', 'chromecast'],
+    readTime: '8 min',
+    thumbnailEmoji: '📺',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What you need before starting',
+        content: 'You\'ll need: a TV connected to the internet (either a Smart TV, or a TV with a streaming device plugged in), your Wi-Fi password, and an account with the streaming service (e.g. Netflix account). If your TV doesn\'t have Wi-Fi built in, a £30–£40 device like a Fire Stick or Chromecast will add that ability.',
+      },
+      {
+        title: 'Setting up on a Smart TV',
+        content: 'Press the Home button on your remote. Look for an app store (Samsung has "Smart Hub", LG has "LG Content Store", Sony has "Google Play"). Search for the app you want (e.g. Netflix) → Install → Open → Sign in with your account details.',
+        tip: 'If you can\'t find the app store on your TV, look in the manual or search "[your TV brand] how to install Netflix" — the exact steps vary by brand.',
+        screenshotDesc: 'Samsung Smart TV home screen showing the app row at the bottom with Netflix, YouTube, Prime Video, and Disney+ visible.',
+      },
+      {
+        title: 'Setting up on an Amazon Fire Stick',
+        content: 'Plug the Fire Stick into your TV\'s HDMI port, plug in the USB power cable, and switch your TV to that HDMI input. Follow the on-screen setup to connect to Wi-Fi and sign in with your Amazon account. Then go to the Home screen and search for any streaming app to install it.',
+        tip: 'Fire Sticks come with Alexa — you can say "Alexa, open Netflix" or "Alexa, play The Crown" without pressing any buttons.',
+      },
+      {
+        title: 'Setting up on a Chromecast',
+        content: 'Plug the Chromecast into your TV\'s HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (📡), and it plays on the TV.',
+      },
+      {
+        title: 'Setting up on Apple TV',
+        content: 'Connect Apple TV to your TV with the included HDMI cable and plug in the power. Use the remote to connect to Wi-Fi and sign in with your Apple ID. The App Store is built in — search for any streaming service and download it. Apple TV also works with Siri: say "Hey Siri, open Netflix".',
+        tip: 'If you have an iPhone, you can use it to automatically transfer your Wi-Fi password to Apple TV during setup — no typing required.',
+      },
+      {
+        title: 'Troubleshooting: if streaming is slow or buffering',
+        content: 'Try these fixes in order: (1) Move your router closer to the TV or use an ethernet cable. (2) Restart the TV/streaming device and router. (3) Lower the video quality in the app\'s settings (e.g. change from 4K to HD). (4) Check if another device is using lots of internet bandwidth (e.g. someone downloading a big file).',
+        tip: 'If you often get buffering, your internet connection might not be fast enough for 4K. Standard HD (1080p) uses much less data and looks great on most TVs.',
+      },
+    ],
+  },
+
+  {
+    slug: 'screen-recording',
+    title: 'How to Record Your Screen',
+    excerpt: 'Capture what\'s happening on your screen — great for showing a tech problem, creating a tutorial, or saving a video call moment.',
+    category: 'how-to',
+    tags: ['screen', 'recording', 'windows', 'mac', 'iphone', 'android', 'how-to'],
+    readTime: '6 min',
+    thumbnailEmoji: '🎥',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'When is screen recording useful?',
+        content: 'Screen recording is great for: showing a tech problem to someone helping you remotely (so they can see exactly what\'s happening); recording a video tutorial to help someone else; saving part of a video call that you want to keep; recording something on screen that you can\'t otherwise save.',
+        tip: 'If you\'re going to show your screen to tech support, be aware it will capture everything visible — close any private tabs or documents first.',
+      },
+      {
+        title: 'Screen recording on Windows (Xbox Game Bar)',
+        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button (⏺) or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
+        screenshotDesc: 'Windows desktop with the Xbox Game Bar overlay open at the top, showing the record button and timer displaying 00:00.',
+        tip: 'The Xbox Game Bar doesn\'t record the desktop itself — only active app windows. For full desktop recording, use the free app OBS Studio or the Snipping Tool in Windows 11.',
+      },
+      {
+        title: 'Screen recording on Windows 11 (Snipping Tool)',
+        content: 'Windows 11 includes a screen recorder in the updated Snipping Tool. Open the Start menu → search "Snipping Tool" → click the video camera icon → select the area you want to record → press Start. Stop with the stop button.',
+      },
+      {
+        title: 'Screen recording on Mac',
+        content: 'Press Command (⌘) + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
+        screenshotDesc: 'Mac screen with the screenshot/recording toolbar at the bottom showing icons for screenshot types and the Record Screen options, with a cursor over the Record button.',
+        tip: 'Your Mac recording saves to the Desktop automatically as a .mov file.',
+      },
+      {
+        title: 'Screen recording on iPhone',
+        content: 'First, add it to Control Centre: Settings → Control Centre → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Centre → tap the screen record button (⏺ in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.',
+        screenshotDesc: 'iPhone Control Centre showing the Screen Recording button (circle with a filled dot inside) with a brief red recording indicator visible in the status bar.',
+      },
+      {
+        title: 'Screen recording on Android',
+        content: 'Swipe down from the top of the screen to open Quick Settings. Look for "Screen Recorder" or "Screen Record". If it\'s not visible, swipe down again to see more options, or tap the pencil/edit icon to add it. Tap it to start — a countdown begins and recording starts. Tap the notification or the stop button to finish.',
+        tip: 'The recording saves to your phone\'s Gallery or Files app under "Movies" or "Screen Recordings".',
+      },
+    ],
+  },
+
+  {
+    slug: 'file-management',
+    title: 'File Management 101: Organising Your Documents and Downloads',
+    excerpt: 'A beginner\'s guide to creating folders, moving files, naming things sensibly, and finally finding what you\'re looking for.',
+    category: 'how-to',
+    tags: ['files', 'windows', 'mac', 'folders', 'organisation', 'documents'],
+    readTime: '8 min',
+    thumbnailEmoji: '📁',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Understanding where your files live',
+        content: 'Your computer has a few default folders you should know: Documents (for letters, forms, spreadsheets), Downloads (where files from the internet land), Desktop (visible when no windows are open — not the best for long-term storage), and Pictures (photos and images). Think of these as the main rooms in your house.',
+        tip: 'The Desktop should be like your physical desk — put things there temporarily while working on them, then file them away. A cluttered desktop slows down your computer and makes it hard to find anything.',
+      },
+      {
+        title: 'Create a folder',
+        content: 'Windows: Open File Explorer (folder icon in the taskbar) → navigate to Documents → right-click in an empty space → New → Folder → type a name → press Enter. Mac: Open Finder → go to Documents → right-click (or Control-click) → New Folder → type a name → press Return.',
+        screenshotDesc: 'Windows File Explorer showing the Documents folder with a right-click context menu open, highlighting "New" and "Folder" options.',
+        tip: 'Create folders for your main life areas: "Bills & Finance", "Health & Medical", "Photos", "Recipes", "Work". Start simple.',
+      },
+      {
+        title: 'Move a file into a folder',
+        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. Or simply drag-and-drop between two open windows. Mac: Same process but use Command (⌘) + X to cut, Command + V to paste. Or drag-and-drop while holding Command.',
+        tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.',
+      },
+      {
+        title: 'Name files sensibly',
+        content: 'Good file names make files findable years later. Instead of "scan001.pdf", use "NHS Appointment Letter Jan 2026.pdf". Include: what it is, who or what it relates to, and the date. Avoid: spaces (use hyphens or underscores instead), symbols like / \\ * ? and very long names.',
+        tip: 'Dates in YYYY-MM-DD format (e.g. 2026-03-15) sort in the correct order when you list files by name.',
+      },
+      {
+        title: 'Sort and search for files',
+        content: 'In File Explorer (Windows) or Finder (Mac), you can sort files by name, date, or size — click the column header. To search: press Ctrl+F (Windows) or Command+Space (Mac Spotlight) and type part of the file name. Spotlight on Mac is especially powerful — it searches inside documents too.',
+        screenshotDesc: 'Windows File Explorer showing the Documents folder with files sorted by "Date modified" (newest first), with column headers visible.',
+      },
+      {
+        title: 'Tame your Downloads folder',
+        content: 'Your Downloads folder collects everything from the internet and grows enormous over time. Once a month: open Downloads → sort by Date → delete anything you no longer need (right-click → Delete) → move useful files to the right folder. A clean Downloads folder makes your whole computer feel less cluttered.',
+        warning: 'Don\'t delete anything from Downloads until you\'re sure you don\'t need it or have a copy saved elsewhere.',
+      },
+    ],
+  },
+
+  {
+    slug: 'smart-home-setup',
+    title: 'Getting Started with Smart Home Devices',
+    excerpt: 'A friendly introduction to smart bulbs, plugs, speakers, and doorbells — what they are, how to set them up, and how to control them with your voice.',
+    category: 'how-to',
+    tags: ['smart-home', 'wifi', 'alexa', 'google-home', 'smart-bulbs', 'beginner'],
+    readTime: '9 min',
+    thumbnailEmoji: '🏠',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What is a "smart home"?',
+        content: 'Smart home devices are everyday items — lights, plugs, doorbells — that connect to your Wi-Fi so you can control them with your phone or voice. You can turn lights on remotely, set schedules ("turn off all lights at 10pm"), or ask your smart speaker to do it for you. You don\'t need a tech degree — most devices set up in under 10 minutes.',
+        tip: 'A good first smart home device is a smart plug (around £10). Plug it in, connect it to Wi-Fi, and suddenly any lamp or appliance becomes "smart" — controllable by voice or phone.',
+      },
+      {
+        title: 'Choose your smart home ecosystem',
+        content: 'Most smart devices work with Amazon Alexa, Google Home, or Apple HomeKit. Pick one and stick to it. If you\'re an iPhone user, Apple HomeKit is nicely integrated. If you have Amazon Echo speakers, Alexa makes sense. Google Home works well with Android phones. Check which system a device supports before buying.',
+        tip: 'Amazon\'s Echo Dot is often on sale for under £25 and is a great entry point for smart home control.',
+      },
+      {
+        title: 'Setting up a smart bulb',
+        content: 'Screw the smart bulb in like a normal bulb. Download the manufacturer\'s app (e.g. Philips Hue, LIFX, or TP-Link Tapo). Open the app → Add Device → follow the instructions to connect to your Wi-Fi (you\'ll need your Wi-Fi password). Once connected, you can control it from the app. You can also link it to Alexa or Google Home for voice control.',
+        screenshotDesc: 'Smartphone showing a smart home app with a bright room illustration, dimmer slider, and colour wheel for changing bulb colour.',
+        warning: 'Smart bulbs need the wall switch to stay ON at all times. If the switch is turned off, the bulb loses power and you can\'t control it. Put a small label on the switch reminding the household not to use it.',
+      },
+      {
+        title: 'Linking devices to Alexa or Google Home',
+        content: 'Open the Alexa app → Devices → + (Add) → Add Device → choose the brand. Or in Google Home: + → Set up device → Works with Google → search for the brand. Follow the steps to link your account. Once linked, you can say "Alexa, turn off the living room light" or "Hey Google, set the bedroom to 50%".',
+        tip: 'Give devices simple names — "living room lamp" is much easier to say than "Philips bulb A1".',
+      },
+      {
+        title: 'Set up routines and schedules',
+        content: 'Routines are where smart homes really shine. Examples: "Goodnight" routine — locks the door, turns off all lights, sets the thermostat. Morning routine — turns on kitchen lights at 7am. Away schedule — turns lights on/off at realistic times while you\'re on holiday. Set these up in the Alexa or Google Home app under Routines.',
+      },
+      {
+        title: 'Security tips for smart home devices',
+        content: 'Change the default username and password on any device that has one (especially cameras and doorbells). Keep device firmware updated — most apps notify you when updates are available. Put smart devices on your Guest Wi-Fi network rather than your main one, so they\'re separated from your computers and phones.',
+        tip: 'Smart doorbells and cameras that use cloud storage do store footage on company servers — read the privacy policy and set footage retention to the shortest period that works for you.',
+      },
+    ],
+  },
+
+  {
+    slug: 'photo-organization',
+    title: 'Organising Your Photos: A Simple Guide',
+    excerpt: 'How to sort, label, and back up your photos on iPhone, Android, and PC — so you can actually find them when you want them.',
+    category: 'how-to',
+    tags: ['photos', 'organisation', 'google-photos', 'icloud', 'iphone', 'android', 'windows'],
+    readTime: '8 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Use Google Photos (the easiest option for most people)',
+        content: 'Google Photos (free on iPhone and Android) automatically organises your photos by date and can recognise people and places. Download it from the App Store or Google Play → sign in with your Google account → allow it to back up your photos. After the initial backup, all your photos are searchable — just type "beach 2024" or "Christmas" and it finds them.',
+        tip: 'Google Photos\' free storage limit is 15GB. If you\'re over that, consider Google One (£1.59/month for 100GB) or regularly delete blurry or duplicate photos.',
+        screenshotDesc: 'Google Photos app showing a grid of photos automatically grouped by year and month, with a search bar at the top showing suggested searches like "London" and "Family".',
+      },
+      {
+        title: 'iCloud Photos on iPhone (for Apple users)',
+        content: 'Settings → [your name] → iCloud → Photos → toggle on "iCloud Photos". All photos automatically upload to iCloud and sync across all your Apple devices. You get 5GB free; more storage starts at 99p/month for 50GB.',
+        tip: 'With iCloud Photos enabled, you can delete photos from your iPhone to free up space — they stay safely in iCloud and on any other Apple device you\'re signed into.',
+      },
+      {
+        title: 'Create albums to organise by topic',
+        content: 'In Google Photos: tap Library → + (New album) → give it a name (e.g. "Christmas 2025") → add photos. In iPhone Photos: tap Albums → + → New Album. Good album ideas: Holidays by year, Family gatherings, Pets, Home improvements, Recipes. You don\'t need to move photos — albums are just pointers to the originals.',
+      },
+      {
+        title: 'Organise photos on a Windows PC',
+        content: 'Open File Explorer → navigate to Pictures. Create a folder structure like: Pictures → 2025 → Christmas. Move or copy photos from your Downloads folder or phone into the right folder. Name photos descriptively: "Mum\'s 70th Birthday June 2025" rather than "IMG_4821".',
+        screenshotDesc: 'Windows File Explorer showing the Pictures folder with subfolders organised by year (2023, 2024, 2025) and within 2025, subfolders for events like "Easter", "Summer Holiday", and "Christmas".',
+      },
+      {
+        title: 'Delete duplicates and blurry photos',
+        content: 'Go through your photos occasionally and delete: near-identical duplicates (usually keep the sharpest); blurry or accidentally taken shots; screenshots you no longer need. In Google Photos, the "Utilities" section has a "Free up space" tool that identifies items already backed up and safe to delete from your phone.',
+        tip: 'Doing a quick tidy every 3 months is much less overwhelming than leaving it for years. Even deleting 100 bad photos at a time makes a difference.',
+      },
+      {
+        title: 'Back up your photos to a second location',
+        content: 'The golden rule: 3 copies, 2 locations, 1 offsite. For most people: keep photos on your phone or PC (copy 1), back them up to Google Photos or iCloud (copy 2 — offsite). For extra safety, also back up to an external hard drive once a year (copy 3). Plug-in drives are cheap and easy to use — just drag and drop.',
+        warning: 'Phone theft, loss, or damage without any backup means losing every photo permanently. Cloud backup is the simplest insurance against this.',
+      },
+    ],
+  },
+
+  {
+    slug: 'digital-legacy',
+    title: 'Digital Legacy Planning: What Happens to Your Accounts When You\'re Gone',
+    excerpt: 'A compassionate guide to making a digital inventory, setting up legacy contacts, and making things easier for your loved ones.',
+    category: 'safety-guides',
+    tags: ['privacy', 'security', 'planning', 'accounts', 'legacy'],
+    readTime: '10 min',
+    thumbnailEmoji: '📋',
+    publishedAt: '2026-03-23',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Why digital legacy planning matters',
+        content: 'We all have digital lives: email accounts, social media profiles, online banking, photo storage, subscriptions. Without a plan, these become difficult or impossible for loved ones to access or manage. This isn\'t a morbid topic — it\'s a practical act of kindness that takes just a few hours and saves enormous stress for the people you care about.',
+      },
+      {
+        title: 'Create a digital inventory',
+        content: 'Write a list of all your important accounts and where they are stored. Include: email accounts (and which email address is the "main" recovery email), bank and financial accounts, social media (Facebook, Instagram, etc.), subscriptions (Netflix, Amazon, etc.), photo storage (iCloud, Google Photos), any accounts where you have stored payments or credit. Keep this list somewhere safe — a printed copy in your home files is often best.',
+        warning: 'Do NOT include passwords in a document you email or share digitally. Keep the password list printed and physically secure, or use a dedicated password manager with a trusted person listed as emergency contact.',
+        tip: 'A simple spreadsheet with columns for "Service", "Email used", "Notes" is enough. You don\'t need to include passwords — your trusted person can use account recovery options.',
+      },
+      {
+        title: 'Set up Apple\'s Digital Legacy feature (iPhone/Mac)',
+        content: 'Apple allows you to designate a Legacy Contact who can request access to your Apple ID data after you pass. On iPhone: Settings → [your name] → Password & Security → Legacy Contact → Add Legacy Contact. Choose a trusted person and share the access key with them. They won\'t be able to access your account while you\'re alive.',
+        screenshotDesc: 'iPhone Settings showing the Apple ID screen with "Password & Security" option visible, and within that, the "Legacy Contact" option with a person icon.',
+        tip: 'The Legacy Contact access key can be stored in your will or given to your solicitor for safekeeping.',
+      },
+      {
+        title: 'Set up Google\'s Inactive Account Manager',
+        content: 'Google lets you decide what happens to your account if it\'s inactive for a period you choose (3–18 months). Go to myaccount.google.com → Data & Privacy → scroll to "More options" → Make a plan for your account. You can choose to share your data with trusted people or have your account deleted.',
+        screenshotDesc: 'Google Account Data & Privacy settings page showing the "More options" section with the "Make a plan for your account" option highlighted.',
+      },
+      {
+        title: 'Memorialise or remove Facebook after death',
+        content: 'Facebook allows you to set a "Legacy Contact" — someone who can manage your profile after you pass (add a tribute post, update profile photo). Or you can request the account be deleted. Set this at: Facebook Settings → Account Settings → Memorialisation Settings. Your Legacy Contact cannot log in as you or read private messages.',
+      },
+      {
+        title: 'Handle subscriptions',
+        content: 'List all recurring subscriptions with the card they\'re charged to. Your family may be paying for Netflix, Spotify, Amazon Prime or dozens of other services for months before they realise. Include: the service name, the email address used, and roughly what it costs. This alone can save significant money.',
+        tip: 'Log in to your bank\'s app and filter transactions by recurring charges to build this list quickly.',
+      },
+      {
+        title: 'Store your information safely',
+        content: 'Options for keeping your digital inventory safe: in a sealed envelope with your will (solicitor keeps it); in a fireproof home safe; in a password manager with a trusted emergency contact added. Tell at least one trusted person where to find this information — the best-prepared document is useless if no one knows it exists.',
+      },
     ],
   },
 ];

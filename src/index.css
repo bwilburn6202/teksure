@@ -116,6 +116,9 @@ html.font-size-large {
 html.font-size-xl {
   font-size: 26px;
 }
+html.font-size-xxl {
+  font-size: 32px;
+}
 
 /* Print styles */
 @media print {

@@ -1,0 +1,275 @@
+import { useState } from 'react';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Newspaper, ExternalLink, Clock, ChevronDown } from 'lucide-react';
+
+interface NewsItem {
+  id: number;
+  title: string;
+  summary: string;
+  category: 'security' | 'devices' | 'apps' | 'tips' | 'scams' | 'ai';
+  date: string;
+  emoji: string;
+  readTime: string;
+  source?: string;
+  sourceUrl?: string;
+}
+
+const CATEGORY_COLORS: Record<NewsItem['category'], string> = {
+  security: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  devices:  'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  apps:     'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+  tips:     'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  scams:    'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+  ai:       'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
+};
+
+const CATEGORY_LABELS: Record<NewsItem['category'], string> = {
+  security: '🔒 Security',
+  devices:  '💻 Devices',
+  apps:     '📱 Apps',
+  tips:     '💡 Tips',
+  scams:    '⚠️ Scam Alert',
+  ai:       '🤖 AI',
+};
+
+const NEWS_ITEMS: NewsItem[] = [
+  {
+    id: 1,
+    title: 'New Scam: "Your parcel couldn\'t be delivered" Text Messages',
+    summary: 'Millions of people are receiving fake text messages claiming a parcel couldn\'t be delivered and asking you to click a link to rebook. The link takes you to a convincing fake Royal Mail or FedEx website that steals your bank details. If you get one of these texts, delete it immediately. Real delivery companies never ask for payment via a text link.',
+    category: 'scams',
+    date: '2026-03-22',
+    emoji: '📦',
+    readTime: '2 min',
+    source: 'Action Fraud',
+    sourceUrl: 'https://www.actionfraud.police.uk',
+  },
+  {
+    id: 2,
+    title: 'iPhone Update 18.3.2: What\'s New and Should You Update?',
+    summary: 'Apple has released iOS 18.3.2, a security update that fixes several vulnerabilities that could allow attackers to take control of your phone. The update is small (around 200MB) and only takes a few minutes to install. Go to Settings → General → Software Update to install it. Security updates like this are always worth doing promptly.',
+    category: 'security',
+    date: '2026-03-20',
+    emoji: '📱',
+    readTime: '2 min',
+    source: 'Apple Support',
+    sourceUrl: 'https://support.apple.com',
+  },
+  {
+    id: 3,
+    title: 'WhatsApp Adds New Privacy Feature: Protect IP Address in Calls',
+    summary: 'WhatsApp has added a new setting that hides your real internet address (called an IP address) during calls, making it harder for strangers to track your location. To enable it: WhatsApp → Settings → Privacy → Advanced → "Protect IP address in calls". It\'s worth turning on, especially if you take calls from people you don\'t know well.',
+    category: 'apps',
+    date: '2026-03-18',
+    emoji: '💬',
+    readTime: '2 min',
+  },
+  {
+    id: 4,
+    title: 'AI Scams Are Getting More Convincing: What to Watch For',
+    summary: 'Scammers are now using AI to clone voices and create fake video calls that look and sound exactly like real people — including family members and bank staff. If you receive an unexpected call from someone asking for money or personal details, hang up and call them back using a number you already have for them. Never trust a caller just because they sound familiar.',
+    category: 'scams',
+    date: '2026-03-16',
+    emoji: '🎭',
+    readTime: '3 min',
+  },
+  {
+    id: 5,
+    title: 'Google Chrome Update Makes Passwords Safer Automatically',
+    summary: 'Google Chrome now automatically checks if any of your saved passwords have been leaked in data breaches and prompts you to change them. If you use Chrome, look for the shield icon in the address bar, or go to Settings → Password Manager → Checkup. It\'s a free, quick way to spot weak or compromised passwords.',
+    category: 'security',
+    date: '2026-03-15',
+    emoji: '🔑',
+    readTime: '2 min',
+  },
+  {
+    id: 6,
+    title: 'Windows 11 Gets a New "Copilot" AI Assistant — Here\'s What It Does',
+    summary: 'Microsoft has updated Windows 11 with an AI assistant called Copilot, which can answer questions, summarise documents, and help you find settings. You can open it by pressing the Windows key + C. It\'s genuinely useful for things like "how do I change my screen brightness" or "summarise this document". It\'s free and already installed if you have Windows 11 version 23H2 or newer.',
+    category: 'ai',
+    date: '2026-03-12',
+    emoji: '🪟',
+    readTime: '3 min',
+  },
+  {
+    id: 7,
+    title: 'Simple Tip: Turn Off "Precise Location" for Apps That Don\'t Need It',
+    summary: 'Many apps ask for your precise GPS location when they really only need your general area. On iPhone: Settings → Privacy & Security → Location Services → tap each app → change "Precise Location" to off. On Android: Settings → Apps → Permissions → Location → choose "Approximate" for apps like weather or news. This saves battery life and protects your privacy.',
+    category: 'tips',
+    date: '2026-03-10',
+    emoji: '📍',
+    readTime: '2 min',
+  },
+  {
+    id: 8,
+    title: 'New Samsung Galaxy S25: Should You Upgrade?',
+    summary: 'Samsung has released its latest flagship phone, the Galaxy S25. The key improvements over the S24 are a faster processor, better camera low-light performance, and seven years of software updates guaranteed. At £799–£1,199, it\'s expensive. If your current Android phone is 3 or more years old and starting to slow down, it\'s a good time to consider upgrading — but you don\'t need to rush.',
+    category: 'devices',
+    date: '2026-03-08',
+    emoji: '📸',
+    readTime: '3 min',
+  },
+  {
+    id: 9,
+    title: 'Reminder: Check Your Router\'s Age — Old Routers Have Security Holes',
+    summary: 'If your home router is more than 5 years old, it may no longer receive security updates from the manufacturer. This means hackers could exploit known vulnerabilities. Contact your internet provider to ask when your router was last updated, or if you own your router, check the manufacturer\'s website to see if it still supports your model. An upgrade could significantly improve your home\'s security.',
+    category: 'security',
+    date: '2026-03-05',
+    emoji: '📡',
+    readTime: '2 min',
+  },
+  {
+    id: 10,
+    title: 'Free Tool: HaveIBeenPwned Lets You Check If Your Email Was in a Data Breach',
+    summary: 'HaveIBeenPwned (haveibeenpwned.com) is a free, safe website where you can enter your email address to check if it\'s appeared in any known data breaches. If it has, it tells you which sites were hacked and what information was exposed. It\'s run by a trusted security researcher and is completely free to use. Check all your email addresses — it only takes 30 seconds.',
+    category: 'security',
+    date: '2026-03-03',
+    emoji: '🕵️',
+    readTime: '2 min',
+    source: 'Have I Been Pwned',
+    sourceUrl: 'https://haveibeenpwned.com',
+  },
+  {
+    id: 11,
+    title: 'Beware of "Tech Support" Calls — No Company Ever Calls You Unsolicited',
+    summary: 'A common scam: someone calls claiming to be from Microsoft, BT, or your bank saying your computer has a problem. They ask you to install software that gives them control of your screen. IMPORTANT: Microsoft, Apple, BT, and your bank will NEVER call you out of the blue about a computer problem. If you get one of these calls, hang up immediately.',
+    category: 'scams',
+    date: '2026-02-28',
+    emoji: '📞',
+    readTime: '2 min',
+  },
+  {
+    id: 12,
+    title: 'Using AI to Write Emails: Helpful, But Be Careful What You Share',
+    summary: 'AI tools like ChatGPT and Microsoft Copilot are excellent at helping you write emails, letters, and messages. However, be careful not to paste in sensitive personal information (account numbers, passwords, medical details, addresses) when using these tools, as your input may be used to improve the AI. Stick to general content or use dummy details where possible.',
+    category: 'ai',
+    date: '2026-02-25',
+    emoji: '✉️',
+    readTime: '3 min',
+  },
+];
+
+const FILTER_CATEGORIES: { value: NewsItem['category'] | 'all'; label: string }[] = [
+  { value: 'all', label: 'All News' },
+  { value: 'scams', label: '⚠️ Scam Alerts' },
+  { value: 'security', label: '🔒 Security' },
+  { value: 'apps', label: '📱 Apps' },
+  { value: 'devices', label: '💻 Devices' },
+  { value: 'tips', label: '💡 Tips' },
+  { value: 'ai', label: '🤖 AI' },
+];
+
+export default function News() {
+  const [activeCategory, setActiveCategory] = useState<NewsItem['category'] | 'all'>('all');
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const filtered = activeCategory === 'all'
+    ? NEWS_ITEMS
+    : NEWS_ITEMS.filter(n => n.category === activeCategory);
+
+  const visible = filtered.slice(0, visibleCount);
+
+  return (
+    <>
+      <SEOHead
+        title="Tech News for Beginners — TekSure"
+        description="Stay up to date with the latest tech news, scam alerts, and tips — explained in plain English with no jargon."
+      />
+      <Navbar />
+
+      <main className="min-h-screen bg-background">
+        {/* Hero */}
+        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+          <div className="container max-w-4xl mx-auto text-center">
+            <div className="flex justify-center mb-3">
+              <div className="p-3 bg-primary/10 rounded-full">
+                <Newspaper className="h-8 w-8 text-primary" />
+              </div>
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">Tech News</h1>
+            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+              The most important tech news and scam alerts explained in plain English — no jargon, no hype.
+            </p>
+          </div>
+        </section>
+
+        <div className="container max-w-4xl mx-auto px-4 py-8">
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {FILTER_CATEGORIES.map(cat => (
+              <button
+                key={cat.value}
+                onClick={() => { setActiveCategory(cat.value); setVisibleCount(6); }}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-all ${
+                  activeCategory === cat.value
+                    ? 'bg-primary text-primary-foreground border-primary shadow-sm'
+                    : 'bg-muted border-border hover:bg-accent'
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          {/* News Grid */}
+          <div className="space-y-4">
+            {visible.map(item => (
+              <Card key={item.id} className="border-border hover:shadow-md transition-shadow">
+                <CardContent className="p-5">
+                  <div className="flex gap-4">
+                    <div className="text-3xl shrink-0 mt-0.5">{item.emoji}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap mb-2">
+                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${CATEGORY_COLORS[item.category]}`}>
+                          {CATEGORY_LABELS[item.category]}
+                        </span>
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Clock className="h-3 w-3" /> {item.readTime}
+                        </span>
+                        <span className="text-xs text-muted-foreground ml-auto">
+                          {new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+                        </span>
+                      </div>
+                      <h2 className="font-semibold text-base leading-snug mb-2">{item.title}</h2>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.summary}</p>
+                      {item.source && item.sourceUrl && (
+                        <a
+                          href={item.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 mt-2 text-xs text-primary hover:underline"
+                        >
+                          Source: {item.source} <ExternalLink className="h-3 w-3" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Load More */}
+          {visibleCount < filtered.length && (
+            <div className="text-center mt-6">
+              <Button variant="outline" onClick={() => setVisibleCount(v => v + 6)} className="gap-2">
+                <ChevronDown className="h-4 w-4" /> Load more news
+              </Button>
+            </div>
+          )}
+
+          {filtered.length === 0 && (
+            <p className="text-center text-muted-foreground py-12">No news in this category yet.</p>
+          )}
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
