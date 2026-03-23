@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
+import { HighContrastProvider } from "@/contexts/HighContrastContext";
+import DeviceHealthDashboard from "./pages/tools/DeviceHealthDashboard";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -129,6 +131,7 @@ const AppContent = () => {
         <Route path="/community/ambassadors" element={<Ambassadors />} />
         <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
         <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
+        <Route path="/tools/device-health" element={<DeviceHealthDashboard />} />
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />
@@ -152,9 +155,11 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <SeniorModeProvider>
-          <AuthProvider>
-            <AppContent />
-          </AuthProvider>
+          <HighContrastProvider>
+            <AuthProvider>
+              <AppContent />
+            </AuthProvider>
+          </HighContrastProvider>
         </SeniorModeProvider>
       </TooltipProvider>
     </QueryClientProvider>

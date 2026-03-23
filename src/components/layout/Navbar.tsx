@@ -8,6 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
 import { SeniorModeToggle } from '@/components/SeniorModeToggle';
+import { HighContrastToggle } from '@/components/HighContrastToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -154,6 +155,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           {user ? <AuthLinks /> : <PublicLinks />}
           <SeniorModeToggle />
+          <HighContrastToggle />
           <FontSizeToggle />
           <DarkModeToggle />
           <button

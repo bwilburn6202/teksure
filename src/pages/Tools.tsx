@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
-  MailCheck, Eye, Lock, ShieldAlert, WifiOff,
+  MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
 } from 'lucide-react';
 
 const tools = [
@@ -49,6 +49,14 @@ const tools = [
     icon: MailCheck,
     path: '/tools/email-declutter',
     color: 'text-teal-500',
+    badge: 'New',
+  },
+  {
+    title: 'Device Health Dashboard',
+    description: 'Check your device\'s health score across storage, security, battery, network, performance, and privacy — with simple tips to improve each area.',
+    icon: Activity,
+    path: '/tools/device-health',
+    color: 'text-emerald-500',
     badge: 'New',
   },
   {

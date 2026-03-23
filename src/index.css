@@ -203,3 +203,39 @@ html.senior-mode * {
   animation-duration: 0.05ms !important;
   animation-iteration-count: 1 !important;
 }
+
+/* ─── High Contrast Mode ─────────────────────────────────── */
+html.high-contrast {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 0%;
+  --muted: 0 0% 92%;
+  --muted-foreground: 0 0% 10%;
+  --border: 0 0% 0%;
+  --input: 0 0% 0%;
+  --primary: 221 83% 30%;
+  --primary-foreground: 0 0% 100%;
+}
+
+html.high-contrast.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 5%;
+  --card-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 90%;
+  --border: 0 0% 100%;
+  --primary: 221 83% 70%;
+  --primary-foreground: 0 0% 0%;
+}
+
+html.high-contrast * {
+  letter-spacing: 0.01em;
+}
+
+html.high-contrast a:focus,
+html.high-contrast button:focus {
+  outline: 3px solid hsl(var(--primary)) !important;
+  outline-offset: 2px !important;
+}
