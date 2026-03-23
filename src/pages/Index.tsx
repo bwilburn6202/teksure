@@ -22,6 +22,8 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
   'ai-guides': Bot,
+  'how-to': BookOpen,
+  'safety-guides': Shield,
 };
 
 const categoryColors: Record<GuideCategory, string> = {
@@ -30,6 +32,8 @@ const categoryColors: Record<GuideCategory, string> = {
   'essential-skills': 'from-amber-600/20 to-amber-400/5 border-amber-500/20',
   'tips-tricks': 'from-purple-600/20 to-purple-400/5 border-purple-500/20',
   'ai-guides': 'from-teal-600/20 to-teal-400/5 border-teal-500/20',
+  'how-to': 'from-orange-600/20 to-orange-400/5 border-orange-500/20',
+  'safety-guides': 'from-red-600/20 to-red-400/5 border-red-500/20',
 };
 
 const topicPills = [
