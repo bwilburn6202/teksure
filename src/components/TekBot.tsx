@@ -342,6 +342,39 @@ const DEVICE_PROMPTS: Record<NonNullable<DeviceType>, string[]> = {
 
 const DEFAULT_PROMPTS = ['My WiFi is slow', 'Reset a password', 'Computer is frozen', 'Got a scam pop-up'];
 
+/** Page-specific quick prompts — contextual chips based on current route */
+const PAGE_PROMPTS: Record<string, string[]> = {
+  '/guides': ['Find a WiFi guide', 'How do I back up my files?', 'Password help', 'What guides suit beginners?'],
+  '/tools': ['Which tool should I use?', 'How do I check my storage?', 'Test my WiFi speed', 'Check my password strength'],
+  '/forum': ['How do I post a question?', 'Browse WiFi help threads', 'Password advice', 'Find tech tips'],
+  '/book': ['What does a technician visit cost?', 'How long does a visit take?', 'What can a technician fix?', 'Can I get remote help?'],
+  '/get-help': ['What info do I need to share?', 'How quickly will I get help?', 'Is my problem urgent?', 'Can you help with a scam?'],
+  '/safety/scam-alerts': ['How do I spot a scam?', 'Got a suspicious email', 'Scam phone call help', 'My account was hacked'],
+  '/glossary': ['What does WiFi mean?', 'Explain "cloud storage"', 'What is two-factor auth?', 'What does "update" mean?'],
+  '/quick-fixes': ['My screen is frozen', 'WiFi not working', 'Computer running slow', 'Printer not responding'],
+  '/tips': ['Best tip for beginners?', 'How to stay safe online?', 'Speed up my device', 'Save battery life'],
+  '/my-path': ['Which learning path should I take?', 'How do I complete a guide?', 'What\'s the safety path?', 'I\'m a complete beginner'],
+  '/pricing': ['What does a visit cost?', 'How do I book a technician?', 'Is there a call-out fee?', 'Remote vs on-site help'],
+};
+
+function getPagePrompts(pathname: string, device: DeviceType): string[] {
+  // Guide detail page — suggest questions related to the guide topic
+  if (pathname.startsWith('/guides/')) {
+    const slug = pathname.replace('/guides/', '');
+    const words = slug.replace(/-/g, ' ');
+    if (device) return DEVICE_PROMPTS[device].slice(0, 4);
+    return [`Tell me more about ${words}`, 'I have a related question', 'Show me similar guides', 'I need extra help with this'];
+  }
+  // Tool page — suggest questions relevant to that tool
+  if (pathname.startsWith('/tools/')) {
+    const tool = pathname.replace('/tools/', '').replace(/-/g, ' ');
+    return [`How do I use the ${tool}?`, 'What does this tool check?', 'I got an unexpected result', 'Explain what this means'];
+  }
+  if (PAGE_PROMPTS[pathname]) return PAGE_PROMPTS[pathname];
+  if (device) return DEVICE_PROMPTS[device].slice(0, 4);
+  return DEFAULT_PROMPTS;
+}
+
 /* ── Device icons & labels ──────────────────────────────────── */
 
 const DEVICE_OPTIONS: { value: DeviceType; label: string; icon: React.ReactNode }[] = [
@@ -404,7 +437,17 @@ export function TekBot() {
     }
     const activeDevice = detected ?? device;
 
-    setMessages(prev => [...prev, { role: 'user', content: text }]);
+    // Build conversation memory: extract last 5 user messages for context
+    setMessages(prev => {
+      const history = prev.filter(m => m.role === 'user').slice(-5).map(m => m.content);
+      const enrichedQuery = isContinuation(text) && history.length > 1
+        ? `${history.slice(0, -1).join(' ')} ${text}` // prepend prior context for KB matching
+        : text;
+
+      // Store enrichedQuery for the timeout below via a ref-like closure trick
+      (send as any)._enriched = enrichedQuery;
+      return [...prev, { role: 'user', content: text }];
+    });
     setInput('');
     setTyping(true);
 
@@ -412,8 +455,9 @@ export function TekBot() {
 
     setTimeout(() => {
       setTyping(false);
-      const answer = getResponse(text, activeDevice);
-      const related = findRelatedGuides(text);
+      const enriched = (send as any)._enriched ?? text;
+      const answer = getResponse(enriched, activeDevice);
+      const related = findRelatedGuides(enriched);
 
       let finalAnswer = answer;
       if (detected) {
@@ -427,7 +471,8 @@ export function TekBot() {
     }, delay);
   };
 
-  const quickPrompts = device ? DEVICE_PROMPTS[device] : DEFAULT_PROMPTS;
+  // Page-aware prompts: use page-specific chips first, fall back to device/default
+  const quickPrompts = getPagePrompts(location.pathname, device);
 
   return (
     <>

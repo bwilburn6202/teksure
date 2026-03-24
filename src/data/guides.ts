@@ -4162,4 +4162,345 @@ export const guides: Guide[] = [
       },
     ],
   },
+
+  /* ── SPRINT 5: Small content guides ─────────────────── */
+
+  {
+    slug: 'streaming-setup',
+    title: 'How to Set Up Netflix, iPlayer & Streaming Apps on Your TV',
+    excerpt: 'Get your favourite shows on the big screen — step-by-step setup for Smart TVs, Fire Stick, Chromecast, and Apple TV.',
+    category: 'how-to',
+    tags: ['streaming', 'netflix', 'smart-tv', 'fire-stick', 'chromecast', 'beginner'],
+    readTime: '8 min',
+    thumbnailEmoji: '📺',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Find the app store on your TV',
+        content: 'Most Smart TVs (Samsung, LG, Sony) have a built-in app store. Press the Home button on your TV remote and look for "Apps," "App Store," or "Content Store." If you have a Fire Stick, press the Home button and select "Apps." For Apple TV, click the App Store icon on the home screen.',
+        tip: 'If your TV is more than 5 years old and doesn\'t have apps built in, a £35 Fire Stick is the easiest way to add streaming.',
+        screenshotDesc: 'A Smart TV home screen showing the Apps section with icons for Netflix, iPlayer, YouTube and Disney+.',
+      },
+      {
+        title: 'Download Netflix (or iPlayer, Disney+, etc.)',
+        content: 'Search for "Netflix" in the app store using the remote\'s on-screen keyboard. Select Netflix from the results and click "Download" or "Install." It only takes a minute or two. Repeat for any other services you want (BBC iPlayer, ITV Hub, Disney+, Amazon Prime, Apple TV+).',
+        screenshotDesc: 'App store search results showing the Netflix logo with a green "Install" button highlighted.',
+      },
+      {
+        title: 'Sign in to your account',
+        content: 'Open the Netflix app and select "Sign In." Use your email address and password. On a Smart TV remote, typing can be slow — many services let you sign in via a code instead. Choose "Sign in with a code," then visit the URL shown on your TV from your phone or computer and enter the code. Much faster!',
+        tip: 'If you don\'t have a Netflix account, you\'ll need to sign up at netflix.com on your phone or computer first.',
+        screenshotDesc: 'Netflix sign-in screen on a TV showing the option "Sign in with a code" with a URL and short code displayed.',
+      },
+      {
+        title: 'Set up BBC iPlayer',
+        content: 'Download BBC iPlayer from the app store. When you open it, it will ask if you have a TV Licence. Select "Yes" (or get one at tvlicensing.co.uk). You don\'t need to create an account to watch, but creating a free BBC account lets you save favourites and continue watching across devices.',
+        screenshotDesc: 'BBC iPlayer home screen on a Smart TV showing featured programmes and category tabs at the top.',
+      },
+      {
+        title: 'Adjust picture and sound settings',
+        content: 'Once streaming, if the picture looks dark or washed out, press the Settings button on your remote and look for "Picture Mode." Try "Standard" or "Movie" mode for the best colours. For sound, "Standard" or "Movie" mode usually sounds clearest. If using a soundbar, make sure it\'s set to the correct input.',
+        tip: 'Turn off "Motion Smoothing" (sometimes called TruMotion or MotionFlow) — it makes films look cheap and soap-opera-like.',
+      },
+    ],
+  },
+
+  {
+    slug: 'banking-apps',
+    title: 'How to Use Your Bank\'s App Safely',
+    excerpt: 'Check your balance, pay bills, and transfer money securely using your bank\'s official app — and spot the fakes.',
+    category: 'safety-guides',
+    tags: ['banking', 'finance', 'mobile-app', 'security', 'face-id', 'beginner'],
+    readTime: '7 min',
+    thumbnailEmoji: '🏦',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Download only the official app',
+        content: 'Go to your bank\'s website (type the address yourself — don\'t click links from emails or texts) and look for the "App Store" or "Google Play" button. This takes you directly to the real app. Fake banking apps exist in app stores — always download from your bank\'s own website link, not by searching.',
+        tip: 'Real banking apps are free. If an app charges money to download, it\'s fake.',
+        screenshotDesc: 'A bank\'s official website showing "Download our app" buttons for the App Store and Google Play, with the app icon visible.',
+      },
+      {
+        title: 'Set up Face ID or fingerprint login',
+        content: 'Once you\'ve logged in with your username and password the first time, your bank will offer to set up biometric login (Face ID on iPhone, or fingerprint on most Android and iPhone devices). Accept this — it\'s both more secure AND faster than typing a password. Your bank will walk you through the setup.',
+        screenshotDesc: 'A banking app setup screen showing "Enable Face ID for faster and secure log in" with a face recognition icon and a green Enable button.',
+      },
+      {
+        title: 'Check your balance and transactions',
+        content: 'Open the app and tap your current account to see your balance. Scroll down to see recent transactions. If you see anything you don\'t recognise, contact your bank immediately using the number on the back of your card — not a number from a suspicious email or text.',
+        tip: 'Check your balance weekly — catching problems early is key. Set up transaction notifications so your bank texts you for every purchase.',
+      },
+      {
+        title: 'Pay a bill or transfer money',
+        content: 'To pay a bill or transfer money, look for "Pay & Transfer," "Payments," or a similar option in the app menu. You\'ll need the recipient\'s sort code and account number (shown on their invoice or bank statement). Always double-check the digits before confirming — transfers cannot always be reversed.',
+        tip: 'For a new payee, your bank may call or text you to verify. This is normal and a good security measure — never cancel this check.',
+        screenshotDesc: 'A mobile banking app showing a "New Payment" form with fields for Account Name, Sort Code, and Account Number.',
+      },
+      {
+        title: 'Spot a fake banking app or scam',
+        content: 'Your bank will NEVER ask for your full password, PIN, or one-time code via text, email, phone call, or in-app message. If anything asks for these, hang up or close the app and call your bank directly. Scammers sometimes impersonate banks perfectly — the real test is whether they ask for information your bank already has.',
+        tip: 'Save your bank\'s genuine phone number in your contacts now, so you always have it when needed.',
+      },
+    ],
+  },
+
+  {
+    slug: 'podcasts-audiobooks',
+    title: 'How to Listen to Podcasts and Audiobooks',
+    excerpt: 'Discover podcasts and audiobooks on your phone — including free options from your local library.',
+    category: 'how-to',
+    tags: ['podcasts', 'audiobooks', 'spotify', 'audible', 'libby', 'library', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '🎧',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Listen to podcasts on iPhone',
+        content: 'iPhones come with the free "Podcasts" app already installed. Open it, tap "Search," and type any topic you enjoy — gardening, news, history, true crime, comedy. Tap a show, then tap an episode to play. Tap the three dots (⋯) and "Subscribe" to get new episodes automatically.',
+        tip: 'Can\'t find the Podcasts app? Search for "Podcasts" in your iPhone\'s App Library (swipe left on your home screen).',
+        screenshotDesc: 'iPhone Podcasts app showing search results for "gardening" with several podcast covers including BBC Gardeners\' World and No Dig Almanac.',
+      },
+      {
+        title: 'Listen to podcasts on Android',
+        content: 'Download "Spotify" (free) or "Google Podcasts" from the Play Store. In Spotify, tap "Search," then "Podcasts & Shows" at the top, and search for your interest. Or download "Pocket Casts" (£3.99 one-off) — it\'s the easiest dedicated podcast app.',
+        screenshotDesc: 'Spotify app showing the Search screen with "Podcasts & Shows" filter selected and results for news podcasts.',
+      },
+      {
+        title: 'Try Audible for audiobooks',
+        content: 'Audible (owned by Amazon) is the largest audiobook service. It costs £7.99/month and includes one audiobook credit per month plus access to a library. Go to audible.co.uk, sign up (use your Amazon account if you have one), then download the free Audible app. Your first 30 days are usually free.',
+        screenshotDesc: 'Audible app home screen showing recommended audiobooks with covers and a "My Library" tab at the bottom.',
+      },
+      {
+        title: 'Get FREE audiobooks from your library',
+        content: 'The Libby app (free, from OverDrive) lets you borrow audiobooks and ebooks for free using your library card. Download "Libby" from the App Store or Play Store, tap "Find My Library," enter your postcode, and sign in with your library card number. Most UK libraries have hundreds of audiobooks available.',
+        tip: 'No library card? They\'re free — pop into your local library with ID to get one.',
+        screenshotDesc: 'Libby app showing the home screen with featured audiobooks available to borrow, with "Available Now" badges on several titles.',
+      },
+    ],
+  },
+
+  {
+    slug: 'calendar-reminders',
+    title: 'How to Set Up Calendar Reminders on Your Phone',
+    excerpt: 'Never miss an appointment again — set up and share calendar reminders on iPhone, Android, or your computer.',
+    category: 'how-to',
+    tags: ['calendar', 'reminders', 'organisation', 'appointments', 'google-calendar', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '📅',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Add an event on iPhone',
+        content: 'Open the Calendar app (comes free on every iPhone). Tap the "+" button or tap directly on a date. Type the event name (e.g. "Doctor appointment"), set the start time, and tap "Add Alert" to set a reminder. Choose how far in advance you want to be reminded — 1 hour, 1 day, or even 2 days before.',
+        tip: 'Set TWO reminders for important appointments — one the day before and one 2 hours before.',
+        screenshotDesc: 'iPhone Calendar app showing the "New Event" form with a title field, date/time pickers, and an "Add Alert" option highlighted.',
+      },
+      {
+        title: 'Add an event on Android',
+        content: 'Open the "Calendar" app (usually Google Calendar). Tap the blue "+" button or the date you want. Enter the event name and time. Tap "Add notification" to set a reminder. You can add multiple reminders — e.g. 1 day before AND 1 hour before.',
+        screenshotDesc: 'Google Calendar app on Android showing a new event creation screen with the "Add notification" option visible.',
+      },
+      {
+        title: 'Share a calendar with family',
+        content: 'On Google Calendar: tap the three lines (☰), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member\'s Gmail address. They\'ll see your events on their own Calendar app.',
+        tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.',
+      },
+      {
+        title: 'Set up recurring reminders',
+        content: 'For things that happen regularly (medication, bin day, monthly bills), create the event and tap "Does not repeat." Change it to Daily, Weekly, Monthly, or set a custom interval. The reminder will automatically appear every time without you having to add it again.',
+        screenshotDesc: 'Calendar repeat options showing Daily, Every Weekday, Weekly, Every 2 weeks, Monthly, and Annual options.',
+      },
+    ],
+  },
+
+  {
+    slug: 'voice-commands',
+    title: 'Useful Voice Commands for Siri, Google Assistant & Alexa',
+    excerpt: 'Save time and go hands-free with the most useful things you can say to your voice assistant.',
+    category: 'tips-tricks',
+    tags: ['voice-commands', 'siri', 'google-assistant', 'alexa', 'hands-free', 'accessibility', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎙️',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Activate your voice assistant',
+        content: 'iPhone: say "Hey Siri" or hold the side button. Android: say "Hey Google" or hold the Home button. Amazon Echo/Alexa: just say "Alexa." Make sure the microphone is not muted (on Alexa, the ring should be blue, not red).',
+        screenshotDesc: 'Three side-by-side screenshots showing Siri\'s purple waveform, Google Assistant\'s coloured dots, and an Alexa device with blue ring light.',
+      },
+      {
+        title: 'Most useful everyday commands',
+        content: 'Calling & messaging: "Call [name]", "Text [name] I\'m on my way", "Read my messages." Reminders: "Remind me to take my tablets at 8am every day", "Set a timer for 20 minutes." Weather: "What\'s the weather today?", "Will it rain tomorrow?" Navigation: "Directions to the nearest supermarket", "How long to drive to [place]?"',
+        tip: 'You don\'t have to memorise these — just speak naturally. Say "Hey Siri, how do I turn off Bluetooth?" and it will help.',
+      },
+      {
+        title: 'Shopping and information',
+        content: 'Alexa: "Alexa, add milk to my shopping list", "Alexa, order more [item] from Amazon." Siri/Google: "How many calories in a banana?", "What time does [shop] close?", "Translate \'thank you\' into Spanish", "What\'s 15% tip on £47?"',
+        screenshotDesc: 'Amazon Alexa app showing a shopping list with items added by voice, including "milk," "bread," and "eggs."',
+      },
+      {
+        title: 'Smart home and accessibility',
+        content: 'If you have smart bulbs: "Alexa, turn off the living room lights", "Hey Google, dim the kitchen to 50%." For accessibility: "Hey Siri, increase text size", "Hey Google, read this page aloud", "Hey Siri, turn on magnifier." These commands work even if you have difficulty with small screens or buttons.',
+        tip: 'Voice assistants can make technology much more accessible if you find typing or tapping difficult.',
+      },
+    ],
+  },
+
+  {
+    slug: 'qr-codes',
+    title: 'How to Scan QR Codes (and Spot Fake Ones)',
+    excerpt: 'QR codes are everywhere now. Here\'s how to scan them safely and avoid scams.',
+    category: 'essential-skills',
+    tags: ['qr-code', 'camera', 'scam', 'safety', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Scan a QR code on iPhone',
+        content: 'You don\'t need a special app. Open the Camera app and point it at the QR code — hold it steady for 1-2 seconds. A yellow notification banner appears at the top of the screen with the link. Tap the banner to open the website. That\'s it!',
+        screenshotDesc: 'iPhone Camera app pointed at a QR code with a yellow notification banner at the top reading "Open in Safari → www.example.com".',
+        tip: 'Make sure you\'re in Photo mode (not Video or Portrait) for QR codes to scan automatically.',
+      },
+      {
+        title: 'Scan a QR code on Android',
+        content: 'Most Android phones: open the Camera app and point at the QR code. If a link doesn\'t appear, swipe across to "More" in the camera and look for "Scan QR code." Alternatively, open Google Lens (the Google app → tap the Lens icon) and point at the code.',
+        screenshotDesc: 'Android Camera app showing a QR code in frame with a small link popup appearing at the bottom of the screen.',
+      },
+      {
+        title: 'When QR codes are used legitimately',
+        content: 'Legitimate uses include: restaurant menus, event tickets, product packaging, official government websites, NHS check-in points. In these situations the QR code is safe to scan. A real QR code at a restaurant will take you to their menu — not ask for payment details.',
+        tip: 'Before scanning, check the physical QR code hasn\'t been tampered with — criminals sometimes stick fake QR stickers over real ones on parking meters and restaurant menus.',
+      },
+      {
+        title: 'Spot a scam QR code',
+        content: 'Be suspicious if a QR code: arrives in an unsolicited email or text; is on an unofficial-looking card or poster; takes you to a site asking for your password or bank details; comes from a stranger. When you scan a code, check the URL in the preview BEFORE you tap to open it. If it looks odd (misspellings, strange words), don\'t tap it.',
+        tip: 'Scammers use QR codes specifically because people trust them. Always preview the URL before opening.',
+        screenshotDesc: 'Side-by-side: a legitimate restaurant QR code menu vs a suspicious QR code on a fake parking meter with a sticker label.',
+      },
+    ],
+  },
+
+  {
+    slug: 'medication-reminders',
+    title: 'How to Set Up Medication Reminders on Your Phone',
+    excerpt: 'Never forget a tablet again — set daily or multiple-daily reminders using your phone or a dedicated app.',
+    category: 'how-to',
+    tags: ['medication', 'reminders', 'health', 'alarms', 'accessibility', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '💊',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Use your phone\'s built-in alarm (simplest method)',
+        content: 'On iPhone: open the Clock app → Alarm → tap "+". Set the time, label it "Morning tablets" or whatever makes sense to you, and turn on "Repeat" to choose which days. On Android: open the Clock app → Alarm → tap "+". Same process. This is free and already on your phone — no new apps needed.',
+        tip: 'Set a separate alarm for each medication time if you take them at different times of day.',
+        screenshotDesc: 'iPhone Clock app Alarm screen with a new alarm set for 8:00 AM labelled "Morning tablets" with Repeat set to Every Day.',
+      },
+      {
+        title: 'Use Reminders for a label and sound (iPhone)',
+        content: 'The Reminders app lets you create a checklist you can tick off. Open Reminders → tap "+" → type "Take blood pressure tablets" → tap the (i) to set an alert time → turn on "Repeat" for daily. Unlike alarms, you can tick these off as a checklist, which some people find satisfying.',
+        screenshotDesc: 'iPhone Reminders app showing a "Medications" list with three ticked and two unticked reminders for the day.',
+      },
+      {
+        title: 'Try Medisafe (dedicated medication app)',
+        content: 'Medisafe is a free app (on App Store and Google Play) designed specifically for medication management. It lets you add each medication by name, dose, and schedule. It reminds you, tracks what you\'ve taken, and can alert a family member if you miss a dose. Search "Medisafe" in your app store.',
+        tip: 'Medisafe is especially useful if you take several medications at different times. It also provides information about possible drug interactions.',
+        screenshotDesc: 'Medisafe app home screen showing a daily medication schedule with a morning and evening section, each listing medications with a "Take" button.',
+      },
+      {
+        title: 'Ask Alexa or Siri to remind you',
+        content: 'You can set a voice reminder without even picking up your phone: say "Hey Alexa, remind me to take my tablets every morning at 8am" or "Hey Siri, remind me to take my evening tablets every day at 8pm." Your device will speak the reminder out loud at that time every day.',
+        tip: 'This works especially well if you keep an Amazon Echo or your phone near where you keep your medication.',
+      },
+    ],
+  },
+
+  {
+    slug: 'ereader-setup',
+    title: 'How to Set Up a Kindle or E-Reader',
+    excerpt: 'Get started with a Kindle or reading app on your phone or tablet — including how to adjust text size for comfortable reading.',
+    category: 'how-to',
+    tags: ['kindle', 'ebook', 'reading', 'amazon', 'accessibility', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '📚',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Set up a Kindle device',
+        content: 'Turn on your Kindle by holding the power button on the bottom edge for 3 seconds. Connect to your home WiFi (go through the on-screen setup). Sign in with your Amazon account — or create a free one at amazon.co.uk. Once connected, any Kindle books you\'ve purchased will appear in "My Library" automatically.',
+        screenshotDesc: 'Kindle setup screen showing the WiFi network list with a home network selected and a "Connect" button.',
+        tip: 'If you got this Kindle as a gift and it\'s already registered to the giver\'s account, go to Settings → My Account → Deregister first, then register it to your own account.',
+      },
+      {
+        title: 'Adjust text size and brightness for comfortable reading',
+        content: 'While reading, tap the top of the screen to show the toolbar. Tap the "Aa" button to see display settings. Increase the font size using the slider — make it as large as you need. You can also change the font style, line spacing, and margin width. For the screen brightness, drag the sun icon left or right.',
+        tip: 'Try "Warm Light" mode (on newer Kindles) in the evening — it reduces blue light which can help you sleep better after reading.',
+        screenshotDesc: 'Kindle reading screen showing the display settings panel open with font size, font type, brightness, and colour mode options.',
+      },
+      {
+        title: 'Buy and download books',
+        content: 'On a Kindle device: tap the "Store" button to browse and buy books. On a phone/tablet with the Kindle app: buy books at amazon.co.uk (the "Kindle" category) — purchases appear automatically in your app. Many classics (Agatha Christie, Jane Austen, Dickens) are free in the Kindle Store.',
+        screenshotDesc: 'Kindle Store home page showing bestseller lists, "Free Kindle Books" section, and a search bar at the top.',
+      },
+      {
+        title: 'Use the Kindle app on your phone or tablet',
+        content: 'Don\'t have a Kindle device? The free Kindle app on your iPhone or Android gives you the same experience. Download it from the App Store or Google Play, sign in with your Amazon account, and all your books are there. The advantage: your phone is always with you, so you can read anywhere.',
+        tip: 'You can read the same book on your Kindle device AND your phone — they sync automatically to the same page.',
+      },
+      {
+        title: 'Borrow ebooks for free from the library',
+        content: 'With a free library card, you can borrow ebooks using the Libby app (free, by OverDrive). Download Libby, add your library, sign in with your library card number, and borrow ebooks that can be sent directly to your Kindle or read in the Libby app. Most popular titles are available; some have waiting lists.',
+      },
+    ],
+  },
+
+  {
+    slug: 'ride-sharing',
+    title: 'How to Use Uber or a Taxi App for the First Time',
+    excerpt: 'Book a safe, reliable taxi from your phone without cash — step by step for complete beginners.',
+    category: 'how-to',
+    tags: ['uber', 'taxi', 'transport', 'ride-sharing', 'maps', 'beginner'],
+    readTime: '7 min',
+    thumbnailEmoji: '🚗',
+    publishedAt: '2026-03-24',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Download the app and create an account',
+        content: 'Search "Uber" in the App Store (iPhone) or Play Store (Android) and install it. Open Uber and tap "Create Account." Enter your name, email, and a phone number — Uber will send a text code to verify it. You\'ll also need to add a payment method (debit or credit card).',
+        tip: 'Uber works with most debit cards. You can also pay with PayPal if you prefer not to enter your card details.',
+        screenshotDesc: 'Uber app account creation screen showing name, email, and phone number fields with a "Next" button.',
+      },
+      {
+        title: 'Set your destination',
+        content: 'On the home screen, tap "Where to?" and type your destination — a postcode, address, or landmark (e.g. "Royal Victoria Hospital" or "Manchester Piccadilly Station"). Uber will show you the estimated fare before you book, so there are no surprises.',
+        screenshotDesc: 'Uber app showing a map with the user\'s current location pinned and a search bar at the bottom reading "Where to?"',
+      },
+      {
+        title: 'Choose your ride type and confirm',
+        content: 'Uber offers different car types. "UberX" is a standard car and usually the cheapest. "Comfort" is a newer, larger car. "Assist" has drivers trained to help passengers with mobility needs. Select one and tap "Request." The price is shown upfront and doesn\'t change if the journey takes longer.',
+        tip: 'The app shows the driver\'s name, car model, colour, and number plate before they arrive. Match these exactly before getting in.',
+      },
+      {
+        title: 'Track your driver and stay safe',
+        content: 'After booking, you can watch your driver approaching on the map in real time. The app shows their estimated arrival time. When they arrive, confirm their name and check the car colour and plate before getting in. You can also share your trip with a trusted contact — tap "Share status" in the app.',
+        screenshotDesc: 'Uber app showing a map with a car icon moving towards the user\'s location, with driver name, car, and plate shown at the bottom.',
+      },
+      {
+        title: 'Rating and payment',
+        content: 'Payment is automatic — your saved card is charged when the trip ends and you\'ll get a receipt by email. After the trip, you\'ll be asked to rate your driver 1-5 stars. This takes 10 seconds and helps keep the service quality high. If anything goes wrong, contact Uber support through the app\'s "Help" section.',
+        tip: 'Uber shows the route and duration after your trip — keep this email as a record.',
+      },
+    ],
+  },
 ];

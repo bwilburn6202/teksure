@@ -78,6 +78,7 @@ import ParentalControls from "./pages/ParentalControls";
 import Favorites from "./pages/Favorites";
 import GetHelp from "./pages/GetHelp";
 import MyRequests from "./pages/MyRequests";
+import MyPath from "./pages/MyPath";
 import Profile from "./pages/Profile";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
@@ -186,6 +187,7 @@ const AppContent = () => {
         <Route path="/safety/parental-controls" element={<ParentalControls />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/get-help" element={<GetHelp />} />
+        <Route path="/my-path" element={<MyPath />} />
         <Route path="/my-requests" element={<MyRequests />} />
         <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
         <Route path="*" element={<NotFound />} />
