@@ -82,6 +82,13 @@ import MyPath from "./pages/MyPath";
 import Profile from "./pages/Profile";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
+import TechConfidenceScore from "./pages/tools/TechConfidenceScore";
+import ScamReport from "./pages/tools/ScamReport";
+import TechGiftGuide from "./pages/TechGiftGuide";
+import TechAnxiety from "./pages/TechAnxiety";
+import LocalHelp from "./pages/LocalHelp";
+import Certificate from "./pages/Certificate";
+import GiftSubscription from "./pages/GiftSubscription";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1 } },
@@ -190,6 +197,13 @@ const AppContent = () => {
         <Route path="/my-path" element={<MyPath />} />
         <Route path="/my-requests" element={<MyRequests />} />
         <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
+        <Route path="/tools/confidence-score" element={<TechConfidenceScore />} />
+        <Route path="/tools/scam-report" element={<ScamReport />} />
+        <Route path="/gift-guide" element={<TechGiftGuide />} />
+        <Route path="/tech-anxiety" element={<TechAnxiety />} />
+        <Route path="/local-help" element={<LocalHelp />} />
+        <Route path="/certificate" element={<Certificate />} />
+        <Route path="/gift" element={<GiftSubscription />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
