@@ -11,6 +11,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
+import { StarRating } from '@/components/StarRating';
 import { Progress } from '@/components/ui/progress';
 
 const categoryIcons: Record<GuideCategory, typeof Monitor> = {
@@ -58,6 +59,9 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
             {guide.title}
           </h3>
           <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
+          <div className="mt-2">
+            <StarRating guideSlug={guide.slug} readOnly size="sm" />
+          </div>
           <div className="flex flex-wrap gap-1.5 mt-3">
             {guide.tags.slice(0, 3).map(tag => (
               <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">

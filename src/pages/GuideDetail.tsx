@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, ThumbsUp, ThumbsDown, BookOpen } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
+import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -149,30 +150,15 @@ const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string;
   );
 };
 
-const HelpfulSection = () => {
-  const [vote, setVote] = useState<'up' | 'down' | null>(null);
-  return (
-    <Card className="mb-8">
-      <CardContent className="py-6 text-center">
-        <p className="font-semibold mb-3">Was this guide helpful?</p>
-        {vote ? (
-          <p className="text-sm text-muted-foreground">
-            {vote === 'up' ? '👍 Thanks for the feedback! Glad it helped.' : '👎 Thanks for letting us know. We\'ll work on improving it.'}
-          </p>
-        ) : (
-          <div className="flex items-center justify-center gap-4">
-            <Button variant="outline" size="lg" className="gap-2" onClick={() => setVote('up')}>
-              <ThumbsUp className="h-5 w-5" /> Yes
-            </Button>
-            <Button variant="outline" size="lg" className="gap-2" onClick={() => setVote('down')}>
-              <ThumbsDown className="h-5 w-5" /> No
-            </Button>
-          </div>
-        )}
-      </CardContent>
-    </Card>
-  );
-};
+const HelpfulSection = ({ guideSlug }: { guideSlug: string }) => (
+  <Card className="mb-8">
+    <CardContent className="py-6 text-center">
+      <p className="font-semibold mb-1">Rate this guide</p>
+      <p className="text-sm text-muted-foreground mb-4">How helpful was this guide?</p>
+      <StarRating guideSlug={guideSlug} size="lg" />
+    </CardContent>
+  </Card>
+);
 
 /** Scroll-based progress bar */
 const useStepProgress = (stepCount: number) => {
@@ -313,6 +299,9 @@ const GuideDetail = () => {
             </div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 leading-tight">{guide.title}</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">{guide.excerpt}</p>
+            <div className="mt-3">
+              <StarRating guideSlug={guide.slug} readOnly size="sm" />
+            </div>
 
             <div className="flex gap-2 mt-5">
               <Button variant="outline" size="sm" className="gap-2 no-print" onClick={() => window.print()}>
@@ -458,7 +447,7 @@ const GuideDetail = () => {
           )}
 
           {/* Was this helpful? */}
-          <HelpfulSection />
+          <HelpfulSection guideSlug={guide.slug} />
 
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-2 mb-8">

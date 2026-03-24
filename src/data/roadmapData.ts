@@ -84,7 +84,7 @@ export const roadmapItems: RoadmapItem[] = [
   // ── IN PROGRESS ───────────────────────────────────────────────
   { title: 'Senior Tech Mode', description: 'A one-tap simplified mode that enlarges buttons, hides advanced features, and slows down animations for a calmer experience.', status: 'in-progress', category: 'Accessibility' },
   { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages — currently rolling out for key pages.', status: 'in-progress', category: 'Accessibility' },
-  { title: 'Review & Rating System', description: 'Rate guides and technician sessions so the community can surface the most helpful content.', status: 'in-progress', category: 'Community' },
+  { title: 'Review & Rating System', description: 'Rate guides and technician sessions so the community can surface the most helpful content.', status: 'live', category: 'Community' },
   { title: 'Premium Subscription Tier', description: 'Unlock advanced tools, unlimited bookings, and priority support with a TekSure Premium plan.', status: 'in-progress', category: 'Support' },
   { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click — rolling out guide by guide.', status: 'in-progress', category: 'Guides' },
   { title: 'AI-Powered TekBot Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'in-progress', category: 'AI' },
