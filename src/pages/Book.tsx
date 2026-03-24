@@ -107,12 +107,8 @@ export default function Book() {
   const selectedDate = availableDates.find(d => d.date === form.date);
   const selectedSlot = slots.find(s => s.id === form.slot);
 
-  const handleSubmit = async () => {
-    setError('');
-    if (!form.name.trim()) { setError('Please enter your name.'); return; }
-    if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number so we can reach you.'); return; }
-
-    setSubmitting(true);
+  /** Save booking to DB and return its ID, or throw */
+  const createBookingRecord = async (payStatus: 'none' | 'deposit_pending') => {
     const { data, error: dbError } = await (supabase as any).from('bookings').insert({
       user_id: user?.id ?? null,
       name: form.name.trim(),
@@ -124,31 +120,80 @@ export default function Book() {
       preferred_slot: form.slot!,
       problem_description: form.description.trim() || null,
       status: 'pending',
+      payment_status: payStatus,
     }).select('id').single();
+    if (dbError) throw dbError;
+    return data?.id as string;
+  };
 
-    setSubmitting(false);
+  /** "Pay on the day" — save booking + confirmation email */
+  const handleSubmit = async () => {
+    setError('');
+    if (!form.name.trim()) { setError('Please enter your name.'); return; }
+    if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number so we can reach you.'); return; }
 
-    if (dbError) {
+    setSubmitting(true);
+    try {
+      const bookingId = await createBookingRecord('none');
+
+      // Fire-and-forget confirmation email
+      supabase.functions.invoke('send-booking-confirmation', {
+        body: {
+          name: form.name,
+          email: form.email || undefined,
+          service: selectedService?.label,
+          date: selectedDate?.label,
+          slot: selectedSlot?.label,
+          time: selectedSlot?.time,
+          bookingId,
+        },
+      }).catch(err => console.warn('Booking email failed (non-fatal):', err));
+
+      setBookingRef(bookingId?.slice(0, 8).toUpperCase() ?? 'TEKSURE');
+      setStep(5);
+    } catch (err) {
+      console.error(err);
       setError('Something went wrong. Please try again or call us directly.');
-      console.error(dbError);
-      return;
+    } finally {
+      setSubmitting(false);
     }
+  };
 
-    // Fire-and-forget booking confirmation email
-    supabase.functions.invoke('send-booking-confirmation', {
-      body: {
-        name: form.name,
-        email: form.email || undefined,
-        service: selectedService?.label,
-        date: selectedDate?.label,
-        slot: selectedSlot?.label,
-        time: selectedSlot?.time,
-        bookingId: data?.id,
-      },
-    }).catch(err => console.warn('Booking email failed (non-fatal):', err));
+  /** "Pay £15 deposit" — save booking, create Stripe session, redirect */
+  const handleStripeDeposit = async () => {
+    setError('');
+    if (!form.name.trim()) { setError('Please enter your name.'); return; }
+    if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number so we can reach you.'); return; }
 
-    setBookingRef(data?.id?.slice(0, 8).toUpperCase() ?? 'TEKSURE');
-    setStep(5);
+    setSubmitting(true);
+    try {
+      const bookingId = await createBookingRecord('deposit_pending');
+
+      const { data: fnData, error: fnError } = await supabase.functions.invoke(
+        'create-checkout-session',
+        {
+          body: {
+            bookingId,
+            customerName:  form.name,
+            customerEmail: form.email || undefined,
+            serviceLabel:  selectedService?.label,
+            preferredDate: selectedDate ? `${selectedDate.dayName} ${selectedDate.label}` : undefined,
+            preferredSlot: selectedSlot ? `${selectedSlot.label} (${selectedSlot.time})` : undefined,
+          },
+        },
+      );
+
+      if (fnError || !fnData?.url) {
+        throw new Error(fnError?.message ?? 'Could not start checkout. Please try "Pay on the day" instead.');
+      }
+
+      // Redirect to Stripe Checkout
+      window.location.href = fnData.url;
+    } catch (err: unknown) {
+      console.error(err);
+      setError(err instanceof Error ? err.message : 'Payment setup failed. Please try again.');
+      setSubmitting(false);
+    }
   };
 
   // Step 5 = success screen
@@ -476,27 +521,23 @@ export default function Book() {
                 </button>
               </div>
 
-              {/* Stripe checkout placeholder */}
+              {/* Stripe secure checkout badge */}
               {paymentOption === 'deposit' && (
-                <Card className="mb-5 border-dashed border-secondary/40">
-                  <CardContent className="p-4">
-                    <div className="flex items-center gap-2 mb-3">
-                      <CreditCard className="h-4 w-4 text-secondary" />
-                      <p className="text-sm font-medium">Card details</p>
-                      <span className="ml-auto flex items-center gap-1 text-xs text-muted-foreground">
-                        <Lock className="h-3 w-3" /> Secured by Stripe
-                      </span>
+                <Card className="mb-5 border-secondary/30 bg-secondary/5">
+                  <CardContent className="p-4 text-center">
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <Lock className="h-4 w-4 text-secondary" />
+                      <p className="text-sm font-medium">Secure checkout via Stripe</p>
                     </div>
-                    <div className="space-y-3">
-                      <div className="h-10 rounded-md bg-muted border border-border flex items-center px-3 text-sm text-muted-foreground">
-                        Card number — payment coming soon
-                      </div>
-                      <div className="grid grid-cols-2 gap-3">
-                        <div className="h-10 rounded-md bg-muted border border-border" />
-                        <div className="h-10 rounded-md bg-muted border border-border" />
-                      </div>
+                    <p className="text-xs text-muted-foreground">
+                      You'll be taken to Stripe's secure payment page to enter your card details. We never store your card information.
+                    </p>
+                    <div className="flex items-center justify-center gap-3 mt-3 opacity-60">
+                      <span className="text-xs font-medium tracking-wide">VISA</span>
+                      <span className="text-xs font-medium tracking-wide">MC</span>
+                      <span className="text-xs font-medium tracking-wide">AMEX</span>
+                      <span className="text-xs font-medium tracking-wide">APPLE PAY</span>
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2 text-center">Online payments will be available soon. Please select "Pay on the day" to complete your booking now.</p>
                   </CardContent>
                 </Card>
               )}
@@ -518,14 +559,14 @@ export default function Book() {
               <div className="flex gap-3">
                 <Button variant="ghost" onClick={() => setStep(2)}>← Back</Button>
                 <Button
-                  onClick={handleSubmit}
-                  disabled={submitting || paymentOption === 'deposit'}
+                  onClick={paymentOption === 'deposit' ? handleStripeDeposit : handleSubmit}
+                  disabled={submitting}
                   className="ml-auto gap-2"
                 >
                   {submitting
-                    ? <><Loader2 className="h-4 w-4 animate-spin" /> Booking…</>
+                    ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>
                     : paymentOption === 'deposit'
-                    ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit (coming soon)</>
+                    ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit securely</>
                     : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
                 </Button>
               </div>

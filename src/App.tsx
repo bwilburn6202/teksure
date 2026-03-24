@@ -69,6 +69,8 @@ import PhishingScanner from "./pages/tools/PhishingScanner";
 import WifiTroubleshooter from "./pages/tools/WifiTroubleshooter";
 import TechnicianProfile from "./pages/TechnicianProfile";
 import Book from "./pages/Book";
+import PaymentSuccess from "./pages/payment/Success";
+import PaymentCancel from "./pages/payment/Cancel";
 import ForumIndex from "./pages/forum/Index";
 import ThreadDetail from "./pages/forum/ThreadDetail";
 import NewThread from "./pages/forum/NewThread";
@@ -175,6 +177,8 @@ const AppContent = () => {
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/payment/success" element={<PaymentSuccess />} />
+        <Route path="/payment/cancel" element={<PaymentCancel />} />
         <Route path="/news" element={<News />} />
         <Route path="/forum" element={<ForumIndex />} />
         <Route path="/forum/new" element={<NewThread />} />
