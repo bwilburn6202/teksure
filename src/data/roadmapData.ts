@@ -87,12 +87,12 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Review & Rating System', description: 'Rate guides and technician sessions so the community can surface the most helpful content.', status: 'live', category: 'Community' },
   { title: 'Premium Subscription Tier', description: 'Unlock advanced tools, unlimited bookings, and priority support with a TekSure Premium plan.', status: 'in-progress', category: 'Support' },
   { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click — rolling out guide by guide.', status: 'live', category: 'Guides' },
-  { title: 'AI-Powered TekBot Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'in-progress', category: 'AI' },
+  { title: 'AI-Powered TekBot Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'live', category: 'AI' },
 
   // ── PLANNED ────────────────────────────────────────────────────
   { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention.', status: 'planned', category: 'Support' },
-  { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
-  { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'planned', category: 'Guides' },
+  { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'live', category: 'Guides' },
+  { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'live', category: 'Guides' },
   { title: 'Push Notifications', description: 'Opt in to get weekly tech tips, scam alerts, and new guide announcements right on your phone or browser.', status: 'live', category: 'UX' },
 
   // ── EXPLORING ─────────────────────────────────────────────────

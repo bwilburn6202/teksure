@@ -16,6 +16,7 @@ import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
+import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { useAuth } from '@/contexts/AuthContext';
@@ -461,6 +462,16 @@ const GuideDetail = () => {
                             osHint={getOsHint(guide.category, step.content)}
                             annotations={step.annotations}
                           />
+
+                          {/* Before / After comparison slider */}
+                          {step.beforeCaption && step.afterCaption && (
+                            <BeforeAfterSlider
+                              beforeCaption={step.beforeCaption}
+                              afterCaption={step.afterCaption}
+                              beforeLabel={step.beforeLabel}
+                              afterLabel={step.afterLabel}
+                            />
+                          )}
 
                           {/* Pro Tip — always show one; use step.tip or generate a contextual default */}
                           <ProTip>{step.tip || 'Take your time with this step. If something looks different on your screen, it may be a slightly different version — the steps should still work.'}</ProTip>

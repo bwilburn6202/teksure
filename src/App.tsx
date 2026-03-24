@@ -4,6 +4,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { WifiOff } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
@@ -82,11 +84,34 @@ const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1 } },
 });
 
+/** Offline banner — shown at top of screen when network is lost */
+function OfflineBanner() {
+  const [offline, setOffline] = useState(!navigator.onLine);
+  useEffect(() => {
+    const goOffline = () => setOffline(true);
+    const goOnline  = () => setOffline(false);
+    window.addEventListener('offline', goOffline);
+    window.addEventListener('online',  goOnline);
+    return () => {
+      window.removeEventListener('offline', goOffline);
+      window.removeEventListener('online',  goOnline);
+    };
+  }, []);
+  if (!offline) return null;
+  return (
+    <div className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-500 text-white text-sm font-medium py-2 px-4 shadow-lg">
+      <WifiOff className="h-4 w-4 shrink-0" />
+      <span>You're offline — previously visited guides are still available.</span>
+    </div>
+  );
+}
+
 const AppContent = () => {
   const { open, onClose } = useSearchModal();
 
   return (
     <BrowserRouter>
+      <OfflineBanner />
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
       <Toaster />
