@@ -6,6 +6,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { BookOpen, Clock, ChevronDown, ChevronRight } from 'lucide-react';
 
 interface BlogPost {
@@ -123,6 +124,156 @@ const BLOG_POSTS: BlogPost[] = [
       '7. Mute when not speaking: On group calls, mute your microphone when you\'re not talking to prevent background noise disrupting others.',
     ],
   },
+  {
+    slug: 'what-is-the-cloud',
+    title: 'What Exactly Is "the Cloud" — and Should You Use It?',
+    excerpt: 'Everyone talks about "the cloud" but few people explain what it actually means. Here\'s a plain-English guide to what it is, how it works, and whether it\'s right for you.',
+    category: 'Explainers',
+    emoji: '☁️',
+    date: '2026-03-22',
+    readTime: '5 min',
+    content: [
+      '"The cloud" simply means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data centre, where it\'s stored safely.',
+      'The big advantage: your files are available from any device, anywhere. Lose your phone? Your photos are still safe in the cloud. Get a new laptop? Sign in and all your documents reappear.',
+      'Popular cloud services you may already use: iCloud (Apple), Google Drive, Google Photos, OneDrive (Microsoft), and Dropbox. Most offer free storage up to a certain limit, with paid plans for more space.',
+      'Is it safe? Reputable cloud services encrypt your files both in transit and at rest, meaning even the company itself can\'t easily read them. They\'re generally safer than keeping everything on one device that could be lost, stolen, or broken.',
+      'Should you use it? For most people, yes — especially for photos. The peace of mind of knowing your memories are backed up even if something happens to your phone is worth it. Start with Google Photos or iCloud, both of which back up your photos automatically.',
+      'Privacy note: cloud providers do have access to your data in theory. For very sensitive documents, consider encrypting them before uploading, or keeping them locally.',
+    ],
+  },
+  {
+    slug: 'phone-battery-tips',
+    title: '10 Ways to Make Your Phone Battery Last Longer',
+    excerpt: 'Battery life is one of the top complaints about modern smartphones. These practical tips can add hours to your daily charge — without needing a new phone.',
+    category: 'Tips & Tricks',
+    emoji: '🔋',
+    date: '2026-03-19',
+    readTime: '4 min',
+    content: [
+      'Modern phones are powerful — but that power comes at a cost to battery life. Here are the most effective things you can do to extend how long your charge lasts.',
+      '1. Turn down screen brightness: The screen is the single biggest drain on battery life. Reducing brightness even slightly — or enabling auto-brightness — can add 1-2 hours to your day.',
+      '2. Enable battery saver mode: Both iPhone (Low Power Mode) and Android (Battery Saver) reduce background activity when you\'re getting low. You can set these to activate automatically at 20%.',
+      '3. Turn off WiFi and Bluetooth when not in use: These radios constantly scan for nearby networks and devices, using power even when you\'re not actively using them.',
+      '4. Close unused apps: Apps running in the background still use battery. On iPhone, swipe up from the bottom and flick away apps. On Android, tap the square button and clear all.',
+      '5. Check battery-draining apps: Go to Settings → Battery to see which apps are using the most power. Social media and email apps are usually the culprits.',
+      '6. Reduce email push notifications: Having email "push" every few minutes constantly wakes your phone. Change to "fetch" every 30 minutes instead.',
+      '7. Avoid charging to 100% or letting it hit 0%: Keeping your battery between 20-80% extends its overall lifespan. Many modern phones have a setting to stop charging at 80%.',
+      '8. Turn off Location Services for apps that don\'t need it: Go to Settings → Privacy → Location Services and change most apps to "Only while using" rather than "Always".',
+      '9. Use Dark Mode: If your phone has an OLED screen (most modern flagships), dark mode saves significant battery because black pixels are literally turned off.',
+      '10. Keep your phone at room temperature: Extreme heat or cold damages lithium batteries permanently. Never leave your phone in a hot car.',
+    ],
+  },
+  {
+    slug: 'understanding-smart-speakers',
+    title: 'Smart Speakers Explained: Amazon Echo, Google Nest, and Apple HomePod',
+    excerpt: 'Smart speakers let you control devices, play music, and ask questions using just your voice. But which one is right for you — and should you be worried about privacy?',
+    category: 'Devices',
+    emoji: '🔊',
+    date: '2026-03-15',
+    readTime: '5 min',
+    content: [
+      'Smart speakers are voice-activated devices that sit in your home and respond to questions, play music, set reminders, and control smart home devices. The three main options are Amazon Echo (Alexa), Google Nest (Google Assistant), and Apple HomePod (Siri).',
+      'Amazon Echo / Alexa: The most popular and affordable option. Excellent for shopping, Amazon Music, audiobooks, and smart home control. The basic Echo Dot costs around £30.',
+      'Google Nest: Best for answering general knowledge questions (Google search built in), setting reminders, and integrating with Google Calendar and Gmail. Particularly good if you already use Google services.',
+      'Apple HomePod: Best for iPhone users who want premium sound quality. Integrates tightly with iCloud, Apple Music, and Apple\'s Home app for smart home control.',
+      'Privacy concerns are real: Smart speakers are always listening for their "wake word" (Alexa / Hey Google / Hey Siri). This means audio is being processed continuously. All three companies have faced criticism for storing voice recordings. You can review and delete your recordings in each app\'s settings.',
+      'Practical steps: Mute the microphone when you want privacy (all devices have a physical mute button). Regularly review your voice history in the companion app. Consider whether the convenience is worth the trade-off for your situation.',
+      'For older adults: Smart speakers can be genuinely life-changing — allowing hands-free calls, medication reminders, weather checks, and music without needing to pick up a phone or find glasses.',
+    ],
+  },
+  {
+    slug: 'online-shopping-safely',
+    title: 'How to Shop Online Safely — A Checklist for Every Purchase',
+    excerpt: 'Online shopping is convenient and often cheaper — but scammers create convincing fake shops. This checklist protects you every time.',
+    category: 'Security',
+    emoji: '🛍️',
+    date: '2026-03-12',
+    readTime: '4 min',
+    content: [
+      'Online shopping is fantastic — but fraudulent websites cost UK consumers over £100 million every year. Most of these scams are easy to avoid once you know what to look for.',
+      'Before you buy: Check for HTTPS (padlock icon in your browser\'s address bar) — this means the connection is encrypted. However, even scam sites can have HTTPS now, so it\'s necessary but not sufficient.',
+      'Check the domain name carefully: Scammers register near-identical domains like "amaz0n.co.uk" or "eba y.com". Always read the web address slowly before entering any details.',
+      'Google the company + "reviews" or "+ scam": A few minutes of research can save you significant money. Look for reviews on independent platforms like Trustpilot.',
+      'Be suspicious of prices that seem too good to be true: If a designer item is 90% off, it\'s almost certainly counterfeit or a scam.',
+      'Use a credit card where possible: Credit cards offer much stronger fraud protection than debit cards or bank transfers. Under Section 75 of the Consumer Credit Act, purchases over £100 are protected.',
+      'Never transfer money directly via bank transfer for purchases from strangers: Once money is transferred, it\'s very difficult to recover.',
+      'Check the returns policy before buying: Legitimate retailers have clear, accessible returns policies. If you can\'t find one, that\'s a red flag.',
+      'Safe payment methods: PayPal, credit card, and Apple/Google Pay all offer buyer protection. Gift cards and bank transfers do not.',
+    ],
+  },
+  {
+    slug: 'social-media-privacy',
+    title: 'Protecting Your Privacy on Social Media: A Practical Guide',
+    excerpt: 'Most people share far more than they realise on social media — and much of it is visible to strangers. Here\'s how to lock down your accounts in 15 minutes.',
+    category: 'Security',
+    emoji: '🔒',
+    date: '2026-03-10',
+    readTime: '5 min',
+    content: [
+      'Social media platforms are designed to encourage sharing — which is great for staying connected, but can create privacy risks if you\'re not careful. Here\'s how to tighten up the main ones.',
+      'Facebook: Go to Settings & Privacy → Privacy Checkup. Change "Who can see your posts?" to Friends rather than Public. Review your "About" section and remove your phone number, home address, and employer if listed. Turn off facial recognition if it\'s available.',
+      'Who can find you: Under Settings → How People Find and Contact You, change your phone number and email lookups to "Friends" only. This prevents strangers from finding your profile from your contact details.',
+      'Instagram: Go to Settings → Account → Account Privacy and switch to a Private account if you only want followers you approve to see your posts. Be careful about geotagging — your home and regular locations can be inferred from background details in photos.',
+      'WhatsApp: Go to Settings → Privacy. Set Last Seen, Profile Photo, and Status to "My Contacts" rather than "Everyone." Enable two-step verification under Settings → Account → Two-Step Verification.',
+      'General rules: Never accept friend requests from people you don\'t know. Be cautious about what appears in your photos — house numbers, street signs, school uniforms. Criminals use social media to case potential targets.',
+      'Oversharing is more dangerous than most people realise: Announcing you\'re going on holiday publicly tells burglars your home will be empty. Posting birthday or family information helps scammers answer security questions.',
+    ],
+  },
+  {
+    slug: 'tablet-vs-laptop',
+    title: 'Tablet or Laptop? How to Choose the Right Device for You',
+    excerpt: 'Many people end up buying the wrong device. Here\'s an honest comparison that will help you decide based on how you actually use technology.',
+    category: 'Devices',
+    emoji: '💻',
+    date: '2026-03-08',
+    readTime: '5 min',
+    content: [
+      'The single most common technology purchase mistake is buying a device that\'s wrong for how you actually use it. Let\'s break down when each makes sense.',
+      'Choose a tablet if: You mainly use your device for browsing the web, watching videos, video calling, reading, checking emails, and social media. Tablets are lighter, have longer battery life, and are generally easier for beginners. The iPad is the most beginner-friendly option.',
+      'Choose a laptop if: You need to type a lot (documents, spreadsheets, emails), use specific software like accounting programs or Photoshop, print regularly, or use USB devices like printers or external drives. Laptops are more capable but more complex.',
+      'The hybrid option: Some devices bridge the gap — like the iPad with a keyboard case, or Microsoft Surface tablets. These work well but can be more expensive.',
+      'For absolute beginners: We generally recommend an iPad as a first device. The App Store is well-curated, updates are simple, and the learning curve is gentler. An Amazon Fire tablet is a more budget-friendly option for basic use.',
+      'Price guide: A basic Android tablet: £100-200. Entry-level iPad: £300-400. Budget laptop: £250-400. Mid-range laptop: £500-800.',
+      'The most important question to ask: "What will I actually use it for?" Be honest with yourself. If you mostly want to watch iPlayer and video call your grandchildren, a £300 tablet will serve you better than a £600 laptop.',
+    ],
+  },
+  {
+    slug: 'getting-started-with-google',
+    title: 'Getting Started with Google: Maps, Translate, and Photos Explained',
+    excerpt: 'Google offers some genuinely brilliant free tools that many people haven\'t discovered. Here\'s how Maps, Translate, and Photos can make daily life easier.',
+    category: 'Tips & Tricks',
+    emoji: '🗺️',
+    date: '2026-03-05',
+    readTime: '6 min',
+    content: [
+      'Google offers a suite of free tools that can genuinely change how you navigate the world, communicate, and preserve memories. Here are three worth knowing about.',
+      'Google Maps: Far more than just directions. Use the "Explore" tab to find nearby restaurants, pharmacies, and shops with opening hours and reviews. The Street View feature lets you see what a destination looks like before you arrive. Offline maps let you download an area to navigate without mobile data.',
+      'Google Maps Tips: Save your home and work addresses under "Saved" for instant routing. Share your real-time location with family members for peace of mind when travelling alone. Use the wheelchair accessibility filter if mobility is a consideration.',
+      'Google Translate: Point your camera at text in a foreign language — a menu, sign, or document — and it translates instantly on screen. You can also type or speak text for translation. Works with over 100 languages and is free.',
+      'Translate in conversation: The "Conversation" mode lets two people speak to each other in different languages and hear the translation automatically — remarkable for communication with carers, medical professionals, or while travelling.',
+      'Google Photos: Automatically backs up every photo from your phone to the cloud. The search feature is astonishingly good — type "beach 2019" or "birthday cake" and it finds matching photos. Shared albums let you exchange photos with family without sending individual attachments.',
+      'Google Photos memory features: The "Memories" section resurfaces photos from the same date in previous years — a lovely way to look back at moments. You can create albums, slideshows, and even books from your photos.',
+    ],
+  },
+  {
+    slug: 'understanding-subscriptions',
+    title: 'Are You Paying for Services You\'ve Forgotten About? How to Audit Your Subscriptions',
+    excerpt: 'The average person wastes over £300 a year on forgotten subscriptions. Here\'s how to find and cancel the ones you no longer need.',
+    category: 'Tips & Tricks',
+    emoji: '💳',
+    date: '2026-03-03',
+    readTime: '4 min',
+    content: [
+      'Subscription services are designed to be easy to start and easy to forget. Streaming services, app subscriptions, cloud storage plans, and digital magazines quietly drain money every month. The average UK adult now spends over £600 a year on subscriptions.',
+      'How to find your subscriptions on iPhone: Go to Settings → [your name] → Subscriptions. This shows every active subscription billed through Apple.',
+      'How to find subscriptions on Android: Open the Google Play Store → tap your profile picture → Payments & subscriptions → Subscriptions.',
+      'Check your bank and credit card statements: Filter for recurring charges you don\'t recognise. Many subscriptions disguise themselves as unfamiliar company names — Amazon Prime shows as "AMZN DIGITAL SERVICES".',
+      'Email search: Search your inbox for "subscription", "receipt", "renewal", and "billing" to surface subscriptions that aren\'t billed through your phone.',
+      'The cancellation question to ask yourself: "Have I used this in the last 30 days?" If the answer is no, cancel it. You can always resubscribe if you miss it.',
+      'Useful free tools: Many banks now have subscription tracking built into their apps. Monzo, Starling, and HSBC all show recurring payments grouped by merchant.',
+      'Free alternatives to popular subscriptions: Instead of Microsoft Office (£60/year), try Google Docs (free). Instead of paying for news subscriptions, most local libraries provide free access to digital newspapers.',
+    ],
+  },
 ];
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -131,6 +282,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   Devices: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
   'Scam Alerts': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
   'Tips & Tricks': 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  Explainers: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
 };
 
 const CATEGORIES = ['All', ...new Set(BLOG_POSTS.map(p => p.category))];
@@ -282,6 +434,9 @@ export default function Blog() {
           {filtered.length === 0 && (
             <p className="text-center text-muted-foreground py-12">No posts in this category yet.</p>
           )}
+
+          {/* Newsletter */}
+          <NewsletterSignup className="mt-12" />
         </div>
       </main>
 

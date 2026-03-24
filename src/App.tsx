@@ -20,6 +20,7 @@ import TwoFactorSetup from "./pages/tools/TwoFactorSetup";
 import Notifications from "./pages/Notifications";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
+import { FloatingChat } from "@/components/FloatingChat";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
@@ -129,6 +130,7 @@ const AppContent = () => {
       <OfflineBanner />
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
+      <FloatingChat />
       <Toaster />
       <Sonner />
       <Routes>
