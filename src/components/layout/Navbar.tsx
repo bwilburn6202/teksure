@@ -43,6 +43,9 @@ export function Navbar() {
         { to: '/forum', label: 'Community Forum' },
         { to: '/community/ambassadors', label: 'Ambassadors' },
         { to: '/favorites', label: 'Favorites' },
+        { to: '/progress-report', label: 'My Progress' },
+        { to: '/local-help', label: 'Find Local Help' },
+        { to: '/tech-anxiety', label: 'Tech Anxiety Help' },
       ],
     },
     {
@@ -50,6 +53,10 @@ export function Navbar() {
       icon: Wrench,
       links: [
         { to: '/tools', label: 'Tools Dashboard' },
+        { to: '/ai-tutor', label: 'AI Tutor' },
+        { to: '/tools/confidence-score', label: 'Confidence Score' },
+        { to: '/tools/guide-packs', label: 'Printable Guide Packs' },
+        { to: '/tools/scam-report', label: 'Report a Scam' },
         { to: '/glossary', label: 'Glossary' },
       ],
     },
@@ -69,6 +76,11 @@ export function Navbar() {
         { to: '/pricing', label: 'Pricing' },
         { to: '/about', label: 'About' },
         { to: '/roadmap', label: 'Roadmap' },
+        { to: '/caregiver', label: 'Caregiver Hub' },
+        { to: '/family-sharing', label: 'Family Sharing' },
+        { to: '/certificate', label: 'Get a Certificate' },
+        { to: '/gift-guide', label: 'Tech Gift Guide' },
+        { to: '/gift', label: 'Gift a Subscription' },
       ],
     },
   ];

@@ -84,11 +84,16 @@ import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 import TechConfidenceScore from "./pages/tools/TechConfidenceScore";
 import ScamReport from "./pages/tools/ScamReport";
+import GuidePacks from "./pages/tools/GuidePacks";
 import TechGiftGuide from "./pages/TechGiftGuide";
 import TechAnxiety from "./pages/TechAnxiety";
 import LocalHelp from "./pages/LocalHelp";
 import Certificate from "./pages/Certificate";
 import GiftSubscription from "./pages/GiftSubscription";
+import AiTutor from "./pages/AiTutor";
+import ProgressReport from "./pages/ProgressReport";
+import FamilySharing from "./pages/FamilySharing";
+import Caregiver from "./pages/Caregiver";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1 } },
@@ -199,11 +204,16 @@ const AppContent = () => {
         <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
         <Route path="/tools/confidence-score" element={<TechConfidenceScore />} />
         <Route path="/tools/scam-report" element={<ScamReport />} />
+        <Route path="/tools/guide-packs" element={<GuidePacks />} />
         <Route path="/gift-guide" element={<TechGiftGuide />} />
         <Route path="/tech-anxiety" element={<TechAnxiety />} />
         <Route path="/local-help" element={<LocalHelp />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/gift" element={<GiftSubscription />} />
+        <Route path="/ai-tutor" element={<AiTutor />} />
+        <Route path="/progress-report" element={<ProgressReport />} />
+        <Route path="/family-sharing" element={<FamilySharing />} />
+        <Route path="/caregiver" element={<Caregiver />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
