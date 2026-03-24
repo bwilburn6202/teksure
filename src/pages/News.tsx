@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -267,6 +268,8 @@ export default function News() {
           {filtered.length === 0 && (
             <p className="text-center text-muted-foreground py-12">No news in this category yet.</p>
           )}
+
+          <NewsletterSignup className="mt-10" />
         </div>
       </main>
 

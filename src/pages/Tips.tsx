@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -179,6 +180,9 @@ export default function Tips() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="container pb-16 max-w-4xl">
+          <NewsletterSignup className="mt-10" />
         </div>
       </main>
       <Footer />
