@@ -6,7 +6,7 @@ import {
   Search, Shield, Zap, Star, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, TrendingUp, Users, ChevronRight, Clock,
   Wifi, Printer, Lock, HardDrive, MousePointer, Smartphone,
-  AlertTriangle, ThumbsUp, Phone, Mail, Loader2, CheckCircle
+  AlertTriangle, ThumbsUp, Phone, Mail, Loader2, CheckCircle, Map
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -252,7 +252,7 @@ const Index = () => {
               {[
                 { icon: ThumbsUp, label: '50,000+ Problems Solved' },
                 { icon: Star,     label: '4.9★ Average Rating' },
-                { icon: BookOpen, label: '180+ Free Guides' },
+                { icon: BookOpen, label: '236+ Free Guides' },
                 { icon: Shield,   label: 'No Sign-up Needed' },
                 { icon: Users,    label: '12,000+ Members' },
               ].map(({ icon: Icon, label }) => (
@@ -281,7 +281,7 @@ const Index = () => {
             <span className="hidden sm:block w-px h-4 bg-border" />
             <span className="flex items-center gap-2">
               <BookOpen className="h-4 w-4 text-primary/60" />
-              <strong className="text-foreground">180+</strong> free step-by-step guides
+              <strong className="text-foreground">236+</strong> free step-by-step guides
             </span>
             <span className="hidden sm:block w-px h-4 bg-border" />
             <span className="flex items-center gap-2">
@@ -503,6 +503,63 @@ const Index = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* My Learning Path promo */}
+      <section className="container py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="rounded-3xl overflow-hidden bg-gradient-to-br from-secondary/10 via-primary/5 to-secondary/5 border border-secondary/20"
+        >
+          <div className="grid md:grid-cols-2 gap-0">
+            {/* Left — text */}
+            <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 bg-secondary/15 text-secondary rounded-full px-3 py-1 text-xs font-semibold mb-5 w-fit">
+                <Map className="h-3.5 w-3.5" />
+                New Feature
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
+                Your personal tech<br className="hidden md:block" /> learning path
+              </h2>
+              <p className="text-muted-foreground mb-6 leading-relaxed max-w-sm">
+                Not sure where to start? Answer two quick questions and we'll build a guided step-by-step plan — from the basics right through to confident, independent tech use.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 w-fit">
+                  <Link to="/my-path">
+                    <Map className="h-4 w-4" />
+                    Start My Learning Path
+                  </Link>
+                </Button>
+                <Button asChild variant="ghost" size="lg" className="w-fit text-muted-foreground">
+                  <Link to="/guides">Browse all guides</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right — steps preview */}
+            <div className="bg-card/60 border-l border-secondary/10 p-8 md:p-12 flex flex-col justify-center gap-4">
+              {[
+                { emoji: '🔰', label: 'Beginner Basics', desc: 'Passwords, Wi-Fi, email fundamentals' },
+                { emoji: '🛡️', label: 'Safety Essentials', desc: 'Scam spotting, privacy, safe browsing' },
+                { emoji: '📱', label: 'Devices & Apps', desc: 'Get the most from your phone or tablet' },
+              ].map((path) => (
+                <div key={path.label} className="flex items-center gap-4 p-3 rounded-xl bg-background/70 border border-border/50">
+                  <span className="text-2xl">{path.emoji}</span>
+                  <div>
+                    <p className="font-semibold text-sm">{path.label}</p>
+                    <p className="text-xs text-muted-foreground">{path.desc}</p>
+                  </div>
+                  <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto shrink-0" />
+                </div>
+              ))}
+              <p className="text-xs text-muted-foreground text-center pt-1">5 paths · 236 guides · your pace</p>
+            </div>
+          </div>
+        </motion.div>
       </section>
 
       {/* How It Works */}
