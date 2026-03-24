@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import DeviceHealthDashboard from "./pages/tools/DeviceHealthDashboard";
 import BluetoothTroubleshooter from "./pages/tools/BluetoothTroubleshooter";
 import TechHealthQuiz from "./pages/tools/TechHealthQuiz";
@@ -14,6 +15,7 @@ import StorageCleanup from "./pages/tools/StorageCleanup";
 import VpnGuide from "./pages/tools/VpnGuide";
 import AppPermissions from "./pages/tools/AppPermissions";
 import TwoFactorSetup from "./pages/tools/TwoFactorSetup";
+import Notifications from "./pages/Notifications";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
@@ -144,6 +146,7 @@ const AppContent = () => {
         <Route path="/tools/vpn-guide" element={<VpnGuide />} />
         <Route path="/tools/app-permissions" element={<AppPermissions />} />
         <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
+        <Route path="/notifications" element={<Notifications />} />
         <Route path="/technicians" element={<TechnicianProfile />} />
         <Route path="/technicians/:id" element={<TechnicianProfile />} />
         <Route path="/book" element={<Book />} />
@@ -166,13 +169,15 @@ const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <SeniorModeProvider>
-          <HighContrastProvider>
-            <AuthProvider>
-              <AppContent />
-            </AuthProvider>
-          </HighContrastProvider>
-        </SeniorModeProvider>
+        <LanguageProvider>
+          <SeniorModeProvider>
+            <HighContrastProvider>
+              <AuthProvider>
+                <AppContent />
+              </AuthProvider>
+            </HighContrastProvider>
+          </SeniorModeProvider>
+        </LanguageProvider>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

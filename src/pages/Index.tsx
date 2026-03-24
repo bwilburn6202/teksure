@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -114,6 +115,7 @@ function NewsletterSignup() {
 const Index = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -188,10 +190,11 @@ const Index = () => {
             </motion.div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1]">
-              Tech made <span className="text-secondary">simple.</span>
+              {t('hero.title', 'Tech Help Made Simple').split(' ').slice(0, -1).join(' ')}{' '}
+              <span className="text-secondary">{t('hero.title', 'Tech Help Made Simple').split(' ').slice(-1)[0]}</span>
             </h1>
             <p className="text-lg md:text-xl opacity-80 mb-2 max-w-xl mx-auto">
-              Free guides, quick fixes, and real human support — all in one place.
+              {t('hero.subtitle', 'Free guides, quick fixes, and real human support — all in one place.')}
             </p>
             <p className="text-sm opacity-55 mb-8">No jargon. No robots. Just answers.</p>
 

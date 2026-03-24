@@ -9,7 +9,7 @@ import {
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
   MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
   Bluetooth, ClipboardCheck, Trash2,
-  ShieldHalf, Sliders, KeySquare,
+  ShieldHalf, Sliders, KeySquare, Bell,
 } from 'lucide-react';
 
 const tools = [
@@ -107,6 +107,14 @@ const tools = [
     icon: KeySquare,
     path: '/tools/two-factor-setup',
     color: 'text-indigo-600',
+    badge: 'New',
+  },
+  {
+    title: 'Push Notifications',
+    description: 'Opt in to get weekly tech tips, scam alerts, and new guide announcements right on your phone or browser.',
+    icon: Bell,
+    path: '/notifications',
+    color: 'text-amber-500',
     badge: 'New',
   },
   {

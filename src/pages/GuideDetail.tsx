@@ -15,7 +15,7 @@ import { CopyButton } from '@/components/CopyButton';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
-import { guides, categoryLabels, type GuideStep } from '@/data/guides';
+import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { useAuth } from '@/contexts/AuthContext';
@@ -39,7 +39,65 @@ const getOsHint = (category: string, stepContent: string): 'windows' | 'mac' | '
 
 /* ── Sub-components ─────────────────────────────── */
 
-const MockScreenshot = ({ description, osHint }: { description: string; osHint?: 'windows' | 'mac' | 'browser' | 'generic' }) => {
+const AnnotationLayer = ({ annotations }: { annotations: ScreenshotAnnotation[] }) => (
+  <svg
+    className="absolute inset-0 w-full h-full pointer-events-none"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="none"
+  >
+    {annotations.map((a, i) => {
+      if (a.type === 'callout') {
+        return (
+          <g key={i}>
+            <circle cx={a.x} cy={a.y} r="4.5" fill="#ef4444" opacity="0.92" />
+            <circle cx={a.x} cy={a.y} r="4.5" fill="none" stroke="white" strokeWidth="0.8" />
+            <text x={a.x} y={a.y + 1.6} textAnchor="middle" fontSize="4.5" fill="white" fontWeight="bold" fontFamily="sans-serif">
+              {a.label ?? String(i + 1)}
+            </text>
+          </g>
+        );
+      }
+      if (a.type === 'arrow') {
+        const dir = a.direction ?? 'down';
+        const arrowPaths: Record<string, string> = {
+          down:  `M${a.x},${a.y - 8} L${a.x},${a.y - 1} M${a.x - 2.5},${a.y - 4} L${a.x},${a.y - 1} L${a.x + 2.5},${a.y - 4}`,
+          up:    `M${a.x},${a.y + 8} L${a.x},${a.y + 1} M${a.x - 2.5},${a.y + 4} L${a.x},${a.y + 1} L${a.x + 2.5},${a.y + 4}`,
+          right: `M${a.x - 8},${a.y} L${a.x - 1},${a.y} M${a.x - 4},${a.y - 2.5} L${a.x - 1},${a.y} L${a.x - 4},${a.y + 2.5}`,
+          left:  `M${a.x + 8},${a.y} L${a.x + 1},${a.y} M${a.x + 4},${a.y - 2.5} L${a.x + 1},${a.y} L${a.x + 4},${a.y + 2.5}`,
+        };
+        return (
+          <g key={i}>
+            <path d={arrowPaths[dir]} stroke="#ef4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            {a.label && (
+              <text x={a.x} y={a.y - 11} textAnchor="middle" fontSize="4" fill="#ef4444" fontWeight="bold" fontFamily="sans-serif">{a.label}</text>
+            )}
+          </g>
+        );
+      }
+      if (a.type === 'highlight') {
+        const w = a.width ?? 20;
+        const h = a.height ?? 10;
+        return (
+          <g key={i}>
+            <rect x={a.x} y={a.y} width={w} height={h} fill="#fbbf24" opacity="0.25" rx="1" />
+            <rect x={a.x} y={a.y} width={w} height={h} fill="none" stroke="#f59e0b" strokeWidth="0.8" rx="1" />
+          </g>
+        );
+      }
+      return null;
+    })}
+  </svg>
+);
+
+const MockScreenshot = ({
+  description,
+  osHint,
+  annotations,
+}: {
+  description: string;
+  osHint?: 'windows' | 'mac' | 'browser' | 'generic';
+  annotations?: ScreenshotAnnotation[];
+}) => {
   const toolbarLabel = osHint === 'browser' ? 'Browser' : osHint === 'mac' ? 'Finder' : osHint === 'windows' ? 'Windows' : 'Screen';
   const addressText = osHint === 'browser' ? 'https://example.com' : osHint === 'windows' ? '⊞ Settings' : osHint === 'mac' ? '⌘ System Preferences' : '⚙ Settings';
   return (
@@ -55,12 +113,30 @@ const MockScreenshot = ({ description, osHint }: { description: string; osHint?:
         </div>
         <span className="text-[10px] text-muted-foreground hidden sm:inline">{toolbarLabel}</span>
       </div>
-      <div className="bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[120px]">
+      <div className="relative bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[140px]">
         <div className="flex items-start gap-3 max-w-md">
           <Info className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
           <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
         </div>
+        {annotations && annotations.length > 0 && (
+          <AnnotationLayer annotations={annotations} />
+        )}
       </div>
+      {annotations && annotations.length > 0 && (
+        <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
+          {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
+            <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+              {a.type === 'callout' && (
+                <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
+                  {a.label}
+                </span>
+              )}
+              {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
+              {a.label}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -383,6 +459,7 @@ const GuideDetail = () => {
                           <MockScreenshot
                             description={step.screenshotDesc || step.content}
                             osHint={getOsHint(guide.category, step.content)}
+                            annotations={step.annotations}
                           />
 
                           {/* Pro Tip — always show one; use step.tip or generate a contextual default */}

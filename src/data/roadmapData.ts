@@ -83,17 +83,17 @@ export const roadmapItems: RoadmapItem[] = [
 
   // ── IN PROGRESS ───────────────────────────────────────────────
   { title: 'Senior Tech Mode', description: 'A one-tap simplified mode that enlarges buttons, hides advanced features, and slows down animations for a calmer experience.', status: 'in-progress', category: 'Accessibility' },
-  { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages — currently rolling out for key pages.', status: 'in-progress', category: 'Accessibility' },
+  { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages — currently rolling out for key pages.', status: 'live', category: 'Accessibility' },
   { title: 'Review & Rating System', description: 'Rate guides and technician sessions so the community can surface the most helpful content.', status: 'live', category: 'Community' },
   { title: 'Premium Subscription Tier', description: 'Unlock advanced tools, unlimited bookings, and priority support with a TekSure Premium plan.', status: 'in-progress', category: 'Support' },
-  { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click — rolling out guide by guide.', status: 'in-progress', category: 'Guides' },
+  { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click — rolling out guide by guide.', status: 'live', category: 'Guides' },
   { title: 'AI-Powered TekBot Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'in-progress', category: 'AI' },
 
   // ── PLANNED ────────────────────────────────────────────────────
   { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention.', status: 'planned', category: 'Support' },
   { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'planned', category: 'Guides' },
   { title: 'Offline Guide Access', description: 'Save guides to your device so you can read them even without an internet connection.', status: 'planned', category: 'Guides' },
-  { title: 'Push Notifications', description: 'Opt in to get weekly tech tips, scam alerts, and new guide announcements right on your phone or browser.', status: 'planned', category: 'UX' },
+  { title: 'Push Notifications', description: 'Opt in to get weekly tech tips, scam alerts, and new guide announcements right on your phone or browser.', status: 'live', category: 'UX' },
 
   // ── EXPLORING ─────────────────────────────────────────────────
   { title: 'Smart Home Setup Hub', description: 'Step-by-step help for setting up smart speakers, lights, thermostats, and more.', status: 'exploring', category: 'Guides' },

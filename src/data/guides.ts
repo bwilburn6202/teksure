@@ -1,11 +1,30 @@
 export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'safety-guides' | 'how-to';
 
+/** A visual callout overlaid on a guide step's screenshot */
+export interface ScreenshotAnnotation {
+  /** 'callout' = numbered circle, 'arrow' = pointer arrow, 'highlight' = coloured box */
+  type: 'callout' | 'arrow' | 'highlight';
+  /** Percentage from left edge (0-100) */
+  x: number;
+  /** Percentage from top edge (0-100) */
+  y: number;
+  /** For callouts: the number label; for arrows/highlights: optional text tooltip */
+  label?: string;
+  /** Arrow direction when type==='arrow' */
+  direction?: 'up' | 'down' | 'left' | 'right';
+  /** highlight width/height as % of screenshot */
+  width?: number;
+  height?: number;
+}
+
 export interface GuideStep {
   title: string;
   content: string;
   screenshotDesc?: string;
   tip?: string;
   warning?: string;
+  /** Optional visual annotations drawn over the step's screenshot */
+  annotations?: ScreenshotAnnotation[];
 }
 
 export interface Guide {
@@ -79,11 +98,11 @@ export const guides: Guide[] = [
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', screenshotDesc: 'Windows taskbar bottom-right corner with Wi-Fi icon, volume, and battery icons. Wi-Fi icon is highlighted with a tooltip "Not connected – connections available".' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotDesc: 'Windows Quick Settings panel showing Wi-Fi toggle in OFF state (grayed out), with Bluetooth and Airplane Mode toggles next to it.' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotDesc: 'Wi-Fi network dropdown list showing 6 networks: "HomeNetwork_5G" (highlighted in blue), "Neighbors_WiFi", "CoffeeShop_Free", "DIRECT-printer", "Xfinity-2G", and "Hidden network".', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotDesc: 'Wi-Fi password entry dialog titled "Enter the network security key" with a password field showing asterisks (••••••••), a "Show password" eye icon, a checked "Connect automatically" checkbox, and a blue Connect button.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', screenshotDesc: 'Windows taskbar bottom-right corner with Wi-Fi icon, volume, and battery icons. Wi-Fi icon is highlighted with a tooltip "Not connected – connections available".', annotations: [{ type: 'callout', x: 82, y: 78, label: '1' }, { type: 'arrow', x: 82, y: 70, direction: 'down', label: 'Click here' }] },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotDesc: 'Windows Quick Settings panel showing Wi-Fi toggle in OFF state (grayed out), with Bluetooth and Airplane Mode toggles next to it.', annotations: [{ type: 'highlight', x: 15, y: 35, width: 28, height: 22, label: 'Wi-Fi toggle' }, { type: 'callout', x: 29, y: 46, label: '1' }] },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotDesc: 'Wi-Fi network dropdown list showing 6 networks: "HomeNetwork_5G" (highlighted in blue), "Neighbors_WiFi", "CoffeeShop_Free", "DIRECT-printer", "Xfinity-2G", and "Hidden network".', tip: 'Look for your network name on a sticker on the bottom or back of your router.', annotations: [{ type: 'highlight', x: 10, y: 22, width: 80, height: 14, label: 'Your network' }, { type: 'callout', x: 85, y: 29, label: '✓' }] },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotDesc: 'Wi-Fi password entry dialog titled "Enter the network security key" with a password field showing asterisks (••••••••), a "Show password" eye icon, a checked "Connect automatically" checkbox, and a blue Connect button.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.', annotations: [{ type: 'callout', x: 50, y: 42, label: '1' }, { type: 'callout', x: 70, y: 68, label: '2' }, { type: 'arrow', x: 50, y: 75, direction: 'down', label: 'Click Connect' }] },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.', annotations: [{ type: 'callout', x: 82, y: 75, label: '✓' }, { type: 'arrow', x: 82, y: 68, direction: 'down', label: 'Connected!' }] },
     ],
   },
   {

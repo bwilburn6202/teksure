@@ -9,6 +9,7 @@ import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
 import { SeniorModeToggle } from '@/components/SeniorModeToggle';
 import { HighContrastToggle } from '@/components/HighContrastToggle';
+import { LanguageToggle } from '@/components/LanguageToggle';
 
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -158,6 +159,7 @@ export function Navbar() {
           <HighContrastToggle />
           <FontSizeToggle />
           <DarkModeToggle />
+          <LanguageToggle />
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
             className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border bg-muted/50 text-xs text-muted-foreground hover:bg-muted transition-colors"
