@@ -4,9 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   Search, Shield, Zap, Star, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, TrendingUp, Users, ChevronRight, Clock,
-  Wifi, Printer, Lock, HardDrive, MousePointer, Smartphone,
-  AlertTriangle, ThumbsUp, Phone, Mail, Loader2, CheckCircle, Map
+  Sparkles, Bot, BookOpen, Users, ChevronRight, Clock,
+  Phone, Mail, Loader2, CheckCircle, Map
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -28,13 +27,23 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
 };
 
 const categoryColors: Record<GuideCategory, string> = {
-  'windows-guides': 'from-blue-600/20 to-blue-400/5 border-blue-500/20',
-  'mac-guides': 'from-gray-600/20 to-gray-400/5 border-gray-500/20',
-  'essential-skills': 'from-amber-600/20 to-amber-400/5 border-amber-500/20',
-  'tips-tricks': 'from-purple-600/20 to-purple-400/5 border-purple-500/20',
-  'ai-guides': 'from-teal-600/20 to-teal-400/5 border-teal-500/20',
-  'how-to': 'from-orange-600/20 to-orange-400/5 border-orange-500/20',
-  'safety-guides': 'from-red-600/20 to-red-400/5 border-red-500/20',
+  'windows-guides': 'from-blue-600/10 to-blue-400/5 border-blue-500/15',
+  'mac-guides': 'from-gray-600/10 to-gray-400/5 border-gray-500/15',
+  'essential-skills': 'from-amber-600/10 to-amber-400/5 border-amber-500/15',
+  'tips-tricks': 'from-purple-600/10 to-purple-400/5 border-purple-500/15',
+  'ai-guides': 'from-teal-600/10 to-teal-400/5 border-teal-500/15',
+  'how-to': 'from-orange-600/10 to-orange-400/5 border-orange-500/15',
+  'safety-guides': 'from-red-600/10 to-red-400/5 border-red-500/15',
+};
+
+const categoryDescriptions: Record<GuideCategory, string> = {
+  'windows-guides': 'Step-by-step help for Windows PCs',
+  'mac-guides': 'Guides for Mac and Apple devices',
+  'essential-skills': 'Must-know basics for every device',
+  'tips-tricks': 'Shortcuts and hidden features',
+  'ai-guides': 'Using AI tools confidently',
+  'how-to': 'Complete how-to walkthroughs',
+  'safety-guides': 'Stay safe online and offline',
 };
 
 const topicPills = [
@@ -146,7 +155,7 @@ const Index = () => {
   const latestGuides = useMemo(() => {
     return [...guides]
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-      .slice(0, 8);
+      .slice(0, 6);
   }, []);
 
   return (
@@ -179,24 +188,13 @@ const Index = () => {
             transition={{ duration: 0.7 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.1, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 text-sm mb-6"
-            >
-              <Shield className="h-4 w-4 text-secondary" />
-              <span>The #1 Tech Help Resource for Beginners</span>
-            </motion.div>
-
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-[1.1]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-5 leading-[1.1]">
               {t('hero.title', 'Tech Help Made Simple').split(' ').slice(0, -1).join(' ')}{' '}
               <span className="text-secondary">{t('hero.title', 'Tech Help Made Simple').split(' ').slice(-1)[0]}</span>
             </h1>
-            <p className="text-lg md:text-xl opacity-80 mb-2 max-w-xl mx-auto">
-              {t('hero.subtitle', 'Free guides, quick fixes, and real human support — all in one place.')}
+            <p className="text-lg md:text-xl opacity-80 mb-8 max-w-xl mx-auto">
+              {t('hero.subtitle', 'Free guides, quick fixes, and real human support — no jargon, no robots, just answers.')}
             </p>
-            <p className="text-sm opacity-55 mb-8">No jargon. No robots. Just answers.</p>
 
             {/* Search */}
             <form onSubmit={handleSearch} className="max-w-lg mx-auto mb-6">
@@ -247,24 +245,6 @@ const Index = () => {
               </Link>
             </div>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
-              {[
-                { icon: ThumbsUp, label: '50,000+ Problems Solved' },
-                { icon: Star,     label: '4.9★ Average Rating' },
-                { icon: BookOpen, label: '236+ Free Guides' },
-                { icon: Shield,   label: 'No Sign-up Needed' },
-                { icon: Users,    label: '12,000+ Members' },
-              ].map(({ icon: Icon, label }) => (
-                <span
-                  key={label}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 border border-primary-foreground/15 text-primary-foreground/80 text-xs font-medium"
-                >
-                  <Icon className="h-3.5 w-3.5 text-secondary" />
-                  {label}
-                </span>
-              ))}
-            </div>
           </motion.div>
         </div>
       </section>
@@ -299,13 +279,9 @@ const Index = () => {
 
       {/* Quick Fixes */}
       <section className="container py-16">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="h-8 w-8 rounded-lg bg-destructive/10 flex items-center justify-center">
-            <Zap className="h-4 w-4 text-destructive" />
-          </div>
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold">⚡ Quick Fixes — Most Common Problems</h2>
-          </div>
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold">Quick Fixes</h2>
+          <p className="text-muted-foreground mt-1">Solutions to the most common tech problems</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -317,19 +293,18 @@ const Index = () => {
               transition={{ delay: i * 0.06 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-md transition-all group">
+              <Card className="h-full hover:shadow-md transition-all group border-l-4 border-l-secondary">
                 <CardContent className="py-5">
                   <div className="flex items-start gap-3">
                     <span className="text-2xl shrink-0">{fix.emoji}</span>
                     <div className="min-w-0 flex-1">
                       <h3 className="font-semibold text-sm mb-1">{fix.problem}</h3>
                       <p className="text-sm text-muted-foreground mb-3">{fix.fix}</p>
-                      <Link
-                        to={`/guides/${fix.slug}`}
-                        className="text-xs font-medium text-secondary hover:underline inline-flex items-center gap-1"
-                      >
-                        Full guide → <ArrowRight className="h-3 w-3" />
-                      </Link>
+                      <Button asChild variant="link" size="sm" className="h-auto p-0 text-xs text-secondary">
+                        <Link to={`/guides/${fix.slug}`} className="inline-flex items-center gap-1">
+                          Full guide <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </CardContent>
@@ -380,7 +355,6 @@ const Index = () => {
             {(Object.keys(categoryLabels) as GuideCategory[]).map((cat, i) => {
               const Icon = categoryIcons[cat];
               const count = guides.filter(g => g.category === cat).length;
-              const topGuides = guides.filter(g => g.category === cat).slice(0, 3);
 
               return (
                 <motion.div
@@ -392,7 +366,7 @@ const Index = () => {
                 >
                   <Link to={`/guides?category=${cat}`}>
                     <Card className={`h-full hover:shadow-lg transition-all hover:-translate-y-1 group bg-gradient-to-br ${categoryColors[cat]} border`}>
-                      <CardContent className="pt-6 pb-5">
+                      <CardContent className="pt-6 pb-6">
                         <div className="flex items-start justify-between mb-4">
                           <div className="h-12 w-12 rounded-xl bg-background/80 flex items-center justify-center shadow-sm">
                             <Icon className="h-6 w-6 text-secondary" />
@@ -402,14 +376,7 @@ const Index = () => {
                         <h3 className="font-bold text-lg mb-1 group-hover:text-secondary transition-colors">
                           {categoryLabels[cat]}
                         </h3>
-                        <ul className="mt-3 space-y-1.5">
-                          {topGuides.map(g => (
-                            <li key={g.slug} className="text-sm text-muted-foreground flex items-center gap-2">
-                              <ChevronRight className="h-3 w-3 text-secondary/60 shrink-0" />
-                              <span className="truncate">{g.title}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <p className="text-sm text-muted-foreground mt-1">{categoryDescriptions[cat]}</p>
                       </CardContent>
                     </Card>
                   </Link>
@@ -427,6 +394,9 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-bold">Popular Guides</h2>
             <p className="text-muted-foreground mt-1">Most helpful articles for beginners</p>
           </div>
+          <Button asChild variant="ghost" className="hidden md:flex">
+            <Link to="/guides">View all guides <ArrowRight className="ml-2 h-4 w-4" /></Link>
+          </Button>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -441,7 +411,7 @@ const Index = () => {
               <Link to={`/guides/${guide.slug}`}>
                 <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
                   <CardContent className="pt-6">
-                    <div className="text-4xl mb-4">{guide.thumbnailEmoji}</div>
+                    <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
                     <div className="flex items-center gap-2 mb-3">
                       <Badge variant="secondary" className="text-xs">
                         {categoryLabels[guide.category]}
@@ -451,7 +421,7 @@ const Index = () => {
                         {guide.readTime}
                       </span>
                     </div>
-                    <h3 className="font-semibold text-lg mb-2 group-hover:text-secondary transition-colors leading-snug">
+                    <h3 className="font-semibold text-base mb-2 group-hover:text-secondary transition-colors leading-snug">
                       {guide.title}
                     </h3>
                     <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
@@ -469,14 +439,14 @@ const Index = () => {
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold">Latest Guides</h2>
-              <p className="text-muted-foreground mt-1">Recently published articles</p>
+              <p className="text-muted-foreground mt-1">Fresh step-by-step articles</p>
             </div>
             <Button asChild variant="ghost">
               <Link to="/guides">See all <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {latestGuides.map((guide, i) => (
               <motion.div
                 key={guide.slug}
@@ -486,16 +456,22 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <Link to={`/guides/${guide.slug}`} className="group block">
-                  <Card className="hover:shadow-md transition-all hover:-translate-y-0.5">
-                    <CardContent className="pt-5 pb-4">
-                      <span className="text-3xl">{guide.thumbnailEmoji}</span>
-                      <h4 className="font-medium text-sm mt-3 mb-1 group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+                  <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1">
+                    <CardContent className="pt-6">
+                      <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
+                      <div className="flex items-center gap-2 mb-3">
+                        <Badge variant="secondary" className="text-xs">
+                          {categoryLabels[guide.category]}
+                        </Badge>
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          {guide.readTime}
+                        </span>
+                      </div>
+                      <h4 className="font-semibold text-base mb-2 group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
                         {guide.title}
                       </h4>
-                      <p className="text-xs text-muted-foreground flex items-center gap-1">
-                        <Clock className="h-3 w-3" />
-                        {guide.readTime}
-                      </p>
+                      <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
                     </CardContent>
                   </Card>
                 </Link>
