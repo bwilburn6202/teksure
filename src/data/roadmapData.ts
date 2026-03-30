@@ -158,4 +158,15 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Live Webinar Series', description: 'Weekly live workshops covering trending topics — inspired by the most popular formats in the senior tech space.', status: 'exploring', category: 'Community' },
   { title: 'Peer Teaching Program', description: 'Let experienced TekSure members volunteer to help new users — a peer-teaching model proven successful at scale.', status: 'exploring', category: 'Community' },
   { title: 'Fake Scam Simulator', description: 'Interactive training tool that shows realistic scam emails, texts, and calls — users practice spotting them safely.', status: 'exploring', category: 'Safety' },
+  // ── COMPETITOR-INSPIRED — SECOND PASS LIVE CONTENT ──────────
+  { title: 'Google Photos Guide', description: 'Complete guide to Google Photos — backup, organize, share albums, free up phone storage, and find photos with search.', status: 'live', category: 'Guides' },
+  { title: 'Stop Unwanted Calls & Texts', description: 'Block robocalls, silence unknown callers, report spam texts, and register on the Do Not Call list.', status: 'live', category: 'Safety' },
+  { title: 'Gmail Tips & Tricks', description: 'Master Gmail labels, filters, undo send, scheduled emails, and the focused inbox to tame your email.', status: 'live', category: 'Guides' },
+  { title: 'Google Sheets Basics', description: 'Create spreadsheets, use simple formulas, sort data, and share sheets — a beginner-friendly Google Sheets guide.', status: 'live', category: 'Guides' },
+  { title: 'Apple CarPlay & Android Auto', description: 'Connect your phone to your car for hands-free navigation, calls, and music — setup guide for both platforms.', status: 'live', category: 'Guides' },
+  { title: 'Phone Photo Editing Guide', description: 'Edit photos on your phone like a pro — crop, adjust lighting, add filters, and remove blemishes using free apps.', status: 'live', category: 'Guides' },
+  { title: 'Digital Vault Guide', description: 'Securely store and organize important documents — IDs, insurance cards, medical records, and emergency contacts — on your phone.', status: 'live', category: 'Safety' },
+  { title: 'Apple Intelligence Guide', description: 'Understand Apple Intelligence and on-device AI — Writing Tools, Smart Reply, Genmoji, and privacy controls explained.', status: 'live', category: 'Guides' },
+  { title: 'Streaming Device Setup', description: 'Set up Roku, Fire TV Stick, Apple TV, or Chromecast — connect to Wi-Fi, sign into apps, and start streaming.', status: 'live', category: 'Guides' },
+  { title: 'Airbnb Guide for Beginners', description: 'Book your first Airbnb — search, read reviews, message hosts, check in, and leave a review with confidence.', status: 'live', category: 'Guides' },
 ];
