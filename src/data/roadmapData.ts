@@ -135,9 +135,27 @@ export const roadmapItems: RoadmapItem[] = [
   // Premium / commerce
   { title: 'Premium Subscription Tier', description: 'Unlock advanced tools, unlimited bookings, and priority support with a TekSure Premium plan.', status: 'live', category: 'Support' },
   { title: 'Gift Subscriptions', description: 'Buy a TekSure Premium subscription as a gift for a family member or friend.', status: 'live', category: 'Community' },
-  // Planned / future
+  // ── COMPETITOR-INSPIRED — NEW LIVE CONTENT ───────────────────
+  { title: 'Apps & Services Guide Series', description: 'Step-by-step walkthroughs for popular apps: Instagram, WhatsApp, Facebook, Uber, Google Maps, Spotify, YouTube, Zoom, and more.', status: 'live', category: 'Guides' },
+  { title: 'Health & Wellness Tech Hub', description: 'Guides for patient portals (MyChart), fitness trackers, online health records, and medication management.', status: 'live', category: 'Guides' },
+  { title: 'Gaming for Older Adults', description: 'Discover free brain games, card games (Bridge, Mahjong), chess, puzzles, and how to play with family online.', status: 'live', category: 'Content' },
+  { title: 'Grocery & Food Delivery Guides', description: 'Learn to order groceries (Instacart, Walmart) and restaurant food (DoorDash, Uber Eats) from your phone.', status: 'live', category: 'Guides' },
+  { title: 'Productivity Suite Guides', description: 'Beginner guides for Microsoft Word and Google Docs — create, format, save, and share documents.', status: 'live', category: 'Guides' },
+  { title: 'Printer Troubleshooting Guide', description: 'Fix offline printers, paper jams, poor print quality, and connection issues with step-by-step instructions.', status: 'live', category: 'Support' },
+  { title: 'Phone Document Scanner Guide', description: 'Turn your phone into a scanner — create clean PDF scans of receipts, forms, and paperwork.', status: 'live', category: 'Guides' },
+  { title: 'Netflix Troubleshooting Guide', description: 'Fix buffering, freezing, error codes, and audio issues on any device.', status: 'live', category: 'Support' },
+  { title: 'Photo Digitization Guide', description: 'Scan, restore, and preserve old photographs using your phone camera and free AI tools.', status: 'live', category: 'Guides' },
+  { title: 'Smart Speaker Deep-Dive', description: 'Complete setup and usage guide for Amazon Echo and Google Home — voice commands, routines, and smart home control.', status: 'live', category: 'Guides' },
+  // ── COMPETITOR-INSPIRED — PLANNED ───────────────────────────
   { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention.', status: 'planned', category: 'Support' },
   { title: 'TekSure Mobile App', description: 'A dedicated phone app for quick access to TekSure help on the go.', status: 'planned', category: 'UX' },
   { title: 'TekSure Chrome Extension', description: "Get instant TekSure help on any website — right-click any error message or confusing term.", status: 'planned', category: 'Tools' },
   { title: 'Partner Integrations API', description: 'Let libraries, care homes, and community centres embed TekSure guides directly in their own websites.', status: 'planned', category: 'Community' },
+  { title: 'Printer Troubleshooter Tool', description: 'Interactive diagnostic wizard for printer problems — guided step-by-step like the WiFi Troubleshooter.', status: 'planned', category: 'Tools' },
+  { title: 'Spanish Language Content', description: 'Translate the top 30 most-visited guides into Spanish to reach 42M+ Spanish speakers in the US.', status: 'planned', category: 'Accessibility' },
+  { title: 'Gift a Session Flow', description: 'Let adult children buy a technician session as a gift for a parent — with personalized message and easy redemption.', status: 'planned', category: 'Support' },
+  { title: 'B2B / Senior Living Partnerships', description: 'License TekSure guides, tools, and booking system to senior living communities, libraries, and health plans.', status: 'exploring', category: 'Community' },
+  { title: 'Live Webinar Series', description: 'Weekly live workshops covering trending topics — inspired by the most popular formats in the senior tech space.', status: 'exploring', category: 'Community' },
+  { title: 'Peer Teaching Program', description: 'Let experienced TekSure members volunteer to help new users — a peer-teaching model proven successful at scale.', status: 'exploring', category: 'Community' },
+  { title: 'Fake Scam Simulator', description: 'Interactive training tool that shows realistic scam emails, texts, and calls — users practice spotting them safely.', status: 'exploring', category: 'Safety' },
 ];
