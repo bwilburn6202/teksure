@@ -68,15 +68,15 @@ export default function AiTutor() {
         <Navbar />
         <main className="flex-1 container max-w-2xl py-14 text-center">
           <div className="text-5xl mb-4">🎓</div>
-          <h1 className="text-3xl font-bold mb-3">AI Personal Tech Tutor</h1>
+          <h1 className="text-3xl font-bold mb-3 text-primary">AI Personal Tech Tutor</h1>
           <p className="text-muted-foreground mb-10">Your patient, always-available tutor who adapts to your level. Ask anything — no question is too basic.</p>
           <h2 className="text-lg font-semibold mb-4">First, what's your experience level?</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {(Object.entries(levelConfig) as [Level, typeof levelConfig.beginner][]).map(([key, cfg]) => (
               <motion.button key={key} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setLevel(key)}
-                className="rounded-2xl border-2 border-border hover:border-secondary p-6 text-left transition-all hover:bg-secondary/5">
+                className="rounded-2xl border-2 border-border bg-card hover:border-primary p-6 text-left transition-all hover:bg-primary/5">
                 <div className="text-3xl mb-2">{cfg.emoji}</div>
-                <p className="font-bold text-base mb-1">{cfg.label}</p>
+                <p className="font-bold text-base mb-1 text-primary">{cfg.label}</p>
                 <p className="text-xs text-muted-foreground">{cfg.desc}</p>
               </motion.button>
             ))}
@@ -91,13 +91,13 @@ export default function AiTutor() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1 container max-w-3xl py-8">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6 pb-6 border-b border-border">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center">
-              <Bot className="h-5 w-5 text-secondary" />
+            <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center">
+              <Bot className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <h1 className="font-bold">AI Tech Tutor</h1>
+              <h1 className="font-bold text-primary">AI Tech Tutor</h1>
               <div className="flex items-center gap-2">
                 <Badge variant="outline" className="text-xs">{levelConfig[level].emoji} {levelConfig[level].label}</Badge>
                 {lessonCount > 0 && <span className="text-xs text-muted-foreground">{lessonCount} exchange{lessonCount !== 1 ? 's' : ''} today</span>}
@@ -116,10 +116,10 @@ export default function AiTutor() {
             <div className="grid sm:grid-cols-2 gap-2">
               {lessonTopics.map(t => (
                 <button key={t.label} onClick={() => startTopic(t.prompt)}
-                  className="flex items-center gap-3 rounded-xl border border-border hover:border-secondary hover:bg-secondary/5 p-3 text-left transition-all group">
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card hover:border-primary hover:bg-primary/5 p-3 text-left transition-all group">
                   <span className="text-xl">{t.emoji}</span>
                   <span className="text-sm font-medium flex-1">{t.label}</span>
-                  <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-secondary transition-colors shrink-0" />
+                  <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                 </button>
               ))}
             </div>
@@ -132,11 +132,11 @@ export default function AiTutor() {
             {messages.map((msg, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`flex gap-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'ai' && (
-                  <div className="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center shrink-0 mt-0.5">
-                    <Bot className="h-4 w-4 text-secondary" />
+                  <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center shrink-0 mt-0.5">
+                    <Bot className="h-4 w-4 text-primary" />
                   </div>
                 )}
-                <div className={`rounded-2xl px-4 py-3 max-w-[85%] text-sm leading-relaxed ${msg.role === 'user' ? 'bg-secondary text-secondary-foreground rounded-br-sm' : 'bg-muted rounded-bl-sm'}`}>
+                <div className={`rounded-2xl px-4 py-3 max-w-[85%] text-sm leading-relaxed ${msg.role === 'user' ? 'bg-primary text-primary-foreground rounded-br-sm' : 'bg-muted rounded-bl-sm'}`}>
                   {msg.text}
                 </div>
                 {msg.role === 'user' && (
@@ -149,7 +149,7 @@ export default function AiTutor() {
           </AnimatePresence>
           {loading && (
             <div className="flex gap-3 justify-start">
-              <div className="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center shrink-0"><Bot className="h-4 w-4 text-secondary" /></div>
+              <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><Bot className="h-4 w-4 text-primary" /></div>
               <div className="bg-muted rounded-2xl rounded-bl-sm px-4 py-3">
                 <div className="flex gap-1">{[0,1,2].map(i => <div key={i} className="w-2 h-2 rounded-full bg-muted-foreground/50 animate-bounce" style={{ animationDelay: `${i*0.15}s` }} />)}</div>
               </div>
@@ -159,7 +159,7 @@ export default function AiTutor() {
         </div>
 
         {/* Input */}
-        <Card className="sticky bottom-4">
+        <Card className="sticky bottom-4 rounded-2xl border border-border bg-card">
           <CardContent className="p-3">
             <div className="flex gap-2">
               <Textarea
@@ -170,7 +170,7 @@ export default function AiTutor() {
                 rows={2}
                 className="resize-none flex-1 border-0 focus-visible:ring-0 p-1 text-sm"
               />
-              <Button onClick={() => send()} disabled={!input.trim() || loading} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 self-end" size="icon">
+              <Button onClick={() => send()} disabled={!input.trim() || loading} className="bg-primary text-primary-foreground hover:bg-primary/90 self-end rounded-xl" size="icon">
                 <Send className="h-4 w-4" />
               </Button>
             </div>

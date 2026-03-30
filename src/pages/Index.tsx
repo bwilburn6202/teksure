@@ -3,12 +3,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  Search, Shield, Zap, Star, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, Users, ChevronRight, Clock,
-  Phone, Mail, Loader2, CheckCircle, Map
+  Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
+  Sparkles, Bot, BookOpen, ChevronRight, Clock,
+  Phone, Mail, Loader2, CheckCircle, Wrench, Heart
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
@@ -16,7 +15,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 
-const categoryIcons: Record<GuideCategory, typeof Monitor> = {
+const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
   'mac-guides': Apple,
   'essential-skills': Lightbulb,
@@ -24,44 +23,26 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'ai-guides': Bot,
   'how-to': BookOpen,
   'safety-guides': Shield,
-};
-
-const categoryColors: Record<GuideCategory, string> = {
-  'windows-guides': 'from-blue-600/10 to-blue-400/5 border-blue-500/15',
-  'mac-guides': 'from-gray-600/10 to-gray-400/5 border-gray-500/15',
-  'essential-skills': 'from-amber-600/10 to-amber-400/5 border-amber-500/15',
-  'tips-tricks': 'from-purple-600/10 to-purple-400/5 border-purple-500/15',
-  'ai-guides': 'from-teal-600/10 to-teal-400/5 border-teal-500/15',
-  'how-to': 'from-orange-600/10 to-orange-400/5 border-orange-500/15',
-  'safety-guides': 'from-red-600/10 to-red-400/5 border-red-500/15',
-};
-
-const categoryDescriptions: Record<GuideCategory, string> = {
-  'windows-guides': 'Step-by-step help for Windows PCs',
-  'mac-guides': 'Guides for Mac and Apple devices',
-  'essential-skills': 'Must-know basics for every device',
-  'tips-tricks': 'Shortcuts and hidden features',
-  'ai-guides': 'Using AI tools confidently',
-  'how-to': 'Complete how-to walkthroughs',
-  'safety-guides': 'Stay safe online and offline',
+  'app-guides': Phone,
+  'health-tech': Heart,
 };
 
 const topicPills = [
-  { label: '🔌 WiFi Issues', query: 'wifi' },
-  { label: '🐢 Slow Computer', query: 'slow' },
-  { label: '🦠 Virus Alert', query: 'virus' },
-  { label: '🖨️ Printer Help', query: 'printer' },
-  { label: '🔒 Passwords', query: 'password' },
-  { label: '📱 Phone Setup', query: 'phone' },
+  { label: 'WiFi Issues', query: 'wifi' },
+  { label: 'Slow Computer', query: 'slow' },
+  { label: 'Virus Alert', query: 'virus' },
+  { label: 'Printer Help', query: 'printer' },
+  { label: 'Passwords', query: 'password' },
+  { label: 'Phone Setup', query: 'phone' },
 ];
 
 const quickFixes = [
-  { emoji: '🔴', problem: "Computer Won't Turn On", fix: "Check power cable and outlet first", slug: 'turn-pc-on-and-off' },
-  { emoji: '🐢', problem: "Everything is Running Slow", fix: "Restart your device — it fixes 80% of slowdowns", slug: 'restart-pc-windows' },
-  { emoji: '📶', problem: "WiFi Connected but No Internet", fix: "Restart your router by unplugging for 30 seconds", slug: 'connect-wifi-windows' },
-  { emoji: '🖨️', problem: "Printer Won't Print", fix: "Check if it's set as the default printer", slug: 'fix-printer-windows' },
-  { emoji: '🔑', problem: "Forgot My Password", fix: "Use 'Forgot Password' on the login page", slug: 'manage-passwords-windows' },
-  { emoji: '📱', problem: "Phone Storage Full", fix: "Delete unused apps and clear app cache", slug: 'manage-storage-windows' },
+  { problem: "Computer Won't Turn On", fix: "Check power cable and outlet first", slug: 'turn-pc-on-and-off', icon: Monitor },
+  { problem: "Everything is Slow", fix: "Restart your device — fixes 80% of slowdowns", slug: 'restart-pc-windows', icon: Sparkles },
+  { problem: "WiFi Not Working", fix: "Unplug your router for 30 seconds", slug: 'connect-wifi-windows', icon: Shield },
+  { problem: "Printer Won't Print", fix: "Check it's set as default printer", slug: 'fix-printer-windows', icon: Wrench },
+  { problem: "Forgot Password", fix: "Use 'Forgot Password' on the login page", slug: 'manage-passwords-windows', icon: Shield },
+  { problem: "Phone Storage Full", fix: "Delete unused apps and clear cache", slug: 'manage-storage-windows', icon: Phone },
 ];
 
 function NewsletterSignup() {
@@ -72,13 +53,11 @@ function NewsletterSignup() {
     e.preventDefault();
     if (!email.trim()) return;
     setStatus('loading');
-
     try {
       const { supabase } = await import('@/integrations/supabase/client');
       await (supabase as any).from('newsletter_signups').insert({ email: email.trim() });
       setStatus('success');
     } catch {
-      // Even if the table doesn't exist yet, show success — we'll log it in the console
       console.log('Newsletter signup:', email.trim());
       setStatus('success');
     }
@@ -86,40 +65,37 @@ function NewsletterSignup() {
 
   if (status === 'success') {
     return (
-      <div className="flex flex-col items-center gap-3 py-2">
-        <div className="h-12 w-12 rounded-full bg-green-500/10 flex items-center justify-center">
-          <CheckCircle className="h-6 w-6 text-green-500" />
-        </div>
-        <p className="font-semibold">You're signed up!</p>
-        <p className="text-sm text-muted-foreground">Your first tip lands next week. 📬</p>
+      <div className="flex flex-col items-center gap-2 py-2">
+        <CheckCircle className="h-5 w-5 text-green-600" />
+        <p className="text-sm font-medium">You're in! First tip lands next week.</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto">
       <Input
         type="email"
         placeholder="your@email.com"
         value={email}
         onChange={e => setEmail(e.target.value)}
         required
-        className="h-12 flex-1 text-base"
+        className="h-11 flex-1 bg-background"
       />
-      <Button
-        type="submit"
-        disabled={status === 'loading'}
-        className="h-12 px-6 shrink-0 gap-2"
-      >
-        {status === 'loading' ? (
-          <Loader2 className="h-4 w-4 animate-spin" />
-        ) : (
-          'Subscribe'
-        )}
+      <Button type="submit" disabled={status === 'loading'} className="h-11 px-5 shrink-0">
+        {status === 'loading' ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Subscribe'}
       </Button>
     </form>
   );
 }
+
+const fade = {
+  hidden: { opacity: 0, y: 16 },
+  visible: (i: number) => ({
+    opacity: 1, y: 0,
+    transition: { delay: i * 0.08, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }
+  }),
+};
 
 const Index = () => {
   const [search, setSearch] = useState('');
@@ -128,38 +104,29 @@ const Index = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (search.trim()) {
-      navigate(`/search?q=${encodeURIComponent(search.trim())}`);
-    }
-  };
-
-  const handleTopicClick = (query: string) => {
-    navigate(`/guides?q=${encodeURIComponent(query)}`);
+    if (search.trim()) navigate(`/search?q=${encodeURIComponent(search.trim())}`);
   };
 
   const featuredGuides = useMemo(() => {
     const picks: typeof guides[0][] = [];
-    const categories: GuideCategory[] = ['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
+    const categories: GuideCategory[] = ['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides', 'app-guides'];
     for (const cat of categories) {
       const catGuides = guides.filter(g => g.category === cat);
       if (catGuides.length > 0) picks.push(catGuides[0]);
       if (picks.length >= 6) break;
     }
-    if (picks.length < 6) {
-      const remaining = guides.filter(g => !picks.includes(g)).slice(0, 6 - picks.length);
-      picks.push(...remaining);
-    }
+    if (picks.length < 6) picks.push(...guides.filter(g => !picks.includes(g)).slice(0, 6 - picks.length));
     return picks.slice(0, 6);
   }, []);
 
   const latestGuides = useMemo(() => {
-    return [...guides]
-      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-      .slice(0, 6);
+    return [...guides].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0, 4);
   }, []);
 
+  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <SEOHead
         title="TekSure — Free Tech Help for Beginners | Step-by-Step Guides"
         description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
@@ -169,47 +136,45 @@ const Index = () => {
           '@type': 'Organization',
           name: 'TekSure',
           url: 'https://teksure.lovable.app',
-          description: 'The #1 tech help resource for beginners. Free step-by-step guides, quick fixes, and verified tech support.',
+          description: 'The #1 tech help resource for beginners.',
         }}
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="hero-gradient text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)',
-          backgroundSize: '32px 32px'
-        }} />
-
-        <div className="container relative py-20 md:py-28">
+      {/* ── Hero ────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
+        <div className="container relative pt-20 pb-16 md:pt-32 md:pb-24">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mx-auto text-center"
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+            className="max-w-2xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-5 leading-[1.1]">
-              {t('hero.title', 'Tech Help Made Simple').split(' ').slice(0, -1).join(' ')}{' '}
-              <span className="text-secondary">{t('hero.title', 'Tech Help Made Simple').split(' ').slice(-1)[0]}</span>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 leading-[1.08]">
+              {t('hero.title', 'Tech help that')}{' '}
+              <span className="text-gradient">
+                {t('hero.highlight', 'makes sense')}
+              </span>
             </h1>
-            <p className="text-lg md:text-xl opacity-80 mb-8 max-w-xl mx-auto">
-              {t('hero.subtitle', 'Free guides, quick fixes, and real human support — no jargon, no robots, just answers.')}
+            <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto leading-relaxed">
+              {t('hero.subtitle', 'Free guides, real human support, and simple tools — built for people who just want their tech to work.')}
             </p>
 
             {/* Search */}
-            <form onSubmit={handleSearch} className="max-w-lg mx-auto mb-6">
-              <div className="relative group">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <form onSubmit={handleSearch} className="max-w-md mx-auto mb-6">
+              <div className="relative">
+                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   placeholder='Search for help... (e.g. "connect to Wi-Fi")'
-                  className="pl-12 pr-28 h-14 text-base bg-card text-foreground rounded-xl border-2 border-transparent focus:border-secondary shadow-lg shadow-black/20"
+                  className="pl-10 pr-20 h-12 bg-muted/50 border-border rounded-xl text-sm"
                   value={search}
                   onChange={e => setSearch(e.target.value)}
                 />
                 <Button
                   type="submit"
                   size="sm"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                  className="absolute right-1.5 top-1/2 -translate-y-1/2 h-8 rounded-lg text-xs"
                 >
                   Search
                 </Button>
@@ -217,449 +182,263 @@ const Index = () => {
             </form>
 
             {/* Topic pills */}
-            <div className="flex flex-wrap justify-center gap-2 mb-8">
+            <div className="flex flex-wrap justify-center gap-2 mb-10">
               {topicPills.map((topic) => (
                 <button
                   key={topic.query}
-                  onClick={() => handleTopicClick(topic.query)}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-sm bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors cursor-pointer border border-primary-foreground/10"
+                  onClick={() => navigate(`/guides?q=${encodeURIComponent(topic.query)}`)}
+                  className="px-3 py-1.5 rounded-full text-xs font-medium text-muted-foreground bg-muted hover:bg-accent hover:text-foreground transition-colors border border-transparent hover:border-border"
                 >
                   {topic.label}
                 </button>
               ))}
             </div>
 
-            {/* Primary CTAs */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-              <Link
-                to="/get-help"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-xl shadow-secondary/30"
-              >
-                <Phone className="h-5 w-5" /> Get Help Now
-              </Link>
-              <Link
-                to="/guides"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-primary-foreground font-semibold text-base transition-colors border border-white/25"
-              >
-                <BookOpen className="h-5 w-5" /> Browse Free Guides
-              </Link>
+            {/* CTAs */}
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6">
+                <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6">
+                <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
+              </Button>
             </div>
-
           </motion.div>
         </div>
       </section>
 
-
-      {/* Social proof strip */}
-      <div className="border-y border-border bg-muted/40">
-        <div className="container py-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2 font-medium text-foreground">
-              <Users className="h-4 w-4 text-secondary" />
-              Trusted by <strong className="text-foreground">12,000+</strong> members
-            </span>
-            <span className="hidden sm:block w-px h-4 bg-border" />
-            <span className="flex items-center gap-2">
-              <BookOpen className="h-4 w-4 text-primary/60" />
-              <strong className="text-foreground">236+</strong> free step-by-step guides
-            </span>
-            <span className="hidden sm:block w-px h-4 bg-border" />
-            <span className="flex items-center gap-2">
-              <Star className="h-4 w-4 text-amber-500 fill-amber-500" />
-              <strong className="text-foreground">4.9/5</strong> average technician rating
-            </span>
-            <span className="hidden sm:block w-px h-4 bg-border" />
-            <span className="flex items-center gap-2">
-              <Shield className="h-4 w-4 text-primary/60" />
-              No jargon. No hidden fees.
-            </span>
+      {/* ── Stats strip ─────────────────────────────────── */}
+      <div className="border-y">
+        <div className="container py-5">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 text-sm">
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">{guides.length}+</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free guides</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">12k+</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Members</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">4.9</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Avg rating</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">30+</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free tools</p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Quick Fixes */}
-      <section className="container py-16">
-        <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold">Quick Fixes</h2>
-          <p className="text-muted-foreground mt-1">Solutions to the most common tech problems</p>
+      {/* ── Quick Fixes ─────────────────────────────────── */}
+      <section className="container py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Quick Fixes</h2>
+          <p className="text-muted-foreground max-w-md mx-auto">Solutions to the most common tech problems — no appointment needed.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {quickFixes.map((fix, i) => (
-            <motion.div
-              key={fix.problem}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.06 }}
-              viewport={{ once: true }}
-            >
-              <Card className="h-full hover:shadow-md transition-all group border-l-4 border-l-secondary">
-                <CardContent className="py-5">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl shrink-0">{fix.emoji}</span>
-                    <div className="min-w-0 flex-1">
-                      <h3 className="font-semibold text-sm mb-1">{fix.problem}</h3>
-                      <p className="text-sm text-muted-foreground mb-3">{fix.fix}</p>
-                      <Button asChild variant="link" size="sm" className="h-auto p-0 text-xs text-secondary">
-                        <Link to={`/guides/${fix.slug}`} className="inline-flex items-center gap-1">
-                          Full guide <ArrowRight className="h-3 w-3" />
-                        </Link>
-                      </Button>
+            <motion.div key={fix.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+              <Link to={`/guides/${fix.slug}`} className="group block">
+                <div className="p-5 rounded-2xl border border-border bg-card hover:bg-accent/50 transition-all hover:shadow-sm">
+                  <div className="flex items-start gap-3.5">
+                    <div className="h-9 w-9 rounded-xl bg-primary/[0.07] flex items-center justify-center shrink-0">
+                      <fix.icon className="h-4 w-4 text-primary" />
                     </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{fix.problem}</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{fix.fix}</p>
+                    </div>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Get Help Banner */}
-      <section className="bg-slate-900 text-white">
-        <div className="container py-14">
-          <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-center md:text-left">
-              <p className="text-secondary font-semibold text-sm uppercase tracking-wider mb-2">Still Stuck?</p>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">Talk to a real person — not a chatbot.</h2>
-              <p className="text-slate-400 text-base">
-                Just give us a phone number or email. We'll reach out within hours and help you get it sorted.
-              </p>
-            </div>
-            <div className="shrink-0 flex flex-col items-center gap-3">
-              <Link
-                to="/get-help"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20 whitespace-nowrap"
-              >
-                <Phone className="h-5 w-5" /> Get Help Now
-              </Link>
-              <p className="text-slate-500 text-xs">Free · No account required</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Browse by Category */}
-      <section className="bg-muted py-16">
+      {/* ── Browse by Category ──────────────────────────── */}
+      <section className="bg-muted/40 py-20">
         <div className="container">
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-end justify-between mb-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold">Browse by Category</h2>
-              <p className="text-muted-foreground mt-1">Find guides organized by topic</p>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Browse by Category</h2>
+              <p className="text-muted-foreground">Find guides organized by what you need help with.</p>
             </div>
-            <Button asChild variant="ghost" className="hidden md:flex">
-              <Link to="/guides">View all guides <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
+              <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {(Object.keys(categoryLabels) as GuideCategory[]).map((cat, i) => {
-              const Icon = categoryIcons[cat];
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {visibleCategories.map((cat, i) => {
+              const Icon = categoryIcons[cat] || BookOpen;
               const count = guides.filter(g => g.category === cat).length;
 
               return (
-                <motion.div
-                  key={cat}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 }}
-                  viewport={{ once: true }}
-                >
-                  <Link to={`/guides?category=${cat}`}>
-                    <Card className={`h-full hover:shadow-lg transition-all hover:-translate-y-1 group bg-gradient-to-br ${categoryColors[cat]} border`}>
-                      <CardContent className="pt-6 pb-6">
-                        <div className="flex items-start justify-between mb-4">
-                          <div className="h-12 w-12 rounded-xl bg-background/80 flex items-center justify-center shadow-sm">
-                            <Icon className="h-6 w-6 text-secondary" />
-                          </div>
-                          <Badge variant="secondary" className="text-xs">{count} guides</Badge>
+                <motion.div key={cat} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+                  <Link to={`/guides?category=${cat}`} className="group block">
+                    <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center">
+                          <Icon className="h-5 w-5 text-primary" />
                         </div>
-                        <h3 className="font-bold text-lg mb-1 group-hover:text-secondary transition-colors">
-                          {categoryLabels[cat]}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mt-1">{categoryDescriptions[cat]}</p>
-                      </CardContent>
-                    </Card>
+                        <span className="text-xs text-muted-foreground">{count} guides</span>
+                      </div>
+                      <h3 className="font-semibold text-base mb-1 group-hover:text-primary transition-colors">
+                        {categoryLabels[cat]}
+                      </h3>
+                    </div>
                   </Link>
                 </motion.div>
               );
             })}
           </div>
-        </div>
-      </section>
 
-      {/* Popular Guides */}
-      <section className="container py-16">
-        <div className="flex items-center justify-between mb-10">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Popular Guides</h2>
-            <p className="text-muted-foreground mt-1">Most helpful articles for beginners</p>
-          </div>
-          <Button asChild variant="ghost" className="hidden md:flex">
-            <Link to="/guides">View all guides <ArrowRight className="ml-2 h-4 w-4" /></Link>
-          </Button>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredGuides.map((guide, i) => (
-            <motion.div
-              key={guide.slug}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.06 }}
-              viewport={{ once: true }}
-            >
-              <Link to={`/guides/${guide.slug}`}>
-                <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
-                  <CardContent className="pt-6">
-                    <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <Badge variant="secondary" className="text-xs">
-                        {categoryLabels[guide.category]}
-                      </Badge>
-                      <span className="text-xs text-muted-foreground flex items-center gap-1">
-                        <Clock className="h-3 w-3" />
-                        {guide.readTime}
-                      </span>
-                    </div>
-                    <h3 className="font-semibold text-base mb-2 group-hover:text-secondary transition-colors leading-snug">
-                      {guide.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Latest Guides */}
-      <section className="bg-muted py-16">
-        <div className="container">
-          <div className="flex items-center justify-between mb-10">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold">Latest Guides</h2>
-              <p className="text-muted-foreground mt-1">Fresh step-by-step articles</p>
-            </div>
-            <Button asChild variant="ghost">
-              <Link to="/guides">See all <ArrowRight className="ml-2 h-4 w-4" /></Link>
+          <div className="md:hidden text-center mt-8">
+            <Button asChild variant="outline" className="gap-1">
+              <Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {latestGuides.map((guide, i) => (
-              <motion.div
-                key={guide.slug}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.05 }}
-                viewport={{ once: true }}
-              >
-                <Link to={`/guides/${guide.slug}`} className="group block">
-                  <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1">
-                    <CardContent className="pt-6">
-                      <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
-                      <div className="flex items-center gap-2 mb-3">
-                        <Badge variant="secondary" className="text-xs">
-                          {categoryLabels[guide.category]}
-                        </Badge>
-                        <span className="text-xs text-muted-foreground flex items-center gap-1">
-                          <Clock className="h-3 w-3" />
-                          {guide.readTime}
-                        </span>
-                      </div>
-                      <h4 className="font-semibold text-base mb-2 group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
-                        {guide.title}
-                      </h4>
-                      <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* My Learning Path promo */}
-      <section className="container py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="rounded-3xl overflow-hidden bg-gradient-to-br from-secondary/10 via-primary/5 to-secondary/5 border border-secondary/20"
-        >
-          <div className="grid md:grid-cols-2 gap-0">
-            {/* Left — text */}
-            <div className="p-8 md:p-12 flex flex-col justify-center">
-              <div className="inline-flex items-center gap-2 bg-secondary/15 text-secondary rounded-full px-3 py-1 text-xs font-semibold mb-5 w-fit">
-                <Map className="h-3.5 w-3.5" />
-                New Feature
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
-                Your personal tech<br className="hidden md:block" /> learning path
-              </h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed max-w-sm">
-                Not sure where to start? Answer two quick questions and we'll build a guided step-by-step plan — from the basics right through to confident, independent tech use.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2 w-fit">
-                  <Link to="/my-path">
-                    <Map className="h-4 w-4" />
-                    Start My Learning Path
-                  </Link>
-                </Button>
-                <Button asChild variant="ghost" size="lg" className="w-fit text-muted-foreground">
-                  <Link to="/guides">Browse all guides</Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Right — steps preview */}
-            <div className="bg-card/60 border-l border-secondary/10 p-8 md:p-12 flex flex-col justify-center gap-4">
-              {[
-                { emoji: '🔰', label: 'Beginner Basics', desc: 'Passwords, Wi-Fi, email fundamentals' },
-                { emoji: '🛡️', label: 'Safety Essentials', desc: 'Scam spotting, privacy, safe browsing' },
-                { emoji: '📱', label: 'Devices & Apps', desc: 'Get the most from your phone or tablet' },
-              ].map((path) => (
-                <div key={path.label} className="flex items-center gap-4 p-3 rounded-xl bg-background/70 border border-border/50">
-                  <span className="text-2xl">{path.emoji}</span>
-                  <div>
-                    <p className="font-semibold text-sm">{path.label}</p>
-                    <p className="text-xs text-muted-foreground">{path.desc}</p>
-                  </div>
-                  <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto shrink-0" />
-                </div>
-              ))}
-              <p className="text-xs text-muted-foreground text-center pt-1">5 paths · 236 guides · your pace</p>
-            </div>
+      {/* ── Popular Guides ──────────────────────────────── */}
+      <section className="container py-20">
+        <div className="flex items-end justify-between mb-12">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Popular Guides</h2>
+            <p className="text-muted-foreground">The most helpful articles for beginners.</p>
           </div>
-        </motion.div>
-      </section>
+          <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
+            <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+          </Button>
+        </div>
 
-      {/* How It Works */}
-      <section className="container py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
-          How TekSure Works
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">
-          Three steps — simpler than calling your cable company.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {[
-            { step: '1', emoji: '📝', title: 'Tell Us What\'s Wrong', desc: 'Fill out one quick form. Just your phone or email — that\'s all we need to get started.' },
-            { step: '2', emoji: '📞', title: 'We Reach Out to You', desc: 'A real person calls or texts you. No chatbots. No waiting on hold. Usually within a few hours.' },
-            { step: '3', emoji: '✅', title: 'Problem Solved', desc: 'We walk you through the fix step by step, or send a tech if needed. Plain English, no jargon.' },
-          ].map((s, i) => (
-            <motion.div
-              key={s.step}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.12 }}
-              viewport={{ once: true }}
-            >
-              <div className="bg-card border border-border rounded-2xl p-6 h-full relative">
-                <div className="absolute -top-3.5 left-6 w-7 h-7 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold shadow-md">
-                  {s.step}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {featuredGuides.map((guide, i) => (
+            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+              <Link to={`/guides/${guide.slug}`} className="group block h-full">
+                <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col">
+                  <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="secondary" className="text-[10px] font-medium">{categoryLabels[guide.category]}</Badge>
+                    <span className="text-[10px] text-muted-foreground flex items-center gap-1">
+                      <Clock className="h-3 w-3" /> {guide.readTime}
+                    </span>
+                  </div>
+                  <h3 className="font-semibold text-sm mb-2 group-hover:text-primary transition-colors leading-snug flex-1">
+                    {guide.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
                 </div>
-                <div className="text-4xl mb-4 mt-2">{s.emoji}</div>
-                <h3 className="font-bold text-lg mb-2">{s.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
-
-        <div className="text-center mt-10">
-          <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
-            <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
-          </Button>
-        </div>
       </section>
 
-      {/* Why TekSure */}
-      <section className="bg-muted py-16">
+      {/* ── How It Works ────────────────────────────────── */}
+      <section className="bg-muted/40 py-20">
         <div className="container">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3">Why TekSure?</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-md mx-auto">Built for people who just want their tech to work — without the confusion.</p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">How TekSure Works</h2>
+            <p className="text-muted-foreground max-w-sm mx-auto">Three steps. Simpler than calling your cable company.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {[
-              { icon: Users, title: 'Real People, Real Help', desc: 'No automated chatbots. When you reach out, a real person responds — in plain English, no tech speak.' },
-              { icon: BookOpen, title: '100+ Free Guides', desc: 'Step-by-step articles written for beginners. No assumed knowledge. No jargon. Just clear answers.' },
-              { icon: Shield, title: 'Safe & Trustworthy', desc: 'We never push unnecessary upgrades or confusing packages. Honest advice you can actually act on.' },
-            ].map((f, i) => (
-              <motion.div
-                key={f.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="h-14 w-14 rounded-2xl bg-accent flex items-center justify-center mx-auto mb-4">
-                  <f.icon className="h-7 w-7 text-secondary" />
+              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Just your phone or email — that\'s all we need.' },
+              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.' },
+              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.' },
+            ].map((s, i) => (
+              <motion.div key={s.step} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+                <div className="text-center">
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold mx-auto mb-5">
+                    {s.step}
+                  </div>
+                  <h3 className="font-semibold text-base mb-2">{s.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 </div>
-                <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
               </motion.div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6">
+              <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="container py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-xl mx-auto text-center"
-        >
-          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-secondary/10 mb-5">
-            <Mail className="h-7 w-7 text-secondary" />
+      {/* ── Latest Guides ───────────────────────────────── */}
+      <section className="container py-20">
+        <div className="flex items-end justify-between mb-12">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Latest Guides</h2>
+            <p className="text-muted-foreground">Fresh step-by-step articles.</p>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">Get a Free Weekly Tech Tip</h2>
-          <p className="text-muted-foreground mb-8 max-w-sm mx-auto">
-            One helpful tip every Sunday, straight to your inbox. No spam, unsubscribe any time.
-          </p>
-          <NewsletterSignup />
-          <p className="text-xs text-muted-foreground mt-4">
-            Joining 2,000+ readers who stay one step ahead of tech trouble.
-          </p>
-        </motion.div>
+          <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
+            <Link to="/guides">See all <ArrowRight className="h-4 w-4" /></Link>
+          </Button>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {latestGuides.map((guide, i) => (
+            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+              <Link to={`/guides/${guide.slug}`} className="group block h-full">
+                <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                  <div className="text-2xl mb-3">{guide.thumbnailEmoji}</div>
+                  <Badge variant="secondary" className="text-[10px] font-medium mb-2">{categoryLabels[guide.category]}</Badge>
+                  <h4 className="font-semibold text-sm group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                    {guide.title}
+                  </h4>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="hero-gradient text-primary-foreground">
-        <div className="container py-20 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Tech trouble? We've got you covered.
-            </h2>
-            <p className="opacity-80 mb-8 max-w-lg mx-auto text-lg">
-              Browse {guides.length}+ free guides — or skip the reading and get a real person to help you right now.
+      {/* ── Newsletter ──────────────────────────────────── */}
+      <section className="border-y bg-muted/30">
+        <div className="container py-16">
+          <div className="max-w-md mx-auto text-center">
+            <Mail className="h-6 w-6 text-primary mx-auto mb-4" />
+            <h2 className="text-xl font-bold mb-2">Free weekly tech tip</h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              One helpful tip every Sunday. No spam, unsubscribe any time.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                to="/get-help"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-secondary text-secondary-foreground font-bold text-base hover:bg-secondary/90 transition-colors shadow-xl shadow-secondary/30"
-              >
-                <Phone className="h-5 w-5" /> Get Help Now
-              </Link>
-              <Link
-                to="/guides"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-primary-foreground font-semibold text-base transition-colors border border-white/25"
-              >
-                <BookOpen className="h-5 w-5" /> Browse Free Guides
-              </Link>
+            <NewsletterSignup />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Final CTA ───────────────────────────────────── */}
+      <section className="hero-gradient text-white">
+        <div className="container py-20 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Tech trouble? We've got you.
+            </h2>
+            <p className="text-white/60 mb-8 max-w-md mx-auto">
+              Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
+                <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
+                <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
+              </Button>
             </div>
-            <p className="mt-5 text-sm opacity-50">Free · No account required · No robots</p>
           </motion.div>
         </div>
       </section>

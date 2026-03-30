@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -185,32 +186,27 @@ export default function News() {
       <Navbar />
 
       <main className="min-h-screen bg-background">
-        {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        {/* Header */}
+        <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
-            <div className="flex justify-center mb-3">
-              <div className="p-3 bg-primary/10 rounded-full">
-                <Newspaper className="h-8 w-8 text-primary" />
-              </div>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Tech News</h1>
-            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Tech News</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               The most important tech news and scam alerts explained in plain English — no jargon, no hype.
             </p>
           </div>
         </section>
 
-        <div className="container max-w-4xl mx-auto px-4 py-8">
+        <div className="container max-w-4xl mx-auto px-4 py-16">
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-12">
             {FILTER_CATEGORIES.map(cat => (
               <button
                 key={cat.value}
                 onClick={() => { setActiveCategory(cat.value); setVisibleCount(6); }}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-all ${
+                className={`px-4 py-2 rounded-xl text-sm font-medium border transition-all ${
                   activeCategory === cat.value
-                    ? 'bg-primary text-primary-foreground border-primary shadow-sm'
-                    : 'bg-muted border-border hover:bg-accent'
+                    ? 'bg-primary text-primary-foreground border-primary'
+                    : 'border-border bg-background hover:bg-muted'
                 }`}
               >
                 {cat.label}
@@ -219,47 +215,55 @@ export default function News() {
           </div>
 
           {/* News Grid */}
-          <div className="space-y-4">
-            {visible.map(item => (
-              <Card key={item.id} className="border-border hover:shadow-md transition-shadow">
-                <CardContent className="p-5">
-                  <div className="flex gap-4">
-                    <div className="text-3xl shrink-0 mt-0.5">{item.emoji}</div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap mb-2">
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${CATEGORY_COLORS[item.category]}`}>
-                          {CATEGORY_LABELS[item.category]}
-                        </span>
-                        <span className="text-xs text-muted-foreground flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {item.readTime}
-                        </span>
-                        <span className="text-xs text-muted-foreground ml-auto">
-                          {new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-                        </span>
+          <div className="space-y-5">
+            {visible.map((item, idx) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05 }}
+              >
+                <Card className="rounded-2xl border border-border bg-card hover:border-border/60 transition-all">
+                  <CardContent className="p-6">
+                    <div className="flex gap-5">
+                      <div className="text-4xl shrink-0">{item.emoji}</div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap mb-3">
+                          <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[item.category]}`}>
+                            {CATEGORY_LABELS[item.category]}
+                          </span>
+                          <span className="text-xs text-muted-foreground flex items-center gap-1">
+                            <Clock className="h-3 w-3" /> {item.readTime}
+                          </span>
+                          <span className="text-xs text-muted-foreground ml-auto">
+                            {new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                          </span>
+                        </div>
+                        <h2 className="font-semibold text-base leading-snug mb-2">{item.title}</h2>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.summary}</p>
+                        {item.source && item.sourceUrl && (
+                          <a
+                            href={item.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-primary/80 transition-colors"
+                          >
+                            Source: {item.source} <ExternalLink className="h-3 w-3" />
+                          </a>
+                        )}
                       </div>
-                      <h2 className="font-semibold text-base leading-snug mb-2">{item.title}</h2>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{item.summary}</p>
-                      {item.source && item.sourceUrl && (
-                        <a
-                          href={item.sourceUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 mt-2 text-xs text-primary hover:underline"
-                        >
-                          Source: {item.source} <ExternalLink className="h-3 w-3" />
-                        </a>
-                      )}
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
 
           {/* Load More */}
           {visibleCount < filtered.length && (
-            <div className="text-center mt-6">
-              <Button variant="outline" onClick={() => setVisibleCount(v => v + 6)} className="gap-2">
+            <div className="text-center mt-12">
+              <Button variant="outline" onClick={() => setVisibleCount(v => v + 6)} className="gap-2 rounded-xl">
                 <ChevronDown className="h-4 w-4" /> Load more news
               </Button>
             </div>
@@ -269,7 +273,7 @@ export default function News() {
             <p className="text-center text-muted-foreground py-12">No news in this category yet.</p>
           )}
 
-          <NewsletterSignup className="mt-10" />
+          <NewsletterSignup className="mt-16" />
         </div>
       </main>
 

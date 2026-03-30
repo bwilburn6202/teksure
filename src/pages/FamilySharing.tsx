@@ -52,11 +52,11 @@ export default function FamilySharing() {
         <Navbar />
         <main className="flex-1 container max-w-lg py-20 text-center">
           <Shield className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
-          <h2 className="text-xl font-bold mb-2">Sign in to manage family sharing</h2>
+          <h2 className="text-xl font-bold mb-2 text-primary">Sign in to manage family sharing</h2>
           <p className="text-muted-foreground mb-6">Create an account or log in to share TekSure access with your family members.</p>
           <div className="flex gap-3 justify-center">
-            <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90"><Link to="/login">Log in</Link></Button>
-            <Button asChild variant="outline"><Link to="/signup">Create account</Link></Button>
+            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl"><Link to="/login">Log in</Link></Button>
+            <Button asChild variant="outline" className="rounded-xl"><Link to="/signup">Create account</Link></Button>
           </div>
         </main>
         <Footer />
@@ -68,10 +68,12 @@ export default function FamilySharing() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
-        <div className="text-center mb-10">
-          <div className="text-4xl mb-3">👨‍👩‍👧‍👦</div>
-          <h1 className="text-3xl font-bold mb-2">Family Tech Sharing</h1>
-          <p className="text-muted-foreground">Share your TekSure access with up to {MAX_MEMBERS} family members — each gets their own account and progress tracking.</p>
+        <div className="border-b border-border pb-10 mb-10">
+          <div className="text-center">
+            <div className="text-4xl mb-3">👨‍👩‍👧‍👦</div>
+            <h1 className="text-3xl font-bold text-primary mb-2">Family Tech Sharing</h1>
+            <p className="text-muted-foreground">Share your TekSure access with up to {MAX_MEMBERS} family members — each gets their own account and progress tracking.</p>
+          </div>
         </div>
 
         {/* Benefits */}
@@ -81,7 +83,7 @@ export default function FamilySharing() {
             { icon: Heart, title: 'Individual progress', desc: 'Everyone tracks their own learning journey', colour: 'bg-pink-50 text-pink-600' },
             { icon: Shield, title: 'Keep it safe', desc: 'Separate logins — full privacy for each person', colour: 'bg-green-50 text-green-600' },
           ].map(b => (
-            <Card key={b.title}>
+            <Card key={b.title} className="rounded-2xl border border-border bg-card">
               <CardContent className="pt-4 pb-4 text-center">
                 <div className={`w-10 h-10 rounded-full ${b.colour} flex items-center justify-center mx-auto mb-2`}>
                   <b.icon className="h-5 w-5" />
@@ -94,12 +96,12 @@ export default function FamilySharing() {
         </div>
 
         {/* Invite link */}
-        <Card className="mb-6">
+        <Card className="rounded-2xl border border-border bg-card mb-6">
           <CardContent className="pt-5 pb-4">
-            <h2 className="font-semibold mb-3 flex items-center gap-2"><Mail className="h-4 w-4" /> Share invite link</h2>
+            <h2 className="font-semibold mb-3 flex items-center gap-2 text-primary"><Mail className="h-4 w-4" /> Share invite link</h2>
             <div className="flex gap-2">
-              <Input value={inviteLink} readOnly className="text-xs text-muted-foreground bg-muted" />
-              <Button variant="outline" onClick={copyLink} className="shrink-0 gap-1.5">
+              <Input value={inviteLink} readOnly className="text-xs text-muted-foreground bg-muted rounded-xl" />
+              <Button variant="outline" onClick={copyLink} className="shrink-0 gap-1.5 rounded-xl">
                 {copied ? <><CheckCircle2 className="h-4 w-4 text-green-500" />Copied</> : <><Copy className="h-4 w-4" />Copy</>}
               </Button>
             </div>
@@ -108,9 +110,9 @@ export default function FamilySharing() {
         </Card>
 
         {/* Add member form */}
-        <Card className="mb-6">
+        <Card className="rounded-2xl border border-border bg-card mb-6">
           <CardContent className="pt-5 pb-5">
-            <h2 className="font-semibold mb-4 flex items-center gap-2">
+            <h2 className="font-semibold mb-4 flex items-center gap-2 text-primary">
               <UserPlus className="h-4 w-4" /> Invite by email
               <Badge variant="secondary" className="ml-auto">{members.length}/{MAX_MEMBERS} members</Badge>
             </h2>
@@ -118,13 +120,13 @@ export default function FamilySharing() {
               <form onSubmit={addMember} className="grid sm:grid-cols-2 gap-3">
                 <div>
                   <Label className="mb-1.5 block text-sm">Their name</Label>
-                  <Input placeholder="e.g. Mum" value={name} onChange={e => setName(e.target.value)} />
+                  <Input placeholder="e.g. Mum" value={name} onChange={e => setName(e.target.value)} className="rounded-xl" />
                 </div>
                 <div>
                   <Label className="mb-1.5 block text-sm">Their email</Label>
-                  <Input type="email" placeholder="mum@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+                  <Input type="email" placeholder="mum@example.com" value={email} onChange={e => setEmail(e.target.value)} className="rounded-xl" />
                 </div>
-                <Button type="submit" className="sm:col-span-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+                <Button type="submit" className="sm:col-span-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                   <Mail className="h-4 w-4" /> Send Invite
                 </Button>
               </form>
@@ -136,13 +138,13 @@ export default function FamilySharing() {
 
         {/* Members list */}
         {members.length > 0 && (
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="pt-5 pb-4">
-              <h2 className="font-semibold mb-4">Your family group</h2>
+              <h2 className="font-semibold mb-4 text-primary">Your family group</h2>
               <div className="space-y-3">
                 {members.map((m, i) => (
                   <motion.div key={m.email} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-3 p-3 rounded-xl bg-muted">
-                    <div className="w-9 h-9 rounded-full bg-secondary/15 flex items-center justify-center text-lg font-bold text-secondary shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center text-lg font-bold text-primary shrink-0">
                       {m.name[0].toUpperCase()}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -152,7 +154,7 @@ export default function FamilySharing() {
                     <Badge variant={m.status === 'active' ? 'secondary' : 'outline'} className="text-xs shrink-0">
                       {m.status === 'active' ? '✓ Active' : 'Pending'}
                     </Badge>
-                    <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground hover:text-destructive shrink-0" onClick={() => remove(i)}>
+                    <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground hover:text-destructive shrink-0 rounded-lg" onClick={() => remove(i)}>
                       <Trash2 className="h-4 w-4" />
                     </Button>
                   </motion.div>

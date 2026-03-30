@@ -148,17 +148,17 @@ export default function Profile() {
         path="/profile"
       />
       <Navbar />
-      <main className="container max-w-xl py-16 min-h-[60vh]">
+      <main className="container max-w-xl py-16 min-h-screen bg-background">
 
         <div className="flex items-center gap-3 mb-8">
-          <User className="h-7 w-7 text-secondary" />
-          <h1 className="text-2xl font-bold">My Profile</h1>
+          <User className="h-7 w-7 text-primary" />
+          <h1 className="text-2xl font-bold text-primary">My Profile</h1>
         </div>
 
         {/* Avatar + summary */}
         <div className="flex items-center gap-5 mb-8">
-          <div className="h-20 w-20 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
-            <span className="text-2xl font-bold text-secondary">{initials}</span>
+          <div className="h-20 w-20 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+            <span className="text-2xl font-bold text-primary">{initials}</span>
           </div>
           <div className="min-w-0">
             <p className="font-semibold text-lg truncate">{fullName || 'No name set'}</p>
@@ -172,9 +172,9 @@ export default function Profile() {
         </div>
 
         {/* Edit details */}
-        <Card className="mb-6">
-          <CardHeader className="pb-4">
-            <CardTitle className="text-base">Account Details</CardTitle>
+        <Card className="mb-6 rounded-2xl border border-border bg-card">
+          <CardHeader className="pb-4 border-b border-border">
+            <CardTitle className="text-base text-primary">Account Details</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSave} className="space-y-4">
@@ -224,7 +224,7 @@ export default function Profile() {
                 </div>
               )}
 
-              <Button type="submit" disabled={saving} className="w-full h-11 gap-2">
+              <Button type="submit" disabled={saving} className="w-full h-11 gap-2 rounded-xl">
                 {saving ? (
                   <><Loader2 className="h-4 w-4 animate-spin" /> Saving...</>
                 ) : saved ? (
@@ -238,18 +238,18 @@ export default function Profile() {
         </Card>
 
         {/* Progress */}
-        <Card className="mb-6">
+        <Card className="mb-6 rounded-2xl border border-border bg-card">
           <CardContent className="pt-5 pb-4">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
               Learning Progress
             </p>
             <div className="flex items-end justify-between mb-2">
               <p className="text-sm font-medium">{progressStats.completed} guides completed</p>
-              <p className="text-lg font-bold text-secondary">{progressStats.pct}%</p>
+              <p className="text-lg font-bold text-primary">{progressStats.pct}%</p>
             </div>
             <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
               <div
-                className="h-2 rounded-full bg-secondary transition-all duration-500"
+                className="h-2 rounded-full bg-primary transition-all duration-500"
                 style={{ width: `${progressStats.pct}%` }}
               />
             </div>
@@ -262,9 +262,9 @@ export default function Profile() {
         </Card>
 
         {/* Personalized Learning Path */}
-        <Card className="mb-6">
-          <CardHeader className="pb-3">
-            <CardTitle className="text-base flex items-center gap-2">
+        <Card className="mb-6 rounded-2xl border border-border bg-card">
+          <CardHeader className="pb-3 border-b border-border">
+            <CardTitle className="text-base flex items-center gap-2 text-primary">
               <Map className="h-4 w-4 text-primary" />
               Your Learning Path
             </CardTitle>
@@ -326,9 +326,9 @@ export default function Profile() {
         </Card>
 
         {/* Badges */}
-        <Card className="mb-6">
-          <CardHeader className="pb-3">
-            <CardTitle className="text-base flex items-center gap-2">
+        <Card className="mb-6 rounded-2xl border border-border bg-card">
+          <CardHeader className="pb-3 border-b border-border">
+            <CardTitle className="text-base flex items-center gap-2 text-primary">
               <Trophy className="h-4 w-4 text-amber-500" />
               Achievement Badges
               <Badge variant="secondary" className="text-xs ml-auto">
@@ -365,7 +365,7 @@ export default function Profile() {
         </Card>
 
         {/* Quick links */}
-        <Card>
+        <Card className="rounded-2xl border border-border bg-card">
           <CardContent className="pt-5 pb-3">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
               Quick Links
@@ -377,7 +377,7 @@ export default function Profile() {
                 onClick={() => navigate('/my-requests')}
               >
                 <span className="flex items-center gap-2 text-sm">
-                  <MessageSquare className="h-4 w-4 text-secondary" />
+                  <MessageSquare className="h-4 w-4 text-primary" />
                   My Help Requests
                 </span>
                 <ArrowRight className="h-4 w-4 text-muted-foreground" />
@@ -388,7 +388,7 @@ export default function Profile() {
                 onClick={() => navigate('/guides')}
               >
                 <span className="flex items-center gap-2 text-sm">
-                  <BookOpen className="h-4 w-4 text-secondary" />
+                  <BookOpen className="h-4 w-4 text-primary" />
                   Browse Free Guides
                 </span>
                 <ArrowRight className="h-4 w-4 text-muted-foreground" />
@@ -399,7 +399,7 @@ export default function Profile() {
                 onClick={() => navigate('/get-help')}
               >
                 <span className="flex items-center gap-2 text-sm">
-                  <Shield className="h-4 w-4 text-secondary" />
+                  <Shield className="h-4 w-4 text-primary" />
                   Get Tech Help
                 </span>
                 <ArrowRight className="h-4 w-4 text-muted-foreground" />

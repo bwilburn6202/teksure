@@ -2,76 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @layer base {
   :root {
-    --background: 210 25% 97%;
-    --foreground: 220 50% 10%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
     --card: 0 0% 100%;
-    --card-foreground: 220 50% 10%;
+    --card-foreground: 0 0% 9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 50% 10%;
-    --primary: 220 70% 20%;
+    --popover-foreground: 0 0% 9%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 172 50% 40%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 210 20% 92%;
-    --muted-foreground: 220 10% 45%;
-    --accent: 172 40% 92%;
-    --accent-foreground: 172 50% 22%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 0 0% 9%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
-    --ring: 220 70% 20%;
-    --radius: 0.625rem;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
+    --radius: 0.75rem;
 
-    --teksure-teal: 172 50% 40%;
-    --teksure-success: 145 63% 42%;
+    --teksure-teal: 221 83% 53%;
+    --teksure-success: 142 71% 45%;
     --teksure-warning: 38 92% 50%;
-    --teksure-info: 205 85% 55%;
+    --teksure-info: 217 91% 60%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 0 0% 9%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 220 35% 6%;
-    --foreground: 210 20% 92%;
-    --card: 220 30% 10%;
-    --card-foreground: 210 20% 92%;
-    --popover: 220 30% 10%;
-    --popover-foreground: 210 20% 92%;
-    --primary: 172 50% 45%;
+    --background: 224 71% 4%;
+    --foreground: 210 20% 98%;
+    --card: 224 71% 4%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 35% 22%;
-    --secondary-foreground: 210 20% 92%;
-    --muted: 220 25% 14%;
-    --muted-foreground: 210 15% 55%;
-    --accent: 220 25% 14%;
-    --accent-foreground: 172 50% 65%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 218 11% 65%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 25% 16%;
-    --input: 220 25% 16%;
-    --ring: 172 50% 45%;
-    --teksure-teal: 172 50% 50%;
-    --teksure-success: 145 63% 50%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 217 91% 60%;
+
+    --teksure-teal: 217 91% 60%;
+    --teksure-success: 142 71% 45%;
     --teksure-warning: 38 92% 55%;
-    --teksure-info: 205 85% 60%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --teksure-info: 217 91% 60%;
+
+    --sidebar-background: 224 71% 4%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 215 28% 17%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 215 28% 17%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -80,44 +84,53 @@
     @apply border-border;
   }
   html {
-    font-size: 18px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.011em;
   }
   button, a[role="button"], [role="button"] {
-    min-height: 48px;
+    min-height: 44px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
   }
 }
 
 @layer components {
-  .hero-gradient {
-    background: linear-gradient(135deg, hsl(220 70% 15%) 0%, hsl(220 55% 25%) 40%, hsl(172 45% 30%) 100%);
+  /* Clean section backgrounds */
+  .section-alt {
+    @apply bg-muted/50;
   }
+
+  /* Subtle glass header */
   .glass {
-    background-color: hsl(var(--card) / 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid hsl(var(--border) / 0.5);
+    @apply bg-background/80 backdrop-blur-xl border-b border-border/50;
   }
+
+  /* Hero gradient — refined deep blue */
+  .hero-gradient {
+    background: linear-gradient(180deg, hsl(224 71% 4%) 0%, hsl(221 60% 12%) 100%);
+  }
+
   .btn-hero-outline {
-    border-color: hsl(0 0% 100% / 0.3);
-    color: hsl(0 0% 100%);
-  }
-  .btn-hero-outline:hover {
-    background-color: hsl(0 0% 100% / 0.1);
+    @apply border border-white/20 text-white hover:bg-white/10 transition-colors;
   }
 }
 
 /* Font size adjuster classes */
 html.font-size-large {
-  font-size: 22px;
+  font-size: 18px;
 }
 html.font-size-xl {
-  font-size: 26px;
+  font-size: 20px;
 }
 html.font-size-xxl {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 /* Print styles */
@@ -129,7 +142,7 @@ html.font-size-xxl {
   body {
     color: #000 !important;
     background: #fff !important;
-    font-size: 14pt;
+    font-size: 12pt;
   }
   .hero-gradient {
     background: none !important;
@@ -149,36 +162,35 @@ html.font-size-xxl {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(217 91% 60%));
   }
   .status-requested {
-    background-color: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
+    @apply bg-muted text-muted-foreground;
   }
   .status-offered {
-    background-color: hsl(var(--teksure-teal) / 0.15);
+    background-color: hsl(var(--teksure-teal) / 0.1);
     color: hsl(var(--teksure-teal));
   }
   .status-accepted {
-    background-color: hsl(var(--teksure-info) / 0.15);
+    background-color: hsl(var(--teksure-info) / 0.1);
     color: hsl(var(--teksure-info));
   }
   .status-in-progress {
-    background-color: hsl(var(--teksure-warning) / 0.15);
+    background-color: hsl(var(--teksure-warning) / 0.1);
     color: hsl(var(--teksure-warning));
   }
   .status-completed {
-    background-color: hsl(var(--teksure-success) / 0.15);
+    background-color: hsl(var(--teksure-success) / 0.1);
     color: hsl(var(--teksure-success));
   }
   .status-cancelled,
   .status-disputed {
-    background-color: hsl(var(--destructive) / 0.15);
+    background-color: hsl(var(--destructive) / 0.1);
     color: hsl(var(--destructive));
   }
 }
 
-/* ── Senior Tech Mode ───────────────────────────────────────────────── */
+/* ── Senior Tech Mode ───────────────────────────────────────── */
 html.senior-mode {
   font-size: 20px;
 }
@@ -210,7 +222,7 @@ html.high-contrast {
   --foreground: 0 0% 0%;
   --card: 0 0% 100%;
   --card-foreground: 0 0% 0%;
-  --muted: 0 0% 92%;
+  --muted: 0 0% 95%;
   --muted-foreground: 0 0% 10%;
   --border: 0 0% 0%;
   --input: 0 0% 0%;

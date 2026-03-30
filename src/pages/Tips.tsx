@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -113,11 +114,11 @@ const pastTips: Tip[] = [
 ];
 
 const categoryColors: Record<string, string> = {
-  Security: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-  Safety: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
-  Maintenance: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
-  Productivity: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200',
-  Communication: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
+  Security: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  Safety: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  Maintenance: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+  Productivity: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
+  Communication: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
 };
 
 export default function Tips() {
@@ -129,60 +130,77 @@ export default function Tips() {
         path="/tips"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh]">
-        <div className="flex items-center gap-3 mb-2">
-          <Lightbulb className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Weekly Tech Tips</h1>
-        </div>
-        <p className="text-muted-foreground mb-10 max-w-2xl">
-          One practical tip every week to help you stay safe, organised, and confident with technology.
-        </p>
+      <main className="min-h-screen bg-background">
+        <section className="border-b border-border py-16 px-4">
+          <div className="container max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Weekly Tech Tips</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              One practical tip every week to help you stay safe, organised, and confident with technology.
+            </p>
+          </div>
+        </section>
 
-        {/* Featured Tip */}
-        <Card className="mb-12 border-secondary/40 bg-secondary/5">
-          <CardHeader>
-            <div className="flex items-start justify-between gap-3">
-              <div className="flex items-center gap-3">
-                <div className="rounded-full bg-secondary/10 p-3">
-                  <Star className="h-6 w-6 text-secondary" />
-                </div>
-                <div>
-                  <Badge className="mb-2 text-xs font-normal bg-secondary/20 text-secondary-foreground">Tip of the Week</Badge>
-                  <CardTitle className="text-xl">{featuredTip.title}</CardTitle>
-                </div>
-              </div>
-              <Badge className={`shrink-0 text-xs font-normal ${categoryColors[featuredTip.category] || ''}`}>
-                {featuredTip.category}
-              </Badge>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground leading-relaxed">{featuredTip.full}</p>
-          </CardContent>
-        </Card>
-
-        {/* Past Tips Grid */}
-        <h2 className="text-xl font-semibold mb-6">Past Tips</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {pastTips.map((tip) => (
-            <Card key={tip.title} className="h-full transition-all hover:shadow-lg hover:border-secondary/50 group">
-              <CardHeader className="pb-2">
-                <div className="flex items-start justify-between gap-2">
-                  <tip.icon className="h-8 w-8 text-secondary mb-2 transition-transform group-hover:scale-110" />
-                  <Badge className={`shrink-0 text-xs font-normal ${categoryColors[tip.category] || ''}`}>
-                    {tip.category}
+        <div className="container max-w-4xl mx-auto px-4 py-20">
+          {/* Featured Tip */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <Card className="rounded-2xl border border-border bg-card">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <div className="text-4xl shrink-0">⭐</div>
+                    <div className="flex-1">
+                      <Badge className="mb-3 text-xs font-medium bg-primary/10 text-primary border-0">Tip of the Week</Badge>
+                      <CardTitle className="text-2xl">{featuredTip.title}</CardTitle>
+                    </div>
+                  </div>
+                  <Badge className={`shrink-0 text-xs font-medium border-0 ${categoryColors[featuredTip.category] || ''}`}>
+                    {featuredTip.category}
                   </Badge>
                 </div>
-                <CardTitle className="text-base">{tip.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription>{tip.summary}</CardDescription>
+              <CardContent className="pt-2">
+                <p className="text-muted-foreground leading-relaxed text-base">{featuredTip.full}</p>
               </CardContent>
             </Card>
-          ))}
-        </div>
-        <div className="container pb-16 max-w-4xl">
-          <NewsletterSignup className="mt-10" />
+          </motion.div>
+
+          {/* Past Tips Grid */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold tracking-tight mb-8">Past Tips</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {pastTips.map((tip, idx) => (
+                <motion.div
+                  key={tip.title}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  <Card className="h-full rounded-2xl border border-border bg-card hover:border-border/60 transition-all group">
+                    <CardHeader className="pb-3">
+                      <div className="flex items-start justify-between gap-3 mb-2">
+                        <tip.icon className="h-6 w-6 text-primary shrink-0" />
+                        <Badge className={`shrink-0 text-xs font-medium border-0 ${categoryColors[tip.category] || ''}`}>
+                          {tip.category}
+                        </Badge>
+                      </div>
+                      <CardTitle className="text-base">{tip.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm">{tip.summary}</CardDescription>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <NewsletterSignup className="mt-20" />
         </div>
       </main>
       <Footer />

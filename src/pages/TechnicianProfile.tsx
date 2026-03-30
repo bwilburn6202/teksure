@@ -125,9 +125,9 @@ function TechnicianDirectory() {
       />
       <Navbar />
       <main className="min-h-screen bg-background">
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Our Technicians</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Our Technicians</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Every TekSure technician is ID-verified, background-checked, and rated by real customers.
             </p>
@@ -137,7 +137,7 @@ function TechnicianDirectory() {
         <div className="container max-w-4xl mx-auto px-4 py-8">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {TECHNICIANS.map(tech => (
-              <Card key={tech.id} className="border-border hover:shadow-md transition-shadow">
+              <Card key={tech.id} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -143,69 +144,87 @@ export default function ScamAlerts() {
         path="/safety/scam-alerts"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh]">
-        <div className="flex items-center gap-3 mb-2">
-          <ShieldAlert className="h-8 w-8 text-destructive" />
-          <h1 className="text-3xl font-bold">Scam Alerts</h1>
-        </div>
-        <p className="text-muted-foreground mb-10 max-w-2xl">
-          Scammers are getting smarter — but so can you. Learn the red flags for the most common scams and what to do if you encounter one.
-        </p>
+      <main className="min-h-screen bg-background">
+        <section className="border-b border-border py-16 px-4">
+          <div className="container max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Scam Alerts</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              Scammers are getting smarter — but so can you. Learn the red flags for the most common scams and what to do if you encounter one.
+            </p>
+          </div>
+        </section>
 
-        <div className="grid gap-6 lg:grid-cols-2">
-          {scams.map((scam) => (
-            <Card key={scam.title} className="overflow-hidden">
-              <CardHeader className="bg-destructive/10 border-b border-destructive/20 pb-3">
-                <div className="flex items-center gap-2">
-                  <AlertTriangle className="h-5 w-5 text-destructive shrink-0" />
-                  <CardTitle className="text-lg text-destructive">{scam.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-4 space-y-4">
+        <div className="container max-w-4xl mx-auto px-4 py-20">
+          <div className="grid gap-6 lg:grid-cols-2">
+            {scams.map((scam, idx) => (
+              <motion.div
+                key={scam.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05 }}
+              >
+                <Card className="overflow-hidden rounded-2xl border border-border bg-card hover:border-border/60 transition-all h-full">
+                  <CardHeader className="pb-4 border-b border-border/50">
+                    <div className="flex items-center gap-3">
+                      <AlertTriangle className="h-5 w-5 text-orange-500 shrink-0" />
+                      <CardTitle className="text-lg">{scam.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-5 space-y-5">
+                    <div>
+                      <h3 className="font-semibold text-sm flex items-center gap-2 mb-3">
+                        <AlertTriangle className="h-4 w-4 text-orange-500" />
+                        Red Flags
+                      </h3>
+                      <ul className="space-y-2">
+                        {scam.redFlags.map((flag, i) => (
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                            <span className="text-orange-500 shrink-0 font-semibold">•</span>
+                            {flag}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="pt-2">
+                      <h3 className="font-semibold text-sm flex items-center gap-2 mb-3">
+                        <CheckCircle2 className="h-4 w-4 text-green-600" />
+                        What To Do
+                      </h3>
+                      <ul className="space-y-2">
+                        {scam.whatToDo.map((step, i) => (
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                            <span className="text-green-600 shrink-0 font-semibold">✓</span>
+                            {step}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <Card className="rounded-2xl border border-border bg-card">
+              <CardContent className="py-6 flex items-start gap-4">
+                <Baby className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-sm flex items-center gap-1.5 mb-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-500" />
-                    Red Flags
-                  </h3>
-                  <ul className="space-y-1.5">
-                    {scam.redFlags.map((flag, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                        <span className="text-amber-500 shrink-0">•</span>
-                        {flag}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-sm flex items-center gap-1.5 mb-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-500" />
-                    What To Do
-                  </h3>
-                  <ul className="space-y-1.5">
-                    {scam.whatToDo.map((step, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                        <span className="text-green-500 shrink-0">✓</span>
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-sm font-semibold mb-1">Keeping kids safe online?</p>
+                  <Link to="/safety/parental-controls" className="text-sm text-primary hover:text-primary/80 font-medium transition-colors">
+                    Read our Parental Controls Guide →
+                  </Link>
                 </div>
               </CardContent>
             </Card>
-          ))}
+          </motion.div>
         </div>
-
-        <Card className="mt-10 bg-secondary/5 border-secondary/30">
-          <CardContent className="py-5 flex items-center gap-3">
-            <Baby className="h-6 w-6 text-secondary shrink-0" />
-            <div>
-              <p className="text-sm font-semibold">Keeping kids safe online?</p>
-              <Link to="/safety/parental-controls" className="text-sm text-secondary hover:underline">
-                Read our Parental Controls Guide →
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
       </main>
       <Footer />
     </>

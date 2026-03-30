@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -77,27 +78,33 @@ const GetHelp = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen bg-background flex flex-col">
         <SEOHead title="Get Help — TekSure" description="Submit a help request to TekSure." path="/get-help" />
         <Navbar />
         <main className="flex-1 flex items-center justify-center px-4 py-20">
-          <div className="max-w-md w-full text-center space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-md w-full text-center space-y-6"
+          >
             <div className="flex justify-center">
-              <div className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center">
-                <CheckCircle className="h-10 w-10 text-green-500" />
+              <div className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <CheckCircle className="h-10 w-10 text-primary" />
               </div>
             </div>
-            <h1 className="text-3xl font-bold">You're all set!</h1>
-            <p className="text-muted-foreground text-lg">
-              We got your request. A real person will be in touch with you soon — no robots, no runaround.
-            </p>
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight mb-3">You're all set!</h1>
+              <p className="text-muted-foreground text-lg">
+                We got your request. A real person will be in touch with you soon — no robots, no runaround.
+              </p>
+            </div>
             <p className="text-sm text-muted-foreground">
-              While you wait, you can browse our free guides below.
+              While you wait, you can browse our free guides.
             </p>
-            <Button onClick={() => window.location.href = '/guides'} className="gap-2">
+            <Button onClick={() => window.location.href = '/guides'} className="gap-2 rounded-xl" size="lg">
               Browse Free Guides <ArrowRight className="h-4 w-4" />
             </Button>
-          </div>
+          </motion.div>
         </main>
         <Footer />
       </div>
@@ -105,33 +112,45 @@ const GetHelp = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       <SEOHead title="Get Help — TekSure" description="Tell us what's going on and we'll reach out to help." path="/get-help" />
       <Navbar />
 
-      <main className="flex-1 py-12 px-4">
-        <div className="max-w-xl mx-auto">
+      <main className="flex-1 flex flex-col py-20 px-4">
+        <div className="max-w-2xl w-full mx-auto">
 
           {/* Header */}
-          <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold mb-3">Need Tech Help? <span className="text-secondary">We've Got You.</span></h1>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16 border-b border-border pb-12"
+          >
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Get Tech Help</h1>
             <p className="text-muted-foreground text-lg">
-              Fill out as little or as much as you'd like — just give us one way to reach you.
+              Tell us what's happening and we'll get someone real to help you.
             </p>
-          </div>
+          </motion.div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 bg-card border border-border rounded-2xl p-6 md:p-8 shadow-sm">
+          <motion.form
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            onSubmit={handleSubmit}
+            className="space-y-8"
+          >
 
             {/* Contact Section */}
-            <div className="space-y-1">
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">How should we reach you?</p>
-              <p className="text-sm text-muted-foreground mb-3">Phone is preferred — we can text or call.</p>
+            <div className="space-y-4">
+              <div>
+                <p className="text-sm font-semibold text-primary mb-1">How should we reach you?</p>
+                <p className="text-xs text-muted-foreground">Phone is preferred — we can text or call.</p>
+              </div>
 
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-secondary" />
-                    Phone Number <span className="text-secondary font-semibold">★ Preferred</span>
+                  <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-primary" />
+                    Phone Number <span className="text-primary font-semibold">★</span>
                   </Label>
                   <Input
                     id="phone"
@@ -139,12 +158,12 @@ const GetHelp = () => {
                     placeholder="(555) 867-5309"
                     value={phone}
                     onChange={e => setPhone(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base rounded-xl border-border"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="flex items-center gap-2">
+                  <Label htmlFor="email" className="text-sm font-medium flex items-center gap-2">
                     <Mail className="h-4 w-4 text-muted-foreground" />
                     Email Address
                   </Label>
@@ -154,89 +173,95 @@ const GetHelp = () => {
                     placeholder="you@email.com"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base rounded-xl border-border"
                   />
                 </div>
               </div>
             </div>
 
-            <hr className="border-border" />
-
             {/* Optional Info */}
-            <div className="space-y-4">
-              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">A little more info (optional)</p>
-
-              <div className="space-y-2">
-                <Label htmlFor="name" className="flex items-center gap-2">
-                  <User className="h-4 w-4 text-muted-foreground" />
-                  Your Name
-                </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="First name is fine"
-                  value={name}
-                  onChange={e => setName(e.target.value)}
-                  className="h-12 text-base"
-                />
+            <div className="space-y-4 border-t border-border pt-8">
+              <div>
+                <p className="text-sm font-semibold text-primary mb-1">Additional info (optional)</p>
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="device" className="flex items-center gap-2">
-                  <Monitor className="h-4 w-4 text-muted-foreground" />
-                  What kind of device?
-                </Label>
-                <Select value={deviceType} onValueChange={setDeviceType}>
-                  <SelectTrigger id="device" className="h-12 text-base">
-                    <SelectValue placeholder="Pick one (optional)" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {deviceTypes.map(d => (
-                      <SelectItem key={d.value} value={d.value}>{d.label}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-sm font-medium flex items-center gap-2">
+                    <User className="h-4 w-4 text-muted-foreground" />
+                    Your Name
+                  </Label>
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="First name is fine"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    className="h-11 text-base rounded-xl border-border"
+                  />
+                </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="description" className="flex items-center gap-2">
-                  <MessageSquare className="h-4 w-4 text-muted-foreground" />
-                  What's going on?
-                </Label>
-                <Textarea
-                  id="description"
-                  placeholder="Describe your issue in plain English — no tech jargon needed! (e.g. 'My computer is running really slow and keeps freezing')"
-                  value={description}
-                  onChange={e => setDescription(e.target.value)}
-                  rows={4}
-                  className="text-base resize-none"
-                />
+                <div className="space-y-2">
+                  <Label htmlFor="device" className="text-sm font-medium flex items-center gap-2">
+                    <Monitor className="h-4 w-4 text-muted-foreground" />
+                    Device type
+                  </Label>
+                  <Select value={deviceType} onValueChange={setDeviceType}>
+                    <SelectTrigger id="device" className="h-11 text-base rounded-xl border-border">
+                      <SelectValue placeholder="Pick one (optional)" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {deviceTypes.map(d => (
+                        <SelectItem key={d.value} value={d.value}>{d.label}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="description" className="text-sm font-medium flex items-center gap-2">
+                    <MessageSquare className="h-4 w-4 text-muted-foreground" />
+                    What's going on?
+                  </Label>
+                  <Textarea
+                    id="description"
+                    placeholder="Describe your issue in plain English — no jargon needed!"
+                    value={description}
+                    onChange={e => setDescription(e.target.value)}
+                    rows={4}
+                    className="text-base resize-none rounded-xl border-border"
+                  />
+                </div>
               </div>
             </div>
 
             {error && (
-              <div className="bg-destructive/10 border border-destructive/30 text-destructive rounded-lg px-4 py-3 text-sm">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm"
+              >
                 {error}
-              </div>
+              </motion.div>
             )}
 
             <Button
               type="submit"
-              size="lg"
               disabled={submitting}
-              className="w-full h-13 text-base gap-2"
+              className="w-full h-11 text-base gap-2 rounded-xl mt-8"
+              size="lg"
             >
               {submitting ? (
-                <><Loader2 className="h-4 w-4 animate-spin" /> Sending your request...</>
+                <><Loader2 className="h-4 w-4 animate-spin" /> Sending...</>
               ) : (
-                <>Send My Request <ArrowRight className="h-4 w-4" /></>
+                <>Send Request <ArrowRight className="h-4 w-4" /></>
               )}
             </Button>
 
             <p className="text-center text-xs text-muted-foreground">
               No spam. No sales pitch. Just real tech help.
             </p>
-          </form>
+          </motion.form>
         </div>
       </main>
 

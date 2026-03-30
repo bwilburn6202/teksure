@@ -142,13 +142,13 @@ export default function Notifications() {
       />
       <Navbar />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 py-12 w-full">
+      <main className="flex-1 max-w-2xl mx-auto px-4 py-12 w-full min-h-screen bg-background">
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary/10 mb-4">
-            <Bell className="h-8 w-8 text-secondary" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
+            <Bell className="h-8 w-8 text-primary" />
           </div>
-          <h1 className="text-3xl font-bold mb-2">Stay in the Loop</h1>
+          <h1 className="text-3xl font-bold mb-2 text-primary">Stay in the Loop</h1>
           <p className="text-muted-foreground max-w-md mx-auto">
             Get weekly tech tips, instant scam alerts, and new guide announcements — right on your device.
           </p>
@@ -156,14 +156,14 @@ export default function Notifications() {
 
         {/* Main permission card */}
         {!isGranted && !isDenied && notifSupported && (
-          <Card className="mb-6 border-secondary/30 bg-secondary/5">
+          <Card className="mb-6 rounded-2xl border-primary/30 border bg-primary/5">
             <CardContent className="py-8 text-center">
-              <Bell className="h-10 w-10 text-secondary mx-auto mb-3" />
-              <h2 className="text-xl font-semibold mb-2">Enable Browser Notifications</h2>
+              <Bell className="h-10 w-10 text-primary mx-auto mb-3" />
+              <h2 className="text-xl font-semibold mb-2 text-primary">Enable Browser Notifications</h2>
               <p className="text-muted-foreground text-sm mb-6 max-w-sm mx-auto">
                 Click the button below and allow notifications when your browser asks. You can turn them off any time.
               </p>
-              <Button size="lg" onClick={requestPermission} disabled={requesting} className="gap-2">
+              <Button size="lg" onClick={requestPermission} disabled={requesting} className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl">
                 {requesting ? 'Requesting…' : <><Bell className="h-5 w-5" /> Enable Notifications</>}
               </Button>
             </CardContent>

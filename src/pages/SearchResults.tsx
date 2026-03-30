@@ -39,7 +39,7 @@ const SearchResults = () => {
   const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <SEOHead
         title={`Search: "${initialQuery}" | TekSure`}
         description={`Search results for "${initialQuery}" — find tech guides and solutions.`}
@@ -49,12 +49,12 @@ const SearchResults = () => {
 
       <main className="container py-12 flex-1">
         <div className="max-w-2xl mx-auto mb-10">
-          <h1 className="text-2xl md:text-3xl font-bold mb-6">Search Results</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Search Results</h1>
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               placeholder="Search guides..."
-              className="pl-10 h-12 text-base"
+              className="pl-10 h-12 text-base rounded-xl border border-border"
               value={search}
               onChange={e => handleSearch(e.target.value)}
             />
@@ -65,7 +65,7 @@ const SearchResults = () => {
           <Tabs value={activeTab} onValueChange={v => setActiveTab(v as typeof activeTab)}>
             <TabsList className="mb-8 flex-wrap h-auto gap-1">
               {categories.map(cat => (
-                <TabsTrigger key={cat} value={cat} className="capitalize">
+                <TabsTrigger key={cat} value={cat} className="capitalize rounded-xl">
                   {cat === 'all' ? `All (${filtered.length})` : categoryLabels[cat]}
                 </TabsTrigger>
               ))}
@@ -76,10 +76,10 @@ const SearchResults = () => {
                 {filtered.length === 0 ? (
                   <div className="text-center py-16">
                     <p className="text-4xl mb-4">🔍</p>
-                    <p className="text-lg font-medium mb-2">No results for "{search}"</p>
+                    <p className="text-lg font-medium mb-2 text-primary">No results for "{search}"</p>
                     <p className="text-muted-foreground">
                       Try different keywords or{' '}
-                      <Link to="/quick-fixes" className="text-secondary hover:underline">browse Quick Fixes</Link>
+                      <Link to="/quick-fixes" className="text-primary hover:underline">browse Quick Fixes</Link>
                     </p>
                   </div>
                 ) : (
@@ -92,16 +92,16 @@ const SearchResults = () => {
                         transition={{ delay: Math.min(i * 0.04, 0.3) }}
                       >
                         <Link to={`/guides/${guide.slug}`}>
-                          <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
+                          <Card className="h-full rounded-2xl border border-border bg-card hover:shadow-lg transition-all hover:-translate-y-1 group">
                             <CardContent className="pt-6">
                               <div className="text-3xl mb-3">{guide.thumbnailEmoji}</div>
                               <div className="flex items-center gap-2 mb-2">
-                                <Badge variant="secondary" className="text-xs">{categoryLabels[guide.category]}</Badge>
+                                <Badge variant="secondary" className="text-xs rounded-full">{categoryLabels[guide.category]}</Badge>
                                 <span className="text-xs text-muted-foreground flex items-center gap-1">
                                   <Clock className="h-3 w-3" />{guide.readTime}
                                 </span>
                               </div>
-                              <h3 className="font-semibold text-sm mb-1 group-hover:text-secondary transition-colors leading-snug line-clamp-2">
+                              <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors leading-snug line-clamp-2">
                                 {guide.title}
                               </h3>
                               <p className="text-xs text-muted-foreground line-clamp-2">{guide.excerpt}</p>
@@ -118,7 +118,7 @@ const SearchResults = () => {
         ) : (
           <div className="text-center py-16">
             <p className="text-4xl mb-4">🔎</p>
-            <p className="text-lg font-medium mb-2">Type something to search</p>
+            <p className="text-lg font-medium mb-2 text-primary">Type something to search</p>
             <p className="text-muted-foreground">Search through {guides.length}+ guides</p>
           </div>
         )}

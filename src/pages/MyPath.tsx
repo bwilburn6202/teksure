@@ -198,7 +198,7 @@ export default function MyPath() {
       <main className="min-h-screen bg-background">
 
         {/* ── Hero ── */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        <section className="border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
@@ -206,7 +206,7 @@ export default function MyPath() {
                   <div className="p-2 bg-primary/10 rounded-xl">
                     <Map className="h-6 w-6 text-primary" />
                   </div>
-                  <h1 className="text-3xl font-bold">My Learning Path</h1>
+                  <h1 className="text-3xl font-bold text-primary">My Learning Path</h1>
                 </div>
                 <p className="text-muted-foreground text-lg max-w-lg">
                   Follow a step-by-step path and build your tech confidence at your own pace.
@@ -215,9 +215,9 @@ export default function MyPath() {
 
               {/* Progress pill */}
               {totalDone > 0 && (
-                <div className="flex items-center gap-2 bg-secondary/10 border border-secondary/20 rounded-full px-4 py-2">
-                  <Flame className="h-4 w-4 text-secondary" />
-                  <span className="text-sm font-semibold text-secondary">{totalDone} guide{totalDone !== 1 ? 's' : ''} completed</span>
+                <div className="flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
+                  <Flame className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-semibold text-primary">{totalDone} guide{totalDone !== 1 ? 's' : ''} completed</span>
                 </div>
               )}
             </div>
@@ -228,7 +228,7 @@ export default function MyPath() {
 
           {/* ── Quiz ── */}
           {showQuiz ? (
-            <Card className="border-primary/20">
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-1">
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">
@@ -242,7 +242,7 @@ export default function MyPath() {
                   </button>
                 </div>
                 <Progress value={((quizStep) / QUIZ.length) * 100} className="h-1.5 mb-5" />
-                <h2 className="text-xl font-semibold mb-4">{QUIZ[quizStep].question}</h2>
+                <h2 className="text-xl font-semibold mb-4 text-primary">{QUIZ[quizStep].question}</h2>
                 <div className="grid gap-3">
                   {QUIZ[quizStep].options.map(opt => (
                     <button
@@ -259,14 +259,14 @@ export default function MyPath() {
             </Card>
           ) : !chosenPath ? (
             /* ── No path chosen yet ── */
-            <Card className="text-center py-10 border-dashed border-2">
+            <Card className="text-center py-10 rounded-2xl border-2 border-dashed border-border bg-card">
               <CardContent className="space-y-4">
                 <div className="text-4xl">🗺️</div>
-                <h2 className="text-xl font-semibold">Find your perfect path</h2>
+                <h2 className="text-xl font-semibold text-primary">Find your perfect path</h2>
                 <p className="text-muted-foreground max-w-sm mx-auto">
                   Answer 2 quick questions and we'll recommend the best learning path for you.
                 </p>
-                <Button onClick={() => setShowQuiz(true)} className="gap-2">
+                <Button onClick={() => setShowQuiz(true)} className="gap-2 rounded-xl">
                   <Zap className="h-4 w-4" /> Take the quiz
                 </Button>
                 <p className="text-xs text-muted-foreground">
@@ -286,7 +286,7 @@ export default function MyPath() {
               {/* Active path card */}
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-lg font-semibold">Your Current Path</h2>
+                  <h2 className="text-lg font-semibold text-primary">Your Current Path</h2>
                   <button
                     onClick={resetQuiz}
                     className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
@@ -301,16 +301,16 @@ export default function MyPath() {
                   const nextGuide = guides.find(g => g.slug === nextSlug);
 
                   return (
-                    <Card className={`border ${chosenPath.bg}`}>
+                    <Card className={`rounded-2xl border border-border bg-card ${chosenPath.bg}`}>
                       <CardContent className="p-5">
                         <div className="flex items-start gap-3 mb-4">
                           <span className="text-3xl">{chosenPath.emoji}</span>
                           <div className="flex-1">
-                            <h3 className="font-bold text-lg">{chosenPath.label}</h3>
+                            <h3 className="font-bold text-lg text-primary">{chosenPath.label}</h3>
                             <p className="text-sm text-muted-foreground">{chosenPath.description}</p>
                           </div>
                           {pct === 100 && (
-                            <Badge className="bg-green-500 text-white shrink-0">
+                            <Badge className="bg-green-500 text-white shrink-0 rounded-full">
                               <Trophy className="h-3 w-3 mr-1" /> Complete!
                             </Badge>
                           )}
@@ -361,7 +361,7 @@ export default function MyPath() {
 
                         {/* CTA */}
                         {nextGuide ? (
-                          <Button asChild className="w-full gap-2">
+                          <Button asChild className="w-full gap-2 rounded-xl">
                             <Link to={`/guides/${nextGuide.slug}`}>
                               <BookOpen className="h-4 w-4" />
                               {done === 0 ? 'Start path' : 'Continue'}: {nextGuide.title}
@@ -373,7 +373,7 @@ export default function MyPath() {
                             <Button
                               variant="outline"
                               onClick={resetQuiz}
-                              className="gap-2"
+                              className="gap-2 rounded-xl"
                             >
                               <Map className="h-4 w-4" /> Choose your next path
                             </Button>
@@ -389,7 +389,7 @@ export default function MyPath() {
 
           {/* ── All paths ── */}
           <div>
-            <h2 className="text-lg font-semibold mb-3">All Learning Paths</h2>
+            <h2 className="text-lg font-semibold mb-3 text-primary">All Learning Paths</h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {PATHS.map(path => {
                 const { done, total, pct } = pathProgress(path.slugs);
@@ -405,7 +405,7 @@ export default function MyPath() {
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
                         <span className="text-xl">{path.emoji}</span>
-                        <span className="font-semibold text-sm">{path.label}</span>
+                        <span className="font-semibold text-sm text-primary">{path.label}</span>
                       </div>
                       {isActive && <Badge variant="secondary" className="text-xs">Active</Badge>}
                       {pct === 100 && <Trophy className="h-4 w-4 text-amber-500" />}
@@ -423,16 +423,16 @@ export default function MyPath() {
 
           {/* ── Achievements teaser ── */}
           {totalDone > 0 && (
-            <Card className="bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200">
+            <Card className="rounded-2xl border border-border bg-card bg-gradient-to-r from-amber-50 to-orange-50">
               <CardContent className="p-4 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <Trophy className="h-8 w-8 text-amber-500 shrink-0" />
                   <div>
-                    <p className="font-semibold text-sm">You've completed {totalDone} guide{totalDone !== 1 ? 's' : ''}!</p>
+                    <p className="font-semibold text-sm text-primary">You've completed {totalDone} guide{totalDone !== 1 ? 's' : ''}!</p>
                     <p className="text-xs text-muted-foreground">Keep going to earn badges on your profile.</p>
                   </div>
                 </div>
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="outline" size="sm" className="rounded-xl">
                   <Link to="/profile">View badges</Link>
                 </Button>
               </CardContent>

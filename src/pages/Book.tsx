@@ -202,30 +202,49 @@ export default function Book() {
       <>
         <SEOHead title="Booking Confirmed | TekSure" description="Your TekSure booking is confirmed." path="/book" />
         <Navbar />
-        <main className="container py-24 min-h-[70vh] flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-6">
-          <div className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center">
-            <CheckCircle2 className="h-10 w-10 text-green-500" />
-          </div>
-          <h1 className="text-3xl font-bold">Booking confirmed!</h1>
-          <p className="text-muted-foreground text-lg">
-            We've got your booking for <strong>{selectedService?.label}</strong> on{' '}
-            <strong>{selectedDate?.label}</strong> in the <strong>{selectedSlot?.label.toLowerCase()}</strong>.
-          </p>
-          {form.email && (
-            <p className="text-sm text-muted-foreground">
-              A confirmation has been sent to <strong>{form.email}</strong>.
-            </p>
-          )}
-          <div className="bg-muted rounded-xl px-6 py-4 w-full">
-            <p className="text-xs text-muted-foreground mb-1">Booking reference</p>
-            <p className="text-2xl font-mono font-bold tracking-widest">{bookingRef}</p>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            One of our technicians will confirm your exact appointment time. They'll call or email you {form.phone ? 'at ' + form.phone : ''} before the appointment.
-          </p>
-          <div className="flex gap-3 flex-wrap justify-center">
-            <Button onClick={() => navigate('/my-requests')}>View My Bookings</Button>
-            <Button variant="outline" onClick={() => navigate('/guides')}>Browse Free Guides</Button>
+        <main className="min-h-screen bg-background">
+          <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center"
+            >
+              <CheckCircle2 className="h-10 w-10 text-green-600" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+            >
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Booking confirmed!</h1>
+              <p className="text-muted-foreground text-lg mb-6">
+                We've got your booking for <strong>{selectedService?.label}</strong> on{' '}
+                <strong>{selectedDate?.label}</strong> in the <strong>{selectedSlot?.label.toLowerCase()}</strong>.
+              </p>
+              {form.email && (
+                <p className="text-sm text-muted-foreground mb-6">
+                  A confirmation has been sent to <strong>{form.email}</strong>.
+                </p>
+              )}
+            </motion.div>
+            <Card className="rounded-2xl border border-border bg-card w-full">
+              <CardContent className="p-6">
+                <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide font-semibold">Booking reference</p>
+                <p className="text-3xl font-mono font-bold tracking-widest">{bookingRef}</p>
+              </CardContent>
+            </Card>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-sm text-muted-foreground"
+            >
+              One of our technicians will confirm your exact appointment time. They'll call or email you {form.phone ? 'at ' + form.phone : ''} before the appointment.
+            </motion.p>
+            <div className="flex gap-3 flex-wrap justify-center">
+              <Button onClick={() => navigate('/my-requests')} className="rounded-xl">View My Bookings</Button>
+              <Button variant="outline" onClick={() => navigate('/guides')} className="rounded-xl">Browse Free Guides</Button>
+            </div>
           </div>
         </main>
         <Footer />
@@ -241,339 +260,359 @@ export default function Book() {
         path="/book"
       />
       <Navbar />
-      <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
+      <main className="min-h-screen bg-background">
+        <div className="container py-16 max-w-2xl mx-auto">
 
-        {/* Header */}
-        <div className="flex items-center gap-3 mb-2">
-          <Wrench className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Book a Technician</h1>
-        </div>
-        <p className="text-muted-foreground mb-6">
-          Real help from a real person. Choose a time that works for you — we'll confirm the appointment.
-        </p>
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-10"
+          >
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Book a Technician</h1>
+            <p className="text-muted-foreground text-lg">
+              Real help from a real person. Choose a time that works for you — we'll confirm the appointment.
+            </p>
+          </motion.div>
 
-        {/* Progress */}
-        <div className="mb-8">
-          <div className="flex justify-between text-sm text-muted-foreground mb-1">
-            <span>Step {step + 1} of 4</span>
-            <span>{['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}</span>
-          </div>
-          <Progress value={progress} className="h-2" />
-        </div>
+          {/* Progress */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="mb-10"
+          >
+            <div className="flex justify-between text-sm text-muted-foreground mb-2">
+              <span>Step {step + 1} of 4</span>
+              <span>{['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}</span>
+            </div>
+            <Progress value={progress} className="h-2" />
+          </motion.div>
 
-        <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait">
 
-          {/* ── Step 0: Service type ── */}
-          {step === 0 && (
-            <motion.div key="service" {...slide}>
-              <h2 className="text-xl font-semibold mb-4">What do you need help with?</h2>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {services.map(s => {
-                  const Icon = s.icon;
-                  return (
+            {/* ── Step 0: Service type ── */}
+            {step === 0 && (
+              <motion.div key="service" {...slide}>
+                <h2 className="text-2xl font-bold tracking-tight mb-6">What do you need help with?</h2>
+                <div className="grid gap-3 sm:grid-cols-2 mb-8">
+                  {services.map(s => {
+                    const Icon = s.icon;
+                    return (
+                      <motion.button
+                        key={s.id}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        onClick={() => { setForm(f => ({ ...f, serviceType: s.id })); setStep(1); }}
+                        className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card text-left transition-all hover:border-primary/30 hover:bg-card/80"
+                      >
+                        <span className="text-2xl shrink-0">{s.emoji}</span>
+                        <div>
+                          <div className="font-semibold">{s.label}</div>
+                          <div className="text-sm text-muted-foreground mt-0.5">{s.desc}</div>
+                        </div>
+                      </motion.button>
+                    );
+                  })}
+                </div>
+
+                {/* Trust signals */}
+                <div className="grid sm:grid-cols-3 gap-3 text-center">
+                  {[
+                    { emoji: '🤝', label: 'Real humans', sub: 'No bots or call centres' },
+                    { emoji: '⭐', label: 'Vetted techs', sub: 'ID-verified professionals' },
+                    { emoji: '💰', label: 'No call-out fee', sub: 'Pay only if we fix it' },
+                  ].map(t => (
+                    <Card key={t.label} className="rounded-xl border border-border bg-card">
+                      <CardContent className="p-4">
+                        <div className="text-2xl mb-2">{t.emoji}</div>
+                        <div className="text-sm font-medium">{t.label}</div>
+                        <div className="text-xs text-muted-foreground mt-1">{t.sub}</div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* ── Step 1: Date + time slot ── */}
+            {step === 1 && (
+              <motion.div key="datetime" {...slide}>
+                <h2 className="text-2xl font-bold tracking-tight mb-2">
+                  When works for you?
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  {selectedService?.emoji} {selectedService?.label}
+                </p>
+
+                {/* Date picker */}
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <Calendar className="h-4 w-4" /> Choose a date
+                </h3>
+                <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 mb-8">
+                  {availableDates.map(d => (
+                    <button
+                      key={d.date}
+                      onClick={() => setForm(f => ({ ...f, date: d.date }))}
+                      className={`flex flex-col items-center p-3 rounded-lg border transition-all text-sm font-medium ${
+                        form.date === d.date
+                          ? 'border-primary bg-primary text-primary-foreground'
+                          : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
+                      }`}
+                    >
+                      <span className="text-xs font-normal opacity-70">{d.dayName}</span>
+                      <span className="text-base font-bold">{d.label.split(' ')[0]}</span>
+                      <span className="text-xs opacity-70">{d.label.split(' ')[1]}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {/* Time slot picker */}
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <Clock className="h-4 w-4" /> Preferred time
+                </h3>
+                <div className="grid gap-3 sm:grid-cols-3 mb-8">
+                  {slots.map(s => (
                     <button
                       key={s.id}
-                      onClick={() => { setForm(f => ({ ...f, serviceType: s.id })); setStep(1); }}
-                      className="flex items-start gap-3 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5 hover:shadow-sm"
+                      onClick={() => setForm(f => ({ ...f, slot: s.id }))}
+                      className={`flex flex-col items-center gap-1 p-4 rounded-xl border transition-all ${
+                        form.slot === s.id
+                          ? 'border-primary bg-primary/10'
+                          : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
+                      }`}
                     >
-                      <span className="text-2xl shrink-0">{s.emoji}</span>
-                      <div>
-                        <div className="font-medium">{s.label}</div>
-                        <div className="text-xs text-muted-foreground mt-0.5">{s.desc}</div>
-                      </div>
+                      <span className="text-2xl">{s.emoji}</span>
+                      <span className="font-semibold text-sm">{s.label}</span>
+                      <span className="text-xs text-muted-foreground">{s.time}</span>
                     </button>
-                  );
-                })}
-              </div>
-
-              {/* Trust signals */}
-              <div className="mt-8 grid sm:grid-cols-3 gap-3 text-center">
-                {[
-                  { emoji: '🤝', label: 'Real humans', sub: 'No bots or call centres' },
-                  { emoji: '⭐', label: 'Vetted techs', sub: 'ID-verified professionals' },
-                  { emoji: '💰', label: 'No call-out fee', sub: 'Pay only if we fix it' },
-                ].map(t => (
-                  <div key={t.label} className="rounded-xl border bg-card p-3">
-                    <div className="text-2xl mb-1">{t.emoji}</div>
-                    <div className="text-sm font-medium">{t.label}</div>
-                    <div className="text-xs text-muted-foreground">{t.sub}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-
-          {/* ── Step 1: Date + time slot ── */}
-          {step === 1 && (
-            <motion.div key="datetime" {...slide}>
-              <h2 className="text-xl font-semibold mb-4">
-                When works for you?
-                <span className="ml-2 text-base font-normal text-muted-foreground">— {selectedService?.emoji} {selectedService?.label}</span>
-              </h2>
-
-              {/* Date picker */}
-              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-2">
-                <Calendar className="h-4 w-4" /> Choose a date
-              </h3>
-              <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 mb-6">
-                {availableDates.map(d => (
-                  <button
-                    key={d.date}
-                    onClick={() => setForm(f => ({ ...f, date: d.date }))}
-                    className={`flex flex-col items-center p-2.5 rounded-xl border-2 transition-all text-sm font-medium ${
-                      form.date === d.date
-                        ? 'border-secondary bg-secondary text-secondary-foreground'
-                        : 'border-border bg-card hover:border-secondary/60 hover:bg-secondary/5'
-                    }`}
-                  >
-                    <span className="text-xs font-normal opacity-70">{d.dayName}</span>
-                    <span className="text-base font-bold">{d.label.split(' ')[0]}</span>
-                    <span className="text-xs opacity-70">{d.label.split(' ')[1]}</span>
-                  </button>
-                ))}
-              </div>
-
-              {/* Time slot picker */}
-              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-2">
-                <Clock className="h-4 w-4" /> Preferred time
-              </h3>
-              <div className="grid gap-3 sm:grid-cols-3 mb-6">
-                {slots.map(s => (
-                  <button
-                    key={s.id}
-                    onClick={() => setForm(f => ({ ...f, slot: s.id }))}
-                    className={`flex flex-col items-center gap-1 p-4 rounded-xl border-2 transition-all ${
-                      form.slot === s.id
-                        ? 'border-secondary bg-secondary/10'
-                        : 'border-border bg-card hover:border-secondary/60 hover:bg-secondary/5'
-                    }`}
-                  >
-                    <span className="text-2xl">{s.emoji}</span>
-                    <span className="font-medium">{s.label}</span>
-                    <span className="text-xs text-muted-foreground">{s.time}</span>
-                  </button>
-                ))}
-              </div>
-
-              <div className="flex gap-3">
-                <Button variant="ghost" onClick={() => setStep(0)}>← Back</Button>
-                <Button
-                  disabled={!form.date || !form.slot}
-                  onClick={() => setStep(2)}
-                  className="ml-auto"
-                >
-                  Continue <ArrowRight className="h-4 w-4 ml-2" />
-                </Button>
-              </div>
-            </motion.div>
-          )}
-
-          {/* ── Step 2: Contact details ── */}
-          {step === 2 && (
-            <motion.div key="details" {...slide}>
-              <h2 className="text-xl font-semibold mb-1">Your contact details</h2>
-              <p className="text-muted-foreground text-sm mb-6">
-                We'll use these to confirm your appointment. All details are kept private.
-              </p>
-
-              <div className="space-y-4 mb-6">
-                <div>
-                  <Label htmlFor="name" className="flex items-center gap-2 mb-1.5">
-                    <User className="h-4 w-4" /> Full name <span className="text-destructive">*</span>
-                  </Label>
-                  <Input
-                    id="name"
-                    value={form.name}
-                    onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                    placeholder="Jane Smith"
-                  />
+                  ))}
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex gap-3">
+                  <Button variant="outline" onClick={() => setStep(0)} className="rounded-xl">← Back</Button>
+                  <Button
+                    disabled={!form.date || !form.slot}
+                    onClick={() => setStep(2)}
+                    className="ml-auto rounded-xl gap-2"
+                  >
+                    Continue <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            )}
+
+            {/* ── Step 2: Contact details ── */}
+            {step === 2 && (
+              <motion.div key="details" {...slide}>
+                <h2 className="text-2xl font-bold tracking-tight mb-2">Your contact details</h2>
+                <p className="text-muted-foreground mb-8">
+                  We'll use these to confirm your appointment. All details are kept private.
+                </p>
+
+                <div className="space-y-4 mb-8">
                   <div>
-                    <Label htmlFor="email" className="flex items-center gap-2 mb-1.5">
-                      <Mail className="h-4 w-4" /> Email
+                    <Label htmlFor="name" className="flex items-center gap-2 mb-2 font-semibold">
+                      <User className="h-4 w-4" /> Full name <span className="text-destructive">*</span>
                     </Label>
                     <Input
-                      id="email"
-                      type="email"
-                      value={form.email}
-                      onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                      placeholder="jane@email.com"
+                      id="name"
+                      value={form.name}
+                      onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+                      placeholder="Jane Smith"
+                      className="rounded-lg"
                     />
                   </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="email" className="flex items-center gap-2 mb-2 font-semibold">
+                        <Mail className="h-4 w-4" /> Email
+                      </Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        value={form.email}
+                        onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                        placeholder="jane@email.com"
+                        className="rounded-lg"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="phone" className="flex items-center gap-2 mb-2 font-semibold">
+                        <PhoneIcon className="h-4 w-4" /> Phone number
+                      </Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        value={form.phone}
+                        onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
+                        placeholder="07700 900000"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+
                   <div>
-                    <Label htmlFor="phone" className="flex items-center gap-2 mb-1.5">
-                      <PhoneIcon className="h-4 w-4" /> Phone number
+                    <Label htmlFor="device" className="mb-2 block font-semibold">Device type (optional)</Label>
+                    <select
+                      id="device"
+                      value={form.deviceType}
+                      onChange={e => setForm(f => ({ ...f, deviceType: e.target.value }))}
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                    >
+                      <option value="">Select a device…</option>
+                      {deviceTypes.map(d => <option key={d} value={d}>{d}</option>)}
+                    </select>
+                  </div>
+
+                  <div>
+                    <Label htmlFor="desc" className="flex items-center gap-2 mb-2 font-semibold">
+                      <FileText className="h-4 w-4" /> Tell us more about the problem (optional)
                     </Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={form.phone}
-                      onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
-                      placeholder="07700 900000"
+                    <Textarea
+                      id="desc"
+                      value={form.description}
+                      onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
+                      placeholder="Describe what's happening — the more detail, the better prepared your technician will be…"
+                      rows={4}
+                      className="rounded-lg resize-none"
                     />
                   </div>
                 </div>
 
-                <div>
-                  <Label htmlFor="device" className="mb-1.5 block">Device type (optional)</Label>
-                  <select
-                    id="device"
-                    value={form.deviceType}
-                    onChange={e => setForm(f => ({ ...f, deviceType: e.target.value }))}
-                    className="w-full rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                  >
-                    <option value="">Select a device…</option>
-                    {deviceTypes.map(d => <option key={d} value={d}>{d}</option>)}
-                  </select>
-                </div>
-
-                <div>
-                  <Label htmlFor="desc" className="flex items-center gap-2 mb-1.5">
-                    <FileText className="h-4 w-4" /> Tell us more about the problem (optional)
-                  </Label>
-                  <Textarea
-                    id="desc"
-                    value={form.description}
-                    onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
-                    placeholder="Describe what's happening — the more detail, the better prepared your technician will be…"
-                    rows={4}
-                  />
-                </div>
-              </div>
-
-              {/* Summary card */}
-              <Card className="mb-6 bg-muted/40">
-                <CardContent className="p-4 text-sm space-y-1">
-                  <p className="font-semibold mb-2">Booking summary</p>
-                  <p>🔧 <strong>{selectedService?.label}</strong></p>
-                  <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
-                  <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
-                </CardContent>
-              </Card>
-
-              {error && <p className="text-destructive text-sm mb-4">{error}</p>}
-
-              <div className="flex gap-3">
-                <Button variant="ghost" onClick={() => setStep(1)}>← Back</Button>
-                <Button
-                  onClick={() => {
-                    if (!form.name.trim()) { setError('Please enter your name.'); return; }
-                    if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number.'); return; }
-                    setError('');
-                    setStep(3);
-                  }}
-                  className="ml-auto gap-2"
-                >
-                  Continue to Payment <ArrowRight className="h-4 w-4" />
-                </Button>
-              </div>
-            </motion.div>
-          )}
-
-          {/* ── Step 3: Payment ── */}
-          {step === 3 && (
-            <motion.div key="payment" {...slide}>
-              <h2 className="text-xl font-semibold mb-1">Payment</h2>
-              <p className="text-muted-foreground text-sm mb-5">Choose how you'd like to pay for your technician visit.</p>
-
-              {/* Pricing info */}
-              <Card className="mb-5 bg-muted/30">
-                <CardContent className="p-4">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Pricing</p>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>First hour</span><strong>£49</strong>
-                  </div>
-                  <div className="flex justify-between text-sm text-muted-foreground mb-3">
-                    <span>Each additional hour</span><span>£29</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for the time spent — no fix, no charge.</p>
-                </CardContent>
-              </Card>
-
-              {/* Payment options */}
-              <div className="space-y-3 mb-5">
-                <button
-                  onClick={() => setPaymentOption('day')}
-                  className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 transition-all text-left ${paymentOption === 'day' ? 'border-secondary bg-secondary/5' : 'border-border hover:border-secondary/40'}`}
-                >
-                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-secondary' : 'border-border'}`}>
-                    {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-secondary" />}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">Pay on the day <span className="text-green-600 font-normal text-xs ml-1">Free to book</span></p>
-                    <p className="text-xs text-muted-foreground mt-0.5">Pay the technician directly after the visit. Cash, card, or bank transfer accepted.</p>
-                  </div>
-                </button>
-
-                <button
-                  onClick={() => setPaymentOption('deposit')}
-                  className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 transition-all text-left ${paymentOption === 'deposit' ? 'border-secondary bg-secondary/5' : 'border-border hover:border-secondary/40'}`}
-                >
-                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-secondary' : 'border-border'}`}>
-                    {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-secondary" />}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">Pay £15 deposit now</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">Secure your booking with a small deposit. The remainder is paid on the day. Fully refundable if you cancel 24+ hours before.</p>
-                  </div>
-                </button>
-              </div>
-
-              {/* Stripe secure checkout badge */}
-              {paymentOption === 'deposit' && (
-                <Card className="mb-5 border-secondary/30 bg-secondary/5">
-                  <CardContent className="p-4 text-center">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <Lock className="h-4 w-4 text-secondary" />
-                      <p className="text-sm font-medium">Secure checkout via Stripe</p>
-                    </div>
-                    <p className="text-xs text-muted-foreground">
-                      You'll be taken to Stripe's secure payment page to enter your card details. We never store your card information.
-                    </p>
-                    <div className="flex items-center justify-center gap-3 mt-3 opacity-60">
-                      <span className="text-xs font-medium tracking-wide">VISA</span>
-                      <span className="text-xs font-medium tracking-wide">MC</span>
-                      <span className="text-xs font-medium tracking-wide">AMEX</span>
-                      <span className="text-xs font-medium tracking-wide">APPLE PAY</span>
-                    </div>
+                {/* Summary card */}
+                <Card className="rounded-xl border border-border bg-card mb-8">
+                  <CardContent className="p-4 text-sm space-y-2">
+                    <p className="font-semibold mb-3">Booking summary</p>
+                    <p>🔧 <strong>{selectedService?.label}</strong></p>
+                    <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
+                    <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
                   </CardContent>
                 </Card>
-              )}
 
-              {/* Booking summary */}
-              <Card className="mb-5 bg-muted/40">
-                <CardContent className="p-4 text-sm space-y-1">
-                  <p className="font-semibold mb-2">Booking summary</p>
-                  <p>🔧 <strong>{selectedService?.label}</strong></p>
-                  <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
-                  <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
-                  <p>👤 <strong>{form.name}</strong></p>
-                  <p>💳 <strong>{paymentOption === 'deposit' ? 'Deposit £15 now + remainder on day' : 'Pay on the day'}</strong></p>
-                </CardContent>
-              </Card>
+                {error && <p className="text-destructive text-sm mb-4 font-medium">{error}</p>}
 
-              {error && <p className="text-destructive text-sm mb-4">{error}</p>}
+                <div className="flex gap-3">
+                  <Button variant="outline" onClick={() => setStep(1)} className="rounded-xl">← Back</Button>
+                  <Button
+                    onClick={() => {
+                      if (!form.name.trim()) { setError('Please enter your name.'); return; }
+                      if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number.'); return; }
+                      setError('');
+                      setStep(3);
+                    }}
+                    className="ml-auto rounded-xl gap-2"
+                  >
+                    Continue to Payment <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            )}
 
-              <div className="flex gap-3">
-                <Button variant="ghost" onClick={() => setStep(2)}>← Back</Button>
-                <Button
-                  onClick={paymentOption === 'deposit' ? handleStripeDeposit : handleSubmit}
-                  disabled={submitting}
-                  className="ml-auto gap-2"
-                >
-                  {submitting
-                    ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>
-                    : paymentOption === 'deposit'
-                    ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit securely</>
-                    : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
-                </Button>
-              </div>
-            </motion.div>
-          )}
+            {/* ── Step 3: Payment ── */}
+            {step === 3 && (
+              <motion.div key="payment" {...slide}>
+                <h2 className="text-2xl font-bold tracking-tight mb-2">Payment</h2>
+                <p className="text-muted-foreground mb-8">Choose how you'd like to pay for your technician visit.</p>
 
-        </AnimatePresence>
+                {/* Pricing info */}
+                <Card className="rounded-xl border border-border bg-card mb-8">
+                  <CardContent className="p-4">
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pricing</p>
+                    <div className="flex justify-between text-sm mb-2">
+                      <span>First hour</span><strong>£49</strong>
+                    </div>
+                    <div className="flex justify-between text-sm text-muted-foreground mb-4">
+                      <span>Each additional hour</span><span>£29</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for the time spent — no fix, no charge.</p>
+                  </CardContent>
+                </Card>
+
+                {/* Payment options */}
+                <div className="space-y-3 mb-8">
+                  <button
+                    onClick={() => setPaymentOption('day')}
+                    className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-all text-left ${paymentOption === 'day' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                  >
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-primary' : 'border-border'}`}>
+                      {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm">Pay on the day <span className="text-green-600 font-normal text-xs ml-1">Free to book</span></p>
+                      <p className="text-xs text-muted-foreground mt-1">Pay the technician directly after the visit. Cash, card, or bank transfer accepted.</p>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => setPaymentOption('deposit')}
+                    className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-all text-left ${paymentOption === 'deposit' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                  >
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-primary' : 'border-border'}`}>
+                      {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm">Pay £15 deposit now</p>
+                      <p className="text-xs text-muted-foreground mt-1">Secure your booking with a small deposit. The remainder is paid on the day. Fully refundable if you cancel 24+ hours before.</p>
+                    </div>
+                  </button>
+                </div>
+
+                {/* Stripe secure checkout badge */}
+                {paymentOption === 'deposit' && (
+                  <Card className="rounded-xl border border-primary/20 bg-primary/5 mb-8">
+                    <CardContent className="p-4 text-center">
+                      <div className="flex items-center justify-center gap-2 mb-3">
+                        <Lock className="h-4 w-4 text-primary" />
+                        <p className="text-sm font-semibold">Secure checkout via Stripe</p>
+                      </div>
+                      <p className="text-xs text-muted-foreground mb-3">
+                        You'll be taken to Stripe's secure payment page to enter your card details. We never store your card information.
+                      </p>
+                      <div className="flex items-center justify-center gap-3 opacity-60">
+                        <span className="text-xs font-medium tracking-wide">VISA</span>
+                        <span className="text-xs font-medium tracking-wide">MC</span>
+                        <span className="text-xs font-medium tracking-wide">AMEX</span>
+                        <span className="text-xs font-medium tracking-wide">APPLE PAY</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Booking summary */}
+                <Card className="rounded-xl border border-border bg-card mb-8">
+                  <CardContent className="p-4 text-sm space-y-2">
+                    <p className="font-semibold mb-3">Booking summary</p>
+                    <p>🔧 <strong>{selectedService?.label}</strong></p>
+                    <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
+                    <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
+                    <p>👤 <strong>{form.name}</strong></p>
+                    <p>💳 <strong>{paymentOption === 'deposit' ? 'Deposit £15 now + remainder on day' : 'Pay on the day'}</strong></p>
+                  </CardContent>
+                </Card>
+
+                {error && <p className="text-destructive text-sm mb-4 font-medium">{error}</p>}
+
+                <div className="flex gap-3">
+                  <Button variant="outline" onClick={() => setStep(2)} className="rounded-xl">← Back</Button>
+                  <Button
+                    onClick={paymentOption === 'deposit' ? handleStripeDeposit : handleSubmit}
+                    disabled={submitting}
+                    className="ml-auto rounded-xl gap-2"
+                  >
+                    {submitting
+                      ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>
+                      : paymentOption === 'deposit'
+                      ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit securely</>
+                      : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
+                  </Button>
+                </div>
+              </motion.div>
+            )}
+
+          </AnimatePresence>
+        </div>
       </main>
       <Footer />
     </>

@@ -152,20 +152,20 @@ export default function Webinars() {
       <SEOHead
         title="Free Tech Webinars — TekSure"
         description="Join free online webinars hosted by TekSure. Learn about cybersecurity, smartphones, AI tools, and more in friendly, beginner-friendly sessions."
-      path="/webinars"
+        path="/webinars"
       />
       <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-primary/10 rounded-full">
+              <div className="p-3 bg-primary/10 rounded-xl">
                 <Video className="h-8 w-8 text-primary" />
               </div>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Free Tech Webinars</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Free Tech Webinars</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Live and recorded online sessions on the topics that matter most — all free, all beginner-friendly.
             </p>
@@ -198,7 +198,7 @@ export default function Webinars() {
           {/* Webinar list */}
           <div className="space-y-4">
             {filtered.map(webinar => (
-              <Card key={webinar.id} className={`border-border hover:shadow-md transition-shadow ${webinar.status === 'live' ? 'border-red-400 ring-1 ring-red-400/50' : ''}`}>
+              <Card key={webinar.id} className={`rounded-2xl border-border hover:shadow-md transition-shadow ${webinar.status === 'live' ? 'border-red-400 ring-1 ring-red-400/50' : ''}`}>
                 <CardContent className="p-5">
                   <div className="flex gap-4">
                     <div className="text-4xl shrink-0 mt-0.5">{webinar.emoji}</div>
@@ -212,14 +212,14 @@ export default function Webinars() {
                           <Badge className="bg-red-500 text-white text-xs animate-pulse">🔴 LIVE NOW</Badge>
                         )}
                         {webinar.status === 'recorded' && (
-                          <Badge variant="secondary" className="text-xs">▶️ Recorded</Badge>
+                          <Badge variant="secondary" className="text-xs rounded-full">▶️ Recorded</Badge>
                         )}
                         {webinar.status === 'upcoming' && (
-                          <Badge variant="outline" className="text-xs text-primary border-primary/40">🗓️ Upcoming</Badge>
+                          <Badge variant="outline" className="text-xs text-primary border-primary/40 rounded-full">🗓️ Upcoming</Badge>
                         )}
                       </div>
 
-                      <h2 className="font-semibold text-base leading-snug mb-1">{webinar.title}</h2>
+                      <h2 className="font-semibold text-base leading-snug mb-1 text-primary">{webinar.title}</h2>
                       <p className="text-sm text-muted-foreground leading-relaxed mb-3">{webinar.description}</p>
 
                       {/* Meta */}
@@ -254,18 +254,18 @@ export default function Webinars() {
                             <CheckCircle2 className="h-4 w-4" /> Registered! We\'ll remind you before it starts.
                           </div>
                         ) : (
-                          <Button size="sm" onClick={() => handleRegister(webinar)} className="gap-2">
+                          <Button size="sm" onClick={() => handleRegister(webinar)} className="gap-2 rounded-xl">
                             <Bell className="h-3.5 w-3.5" /> Register for free
                           </Button>
                         )
                       )}
                       {webinar.status === 'live' && (
-                        <Button size="sm" className="gap-2 bg-red-500 hover:bg-red-600">
+                        <Button size="sm" className="gap-2 bg-red-500 hover:bg-red-600 rounded-xl">
                           <Video className="h-3.5 w-3.5" /> Join live now
                         </Button>
                       )}
                       {webinar.status === 'recorded' && webinar.recordingUrl && (
-                        <Button size="sm" variant="outline" asChild className="gap-2">
+                        <Button size="sm" variant="outline" asChild className="gap-2 rounded-xl">
                           <a href={webinar.recordingUrl} target="_blank" rel="noopener noreferrer">
                             <Video className="h-3.5 w-3.5" /> Watch recording <ExternalLink className="h-3 w-3" />
                           </a>
@@ -283,10 +283,10 @@ export default function Webinars() {
           )}
 
           {/* Newsletter sign-up CTA */}
-          <Card className="mt-8 border-primary/20 bg-primary/5">
+          <Card className="mt-8 rounded-2xl border border-border bg-card bg-primary/5">
             <CardContent className="p-6 text-center">
               <Bell className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="font-bold text-lg mb-1">Don't miss a webinar</h3>
+              <h3 className="font-bold text-lg mb-1 text-primary">Don't miss a webinar</h3>
               <p className="text-sm text-muted-foreground mb-4">We run new sessions every two weeks. Register above for upcoming ones, or check back here for new dates.</p>
               <p className="text-xs text-muted-foreground">All webinars are free. No spam, ever.</p>
             </CardContent>

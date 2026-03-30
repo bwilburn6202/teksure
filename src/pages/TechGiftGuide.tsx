@@ -57,9 +57,9 @@ export default function TechGiftGuide() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14 text-center">
+        <div className="border-b border-border py-14 text-center">
           <div className="text-4xl mb-3">🎁</div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">Tech Gift Guide</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">Tech Gift Guide</h1>
           <p className="text-muted-foreground max-w-md mx-auto">Curated tech gifts for every occasion — handpicked for real people, not tech enthusiasts.</p>
         </div>
 
@@ -69,14 +69,14 @@ export default function TechGiftGuide() {
             <div className="flex gap-2 flex-wrap justify-center">
               <span className="text-sm font-medium self-center text-muted-foreground">For:</span>
               {filters.map(f => (
-                <Button key={f.value} variant={recipient === f.value ? 'default' : 'outline'} size="sm" className={recipient === f.value ? 'bg-secondary text-secondary-foreground' : ''} onClick={() => setRecipient(f.value as Recipient)}>{f.label}</Button>
+                <Button key={f.value} variant={recipient === f.value ? 'default' : 'outline'} size="sm" className={`rounded-xl ${recipient === f.value ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setRecipient(f.value as Recipient)}>{f.label}</Button>
               ))}
             </div>
             <div className="flex gap-2 flex-wrap justify-center">
               <span className="text-sm font-medium self-center text-muted-foreground">Budget:</span>
-              <Button variant={budget === 'all' ? 'default' : 'outline'} size="sm" className={budget === 'all' ? 'bg-secondary text-secondary-foreground' : ''} onClick={() => setBudget('all')}>Any</Button>
+              <Button variant={budget === 'all' ? 'default' : 'outline'} size="sm" className={`rounded-xl ${budget === 'all' ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setBudget('all')}>Any</Button>
               {budgets.map(b => (
-                <Button key={b.value} variant={budget === b.value ? 'default' : 'outline'} size="sm" className={budget === b.value ? 'bg-secondary text-secondary-foreground' : ''} onClick={() => setBudget(b.value)}>{b.label}</Button>
+                <Button key={b.value} variant={budget === b.value ? 'default' : 'outline'} size="sm" className={`rounded-xl ${budget === b.value ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setBudget(b.value)}>{b.label}</Button>
               ))}
             </div>
           </div>
@@ -86,17 +86,17 @@ export default function TechGiftGuide() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((gift, i) => (
               <motion.div key={gift.name} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
-                <Card className="h-full flex flex-col hover:shadow-md transition-shadow">
+                <Card className="h-full flex flex-col rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                   <CardContent className="pt-5 pb-4 flex flex-col flex-1">
                     <div className="flex items-start justify-between mb-2">
                       <span className="text-3xl">{gift.emoji}</span>
                       {gift.tag && <Badge variant="secondary" className="text-xs flex items-center gap-1"><Star className="h-3 w-3" />{gift.tag}</Badge>}
                     </div>
                     <h3 className="font-bold text-base mb-1">{gift.name}</h3>
-                    <p className="text-secondary font-semibold text-sm mb-2">{gift.price}</p>
+                    <p className="text-primary font-semibold text-sm mb-2">{gift.price}</p>
                     <p className="text-muted-foreground text-sm leading-relaxed flex-1">{gift.why}</p>
                     <div className="mt-4">
-                      <Button variant="outline" size="sm" className="w-full gap-1.5" asChild>
+                      <Button variant="outline" size="sm" className="w-full gap-1.5 rounded-lg" asChild>
                         <a href={`https://www.amazon.co.uk/s?k=${encodeURIComponent(gift.searchQuery)}`} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-3.5 w-3.5" /> Search on Amazon
                         </a>

@@ -116,7 +116,7 @@ const Glossary = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Glossary for Beginners | TekSure"
         description="Every tech term explained in plain English. Browse 65+ definitions with analogies — no jargon, just answers."
@@ -124,29 +124,25 @@ const Glossary = () => {
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="hero-gradient text-primary-foreground">
-        <div className="container py-16 md:py-20">
+      {/* Header */}
+      <section className="border-b border-border">
+        <div className="max-w-4xl mx-auto py-16 md:py-20 px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-2xl mx-auto text-center"
+            className="text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 text-sm mb-6">
-              <BookOpen className="h-4 w-4 text-secondary" />
-              <span>{glossaryTerms.length} terms defined</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-              Tech Glossary for Beginners
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Tech Glossary
             </h1>
-            <p className="text-lg opacity-80 mb-8">
+            <p className="text-muted-foreground text-lg mb-8">
               Every tech term explained in plain English — no jargon, just answers.
             </p>
             <div className="relative max-w-md mx-auto">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
                 placeholder="Search terms... (e.g. Wi-Fi, RAM, VPN)"
-                className="pl-10 bg-card text-foreground h-12 text-base rounded-xl"
+                className="pl-10 h-11 text-base rounded-xl border-border"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
@@ -157,8 +153,8 @@ const Glossary = () => {
 
       {/* Letter nav */}
       <div className="sticky top-16 z-40 bg-background border-b border-border">
-        <div className="container py-2">
-          <div className="flex flex-wrap gap-1 justify-center">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <div className="flex flex-wrap gap-1.5 justify-center">
             {allLetters.map(letter => {
               const isActive = activeLetters.includes(letter);
               return (
@@ -166,10 +162,10 @@ const Glossary = () => {
                   key={letter}
                   onClick={() => isActive && scrollToLetter(letter)}
                   disabled={!isActive}
-                  className={`w-8 h-8 rounded-md text-sm font-semibold transition-colors ${
+                  className={`w-8 h-8 rounded-lg text-xs font-semibold transition-colors ${
                     isActive
-                      ? 'bg-secondary/10 text-secondary hover:bg-secondary/20 cursor-pointer'
-                      : 'text-muted-foreground/30 cursor-not-allowed'
+                      ? 'bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer'
+                      : 'text-muted-foreground/40 cursor-not-allowed'
                   }`}
                 >
                   {letter}
@@ -181,7 +177,7 @@ const Glossary = () => {
       </div>
 
       {/* Terms */}
-      <section className="container py-12">
+      <section className="py-16 md:py-20 px-4">
         {filtered.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-4xl mb-4">🔍</p>
@@ -189,17 +185,16 @@ const Glossary = () => {
             <p className="text-muted-foreground">Try a different search term.</p>
           </div>
         ) : (
-          <div className="space-y-10 max-w-3xl mx-auto">
+          <div className="space-y-12 max-w-3xl mx-auto">
             {activeLetters.map(letter => (
               <div
                 key={letter}
                 ref={el => { sectionRefs.current[letter] = el; }}
                 className="scroll-mt-32"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-secondary">{letter}</span>
-                  <div className="flex-1 h-px bg-border" />
-                  <Badge variant="secondary" className="text-xs">
+                <div className="flex items-center gap-4 mb-6 pb-4 border-b border-border">
+                  <span className="text-3xl md:text-4xl font-bold text-primary">{letter}</span>
+                  <Badge variant="outline" className="text-xs rounded-full">
                     {grouped[letter].length} {grouped[letter].length === 1 ? 'term' : 'terms'}
                   </Badge>
                 </div>
@@ -208,23 +203,21 @@ const Glossary = () => {
                   {grouped[letter].map((item, i) => (
                     <motion.div
                       key={item.term}
-                      initial={{ opacity: 0, y: 10 }}
+                      initial={{ opacity: 0, y: 16 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.03 }}
                       viewport={{ once: true }}
+                      transition={{ delay: Math.min(i * 0.03, 0.15) }}
                     >
-                      <Card className="hover:shadow-sm transition-shadow">
-                        <CardContent className="py-4">
-                          <h3 className="font-semibold text-base mb-1">{item.term}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{item.definition}</p>
-                          {item.analogy && (
-                            <p className="text-xs text-secondary mt-2 italic flex items-start gap-1.5">
-                              <span className="shrink-0">💡</span>
-                              {item.analogy}
-                            </p>
-                          )}
-                        </CardContent>
-                      </Card>
+                      <div className="rounded-2xl border border-border bg-card p-5 hover:border-border/80 transition-colors">
+                        <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
+                        {item.analogy && (
+                          <p className="text-xs text-primary flex items-start gap-2">
+                            <span className="shrink-0 mt-0.5">💡</span>
+                            <span className="italic">{item.analogy}</span>
+                          </p>
+                        )}
+                      </div>
                     </motion.div>
                   ))}
                 </div>

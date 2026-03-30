@@ -61,14 +61,14 @@ export default function LocalHelp() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14">
+        <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <div className="text-4xl mb-3">📍</div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Find Local Tech Help</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">Find Local Tech Help</h1>
             <p className="text-muted-foreground mb-6">Find trusted tech support near you — libraries, community groups, courses, and one-to-one help.</p>
             <form onSubmit={handleSearch} className="flex gap-2 max-w-sm mx-auto">
-              <Input placeholder="Enter your town or postcode…" value={location} onChange={e => setLocation(e.target.value)} className="flex-1" />
-              <Button type="submit" className="bg-secondary text-secondary-foreground gap-1.5">
+              <Input placeholder="Enter your town or postcode…" value={location} onChange={e => setLocation(e.target.value)} className="flex-1 rounded-xl" />
+              <Button type="submit" className="bg-primary text-primary-foreground rounded-xl gap-1.5">
                 <Search className="h-4 w-4" /> Search
               </Button>
             </form>
@@ -77,11 +77,11 @@ export default function LocalHelp() {
         </div>
 
         <div className="container max-w-5xl py-12">
-          <h2 className="text-xl font-bold mb-6">Types of local help available</h2>
+          <h2 className="text-xl font-bold text-primary mb-6">Types of local help available</h2>
           <div className="grid sm:grid-cols-2 gap-5 mb-14">
             {helpTypes.map((type, i) => (
               <motion.div key={type.label} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true }}>
-                <Card className="h-full">
+                <Card className="h-full rounded-2xl border border-border bg-card">
                   <CardContent className="pt-5 pb-4">
                     <div className={`inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 mb-3 ${type.colour}`}>
                       <type.icon className="h-4 w-4" />
@@ -89,7 +89,7 @@ export default function LocalHelp() {
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-3">{type.description}</p>
                     <p className="text-xs text-muted-foreground bg-muted rounded-lg px-3 py-2 mb-3 italic">💡 {type.tip}</p>
-                    <Button variant="outline" size="sm" className="gap-1.5" asChild>
+                    <Button variant="outline" size="sm" className="gap-1.5 rounded-lg" asChild>
                       <a href={buildUrl(type.searchTemplate)} target="_blank" rel="noopener noreferrer">
                         <MapPin className="h-3.5 w-3.5" /> Find {type.label} near {searched || 'me'}
                         <ExternalLink className="h-3 w-3 ml-1" />
@@ -101,12 +101,12 @@ export default function LocalHelp() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold mb-6">National organisations that can help</h2>
+          <h2 className="text-xl font-bold text-primary mb-6">National organisations that can help</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {nationalResources.map(r => (
-              <Card key={r.name} className="hover:shadow-md transition-shadow">
+              <Card key={r.name} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                 <CardContent className="pt-5 pb-4">
-                  <h3 className="font-semibold mb-1">{r.name}</h3>
+                  <h3 className="font-semibold mb-1 text-primary">{r.name}</h3>
                   <p className="text-sm text-muted-foreground mb-3">{r.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {r.phone && (
@@ -114,7 +114,7 @@ export default function LocalHelp() {
                         <Phone className="h-3 w-3" /> {r.phone}
                       </Badge>
                     )}
-                    <Button variant="ghost" size="sm" className="h-7 px-2 gap-1 text-xs text-secondary" asChild>
+                    <Button variant="ghost" size="sm" className="h-7 px-2 gap-1 text-xs text-primary rounded-lg" asChild>
                       <a href={r.url.startsWith('http') ? r.url : r.url} target={r.url.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
                         Visit website <ExternalLink className="h-3 w-3" />
                       </a>

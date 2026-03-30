@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -289,34 +290,40 @@ const CATEGORIES = ['All', ...new Set(BLOG_POSTS.map(p => p.category))];
 
 function PostCard({ post, featured = false }: { post: BlogPost; featured?: boolean }) {
   return (
-    <Card className={`border-border hover:shadow-md transition-shadow ${featured ? 'col-span-full' : ''}`}>
-      <CardContent className={`p-5 ${featured ? 'md:flex md:gap-6' : ''}`}>
-        {featured && <div className="text-5xl shrink-0 mb-4 md:mb-0 md:mt-1">{post.emoji}</div>}
-        <div>
-          <div className="flex items-center gap-2 flex-wrap mb-2">
-            {!featured && <span className="text-2xl mr-1">{post.emoji}</span>}
-            <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>
-              {post.category}
-            </span>
-            {post.featured && <Badge variant="secondary" className="text-xs">Featured</Badge>}
-            <span className="text-xs text-muted-foreground flex items-center gap-1 ml-auto">
-              <Clock className="h-3 w-3" /> {post.readTime}
-            </span>
-            <span className="text-xs text-muted-foreground">
-              {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-            </span>
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      <Card className={`rounded-2xl border border-border bg-card hover:border-border/60 transition-all ${featured ? 'col-span-full' : ''}`}>
+        <CardContent className={`p-6 ${featured ? 'md:flex md:gap-8' : ''}`}>
+          {featured && <div className="text-6xl shrink-0 mb-4 md:mb-0">{post.emoji}</div>}
+          <div className="flex-1">
+            <div className="flex items-center gap-2 flex-wrap mb-3">
+              {!featured && <span className="text-3xl mr-1">{post.emoji}</span>}
+              <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>
+                {post.category}
+              </span>
+              {post.featured && <Badge className="text-xs font-medium bg-primary/10 text-primary border-0">Featured</Badge>}
+              <span className="text-xs text-muted-foreground flex items-center gap-1 ml-auto">
+                <Clock className="h-3 w-3" /> {post.readTime}
+              </span>
+              <span className="text-xs text-muted-foreground">
+                {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+              </span>
+            </div>
+            <h2 className={`font-semibold leading-snug mb-2 ${featured ? 'text-2xl' : 'text-base'}`}>{post.title}</h2>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4">{post.excerpt}</p>
+            <Link
+              to={`/blog/${post.slug}`}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              Read article <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
-          <h2 className={`font-bold leading-snug mb-2 ${featured ? 'text-xl' : 'text-base'}`}>{post.title}</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-3">{post.excerpt}</p>
-          <Link
-            to={`/blog/${post.slug}`}
-            className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-          >
-            Read article <ChevronRight className="h-3 w-3" />
-          </Link>
-        </div>
-      </CardContent>
-    </Card>
+        </CardContent>
+      </Card>
+    </motion.div>
   );
 }
 
@@ -384,31 +391,26 @@ export default function Blog() {
       <Navbar />
 
       <main className="min-h-screen bg-background">
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
-            <div className="flex justify-center mb-3">
-              <div className="p-3 bg-primary/10 rounded-full">
-                <BookOpen className="h-8 w-8 text-primary" />
-              </div>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">TekSure Blog</h1>
-            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">TekSure Blog</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Plain-English articles about technology, security, and making the most of your devices.
             </p>
           </div>
         </section>
 
-        <div className="container max-w-4xl mx-auto px-4 py-8">
+        <div className="container max-w-4xl mx-auto px-4 py-16">
           {/* Category filter */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-12">
             {CATEGORIES.map(cat => (
               <button
                 key={cat}
                 onClick={() => { setActiveCategory(cat); setVisibleCount(6); }}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-all ${
+                className={`px-4 py-2 rounded-xl text-sm font-medium border transition-all ${
                   activeCategory === cat
-                    ? 'bg-primary text-primary-foreground border-primary shadow-sm'
-                    : 'bg-muted border-border hover:bg-accent'
+                    ? 'bg-primary text-primary-foreground border-primary'
+                    : 'border-border bg-background hover:bg-muted'
                 }`}
               >
                 {cat}
@@ -417,15 +419,15 @@ export default function Blog() {
           </div>
 
           {/* Grid */}
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 mb-12">
             {visible.map(post => (
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
 
           {visibleCount < filtered.length && (
-            <div className="text-center mt-6">
-              <Button variant="outline" onClick={() => setVisibleCount(v => v + 6)} className="gap-2">
+            <div className="text-center mb-12">
+              <Button variant="outline" onClick={() => setVisibleCount(v => v + 6)} className="gap-2 rounded-xl">
                 <ChevronDown className="h-4 w-4" /> Load more posts
               </Button>
             </div>
@@ -436,7 +438,7 @@ export default function Blog() {
           )}
 
           {/* Newsletter */}
-          <NewsletterSignup className="mt-12" />
+          <NewsletterSignup className="mt-16" />
         </div>
       </main>
 

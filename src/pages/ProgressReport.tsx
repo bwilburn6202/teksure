@@ -65,10 +65,10 @@ export default function ProgressReport() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
-      <main className="flex-1 container max-w-3xl py-12">
+      <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">
           <div className="text-4xl mb-3">📊</div>
-          <h1 className="text-3xl font-bold mb-2">Your Monthly Progress Report</h1>
+          <h1 className="text-3xl font-bold mb-2 text-primary">Your Monthly Progress Report</h1>
           <p className="text-muted-foreground">A snapshot of your learning journey — see how far you've come.</p>
         </div>
 
@@ -95,7 +95,7 @@ export default function ProgressReport() {
         </div>
 
         {/* Goal progress */}
-        <Card className="mb-6">
+        <Card className="mb-6 rounded-2xl border border-border bg-card">
           <CardContent className="pt-5 pb-4">
             <div className="flex items-center justify-between mb-2">
               <p className="font-semibold">Progress to next milestone</p>
@@ -108,7 +108,7 @@ export default function ProgressReport() {
 
         {/* Category breakdown */}
         {categories.length > 0 && (
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="pt-5 pb-4">
               <h2 className="font-semibold mb-4">What you've been learning</h2>
               <div className="space-y-3">
@@ -128,7 +128,7 @@ export default function ProgressReport() {
 
         {/* Recent activity */}
         {recentGuides.length > 0 && (
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="pt-5 pb-4">
               <h2 className="font-semibold mb-4 flex items-center gap-2"><Clock className="h-4 w-4" />Recently completed</h2>
               <div className="space-y-2">
@@ -149,7 +149,7 @@ export default function ProgressReport() {
 
         {/* Current path */}
         {chosenPath && (
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="pt-5 pb-4 flex items-center gap-4">
               <div className="text-3xl">🗺️</div>
               <div className="flex-1">
@@ -170,7 +170,7 @@ export default function ProgressReport() {
               <BookOpen className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
               <h2 className="text-lg font-semibold mb-2">No guides completed yet</h2>
               <p className="text-muted-foreground text-sm mb-5">Start reading guides to track your progress here. Your journey begins with a single step.</p>
-              <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 rounded-xl">
                 <Link to="/my-path"><BookOpen className="h-4 w-4" /> Start Learning</Link>
               </Button>
             </CardContent>
@@ -178,7 +178,7 @@ export default function ProgressReport() {
         )}
 
         {/* Email subscription */}
-        <Card>
+        <Card className="rounded-2xl border border-border bg-card">
           <CardContent className="pt-5 pb-5">
             {subscribed ? (
               <div className="flex items-center gap-3 text-green-700">
@@ -202,7 +202,7 @@ export default function ProgressReport() {
                     <Label className="sr-only">Email address</Label>
                     <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} />
                   </div>
-                  <Button type="submit" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shrink-0">Subscribe</Button>
+                  <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90 shrink-0 rounded-xl">Subscribe</Button>
                 </form>
               </>
             )}

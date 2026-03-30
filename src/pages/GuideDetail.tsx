@@ -116,7 +116,7 @@ const MockScreenshot = ({
       </div>
       <div className="relative bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[140px]">
         <div className="flex items-start gap-3 max-w-md">
-          <Info className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+          <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
           <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
         </div>
         {annotations && annotations.length > 0 && (
@@ -312,7 +312,7 @@ const GuideDetail = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <SEOHead
         title={`${guide.title} — Step-by-Step Guide | TekSure`}
         description={guide.excerpt}
@@ -324,7 +324,7 @@ const GuideDetail = () => {
 
       {/* Sticky progress bar */}
       {guide.steps && guide.steps.length > 1 && (
-        <div className="sticky top-16 z-40 bg-background/95 backdrop-blur border-b border-border no-print">
+        <div className="sticky top-14 z-40 bg-background/95 backdrop-blur border-b border-border no-print">
           <div className="container max-w-4xl py-2 flex items-center gap-3">
             <span className="text-xs font-medium text-muted-foreground whitespace-nowrap">
               Step {activeStep + 1} of {guide.steps.length}
@@ -396,8 +396,8 @@ const GuideDetail = () => {
                 <ol className="space-y-1">
                   {guide.steps.map((step, i) => (
                     <li key={i}>
-                      <a href={`#step-${i + 1}`} className="text-sm text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2">
-                        <span className="text-xs font-mono text-secondary">{i + 1}.</span>
+                      <a href={`#step-${i + 1}`} className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                        <span className="text-xs font-mono text-primary">{i + 1}.</span>
                         {step.title}
                       </a>
                     </li>
@@ -434,10 +434,10 @@ const GuideDetail = () => {
                   transition={{ delay: i * 0.08 }}
                   className="scroll-mt-28"
                 >
-                  <Card className="overflow-hidden border-l-4 border-l-secondary">
+                  <Card className="overflow-hidden border-l-4 border-l-primary">
                     <CardContent className="py-6 px-6">
                       <div className="flex gap-5">
-                        <div className="shrink-0 w-12 h-12 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-lg font-bold">
+                        <div className="shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold">
                           {i + 1}
                         </div>
                         <div className="flex-1 min-w-0">
@@ -510,7 +510,7 @@ const GuideDetail = () => {
                     <ul key={i} className="space-y-2 mb-4">
                       {paragraph.split('\n').map((item, j) => (
                         <li key={j} className="flex items-start gap-2 text-base text-muted-foreground">
-                          <CheckCircle className="h-4 w-4 text-secondary shrink-0 mt-1" />
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-1" />
                           <span>{item.replace(/^[-•]\s*/, '')}</span>
                         </li>
                       ))}
@@ -552,7 +552,7 @@ const GuideDetail = () => {
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
                     <p className="text-xs text-muted-foreground mb-1">← Previous</p>
-                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{prevGuide.title}</p>
+                    <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{prevGuide.title}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -562,7 +562,7 @@ const GuideDetail = () => {
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
                     <p className="text-xs text-muted-foreground mb-1">Next →</p>
-                    <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{nextGuide.title}</p>
+                    <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{nextGuide.title}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -597,7 +597,7 @@ const GuideDetail = () => {
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
                         <div className="text-2xl mb-2">{g.thumbnailEmoji}</div>
-                        <p className="text-sm font-medium group-hover:text-secondary transition-colors line-clamp-2">{g.title}</p>
+                        <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
                       </CardContent>

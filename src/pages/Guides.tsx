@@ -1,9 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, ArrowRight, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Navbar } from '@/components/layout/Navbar';
@@ -13,8 +12,9 @@ import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
 import { StarRating } from '@/components/StarRating';
 import { Progress } from '@/components/ui/progress';
+import { Button } from '@/components/ui/button';
 
-const categoryIcons: Record<GuideCategory, typeof Monitor> = {
+const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
   'mac-guides': Apple,
   'essential-skills': Lightbulb,
@@ -22,63 +22,67 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'ai-guides': Bot,
   'safety-guides': ShieldCheck,
   'how-to': BookOpen,
+  'app-guides': Phone,
+  'health-tech': Heart,
 };
 
-const difficultyConfig = {
-  Beginner: { emoji: '🟢', className: 'border-[hsl(var(--teksure-success)/0.5)] text-[hsl(var(--teksure-success))]' },
-  Intermediate: { emoji: '🟡', className: 'border-[hsl(var(--teksure-warning)/0.5)] text-[hsl(var(--teksure-warning))]' },
-  Advanced: { emoji: '🔴', className: 'border-destructive/50 text-destructive' },
-};
-
-const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
-  const diff = guide.difficulty ? difficultyConfig[guide.difficulty] : null;
-  return (
-    <Link to={`/guides/${guide.slug}`}>
-      <Card className={`h-full hover:shadow-lg transition-all hover:-translate-y-1 group relative ${completed ? 'border-green-500/30 bg-green-500/5 dark:bg-green-500/10' : ''}`}>
-        {completed && (
-          <div className="absolute top-3 right-3">
-            <CheckCircle2 className="h-5 w-5 text-green-500" />
-          </div>
+const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
+  <Link to={`/guides/${guide.slug}`} className="group block h-full">
+    <div className={`p-5 rounded-2xl border h-full transition-all hover:shadow-md ${
+      completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
+    }`}>
+      <div className="flex items-start justify-between mb-3">
+        <span className="text-3xl">{guide.thumbnailEmoji}</span>
+        {completed && <CheckCircle2 className="h-4 w-4 text-green-500" />}
+      </div>
+      <div className="flex items-center gap-2 mb-2.5 flex-wrap">
+        <Badge variant="secondary" className="text-[10px] font-medium">
+          {categoryLabels[guide.category]}
+        </Badge>
+        {guide.difficulty && (
+          <span className={`text-[10px] font-medium ${
+            guide.difficulty === 'Beginner' ? 'text-green-600' :
+            guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
+          }`}>
+            {guide.difficulty}
+          </span>
         )}
-        <CardContent className="pt-6">
-          <div className="text-4xl mb-4">{guide.thumbnailEmoji}</div>
-          <div className="flex items-center gap-2 mb-3 flex-wrap">
-            <Badge variant="secondary" className="text-xs capitalize">
-              {categoryLabels[guide.category]}
-            </Badge>
-            {diff && (
-              <Badge variant="outline" className={`text-xs ${diff.className}`}>
-                {diff.emoji} {guide.difficulty}
-              </Badge>
-            )}
-            <span className="flex items-center gap-1 text-xs text-muted-foreground">
-              <Clock className="h-3 w-3" /> {guide.readTime}
-            </span>
-          </div>
-          <h3 className="font-semibold text-lg mb-2 group-hover:text-secondary transition-colors leading-snug">
-            {guide.title}
-          </h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">{guide.excerpt}</p>
-          <div className="mt-2">
-            <StarRating guideSlug={guide.slug} readOnly size="sm" />
-          </div>
-          <div className="flex flex-wrap gap-1.5 mt-3">
-            {guide.tags.slice(0, 3).map(tag => (
-              <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-                {tag}
-              </span>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    </Link>
-  );
+        <span className="flex items-center gap-1 text-[10px] text-muted-foreground">
+          <Clock className="h-2.5 w-2.5" /> {guide.readTime}
+        </span>
+      </div>
+      <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
+        {guide.title}
+      </h3>
+      <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+      <div className="mt-2.5">
+        <StarRating guideSlug={guide.slug} readOnly size="sm" />
+      </div>
+    </div>
+  </Link>
+);
+
+const fade = {
+  hidden: { opacity: 0, y: 12 },
+  visible: (i: number) => ({
+    opacity: 1, y: 0,
+    transition: { delay: Math.min(i * 0.04, 0.3), duration: 0.4 }
+  }),
 };
 
 const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
+
+  useEffect(() => {
+    // Check URL params for category
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('category') as GuideCategory | null;
+    const q = params.get('q');
+    if (cat && categoryLabels[cat]) setActiveTab(cat);
+    if (q) setSearch(q);
+  }, []);
 
   useEffect(() => {
     const handleUpdate = () => setCompletedSlugs(getCompletedGuides());
@@ -91,9 +95,7 @@ const Guides = () => {
 
   const filtered = useMemo(() => {
     let results = guides;
-    if (activeTab !== 'all') {
-      results = results.filter(g => g.category === activeTab);
-    }
+    if (activeTab !== 'all') results = results.filter(g => g.category === activeTab);
     if (search.trim()) {
       const q = search.toLowerCase();
       results = results.filter(g =>
@@ -105,159 +107,115 @@ const Guides = () => {
     return results;
   }, [search, activeTab]);
 
-  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
+  const categories = Object.keys(categoryLabels) as GuideCategory[];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Guides for Beginners | TekSure"
-        description="Browse 300+ free step-by-step tech guides for Windows, Mac, essential skills, tips, and AI tools. Written for beginners."
+        description="Browse 270+ free step-by-step tech guides for Windows, Mac, essential skills, tips, and AI tools. Written for beginners."
         path="/guides"
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="hero-gradient text-primary-foreground">
-        <div className="container py-16 md:py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="max-w-2xl mx-auto text-center"
-          >
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-              Tech Guides & Resources
+      {/* Header */}
+      <section className="border-b">
+        <div className="container py-12 md:py-16">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Guides & Tutorials
             </h1>
-            <p className="text-lg opacity-90 mb-8">
-              DIY troubleshooting, expert tips, and video tutorials. Fix it yourself or know when to call a pro.
+            <p className="text-muted-foreground mb-8">
+              {guides.length}+ free step-by-step guides. No jargon, just answers.
             </p>
             <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Search guides... (e.g. wifi, printer, security)"
-                className="pl-10 bg-card text-foreground h-12 text-base"
+                placeholder="Search guides..."
+                className="pl-10 h-11 bg-muted/50 border-border rounded-xl text-sm"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Category Stats */}
-      <section className="container -mt-8 relative z-10 mb-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {(['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks'] as GuideCategory[]).map((cat, i) => {
-            const Icon = categoryIcons[cat];
-            const count = guides.filter(g => g.category === cat).length;
-            return (
-              <motion.div
-                key={cat}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Card
-                  className="cursor-pointer hover:shadow-md transition-shadow"
-                  onClick={() => setActiveTab(cat)}
-                >
-                  <CardContent className="flex items-center gap-3 py-4">
-                    <div className="h-10 w-10 rounded-lg bg-accent flex items-center justify-center shrink-0">
-                      <Icon className="h-5 w-5 text-accent-foreground" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-sm font-medium truncate">{categoryLabels[cat]}</p>
-                      <p className="text-xs text-muted-foreground">{count} {count === 1 ? 'article' : 'articles'}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Progress Banner */}
-      {progressStats.completed > 0 && (
-        <section className="container mb-4">
-          <div className="flex items-center gap-4 p-4 rounded-xl bg-green-500/10 border border-green-500/20">
-            <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-green-700 dark:text-green-400">
-                {progressStats.completed} of {progressStats.total} guides completed
-              </p>
-              <Progress value={progressStats.pct} className="h-1.5 mt-1.5 bg-green-200 dark:bg-green-900" />
-            </div>
-            <span className="text-sm font-bold text-green-600 dark:text-green-400 shrink-0">{progressStats.pct}%</span>
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* Progress banner */}
+      {progressStats.completed > 0 && (
+        <div className="container mt-6">
+          <div className="flex items-center gap-3 p-3 rounded-xl bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900">
+            <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-medium text-green-700 dark:text-green-400">
+                {progressStats.completed} of {progressStats.total} completed
+              </p>
+              <Progress value={progressStats.pct} className="h-1 mt-1 bg-green-200 dark:bg-green-900" />
+            </div>
+            <span className="text-xs font-bold text-green-600 dark:text-green-400">{progressStats.pct}%</span>
+          </div>
+        </div>
       )}
 
-      {/* Guides Grid */}
-      <section className="container pb-20">
+      {/* Main content */}
+      <section className="container py-8 pb-20">
         <Tabs value={activeTab} onValueChange={v => setActiveTab(v as typeof activeTab)}>
-          <TabsList className="mb-8 flex-wrap h-auto gap-1">
-            {categories.map(cat => (
-              <TabsTrigger key={cat} value={cat} className="capitalize">
-                {cat === 'all' ? 'All Guides' : categoryLabels[cat]}
+          <div className="flex items-center gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
+            <TabsList className="h-auto gap-1 bg-transparent p-0 flex-wrap">
+              <TabsTrigger
+                value="all"
+                className="text-xs rounded-full px-3 py-1.5 data-[state=active]:bg-foreground data-[state=active]:text-background"
+              >
+                All ({guides.length})
               </TabsTrigger>
-            ))}
-          </TabsList>
+              {categories.map(cat => {
+                const count = guides.filter(g => g.category === cat).length;
+                return (
+                  <TabsTrigger
+                    key={cat}
+                    value={cat}
+                    className="text-xs rounded-full px-3 py-1.5 data-[state=active]:bg-foreground data-[state=active]:text-background"
+                  >
+                    {categoryLabels[cat]} ({count})
+                  </TabsTrigger>
+                );
+              })}
+            </TabsList>
+          </div>
 
-          {categories.map(cat => (
-            <TabsContent key={cat} value={cat}>
-              {cat !== 'all' && (
-                <p className="text-muted-foreground mb-6">
-                  {categoryDescriptions[cat as GuideCategory]}
-                </p>
-              )}
+          <TabsContent value={activeTab} className="mt-0">
+            {activeTab !== 'all' && categoryDescriptions[activeTab as GuideCategory] && (
+              <p className="text-sm text-muted-foreground mb-6">{categoryDescriptions[activeTab as GuideCategory]}</p>
+            )}
 
-              {filtered.length === 0 ? (
-                <div className="text-center py-16">
-                  <p className="text-4xl mb-4">🔍</p>
-                  <p className="text-lg font-medium mb-2">No guides found</p>
-                  <p className="text-muted-foreground">Try a different search term or category.</p>
-                </div>
-              ) : (
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filtered.map((guide, i) => (
-                    <motion.div
-                      key={guide.slug}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: Math.min(i * 0.05, 0.3) }}
-                    >
-                      <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
-                    </motion.div>
-                  ))}
-                </div>
-              )}
-            </TabsContent>
-          ))}
+            {filtered.length === 0 ? (
+              <div className="text-center py-20">
+                <p className="text-3xl mb-3">🔍</p>
+                <p className="font-medium mb-1">No guides found</p>
+                <p className="text-sm text-muted-foreground">Try a different search term or category.</p>
+              </div>
+            ) : (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {filtered.map((guide, i) => (
+                  <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+                    <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
+                  </motion.div>
+                ))}
+              </div>
+            )}
+          </TabsContent>
         </Tabs>
 
-        {/* CTA Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16"
-        >
-          <Card className="hero-gradient text-primary-foreground overflow-hidden">
-            <CardContent className="py-12 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Can't find what you need?</h2>
-              <p className="opacity-90 mb-6 max-w-md mx-auto">
-                Our verified technicians are ready to help with any tech issue — remote or in-person.
-              </p>
-              <Link
-                to="/signup"
-                className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-              >
-                Book a Tech <ArrowRight className="h-4 w-4" />
-              </Link>
-            </CardContent>
-          </Card>
-        </motion.div>
+        {/* CTA */}
+        <div className="mt-16 text-center p-10 rounded-2xl bg-muted/50 border border-border">
+          <h2 className="text-xl font-bold mb-2">Can't find what you need?</h2>
+          <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
+            Our verified technicians are ready to help with any tech issue.
+          </p>
+          <Button asChild className="gap-2 rounded-xl">
+            <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help</Link>
+          </Button>
+        </div>
       </section>
 
       <Footer />

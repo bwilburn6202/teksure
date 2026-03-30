@@ -237,7 +237,7 @@ const QuickFixes = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <SEOHead
         title="Quick Tech Fixes — Instant Solutions | TekSure"
         description="Instant solutions to the most common tech problems. Click to reveal step-by-step fixes for slow computers, Wi-Fi issues, and more."
@@ -246,30 +246,25 @@ const QuickFixes = () => {
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="hero-gradient text-primary-foreground">
-        <div className="container py-16 md:py-20">
+      {/* Header */}
+      <section className="border-b border-border">
+        <div className="max-w-4xl mx-auto py-16 md:py-20 px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-2xl mx-auto text-center"
+            className="text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 text-sm mb-6">
-              <Zap className="h-4 w-4 text-secondary" />
-              <span>{quickFixes.length} instant solutions</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-              ⚡ Quick Fixes
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Quick Fixes
             </h1>
-            <p className="text-lg opacity-80 mb-2">
+            <p className="text-muted-foreground text-lg mb-8">
               Instant solutions to the most common tech problems.
             </p>
-            <p className="text-sm opacity-60 mb-8">Click a card to reveal the fix — no ads, no fluff.</p>
             <div className="relative max-w-md mx-auto">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
-                placeholder='Describe your problem... (e.g. "no sound", "slow")'
-                className="pl-10 bg-card text-foreground h-12 text-base rounded-xl"
+                placeholder='Find your problem... (e.g. "no sound", "slow")'
+                className="pl-10 h-11 text-base rounded-xl border-border"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
@@ -280,16 +275,16 @@ const QuickFixes = () => {
 
       {/* Category filter tabs */}
       <div className="sticky top-16 z-40 bg-background border-b border-border">
-        <div className="container py-3">
+        <div className="max-w-4xl mx-auto px-4 py-3">
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setCategory(cat)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
                   category === cat
-                    ? 'bg-secondary text-secondary-foreground'
-                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'border border-border text-muted-foreground hover:border-border hover:bg-muted/50'
                 }`}
               >
                 {cat}
@@ -300,7 +295,7 @@ const QuickFixes = () => {
       </div>
 
       {/* Accordion cards */}
-      <section className="container py-12">
+      <section className="py-16 md:py-20 px-4">
         {filtered.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-4xl mb-4">🔍</p>
@@ -314,64 +309,61 @@ const QuickFixes = () => {
               return (
                 <motion.div
                   key={fix.problem}
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: Math.min(i * 0.03, 0.2) }}
                   viewport={{ once: true }}
+                  transition={{ delay: Math.min(i * 0.03, 0.15) }}
                 >
-                  <Card className={`transition-shadow ${isOpen ? 'shadow-md ring-1 ring-secondary/20' : 'hover:shadow-sm'}`}>
-                    {/* Header — always visible */}
-                    <button
-                      onClick={() => toggleCard(fix.problem)}
-                      className="w-full text-left"
-                    >
-                      <CardContent className="py-4 flex items-center gap-3">
-                        <span className="text-2xl shrink-0">{fix.emoji}</span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold text-sm md:text-base">{fix.problem}</h3>
+                  <button
+                    onClick={() => toggleCard(fix.problem)}
+                    className="w-full text-left rounded-2xl border border-border bg-card hover:border-border/80 transition-all"
+                  >
+                    <CardContent className="py-4 flex items-center gap-3 px-5">
+                      <span className="text-2xl shrink-0">{fix.emoji}</span>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-sm md:text-base text-foreground">{fix.problem}</h3>
+                      </div>
+                      <Badge variant="outline" className="text-xs shrink-0 hidden sm:inline-flex rounded-full">{fix.category}</Badge>
+                      <ChevronDown className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                    </CardContent>
+                  </button>
+
+                  {/* Expandable steps */}
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2, ease: 'easeInOut' }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-5 pb-5 pt-3 border-t border-border rounded-b-2xl bg-card">
+                          <ol className="space-y-3 mt-2">
+                            {fix.steps.map((step, j) => (
+                              <li key={j} className="flex items-start gap-3">
+                                <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">
+                                  {j + 1}
+                                </span>
+                                <span className="text-sm text-muted-foreground leading-relaxed pt-0.5">{step}</span>
+                              </li>
+                            ))}
+                          </ol>
+
+                          {fix.relatedSlug && (
+                            <div className="mt-4 pt-3 border-t border-border">
+                              <Link
+                                to={`/guides/${fix.relatedSlug}`}
+                                className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1"
+                              >
+                                Full guide with screenshots <ArrowRight className="h-3.5 w-3.5" />
+                              </Link>
+                            </div>
+                          )}
                         </div>
-                        <Badge variant="outline" className="text-xs shrink-0 hidden sm:inline-flex">{fix.category}</Badge>
-                        <ChevronDown className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
-                      </CardContent>
-                    </button>
-
-                    {/* Expandable steps */}
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2, ease: 'easeInOut' }}
-                          className="overflow-hidden"
-                        >
-                          <div className="px-6 pb-5 pt-0 border-t border-border">
-                            <ol className="space-y-3 mt-4">
-                              {fix.steps.map((step, j) => (
-                                <li key={j} className="flex items-start gap-3">
-                                  <span className="shrink-0 w-7 h-7 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-xs font-bold mt-0.5">
-                                    {j + 1}
-                                  </span>
-                                  <span className="text-sm text-muted-foreground leading-relaxed pt-1">{step}</span>
-                                </li>
-                              ))}
-                            </ol>
-
-                            {fix.relatedSlug && (
-                              <div className="mt-4 pt-3 border-t border-border">
-                                <Link
-                                  to={`/guides/${fix.relatedSlug}`}
-                                  className="text-sm font-medium text-secondary hover:underline inline-flex items-center gap-1"
-                                >
-                                  Full step-by-step guide with screenshots <ArrowRight className="h-3.5 w-3.5" />
-                                </Link>
-                              </div>
-                            )}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </Card>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               );
             })}
@@ -380,22 +372,20 @@ const QuickFixes = () => {
 
         {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 max-w-3xl mx-auto"
+          className="mt-20 max-w-3xl mx-auto"
         >
-          <Card className="hero-gradient text-primary-foreground overflow-hidden">
-            <CardContent className="py-10 text-center">
-              <h2 className="text-2xl font-bold mb-2">Didn't find your fix?</h2>
-              <p className="opacity-90 mb-6 max-w-md mx-auto">
-                Our verified technicians can diagnose and solve any tech issue — remotely or in person.
-              </p>
-              <Button asChild size="lg" variant="secondary">
-                <Link to="/signup">Get Expert Help from a TekSure Tech <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
-            </CardContent>
-          </Card>
+          <div className="rounded-2xl border border-border bg-card p-8 md:p-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Didn't find your fix?</h2>
+            <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+              Our verified technicians can diagnose and solve any tech issue remotely or in person.
+            </p>
+            <Button asChild size="lg" className="rounded-xl">
+              <Link to="/signup">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            </Button>
+          </div>
         </motion.div>
       </section>
 

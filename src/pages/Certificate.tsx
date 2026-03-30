@@ -58,19 +58,21 @@ export default function Certificate() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1 container max-w-3xl py-12">
-        <div className="text-center mb-10">
-          <div className="text-4xl mb-3">🏆</div>
-          <h1 className="text-3xl font-bold mb-2">Tech Skills Certificates</h1>
-          <p className="text-muted-foreground">Complete guides to unlock certificates — print and display them with pride.</p>
+        <div className="border-b border-border pb-10 mb-10">
+          <div className="text-center">
+            <div className="text-4xl mb-3">🏆</div>
+            <h1 className="text-3xl font-bold text-primary mb-2">Tech Skills Certificates</h1>
+            <p className="text-muted-foreground">Complete guides to unlock certificates — print and display them with pride.</p>
+          </div>
         </div>
 
         {total === 0 ? (
-          <Card className="text-center py-12">
+          <Card className="rounded-2xl border border-border bg-card text-center py-12">
             <CardContent>
               <Trophy className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
               <h2 className="text-xl font-semibold mb-2">No certificates yet</h2>
               <p className="text-muted-foreground mb-6">Complete guides to earn your first certificate. Start with Beginner Basics — just 5 guides to go.</p>
-              <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Link to="/my-path"><ArrowRight className="h-4 w-4" /> Start Learning</Link>
               </Button>
             </CardContent>
@@ -79,7 +81,7 @@ export default function Certificate() {
           <>
             {/* Live certificate preview */}
             {latestPath && (
-              <div ref={certRef} className={`rounded-3xl bg-gradient-to-br ${latestPath.colour} p-1 mb-8 shadow-xl`}>
+              <div ref={certRef} className={`rounded-2xl bg-gradient-to-br ${latestPath.colour} p-1 mb-8 shadow-xl`}>
                 <div className="bg-white rounded-[1.4rem] p-10 text-center">
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">TekSure · Certificate of Achievement</p>
                   <div className="text-6xl mb-3">{latestPath.emoji}</div>
@@ -93,10 +95,10 @@ export default function Certificate() {
             )}
 
             <div className="flex gap-3 mb-10 justify-center">
-              <Button onClick={handlePrint} size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+              <Button onClick={handlePrint} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Download className="h-4 w-4" /> Print / Save Certificate
               </Button>
-              <Button variant="outline" size="lg" className="gap-2" onClick={() => { if (navigator.share) navigator.share({ title: 'My TekSure Certificate', text: `I've completed ${total} tech guides on TekSure!`, url: window.location.href }); }}>
+              <Button variant="outline" size="lg" className="rounded-xl gap-2" onClick={() => { if (navigator.share) navigator.share({ title: 'My TekSure Certificate', text: `I've completed ${total} tech guides on TekSure!`, url: window.location.href }); }}>
                 <Share2 className="h-4 w-4" /> Share
               </Button>
             </div>
@@ -104,12 +106,12 @@ export default function Certificate() {
         )}
 
         {/* All paths */}
-        <h2 className="text-xl font-bold mb-5">All certificates</h2>
+        <h2 className="text-xl font-bold mb-5 text-primary">All certificates</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {paths.map(p => {
             const earned = total >= p.required;
             return (
-              <Card key={p.name} className={earned ? 'border-secondary/40 shadow-sm' : 'opacity-60'}>
+              <Card key={p.name} className={`rounded-2xl border border-border bg-card ${earned ? 'shadow-sm' : 'opacity-60'}`}>
                 <CardContent className="pt-5 pb-4 flex items-center gap-4">
                   <div className={`rounded-xl w-12 h-12 bg-gradient-to-br ${p.colour} flex items-center justify-center text-2xl shrink-0`}>{p.emoji}</div>
                   <div className="flex-1">

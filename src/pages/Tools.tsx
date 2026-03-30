@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
@@ -123,7 +123,7 @@ const tools = [
     description: 'Answer yes/no questions and get guided step-by-step to the exact fix for WiFi, printers, passwords, phones, and more.',
     icon: HelpCircle,
     path: '/tools/troubleshooter',
-    color: 'text-secondary',
+    color: 'text-primary',
     badge: 'Popular',
   },
   {
@@ -344,6 +344,29 @@ const tools = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 8 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: 'easeOut',
+    },
+  },
+};
+
 export default function Tools() {
   return (
     <>
@@ -353,39 +376,60 @@ export default function Tools() {
         path="/tools"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh]">
-        <div className="flex items-center gap-3 mb-2">
-          <Wrench className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Tools &amp; Utilities</h1>
-        </div>
-        <p className="text-muted-foreground mb-10 max-w-2xl">
-          Everything you need in one place — check your passwords, test your WiFi, quiz your device health,
-          compare gadgets, and more. All free, all private.
-        </p>
+      <main className="min-h-screen bg-background">
+        <div className="container pt-16 pb-16">
+          {/* Header Section */}
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="border-b border-border pb-8 mb-12"
+          >
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Tools &amp; Utilities
+            </h1>
+            <p className="text-muted-foreground text-sm max-w-2xl">
+              Over 30 free interactive tools to help you check your passwords, test your WiFi, quiz your device health,
+              compare gadgets, and more. All private, all free.
+            </p>
+          </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool, i) => {
-            const content = (
-              <Card className="h-full transition-all hover:shadow-lg hover:border-secondary/50 group">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <tool.icon className={`h-10 w-10 mb-3 ${tool.color} transition-transform group-hover:scale-110`} />
-                    <Badge variant="secondary" className="text-xs font-normal">{tool.badge}</Badge>
+          {/* Tools Grid */}
+          <motion.div
+            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {tools.map((tool, i) => {
+              const content = (
+                <motion.div
+                  variants={itemVariants}
+                  whileHover={{ y: -2 }}
+                  className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <div className={`h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center`}>
+                      <tool.icon className={`h-5 w-5 ${tool.color}`} />
+                    </div>
+                    <Badge variant="secondary" className="text-xs font-normal">
+                      {tool.badge}
+                    </Badge>
                   </div>
-                  <CardTitle className="text-lg">{tool.title}</CardTitle>
-                  <CardDescription>{tool.description}</CardDescription>
-                </CardHeader>
-              </Card>
-            );
+                  <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
+                  <p className="text-muted-foreground text-sm">{tool.description}</p>
+                </motion.div>
+              );
 
-            if (!tool.path) return <div key={i}>{content}</div>;
+              if (!tool.path) return <div key={i}>{content}</div>;
 
-            return (
-              <Link key={tool.path} to={tool.path} className="group">
-                {content}
-              </Link>
-            );
-          })}
+              return (
+                <Link key={tool.path} to={tool.path} className="group">
+                  {content}
+                </Link>
+              );
+            })}
+          </motion.div>
         </div>
       </main>
       <Footer />

@@ -102,22 +102,18 @@ const DeviceHub = () => {
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="hero-gradient text-primary-foreground">
-        <div className="container py-16 md:py-20">
+      {/* Header */}
+      <section className="border-b border-border py-16 md:py-20">
+        <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-2xl mx-auto text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 text-sm mb-6">
-              <BookOpen className="h-4 w-4 text-secondary" />
-              <span>Find guides specific to your device</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
               Device Hub
             </h1>
-            <p className="text-lg opacity-80">
+            <p className="text-lg text-muted-foreground">
               Select your device to find the right guides instantly.
             </p>
           </motion.div>
@@ -125,7 +121,7 @@ const DeviceHub = () => {
       </section>
 
       {/* Device Grid */}
-      <section className="container py-12">
+      <section className="container py-16">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {devices.map((device, i) => {
             const isSelected = selectedDevice === device.id;
@@ -140,14 +136,14 @@ const DeviceHub = () => {
                   onClick={() => setSelectedDevice(isSelected ? null : device.id)}
                   className="w-full text-left"
                 >
-                  <Card className={`h-full transition-all cursor-pointer hover:shadow-lg hover:-translate-y-1 ${
-                    isSelected ? 'ring-2 ring-secondary shadow-lg -translate-y-1' : ''
+                  <Card className={`h-full rounded-2xl border border-border bg-card transition-all cursor-pointer hover:border-primary/30 hover:shadow-sm ${
+                    isSelected ? 'border-primary bg-primary/5' : ''
                   }`}>
-                    <CardContent className="pt-5 pb-4 text-center">
-                      <div className={`w-14 h-14 rounded-2xl ${device.bgClass} flex items-center justify-center mx-auto mb-3`}>
+                    <CardContent className="pt-6 pb-5 text-center">
+                      <div className={`w-14 h-14 rounded-xl ${device.bgClass} flex items-center justify-center mx-auto mb-3`}>
                         <device.icon className="h-7 w-7 text-primary-foreground" />
                       </div>
-                      <h3 className="font-bold text-sm mb-0.5">{device.name}</h3>
+                      <h3 className="font-semibold text-sm mb-0.5">{device.name}</h3>
                       <p className="text-xs text-muted-foreground">{device.guideCount}</p>
                     </CardContent>
                   </Card>
@@ -160,17 +156,17 @@ const DeviceHub = () => {
 
       {/* Filtered Guides */}
       {selectedDevice && (
-        <section className="bg-muted py-12">
+        <section className="border-t border-border py-16">
           <div className="container">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center justify-between mb-10">
               <div className="flex items-center gap-3">
                 {selectedDeviceData && (
-                  <div className={`w-10 h-10 rounded-xl ${selectedDeviceData.bgClass} flex items-center justify-center`}>
+                  <div className={`w-10 h-10 rounded-lg ${selectedDeviceData.bgClass} flex items-center justify-center`}>
                     <selectedDeviceData.icon className="h-5 w-5 text-primary-foreground" />
                   </div>
                 )}
                 <div>
-                  <h2 className="text-xl md:text-2xl font-bold">{selectedDeviceData?.name} Guides</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold tracking-tight">{selectedDeviceData?.name} Guides</h2>
                   <p className="text-sm text-muted-foreground">{filteredGuides.length} guides found</p>
                 </div>
               </div>
@@ -180,7 +176,7 @@ const DeviceHub = () => {
             </div>
 
             {filteredGuides.length === 0 ? (
-              <Card>
+              <Card className="rounded-2xl border border-border bg-card">
                 <CardContent className="py-12 text-center">
                   <p className="text-4xl mb-4">📭</p>
                   <p className="font-medium mb-2">No guides yet for this device</p>
@@ -188,7 +184,7 @@ const DeviceHub = () => {
                 </CardContent>
               </Card>
             ) : (
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredGuides.map((guide, i) => (
                   <motion.div
                     key={guide.slug}
@@ -197,11 +193,11 @@ const DeviceHub = () => {
                     transition={{ delay: i * 0.04 }}
                   >
                     <Link to={`/guides/${guide.slug}`}>
-                      <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 group">
-                        <CardContent className="pt-6">
+                      <Card className="h-full rounded-2xl border border-border bg-card hover:border-primary/30 transition-all hover:shadow-sm group">
+                        <CardContent className="pt-6 pb-5">
                           <div className="text-3xl mb-3">{guide.thumbnailEmoji}</div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <Badge variant="secondary" className="text-xs">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Badge variant="outline" className="text-xs rounded-lg">
                               {categoryLabels[guide.category]}
                             </Badge>
                             <span className="text-xs text-muted-foreground flex items-center gap-1">
@@ -209,7 +205,7 @@ const DeviceHub = () => {
                               {guide.readTime}
                             </span>
                           </div>
-                          <h3 className="font-semibold text-sm mb-1 group-hover:text-secondary transition-colors leading-snug line-clamp-2">
+                          <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
                             {guide.title}
                           </h3>
                           <p className="text-xs text-muted-foreground line-clamp-2">{guide.excerpt}</p>
@@ -225,9 +221,9 @@ const DeviceHub = () => {
       )}
 
       {!selectedDevice && (
-        <section className="container py-12 text-center">
-          <p className="text-muted-foreground mb-4">👆 Select a device above to see relevant guides</p>
-          <Button asChild variant="outline">
+        <section className="container py-16 text-center">
+          <p className="text-muted-foreground mb-6">👆 Select a device above to see relevant guides</p>
+          <Button asChild variant="outline" className="rounded-xl">
             <Link to="/guides">Or browse all {guides.length}+ guides <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
         </section>
