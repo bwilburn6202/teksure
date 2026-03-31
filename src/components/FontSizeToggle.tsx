@@ -47,7 +47,7 @@ export function FontSizeToggle() {
           variant="ghost"
           size="icon"
           onClick={cycle}
-          className="h-9 w-9 min-h-0"
+          className="h-11 w-11"
           aria-label={`Font size: ${LABELS[size]}. Click to change.`}
         >
           {size === 'xxl' ? (

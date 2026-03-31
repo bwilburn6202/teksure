@@ -62,23 +62,31 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh]" onClick={onClose}>
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+    <div
+      className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh]"
+      onClick={onClose}
+      onKeyDown={e => e.key === 'Escape' && onClose()}
+    >
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" aria-hidden="true" />
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search"
         className="relative w-full max-w-lg mx-4 bg-card rounded-xl shadow-2xl border border-border overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
         <div className="flex items-center gap-3 px-4 border-b border-border">
-          <Search className="h-5 w-5 text-muted-foreground shrink-0" />
+          <Search className="h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true" />
           <Input
             ref={inputRef}
             placeholder="Search guides and glossary..."
             className="border-0 shadow-none focus-visible:ring-0 h-14 text-base"
             value={query}
             onChange={e => setQuery(e.target.value)}
+            aria-label="Search guides and glossary"
           />
-          <button onClick={onClose} className="shrink-0 p-1 hover:bg-muted rounded">
-            <X className="h-4 w-4 text-muted-foreground" />
+          <button onClick={onClose} className="shrink-0 p-1 hover:bg-muted rounded" aria-label="Close search">
+            <X className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
           </button>
         </div>
 

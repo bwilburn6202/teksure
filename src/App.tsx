@@ -16,6 +16,7 @@ import { TekBot } from "@/components/TekBot";
 import { FloatingChat } from "@/components/FloatingChat";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
@@ -144,6 +145,8 @@ const AppContent = () => {
   return (
     <BrowserRouter>
       <OfflineBanner />
+      {/* Replace G-XXXXXXXXXX with your real GA4 Measurement ID */}
+      <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
       <FloatingChat />

@@ -11,6 +11,7 @@ import {
   Shield, AlertTriangle, Users, Clock, CheckCircle, Wrench, AlertCircle,
   RefreshCw, Phone, Mail, Monitor, ChevronDown, ChevronUp, Search,
 } from 'lucide-react';
+import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 
 interface HelpRequest {
@@ -97,8 +98,13 @@ function BookingsTab() {
     const { data, error } = await supabase
       .from('bookings' as any)
       .select('*')
-      .order('preferred_date', { ascending: true });
-    if (!error && data) setBookings(data as unknown as Booking[]);
+      .order('preferred_date', { ascending: true })
+      .limit(100);
+    if (error) {
+      toast.error('Failed to load bookings');
+    } else if (data) {
+      setBookings(data as unknown as Booking[]);
+    }
     setLoading(false);
   };
 
@@ -107,7 +113,11 @@ function BookingsTab() {
   const updateBookingStatus = async (id: string, newStatus: BookingStatus) => {
     setUpdatingId(id);
     const { error } = await supabase.from('bookings' as any).update({ status: newStatus }).eq('id', id);
-    if (!error) setBookings(prev => prev.map(b => b.id === id ? { ...b, status: newStatus } : b));
+    if (error) {
+      toast.error('Failed to update booking status');
+    } else {
+      setBookings(prev => prev.map(b => b.id === id ? { ...b, status: newStatus } : b));
+    }
     setUpdatingId(null);
   };
 
@@ -262,8 +272,13 @@ function HelpRequestsTab() {
     const { data, error } = await supabase
       .from('help_requests')
       .select('*')
-      .order('created_at', { ascending: false });
-    if (!error && data) setRequests(data as HelpRequest[]);
+      .order('created_at', { ascending: false })
+      .limit(100);
+    if (error) {
+      toast.error('Failed to load help requests');
+    } else if (data) {
+      setRequests(data as HelpRequest[]);
+    }
     setLastRefreshed(new Date());
     setLoading(false);
   };
@@ -276,7 +291,9 @@ function HelpRequestsTab() {
       .from('help_requests')
       .update({ status: newStatus })
       .eq('id', id);
-    if (!error) {
+    if (error) {
+      toast.error('Failed to update status');
+    } else {
       setRequests(prev => prev.map(r => r.id === id ? { ...r, status: newStatus } : r));
     }
     setUpdatingId(null);

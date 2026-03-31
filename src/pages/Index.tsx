@@ -67,7 +67,7 @@ function NewsletterSignup() {
     return (
       <div className="flex flex-col items-center gap-2 py-2">
         <CheckCircle className="h-5 w-5 text-green-600" />
-        <p className="text-sm font-medium">You're in! First tip lands next week.</p>
+        <p className="text-sm font-medium">You're in! Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.</p>
       </div>
     );
   }
@@ -136,7 +136,7 @@ const Index = () => {
           '@type': 'Organization',
           name: 'TekSure',
           url: 'https://teksure.lovable.app',
-          description: 'The #1 tech help resource for beginners.',
+          description: 'Free step-by-step tech guides for seniors and beginners. Plain English. No jargon.',
         }}
       />
       <Navbar />

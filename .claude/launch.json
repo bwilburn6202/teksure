@@ -2,16 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "TekSure Dev",
-      "runtimeExecutable": "bun",
+      "name": "teksure-dev",
+      "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 8080
-    },
-    {
-      "name": "TekSure Preview",
-      "runtimeExecutable": "bun",
-      "runtimeArgs": ["run", "preview"],
-      "port": 4173
+      "port": 5173
     }
   ]
 }

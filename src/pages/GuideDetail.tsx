@@ -146,7 +146,7 @@ const ProTip = ({ children }: { children: React.ReactNode }) => (
   <div className="mt-4 rounded-lg border border-amber-300/40 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-700/40 px-4 py-3 flex items-start gap-3">
     <Lightbulb className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
     <div>
-      <p className="text-xs font-bold text-amber-700 dark:text-amber-400 mb-0.5">Pro Tip</p>
+      <p className="text-xs font-bold text-amber-700 dark:text-amber-400 mb-0.5">Quick Tip</p>
       <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>

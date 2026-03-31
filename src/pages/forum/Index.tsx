@@ -54,7 +54,8 @@ export default function ForumIndex() {
       let query = supabase
         .from('forum_threads' as any)
         .select('*')
-        .order('updated_at', { ascending: false });
+        .order('updated_at', { ascending: false })
+        .limit(50);
 
       if (activeCategory !== 'all') {
         query = query.eq('category', activeCategory);

@@ -3,7 +3,7 @@ export type RoadmapStatus = 'live' | 'in-progress' | 'planned' | 'exploring';
 export type RoadmapCategory =
   | 'Guides' | 'Search' | 'AI' | 'UX' | 'SEO'
   | 'Accessibility' | 'Community' | 'Support'
-  | 'Tools' | 'Safety' | 'Content' | 'Gamification';
+  | 'Tools' | 'Safety' | 'Content' | 'Gamification' | 'Brand';
 
 export interface RoadmapItem {
   title: string;
@@ -154,6 +154,12 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Printer Troubleshooter Tool', description: 'Interactive diagnostic wizard for printer problems — guided step-by-step like the WiFi Troubleshooter.', status: 'planned', category: 'Tools' },
   { title: 'Spanish Language Content', description: 'Translate the top 30 most-visited guides into Spanish to reach 42M+ Spanish speakers in the US.', status: 'planned', category: 'Accessibility' },
   { title: 'Gift a Session Flow', description: 'Let adult children buy a technician session as a gift for a parent — with personalized message and easy redemption.', status: 'planned', category: 'Support' },
+  // ── BRAND GAPS ───────────────────────────────────────────────
+  { title: 'Brand Voice Guidelines', description: 'A living document covering tone of voice, approved taglines, terminology rules, and content format standards so every piece of TekSure content sounds consistent.', status: 'planned', category: 'Brand' },
+  { title: 'Logo Usage Spec', description: 'Documented rules for the TekSure logo: clearspace, minimum size, approved colour variations for light and dark backgrounds, and prohibited uses.', status: 'planned', category: 'Brand' },
+  { title: 'Newsletter & Email Template Library', description: 'Reusable branded email templates for the weekly tip digest, welcome email, scam alerts, and transactional messages — keeping every email on-brand and consistent.', status: 'planned', category: 'Brand' },
+  { title: 'Audience Persona Documents', description: 'Lightweight profiles for TekSure\'s primary audience (seniors 60+) and secondary audience (adults new to a device or OS) to anchor content decisions and tone.', status: 'planned', category: 'Brand' },
+  { title: 'Competitive Positioning Doc', description: 'A one-page positioning statement covering who TekSure is for, what makes it different from generic Google searches and YouTube, and the emotional job-to-be-done for the target audience.', status: 'planned', category: 'Brand' },
   { title: 'B2B / Senior Living Partnerships', description: 'License TekSure guides, tools, and booking system to senior living communities, libraries, and health plans.', status: 'exploring', category: 'Community' },
   { title: 'Live Webinar Series', description: 'Weekly live workshops covering trending topics — inspired by the most popular formats in the senior tech space.', status: 'exploring', category: 'Community' },
   { title: 'Peer Teaching Program', description: 'Let experienced TekSure members volunteer to help new users — a peer-teaching model proven successful at scale.', status: 'exploring', category: 'Community' },

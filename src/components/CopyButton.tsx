@@ -35,7 +35,7 @@ export function CopyButton({ text, className = '' }: CopyButtonProps) {
         <Button
           variant="ghost"
           size="icon"
-          className={`h-7 w-7 min-h-0 shrink-0 ${className}`}
+          className={`h-10 w-10 shrink-0 ${className}`}
           onClick={handleCopy}
           aria-label="Copy to clipboard"
         >

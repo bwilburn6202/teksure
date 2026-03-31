@@ -44,6 +44,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
             guide.difficulty === 'Beginner' ? 'text-green-600' :
             guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
           }`}>
+            {guide.difficulty === 'Beginner' ? '● ' : guide.difficulty === 'Intermediate' ? '●● ' : '●●● '}
             {guide.difficulty}
           </span>
         )}

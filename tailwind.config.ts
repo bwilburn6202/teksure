@@ -58,7 +58,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         teksure: {
-          teal: "hsl(var(--teksure-teal) / <alpha-value>)",
+          blue: "hsl(var(--teksure-blue) / <alpha-value>)",
           success: "hsl(var(--teksure-success) / <alpha-value>)",
           warning: "hsl(var(--teksure-warning) / <alpha-value>)",
           info: "hsl(var(--teksure-info) / <alpha-value>)",

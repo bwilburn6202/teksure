@@ -27,7 +27,7 @@ export function DarkModeToggle() {
           variant="ghost"
           size="icon"
           onClick={() => setDark(d => !d)}
-          className="h-9 w-9 min-h-0"
+          className="h-11 w-11"
           aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
         >
           {dark ? (

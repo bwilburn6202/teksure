@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -57,6 +57,8 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'how-to': 'How-To Guides',
   'app-guides': 'Apps & Services',
   'health-tech': 'Health & Wellness Tech',
+  'phone-guides': 'Phone & Tablet',
+  'social-media': 'Social Media',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -69,6 +71,8 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'how-to': 'Step-by-step guides for everyday tasks on any device',
   'app-guides': 'Step-by-step walkthroughs for popular apps and online services — from Instagram to Instacart',
   'health-tech': 'Use technology to manage your health — patient portals, fitness trackers, telehealth, and medication apps',
+  'phone-guides': 'iPhone and Android guides — setup, storage, apps, calls, and everyday tasks',
+  'social-media': 'Plain-English guides to Facebook, WhatsApp, Instagram, and YouTube',
 };
 
 export const guides: Guide[] = [
@@ -2255,19 +2259,64 @@ export const guides: Guide[] = [
   // Beginner (1-25)
   {
     slug: 'what-is-ai',
-    title: 'What Is Artificial Intelligence? A Simple Explanation',
-    excerpt: 'Understand what AI is, how it works at a high level, and why it matters in everyday life.',
+    title: 'What Is AI? A Plain-English Explanation for Everyday People',
+    excerpt: 'Artificial intelligence is everywhere — but what actually is it? This beginner-friendly guide explains AI, how it works, and what it means for you.',
     category: 'ai-guides',
-    tags: ['beginner', 'ai', 'introduction', 'basics'],
-    readTime: '4 min',
+    tags: ['beginner', 'ai', 'introduction', 'basics', 'what-is-ai', 'artificial-intelligence', 'machine-learning'],
+    readTime: '8 min',
     thumbnailEmoji: '🤖',
-    publishedAt: '2026-02-20',
-    steps: [
-      { title: 'Define AI in plain terms', content: 'Artificial intelligence is software that can learn from data and make decisions or predictions — like a smart autocomplete for complex tasks.' },
-      { title: 'Understand machine learning', content: 'Machine learning is a subset of AI where programs improve by being trained on examples rather than being explicitly programmed for every scenario.' },
-      { title: 'See AI in daily life', content: 'You already use AI: spam filters, Netflix recommendations, voice assistants, and autocorrect are all powered by AI.' },
-      { title: 'Know the limitations', content: 'AI is not sentient. It excels at pattern recognition but can be wrong, biased, or confidently incorrect. Always verify important outputs.' },
-    ],
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What is AI in simple terms?**
+Artificial intelligence (AI) is software that can learn from information and make decisions — rather than just following a fixed set of instructions. Think of it as the difference between a calculator (which only does what you tell it) and a smart assistant (which can understand your question and figure out the answer).
+
+AI is not a robot. It is not a single product. It is a broad term for technology that can process information, spot patterns, and make predictions in ways that seem "intelligent."
+
+**You already use AI every day**
+AI is not futuristic — you are almost certainly using it right now:
+- **Spam filters** in your email learn which messages are junk
+- **Netflix and YouTube** recommend shows based on what you have watched
+- **Voice assistants** like Siri, Alexa, and Google Assistant understand your spoken words
+- **Autocorrect** on your phone predicts what you are trying to type
+- **Sat navs** calculate the fastest route by analysing live traffic
+- **Online banking** flags unusual transactions to protect your account
+
+**How does AI actually work?**
+Most modern AI works through "machine learning." Instead of a programmer writing rules for every possible situation, the software is trained on huge amounts of data and learns to spot patterns itself.
+
+For example: to teach AI to recognise cats in photos, you show it millions of photos labelled "cat" and "not cat." The AI figures out the patterns — pointy ears, whiskers, fur — on its own. Nobody writes a rule that says "look for whiskers."
+
+This is why AI gets better over time. The more data it processes, the more accurate it becomes.
+
+**What is generative AI?**
+Generative AI is a newer type of AI that can create new content — text, images, music, even video. ChatGPT, Google Gemini, and Claude are all generative AI tools. You type a question or instruction, and the AI generates a response.
+
+Generative AI works by predicting the most likely next word (or pixel, or note) based on patterns it learned from vast amounts of text, images, or audio during training.
+
+**What is ChatGPT?**
+ChatGPT is a specific AI tool made by a company called OpenAI. It is a chatbot — you type questions or instructions, and it responds in natural language. It can write emails, explain concepts, summarise documents, help with homework, draft letters, and much more. There are other similar tools including Google Gemini, Microsoft Copilot, and Claude by Anthropic.
+
+**What AI cannot do**
+AI is not perfect, and understanding its limits is just as important as knowing its strengths:
+- AI is **not sentient** — it does not think, feel, or understand. It processes patterns
+- AI can be **confidently wrong** — it sometimes states false information as though it were true (called "hallucination")
+- AI can be **biased** — if the training data contains biases, the AI may reproduce them
+- AI **does not know your personal situation** unless you tell it
+- AI should **never replace professional advice** for medical, legal, or financial decisions
+
+Always verify important information from AI, just as you would double-check something you read online.
+
+**Is AI safe to use?**
+For everyday tasks — writing emails, getting recipe ideas, learning new things — AI tools are generally safe to use. However:
+- Do not share sensitive personal information (bank details, passwords, medical records) with AI chatbots
+- Be cautious of AI-generated scams — scammers now use AI to write more convincing phishing emails
+- Remember that anything you type into an AI chatbot may be stored and used to train future models
+
+**Where to start with AI**
+If you are new to AI, the easiest way to try it is to visit ChatGPT, Google Gemini, or Claude in your web browser. Type a simple question like "Explain how a dishwasher works" and see what it says. It is free to try and you do not need to install anything.
+
+**Learn more**
+We have over 80 AI guides on TekSure covering everything from writing your first AI prompt to using AI for travel planning, email writing, photo editing, and more. Browse our AI Guides section to continue learning.`,
   },
   {
     slug: 'getting-started-with-chatgpt',
@@ -5487,5 +5536,1943 @@ export const guides: Guide[] = [
       { title: 'Book and pay', content: 'Tap "Reserve" on the listing you want. Review the price breakdown (nightly rate + cleaning fee + service fee + taxes). Some hosts offer weekly or monthly discounts for longer stays. Enter your payment information and tap "Confirm and Pay." You can message the host before or after booking with any questions about the space.', screenshotDesc: 'Airbnb booking confirmation screen showing price breakdown: 3 nights at $95, cleaning fee $50, service fee $42, total $377.', warning: 'Always book through Airbnb\'s platform — never pay a host directly outside the app. Airbnb\'s payment protection only covers official bookings.' },
       { title: 'During your stay', content: 'The host will send check-in instructions (usually a day before) through the Airbnb app — this may include a door code, lockbox combination, or key pickup location. If anything is wrong (cleanliness issue, broken amenity, etc.), message the host immediately through the app. If the host can\'t resolve it, contact Airbnb support. After checkout, leave an honest review — it helps future guests.', screenshotDesc: 'Airbnb trip details screen showing check-in instructions, host contact button, and property address with a map.' },
     ],
+  },
+
+  // ═══════════════════════════════════════════
+  // REDDIT COMMUNITY TIPS (scraped 2026-03-30)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'anker-warranty-expired-future-date-power-bank-dead',
+    title: `Anker Warranty Confusion: What to Do When Your Device Won't Turn On`,
+    excerpt: `Anker sent a warranty expiration notice for a future date while the device is completely dead. Here's how to handle warranty claims for unresponsive electronics.`,
+    category: 'tips-tricks',
+    tags: ['warranty', 'electronics', 'consumer-rights'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔋',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `If your Anker power bank won't turn on and you received a warranty expiration notice showing a future date, that notice is likely an error. Contact Anker support directly — a device that is completely dead cannot perform the suggested USB-C reset. Document the issue with photos and keep your proof of purchase. If the manufacturer won't honor the warranty, dispute the charge with your credit card company, as many cards offer purchase protection.`,
+  },
+  {
+    slug: 'random-sounds-chinese-voices-from-laptop-what-to-do',
+    title: `Hearing Random Sounds or Voices From Your Laptop? Here's What To Do`,
+    excerpt: `Unexplained audio from an idle laptop can be a sign of malware or a compromised app. Here's how to investigate and secure your machine.`,
+    category: 'safety-guides',
+    tags: ['malware', 'security', 'windows'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `If you hear unexplained sounds or voices from your Windows laptop while it is idle, act quickly. Open Task Manager (Ctrl+Shift+Esc) and look for unfamiliar processes — especially ones using high CPU or network activity. End any suspicious processes. Temporarily disable Wi-Fi to see if the audio stops, which can confirm a network-based source. Run a full scan with Malwarebytes (free) and Windows Defender. If the issue persists, consider resetting Windows from Settings > Recovery.`,
+  },
+  {
+    slug: 'how-to-turn-off-google-ai-overviews-in-search',
+    title: `How to Turn Off Google AI Overviews in Search Results`,
+    excerpt: `Google's AI summaries can hide the actual search results you're looking for. Here's how to get back to traditional results.`,
+    category: 'tips-tricks',
+    tags: ['google', 'browser', 'search'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔍',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Google's AI Overview feature summarizes results at the top of the page, which can push down the actual links you want. To bypass it: after searching, click "More" under the search bar and select "Web" to see traditional results only. You can also try adding "-ai" or "verbatim" to your search, or switch to a search engine like DuckDuckGo that doesn't use AI summaries by default.`,
+  },
+  {
+    slug: 'free-file-converter-websites-track-you-with-hundreds-of-cookies',
+    title: `Free File Converter Websites Track You With Hundreds of Cookies`,
+    excerpt: `Sites like iLovePDF can set over 600 tracking cookies from hundreds of domains the moment you upload a file. Here's what to use instead.`,
+    category: 'safety-guides',
+    tags: ['privacy', 'tracking', 'cookies'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Free file converter websites can set hundreds of tracking cookies from dozens of advertising networks when you upload a single document. Your files may also be stored on their servers. Safer alternatives: use Microsoft Word or Google Docs to convert files (File > Save As or Download As), or use LibreOffice — a free, offline app that converts documents without uploading anything. If you must use a web converter, use a private/incognito window and clear cookies afterward.`,
+  },
+  {
+    slug: 'your-phone-number-is-listed-on-data-broker-websites',
+    title: `Your Phone Number Is Probably Listed on Hundreds of Data Broker Websites`,
+    excerpt: `Data broker sites collect and sell your personal info — including your phone number — to anyone who pays. Here's how to opt out.`,
+    category: 'safety-guides',
+    tags: ['privacy', 'data-brokers', 'personal-info'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Data broker websites like Spokeo, Whitepages, and BeenVerified collect your name, phone number, address, and other personal details and sell them to marketers or anyone willing to pay. To remove your info: search your name on each site and use their opt-out forms (usually found under Privacy or Do Not Sell My Info). This process can be tedious since there are hundreds of brokers — services like DeleteMe ($129/year) automate it for you. Removing your data reduces spam calls and protects against social engineering attacks.`,
+  },
+  {
+    slug: 'your-phone-tracks-location-even-when-location-services-are-off',
+    title: `Your Phone Can Still Track Your Location Even With Location Services Off`,
+    excerpt: `Turning off Location Services doesn't make your phone fully invisible. Here's what still tracks you and what you can do about it.`,
+    category: 'safety-guides',
+    tags: ['privacy', 'location', 'tracking'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Even with Location Services turned off, your phone can still be tracked via Wi-Fi network scanning, Bluetooth signals, cell tower triangulation, and apps that have been granted location access at the system level. For stronger privacy: turn on Airplane Mode (disables all radios), disable Wi-Fi and Bluetooth separately, and review which apps have location permission (Settings > Privacy > Location Services on iPhone, or Settings > Location on Android) — set non-essential apps to "Never" or "Only While Using."`,
+  },
+  {
+    slug: 'reset-your-smartphone-ad-tracking-id-for-privacy',
+    title: `How to Reset Your Smartphone's Ad Tracking ID for More Privacy`,
+    excerpt: `Your phone has a unique advertising ID that follows you across apps. You can reset it — or turn it off entirely — in just a few taps.`,
+    category: 'safety-guides',
+    tags: ['privacy', 'advertising', 'android', 'iphone'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Every smartphone has an advertising ID (IDFA on iPhone, GAID on Android) that advertisers use to track your behavior across apps and target you with ads. On iPhone: go to Settings > Privacy & Security > Tracking and turn off "Allow Apps to Request to Track." On Android: go to Settings > Privacy > Ads and tap "Delete advertising ID." Resetting or deleting this ID breaks the trail of data advertisers have built on you. You can also reset it periodically rather than deleting — reinstalling apps also resets it.`,
+  },
+  {
+    slug: 'android-battery-drain-background-apps-how-to-fix',
+    title: `Why Your Android Phone Drains Battery Even When Apps Are Restricted`,
+    excerpt: `You restricted background activity but your battery still drains. Here's why — and the settings that actually stop it.`,
+    category: 'how-to',
+    tags: ['android', 'battery', 'devices'],
+    readTime: '1 min read',
+    thumbnailEmoji: '🔋',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `Even with background restrictions enabled, some Android apps continue draining battery through push notifications, system-level permissions, and manufacturer-specific wake locks. To dig deeper: go to Settings > Battery > Battery Usage and look for apps consuming power disproportionately. For each culprit, go to Settings > Apps > [App Name] > Battery and set it to "Restricted." Also check Settings > Battery > Background App Optimization. Some manufacturers (Samsung, Xiaomi) have aggressive battery management — search for your phone model plus "battery optimization" for model-specific steps.`,
+  },
+  {
+    slug: 'how-to-stop-app-downloads-on-android-for-dementia-caregiver',
+    title: `How to Lock Down App Downloads on Android for a Family Member With Dementia`,
+    excerpt: `A step-by-step guide for caregivers to prevent unwanted app installs and purchases on an Android phone without needing a PIN every time.`,
+    category: 'how-to',
+    tags: ['android', 'parental-controls', 'accessibility'],
+    readTime: '1 min read',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-03-30',
+    difficulty: 'Beginner',
+    body: `To prevent app downloads on an Android device for someone with dementia: open the Google Play Store, tap the profile icon > Settings > Authentication > Require authentication for purchases, and set it to "For all purchases." To go further, enable Family Link (even for adults) which gives a caregiver full control over app approvals. Alternatively, go to Settings > Digital Wellbeing > App Timers or use a third-party app lock. You can also disable the Play Store entirely via Settings > Apps > Google Play Store > Disable, though this is harder to reverse.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // PHONE & TABLET GUIDES (18 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'how-to-set-up-a-new-iphone',
+    title: 'How to Set Up a New iPhone',
+    excerpt: 'Got a new iPhone? This guide walks you through every step from turning it on to signing in with your Apple ID.',
+    category: 'phone-guides',
+    tags: ['iphone', 'setup', 'apple', 'beginner', 'apple-id'],
+    readTime: '6 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Turn on your iPhone**
+Press and hold the side button until the Apple logo appears. Place the phone on a flat surface and wait for the "Hello" screen.
+
+**Choose your language and region**
+Swipe up (or press the Home button on older models) and follow the prompts to select your language and country.
+
+**Connect to Wi-Fi**
+Select your home Wi-Fi network from the list and enter the password. A strong connection speeds up the rest of setup.
+
+**Set up Face ID or Touch ID**
+Follow the on-screen instructions to scan your face or fingerprint. This is how you unlock your phone securely without typing a password every time.
+
+**Sign in with your Apple ID**
+Enter your Apple ID email and password. If you don't have one, tap "Forgot password or don't have an Apple ID?" to create one for free. Your Apple ID links to the App Store, iCloud backup, and iMessage.
+
+**Restore from a backup or start fresh**
+- If you have an old iPhone, choose "Transfer from iPhone" or "Restore from iCloud Backup" to move your apps and photos across.
+- If this is your first iPhone, choose "Set Up as New iPhone."
+
+**Set up Siri and other features**
+Follow the prompts to enable Siri (Apple's voice assistant), Screen Time (parental controls), and Location Services. You can skip any of these and change them later.
+
+**Update to the latest iOS**
+Go to Settings > General > Software Update. If an update is available, tap Download and Install. This keeps your phone secure.`,
+  },
+  {
+    slug: 'how-to-set-up-a-new-android-phone',
+    title: 'How to Set Up a New Android Phone',
+    excerpt: 'A beginner-friendly walkthrough for setting up a new Android phone from scratch — including your Google account.',
+    category: 'phone-guides',
+    tags: ['android', 'setup', 'google', 'beginner', 'google-account'],
+    readTime: '6 min',
+    thumbnailEmoji: '🤖',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Turn on your Android phone**
+Press and hold the power button (usually on the right side) until the screen lights up. Wait for the welcome screen to appear.
+
+**Select language and connect to Wi-Fi**
+Choose your preferred language, then select your home Wi-Fi network and enter the password.
+
+**Sign in with your Google account**
+Enter your Gmail address and password. Your Google account connects you to the Play Store, Google Photos, Gmail, and Google Drive. If you don't have a Gmail account, tap "Create account" — it's free.
+
+**Transfer from your old phone (optional)**
+You can transfer contacts, apps, and photos from your old Android phone using a cable or wirelessly. If this is your first smartphone, tap "Don't copy."
+
+**Set up a screen lock**
+Choose a PIN, pattern, or fingerprint/face unlock. A PIN of 6+ digits is recommended. Avoid patterns as they're easier to guess.
+
+**Adjust display and accessibility settings**
+Go to Settings > Display to adjust text size and brightness. For larger text, Settings > Accessibility > Font Size is very helpful.
+
+**Check for software updates**
+Go to Settings > System > System Update (or Software Update). Install any available updates to keep your phone secure and running well.`,
+  },
+  {
+    slug: 'how-to-move-contacts-to-a-new-phone',
+    title: 'How to Move Your Contacts to a New Phone',
+    excerpt: "Don't lose your contacts when switching phones. Here's how to transfer them to iPhone or Android in minutes.",
+    category: 'phone-guides',
+    tags: ['contacts', 'transfer', 'iphone', 'android', 'backup'],
+    readTime: '4 min',
+    thumbnailEmoji: '👥',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Option 1: Use iCloud (iPhone to iPhone)**
+On your old iPhone, go to Settings > [Your Name] > iCloud and make sure Contacts is toggled on. Your contacts will sync to iCloud. Sign in with the same Apple ID on your new iPhone and they'll appear automatically.
+
+**Option 2: Use Google (Android to Android)**
+On your old phone, go to Settings > Accounts > Google and enable Contacts sync. Sign in with the same Google account on your new phone and contacts will sync within minutes.
+
+**Option 3: iPhone to Android (or vice versa)**
+The easiest way is to export your contacts as a .vcf file. On iPhone: go to iCloud.com on a computer, sign in, open Contacts, select all (Ctrl+A or Cmd+A), then export. Import the .vcf file into your Google account at contacts.google.com.
+
+**Option 4: Your SIM card (limited)**
+Older phones store a small number of contacts on the SIM card. On Android: Contacts > Import > SIM card. Note: SIM cards hold fewer than 250 contacts and don't store phone numbers longer than 20 digits.
+
+**After transferring**
+Open the Contacts app on your new phone and check that everyone is there. If contacts appear duplicated, most phones have a "Merge duplicates" option in the Contacts settings.`,
+  },
+  {
+    slug: 'how-to-take-a-screenshot-iphone',
+    title: 'How to Take a Screenshot on iPhone',
+    excerpt: 'Capture anything on your iPhone screen in one second — useful for saving receipts, directions, or photos of conversations.',
+    category: 'phone-guides',
+    tags: ['iphone', 'screenshot', 'tips', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**iPhone with Face ID (iPhone X and newer)**
+Press the Side button and Volume Up button at the same time, then quickly release both. You'll see a white flash and hear a camera click sound. A small thumbnail appears in the bottom-left corner — tap it to edit or share, or swipe it away to save it automatically to Photos.
+
+**iPhone with Home button (iPhone 8 and older)**
+Press the Side (or Top) button and the Home button at the same time, then quickly release. The same white flash and thumbnail will appear.
+
+**Finding your screenshot**
+Screenshots are saved to the Photos app, in the Screenshots album. Open Photos > Albums > Screenshots to find them all in one place.
+
+**Screenshot of a long page (Full Page)**
+After taking a screenshot, tap the thumbnail and then tap "Full Page" at the top. This captures the entire webpage or document — useful for long emails or articles.
+
+**Tip: use Assistive Touch**
+If the buttons are hard to press, go to Settings > Accessibility > Touch > Assistive Touch > turn it on. You can then take screenshots by tapping the floating button on screen.`,
+  },
+  {
+    slug: 'how-to-take-a-screenshot-android',
+    title: 'How to Take a Screenshot on Android',
+    excerpt: 'Save anything on your Android screen — receipts, maps, messages — with this simple two-button shortcut.',
+    category: 'phone-guides',
+    tags: ['android', 'screenshot', 'tips', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**The universal method**
+Press the Power button and Volume Down button at the same time and hold for one second, then release. You'll see the screen flash and a screenshot notification in the notification bar.
+
+**Swipe method (Samsung Galaxy)**
+On Samsung phones, go to Settings > Advanced Features > Motions and Gestures and enable "Palm swipe to capture." Then swipe the edge of your hand across the screen from right to left (or left to right) to take a screenshot.
+
+**Three-finger swipe (some Android phones)**
+On phones from Huawei, OnePlus, and some others: swipe three fingers down the screen simultaneously.
+
+**Finding your screenshot**
+Screenshots are saved to the Photos or Gallery app, usually in a Screenshots folder. You can also pull down the notification bar and tap the screenshot notification to view it immediately.
+
+**Scrolling screenshot (long page)**
+Many Android phones offer a "Scroll capture" or "Extended screenshot" option that appears just after you take a screenshot. Tap it to keep scrolling and capture the full page.`,
+  },
+  {
+    slug: 'make-text-bigger-iphone',
+    title: 'How to Make Text Bigger on iPhone',
+    excerpt: 'Struggling to read small text on your iPhone? Increase the font size in seconds from Settings.',
+    category: 'phone-guides',
+    tags: ['iphone', 'accessibility', 'text-size', 'font', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🔤',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Increase text size system-wide**
+Go to Settings > Display & Brightness > Text Size. Drag the slider to the right to make all text larger. This affects most apps on your iPhone immediately.
+
+**Enable Larger Accessibility Sizes**
+For even bigger text, go to Settings > Accessibility > Display & Text Size > Larger Text and turn on "Larger Accessibility Sizes." Then drag the slider to the largest size you're comfortable with.
+
+**Make everything bigger (not just text)**
+Settings > Accessibility > Display & Text Size > Display Zoom lets you choose "Larger Text" which zooms the entire interface, not just fonts.
+
+**Zoom in on any part of the screen**
+Settings > Accessibility > Zoom: turn this on, then double-tap with three fingers to zoom into any part of any screen. Drag with three fingers to move around.
+
+**Make text bold**
+Settings > Display & Brightness > Bold Text. Bold text is easier to read for many people, especially in low light.`,
+  },
+  {
+    slug: 'make-text-bigger-android',
+    title: 'How to Make Text Bigger on Android',
+    excerpt: 'Increase font size on your Android phone so text is easier to read — takes less than a minute.',
+    category: 'phone-guides',
+    tags: ['android', 'accessibility', 'text-size', 'font', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🔤',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Standard method**
+Go to Settings > Display > Font Size and Style (or just Settings > Accessibility > Font Size on some phones). Drag the slider to increase the text size. A preview shows what it will look like before you confirm.
+
+**Samsung Galaxy**
+Settings > Display > Font Size and Style — you can also change the font style here.
+
+**Pixel phones (Google)**
+Settings > Accessibility > Text and Display > Font Size — drag the slider. You can preview the change in real time.
+
+**Make everything larger (not just text)**
+Settings > Accessibility > Display Size (or Screen Zoom) increases the entire interface, including icons and images.
+
+**Magnification**
+Settings > Accessibility > Magnification: turn this on. You can then triple-tap the screen to zoom in on anything. Very useful for menus, maps, and small print.`,
+  },
+  {
+    slug: 'free-up-storage-iphone',
+    title: 'How to Free Up Space on Your iPhone',
+    excerpt: 'Getting the "iPhone storage is full" warning? Here are the quickest ways to free up space without deleting what matters.',
+    category: 'phone-guides',
+    tags: ['iphone', 'storage', 'space', 'photos', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '💾',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Check what's using storage**
+Go to Settings > General > iPhone Storage. You'll see a breakdown of what's taking up space — usually Photos, Apps, and iOS itself are the biggest users.
+
+**Offload unused apps**
+Scroll down the storage screen to see your apps listed by size. Tap any app you haven't used recently and choose "Offload App." This removes the app but keeps its data, so you can reinstall it later without losing your progress or settings.
+
+**Clear Safari cache**
+Go to Settings > Safari > Clear History and Website Data. This can free several hundred megabytes without deleting any of your photos or files.
+
+**Delete old text messages and attachments**
+Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments" to delete old videos and photos sent in iMessage that you no longer need.
+
+**Enable iCloud Photos**
+Go to Settings > Photos and turn on iCloud Photos. Then enable "Optimise iPhone Storage." This keeps full-resolution photos in iCloud and stores smaller versions on your phone, freeing up lots of space.
+
+**Delete duplicate photos**
+Open the Photos app, go to Albums > Duplicates. Tap Merge to remove duplicates automatically (available in iOS 16 and later).`,
+  },
+  {
+    slug: 'free-up-storage-android',
+    title: 'How to Free Up Space on Your Android Phone',
+    excerpt: 'Running out of storage? Here are simple steps to clear space on your Android without losing important photos or apps.',
+    category: 'phone-guides',
+    tags: ['android', 'storage', 'space', 'photos', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '💾',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Check storage usage**
+Go to Settings > Storage (or Settings > Device Care > Storage on Samsung). You'll see a bar graph showing what categories are using the most space.
+
+**Use Google Files to clean up**
+Download the free "Files by Google" app from the Play Store if you don't have it. It automatically identifies junk files, duplicate photos, large files, and unused apps, and helps you delete them safely.
+
+**Clear app cache**
+Go to Settings > Apps > [select an app] > Storage > Clear Cache. Doing this for your browser, social media apps, and streaming apps can free hundreds of megabytes. Note: this doesn't delete your login or personal data.
+
+**Move photos to Google Photos**
+Install Google Photos and turn on Backup. Once your photos are backed up to Google's servers, you can tap "Free up space" to remove local copies from your phone.
+
+**Delete downloaded files**
+Open the Files app and look in the Downloads folder. It often contains old documents, APK files, and downloads you no longer need.
+
+**Use a microSD card (if your phone supports it)**
+Many Android phones have a microSD card slot. Insert a card (64GB or 128GB is inexpensive) and go to Settings > Storage > SD card to move apps or photos to it.`,
+  },
+  {
+    slug: 'backup-iphone-to-icloud',
+    title: 'How to Back Up Your iPhone to iCloud',
+    excerpt: 'Backing up your iPhone means your photos and contacts are safe even if your phone is lost or broken. Here\'s how.',
+    category: 'phone-guides',
+    tags: ['iphone', 'backup', 'icloud', 'photos', 'safety'],
+    readTime: '3 min',
+    thumbnailEmoji: '☁️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What does a backup include?**
+An iCloud backup saves your photos, contacts, messages, app data, settings, and more. It doesn't include apps themselves (those can be re-downloaded for free) or content already stored in iCloud like iCloud Photos.
+
+**Turn on iCloud Backup**
+Go to Settings > [Your Name] > iCloud > iCloud Backup and toggle it on. Then tap "Back Up Now" to do an immediate backup.
+
+**Automatic backups**
+Your iPhone backs up automatically every night when it's connected to Wi-Fi, plugged into power, and the screen is locked. Just plug it in at night and it happens on its own.
+
+**Check your last backup date**
+Go to Settings > [Your Name] > iCloud > iCloud Backup. You'll see the date and time of your last backup.
+
+**Check available iCloud storage**
+Apple gives you 5GB of free iCloud storage. Go to Settings > [Your Name] > iCloud > Manage Account Storage to see how much you've used. If it's full, you can buy more storage (50GB costs about £0.79/month) or selectively exclude large apps from backup.
+
+**Restore from a backup**
+If you get a new phone, sign in with your Apple ID and choose "Restore from iCloud Backup" during setup. Your phone will be restored to exactly how it was.`,
+  },
+  {
+    slug: 'backup-android-to-google',
+    title: 'How to Back Up Your Android Phone to Google',
+    excerpt: 'Keep your contacts, photos, and app data safe with automatic Google backups — free and easy to set up.',
+    category: 'phone-guides',
+    tags: ['android', 'backup', 'google', 'photos', 'safety'],
+    readTime: '3 min',
+    thumbnailEmoji: '☁️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Enable Google Backup**
+Go to Settings > System > Backup (the exact path varies slightly by phone brand). Turn on "Back up to Google Drive." This saves contacts, app data, call history, SMS messages, and settings.
+
+**Back up your photos with Google Photos**
+Install or open the Google Photos app and sign in with your Google account. Tap your profile photo > Photos Settings > Backup and turn it on. Choose "Storage saver" quality for free unlimited backups, or "Original quality" (counts toward your 15GB of free storage).
+
+**Check backup status**
+Open Google Photos, tap your profile photo > Photos Settings > Backup. You'll see if backup is "On" and when photos were last backed up.
+
+**What's backed up automatically**
+- Contacts: synced to Google Contacts at contacts.google.com
+- Photos & videos: Google Photos (when backup is enabled)
+- App data, Wi-Fi passwords, call history: via Google Account backup
+- SMS messages: some Android versions back these up; third-party apps like SMS Backup & Restore can help if yours doesn't
+
+**Restore on a new phone**
+When setting up a new Android phone, sign in with your Google account and choose "Restore from backup." Your contacts, apps, and settings will transfer over automatically.`,
+  },
+  {
+    slug: 'download-apps-app-store-iphone',
+    title: 'How to Download Apps on Your iPhone',
+    excerpt: 'The App Store has hundreds of thousands of free apps. Here\'s how to find and install the ones you want.',
+    category: 'phone-guides',
+    tags: ['iphone', 'apps', 'app-store', 'download', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open the App Store**
+Tap the blue App Store icon on your home screen (it looks like a white "A" made of sticks on a blue background). If you can't find it, swipe down from the middle of your screen and type "App Store" in the search bar.
+
+**Search for an app**
+Tap the Search icon at the bottom of the App Store. Type the name of the app you're looking for (e.g., "WhatsApp", "BBC iPlayer", "Zoom"). Tap Search on your keyboard.
+
+**Download a free app**
+Tap the app from the search results to see its page. Tap the "Get" button (blue). You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.
+
+**Download a paid app**
+The price button shows the cost (e.g., "£1.99"). Tap it to purchase. You'll be charged to the payment method linked to your Apple ID.
+
+**Update your apps**
+Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.
+
+**Delete an app**
+Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps any time at no charge.`,
+  },
+  {
+    slug: 'download-apps-google-play-android',
+    title: 'How to Download Apps on Your Android Phone',
+    excerpt: 'The Google Play Store has millions of apps — here\'s how to find and install any app safely.',
+    category: 'phone-guides',
+    tags: ['android', 'apps', 'google-play', 'download', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open the Google Play Store**
+Tap the Play Store icon (a colourful triangle on a white background) on your home screen or app drawer. If you can't find it, swipe up to open the app drawer and search for "Play Store."
+
+**Search for an app**
+Tap the search bar at the top and type the name of the app you want (e.g., "WhatsApp", "Netflix", "Zoom"). Tap the search/enter key on your keyboard.
+
+**Install a free app**
+Tap the app in the results. Check the reviews (aim for 4 stars or above) and the number of downloads. Tap "Install." The app will download and appear on your home screen or app drawer.
+
+**Install a paid app**
+Tap the price button. You'll need to confirm payment using your Google account's linked payment method or Google Play balance.
+
+**Manage your apps**
+Tap your profile photo in the top right > Manage apps & device > Updates available to see which apps have updates. Tap "Update all" regularly.
+
+**Uninstall an app**
+Press and hold the app icon, then drag it to "Uninstall" at the top of the screen, or go to Play Store > profile > Manage apps & device > find the app > Uninstall.`,
+  },
+  {
+    slug: 'block-spam-calls-iphone',
+    title: 'How to Block Spam and Nuisance Calls on iPhone',
+    excerpt: 'Tired of constant spam calls? Here are several ways to block unwanted callers and reduce nuisance calls on your iPhone.',
+    category: 'phone-guides',
+    tags: ['iphone', 'spam', 'calls', 'block', 'safety'],
+    readTime: '3 min',
+    thumbnailEmoji: '🚫',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Block a specific number**
+Open the Phone app, go to Recents, and tap the (i) icon next to the number you want to block. Scroll down and tap "Block this Caller." They'll go straight to voicemail.
+
+**Silence unknown callers**
+Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts will be silenced and sent to voicemail. This dramatically reduces spam calls.
+
+**Register with the Telephone Preference Service (UK)**
+Visit tpsonline.org.uk and register your mobile number for free. Companies are legally required to remove you from their call lists within 28 days.
+
+**Report spam calls**
+In the Phone app, go to Recents and tap the (i) next to the number. Scroll down and tap "Report as Spam." Apple uses this data to improve spam detection.
+
+**Use Truecaller or Hiya (free apps)**
+These apps identify spam callers before you even answer. Download from the App Store and enable them as a caller ID service in Settings > Phone > Call Blocking & Identification.`,
+  },
+  {
+    slug: 'block-spam-calls-android',
+    title: 'How to Block Spam Calls on Android',
+    excerpt: 'Stop nuisance callers in their tracks with Android\'s built-in call blocking and Google\'s spam protection.',
+    category: 'phone-guides',
+    tags: ['android', 'spam', 'calls', 'block', 'safety'],
+    readTime: '3 min',
+    thumbnailEmoji: '🚫',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Block a specific number**
+Open the Phone app, tap Recents, press and hold the number you want to block (or tap the three-dot menu next to it), then tap "Block number." Future calls from this number will be declined automatically.
+
+**Enable Google spam protection**
+Open the Phone app, tap the three-dot menu (top right) > Settings > Caller ID & Spam > turn on "Filter spam calls." Google will automatically screen calls that look like spam.
+
+**Screen calls with Google Assistant**
+On Pixel phones: when an unknown number calls, tap "Screen call." Google Assistant answers on your behalf, asks who's calling, and shows you the caller's response in real time. You then decide whether to pick up.
+
+**Register with the Telephone Preference Service (UK)**
+Visit tpsonline.org.uk to register your number. It's free and legally requires UK businesses to stop calling you within 28 days.
+
+**Use Truecaller (free)**
+Download Truecaller from the Play Store. It identifies billions of spam numbers and automatically blocks the most persistent ones. Very effective against cold callers.`,
+  },
+  {
+    slug: 'fix-phone-battery-draining-fast',
+    title: 'Why Is My Phone Battery Dying So Fast? (And How to Fix It)',
+    excerpt: 'If your phone battery isn\'t lasting the day, these simple changes can double your battery life.',
+    category: 'phone-guides',
+    tags: ['battery', 'iphone', 'android', 'tips', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔋',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Lower your screen brightness**
+Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness (Settings > Accessibility > Display & Text Size > Auto-Brightness on iPhone; Settings > Display > Adaptive brightness on Android).
+
+**Turn off Wi-Fi and Bluetooth when not in use**
+If you're out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel (swipe down from the top of the screen).
+
+**Check which apps are draining your battery**
+- iPhone: Settings > Battery — scroll down to see apps and their battery usage
+- Android: Settings > Battery > Battery Usage
+
+Delete or restrict background activity for any apps using an unusually high percentage.
+
+**Reduce background app refresh**
+- iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only
+- Android: Settings > Apps > [app name] > Battery > Restricted
+
+**Enable Low Power Mode**
+- iPhone: Settings > Battery > Low Power Mode (or ask Siri: "turn on Low Power Mode")
+- Android: Settings > Battery > Battery Saver
+
+This reduces background activity and notifications to stretch your remaining battery.
+
+**Check your battery health (iPhone)**
+Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple offers battery replacement for a fixed fee.`,
+  },
+  {
+    slug: 'use-siri-basics',
+    title: 'Getting Started with Siri on iPhone',
+    excerpt: 'Siri is your iPhone\'s voice assistant — learn how to use it to set reminders, make calls, ask questions, and more without touching your phone.',
+    category: 'phone-guides',
+    tags: ['iphone', 'siri', 'voice-assistant', 'beginner', 'accessibility'],
+    readTime: '3 min',
+    thumbnailEmoji: '🎙️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Activate Siri**
+Say "Hey Siri" (if enabled) or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.
+
+**Enable "Hey Siri"**
+Go to Settings > Siri & Search > Listen for "Hey Siri" and turn it on. Now you can activate Siri hands-free just by saying "Hey Siri."
+
+**Useful things to ask Siri**
+- "Hey Siri, call [name]"
+- "Hey Siri, text [name] I'm on my way"
+- "Hey Siri, set an alarm for 7am"
+- "Hey Siri, remind me to take my tablets at 8pm"
+- "Hey Siri, what's the weather today?"
+- "Hey Siri, how do I spell [word]?"
+- "Hey Siri, open Maps"
+- "Hey Siri, turn on Bluetooth"
+
+**If Siri doesn't understand you**
+Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing. If Siri keeps misunderstanding, try rephrasing your request.
+
+**Siri and privacy**
+Your Siri requests are sent to Apple's servers to process. Siri does not store your voice recordings by default. You can review and delete Siri history in Settings > Siri & Search > Siri History.`,
+  },
+  {
+    slug: 'use-google-assistant-basics',
+    title: 'Getting Started with Google Assistant on Android',
+    excerpt: 'Google Assistant is built into your Android phone and can help you set reminders, answer questions, make calls, and control apps with just your voice.',
+    category: 'phone-guides',
+    tags: ['android', 'google-assistant', 'voice', 'beginner', 'accessibility'],
+    readTime: '3 min',
+    thumbnailEmoji: '🎙️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Activate Google Assistant**
+Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe from the bottom corner.
+
+**Set up "Hey Google"**
+Open the Google app, tap your profile photo > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognise your voice.
+
+**Useful things to ask Google Assistant**
+- "Hey Google, call [name]"
+- "Hey Google, send a text to [name] saying I'll be late"
+- "Hey Google, set an alarm for 7am tomorrow"
+- "Hey Google, remind me to take my tablets at 8pm every day"
+- "Hey Google, what's the weather this weekend?"
+- "Hey Google, navigate to [address]"
+- "Hey Google, turn on torch" (turns on the flashlight)
+- "Hey Google, set a timer for 10 minutes"
+
+**If Google Assistant doesn't understand you**
+Speak slowly and clearly. Make sure your microphone isn't blocked. If it mishears a contact name, try saying the full name.
+
+**Turn off Google Assistant**
+If you find it activates by accident, go to Settings > Google > Account Services > Search, Assistant & Voice > Google Assistant > General and toggle it off.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // SOCIAL MEDIA GUIDES (15 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'create-facebook-account',
+    title: 'How to Create a Facebook Account',
+    excerpt: 'Facebook is the easiest way to keep up with family and friends online. Here\'s how to create a free account in a few minutes.',
+    category: 'social-media',
+    tags: ['facebook', 'social-media', 'account', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '👤',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Before you start**
+You'll need: an email address or mobile phone number, and a few minutes. Facebook is completely free.
+
+**Go to Facebook.com**
+Open your web browser (Chrome, Safari, or Edge) and type facebook.com into the address bar at the top.
+
+**Fill in the sign-up form**
+Click "Create New Account." Enter your first name, last name, email address or mobile number, a new password (make it something only you know), your date of birth, and your gender. Then click "Sign Up."
+
+**Confirm your account**
+Facebook will send a confirmation code to your email or phone. Open your email or texts, find the code, and type it into the confirmation box on Facebook.
+
+**Add a profile photo (optional)**
+Click on the silhouette photo on your profile page, then "Upload Photo." Choose a photo from your computer or phone. This helps friends recognise you.
+
+**Find friends and family**
+Use the search bar at the top to search for people you know by name. When you find someone, click "Add Friend." They'll receive a friend request and can accept or decline.
+
+**Privacy tip**
+Before you start posting, go to Settings & Privacy > Privacy Shortcuts and set "Who can see your future posts?" to "Friends." This means only people you've accepted as friends can see what you share.`,
+  },
+  {
+    slug: 'add-friends-on-facebook',
+    title: 'How to Add Friends on Facebook',
+    excerpt: 'Connecting with family and old friends on Facebook is easy — here\'s how to send a friend request and accept ones you receive.',
+    category: 'social-media',
+    tags: ['facebook', 'friends', 'connect', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🤝',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Search for someone**
+Click the search bar at the top of Facebook and type the person's name. Press Enter. Facebook will show you a list of people with that name.
+
+**Identify the right person**
+Look at the profile photos and any mutual friends shown beneath the names. Mutual friends (people you both know) are a good sign you've found the right person.
+
+**Send a friend request**
+Click the person's name to go to their profile. Click the blue "Add Friend" button. The person will be notified that you've sent them a friend request.
+
+**Accepting a friend request**
+When someone sends you a friend request, a red number appears on the people icon at the top of Facebook. Click it to see pending requests. Click "Confirm" to accept or "Delete" to decline.
+
+**Managing your friends**
+To see all your Facebook friends, go to your profile and click "Friends." From here you can also "Unfriend" someone by clicking the three dots next to their name — they won't be notified.
+
+**People you may know**
+Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognise someone.`,
+  },
+  {
+    slug: 'post-photo-on-facebook',
+    title: 'How to Post a Photo on Facebook',
+    excerpt: 'Share a photo with your friends and family on Facebook — from a holiday snap to a photo of the grandchildren.',
+    category: 'social-media',
+    tags: ['facebook', 'photos', 'post', 'share', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**From a computer**
+On the Facebook homepage, click in the "What's on your mind?" box at the top of your News Feed. Click the photo/video icon (mountain with sun) below your text. Choose the photo from your computer. You can add a caption (a description of the photo) in the text box. Click "Post."
+
+**From your phone (Facebook app)**
+Open the Facebook app and tap the "What's on your mind?" box. Tap "Photo/Video." Choose a photo from your camera roll. Type a caption if you'd like, then tap "Post."
+
+**Add multiple photos**
+You can add several photos at once to create a photo album post. Select multiple photos when choosing from your gallery.
+
+**Who can see your photo?**
+Before posting, look for the audience selector (it might say "Friends," "Public," or "Only me"). Choose "Friends" so only people you've approved can see it.
+
+**Tagging people in photos**
+After posting, you can "tag" people who appear in the photo. Click the photo, then click "Tag Photo" and click on a person's face. Search for their name in Facebook to tag them. They'll be notified.
+
+**Delete a photo**
+Click the three dots (⋯) on your photo post and choose "Delete post" if you want to remove it.`,
+  },
+  {
+    slug: 'facebook-privacy-settings',
+    title: 'Understanding Facebook Privacy Settings',
+    excerpt: 'Control who can see your posts, find your profile, and contact you on Facebook — a simple guide to staying private.',
+    category: 'social-media',
+    tags: ['facebook', 'privacy', 'safety', 'settings', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Access your privacy settings**
+Click the downward arrow (▼) in the top right of Facebook > Settings & Privacy > Privacy Shortcuts. This is your main privacy control centre.
+
+**Who can see your posts?**
+Under Privacy Shortcuts, click "See more privacy settings." Next to "Who can see your future posts?" click Edit and change it to "Friends." This is the most important setting.
+
+**Who can find and contact you?**
+- "Who can send you friend requests?" — change to "Friends of Friends" to reduce requests from strangers
+- "Who can look you up using your email address?" — change to "Friends"
+- "Who can look you up using your phone number?" — change to "Friends"
+
+**Review your profile visibility**
+Click "Profile and Tagging" in the left menu. Set "Who can see what others post on your profile?" to "Friends."
+
+**Run the Privacy Checkup**
+Facebook has a built-in tool: Settings & Privacy > Privacy Checkup. It walks you through your most important settings in five categories. Highly recommended — takes about 5 minutes.
+
+**Turn off targeted advertising (optional)**
+Settings & Privacy > Settings > Ads > Ad preferences. Here you can turn off interest-based advertising.`,
+  },
+  {
+    slug: 'facebook-messenger-video-call',
+    title: 'How to Make a Free Video Call on Facebook Messenger',
+    excerpt: 'Call family and friends face-to-face for free using Facebook Messenger — works on phones, tablets, and computers.',
+    category: 'social-media',
+    tags: ['facebook', 'messenger', 'video-call', 'free', 'family'],
+    readTime: '3 min',
+    thumbnailEmoji: '📹',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What you need**
+Both you and the person you're calling must have Facebook accounts and the Messenger app installed (or be on Facebook.com on a computer). Video calls are free over Wi-Fi or mobile data.
+
+**Install Messenger**
+Download the "Messenger" app from the App Store (iPhone) or Play Store (Android). It's a separate app from the main Facebook app but uses the same login.
+
+**Start a video call on your phone**
+Open Messenger, find the conversation with the person you want to call (or tap the new message icon to find them), then tap the video camera icon in the top right corner of the conversation. Their phone will ring.
+
+**Start a video call on a computer**
+Go to messenger.com or open a conversation in Facebook. Click the video camera icon in the top right of the conversation.
+
+**During the call**
+- Tap the microphone icon to mute yourself
+- Tap the camera icon to turn off your video
+- Tap the red phone icon to end the call
+
+**If the video quality is poor**
+Move closer to your Wi-Fi router, or switch from mobile data to Wi-Fi. Poor video is almost always a connection issue, not a device problem.`,
+  },
+  {
+    slug: 'get-started-with-whatsapp',
+    title: 'Getting Started with WhatsApp',
+    excerpt: 'WhatsApp is a free messaging and calling app used by over 2 billion people. Here\'s everything you need to know to get started.',
+    category: 'social-media',
+    tags: ['whatsapp', 'messaging', 'beginners', 'free', 'calls'],
+    readTime: '4 min',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What is WhatsApp?**
+WhatsApp is a free app for sending messages, photos, voice messages, and making calls over the internet (Wi-Fi or mobile data). It's completely free and works on iPhone and Android.
+
+**Install WhatsApp**
+Search for "WhatsApp Messenger" in the App Store (iPhone) or Play Store (Android). Tap Install/Get. It's free.
+
+**Set up your account**
+Open WhatsApp. Enter your phone number — you'll receive a 6-digit verification code by SMS. Enter the code to verify your number. Add your name and optionally a profile photo.
+
+**WhatsApp automatically finds contacts**
+WhatsApp scans your phone's contacts and shows you which of your contacts already use WhatsApp. You don't need to "add" them — they appear automatically in your WhatsApp contacts list.
+
+**Your privacy settings**
+Go to Settings > Privacy. You can set who sees your Last Seen, Profile Photo, and About information. Recommended: set these to "My Contacts" rather than "Everyone."
+
+**Costs**
+WhatsApp messages and calls are free when you're connected to Wi-Fi. Over mobile data, they use a small amount of your data allowance (much less than a phone call).`,
+  },
+  {
+    slug: 'send-whatsapp-message',
+    title: 'How to Send a Message on WhatsApp',
+    excerpt: 'Sending a message on WhatsApp is as simple as texting — here\'s how to chat with friends and family for free.',
+    category: 'social-media',
+    tags: ['whatsapp', 'message', 'text', 'beginner', 'chat'],
+    readTime: '2 min',
+    thumbnailEmoji: '✉️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open a conversation**
+Open WhatsApp. Tap the Chats tab at the bottom. Tap the name of someone you want to message. If you don't see them, tap the new chat icon (pencil or speech bubble) at the top right and search for their name.
+
+**Type and send your message**
+Tap the message box at the bottom of the screen and type your message. Tap the green arrow (send) button to send it.
+
+**What the tick marks mean**
+- One grey tick: your message was sent from your phone
+- Two grey ticks: your message was delivered to their phone
+- Two blue ticks: they have read your message (read receipts can be turned off)
+
+**Send a photo or video**
+Tap the paperclip (📎) or plus (+) icon next to the message box. Choose "Gallery" or "Camera" to send a photo or take a new one.
+
+**Send a voice message (audio)**
+Press and hold the microphone icon on the right side of the message box. Speak your message, then release to send. Slide left to cancel if you change your mind.
+
+**Group chats**
+To message multiple people at once, tap the new chat icon > New Group. Add contacts, give the group a name, and tap Create. Everyone in the group can see all messages.`,
+  },
+  {
+    slug: 'whatsapp-video-call',
+    title: 'How to Make a Free Video Call on WhatsApp',
+    excerpt: 'Call family and friends anywhere in the world for free on WhatsApp — face-to-face over Wi-Fi or mobile data.',
+    category: 'social-media',
+    tags: ['whatsapp', 'video-call', 'free', 'family', 'calls'],
+    readTime: '2 min',
+    thumbnailEmoji: '📹',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Start a video call**
+Open WhatsApp and open a conversation with the person you want to call. Tap the video camera icon in the top right corner of the screen. Their phone will ring.
+
+**Group video calls (up to 32 people)**
+Open a group chat, or tap the video camera icon in a group to call everyone in that group. Alternatively, open a chat with one person, then tap "Add participant" during the call to add others.
+
+**During the call**
+- Tap the microphone icon to mute/unmute yourself
+- Tap the camera icon to switch your camera off
+- Tap the red phone icon to end the call
+- Tap the "switch camera" icon to switch between front and back cameras
+
+**If the call quality is poor**
+Move closer to your Wi-Fi router. WhatsApp video calls use your internet connection, so a strong Wi-Fi signal = better quality. On mobile data, make sure you have a good signal.
+
+**International calls**
+WhatsApp video calls work exactly the same whether the person is in the next room or in another country. There's no extra charge — it all uses your internet connection.`,
+  },
+  {
+    slug: 'create-instagram-account',
+    title: 'How to Create an Instagram Account',
+    excerpt: 'Instagram is a photo and video sharing app with over a billion users. Here\'s how to join and set up your profile.',
+    category: 'social-media',
+    tags: ['instagram', 'account', 'photos', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Download Instagram**
+Search for "Instagram" in the App Store (iPhone) or Play Store (Android). Download the free app.
+
+**Create your account**
+Open Instagram and tap "Create new account." Enter your email address or phone number. You can also sign up with your Facebook account by tapping "Log in with Facebook." Create a password.
+
+**Choose a username**
+Your username is your @handle — it appears publicly. Use your name or something easy to remember (e.g., @marysmith or @mary_from_exeter). You can change it later.
+
+**Add a profile photo**
+Tap "Add a profile photo." Choose a photo from your gallery or take a new one. This helps people recognise you.
+
+**Make your account private**
+Recommended for most people: tap your profile icon > ☰ (menu) > Settings and Privacy > Account Privacy > turn on "Private account." This means only people you approve can follow you and see your posts.
+
+**Follow some accounts**
+Instagram works best when you follow accounts you're interested in. Search for friends, family, local businesses, news outlets, or hobbyist accounts. Tap "Follow" on any account you'd like to see posts from.`,
+  },
+  {
+    slug: 'post-photo-on-instagram',
+    title: 'How to Post a Photo on Instagram',
+    excerpt: 'Share a photo with your Instagram followers in just a few taps — from holidays and family moments to anything you want.',
+    category: 'social-media',
+    tags: ['instagram', 'photos', 'post', 'share', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Tap the + button**
+At the bottom of the Instagram app, tap the + (plus) icon in the centre of the bottom menu bar.
+
+**Choose your photo**
+Your camera roll will appear. Tap the photo you want to post. You can select multiple photos to create a carousel post (up to 10 photos that people swipe through).
+
+**Crop and filter your photo**
+Instagram lets you crop your photo and apply a filter to change the look. Tap "Next" when you're happy. Most people use "Normal" (no filter) or "Clarendon" (slightly brightened).
+
+**Write a caption (optional)**
+Tap "Write a caption..." and describe your photo or share a thought. You can add hashtags (#) to help people find your post — e.g., #Cornwall2026 #family.
+
+**Tag people (optional)**
+Tap "Tag people" to tag Instagram friends who appear in your photo. They'll be notified.
+
+**Share your post**
+Tap "Share." Your photo is now on your profile and will appear in the feeds of people who follow you.
+
+**Delete a post**
+Tap the three dots (⋯) above your post on your profile > Delete > Delete.`,
+  },
+  {
+    slug: 'understand-instagram-stories',
+    title: 'What Are Instagram Stories? (And How to Post One)',
+    excerpt: 'Instagram Stories are short photos or videos that disappear after 24 hours — here\'s what they are and how to use them.',
+    category: 'social-media',
+    tags: ['instagram', 'stories', 'photos', 'video', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '⭕',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What are Stories?**
+Instagram Stories are photos or short videos (up to 60 seconds) that you share with your followers. Unlike regular posts, Stories disappear after 24 hours. They appear in a row of circles at the top of the Instagram home screen.
+
+**View someone's Story**
+Tap on a person's profile photo circle at the top of your home feed to view their Story. Tap the right side of the screen to go to the next Story; tap the left to go back.
+
+**Post your own Story**
+Tap your own profile photo circle (with the + sign) at the top left of the home feed. Choose a photo or video from your camera roll, or tap the camera icon to take a new one. Add text, stickers, or drawings using the icons at the top. Tap "Your Story" to share it.
+
+**Add text and stickers**
+Tap the "Aa" icon to add text over your photo. Tap the smiley face icon to add stickers, GIFs, location tags, polls, and more.
+
+**Highlights**
+If you want to keep a Story beyond 24 hours, add it to a Highlight. Go to your profile, tap the + next to "Story Highlights" and select Stories to save permanently to your profile.
+
+**Who can see your Story?**
+If your account is private, only your followers can see your Stories. If your account is public, anyone can see them.`,
+  },
+  {
+    slug: 'watch-youtube-videos',
+    title: 'How to Watch Videos on YouTube',
+    excerpt: 'YouTube is the world\'s largest video website. Here\'s how to find, watch, and enjoy any video — from cookery tutorials to live news.',
+    category: 'social-media',
+    tags: ['youtube', 'videos', 'watch', 'beginner', 'streaming'],
+    readTime: '3 min',
+    thumbnailEmoji: '▶️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Access YouTube**
+On a computer: go to youtube.com in your browser. On a phone or tablet: download the YouTube app (free) from the App Store or Play Store.
+
+**Search for a video**
+Click or tap the search bar (magnifying glass icon) at the top. Type what you're looking for — e.g., "how to make shepherd's pie" or "BBC news today" — and press Enter or tap Search.
+
+**Play a video**
+Tap on a video thumbnail to start playing it. Tap the screen to show controls. Tap the pause button (||) to pause, or the play button (▶) to resume.
+
+**Adjust volume and quality**
+Use your device's volume buttons during playback. To adjust video quality (useful on slow internet), tap the three dots (⋮) in the video > Quality. Try "360p" or "480p" on slow connections.
+
+**Full-screen mode**
+Rotate your phone sideways to go full screen on mobile, or tap the full-screen icon (four corners) at the bottom right of the video.
+
+**No account needed**
+You don't need to sign in to watch videos. Creating a free Google account lets you subscribe to channels, like videos, and save videos to watch later.`,
+  },
+  {
+    slug: 'subscribe-youtube-channels',
+    title: 'How to Subscribe to YouTube Channels',
+    excerpt: 'Subscribing to a YouTube channel means you\'ll see new videos from that creator in your feed — like following someone on TV.',
+    category: 'social-media',
+    tags: ['youtube', 'subscribe', 'channels', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🔔',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What is subscribing?**
+When you subscribe to a YouTube channel, new videos from that channel appear in your Subscriptions feed. It's like choosing which TV channels you want to see — and it's completely free.
+
+**Subscribe to a channel**
+While watching a video, click or tap the channel name below the video (or the round channel logo). On the channel's page, click the red "Subscribe" button. It will change to "Subscribed."
+
+**Turn on notifications**
+After subscribing, tap the bell icon (🔔) next to "Subscribed" and select "All" to get notified when they post a new video.
+
+**View your subscriptions**
+On the YouTube app: tap "Subscriptions" in the bottom menu bar. On YouTube.com: click "Subscriptions" in the left sidebar. You'll see the latest videos from all channels you follow.
+
+**Unsubscribe**
+Go to the channel's page and tap the "Subscribed" button > "Unsubscribe." Or go to your Subscriptions feed, long-press the channel, and select Unsubscribe.
+
+**Good channels to start with**
+Search for: BBC News, ITV News, your local council, hobbies (gardening, cooking, travel), or healthcare topics like "NHS health advice."`,
+  },
+  {
+    slug: 'youtube-on-smart-tv',
+    title: 'How to Watch YouTube on Your TV',
+    excerpt: 'Enjoy YouTube\'s vast library of videos on the big screen — here\'s how to get YouTube running on your smart TV.',
+    category: 'social-media',
+    tags: ['youtube', 'smart-tv', 'streaming', 'tv', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📺',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Option 1: YouTube app on your smart TV**
+Most smart TVs (Samsung, LG, Sony, Hisense) have YouTube pre-installed. Press the Home button on your remote, look for the YouTube app icon, and open it. Use your remote to search for and play videos.
+
+**If YouTube isn't installed**
+Go to your TV's app store (Smart Hub on Samsung, Content Store on LG, Google Play on Android TV). Search for "YouTube" and download it — it's free.
+
+**Option 2: Chromecast (Google)**
+If you have a Chromecast plugged into your TV's HDMI port, open YouTube on your phone, start a video, and tap the "Cast" icon (rectangle with Wi-Fi waves). Select your Chromecast. The video will play on your TV and you can control it from your phone.
+
+**Option 3: HDMI cable from laptop**
+Connect your laptop to your TV using an HDMI cable. Switch your TV's input to the HDMI channel. Open YouTube in your browser on the laptop and it'll display on the TV screen.
+
+**Sign in to YouTube on your TV**
+On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone or computer, go to youtube.com/activate and enter the code to link your Google account.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // HOW-TO: EMAIL GUIDES (8 new guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-gmail-account',
+    title: 'How to Create a Free Gmail Account',
+    excerpt: 'Gmail is Google\'s free email service used by 1.8 billion people. Here\'s how to create your account in five minutes.',
+    category: 'how-to',
+    tags: ['gmail', 'email', 'google', 'account', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📧',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Go to Gmail**
+Open your web browser and go to gmail.com. Click "Create account" under the sign-in form, then choose "For my personal use."
+
+**Enter your name and username**
+Enter your first and last name. Then choose a Gmail address (username). Something like firstname.lastname is clean and professional. Gmail will tell you if the name is taken and suggest alternatives.
+
+**Create a strong password**
+Choose a password that's at least 8 characters with a mix of letters, numbers, and a symbol. Write it down somewhere safe — not on your computer.
+
+**Add your phone number (recommended)**
+Google will ask for a phone number to help you recover your account if you're ever locked out. This is optional but strongly recommended.
+
+**Verify your account**
+If you added a phone number, Google will send you a 6-digit code by text. Enter the code to verify.
+
+**Complete your profile**
+Add your date of birth and gender (optional). Agree to Google's Terms of Service (you must agree to use Gmail).
+
+**You're done!**
+Your Gmail address will be yourname@gmail.com. This same Google account also gives you access to Google Maps, YouTube, Google Drive, and the Google Play Store on Android.`,
+  },
+  {
+    slug: 'how-to-send-an-email',
+    title: 'How to Send Your First Email',
+    excerpt: 'Not sure how to send an email? This step-by-step guide shows you how using Gmail, Outlook, or any email service.',
+    category: 'how-to',
+    tags: ['email', 'gmail', 'send', 'beginner', 'compose'],
+    readTime: '3 min',
+    thumbnailEmoji: '📨',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open your email**
+Go to gmail.com (or outlook.com if you use Outlook) and sign in.
+
+**Start a new email**
+Look for a button labelled "Compose" (Gmail) or "New message" (Outlook). It's usually in the top left. Click it. A blank email form will appear.
+
+**Fill in the "To" field**
+Click in the "To" box and type the email address of the person you're sending to. Email addresses look like this: name@example.com. Type it carefully — one wrong letter means it won't be delivered.
+
+**Write a subject**
+Click the "Subject" line and type a short description of your email, like "Hello from Mary" or "Question about Wednesday." Always include a subject — emails without one can look like spam.
+
+**Write your message**
+Click in the large blank area and type your message. Write as you would in a letter. You can start with "Dear [name]," and end with "Kind regards, [your name]."
+
+**Send the email**
+Click the "Send" button (usually blue, at the bottom of the compose window). Your email is on its way immediately.
+
+**Find sent emails**
+Your sent emails are stored in the "Sent" folder on the left menu. You can check that your email was sent from there.`,
+  },
+  {
+    slug: 'attach-photo-to-email',
+    title: 'How to Attach a Photo or File to an Email',
+    excerpt: 'Need to send a photo or document with an email? Here\'s how to attach files in Gmail and Outlook.',
+    category: 'how-to',
+    tags: ['email', 'attachment', 'photo', 'file', 'gmail', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📎',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Start a new email**
+Open your email (gmail.com or outlook.com) and click Compose or New Message.
+
+**Find the attachment button**
+- In Gmail: click the paperclip (📎) icon at the bottom of the compose window
+- In Outlook: click "Attach file" or the paperclip icon in the toolbar
+
+**Select your file or photo**
+A file browser will open. Navigate to your photo or document. Click on it to select it, then click "Open" or "Choose." The file will be attached — you'll see its name appear in the email.
+
+**Attach multiple files**
+Repeat the process to add more files. Or hold Ctrl (Windows) or Cmd (Mac) while clicking to select multiple files at once.
+
+**Check the file size**
+Most email providers limit attachments to 25MB. Photos taken on a modern phone can be 5-10MB each — so you can usually send 2-3 photos per email. For larger files, use Google Drive or WeTransfer instead.
+
+**Send the email**
+Fill in the To address and Subject, write your message, and click Send as normal. The attachment will be sent with the email.
+
+**On a phone**
+In the Gmail or Outlook app, tap the paperclip or "Attach" button, then choose from your camera roll.`,
+  },
+  {
+    slug: 'how-to-forward-an-email',
+    title: 'How to Forward an Email to Someone Else',
+    excerpt: 'Received an email you want to share with someone? Forwarding sends a copy of the whole email to another person in two clicks.',
+    category: 'how-to',
+    tags: ['email', 'forward', 'gmail', 'outlook', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '➡️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open the email you want to forward**
+In Gmail or Outlook, click on the email in your inbox to open it.
+
+**Click Forward**
+- In Gmail: click the three dots (⋮) at the top right of the email, or scroll to the bottom of the email and click "Forward"
+- In Outlook: click the "Forward" button (→) in the toolbar at the top
+
+**Enter the recipient's address**
+A new email form appears with the original message included at the bottom. Type the email address of the person you're sending it to in the "To" field.
+
+**Add your own note (optional)**
+Type a message above the forwarded content to give context — e.g., "I thought this might be useful for you."
+
+**Send**
+Click Send. The recipient will receive the original email's content along with your note.
+
+**What's included in a forwarded email**
+The recipient sees the original message, subject line, and any attachments that were in the original. Your email address and your note will appear at the top.`,
+  },
+  {
+    slug: 'organise-email-folders',
+    title: 'How to Organise Your Emails into Folders',
+    excerpt: 'A tidy inbox makes emails much easier to find. Here\'s how to create folders and move emails into them in Gmail and Outlook.',
+    category: 'how-to',
+    tags: ['email', 'folders', 'organise', 'gmail', 'outlook', 'intermediate'],
+    readTime: '4 min',
+    thumbnailEmoji: '📁',
+    publishedAt: '2026-03-31',
+    difficulty: 'Intermediate',
+    body: `**Gmail: Labels instead of folders**
+Gmail uses "Labels" (which work like folders). In the left sidebar, scroll down and click "+ Create new label." Name it (e.g., "Bank," "Family," "Medical," "Receipts") and click Create.
+
+**Move an email to a label (Gmail)**
+Select the email by ticking the checkbox. Click the label icon (🏷️) at the top. Choose the label you want. The email is now organised under that label.
+
+**Outlook: Real folders**
+In Outlook, right-click "Inbox" in the left sidebar and choose "New folder." Name your folder and press Enter.
+
+**Move an email to a folder (Outlook)**
+Right-click the email and choose "Move" > select your folder. Or drag and drop the email onto the folder name.
+
+**Create rules to auto-sort emails**
+- Gmail: Open an email > click three dots > "Filter messages like these" > choose "Apply label" > select your label. Future emails from that sender automatically go to that label.
+- Outlook: Home > Rules > Create Rule > set conditions and actions.
+
+**Unsubscribe from mailing lists**
+The fastest way to tidy your inbox: open any newsletter, scroll to the bottom, and click "Unsubscribe." Google also shows an "Unsubscribe" link at the top of many marketing emails.`,
+  },
+  {
+    slug: 'unsubscribe-from-emails',
+    title: 'How to Stop Receiving Unwanted Emails',
+    excerpt: 'Spam and mailing lists clogging up your inbox? Here are the best ways to unsubscribe and clean up your email in minutes.',
+    category: 'how-to',
+    tags: ['email', 'spam', 'unsubscribe', 'inbox', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🚫',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Unsubscribe from newsletters and marketing emails**
+Legitimate companies (shops, charities, newsletters) are legally required to include an unsubscribe link. Open the email, scroll to the very bottom, and click "Unsubscribe" or "Manage preferences." It may take up to 10 business days to take effect.
+
+**Gmail's built-in unsubscribe button**
+In Gmail, many marketing emails show an "Unsubscribe" link directly at the top of the email, next to the sender's name. Click it for a one-click unsubscribe — much faster than scrolling to the bottom.
+
+**Mark as Spam**
+If an email is genuinely spam (not something you ever signed up for), click the spam/junk button rather than unsubscribing — this trains your email filter. In Gmail: the ! icon. In Outlook: right-click > Junk > Mark as Junk.
+
+**Block a specific sender**
+- Gmail: open the email, click three dots (⋮) > "Block [sender name]"
+- Outlook: right-click > Junk > Block Sender
+
+**Create a filter to automatically delete or archive**
+If spam keeps getting through, create a filter (see the Organise Emails guide) to automatically delete or archive emails from that sender or containing certain words.`,
+  },
+  {
+    slug: 'spot-phishing-email',
+    title: 'How to Spot a Phishing Email: A Beginner\'s Guide',
+    excerpt: 'Phishing emails trick you into clicking dangerous links or sharing personal details. Learn the 5 red flags that give every scam email away.',
+    category: 'how-to',
+    tags: ['email', 'scam', 'phishing', 'safety', 'security', 'beginner', 'how-to-spot-a-phishing-email'],
+    readTime: '5 min',
+    thumbnailEmoji: '⚠️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What is a phishing email?**
+A phishing email is a fake message designed to look like it comes from a trusted organisation — your bank, HMRC, Royal Mail, Amazon, or even a friend. The goal is to trick you into clicking a dangerous link, downloading a file, or sharing personal information like passwords or bank details.
+
+Phishing is the most common type of cyber attack in the UK. According to the National Cyber Security Centre, millions of scam emails are sent every day. The good news: once you know the warning signs, they are surprisingly easy to spot.
+
+**Red flag 1: Urgency and threats**
+"Your account will be closed in 24 hours." "Immediate action required." "Your parcel is being returned." Scammers want you to panic and act without thinking. Real organisations almost never demand instant action by email.
+
+**Red flag 2: The sender's email address looks wrong**
+This is the single most reliable check. Real companies send from their own domain (e.g. @amazon.co.uk, @gov.uk). Tap or hover over the sender's name to see the full address. If it says hmrc-support@gov.uk.malicious.com or noreply@amazon.com.phish.net — it is fake. Always check the part AFTER the @ symbol.
+
+**Red flag 3: Spelling, grammar, and odd phrasing**
+Professional organisations proofread their emails. Multiple errors, strange formatting, or American spelling from a UK company are warning signs. AI has made scam emails better written than before, so this alone is not enough — always check the sender address too.
+
+**Red flag 4: Links that don't match the company**
+Hover over any link (don't click!) to see where it actually goes. On a phone, long-press the link to preview the address. A button saying "Log in to Amazon" that leads to amazon.customerservice-verify.net is fake. The real Amazon link would end in amazon.co.uk.
+
+**Red flag 5: Unexpected attachments**
+Banks and delivery companies almost never send attachments by email. If an email asks you to "open the attached invoice" or "view your statement," treat it with suspicion — especially if the file ends in .zip, .exe, or .html.
+
+**What to do if you receive a suspicious email**
+- Do NOT click any links or buttons
+- Do NOT open any attachments
+- Do NOT call any phone numbers in the email
+- Do NOT reply to the email
+- Mark it as Spam or Junk in your email app
+- If you are genuinely unsure whether it is real, go directly to the company's website by typing the address yourself in a new browser tab, or call their official number from their website
+
+**What if you already clicked a link?**
+Do not panic. Change the password for any account you may have entered details for. If you entered bank details, call your bank immediately — they have fraud teams available 24/7. Run a virus scan on your device. Monitor your accounts for unusual activity over the next few weeks.
+
+**Report it (UK)**
+Forward suspicious emails to report@phishing.gov.uk — the National Cyber Security Centre will investigate. Forward suspicious text messages to 7726.
+
+**Related guides**
+If you found this useful, see our guides on creating a strong password, setting up two-factor authentication, and staying safe on social media.`,
+  },
+  {
+    slug: 'set-up-gmail-on-phone',
+    title: 'How to Set Up Gmail on Your Phone',
+    excerpt: 'Access all your emails on the go by setting up Gmail (or any email account) on your smartphone.',
+    category: 'how-to',
+    tags: ['gmail', 'email', 'phone', 'setup', 'iphone', 'android', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Download the Gmail app**
+- iPhone: search "Gmail" in the App Store and tap Get (it's free)
+- Android: Gmail is usually pre-installed. If not, find it in the Play Store
+
+**Sign in with your Google account**
+Open the Gmail app. Tap "Sign in." Enter your Gmail address (yourname@gmail.com) and password. Tap "Next." Your emails will start loading within a minute.
+
+**Add a non-Gmail account (Outlook, Yahoo, etc.)**
+You can also manage non-Gmail accounts in the Gmail app. Tap your profile photo in the top right > "Add another account" > choose your email provider > enter your email address and password.
+
+**Set up notifications**
+Gmail will ask if you want to receive notifications for new emails. Tap "Allow." You can manage notification settings later in your phone's Settings.
+
+**Read, reply, and compose**
+- Tap an email to open it
+- Tap the left-pointing arrow (↩) to reply
+- Tap the right-pointing arrow (→) to forward
+- Tap the pencil (✏️) icon at the bottom right to compose a new email
+
+**Keep your inbox tidy**
+Swipe left on an email to archive it (hide from inbox but keep it). Swipe right to mark as read/unread. Long-press to select multiple emails.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // HOW-TO: PRINTING GUIDES (6 new guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'connect-printer-to-windows',
+    title: 'How to Connect a Printer to a Windows PC',
+    excerpt: 'Getting a printer to work with Windows is easier than you think. Here\'s how to connect a new printer and start printing.',
+    category: 'how-to',
+    tags: ['printer', 'windows', 'connect', 'setup', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🖨️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Option 1: USB cable (easiest)**
+Plug one end of the USB cable into the printer and the other end into your PC. Windows will automatically detect the printer and install the drivers. After a minute, you should be ready to print.
+
+**Option 2: Wireless (Wi-Fi) printer**
+1. First, connect your printer to your Wi-Fi network. Most printers do this through the printer's own screen/menu — look for "Wireless Setup Wizard" or "Wi-Fi Setup" on the printer's control panel.
+2. On your Windows PC, go to Start > Settings (⚙️) > Bluetooth & devices > Printers & scanners
+3. Click "Add a printer or scanner." Windows will search for available printers on your network.
+4. When your printer appears in the list, click it and then click "Add device."
+
+**Install the printer software**
+For best results, download your printer's software from the manufacturer's website (HP, Epson, Canon, Brother). Search for your exact printer model. The software installs additional features like scanning and ink level monitoring.
+
+**Set as default printer**
+Go to Settings > Bluetooth & devices > Printers & scanners > click your printer > Set as default. Now this printer will be used automatically.
+
+**Test print**
+Settings > Printers & scanners > your printer > Print test page.`,
+  },
+  {
+    slug: 'connect-printer-to-mac',
+    title: 'How to Connect a Printer to a Mac',
+    excerpt: 'Mac makes connecting a printer straightforward — here\'s how to set up a USB or wireless printer on macOS.',
+    category: 'how-to',
+    tags: ['printer', 'mac', 'connect', 'setup', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🖨️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Option 1: USB cable**
+Plug the USB cable from your printer into your Mac. macOS will automatically detect it and often install drivers on its own. When prompted, follow any on-screen instructions to complete the setup.
+
+**Option 2: Wireless printer**
+1. Connect your printer to Wi-Fi first using the printer's own menu (look for a "Wireless Setup Wizard")
+2. On your Mac, go to Apple menu (🍎) > System Settings > Printers & Scanners
+3. Click the + button to add a printer
+4. Your wireless printer should appear in the list — click it, then click "Add"
+
+**AirPrint printers (the easiest option)**
+Most modern printers support AirPrint. If yours does, your Mac (and iPhone/iPad) will automatically discover it when you're on the same Wi-Fi network — no driver installation needed.
+
+**Download printer software**
+For full features (scanning, ink level, maintenance), download the software for your printer model from the manufacturer's website (HP, Epson, Canon, Brother).
+
+**Print a test page**
+Open any document. Press Cmd+P to open the print dialog. Select your printer from the dropdown and click Print. A standard test print is a good way to confirm everything is working.`,
+  },
+  {
+    slug: 'how-to-print-a-document',
+    title: 'How to Print a Document from Your Computer',
+    excerpt: 'Whether you\'re printing a letter, form, or recipe, here\'s how to print any document from Windows or Mac.',
+    category: 'how-to',
+    tags: ['printer', 'print', 'document', 'windows', 'mac', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '📄',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**The universal shortcut**
+On any document (Word, PDF, web page, photo), press Ctrl+P on Windows or Cmd+P on Mac. This opens the print dialog on almost every programme.
+
+**Check the printer**
+In the print dialog, check the "Printer" dropdown at the top. Make sure it shows your correct printer. If you see "Microsoft Print to PDF" or the wrong printer, click the dropdown to select the right one.
+
+**Choose number of copies**
+Set the number of copies you want. The default is 1.
+
+**Set page range**
+To print all pages, leave it as "All." To print specific pages, click "Pages" and type the page numbers (e.g., 1-3, or 5 for just page 5).
+
+**Print single or double-sided**
+Look for a "Two-sided" or "Duplex" option if you want to save paper.
+
+**Click Print**
+Click the "Print" button. Your document will be sent to the printer. Don't click Print multiple times — this sends multiple copies.
+
+**Printing from a web page**
+In any browser, press Ctrl+P (or Cmd+P). A print preview appears. Tip: click "More settings" or "Options" and look for "Background graphics" if you want to print web page colours.`,
+  },
+  {
+    slug: 'fix-printer-offline',
+    title: 'How to Fix a Printer That Shows as Offline',
+    excerpt: 'Your printer says "Offline" even though it\'s switched on? These steps fix the most common cause in under five minutes.',
+    category: 'how-to',
+    tags: ['printer', 'offline', 'fix', 'troubleshoot', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '⚠️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Step 1: Restart everything**
+Turn off your printer, wait 30 seconds, and turn it back on. Restart your computer too. This fixes the problem more than half the time.
+
+**Step 2: Check physical connections**
+If using USB: unplug and re-plug the cable at both ends. If wireless: check your printer's screen shows it's connected to Wi-Fi. Check your Wi-Fi router has its lights on.
+
+**Step 3: Clear the print queue (Windows)**
+Go to Start > Settings > Bluetooth & devices > Printers & Scanners. Click your printer > Open print queue. Select all jobs waiting to print (Ctrl+A) and delete them. A stuck print job in the queue often causes the offline error.
+
+**Step 4: Set "Use Printer Online" (Windows)**
+From Settings > Printers & Scanners > click your printer > Open print queue > Printer menu > make sure "Use Printer Offline" is not ticked.
+
+**Step 5: Remove and re-add the printer**
+Settings > Bluetooth & devices > Printers & Scanners > click the printer > Remove device. Then click "Add a printer or scanner" and add it back. Your computer will re-detect it fresh.
+
+**Step 6: Restart the Print Spooler (Windows)**
+Press Win+R, type services.msc, press Enter. Scroll to "Print Spooler," right-click it, and select Restart. This resets the printing service.`,
+  },
+  {
+    slug: 'how-to-print-a-photo',
+    title: 'How to Print a Photo at Home',
+    excerpt: 'Print a beautiful photo at home using your photo printer or inkjet — here\'s how to get the best quality results.',
+    category: 'how-to',
+    tags: ['printer', 'photo', 'print', 'quality', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Use photo paper**
+For best results, print photos on dedicated photo paper, not standard printer paper. Photo paper is glossy or semi-gloss and produces much sharper, more colourful results. Available from supermarkets, stationery shops, and Amazon.
+
+**Load the photo paper correctly**
+Check your printer's manual for how to load photo paper. Usually the glossy side faces down (or toward you, depending on the model). Don't overfill the tray.
+
+**Open the photo**
+Open your photo in the Windows Photos app, Mac Preview, or any photo programme.
+
+**Open the print dialog**
+Press Ctrl+P (Windows) or Cmd+P (Mac).
+
+**Select the right settings**
+In the print dialog, set:
+- Paper size: A4 or 6×4 (photo size)
+- Media type: "Glossy Photo Paper" or "Photo Paper" — matching the paper you loaded
+- Print quality: "Best" or "Photo"
+
+**Preview before printing**
+Most print dialogs show a preview. Check the photo is the right size and orientation (landscape or portrait).
+
+**Print and leave to dry**
+Click Print. Handle the freshly printed photo by the edges and let it dry for a few minutes before stacking.`,
+  },
+  {
+    slug: 'replace-printer-ink',
+    title: 'How to Replace Printer Ink or Toner',
+    excerpt: 'Ink low? Here\'s how to replace ink cartridges on the most common home printers — HP, Epson, Canon, and Brother.',
+    category: 'how-to',
+    tags: ['printer', 'ink', 'cartridge', 'replace', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🖨️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Find your cartridge model number**
+The cartridge model number is usually printed on the old cartridge itself (e.g., HP 305, Canon PG-545, Epson 603). Write it down before removing the old one so you know what to buy.
+
+**Buy the right cartridge**
+Buy replacement cartridges from a supermarket, stationery shop, or online (Amazon, Cartridge World). "Original" brand cartridges are most reliable; compatible/generic ones are cheaper but can vary in quality.
+
+**Prepare to replace**
+Turn on your printer. Most inkjet printers move the cartridge to an accessible "change" position when you open the cover — don't force the cartridge carriage to move.
+
+**HP printers**
+Open the front panel. Wait for the cartridge carriage to move to the centre. Push the old cartridge in gently and it will "click" and release. Pull it out. Remove the orange protective tape from the new cartridge (don't touch the copper contacts or ink nozzles). Push the new cartridge in until it clicks.
+
+**Epson / Canon / Brother**
+Open the front panel and lift the ink cartridge cover or press the release tab. Lift out the old cartridge. Remove protective tape from the new one. Press it firmly into the correct slot until it clicks.
+
+**After replacing**
+Most printers run a short alignment or cleaning cycle automatically. This is normal. Don't interrupt it.
+
+**Tip: keep a spare**
+Keep a spare set of cartridges in a drawer. Printers always seem to run out at the worst moment.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // HOW-TO: STREAMING & TV GUIDES (5 new guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-netflix-on-tv',
+    title: 'How to Set Up Netflix on Your TV',
+    excerpt: 'Netflix has thousands of films, series, and documentaries. Here\'s how to get it running on your television.',
+    category: 'how-to',
+    tags: ['netflix', 'streaming', 'tv', 'setup', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🎬',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What you need**
+- A smart TV, or a streaming device (Roku, Amazon Fire Stick, Apple TV, Chromecast) plugged into your TV
+- A broadband internet connection (Netflix recommends at least 5 Mbps for standard definition, 15 Mbps for HD)
+- A Netflix account (plans start from around £4.99/month)
+
+**On a Smart TV**
+Press the Home or Menu button on your remote. Look for the Netflix app — it's pre-installed on most Samsung, LG, Sony, and Panasonic TVs from 2012 onwards. If you don't see it, go to the TV's App Store and search for "Netflix" to download it free.
+
+**Sign in to Netflix**
+Open the Netflix app. Select "Sign In." Use your TV remote to enter your email address and password. Netflix may also give you a code to enter at netflix.com/tv8 on your phone to sign in without typing.
+
+**Browse and watch**
+Use your remote's directional buttons to browse categories. Press OK or Enter to select a show. Press the Play button or OK again to start watching.
+
+**Netflix on an Amazon Fire Stick**
+Netflix comes pre-installed. From the Fire Stick home screen, select Netflix and sign in.
+
+**Parental controls**
+In Netflix settings, you can create a Kids profile that only shows age-appropriate content, or set a PIN to restrict access to mature content.`,
+  },
+  {
+    slug: 'set-up-roku',
+    title: 'How to Set Up a Roku Streaming Device',
+    excerpt: 'Roku is a small device that plugs into your TV and gives you access to Netflix, BBC iPlayer, YouTube, and hundreds more channels.',
+    category: 'how-to',
+    tags: ['roku', 'streaming', 'tv', 'setup', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📺',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**What's in the box?**
+Your Roku comes with: the Roku stick or box, an HDMI cable or the stick itself (which plugs directly into the TV), a remote control, and batteries.
+
+**Connect to your TV**
+Plug the Roku into a spare HDMI port on your TV. Plug the Roku's power cable into the mains. Switch your TV to the correct HDMI input using your TV remote (usually an "Input" or "Source" button).
+
+**Follow the on-screen setup**
+Roku will walk you through the setup automatically:
+1. Choose your language
+2. Connect to your home Wi-Fi — enter your Wi-Fi password using the on-screen keyboard
+3. The Roku will update its software (this takes a few minutes)
+4. You'll be asked to create a free Roku account or sign in at roku.com/link
+
+**Add channels (apps)**
+From the Roku home screen, select "Streaming Channels" to browse the Channel Store. Free channels include BBC iPlayer, ITV Hub, All4, YouTube. Paid services like Netflix and Disney+ require their own subscriptions.
+
+**The Roku remote**
+The remote has dedicated buttons for popular services. Use the directional pad to navigate and OK to select. The * button opens settings for whatever you're watching. The home button always takes you back to the main menu.`,
+  },
+  {
+    slug: 'use-amazon-fire-stick',
+    title: 'How to Use an Amazon Fire Stick',
+    excerpt: 'The Amazon Fire Stick turns any TV into a smart TV — here\'s how to set it up and start watching.',
+    category: 'how-to',
+    tags: ['fire-stick', 'amazon', 'streaming', 'tv', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔥',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Plug it in**
+Insert the Fire Stick into an HDMI port on your TV. Plug the power adapter into the mains and connect it to the Fire Stick. Switch your TV to that HDMI input.
+
+**Pair the remote**
+The remote usually pairs automatically. If not, press and hold the Home button (🏠) for 10 seconds. Insert batteries if needed.
+
+**Connect to Wi-Fi**
+Follow the on-screen setup to connect to your home Wi-Fi network. Enter your password using the on-screen keyboard.
+
+**Sign in with your Amazon account**
+Enter your Amazon email and password. If you bought the Fire Stick from Amazon while logged in, it may already be registered to your account.
+
+**Find and watch content**
+The home screen shows apps across the top: Netflix, BBC iPlayer, Prime Video, YouTube, ITV Hub, etc. Use the directional pad to navigate. Press the magnifying glass (🔍) at the top to search across all services at once.
+
+**Alexa on Fire Stick**
+Press the microphone button on the remote and say "Search for [show name]" or "Play [show name] on Netflix." Alexa can also control volume, play/pause, and answer general questions.
+
+**Parental controls**
+Settings > Parental Controls — set a PIN to restrict purchases or control what content is accessible.`,
+  },
+  {
+    slug: 'cast-phone-to-tv',
+    title: 'How to Cast Your Phone Screen to the TV',
+    excerpt: 'Show photos, videos, or anything from your phone on the big screen — here\'s how to cast using Chromecast, AirPlay, or screen mirroring.',
+    category: 'how-to',
+    tags: ['cast', 'chromecast', 'airplay', 'tv', 'phone', 'streaming'],
+    readTime: '4 min',
+    thumbnailEmoji: '📡',
+    publishedAt: '2026-03-31',
+    difficulty: 'Intermediate',
+    body: `**Option 1: Chromecast (Android phones + Chrome browser)**
+1. Plug a Chromecast into your TV's HDMI port and set it up using the Google Home app
+2. Open a supported app (YouTube, Netflix, Google Photos) on your Android phone
+3. Tap the Cast icon (rectangle with Wi-Fi waves) in the app
+4. Select your Chromecast from the list
+5. The content will play on your TV. Your phone becomes the remote control.
+
+**Option 2: AirPlay (iPhone + Apple TV or AirPlay-compatible TV)**
+1. Make sure your iPhone and Apple TV (or compatible smart TV) are on the same Wi-Fi network
+2. On your iPhone, open the app you want to cast (or open Photos/Videos)
+3. Tap the Share icon (box with arrow) or the AirPlay icon (rectangle with triangle at bottom)
+4. Select your Apple TV or TV from the list
+
+**Option 3: Screen Mirroring on Android (Miracast)**
+On many Samsung, LG, and other Android phones: swipe down for quick settings, look for "Smart View," "Screen Mirror," or "Cast." Tap it and select your TV. This mirrors your entire phone screen.
+
+**Option 4: HDMI adapter**
+For any phone: buy a USB-C to HDMI or Lightning to HDMI adapter. Connect your phone to the TV via HDMI. Switch the TV input and your phone screen appears on the TV.`,
+  },
+  {
+    slug: 'turn-on-subtitles-netflix',
+    title: 'How to Turn On Subtitles and Captions on Netflix',
+    excerpt: 'Add subtitles to any Netflix show in seconds — perfect for hard-of-hearing viewers or for watching with the sound low.',
+    category: 'how-to',
+    tags: ['netflix', 'subtitles', 'captions', 'accessibility', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**While watching on a TV**
+Press any button on your remote to show the playback controls. Look for a speech bubble or "CC" icon, or a "Subtitles & Audio" option. Select it, then choose "English" (or your preferred language) from the subtitle options.
+
+**While watching on a computer**
+Click the screen to show playback controls. Click the speech bubble icon (💬) in the bottom right. Choose a subtitle language.
+
+**While watching on a phone or tablet**
+Tap the screen to show controls. Tap the speech bubble icon or "Audio & Subtitles" button. Select your preferred subtitle language.
+
+**Change subtitle appearance**
+You can make subtitles larger and easier to read. On a TV: go to Netflix Settings > Subtitle Appearance. On a phone: Netflix app > More (☰) > Subtitle Appearance. You can change font size, colour, background, and more.
+
+**Set subtitles as default**
+Netflix doesn't save your subtitle preference globally. You'll need to turn them on for each show. However, your preference is remembered within a show.
+
+**Subtitles for the deaf and hard-of-hearing (SDH)**
+Look for "English [CC]" or "English [SDH]" — these include descriptions of sounds and music, not just spoken dialogue.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // WINDOWS ADDITIONS (5 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'check-for-viruses-windows',
+    title: 'How to Check Your Windows PC for Viruses',
+    excerpt: 'Windows has a free built-in antivirus called Windows Security. Here\'s how to run a virus scan right now.',
+    category: 'windows-guides',
+    tags: ['windows', 'virus', 'security', 'antivirus', 'scan', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🦠',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Windows Security is built in and free**
+Windows 10 and 11 include Windows Security (formerly Windows Defender), a free antivirus programme that runs automatically in the background. You don't need to pay for separate antivirus software.
+
+**Run a quick scan**
+Click Start, search for "Windows Security," and open it. Click "Virus & threat protection." Click "Quick scan." Windows will scan the most common locations where viruses hide — this takes 1-5 minutes.
+
+**Run a full scan**
+For a thorough check: in Virus & threat protection, click "Scan options" > "Full scan" > "Scan now." A full scan checks every file on your computer and can take 30-60 minutes. Best done overnight.
+
+**What to do if a threat is found**
+If Windows Security finds something, it will show a notification and a red warning on screen. Click "Start actions" and follow the recommendations. Windows will usually quarantine or remove the threat automatically.
+
+**Keep Windows Security updated**
+Windows Security updates its threat database automatically via Windows Update. Make sure Windows Update is enabled: Start > Settings > Windows Update.
+
+**Signs your PC might have a virus**
+- Running noticeably slower than usual
+- Unexpected pop-up adverts
+- Browser homepage changed without you doing it
+- New programmes appearing you didn't install
+- Antivirus has been disabled`,
+  },
+  {
+    slug: 'clear-browser-cache-windows',
+    title: 'How to Clear Your Browsing History and Cache',
+    excerpt: 'Clearing your browser\'s cache and history can fix website loading problems and free up storage space.',
+    category: 'windows-guides',
+    tags: ['windows', 'browser', 'cache', 'history', 'chrome', 'edge', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🧹',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Why clear your cache?**
+Your browser saves copies of websites (images, scripts) to load them faster next time. But this stored data (called cache) can become outdated and cause pages to load incorrectly, or slow down your browser.
+
+**Google Chrome**
+Press Ctrl+Shift+Delete. A "Clear browsing data" window opens. Choose the time range ("All time" for a full clear). Tick "Browsing history," "Cookies and other site data," and "Cached images and files." Click "Clear data."
+
+**Microsoft Edge**
+Press Ctrl+Shift+Delete. Tick the same options as Chrome. Click "Clear now."
+
+**Mozilla Firefox**
+Press Ctrl+Shift+Delete. Choose "Everything" from the time range dropdown. Tick all boxes. Click "OK."
+
+**Safari (Mac)**
+History menu > Clear History. Choose "all history" from the dropdown. Click "Clear History."
+
+**What happens after clearing**
+- Websites will load slightly slower the first time (they need to rebuild the cache)
+- You'll be logged out of most websites — have your passwords ready
+- Pages that weren't loading correctly should now load fresh
+
+**Tip: Use InPrivate/Incognito mode**
+Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.`,
+  },
+  {
+    slug: 'take-screenshot-windows',
+    title: 'How to Take a Screenshot on Windows',
+    excerpt: 'Capture anything on your computer screen to save or share — there are several ways to do this on Windows.',
+    category: 'windows-guides',
+    tags: ['windows', 'screenshot', 'snip', 'tips', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Method 1: Snipping Tool (Windows 11) — recommended**
+Press Win+Shift+S. Your screen will dim and a small toolbar appears at the top. Choose "Rectangular Snip" to drag and select any area of the screen. The screenshot copies to your clipboard and saves automatically. Click the notification to open and edit it.
+
+**Method 2: Print Screen key (older method)**
+Press the PrtSc (Print Screen) key on your keyboard. This copies the entire screen to your clipboard. Open Paint (search in Start), press Ctrl+V to paste, then Ctrl+S to save.
+
+**Method 3: Screenshot of just one window**
+Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another programme.
+
+**Method 4: Win+PrtSc (auto-save)**
+Press the Windows key and PrtSc at the same time. The screen will flash briefly. The screenshot is automatically saved to: Pictures > Screenshots folder.
+
+**Finding your screenshots**
+Open File Explorer, go to Pictures > Screenshots. All screenshots taken with Win+PrtSc are saved here automatically.
+
+**Snipping Tool app**
+For more control: search "Snipping Tool" in the Start menu. You can set a timer (useful for capturing menus that disappear), annotate screenshots, and save in different formats.`,
+  },
+  {
+    slug: 'zip-files-windows',
+    title: 'How to Compress Files (Zip) to Send by Email',
+    excerpt: 'Got multiple files to send? Compress them into one zip file to make sending by email quicker and easier.',
+    category: 'windows-guides',
+    tags: ['windows', 'zip', 'compress', 'email', 'files', 'intermediate'],
+    readTime: '3 min',
+    thumbnailEmoji: '🗜️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Intermediate',
+    body: `**What is a zip file?**
+A zip file is a "container" that holds multiple files compressed into a smaller size. It makes it easier to send several documents or photos as one attachment.
+
+**Create a zip file (Windows)**
+1. Open File Explorer and navigate to the files or folder you want to compress
+2. Select the files you want (hold Ctrl and click each one, or Ctrl+A for all)
+3. Right-click the selected files
+4. Choose "Send to" > "Compressed (zipped) folder" (Windows 10) or "Compress to ZIP file" (Windows 11)
+5. A new .zip file appears in the same folder. Rename it something descriptive.
+
+**Extract (unzip) a zip file**
+If someone sends you a zip file: double-click it to see its contents. Or right-click > "Extract All" > choose where to save the extracted files > click Extract.
+
+**Email attachment size limits**
+Most email services allow attachments up to 25MB. If your zip file is larger, use Google Drive or WeTransfer (free) instead — upload the file there and share a link.
+
+**Password-protect a zip file**
+Windows doesn't support password-protecting zip files natively, but you can download the free 7-Zip app from 7-zip.org to create password-protected archives.`,
+  },
+  {
+    slug: 'windows-update-check',
+    title: 'How to Check Your Windows Updates Are Up to Date',
+    excerpt: 'Keeping Windows updated is one of the most important things you can do for your computer\'s security. Here\'s how to check and install updates.',
+    category: 'windows-guides',
+    tags: ['windows', 'update', 'security', 'maintenance', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Why updates matter**
+Windows updates fix security vulnerabilities — gaps in the software that hackers could exploit. They also fix bugs and can improve your computer's performance. It's important to install them regularly.
+
+**Check for updates now**
+Click Start > Settings (⚙️) > Windows Update. Click "Check for updates." Windows will look for any available updates.
+
+**Install available updates**
+If updates are found, click "Download & install." Some updates install in the background; others need a restart. Let the computer restart when prompted — don't skip it.
+
+**Enable automatic updates**
+In Windows Update settings, click "Advanced options" and make sure "Receive updates for other Microsoft products" is on. Under "Active hours," set the times you use your computer — Windows will schedule restarts outside of those hours.
+
+**Driver updates**
+Windows Update also installs updates for your printer, graphics card, and other hardware. These are included automatically — you don't need to update drivers separately in most cases.
+
+**How long do updates take?**
+Most monthly updates take 5-15 minutes. Major feature updates (twice a year) can take 30-60 minutes. It's best to start an update when you won't need the computer for a while.`,
+  },
+
+  // ═══════════════════════════════════════════
+  // MAC ADDITIONS (5 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'take-screenshot-mac',
+    title: 'How to Take a Screenshot on Mac',
+    excerpt: 'Capture any part of your Mac screen with a simple keyboard shortcut — then find, edit, or share it in seconds.',
+    category: 'mac-guides',
+    tags: ['mac', 'screenshot', 'tips', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Full screen screenshot**
+Press Cmd+Shift+3. A thumbnail appears in the bottom right corner of your screen. Click it to edit, or wait and it saves automatically to your desktop as a .png file.
+
+**Select a portion of the screen**
+Press Cmd+Shift+4. Your cursor turns into crosshairs. Click and drag to select the area you want to capture. Release the mouse to take the screenshot. It saves to your desktop.
+
+**Screenshot of a specific window**
+Press Cmd+Shift+4, then press the Space bar. Your cursor turns into a camera. Click on any window to capture just that window (with a subtle shadow). Great for capturing dialogue boxes.
+
+**Screenshot toolbar (macOS Mojave and later)**
+Press Cmd+Shift+5. A small toolbar appears at the bottom of the screen with options for full screen, window, or selected area — and also screen recording. Useful if you can't remember the other shortcuts.
+
+**Copy to clipboard instead of saving**
+Add Ctrl to any of the above shortcuts (e.g., Ctrl+Cmd+Shift+3) to copy the screenshot to your clipboard instead of saving it. You can then paste it directly into an email or document with Cmd+V.
+
+**Finding your screenshots**
+Screenshots save to the Desktop by default. In Cmd+Shift+5 options, you can change the save location.`,
+  },
+  {
+    slug: 'force-quit-mac',
+    title: 'How to Force Quit a Frozen App on Mac',
+    excerpt: 'When a Mac app freezes and won\'t respond, Force Quit closes it without crashing your whole computer.',
+    category: 'mac-guides',
+    tags: ['mac', 'force-quit', 'frozen', 'troubleshoot', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Method 1: Keyboard shortcut (quickest)**
+Press Cmd+Option+Esc. The Force Quit Applications window opens. Select the app that says "(not responding)" and click "Force Quit."
+
+**Method 2: Apple menu**
+Click the Apple logo (🍎) in the top left corner > Force Quit. Same window appears — select the stuck app and click Force Quit.
+
+**Method 3: Right-click the Dock icon**
+Hold Option and right-click (or two-finger click) on the app's icon in the Dock. You'll see "Force Quit" at the top of the context menu. Click it.
+
+**Method 4: Activity Monitor (for stubborn cases)**
+Open Activity Monitor (search in Spotlight with Cmd+Space). Find the app in the list, click it, then click the X button in the top left of Activity Monitor. Click "Force Quit" to confirm.
+
+**After force quitting**
+You may lose unsaved work in that app. When you re-open the app, it may offer to restore your previous work — click "Restore" if available.
+
+**If the whole Mac is frozen**
+Hold the power button for 5-10 seconds to force a hard shutdown. Wait 10 seconds and press the power button to restart. Do this only as a last resort.`,
+  },
+  {
+    slug: 'find-files-spotlight-mac',
+    title: 'How to Find Any File on Your Mac Using Spotlight',
+    excerpt: 'Spotlight is the fastest way to find files, apps, contacts, and answers on a Mac — here\'s how to use it.',
+    category: 'mac-guides',
+    tags: ['mac', 'spotlight', 'search', 'files', 'beginner'],
+    readTime: '2 min',
+    thumbnailEmoji: '🔍',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Open Spotlight**
+Press Cmd+Space. A search bar appears in the centre of your screen. Start typing immediately.
+
+**Search for a file**
+Type the filename or part of it. Spotlight shows results instantly as you type. Use the arrow keys to move through results, and press Enter to open the selected item.
+
+**Search for an app**
+Type the app name (e.g., "Pages," "Safari," "Photos") and press Enter to open it. Much faster than looking through the Applications folder.
+
+**Search for a word inside a document**
+Spotlight can search inside documents, not just file names. Type a word or phrase you remember from the document — Spotlight will find documents containing that text.
+
+**Get quick answers**
+Spotlight can also: calculate maths (type "15% of 340"), convert units (type "5 miles in km"), look up word definitions (type "define serendipity"), and show local weather.
+
+**Open Finder search for more detail**
+In Spotlight results, click "Search in Finder" at the bottom to open a full Finder search window with more filter options (file type, date modified, size, etc.).`,
+  },
+  {
+    slug: 'check-mac-storage',
+    title: 'How to Check How Much Storage Your Mac Has Left',
+    excerpt: 'Running low on storage can slow your Mac down. Here\'s how to check what\'s using space and how to free some up.',
+    category: 'mac-guides',
+    tags: ['mac', 'storage', 'space', 'maintenance', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '💾',
+    publishedAt: '2026-03-31',
+    difficulty: 'Beginner',
+    body: `**Check your storage at a glance**
+Click the Apple logo (🍎) > About This Mac > Storage (or "More Info" on newer Macs, then "Storage Settings"). A colour-coded bar shows how your storage is divided — apps, photos, documents, system, and free space.
+
+**What the colours mean**
+- Grey/dark: macOS system files
+- Purple: apps
+- Pink: photos
+- Yellow: documents
+- Green or white: available free space
+
+**Optimise storage automatically**
+In the Storage overview, click "Manage." You'll see recommendations like "Store in iCloud" and "Optimise Storage." These move old files to iCloud to free up local space — you can still access them, but they download on demand.
+
+**Find large files manually**
+In Finder, press Cmd+F. Click "Kind" (first dropdown) and change to "File Size." Set the second dropdown to "is greater than" and type 100 (MB). This shows all files over 100MB so you can decide which to delete.
+
+**Empty the Trash**
+Right-click the Trash icon in the Dock and choose "Empty Trash." Files you've deleted stay in the Trash until you empty it — they still take up space until then.
+
+**Remove unused apps**
+Open Finder > Applications. Drag any apps you no longer use to the Trash. Empty the Trash afterwards.`,
+  },
+  {
+    slug: 'time-machine-backup-mac',
+    title: 'How to Back Up Your Mac with Time Machine',
+    excerpt: 'Time Machine is Apple\'s free built-in backup tool. Set it up once and it automatically backs up your Mac every hour.',
+    category: 'mac-guides',
+    tags: ['mac', 'backup', 'time-machine', 'safety', 'intermediate'],
+    readTime: '4 min',
+    thumbnailEmoji: '⏱️',
+    publishedAt: '2026-03-31',
+    difficulty: 'Intermediate',
+    body: `**What you need**
+An external hard drive or SSD with at least as much storage as your Mac (ideally 2x more). These are available from electronics shops or Amazon. A 1TB drive costs around £40-60 and is plenty for most people.
+
+**Connect the drive**
+Plug your external drive into your Mac using USB or USB-C. It should appear on your desktop and in Finder.
+
+**Set up Time Machine**
+Click the Apple logo (🍎) > System Settings (or System Preferences) > Time Machine > click "Add Backup Disk" (or "Select Backup Disk"). Choose your external drive and click "Set Up Disk."
+
+**Let it run**
+Time Machine starts its first backup immediately — this can take several hours if you have a lot of files. Subsequent backups happen automatically every hour when the drive is connected and take only a few minutes.
+
+**Restore a file from backup**
+If you accidentally delete a file: connect the drive, open Time Machine from the menu bar, and navigate back in time to find and restore the file.
+
+**Restore your entire Mac**
+If your Mac is replaced or has a major failure: set up the new Mac and choose "Restore from Time Machine backup" in the setup assistant. Everything will be restored.
+
+**Cloud alternative**
+iCloud Drive syncs your Desktop and Documents folders to the cloud automatically. It's not a full backup (unlike Time Machine) but is a useful additional safety net.`,
   },
 ];

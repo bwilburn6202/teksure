@@ -399,6 +399,7 @@ export function TekBot() {
   const [typing, setTyping] = useState(false);
   const [showDevicePicker, setShowDevicePicker] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const enrichedRef = useRef<string>('');
 
   /* Welcome message — updates on page change or device change */
   useEffect(() => {
@@ -408,7 +409,7 @@ export function TekBot() {
       ? `Hi! I'm TekBot 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
       : `Hi! I'm TekBot, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
     setMessages([{ role: 'bot', content: welcome }]);
-  }, [location.pathname]);
+  }, [location.pathname, device]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -444,8 +445,7 @@ export function TekBot() {
         ? `${history.slice(0, -1).join(' ')} ${text}` // prepend prior context for KB matching
         : text;
 
-      // Store enrichedQuery for the timeout below via a ref-like closure trick
-      (send as any)._enriched = enrichedQuery;
+      enrichedRef.current = enrichedQuery;
       return [...prev, { role: 'user', content: text }];
     });
     setInput('');
@@ -455,7 +455,7 @@ export function TekBot() {
 
     setTimeout(() => {
       setTyping(false);
-      const enriched = (send as any)._enriched ?? text;
+      const enriched = enrichedRef.current || text;
       const answer = getResponse(enriched, activeDevice);
       const related = findRelatedGuides(enriched);
 

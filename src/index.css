@@ -27,7 +27,7 @@
     --ring: 221 83% 53%;
     --radius: 0.75rem;
 
-    --teksure-teal: 221 83% 53%;
+    --teksure-blue: 221 83% 53%;
     --teksure-success: 142 71% 45%;
     --teksure-warning: 38 92% 50%;
     --teksure-info: 217 91% 60%;
@@ -63,7 +63,7 @@
     --input: 215 28% 17%;
     --ring: 217 91% 60%;
 
-    --teksure-teal: 217 91% 60%;
+    --teksure-blue: 217 91% 60%;
     --teksure-success: 142 71% 45%;
     --teksure-warning: 38 92% 55%;
     --teksure-info: 217 91% 60%;
@@ -168,8 +168,8 @@ html.font-size-xxl {
     @apply bg-muted text-muted-foreground;
   }
   .status-offered {
-    background-color: hsl(var(--teksure-teal) / 0.1);
-    color: hsl(var(--teksure-teal));
+    background-color: hsl(var(--teksure-blue) / 0.1);
+    color: hsl(var(--teksure-blue));
   }
   .status-accepted {
     background-color: hsl(var(--teksure-info) / 0.1);
