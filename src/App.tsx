@@ -95,6 +95,7 @@ import AiTutor from "./pages/AiTutor";
 import ProgressReport from "./pages/ProgressReport";
 import FamilySharing from "./pages/FamilySharing";
 import Caregiver from "./pages/Caregiver";
+import CyberToolkit from "./pages/tools/CyberToolkit";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1 } },
@@ -216,6 +217,7 @@ const AppContent = () => {
         <Route path="/progress-report" element={<ProgressReport />} />
         <Route path="/family-sharing" element={<FamilySharing />} />
         <Route path="/caregiver" element={<Caregiver />} />
+        <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
