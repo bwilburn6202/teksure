@@ -19,22 +19,26 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Recognise Fake Pop-Up Virus Warnings',
-  summary: 'If a website shows a scary pop-up saying your computer is infected, don\'t click anything — it\'s almost certainly a scam designed to trick you into installing malware or calling a fake support number.',
-  full: 'Fake virus warnings usually appear as big, flashing pop-ups while you\'re browsing the web. They might say "Your computer is infected!" or "Call this number immediately!" and try to create panic. Real antivirus software will never ask you to call a phone number or click a pop-up inside your browser. If you see one of these warnings, don\'t click any buttons on the pop-up — instead, close the browser tab by pressing the X on the tab itself, or press Ctrl+W (Cmd+W on Mac). If the pop-up won\'t let you close the tab, force-quit your browser entirely using Task Manager (Ctrl+Alt+Delete on Windows) or Force Quit (Cmd+Option+Esc on Mac). After closing it, clear your browser cache to make sure it doesn\'t come back.',
+  title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
+  summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',  full: 'Scammers often create websites with addresses very similar to popular sites — for example, "amaz0n.com" instead of "amazon.com". If you type a web address by hand, it\'s easy to make a small mistake and end up on a fraudulent site without realising. The safest solution is to bookmark your important websites (like your bank, email, and shopping sites) so you can access them with a single click. In most browsers, you can press Ctrl+D (or Cmd+D on Mac) to bookmark the page you\'re currently on. You can also organise your bookmarks into folders like "Banking", "Shopping", and "Email" to keep them tidy. Once bookmarked, always use the bookmark to visit the site rather than typing the address manually.',
   category: 'Safety',
-  icon: AlertTriangle,
+  icon: Star,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Recognise Fake Pop-Up Virus Warnings',
+    summary: 'If a website shows a scary pop-up saying your computer is infected, don\'t click anything — it\'s almost certainly a scam designed to trick you into installing malware or calling a fake support number.',
+    category: 'Safety',
+    icon: AlertTriangle,
+  },
   {
     title: 'Check If Your Email Was in a Data Breach',
     summary: 'Visit haveibeenpwned.com to find out if your email address has appeared in any known data breaches. If it has, change your password for those affected accounts right away.',
     category: 'Security',
     icon: ShieldCheck,
   },
-  {
-    title: 'Review Your App Permissions',
+  {    title: 'Review Your App Permissions',
     summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
     category: 'Safety',
     icon: Smartphone,
@@ -57,8 +61,7 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: KeyRound,
   },
-  {
-    title: 'Spot Phishing Emails',
+  {    title: 'Spot Phishing Emails',
     summary: 'Look for spelling mistakes, urgent language, and suspicious sender addresses. When in doubt, don\'t click.',
     category: 'Safety',
     icon: ShieldAlert,
@@ -81,8 +84,7 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: Shield,
   },
-  {
-    title: 'Video Calling Tips',
+  {    title: 'Video Calling Tips',
     summary: 'Use headphones for better audio, position your camera at eye level, and make sure you\'re well-lit from the front.',
     category: 'Communication',
     icon: Video,
@@ -105,8 +107,7 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: Lock,
   },
-  {
-    title: 'Avoid Fake Websites',
+  {    title: 'Avoid Fake Websites',
     summary: 'Check for HTTPS, look at the domain carefully, and don\'t trust sites with lots of pop-ups or too-good-to-be-true deals.',
     category: 'Safety',
     icon: Globe,
@@ -126,7 +127,6 @@ const categoryColors: Record<string, string> = {
   Productivity: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
   Communication: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
 };
-
 export default function Tips() {
   return (
     <>
@@ -153,8 +153,7 @@ export default function Tips() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mb-20"
-          >
-            <Card className="rounded-2xl border border-border bg-card">
+          >            <Card className="rounded-2xl border border-border bg-card">
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1">
@@ -183,8 +182,7 @@ export default function Tips() {
                 <motion.div
                   key={tip.title}
                   initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.05 }}
                 >
                   <Card className="h-full rounded-2xl border border-border bg-card hover:border-border/60 transition-all group">
