@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
-  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck,
+  Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Check If Your Email Was in a Data Breach',
-  summary: 'Visit haveibeenpwned.com to find out if your email address has appeared in any known data breaches. If it has, change your password for those affected accounts right away.',
-  full: 'Head to haveibeenpwned.com — a free, trusted tool run by a well-known security researcher — and type in your email address. It checks your address against billions of leaked records from thousands of known data breaches. If your email shows up, don\'t panic: simply change the password for any affected accounts and make sure you\'re not reusing that password elsewhere. It takes less than a minute to check, and it\'s one of the most useful security checks you can do right now.',
-  category: 'Security',
-  icon: ShieldCheck,
+  title: 'Recognise Fake Pop-Up Virus Warnings',
+  summary: 'If a website shows a scary pop-up saying your computer is infected, don\'t click anything — it\'s almost certainly a scam designed to trick you into installing malware or calling a fake support number.',
+  full: 'Fake virus warnings usually appear as big, flashing pop-ups while you\'re browsing the web. They might say "Your computer is infected!" or "Call this number immediately!" and try to create panic. Real antivirus software will never ask you to call a phone number or click a pop-up inside your browser. If you see one of these warnings, don\'t click any buttons on the pop-up — instead, close the browser tab by pressing the X on the tab itself, or press Ctrl+W (Cmd+W on Mac). If the pop-up won\'t let you close the tab, force-quit your browser entirely using Task Manager (Ctrl+Alt+Delete on Windows) or Force Quit (Cmd+Option+Esc on Mac). After closing it, clear your browser cache to make sure it doesn\'t come back.',
+  category: 'Safety',
+  icon: AlertTriangle,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Check If Your Email Was in a Data Breach',
+    summary: 'Visit haveibeenpwned.com to find out if your email address has appeared in any known data breaches. If it has, change your password for those affected accounts right away.',
+    category: 'Security',
+    icon: ShieldCheck,
+  },
   {
     title: 'Review Your App Permissions',
     summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
