@@ -121,10 +121,10 @@ export default function DeviceCompare() {
       <SEOHead title="Device Comparison Tool | TekSure" description="Compare two devices side by side — price, battery, ease of use, and more." path="/tools/device-compare" />
       <Navbar />
 
-      <section className="hero-gradient text-primary-foreground">
+      <section className="border-b">
         <div className="container py-16 md:py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
-            <ArrowLeftRight className="h-12 w-12 mx-auto mb-4 text-secondary" />
+            <ArrowLeftRight className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Device Comparison</h1>
             <p className="text-lg opacity-80">Pick two devices and compare them side by side.</p>
           </motion.div>

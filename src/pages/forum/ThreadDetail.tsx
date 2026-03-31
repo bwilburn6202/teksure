@@ -140,7 +140,6 @@ export default function ThreadDetail() {
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto px-4 py-8">
-          {/* Back */}
           <Link
             to="/forum"
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6 transition-colors"
@@ -149,7 +148,7 @@ export default function ThreadDetail() {
           </Link>
 
           {/* Original Post */}
-          <Card className="mb-6 border-border">
+          <Card className="rounded-2xl border border-border bg-card mb-6">
             <CardContent className="p-6">
               <div className="flex items-center gap-2 mb-3 flex-wrap">
                 {categoryInfo && (
@@ -187,7 +186,7 @@ export default function ThreadDetail() {
                 {replies.length} {replies.length === 1 ? 'Reply' : 'Replies'}
               </h2>
               {replies.map((reply, idx) => (
-                <Card key={reply.id} className="border-border">
+                <Card key={reply.id} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-4">
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary">
@@ -214,7 +213,7 @@ export default function ThreadDetail() {
           )}
 
           {/* Reply Box */}
-          <Card className="border-primary/20 bg-primary/5">
+          <Card className="rounded-2xl border border-primary/20 bg-primary/5">
             <CardContent className="p-5">
               <h3 className="font-semibold mb-3">
                 {user ? 'Write a Reply' : 'Sign in to Reply'}

@@ -185,17 +185,19 @@ export default function Setup() {
       <>
         <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
         <Navbar />
-        <main className="container py-24 min-h-[60vh] flex flex-col items-center justify-center text-center gap-6 max-w-xl mx-auto">
-          <CheckCircle2 className="h-16 w-16 text-green-500" />
-          <h1 className="text-3xl font-bold">You're all set up!</h1>
-          <p className="text-muted-foreground text-lg">
-            You've already completed the setup quiz. Head to your profile to see your personalised learning path, or browse all guides.
-          </p>
-          <div className="flex gap-3 flex-wrap justify-center">
-            <Button onClick={() => navigate('/guides')}>Browse Guides</Button>
-            <Button variant="outline" onClick={() => { localStorage.removeItem(STORAGE_KEY); setAlreadyDone(false); }}>
-              Redo Setup
-            </Button>
+        <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
+          <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
+            <CheckCircle2 className="h-16 w-16 text-green-500" />
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>
+            <p className="text-muted-foreground text-lg">
+              You've already completed the setup quiz. Head to your profile to see your personalised learning path, or browse all guides.
+            </p>
+            <div className="flex gap-3 flex-wrap justify-center">
+              <Button onClick={() => navigate('/guides')} className="rounded-xl">Browse Guides</Button>
+              <Button variant="outline" onClick={() => { localStorage.removeItem(STORAGE_KEY); setAlreadyDone(false); }} className="rounded-xl">
+                Redo Setup
+              </Button>
+            </div>
           </div>
         </main>
         <Footer />
@@ -211,12 +213,14 @@ export default function Setup() {
         path="/setup"
       />
       <Navbar />
-      <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
+      <main className="min-h-screen bg-background container py-12 max-w-2xl mx-auto">
 
         {/* Header */}
         <div className="flex items-center gap-3 mb-2">
-          <Sparkles className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Getting Started</h1>
+          <div className="p-2 bg-primary/10 rounded-xl">
+            <Sparkles className="h-6 w-6 text-primary" />
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">Getting Started</h1>
         </div>
         <p className="text-muted-foreground mb-6">
           Answer 3 quick questions and we'll build your personalised starting point.
@@ -237,7 +241,7 @@ export default function Setup() {
           {/* Step 0 — Device */}
           {step === 0 && (
             <motion.div key="device" {...slide}>
-              <h2 className="text-xl font-semibold mb-4">What's your main device?</h2>
+              <h2 className="text-xl font-semibold mb-4 text-primary">What's your main device?</h2>
               <div className="grid gap-3">
                 {devices.map(d => {
                   const Icon = d.icon;
@@ -246,11 +250,11 @@ export default function Setup() {
                     <button
                       key={d.id}
                       onClick={() => { setAnswers(p => ({ ...p, device: d.id })); setStep(1); }}
-                      className={`flex items-center gap-4 p-4 rounded-xl border-2 text-left transition-all hover:border-secondary/60 hover:bg-secondary/5 ${selected ? 'border-secondary bg-secondary/10' : 'border-border bg-card'}`}
+                      className={`flex items-center gap-4 p-4 rounded-xl border-2 text-left transition-all hover:border-primary/60 hover:bg-primary/5 ${selected ? 'border-primary bg-primary/10' : 'border-border bg-card'}`}
                     >
-                      <Icon className="h-8 w-8 text-secondary shrink-0" />
+                      <Icon className="h-8 w-8 text-primary shrink-0" />
                       <div>
-                        <div className="font-medium">{d.label}</div>
+                        <div className="font-medium text-primary">{d.label}</div>
                         <div className="text-sm text-muted-foreground">{d.desc}</div>
                       </div>
                       <ChevronRight className="h-5 w-5 text-muted-foreground ml-auto shrink-0" />
@@ -264,7 +268,7 @@ export default function Setup() {
           {/* Step 1 — Confidence */}
           {step === 1 && (
             <motion.div key="confidence" {...slide}>
-              <h2 className="text-xl font-semibold mb-4">How comfortable are you with technology?</h2>
+              <h2 className="text-xl font-semibold mb-4 text-primary">How comfortable are you with technology?</h2>
               <div className="grid gap-3">
                 {confidenceLevels.map(c => {
                   const Icon = c.icon;
@@ -272,11 +276,11 @@ export default function Setup() {
                     <button
                       key={c.id}
                       onClick={() => { setAnswers(p => ({ ...p, confidence: c.id })); setStep(2); }}
-                      className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                      className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                     >
-                      <Icon className="h-8 w-8 text-secondary shrink-0" />
+                      <Icon className="h-8 w-8 text-primary shrink-0" />
                       <div>
-                        <div className="font-medium">{c.label}</div>
+                        <div className="font-medium text-primary">{c.label}</div>
                         <div className="text-sm text-muted-foreground">{c.desc}</div>
                       </div>
                       <ChevronRight className="h-5 w-5 text-muted-foreground ml-auto shrink-0" />
@@ -284,14 +288,14 @@ export default function Setup() {
                   );
                 })}
               </div>
-              <Button variant="ghost" className="mt-4" onClick={() => setStep(0)}>← Back</Button>
+              <Button variant="ghost" className="mt-4 rounded-xl" onClick={() => setStep(0)}>← Back</Button>
             </motion.div>
           )}
 
           {/* Step 2 — Goals */}
           {step === 2 && (
             <motion.div key="goals" {...slide}>
-              <h2 className="text-xl font-semibold mb-1">What do you most want to learn?</h2>
+              <h2 className="text-xl font-semibold mb-1 text-primary">What do you most want to learn?</h2>
               <p className="text-muted-foreground mb-4 text-sm">Pick as many as you like.</p>
               <div className="grid gap-3">
                 {goals.map(g => {
@@ -301,20 +305,20 @@ export default function Setup() {
                     <button
                       key={g.id}
                       onClick={() => toggleGoal(g.id)}
-                      className={`flex items-center gap-4 p-4 rounded-xl border-2 text-left transition-all ${selected ? 'border-secondary bg-secondary/10' : 'border-border bg-card hover:border-secondary/60 hover:bg-secondary/5'}`}
+                      className={`flex items-center gap-4 p-4 rounded-xl border-2 text-left transition-all ${selected ? 'border-primary bg-primary/10' : 'border-border bg-card hover:border-primary/60 hover:bg-primary/5'}`}
                     >
-                      <Icon className={`h-8 w-8 shrink-0 ${selected ? 'text-secondary' : 'text-muted-foreground'}`} />
+                      <Icon className={`h-8 w-8 shrink-0 ${selected ? 'text-primary' : 'text-muted-foreground'}`} />
                       <div>
-                        <div className="font-medium">{g.label}</div>
+                        <div className="font-medium text-primary">{g.label}</div>
                         <div className="text-sm text-muted-foreground">{g.desc}</div>
                       </div>
-                      {selected && <CheckCircle2 className="h-5 w-5 text-secondary ml-auto shrink-0" />}
+                      {selected && <CheckCircle2 className="h-5 w-5 text-primary ml-auto shrink-0" />}
                     </button>
                   );
                 })}
               </div>
               <div className="flex gap-3 mt-6">
-                <Button variant="ghost" onClick={() => setStep(1)}>← Back</Button>
+                <Button variant="ghost" onClick={() => setStep(1)} className="rounded-xl">← Back</Button>
                 <Button
                   onClick={() => {
                     const final = { ...answers, goals: answers.goals.length ? answers.goals : ['basics' as Goal] };
@@ -322,7 +326,7 @@ export default function Setup() {
                     saveAndFinish(final);
                     setStep(3);
                   }}
-                  className="ml-auto"
+                  className="ml-auto rounded-xl"
                 >
                   Show My Learning Path <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
@@ -335,7 +339,7 @@ export default function Setup() {
             <motion.div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
                 <CheckCircle2 className="h-8 w-8 text-green-500" />
-                <h2 className="text-2xl font-bold">Your personalised starting point</h2>
+                <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Your personalised starting point</h2>
               </div>
               <p className="text-muted-foreground mb-6">
                 Based on your answers, here are the best guides to start with. Work through them in order — each one builds on the last.
@@ -343,20 +347,20 @@ export default function Setup() {
 
               <div className="grid gap-4 mb-8">
                 {recs.map((rec, i) => (
-                  <Card key={rec.guideSlug} className="hover:shadow-md transition-shadow">
+                  <Card key={rec.guideSlug} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                     <CardContent className="p-4 flex items-start gap-4">
-                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-secondary/10 text-xl shrink-0 font-bold text-secondary">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-xl shrink-0 font-bold text-primary">
                         {i + 1}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className="text-lg">{rec.emoji}</span>
-                          <span className="font-semibold">{rec.title}</span>
+                          <span className="font-semibold text-primary">{rec.title}</span>
                         </div>
                         <p className="text-sm text-muted-foreground mt-0.5">{rec.reason}</p>
                         <span className="text-xs text-muted-foreground">{rec.category}</span>
                       </div>
-                      <Button size="sm" variant="outline" asChild className="shrink-0">
+                      <Button size="sm" variant="outline" asChild className="shrink-0 rounded-xl">
                         <a href={`/guides/${rec.guideSlug}`}>
                           Start <ChevronRight className="h-3 w-3 ml-1" />
                         </a>
@@ -366,8 +370,8 @@ export default function Setup() {
                 ))}
               </div>
 
-              <div className="rounded-xl bg-secondary/10 border border-secondary/20 p-5 mb-6">
-                <p className="font-semibold text-secondary mb-1">🎯 Quick tip</p>
+              <div className="rounded-xl bg-primary/10 border border-primary/20 p-5 mb-6">
+                <p className="font-semibold text-primary mb-1">🎯 Quick tip</p>
                 <p className="text-sm text-muted-foreground">
                   Don't try to do everything at once. Complete one guide, then take a break.
                   You'll find it all starts to make sense faster than you think.
@@ -375,10 +379,10 @@ export default function Setup() {
               </div>
 
               <div className="flex gap-3 flex-wrap">
-                <Button onClick={() => navigate('/guides')}>
+                <Button onClick={() => navigate('/guides')} className="rounded-xl">
                   Browse All Guides <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
-                <Button variant="outline" onClick={() => navigate('/tools')}>
+                <Button variant="outline" onClick={() => navigate('/tools')} className="rounded-xl">
                   Explore Tools
                 </Button>
               </div>

@@ -33,7 +33,7 @@ const NotFound = () => {
           {/* Big emoji + code */}
           <div className="text-8xl mb-4 select-none">🔍</div>
           <h1 className="text-5xl font-black text-muted-foreground/30 mb-2">404</h1>
-          <h2 className="text-2xl font-bold mb-3">Page not found</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">Page not found</h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Sorry — the page{' '}
             <code className="bg-muted px-1.5 py-0.5 rounded text-sm font-mono">
@@ -63,14 +63,14 @@ const NotFound = () => {
                 to={to}
                 className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 hover:border-secondary/60 hover:shadow-sm transition-all group"
               >
-                <div className="h-9 w-9 rounded-full bg-muted flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/10 transition-colors">
-                  <Icon className="h-4 w-4 text-muted-foreground group-hover:text-secondary transition-colors" />
+                <div className="h-9 w-9 rounded-full bg-muted flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
+                  <Icon className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-semibold">{label}</p>
                   <p className="text-xs text-muted-foreground leading-snug">{desc}</p>
                 </div>
-                <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-secondary transition-colors mt-0.5 flex-shrink-0" />
+                <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-primary transition-colors mt-0.5 flex-shrink-0" />
               </Link>
             ))}
           </div>

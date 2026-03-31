@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Users, Mail, Copy, CheckCircle2, Heart, Shield, UserPlus, Trash2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
-import { useAuthContext } from '@/contexts/AuthContext';
+import { useAuth } from '@/contexts/AuthContext';
 import { Link } from 'react-router-dom';
 
 const MAX_MEMBERS = 4;
@@ -17,7 +17,7 @@ const MAX_MEMBERS = 4;
 interface Member { name: string; email: string; status: 'pending' | 'active'; added: string; }
 
 export default function FamilySharing() {
-  const { user } = useAuthContext();
+  const { user } = useAuth();
   const [members, setMembers] = useState<Member[]>(() => {
     try { return JSON.parse(localStorage.getItem('teksure-family-members') ?? '[]'); } catch { return []; }
   });
@@ -71,7 +71,7 @@ export default function FamilySharing() {
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
             <div className="text-4xl mb-3">👨‍👩‍👧‍👦</div>
-            <h1 className="text-3xl font-bold text-primary mb-2">Family Tech Sharing</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2">Family Tech Sharing</h1>
             <p className="text-muted-foreground">Share your TekSure access with up to {MAX_MEMBERS} family members — each gets their own account and progress tracking.</p>
           </div>
         </div>

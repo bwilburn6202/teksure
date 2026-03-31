@@ -14,7 +14,6 @@ export default function PaymentSuccess() {
   const bookingRef     = bookingId.slice(0, 8).toUpperCase() || 'TEKSURE';
   const [countdown, setCountdown] = useState(10);
 
-  // Auto-redirect to my-requests after 10 s
   useEffect(() => {
     if (countdown <= 0) {
       navigate('/my-requests');
@@ -36,7 +35,6 @@ export default function PaymentSuccess() {
       <main className="min-h-[80vh] flex items-center justify-center px-4 py-16">
         <div className="max-w-md w-full text-center space-y-6">
 
-          {/* Success icon */}
           <div className="flex justify-center">
             <div className="h-24 w-24 rounded-full bg-green-100 flex items-center justify-center">
               <CheckCircle2 className="h-12 w-12 text-green-600" />
@@ -44,14 +42,13 @@ export default function PaymentSuccess() {
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold mb-2">Deposit received! 🎉</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Deposit received! 🎉</h1>
             <p className="text-muted-foreground text-lg">
               Your £15 deposit has been processed and your booking is confirmed.
             </p>
           </div>
 
-          {/* Booking reference */}
-          <Card className="bg-green-50 border-green-200">
+          <Card className="rounded-2xl border border-green-200 bg-green-50">
             <CardContent className="p-5">
               <p className="text-xs text-muted-foreground mb-1 font-medium uppercase tracking-wide">
                 Booking reference
@@ -62,8 +59,7 @@ export default function PaymentSuccess() {
             </CardContent>
           </Card>
 
-          {/* What happens next */}
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="p-5 text-left space-y-3">
               <p className="font-semibold text-sm mb-2">What happens next</p>
               <div className="flex items-start gap-3 text-sm">
@@ -87,7 +83,6 @@ export default function PaymentSuccess() {
             </CardContent>
           </Card>
 
-          {/* Actions */}
           <div className="flex gap-3 flex-col sm:flex-row justify-center">
             <Button asChild>
               <Link to="/my-requests" className="gap-2">
@@ -110,8 +105,7 @@ export default function PaymentSuccess() {
             </button>
           </p>
 
-          {/* Need help */}
-          <div className="text-xs text-muted-foreground border-t pt-4">
+          <div className="text-xs text-muted-foreground border-t border-border pt-4">
             Questions? Email{' '}
             <a href="mailto:hello@teksure.com" className="text-primary hover:underline">
               hello@teksure.com

@@ -148,7 +148,7 @@ export default function Notifications() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
             <Bell className="h-8 w-8 text-primary" />
           </div>
-          <h1 className="text-3xl font-bold mb-2 text-primary">Stay in the Loop</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Stay in the Loop</h1>
           <p className="text-muted-foreground max-w-md mx-auto">
             Get weekly tech tips, instant scam alerts, and new guide announcements — right on your device.
           </p>
@@ -156,14 +156,14 @@ export default function Notifications() {
 
         {/* Main permission card */}
         {!isGranted && !isDenied && notifSupported && (
-          <Card className="mb-6 rounded-2xl border-primary/30 border bg-primary/5">
+          <Card className="mb-6 rounded-2xl border border-primary/30 bg-primary/5">
             <CardContent className="py-8 text-center">
               <Bell className="h-10 w-10 text-primary mx-auto mb-3" />
               <h2 className="text-xl font-semibold mb-2 text-primary">Enable Browser Notifications</h2>
               <p className="text-muted-foreground text-sm mb-6 max-w-sm mx-auto">
                 Click the button below and allow notifications when your browser asks. You can turn them off any time.
               </p>
-              <Button size="lg" onClick={requestPermission} disabled={requesting} className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl">
+              <Button size="lg" onClick={requestPermission} disabled={requesting} className="gap-2 rounded-xl">
                 {requesting ? 'Requesting…' : <><Bell className="h-5 w-5" /> Enable Notifications</>}
               </Button>
             </CardContent>
@@ -172,7 +172,7 @@ export default function Notifications() {
 
         {/* Granted state */}
         {isGranted && (
-          <Card className="mb-6 border-green-500/30 bg-green-500/5">
+          <Card className="mb-6 rounded-2xl border border-green-500/30 bg-green-500/5">
             <CardContent className="py-6">
               <div className="flex items-center gap-3 mb-4">
                 <CheckCircle className="h-6 w-6 text-green-500 shrink-0" />
@@ -194,7 +194,7 @@ export default function Notifications() {
                 {([
                   { key: 'tips', icon: <Zap className="h-4 w-4 text-amber-500" />, label: 'Weekly Tech Tips', desc: 'One helpful tip every week' },
                   { key: 'scamAlerts', icon: <ShieldCheck className="h-4 w-4 text-red-500" />, label: 'Scam Alerts', desc: 'Instant alerts about new scams' },
-                  { key: 'newGuides', icon: <ArrowRight className="h-4 w-4 text-secondary" />, label: 'New Guides', desc: 'When we publish new step-by-step guides' },
+                  { key: 'newGuides', icon: <ArrowRight className="h-4 w-4 text-primary" />, label: 'New Guides', desc: 'When we publish new step-by-step guides' },
                 ] as const).map(({ key, icon, label, desc }) => (
                   <div key={key} className="flex items-center gap-3 p-3 rounded-lg bg-background border border-border">
                     {icon}
@@ -224,7 +224,7 @@ export default function Notifications() {
 
         {/* Denied state */}
         {isDenied && (
-          <Card className="mb-6 border-destructive/30 bg-destructive/5">
+          <Card className="mb-6 rounded-2xl border border-destructive/30 bg-destructive/5">
             <CardContent className="py-6 text-center">
               <BellOff className="h-8 w-8 text-destructive mx-auto mb-3" />
               <h2 className="text-lg font-semibold mb-1">Notifications Blocked</h2>
@@ -242,7 +242,7 @@ export default function Notifications() {
 
         {/* Not supported */}
         {!notifSupported && (
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="py-6 text-center">
               <p className="text-muted-foreground text-sm">
                 Your browser doesn't support push notifications. Try Chrome, Firefox, or Edge for the best experience.
@@ -257,7 +257,7 @@ export default function Notifications() {
           {[
             { icon: <Zap className="h-5 w-5 text-amber-500" />, title: 'Weekly Tech Tips', desc: 'One bite-sized, actionable tip every week — from speeding up your device to staying safe online.' },
             { icon: <ShieldCheck className="h-5 w-5 text-red-500" />, title: 'Scam Alerts', desc: 'Instant notifications when new scams are targeting people like you — so you can stay protected.' },
-            { icon: <Clock className="h-5 w-5 text-secondary" />, title: 'New Guide Announcements', desc: 'Be the first to know when we publish new step-by-step guides on topics you care about.' },
+            { icon: <Clock className="h-5 w-5 text-primary" />, title: 'New Guide Announcements', desc: 'Be the first to know when we publish new step-by-step guides on topics you care about.' },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="flex items-start gap-3 p-4 rounded-xl border border-border bg-muted/30">
               <div className="shrink-0 mt-0.5">{icon}</div>
@@ -271,7 +271,7 @@ export default function Notifications() {
 
         <p className="text-xs text-center text-muted-foreground">
           TekSure never sends spam. You can unsubscribe any time from this page or your browser settings.{' '}
-          <Link to="/guides" className="text-secondary hover:underline">Browse guides instead →</Link>
+          <Link to="/guides" className="text-primary hover:underline">Browse guides instead →</Link>
         </p>
       </main>
 

@@ -163,7 +163,7 @@ export default function ScamReport() {
             </CardContent>
           </Card>
 
-          <Button type="submit" size="lg" disabled={loading} className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+          <Button type="submit" size="lg" disabled={loading} className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
             {loading ? 'Submitting…' : <><CheckCircle2 className="h-4 w-4" /> Submit Report</>}
           </Button>
           <p className="text-xs text-muted-foreground text-center">Fields marked with * are required. All other fields are optional but help us investigate.</p>

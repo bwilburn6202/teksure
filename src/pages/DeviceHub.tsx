@@ -22,7 +22,7 @@ interface DeviceType {
 
 const devices: DeviceType[] = [
   {
-    id: 'desktop', name: 'Windows PC', icon: Monitor, bgClass: 'bg-secondary', guideCount: '152 guides',
+    id: 'desktop', name: 'Windows PC', icon: Monitor, bgClass: 'bg-primary', guideCount: '152 guides',
     keywords: ['windows', 'pc', 'desktop', 'computer', 'taskbar', 'start menu'],
     suggestedGuides: ['turn-pc-on-and-off', 'connect-wifi-windows', 'restart-pc-windows', 'manage-storage-windows', 'use-windows-security-antivirus', 'take-screenshot-windows'],
   },
@@ -32,7 +32,7 @@ const devices: DeviceType[] = [
     suggestedGuides: ['adjust-brightness-windows', 'connect-wifi-windows', 'manage-storage-windows', 'restart-pc-windows', 'take-screenshot-windows', 'connect-bluetooth-windows'],
   },
   {
-    id: 'iphone', name: 'iPhone', icon: Smartphone, bgClass: 'bg-secondary', guideCount: '87 guides',
+    id: 'iphone', name: 'iPhone', icon: Smartphone, bgClass: 'bg-primary', guideCount: '87 guides',
     keywords: ['iphone', 'ios', 'apple', 'icloud', 'siri', 'face id'],
     suggestedGuides: ['use-icloud-mac', 'create-strong-password', 'setup-two-factor-any-account'],
   },
@@ -42,7 +42,7 @@ const devices: DeviceType[] = [
     suggestedGuides: ['create-strong-password', 'setup-two-factor-any-account'],
   },
   {
-    id: 'tablet', name: 'Tablet / iPad', icon: Tablet, bgClass: 'bg-secondary', guideCount: '45 guides',
+    id: 'tablet', name: 'Tablet / iPad', icon: Tablet, bgClass: 'bg-primary', guideCount: '45 guides',
     keywords: ['tablet', 'ipad', 'surface'],
     suggestedGuides: ['use-icloud-mac', 'create-strong-password'],
   },
@@ -52,7 +52,7 @@ const devices: DeviceType[] = [
     suggestedGuides: [],
   },
   {
-    id: 'wifi', name: 'Wi-Fi & Router', icon: Wifi, bgClass: 'bg-secondary', guideCount: '52 guides',
+    id: 'wifi', name: 'Wi-Fi & Router', icon: Wifi, bgClass: 'bg-primary', guideCount: '52 guides',
     keywords: ['wifi', 'wi-fi', 'router', 'network', 'internet', 'modem', 'ethernet', 'dns'],
     suggestedGuides: ['connect-wifi-windows'],
   },

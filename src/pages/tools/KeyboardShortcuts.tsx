@@ -138,7 +138,7 @@ export default function KeyboardShortcuts() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10 print:mb-4">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <Keyboard className="h-8 w-8 text-secondary print:hidden" />
+              <Keyboard className="h-8 w-8 text-primary print:hidden" />
               <h1 className="text-3xl font-bold print:text-2xl">Keyboard Shortcuts</h1>
             </div>
             <p className="text-muted-foreground max-w-2xl print:text-sm">
@@ -156,7 +156,7 @@ export default function KeyboardShortcuts() {
             <Card key={section.title} className="print:shadow-none print:border">
               <CardHeader className="pb-2 print:pb-1 print:pt-2">
                 <div className="flex items-center gap-2">
-                  <section.icon className="h-5 w-5 text-secondary print:h-4 print:w-4" />
+                  <section.icon className="h-5 w-5 text-primary print:h-4 print:w-4" />
                   <CardTitle className="text-lg print:text-sm">{section.title}</CardTitle>
                 </div>
               </CardHeader>

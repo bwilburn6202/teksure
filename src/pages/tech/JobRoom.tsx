@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -17,7 +18,7 @@ const TechJobRoom = () => {
   const [status, setStatus] = useState<string>('offered');
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
@@ -26,7 +27,7 @@ const TechJobRoom = () => {
 
         <div className="flex items-start justify-between mb-6">
           <div>
-            <h1 className="text-2xl font-bold">WiFi Issue</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">WiFi Issue</h1>
             <p className="text-muted-foreground">WiFi keeps dropping every few minutes. Already tried restarting the router.</p>
             <p className="text-sm text-muted-foreground mt-1">📍 123 Main St, Springfield</p>
           </div>
@@ -35,7 +36,7 @@ const TechJobRoom = () => {
 
         {/* Actions */}
         {status === 'offered' && (
-          <Card className="mb-6">
+          <Card className="rounded-2xl border border-border bg-card mb-6">
             <CardContent className="flex gap-3 py-4">
               <Button onClick={() => setStatus('accepted')} className="flex-1">
                 <CheckCircle className="mr-2 h-4 w-4" /> Accept Job
@@ -62,7 +63,7 @@ const TechJobRoom = () => {
         )}
 
         {status === 'accepted' && (
-          <Card className="mb-6">
+          <Card className="rounded-2xl border border-border bg-card mb-6">
             <CardContent className="py-4">
               <Button onClick={() => setStatus('in_progress')}>
                 <Play className="mr-2 h-4 w-4" /> Start Job
@@ -72,7 +73,7 @@ const TechJobRoom = () => {
         )}
 
         {status === 'in_progress' && (
-          <Card className="mb-6">
+          <Card className="rounded-2xl border border-border bg-card mb-6">
             <CardContent className="py-4">
               <Button onClick={() => setStatus('completed')}>
                 <CheckCircle className="mr-2 h-4 w-4" /> Mark Complete
@@ -82,11 +83,11 @@ const TechJobRoom = () => {
         )}
 
         {/* Chat */}
-        <Card>
-          <CardHeader>
+        <Card className="rounded-2xl border border-border bg-card">
+          <CardHeader className="border-b border-border">
             <CardTitle className="text-sm font-medium">Messages</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-4">
             <div className="min-h-[200px] flex items-center justify-center text-muted-foreground text-sm">
               {status === 'offered' ? 'Accept the job to start messaging.' : 'No messages yet. Start the conversation.'}
             </div>
@@ -99,6 +100,7 @@ const TechJobRoom = () => {
           </CardContent>
         </Card>
       </div>
+      <Footer />
     </div>
   );
 };

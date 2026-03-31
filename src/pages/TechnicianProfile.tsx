@@ -127,7 +127,7 @@ function TechnicianDirectory() {
       <main className="min-h-screen bg-background">
         <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-primary">Our Technicians</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Our Technicians</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Every TekSure technician is ID-verified, background-checked, and rated by real customers.
             </p>
@@ -137,7 +137,7 @@ function TechnicianDirectory() {
         <div className="container max-w-4xl mx-auto px-4 py-8">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {TECHNICIANS.map(tech => (
-              <Card key={tech.id} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
+              <Card key={tech.id} className="rounded-2xl border border-border bg-card hover:border-primary/30 transition-colors">
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">
@@ -166,7 +166,7 @@ function TechnicianDirectory() {
                       <span className="text-xs bg-muted rounded-full px-2 py-0.5 text-muted-foreground">+{tech.specialities.length - 3} more</span>
                     )}
                   </div>
-                  <Button asChild size="sm" className="w-full gap-2">
+                  <Button asChild size="sm" className="w-full gap-2 rounded-xl">
                     <Link to={`/technicians/${tech.id}`}>View profile <ArrowRight className="h-3 w-3" /></Link>
                   </Button>
                 </CardContent>
@@ -176,7 +176,7 @@ function TechnicianDirectory() {
 
           <div className="text-center mt-8">
             <p className="text-muted-foreground text-sm mb-3">Ready to book?</p>
-            <Button asChild size="lg" className="gap-2">
+            <Button asChild size="lg" className="gap-2 rounded-xl">
               <Link to="/book">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </div>
@@ -214,7 +214,7 @@ export default function TechnicianProfile() {
           </Link>
 
           {/* Profile header */}
-          <Card className="mb-6 border-border">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-6">
               <div className="flex gap-5">
                 <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-4xl shrink-0">
@@ -258,7 +258,7 @@ export default function TechnicianProfile() {
               { label: 'Average rating', value: `${tech.rating} / 5`, icon: Star },
               { label: 'Response time', value: tech.responseTime, icon: Clock },
             ].map(stat => (
-              <Card key={stat.label} className="border-border">
+              <Card key={stat.label} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-4 text-center">
                   <stat.icon className="h-5 w-5 text-primary mx-auto mb-1.5" />
                   <p className="font-bold text-sm">{stat.value}</p>
@@ -269,7 +269,7 @@ export default function TechnicianProfile() {
           </div>
 
           {/* About */}
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-5">
               <h2 className="font-semibold mb-3">About {tech.name.split(' ')[0]}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{tech.bio}</p>
@@ -278,7 +278,7 @@ export default function TechnicianProfile() {
           </Card>
 
           {/* Specialities */}
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-5">
               <h2 className="font-semibold mb-3">Specialities</h2>
               <div className="flex flex-wrap gap-2">
@@ -292,7 +292,7 @@ export default function TechnicianProfile() {
           </Card>
 
           {/* Reviews */}
-          <Card className="mb-6">
+          <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold">Customer Reviews</h2>
@@ -320,13 +320,13 @@ export default function TechnicianProfile() {
           </Card>
 
           {/* Book CTA */}
-          <Card className="border-primary/20 bg-primary/5">
+          <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="p-5 flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-1">
                 <p className="font-semibold">Book {tech.name.split(' ')[0]} for your problem</p>
                 <p className="text-sm text-muted-foreground mt-0.5">From £49 for the first hour. No fix, no charge.</p>
               </div>
-              <Button asChild className="gap-2 shrink-0">
+              <Button asChild className="gap-2 shrink-0 rounded-xl">
                 <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </CardContent>

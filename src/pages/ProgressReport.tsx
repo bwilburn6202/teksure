@@ -68,7 +68,7 @@ export default function ProgressReport() {
       <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">
           <div className="text-4xl mb-3">📊</div>
-          <h1 className="text-3xl font-bold mb-2 text-primary">Your Monthly Progress Report</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Your Monthly Progress Report</h1>
           <p className="text-muted-foreground">A snapshot of your learning journey — see how far you've come.</p>
         </div>
 
@@ -136,7 +136,7 @@ export default function ProgressReport() {
                   <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-3 rounded-lg hover:bg-muted px-2 py-1.5 transition-colors group">
                     <span className="text-xl">{g.thumbnailEmoji}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium truncate group-hover:text-secondary transition-colors">{g.title}</p>
+                      <p className="text-sm font-medium truncate group-hover:text-primary transition-colors">{g.title}</p>
                       <p className="text-xs text-muted-foreground">{g.readTime}</p>
                     </div>
                     <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0" />
@@ -170,7 +170,7 @@ export default function ProgressReport() {
               <BookOpen className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
               <h2 className="text-lg font-semibold mb-2">No guides completed yet</h2>
               <p className="text-muted-foreground text-sm mb-5">Start reading guides to track your progress here. Your journey begins with a single step.</p>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 rounded-xl">
+              <Button asChild className="gap-2 rounded-xl">
                 <Link to="/my-path"><BookOpen className="h-4 w-4" /> Start Learning</Link>
               </Button>
             </CardContent>
@@ -191,7 +191,7 @@ export default function ProgressReport() {
             ) : (
               <>
                 <div className="flex items-center gap-3 mb-4">
-                  <Mail className="h-5 w-5 text-secondary shrink-0" />
+                  <Mail className="h-5 w-5 text-primary shrink-0" />
                   <div>
                     <p className="font-semibold">Get monthly progress emails</p>
                     <p className="text-sm text-muted-foreground">A brief email each month showing your guides, badges, and what to try next.</p>
@@ -202,7 +202,7 @@ export default function ProgressReport() {
                     <Label className="sr-only">Email address</Label>
                     <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} />
                   </div>
-                  <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90 shrink-0 rounded-xl">Subscribe</Button>
+                  <Button type="submit" className="shrink-0 rounded-xl">Subscribe</Button>
                 </form>
               </>
             )}

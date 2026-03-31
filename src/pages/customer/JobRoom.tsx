@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { Separator } from '@/components/ui/separator';
 
@@ -32,7 +33,7 @@ const CustomerJobRoom = () => {
   const { id } = useParams();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
@@ -41,7 +42,7 @@ const CustomerJobRoom = () => {
 
         <div className="flex items-start justify-between mb-6">
           <div>
-            <h1 className="text-2xl font-bold capitalize">{mockJob.category} Issue</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight capitalize">{mockJob.category} Issue</h1>
             <p className="text-muted-foreground">{mockJob.description}</p>
           </div>
           <StatusBadge status={mockJob.status} />
@@ -49,16 +50,16 @@ const CustomerJobRoom = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Timeline */}
-          <Card className="md:col-span-1">
-            <CardHeader>
+          <Card className="rounded-2xl border border-border bg-card md:col-span-1">
+            <CardHeader className="border-b border-border">
               <CardTitle className="text-sm font-medium">Timeline</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               <div className="space-y-4">
                 {mockEvents.map((event, i) => (
                   <div key={event.id} className="flex gap-3">
                     <div className="flex flex-col items-center">
-                      <div className="w-2 h-2 rounded-full bg-secondary mt-2" />
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2" />
                       {i < mockEvents.length - 1 && <div className="w-px flex-1 bg-border" />}
                     </div>
                     <div className="pb-4">
@@ -74,15 +75,15 @@ const CustomerJobRoom = () => {
           </Card>
 
           {/* Chat */}
-          <Card className="md:col-span-2">
-            <CardHeader>
+          <Card className="rounded-2xl border border-border bg-card md:col-span-2">
+            <CardHeader className="border-b border-border">
               <CardTitle className="text-sm font-medium">Messages</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               <div className="space-y-4 mb-4 min-h-[200px]">
                 {mockMessages.map(msg => (
                   <div key={msg.id} className={`flex ${msg.sender_id === 'me' ? 'justify-end' : 'justify-start'}`}>
-                    <div className={`max-w-[70%] rounded-lg px-4 py-2 text-sm ${
+                    <div className={`max-w-[70%] rounded-xl px-4 py-2 text-sm ${
                       msg.sender_id === 'me' ? 'bg-primary text-primary-foreground' : 'bg-muted'
                     }`}>
                       {msg.message}
@@ -100,6 +101,7 @@ const CustomerJobRoom = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

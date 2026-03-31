@@ -187,7 +187,7 @@ export default function GuidePacks() {
                       onClick={() => handlePrint(pack.id, pack.free)}
                       disabled={!pack.free || printing === pack.id}
                       size="sm"
-                      className={`w-full gap-2 ${pack.free ? 'bg-secondary text-secondary-foreground hover:bg-secondary/90' : 'opacity-60 cursor-not-allowed'}`}
+                      className={`w-full gap-2 ${pack.free ? 'bg-primary text-primary-foreground hover:bg-primary/90' : 'opacity-60 cursor-not-allowed'}`}
                     >
                       {printing === pack.id ? (
                         <><div className="h-4 w-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />Preparing…</>

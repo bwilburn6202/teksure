@@ -113,24 +113,24 @@ export default function Ambassadors() {
       <SEOHead
         title="Community Ambassadors — TekSure"
         description="Meet the TekSure Community Ambassadors — real people dedicated to helping others learn technology. Find out how to become an Ambassador yourself."
-      path="/community/ambassadors"
+        path="/community/ambassadors"
       />
       <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-12 px-4">
+        <section className="border-b border-border py-12 px-4">
           <div className="container max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Users className="h-8 w-8 text-primary" />
               </div>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Community Ambassadors</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Community Ambassadors</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Our Ambassadors are everyday people who go the extra mile to help others feel confident with technology.
             </p>
-            <div className="flex items-center justify-center gap-6 mt-5 text-sm text-muted-foreground">
+            <div className="flex items-center justify-center gap-6 mt-5 text-sm text-muted-foreground flex-wrap">
               <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-amber-500" /> {AMBASSADORS.length} Ambassadors</span>
               <span className="flex items-center gap-1.5"><Heart className="h-4 w-4 text-red-500" /> {AMBASSADORS.reduce((s, a) => s + a.helpedCount, 0)}+ people helped</span>
               <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-blue-500" /> 6 cities across the UK</span>
@@ -144,7 +144,7 @@ export default function Ambassadors() {
           <h2 className="text-xl font-bold mb-5">Meet the Ambassadors</h2>
           <div className="grid gap-4 sm:grid-cols-2 mb-12">
             {AMBASSADORS.map((amb) => (
-              <Card key={amb.name} className="border-border hover:shadow-md transition-shadow">
+              <Card key={amb.name} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                 <CardContent className="p-5">
                   <div className="flex gap-4">
                     <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-3xl shrink-0">
@@ -179,7 +179,7 @@ export default function Ambassadors() {
           {/* Become an Ambassador */}
           <div className="grid gap-6 lg:grid-cols-2 mb-8">
             {/* Perks */}
-            <Card className="border-border">
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Award className="h-5 w-5 text-amber-500" />
@@ -200,7 +200,7 @@ export default function Ambassadors() {
             </Card>
 
             {/* Requirements & Apply */}
-            <Card className="border-primary/20 bg-primary/5">
+            <Card className="rounded-2xl border border-primary/20 bg-primary/5">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Heart className="h-5 w-5 text-primary" />
@@ -228,7 +228,7 @@ export default function Ambassadors() {
           </div>
 
           {/* Forum CTA */}
-          <Card className="border-dashed border-primary/30 bg-primary/5">
+          <Card className="rounded-2xl border border-dashed border-primary/30 bg-primary/5">
             <CardContent className="p-5 flex gap-4 items-center">
               <MessageSquare className="h-8 w-8 text-primary shrink-0" />
               <div>

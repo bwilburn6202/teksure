@@ -108,10 +108,10 @@ export default function HealthCheck() {
       <SEOHead title="Tech Health Check | TekSure" description="Take a quick 5-question quiz to check the health of your device and get personalised tips." path="/tools/health-check" />
       <Navbar />
 
-      <section className="hero-gradient text-primary-foreground">
+      <section className="border-b">
         <div className="container py-16 md:py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
-            <HeartPulse className="h-12 w-12 mx-auto mb-4 text-secondary" />
+            <HeartPulse className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Tech Health Check</h1>
             <p className="text-lg opacity-80">Answer 5 quick questions to see how healthy your device is.</p>
           </motion.div>

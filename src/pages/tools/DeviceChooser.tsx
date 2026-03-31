@@ -248,7 +248,7 @@ export default function DeviceChooser() {
 
         {/* Header */}
         <div className="flex items-start gap-3 mb-8">
-          <Laptop className="h-8 w-8 text-secondary shrink-0 mt-0.5" />
+          <Laptop className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Device Chooser</h1>
             <p className="text-muted-foreground mt-1">Tablet, laptop, or desktop? Find out in 5 questions.</p>
@@ -314,11 +314,11 @@ export default function DeviceChooser() {
                   <button
                     key={choice.value}
                     onClick={() => handleChoice(choice.value)}
-                    className="w-full flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-secondary hover:shadow-md hover:bg-secondary/5 transition-all text-left group"
+                    className="w-full flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-primary hover:shadow-md hover:bg-primary/5 transition-all text-left group"
                   >
                     <span className="text-2xl shrink-0">{choice.emoji}</span>
-                    <span className="font-medium group-hover:text-secondary transition-colors">{choice.label}</span>
-                    <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-secondary transition-colors" />
+                    <span className="font-medium group-hover:text-primary transition-colors">{choice.label}</span>
+                    <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
                   </button>
                 ))}
               </div>
@@ -337,7 +337,7 @@ export default function DeviceChooser() {
 
               <div className="text-center mb-8">
                 <div className="text-6xl mb-3">{result.emoji}</div>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-3">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
                   <CheckCircle2 className="h-4 w-4" />
                   Our recommendation
                 </div>
@@ -345,7 +345,7 @@ export default function DeviceChooser() {
                 <p className="text-muted-foreground">{result.tagline}</p>
               </div>
 
-              <Card className="mb-6 border-secondary/30">
+              <Card className="mb-6 border-primary/30">
                 <CardContent className="py-6">
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">{result.description}</p>
 
@@ -384,7 +384,7 @@ export default function DeviceChooser() {
                     <Badge variant="outline" className="shrink-0 text-xs px-2">{i + 1}</Badge>
                     <div className="min-w-0">
                       <p className="font-medium text-sm">{ex.name}</p>
-                      <p className="text-xs text-secondary font-medium">{ex.price}</p>
+                      <p className="text-xs text-primary font-medium">{ex.price}</p>
                       <p className="text-xs text-muted-foreground mt-0.5">{ex.why}</p>
                     </div>
                   </div>

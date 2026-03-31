@@ -29,10 +29,10 @@ const WifiSpeed = () => {
       />
       <Navbar />
 
-      <section className="hero-gradient text-primary-foreground">
+      <section className="border-b">
         <div className="container py-16 md:py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
-            <Wifi className="h-12 w-12 mx-auto mb-4 text-secondary" />
+            <Wifi className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">WiFi Speed Test</h1>
             <p className="text-lg opacity-80">Check your internet speed instantly — no app needed.</p>
           </motion.div>
@@ -67,7 +67,7 @@ const WifiSpeed = () => {
 
         {/* Tips */}
         <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-          <Lightbulb className="h-5 w-5 text-secondary" />
+          <Lightbulb className="h-5 w-5 text-primary" />
           Tips for Improving Slow WiFi
         </h2>
         <div className="grid sm:grid-cols-2 gap-4 mb-12">
@@ -90,7 +90,7 @@ const WifiSpeed = () => {
         </div>
 
         {/* CTA */}
-        <Card className="hero-gradient text-primary-foreground overflow-hidden">
+        <Card className="border-b overflow-hidden">
           <CardContent className="py-8 text-center">
             <h2 className="text-xl font-bold mb-2">Still having WiFi issues?</h2>
             <p className="opacity-80 mb-4 text-sm">Our verified techs can diagnose and fix your network.</p>

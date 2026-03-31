@@ -101,7 +101,7 @@ export default function TechConfidenceScore() {
                   <p className="text-xl font-semibold mb-8 text-center leading-snug">{questions[current].q}</p>
                   <div className="grid gap-3">
                     {questions[current].options.map((opt, i) => (
-                      <Button key={i} variant="outline" size="lg" className="text-left h-auto py-3 px-4 justify-start text-base hover:bg-secondary/10 hover:border-secondary" onClick={() => answer(i)}>
+                      <Button key={i} variant="outline" size="lg" className="text-left h-auto py-3 px-4 justify-start text-base hover:bg-primary/10 hover:border-primary" onClick={() => answer(i)}>
                         <span className="font-semibold mr-3 text-muted-foreground">{['A', 'B', 'C', 'D'][i]}</span>
                         {opt}
                       </Button>
@@ -127,7 +127,7 @@ export default function TechConfidenceScore() {
               <Card className="mb-6">
                 <CardContent className="pt-6 pb-5">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-semibold mb-1">What to do next</p>
                       <p className="text-muted-foreground text-sm">{result.next}</p>
@@ -137,7 +137,7 @@ export default function TechConfidenceScore() {
               </Card>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
                   <Link to={result.path}><ArrowRight className="h-4 w-4" /> {result.grade === 'Confident' ? 'Visit the Forum' : 'Start Learning'}</Link>
                 </Button>
                 <Button variant="outline" size="lg" onClick={reset} className="gap-2">

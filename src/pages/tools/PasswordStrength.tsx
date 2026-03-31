@@ -52,10 +52,10 @@ const PasswordStrength = () => {
       />
       <Navbar />
 
-      <section className="hero-gradient text-primary-foreground">
+      <section className="border-b">
         <div className="container py-16 md:py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
-            <ShieldCheck className="h-12 w-12 mx-auto mb-4 text-secondary" />
+            <ShieldCheck className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Password Strength Checker</h1>
             <p className="text-lg opacity-80">Test your password — nothing is stored or sent anywhere.</p>
           </motion.div>

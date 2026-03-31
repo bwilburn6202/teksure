@@ -293,7 +293,7 @@ export default function BackupWizard() {
       <main className="container max-w-2xl py-12 min-h-[70vh]">
 
         <div className="flex items-start gap-3 mb-8">
-          <HardDrive className="h-8 w-8 text-secondary shrink-0 mt-0.5" />
+          <HardDrive className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Data Backup Wizard</h1>
             <p className="text-muted-foreground mt-1">3 quick questions — then your personalised backup plan.</p>
@@ -360,7 +360,7 @@ export default function BackupWizard() {
                       key={item.id}
                       onClick={() => toggleItem(item.id)}
                       className={`w-full flex items-center gap-4 p-4 rounded-xl border transition-all text-left ${
-                        selected ? 'border-secondary bg-secondary/10 shadow-sm' : 'border-border bg-card hover:border-secondary/50 hover:shadow-md'
+                        selected ? 'border-primary bg-primary/10 shadow-sm' : 'border-border bg-card hover:border-primary/50 hover:shadow-md'
                       }`}
                     >
                       <span className="text-2xl shrink-0">{item.emoji}</span>
@@ -368,7 +368,7 @@ export default function BackupWizard() {
                         <p className="font-medium">{item.label}</p>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                       </div>
-                      {selected && <CheckCircle2 className="h-5 w-5 text-secondary shrink-0" />}
+                      {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />}
                     </button>
                   );
                 })}
@@ -404,7 +404,7 @@ export default function BackupWizard() {
                       key={dest.id}
                       onClick={() => setDestination(dest.id)}
                       className={`w-full flex items-start gap-4 p-4 rounded-xl border transition-all text-left ${
-                        selected ? 'border-secondary bg-secondary/10 shadow-sm' : 'border-border bg-card hover:border-secondary/50 hover:shadow-md'
+                        selected ? 'border-primary bg-primary/10 shadow-sm' : 'border-border bg-card hover:border-primary/50 hover:shadow-md'
                       }`}
                     >
                       <div className="h-11 w-11 rounded-xl bg-muted flex items-center justify-center shrink-0">
@@ -416,9 +416,9 @@ export default function BackupWizard() {
                           {dest.id === 'both' && <Badge variant="secondary" className="text-xs">Best choice</Badge>}
                         </p>
                         <p className="text-sm text-muted-foreground">{dest.desc}</p>
-                        <p className="text-xs text-secondary mt-1">{dest.pros}</p>
+                        <p className="text-xs text-primary mt-1">{dest.pros}</p>
                       </div>
-                      {selected && <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-1" />}
+                      {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-1" />}
                     </button>
                   );
                 })}
@@ -455,12 +455,12 @@ export default function BackupWizard() {
                       key={d.id}
                       onClick={() => setDevice(d.id)}
                       className={`w-full flex items-center gap-4 p-4 rounded-xl border transition-all text-left ${
-                        selected ? 'border-secondary bg-secondary/10 shadow-sm' : 'border-border bg-card hover:border-secondary/50 hover:shadow-md'
+                        selected ? 'border-primary bg-primary/10 shadow-sm' : 'border-border bg-card hover:border-primary/50 hover:shadow-md'
                       }`}
                     >
                       <span className="text-2xl shrink-0">{d.emoji}</span>
                       <span className="font-medium flex-1">{d.label}</span>
-                      {selected && <CheckCircle2 className="h-5 w-5 text-secondary shrink-0" />}
+                      {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />}
                     </button>
                   );
                 })}
@@ -498,7 +498,7 @@ export default function BackupWizard() {
               ) : (
                 <div className="space-y-5 mb-8">
                   {instructions.map((block, bi) => (
-                    <Card key={bi} className="border-secondary/20">
+                    <Card key={bi} className="border-primary/20">
                       <CardContent className="py-6">
                         <div className="flex items-start justify-between gap-3 mb-4">
                           <h3 className="font-bold text-base leading-snug">{block.heading}</h3>
@@ -510,7 +510,7 @@ export default function BackupWizard() {
                         <div className="space-y-3">
                           {block.steps.map((s, i) => (
                             <div key={i} className="flex items-start gap-3">
-                              <div className="h-6 w-6 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                              <div className="h-6 w-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
                                 {i + 1}
                               </div>
                               <p className="text-sm leading-relaxed">{s}</p>

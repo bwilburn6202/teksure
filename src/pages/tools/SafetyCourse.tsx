@@ -332,7 +332,7 @@ export default function SafetyCourse() {
       <main className="container max-w-2xl py-12 min-h-[70vh]">
 
         <div className="flex items-start gap-3 mb-8">
-          <GraduationCap className="h-8 w-8 text-secondary shrink-0 mt-0.5" />
+          <GraduationCap className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Internet Safety Course</h1>
             <p className="text-muted-foreground mt-1">5 short lessons · Free · No sign-up needed</p>
@@ -436,7 +436,7 @@ export default function SafetyCourse() {
 
               <div className="space-y-3 mb-5">
                 {lesson.quiz[currentQuizQ].options.map((option, i) => {
-                  let style = 'border-border bg-card hover:border-secondary/50 hover:shadow-sm';
+                  let style = 'border-border bg-card hover:border-primary/50 hover:shadow-sm';
                   if (selectedAnswer !== null) {
                     if (i === lesson.quiz[currentQuizQ].correct) {
                       style = 'border-green-500 bg-green-50 dark:bg-green-950/20';

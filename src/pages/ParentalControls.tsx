@@ -18,9 +18,9 @@ export default function ParentalControls() {
       />
       <Navbar />
       <main className="container py-16 min-h-[60vh] max-w-4xl">
-        <div className="flex items-center gap-3 mb-2">
-          <Baby className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Parental Controls Guide</h1>
+        <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
+          <Baby className="h-8 w-8 text-primary" />
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Parental Controls Guide</h1>
         </div>
         <p className="text-muted-foreground mb-10 max-w-2xl">
           A plain-English guide to keeping children safe online — from built-in device settings to apps and conversations.
@@ -146,9 +146,9 @@ export default function ParentalControls() {
               { name: 'Qustodio', desc: 'Cross-platform app with web filtering, screen time management, location tracking, and social media monitoring.' },
               { name: 'Bark', desc: 'Monitors texts, emails, and 30+ social media platforms for signs of cyberbullying, depression, and online predators.' },
             ].map((app) => (
-              <Card key={app.name}>
+              <Card key={app.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="py-3 flex gap-3">
-                  <AppWindow className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                  <AppWindow className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-semibold">{app.name}</p>
                     <p className="text-sm text-muted-foreground">{app.desc}</p>
@@ -172,7 +172,7 @@ export default function ParentalControls() {
               'Revisit the conversation regularly as they grow — what\'s appropriate at age 8 changes by age 12.',
             ].map((tip, i) => (
               <li key={i} className="text-sm text-muted-foreground flex gap-3">
-                <span className="shrink-0 w-6 h-6 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-xs font-bold">{i + 1}</span>
+                <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold">{i + 1}</span>
                 {tip}
               </li>
             ))}
@@ -181,10 +181,10 @@ export default function ParentalControls() {
 
         <Separator className="my-8" />
 
-        <Card className="bg-secondary/5 border-secondary/30">
+        <Card className="rounded-2xl border border-primary/20 bg-primary/5">
           <CardContent className="py-6 text-center">
             <p className="text-sm text-muted-foreground mb-2">Want to learn more about staying safe online?</p>
-            <Link to="/safety/scam-alerts" className="text-secondary font-medium hover:underline">
+            <Link to="/safety/scam-alerts" className="text-primary font-medium hover:underline">
               View our Scam Alerts Guide →
             </Link>
           </CardContent>
@@ -199,7 +199,7 @@ function Section({ icon: Icon, title, children }: { icon: React.ElementType; tit
   return (
     <section>
       <h2 className="text-xl font-bold flex items-center gap-2 mb-4">
-        <Icon className="h-6 w-6 text-secondary" />
+        <Icon className="h-6 w-6 text-primary" />
         {title}
       </h2>
       {children}
@@ -221,7 +221,7 @@ function Steps({ steps }: { steps: string[] }) {
     <ol className="space-y-2">
       {steps.map((step, i) => (
         <li key={i} className="text-sm text-muted-foreground flex gap-3">
-          <span className="shrink-0 w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-xs font-semibold">
+          <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-semibold">
             {i + 1}
           </span>
           {step}

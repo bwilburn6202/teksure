@@ -206,7 +206,7 @@ export default function MyPath() {
                   <div className="p-2 bg-primary/10 rounded-xl">
                     <Map className="h-6 w-6 text-primary" />
                   </div>
-                  <h1 className="text-3xl font-bold text-primary">My Learning Path</h1>
+                  <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">My Learning Path</h1>
                 </div>
                 <p className="text-muted-foreground text-lg max-w-lg">
                   Follow a step-by-step path and build your tech confidence at your own pace.

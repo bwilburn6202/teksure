@@ -68,13 +68,13 @@ export default function AiTutor() {
         <Navbar />
         <main className="flex-1 container max-w-2xl py-14 text-center">
           <div className="text-5xl mb-4">🎓</div>
-          <h1 className="text-3xl font-bold mb-3 text-primary">AI Personal Tech Tutor</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">AI Personal Tech Tutor</h1>
           <p className="text-muted-foreground mb-10">Your patient, always-available tutor who adapts to your level. Ask anything — no question is too basic.</p>
           <h2 className="text-lg font-semibold mb-4">First, what's your experience level?</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {(Object.entries(levelConfig) as [Level, typeof levelConfig.beginner][]).map(([key, cfg]) => (
               <motion.button key={key} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setLevel(key)}
-                className="rounded-2xl border-2 border-border bg-card hover:border-primary p-6 text-left transition-all hover:bg-primary/5">
+                className="rounded-2xl border border-border bg-card hover:border-primary/50 p-6 text-left transition-colors">
                 <div className="text-3xl mb-2">{cfg.emoji}</div>
                 <p className="font-bold text-base mb-1 text-primary">{cfg.label}</p>
                 <p className="text-xs text-muted-foreground">{cfg.desc}</p>
@@ -170,7 +170,7 @@ export default function AiTutor() {
                 rows={2}
                 className="resize-none flex-1 border-0 focus-visible:ring-0 p-1 text-sm"
               />
-              <Button onClick={() => send()} disabled={!input.trim() || loading} className="bg-primary text-primary-foreground hover:bg-primary/90 self-end rounded-xl" size="icon">
+              <Button onClick={() => send()} disabled={!input.trim() || loading} className="self-end rounded-xl" size="icon">
                 <Send className="h-4 w-4" />
               </Button>
             </div>

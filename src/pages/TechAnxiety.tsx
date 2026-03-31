@@ -36,7 +36,7 @@ export default function TechAnxiety() {
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
             <div className="text-5xl mb-4">💙</div>
-            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">Feeling Overwhelmed by Technology?</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-4">Feeling Overwhelmed by Technology?</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               You are not alone. Millions of people feel anxious, frustrated, or left behind by technology. This page is for you — gentle, honest support with no jargon and no judgement.
             </p>
@@ -47,7 +47,7 @@ export default function TechAnxiety() {
           {/* Reassurance section */}
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-primary mb-3">First of all: this is completely normal</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Technology changes faster than any other part of modern life. Feeling behind isn\'t a personal failing — it\'s a natural response to an unrealistic rate of change. The fact that you\'re here, trying, is what matters.</p>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Technology changes faster than any other part of modern life. Feeling behind isn't a personal failing — it's a natural response to an unrealistic rate of change. The fact that you're here, trying, is what matters.</p>
           </div>
 
           {/* Tips grid */}
@@ -103,7 +103,7 @@ export default function TechAnxiety() {
 
           <div className="text-center bg-primary/5 rounded-2xl p-8 border border-border">
             <p className="text-lg font-semibold text-primary mb-2">You can do this.</p>
-            <p className="text-muted-foreground mb-5">Thousands of people have learned to use technology with TekSure\'s help. Every guide is written for real people — not tech experts.</p>
+            <p className="text-muted-foreground mb-5">Thousands of people have learned to use technology with TekSure's help. Every guide is written for real people — not tech experts.</p>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
               <Link to="/my-path"><BookOpen className="h-4 w-4" /> Start My Learning Path</Link>
             </Button>

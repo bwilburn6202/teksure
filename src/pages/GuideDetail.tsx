@@ -184,7 +184,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
           <CheckCircle className="h-4 w-4" /> Mark as Complete
         </Button>
       )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-secondary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
+      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
     </div>
   );
 };
@@ -572,20 +572,18 @@ const GuideDetail = () => {
           <Separator className="mb-8" />
 
           {/* CTA */}
-          <Card className="hero-gradient text-primary-foreground mb-12 overflow-hidden">
-            <CardContent className="py-10 text-center">
-              <h2 className="text-2xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
-              <p className="opacity-90 mb-6 max-w-md mx-auto">Our verified technicians can fix this issue for you — remotely or in person.</p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Button asChild size="lg" variant="secondary">
-                  <Link to="/signup">Book a Verified Tech <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="btn-hero-outline">
-                  <Link to="/pricing">See Pricing</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="rounded-2xl border border-border bg-muted/50 p-10 text-center mb-12">
+            <h2 className="text-xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
+            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">Our verified technicians can fix this issue for you — remotely or in person.</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Button asChild size="lg" className="rounded-xl gap-2">
+                <Link to="/signup">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="rounded-xl">
+                <Link to="/pricing">See Pricing</Link>
+              </Button>
+            </div>
+          </div>
 
           {/* Related Guides */}
           {relatedGuides.length > 0 && (

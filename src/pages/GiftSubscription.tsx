@@ -49,11 +49,11 @@ export default function GiftSubscription() {
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
             <div className="text-5xl mb-4">🎁</div>
-            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">Gift a TekSure Subscription</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">Gift a TekSure Subscription</h1>
             <p className="text-muted-foreground text-lg">The gift of confidence with technology — for parents, grandparents, or anyone who wants to feel less left behind.</p>
             <div className="flex justify-center gap-3 mt-5 flex-wrap">
               {occasions.map(o => (
-                <span key={o.label} className="text-sm bg-white border border-border rounded-full px-3 py-1 flex items-center gap-1.5">
+                <span key={o.label} className="text-sm bg-background border border-border rounded-full px-3 py-1 flex items-center gap-1.5">
                   <span>{o.emoji}</span>{o.label}
                 </span>
               ))}
@@ -65,7 +65,7 @@ export default function GiftSubscription() {
           <div className="grid md:grid-cols-3 gap-6 mb-14">
             {plans.map((plan, i) => (
               <motion.div key={plan.name} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }} className="flex">
-                <Card className={`flex flex-col w-full rounded-2xl border border-border bg-card ${plan.highlight ? 'border-primary border-2 shadow-lg relative' : ''}`}>
+                <Card className={`flex flex-col w-full rounded-2xl border border-border bg-card ${plan.highlight ? 'border-primary border-2' : ''}`}>
                   {plan.highlight && (
                     <div className="absolute -top-3.5 left-0 right-0 flex justify-center">
                       <Badge className="bg-primary text-primary-foreground flex items-center gap-1 px-3"><Star className="h-3 w-3" /> Most Popular</Badge>
@@ -75,7 +75,7 @@ export default function GiftSubscription() {
                     <div className="text-3xl mb-3">{plan.emoji}</div>
                     <h2 className="text-xl font-bold mb-1">{plan.name}</h2>
                     <div className="flex items-baseline gap-2 mb-4">
-                      <span className="text-3xl font-black">{plan.price}</span>
+                      <span className="text-3xl font-black text-primary">{plan.price}</span>
                       {plan.saving && <Badge variant="secondary" className="text-xs">{plan.saving}</Badge>}
                     </div>
                     <ul className="space-y-2 mb-6 flex-1">

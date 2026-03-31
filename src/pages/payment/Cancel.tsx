@@ -22,7 +22,6 @@ export default function PaymentCancel() {
       <main className="min-h-[80vh] flex items-center justify-center px-4 py-16">
         <div className="max-w-md w-full text-center space-y-6">
 
-          {/* Cancel icon */}
           <div className="flex justify-center">
             <div className="h-24 w-24 rounded-full bg-orange-100 flex items-center justify-center">
               <XCircle className="h-12 w-12 text-orange-500" />
@@ -30,14 +29,13 @@ export default function PaymentCancel() {
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold mb-2">Payment cancelled</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Payment cancelled</h1>
             <p className="text-muted-foreground text-lg">
               No worries — your booking details are saved and no charge was made.
             </p>
           </div>
 
-          {/* Options */}
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="p-5 text-left space-y-3">
               <p className="font-semibold text-sm mb-2">What would you like to do?</p>
               <div className="flex items-start gap-3 text-sm">
@@ -55,7 +53,6 @@ export default function PaymentCancel() {
             </CardContent>
           </Card>
 
-          {/* Actions */}
           <div className="flex gap-3 flex-col sm:flex-row justify-center">
             <Button asChild>
               <Link to="/book" className="gap-2">

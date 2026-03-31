@@ -49,7 +49,7 @@ const SearchResults = () => {
 
       <main className="container py-12 flex-1">
         <div className="max-w-2xl mx-auto mb-10">
-          <h1 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Search Results</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">Search Results</h1>
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input

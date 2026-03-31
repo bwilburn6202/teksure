@@ -38,24 +38,24 @@ export default function Caregiver() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <div className="bg-gradient-to-br from-pink-50 via-background to-background border-b border-border py-14">
+        <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <div className="text-5xl mb-4">💙</div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Caregiver Dashboard</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">Caregiver Dashboard</h1>
             <p className="text-muted-foreground text-lg leading-relaxed">Supporting a family member or friend with their technology? TekSure makes it easier to help without taking over.</p>
           </div>
         </div>
 
         <div className="container max-w-5xl py-12">
           {/* Feature cards */}
-          <h2 className="text-xl font-bold mb-6">What you can do as a carer</h2>
+          <h2 className="text-xl font-bold text-primary mb-6">What you can do as a carer</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {features.map((f, i) => (
               <motion.div key={f.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true }}>
-                <Card className={f.status === 'coming-soon' ? 'opacity-60' : ''}>
+                <Card className={`rounded-2xl border border-border bg-card ${f.status === 'coming-soon' ? 'opacity-60' : ''}`}>
                   <CardContent className="pt-5 pb-4">
                     <div className="flex items-start justify-between mb-3">
-                      <div className="rounded-lg bg-secondary/10 p-2"><f.icon className="h-4 w-4 text-secondary" /></div>
+                      <div className="rounded-lg bg-primary/10 p-2"><f.icon className="h-4 w-4 text-primary" /></div>
                       {f.status === 'coming-soon' && <Badge variant="outline" className="text-xs">Coming soon</Badge>}
                       {f.status === 'live' && <CheckCircle2 className="h-4 w-4 text-green-500" />}
                     </div>
@@ -70,14 +70,14 @@ export default function Caregiver() {
           <div className="grid md:grid-cols-2 gap-8 mb-14">
             {/* Recommended guides to share */}
             <div>
-              <h2 className="text-xl font-bold mb-5">Guides to share with your loved one</h2>
+              <h2 className="text-xl font-bold text-primary mb-5">Guides to share with your loved one</h2>
               <div className="space-y-2">
                 {guides.map(g => (
                   <Link key={g.slug} to={`/guides/${g.slug}`}
-                    className="flex items-center gap-3 rounded-xl border border-border hover:border-secondary hover:bg-secondary/5 p-3 transition-all group">
+                    className="flex items-center gap-3 rounded-xl border border-border hover:border-primary hover:bg-primary/5 p-3 transition-all group">
                     <span className="text-xl">{g.emoji}</span>
-                    <span className="text-sm font-medium flex-1 group-hover:text-secondary transition-colors">{g.title}</span>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-secondary transition-colors shrink-0" />
+                    <span className="text-sm font-medium flex-1 group-hover:text-primary transition-colors">{g.title}</span>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -85,7 +85,7 @@ export default function Caregiver() {
 
             {/* Caring tips */}
             <div>
-              <h2 className="text-xl font-bold mb-5">Tips for supporting a tech learner</h2>
+              <h2 className="text-xl font-bold text-primary mb-5">Tips for supporting a tech learner</h2>
               <div className="space-y-3">
                 {tips.map((tip, i) => (
                   <div key={i} className="flex items-start gap-3">
@@ -98,15 +98,15 @@ export default function Caregiver() {
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-secondary/10 to-pink-50/50 rounded-2xl p-8 text-center">
+          <div className="bg-primary/5 rounded-2xl p-8 text-center border border-border">
             <Heart className="h-8 w-8 text-pink-400 mx-auto mb-3" />
-            <h2 className="text-xl font-bold mb-2">Book help for someone you care for</h2>
+            <h2 className="text-xl font-bold text-primary mb-2">Book help for someone you care for</h2>
             <p className="text-muted-foreground mb-5 max-w-md mx-auto text-sm">You can book a TekSure technician session on behalf of a family member. Just mention in the notes that it's for someone else and we'll tailor our approach.</p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 gap-2">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Link to="/book"><Phone className="h-4 w-4" />Book Support for Them</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="rounded-xl">
                 <Link to="/tech-anxiety">Tech Anxiety Resources</Link>
               </Button>
             </div>

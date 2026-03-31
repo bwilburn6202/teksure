@@ -7,6 +7,7 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { useAuth } from '@/contexts/AuthContext';
 
 const mockOffers = [
@@ -19,12 +20,12 @@ const TechDashboard = () => {
   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <div className="container py-8">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-8 border-b border-border pb-6">
           <div>
-            <h1 className="text-2xl font-bold">Welcome, {user?.fullName}</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Welcome, {user?.fullName}</h1>
             <p className="text-muted-foreground">Manage your profile and job offers</p>
           </div>
           <div className="flex items-center gap-3">
@@ -42,9 +43,9 @@ const TechDashboard = () => {
             { icon: DollarSign, label: 'Rate', value: '$75/hr' },
             { icon: MapPin, label: 'Radius', value: '25 mi' },
           ].map(stat => (
-            <Card key={stat.label}>
+            <Card key={stat.label} className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-4">
-                <stat.icon className="h-5 w-5 text-secondary" />
+                <stat.icon className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">{stat.label}</p>
                   <p className="font-semibold">{stat.value}</p>
@@ -56,7 +57,7 @@ const TechDashboard = () => {
 
         <h2 className="text-lg font-semibold mb-4">Available Job Offers</h2>
         {mockOffers.length === 0 ? (
-          <Card className="text-center py-12">
+          <Card className="rounded-2xl border border-border bg-card text-center py-12">
             <CardContent>
               <p className="text-muted-foreground">No job offers right now. Check back soon!</p>
             </CardContent>
@@ -65,7 +66,7 @@ const TechDashboard = () => {
           <div className="grid gap-4">
             {mockOffers.map(offer => (
               <Link to={`/tech/jobs/${offer.job_id}`} key={offer.id}>
-                <Card className="hover:shadow-md transition-shadow">
+                <Card className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                   <CardContent className="flex items-center justify-between py-4">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
@@ -84,6 +85,7 @@ const TechDashboard = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

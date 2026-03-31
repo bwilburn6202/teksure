@@ -24,7 +24,6 @@ export default function NewThread() {
   const [body, setBody] = useState('');
   const [category, setCategory] = useState<ForumCategory>('general');
 
-  // If somehow not logged in, redirect
   if (!user) {
     navigate('/login', { state: { from: '/forum/new' } });
     return null;
@@ -75,7 +74,6 @@ export default function NewThread() {
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-2xl mx-auto px-4 py-8">
-          {/* Back */}
           <Link
             to="/forum"
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6 transition-colors"
@@ -83,13 +81,14 @@ export default function NewThread() {
             <ArrowLeft className="h-4 w-4" /> Back to Forum
           </Link>
 
-          <h1 className="text-2xl font-bold mb-1">Start a Discussion</h1>
-          <p className="text-muted-foreground mb-6">
-            Ask a question, share a tip, or start a conversation. Our community is friendly and welcoming!
-          </p>
+          <div className="border-b border-border pb-6 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Start a Discussion</h1>
+            <p className="text-muted-foreground">
+              Ask a question, share a tip, or start a conversation. Our community is friendly and welcoming!
+            </p>
+          </div>
 
-          {/* Tips */}
-          <Card className="mb-6 border-primary/20 bg-primary/5">
+          <Card className="rounded-2xl border border-primary/20 bg-primary/5 mb-6">
             <CardContent className="p-4">
               <div className="flex gap-3">
                 <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -162,7 +161,6 @@ export default function NewThread() {
               />
             </div>
 
-            {/* Posting as */}
             <p className="text-sm text-muted-foreground">
               Posting as <span className="font-medium text-foreground">{user.fullName || user.email}</span>
             </p>

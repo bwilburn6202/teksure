@@ -61,7 +61,7 @@ export default function Certificate() {
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
             <div className="text-4xl mb-3">🏆</div>
-            <h1 className="text-3xl font-bold text-primary mb-2">Tech Skills Certificates</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2">Tech Skills Certificates</h1>
             <p className="text-muted-foreground">Complete guides to unlock certificates — print and display them with pride.</p>
           </div>
         </div>
@@ -81,20 +81,18 @@ export default function Certificate() {
           <>
             {/* Live certificate preview */}
             {latestPath && (
-              <div ref={certRef} className={`rounded-2xl bg-gradient-to-br ${latestPath.colour} p-1 mb-8 shadow-xl`}>
-                <div className="bg-white rounded-[1.4rem] p-10 text-center">
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">TekSure · Certificate of Achievement</p>
-                  <div className="text-6xl mb-3">{latestPath.emoji}</div>
-                  <h2 className="text-2xl font-bold mb-1">{latestPath.name} Certificate</h2>
-                  <p className="text-muted-foreground mb-3">Awarded for completing</p>
-                  <div className="text-4xl font-black text-foreground mb-1">{total}</div>
-                  <p className="text-muted-foreground mb-4">guides completed</p>
-                  <Badge variant="outline" className="text-sm px-4 py-1">Issued {today}</Badge>
-                </div>
+              <div ref={certRef} className="rounded-2xl border border-border bg-white p-10 text-center mb-8">
+                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">TekSure · Certificate of Achievement</p>
+                <div className="text-6xl mb-3">{latestPath.emoji}</div>
+                <h2 className="text-2xl font-bold mb-1">{latestPath.name} Certificate</h2>
+                <p className="text-muted-foreground mb-3">Awarded for completing</p>
+                <div className="text-4xl font-black text-primary mb-1">{total}</div>
+                <p className="text-muted-foreground mb-4">guides completed</p>
+                <Badge variant="outline" className="text-sm px-4 py-1">Issued {today}</Badge>
               </div>
             )}
 
-            <div className="flex gap-3 mb-10 justify-center">
+            <div className="flex gap-3 mb-10 justify-center flex-wrap">
               <Button onClick={handlePrint} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Download className="h-4 w-4" /> Print / Save Certificate
               </Button>
@@ -111,9 +109,9 @@ export default function Certificate() {
           {paths.map(p => {
             const earned = total >= p.required;
             return (
-              <Card key={p.name} className={`rounded-2xl border border-border bg-card ${earned ? 'shadow-sm' : 'opacity-60'}`}>
+              <Card key={p.name} className={`rounded-2xl border border-border bg-card ${earned ? '' : 'opacity-60'}`}>
                 <CardContent className="pt-5 pb-4 flex items-center gap-4">
-                  <div className={`rounded-xl w-12 h-12 bg-gradient-to-br ${p.colour} flex items-center justify-center text-2xl shrink-0`}>{p.emoji}</div>
+                  <div className="rounded-xl w-12 h-12 bg-muted flex items-center justify-center text-2xl shrink-0">{p.emoji}</div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-0.5">
                       <p className="font-semibold">{p.name}</p>

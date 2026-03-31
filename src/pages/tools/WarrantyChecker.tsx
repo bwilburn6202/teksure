@@ -319,7 +319,7 @@ export default function WarrantyChecker() {
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
 
         <div className="flex items-center gap-3 mb-2">
-          <ShieldCheck className="h-8 w-8 text-secondary" />
+          <ShieldCheck className="h-8 w-8 text-primary" />
           <h1 className="text-3xl font-bold">Warranty &amp; Repair Finder</h1>
         </div>
         <p className="text-muted-foreground mb-8">
@@ -337,7 +337,7 @@ export default function WarrantyChecker() {
                   <button
                     key={b.id}
                     onClick={() => { setBrand(b.id); setStep(1); }}
-                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{b.emoji}</span>
                     <span className="font-medium text-sm">{b.label}</span>
@@ -356,7 +356,7 @@ export default function WarrantyChecker() {
                   <button
                     key={d.id}
                     onClick={() => { setDeviceType(d.id); setStep(2); }}
-                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{d.emoji}</span>
                     <span className="font-medium text-sm">{d.label}</span>
@@ -394,7 +394,7 @@ export default function WarrantyChecker() {
                     <Card>
                       <CardContent className="p-4">
                         <div className="flex items-start gap-3">
-                          <Clock className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                          <Clock className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                           <div>
                             <p className="font-semibold mb-1">Standard warranty period</p>
                             <p className="text-sm text-muted-foreground">{info.standardPeriod}</p>
@@ -412,7 +412,7 @@ export default function WarrantyChecker() {
                     <Card>
                       <CardContent className="p-4">
                         <div className="flex items-start gap-3">
-                          <Search className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                          <Search className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                           <div className="flex-1">
                             <p className="font-semibold mb-2">How to check your warranty</p>
                             <p className="text-sm text-muted-foreground mb-3">{info.howToCheck}</p>
@@ -435,7 +435,7 @@ export default function WarrantyChecker() {
                       <Card>
                         <CardContent className="p-4">
                           <div className="flex items-start gap-3">
-                            <Wrench className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                            <Wrench className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                             <div>
                               <p className="font-semibold mb-2">Get it repaired</p>
                               <div className="flex flex-wrap gap-2">

@@ -160,7 +160,7 @@ export default function QuickReference() {
       </div>
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 no-print">
-          <Printer className="h-8 w-8 text-secondary" />
+          <Printer className="h-8 w-8 text-primary" />
           <h1 className="text-3xl font-bold">Quick Reference Cards</h1>
         </div>
         <p className="text-muted-foreground mb-10 max-w-2xl no-print">
@@ -172,7 +172,7 @@ export default function QuickReference() {
             <Card key={card.title} data-card className="h-full flex flex-col">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <card.icon className="h-6 w-6 text-secondary shrink-0" />
+                  <card.icon className="h-6 w-6 text-primary shrink-0" />
                   <CardTitle className="text-base">{card.title}</CardTitle>
                 </div>
               </CardHeader>
@@ -180,7 +180,7 @@ export default function QuickReference() {
                 <ul className="space-y-2 flex-1 mb-4">
                   {card.tips.map((tip, j) => (
                     <li key={j} className="text-sm text-muted-foreground flex gap-2">
-                      <span className="text-secondary shrink-0">•</span>
+                      <span className="text-primary shrink-0">•</span>
                       {tip}
                     </li>
                   ))}

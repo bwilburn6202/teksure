@@ -32,7 +32,7 @@ export default function Favorites() {
               <div className="p-2 bg-primary/10 rounded-xl">
                 <Heart className="h-6 w-6 text-primary" />
               </div>
-              <h1 className="text-3xl font-bold">My Favorites</h1>
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">My Favorites</h1>
             </div>
             <p className="text-muted-foreground max-w-2xl">
               Guides you've bookmarked for quick access. Your favorites are saved in your browser.

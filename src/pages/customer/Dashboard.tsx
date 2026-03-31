@@ -22,7 +22,6 @@ import { useAuth } from '@/contexts/AuthContext';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
 
-/* ── Mock recent jobs (replace with Supabase query when ready) ── */
 const MOCK_JOBS = [
   { id: '1', category: 'wifi', description: 'WiFi keeps dropping every evening', status: 'in_progress', job_type: 'remote', created_at: '2026-03-22' },
   { id: '2', category: 'printer', description: 'Printer not connecting to new laptop', status: 'offered', job_type: 'in_person', created_at: '2026-03-20' },
@@ -39,7 +38,6 @@ const CATEGORY_LABELS: Record<string, string> = {
   virus: 'Virus / Malware', setup: 'Device Setup', other: 'Other',
 };
 
-/* ── Greeting helper ────────────────────────────────────────── */
 function getGreeting() {
   const h = new Date().getHours();
   if (h < 12) return 'Good morning';
@@ -47,13 +45,11 @@ function getGreeting() {
   return 'Good evening';
 }
 
-/* ── Next milestone ─────────────────────────────────────────── */
 const MILESTONES = [5, 10, 20, 50, 100];
 function nextMilestone(n: number) {
   return MILESTONES.find(m => m > n) ?? null;
 }
 
-/* ── Quick-action links ─────────────────────────────────────── */
 const QUICK_ACTIONS = [
   { icon: BookOpen, label: 'Browse Guides', to: '/guides', color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-950/30' },
   { icon: Brain, label: 'AI Tutor', to: '/ai-tutor', color: 'text-cyan-500', bg: 'bg-cyan-50 dark:bg-cyan-950/30' },
@@ -79,12 +75,10 @@ const Dashboard = () => {
   const next = nextMilestone(completedCount);
   const progressPct = next ? Math.round((completedCount / next) * 100) : 100;
 
-  // Recommended guides (not yet completed, max 3)
   const recommended = guides
     .filter(g => !completed.has(g.slug))
     .slice(0, 3);
 
-  // Recently completed guides (last 3 slugs from Set — most recently added)
   const recentCompletedSlugs = [...completed].slice(-3).reverse();
   const recentCompleted = recentCompletedSlugs
     .map(slug => guides.find(g => g.slug === slug))
@@ -101,11 +95,11 @@ const Dashboard = () => {
       <Navbar />
       <main className="container py-8 max-w-6xl">
 
-        {/* ── Header ── */}
+        {/* Header */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <p className="text-sm text-muted-foreground mb-0.5">{getGreeting()},</p>
-            <h1 className="text-2xl md:text-3xl font-bold">{user?.fullName ?? 'there'} 👋</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} 👋</h1>
             <p className="text-muted-foreground text-sm mt-1">Here's how your tech journey is going.</p>
           </div>
           <Dialog open={open} onOpenChange={setOpen}>
@@ -169,7 +163,7 @@ const Dashboard = () => {
           </Dialog>
         </motion.div>
 
-        {/* ── Stats row ── */}
+        {/* Stats row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {[
             { label: 'Guides completed', value: completedCount, icon: BookOpen, color: 'text-blue-500', sub: `${next ? `${next - completedCount} until next badge` : 'All milestones reached!'}` },
@@ -178,7 +172,7 @@ const Dashboard = () => {
             { label: 'Learning streak', value: `${Math.floor(Math.random() * 5) + 1}d`, icon: TrendingUp, color: 'text-emerald-500', sub: 'days in a row' },
           ].map(({ label, value, icon: Icon, color, sub }, i) => (
             <motion.div key={label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }}>
-              <Card className="h-full">
+              <Card className="rounded-2xl border border-border bg-card h-full">
                 <CardContent className="pt-4 pb-4">
                   <div className="flex items-start justify-between mb-2">
                     <Icon className={`h-5 w-5 ${color}`} />
@@ -193,17 +187,17 @@ const Dashboard = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6 mb-6">
-          {/* ── Learning progress ── */}
-          <Card className="lg:col-span-2">
-            <CardHeader className="pb-3">
+          {/* Learning progress */}
+          <Card className="rounded-2xl border border-border bg-card lg:col-span-2">
+            <CardHeader className="pb-3 border-b border-border">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-base">Learning Progress</CardTitle>
-                <Link to="/progress-report" className="text-xs text-secondary hover:underline flex items-center gap-0.5">
+                <Link to="/progress-report" className="text-xs text-primary hover:underline flex items-center gap-0.5">
                   Full report <ChevronRight className="h-3 w-3" />
                 </Link>
               </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               {next ? (
                 <div className="mb-5">
                   <div className="flex justify-between text-sm mb-1.5">
@@ -219,17 +213,16 @@ const Dashboard = () => {
                 </div>
               )}
 
-              {/* Recommended next guides */}
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Recommended next</p>
               <div className="space-y-2">
                 {recommended.length > 0 ? recommended.map(g => (
-                  <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-3 p-2.5 rounded-lg bg-muted/50 hover:bg-muted transition-colors group">
+                  <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-3 p-2.5 rounded-xl bg-muted/50 hover:bg-muted transition-colors group">
                     <span className="text-xl">{g.thumbnailEmoji}</span>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate">{g.title}</p>
                       <p className="text-xs text-muted-foreground">{g.readTime} read · {g.difficulty}</p>
                     </div>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-secondary shrink-0 transition-colors" />
+                    <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-primary shrink-0 transition-colors" />
                   </Link>
                 )) : (
                   <p className="text-sm text-muted-foreground py-2">You've explored all our guides — impressive!</p>
@@ -238,12 +231,12 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          {/* ── Quick actions ── */}
-          <Card>
-            <CardHeader className="pb-3">
+          {/* Quick actions */}
+          <Card className="rounded-2xl border border-border bg-card">
+            <CardHeader className="pb-3 border-b border-border">
               <CardTitle className="text-base">Quick Actions</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-2">
+            <CardContent className="pt-4 grid grid-cols-2 gap-2">
               {QUICK_ACTIONS.map(({ icon: Icon, label, to, color, bg }) => (
                 <Link
                   key={to}
@@ -259,17 +252,17 @@ const Dashboard = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* ── Support requests ── */}
-          <Card className="lg:col-span-2">
-            <CardHeader className="pb-3">
+          {/* Support requests */}
+          <Card className="rounded-2xl border border-border bg-card lg:col-span-2">
+            <CardHeader className="pb-3 border-b border-border">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-base">Support Requests</CardTitle>
-                <Link to="/my-requests" className="text-xs text-secondary hover:underline flex items-center gap-0.5">
+                <Link to="/my-requests" className="text-xs text-primary hover:underline flex items-center gap-0.5">
                   View all <ChevronRight className="h-3 w-3" />
                 </Link>
               </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               {MOCK_JOBS.length === 0 ? (
                 <div className="text-center py-8">
                   <MessageSquare className="h-10 w-10 text-muted-foreground/30 mx-auto mb-3" />
@@ -281,7 +274,7 @@ const Dashboard = () => {
                   {MOCK_JOBS.map(job => {
                     const Icon = CATEGORY_ICONS[job.category] ?? MessageSquare;
                     return (
-                      <Link to={`/customer/jobs/${job.id}`} key={job.id} className="flex items-center gap-3 p-3 rounded-lg border border-border hover:border-secondary/40 hover:shadow-sm transition-all group">
+                      <Link to={`/customer/jobs/${job.id}`} key={job.id} className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-primary/40 hover:shadow-sm transition-all group">
                         <div className="h-9 w-9 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                           <Icon className="h-4 w-4 text-muted-foreground" />
                         </div>
@@ -306,19 +299,18 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          {/* ── Sidebar: recent + book CTA ── */}
+          {/* Sidebar */}
           <div className="space-y-4">
-            {/* Recently completed */}
             {recentCompleted.length > 0 && (
-              <Card>
-                <CardHeader className="pb-2">
+              <Card className="rounded-2xl border border-border bg-card">
+                <CardHeader className="pb-2 border-b border-border">
                   <CardTitle className="text-sm flex items-center gap-2">
                     <Star className="h-4 w-4 text-amber-500" /> Recently completed
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
+                <CardContent className="pt-3 space-y-2">
                   {recentCompleted.map(g => (
-                    <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-2 text-xs hover:text-secondary transition-colors">
+                    <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-2 text-xs hover:text-primary transition-colors">
                       <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />
                       <span className="truncate">{g.title}</span>
                     </Link>
@@ -327,10 +319,9 @@ const Dashboard = () => {
               </Card>
             )}
 
-            {/* Book a technician CTA */}
-            <Card className="bg-gradient-to-br from-secondary/10 to-primary/5 border-secondary/20">
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="pt-5 pb-5">
-                <Calendar className="h-8 w-8 text-secondary mb-3" />
+                <Calendar className="h-8 w-8 text-primary mb-3" />
                 <h3 className="font-semibold text-sm mb-1">Need hands-on help?</h3>
                 <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
                   Book a friendly technician for a remote screen-share or an in-home visit.
@@ -341,8 +332,7 @@ const Dashboard = () => {
               </CardContent>
             </Card>
 
-            {/* Tip of the day */}
-            <Card>
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="pt-4 pb-4">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 flex items-center gap-1.5">
                   <Clock className="h-3 w-3" /> Today's tip

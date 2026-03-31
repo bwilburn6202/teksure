@@ -221,7 +221,7 @@ const deviceOptions: { type: DeviceType; label: string; icon: typeof Headphones;
   { type: 'speaker', label: 'Bluetooth Speaker', icon: Speaker, color: 'text-teal-500' },
   { type: 'keyboard', label: 'Wireless Keyboard / Mouse', icon: Laptop, color: 'text-blue-500' },
   { type: 'phone', label: 'Phone / Car', icon: Smartphone, color: 'text-orange-500' },
-  { type: 'other', label: 'Other Device', icon: Monitor, color: 'text-secondary' },
+  { type: 'other', label: 'Other Device', icon: Monitor, color: 'text-primary' },
 ];
 
 export default function BluetoothTroubleshooter() {

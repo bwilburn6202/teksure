@@ -59,7 +59,7 @@ export default function TechGiftGuide() {
       <main className="flex-1">
         <div className="border-b border-border py-14 text-center">
           <div className="text-4xl mb-3">🎁</div>
-          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">Tech Gift Guide</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">Tech Gift Guide</h1>
           <p className="text-muted-foreground max-w-md mx-auto">Curated tech gifts for every occasion — handpicked for real people, not tech enthusiasts.</p>
         </div>
 

@@ -75,12 +75,12 @@ const MyRequests = () => {
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-3xl font-bold">My Requests</h1>
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight">My Requests</h1>
               <p className="text-muted-foreground mt-1">
                 {user?.fullName ? `Hi ${user.fullName.split(' ')[0]}!` : 'Hi there!'} Here's what you've submitted.
               </p>
             </div>
-            <Button asChild className="gap-2">
+            <Button asChild className="gap-2 rounded-xl">
               <Link to="/get-help"><Plus className="h-4 w-4" /> New Request</Link>
             </Button>
           </div>
@@ -102,7 +102,7 @@ const MyRequests = () => {
               </div>
               <h2 className="text-xl font-semibold">No requests yet</h2>
               <p className="text-muted-foreground">Submit your first help request and we'll get back to you fast.</p>
-              <Button asChild><Link to="/get-help">Get Help Now</Link></Button>
+              <Button asChild className="rounded-xl"><Link to="/get-help">Get Help Now</Link></Button>
             </div>
           )}
 
@@ -113,7 +113,7 @@ const MyRequests = () => {
                 const status = statusConfig[req.status] ?? statusConfig['new'];
                 const StatusIcon = status.icon;
                 return (
-                  <div key={req.id} className="bg-card border border-border rounded-xl p-5 space-y-4">
+                  <div key={req.id} className="bg-card border border-border rounded-2xl p-5 space-y-4">
                     {/* Top row: date + status */}
                     <div className="flex items-center justify-between gap-2">
                       <span className="text-sm text-muted-foreground">{formatDate(req.created_at)}</span>

@@ -142,7 +142,7 @@ export default function OpportunityDashboard() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight">Business Opportunity Dashboard</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Business Opportunity Dashboard</h1>
             <p className="text-muted-foreground mt-1">Compare 16 business models across revenue, cost, margins & break-even</p>
           </div>
           <div className="flex gap-3">
@@ -171,15 +171,15 @@ export default function OpportunityDashboard() {
         {/* KPI Cards */}
         {filtered.length > 0 && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <KpiCard icon={<TrendingUp className="h-5 w-5" />} label="Highest Revenue" value={fmtFull(kpis.highestRevenue.monthlyRevenue) + '/mo'} sub={kpis.highestRevenue.name} color="text-secondary" />
-            <KpiCard icon={<DollarSign className="h-5 w-5" />} label="Lowest Startup Cost" value={fmtFull(kpis.lowestCost.startupCost)} sub={kpis.lowestCost.name} color="text-[hsl(var(--teksure-info))]" />
-            <KpiCard icon={<Percent className="h-5 w-5" />} label="Highest Net Margin" value={kpis.highestMargin.netMargin + '%'} sub={kpis.highestMargin.name} color="text-[hsl(var(--teksure-success))]" />
-            <KpiCard icon={<Clock className="h-5 w-5" />} label="Fastest Break-even" value={kpis.fastestBreakEven.breakEvenMonths + ' mo'} sub={kpis.fastestBreakEven.name} color="text-[hsl(var(--teksure-warning))]" />
+            <KpiCard icon={<TrendingUp className="h-5 w-5" />} label="Highest Revenue" value={fmtFull(kpis.highestRevenue.monthlyRevenue) + '/mo'} sub={kpis.highestRevenue.name} color="text-primary" />
+            <KpiCard icon={<DollarSign className="h-5 w-5" />} label="Lowest Startup Cost" value={fmtFull(kpis.lowestCost.startupCost)} sub={kpis.lowestCost.name} color="text-primary" />
+            <KpiCard icon={<Percent className="h-5 w-5" />} label="Highest Net Margin" value={kpis.highestMargin.netMargin + '%'} sub={kpis.highestMargin.name} color="text-primary" />
+            <KpiCard icon={<Clock className="h-5 w-5" />} label="Fastest Break-even" value={kpis.fastestBreakEven.breakEvenMonths + ' mo'} sub={kpis.fastestBreakEven.name} color="text-primary" />
           </div>
         )}
 
         {/* Revenue Growth Trajectories */}
-        <Card>
+        <Card className="rounded-2xl border border-border bg-card">
           <CardHeader><CardTitle className="text-lg">Revenue Growth Trajectories (Logistic Model)</CardTitle></CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={320}>
@@ -199,7 +199,7 @@ export default function OpportunityDashboard() {
 
         {/* Bar Charts Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardHeader><CardTitle className="text-lg">Monthly Revenue at Scale</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -216,7 +216,7 @@ export default function OpportunityDashboard() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardHeader><CardTitle className="text-lg">Startup Cost Required</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -236,7 +236,7 @@ export default function OpportunityDashboard() {
 
         {/* Net Margin & Break-even */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardHeader><CardTitle className="text-lg">Net Margin (%)</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -253,7 +253,7 @@ export default function OpportunityDashboard() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card">
             <CardHeader><CardTitle className="text-lg">Months to Break-Even</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -272,7 +272,7 @@ export default function OpportunityDashboard() {
         </div>
 
         {/* Full Data Table */}
-        <Card>
+        <Card className="rounded-2xl border border-border bg-card">
           <CardHeader><CardTitle className="text-lg">All Business Models</CardTitle></CardHeader>
           <CardContent className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -325,7 +325,7 @@ export default function OpportunityDashboard() {
 
 function KpiCard({ icon, label, value, sub, color }: { icon: React.ReactNode; label: string; value: string; sub: string; color: string }) {
   return (
-    <Card>
+    <Card className="rounded-2xl border border-border bg-card">
       <CardContent className="pt-6">
         <div className="flex items-center gap-3">
           <div className={`${color}`}>{icon}</div>

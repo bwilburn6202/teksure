@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -11,8 +12,6 @@ import {
   RefreshCw, Phone, Mail, Monitor, ChevronDown, ChevronUp, Search,
 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
-
-// ─── Types ───────────────────────────────────────────────────────────────────
 
 interface HelpRequest {
   id: string;
@@ -56,8 +55,6 @@ function timeAgo(iso: string) {
   if (hrs < 24) return `${hrs}h ago`;
   return `${Math.floor(hrs / 24)}d ago`;
 }
-
-// ─── Bookings tab ─────────────────────────────────────────────────────────────
 
 interface Booking {
   id: string;
@@ -126,7 +123,6 @@ function BookingsTab() {
 
   return (
     <div className="space-y-6">
-      {/* Stat cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {(['all', 'pending', 'confirmed', 'completed'] as const).map(s => {
           const cfg = s === 'all' ? null : bookingStatusConfig[s];
@@ -134,7 +130,7 @@ function BookingsTab() {
             <button
               key={s}
               onClick={() => setFilterStatus(s)}
-              className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-secondary shadow-sm' : ''}`}
+              className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-primary shadow-sm' : ''}`}
             >
               <p className="text-xs text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
               <p className="text-2xl font-bold">{counts[s]}</p>
@@ -143,7 +139,6 @@ function BookingsTab() {
         })}
       </div>
 
-      {/* Filter pills */}
       <div className="flex flex-wrap gap-2">
         {(['all', ...BOOKING_STATUS_OPTIONS] as const).map(s => {
           const cfg = s === 'all' ? null : bookingStatusConfig[s];
@@ -152,7 +147,7 @@ function BookingsTab() {
               key={s}
               onClick={() => setFilterStatus(s)}
               className={`rounded-full border px-3 py-1 text-xs transition-all ${
-                filterStatus === s ? 'bg-secondary text-secondary-foreground border-secondary' : 'hover:bg-muted text-muted-foreground'
+                filterStatus === s ? 'bg-primary text-primary-foreground border-primary' : 'hover:bg-muted text-muted-foreground'
               }`}
             >
               {s === 'all' ? `All (${counts.all})` : `${cfg?.label} (${counts[s]})`}
@@ -161,7 +156,7 @@ function BookingsTab() {
         })}
       </div>
 
-      <Card>
+      <Card className="rounded-2xl border border-border bg-card overflow-hidden">
         <Table>
           <TableHeader>
             <TableRow>
@@ -240,8 +235,6 @@ function BookingsTab() {
   );
 }
 
-// ─── Placeholder data for future features ────────────────────────────────────
-
 const mockJobs = [
   { id: '1', category: 'WiFi', customer: 'John D.', tech: 'Alex M.', status: 'in_progress', created: '2024-01-15' },
   { id: '2', category: 'Printer', customer: 'Sarah K.', tech: 'Mike R.', status: 'completed', created: '2024-01-14' },
@@ -254,8 +247,6 @@ const mockTechs = [
   { id: '2', name: 'Mike R.', verification_level: 'id', jobs: 12, rating: 4.5 },
   { id: '3', name: 'Chris P.', verification_level: 'none', jobs: 0, rating: 0 },
 ];
-
-// ─── Help Requests tab ───────────────────────────────────────────────────────
 
 function HelpRequestsTab() {
   const [requests, setRequests] = useState<HelpRequest[]>([]);
@@ -312,7 +303,6 @@ function HelpRequestsTab() {
 
   return (
     <div className="space-y-6">
-      {/* Stat cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {(['all', 'new', 'in_progress', 'resolved'] as const).map(s => {
           const cfg = s === 'all' ? null : statusConfig[s];
@@ -321,7 +311,7 @@ function HelpRequestsTab() {
             <button
               key={s}
               onClick={() => setFilterStatus(s)}
-              className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-secondary shadow-sm' : ''}`}
+              className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-primary shadow-sm' : ''}`}
             >
               <p className="text-xs text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
               <p className="text-2xl font-bold">{count}</p>
@@ -336,12 +326,11 @@ function HelpRequestsTab() {
         })}
       </div>
 
-      {/* Search + refresh */}
       <div className="flex items-center gap-3">
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <input
-            className="w-full rounded-lg border bg-background pl-9 pr-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="w-full rounded-lg border bg-background pl-9 pr-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
             placeholder="Search name, email, or issue…"
             value={search}
             onChange={e => setSearch(e.target.value)}
@@ -356,7 +345,6 @@ function HelpRequestsTab() {
         </button>
       </div>
 
-      {/* Status filter pills */}
       <div className="flex flex-wrap gap-2">
         {(['all', ...STATUS_OPTIONS] as const).map(s => {
           const cfg = s === 'all' ? null : statusConfig[s];
@@ -366,7 +354,7 @@ function HelpRequestsTab() {
               onClick={() => setFilterStatus(s)}
               className={`rounded-full border px-3 py-1 text-xs transition-all ${
                 filterStatus === s
-                  ? 'bg-secondary text-secondary-foreground border-secondary'
+                  ? 'bg-primary text-primary-foreground border-primary'
                   : 'hover:bg-muted text-muted-foreground'
               }`}
             >
@@ -376,8 +364,7 @@ function HelpRequestsTab() {
         })}
       </div>
 
-      {/* Table */}
-      <Card>
+      <Card className="rounded-2xl border border-border bg-card overflow-hidden">
         <Table>
           <TableHeader>
             <TableRow>
@@ -455,7 +442,6 @@ function HelpRequestsTab() {
                             )}
                           </div>
                         </div>
-                        {/* Status actions */}
                         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
                           <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
                           {STATUS_OPTIONS.filter(s => s !== r.status).map(s => {
@@ -485,14 +471,14 @@ function HelpRequestsTab() {
   );
 }
 
-// ─── Main admin console ───────────────────────────────────────────────────────
-
 const AdminConsole = () => (
-  <div className="min-h-screen">
+  <div className="min-h-screen bg-background">
     <Navbar />
     <div className="container py-8">
-      <h1 className="text-2xl font-bold mb-1">Admin Console</h1>
-      <p className="text-muted-foreground mb-8">Manage requests, jobs, disputes, and technician verification</p>
+      <div className="border-b border-border pb-6 mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Admin Console</h1>
+        <p className="text-muted-foreground">Manage requests, jobs, disputes, and technician verification</p>
+      </div>
 
       <Tabs defaultValue="requests">
         <TabsList className="mb-6">
@@ -503,22 +489,19 @@ const AdminConsole = () => (
           <TabsTrigger value="techs">Tech Verification</TabsTrigger>
         </TabsList>
 
-        {/* ── Help Requests (live Supabase data) ── */}
         <TabsContent value="requests">
           <HelpRequestsTab />
         </TabsContent>
 
-        {/* ── Bookings (live Supabase data) ── */}
         <TabsContent value="bookings">
           <BookingsTab />
         </TabsContent>
 
-        {/* ── Jobs (placeholder — technician booking coming soon) ── */}
         <TabsContent value="jobs">
           <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
             Job matching launches with the technician booking system. Requests will appear here once a tech is assigned.
           </div>
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -544,12 +527,11 @@ const AdminConsole = () => (
           </Card>
         </TabsContent>
 
-        {/* ── Disputes (placeholder) ── */}
         <TabsContent value="disputes">
           <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
             Dispute management will be available once the technician booking system is live.
           </div>
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -575,31 +557,30 @@ const AdminConsole = () => (
           </Card>
         </TabsContent>
 
-        {/* ── Tech Verification (placeholder) ── */}
         <TabsContent value="techs">
           <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
             Technician profiles and verification will be managed here once onboarding is live.
           </div>
           <div className="grid grid-cols-3 gap-4 mb-6">
-            <Card>
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-4">
-                <Users className="h-5 w-5 text-secondary" />
+                <Users className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Total Techs</p>
                   <p className="text-xl font-bold">{mockTechs.length}</p>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-4">
-                <Shield className="h-5 w-5 text-secondary" />
+                <Shield className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Verified</p>
                   <p className="text-xl font-bold">{mockTechs.filter(t => t.verification_level !== 'none').length}</p>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-4">
                 <AlertTriangle className="h-5 w-5 text-destructive" />
                 <div>
@@ -609,7 +590,7 @@ const AdminConsole = () => (
               </CardContent>
             </Card>
           </div>
-          <Card>
+          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -644,6 +625,7 @@ const AdminConsole = () => (
         </TabsContent>
       </Tabs>
     </div>
+    <Footer />
   </div>
 );
 

@@ -214,9 +214,9 @@ export default function ErrorDecoder() {
       />
       <Navbar />
       <main className="container py-16 min-h-[60vh]">
-        <div className="flex items-center gap-3 mb-2">
+        <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <AlertCircle className="h-8 w-8 text-destructive" />
-          <h1 className="text-3xl font-bold">Error Message Decoder</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Error Message Decoder</h1>
         </div>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           Search for any error message below and get a simple explanation of what went wrong — plus 3 things you can try to fix it.
@@ -240,8 +240,8 @@ export default function ErrorDecoder() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           {filtered.map((entry) => (
-            <Card key={entry.error} className="overflow-hidden">
-              <CardHeader className="pb-2">
+            <Card key={entry.error} className="rounded-2xl border border-border bg-card overflow-hidden">
+              <CardHeader className="pb-2 border-b border-border">
                 <div className="flex items-start justify-between gap-2">
                   <CardTitle className="text-lg flex items-center gap-2">
                     <AlertCircle className="h-5 w-5 text-destructive shrink-0" />
@@ -250,7 +250,7 @@ export default function ErrorDecoder() {
                   <Badge variant="outline" className="shrink-0 text-xs">Error</Badge>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="pt-4 space-y-4">
                 <div className="flex gap-2">
                   <Info className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
                   <p className="text-sm text-muted-foreground">{entry.explanation}</p>

@@ -170,7 +170,7 @@ export default function AppRecommender() {
       <Navbar />
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-2">
-          <Smartphone className="h-8 w-8 text-secondary" />
+          <Smartphone className="h-8 w-8 text-primary" />
           <h1 className="text-3xl font-bold">App Recommender</h1>
         </div>
         <p className="text-muted-foreground mb-6">
@@ -198,7 +198,7 @@ export default function AppRecommender() {
                   <button
                     key={u.id}
                     onClick={() => { setAnswers(p => ({ ...p, usage: u.id })); setStep(1); }}
-                    className="flex items-center gap-3 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                    className="flex items-center gap-3 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{u.emoji}</span>
                     <div>
@@ -220,7 +220,7 @@ export default function AppRecommender() {
                   <button
                     key={d.id}
                     onClick={() => { setAnswers(p => ({ ...p, device: d.id })); setStep(2); }}
-                    className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                    className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{d.emoji}</span>
                     <span className="font-medium">{d.label}</span>
@@ -239,7 +239,7 @@ export default function AppRecommender() {
               <div className="grid gap-3">
                 <button
                   onClick={() => { setAnswers(p => ({ ...p, budget: 'free' })); setStep(3); }}
-                  className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                  className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                 >
                   <span className="text-3xl">🆓</span>
                   <div>
@@ -249,7 +249,7 @@ export default function AppRecommender() {
                 </button>
                 <button
                   onClick={() => { setAnswers(p => ({ ...p, budget: 'paid-ok' })); setStep(3); }}
-                  className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-secondary/60 hover:bg-secondary/5"
+                  className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                 >
                   <span className="text-3xl">💳</span>
                   <div>
@@ -266,7 +266,7 @@ export default function AppRecommender() {
           {step === 3 && (
             <motion.div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
-                <Sparkles className="h-7 w-7 text-secondary" />
+                <Sparkles className="h-7 w-7 text-primary" />
                 <h2 className="text-2xl font-bold">Your App Recommendations</h2>
               </div>
               <p className="text-muted-foreground mb-6">
@@ -275,17 +275,17 @@ export default function AppRecommender() {
 
               <div className="grid gap-4 mb-8">
                 {recs.map((app, i) => (
-                  <Card key={i} className={`transition-shadow hover:shadow-md ${i === 0 ? 'border-secondary/40 bg-secondary/5' : ''}`}>
+                  <Card key={i} className={`transition-shadow hover:shadow-md ${i === 0 ? 'border-primary/40 bg-primary/5' : ''}`}>
                     <CardContent className="p-5">
                       <div className="flex items-start gap-4">
                         <span className="text-4xl">{app.emoji}</span>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap mb-1">
                             <span className="text-lg font-bold">{app.name}</span>
-                            {app.badge && <Badge className="bg-secondary text-secondary-foreground text-xs">{app.badge}</Badge>}
+                            {app.badge && <Badge className="bg-primary text-primary-foreground text-xs">{app.badge}</Badge>}
                             <span className="text-sm text-muted-foreground ml-auto">{app.rating}</span>
                           </div>
-                          <p className="text-sm font-medium text-secondary mb-1">{app.tagline}</p>
+                          <p className="text-sm font-medium text-primary mb-1">{app.tagline}</p>
                           <p className="text-sm text-muted-foreground mb-2">{app.description}</p>
                           <div className="rounded-lg bg-muted/60 p-3 mb-3">
                             <p className="text-xs font-semibold text-muted-foreground mb-0.5">Why it's great for beginners:</p>

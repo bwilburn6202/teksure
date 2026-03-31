@@ -196,9 +196,9 @@ export default function EmailTemplates() {
       />
       <Navbar />
       <main className="container py-16 min-h-[60vh]">
-        <div className="flex items-center gap-3 mb-2">
-          <Mail className="h-8 w-8 text-secondary" />
-          <h1 className="text-3xl font-bold">Email Templates</h1>
+        <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
+          <Mail className="h-8 w-8 text-primary" />
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Email Templates</h1>
         </div>
         <p className="text-muted-foreground mb-10 max-w-2xl">
           Ready-to-use email templates — just copy, paste, and personalise the bits in [brackets].
@@ -206,8 +206,8 @@ export default function EmailTemplates() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           {templates.map((t, i) => (
-            <Card key={t.title}>
-              <CardHeader className="pb-3">
+            <Card key={t.title} className="rounded-2xl border border-border bg-card flex flex-col">
+              <CardHeader className="pb-3 border-b border-border">
                 <div className="flex items-start justify-between gap-2">
                   <CardTitle className="text-lg">{t.title}</CardTitle>
                   <Badge className={`shrink-0 text-xs font-normal ${categoryColors[t.category] || ''}`}>
@@ -215,11 +215,11 @@ export default function EmailTemplates() {
                   </Badge>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-3 pt-4 flex-1 flex flex-col">
                 <Textarea
                   readOnly
                   value={t.body}
-                  className="min-h-[180px] text-sm font-mono resize-y bg-muted/50"
+                  className="min-h-[180px] text-sm font-mono resize-y bg-muted/50 flex-1"
                 />
                 <Button
                   variant="outline"

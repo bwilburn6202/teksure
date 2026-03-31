@@ -64,7 +64,7 @@ export default function LocalHelp() {
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <div className="text-4xl mb-3">📍</div>
-            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">Find Local Tech Help</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">Find Local Tech Help</h1>
             <p className="text-muted-foreground mb-6">Find trusted tech support near you — libraries, community groups, courses, and one-to-one help.</p>
             <form onSubmit={handleSearch} className="flex gap-2 max-w-sm mx-auto">
               <Input placeholder="Enter your town or postcode…" value={location} onChange={e => setLocation(e.target.value)} className="flex-1 rounded-xl" />

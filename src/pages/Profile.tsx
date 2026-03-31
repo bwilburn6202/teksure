@@ -150,10 +150,7 @@ export default function Profile() {
       <Navbar />
       <main className="container max-w-xl py-16 min-h-screen bg-background">
 
-        <div className="flex items-center gap-3 mb-8">
-          <User className="h-7 w-7 text-primary" />
-          <h1 className="text-2xl font-bold text-primary">My Profile</h1>
-        </div>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-primary">My Profile</h1>
 
         {/* Avatar + summary */}
         <div className="flex items-center gap-5 mb-8">
@@ -224,7 +221,7 @@ export default function Profile() {
                 </div>
               )}
 
-              <Button type="submit" disabled={saving} className="w-full h-11 gap-2 rounded-xl">
+              <Button type="submit" disabled={saving} className="w-full h-11 gap-2 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90">
                 {saving ? (
                   <><Loader2 className="h-4 w-4 animate-spin" /> Saving...</>
                 ) : saved ? (
@@ -315,9 +312,9 @@ export default function Profile() {
               })}
             </div>
             <Button
-              variant="ghost"
+              variant="outline"
               size="sm"
-              className="mt-3 w-full text-xs text-muted-foreground"
+              className="mt-3 w-full text-xs rounded-xl"
               onClick={() => navigate('/guides')}
             >
               Browse all guides <ArrowRight className="h-3 w-3 ml-1" />
