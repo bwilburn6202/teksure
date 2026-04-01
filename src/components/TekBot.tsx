@@ -10,13 +10,18 @@
  *  - Conversation context awareness (continuation phrases)
  *  - Guide matching with category boost
  *  - Quick prompts that adapt to detected device
+ *  - Session memory (sessionStorage) — conversation persists across page navigation
+ *  - Context-aware system prompt injection — current page / guide slug boosts KB matching
+ *  - Related guides sidebar — top guides for the current page shown alongside chat
+ *  - Clear chat button — lets users reset session memory
  */
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   Bot, X, Send, BookOpen, ExternalLink,
   Laptop, Smartphone, Apple, Monitor, Settings2, ChevronDown,
+  Trash2, MessageSquare,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -43,6 +48,38 @@ function loadDevice(): DeviceType {
 function saveDevice(d: DeviceType) {
   if (d) localStorage.setItem(DEVICE_KEY, d);
   else localStorage.removeItem(DEVICE_KEY);
+}
+
+/* ── Session memory (sessionStorage) ──────────────────────── */
+
+const SESSION_KEY = 'teksure_tekbot_session';
+
+function loadSession(): Message[] {
+  try {
+    const raw = sessionStorage.getItem(SESSION_KEY);
+    if (!raw) return [];
+    return JSON.parse(raw) as Message[];
+  } catch {
+    return [];
+  }
+}
+
+function saveSession(msgs: Message[]) {
+  try {
+    // Keep last 40 messages to avoid storage bloat
+    const trimmed = msgs.slice(-40);
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify(trimmed));
+  } catch {
+    // sessionStorage may be unavailable in private-browsing edge cases
+  }
+}
+
+function clearSession() {
+  try {
+    sessionStorage.removeItem(SESSION_KEY);
+  } catch {
+    // noop
+  }
 }
 
 /** Auto-detect device from user message text */
@@ -296,6 +333,26 @@ function isContinuation(text: string): boolean {
 
 /* ── Response engine ───────────────────────────────────────── */
 
+/**
+ * Build an enriched query string that injects page context keywords so the KB
+ * has a better chance of matching a relevant answer. For example, if the user
+ * is on /tools/backup-wizard and asks "how do I do this?", injecting "backup"
+ * from the page slug helps the KB return the backup answer.
+ */
+function buildContextualQuery(input: string, pathname: string): string {
+  if (pathname.startsWith('/guides/')) {
+    const slug = pathname.replace('/guides/', '').replace(/-/g, ' ');
+    return `${slug} ${input}`;
+  }
+  if (pathname.startsWith('/tools/')) {
+    const tool = pathname.replace('/tools/', '').replace(/-/g, ' ');
+    return `${tool} ${input}`;
+  }
+  const contextWord = PAGE_CONTEXT[pathname];
+  if (contextWord) return `${contextWord} ${input}`;
+  return input;
+}
+
 function getResponse(input: string, device: DeviceType): string {
   const lower = input.toLowerCase();
   for (const entry of KB) {
@@ -394,22 +451,51 @@ export function TekBot() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
   const [device, setDevice] = useState<DeviceType>(loadDevice);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>(() => loadSession());
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
   const [showDevicePicker, setShowDevicePicker] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const enrichedRef = useRef<string>('');
 
-  /* Welcome message — updates on page change or device change */
+  /* Persist messages to sessionStorage whenever they change */
   useEffect(() => {
+    saveSession(messages);
+  }, [messages]);
+
+  /* Build welcome message for the current page — only shown when session is empty */
+  const welcomeMessage = useMemo(() => {
     const ctx = getPageContext(location.pathname);
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
-    const welcome = ctx
+    return ctx
       ? `Hi! I'm TekBot 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
       : `Hi! I'm TekBot, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
-    setMessages([{ role: 'bot', content: welcome }]);
   }, [location.pathname, device]);
+
+  /* If session is empty (first open or after clear), inject a fresh welcome */
+  useEffect(() => {
+    if (messages.length === 0) {
+      setMessages([{ role: 'bot', content: welcomeMessage }]);
+    }
+  }, [welcomeMessage]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  /* When user navigates to a new page during an active session, add a brief
+     context update message only if there are already conversation messages
+     and the pathname actually changed. */
+  const prevPathRef = useRef(location.pathname);
+  useEffect(() => {
+    const prev = prevPathRef.current;
+    prevPathRef.current = location.pathname;
+    if (prev === location.pathname) return;
+    if (messages.length <= 1) return; // only welcome exists — no need
+    const ctx = getPageContext(location.pathname);
+    if (ctx) {
+      setMessages(prev => [
+        ...prev,
+        { role: 'bot', content: `I can see you've moved to ${ctx}. Feel free to keep asking questions!` },
+      ]);
+    }
+  }, [location.pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -424,6 +510,16 @@ export function TekBot() {
       ...prev,
       { role: 'bot', content: `Got it! I'll tailor my answers for ${label} from now on. 👍` },
     ]);
+  }
+
+  function handleClearChat() {
+    clearSession();
+    const ctx = getPageContext(location.pathname);
+    const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
+    const welcome = ctx
+      ? `Hi! I'm TekBot 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
+      : `Hi! I'm TekBot, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
+    setMessages([{ role: 'bot', content: welcome }]);
   }
 
   const send = (overrideText?: string) => {
@@ -441,9 +537,11 @@ export function TekBot() {
     // Build conversation memory: extract last 5 user messages for context
     setMessages(prev => {
       const history = prev.filter(m => m.role === 'user').slice(-5).map(m => m.content);
-      const enrichedQuery = isContinuation(text) && history.length > 1
+      const baseQuery = isContinuation(text) && history.length > 1
         ? `${history.slice(0, -1).join(' ')} ${text}` // prepend prior context for KB matching
         : text;
+      // Inject page context to boost relevance for on-page questions
+      const enrichedQuery = buildContextualQuery(baseQuery, location.pathname);
 
       enrichedRef.current = enrichedQuery;
       return [...prev, { role: 'user', content: text }];
@@ -474,6 +572,16 @@ export function TekBot() {
   // Page-aware prompts: use page-specific chips first, fall back to device/default
   const quickPrompts = getPagePrompts(location.pathname, device);
 
+  // Related guides for the current page — shown in a persistent sidebar panel
+  const pageRelatedGuides = useMemo(() => {
+    const contextQuery = buildContextualQuery('', location.pathname).trim();
+    if (!contextQuery) return [];
+    return findRelatedGuides(contextQuery, 4);
+  }, [location.pathname]);
+
+  // Count of actual conversation exchanges (excluding the welcome message)
+  const conversationCount = messages.filter(m => m.role === 'user').length;
+
   return (
     <>
       {/* Floating button */}
@@ -486,9 +594,19 @@ export function TekBot() {
             onClick={() => setOpen(true)}
             className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
             style={{ backgroundColor: 'hsl(172 50% 40%)', minHeight: 48, fontSize: 16 }}
+            aria-label="Open TekBot chat assistant"
           >
             <Bot className="h-5 w-5" />
             <span>TekBot</span>
+            {conversationCount > 0 && (
+              <span
+                className="ml-0.5 flex items-center gap-1 rounded-full bg-white/20 px-1.5 py-0.5 text-xs font-normal"
+                aria-label={`${conversationCount} messages in current session`}
+              >
+                <MessageSquare className="h-3 w-3" />
+                {conversationCount}
+              </span>
+            )}
           </motion.button>
         )}
       </AnimatePresence>
@@ -501,20 +619,79 @@ export function TekBot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.95 }}
             transition={{ type: 'spring', damping: 25, stiffness: 350 }}
-            className="fixed bottom-6 right-6 z-50 flex flex-col overflow-hidden rounded-2xl shadow-2xl border border-border"
-            style={{ width: 390, height: 560, maxWidth: 'calc(100vw - 2rem)', maxHeight: 'calc(100vh - 2rem)' }}
+            className="fixed bottom-6 right-6 z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border"
+            style={{
+              width: pageRelatedGuides.length > 0 ? 620 : 390,
+              height: 580,
+              maxWidth: 'calc(100vw - 2rem)',
+              maxHeight: 'calc(100vh - 2rem)',
+            }}
           >
+            {/* Related guides sidebar — only shown when there are page-relevant guides */}
+            {pageRelatedGuides.length > 0 && (
+              <div
+                className="hidden sm:flex flex-col border-r border-border overflow-y-auto"
+                style={{ width: 220, minWidth: 220, backgroundColor: 'hsl(220 30% 12%)' }}
+              >
+                <div className="px-4 pt-4 pb-2">
+                  <p className="text-white/90 font-semibold" style={{ fontSize: 13 }}>Guides for this page</p>
+                  <p className="text-white/50 mt-0.5" style={{ fontSize: 11 }}>Step-by-step help</p>
+                </div>
+                <div className="flex flex-col gap-2 px-3 pb-4">
+                  {pageRelatedGuides.map(g => (
+                    <a
+                      key={g.slug}
+                      href={`/guides/${g.slug}`}
+                      className="flex flex-col rounded-xl px-3 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all group"
+                    >
+                      <div className="flex items-center gap-2 mb-1">
+                        <span style={{ fontSize: 18 }}>{g.thumbnailEmoji}</span>
+                        <ExternalLink className="h-3 w-3 text-white/40 group-hover:text-white/70 transition-colors ml-auto shrink-0" />
+                      </div>
+                      <span className="text-white/80 font-medium leading-tight group-hover:text-white transition-colors line-clamp-2" style={{ fontSize: 12 }}>
+                        {g.title}
+                      </span>
+                      {g.readTime && (
+                        <span className="text-white/40 mt-1" style={{ fontSize: 10 }}>{g.readTime}</span>
+                      )}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Main chat column */}
+            <div className="flex flex-col flex-1 overflow-hidden">
+
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3" style={{ backgroundColor: 'hsl(220 70% 20%)' }}>
               <div className="flex items-center gap-2 text-white">
                 <Bot className="h-5 w-5" />
                 <div>
                   <span className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
-                  <span className="text-white/60" style={{ fontSize: 11 }}>Your friendly tech helper</span>
+                  <span className="text-white/60" style={{ fontSize: 11 }}>
+                    {conversationCount > 0
+                      ? `${conversationCount} message${conversationCount === 1 ? '' : 's'} this session`
+                      : 'Your friendly tech helper'}
+                  </span>
                 </div>
               </div>
 
               <div className="flex items-center gap-1">
+                {/* Clear chat button — only shown when conversation exists */}
+                {conversationCount > 0 && (
+                  <button
+                    onClick={handleClearChat}
+                    className="flex items-center gap-1 rounded-lg px-2 py-1 text-white/60 hover:text-white hover:bg-white/10 transition-all"
+                    style={{ fontSize: 11 }}
+                    title="Clear this conversation and start fresh"
+                    aria-label="Clear conversation history"
+                  >
+                    <Trash2 className="h-3.5 w-3.5" />
+                    <span className="hidden sm:inline">Clear</span>
+                  </button>
+                )}
+
                 {/* Device picker button */}
                 <div className="relative">
                   <button
@@ -669,16 +846,20 @@ export function TekBot() {
                 placeholder={device ? `Ask about your ${deviceLabel(device)}…` : 'Type your question…'}
                 className="flex-1 rounded-lg border border-input bg-background px-3 py-2 outline-none focus:ring-2 focus:ring-secondary"
                 style={{ fontSize: 15, minHeight: 44 }}
+                aria-label="Type your question for TekBot"
               />
               <Button
                 onClick={() => send()}
                 disabled={!input.trim() || typing}
                 size="icon"
                 className="h-11 w-11 rounded-lg bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                aria-label="Send message"
               >
                 <Send className="h-4 w-4" />
               </Button>
             </div>
+
+            </div>{/* end main chat column */}
           </motion.div>
         )}
       </AnimatePresence>
