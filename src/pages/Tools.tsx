@@ -516,7 +516,7 @@ export default function Tools() {
             </TabsContent>
           </Tabs>
         </div>
-        </main>
+      </main>
       <Footer />
     </>
   );

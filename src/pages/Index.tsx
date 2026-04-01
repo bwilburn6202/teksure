@@ -141,7 +141,7 @@ const Index = () => {
       {/* ── Hero ────────────────────────────────────────── */}
       <section id="main-content" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
-        <div className="container relative pt-20 pb-16 md:pt-32 md:pb-24">
+        <div className="container relative pt-16 pb-12 md:pt-20 md:pb-16">
           <div
             className="max-w-2xl mx-auto text-center"
           >
@@ -230,8 +230,8 @@ const Index = () => {
       </div>
 
       {/* ── Quick Fixes ─────────────────────────────────── */}
-      <section className="container py-20">
-        <div className="text-center mb-12">
+      <section className="container py-12 md:py-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Quick Fixes</h2>
           <p className="text-muted-foreground max-w-md mx-auto">Solutions to the most common tech problems — no appointment needed.</p>
         </div>
@@ -259,9 +259,9 @@ const Index = () => {
       </section>
 
       {/* ── Browse by Category ──────────────────────────── */}
-      <section className="bg-muted/40 py-20">
+      <section className="bg-muted/40 py-12 md:py-16">
         <div className="container">
-          <div className="flex items-end justify-between mb-12">
+          <div className="flex items-end justify-between mb-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Browse by Category</h2>
               <p className="text-muted-foreground">Find guides organized by what you need help with.</p>
@@ -305,8 +305,8 @@ const Index = () => {
       </section>
 
       {/* ── Popular Guides ──────────────────────────────── */}
-      <section className="container py-20">
-        <div className="flex items-end justify-between mb-12">
+      <section className="container py-12 md:py-16">
+        <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Popular Guides</h2>
             <p className="text-muted-foreground">The most helpful articles for beginners.</p>
@@ -340,9 +340,9 @@ const Index = () => {
       </section>
 
       {/* ── How It Works ────────────────────────────────── */}
-      <section className="bg-muted/40 py-20">
+      <section className="bg-muted/40 py-12 md:py-16">
         <div className="container">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">How TekSure Works</h2>
             <p className="text-muted-foreground max-w-sm mx-auto">Three steps. Simpler than calling your cable company.</p>
           </div>
@@ -375,7 +375,7 @@ const Index = () => {
 
       {/* ── Newsletter ──────────────────────────────────── */}
       <section className="border-y bg-muted/30">
-        <div className="container py-16">
+        <div className="container py-10">
           <div className="max-w-md mx-auto text-center">
             <Mail className="h-6 w-6 text-primary mx-auto mb-4" />
             <h2 className="text-xl font-bold mb-2">Free weekly tech tip</h2>
@@ -389,7 +389,7 @@ const Index = () => {
 
       {/* ── Final CTA ───────────────────────────────────── */}
       <section className="hero-gradient text-white">
-        <div className="container py-20 text-center">
+        <div className="container py-12 md:py-16 text-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Tech trouble? We've got you.

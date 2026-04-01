@@ -62,7 +62,7 @@ const Pricing = () => (
     <main className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
-        <div className="container py-20 text-center">
+        <div className="container py-12 md:py-16 text-center">
           <div
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Simple, Transparent Pricing</h1>
@@ -75,7 +75,7 @@ const Pricing = () => (
       </section>
 
       {/* Plans */}
-      <section className="container py-20">
+      <section className="container py-12">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {plans.map((plan, i) => (
             <div
@@ -134,7 +134,7 @@ const Pricing = () => (
       </section>
 
       {/* Trust badges */}
-      <section className="bg-muted/40 border-t border-border py-20">
+      <section className="bg-muted/40 border-t border-border py-12">
         <div
           className="container max-w-3xl"
         >
