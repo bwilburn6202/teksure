@@ -133,6 +133,81 @@ const scams: Scam[] = [
       'Seek independent financial advice before investing',
     ],
   },
+  {
+    title: 'Unclaimed Funds / Property Scam (March 2026)',
+    redFlags: [
+      'Call or text saying you\'re eligible for thousands in unclaimed property',
+      'They use fake government agency names to sound official',
+      'They ask for a fee to "search" for your unclaimed funds',
+      'Pressure to act quickly before the money is "returned to the state"',
+    ],
+    whatToDo: [
+      'The government will NEVER ask you to pay them to find unclaimed money',
+      'Search for unclaimed property yourself for free at your state\'s official website',
+      'Report the scam at ReportFraud.ftc.gov',
+      'Never give personal or financial details to unsolicited callers',
+    ],
+  },
+  {
+    title: 'AI Voice Clone "Grandchild in Trouble" Scam (2026)',
+    redFlags: [
+      'A call from someone who sounds exactly like a family member',
+      'They claim to be in an emergency — arrested, in hospital, or stranded',
+      'They beg you not to tell other family members',
+      'They need money wired or sent via gift cards immediately',
+    ],
+    whatToDo: [
+      'Hang up and call the person back on their real number',
+      'Set up a family safety word that only your family knows',
+      'Remember: AI can now clone anyone\'s voice from just a few seconds of audio',
+      'Report the call to local police and the FTC',
+    ],
+  },
+  {
+    title: 'FIFA World Cup 2026 Ticket Scams',
+    redFlags: [
+      'Websites selling tickets at suspiciously low or high prices',
+      'Fake or copycat sites that look like official FIFA pages',
+      'Sellers asking for payment via bank transfer, gift cards, or crypto',
+      'Tickets offered via social media DMs or unsolicited emails',
+    ],
+    whatToDo: [
+      'Only buy tickets through official FIFA channels (FIFA.com/tickets)',
+      'Never pay for tickets via bank transfer or gift cards',
+      'Check the URL carefully — scam sites often misspell "FIFA"',
+      'Report fake ticket sites to the FTC or Action Fraud',
+    ],
+  },
+  {
+    title: 'ESTA Travel Application Scams',
+    redFlags: [
+      'Copycat websites that look like the official US government ESTA site',
+      'They charge far more than the real $21 ESTA application fee',
+      'Some sites take your money and never submit the paperwork',
+      'Ads at the top of search results leading to unofficial sites',
+    ],
+    whatToDo: [
+      'Only apply for ESTA at the official site: esta.cbp.dhs.gov',
+      'The real fee is $21 — anything much higher is a scam',
+      'Be careful clicking ads in search results for government services',
+      'Report copycat sites to the FTC at ReportFraud.ftc.gov',
+    ],
+  },
+  {
+    title: 'Fake Debt Relief Companies (2026)',
+    redFlags: [
+      'Company promises to eliminate your debt quickly for a fee',
+      'They pressure you to stop paying your creditors directly',
+      'Unsolicited calls, texts, or emails offering debt relief',
+      'They ask for large upfront fees before doing any work',
+    ],
+    whatToDo: [
+      'Legitimate debt relief companies never guarantee to eliminate your debt',
+      'Never pay upfront fees for debt relief services',
+      'Contact your creditors directly or speak to a free nonprofit credit counsellor',
+      'Report fake debt relief companies to the FTC at ReportFraud.ftc.gov',
+    ],
+  },
 ];
 
 export default function ScamAlerts() {
@@ -140,7 +215,7 @@ export default function ScamAlerts() {
     <>
       <SEOHead
         title="Scam Alerts & Safety Guide | TekSure"
-        description="Learn to spot and avoid the 8 most common scams — fake tech support, phishing, bank texts, and more."
+        description="Learn to spot and avoid the 13 most common scams — fake tech support, phishing, AI voice clones, and more."
         path="/safety/scam-alerts"
       />
       <Navbar />

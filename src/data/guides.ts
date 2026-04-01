@@ -117,7 +117,7 @@ export const guides: Guide[] = [
       { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotDesc: 'Windows Quick Settings panel showing Wi-Fi toggle in OFF state (grayed out), with Bluetooth and Airplane Mode toggles next to it.', annotations: [{ type: 'highlight', x: 15, y: 35, width: 28, height: 22, label: 'Wi-Fi toggle' }, { type: 'callout', x: 29, y: 46, label: '1' }], beforeCaption: 'Wi-Fi toggle is grey/OFF — no networks are visible yet.', afterCaption: 'Wi-Fi toggle is blue/ON — a list of nearby networks appears below.', beforeLabel: 'Wi-Fi OFF', afterLabel: 'Wi-Fi ON' },
       { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotDesc: 'Wi-Fi network dropdown list showing 6 networks: "HomeNetwork_5G" (highlighted in blue), "Neighbors_WiFi", "CoffeeShop_Free", "DIRECT-printer", "Xfinity-2G", and "Hidden network".', tip: 'Look for your network name on a sticker on the bottom or back of your router.', annotations: [{ type: 'highlight', x: 10, y: 22, width: 80, height: 14, label: 'Your network' }, { type: 'callout', x: 85, y: 29, label: '✓' }] },
       { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotDesc: 'Wi-Fi password entry dialog titled "Enter the network security key" with a password field showing asterisks (••••••••), a "Show password" eye icon, a checked "Connect automatically" checkbox, and a blue Connect button.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.', annotations: [{ type: 'callout', x: 50, y: 42, label: '1' }, { type: 'callout', x: 70, y: 68, label: '2' }, { type: 'arrow', x: 50, y: 75, direction: 'down', label: 'Click Connect' }] },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.', annotations: [{ type: 'callout', x: 82, y: 75, label: '✓' }, { type: 'arrow', x: 82, y: 68, direction: 'down', label: 'Connected!' }], beforeCaption: 'Taskbar Wi-Fi icon shows an X or empty bars — no internet access.', afterCaption: 'Taskbar Wi-Fi icon shows full signal bars — you\'re online!', beforeLabel: 'Not Connected', afterLabel: 'Connected ✓' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotDesc: 'Windows taskbar showing a solid Wi-Fi icon with full signal bars, and a notification bubble saying "Connected, secured" next to the network name.', annotations: [{ type: 'callout', x: 82, y: 75, label: '✓' }, { type: 'arrow', x: 82, y: 68, direction: 'down', label: 'Connected!' }], beforeCaption: 'Taskbar Wi-Fi icon shows an X or empty bars — no internet access.', afterCaption: 'Taskbar Wi-Fi icon shows full signal bars — you\'re online!', beforeLabel: 'Not Connected', afterLabel: 'Connected ✓', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.' },
     ],
   },
   {
@@ -367,7 +367,7 @@ export const guides: Guide[] = [
       { title: 'Run Disk Cleanup', content: 'Right-click your C: drive → Properties → Disk Cleanup. Check all boxes and click Delete Files.', screenshotDesc: 'Disk Cleanup wizard with all checkboxes checked: Temporary files, Recycle Bin, Thumbnails, Delivery Optimization. Shows "Total amount of disk space you gain: 4.1 GB".', tip: 'Click "Clean up system files" for even more space — this removes old Windows Update files.' },
       { title: 'Find large files', content: 'In File Explorer, go to your Downloads folder. Click "Sort" → Sort by Size. Look for files you no longer need.', screenshotDesc: 'Downloads folder sorted by size descending, showing large video files at top: "vacation_2024.mp4" (2.3 GB), "screen_recording.mp4" (1.8 GB), "software_installer.exe" (950 MB).' },
       { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size. Uninstall anything you don\'t recognize or use.', screenshotDesc: 'Windows Settings Apps list sorted by size showing: "Game_Title" (45 GB), "Video Editor" (2.1 GB), "Old Software" (1.5 GB) with blue Uninstall buttons.' },
-      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', screenshotDesc: 'Windows Storage Settings page showing Storage Sense toggle ON, with options for automatic cleanup frequency and temporary file deletion.', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule.' },
+      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', screenshotDesc: 'Windows Storage Settings page showing Storage Sense toggle ON, with options for automatic cleanup frequency and temporary file deletion.', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule. For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft\'s guide to improving PC performance.' },
     ],
   },
   {
@@ -514,7 +514,7 @@ export const guides: Guide[] = [
       { title: 'Put your device in pairing mode', content: 'On your Bluetooth device, hold the pairing button (usually for 3-5 seconds) until the LED flashes.' , tip: 'If the device does not appear, turn Bluetooth off and on again on your PC, then try searching again.' },
       { title: 'Add the device', content: 'Go to Settings → Bluetooth & Devices → Add Device → Bluetooth. Your device should appear in the list.' },
       { title: 'Click to pair', content: 'Click your device name to pair. Some devices may ask for a confirmation code.' , warning: 'Only pair devices you own or trust. Unknown Bluetooth devices could potentially access your computer.' },
-      { title: 'Set as default', content: 'For audio devices, go to Sound Settings and set the Bluetooth device as your default output or input.' },
+      { title: 'Set as default', content: 'For audio devices, go to Sound Settings and set the Bluetooth device as your default output or input.', tip: 'If Bluetooth is not working properly, visit support.microsoft.com/en-us/windows/fix-bluetooth-problems-in-windows — Microsoft\'s official Bluetooth troubleshooting guide.' },
     ],
   },
   {
@@ -585,7 +585,7 @@ export const guides: Guide[] = [
       { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.' },
       { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your Mac is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.' },
       { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.' },
-      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.' },
+      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.' },
     ],
   },
   {
@@ -691,7 +691,7 @@ export const guides: Guide[] = [
       { title: 'Use Magnifier', content: 'Press Win+Plus to zoom in on any part of the screen. Win+Minus to zoom out. Win+Esc to exit.' },
       { title: 'Enable Narrator', content: 'Turn on Narrator for a screen reader that reads text aloud as you navigate.' },
       { title: 'Adjust text size and contrast', content: 'Increase text size, enable high contrast themes, or use color filters for color blindness.' , tip: 'High contrast mode makes text much easier to read for people with low vision. Try it in Settings, then Accessibility, then Contrast themes.' },
-      { title: 'Use voice typing', content: 'Press Win+H to start voice typing — dictate text instead of typing.' , warning: 'Voice typing works best in a quiet room. Background noise can cause incorrect words to appear.' },
+      { title: 'Use voice typing', content: 'Press Win+H to start voice typing — dictate text instead of typing.' , warning: 'Voice typing works best in a quiet room. Background noise can cause incorrect words to appear.', tip: 'For free digital skills courses on accessibility and more, visit edu.gcfglobal.org — GCFGlobal offers hundreds of free tutorials for beginners.' },
     ],
   },
   {
@@ -855,7 +855,7 @@ export const guides: Guide[] = [
       { title: 'Scan for malware', content: 'Run a full scan with Windows Security → Virus & Threat Protection → Full Scan.' },
       { title: 'Disable visual effects', content: 'Search "Adjust appearance" → Choose "Adjust for best performance" for older PCs.' },
       { title: 'Consider hardware upgrades', content: 'An SSD upgrade or additional RAM can dramatically improve performance on older computers.' },
-      { title: 'Check for overheating', content: 'If your PC slows down over time, clean dust from vents and ensure fans are working properly.' },
+      { title: 'Check for overheating', content: 'If your PC slows down over time, clean dust from vents and ensure fans are working properly.', tip: 'For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft\'s official guide to speeding up a slow PC.' },
     ],
   },
   {
@@ -963,7 +963,7 @@ export const guides: Guide[] = [
       { title: 'Reset network settings', content: 'Settings → Network & Internet → Advanced → Network Reset. This reinstalls all network adapters.' , warning: 'Resetting network settings will remove all saved Wi-Fi passwords. Make sure you know your Wi-Fi password before doing this.' },
       { title: 'Flush DNS cache', content: 'Open Command Prompt as admin and run "ipconfig /flushdns" to clear cached DNS entries.' , tip: 'Flushing DNS is safe and quick. It often fixes problems where websites fail to load but your internet connection seems fine.' },
       { title: 'Update network drivers', content: 'Device Manager → Network Adapters → right-click your Wi-Fi adapter → Update Driver.' },
-      { title: 'Forget and reconnect', content: 'Go to Wi-Fi settings → Manage Known Networks → click your network → Forget. Then reconnect fresh.' },
+      { title: 'Forget and reconnect', content: 'Go to Wi-Fi settings → Manage Known Networks → click your network → Forget. Then reconnect fresh.', tip: 'For more detailed help, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s official Wi-Fi troubleshooting page. Need to talk to a real person? Call Senior Planet\'s free tech helpline at 888-713-3495 (Monday-Saturday). They speak English, Spanish, and Mandarin.' },
     ],
   },
   {
@@ -980,7 +980,7 @@ export const guides: Guide[] = [
       { title: 'Open Windows Security', content: 'Search "Windows Security" in Start or go to Settings → Privacy & Security → Windows Security.', screenshotDesc: 'Windows Start menu search showing "Windows Security" with the shield icon app result highlighted at the top.' },
       { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.', screenshotDesc: 'Windows Security app showing Virus & Threat Protection page with green checkmarks next to "Real-time protection: On" and a blue "Quick Scan" button prominently displayed.', tip: 'Run a Quick Scan weekly and a Full Scan monthly for best protection.' },
       { title: 'Check protection status', content: 'The main dashboard shows green checkmarks if everything is protected. Yellow or red means action needed.', screenshotDesc: 'Windows Security dashboard showing 7 protection areas with icons: Virus protection (green ✓), Firewall (green ✓), App & browser (green ✓), Device security (green ✓), Device performance (green ✓), Family options (green ✓).' },
-      { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', screenshotDesc: 'Fake virus alert pop-up with red warning design saying "YOUR COMPUTER IS INFECTED!" with a phone number and "Call Now" button. A large red "FAKE" stamp is overlaid on the entire pop-up, and an X close button is highlighted.', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.' },
+      { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', screenshotDesc: 'Fake virus alert pop-up with red warning design saying "YOUR COMPUTER IS INFECTED!" with a phone number and "Call Now" button. A large red "FAKE" stamp is overlaid on the entire pop-up, and an X close button is highlighted.', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.', tip: 'Learn more about tech support scams at support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams — Microsoft\'s official guide to spotting and avoiding these scams.' },
       { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.', screenshotDesc: 'Virus & Threat Protection settings page showing three toggles all in ON position: "Real-time protection", "Cloud-delivered protection", and "Automatic sample submission".' },
       { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.', screenshotDesc: 'Protection History page showing a list of recent threats with severity badges (green=Allowed, yellow=Quarantined, red=Blocked) and timestamps.' },
     ],
@@ -1720,7 +1720,7 @@ export const guides: Guide[] = [
       { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.' },
       { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.' },
       { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.' },
-      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.' },
+      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.' },
     ],
   },
   {
@@ -1758,7 +1758,7 @@ export const guides: Guide[] = [
       { title: 'Hover over links (don\'t click)', content: 'Before clicking any link, hover your cursor to see the actual URL. Legitimate companies use their own domains.' },
       { title: 'Check for poor grammar', content: 'Many phishing emails have spelling errors, odd formatting, or awkward language.' },
       { title: 'Verify with the company directly', content: 'If unsure, don\'t click any link. Go directly to the company\'s website or call their official number.' , tip: 'Save the real phone numbers of your bank, utilities, and important services in your phone contacts so you always have them handy.' },
-      { title: 'Report phishing', content: 'Forward phishing emails to reportphishing@apwg.org and mark them as spam in your email client.' },
+      { title: 'Report phishing', content: 'Forward phishing emails to reportphishing@apwg.org and mark them as spam in your email client.', tip: 'The FTC tracks scams and offers up-to-date alerts at consumer.ftc.gov/scams — bookmark this page to stay informed about the latest scam tactics.' },
     ],
   },
   {
@@ -1776,7 +1776,7 @@ export const guides: Guide[] = [
       { title: 'Increase text size', content: 'All devices let you increase system-wide font size for easier reading.' },
       { title: 'Use screen readers', content: 'VoiceOver (Apple), TalkBack (Android), Narrator (Windows) read screen content aloud.' },
       { title: 'Enable captions', content: 'Turn on live captions or closed captions for videos and calls on all major platforms.' },
-      { title: 'Use voice control', content: 'Control your device entirely with your voice — available on iPhone, Mac, Windows, and Android.' },
+      { title: 'Use voice control', content: 'Control your device entirely with your voice — available on iPhone, Mac, Windows, and Android.', tip: 'For detailed iPhone accessibility features, visit support.apple.com/en-us/guide/iphone/iph3e2e1fb0/ios. For Android, visit support.google.com/accessibility/android/answer/6006972 — both are free official guides.' },
     ],
   },
   {
@@ -1794,7 +1794,7 @@ export const guides: Guide[] = [
       { title: 'Set up your camera and mic', content: 'Ensure your camera is unblocked and microphone is working. Test them in the app\'s settings.' },
       { title: 'Start or join a call', content: 'To start: open the app and click "New Meeting." To join: click the meeting link or enter the meeting ID.' },
       { title: 'Use essential controls', content: 'Learn to mute/unmute (microphone icon), turn camera on/off (camera icon), and share your screen.' },
-      { title: 'Optimize your setup', content: 'Use good lighting (face a window), position camera at eye level, and use headphones to reduce echo.' },
+      { title: 'Optimize your setup', content: 'Use good lighting (face a window), position camera at eye level, and use headphones to reduce echo.', tip: 'For FaceTime help on Apple devices, visit support.apple.com/en-us/facetime — Apple\'s official FaceTime support page with troubleshooting and setup guides.' },
     ],
   },
   {
@@ -1994,7 +1994,7 @@ export const guides: Guide[] = [
       { title: 'Reduce screen brightness', content: 'Swipe down from the top-right corner and lower the brightness slider. Enable Auto-Brightness in Accessibility.' },
       { title: 'Turn off Background App Refresh', content: 'Settings → General → Background App Refresh. Disable for apps you don\'t need updating in the background.' },
       { title: 'Disable unnecessary Location Services', content: 'Settings → Privacy → Location Services. Set apps to "While Using" instead of "Always."' },
-      { title: 'Check Battery Health', content: 'Settings → Battery → Battery Health. If Maximum Capacity is below 80%, consider a battery replacement.' },
+      { title: 'Check Battery Health', content: 'Settings → Battery → Battery Health. If Maximum Capacity is below 80%, consider a battery replacement.', tip: 'For official help with battery issues, visit support.apple.com/en-us/108055 — Apple\'s free battery troubleshooting page with tips for every iPhone model.' },
     ],
   },
   {
@@ -2211,7 +2211,7 @@ export const guides: Guide[] = [
       { title: 'Use unique passwords', content: 'Never use the same password for multiple accounts. A breach on one site exposes all others.' },
       { title: 'Enable 2FA everywhere', content: 'Two-factor authentication is your best defense even if your password is compromised.' },
       { title: 'Use a password manager', content: 'Apple Keychain, Bitwarden, or 1Password can manage all your passwords securely.' },
-      { title: 'Check for breaches', content: 'Visit haveibeenpwned.com to check if your email or passwords have appeared in known breaches.' , tip: 'The website haveibeenpwned.com is free, safe, and run by a trusted security researcher. Check your email address there every few months.' },
+      { title: 'Check for breaches', content: 'Visit haveibeenpwned.com to check if your email or passwords have appeared in known breaches.' , tip: 'The website haveibeenpwned.com is free, safe, and run by a trusted security researcher. Check your email address there every few months. Need to talk to a real person? Call Senior Planet\'s free tech helpline at 888-713-3495 (Monday-Saturday). They speak English, Spanish, and Mandarin.' },
     ],
   },
   {
@@ -2229,7 +2229,7 @@ export const guides: Guide[] = [
       { title: 'Phishing emails and texts', content: 'Don\'t click links in unexpected messages. Go to the company\'s website directly instead.' },
       { title: 'Too-good-to-be-true offers', content: 'Free iPhones, lottery winnings, and unexpected refunds are almost always scams.' },
       { title: 'Social media scams', content: 'Be wary of friend requests from strangers, investment schemes, and "free gift" posts.' },
-      { title: 'What to do if you\'ve been scammed', content: 'Change your passwords immediately, contact your bank, report to the FTC at reportfraud.ftc.gov.' },
+      { title: 'What to do if you\'ve been scammed', content: 'Change your passwords immediately, contact your bank, report to the FTC at reportfraud.ftc.gov.', tip: 'Report fraud at ReportFraud.ftc.gov and stay up to date on the latest scams at consumer.ftc.gov/scams. For tech support scam protection specifically, visit support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams.' },
     ],
   },
   {
@@ -2301,7 +2301,7 @@ export const guides: Guide[] = [
       { title: 'Restart your device', content: 'Turn Wi-Fi off and on, or restart your phone/computer entirely.' },
       { title: 'Move closer to the router', content: 'Walls, floors, and distance weaken Wi-Fi signal. Test by standing near the router.' },
       { title: 'Forget and reconnect', content: 'Remove the Wi-Fi network from your device settings, then reconnect with the password.' },
-      { title: 'Check if it\'s your device or the network', content: 'Try connecting a different device. If it works, the issue is your device. If not, it\'s the router/ISP.' },
+      { title: 'Check if it\'s your device or the network', content: 'Try connecting a different device. If it works, the issue is your device. If not, it\'s the router/ISP.', tip: 'For Windows Wi-Fi help, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows. For Android, visit support.google.com/android. Need to talk to a real person? Call Senior Planet\'s free tech helpline at 888-713-3495 (Monday-Saturday). They speak English, Spanish, and Mandarin.' },
     ],
   },
   {
@@ -2336,7 +2336,7 @@ export const guides: Guide[] = [
       { title: 'Mac backup', content: 'Connect an external drive and use Time Machine for automatic, incremental backups.' },
       { title: 'Windows backup', content: 'Use OneDrive sync for files and Windows Backup (Settings → Accounts → Windows Backup) for settings.' },
       { title: 'Follow the 3-2-1 rule', content: 'Keep 3 copies of important data, on 2 different types of media, with 1 copy offsite (cloud).' , warning: 'Losing your phone without a backup means losing every photo, contact, and message on it. Set up cloud backup today.' },
-      { title: 'Test your backups', content: 'Periodically verify you can actually restore files from your backups. An untested backup isn\'t a backup.' , tip: 'Once a year, try restoring a single file from your backup. This confirms your backup is actually working.' },
+      { title: 'Test your backups', content: 'Periodically verify you can actually restore files from your backups. An untested backup isn\'t a backup.' , tip: 'Once a year, try restoring a single file from your backup. This confirms your backup is actually working. For Google Photos backup help, visit support.google.com/photos/answer/6193313. For more tech help, AARP has free articles at aarp.org/personal-technology.' },
     ],
   },
   {
@@ -2371,7 +2371,7 @@ export const guides: Guide[] = [
       { title: 'Increase text size everywhere', content: 'iPhone: Settings → Display. Mac: System Settings → Accessibility → Display. Windows: Settings → Accessibility → Text Size.' },
       { title: 'Use dark mode', content: 'Dark mode reduces eye strain in low light. Available on iPhone, Mac, Windows, and most apps.' },
       { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 16+), Mac, Android, and Windows 11.' },
-      { title: 'Magnification tools', content: 'iPhone: triple-click home/side button. Mac: Cmd+Option+= to zoom. Windows: Win+Plus to magnify.' },
+      { title: 'Magnification tools', content: 'iPhone: triple-click home/side button. Mac: Cmd+Option+= to zoom. Windows: Win+Plus to magnify.', tip: 'For the full iPhone accessibility guide, visit support.apple.com/en-us/guide/iphone/iph3e2e1fb0/ios. For Android accessibility, visit support.google.com/accessibility/android/answer/6006972. AARP also has free tech help articles at aarp.org/personal-technology.' },
     ],
   },
 
@@ -3961,7 +3961,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       {
         title: 'Keep your router firmware updated',
         content: 'Router manufacturers release security updates (called firmware). In your router admin panel, look for "Firmware Update" or "Software Update" under Advanced settings. Many modern routers can update automatically — enable this if available.',
-        tip: 'An outdated router is one of the most common ways homes get hacked. This 2-minute check is worth doing every 6 months.',
+        tip: 'An outdated router is one of the most common ways homes get hacked. This 2-minute check is worth doing every 6 months. For more home security basics, visit cisa.gov — the government\'s cybersecurity agency with free guides for protecting your home network.',
       },
     ],
   },
@@ -4049,7 +4049,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       {
         title: 'How to report suspicious accounts',
         content: 'On Facebook: go to the profile → tap the three dots (···) → Find Support or Report. On Instagram: tap the three dots on a post or profile → Report. Both platforms take reports seriously and act quickly on fake accounts and scams.',
-        tip: 'Reporting fake accounts doesn\'t just protect you — it protects everyone else that account might target next.',
+        tip: 'Reporting fake accounts doesn\'t just protect you — it protects everyone else that account might target next. If you believe you have been scammed through social media, report it at ReportFraud.ftc.gov and read the latest alerts at consumer.ftc.gov/consumer-alerts.',
       },
     ],
   },
@@ -5374,7 +5374,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'Paper jam', content: 'Open all accessible doors and trays on the printer. Gently pull the jammed paper out in the direction it would normally travel (usually forward, toward the output tray). Pull slowly and evenly — don\'t yank, as torn paper is harder to remove. Check for small torn pieces. Close all doors and trays, then try printing again.', screenshotDesc: 'Diagram of a printer with arrows showing where to open the back panel and paper tray to clear a paper jam.', warning: 'If the paper is stuck near the hot fuser unit (the part that heats the paper), wait a few minutes for it to cool before reaching in.' },
       { title: 'Print quality is poor', content: 'Faded or streaky prints usually mean low ink or toner. Check your ink levels: on the printer\'s screen (if it has one) or through the printer software on your computer. If ink levels look fine, run a "Clean Print Head" cycle: open the printer software → Maintenance → Clean Print Heads. Try printing a test page to check if quality improves.', screenshotDesc: 'Printer maintenance dialog showing ink level bars for each cartridge and a "Clean Print Heads" button.', tip: 'If you rarely print, ink can dry out in the nozzles. Run a print head cleaning once a month to prevent this.' },
       { title: 'Computer can\'t find the printer', content: 'On Windows: go to Settings → Devices → Add a printer or scanner. Wait for it to search. If your printer doesn\'t appear, click "The printer I want isn\'t listed" for manual setup options. On Mac: System Settings → Printers & Scanners → click "+" to add. For wireless printers, make sure both devices are on the same Wi-Fi network.', screenshotDesc: 'Windows "Add a printer" screen showing a scanning animation and "The printer that I want isn\'t listed" link at the bottom.' },
-      { title: 'General restart fix', content: 'When nothing else works, the "power cycle" often does: 1. Turn off the printer and unplug it from the wall. 2. Wait 30 seconds. 3. Plug it back in and turn it on. 4. On your computer, restart the computer as well. 5. Try printing again. This clears the printer\'s memory and resets the connection.', screenshotDesc: 'Simple diagram showing: printer power off → unplug → wait 30 sec → plug in → power on.', tip: 'Restarting both the printer and computer fixes the majority of printing issues. Always try this first before calling for help.' },
+      { title: 'General restart fix', content: 'When nothing else works, the "power cycle" often does: 1. Turn off the printer and unplug it from the wall. 2. Wait 30 seconds. 3. Plug it back in and turn it on. 4. On your computer, restart the computer as well. 5. Try printing again. This clears the printer\'s memory and resets the connection.', screenshotDesc: 'Simple diagram showing: printer power off → unplug → wait 30 sec → plug in → power on.', tip: 'Restarting both the printer and computer fixes the majority of printing issues. Always try this first before calling for help. For detailed Windows printer fixes, visit support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows. Need to talk to a real person? Call Senior Planet\'s free tech helpline at 888-713-3495 (Monday-Saturday). They speak English, Spanish, and Mandarin.' },
     ],
   },
   {
@@ -5579,7 +5579,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'Find any photo instantly', content: 'The magic of Google Photos is its search. Tap the search bar and type anything: "beach," "dog," "birthday cake," "New York," or a person\'s name. Google\'s AI recognizes objects, places, and faces in your photos. You can also browse by "People & Pets," "Places," or "Things" in the search tab to see your photos organized automatically.', screenshotDesc: 'Google Photos search showing results for "beach" with matching vacation photos, plus categories for People, Places, and Things.' },
       { title: 'Create and share albums', content: 'Tap Library → Create Album. Name it (e.g., "Grandkids 2026" or "Garden Progress"). Select photos to add. To share: open the album → tap the Share icon → enter email addresses or create a link. Shared albums let others view and even add their own photos — perfect for family events where everyone takes pictures.', screenshotDesc: 'Google Photos album creation screen with album title field, selected photos, and a Share button.', tip: 'Create a shared family album and invite everyone to add their photos. You\'ll end up with a wonderful collection from every perspective.' },
       { title: 'Edit photos', content: 'Open any photo and tap "Edit" (the sliders icon). You can: Crop and rotate, Adjust brightness/contrast/color, Apply filters (like "Vivid" or "West"), Use "Magic Eraser" (on newer phones) to remove unwanted objects, and use "Enhance" for one-tap auto-improvement. All edits are non-destructive — you can always revert to the original.', screenshotDesc: 'Google Photos edit screen showing adjustment sliders for brightness, contrast, and saturation, with a row of filter options below.' },
-      { title: 'Free up phone storage', content: 'Once your photos are backed up to the cloud, you can delete them from your phone to free up space without losing them. Go to Google Photos → tap your profile icon → "Free up space." The app will show you how much space you can recover by removing already-backed-up photos from your device. They remain safely in your Google Photos cloud.', screenshotDesc: 'Google Photos "Free up space" screen showing "2.3 GB can be freed" with a "Free up" button.', warning: 'Before using "Free up space," make sure "Back up & sync" has finished uploading all your photos. Check for the green checkmark in backup settings.' },
+      { title: 'Free up phone storage', content: 'Once your photos are backed up to the cloud, you can delete them from your phone to free up space without losing them. Go to Google Photos → tap your profile icon → "Free up space." The app will show you how much space you can recover by removing already-backed-up photos from your device. They remain safely in your Google Photos cloud.', screenshotDesc: 'Google Photos "Free up space" screen showing "2.3 GB can be freed" with a "Free up" button.', warning: 'Before using "Free up space," make sure "Back up & sync" has finished uploading all your photos. Check for the green checkmark in backup settings.', tip: 'For Google\'s official backup guide, visit support.google.com/photos/answer/6193313 — it explains backup settings, storage limits, and quality options.' },
     ],
   },
   {
@@ -5597,7 +5597,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'Use your phone\'s built-in call screening', content: 'On iPhone: Settings → Phone → "Silence Unknown Callers" — this sends calls from numbers not in your contacts straight to voicemail. On Android (Pixel): Phone app → Settings → "Caller ID & spam" → turn on "Filter spam calls." Samsung: Phone app → Settings → "Caller ID and spam protection." These won\'t block real calls from your contacts.', screenshotDesc: 'iPhone Phone settings showing "Silence Unknown Callers" toggle turned on, with explanation text.', tip: 'If you\'re expecting a call from an unknown number (like a doctor\'s office or delivery), temporarily turn off "Silence Unknown Callers" or check your voicemail promptly.' },
       { title: 'Install a call-blocking app', content: 'Free apps like "Nomorobo" (free for landlines, $2/month for mobile), "Hiya," or "Truecaller" identify and block known spam numbers using a constantly updated database. Your carrier may also offer free blocking: T-Mobile has "Scam Shield," AT&T has "ActiveArmor," and Verizon has "Call Filter." Check your carrier\'s app store for their free version.', screenshotDesc: 'Hiya app showing an incoming call flagged as "Likely Spam" with options to Block, Report, and Answer.' },
       { title: 'Block specific numbers', content: 'When a spam call gets through, block the number immediately. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can\'t call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.', screenshotDesc: 'iPhone call details screen showing caller info with a red "Block this Caller" option at the bottom.' },
-      { title: 'Recognize and avoid phone scams', content: 'Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you\'ve won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.', screenshotDesc: 'Infographic showing phone scam red flags: IRS threats, gift card requests, prize claims, and urgency pressure.', warning: 'Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don\'t ask for this by phone.' },
+      { title: 'Recognize and avoid phone scams', content: 'Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you\'ve won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.', screenshotDesc: 'Infographic showing phone scam red flags: IRS threats, gift card requests, prize claims, and urgency pressure.', warning: 'Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don\'t ask for this by phone.', tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
     ],
   },
   {
@@ -5877,7 +5877,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'Set up Face ID or Touch ID', content: 'Follow the on-screen instructions to scan your face or fingerprint. This lets you unlock your phone securely without typing a password every time.' },
       { title: 'Sign in with your Apple ID', content: 'Enter your Apple ID email and password. If you do not have one, tap "Forgot password or don\'t have an Apple ID?" to create one for free. Your Apple ID connects to the App Store, iCloud, and iMessage.', warning: 'Write down your Apple ID email and password and keep them somewhere safe. You will need them if you ever get a new phone.' },
       { title: 'Restore or start fresh', content: 'If you have an old iPhone, choose "Transfer from iPhone" or "Restore from iCloud Backup" to move your apps and photos across. If this is your first iPhone, choose "Set Up as New iPhone."' },
-      { title: 'Update to the latest iOS', content: 'Go to Settings, then General, then Software Update. If an update is available, tap Download and Install. This keeps your phone secure.', tip: 'Plug your phone into a charger before updating. Updates can take 15-30 minutes.' },
+      { title: 'Update to the latest iOS', content: 'Go to Settings, then General, then Software Update. If an update is available, tap Download and Install. This keeps your phone secure.', tip: 'Plug your phone into a charger before updating. Updates can take 15-30 minutes. For the full official setup guide, visit support.apple.com/en-us/108854 — Apple\'s free step-by-step new iPhone setup page.' },
     ]
   },
   {
@@ -5896,7 +5896,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. This connects you to the Play Store, Google Photos, Gmail, and Google Drive. If you do not have a Gmail account, tap "Create account" to make one for free.', warning: 'Write down your Google account email and password. You will need these to download apps and access your photos.' },
       { title: 'Transfer from your old phone', content: 'You can transfer contacts, apps, and photos from your old phone using a cable or wirelessly. If this is your first smartphone, tap "Don\'t copy."' },
       { title: 'Set up a screen lock', content: 'Choose a PIN, pattern, or fingerprint unlock. A PIN of 6 or more digits is recommended. Avoid patterns as they are easier to guess.' },
-      { title: 'Check for software updates', content: 'Go to Settings, then System, then System Update. Install any available updates to keep your phone secure.', tip: 'Turn on automatic updates so your phone stays protected without you needing to remember.' },
+      { title: 'Check for software updates', content: 'Go to Settings, then System, then System Update. Install any available updates to keep your phone secure.', tip: 'Turn on automatic updates so your phone stays protected without you needing to remember. For official Android setup help, visit support.google.com/android — Google\'s free help centre for all Android phones.' },
     ]
   },
   {
@@ -6042,7 +6042,10 @@ Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachme
 Go to Settings > Photos and turn on iCloud Photos. Then enable "Optimise iPhone Storage." This keeps full-resolution photos in iCloud and stores smaller versions on your phone, freeing up lots of space.
 
 **Delete duplicate photos**
-Open the Photos app, go to Albums > Duplicates. Tap Merge to remove duplicates automatically (available in iOS 16 and later).`,
+Open the Photos app, go to Albums > Duplicates. Tap Merge to remove duplicates automatically (available in iOS 16 and later).
+
+**Official help**
+For Apple's complete storage management guide, visit support.apple.com/en-us/108324 — it covers every option for freeing up space on your iPhone.`,
   },
   {
     slug: 'free-up-storage-android',
@@ -6267,7 +6270,10 @@ Delete or restrict background activity for any apps using an unusually high perc
 This reduces background activity and notifications to stretch your remaining battery.
 
 **Check your battery health (iPhone)**
-Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple offers battery replacement for a fixed fee.`,
+Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple offers battery replacement for a fixed fee.
+
+**Official help**
+For Apple's free battery troubleshooting guide, visit support.apple.com/en-us/108055. For Android battery help, visit support.google.com/android.`,
   },
   {
     slug: 'use-siri-basics',
@@ -6687,7 +6693,7 @@ On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone
       { title: 'Go to Gmail', content: 'Open your web browser and go to gmail.com. Click "Create account" at the bottom of the sign-in page.' },
       { title: 'Fill in your details', content: 'Enter your first name and last name. Choose a username (this becomes your email address, e.g., yourname@gmail.com). Choose a strong password and confirm it.', warning: 'Your username cannot be changed later, so choose carefully. Simple names like john.smith may already be taken.' },
       { title: 'Add recovery information', content: 'Enter a phone number and an alternative email address. These help you get back into your account if you forget your password.', tip: 'Always add a phone number. It is the easiest way to recover your account.' },
-      { title: 'Accept and start using Gmail', content: 'Read and accept Google\'s terms. Your new Gmail account is ready. You can now send and receive emails at your new address.' },
+      { title: 'Accept and start using Gmail', content: 'Read and accept Google\'s terms. Your new Gmail account is ready. You can now send and receive emails at your new address.', tip: 'For official Gmail help and tutorials, visit support.google.com/mail — Google\'s free help centre covers everything from basic setup to advanced features.' },
     ]
   },
   {
@@ -6812,7 +6818,7 @@ If spam keeps getting through, create a filter (see the Organise Emails guide) t
       { title: 'Look for urgency and threats', content: 'Phrases like "Your account will be closed in 24 hours!" or "Click now or lose access!" are almost always scams. Real companies do not threaten you by email.' },
       { title: 'Do not click any links', content: 'Hover over links (without clicking) to see where they actually go. If the link address looks strange, do not click it. Instead, go to the company\'s website directly by typing the address yourself.', tip: 'If you get an email from your "bank" asking you to log in, open a new browser tab and type your bank\'s website address yourself.' },
       { title: 'Check for poor spelling and grammar', content: 'Many phishing emails have spelling mistakes, odd formatting, or awkward language. Real companies proofread their emails carefully.' },
-      { title: 'Report and delete', content: 'If you think an email is a scam, do not reply. Mark it as spam or phishing in your email app. If it claims to be from your bank, call your bank using the number on the back of your card to report it.', tip: 'You can forward phishing emails to report@phishing.gov.uk in the UK.' },
+      { title: 'Report and delete', content: 'If you think an email is a scam, do not reply. Mark it as spam or phishing in your email app. If it claims to be from your bank, call your bank using the number on the back of your card to report it.', tip: 'You can forward phishing emails to report@phishing.gov.uk in the UK. In the US, report scams at ReportFraud.ftc.gov and stay informed at consumer.ftc.gov/consumer-alerts — the FTC\'s free consumer alert page.' },
     ]
   },
   {
@@ -6917,7 +6923,7 @@ Swipe left on an email to archive it (hide from inbox but keep it). Swipe right 
       { title: 'Check the basics', content: 'Make sure your printer is turned on, has paper, and has ink or toner. Check that it is connected to your computer by USB cable or to your Wi-Fi network.' },
       { title: 'Restart the printer', content: 'Turn the printer off, wait 30 seconds, and turn it back on. This fixes most "offline" problems.' },
       { title: 'Set as default printer', content: 'On Windows: go to Settings, then Printers and Scanners, click your printer, and choose "Set as default." On Mac: go to System Settings, then Printers and Scanners, and right-click your printer to set it as default.', tip: 'If you have multiple printers listed, Windows may be trying to print to the wrong one.' },
-      { title: 'Clear the print queue', content: 'On Windows: click your printer, then "Open print queue." Delete any stuck print jobs. On Mac: click your printer, then select any stuck jobs and delete them.', warning: 'A single stuck print job can block everything behind it. Clear the queue and try printing again.' },
+      { title: 'Clear the print queue', content: 'On Windows: click your printer, then "Open print queue." Delete any stuck print jobs. On Mac: click your printer, then select any stuck jobs and delete them.', warning: 'A single stuck print job can block everything behind it. Clear the queue and try printing again.', tip: 'For more printer troubleshooting on Windows, visit support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows — Microsoft\'s official printer fix guide.' },
     ]
   },
   {
@@ -7465,6 +7471,407 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
         title: 'What to do when you get a code you didn\'t ask for',
         content: 'If you receive a two-factor code on your phone but you did not try to log in anywhere, this is a warning sign. It could mean:\n\n- Someone knows your password and is trying to log in to your account.\n- You accidentally clicked a "forgot password" link earlier.\n\n**What to do:**\n1. Do not share the code with anyone — not even someone who says they are from your bank or Google.\n2. Log in to your account immediately (from a trusted device) and change your password.\n3. Check your account for any activity you do not recognise.\n4. If it is your bank, call the number on the back of your card straight away.\n\nA real company will never call you and ask for the code that was just sent to your phone.',
         warning: 'If someone calls you and says they need the code that was just sent to your phone, hang up immediately. This is always a scam. No legitimate company will ever ask for your 2FA code.',
+      },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // NEW GUIDES — April 2026 (8 guides)
+  // ═══════════════════════════════════════════
+
+  // GUIDE 1: Set Up New iPhone
+  {
+    slug: 'set-up-new-iphone-beginners',
+    title: 'How to Set Up Your New iPhone (Complete Beginner\'s Guide)',
+    excerpt: 'Step-by-step instructions to set up your new iPhone from the moment you take it out of the box.',
+    category: 'phone-guides',
+    tags: ['iphone', 'setup', 'beginner', 'apple'],
+    readTime: '12 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Turn on your iPhone',
+        content: 'Press and hold the button on the right side of your iPhone until you see the Apple logo appear on the screen. This may take a few seconds. If nothing happens, your phone may need to charge first — plug it into the included charging cable and wall adapter, wait about 15 minutes, then try again.',
+      },
+      {
+        title: 'Choose your language and region',
+        content: 'When the "Hello" screen appears, swipe up (or press the Home button on older iPhones). Pick your language from the list — just tap it. Then choose your country or region. This tells your phone what language to use and what time zone you are in.',
+      },
+      {
+        title: 'Connect to WiFi',
+        content: 'Your iPhone will show a list of WiFi networks nearby. Find your home WiFi network name and tap it. Type in your WiFi password carefully — it is case-sensitive, meaning capital and lowercase letters matter. If you do not know your WiFi password, check the sticker on the bottom or back of your router (the box with blinking lights).',
+        tip: 'If you cannot find your WiFi password, it is often printed on a label on your internet router. Look for "Network Key," "WiFi Password," or "WPA Key."',
+      },
+      {
+        title: 'Sign in with your Apple ID (or create one)',
+        content: 'An Apple ID is your personal account for everything Apple — the App Store, iCloud, FaceTime, and more. If you already have one (maybe from an iPad or old iPhone), tap "Sign In" and enter your email and password. If you are brand new to Apple, tap "Forgot password or don\'t have an Apple ID?" and then "Create a Free Apple ID." Follow the prompts to enter your name, birthday, and email address, and choose a password.',
+        warning: 'Never share your Apple ID password with anyone, even if they claim to be from Apple. Apple will never call you to ask for your password.',
+      },
+      {
+        title: 'Set up Face ID',
+        content: 'Face ID lets you unlock your phone just by looking at it — no passwords needed. When prompted, tap "Continue" and slowly move your head in a circle so the camera can learn your face. You will do this twice. If you wear glasses, you can keep them on. After Face ID is set up, you will also create a 6-digit passcode as a backup.',
+        tip: 'Face ID works with glasses, hats, and scarves. It even works in the dark. You can add an "Alternate Appearance" later in Settings > Face ID & Passcode if you want.',
+      },
+      {
+        title: 'Make text bigger and easier to read',
+        content: 'Once your iPhone is set up, let us make the text larger and clearer. Go to Settings (the gray gear icon) > Display & Brightness > Text Size. Drag the slider to the right to make text bigger. While you are here, also turn on "Bold Text" — this makes all the words on your phone thicker and easier to read. Your phone will restart briefly to apply bold text.',
+      },
+      {
+        title: 'Set up Siri — your voice assistant',
+        content: 'Siri lets you control your phone with your voice. During setup, your iPhone will ask if you want to enable Siri. Tap "Continue" and follow the prompts to say a few phrases so Siri can learn your voice. Once set up, you can say "Hey Siri" (or just "Siri" on newer iPhones) to ask questions, set timers, make calls, and more. For example, try saying "Hey Siri, what is the weather today?"',
+      },
+      {
+        title: 'Add emergency contacts',
+        content: 'This is an important safety step. Open the Health app (white icon with a red heart). Tap your photo or initials in the top right, then tap "Medical ID." Tap "Edit" and scroll down to "Emergency Contacts." Tap the green plus sign (+) to add a family member or trusted friend. These contacts can be reached even when your phone is locked, which is critical in an emergency.',
+      },
+      {
+        title: 'Download essential apps',
+        content: 'Open the App Store (blue icon with a white "A"). Tap the Search tab at the bottom and type the name of an app you want. Here are some useful free apps to start with:\n\n- **WhatsApp** — free messaging and video calls\n- **Google Maps** — navigation and directions\n- **Gmail** — email\n- **YouTube** — videos\n- **Your bank\'s app** — check your balance and pay bills\n\nTap "Get" next to any app, then confirm with Face ID or your passcode to download it.',
+      },
+      {
+        title: 'Explore Assistive Access for a simpler experience',
+        content: 'If you find the regular iPhone interface overwhelming, Apple offers a simpler mode called Assistive Access. It shows large buttons, bigger text, and only the apps you choose. To try it, go to Settings > Accessibility > Assistive Access and follow the setup wizard. You can always switch back to the regular view.',
+        tip: 'Consider enabling Assistive Access (Settings > Accessibility > Assistive Access) for a simpler, larger-button interface. Learn more at support.apple.com/guide/iphone',
+      },
+      {
+        title: 'Learn more with free video tutorials',
+        content: 'Apple has a YouTube channel with short, easy-to-follow videos on every iPhone feature. They are free and designed for beginners. You can also visit an Apple Store near you for free "Today at Apple" classes where staff will help you in person.',
+        tip: 'For a video walkthrough, visit the Apple Support YouTube channel (youtube.com/@AppleSupport) — they have short, easy-to-follow videos on every iPhone feature.',
+      },
+    ],
+  },
+
+  // GUIDE 2: Set Up New Android Phone
+  {
+    slug: 'set-up-new-android-beginners',
+    title: 'How to Set Up Your New Android Phone (Complete Beginner\'s Guide)',
+    excerpt: 'Everything you need to know to set up your new Android phone, step by step, from first power-on.',
+    category: 'phone-guides',
+    tags: ['android', 'setup', 'beginner', 'google'],
+    readTime: '12 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Turn on your Android phone',
+        content: 'Press and hold the power button (usually on the right side of the phone) for a few seconds until the screen lights up. If nothing happens, your battery may be empty — plug in the charging cable that came in the box, wait about 15 minutes, and try again.',
+      },
+      {
+        title: 'Choose your language',
+        content: 'When the phone starts, it will ask you to pick a language. Scroll through the list and tap your preferred language. Then tap the arrow or "Start" button to continue. Next, choose your region or country.',
+      },
+      {
+        title: 'Connect to WiFi',
+        content: 'Your phone will scan for WiFi networks nearby. Find your home WiFi network name in the list and tap it. Enter your WiFi password carefully — it is case-sensitive (capital and lowercase letters matter). If you do not know your WiFi password, look for a sticker on the bottom or back of your internet router.',
+        tip: 'Your WiFi password is often printed on a label on your router. Look for "Network Key," "WiFi Password," or "WPA Key."',
+      },
+      {
+        title: 'Sign in with your Google account (or create one)',
+        content: 'A Google account gives you access to the Play Store (for apps), Gmail, Google Maps, YouTube, and more. If you already have a Gmail address, that is your Google account — enter it and your password. If you are new to Google, tap "Create account" and follow the steps to enter your name, choose an email address, and set a password. Write your password down and keep it somewhere safe.',
+        warning: 'Only download apps from the Google Play Store. Apps from unknown sources can contain viruses or steal your personal information.',
+      },
+      {
+        title: 'Set up fingerprint or face unlock',
+        content: 'Your phone will ask if you want to set up a fingerprint or face unlock. This lets you unlock your phone quickly and securely. For fingerprint: place your finger on the sensor (usually on the back, side, or under the screen) and lift and press repeatedly until it finishes scanning. You will also set a backup PIN in case the fingerprint does not work.',
+      },
+      {
+        title: 'Make text bigger and easier to read',
+        content: 'Once setup is complete, let us make the screen easier to read. Go to Settings (the gear icon) > Display > Font size. Drag the slider to the right to make text bigger. On Samsung phones, you can also adjust "Screen zoom" to make everything on the screen larger, not just text.',
+      },
+      {
+        title: 'Transfer data from your old phone (optional)',
+        content: 'If you are switching from an old phone, Android makes it easy to bring over your photos, contacts, and apps. During setup, the phone will ask "Copy apps & data." You can transfer wirelessly from another Android phone, or use a cable if one was included. If you are switching from an iPhone, download the "Switch to Android" app on your old iPhone first and follow the prompts.',
+      },
+      {
+        title: 'Set up Google Assistant',
+        content: 'Google Assistant is your voice helper. It can answer questions, set reminders, make calls, and more. During setup, your phone may ask you to say "Hey Google" a few times so it can learn your voice. Once set up, you can say "Hey Google, set a timer for 10 minutes" or "Hey Google, call Mom" anytime. You can also press and hold the power button on many phones to activate it.',
+      },
+      {
+        title: 'Add emergency information',
+        content: 'Go to Settings > Safety & emergency (or search for "emergency" in Settings). You can add emergency contacts and medical information here. This information can be accessed from your lock screen in an emergency, even if your phone is locked. Add at least one trusted family member or friend as an emergency contact.',
+      },
+      {
+        title: 'Download essential apps',
+        content: 'Open the Google Play Store (the colorful triangle icon). Tap the search bar at the top and type the name of an app you want. Here are some useful free apps to start with:\n\n- **WhatsApp** — free messaging and video calls\n- **Google Maps** — navigation and directions (probably already installed)\n- **Gmail** — email (probably already installed)\n- **YouTube** — videos (probably already installed)\n- **Your bank\'s app** — check your balance and pay bills\n\nTap "Install" next to any app to download it.',
+        tip: 'For official help, visit support.google.com/android — Google\'s free support site with step-by-step guides for every Android feature.',
+      },
+    ],
+  },
+
+  // GUIDE 3: What to Do If You Think You've Been Scammed
+  {
+    slug: 'what-to-do-if-scammed',
+    title: 'What to Do If You Think You\'ve Been Scammed',
+    excerpt: 'Immediate steps to take if you have been scammed — protect your money and accounts right now.',
+    category: 'safety-guides',
+    tags: ['scam', 'fraud', 'safety', 'emergency'],
+    readTime: '8 min',
+    thumbnailEmoji: '🚨',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Stop all communication with the scammer immediately',
+        content: 'Do not reply to any more messages, emails, or phone calls from the person or company you suspect is a scammer. Do not click any links they sent you. If they are on the phone with you right now, hang up. Block their number if you can. Scammers are very convincing and will try to keep you talking — the best thing you can do is cut off contact completely.',
+      },
+      {
+        title: 'Call your bank right away',
+        content: 'If you shared any bank details, sent money, or gave out your credit or debit card number, call your bank immediately. Use the phone number on the back of your bank card — not a number the scammer gave you. Tell them you may have been the victim of fraud. Your bank can:\n\n- Freeze your card so no more money can be taken\n- Reverse recent transactions in some cases\n- Issue you a new card\n- Flag your account for monitoring\n\nThe sooner you call, the better your chances of getting your money back.',
+        warning: 'If you sent money via gift cards, wire transfer, or cryptocurrency, it may be very difficult to get back. Contact your bank immediately — the sooner you act, the better your chances.',
+      },
+      {
+        title: 'Change your passwords',
+        content: 'If you gave out any passwords, or if you clicked a suspicious link and entered login information, change those passwords right now. Start with the most important accounts:\n\n1. Your email account (this is the most critical — scammers can use it to reset all your other passwords)\n2. Your bank and financial accounts\n3. Any social media accounts\n4. Any other account where you used the same password\n\nMake each new password different and at least 12 characters long.',
+      },
+      {
+        title: 'Report to the FTC',
+        content: 'The Federal Trade Commission (FTC) tracks scams across the country. Reporting helps them catch scammers and protect other people. Go to ReportFraud.ftc.gov on your phone or computer and fill out the short report. You do not need to know the scammer\'s real name — just describe what happened. The FTC will not contact you about your report, but the information helps law enforcement investigations.',
+        tip: 'The FTC will never threaten you, ask you to transfer money to "protect it," or tell you to buy gift cards. That is always a scam. Learn more at consumer.ftc.gov/scams',
+      },
+      {
+        title: 'Report to your local police',
+        content: 'File a report with your local police department. While they may not be able to catch the specific scammer, having a police report on file can help if you need to dispute charges with your bank or credit card company. Bring any evidence you have — screenshots of messages, emails, phone numbers, or transaction records.',
+      },
+      {
+        title: 'If you gave remote access to your computer — act fast',
+        content: 'If you let someone remotely control your computer (they may have asked you to download software like AnyDesk, TeamViewer, or UltraViewer), do this right away:\n\n1. Disconnect your computer from the internet — unplug the ethernet cable or turn off WiFi\n2. Uninstall the remote access software they had you install\n3. Run a full virus scan using Windows Security (built into Windows) or your antivirus program\n4. Change all passwords you may have typed while they were watching\n5. Check your bank accounts for unauthorized transactions\n\nThe scammer may have installed other software or looked at your personal files while connected.',
+      },
+      {
+        title: 'Tell someone you trust',
+        content: 'Being scammed can feel embarrassing, but there is absolutely no shame in it — scammers are professionals who trick thousands of people every day. Tell a family member, friend, or neighbor what happened. They can:\n\n- Help you think clearly about next steps\n- Watch for follow-up scams (scammers often try again, pretending to help you "recover" your money)\n- Provide emotional support\n\nYou are not alone, and talking about it helps.',
+      },
+      {
+        title: 'Monitor your accounts for unusual activity',
+        content: 'For the next several weeks, check your bank statements, credit card statements, and email carefully. Look for:\n\n- Charges you did not make\n- New accounts opened in your name\n- Password reset emails you did not request\n- Mail or bills from companies you do not recognize\n\nYou can also get a free credit report at AnnualCreditReport.com to check if anyone has opened accounts in your name. Consider placing a fraud alert or credit freeze with the three credit bureaus (Equifax, Experian, TransUnion) — this is free.',
+      },
+    ],
+  },
+
+  // GUIDE 4: How to Spot a Scam Email, Text, or Phone Call
+  {
+    slug: 'spot-scam-email-text-call',
+    title: 'How to Spot a Scam Email, Text, or Phone Call',
+    excerpt: 'Learn the telltale signs of phishing emails, scam texts, and fraud calls so you never fall for one.',
+    category: 'safety-guides',
+    tags: ['phishing', 'scam', 'email', 'safety'],
+    readTime: '10 min',
+    thumbnailEmoji: '🎣',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Know what scams look like in 2026',
+        content: 'Scammers are getting more clever every year. Here are the most common scams happening right now:\n\n- **Unclaimed funds calls** — Callers say the government owes you money and you need to pay a "processing fee" to get it. The FTC issued a major alert about this in March 2026.\n- **Fake delivery notifications** — Texts claiming your package could not be delivered, with a link to "reschedule." The link steals your information.\n- **AI voice scams** — Scammers use artificial intelligence to clone a family member\'s voice and call you pretending to be them, usually saying they are in trouble and need money urgently.\n- **Fake tech support calls** — Someone calls claiming to be from Microsoft, Apple, or your internet provider saying your computer has a virus.\n- **FIFA World Cup ticket scams** — With the 2026 World Cup, fake ticket websites and "too good to be true" offers are everywhere.\n\nKnowing what to look for is your best defense.',
+        tip: 'In 2026, scammers are using AI to clone voices of your family members. If you get a call from a loved one asking for money urgently, hang up and call them back on their real number.',
+      },
+      {
+        title: 'Check the sender carefully',
+        content: 'One of the easiest ways to spot a scam email is to look at who actually sent it. Scammers often use email addresses that look almost right, but are slightly off. For example:\n\n- Real: support@amazon.com\n- Fake: support@amaz0n-orders.com (zero instead of the letter "o")\n- Real: noreply@paypal.com\n- Fake: noreply@paypa1-secure.com (number "1" instead of letter "l")\n\nAlways check the full email address, not just the name shown. On your phone, tap the sender\'s name to reveal the actual address.',
+      },
+      {
+        title: 'Watch for urgency and threats',
+        content: 'Scammers want you to act fast — before you have time to think. Watch for messages like:\n\n- "Your account will be closed in 24 hours!"\n- "Urgent: unauthorized activity on your account"\n- "You must pay immediately or face arrest"\n- "Act now — this offer expires today!"\n\nReal companies do not threaten you via email or text. If something feels urgent and scary, that is a big red flag.',
+        warning: 'The IRS, Social Security Administration, and Medicare will NEVER call you threatening arrest or demanding immediate payment. That is always a scam.',
+      },
+      {
+        title: 'Do not click links — check them first',
+        content: 'Before clicking any link in an email or text, check where it actually goes:\n\n- **On a computer:** hover your mouse over the link (do not click). Look at the bottom-left corner of your browser — the real web address will appear there.\n- **On a phone:** press and hold the link (do not tap). A preview will pop up showing the real address.\n\nIf the address looks unfamiliar, misspelled, or does not match the company that supposedly sent it, do not click it. When in doubt, open your browser and go to the company\'s website directly by typing the address yourself.',
+      },
+      {
+        title: 'Look for poor grammar and generic greetings',
+        content: 'Many scam messages have telltale signs of poor quality:\n\n- Generic greetings like "Dear Customer" or "Dear User" instead of your actual name\n- Spelling mistakes and awkward grammar\n- Unusual formatting — random bold text, strange spacing, or mismatched fonts\n- Blurry or slightly wrong company logos\n\nNote: AI-generated scam messages are getting better at grammar, so this is not the only thing to check. But combined with other red flags, it is a useful clue.',
+      },
+      {
+        title: 'Verify by contacting the company directly',
+        content: 'If you get a suspicious message that claims to be from your bank, a delivery company, or a government agency, do not use any contact information in that message. Instead:\n\n1. Look up the company\'s official phone number yourself — check their real website or the back of your bank card\n2. Call that number and ask if they sent you the message\n3. You can also log in to your account directly (by typing the website address yourself) to check for alerts\n\nThis one step can save you from almost any scam.',
+      },
+      {
+        title: 'Never give out sensitive information by phone or email',
+        content: 'No legitimate company will ever ask you for:\n\n- Your full password\n- Your Social Security number by email or phone\n- Your bank PIN\n- A two-factor authentication code that was sent to your phone\n- Gift card numbers as "payment"\n\nIf anyone asks for these things, it is a scam — no exceptions. Real companies already have your account information and do not need you to "verify" it this way.',
+      },
+      {
+        title: 'Report suspicious messages',
+        content: 'Reporting scams helps protect other people. Here is how:\n\n- **Scam emails:** Forward them to reportphishing@apwg.org\n- **Scam texts:** Forward the text to 7726 (SPAM) — this works on all major carriers\n- **Scam calls:** Report to ReportFraud.ftc.gov\n- **Scam ads on social media:** Use the platform\'s "Report" button on the post\n\nYou can also report identity theft at IdentityTheft.gov if someone used your personal information.',
+      },
+    ],
+  },
+
+  // GUIDE 5: How to Fix a Slow Windows 11 Computer
+  {
+    slug: 'fix-slow-windows-11',
+    title: 'How to Fix a Slow Windows 11 Computer',
+    excerpt: 'Simple steps to speed up your Windows 11 PC when it feels sluggish, freezes, or takes too long.',
+    category: 'essential-skills',
+    tags: ['windows', 'slow', 'performance', 'computer'],
+    readTime: '10 min',
+    thumbnailEmoji: '🖥️',
+    publishedAt: '2026-04-01',
+    difficulty: 'Intermediate',
+    steps: [
+      {
+        title: 'Restart your computer (seriously — it fixes many issues)',
+        content: 'This sounds too simple, but restarting clears out temporary files, closes stuck programs, and frees up memory. Click the Start menu (Windows icon in the taskbar) > Power > Restart. Important: choose "Restart," not "Shut Down." Restarting fully refreshes the system, while Shut Down on Windows 11 uses a fast-startup mode that does not fully clear everything. Wait for your computer to fully restart before checking if it is faster.',
+        tip: 'Make it a habit to restart your computer at least once a week. Many slowness issues build up over time and a restart clears them all out.',
+      },
+      {
+        title: 'Check for Windows updates',
+        content: 'Outdated software can cause slowness and security problems. Go to Settings (press the Windows key + I) > Windows Update. Click "Check for updates" and install any updates that appear. Some updates require a restart, so save your work first. Let all updates finish — this might take 15 to 30 minutes.',
+        tip: 'For step-by-step help, visit support.microsoft.com/en-us/windows — Microsoft\'s free support site. You can also search YouTube for "Windows 11 tips" from the official Microsoft channel.',
+      },
+      {
+        title: 'Close programs you are not using',
+        content: 'Every open program uses your computer\'s memory and processing power. Right-click an empty space on the taskbar (the bar at the bottom of your screen) and select "Task Manager." In the Task Manager window, look at the "Processes" tab. You will see a list of everything running on your computer with how much CPU, Memory, and Disk each one is using. If you see a program using a lot of resources that you are not actively using, click on it and then click "End Task" in the top right.\n\nDo not end tasks for things you do not recognize — some are important system processes.',
+      },
+      {
+        title: 'Disable unnecessary startup programs',
+        content: 'Some programs set themselves to start automatically when you turn on your computer, which makes startup slow. In Task Manager (right-click the taskbar > Task Manager), click the "Startup apps" tab on the left side. You will see a list of programs with their "Status" (Enabled or Disabled) and "Startup impact" (Low, Medium, High). Right-click any program you do not need at startup and select "Disable." Good candidates to disable: Spotify, Discord, Skype, OneDrive (if you do not use it), and any other app you can open manually when you need it.',
+      },
+      {
+        title: 'Free up disk space',
+        content: 'A nearly full hard drive slows everything down. Go to Settings > System > Storage. Windows will show you how your storage is being used. Turn on "Storage Sense" to have Windows automatically clean up temporary files. You can also click "Temporary files" to see what can be deleted. Check the boxes next to items you want to remove (Temporary files, Recycle Bin, Downloads folder) and click "Remove files."',
+      },
+      {
+        title: 'Run Disk Cleanup',
+        content: 'Disk Cleanup is a built-in tool that finds and removes files you no longer need. Click the Start menu and type "Disk Cleanup" — click the app that appears. Select your main drive (usually C:) and click OK. Check the boxes for the types of files you want to delete — "Temporary files," "Thumbnails," and "Recycle Bin" are safe to remove. Click "OK" and then "Delete Files" to confirm.',
+      },
+      {
+        title: 'Check for viruses and malware',
+        content: 'Viruses and malware can secretly run in the background and slow your computer to a crawl. Windows 11 has a free built-in antivirus called Windows Security. Go to Settings > Privacy & Security > Windows Security > Virus & threat protection. Click "Quick scan" to run a scan. If it finds anything, follow the prompts to remove it. For a more thorough check, click "Scan options" and choose "Full scan" — this takes longer but checks every file on your computer.',
+        warning: 'Never call a phone number from a pop-up saying your computer is infected. Microsoft will never show you a pop-up with a phone number. That is a tech support scam.',
+      },
+      {
+        title: 'Check for known Windows update issues',
+        content: 'Sometimes a Windows update itself can cause problems. The March 2026 update KB5079473 caused sign-in issues and slowness for many users. Microsoft released a fix in update KB5085516. If your computer became slow after an update, go to Settings > Windows Update and install the latest updates — the fix should be included. If you are still having trouble, you can go to Settings > Windows Update > Update history to see which updates were recently installed.',
+      },
+    ],
+  },
+
+  // GUIDE 6: How to Make a Video Call
+  {
+    slug: 'how-to-video-call',
+    title: 'How to Make a Video Call (FaceTime, Zoom, and Google Meet)',
+    excerpt: 'Learn how to video call family and friends using FaceTime, Zoom, or Google Meet on any device.',
+    category: 'essential-skills',
+    tags: ['video call', 'facetime', 'zoom', 'google meet'],
+    readTime: '10 min',
+    thumbnailEmoji: '📹',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Before you start — test your camera and microphone',
+        content: 'Before making your first video call, let us make sure your camera and microphone work.\n\n- **On iPhone:** Open the Camera app. If you can see yourself on the screen, your camera works. To check the microphone, open Voice Memos and record yourself talking for a few seconds, then play it back.\n- **On Android:** Open the Camera app and switch to the front-facing camera (tap the circular arrow icon). Record a short video to test both camera and sound.\n- **On a Windows computer:** Go to Settings > Privacy & Security > Camera. Make sure camera access is turned on. Open the Camera app to check.\n- **On a Mac:** Open FaceTime or Photo Booth to test your camera.',
+        tip: 'Before your first video call, test your camera and microphone. On iPhone: open Camera app to check. On Android: open Camera app. On computer: go to Settings > Privacy > Camera.',
+      },
+      {
+        title: 'Get set up for the best experience',
+        content: 'A few simple things make a big difference on video calls:\n\n- **Lighting:** Sit facing a window or lamp. If the light is behind you, people will only see a dark shadow.\n- **Position:** Prop your phone or tablet up against something stable (a stack of books works great) instead of holding it. Position it at eye level.\n- **Background:** Make sure there is nothing behind you that you do not want people to see.\n- **Sound:** A quiet room is best. Close windows if there is traffic noise. You can also use earbuds or headphones for better sound.',
+        tip: 'Make sure you are in a well-lit room and your face is clearly visible. Prop your phone up against something stable instead of holding it.',
+      },
+      {
+        title: 'How to make a FaceTime call (iPhone, iPad, Mac)',
+        content: 'FaceTime is Apple\'s free video calling app. It comes already installed on every iPhone, iPad, and Mac.\n\n1. Open the FaceTime app (the green icon with a white video camera)\n2. Tap the "+" button (or "New FaceTime" on newer versions)\n3. Type the person\'s name, phone number, or email address in the "To:" field\n4. Tap the green Video button to start the call\n\nThe other person will see a notification and can accept or decline. FaceTime works over WiFi or cellular data. As of 2025, you can also FaceTime with Android and Windows users by sending them a link — tap "Create Link" and share it via text message.',
+      },
+      {
+        title: 'How to join a Zoom meeting',
+        content: 'Zoom is the most popular video meeting app for group calls. Here is how to use it:\n\n1. Download Zoom from the App Store (iPhone) or Play Store (Android) — it is free\n2. Open the Zoom app\n3. Tap "Join a Meeting" (you do not need an account just to join)\n4. Enter the Meeting ID — this is a number (like 123 456 7890) that the meeting organizer will send you, usually in an email or text\n5. Enter your name so people know who you are\n6. Tap "Join"\n7. If asked for a passcode, enter the one from your invitation\n8. Tap "Join with Video" and "Call Using Internet Audio"\n\nYou are now in the meeting. You will see other people\'s faces on the screen.',
+      },
+      {
+        title: 'How to use Google Meet',
+        content: 'Google Meet is Google\'s free video calling service. It works in any web browser or through the Gmail app.\n\n**To start a new meeting:**\n1. Open the Google Meet app (or go to meet.google.com on a computer)\n2. Tap "New meeting"\n3. Choose "Send an invitation" to share the meeting link with someone, or "Start an instant meeting" to begin right away\n\n**To join a meeting someone invited you to:**\n1. Open the Google Meet app (or click the link they sent you)\n2. Tap "Join with a code"\n3. Enter the meeting code from your invitation\n4. Tap "Join"\n\nGoogle Meet is free for calls up to 60 minutes with up to 100 people.',
+      },
+      {
+        title: 'During the call — useful controls to know',
+        content: 'All video calling apps have similar controls. Tap the screen if the controls are hidden:\n\n- **Mute/Unmute:** Tap the microphone icon to mute yourself (a line will appear through it). Tap again to unmute. Mute yourself when you are not talking to reduce background noise.\n- **Camera on/off:** Tap the camera icon to turn your video off or on.\n- **Switch camera:** Tap the camera flip icon to switch between the front-facing and rear camera.\n- **End call:** Tap the red phone icon or red "Leave" button to hang up.\n- **Chat:** Most apps have a chat feature where you can type messages during the call — useful if someone cannot hear you.',
+      },
+    ],
+  },
+
+  // GUIDE 7: How to Use QR Codes
+  {
+    slug: 'how-to-use-qr-codes',
+    title: 'How to Use QR Codes (Those Square Barcode Things)',
+    excerpt: 'Learn what QR codes are and how to scan them with your phone — it is easier than you think.',
+    category: 'essential-skills',
+    tags: ['qr code', 'camera', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What is a QR code?',
+        content: 'A QR code is a square pattern of black and white dots — it looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone\'s camera, it instantly takes you to a website or shows you information — no typing needed.',
+      },
+      {
+        title: 'How to scan a QR code on an iPhone',
+        content: 'Scanning a QR code on an iPhone is very easy — you do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone\'s camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.',
+      },
+      {
+        title: 'How to scan a QR code on an Android phone',
+        content: 'On most modern Android phones, the camera can scan QR codes automatically.\n\n1. Open your Camera app\n2. Point it at the QR code and hold steady\n3. A link or notification should pop up — tap it to open\n\nIf nothing happens, you may need to enable QR code scanning:\n- Go to Settings > Camera (or search for "QR" in Settings)\n- Turn on "Scan QR codes"\n\n**On Samsung phones:** You can also swipe down from the top of the screen to open Quick Settings and tap the "Scan QR code" tile. This opens a dedicated scanner that works very well.',
+      },
+      {
+        title: 'Stay safe when scanning QR codes',
+        content: 'QR codes are generally safe, but scammers have started using them to trick people. The FTC has warned about "quishing" scams in 2026 — that is phishing using QR codes. Watch out for:\n\n- **Stickers placed over real QR codes** — especially on parking meters, gas pumps, or public signs. Scammers stick their own QR code on top of the real one to send you to a fake website.\n- **QR codes in unexpected emails or texts** — if you did not expect it, do not scan it.\n- **QR codes on random flyers** — be cautious about scanning codes posted in public places by unknown people.\n\nAlways look at the website address that pops up before you tap it. If it looks suspicious or unfamiliar, do not open it.',
+        warning: 'Be careful with QR codes on random flyers, stickers on parking meters, or in unexpected emails. Scammers can put fake QR codes over real ones to send you to phishing websites. The FTC has warned about "quishing" scams in 2026.',
+        tip: 'If a QR code takes you to a website asking for your password or payment information, STOP. Go to that website directly by typing the address into your browser instead.',
+      },
+    ],
+  },
+
+  // GUIDE 8: How to Fix Your Phone When Apps Keep Crashing
+  {
+    slug: 'fix-phone-apps-crashing',
+    title: 'How to Fix Your Phone When Apps Keep Crashing',
+    excerpt: 'Simple fixes for when apps freeze, close unexpectedly, or will not open on your phone.',
+    category: 'phone-guides',
+    tags: ['apps', 'crashing', 'troubleshooting', 'phone'],
+    readTime: '8 min',
+    thumbnailEmoji: '💥',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'iPhone — Force close the app',
+        content: 'When an app freezes or keeps closing, the first thing to try is force-closing it and opening it again.\n\n**On iPhones with Face ID (iPhone X and newer):**\n1. Swipe up from the very bottom of the screen and pause in the middle\n2. You will see all your open apps as cards\n3. Find the app that is crashing and swipe it up and off the top of the screen\n4. Wait a few seconds, then open the app again from your home screen\n\n**On iPhones with a Home button (iPhone SE, iPhone 8, and older):**\n1. Double-press the Home button quickly\n2. Find the app and swipe it up and off the screen\n3. Open the app again',
+      },
+      {
+        title: 'iPhone — Update the app',
+        content: 'App developers regularly release updates to fix crashes and bugs. Here is how to update:\n\n1. Open the App Store (the blue icon with a white "A")\n2. Tap your profile picture or initials in the top-right corner\n3. Scroll down to see available updates\n4. Tap "Update All" to update everything at once, or tap "Update" next to a specific app\n\nIf you do not see any updates, your apps are already up to date.',
+      },
+      {
+        title: 'iPhone — Restart your phone',
+        content: 'Restarting your phone clears temporary files and can fix many app issues.\n\n**On iPhones with Face ID:**\n1. Press and hold the side button AND either volume button at the same time\n2. Slide the "slide to power off" slider to the right\n3. Wait 30 seconds\n4. Press and hold the side button until the Apple logo appears\n\n**On iPhones with a Home button:**\n1. Press and hold the side (or top) button\n2. Slide to power off\n3. Wait 30 seconds, then press the side button to turn it back on',
+      },
+      {
+        title: 'iPhone — Check for an iOS update',
+        content: 'Sometimes apps crash because your phone\'s operating system needs an update. Go to Settings > General > Software Update. If an update is available, tap "Download and Install." Make sure your phone is connected to WiFi and has at least 50% battery (or plug it in). The update may take 15 to 30 minutes.',
+      },
+      {
+        title: 'iPhone — Delete and reinstall the app',
+        content: 'If nothing else works, removing the app and installing it fresh often fixes the problem.\n\n1. Press and hold the app icon on your home screen until a menu appears\n2. Tap "Remove App" then "Delete App"\n3. Go to the App Store, search for the app, and tap the download icon (cloud with an arrow) to reinstall it\n4. Log back in if needed\n\nNote: deleting an app may remove your data within that app (game progress, saved files, etc.), but most apps save your data to the cloud and will restore it when you log back in.',
+      },
+      {
+        title: 'Android — Force stop the app',
+        content: 'On Android, you can force an app to completely stop running.\n\n1. Go to Settings (the gear icon)\n2. Tap "Apps" (or "Apps & notifications" on some phones)\n3. Find the app that is crashing and tap on it\n4. Tap "Force Stop"\n5. Tap "OK" to confirm\n6. Go back to your home screen and open the app again\n\nThis is like giving the app a fresh start without deleting anything.',
+      },
+      {
+        title: 'Android — Clear the app cache',
+        content: 'The cache is temporary data that apps store to load faster. Sometimes this data gets corrupted and causes crashes. Clearing it is completely safe.\n\n1. Go to Settings > Apps\n2. Tap the crashing app\n3. Tap "Storage" (or "Storage & Cache")\n4. Tap "Clear Cache"\n\nThis does NOT delete your data, photos, messages, or login information — it only removes temporary files. The app may load a little slower the first time after clearing the cache, but it should work normally.',
+        tip: 'Clearing the cache does NOT delete your data — it just removes temporary files. It is safe to do anytime. For official help, visit support.google.com/googleplay/answer/2668665',
+      },
+      {
+        title: 'Android — Update the app',
+        content: 'Make sure you have the latest version of the app.\n\n1. Open the Google Play Store\n2. Tap your profile picture in the top-right corner\n3. Tap "Manage apps & device"\n4. Tap "Updates available"\n5. Find the crashing app and tap "Update," or tap "Update all"\n\nIf no update is available, the app is already at the latest version.',
+      },
+      {
+        title: 'Android — Restart your phone and reinstall if needed',
+        content: 'If the steps above did not help:\n\n1. **Restart your phone:** Press and hold the power button, then tap "Restart." Wait for it to fully start back up.\n2. **Delete and reinstall the app:** Press and hold the app icon, tap "Uninstall," then go to the Play Store and search for it again. Tap "Install" to reinstall.\n\nReinstalling gives you a completely fresh copy of the app.',
+        warning: 'If ALL your apps are crashing after a phone update, try restarting your phone first. If that does not work, wait a day — app developers often release fixes within 24 to 48 hours of a major update.',
       },
     ],
   },

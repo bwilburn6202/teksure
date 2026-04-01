@@ -41,6 +41,28 @@ const CATEGORY_LABELS: Record<NewsItem['category'], string> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 13,
+    title: 'Windows 11 March Update May Cause Sign-In Problems',
+    summary: 'Microsoft\'s March 2026 update (KB5079473) is causing some people to see "You\'ll need the Internet for this" errors when signing into Microsoft apps like Teams, OneDrive, Word, and Edge — even when they\'re connected to the internet. Microsoft has released a fix (KB5085516). Go to Settings > Windows Update to install it.',
+    category: 'devices',
+    date: '2026-03-28',
+    emoji: '\uD83D\uDCBB',
+    readTime: '2 min',
+    source: 'Microsoft Support',
+    sourceUrl: 'https://support.microsoft.com',
+  },
+  {
+    id: 14,
+    title: '91% of Americans Over 50 Now Own a Smartphone',
+    summary: 'According to AARP\'s 2026 Technology Trends report, smartphone ownership among older adults has reached an all-time high. Two-thirds of 50+ adults say technology enriches their lives. If you\'re still learning, you\'re not alone — and TekSure is here to help.',
+    category: 'devices',
+    date: '2026-03-26',
+    emoji: '\uD83D\uDCF1',
+    readTime: '2 min',
+    source: 'AARP',
+    sourceUrl: 'https://www.aarp.org',
+  },
+  {
     id: 1,
     title: 'New Scam: "Your parcel couldn\'t be delivered" Text Messages',
     summary: 'Millions of people are receiving fake text messages claiming a parcel couldn\'t be delivered and asking you to click a link to rebook. The link takes you to a convincing fake Royal Mail or FedEx website that steals your bank details. If you get one of these texts, delete it immediately. Real delivery companies never ask for payment via a text link.',

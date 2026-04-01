@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
+  Users, Download, Phone,
 } from 'lucide-react';
 
 interface Tip {
@@ -117,6 +118,24 @@ const pastTips: Tip[] = [
     summary: 'Unsubscribe from newsletters you don\'t read and delete old messages to keep your inbox fast and manageable.',
     category: 'Productivity',
     icon: MailX,
+  },
+  {
+    title: 'Set Up a Family Safety Word',
+    summary: 'Choose a secret word with your family that only you know. If someone calls claiming to be a relative in trouble (even if it sounds exactly like them — AI can clone voices now), ask for the safety word. No word? Hang up and call them directly.',
+    category: 'Safety',
+    icon: Users,
+  },
+  {
+    title: 'Turn On Automatic Updates',
+    summary: 'The single most important thing you can do for security. On iPhone: Settings > General > Software Update > Automatic Updates. On Android: Settings > System > Software Update > Auto-download. On Windows: Settings > Windows Update > turn on automatic updates. Updates fix security holes that hackers exploit.',
+    category: 'Security',
+    icon: Download,
+  },
+  {
+    title: 'Call Senior Planet\'s Free Tech Helpline',
+    summary: 'Need help from a real person? Call 888-713-3495 (Monday through Saturday). Senior Planet, an AARP affiliate, offers free tech support in English, Spanish, and Mandarin. You can even book a free one-on-one Zoom session with a volunteer.',
+    category: 'Communication',
+    icon: Phone,
   },
 ];
 

@@ -64,43 +64,36 @@ Stripe — LIVE. £15 deposit model. Never touch the Stripe edge functions witho
 
 ---
 
-## Autonomous Evolution Loop
+## Autonomous Development System (as of 2026-04-01)
 
-TekSure has an active scheduled development agent that runs every 6 hours and autonomously builds features from the roadmap. **Do not manually rebuild features the evolution loop is already queued to build.**
+TekSure is maintained by a fully autonomous development pipeline. The system has **full creative freedom** to add guides, build features, update content, and evolve the site — all in service of helping non-technical people with technology.
 
-### State file
-**Location:** `.claude/evolution-state.json`
+### Core Principles
+- **American company, American workers** — all content for US audience (USD, US carriers, US services)
+- **Free one-stop shop** — no paywalls on educational content
+- **Plain English always** — no jargon, no assumptions about prior knowledge
+- **Every guide should have:** step-by-step instructions, official source links, video walkthrough references
+- **Official sources only** — Apple Support, Google Support, Microsoft Support, AARP, FTC, How-To Geek
 
-Tracks:
-- `queue` — ordered list of features to build next (P1 → P2 → P3)
-- `completedFeatures` — ids of features already built
-- `currentFeature` — feature being built right now (null when idle)
-- `lastRun` — ISO timestamp of last successful run
-- `log` — audit log of every completed run with commit hashes
+### Scheduled Tasks
+| Task | Schedule | Purpose |
+|------|----------|---------|
+| `daily-site-health` | Daily 6:47 AM | Build check, TypeScript validation, broken reference scan |
+| `weekly-guide-enrichment` | Monday 7:23 AM | Add 3-5 new guides with video links, update 10 existing |
+| `content-freshness-check` | Wednesday 8:41 AM | Fix outdated OS versions, add missing resource links |
+| `weekly-tip-scam-alert` | Friday 9:17 AM | Scam alerts from FTC/AARP, weekly tips, tech news |
+| `monthly-feature-build` | 1st of month 10:13 AM | Build one new tool or page based on trending needs |
 
-### Scheduled task
-**Name:** `teksure-evolution-loop`
-**Schedule:** Every 6 hours (`17 */6 * * *`)
-**Managed from:** Claude Code sidebar → Scheduled section
-**Task file:** `~/.claude/scheduled-tasks/teksure-evolution-loop/SKILL.md`
+**Task files:** `~/.claude/scheduled-tasks/[task-id]/SKILL.md`
+**Dev log:** `~/.claude/projects/.../memory/dev_log.md`
+**Memory index:** `~/.claude/projects/.../memory/MEMORY.md`
 
-### Run logs
-Each run writes a summary to `.claude/evolution-log-YYYY-MM-DD.md`.
-If a build fails after 3 attempts, a `.claude/evolution-BLOCKED-[timestamp].md` file is written.
+### Content Sources
+- **Official:** Apple/Google/Microsoft/Samsung support sites
+- **Educational:** AARP tech, How-To Geek, GCFGlobal, Tom's Guide
+- **Safety:** FTC.gov, CISA.gov, IC3.gov
+- **Video:** YouTube official channels (Apple Support, Google, Microsoft, Samsung, AARP)
+- **Community:** Reddit r/techsupport, r/seniors, r/AskTechnology
 
-### Priority queue (as of 2026-03-31)
-See `.claude/evolution-state.json` for the live queue. Order:
-
-**Tier 1 (P1):** TekBot upgrade → 2FA guide → Home Network Security guide → Software Update guide → Screenshot annotations lightbox
-
-**Tier 2 (P2):** Live chat support → Caregiver dashboard → Tech news page → Large print XXL mode → Accessibility score tool
-
-**Tier 3 (P2 content):** Telehealth guide → Banking apps → Podcasts → Calendar reminders → Voice commands → QR codes → Hearing aid Bluetooth → Medication reminders → E-reader setup → Ride-sharing → Digital legacy → Online shopping safety
-
-**Tier 4 (P3):** Monthly webinars system → Family tech sharing → Senior tech blog
-
-### To pause the loop
-Go to Claude Code sidebar → Scheduled → teksure-evolution-loop → Disable.
-
-### To add a feature to the queue
-Edit `.claude/evolution-state.json` and insert a new object into the `queue` array at the desired position. Follow the existing object schema.
+### To manage scheduled tasks
+Go to Claude Code sidebar → Scheduled section. Each task can be enabled/disabled individually.
