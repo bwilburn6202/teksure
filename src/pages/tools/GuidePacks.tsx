@@ -117,19 +117,19 @@ function generatePrintContent(packId: string) {
   .guide-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
   .guide-emoji { font-size: 2rem; line-height: 1; }
   h3 { margin: 0 0 4px; font-size: 1.1rem; color: #1a5f3f; }
-  .guide-meta { font-size: 0.75rem; color: #9ca3af; }
+  .guide-meta { font-size: 0.75rem; color: #4B5563; }
   .step { display: flex; gap: 12px; margin: 10px 0; }
   .step-num { min-width: 24px; height: 24px; background: #1a5f3f; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; flex-shrink: 0; margin-top: 2px; }
   .tip { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 8px 12px; margin-top: 6px; font-size: 0.8rem; color: #166534; border-radius: 0 8px 8px 0; }
-  .more { color: #9ca3af; font-style: italic; font-size: 0.8rem; margin-top: 8px; }
-  .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 0.75rem; }
+  .more { color: #4B5563; font-style: italic; font-size: 0.8rem; margin-top: 8px; }
+  .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #4B5563; font-size: 0.75rem; }
   @media print { @page { margin: 1.5cm; } }
 </style></head><body>
 <div class="cover">
   <div class="emoji">${pack.emoji}</div>
   <h1>${pack.name}</h1>
   <p>${pack.desc}</p>
-  <p style="margin-top:16px;color:#9ca3af;font-size:0.8rem;">Printed from TekSure.com · ${new Date().toLocaleDateString('en-GB')}</p>
+  <p style="margin-top:16px;color:#4B5563;font-size:0.8rem;">Printed from TekSure.com · ${new Date().toLocaleDateString('en-GB')}</p>
 </div>
 ${guideHTML}
 <div class="footer">TekSure.com — Making technology accessible for everyone · Find the full guides and hundreds more at teksure.com</div>

@@ -131,7 +131,7 @@ export function Navbar() {
             style={{ minHeight: '44px' }}
           >
             <Search className="h-3.5 w-3.5" />
-            <kbd className="font-sans text-[10px] text-muted-foreground/60">⌘K</kbd>
+            <kbd className="font-sans text-[10px] text-muted-foreground">⌘K</kbd>
           </button>
 
           {user ? (

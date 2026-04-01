@@ -394,7 +394,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Tech trouble? We've got you.
             </h2>
-            <p className="text-white/60 mb-8 max-w-md mx-auto">
+            <p className="text-white/80 mb-8 max-w-md mx-auto">
               Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
             </p>
             <div className="flex flex-wrap justify-center gap-3">

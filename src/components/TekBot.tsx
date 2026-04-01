@@ -627,7 +627,7 @@ export function TekBot() {
               >
                 <div className="px-4 pt-4 pb-2">
                   <p className="text-white/90 font-semibold" style={{ fontSize: 13 }}>Guides for this page</p>
-                  <p className="text-white/50 mt-0.5" style={{ fontSize: 11 }}>Step-by-step help</p>
+                  <p className="text-white/75 mt-0.5" style={{ fontSize: 11 }}>Step-by-step help</p>
                 </div>
                 <div className="flex flex-col gap-2 px-3 pb-4">
                   {pageRelatedGuides.map(g => (
@@ -638,13 +638,13 @@ export function TekBot() {
                     >
                       <div className="flex items-center gap-2 mb-1">
                         <span style={{ fontSize: 18 }}>{g.thumbnailEmoji}</span>
-                        <ExternalLink className="h-3 w-3 text-white/40 group-hover:text-white/70 transition-colors ml-auto shrink-0" />
+                        <ExternalLink className="h-3 w-3 text-white/65 group-hover:text-white/90 transition-colors ml-auto shrink-0" />
                       </div>
                       <span className="text-white/80 font-medium leading-tight group-hover:text-white transition-colors line-clamp-2" style={{ fontSize: 12 }}>
                         {g.title}
                       </span>
                       {g.readTime && (
-                        <span className="text-white/40 mt-1" style={{ fontSize: 10 }}>{g.readTime}</span>
+                        <span className="text-white/65 mt-1" style={{ fontSize: 10 }}>{g.readTime}</span>
                       )}
                     </a>
                   ))}
@@ -661,7 +661,7 @@ export function TekBot() {
                 <Bot className="h-5 w-5" />
                 <div>
                   <span className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
-                  <span className="text-white/60" style={{ fontSize: 11 }}>
+                  <span className="text-white/80" style={{ fontSize: 11 }}>
                     {conversationCount > 0
                       ? `${conversationCount} message${conversationCount === 1 ? '' : 's'} this session`
                       : 'Your friendly tech helper'}
@@ -674,7 +674,7 @@ export function TekBot() {
                 {conversationCount > 0 && (
                   <button
                     onClick={handleClearChat}
-                    className="flex items-center gap-1 rounded-lg px-2 py-1 text-white/60 hover:text-white hover:bg-white/10 transition-all"
+                    className="flex items-center gap-1 rounded-lg px-2 py-1 text-white/80 hover:text-white hover:bg-white/10 transition-all"
                     style={{ fontSize: 11 }}
                     title="Clear this conversation and start fresh"
                     aria-label="Clear conversation history"
