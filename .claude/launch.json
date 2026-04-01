@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "TekSure Dev",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["vite", "--force"],
-      "port": 8080
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["/Users/baileywilburn/Downloads/teksure/.claude/start-dev.sh"],
+      "port": 5173
     }
   ]
 }
