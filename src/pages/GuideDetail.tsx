@@ -90,12 +90,16 @@ const AnnotationLayer = ({ annotations }: { annotations: ScreenshotAnnotation[] 
   </svg>
 );
 
-const MockScreenshot = ({
+const StepScreenshot = ({
   description,
+  screenshotUrl,
+  screenshotAlt,
   osHint,
   annotations,
 }: {
   description: string;
+  screenshotUrl?: string;
+  screenshotAlt?: string;
   osHint?: 'windows' | 'mac' | 'browser' | 'generic';
   annotations?: ScreenshotAnnotation[];
 }) => {
@@ -114,15 +118,29 @@ const MockScreenshot = ({
         </div>
         <span className="text-[10px] text-muted-foreground hidden sm:inline">{toolbarLabel}</span>
       </div>
-      <div className="relative bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[140px]">
-        <div className="flex items-start gap-3 max-w-md">
-          <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-          <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
+      {screenshotUrl ? (
+        <div className="relative bg-muted/30">
+          <img
+            src={screenshotUrl}
+            alt={screenshotAlt || description}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+          {annotations && annotations.length > 0 && (
+            <AnnotationLayer annotations={annotations} />
+          )}
         </div>
-        {annotations && annotations.length > 0 && (
-          <AnnotationLayer annotations={annotations} />
-        )}
-      </div>
+      ) : (
+        <div className="relative bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[140px]">
+          <div className="flex items-start gap-3 max-w-md">
+            <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
+          </div>
+          {annotations && annotations.length > 0 && (
+            <AnnotationLayer annotations={annotations} />
+          )}
+        </div>
+      )}
       {annotations && annotations.length > 0 && (
         <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
           {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
@@ -457,8 +475,10 @@ const GuideDetail = () => {
                             })}
                           </div>
 
-                          <MockScreenshot
+                          <StepScreenshot
                             description={step.screenshotDesc || step.content}
+                            screenshotUrl={step.screenshotUrl}
+                            screenshotAlt={step.screenshotAlt}
                             osHint={getOsHint(guide.category, step.content)}
                             annotations={step.annotations}
                           />

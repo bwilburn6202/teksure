@@ -21,6 +21,10 @@ export interface GuideStep {
   title: string;
   content: string;
   screenshotDesc?: string;
+  /** URL to a real screenshot image — replaces the mock text placeholder when provided */
+  screenshotUrl?: string;
+  /** Alt text for the screenshot image (accessibility) */
+  screenshotAlt?: string;
   tip?: string;
   warning?: string;
   /** Optional visual annotations drawn over the step's screenshot */
