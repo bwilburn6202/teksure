@@ -54,7 +54,7 @@ export default function TechAnxiety() {
           <h2 className="text-xl font-bold text-primary mb-6 text-center">Tips for managing tech anxiety</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {tips.map((tip, i) => (
-              <motion.div key={tip.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true }}>
+              <motion.div key={tip.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true, amount: 0.2 }}>
                 <Card className="h-full rounded-2xl border border-border bg-card">
                   <CardContent className="pt-5 pb-5">
                     <span className="text-3xl block mb-3">{tip.emoji}</span>

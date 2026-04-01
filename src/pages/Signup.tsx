@@ -11,7 +11,7 @@ const Signup = () => {
       const path = user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin';
       navigate(path, { replace: true });
     } else {
-      navigate('/login', { replace: true });
+      navigate('/login', { replace: true, state: { defaultTab: 'create' } });
     }
   }, [user, navigate]);
 

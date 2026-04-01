@@ -293,7 +293,7 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
     <motion.div
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <Card className={`rounded-2xl border border-border bg-card hover:border-border/60 transition-all ${featured ? 'col-span-full' : ''}`}>
         <CardContent className={`p-6 ${featured ? 'md:flex md:gap-8' : ''}`}>

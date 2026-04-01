@@ -311,7 +311,7 @@ const QuickFixes = () => {
                   key={fix.problem}
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, amount: 0.2 }}
                   transition={{ delay: Math.min(i * 0.03, 0.15) }}
                 >
                   <button
@@ -374,7 +374,7 @@ const QuickFixes = () => {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           className="mt-20 max-w-3xl mx-auto"
         >
           <div className="rounded-2xl border border-border bg-card p-8 md:p-12 text-center">

@@ -1,8 +1,9 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map } from 'lucide-react';
+import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
@@ -40,6 +41,7 @@ export function Navbar() {
     { to: '/safety/scam-alerts', label: 'Safety' },
     { to: '/about', label: 'About' },
     { to: '/roadmap', label: 'Roadmap' },
+    { to: '/explore', label: 'Explore' },
   ];
 
   const authLinks = [
@@ -66,7 +68,7 @@ export function Navbar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
+              className={`px-3 py-1.5 text-base font-medium rounded-lg transition-colors ${
                 isActive(link.to)
                   ? 'text-foreground bg-accent'
                   : 'text-muted-foreground hover:text-foreground hover:bg-accent'
@@ -79,7 +81,7 @@ export function Navbar() {
           {!user && (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="flex items-center gap-1 px-3 py-1.5 text-sm font-medium text-muted-foreground hover:text-foreground rounded-lg transition-colors hover:bg-accent">
+                <button className="flex items-center gap-1 px-3 py-1.5 text-base font-medium text-muted-foreground hover:text-foreground rounded-lg transition-colors hover:bg-accent">
                   More
                   <ChevronDown className="h-3.5 w-3.5" />
                 </button>
@@ -97,18 +99,36 @@ export function Navbar() {
 
         {/* Right side */}
         <div className="hidden md:flex items-center gap-2">
-          <div className="flex items-center gap-0.5 mr-1">
-            <SeniorModeToggle />
-            <HighContrastToggle />
-            <FontSizeToggle />
-            <DarkModeToggle />
-            <LanguageToggle />
-          </div>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button variant="ghost" size="icon" className="h-8 w-8" aria-label="Display settings">
+                <SlidersHorizontal className="h-4 w-4" />
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent align="end" className="w-auto p-3">
+              <p className="text-[11px] font-medium text-muted-foreground mb-2 px-1">Display &amp; Accessibility</p>
+              <div className="flex items-center gap-0.5">
+                <SeniorModeToggle />
+                <HighContrastToggle />
+                <FontSizeToggle />
+                <DarkModeToggle />
+                <LanguageToggle />
+              </div>
+            </PopoverContent>
+          </Popover>
+
+          <Link
+            to="/book"
+            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-primary hover:bg-primary/10 transition-colors"
+          >
+            <Phone className="h-4 w-4" />
+            Talk to a Person
+          </Link>
 
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
             className="hidden lg:flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-border text-xs text-muted-foreground hover:bg-accent transition-colors"
-            style={{ minHeight: '32px' }}
+            style={{ minHeight: '44px' }}
           >
             <Search className="h-3.5 w-3.5" />
             <kbd className="font-sans text-[10px] text-muted-foreground/60">⌘K</kbd>

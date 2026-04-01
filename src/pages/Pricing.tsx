@@ -10,6 +10,7 @@ const plans = [
   {
     name: 'Remote Fix',
     price: '£49',
+    deposit: '£15',
     desc: 'Quick help over the phone or screen sharing',
     emoji: '💻',
     features: [
@@ -22,6 +23,7 @@ const plans = [
   {
     name: 'On-Site Visit',
     price: '£99',
+    deposit: '£15',
     desc: 'A technician comes to your home',
     emoji: '🏠',
     features: [
@@ -36,6 +38,7 @@ const plans = [
   {
     name: 'Premium',
     price: '£149',
+    deposit: '£15',
     desc: 'Comprehensive support for bigger jobs',
     emoji: '⭐',
     features: [
@@ -82,7 +85,7 @@ const Pricing = () => (
               key={plan.name}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: i * 0.1 }}
             >
               <Card className={`relative flex flex-col h-full rounded-2xl border ${plan.popular ? 'border-primary bg-primary/5' : 'border-border bg-card'}`}>
@@ -95,6 +98,7 @@ const Pricing = () => (
                   <div className="text-4xl mb-2">{plan.emoji}</div>
                   <CardTitle className="text-xl">{plan.name}</CardTitle>
                   <div className="text-5xl font-bold mt-2 tracking-tight">{plan.price}</div>
+                  <p className="text-xs text-primary font-medium mt-1">Book with just a {plan.deposit} deposit</p>
                   <p className="text-sm text-muted-foreground mt-2">{plan.desc}</p>
                 </CardHeader>
                 <CardContent className="flex flex-col flex-1">
@@ -115,10 +119,23 @@ const Pricing = () => (
           ))}
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8"
+        >
+          <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Book with just a <strong className="text-foreground">£15 deposit</strong>. Pay the rest on the day of your appointment.
+            If we can't fix it, you get a full refund — no questions asked.
+          </p>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           className="text-center text-sm text-muted-foreground"
         >
           Not sure which plan you need?{' '}
@@ -134,7 +151,7 @@ const Pricing = () => (
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           className="container max-w-3xl"
         >
           <div className="grid sm:grid-cols-3 gap-8">

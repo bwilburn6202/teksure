@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "teksure-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "name": "TekSure Dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "--force"],
+      "port": 8080
     }
   ]
 }

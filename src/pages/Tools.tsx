@@ -1,9 +1,13 @@
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Search } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
@@ -13,6 +17,8 @@ import {
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
 } from 'lucide-react';
 
+type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
+
 const tools = [
   {
     title: 'Phishing URL Scanner',
@@ -21,6 +27,7 @@ const tools = [
     path: '/tools/phishing-scanner',
     color: 'text-red-500',
     badge: 'New',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'WiFi Troubleshooter',
@@ -29,6 +36,7 @@ const tools = [
     path: '/tools/wifi-troubleshooter',
     color: 'text-blue-500',
     badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Cybersecurity Scorecard',
@@ -37,6 +45,7 @@ const tools = [
     path: '/tools/cyber-scorecard',
     color: 'text-violet-600',
     badge: 'New',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'Accessibility Check',
@@ -45,6 +54,7 @@ const tools = [
     path: '/tools/accessibility-check',
     color: 'text-indigo-500',
     badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Email Inbox Declutter',
@@ -53,6 +63,7 @@ const tools = [
     path: '/tools/email-declutter',
     color: 'text-teal-500',
     badge: 'New',
+    category: 'Communication' as ToolCategory,
   },
   {
     title: 'Device Health Dashboard',
@@ -61,6 +72,7 @@ const tools = [
     path: '/tools/device-health',
     color: 'text-emerald-500',
     badge: 'New',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Bluetooth Troubleshooter',
@@ -69,6 +81,7 @@ const tools = [
     path: '/tools/bluetooth-troubleshooter',
     color: 'text-blue-500',
     badge: 'New',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Tech Health Quiz',
@@ -77,6 +90,7 @@ const tools = [
     path: '/tools/tech-health-quiz',
     color: 'text-violet-500',
     badge: 'New',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Storage Cleanup Wizard',
@@ -85,6 +99,7 @@ const tools = [
     path: '/tools/storage-cleanup',
     color: 'text-orange-500',
     badge: 'New',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'VPN Setup Guide',
@@ -93,6 +108,7 @@ const tools = [
     path: '/tools/vpn-guide',
     color: 'text-teal-600',
     badge: 'New',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'App Permission Auditor',
@@ -101,6 +117,7 @@ const tools = [
     path: '/tools/app-permissions',
     color: 'text-rose-500',
     badge: 'New',
+    category: 'Security' as ToolCategory,
   },
   {
     title: '2FA Setup Wizard',
@@ -109,6 +126,7 @@ const tools = [
     path: '/tools/two-factor-setup',
     color: 'text-indigo-600',
     badge: 'New',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'Push Notifications',
@@ -117,6 +135,7 @@ const tools = [
     path: '/notifications',
     color: 'text-amber-500',
     badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Interactive Troubleshooter',
@@ -125,6 +144,7 @@ const tools = [
     path: '/tools/troubleshooter',
     color: 'text-primary',
     badge: 'Popular',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Device Chooser Quiz',
@@ -133,6 +153,7 @@ const tools = [
     path: '/tools/device-chooser',
     color: 'text-violet-500',
     badge: 'Buying Guide',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Data Backup Wizard',
@@ -141,6 +162,7 @@ const tools = [
     path: '/tools/backup-wizard',
     color: 'text-sky-500',
     badge: 'Safety',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Internet Safety Course',
@@ -149,6 +171,7 @@ const tools = [
     path: '/tools/safety-course',
     color: 'text-amber-500',
     badge: 'Course',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'App Recommender',
@@ -157,6 +180,7 @@ const tools = [
     path: '/tools/app-recommender',
     color: 'text-rose-500',
     badge: 'Recommended',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Warranty & Repair Finder',
@@ -165,6 +189,7 @@ const tools = [
     path: '/tools/warranty-checker',
     color: 'text-lime-600',
     badge: 'Support',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Password Strength Checker',
@@ -173,6 +198,16 @@ const tools = [
     path: '/tools/password-strength',
     color: 'text-green-500',
     badge: 'Safety',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Password Manager Guide',
+    description: 'Learn what a password manager is, compare the top options, and follow step-by-step setup instructions for your device.',
+    icon: Lock,
+    path: '/tools/password-manager',
+    color: 'text-emerald-600',
+    badge: 'Safety',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'WiFi Speed Test',
@@ -181,6 +216,7 @@ const tools = [
     path: '/tools/wifi-speed',
     color: 'text-blue-500',
     badge: 'Connectivity',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Tech Health Check',
@@ -189,6 +225,7 @@ const tools = [
     path: '/tools/health-check',
     color: 'text-rose-500',
     badge: 'Quiz',
+    category: 'Device Health' as ToolCategory,
   },
   {
     title: 'Device Comparison',
@@ -197,6 +234,7 @@ const tools = [
     path: '/tools/device-compare',
     color: 'text-purple-500',
     badge: 'Devices',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Font Size Adjuster',
@@ -205,6 +243,7 @@ const tools = [
     path: null,
     color: 'text-indigo-500',
     badge: 'Beginner',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Keyboard Shortcuts',
@@ -213,6 +252,7 @@ const tools = [
     path: '/tools/keyboard-shortcuts',
     color: 'text-orange-500',
     badge: 'Reference',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Email Templates',
@@ -221,6 +261,7 @@ const tools = [
     path: '/tools/email-templates',
     color: 'text-teal-500',
     badge: 'Productivity',
+    category: 'Communication' as ToolCategory,
   },
   {
     title: 'Error Message Decoder',
@@ -229,6 +270,7 @@ const tools = [
     path: '/tools/error-decoder',
     color: 'text-destructive',
     badge: 'Troubleshooting',
+    category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
     title: 'Tech Jargon Translator',
@@ -237,6 +279,7 @@ const tools = [
     path: '/tools/jargon-translator',
     color: 'text-cyan-500',
     badge: 'Reference',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Quick Reference Cards',
@@ -245,6 +288,7 @@ const tools = [
     path: '/tools/quick-reference',
     color: 'text-emerald-500',
     badge: 'Printable',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Tech Confidence Score',
@@ -253,6 +297,7 @@ const tools = [
     path: '/tools/confidence-score',
     color: 'text-violet-500',
     badge: 'Quiz',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Report a Scam',
@@ -261,6 +306,7 @@ const tools = [
     path: '/tools/scam-report',
     color: 'text-red-500',
     badge: 'Safety',
+    category: 'Security' as ToolCategory,
   },
   {
     title: 'Printable Guide Packs',
@@ -269,6 +315,7 @@ const tools = [
     path: '/tools/guide-packs',
     color: 'text-amber-500',
     badge: 'Printable',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'AI Tutor',
@@ -277,6 +324,7 @@ const tools = [
     path: '/ai-tutor',
     color: 'text-cyan-500',
     badge: 'AI',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Progress Report',
@@ -285,6 +333,7 @@ const tools = [
     path: '/progress-report',
     color: 'text-blue-500',
     badge: 'Learning',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Family Tech Sharing',
@@ -293,6 +342,7 @@ const tools = [
     path: '/family-sharing',
     color: 'text-indigo-500',
     badge: 'Family',
+    category: 'Communication' as ToolCategory,
   },
   {
     title: 'Caregiver Dashboard',
@@ -301,6 +351,7 @@ const tools = [
     path: '/caregiver',
     color: 'text-pink-500',
     badge: 'Caregivers',
+    category: 'Communication' as ToolCategory,
   },
   {
     title: 'Tech Gift Guide',
@@ -309,6 +360,7 @@ const tools = [
     path: '/gift-guide',
     color: 'text-rose-500',
     badge: 'Gifts',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Dealing with Tech Anxiety',
@@ -317,6 +369,7 @@ const tools = [
     path: '/tech-anxiety',
     color: 'text-teal-500',
     badge: 'Wellbeing',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Find Local Help',
@@ -325,6 +378,7 @@ const tools = [
     path: '/local-help',
     color: 'text-green-600',
     badge: 'Community',
+    category: 'Communication' as ToolCategory,
   },
   {
     title: 'Digital Skills Certificate',
@@ -333,6 +387,7 @@ const tools = [
     path: '/certificate',
     color: 'text-amber-600',
     badge: 'Achievement',
+    category: 'Learning' as ToolCategory,
   },
   {
     title: 'Gift a Subscription',
@@ -341,33 +396,29 @@ const tools = [
     path: '/gift',
     color: 'text-pink-600',
     badge: 'Gift',
+    category: 'Communication' as ToolCategory,
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 8 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease: 'easeOut',
-    },
-  },
-};
+const categories: ToolCategory[] = ['All', 'Security', 'Device Health', 'Learning', 'Communication', 'Setup & Troubleshooting'];
 
 export default function Tools() {
+  const [search, setSearch] = useState('');
+  const [activeTab, setActiveTab] = useState<ToolCategory>('All');
+
+  const filtered = useMemo(() => {
+    let results = tools;
+    if (activeTab !== 'All') results = results.filter(t => t.category === activeTab);
+    if (search.trim()) {
+      const q = search.toLowerCase();
+      results = results.filter(t =>
+        t.title.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q)
+      );
+    }
+    return results;
+  }, [search, activeTab]);
+
   return (
     <>
       <SEOHead
@@ -383,53 +434,96 @@ export default function Tools() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="border-b border-border pb-8 mb-12"
+            className="border-b border-border pb-8 mb-8"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
               Tools &amp; Utilities
             </h1>
-            <p className="text-muted-foreground text-sm max-w-2xl">
+            <p className="text-muted-foreground text-base max-w-2xl mb-8">
               Over 30 free interactive tools to help you check your passwords, test your WiFi, quiz your device health,
               compare gadgets, and more. All private, all free.
             </p>
+
+            {/* Search bar */}
+            <div className="relative max-w-md">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input
+                placeholder="Search tools..."
+                className="pl-10 h-11 bg-muted/50 border-border rounded-xl text-sm"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+              />
+            </div>
           </motion.div>
 
-          {/* Tools Grid */}
-          <motion.div
-            className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {tools.map((tool, i) => {
-              const content = (
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ y: -2 }}
-                  className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all"
-                >
-                  <div className="flex items-start justify-between mb-3">
-                    <div className={`h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center`}>
-                      <tool.icon className={`h-5 w-5 ${tool.color}`} />
-                    </div>
-                    <Badge variant="secondary" className="text-xs font-normal">
-                      {tool.badge}
-                    </Badge>
-                  </div>
-                  <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
-                  <p className="text-muted-foreground text-sm">{tool.description}</p>
-                </motion.div>
-              );
+          {/* Category tabs + result count */}
+          <Tabs value={activeTab} onValueChange={v => setActiveTab(v as ToolCategory)}>
+            <div className="flex items-center gap-4 mb-6 overflow-x-auto pb-2 no-scrollbar">
+              <TabsList className="h-auto gap-1 bg-transparent p-0 flex-wrap">
+                {categories.map(cat => {
+                  const count = cat === 'All' ? tools.length : tools.filter(t => t.category === cat).length;
+                  return (
+                    <TabsTrigger
+                      key={cat}
+                      value={cat}
+                      className="text-xs rounded-full px-3 py-1.5 data-[state=active]:bg-foreground data-[state=active]:text-background"
+                    >
+                      {cat} ({count})
+                    </TabsTrigger>
+                  );
+                })}
+              </TabsList>
+            </div>
 
-              if (!tool.path) return <div key={i}>{content}</div>;
+            <p className="text-sm text-muted-foreground mb-6">
+              Showing {filtered.length} tool{filtered.length !== 1 ? 's' : ''}
+            </p>
 
-              return (
-                <Link key={tool.path} to={tool.path} className="group">
-                  {content}
-                </Link>
-              );
-            })}
-          </motion.div>
+            <TabsContent value={activeTab} className="mt-0">
+              {filtered.length === 0 ? (
+                <div className="text-center py-20">
+                  <p className="text-3xl mb-3">🔍</p>
+                  <p className="font-medium mb-1">No tools found</p>
+                  <p className="text-sm text-muted-foreground">
+                    Try a different search term or choose another category.
+                  </p>
+                </div>
+              ) : (
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {filtered.map((tool, i) => {
+                    const card = (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: i * 0.05 + 0.1, ease: 'easeOut' }}
+                        whileHover={{ y: -2 }}
+                        className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <div className={`h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center`}>
+                            <tool.icon className={`h-5 w-5 ${tool.color}`} />
+                          </div>
+                          <Badge variant="secondary" className="text-xs font-normal">
+                            {tool.badge}
+                          </Badge>
+                        </div>
+                        <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
+                        <p className="text-muted-foreground text-sm">{tool.description}</p>
+                      </motion.div>
+                    );
+
+                    if (!tool.path) return <div key={i}>{card}</div>;
+
+                    return (
+                      <Link key={tool.path} to={tool.path} className="group">
+                        {card}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </TabsContent>
+          </Tabs>
         </div>
       </main>
       <Footer />

@@ -151,7 +151,7 @@ export default function Tips() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             className="mb-20"
           >            <Card className="rounded-2xl border border-border bg-card">
               <CardHeader className="pb-4">
@@ -182,7 +182,7 @@ export default function Tips() {
                 <motion.div
                   key={tip.title}
                   initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}                  viewport={{ once: true, amount: 0.2 }}
                   transition={{ delay: idx * 0.05 }}
                 >
                   <Card className="h-full rounded-2xl border border-border bg-card hover:border-border/60 transition-all group">

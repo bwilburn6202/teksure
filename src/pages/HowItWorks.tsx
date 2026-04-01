@@ -38,7 +38,7 @@ const HowItWorks = () => (
               key={step.title}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: (i % 2) * 0.1 }}
             >
               <Card className="h-full rounded-2xl border border-border bg-card">

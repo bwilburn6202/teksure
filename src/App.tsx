@@ -14,6 +14,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
 import { FloatingChat } from "@/components/FloatingChat";
+import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -102,6 +103,9 @@ const TwoFactorSetup         = lazy(() => import("./pages/tools/TwoFactorSetup")
 const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
 const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
+const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
+const Onboarding             = lazy(() => import("./pages/Onboarding"));
+const Explore                = lazy(() => import("./pages/Explore"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -132,7 +136,7 @@ function OfflineBanner() {
   }, []);
   if (!offline) return null;
   return (
-    <div className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-500 text-white text-sm font-medium py-2 px-4 shadow-lg">
+    <div className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-700 text-white text-sm font-medium py-2 px-4 shadow-lg">
       <WifiOff className="h-4 w-4 shrink-0" />
       <span>You're offline — previously visited guides are still available.</span>
     </div>
@@ -144,12 +148,15 @@ const AppContent = () => {
 
   return (
     <BrowserRouter>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-sm focus:font-medium">
+        Skip to main content
+      </a>
       <OfflineBanner />
-      {/* Replace G-XXXXXXXXXX with your real GA4 Measurement ID */}
-      <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
+      <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
       <FloatingChat />
+      <ScamPanicButton />
       <Toaster />
       <Sonner />
       <Suspense fallback={<PageLoader />}>
@@ -208,6 +215,7 @@ const AppContent = () => {
           <Route path="/tools/vpn-guide" element={<VpnGuide />} />
           <Route path="/tools/app-permissions" element={<AppPermissions />} />
           <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
+          <Route path="/tools/password-manager" element={<PasswordManager />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
           <Route path="/technicians/:id" element={<TechnicianProfile />} />
@@ -238,6 +246,8 @@ const AppContent = () => {
           <Route path="/caregiver" element={<Caregiver />} />
           <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
           <Route path="/cybersec" element={<CyberSec />} />
+          <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

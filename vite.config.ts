@@ -57,5 +57,26 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    dedupe: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'framer-motion',
+    ],
+  },
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'framer-motion',
+      'lucide-react',
+      '@tanstack/react-query',
+      'react-helmet-async',
+      'sonner',
+      'date-fns',
+      'recharts',
+      '@supabase/supabase-js',
+    ],
   },
 }));

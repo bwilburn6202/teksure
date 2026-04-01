@@ -166,7 +166,7 @@ export default function GuidePacks() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {packs.map((pack, i) => (
-              <motion.div key={pack.id} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true }}>
+              <motion.div key={pack.id} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true, amount: 0.2 }}>
                 <Card className="h-full flex flex-col">
                   <CardContent className="pt-5 pb-4 flex flex-col flex-1">
                     <div className={`rounded-xl bg-gradient-to-br ${pack.colour} w-12 h-12 flex items-center justify-center text-2xl mb-3`}>{pack.emoji}</div>

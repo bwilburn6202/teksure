@@ -4,9 +4,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { StatusBadge } from '@/components/StatusBadge';
 import {
   Shield, AlertTriangle, Users, Clock, CheckCircle, Wrench, AlertCircle,
   RefreshCw, Phone, Mail, Monitor, ChevronDown, ChevronUp, Search,
@@ -245,18 +243,430 @@ function BookingsTab() {
   );
 }
 
-const mockJobs = [
-  { id: '1', category: 'WiFi', customer: 'John D.', tech: 'Alex M.', status: 'in_progress', created: '2024-01-15' },
-  { id: '2', category: 'Printer', customer: 'Sarah K.', tech: 'Mike R.', status: 'completed', created: '2024-01-14' },
-  { id: '3', category: 'Virus Removal', customer: 'Tom B.', tech: null, status: 'disputed', created: '2024-01-13' },
-  { id: '4', category: 'Device Setup', customer: 'Lisa W.', tech: 'Alex M.', status: 'offered', created: '2024-01-12' },
-];
+interface Job {
+  id: string;
+  name: string;
+  email: string | null;
+  phone: string | null;
+  issue_type: string;
+  description: string | null;
+  preferred_date: string;
+  preferred_time: string | null;
+  status: string;
+  payment_status: string | null;
+  created_at: string;
+  tech_id: string | null;
+  tech_name?: string;
+}
 
-const mockTechs = [
-  { id: '1', name: 'Alex M.', verification_level: 'background', jobs: 24, rating: 4.8 },
-  { id: '2', name: 'Mike R.', verification_level: 'id', jobs: 12, rating: 4.5 },
-  { id: '3', name: 'Chris P.', verification_level: 'none', jobs: 0, rating: 0 },
-];
+const JOB_STATUS_OPTIONS = ['pending', 'confirmed', 'in_progress', 'completed', 'cancelled'] as const;
+type JobStatus = typeof JOB_STATUS_OPTIONS[number];
+
+const jobStatusConfig: Record<string, { label: string; color: string; dot: string }> = {
+  pending:     { label: 'Pending',     color: 'bg-amber-500/10 text-amber-600 border-amber-500/20',  dot: 'bg-amber-500' },
+  confirmed:   { label: 'Confirmed',   color: 'bg-blue-500/10 text-blue-600 border-blue-500/20',     dot: 'bg-blue-500' },
+  in_progress: { label: 'In Progress', color: 'bg-purple-500/10 text-purple-600 border-purple-500/20', dot: 'bg-purple-500' },
+  completed:   { label: 'Completed',   color: 'bg-green-500/10 text-green-600 border-green-500/20',  dot: 'bg-green-500' },
+  cancelled:   { label: 'Cancelled',   color: 'bg-muted/50 text-muted-foreground border-border',      dot: 'bg-muted-foreground' },
+};
+
+const paymentLabels: Record<string, { label: string; color: string }> = {
+  paid:      { label: 'Paid',      color: 'bg-green-500/10 text-green-600 border-green-500/20' },
+  pending:   { label: 'Pending',   color: 'bg-amber-500/10 text-amber-600 border-amber-500/20' },
+  refunded:  { label: 'Refunded',  color: 'bg-red-500/10 text-red-600 border-red-500/20' },
+  cancelled: { label: 'Cancelled', color: 'bg-muted/50 text-muted-foreground border-border' },
+};
+
+function JobsTab() {
+  const [jobs, setJobs] = useState<Job[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [updatingId, setUpdatingId] = useState<string | null>(null);
+
+  const fetchJobs = async () => {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('bookings' as any)
+      .select('*')
+      .not('tech_id', 'is', null)
+      .order('created_at', { ascending: false })
+      .limit(100);
+    if (error) {
+      toast.error('Failed to load jobs');
+      setLoading(false);
+      return;
+    }
+    const jobsData = (data || []) as unknown as Job[];
+
+    // Fetch tech names for assigned jobs
+    const techIds = [...new Set(jobsData.map(j => j.tech_id).filter(Boolean))];
+    if (techIds.length > 0) {
+      const { data: techProfiles } = await supabase
+        .from('profiles' as any)
+        .select('id, full_name')
+        .in('id', techIds);
+      const techMap = new Map((techProfiles || []).map((t: any) => [t.id, t.full_name]));
+      jobsData.forEach(j => { j.tech_name = techMap.get(j.tech_id!) || 'Unknown Tech'; });
+    }
+
+    setJobs(jobsData);
+    setLoading(false);
+  };
+
+  useEffect(() => { fetchJobs(); }, []);
+
+  const updateJobStatus = async (id: string, newStatus: string) => {
+    setUpdatingId(id);
+    const { error } = await supabase.from('bookings' as any).update({ status: newStatus }).eq('id', id);
+    if (error) {
+      toast.error('Failed to update job status');
+    } else {
+      setJobs(prev => prev.map(j => j.id === id ? { ...j, status: newStatus } : j));
+      toast.success(`Job status updated to ${newStatus}`);
+    }
+    setUpdatingId(null);
+  };
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="text-left rounded-xl border p-4">
+          <p className="text-xs text-muted-foreground mb-1">Total Jobs</p>
+          <p className="text-2xl font-bold">{jobs.length}</p>
+        </div>
+        <div className="text-left rounded-xl border p-4">
+          <p className="text-xs text-muted-foreground mb-1">In Progress</p>
+          <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'in_progress' || j.status === 'confirmed').length}</p>
+        </div>
+        <div className="text-left rounded-xl border p-4">
+          <p className="text-xs text-muted-foreground mb-1">Completed</p>
+          <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'completed').length}</p>
+        </div>
+        <div className="text-left rounded-xl border p-4">
+          <p className="text-xs text-muted-foreground mb-1">Disputed</p>
+          <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'disputed').length}</p>
+        </div>
+      </div>
+
+      <Card className="rounded-2xl border border-border bg-card overflow-hidden">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Customer</TableHead>
+              <TableHead>Issue</TableHead>
+              <TableHead>Tech</TableHead>
+              <TableHead>Status</TableHead>
+              <TableHead>Payment</TableHead>
+              <TableHead></TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {loading ? (
+              <TableRow><TableCell colSpan={6} className="text-center py-8 text-muted-foreground">Loading...</TableCell></TableRow>
+            ) : jobs.length === 0 ? (
+              <TableRow><TableCell colSpan={6} className="text-center py-8 text-muted-foreground">No assigned jobs yet. Jobs will appear here once a technician is assigned to a booking.</TableCell></TableRow>
+            ) : jobs.map(job => {
+              const cfg = jobStatusConfig[job.status] || jobStatusConfig.pending;
+              const pay = paymentLabels[job.payment_status || ''] || paymentLabels.pending;
+              const isExpanded = expandedId === job.id;
+              return (
+                <>
+                  <TableRow key={job.id} className="cursor-pointer hover:bg-muted/50" onClick={() => setExpandedId(isExpanded ? null : job.id)}>
+                    <TableCell className="font-medium">{job.name}</TableCell>
+                    <TableCell className="text-muted-foreground">{serviceLabels[job.issue_type] || job.issue_type}</TableCell>
+                    <TableCell>{job.tech_name || '—'}</TableCell>
+                    <TableCell>
+                      <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${cfg.color}`}>
+                        <span className={`h-1.5 w-1.5 rounded-full ${cfg.dot}`} />
+                        {cfg.label}
+                      </span>
+                    </TableCell>
+                    <TableCell>
+                      <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${pay.color}`}>
+                        {pay.label}
+                      </span>
+                    </TableCell>
+                    <TableCell>{isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}</TableCell>
+                  </TableRow>
+                  {isExpanded && (
+                    <TableRow key={`${job.id}-detail`} className="bg-muted/30">
+                      <TableCell colSpan={6} className="py-4">
+                        <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                          <div className="space-y-1.5">
+                            {job.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${job.email}`} className="hover:underline text-foreground">{job.email}</a></div>}
+                            {job.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${job.phone}`} className="hover:underline text-foreground">{job.phone}</a></div>}
+                            <p className="text-xs text-muted-foreground pt-1">
+                              Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                              {job.preferred_time && ` · ${job.preferred_time}`}
+                            </p>
+                            <p className="text-xs text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
+                          </div>
+                          {job.description && (
+                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{job.description}</p>
+                          )}
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
+                          <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
+                          {JOB_STATUS_OPTIONS.filter(s => s !== job.status).map(s => {
+                            const c = jobStatusConfig[s];
+                            return (
+                              <button
+                                key={s}
+                                disabled={updatingId === job.id}
+                                onClick={e => { e.stopPropagation(); updateJobStatus(job.id, s); }}
+                                className={`rounded-full border px-3 py-1 text-xs font-medium transition-all hover:shadow-sm disabled:opacity-50 ${c.color}`}
+                              >
+                                {updatingId === job.id ? '...' : c.label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  )}
+                </>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </Card>
+    </div>
+  );
+}
+
+interface Dispute {
+  id: string;
+  name: string;
+  email: string | null;
+  phone: string | null;
+  issue_type: string;
+  description: string | null;
+  preferred_date: string;
+  preferred_time: string | null;
+  status: string;
+  payment_status: string | null;
+  created_at: string;
+  tech_id: string | null;
+  tech_name?: string;
+}
+
+function DisputesTab() {
+  const [disputes, setDisputes] = useState<Dispute[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+
+  const fetchDisputes = async () => {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('bookings' as any)
+      .select('*')
+      .eq('status', 'disputed')
+      .order('created_at', { ascending: false })
+      .limit(100);
+    if (error) {
+      toast.error('Failed to load disputes');
+      setLoading(false);
+      return;
+    }
+    const disputeData = (data || []) as unknown as Dispute[];
+
+    const techIds = [...new Set(disputeData.map(d => d.tech_id).filter(Boolean))];
+    if (techIds.length > 0) {
+      const { data: techProfiles } = await supabase
+        .from('profiles' as any)
+        .select('id, full_name')
+        .in('id', techIds);
+      const techMap = new Map((techProfiles || []).map((t: any) => [t.id, t.full_name]));
+      disputeData.forEach(d => { d.tech_name = techMap.get(d.tech_id!) || 'Unknown Tech'; });
+    }
+
+    setDisputes(disputeData);
+    setLoading(false);
+  };
+
+  useEffect(() => { fetchDisputes(); }, []);
+
+  if (loading) {
+    return <div className="text-center py-12 text-muted-foreground">Loading...</div>;
+  }
+
+  if (disputes.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center py-16 text-center">
+        <CheckCircle className="h-12 w-12 text-green-500 mb-4" />
+        <h3 className="text-lg font-semibold mb-1">No disputes at this time</h3>
+        <p className="text-muted-foreground text-sm max-w-md">
+          When a booking is marked as disputed, it will appear here for review.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center gap-3 rounded-xl border border-amber-500/20 bg-amber-500/5 p-4">
+        <AlertTriangle className="h-5 w-5 text-amber-500 shrink-0" />
+        <p className="text-sm text-muted-foreground">
+          <span className="font-semibold text-foreground">{disputes.length} active dispute{disputes.length !== 1 ? 's' : ''}</span> requiring review.
+        </p>
+      </div>
+
+      <Card className="rounded-2xl border border-border bg-card overflow-hidden">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Customer</TableHead>
+              <TableHead>Issue</TableHead>
+              <TableHead>Tech</TableHead>
+              <TableHead>Date</TableHead>
+              <TableHead></TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {disputes.map(d => {
+              const isExpanded = expandedId === d.id;
+              return (
+                <>
+                  <TableRow key={d.id} className="cursor-pointer hover:bg-muted/50" onClick={() => setExpandedId(isExpanded ? null : d.id)}>
+                    <TableCell className="font-medium">{d.name}</TableCell>
+                    <TableCell className="text-muted-foreground">{serviceLabels[d.issue_type] || d.issue_type}</TableCell>
+                    <TableCell>{d.tech_name || '—'}</TableCell>
+                    <TableCell className="text-muted-foreground text-sm">{timeAgo(d.created_at)}</TableCell>
+                    <TableCell>{isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}</TableCell>
+                  </TableRow>
+                  {isExpanded && (
+                    <TableRow key={`${d.id}-detail`} className="bg-muted/30">
+                      <TableCell colSpan={5} className="py-4">
+                        <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                          <div className="space-y-1.5">
+                            {d.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${d.email}`} className="hover:underline text-foreground">{d.email}</a></div>}
+                            {d.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${d.phone}`} className="hover:underline text-foreground">{d.phone}</a></div>}
+                            <p className="text-xs text-muted-foreground pt-1">
+                              Booked for {new Date(d.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                              {d.preferred_time && ` at ${d.preferred_time}`}
+                            </p>
+                            <p className="text-xs text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
+                            {d.payment_status && (
+                              <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${(paymentLabels[d.payment_status] || paymentLabels.pending).color}`}>
+                                Payment: {(paymentLabels[d.payment_status] || paymentLabels.pending).label}
+                              </span>
+                            )}
+                          </div>
+                          {d.description && (
+                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{d.description}</p>
+                          )}
+                        </div>
+                      </TableCell>
+                    </TableRow>
+                  )}
+                </>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </Card>
+    </div>
+  );
+}
+
+interface TechProfile {
+  id: string;
+  full_name: string | null;
+  email: string | null;
+  created_at: string;
+}
+
+function TechVerificationTab() {
+  const [techs, setTechs] = useState<TechProfile[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchTechs = async () => {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('profiles' as any)
+      .select('id, full_name, email, created_at')
+      .eq('role', 'tech')
+      .order('created_at', { ascending: false });
+    if (error) {
+      toast.error('Failed to load technicians');
+    } else if (data) {
+      setTechs(data as unknown as TechProfile[]);
+    }
+    setLoading(false);
+  };
+
+  useEffect(() => { fetchTechs(); }, []);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <Card className="rounded-2xl border border-border bg-card">
+          <CardContent className="flex items-center gap-3 py-4">
+            <Users className="h-5 w-5 text-primary" />
+            <div>
+              <p className="text-xs text-muted-foreground">Total Techs</p>
+              <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="rounded-2xl border border-border bg-card">
+          <CardContent className="flex items-center gap-3 py-4">
+            <Shield className="h-5 w-5 text-primary" />
+            <div>
+              <p className="text-xs text-muted-foreground">Verified</p>
+              <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="rounded-2xl border border-border bg-card">
+          <CardContent className="flex items-center gap-3 py-4">
+            <CheckCircle className="h-5 w-5 text-green-500" />
+            <div>
+              <p className="text-xs text-muted-foreground">Active</p>
+              <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card className="rounded-2xl border border-border bg-card overflow-hidden">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Name</TableHead>
+              <TableHead>Email</TableHead>
+              <TableHead>Joined</TableHead>
+              <TableHead>Status</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {loading ? (
+              <TableRow><TableCell colSpan={4} className="text-center py-8 text-muted-foreground">Loading...</TableCell></TableRow>
+            ) : techs.length === 0 ? (
+              <TableRow><TableCell colSpan={4} className="text-center py-8 text-muted-foreground">No technicians registered yet. Techs will appear here once they sign up with a technician role.</TableCell></TableRow>
+            ) : techs.map(tech => (
+              <TableRow key={tech.id}>
+                <TableCell className="font-medium">{tech.full_name || '(No name)'}</TableCell>
+                <TableCell className="text-muted-foreground">
+                  {tech.email ? <a href={`mailto:${tech.email}`} className="hover:underline">{tech.email}</a> : '—'}
+                </TableCell>
+                <TableCell className="text-muted-foreground text-sm">
+                  {new Date(tech.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                </TableCell>
+                <TableCell>
+                  <Badge variant="secondary" className="bg-green-500/10 text-green-600 border-green-500/20">
+                    <CheckCircle className="h-3 w-3 mr-1" />
+                    Verified
+                  </Badge>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </Card>
+    </div>
+  );
+}
 
 function HelpRequestsTab() {
   const [requests, setRequests] = useState<HelpRequest[]>([]);
@@ -515,130 +925,15 @@ const AdminConsole = () => (
         </TabsContent>
 
         <TabsContent value="jobs">
-          <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
-            Job matching launches with the technician booking system. Requests will appear here once a tech is assigned.
-          </div>
-          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Category</TableHead>
-                  <TableHead>Customer</TableHead>
-                  <TableHead>Tech</TableHead>
-                  <TableHead>Status</TableHead>
-                  <TableHead>Created</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {mockJobs.map(job => (
-                  <TableRow key={job.id} className="opacity-60">
-                    <TableCell className="font-medium">{job.category}</TableCell>
-                    <TableCell>{job.customer}</TableCell>
-                    <TableCell>{job.tech || '—'}</TableCell>
-                    <TableCell><StatusBadge status={job.status} /></TableCell>
-                    <TableCell className="text-muted-foreground">{job.created}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </Card>
+          <JobsTab />
         </TabsContent>
 
         <TabsContent value="disputes">
-          <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
-            Dispute management will be available once the technician booking system is live.
-          </div>
-          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Category</TableHead>
-                  <TableHead>Customer</TableHead>
-                  <TableHead>Tech</TableHead>
-                  <TableHead>Created</TableHead>
-                  <TableHead>Action</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {mockJobs.filter(j => j.status === 'disputed').map(job => (
-                  <TableRow key={job.id} className="opacity-60">
-                    <TableCell className="font-medium">{job.category}</TableCell>
-                    <TableCell>{job.customer}</TableCell>
-                    <TableCell>{job.tech || '—'}</TableCell>
-                    <TableCell className="text-muted-foreground">{job.created}</TableCell>
-                    <TableCell><Button variant="outline" size="sm" disabled>Review</Button></TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </Card>
+          <DisputesTab />
         </TabsContent>
 
         <TabsContent value="techs">
-          <div className="rounded-lg border border-dashed p-6 text-center mb-6 text-muted-foreground text-sm">
-            Technician profiles and verification will be managed here once onboarding is live.
-          </div>
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <Card className="rounded-2xl border border-border bg-card">
-              <CardContent className="flex items-center gap-3 py-4">
-                <Users className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="text-xs text-muted-foreground">Total Techs</p>
-                  <p className="text-xl font-bold">{mockTechs.length}</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="rounded-2xl border border-border bg-card">
-              <CardContent className="flex items-center gap-3 py-4">
-                <Shield className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="text-xs text-muted-foreground">Verified</p>
-                  <p className="text-xl font-bold">{mockTechs.filter(t => t.verification_level !== 'none').length}</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="rounded-2xl border border-border bg-card">
-              <CardContent className="flex items-center gap-3 py-4">
-                <AlertTriangle className="h-5 w-5 text-destructive" />
-                <div>
-                  <p className="text-xs text-muted-foreground">Pending Verify</p>
-                  <p className="text-xl font-bold">{mockTechs.filter(t => t.verification_level === 'none').length}</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          <Card className="rounded-2xl border border-border bg-card overflow-hidden">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Name</TableHead>
-                  <TableHead>Verification</TableHead>
-                  <TableHead>Jobs</TableHead>
-                  <TableHead>Rating</TableHead>
-                  <TableHead>Action</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {mockTechs.map(tech => (
-                  <TableRow key={tech.id} className="opacity-60">
-                    <TableCell className="font-medium">{tech.name}</TableCell>
-                    <TableCell>
-                      <Badge variant={tech.verification_level === 'none' ? 'destructive' : 'secondary'} className="capitalize">
-                        {tech.verification_level}
-                      </Badge>
-                    </TableCell>
-                    <TableCell>{tech.jobs}</TableCell>
-                    <TableCell>{tech.rating > 0 ? tech.rating : '—'}</TableCell>
-                    <TableCell>
-                      {tech.verification_level === 'none' && (
-                        <Button variant="outline" size="sm" disabled>Verify</Button>
-                      )}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </Card>
+          <TechVerificationTab />
         </TabsContent>
       </Tabs>
     </div>

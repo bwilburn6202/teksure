@@ -21,12 +21,18 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
+import { supabase } from '@/integrations/supabase/client';
 
-const MOCK_JOBS = [
-  { id: '1', category: 'wifi', description: 'WiFi keeps dropping every evening', status: 'in_progress', job_type: 'remote', created_at: '2026-03-22' },
-  { id: '2', category: 'printer', description: 'Printer not connecting to new laptop', status: 'offered', job_type: 'in_person', created_at: '2026-03-20' },
-  { id: '3', category: 'pc_slow', description: 'Computer very slow since the update', status: 'completed', job_type: 'remote', created_at: '2026-03-15' },
-];
+interface Booking {
+  id: string;
+  issue_type: string;
+  description: string | null;
+  status: string;
+  payment_status: string | null;
+  preferred_date: string | null;
+  preferred_time: string | null;
+  created_at: string;
+}
 
 const CATEGORY_ICONS: Record<string, React.ElementType> = {
   wifi: Wifi, printer: Zap, pc_slow: BarChart2, virus: Shield,
@@ -66,8 +72,30 @@ const Dashboard = () => {
   const [description, setDescription] = useState('');
   const [address, setAddress] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [bookings, setBookings] = useState<Booking[]>([]);
+  const [loadingBookings, setLoadingBookings] = useState(true);
   const { user } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user?.id) {
+      setLoadingBookings(false);
+      return;
+    }
+    const fetchBookings = async () => {
+      setLoadingBookings(true);
+      const { data, error } = await supabase
+        .from('bookings')
+        .select('id, issue_type, description, status, payment_status, preferred_date, preferred_time, created_at')
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false });
+      if (!error && data) {
+        setBookings(data as Booking[]);
+      }
+      setLoadingBookings(false);
+    };
+    fetchBookings();
+  }, [user?.id]);
 
   const completed = getCompletedGuides();
   const completedCount = completed.size;
@@ -84,10 +112,25 @@ const Dashboard = () => {
     .map(slug => guides.find(g => g.slug === slug))
     .filter(Boolean) as typeof guides;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => { setOpen(false); setSubmitted(false); setDescription(''); setCategory(''); setJobType(''); }, 1500);
+    const issue = `[${CATEGORY_LABELS[category] ?? category}] ${jobType === 'in_person' ? '(In-person) ' : '(Remote) '}${description}${address ? ` | Address: ${address}` : ''}`;
+    const { error } = await supabase.from('help_requests').insert({
+      name: user?.fullName ?? user?.email ?? 'Customer',
+      email: user?.email ?? '',
+      issue,
+    });
+    if (!error) {
+      setSubmitted(true);
+      setTimeout(() => {
+        setOpen(false);
+        setSubmitted(false);
+        setDescription('');
+        setCategory('');
+        setJobType('');
+        setAddress('');
+      }, 1500);
+    }
   };
 
   return (
@@ -168,7 +211,7 @@ const Dashboard = () => {
           {[
             { label: 'Guides completed', value: completedCount, icon: BookOpen, color: 'text-blue-500', sub: `${next ? `${next - completedCount} until next badge` : 'All milestones reached!'}` },
             { label: 'Confidence score', value: confidenceScore > 0 ? `${confidenceScore}%` : '—', icon: Brain, color: 'text-violet-500', sub: confidenceScore > 0 ? (confidenceScore >= 70 ? 'Confident learner' : confidenceScore >= 40 ? 'Developing skills' : 'Just getting started') : 'Take the quiz' },
-            { label: 'Active requests', value: MOCK_JOBS.filter(j => j.status !== 'completed').length, icon: MessageSquare, color: 'text-amber-500', sub: 'Open support tickets' },
+            { label: 'Active requests', value: bookings.filter(j => j.status !== 'completed').length, icon: MessageSquare, color: 'text-amber-500', sub: 'Open support tickets' },
             { label: 'Learning streak', value: `${Math.floor(Math.random() * 5) + 1}d`, icon: TrendingUp, color: 'text-emerald-500', sub: 'days in a row' },
           ].map(({ label, value, icon: Icon, color, sub }, i) => (
             <motion.div key={label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }}>
@@ -263,7 +306,12 @@ const Dashboard = () => {
               </div>
             </CardHeader>
             <CardContent className="pt-4">
-              {MOCK_JOBS.length === 0 ? (
+              {loadingBookings ? (
+                <div className="text-center py-8">
+                  <Clock className="h-8 w-8 text-muted-foreground/30 mx-auto mb-2 animate-pulse" />
+                  <p className="text-sm text-muted-foreground">Loading your requests...</p>
+                </div>
+              ) : bookings.length === 0 ? (
                 <div className="text-center py-8">
                   <MessageSquare className="h-10 w-10 text-muted-foreground/30 mx-auto mb-3" />
                   <p className="text-sm text-muted-foreground mb-4">No support requests yet</p>
@@ -271,21 +319,21 @@ const Dashboard = () => {
                 </div>
               ) : (
                 <div className="space-y-2">
-                  {MOCK_JOBS.map(job => {
-                    const Icon = CATEGORY_ICONS[job.category] ?? MessageSquare;
+                  {bookings.map(booking => {
+                    const Icon = CATEGORY_ICONS[booking.issue_type] ?? MessageSquare;
                     return (
-                      <Link to={`/customer/jobs/${job.id}`} key={job.id} className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-primary/40 hover:shadow-sm transition-all group">
+                      <Link to={`/customer/jobs/${booking.id}`} key={booking.id} className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-primary/40 hover:shadow-sm transition-all group">
                         <div className="h-9 w-9 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                           <Icon className="h-4 w-4 text-muted-foreground" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium">{CATEGORY_LABELS[job.category] ?? job.category}</p>
-                          <p className="text-xs text-muted-foreground truncate">{job.description}</p>
+                          <p className="text-sm font-medium">{CATEGORY_LABELS[booking.issue_type] ?? booking.issue_type}</p>
+                          <p className="text-xs text-muted-foreground truncate">{booking.description ?? 'No description'}</p>
                         </div>
                         <div className="flex flex-col items-end gap-1 shrink-0">
-                          <StatusBadge status={job.status} />
+                          <StatusBadge status={booking.status} />
                           <span className="text-[10px] text-muted-foreground">
-                            {new Date(job.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                            {new Date(booking.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
                       </Link>

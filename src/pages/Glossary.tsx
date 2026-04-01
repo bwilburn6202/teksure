@@ -73,7 +73,7 @@ const glossaryTerms: GlossaryTerm[] = [
   { term: 'Two-Factor Authentication (2FA)', definition: 'A security method requiring two forms of ID to log in — your password plus a code from your phone or email.', analogy: 'Like needing both a key and a PIN to open a safe.' },
   { term: 'Update', definition: 'A newer version of software that fixes bugs, patches security holes, or adds new features. Always keep software updated!' },
   { term: 'Upload', definition: 'Transferring data from your device to the internet or another device. The opposite of download.' },
-  { term: 'URL', definition: 'Uniform Resource Locator — the web address you type into a browser (e.g., https://teksure.lovable.app).' },
+  { term: 'URL', definition: 'Uniform Resource Locator — the web address you type into a browser (e.g., https://teksure.com).' },
   { term: 'USB', definition: 'Universal Serial Bus — a standard connector for plugging in devices and accessories like mice, keyboards, and flash drives.' },
   { term: 'VPN', definition: 'Virtual Private Network — encrypts your internet connection and hides your IP address for privacy and security.', analogy: 'Like a private tunnel through the internet that no one can peek into.' },
   { term: 'Virus', definition: 'A type of malware that replicates and spreads to harm other devices. Modern antivirus software can detect and remove most viruses.' },
@@ -205,7 +205,7 @@ const Glossary = () => {
                       key={item.term}
                       initial={{ opacity: 0, y: 16 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
+                      viewport={{ once: true, amount: 0.2 }}
                       transition={{ delay: Math.min(i * 0.03, 0.15) }}
                     >
                       <div className="rounded-2xl border border-border bg-card p-5 hover:border-border/80 transition-colors">

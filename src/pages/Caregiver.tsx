@@ -51,7 +51,7 @@ export default function Caregiver() {
           <h2 className="text-xl font-bold text-primary mb-6">What you can do as a carer</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {features.map((f, i) => (
-              <motion.div key={f.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true }}>
+              <motion.div key={f.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true, amount: 0.2 }}>
                 <Card className={`rounded-2xl border border-border bg-card ${f.status === 'coming-soon' ? 'opacity-60' : ''}`}>
                   <CardContent className="pt-5 pb-4">
                     <div className="flex items-start justify-between mb-3">

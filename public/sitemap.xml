@@ -1399,13 +1399,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/streaming-setup</loc>
+    <loc>https://teksure.com/guides/streaming-setup-advanced</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/banking-apps</loc>
+    <loc>https://teksure.com/guides/banking-apps-security</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1459,13 +1459,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/file-management</loc>
+    <loc>https://teksure.com/guides/file-management-advanced</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/screen-recording</loc>
+    <loc>https://teksure.com/guides/screen-recording-tips</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2065,7 +2065,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/take-screenshot-windows</loc>
+    <loc>https://teksure.com/guides/screenshot-windows-quick</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2083,7 +2083,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://teksure.com/guides/take-screenshot-mac</loc>
+    <loc>https://teksure.com/guides/screenshot-mac-quick</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2108,6 +2108,12 @@
   </url>
   <url>
     <loc>https://teksure.com/guides/time-machine-backup-mac</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teksure.com/guides/two-factor-authentication</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

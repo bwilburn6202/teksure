@@ -57,9 +57,9 @@ function NewsletterSignup() {
       const { supabase } = await import('@/integrations/supabase/client');
       await (supabase as any).from('newsletter_signups').insert({ email: email.trim() });
       setStatus('success');
-    } catch {
-      console.log('Newsletter signup:', email.trim());
-      setStatus('success');
+    } catch (err) {
+      console.error('Newsletter signup failed:', err);
+      setStatus('error');
     }
   };
 
@@ -68,6 +68,15 @@ function NewsletterSignup() {
       <div className="flex flex-col items-center gap-2 py-2">
         <CheckCircle className="h-5 w-5 text-green-600" />
         <p className="text-sm font-medium">You're in! Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.</p>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="flex flex-col items-center gap-2 py-2">
+        <p className="text-sm text-destructive font-medium">Something went wrong. Please try again later.</p>
+        <button onClick={() => setStatus('idle')} className="text-sm text-primary hover:underline">Try again</button>
       </div>
     );
   }
@@ -119,10 +128,6 @@ const Index = () => {
     return picks.slice(0, 6);
   }, []);
 
-  const latestGuides = useMemo(() => {
-    return [...guides].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0, 4);
-  }, []);
-
   const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
 
   return (
@@ -142,7 +147,7 @@ const Index = () => {
       <Navbar />
 
       {/* ── Hero ────────────────────────────────────────── */}
-      <section className="relative overflow-hidden">
+      <section id="main-content" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
         <div className="container relative pt-20 pb-16 md:pt-32 md:pb-24">
           <motion.div
@@ -167,6 +172,7 @@ const Index = () => {
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   placeholder='Search for help... (e.g. "connect to Wi-Fi")'
+                  aria-label="Search for tech help"
                   className="pl-10 pr-20 h-12 bg-muted/50 border-border rounded-xl text-sm"
                   value={search}
                   onChange={e => setSearch(e.target.value)}
@@ -187,7 +193,7 @@ const Index = () => {
                 <button
                   key={topic.query}
                   onClick={() => navigate(`/guides?q=${encodeURIComponent(topic.query)}`)}
-                  className="px-3 py-1.5 rounded-full text-xs font-medium text-muted-foreground bg-muted hover:bg-accent hover:text-foreground transition-colors border border-transparent hover:border-border"
+                  className="px-4 py-2.5 rounded-full text-sm font-medium text-muted-foreground bg-muted hover:bg-accent hover:text-foreground transition-colors border border-transparent hover:border-border"
                 >
                   {topic.label}
                 </button>
@@ -217,13 +223,13 @@ const Index = () => {
             </div>
             <div className="hidden sm:block w-px h-8 bg-border" />
             <div className="text-center">
-              <p className="text-2xl font-bold text-foreground">12k+</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Members</p>
+              <p className="text-2xl font-bold text-foreground">100%</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free to browse</p>
             </div>
             <div className="hidden sm:block w-px h-8 bg-border" />
             <div className="text-center">
-              <p className="text-2xl font-bold text-foreground">4.9</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Avg rating</p>
+              <p className="text-2xl font-bold text-foreground">No jargon</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Plain English</p>
             </div>
             <div className="hidden sm:block w-px h-8 bg-border" />
             <div className="text-center">
@@ -243,7 +249,7 @@ const Index = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {quickFixes.map((fix, i) => (
-            <motion.div key={fix.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+            <motion.div key={fix.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
               <Link to={`/guides/${fix.slug}`} className="group block">
                 <div className="p-5 rounded-2xl border border-border bg-card hover:bg-accent/50 transition-all hover:shadow-sm">
                   <div className="flex items-start gap-3.5">
@@ -282,7 +288,7 @@ const Index = () => {
               const count = guides.filter(g => g.category === cat).length;
 
               return (
-                <motion.div key={cat} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+                <motion.div key={cat} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
                   <Link to={`/guides?category=${cat}`} className="group block">
                     <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all">
                       <div className="flex items-center justify-between mb-4">
@@ -323,13 +329,13 @@ const Index = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredGuides.map((guide, i) => (
-            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
               <Link to={`/guides/${guide.slug}`} className="group block h-full">
                 <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col">
                   <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
                   <div className="flex items-center gap-2 mb-3">
-                    <Badge variant="secondary" className="text-[10px] font-medium">{categoryLabels[guide.category]}</Badge>
-                    <span className="text-[10px] text-muted-foreground flex items-center gap-1">
+                    <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
+                    <span className="text-xs text-muted-foreground flex items-center gap-1">
                       <Clock className="h-3 w-3" /> {guide.readTime}
                     </span>
                   </div>
@@ -358,7 +364,7 @@ const Index = () => {
               { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.' },
               { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.' },
             ].map((s, i) => (
-              <motion.div key={s.step} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+              <motion.div key={s.step} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
                 <div className="text-center">
                   <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold mx-auto mb-5">
                     {s.step}
@@ -375,35 +381,6 @@ const Index = () => {
               <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* ── Latest Guides ───────────────────────────────── */}
-      <section className="container py-20">
-        <div className="flex items-end justify-between mb-12">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Latest Guides</h2>
-            <p className="text-muted-foreground">Fresh step-by-step articles.</p>
-          </div>
-          <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
-            <Link to="/guides">See all <ArrowRight className="h-4 w-4" /></Link>
-          </Button>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {latestGuides.map((guide, i) => (
-            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
-              <Link to={`/guides/${guide.slug}`} className="group block h-full">
-                <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
-                  <div className="text-2xl mb-3">{guide.thumbnailEmoji}</div>
-                  <Badge variant="secondary" className="text-[10px] font-medium mb-2">{categoryLabels[guide.category]}</Badge>
-                  <h4 className="font-semibold text-sm group-hover:text-primary transition-colors line-clamp-2 leading-snug">
-                    {guide.title}
-                  </h4>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
         </div>
       </section>
 
@@ -424,7 +401,7 @@ const Index = () => {
       {/* ── Final CTA ───────────────────────────────────── */}
       <section className="hero-gradient text-white">
         <div className="container py-20 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }}>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Tech trouble? We've got you.
             </h2>

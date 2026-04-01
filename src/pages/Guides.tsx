@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -36,11 +36,11 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
         {completed && <CheckCircle2 className="h-4 w-4 text-green-500" />}
       </div>
       <div className="flex items-center gap-2 mb-2.5 flex-wrap">
-        <Badge variant="secondary" className="text-[10px] font-medium">
+        <Badge variant="secondary" className="text-xs font-medium">
           {categoryLabels[guide.category]}
         </Badge>
         {guide.difficulty && (
-          <span className={`text-[10px] font-medium ${
+          <span className={`text-xs font-medium ${
             guide.difficulty === 'Beginner' ? 'text-green-600' :
             guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
           }`}>
@@ -48,7 +48,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
             {guide.difficulty}
           </span>
         )}
-        <span className="flex items-center gap-1 text-[10px] text-muted-foreground">
+        <span className="flex items-center gap-1 text-xs text-muted-foreground">
           <Clock className="h-2.5 w-2.5" /> {guide.readTime}
         </span>
       </div>
@@ -59,6 +59,30 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
       <div className="mt-2.5">
         <StarRating guideSlug={guide.slug} readOnly size="sm" />
       </div>
+    </div>
+  </Link>
+);
+
+const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
+  <Link to={`/guides/${guide.slug}`} className="group block">
+    <div className={`flex items-center gap-3 px-3 py-2.5 border-b border-border hover:bg-accent/50 transition-colors ${
+      completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
+    }`}>
+      <span className="text-lg shrink-0 w-8 text-center">{guide.thumbnailEmoji}</span>
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
+      </div>
+      <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
+        {categoryLabels[guide.category]}
+      </Badge>
+      <span className={`text-xs font-medium shrink-0 hidden md:inline ${
+        guide.difficulty === 'Beginner' ? 'text-green-600' :
+        guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
+      }`}>
+        {guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}
+      </span>
+      <span className="text-xs text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
+      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
     </div>
   </Link>
 );
@@ -75,6 +99,13 @@ const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
+  const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
+    try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
+  });
+  const toggleView = (mode: 'list' | 'grid') => {
+    setViewMode(mode);
+    try { localStorage.setItem('teksure-guides-view', mode); } catch {}
+  };
 
   useEffect(() => {
     // Check URL params for category
@@ -133,6 +164,7 @@ const Guides = () => {
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search guides..."
+                aria-label="Search guides"
                 className="pl-10 h-11 bg-muted/50 border-border rounded-xl text-sm"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
@@ -185,9 +217,29 @@ const Guides = () => {
           </div>
 
           <TabsContent value={activeTab} className="mt-0">
-            {activeTab !== 'all' && categoryDescriptions[activeTab as GuideCategory] && (
-              <p className="text-sm text-muted-foreground mb-6">{categoryDescriptions[activeTab as GuideCategory]}</p>
-            )}
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                {activeTab !== 'all' && categoryDescriptions[activeTab as GuideCategory] && (
+                  <p className="text-sm text-muted-foreground">{categoryDescriptions[activeTab as GuideCategory]}</p>
+                )}
+              </div>
+              <div className="flex items-center gap-1 border rounded-lg p-0.5">
+                <button
+                  onClick={() => toggleView('list')}
+                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
+                  aria-label="List view"
+                >
+                  <LayoutList className="h-4 w-4" />
+                </button>
+                <button
+                  onClick={() => toggleView('grid')}
+                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
+                  aria-label="Grid view"
+                >
+                  <LayoutGrid className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
 
             {filtered.length === 0 ? (
               <div className="text-center py-20">
@@ -195,10 +247,16 @@ const Guides = () => {
                 <p className="font-medium mb-1">No guides found</p>
                 <p className="text-sm text-muted-foreground">Try a different search term or category.</p>
               </div>
+            ) : viewMode === 'list' ? (
+              <div className="border rounded-xl overflow-hidden">
+                {filtered.map((guide) => (
+                  <GuideListItem key={guide.slug} guide={guide} completed={completedSlugs.has(guide.slug)} />
+                ))}
+              </div>
             ) : (
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filtered.map((guide, i) => (
-                  <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true }}>
+                  <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
                     <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
                   </motion.div>
                 ))}
