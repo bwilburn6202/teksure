@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2 } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -82,9 +81,7 @@ const GetHelp = () => {
         <SEOHead title="Get Help — TekSure" description="Submit a help request to TekSure." path="/get-help" />
         <Navbar />
         <main className="flex-1 flex items-center justify-center px-4 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="max-w-md w-full text-center space-y-6"
           >
             <div className="flex justify-center">
@@ -104,7 +101,7 @@ const GetHelp = () => {
             <Button onClick={() => window.location.href = '/guides'} className="gap-2 rounded-xl" size="lg">
               Browse Free Guides <ArrowRight className="h-4 w-4" />
             </Button>
-          </motion.div>
+          </div>
         </main>
         <Footer />
       </div>
@@ -120,21 +117,16 @@ const GetHelp = () => {
         <div className="max-w-2xl w-full mx-auto">
 
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="text-center mb-16 border-b border-border pb-12"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Get Tech Help</h1>
             <p className="text-muted-foreground text-lg">
               Tell us what's happening and we'll get someone real to help you.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.form
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+          <form
             onSubmit={handleSubmit}
             className="space-y-8"
           >
@@ -236,13 +228,11 @@ const GetHelp = () => {
             </div>
 
             {error && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+              <div
                 className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm"
               >
                 {error}
-              </motion.div>
+              </div>
             )}
 
             <Button
@@ -261,7 +251,7 @@ const GetHelp = () => {
             <p className="text-center text-xs text-muted-foreground">
               No spam. No sales pitch. Just real tech help.
             </p>
-          </motion.form>
+          </form>
         </div>
       </main>
 

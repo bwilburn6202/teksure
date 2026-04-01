@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Wifi, ExternalLink, Lightbulb, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -31,11 +30,11 @@ const WifiSpeed = () => {
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <Wifi className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">WiFi Speed Test</h1>
             <p className="text-lg opacity-80">Check your internet speed instantly — no app needed.</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -72,11 +71,8 @@ const WifiSpeed = () => {
         </h2>
         <div className="grid sm:grid-cols-2 gap-4 mb-12">
           {tips.map((tip, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
             >
               <Card className="h-full hover:shadow-md transition-shadow">
                 <CardContent className="pt-5">
@@ -85,7 +81,7 @@ const WifiSpeed = () => {
                   <p className="text-sm text-muted-foreground">{tip.desc}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 

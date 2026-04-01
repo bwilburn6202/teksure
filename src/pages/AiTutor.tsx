@@ -6,7 +6,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Bot, Send, User, RotateCcw, BookOpen, Lightbulb, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { getResponse } from '@/lib/tekbot';
 
 type Level = 'beginner' | 'intermediate' | 'confident';
@@ -73,12 +72,12 @@ export default function AiTutor() {
           <h2 className="text-lg font-semibold mb-4">First, what's your experience level?</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {(Object.entries(levelConfig) as [Level, typeof levelConfig.beginner][]).map(([key, cfg]) => (
-              <motion.button key={key} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setLevel(key)}
+              <button key={key} onClick={() => setLevel(key)}
                 className="rounded-2xl border border-border bg-card hover:border-primary/50 p-6 text-left transition-colors">
                 <div className="text-3xl mb-2">{cfg.emoji}</div>
                 <p className="font-bold text-base mb-1 text-primary">{cfg.label}</p>
                 <p className="text-xs text-muted-foreground">{cfg.desc}</p>
-              </motion.button>
+              </button>
             ))}
           </div>
         </main>
@@ -128,9 +127,9 @@ export default function AiTutor() {
 
         {/* Chat */}
         <div className="space-y-4 mb-4 min-h-[200px]">
-          <AnimatePresence initial={false}>
+          <>
             {messages.map((msg, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`flex gap-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+              <div key={i} className={`flex gap-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'ai' && (
                   <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center shrink-0 mt-0.5">
                     <Bot className="h-4 w-4 text-primary" />
@@ -144,9 +143,9 @@ export default function AiTutor() {
                     <User className="h-4 w-4" />
                   </div>
                 )}
-              </motion.div>
+              </div>
             ))}
-          </AnimatePresence>
+          </>
           {loading && (
             <div className="flex gap-3 justify-start">
               <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><Bot className="h-4 w-4 text-primary" /></div>

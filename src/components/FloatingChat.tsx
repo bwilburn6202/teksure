@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { MessageCircle, X, Send, Bot, User, ChevronRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -132,13 +131,9 @@ export function FloatingChat() {
   return (
     <>
       {/* Chat Panel */}
-      <AnimatePresence>
+      <>
         {open && (
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
+          <div
             className="fixed bottom-24 right-4 z-50 w-[340px] sm:w-[380px] rounded-2xl shadow-2xl border border-border bg-background flex flex-col overflow-hidden"
             style={{ maxHeight: '540px' }}
           >
@@ -267,34 +262,33 @@ export function FloatingChat() {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </>
 
       {/* Bubble Toggle Button */}
-      <motion.button
+      <button
         onClick={() => setOpen(o => !o)}
         className="fixed bottom-5 right-5 z-50 h-14 w-14 rounded-full shadow-xl flex items-center justify-center bg-secondary text-secondary-foreground hover:scale-110 transition-transform"
-        whileTap={{ scale: 0.92 }}
         aria-label={open ? 'Close chat' : 'Open TekBot chat'}
       >
-        <AnimatePresence mode="wait">
+        <>
           {open ? (
-            <motion.span key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.15 }}>
+            <span key="x">
               <X className="h-6 w-6" />
-            </motion.span>
+            </span>
           ) : (
-            <motion.span key="chat" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.15 }}>
+            <span key="chat">
               <MessageCircle className="h-6 w-6" />
-            </motion.span>
+            </span>
           )}
-        </AnimatePresence>
+        </>
         {unread > 0 && !open && (
           <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
             {unread}
           </span>
         )}
-      </motion.button>
+      </button>
 
       {/* Pulse ring to draw attention on first load */}
       {messages.length === 1 && !open && (

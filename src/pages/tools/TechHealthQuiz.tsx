@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -232,20 +231,20 @@ export default function TechHealthQuiz() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">Tech Health Quiz</h1>
               <p className="text-lg text-primary-foreground/80">
                 8 quick questions to reveal how healthy your digital habits are.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
         <div className="bg-muted/40 min-h-screen py-10">
           <div className="container mx-auto px-4 max-w-2xl">
-            <AnimatePresence mode="wait">
+            <>
               {!done ? (
-                <motion.div key={`q-${currentQ}`} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}>
+                <div key={`q-${currentQ}`}>
                   {/* Progress */}
                   <div className="flex items-center justify-between mb-2 text-sm text-muted-foreground">
                     <span>Question {currentQ + 1} of {questions.length}</span>
@@ -287,9 +286,9 @@ export default function TechHealthQuiz() {
                       </Button>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ) : (
-                <motion.div key="results" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
+                <div key="results">
                   {/* Score card */}
                   <Card className="mb-5">
                     <CardContent className="p-8 text-center">
@@ -333,9 +332,9 @@ export default function TechHealthQuiz() {
                       <Link to="/tools/cyber-scorecard">Run Cybersecurity Scorecard →</Link>
                     </Button>
                   </div>
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            </>
           </div>
         </div>
       </main>

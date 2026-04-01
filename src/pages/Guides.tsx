@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -87,13 +86,6 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
   </Link>
 );
 
-const fade = {
-  hidden: { opacity: 0, y: 12 },
-  visible: (i: number) => ({
-    opacity: 1, y: 0,
-    transition: { delay: Math.min(i * 0.04, 0.3), duration: 0.4 }
-  }),
-};
 
 const Guides = () => {
   const [search, setSearch] = useState('');
@@ -256,9 +248,9 @@ const Guides = () => {
             ) : (
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filtered.map((guide, i) => (
-                  <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
+                  <div key={guide.slug}>
                     <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}

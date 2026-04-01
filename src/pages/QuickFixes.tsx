@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Zap, ArrowRight, ChevronDown } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -249,9 +248,7 @@ const QuickFixes = () => {
       {/* Header */}
       <section className="border-b border-border">
         <div className="max-w-4xl mx-auto py-16 md:py-20 px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="text-center"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
@@ -269,7 +266,7 @@ const QuickFixes = () => {
                 onChange={e => setSearch(e.target.value)}
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -307,12 +304,8 @@ const QuickFixes = () => {
             {filtered.map((fix, i) => {
               const isOpen = openCards.has(fix.problem);
               return (
-                <motion.div
+                <div
                   key={fix.problem}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ delay: Math.min(i * 0.03, 0.15) }}
                 >
                   <button
                     onClick={() => toggleCard(fix.problem)}
@@ -329,13 +322,9 @@ const QuickFixes = () => {
                   </button>
 
                   {/* Expandable steps */}
-                  <AnimatePresence initial={false}>
+                  <>
                     {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.2, ease: 'easeInOut' }}
+                      <div
                         className="overflow-hidden"
                       >
                         <div className="px-5 pb-5 pt-3 border-t border-border rounded-b-2xl bg-card">
@@ -361,20 +350,17 @@ const QuickFixes = () => {
                             </div>
                           )}
                         </div>
-                      </motion.div>
+                      </div>
                     )}
-                  </AnimatePresence>
-                </motion.div>
+                  </>
+                </div>
               );
             })}
           </div>
         )}
 
         {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+        <div
           className="mt-20 max-w-3xl mx-auto"
         >
           <div className="rounded-2xl border border-border bg-card p-8 md:p-12 text-center">
@@ -386,7 +372,7 @@ const QuickFixes = () => {
               <Link to="/signup">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       <Footer />

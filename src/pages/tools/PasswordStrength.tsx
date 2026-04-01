@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Eye, EyeOff, Check, X, ShieldCheck } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -54,11 +53,11 @@ const PasswordStrength = () => {
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <ShieldCheck className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Password Strength Checker</h1>
             <p className="text-lg opacity-80">Test your password — nothing is stored or sent anywhere.</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -104,11 +103,8 @@ const PasswordStrength = () => {
                   <span className={`text-sm font-semibold ${strength.color}`}>{strength.label}</span>
                 </div>
                 <div className="h-3 rounded-full bg-muted overflow-hidden">
-                  <motion.div
+                  <div
                     className={`h-full rounded-full ${barColor}`}
-                    initial={{ width: 0 }}
-                    animate={{ width: `${strength.percent}%` }}
-                    transition={{ duration: 0.3 }}
                   />
                 </div>
               </div>

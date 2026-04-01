@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   HelpCircle, Calendar, Bot, BookOpen, Zap, Lightbulb, BookOpenCheck,
   Newspaper, Rss, Wrench, ShieldAlert, ShieldCheck, Lock,
@@ -149,14 +148,6 @@ const sections: Section[] = [
   },
 ];
 
-const fade = {
-  hidden: { opacity: 0, y: 16 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: Math.min(i * 0.06, 0.4), duration: 0.4 },
-  }),
-};
 
 /* ── Main component ──────────────────────── */
 export default function Explore() {
@@ -173,21 +164,16 @@ export default function Explore() {
       <section className="border-b">
         <div className="container py-12 md:py-16">
           <div className="max-w-2xl mx-auto text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+            <h1
               className="text-3xl md:text-4xl font-bold tracking-tight mb-3"
             >
               Explore TekSure
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+            </h1>
+            <p
               className="text-muted-foreground text-lg"
             >
               Everything we offer, all in one place. Click any link to jump straight there.
-            </motion.p>
+            </p>
           </div>
         </div>
       </section>
@@ -198,13 +184,8 @@ export default function Explore() {
           {sections.map((section, i) => {
             const SectionIcon = section.icon;
             return (
-              <motion.div
+              <div
                 key={section.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                variants={fade}
-                viewport={{ once: true, amount: 0.15 }}
               >
                 <Card className="rounded-2xl border border-border bg-card h-full">
                   <CardContent className="p-6">
@@ -235,16 +216,13 @@ export default function Explore() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="mt-14 text-center p-10 rounded-2xl bg-muted/50 border border-border"
         >
           <h2 className="text-xl font-bold mb-2">Not sure where to start?</h2>
@@ -257,7 +235,7 @@ export default function Explore() {
           >
             <Smile className="h-4 w-4" /> Take the Quiz
           </Link>
-        </motion.div>
+        </div>
       </section>
 
       <Footer />

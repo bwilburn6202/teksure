@@ -5,7 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Heart, Shield, BookOpen, Phone, Users, ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 const features = [
   { icon: BookOpen, title: 'Shared learning resources', desc: 'Share specific guides with the person you care for — they\'ll see them pinned at the top of their guides page.', status: 'live' },
@@ -51,7 +50,7 @@ export default function Caregiver() {
           <h2 className="text-xl font-bold text-primary mb-6">What you can do as a carer</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {features.map((f, i) => (
-              <motion.div key={f.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true, amount: 0.2 }}>
+              <div key={f.title}>
                 <Card className={`rounded-2xl border border-border bg-card ${f.status === 'coming-soon' ? 'opacity-60' : ''}`}>
                   <CardContent className="pt-5 pb-4">
                     <div className="flex items-start justify-between mb-3">
@@ -63,7 +62,7 @@ export default function Caregiver() {
                     <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 

@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Monitor, Laptop, Smartphone, Tablet, Printer, Wifi, Tv, ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -105,9 +104,7 @@ const DeviceHub = () => {
       {/* Header */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="max-w-2xl mx-auto text-center"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
@@ -116,7 +113,7 @@ const DeviceHub = () => {
             <p className="text-lg text-muted-foreground">
               Select your device to find the right guides instantly.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -126,11 +123,8 @@ const DeviceHub = () => {
           {devices.map((device, i) => {
             const isSelected = selectedDevice === device.id;
             return (
-              <motion.div
+              <div
                 key={device.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.05 }}
               >
                 <button
                   onClick={() => setSelectedDevice(isSelected ? null : device.id)}
@@ -148,7 +142,7 @@ const DeviceHub = () => {
                     </CardContent>
                   </Card>
                 </button>
-              </motion.div>
+              </div>
             );
           })}
         </div>
@@ -186,11 +180,8 @@ const DeviceHub = () => {
             ) : (
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredGuides.map((guide, i) => (
-                  <motion.div
+                  <div
                     key={guide.slug}
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.04 }}
                   >
                     <Link to={`/guides/${guide.slug}`}>
                       <Card className="h-full rounded-2xl border border-border bg-card hover:border-primary/30 transition-all hover:shadow-sm group">
@@ -212,7 +203,7 @@ const DeviceHub = () => {
                         </CardContent>
                       </Card>
                     </Link>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}

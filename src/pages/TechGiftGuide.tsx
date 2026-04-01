@@ -5,7 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Gift, Star } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 type Recipient = 'senior' | 'parent' | 'child' | 'anyone';
 type Budget = 'under25' | '25to75' | '75to150' | 'over150';
@@ -85,7 +84,7 @@ export default function TechGiftGuide() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((gift, i) => (
-              <motion.div key={gift.name} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
+              <div key={gift.name}>
                 <Card className="h-full flex flex-col rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                   <CardContent className="pt-5 pb-4 flex flex-col flex-1">
                     <div className="flex items-start justify-between mb-2">
@@ -104,7 +103,7 @@ export default function TechGiftGuide() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 

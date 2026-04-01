@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -18,15 +17,13 @@ const HowItWorks = () => (
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-20 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">How TekSure Works</h1>
             <p className="text-muted-foreground max-w-xl mx-auto">
               Getting tech support has never been easier. Four simple steps.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -34,12 +31,8 @@ const HowItWorks = () => (
       <section className="container py-20">
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {steps.map((step, i) => (
-            <motion.div
+            <div
               key={step.title}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: (i % 2) * 0.1 }}
             >
               <Card className="h-full rounded-2xl border border-border bg-card">
                 <CardContent className="pt-8 pb-8">
@@ -55,7 +48,7 @@ const HowItWorks = () => (
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

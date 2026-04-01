@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, ChevronRight, ExternalLink, RotateCcw, Search, Clock, Wrench, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -326,11 +325,11 @@ export default function WarrantyChecker() {
           Find out how long your device warranty lasts, how to check if it's still active, and where to get it repaired.
         </p>
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Step 0 — Brand */}
           {step === 0 && (
-            <motion.div key="brand" {...slide}>
+            <div key="brand" {...slide}>
               <h2 className="text-xl font-semibold mb-4">Who made your device?</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {brands.map(b => (
@@ -344,12 +343,12 @@ export default function WarrantyChecker() {
                   </button>
                 ))}
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 1 — Device type */}
           {step === 1 && (
-            <motion.div key="device" {...slide}>
+            <div key="device" {...slide}>
               <h2 className="text-xl font-semibold mb-4">What type of device is it?</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {deviceTypes.map(d => (
@@ -364,12 +363,12 @@ export default function WarrantyChecker() {
                 ))}
               </div>
               <Button variant="ghost" className="mt-4" onClick={() => setStep(0)}>← Back</Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 2 — Results */}
           {step === 2 && (
-            <motion.div key="results" {...slide}>
+            <div key="results" {...slide}>
               {noData ? (
                 <div className="text-center py-12">
                   <p className="text-5xl mb-4">🔍</p>
@@ -492,10 +491,10 @@ export default function WarrantyChecker() {
                   </Button>
                 </div>
               ) : null}
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

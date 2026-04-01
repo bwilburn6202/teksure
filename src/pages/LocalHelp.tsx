@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, ExternalLink, Phone, Search, Building2, GraduationCap, Users, Wrench } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const helpTypes = [
   {
@@ -80,7 +79,7 @@ export default function LocalHelp() {
           <h2 className="text-xl font-bold text-primary mb-6">Types of local help available</h2>
           <div className="grid sm:grid-cols-2 gap-5 mb-14">
             {helpTypes.map((type, i) => (
-              <motion.div key={type.label} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }} viewport={{ once: true, amount: 0.2 }}>
+              <div key={type.label}>
                 <Card className="h-full rounded-2xl border border-border bg-card">
                   <CardContent className="pt-5 pb-4">
                     <div className={`inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 mb-3 ${type.colour}`}>
@@ -97,7 +96,7 @@ export default function LocalHelp() {
                     </Button>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 

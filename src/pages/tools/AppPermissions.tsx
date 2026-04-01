@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -152,7 +151,7 @@ export default function AppPermissions() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <Eye className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">App Permission Auditor</h1>
@@ -160,7 +159,7 @@ export default function AppPermissions() {
               <p className="text-lg text-primary-foreground/80">
                 Find out which apps are watching you — and take back control in minutes.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -168,7 +167,7 @@ export default function AppPermissions() {
           <div className="container mx-auto px-4 max-w-3xl space-y-6">
 
             {/* Platform picker */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <p className="text-sm text-muted-foreground mb-3 font-medium">Select your device to see instructions tailored to you:</p>
               <div className="flex flex-wrap gap-2">
                 {platforms.map(p => (
@@ -190,7 +189,7 @@ export default function AppPermissions() {
                   <Info className="h-3 w-3" /> Select a device above to see step-by-step instructions for each permission.
                 </p>
               )}
-            </motion.div>
+            </div>
 
             {/* Permission cards */}
             <div className="space-y-3">
@@ -198,11 +197,8 @@ export default function AppPermissions() {
                 const Icon = perm.icon;
                 const isExpanded = expandedId === perm.name;
                 return (
-                  <motion.div
+                  <div
                     key={perm.name}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.05 }}
                   >
                     <Card
                       className="cursor-pointer hover:shadow-md transition-shadow"
@@ -225,12 +221,9 @@ export default function AppPermissions() {
                           <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
                         </div>
 
-                        <AnimatePresence>
+                        <>
                           {isExpanded && (
-                            <motion.div
-                              initial={{ opacity: 0, height: 0 }}
-                              animate={{ opacity: 1, height: 'auto' }}
-                              exit={{ opacity: 0, height: 0 }}
+                            <div
                               className="mt-4 pt-4 border-t border-border space-y-3"
                             >
                               <div className="flex items-start gap-2">
@@ -254,12 +247,12 @@ export default function AppPermissions() {
                                   <Info className="h-3 w-3" /> Select your device above to see step-by-step instructions.
                                 </p>
                               )}
-                            </motion.div>
+                            </div>
                           )}
-                        </AnimatePresence>
+                        </>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>

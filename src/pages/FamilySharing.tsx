@@ -7,7 +7,6 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Users, Mail, Copy, CheckCircle2, Heart, Shield, UserPlus, Trash2 } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 import { useAuth } from '@/contexts/AuthContext';
 import { Link } from 'react-router-dom';
@@ -143,7 +142,7 @@ export default function FamilySharing() {
               <h2 className="font-semibold mb-4 text-primary">Your family group</h2>
               <div className="space-y-3">
                 {members.map((m, i) => (
-                  <motion.div key={m.email} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-3 p-3 rounded-xl bg-muted">
+                  <div key={m.email} className="flex items-center gap-3 p-3 rounded-xl bg-muted">
                     <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center text-lg font-bold text-primary shrink-0">
                       {m.name[0].toUpperCase()}
                     </div>
@@ -157,7 +156,7 @@ export default function FamilySharing() {
                     <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground hover:text-destructive shrink-0 rounded-lg" onClick={() => remove(i)}>
                       <Trash2 className="h-4 w-4" />
                     </Button>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </CardContent>

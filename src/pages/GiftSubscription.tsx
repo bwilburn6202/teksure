@@ -5,7 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Gift, Check, Heart, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 const plans = [
   {
@@ -64,7 +63,7 @@ export default function GiftSubscription() {
         <div className="container max-w-5xl py-14">
           <div className="grid md:grid-cols-3 gap-6 mb-14">
             {plans.map((plan, i) => (
-              <motion.div key={plan.name} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true, amount: 0.2 }} className="flex">
+              <div key={plan.name} className="flex">
                 <Card className={`flex flex-col w-full rounded-2xl border border-border bg-card ${plan.highlight ? 'border-primary border-2' : ''}`}>
                   {plan.highlight && (
                     <div className="absolute -top-3.5 left-0 right-0 flex justify-center">
@@ -91,7 +90,7 @@ export default function GiftSubscription() {
                     </Button>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 

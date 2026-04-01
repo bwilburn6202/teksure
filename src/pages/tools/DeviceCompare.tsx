@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { ArrowLeftRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -123,11 +122,11 @@ export default function DeviceCompare() {
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <ArrowLeftRight className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Device Comparison</h1>
             <p className="text-lg opacity-80">Pick two devices and compare them side by side.</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -170,7 +169,7 @@ export default function DeviceCompare() {
 
         {/* Table */}
         {d1 && d2 ? (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <div>
             <Card>
               <CardContent className="p-0">
                 <Table>
@@ -193,7 +192,7 @@ export default function DeviceCompare() {
                 </Table>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         ) : (
           <Card>
             <CardContent className="py-16 text-center text-muted-foreground">

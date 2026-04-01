@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
   Monitor, Tablet, Laptop, RotateCcw, ChevronRight, CheckCircle2, ArrowRight,
@@ -255,11 +254,11 @@ export default function DeviceChooser() {
           </div>
         </div>
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Intro */}
           {step === 0 && (
-            <motion.div key="intro" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            <div key="intro">
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
                   <div className="flex justify-center gap-6 mb-6 text-5xl">
@@ -288,12 +287,12 @@ export default function DeviceChooser() {
               <Button size="lg" className="w-full h-14 text-base gap-2" onClick={() => setStep(1)}>
                 Start Quiz <ChevronRight className="h-5 w-5" />
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Question */}
           {step >= 1 && step <= questions.length && currentQuestion && (
-            <motion.div key={`q-${step}`} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key={`q-${step}`}>
               <div className="flex items-center justify-between mb-4 text-sm text-muted-foreground">
                 <span>Question {step} of {questions.length}</span>
                 <span>{progress}% complete</span>
@@ -328,12 +327,12 @@ export default function DeviceChooser() {
                   ← Back
                 </Button>
               )}
-            </motion.div>
+            </div>
           )}
 
           {/* Result */}
           {step > questions.length && result && (
-            <motion.div key="result" initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }}>
+            <div key="result">
 
               <div className="text-center mb-8">
                 <div className="text-6xl mb-3">{result.emoji}</div>
@@ -408,10 +407,10 @@ export default function DeviceChooser() {
               <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground w-full">
                 <RotateCcw className="h-4 w-4" /> Take the quiz again
               </Button>
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

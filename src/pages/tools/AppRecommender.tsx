@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Smartphone, CheckCircle2, RotateCcw, ChevronRight, Star, ExternalLink, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -187,11 +186,11 @@ export default function AppRecommender() {
           </div>
         )}
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Step 0 — What do you want to do? */}
           {step === 0 && (
-            <motion.div key="usage" {...slide}>
+            <div key="usage" {...slide}>
               <h2 className="text-xl font-semibold mb-4">What do you want to do with your device?</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {usageOptions.map(u => (
@@ -208,12 +207,12 @@ export default function AppRecommender() {
                   </button>
                 ))}
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 1 — Which device? */}
           {step === 1 && (
-            <motion.div key="device" {...slide}>
+            <div key="device" {...slide}>
               <h2 className="text-xl font-semibold mb-4">Which device do you mainly use?</h2>
               <div className="grid gap-3">
                 {deviceOptions.map(d => (
@@ -229,12 +228,12 @@ export default function AppRecommender() {
                 ))}
               </div>
               <Button variant="ghost" className="mt-4" onClick={() => setStep(0)}>← Back</Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 2 — Free or paid? */}
           {step === 2 && (
-            <motion.div key="budget" {...slide}>
+            <div key="budget" {...slide}>
               <h2 className="text-xl font-semibold mb-4">Are you happy to pay for apps?</h2>
               <div className="grid gap-3">
                 <button
@@ -259,12 +258,12 @@ export default function AppRecommender() {
                 </button>
               </div>
               <Button variant="ghost" className="mt-4" onClick={() => setStep(1)}>← Back</Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 3 — Results */}
           {step === 3 && (
-            <motion.div key="results" {...slide}>
+            <div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
                 <Sparkles className="h-7 w-7 text-primary" />
                 <h2 className="text-2xl font-bold">Your App Recommendations</h2>
@@ -334,10 +333,10 @@ export default function AppRecommender() {
               <Button variant="outline" onClick={reset} className="gap-2">
                 <RotateCcw className="h-4 w-4" /> Try another category
               </Button>
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

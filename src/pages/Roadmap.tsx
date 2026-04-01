@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { motion } from 'framer-motion';
 import { Search, Rocket, Clock, CheckCircle2, Compass } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -89,11 +88,8 @@ export default function Roadmap() {
   const renderCard = (item: typeof filtered[0], i: number) => {
     const cfg = statusConfig[item.status];
     return (
-      <motion.div
+      <div
         key={item.title}
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, delay: Math.min(i * 0.015, 0.4) }}
       >
         <Card className="rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-200 h-full">
           <CardContent className="p-6 flex flex-col h-full">
@@ -109,7 +105,7 @@ export default function Roadmap() {
             </Badge>
           </CardContent>
         </Card>
-      </motion.div>
+      </div>
     );
   };
 
@@ -125,12 +121,12 @@ export default function Roadmap() {
         {/* Header */}
         <section className="border-b border-border py-20">
           <div className="container mx-auto px-4 max-w-6xl">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <div>
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Roadmap</h1>
               <p className="text-muted-foreground text-lg">
                 See what we're building next to help you master technology
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 

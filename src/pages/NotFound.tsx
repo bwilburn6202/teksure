@@ -1,6 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -24,10 +23,7 @@ const NotFound = () => {
     <>
       <Navbar />
       <main className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-background">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
+        <div
           className="text-center max-w-lg mx-auto"
         >
           {/* Big emoji + code */}
@@ -74,7 +70,7 @@ const NotFound = () => {
               </Link>
             ))}
           </div>
-        </motion.div>
+        </div>
       </main>
       <Footer />
     </>

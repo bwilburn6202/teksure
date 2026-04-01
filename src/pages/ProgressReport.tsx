@@ -9,7 +9,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { TrendingUp, BookOpen, Trophy, Mail, CheckCircle2, Clock, Flame } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
 import { toast } from 'sonner';
@@ -80,7 +79,7 @@ export default function ProgressReport() {
             { icon: Trophy, label: 'Confidence score', value: confidenceScore ? `${confidenceScore}%` : '—', colour: 'text-green-600', bg: 'bg-green-50' },
             { icon: TrendingUp, label: 'Next milestone', value: `${total}/${nextGoal}`, colour: 'text-purple-600', bg: 'bg-purple-50' },
           ].map((stat, i) => (
-            <motion.div key={stat.label} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}>
+            <div key={stat.label}>
               <Card>
                 <CardContent className="pt-4 pb-3 text-center">
                   <div className={`w-10 h-10 rounded-full ${stat.bg} flex items-center justify-center mx-auto mb-2`}>
@@ -90,7 +89,7 @@ export default function ProgressReport() {
                   <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 

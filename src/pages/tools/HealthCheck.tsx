@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { HeartPulse, RotateCcw, CheckCircle2, AlertTriangle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -110,11 +109,11 @@ export default function HealthCheck() {
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center">
             <HeartPulse className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Tech Health Check</h1>
             <p className="text-lg opacity-80">Answer 5 quick questions to see how healthy your device is.</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -154,7 +153,7 @@ export default function HealthCheck() {
             </Button>
           </div>
         ) : (
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
+          <div className="space-y-6">
             {/* Overall */}
             <Card className="border-2">
               <CardContent className="pt-6 text-center">
@@ -188,7 +187,7 @@ export default function HealthCheck() {
             <Button onClick={handleRetake} variant="outline" size="lg" className="w-full gap-2">
               <RotateCcw className="h-4 w-4" /> Retake Quiz
             </Button>
-          </motion.div>
+          </div>
         )}
       </section>
 

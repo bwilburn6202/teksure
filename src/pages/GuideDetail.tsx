@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
@@ -366,7 +365,7 @@ const GuideDetail = () => {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+        <div>
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
@@ -443,13 +442,10 @@ const GuideDetail = () => {
           {guide.steps && (
             <div ref={stepsRef} className="space-y-10 mb-10">
               {guide.steps.map((step, i) => (
-                <motion.div
+                <div
                   key={i}
                   id={`step-${i + 1}`}
                   data-step={i}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.08 }}
                   className="scroll-mt-28"
                 >
                   <Card className="overflow-hidden border-l-4 border-l-primary">
@@ -501,7 +497,7 @@ const GuideDetail = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
           )}
@@ -625,7 +621,7 @@ const GuideDetail = () => {
               </div>
             </div>
           )}
-        </motion.div>
+        </div>
       </article>
 
       <Footer />

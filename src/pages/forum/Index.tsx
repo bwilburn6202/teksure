@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { motion } from 'framer-motion';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
 import { Navbar } from '@/components/layout/Navbar';
@@ -88,10 +87,7 @@ export default function ForumIndex() {
         {/* Header */}
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+            <div
             >
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Community Forum</h1>
               <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
@@ -106,16 +102,13 @@ export default function ForumIndex() {
                   <Link to="/login" className="text-primary hover:underline">Sign in</Link> to post — reading is always free.
                 </p>
               )}
-            </motion.div>
+            </div>
           </div>
         </section>
 
         <div className="container max-w-4xl mx-auto px-4 py-16">
           {/* Category Filter */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+          <div
             className="flex flex-wrap gap-2 mb-8"
           >
             {CATEGORIES.map((cat) => (
@@ -132,7 +125,7 @@ export default function ForumIndex() {
                 {cat.label}
               </button>
             ))}
-          </motion.div>
+          </div>
 
           {/* Thread List */}
           {isLoading ? (
@@ -151,18 +144,12 @@ export default function ForumIndex() {
               </CardContent>
             </Card>
           ) : (
-            <motion.div
+            <div
               className="space-y-3"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
             >
               {threads.map((thread, i) => (
-                <motion.div
+                <div
                   key={thread.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.05 }}
                 >
                   <Link to={`/forum/${thread.id}`} className="block group">
                     <Card className="rounded-2xl border border-border bg-card hover:border-primary/30 transition-all hover:shadow-sm">
@@ -201,9 +188,9 @@ export default function ForumIndex() {
                       </CardContent>
                     </Card>
                   </Link>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
+            </div>
           )}
         </div>
       </main>

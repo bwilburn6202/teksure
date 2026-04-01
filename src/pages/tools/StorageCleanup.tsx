@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -323,7 +322,7 @@ export default function StorageCleanup() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <HardDrive className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">Storage Cleanup Wizard</h1>
@@ -331,15 +330,15 @@ export default function StorageCleanup() {
               <p className="text-lg text-primary-foreground/80">
                 Free up space on any device — step-by-step, no tech knowledge needed.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
         <div className="bg-muted/40 min-h-screen py-10">
           <div className="container mx-auto px-4 max-w-2xl">
-            <AnimatePresence mode="wait">
+            <>
               {!os ? (
-                <motion.div key="os-select" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
+                <div key="os-select">
                   <p className="text-center text-muted-foreground mb-6 text-lg">Which device do you want to clean up?</p>
                   <div className="grid grid-cols-2 gap-3">
                     {osOptions.map(opt => (
@@ -353,9 +352,9 @@ export default function StorageCleanup() {
                       </button>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               ) : (
-                <motion.div key={`tasks-${os}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                <div key={`tasks-${os}`}>
                   {/* Header */}
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -372,9 +371,7 @@ export default function StorageCleanup() {
 
                   {/* Savings banner */}
                   {completedCount > 0 && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -8 }}
-                      animate={{ opacity: 1, y: 0 }}
+                    <div
                       className="mb-4 p-3 rounded-lg bg-[hsl(var(--teksure-success)/0.1)] border border-[hsl(var(--teksure-success)/0.3)] flex items-center gap-3"
                     >
                       <CheckCircle2 className="h-5 w-5 text-[hsl(var(--teksure-success))] shrink-0" />
@@ -382,7 +379,7 @@ export default function StorageCleanup() {
                         {completedCount} task{completedCount !== 1 ? 's' : ''} done — estimated saving:{' '}
                         <span className="text-[hsl(var(--teksure-success))]">{formatSize(totalEstimatedMB)}</span>
                       </p>
-                    </motion.div>
+                    </div>
                   )}
 
                   {/* Tasks */}
@@ -392,11 +389,8 @@ export default function StorageCleanup() {
                       const isChecked = checked.has(task.id);
                       const isExpanded = expandedId === task.id;
                       return (
-                        <motion.div
+                        <div
                           key={task.id}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: i * 0.06 }}
                         >
                           <Card className={`border transition-all ${isChecked ? 'opacity-60 bg-muted/50' : 'bg-card'}`}>
                             <CardContent className="p-4">
@@ -428,32 +422,29 @@ export default function StorageCleanup() {
                                     <Info className="h-3 w-3" />
                                     {isExpanded ? 'Hide steps' : 'Show me how'}
                                   </button>
-                                  <AnimatePresence>
+                                  <>
                                     {isExpanded && (
-                                      <motion.ol
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: 'auto' }}
-                                        exit={{ opacity: 0, height: 0 }}
+                                      <ol
                                         className="mt-2 space-y-1.5 list-decimal list-inside"
                                       >
                                         {task.steps.map((step, si) => (
                                           <li key={si} className="text-xs text-foreground/80 leading-relaxed">{step}</li>
                                         ))}
-                                      </motion.ol>
+                                      </ol>
                                     )}
-                                  </AnimatePresence>
+                                  </>
                                 </div>
                               </div>
                             </CardContent>
                           </Card>
-                        </motion.div>
+                        </div>
                       );
                     })}
                   </div>
 
                   {/* All done */}
                   {completedCount === tasks.length && (
-                    <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-5">
+                    <div className="mt-5">
                       <Card className="border-[hsl(var(--teksure-success)/0.4)] bg-[hsl(var(--teksure-success)/0.06)]">
                         <CardContent className="p-6 text-center">
                           <CheckCircle2 className="h-10 w-10 text-[hsl(var(--teksure-success))] mx-auto mb-2" />
@@ -466,11 +457,11 @@ export default function StorageCleanup() {
                           </Button>
                         </CardContent>
                       </Card>
-                    </motion.div>
+                    </div>
                   )}
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            </>
           </div>
         </div>
       </main>

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -304,7 +303,7 @@ export default function BluetoothTroubleshooter() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <Bluetooth className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">Bluetooth Troubleshooter</h1>
@@ -312,16 +311,16 @@ export default function BluetoothTroubleshooter() {
               <p className="text-lg text-primary-foreground/80">
                 Answer a few quick questions and we'll walk you to a fix — step by step.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
         <div className="bg-muted/40 min-h-screen py-10">
           <div className="container mx-auto px-4 max-w-2xl">
-            <AnimatePresence mode="wait">
+            <>
               {/* Device selection */}
               {!deviceType && (
-                <motion.div key="device-select" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }}>
+                <div key="device-select">
                   <p className="text-center text-muted-foreground mb-6 text-lg">What are you trying to connect?</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {deviceOptions.map(opt => {
@@ -341,12 +340,12 @@ export default function BluetoothTroubleshooter() {
                       );
                     })}
                   </div>
-                </motion.div>
+                </div>
               )}
 
               {/* Outcome: solved */}
               {outcome === 'solved' && (
-                <motion.div key="solved" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}>
+                <div key="solved">
                   <Card className="border-[hsl(var(--teksure-success)/0.4)] bg-[hsl(var(--teksure-success)/0.06)]">
                     <CardContent className="p-8 text-center">
                       <CheckCircle2 className="h-14 w-14 text-[hsl(var(--teksure-success))] mx-auto mb-4" />
@@ -364,12 +363,12 @@ export default function BluetoothTroubleshooter() {
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               )}
 
               {/* Outcome: expert */}
               {outcome === 'expert' && (
-                <motion.div key="expert" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}>
+                <div key="expert">
                   <Card>
                     <CardContent className="p-8 text-center">
                       <Bluetooth className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -390,12 +389,12 @@ export default function BluetoothTroubleshooter() {
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               )}
 
               {/* Steps */}
               {deviceType && currentStep && !outcome && (
-                <motion.div key={currentStepId} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+                <div key={currentStepId}>
                   {/* Progress */}
                   <div className="flex items-center justify-between mb-4 text-sm text-muted-foreground">
                     <span>Step {stepIndex} of ~{totalSteps}</span>
@@ -439,9 +438,9 @@ export default function BluetoothTroubleshooter() {
                   <Button variant="ghost" size="sm" onClick={handleBack} className="text-muted-foreground">
                     ← {history.length === 0 ? 'Change device type' : 'Go back'}
                   </Button>
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            </>
           </div>
         </div>
       </main>

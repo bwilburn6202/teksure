@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -64,16 +63,14 @@ const Pricing = () => (
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-20 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Simple, Transparent Pricing</h1>
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
               No subscriptions. No hidden fees. Pay only for the help you need.
             </p>
             <p className="text-sm text-muted-foreground">Prices include travel within 10 miles · Extra miles at £0.45/mi</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -81,12 +78,8 @@ const Pricing = () => (
       <section className="container py-20">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {plans.map((plan, i) => (
-            <motion.div
+            <div
               key={plan.name}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: i * 0.1 }}
             >
               <Card className={`relative flex flex-col h-full rounded-2xl border ${plan.popular ? 'border-primary bg-primary/5' : 'border-border bg-card'}`}>
                 {plan.popular && (
@@ -115,14 +108,11 @@ const Pricing = () => (
                   </Button>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+        <div
           className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8"
         >
           <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
@@ -130,12 +120,9 @@ const Pricing = () => (
             Book with just a <strong className="text-foreground">£15 deposit</strong>. Pay the rest on the day of your appointment.
             If we can't fix it, you get a full refund — no questions asked.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+        <p
           className="text-center text-sm text-muted-foreground"
         >
           Not sure which plan you need?{' '}
@@ -143,15 +130,12 @@ const Pricing = () => (
             Book a free consultation
           </Link>{' '}
           and we'll recommend the right option.
-        </motion.p>
+        </p>
       </section>
 
       {/* Trust badges */}
       <section className="bg-muted/40 border-t border-border py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+        <div
           className="container max-w-3xl"
         >
           <div className="grid sm:grid-cols-3 gap-8">
@@ -165,7 +149,7 @@ const Pricing = () => (
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </section>
     </main>
     <Footer />

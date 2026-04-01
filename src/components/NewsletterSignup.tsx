@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, CheckCircle, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -30,19 +29,17 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
   if (variant === 'inline') {
     return (
       <div className={`flex flex-col sm:flex-row gap-2 ${className}`}>
-        <AnimatePresence mode="wait">
+        <>
           {submitted ? (
-            <motion.div
+            <div
               key="success"
-              initial={{ opacity: 0, y: 4 }}
-              animate={{ opacity: 1, y: 0 }}
               className="flex items-center gap-2 text-sm text-green-600 font-medium"
             >
               <CheckCircle className="h-4 w-4" />
               You're subscribed! Weekly tips incoming 🎉
-            </motion.div>
+            </div>
           ) : (
-            <motion.form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full">
+            <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full">
               <input
                 type="email"
                 value={email}
@@ -53,9 +50,9 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <Button type="submit" size="sm">
                 Subscribe <ArrowRight className="h-3.5 w-3.5 ml-1" />
               </Button>
-            </motion.form>
+            </form>
           )}
-        </AnimatePresence>
+        </>
         {error && <p className="text-xs text-destructive">{error}</p>}
       </div>
     );
@@ -68,13 +65,13 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
           <Mail className="h-4 w-4 text-secondary" />
           <span className="text-sm font-semibold">Weekly tech tips — free</span>
         </div>
-        <AnimatePresence mode="wait">
+        <>
           {submitted ? (
-            <motion.div key="ok" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex items-center gap-2 text-sm text-green-600">
+            <div key="ok" className="flex items-center gap-2 text-sm text-green-600">
               <CheckCircle className="h-4 w-4" /> Subscribed! Look out for your first tip.
-            </motion.div>
+            </div>
           ) : (
-            <motion.form key="f" onSubmit={handleSubmit} className="flex gap-2">
+            <form key="f" onSubmit={handleSubmit} className="flex gap-2">
               <input
                 type="email"
                 value={email}
@@ -83,9 +80,9 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-secondary/50"
               />
               <Button type="submit" size="sm" className="shrink-0">Go</Button>
-            </motion.form>
+            </form>
           )}
-        </AnimatePresence>
+        </>
         {error && <p className="text-xs text-destructive mt-1">{error}</p>}
         {!submitted && <p className="text-[11px] text-muted-foreground mt-2">No spam. Unsubscribe any time.</p>}
       </div>
@@ -104,17 +101,17 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
           <Mail className="h-6 w-6 text-secondary" />
         </div>
 
-        <AnimatePresence mode="wait">
+        <>
           {submitted ? (
-            <motion.div key="done" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="space-y-2">
+            <div key="done" className="space-y-2">
               <CheckCircle className="h-10 w-10 text-green-500 mx-auto" />
               <h3 className="text-xl font-bold">You're in! 🎉</h3>
               <p className="text-sm text-muted-foreground">
                 Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.
               </p>
-            </motion.div>
+            </div>
           ) : (
-            <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div key="form">
               <h3 className="text-xl font-bold mb-2">Get weekly tech tips</h3>
               <p className="text-sm text-muted-foreground mb-6">
                 One email a week with a practical tip, new guide, or scam alert. Plain English. No jargon. Unsubscribe any time.
@@ -136,9 +133,9 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 We respect your inbox. No spam, ever. Read our{' '}
                 <a href="/about" className="underline hover:text-foreground transition-colors">privacy policy</a>.
               </p>
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
+        </>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -290,10 +289,7 @@ const CATEGORIES = ['All', ...new Set(BLOG_POSTS.map(p => p.category))];
 
 function PostCard({ post, featured = false }: { post: BlogPost; featured?: boolean }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+    <div
     >
       <Card className={`rounded-2xl border border-border bg-card hover:border-border/60 transition-all ${featured ? 'col-span-full' : ''}`}>
         <CardContent className={`p-6 ${featured ? 'md:flex md:gap-8' : ''}`}>
@@ -323,7 +319,7 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
           </div>
         </CardContent>
       </Card>
-    </motion.div>
+    </div>
   );
 }
 

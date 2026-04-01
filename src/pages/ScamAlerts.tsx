@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -232,12 +231,8 @@ export default function ScamAlerts() {
         <div className="container max-w-4xl mx-auto px-4 py-20">
           <div className="grid gap-6 lg:grid-cols-2">
             {scams.map((scam, idx) => (
-              <motion.div
+              <div
                 key={scam.title}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ delay: idx * 0.05 }}
               >
                 <Card className="overflow-hidden rounded-2xl border border-border bg-card hover:border-border/60 transition-all h-full">
                   <CardHeader className="pb-4 border-b border-border/50">
@@ -277,14 +272,11 @@ export default function ScamAlerts() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+          <div
             className="mt-12"
           >
             <Card className="rounded-2xl border border-border bg-card">
@@ -298,7 +290,7 @@ export default function ScamAlerts() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </main>
       <Footer />

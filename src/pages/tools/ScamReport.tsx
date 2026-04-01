@@ -8,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { CheckCircle2, AlertTriangle, Shield } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 
@@ -63,7 +62,7 @@ export default function ScamReport() {
       <div className="min-h-screen bg-background flex flex-col">
         <Navbar />
         <main className="flex-1 container max-w-lg py-16 text-center">
-          <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
+          <div>
             <div className="text-6xl mb-4">🛡️</div>
             <h2 className="text-2xl font-bold mb-3">Report Received — Thank You</h2>
             <p className="text-muted-foreground mb-6">Your report helps protect other TekSure members. Our team reviews every submission and shares patterns with relevant authorities where appropriate.</p>
@@ -78,7 +77,7 @@ export default function ScamReport() {
             <Button asChild variant="outline">
               <a href="/safety/scam-alerts">View Scam Alerts</a>
             </Button>
-          </motion.div>
+          </div>
         </main>
         <Footer />
       </div>

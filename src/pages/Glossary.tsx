@@ -1,5 +1,4 @@
 import { useState, useMemo, useRef } from 'react';
-import { motion } from 'framer-motion';
 import { Search, BookOpen } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -127,9 +126,7 @@ const Glossary = () => {
       {/* Header */}
       <section className="border-b border-border">
         <div className="max-w-4xl mx-auto py-16 md:py-20 px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="text-center"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
@@ -147,7 +144,7 @@ const Glossary = () => {
                 onChange={e => setSearch(e.target.value)}
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -201,12 +198,8 @@ const Glossary = () => {
 
                 <div className="space-y-3">
                   {grouped[letter].map((item, i) => (
-                    <motion.div
+                    <div
                       key={item.term}
-                      initial={{ opacity: 0, y: 16 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, amount: 0.2 }}
-                      transition={{ delay: Math.min(i * 0.03, 0.15) }}
                     >
                       <div className="rounded-2xl border border-border bg-card p-5 hover:border-border/80 transition-colors">
                         <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
@@ -218,7 +211,7 @@ const Glossary = () => {
                           </p>
                         )}
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>

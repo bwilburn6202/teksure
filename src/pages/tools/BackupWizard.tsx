@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
   HardDrive, Cloud, Camera, FileText, Users, Package,
@@ -308,11 +307,11 @@ export default function BackupWizard() {
         )}
         {step > 0 && step < 4 && <Progress value={progress} className="h-1.5 mb-8" />}
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Intro */}
           {step === 0 && (
-            <motion.div key="intro" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            <div key="intro">
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
                   <div className="text-5xl mb-4">💾</div>
@@ -339,12 +338,12 @@ export default function BackupWizard() {
               <Button size="lg" className="w-full h-14 text-base gap-2" onClick={() => setStep(1)}>
                 Get My Backup Plan <ChevronRight className="h-5 w-5" />
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 1: What to back up */}
           {step === 1 && (
-            <motion.div key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key="step1">
               <Card className="mb-5">
                 <CardContent className="py-6 text-center">
                   <p className="text-xl font-semibold">What do you want to back up?</p>
@@ -382,12 +381,12 @@ export default function BackupWizard() {
               >
                 Next: Where to Back Up <ChevronRight className="h-5 w-5" />
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 2: Destination */}
           {step === 2 && (
-            <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key="step2">
               <Card className="mb-5">
                 <CardContent className="py-6 text-center">
                   <p className="text-xl font-semibold">Where do you want to back up?</p>
@@ -435,12 +434,12 @@ export default function BackupWizard() {
                   Next: Your Device <ChevronRight className="h-5 w-5" />
                 </Button>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 3: Device */}
           {step === 3 && (
-            <motion.div key="step3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key="step3">
               <Card className="mb-5">
                 <CardContent className="py-6 text-center">
                   <p className="text-xl font-semibold">What device are you backing up?</p>
@@ -477,12 +476,12 @@ export default function BackupWizard() {
                   Get My Plan <ChevronRight className="h-5 w-5" />
                 </Button>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 4: Results */}
           {step === 4 && plan && (
-            <motion.div key="result" initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }}>
+            <div key="result">
               <div className="text-center mb-8">
                 <div className="text-5xl mb-3">✅</div>
                 <h2 className="text-2xl font-bold mb-1">Your Personalised Backup Plan</h2>
@@ -553,10 +552,10 @@ export default function BackupWizard() {
               <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground w-full">
                 <RotateCcw className="h-4 w-4" /> Start over
               </Button>
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

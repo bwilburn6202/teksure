@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronRight, RotateCcw, CheckCircle, Wifi, Gauge, Printer,
   KeyRound, Smartphone, ShieldAlert, ArrowRight, ExternalLink, HelpCircle,
@@ -213,11 +212,11 @@ export default function Troubleshooter() {
           </div>
         </div>
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Category selection */}
           {!category && (
-            <motion.div key="categories" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            <div key="categories">
               <p className="text-base font-medium mb-5 text-muted-foreground">What type of problem are you having?</p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {Object.entries(trees).map(([key, t]) => {
@@ -242,12 +241,12 @@ export default function Troubleshooter() {
                 <ShieldAlert className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                 <span>This tool helps you fix problems yourself. For complex or urgent issues, <Link to="/get-help" className="text-primary hover:underline font-medium">get help from a real technician →</Link></span>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Question */}
           {category && currentNode?.type === 'question' && (
-            <motion.div key={`q-${currentId}`} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key={`q-${currentId}`}>
 
               <div className="flex items-center gap-3 mb-6">
                 {tree && (
@@ -291,12 +290,12 @@ export default function Troubleshooter() {
               <Button variant="ghost" size="sm" onClick={goBack} className="gap-2 text-muted-foreground">
                 ← {history.length === 0 ? 'Change category' : 'Go back'}
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Result */}
           {category && currentNode?.type === 'result' && (
-            <motion.div key={`r-${currentId}`} initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.97 }}>
+            <div key={`r-${currentId}`}>
               {(() => {
                 const result = currentNode as ResultNode;
                 const sev = severityConfig[result.severity];
@@ -355,10 +354,10 @@ export default function Troubleshooter() {
                   </>
                 );
               })()}
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

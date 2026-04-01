@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -176,7 +175,7 @@ export default function PasswordManager() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <Key className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">Password Manager Guide</h1>
@@ -184,7 +183,7 @@ export default function PasswordManager() {
               <p className="text-lg text-primary-foreground/80">
                 Stop reusing passwords. One app remembers them all — and makes you far safer online.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -192,7 +191,7 @@ export default function PasswordManager() {
           <div className="container mx-auto px-4 max-w-3xl space-y-8">
 
             {/* Why you need one */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
+            <div>
               <Card className="border-[hsl(var(--teksure-warning)/0.4)] bg-[hsl(var(--teksure-warning)/0.06)]">
                 <CardContent className="p-5 flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-[hsl(var(--teksure-warning))] shrink-0 mt-0.5" />
@@ -204,10 +203,10 @@ export default function PasswordManager() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Password tester */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+            <div>
               <Card>
                 <CardHeader><CardTitle className="text-base">Test a password's strength</CardTitle></CardHeader>
                 <CardContent className="space-y-3">
@@ -228,7 +227,7 @@ export default function PasswordManager() {
                     </button>
                   </div>
                   {testPassword && (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-1">
+                    <div className="space-y-1">
                       <div className="flex justify-between text-xs text-muted-foreground">
                         <span>Strength</span>
                         <span className="font-medium">{strength.label}</span>
@@ -239,17 +238,17 @@ export default function PasswordManager() {
                       {strength.score < 70 && (
                         <p className="text-xs text-muted-foreground">Tip: use 12+ characters, mix uppercase, numbers, and symbols like ! or #</p>
                       )}
-                    </motion.div>
+                    </div>
                   )}
                   <p className="text-xs text-muted-foreground flex items-center gap-1">
                     <Lock className="h-3 w-3" /> This check runs entirely in your browser — nothing is sent anywhere.
                   </p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Password generator */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.12 }}>
+            <div>
               <Card>
                 <CardHeader><CardTitle className="text-base">Generate a strong password</CardTitle></CardHeader>
                 <CardContent className="space-y-3">
@@ -267,10 +266,10 @@ export default function PasswordManager() {
                   <p className="text-xs text-muted-foreground">16 characters, mixed case, numbers and symbols. Generated locally — never stored.</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* How to set it up */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
+            <div>
               <Card>
                 <CardHeader><CardTitle>How to set up a password manager</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
@@ -287,10 +286,10 @@ export default function PasswordManager() {
                   ))}
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Manager comparison */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+            <div>
               <h2 className="text-xl font-bold mb-3">Which password manager should I use?</h2>
               <div className="space-y-3">
                 {managers.map((mgr, i) => {
@@ -319,9 +318,9 @@ export default function PasswordManager() {
                             {isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}
                           </div>
                         </div>
-                        <AnimatePresence>
+                        <>
                           {isExpanded && (
-                            <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="mt-3 pt-3 border-t border-border">
+                            <div className="mt-3 pt-3 border-t border-border">
                               <ul className="space-y-1.5 mb-3">
                                 {mgr.pros.map((p, pi) => (
                                   <li key={pi} className="flex items-start gap-2 text-sm">
@@ -333,18 +332,18 @@ export default function PasswordManager() {
                               <div className="flex flex-wrap gap-1">
                                 {mgr.platforms.map(pl => <Badge key={pl} variant="secondary" className="text-xs">{pl}</Badge>)}
                               </div>
-                            </motion.div>
+                            </div>
                           )}
-                        </AnimatePresence>
+                        </>
                       </CardContent>
                     </Card>
                   );
                 })}
               </div>
-            </motion.div>
+            </div>
 
             {/* FAQ */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}>
+            <div>
               <h2 className="text-xl font-bold mb-3">Common Questions</h2>
               <div className="space-y-2">
                 {faqs.map((faq, i) => (
@@ -355,15 +354,15 @@ export default function PasswordManager() {
                         {expandedFaq === i ? <ChevronUp className="h-4 w-4 text-muted-foreground shrink-0" /> : <ChevronDown className="h-4 w-4 text-muted-foreground shrink-0" />}
                       </div>
                       {expandedFaq === i && (
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                           {faq.a}
-                        </motion.p>
+                        </p>
                       )}
                     </CardContent>
                   </Card>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3 pb-4">
               <Button variant="outline" asChild className="flex-1"><Link to="/tools/two-factor-setup">Set Up 2FA Next →</Link></Button>

@@ -1,5 +1,4 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
-import { motion } from 'framer-motion';
 import { Map, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   Plus, BookOpen, BarChart2, Brain, Award, Map, ArrowRight,
   Wrench, Calendar, CheckCircle2, Clock, Star, Zap, ChevronRight,
@@ -139,7 +138,7 @@ const Dashboard = () => {
       <main className="container py-8 max-w-6xl">
 
         {/* Header */}
-        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <p className="text-sm text-muted-foreground mb-0.5">{getGreeting()},</p>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} 👋</h1>
@@ -204,7 +203,7 @@ const Dashboard = () => {
               )}
             </DialogContent>
           </Dialog>
-        </motion.div>
+        </div>
 
         {/* Stats row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -214,7 +213,7 @@ const Dashboard = () => {
             { label: 'Active requests', value: bookings.filter(j => j.status !== 'completed').length, icon: MessageSquare, color: 'text-amber-500', sub: 'Open support tickets' },
             { label: 'Learning streak', value: `${Math.floor(Math.random() * 5) + 1}d`, icon: TrendingUp, color: 'text-emerald-500', sub: 'days in a row' },
           ].map(({ label, value, icon: Icon, color, sub }, i) => (
-            <motion.div key={label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.07 }}>
+            <div key={label}>
               <Card className="rounded-2xl border border-border bg-card h-full">
                 <CardContent className="pt-4 pb-4">
                   <div className="flex items-start justify-between mb-2">
@@ -225,7 +224,7 @@ const Dashboard = () => {
                   <p className="text-[11px] text-muted-foreground mt-0.5">{sub}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
 

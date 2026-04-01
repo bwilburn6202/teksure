@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, ChevronRight, Clock,
@@ -98,13 +97,6 @@ function NewsletterSignup() {
   );
 }
 
-const fade = {
-  hidden: { opacity: 0, y: 16 },
-  visible: (i: number) => ({
-    opacity: 1, y: 0,
-    transition: { delay: i * 0.08, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }
-  }),
-};
 
 const Index = () => {
   const [search, setSearch] = useState('');
@@ -150,10 +142,7 @@ const Index = () => {
       <section id="main-content" className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
         <div className="container relative pt-20 pb-16 md:pt-32 md:pb-24">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+          <div
             className="max-w-2xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 leading-[1.08]">
@@ -209,7 +198,7 @@ const Index = () => {
                 <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -249,7 +238,7 @@ const Index = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {quickFixes.map((fix, i) => (
-            <motion.div key={fix.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
+            <div key={fix.slug}>
               <Link to={`/guides/${fix.slug}`} className="group block">
                 <div className="p-5 rounded-2xl border border-border bg-card hover:bg-accent/50 transition-all hover:shadow-sm">
                   <div className="flex items-start gap-3.5">
@@ -264,7 +253,7 @@ const Index = () => {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -288,7 +277,7 @@ const Index = () => {
               const count = guides.filter(g => g.category === cat).length;
 
               return (
-                <motion.div key={cat} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
+                <div key={cat}>
                   <Link to={`/guides?category=${cat}`} className="group block">
                     <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all">
                       <div className="flex items-center justify-between mb-4">
@@ -302,7 +291,7 @@ const Index = () => {
                       </h3>
                     </div>
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -329,7 +318,7 @@ const Index = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredGuides.map((guide, i) => (
-            <motion.div key={guide.slug} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
+            <div key={guide.slug}>
               <Link to={`/guides/${guide.slug}`} className="group block h-full">
                 <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col">
                   <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
@@ -345,7 +334,7 @@ const Index = () => {
                   <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -364,7 +353,7 @@ const Index = () => {
               { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.' },
               { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.' },
             ].map((s, i) => (
-              <motion.div key={s.step} custom={i} initial="hidden" whileInView="visible" variants={fade} viewport={{ once: true, amount: 0.2 }}>
+              <div key={s.step}>
                 <div className="text-center">
                   <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold mx-auto mb-5">
                     {s.step}
@@ -372,7 +361,7 @@ const Index = () => {
                   <h3 className="font-semibold text-base mb-2">{s.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -401,7 +390,7 @@ const Index = () => {
       {/* ── Final CTA ───────────────────────────────────── */}
       <section className="hero-gradient text-white">
         <div className="container py-20 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }}>
+          <div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Tech trouble? We've got you.
             </h2>
@@ -416,7 +405,7 @@ const Index = () => {
                 <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

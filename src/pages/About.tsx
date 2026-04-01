@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { BookOpen, Users, Headphones, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -36,9 +35,7 @@ const About = () => (
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="max-w-2xl mx-auto text-center"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Our Mission</h1>
@@ -47,30 +44,24 @@ const About = () => (
               beginners, and anyone who feels overwhelmed by tech to understand, troubleshoot, and
               master their devices with confidence.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* How We Help */}
       <section className="container py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">How We Help</h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
             Three pillars of support designed for real people with real tech problems.
           </p>
-        </motion.div>
+        </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {helpCards.map((card, i) => (
-            <motion.div
+            <div
               key={card.title}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
             >
               <Card className="h-full rounded-2xl border border-border bg-card">
                 <CardContent className="pt-8 pb-8 text-center">
@@ -81,17 +72,14 @@ const About = () => (
                   <p className="text-sm text-muted-foreground">{card.desc}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
 
       {/* Contact Us */}
       <section className="bg-muted/40 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="container max-w-2xl text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Contact Us</h2>
@@ -105,7 +93,7 @@ const About = () => (
             <Mail className="h-5 w-5" />
             hello@teksure.com
           </a>
-        </motion.div>
+        </div>
       </section>
     </main>
 

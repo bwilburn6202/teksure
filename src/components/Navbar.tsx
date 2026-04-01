@@ -1,5 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Wrench, ShieldCheck, Info } from 'lucide-react';
+import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -21,43 +21,28 @@ export function Navbar() {
     : '';
 
   const directLinks = [
-    { to: '/how-it-works', label: 'How It Works' },
+    { to: '/guides', label: 'Guides' },
+    { to: '/tools', label: 'Tools' },
   ];
 
   const navGroups = [
     {
-      label: 'Resources',
+      label: 'Learn',
       icon: BookOpen,
       links: [
-        { to: '/guides', label: 'Guides' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/tips', label: 'Tips' },
-        { to: '/favorites', label: 'Favorites' },
-      ],
-    },
-    {
-      label: 'Tools',
-      icon: Wrench,
-      links: [
-        { to: '/tools', label: 'Tools Dashboard' },
         { to: '/glossary', label: 'Glossary' },
+        { to: '/safety/scam-alerts', label: 'Safety & Scams' },
       ],
     },
     {
-      label: 'Safety',
-      icon: ShieldCheck,
-      links: [
-        { to: '/safety/scam-alerts', label: 'Safety' },
-        { to: '/device-hub', label: 'Devices' },
-      ],
-    },
-    {
-      label: 'About',
+      label: 'More',
       icon: Info,
       links: [
         { to: '/pricing', label: 'Pricing' },
+        { to: '/how-it-works', label: 'How It Works' },
         { to: '/about', label: 'About' },
-        { to: '/roadmap', label: 'Roadmap' },
       ],
     },
   ];

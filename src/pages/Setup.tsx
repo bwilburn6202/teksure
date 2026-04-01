@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
   Sparkles, Monitor, Smartphone, Tablet, Laptop,
   Baby, User, GraduationCap, BookOpen, Shield,
@@ -236,11 +235,11 @@ export default function Setup() {
           </div>
         )}
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Step 0 — Device */}
           {step === 0 && (
-            <motion.div key="device" {...slide}>
+            <div key="device" {...slide}>
               <h2 className="text-xl font-semibold mb-4 text-primary">What's your main device?</h2>
               <div className="grid gap-3">
                 {devices.map(d => {
@@ -262,12 +261,12 @@ export default function Setup() {
                   );
                 })}
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 1 — Confidence */}
           {step === 1 && (
-            <motion.div key="confidence" {...slide}>
+            <div key="confidence" {...slide}>
               <h2 className="text-xl font-semibold mb-4 text-primary">How comfortable are you with technology?</h2>
               <div className="grid gap-3">
                 {confidenceLevels.map(c => {
@@ -289,12 +288,12 @@ export default function Setup() {
                 })}
               </div>
               <Button variant="ghost" className="mt-4 rounded-xl" onClick={() => setStep(0)}>← Back</Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 2 — Goals */}
           {step === 2 && (
-            <motion.div key="goals" {...slide}>
+            <div key="goals" {...slide}>
               <h2 className="text-xl font-semibold mb-1 text-primary">What do you most want to learn?</h2>
               <p className="text-muted-foreground mb-4 text-sm">Pick as many as you like.</p>
               <div className="grid gap-3">
@@ -331,12 +330,12 @@ export default function Setup() {
                   Show My Learning Path <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 3 — Results */}
           {step === 3 && (
-            <motion.div key="results" {...slide}>
+            <div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
                 <CheckCircle2 className="h-8 w-8 text-green-500" />
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Your personalised starting point</h2>
@@ -386,10 +385,10 @@ export default function Setup() {
                   Explore Tools
                 </Button>
               </div>
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -239,12 +238,8 @@ export default function News() {
           {/* News Grid */}
           <div className="space-y-5">
             {visible.map((item, idx) => (
-              <motion.div
+              <div
                 key={item.id}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ delay: idx * 0.05 }}
               >
                 <Card className="rounded-2xl border border-border bg-card hover:border-border/60 transition-all">
                   <CardContent className="p-6">
@@ -278,7 +273,7 @@ export default function News() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 

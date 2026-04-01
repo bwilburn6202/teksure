@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
   Calendar, Clock, Wrench, CheckCircle2, ChevronRight, ArrowRight,
@@ -204,17 +203,12 @@ export default function Book() {
         <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+            <div
               className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center"
             >
               <CheckCircle2 className="h-10 w-10 text-green-600" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+            </div>
+            <div
             >
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Booking confirmed!</h1>
               <p className="text-muted-foreground text-lg mb-6">
@@ -226,21 +220,18 @@ export default function Book() {
                   A confirmation has been sent to <strong>{form.email}</strong>.
                 </p>
               )}
-            </motion.div>
+            </div>
             <Card className="rounded-2xl border border-border bg-card w-full">
               <CardContent className="p-6">
                 <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide font-semibold">Booking reference</p>
                 <p className="text-3xl font-mono font-bold tracking-widest">{bookingRef}</p>
               </CardContent>
             </Card>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+            <p
               className="text-sm text-muted-foreground"
             >
               One of our technicians will confirm your exact appointment time. They'll call or email you {form.phone ? 'at ' + form.phone : ''} before the appointment.
-            </motion.p>
+            </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <Button onClick={() => navigate('/my-requests')} className="rounded-xl">View My Bookings</Button>
               <Button variant="outline" onClick={() => navigate('/guides')} className="rounded-xl">Browse Free Guides</Button>
@@ -264,22 +255,17 @@ export default function Book() {
         <div className="container py-16 max-w-2xl mx-auto">
 
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="mb-10"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Book a Technician</h1>
             <p className="text-muted-foreground text-lg">
               Real help from a real person. Choose a time that works for you — we'll confirm the appointment.
             </p>
-          </motion.div>
+          </div>
 
           {/* Progress */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
+          <div
             className="mb-10"
           >
             <div className="flex justify-between text-sm text-muted-foreground mb-2">
@@ -287,22 +273,20 @@ export default function Book() {
               <span>{['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}</span>
             </div>
             <Progress value={progress} className="h-2" />
-          </motion.div>
+          </div>
 
-          <AnimatePresence mode="wait">
+          <>
 
             {/* ── Step 0: Service type ── */}
             {step === 0 && (
-              <motion.div key="service" {...slide}>
+              <div key="service" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-6">What do you need help with?</h2>
                 <div className="grid gap-3 sm:grid-cols-2 mb-8">
                   {services.map(s => {
                     const Icon = s.icon;
                     return (
-                      <motion.button
+                      <button
                         key={s.id}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
                         onClick={() => { setForm(f => ({ ...f, serviceType: s.id })); setStep(1); }}
                         className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card text-left transition-all hover:border-primary/30 hover:bg-card/80"
                       >
@@ -311,7 +295,7 @@ export default function Book() {
                           <div className="font-semibold">{s.label}</div>
                           <div className="text-sm text-muted-foreground mt-0.5">{s.desc}</div>
                         </div>
-                      </motion.button>
+                      </button>
                     );
                   })}
                 </div>
@@ -332,12 +316,12 @@ export default function Book() {
                     </Card>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* ── Step 1: Date + time slot ── */}
             {step === 1 && (
-              <motion.div key="datetime" {...slide}>
+              <div key="datetime" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">
                   When works for you?
                 </h2>
@@ -399,12 +383,12 @@ export default function Book() {
                     Continue <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* ── Step 2: Contact details ── */}
             {step === 2 && (
-              <motion.div key="details" {...slide}>
+              <div key="details" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">Your contact details</h2>
                 <p className="text-muted-foreground mb-8">
                   We'll use these to confirm your appointment. All details are kept private.
@@ -507,12 +491,12 @@ export default function Book() {
                     Continue to Payment <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* ── Step 3: Payment ── */}
             {step === 3 && (
-              <motion.div key="payment" {...slide}>
+              <div key="payment" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">Payment</h2>
                 <p className="text-muted-foreground mb-8">Choose how you'd like to pay for your technician visit.</p>
 
@@ -608,10 +592,10 @@ export default function Book() {
                       : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             )}
 
-          </AnimatePresence>
+          </>
         </div>
       </main>
       <Footer />

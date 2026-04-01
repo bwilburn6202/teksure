@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, XCircle, ChevronRight, RotateCcw, GraduationCap, ArrowRight, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -225,7 +224,7 @@ const lessons: Lesson[] = [
 /* ── Certificate component ───────────────────────── */
 
 const Certificate = ({ onReset }: { onReset: () => void }) => (
-  <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="text-center">
+  <div className="text-center">
     <div className="text-6xl mb-4">🎓</div>
     <Badge className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 text-sm px-4 py-1.5 mb-4">
       Course Complete!
@@ -260,7 +259,7 @@ const Certificate = ({ onReset }: { onReset: () => void }) => (
         <RotateCcw className="h-4 w-4" /> Retake Course
       </Button>
     </div>
-  </motion.div>
+  </div>
 );
 
 /* ── Main component ─────────────────────────────── */
@@ -349,11 +348,11 @@ export default function SafetyCourse() {
           </>
         )}
 
-        <AnimatePresence mode="wait">
+        <>
 
           {/* Course intro */}
           {!courseStarted && (
-            <motion.div key="intro" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
+            <div key="intro">
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
                   <div className="text-5xl mb-4">🔐</div>
@@ -380,7 +379,7 @@ export default function SafetyCourse() {
               <Button size="lg" className="w-full h-14 text-base gap-2" onClick={() => setCourseStarted(true)}>
                 Start Course <ChevronRight className="h-5 w-5" />
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Certificate */}
@@ -390,7 +389,7 @@ export default function SafetyCourse() {
 
           {/* Lesson content */}
           {courseStarted && !courseComplete && lessonPhase === 'content' && (
-            <motion.div key={`lesson-${currentLesson}-content`} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key={`lesson-${currentLesson}-content`}>
               <div className="flex items-center gap-3 mb-5">
                 <span className="text-3xl">{lesson.emoji}</span>
                 <div>
@@ -415,12 +414,12 @@ export default function SafetyCourse() {
               <Button size="lg" className="w-full h-12 gap-2" onClick={() => setLessonPhase('quiz')}>
                 Take the Quiz <ChevronRight className="h-5 w-5" />
               </Button>
-            </motion.div>
+            </div>
           )}
 
           {/* Quiz */}
           {courseStarted && !courseComplete && lessonPhase === 'quiz' && (
-            <motion.div key={`lesson-${currentLesson}-quiz-${currentQuizQ}`} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div key={`lesson-${currentLesson}-quiz-${currentQuizQ}`}>
               <div className="flex items-center gap-3 mb-2">
                 <Badge variant="outline" className="text-xs">Quiz — {lesson.emoji} {lesson.title}</Badge>
                 <span className="text-xs text-muted-foreground ml-auto">
@@ -469,7 +468,7 @@ export default function SafetyCourse() {
               </div>
 
               {selectedAnswer !== null && (
-                <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+                <div>
                   <div className={`rounded-xl p-4 mb-5 flex items-start gap-3 ${
                     answeredCorrectly
                       ? 'bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800/40'
@@ -487,12 +486,12 @@ export default function SafetyCourse() {
                         : 'Finish Course 🎓'}
                     <ChevronRight className="h-5 w-5" />
                   </Button>
-                </motion.div>
+                </div>
               )}
-            </motion.div>
+            </div>
           )}
 
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </>

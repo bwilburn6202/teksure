@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Search, Clock } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -85,11 +84,8 @@ const SearchResults = () => {
                 ) : (
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filtered.map((guide, i) => (
-                      <motion.div
+                      <div
                         key={guide.slug}
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: Math.min(i * 0.04, 0.3) }}
                       >
                         <Link to={`/guides/${guide.slug}`}>
                           <Card className="h-full rounded-2xl border border-border bg-card hover:shadow-lg transition-all hover:-translate-y-1 group">
@@ -108,7 +104,7 @@ const SearchResults = () => {
                             </CardContent>
                           </Card>
                         </Link>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 )}

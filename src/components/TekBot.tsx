@@ -24,7 +24,6 @@ import {
   Trash2, MessageSquare,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { motion, AnimatePresence } from 'framer-motion';
 import { guides, type Guide } from '@/data/guides';
 
 /* ── Types ─────────────────────────────────────────────────── */
@@ -585,12 +584,9 @@ export function TekBot() {
   return (
     <>
       {/* Floating button */}
-      <AnimatePresence>
+      <>
         {!open && (
-          <motion.button
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
+          <button
             onClick={() => setOpen(true)}
             className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
             style={{ backgroundColor: 'hsl(172 50% 40%)', minHeight: 48, fontSize: 16 }}
@@ -607,18 +603,14 @@ export function TekBot() {
                 {conversationCount}
               </span>
             )}
-          </motion.button>
+          </button>
         )}
-      </AnimatePresence>
+      </>
 
       {/* Chat panel */}
-      <AnimatePresence>
+      <>
         {open && (
-          <motion.div
-            initial={{ opacity: 0, y: 40, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 40, scale: 0.95 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 350 }}
+          <div
             className="fixed bottom-6 right-6 z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border"
             style={{
               width: pageRelatedGuides.length > 0 ? 620 : 390,
@@ -717,12 +709,9 @@ export function TekBot() {
                   </button>
 
                   {/* Device dropdown */}
-                  <AnimatePresence>
+                  <>
                     {showDevicePicker && (
-                      <motion.div
-                        initial={{ opacity: 0, y: -4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
+                      <div
                         className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-white shadow-xl"
                         style={{ minWidth: 160 }}
                       >
@@ -748,9 +737,9 @@ export function TekBot() {
                             </button>
                           </>
                         )}
-                      </motion.div>
+                      </div>
                     )}
-                  </AnimatePresence>
+                  </>
                 </div>
 
                 <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-8 w-8">
@@ -860,9 +849,9 @@ export function TekBot() {
             </div>
 
             </div>{/* end main chat column */}
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </>
     </>
   );
 }

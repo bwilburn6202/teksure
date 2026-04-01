@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { motion, AnimatePresence } from 'framer-motion';
 import { TrendingUp, RotateCcw, ArrowRight, CheckCircle2, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -88,9 +87,9 @@ export default function TechConfidenceScore() {
           <p className="text-muted-foreground">10 quick questions to measure your tech confidence — and show you what to tackle next.</p>
         </div>
 
-        <AnimatePresence mode="wait">
+        <>
           {!done ? (
-            <motion.div key={current} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}>
+            <div key={current}>
               <div className="flex items-center justify-between mb-3">
                 <span className="text-sm text-muted-foreground">Question {current + 1} of {total}</span>
                 <span className="text-sm font-medium">{Math.round(((current) / total) * 100)}%</span>
@@ -109,9 +108,9 @@ export default function TechConfidenceScore() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ) : (
-            <motion.div key="result" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
+            <div key="result">
               <Card className={`border-2 ${result.bg} mb-6`}>
                 <CardContent className="pt-8 pb-6 text-center">
                   <div className="text-6xl mb-4">{result.emoji}</div>
@@ -144,9 +143,9 @@ export default function TechConfidenceScore() {
                   <RotateCcw className="h-4 w-4" /> Retake Quiz
                 </Button>
               </div>
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
+        </>
       </main>
       <Footer />
     </div>

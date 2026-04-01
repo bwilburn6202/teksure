@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -107,7 +106,7 @@ export default function VpnGuide() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <Shield className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">VPN Setup Guide</h1>
@@ -115,7 +114,7 @@ export default function VpnGuide() {
               <p className="text-lg text-primary-foreground/80">
                 What it is, whether you need one, and how to set it up in under 10 minutes.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -123,7 +122,7 @@ export default function VpnGuide() {
           <div className="container mx-auto px-4 max-w-3xl space-y-8">
 
             {/* Quick verdict */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+            <div>
               <Card className="border-[hsl(var(--teksure-warning)/0.4)] bg-[hsl(var(--teksure-warning)/0.06)]">
                 <CardContent className="p-5 flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-[hsl(var(--teksure-warning))] shrink-0 mt-0.5" />
@@ -135,10 +134,10 @@ export default function VpnGuide() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* How to set it up */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
+            <div>
               <Card>
                 <CardHeader>
                   <CardTitle>How to set up a VPN — 5 simple steps</CardTitle>
@@ -163,10 +162,10 @@ export default function VpnGuide() {
                   })}
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Recommended VPNs */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+            <div>
               <h2 className="text-xl font-bold mb-3">Recommended VPNs</h2>
               <div className="space-y-3">
                 {vpnOptions.map((vpn, i) => (
@@ -198,10 +197,10 @@ export default function VpnGuide() {
               <p className="text-xs text-muted-foreground mt-2">
                 TekSure has no affiliate relationship with any VPN provider. These recommendations are based on independent privacy audits and community trust.
               </p>
-            </motion.div>
+            </div>
 
             {/* FAQ */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}>
+            <div>
               <h2 className="text-xl font-bold mb-3">Common Questions</h2>
               <div className="space-y-2">
                 {faqs.map((faq, i) => (
@@ -212,15 +211,15 @@ export default function VpnGuide() {
                         {openFaq === i ? <ChevronUp className="h-4 w-4 text-muted-foreground shrink-0" /> : <ChevronDown className="h-4 w-4 text-muted-foreground shrink-0" />}
                       </div>
                       {openFaq === i && (
-                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                           {faq.a}
-                        </motion.p>
+                        </p>
                       )}
                     </CardContent>
                   </Card>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* Next steps */}
             <div className="flex flex-col sm:flex-row gap-3 pb-4">

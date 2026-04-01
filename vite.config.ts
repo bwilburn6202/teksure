@@ -2,7 +2,6 @@ import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
-import { componentTagger } from "lovable-tagger";
 
 function sitemapPlugin(): Plugin {
   return {
@@ -52,7 +51,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), sitemapPlugin(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react(), sitemapPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

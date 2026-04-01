@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -146,7 +145,7 @@ export default function TwoFactorSetup() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <div className="flex items-center gap-3 mb-2">
                 <Shield className="h-7 w-7" />
                 <h1 className="text-3xl md:text-4xl font-bold">Two-Factor Authentication Setup</h1>
@@ -154,7 +153,7 @@ export default function TwoFactorSetup() {
               <p className="text-lg text-primary-foreground/80">
                 The single most powerful thing you can do to protect your accounts — takes 5 minutes per account.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -162,7 +161,7 @@ export default function TwoFactorSetup() {
           <div className="container mx-auto px-4 max-w-2xl space-y-6">
 
             {/* What is 2FA */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
+            <div>
               <Card>
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3">
@@ -178,18 +177,18 @@ export default function TwoFactorSetup() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Progress */}
             {completedServices.size > 0 && (
-              <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }}>
+              <div>
                 <div className="flex items-center gap-2 p-3 rounded-lg bg-[hsl(var(--teksure-success)/0.1)] border border-[hsl(var(--teksure-success)/0.3)]">
                   <CheckCircle2 className="h-4 w-4 text-[hsl(var(--teksure-success))]" />
                   <span className="text-sm font-medium text-[hsl(var(--teksure-success))]">
                     {completedServices.size} of {services.length} accounts secured 🎉
                   </span>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* Service list */}
@@ -201,11 +200,8 @@ export default function TwoFactorSetup() {
                   const isExpanded = expanded === svc.type;
                   const isDone = completedServices.has(svc.type);
                   return (
-                    <motion.div
+                    <div
                       key={svc.type}
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.06 }}
                     >
                       <Card className={`transition-all ${isDone ? 'opacity-70' : ''}`}>
                         <CardContent className="p-0">
@@ -226,12 +222,9 @@ export default function TwoFactorSetup() {
                             {isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground shrink-0" /> : <ChevronDown className="h-4 w-4 text-muted-foreground shrink-0" />}
                           </button>
 
-                          <AnimatePresence>
+                          <>
                             {isExpanded && (
-                              <motion.div
-                                initial={{ opacity: 0, height: 0 }}
-                                animate={{ opacity: 1, height: 'auto' }}
-                                exit={{ opacity: 0, height: 0 }}
+                              <div
                                 className="px-4 pb-4"
                               >
                                 <div className="border-t border-border pt-4">
@@ -252,19 +245,19 @@ export default function TwoFactorSetup() {
                                     {isDone ? '✓ Mark as not done' : '✓ Mark as done'}
                                   </Button>
                                 </div>
-                              </motion.div>
+                              </div>
                             )}
-                          </AnimatePresence>
+                          </>
                         </CardContent>
                       </Card>
-                    </motion.div>
+                    </div>
                   );
                 })}
               </div>
             </div>
 
             {/* Authenticator apps */}
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+            <div>
               <Card>
                 <CardHeader>
                   <CardTitle className="text-base">Want extra security? Use an authenticator app</CardTitle>
@@ -288,7 +281,7 @@ export default function TwoFactorSetup() {
                   ))}
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3 pb-4">
               <Button variant="outline" asChild className="flex-1">

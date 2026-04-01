@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { CheckCircle, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -83,7 +82,7 @@ const Login = () => {
         <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="w-full">
+            <div className="w-full">
               <Card className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-8 text-center">
                   {resetStatus === 'sent' ? (
@@ -105,9 +104,9 @@ const Login = () => {
                         No worries — enter your email and we'll send you a link to reset it.
                       </p>
                       {error && (
-                        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
+                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
                           {error}
-                        </motion.div>
+                        </div>
                       )}
                       <form onSubmit={handleResetPassword} className="space-y-5 text-left">
                         <div className="space-y-2">
@@ -136,7 +135,7 @@ const Login = () => {
                   )}
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           </div>
         </main>
         <Footer />
@@ -155,10 +154,7 @@ const Login = () => {
         <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+            <div
               className="w-full"
             >
               <Card className="rounded-2xl border border-border bg-card">
@@ -177,7 +173,7 @@ const Login = () => {
                   </Button>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           </div>
         </main>
         <Footer />
@@ -195,10 +191,7 @@ const Login = () => {
       <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+          <div
             className="w-full"
           >
             <div className="mb-8 text-center">
@@ -213,13 +206,11 @@ const Login = () => {
             <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="p-8">
                 {error && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
+                  <div
                     className="mb-6 rounded-lg bg-destructive/10 p-4 text-sm text-destructive"
                   >
                     {error}
-                  </motion.div>
+                  </div>
                 )}
 
                 <Tabs defaultValue={defaultTab}>
@@ -323,7 +314,7 @@ const Login = () => {
                 </Tabs>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </main>
       <Footer />

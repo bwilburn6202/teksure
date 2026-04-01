@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -172,12 +171,12 @@ export default function DeviceHealthDashboard() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+            <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">Device Health Dashboard</h1>
               <p className="text-lg text-primary-foreground/80">
                 See how healthy your device is and get simple tips to improve it.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -185,7 +184,7 @@ export default function DeviceHealthDashboard() {
           <div className="container mx-auto px-4 max-w-4xl py-8">
 
             {/* Overall Score */}
-            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}>
+            <div>
               <Card className="mb-6 border border-border shadow-sm">
                 <CardContent className="p-6">
                   <div className="flex flex-col sm:flex-row items-center gap-6">
@@ -226,14 +225,14 @@ export default function DeviceHealthDashboard() {
                     </Button>
                   </div>
                   {scanned && (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4 flex items-center gap-2 text-sm text-[hsl(var(--teksure-success))]">
+                    <div className="mt-4 flex items-center gap-2 text-sm text-[hsl(var(--teksure-success))]">
                       <CheckCircle2 className="h-4 w-4" />
                       <span>Scan completed — {new Date().toLocaleTimeString()}</span>
-                    </motion.div>
+                    </div>
                   )}
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             {/* Health Items */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -241,11 +240,8 @@ export default function DeviceHealthDashboard() {
                 const Icon = item.icon;
                 const isExpanded = expandedId === item.id;
                 return (
-                  <motion.div
+                  <div
                     key={item.id}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.1 + i * 0.05 }}
                   >
                     <Card
                       className={`border cursor-pointer transition-all hover:shadow-md ${statusBg[item.status]} ${isExpanded ? 'shadow-md' : ''}`}
@@ -266,20 +262,18 @@ export default function DeviceHealthDashboard() {
                         <Progress value={item.score} className={`h-2 mb-2 ${progressColor[item.status]}`} />
                         <p className="text-xs text-muted-foreground">{item.detail}</p>
                         {isExpanded && (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
+                          <div
                             className="mt-3 pt-3 border-t border-border/50"
                           >
                             <div className="flex items-start gap-2">
                               <Info className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                               <p className="text-sm text-foreground">{item.tip}</p>
                             </div>
-                          </motion.div>
+                          </div>
                         )}
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>

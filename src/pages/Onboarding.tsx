@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -149,9 +148,7 @@ export default function Onboarding() {
         <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container py-16 md:py-24 max-w-2xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+            <div
               className="text-center mb-10"
             >
               <div className="h-16 w-16 rounded-full bg-green-500/10 flex items-center justify-center mx-auto mb-6">
@@ -163,17 +160,14 @@ export default function Onboarding() {
               <p className="text-muted-foreground text-lg">
                 Based on your answers, here are 3 guides we think you'll love.
               </p>
-            </motion.div>
+            </div>
 
             {/* Recommended guides */}
             <div className="space-y-3 mb-10">
               {recommended.length > 0 ? (
                 recommended.map((guide, i) => (
-                  <motion.div
+                  <div
                     key={guide.slug}
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
                   >
                     <Link to={`/guides/${guide.slug}`}>
                       <Card className="rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
@@ -187,10 +181,10 @@ export default function Onboarding() {
                         </CardContent>
                       </Card>
                     </Link>
-                  </motion.div>
+                  </div>
                 ))
               ) : (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                <div>
                   <Card className="rounded-xl border border-border bg-card">
                     <CardContent className="p-6 text-center">
                       <BookOpen className="h-8 w-8 text-muted-foreground mx-auto mb-3" />
@@ -200,15 +194,12 @@ export default function Onboarding() {
                       </p>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               )}
             </div>
 
             {/* Summary card */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+            <div
             >
               <Card className="rounded-xl border border-border bg-muted/30 mb-8">
                 <CardContent className="p-5 text-sm space-y-2">
@@ -227,7 +218,7 @@ export default function Onboarding() {
                   </p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
             <div className="flex gap-3 justify-center">
               <Button onClick={finish} className="rounded-xl gap-2">
@@ -253,9 +244,7 @@ export default function Onboarding() {
       <main className="min-h-screen bg-background">
         <div className="container py-16 max-w-2xl mx-auto">
           {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <div
             className="mb-8"
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
@@ -264,13 +253,10 @@ export default function Onboarding() {
             <p className="text-muted-foreground text-lg">
               Answer 3 quick questions so we can point you to the right guides and tools.
             </p>
-          </motion.div>
+          </div>
 
           {/* Progress dots */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
+          <div
             className="flex items-center justify-center gap-3 mb-10"
           >
             {progressDots.map((i) => (
@@ -285,12 +271,12 @@ export default function Onboarding() {
                 }`}
               />
             ))}
-          </motion.div>
+          </div>
 
-          <AnimatePresence mode="wait">
+          <>
             {/* ── Step 0: Device ── */}
             {step === 0 && (
-              <motion.div key="device" {...slide}>
+              <div key="device" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">
                   What device do you use most?
                 </h2>
@@ -317,12 +303,12 @@ export default function Onboarding() {
                     </button>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* ── Step 1: Frustrations ── */}
             {step === 1 && (
-              <motion.div key="frustrations" {...slide}>
+              <div key="frustrations" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">
                   What's your biggest tech frustration?
                 </h2>
@@ -382,12 +368,12 @@ export default function Onboarding() {
                     Continue <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* ── Step 2: Confidence ── */}
             {step === 2 && (
-              <motion.div key="confidence" {...slide}>
+              <div key="confidence" {...slide}>
                 <h2 className="text-2xl font-bold tracking-tight mb-2">
                   How confident are you with technology?
                 </h2>
@@ -433,9 +419,9 @@ export default function Onboarding() {
                     See my results <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             )}
-          </AnimatePresence>
+          </>
         </div>
       </main>
       <Footer />
