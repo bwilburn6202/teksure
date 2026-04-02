@@ -82,21 +82,18 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // React core — smallest, loaded first on every page
-          if (
-            id.includes('node_modules/react/') ||
-            id.includes('node_modules/react-dom/') ||
-            id.includes('node_modules/scheduler/')
-          ) return 'vendor-react';
+          // NOTE: React/react-dom are intentionally NOT manually chunked.
+          // Manually splitting React causes a load-order race where vendor-query
+          // (TanStack) can execute before vendor-react initialises, resulting in
+          // "Cannot read properties of null (reading 'useEffect')".
+          // resolve.dedupe above already guarantees a single React instance.
 
           // Router — needed on every page
           if (id.includes('node_modules/react-router-dom/') || id.includes('node_modules/@remix-run/')) {
             return 'vendor-router';
           }
 
-          // Recharts + D3 — let Vite handle naturally to avoid circular deps
-
-          // Framer Motion — animation library, skip until needed
+          // Framer Motion — animation library, large, loaded lazily
           if (id.includes('node_modules/framer-motion')) {
             return 'vendor-motion';
           }
