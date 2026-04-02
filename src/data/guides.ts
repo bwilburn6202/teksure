@@ -9307,4 +9307,72 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Process your inbox daily', content: 'Spend 5-10 minutes each morning going through new emails. For each one, make a quick decision: Reply now if it takes less than 2 minutes, Move to "Action Required" if it needs more time, Move to "Waiting For" if you need a response from someone, Archive or delete everything else.' },
     { title: 'Set up filters for recurring emails', content: 'Gmail: Click the three dots on an email > Filter messages like these > choose an action (skip inbox, apply label, delete). Outlook: Right-click > Rules > Create Rule. Filters automatically sort incoming emails so you do not have to.' },
   ] },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // BATCH 5: ESSENTIAL SKILLS + ACCESSIBILITY (April 2026)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  { slug: 'understand-wifi-vs-data', title: 'WiFi vs Cellular Data: What Is the Difference?', excerpt: 'Two ways your phone connects to the internet — here is when to use each one.', category: 'essential-skills', tags: ['wifi', 'cellular', 'data', 'internet', 'beginner'], readTime: '3 min', thumbnailEmoji: '📶', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+    { title: 'What is WiFi', content: 'WiFi is a wireless internet connection from a router in your home, office, or public place. It has a limited range — about 100-150 feet. WiFi is typically faster and does not count against your phone plan data limit.' },
+    { title: 'What is cellular data', content: 'Cellular data (4G/5G) connects your phone through cell towers. It works almost anywhere you have phone signal. Cellular data counts against your monthly data plan unless you have unlimited data.' },
+    { title: 'When to use each', content: 'Use WiFi at home, work, or places with free WiFi. Use cellular data when on the go. Download large files and stream video on WiFi to avoid data charges.' },
+    { title: 'How to check which you are using', content: 'Look at the top of your phone. A WiFi icon (curved lines) means WiFi. "4G," "5G," or "LTE" means cellular data. Your phone switches automatically when WiFi is unavailable.' },
+  ] },
+  { slug: 'what-is-bluetooth', title: 'Bluetooth Explained: What It Is and How to Use It', excerpt: 'Bluetooth connects your phone to headphones, speakers, cars, and more — wirelessly.', category: 'essential-skills', tags: ['bluetooth', 'wireless', 'connections', 'beginner'], readTime: '4 min', thumbnailEmoji: '🔵', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+    { title: 'What Bluetooth does', content: 'Bluetooth lets devices communicate wirelessly over short distances (up to 30 feet). It connects your phone to headphones, car audio, speakers, fitness trackers, and keyboards.' },
+    { title: 'Turn Bluetooth on', content: 'iPhone: Settings > Bluetooth > toggle on. Android: Settings > Connected Devices > Bluetooth > toggle on.' },
+    { title: 'Pair a device', content: 'Put your Bluetooth device into pairing mode (usually hold a button for a few seconds). On your phone, go to Bluetooth settings and tap the device name when it appears. You only pair once — devices reconnect automatically after that.' },
+    { title: 'Troubleshooting', content: 'If Bluetooth is not working: turn it off and on again, restart your phone, forget the device and pair again. Most problems are solved by a simple off/on cycle.' },
+  ] },
+  { slug: 'what-is-an-app', title: 'Apps Explained: What They Are and How to Use Them', excerpt: 'A plain-English guide to apps — what they are, where to get them, and how to manage them.', category: 'essential-skills', tags: ['apps', 'basics', 'beginner'], readTime: '4 min', thumbnailEmoji: '📲', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+    { title: 'What is an app', content: 'An app (application) is a program on your phone or tablet. Apps let you do specific things: check email (Gmail), get directions (Google Maps), or video call (FaceTime). Your phone comes with many apps pre-installed.' },
+    { title: 'Where to get apps', content: 'iPhone: App Store (blue A icon). Android: Google Play Store (colorful triangle). Search by name, tap Get/Install. Most are free. Only download from official stores to stay safe.' },
+    { title: 'Organize your apps', content: 'Press and hold an app icon to move it. Drag one icon onto another to create a folder. Delete apps by pressing and holding, then selecting Remove/Uninstall.' },
+    { title: 'Keep apps updated', content: 'Updates fix bugs and security issues. Turn on automatic updates: iPhone — App Store > Profile > turn on automatic updates. Android — Play Store > Profile > Settings > Auto-update apps.' },
+  ] },
+  { slug: 'understand-file-types', title: 'Common File Types Explained: PDF, JPEG, DOCX, MP4', excerpt: 'What do those file extensions mean? A simple guide to files you encounter every day.', category: 'essential-skills', tags: ['files', 'extensions', 'basics', 'beginner'], readTime: '3 min', thumbnailEmoji: '📄', publishedAt: '2026-04-10', difficulty: 'Beginner', steps: [
+    { title: 'Documents', content: '.PDF — universal document, looks the same everywhere. .DOCX — Word document, editable. .TXT — plain text, no formatting.' },
+    { title: 'Images', content: '.JPEG/.JPG — most common photo format. .PNG — supports transparency, used for logos and screenshots. .HEIC — Apple photo format, high quality, may need converting.' },
+    { title: 'Video and audio', content: '.MP4 — universal video format. .MOV — Apple video. .MP3 — standard music format. .WAV — high quality audio.' },
+    { title: 'How to open unknown files', content: 'Right-click > Open With > choose a program. PDFs open in any browser. DOCX opens in Word, Google Docs, or LibreOffice (free). When emailing, PDF is the safest choice.' },
+  ] },
+  { slug: 'digital-etiquette', title: 'Online Etiquette: Email, Texting, Video Calls, and Social Media', excerpt: 'The unwritten rules of digital communication.', category: 'essential-skills', tags: ['etiquette', 'communication', 'beginner'], readTime: '4 min', thumbnailEmoji: '🤝', publishedAt: '2026-04-10', difficulty: 'Beginner', steps: [
+    { title: 'Email etiquette', content: 'Always include a subject line. Use a greeting and sign-off. Do not type in ALL CAPS (reads as shouting). Reply within 24-48 hours. Use Reply All sparingly.' },
+    { title: 'Texting etiquette', content: 'Keep texts brief. Do not send 10 messages when one would do. Avoid texting before 8 AM or after 9 PM. If a conversation gets complex, suggest a phone call.' },
+    { title: 'Video call etiquette', content: 'Mute when not speaking. Look at the camera when talking. Choose a quiet, well-lit spot. Let people finish before responding — video calls have a slight delay.' },
+    { title: 'Social media', content: 'Think before posting — it is hard to take back. Do not share others photos without permission. Be kind in comments. Avoid sharing unverified news.' },
+  ] },
+  { slug: 'windows-11-accessibility', title: 'Accessibility Features Built into Windows 11', excerpt: 'Windows has powerful free tools for vision, hearing, and motor needs.', category: 'windows-guides', tags: ['accessibility', 'windows', 'vision', 'hearing'], readTime: '5 min', thumbnailEmoji: '♿', publishedAt: '2026-04-10', difficulty: 'Beginner', steps: [
+    { title: 'Find Accessibility settings', content: 'Settings > Accessibility. Press Windows + U for quick access.' },
+    { title: 'Make text bigger', content: 'Settings > Accessibility > Text size — drag the slider. For even bigger changes, Settings > Display > Scale (try 125% or 150%).' },
+    { title: 'Use the Magnifier', content: 'Press Windows + Plus to start. Windows + Plus/Minus to zoom in/out. Windows + Esc to exit.' },
+    { title: 'Live captions', content: 'Settings > Accessibility > Captions > Live Captions. Automatically captions any audio on your computer.' },
+    { title: 'Voice control', content: 'Settings > Accessibility > Speech > Voice Access. Control your computer with voice commands.' },
+  ] },
+  { slug: 'mac-accessibility-features', title: 'Accessibility Features Built into macOS', excerpt: 'Your Mac has powerful free accessibility tools ready to use.', category: 'mac-guides', tags: ['accessibility', 'mac', 'vision', 'hearing'], readTime: '5 min', thumbnailEmoji: '♿', publishedAt: '2026-04-10', difficulty: 'Beginner', steps: [
+    { title: 'Find Accessibility settings', content: 'System Settings > Accessibility. Or press Option + Command + F5 for Accessibility Shortcuts.' },
+    { title: 'Make text bigger', content: 'System Settings > Accessibility > Display > Text Size. In browsers, press Command + Plus to zoom.' },
+    { title: 'Use Zoom', content: 'System Settings > Accessibility > Zoom. Use Option + Command + = to zoom in, Option + Command + - to zoom out.' },
+    { title: 'VoiceOver', content: 'Press Command + F5 to toggle VoiceOver. It reads screen content aloud and supports full keyboard navigation.' },
+    { title: 'Dictation', content: 'Press Fn key twice to start dictating. Speak naturally, say punctuation out loud.' },
+  ] },
+  { slug: 'keyboard-shortcuts-everyone', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+    { title: 'Copy, Cut, Paste', content: 'Ctrl+C / Cmd+C copies. Ctrl+X / Cmd+X cuts. Ctrl+V / Cmd+V pastes. Works everywhere.' },
+    { title: 'Undo and Redo', content: 'Ctrl+Z / Cmd+Z undoes your last action. Ctrl+Y / Cmd+Shift+Z redoes it.' },
+    { title: 'Select All and Find', content: 'Ctrl+A / Cmd+A selects everything. Ctrl+F / Cmd+F opens search on any page.' },
+    { title: 'Save, Print, Tabs', content: 'Ctrl+S saves. Ctrl+P prints. Ctrl+W closes a tab. Ctrl+T opens a new tab. Ctrl+Tab switches between tabs.' },
+  ] },
+  { slug: 'dark-mode-guide', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Settings > Display & Brightness > tap Dark. Set to Automatic for sunset switching.' },
+    { title: 'Android', content: 'Settings > Display > Dark theme toggle on.' },
+    { title: 'Windows', content: 'Settings > Personalization > Colors > choose Dark.' },
+    { title: 'Mac', content: 'System Settings > Appearance > choose Dark or Auto.' },
+  ] },
+  { slug: 'speed-up-slow-computer', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+    { title: 'Restart your computer', content: 'A proper restart clears temporary files and resets stuck programs. Use Start > Power > Restart.' },
+    { title: 'Close unused programs', content: 'Every open program uses memory. Close what you are not using. Press Ctrl+Shift+Esc for Task Manager.' },
+    { title: 'Disable startup programs', content: 'Many programs start automatically. Windows: Ctrl+Shift+Esc > Startup Apps tab > disable what you do not need. Mac: System Settings > General > Login Items.' },
+    { title: 'Free up disk space', content: 'Delete old downloads, empty Trash, uninstall unused apps. Keep at least 10-15% free.' },
+    { title: 'Check for malware', content: 'Windows: Windows Security > Virus & threat protection > Quick scan. Mac: try Malwarebytes free scan.' },
+  ] },
 ];
