@@ -107,6 +107,10 @@ const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
+const Articles               = lazy(() => import("./pages/Articles"));
+const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"));
+const Sources                = lazy(() => import("./pages/Sources"));
+const Videos                 = lazy(() => import("./pages/Videos"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -266,6 +270,10 @@ const AppContent = () => {
           <Route path="/cybersec" element={<CyberSec />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
+          <Route path="/sources" element={<Sources />} />
+          <Route path="/videos" element={<Videos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>

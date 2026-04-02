@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, CheckCircle, Play, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
+import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { useAuth } from '@/contexts/AuthContext';
@@ -440,17 +441,12 @@ const GuideDetail = () => {
             </Card>
           )}
 
-          {/* Video */}
-          {guide.videoUrl && (
-            <div className="mb-8">
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-muted">
-                <iframe src={guide.videoUrl} title={guide.title} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-              </div>
-              <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
-                <Play className="h-3 w-3" /> Video tutorial — watch along or read below
-              </p>
-            </div>
-          )}
+          {/* Video section — OS-specific player with DB-backed videos, falls back to static videoUrl */}
+          <GuideVideoSection
+            guideSlug={guide.slug}
+            fallbackVideoUrl={guide.videoUrl}
+            fallbackTitle={guide.title}
+          />
 
           <Separator className="mb-8" />
 

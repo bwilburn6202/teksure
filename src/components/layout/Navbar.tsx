@@ -36,6 +36,7 @@ export function Navbar() {
 
   const moreLinks = [
     { to: '/get-help', label: 'Get Help' },
+    { to: '/videos', label: 'Videos' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
     { to: '/glossary', label: 'Glossary' },
     { to: '/blog', label: 'Blog' },
