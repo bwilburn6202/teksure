@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 
-interface SEOHeadProps {
+export interface SEOHeadProps {
   title: string;
   description: string;
-  path: string;
+  path?: string;
   type?: string;
   ogImage?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
@@ -12,7 +12,7 @@ interface SEOHeadProps {
 const BASE_URL = 'https://teksure.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 
-export function SEOHead({ title, description, path, type = 'website', ogImage, jsonLd }: SEOHeadProps) {
+export function SEOHead({ title, description, path = '/', type = 'website', ogImage, jsonLd }: SEOHeadProps) {
   const url = `${BASE_URL}${path}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
 

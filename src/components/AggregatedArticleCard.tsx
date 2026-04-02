@@ -85,12 +85,12 @@ export function AggregatedArticleCard({ article, source }: AggregatedArticleCard
             {article.osTags.map((tag) => {
               const { icon: Icon, label } = osIconMap[tag];
               return (
-                <Icon
-                  key={tag}
-                  className="h-3.5 w-3.5 text-muted-foreground"
-                  aria-label={label}
-                  title={label}
-                />
+                <span key={tag} title={label}>
+                  <Icon
+                    className="h-3.5 w-3.5 text-muted-foreground"
+                    aria-label={label}
+                  />
+                </span>
               );
             })}
           </div>

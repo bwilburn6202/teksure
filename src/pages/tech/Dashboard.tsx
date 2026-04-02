@@ -70,7 +70,7 @@ const TechDashboard = () => {
 
   async function fetchBookings() {
     setLoading(true);
-    const { data, error } = await supabase
+    const { data, error } = await (supabase as any)
       .from('bookings')
       .select('*')
       .eq('tech_id', user!.id)
@@ -80,13 +80,13 @@ const TechDashboard = () => {
       toast.error('Failed to load bookings');
       console.error(error);
     } else {
-      setBookings((data as Booking[]) || []);
+      setBookings((data as unknown as Booking[]) || []);
     }
     setLoading(false);
   }
 
   async function updateBookingStatus(id: string, status: string) {
-    const { error } = await supabase
+    const { error } = await (supabase as any)
       .from('bookings')
       .update({ status })
       .eq('id', id);

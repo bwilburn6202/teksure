@@ -19,7 +19,7 @@ const paths = [
 export default function Certificate() {
   const certRef = useRef<HTMLDivElement>(null);
   const completed = getCompletedGuides();
-  const total = completed.length;
+  const total = completed.size;
 
   const earnedPaths = paths.filter(p => total >= p.required);
   const latestPath = earnedPaths[earnedPaths.length - 1];

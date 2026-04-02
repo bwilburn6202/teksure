@@ -83,13 +83,13 @@ const Dashboard = () => {
     }
     const fetchBookings = async () => {
       setLoadingBookings(true);
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from('bookings')
         .select('id, issue_type, description, status, payment_status, preferred_date, preferred_time, created_at')
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
       if (!error && data) {
-        setBookings(data as Booking[]);
+        setBookings(data as unknown as Booking[]);
       }
       setLoadingBookings(false);
     };

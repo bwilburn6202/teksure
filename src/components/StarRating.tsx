@@ -71,7 +71,7 @@ export function StarRating({
 
     async function load() {
       // aggregate
-      const { data: stats } = await supabase
+      const { data: stats } = await (supabase as any)
         .from('guide_rating_stats')
         .select('avg_stars, rating_count')
         .eq('guide_slug', guideSlug)
@@ -85,7 +85,7 @@ export function StarRating({
       // user's own rating
       if (readOnly) { setLoaded(true); return; }
 
-      let query = supabase
+      let query = (supabase as any)
         .from('guide_ratings')
         .select('stars')
         .eq('guide_slug', guideSlug);
@@ -124,7 +124,7 @@ export function StarRating({
     }
 
     // upsert
-    const { error } = await supabase
+    const { error } = await (supabase as any)
       .from('guide_ratings')
       .upsert(payload, {
         onConflict: user ? 'guide_slug,user_id' : 'guide_slug,anon_key',
@@ -134,7 +134,7 @@ export function StarRating({
       setUserStars(stars);
       setSubmitted(true);
       // refresh aggregate
-      const { data: stats } = await supabase
+      const { data: stats } = await (supabase as any)
         .from('guide_rating_stats')
         .select('avg_stars, rating_count')
         .eq('guide_slug', guideSlug)
