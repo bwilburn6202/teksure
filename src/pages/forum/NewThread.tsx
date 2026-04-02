@@ -45,7 +45,7 @@ export default function NewThread() {
       if (error) throw error;
       return data;
     },
-    onSuccess: (data) => {
+    onSuccess: (data: any) => {
       toast({ title: 'Discussion started!', description: 'Your post is now live in the forum.' });
       navigate(`/forum/${(data as any).id}`);
     },

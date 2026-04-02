@@ -26,6 +26,7 @@ export default function Sources() {
       <SEOHead
         title="Our Content Sources — TekSure"
         description="TekSure simplifies tech guides from trusted sources like Apple, Google, Microsoft, AARP, and more. See all sources and how we use them."
+        path="/sources"
       />
       <Navbar />
 

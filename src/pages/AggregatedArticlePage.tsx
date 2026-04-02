@@ -57,6 +57,7 @@ export default function AggregatedArticlePage() {
       <SEOHead
         title={`${article.title} — TekSure`}
         description={article.excerpt}
+        path={`/articles/${article.slug}`}
       />
       <Navbar />
 

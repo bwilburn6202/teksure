@@ -64,6 +64,7 @@ export default function Articles() {
       <SEOHead
         title="Simplified Tech Articles — TekSure"
         description="Plain-language tech guides simplified from trusted sources like Apple, Google, Microsoft, AARP, and more. Easy to follow, no jargon."
+        path="/articles"
       />
       <Navbar />
 

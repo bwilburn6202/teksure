@@ -40,11 +40,10 @@ const catLabels: Record<string, string> = {
 };
 
 export default function ProgressReport() {
-  const completedSet = getCompletedGuides();
-  const completedArr = Array.from(completedSet);
+  const completedArr = Array.from(getCompletedGuides());
   const total = completedArr.length;
-  const streak = getStreak(completedArr as any);
-  const categories = getCategoryBreakdown(completedArr as any);
+  const streak = getStreak(completedArr);
+  const categories = getCategoryBreakdown(completedArr);
   const nextGoal = GOALS.find(g => g > total) ?? GOALS[GOALS.length - 1];
   const pctToGoal = Math.min(100, (total / nextGoal) * 100);
   const recentGuides = completedArr.slice(-5).reverse().map(slug => guides.find(g => g.slug === slug)).filter(Boolean);

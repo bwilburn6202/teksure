@@ -114,7 +114,7 @@ const Dashboard = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const issue = `[${CATEGORY_LABELS[category] ?? category}] ${jobType === 'in_person' ? '(In-person) ' : '(Remote) '}${description}${address ? ` | Address: ${address}` : ''}`;
-    const { error } = await supabase.from('help_requests').insert({
+    const { error } = await (supabase as any).from('help_requests').insert({
       name: user?.fullName ?? user?.email ?? 'Customer',
       email: user?.email ?? '',
       issue,
