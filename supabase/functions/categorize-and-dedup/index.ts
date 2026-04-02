@@ -187,7 +187,7 @@ function scoreQuality(article: ScrapedArticle, sourceDomain: string): number {
   else if (wordCount > 400) score += 0.1;
 
   // Step-by-step structure (numbered lists / step markers)
-  if (/(\b(step\s+\d|^\d+\.\s)/im.test(content))  score += 0.1;
+  if (/\b(step\s+\d|^\d+\.\s)/im.test(content))  score += 0.1;
   if (/(\b(how\s+to|guide|tutorial)\b)/i.test(content)) score += 0.05;
 
   // Images (basic check for markdown or HTML image references)
