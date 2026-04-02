@@ -200,17 +200,19 @@ serve(async (req) => {
       return json({ error: `No article found with id ${scraped_article_id}` }, 404);
     }
 
+    const art = article as unknown as ScrapedArticle;
+
     // Guard: only simplify articles that have been categorized
-    if (!['scraped', 'pending'].includes((article as ScrapedArticle).scrape_status)) {
+    if (!['scraped', 'pending'].includes(art.scrape_status)) {
       return json({
-        error: `Article status is "${(article as ScrapedArticle).scrape_status}" — expected "scraped" or "pending".`,
+        error: `Article status is "${art.scrape_status}" — expected "scraped" or "pending".`,
       }, 422);
     }
 
-    console.log(`[simplify-article] Simplifying: "${(article as ScrapedArticle).original_title}"`);
+    console.log(`[simplify-article] Simplifying: "${art.original_title}"`);
 
     // ── 2. Call Claude ────────────────────────────────────────────────────────
-    const prompt     = buildPrompt(article as ScrapedArticle);
+    const prompt     = buildPrompt(art);
     const simplified = await callClaude(prompt);
 
     console.log(`[simplify-article] Claude returned title: "${simplified.simplified_title}"`);
