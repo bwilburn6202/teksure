@@ -267,7 +267,7 @@ serve(async (req) => {
     await supabase
       .from('scraped_articles')
       .update({ scrape_status: 'simplified' })
-      .eq('id', (article as ScrapedArticle).id);
+      .eq('id', art.id);
 
     console.log(`[simplify-article] Saved simplified article slug="${slug}"`);
 
