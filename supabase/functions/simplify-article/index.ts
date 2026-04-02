@@ -248,7 +248,7 @@ serve(async (req) => {
     const { data: saved, error: saveErr } = await supabase
       .from('simplified_articles')
       .insert({
-        scraped_article_id:     (article as ScrapedArticle).id,
+        scraped_article_id:     art.id,
         simplified_title:       simplified.simplified_title,
         simplified_content:     simplified.simplified_content,
         simplified_steps:       steps,
