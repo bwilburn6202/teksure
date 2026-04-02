@@ -225,7 +225,7 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
     setSpeaking(true);
   };
   return (
-    <Button variant="outline" size="sm" className="gap-2 no-print" onClick={handleListen}>
+    <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={handleListen}>
       {speaking ? <><Square className="h-4 w-4" /> Stop</> : <><Volume2 className="h-4 w-4" /> Listen</>}
     </Button>
   );
@@ -413,8 +413,8 @@ const GuideDetail = () => {
               <StarRating guideSlug={guide.slug} readOnly size="sm" />
             </div>
 
-            <div className="flex gap-2 mt-5">
-              <Button variant="outline" size="sm" className="gap-2 no-print" onClick={() => window.print()}>
+            <div className="flex flex-wrap gap-2 mt-5">
+              <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={() => window.print()}>
                 <Printer className="h-4 w-4" /> Print Guide
               </Button>
               <ListenButton guide={guide} />
@@ -465,9 +465,9 @@ const GuideDetail = () => {
                   className="scroll-mt-28"
                 >
                   <Card className="overflow-hidden border-l-4 border-l-primary">
-                    <CardContent className="py-6 px-6">
-                      <div className="flex gap-5">
-                        <div className="shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold">
+                    <CardContent className="py-5 px-4 sm:px-6">
+                      <div className="flex gap-4 sm:gap-5">
+                        <div className="shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-base sm:text-lg font-bold">
                           {i + 1}
                         </div>
                         <div className="flex-1 min-w-0">

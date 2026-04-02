@@ -91,11 +91,15 @@ export function FloatingChat() {
   const [unread, setUnread] = useState(0);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (open) {
       setUnread(0);
       setTimeout(() => inputRef.current?.focus(), 150);
+    } else {
+      // Return focus to toggle button when chat closes
+      toggleButtonRef.current?.focus();
     }
   }, [open]);
 
@@ -129,42 +133,56 @@ export function FloatingChat() {
   };
 
   return (
-    <>
+    /* Hidden on mobile — TekBot covers this functionality on small screens */
+    <div className="hidden sm:contents">
       {/* Chat Panel */}
       <>
         {open && (
           <div
-            className="fixed bottom-24 right-4 z-50 w-[340px] sm:w-[380px] rounded-2xl shadow-2xl border border-border bg-background flex flex-col overflow-hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="floatchat-heading"
+            className="fixed bottom-[88px] right-[68px] z-50 w-[340px] sm:w-[380px] rounded-2xl shadow-2xl border border-border bg-background flex flex-col overflow-hidden"
             style={{ maxHeight: '540px' }}
           >
             {/* Header */}
             <div className="flex items-center gap-3 px-4 py-3 bg-secondary text-secondary-foreground">
-              <div className="h-9 w-9 rounded-full bg-secondary-foreground/20 flex items-center justify-center">
+              <div className="h-9 w-9 rounded-full bg-secondary-foreground/20 flex items-center justify-center" aria-hidden="true">
                 <Bot className="h-5 w-5" />
               </div>
               <div className="flex-1">
-                <p className="font-semibold text-sm">TekBot</p>
+                <p id="floatchat-heading" className="font-semibold text-sm">TekBot</p>
                 <p className="text-xs opacity-80 flex items-center gap-1">
-                  <span className="h-1.5 w-1.5 rounded-full bg-green-400 inline-block" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-green-400 inline-block" aria-hidden="true" />
                   Online — here to help
                 </p>
               </div>
               <button
                 onClick={() => setOpen(false)}
-                className="h-7 w-7 rounded-full flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors"
-                aria-label="Close chat"
+                className="h-11 w-11 rounded-full flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors"
+                aria-label="Close TekBot chat"
               >
-                <X className="h-4 w-4" />
+                <X className="h-4 w-4" aria-hidden="true" />
               </button>
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3" style={{ minHeight: 0 }}>
+            <div
+              role="log"
+              aria-live="polite"
+              aria-relevant="additions text"
+              aria-label="Chat messages"
+              className="flex-1 overflow-y-auto p-4 space-y-3"
+              style={{ minHeight: 0 }}
+            >
               {messages.map(msg => (
                 <div key={msg.id} className={`flex gap-2 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
-                  <div className={`h-7 w-7 rounded-full flex-shrink-0 flex items-center justify-center text-xs ${
-                    msg.role === 'bot' ? 'bg-secondary text-secondary-foreground' : 'bg-primary text-primary-foreground'
-                  }`}>
+                  <div
+                    className={`h-7 w-7 rounded-full flex-shrink-0 flex items-center justify-center text-xs ${
+                      msg.role === 'bot' ? 'bg-secondary text-secondary-foreground' : 'bg-primary text-primary-foreground'
+                    }`}
+                    aria-hidden="true"
+                  >
                     {msg.role === 'bot' ? <Bot className="h-4 w-4" /> : <User className="h-4 w-4" />}
                   </div>
                   <div className={`max-w-[80%] ${msg.role === 'user' ? 'items-end' : 'items-start'} flex flex-col gap-1`}>
@@ -184,10 +202,11 @@ export function FloatingChat() {
                             to={`/guides/${g.slug}`}
                             onClick={() => setOpen(false)}
                             className="flex items-center gap-2 bg-background border border-border rounded-lg px-2.5 py-1.5 text-xs hover:border-secondary transition-colors group"
+                            aria-label={`Read guide: ${g.title}`}
                           >
-                            <span>{g.thumbnailEmoji}</span>
+                            <span aria-hidden="true">{g.thumbnailEmoji}</span>
                             <span className="flex-1 font-medium">{g.title}</span>
-                            <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-secondary transition-colors" />
+                            <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-secondary transition-colors" aria-hidden="true" />
                           </Link>
                         ))}
                       </div>
@@ -196,11 +215,11 @@ export function FloatingChat() {
                 </div>
               ))}
               {typing && (
-                <div className="flex gap-2">
-                  <div className="h-7 w-7 rounded-full bg-secondary text-secondary-foreground flex-shrink-0 flex items-center justify-center">
+                <div className="flex gap-2" role="status" aria-label="TekBot is typing">
+                  <div className="h-7 w-7 rounded-full bg-secondary text-secondary-foreground flex-shrink-0 flex items-center justify-center" aria-hidden="true">
                     <Bot className="h-4 w-4" />
                   </div>
-                  <div className="bg-muted rounded-2xl rounded-tl-sm px-3 py-2">
+                  <div className="bg-muted rounded-2xl rounded-tl-sm px-3 py-2" aria-hidden="true">
                     <span className="flex gap-1 items-center h-4">
                       {[0, 1, 2].map(i => (
                         <span
@@ -223,7 +242,7 @@ export function FloatingChat() {
                   <button
                     key={p}
                     onClick={() => sendMessage(p)}
-                    className="text-xs bg-muted hover:bg-secondary hover:text-secondary-foreground border border-border rounded-full px-2.5 py-1 transition-colors"
+                    className="text-sm bg-muted hover:bg-secondary hover:text-secondary-foreground border border-border rounded-full px-3 py-1.5 transition-colors"
                   >
                     {p}
                   </button>
@@ -234,7 +253,9 @@ export function FloatingChat() {
             {/* Input */}
             <div className="p-3 border-t border-border bg-background/80 backdrop-blur-sm">
               <div className="flex gap-2">
+                <label htmlFor="floatchat-input" className="sr-only">Type your message to TekBot</label>
                 <input
+                  id="floatchat-input"
                   ref={inputRef}
                   value={inputValue}
                   onChange={e => setInputValue(e.target.value)}
@@ -244,11 +265,12 @@ export function FloatingChat() {
                 />
                 <Button
                   size="icon"
-                  className="rounded-xl h-9 w-9 flex-shrink-0"
+                  className="rounded-xl h-11 w-11 flex-shrink-0"
                   onClick={() => sendMessage(inputValue)}
                   disabled={!inputValue.trim()}
+                  aria-label="Send message"
                 >
-                  <Send className="h-4 w-4" />
+                  <Send className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </div>
               <div className="flex items-center justify-between mt-2 px-0.5">
@@ -268,32 +290,38 @@ export function FloatingChat() {
 
       {/* Bubble Toggle Button */}
       <button
+        ref={toggleButtonRef}
         onClick={() => setOpen(o => !o)}
-        className="fixed bottom-5 right-5 z-50 h-14 w-14 rounded-full shadow-xl flex items-center justify-center bg-secondary text-secondary-foreground hover:scale-110 transition-transform"
-        aria-label={open ? 'Close chat' : 'Open TekBot chat'}
+        aria-expanded={open}
+        aria-haspopup="dialog"
+        aria-label={open ? 'Close TekBot chat' : 'Open TekBot chat'}
+        className="fixed bottom-5 right-[72px] z-50 h-14 w-14 rounded-full shadow-xl flex items-center justify-center bg-secondary text-secondary-foreground hover:scale-110 transition-transform"
       >
         <>
           {open ? (
             <span key="x">
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6" aria-hidden="true" />
             </span>
           ) : (
             <span key="chat">
-              <MessageCircle className="h-6 w-6" />
+              <MessageCircle className="h-6 w-6" aria-hidden="true" />
             </span>
           )}
         </>
         {unread > 0 && !open && (
-          <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center">
-            {unread}
+          <span
+            className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-red-500 text-white text-[10px] font-bold flex items-center justify-center"
+            aria-label={`${unread} unread message${unread === 1 ? '' : 's'}`}
+          >
+            <span aria-hidden="true">{unread}</span>
           </span>
         )}
       </button>
 
       {/* Pulse ring to draw attention on first load */}
       {messages.length === 1 && !open && (
-        <span className="fixed bottom-5 right-5 z-40 h-14 w-14 rounded-full bg-secondary/30 animate-ping pointer-events-none" />
+        <span className="fixed bottom-5 right-[72px] z-40 h-14 w-14 rounded-full bg-secondary/30 animate-ping pointer-events-none" aria-hidden="true" />
       )}
-    </>
+    </div>
   );
 }

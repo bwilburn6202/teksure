@@ -333,12 +333,12 @@ export default function Book() {
                 <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
                   <Calendar className="h-4 w-4" /> Choose a date
                 </h3>
-                <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 mb-8">
+                <div className="grid grid-cols-3 sm:grid-cols-7 gap-2 mb-8">
                   {availableDates.map(d => (
                     <button
                       key={d.date}
                       onClick={() => setForm(f => ({ ...f, date: d.date }))}
-                      className={`flex flex-col items-center p-3 rounded-lg border transition-all text-sm font-medium ${
+                      className={`flex flex-col items-center p-3 sm:p-3 rounded-lg border transition-all text-sm font-medium min-h-[64px] ${
                         form.date === d.date
                           ? 'border-primary bg-primary text-primary-foreground'
                           : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'

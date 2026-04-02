@@ -454,13 +454,32 @@ export function TekBot() {
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
   const [showDevicePicker, setShowDevicePicker] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 640);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const openButtonRef = useRef<HTMLButtonElement>(null);
   const enrichedRef = useRef<string>('');
+
+  /* Focus input when chat opens; return focus to open button when it closes */
+  useEffect(() => {
+    if (open) {
+      setTimeout(() => inputRef.current?.focus(), 150);
+    } else {
+      openButtonRef.current?.focus();
+    }
+  }, [open]);
 
   /* Persist messages to sessionStorage whenever they change */
   useEffect(() => {
     saveSession(messages);
   }, [messages]);
+
+  /* Track mobile breakpoint */
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 640);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
 
   /* Build welcome message for the current page — only shown when session is empty */
   const welcomeMessage = useMemo(() => {
@@ -611,12 +630,18 @@ export function TekBot() {
       <>
         {open && (
           <div
-            className="fixed bottom-6 right-6 z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border"
-            style={{
+            className={`fixed z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border ${
+              isMobile
+                ? 'inset-x-2 bottom-2 top-16'
+                : 'bottom-6 right-6'
+            }`}
+            style={isMobile ? {
+              maxHeight: 'calc(100dvh - 5rem)',
+            } : {
               width: pageRelatedGuides.length > 0 ? 620 : 390,
               height: 580,
-              maxWidth: 'calc(100vw - 2rem)',
-              maxHeight: 'calc(100vh - 2rem)',
+              maxWidth: 'calc(100vw - 3rem)',
+              maxHeight: 'calc(100vh - 3rem)',
             }}
           >
             {/* Related guides sidebar — only shown when there are page-relevant guides */}
@@ -674,12 +699,12 @@ export function TekBot() {
                 {conversationCount > 0 && (
                   <button
                     onClick={handleClearChat}
-                    className="flex items-center gap-1 rounded-lg px-2 py-1 text-white/80 hover:text-white hover:bg-white/10 transition-all"
-                    style={{ fontSize: 11 }}
+                    className="flex items-center gap-1 rounded-lg px-3 py-2 text-white/80 hover:text-white hover:bg-white/10 transition-all"
+                    style={{ fontSize: 12, minHeight: 44 }}
                     title="Clear this conversation and start fresh"
                     aria-label="Clear conversation history"
                   >
-                    <Trash2 className="h-3.5 w-3.5" />
+                    <Trash2 className="h-4 w-4" />
                     <span className="hidden sm:inline">Clear</span>
                   </button>
                 )}
@@ -688,8 +713,8 @@ export function TekBot() {
                 <div className="relative">
                   <button
                     onClick={() => setShowDevicePicker(v => !v)}
-                    className="flex items-center gap-1 rounded-lg px-2 py-1 text-white/80 hover:text-white hover:bg-white/10 transition-all"
-                    style={{ fontSize: 11 }}
+                    className="flex items-center gap-1 rounded-lg px-3 py-2 text-white/80 hover:text-white hover:bg-white/10 transition-all"
+                    style={{ fontSize: 12, minHeight: 44 }}
                     title="Set your device"
                   >
                     {device ? (
@@ -742,7 +767,7 @@ export function TekBot() {
                   </>
                 </div>
 
-                <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-8 w-8">
+                <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-11 w-11" aria-label="Close TekBot">
                   <X className="h-4 w-4" />
                 </Button>
               </div>
@@ -818,7 +843,8 @@ export function TekBot() {
                   <button
                     key={p}
                     onClick={() => send(p)}
-                    className="text-xs px-2.5 py-1 rounded-full bg-white border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+                    className="text-sm px-3 py-2 rounded-full bg-white border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+                    style={{ minHeight: 40 }}
                   >
                     {p}
                   </button>
