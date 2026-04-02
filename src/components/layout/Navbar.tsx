@@ -59,7 +59,7 @@ export function Navbar() {
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
         <Link to={user ? dashboardPath : '/'} className="flex items-center gap-2">
-          <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" />
+          <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" fetchpriority="high" />
         </Link>
 
         {/* Desktop Nav */}

@@ -109,7 +109,13 @@ const Explore                = lazy(() => import("./pages/Explore"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
-  defaultOptions: { queries: { retry: 1 } },
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      staleTime: 5 * 60 * 1000,   // data stays fresh for 5 min — avoids re-fetching on every mount
+      gcTime: 10 * 60 * 1000,     // keep unused cache entries for 10 min
+    },
+  },
 });
 
 /** Minimal spinner shown during lazy-load */

@@ -43,7 +43,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" />
+              <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" loading="lazy" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Tech help that makes sense. Free guides, real human support, and tools built for everyday people.

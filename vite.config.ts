@@ -78,4 +78,59 @@ export default defineConfig(({ mode }) => ({
       '@supabase/supabase-js',
     ],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // React core — smallest, loaded first on every page
+          if (
+            id.includes('node_modules/react/') ||
+            id.includes('node_modules/react-dom/') ||
+            id.includes('node_modules/scheduler/')
+          ) return 'vendor-react';
+
+          // Router — needed on every page
+          if (id.includes('node_modules/react-router-dom/') || id.includes('node_modules/@remix-run/')) {
+            return 'vendor-router';
+          }
+
+          // Recharts + D3 — only loaded on admin/dashboard pages
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3-') || id.includes('node_modules/victory-')) {
+            return 'vendor-charts';
+          }
+
+          // Framer Motion — animation library, skip until needed
+          if (id.includes('node_modules/framer-motion')) {
+            return 'vendor-motion';
+          }
+
+          // Supabase — only loaded when auth/db is needed
+          if (id.includes('node_modules/@supabase')) {
+            return 'vendor-supabase';
+          }
+
+          // Radix UI + shadcn utilities — large UI primitives
+          if (
+            id.includes('node_modules/@radix-ui') ||
+            id.includes('node_modules/class-variance-authority') ||
+            id.includes('node_modules/cmdk') ||
+            id.includes('node_modules/vaul') ||
+            id.includes('node_modules/embla-carousel')
+          ) return 'vendor-ui';
+
+          // TanStack Query
+          if (id.includes('node_modules/@tanstack')) {
+            return 'vendor-query';
+          }
+
+          // Forms + validation
+          if (
+            id.includes('node_modules/react-hook-form') ||
+            id.includes('node_modules/@hookform') ||
+            id.includes('node_modules/zod')
+          ) return 'vendor-forms';
+        },
+      },
+    },
+  },
 }));
