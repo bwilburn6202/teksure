@@ -312,19 +312,35 @@ const GuideDetail = () => {
     '@type': 'HowTo',
     name: guide.title,
     description: guide.excerpt,
+    datePublished: guide.publishedAt,
     step: guide.steps.map((s, i) => ({
-      '@type': 'HowToStep', position: i + 1, name: s.title, text: s.content,
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.title,
+      text: s.content,
+      ...(s.screenshotUrl ? { image: { '@type': 'ImageObject', url: s.screenshotUrl, description: s.screenshotAlt || s.screenshotDesc } } : {}),
     })),
+  } : undefined;
+
+  const videoJsonLd = guide.videoUrl ? {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: `${guide.title} — Video Tutorial`,
+    description: guide.excerpt,
+    thumbnailUrl: `https://teksure.com/og-image.png`,
+    uploadDate: guide.publishedAt,
+    embedUrl: guide.videoUrl,
+    publisher: { '@type': 'Organization', name: 'TekSure', logo: { '@type': 'ImageObject', url: 'https://teksure.com/og-image.png' } },
   } : undefined;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://teksure.lovable.app/' },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://teksure.lovable.app/guides' },
-      { '@type': 'ListItem', position: 3, name: categoryLabels[guide.category], item: `https://teksure.lovable.app/guides?category=${guide.category}` },
-      { '@type': 'ListItem', position: 4, name: guide.title },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://teksure.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://teksure.com/guides' },
+      { '@type': 'ListItem', position: 3, name: categoryLabels[guide.category], item: `https://teksure.com/guides?category=${guide.category}` },
+      { '@type': 'ListItem', position: 4, name: guide.title, item: `https://teksure.com/guides/${guide.slug}` },
     ],
   };
 
@@ -335,7 +351,7 @@ const GuideDetail = () => {
         description={guide.excerpt}
         path={`/guides/${guide.slug}`}
         type="article"
-        jsonLd={[howToJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
+        jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
       />
       <Navbar />
 

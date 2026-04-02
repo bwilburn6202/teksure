@@ -363,7 +363,29 @@ export default function Blog() {
   if (detailPost) {
     return (
       <>
-        <SEOHead title={`${detailPost.title} — TekSure Blog`} description={detailPost.excerpt} path={`/blog/${detailPost.slug}`} />
+        <SEOHead
+          title={`${detailPost.title} — TekSure Blog`}
+          description={detailPost.excerpt}
+          path={`/blog/${detailPost.slug}`}
+          type="article"
+          jsonLd={{
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: detailPost.title,
+            description: detailPost.excerpt,
+            datePublished: detailPost.date,
+            dateModified: detailPost.date,
+            author: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'TekSure',
+              logo: { '@type': 'ImageObject', url: 'https://teksure.com/og-image.png' },
+            },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': `https://teksure.com/blog/${detailPost.slug}` },
+            articleSection: detailPost.category,
+            keywords: detailPost.category,
+          }}
+        />
         <Navbar />
         <main className="min-h-screen bg-background">
           <PostDetail post={detailPost} />

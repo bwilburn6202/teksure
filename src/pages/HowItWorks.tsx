@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { UserPlus, Search, Wrench, CreditCard } from 'lucide-react';
 
@@ -12,6 +13,23 @@ const steps = [
 
 const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
+    <SEOHead
+      title="How TekSure Works — Get Tech Help in 4 Simple Steps"
+      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      path="/how-it-works"
+      jsonLd={{
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'How to Get Tech Support with TekSure',
+        description: 'Four simple steps to get your tech problem sorted by a verified technician.',
+        step: steps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.title,
+          text: s.desc,
+        })),
+      }}
+    />
     <Navbar />
     <main className="flex-1">
       {/* Header */}

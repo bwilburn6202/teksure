@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Check, Shield, Clock, Star } from 'lucide-react';
@@ -56,8 +57,68 @@ const trustBadges = [
   { icon: Star, label: 'Vetted technicians', sub: 'ID-checked, background-verified' },
 ];
 
+const pricingJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'TekSure Tech Support',
+    provider: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
+    description: 'Professional tech support for seniors and non-technical users — remote and on-site.',
+    url: 'https://teksure.com/pricing',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Tech Support Plans',
+      itemListElement: plans.map(plan => ({
+        '@type': 'Offer',
+        name: plan.name,
+        description: plan.desc,
+        price: plan.price.replace('£', ''),
+        priceCurrency: 'GBP',
+        url: 'https://teksure.com/book',
+        itemOffered: { '@type': 'Service', name: plan.name, description: plan.desc },
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How does the £15 deposit work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Book with just a £15 deposit. Pay the rest on the day of your appointment. If we can\'t fix it, you get a full refund — no questions asked.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer a no-fix, no-charge guarantee?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. If our technician cannot resolve your issue, you pay nothing — not even the deposit.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How quickly can I get an appointment?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer same-week appointments, often as soon as the next day depending on your location.',
+        },
+      },
+    ],
+  },
+];
+
 const Pricing = () => (
   <div className="min-h-screen bg-background flex flex-col">
+    <SEOHead
+      title="Tech Support Pricing | TekSure — From £49, Book with £15 Deposit"
+      description="Transparent tech support pricing: Remote Fix £49, On-Site Visit £99, Premium £149. Book with just a £15 deposit. No fix, no charge guarantee."
+      path="/pricing"
+      jsonLd={pricingJsonLd}
+    />
     <Navbar />
     <main className="flex-1">
       {/* Header */}

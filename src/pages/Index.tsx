@@ -128,13 +128,37 @@ const Index = () => {
         title="TekSure — Free Tech Help for Beginners | Step-by-Step Guides"
         description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
         path="/"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: 'TekSure',
-          url: 'https://teksure.lovable.app',
-          description: 'Free step-by-step tech guides for seniors and beginners. Plain English. No jargon.',
-        }}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            '@id': 'https://teksure.com/#organization',
+            name: 'TekSure',
+            url: 'https://teksure.com',
+            logo: 'https://teksure.com/og-image.png',
+            description: 'Free step-by-step tech guides for seniors and beginners. Plain English. No jargon.',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              contactType: 'customer support',
+              email: 'hello@teksure.com',
+              availableLanguage: 'English',
+            },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            '@id': 'https://teksure.com/#website',
+            url: 'https://teksure.com',
+            name: 'TekSure',
+            description: 'Free tech help for beginners and seniors — step-by-step guides, tools, and verified technicians.',
+            publisher: { '@id': 'https://teksure.com/#organization' },
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: { '@type': 'EntryPoint', urlTemplate: 'https://teksure.com/search?q={search_term_string}' },
+              'query-input': 'required name=search_term_string',
+            },
+          },
+        ]}
       />
       <Navbar />
 
