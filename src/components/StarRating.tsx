@@ -124,7 +124,7 @@ export function StarRating({
     }
 
     // upsert
-    const { error } = await supabase
+    const { error } = await (supabase as any)
       .from('guide_ratings')
       .upsert(payload, {
         onConflict: user ? 'guide_slug,user_id' : 'guide_slug,anon_key',
