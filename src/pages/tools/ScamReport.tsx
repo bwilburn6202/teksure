@@ -39,7 +39,7 @@ export default function ScamReport() {
     if (!form.type || !form.description) { toast.error('Please fill in the required fields.'); return; }
     setLoading(true);
     try {
-      await supabase.from('scam_reports').insert({
+      await (supabase as any).from('scam_reports').insert({
         scam_type: form.type,
         description: form.description,
         scam_url: form.url || null,

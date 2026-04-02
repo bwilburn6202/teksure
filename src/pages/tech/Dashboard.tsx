@@ -86,7 +86,7 @@ const TechDashboard = () => {
   }
 
   async function updateBookingStatus(id: string, status: string) {
-    const { error } = await supabase
+    const { error } = await (supabase as any)
       .from('bookings')
       .update({ status })
       .eq('id', id);

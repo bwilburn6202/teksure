@@ -134,7 +134,7 @@ export function StarRating({
       setUserStars(stars);
       setSubmitted(true);
       // refresh aggregate
-      const { data: stats } = await supabase
+      const { data: stats } = await (supabase as any)
         .from('guide_rating_stats')
         .select('avg_stars, rating_count')
         .eq('guide_slug', guideSlug)

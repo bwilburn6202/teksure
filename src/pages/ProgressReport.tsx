@@ -40,13 +40,14 @@ const catLabels: Record<string, string> = {
 };
 
 export default function ProgressReport() {
-  const completed = getCompletedGuides();
-  const total = completed.length;
-  const streak = getStreak(completed);
-  const categories = getCategoryBreakdown(completed);
+  const completedSet = getCompletedGuides();
+  const completedArr = Array.from(completedSet);
+  const total = completedArr.length;
+  const streak = getStreak(completedArr as any);
+  const categories = getCategoryBreakdown(completedArr as any);
   const nextGoal = GOALS.find(g => g > total) ?? GOALS[GOALS.length - 1];
   const pctToGoal = Math.min(100, (total / nextGoal) * 100);
-  const recentGuides = completed.slice(-5).reverse().map(slug => guides.find(g => g.slug === slug)).filter(Boolean);
+  const recentGuides = completedArr.slice(-5).reverse().map(slug => guides.find(g => g.slug === slug)).filter(Boolean);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(!!localStorage.getItem('teksure-report-email'));
 
