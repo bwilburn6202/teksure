@@ -85,7 +85,7 @@ export function StarRating({
       // user's own rating
       if (readOnly) { setLoaded(true); return; }
 
-      let query = supabase
+      let query = (supabase as any)
         .from('guide_ratings')
         .select('stars')
         .eq('guide_slug', guideSlug);
