@@ -80,7 +80,7 @@ const GetHelp = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <SEOHead title="Get Help — TekSure" description="Submit a help request to TekSure." path="/get-help" />
         <Navbar />
-        <main className="flex-1 flex items-center justify-center px-4 py-20">
+        <main id="main-content" tabIndex={-1} className="flex-1 flex items-center justify-center px-4 py-20 outline-none">
           <div
             className="max-w-md w-full text-center space-y-6"
           >
@@ -113,7 +113,7 @@ const GetHelp = () => {
       <SEOHead title="Get Help — TekSure" description="Tell us what's going on and we'll reach out to help." path="/get-help" />
       <Navbar />
 
-      <main className="flex-1 flex flex-col py-20 px-4">
+      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col py-20 px-4 outline-none">
         <div className="max-w-2xl w-full mx-auto">
 
           {/* Header */}
@@ -229,6 +229,7 @@ const GetHelp = () => {
 
             {error && (
               <div
+                role="alert"
                 className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm"
               >
                 {error}
@@ -238,13 +239,14 @@ const GetHelp = () => {
             <Button
               type="submit"
               disabled={submitting}
+              aria-busy={submitting}
               className="w-full h-11 text-base gap-2 rounded-xl mt-8"
               size="lg"
             >
               {submitting ? (
-                <><Loader2 className="h-4 w-4 animate-spin" /> Sending...</>
+                <><Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> Sending...</>
               ) : (
-                <>Send Request <ArrowRight className="h-4 w-4" /></>
+                <>Send Request <ArrowRight className="h-4 w-4" aria-hidden="true" /></>
               )}
             </Button>
 

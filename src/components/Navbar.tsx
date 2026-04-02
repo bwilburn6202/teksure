@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, Shield, Search, LogOut, User, ChevronDown, BookOpen, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ export function Navbar() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const dashboardPath = user
     ? user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin'
@@ -52,7 +54,8 @@ export function Navbar() {
       return (
         <>
           {directLinks.map((link) => (
-            <Link key={link.to} to={link.to} className="block text-lg font-medium py-2">
+            <Link key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center text-lg font-medium min-h-[44px] py-2">
               {link.label}
             </Link>
           ))}
@@ -60,7 +63,8 @@ export function Navbar() {
             <div key={group.label} className="space-y-1">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 pt-3 pb-1">{group.label}</p>
               {group.links.map((link) => (
-                <Link key={link.to} to={link.to} className="block text-lg font-medium py-2">
+                <Link key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center text-lg font-medium min-h-[44px] py-2">
                   {link.label}
                 </Link>
               ))}
@@ -103,15 +107,15 @@ export function Navbar() {
 
   const AuthLinks = ({ mobile = false }: { mobile?: boolean }) => {
     const linkClass = mobile
-      ? 'text-lg font-medium py-2'
+      ? 'flex items-center text-lg font-medium min-h-[44px] py-2'
       : 'text-sm text-muted-foreground hover:text-foreground transition-colors';
 
     return (
       <>
-        <Link to={dashboardPath} className={linkClass}>Dashboard</Link>
-        <Link to="/guides" className={linkClass}>Guides</Link>
-        <Link to="/favorites" className={linkClass}>Favorites</Link>
-        <Link to="/tools" className={linkClass}>Tools</Link>
+        <Link to={dashboardPath} onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Dashboard</Link>
+        <Link to="/guides" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Guides</Link>
+        <Link to="/favorites" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Favorites</Link>
+        <Link to="/tools" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Tools</Link>
       </>
     );
   };
@@ -166,38 +170,53 @@ export function Navbar() {
           )}
         </nav>
 
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon"><Menu className="h-5 w-5" /></Button>
-          </SheetTrigger>
-          <SheetContent>
-            <nav className="flex flex-col gap-4 mt-8">
-              {user ? (
-                <>
-                  <div className="flex items-center gap-3 mb-2">
-                    <Avatar className="h-10 w-10">
-                      <AvatarFallback className="bg-secondary text-secondary-foreground">{initials}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-medium text-sm">{user.fullName}</p>
-                      <p className="text-xs text-muted-foreground">{user.email}</p>
+        <div className="flex items-center gap-1 md:hidden">
+          {/* Mobile search icon */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-11 w-11"
+            aria-label="Search"
+            onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
+          >
+            <Search className="h-5 w-5" />
+          </Button>
+
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="h-11 w-11" aria-label="Open menu">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <nav className="flex flex-col gap-4 mt-8">
+                {user ? (
+                  <>
+                    <div className="flex items-center gap-3 mb-2">
+                      <Avatar className="h-10 w-10">
+                        <AvatarFallback className="bg-secondary text-secondary-foreground">{initials}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-medium text-sm">{user.fullName}</p>
+                        <p className="text-xs text-muted-foreground">{user.email}</p>
+                      </div>
                     </div>
-                  </div>
-                  <AuthLinks mobile />
-                  <Button variant="ghost" className="justify-start" onClick={async () => { await logout(); navigate('/'); }}>
-                    <LogOut className="h-4 w-4 mr-2" /> Sign Out
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <PublicLinks mobile />
-                  <Button variant="ghost" onClick={() => navigate('/login')}>Sign In</Button>
-                  <Button onClick={() => navigate('/login')}>Sign Up</Button>
-                </>
-              )}
-            </nav>
-          </SheetContent>
-        </Sheet>
+                    <AuthLinks mobile />
+                    <Button variant="ghost" className="justify-start min-h-[44px]" onClick={async () => { await logout(); navigate('/'); setMobileMenuOpen(false); }}>
+                      <LogOut className="h-4 w-4 mr-2" /> Sign Out
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <PublicLinks mobile />
+                    <Button variant="ghost" className="min-h-[44px]" onClick={() => { navigate('/login'); setMobileMenuOpen(false); }}>Sign In</Button>
+                    <Button className="min-h-[44px]" onClick={() => { navigate('/login'); setMobileMenuOpen(false); }}>Sign Up</Button>
+                  </>
+                )}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );

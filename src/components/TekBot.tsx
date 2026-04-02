@@ -606,19 +606,21 @@ export function TekBot() {
       <>
         {!open && (
           <button
+            ref={openButtonRef}
             onClick={() => setOpen(true)}
             className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
             style={{ backgroundColor: 'hsl(172 50% 40%)', minHeight: 48, fontSize: 16 }}
             aria-label="Open TekBot chat assistant"
+            aria-haspopup="dialog"
           >
-            <Bot className="h-5 w-5" />
+            <Bot className="h-5 w-5" aria-hidden="true" />
             <span>TekBot</span>
             {conversationCount > 0 && (
               <span
                 className="ml-0.5 flex items-center gap-1 rounded-full bg-white/20 px-1.5 py-0.5 text-xs font-normal"
                 aria-label={`${conversationCount} messages in current session`}
               >
-                <MessageSquare className="h-3 w-3" />
+                <MessageSquare className="h-3 w-3" aria-hidden="true" />
                 {conversationCount}
               </span>
             )}
@@ -630,6 +632,9 @@ export function TekBot() {
       <>
         {open && (
           <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="tekbot-heading"
             className={`fixed z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border ${
               isMobile
                 ? 'inset-x-2 bottom-2 top-16'
@@ -659,17 +664,18 @@ export function TekBot() {
                     <a
                       key={g.slug}
                       href={`/guides/${g.slug}`}
+                      aria-label={`Read guide: ${g.title}${g.readTime ? ` (${g.readTime})` : ''}`}
                       className="flex flex-col rounded-xl px-3 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all group"
                     >
                       <div className="flex items-center gap-2 mb-1">
-                        <span style={{ fontSize: 18 }}>{g.thumbnailEmoji}</span>
-                        <ExternalLink className="h-3 w-3 text-white/65 group-hover:text-white/90 transition-colors ml-auto shrink-0" />
+                        <span style={{ fontSize: 18 }} aria-hidden="true">{g.thumbnailEmoji}</span>
+                        <ExternalLink className="h-3 w-3 text-white/65 group-hover:text-white/90 transition-colors ml-auto shrink-0" aria-hidden="true" />
                       </div>
                       <span className="text-white/80 font-medium leading-tight group-hover:text-white transition-colors line-clamp-2" style={{ fontSize: 12 }}>
                         {g.title}
                       </span>
                       {g.readTime && (
-                        <span className="text-white/65 mt-1" style={{ fontSize: 10 }}>{g.readTime}</span>
+                        <span className="text-white/65 mt-1" style={{ fontSize: 10 }} aria-hidden="true">{g.readTime}</span>
                       )}
                     </a>
                   ))}
@@ -683,9 +689,9 @@ export function TekBot() {
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3" style={{ backgroundColor: 'hsl(220 70% 20%)' }}>
               <div className="flex items-center gap-2 text-white">
-                <Bot className="h-5 w-5" />
+                <Bot className="h-5 w-5" aria-hidden="true" />
                 <div>
-                  <span className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
+                  <span id="tekbot-heading" className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
                   <span className="text-white/80" style={{ fontSize: 11 }}>
                     {conversationCount > 0
                       ? `${conversationCount} message${conversationCount === 1 ? '' : 's'} this session`
@@ -701,10 +707,9 @@ export function TekBot() {
                     onClick={handleClearChat}
                     className="flex items-center gap-1 rounded-lg px-3 py-2 text-white/80 hover:text-white hover:bg-white/10 transition-all"
                     style={{ fontSize: 12, minHeight: 44 }}
-                    title="Clear this conversation and start fresh"
                     aria-label="Clear conversation history"
                   >
-                    <Trash2 className="h-4 w-4" />
+                    <Trash2 className="h-4 w-4" aria-hidden="true" />
                     <span className="hidden sm:inline">Clear</span>
                   </button>
                 )}
@@ -715,50 +720,58 @@ export function TekBot() {
                     onClick={() => setShowDevicePicker(v => !v)}
                     className="flex items-center gap-1 rounded-lg px-3 py-2 text-white/80 hover:text-white hover:bg-white/10 transition-all"
                     style={{ fontSize: 12, minHeight: 44 }}
-                    title="Set your device"
+                    aria-label={device ? `Device: ${deviceLabel(device)} — change device` : 'Select your device type'}
+                    aria-expanded={showDevicePicker}
+                    aria-haspopup="listbox"
                   >
                     {device ? (
                       <>
-                        {device === 'windows' && <Monitor className="h-3.5 w-3.5" />}
-                        {device === 'mac' && <Laptop className="h-3.5 w-3.5" />}
-                        {(device === 'iphone' || device === 'android') && <Smartphone className="h-3.5 w-3.5" />}
+                        {device === 'windows' && <Monitor className="h-3.5 w-3.5" aria-hidden="true" />}
+                        {device === 'mac' && <Laptop className="h-3.5 w-3.5" aria-hidden="true" />}
+                        {(device === 'iphone' || device === 'android') && <Smartphone className="h-3.5 w-3.5" aria-hidden="true" />}
                         <span>{deviceLabel(device)}</span>
                       </>
                     ) : (
                       <>
-                        <Settings2 className="h-3.5 w-3.5" />
+                        <Settings2 className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>My device</span>
                       </>
                     )}
-                    <ChevronDown className="h-3 w-3 opacity-60" />
+                    <ChevronDown className="h-3 w-3 opacity-60" aria-hidden="true" />
                   </button>
 
                   {/* Device dropdown */}
                   <>
                     {showDevicePicker && (
                       <div
+                        role="listbox"
+                        aria-label="Select your device type"
                         className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-white shadow-xl"
                         style={{ minWidth: 160 }}
                       >
-                        <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground">Your device</p>
+                        <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground" aria-hidden="true">Your device</p>
                         {DEVICE_OPTIONS.map(opt => (
                           <button
                             key={opt.value}
+                            role="option"
+                            aria-selected={device === opt.value}
                             onClick={() => handleSetDevice(opt.value)}
                             className={`flex w-full items-center gap-2.5 px-3 py-2 text-sm hover:bg-muted/40 transition-colors ${device === opt.value ? 'text-secondary font-semibold' : 'text-foreground'}`}
                           >
-                            {opt.icon}
+                            <span aria-hidden="true">{opt.icon}</span>
                             {opt.label}
                           </button>
                         ))}
                         {device && (
                           <>
-                            <div className="mx-3 my-1 border-t border-border" />
+                            <div className="mx-3 my-1 border-t border-border" aria-hidden="true" />
                             <button
+                              role="option"
+                              aria-selected={false}
                               onClick={() => handleSetDevice(null)}
                               className="flex w-full items-center gap-2.5 px-3 py-2 pb-2 text-sm text-muted-foreground hover:bg-muted/40 transition-colors"
                             >
-                              Clear
+                              Clear device selection
                             </button>
                           </>
                         )}
@@ -768,13 +781,17 @@ export function TekBot() {
                 </div>
 
                 <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-11 w-11" aria-label="Close TekBot">
-                  <X className="h-4 w-4" />
+                  <X className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </div>
             </div>
 
             {/* Messages */}
             <div
+              role="log"
+              aria-live="polite"
+              aria-relevant="additions"
+              aria-label="Chat messages"
               className="flex-1 overflow-y-auto p-4 space-y-3"
               style={{ backgroundColor: 'hsl(210 25% 97%)' }}
               onClick={() => setShowDevicePicker(false)}
@@ -799,20 +816,21 @@ export function TekBot() {
                   {msg.role === 'bot' && msg.relatedGuides && msg.relatedGuides.length > 0 && (
                     <div className="mt-2 max-w-[88%] w-full">
                       <p className="text-xs text-muted-foreground font-medium mb-1.5 flex items-center gap-1">
-                        <BookOpen className="h-3 w-3" /> Related guides
+                        <BookOpen className="h-3 w-3" aria-hidden="true" /> Related guides
                       </p>
                       <div className="space-y-1">
                         {msg.relatedGuides.map(g => (
                           <a
                             key={g.slug}
                             href={`/guides/${g.slug}`}
+                            aria-label={`Read guide: ${g.title}`}
                             className="flex items-center gap-2 rounded-lg px-3 py-2 bg-white border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
                           >
-                            <span>{g.thumbnailEmoji}</span>
+                            <span aria-hidden="true">{g.thumbnailEmoji}</span>
                             <span className="flex-1 font-medium leading-tight group-hover:text-primary transition-colors line-clamp-1">
                               {g.title}
                             </span>
-                            <ExternalLink className="h-3 w-3 text-muted-foreground shrink-0" />
+                            <ExternalLink className="h-3 w-3 text-muted-foreground shrink-0" aria-hidden="true" />
                           </a>
                         ))}
                       </div>
@@ -822,10 +840,11 @@ export function TekBot() {
               ))}
 
               {typing && (
-                <div className="flex justify-start">
+                <div className="flex justify-start" role="status" aria-label="TekBot is typing">
                   <div
                     className="flex gap-1.5 items-center rounded-2xl px-4 py-3"
                     style={{ backgroundColor: 'hsl(0 0% 100%)', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
+                    aria-hidden="true"
                   >
                     <span className="h-2 w-2 rounded-full bg-muted-foreground animate-bounce" style={{ animationDelay: '0ms' }} />
                     <span className="h-2 w-2 rounded-full bg-muted-foreground animate-bounce" style={{ animationDelay: '150ms' }} />
@@ -854,14 +873,16 @@ export function TekBot() {
 
             {/* Input */}
             <div className="flex items-center gap-2 border-t border-border bg-white px-3 py-3">
+              <label htmlFor="tekbot-input" className="sr-only">Type your question for TekBot</label>
               <input
+                id="tekbot-input"
+                ref={inputRef}
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && send()}
                 placeholder={device ? `Ask about your ${deviceLabel(device)}…` : 'Type your question…'}
                 className="flex-1 rounded-lg border border-input bg-background px-3 py-2 outline-none focus:ring-2 focus:ring-secondary"
                 style={{ fontSize: 15, minHeight: 44 }}
-                aria-label="Type your question for TekBot"
               />
               <Button
                 onClick={() => send()}
@@ -870,7 +891,7 @@ export function TekBot() {
                 className="h-11 w-11 rounded-lg bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                 aria-label="Send message"
               >
-                <Send className="h-4 w-4" />
+                <Send className="h-4 w-4" aria-hidden="true" />
               </Button>
             </div>
 

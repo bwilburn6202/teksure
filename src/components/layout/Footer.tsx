@@ -37,12 +37,12 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t bg-muted/30">
+    <footer aria-label="Site footer" className="border-t bg-muted/30">
       <div className="container py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-2">
-            <Link to="/" className="inline-block mb-4">
+            <Link to="/" className="inline-block mb-4" aria-label="TekSure home">
               <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" loading="lazy" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
@@ -53,10 +53,10 @@ export function Footer() {
           {/* Link columns */}
           {columns.map((col) => (
             <div key={col.title}>
-              <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+              <h4 id={`footer-nav-${col.title.toLowerCase()}`} className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
                 {col.title}
               </h4>
-              <nav className="flex flex-col gap-2.5">
+              <nav aria-labelledby={`footer-nav-${col.title.toLowerCase()}`} className="flex flex-col gap-2.5">
                 {col.links.map((link) => (
                   <Link
                     key={link.to}

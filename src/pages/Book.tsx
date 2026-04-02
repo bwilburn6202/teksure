@@ -201,7 +201,7 @@ export default function Book() {
       <>
         <SEOHead title="Booking Confirmed | TekSure" description="Your TekSure booking is confirmed." path="/book" />
         <Navbar />
-        <main className="min-h-screen bg-background">
+        <main id="main-content" tabIndex={-1} className="min-h-screen bg-background outline-none">
           <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
             <div
               className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center"
@@ -251,7 +251,7 @@ export default function Book() {
         path="/book"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background" id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
         <div className="container py-16 max-w-2xl mx-auto">
 
           {/* Header */}
@@ -268,11 +268,15 @@ export default function Book() {
           <div
             className="mb-10"
           >
-            <div className="flex justify-between text-sm text-muted-foreground mb-2">
+            <div className="flex justify-between text-sm text-muted-foreground mb-2" aria-hidden="true">
               <span>Step {step + 1} of 4</span>
               <span>{['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}</span>
             </div>
-            <Progress value={progress} className="h-2" />
+            <Progress
+              value={progress}
+              className="h-2"
+              aria-label={`Booking progress: step ${step + 1} of 4 — ${['Choose service', 'Pick a time', 'Your details', 'Payment'][step] ?? 'Payment'}`}
+            />
           </div>
 
           <>
@@ -288,9 +292,10 @@ export default function Book() {
                       <button
                         key={s.id}
                         onClick={() => { setForm(f => ({ ...f, serviceType: s.id })); setStep(1); }}
+                        aria-pressed={form.serviceType === s.id}
                         className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card text-left transition-all hover:border-primary/30 hover:bg-card/80"
                       >
-                        <span className="text-2xl shrink-0">{s.emoji}</span>
+                        <span className="text-2xl shrink-0" aria-hidden="true">{s.emoji}</span>
                         <div>
                           <div className="font-semibold">{s.label}</div>
                           <div className="text-sm text-muted-foreground mt-0.5">{s.desc}</div>
@@ -331,42 +336,46 @@ export default function Book() {
 
                 {/* Date picker */}
                 <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
-                  <Calendar className="h-4 w-4" /> Choose a date
+                  <Calendar className="h-4 w-4" aria-hidden="true" /> Choose a date
                 </h3>
-                <div className="grid grid-cols-3 sm:grid-cols-7 gap-2 mb-8">
+                <div className="grid grid-cols-3 sm:grid-cols-7 gap-2 mb-8" role="group" aria-label="Select a date">
                   {availableDates.map(d => (
                     <button
                       key={d.date}
                       onClick={() => setForm(f => ({ ...f, date: d.date }))}
+                      aria-pressed={form.date === d.date}
+                      aria-label={`${d.dayName} ${d.label}${form.date === d.date ? ' (selected)' : ''}`}
                       className={`flex flex-col items-center p-3 sm:p-3 rounded-lg border transition-all text-sm font-medium min-h-[64px] ${
                         form.date === d.date
                           ? 'border-primary bg-primary text-primary-foreground'
                           : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
                       }`}
                     >
-                      <span className="text-xs font-normal opacity-70">{d.dayName}</span>
-                      <span className="text-base font-bold">{d.label.split(' ')[0]}</span>
-                      <span className="text-xs opacity-70">{d.label.split(' ')[1]}</span>
+                      <span className="text-xs font-normal opacity-70" aria-hidden="true">{d.dayName}</span>
+                      <span className="text-base font-bold" aria-hidden="true">{d.label.split(' ')[0]}</span>
+                      <span className="text-xs opacity-70" aria-hidden="true">{d.label.split(' ')[1]}</span>
                     </button>
                   ))}
                 </div>
 
                 {/* Time slot picker */}
                 <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
-                  <Clock className="h-4 w-4" /> Preferred time
+                  <Clock className="h-4 w-4" aria-hidden="true" /> Preferred time
                 </h3>
-                <div className="grid gap-3 sm:grid-cols-3 mb-8">
+                <div className="grid gap-3 sm:grid-cols-3 mb-8" role="group" aria-label="Select a time slot">
                   {slots.map(s => (
                     <button
                       key={s.id}
                       onClick={() => setForm(f => ({ ...f, slot: s.id }))}
+                      aria-pressed={form.slot === s.id}
+                      aria-label={`${s.label}, ${s.time}${form.slot === s.id ? ' (selected)' : ''}`}
                       className={`flex flex-col items-center gap-1 p-4 rounded-xl border transition-all ${
                         form.slot === s.id
                           ? 'border-primary bg-primary/10'
                           : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
                       }`}
                     >
-                      <span className="text-2xl">{s.emoji}</span>
+                      <span className="text-2xl" aria-hidden="true">{s.emoji}</span>
                       <span className="font-semibold text-sm">{s.label}</span>
                       <span className="text-xs text-muted-foreground">{s.time}</span>
                     </button>
@@ -475,7 +484,7 @@ export default function Book() {
                   </CardContent>
                 </Card>
 
-                {error && <p className="text-destructive text-sm mb-4 font-medium">{error}</p>}
+                {error && <p role="alert" className="text-destructive text-sm mb-4 font-medium">{error}</p>}
 
                 <div className="flex gap-3">
                   <Button variant="outline" onClick={() => setStep(1)} className="rounded-xl">← Back</Button>
@@ -515,12 +524,14 @@ export default function Book() {
                 </Card>
 
                 {/* Payment options */}
-                <div className="space-y-3 mb-8">
+                <div role="radiogroup" aria-label="Payment option" className="space-y-3 mb-8">
                   <button
+                    role="radio"
+                    aria-checked={paymentOption === 'day'}
                     onClick={() => setPaymentOption('day')}
                     className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-all text-left ${paymentOption === 'day' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                   >
-                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-primary' : 'border-border'}`}>
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                       {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                     </div>
                     <div>
@@ -530,10 +541,12 @@ export default function Book() {
                   </button>
 
                   <button
+                    role="radio"
+                    aria-checked={paymentOption === 'deposit'}
                     onClick={() => setPaymentOption('deposit')}
                     className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-all text-left ${paymentOption === 'deposit' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                   >
-                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-primary' : 'border-border'}`}>
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                       {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                     </div>
                     <div>
@@ -548,7 +561,7 @@ export default function Book() {
                   <Card className="rounded-xl border border-primary/20 bg-primary/5 mb-8">
                     <CardContent className="p-4 text-center">
                       <div className="flex items-center justify-center gap-2 mb-3">
-                        <Lock className="h-4 w-4 text-primary" />
+                        <Lock className="h-4 w-4 text-primary" aria-hidden="true" />
                         <p className="text-sm font-semibold">Secure checkout via Stripe</p>
                       </div>
                       <p className="text-xs text-muted-foreground mb-3">
@@ -576,7 +589,7 @@ export default function Book() {
                   </CardContent>
                 </Card>
 
-                {error && <p className="text-destructive text-sm mb-4 font-medium">{error}</p>}
+                {error && <p role="alert" className="text-destructive text-sm mb-4 font-medium">{error}</p>}
 
                 <div className="flex gap-3">
                   <Button variant="outline" onClick={() => setStep(2)} className="rounded-xl">← Back</Button>

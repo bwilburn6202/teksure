@@ -90,6 +90,20 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
           </button>
         </div>
 
+        {/* Screen reader announcement for result count */}
+        <div
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className="sr-only"
+        >
+          {query.trim() && (
+            hasResults
+              ? `${results.guides.length + results.glossary.length} result${results.guides.length + results.glossary.length === 1 ? '' : 's'} found`
+              : 'No results found'
+          )}
+        </div>
+
         {query.trim() && (
           <div className="max-h-[50vh] overflow-y-auto p-2">
             {hasResults ? (
@@ -102,8 +116,9 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                         key={g.slug}
                         onClick={() => navigateTo(`/guides/${g.slug}`)}
                         className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-muted flex items-center gap-3 transition-colors"
+                        aria-label={`Guide: ${g.title} — ${categoryLabels[g.category]}, ${g.readTime}`}
                       >
-                        <span className="text-xl shrink-0">{g.thumbnailEmoji}</span>
+                        <span className="text-xl shrink-0" aria-hidden="true">{g.thumbnailEmoji}</span>
                         <div className="min-w-0">
                           <p className="text-sm font-medium truncate">{g.title}</p>
                           <p className="text-xs text-muted-foreground">{categoryLabels[g.category]} · {g.readTime}</p>
