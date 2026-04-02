@@ -12,34 +12,34 @@ type Budget = 'under25' | '25to75' | '75to150' | 'over150';
 interface GiftItem { name: string; emoji: string; price: string; why: string; recipient: Recipient[]; budget: Budget[]; tag?: string; searchQuery: string; }
 
 const gifts: GiftItem[] = [
-  { name: 'Amazon Echo Dot', emoji: '🔊', price: '~£35', why: 'Voice-controlled speaker — set reminders, play music, ask questions hands-free. Perfect for seniors who find phones fiddly.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75'], tag: 'Top Pick', searchQuery: 'Amazon Echo Dot' },
-  { name: 'Kindle Paperwhite', emoji: '📖', price: '~£120', why: 'Lightweight e-reader with adjustable text size and backlight — perfect for avid readers or those with vision difficulties.', recipient: ['senior', 'parent', 'anyone'], budget: ['75to150'], tag: 'Bestseller', searchQuery: 'Kindle Paperwhite' },
-  { name: 'iPad (entry level)', emoji: '📱', price: '~£329', why: 'The easiest tablet to learn on. Video calls, photos, guides, email — all in one simple device.', recipient: ['senior', 'parent', 'anyone'], budget: ['over150'], tag: 'Life Changer', searchQuery: 'Apple iPad 10th generation' },
-  { name: 'Ring Video Doorbell', emoji: '🔔', price: '~£50–100', why: 'See and speak to visitors on your phone — no need to rush to the door. Great safety gift for older relatives living alone.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75', '75to150'], searchQuery: 'Ring Video Doorbell' },
-  { name: 'Tile Bluetooth Tracker (4-pack)', emoji: '🔑', price: '~£35', why: 'Attach to keys, wallet, or bag — find them instantly with a phone app. Brilliant for anyone who regularly misplaces things.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75'], searchQuery: 'Tile Bluetooth Tracker 4 pack' },
-  { name: 'Portable phone charger', emoji: '🔋', price: '~£20–35', why: 'Never run out of battery on the go. Choose a high-capacity (20,000mAh) one for travelling or a compact slim one for everyday use.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'portable phone charger power bank' },
-  { name: 'Wireless charging pad', emoji: '⚡', price: '~£15–25', why: 'Just place the phone on the pad to charge — no fumbling with cables. Works with most modern iPhones and Android phones.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'wireless charging pad Qi' },
-  { name: 'Smart plug (2-pack)', emoji: '🔌', price: '~£25', why: 'Turn any lamp or appliance on/off with your voice or phone. Great starter smart home gift that works with Alexa and Google.', recipient: ['senior', 'parent', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'smart plug 2 pack Alexa Google' },
-  { name: 'Over-ear noise-cancelling headphones', emoji: '🎧', price: '~£80–150', why: 'Block out background noise for clearer calls and better music. The Sony WH-1000XM4 or Jabra Evolve 40 are excellent mid-range options.', recipient: ['parent', 'child', 'anyone'], budget: ['75to150'], tag: 'Popular', searchQuery: 'over ear noise cancelling headphones' },
-  { name: 'Laptop stand + USB hub', emoji: '💻', price: '~£30–50', why: 'Raises the laptop to eye level to reduce neck strain, and adds extra USB ports. Great for home workers.', recipient: ['parent', 'child', 'anyone'], budget: ['25to75'], searchQuery: 'laptop stand adjustable USB hub' },
-  { name: 'Bluetooth speaker (waterproof)', emoji: '🎵', price: '~£30–60', why: 'Portable speaker for the garden, kitchen, or bathroom. JBL Clip and UE Wonderboom are compact and excellent.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['25to75'], searchQuery: 'waterproof bluetooth portable speaker' },
-  { name: 'Photo printing subscription (Chatbooks / Motif)', emoji: '🖼️', price: '~£10–20/mo', why: 'Automatically turns phone photos into a printed album or prints. A lovely ongoing gift that doesn\'t require tech knowledge.', recipient: ['senior', 'parent', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'Chatbooks photo book subscription' },
-  { name: 'Smart watch (entry level)', emoji: '⌚', price: '~£80–150', why: 'Step count, heart rate, reminders, and calls from the wrist. Samsung Galaxy Watch and Apple Watch SE are brilliant entry-level options.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['75to150'], tag: 'Popular', searchQuery: 'Samsung Galaxy Watch SE Apple Watch' },
-  { name: 'USB-C cables (multi-pack)', emoji: '🔌', price: '~£10–20', why: 'Always useful — most new phones, tablets, and laptops use USB-C. Anker cables are cheap, fast, and durable.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25'], searchQuery: 'Anker USB-C cable multi pack' },
+  { name: 'Amazon Echo Dot', emoji: '🔊', price: '~$35', why: 'Voice-controlled speaker — set reminders, play music, ask questions hands-free. Perfect for seniors who find phones fiddly.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75'], tag: 'Top Pick', searchQuery: 'Amazon Echo Dot' },
+  { name: 'Kindle Paperwhite', emoji: '📖', price: '~$120', why: 'Lightweight e-reader with adjustable text size and backlight — perfect for avid readers or those with vision difficulties.', recipient: ['senior', 'parent', 'anyone'], budget: ['75to150'], tag: 'Bestseller', searchQuery: 'Kindle Paperwhite' },
+  { name: 'iPad (entry level)', emoji: '📱', price: '~$329', why: 'The easiest tablet to learn on. Video calls, photos, guides, email — all in one simple device.', recipient: ['senior', 'parent', 'anyone'], budget: ['over150'], tag: 'Life Changer', searchQuery: 'Apple iPad 10th generation' },
+  { name: 'Ring Video Doorbell', emoji: '🔔', price: '~$50–100', why: 'See and speak to visitors on your phone — no need to rush to the door. Great safety gift for older relatives living alone.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75', '75to150'], searchQuery: 'Ring Video Doorbell' },
+  { name: 'Tile Bluetooth Tracker (4-pack)', emoji: '🔑', price: '~$35', why: 'Attach to keys, wallet, or bag — find them instantly with a phone app. Brilliant for anyone who regularly misplaces things.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75'], searchQuery: 'Tile Bluetooth Tracker 4 pack' },
+  { name: 'Portable phone charger', emoji: '🔋', price: '~$20–35', why: 'Never run out of battery on the go. Choose a high-capacity (20,000mAh) one for travelling or a compact slim one for everyday use.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'portable phone charger power bank' },
+  { name: 'Wireless charging pad', emoji: '⚡', price: '~$15–25', why: 'Just place the phone on the pad to charge — no fumbling with cables. Works with most modern iPhones and Android phones.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'wireless charging pad Qi' },
+  { name: 'Smart plug (2-pack)', emoji: '🔌', price: '~$25', why: 'Turn any lamp or appliance on/off with your voice or phone. Great starter smart home gift that works with Alexa and Google.', recipient: ['senior', 'parent', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'smart plug 2 pack Alexa Google' },
+  { name: 'Over-ear noise-cancelling headphones', emoji: '🎧', price: '~$80–150', why: 'Block out background noise for clearer calls and better music. The Sony WH-1000XM4 or Jabra Evolve 40 are excellent mid-range options.', recipient: ['parent', 'child', 'anyone'], budget: ['75to150'], tag: 'Popular', searchQuery: 'over ear noise cancelling headphones' },
+  { name: 'Laptop stand + USB hub', emoji: '💻', price: '~$30–50', why: 'Raises the laptop to eye level to reduce neck strain, and adds extra USB ports. Great for home workers.', recipient: ['parent', 'child', 'anyone'], budget: ['25to75'], searchQuery: 'laptop stand adjustable USB hub' },
+  { name: 'Bluetooth speaker (waterproof)', emoji: '🎵', price: '~$30–60', why: 'Portable speaker for the garden, kitchen, or bathroom. JBL Clip and UE Wonderboom are compact and excellent.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['25to75'], searchQuery: 'waterproof bluetooth portable speaker' },
+  { name: 'Photo printing subscription (Chatbooks / Motif)', emoji: '🖼️', price: '~$10–20/mo', why: 'Automatically turns phone photos into a printed album or prints. A lovely ongoing gift that doesn\'t require tech knowledge.', recipient: ['senior', 'parent', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'Chatbooks photo book subscription' },
+  { name: 'Smart watch (entry level)', emoji: '⌚', price: '~$80–150', why: 'Step count, heart rate, reminders, and calls from the wrist. Samsung Galaxy Watch and Apple Watch SE are brilliant entry-level options.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['75to150'], tag: 'Popular', searchQuery: 'Samsung Galaxy Watch SE Apple Watch' },
+  { name: 'USB-C cables (multi-pack)', emoji: '🔌', price: '~$10–20', why: 'Always useful — most new phones, tablets, and laptops use USB-C. Anker cables are cheap, fast, and durable.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25'], searchQuery: 'Anker USB-C cable multi pack' },
 ];
 
 const filters: { label: string; value: Recipient | 'anyone' }[] = [
   { label: 'Anyone', value: 'anyone' },
   { label: 'Older relative / senior', value: 'senior' },
-  { label: 'Parent / mum or dad', value: 'parent' },
+  { label: 'Parent / mom or dad', value: 'parent' },
   { label: 'Teen / young person', value: 'child' },
 ];
 
 const budgets: { label: string; value: Budget }[] = [
-  { label: 'Under £25', value: 'under25' },
-  { label: '£25–£75', value: '25to75' },
-  { label: '£75–£150', value: '75to150' },
-  { label: '£150+', value: 'over150' },
+  { label: 'Under $25', value: 'under25' },
+  { label: '$25–$75', value: '25to75' },
+  { label: '$75–$150', value: '75to150' },
+  { label: '$150+', value: 'over150' },
 ];
 
 export default function TechGiftGuide() {

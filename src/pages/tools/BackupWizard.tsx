@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import {
   HardDrive, Cloud, Camera, FileText, Users, Package,
   ChevronRight, CheckCircle2, RotateCcw, ArrowRight, Shield,
+  Monitor, Laptop, Smartphone, Tablet, Lock, Zap,
+  type LucideIcon,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -26,11 +28,11 @@ interface Plan {
 
 /* ── Step data ───────────────────────────────────── */
 
-const backupItems: { id: BackupItem; label: string; emoji: string; desc: string }[] = [
-  { id: 'photos', label: 'Photos & Videos', emoji: '📸', desc: 'Your precious memories and family pictures' },
-  { id: 'documents', label: 'Documents & Files', emoji: '📄', desc: 'Important letters, forms, and saved files' },
-  { id: 'contacts', label: 'Contacts', emoji: '👥', desc: 'Phone numbers, email addresses, and addresses' },
-  { id: 'everything', label: 'Everything', emoji: '📦', desc: 'A full backup of your entire device' },
+const backupItems: { id: BackupItem; label: string; icon: LucideIcon; desc: string }[] = [
+  { id: 'photos', label: 'Photos & Videos', icon: Camera, desc: 'Your precious memories and family pictures' },
+  { id: 'documents', label: 'Documents & Files', icon: FileText, desc: 'Important letters, forms, and saved files' },
+  { id: 'contacts', label: 'Contacts', icon: Users, desc: 'Phone numbers, email addresses, and addresses' },
+  { id: 'everything', label: 'Everything', icon: Package, desc: 'A full backup of your entire device' },
 ];
 
 const destinations: { id: BackupDest; label: string; icon: typeof Cloud; color: string; desc: string; pros: string }[] = [
@@ -39,11 +41,11 @@ const destinations: { id: BackupDest; label: string; icon: typeof Cloud; color: 
   { id: 'both', label: 'Both (Recommended)', icon: Shield, color: 'text-green-500', desc: 'Cloud backup + an external hard drive copy', pros: 'Maximum protection · Best practice for important data' },
 ];
 
-const devices: { id: DeviceType; label: string; emoji: string }[] = [
-  { id: 'windows', label: 'Windows PC or Laptop', emoji: '💻' },
-  { id: 'mac', label: 'Mac (MacBook or iMac)', emoji: '🍎' },
-  { id: 'iphone', label: 'iPhone or iPad', emoji: '📱' },
-  { id: 'android', label: 'Android Phone or Tablet', emoji: '📲' },
+const devices: { id: DeviceType; label: string; icon: LucideIcon }[] = [
+  { id: 'windows', label: 'Windows PC or Laptop', icon: Monitor },
+  { id: 'mac', label: 'Mac (MacBook or iMac)', icon: Laptop },
+  { id: 'iphone', label: 'iPhone or iPad', icon: Smartphone },
+  { id: 'android', label: 'Android Phone or Tablet', icon: Tablet },
 ];
 
 /* ── Instructions generator ─────────────────────── */
@@ -295,7 +297,7 @@ export default function BackupWizard() {
           <HardDrive className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Data Backup Wizard</h1>
-            <p className="text-muted-foreground mt-1">3 quick questions — then your personalised backup plan.</p>
+            <p className="text-muted-foreground mt-1">3 quick questions — then your personalized backup plan.</p>
           </div>
         </div>
 
@@ -317,19 +319,19 @@ export default function BackupWizard() {
                   <div className="text-5xl mb-4">💾</div>
                   <h2 className="text-xl font-semibold mb-3">Is your data backed up?</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
-                    Phones break. Computers crash. A backup means you never lose your photos, contacts, or important documents. This wizard gives you a personalised plan in under 3 minutes.
+                    Phones break. Computers crash. A backup means you never lose your photos, contacts, or important documents. This wizard gives you a personalized plan in under 3 minutes.
                   </p>
                 </CardContent>
               </Card>
 
               <div className="grid grid-cols-3 gap-3 mb-8 text-center text-sm">
                 {[
-                  { emoji: '📸', label: 'Protect your photos' },
-                  { emoji: '🔒', label: 'Keep documents safe' },
-                  { emoji: '⚡', label: '3 questions only' },
+                  { icon: Camera, label: 'Protect your photos' },
+                  { icon: Lock, label: 'Keep documents safe' },
+                  { icon: Zap, label: '3 questions only' },
                 ].map(item => (
                   <div key={item.label} className="bg-muted/50 rounded-xl p-3">
-                    <div className="text-2xl mb-1">{item.emoji}</div>
+                    <div className="flex justify-center mb-1"><item.icon className="h-6 w-6 text-primary" /></div>
                     <div className="text-xs text-muted-foreground font-medium">{item.label}</div>
                   </div>
                 ))}
@@ -362,7 +364,7 @@ export default function BackupWizard() {
                         selected ? 'border-primary bg-primary/10 shadow-sm' : 'border-border bg-card hover:border-primary/50 hover:shadow-md'
                       }`}
                     >
-                      <span className="text-2xl shrink-0">{item.emoji}</span>
+                      <item.icon className="h-6 w-6 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="font-medium">{item.label}</p>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
@@ -457,7 +459,7 @@ export default function BackupWizard() {
                         selected ? 'border-primary bg-primary/10 shadow-sm' : 'border-border bg-card hover:border-primary/50 hover:shadow-md'
                       }`}
                     >
-                      <span className="text-2xl shrink-0">{d.emoji}</span>
+                      <d.icon className="h-6 w-6 text-primary shrink-0" />
                       <span className="font-medium flex-1">{d.label}</span>
                       {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />}
                     </button>
@@ -484,7 +486,7 @@ export default function BackupWizard() {
             <div key="result">
               <div className="text-center mb-8">
                 <div className="text-5xl mb-3">✅</div>
-                <h2 className="text-2xl font-bold mb-1">Your Personalised Backup Plan</h2>
+                <h2 className="text-2xl font-bold mb-1">Your Personalized Backup Plan</h2>
                 <p className="text-muted-foreground text-sm">Follow these steps to keep your data safe</p>
               </div>
 

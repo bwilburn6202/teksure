@@ -213,9 +213,18 @@ export default function ScamAlerts() {
   return (
     <>
       <SEOHead
-        title="Scam Alerts & Safety Guide | TekSure"
-        description="Learn to spot and avoid the 13 most common scams — fake tech support, phishing, AI voice clones, and more."
+        title="Scam Alerts & Safety Guide 2026 | TekSure"
+        description="Learn to spot and avoid the most common scams in 2026 — fake tech support calls, phishing emails, AI voice clones, romance scams, and more. Free safety guide."
         path="/safety/scam-alerts"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'How do I spot a tech support scam?', acceptedAnswer: { '@type': 'Answer', text: 'Legitimate companies like Microsoft and Apple will never call you first about a virus. If someone calls claiming your computer is infected and asks for remote access, hang up immediately.' }},
+            { '@type': 'Question', name: 'What should I do if I get a phishing email?', acceptedAnswer: { '@type': 'Answer', text: 'Do not click any links. Check the sender address carefully — scammers use addresses that look similar to real companies. Report it as spam and delete it.' }},
+            { '@type': 'Question', name: 'How can I tell if a phone call is a scam?', acceptedAnswer: { '@type': 'Answer', text: 'Red flags include urgent demands for immediate payment, requests for gift cards or wire transfers, threats of arrest, and callers who refuse to let you hang up and call back on an official number.' }},
+          ],
+        }}
       />
       <Navbar />
       <main className="min-h-screen bg-background">

@@ -174,7 +174,7 @@ const quickFixes: QuickFix[] = [
   },
   {
     emoji: '🔥', problem: 'My laptop is overheating', category: 'Computer',
-    steps: ['Make sure vents aren\'t blocked — always use on a hard flat surface, not a bed/pillow', 'Use compressed air to blow dust out of vents (do this every 6-12 months)', 'Check Task Manager for apps using high CPU continuously', 'Update your laptop\'s drivers and BIOS via the manufacturer\'s website', 'Consider a laptop cooling pad — they cost around £15 and really help'],
+    steps: ['Make sure vents aren\'t blocked — always use on a hard flat surface, not a bed/pillow', 'Use compressed air to blow dust out of vents (do this every 6-12 months)', 'Check Task Manager for apps using high CPU continuously', 'Update your laptop\'s drivers and BIOS via the manufacturer\'s website', 'Consider a laptop cooling pad — they cost around $15 and really help'],
   },
   {
     emoji: '🖥️', problem: "My computer screen has gone black", category: 'Computer',

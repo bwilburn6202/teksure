@@ -4,6 +4,7 @@ import {
   Sparkles, Monitor, Smartphone, Tablet, Laptop,
   Baby, User, GraduationCap, BookOpen, Shield,
   Wifi, Lock, Camera, ChevronRight, CheckCircle2, ArrowRight,
+  KeyRound, Apple, ImageIcon, Mail, Target,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -43,7 +44,7 @@ const confidenceLevels: { id: Confidence; label: string; icon: React.ElementType
 const goals: { id: Goal; label: string; icon: React.ElementType; desc: string }[] = [
   { id: 'safety', label: 'Stay safe online', icon: Shield, desc: 'Avoid scams, protect passwords, browse safely' },
   { id: 'basics', label: 'Learn the basics', icon: BookOpen, desc: 'Files, folders, settings, and everyday tasks' },
-  { id: 'photos', label: 'Manage my photos', icon: Camera, desc: 'Organise, back up, and share photos' },
+  { id: 'photos', label: 'Manage my photos', icon: Camera, desc: 'Organize, back up, and share photos' },
   { id: 'communication', label: 'Video calls & messaging', icon: Wifi, desc: 'Zoom, FaceTime, WhatsApp, email' },
   { id: 'productivity', label: 'Get more done', icon: Lock, desc: 'Shortcuts, apps, and time-saving tricks' },
 ];
@@ -51,7 +52,7 @@ const goals: { id: Goal; label: string; icon: React.ElementType; desc: string }[
 /* ── Recommendation logic ───────────────── */
 interface Recommendation {
   title: string;
-  emoji: string;
+  icon: React.ElementType;
   reason: string;
   guideSlug: string;
   category: string;
@@ -64,8 +65,8 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.goals.includes('safety') || answers.confidence === 'beginner') {
     recs.push({
       title: 'How to Create a Strong Password',
-      emoji: '🔐',
-      reason: "Your first line of defence online — let's make it solid.",
+      icon: KeyRound,
+      reason: "Your first line of defense online — let's make it solid.",
       guideSlug: 'create-strong-password',
       category: 'Essential Skills',
     });
@@ -75,7 +76,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.device === 'windows') {
     recs.push({
       title: 'Turning Your PC On and Off Correctly',
-      emoji: '💻',
+      icon: Monitor,
       reason: 'The perfect starting point for any Windows user.',
       guideSlug: 'turn-pc-on-and-off',
       category: 'Windows Guides',
@@ -84,7 +85,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.device === 'mac') {
     recs.push({
       title: 'Getting Started with Your Mac',
-      emoji: '🍎',
+      icon: Apple,
       reason: "Mac has its own way of doing things — let's learn the basics.",
       guideSlug: 'turn-mac-on-and-off',
       category: 'Mac Guides',
@@ -95,7 +96,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.goals.includes('photos')) {
     recs.push({
       title: 'Backing Up Your Photos',
-      emoji: '📸',
+      icon: ImageIcon,
       reason: 'Never lose a precious memory again.',
       guideSlug: 'setup-windows-backup',
       category: 'Essential Skills',
@@ -106,7 +107,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.goals.includes('communication')) {
     recs.push({
       title: 'How to Use Email Safely',
-      emoji: '📧',
+      icon: Mail,
       reason: 'Email is how most of the internet communicates — master it.',
       guideSlug: 'setup-email-windows-mail',
       category: 'Windows Guides',
@@ -117,7 +118,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   if (answers.goals.includes('basics') || answers.goals.includes('productivity')) {
     recs.push({
       title: 'How to Take a Screenshot',
-      emoji: '📷',
+      icon: Camera,
       reason: 'One of the most useful skills for showing someone what you see.',
       guideSlug: answers.device === 'mac' ? 'take-screenshot-mac' : 'take-screenshot-windows',
       category: answers.device === 'mac' ? 'Mac Guides' : 'Windows Guides',
@@ -127,7 +128,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
   // WiFi guide — nearly always useful
   recs.push({
     title: 'Connecting to WiFi',
-    emoji: '📶',
+    icon: Wifi,
     reason: 'Everything starts with a good internet connection.',
     guideSlug: answers.device === 'mac' ? 'connect-wifi-mac' : 'connect-wifi-windows',
     category: answers.device === 'mac' ? 'Mac Guides' : 'Windows Guides',
@@ -189,7 +190,7 @@ export default function Setup() {
             <CheckCircle2 className="h-16 w-16 text-green-500" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>
             <p className="text-muted-foreground text-lg">
-              You've already completed the setup quiz. Head to your profile to see your personalised learning path, or browse all guides.
+              You've already completed the setup quiz. Head to your profile to see your personalized learning path, or browse all guides.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <Button onClick={() => navigate('/guides')} className="rounded-xl">Browse Guides</Button>
@@ -208,7 +209,7 @@ export default function Setup() {
     <>
       <SEOHead
         title="Getting Started | TekSure"
-        description="Answer 3 quick questions and get a personalised learning path matched to your device and goals."
+        description="Answer 3 quick questions and get a personalized learning path matched to your device and goals."
         path="/setup"
       />
       <Navbar />
@@ -222,7 +223,7 @@ export default function Setup() {
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">Getting Started</h1>
         </div>
         <p className="text-muted-foreground mb-6">
-          Answer 3 quick questions and we'll build your personalised starting point.
+          Answer 3 quick questions and we'll build your personalized starting point.
         </p>
 
         {step < 3 && (
@@ -338,7 +339,7 @@ export default function Setup() {
             <div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
                 <CheckCircle2 className="h-8 w-8 text-green-500" />
-                <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Your personalised starting point</h2>
+                <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Your personalized starting point</h2>
               </div>
               <p className="text-muted-foreground mb-6">
                 Based on your answers, here are the best guides to start with. Work through them in order — each one builds on the last.
@@ -353,7 +354,7 @@ export default function Setup() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-lg">{rec.emoji}</span>
+                          {(() => { const RIcon = rec.icon; return <RIcon className="h-5 w-5 text-primary" />; })()}
                           <span className="font-semibold text-primary">{rec.title}</span>
                         </div>
                         <p className="text-sm text-muted-foreground mt-0.5">{rec.reason}</p>
@@ -370,7 +371,7 @@ export default function Setup() {
               </div>
 
               <div className="rounded-xl bg-primary/10 border border-primary/20 p-5 mb-6">
-                <p className="font-semibold text-primary mb-1">🎯 Quick tip</p>
+                <p className="font-semibold text-primary mb-1 flex items-center gap-2"><Target className="h-4 w-4" /> Quick tip</p>
                 <p className="text-sm text-muted-foreground">
                   Don't try to do everything at once. Complete one guide, then take a break.
                   You'll find it all starts to make sense faster than you think.

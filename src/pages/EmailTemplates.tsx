@@ -50,7 +50,7 @@ Thank you,
     category: 'Work',
     body: `Dear [Hiring Manager / Company Name],
 
-I am writing to enquire about potential job opportunities within your organisation. I am particularly interested in [role type / department].
+I am writing to enquire about potential job opportunities within your organization. I am particularly interested in [role type / department].
 
 I have experience in [brief summary of skills/experience]. I have attached my CV for your consideration.
 

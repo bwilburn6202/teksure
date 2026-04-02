@@ -4,15 +4,15 @@ import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Download, Printer, FileText, CheckCircle2, Lock } from 'lucide-react';
+import { Download, Printer, FileText, CheckCircle2, Lock, Sprout, Shield, Camera, Monitor, Laptop, Bot, type LucideIcon } from 'lucide-react';
 import { guides } from '@/data/guides';
 
-const packs = [
+const packs: { id: string; name: string; icon: LucideIcon; color: string; desc: string; tags: string[]; guideCount: number; free: boolean; pages: string }[] = [
   {
     id: 'getting-started',
     name: 'Getting Started Pack',
-    emoji: '🔰',
-    colour: 'from-green-400 to-emerald-500',
+    icon: Sprout,
+    color: 'from-green-400 to-emerald-500',
     desc: 'Everything a brand-new tech user needs — turning on devices, Wi-Fi, passwords, and email.',
     tags: ['beginner', 'wifi', 'password', 'email', 'startup'],
     guideCount: 8,
@@ -22,8 +22,8 @@ const packs = [
   {
     id: 'stay-safe-online',
     name: 'Stay Safe Online Pack',
-    emoji: '🛡️',
-    colour: 'from-blue-400 to-blue-600',
+    icon: Shield,
+    color: 'from-blue-400 to-blue-600',
     desc: 'Scam awareness, strong passwords, two-factor auth, Wi-Fi security, and privacy basics.',
     tags: ['scam', 'password', 'phishing', 'privacy', 'two-factor'],
     guideCount: 7,
@@ -33,9 +33,9 @@ const packs = [
   {
     id: 'photos-memories',
     name: 'Photos & Memories Pack',
-    emoji: '📸',
-    colour: 'from-pink-400 to-rose-500',
-    desc: 'Organising photos, iCloud, Google Photos, sharing with family, and backing up.',
+    icon: Camera,
+    color: 'from-pink-400 to-rose-500',
+    desc: 'Organizing photos, iCloud, Google Photos, sharing with family, and backing up.',
     tags: ['photo', 'icloud', 'google photos', 'backup', 'share'],
     guideCount: 6,
     free: true,
@@ -44,8 +44,8 @@ const packs = [
   {
     id: 'windows-essentials',
     name: 'Windows Essentials Pack',
-    emoji: '🖥️',
-    colour: 'from-sky-400 to-cyan-500',
+    icon: Monitor,
+    color: 'from-sky-400 to-cyan-500',
     desc: 'The most important Windows guides — files, updates, security, and shortcuts.',
     tags: ['windows', 'file', 'update', 'shortcut', 'security'],
     guideCount: 10,
@@ -55,8 +55,8 @@ const packs = [
   {
     id: 'mac-essentials',
     name: 'Mac Essentials Pack',
-    emoji: '🍎',
-    colour: 'from-gray-400 to-slate-600',
+    icon: Laptop,
+    color: 'from-gray-400 to-slate-600',
     desc: 'The most important Mac guides — Finder, shortcuts, iCloud, and maintenance.',
     tags: ['mac', 'finder', 'icloud', 'spotlight', 'macos'],
     guideCount: 10,
@@ -66,8 +66,8 @@ const packs = [
   {
     id: 'ai-beginners',
     name: 'AI for Beginners Pack',
-    emoji: '🤖',
-    colour: 'from-purple-400 to-violet-600',
+    icon: Bot,
+    color: 'from-purple-400 to-violet-600',
     desc: 'Plain-English introduction to AI tools — ChatGPT, Gemini, image generators, and practical uses.',
     tags: ['ai', 'chatgpt', 'gemini', 'prompt', 'chatbot'],
     guideCount: 8,
@@ -112,7 +112,7 @@ function generatePrintContent(packId: string) {
   .cover { text-align: center; padding: 60px 20px; border-bottom: 3px solid #1a5f3f; margin-bottom: 30px; page-break-after: always; }
   .cover h1 { font-size: 2rem; color: #1a5f3f; margin: 16px 0 8px; }
   .cover p { color: #666; max-width: 400px; margin: 0 auto; }
-  .cover .emoji { font-size: 3rem; }
+  .cover .pack-badge { font-size: 1.5rem; width: 64px; height: 64px; border-radius: 50%; background: #1a5f3f; color: white; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; }
   .guide-card { margin-bottom: 30px; padding: 20px; border: 1px solid #e5e7eb; border-radius: 12px; page-break-inside: avoid; }
   .guide-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
   .guide-emoji { font-size: 2rem; line-height: 1; }
@@ -126,10 +126,10 @@ function generatePrintContent(packId: string) {
   @media print { @page { margin: 1.5cm; } }
 </style></head><body>
 <div class="cover">
-  <div class="emoji">${pack.emoji}</div>
+  <div class="pack-badge">${pack.name[0]}</div>
   <h1>${pack.name}</h1>
   <p>${pack.desc}</p>
-  <p style="margin-top:16px;color:#4B5563;font-size:0.8rem;">Printed from TekSure.com · ${new Date().toLocaleDateString('en-GB')}</p>
+  <p style="margin-top:16px;color:#4B5563;font-size:0.8rem;">Printed from TekSure.com · ${new Date().toLocaleDateString('en-US')}</p>
 </div>
 ${guideHTML}
 <div class="footer">TekSure.com — Making technology accessible for everyone · Find the full guides and hundreds more at teksure.com</div>
@@ -168,7 +168,7 @@ export default function GuidePacks() {
               <div key={pack.id}>
                 <Card className="h-full flex flex-col">
                   <CardContent className="pt-5 pb-4 flex flex-col flex-1">
-                    <div className={`rounded-xl bg-gradient-to-br ${pack.colour} w-12 h-12 flex items-center justify-center text-2xl mb-3`}>{pack.emoji}</div>
+                    <div className={`rounded-xl bg-gradient-to-br ${pack.color} w-12 h-12 flex items-center justify-center mb-3`}><pack.icon className="h-6 w-6 text-white" /></div>
                     <div className="flex items-start justify-between mb-2">
                       <h3 className="font-bold text-base leading-snug flex-1">{pack.name}</h3>
                       {pack.free ? (

@@ -13,7 +13,8 @@ import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
-import { FloatingChat } from "@/components/FloatingChat";
+// FloatingChat disabled — TekBot is the primary assistant with full features
+// import { FloatingChat } from "@/components/FloatingChat";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -175,7 +176,7 @@ const AppContent = () => {
       <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
-      <FloatingChat />
+      {/* FloatingChat disabled — TekBot handles all chat */}
       <ScamPanicButton />
       <Toaster />
       <Sonner />

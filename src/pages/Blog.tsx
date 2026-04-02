@@ -7,14 +7,14 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { NewsletterSignup } from '@/components/NewsletterSignup';
-import { BookOpen, Clock, ChevronDown, ChevronRight } from 'lucide-react';
+import { BookOpen, Clock, ChevronDown, ChevronRight, RefreshCw, Lock, Bot, Tv, Search, Video, Cloud, Battery, Volume2, ShoppingBag, ShieldCheck, Monitor, MapPin, CreditCard, type LucideIcon } from 'lucide-react';
 
 interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
   category: string;
-  emoji: string;
+  icon: LucideIcon;
   date: string;
   readTime: string;
   featured?: boolean;
@@ -27,7 +27,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Why You Should Never Ignore Software Updates',
     excerpt: 'That little notification telling you to update your phone or computer isn\'t just annoying — ignoring it could leave you wide open to hackers. Here\'s what\'s really happening behind the scenes.',
     category: 'Security',
-    emoji: '🔄',
+    icon: RefreshCw,
     date: '2026-03-20',
     readTime: '4 min',
     featured: true,
@@ -43,7 +43,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Password Managers: The Simplest Way to Stay Safe Online',
     excerpt: 'Remembering a different password for every website is impossible — and using the same password everywhere is dangerous. Password managers solve both problems at once.',
     category: 'Security',
-    emoji: '🔐',
+    icon: Lock,
     date: '2026-03-17',
     readTime: '5 min',
     featured: true,
@@ -60,7 +60,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'How AI Can Make Daily Life Easier for Older Adults',
     excerpt: 'AI assistants aren\'t just for tech enthusiasts. From reminders to dictating messages, here are some genuinely useful ways AI tools are helping older people every day.',
     category: 'AI & Tech',
-    emoji: '🤖',
+    icon: Bot,
     date: '2026-03-14',
     readTime: '4 min',
     content: [
@@ -76,13 +76,13 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Getting the Most from Your Smart TV',
     excerpt: 'Modern smart TVs can do much more than just play channels. Here\'s a beginner\'s tour of everything your TV is probably capable of — and how to use it.',
     category: 'Devices',
-    emoji: '📺',
+    icon: Tv,
     date: '2026-03-10',
     readTime: '5 min',
     content: [
       'Most televisions sold today are "smart TVs" — they connect to the internet and run apps just like a phone or tablet. If your TV was bought in the last 5 years, it almost certainly has these features.',
       'Streaming apps: Use the "Home" or "Smart Hub" button on your remote to open the app store. Free services worth installing include BBC iPlayer, ITVX, Channel 4, and YouTube. Paid services include Netflix, Disney+, and Amazon Prime Video.',
-      'Screen mirroring: You can show your phone screen on your TV. On iPhone, look for "AirPlay" in the Control Centre (swipe down). On Android, look for "Cast" or "Smart View" in the notification bar or screen settings.',
+      'Screen mirroring: You can show your phone screen on your TV. On iPhone, look for "AirPlay" in the Control Center (swipe down). On Android, look for "Cast" or "Smart View" in the notification bar or screen settings.',
       'Voice control: Many modern remotes have a microphone button — hold it and speak to search for shows, change volume, or open apps. No typing required.',
       'Tips: If your TV runs slowly, try turning it off completely (not just standby) for 30 seconds. Also check for TV software updates in the Settings menu — these improve performance and add features.',
     ],
@@ -92,7 +92,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'How to Tell if a Website is Real or Fake',
     excerpt: 'Scammers create convincing fake websites to steal your details. Here are six quick checks that will protect you every time you\'re unsure about a site.',
     category: 'Scam Alerts',
-    emoji: '🕵️',
+    icon: Search,
     date: '2026-03-06',
     readTime: '3 min',
     content: [
@@ -110,7 +110,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: '10 Tips for Better Video Calls (Zoom, FaceTime & WhatsApp)',
     excerpt: 'Whether you\'re chatting with family or joining a work meeting, these simple tips will make your video calls look and sound much better.',
     category: 'Tips & Tricks',
-    emoji: '📹',
+    icon: Video,
     date: '2026-03-01',
     readTime: '3 min',
     content: [
@@ -129,11 +129,11 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'What Exactly Is "the Cloud" — and Should You Use It?',
     excerpt: 'Everyone talks about "the cloud" but few people explain what it actually means. Here\'s a plain-English guide to what it is, how it works, and whether it\'s right for you.',
     category: 'Explainers',
-    emoji: '☁️',
+    icon: Cloud,
     date: '2026-03-22',
     readTime: '5 min',
     content: [
-      '"The cloud" simply means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data centre, where it\'s stored safely.',
+      '"The cloud" simply means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data center, where it\'s stored safely.',
       'The big advantage: your files are available from any device, anywhere. Lose your phone? Your photos are still safe in the cloud. Get a new laptop? Sign in and all your documents reappear.',
       'Popular cloud services you may already use: iCloud (Apple), Google Drive, Google Photos, OneDrive (Microsoft), and Dropbox. Most offer free storage up to a certain limit, with paid plans for more space.',
       'Is it safe? Reputable cloud services encrypt your files both in transit and at rest, meaning even the company itself can\'t easily read them. They\'re generally safer than keeping everything on one device that could be lost, stolen, or broken.',
@@ -146,7 +146,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: '10 Ways to Make Your Phone Battery Last Longer',
     excerpt: 'Battery life is one of the top complaints about modern smartphones. These practical tips can add hours to your daily charge — without needing a new phone.',
     category: 'Tips & Tricks',
-    emoji: '🔋',
+    icon: Battery,
     date: '2026-03-19',
     readTime: '4 min',
     content: [
@@ -168,12 +168,12 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Smart Speakers Explained: Amazon Echo, Google Nest, and Apple HomePod',
     excerpt: 'Smart speakers let you control devices, play music, and ask questions using just your voice. But which one is right for you — and should you be worried about privacy?',
     category: 'Devices',
-    emoji: '🔊',
+    icon: Volume2,
     date: '2026-03-15',
     readTime: '5 min',
     content: [
       'Smart speakers are voice-activated devices that sit in your home and respond to questions, play music, set reminders, and control smart home devices. The three main options are Amazon Echo (Alexa), Google Nest (Google Assistant), and Apple HomePod (Siri).',
-      'Amazon Echo / Alexa: The most popular and affordable option. Excellent for shopping, Amazon Music, audiobooks, and smart home control. The basic Echo Dot costs around £30.',
+      'Amazon Echo / Alexa: The most popular and affordable option. Excellent for shopping, Amazon Music, audiobooks, and smart home control. The basic Echo Dot costs around $30.',
       'Google Nest: Best for answering general knowledge questions (Google search built in), setting reminders, and integrating with Google Calendar and Gmail. Particularly good if you already use Google services.',
       'Apple HomePod: Best for iPhone users who want premium sound quality. Integrates tightly with iCloud, Apple Music, and Apple\'s Home app for smart home control.',
       'Privacy concerns are real: Smart speakers are always listening for their "wake word" (Alexa / Hey Google / Hey Siri). This means audio is being processed continuously. All three companies have faced criticism for storing voice recordings. You can review and delete your recordings in each app\'s settings.',
@@ -186,16 +186,16 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'How to Shop Online Safely — A Checklist for Every Purchase',
     excerpt: 'Online shopping is convenient and often cheaper — but scammers create convincing fake shops. This checklist protects you every time.',
     category: 'Security',
-    emoji: '🛍️',
+    icon: ShoppingBag,
     date: '2026-03-12',
     readTime: '4 min',
     content: [
-      'Online shopping is fantastic — but fraudulent websites cost UK consumers over £100 million every year. Most of these scams are easy to avoid once you know what to look for.',
+      'Online shopping is fantastic — but fraudulent websites cost UK consumers over $100 million every year. Most of these scams are easy to avoid once you know what to look for.',
       'Before you buy: Check for HTTPS (padlock icon in your browser\'s address bar) — this means the connection is encrypted. However, even scam sites can have HTTPS now, so it\'s necessary but not sufficient.',
       'Check the domain name carefully: Scammers register near-identical domains like "amaz0n.co.uk" or "eba y.com". Always read the web address slowly before entering any details.',
       'Google the company + "reviews" or "+ scam": A few minutes of research can save you significant money. Look for reviews on independent platforms like Trustpilot.',
       'Be suspicious of prices that seem too good to be true: If a designer item is 90% off, it\'s almost certainly counterfeit or a scam.',
-      'Use a credit card where possible: Credit cards offer much stronger fraud protection than debit cards or bank transfers. Under Section 75 of the Consumer Credit Act, purchases over £100 are protected.',
+      'Use a credit card where possible: Credit cards offer much stronger fraud protection than debit cards or bank transfers. Under Section 75 of the Consumer Credit Act, purchases over $100 are protected.',
       'Never transfer money directly via bank transfer for purchases from strangers: Once money is transferred, it\'s very difficult to recover.',
       'Check the returns policy before buying: Legitimate retailers have clear, accessible returns policies. If you can\'t find one, that\'s a red flag.',
       'Safe payment methods: PayPal, credit card, and Apple/Google Pay all offer buyer protection. Gift cards and bank transfers do not.',
@@ -204,9 +204,9 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'social-media-privacy',
     title: 'Protecting Your Privacy on Social Media: A Practical Guide',
-    excerpt: 'Most people share far more than they realise on social media — and much of it is visible to strangers. Here\'s how to lock down your accounts in 15 minutes.',
+    excerpt: 'Most people share far more than they realize on social media — and much of it is visible to strangers. Here\'s how to lock down your accounts in 15 minutes.',
     category: 'Security',
-    emoji: '🔒',
+    icon: ShieldCheck,
     date: '2026-03-10',
     readTime: '5 min',
     content: [
@@ -216,7 +216,7 @@ const BLOG_POSTS: BlogPost[] = [
       'Instagram: Go to Settings → Account → Account Privacy and switch to a Private account if you only want followers you approve to see your posts. Be careful about geotagging — your home and regular locations can be inferred from background details in photos.',
       'WhatsApp: Go to Settings → Privacy. Set Last Seen, Profile Photo, and Status to "My Contacts" rather than "Everyone." Enable two-step verification under Settings → Account → Two-Step Verification.',
       'General rules: Never accept friend requests from people you don\'t know. Be cautious about what appears in your photos — house numbers, street signs, school uniforms. Criminals use social media to case potential targets.',
-      'Oversharing is more dangerous than most people realise: Announcing you\'re going on holiday publicly tells burglars your home will be empty. Posting birthday or family information helps scammers answer security questions.',
+      'Oversharing is more dangerous than most people realize: Announcing you\'re going on vacation publicly tells burglars your home will be empty. Posting birthday or family information helps scammers answer security questions.',
     ],
   },
   {
@@ -224,7 +224,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Tablet or Laptop? How to Choose the Right Device for You',
     excerpt: 'Many people end up buying the wrong device. Here\'s an honest comparison that will help you decide based on how you actually use technology.',
     category: 'Devices',
-    emoji: '💻',
+    icon: Monitor,
     date: '2026-03-08',
     readTime: '5 min',
     content: [
@@ -233,8 +233,8 @@ const BLOG_POSTS: BlogPost[] = [
       'Choose a laptop if: You need to type a lot (documents, spreadsheets, emails), use specific software like accounting programs or Photoshop, print regularly, or use USB devices like printers or external drives. Laptops are more capable but more complex.',
       'The hybrid option: Some devices bridge the gap — like the iPad with a keyboard case, or Microsoft Surface tablets. These work well but can be more expensive.',
       'For absolute beginners: We generally recommend an iPad as a first device. The App Store is well-curated, updates are simple, and the learning curve is gentler. An Amazon Fire tablet is a more budget-friendly option for basic use.',
-      'Price guide: A basic Android tablet: £100-200. Entry-level iPad: £300-400. Budget laptop: £250-400. Mid-range laptop: £500-800.',
-      'The most important question to ask: "What will I actually use it for?" Be honest with yourself. If you mostly want to watch iPlayer and video call your grandchildren, a £300 tablet will serve you better than a £600 laptop.',
+      'Price guide: A basic Android tablet: $100-200. Entry-level iPad: $300-400. Budget laptop: $250-400. Mid-range laptop: $500-800.',
+      'The most important question to ask: "What will I actually use it for?" Be honest with yourself. If you mostly want to watch iPlayer and video call your grandchildren, a $300 tablet will serve you better than a $600 laptop.',
     ],
   },
   {
@@ -242,7 +242,7 @@ const BLOG_POSTS: BlogPost[] = [
     title: 'Getting Started with Google: Maps, Translate, and Photos Explained',
     excerpt: 'Google offers some genuinely brilliant free tools that many people haven\'t discovered. Here\'s how Maps, Translate, and Photos can make daily life easier.',
     category: 'Tips & Tricks',
-    emoji: '🗺️',
+    icon: MapPin,
     date: '2026-03-05',
     readTime: '6 min',
     content: [
@@ -258,20 +258,20 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'understanding-subscriptions',
     title: 'Are You Paying for Services You\'ve Forgotten About? How to Audit Your Subscriptions',
-    excerpt: 'The average person wastes over £300 a year on forgotten subscriptions. Here\'s how to find and cancel the ones you no longer need.',
+    excerpt: 'The average person wastes over $300 a year on forgotten subscriptions. Here\'s how to find and cancel the ones you no longer need.',
     category: 'Tips & Tricks',
-    emoji: '💳',
+    icon: CreditCard,
     date: '2026-03-03',
     readTime: '4 min',
     content: [
-      'Subscription services are designed to be easy to start and easy to forget. Streaming services, app subscriptions, cloud storage plans, and digital magazines quietly drain money every month. The average UK adult now spends over £600 a year on subscriptions.',
+      'Subscription services are designed to be easy to start and easy to forget. Streaming services, app subscriptions, cloud storage plans, and digital magazines quietly drain money every month. The average UK adult now spends over $600 a year on subscriptions.',
       'How to find your subscriptions on iPhone: Go to Settings → [your name] → Subscriptions. This shows every active subscription billed through Apple.',
       'How to find subscriptions on Android: Open the Google Play Store → tap your profile picture → Payments & subscriptions → Subscriptions.',
-      'Check your bank and credit card statements: Filter for recurring charges you don\'t recognise. Many subscriptions disguise themselves as unfamiliar company names — Amazon Prime shows as "AMZN DIGITAL SERVICES".',
+      'Check your bank and credit card statements: Filter for recurring charges you don\'t recognize. Many subscriptions disguise themselves as unfamiliar company names — Amazon Prime shows as "AMZN DIGITAL SERVICES".',
       'Email search: Search your inbox for "subscription", "receipt", "renewal", and "billing" to surface subscriptions that aren\'t billed through your phone.',
       'The cancellation question to ask yourself: "Have I used this in the last 30 days?" If the answer is no, cancel it. You can always resubscribe if you miss it.',
       'Useful free tools: Many banks now have subscription tracking built into their apps. Monzo, Starling, and HSBC all show recurring payments grouped by merchant.',
-      'Free alternatives to popular subscriptions: Instead of Microsoft Office (£60/year), try Google Docs (free). Instead of paying for news subscriptions, most local libraries provide free access to digital newspapers.',
+      'Free alternatives to popular subscriptions: Instead of Microsoft Office ($60/year), try Google Docs (free). Instead of paying for news subscriptions, most local libraries provide free access to digital newspapers.',
     ],
   },
 ];
@@ -293,10 +293,10 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
     >
       <Card className={`rounded-2xl border border-border bg-card hover:border-border/60 transition-all ${featured ? 'col-span-full' : ''}`}>
         <CardContent className={`p-6 ${featured ? 'md:flex md:gap-8' : ''}`}>
-          {featured && <div className="text-6xl shrink-0 mb-4 md:mb-0">{post.emoji}</div>}
+          {featured && <post.icon className="h-14 w-14 text-primary shrink-0 mb-4 md:mb-0" />}
           <div className="flex-1">
             <div className="flex items-center gap-2 flex-wrap mb-3">
-              {!featured && <span className="text-3xl mr-1">{post.emoji}</span>}
+              {!featured && <post.icon className="h-7 w-7 text-primary mr-1" />}
               <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>
                 {post.category}
               </span>
@@ -335,7 +335,7 @@ function PostDetail({ post }: { post: BlogPost }) {
         <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime} read</span>
         <span className="text-xs text-muted-foreground ml-auto">{new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
       </div>
-      <div className="text-5xl mb-4">{post.emoji}</div>
+      <post.icon className="h-12 w-12 text-primary mb-4" />
       <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">{post.title}</h1>
       <p className="text-muted-foreground leading-relaxed mb-6 text-base border-l-4 border-primary/40 pl-4 italic">{post.excerpt}</p>
       <div className="space-y-4">

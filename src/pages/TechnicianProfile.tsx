@@ -324,7 +324,7 @@ export default function TechnicianProfile() {
             <CardContent className="p-5 flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-1">
                 <p className="font-semibold">Book {tech.name.split(' ')[0]} for your problem</p>
-                <p className="text-sm text-muted-foreground mt-0.5">From £49 for the first hour. No fix, no charge.</p>
+                <p className="text-sm text-muted-foreground mt-0.5">From $49 for the first hour. No fix, no charge.</p>
               </div>
               <Button asChild className="gap-2 shrink-0 rounded-xl">
                 <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>

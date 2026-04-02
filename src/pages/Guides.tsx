@@ -224,9 +224,18 @@ const Guides = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Tech Guides for Beginners | TekSure"
-        description="Browse 270+ free step-by-step tech guides for Windows, Mac, essential skills, tips, and AI tools. Written for beginners."
+        title="Free Tech Guides for Beginners | TekSure"
+        description="Browse 1,000+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, and everyday apps. Written in plain language for beginners."
         path="/guides"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'TekSure Technology Guides',
+          description: 'Free step-by-step technology guides written in plain language for everyday people.',
+          url: 'https://teksure.com/guides',
+          isPartOf: { '@type': 'WebSite', name: 'TekSure', url: 'https://teksure.com' },
+          numberOfItems: guides.length,
+        }}
       />
       <Navbar />
 

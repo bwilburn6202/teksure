@@ -130,7 +130,7 @@ const TREE: Record<string, Node> = {
     solutionSteps: [
       'Move your router to a more central location in the home if possible — ideally at head height, away from walls and floors.',
       'Keep the router away from microwaves, cordless phones, and baby monitors — these can interfere with Wi-Fi.',
-      'In the weak-signal room, consider a Wi-Fi extender (also called a booster) — they cost around £25–£50 and plug into a wall socket.',
+      'In the weak-signal room, consider a Wi-Fi extender (also called a booster) — they cost around $25–$50 and plug into a wall socket.',
       'Alternatively, a powerline adapter sends the internet signal through your house\'s electrical wiring.',
       'If you have a newer router, check if it supports 5GHz — this is faster but shorter range. The 2.4GHz band is slower but reaches further.',
     ],

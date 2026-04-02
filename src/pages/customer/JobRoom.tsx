@@ -294,7 +294,7 @@ const CustomerJobRoom = () => {
                         Payment not yet received
                       </p>
                       <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
-                        A deposit of 15 pounds is required to confirm your booking.
+                        A deposit of 15 dollars is required to confirm your booking.
                         If you have already paid, it may take a moment to process.
                       </p>
                     </div>

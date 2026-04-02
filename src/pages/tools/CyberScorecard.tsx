@@ -34,7 +34,7 @@ const CHECKS: CheckItem[] = [
   // Online behaviour
   { id: 'web1', category: 'Online Safety', categoryIcon: Globe, question: 'Do you check that websites show "https://" and a padlock before entering personal details?', yesPoints: 5, tip: 'The "s" in "https" stands for secure — it means the connection is encrypted. Never enter passwords or payment details on a site that only shows "http://".' },
   { id: 'web2', category: 'Online Safety', categoryIcon: Globe, question: 'Do you avoid clicking links in unsolicited text messages or emails?', yesPoints: 10, tip: 'Phishing links are disguised to look real but lead to fake sites that steal your information. If in doubt, go to the website directly by typing it in your browser.', guideSlug: 'phishing-emails' },
-  { id: 'email1', category: 'Email Safety', categoryIcon: Mail, question: 'Can you identify the signs of a phishing email (urgency, spelling errors, suspicious sender)?', yesPoints: 5, tip: 'Phishing emails often create false urgency ("Act now!"), have spelling mistakes, or come from odd email addresses. If in doubt, delete and contact the organisation directly.' },
+  { id: 'email1', category: 'Email Safety', categoryIcon: Mail, question: 'Can you identify the signs of a phishing email (urgency, spelling errors, suspicious sender)?', yesPoints: 5, tip: 'Phishing emails often create false urgency ("Act now!"), have spelling mistakes, or come from odd email addresses. If in doubt, delete and contact the organization directly.' },
   { id: 'email2', category: 'Email Safety', categoryIcon: Mail, question: 'Do you avoid sharing your main email address publicly on social media or websites?', yesPoints: 5, tip: 'Your email is a gateway to all your accounts. Consider using a separate address for newsletters/sign-ups and keeping your main email private.', guideSlug: 'avoiding-scams' },
 ];
 
@@ -88,7 +88,7 @@ export default function CyberScorecard() {
     <>
       <SEOHead
         title="Cybersecurity Scorecard — TekSure"
-        description="Check how secure your digital life is with our quick 13-question cybersecurity scorecard. Get a personalised score and actionable tips."
+        description="Check how secure your digital life is with our quick 13-question cybersecurity scorecard. Get a personalized score and actionable tips."
       path="/tools/cyber-scorecard"
       />
       <Navbar />

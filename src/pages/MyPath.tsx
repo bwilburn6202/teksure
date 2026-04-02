@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Map, CheckCircle2, Circle, ChevronRight, Trophy, Zap,
   RotateCcw, ArrowRight, Lock, BookOpen, Flame,
+  Sprout, Shield, Lightbulb, Smartphone, Rocket,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -19,12 +20,12 @@ import { getCompletedGuides } from '@/lib/progress';
 const PATHS = [
   {
     id: 'beginner',
-    emoji: '🌱',
+    icon: Sprout,
     label: 'Beginner Basics',
     description: 'The most important things to know — start here if you\'re new to tech.',
-    colour: 'from-green-400 to-emerald-500',
+    color: 'from-green-400 to-emerald-500',
     bg: 'bg-green-50 border-green-200',
-    textColour: 'text-green-700',
+    textColor: 'text-green-700',
     slugs: [
       'turn-pc-on-and-off',
       'connect-wifi-windows',
@@ -35,12 +36,12 @@ const PATHS = [
   },
   {
     id: 'safety',
-    emoji: '🛡️',
+    icon: Shield,
     label: 'Safety Essentials',
     description: 'Keep yourself and your accounts safe online.',
-    colour: 'from-amber-400 to-orange-500',
+    color: 'from-amber-400 to-orange-500',
     bg: 'bg-amber-50 border-amber-200',
-    textColour: 'text-amber-700',
+    textColor: 'text-amber-700',
     slugs: [
       'two-factor-auth',
       'home-network-security',
@@ -51,12 +52,12 @@ const PATHS = [
   },
   {
     id: 'practical',
-    emoji: '💡',
+    icon: Lightbulb,
     label: 'Practical Skills',
     description: 'Everyday tech that will save you time and frustration.',
-    colour: 'from-blue-400 to-indigo-500',
+    color: 'from-blue-400 to-indigo-500',
     bg: 'bg-blue-50 border-blue-200',
-    textColour: 'text-blue-700',
+    textColor: 'text-blue-700',
     slugs: [
       'video-calls',
       'setup-email-windows-mail',
@@ -67,12 +68,12 @@ const PATHS = [
   },
   {
     id: 'devices',
-    emoji: '📱',
+    icon: Smartphone,
     label: 'Devices & Apps',
     description: 'Get the most from your phone, tablet, and computer.',
-    colour: 'from-purple-400 to-violet-500',
+    color: 'from-purple-400 to-violet-500',
     bg: 'bg-purple-50 border-purple-200',
-    textColour: 'text-purple-700',
+    textColor: 'text-purple-700',
     slugs: [
       'connect-bluetooth-windows',
       'manage-storage-windows',
@@ -83,12 +84,12 @@ const PATHS = [
   },
   {
     id: 'advanced',
-    emoji: '🚀',
+    icon: Rocket,
     label: 'Level Up',
     description: 'For confident users who want to go further.',
-    colour: 'from-rose-400 to-pink-500',
+    color: 'from-rose-400 to-pink-500',
     bg: 'bg-rose-50 border-rose-200',
-    textColour: 'text-rose-700',
+    textColor: 'text-rose-700',
     slugs: [
       'use-virtual-desktops-windows',
       'setup-windows-hello',
@@ -190,7 +191,7 @@ export default function MyPath() {
     <>
       <SEOHead
         title="My Learning Path | TekSure"
-        description="Follow a personalised step-by-step learning path and build your tech confidence at your own pace."
+        description="Follow a personalized step-by-step learning path and build your tech confidence at your own pace."
         path="/my-path"
       />
       <Navbar />
@@ -304,7 +305,7 @@ export default function MyPath() {
                     <Card className={`rounded-2xl border border-border bg-card ${chosenPath.bg}`}>
                       <CardContent className="p-5">
                         <div className="flex items-start gap-3 mb-4">
-                          <span className="text-3xl">{chosenPath.emoji}</span>
+                          <chosenPath.icon className="h-8 w-8 text-primary shrink-0" />
                           <div className="flex-1">
                             <h3 className="font-bold text-lg text-primary">{chosenPath.label}</h3>
                             <p className="text-sm text-muted-foreground">{chosenPath.description}</p>
@@ -319,7 +320,7 @@ export default function MyPath() {
                         <div className="mb-4">
                           <div className="flex justify-between text-xs text-muted-foreground mb-1">
                             <span>{done} of {total} guides completed</span>
-                            <span className={`font-semibold ${chosenPath.textColour}`}>{pct}%</span>
+                            <span className={`font-semibold ${chosenPath.textColor}`}>{pct}%</span>
                           </div>
                           <Progress value={pct} className="h-2.5" />
                         </div>
@@ -404,7 +405,7 @@ export default function MyPath() {
                   >
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
-                        <span className="text-xl">{path.emoji}</span>
+                        <path.icon className="h-5 w-5 text-primary" />
                         <span className="font-semibold text-sm text-primary">{path.label}</span>
                       </div>
                       {isActive && <Badge variant="secondary" className="text-xs">Active</Badge>}

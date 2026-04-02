@@ -12,12 +12,12 @@ import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
 
 const deviceTypes = [
-  { value: 'phone', label: '📱 Phone' },
-  { value: 'tablet', label: '📲 Tablet' },
-  { value: 'computer', label: '💻 Computer' },
-  { value: 'tv', label: '📺 TV / Streaming Device' },
-  { value: 'smart-home', label: '🏠 Smart Home Device' },
-  { value: 'other', label: '🔧 Other' },
+  { value: 'phone', label: 'Phone' },
+  { value: 'tablet', label: 'Tablet' },
+  { value: 'computer', label: 'Computer' },
+  { value: 'tv', label: 'TV / Streaming Device' },
+  { value: 'smart-home', label: 'Smart Home Device' },
+  { value: 'other', label: 'Other' },
 ];
 
 const GetHelp = () => {

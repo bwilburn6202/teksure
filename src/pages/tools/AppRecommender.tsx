@@ -63,18 +63,18 @@ const appData: AppData = {
   },
   'photos': {
     iphone: [
-      { name: 'iCloud Photos', emoji: '📸', tagline: 'Built-in Apple photo backup', description: 'Automatically backs up every photo to Apple\'s cloud — free for up to 5GB.', whySeniors: 'Nothing to set up — turn it on once and it works automatically forever.', price: 'Free (5GB) / £0.99/mo more', rating: '4.7★', badge: 'Best Pick' },
+      { name: 'iCloud Photos', emoji: '📸', tagline: 'Built-in Apple photo backup', description: 'Automatically backs up every photo to Apple\'s cloud — free for up to 5GB.', whySeniors: 'Nothing to set up — turn it on once and it works automatically forever.', price: 'Free (5GB) / $0.99/mo more', rating: '4.7★', badge: 'Best Pick' },
       { name: 'Google Photos', emoji: '🖼️', tagline: 'Free unlimited photo storage', description: 'Backs up all your photos and lets you search them (e.g. "beach 2019").', whySeniors: 'Easy to share albums with family. Smart search finds photos by face, place, or date.', price: 'Free (15GB)', rating: '4.6★', iosUrl: 'https://apps.apple.com/app/google-photos/id962194608' },
     ],
     android: [
-      { name: 'Google Photos', emoji: '🖼️', tagline: 'Free unlimited photo backup', description: 'Backs up all your photos automatically and organises them by date and place.', whySeniors: 'Easy to share albums with family. Already on most Android phones.', price: 'Free (15GB)', rating: '4.6★', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.photos', badge: 'Best Pick' },
+      { name: 'Google Photos', emoji: '🖼️', tagline: 'Free unlimited photo backup', description: 'Backs up all your photos automatically and organizes them by date and place.', whySeniors: 'Easy to share albums with family. Already on most Android phones.', price: 'Free (15GB)', rating: '4.6★', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.photos', badge: 'Best Pick' },
     ],
     windows: [
       { name: 'Google Photos (browser)', emoji: '🖼️', tagline: 'View and manage photos online', description: 'Access all your Google Photos from photos.google.com — no download needed.', whySeniors: 'Big screen makes it easy to browse and edit photos. Download for printing.', price: 'Free (15GB)', rating: '4.6★', badge: 'Best Pick' },
-      { name: 'Microsoft Photos', emoji: '🪟', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organise photos easily.', whySeniors: 'No setup needed — just double-click any photo to open it.', price: 'Free', rating: '4.2★' },
+      { name: 'Microsoft Photos', emoji: '🪟', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organize photos easily.', whySeniors: 'No setup needed — just double-click any photo to open it.', price: 'Free', rating: '4.2★' },
     ],
     mac: [
-      { name: 'Apple Photos', emoji: '🌸', tagline: 'Built-in Mac photo manager', description: "Already installed on your Mac — organises photos by year, month, and day automatically.", whySeniors: 'Nothing to install. Syncs with your iPhone automatically via iCloud.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Apple Photos', emoji: '🌸', tagline: 'Built-in Mac photo manager', description: "Already installed on your Mac — organizes photos by year, month, and day automatically.", whySeniors: 'Nothing to install. Syncs with your iPhone automatically via iCloud.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
     ],
   },
   'shopping': {
@@ -94,11 +94,11 @@ const appData: AppData = {
   },
   'reading': {
     iphone: [
-      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Adjust font size to your comfort.', whySeniors: "Large font options, no glare, and you can read in the dark. Buy once, read on any device.", price: 'Free app; books from £0', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/amazon-kindle/id302584613', badge: 'Best Pick' },
+      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Adjust font size to your comfort.', whySeniors: "Large font options, no glare, and you can read in the dark. Buy once, read on any device.", price: 'Free app; books from $0', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/amazon-kindle/id302584613', badge: 'Best Pick' },
       { name: 'Libby', emoji: '📖', tagline: 'Free library books on your phone', description: 'Borrow e-books and audiobooks for free with your library card.', whySeniors: 'Completely free. Large selection. No late fees — books return automatically.', price: 'Free', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/libby-by-overdrive/id1076402606' },
     ],
     android: [
-      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Large font options.', whySeniors: 'Adjustable text size and background colour for comfortable reading.', price: 'Free app; books from £0', rating: '4.7★', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.kindle', badge: 'Best Pick' },
+      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Large font options.', whySeniors: 'Adjustable text size and background color for comfortable reading.', price: 'Free app; books from $0', rating: '4.7★', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.kindle', badge: 'Best Pick' },
       { name: 'Libby', emoji: '📖', tagline: 'Free library books on your phone', description: 'Borrow e-books free with your library card.', whySeniors: 'Completely free. No late fees.', price: 'Free', rating: '4.8★', androidUrl: 'https://play.google.com/store/apps/details?id=com.overdrive.mobile.android.libby' },
     ],
     windows: [
@@ -163,7 +163,7 @@ export default function AppRecommender() {
     <>
       <SEOHead
         title="App Recommender | TekSure"
-        description="Not sure which app to use? Answer 3 questions and get personalised app recommendations for your device and needs."
+        description="Not sure which app to use? Answer 3 questions and get personalized app recommendations for your device and needs."
         path="/tools/app-recommender"
       />
       <Navbar />

@@ -20,7 +20,7 @@ interface Tip {
 
 const featuredTip: Tip & { full: string } = {
   title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
-  summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',  full: 'Scammers often create websites with addresses very similar to popular sites — for example, "amaz0n.com" instead of "amazon.com". If you type a web address by hand, it\'s easy to make a small mistake and end up on a fraudulent site without realising. The safest solution is to bookmark your important websites (like your bank, email, and shopping sites) so you can access them with a single click. In most browsers, you can press Ctrl+D (or Cmd+D on Mac) to bookmark the page you\'re currently on. You can also organise your bookmarks into folders like "Banking", "Shopping", and "Email" to keep them tidy. Once bookmarked, always use the bookmark to visit the site rather than typing the address manually.',
+  summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',  full: 'Scammers often create websites with addresses very similar to popular sites — for example, "amaz0n.com" instead of "amazon.com". If you type a web address by hand, it\'s easy to make a small mistake and end up on a fraudulent site without realising. The safest solution is to bookmark your important websites (like your bank, email, and shopping sites) so you can access them with a single click. In most browsers, you can press Ctrl+D (or Cmd+D on Mac) to bookmark the page you\'re currently on. You can also organize your bookmarks into folders like "Banking", "Shopping", and "Email" to keep them tidy. Once bookmarked, always use the bookmark to visit the site rather than typing the address manually.',
   category: 'Safety',
   icon: Star,
 };
@@ -73,7 +73,7 @@ const pastTips: Tip[] = [
     icon: Trash2,
   },
   {
-    title: 'Organise Your Downloads Folder',
+    title: 'Organize Your Downloads Folder',
     summary: 'Sort files into folders and delete what you don\'t need. A tidy downloads folder makes everything easier to find.',
     category: 'Productivity',
     icon: FolderOpen,
@@ -159,7 +159,7 @@ export default function Tips() {
           <div className="container max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Weekly Tech Tips</h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              One practical tip every week to help you stay safe, organised, and confident with technology.
+              One practical tip every week to help you stay safe, organized, and confident with technology.
             </p>
           </div>
         </section>

@@ -95,15 +95,15 @@ const QUESTIONS: Question[] = [
       { label: 'Often need help', value: 0 },
     ],
   },
-  // Colour
+  // Color
   {
-    id: 'q9', category: 'Colour & Contrast',
-    text: 'Do you sometimes find it hard to tell colours apart (e.g. green/red)?',
-    helpText: 'This might indicate colour blindness — there are settings to help.',
+    id: 'q9', category: 'Color & Contrast',
+    text: 'Do you sometimes find it hard to tell colors apart (e.g. green/red)?',
+    helpText: 'This might indicate color blindness — there are settings to help.',
     options: [
       { label: 'No difficulty', value: 2 },
       { label: 'Occasionally', value: 1 },
-      { label: 'Often struggle with colours', value: 0 },
+      { label: 'Often struggle with colors', value: 0 },
     ],
   },
   // General
@@ -150,10 +150,10 @@ function getRecommendations(answers: Record<string, number>): Recommendation[] {
     recs.push({ emoji: '🧘', title: 'Reduce visual clutter', description: 'iPhone: Settings → Accessibility → Display & Text Size → Reduce Motion + Reduce Transparency. Android: Settings → Accessibility → Visibility enhancements → Remove animations.' });
   }
   if ((answers['q9'] ?? 2) < 2) {
-    recs.push({ emoji: '🎨', title: 'Use colour filters', description: 'iPhone: Settings → Accessibility → Display & Text Size → Colour Filters. Choose "Deuteranopia" (red-green), "Protanopia", or "Tritanopia" depending on your colour blindness type.' });
+    recs.push({ emoji: '🎨', title: 'Use color filters', description: 'iPhone: Settings → Accessibility → Display & Text Size → Color Filters. Choose "Deuteranopia" (red-green), "Protanopia", or "Tritanopia" depending on your color blindness type.' });
   }
   if ((answers['q8'] ?? 2) < 2) {
-    recs.push({ emoji: '📚', title: 'Browse TekSure guides', description: 'Our step-by-step guides are designed to be easy to follow. Save the guides you use most to Favourites so you can find them again easily.', guideSlug: 'guides', guideLabel: 'Browse all guides' });
+    recs.push({ emoji: '📚', title: 'Browse TekSure guides', description: 'Our step-by-step guides are designed to be easy to follow. Save the guides you use most to Favorites so you can find them again easily.', guideSlug: 'guides', guideLabel: 'Browse all guides' });
   }
   return recs;
 }
@@ -207,7 +207,7 @@ export default function AccessibilityCheck() {
     <>
       <SEOHead
         title="Accessibility Check — TekSure"
-        description="Find out how accessible your device setup is and get personalised tips to make tech easier to use."
+        description="Find out how accessible your device setup is and get personalized tips to make tech easier to use."
       path="/tools/accessibility-check"
       />
       <Navbar />
@@ -223,7 +223,7 @@ export default function AccessibilityCheck() {
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Accessibility Check</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-              Answer 10 quick questions to see how well your device setup works for you — and get personalised tips to make things easier.
+              Answer 10 quick questions to see how well your device setup works for you — and get personalized tips to make things easier.
             </p>
           </div>
         </section>
@@ -350,7 +350,7 @@ export default function AccessibilityCheck() {
                 <div className="mb-6">
                   <h2 className="text-base font-semibold mb-3 flex items-center gap-2">
                     <AlertTriangle className="h-4 w-4 text-amber-500" />
-                    Personalised recommendations
+                    Personalized recommendations
                   </h2>
                   <div className="space-y-3">
                     {recommendations.map((rec, i) => (

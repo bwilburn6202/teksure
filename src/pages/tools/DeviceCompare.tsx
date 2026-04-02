@@ -23,7 +23,7 @@ interface DeviceData {
 
 const devices: Record<string, DeviceData> = {
   'iPhone': {
-    priceRange: '£699 – £1,599',
+    priceRange: '$699 – $1,599',
     bestFor: 'People who want a simple, reliable smartphone with great cameras',
     batteryLife: 'All-day (10–15 hrs screen time)',
     easeOfUse: '⭐⭐⭐⭐⭐ Very easy',
@@ -32,16 +32,16 @@ const devices: Record<string, DeviceData> = {
     verdict: 'Premium, polished, and beginner-friendly. Best if you already use other Apple devices.',
   },
   'Android Phone': {
-    priceRange: '£100 – £1,400',
+    priceRange: '$100 – $1,400',
     bestFor: 'People who want more choice in price, size, and features',
     batteryLife: 'All-day (8–14 hrs screen time)',
     easeOfUse: '⭐⭐⭐⭐ Easy',
     storage: '32 GB – 1 TB',
     internetNeeded: 'Yes (Wi-Fi or mobile data)',
-    verdict: 'Huge variety from budget to flagship. Great flexibility and customisation.',
+    verdict: 'Huge variety from budget to flagship. Great flexibility and customization.',
   },
   'iPad': {
-    priceRange: '£349 – £1,499',
+    priceRange: '$349 – $1,499',
     bestFor: 'Browsing, reading, video calls, and light creative work',
     batteryLife: '10+ hours',
     easeOfUse: '⭐⭐⭐⭐⭐ Very easy',
@@ -50,7 +50,7 @@ const devices: Record<string, DeviceData> = {
     verdict: 'The best tablet experience. Perfect as a first device for seniors or kids.',
   },
   'Windows Laptop': {
-    priceRange: '£300 – £2,500',
+    priceRange: '$300 – $2,500',
     bestFor: 'Work, browsing, gaming, and general everyday use',
     batteryLife: '5–12 hours depending on model',
     easeOfUse: '⭐⭐⭐ Moderate',
@@ -59,7 +59,7 @@ const devices: Record<string, DeviceData> = {
     verdict: 'Most versatile option. Runs the widest range of software. Learning curve for beginners.',
   },
   'Mac': {
-    priceRange: '£999 – £3,499',
+    priceRange: '$999 – $3,499',
     bestFor: 'Creative professionals, students, and Apple ecosystem users',
     batteryLife: '12–22 hours (Apple Silicon)',
     easeOfUse: '⭐⭐⭐⭐ Easy',
@@ -68,7 +68,7 @@ const devices: Record<string, DeviceData> = {
     verdict: 'Fast, reliable, and long-lasting. Premium price but excellent build quality.',
   },
   'Chromebook': {
-    priceRange: '£150 – £600',
+    priceRange: '$150 – $600',
     bestFor: 'Browsing, email, video calls — simple everyday tasks',
     batteryLife: '8–12 hours',
     easeOfUse: '⭐⭐⭐⭐⭐ Very easy',
@@ -77,7 +77,7 @@ const devices: Record<string, DeviceData> = {
     verdict: 'Cheapest laptop option. Great for people who mainly use a browser. Limited offline use.',
   },
   'Smart TV': {
-    priceRange: '£150 – £2,000+',
+    priceRange: '$150 – $2,000+',
     bestFor: 'Streaming Netflix, YouTube, and live TV from the sofa',
     batteryLife: 'N/A — mains powered',
     easeOfUse: '⭐⭐⭐⭐ Easy (with remote)',
@@ -86,7 +86,7 @@ const devices: Record<string, DeviceData> = {
     verdict: 'No computer skills needed. Just connect to Wi-Fi and start streaming.',
   },
   'Amazon Echo / Alexa': {
-    priceRange: '£25 – £250',
+    priceRange: '$25 – $250',
     bestFor: 'Voice-controlled music, timers, reminders, smart home control',
     batteryLife: 'N/A — mains powered (most models)',
     easeOfUse: '⭐⭐⭐⭐⭐ Very easy',

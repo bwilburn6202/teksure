@@ -3,7 +3,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Heart, Shield, BookOpen, Phone, Users, ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react';
+import { Heart, Shield, BookOpen, Phone, Users, ArrowRight, CheckCircle2, HelpCircle, Lock, Wifi, Ear, CalendarDays, Video } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const features = [
@@ -15,12 +15,12 @@ const features = [
 ];
 
 const guides = [
-  { emoji: '🛡️', title: 'Recognising Online Scams', slug: 'recognizing-avoiding-scams' },
-  { emoji: '🔐', title: 'Creating a Strong Password', slug: 'create-strong-password' },
-  { emoji: '📶', title: 'Wi-Fi Troubleshooting Basics', slug: 'wifi-troubleshooting-basics' },
-  { emoji: '👂', title: 'Hearing Aid Bluetooth Setup', slug: 'hearing-aid-bluetooth' },
-  { emoji: '📅', title: 'Calendar & Reminders', slug: 'calendar-reminders' },
-  { emoji: '📹', title: 'Video Calling Mastery', slug: 'video-calling-mastery' },
+  { icon: Shield, title: 'Recognising Online Scams', slug: 'recognizing-avoiding-scams' },
+  { icon: Lock, title: 'Creating a Strong Password', slug: 'create-strong-password' },
+  { icon: Wifi, title: 'Wi-Fi Troubleshooting Basics', slug: 'wifi-troubleshooting-basics' },
+  { icon: Ear, title: 'Hearing Aid Bluetooth Setup', slug: 'hearing-aid-bluetooth' },
+  { icon: CalendarDays, title: 'Calendar & Reminders', slug: 'calendar-reminders' },
+  { icon: Video, title: 'Video Calling Mastery', slug: 'video-calling-mastery' },
 ];
 
 const tips = [
@@ -39,7 +39,7 @@ export default function Caregiver() {
       <main className="flex-1">
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
-            <div className="text-5xl mb-4">💙</div>
+            <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">Caregiver Dashboard</h1>
             <p className="text-muted-foreground text-lg leading-relaxed">Supporting a family member or friend with their technology? TekSure makes it easier to help without taking over.</p>
           </div>
@@ -74,7 +74,7 @@ export default function Caregiver() {
                 {guides.map(g => (
                   <Link key={g.slug} to={`/guides/${g.slug}`}
                     className="flex items-center gap-3 rounded-xl border border-border hover:border-primary hover:bg-primary/5 p-3 transition-all group">
-                    <span className="text-xl">{g.emoji}</span>
+                    <g.icon className="h-5 w-5 text-primary shrink-0" />
                     <span className="text-sm font-medium flex-1 group-hover:text-primary transition-colors">{g.title}</span>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                   </Link>

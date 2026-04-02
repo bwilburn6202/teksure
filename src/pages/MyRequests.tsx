@@ -28,12 +28,12 @@ const statusConfig: Record<string, { label: string; icon: typeof Clock; color: s
 };
 
 const deviceLabels: Record<string, string> = {
-  phone: '📱 Phone',
-  tablet: '📲 Tablet',
-  computer: '💻 Computer',
-  tv: '📺 TV / Streaming',
-  'smart-home': '🏠 Smart Home',
-  other: '🔧 Other',
+  phone: 'Phone',
+  tablet: 'Tablet',
+  computer: 'Computer',
+  tv: 'TV / Streaming',
+  'smart-home': 'Smart Home',
+  other: 'Other',
 };
 
 function formatDate(iso: string) {

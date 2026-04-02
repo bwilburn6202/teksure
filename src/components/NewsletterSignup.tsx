@@ -36,8 +36,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               className="flex items-center gap-2 text-sm text-green-600 font-medium"
             >
               <CheckCircle className="h-4 w-4" />
-              You're subscribed! Weekly tips incoming 🎉
-            </div>
+              You're subscribed! Weekly tips incoming             </div>
           ) : (
             <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full">
               <input

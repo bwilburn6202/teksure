@@ -193,7 +193,7 @@ const Dashboard = () => {
                   {jobType === 'in_person' && (
                     <div className="space-y-1.5">
                       <Label>Your address</Label>
-                      <Input value={address} onChange={e => setAddress(e.target.value)} placeholder="123 Main St, City, Postcode" />
+                      <Input value={address} onChange={e => setAddress(e.target.value)} placeholder="123 Main St, City, Zip Code" />
                     </div>
                   )}
                   <Button type="submit" className="w-full" disabled={!category || !description.trim()}>

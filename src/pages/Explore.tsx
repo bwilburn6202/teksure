@@ -140,7 +140,7 @@ const sections: Section[] = [
       { to: '/customer', label: 'Customer Dashboard', icon: LayoutDashboard },
       { to: '/profile', label: 'Profile', icon: LogIn },
       { to: '/progress-report', label: 'Progress Report', icon: BarChart2 },
-      { to: '/favorites', label: 'Favourites', icon: Heart },
+      { to: '/favorites', label: 'Favorites', icon: Heart },
       { to: '/notifications', label: 'Notifications', icon: Bell },
       { to: '/certificate', label: 'Certificates', icon: Award },
       { to: '/gift', label: 'Gift a Subscription', icon: Gift },

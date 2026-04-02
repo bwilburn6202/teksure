@@ -52,7 +52,7 @@ const questions: Question[] = [
     options: [
       { value: 'recent', label: 'Within the last month', score: 'green', tip: 'Perfect — staying up to date keeps you protected against security threats.' },
       { value: 'while', label: '1–6 months ago', score: 'amber', tip: 'Check for updates now. Security patches are released frequently and skipping them leaves you vulnerable.' },
-      { value: 'never', label: 'More than 6 months / not sure', score: 'red', tip: 'Update immediately! Go to Settings → Update and install everything available. This is your #1 security defence.' },
+      { value: 'never', label: 'More than 6 months / not sure', score: 'red', tip: 'Update immediately! Go to Settings → Update and install everything available. This is your #1 security defense.' },
     ],
   },
   {
@@ -104,7 +104,7 @@ export default function HealthCheck() {
 
   return (
     <div className="min-h-screen">
-      <SEOHead title="Tech Health Check | TekSure" description="Take a quick 5-question quiz to check the health of your device and get personalised tips." path="/tools/health-check" />
+      <SEOHead title="Tech Health Check | TekSure" description="Take a quick 5-question quiz to check the health of your device and get personalized tips." path="/tools/health-check" />
       <Navbar />
 
       <section className="border-b">

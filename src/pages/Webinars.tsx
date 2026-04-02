@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Video, Calendar, Clock, Users, CheckCircle2, ChevronDown, ExternalLink, Bell } from 'lucide-react';
+import { Video, Calendar, Clock, Users, CheckCircle2, ChevronDown, ExternalLink, Bell, Lock, Smartphone, Bot, AlertTriangle, Cloud, Play, type LucideIcon } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface Webinar {
@@ -15,7 +15,7 @@ interface Webinar {
   date: string;
   time: string;
   duration: string;
-  emoji: string;
+  icon: LucideIcon;
   category: string;
   spots?: number;
   spotsLeft?: number;
@@ -33,7 +33,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-04-02',
     time: '10:00',
     duration: '60 min',
-    emoji: '🔒',
+    icon: Lock,
     category: 'Security',
     spots: 50,
     spotsLeft: 23,
@@ -48,7 +48,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-04-09',
     time: '14:00',
     duration: '60 min',
-    emoji: '📱',
+    icon: Smartphone,
     category: 'Devices',
     spots: 50,
     spotsLeft: 38,
@@ -63,7 +63,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-04-16',
     time: '10:00',
     duration: '60 min',
-    emoji: '🤖',
+    icon: Bot,
     category: 'AI',
     spots: 50,
     spotsLeft: 41,
@@ -78,7 +78,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-03-12',
     time: '14:00',
     duration: '45 min',
-    emoji: '📹',
+    icon: Video,
     category: 'Communication',
     status: 'recorded',
     recordingUrl: '#',
@@ -92,7 +92,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-02-26',
     time: '10:00',
     duration: '55 min',
-    emoji: '⚠️',
+    icon: AlertTriangle,
     category: 'Security',
     status: 'recorded',
     recordingUrl: '#',
@@ -106,7 +106,7 @@ const WEBINARS: Webinar[] = [
     date: '2026-02-12',
     time: '14:00',
     duration: '50 min',
-    emoji: '☁️',
+    icon: Cloud,
     category: 'Storage',
     status: 'recorded',
     recordingUrl: '#',
@@ -190,7 +190,7 @@ export default function Webinars() {
                     : 'bg-muted border-border hover:bg-accent'
                 }`}
               >
-                {f === 'Upcoming' ? `🗓️ Upcoming (${upcoming.length})` : f === 'Recorded' ? `▶️ Recorded (${recorded.length})` : 'All webinars'}
+                {f === 'Upcoming' ? <><Calendar className="h-3.5 w-3.5 inline-block mr-1" />Upcoming ({upcoming.length})</> : f === 'Recorded' ? <><Play className="h-3.5 w-3.5 inline-block mr-1" />Recorded ({recorded.length})</> : 'All webinars'}
               </button>
             ))}
           </div>
@@ -201,7 +201,7 @@ export default function Webinars() {
               <Card key={webinar.id} className={`rounded-2xl border-border hover:shadow-md transition-shadow ${webinar.status === 'live' ? 'border-red-400 ring-1 ring-red-400/50' : ''}`}>
                 <CardContent className="p-5">
                   <div className="flex gap-4">
-                    <div className="text-4xl shrink-0 mt-0.5">{webinar.emoji}</div>
+                    <webinar.icon className="h-9 w-9 text-primary shrink-0 mt-0.5" />
                     <div className="flex-1 min-w-0">
                       {/* Header row */}
                       <div className="flex items-center gap-2 flex-wrap mb-2">
@@ -209,13 +209,13 @@ export default function Webinars() {
                           {webinar.category}
                         </span>
                         {webinar.status === 'live' && (
-                          <Badge className="bg-red-500 text-white text-xs animate-pulse">🔴 LIVE NOW</Badge>
+                          <Badge className="bg-red-500 text-white text-xs animate-pulse">LIVE NOW</Badge>
                         )}
                         {webinar.status === 'recorded' && (
-                          <Badge variant="secondary" className="text-xs rounded-full">▶️ Recorded</Badge>
+                          <Badge variant="secondary" className="text-xs rounded-full inline-flex items-center gap-1"><Play className="h-3 w-3" /> Recorded</Badge>
                         )}
                         {webinar.status === 'upcoming' && (
-                          <Badge variant="outline" className="text-xs text-primary border-primary/40 rounded-full">🗓️ Upcoming</Badge>
+                          <Badge variant="outline" className="text-xs text-primary border-primary/40 rounded-full inline-flex items-center gap-1"><Calendar className="h-3 w-3" /> Upcoming</Badge>
                         )}
                       </div>
 

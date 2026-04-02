@@ -3,7 +3,7 @@
 ## Step 1: Create a Google Analytics 4 Property
 
 1. Go to [analytics.google.com](https://analytics.google.com)
-2. Sign in with your Google account (bwilburn6202@gmail.com)
+2. Sign in with your Google account (bailey@teksure.com)
 3. Click **Admin** (gear icon, bottom left)
 4. Click **Create** → **Property**
 5. Name it **TekSure** and set your time zone/currency

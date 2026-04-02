@@ -51,7 +51,7 @@ const permissions: PermissionType[] = [
       iphone: ['Settings → Privacy & Security → Camera.', 'Review each app. Turn off camera for any app that has no reason to take photos.'],
       android: ['Settings → Privacy → Permission manager → Camera.', 'Tap each app and change to "Ask every time" or "Don\'t allow" for suspicious apps.'],
       windows: ['Settings → Privacy & security → Camera.', 'Toggle off camera for apps that shouldn\'t need it.'],
-      mac: ['System Settings → Privacy & Security → Camera.', 'Uncheck apps you don\'t recognise or don\'t need camera for.'],
+      mac: ['System Settings → Privacy & Security → Camera.', 'Uncheck apps you don\'t recognize or don\'t need camera for.'],
     },
   },
   {

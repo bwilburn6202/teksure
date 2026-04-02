@@ -117,9 +117,16 @@ const Glossary = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Tech Glossary for Beginners | TekSure"
-        description="Every tech term explained in plain English. Browse 65+ definitions with analogies — no jargon, just answers."
+        title="Tech Glossary — Every Term Explained in Plain English | TekSure"
+        description="Every tech term explained in plain English. Browse 65+ definitions with simple analogies — no jargon, just answers."
         path="/glossary"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'DefinedTermSet',
+          name: 'TekSure Technology Glossary',
+          description: 'Plain-English definitions of common technology terms for beginners and seniors.',
+          url: 'https://teksure.com/glossary',
+        }}
       />
       <Navbar />
 

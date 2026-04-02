@@ -146,10 +146,10 @@ export default function ScamReport() {
                     <SelectTrigger><SelectValue placeholder="Select…" /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="no">No</SelectItem>
-                      <SelectItem value="under_100">Under £100</SelectItem>
-                      <SelectItem value="100_500">£100–£500</SelectItem>
-                      <SelectItem value="500_2000">£500–£2,000</SelectItem>
-                      <SelectItem value="over_2000">Over £2,000</SelectItem>
+                      <SelectItem value="under_100">Under $100</SelectItem>
+                      <SelectItem value="100_500">$100–$500</SelectItem>
+                      <SelectItem value="500_2000">$500–$2,000</SelectItem>
+                      <SelectItem value="over_2000">Over $2,000</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

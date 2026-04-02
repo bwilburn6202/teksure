@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { TrendingUp, BookOpen, Trophy, Mail, CheckCircle2, Clock, Flame } from 'lucide-react';
+import { TrendingUp, BookOpen, Trophy, Mail, CheckCircle2, Clock, Flame, BarChart3, Map } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
@@ -66,7 +66,7 @@ export default function ProgressReport() {
       <Navbar />
       <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">
-          <div className="text-4xl mb-3">📊</div>
+          <BarChart3 className="h-10 w-10 text-primary mx-auto mb-3" />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Your Monthly Progress Report</h1>
           <p className="text-muted-foreground">A snapshot of your learning journey — see how far you've come.</p>
         </div>
@@ -74,16 +74,16 @@ export default function ProgressReport() {
         {/* Stats row */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
           {[
-            { icon: BookOpen, label: 'Guides completed', value: total, colour: 'text-blue-600', bg: 'bg-blue-50' },
-            { icon: Flame, label: 'Day streak', value: streak, colour: 'text-orange-600', bg: 'bg-orange-50' },
-            { icon: Trophy, label: 'Confidence score', value: confidenceScore ? `${confidenceScore}%` : '—', colour: 'text-green-600', bg: 'bg-green-50' },
-            { icon: TrendingUp, label: 'Next milestone', value: `${total}/${nextGoal}`, colour: 'text-purple-600', bg: 'bg-purple-50' },
+            { icon: BookOpen, label: 'Guides completed', value: total, color: 'text-blue-600', bg: 'bg-blue-50' },
+            { icon: Flame, label: 'Day streak', value: streak, color: 'text-orange-600', bg: 'bg-orange-50' },
+            { icon: Trophy, label: 'Confidence score', value: confidenceScore ? `${confidenceScore}%` : '—', color: 'text-green-600', bg: 'bg-green-50' },
+            { icon: TrendingUp, label: 'Next milestone', value: `${total}/${nextGoal}`, color: 'text-purple-600', bg: 'bg-purple-50' },
           ].map((stat, i) => (
             <div key={stat.label}>
               <Card>
                 <CardContent className="pt-4 pb-3 text-center">
                   <div className={`w-10 h-10 rounded-full ${stat.bg} flex items-center justify-center mx-auto mb-2`}>
-                    <stat.icon className={`h-5 w-5 ${stat.colour}`} />
+                    <stat.icon className={`h-5 w-5 ${stat.color}`} />
                   </div>
                   <p className="text-2xl font-black">{stat.value}</p>
                   <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
@@ -150,7 +150,7 @@ export default function ProgressReport() {
         {chosenPath && (
           <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="pt-5 pb-4 flex items-center gap-4">
-              <div className="text-3xl">🗺️</div>
+              <Map className="h-8 w-8 text-primary" />
               <div className="flex-1">
                 <p className="font-semibold">Your learning path</p>
                 <p className="text-sm text-muted-foreground">{chosenPath}</p>

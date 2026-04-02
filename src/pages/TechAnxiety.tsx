@@ -2,16 +2,16 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Heart, BookOpen, Users, MessageCircle, Phone, ArrowRight } from 'lucide-react';
+import { Heart, BookOpen, Users, MessageCircle, Phone, ArrowRight, Timer, CheckCircle, RefreshCw, Handshake, PenLine, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const tips = [
-  { emoji: '🐢', title: 'Go at your own pace', body: 'There is no schedule, no exam, no one judging you. Technology is a skill — it takes practice, just like driving or cooking. Everyone learns differently, and slower is fine.' },
-  { emoji: '✅', title: 'Start with one thing', body: 'Don\'t try to learn everything at once. Pick one small task — checking email, or making a video call — and do only that until it feels comfortable. Then move on.' },
-  { emoji: '🔄', title: 'It\'s OK to make mistakes', body: 'Pressing the wrong button rarely causes permanent damage. Modern devices are designed to be forgiving. You can almost always undo, go back, or restart.' },
-  { emoji: '🤝', title: 'Ask for help without embarrassment', body: 'Every single person who is good at technology was once a complete beginner. Asking for help is a sign of intelligence, not weakness.' },
-  { emoji: '📝', title: 'Write things down', body: 'Keep a small notebook of things you learn — passwords (in a safe place), steps for tasks you do regularly, useful phone numbers. This removes the pressure of remembering everything.' },
-  { emoji: '🧘', title: 'Take breaks', body: 'If frustration builds, step away for 10 minutes. Come back fresh. Trying to force your way through when stressed rarely works and makes the anxiety worse.' },
+  { icon: Timer, title: 'Go at your own pace', body: 'There is no schedule, no exam, no one judging you. Technology is a skill — it takes practice, just like driving or cooking. Everyone learns differently, and slower is fine.' },
+  { icon: CheckCircle, title: 'Start with one thing', body: 'Don\'t try to learn everything at once. Pick one small task — checking email, or making a video call — and do only that until it feels comfortable. Then move on.' },
+  { icon: RefreshCw, title: 'It\'s OK to make mistakes', body: 'Pressing the wrong button rarely causes permanent damage. Modern devices are designed to be forgiving. You can almost always undo, go back, or restart.' },
+  { icon: Handshake, title: 'Ask for help without embarrassment', body: 'Every single person who is good at technology was once a complete beginner. Asking for help is a sign of intelligence, not weakness.' },
+  { icon: PenLine, title: 'Write things down', body: 'Keep a small notebook of things you learn — passwords (in a safe place), steps for tasks you do regularly, useful phone numbers. This removes the pressure of remembering everything.' },
+  { icon: Leaf, title: 'Take breaks', body: 'If frustration builds, step away for 10 minutes. Come back fresh. Trying to force your way through when stressed rarely works and makes the anxiety worse.' },
 ];
 
 const resources = [
@@ -34,7 +34,7 @@ export default function TechAnxiety() {
       <main className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
-            <div className="text-5xl mb-4">💙</div>
+            <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-4">Feeling Overwhelmed by Technology?</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               You are not alone. Millions of people feel anxious, frustrated, or left behind by technology. This page is for you — gentle, honest support with no jargon and no judgement.
@@ -56,7 +56,7 @@ export default function TechAnxiety() {
               <div key={tip.title}>
                 <Card className="h-full rounded-2xl border border-border bg-card">
                   <CardContent className="pt-5 pb-5">
-                    <span className="text-3xl block mb-3">{tip.emoji}</span>
+                    <tip.icon className="h-7 w-7 text-primary mb-3" />
                     <h3 className="font-semibold mb-2">{tip.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{tip.body}</p>
                   </CardContent>

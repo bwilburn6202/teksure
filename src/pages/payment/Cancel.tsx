@@ -1,5 +1,5 @@
 import { useSearchParams, Link } from 'react-router-dom';
-import { XCircle, ArrowLeft, RefreshCcw } from 'lucide-react';
+import { XCircle, ArrowLeft, RefreshCcw, RotateCcw, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -39,13 +39,13 @@ export default function PaymentCancel() {
             <CardContent className="p-5 text-left space-y-3">
               <p className="font-semibold text-sm mb-2">What would you like to do?</p>
               <div className="flex items-start gap-3 text-sm">
-                <span className="text-xl">🔄</span>
+                <RotateCcw className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
                   Try the deposit payment again — your booking is still valid.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
-                <span className="text-xl">💰</span>
+                <DollarSign className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
                   Or choose "Pay on the day" to complete your booking for free.
                 </p>

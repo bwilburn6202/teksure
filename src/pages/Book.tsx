@@ -4,6 +4,7 @@ import {
   Calendar, Clock, Wrench, CheckCircle2, ChevronRight, ArrowRight,
   Wifi, Shield, Monitor, Printer, Smartphone, HelpCircle, Loader2,
   User, Mail, Phone as PhoneIcon, FileText, CreditCard, Lock,
+  Handshake, Star, DollarSign, Sunrise, Sun, Sunset,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -33,19 +34,19 @@ interface BookingForm {
 }
 
 /* ── Service options ─────────────────────── */
-const services: { id: ServiceType; label: string; icon: React.ElementType; desc: string; emoji: string }[] = [
-  { id: 'wifi', label: 'WiFi & Internet', icon: Wifi, desc: 'Slow internet, connection drops, router setup', emoji: '📶' },
-  { id: 'setup', label: 'New Device Setup', icon: Monitor, desc: 'Setting up a new computer, phone, or tablet', emoji: '🖥️' },
-  { id: 'security', label: 'Virus & Security', icon: Shield, desc: 'Virus removal, scam recovery, securing accounts', emoji: '🔒' },
-  { id: 'printer', label: 'Printer Problems', icon: Printer, desc: "Won't print, connection issues, driver setup", emoji: '🖨️' },
-  { id: 'phone', label: 'Phone & Tablet', icon: Smartphone, desc: 'Apps, settings, backing up, slow performance', emoji: '📱' },
-  { id: 'general', label: 'General Help', icon: HelpCircle, desc: "Not sure? We'll figure it out together", emoji: '🔧' },
+const services: { id: ServiceType; label: string; icon: React.ElementType; desc: string }[] = [
+  { id: 'wifi', label: 'WiFi & Internet', icon: Wifi, desc: 'Slow internet, connection drops, router setup' },
+  { id: 'setup', label: 'New Device Setup', icon: Monitor, desc: 'Setting up a new computer, phone, or tablet' },
+  { id: 'security', label: 'Virus & Security', icon: Shield, desc: 'Virus removal, scam recovery, securing accounts' },
+  { id: 'printer', label: 'Printer Problems', icon: Printer, desc: "Won't print, connection issues, driver setup" },
+  { id: 'phone', label: 'Phone & Tablet', icon: Smartphone, desc: 'Apps, settings, backing up, slow performance' },
+  { id: 'general', label: 'General Help', icon: HelpCircle, desc: "Not sure? We'll figure it out together" },
 ];
 
-const slots: { id: TimeSlot; label: string; time: string; emoji: string }[] = [
-  { id: 'morning', label: 'Morning', time: '9am – 12pm', emoji: '🌅' },
-  { id: 'afternoon', label: 'Afternoon', time: '12pm – 5pm', emoji: '☀️' },
-  { id: 'evening', label: 'Evening', time: '5pm – 8pm', emoji: '🌆' },
+const slots: { id: TimeSlot; label: string; time: string; icon: React.ElementType }[] = [
+  { id: 'morning', label: 'Morning', time: '9am – 12pm', icon: Sunrise },
+  { id: 'afternoon', label: 'Afternoon', time: '12pm – 5pm', icon: Sun },
+  { id: 'evening', label: 'Evening', time: '5pm – 8pm', icon: Sunset },
 ];
 
 const deviceTypes = [
@@ -158,7 +159,7 @@ export default function Book() {
     }
   };
 
-  /** "Pay £15 deposit" — save booking, create Stripe session, redirect */
+  /** "Pay $15 deposit" — save booking, create Stripe session, redirect */
   const handleStripeDeposit = async () => {
     setError('');
     if (!form.name.trim()) { setError('Please enter your name.'); return; }
@@ -247,8 +248,29 @@ export default function Book() {
     <>
       <SEOHead
         title="Book a Technician | TekSure"
-        description="Book a real human technician to help with your tech problem — WiFi, setup, security, printers, and more."
+        description="Book a real human technician to help with your tech problem — WiFi, setup, security, printers, and more. Starting at $15."
         path="/book"
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'TekSure Tech Support',
+            description: 'In-home and remote tech support for everyday people. Help with WiFi, email, printers, phones, security, and more.',
+            url: 'https://teksure.com/book',
+            provider: {
+              '@type': 'Organization',
+              name: 'TekSure',
+              url: 'https://teksure.com',
+            },
+            areaServed: { '@type': 'Country', name: 'US' },
+            offers: {
+              '@type': 'Offer',
+              price: '15.00',
+              priceCurrency: 'USD',
+              description: 'Starting deposit for technician booking',
+            },
+          },
+        ]}
       />
       <Navbar />
       <main className="min-h-screen bg-background" id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
@@ -295,7 +317,7 @@ export default function Book() {
                         aria-pressed={form.serviceType === s.id}
                         className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card text-left transition-all hover:border-primary/30 hover:bg-card/80"
                       >
-                        <span className="text-2xl shrink-0" aria-hidden="true">{s.emoji}</span>
+                        <Icon className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
                           <div className="font-semibold">{s.label}</div>
                           <div className="text-sm text-muted-foreground mt-0.5">{s.desc}</div>
@@ -308,18 +330,21 @@ export default function Book() {
                 {/* Trust signals */}
                 <div className="grid sm:grid-cols-3 gap-3 text-center">
                   {[
-                    { emoji: '🤝', label: 'Real humans', sub: 'No bots or call centres' },
-                    { emoji: '⭐', label: 'Vetted techs', sub: 'ID-verified professionals' },
-                    { emoji: '💰', label: 'No call-out fee', sub: 'Pay only if we fix it' },
-                  ].map(t => (
-                    <Card key={t.label} className="rounded-xl border border-border bg-card">
-                      <CardContent className="p-4">
-                        <div className="text-2xl mb-2">{t.emoji}</div>
-                        <div className="text-sm font-medium">{t.label}</div>
-                        <div className="text-xs text-muted-foreground mt-1">{t.sub}</div>
-                      </CardContent>
-                    </Card>
-                  ))}
+                    { icon: Handshake, label: 'Real humans', sub: 'No bots or call centers' },
+                    { icon: Star, label: 'Vetted techs', sub: 'ID-verified professionals' },
+                    { icon: DollarSign, label: 'No call-out fee', sub: 'Pay only if we fix it' },
+                  ].map(t => {
+                    const TIcon = t.icon;
+                    return (
+                      <Card key={t.label} className="rounded-xl border border-border bg-card">
+                        <CardContent className="p-4">
+                          <div className="flex justify-center mb-2"><TIcon className="h-6 w-6 text-primary" aria-hidden="true" /></div>
+                          <div className="text-sm font-medium">{t.label}</div>
+                          <div className="text-xs text-muted-foreground mt-1">{t.sub}</div>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -330,8 +355,9 @@ export default function Book() {
                 <h2 className="text-2xl font-bold tracking-tight mb-2">
                   When works for you?
                 </h2>
-                <p className="text-muted-foreground mb-6">
-                  {selectedService?.emoji} {selectedService?.label}
+                <p className="text-muted-foreground mb-6 flex items-center gap-2">
+                  {selectedService && (() => { const SIcon = selectedService.icon; return <SIcon className="h-5 w-5 text-primary" />; })()}
+                  {selectedService?.label}
                 </p>
 
                 {/* Date picker */}
@@ -363,23 +389,26 @@ export default function Book() {
                   <Clock className="h-4 w-4" aria-hidden="true" /> Preferred time
                 </h3>
                 <div className="grid gap-3 sm:grid-cols-3 mb-8" role="group" aria-label="Select a time slot">
-                  {slots.map(s => (
-                    <button
-                      key={s.id}
-                      onClick={() => setForm(f => ({ ...f, slot: s.id }))}
-                      aria-pressed={form.slot === s.id}
-                      aria-label={`${s.label}, ${s.time}${form.slot === s.id ? ' (selected)' : ''}`}
-                      className={`flex flex-col items-center gap-1 p-4 rounded-xl border transition-all ${
-                        form.slot === s.id
-                          ? 'border-primary bg-primary/10'
-                          : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
-                      }`}
-                    >
-                      <span className="text-2xl" aria-hidden="true">{s.emoji}</span>
-                      <span className="font-semibold text-sm">{s.label}</span>
-                      <span className="text-xs text-muted-foreground">{s.time}</span>
-                    </button>
-                  ))}
+                  {slots.map(s => {
+                    const SIcon = s.icon;
+                    return (
+                      <button
+                        key={s.id}
+                        onClick={() => setForm(f => ({ ...f, slot: s.id }))}
+                        aria-pressed={form.slot === s.id}
+                        aria-label={`${s.label}, ${s.time}${form.slot === s.id ? ' (selected)' : ''}`}
+                        className={`flex flex-col items-center gap-1 p-4 rounded-xl border transition-all ${
+                          form.slot === s.id
+                            ? 'border-primary bg-primary/10'
+                            : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
+                        }`}
+                      >
+                        <SIcon className="h-6 w-6 text-primary" aria-hidden="true" />
+                        <span className="font-semibold text-sm">{s.label}</span>
+                        <span className="text-xs text-muted-foreground">{s.time}</span>
+                      </button>
+                    );
+                  })}
                 </div>
 
                 <div className="flex gap-3">
@@ -478,9 +507,9 @@ export default function Book() {
                 <Card className="rounded-xl border border-border bg-card mb-8">
                   <CardContent className="p-4 text-sm space-y-2">
                     <p className="font-semibold mb-3">Booking summary</p>
-                    <p>🔧 <strong>{selectedService?.label}</strong></p>
-                    <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
-                    <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
+                    <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
+                    <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
+                    <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
                   </CardContent>
                 </Card>
 
@@ -514,10 +543,10 @@ export default function Book() {
                   <CardContent className="p-4">
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pricing</p>
                     <div className="flex justify-between text-sm mb-2">
-                      <span>First hour</span><strong>£49</strong>
+                      <span>First hour</span><strong>$49</strong>
                     </div>
                     <div className="flex justify-between text-sm text-muted-foreground mb-4">
-                      <span>Each additional hour</span><span>£29</span>
+                      <span>Each additional hour</span><span>$29</span>
                     </div>
                     <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for the time spent — no fix, no charge.</p>
                   </CardContent>
@@ -550,7 +579,7 @@ export default function Book() {
                       {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                     </div>
                     <div>
-                      <p className="font-semibold text-sm">Pay £15 deposit now</p>
+                      <p className="font-semibold text-sm">Pay $15 deposit now</p>
                       <p className="text-xs text-muted-foreground mt-1">Secure your booking with a small deposit. The remainder is paid on the day. Fully refundable if you cancel 24+ hours before.</p>
                     </div>
                   </button>
@@ -581,11 +610,11 @@ export default function Book() {
                 <Card className="rounded-xl border border-border bg-card mb-8">
                   <CardContent className="p-4 text-sm space-y-2">
                     <p className="font-semibold mb-3">Booking summary</p>
-                    <p>🔧 <strong>{selectedService?.label}</strong></p>
-                    <p>📅 <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
-                    <p>🕐 <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
-                    <p>👤 <strong>{form.name}</strong></p>
-                    <p>💳 <strong>{paymentOption === 'deposit' ? 'Deposit £15 now + remainder on day' : 'Pay on the day'}</strong></p>
+                    <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
+                    <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
+                    <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
+                    <p className="flex items-center gap-2"><User className="h-4 w-4 text-muted-foreground" /> <strong>{form.name}</strong></p>
+                    <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? 'Deposit $15 now + remainder on day' : 'Pay on the day'}</strong></p>
                   </CardContent>
                 </Card>
 
@@ -601,7 +630,7 @@ export default function Book() {
                     {submitting
                       ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>
                       : paymentOption === 'deposit'
-                      ? <><CreditCard className="h-4 w-4" /> Pay £15 deposit securely</>
+                      ? <><CreditCard className="h-4 w-4" /> Pay $15 deposit securely</>
                       : <><CheckCircle2 className="h-4 w-4" /> Confirm booking — pay on day</>}
                   </Button>
                 </div>

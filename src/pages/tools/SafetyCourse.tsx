@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, XCircle, ChevronRight, RotateCcw, GraduationCap, ArrowRight, Shield } from 'lucide-react';
+import { CheckCircle2, XCircle, ChevronRight, RotateCcw, GraduationCap, ArrowRight, Shield, Anchor, Lock, ShoppingCart, KeyRound, AlertTriangle, type LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -20,7 +20,7 @@ interface QuizQuestion {
 
 interface Lesson {
   id: number;
-  emoji: string;
+  icon: LucideIcon;
   title: string;
   subtitle: string;
   content: { heading?: string; text: string }[];
@@ -30,9 +30,9 @@ interface Lesson {
 const lessons: Lesson[] = [
   {
     id: 1,
-    emoji: '🎣',
+    icon: Anchor,
     title: 'Spotting Scams',
-    subtitle: 'Learn to recognise the most common tricks scammers use',
+    subtitle: 'Learn to recognize the most common tricks scammers use',
     content: [
       { text: 'Scammers send millions of messages every day hoping a small number of people will fall for them. Knowing what to look for makes you almost impossible to fool.' },
       { heading: 'Red flags in emails and texts', text: 'Urgent language like "Your account will be closed in 24 hours!" is designed to panic you into acting without thinking. Legitimate companies rarely demand instant action.' },
@@ -68,7 +68,7 @@ const lessons: Lesson[] = [
 
   {
     id: 2,
-    emoji: '🔐',
+    icon: Lock,
     title: 'Strong Passwords',
     subtitle: 'Create passwords that are easy to remember but hard to crack',
     content: [
@@ -106,14 +106,14 @@ const lessons: Lesson[] = [
 
   {
     id: 3,
-    emoji: '🛒',
+    icon: ShoppingCart,
     title: 'Safe Online Shopping',
     subtitle: 'Buy online with confidence and spot dodgy websites',
     content: [
       { text: 'Online shopping is safe when you know what to look for. Millions of safe transactions happen every day — you just need to spot the rare dodgy ones.' },
       { heading: 'Check for HTTPS', text: 'Before entering any payment details, look at the address bar. The web address should start with "https://" — the "s" stands for secure. Most browsers also show a padlock icon. If it just says "http://" without the "s", leave immediately.' },
       { heading: 'Research the seller', text: 'Search for "[shop name] reviews" or "[shop name] scam" before buying from an unfamiliar website. Check Trustpilot. If you can\'t find any information, that\'s a warning sign.' },
-      { heading: 'If it seems too good to be true...', text: 'A £500 phone for £39.99 is almost certainly a scam or counterfeit. Scammers attract buyers with unbeatable prices then take your money and send nothing — or cheap fakes.' },
+      { heading: 'If it seems too good to be true...', text: 'A $500 phone for $39.99 is almost certainly a scam or counterfeit. Scammers attract buyers with unbeatable prices then take your money and send nothing — or cheap fakes.' },
       { heading: 'Use credit cards or PayPal when possible', text: 'Credit cards and PayPal offer purchase protection — you can dispute charges if goods don\'t arrive. Paying by bank transfer directly gives you no protection at all.' },
     ],
     quiz: [
@@ -144,13 +144,13 @@ const lessons: Lesson[] = [
 
   {
     id: 4,
-    emoji: '🔒',
+    icon: KeyRound,
     title: 'Protecting Your Privacy',
     subtitle: 'Control what information you share and with whom',
     content: [
       { text: 'Your personal information is valuable. Knowing how to protect it stops companies, advertisers, and criminals from misusing it.' },
       { heading: 'Think before you share', text: 'Every piece of information you share online — your name, birthday, phone number, home town — can potentially be used against you. Be stingy. A website only needs what\'s truly necessary to provide its service.' },
-      { heading: 'Social media privacy settings', text: 'Most social media platforms default to sharing everything publicly. Check your privacy settings and set posts to "Friends only" at minimum. Don\'t post your home address, daily routine, or when you\'re going on holiday.' },
+      { heading: 'Social media privacy settings', text: 'Most social media platforms default to sharing everything publicly. Check your privacy settings and set posts to "Friends only" at minimum. Don\'t post your home address, daily routine, or when you\'re going on vacation.' },
       { heading: 'Location data', text: 'Phones track your location constantly. Go to Settings > Privacy > Location Services and restrict apps that don\'t genuinely need to know where you are.' },
       { heading: 'What cookies are', text: 'When websites ask about "cookies", they\'re asking permission to track you across the internet. Always click "Reject All" or "Manage Preferences" rather than accepting everything. It makes no difference to how the website works.' },
       { heading: 'Two-factor authentication (2FA)', text: '2FA means that even if someone gets your password, they can\'t get in without a code sent to your phone. Enable it on your email, banking app, and any social media accounts.' },
@@ -183,7 +183,7 @@ const lessons: Lesson[] = [
 
   {
     id: 5,
-    emoji: '🚨',
+    icon: AlertTriangle,
     title: 'If Something Goes Wrong',
     subtitle: 'What to do immediately after a security incident',
     content: [
@@ -207,7 +207,7 @@ const lessons: Lesson[] = [
         explanation: 'One click rarely causes damage by itself. Close the tab, don\'t enter anything, then run a scan. Most harm comes from entering details, not the click itself.',
       },
       {
-        question: 'You realise you\'ve sent money to a scammer. What should you do immediately?',
+        question: 'You realize you\'ve sent money to a scammer. What should you do immediately?',
         options: [
           'Wait and see if the goods arrive',
           'Call your bank straight away — speed matters',
@@ -243,7 +243,7 @@ const Certificate = ({ onReset }: { onReset: () => void }) => (
         {lessons.map(l => (
           <div key={l.id} className="flex items-center gap-2">
             <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />
-            <span>{l.emoji} {l.title}</span>
+            <span className="flex items-center gap-1.5"><l.icon className="h-3.5 w-3.5" /> {l.title}</span>
           </div>
         ))}
       </div>
@@ -366,7 +366,7 @@ export default function SafetyCourse() {
               <div className="grid gap-3 mb-8">
                 {lessons.map((l, i) => (
                   <div key={l.id} className="flex items-center gap-4 p-3 rounded-xl bg-muted/50 border border-border">
-                    <span className="text-xl shrink-0">{l.emoji}</span>
+                    <l.icon className="h-5 w-5 text-primary shrink-0" />
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-sm">{l.title}</p>
                       <p className="text-xs text-muted-foreground truncate">{l.subtitle}</p>
@@ -391,7 +391,7 @@ export default function SafetyCourse() {
           {courseStarted && !courseComplete && lessonPhase === 'content' && (
             <div key={`lesson-${currentLesson}-content`}>
               <div className="flex items-center gap-3 mb-5">
-                <span className="text-3xl">{lesson.emoji}</span>
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center"><lesson.icon className="h-5 w-5 text-primary" /></div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider">Lesson {lesson.id}</p>
                   <h2 className="text-xl font-bold">{lesson.title}</h2>
@@ -421,7 +421,7 @@ export default function SafetyCourse() {
           {courseStarted && !courseComplete && lessonPhase === 'quiz' && (
             <div key={`lesson-${currentLesson}-quiz-${currentQuizQ}`}>
               <div className="flex items-center gap-3 mb-2">
-                <Badge variant="outline" className="text-xs">Quiz — {lesson.emoji} {lesson.title}</Badge>
+                <Badge variant="outline" className="text-xs gap-1"><lesson.icon className="h-3 w-3" /> Quiz — {lesson.title}</Badge>
                 <span className="text-xs text-muted-foreground ml-auto">
                   Q{currentQuizQ + 1} of {lesson.quiz.length}
                 </span>

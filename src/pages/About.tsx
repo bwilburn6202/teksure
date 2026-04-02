@@ -26,8 +26,20 @@ const About = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
       title="About TekSure — Our Mission to Make Tech Simple"
-      description="TekSure helps seniors and beginners understand technology with free guides, glossaries, and verified tech support."
+      description="TekSure is an American technology support platform that helps everyday people understand technology with free guides, tools, and verified tech support."
       path="/about"
+      jsonLd={{
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'TekSure',
+        url: 'https://teksure.com',
+        logo: 'https://teksure.com/og-image.png',
+        description: 'Free technology support and guides for everyday people. An American company making tech simple.',
+        contactPoint: { '@type': 'ContactPoint', email: 'bailey@teksure.com', contactType: 'customer service' },
+        sameAs: [],
+        foundingDate: '2025',
+        founder: { '@type': 'Person', name: 'Bailey Wilburn' },
+      }}
     />
     <Navbar />
 

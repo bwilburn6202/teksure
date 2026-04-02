@@ -78,13 +78,13 @@ export default function FamilySharing() {
         {/* Benefits */}
         <div className="grid sm:grid-cols-3 gap-4 mb-10">
           {[
-            { icon: Users, title: 'Shared access', desc: `Up to ${MAX_MEMBERS} family members on one plan`, colour: 'bg-blue-50 text-blue-600' },
-            { icon: Heart, title: 'Individual progress', desc: 'Everyone tracks their own learning journey', colour: 'bg-pink-50 text-pink-600' },
-            { icon: Shield, title: 'Keep it safe', desc: 'Separate logins — full privacy for each person', colour: 'bg-green-50 text-green-600' },
+            { icon: Users, title: 'Shared access', desc: `Up to ${MAX_MEMBERS} family members on one plan`, color: 'bg-blue-50 text-blue-600' },
+            { icon: Heart, title: 'Individual progress', desc: 'Everyone tracks their own learning journey', color: 'bg-pink-50 text-pink-600' },
+            { icon: Shield, title: 'Keep it safe', desc: 'Separate logins — full privacy for each person', color: 'bg-green-50 text-green-600' },
           ].map(b => (
             <Card key={b.title} className="rounded-2xl border border-border bg-card">
               <CardContent className="pt-4 pb-4 text-center">
-                <div className={`w-10 h-10 rounded-full ${b.colour} flex items-center justify-center mx-auto mb-2`}>
+                <div className={`w-10 h-10 rounded-full ${b.color} flex items-center justify-center mx-auto mb-2`}>
                   <b.icon className="h-5 w-5" />
                 </div>
                 <p className="font-semibold text-sm mb-1">{b.title}</p>
@@ -119,11 +119,11 @@ export default function FamilySharing() {
               <form onSubmit={addMember} className="grid sm:grid-cols-2 gap-3">
                 <div>
                   <Label className="mb-1.5 block text-sm">Their name</Label>
-                  <Input placeholder="e.g. Mum" value={name} onChange={e => setName(e.target.value)} className="rounded-xl" />
+                  <Input placeholder="e.g. Mom" value={name} onChange={e => setName(e.target.value)} className="rounded-xl" />
                 </div>
                 <div>
                   <Label className="mb-1.5 block text-sm">Their email</Label>
-                  <Input type="email" placeholder="mum@example.com" value={email} onChange={e => setEmail(e.target.value)} className="rounded-xl" />
+                  <Input type="email" placeholder="mom@example.com" value={email} onChange={e => setEmail(e.target.value)} className="rounded-xl" />
                 </div>
                 <Button type="submit" className="sm:col-span-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                   <Mail className="h-4 w-4" /> Send Invite

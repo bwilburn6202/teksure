@@ -3,16 +3,16 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Check, Shield, Clock, Star } from 'lucide-react';
+import { Check, Shield, Clock, Star, Monitor, Home, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const plans = [
   {
     name: 'Remote Fix',
-    price: '£49',
-    deposit: '£15',
+    price: '$49',
+    deposit: '$15',
     desc: 'Quick help over the phone or screen sharing',
-    emoji: '💻',
+    icon: Monitor,
     features: [
       '30-min remote session',
       'Screen sharing support',
@@ -22,10 +22,10 @@ const plans = [
   },
   {
     name: 'On-Site Visit',
-    price: '£99',
-    deposit: '£15',
+    price: '$99',
+    deposit: '$15',
     desc: 'A technician comes to your home',
-    emoji: '🏠',
+    icon: Home,
     features: [
       '1-hour on-site visit',
       'Hardware diagnostics',
@@ -37,10 +37,10 @@ const plans = [
   },
   {
     name: 'Premium',
-    price: '£149',
-    deposit: '£15',
+    price: '$149',
+    deposit: '$15',
     desc: 'Comprehensive support for bigger jobs',
-    emoji: '⭐',
+    icon: Award,
     features: [
       '2-hour session',
       'Full system health check',
@@ -72,8 +72,8 @@ const pricingJsonLd = [
         '@type': 'Offer',
         name: plan.name,
         description: plan.desc,
-        price: plan.price.replace('£', ''),
-        priceCurrency: 'GBP',
+        price: plan.price.replace('$', ''),
+        priceCurrency: 'USD',
         url: 'https://teksure.com/book',
         itemOffered: { '@type': 'Service', name: plan.name, description: plan.desc },
       })),
@@ -85,10 +85,10 @@ const pricingJsonLd = [
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How does the £15 deposit work?',
+        name: 'How does the $15 deposit work?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Book with just a £15 deposit. Pay the rest on the day of your appointment. If we can\'t fix it, you get a full refund — no questions asked.',
+          text: 'Book with just a $15 deposit. Pay the rest on the day of your appointment. If we can\'t fix it, you get a full refund — no questions asked.',
         },
       },
       {
@@ -114,8 +114,8 @@ const pricingJsonLd = [
 const Pricing = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
-      title="Tech Support Pricing | TekSure — From £49, Book with £15 Deposit"
-      description="Transparent tech support pricing: Remote Fix £49, On-Site Visit £99, Premium £149. Book with just a £15 deposit. No fix, no charge guarantee."
+      title="Tech Support Pricing | TekSure — From $49, Book with $15 Deposit"
+      description="Transparent tech support pricing: Remote Fix $49, On-Site Visit $99, Premium $149. Book with just a $15 deposit. No fix, no charge guarantee."
       path="/pricing"
       jsonLd={pricingJsonLd}
     />
@@ -130,7 +130,7 @@ const Pricing = () => (
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
               No subscriptions. No hidden fees. Pay only for the help you need.
             </p>
-            <p className="text-sm text-muted-foreground">Prices include travel within 10 miles · Extra miles at £0.45/mi</p>
+            <p className="text-sm text-muted-foreground">Prices include travel within 10 miles · Extra miles at $0.45/mi</p>
           </div>
         </div>
       </section>
@@ -149,7 +149,7 @@ const Pricing = () => (
                   </div>
                 )}
                 <CardHeader className="text-center pb-2 pt-8">
-                  <div className="text-4xl mb-2">{plan.emoji}</div>
+                  <div className="flex justify-center mb-2">{(() => { const PIcon = plan.icon; return <PIcon className="h-10 w-10 text-primary" />; })()}</div>
                   <CardTitle className="text-xl">{plan.name}</CardTitle>
                   <div className="text-5xl font-bold mt-2 tracking-tight">{plan.price}</div>
                   <p className="text-xs text-primary font-medium mt-1">Book with just a {plan.deposit} deposit</p>
@@ -178,7 +178,7 @@ const Pricing = () => (
         >
           <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Book with just a <strong className="text-foreground">£15 deposit</strong>. Pay the rest on the day of your appointment.
+            Book with just a <strong className="text-foreground">$15 deposit</strong>. Pay the rest on the day of your appointment.
             If we can't fix it, you get a full refund — no questions asked.
           </p>
         </div>

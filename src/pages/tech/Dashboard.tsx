@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Wrench, CheckCircle2, Clock, PoundSterling, Loader2,
+  Wrench, CheckCircle2, Clock, DollarSign, Loader2,
   Calendar, User, AlertCircle, Inbox,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -110,7 +110,7 @@ const TechDashboard = () => {
     { icon: Inbox, label: 'Pending Jobs', value: pendingBookings.length, color: 'text-amber-500', bg: 'bg-amber-50 dark:bg-amber-950/30' },
     { icon: Wrench, label: 'Active Jobs', value: activeBookings.length, color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-950/30' },
     { icon: CheckCircle2, label: 'Completed', value: completedBookings.length, color: 'text-green-500', bg: 'bg-green-50 dark:bg-green-950/30' },
-    { icon: PoundSterling, label: 'Earnings', value: `\u00A3${totalEarnings}`, color: 'text-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-950/30' },
+    { icon: DollarSign, label: 'Earnings', value: `$${totalEarnings}`, color: 'text-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-950/30' },
   ];
 
   if (loading) {

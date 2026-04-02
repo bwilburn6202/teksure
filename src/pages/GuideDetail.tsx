@@ -190,7 +190,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
 
   return (
     <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
-      <span className="text-3xl mb-2 block">🎉</span>
+      <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
       <p className="font-bold text-base mb-1">You Did It!</p>
       <p className="text-sm text-muted-foreground mb-4">You've completed: <strong>{guideTitle}</strong></p>
       {completed ? (
@@ -395,7 +395,7 @@ const GuideDetail = () => {
                   guide.difficulty === 'Intermediate' ? 'border-teksure-warning/50 text-teksure-warning' :
                   'border-destructive/50 text-destructive'
                 }>
-                  {guide.difficulty === 'Beginner' ? '🟢' : guide.difficulty === 'Intermediate' ? '🟡' : '🔴'} {guide.difficulty}
+                  {guide.difficulty}
                 </Badge>
               )}
               <span className="flex items-center gap-1 text-sm text-muted-foreground">
@@ -426,7 +426,7 @@ const GuideDetail = () => {
           {guide.steps && guide.steps.length > 3 && (
             <Card className="mb-8 bg-muted/50">
               <CardContent className="py-4">
-                <p className="text-sm font-semibold mb-2">📋 In this guide ({guide.steps.length} steps):</p>
+                <p className="text-sm font-semibold mb-2">In this guide ({guide.steps.length} steps):</p>
                 <ol className="space-y-1">
                   {guide.steps.map((step, i) => (
                     <li key={i}>
@@ -533,7 +533,7 @@ const GuideDetail = () => {
                     </div>
                   );
                 }
-                if (paragraph.startsWith('- ') || paragraph.startsWith('🔒') || paragraph.startsWith('🪪') || paragraph.startsWith('🔍') || paragraph.startsWith('✅')) {
+                if (paragraph.startsWith('- ') || /^[\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{2700}-\u{27BF}]/u.test(paragraph)) {
                   return (
                     <ul key={i} className="space-y-2 mb-4">
                       {paragraph.split('\n').map((item, j) => (

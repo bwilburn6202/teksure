@@ -6,7 +6,7 @@ import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Newspaper, ExternalLink, Clock, ChevronDown } from 'lucide-react';
+import { Newspaper, ExternalLink, Clock, ChevronDown, Lock, Monitor, Smartphone, Lightbulb, AlertTriangle, Bot, Package, Key, MessageSquare, Theater, AppWindow, MapPin, Camera, Satellite, Search, Phone, Mail, type LucideIcon } from 'lucide-react';
 
 interface NewsItem {
   id: number;
@@ -14,7 +14,7 @@ interface NewsItem {
   summary: string;
   category: 'security' | 'devices' | 'apps' | 'tips' | 'scams' | 'ai';
   date: string;
-  emoji: string;
+  icon: LucideIcon;
   readTime: string;
   source?: string;
   sourceUrl?: string;
@@ -30,12 +30,21 @@ const CATEGORY_COLORS: Record<NewsItem['category'], string> = {
 };
 
 const CATEGORY_LABELS: Record<NewsItem['category'], string> = {
-  security: '🔒 Security',
-  devices:  '💻 Devices',
-  apps:     '📱 Apps',
-  tips:     '💡 Tips',
-  scams:    '⚠️ Scam Alert',
-  ai:       '🤖 AI',
+  security: 'Security',
+  devices:  'Devices',
+  apps:     'Apps',
+  tips:     'Tips',
+  scams:    'Scam Alert',
+  ai:       'AI',
+};
+
+const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
+  security: Lock,
+  devices:  Monitor,
+  apps:     Smartphone,
+  tips:     Lightbulb,
+  scams:    AlertTriangle,
+  ai:       Bot,
 };
 
 const NEWS_ITEMS: NewsItem[] = [
@@ -45,7 +54,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Microsoft\'s March 2026 update (KB5079473) is causing some people to see "You\'ll need the Internet for this" errors when signing into Microsoft apps like Teams, OneDrive, Word, and Edge — even when they\'re connected to the internet. Microsoft has released a fix (KB5085516). Go to Settings > Windows Update to install it.',
     category: 'devices',
     date: '2026-03-28',
-    emoji: '\uD83D\uDCBB',
+    icon: Monitor,
     readTime: '2 min',
     source: 'Microsoft Support',
     sourceUrl: 'https://support.microsoft.com',
@@ -56,7 +65,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'According to AARP\'s 2026 Technology Trends report, smartphone ownership among older adults has reached an all-time high. Two-thirds of 50+ adults say technology enriches their lives. If you\'re still learning, you\'re not alone — and TekSure is here to help.',
     category: 'devices',
     date: '2026-03-26',
-    emoji: '\uD83D\uDCF1',
+    icon: Smartphone,
     readTime: '2 min',
     source: 'AARP',
     sourceUrl: 'https://www.aarp.org',
@@ -67,7 +76,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Millions of people are receiving fake text messages claiming a parcel couldn\'t be delivered and asking you to click a link to rebook. The link takes you to a convincing fake Royal Mail or FedEx website that steals your bank details. If you get one of these texts, delete it immediately. Real delivery companies never ask for payment via a text link.',
     category: 'scams',
     date: '2026-03-22',
-    emoji: '📦',
+    icon: Package,
     readTime: '2 min',
     source: 'Action Fraud',
     sourceUrl: 'https://www.actionfraud.police.uk',
@@ -78,7 +87,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Apple has released iOS 18.3.2, a security update that fixes several vulnerabilities that could allow attackers to take control of your phone. The update is small (around 200MB) and only takes a few minutes to install. Go to Settings → General → Software Update to install it. Security updates like this are always worth doing promptly.',
     category: 'security',
     date: '2026-03-20',
-    emoji: '📱',
+    icon: Smartphone,
     readTime: '2 min',
     source: 'Apple Support',
     sourceUrl: 'https://support.apple.com',
@@ -89,7 +98,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'WhatsApp has added a new setting that hides your real internet address (called an IP address) during calls, making it harder for strangers to track your location. To enable it: WhatsApp → Settings → Privacy → Advanced → "Protect IP address in calls". It\'s worth turning on, especially if you take calls from people you don\'t know well.',
     category: 'apps',
     date: '2026-03-18',
-    emoji: '💬',
+    icon: MessageSquare,
     readTime: '2 min',
   },
   {
@@ -98,7 +107,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Scammers are now using AI to clone voices and create fake video calls that look and sound exactly like real people — including family members and bank staff. If you receive an unexpected call from someone asking for money or personal details, hang up and call them back using a number you already have for them. Never trust a caller just because they sound familiar.',
     category: 'scams',
     date: '2026-03-16',
-    emoji: '🎭',
+    icon: Theater,
     readTime: '3 min',
   },
   {
@@ -107,7 +116,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Google Chrome now automatically checks if any of your saved passwords have been leaked in data breaches and prompts you to change them. If you use Chrome, look for the shield icon in the address bar, or go to Settings → Password Manager → Checkup. It\'s a free, quick way to spot weak or compromised passwords.',
     category: 'security',
     date: '2026-03-15',
-    emoji: '🔑',
+    icon: Key,
     readTime: '2 min',
   },
   {
@@ -116,7 +125,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Microsoft has updated Windows 11 with an AI assistant called Copilot, which can answer questions, summarise documents, and help you find settings. You can open it by pressing the Windows key + C. It\'s genuinely useful for things like "how do I change my screen brightness" or "summarise this document". It\'s free and already installed if you have Windows 11 version 23H2 or newer.',
     category: 'ai',
     date: '2026-03-12',
-    emoji: '🪟',
+    icon: AppWindow,
     readTime: '3 min',
   },
   {
@@ -125,16 +134,16 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'Many apps ask for your precise GPS location when they really only need your general area. On iPhone: Settings → Privacy & Security → Location Services → tap each app → change "Precise Location" to off. On Android: Settings → Apps → Permissions → Location → choose "Approximate" for apps like weather or news. This saves battery life and protects your privacy.',
     category: 'tips',
     date: '2026-03-10',
-    emoji: '📍',
+    icon: MapPin,
     readTime: '2 min',
   },
   {
     id: 8,
     title: 'New Samsung Galaxy S25: Should You Upgrade?',
-    summary: 'Samsung has released its latest flagship phone, the Galaxy S25. The key improvements over the S24 are a faster processor, better camera low-light performance, and seven years of software updates guaranteed. At £799–£1,199, it\'s expensive. If your current Android phone is 3 or more years old and starting to slow down, it\'s a good time to consider upgrading — but you don\'t need to rush.',
+    summary: 'Samsung has released its latest flagship phone, the Galaxy S25. The key improvements over the S24 are a faster processor, better camera low-light performance, and seven years of software updates guaranteed. At $799–$1,199, it\'s expensive. If your current Android phone is 3 or more years old and starting to slow down, it\'s a good time to consider upgrading — but you don\'t need to rush.',
     category: 'devices',
     date: '2026-03-08',
-    emoji: '📸',
+    icon: Camera,
     readTime: '3 min',
   },
   {
@@ -143,7 +152,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'If your home router is more than 5 years old, it may no longer receive security updates from the manufacturer. This means hackers could exploit known vulnerabilities. Contact your internet provider to ask when your router was last updated, or if you own your router, check the manufacturer\'s website to see if it still supports your model. An upgrade could significantly improve your home\'s security.',
     category: 'security',
     date: '2026-03-05',
-    emoji: '📡',
+    icon: Satellite,
     readTime: '2 min',
   },
   {
@@ -152,7 +161,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'HaveIBeenPwned (haveibeenpwned.com) is a free, safe website where you can enter your email address to check if it\'s appeared in any known data breaches. If it has, it tells you which sites were hacked and what information was exposed. It\'s run by a trusted security researcher and is completely free to use. Check all your email addresses — it only takes 30 seconds.',
     category: 'security',
     date: '2026-03-03',
-    emoji: '🕵️',
+    icon: Search,
     readTime: '2 min',
     source: 'Have I Been Pwned',
     sourceUrl: 'https://haveibeenpwned.com',
@@ -163,7 +172,7 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'A common scam: someone calls claiming to be from Microsoft, BT, or your bank saying your computer has a problem. They ask you to install software that gives them control of your screen. IMPORTANT: Microsoft, Apple, BT, and your bank will NEVER call you out of the blue about a computer problem. If you get one of these calls, hang up immediately.',
     category: 'scams',
     date: '2026-02-28',
-    emoji: '📞',
+    icon: Phone,
     readTime: '2 min',
   },
   {
@@ -172,19 +181,19 @@ const NEWS_ITEMS: NewsItem[] = [
     summary: 'AI tools like ChatGPT and Microsoft Copilot are excellent at helping you write emails, letters, and messages. However, be careful not to paste in sensitive personal information (account numbers, passwords, medical details, addresses) when using these tools, as your input may be used to improve the AI. Stick to general content or use dummy details where possible.',
     category: 'ai',
     date: '2026-02-25',
-    emoji: '✉️',
+    icon: Mail,
     readTime: '3 min',
   },
 ];
 
-const FILTER_CATEGORIES: { value: NewsItem['category'] | 'all'; label: string }[] = [
+const FILTER_CATEGORIES: { value: NewsItem['category'] | 'all'; label: string; icon?: LucideIcon }[] = [
   { value: 'all', label: 'All News' },
-  { value: 'scams', label: '⚠️ Scam Alerts' },
-  { value: 'security', label: '🔒 Security' },
-  { value: 'apps', label: '📱 Apps' },
-  { value: 'devices', label: '💻 Devices' },
-  { value: 'tips', label: '💡 Tips' },
-  { value: 'ai', label: '🤖 AI' },
+  { value: 'scams', label: 'Scam Alerts', icon: AlertTriangle },
+  { value: 'security', label: 'Security', icon: Lock },
+  { value: 'apps', label: 'Apps', icon: Smartphone },
+  { value: 'devices', label: 'Devices', icon: Monitor },
+  { value: 'tips', label: 'Tips', icon: Lightbulb },
+  { value: 'ai', label: 'AI', icon: Bot },
 ];
 
 export default function News() {
@@ -230,7 +239,7 @@ export default function News() {
                     : 'border-border bg-background hover:bg-muted'
                 }`}
               >
-                {cat.label}
+                {cat.icon && <cat.icon className="h-3.5 w-3.5 inline-block mr-1" />}{cat.label}
               </button>
             ))}
           </div>
@@ -244,10 +253,11 @@ export default function News() {
                 <Card className="rounded-2xl border border-border bg-card hover:border-border/60 transition-all">
                   <CardContent className="p-6">
                     <div className="flex gap-5">
-                      <div className="text-4xl shrink-0">{item.emoji}</div>
+                      <item.icon className="h-9 w-9 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap mb-3">
-                          <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[item.category]}`}>
+                          <span className={`text-xs font-medium px-2.5 py-1 rounded-lg inline-flex items-center gap-1 ${CATEGORY_COLORS[item.category]}`}>
+                            {(() => { const CatIcon = CATEGORY_ICONS[item.category]; return <CatIcon className="h-3 w-3" />; })()}
                             {CATEGORY_LABELS[item.category]}
                           </span>
                           <span className="text-xs text-muted-foreground flex items-center gap-1">

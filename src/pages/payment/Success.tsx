@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
-import { CheckCircle2, ArrowRight, Calendar, MessageSquare } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Calendar, MessageSquare, Mail, Phone, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -42,9 +42,9 @@ export default function PaymentSuccess() {
           </div>
 
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Deposit received! 🎉</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Deposit received!</h1>
             <p className="text-muted-foreground text-lg">
-              Your £15 deposit has been processed and your booking is confirmed.
+              Your $15 deposit has been processed and your booking is confirmed.
             </p>
           </div>
 
@@ -63,19 +63,19 @@ export default function PaymentSuccess() {
             <CardContent className="p-5 text-left space-y-3">
               <p className="font-semibold text-sm mb-2">What happens next</p>
               <div className="flex items-start gap-3 text-sm">
-                <span className="text-xl">📧</span>
+                <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
                   You'll receive a confirmation email with your booking details and payment receipt.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
-                <span className="text-xl">📞</span>
+                <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
                   One of our technicians will call or message you to confirm the exact appointment time.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
-                <span className="text-xl">💳</span>
+                <CreditCard className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
                   Pay the remaining amount directly to your technician after the visit.
                 </p>

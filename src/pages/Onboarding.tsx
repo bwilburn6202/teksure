@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2, BookOpen } from 'lucide-react';
+import { ArrowRight, CheckCircle2, BookOpen, Monitor, Laptop, Smartphone, HelpCircle, Sprout, Leaf, TreeDeciduous } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -19,12 +19,12 @@ interface OnboardingData {
 }
 
 /* ── Options ─────────────────────────────── */
-const deviceOptions: { id: DeviceOption; emoji: string; label: string }[] = [
-  { id: 'windows', emoji: '💻', label: 'Windows Computer' },
-  { id: 'mac', emoji: '🍎', label: 'Mac / MacBook' },
-  { id: 'iphone', emoji: '📱', label: 'iPhone / iPad' },
-  { id: 'android', emoji: '📱', label: 'Android Phone / Tablet' },
-  { id: 'not-sure', emoji: '🤷', label: 'Not sure' },
+const deviceOptions: { id: DeviceOption; icon: React.ComponentType<{ className?: string }>; label: string }[] = [
+  { id: 'windows', icon: Monitor, label: 'Windows Computer' },
+  { id: 'mac', icon: Laptop, label: 'Mac / MacBook' },
+  { id: 'iphone', icon: Smartphone, label: 'iPhone / iPad' },
+  { id: 'android', icon: Smartphone, label: 'Android Phone / Tablet' },
+  { id: 'not-sure', icon: HelpCircle, label: 'Not sure' },
 ];
 
 const frustrationOptions = [
@@ -38,10 +38,10 @@ const frustrationOptions = [
   'Something else',
 ];
 
-const confidenceOptions: { id: 'beginner' | 'intermediate' | 'comfortable'; emoji: string; label: string; desc: string }[] = [
-  { id: 'beginner', emoji: '🌱', label: 'Just starting', desc: 'I need help with the basics' },
-  { id: 'intermediate', emoji: '🌿', label: 'Getting there', desc: 'I can do some things but get stuck' },
-  { id: 'comfortable', emoji: '🌳', label: 'Fairly comfortable', desc: 'I want to learn new tricks' },
+const confidenceOptions: { id: 'beginner' | 'intermediate' | 'comfortable'; icon: React.ComponentType<{ className?: string }>; label: string; desc: string }[] = [
+  { id: 'beginner', icon: Sprout, label: 'Just starting', desc: 'I need help with the basics' },
+  { id: 'intermediate', icon: Leaf, label: 'Getting there', desc: 'I can do some things but get stuck' },
+  { id: 'comfortable', icon: TreeDeciduous, label: 'Fairly comfortable', desc: 'I want to learn new tricks' },
 ];
 
 /* ── Animation ───────────────────────────── */
@@ -141,7 +141,7 @@ export default function Onboarding() {
     return (
       <>
         <SEOHead
-          title="Your Personalised Plan | TekSure"
+          title="Your Personalized Plan | TekSure"
           description="Based on your answers, here are guides picked just for you."
           path="/onboarding"
         />
@@ -298,7 +298,7 @@ export default function Onboarding() {
                           : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
                       }`}
                     >
-                      <span className="text-3xl shrink-0">{opt.emoji}</span>
+                      <opt.icon className="h-7 w-7 text-primary shrink-0" />
                       <span className="font-semibold text-base">{opt.label}</span>
                     </button>
                   ))}
@@ -394,7 +394,7 @@ export default function Onboarding() {
                           : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
                       }`}
                     >
-                      <span className="text-3xl shrink-0">{opt.emoji}</span>
+                      <opt.icon className="h-7 w-7 text-primary shrink-0" />
                       <div>
                         <span className="font-semibold text-base block">{opt.label}</span>
                         <span className="text-sm text-muted-foreground">{opt.desc}</span>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ExternalLink, ShieldCheck, BookOpen, Scale, Heart } from 'lucide-react';
+import { ExternalLink, ShieldCheck, BookOpen, Scale, Heart, PenLine, Link2, MessageCircle } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -55,21 +55,21 @@ export default function Sources() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="p-4 rounded-xl border border-border bg-card">
-                <div className="text-2xl mb-2">📖</div>
+                <div className="flex justify-start mb-2"><BookOpen className="h-6 w-6 text-primary" /></div>
                 <h3 className="font-semibold text-sm text-foreground mb-1">We read the original</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   We start with the official source — Apple, Microsoft, Google, or another trusted site.
                 </p>
               </div>
               <div className="p-4 rounded-xl border border-border bg-card">
-                <div className="text-2xl mb-2">✍️</div>
+                <div className="flex justify-start mb-2"><PenLine className="h-6 w-6 text-primary" /></div>
                 <h3 className="font-semibold text-sm text-foreground mb-1">We rewrite in plain language</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   We rewrite each article in clear, everyday English — no jargon, no assumptions about tech knowledge.
                 </p>
               </div>
               <div className="p-4 rounded-xl border border-border bg-card">
-                <div className="text-2xl mb-2">🔗</div>
+                <div className="flex justify-start mb-2"><Link2 className="h-6 w-6 text-primary" /></div>
                 <h3 className="font-semibold text-sm text-foreground mb-1">We always credit the source</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Every simplified article links back to the original so you can verify the information directly.
@@ -159,7 +159,7 @@ export default function Sources() {
 
           {/* ── Request a source ─────────────────────────────────── */}
           <section aria-labelledby="request-source-heading" className="text-center py-8 px-4 rounded-2xl border border-border bg-muted/30">
-            <div className="text-3xl mb-3">💬</div>
+            <div className="flex justify-center mb-3"><MessageCircle className="h-8 w-8 text-primary" /></div>
             <h2 id="request-source-heading" className="text-lg font-bold text-foreground mb-2">
               Know a great source we should add?
             </h2>

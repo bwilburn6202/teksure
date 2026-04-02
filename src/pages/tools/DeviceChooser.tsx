@@ -61,9 +61,9 @@ const questions: Question[] = [
     text: "What's your rough budget?",
     subtext: 'Including all taxes and any extras.',
     choices: [
-      { label: 'Under £300 / $300', emoji: '💰', value: 'low' },
-      { label: '£300–£700 / $300–$700', emoji: '💳', value: 'mid' },
-      { label: '£700+ / $700+', emoji: '💎', value: 'high' },
+      { label: 'Under $300 / $300', emoji: '💰', value: 'low' },
+      { label: '$300–$700 / $300–$700', emoji: '💳', value: 'mid' },
+      { label: '$700+ / $700+', emoji: '💎', value: 'high' },
     ],
   },
   {
@@ -147,9 +147,9 @@ function getRecommendation(answers: Answers): DeviceResult {
         'Less powerful for editing or heavy software',
       ],
       examples: [
-        { name: 'Apple iPad (10th gen)', price: 'From ~£349 / $329', why: 'Best beginner tablet — simple, reliable, and great support' },
-        { name: 'Samsung Galaxy Tab A9', price: 'From ~£229 / $220', why: 'Excellent value for browsing and streaming' },
-        { name: 'Amazon Fire HD 10', price: 'From ~£149 / $140', why: 'Budget-friendly and easy to set up' },
+        { name: 'Apple iPad (10th gen)', price: 'From ~$349 / $329', why: 'Best beginner tablet — simple, reliable, and great support' },
+        { name: 'Samsung Galaxy Tab A9', price: 'From ~$229 / $220', why: 'Excellent value for browsing and streaming' },
+        { name: 'Amazon Fire HD 10', price: 'From ~$149 / $140', why: 'Budget-friendly and easy to set up' },
       ],
       tipLink: '/guides/phone-setup',
     },
@@ -172,9 +172,9 @@ function getRecommendation(answers: Answers): DeviceResult {
         'More to set up than a tablet',
       ],
       examples: [
-        { name: 'Apple MacBook Air M2', price: 'From ~£1,099 / $1,099', why: 'Best for beginners — extremely reliable, great battery' },
-        { name: 'Microsoft Surface Laptop Go 3', price: 'From ~£799 / $799', why: 'Lightweight Windows laptop, great for home use' },
-        { name: 'Acer Aspire 3', price: 'From ~£299 / $299', why: 'Budget Windows laptop — solid for everyday tasks' },
+        { name: 'Apple MacBook Air M2', price: 'From ~$1,099 / $1,099', why: 'Best for beginners — extremely reliable, great battery' },
+        { name: 'Microsoft Surface Laptop Go 3', price: 'From ~$799 / $799', why: 'Lightweight Windows laptop, great for home use' },
+        { name: 'Acer Aspire 3', price: 'From ~$299 / $299', why: 'Budget Windows laptop — solid for everyday tasks' },
       ],
       tipLink: '/guides/restart-pc-windows',
     },
@@ -197,9 +197,9 @@ function getRecommendation(answers: Answers): DeviceResult {
         'Takes up more space',
       ],
       examples: [
-        { name: 'Apple Mac Mini M2', price: 'From ~£649 / $599', why: 'Compact, powerful, very easy to use' },
-        { name: 'Dell Inspiron Desktop', price: 'From ~£499 / $499', why: 'Reliable Windows desktop for home office use' },
-        { name: 'HP Pavilion Desktop', price: 'From ~£399 / $399', why: 'Good all-rounder at a competitive price' },
+        { name: 'Apple Mac Mini M2', price: 'From ~$649 / $599', why: 'Compact, powerful, very easy to use' },
+        { name: 'Dell Inspiron Desktop', price: 'From ~$499 / $499', why: 'Reliable Windows desktop for home office use' },
+        { name: 'HP Pavilion Desktop', price: 'From ~$399 / $399', why: 'Good all-rounder at a competitive price' },
       ],
       tipLink: '/guides/restart-pc-windows',
     },
@@ -266,7 +266,7 @@ export default function DeviceChooser() {
                   </div>
                   <h2 className="text-xl font-semibold mb-3">Not sure which device to buy?</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mx-auto">
-                    This quick quiz asks 5 easy questions about how you'll use it, where, and your budget — then gives you a personalised, honest recommendation.
+                    This quick quiz asks 5 easy questions about how you'll use it, where, and your budget — then gives you a personalized, honest recommendation.
                   </p>
                 </CardContent>
               </Card>

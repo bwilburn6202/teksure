@@ -95,7 +95,7 @@ const cards: RefCard[] = [
     title: 'iPhone Basic Tips',
     icon: Smartphone,
     tips: [
-      'Swipe down from top-right for Control Centre',
+      'Swipe down from top-right for Control Center',
       'Press and hold the side button for Siri',
       'Go to Settings → General → Software Update to update iOS',
       'Use Settings → Battery to see what\'s draining power',

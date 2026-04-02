@@ -77,9 +77,16 @@ export default function ForumIndex() {
   return (
     <>
       <SEOHead
-        title="Community Forum — TekSure"
-        description="Ask questions, share tips, and get help from the TekSure community. No question is too simple!"
-      path="/forum"
+        title="Community Forum — Ask Tech Questions | TekSure"
+        description="Ask questions, share tips, and get help from the TekSure community. No question is too basic — everyone was a beginner once."
+        path="/forum"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'DiscussionForumPosting',
+          name: 'TekSure Community Forum',
+          description: 'Peer-to-peer tech support community for everyday people.',
+          url: 'https://teksure.com/forum',
+        }}
       />
       <Navbar />
 

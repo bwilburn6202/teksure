@@ -21,8 +21,8 @@ interface Ambassador {
 const AMBASSADORS: Ambassador[] = [
   {
     name: 'Margaret T.',
-    location: 'Manchester',
-    bio: 'Retired teacher who discovered TekSure after struggling with her new smartphone. Now she helps others in her local community centre every Tuesday afternoon.',
+    location: 'Austin, TX',
+    bio: 'Retired teacher who discovered TekSure after struggling with her new smartphone. Now she helps others in her local community center every Tuesday afternoon.',
     emoji: '👩‍🏫',
     speciality: 'Smartphones & Video Calls',
     helpedCount: 87,
@@ -31,7 +31,7 @@ const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'David K.',
-    location: 'Edinburgh',
+    location: 'Portland, OR',
     bio: 'Former IT manager who retired early and wanted to give back. Runs free drop-in sessions at his local library and answers questions on the TekSure forum daily.',
     emoji: '👨‍💼',
     speciality: 'Windows & Security',
@@ -41,7 +41,7 @@ const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'Priya S.',
-    location: 'Birmingham',
+    location: 'Atlanta, GA',
     bio: 'University student studying Computer Science who wanted to make tech less intimidating for older family members. Now helps hundreds through the forum and local workshops.',
     emoji: '👩‍🎓',
     speciality: 'Android & Apps',
@@ -51,7 +51,7 @@ const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'Robert H.',
-    location: 'Bristol',
+    location: 'Denver, CO',
     bio: 'Passionate about keeping older people connected with their families. Specialises in video calling and social media — and runs a monthly "Tech Tea" meetup.',
     emoji: '👴',
     speciality: 'Video Calls & Social Media',
@@ -61,8 +61,8 @@ const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'Celine O.',
-    location: 'London',
-    bio: 'Healthcare worker who noticed many of her patients couldn\'t access online services. Helps members navigate NHS apps, prescription services, and telehealth platforms.',
+    location: 'Chicago, IL',
+    bio: 'Healthcare worker who noticed many of her patients couldn\'t access online services. Helps members navigate patient portals, prescription services, and telehealth platforms.',
     emoji: '👩‍⚕️',
     speciality: 'Health Apps & Online Services',
     helpedCount: 54,
@@ -71,8 +71,8 @@ const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'Jim P.',
-    location: 'Leeds',
-    bio: 'Cybersecurity enthusiast who had a family member lose money to an online scam. Now dedicated to helping people recognise and avoid fraud.',
+    location: 'Phoenix, AZ',
+    bio: 'Cybersecurity enthusiast who had a family member lose money to an online scam. Now dedicated to helping people recognize and avoid fraud.',
     emoji: '🛡️',
     speciality: 'Scam Prevention & Online Safety',
     helpedCount: 116,
@@ -133,7 +133,7 @@ export default function Ambassadors() {
             <div className="flex items-center justify-center gap-6 mt-5 text-sm text-muted-foreground flex-wrap">
               <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-amber-500" /> {AMBASSADORS.length} Ambassadors</span>
               <span className="flex items-center gap-1.5"><Heart className="h-4 w-4 text-red-500" /> {AMBASSADORS.reduce((s, a) => s + a.helpedCount, 0)}+ people helped</span>
-              <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-blue-500" /> 6 cities across the UK</span>
+              <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-blue-500" /> Communities across the US</span>
             </div>
           </div>
         </section>

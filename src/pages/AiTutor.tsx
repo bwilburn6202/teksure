@@ -19,8 +19,8 @@ const levelConfig: Record<Level, { label: string; emoji: string; desc: string; s
 
 const lessonTopics: { emoji: string; label: string; prompt: string }[] = [
   { emoji: '🔐', label: 'Passwords & Security', prompt: 'Teach me about keeping my accounts safe — passwords, two-factor authentication, and what to watch out for.' },
-  { emoji: '📸', label: 'Photos & Memories', prompt: 'Help me understand how to organise my photos, back them up, and share them with family.' },
-  { emoji: '📧', label: 'Email Basics', prompt: 'Walk me through how email works, how to spot a scam email, and how to keep my inbox organised.' },
+  { emoji: '📸', label: 'Photos & Memories', prompt: 'Help me understand how to organize my photos, back them up, and share them with family.' },
+  { emoji: '📧', label: 'Email Basics', prompt: 'Walk me through how email works, how to spot a scam email, and how to keep my inbox organized.' },
   { emoji: '📶', label: 'Wi-Fi & Internet', prompt: 'Explain Wi-Fi to me — how to connect, what a strong signal looks like, and how to stay safe on public Wi-Fi.' },
   { emoji: '📱', label: 'Getting More from my Phone', prompt: 'What are some really useful things I might not know my phone can do? Keep it practical and simple.' },
   { emoji: '🛒', label: 'Online Shopping Safely', prompt: 'Teach me how to shop online safely — what to look for, how to pay securely, and how to spot fake websites.' },

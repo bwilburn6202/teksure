@@ -96,7 +96,7 @@ const sections: Section[] = [
       { keys: 'Ctrl / ⌘ + S', action: 'Save the document' },
       { keys: 'Ctrl / ⌘ + Shift + V', action: 'Paste without formatting' },
       { keys: 'Ctrl / ⌘ + K', action: 'Insert a hyperlink' },
-      { keys: 'Ctrl / ⌘ + E', action: 'Centre-align text' },
+      { keys: 'Ctrl / ⌘ + E', action: 'Center-align text' },
       { keys: 'Ctrl / ⌘ + L', action: 'Left-align text' },
       { keys: 'Ctrl / ⌘ + R', action: 'Right-align text' },
       { keys: 'Tab', action: 'Indent the current line' },

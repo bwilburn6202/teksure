@@ -39,7 +39,7 @@ const tools = [
   },
   {
     title: 'Cybersecurity Scorecard',
-    description: '13 quick yes/no questions across passwords, devices, network, and email safety. Get a grade and a personalised action plan.',
+    description: '13 quick yes/no questions across passwords, devices, network, and email safety. Get a grade and a personalized action plan.',
     icon: Lock,
     path: '/tools/cyber-scorecard',
     color: 'text-violet-600',
@@ -84,7 +84,7 @@ const tools = [
   },
   {
     title: 'Tech Health Quiz',
-    description: '8 quick questions covering security, backup, privacy, battery, and scam awareness. Get a grade and personalised action steps.',
+    description: '8 quick questions covering security, backup, privacy, battery, and scam awareness. Get a grade and personalized action steps.',
     icon: ClipboardCheck,
     path: '/tools/tech-health-quiz',
     color: 'text-violet-500',
@@ -147,7 +147,7 @@ const tools = [
   },
   {
     title: 'Device Chooser Quiz',
-    description: 'Not sure whether to buy a tablet, laptop, or desktop? Answer 5 quick questions for a personalised recommendation.',
+    description: 'Not sure whether to buy a tablet, laptop, or desktop? Answer 5 quick questions for a personalized recommendation.',
     icon: Laptop,
     path: '/tools/device-chooser',
     color: 'text-violet-500',
@@ -156,7 +156,7 @@ const tools = [
   },
   {
     title: 'Data Backup Wizard',
-    description: 'Step-by-step personalised backup plan for your photos, documents, and contacts — covering cloud, USB drives, and more.',
+    description: 'Step-by-step personalized backup plan for your photos, documents, and contacts — covering cloud, USB drives, and more.',
     icon: HardDrive,
     path: '/tools/backup-wizard',
     color: 'text-sky-500',
@@ -174,7 +174,7 @@ const tools = [
   },
   {
     title: 'App Recommender',
-    description: 'Not sure which app to use? Answer 3 questions about what you want to do and your device — get personalised recommendations.',
+    description: 'Not sure which app to use? Answer 3 questions about what you want to do and your device — get personalized recommendations.',
     icon: Smartphone,
     path: '/tools/app-recommender',
     color: 'text-rose-500',
@@ -219,7 +219,7 @@ const tools = [
   },
   {
     title: 'Tech Health Check',
-    description: 'Take a quick 5-question quiz to find out how healthy your device is — with colour-coded results and tips.',
+    description: 'Take a quick 5-question quiz to find out how healthy your device is — with color-coded results and tips.',
     icon: HeartPulse,
     path: '/tools/health-check',
     color: 'text-rose-500',
@@ -291,7 +291,7 @@ const tools = [
   },
   {
     title: 'Tech Confidence Score',
-    description: 'Take a 10-question quiz to find out your true tech confidence level — and get a personalised learning plan matched to your result.',
+    description: 'Take a 10-question quiz to find out your true tech confidence level — and get a personalized learning plan matched to your result.',
     icon: Brain,
     path: '/tools/confidence-score',
     color: 'text-violet-500',
@@ -421,9 +421,18 @@ export default function Tools() {
   return (
     <>
       <SEOHead
-        title="Tools & Utilities | TekSure"
-        description="Free tech tools — password checker, WiFi speed test, health check quiz, device comparison, and more."
+        title="Free Tech Tools & Utilities | TekSure"
+        description="Free tech tools for everyday people — password strength checker, WiFi speed test, device health quiz, phishing scanner, device comparison, and more."
         path="/tools"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'TekSure Free Tech Tools',
+          description: 'Free interactive technology tools for everyday people — security checks, device diagnostics, and learning resources.',
+          url: 'https://teksure.com/tools',
+          isPartOf: { '@type': 'WebSite', name: 'TekSure', url: 'https://teksure.com' },
+          provider: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
+        }}
       />
       <Navbar />
       <main className="min-h-screen bg-background">

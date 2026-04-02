@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { TrendingUp, RotateCcw, ArrowRight, CheckCircle2, Trophy } from 'lucide-react';
+import { TrendingUp, RotateCcw, ArrowRight, CheckCircle2, Trophy, Sprout, Sun, Star, type LucideIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const questions = [
@@ -16,7 +16,7 @@ const questions = [
   { q: 'How do you feel about video calling (FaceTime, Zoom)?', options: ['Never tried it', 'Only with help', 'Can do it on my own', 'I do it regularly'], weights: [0, 1, 2, 3] },
   { q: 'Can you install or update an app on your phone?', options: ['No idea how', 'I\'ve tried but struggled', 'Yes, with some effort', 'Yes, easily'], weights: [0, 1, 2, 3] },
   { q: 'How comfortable are you shopping online safely?', options: ['Very uncomfortable', 'Nervous but I try', 'Fairly comfortable', 'Very comfortable'], weights: [0, 1, 2, 3] },
-  { q: 'Do you know how to organise your files and photos?', options: ['Everything is messy', 'A bit organised', 'Mostly tidy', 'Well organised'], weights: [0, 1, 2, 3] },
+  { q: 'Do you know how to organize your files and photos?', options: ['Everything is messy', 'A bit organized', 'Mostly tidy', 'Well organized'], weights: [0, 1, 2, 3] },
   { q: 'Have you set up two-factor authentication on any account?', options: ['What is that?', 'Heard of it but haven\'t', 'On one or two accounts', 'On most accounts'], weights: [0, 1, 2, 3] },
   { q: 'How do you feel about learning new technology?', options: ['Very anxious', 'Nervous but willing', 'Fairly open', 'I enjoy it'], weights: [0, 1, 2, 3] },
 ];
@@ -24,26 +24,26 @@ const questions = [
 function getResult(score: number, max: number) {
   const pct = (score / max) * 100;
   if (pct < 25) return {
-    grade: 'Beginner', colour: 'text-orange-600', bg: 'bg-orange-50 border-orange-200',
-    emoji: '🌱', tagline: 'Everyone starts somewhere — you\'re in the right place.',
+    grade: 'Beginner', color: 'text-orange-600', bg: 'bg-orange-50 border-orange-200',
+    icon: Sprout, tagline: 'Everyone starts somewhere — you\'re in the right place.',
     next: 'Start with our Beginner Basics learning path to build your foundation step by step.',
     path: '/my-path',
   };
   if (pct < 50) return {
-    grade: 'Developing', colour: 'text-yellow-600', bg: 'bg-yellow-50 border-yellow-200',
-    emoji: '🌤️', tagline: 'You\'re making great progress. A little more practice and you\'ll fly.',
+    grade: 'Developing', color: 'text-yellow-600', bg: 'bg-yellow-50 border-yellow-200',
+    icon: Sun, tagline: 'You\'re making great progress. A little more practice and you\'ll fly.',
     next: 'Browse our Safety Essentials and How-To guides to fill in the gaps.',
     path: '/guides',
   };
   if (pct < 75) return {
-    grade: 'Capable', colour: 'text-blue-600', bg: 'bg-blue-50 border-blue-200',
-    emoji: '⭐', tagline: 'You\'re doing really well. A few more skills and you\'ll be fully independent.',
+    grade: 'Capable', color: 'text-blue-600', bg: 'bg-blue-50 border-blue-200',
+    icon: Star, tagline: 'You\'re doing really well. A few more skills and you\'ll be fully independent.',
     next: 'Try our Practical Skills path — you\'re ready for the next level.',
     path: '/my-path',
   };
   return {
-    grade: 'Confident', colour: 'text-green-600', bg: 'bg-green-50 border-green-200',
-    emoji: '🏆', tagline: 'Brilliant! You\'re a confident, capable tech user.',
+    grade: 'Confident', color: 'text-green-600', bg: 'bg-green-50 border-green-200',
+    icon: Trophy, tagline: 'You\'re a confident, capable tech user. Well done!',
     next: 'Share your knowledge — why not help others in the Community Forum?',
     path: '/forum',
   };
@@ -113,9 +113,9 @@ export default function TechConfidenceScore() {
             <div key="result">
               <Card className={`border-2 ${result.bg} mb-6`}>
                 <CardContent className="pt-8 pb-6 text-center">
-                  <div className="text-6xl mb-4">{result.emoji}</div>
-                  <h2 className="text-3xl font-bold mb-1">Your score: <span className={result.colour}>{pct}%</span></h2>
-                  <Badge className={`text-base px-4 py-1 mb-4 ${result.colour} border-current bg-white`} variant="outline">{result.grade}</Badge>
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"><result.icon className="h-8 w-8 text-primary" /></div>
+                  <h2 className="text-3xl font-bold mb-1">Your score: <span className={result.color}>{pct}%</span></h2>
+                  <Badge className={`text-base px-4 py-1 mb-4 ${result.color} border-current bg-white`} variant="outline">{result.grade}</Badge>
                   <p className="text-lg mb-2">{result.tagline}</p>
                   {previousScore && Number(previousScore) !== pct && (
                     <p className="text-sm text-muted-foreground mt-1">Previous score: {previousScore}% <TrendingUp className="inline h-3.5 w-3.5 ml-1 text-green-500" /></p>

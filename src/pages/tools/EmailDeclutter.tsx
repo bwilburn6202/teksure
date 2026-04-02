@@ -5,23 +5,24 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Mail, ChevronRight, ChevronLeft, CheckCircle2, Copy, Check, Lightbulb, Inbox, Trash2, Archive, Star, Search } from 'lucide-react';
+import { Mail, ChevronRight, ChevronLeft, CheckCircle2, Copy, Check, Lightbulb, Inbox, Trash2, Archive, Star, Search, Ban, FolderOpen, type LucideIcon } from 'lucide-react';
 
 interface Step {
   id: number;
+  icon: LucideIcon;
   title: string;
   emoji: string;
   description: string;
 }
 
 const STEPS: Step[] = [
-  { id: 1, emoji: '📧', title: 'Choose your email service', description: 'Tell us what email app you use so we can give you the right instructions.' },
-  { id: 2, emoji: '🔍', title: 'Find old bulk emails', description: 'Use search to find newsletters, promotions, and notifications cluttering your inbox.' },
-  { id: 3, emoji: '🚫', title: 'Unsubscribe from newsletters', description: 'Stop future emails arriving from senders you don\'t want.' },
-  { id: 4, emoji: '🗂️', title: 'Archive old emails', description: 'Move old emails out of your inbox without deleting them.' },
-  { id: 5, emoji: '🗑️', title: 'Empty trash & spam', description: 'Permanently remove emails you\'ve already deleted to free up space.' },
-  { id: 6, emoji: '⭐', title: 'Organise what\'s left', description: 'Star important emails and create folders for the things you want to keep.' },
-  { id: 7, emoji: '✅', title: 'You\'re done!', description: 'Your inbox should feel much cleaner now. Here are tips to keep it that way.' },
+  { id: 1, icon: Mail, title: 'Choose your email service', description: 'Tell us what email app you use so we can give you the right instructions.' },
+  { id: 2, icon: Search, title: 'Find old bulk emails', description: 'Use search to find newsletters, promotions, and notifications cluttering your inbox.' },
+  { id: 3, icon: Ban, title: 'Unsubscribe from newsletters', description: 'Stop future emails arriving from senders you don\'t want.' },
+  { id: 4, icon: Archive, title: 'Archive old emails', description: 'Move old emails out of your inbox without deleting them.' },
+  { id: 5, icon: Trash2, title: 'Empty trash & spam', description: 'Permanently remove emails you\'ve already deleted to free up space.' },
+  { id: 6, icon: Star, title: 'Organize what\'s left', description: 'Star important emails and create folders for the things you want to keep.' },
+  { id: 7, icon: CheckCircle2, title: 'You\'re done!', description: 'Your inbox should feel much cleaner now. Here are tips to keep it that way.' },
 ];
 
 type EmailService = 'gmail' | 'outlook' | 'apple';
@@ -130,7 +131,7 @@ const GMAIL_INSTRUCTIONS = {
     'Confirm when asked.',
     'Also go to "Spam" in the sidebar and click "Delete all spam messages now".',
   ],
-  organise: [
+  organize: [
     'To star an email: click the ★ icon to the left of any email.',
     'To create a label (like a folder): click the three dots on an email → "Label as" → "Create new".',
     'Drag emails into labels in the left sidebar.',
@@ -157,7 +158,7 @@ const OUTLOOK_INSTRUCTIONS = {
     'Confirm when prompted.',
     'Also right-click "Junk Email" and choose "Empty folder".',
   ],
-  organise: [
+  organize: [
     'Right-click an email → "Move to" → "New folder" to create a folder.',
     'Drag emails into folders in the left panel.',
     'Right-click a folder → "Create rule" to auto-sort future emails.',
@@ -183,7 +184,7 @@ const APPLE_INSTRUCTIONS = {
     'Tap "Edit" → "Select All" → "Delete".',
     'Also empty "Junk" the same way.',
   ],
-  organise: [
+  organize: [
     'Tap and hold an email → "Move Message" to move to a folder.',
     'Create folders via the Edit button on the Mailboxes screen.',
     'Flag important emails by tapping the flag icon.',
@@ -293,7 +294,7 @@ export default function EmailDeclutter() {
           <Card className="border-border shadow-sm">
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl">{currentStep.emoji}</span>
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center"><currentStep.icon className="h-6 w-6 text-primary" /></div>
                 <div>
                   <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Step {step}</p>
                   <h2 className="text-xl font-bold">{currentStep.title}</h2>
@@ -305,9 +306,9 @@ export default function EmailDeclutter() {
               {step === 1 && (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {([
-                    { value: 'gmail', label: 'Gmail', emoji: '📨', desc: 'Google\'s email service. Used at gmail.com.' },
-                    { value: 'outlook', label: 'Outlook / Hotmail', emoji: '📮', desc: 'Microsoft\'s email. Used at outlook.com, hotmail.com, live.com.' },
-                    { value: 'apple', label: 'Apple Mail', emoji: '📬', desc: 'Built-in email on iPhone, iPad, and Mac.' },
+                    { value: 'gmail', label: 'Gmail', icon: Mail, desc: 'Google\'s email service. Used at gmail.com.' },
+                    { value: 'outlook', label: 'Outlook / Hotmail', icon: Inbox, desc: 'Microsoft\'s email. Used at outlook.com, hotmail.com, live.com.' },
+                    { value: 'apple', label: 'Apple Mail', icon: FolderOpen, desc: 'Built-in email on iPhone, iPad, and Mac.' },
                   ] as const).map(opt => (
                     <button
                       key={opt.value}
@@ -318,7 +319,7 @@ export default function EmailDeclutter() {
                           : 'border-border hover:border-primary/40 hover:bg-muted'
                       }`}
                     >
-                      <div className="text-3xl mb-2">{opt.emoji}</div>
+                      <div className="flex justify-center mb-2"><opt.icon className="h-7 w-7 text-primary" /></div>
                       <div className="font-semibold text-sm">{opt.label}</div>
                       <div className="text-xs text-muted-foreground mt-1 leading-snug">{opt.desc}</div>
                     </button>
@@ -408,10 +409,10 @@ export default function EmailDeclutter() {
                 </div>
               )}
 
-              {/* ── STEP 6: Organise ── */}
+              {/* ── STEP 6: Organize ── */}
               {step === 6 && service && (
                 <div>
-                  <InstructionList items={instructions.organise} />
+                  <InstructionList items={instructions.organize} />
                   <div className="mt-4 p-3 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
                     <p className="text-sm text-purple-800 dark:text-purple-200">
                       <strong>Idea:</strong> Create just 3–4 folders to start with — something like "Bills", "Family", "Work", and "To Read".
