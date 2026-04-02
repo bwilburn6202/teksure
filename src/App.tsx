@@ -32,6 +32,7 @@ const CustomerJobRoom        = lazy(() => import("./pages/customer/JobRoom"));
 const TechDashboard          = lazy(() => import("./pages/tech/Dashboard"));
 const TechJobRoom            = lazy(() => import("./pages/tech/JobRoom"));
 const AdminConsole           = lazy(() => import("./pages/admin/Console"));
+const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
 const OpportunityDashboard   = lazy(() => import("./pages/OpportunityDashboard"));
 const Glossary               = lazy(() => import("./pages/Glossary"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
@@ -192,6 +193,7 @@ const AppContent = () => {
           <Route path="/tech" element={<ProtectedRoute allowedRoles={['tech']}><TechDashboard /></ProtectedRoute>} />
           <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
+          <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/quick-fixes" element={<QuickFixes />} />

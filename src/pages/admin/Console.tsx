@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -905,6 +906,14 @@ const AdminConsole = () => (
       <div className="border-b border-border pb-6 mb-8">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Admin Console</h1>
         <p className="text-muted-foreground">Manage requests, jobs, disputes, and technician verification</p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            to="/admin/content"
+            className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-muted/40 hover:bg-muted transition-colors text-foreground"
+          >
+            Content Pipeline →
+          </Link>
+        </div>
       </div>
 
       <Tabs defaultValue="requests">
