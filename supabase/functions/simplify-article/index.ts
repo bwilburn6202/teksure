@@ -219,7 +219,7 @@ serve(async (req) => {
 
     // ── 3. Resolve a unique slug ──────────────────────────────────────────────
     const baseSlug = slugify(simplified.simplified_title);
-    const slug     = await uniqueSlug(supabase, baseSlug);
+    const slug     = await uniqueSlug(supabase as any, baseSlug);
 
     // ── 4. Validate + normalise Claude's response ─────────────────────────────
     const validDifficulty = ['beginner', 'intermediate', 'advanced'];
