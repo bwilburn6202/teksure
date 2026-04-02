@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 
-interface SEOHeadProps {
+export interface SEOHeadProps {
   title: string;
   description: string;
-  path: string;
+  path?: string;
   type?: string;
   ogImage?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
