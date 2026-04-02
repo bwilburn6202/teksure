@@ -94,10 +94,7 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-router';
           }
 
-          // Recharts + D3 — only loaded on admin/dashboard pages
-          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3-') || id.includes('node_modules/victory-')) {
-            return 'vendor-charts';
-          }
+          // Recharts + D3 — let Vite handle naturally to avoid circular deps
 
           // Framer Motion — animation library, skip until needed
           if (id.includes('node_modules/framer-motion')) {
