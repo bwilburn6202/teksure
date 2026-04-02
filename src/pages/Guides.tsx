@@ -87,6 +87,94 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
 );
 
 
+const POPULAR_SEARCHES = ['WiFi not working', 'forgot password', 'how to print', 'update Windows', 'slow computer'];
+
+function GuidesEmptyState({
+  search,
+  activeTab,
+  onClear,
+}: {
+  search: string;
+  activeTab: string;
+  onClear: () => void;
+}) {
+  if (search.trim() && activeTab !== 'all') {
+    return (
+      <div className="text-center py-20 max-w-md mx-auto">
+        <p className="text-4xl mb-4 select-none">🔍</p>
+        <h2 className="text-lg font-semibold mb-2">
+          No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
+        </h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Try searching in all categories, or use a different word.
+        </p>
+        <button
+          onClick={onClear}
+          className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+        >
+          Show all guides
+        </button>
+      </div>
+    );
+  }
+
+  if (search.trim()) {
+    return (
+      <div className="text-center py-20 max-w-md mx-auto">
+        <p className="text-4xl mb-4 select-none">🤷</p>
+        <h2 className="text-lg font-semibold mb-2">
+          No guides matched "{search}"
+        </h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Try using a simpler word, or pick one of these popular topics:
+        </p>
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {POPULAR_SEARCHES.map(term => (
+            <button
+              key={term}
+              onClick={() => {
+                const input = document.querySelector<HTMLInputElement>('input[aria-label="Search guides"]');
+                if (input) {
+                  const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
+                  setter?.call(input, term);
+                  input.dispatchEvent(new Event('input', { bubbles: true }));
+                  input.focus();
+                }
+              }}
+              className="rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+            >
+              {term}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={onClear}
+          className="text-sm text-primary hover:underline font-medium"
+        >
+          Clear search and browse all guides
+        </button>
+      </div>
+    );
+  }
+
+  // Category tab selected but no guides in it
+  return (
+    <div className="text-center py-20 max-w-md mx-auto">
+      <p className="text-4xl mb-4 select-none">📂</p>
+      <h2 className="text-lg font-semibold mb-2">No guides in this category yet</h2>
+      <p className="text-sm text-muted-foreground mb-6">
+        We're always adding new content. In the meantime, you can browse all our guides.
+      </p>
+      <button
+        onClick={onClear}
+        className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+      >
+        Browse all guides
+      </button>
+    </div>
+  );
+}
+
 const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
@@ -234,11 +322,7 @@ const Guides = () => {
             </div>
 
             {filtered.length === 0 ? (
-              <div className="text-center py-20">
-                <p className="text-3xl mb-3">🔍</p>
-                <p className="font-medium mb-1">No guides found</p>
-                <p className="text-sm text-muted-foreground">Try a different search term or category.</p>
-              </div>
+              <GuidesEmptyState search={search} activeTab={activeTab} onClear={() => { setSearch(''); setActiveTab('all'); }} />
             ) : viewMode === 'list' ? (
               <div className="border rounded-xl overflow-hidden">
                 {filtered.map((guide) => (

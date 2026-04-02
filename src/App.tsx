@@ -121,8 +121,13 @@ const queryClient = new QueryClient({
 /** Minimal spinner shown during lazy-load */
 function PageLoader() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+    <div
+      className="min-h-screen flex items-center justify-center"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading page"
+    >
+      <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" aria-hidden="true" />
     </div>
   );
 }
@@ -142,8 +147,12 @@ function OfflineBanner() {
   }, []);
   if (!offline) return null;
   return (
-    <div className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-700 text-white text-sm font-medium py-2 px-4 shadow-lg">
-      <WifiOff className="h-4 w-4 shrink-0" />
+    <div
+      role="alert"
+      aria-live="assertive"
+      className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-700 text-white text-sm font-medium py-2 px-4 shadow-lg"
+    >
+      <WifiOff className="h-4 w-4 shrink-0" aria-hidden="true" />
       <span>You're offline — previously visited guides are still available.</span>
     </div>
   );
@@ -166,6 +175,7 @@ const AppContent = () => {
       <Toaster />
       <Sonner />
       <Suspense fallback={<PageLoader />}>
+        <ErrorBoundary variant="section">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
@@ -256,6 +266,7 @@ const AppContent = () => {
           <Route path="/explore" element={<Explore />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </ErrorBoundary>
       </Suspense>
     </BrowserRouter>
   );

@@ -47,7 +47,7 @@ export default function ForumIndex() {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState<ForumCategory | 'all'>('all');
 
-  const { data: threads = [], isLoading } = useQuery({
+  const { data: threads = [], isLoading, isError, refetch } = useQuery({
     queryKey: ['forum-threads', activeCategory],
     queryFn: async () => {
       let query = supabase
@@ -134,12 +134,28 @@ export default function ForumIndex() {
                 <div key={i} className="h-24 bg-muted animate-pulse rounded-2xl" />
               ))}
             </div>
+          ) : isError ? (
+            <Card className="rounded-2xl border border-border bg-card text-center py-12">
+              <CardContent>
+                <p className="text-4xl mb-4 select-none">😕</p>
+                <p className="text-lg font-semibold mb-2">We couldn't load the discussions</p>
+                <p className="text-muted-foreground mb-6 max-w-xs mx-auto text-sm leading-relaxed">
+                  There was a problem connecting to our servers. Check your internet
+                  connection and try again — your posts are safe!
+                </p>
+                <Button onClick={() => refetch()} variant="outline" className="rounded-xl gap-2">
+                  <span>Try again</span>
+                </Button>
+              </CardContent>
+            </Card>
           ) : threads.length === 0 ? (
             <Card className="rounded-2xl border border-border bg-card text-center py-12">
               <CardContent>
-                <MessageSquare className="h-10 w-10 text-muted-foreground mx-auto mb-3" />
-                <p className="text-lg font-medium mb-1">No discussions yet</p>
-                <p className="text-muted-foreground mb-4">Be the first to start a conversation in this topic!</p>
+                <p className="text-4xl mb-4 select-none">💬</p>
+                <p className="text-lg font-semibold mb-1">No discussions here yet</p>
+                <p className="text-muted-foreground mb-5 text-sm max-w-xs mx-auto">
+                  Be the first to ask a question or share a tip in this topic — no question is too simple!
+                </p>
                 <Button onClick={handleNewThread} variant="outline" className="rounded-xl">Start a Discussion</Button>
               </CardContent>
             </Card>

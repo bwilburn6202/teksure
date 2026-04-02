@@ -10,6 +10,42 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 
+const SUGGESTED_SEARCHES = ['WiFi problems', 'forgot password', 'slow computer', 'how to print', 'email setup', 'video call', 'update Windows', 'back up my phone'];
+
+function SearchEmptyState({ query, onSuggest }: { query: string; onSuggest: (term: string) => void }) {
+  return (
+    <div className="text-center py-16 max-w-md mx-auto">
+      <p className="text-4xl mb-4 select-none">🤷</p>
+      <p className="text-xl font-semibold mb-2 text-primary">
+        No guides matched "{query}"
+      </p>
+      <p className="text-muted-foreground mb-6 leading-relaxed">
+        We couldn't find anything for that exact phrase. Try a simpler word, or
+        pick one of these popular topics:
+      </p>
+      <div className="flex flex-wrap justify-center gap-2 mb-8">
+        {SUGGESTED_SEARCHES.map(term => (
+          <button
+            key={term}
+            onClick={() => onSuggest(term)}
+            className="rounded-full border border-border bg-muted px-3 py-1.5 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+          >
+            {term}
+          </button>
+        ))}
+      </div>
+      <div className="flex flex-col sm:flex-row gap-3 justify-center text-sm">
+        <Link to="/guides" className="text-primary hover:underline font-medium">
+          Browse all guides →
+        </Link>
+        <Link to="/get-help" className="text-primary hover:underline font-medium">
+          Talk to a real technician →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 const SearchResults = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
@@ -73,14 +109,7 @@ const SearchResults = () => {
             {categories.map(cat => (
               <TabsContent key={cat} value={cat}>
                 {filtered.length === 0 ? (
-                  <div className="text-center py-16">
-                    <p className="text-4xl mb-4">🔍</p>
-                    <p className="text-lg font-medium mb-2 text-primary">No results for "{search}"</p>
-                    <p className="text-muted-foreground">
-                      Try different keywords or{' '}
-                      <Link to="/quick-fixes" className="text-primary hover:underline">browse Quick Fixes</Link>
-                    </p>
-                  </div>
+                  <SearchEmptyState query={search} onSuggest={handleSearch} />
                 ) : (
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filtered.map((guide, i) => (
@@ -112,10 +141,23 @@ const SearchResults = () => {
             ))}
           </Tabs>
         ) : (
-          <div className="text-center py-16">
-            <p className="text-4xl mb-4">🔎</p>
-            <p className="text-lg font-medium mb-2 text-primary">Type something to search</p>
-            <p className="text-muted-foreground">Search through {guides.length}+ guides</p>
+          <div className="text-center py-16 max-w-md mx-auto">
+            <p className="text-4xl mb-4 select-none">🔎</p>
+            <p className="text-lg font-medium mb-2 text-primary">What are you looking for?</p>
+            <p className="text-muted-foreground mb-6">
+              Search {guides.length}+ free guides — try topics like:
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {['WiFi problems', 'forgot password', 'how to print', 'slow computer', 'email setup', 'video call'].map(term => (
+                <button
+                  key={term}
+                  onClick={() => handleSearch(term)}
+                  className="rounded-full border border-border bg-muted px-3 py-1.5 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+                >
+                  {term}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </main>
