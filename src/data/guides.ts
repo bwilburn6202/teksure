@@ -9375,4 +9375,513 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Free up disk space', content: 'Delete old downloads, empty Trash, uninstall unused apps. Keep at least 10-15% free.' },
     { title: 'Check for malware', content: 'Windows: Windows Security > Virus & threat protection > Quick scan. Mac: try Malwarebytes free scan.' },
   ] },
+
+  // ===== BATCH 6: Phone Guides (15 new) =====
+  { slug: 'iphone-battery-tips', title: 'How to Make Your iPhone Battery Last All Day', excerpt: 'Simple settings changes that dramatically extend battery life.', category: 'phone-guides', tags: ['iphone', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Check battery usage', content: 'Go to Settings > Battery. See which apps use the most power.' },
+    { title: 'Turn on Low Power Mode', content: 'Settings > Battery > Low Power Mode. Reduces background activity significantly.' },
+    { title: 'Reduce brightness', content: 'Swipe down from top-right for Control Center. Drag brightness to 40-50%.' },
+    { title: 'Disable unnecessary Location Services', content: 'Settings > Privacy > Location Services. Set apps to "While Using" instead of "Always."' },
+  ] },
+  { slug: 'android-battery-tips', title: 'How to Extend Your Android Battery Life', excerpt: 'Get more hours from your Android phone with these tips.', category: 'phone-guides', tags: ['android', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Turn on Battery Saver', content: 'Settings > Battery > Battery Saver. Limits background activity.' },
+    { title: 'Reduce brightness', content: 'Swipe down for Quick Settings. Lower the brightness slider.' },
+    { title: 'Turn off unused connections', content: 'Turn off Bluetooth, Wi-Fi, or Data when not using them.' },
+    { title: 'Use Dark Mode', content: 'Settings > Display > Dark Theme. On OLED screens, this saves significant battery.' },
+  ] },
+  { slug: 'iphone-organize-home-screen', title: 'How to Organize Your iPhone Home Screen', excerpt: 'Clean up your home screen so you find apps quickly.', category: 'phone-guides', tags: ['iphone', 'organization', 'apps'], readTime: '5 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Enter edit mode', content: 'Long-press on any empty space until apps jiggle.' },
+    { title: 'Create a folder', content: 'Drag one app on top of another. Rename the folder ("Social", "Games").' },
+    { title: 'Use App Library', content: 'Swipe right past your last page. App Library organizes all apps automatically.' },
+  ] },
+  { slug: 'phone-block-calls', title: 'How to Block Unwanted Phone Calls', excerpt: 'Stop spam calls and telemarketers.', category: 'phone-guides', tags: ['phone', 'spam', 'calls'], readTime: '5 min', thumbnailEmoji: '🚫', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Block on iPhone', content: 'Phone app > Recents > tap (i) next to number > Block this Caller.' },
+    { title: 'Block on Android', content: 'Phone app > Recent calls > long-press > Block/Report spam.' },
+    { title: 'Silence unknown callers', content: 'iPhone: Settings > Phone > Silence Unknown Callers. Unknowns go to voicemail.' },
+    { title: 'Do Not Call registry', content: 'Go to donotcall.gov or call 1-888-382-1222 to register your number.' },
+  ] },
+  { slug: 'iphone-facetime-call', title: 'How to Make a FaceTime Video Call', excerpt: 'See loved ones face-to-face with free video calls.', category: 'phone-guides', tags: ['iphone', 'facetime', 'video-call'], readTime: '4 min', thumbnailEmoji: '📹', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open FaceTime', content: 'Tap the FaceTime app (green camera icon).' },
+    { title: 'Start a call', content: 'Tap + or New FaceTime. Type the name or number. Tap Video.' },
+    { title: 'During the call', content: 'Tap screen for controls. Mute mic, flip camera, or turn off video.' },
+    { title: 'Call Android users', content: 'Tap Create Link and share it. Android users join through their browser.' },
+  ] },
+  { slug: 'phone-connect-bluetooth', title: 'How to Connect Bluetooth Devices', excerpt: 'Pair headphones, speakers, or your car wirelessly.', category: 'phone-guides', tags: ['phone', 'bluetooth', 'wireless'], readTime: '5 min', thumbnailEmoji: '🎧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Put device in pairing mode', content: 'Press and hold the pairing button until a light blinks.' },
+    { title: 'Open Bluetooth settings', content: 'iPhone: Settings > Bluetooth. Android: Settings > Connected Devices > Pair New.' },
+    { title: 'Select your device', content: 'Tap the device name in the list to connect.' },
+  ] },
+  { slug: 'phone-take-screenshot', title: 'How to Take a Screenshot on Any Phone', excerpt: 'Capture what is on your screen.', category: 'phone-guides', tags: ['phone', 'screenshot', 'basics'], readTime: '3 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone (Face ID)', content: 'Press Side + Volume Up simultaneously.' },
+    { title: 'iPhone (Home button)', content: 'Press Home + Side button simultaneously.' },
+    { title: 'Android', content: 'Press Power + Volume Down for one second.' },
+  ] },
+  { slug: 'phone-google-maps', title: 'How to Use Google Maps', excerpt: 'Get directions and find businesses anywhere.', category: 'phone-guides', tags: ['phone', 'google-maps', 'navigation'], readTime: '6 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Search for a place', content: 'Tap the search bar. Type an address, business name, or "pharmacy near me."' },
+    { title: 'Get directions', content: 'Tap Directions. Choose driving, walking, or transit. Tap Start for voice navigation.' },
+    { title: 'Save favorites', content: 'Search for a place > tap Save > add to "Favorites" for quick access.' },
+  ] },
+  { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'Download official app', content: 'Search your bank name in app store. Only download the verified official app.' },
+    { title: 'Enable biometric login', content: 'Turn on Face ID, Touch ID, or fingerprint in app settings.' },
+    { title: 'Stay safe', content: 'Never use public Wi-Fi for banking. Enable transaction notifications. Report lost phone immediately.' },
+  ] },
+  { slug: 'phone-do-not-disturb', title: 'How to Use Do Not Disturb', excerpt: 'Silence notifications when you need quiet time.', category: 'phone-guides', tags: ['phone', 'do-not-disturb'], readTime: '4 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Open Control Center > tap the crescent moon icon.' },
+    { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
+    { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
+  ] },
+  { slug: 'iphone-airdrop', title: 'How to Use AirDrop on iPhone', excerpt: 'Share photos and files instantly with nearby Apple devices.', category: 'phone-guides', tags: ['iphone', 'airdrop', 'sharing'], readTime: '4 min', thumbnailEmoji: '📤', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Enable AirDrop', content: 'Control Center > long-press Wi-Fi area > AirDrop > Contacts Only.' },
+    { title: 'Share a photo', content: 'Photos app > select photo > Share > tap person\'s AirDrop icon.' },
+    { title: 'Security', content: 'Use "Contacts Only" — not "Everyone" — to prevent unwanted content from strangers.' },
+  ] },
+  { slug: 'phone-hotspot', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'iPhone', content: 'Settings > Personal Hotspot > Allow Others to Join.' },
+    { title: 'Android', content: 'Settings > Network > Hotspot & Tethering > Wi-Fi Hotspot.' },
+    { title: 'Connect device', content: 'On your laptop, find your phone in Wi-Fi settings and connect using the password shown.' },
+  ] },
+  { slug: 'phone-increase-text-size', title: 'How to Make Text Bigger on Your Phone', excerpt: 'Increase text size so everything is easier to read.', category: 'phone-guides', tags: ['phone', 'accessibility', 'text-size'], readTime: '4 min', thumbnailEmoji: '🔍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Settings > Display & Brightness > Text Size. Drag slider right.' },
+    { title: 'Android', content: 'Settings > Display > Font Size. Move slider to increase.' },
+    { title: 'Bold text', content: 'iPhone: Settings > Display > Bold Text. Makes everything thicker and easier to read.' },
+  ] },
+  { slug: 'phone-send-photos-text', title: 'How to Send Photos by Text Message', excerpt: 'Share photos with friends and family via text.', category: 'phone-guides', tags: ['phone', 'photos', 'messaging'], readTime: '4 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open Messages', content: 'Open the Messages app. Start or open a conversation.' },
+    { title: 'Attach photos', content: 'Tap the + or photo icon. Select photos from your camera roll.' },
+    { title: 'Send', content: 'Add a caption if you want, then tap the send button.' },
+  ] },
+  { slug: 'iphone-take-better-photos', title: 'How to Take Better Photos on iPhone', excerpt: 'Simple tips for getting great pictures.', category: 'phone-guides', tags: ['iphone', 'camera', 'photos'], readTime: '6 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Clean your lens', content: 'Wipe the camera lens with a soft cloth. Smudges cause blurry photos.' },
+    { title: 'Tap to focus', content: 'Tap the screen where your subject is. A yellow square shows the focus point.' },
+    { title: 'Use Portrait mode', content: 'Swipe to Portrait. Blurs the background beautifully for people and pets.' },
+    { title: 'Use natural light', content: 'Face subjects toward a window. Natural light looks better than flash.' },
+  ] },
+
+  // ===== BATCH 7: Social Media (12 new) =====
+  { slug: 'facebook-create-account', title: 'How to Create a Facebook Account', excerpt: 'Join Facebook to connect with family and friends.', category: 'social-media', tags: ['facebook', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '👤', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Go to Facebook', content: 'Go to facebook.com or download the Facebook app.' },
+    { title: 'Create account', content: 'Click "Create New Account." Enter name, email, birthday. Create a password.' },
+    { title: 'Verify', content: 'Enter the code sent to your email or phone.' },
+    { title: 'Add a photo', content: 'Upload a clear photo so friends and family can find you.' },
+  ] },
+  { slug: 'facebook-privacy-settings', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open Privacy', content: 'Profile picture > Settings & Privacy > Settings > Privacy.' },
+    { title: 'Set post visibility', content: 'Set "Who can see your future posts?" to Friends (not Public).' },
+    { title: 'Limit past posts', content: 'Tap "Limit Past Posts" to change all old public posts to Friends Only.' },
+  ] },
+  { slug: 'instagram-create-account', title: 'How to Create an Instagram Account', excerpt: 'Set up Instagram to share photos and follow interests.', category: 'social-media', tags: ['instagram', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Download Instagram', content: 'Get it from the App Store or Google Play.' },
+    { title: 'Sign up', content: 'Enter email, create username and password.' },
+    { title: 'Set to Private', content: 'Settings > Privacy > Private Account. Only approved followers see your posts.' },
+  ] },
+  { slug: 'youtube-watch-videos', title: 'How to Watch YouTube Videos', excerpt: 'Find and enjoy videos on the world\'s biggest video platform.', category: 'social-media', tags: ['youtube', 'videos', 'streaming'], readTime: '5 min', thumbnailEmoji: '▶️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open YouTube', content: 'Open the app or go to youtube.com. No account needed to watch.' },
+    { title: 'Search', content: 'Tap magnifying glass. Type what you want: "how to bake bread."' },
+    { title: 'Subscribe', content: 'Like a creator? Tap Subscribe. Their new videos appear in your feed.' },
+  ] },
+  { slug: 'whatsapp-setup', title: 'How to Set Up WhatsApp', excerpt: 'Send free messages and make calls over Wi-Fi.', category: 'social-media', tags: ['whatsapp', 'messaging', 'calls'], readTime: '5 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Download', content: 'Get WhatsApp from app store. It\'s free.' },
+    { title: 'Verify number', content: 'Enter your phone number. Enter the code sent via text.' },
+    { title: 'Send messages', content: 'Tap new message icon > select contact > type and send.' },
+    { title: 'Free calls', content: 'Open a chat > tap phone or video icon. Uses Wi-Fi, so it\'s free.' },
+  ] },
+  { slug: 'zoom-video-meeting', title: 'How to Use Zoom for Video Calls', excerpt: 'Join video calls with family, friends, or groups.', category: 'social-media', tags: ['zoom', 'video-calls', 'meetings'], readTime: '5 min', thumbnailEmoji: '🎥', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Download Zoom', content: 'Get it from app store or zoom.us. Create a free account.' },
+    { title: 'Join a meeting', content: 'Click the link sent to you, or enter Meeting ID and Passcode.' },
+    { title: 'Controls', content: 'Bottom toolbar: Mute, Video on/off, Chat, and Leave button.' },
+  ] },
+  { slug: 'social-media-scam-awareness', title: 'How to Spot Social Media Scams', excerpt: 'Protect yourself from common online fraud.', category: 'social-media', tags: ['scams', 'safety', 'fraud'], readTime: '6 min', thumbnailEmoji: '⚠️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Too-good-to-be-true offers', content: 'Free money or prizes are almost always scams.' },
+    { title: 'Romance scams', content: 'Be cautious of people who express strong feelings quickly then ask for money.' },
+    { title: 'Phishing links', content: 'Don\'t click links from strangers. "Is this you?" links steal your login.' },
+    { title: 'Report and block', content: 'Three dots > Report. Block the account. Warn friends.' },
+  ] },
+  { slug: 'facebook-marketplace', title: 'How to Use Facebook Marketplace', excerpt: 'Buy and sell locally through Facebook.', category: 'social-media', tags: ['facebook', 'marketplace', 'shopping'], readTime: '6 min', thumbnailEmoji: '🏷️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open Marketplace', content: 'In Facebook, tap the Marketplace icon (storefront).' },
+    { title: 'Browse or search', content: 'Scroll items near you or search for something specific.' },
+    { title: 'Sell an item', content: 'Tap Sell. Take clear photos, write description, set price.' },
+    { title: 'Stay safe', content: 'Meet in public places. Bring a friend. Use cash or electronic payment.' },
+  ] },
+  { slug: 'nextdoor-neighborhood', title: 'How to Use Nextdoor', excerpt: 'Connect with neighbors for local news and recommendations.', category: 'social-media', tags: ['nextdoor', 'neighborhood', 'local'], readTime: '5 min', thumbnailEmoji: '🏘️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Sign up', content: 'Download Nextdoor. Enter your address to join your neighborhood.' },
+    { title: 'Browse', content: 'See posts about lost pets, plumber recommendations, events, safety alerts.' },
+    { title: 'Post', content: 'Tap + to ask questions or share helpful information.' },
+  ] },
+  { slug: 'pinterest-basics', title: 'How to Use Pinterest for Inspiration', excerpt: 'Discover recipes, decor ideas, and crafts.', category: 'social-media', tags: ['pinterest', 'inspiration', 'recipes'], readTime: '5 min', thumbnailEmoji: '📌', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Sign up', content: 'Download Pinterest or go to pinterest.com.' },
+    { title: 'Choose interests', content: 'Select topics: recipes, gardening, travel, crafts.' },
+    { title: 'Save pins', content: 'Tap Save on a pin > choose a board like "Recipes to Try."' },
+  ] },
+  { slug: 'facebook-messenger', title: 'How to Use Messenger', excerpt: 'Send messages, photos, and make video calls.', category: 'social-media', tags: ['facebook', 'messenger', 'video-calls'], readTime: '5 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Download Messenger', content: 'Get it from app store. Sign in with Facebook.' },
+    { title: 'Send a message', content: 'Tap pencil icon > type person\'s name > type message.' },
+    { title: 'Video call', content: 'Open a conversation > tap the video camera icon.' },
+    { title: 'Group chat', content: 'Pencil icon > Create Group > add people > name it.' },
+  ] },
+  { slug: 'twitter-x-basics', title: 'How to Use X (Formerly Twitter)', excerpt: 'Get started with X for news and conversations.', category: 'social-media', tags: ['twitter', 'x', 'news'], readTime: '5 min', thumbnailEmoji: '🐦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Create account', content: 'Download X or go to x.com. Enter name and email.' },
+    { title: 'Follow accounts', content: 'Follow news outlets, organizations, or friends.' },
+    { title: 'Interact', content: 'Heart to like, arrows to repost, speech bubble to reply.' },
+  ] },
+
+  // ===== BATCH 8: How-To (15 new) =====
+  { slug: 'how-to-scan-document-phone', title: 'How to Scan Documents with Your Phone', excerpt: 'Turn your phone into a scanner.', category: 'how-to', tags: ['scanning', 'documents', 'phone'], readTime: '4 min', thumbnailEmoji: '📄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Notes app > camera icon > Scan Documents.' },
+    { title: 'Android', content: 'Google Drive > + > Scan.' },
+    { title: 'Tips', content: 'Lay flat on dark surface, good lighting, hold phone above. Save as PDF.' },
+  ] },
+  { slug: 'how-to-print-from-phone', title: 'How to Print from Your Phone', excerpt: 'Print photos and documents wirelessly.', category: 'how-to', tags: ['printing', 'phone'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Connect to same Wi-Fi', content: 'Printer and phone must be on the same network.' },
+    { title: 'iPhone (AirPrint)', content: 'Share > Print > select printer.' },
+    { title: 'Android', content: 'Menu > Print > select printer.' },
+  ] },
+  { slug: 'how-to-use-qr-codes', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Open Camera, point at QR code, tap the notification.' },
+    { title: 'Android', content: 'Open Camera, point at QR code. Or use Google Lens.' },
+    { title: 'Stay safe', content: 'Only scan QR codes from trusted sources.' },
+  ] },
+  { slug: 'how-to-copy-paste', title: 'How to Copy and Paste', excerpt: 'An essential time-saving skill for any device.', category: 'how-to', tags: ['copy-paste', 'basics'], readTime: '4 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Phone', content: 'Long-press word > drag handles > tap Copy. Long-press where to paste > Paste.' },
+    { title: 'Windows', content: 'Select text > Ctrl+C to copy > Ctrl+V to paste.' },
+    { title: 'Mac', content: 'Select text > Command+C to copy > Command+V to paste.' },
+  ] },
+  { slug: 'how-to-use-google-drive', title: 'How to Use Google Drive', excerpt: 'Free cloud storage for your files.', category: 'how-to', tags: ['google-drive', 'cloud'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open', content: 'Go to drive.google.com or use the app. 15 GB free.' },
+    { title: 'Upload', content: 'Click + New > File Upload. Or tap + on mobile.' },
+    { title: 'Share', content: 'Right-click file > Share > enter email > choose permission.' },
+  ] },
+  { slug: 'how-to-use-apple-pay', title: 'How to Use Apple Pay', excerpt: 'Pay with your iPhone at stores and online.', category: 'how-to', tags: ['apple-pay', 'payment'], readTime: '5 min', thumbnailEmoji: '💳', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Add a card', content: 'Wallet app > + button > scan card or enter manually.' },
+    { title: 'Verify', content: 'Bank verifies via text, email, or call.' },
+    { title: 'Pay in stores', content: 'Double-click side button > Face ID > hold near terminal.' },
+  ] },
+  { slug: 'how-to-use-uber-lyft', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Download', content: 'Get Uber or Lyft. Create account with phone and payment method.' },
+    { title: 'Request', content: 'Enter destination. Choose ride type. Tap Request.' },
+    { title: 'Safety', content: 'Check driver photo, car, and plate. Share trip status with family.' },
+  ] },
+  { slug: 'how-to-set-up-alexa', title: 'How to Set Up Amazon Alexa', excerpt: 'Get your Echo set up with voice commands.', category: 'how-to', tags: ['alexa', 'smart-home'], readTime: '5 min', thumbnailEmoji: '🔊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Plug in', content: 'Plug in Echo. Wait for orange light ring.' },
+    { title: 'Download app', content: 'Get Alexa app. Sign in with Amazon account. Follow Wi-Fi setup.' },
+    { title: 'Try commands', content: '"Alexa, what\'s the weather?" "Set a timer for 20 minutes." "Remind me at 3 PM."' },
+  ] },
+  { slug: 'how-to-use-siri', title: 'How to Use Siri', excerpt: 'Your iPhone voice assistant.', category: 'how-to', tags: ['siri', 'iphone', 'voice'], readTime: '5 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Activate', content: 'Say "Hey Siri" or hold the side button.' },
+    { title: 'Ask', content: '"What\'s the weather?" "Set alarm for 7 AM." "Call Mom."' },
+    { title: 'Control phone', content: '"Turn on flashlight." "Play jazz music." "Set timer 15 minutes."' },
+  ] },
+  { slug: 'how-to-connect-wifi', title: 'How to Connect to Wi-Fi', excerpt: 'Get your device on the internet.', category: 'how-to', tags: ['wifi', 'internet'], readTime: '4 min', thumbnailEmoji: '📶', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Find Wi-Fi info', content: 'Network name and password are on the back of your router.' },
+    { title: 'Open settings', content: 'iPhone: Settings > Wi-Fi. Android: Settings > Network > Wi-Fi.' },
+    { title: 'Connect', content: 'Tap your network name. Enter password (case-sensitive). Tap Join.' },
+  ] },
+  { slug: 'how-to-create-strong-password', title: 'How to Create Strong Passwords', excerpt: 'Protect your accounts with better passwords.', category: 'how-to', tags: ['passwords', 'security'], readTime: '5 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Use a passphrase', content: 'String random words: "Purple-Elephant-Plays-Tennis." Long and memorable.' },
+    { title: 'Never reuse', content: 'Different password for each important account.' },
+    { title: 'Use a manager', content: 'Apple Keychain, Google Passwords, or 1Password save and fill them for you.' },
+  ] },
+  { slug: 'how-to-find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Locate your misplaced phone.', category: 'how-to', tags: ['lost-phone', 'find-my'], readTime: '4 min', thumbnailEmoji: '📍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Go to icloud.com/find. Sign in. Play Sound to make it ring.' },
+    { title: 'Android', content: 'Go to android.com/find. Sign in. Play Sound.' },
+    { title: 'Set up now', content: 'Enable Find My iPhone or Find My Device BEFORE you lose it.' },
+  ] },
+  { slug: 'how-to-video-call-grandkids', title: 'How to Video Call Your Grandchildren', excerpt: 'Stay connected with family through video calls.', category: 'how-to', tags: ['video-calls', 'family'], readTime: '5 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Choose an app', content: 'FaceTime (Apple), Zoom, Google Meet, or WhatsApp.' },
+    { title: 'Setup', content: 'Prop phone at eye level. Good lighting. Connect to Wi-Fi.' },
+    { title: 'Fun activities', content: 'Read a book, show your garden, play I Spy, cook together.' },
+  ] },
+  { slug: 'how-to-set-up-smart-tv', title: 'How to Set Up a Smart TV', excerpt: 'Get streaming on your new TV.', category: 'how-to', tags: ['smart-tv', 'streaming'], readTime: '6 min', thumbnailEmoji: '📺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Connect', content: 'Plug in power and HDMI. Follow the setup wizard.' },
+    { title: 'Wi-Fi', content: 'Select your network and enter password.' },
+    { title: 'Install apps', content: 'Go to app store on TV. Install Netflix, Hulu, Disney+, YouTube.' },
+  ] },
+  { slug: 'how-to-order-groceries-online', title: 'How to Order Groceries Online', excerpt: 'Get groceries delivered to your door.', category: 'how-to', tags: ['groceries', 'delivery'], readTime: '5 min', thumbnailEmoji: '🛒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Choose service', content: 'Instacart, Walmart Grocery, Amazon Fresh, or Kroger.' },
+    { title: 'Shop', content: 'Search items or browse categories. Add to cart.' },
+    { title: 'Deliver', content: 'Choose delivery window. Add instructions. Place order.' },
+  ] },
+
+  // ===== BATCH 9: AI Guides — Claude Code, Codex, Practical AI (20 new) =====
+  { slug: 'what-is-claude-code', title: 'What Is Claude Code and How Does It Work', excerpt: 'An AI coding assistant that reads, writes, and fixes code using plain English.', category: 'ai-guides', tags: ['claude', 'ai', 'coding'], readTime: '6 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'What it does', content: 'Claude Code is an AI assistant by Anthropic that reads your entire codebase, writes new code, fixes bugs, and runs commands — all from plain English instructions.' },
+    { title: 'Where it works', content: 'Runs in your terminal, VS Code, JetBrains editors, a desktop app, or your web browser. Work syncs across all of them.' },
+    { title: 'How you use it', content: 'Describe what you want: "add a login page" or "fix the error on line 42." Claude plans the approach, writes the code, and verifies it works.' },
+    { title: 'Key features', content: 'Understands entire projects, integrates with Git, connects to tools like Google Drive and Slack via MCP, and remembers your preferences.' },
+    { title: 'Who it is for', content: 'Developers and people learning to code. Handles tedious tasks (tests, lint errors, dependencies) so you focus on creative work.' },
+  ] },
+  { slug: 'claude-code-getting-started', title: 'Getting Started with Claude Code', excerpt: 'Set up and use Claude Code for the first time.', category: 'ai-guides', tags: ['claude', 'setup', 'tutorial'], readTime: '7 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'Sign up', content: 'You need a Claude subscription or Anthropic Console account at claude.ai.' },
+    { title: 'Install', content: 'Open your terminal and run the install command from Claude Code documentation. Works on Mac, Windows, and Linux.' },
+    { title: 'Open your project', content: 'Navigate to your project folder and type "claude" to start a session.' },
+    { title: 'First instruction', content: 'Try "explain what this project does" or "find bugs in this file." Claude analyzes your code and responds.' },
+    { title: 'Make changes', content: 'Say "add a dark mode toggle" or "write tests for the login function." Claude writes the code and shows what changed.' },
+  ] },
+  { slug: 'claude-code-daily-workflow', title: 'Using Claude Code in Your Daily Workflow', excerpt: 'Practical ways to integrate AI coding assistance every day.', category: 'ai-guides', tags: ['claude', 'workflow', 'productivity'], readTime: '8 min', thumbnailEmoji: '💼', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'Morning code review', content: 'Ask Claude to review overnight pull requests. It catches bugs and suggests improvements humans might miss.' },
+    { title: 'Bug fixing', content: 'Paste an error message. Claude traces the issue through your codebase and implements a fix.' },
+    { title: 'Writing tests', content: '"Write tests for the checkout module." Claude generates comprehensive test cases covering edge cases and error handling.' },
+    { title: 'Documentation', content: 'Ask Claude to document your code. It writes clear comments, README files, and API docs based on what your code does.' },
+    { title: 'Git automation', content: 'Claude creates commits with meaningful messages, makes branches, and opens pull requests from natural language.' },
+  ] },
+  { slug: 'claude-code-claude-md', title: 'Using CLAUDE.md for Project Memory', excerpt: 'Set persistent instructions so Claude remembers your preferences.', category: 'ai-guides', tags: ['claude', 'configuration', 'memory'], readTime: '5 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'What is CLAUDE.md', content: 'A special file in your project that Claude reads at the start of every session — like a persistent instruction sheet.' },
+    { title: 'What to include', content: 'Coding standards, preferred libraries, architecture decisions, and project-specific rules.' },
+    { title: 'Examples', content: '"Always use TypeScript." "Run tests before committing." "Use Tailwind for styling." "Follow REST naming for APIs."' },
+    { title: 'Auto-memory', content: 'Claude also saves things it learns automatically — build commands, debugging insights — across sessions.' },
+  ] },
+  { slug: 'claude-code-mcp-connections', title: 'Connecting Claude Code to Tools with MCP', excerpt: 'Use Model Context Protocol to connect Claude to Google Drive, Slack, and more.', category: 'ai-advanced', tags: ['claude', 'mcp', 'integrations'], readTime: '6 min', thumbnailEmoji: '🔗', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+    { title: 'What is MCP', content: 'Model Context Protocol is an open standard letting Claude connect to external tools — Google Drive, Slack, Jira, databases.' },
+    { title: 'Why it matters', content: 'Claude can pull info from project management tools, access design files, and read your wiki without leaving your session.' },
+    { title: 'Slack example', content: 'Mention @Claude in Slack with a bug report. It can create a pull request with the fix automatically.' },
+    { title: 'Custom servers', content: 'Build MCP servers for proprietary tools so Claude accesses your company\'s internal systems.' },
+  ] },
+  { slug: 'claude-code-agent-teams', title: 'Claude Code Agent Teams for Complex Projects', excerpt: 'Spawn multiple AI agents working on different parts simultaneously.', category: 'ai-advanced', tags: ['claude', 'agents', 'parallel'], readTime: '7 min', thumbnailEmoji: '👥', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+    { title: 'What are agent teams', content: 'Claude spawns sub-agents that work on different tasks at the same time, coordinated by a lead agent.' },
+    { title: 'When to use', content: 'Complex projects: one agent writes frontend while another handles the backend API.' },
+    { title: 'How it works', content: 'Describe the task. The lead breaks it into subtasks and launches specialized agents. Results combine automatically.' },
+    { title: 'Example', content: '"Refactor authentication." Claude spawns agents to update login page, modify APIs, update tests, and revise docs — all in parallel.' },
+  ] },
+  { slug: 'claude-code-scheduled-tasks', title: 'Automating with Claude Code Schedules', excerpt: 'Set up Claude to run tasks automatically on a schedule.', category: 'ai-advanced', tags: ['claude', 'automation', 'scheduling'], readTime: '6 min', thumbnailEmoji: '⏰', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+    { title: 'What are scheduled tasks', content: 'Claude runs on a schedule like a cron job but powered by AI. Recurring work without you being present.' },
+    { title: 'Common uses', content: 'Morning PR reviews, overnight CI failure analysis, weekly dependency audits, auto documentation sync.' },
+    { title: 'CI/CD integration', content: 'Integrates with GitHub Actions and GitLab CI/CD for automated review on every pull request.' },
+  ] },
+  { slug: 'ai-coding-assistants-compared', title: 'AI Coding Assistants Compared', excerpt: 'Claude Code vs GitHub Copilot vs Cursor — honest comparison.', category: 'ai-guides', tags: ['comparison', 'copilot', 'cursor', 'claude'], readTime: '8 min', thumbnailEmoji: '⚖️', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'Claude Code', content: 'By Anthropic. Reads entire codebases, agent teams, MCP integrations, scheduled automation. Best for complex multi-file tasks.' },
+    { title: 'GitHub Copilot', content: 'By GitHub/Microsoft. Inline autocomplete as you type. Best for quick suggestions and single-file work.' },
+    { title: 'Cursor', content: 'AI-first editor on VS Code. AI deeply integrated in editing. Good for AI-native editing experience.' },
+    { title: 'OpenAI Codex', content: 'Cloud-based coding agent. Data analysis, frontend from designs, mobile dev, automated review.' },
+    { title: 'Which to choose', content: 'Whole-project: Claude Code. Inline completion: Copilot. AI editor: Cursor. Many devs use more than one.' },
+  ] },
+  { slug: 'ai-build-website-no-code', title: 'Build a Website Using AI (No Coding)', excerpt: 'Create a real website even if you have never written code.', category: 'ai-guides', tags: ['website', 'no-code', 'ai'], readTime: '8 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Choose your tool', content: 'Claude, Wix AI, Squarespace AI, or Framer AI all create websites from descriptions.' },
+    { title: 'Describe what you want', content: 'Be specific: "A bakery website with menu, about page, contact form, and photo gallery."' },
+    { title: 'Refine', content: 'Ask for changes: "Make the header blue," "Add testimonials," "Make text larger."' },
+    { title: 'Publish', content: 'Use Netlify, Vercel, or built-in hosting to make it live.' },
+  ] },
+  { slug: 'ai-automate-tasks', title: 'Automate Repetitive Tasks with AI', excerpt: 'Stop doing boring tasks manually.', category: 'ai-guides', tags: ['automation', 'productivity', 'ai'], readTime: '7 min', thumbnailEmoji: '⚡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Identify tasks', content: 'Organizing files, renaming photos, converting documents, sorting emails, updating spreadsheets.' },
+    { title: 'Text tasks', content: 'Ask AI to rewrite emails, summarize documents, extract data, translate content.' },
+    { title: 'Email', content: 'AI can draft responses, sort your inbox, create templates. Gmail and Outlook have built-in AI.' },
+    { title: 'Spreadsheets', content: 'AI writes formulas, cleans data, creates charts. Google Sheets and Excel have AI features.' },
+  ] },
+  { slug: 'ai-write-better-emails', title: 'Use AI to Write Better Emails', excerpt: 'Draft professional, clear emails in seconds.', category: 'ai-guides', tags: ['email', 'writing', 'ai'], readTime: '5 min', thumbnailEmoji: '✉️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'When to use', content: 'Difficult replies, writing to important people, needing diplomacy, saving time on routine messages.' },
+    { title: 'How to ask', content: 'Give purpose, audience, tone, and key points: "Polite email to landlord about leaky faucet repair."' },
+    { title: 'Built-in features', content: 'Gmail has "Help me write." Outlook has Copilot. Both draft and rephrase right in your inbox.' },
+  ] },
+  { slug: 'ai-personal-tutor', title: 'AI as Your Personal Tutor', excerpt: 'Learn anything with a patient, always-available AI teacher.', category: 'ai-guides', tags: ['learning', 'education', 'ai'], readTime: '6 min', thumbnailEmoji: '🎓', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Patient teacher', content: 'AI explains at your level and answers follow-ups. Say "explain simpler" or "give an example" anytime.' },
+    { title: 'Languages', content: 'Practice conversations, get grammar corrections, learn vocabulary in any language.' },
+    { title: 'Cooking', content: '"I have chicken, rice, and peppers — what can I make?" AI gives step-by-step instructions.' },
+    { title: 'Technology', content: '"What is Bluetooth?" "How does Wi-Fi work?" AI explains without jargon.' },
+  ] },
+  { slug: 'ai-safety-deepfakes', title: 'How to Spot AI Deepfakes', excerpt: 'Protect yourself from AI-generated fake content.', category: 'ai-guides', tags: ['deepfakes', 'safety', 'ai'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'What are deepfakes', content: 'AI can create fake photos, videos, and audio that look real. A celebrity might appear to say something they never said.' },
+    { title: 'Spot fake images', content: 'Look for unnatural hands, blurry face edges, inconsistent lighting, nonsensical text.' },
+    { title: 'Voice scams', content: 'Scammers clone family voices from social media. If a "relative" calls in trouble, hang up and call them directly.' },
+    { title: 'Verify before sharing', content: 'Check multiple news sources. Use reverse image search. When in doubt, don\'t share.' },
+  ] },
+  { slug: 'ai-chatbot-tips-beginners', title: 'Tips for Talking to AI Chatbots', excerpt: 'Get better answers from ChatGPT, Claude, and other AI.', category: 'ai-guides', tags: ['chatbots', 'tips', 'beginners'], readTime: '5 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Be specific', content: 'Not "tell me about cooking" but "simple chicken dinner for two, under 30 minutes."' },
+    { title: 'Ask follow-ups', content: 'AI remembers your conversation. Say "explain simpler" or "give step-by-step."' },
+    { title: 'Give context', content: '"I am 70 and new to computers. Explain how to set up email on iPhone." Context improves answers.' },
+    { title: 'Check important facts', content: 'AI can make mistakes. Verify important information yourself.' },
+  ] },
+  { slug: 'ai-data-analysis-beginners', title: 'Use AI to Analyze Data (No Experience Needed)', excerpt: 'Turn spreadsheets into insights using plain English.', category: 'ai-guides', tags: ['data', 'analysis', 'ai'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { title: 'What it means', content: 'Give AI a spreadsheet and it finds patterns, creates charts, and summarizes in plain English.' },
+    { title: 'Using ChatGPT', content: 'Upload a CSV. Ask "What are the key trends?" or "Create a chart of sales by month."' },
+    { title: 'Using Claude', content: 'Paste data or upload files. Ask to find patterns, calculate statistics, create visualizations.' },
+    { title: 'Codex for data', content: 'OpenAI Codex turns messy datasets into clear analysis, visualizations, reports, and slide decks automatically.' },
+  ] },
+  { slug: 'ai-image-editing-easy', title: 'Edit Photos with AI (Free)', excerpt: 'Remove backgrounds, enhance, and fix photos using free AI.', category: 'ai-guides', tags: ['photos', 'editing', 'ai'], readTime: '5 min', thumbnailEmoji: '🖼️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Remove backgrounds', content: 'remove.bg (free) or iPhone Photos eraser. Upload photo, AI removes background.' },
+    { title: 'Enhance', content: 'Google Photos and Apple Photos have one-tap "Enhance" buttons for brightness and color.' },
+    { title: 'Remove objects', content: 'Samsung and Pixel phones have "Magic Eraser" — circle unwanted objects to remove them.' },
+    { title: 'Restore old photos', content: 'Remini can sharpen blurry old photos. Great for restoring family pictures.' },
+  ] },
+  { slug: 'ai-accessibility-daily-life', title: 'How AI Makes Technology More Accessible', excerpt: 'AI features for vision, hearing, and mobility challenges.', category: 'ai-guides', tags: ['accessibility', 'ai', 'assistive-tech'], readTime: '6 min', thumbnailEmoji: '♿', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Vision', content: 'Screen readers use AI to describe images. Seeing AI and Be My Eyes describe the world through your camera.' },
+    { title: 'Hearing', content: 'Live captions on all devices transcribe speech to text in real time.' },
+    { title: 'Speech', content: 'Dictation lets you write without typing. AI adds punctuation automatically.' },
+    { title: 'Mobility', content: 'Voice assistants let you control phone, computer, and smart home entirely by voice.' },
+  ] },
+  { slug: 'ai-creative-writing-help', title: 'AI for Creative Writing', excerpt: 'Overcome writer block with AI assistance.', category: 'ai-guides', tags: ['writing', 'creative', 'ai'], readTime: '6 min', thumbnailEmoji: '✍️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Overcome block', content: 'Tell AI your idea. "I want a mystery in a small town. Give me 5 opening paragraphs."' },
+    { title: 'Develop characters', content: 'Ask for detailed character profiles: backstory, personality, motivations, speech patterns.' },
+    { title: 'Get feedback', content: 'Paste your writing. Ask for pacing feedback, plot hole identification, and improvements.' },
+    { title: 'You create, AI assists', content: 'Use AI as a brainstorming partner, not a replacement for your unique voice.' },
+  ] },
+
+  // ===== BATCH 10: Essential Skills (8 new) =====
+  { slug: 'understanding-cloud-storage', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'What is it', content: 'Secure servers on the internet. Your files are stored safely online and accessible anywhere.' },
+    { title: 'Services', content: 'iCloud (5 GB free), Google Drive (15 GB free), OneDrive (5 GB free).' },
+    { title: 'Is it safe', content: 'Major services use strong encryption. Safer than a single device that can be lost or damaged.' },
+  ] },
+  { slug: 'understanding-phishing', title: 'How to Recognize Phishing', excerpt: 'Protect yourself from fake emails stealing your info.', category: 'essential-skills', tags: ['phishing', 'scams', 'security'], readTime: '6 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'What is phishing', content: 'Fake emails pretending to be trusted companies to steal your information.' },
+    { title: 'Red flags', content: 'Urgent language, spelling errors, generic greetings, suspicious sender addresses.' },
+    { title: 'What to do', content: 'Never click suspicious links. Go directly to the real website. Change passwords if you clicked.' },
+  ] },
+  { slug: 'understanding-two-factor-auth', title: 'What Is Two-Factor Authentication', excerpt: 'An extra lock hackers cannot bypass.', category: 'essential-skills', tags: ['2fa', 'security'], readTime: '5 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'How it works', content: 'Password + code sent to your phone. Even if someone has your password, they need your phone too.' },
+    { title: 'Enable it', content: 'Gmail: myaccount.google.com > Security > 2-Step Verification. Facebook: Settings > Security > 2FA.' },
+  ] },
+  { slug: 'understanding-backups', title: 'How to Back Up Your Devices', excerpt: 'Protect photos, contacts, and files with backups.', category: 'essential-skills', tags: ['backup', 'data-protection'], readTime: '6 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Settings > [Your Name] > iCloud > iCloud Backup > Back Up Now.' },
+    { title: 'Android', content: 'Settings > System > Backup > Turn on Google Drive backup.' },
+    { title: 'Computer', content: 'Windows: File History or OneDrive. Mac: Time Machine with external drive.' },
+  ] },
+  { slug: 'online-shopping-safety', title: 'How to Shop Online Safely', excerpt: 'Avoid scams when buying online.', category: 'essential-skills', tags: ['shopping', 'safety', 'security'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Trusted sites', content: 'Stick to Amazon, Walmart, Target, Best Buy. Be cautious of unknown sites.' },
+    { title: 'Check HTTPS', content: 'Look for the lock icon before entering payment info.' },
+    { title: 'Use credit cards', content: 'Better fraud protection than debit cards for online purchases.' },
+  ] },
+  { slug: 'understanding-browser-basics', title: 'Web Browser Basics', excerpt: 'How to use Chrome, Safari, and Edge.', category: 'essential-skills', tags: ['browser', 'internet'], readTime: '5 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Navigate', content: 'Click address bar, type URL or search term, press Enter.' },
+    { title: 'Tabs', content: '+ for new tab. X to close. Multiple sites open at once.' },
+    { title: 'Bookmarks', content: 'Click star icon to save a site for quick access later.' },
+  ] },
+  { slug: 'understanding-software-updates', title: 'Why Software Updates Matter', excerpt: 'Keep devices secure with regular updates.', category: 'essential-skills', tags: ['updates', 'security'], readTime: '5 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Why', content: 'Updates fix security holes, patch bugs, add features. Outdated software is vulnerable.' },
+    { title: 'iPhone', content: 'Settings > General > Software Update.' },
+    { title: 'Windows', content: 'Settings > Windows Update > Check for Updates.' },
+  ] },
+  { slug: 'digital-declutter', title: 'Declutter Your Digital Life', excerpt: 'Clean up phone, email, and accounts.', category: 'essential-skills', tags: ['declutter', 'organization'], readTime: '6 min', thumbnailEmoji: '✨', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Email', content: 'Unsubscribe from newsletters. Delete old emails with large attachments.' },
+    { title: 'Photos', content: 'Delete blurry duplicates. Create albums. Back up to cloud.' },
+    { title: 'Apps', content: 'Delete unused apps. Update passwords for important accounts.' },
+  ] },
+
+  // ===== BATCH 11: Windows & Mac (10 new) =====
+  { slug: 'windows-file-explorer', title: 'How to Use File Explorer', excerpt: 'Navigate files and folders on Windows.', category: 'windows-guides', tags: ['windows', 'file-explorer'], readTime: '5 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open', content: 'Click folder icon on taskbar or press Windows + E.' },
+    { title: 'Sidebar', content: 'Quick access: Desktop, Downloads, Documents, Pictures.' },
+    { title: 'Search', content: 'Use search bar in top-right to find any file.' },
+  ] },
+  { slug: 'windows-screenshot-tools', title: 'Screenshots on Windows', excerpt: 'Capture your screen multiple ways.', category: 'windows-guides', tags: ['windows', 'screenshot'], readTime: '4 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Select area', content: 'Windows + Shift + S. Click and drag. Paste with Ctrl+V.' },
+    { title: 'Full screen', content: 'Print Screen key. Paste into Paint or document.' },
+    { title: 'Auto-save', content: 'Windows + Print Screen. Saves to Pictures > Screenshots.' },
+  ] },
+  { slug: 'windows-connect-printer', title: 'Connect a Printer to Windows', excerpt: 'Set up your printer for Windows.', category: 'windows-guides', tags: ['windows', 'printer'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'USB', content: 'Plug printer USB into computer. Windows detects automatically.' },
+    { title: 'Wi-Fi', content: 'Settings > Bluetooth & Devices > Printers & Scanners > Add Device.' },
+    { title: 'Test', content: 'Select printer > Print Test Page.' },
+  ] },
+  { slug: 'windows-accessibility', title: 'Windows Accessibility Features', excerpt: 'Make your PC easier to see and use.', category: 'windows-guides', tags: ['windows', 'accessibility'], readTime: '6 min', thumbnailEmoji: '♿', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Bigger text', content: 'Settings > Accessibility > Text Size.' },
+    { title: 'Magnifier', content: 'Windows + Plus to zoom in. Windows + Minus to zoom out.' },
+    { title: 'High contrast', content: 'Settings > Accessibility > Contrast Themes.' },
+  ] },
+  { slug: 'windows-uninstall-programs', title: 'Uninstall Programs on Windows', excerpt: 'Remove programs to free up space.', category: 'windows-guides', tags: ['windows', 'uninstall'], readTime: '4 min', thumbnailEmoji: '🗑️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open', content: 'Settings > Apps > Installed Apps.' },
+    { title: 'Uninstall', content: 'Find app > three dots > Uninstall > confirm.' },
+  ] },
+  { slug: 'mac-finder-basics', title: 'How to Use Finder on Mac', excerpt: 'Navigate and organize files.', category: 'mac-guides', tags: ['mac', 'finder', 'files'], readTime: '5 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Open', content: 'Click the smiley face in the Dock.' },
+    { title: 'Sidebar', content: 'Desktop, Documents, Downloads, Applications, iCloud Drive.' },
+    { title: 'Spotlight', content: 'Command + Space to search for anything instantly.' },
+  ] },
+  { slug: 'mac-time-machine', title: 'Set Up Time Machine Backup', excerpt: 'Automatic backups for your Mac.', category: 'mac-guides', tags: ['mac', 'backup', 'time-machine'], readTime: '5 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Connect drive', content: 'Plug in external hard drive. Mac asks to use it for Time Machine.' },
+    { title: 'How it works', content: 'Backs up automatically every hour when drive is connected.' },
+    { title: 'Restore', content: 'Time Machine icon > Browse Backups > navigate back in time > Restore.' },
+  ] },
+  { slug: 'mac-install-apps', title: 'Install and Remove Mac Apps', excerpt: 'Get new apps and remove old ones.', category: 'mac-guides', tags: ['mac', 'apps', 'install'], readTime: '4 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'App Store', content: 'Open App Store > search > Get > Install.' },
+    { title: 'From website', content: 'Download .dmg > drag app to Applications.' },
+    { title: 'Uninstall', content: 'Finder > Applications > drag to Trash > empty Trash.' },
+  ] },
+  { slug: 'mac-trackpad-gestures', title: 'Mac Trackpad Gestures', excerpt: 'Multi-touch gestures for your trackpad.', category: 'mac-guides', tags: ['mac', 'trackpad', 'gestures'], readTime: '4 min', thumbnailEmoji: '👆', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Scroll', content: 'Two fingers up/down.' },
+    { title: 'Zoom', content: 'Pinch together (out) or spread apart (in).' },
+    { title: 'Mission Control', content: 'Three fingers swipe up to see all windows.' },
+  ] },
+  { slug: 'mac-safari-tips', title: 'Using Safari on Mac', excerpt: 'Browse the web with Safari.', category: 'mac-guides', tags: ['mac', 'safari', 'browser'], readTime: '5 min', thumbnailEmoji: '🧭', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Navigate', content: 'Click address bar. Type URL or search term. Enter.' },
+    { title: 'Tabs', content: 'Command+T new tab. Command+W close. Command+Shift+T reopen.' },
+    { title: 'Reader mode', content: 'Click "aA" > Show Reader for clean article view.' },
+  ] },
+
+  // ===== BATCH 12: App Guides (10 new) =====
+  { slug: 'netflix-getting-started', title: 'Getting Started with Netflix', excerpt: 'Set up Netflix and start watching.', category: 'app-guides', tags: ['netflix', 'streaming'], readTime: '5 min', thumbnailEmoji: '🎬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Sign up', content: 'netflix.com > choose plan (from $6.99/mo) > enter email and password.' },
+    { title: 'Browse', content: 'Search by name, actor, or genre. Create separate profiles for each person.' },
+    { title: 'Download', content: 'Tap download icon on shows for offline viewing.' },
+  ] },
+  { slug: 'google-photos-basics', title: 'Using Google Photos', excerpt: 'Keep photos safe and organized.', category: 'app-guides', tags: ['google-photos', 'cloud'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Backup', content: 'Profile > Settings > Backup > turn on. Photos auto-save to cloud.' },
+    { title: 'Search', content: 'Type "beach" or "birthday" — AI finds matching photos.' },
+    { title: 'Free space', content: 'Profile > Free Up Space deletes phone copies already backed up.' },
+  ] },
+  { slug: 'spotify-music', title: 'Listen to Music on Spotify', excerpt: 'Stream millions of songs free or premium.', category: 'app-guides', tags: ['spotify', 'music'], readTime: '5 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Sign up', content: 'Download Spotify. Create free account.' },
+    { title: 'Search', content: 'Search songs, artists, or genres. Tap to play.' },
+    { title: 'Discover', content: 'Spotify creates "Discover Weekly" personalized playlists.' },
+  ] },
+  { slug: 'amazon-shopping', title: 'Shopping on Amazon', excerpt: 'Find, compare, and order products.', category: 'app-guides', tags: ['amazon', 'shopping'], readTime: '5 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Search', content: 'Type what you need. Read 3-4 star "Verified Purchase" reviews.' },
+    { title: 'Order', content: 'Add to Cart > Proceed to Checkout > confirm address.' },
+    { title: 'Track', content: 'Your Orders shows status and tracking info.' },
+  ] },
+  { slug: 'venmo-send-money', title: 'Send Money with Venmo', excerpt: 'Split bills and pay friends easily.', category: 'app-guides', tags: ['venmo', 'payments'], readTime: '5 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Setup', content: 'Download Venmo. Link bank or debit card.' },
+    { title: 'Pay', content: 'Tap Pay > search person > enter amount > Pay.' },
+    { title: 'Privacy', content: 'Settings > Privacy > set to Private.' },
+  ] },
+  { slug: 'gmail-organize-inbox', title: 'Organize Your Gmail', excerpt: 'See what matters in your inbox.', category: 'app-guides', tags: ['gmail', 'email'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Search', content: 'Type "from:amazon" or keywords instead of scrolling.' },
+    { title: 'Star', content: 'Tap star icon on important emails for quick access.' },
+    { title: 'Unsubscribe', content: 'Open newsletter > click Unsubscribe at top.' },
+  ] },
+  { slug: 'google-translate-app', title: 'Using Google Translate', excerpt: 'Translate text, speech, and signs.', category: 'app-guides', tags: ['translate', 'language'], readTime: '5 min', thumbnailEmoji: '🌍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Text', content: 'Type or paste text. Select languages. Instant translation.' },
+    { title: 'Camera', content: 'Tap camera icon. Point at sign or menu. Real-time overlay.' },
+    { title: 'Offline', content: 'Download languages for use without internet.' },
+  ] },
+  { slug: 'doordash-food-delivery', title: 'Order Food with DoorDash', excerpt: 'Restaurant food delivered to your door.', category: 'app-guides', tags: ['doordash', 'delivery'], readTime: '5 min', thumbnailEmoji: '🍔', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Browse', content: 'See restaurants near you. Filter by cuisine, price, rating.' },
+    { title: 'Order', content: 'Choose items, customize, review cart, place order.' },
+    { title: 'Track', content: 'Watch your driver on the map in real time.' },
+  ] },
+  { slug: 'kindle-reading', title: 'Read Books on Kindle App', excerpt: 'Your phone as a digital bookshelf.', category: 'app-guides', tags: ['kindle', 'books'], readTime: '5 min', thumbnailEmoji: '📚', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Setup', content: 'Download free Kindle app. Sign in with Amazon account.' },
+    { title: 'Buy books', content: 'amazon.com > search Kindle books. Many classics are free.' },
+    { title: 'Customize', content: 'Change font size, brightness, night mode. Highlight text and add bookmarks.' },
+  ] },
+  { slug: 'find-my-friends-family', title: 'Share Location with Family', excerpt: 'Let trusted family see where you are.', category: 'app-guides', tags: ['location', 'family', 'safety'], readTime: '5 min', thumbnailEmoji: '📍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'iPhone', content: 'Find My > People > Share My Location.' },
+    { title: 'Android', content: 'Google Maps > profile > Location Sharing.' },
+    { title: 'Privacy', content: 'Only share with people you trust. Stop sharing anytime.' },
+  ] },
+
+  // ===== BATCH 13: Tips & Tricks (5 new) =====
+  { slug: 'iphone-hidden-features', title: 'Hidden iPhone Features', excerpt: 'Useful tricks most people don\'t know.', category: 'tips-tricks', tags: ['iphone', 'tips'], readTime: '6 min', thumbnailEmoji: '💡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Back Tap', content: 'Settings > Accessibility > Touch > Back Tap. Double-tap phone back for screenshot or flashlight.' },
+    { title: 'Shake to undo', content: 'Shake your iPhone to undo a mistake.' },
+    { title: 'Space bar trackpad', content: 'Hold space bar to turn keyboard into a trackpad for cursor control.' },
+  ] },
+  { slug: 'chrome-tips', title: 'Chrome Tips for Faster Browsing', excerpt: 'Browse smarter with shortcuts.', category: 'tips-tricks', tags: ['chrome', 'browser', 'tips'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Reopen tabs', content: 'Ctrl+Shift+T (Command+Shift+T on Mac) reopens closed tabs.' },
+    { title: 'Pin tabs', content: 'Right-click tab > Pin Tab. Stays visible and small.' },
+    { title: 'Group tabs', content: 'Right-click > Add to Group. Color-code by topic.' },
+  ] },
+  { slug: 'save-money-subscriptions', title: 'Find and Cancel Unused Subscriptions', excerpt: 'You may be paying for forgotten services.', category: 'tips-tricks', tags: ['subscriptions', 'money'], readTime: '5 min', thumbnailEmoji: '💰', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Bank statements', content: 'Check 3 months of statements for recurring charges.' },
+    { title: 'iPhone', content: 'Settings > [Name] > Subscriptions. Cancel unused ones.' },
+    { title: 'Android', content: 'Play Store > Profile > Payments > Subscriptions.' },
+  ] },
+  { slug: 'windows-keyboard-shortcuts', title: 'Windows Keyboard Shortcuts', excerpt: 'Speed up with key combinations.', category: 'tips-tricks', tags: ['windows', 'keyboard'], readTime: '5 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Basics', content: 'Ctrl+C copy, Ctrl+X cut, Ctrl+V paste, Ctrl+Z undo.' },
+    { title: 'Switch windows', content: 'Alt+Tab cycles through open windows.' },
+    { title: 'Lock screen', content: 'Windows+L locks instantly. Always do when stepping away.' },
+  ] },
+  { slug: 'mac-keyboard-shortcuts', title: 'Mac Keyboard Shortcuts', excerpt: 'Work faster with key combinations.', category: 'tips-tricks', tags: ['mac', 'keyboard'], readTime: '5 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { title: 'Basics', content: 'Command+C copy, Command+V paste, Command+Z undo.' },
+    { title: 'Spotlight', content: 'Command+Space searches apps, files, anything.' },
+    { title: 'Force Quit', content: 'Command+Option+Escape to close frozen apps.' },
+  ] },
 ];
