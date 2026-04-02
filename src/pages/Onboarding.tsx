@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { useAuth } from '@/contexts/AuthContext';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 /* ── Types ───────────────────────────────── */
 type DeviceOption = 'windows' | 'mac' | 'iphone' | 'android' | 'not-sure';
@@ -172,7 +173,7 @@ export default function Onboarding() {
                     <Link to={`/guides/${guide.slug}`}>
                       <Card className="rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer">
                         <CardContent className="p-5 flex items-center gap-4">
-                          <span className="text-3xl shrink-0">{guide.thumbnailEmoji}</span>
+                          <img src={getGuideThumbnailSmall(guide)} alt="" className="w-10 h-10 rounded-lg object-cover shrink-0" loading="lazy" />
                           <div className="flex-1 min-w-0">
                             <h3 className="font-semibold text-sm mb-1">{guide.title}</h3>
                             <p className="text-xs text-muted-foreground line-clamp-2">{guide.excerpt}</p>

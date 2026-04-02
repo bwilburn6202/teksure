@@ -11,6 +11,7 @@ import { TrendingUp, BookOpen, Trophy, Mail, CheckCircle2, Clock, Flame, BarChar
 import { Link } from 'react-router-dom';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { toast } from 'sonner';
 
 const GOALS = [5, 10, 20, 50, 100];
@@ -133,7 +134,7 @@ export default function ProgressReport() {
               <div className="space-y-2">
                 {recentGuides.map(g => g && (
                   <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-3 rounded-lg hover:bg-muted px-2 py-1.5 transition-colors group">
-                    <span className="text-xl">{g.thumbnailEmoji}</span>
+                    <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate group-hover:text-primary transition-colors">{g.title}</p>
                       <p className="text-xs text-muted-foreground">{g.readTime}</p>

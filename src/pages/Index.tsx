@@ -13,6 +13,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
+import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
 
 const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
@@ -344,8 +345,11 @@ const Index = () => {
           {featuredGuides.map((guide, i) => (
             <div key={guide.slug}>
               <Link to={`/guides/${guide.slug}`} className="group block h-full">
-                <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col">
-                  <div className="text-3xl mb-4">{guide.thumbnailEmoji}</div>
+                <div className="rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col overflow-hidden">
+                  <div className="h-36 overflow-hidden bg-muted">
+                    <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
                     <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
                     <span className="text-xs text-muted-foreground flex items-center gap-1">
@@ -356,6 +360,7 @@ const Index = () => {
                     {guide.title}
                   </h3>
                   <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+                  </div>
                 </div>
               </Link>
             </div>

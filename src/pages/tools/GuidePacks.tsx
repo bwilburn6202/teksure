@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Download, Printer, FileText, CheckCircle2, Lock, Sprout, Shield, Camera, Monitor, Laptop, Bot, type LucideIcon } from 'lucide-react';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 const packs: { id: string; name: string; icon: LucideIcon; color: string; desc: string; tags: string[]; guideCount: number; free: boolean; pages: string }[] = [
   {
@@ -85,7 +86,7 @@ function generatePrintContent(packId: string) {
   const guideHTML = matchedGuides.map(g => `
     <div class="guide-card">
       <div class="guide-header">
-        <span class="guide-emoji">${g.thumbnailEmoji}</span>
+        <img src="${getGuideThumbnailSmall(g)}" alt="" style="width:40px;height:40px;border-radius:6px;object-fit:cover;" />
         <div>
           <h3>${g.title}</h3>
           <span class="guide-meta">${g.readTime} · ${g.difficulty ?? 'Beginner'}</span>
@@ -115,7 +116,7 @@ function generatePrintContent(packId: string) {
   .cover .pack-badge { font-size: 1.5rem; width: 64px; height: 64px; border-radius: 50%; background: #1a5f3f; color: white; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; }
   .guide-card { margin-bottom: 30px; padding: 20px; border: 1px solid #e5e7eb; border-radius: 12px; page-break-inside: avoid; }
   .guide-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
-  .guide-emoji { font-size: 2rem; line-height: 1; }
+  .guide-emoji { line-height: 1; }
   h3 { margin: 0 0 4px; font-size: 1.1rem; color: #1a5f3f; }
   .guide-meta { font-size: 0.75rem; color: #4B5563; }
   .step { display: flex; gap: 12px; margin: 10px 0; }

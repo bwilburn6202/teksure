@@ -9,6 +9,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
+import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
 
 const SUGGESTED_SEARCHES = ['WiFi problems', 'forgot password', 'slow computer', 'how to print', 'email setup', 'video call', 'update Windows', 'back up my phone'];
 
@@ -119,7 +120,7 @@ const SearchResults = () => {
                         <Link to={`/guides/${guide.slug}`}>
                           <Card className="h-full rounded-2xl border border-border bg-card hover:shadow-lg transition-all hover:-translate-y-1 group">
                             <CardContent className="pt-6">
-                              <div className="text-3xl mb-3">{guide.thumbnailEmoji}</div>
+                              <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" />
                               <div className="flex items-center gap-2 mb-2">
                                 <Badge variant="secondary" className="text-xs rounded-full">{categoryLabels[guide.category]}</Badge>
                                 <span className="text-xs text-muted-foreground flex items-center gap-1">

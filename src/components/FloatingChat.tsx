@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { MessageCircle, X, Send, Bot, User, ChevronRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 /* ── Types ─────────────────────────────────────────────────── */
 interface ChatMessage {
   id: string;
   role: 'user' | 'bot';
   text: string;
-  relatedGuides?: { slug: string; title: string; thumbnailEmoji: string }[];
+  relatedGuides?: { slug: string; title: string; thumbnailEmoji: string; category: string; tags: string[] }[];
 }
 
 /* ── Mini knowledge-base (top 30 most-asked questions) ─────── */
@@ -124,6 +125,8 @@ export function FloatingChat() {
           slug: g.slug,
           title: g.title,
           thumbnailEmoji: g.thumbnailEmoji,
+          category: g.category,
+          tags: g.tags,
         })),
       };
       setMessages(prev => [...prev, botMsg]);
@@ -204,7 +207,7 @@ export function FloatingChat() {
                             className="flex items-center gap-2 bg-background border border-border rounded-lg px-2.5 py-1.5 text-xs hover:border-secondary transition-colors group"
                             aria-label={`Read guide: ${g.title}`}
                           >
-                            <span aria-hidden="true">{g.thumbnailEmoji}</span>
+                            <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                             <span className="flex-1 font-medium">{g.title}</span>
                             <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-secondary transition-colors" aria-hidden="true" />
                           </Link>

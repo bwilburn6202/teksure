@@ -15,6 +15,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { evaluateBadges, type Badge as TekBadge } from '@/lib/badges';
 import { getProgressCount, getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 const roleColors: Record<string, string> = {
   customer: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
@@ -297,7 +298,7 @@ export default function Profile() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className={`text-sm font-medium leading-tight truncate ${done ? 'line-through text-muted-foreground' : ''}`}>
-                        {guide.thumbnailEmoji} {guide.title}
+                        <img src={getGuideThumbnailSmall(guide)} alt="" className="w-4 h-4 rounded object-cover inline-block mr-1 align-text-bottom" loading="lazy" />{guide.title}
                       </p>
                       <p className="text-xs text-muted-foreground truncate">{guide.excerpt}</p>
                     </div>

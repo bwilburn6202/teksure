@@ -20,6 +20,7 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
 import { getCompletedGuides } from '@/lib/progress';
 import { guides } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { supabase } from '@/integrations/supabase/client';
 
 interface Booking {
@@ -259,7 +260,7 @@ const Dashboard = () => {
               <div className="space-y-2">
                 {recommended.length > 0 ? recommended.map(g => (
                   <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-3 p-2.5 rounded-xl bg-muted/50 hover:bg-muted transition-colors group">
-                    <span className="text-xl">{g.thumbnailEmoji}</span>
+                    <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate">{g.title}</p>
                       <p className="text-xs text-muted-foreground">{g.readTime} read · {g.difficulty}</p>

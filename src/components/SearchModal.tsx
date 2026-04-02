@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search, X } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { guides, categoryLabels } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 // Import glossary terms for search
 const glossaryTerms = [
@@ -118,7 +119,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                         className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-muted flex items-center gap-3 transition-colors"
                         aria-label={`Guide: ${g.title} — ${categoryLabels[g.category]}, ${g.readTime}`}
                       >
-                        <span className="text-xl shrink-0" aria-hidden="true">{g.thumbnailEmoji}</span>
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-6 h-6 rounded object-cover shrink-0" loading="lazy" />
                         <div className="min-w-0">
                           <p className="text-sm font-medium truncate">{g.title}</p>
                           <p className="text-xs text-muted-foreground">{categoryLabels[g.category]} · {g.readTime}</p>

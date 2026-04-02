@@ -19,6 +19,7 @@ import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { useAuth } from '@/contexts/AuthContext';
 
 /* ── Helpers ────────────────────────────────────── */
@@ -386,7 +387,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <div className="text-5xl mb-4">{guide.thumbnailEmoji}</div>
+            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -622,7 +623,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <div className="text-2xl mb-2">{g.thumbnailEmoji}</div>
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>

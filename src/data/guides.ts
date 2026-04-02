@@ -45,6 +45,8 @@ export interface Guide {
   readTime: string;
   videoUrl?: string;
   thumbnailEmoji: string;
+  /** URL to a relevant thumbnail image — used instead of emoji when available */
+  thumbnailUrl?: string;
   publishedAt: string;
   difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
   steps?: GuideStep[];

@@ -9,6 +9,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { StarRating } from '@/components/StarRating';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
@@ -27,36 +28,48 @@ const categoryIcons: Record<string, typeof Monitor> = {
 
 const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
   <Link to={`/guides/${guide.slug}`} className="group block h-full">
-    <div className={`p-5 rounded-2xl border h-full transition-all hover:shadow-md ${
+    <div className={`rounded-2xl border h-full transition-all hover:shadow-md overflow-hidden ${
       completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
     }`}>
-      <div className="flex items-start justify-between mb-3">
-        <span className="text-3xl">{guide.thumbnailEmoji}</span>
-        {completed && <CheckCircle2 className="h-4 w-4 text-green-500" />}
-      </div>
-      <div className="flex items-center gap-2 mb-2.5 flex-wrap">
-        <Badge variant="secondary" className="text-xs font-medium">
-          {categoryLabels[guide.category]}
-        </Badge>
+      <div className="relative h-36 overflow-hidden bg-muted">
+        <img
+          src={getGuideThumbnailUrl(guide)}
+          alt=""
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          loading="lazy"
+          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+        />
+        {completed && (
+          <div className="absolute top-2 right-2 bg-green-500 text-white rounded-full p-1">
+            <CheckCircle2 className="h-3.5 w-3.5" />
+          </div>
+        )}
         {guide.difficulty && (
-          <span className={`text-xs font-medium ${
-            guide.difficulty === 'Beginner' ? 'text-green-600' :
-            guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
+          <span className={`absolute top-2 left-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+            guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
+            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
+            'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
           }`}>
-            {guide.difficulty === 'Beginner' ? '● ' : guide.difficulty === 'Intermediate' ? '●● ' : '●●● '}
             {guide.difficulty}
           </span>
         )}
-        <span className="flex items-center gap-1 text-xs text-muted-foreground">
-          <Clock className="h-2.5 w-2.5" /> {guide.readTime}
-        </span>
       </div>
-      <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
-        {guide.title}
-      </h3>
-      <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
-      <div className="mt-2.5">
-        <StarRating guideSlug={guide.slug} readOnly size="sm" />
+      <div className="p-4">
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <Badge variant="secondary" className="text-xs font-medium">
+            {categoryLabels[guide.category]}
+          </Badge>
+          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Clock className="h-2.5 w-2.5" /> {guide.readTime}
+          </span>
+        </div>
+        <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
+          {guide.title}
+        </h3>
+        <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+        <div className="mt-2.5">
+          <StarRating guideSlug={guide.slug} readOnly size="sm" />
+        </div>
       </div>
     </div>
   </Link>
@@ -67,7 +80,13 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
     <div className={`flex items-center gap-3 px-3 py-2.5 border-b border-border hover:bg-accent/50 transition-colors ${
       completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
     }`}>
-      <span className="text-lg shrink-0 w-8 text-center">{guide.thumbnailEmoji}</span>
+      <img
+        src={getGuideThumbnailSmall(guide)}
+        alt=""
+        className="w-8 h-8 rounded-md object-cover shrink-0"
+        loading="lazy"
+        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+      />
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
       </div>

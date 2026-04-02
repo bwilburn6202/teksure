@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { guides, type Guide } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 /* ── Types ─────────────────────────────────────────────────── */
 
@@ -668,7 +669,7 @@ export function TekBot() {
                       className="flex flex-col rounded-xl px-3 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all group"
                     >
                       <div className="flex items-center gap-2 mb-1">
-                        <span style={{ fontSize: 18 }} aria-hidden="true">{g.thumbnailEmoji}</span>
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                         <ExternalLink className="h-3 w-3 text-white/65 group-hover:text-white/90 transition-colors ml-auto shrink-0" aria-hidden="true" />
                       </div>
                       <span className="text-white/80 font-medium leading-tight group-hover:text-white transition-colors line-clamp-2" style={{ fontSize: 12 }}>
@@ -826,7 +827,7 @@ export function TekBot() {
                             aria-label={`Read guide: ${g.title}`}
                             className="flex items-center gap-2 rounded-lg px-3 py-2 bg-white border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
                           >
-                            <span aria-hidden="true">{g.thumbnailEmoji}</span>
+                            <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                             <span className="flex-1 font-medium leading-tight group-hover:text-primary transition-colors line-clamp-1">
                               {g.title}
                             </span>
