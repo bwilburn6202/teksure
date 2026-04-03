@@ -14,6 +14,62 @@ export type Database = {
   }
   public: {
     Tables: {
+      guide_ratings: {
+        Row: {
+          anon_key: string | null
+          created_at: string
+          guide_slug: string
+          id: string
+          stars: number
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          anon_key?: string | null
+          created_at?: string
+          guide_slug: string
+          id?: string
+          stars: number
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          anon_key?: string | null
+          created_at?: string
+          guide_slug?: string
+          id?: string
+          stars?: number
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      guide_videos: {
+        Row: {
+          guide_slug: string
+          sort_order: number
+          video_id: string
+        }
+        Insert: {
+          guide_slug: string
+          sort_order?: number
+          video_id: string
+        }
+        Update: {
+          guide_slug?: string
+          sort_order?: number
+          video_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "guide_videos_video_id_fkey"
+            columns: ["video_id"]
+            isOneToOne: false
+            referencedRelation: "video_tutorials"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       help_requests: {
         Row: {
           created_at: string
@@ -74,15 +130,67 @@ export type Database = {
         }
         Relationships: []
       }
+      video_tutorials: {
+        Row: {
+          created_at: string
+          description: string | null
+          duration_seconds: number | null
+          guide_slug: string
+          id: string
+          is_published: boolean
+          os_type: Database["public"]["Enums"]["os_type"]
+          os_version: string | null
+          thumbnail_url: string | null
+          title: string
+          updated_at: string
+          video_url: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          duration_seconds?: number | null
+          guide_slug: string
+          id?: string
+          is_published?: boolean
+          os_type: Database["public"]["Enums"]["os_type"]
+          os_version?: string | null
+          thumbnail_url?: string | null
+          title: string
+          updated_at?: string
+          video_url: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          duration_seconds?: number | null
+          guide_slug?: string
+          id?: string
+          is_published?: boolean
+          os_type?: Database["public"]["Enums"]["os_type"]
+          os_version?: string | null
+          thumbnail_url?: string | null
+          title?: string
+          updated_at?: string
+          video_url?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
-      [_ in never]: never
+      guide_rating_stats: {
+        Row: {
+          avg_stars: number | null
+          guide_slug: string | null
+          rating_count: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      os_type: "windows" | "macos" | "ios" | "android"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -209,6 +317,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      os_type: ["windows", "macos", "ios", "android"],
+    },
   },
 } as const
