@@ -66,7 +66,7 @@ function NewsletterSignup() {
   if (status === 'success') {
     return (
       <div className="flex flex-col items-center gap-2 py-2">
-        <CheckCircle className="h-5 w-5 text-green-600" />
+        <CheckCircle className="h-5 w-5 text-teksure-success" />
         <p className="text-sm font-medium">You're in! Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.</p>
       </div>
     );
@@ -264,7 +264,7 @@ const Index = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {quickFixes.map((fix, i) => (
             <div key={fix.slug}>
-              <Link to={`/guides/${fix.slug}`} className="group block">
+              <Link to={`/guides/${fix.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 <div className="p-5 rounded-2xl border border-border bg-card hover:bg-accent/50 transition-all hover:shadow-sm">
                   <div className="flex items-start gap-3.5">
                     <div className="h-9 w-9 rounded-xl bg-primary/[0.07] flex items-center justify-center shrink-0">
@@ -284,7 +284,7 @@ const Index = () => {
       </section>
 
       {/* ── Browse by Category ──────────────────────────── */}
-      <section className="bg-muted/40 py-12 md:py-16">
+      <section className="bg-muted/60 border-y border-border/50 py-12 md:py-16">
         <div className="container">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -303,7 +303,7 @@ const Index = () => {
 
               return (
                 <div key={cat}>
-                  <Link to={`/guides?category=${cat}`} className="group block">
+                  <Link to={`/guides?category=${cat}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                     <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all">
                       <div className="flex items-center justify-between mb-4">
                         <div className="h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center">
@@ -344,10 +344,10 @@ const Index = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredGuides.map((guide, i) => (
             <div key={guide.slug}>
-              <Link to={`/guides/${guide.slug}`} className="group block h-full">
+              <Link to={`/guides/${guide.slug}`} className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 <div className="rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col overflow-hidden">
                   <div className="h-36 overflow-hidden bg-muted">
-                    <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                    <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
@@ -369,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* ── How It Works ────────────────────────────────── */}
-      <section className="bg-muted/40 py-12 md:py-16">
+      <section className="bg-muted/60 border-y border-border/50 py-12 md:py-16">
         <div className="container">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">How TekSure Works</h2>

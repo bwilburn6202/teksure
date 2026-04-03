@@ -219,7 +219,7 @@ export function Navbar() {
                 <Menu className="h-5 w-5" aria-hidden="true" />
               </Button>
             </SheetTrigger>
-            <SheetContent className="w-72 overflow-y-auto">
+            <SheetContent className="w-[85vw] max-w-72 overflow-y-auto">
               <nav aria-label="Mobile navigation" className="flex flex-col gap-1 mt-8">
                 {user ? (
                   <>

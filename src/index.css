@@ -211,8 +211,8 @@ html.senior-mode .senior-simplify {
 }
 
 html.senior-mode * {
-  transition-duration: 0.05ms !important;
-  animation-duration: 0.05ms !important;
+  transition-duration: 100ms !important;
+  animation-duration: 100ms !important;
   animation-iteration-count: 1 !important;
 }
 

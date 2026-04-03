@@ -438,7 +438,7 @@ const DEVICE_OPTIONS: { value: DeviceType; label: string; icon: React.ReactNode 
   { value: 'windows', label: 'Windows PC', icon: <Monitor className="h-4 w-4" /> },
   { value: 'mac', label: 'Mac', icon: <Apple className="h-4 w-4" /> },
   { value: 'iphone', label: 'iPhone', icon: <Smartphone className="h-4 w-4" /> },
-  { value: 'android', label: 'Android', icon: <Smartphone className="h-4 w-4 text-green-500" /> },
+  { value: 'android', label: 'Android', icon: <Smartphone className="h-4 w-4 text-teksure-success" /> },
 ];
 
 function deviceLabel(d: DeviceType) {
