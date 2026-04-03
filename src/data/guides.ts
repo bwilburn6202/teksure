@@ -9379,19 +9379,19 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'VoiceOver', content: 'Press Command + F5 to toggle VoiceOver. It reads screen content aloud and supports full keyboard navigation.' },
     { title: 'Dictation', content: 'Press Fn key twice to start dictating. Speak naturally, say punctuation out loud.' },
   ] },
-  { slug: 'keyboard-shortcuts-everyone', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'keyboard-shortcuts-everyone-v2', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
     { title: 'Copy, Cut, Paste', content: 'Ctrl+C / Cmd+C copies. Ctrl+X / Cmd+X cuts. Ctrl+V / Cmd+V pastes. Works everywhere.' },
     { title: 'Undo and Redo', content: 'Ctrl+Z / Cmd+Z undoes your last action. Ctrl+Y / Cmd+Shift+Z redoes it.' },
     { title: 'Select All and Find', content: 'Ctrl+A / Cmd+A selects everything. Ctrl+F / Cmd+F opens search on any page.' },
     { title: 'Save, Print, Tabs', content: 'Ctrl+S saves. Ctrl+P prints. Ctrl+W closes a tab. Ctrl+T opens a new tab. Ctrl+Tab switches between tabs.' },
   ] },
-  { slug: 'dark-mode-guide', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'dark-mode-guide-v2', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Settings > Display & Brightness > tap Dark. Set to Automatic for sunset switching.' },
     { title: 'Android', content: 'Settings > Display > Dark theme toggle on.' },
     { title: 'Windows', content: 'Settings > Personalization > Colors > choose Dark.' },
     { title: 'Mac', content: 'System Settings > Appearance > choose Dark or Auto.' },
   ] },
-  { slug: 'speed-up-slow-computer', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+  { slug: 'speed-up-slow-computer-v2', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
     { title: 'Restart your computer', content: 'A proper restart clears temporary files and resets stuck programs. Use Start > Power > Restart.' },
     { title: 'Close unused programs', content: 'Every open program uses memory. Close what you are not using. Press Ctrl+Shift+Esc for Task Manager.' },
     { title: 'Disable startup programs', content: 'Many programs start automatically. Windows: Ctrl+Shift+Esc > Startup Apps tab > disable what you do not need. Mac: System Settings > General > Login Items.' },
@@ -9488,7 +9488,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Verify', content: 'Enter the code sent to your email or phone.' },
     { title: 'Add a photo', content: 'Upload a clear photo so friends and family can find you.' },
   ] },
-  { slug: 'facebook-privacy-settings', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'facebook-privacy-settings-v2', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Open Privacy', content: 'Profile picture > Settings & Privacy > Settings > Privacy.' },
     { title: 'Set post visibility', content: 'Set "Who can see your future posts?" to Friends (not Public).' },
     { title: 'Limit past posts', content: 'Tap "Limit Past Posts" to change all old public posts to Friends Only.' },
@@ -9559,7 +9559,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'iPhone (AirPrint)', content: 'Share > Print > select printer.' },
     { title: 'Android', content: 'Menu > Print > select printer.' },
   ] },
-  { slug: 'how-to-use-qr-codes', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-qr-codes-v2', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Open Camera, point at QR code, tap the notification.' },
     { title: 'Android', content: 'Open Camera, point at QR code. Or use Google Lens.' },
     { title: 'Stay safe', content: 'Only scan QR codes from trusted sources.' },
@@ -9579,7 +9579,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Verify', content: 'Bank verifies via text, email, or call.' },
     { title: 'Pay in stores', content: 'Double-click side button > Face ID > hold near terminal.' },
   ] },
-  { slug: 'how-to-use-uber-lyft', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-uber-lyft-v2', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Download', content: 'Get Uber or Lyft. Create account with phone and payment method.' },
     { title: 'Request', content: 'Enter destination. Choose ride type. Tap Request.' },
     { title: 'Safety', content: 'Check driver photo, car, and plate. Share trip status with family.' },
@@ -9738,7 +9738,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
 
   // ===== BATCH 10: Essential Skills (8 new) =====
-  { slug: 'understanding-cloud-storage', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'understanding-cloud-storage-v2', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is it', content: 'Secure servers on the internet. Your files are stored safely online and accessible anywhere.' },
     { title: 'Services', content: 'iCloud (5 GB free), Google Drive (15 GB free), OneDrive (5 GB free).' },
     { title: 'Is it safe', content: 'Major services use strong encryption. Safer than a single device that can be lost or damaged.' },
@@ -9757,7 +9757,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Android', content: 'Settings > System > Backup > Turn on Google Drive backup.' },
     { title: 'Computer', content: 'Windows: File History or OneDrive. Mac: Time Machine with external drive.' },
   ] },
-  { slug: 'online-shopping-safety', title: 'How to Shop Online Safely', excerpt: 'Avoid scams when buying online.', category: 'essential-skills', tags: ['shopping', 'safety', 'security'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'online-shopping-safety-v2', title: 'How to Shop Online Safely', excerpt: 'Avoid scams when buying online.', category: 'essential-skills', tags: ['shopping', 'safety', 'security'], readTime: '6 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Trusted sites', content: 'Stick to Amazon, Walmart, Target, Best Buy. Be cautious of unknown sites.' },
     { title: 'Check HTTPS', content: 'Look for the lock icon before entering payment info.' },
     { title: 'Use credit cards', content: 'Better fraud protection than debit cards for online purchases.' },
@@ -9902,7 +9902,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Switch windows', content: 'Alt+Tab cycles through open windows.' },
     { title: 'Lock screen', content: 'Windows+L locks instantly. Always do when stepping away.' },
   ] },
-  { slug: 'mac-keyboard-shortcuts', title: 'Mac Keyboard Shortcuts', excerpt: 'Work faster with key combinations.', category: 'tips-tricks', tags: ['mac', 'keyboard'], readTime: '5 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-keyboard-shortcuts-v2', title: 'Mac Keyboard Shortcuts', excerpt: 'Work faster with key combinations.', category: 'tips-tricks', tags: ['mac', 'keyboard'], readTime: '5 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Basics', content: 'Command+C copy, Command+V paste, Command+Z undo.' },
     { title: 'Spotlight', content: 'Command+Space searches apps, files, anything.' },
     { title: 'Force Quit', content: 'Command+Option+Escape to close frozen apps.' },
@@ -9974,7 +9974,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Manage startup apps', content: 'Click the Startup Apps tab. Disable programs you don\'t need starting with your computer. This speeds up boot time significantly.' },
     { title: 'Monitor performance', content: 'Click the Performance tab for real-time graphs of CPU, memory, disk, and network usage. Useful for diagnosing whether you need more RAM or a faster drive.' },
   ] },
-  { slug: 'home-network-security', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from intruders and keep your family safe online.', category: 'safety-guides', tags: ['wifi', 'network', 'security', 'router'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'home-network-security-v2', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from intruders and keep your family safe online.', category: 'safety-guides', tags: ['wifi', 'network', 'security', 'router'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Change your router password', content: 'Your router has a default admin password (often "admin" or "password"). Log into your router (usually 192.168.1.1 or 192.168.0.1 in your browser) and change the admin password to something strong.' },
     { title: 'Set a strong Wi-Fi password', content: 'Use WPA3 or WPA2 encryption (not WEP — that is outdated and insecure). Create a Wi-Fi password that is at least 12 characters with mixed letters, numbers, and symbols.' },
     { title: 'Change the network name', content: 'Rename your Wi-Fi network to something that does not identify you personally. Avoid names like "SmithFamily" or "Apt302." Something generic like "HomeNet2024" is better.' },
@@ -10332,7 +10332,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Create routines', content: 'Set up automations: "Good morning" turns on lights, reads the weather and news. "Good night" turns off all lights and locks the door. Save time with daily routines.' },
     { title: 'Privacy considerations', content: 'Review what data your devices collect. Mute microphones when not in use. Place cameras only where appropriate. Change default passwords on all devices.' },
   ] },
-  { slug: 'digital-estate-planning', title: 'Digital Estate Planning: Protect Your Online Accounts', excerpt: 'Make sure your family can access important digital accounts and files if something happens to you.', category: 'safety-guides', tags: ['estate-planning', 'digital', 'security', 'family', 'preparation'], readTime: '8 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'digital-estate-planning-v2', title: 'Digital Estate Planning: Protect Your Online Accounts', excerpt: 'Make sure your family can access important digital accounts and files if something happens to you.', category: 'safety-guides', tags: ['estate-planning', 'digital', 'security', 'family', 'preparation'], readTime: '8 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Why digital estate planning matters', content: 'When someone passes away, family members often can\'t access their email, banking, photos, or social media. Without proper planning, precious memories and important accounts can be permanently lost.' },
     { title: 'Create an account inventory', content: 'List all your important accounts: email, banking, investments, social media, subscriptions, utilities. Include the website/app name and your username. Store this securely.' },
     { title: 'Use a password manager', content: 'A password manager (1Password, Bitwarden, or LastPass) stores all your passwords in one encrypted vault. Share the master password with your trusted person.' },
@@ -10341,7 +10341,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Important files to organize', content: 'Create a folder (physical or digital) with: insurance policies, tax records, investment accounts, property deeds, medical directives, and contact info for your lawyer and financial advisor.' },
     { title: 'Review annually', content: 'Update your account list when you create new accounts or change passwords. Review legacy contact settings yearly. Make sure your designated person knows where to find your information.' },
   ] },
-  { slug: 'telehealth-guide', title: 'How to Use Telehealth for Doctor Visits', excerpt: 'See your doctor from home using video calls on your phone, tablet, or computer.', category: 'health-tech', tags: ['telehealth', 'doctor', 'health', 'video-call', 'medicare'], readTime: '7 min', thumbnailEmoji: '🩺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'telehealth-guide-v2', title: 'How to Use Telehealth for Doctor Visits', excerpt: 'See your doctor from home using video calls on your phone, tablet, or computer.', category: 'health-tech', tags: ['telehealth', 'doctor', 'health', 'video-call', 'medicare'], readTime: '7 min', thumbnailEmoji: '🩺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is telehealth?', content: 'Telehealth lets you visit your doctor through a video call on your phone, tablet, or computer. It\'s real medical care — the doctor can diagnose conditions, prescribe medications, and order tests.' },
     { title: 'When to use telehealth', content: 'Good for: cold/flu symptoms, medication refills, follow-up visits, mental health, rashes, minor injuries, chronic condition check-ins. Not ideal for: emergencies, chest pain, serious injuries, procedures.' },
     { title: 'Set up your account', content: 'Ask your doctor if they offer telehealth. They\'ll direct you to their platform (MyChart, Doxy.me, Zoom for Healthcare, etc.). Create an account and fill out any forms before your appointment.' },
@@ -10368,7 +10368,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'What a VPN can\'t do', content: 'A VPN doesn\'t make you anonymous. It doesn\'t protect against viruses. It doesn\'t prevent you from clicking phishing links. It\'s one layer of protection, not a complete security solution.' },
     { title: 'Speed considerations', content: 'VPNs can slow your internet slightly because your data travels through an extra server. Good VPN services minimize this. If streaming is slow with VPN on, try a different server location.' },
   ] },
-  { slug: 'password-manager-setup', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords. A password manager creates and remembers strong passwords for every account.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager', 'bitwarden', '1password'], readTime: '7 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'password-manager-setup-v2', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords. A password manager creates and remembers strong passwords for every account.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager', 'bitwarden', '1password'], readTime: '7 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Why you need one', content: 'The average person has 100+ online accounts. Reusing passwords means one breach exposes them all. A password manager creates unique, strong passwords for every site and remembers them for you.' },
     { title: 'Choose a password manager', content: 'Free options: Bitwarden (best free), Apple iCloud Keychain (Apple devices), Google Password Manager (Chrome). Paid: 1Password ($2.99/month) and Dashlane ($4.99/month) with extra features.' },
     { title: 'Create your master password', content: 'This is the ONE password you\'ll memorize. Make it long and memorable: a phrase like "My-dog-Max-loves-pizza-42!" is strong and easy to remember. Write it down and store it somewhere safe.' },
@@ -10377,7 +10377,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Generate strong passwords', content: 'When creating new accounts, click the password manager icon to generate a random, strong password. It saves it automatically. You never need to remember it.' },
     { title: 'Use it on your phone', content: 'Download the password manager app on your phone. Enable autofill: iPhone (Settings > Passwords > AutoFill), Android (Settings > Autofill). Passwords sync across all your devices.' },
   ] },
-  { slug: 'windows-keyboard-shortcuts', title: 'Essential Windows Keyboard Shortcuts', excerpt: 'Save time with these keyboard shortcuts that every Windows user should know.', category: 'windows-guides', tags: ['windows', 'keyboard', 'shortcuts', 'productivity', 'tips'], readTime: '6 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'windows-keyboard-shortcuts-v2', title: 'Essential Windows Keyboard Shortcuts', excerpt: 'Save time with these keyboard shortcuts that every Windows user should know.', category: 'windows-guides', tags: ['windows', 'keyboard', 'shortcuts', 'productivity', 'tips'], readTime: '6 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Copy, Cut, and Paste', content: 'Ctrl+C copies selected text or files. Ctrl+X cuts (moves) them. Ctrl+V pastes. These work everywhere — in documents, emails, file explorer, and web browsers.' },
     { title: 'Undo and Redo', content: 'Ctrl+Z undoes your last action (a lifesaver for mistakes). Ctrl+Y redoes it. You can press Ctrl+Z multiple times to undo several actions in a row.' },
     { title: 'Select All', content: 'Ctrl+A selects all text in a document or all files in a folder. Great for quickly copying an entire page or selecting all files.' },
@@ -10406,7 +10406,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Collaborate in real time', content: 'Multiple people can edit the same document simultaneously. You see their cursors and changes in real time. Use comments (Ctrl+Alt+M) to discuss without changing the text.' },
     { title: 'Download and print', content: 'File > Download to save as Word (.docx), PDF, or plain text. File > Print (Ctrl+P) to print. Your documents are always accessible from any device at docs.google.com.' },
   ] },
-  { slug: 'zoom-complete-guide', title: 'How to Use Zoom for Video Calls', excerpt: 'Set up Zoom and learn to join meetings, share your screen, and look your best on camera.', category: 'app-guides', tags: ['zoom', 'video-calls', 'meetings', 'communication'], readTime: '8 min', thumbnailEmoji: '📹', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'zoom-complete-guide-v2', title: 'How to Use Zoom for Video Calls', excerpt: 'Set up Zoom and learn to join meetings, share your screen, and look your best on camera.', category: 'app-guides', tags: ['zoom', 'video-calls', 'meetings', 'communication'], readTime: '8 min', thumbnailEmoji: '📹', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Download Zoom', content: 'Visit zoom.us and click "Download" at the bottom of the page. Install the Zoom app on your computer. On phones/tablets, search "Zoom" in your app store. Create a free account.' },
     { title: 'Join a meeting', content: 'Click the meeting link someone sent you (in email or text). Or open Zoom and click "Join" — enter the Meeting ID and passcode. Your camera and microphone turn on automatically.' },
     { title: 'Camera and microphone basics', content: 'Bottom-left icons control your microphone (mute/unmute) and camera (on/off). Mute yourself when not speaking to reduce background noise. The space bar is a quick mute toggle.' },
@@ -10416,7 +10416,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Look good on camera', content: 'Face a window for natural light (don\'t sit with a window behind you). Position the camera at eye level. Use a plain background or Zoom\'s virtual backgrounds (Settings > Virtual Background).' },
     { title: 'Host your own meeting', content: 'Click "New Meeting" to start instantly, or "Schedule" to plan ahead. Copy the invitation link and send it to participants. Free accounts allow 40-minute group meetings.' },
   ] },
-  { slug: 'facebook-privacy-settings', title: 'How to Lock Down Your Facebook Privacy Settings', excerpt: 'Take control of who can see your posts, photos, and personal information on Facebook.', category: 'social-media', tags: ['facebook', 'privacy', 'social-media', 'security', 'settings'], readTime: '8 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'facebook-privacy-settings-v3', title: 'How to Lock Down Your Facebook Privacy Settings', excerpt: 'Take control of who can see your posts, photos, and personal information on Facebook.', category: 'social-media', tags: ['facebook', 'privacy', 'social-media', 'security', 'settings'], readTime: '8 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Access Privacy Settings', content: 'Tap the menu icon (three lines) > Settings & Privacy > Settings > Privacy. On desktop: click your profile picture > Settings & Privacy > Settings > Privacy.' },
     { title: 'Control who sees your posts', content: 'Under "Your Activity," set "Who can see your future posts?" to "Friends" (not "Public"). This means only people you\'ve accepted as friends can see what you share.' },
     { title: 'Limit past posts', content: 'Click "Limit Past Posts" to change all your old public posts to Friends-only in one step. This is important if you\'ve been posting publicly for years.' },
@@ -10881,7 +10881,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'How many devices is too many?', content: 'A typical router handles 20-30 devices. Count all connected devices: phones, tablets, computers, smart TVs, smart home devices, thermostats. If you have 30+, consider a newer Wi-Fi 6 router.' },
     { title: 'Check what\'s connected', content: 'Log into your router (usually 192.168.1.1) or use the Fing app (free) to see all devices on your network. Remove any you don\'t recognize and change your password if needed.' },
   ] },
-  { slug: 'ai-chatbot-comparison', title: 'AI Chatbots Compared: ChatGPT vs Claude vs Gemini', excerpt: 'Understand the differences between the major AI assistants and which one is best for your needs.', category: 'ai-guides', tags: ['ai', 'chatgpt', 'claude', 'gemini', 'comparison'], readTime: '8 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'ai-chatbot-comparison-v2', title: 'AI Chatbots Compared: ChatGPT vs Claude vs Gemini', excerpt: 'Understand the differences between the major AI assistants and which one is best for your needs.', category: 'ai-guides', tags: ['ai', 'chatgpt', 'claude', 'gemini', 'comparison'], readTime: '8 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What are AI chatbots?', content: 'AI chatbots (like ChatGPT, Claude, and Gemini) are computer programs that understand and respond to natural language. Ask them questions, get help writing, summarize documents, or learn about any topic.' },
     { title: 'ChatGPT by OpenAI', content: 'The most well-known AI chatbot. Free tier available (GPT-4o mini). Plus plan ($20/month) gives access to GPT-4o and o1. Good at coding, creative writing, and general knowledge. Visit chat.openai.com.' },
     { title: 'Claude by Anthropic', content: 'Known for thoughtful, detailed responses and strong safety design. Free tier available. Pro plan ($20/month). Excellent for analysis, writing, and nuanced discussions. Visit claude.ai.' },
@@ -10934,7 +10934,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
 
   // ── Batch 29: Advanced Windows & Mac ────────────────────────────────────────
-  { slug: 'windows-task-manager-guide', title: 'How to Use Windows Task Manager', excerpt: 'Diagnose performance problems, force-close frozen apps, and understand what\'s using your resources.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'windows-task-manager-guide-v2', title: 'How to Use Windows Task Manager', excerpt: 'Diagnose performance problems, force-close frozen apps, and understand what\'s using your resources.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Esc (quickest method). Or right-click the taskbar and select Task Manager. Or press Ctrl+Alt+Delete and choose Task Manager.' },
     { title: 'Force-close a frozen program', content: 'In the Processes tab, find the frozen program (it may say "Not Responding"). Click it, then click End Task. This immediately closes the program. You may lose unsaved work in that program.' },
     { title: 'See what\'s using your CPU', content: 'The Processes tab shows CPU, Memory, Disk, and Network usage for each program. Click the CPU column header to sort by highest usage. If something is using 90%+ CPU constantly, it might be a problem.' },
@@ -11069,7 +11069,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Try it — click through to the source', content: 'Every pin links to a website with full instructions, recipes, or products. Tap the pin, then tap the link to visit the original website for complete details.' },
     { title: 'Share with others', content: 'Share individual pins or entire boards with family and friends via text, email, or other apps. Create collaborative boards that multiple people can pin to — great for wedding planning or shared projects.' },
   ] },
-  { slug: 'nextdoor-guide', title: 'How to Use Nextdoor for Your Neighborhood', excerpt: 'Connect with neighbors, find local recommendations, and stay informed about your community.', category: 'social-media', tags: ['nextdoor', 'social-media', 'neighborhood', 'local', 'community'], readTime: '6 min', thumbnailEmoji: '🏘️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'nextdoor-guide-v2', title: 'How to Use Nextdoor for Your Neighborhood', excerpt: 'Connect with neighbors, find local recommendations, and stay informed about your community.', category: 'social-media', tags: ['nextdoor', 'social-media', 'neighborhood', 'local', 'community'], readTime: '6 min', thumbnailEmoji: '🏘️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is Nextdoor?', content: 'Nextdoor is a private social network for your neighborhood. Only verified residents can join. It\'s where neighbors share local news, recommendations, safety alerts, and community events.' },
     { title: 'Sign up and verify', content: 'Download the Nextdoor app or visit nextdoor.com. Sign up with your real name and address. Verify your address through a postcard, phone number, or credit card. This keeps the network trustworthy.' },
     { title: 'Browse your feed', content: 'Your feed shows posts from nearby neighbors. Categories include: general discussion, safety, lost & found, recommendations, free items, and events.' },
@@ -11182,7 +11182,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Move apps to SD card', content: 'If your phone has an SD card slot: Settings > Apps > select an app > Storage > Change > SD Card. Not all apps support this, but it helps for games and media-heavy apps.' },
     { title: 'Clear messaging attachments', content: 'Old photos and videos in messaging apps (WhatsApp, Facebook Messenger) take up significant space. In each app, go to Storage settings to review and delete old media files.' },
   ] },
-  { slug: 'email-encryption-basics', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+  { slug: 'email-encryption-basics-v2', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'Why encrypt email?', content: 'Regular email is like a postcard — anyone handling it can read it. Encrypted email is like a sealed letter in a locked box. Only the intended recipient has the key. Important for sensitive financial, medical, or legal information.' },
     { title: 'Built-in encryption', content: 'Gmail and Outlook encrypt emails in transit (between servers) automatically. This protects against interception but the email provider (Google/Microsoft) can technically read your messages.' },
     { title: 'End-to-end encrypted email', content: 'ProtonMail (proton.me) offers end-to-end encryption — even ProtonMail can\'t read your emails. Free tier: 1 GB storage, 150 messages/day. Paid: $4.99/month for more features.' },
@@ -11190,7 +11190,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'When encryption matters most', content: 'Sending Social Security numbers, tax documents, medical records, financial information, or legal documents. For everyday email (plans with friends, newsletters), regular email security is sufficient.' },
     { title: 'Simpler alternatives', content: 'Instead of encrypted email, share sensitive documents through password-protected cloud links (Google Drive, OneDrive). Or use encrypted messaging apps (Signal, WhatsApp) for sensitive conversations.' },
   ] },
-  { slug: 'browser-extensions-guide', title: 'Best Browser Extensions for Productivity and Safety', excerpt: 'Enhance your web browser with extensions that save time, block ads, and protect your privacy.', category: 'app-guides', tags: ['browser', 'extensions', 'chrome', 'firefox', 'productivity'], readTime: '7 min', thumbnailEmoji: '🧩', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'browser-extensions-guide-v2', title: 'Best Browser Extensions for Productivity and Safety', excerpt: 'Enhance your web browser with extensions that save time, block ads, and protect your privacy.', category: 'app-guides', tags: ['browser', 'extensions', 'chrome', 'firefox', 'productivity'], readTime: '7 min', thumbnailEmoji: '🧩', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What are extensions?', content: 'Browser extensions are small programs that add features to Chrome, Firefox, or Edge. They run in the background or add buttons to your toolbar. Install them from your browser\'s extension store.' },
     { title: 'uBlock Origin (essential)', content: 'Free ad blocker that also blocks trackers and malicious sites. Dramatically speeds up browsing. Protects against malicious ads. Install from the Chrome Web Store or Firefox Add-ons.' },
     { title: 'Bitwarden (passwords)', content: 'Free password manager extension. Automatically fills in passwords on websites. Generates strong passwords for new accounts. Syncs across all your devices and browsers.' },
@@ -11209,7 +11209,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
 
   // ── Batch 34: Parenting & Family Tech ───────────────────────────────────────
-  { slug: 'parental-controls-guide', title: 'How to Set Up Parental Controls on Any Device', excerpt: 'Protect children online with screen time limits, content filters, and app restrictions.', category: 'safety-guides', tags: ['parental-controls', 'children', 'safety', 'screen-time', 'family'], readTime: '8 min', thumbnailEmoji: '👨‍👩‍👧', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'parental-controls-guide-v2', title: 'How to Set Up Parental Controls on Any Device', excerpt: 'Protect children online with screen time limits, content filters, and app restrictions.', category: 'safety-guides', tags: ['parental-controls', 'children', 'safety', 'screen-time', 'family'], readTime: '8 min', thumbnailEmoji: '👨‍👩‍👧', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'iPhone/iPad: Screen Time', content: 'Settings > Screen Time > Turn on. Set downtime (bedtime schedule), app limits (2 hours of games), content restrictions (block explicit content), and communication limits. Use a different passcode than the device passcode.' },
     { title: 'Android: Family Link', content: 'Download Google Family Link on your phone. Create a Google account for your child. Link manages screen time, app approvals, location tracking, and content filters remotely from your phone.' },
     { title: 'Windows: Family Safety', content: 'Settings > Accounts > Family. Add your child\'s Microsoft account. Set screen time limits, content filters, and app restrictions. View activity reports showing websites visited and app usage.' },
@@ -11389,7 +11389,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Run shortcuts', content: 'Click the shortcut in the app. Add it to your menu bar for quick access. Assign a keyboard shortcut. Ask Siri to run it by name. Add it to the Share menu for context-specific automation.' },
     { title: 'Practical examples', content: 'Batch resize photos for email. Convert HEIC photos to JPEG. Combine images into a PDF. Get your daily schedule summary. Water reminder every hour. Meeting prep: open specific apps and websites.' },
   ] },
-  { slug: 'mac-safari-tips', title: 'Safari Tips and Tricks for Mac', excerpt: 'Browse faster and more privately with Safari\'s hidden features and useful shortcuts.', category: 'mac-guides', tags: ['mac', 'safari', 'browser', 'tips', 'privacy'], readTime: '6 min', thumbnailEmoji: '🧭', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-safari-tips-v2', title: 'Safari Tips and Tricks for Mac', excerpt: 'Browse faster and more privately with Safari\'s hidden features and useful shortcuts.', category: 'mac-guides', tags: ['mac', 'safari', 'browser', 'tips', 'privacy'], readTime: '6 min', thumbnailEmoji: '🧭', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Tab groups', content: 'Organize tabs into groups: right-click a tab > Move to Tab Group > New Tab Group. Create groups for "Work," "Shopping," "Research." Switch between groups from the sidebar.' },
     { title: 'Reader mode', content: 'Click the Reader icon (lines) in the address bar to strip away ads, navigation, and clutter. See just the article text in a clean format. Customize font, size, and background color.' },
     { title: 'Privacy Report', content: 'Click the shield icon in the address bar to see how many trackers Safari blocked on that site. Safari blocks cross-site tracking by default — much better privacy than Chrome out of the box.' },
@@ -11468,7 +11468,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'If you\'ve been scammed', content: 'Don\'t be embarrassed — these scammers are sophisticated professionals. Report to the FTC at reportfraud.ftc.gov. Report to the dating site. Contact your bank about recovering funds. File a report at ic3.gov.' },
     { title: 'Statistics', content: 'Romance scams cost Americans over $1.3 billion annually. Average loss: over $10,000. Victims are most often people age 55+. These are professional criminals, often operating from overseas call centers.' },
   ] },
-  { slug: 'package-delivery-scams', title: 'How to Spot Fake Package Delivery Scams', excerpt: 'Don\'t fall for fake USPS, UPS, FedEx, or Amazon delivery notifications.', category: 'safety-guides', tags: ['scams', 'phishing', 'delivery', 'usps', 'safety'], readTime: '5 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'package-delivery-scams-v2', title: 'How to Spot Fake Package Delivery Scams', excerpt: 'Don\'t fall for fake USPS, UPS, FedEx, or Amazon delivery notifications.', category: 'safety-guides', tags: ['scams', 'phishing', 'delivery', 'usps', 'safety'], readTime: '5 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'The scam', content: 'You receive a text or email: "Your package couldn\'t be delivered. Click here to reschedule." The link leads to a fake website that asks for your personal information or credit card to "pay a redelivery fee."' },
     { title: 'Red flags', content: 'USPS, UPS, and FedEx never text you first (unless you signed up for tracking alerts). They never ask for payment to deliver a package. The links use suspicious URLs that aren\'t the real company website.' },
     { title: 'How to check real deliveries', content: 'Go directly to the carrier\'s website or app: usps.com, ups.com, fedex.com, or Amazon. Enter your tracking number there. Use Informed Delivery from USPS to see what\'s coming to your address.' },
@@ -11501,7 +11501,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Open communication', content: 'Create an environment where children feel safe telling you about uncomfortable online experiences. Don\'t punish them for coming to you with problems — that teaches them to hide issues instead.' },
     { title: 'Monitor age-appropriately', content: 'Young children: supervised use only. Pre-teens: periodic check-ins, parental controls. Teens: discuss expectations, respect increasing privacy while maintaining safety boundaries. Trust but verify.' },
   ] },
-  { slug: 'data-breach-response', title: 'What to Do When Your Data Is Breached', excerpt: 'Step-by-step response plan when you learn your personal information was exposed in a data breach.', category: 'safety-guides', tags: ['data-breach', 'security', 'identity-theft', 'privacy', 'response'], readTime: '7 min', thumbnailEmoji: '🚨', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'data-breach-response-v2', title: 'What to Do When Your Data Is Breached', excerpt: 'Step-by-step response plan when you learn your personal information was exposed in a data breach.', category: 'safety-guides', tags: ['data-breach', 'security', 'identity-theft', 'privacy', 'response'], readTime: '7 min', thumbnailEmoji: '🚨', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Don\'t panic, but act quickly', content: 'Data breaches are common — most major companies have been breached. The key is responding quickly. You usually learn about breaches through email notifications, news reports, or sites like haveibeenpwned.com.' },
     { title: 'Change affected passwords immediately', content: 'Change the password for the breached service first. Then change it anywhere you used the same password (this is why unique passwords matter). Use your password manager to generate new strong passwords.' },
     { title: 'Enable 2FA everywhere', content: 'Add two-factor authentication to all important accounts, especially email and banking. Even if a password is stolen, 2FA prevents unauthorized access.' },
@@ -11628,7 +11628,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Air fryer', content: 'Not technically "smart" but a game-changer. Cooks food crispy with 75% less oil. Faster than an oven. Easy to clean. Ninja and COSORI are popular brands ($80-150).' },
     { title: 'Skip these', content: 'Smart toasters, smart egg cookers, and smart water bottles are generally not worth the premium. Stick with gadgets that save real time or genuinely improve food quality.' },
   ] },
-  { slug: 'grocery-delivery-apps', title: 'How to Order Groceries Online', excerpt: 'Get groceries delivered to your door or ready for pickup using your phone.', category: 'app-guides', tags: ['grocery', 'delivery', 'shopping', 'apps', 'food'], readTime: '6 min', thumbnailEmoji: '🛒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'grocery-delivery-apps-v2', title: 'How to Order Groceries Online', excerpt: 'Get groceries delivered to your door or ready for pickup using your phone.', category: 'app-guides', tags: ['grocery', 'delivery', 'shopping', 'apps', 'food'], readTime: '6 min', thumbnailEmoji: '🛒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Popular services', content: 'Instacart: delivers from many stores (Costco, Kroger, Aldi). Walmart: free delivery on $35+ orders with Walmart+ ($12.95/month). Amazon Fresh: free for Prime members on $35+ orders. Target: same-day delivery via Shipt.' },
     { title: 'How it works', content: 'Download the app, enter your address, select your store. Browse by category or search for specific items. Add items to your cart. Choose a delivery window or pickup time. Pay in the app.' },
     { title: 'Tips for better orders', content: 'Write notes for substitutions ("If out of 2% milk, get whole milk" or "No substitutions"). Check your order before the shopper starts. Be available for text messages about replacements.' },
@@ -11796,7 +11796,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'After the transfer', content: 'Sign into apps individually (banking, social media). Re-download any missing apps. Set up fingerprint/Face ID. Update your payment methods. Verify two-factor authentication is working on the new phone.' },
     { title: 'What about your old phone?', content: 'Keep it as a backup for 2-4 weeks. Once you\'re confident the new phone has everything, factory reset the old phone (Settings > General > Transfer or Reset). Trade it in, sell it, or recycle it.' },
   ] },
-  { slug: 'iphone-hidden-features', title: '15 Hidden iPhone Features You Should Know', excerpt: 'Unlock useful iPhone capabilities that most people don\'t know exist.', category: 'phone-guides', tags: ['iphone', 'tips', 'hidden-features', 'tricks', 'ios'], readTime: '8 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'iphone-hidden-features-v2', title: '15 Hidden iPhone Features You Should Know', excerpt: 'Unlock useful iPhone capabilities that most people don\'t know exist.', category: 'phone-guides', tags: ['iphone', 'tips', 'hidden-features', 'tricks', 'ios'], readTime: '8 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Back Tap', content: 'Settings > Accessibility > Touch > Back Tap. Double or triple tap the back of your iPhone to trigger actions: screenshot, flashlight, home, or any Shortcut. Incredibly useful.' },
     { title: 'Measure distances', content: 'The Measure app (pre-installed) uses AR to measure objects. Point your camera at something and tap to place measurement points. Surprisingly accurate for furniture shopping and DIY projects.' },
     { title: 'Scan text from camera', content: 'Point your camera at any text (sign, receipt, business card). Tap the Live Text icon. Copy, paste, look up, or translate the text instantly. Also works in Photos on existing images.' },

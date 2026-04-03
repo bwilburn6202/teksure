@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, CheckCircle, Info, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -31,13 +31,6 @@ function calcReadTime(guide: { title: string; excerpt: string; steps?: GuideStep
   const mins = Math.max(1, Math.ceil(words / 200));
   return `${mins} min read`;
 }
-
-const getOsHint = (category: string, stepContent: string): 'windows' | 'mac' | 'browser' | 'generic' => {
-  if (category === 'windows-guides') return 'windows';
-  if (category === 'mac-guides') return 'mac';
-  if (stepContent.toLowerCase().includes('browser') || stepContent.toLowerCase().includes('website') || stepContent.toLowerCase().includes('url')) return 'browser';
-  return 'generic';
-};
 
 /* ── Sub-components ─────────────────────────────── */
 
@@ -92,56 +85,27 @@ const AnnotationLayer = ({ annotations }: { annotations: ScreenshotAnnotation[] 
 );
 
 const StepScreenshot = ({
-  description,
   screenshotUrl,
   screenshotAlt,
-  osHint,
   annotations,
 }: {
-  description: string;
-  screenshotUrl?: string;
+  screenshotUrl: string;
   screenshotAlt?: string;
-  osHint?: 'windows' | 'mac' | 'browser' | 'generic';
   annotations?: ScreenshotAnnotation[];
 }) => {
-  const toolbarLabel = osHint === 'browser' ? 'Browser' : osHint === 'mac' ? 'Finder' : osHint === 'windows' ? 'Windows' : 'Screen';
-  const addressText = osHint === 'browser' ? 'https://example.com' : osHint === 'windows' ? '⊞ Settings' : osHint === 'mac' ? '⌘ System Preferences' : '⚙ Settings';
   return (
     <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
-      <div className="flex items-center gap-2 px-3 py-2 bg-muted border-b border-border">
-        <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-full bg-red-400" />
-          <span className="w-3 h-3 rounded-full bg-yellow-400" />
-          <span className="w-3 h-3 rounded-full bg-green-400" />
-        </div>
-        <div className="flex-1 mx-3 h-6 rounded-md bg-background/80 border border-border flex items-center px-3">
-          <span className="text-[10px] text-muted-foreground truncate">{addressText}</span>
-        </div>
-        <span className="text-[10px] text-muted-foreground hidden sm:inline">{toolbarLabel}</span>
+      <div className="relative bg-muted/30">
+        <img
+          src={screenshotUrl}
+          alt={screenshotAlt || ''}
+          className="w-full h-auto"
+          loading="lazy"
+        />
+        {annotations && annotations.length > 0 && (
+          <AnnotationLayer annotations={annotations} />
+        )}
       </div>
-      {screenshotUrl ? (
-        <div className="relative bg-muted/30">
-          <img
-            src={screenshotUrl}
-            alt={screenshotAlt || description}
-            className="w-full h-auto"
-            loading="lazy"
-          />
-          {annotations && annotations.length > 0 && (
-            <AnnotationLayer annotations={annotations} />
-          )}
-        </div>
-      ) : (
-        <div className="relative bg-muted/30 px-6 py-8 flex items-center justify-center min-h-[140px]">
-          <div className="flex items-start gap-3 max-w-md">
-            <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p className="text-sm text-muted-foreground leading-relaxed italic">{description}</p>
-          </div>
-          {annotations && annotations.length > 0 && (
-            <AnnotationLayer annotations={annotations} />
-          )}
-        </div>
-      )}
       {annotations && annotations.length > 0 && (
         <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
           {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
@@ -484,13 +448,13 @@ const GuideDetail = () => {
                             })}
                           </div>
 
-                          <StepScreenshot
-                            description={step.screenshotDesc || step.content}
-                            screenshotUrl={step.screenshotUrl}
-                            screenshotAlt={step.screenshotAlt}
-                            osHint={getOsHint(guide.category, step.content)}
-                            annotations={step.annotations}
-                          />
+                          {step.screenshotUrl && (
+                            <StepScreenshot
+                              screenshotUrl={step.screenshotUrl}
+                              screenshotAlt={step.screenshotAlt}
+                              annotations={step.annotations}
+                            />
+                          )}
 
                           {/* Before / After comparison slider */}
                           {step.beforeCaption && step.afterCaption && (
@@ -502,8 +466,7 @@ const GuideDetail = () => {
                             />
                           )}
 
-                          {/* Pro Tip — always show one; use step.tip or generate a contextual default */}
-                          <ProTip>{step.tip || 'Take your time with this step. If something looks different on your screen, it may be a slightly different version — the steps should still work.'}</ProTip>
+                          {step.tip && <ProTip>{step.tip}</ProTip>}
 
                           {step.warning && <WarningBox>{step.warning}</WarningBox>}
                         </div>
