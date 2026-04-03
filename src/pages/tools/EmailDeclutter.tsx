@@ -11,7 +11,7 @@ interface Step {
   id: number;
   icon: LucideIcon;
   title: string;
-  emoji: string;
+  emoji?: string;
   description: string;
 }
 

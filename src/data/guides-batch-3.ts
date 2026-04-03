@@ -2402,9 +2402,6 @@ export const guidesBatch3: Guide[] = [
     difficulty: 'Beginner',
     steps: [{"title": "Step 1", "content": "Learn this skill."}],
   },
-
-Generated 200 guide templates
-
 ];
 
 export const guidesBatch3Complete = true;
