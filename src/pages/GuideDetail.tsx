@@ -284,7 +284,7 @@ const GuideDetail = () => {
       position: i + 1,
       name: s.title,
       text: s.content,
-      ...(s.screenshotUrl ? { image: { '@type': 'ImageObject', url: s.screenshotUrl, description: s.screenshotAlt || s.screenshotDesc } } : {}),
+      ...(s.screenshotUrl ? { image: { '@type': 'ImageObject', url: s.screenshotUrl, description: s.screenshotAlt || s.title } } : {}),
     })),
   } : undefined;
 
