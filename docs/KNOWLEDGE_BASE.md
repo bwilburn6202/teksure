@@ -10,10 +10,11 @@ The current branch adds:
 - `knowledge_documents`
 - `knowledge_concepts`
 - `knowledge_outputs`
+- `knowledge_manual_sources`
 - `ollama-health` edge function
 - `knowledge-base-compile` edge function
 
-It compiles from `scraped_articles` and generates markdown answer artifacts.
+It compiles from `scraped_articles` plus admin-added manual sources and generates markdown answer artifacts.
 
 ## Required Secrets
 
@@ -40,6 +41,8 @@ supabase db push
 This applies:
 
 - [`supabase/migrations/20260403150000_knowledge_base.sql`](/Users/baileywilburn/Documents/New%20project/teksure/supabase/migrations/20260403150000_knowledge_base.sql)
+- [`supabase/migrations/20260403170000_knowledge_manual_sources.sql`](/Users/baileywilburn/Documents/New%20project/teksure/supabase/migrations/20260403170000_knowledge_manual_sources.sql)
+- [`supabase/migrations/20260403171000_knowledge_document_source_links.sql`](/Users/baileywilburn/Documents/New%20project/teksure/supabase/migrations/20260403171000_knowledge_document_source_links.sql)
 
 ## Deploy Edge Functions
 
@@ -85,8 +88,9 @@ npm run dev
 ## Expected Admin Flow
 
 1. Confirm Ollama health shows `Available`.
-2. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles`.
-3. Use `Generate Answer` to create a markdown artifact in `knowledge_outputs`.
+2. Add manual sources by file import or paste.
+3. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
+4. Use `Generate Answer` to create a markdown artifact in `knowledge_outputs`.
 
 ## Failure Modes
 
@@ -126,7 +130,6 @@ Checks:
 
 ## Current Limitations
 
-- no manual uploads yet
 - no deck generation yet
 - no filesystem vault sync yet
 - concept generation is intentionally lightweight and derived from compiled keywords

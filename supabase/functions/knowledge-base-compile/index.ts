@@ -25,11 +25,31 @@ interface ScrapedArticle {
   source: { name: string; domain: string } | null;
 }
 
+interface ManualSource {
+  id: string;
+  title: string;
+  source_url: string | null;
+  content: string;
+  source_type: string;
+  original_filename: string | null;
+}
+
 interface KnowledgeDocument {
   id: string;
   title: string;
   summary: string;
   keywords: string[];
+}
+
+interface CompileSource {
+  sourceId: string;
+  sourceKind: 'scraped_article' | 'manual_source';
+  title: string;
+  sourceUrl: string;
+  content: string;
+  category: string | null;
+  tags: string[];
+  sourceName: string;
 }
 
 function json(body: unknown, status = 200) {
@@ -97,7 +117,7 @@ async function callOllama(prompt: string, format: 'json' | undefined = undefined
   return String(payload.response ?? '').trim();
 }
 
-async function summarizeArticle(article: ScrapedArticle) {
+async function summarizeArticle(article: CompileSource) {
   const prompt = `Summarize this source for an internal markdown knowledge base.
 
 Return strict JSON with keys:
@@ -106,11 +126,11 @@ Return strict JSON with keys:
 
 Title: ${article.original_title}
 Category: ${article.category ?? 'unknown'}
-Source: ${article.source?.name ?? 'unknown'}
-URL: ${article.original_url}
+Source: ${article.sourceName}
+URL: ${article.sourceUrl}
 
 Content:
-${article.original_content.slice(0, 8000)}`;
+${article.content.slice(0, 8000)}`;
 
   const raw = await callOllama(prompt, 'json');
   const parsed = JSON.parse(raw) as { summary?: string; keywords?: string[] };
@@ -124,12 +144,13 @@ ${article.original_content.slice(0, 8000)}`;
   };
 }
 
-function buildDocumentMarkdown(article: ScrapedArticle, summary: string, keywords: string[]) {
-  return `# ${article.original_title}
+function buildDocumentMarkdown(article: CompileSource, summary: string, keywords: string[]) {
+  return `# ${article.title}
 
 ## Source
-- URL: ${article.original_url}
-- Source: ${article.source?.name ?? 'Unknown'}
+- URL: ${article.sourceUrl}
+- Source: ${article.sourceName}
+- Source Kind: ${article.sourceKind}
 - Category: ${article.category ?? 'Uncategorized'}
 - Keywords: ${keywords.map((keyword) => `\`${keyword}\``).join(', ') || 'None'}
 
@@ -137,7 +158,7 @@ function buildDocumentMarkdown(article: ScrapedArticle, summary: string, keyword
 ${summary}
 
 ## Raw excerpt
-${article.original_content.slice(0, 2500).trim()}
+${article.content.slice(0, 2500).trim()}
 `;
 }
 
@@ -189,32 +210,68 @@ serve(async (req) => {
         throw error;
       }
 
+      const { data: manualSources, error: manualError } = await supabase
+        .from('knowledge_manual_sources')
+        .select('id, title, source_url, content, source_type, original_filename')
+        .order('created_at', { ascending: false })
+        .limit(limit);
+
+      if (manualError) {
+        throw manualError;
+      }
+
+      const compileSources: CompileSource[] = [
+        ...((articles ?? []) as unknown as ScrapedArticle[]).map((article) => ({
+          sourceId: article.id,
+          sourceKind: 'scraped_article' as const,
+          title: article.original_title,
+          sourceUrl: article.original_url,
+          content: article.original_content,
+          category: article.category,
+          tags: article.tags ?? [],
+          sourceName: article.source?.name ?? 'Scraped article',
+        })),
+        ...((manualSources ?? []) as ManualSource[]).map((source) => ({
+          sourceId: source.id,
+          sourceKind: 'manual_source' as const,
+          title: source.title,
+          sourceUrl: source.source_url ?? `manual://${source.id}`,
+          content: source.content,
+          category: 'Manual Source',
+          tags: [source.source_type, ...(source.original_filename ? [source.original_filename] : [])],
+          sourceName: source.source_type === 'upload' ? 'Admin upload' : 'Manual source',
+        })),
+      ].slice(0, limit * 2);
+
       const compiledDocs: Array<{ id: string; title: string; summary: string; keywords: string[] }> = [];
 
-      for (const article of (articles ?? []) as unknown as ScrapedArticle[]) {
+      for (const article of compileSources) {
         const summary = await summarizeArticle(article);
-        const keywords = [...new Set([...(summary.keywords ?? []), ...((article.tags ?? []).map((tag) => tag.toLowerCase()))])].slice(0, 8);
+        const keywords = [...new Set([...(summary.keywords ?? []), ...(article.tags ?? []).map((tag) => tag.toLowerCase())])].slice(0, 8);
         const markdown = buildDocumentMarkdown(article, summary.summary, keywords);
 
         const { data: savedDoc, error: docError } = await supabase
           .from('knowledge_documents')
           .upsert({
-            source_article_id: article.id,
-            title: article.original_title,
-            source_url: article.original_url,
+            source_article_id: article.sourceKind === 'scraped_article' ? article.sourceId : null,
+            manual_source_id: article.sourceKind === 'manual_source' ? article.sourceId : null,
+            title: article.title,
+            source_url: article.sourceUrl,
             summary: summary.summary,
             keywords,
             markdown,
             model_name: OLLAMA_MODEL,
             compile_status: 'ready',
-          }, { onConflict: 'source_article_id' })
+          }, { onConflict: article.sourceKind === 'scraped_article' ? 'source_article_id' : 'manual_source_id' })
           .select('id, title, summary, keywords')
-          .single();
+          .maybeSingle();
 
         if (docError) {
           throw docError;
         }
-        compiledDocs.push(savedDoc as unknown as { id: string; title: string; summary: string; keywords: string[] });
+        if (savedDoc) {
+          compiledDocs.push(savedDoc as unknown as { id: string; title: string; summary: string; keywords: string[] });
+        }
       }
 
       const conceptMap = new Map<string, Array<{ id: string; title: string; summary: string }>>();
@@ -246,6 +303,7 @@ serve(async (req) => {
         ok: true,
         compiledDocuments: compiledDocs.length,
         compiledConcepts: topConcepts.length,
+        sourceCount: compileSources.length,
         model: OLLAMA_MODEL,
       });
     }

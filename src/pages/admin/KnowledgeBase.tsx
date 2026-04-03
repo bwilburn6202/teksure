@@ -23,6 +23,7 @@ interface CountsState {
   documents: number;
   concepts: number;
   outputs: number;
+  manualSources: number;
 }
 
 interface OutputRow {
@@ -34,13 +35,17 @@ interface OutputRow {
 
 export default function KnowledgeBase() {
   const [health, setHealth] = useState<HealthState | null>(null);
-  const [counts, setCounts] = useState<CountsState>({ documents: 0, concepts: 0, outputs: 0 });
+  const [counts, setCounts] = useState<CountsState>({ documents: 0, concepts: 0, outputs: 0, manualSources: 0 });
   const [recentOutputs, setRecentOutputs] = useState<OutputRow[]>([]);
   const [question, setQuestion] = useState('What themes are emerging across the latest sources?');
   const [runningCompile, setRunningCompile] = useState(false);
   const [runningAnswer, setRunningAnswer] = useState(false);
   const [latestAnswer, setLatestAnswer] = useState('');
   const [compileLimit, setCompileLimit] = useState('8');
+  const [manualTitle, setManualTitle] = useState('');
+  const [manualUrl, setManualUrl] = useState('');
+  const [manualContent, setManualContent] = useState('');
+  const [uploading, setUploading] = useState(false);
 
   const loadHealth = useCallback(async () => {
     const { data, error } = await supabase.functions.invoke('ollama-health');
@@ -57,10 +62,11 @@ export default function KnowledgeBase() {
   }, []);
 
   const loadData = useCallback(async () => {
-    const [{ count: documents }, { count: concepts }, { count: outputs }, { data: outputRows }] = await Promise.all([
+    const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }] = await Promise.all([
       supabase.from('knowledge_documents' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_concepts' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_outputs' as any).select('id', { head: true, count: 'exact' }),
+      supabase.from('knowledge_manual_sources' as any).select('*', { head: true, count: 'exact' }),
       supabase
         .from('knowledge_outputs' as any)
         .select('id, title, markdown, created_at')
@@ -72,6 +78,7 @@ export default function KnowledgeBase() {
       documents: documents ?? 0,
       concepts: concepts ?? 0,
       outputs: outputs ?? 0,
+      manualSources: manualSources ?? 0,
     });
     setRecentOutputs((outputRows ?? []) as OutputRow[]);
   }, []);
@@ -119,6 +126,78 @@ export default function KnowledgeBase() {
     setLatestAnswer(data.output?.markdown ?? '');
     toast.success('Answer generated.');
     await loadData();
+  };
+
+  const saveManualSource = async (payload: {
+    title: string;
+    content: string;
+    sourceUrl?: string;
+    sourceType: 'manual' | 'upload';
+    originalFilename?: string;
+  }) => {
+    const { data: authData } = await supabase.auth.getUser();
+    const { error } = await supabase.from('knowledge_manual_sources' as any).insert({
+      title: payload.title,
+      source_type: payload.sourceType,
+      original_filename: payload.originalFilename ?? null,
+      source_url: payload.sourceUrl || null,
+      content: payload.content,
+      created_by: authData.user?.id ?? null,
+    });
+
+    if (error) {
+      throw error;
+    }
+  };
+
+  const submitManualSource = async () => {
+    if (!manualTitle.trim() || !manualContent.trim()) {
+      toast.error('Title and content are required.');
+      return;
+    }
+
+    setUploading(true);
+    try {
+      await saveManualSource({
+        title: manualTitle.trim(),
+        content: manualContent.trim(),
+        sourceUrl: manualUrl.trim() || undefined,
+        sourceType: 'manual',
+      });
+      setManualTitle('');
+      setManualUrl('');
+      setManualContent('');
+      toast.success('Manual source saved.');
+      await loadData();
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'Failed to save manual source.');
+    } finally {
+      setUploading(false);
+    }
+  };
+
+  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    try {
+      const content = await file.text();
+      const title = file.name.replace(/\.[^.]+$/, '') || file.name;
+      await saveManualSource({
+        title,
+        content,
+        sourceType: 'upload',
+        originalFilename: file.name,
+      });
+      toast.success(`Imported ${file.name}.`);
+      await loadData();
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'Failed to import file.');
+    } finally {
+      setUploading(false);
+      event.target.value = '';
+    }
   };
 
   return (
@@ -179,7 +258,7 @@ export default function KnowledgeBase() {
           </CardContent>
         </Card>
 
-        <section className="grid gap-4 md:grid-cols-3">
+        <section className="grid gap-4 md:grid-cols-4">
           <Card className="rounded-2xl border border-border">
             <CardContent className="p-6">
               <div className="flex items-center gap-3">
@@ -213,9 +292,55 @@ export default function KnowledgeBase() {
               </div>
             </CardContent>
           </Card>
+          <Card className="rounded-2xl border border-border">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3">
+                <FileText className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="text-2xl font-bold">{counts.manualSources}</p>
+                  <p className="text-sm text-muted-foreground">Manual sources</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Add Manual Sources</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <label className="text-sm font-medium">Import `.md` or `.txt`</label>
+                <Input type="file" accept=".md,.txt,text/markdown,text/plain" onChange={handleFileUpload} disabled={uploading} />
+              </div>
+              <div className="grid gap-3">
+                <div>
+                  <label className="text-sm font-medium">Title</label>
+                  <Input value={manualTitle} onChange={(event) => setManualTitle(event.target.value)} className="mt-1" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium">Source URL</label>
+                  <Input value={manualUrl} onChange={(event) => setManualUrl(event.target.value)} className="mt-1" placeholder="Optional" />
+                </div>
+                <div>
+                  <label className="text-sm font-medium">Content</label>
+                  <Textarea
+                    value={manualContent}
+                    onChange={(event) => setManualContent(event.target.value)}
+                    rows={8}
+                    className="mt-1"
+                    placeholder="Paste markdown, notes, article text, or research excerpts."
+                  />
+                </div>
+                <Button onClick={submitManualSource} disabled={uploading}>
+                  {uploading ? 'Saving...' : 'Save Manual Source'}
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="rounded-2xl border border-border">
             <CardHeader>
               <CardTitle>Compile From Scraped Content</CardTitle>
