@@ -913,6 +913,12 @@ const AdminConsole = () => (
           >
             Content Pipeline →
           </Link>
+          <Link
+            to="/admin/knowledge-base"
+            className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-muted/40 hover:bg-muted transition-colors text-foreground"
+          >
+            Knowledge Base →
+          </Link>
         </div>
       </div>
 
