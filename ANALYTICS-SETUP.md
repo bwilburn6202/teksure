@@ -39,7 +39,7 @@ That's it — analytics will start tracking automatically.
 
 1. Run the sitemap generator:
    ```bash
-   cd ~/Downloads/teksure
+   cd ~/Documents/Claude/Projects/TekSure
    npx tsx scripts/generate-sitemap.ts
    ```
 2. This creates `public/sitemap.xml`

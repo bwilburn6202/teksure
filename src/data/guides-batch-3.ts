@@ -2402,6 +2402,7 @@ export const guidesBatch3: Guide[] = [
     difficulty: 'Beginner',
     steps: [{"title": "Step 1", "content": "Learn this skill."}],
   },
+
 ];
 
 export const guidesBatch3Complete = true;

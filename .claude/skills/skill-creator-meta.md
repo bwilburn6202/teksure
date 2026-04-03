@@ -42,7 +42,7 @@ description: [One-line description adapted for TekSure's mission]
 ```
 
 ## File Location
-Save to: ~/Downloads/teksure/.claude/skills/[skill-name].md
+Save to: ~/Documents/Claude/Projects/TekSure/.claude/skills/[skill-name].md
 
 ## After Creating a Skill
 1. Reference it in the relevant scheduled task prompts

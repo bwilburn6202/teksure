@@ -3,15 +3,9 @@
   "configurations": [
     {
       "name": "TekSure Dev",
-      "runtimeExecutable": "/bin/bash",
-      "runtimeArgs": ["/Users/baileywilburn/Downloads/teksure/.claude/start-dev.sh"],
-      "port": 5173
-    },
-    {
-      "name": "TekSure Preview",
-      "runtimeExecutable": "/bin/bash",
-      "runtimeArgs": ["/Users/baileywilburn/Downloads/teksure/.claude/start-preview.sh"],
-      "port": 4173
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--force"],
+      "port": 8080
     }
   ]
 }

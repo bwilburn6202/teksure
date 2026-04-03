@@ -33,7 +33,7 @@ Converts development goals into efficient, step-by-step workflows for TekSure's 
 - Always end workflows with: build → commit → push → log
 - Include tone-style-enforcer check for any content changes
 - Include code-review-skill check for any code changes
-- Reference specific file paths in ~/Downloads/teksure/
+- Reference specific file paths in ~/Documents/Claude/Projects/TekSure/
 
 ## Constraints
 - No vague instructions — each step must be concrete

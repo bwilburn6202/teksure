@@ -110,7 +110,7 @@ After scraping 5 competitors and cross-referencing against TekSure's existing 24
 ## Git Push Commands
 
 ```bash
-cd ~/Downloads/teksure
+cd ~/Documents/Claude/Projects/TekSure
 git add -A
 git commit -m "feat: add 32 competitor-inspired guides and 27 roadmap items
 
