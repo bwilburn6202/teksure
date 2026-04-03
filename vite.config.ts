@@ -51,7 +51,11 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), sitemapPlugin()],
+  plugins: [
+    react(),
+    // Only run sitemap in build mode — Lovable's dev environment may not have fs access
+    mode === 'production' ? sitemapPlugin() : null,
+  ].filter(Boolean) as Plugin[],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -61,9 +65,23 @@ export default defineConfig(({ mode }) => ({
       'react-dom',
       'react-router-dom',
       'framer-motion',
+      '@radix-ui/react-tooltip',
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-popover',
+      '@radix-ui/react-dropdown-menu',
+      '@radix-ui/react-select',
+      '@radix-ui/react-tabs',
+      '@radix-ui/react-toast',
+      '@radix-ui/react-accordion',
+      '@radix-ui/react-navigation-menu',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-primitive',
+      '@radix-ui/react-context',
     ],
   },
   optimizeDeps: {
+    // Force cache invalidation when this config changes
+    force: true,
     include: [
       'react',
       'react-dom',
