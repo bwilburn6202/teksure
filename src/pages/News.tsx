@@ -49,6 +49,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 16,
+    title: 'Urgent: Apple Released a Critical iPhone Security Update — Install It Now',
+    summary: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency security update that patches a serious flaw called "DarkSword." Without this update, a hacker could silently break into your iPhone just by getting you to visit the wrong website. No download required on your part. To install it: go to Settings → General → Software Update. If you see iOS 18.7.7 available, tap Download and Install. You\'ll need about 10 minutes and a charger. This is one of the rare updates worth doing right away.',
+    category: 'security',
+    date: '2026-04-03',
+    icon: Smartphone,
+    readTime: '2 min',
+    source: 'Apple Support',
+    sourceUrl: 'https://support.apple.com',
+  },
+  {
+    id: 15,
+    title: 'Windows Warning: Install Updates Before June 2026 or Your PC Could Stop Starting',
+    summary: 'Microsoft is warning Windows 11 users that some security certificates built into many PCs will expire in June 2026. If Windows Update has not been run before that date, some computers may have trouble starting up correctly. This is one of the rare cases where skipping updates could actually stop your PC from turning on. The fix is simple: click the Start menu → Settings → Windows Update → Install all updates. Make sure Automatic Updates is turned on too. You have until June, but there\'s no reason to wait.',
+    category: 'security',
+    date: '2026-04-03',
+    icon: Monitor,
+    readTime: '2 min',
+    source: 'Microsoft Support',
+    sourceUrl: 'https://support.microsoft.com',
+  },
+  {
     id: 13,
     title: 'Windows 11 March Update May Cause Sign-In Problems',
     summary: 'Microsoft\'s March 2026 update (KB5079473) is causing some people to see "You\'ll need the Internet for this" errors when signing into Microsoft apps like Teams, OneDrive, Word, and Edge — even when they\'re connected to the internet. Microsoft has released a fix (KB5085516). Go to Settings > Windows Update to install it.',

@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff,
+  Users, Download, Phone, BellOff, LockKeyhole,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,26 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Use "Do Not Disturb" Mode to Stop Unwanted Interruptions',
-  summary: 'Your phone has a built-in "Do Not Disturb" mode that silences calls, texts, and notifications — perfect for bedtime, doctor visits, or when scam calls won\'t stop.',
-  full: 'Every iPhone and Android phone has a "Do Not Disturb" (DND) feature that silences incoming calls, texts, and app notifications so you are not interrupted. On iPhone, open Settings, tap Focus, then tap Do Not Disturb and turn it on — you can also swipe down from the top-right corner and tap the crescent moon icon for quick access. On Android, swipe down from the top of your screen and tap the "Do Not Disturb" tile. The best part is you can allow calls from specific people (like family members) to still come through while blocking everyone else. On iPhone, tap "Allowed Notifications" inside your DND settings and choose "Favorites" or specific contacts. On Android, tap "People" in DND settings and add your important contacts. Many people set DND on a schedule — for example, automatically turning on at 10 PM and off at 7 AM — so you never have to remember to enable it yourself.',
-  category: 'Productivity',
-  icon: BellOff,
+  title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
+  summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
+  full: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency update that fixes a dangerous security hole called "DarkSword." Here\'s the important part: hackers could use this flaw to get into your phone silently, just by having you visit a malicious website. They could steal your text messages, photos, location, and saved passwords without you ever knowing. Here\'s how to check for and install the update right now: On iPhone, open the Settings app (the grey gear icon), then tap General, then tap Software Update. If you see iOS 18.7.7 available, tap Download and Install — you\'ll need your passcode and about 10 minutes. Make sure your phone is plugged in or has at least 50% battery first. If you\'re already on iOS 18.7.7 or iOS 26.4 (a newer version), you\'re protected. To make sure you never miss an update like this again, go back to Software Update and turn on Automatic Updates — your phone will install updates overnight while you\'re sleeping.',
+  category: 'Security',
+  icon: ShieldAlert,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Set Up a Screen Lock PIN to Protect Your Phone',
+    summary: 'A screen lock PIN is the first line of defense if your phone is ever lost or stolen — it keeps strangers out of your personal information, photos, and accounts.',
+    category: 'Security',
+    icon: LockKeyhole,
+  },
+  {
+    title: 'Use "Do Not Disturb" Mode to Stop Unwanted Interruptions',
+    summary: 'Your phone has a built-in "Do Not Disturb" mode that silences calls, texts, and notifications — perfect for bedtime, doctor visits, or when scam calls won\'t stop.',
+    category: 'Productivity',
+    icon: BellOff,
+  },
   {
     title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
     summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',
@@ -45,7 +57,8 @@ const pastTips: Tip[] = [
     category: 'Security',
     icon: ShieldCheck,
   },
-  {    title: 'Review Your App Permissions',
+  {
+    title: 'Review Your App Permissions',
     summary: 'Check which apps on your phone can access your camera, microphone, and location. Revoking permissions you don\'t need is one of the easiest ways to protect your privacy.',
     category: 'Safety',
     icon: Smartphone,
@@ -68,7 +81,8 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: KeyRound,
   },
-  {    title: 'Spot Phishing Emails',
+  {
+    title: 'Spot Phishing Emails',
     summary: 'Look for spelling mistakes, urgent language, and suspicious sender addresses. When in doubt, don\'t click.',
     category: 'Safety',
     icon: ShieldAlert,
@@ -91,7 +105,8 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: Shield,
   },
-  {    title: 'Video Calling Tips',
+  {
+    title: 'Video Calling Tips',
     summary: 'Use headphones for better audio, position your camera at eye level, and make sure you\'re well-lit from the front.',
     category: 'Communication',
     icon: Video,
@@ -114,7 +129,8 @@ const pastTips: Tip[] = [
     category: 'Safety',
     icon: Lock,
   },
-  {    title: 'Avoid Fake Websites',
+  {
+    title: 'Avoid Fake Websites',
     summary: 'Check for HTTPS, look at the domain carefully, and don\'t trust sites with lots of pop-ups or too-good-to-be-true deals.',
     category: 'Safety',
     icon: Globe,
@@ -152,6 +168,7 @@ const categoryColors: Record<string, string> = {
   Productivity: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
   Communication: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
 };
+
 export default function Tips() {
   return (
     <>
@@ -173,9 +190,8 @@ export default function Tips() {
 
         <div className="container max-w-4xl mx-auto px-4 py-20">
           {/* Featured Tip */}
-          <div
-            className="mb-20"
-          >            <Card className="rounded-2xl border border-border bg-card">
+          <div className="mb-20">
+            <Card className="rounded-2xl border border-border bg-card">
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1">
@@ -200,10 +216,8 @@ export default function Tips() {
           <div className="mb-12">
             <h2 className="text-2xl font-semibold tracking-tight mb-8">Past Tips</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {pastTips.map((tip, idx) => (
-                <div
-                  key={tip.title}
-                >
+              {pastTips.map((tip) => (
+                <div key={tip.title}>
                   <Card className="h-full rounded-2xl border border-border bg-card hover:border-border/60 transition-all group">
                     <CardHeader className="pb-3">
                       <div className="flex items-start justify-between gap-3 mb-2">

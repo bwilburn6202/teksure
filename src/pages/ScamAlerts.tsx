@@ -207,6 +207,40 @@ const scams: Scam[] = [
       'Report fake debt relief companies to the FTC at ReportFraud.ftc.gov',
     ],
   },
+  // Social: "Getting calls about mortgage relief? Scammers are using economic anxiety to steal from homeowners. Here's how to spot them."
+  // Newsletter: "The FTC just flagged a surge in fake mortgage relief calls. Scammers charge upfront fees and may even try to get you to sign over your home. Learn the red flags."
+  {
+    title: 'Fake Mortgage Relief Call Scam (April 2026)',
+    redFlags: [
+      'Unsolicited call claiming they can lower your mortgage payments or save you from foreclosure',
+      'They ask for an upfront fee before doing any work — this is illegal under federal law',
+      'They tell you to stop contacting your lender directly',
+      'They pressure you to sign documents or pay by wire transfer, gift card, or Zelle',
+    ],
+    whatToDo: [
+      'Hang up — legitimate mortgage help programs never cold-call you asking for money first',
+      'Contact your mortgage servicer directly using the number on your monthly statement',
+      'Find free HUD-approved housing counselors at hud.gov or call 800-569-4287',
+      'Report the call to the FTC at ReportFraud.ftc.gov and your state attorney general',
+    ],
+  },
+  // Social: "Scammers are using your real name and partial Social Security number to pretend they're from the government. Here's the new trick to watch for."
+  // Newsletter: "The SSA impersonation scam just got scarier: callers now use stolen data (your real name, partial SSN) to make the threat feel real. The SSA will NEVER threaten you with arrest. Here's what to do."
+  {
+    title: '"Your Social Security Number Was Suspended" Scam (April 2026)',
+    redFlags: [
+      'Caller uses your real name or partial Social Security number — this does NOT mean the call is real',
+      'They claim your SSN has been "suspended" or linked to criminal activity',
+      'They threaten arrest and say a federal agent will come to your home',
+      'They ask you to withdraw cash or record yourself saying your personal information',
+    ],
+    whatToDo: [
+      'Hang up immediately — the SSA never threatens arrest, never demands cash, and never sends agents to your door',
+      'Do not call back any number they give you — find the real SSA at ssa.gov or call 800-772-1213',
+      'Never give your SSN or address over an unexpected call, even if the caller already knows some of your details',
+      'Report it to the SSA Office of Inspector General at oig.ssa.gov or call 800-269-0271',
+    ],
+  },
 ];
 
 export default function ScamAlerts() {
