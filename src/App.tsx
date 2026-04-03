@@ -19,6 +19,7 @@ import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/react";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
@@ -293,6 +294,7 @@ const App = () => (
               <HighContrastProvider>
                 <AuthProvider>
                   <AppContent />
+                  <Analytics />
                 </AuthProvider>
               </HighContrastProvider>
             </SeniorModeProvider>
