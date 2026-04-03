@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole,
+  Users, Download, Phone, BellOff,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,20 +19,14 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Set Up a Screen Lock PIN to Protect Your Phone',
-  summary: 'A screen lock PIN is the first line of defense if your phone is ever lost or stolen — it keeps strangers out of your personal information, photos, and accounts.',
-  full: 'Setting up a PIN or passcode on your phone means nobody can get into it without your permission. On iPhone, go to Settings, tap Face ID & Passcode (or Touch ID & Passcode on older models), then tap "Turn Passcode On" and choose a six-digit number you can remember. On Android, open Settings, tap Security (or Lock Screen), then choose "Screen Lock" and pick PIN — enter a number that is at least four digits. Avoid easy-to-guess PINs like 1234, 0000, or your birth year. Once your PIN is set, your phone will lock automatically after a short time, and anyone who picks it up will need your code to get in. This also protects your email, banking apps, and saved passwords. If you are worried about forgetting your PIN, write it down and keep it in a safe place at home — not in your wallet or purse, since those could be lost along with your phone.',
-  category: 'Security',
-  icon: LockKeyhole,
+  title: 'Use "Do Not Disturb" Mode to Stop Unwanted Interruptions',
+  summary: 'Your phone has a built-in "Do Not Disturb" mode that silences calls, texts, and notifications — perfect for bedtime, doctor visits, or when scam calls won\'t stop.',
+  full: 'Every iPhone and Android phone has a "Do Not Disturb" (DND) feature that silences incoming calls, texts, and app notifications so you are not interrupted. On iPhone, open Settings, tap Focus, then tap Do Not Disturb and turn it on — you can also swipe down from the top-right corner and tap the crescent moon icon for quick access. On Android, swipe down from the top of your screen and tap the "Do Not Disturb" tile. The best part is you can allow calls from specific people (like family members) to still come through while blocking everyone else. On iPhone, tap "Allowed Notifications" inside your DND settings and choose "Favorites" or specific contacts. On Android, tap "People" in DND settings and add your important contacts. Many people set DND on a schedule — for example, automatically turning on at 10 PM and off at 7 AM — so you never have to remember to enable it yourself.',
+  category: 'Productivity',
+  icon: BellOff,
 };
 
 const pastTips: Tip[] = [
-  {
-    title: 'Use "Do Not Disturb" Mode to Stop Unwanted Interruptions',
-    summary: 'Your phone has a built-in "Do Not Disturb" mode that silences calls, texts, and notifications — perfect for bedtime, doctor visits, or when scam calls won\'t stop.',
-    category: 'Productivity',
-    icon: BellOff,
-  },
   {
     title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
     summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',

@@ -77,7 +77,7 @@ serve(async (req) => {
             </div>
 
             <div style="text-align: center; margin-bottom: 32px;">
-              <a href="https://teksure.co/guides" style="display: inline-block; background: #2563eb; color: white; font-size: 15px; font-weight: 500; padding: 12px 24px; border-radius: 8px; text-decoration: none;">
+              <a href="https://teksure.com/guides" style="display: inline-block; background: #2563eb; color: white; font-size: 15px; font-weight: 500; padding: 12px 24px; border-radius: 8px; text-decoration: none;">
                 Browse free guides while you wait →
               </a>
             </div>
@@ -113,7 +113,7 @@ serve(async (req) => {
           </div>` : ''}
 
           <div style="margin-top: 28px;">
-            <a href="https://teksure.co/admin" style="display: inline-block; background: #2563eb; color: white; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+            <a href="https://teksure.com/admin" style="display: inline-block; background: #2563eb; color: white; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
               View in Admin Console →
             </a>
           </div>

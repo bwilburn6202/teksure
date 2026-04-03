@@ -3,7 +3,7 @@
 ## Project Overview
 TekSure is a tech support and digital literacy platform for non-technical users and seniors (60+).
 - **Stack:** React 18, TypeScript, Tailwind CSS, shadcn/ui, Supabase, React Query, React Router
-- **Supabase project ref:** `zrgtoefkqafndhxhbuag`
+- **Supabase project ref:** `vrhxitxzqtbphzsbdqih`
 - **GitHub:** https://github.com/bwilburn6202/teksure
 - **Dev path:** `/Users/baileywilburn/Documents/Claude/Projects/TekSure`
 - **Dev port:** http://localhost:5173

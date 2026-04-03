@@ -16,6 +16,7 @@ interface AuthContextType {
   isLoading: boolean;
   login: (email: string, password: string) => Promise<{ error: string | null }>;
   signup: (email: string, password: string, role: UserRole, fullName: string) => Promise<{ error: string | null; needsConfirmation: boolean }>;
+  loginWithProvider: (provider: 'google' | 'apple') => Promise<{ error: string | null }>;
   logout: () => Promise<void>;
 }
 
@@ -107,6 +108,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return { error: null, needsConfirmation };
   }, []);
 
+  const loginWithProvider = useCallback(async (provider: 'google' | 'apple') => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider,
+      options: { redirectTo: window.location.origin },
+    });
+    return { error: error?.message || null };
+  }, []);
+
   const logout = useCallback(async () => {
     await supabase.auth.signOut();
     setUser(null);
@@ -114,7 +123,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, session, isLoading, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, session, isLoading, login, signup, loginWithProvider, logout }}>
       {children}
     </AuthContext.Provider>
   );

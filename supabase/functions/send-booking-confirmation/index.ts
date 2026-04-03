@@ -69,14 +69,14 @@ serve(async (req) => {
             </p>
 
             <div style="text-align: center; margin-bottom: 32px;">
-              <a href="https://teksure.co/my-requests" style="display: inline-block; background: #2563eb; color: white; font-size: 15px; font-weight: 500; padding: 12px 24px; border-radius: 8px; text-decoration: none;">
+              <a href="https://teksure.com/my-requests" style="display: inline-block; background: #2563eb; color: white; font-size: 15px; font-weight: 500; padding: 12px 24px; border-radius: 8px; text-decoration: none;">
                 View my booking →
               </a>
             </div>
 
             <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
             <p style="font-size: 13px; color: #999; margin: 0;">
-              The TekSure Team · <a href="https://teksure.co" style="color: #2563eb;">teksure.co</a>
+              The TekSure Team · <a href="https://teksure.com" style="color: #2563eb;">teksure.com</a>
             </p>
           </div>
         `,
@@ -99,7 +99,7 @@ serve(async (req) => {
             <tr><td style="padding: 8px 0; color: #888;">Ref</td><td style="font-family: monospace;">${ref}</td></tr>
           </table>
           <div style="margin-top: 24px;">
-            <a href="https://teksure.co/admin" style="display: inline-block; background: #2563eb; color: white; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+            <a href="https://teksure.com/admin" style="display: inline-block; background: #2563eb; color: white; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
               Manage in Admin Console →
             </a>
           </div>
