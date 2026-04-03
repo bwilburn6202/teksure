@@ -17,6 +17,7 @@ import {
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
+import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
@@ -432,20 +433,15 @@ const GuideDetail = () => {
                           {i + 1}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-bold text-lg mb-3">{step.title}</h3>
+                          <div className="flex items-center gap-2 mb-3">
+                            {(() => {
+                              const Icon = getStepIcon(step.title, step.content);
+                              return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
+                            })()}
+                            <h3 className="font-bold text-lg">{step.title}</h3>
+                          </div>
                           <div className="text-base text-muted-foreground leading-relaxed">
-                            {step.content.split(/(`[^`]+`)/).map((part, pi) => {
-                              if (part.startsWith('`') && part.endsWith('`')) {
-                                const code = part.slice(1, -1);
-                                return (
-                                  <span key={pi} className="inline-flex items-center gap-1 bg-muted px-1.5 py-0.5 rounded font-mono text-sm">
-                                    {code}
-                                    <CopyButton text={code} />
-                                  </span>
-                                );
-                              }
-                              return <span key={pi}>{part}</span>;
-                            })}
+                            <StepContent text={step.content} />
                           </div>
 
                           {step.screenshotUrl && (
@@ -466,9 +462,9 @@ const GuideDetail = () => {
                             />
                           )}
 
-                          {step.tip && <ProTip>{step.tip}</ProTip>}
+                          {step.tip && <ProTip><StepContent text={step.tip} /></ProTip>}
 
-                          {step.warning && <WarningBox>{step.warning}</WarningBox>}
+                          {step.warning && <WarningBox><StepContent text={step.warning} /></WarningBox>}
                         </div>
                       </div>
                     </CardContent>
