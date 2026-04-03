@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone,
+  Users, Download, Phone, BellOff,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,13 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
-  summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',  full: 'Scammers often create websites with addresses very similar to popular sites — for example, "amaz0n.com" instead of "amazon.com". If you type a web address by hand, it\'s easy to make a small mistake and end up on a fraudulent site without realising. The safest solution is to bookmark your important websites (like your bank, email, and shopping sites) so you can access them with a single click. In most browsers, you can press Ctrl+D (or Cmd+D on Mac) to bookmark the page you\'re currently on. You can also organize your bookmarks into folders like "Banking", "Shopping", and "Email" to keep them tidy. Once bookmarked, always use the bookmark to visit the site rather than typing the address manually.',
-  category: 'Safety',
-  icon: Star,
+  title: 'Use "Do Not Disturb" Mode to Stop Unwanted Interruptions',
+  summary: 'Your phone has a built-in "Do Not Disturb" mode that silences calls, texts, and notifications — perfect for bedtime, doctor visits, or when scam calls won\'t stop.',
+  full: 'Every iPhone and Android phone has a "Do Not Disturb" (DND) feature that silences incoming calls, texts, and app notifications so you are not interrupted. On iPhone, open Settings, tap Focus, then tap Do Not Disturb and turn it on — you can also swipe down from the top-right corner and tap the crescent moon icon for quick access. On Android, swipe down from the top of your screen and tap the "Do Not Disturb" tile. The best part is you can allow calls from specific people (like family members) to still come through while blocking everyone else. On iPhone, tap "Allowed Notifications" inside your DND settings and choose "Favorites" or specific contacts. On Android, tap "People" in DND settings and add your important contacts. Many people set DND on a schedule — for example, automatically turning on at 10 PM and off at 7 AM — so you never have to remember to enable it yourself.',
+  category: 'Productivity',
+  icon: BellOff,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Use Bookmarks to Avoid Mistyped Web Addresses',
+    summary: 'Save the websites you visit regularly as bookmarks in your browser — this prevents typos in the address bar that could lead you to fake or dangerous lookalike sites.',
+    category: 'Safety',
+    icon: Star,
+  },
   {
     title: 'Recognise Fake Pop-Up Virus Warnings',
     summary: 'If a website shows a scary pop-up saying your computer is infected, don\'t click anything — it\'s almost certainly a scam designed to trick you into installing malware or calling a fake support number.',
