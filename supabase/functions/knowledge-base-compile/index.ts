@@ -12,7 +12,7 @@ const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
 const OLLAMA_BASE_URL = Deno.env.get('OLLAMA_BASE_URL') ?? 'http://host.docker.internal:11434';
 const OLLAMA_MODEL = Deno.env.get('OLLAMA_MODEL') ?? 'qwen2.5:7b';
 
-type Mode = 'compile' | 'answer';
+type Mode = 'compile' | 'answer' | 'deck';
 
 interface ScrapedArticle {
   id: string;
@@ -124,7 +124,7 @@ Return strict JSON with keys:
 - summary: 2-4 sentence summary
 - keywords: array of 4 to 8 short keywords
 
-Title: ${article.original_title}
+Title: ${article.title}
 Category: ${article.category ?? 'unknown'}
 Source: ${article.sourceName}
 URL: ${article.sourceUrl}
@@ -308,10 +308,10 @@ serve(async (req) => {
       });
     }
 
-    if (mode === 'answer') {
+    if (mode === 'answer' || mode === 'deck') {
       const question = String(body.question ?? '').trim();
       if (!question) {
-        return json({ error: 'Question is required for answer mode.' }, 400);
+        return json({ error: `Question is required for ${mode} mode.` }, 400);
       }
 
       const { data: docs, error } = await supabase
@@ -333,7 +333,21 @@ serve(async (req) => {
         return json({ error: 'No compiled knowledge documents are available yet.' }, 422);
       }
 
-      const prompt = `Answer the question using the provided knowledge base sources.
+      const prompt = mode === 'deck'
+        ? `Create a Marp markdown slide deck using the provided knowledge base sources.
+
+Requirements:
+- Return valid markdown only
+- Start with frontmatter suitable for Marp
+- 6 to 10 slides
+- Use short bullets
+- Include a final slide listing the sources used
+
+Deck topic: ${question}
+
+Sources:
+${ranked.map((doc, index) => `Source ${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`
+        : `Answer the question using the provided knowledge base sources.
 
 Return markdown with these sections:
 - # title
@@ -352,7 +366,7 @@ ${ranked.map((doc, index) => `Source ${index + 1}: ${doc.title}\nSummary: ${doc.
       const { data: output, error: outputError } = await supabase
         .from('knowledge_outputs')
         .insert({
-          output_type: 'answer',
+          output_type: mode === 'deck' ? 'deck' : 'answer',
           title,
           prompt: question,
           markdown,
@@ -370,6 +384,7 @@ ${ranked.map((doc, index) => `Source ${index + 1}: ${doc.title}\nSummary: ${doc.
       return json({
         ok: true,
         output,
+        outputType: mode === 'deck' ? 'deck' : 'answer',
         sourcesUsed: ranked.length,
         model: OLLAMA_MODEL,
       });

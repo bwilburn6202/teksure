@@ -15,6 +15,7 @@ The current branch adds:
 - `knowledge-base-compile` edge function
 
 It compiles from `scraped_articles` plus admin-added manual sources and generates markdown answer artifacts.
+It also generates Marp-compatible deck outputs.
 
 ## Required Secrets
 
@@ -89,8 +90,9 @@ npm run dev
 
 1. Confirm Ollama health shows `Available`.
 2. Add manual sources by file import or paste.
-3. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
-4. Use `Generate Answer` to create a markdown artifact in `knowledge_outputs`.
+3. Edit or delete manual sources in the source library as needed.
+4. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
+5. Use `Generate Answer` or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
 
 ## Failure Modes
 
@@ -130,6 +132,6 @@ Checks:
 
 ## Current Limitations
 
-- no deck generation yet
 - no filesystem vault sync yet
+- no PDF/docx parsing pipeline yet
 - concept generation is intentionally lightweight and derived from compiled keywords

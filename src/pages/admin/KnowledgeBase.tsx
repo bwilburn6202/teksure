@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Database, FileText, RefreshCw, Sparkles, TriangleAlert } from 'lucide-react';
+import { Brain, Database, FileText, Pencil, RefreshCw, Sparkles, Trash2, TriangleAlert } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -29,7 +29,18 @@ interface CountsState {
 interface OutputRow {
   id: string;
   title: string;
+  output_type: 'answer' | 'deck' | 'report';
   markdown: string;
+  created_at: string;
+}
+
+interface ManualSourceRow {
+  id: string;
+  title: string;
+  source_type: 'manual' | 'upload';
+  original_filename: string | null;
+  source_url: string | null;
+  content: string;
   created_at: string;
 }
 
@@ -37,15 +48,20 @@ export default function KnowledgeBase() {
   const [health, setHealth] = useState<HealthState | null>(null);
   const [counts, setCounts] = useState<CountsState>({ documents: 0, concepts: 0, outputs: 0, manualSources: 0 });
   const [recentOutputs, setRecentOutputs] = useState<OutputRow[]>([]);
+  const [manualSources, setManualSources] = useState<ManualSourceRow[]>([]);
   const [question, setQuestion] = useState('What themes are emerging across the latest sources?');
   const [runningCompile, setRunningCompile] = useState(false);
   const [runningAnswer, setRunningAnswer] = useState(false);
+  const [runningDeck, setRunningDeck] = useState(false);
   const [latestAnswer, setLatestAnswer] = useState('');
+  const [latestDeck, setLatestDeck] = useState('');
   const [compileLimit, setCompileLimit] = useState('8');
   const [manualTitle, setManualTitle] = useState('');
   const [manualUrl, setManualUrl] = useState('');
   const [manualContent, setManualContent] = useState('');
   const [uploading, setUploading] = useState(false);
+  const [editingSourceId, setEditingSourceId] = useState<string | null>(null);
+  const [deletingSourceId, setDeletingSourceId] = useState<string | null>(null);
 
   const loadHealth = useCallback(async () => {
     const { data, error } = await supabase.functions.invoke('ollama-health');
@@ -62,16 +78,21 @@ export default function KnowledgeBase() {
   }, []);
 
   const loadData = useCallback(async () => {
-    const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }] = await Promise.all([
+    const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }, { data: manualRows }] = await Promise.all([
       supabase.from('knowledge_documents' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_concepts' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_outputs' as any).select('id', { head: true, count: 'exact' }),
       supabase.from('knowledge_manual_sources' as any).select('*', { head: true, count: 'exact' }),
       supabase
         .from('knowledge_outputs' as any)
-        .select('id, title, markdown, created_at')
+        .select('id, title, output_type, markdown, created_at')
         .order('created_at', { ascending: false })
-        .limit(5),
+        .limit(6),
+      supabase
+        .from('knowledge_manual_sources' as any)
+        .select('id, title, source_type, original_filename, source_url, content, created_at')
+        .order('created_at', { ascending: false })
+        .limit(8),
     ]);
 
     setCounts({
@@ -81,6 +102,7 @@ export default function KnowledgeBase() {
       manualSources: manualSources ?? 0,
     });
     setRecentOutputs((outputRows ?? []) as OutputRow[]);
+    setManualSources((manualRows ?? []) as ManualSourceRow[]);
   }, []);
 
   useEffect(() => {
@@ -136,14 +158,27 @@ export default function KnowledgeBase() {
     originalFilename?: string;
   }) => {
     const { data: authData } = await supabase.auth.getUser();
-    const { error } = await supabase.from('knowledge_manual_sources' as any).insert({
-      title: payload.title,
-      source_type: payload.sourceType,
-      original_filename: payload.originalFilename ?? null,
-      source_url: payload.sourceUrl || null,
-      content: payload.content,
-      created_by: authData.user?.id ?? null,
-    });
+    const operation = editingSourceId
+      ? supabase
+          .from('knowledge_manual_sources' as any)
+          .update({
+            title: payload.title,
+            source_type: payload.sourceType,
+            original_filename: payload.originalFilename ?? null,
+            source_url: payload.sourceUrl || null,
+            content: payload.content,
+          })
+          .eq('id', editingSourceId)
+      : supabase.from('knowledge_manual_sources' as any).insert({
+          title: payload.title,
+          source_type: payload.sourceType,
+          original_filename: payload.originalFilename ?? null,
+          source_url: payload.sourceUrl || null,
+          content: payload.content,
+          created_by: authData.user?.id ?? null,
+        });
+
+    const { error } = await operation;
 
     if (error) {
       throw error;
@@ -164,16 +199,71 @@ export default function KnowledgeBase() {
         sourceUrl: manualUrl.trim() || undefined,
         sourceType: 'manual',
       });
+      setEditingSourceId(null);
       setManualTitle('');
       setManualUrl('');
       setManualContent('');
-      toast.success('Manual source saved.');
+      toast.success(editingSourceId ? 'Manual source updated.' : 'Manual source saved.');
       await loadData();
     } catch (error) {
       toast.error(error instanceof Error ? error.message : 'Failed to save manual source.');
     } finally {
       setUploading(false);
     }
+  };
+
+  const startEditSource = (source: ManualSourceRow) => {
+    setEditingSourceId(source.id);
+    setManualTitle(source.title);
+    setManualUrl(source.source_url ?? '');
+    setManualContent(source.content);
+  };
+
+  const deleteSource = async (sourceId: string) => {
+    setDeletingSourceId(sourceId);
+    const { error } = await supabase.from('knowledge_manual_sources' as any).delete().eq('id', sourceId);
+    setDeletingSourceId(null);
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
+    if (editingSourceId === sourceId) {
+      setEditingSourceId(null);
+      setManualTitle('');
+      setManualUrl('');
+      setManualContent('');
+    }
+    toast.success('Manual source deleted.');
+    await loadData();
+  };
+
+  const cancelEdit = () => {
+    setEditingSourceId(null);
+    setManualTitle('');
+    setManualUrl('');
+    setManualContent('');
+  };
+
+  const runDeck = async () => {
+    if (!question.trim()) {
+      toast.error('Enter a deck topic first.');
+      return;
+    }
+
+    setRunningDeck(true);
+    const { data, error } = await supabase.functions.invoke('knowledge-base-compile', {
+      body: { mode: 'deck', question: question.trim() },
+    });
+    setRunningDeck(false);
+
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
+
+    setLatestDeck(data.output?.markdown ?? '');
+    toast.success('Deck generated.');
+    await loadData();
   };
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -335,8 +425,13 @@ export default function KnowledgeBase() {
                   />
                 </div>
                 <Button onClick={submitManualSource} disabled={uploading}>
-                  {uploading ? 'Saving...' : 'Save Manual Source'}
+                  {uploading ? 'Saving...' : editingSourceId ? 'Update Manual Source' : 'Save Manual Source'}
                 </Button>
+                {editingSourceId && (
+                  <Button variant="outline" onClick={cancelEdit} disabled={uploading}>
+                    Cancel Edit
+                  </Button>
+                )}
               </div>
             </CardContent>
           </Card>
@@ -347,7 +442,7 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground">
-                Builds source summaries and concept pages from the latest accepted scraped articles.
+                Builds source summaries and concept pages from the latest accepted scraped articles and manual sources.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
                 <div className="w-full sm:max-w-[180px]">
@@ -377,16 +472,67 @@ export default function KnowledgeBase() {
                 value={question}
                 onChange={(event) => setQuestion(event.target.value)}
                 rows={4}
-                placeholder="Ask a synthesis question across the compiled source set."
+                placeholder="Ask a synthesis question or enter a deck topic across the compiled source set."
               />
-              <Button disabled={!health?.available || runningAnswer} onClick={runAnswer}>
-                {runningAnswer ? 'Generating...' : 'Generate Answer'}
-              </Button>
+              <div className="flex flex-wrap gap-3">
+                <Button disabled={!health?.available || runningAnswer} onClick={runAnswer}>
+                  {runningAnswer ? 'Generating...' : 'Generate Answer'}
+                </Button>
+                <Button variant="outline" disabled={!health?.available || runningDeck} onClick={runDeck}>
+                  {runningDeck ? 'Building Deck...' : 'Generate Deck'}
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </section>
 
-        <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Manual Source Library</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {manualSources.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No manual sources yet.</p>
+              ) : manualSources.map((source) => (
+                <div key={source.id} className="rounded-xl border p-4">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="font-medium">{source.title}</p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {source.source_type === 'upload' ? 'Upload' : 'Manual'} · {new Date(source.created_at).toLocaleString()}
+                      </p>
+                      {source.original_filename && (
+                        <p className="text-xs text-muted-foreground mt-1">File: {source.original_filename}</p>
+                      )}
+                      {source.source_url && (
+                        <a href={source.source_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">
+                          {source.source_url}
+                        </a>
+                      )}
+                    </div>
+                    <div className="flex gap-2">
+                      <Button size="sm" variant="outline" onClick={() => startEditSource(source)}>
+                        <Pencil className="h-4 w-4 mr-1.5" />
+                        Edit
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => void deleteSource(source.id)}
+                        disabled={deletingSourceId === source.id}
+                      >
+                        <Trash2 className="h-4 w-4 mr-1.5" />
+                        {deletingSourceId === source.id ? 'Deleting...' : 'Delete'}
+                      </Button>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-3 line-clamp-4">{source.content}</p>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
           <Card className="rounded-2xl border border-border">
             <CardHeader>
               <CardTitle>Latest Generated Answer</CardTitle>
@@ -403,6 +549,25 @@ export default function KnowledgeBase() {
               )}
             </CardContent>
           </Card>
+        </section>
+
+        <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Latest Generated Deck</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {latestDeck ? (
+                <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto">
+                  {latestDeck}
+                </pre>
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  No deck generated in this session yet.
+                </p>
+              )}
+            </CardContent>
+          </Card>
 
           <Card className="rounded-2xl border border-border">
             <CardHeader>
@@ -413,7 +578,10 @@ export default function KnowledgeBase() {
                 <p className="text-sm text-muted-foreground">No outputs yet.</p>
               ) : recentOutputs.map((output) => (
                 <div key={output.id} className="rounded-xl border p-4">
-                  <p className="font-medium">{output.title}</p>
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="font-medium">{output.title}</p>
+                    <Badge variant="secondary">{output.output_type}</Badge>
+                  </div>
                   <p className="text-xs text-muted-foreground mt-1">
                     {new Date(output.created_at).toLocaleString()}
                   </p>
