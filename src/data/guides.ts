@@ -12675,4 +12675,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   },
 ];
 
-export const guides: Guide[] = coreGuides;
+import { guidesBatch2 } from './guides-batch-2';
+import { guidesBatch3 } from './guides-batch-3';
+
+export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3];
