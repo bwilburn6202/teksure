@@ -6,8 +6,8 @@
 //   SITE_URL           — e.g. https://teksure.com (no trailing slash)
 //
 // Set them with:
-//   npx supabase secrets set STRIPE_SECRET_KEY=sk_test_... --project-ref zrgtoefkqafndhxhbuag
-//   npx supabase secrets set SITE_URL=https://teksure.com   --project-ref zrgtoefkqafndhxhbuag
+//   npx supabase secrets set STRIPE_SECRET_KEY=sk_test_... --project-ref vrhxitxzqtbphzsbdqih
+//   npx supabase secrets set SITE_URL=https://teksure.com   --project-ref vrhxitxzqtbphzsbdqih
 
 import Stripe from 'https://esm.sh/stripe@13.11.0?target=deno';
 

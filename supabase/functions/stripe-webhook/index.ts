@@ -9,7 +9,7 @@
 //
 // Set up in Stripe dashboard:
 //   Developers → Webhooks → Add endpoint
-//   URL: https://zrgtoefkqafndhxhbuag.supabase.co/functions/v1/stripe-webhook
+//   URL: https://vrhxitxzqtbphzsbdqih.supabase.co/functions/v1/stripe-webhook
 //   Events to listen for: checkout.session.completed, checkout.session.expired
 
 import Stripe from 'https://esm.sh/stripe@13.11.0?target=deno';

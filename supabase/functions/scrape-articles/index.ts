@@ -39,7 +39,7 @@ const ARTICLE_DELAY_MS = 1500;
 const SOURCE_DELAY_MS = 2000;
 
 /** User-Agent sent with every request */
-const UA = 'TekSure Content Aggregator/1.0 (https://teksure.co)';
+const UA = 'TekSure Content Aggregator/1.0 (https://teksure.com)';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
