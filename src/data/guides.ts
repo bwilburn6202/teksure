@@ -100,11 +100,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.', screenshotUrl: '/screenshots/windows/turn-pc-on-and-off-step-1.png', screenshotAlt: 'Laptop keyboard with power button highlighted in the top-right corner' },
-      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.', screenshotUrl: '/screenshots/windows/turn-pc-on-and-off-step-2.png', screenshotAlt: 'Windows 11 boot screen with logo and loading spinner' },
-      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', screenshotUrl: '/screenshots/windows/turn-pc-on-and-off-step-3.png', screenshotAlt: 'Windows 11 lock screen with user avatar and PIN number pad', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
-      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', screenshotUrl: '/screenshots/windows/turn-pc-on-and-off-step-4.png', screenshotAlt: 'Windows Start menu showing Power options: Sleep, Shut Down, Restart', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
-      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', screenshotUrl: '/screenshots/windows/turn-pc-on-and-off-step-5.png', screenshotAlt: 'Windows Start menu Power options with Sleep highlighted', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
+      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
+      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
+      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
+      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
     ]
   },
   {
@@ -119,11 +119,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', screenshotUrl: '/screenshots/windows/connect-wifi-windows-step-1.png', screenshotAlt: 'Windows 11 taskbar showing the network, sound, and battery icons in the system tray', annotations: [{ type: 'callout', x: 82, y: 78, label: '1' }, { type: 'arrow', x: 82, y: 70, direction: 'down', label: 'Click here' }] },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', screenshotUrl: '/screenshots/windows/connect-wifi-windows-step-2.png', screenshotAlt: 'Windows 11 Quick Settings panel showing Wi-Fi, Bluetooth, and Airplane mode toggles', annotations: [{ type: 'highlight', x: 15, y: 35, width: 28, height: 22, label: 'Wi-Fi toggle' }, { type: 'callout', x: 29, y: 46, label: '1' }], beforeCaption: 'Wi-Fi toggle is grey/OFF — no networks are visible yet.', afterCaption: 'Wi-Fi toggle is blue/ON — a list of nearby networks appears below.', beforeLabel: 'Wi-Fi OFF', afterLabel: 'Wi-Fi ON' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', screenshotUrl: '/screenshots/windows/connect-wifi-windows-step-3.png', screenshotAlt: 'Windows 11 Add Wi-Fi network dialog showing a network name with Connect automatically checkbox', tip: 'Look for your network name on a sticker on the bottom or back of your router.', annotations: [{ type: 'highlight', x: 10, y: 22, width: 80, height: 14, label: 'Your network' }, { type: 'callout', x: 85, y: 29, label: '✓' }] },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', screenshotUrl: '/screenshots/windows/connect-wifi-windows-step-4.png', screenshotAlt: 'Windows 11 Wi-Fi network properties showing password field with Show button and Connect automatically option', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.', annotations: [{ type: 'callout', x: 50, y: 42, label: '1' }, { type: 'callout', x: 70, y: 68, label: '2' }, { type: 'arrow', x: 50, y: 75, direction: 'down', label: 'Click Connect' }] },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', screenshotUrl: '/screenshots/windows/connect-wifi-windows-step-5.png', screenshotAlt: 'Windows taskbar showing connected Wi-Fi icon with full signal bars', annotations: [{ type: 'callout', x: 82, y: 75, label: '✓' }, { type: 'arrow', x: 82, y: 68, direction: 'down', label: 'Connected!' }], beforeCaption: 'Taskbar Wi-Fi icon shows an X or empty bars — no internet access.', afterCaption: 'Taskbar Wi-Fi icon shows full signal bars — you\'re online!', beforeLabel: 'Not Connected', afterLabel: 'Connected ✓', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.' },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.' },
     ]
   },
   {
@@ -137,11 +137,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.', screenshotUrl: '/screenshots/windows/open-close-programs-windows-step-1.png', screenshotAlt: 'Windows 11 Start menu open showing pinned apps grid' },
-      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.', screenshotUrl: '/screenshots/windows/open-close-programs-windows-step-2.png', screenshotAlt: 'Windows 11 desktop with app shortcut icons, one highlighted for double-click' },
-      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.', screenshotUrl: '/screenshots/windows/open-close-programs-windows-step-3.png', screenshotAlt: 'Windows 11 taskbar showing pinned app icons with active app highlighted' },
-      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.', screenshotUrl: '/screenshots/windows/open-close-programs-windows-step-4.png', screenshotAlt: 'Notepad window with the red X close button highlighted in top-right corner' },
-      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.', screenshotUrl: '/screenshots/windows/open-close-programs-windows-step-5.png', screenshotAlt: 'Windows Task Manager showing a frozen app selected with End Task button' },
+      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.' },
+      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.' },
+      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.' },
+      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.' },
+      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.' },
     ]
   },
   {
@@ -155,11 +155,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-08',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.', screenshotUrl: '/screenshots/windows/use-taskbar-windows-step-1.png', screenshotAlt: 'Windows 11 taskbar with Start, Search, pinned apps, and system tray labelled' },
-      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.', screenshotUrl: '/screenshots/windows/use-taskbar-windows-step-2.png', screenshotAlt: 'Right-click context menu on an app showing Pin to taskbar option highlighted' },
-      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.', screenshotUrl: '/screenshots/windows/use-taskbar-windows-step-3.png', screenshotAlt: 'Windows 11 taskbar showing active app with window preview tooltip' },
-      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.', screenshotUrl: '/screenshots/windows/use-taskbar-windows-step-4.png', screenshotAlt: 'Windows 11 Quick Settings flyout showing Wi-Fi, Bluetooth, Brightness, and other toggles' },
-      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.', screenshotUrl: '/screenshots/windows/use-taskbar-windows-step-5.png', screenshotAlt: 'Windows 11 Task View showing open windows on the current desktop' },
+      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.' },
+      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.' },
+      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.' },
+      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.' },
+      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.' },
     ]
   },
   {
@@ -174,11 +174,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.', screenshotUrl: '/screenshots/windows/take-screenshot-windows-step-1.png', screenshotAlt: 'Keyboard showing the PrtScn key highlighted for full screen capture' },
-      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.', screenshotUrl: '/screenshots/windows/take-screenshot-windows-step-2.png', screenshotAlt: 'File Explorer showing the Pictures > Screenshots folder with saved PNG files' },
-      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.', screenshotUrl: '/screenshots/windows/take-screenshot-windows-step-3.png', screenshotAlt: 'Windows screen with Snipping Tool selection rectangle and toolbar at top' },
-      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.', screenshotUrl: '/screenshots/windows/take-screenshot-windows-step-4.png', screenshotAlt: 'Keyboard showing Alt + PrtScn shortcut for capturing a single window' },
-      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.', screenshotUrl: '/screenshots/windows/take-screenshot-windows-step-5.png', screenshotAlt: 'Snipping Tool editor showing a captured screenshot with annotation tools' },
+      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.' },
+      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.' },
+      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.' },
+      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.' },
+      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.' },
     ]
   },
   {
@@ -192,11 +192,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-10',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.', screenshotUrl: '/screenshots/windows/copy-paste-windows-step-1.png', screenshotAlt: 'Notepad with a line of text highlighted in blue showing text selection' },
-      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".', screenshotUrl: '/screenshots/windows/copy-paste-windows-step-2.png', screenshotAlt: 'Right-click context menu showing Copy option highlighted in blue' },
-      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.', screenshotUrl: '/screenshots/windows/copy-paste-windows-step-3.png', screenshotAlt: 'Right-click context menu showing Paste option highlighted' },
-      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).', screenshotUrl: '/screenshots/windows/copy-paste-windows-step-4.png', screenshotAlt: 'Illustration showing Cut moving a file from source to destination folder' },
-      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.', screenshotUrl: '/screenshots/windows/copy-paste-windows-step-5.png', screenshotAlt: 'Windows clipboard history panel (Win+V) showing list of recently copied items' },
+      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.' },
+      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".' },
+      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.' },
+      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).' },
+      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.' },
     ]
   },
   {
@@ -210,11 +210,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-11',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!', screenshotUrl: '/screenshots/windows/save-file-windows-step-1.png', screenshotAlt: 'Excel spreadsheet showing Saved to OneDrive indicator after pressing Ctrl+S' },
-      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.', screenshotUrl: '/screenshots/windows/save-file-windows-step-2.png', screenshotAlt: 'Windows Save As dialog with file name field and folder browser' },
-      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.', screenshotUrl: '/screenshots/windows/save-file-windows-step-3.png', screenshotAlt: 'Save As dialog showing Documents folder selected as save location' },
-      { title: 'Name your file clearly', content: 'Give files descriptive names like "Budget_March_2026" instead of "Untitled" so you can find them later.', screenshotUrl: '/screenshots/windows/save-file-windows-step-4.png', screenshotAlt: 'Comparison of bad file names versus good descriptive file names' },
-      { title: 'Auto-save features', content: 'Many modern apps like Word and Google Docs auto-save your work. Look for the cloud or checkmark icon confirming saves.', screenshotUrl: '/screenshots/windows/save-file-windows-step-5.png', screenshotAlt: 'Word document showing AutoSave is On indicator in the title bar' },
+      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!' },
+      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.' },
+      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.' },
+      { title: 'Name your file clearly', content: 'Give files descriptive names like "Budget_March_2026" instead of "Untitled" so you can find them later.' },
+      { title: 'Auto-save features', content: 'Many modern apps like Word and Google Docs auto-save your work. Look for the cloud or checkmark icon confirming saves.' },
     ]
   },
   {
@@ -228,11 +228,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-12',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.', screenshotUrl: '/screenshots/windows/create-folder-windows-step-1.png', screenshotAlt: 'Windows desktop right-click context menu showing New > Folder option' },
-      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.', screenshotUrl: '/screenshots/windows/create-folder-windows-step-2.png', screenshotAlt: 'File Explorer with the New button dropdown showing Folder option highlighted' },
-      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.', screenshotUrl: '/screenshots/windows/create-folder-windows-step-3.png', screenshotAlt: 'Keyboard shortcut Ctrl+Shift+N shown with a new folder being created' },
-      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.', screenshotUrl: '/screenshots/windows/create-folder-windows-step-4.png', screenshotAlt: 'Examples of good vs bad folder names with green checks and red crosses' },
-      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.', screenshotUrl: '/screenshots/windows/create-folder-windows-step-5.png', screenshotAlt: 'File Explorer showing a nested folder hierarchy: Documents > Work > TekSure' },
+      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.' },
+      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.' },
+      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.' },
+      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.' },
+      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.' },
     ]
   },
   {
@@ -352,10 +352,10 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-19',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.', screenshotUrl: '/screenshots/windows/restart-pc-windows-step-1.png', screenshotAlt: 'Windows Start menu with Power options showing Restart highlighted' },
-      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.', screenshotUrl: '/screenshots/windows/restart-pc-windows-step-2.png', screenshotAlt: 'Ctrl+Alt+Delete screen with Power icon in bottom-right corner' },
+      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.' },
+      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.' },
       { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!' },
-      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', screenshotUrl: '/screenshots/windows/restart-pc-windows-step-4.png', screenshotAlt: 'Laptop power button with hold timer overlay for force restart', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
+      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
     ]
   },
   {
@@ -369,11 +369,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-20',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Check your storage', content: 'Open File Explorer → This PC. You\'ll see your drives with colored bars showing used/free space.', screenshotUrl: '/screenshots/windows/manage-storage-windows-step-1.png', screenshotAlt: 'File Explorer This PC view with C: drive nearly full and D: drive half full' },
-      { title: 'Run Disk Cleanup', content: 'Right-click your C: drive → Properties → Disk Cleanup. Check all boxes and click Delete Files.', screenshotUrl: '/screenshots/windows/manage-storage-windows-step-2.png', screenshotAlt: 'Disk Cleanup wizard showing 4.1 GB space to be freed', tip: 'Click "Clean up system files" for even more space — this removes old Windows Update files.' },
-      { title: 'Find large files', content: 'In File Explorer, go to your Downloads folder. Click "Sort" → Sort by Size. Look for files you no longer need.', screenshotUrl: '/screenshots/windows/manage-storage-windows-step-3.png', screenshotAlt: 'Downloads folder sorted by size showing large files' },
-      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size. Uninstall anything you don\'t recognize or use.', screenshotUrl: '/screenshots/windows/manage-storage-windows-step-4.png', screenshotAlt: 'Windows Settings Installed Apps sorted by size with Uninstall buttons' },
-      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', screenshotUrl: '/screenshots/windows/manage-storage-windows-step-5.png', screenshotAlt: 'Windows Storage Sense settings toggled on', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule. For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft\'s guide to improving PC performance.' },
+      { title: 'Check your storage', content: 'Open File Explorer → This PC. You\'ll see your drives with colored bars showing used/free space.' },
+      { title: 'Run Disk Cleanup', content: 'Right-click your C: drive → Properties → Disk Cleanup. Check all boxes and click Delete Files.', tip: 'Click "Clean up system files" for even more space — this removes old Windows Update files.' },
+      { title: 'Find large files', content: 'In File Explorer, go to your Downloads folder. Click "Sort" → Sort by Size. Look for files you no longer need.' },
+      { title: 'Uninstall unused apps', content: 'Go to Settings → Apps → Installed Apps. Sort by size. Uninstall anything you don\'t recognize or use.' },
+      { title: 'Enable Storage Sense', content: 'Go to Settings → System → Storage → Storage Sense. Turn it on to automatically free up space.', tip: 'Storage Sense can automatically empty your Recycle Bin and delete old temporary files on a schedule. For more tips, visit support.microsoft.com/en-us/windows/tips-to-improve-pc-performance-in-windows — Microsoft\'s guide to improving PC performance.' },
     ]
   },
   {
@@ -387,11 +387,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-21',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.', screenshotUrl: '/screenshots/windows/setup-email-windows-mail-step-1.png', screenshotAlt: 'Windows Start menu search showing Mail app result' },
-      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).', screenshotUrl: '/screenshots/windows/setup-email-windows-mail-step-2.png', screenshotAlt: 'Windows Mail Add Account dialog showing email provider options' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.' },
-      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.', screenshotUrl: '/screenshots/windows/setup-email-windows-mail-step-3.png', screenshotAlt: 'Windows Mail sign-in form with email and password fields' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.' },
+      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.' },
+      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.' },
+      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.' },
       { title: 'Customize your inbox', content: 'Set up notifications, choose a sync schedule, and customize swipe actions in Settings.' },
-      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.', screenshotUrl: '/screenshots/windows/setup-email-windows-mail-step-5.png', screenshotAlt: 'Windows Mail compose window with New Mail button and email form' },
+      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.' },
     ]
   },
   {
@@ -405,7 +405,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-22',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Backup settings', content: 'Go to Settings → Accounts → Windows Backup to see your backup options.', screenshotUrl: '/screenshots/windows/setup-windows-backup-step-1.png', screenshotAlt: 'Windows Settings Backup page with OneDrive sync and File History' },
+      { title: 'Open Backup settings', content: 'Go to Settings → Accounts → Windows Backup to see your backup options.' },
       { title: 'Set up OneDrive sync', content: 'Sign in with your Microsoft account and choose which folders to sync: Desktop, Documents, and Pictures.' , tip: 'OneDrive gives you 5GB free. If you need more, Microsoft 365 includes 1TB of OneDrive storage.' },
       { title: 'Enable File History', content: 'Connect an external drive, then go to Settings → System → Storage → Advanced storage → Backup Options.' },
       { title: 'Set backup frequency', content: 'Choose how often File History backs up (every 10 minutes to daily) and how long to keep versions.' },
@@ -423,7 +423,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-23',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Task View', content: 'Press Win+Tab or click the Task View button on the taskbar to see all open windows and desktops.', screenshotUrl: '/screenshots/windows/use-virtual-desktops-windows-step-1.png', screenshotAlt: 'Windows Task View showing desktops and open windows' },
+      { title: 'Open Task View', content: 'Press Win+Tab or click the Task View button on the taskbar to see all open windows and desktops.' },
       { title: 'Create a new desktop', content: 'Click "New Desktop" at the top of Task View. You now have a clean workspace.' },
       { title: 'Switch between desktops', content: 'Use Win+Ctrl+Left/Right arrows to move between desktops, or click them in Task View.' },
       { title: 'Move windows between desktops', content: 'In Task View, drag a window from one desktop to another, or right-click → Move to → Desktop X.' },
@@ -441,7 +441,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-24',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.', screenshotUrl: '/screenshots/windows/print-document-windows-step-1.png', screenshotAlt: 'Windows print dialog with printer selection, copies, and preview' },
+      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.' },
       { title: 'Select your printer', content: 'Choose your printer from the dropdown list. Make sure it\'s turned on and connected.' },
       { title: 'Adjust settings', content: 'Set the number of copies, page range, orientation (portrait/landscape), and paper size.' },
       { title: 'Preview before printing', content: 'Use the print preview to check how your document will look before using paper and ink.' },
@@ -623,7 +623,7 @@ const coreGuides: Guide[] = [
     difficulty: 'Intermediate',
     steps: [
       { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Esc to open Task Manager directly.' },
-      { title: 'Go to Startup tab', content: 'Click the "Startup apps" tab to see all programs that run when Windows starts.', screenshotUrl: '/screenshots/windows/manage-startup-programs-windows-step-2.png', screenshotAlt: 'Task Manager Startup Apps tab showing programs with impact ratings' },
+      { title: 'Go to Startup tab', content: 'Click the "Startup apps" tab to see all programs that run when Windows starts.' },
       { title: 'Check the impact', content: 'Look at the "Startup impact" column — High impact programs slow your boot time the most.' , tip: 'Focus on disabling "High impact" programs first. These make the biggest difference to your startup time.' },
       { title: 'Disable unnecessary programs', content: 'Right-click programs you don\'t need at startup and select "Disable." Be careful not to disable essential system programs.' , warning: 'Do not disable programs you do not recognise without checking first. Some are essential system processes. When in doubt, search the program name online.' },
       { title: 'Alternative method', content: 'Go to Settings → Apps → Startup for a simpler toggle-based interface.' },
@@ -965,9 +965,9 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-02-22',
     difficulty: 'Advanced',
     steps: [
-      { title: 'Run the network troubleshooter', content: 'Go to Settings → System → Troubleshoot → Other troubleshooters → Network & Internet.', screenshotUrl: '/screenshots/windows/troubleshoot-wifi-windows-step-1.png', screenshotAlt: 'Windows Settings Troubleshooters page with Internet Connections highlighted' },
+      { title: 'Run the network troubleshooter', content: 'Go to Settings → System → Troubleshoot → Other troubleshooters → Network & Internet.' },
       { title: 'Reset network settings', content: 'Settings → Network & Internet → Advanced → Network Reset. This reinstalls all network adapters.' , warning: 'Resetting network settings will remove all saved Wi-Fi passwords. Make sure you know your Wi-Fi password before doing this.' },
-      { title: 'Flush DNS cache', content: 'Open Command Prompt as admin and run "ipconfig /flushdns" to clear cached DNS entries.', screenshotUrl: '/screenshots/windows/troubleshoot-wifi-windows-step-3.png', screenshotAlt: 'Command Prompt showing ipconfig /flushdns with success message' , tip: 'Flushing DNS is safe and quick. It often fixes problems where websites fail to load but your internet connection seems fine.' },
+      { title: 'Flush DNS cache', content: 'Open Command Prompt as admin and run "ipconfig /flushdns" to clear cached DNS entries.' , tip: 'Flushing DNS is safe and quick. It often fixes problems where websites fail to load but your internet connection seems fine.' },
       { title: 'Update network drivers', content: 'Device Manager → Network Adapters → right-click your Wi-Fi adapter → Update Driver.' },
       { title: 'Forget and reconnect', content: 'Go to Wi-Fi settings → Manage Known Networks → click your network → Forget. Then reconnect fresh.', tip: 'For more detailed help, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s official Wi-Fi troubleshooting page. Need to talk to a real person? Call Senior Planet\'s free tech helpline at 888-713-3495 (Monday-Saturday). They speak English, Spanish, and Mandarin.' },
     ]
@@ -983,12 +983,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-02-23',
     difficulty: 'Advanced',
     steps: [
-      { title: 'Open Windows Security', content: 'Search "Windows Security" in Start or go to Settings → Privacy & Security → Windows Security.', screenshotUrl: '/screenshots/windows/use-windows-security-antivirus-step-1.png', screenshotAlt: 'Windows Start menu search for Windows Security app' },
-      { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.', screenshotUrl: '/screenshots/windows/use-windows-security-antivirus-step-2.png', screenshotAlt: 'Windows Security Virus & Threat Protection with Quick Scan button', tip: 'Run a Quick Scan weekly and a Full Scan monthly for best protection.' },
+      { title: 'Open Windows Security', content: 'Search "Windows Security" in Start or go to Settings → Privacy & Security → Windows Security.' },
+      { title: 'Run a virus scan', content: 'Click "Virus & Threat Protection" → Quick Scan for a fast check, or Scan Options → Full Scan for thorough scanning.', tip: 'Run a Quick Scan weekly and a Full Scan monthly for best protection.' },
       { title: 'Check protection status', content: 'The main dashboard shows green checkmarks if everything is protected. Yellow or red means action needed.' },
-      { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', screenshotUrl: '/screenshots/windows/use-windows-security-antivirus-step-4.png', screenshotAlt: 'Fake virus alert popup with FAKE stamp overlay', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.', tip: 'Learn more about tech support scams at support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams — Microsoft\'s official guide to spotting and avoiding these scams.' },
-      { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.', screenshotUrl: '/screenshots/windows/use-windows-security-antivirus-step-5.png', screenshotAlt: 'Windows Security protection toggles all turned on' },
-      { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.', screenshotUrl: '/screenshots/windows/use-windows-security-antivirus-step-6.png', screenshotAlt: 'Windows Security Protection History with threat severity badges' },
+      { title: 'Spot fake virus alerts', content: 'Most scary virus pop-ups are fake scams. NEVER call any phone number shown in a pop-up. NEVER click buttons inside the pop-up.', warning: '80% of scary virus pop-ups are fake scams trying to trick you. NEVER call any phone number shown. NEVER click buttons inside the pop-up. Just close the browser tab.', tip: 'Learn more about tech support scams at support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams — Microsoft\'s official guide to spotting and avoiding these scams.' },
+      { title: 'Enable real-time protection', content: 'Ensure Real-time Protection, Cloud-delivered Protection, and Automatic Sample Submission are all on.' },
+      { title: 'Review threat history', content: 'Click "Protection History" to see past threats and the actions Windows Security has taken.' },
     ]
   },
   {
@@ -1062,11 +1062,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Click the Wi-Fi icon', content: 'Find the Wi-Fi icon in the menu bar at the top-right of the screen and click it.', screenshotUrl: '/screenshots/mac/connect-wifi-mac-step-1.png', screenshotAlt: 'macOS Control Center with Wi-Fi, Focus, Sound, and Now Playing controls' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the toggle to turn it on. Available networks will appear.', screenshotUrl: '/screenshots/mac/connect-wifi-mac-step-2.png', screenshotAlt: 'macOS Control Center showing Wi-Fi toggle turned on in blue' },
-      { title: 'Select your network', content: 'Click on your network name from the list of available networks.', screenshotUrl: '/screenshots/mac/connect-wifi-mac-step-3.png', screenshotAlt: 'macOS Wi-Fi network list showing available networks with signal strength' },
-      { title: 'Enter password', content: 'Type your Wi-Fi password and click Join. Check "Remember this network" for automatic connections.', screenshotUrl: '/screenshots/mac/connect-wifi-mac-step-4.png', screenshotAlt: 'macOS Join Wi-Fi network dialog with password field and Join button', warning: 'Wi-Fi passwords are case-sensitive. Double-check capitals and special characters. The password is usually on a sticker on your router.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show solid bars. Open Safari to confirm internet access.', screenshotUrl: '/screenshots/mac/connect-wifi-mac-step-5.png', screenshotAlt: 'macOS menu bar showing Wi-Fi connected icon with full signal bars' },
+      { title: 'Click the Wi-Fi icon', content: 'Find the Wi-Fi icon in the menu bar at the top-right of the screen and click it.' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the toggle to turn it on. Available networks will appear.' },
+      { title: 'Select your network', content: 'Click on your network name from the list of available networks.' },
+      { title: 'Enter password', content: 'Type your Wi-Fi password and click Join. Check "Remember this network" for automatic connections.', warning: 'Wi-Fi passwords are case-sensitive. Double-check capitals and special characters. The password is usually on a sticker on your router.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show solid bars. Open Safari to confirm internet access.' },
     ]
   },
   {
@@ -1080,11 +1080,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open from the Dock', content: 'Click any app icon on the Dock (the bar of icons at the bottom of the screen) to launch it.', screenshotUrl: '/screenshots/mac/open-close-apps-mac-step-1.png', screenshotAlt: 'The macOS Dock showing icons for apps, the Downloads folder, and the Trash' },
-      { title: 'Open from Launchpad', content: 'Click the Launchpad icon (grid of squares) on the Dock to see all installed apps. Click one to open it.', screenshotUrl: '/screenshots/mac/open-close-apps-mac-step-2.png', screenshotAlt: 'macOS Launchpad showing all installed apps arranged in a full-screen grid' },
-      { title: 'Open with Spotlight', content: 'Press Cmd+Space, type the app name, and press Enter — the fastest way to open anything.', screenshotUrl: '/screenshots/mac/open-close-apps-mac-step-3.png', screenshotAlt: 'The app browsing window in Spotlight on macOS' },
-      { title: 'Close a window', content: 'Click the red circle (X) in the top-left corner of the window. Note: this closes the window but may not quit the app.', screenshotUrl: '/screenshots/mac/open-close-apps-mac-step-4.png', screenshotAlt: 'macOS window with red, yellow, and green traffic light buttons in the top-left' },
-      { title: 'Quit an app completely', content: 'Press Cmd+Q or right-click the app icon in the Dock → Quit. This fully closes the application.', screenshotUrl: '/screenshots/mac/open-close-apps-mac-step-5.png', screenshotAlt: 'macOS Dock right-click context menu showing the Quit option for an app' },
+      { title: 'Open from the Dock', content: 'Click any app icon on the Dock (the bar of icons at the bottom of the screen) to launch it.' },
+      { title: 'Open from Launchpad', content: 'Click the Launchpad icon (grid of squares) on the Dock to see all installed apps. Click one to open it.' },
+      { title: 'Open with Spotlight', content: 'Press Cmd+Space, type the app name, and press Enter — the fastest way to open anything.' },
+      { title: 'Close a window', content: 'Click the red circle (X) in the top-left corner of the window. Note: this closes the window but may not quit the app.' },
+      { title: 'Quit an app completely', content: 'Press Cmd+Q or right-click the app icon in the Dock → Quit. This fully closes the application.' },
     ]
   },
   {
@@ -1098,11 +1098,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-08',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Full screen screenshot', content: 'Press Cmd+Shift+3 to capture the entire screen. The image saves to your Desktop.', screenshotUrl: '/screenshots/mac/take-screenshot-mac-step-1.png', screenshotAlt: 'Mac keyboard showing Cmd+Shift+3 keys highlighted for full screen screenshot' },
-      { title: 'Selected area screenshot', content: 'Press Cmd+Shift+4, then click and drag to select the area you want to capture.', screenshotUrl: '/screenshots/mac/take-screenshot-mac-step-2.png', screenshotAlt: 'macOS screen with crosshair selection cursor for Cmd+Shift+4 area screenshot' },
-      { title: 'Capture a specific window', content: 'Press Cmd+Shift+4, then press Space. Click the window you want to capture (it gets a nice shadow).', screenshotUrl: '/screenshots/mac/take-screenshot-mac-step-3.png', screenshotAlt: 'macOS camera cursor hovering over a window ready to capture it' },
-      { title: 'Screenshot toolbar', content: 'Press Cmd+Shift+5 to open the screenshot toolbar with all capture options plus screen recording.', screenshotUrl: '/screenshots/mac/take-screenshot-mac-step-4.png', screenshotAlt: 'The macOS Screenshot panel showing capture entire screen, capture selected window, capture selected portion, and screen recording options' },
-      { title: 'Markup and share', content: 'Click the screenshot thumbnail in the corner to open Markup. Add text, shapes, and annotations before saving.', screenshotUrl: '/screenshots/mac/take-screenshot-mac-step-5.png', screenshotAlt: 'Screenshot thumbnail appearing in the bottom-right corner after capture' },
+      { title: 'Full screen screenshot', content: 'Press Cmd+Shift+3 to capture the entire screen. The image saves to your Desktop.' },
+      { title: 'Selected area screenshot', content: 'Press Cmd+Shift+4, then click and drag to select the area you want to capture.' },
+      { title: 'Capture a specific window', content: 'Press Cmd+Shift+4, then press Space. Click the window you want to capture (it gets a nice shadow).' },
+      { title: 'Screenshot toolbar', content: 'Press Cmd+Shift+5 to open the screenshot toolbar with all capture options plus screen recording.' },
+      { title: 'Markup and share', content: 'Click the screenshot thumbnail in the corner to open Markup. Add text, shapes, and annotations before saving.' },
     ]
   },
   {
@@ -1151,10 +1151,10 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-11',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Create on the desktop', content: 'Right-click (two-finger click) on an empty desktop area → New Folder. Type a name and press Return.', screenshotUrl: '/screenshots/mac/create-folder-mac-step-1.png', screenshotAlt: 'macOS desktop right-click context menu with New Folder option highlighted' },
-      { title: 'Create in Finder', content: 'Open Finder, navigate to your location, then press Cmd+Shift+N to create a new folder.', screenshotUrl: '/screenshots/mac/create-folder-mac-step-2.png', screenshotAlt: 'A Finder window with the Finder sidebar on the left and file browsing area on the right' },
-      { title: 'Rename a folder', content: 'Click the folder name once to select it, click again to make it editable. Type the new name.', screenshotUrl: '/screenshots/mac/create-folder-mac-step-3.png', screenshotAlt: 'Finder showing a folder with its name in editable mode, highlighted in blue' },
-      { title: 'Use Smart Folders', content: 'In Finder, go to File → New Smart Folder to create folders that automatically collect files matching your criteria.', screenshotUrl: '/screenshots/mac/create-folder-mac-step-4.png', screenshotAlt: 'macOS Finder New Smart Folder dialog with search criteria builder' },
+      { title: 'Create on the desktop', content: 'Right-click (two-finger click) on an empty desktop area → New Folder. Type a name and press Return.' },
+      { title: 'Create in Finder', content: 'Open Finder, navigate to your location, then press Cmd+Shift+N to create a new folder.' },
+      { title: 'Rename a folder', content: 'Click the folder name once to select it, click again to make it editable. Type the new name.' },
+      { title: 'Use Smart Folders', content: 'In Finder, go to File → New Smart Folder to create folders that automatically collect files matching your criteria.' },
     ]
   },
   {
@@ -1168,10 +1168,10 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-12',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Adjust brightness', content: 'Use the F1 (dimmer) and F2 (brighter) keys on your keyboard to adjust screen brightness.', screenshotUrl: '/screenshots/mac/adjust-brightness-volume-mac-step-1.png', screenshotAlt: 'Mac keyboard with F1 (dim) and F2 (brighten) brightness keys highlighted' },
-      { title: 'Adjust volume', content: 'Use F10 (mute), F11 (volume down), and F12 (volume up) keys.', screenshotUrl: '/screenshots/mac/adjust-brightness-volume-mac-step-2.png', screenshotAlt: 'Mac keyboard with F10 (mute), F11 (volume down), F12 (volume up) highlighted' },
-      { title: 'Fine-tune adjustments', content: 'Hold Option+Shift while pressing brightness or volume keys for smaller, more precise adjustments.', screenshotUrl: '/screenshots/mac/adjust-brightness-volume-mac-step-3.png', screenshotAlt: 'Illustration comparing normal versus fine Option+Shift brightness steps' },
-      { title: 'Use Control Center', content: 'Click the Control Center icon (two toggles) in the menu bar for sliders for both brightness and volume.', screenshotUrl: '/screenshots/mac/adjust-brightness-volume-mac-step-4.png', screenshotAlt: 'macOS System Settings window with Appearance settings selected, showing display options' },
+      { title: 'Adjust brightness', content: 'Use the F1 (dimmer) and F2 (brighter) keys on your keyboard to adjust screen brightness.' },
+      { title: 'Adjust volume', content: 'Use F10 (mute), F11 (volume down), and F12 (volume up) keys.' },
+      { title: 'Fine-tune adjustments', content: 'Hold Option+Shift while pressing brightness or volume keys for smaller, more precise adjustments.' },
+      { title: 'Use Control Center', content: 'Click the Control Center icon (two toggles) in the menu bar for sliders for both brightness and volume.' },
     ]
   },
   {
@@ -1185,11 +1185,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-13',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Spotlight', content: 'Press Cmd+Space to open Spotlight search. Start typing immediately.', screenshotUrl: '/screenshots/mac/use-spotlight-search-mac-step-1.png', screenshotAlt: 'A Mac desktop with a Spotlight window showing search results, custom icons, and widgets' },
-      { title: 'Search for files', content: 'Type a file name and Spotlight will find it anywhere on your Mac. Press Enter to open it.', screenshotUrl: '/screenshots/mac/use-spotlight-search-mac-step-2.png', screenshotAlt: 'Spotlight search showing file results with a Quick Look preview panel' },
-      { title: 'Open apps quickly', content: 'Type the first few letters of an app name (like "saf" for Safari) and press Enter.', screenshotUrl: '/screenshots/mac/use-spotlight-search-mac-step-3.png', screenshotAlt: 'Spotlight search with "saf" typed showing Safari as the top app result' },
-      { title: 'Do calculations', content: 'Type a math equation (like "145*3") and Spotlight will show the answer instantly.', screenshotUrl: '/screenshots/mac/use-spotlight-search-mac-step-4.png', screenshotAlt: 'Spotlight search showing a math calculation with the result shown instantly' },
-      { title: 'Search the web', content: 'Type any query and Spotlight shows Wikipedia results, web suggestions, and more.', screenshotUrl: '/screenshots/mac/use-spotlight-search-mac-step-5.png', screenshotAlt: 'Spotlight search showing web suggestions and a Wikipedia article preview' },
+      { title: 'Open Spotlight', content: 'Press Cmd+Space to open Spotlight search. Start typing immediately.' },
+      { title: 'Search for files', content: 'Type a file name and Spotlight will find it anywhere on your Mac. Press Enter to open it.' },
+      { title: 'Open apps quickly', content: 'Type the first few letters of an app name (like "saf" for Safari) and press Enter.' },
+      { title: 'Do calculations', content: 'Type a math equation (like "145*3") and Spotlight will show the answer instantly.' },
+      { title: 'Search the web', content: 'Type any query and Spotlight shows Wikipedia results, web suggestions, and more.' },
     ]
   },
   {
@@ -1203,11 +1203,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-14',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Safari', content: 'Click the Safari icon (compass) in the Dock or press Cmd+Space and type "Safari."', screenshotUrl: '/screenshots/mac/use-safari-mac-step-1.png', screenshotAlt: 'A private Safari window with its dark Smart Search field next to a normal Safari window with a light Smart Search field' },
-      { title: 'Navigate to a website', content: 'Click the address bar, type a URL or search term, and press Enter.', screenshotUrl: '/screenshots/mac/use-safari-mac-step-2.png', screenshotAlt: 'Safari address bar showing a URL being typed with autocomplete suggestions' },
-      { title: 'Use tabs', content: 'Press Cmd+T for a new tab. Cmd+W closes the current tab. Cmd+Shift+T reopens the last closed tab.', screenshotUrl: '/screenshots/mac/use-safari-mac-step-3.png', screenshotAlt: 'Safari tab bar showing multiple open tabs with the active tab selected' },
-      { title: 'Bookmark a page', content: 'Press Cmd+D to bookmark the current page. Organize bookmarks in the sidebar (Cmd+Shift+L).', screenshotUrl: '/screenshots/mac/use-safari-mac-step-4.png', screenshotAlt: 'Safari Add Bookmark dialog with title field and Favorites folder selector' },
-      { title: 'Use Reader Mode', content: 'Click the Reader icon in the address bar to view articles in a clean, ad-free format.', screenshotUrl: '/screenshots/mac/use-safari-mac-step-5.png', screenshotAlt: 'Safari Reader Mode showing a clean article without ads or distractions' },
+      { title: 'Open Safari', content: 'Click the Safari icon (compass) in the Dock or press Cmd+Space and type "Safari."' },
+      { title: 'Navigate to a website', content: 'Click the address bar, type a URL or search term, and press Enter.' },
+      { title: 'Use tabs', content: 'Press Cmd+T for a new tab. Cmd+W closes the current tab. Cmd+Shift+T reopens the last closed tab.' },
+      { title: 'Bookmark a page', content: 'Press Cmd+D to bookmark the current page. Organize bookmarks in the sidebar (Cmd+Shift+L).' },
+      { title: 'Use Reader Mode', content: 'Click the Reader icon in the address bar to view articles in a clean, ad-free format.' },
     ]
   },
   {
@@ -1728,7 +1728,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.' },
       { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.' },
-      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.', screenshotUrl: '/screenshots/browser/create-strong-password-step-1.png', screenshotAlt: 'Password creation form with strength meter showing strong password' },
+      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.' },
       { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.' },
       { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.' },
     ]
@@ -1745,10 +1745,10 @@ const coreGuides: Guide[] = [
     difficulty: 'Beginner',
     steps: [
       { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).' },
-      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."', screenshotUrl: '/screenshots/browser/setup-two-factor-any-account-step-2.png', screenshotAlt: 'Google Security settings showing 2-Step Verification with Turn On button' },
-      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', screenshotUrl: '/screenshots/browser/setup-two-factor-any-account-step-3.png', screenshotAlt: 'QR code setup screen for authenticator app with scan instructions', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.' },
+      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."' },
+      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.' },
       { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.' },
-      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', screenshotUrl: '/screenshots/browser/setup-two-factor-any-account-step-5.png', screenshotAlt: 'Grid of one-time backup codes with download and print options', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.' },
+      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.' },
       { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.' },
     ]
   },
@@ -1767,7 +1767,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Check the sender address', content: 'Look at the actual email address, not just the display name. Scammers use addresses like support@amaz0n-help.com.', screenshotUrl: '/screenshots/browser/identify-phishing-emails-step-1.png', screenshotAlt: 'Phishing email example with red flags highlighted' , warning: 'Scammers can make the display name look like "PayPal Support" while the actual address is something like paypal@scam-site.com.' },
+      { title: 'Check the sender address', content: 'Look at the actual email address, not just the display name. Scammers use addresses like support@amaz0n-help.com.' , warning: 'Scammers can make the display name look like "PayPal Support" while the actual address is something like paypal@scam-site.com.' },
       { title: 'Look for urgency', content: 'Phrases like "Your account will be closed!" or "Act within 24 hours!" are classic phishing tactics.' },
       { title: 'Hover over links (don\'t click)', content: 'Before clicking any link, hover your cursor to see the actual URL. Legitimate companies use their own domains.' },
       { title: 'Check for poor grammar', content: 'Many phishing emails have spelling errors, odd formatting, or awkward language.' },
@@ -3963,7 +3963,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Set up a Guest Network for visitors',
-        content: 'Most modern routers have a "Guest Network" option. Enable it and give it a separate password. When friends or repairmen visit, give them the guest password — not your main one. Guest networks are isolated, so visitors can\'t see your computers or smart home devices.', screenshotUrl: '/screenshots/browser/home-network-security-step-5.png', screenshotAlt: 'Router admin panel with Guest Network enabled showing SSID and password fields'
+        content: 'Most modern routers have a "Guest Network" option. Enable it and give it a separate password. When friends or repairmen visit, give them the guest password — not your main one. Guest networks are isolated, so visitors can\'t see your computers or smart home devices.'
       },
       {
         title: 'Check who\'s connected to your network',
@@ -4001,11 +4001,11 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Option 2: Authenticator app (recommended)',
-        content: 'An authenticator app generates a fresh 6-digit code every 30 seconds without needing a mobile signal. Download Google Authenticator or Microsoft Authenticator (both free) from the App Store or Google Play. Then in your account\'s 2FA settings, choose "Authenticator App" — you\'ll be shown a QR code to scan with the app.', tip: 'Google Authenticator and Microsoft Authenticator both work on iPhone and Android. Many people find Microsoft Authenticator slightly easier as it includes cloud backup.', screenshotUrl: '/screenshots/iphone/two-factor-auth-step-3.png', screenshotAlt: 'Google Authenticator app showing two accounts with 6-digit codes and countdown timers'
+        content: 'An authenticator app generates a fresh 6-digit code every 30 seconds without needing a mobile signal. Download Google Authenticator or Microsoft Authenticator (both free) from the App Store or Google Play. Then in your account\'s 2FA settings, choose "Authenticator App" — you\'ll be shown a QR code to scan with the app.', tip: 'Google Authenticator and Microsoft Authenticator both work on iPhone and Android. Many people find Microsoft Authenticator slightly easier as it includes cloud backup.'
       },
       {
         title: 'Setting up 2FA on Gmail / Google',
-        content: 'Go to myaccount.google.com → Security → 2-Step Verification → Get Started. Choose your preferred method (Google prompt on your phone is the easiest). Follow the on-screen steps. Once set up, you\'ll get a prompt on your phone whenever someone tries to log into your Google account.', screenshotUrl: '/screenshots/browser/two-factor-auth-step-4.png', screenshotAlt: 'Google Account Security page with 2-Step Verification showing On status'
+        content: 'Go to myaccount.google.com → Security → 2-Step Verification → Get Started. Choose your preferred method (Google prompt on your phone is the easiest). Follow the on-screen steps. Once set up, you\'ll get a prompt on your phone whenever someone tries to log into your Google account.'
       },
       {
         title: 'Setting up 2FA on Facebook / Instagram',
@@ -4364,11 +4364,11 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Set up Apple\'s Digital Legacy feature (iPhone/Mac)',
-        content: 'Apple allows you to designate a Legacy Contact who can request access to your Apple ID data after you pass. On iPhone: Settings → [your name] → Password & Security → Legacy Contact → Add Legacy Contact. Choose a trusted person and share the access key with them. They won\'t be able to access your account while you\'re alive.', screenshotUrl: '/screenshots/iphone/digital-legacy-step-3.png', screenshotAlt: 'iPhone Apple ID Password and Security settings with Legacy Contact option', tip: 'The Legacy Contact access key can be stored in your will or given to your solicitor for safekeeping.'
+        content: 'Apple allows you to designate a Legacy Contact who can request access to your Apple ID data after you pass. On iPhone: Settings → [your name] → Password & Security → Legacy Contact → Add Legacy Contact. Choose a trusted person and share the access key with them. They won\'t be able to access your account while you\'re alive.', tip: 'The Legacy Contact access key can be stored in your will or given to your solicitor for safekeeping.'
       },
       {
         title: 'Set up Google\'s Inactive Account Manager',
-        content: 'Google lets you decide what happens to your account if it\'s inactive for a period you choose (3–18 months). Go to myaccount.google.com → Data & Privacy → scroll to "More options" → Make a plan for your account. You can choose to share your data with trusted people or have your account deleted.', screenshotUrl: '/screenshots/browser/digital-legacy-step-4.png', screenshotAlt: 'Google Inactive Account Manager settings with trusted contacts and data sharing'
+        content: 'Google lets you decide what happens to your account if it\'s inactive for a period you choose (3–18 months). Go to myaccount.google.com → Data & Privacy → scroll to "More options" → Make a plan for your account. You can choose to share your data with trusted people or have your account deleted.'
       },
       {
         title: 'Memorialise or remove Facebook after death',
@@ -4434,11 +4434,11 @@ We have over 80 AI guides on TekSure covering everything from writing your first
     steps: [
       {
         title: 'Download only the official app',
-        content: 'Go to your bank\'s website (type the address yourself — don\'t click links from emails or texts) and look for the "App Store" or "Google Play" button. This takes you directly to the real app. Fake banking apps exist in app stores — always download from your bank\'s own website link, not by searching.', tip: 'Real banking apps are free. If an app charges money to download, it\'s fake.', screenshotUrl: '/screenshots/browser/banking-apps-security-step-1.png', screenshotAlt: 'Bank website showing official app download buttons for App Store and Google Play'
+        content: 'Go to your bank\'s website (type the address yourself — don\'t click links from emails or texts) and look for the "App Store" or "Google Play" button. This takes you directly to the real app. Fake banking apps exist in app stores — always download from your bank\'s own website link, not by searching.', tip: 'Real banking apps are free. If an app charges money to download, it\'s fake.'
       },
       {
         title: 'Set up Face ID or fingerprint login',
-        content: 'Once you\'ve logged in with your username and password the first time, your bank will offer to set up biometric login (Face ID on iPhone, or fingerprint on most Android and iPhone devices). Accept this — it\'s both more secure AND faster than typing a password. Your bank will walk you through the setup.', screenshotUrl: '/screenshots/iphone/banking-apps-security-step-2.png', screenshotAlt: 'Banking app Face ID setup screen with enable button'
+        content: 'Once you\'ve logged in with your username and password the first time, your bank will offer to set up biometric login (Face ID on iPhone, or fingerprint on most Android and iPhone devices). Accept this — it\'s both more secure AND faster than typing a password. Your bank will walk you through the setup.'
       },
       {
         title: 'Check your balance and transactions',
@@ -4446,7 +4446,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Pay a bill or transfer money',
-        content: 'To pay a bill or transfer money, look for "Pay & Transfer," "Payments," or a similar option in the app menu. You\'ll need the recipient\'s sort code and account number (shown on their invoice or bank statement). Always double-check the digits before confirming — transfers cannot always be reversed.', tip: 'For a new payee, your bank may call or text you to verify. This is normal and a good security measure — never cancel this check.', screenshotUrl: '/screenshots/iphone/banking-apps-security-step-3.png', screenshotAlt: 'Mobile banking New Payment form with sort code and account number fields'
+        content: 'To pay a bill or transfer money, look for "Pay & Transfer," "Payments," or a similar option in the app menu. You\'ll need the recipient\'s sort code and account number (shown on their invoice or bank statement). Always double-check the digits before confirming — transfers cannot always be reversed.', tip: 'For a new payee, your bank may call or text you to verify. This is normal and a good security measure — never cancel this check.'
       },
       {
         title: 'Spot a fake banking app or scam',
@@ -4935,7 +4935,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon 🔒 and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', screenshotUrl: '/screenshots/browser/online-shopping-safety-step-1.png', screenshotAlt: 'Browser address bar showing HTTPS padlock icon for secure connection', tip: 'The padlock doesn\'t guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.', warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon 🔒 and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: 'The padlock doesn\'t guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.', warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -4943,7 +4943,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Spotting fake websites',
-        content: 'Warning signs of a fake shop: prices that seem impossibly cheap (50–80% off everything), very recent website creation date, no physical address or phone number, poor English throughout, no real customer reviews (or fake-sounding ones), and payment only by bank transfer or gift cards. Legitimate shops accept credit/debit cards and PayPal. Check the website\'s "About Us" and "Contact" pages — real businesses provide real details.', screenshotUrl: '/screenshots/browser/online-shopping-safety-step-3.png', screenshotAlt: 'Side-by-side comparison of fake vs real shopping website', tip: 'You can check when a website was registered at whois.domaintools.com — a site created last month selling expensive goods at huge discounts is almost certainly a scam.'
+        content: 'Warning signs of a fake shop: prices that seem impossibly cheap (50–80% off everything), very recent website creation date, no physical address or phone number, poor English throughout, no real customer reviews (or fake-sounding ones), and payment only by bank transfer or gift cards. Legitimate shops accept credit/debit cards and PayPal. Check the website\'s "About Us" and "Contact" pages — real businesses provide real details.', tip: 'You can check when a website was registered at whois.domaintools.com — a site created last month selling expensive goods at huge discounts is almost certainly a scam.'
       },
       {
         title: 'Safe payment methods',
@@ -5440,11 +5440,11 @@ We have over 80 AI guides on TekSure covering everything from writing your first
     publishedAt: '2026-03-29',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Register on the Do Not Call list', content: 'Go to donotcall.gov or call 1-888-382-1222 from the phone you want to register. It\'s free and your number stays on the list until you ask to remove it. Legitimate telemarketers must stop calling within 31 days. However, scammers ignore this list, so you\'ll need additional steps to stop those calls.', screenshotUrl: '/screenshots/browser/stop-unwanted-calls-step-1.png', screenshotAlt: 'DoNotCall.gov registration page with phone number field and Register button' },
-      { title: 'Use your phone\'s built-in call screening', content: 'On iPhone: Settings → Phone → "Silence Unknown Callers" — this sends calls from numbers not in your contacts straight to voicemail. On Android (Pixel): Phone app → Settings → "Caller ID & spam" → turn on "Filter spam calls." Samsung: Phone app → Settings → "Caller ID and spam protection." These won\'t block real calls from your contacts.', screenshotUrl: '/screenshots/iphone/stop-unwanted-calls-step-2.png', screenshotAlt: 'iPhone Phone settings with Silence Unknown Callers toggle turned on', tip: 'If you\'re expecting a call from an unknown number (like a doctor\'s office or delivery), temporarily turn off "Silence Unknown Callers" or check your voicemail promptly.' },
-      { title: 'Install a call-blocking app', content: 'Free apps like "Nomorobo" (free for landlines, $2/month for mobile), "Hiya," or "Truecaller" identify and block known spam numbers using a constantly updated database. Your carrier may also offer free blocking: T-Mobile has "Scam Shield," AT&T has "ActiveArmor," and Verizon has "Call Filter." Check your carrier\'s app store for their free version.', screenshotUrl: '/screenshots/iphone/stop-unwanted-calls-step-3.png', screenshotAlt: 'Hiya caller ID app showing incoming call flagged as Likely Spam' },
-      { title: 'Block specific numbers', content: 'When a spam call gets through, block the number immediately. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can\'t call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.', screenshotUrl: '/screenshots/iphone/stop-unwanted-calls-step-4.png', screenshotAlt: 'iPhone call details screen with Block this Caller option highlighted' },
-      { title: 'Recognize and avoid phone scams', content: 'Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you\'ve won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.', screenshotUrl: '/screenshots/browser/stop-unwanted-calls-step-5.png', screenshotAlt: 'Phone scam red flags infographic showing six common scam tactics', warning: 'Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don\'t ask for this by phone.', tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
+      { title: 'Register on the Do Not Call list', content: 'Go to donotcall.gov or call 1-888-382-1222 from the phone you want to register. It\'s free and your number stays on the list until you ask to remove it. Legitimate telemarketers must stop calling within 31 days. However, scammers ignore this list, so you\'ll need additional steps to stop those calls.' },
+      { title: 'Use your phone\'s built-in call screening', content: 'On iPhone: Settings → Phone → "Silence Unknown Callers" — this sends calls from numbers not in your contacts straight to voicemail. On Android (Pixel): Phone app → Settings → "Caller ID & spam" → turn on "Filter spam calls." Samsung: Phone app → Settings → "Caller ID and spam protection." These won\'t block real calls from your contacts.', tip: 'If you\'re expecting a call from an unknown number (like a doctor\'s office or delivery), temporarily turn off "Silence Unknown Callers" or check your voicemail promptly.' },
+      { title: 'Install a call-blocking app', content: 'Free apps like "Nomorobo" (free for landlines, $2/month for mobile), "Hiya," or "Truecaller" identify and block known spam numbers using a constantly updated database. Your carrier may also offer free blocking: T-Mobile has "Scam Shield," AT&T has "ActiveArmor," and Verizon has "Call Filter." Check your carrier\'s app store for their free version.' },
+      { title: 'Block specific numbers', content: 'When a spam call gets through, block the number immediately. On iPhone: go to Recents → tap the (i) next to the number → "Block this Caller." On Android: go to Recents → tap the number → "Block/Report spam." Blocked numbers can\'t call, text, or FaceTime you. You can manage your blocked list in Settings → Phone → Blocked Contacts.' },
+      { title: 'Recognize and avoid phone scams', content: 'Red flags: caller says you owe the IRS money (the IRS contacts you by mail first), caller asks for gift card payments (no real company does this), caller says you\'ve won a prize but need to pay a fee, caller pressures you to act "right now." Hang up on suspicious calls — you can always call the company back using the number on their official website.', warning: 'Never give your Social Security number, bank details, or credit card number to someone who calls you. Real companies and government agencies don\'t ask for this by phone.', tip: 'Report phone scams at ReportFraud.ftc.gov. The FTC tracks these calls and works to shut down scam operations. Learn more at consumer.ftc.gov/scams.' },
     ]
   },
   {
@@ -5530,10 +5530,10 @@ We have over 80 AI guides on TekSure covering everything from writing your first
     publishedAt: '2026-03-29',
     difficulty: 'Beginner',
     steps: [
-      { title: 'What is a digital vault?', content: 'A digital vault is a secure, encrypted online storage space specifically designed for important documents — not just any cloud storage. Unlike Google Drive or iCloud, digital vaults use bank-level encryption and let you organize documents by category (medical, legal, financial, insurance) and designate trusted contacts who can access them. Popular options: AARP Digital Vault (free for AARP members), Trustworthy ($12/month for families), and Everplans.', screenshotUrl: '/screenshots/browser/digital-vault-guide-step-1.png', screenshotAlt: 'AARP Digital Vault dashboard showing document categories with file counts' },
-      { title: 'What to store in your vault', content: 'Essential documents to digitize and store: driver\'s license and passport (front/back), Social Security card, birth/marriage certificates, health insurance cards, Medicare card, will and power of attorney, property deeds, car titles, bank and investment account details, life insurance policies, and vaccination records. Scan each document using your phone camera (use the Notes app scanner or Google Drive scanner).', screenshotUrl: '/screenshots/browser/digital-vault-guide-step-2.png', screenshotAlt: 'Digital vault upload checklist with completed and pending document items' },
-      { title: 'Set up trusted contacts', content: 'The key advantage of a digital vault over regular cloud storage is trusted contacts. You can designate family members, your attorney, or your financial advisor as trusted contacts who can access specific sections of your vault. Some vaults activate access only in an emergency or after you grant permission. This ensures your loved ones can find important documents when they need them.', screenshotUrl: '/screenshots/browser/digital-vault-guide-step-3.png', screenshotAlt: 'Trusted contacts setup with two family members and their access sections', tip: 'Have a conversation with your trusted contacts about where your vault is and how to access it. The vault is only helpful if people know it exists.' },
-      { title: 'Keep it updated', content: 'Set a calendar reminder to review your vault every 6 months. Update expired documents (new insurance cards, renewed prescriptions), add new documents (new investments, updated will), and remove outdated ones. After major life events (moving, marriage, new grandchild), do a quick vault review to make sure everything is current.', screenshotUrl: '/screenshots/iphone/digital-vault-guide-step-4.png', screenshotAlt: 'Calendar reminder notification for Digital Vault review with checklist' },
+      { title: 'What is a digital vault?', content: 'A digital vault is a secure, encrypted online storage space specifically designed for important documents — not just any cloud storage. Unlike Google Drive or iCloud, digital vaults use bank-level encryption and let you organize documents by category (medical, legal, financial, insurance) and designate trusted contacts who can access them. Popular options: AARP Digital Vault (free for AARP members), Trustworthy ($12/month for families), and Everplans.' },
+      { title: 'What to store in your vault', content: 'Essential documents to digitize and store: driver\'s license and passport (front/back), Social Security card, birth/marriage certificates, health insurance cards, Medicare card, will and power of attorney, property deeds, car titles, bank and investment account details, life insurance policies, and vaccination records. Scan each document using your phone camera (use the Notes app scanner or Google Drive scanner).' },
+      { title: 'Set up trusted contacts', content: 'The key advantage of a digital vault over regular cloud storage is trusted contacts. You can designate family members, your attorney, or your financial advisor as trusted contacts who can access specific sections of your vault. Some vaults activate access only in an emergency or after you grant permission. This ensures your loved ones can find important documents when they need them.', tip: 'Have a conversation with your trusted contacts about where your vault is and how to access it. The vault is only helpful if people know it exists.' },
+      { title: 'Keep it updated', content: 'Set a calendar reminder to review your vault every 6 months. Update expired documents (new insurance cards, renewed prescriptions), add new documents (new investments, updated will), and remove outdated ones. After major life events (moving, marriage, new grandchild), do a quick vault review to make sure everything is current.' },
     ]
   },
   {
@@ -6541,9 +6541,9 @@ On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Go to Gmail', content: 'Open your web browser and go to gmail.com. Click "Create account" at the bottom of the sign-in page.', screenshotUrl: '/screenshots/browser/set-up-gmail-account-step-1.png', screenshotAlt: 'Google Account creation form with name, username, and password fields' },
+      { title: 'Go to Gmail', content: 'Open your web browser and go to gmail.com. Click "Create account" at the bottom of the sign-in page.' },
       { title: 'Fill in your details', content: 'Enter your first name and last name. Choose a username (this becomes your email address, e.g., yourname@gmail.com). Choose a strong password and confirm it.', warning: 'Your username cannot be changed later, so choose carefully. Simple names like john.smith may already be taken.' },
-      { title: 'Add recovery information', content: 'Enter a phone number and an alternative email address. These help you get back into your account if you forget your password.', screenshotUrl: '/screenshots/browser/set-up-gmail-account-step-3.png', screenshotAlt: 'Gmail inbox showing welcome emails with Compose button in sidebar', tip: 'Always add a phone number. It is the easiest way to recover your account.' },
+      { title: 'Add recovery information', content: 'Enter a phone number and an alternative email address. These help you get back into your account if you forget your password.', tip: 'Always add a phone number. It is the easiest way to recover your account.' },
       { title: 'Accept and start using Gmail', content: 'Read and accept Google\'s terms. Your new Gmail account is ready. You can now send and receive emails at your new address.', tip: 'For official Gmail help and tutorials, visit support.google.com/mail — Google\'s free help center covers everything from basic setup to advanced features.' },
     ]
   },
@@ -6559,7 +6559,7 @@ On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone
     difficulty: 'Beginner',
     steps: [
       { title: 'Open your email', content: 'Go to gmail.com or outlook.com in your web browser and sign in with your email address and password.' },
-      { title: 'Start a new email', content: 'Look for a button labelled "Compose" (Gmail) or "New message" (Outlook). It is usually in the top left. Click it. A blank email form will appear.', screenshotUrl: '/screenshots/browser/how-to-send-an-email-step-2.png', screenshotAlt: 'Gmail compose window with To, Subject, body, and Send button' },
+      { title: 'Start a new email', content: 'Look for a button labelled "Compose" (Gmail) or "New message" (Outlook). It is usually in the top left. Click it. A blank email form will appear.' },
       { title: 'Fill in the To field', content: 'Click in the "To" box and type the email address of the person you are sending to. Email addresses look like name@example.com. Type it carefully.', warning: 'One wrong letter in the email address means your message will not be delivered. Double-check before sending.' },
       { title: 'Write a subject line', content: 'Click the "Subject" line and type a short description, like "Hello from Mary" or "Question about Wednesday." Always include a subject.', tip: 'Emails without a subject line often end up in the spam folder.' },
       { title: 'Write and send your message', content: 'Click in the large blank area and type your message. When you are finished, click the "Send" button (usually blue, at the bottom). Your email is sent immediately.' },
@@ -6577,7 +6577,7 @@ On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone
     difficulty: 'Beginner',
     steps: [
       { title: 'Start a new email', content: 'Open your email (gmail.com or outlook.com) and click Compose or New Message.' },
-      { title: 'Click the attachment button', content: 'In Gmail, click the paperclip icon at the bottom. In Outlook, click "Attach file" or the paperclip icon in the toolbar.', screenshotUrl: '/screenshots/browser/attach-photo-to-email-step-2.png', screenshotAlt: 'Gmail compose window with paperclip attachment icon highlighted' },
+      { title: 'Click the attachment button', content: 'In Gmail, click the paperclip icon at the bottom. In Outlook, click "Attach file" or the paperclip icon in the toolbar.' },
       { title: 'Select your file', content: 'A file browser will open. Navigate to your photo or document. Click on it, then click "Open." The file name will appear in the email, showing it is attached.', tip: 'Hold Ctrl (Windows) or Cmd (Mac) while clicking to select multiple files at once.' },
       { title: 'Check the size and send', content: 'Most email providers limit attachments to 25MB. Photos from a modern phone are usually 5-10MB each, so you can send 2-3 per email. Fill in the To address, Subject, and message, then click Send.', warning: 'If your file is too large, use Google Drive or WeTransfer instead. The email will fail silently if the attachment is over the limit.' },
     ]
