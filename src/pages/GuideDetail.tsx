@@ -456,6 +456,13 @@ const GuideDetail = () => {
                             <StepContent text={step.content} />
                           </div>
 
+                          {step.whyItWorks && (
+                            <div className="mt-3 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/40 px-4 py-3">
+                              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-1">Why this works</p>
+                              <p className="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">{step.whyItWorks}</p>
+                            </div>
+                          )}
+
                           {step.screenshotUrl && (
                             <StepScreenshot
                               screenshotUrl={step.screenshotUrl}

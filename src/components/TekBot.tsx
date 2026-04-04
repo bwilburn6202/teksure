@@ -353,15 +353,26 @@ function buildContextualQuery(input: string, pathname: string): string {
   return input;
 }
 
-function getResponse(input: string, device: DeviceType): string {
+function getResponse(input: string, device: DeviceType, explainMode: boolean): string {
   const lower = input.toLowerCase();
   for (const entry of KB) {
     if (entry.keywords.some(kw => lower.includes(kw))) {
+      let answer: string;
       if (device && entry.deviceAnswers?.[device]) {
-        return entry.deviceAnswers[device]!;
+        answer = entry.deviceAnswers[device]!;
+      } else {
+        answer = entry.answer;
       }
-      return entry.answer;
+      // In explain mode or when user asks for explanation, add beginner-friendly context
+      if (explainMode || isExplainRequest(input)) {
+        const topic = entry.keywords[0] ?? '';
+        return explainLikeNew(answer, topic);
+      }
+      return answer;
     }
+  }
+  if (explainMode || isExplainRequest(input)) {
+    return "I am not sure about that one yet, but that is okay! Everyone has questions when learning something new.\n\nHere are some things you can try:\n1. Tell me what you see on your screen right now.\n2. Describe the problem in your own words — there is no wrong way to ask.\n3. Check our step-by-step guides for a walkthrough with pictures.\n\nYou are doing great by asking questions. That is how learning works!";
   }
   return "I'm not sure about that one yet, but I'm always learning! 🤔\n\nYou might find the answer in our step-by-step guides, or try asking a different way. For tricky issues, you can also book a real technician for hands-on help.";
 }
@@ -398,6 +409,53 @@ const DEVICE_PROMPTS: Record<NonNullable<DeviceType>, string[]> = {
 };
 
 const DEFAULT_PROMPTS = ['My WiFi is slow', 'Reset a password', 'Computer is frozen', 'Got a scam pop-up'];
+
+/* ── "Explain It Like I'm New" mode ──────────────────────── */
+
+/**
+ * Transforms a standard KB answer into a more detailed, beginner-friendly
+ * explanation with numbered steps, "why" context, and encouragement.
+ * Inspired by Karpathy's principle: teach understanding, not just button presses.
+ */
+function explainLikeNew(answer: string, topic: string): string {
+  // Add a gentle intro
+  const intro = `Great question! Let me walk you through this slowly. Take your time with each step — there is no rush.\n\n`;
+
+  // Transform the answer: add "why" hints after key steps
+  let explained = answer;
+
+  // Add why-context to common instructions
+  explained = explained.replace(
+    /restart/gi,
+    'restart (this clears temporary data that can cause problems)'
+  );
+  explained = explained.replace(
+    /clear.*cache/gi,
+    'clear the cache (this removes old saved data that may be causing issues)'
+  );
+  explained = explained.replace(
+    /update/gi,
+    'update (updates fix security problems and bugs)'
+  );
+
+  // Add encouragement at the end
+  const outro = `\n\nDid that make sense? If any step was confusing, tell me which one and I will explain it differently. You are doing great!`;
+
+  return intro + explained + outro;
+}
+
+const EXPLAIN_TRIGGER_PHRASES = [
+  'explain', 'i don\'t understand', 'i dont understand', 'what does that mean',
+  'confused', 'help me understand', 'break it down', 'simpler', 'more detail',
+  'step by step', 'walk me through', 'i\'m new', 'im new', 'beginner',
+  'i don\'t know', 'i dont know', 'what is', 'what are', 'how does',
+  'why do i', 'why should', 'explain like', 'eli5',
+];
+
+function isExplainRequest(text: string): boolean {
+  const lower = text.toLowerCase();
+  return EXPLAIN_TRIGGER_PHRASES.some(p => lower.includes(p));
+}
 
 /** Page-specific quick prompts — contextual chips based on current route */
 const PAGE_PROMPTS: Record<string, string[]> = {
@@ -454,6 +512,7 @@ export function TekBot() {
   const [messages, setMessages] = useState<Message[]>(() => loadSession());
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
+  const [explainMode, setExplainMode] = useState(false);
   const [showDevicePicker, setShowDevicePicker] = useState(false);
   const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 640);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -573,7 +632,7 @@ export function TekBot() {
     setTimeout(() => {
       setTyping(false);
       const enriched = enrichedRef.current || text;
-      const answer = getResponse(enriched, activeDevice);
+      const answer = getResponse(enriched, activeDevice, explainMode);
       const related = findRelatedGuides(enriched);
 
       let finalAnswer = answer;
@@ -702,6 +761,31 @@ export function TekBot() {
               </div>
 
               <div className="flex items-center gap-1">
+                {/* "Explain It Like I'm New" toggle */}
+                <button
+                  onClick={() => {
+                    const next = !explainMode;
+                    setExplainMode(next);
+                    setMessages(prev => [
+                      ...prev,
+                      { role: 'bot', content: next
+                        ? "I've turned on beginner mode. I will explain everything in extra detail and tell you why each step matters. Ask me anything!"
+                        : "Beginner mode is off. I'll give you shorter, quicker answers now." },
+                    ]);
+                  }}
+                  className={`flex items-center gap-1 rounded-lg px-3 py-2 transition-all ${
+                    explainMode
+                      ? 'bg-yellow-400/20 text-yellow-200 hover:bg-yellow-400/30'
+                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                  }`}
+                  style={{ fontSize: 12, minHeight: 44 }}
+                  aria-label={explainMode ? 'Turn off beginner mode' : 'Turn on beginner mode for extra-detailed explanations'}
+                  aria-pressed={explainMode}
+                >
+                  <BookOpen className="h-4 w-4" aria-hidden="true" />
+                  <span className="hidden sm:inline">{explainMode ? 'Beginner' : 'Beginner'}</span>
+                </button>
+
                 {/* Clear chat button — only shown when conversation exists */}
                 {conversationCount > 0 && (
                   <button

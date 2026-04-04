@@ -770,6 +770,232 @@ Go to the streaming service's website (like **netflix.com**) in your web browser
 
 Write down your streaming passwords in a safe place. It is frustrating to get locked out of your account because you forgot the password. A small notebook kept in a drawer works great for this.`,
   },
+  {
+    slug: 'device-basics',
+    title: 'Device Basics',
+    category: 'concept',
+    tags: ['devices', 'phone', 'tablet', 'computer', 'getting-started'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['apple', 'android', 'windows'],
+    content: `## Phones, Tablets, and Computers — What Is the Difference?
+
+- A **smartphone** is a small, pocket-sized device for calls, texts, apps, and browsing the internet.
+- A **tablet** is like a bigger smartphone — great for reading, video calls, and watching videos.
+- A **laptop or desktop computer** has a full keyboard and is good for writing, managing files, and more detailed tasks.
+
+All three connect to the internet and can run apps.
+
+## Turning Your Device On and Off
+
+- **Phones and tablets:** Press and hold the power button (usually on the right side or top) for a few seconds. To turn it off, press and hold the same button and follow the on-screen prompt.
+- **Laptops:** Open the lid or press the power button (often near the keyboard). To shut down, go to the Start menu (Windows) or Apple menu (Mac) and choose **Shut Down**.
+
+## Charging Your Device
+
+Plug the charging cable into your device and into a wall outlet. Most phones and tablets use a USB-C or Lightning cable. A full charge usually takes one to two hours. Try to keep your battery above 20% to keep it healthy.
+
+## Touchscreen Basics
+
+- **Tap:** Touch the screen once to open something.
+- **Swipe:** Slide your finger up, down, left, or right to scroll or move between screens.
+- **Pinch:** Place two fingers on the screen and spread them apart to zoom in, or pinch them together to zoom out.
+- **Press and hold:** Touch and keep your finger on an item for extra options.
+
+## Finding Settings
+
+- **iPhone/iPad:** Open the **Settings** app (gray gear icon).
+- **Android:** Open the **Settings** app (gear icon), or swipe down from the top and tap the gear.
+- **Windows:** Click the **Start** button, then **Settings** (gear icon).
+- **Mac:** Click the **Apple menu** in the top-left corner, then **System Settings**.
+
+## Installing Apps
+
+- **iPhone/iPad:** Open the **App Store** and search for the app you want. Tap **Get**, then confirm with your password or Face ID.
+- **Android:** Open **Google Play Store** and search. Tap **Install**.
+- **Windows/Mac:** Download from the app store or the app's official website.
+
+## Taking a Screenshot
+
+- **iPhone:** Press the **side button** and **volume up** at the same time.
+- **Android:** Press the **power button** and **volume down** at the same time.
+- **Windows:** Press **Windows key + Shift + S**.
+- **Mac:** Press **Command + Shift + 3** for a full screen capture.
+
+## Common Problems and How to Fix Them
+
+### Forgotten Passwords
+
+This is the single most common tech problem. Every login page has a **"Forgot Password?"** link — tap it, enter your email, and check your inbox (and spam folder) for a reset link. To avoid this problem, consider using a password manager (see [[password-security]]).
+
+### Slow Computer
+
+A slow computer is often caused by too many programs running at the same time, a nearly full hard drive, or missed software updates. Try these steps:
+1. Restart your computer — this clears out temporary files and can fix many slowness issues.
+2. Close programs you are not using.
+3. Make sure your operating system and apps are up to date.
+
+### Printer Problems
+
+If your printer is not working:
+1. Make sure it is turned on and connected to the same Wi-Fi network as your computer or phone.
+2. Check for paper jams and make sure there is paper in the tray.
+3. Try restarting both the printer and your computer.
+4. On your computer, go to Settings > Printers and make sure the correct printer is selected.
+
+### Screen Readability
+
+Every device has built-in tools to make screens easier to read:
+- **Make text bigger:** Go to Settings > Display (or Accessibility) and increase the font size.
+- **Zoom in:** Pinch outward on a touchscreen, or press Ctrl and + on a keyboard.
+- **High contrast mode:** Found in Accessibility settings, this makes text stand out more against the background.
+- **Dark mode:** Easier on the eyes in low light — find it in your Display settings.`,
+  },
+  {
+    slug: 'video-calling',
+    title: 'Video Calling',
+    category: 'concept',
+    tags: ['video-calls', 'zoom', 'facetime', 'google-meet', 'teams'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['google', 'microsoft', 'apple'],
+    content: `## What Is Video Calling?
+
+Video calling lets you see and talk to someone in real time using your phone, tablet, or computer. It is a wonderful way to stay in touch with family, friends, and doctors — especially when you cannot visit in person.
+
+## Popular Video Calling Apps
+
+### FaceTime (Apple devices only)
+- **Best for:** Calling other iPhone, iPad, or Mac users.
+- **Setup:** FaceTime comes pre-installed. Open the app and sign in with your Apple ID.
+- **To call:** Open FaceTime, tap the **+** button, type a name or phone number, and tap the video icon.
+
+### Zoom
+- **Best for:** Group calls, classes, and appointments.
+- **Setup:** Download Zoom from your app store. You can join meetings without creating an account.
+- **To join a call:** Tap the meeting link someone sends you, or open Zoom and tap **Join** and enter the Meeting ID number.
+
+### Google Meet
+- **Best for:** People who use Gmail or Google services.
+- **Setup:** Open Google Meet from your browser at **meet.google.com**, or download the app.
+- **To join:** Click the meeting link or enter the meeting code.
+
+### Microsoft Teams
+- **Best for:** People who use Outlook or Microsoft 365.
+- **Setup:** Download Teams from your app store or use it in a web browser.
+- **To join:** Click the meeting link in your email or calendar invitation.
+
+## Camera and Microphone Controls
+
+During any video call, you will see small icons at the bottom of your screen:
+
+- **Camera icon:** Tap to turn your camera on or off. A line through the icon means the camera is off.
+- **Microphone icon:** Tap to mute or unmute yourself. Muting is polite when you are not speaking in a group call.
+- **Red phone icon:** Tap to leave the call.
+
+## Tips for a Good Video Call
+
+- **Lighting:** Sit facing a window or lamp so your face is well-lit.
+- **Background:** Choose a quiet, tidy area.
+- **Internet:** A strong Wi-Fi connection prevents freezing and choppy audio.
+- **Test first:** Many apps let you do a test call to check your camera and microphone before the real thing.
+
+## Group Calls
+
+All four apps support group calls. The host starts the meeting, and others join using a link or code. In Zoom and Teams, you can see everyone at once in a grid view.`,
+  },
+  {
+    slug: 'cloud-storage',
+    title: 'Cloud Storage',
+    category: 'concept',
+    tags: ['cloud', 'storage', 'backup', 'google-drive', 'icloud', 'onedrive'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['google', 'microsoft', 'apple'],
+    content: `## What Is Cloud Storage?
+
+Cloud storage is a way to save your files — photos, documents, videos — on the internet instead of only on your device. Think of it as a digital filing cabinet that you can open from any device, anywhere. If your phone breaks or your computer stops working, your files are still safe in the cloud.
+
+## Popular Cloud Storage Services
+
+### Google Drive
+- **Free space:** 15 GB (enough for thousands of photos and documents).
+- **Best for:** Anyone with a Gmail account — you already have it.
+- **How to use:** Go to **drive.google.com** or open the Google Drive app. Drag files in, or tap the **+** button to upload.
+
+### iCloud (Apple)
+- **Free space:** 5 GB (upgrades available starting at $0.99/month).
+- **Best for:** iPhone, iPad, and Mac users.
+- **How to use:** On your Apple device, go to **Settings > [Your Name] > iCloud** and turn on the types of data you want to save (Photos, Contacts, etc.).
+
+### OneDrive (Microsoft)
+- **Free space:** 5 GB (15 GB or more with a Microsoft 365 subscription).
+- **Best for:** People who use Windows computers or Outlook.
+- **How to use:** OneDrive is built into Windows. Open the OneDrive folder on your computer and save files there.
+
+### Dropbox
+- **Free space:** 2 GB.
+- **Best for:** Sharing large files with others.
+- **How to use:** Download the Dropbox app or visit **dropbox.com**. Drag files into your Dropbox folder.
+
+## Sharing Files From the Cloud
+
+All of these services let you share a file by creating a link. Instead of emailing a large attachment, you send the link and the other person can view or download it. Look for a **Share** button next to your file.
+
+## Keeping Your Cloud Safe
+
+- Use a strong password on your cloud account.
+- Turn on two-factor authentication (see [[password-security]]).
+- Be careful who you share links with — anyone with the link may be able to see your files.`,
+  },
+  {
+    slug: 'email-essentials',
+    title: 'Email Essentials',
+    category: 'concept',
+    tags: ['email', 'gmail', 'outlook', 'phishing', 'communication'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['google', 'microsoft', 'scam-prevention'],
+    content: `## Gmail vs. Outlook — Which Should I Use?
+
+- **Gmail** (by Google): Free, works on any device, and gives you 15 GB of storage. Great if you use other Google services like Google Drive or YouTube.
+- **Outlook** (by Microsoft): Free, works on any device, and connects well with Microsoft products like Word and OneDrive. Great if you use a Windows computer.
+
+Both are excellent choices. Pick the one that matches the devices and services you already use.
+
+## Sending an Email
+
+1. Open your email app or go to **gmail.com** or **outlook.com**.
+2. Tap the **Compose** or **New Email** button.
+3. In the **To** field, type the recipient's email address.
+4. Add a **Subject** — a short title describing your message.
+5. Write your message in the large text area.
+6. Tap **Send**.
+
+## Adding Attachments
+
+An attachment is a file you include with your email, like a photo or a document.
+
+1. While writing an email, look for a **paperclip icon**.
+2. Tap it and choose the file you want to attach.
+3. Wait for the file to upload, then send your email as usual.
+
+Most email services limit attachments to about 25 MB. For larger files, use [[cloud-storage]] and share a link instead.
+
+## Organizing Your Inbox
+
+- **Delete** messages you no longer need.
+- **Star** or **Flag** important messages so you can find them later.
+- Use the **Search bar** at the top to find old emails by typing a name or keyword.
+- **Unsubscribe** from newsletters you no longer read — look for the small "unsubscribe" link at the bottom of those emails.
+
+## Spotting Phishing Emails
+
+Phishing emails try to trick you into clicking a bad link or sharing personal information. Watch for:
+
+- Messages that create **urgency** ("Your account will be closed in 24 hours!").
+- Sender addresses that look slightly wrong (e.g., "amaz0n@mail-notice.com").
+- Links that do not match the company they claim to be from — hover over a link (without clicking) to see where it really goes.
+- Requests for passwords, Social Security numbers, or payment information.
+
+When in doubt, do not click. Go directly to the company's official website by typing the address into your browser.`,
+  },
 ];
 
 /** Look up a wiki page by slug */

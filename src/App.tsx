@@ -115,6 +115,8 @@ const Videos                 = lazy(() => import("./pages/Videos"));
 const Accessibility          = lazy(() => import("./pages/Accessibility"));
 const Wiki                   = lazy(() => import("./pages/Wiki"));
 const WikiPage               = lazy(() => import("./pages/WikiPage"));
+const ConceptMap             = lazy(() => import("./pages/ConceptMap"));
+const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -281,6 +283,8 @@ const AppContent = () => {
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/wiki" element={<Wiki />} />
           <Route path="/wiki/:slug" element={<WikiPage />} />
+          <Route path="/concept-map" element={<ConceptMap />} />
+          <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>

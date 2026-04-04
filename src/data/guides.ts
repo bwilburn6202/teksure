@@ -33,6 +33,8 @@ export interface GuideStep {
   afterCaption?: string;
   beforeLabel?: string;
   afterLabel?: string;
+  /** Explains WHY this step matters — helps users build real understanding */
+  whyItWorks?: string;
 }
 
 export interface Guide {
@@ -100,11 +102,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
-      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
-      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
-      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
-      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.', whyItWorks: 'The power symbol (a circle with a line) is an international standard — you will find it on almost every electronic device. Once you recognize it, you can turn on any device.' },
+      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.', whyItWorks: 'When you press the power button, your computer runs through a startup process — loading the operating system and checking that everything works. This takes a moment, which is why you see the Windows logo.' },
+      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!', whyItWorks: 'The login screen protects your personal files from anyone else who might use your computer. Even if you live alone, it keeps your information safe if the computer is ever lost or stolen.' },
+      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.', whyItWorks: 'Proper shutdown lets Windows save your work and close programs safely. Forcing it off is like pulling the plug on a TV while it is recording — you might lose something important.' },
+      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.', whyItWorks: 'Sleep keeps your programs open in memory but uses almost no power. It is the best of both worlds — fast to resume, but saves electricity compared to leaving the computer fully on.' },
     ]
   },
   {
@@ -119,11 +121,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', whyItWorks: 'The taskbar icons in the bottom-right corner are your computer\'s quick controls — Wi-Fi, volume, battery, and clock all live there. Once you know to look there, you can adjust most basic settings quickly.' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', whyItWorks: 'Wi-Fi uses a radio signal to connect to the internet wirelessly. Turning it on tells your computer to start listening for nearby networks — like tuning a radio to find stations.' },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', tip: 'Look for your network name on a sticker on the bottom or back of your router.', whyItWorks: 'Every Wi-Fi network has a unique name (SSID). Your router broadcasts this name so devices can find it. Picking the right one ensures you connect to your own internet, not a neighbor\'s.' },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.', whyItWorks: 'The Wi-Fi password is like a key to your home network. It prevents strangers from using your internet or seeing your activity. "Connect automatically" means your computer will remember this key and reconnect on its own next time.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.', whyItWorks: 'Sometimes the Wi-Fi icon shows connected but the internet is not actually working (the router itself might have a problem). Opening a website confirms that everything is working end to end.' },
     ]
   },
   {
