@@ -95,13 +95,13 @@ const NEWS_ITEMS: NewsItem[] = [
   {
     id: 1,
     title: 'New Scam: "Your parcel couldn\'t be delivered" Text Messages',
-    summary: 'Millions of people are receiving fake text messages claiming a parcel couldn\'t be delivered and asking you to click a link to rebook. The link takes you to a convincing fake Royal Mail or FedEx website that steals your bank details. If you get one of these texts, delete it immediately. Real delivery companies never ask for payment via a text link.',
+    summary: 'Millions of people are receiving fake text messages claiming a package couldn\'t be delivered and asking you to click a link to reschedule. The link takes you to a convincing fake USPS or FedEx website that steals your bank details. If you get one of these texts, delete it immediately. Real delivery companies never ask for payment via a text link.',
     category: 'scams',
     date: '2026-03-22',
     icon: Package,
     readTime: '2 min',
-    source: 'Action Fraud',
-    sourceUrl: 'https://www.actionfraud.police.uk',
+    source: 'FTC',
+    sourceUrl: 'https://www.ftc.gov',
   },
   {
     id: 2,

@@ -23,7 +23,7 @@ const scams: Scam[] = [
     whatToDo: [
       'Hang up immediately — legitimate companies never cold-call about viruses',
       'Never give remote access to someone who calls you',
-      'Report the number to Action Fraud (UK) or the FTC (US)',
+      'Report the number to the FTC at ReportFraud.ftc.gov or 1-877-382-4357',
       'If you gave access, disconnect from the internet and run a full antivirus scan',
     ],
   },
@@ -84,7 +84,7 @@ const scams: Scam[] = [
       'Research the seller — check Trustpilot and social media',
       'Use a credit card for purchase protection',
       'Look for HTTPS and a padlock icon (but note scammers use these too)',
-      'If scammed, report to your bank and Action Fraud / FTC',
+      'If scammed, report to your bank and the FTC at ReportFraud.ftc.gov',
     ],
   },
   {
@@ -174,7 +174,7 @@ const scams: Scam[] = [
       'Only buy tickets through official FIFA channels (FIFA.com/tickets)',
       'Never pay for tickets via bank transfer or gift cards',
       'Check the URL carefully — scam sites often misspell "FIFA"',
-      'Report fake ticket sites to the FTC or Action Fraud',
+      'Report fake ticket sites to the FTC at ReportFraud.ftc.gov',
     ],
   },
   {
