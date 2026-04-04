@@ -23,6 +23,12 @@ Synthesized all existing TekSure content into wiki pages:
 - Scam prevention page built from ScamAlerts data
 - Synthesis pages built from cross-category analysis
 
+## [2026-04-04] ingest | April 2026 research ingest (batch 2)
+
+Scraped and ingested from 10+ authoritative sources (FTC, AARP, CISA, Apple Support, Google Support, Tom's Guide, How-To Geek, NIH/NCOA). Updated files:
+- **src/data/wiki.ts** — Updated scam-prevention (recovery scams, fake law enforcement, AI content poisoning, $12.5B fraud stats), password-security (manager recommendations), wifi-networking (router placement, 2.4/5GHz), us-resources (smartphone adoption stats). Added online-shopping-safety and telehealth wiki pages.
+- **src/components/TekBot.tsx** — Complete rewrite from chatbot to AI knowledge base. Now searches across 780+ guides and 20+ wiki pages instead of hardcoded 21-topic KB.
+
 ## [2026-04-04] ingest | April 2026 research ingest
 
 Ingested research from 6 authoritative sources (FTC, AARP, CISA, Google, HHS/NCOA, senior tech sites). Updated files:

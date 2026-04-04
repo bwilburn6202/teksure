@@ -28,7 +28,7 @@ export const wikiPages: WikiPage[] = [
     title: 'Wi-Fi and Home Networking',
     category: 'concept',
     tags: ['wi-fi', 'internet', 'router', 'networking', 'home'],
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-04-04',
     seeAlso: ['password-security', 'safety-checklist', 'us-resources'],
     content: `## What Is Wi-Fi?
 
@@ -62,7 +62,25 @@ Your internet setup has two main pieces:
 
 ## Quick Tip
 
-Your router's network name and password are usually printed on a sticker on the bottom or back of the device. If you have changed them and forgotten, you can reset the router to factory settings by pressing and holding the small reset button for 10 seconds.`,
+Your router's network name and password are usually printed on a sticker on the bottom or back of the device. If you have changed them and forgotten, you can reset the router to factory settings by pressing and holding the small reset button for 10 seconds.
+
+## Wi-Fi Troubleshooting Tips (2026 Update)
+
+**How to restart your router the right way:**
+1. Unplug the router from the wall.
+2. Wait 30 seconds.
+3. Plug it back in.
+4. Wait another 30 seconds for the lights to come back on.
+
+**Router placement matters:** Do not put your router inside a cabinet, closet, or behind furniture. Place it in an open, central location in your home for the best signal.
+
+**Understanding 2.4 GHz vs 5 GHz:** Most routers broadcast two networks. The 2.4 GHz network has better range (reaches farther) but is slower. The 5 GHz network is faster but does not reach as far. For most home use, leave the channel setting on "Auto."
+
+**Too many devices?** Smart home gadgets (smart speakers, cameras, thermostats, light bulbs) all share your Wi-Fi bandwidth. If your internet feels slow, multiple devices streaming video or playing games at the same time could be the cause. Disconnect devices you are not using or ask your internet provider about upgrading your speed.
+
+**Check your cables:** Make sure all cables connecting your modem and router are plugged in securely. A loose cable can cause the internet to drop out entirely.
+
+(Sources: How-To Geek, Tom's Guide, Google Support, 2026)`,
   },
   {
     slug: 'password-security',
@@ -89,10 +107,15 @@ A great method is to use a **passphrase** — a string of random words, like "pu
 A password manager is an app that creates, stores, and fills in strong passwords for you. You only need to remember one master password to unlock the manager itself.
 
 Popular options include:
-- **Bitwarden** (free, open-source)
+- **Bitwarden** (free, open-source) — extremely generous free tier, highly secure, and everything most people need. Cybersecurity experts highly recommend it.
+- **NordPass** (free tier) — offers unlimited password storage and autofill, but the free version works on only one device at a time.
 - **1Password** (paid, very user-friendly)
-- **Apple Keychain** (built into iPhones and Macs)
-- **Google Password Manager** (built into Chrome and Android)
+- **Apple Keychain** — built into iPhones and Macs. If you only use Apple devices, this is a great no-extra-download option.
+- **Google Password Manager** — built into Chrome and Android. Works automatically when you save passwords in Chrome.
+
+A password manager creates strong, random passwords and stores them for you. You only need to remember one master password to unlock the manager itself. Cybersecurity experts strongly recommend using a password manager to protect yourself from cyberthieves.
+
+(Sources: Tom's Guide, AARP, 2026)
 
 ## Two-Factor Authentication (2FA)
 
@@ -136,7 +159,7 @@ CISA's "Secure Our World" program provides free tip sheets in multiple languages
     category: 'concept',
     tags: ['scams', 'phishing', 'safety', 'fraud', 'email'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['password-security', 'safety-checklist', 'us-resources'],
+    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'online-shopping-safety'],
     content: `## The Most Common Tech Scams
 
 Scammers use technology to trick people into handing over money or personal information. Here are the most common types:
@@ -165,6 +188,21 @@ The scale of fraud in the United States continues to grow:
 - Reports from older adults losing **$10,000 or more** to fraud **quadrupled** between 2020 and 2024. (Source: FTC.gov, 2026)
 - Key tactics include **fake fraud alerts**, **imposter calls using stolen personal data**, and **AI voice clones** that mimic a family member's voice. (Source: FTC.gov, 2026)
 - In March 2026, the FTC hosted a roundtable focused on the **top scams affecting older adults**. (Source: consumer.ftc.gov, 2026)
+
+## New Scam Types to Watch For (2026 Update)
+
+### Recovery Scams
+After someone has already been scammed, criminals reach out pretending to help the victim get their money back. They charge fees for services that do not exist. Recovery scams are expected to surge in 2026, particularly targeting victims of pig-butchering and financial-grooming scams. (Source: FTC.gov, 2026)
+
+### Fake Law Enforcement Scams
+You receive a call from someone claiming to be a police officer or federal agent. They say you are the subject of a criminal investigation. Some scammers will even interrogate victims on video calls for hours, threatening criminal charges and pressuring you to pay money to "resolve" the situation. Real law enforcement will never demand payment over the phone. (Source: FTC.gov, AARP.org, 2026)
+
+### AI Content Poisoning
+Scammers now use artificial intelligence to create realistic-looking fake shopping websites that show up in search results. AI has made it very easy for criminals to produce extremely convincing fake photos, videos, and entire websites. Always verify a website is legitimate before entering any personal or payment information. (Source: FTC.gov, AARP.org, 2026)
+
+### Updated Fraud Statistics (2026)
+- Government imposter scams grew from $171 million in losses in 2023 to **$789 million in 2024** — a staggering increase. (Source: FTC.gov, 2026)
+- A record **$12.5 billion** was reported stolen through scams and fraud in 2024, up 25% from $10 billion in 2023. (Source: FTC.gov, 2026)
 
 ## Golden Rules of Scam Prevention
 
@@ -314,7 +352,7 @@ You do not have to figure out technology alone. These organizations offer free h
 
 ### Senior Planet by AARP
 - **Website**: [seniorplanet.org](https://seniorplanet.org)
-- **What they offer**: Free online and in-person technology training for people 60 and older. (Source: AARP Tech Trends, 2026)
+- **What they offer**: Free online and in-person technology training for people 60 and older. Classes are live with small groups of 12 to 15 people, so you get personal attention. (Source: AARP Tech Trends, 2026)
 
 ### GCFGlobal (Goodwill Community Foundation)
 - **Website**: [gcfglobal.org](https://edu.gcfglobal.org/en/topics/technology/)
@@ -326,9 +364,11 @@ You do not have to figure out technology alone. These organizations offer free h
 Recent research from AARP shows how rapidly older adults are adopting technology (Source: AARP Tech Trends, 2026):
 
 - **Smartphone ownership among adults 50+** soared from 55% in 2016 to **90% in 2025**.
+- **2 in 5 older adults** are planning a tech purchase in 2026, with smartphones at the top of the list.
 - Adults 50+ now use an average of **14 digital services** and **10 apps**.
 - **81%** use technology for engaging with the world, **80%** for social connections, and **65%** for managing finances.
 - Despite high adoption, **59% of older adults** do not believe technology is designed with them in mind.
+- Some smartphones now offer **high-definition voice** for people who are hard of hearing, and **speech-to-text** features for those with arthritis or Parkinson's disease.
 
 ## Local Help
 
@@ -995,6 +1035,157 @@ Phishing emails try to trick you into clicking a bad link or sharing personal in
 - Requests for passwords, Social Security numbers, or payment information.
 
 When in doubt, do not click. Go directly to the company's official website by typing the address into your browser.`,
+  },
+  {
+    slug: 'online-shopping-safety',
+    title: 'Online Shopping Safety',
+    category: 'concept',
+    tags: ['shopping', 'safety', 'scams', 'credit-card', 'online'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['scam-prevention', 'password-security', 'safety-checklist'],
+    content: `## Staying Safe When Shopping Online
+
+Online shopping is convenient, but scammers have become very good at creating fake stores that look real. Here is how to protect yourself every time you shop.
+
+## Before You Buy
+
+- **Search for the retailer's name plus "scam" or "complaint"** before making a purchase. If many people report problems, shop somewhere else.
+- **Check BBB's Scam Tracker** at [bbb.org/scamtracker](https://www.bbb.org/scamtracker) to see if a business has been flagged.
+- **Be cautious of prices that seem too good to be true.** If a deal looks unbelievable, it probably is.
+- **Watch out for AI-powered fake websites.** Scammers now use artificial intelligence to create extremely realistic-looking fake shopping sites that appear in search results. This is called "AI content poisoning." (Source: FTC.gov, CISA.gov, 2026)
+
+## How to Pay Safely
+
+- **Always pay with a credit card.** Credit cards offer the best protection for disputes. If something goes wrong, you can contact your credit card company to reverse the charge.
+- **NEVER pay with gift cards, wire transfers, payment apps (like Zelle or Venmo), or cryptocurrency** for online purchases. These methods have little or no fraud protection, and scammers specifically ask for them because the money is nearly impossible to recover.
+
+## Red Flags to Watch For
+
+- The website URL does not start with **https://** (the "s" stands for secure). But keep in mind that https alone does not guarantee the site is legitimate — scammers use it too.
+- Coupon offers or promotional emails where the **spacing looks off** or the sender uses a **free email domain** (like gmail.com or yahoo.com instead of the company's real domain) — these are likely fake.
+- No physical address, phone number, or return policy listed on the website.
+- Pressure to buy immediately with countdown timers or "only 2 left" warnings.
+
+## After You Buy
+
+- **Save your confirmation email and order number.** Take a screenshot if needed.
+- **Check your credit card statement** to make sure you were charged the correct amount.
+- **Report problems** to the FTC at [ReportFraud.ftc.gov](https://reportfraud.ftc.gov).
+
+## Quick Tip
+
+When in doubt, buy from retailers you already know and trust. If you find a new store, spend a few minutes researching it before entering any payment information.
+
+(Sources: FTC.gov, CISA.gov, AARP.org, 2026)`,
+  },
+  {
+    slug: 'telehealth',
+    title: 'Telehealth and Virtual Doctor Visits',
+    category: 'concept',
+    tags: ['telehealth', 'health', 'video-call', 'doctor', 'mychart'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['video-calling', 'device-basics', 'downloading-apps'],
+    content: `## What Is Telehealth?
+
+Telehealth (also called a virtual visit or telemedicine) lets you see your doctor through a video call on your phone, tablet, or computer. You do not need to drive to the office — you can talk to your doctor from your own home.
+
+## How to Set Up a Telehealth Appointment
+
+1. **Call your doctor's office** and ask to schedule a virtual appointment. Not all visits can be done virtually, so the office will let you know if telehealth is an option for your needs.
+2. The office will email or text you a **link** about 10 minutes before your appointment.
+3. You may need to **download an app** in advance (like MyChart, Zoom, or your doctor's own app). Do this the day before so you are not rushing.
+4. You may also need to **digitally sign consent forms** before the visit. The office will walk you through this.
+
+## How to Join a MyChart Video Visit
+
+MyChart is one of the most common platforms used by doctor's offices. Here is how to join:
+
+1. **Log in to MyChart** about 15 minutes before your appointment.
+2. Go to **Appointments** and find your upcoming visit.
+3. Tap **Video Visit**.
+4. Tap **Begin Video Visit**.
+5. Tap **Join With Video**.
+6. Tap **Join With Audio**.
+
+If you are unsure about any step, call your doctor's office — they are used to helping patients with the technology.
+
+## Tips for a Good Virtual Visit
+
+- **Use a tablet if you have one.** The larger screen makes it easier to see your doctor, and tablets have a built-in camera and microphone.
+- **Test your audio and video before the appointment.** Most apps have a test feature, or you can do a practice video call with a family member.
+- **Sit in a quiet, well-lit room** so your doctor can see and hear you clearly.
+- **Have your medication bottles nearby** in case your doctor asks about what you are taking.
+- **Write down your questions** ahead of time so you do not forget anything.
+
+## Quick Tip
+
+If you are new to video calls, ask a family member or friend to help you with your first telehealth visit. Once you have done it once, it becomes much easier.
+
+(Source: AARP.org, 2026)`,
+  },
+  {
+    slug: 'accessibility',
+    title: 'Phone Accessibility Features',
+    category: 'concept',
+    tags: ['accessibility', 'iphone', 'android', 'vision', 'hearing', 'mobility'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics', 'apple', 'android'],
+    content: `## Making Your Phone Easier to Use
+
+Both iPhones and Android phones have built-in features designed to help people who have difficulty seeing, hearing, or using a touchscreen. You do not need to buy anything extra — these tools are already on your phone.
+
+## iPhone Accessibility Features
+
+Find these in **Settings > Accessibility** on your iPhone or iPad.
+
+### Assistive Access
+A simplified version of iOS with bigger buttons, easier navigation, and fewer distractions. It includes an emoji-only keyboard option and the ability to send video selfie messages. This is a great option for anyone who finds regular phone screens overwhelming. (Source: Apple Support, 2026)
+
+### Personal Voice
+This feature lets you create a digital voice that sounds like you. If you have a condition that may affect your ability to speak in the future, you can record your voice now and use it later with the Live Speech feature during phone calls and conversations. (Source: Apple Support, 2026)
+
+### Vision Features
+- **VoiceOver**: A screen reader that describes everything on your screen out loud.
+- **Magnifier**: Turns your phone's camera into a magnifying glass.
+- **Display adjustments**: Change colors, increase contrast, reduce motion, and make text bolder.
+
+### Mobility Features
+- Found in **Settings > Accessibility > Physical and Motor**.
+- Options include touch accommodations, back tap shortcuts, and switch control for people who cannot use the touchscreen in the usual way.
+
+### Accessibility Shortcut
+Set up a shortcut to quickly turn your most-used accessibility features on and off. Triple-click the side button to activate it.
+
+## Android Accessibility Features
+
+Find these in **Settings > Accessibility** on your Android phone.
+
+### Display and Text
+- **Adjust font size and display size** to make everything on screen bigger.
+- **High-contrast text** makes words easier to read against the background.
+- **Outline text** (available on Android 16 and later) adds outlines around letters for better visibility.
+- **Zoom**: Magnify any part of your screen by tapping.
+
+### TalkBack
+Android's screen reader. It provides touch and spoken feedback, reading aloud whatever you tap on the screen. Helpful for people with low vision or blindness.
+
+### Voice Access
+Control your entire phone by voice — open apps, navigate screens, and write messages without touching the screen. Great for people with limited hand mobility. (Source: Google Support, 2026)
+
+### Accessibility Menu
+A large on-screen menu that gives you easy access to common actions like adjusting volume, taking a screenshot, or locking your phone.
+
+### Live Transcribe
+Uses your phone's microphone to convert speech into text in real time. Helpful during conversations, meetings, or anytime you need to read what someone is saying. (Source: Google Support, 2026)
+
+### Live Caption
+Automatically adds captions over any audio or video playing on your device — including phone calls, videos, and podcasts. No internet connection required.
+
+## Quick Tip
+
+You do not need to have a disability to benefit from accessibility features. Many people use larger text, voice control, or captions simply because they find them more comfortable. Explore your phone's Accessibility settings — you might find something that makes your daily experience much better.
+
+(Sources: Apple Support, Google Support, 2026)`,
   },
 ];
 
