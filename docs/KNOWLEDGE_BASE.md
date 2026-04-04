@@ -18,6 +18,7 @@ It compiles from `scraped_articles` plus admin-added manual sources and generate
 It also generates Marp-compatible deck outputs.
 The admin UI now includes browsers for compiled documents, concept pages, and source-linked outputs.
 Generated answers and decks are instructed to include inline source markers such as `[S1]`.
+Stored outputs also receive a canonical source map appended server-side so the exact source-to-marker mapping is always present.
 
 ## Required Secrets
 
@@ -140,5 +141,5 @@ Checks:
 - no filesystem vault sync yet
 - no image OCR pipeline yet
 - URL extraction is heuristic HTML parsing, not a full reader-mode pipeline
-- citation quality depends on the model following the output format precisely
+- inline citation placement still depends on the model following the output format precisely
 - concept generation is intentionally lightweight and derived from compiled keywords

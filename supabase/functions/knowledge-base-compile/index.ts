@@ -184,6 +184,27 @@ function scoreDocument(question: string, doc: KnowledgeDocument) {
   return score;
 }
 
+function buildCanonicalSourceMap(ranked: Array<KnowledgeDocument & { score: number }>) {
+  return ranked
+    .map((doc, index) => `- S${index + 1}: ${doc.title}`)
+    .join('\n');
+}
+
+function appendCanonicalCitations(markdown: string, ranked: Array<KnowledgeDocument & { score: number }>, mode: 'answer' | 'deck') {
+  const canonicalMap = buildCanonicalSourceMap(ranked);
+
+  if (mode === 'deck') {
+    return `${markdown.trim()}\n\n---\n\n# Canonical Source Map\n\n${canonicalMap}\n`;
+  }
+
+  const hasSourcesSection = /\n##\s+Sources\b/i.test(markdown);
+  if (hasSourcesSection) {
+    return `${markdown.trim()}\n\n### Canonical Source Map\n${canonicalMap}\n`;
+  }
+
+  return `${markdown.trim()}\n\n## Sources\n${canonicalMap}\n`;
+}
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: CORS_HEADERS });
@@ -365,7 +386,8 @@ Question: ${question}
 Sources:
 ${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`;
 
-      const markdown = await callOllama(prompt);
+      const rawMarkdown = await callOllama(prompt);
+      const markdown = appendCanonicalCitations(rawMarkdown, ranked, mode === 'deck' ? 'deck' : 'answer');
       const title = question.length > 80 ? `${question.slice(0, 77)}...` : question;
 
       const { data: output, error: outputError } = await supabase
