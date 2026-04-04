@@ -341,12 +341,14 @@ Requirements:
 - Start with frontmatter suitable for Marp
 - 6 to 10 slides
 - Use short bullets
+- Every substantive slide must cite relevant sources inline using square brackets like [S1] or [S2, S3]
 - Include a final slide listing the sources used
+- Do not invent sources
 
 Deck topic: ${question}
 
 Sources:
-${ranked.map((doc, index) => `Source ${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`
+${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`
         : `Answer the question using the provided knowledge base sources.
 
 Return markdown with these sections:
@@ -354,11 +356,14 @@ Return markdown with these sections:
 - ## Answer
 - ## Sources
 - ## Next Steps
+- In the Answer section, cite claims inline using source markers like [S1] or [S2, S3]
+- In the Sources section, map each source marker to its title
+- Do not cite any source that is not provided
 
 Question: ${question}
 
 Sources:
-${ranked.map((doc, index) => `Source ${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`;
+${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`;
 
       const markdown = await callOllama(prompt);
       const title = question.length > 80 ? `${question.slice(0, 77)}...` : question;

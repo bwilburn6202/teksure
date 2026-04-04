@@ -17,6 +17,7 @@ The current branch adds:
 It compiles from `scraped_articles` plus admin-added manual sources and generates markdown answer artifacts.
 It also generates Marp-compatible deck outputs.
 The admin UI now includes browsers for compiled documents, concept pages, and source-linked outputs.
+Generated answers and decks are instructed to include inline source markers such as `[S1]`.
 
 ## Required Secrets
 
@@ -139,4 +140,5 @@ Checks:
 - no filesystem vault sync yet
 - no image OCR pipeline yet
 - URL extraction is heuristic HTML parsing, not a full reader-mode pipeline
+- citation quality depends on the model following the output format precisely
 - concept generation is intentionally lightweight and derived from compiled keywords
