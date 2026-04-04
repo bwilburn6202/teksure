@@ -190,7 +190,7 @@ const lessons: Lesson[] = [
       { text: 'Even careful people sometimes get caught out. Knowing what to do in the first few hours makes a huge difference to how much damage is done.' },
       { heading: 'You clicked a suspicious link', text: 'Don\'t panic. Close the browser tab immediately. Don\'t enter any passwords. Run a security scan (Windows Defender on PC). If you entered any details, change those passwords immediately from a different device.' },
       { heading: 'You think you\'ve been hacked', text: 'Change your email password immediately — your email is the key to everything else. Then change passwords for banking, social media, and any site that matters. Enable 2FA where you haven\'t already.' },
-      { heading: 'You gave money to a scammer', text: 'Contact your bank immediately — within hours is much better than days. Banks can sometimes reverse transactions quickly. Report the scam to Action Fraud (UK: actionfraud.police.uk) or the FTC (US: reportfraud.ftc.gov).' },
+      { heading: 'You gave money to a scammer', text: 'Contact your bank immediately — within hours is much better than days. Banks can sometimes reverse transactions quickly. Report the scam to the FTC at ReportFraud.ftc.gov.' },
       { heading: 'Someone has remote access to your computer', text: 'Disconnect from the internet immediately — unplug the network cable or turn off WiFi. This cuts their access. Then call a trusted tech helper. Do not use that computer until it\'s been checked.' },
       { heading: 'You\'re not sure if it\'s a scam', text: 'When in doubt, ask someone you trust. Contact TekSure and we\'ll help you work out if something is safe. It\'s always better to ask than to ignore it.' },
     ],

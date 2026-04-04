@@ -335,7 +335,7 @@ export default function PhishingScanner() {
                       <p className="text-sm text-muted-foreground">Proceed with caution. If you received this link unexpectedly (via text, email, or social media), it\'s safer not to click it. If it\'s from a company you use, go to their website directly by typing the address rather than clicking the link.</p>
                     )}
                     {result.risk === 'dangerous' && (
-                      <p className="text-sm text-muted-foreground">Do not click this link. Delete the message that contained it. If you think you\'ve already been scammed, contact your bank and report it to Action Fraud at <strong>0300 123 2040</strong> or <strong>actionfraud.police.uk</strong>.</p>
+                      <p className="text-sm text-muted-foreground">Do not click this link. Delete the message that contained it. If you think you\'ve already been scammed, contact your bank and report it to the FTC at <strong>ReportFraud.ftc.gov</strong> or call <strong>877-382-4357</strong>.</p>
                     )}
                   </CardContent>
                 </Card>

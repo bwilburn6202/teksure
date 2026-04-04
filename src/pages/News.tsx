@@ -100,8 +100,8 @@ const NEWS_ITEMS: NewsItem[] = [
     date: '2026-03-22',
     icon: Package,
     readTime: '2 min',
-    source: 'Action Fraud',
-    sourceUrl: 'https://www.actionfraud.police.uk',
+    source: 'FTC',
+    sourceUrl: 'https://reportfraud.ftc.gov',
   },
   {
     id: 2,
