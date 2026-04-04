@@ -1187,6 +1187,119 @@ You do not need to have a disability to benefit from accessibility features. Man
 
 (Sources: Apple Support, Google Support, 2026)`,
   },
+  {
+    slug: 'social-media-safety',
+    title: 'Social Media Privacy and Safety',
+    category: 'concept',
+    tags: ['facebook', 'social media', 'privacy', 'safety', 'settings'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['privacy-settings', 'scam-prevention', 'using-facebook'],
+    content: `## Why Social Media Privacy Matters
+
+Facebook is the most popular social media platform among adults 50 and older. While it is a great way to stay connected with family and friends, it is important to control who can see your information. 52% of Facebook users 50 and older are "very concerned" about privacy. (Source: AARP, 2026)
+
+## Essential Facebook Privacy Settings
+
+### Make Your Posts Friends Only
+Go to **Settings & Privacy** (click the arrow in the top-right corner) and change "Who can see your posts?" to **Friends Only**. This means only people you have added as friends can see what you share — not strangers.
+
+### Limit Past Posts
+Use the **Limit Past Posts** option to change the visibility of older public posts so that they are only shared with your immediate friends. This is a one-click fix for years of public posts.
+
+### Hide Your Friends List
+Change "Who can see your friends list?" to **Only Me**. Scammers sometimes use your friends list to impersonate people you know.
+
+### Turn Off Location Services
+On your phone, go to **Settings > Privacy > Location Services** and disable location for Facebook. There is no reason Facebook needs to know where you are at all times.
+
+## Safety Tips for All Social Media
+
+- **Never accept friend requests from people you do not know** — scammers create fake profiles.
+- **Be careful what you share publicly** — criminals can use your birthday, pet names, and hometown to guess your security questions.
+- **If a message from a friend asks for money, call them first** — their account may have been hacked.
+- **Report suspicious profiles and messages** to the platform.
+
+(Sources: AARP.org, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'smart-home-basics',
+    title: 'Smart Home Setup for Beginners',
+    category: 'concept',
+    tags: ['smart home', 'alexa', 'google home', 'smart speaker', 'automation'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['using-voice-assistants', 'wifi-networking', 'device-basics'],
+    content: `## What Is a Smart Home?
+
+A smart home uses internet-connected devices that you can control with your voice or phone. The most common smart home devices are smart speakers (Amazon Echo, Google Home), smart lights, smart plugs, and smart thermostats.
+
+## Choosing Your Ecosystem
+
+Before buying smart home devices, choose which system to use:
+
+- **Amazon Alexa** — Works with Amazon Echo speakers. Best if you use Amazon services.
+- **Google Home** — Works with Google Nest speakers. Best if you use Android phones or Google services.
+- **Apple HomeKit** — Works with HomePod speakers. Best if you use iPhones and Macs.
+
+Most smart devices work with multiple ecosystems, so you are not locked in forever.
+
+## Start Simple
+
+The best way to start is with just one or two devices:
+
+1. **Smart speaker** — An Amazon Echo Dot or Google Nest Mini costs around $30-50 and lets you ask questions, set timers, play music, and control other smart devices with your voice.
+2. **Smart plugs** — Plug a lamp or fan into a smart plug, and you can turn it on and off with your voice or phone. Smart plugs cost $10-15 each.
+3. **Smart lights** — Replace a regular light bulb with a smart bulb. You can dim it, change colors, or set schedules from your phone.
+
+## Tips for Seniors
+
+- **Buy only what solves a real problem for you** — do not buy devices just because they are "smart."
+- **Ask a family member to help with initial setup** — once configured, daily use is simple.
+- **Voice control is the biggest benefit** — if you have trouble with small buttons or screens, controlling lights and appliances by voice can be life-changing.
+
+(Sources: How-To Geek, Tom's Guide, 2026)`,
+  },
+  {
+    slug: 'streaming-setup',
+    title: 'How to Set Up Streaming TV',
+    category: 'concept',
+    tags: ['streaming', 'roku', 'fire tv', 'netflix', 'tv'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['streaming-tv', 'wifi-networking', 'downloading-apps'],
+    content: `## What Is a Streaming Device?
+
+If your TV does not have built-in apps (a "smart TV"), you can add streaming by plugging in a small device. The most popular options are:
+
+- **Roku** (Streaming Stick or Express) — Starting around $30. Very easy to use with a simple remote.
+- **Amazon Fire TV Stick** — Starting around $30. Works well with Alexa voice control.
+- **Apple TV** — Starting around $129. Best for iPhone and Mac users.
+- **Chromecast with Google TV** — Starting around $30. Cast from your phone or use the remote.
+
+## How to Set Up a Streaming Stick
+
+1. **Plug the stick into your TV's HDMI port** — this is the rectangular slot on the back or side of your TV.
+2. **Connect the power cable** — plug the USB cable into the stick and the other end into a power outlet.
+3. **Switch your TV's input** — use your TV remote to select the HDMI input where you plugged in the stick. Look for a button labeled "Input" or "Source."
+4. **Follow the on-screen setup** — connect to your WiFi network and create or sign into your account.
+5. **Download your streaming apps** — add Netflix, Hulu, YouTube, PBS, or any service you subscribe to.
+
+## Free Streaming Options
+
+You do not need to pay for everything. These are free:
+
+- **YouTube** — Millions of free videos on every topic
+- **PBS** — Free shows and documentaries at pbs.org or the PBS app
+- **Tubi** — Free movies and TV shows with occasional ads
+- **Pluto TV** — Free live TV channels, like cable but free
+- **The Roku Channel** — Free if you have a Roku device
+
+## Tips
+
+- Unlike cable TV, streaming services have no installation fees, no contracts, and you can cancel anytime.
+- A good internet connection is important — you need at least 5 Mbps for standard video and 25 Mbps for 4K.
+- Write down your streaming passwords in a safe place.
+
+(Sources: Tom's Guide, AARP, 2026)`,
+  },
 ];
 
 /** Look up a wiki page by slug */

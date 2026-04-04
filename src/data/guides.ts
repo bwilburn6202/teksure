@@ -176,11 +176,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.' },
-      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.' },
-      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.' },
-      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.' },
-      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.' },
+      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.', whyItWorks: 'The clipboard is an invisible holding area — when you "copy" something, it goes to the clipboard. Print Screen puts a picture of your whole screen there. You can then paste it anywhere, just like pasting copied text.' },
+      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.', whyItWorks: 'Adding the Windows key tells your computer to save the screenshot as a file automatically, instead of just copying it to the clipboard. This is faster when you want to keep the image for later.' },
+      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.', whyItWorks: 'Sometimes you only need part of the screen — a confirmation number, an error message, or a recipe. Snipping Tool lets you select exactly what you need instead of capturing everything.' },
+      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.', whyItWorks: 'This captures only the active window, hiding everything else on screen. It is great when you want to share what you see in one app without showing your other open programs or personal information.' },
+      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.', whyItWorks: 'Adding arrows, highlights, or circles to a screenshot makes it much easier to show someone exactly where to look. This is especially helpful when asking for tech support — a marked-up screenshot is worth a thousand words.' },
     ]
   },
   {
@@ -194,11 +194,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-10',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.' },
-      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".' },
-      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.' },
-      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).' },
-      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.' },
+      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.', whyItWorks: 'Before you can copy anything, your computer needs to know WHAT you want to copy. Highlighting (selecting) tells it exactly which text or files you mean. Think of it like highlighting a sentence in a book with a marker.' },
+      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".', whyItWorks: 'Copying puts a duplicate on the invisible clipboard — the original stays where it is. Nothing changes on screen, but the copy is now ready to be placed somewhere else.' },
+      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.', whyItWorks: 'Paste takes whatever is on the clipboard and puts it where your cursor is. You can paste the same thing multiple times — the clipboard holds onto it until you copy something new.' },
+      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).', whyItWorks: 'Cut is like copy + delete in one step. It is the difference between photocopying a page (copy) and physically moving it to a new folder (cut). Use cut when you want to relocate something, not duplicate it.' },
+      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.', whyItWorks: 'Normally the clipboard only remembers the LAST thing you copied. Clipboard history keeps a list of your recent copies, so you can go back and paste something you copied earlier without re-copying it.' },
     ]
   },
   {
@@ -212,9 +212,9 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-11',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!' },
-      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.' },
-      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.' },
+      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!', whyItWorks: 'Your work only exists in the computer\'s temporary memory until you save it. If the power goes out or the program crashes, unsaved work disappears. Saving writes it to permanent storage — like putting a document in a filing cabinet instead of leaving it on the table.' },
+      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.', whyItWorks: '"Save As" creates a brand new file while keeping the original untouched. This is useful when you want to make a copy before making changes — like photocopying a letter before editing it.' },
+      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.', whyItWorks: 'Your computer organizes files in folders, just like a filing cabinet. Choosing the right location now means you can find the file later. Documents and Desktop are the easiest places to remember.' },
       { title: 'Name your file clearly', content: 'Give files descriptive names like "Budget_March_2026" instead of "Untitled" so you can find them later.' },
       { title: 'Auto-save features', content: 'Many modern apps like Word and Google Docs auto-save your work. Look for the cloud or checkmark icon confirming saves.' },
     ]
@@ -1728,11 +1728,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.' },
-      { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.' },
-      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.' },
-      { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.' },
-      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.' },
+      { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.', whyItWorks: 'Hackers use computers to try millions of password guesses per second. A 6-character password can be cracked in seconds. A 12-character password would take thousands of years. Length is the single most important factor in password strength.' },
+      { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.', whyItWorks: 'Each type of character adds more possibilities the hacker\'s computer has to check. Using only lowercase letters means 26 options per character. Adding uppercase, numbers, and symbols increases that to 95 options per character — dramatically more combinations to try.' },
+      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.', whyItWorks: 'A passphrase is long (which makes it strong) but uses real words (which makes it memorable). Four random words strung together are far stronger than a short complex password like "P@ss1!" — and much easier to type correctly.' },
+      { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.', whyItWorks: 'Data breaches happen regularly — companies like Yahoo, LinkedIn, and Facebook have all had passwords stolen. When attackers get your password from one site, the first thing they do is try it on your email, bank, and social media. Unique passwords contain the damage to one account.' },
+      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.', whyItWorks: 'No one can remember 50 different strong passwords. A password manager remembers them all for you — you only need to remember one master password. It is like having a locked safe that holds all your keys.' },
     ]
   },
   {
@@ -1746,12 +1746,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).' },
-      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."' },
-      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.' },
-      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.' },
-      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.' },
-      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.' },
+      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).', whyItWorks: 'Even if a hacker steals your password, they still cannot get in without the second factor — your phone. It is like having two locks on your front door. A thief would need both keys.' },
+      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."', whyItWorks: 'Different companies use different names for the same feature. Knowing all the common names helps you find it no matter which service you are setting up.' },
+      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.', whyItWorks: 'Authenticator apps generate codes on your phone that change every 30 seconds. SMS codes can sometimes be intercepted by hackers, but app codes cannot — they never travel over the phone network.' },
+      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.', whyItWorks: 'The QR code contains a secret key that links the app to your account. After scanning, the app generates matching codes that only your account will accept. No one else can generate these codes without that secret key.' },
+      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.', whyItWorks: 'Backup codes are one-time-use keys that bypass 2FA. If your phone breaks, gets lost, or is stolen, these codes are your emergency way back into your account. Keep them on paper in a safe place — not on your phone.' },
+      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.', whyItWorks: 'Your email is the most important account to protect because password resets for all your other accounts go through email. If a hacker controls your email, they can reset the password for your bank, social media, and everything else.' },
     ]
   },
   // Social: "That email from 'PayPal' might not be from PayPal. Here's how to check before you click anything."

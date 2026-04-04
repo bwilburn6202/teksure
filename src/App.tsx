@@ -117,6 +117,8 @@ const Wiki                   = lazy(() => import("./pages/Wiki"));
 const WikiPage               = lazy(() => import("./pages/WikiPage"));
 const ConceptMap             = lazy(() => import("./pages/ConceptMap"));
 const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
+const DailyLessons           = lazy(() => import("./pages/DailyLessons"));
+const TroubleshootingFlows   = lazy(() => import("./pages/tools/TroubleshootingFlows"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -285,6 +287,8 @@ const AppContent = () => {
           <Route path="/wiki/:slug" element={<WikiPage />} />
           <Route path="/concept-map" element={<ConceptMap />} />
           <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
+          <Route path="/daily-lessons" element={<DailyLessons />} />
+          <Route path="/tools/troubleshooting" element={<TroubleshootingFlows />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
