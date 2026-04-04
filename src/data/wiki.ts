@@ -69,7 +69,7 @@ Your router's network name and password are usually printed on a sticker on the 
     title: 'Password Security',
     category: 'concept',
     tags: ['passwords', 'security', 'accounts', '2fa', 'authentication'],
-    lastUpdated: '2026-04-02',
+    lastUpdated: '2026-04-04',
     seeAlso: ['scam-prevention', 'safety-checklist', 'wifi-networking'],
     content: `## Why Passwords Matter
 
@@ -105,14 +105,37 @@ Turn on 2FA for your most important accounts first: email, banking, and social m
 1. Change the password for that account right away.
 2. Check if your email appears on [Have I Been Pwned](https://haveibeenpwned.com) — a free tool that tells you if your information was part of a data breach.
 3. Turn on 2FA if you have not already.
-4. Watch your bank and credit card statements for anything you did not authorize.`,
+4. Watch your bank and credit card statements for anything you did not authorize.
+
+## Google's 7-Step Account Security Checklist
+
+Google recommends these steps to keep your account safe (Source: support.google.com, 2026):
+
+1. **Use a strong, unique password** for your Google account.
+2. **Turn on two-factor authentication (2FA).**
+3. **Set up recovery options** — add a backup phone number and email address.
+4. **Run Google's Security Checkup** at myaccount.google.com/security-checkup.
+5. **Review connected devices** — remove any you do not recognize.
+6. **Keep your software updated** — install updates as soon as they are available.
+7. **Watch out for phishing** — Google will never ask for your password by email or phone.
+
+## CISA's 4 Core Cybersecurity Practices
+
+The Cybersecurity and Infrastructure Security Agency (CISA) identifies four actions everyone should take (Source: cisa.gov/secure-our-world, 2026):
+
+1. **Use strong passwords** — long, unique, and stored in a password manager.
+2. **Keep software updated** — turn on automatic updates.
+3. **Think before you click** — be cautious with links and attachments.
+4. **Turn on multi-factor authentication (MFA)** — one of the most effective ways to protect your accounts.
+
+CISA's "Secure Our World" program provides free tip sheets in multiple languages, along with free resources, technical assistance, and training.`,
   },
   {
     slug: 'scam-prevention',
     title: 'Scam Prevention',
     category: 'concept',
     tags: ['scams', 'phishing', 'safety', 'fraud', 'email'],
-    lastUpdated: '2026-04-03',
+    lastUpdated: '2026-04-04',
     seeAlso: ['password-security', 'safety-checklist', 'us-resources'],
     content: `## The Most Common Tech Scams
 
@@ -132,6 +155,16 @@ A pop-up appears on your screen saying your computer has a virus and you must ca
 A caller claims to be from the IRS, Social Security, or your bank. They threaten arrest, fines, or account closure unless you pay immediately — often with gift cards or wire transfers.
 
 **How to spot it:** Government agencies do not call and demand immediate payment. Hang up and call the official number from the agency's website.
+
+## Fraud by the Numbers (2025-2026)
+
+The scale of fraud in the United States continues to grow:
+
+- **$15.9 billion** in total fraud losses were reported in 2025, across more than **3 million reports** filed with the FTC. (Source: FTC.gov, 2026)
+- **Imposter scams** — where someone pretends to be a trusted person or organization — were the **#1 reported fraud type**, causing **$3.5 billion in losses**. (Source: FTC.gov, 2026)
+- Reports from older adults losing **$10,000 or more** to fraud **quadrupled** between 2020 and 2024. (Source: FTC.gov, 2026)
+- Key tactics include **fake fraud alerts**, **imposter calls using stolen personal data**, and **AI voice clones** that mimic a family member's voice. (Source: FTC.gov, 2026)
+- In March 2026, the FTC hosted a roundtable focused on the **top scams affecting older adults**. (Source: consumer.ftc.gov, 2026)
 
 ## Golden Rules of Scam Prevention
 
@@ -250,7 +283,7 @@ Set a calendar reminder once every three months to review this checklist. Techno
     title: 'U.S. Tech Help Resources',
     category: 'entity',
     tags: ['resources', 'help', 'government', 'organizations', 'support'],
-    lastUpdated: '2026-04-03',
+    lastUpdated: '2026-04-04',
     seeAlso: ['scam-prevention', 'beginners-roadmap', 'safety-checklist'],
     content: `## Free and Trusted Tech Help in the United States
 
@@ -266,6 +299,7 @@ You do not have to figure out technology alone. These organizations offer free h
 ### Cybersecurity and Infrastructure Security Agency (CISA)
 - **Website**: [cisa.gov](https://www.cisa.gov)
 - **What they offer**: Cybersecurity tips for individuals and families, alerts about current threats.
+- **Secure Our World**: A dedicated program with 4 core practices (strong passwords, software updates, think before clicking, multi-factor authentication). Free tip sheets in multiple languages, plus free technical assistance and training. Website: [cisa.gov/secure-our-world](https://www.cisa.gov/secure-our-world). (Source: CISA.gov, 2026)
 
 ### FBI Internet Crime Complaint Center (IC3)
 - **Website**: [ic3.gov](https://www.ic3.gov)
@@ -278,10 +312,23 @@ You do not have to figure out technology alone. These organizations offer free h
 - **What they offer**: Tech guides written for adults 50+, free webinars, and a fraud helpline (1-877-908-3360).
 - **Best for**: Learning at your own pace with step-by-step articles.
 
+### Senior Planet by AARP
+- **Website**: [seniorplanet.org](https://seniorplanet.org)
+- **What they offer**: Free online and in-person technology training for people 60 and older. (Source: AARP Tech Trends, 2026)
+
 ### GCFGlobal (Goodwill Community Foundation)
 - **Website**: [gcfglobal.org](https://edu.gcfglobal.org/en/topics/technology/)
 - **What they offer**: Free online courses covering computers, smartphones, the internet, and essential software.
 - **Best for**: Structured learning from the very beginning.
+
+## AARP Tech Trends (2026)
+
+Recent research from AARP shows how rapidly older adults are adopting technology (Source: AARP Tech Trends, 2026):
+
+- **Smartphone ownership among adults 50+** soared from 55% in 2016 to **90% in 2025**.
+- Adults 50+ now use an average of **14 digital services** and **10 apps**.
+- **81%** use technology for engaging with the world, **80%** for social connections, and **65%** for managing finances.
+- Despite high adoption, **59% of older adults** do not believe technology is designed with them in mind.
 
 ## Local Help
 

@@ -22,3 +22,14 @@ Synthesized all existing TekSure content into wiki pages:
 - Entity pages built from platform-specific guides
 - Scam prevention page built from ScamAlerts data
 - Synthesis pages built from cross-category analysis
+
+## [2026-04-04] ingest | April 2026 research ingest
+
+Ingested research from 6 authoritative sources (FTC, AARP, CISA, Google, HHS/NCOA, senior tech sites). Updated files:
+- **wiki/concepts/scam-prevention.md** — Added FTC 2026 fraud statistics ($15.9B losses, imposter scams #1, quadrupled losses for seniors)
+- **wiki/concepts/password-security.md** — Added Google 7-step security checklist and CISA 4 core practices
+- **wiki/concepts/health-technology.md** — Added telehealth accessibility stats (82% need help), library telehealth booths, platform accessibility features
+- **wiki/concepts/device-basics.md** — Added common problems section (forgotten passwords, slow computers, email sync, printers, visual challenges)
+- **wiki/entities/us-resources.md** — Added CISA Secure Our World program, Senior Planet update, AARP Tech Trends 2026 data
+- **wiki/sources/research-2026-04.md** — Created new source page with all URLs and dates
+- **src/data/wiki.ts** — Updated scam-prevention, password-security, and us-resources content in web UI data

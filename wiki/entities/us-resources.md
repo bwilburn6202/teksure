@@ -18,7 +18,7 @@ If you need help with a scam, identity theft, or technology, these trusted organ
 
 - **AARP Fraud Watch Network** — Free fraud prevention resources and a helpline. Phone: **1-877-908-3360**. Website: [aarp.org/fraudwatchnetwork](https://www.aarp.org/money/scams-fraud/fraud-watch-network/).
 - **Cyber Seniors** — Free tech help for older adults, including one-on-one mentoring. Website: [cyberseniors.org](https://cyberseniors.org).
-- **Senior Planet** — Free online and in-person technology classes for people 60 and older. Website: [seniorplanet.org](https://seniorplanet.org).
+- **Senior Planet by AARP** — Free online and in-person technology training for people 60 and older. Website: [seniorplanet.org](https://seniorplanet.org). (Source: AARP Tech Trends, 2026)
 - **Local library programs** — Many public libraries offer free computer classes, Wi-Fi access, and one-on-one tech help. Ask at your local library's reference desk.
 
 ## Tech Company Support
@@ -31,6 +31,16 @@ If you need help with a scam, identity theft, or technology, these trusted organ
 ## Government Cybersecurity
 
 - **CISA (Cybersecurity and Infrastructure Security Agency)** — Tips and alerts at [cisa.gov](https://www.cisa.gov). Sign up for security alerts at [us-cert.cisa.gov](https://www.us-cert.cisa.gov).
+- **CISA "Secure Our World"** — A dedicated program with 4 core practices everyone should follow: strong passwords, software updates, think before clicking, and multi-factor authentication. Free tip sheets are available in multiple languages, along with free technical assistance and training resources. Website: [cisa.gov/secure-our-world](https://www.cisa.gov/secure-our-world). (Source: CISA.gov, 2026)
+
+## AARP Tech Trends (2026)
+
+Recent research from AARP shows how rapidly older adults are adopting technology (Source: AARP Tech Trends, 2026):
+
+- **Smartphone ownership among adults 50+** soared from 55% in 2016 to **90% in 2025**.
+- Adults 50+ now use an average of **14 digital services** and **10 apps**.
+- **81%** use technology for engaging with the world, **80%** for social connections, and **65%** for managing finances.
+- Despite high adoption, **59% of older adults** do not believe technology is designed with them in mind — a gap that organizations like TekSure are working to close.
 
 ## Quick Tip
 
