@@ -5,7 +5,7 @@ import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, ChevronRight, Clock,
   Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
-  Smartphone, Share2, BrainCircuit
+  Smartphone, Share2, BrainCircuit, MessageSquare, AlertTriangle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -373,6 +373,43 @@ const Index = () => {
               </Link>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── What's New ──────────────────────────────────── */}
+      <section className="bg-muted/50 border-y border-border/50 py-10 md:py-12">
+        <div className="container">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-center">What's New on TekSure</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link to="/guides" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <BookOpen className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">New Guides This Week</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">15+ new step-by-step guides added for beginners.</p>
+              </div>
+            </Link>
+            <Link to="/scam-alerts" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <AlertTriangle className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Scam Alert: Latest Warnings</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">Stay safe with up-to-date scam alerts from the FTC and AARP.</p>
+              </div>
+            </Link>
+            <Link to="/tools" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <Wrench className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Free Tools</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">30+ free tools for passwords, speed tests, and more.</p>
+              </div>
+            </Link>
+            <Link to="/forum" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <MessageSquare className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Community Forum</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">Ask questions and share tips with fellow learners.</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
