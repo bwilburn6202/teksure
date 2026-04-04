@@ -90,6 +90,7 @@ npm run dev
 
 1. Confirm Ollama health shows `Available`.
 2. Add manual sources by file import or paste.
+   Supported file types: `.md`, `.txt`, `.pdf`, `.docx`
 3. Edit or delete manual sources in the source library as needed.
 4. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
 5. Use `Generate Answer` or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
@@ -133,5 +134,5 @@ Checks:
 ## Current Limitations
 
 - no filesystem vault sync yet
-- no PDF/docx parsing pipeline yet
+- no image OCR pipeline yet
 - concept generation is intentionally lightweight and derived from compiled keywords

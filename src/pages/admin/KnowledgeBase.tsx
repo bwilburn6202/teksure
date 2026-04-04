@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
+import { extractDocumentFile } from '@/lib/documentExtraction';
 
 interface HealthState {
   available: boolean;
@@ -272,13 +273,15 @@ export default function KnowledgeBase() {
 
     setUploading(true);
     try {
-      const content = await file.text();
-      const title = file.name.replace(/\.[^.]+$/, '') || file.name;
+      const extracted = await extractDocumentFile(file);
+      if (!extracted.content.trim()) {
+        throw new Error('No readable text was found in the uploaded file.');
+      }
       await saveManualSource({
-        title,
-        content,
-        sourceType: 'upload',
-        originalFilename: file.name,
+        title: extracted.title,
+        content: extracted.content,
+        sourceType: extracted.sourceType,
+        originalFilename: extracted.originalFilename,
       });
       toast.success(`Imported ${file.name}.`);
       await loadData();
@@ -402,8 +405,13 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <label className="text-sm font-medium">Import `.md` or `.txt`</label>
-                <Input type="file" accept=".md,.txt,text/markdown,text/plain" onChange={handleFileUpload} disabled={uploading} />
+                <label className="text-sm font-medium">Import `.md`, `.txt`, `.pdf`, or `.docx`</label>
+                <Input
+                  type="file"
+                  accept=".md,.txt,.pdf,.docx,text/markdown,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  onChange={handleFileUpload}
+                  disabled={uploading}
+                />
               </div>
               <div className="grid gap-3">
                 <div>
