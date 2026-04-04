@@ -39,6 +39,7 @@ export function Navbar() {
     { to: '/videos', label: 'Videos' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
     { to: '/glossary', label: 'Glossary' },
+    { to: '/wiki', label: 'Wiki' },
     { to: '/blog', label: 'Blog' },
     { to: '/forum', label: 'Forum' },
     { to: '/safety/scam-alerts', label: 'Safety' },
