@@ -347,6 +347,429 @@ Many senior centers host regular technology classes. Contact your local Area Age
 
 AARP membership is not required to access their free online tech guides and videos. Anyone can visit [aarp.org/technology](https://www.aarp.org/home-family/personal-technology/) and start learning right away.`,
   },
+  {
+    slug: 'sending-text-messages',
+    title: 'How to Send a Text Message',
+    category: 'concept',
+    tags: ['texting', 'messaging', 'phone', 'iphone', 'android'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics'],
+    content: `## What Is a Text Message?
+
+A text message (also called an SMS) is a short written message you send from your phone to someone else's phone. It is one of the most common ways to stay in touch with family and friends.
+
+## How to Send a Text on iPhone
+
+1. Find the green **Messages** app on your home screen and tap it.
+2. Tap the **pencil icon** in the top-right corner to start a new message.
+3. In the **To** field, type the person's name (if they are in your contacts) or their phone number.
+4. Tap the text box at the bottom of the screen where it says "Text Message."
+5. Type your message using the keyboard.
+6. Tap the **blue arrow** button to send.
+
+You will see your message appear in a blue or green bubble. Blue means the other person also has an iPhone. Green means they have a different type of phone. Both work the same way.
+
+## How to Send a Text on Android
+
+1. Find the **Messages** app (it may look like a chat bubble) and tap it.
+2. Tap **Start chat** or the **plus (+) icon** at the bottom.
+3. Type the person's name or phone number in the search bar at the top.
+4. Tap their name when it appears, or finish typing the number.
+5. Type your message in the text box at the bottom.
+6. Tap the **send arrow** to deliver your message.
+
+## Quick Tip: Use Your Voice Instead of Typing
+
+If typing feels slow, you can speak your message instead. Look for the **microphone icon** on your keyboard. Tap it, say your message out loud, and your phone will type the words for you. Check the text before sending to make sure it heard you correctly.
+
+## Adding a Photo to Your Text
+
+Want to share a picture? Tap the **camera icon** or **plus (+) button** next to the text box. You can take a new photo or choose one from your photo library. Then tap send.`,
+  },
+  {
+    slug: 'copy-and-paste',
+    title: 'How to Copy and Paste',
+    category: 'concept',
+    tags: ['copy', 'paste', 'basics', 'phone', 'computer'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics'],
+    content: `## What Is Copy and Paste?
+
+Copy and paste lets you take text (or a picture) from one place and put it somewhere else — without retyping it. This saves time and avoids mistakes. You can copy a web address, a phone number, a recipe, or anything you see on your screen.
+
+## How to Copy and Paste on a Computer
+
+### Using Keyboard Shortcuts
+1. **Select the text** you want to copy. Click at the start of the text, hold down your mouse button, and drag to the end. The selected text will turn blue.
+2. **Copy it** by pressing **Ctrl + C** on Windows, or **Cmd + C** on Mac. (Hold down Ctrl or Cmd, then tap the C key.)
+3. Click where you want to put the text.
+4. **Paste it** by pressing **Ctrl + V** on Windows, or **Cmd + V** on Mac.
+
+### Using the Right-Click Menu
+1. Select the text by clicking and dragging.
+2. Right-click on the highlighted text (press the right side of your mouse button).
+3. Click **Copy** from the menu that appears.
+4. Right-click where you want to paste.
+5. Click **Paste**.
+
+## How to Copy and Paste on a Phone or Tablet
+
+1. **Press and hold** your finger on the word you want to copy. Two small handles (blue dots or lines) will appear around the word.
+2. **Drag the handles** to highlight all the text you want.
+3. Tap **Copy** from the small menu that pops up.
+4. Go to where you want to paste the text (a message, email, or search bar).
+5. **Press and hold** in the text area until a menu appears.
+6. Tap **Paste**.
+
+## Quick Tip
+
+If you make a mistake after pasting, you can undo it. On a computer, press **Ctrl + Z** (Windows) or **Cmd + Z** (Mac). On a phone, shake the device or tap the undo button if one appears.`,
+  },
+  {
+    slug: 'downloading-apps',
+    title: 'How to Download an App',
+    category: 'concept',
+    tags: ['apps', 'app store', 'google play', 'download', 'phone'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics', 'apple', 'android'],
+    content: `## What Is an App?
+
+An app is a program you install on your phone or tablet. Apps let you do all sorts of things — check the weather, video call your grandkids, read the news, play games, or manage your bank account.
+
+## How to Download an App on iPhone or iPad
+
+1. Find the **App Store** on your home screen. It is a blue icon with a white letter "A."
+2. Tap the **Search** tab at the bottom of the screen.
+3. Type the name of the app you want (for example, "Zoom" or "Weather Channel").
+4. Find the correct app in the results. Look for the official one — it will usually have a lot of reviews and a high rating.
+5. Tap the **GET** button next to the app.
+6. You may need to confirm with **Face ID** (look at your phone), **Touch ID** (press your fingerprint), or your **Apple ID password**.
+7. The app will download and appear on your home screen.
+
+## How to Download an App on Android
+
+1. Find the **Google Play Store** on your home screen. It is a colorful triangle icon.
+2. Tap the **search bar** at the top and type the name of the app.
+3. Find the correct app in the results.
+4. Tap **Install**. The app will download automatically.
+5. When it finishes, tap **Open** to use it, or find it on your home screen.
+
+## Staying Safe When Downloading Apps
+
+- **Only download apps from the official App Store or Google Play Store.** These stores check apps for safety before making them available.
+- **Read the reviews** before downloading. If many people report problems, choose a different app.
+- **Watch out for apps that ask for too many permissions.** A flashlight app should not need access to your contacts or camera.
+- **Delete apps you no longer use.** This frees up space and reduces risk.
+
+## Quick Tip
+
+If an app costs money, the price will show instead of "GET" or "Install." Free apps will always say "GET" (iPhone) or "Install" (Android). You will never be charged without your permission.`,
+  },
+  {
+    slug: 'taking-screenshots',
+    title: 'How to Take a Screenshot',
+    category: 'concept',
+    tags: ['screenshot', 'phone', 'computer', 'windows', 'mac'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics', 'apple', 'android', 'windows'],
+    content: `## What Is a Screenshot?
+
+A screenshot is a picture of whatever is on your screen at that moment. It is like taking a photo of your screen. Screenshots are helpful when you want to save something you see — a recipe, a confirmation number, a funny message, or directions.
+
+## How to Take a Screenshot on iPhone
+
+1. Press the **side button** (on the right side of your phone) and the **volume up button** at the same time.
+2. Press both buttons quickly and let go right away.
+3. You will see a flash on the screen, and a small preview will appear in the bottom-left corner.
+4. Tap the preview to edit or share it, or wait a few seconds and it will save automatically.
+5. Find your screenshot in the **Photos** app.
+
+## How to Take a Screenshot on Android
+
+1. Press the **power button** and the **volume down button** at the same time.
+2. Hold both buttons for about one second, then release.
+3. The screen will flash, and you will see a notification or preview.
+4. Find your screenshot in your **Photos** app or **Gallery**, usually in a folder called "Screenshots."
+
+## How to Take a Screenshot on Windows
+
+- **Snipping Tool**: Press **Windows key + Shift + S**. Your screen will dim, and you can drag to select the area you want to capture. The screenshot copies to your clipboard — paste it into an email or document with **Ctrl + V**.
+- **Full screen**: Press the **Print Screen** key (sometimes labeled PrtScn) on your keyboard. This copies the entire screen. Paste it where you need it with **Ctrl + V**.
+
+## How to Take a Screenshot on Mac
+
+- **Entire screen**: Press **Cmd + Shift + 3**. The screenshot saves to your Desktop.
+- **Selected area**: Press **Cmd + Shift + 4**, then drag to select the area you want.
+
+## Where to Find Your Screenshots
+
+- **iPhone/Android**: Open the Photos app and look for a "Screenshots" album.
+- **Windows**: Check your clipboard (paste with Ctrl + V) or look in the Pictures > Screenshots folder.
+- **Mac**: Look on your Desktop for a file that starts with "Screenshot."
+
+## Quick Tip
+
+Screenshots are great for saving confirmation numbers after you buy something online. Take a screenshot and you will always have a record, even if the email gets lost.`,
+  },
+  {
+    slug: 'using-voice-assistants',
+    title: 'How to Use Siri, Google Assistant, and Alexa',
+    category: 'concept',
+    tags: ['siri', 'google assistant', 'alexa', 'voice', 'smart home'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['device-basics', 'apple', 'android'],
+    content: `## What Are Voice Assistants?
+
+Voice assistants are helpers built into your devices that respond when you talk to them. You can ask them questions, set reminders, make phone calls, play music, and much more — all without touching a screen.
+
+The three most common voice assistants are:
+- **Siri** — built into iPhones, iPads, and Macs (made by Apple)
+- **Google Assistant** — built into Android phones and Google Home speakers
+- **Alexa** — built into Amazon Echo speakers and some other devices
+
+## How to Activate Them
+
+- **Siri**: Say **"Hey Siri"** or hold down the **side button** on your iPhone.
+- **Google Assistant**: Say **"Hey Google"** or **"OK Google,"** or press and hold the **home button** on your Android phone.
+- **Alexa**: Say **"Alexa"** to your Amazon Echo or other Alexa-enabled device.
+
+## Helpful Things to Ask
+
+Here are some everyday commands you can try:
+
+- **"What is the weather today?"** — Get a quick forecast.
+- **"Set a timer for 10 minutes."** — Great for cooking.
+- **"Remind me to take my medicine at 8 PM."** — Never miss a dose.
+- **"Call [name]."** — Make a hands-free phone call.
+- **"Play some jazz music."** — Listen to music without lifting a finger.
+- **"What time is it?"** — Helpful when your hands are full.
+- **"Send a text to [name] saying I am on my way."** — Send messages by voice.
+
+## A Note About Privacy
+
+Voice assistants listen for their wake word ("Hey Siri," "Hey Google," or "Alexa"). They are designed to start listening only after they hear that phrase. However, if you are uncomfortable, you can:
+
+- **Turn off the microphone** on your smart speaker (there is usually a physical button).
+- **Review and delete** your voice history in the device settings.
+- **Mute the assistant** when you are not using it.
+
+## Quick Tip
+
+You do not need to speak in any special way. Talk to your voice assistant the same way you would talk to a person. If it does not understand, try rephrasing with shorter sentences.`,
+  },
+  {
+    slug: 'using-facebook',
+    title: 'How to Use Facebook',
+    category: 'concept',
+    tags: ['facebook', 'social media', 'friends', 'photos'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['privacy-settings', 'scam-prevention'],
+    content: `## What Is Facebook?
+
+Facebook is a social media website and app that lets you connect with friends, family, and communities. You can share updates, post photos, join groups based on your interests, and video call your loved ones.
+
+## Creating an Account
+
+1. Go to **facebook.com** on your computer or download the **Facebook app** from the App Store (iPhone) or Google Play Store (Android).
+2. Tap **Create New Account**.
+3. Enter your name, email address or phone number, date of birth, and a password.
+4. Follow the prompts to verify your email or phone number.
+
+## Setting Up Your Profile
+
+- Add a **profile photo** so friends can recognize you. Tap your profile picture area and choose a photo from your phone or computer.
+- Fill in a few details about yourself — your hometown, where you went to school, or your interests. You can share as much or as little as you want.
+
+## Finding Friends
+
+- Tap the **search bar** at the top and type a friend's or family member's name.
+- When you find them, tap **Add Friend**. They will get a request, and once they accept, you will be connected.
+
+## Setting Your Privacy
+
+This is important. Go to **Settings > Privacy** and change "Who can see your posts?" to **Friends Only**. This means only people you have added as friends can see what you share — not strangers.
+
+## Using Facebook Day to Day
+
+- **News Feed**: This is the main screen. It shows posts from your friends and groups you follow. Scroll down to see more.
+- **Posting an update**: Tap "What's on your mind?" at the top. Type your message, add a photo if you like, and tap **Post**.
+- **Joining groups**: Search for topics you enjoy (gardening, cooking, local community) and tap **Join Group** to connect with others who share your interests.
+
+## Video Calling with Messenger
+
+Facebook has a free messaging app called **Messenger**. You can use it to send messages and make **video calls** to friends and family. Tap the video camera icon in a conversation to start a call.
+
+## Quick Tip
+
+Be cautious of messages from people you do not know, especially if they ask for money or personal information. Scammers sometimes create fake profiles. If something feels off, do not respond — and report the message to Facebook.`,
+  },
+  {
+    slug: 'using-google-maps',
+    title: 'How to Use Google Maps',
+    category: 'concept',
+    tags: ['maps', 'directions', 'navigation', 'driving', 'google'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['google', 'downloading-apps'],
+    content: `## What Is Google Maps?
+
+Google Maps is a free app that helps you find places and get directions. It works like having a GPS built into your phone. You can use it to find restaurants, stores, hospitals, and get turn-by-turn directions — with a voice guiding you the whole way.
+
+## Opening Google Maps
+
+- On **Android**, Google Maps is usually already installed. Look for the icon that looks like a colorful map pin.
+- On **iPhone**, download it from the App Store by searching "Google Maps," then tap **GET**.
+
+## Searching for a Place
+
+1. Open Google Maps.
+2. Tap the **search bar** at the top of the screen.
+3. Type what you are looking for — a specific address, a business name, or something general like "pharmacy near me."
+4. Tap the result you want. You will see it on the map with details like the address, phone number, hours, and reviews.
+
+## Getting Directions
+
+1. After finding the place you want, tap the **Directions** button (it looks like a blue arrow or diamond shape).
+2. Choose how you are traveling: **car**, **walking**, **public transit**, or **rideshare**.
+3. The app will show you the best route and how long it will take.
+4. Tap **Start** to begin turn-by-turn navigation. A voice will tell you when to turn so you can keep your eyes on the road.
+
+## Saving Your Home and Work Addresses
+
+You can save your home address so getting directions home is always quick:
+
+1. Tap the **search bar** and type "Home."
+2. Google Maps will ask you to set your home address. Enter it and tap **Save**.
+3. Now you can always tap "Home" to get directions back, no matter where you are.
+
+## Quick Tip
+
+If you need to share your location with a family member (for safety or to help them find you), tap the **blue dot** that shows your location, then tap **Share location**. You can choose how long to share it and send a link to anyone you trust.`,
+  },
+  {
+    slug: 'ride-sharing',
+    title: 'How to Use Uber and Lyft',
+    category: 'concept',
+    tags: ['uber', 'lyft', 'rides', 'transportation'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['downloading-apps', 'using-google-maps'],
+    content: `## What Are Uber and Lyft?
+
+Uber and Lyft are apps that let you request a ride from a nearby driver. Think of it like calling a taxi, but you do it from your phone. You enter where you want to go, see the price before you agree, and a driver comes to pick you up. You pay through the app — no cash needed.
+
+## Getting Started
+
+1. **Download the app** from the App Store (iPhone) or Google Play Store (Android). Search for "Uber" or "Lyft."
+2. **Create an account** with your name, phone number, and email address.
+3. **Add a payment method** — a credit card, debit card, or PayPal. The app will charge this automatically after each ride.
+
+## How to Request a Ride
+
+1. Open the Uber or Lyft app.
+2. Type in **where you want to go** in the "Where to?" box.
+3. The app will show you a **price estimate** and how long it will take a driver to reach you.
+4. Choose the type of ride you want. The basic options (UberX or Lyft) are the most affordable.
+5. Tap **Request** or **Confirm** to book your ride.
+
+## When Your Driver Arrives
+
+This part is important for your safety:
+
+1. **Check the driver's name, car make and model, and license plate number** — the app shows all of this. Make sure they match the car that pulls up.
+2. **The driver should know your name.** Ask "Who are you here for?" before getting in.
+3. **Sit in the back seat.**
+4. **Share your trip** with a family member. Both Uber and Lyft let you send a live link so someone can follow your ride on a map.
+
+## What If You Do Not Have a Smartphone?
+
+There is a service called **GoGoGrandparent** designed for people who do not use smartphones. You call **1-855-464-6872** and an operator will arrange an Uber or Lyft ride for you over the phone. There is a small extra fee for this service.
+
+## Quick Tip
+
+If this is your first ride, ask a family member or friend to sit with you and walk through the process together. Once you have done it once, it will feel familiar the next time.`,
+  },
+  {
+    slug: 'online-banking',
+    title: 'How to Use Online Banking Safely',
+    category: 'concept',
+    tags: ['banking', 'money', 'security', 'apps'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['password-security', 'scam-prevention', 'downloading-apps'],
+    content: `## What Is Online Banking?
+
+Online banking lets you check your bank account, pay bills, and transfer money using your phone or computer — without driving to the bank. Most banks offer a free app and website for this.
+
+## Getting Set Up
+
+1. **Download your bank's official app** from the App Store (iPhone) or Google Play Store (Android). Search for your bank's name (for example, "Chase," "Bank of America," or "Wells Fargo").
+2. **Be careful to pick the real app** — look for the official bank logo and a large number of reviews.
+3. Open the app and tap **Enroll** or **Register**.
+4. You will need your **account number** (found on your bank statement or debit card) and some personal information to verify your identity.
+5. Create a **strong password** — at least 12 characters, with a mix of letters, numbers, and symbols.
+6. Turn on **fingerprint or face login** if your phone supports it. This is faster and very secure.
+
+## What You Can Do with Online Banking
+
+- **Check your balance** — see how much money is in your account at any time.
+- **View recent transactions** — see every purchase and payment.
+- **Pay bills** — set up payments to your electric company, phone company, or credit card.
+- **Transfer money** — move money between your accounts or send money to family.
+- **Set up alerts** — get a notification on your phone every time money goes in or out of your account. This helps you catch anything suspicious right away.
+
+## Staying Safe
+
+- **Only use your bank's app on your home Wi-Fi or cellular data.** Never do banking on public Wi-Fi (like at a coffee shop or library) — others on the same network could potentially see your information.
+- **Your bank will never ask for your password** by email, text, or phone call. If someone contacts you claiming to be your bank and asks for your login details, it is a scam. Hang up and call the number on the back of your debit card.
+- **Log out when you are done**, especially on a shared computer.
+- **Keep your app updated** so you always have the latest security protections.
+
+## Quick Tip
+
+If you are nervous about trying online banking, ask your bank if they offer in-person help for setting up the app. Many branches will walk you through it at no cost.`,
+  },
+  {
+    slug: 'streaming-tv',
+    title: 'How to Watch Netflix and Streaming TV',
+    category: 'concept',
+    tags: ['netflix', 'streaming', 'tv', 'entertainment'],
+    lastUpdated: '2026-04-04',
+    seeAlso: ['wifi-networking', 'downloading-apps'],
+    content: `## What Is Streaming?
+
+Streaming means watching shows, movies, or videos over the internet instead of through a cable TV connection or antenna. When you stream, the video plays on your screen right away — you do not need to download the whole thing first.
+
+## Popular Streaming Services
+
+Here are some of the most well-known services:
+
+- **Netflix** — Large library of movies, TV shows, and documentaries. Starts around $7/month.
+- **Hulu** — TV shows, movies, and live TV options. Starts around $8/month.
+- **Amazon Prime Video** — Included with an Amazon Prime membership ($15/month), or on its own for $9/month.
+- **YouTube** — Free to watch. Millions of videos on every topic you can think of. Great for learning new things.
+- **PBS** — Free streaming of many shows at pbs.org or through the PBS app.
+
+## How to Sign Up
+
+1. Go to the streaming service's website (for example, **netflix.com**) or download their app from the App Store or Google Play Store.
+2. Tap **Sign Up** or **Start Your Free Trial** (some services offer a free trial period).
+3. Enter your email address and create a password.
+4. Add a payment method (credit card or debit card).
+5. Start browsing and watching.
+
+## How to Watch
+
+### On a Smart TV
+Most smart TVs made in the last few years have streaming apps built in. Look for a **Netflix**, **Hulu**, or **YouTube** button on your remote, or look in your TV's app list.
+
+### On Your Phone or Tablet
+Download the app from the App Store or Google Play Store, log in, and start watching.
+
+### On Your Computer
+Go to the streaming service's website (like **netflix.com**) in your web browser, log in, and pick something to watch.
+
+## Quick Tip
+
+Write down your streaming passwords in a safe place. It is frustrating to get locked out of your account because you forgot the password. A small notebook kept in a drawer works great for this.`,
+  },
 ];
 
 /** Look up a wiki page by slug */
