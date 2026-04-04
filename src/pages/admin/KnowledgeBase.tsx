@@ -83,6 +83,7 @@ export default function KnowledgeBase() {
   const [manualUrl, setManualUrl] = useState('');
   const [manualContent, setManualContent] = useState('');
   const [uploading, setUploading] = useState(false);
+  const [importingUrl, setImportingUrl] = useState(false);
   const [editingSourceId, setEditingSourceId] = useState<string | null>(null);
   const [deletingSourceId, setDeletingSourceId] = useState<string | null>(null);
   const [documentQuery, setDocumentQuery] = useState('');
@@ -249,6 +250,34 @@ export default function KnowledgeBase() {
     } finally {
       setUploading(false);
     }
+  };
+
+  const importFromUrl = async () => {
+    if (!manualUrl.trim()) {
+      toast.error('Enter a source URL first.');
+      return;
+    }
+
+    setImportingUrl(true);
+    const { data, error } = await supabase.functions.invoke('knowledge-source-import', {
+      body: {
+        url: manualUrl.trim(),
+        title: manualTitle.trim() || undefined,
+      },
+    });
+    setImportingUrl(false);
+
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
+
+    setEditingSourceId(null);
+    setManualTitle('');
+    setManualUrl('');
+    setManualContent('');
+    toast.success(`Imported URL source${data?.extractedChars ? ` (${data.extractedChars} chars)` : ''}.`);
+    await loadData();
   };
 
   const startEditSource = (source: ManualSourceRow) => {
@@ -488,6 +517,9 @@ export default function KnowledgeBase() {
                 </div>
                 <Button onClick={submitManualSource} disabled={uploading}>
                   {uploading ? 'Saving...' : editingSourceId ? 'Update Manual Source' : 'Save Manual Source'}
+                </Button>
+                <Button variant="outline" onClick={importFromUrl} disabled={importingUrl || uploading}>
+                  {importingUrl ? 'Importing URL...' : 'Import From URL'}
                 </Button>
                 {editingSourceId && (
                   <Button variant="outline" onClick={cancelEdit} disabled={uploading}>
