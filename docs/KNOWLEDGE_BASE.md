@@ -105,6 +105,7 @@ npm run dev
 4. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
 5. Use `Generate Answer`, `Generate Report`, or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
 6. Inspect compiled documents, concepts, and selected outputs directly in the admin UI.
+7. Export generated outputs as markdown directly from the latest preview panels or the selected output panel.
 
 ## Failure Modes
 

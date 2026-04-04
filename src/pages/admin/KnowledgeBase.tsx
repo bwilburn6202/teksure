@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Database, FileText, Pencil, RefreshCw, Sparkles, Trash2, TriangleAlert } from 'lucide-react';
+import { Brain, Copy, Database, Download, FileText, Pencil, RefreshCw, Sparkles, Trash2, TriangleAlert } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -62,6 +62,13 @@ interface ConceptRow {
   markdown: string;
   source_document_ids: string[];
   updated_at: string;
+}
+
+function fileSlug(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '') || 'knowledge-output';
 }
 
 export default function KnowledgeBase() {
@@ -343,6 +350,23 @@ export default function KnowledgeBase() {
     setLatestReport(data.output?.markdown ?? '');
     toast.success('Report generated.');
     await loadData();
+  };
+
+  const downloadMarkdown = (title: string, markdown: string, outputType: OutputRow['output_type']) => {
+    const extension = outputType === 'deck' ? '.md' : '.md';
+    const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${fileSlug(title)}${extension}`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
+  const copyMarkdown = async (markdown: string) => {
+    await navigator.clipboard.writeText(markdown);
   };
 
   const filteredDocuments = documents.filter((document) => {
@@ -644,7 +668,21 @@ export default function KnowledgeBase() {
 
           <Card className="rounded-2xl border border-border">
             <CardHeader>
-              <CardTitle>Latest Generated Answer</CardTitle>
+              <div className="flex items-center justify-between gap-3">
+                <CardTitle>Latest Generated Answer</CardTitle>
+                {latestAnswer && (
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" onClick={() => void copyMarkdown(latestAnswer)}>
+                      <Copy className="h-4 w-4 mr-1.5" />
+                      Copy
+                    </Button>
+                    <Button variant="outline" size="sm" onClick={() => downloadMarkdown(question || 'knowledge-answer', latestAnswer, 'answer')}>
+                      <Download className="h-4 w-4 mr-1.5" />
+                      Download
+                    </Button>
+                  </div>
+                )}
+              </div>
             </CardHeader>
             <CardContent>
               {latestAnswer ? (
@@ -786,7 +824,21 @@ export default function KnowledgeBase() {
         <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Card className="rounded-2xl border border-border">
             <CardHeader>
-              <CardTitle>Latest Generated Report</CardTitle>
+              <div className="flex items-center justify-between gap-3">
+                <CardTitle>Latest Generated Report</CardTitle>
+                {latestReport && (
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" onClick={() => void copyMarkdown(latestReport)}>
+                      <Copy className="h-4 w-4 mr-1.5" />
+                      Copy
+                    </Button>
+                    <Button variant="outline" size="sm" onClick={() => downloadMarkdown(question || 'knowledge-report', latestReport, 'report')}>
+                      <Download className="h-4 w-4 mr-1.5" />
+                      Download
+                    </Button>
+                  </div>
+                )}
+              </div>
             </CardHeader>
             <CardContent>
               {latestReport ? (
@@ -835,7 +887,21 @@ export default function KnowledgeBase() {
         <section>
           <Card className="rounded-2xl border border-border">
             <CardHeader>
-              <CardTitle>Latest Generated Deck</CardTitle>
+              <div className="flex items-center justify-between gap-3">
+                <CardTitle>Latest Generated Deck</CardTitle>
+                {latestDeck && (
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" onClick={() => void copyMarkdown(latestDeck)}>
+                      <Copy className="h-4 w-4 mr-1.5" />
+                      Copy
+                    </Button>
+                    <Button variant="outline" size="sm" onClick={() => downloadMarkdown(question || 'knowledge-deck', latestDeck, 'deck')}>
+                      <Download className="h-4 w-4 mr-1.5" />
+                      Download
+                    </Button>
+                  </div>
+                )}
+              </div>
             </CardHeader>
             <CardContent>
               {latestDeck ? (
@@ -854,7 +920,21 @@ export default function KnowledgeBase() {
         <section>
           <Card className="rounded-2xl border border-border">
             <CardHeader>
-              <CardTitle>Selected Output</CardTitle>
+              <div className="flex items-center justify-between gap-3">
+                <CardTitle>Selected Output</CardTitle>
+                {selectedOutput && (
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" onClick={() => void copyMarkdown(selectedOutput.markdown)}>
+                      <Copy className="h-4 w-4 mr-1.5" />
+                      Copy
+                    </Button>
+                    <Button variant="outline" size="sm" onClick={() => downloadMarkdown(selectedOutput.title, selectedOutput.markdown, selectedOutput.output_type)}>
+                      <Download className="h-4 w-4 mr-1.5" />
+                      Download
+                    </Button>
+                  </div>
+                )}
+              </div>
             </CardHeader>
             <CardContent>
               {selectedOutput ? (
