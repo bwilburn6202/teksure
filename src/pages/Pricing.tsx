@@ -1,121 +1,77 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Check, Shield, Clock, Star, Monitor, Home, Award } from 'lucide-react';
+import { Check, BookOpen, MessageCircle, Users, Video, Wrench, HelpCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const plans = [
+const freeFeatures = [
   {
-    name: 'Remote Fix',
-    price: '$49',
-    deposit: '$15',
-    desc: 'Quick help over the phone or screen sharing',
-    icon: Monitor,
-    features: [
-      '30-min remote session',
-      'Screen sharing support',
-      'Follow-up email summary',
-      'Chat support included',
-    ],
+    icon: BookOpen,
+    title: 'All Guides & Tutorials',
+    desc: 'Over 300 step-by-step guides written in plain English — from setting up Wi-Fi to staying safe online.',
   },
   {
-    name: 'On-Site Visit',
-    price: '$99',
-    deposit: '$15',
-    desc: 'A technician comes to your home',
-    icon: Home,
-    features: [
-      '1-hour on-site visit',
-      'Hardware diagnostics',
-      'Setup & installation',
-      'Priority technician matching',
-      'No fix, no charge',
-    ],
-    popular: true,
+    icon: MessageCircle,
+    title: 'TekBot AI Assistant',
+    desc: 'Ask TekBot any tech question, any time. It explains things in a friendly, patient way — no jargon.',
   },
   {
-    name: 'Premium',
-    price: '$149',
-    deposit: '$15',
-    desc: 'Comprehensive support for bigger jobs',
-    icon: Award,
-    features: [
-      '2-hour session',
-      'Full system health check',
-      'Data backup assistance',
-      'Dedicated technician',
-      '48-hr follow-up call',
-    ],
+    icon: Users,
+    title: 'Community Forum',
+    desc: 'Connect with other learners, share tips, and get answers from people who understand your questions.',
+  },
+  {
+    icon: Video,
+    title: 'Video Call Support',
+    desc: 'Talk face-to-face with a real person who can walk you through any tech problem, step by step.',
+  },
+  {
+    icon: Wrench,
+    title: 'Technician Booking',
+    desc: 'Need hands-on help? Book a verified, background-checked technician — remote or in person.',
+  },
+  {
+    icon: HelpCircle,
+    title: 'Tools & Resources',
+    desc: 'Password checklists, scam alerts, device setup helpers, and more — all designed for real people.',
   },
 ];
 
-const trustBadges = [
-  { icon: Shield, label: 'No fix, no charge', sub: 'You only pay if we sort it' },
-  { icon: Clock, label: 'Same-week appointments', sub: 'Book for as soon as tomorrow' },
-  { icon: Star, label: 'Vetted technicians', sub: 'ID-checked, background-verified' },
+const checklist = [
+  'Every guide and tutorial on the site',
+  'TekBot AI assistant — available 24/7',
+  'Community forum access',
+  'Technician booking and video calls',
+  'Scam alerts and safety resources',
+  'Device setup and troubleshooting tools',
+  'Email support from our team',
+  'New guides and features added every week',
 ];
 
-const pricingJsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'TekSure Tech Support',
-    provider: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
-    description: 'Professional tech support for seniors and non-technical users — remote and on-site.',
-    url: 'https://teksure.com/pricing',
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Tech Support Plans',
-      itemListElement: plans.map(plan => ({
-        '@type': 'Offer',
-        name: plan.name,
-        description: plan.desc,
-        price: plan.price.replace('$', ''),
-        priceCurrency: 'USD',
-        url: 'https://teksure.com/book',
-        itemOffered: { '@type': 'Service', name: plan.name, description: plan.desc },
-      })),
-    },
+const pricingJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'TekSure Tech Support',
+  provider: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
+  description:
+    'Free technology support platform for seniors and non-technical users — guides, tools, AI assistant, forum, and technician booking at no cost.',
+  url: 'https://teksure.com/pricing',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+    description: 'All TekSure features are free for everyone.',
+    url: 'https://teksure.com/signup',
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How does the $15 deposit work?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Book with just a $15 deposit. Pay the rest on the day of your appointment. If we can\'t fix it, you get a full refund — no questions asked.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do you offer a no-fix, no-charge guarantee?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. If our technician cannot resolve your issue, you pay nothing — not even the deposit.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How quickly can I get an appointment?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'We offer same-week appointments, often as soon as the next day depending on your location.',
-        },
-      },
-    ],
-  },
-];
+};
 
 const Pricing = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
-      title="Tech Support Pricing | TekSure — From $49, Book with $15 Deposit"
-      description="Transparent tech support pricing: Remote Fix $49, On-Site Visit $99, Premium $149. Book with just a $15 deposit. No fix, no charge guarantee."
+      title="100% Free Tech Support | TekSure — Guides, Tools & Help at No Cost"
+      description="Everything on TekSure is free. Guides, AI assistant, community forum, technician booking, video calls — all at no cost. All you need is an email address."
       path="/pricing"
       jsonLd={pricingJsonLd}
     />
@@ -124,91 +80,64 @@ const Pricing = () => (
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-12 md:py-16 text-center">
-          <div
-          >
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Simple, Transparent Pricing</h1>
-            <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
-              No subscriptions. No hidden fees. Pay only for the help you need.
-            </p>
-            <p className="text-sm text-muted-foreground">Prices include travel within 10 miles · Extra miles at $0.45/mi</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Plans */}
-      <section className="container py-12">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mb-12">
-          {plans.map((plan, i) => (
-            <div
-              key={plan.name}
-            >
-              <Card className={`relative flex flex-col h-full rounded-2xl border ${plan.popular ? 'border-primary bg-primary/5' : 'border-border bg-card'}`}>
-                {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                    Most Popular
-                  </div>
-                )}
-                <CardHeader className="text-center pb-2 pt-8">
-                  <div className="flex justify-center mb-2">{(() => { const PIcon = plan.icon; return <PIcon className="h-10 w-10 text-primary" />; })()}</div>
-                  <CardTitle className="text-xl">{plan.name}</CardTitle>
-                  <div className="text-5xl font-bold mt-2 tracking-tight">{plan.price}</div>
-                  <p className="text-xs text-primary font-medium mt-1">Book with just a {plan.deposit} deposit</p>
-                  <p className="text-sm text-muted-foreground mt-2">{plan.desc}</p>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-1">
-                  <ul className="space-y-3 mb-8 flex-1">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm">
-                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className="w-full rounded-xl" variant={plan.popular ? 'default' : 'outline'}>
-                    <Link to="/book">Book Now</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
-        </div>
-
-        <div
-          className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8"
-        >
-          <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Book with just a <strong className="text-foreground">$15 deposit</strong>. Pay the rest on the day of your appointment.
-            If we can't fix it, you get a full refund — no questions asked.
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Everything on TekSure is Free
+          </h1>
+          <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
+            No subscriptions. No hidden fees. No credit card needed. We believe everyone deserves
+            help with technology, and that help should not come with a price tag.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            All you need is an email address to get started.
           </p>
         </div>
-
-        <p
-          className="text-center text-sm text-muted-foreground"
-        >
-          Not sure which plan you need?{' '}
-          <Link to="/book" className="text-primary font-semibold hover:opacity-80 transition-opacity">
-            Book a free consultation
-          </Link>{' '}
-          and we'll recommend the right option.
-        </p>
       </section>
 
-      {/* Trust badges */}
-      <section className="bg-muted/40 border-t border-border py-12">
-        <div
-          className="container max-w-3xl"
-        >
-          <div className="grid sm:grid-cols-3 gap-8">
-            {trustBadges.map(({ icon: Icon, label, sub }) => (
-              <div key={label} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/10 mb-4">
-                  <Icon className="h-6 w-6 text-primary" />
+      {/* What You Get */}
+      <section className="container py-12 md:py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">What You Get</h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">
+            Every feature, every tool, every guide — included at no cost, for as long as you need it.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {freeFeatures.map((feature) => (
+            <Card key={feature.title} className="h-full rounded-2xl border border-border bg-card">
+              <CardContent className="pt-8 pb-8 text-center">
+                <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                  <feature.icon className="h-7 w-7 text-primary" />
                 </div>
-                <p className="font-semibold text-sm mb-1">{label}</p>
-                <p className="text-xs text-muted-foreground">{sub}</p>
-              </div>
+                <h3 className="font-semibold text-lg mb-3">{feature.title}</h3>
+                <p className="text-sm text-muted-foreground">{feature.desc}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Checklist + CTA */}
+      <section className="bg-muted/40 border-t border-border py-12 md:py-20">
+        <div className="container max-w-2xl text-center">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-8">
+            Everything Below is Included — for Free
+          </h2>
+          <ul className="space-y-4 text-left max-w-md mx-auto mb-10">
+            {checklist.map((item) => (
+              <li key={item} className="flex items-start gap-3 text-sm">
+                <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-muted-foreground">{item}</span>
+              </li>
             ))}
+          </ul>
+          <div className="space-y-4">
+            <Button asChild size="lg" className="rounded-xl px-8">
+              <Link to="/signup">Get Started for Free</Link>
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              All you need is an email address. No credit card, no commitment — take your time and
+              explore at your own pace.
+            </p>
           </div>
         </div>
       </section>
