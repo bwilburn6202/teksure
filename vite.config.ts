@@ -119,6 +119,10 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-docx';
           }
 
+          if (id.includes('node_modules/tesseract.js')) {
+            return 'vendor-ocr';
+          }
+
           // Forms + validation
           if (
             id.includes('node_modules/react-hook-form') ||

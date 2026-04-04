@@ -31,6 +31,29 @@ async function extractDocxFile(file: File): Promise<ExtractedDocument> {
   };
 }
 
+async function extractImageFile(file: File): Promise<ExtractedDocument> {
+  const { createWorker } = await import('tesseract.js');
+  const worker = await createWorker('eng');
+
+  try {
+    const imageUrl = URL.createObjectURL(file);
+    try {
+      const result = await worker.recognize(imageUrl);
+
+      return {
+        title: baseTitle(file.name),
+        content: result.data.text.trim(),
+        sourceType: 'upload',
+        originalFilename: file.name,
+      };
+    } finally {
+      URL.revokeObjectURL(imageUrl);
+    }
+  } finally {
+    await worker.terminate();
+  }
+}
+
 async function extractPdfFile(file: File): Promise<ExtractedDocument> {
   const pdfjs = await import('pdfjs-dist');
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.mjs', import.meta.url).toString();
@@ -76,5 +99,9 @@ export async function extractDocumentFile(file: File): Promise<ExtractedDocument
     return extractPdfFile(file);
   }
 
-  throw new Error('Unsupported file type. Use .md, .txt, .pdf, or .docx.');
+  if (/\.(png|jpe?g|webp)$/i.test(lower)) {
+    return extractImageFile(file);
+  }
+
+  throw new Error('Unsupported file type. Use .md, .txt, .pdf, .docx, .png, .jpg, .jpeg, or .webp.');
 }

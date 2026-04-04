@@ -476,10 +476,10 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <label className="text-sm font-medium">Import `.md`, `.txt`, `.pdf`, or `.docx`</label>
+                <label className="text-sm font-medium">Import `.md`, `.txt`, `.pdf`, `.docx`, or image files</label>
                 <Input
                   type="file"
-                  accept=".md,.txt,.pdf,.docx,text/markdown,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  accept=".md,.txt,.pdf,.docx,.png,.jpg,.jpeg,.webp,text/markdown,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png,image/jpeg,image/webp"
                   onChange={handleFileUpload}
                   disabled={uploading}
                 />

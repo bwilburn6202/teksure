@@ -97,7 +97,7 @@ npm run dev
 
 1. Confirm Ollama health shows `Available`.
 2. Add manual sources by file import or paste.
-   Supported file types: `.md`, `.txt`, `.pdf`, `.docx`
+   Supported file types: `.md`, `.txt`, `.pdf`, `.docx`, `.png`, `.jpg`, `.jpeg`, `.webp`
    You can also import directly from a web URL through the admin UI.
    Manual source create/update now goes through an admin-authenticated edge function instead of direct browser writes.
 3. Edit or delete manual sources in the source library as needed.
@@ -144,8 +144,8 @@ Checks:
 ## Current Limitations
 
 - no filesystem vault sync yet
-- no image OCR pipeline yet
+- image OCR is browser-side and currently English-only through `tesseract.js`
 - URL extraction is heuristic HTML parsing, not a full reader-mode pipeline
 - inline citation placement still depends on the model following the output format precisely
 - concept generation is intentionally lightweight and derived from compiled keywords
-- PDF and DOCX extraction still run in the browser, but the upload extractor is now lazy-loaded and chunked away from the primary app path
+- PDF, DOCX, and image OCR extraction still run in the browser, but the upload extractor is lazy-loaded and chunked away from the primary app path
