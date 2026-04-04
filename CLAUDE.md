@@ -25,6 +25,10 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 | `supabase/migrations/` | Database migrations |
 | `.env.local` | Environment variables (never commit) |
 | `.claude/evolution-state.json` | Evolution loop state (see below) |
+| `wiki/` | LLM-maintained knowledge wiki (see Wiki section below) |
+| `wiki/index.md` | Wiki content catalog — read this first |
+| `wiki/log.md` | Chronological record of wiki operations |
+| `src/data/wiki.ts` | Wiki content for the web UI |
 
 ## Brand Constraints
 - Never use: "It's easy", "simply", "just", "obviously", "leverage", "utilize", "seamless", "cutting-edge"
@@ -98,3 +102,80 @@ TekSure is maintained by a fully autonomous development pipeline. The system has
 
 ### To manage scheduled tasks
 Go to Claude Code sidebar → Scheduled section. Each task can be enabled/disabled individually.
+
+---
+
+## LLM Wiki — Knowledge Base System
+
+TekSure maintains a persistent, interlinked knowledge wiki at `wiki/`. The wiki synthesizes all site content (guides, scam alerts, tips, glossary, tools) into structured pages that compound over time. The LLM maintains all wiki content — humans curate sources and ask questions.
+
+### Architecture
+
+| Layer | Location | Description |
+|-------|----------|-------------|
+| **Raw sources** | `src/data/guides.ts`, `src/data/guides-batch-*.ts`, page components | Immutable source material — never modified by wiki operations |
+| **Wiki pages** | `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/sources/` | LLM-generated markdown — the persistent knowledge base |
+| **Web UI data** | `src/data/wiki.ts` | TypeScript export of wiki content for the /wiki route |
+| **Schema** | This section of CLAUDE.md | Conventions and workflows |
+
+### Wiki Page Categories
+
+- **Concepts** (`wiki/concepts/`) — Topic pages synthesizing knowledge across sources (e.g., Wi-Fi, Passwords, Scam Prevention)
+- **Entities** (`wiki/entities/`) — Platform/service pages (e.g., Apple, Google, Windows, US Resources)
+- **Synthesis** (`wiki/synthesis/`) — Cross-cutting analysis pages (e.g., Beginner's Roadmap, Safety Checklist)
+- **Sources** (`wiki/sources/`) — Index pages cataloging raw source material
+
+### Page Format
+
+Every wiki page uses this structure:
+```markdown
+---
+tags: [wifi, networking, troubleshooting]
+sources: 15
+last_updated: 2026-04-04
+---
+
+# Page Title
+
+Brief overview paragraph.
+
+## Section Heading
+
+Content with [[wikilinks]] to other pages.
+
+## See Also
+
+- [[related-page-1]]
+- [[related-page-2]]
+```
+
+### Operations
+
+**Ingest** — When new guides, tips, or scam alerts are added to TekSure:
+1. Read the new content
+2. Update relevant concept and entity pages in `wiki/`
+3. Update `wiki/index.md` with any new pages
+4. Update `src/data/wiki.ts` to reflect changes in the web UI
+5. Append an entry to `wiki/log.md`
+
+**Query** — When answering user questions about TekSure content:
+1. Read `wiki/index.md` to find relevant pages
+2. Read the relevant wiki pages for synthesized knowledge
+3. If the answer produces a valuable new synthesis, file it as a new wiki page
+
+**Lint** — Periodic health check (can run during `content-freshness-check`):
+1. Check for orphan pages (no inbound links)
+2. Check for stale content (guides updated but wiki not)
+3. Check for missing cross-references
+4. Check for concepts mentioned but lacking their own page
+5. Ensure `src/data/wiki.ts` matches `wiki/` content
+
+### Conventions
+
+- All content in plain language for seniors 60+ (same as rest of TekSure)
+- Use `[[wikilinks]]` for cross-references between wiki pages
+- YAML frontmatter on every page: `tags`, `sources` (count), `last_updated`
+- Keep pages focused: 200-500 words each
+- Index file is the primary navigation — keep it current
+- Log file is append-only — never edit past entries
+- When in doubt, create a new page rather than overloading an existing one
