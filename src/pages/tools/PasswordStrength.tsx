@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { Eye, EyeOff, Check, X, ShieldCheck } from 'lucide-react';
+import { Eye, EyeOff, Check, X, ShieldCheck, RefreshCw, Copy, CheckCircle2, KeyRound } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -15,6 +15,61 @@ import {
 const PasswordStrength = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [generatedPassword, setGeneratedPassword] = useState('');
+  const [copied, setCopied] = useState(false);
+
+  const generatePassword = useCallback(() => {
+    const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowercase = 'abcdefghijklmnopqrstuvwxyz';
+    const numbers = '0123456789';
+    const specials = '!@#$%^&*()-_=+[]{}|;:,.<>?';
+    const allChars = uppercase + lowercase + numbers + specials;
+
+    const array = new Uint32Array(16);
+    crypto.getRandomValues(array);
+
+    // Guarantee at least one character from each category
+    const guaranteed = [
+      uppercase[array[0] % uppercase.length],
+      lowercase[array[1] % lowercase.length],
+      numbers[array[2] % numbers.length],
+      specials[array[3] % specials.length],
+    ];
+
+    const remaining = Array.from({ length: 12 }, (_, i) =>
+      allChars[array[i + 4] % allChars.length]
+    );
+
+    // Shuffle the combined array using Fisher-Yates with secure random
+    const combined = [...guaranteed, ...remaining];
+    const shuffleArray = new Uint32Array(combined.length);
+    crypto.getRandomValues(shuffleArray);
+    for (let i = combined.length - 1; i > 0; i--) {
+      const j = shuffleArray[i] % (i + 1);
+      [combined[i], combined[j]] = [combined[j], combined[i]];
+    }
+
+    setGeneratedPassword(combined.join(''));
+    setCopied(false);
+  }, []);
+
+  const copyToClipboard = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(generatedPassword);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = generatedPassword;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  }, [generatedPassword]);
 
   const checks = useMemo(() => ({
     length: password.length >= 8,
@@ -129,6 +184,89 @@ const PasswordStrength = () => {
 
             <p className="text-xs text-muted-foreground text-center pt-2">
               🔒 Your password is checked locally in your browser. Nothing is stored or sent anywhere.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Generate Strong Password Section */}
+        <Card className="mt-8">
+          <CardContent className="pt-6 space-y-6">
+            <div className="text-center space-y-2">
+              <KeyRound className="h-10 w-10 mx-auto text-primary" />
+              <h2 className="text-2xl font-bold tracking-tight">Generate a Strong Password</h2>
+              <p className="text-base text-muted-foreground">
+                Need a strong password? Press the button below and we will create one for you.
+              </p>
+            </div>
+
+            {!generatedPassword && (
+              <div className="flex justify-center">
+                <Button
+                  onClick={generatePassword}
+                  size="lg"
+                  className="text-lg px-8 py-6 h-auto"
+                >
+                  <KeyRound className="h-5 w-5 mr-2" />
+                  Generate Strong Password
+                </Button>
+              </div>
+            )}
+
+            {generatedPassword && (
+              <div className="space-y-5">
+                <div className="bg-muted rounded-lg p-5 text-center">
+                  <p className="text-xs text-muted-foreground mb-2 font-medium uppercase tracking-wide">Your Generated Password</p>
+                  <p
+                    className="text-xl md:text-2xl font-mono font-bold tracking-wider break-all select-all"
+                    aria-label="Generated password"
+                  >
+                    {generatedPassword}
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Button
+                    onClick={copyToClipboard}
+                    size="lg"
+                    variant={copied ? 'outline' : 'default'}
+                    className="text-base px-6 py-5 h-auto"
+                  >
+                    {copied ? (
+                      <>
+                        <CheckCircle2 className="h-5 w-5 mr-2 text-[hsl(var(--teksure-success))]" />
+                        Copied!
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="h-5 w-5 mr-2" />
+                        Copy to Clipboard
+                      </>
+                    )}
+                  </Button>
+                  <Button
+                    onClick={generatePassword}
+                    size="lg"
+                    variant="outline"
+                    className="text-base px-6 py-5 h-auto"
+                  >
+                    <RefreshCw className="h-5 w-5 mr-2" />
+                    Generate Another
+                  </Button>
+                </div>
+
+                <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4 text-center">
+                  <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-1">
+                    📝 Quick Tip
+                  </p>
+                  <p className="text-sm text-blue-700 dark:text-blue-400">
+                    Write this password down and keep it somewhere safe, or save it in a password manager.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            <p className="text-xs text-muted-foreground text-center pt-2">
+              🔒 This password is created right here in your browser. It is never stored or sent anywhere.
             </p>
           </CardContent>
         </Card>
