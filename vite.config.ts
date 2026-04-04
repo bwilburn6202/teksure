@@ -110,6 +110,15 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-query';
           }
 
+          // Knowledge-base upload extraction is admin-only and should stay off the primary app path.
+          if (id.includes('node_modules/pdfjs-dist')) {
+            return 'vendor-pdf';
+          }
+
+          if (id.includes('node_modules/mammoth')) {
+            return 'vendor-docx';
+          }
+
           // Forms + validation
           if (
             id.includes('node_modules/react-hook-form') ||

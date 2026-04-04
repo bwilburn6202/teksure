@@ -11,7 +11,6 @@ import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
-import { extractDocumentFile } from '@/lib/documentExtraction';
 
 interface HealthState {
   available: boolean;
@@ -344,6 +343,7 @@ export default function KnowledgeBase() {
 
     setUploading(true);
     try {
+      const { extractDocumentFile } = await import('@/lib/documentExtraction');
       const extracted = await extractDocumentFile(file);
       if (!extracted.content.trim()) {
         throw new Error('No readable text was found in the uploaded file.');

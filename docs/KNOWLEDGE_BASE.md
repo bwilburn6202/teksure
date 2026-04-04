@@ -148,3 +148,4 @@ Checks:
 - URL extraction is heuristic HTML parsing, not a full reader-mode pipeline
 - inline citation placement still depends on the model following the output format precisely
 - concept generation is intentionally lightweight and derived from compiled keywords
+- PDF and DOCX extraction still run in the browser, but the upload extractor is now lazy-loaded and chunked away from the primary app path
