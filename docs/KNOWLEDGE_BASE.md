@@ -106,6 +106,7 @@ npm run dev
 5. Use `Generate Answer`, `Generate Report`, or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
 6. Inspect compiled documents, concepts, and selected outputs directly in the admin UI.
 7. Export generated outputs as markdown directly from the latest preview panels or the selected output panel.
+8. Reuse the built-in prompt presets to generate consistent answers, reports, and decks without rewriting prompts each time.
 
 ## Failure Modes
 

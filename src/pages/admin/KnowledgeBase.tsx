@@ -64,12 +64,52 @@ interface ConceptRow {
   updated_at: string;
 }
 
+interface PromptPreset {
+  id: string;
+  label: string;
+  outputType: OutputRow['output_type'];
+  prompt: string;
+}
+
 function fileSlug(value: string) {
   return value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '') || 'knowledge-output';
 }
+
+const PROMPT_PRESETS: PromptPreset[] = [
+  {
+    id: 'emerging-themes',
+    label: 'Emerging Themes',
+    outputType: 'answer',
+    prompt: 'What themes are emerging across the latest sources, and which topics appear most consistently?',
+  },
+  {
+    id: 'risk-brief',
+    label: 'Risk Brief',
+    outputType: 'report',
+    prompt: 'Write a risk brief summarizing the main operational, technical, and market risks reflected in the current source set.',
+  },
+  {
+    id: 'decision-memo',
+    label: 'Decision Memo',
+    outputType: 'report',
+    prompt: 'Write a decision memo covering the strongest opportunities, the strongest concerns, and the key unknowns that still need validation.',
+  },
+  {
+    id: 'executive-deck',
+    label: 'Executive Deck',
+    outputType: 'deck',
+    prompt: 'Create an executive slide deck summarizing the current research corpus, the top findings, the risks, and the recommended next actions.',
+  },
+  {
+    id: 'source-gaps',
+    label: 'Source Gaps',
+    outputType: 'answer',
+    prompt: 'What important source gaps or missing evidence exist in the current knowledge base, and what should be researched next?',
+  },
+];
 
 export default function KnowledgeBase() {
   const [health, setHealth] = useState<HealthState | null>(null);
@@ -86,6 +126,7 @@ export default function KnowledgeBase() {
   const [latestAnswer, setLatestAnswer] = useState('');
   const [latestDeck, setLatestDeck] = useState('');
   const [latestReport, setLatestReport] = useState('');
+  const [selectedPresetId, setSelectedPresetId] = useState<string | null>(PROMPT_PRESETS[0]?.id ?? null);
   const [compileLimit, setCompileLimit] = useState('8');
   const [manualTitle, setManualTitle] = useState('');
   const [manualUrl, setManualUrl] = useState('');
@@ -369,6 +410,11 @@ export default function KnowledgeBase() {
     await navigator.clipboard.writeText(markdown);
   };
 
+  const applyPreset = (preset: PromptPreset) => {
+    setSelectedPresetId(preset.id);
+    setQuestion(preset.prompt);
+  };
+
   const filteredDocuments = documents.filter((document) => {
     const q = documentQuery.trim().toLowerCase();
     if (!q) return true;
@@ -598,9 +644,29 @@ export default function KnowledgeBase() {
               <CardTitle>Ask the Knowledge Base</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-sm font-medium">Prompt presets</p>
+                <div className="flex flex-wrap gap-2">
+                  {PROMPT_PRESETS.map((preset) => (
+                    <Button
+                      key={preset.id}
+                      type="button"
+                      variant={selectedPresetId === preset.id ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => applyPreset(preset)}
+                    >
+                      {preset.label}
+                      <span className="ml-1.5 text-xs opacity-75">({preset.outputType})</span>
+                    </Button>
+                  ))}
+                </div>
+              </div>
               <Textarea
                 value={question}
-                onChange={(event) => setQuestion(event.target.value)}
+                onChange={(event) => {
+                  setSelectedPresetId(null);
+                  setQuestion(event.target.value);
+                }}
                 rows={4}
                 placeholder="Ask a synthesis question or enter a deck topic across the compiled source set."
               />
