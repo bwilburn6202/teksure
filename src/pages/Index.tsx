@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, ChevronRight, Clock,
-  Phone, Mail, Loader2, CheckCircle, Wrench, Heart
+  Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
+  Smartphone, Share2, BrainCircuit
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,10 +22,13 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
   'ai-guides': Bot,
+  'ai-advanced': BrainCircuit,
   'how-to': BookOpen,
   'safety-guides': Shield,
   'app-guides': Phone,
   'health-tech': Heart,
+  'phone-guides': Smartphone,
+  'social-media': Share2,
 };
 
 const topicPills = [
@@ -121,7 +125,12 @@ const Index = () => {
     return picks.slice(0, 6);
   }, []);
 
-  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
+  const allCategories = useMemo(() => {
+    return (Object.keys(categoryLabels) as GuideCategory[])
+      .map(cat => ({ cat, count: guides.filter(g => g.category === cat).length }))
+      .sort((a, b) => b.count - a.count);
+  }, []);
+  const visibleCategories = allCategories.slice(0, 12);
 
   return (
     <div className="min-h-screen bg-background">
@@ -296,22 +305,21 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {visibleCategories.map((cat, i) => {
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {visibleCategories.map(({ cat, count }) => {
               const Icon = categoryIcons[cat] || BookOpen;
-              const count = guides.filter(g => g.category === cat).length;
 
               return (
                 <div key={cat}>
                   <Link to={`/guides?category=${cat}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                    <div className="p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-all">
-                      <div className="flex items-center justify-between mb-4">
+                    <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                      <div className="flex items-center justify-between mb-3">
                         <div className="h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center">
                           <Icon className="h-5 w-5 text-primary" />
                         </div>
-                        <span className="text-xs text-muted-foreground">{count} guides</span>
+                        <span className="text-xs text-muted-foreground">{count} {count === 1 ? 'guide' : 'guides'}</span>
                       </div>
-                      <h3 className="font-semibold text-base mb-1 group-hover:text-primary transition-colors">
+                      <h3 className="font-semibold text-sm sm:text-base mb-1 group-hover:text-primary transition-colors">
                         {categoryLabels[cat]}
                       </h3>
                     </div>

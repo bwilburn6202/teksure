@@ -112,6 +112,7 @@ const Articles               = lazy(() => import("./pages/Articles"));
 const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"));
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
+const Accessibility          = lazy(() => import("./pages/Accessibility"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -275,6 +276,7 @@ const AppContent = () => {
           <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
+          <Route path="/accessibility" element={<Accessibility />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>

@@ -34,7 +34,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
       <div className="relative h-36 overflow-hidden bg-muted">
         <img
           src={getGuideThumbnailUrl(guide)}
-          alt=""
+          alt={guide.title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
@@ -82,7 +82,7 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
     }`}>
       <img
         src={getGuideThumbnailSmall(guide)}
-        alt=""
+        alt={guide.title}
         className="w-8 h-8 rounded-md object-cover shrink-0"
         loading="lazy"
         onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
