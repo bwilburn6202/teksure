@@ -22,7 +22,7 @@ interface Technician {
   title: string;
   location: string;
   bio: string;
-  specialities: string[];
+  specialties: string[];
   rating: number;
   reviewCount: number;
   jobsCompleted: number;
@@ -39,9 +39,9 @@ const TECHNICIANS: Technician[] = [
     name: 'James R.',
     emoji: '👨‍💻',
     title: 'Windows & Home Network Specialist',
-    location: 'Manchester',
-    bio: 'I\'ve been helping people with their computers for over 12 years, first as an in-house IT technician and now independently through TekSure. I specialise in making technology less stressful — whether that\'s fixing a slow PC, getting your Wi-Fi working properly, or cleaning a virus off your computer.',
-    specialities: ['Windows 10 & 11', 'Wi-Fi & Router Setup', 'Virus Removal', 'Printer Problems', 'New Device Setup'],
+    location: 'Austin, TX',
+    bio: 'I\'ve been helping people with their computers for over 12 years, first as an in-house IT technician and now independently through TekSure. I specialize in making technology less stressful — whether that\'s fixing a slow PC, getting your Wi-Fi working properly, or cleaning a virus off your computer.',
+    specialties: ['Windows 10 & 11', 'Wi-Fi & Router Setup', 'Virus Removal', 'Printer Problems', 'New Device Setup'],
     rating: 4.9,
     reviewCount: 87,
     jobsCompleted: 112,
@@ -53,7 +53,7 @@ const TECHNICIANS: Technician[] = [
       { author: 'Patricia W.', rating: 5, date: '2026-03-15', text: 'James was absolutely wonderful. He arrived on time, sorted my Wi-Fi problem in under an hour, and explained everything in plain English. Would recommend to anyone.' },
       { author: 'Derek H.', rating: 5, date: '2026-03-02', text: 'My computer had been running terribly for months. James came round, cleared out the viruses, and it\'s running like new. Very professional and friendly.' },
       { author: 'Margaret S.', rating: 5, date: '2026-02-18', text: 'I\'d been struggling with my new laptop for weeks. James set everything up perfectly and showed me how to use it. Patient, kind, and very knowledgeable.' },
-      { author: 'Tony B.', rating: 4, date: '2026-02-05', text: 'Sorted out my printer connection issues quickly. Very helpful and reasonably priced.' },
+      { author: 'Tony B.', rating: 4, date: '2026-02-05', text: 'Sorted out my printer connection issues quickly. Very helpful and thorough.' },
     ],
   },
   {
@@ -61,9 +61,9 @@ const TECHNICIANS: Technician[] = [
     name: 'Sarah K.',
     emoji: '👩‍💻',
     title: 'iPhone, iPad & Mac Expert',
-    location: 'London (South)',
+    location: 'Denver, CO',
     bio: 'As a former Apple Store employee, I know Apple products inside and out. I help people get the most from their iPhones, iPads, and Macs — from setting up a new phone to recovering lost photos, sorting out iCloud problems, and teaching people how to use their devices confidently.',
-    specialities: ['iPhone & iPad Setup', 'iCloud & Photo Library', 'macOS Help', 'App Problems', 'Data Transfer & Backup'],
+    specialties: ['iPhone & iPad Setup', 'iCloud & Photo Library', 'macOS Help', 'App Problems', 'Data Transfer & Backup'],
     rating: 4.8,
     reviewCount: 63,
     jobsCompleted: 79,
@@ -82,9 +82,9 @@ const TECHNICIANS: Technician[] = [
     name: 'Hassan M.',
     emoji: '🧑‍💻',
     title: 'Security & Scam Recovery Specialist',
-    location: 'Birmingham',
+    location: 'Chicago, IL',
     bio: 'I\'m passionate about keeping people safe online. I\'ve helped dozens of people recover from scams, secure their accounts, and protect themselves in the future. I also help set up two-factor authentication, secure email, and safe browsing on all devices.',
-    specialities: ['Scam Recovery', 'Account Security', 'Two-Factor Authentication', 'Virus & Malware Removal', 'Online Safety Setup'],
+    specialties: ['Scam Recovery', 'Account Security', 'Two-Factor Authentication', 'Virus & Malware Removal', 'Online Safety Setup'],
     rating: 5.0,
     reviewCount: 41,
     jobsCompleted: 54,
@@ -159,11 +159,11 @@ function TechnicianDirectory() {
                     <MapPin className="h-3 w-3" /> {tech.location}
                   </div>
                   <div className="flex flex-wrap gap-1 mb-4">
-                    {tech.specialities.slice(0, 3).map(s => (
+                    {tech.specialties.slice(0, 3).map(s => (
                       <span key={s} className="text-xs bg-muted rounded-full px-2 py-0.5 text-muted-foreground">{s}</span>
                     ))}
-                    {tech.specialities.length > 3 && (
-                      <span className="text-xs bg-muted rounded-full px-2 py-0.5 text-muted-foreground">+{tech.specialities.length - 3} more</span>
+                    {tech.specialties.length > 3 && (
+                      <span className="text-xs bg-muted rounded-full px-2 py-0.5 text-muted-foreground">+{tech.specialties.length - 3} more</span>
                     )}
                   </div>
                   <Button asChild size="sm" className="w-full gap-2 rounded-xl">
@@ -277,12 +277,12 @@ export default function TechnicianProfile() {
             </CardContent>
           </Card>
 
-          {/* Specialities */}
+          {/* Specialties */}
           <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-5">
-              <h2 className="font-semibold mb-3">Specialities</h2>
+              <h2 className="font-semibold mb-3">Specialties</h2>
               <div className="flex flex-wrap gap-2">
-                {tech.specialities.map(s => (
+                {tech.specialties.map(s => (
                   <span key={s} className="flex items-center gap-1.5 text-sm bg-primary/5 border border-primary/20 rounded-full px-3 py-1">
                     <CheckCircle2 className="h-3.5 w-3.5 text-primary" /> {s}
                   </span>
@@ -308,7 +308,7 @@ export default function TechnicianProfile() {
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-medium text-sm">{review.author}</span>
                       <span className="text-xs text-muted-foreground">
-                        {new Date(review.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                        {new Date(review.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                       </span>
                     </div>
                     <StarRating rating={review.rating} />
