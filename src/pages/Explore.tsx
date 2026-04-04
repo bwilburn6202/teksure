@@ -124,7 +124,7 @@ const sections: Section[] = [
     links: [
       { to: '/about', label: 'About Us', icon: Info },
       { to: '/how-it-works', label: 'How It Works', icon: Lightbulb },
-      { to: '/pricing', label: 'Pricing', icon: CreditCard },
+      { to: '/accessibility', label: 'Accessibility', icon: Eye },
       { to: '/technicians', label: 'Our Technicians', icon: Phone },
       { to: '/roadmap', label: 'Roadmap', icon: BarChart2 },
     ],

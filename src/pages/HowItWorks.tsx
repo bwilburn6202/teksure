@@ -2,20 +2,20 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
-import { UserPlus, Search, Wrench, CreditCard } from 'lucide-react';
+import { UserPlus, Search, Wrench, Star } from 'lucide-react';
 
 const steps = [
-  { icon: UserPlus, title: 'Sign Up', desc: 'Create your free account in seconds. Choose whether you need help or want to provide it.' },
+  { icon: UserPlus, title: 'Sign Up Free', desc: 'Create your free account with an email address. That is all you need to get started.' },
   { icon: Search, title: 'Describe Your Issue', desc: 'Tell us about your tech problem. Select a category, choose remote or in-person, and add details.' },
-  { icon: Wrench, title: 'Get Matched & Fixed', desc: 'We match you with verified technicians based on skills, location, and availability.' },
-  { icon: CreditCard, title: 'Pay Securely', desc: 'Only pay when the job is done. Transparent pricing with no hidden fees. Leave a review.' },
+  { icon: Wrench, title: 'Get Matched & Fixed', desc: 'We match you with a verified technician based on skills, location, and availability — at no cost to you.' },
+  { icon: Star, title: 'Rate Your Experience', desc: 'After your issue is resolved, leave a review to help others in the community find great support.' },
 ];
 
 const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
-      title="How TekSure Works — Get Tech Help in 4 Simple Steps"
-      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      title="How TekSure Works — Free Tech Help in 3 Steps"
+      description="Getting tech support is free with TekSure. Sign up, describe your issue, and get matched with a verified technician — all at no cost."
       path="/how-it-works"
       jsonLd={{
         '@context': 'https://schema.org',
@@ -39,7 +39,7 @@ const HowItWorks = () => (
           >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">How TekSure Works</h1>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Getting tech support has never been easier. Four simple steps.
+              Free tech support in four straightforward steps. No payment needed.
             </p>
           </div>
         </div>
