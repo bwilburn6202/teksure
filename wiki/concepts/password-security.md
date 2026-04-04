@@ -1,7 +1,7 @@
 ---
 title: Password Security
 tags: [passwords, security, 2FA, authentication, hacking]
-sources: 5
+sources: 7
 last_updated: 2026-04-04
 ---
 
@@ -47,6 +47,29 @@ Turn on 2FA for your most important accounts: email, banking, and social media.
 ## Resetting a Forgotten Password
 
 Every login page has a "Forgot Password?" link. Tap it, enter your email address, and check your inbox for a reset link. If you do not see the email, check your spam or junk folder.
+
+## Google's 7-Step Account Security Checklist
+
+Google recommends these seven steps to keep your Google account safe (Source: support.google.com, 2026):
+
+1. **Use a strong, unique password** for your Google account — at least 12 characters, not reused from other sites.
+2. **Turn on two-factor authentication (2FA)** so a stolen password alone is not enough to break in.
+3. **Set up recovery options** — add a backup phone number and email address so you can get back into your account if locked out.
+4. **Run Google's Security Checkup** — visit [myaccount.google.com/security-checkup](https://myaccount.google.com/security-checkup) to see personalized recommendations.
+5. **Review connected devices** — check which phones, tablets, and computers are signed into your account, and remove any you do not recognize.
+6. **Keep your software updated** — install updates for your browser, operating system, and apps as soon as they are available.
+7. **Watch out for phishing** — Google will never ask for your password by email or phone. If someone does, it is a scam.
+
+## CISA's 4 Core Cybersecurity Practices
+
+The Cybersecurity and Infrastructure Security Agency (CISA) identifies four actions everyone should take to stay safe online (Source: cisa.gov/secure-our-world, 2026):
+
+1. **Use strong passwords** — long, unique, and stored in a password manager.
+2. **Keep software updated** — turn on automatic updates for your devices and apps.
+3. **Think before you click** — be cautious with links and attachments in emails and texts.
+4. **Turn on multi-factor authentication (MFA)** — this is the same as two-factor authentication, and it is one of the most effective ways to protect your accounts.
+
+CISA's "Secure Our World" program also provides free tip sheets available in multiple languages, along with free resources, technical assistance, and training for individuals and families.
 
 ## See Also
 

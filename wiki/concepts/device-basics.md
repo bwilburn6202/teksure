@@ -1,7 +1,7 @@
 ---
 title: Device Basics
 tags: [devices, phone, tablet, computer, getting-started]
-sources: 4
+sources: 6
 last_updated: 2026-04-04
 ---
 
@@ -50,6 +50,41 @@ Plug the charging cable into your device and into a wall outlet. Most phones and
 - **Android:** Press the **power button** and **volume down** at the same time.
 - **Windows:** Press **Windows key + Shift + S**.
 - **Mac:** Press **Command + Shift + 3** for a full screen capture.
+
+## Common Problems and How to Fix Them
+
+Here are the issues people run into most often, along with what to do about each one.
+
+### Forgotten Passwords
+
+This is the single most common tech problem. Every login page has a **"Forgot Password?"** link — tap it, enter your email, and check your inbox (and spam folder) for a reset link. To avoid this problem, consider using a password manager (see [[password-security]]).
+
+### Slow Computer
+
+A slow computer is often caused by too many programs running at the same time, a nearly full hard drive, or missed software updates. Try these steps:
+1. Restart your computer — this clears out temporary files and can fix many slowness issues.
+2. Close programs you are not using.
+3. Make sure your operating system and apps are up to date.
+
+### Email Not Syncing Across Devices
+
+If your email shows up on your phone but not your computer (or the other way around), the problem is often a setting called **IMAP vs. POP3**. IMAP keeps your email in sync across all devices, while POP3 downloads it to one device and may remove it from the server. Check your email account settings and make sure **IMAP is selected** on all your devices. (Source: easytechseniors.com, 2026)
+
+### Printer Problems
+
+Printers can be frustrating. If your printer is not working:
+1. Make sure it is turned on and connected to the same Wi-Fi network as your computer or phone.
+2. Check for paper jams and make sure there is paper in the tray.
+3. Try restarting both the printer and your computer.
+4. On your computer, go to Settings > Printers and make sure the correct printer is selected.
+
+### Screen Readability and Visual Challenges
+
+Visual acuity changes are common after age 50, which can make screens harder to read. (Source: nelowvision.com, 2026) Every device has built-in tools to help:
+- **Make text bigger:** Go to Settings > Display (or Accessibility) and increase the font size.
+- **Zoom in:** Pinch outward on a touchscreen, or press Ctrl and + on a keyboard.
+- **High contrast mode:** Found in Accessibility settings, this makes text stand out more against the background.
+- **Dark mode:** Easier on the eyes in low light — find it in your Display settings.
 
 ## See Also
 

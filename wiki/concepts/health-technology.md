@@ -1,7 +1,7 @@
 ---
 title: Health Technology
 tags: [health, telehealth, patient-portal, fitness, medicare]
-sources: 5
+sources: 7
 last_updated: 2026-04-04
 ---
 
@@ -35,6 +35,15 @@ Telehealth means visiting your doctor by video call instead of going to the offi
 3. Make sure your camera, microphone, and internet connection are working beforehand (see [[video-calling]] for help).
 
 Many insurance plans, including Medicare, cover telehealth visits.
+
+### Telehealth Accessibility for Older Adults
+
+Getting connected to a telehealth visit can be challenging. Research shows that **82% of homebound seniors needed help from someone else** to connect to their telehealth appointment. (Source: ncoa.org, 2026)
+
+If you need help:
+- **Ask a family member or caregiver** to sit with you during your first few telehealth visits.
+- **Check your local library or community center** — some now have **telehealth booths** with private spaces, a computer, and staff who can help you connect. (Source: telehealth.hhs.gov, 2026)
+- **Look for accessibility features** — modern telehealth platforms are adding **larger text options**, **closed captioning** during video calls, and **interpreter services** for non-English speakers. (Source: telehealth.hhs.gov, 2026)
 
 ## Fitness Trackers and Smartwatches
 

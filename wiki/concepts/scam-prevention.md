@@ -1,7 +1,7 @@
 ---
 title: Scam Prevention
 tags: [scams, phishing, fraud, safety, FTC]
-sources: 6
+sources: 8
 last_updated: 2026-04-04
 ---
 
@@ -10,6 +10,16 @@ last_updated: 2026-04-04
 ## Why Scams Target Older Adults
 
 Scammers target people of all ages, but they frequently go after older adults because they tend to be more trusting and may be less familiar with digital tricks. Knowing the warning signs is your best defense.
+
+## Fraud by the Numbers (2025-2026)
+
+The scale of fraud in the United States continues to grow:
+
+- **$15.9 billion** in total fraud losses were reported in 2025, across more than **3 million reports** filed with the FTC. (Source: FTC.gov, 2026)
+- **Imposter scams** — where someone pretends to be a trusted person or organization — were the **#1 reported fraud type**, causing **$3.5 billion in losses** alone. (Source: FTC.gov, 2026)
+- Reports from older adults losing **$10,000 or more** to fraud **quadrupled** between 2020 and 2024. (Source: FTC.gov, 2026)
+- Key tactics include **fake fraud alerts** (messages claiming your bank detected suspicious activity), **imposter calls using stolen personal data** to sound convincing, and **AI voice clones** that mimic a family member's voice. (Source: FTC.gov, 2026)
+- In March 2026, the FTC hosted a roundtable focused specifically on the **top scams affecting older adults**, signaling increased federal attention to this issue. (Source: consumer.ftc.gov, 2026)
 
 ## Common Scam Types
 
