@@ -75,8 +75,10 @@ export default function KnowledgeBase() {
   const [runningCompile, setRunningCompile] = useState(false);
   const [runningAnswer, setRunningAnswer] = useState(false);
   const [runningDeck, setRunningDeck] = useState(false);
+  const [runningReport, setRunningReport] = useState(false);
   const [latestAnswer, setLatestAnswer] = useState('');
   const [latestDeck, setLatestDeck] = useState('');
+  const [latestReport, setLatestReport] = useState('');
   const [compileLimit, setCompileLimit] = useState('8');
   const [manualTitle, setManualTitle] = useState('');
   const [manualUrl, setManualUrl] = useState('');
@@ -321,6 +323,28 @@ export default function KnowledgeBase() {
     await loadData();
   };
 
+  const runReport = async () => {
+    if (!question.trim()) {
+      toast.error('Enter a report topic first.');
+      return;
+    }
+
+    setRunningReport(true);
+    const { data, error } = await supabase.functions.invoke('knowledge-base-compile', {
+      body: { mode: 'report', question: question.trim() },
+    });
+    setRunningReport(false);
+
+    if (error) {
+      toast.error(error.message);
+      return;
+    }
+
+    setLatestReport(data.output?.markdown ?? '');
+    toast.success('Report generated.');
+    await loadData();
+  };
+
   const filteredDocuments = documents.filter((document) => {
     const q = documentQuery.trim().toLowerCase();
     if (!q) return true;
@@ -451,7 +475,7 @@ export default function KnowledgeBase() {
                 <FileText className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-2xl font-bold">{counts.outputs}</p>
-                  <p className="text-sm text-muted-foreground">Answer artifacts</p>
+                  <p className="text-sm text-muted-foreground">Generated outputs</p>
                 </div>
               </div>
             </CardContent>
@@ -562,6 +586,9 @@ export default function KnowledgeBase() {
                 </Button>
                 <Button variant="outline" disabled={!health?.available || runningDeck} onClick={runDeck}>
                   {runningDeck ? 'Building Deck...' : 'Generate Deck'}
+                </Button>
+                <Button variant="outline" disabled={!health?.available || runningReport} onClick={runReport}>
+                  {runningReport ? 'Writing Report...' : 'Generate Report'}
                 </Button>
               </div>
             </CardContent>
@@ -759,16 +786,16 @@ export default function KnowledgeBase() {
         <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Card className="rounded-2xl border border-border">
             <CardHeader>
-              <CardTitle>Latest Generated Deck</CardTitle>
+              <CardTitle>Latest Generated Report</CardTitle>
             </CardHeader>
             <CardContent>
-              {latestDeck ? (
+              {latestReport ? (
                 <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto">
-                  {latestDeck}
+                  {latestReport}
                 </pre>
               ) : (
                 <p className="text-sm text-muted-foreground">
-                  No deck generated in this session yet.
+                  No report generated in this session yet.
                 </p>
               )}
             </CardContent>
@@ -801,6 +828,25 @@ export default function KnowledgeBase() {
                   </p>
                 </button>
               ))}
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Latest Generated Deck</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {latestDeck ? (
+                <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto">
+                  {latestDeck}
+                </pre>
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  No deck generated in this session yet.
+                </p>
+              )}
             </CardContent>
           </Card>
         </section>

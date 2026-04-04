@@ -12,7 +12,7 @@ const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
 const OLLAMA_BASE_URL = Deno.env.get('OLLAMA_BASE_URL') ?? 'http://host.docker.internal:11434';
 const OLLAMA_MODEL = Deno.env.get('OLLAMA_MODEL') ?? 'qwen2.5:7b';
 
-type Mode = 'compile' | 'answer' | 'deck';
+type Mode = 'compile' | 'answer' | 'deck' | 'report';
 
 interface ScrapedArticle {
   id: string;
@@ -190,7 +190,7 @@ function buildCanonicalSourceMap(ranked: Array<KnowledgeDocument & { score: numb
     .join('\n');
 }
 
-function appendCanonicalCitations(markdown: string, ranked: Array<KnowledgeDocument & { score: number }>, mode: 'answer' | 'deck') {
+function appendCanonicalCitations(markdown: string, ranked: Array<KnowledgeDocument & { score: number }>, mode: 'answer' | 'deck' | 'report') {
   const canonicalMap = buildCanonicalSourceMap(ranked);
 
   if (mode === 'deck') {
@@ -329,7 +329,7 @@ serve(async (req) => {
       });
     }
 
-    if (mode === 'answer' || mode === 'deck') {
+    if (mode === 'answer' || mode === 'deck' || mode === 'report') {
       const question = String(body.question ?? '').trim();
       if (!question) {
         return json({ error: `Question is required for ${mode} mode.` }, 400);
@@ -370,7 +370,27 @@ Deck topic: ${question}
 
 Sources:
 ${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`
-        : `Answer the question using the provided knowledge base sources.
+        : mode === 'report'
+          ? `Write a detailed markdown research report using the provided knowledge base sources.
+
+Return markdown with these sections:
+- # title
+- ## Executive Summary
+- ## Key Findings
+- ## Analysis
+- ## Risks and Unknowns
+- ## Sources
+- ## Recommended Next Steps
+- In the substantive sections, cite claims inline using source markers like [S1] or [S2, S3]
+- In the Sources section, map each source marker to its title
+- Keep the report concise but substantial, roughly 700 to 1400 words
+- Do not cite any source that is not provided
+
+Report topic: ${question}
+
+Sources:
+${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`
+          : `Answer the question using the provided knowledge base sources.
 
 Return markdown with these sections:
 - # title
@@ -387,13 +407,14 @@ Sources:
 ${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summary}\nKeywords: ${(doc.keywords ?? []).join(', ')}`).join('\n\n')}`;
 
       const rawMarkdown = await callOllama(prompt);
-      const markdown = appendCanonicalCitations(rawMarkdown, ranked, mode === 'deck' ? 'deck' : 'answer');
+      const markdown = appendCanonicalCitations(rawMarkdown, ranked, mode);
       const title = question.length > 80 ? `${question.slice(0, 77)}...` : question;
+      const outputType = mode === 'deck' ? 'deck' : mode === 'report' ? 'report' : 'answer';
 
       const { data: output, error: outputError } = await supabase
         .from('knowledge_outputs')
         .insert({
-          output_type: mode === 'deck' ? 'deck' : 'answer',
+          output_type: outputType,
           title,
           prompt: question,
           markdown,
@@ -411,7 +432,7 @@ ${ranked.map((doc, index) => `S${index + 1}: ${doc.title}\nSummary: ${doc.summar
       return json({
         ok: true,
         output,
-        outputType: mode === 'deck' ? 'deck' : 'answer',
+        outputType,
         sourcesUsed: ranked.length,
         model: OLLAMA_MODEL,
       });
