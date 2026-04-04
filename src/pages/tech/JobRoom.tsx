@@ -7,7 +7,6 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -78,7 +77,7 @@ const TechJobRoom = () => {
 
     const { data, error: fetchError } = await (supabase as any)
       .from('bookings')
-      .select('id, user_id, tech_id, name, email, phone, issue_type, description, status, payment_status, preferred_date, preferred_time, deposit_paid_at, created_at')
+      .select('id, user_id, tech_id, name, email, phone, issue_type, description, status, preferred_date, preferred_time, created_at')
       .eq('id', id)
       .single();
 
@@ -161,7 +160,6 @@ const TechJobRoom = () => {
 
   // ---------- Main view ----------
   const issueLabel = ISSUE_LABELS[booking.issue_type ?? ''] ?? booking.issue_type ?? 'Support Request';
-  const paymentBadge = PAYMENT_BADGES[booking.payment_status ?? 'pending'] ?? PAYMENT_BADGES.pending;
   const status = booking.status;
 
   return (
@@ -258,14 +256,6 @@ const TechJobRoom = () => {
                   <p className="text-sm">{booking.phone}</p>
                 </div>
               )}
-              <Separator />
-              <div>
-                <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Payment</p>
-                <Badge variant="secondary" className={`border font-medium ${paymentBadge.className}`}>
-                  <CreditCard className="h-3 w-3 mr-1" />
-                  {paymentBadge.label}
-                </Badge>
-              </div>
             </CardContent>
           </Card>
 
