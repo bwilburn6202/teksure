@@ -16,6 +16,7 @@ The current branch adds:
 
 It compiles from `scraped_articles` plus admin-added manual sources and generates markdown answer artifacts.
 It also generates Marp-compatible deck outputs.
+The admin UI now includes browsers for compiled documents, concept pages, and source-linked outputs.
 
 ## Required Secrets
 
@@ -94,6 +95,7 @@ npm run dev
 3. Edit or delete manual sources in the source library as needed.
 4. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
 5. Use `Generate Answer` or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
+6. Inspect compiled documents, concepts, and selected outputs directly in the admin UI.
 
 ## Failure Modes
 

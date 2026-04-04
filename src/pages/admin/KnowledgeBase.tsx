@@ -32,6 +32,7 @@ interface OutputRow {
   title: string;
   output_type: 'answer' | 'deck' | 'report';
   markdown: string;
+  source_document_ids?: string[];
   created_at: string;
 }
 
@@ -45,11 +46,32 @@ interface ManualSourceRow {
   created_at: string;
 }
 
+interface DocumentRow {
+  id: string;
+  title: string;
+  source_url: string;
+  summary: string;
+  keywords: string[];
+  markdown: string;
+  updated_at: string;
+}
+
+interface ConceptRow {
+  id: string;
+  title: string;
+  summary: string;
+  markdown: string;
+  source_document_ids: string[];
+  updated_at: string;
+}
+
 export default function KnowledgeBase() {
   const [health, setHealth] = useState<HealthState | null>(null);
   const [counts, setCounts] = useState<CountsState>({ documents: 0, concepts: 0, outputs: 0, manualSources: 0 });
   const [recentOutputs, setRecentOutputs] = useState<OutputRow[]>([]);
   const [manualSources, setManualSources] = useState<ManualSourceRow[]>([]);
+  const [documents, setDocuments] = useState<DocumentRow[]>([]);
+  const [concepts, setConcepts] = useState<ConceptRow[]>([]);
   const [question, setQuestion] = useState('What themes are emerging across the latest sources?');
   const [runningCompile, setRunningCompile] = useState(false);
   const [runningAnswer, setRunningAnswer] = useState(false);
@@ -63,6 +85,10 @@ export default function KnowledgeBase() {
   const [uploading, setUploading] = useState(false);
   const [editingSourceId, setEditingSourceId] = useState<string | null>(null);
   const [deletingSourceId, setDeletingSourceId] = useState<string | null>(null);
+  const [documentQuery, setDocumentQuery] = useState('');
+  const [selectedDocumentId, setSelectedDocumentId] = useState<string | null>(null);
+  const [selectedConceptId, setSelectedConceptId] = useState<string | null>(null);
+  const [selectedOutputId, setSelectedOutputId] = useState<string | null>(null);
 
   const loadHealth = useCallback(async () => {
     const { data, error } = await supabase.functions.invoke('ollama-health');
@@ -79,14 +105,14 @@ export default function KnowledgeBase() {
   }, []);
 
   const loadData = useCallback(async () => {
-    const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }, { data: manualRows }] = await Promise.all([
+    const [{ count: documents }, { count: concepts }, { count: outputs }, { count: manualSources }, { data: outputRows }, { data: manualRows }, { data: documentRows }, { data: conceptRows }] = await Promise.all([
       supabase.from('knowledge_documents' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_concepts' as any).select('*', { head: true, count: 'exact' }),
       supabase.from('knowledge_outputs' as any).select('id', { head: true, count: 'exact' }),
       supabase.from('knowledge_manual_sources' as any).select('*', { head: true, count: 'exact' }),
       supabase
         .from('knowledge_outputs' as any)
-        .select('id, title, output_type, markdown, created_at')
+        .select('id, title, output_type, markdown, source_document_ids, created_at')
         .order('created_at', { ascending: false })
         .limit(6),
       supabase
@@ -94,6 +120,16 @@ export default function KnowledgeBase() {
         .select('id, title, source_type, original_filename, source_url, content, created_at')
         .order('created_at', { ascending: false })
         .limit(8),
+      supabase
+        .from('knowledge_documents' as any)
+        .select('id, title, source_url, summary, keywords, markdown, updated_at')
+        .order('updated_at', { ascending: false })
+        .limit(24),
+      supabase
+        .from('knowledge_concepts' as any)
+        .select('id, title, summary, markdown, source_document_ids, updated_at')
+        .order('updated_at', { ascending: false })
+        .limit(24),
     ]);
 
     setCounts({
@@ -104,6 +140,8 @@ export default function KnowledgeBase() {
     });
     setRecentOutputs((outputRows ?? []) as OutputRow[]);
     setManualSources((manualRows ?? []) as ManualSourceRow[]);
+    setDocuments((documentRows ?? []) as DocumentRow[]);
+    setConcepts((conceptRows ?? []) as ConceptRow[]);
   }, []);
 
   useEffect(() => {
@@ -266,6 +304,22 @@ export default function KnowledgeBase() {
     toast.success('Deck generated.');
     await loadData();
   };
+
+  const filteredDocuments = documents.filter((document) => {
+    const q = documentQuery.trim().toLowerCase();
+    if (!q) return true;
+    return (
+      document.title.toLowerCase().includes(q) ||
+      document.summary.toLowerCase().includes(q) ||
+      (document.keywords ?? []).some((keyword) => keyword.toLowerCase().includes(q))
+    );
+  });
+
+  const selectedDocument = documents.find((document) => document.id === selectedDocumentId) ?? filteredDocuments[0] ?? null;
+  const selectedConcept = concepts.find((concept) => concept.id === selectedConceptId) ?? concepts[0] ?? null;
+  const selectedOutput = recentOutputs.find((output) => output.id === selectedOutputId) ?? recentOutputs[0] ?? null;
+
+  const sourceDocumentMap = new Map(documents.map((document) => [document.id, document]));
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -559,6 +613,129 @@ export default function KnowledgeBase() {
           </Card>
         </section>
 
+        <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Compiled Documents</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Input
+                value={documentQuery}
+                onChange={(event) => setDocumentQuery(event.target.value)}
+                placeholder="Search compiled documents"
+              />
+              <div className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
+                {filteredDocuments.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No compiled documents match the current filter.</p>
+                ) : filteredDocuments.map((document) => (
+                  <button
+                    key={document.id}
+                    onClick={() => setSelectedDocumentId(document.id)}
+                    className={`w-full text-left rounded-xl border p-4 transition-colors ${
+                      selectedDocument?.id === document.id ? 'border-primary bg-primary/5' : 'hover:bg-muted/40'
+                    }`}
+                  >
+                    <p className="font-medium">{document.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{new Date(document.updated_at).toLocaleString()}</p>
+                    <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{document.summary}</p>
+                  </button>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Document Preview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {selectedDocument ? (
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium text-lg">{selectedDocument.title}</p>
+                    <a href={selectedDocument.source_url} target="_blank" rel="noreferrer" className="text-sm text-primary hover:underline break-all">
+                      {selectedDocument.source_url}
+                    </a>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {(selectedDocument.keywords ?? []).map((keyword) => (
+                      <Badge key={keyword} variant="secondary">{keyword}</Badge>
+                    ))}
+                  </div>
+                  <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto max-h-[520px] overflow-y-auto">
+                    {selectedDocument.markdown}
+                  </pre>
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">Compile the knowledge base to view document previews.</p>
+              )}
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Concept Pages</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
+              {concepts.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No concept pages yet.</p>
+              ) : concepts.map((concept) => (
+                <button
+                  key={concept.id}
+                  onClick={() => setSelectedConceptId(concept.id)}
+                  className={`w-full text-left rounded-xl border p-4 transition-colors ${
+                    selectedConcept?.id === concept.id ? 'border-primary bg-primary/5' : 'hover:bg-muted/40'
+                  }`}
+                >
+                  <p className="font-medium">{concept.title}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{new Date(concept.updated_at).toLocaleString()}</p>
+                  <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{concept.summary}</p>
+                </button>
+              ))}
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Concept Preview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {selectedConcept ? (
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium text-lg">{selectedConcept.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{selectedConcept.summary}</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-sm font-medium">Linked source documents</p>
+                    {selectedConcept.source_document_ids?.length ? selectedConcept.source_document_ids.map((sourceId) => {
+                      const document = sourceDocumentMap.get(sourceId);
+                      return (
+                        <button
+                          key={sourceId}
+                          onClick={() => setSelectedDocumentId(sourceId)}
+                          className="block text-left text-sm text-primary hover:underline"
+                        >
+                          {document?.title ?? sourceId}
+                        </button>
+                      );
+                    }) : (
+                      <p className="text-sm text-muted-foreground">No linked source documents.</p>
+                    )}
+                  </div>
+                  <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto max-h-[520px] overflow-y-auto">
+                    {selectedConcept.markdown}
+                  </pre>
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">No concept preview available yet.</p>
+              )}
+            </CardContent>
+          </Card>
+        </section>
+
         <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Card className="rounded-2xl border border-border">
             <CardHeader>
@@ -585,7 +762,13 @@ export default function KnowledgeBase() {
               {recentOutputs.length === 0 ? (
                 <p className="text-sm text-muted-foreground">No outputs yet.</p>
               ) : recentOutputs.map((output) => (
-                <div key={output.id} className="rounded-xl border p-4">
+                <button
+                  key={output.id}
+                  onClick={() => setSelectedOutputId(output.id)}
+                  className={`w-full text-left rounded-xl border p-4 transition-colors ${
+                    selectedOutput?.id === output.id ? 'border-primary bg-primary/5' : 'hover:bg-muted/40'
+                  }`}
+                >
                   <div className="flex items-center justify-between gap-3">
                     <p className="font-medium">{output.title}</p>
                     <Badge variant="secondary">{output.output_type}</Badge>
@@ -596,8 +779,51 @@ export default function KnowledgeBase() {
                   <p className="text-sm text-muted-foreground mt-3 line-clamp-4">
                     {output.markdown}
                   </p>
-                </div>
+                </button>
               ))}
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card className="rounded-2xl border border-border">
+            <CardHeader>
+              <CardTitle>Selected Output</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {selectedOutput ? (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="font-medium text-lg">{selectedOutput.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{new Date(selectedOutput.created_at).toLocaleString()}</p>
+                    </div>
+                    <Badge variant="secondary">{selectedOutput.output_type}</Badge>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-sm font-medium">Source documents used</p>
+                    {selectedOutput.source_document_ids?.length ? selectedOutput.source_document_ids.map((sourceId) => {
+                      const document = sourceDocumentMap.get(sourceId);
+                      return (
+                        <button
+                          key={sourceId}
+                          onClick={() => setSelectedDocumentId(sourceId)}
+                          className="block text-left text-sm text-primary hover:underline"
+                        >
+                          {document?.title ?? sourceId}
+                        </button>
+                      );
+                    }) : (
+                      <p className="text-sm text-muted-foreground">No source-document links were recorded.</p>
+                    )}
+                  </div>
+                  <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto max-h-[560px] overflow-y-auto">
+                    {selectedOutput.markdown}
+                  </pre>
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">Generate or select an output to inspect it in full.</p>
+              )}
             </CardContent>
           </Card>
         </section>
