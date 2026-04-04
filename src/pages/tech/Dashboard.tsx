@@ -137,7 +137,7 @@ const TechDashboard = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {stats.map(stat => (
             <Card key={stat.label} className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-5 px-4">
@@ -256,8 +256,6 @@ function BookingCard({
   showAccept?: boolean;
   showComplete?: boolean;
 }) {
-  const payment = paymentBadge[booking.payment_status || 'pending'] || paymentBadge.pending;
-
   return (
     <Card className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
       <CardContent className="py-5 px-5">
@@ -267,9 +265,6 @@ function BookingCard({
             <div className="flex flex-wrap items-center gap-2">
               <span className="font-semibold text-base">{booking.name}</span>
               <StatusBadge status={booking.status} />
-              <Badge variant="outline" className={`text-xs border ${payment.className}`}>
-                {payment.label}
-              </Badge>
             </div>
 
             {booking.issue_type && (

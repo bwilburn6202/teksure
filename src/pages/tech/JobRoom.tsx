@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, CheckCircle, XCircle, Play, Clock, Calendar,
-  CreditCard, FileText, AlertCircle, Loader2, User, Phone,
+  FileText, AlertCircle, Loader2, User, Phone,
   MessageSquare, StickyNote,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -31,10 +31,8 @@ interface Booking {
   issue_type: string | null;
   description: string | null;
   status: string;
-  payment_status: string | null;
   preferred_date: string | null;
   preferred_time: string | null;
-  deposit_paid_at: string | null;
   created_at: string;
 }
 
@@ -48,13 +46,6 @@ const ISSUE_LABELS: Record<string, string> = {
   phone: 'Phone / Tablet',
   general: 'General Help',
   other: 'Other',
-};
-
-const PAYMENT_BADGES: Record<string, { label: string; className: string }> = {
-  pending: { label: 'Unpaid', className: 'bg-gray-100 text-gray-600 border-gray-200' },
-  paid: { label: 'Deposit Paid', className: 'bg-green-100 text-green-700 border-green-200' },
-  refunded: { label: 'Refunded', className: 'bg-amber-100 text-amber-700 border-amber-200' },
-  failed: { label: 'Failed', className: 'bg-red-100 text-red-700 border-red-200' },
 };
 
 function formatDate(iso: string | null) {
