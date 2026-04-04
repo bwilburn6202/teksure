@@ -36,6 +36,7 @@ export function Navbar() {
         { to: '/tips', label: 'Tips' },
         { to: '/glossary', label: 'Glossary' },
         { to: '/safety/scam-alerts', label: 'Safety & Scams' },
+        { to: '/wiki', label: 'Wiki' },
       ],
     },
     {
