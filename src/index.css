@@ -135,25 +135,116 @@ html.font-size-xxl {
 
 /* Print styles */
 @media print {
+  /* Hide non-content elements */
   header, footer, nav, .no-print, [data-radix-popper-content-wrapper],
-  .fixed, button:not(.print-btn) {
+  .fixed, .sticky, button, [role="button"],
+  /* Hide TekBot chat widget, back-to-top, sidebar, ads/promos */
+  #tekbot, .back-to-top, aside, .no-print,
+  /* Hide table of contents (interactive), prev/next nav, CTA, related, rating, tags, video */
+  [class*="bg-muted/50"]:has(ol), /* TOC card */
+  .grid.grid-cols-2, /* prev/next nav */
+  [class*="rounded-2xl"][class*="text-center"], /* CTA section */
+  [class*="Related"] {
     display: none !important;
   }
+
+  /* Base print typography */
   body {
     color: #000 !important;
     background: #fff !important;
     font-size: 12pt;
+    line-height: 1.5;
   }
+
+  /* Reasonable margins */
+  @page {
+    margin: 0.75in;
+  }
+
+  /* Reset backgrounds and colors for readability */
+  * {
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Keep step number circles visible */
+  [class*="rounded-full"][class*="bg-primary"] {
+    background: #333 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Step cards: remove decorative borders, keep structure */
+  .border-l-4 {
+    border-left: 3px solid #333 !important;
+  }
+
+  /* Avoid page breaks inside steps */
+  [data-step] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  /* Avoid breaking inside tip and warning boxes */
+  [class*="border-amber"], [class*="border-destructive"] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Links: show URL after link text for printed reference */
+  article a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555 !important;
+    word-break: break-all;
+  }
+
+  /* But not for internal navigation links */
+  article a[href^="/"]::after,
+  article a[href^="#"]::after {
+    content: none;
+  }
+
   .hero-gradient {
     background: none !important;
     color: #000 !important;
   }
-  a {
-    color: #000 !important;
-    text-decoration: underline;
+
+  /* Ensure images print reasonably */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
-  .shadow-sm, .shadow-md, .shadow-lg {
-    box-shadow: none !important;
+
+  /* Show the print-only URL header */
+  .print\\:block {
+    display: block !important;
+    color: #666 !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Guide title: ensure prominence */
+  h1 {
+    font-size: 18pt !important;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Step titles */
+  h3 {
+    font-size: 13pt !important;
+  }
+
+  /* Ensure content container uses full width */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
   }
 }
 
