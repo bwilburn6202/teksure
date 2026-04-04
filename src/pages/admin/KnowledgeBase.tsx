@@ -197,28 +197,16 @@ export default function KnowledgeBase() {
     sourceType: 'manual' | 'upload';
     originalFilename?: string;
   }) => {
-    const { data: authData } = await supabase.auth.getUser();
-    const operation = editingSourceId
-      ? supabase
-          .from('knowledge_manual_sources' as any)
-          .update({
-            title: payload.title,
-            source_type: payload.sourceType,
-            original_filename: payload.originalFilename ?? null,
-            source_url: payload.sourceUrl || null,
-            content: payload.content,
-          })
-          .eq('id', editingSourceId)
-      : supabase.from('knowledge_manual_sources' as any).insert({
-          title: payload.title,
-          source_type: payload.sourceType,
-          original_filename: payload.originalFilename ?? null,
-          source_url: payload.sourceUrl || null,
-          content: payload.content,
-          created_by: authData.user?.id ?? null,
-        });
-
-    const { error } = await operation;
+    const { error } = await supabase.functions.invoke('knowledge-source-save', {
+      body: {
+        sourceId: editingSourceId ?? undefined,
+        title: payload.title,
+        content: payload.content,
+        sourceUrl: payload.sourceUrl ?? undefined,
+        sourceType: payload.sourceType,
+        originalFilename: payload.originalFilename ?? undefined,
+      },
+    });
 
     if (error) {
       throw error;

@@ -13,6 +13,8 @@ The current branch adds:
 - `knowledge_manual_sources`
 - `ollama-health` edge function
 - `knowledge-base-compile` edge function
+- `knowledge-source-import` edge function
+- `knowledge-source-save` edge function
 
 It compiles from `scraped_articles` plus admin-added manual sources and generates markdown answer artifacts.
 It also generates Marp-compatible deck outputs.
@@ -55,6 +57,8 @@ Deploy the new functions:
 ```bash
 supabase functions deploy ollama-health
 supabase functions deploy knowledge-base-compile
+supabase functions deploy knowledge-source-import
+supabase functions deploy knowledge-source-save
 ```
 
 Or deploy everything:
@@ -95,6 +99,7 @@ npm run dev
 2. Add manual sources by file import or paste.
    Supported file types: `.md`, `.txt`, `.pdf`, `.docx`
    You can also import directly from a web URL through the admin UI.
+   Manual source create/update now goes through an admin-authenticated edge function instead of direct browser writes.
 3. Edit or delete manual sources in the source library as needed.
 4. Use `Compile Knowledge Base` to build compiled docs from `scraped_articles` and manual sources.
 5. Use `Generate Answer` or `Generate Deck` to create markdown artifacts in `knowledge_outputs`.
