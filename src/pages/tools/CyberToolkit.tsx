@@ -1399,7 +1399,7 @@ export default function CyberToolkit() {
               />
             </div>
             <a
-              href="https://github.com/TekSure/toolkit"
+              href="https://github.com/bwilburn6202/cyber-ai-toolkit"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-sm"
