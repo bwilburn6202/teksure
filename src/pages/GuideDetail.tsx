@@ -363,7 +363,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
+            <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -596,7 +596,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" decoding="async" width="40" height="40" />
+                        <img src={getGuideThumbnailSmall(g)} alt={g.title} className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" decoding="async" width="40" height="40" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>

@@ -191,7 +191,7 @@ interface ContentSegment {
 
 function tokenize(text: string): ContentSegment[] {
   const tokens: ContentSegment[] = [];
-  let remaining = text;
+  const remaining = text;
 
   // First pass: split by backtick code spans
   const codeParts = remaining.split(CODE_RE);
