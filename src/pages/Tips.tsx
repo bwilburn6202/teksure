@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,26 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
-  summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
-  full: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency update that fixes a dangerous security hole called "DarkSword." Here\'s the important part: hackers could use this flaw to get into your phone silently, just by having you visit a malicious website. They could steal your text messages, photos, location, and saved passwords without you ever knowing. Here\'s how to check for and install the update right now: On iPhone, open the Settings app (the grey gear icon), then tap General, then tap Software Update. If you see iOS 18.7.7 available, tap Download and Install — you\'ll need your passcode and about 10 minutes. Make sure your phone is plugged in or has at least 50% battery first. If you\'re already on iOS 18.7.7 or iOS 26.4 (a newer version), you\'re protected. To make sure you never miss an update like this again, go back to Software Update and turn on Automatic Updates — your phone will install updates overnight while you\'re sleeping.',
-  category: 'Security',
-  icon: ShieldAlert,
+  title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
+  summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
+  full: 'Scam text messages (sometimes called "smishing") are one of the fastest-growing threats right now. They pretend to be from your bank, a delivery service, or the IRS — and they want you to tap a link or call a number. The safest rule: never tap a link in a text from someone you do not know. On iPhone: Open the spam message, tap the sender\'s number at the top, tap the info (i) button, then scroll down and tap "Block this Caller." You can also turn on a built-in spam filter by going to Settings, then Messages, and switching on "Filter Unknown Senders" — this moves texts from people not in your contacts into a separate list so they will not bother you. On Android: Open the message, tap the three-dot menu in the top right corner, and choose "Block" or "Report spam." You can also open the Messages app, go to Settings, then Spam Protection, and make sure it is turned on. To report a scam text to your carrier, forward it to 7726 (which spells SPAM on your keypad) — this works on AT&T, T-Mobile, and Verizon. If you already tapped a suspicious link, change any passwords you may have entered and keep an eye on your bank statements for unusual charges.',
+  category: 'Safety',
+  icon: Ban,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
+    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
+    category: 'Safety',
+    icon: Heart,
+  },
+  {
+    title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
+    summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
+    category: 'Security',
+    icon: ShieldAlert,
+  },
   {
     title: 'Set Up a Screen Lock PIN to Protect Your Phone',
     summary: 'A screen lock PIN is the first line of defense if your phone is ever lost or stolen — it keeps strangers out of your personal information, photos, and accounts.',

@@ -2857,6 +2857,50 @@ We have over 80 AI guides on TekSure covering everything from writing your first
 
   // Intermediate (26-60)
   {
+    slug: 'build-ai-knowledge-base',
+    title: 'How to Build a Personal AI Knowledge Base (No Special Software Needed)',
+    excerpt: 'Turn scattered notes, articles, and bookmarks into an organized personal wiki that your AI keeps updated for you — using nothing but folders and text files.',
+    category: 'ai-guides',
+    tags: ['intermediate', 'ai', 'knowledge-base', 'organization', 'notes', 'productivity', 'wiki', 'claude', 'chatgpt'],
+    readTime: '7 min',
+    thumbnailEmoji: '🧠',
+    publishedAt: '2026-04-05',
+    difficulty: 'Intermediate',
+    steps: [
+      {
+        title: 'Create three folders on your computer',
+        content: 'Open your file explorer (the folder icon on your computer) and create a new folder called "my-knowledge-base" anywhere you like — your Desktop or Documents folder works great. Inside that folder, create three subfolders:\n\n- **raw** — This is your "junk drawer." It holds all your source material: articles, notes, screenshots, anything you want to save.\n- **wiki** — This is where your AI will write the organized version. You never edit files here by hand.\n- **outputs** — This is where the AI saves answers to your questions and research reports.\n\nThat is the entire structure. No apps to install. No accounts to create. Three folders.',
+        tip: 'On Windows, right-click in your Documents folder and choose New > Folder. On Mac, right-click and choose New Folder. Name each one exactly as listed above.'
+      },
+      {
+        title: 'Fill your "raw" folder with everything you have',
+        content: 'This is where most people get stuck — they stare at an empty folder and wonder what to put in it. The answer: everything you have been saving in other places.\n\nHere are some ideas:\n- **Articles you bookmarked** — Open them, select all the text (Ctrl+A on Windows, Cmd+A on Mac), copy it (Ctrl+C or Cmd+C), open a text editor like Notepad, paste it in (Ctrl+V or Cmd+V), and save the file in your raw folder.\n- **Notes from your phone** — Email them to yourself and save them as text files.\n- **Screenshots or photos** of instructions — Drop them right into raw.\n- **Documents** like PDF handouts, printed instructions you scanned, or old emails.\n- **Meeting notes, recipes, health information** — Anything you want to remember.\n\nDo not worry about organizing anything. Do not rename files to be neat. That is your AI\'s job in the next steps.',
+        tip: 'Start with at least 5-10 items. The more you add, the more useful your knowledge base becomes. Even a folder of 50 messy files is perfectly fine.'
+      },
+      {
+        title: 'Write your instruction file (the "schema")',
+        content: 'Create a new text file in the main "my-knowledge-base" folder (not inside any subfolder). Name it "INSTRUCTIONS.md" or "README.md" — the name does not matter much, but the content is important.\n\nOpen the file in Notepad (Windows) or TextEdit (Mac — make sure it is in plain text mode) and paste this template:\n\n---\n**# My Knowledge Base**\n\n**## What This Is**\nA personal knowledge base about [write your topic here — for example: "my health and medications" or "gardening tips" or "family recipes" or "computer troubleshooting"].\n\n**## How It Works**\n- raw/ contains my unprocessed source material. Never change these files.\n- wiki/ contains the organized version. The AI writes and updates everything here.\n- outputs/ contains answers and reports the AI creates for me.\n\n**## Rules for the Wiki**\n- Every topic gets its own file in wiki/\n- Every file starts with a short summary paragraph\n- Keep an INDEX file in wiki/ that lists every topic with a one-line description\n- When I add new items to raw/, update the wiki to include them\n\n**## Topics I Care About**\n[List 3-5 things you want this knowledge base to focus on]\n\n---\n\nThis file is like a set of instructions you leave for a helpful assistant. It tells your AI exactly how you want things organized.',
+        tip: 'Be specific about your topics. Instead of "health," try "my blood pressure medications, doctor visit notes, and exercise routines." The more specific you are, the better the AI organizes everything.'
+      },
+      {
+        title: 'Ask your AI to build the wiki',
+        content: 'Now comes the part where AI does the heavy lifting. Open any AI tool that can read files on your computer. Good options include:\n\n- **Claude** (claude.ai) — You can paste text from your raw files into the chat\n- **ChatGPT** (chat.openai.com) — Upload files using the paperclip icon\n- **Claude Code** or **Cursor** — These can read entire folders automatically\n\nGive your AI this instruction:\n\n"I have a folder of notes and articles in my raw/ folder. Please read through all of them and create an organized wiki. Start by making an INDEX file that lists every major topic with a one-line description. Then create one file per topic with a summary and the key details. Follow the rules in my INSTRUCTIONS file."\n\nThen let it work. When it finishes, your wiki/ folder will be full of neatly organized articles — with connections between topics you might not have noticed yourself.',
+        tip: 'If you are using a web-based AI (like claude.ai or ChatGPT in your browser), you can copy and paste the contents of your files into the chat. Mention which file each piece of text came from so the AI can reference your sources.',
+        warning: 'Never paste sensitive information like passwords, bank account numbers, or Social Security numbers into an AI chatbot. Keep that kind of information out of your knowledge base entirely.'
+      },
+      {
+        title: 'Ask questions and save the answers',
+        content: 'Once your wiki has at least 10 organized articles, start asking your AI questions based on what you have collected. Here are examples:\n\n- "Based on everything in my wiki, what are the most important things I should remember about [topic]?"\n- "Compare what article A says about [subject] with what article B says. Where do they disagree?"\n- "Write me a one-page summary of [topic] using only the information in my knowledge base."\n- "What gaps are there in my knowledge base? What topics should I add next?"\n\nThe AI reads across your entire wiki and gives you answers based on your own collected material — not random internet results.\n\n**The key habit:** Save those answers. Drop the AI\'s response into your outputs/ folder, or ask the AI to update the relevant wiki article with the new information. Every question you ask makes the next answer better. That is the magic of this system — it gets smarter every time you use it.',
+        tip: 'Set a weekly reminder to add at least one new item to your raw/ folder and ask the AI to update the wiki. Consistency is what makes this system powerful over time.'
+      },
+      {
+        title: 'Run a monthly health check',
+        content: 'About once a month, ask your AI to review the whole wiki. Use this prompt:\n\n"Review my entire wiki folder. Flag any information that contradicts other articles. Find any topics that are mentioned but never fully explained. List any claims that are not backed up by something in my raw/ folder. Suggest 3 new articles that would fill gaps."\n\nThis is important because small mistakes can build up over time. If the AI writes something slightly wrong and you save it, the next answer might build on that mistake. A monthly check catches errors before they pile up.\n\nThink of it like balancing a checkbook — a quick review prevents small errors from becoming big problems.',
+        tip: 'Keep your raw/ files as the "source of truth." If the wiki ever has wrong information, you can always go back to the original articles and notes in raw/ to verify what is correct.'
+      }
+    ]
+  },
+  {
     slug: 'chatgpt-plugins-and-gpts',
     title: 'How to Use ChatGPT Plugins and Custom GPTs',
     excerpt: 'Extend ChatGPT\'s capabilities with plugins for browsing, data analysis, and custom-built GPTs.',

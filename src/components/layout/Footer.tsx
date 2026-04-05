@@ -39,8 +39,8 @@ export function Footer() {
 
   return (
     <footer aria-label="Site footer" className="border-t bg-muted/30">
-      <div className="container py-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="container py-12 md:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4" aria-label="TekSure home">
@@ -73,7 +73,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="border-t pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
             &copy; {currentYear} TekSure. All rights reserved.
           </p>

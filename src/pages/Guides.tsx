@@ -1,9 +1,10 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -12,7 +13,6 @@ import { getCompletedGuides, getProgressCount } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { StarRating } from '@/components/StarRating';
 import { Progress } from '@/components/ui/progress';
-import { Button } from '@/components/ui/button';
 
 const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
@@ -24,6 +24,30 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'how-to': BookOpen,
   'app-guides': Phone,
   'health-tech': Heart,
+};
+
+const categoryColors: Record<string, string> = {
+  'windows-guides': 'from-blue-500/10 to-blue-500/5 border-blue-200/60 dark:border-blue-800/60',
+  'mac-guides': 'from-gray-500/10 to-gray-500/5 border-gray-200/60 dark:border-gray-700/60',
+  'essential-skills': 'from-amber-500/10 to-amber-500/5 border-amber-200/60 dark:border-amber-800/60',
+  'tips-tricks': 'from-purple-500/10 to-purple-500/5 border-purple-200/60 dark:border-purple-800/60',
+  'ai-guides': 'from-cyan-500/10 to-cyan-500/5 border-cyan-200/60 dark:border-cyan-800/60',
+  'safety-guides': 'from-red-500/10 to-red-500/5 border-red-200/60 dark:border-red-800/60',
+  'how-to': 'from-green-500/10 to-green-500/5 border-green-200/60 dark:border-green-800/60',
+  'app-guides': 'from-pink-500/10 to-pink-500/5 border-pink-200/60 dark:border-pink-800/60',
+  'health-tech': 'from-teal-500/10 to-teal-500/5 border-teal-200/60 dark:border-teal-800/60',
+};
+
+const categoryBgColors: Record<string, string> = {
+  'windows-guides': 'bg-blue-50/80 dark:bg-blue-950/20',
+  'mac-guides': 'bg-gray-50/80 dark:bg-gray-900/20',
+  'essential-skills': 'bg-amber-50/80 dark:bg-amber-950/20',
+  'tips-tricks': 'bg-purple-50/80 dark:bg-purple-950/20',
+  'ai-guides': 'bg-cyan-50/80 dark:bg-cyan-950/20',
+  'safety-guides': 'bg-red-50/80 dark:bg-red-950/20',
+  'how-to': 'bg-green-50/80 dark:bg-green-950/20',
+  'app-guides': 'bg-pink-50/80 dark:bg-pink-950/20',
+  'health-tech': 'bg-teal-50/80 dark:bg-teal-950/20',
 };
 
 const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
@@ -105,7 +129,6 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
   </Link>
 );
 
-
 const POPULAR_SEARCHES = ['WiFi not working', 'forgot password', 'how to print', 'update Windows', 'slow computer'];
 
 function GuidesEmptyState({
@@ -176,7 +199,6 @@ function GuidesEmptyState({
     );
   }
 
-  // Category tab selected but no guides in it
   return (
     <div className="text-center py-20 max-w-md mx-auto">
       <p className="text-4xl mb-4 select-none">📂</p>
@@ -198,16 +220,8 @@ const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
-  const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
-    try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
-  });
-  const toggleView = (mode: 'list' | 'grid') => {
-    setViewMode(mode);
-    try { localStorage.setItem('teksure-guides-view', mode); } catch {}
-  };
 
   useEffect(() => {
-    // Check URL params for category
     const params = new URLSearchParams(window.location.search);
     const cat = params.get('category') as GuideCategory | null;
     const q = params.get('q');
@@ -239,6 +253,7 @@ const Guides = () => {
   }, [search, activeTab]);
 
   const categories = Object.keys(categoryLabels) as GuideCategory[];
+  const isShowingAll = activeTab === 'all' && !search.trim();
 
   return (
     <div className="min-h-screen bg-background">
@@ -325,44 +340,44 @@ const Guides = () => {
           </div>
 
           <TabsContent value={activeTab} className="mt-0">
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                {activeTab !== 'all' && categoryDescriptions[activeTab as GuideCategory] && (
-                  <p className="text-sm text-muted-foreground">{categoryDescriptions[activeTab as GuideCategory]}</p>
-                )}
-              </div>
-              <div className="flex items-center gap-1 border rounded-lg p-0.5">
-                <button
-                  onClick={() => toggleView('list')}
-                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
-                  aria-label="List view"
-                >
-                  <LayoutList className="h-4 w-4" />
-                </button>
-                <button
-                  onClick={() => toggleView('grid')}
-                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
-                  aria-label="Grid view"
-                >
-                  <LayoutGrid className="h-4 w-4" />
-                </button>
-              </div>
-            </div>
-
             {filtered.length === 0 ? (
               <GuidesEmptyState search={search} activeTab={activeTab} onClear={() => { setSearch(''); setActiveTab('all'); }} />
-            ) : viewMode === 'list' ? (
-              <div className="border rounded-xl overflow-hidden">
-                {filtered.map((guide) => (
-                  <GuideListItem key={guide.slug} guide={guide} completed={completedSlugs.has(guide.slug)} />
-                ))}
+            ) : isShowingAll ? (
+              // Bento grid for "All" view
+              <div className="space-y-8">
+                {categories.slice(0, 4).map((cat) => {
+                  const catGuides = guides.filter(g => g.category === cat).slice(0, 3);
+                  if (catGuides.length === 0) return null;
+                  const Icon = categoryIcons[cat] || BookOpen;
+                  const colorClass = categoryColors[cat] || '';
+                  const bgClass = categoryBgColors[cat] || '';
+
+                  return (
+                    <div key={cat}>
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-2">
+                          <div className={`h-8 w-8 rounded-lg flex items-center justify-center ${bgClass}`}>
+                            <Icon className="h-4 w-4" />
+                          </div>
+                          <h3 className="font-semibold">{categoryLabels[cat]}</h3>
+                        </div>
+                        <Link to={`/guides?category=${cat}`} className="text-sm text-primary hover:underline">
+                          View all →
+                        </Link>
+                      </div>
+                      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {catGuides.map((guide) => (
+                          <GuideCard key={guide.slug} guide={guide} completed={completedSlugs.has(guide.slug)} />
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             ) : (
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filtered.map((guide, i) => (
-                  <div key={guide.slug}>
-                    <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
-                  </div>
+                {filtered.map((guide) => (
+                  <GuideCard key={guide.slug} guide={guide} completed={completedSlugs.has(guide.slug)} />
                 ))}
               </div>
             )}

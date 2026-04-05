@@ -19,6 +19,7 @@ import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } fro
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
+import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
@@ -95,35 +96,58 @@ const StepScreenshot = ({
   screenshotAlt?: string;
   annotations?: ScreenshotAnnotation[];
 }) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   return (
-    <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
-      <div className="relative bg-muted/30">
-        <img
-          src={screenshotUrl}
-          alt={screenshotAlt || ''}
-          className="w-full h-auto"
-          loading="lazy"
-        />
+    <>
+      <div
+        className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm cursor-pointer group"
+        onClick={() => setLightboxOpen(true)}
+        role="button"
+        tabIndex={0}
+        aria-label={`Enlarge screenshot: ${screenshotAlt || 'guide step'}`}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLightboxOpen(true); } }}
+      >
+        <div className="relative bg-muted/30">
+          <img
+            src={screenshotUrl}
+            alt={screenshotAlt || ''}
+            className="w-full h-auto transition-opacity group-hover:opacity-90"
+            loading="lazy"
+          />
+          {annotations && annotations.length > 0 && (
+            <AnnotationLayer annotations={annotations} />
+          )}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10">
+            <span className="bg-black/60 text-white text-sm px-3 py-1.5 rounded-lg backdrop-blur-sm">
+              Click to enlarge
+            </span>
+          </div>
+        </div>
         {annotations && annotations.length > 0 && (
-          <AnnotationLayer annotations={annotations} />
+          <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
+            {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
+              <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                {a.type === 'callout' && (
+                  <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
+                    {a.label}
+                  </span>
+                )}
+                {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
+                {a.label}
+              </span>
+            ))}
+          </div>
         )}
       </div>
-      {annotations && annotations.length > 0 && (
-        <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
-          {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
-            <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              {a.type === 'callout' && (
-                <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
-                  {a.label}
-                </span>
-              )}
-              {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
-              {a.label}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+      <ScreenshotLightbox
+        open={lightboxOpen}
+        onOpenChange={setLightboxOpen}
+        screenshotUrl={screenshotUrl}
+        screenshotAlt={screenshotAlt}
+        annotations={annotations}
+      />
+    </>
   );
 };
 
