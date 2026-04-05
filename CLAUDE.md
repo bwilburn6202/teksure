@@ -25,6 +25,9 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 | `supabase/migrations/` | Database migrations |
 | `.env.local` | Environment variables (never commit) |
 | `.claude/evolution-state.json` | Evolution loop state (see below) |
+| `knowledge-base/` | LLM-maintained knowledge base (raw sources, wiki, outputs) |
+| `knowledge-base/SCHEMA.md` | Knowledge base rules and structure |
+| `knowledge-base/wiki/INDEX.md` | Wiki article index — start here for research |
 
 ## Brand Constraints
 - Never use: "It's easy", "simply", "just", "obviously", "leverage", "utilize", "seamless", "cutting-edge"
@@ -95,6 +98,27 @@ TekSure is maintained by a fully autonomous development pipeline. The system has
 - **Safety:** FTC.gov, CISA.gov, IC3.gov
 - **Video:** YouTube official channels (Apple Support, Google, Microsoft, Samsung, AARP)
 - **Community:** Reddit r/techsupport, r/seniors, r/AskTechnology
+
+### Knowledge Base (Karpathy Method)
+TekSure maintains an LLM-powered knowledge base at `knowledge-base/` for research, trends, and content strategy. Inspired by Andrej Karpathy's LLM knowledge base workflow.
+
+**Structure:**
+- `knowledge-base/raw/` — Unprocessed sources (articles, tweets, research). Never modify. Filename: `source-topic-YYYY-MM-DD.md`
+- `knowledge-base/wiki/` — AI-maintained wiki articles with backlinks and summaries. AI owns this — rarely edit by hand.
+- `knowledge-base/outputs/` — Generated reports, analyses, content briefs. File valuable outputs back into wiki.
+- `knowledge-base/SCHEMA.md` — Rules the AI follows when maintaining the knowledge base.
+
+**Workflow:**
+1. Save interesting research/articles/insights to `raw/`
+2. AI compiles raw sources into wiki articles (run: "Update the knowledge base wiki from new raw sources")
+3. Query the wiki for content strategy decisions, gap analysis, trend reports
+4. File useful outputs back into wiki (compounding loop)
+5. Run monthly health checks to catch contradictions and gaps
+
+**Integration with content pipeline:**
+- Research in wiki informs guide stub creation (Monday enrichment task)
+- Trend tracking in wiki feeds content-freshness-check (Wednesday task)
+- Competitor insights feed evolution-state.json feature prioritization
 
 ### To manage scheduled tasks
 Go to Claude Code sidebar → Scheduled section. Each task can be enabled/disabled individually.
