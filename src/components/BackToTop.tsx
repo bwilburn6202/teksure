@@ -31,6 +31,8 @@ export function BackToTop() {
         transition-all duration-300 ease-in-out
         ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}
       `}
+      tabIndex={visible ? 0 : -1}
+      aria-hidden={!visible}
     >
       <ChevronUp className="h-6 w-6" />
     </Button>
