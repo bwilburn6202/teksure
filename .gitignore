@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# LLM training data (generated — run scripts/generate-training-data.mjs to rebuild)
+scripts/training-data.jsonl
+scripts/training-data-stats.json

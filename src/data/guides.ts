@@ -33,6 +33,8 @@ export interface GuideStep {
   afterCaption?: string;
   beforeLabel?: string;
   afterLabel?: string;
+  /** Explains WHY this step matters — helps users build real understanding */
+  whyItWorks?: string;
 }
 
 export interface Guide {
@@ -100,11 +102,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.' },
-      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.' },
-      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!' },
-      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.' },
-      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.' },
+      { title: 'Locate the power button', content: 'Find the power button on your PC tower or laptop — it usually has a circle with a line through the top.', whyItWorks: 'The power symbol (a circle with a line) is an international standard — you will find it on almost every electronic device. Once you recognize it, you can turn on any device.' },
+      { title: 'Press to turn on', content: 'Press the power button once and release. Wait for the Windows logo and login screen to appear.', whyItWorks: 'When you press the power button, your computer runs through a startup process — loading the operating system and checking that everything works. This takes a moment, which is why you see the Windows logo.' },
+      { title: 'Log in to Windows', content: 'Enter your PIN, password, or use Windows Hello (fingerprint/face) to sign in.', tip: 'Set up Windows Hello (fingerprint or face) for the fastest login — you\'ll never type a password again!', whyItWorks: 'The login screen protects your personal files from anyone else who might use your computer. Even if you live alone, it keeps your information safe if the computer is ever lost or stolen.' },
+      { title: 'Shut down properly', content: 'Click the Start menu (Windows icon) → Power → Shut Down. Never hold the power button unless the PC is frozen.', warning: 'Never hold the power button to force shutdown unless your PC is completely frozen. This can cause data loss.', whyItWorks: 'Proper shutdown lets Windows save your work and close programs safely. Forcing it off is like pulling the plug on a TV while it is recording — you might lose something important.' },
+      { title: 'Use Sleep mode for breaks', content: 'For short breaks, use Start → Power → Sleep. Your PC will resume quickly when you press the power button again.', tip: 'Sleep mode uses very little power and lets you resume in seconds. Use it for lunch breaks or short pauses.', whyItWorks: 'Sleep keeps your programs open in memory but uses almost no power. It is the best of both worlds — fast to resume, but saves electricity compared to leaving the computer fully on.' },
     ]
   },
   {
@@ -119,11 +121,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-06',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).' },
-      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.' },
-      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', tip: 'Look for your network name on a sticker on the bottom or back of your router.' },
-      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.' },
-      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.' },
+      { title: 'Open network settings', content: 'Click the Wi-Fi icon in the bottom-right corner of the taskbar (system tray).', whyItWorks: 'The taskbar icons in the bottom-right corner are your computer\'s quick controls — Wi-Fi, volume, battery, and clock all live there. Once you know to look there, you can adjust most basic settings quickly.' },
+      { title: 'Turn on Wi-Fi', content: 'If Wi-Fi is off, click the Wi-Fi button to enable it. Available networks will appear.', whyItWorks: 'Wi-Fi uses a radio signal to connect to the internet wirelessly. Turning it on tells your computer to start listening for nearby networks — like tuning a radio to find stations.' },
+      { title: 'Select your network', content: 'Find your network name (SSID) in the list and click on it. It\'s usually your router\'s name or your internet provider\'s name.', tip: 'Look for your network name on a sticker on the bottom or back of your router.', whyItWorks: 'Every Wi-Fi network has a unique name (SSID). Your router broadcasts this name so devices can find it. Picking the right one ensures you connect to your own internet, not a neighbor\'s.' },
+      { title: 'Enter the password', content: 'Type your Wi-Fi password and click Connect. Check "Connect automatically" to rejoin next time. Passwords are case-sensitive — it\'s often on a sticker on your router.', warning: 'Wi-Fi passwords are case-sensitive! Double-check capitals and special characters. The password is usually on a sticker on your router.', whyItWorks: 'The Wi-Fi password is like a key to your home network. It prevents strangers from using your internet or seeing your activity. "Connect automatically" means your computer will remember this key and reconnect on its own next time.' },
+      { title: 'Verify connection', content: 'The Wi-Fi icon should show connected. Open a browser to confirm internet access.', tip: 'If you are still having trouble, visit support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows — Microsoft\'s free step-by-step Wi-Fi troubleshooter.', whyItWorks: 'Sometimes the Wi-Fi icon shows connected but the internet is not actually working (the router itself might have a problem). Opening a website confirms that everything is working end to end.' },
     ]
   },
   {
@@ -137,11 +139,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.' },
-      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.' },
-      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.' },
-      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.' },
-      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.' },
+      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.', whyItWorks: 'The Start menu is your computer\'s main directory — like a phone book for all your programs. Searching here is the fastest way to find anything because you do not need to know where it is stored.' },
+      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.', whyItWorks: 'Desktop shortcuts are like bookmarks — they point to the real program without moving it. Double-clicking tells the computer you want to open something, not just select it. One click selects; two clicks opens.' },
+      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.', whyItWorks: 'The taskbar is always visible at the bottom of your screen, so pinned apps are always one click away — no searching required. Think of it as keeping your favorite tools on your desk instead of in a drawer.' },
+      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.', whyItWorks: 'Closing programs you are not using frees up your computer\'s memory (its short-term thinking power). Too many open programs can make your computer slow, just like trying to carry too many grocery bags at once.' },
+      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.', whyItWorks: 'Sometimes a program gets stuck in a loop and stops responding. Task Manager lets you see everything running on your computer and shut down the stuck program without restarting. It is like a manager who can send a misbehaving employee home.' },
     ]
   },
   {
@@ -155,11 +157,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-08',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.' },
-      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.' },
-      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.' },
-      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.' },
-      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.' },
+      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.', whyItWorks: 'The taskbar is divided into zones, each with a purpose: left side for launching apps, middle for switching between open programs, right side for system controls. Once you understand this layout, you always know where to look.' },
+      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.', whyItWorks: 'Pinning keeps your most-used apps visible at all times. Instead of searching through menus every time, you have one-click access — like hanging your car keys by the front door instead of searching for them each morning.' },
+      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.', whyItWorks: 'Each running program gets its own button on the taskbar. Clicking switches your view instantly. Hovering shows a small preview so you can check what is in each window before switching — like peeking through a door before walking in.' },
+      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.', whyItWorks: 'The system tray is your computer\'s dashboard — it shows the status of important things at a glance. A quick look tells you if you are connected to WiFi, what time it is, and if anything needs your attention.' },
+      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.', whyItWorks: 'Task View gives you a bird\'s-eye view of everything open on your computer. It is especially helpful when you lose a window behind other programs — you can see and click on any window to bring it forward.' },
     ]
   },
   {
@@ -174,11 +176,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.' },
-      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.' },
-      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.' },
-      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.' },
-      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.' },
+      { title: 'Full screen screenshot', content: 'Press the Print Screen (PrtScn) key to capture the entire screen to your clipboard. Paste it into Paint or a document.', whyItWorks: 'The clipboard is an invisible holding area — when you "copy" something, it goes to the clipboard. Print Screen puts a picture of your whole screen there. You can then paste it anywhere, just like pasting copied text.' },
+      { title: 'Screenshot to file', content: 'Press Win+Print Screen to save a full screenshot directly as a PNG file in your Pictures → Screenshots folder.', whyItWorks: 'Adding the Windows key tells your computer to save the screenshot as a file automatically, instead of just copying it to the clipboard. This is faster when you want to keep the image for later.' },
+      { title: 'Use Snipping Tool', content: 'Press Win+Shift+S to open Snipping Tool. Draw a rectangle around the area you want to capture.', whyItWorks: 'Sometimes you only need part of the screen — a confirmation number, an error message, or a recipe. Snipping Tool lets you select exactly what you need instead of capturing everything.' },
+      { title: 'Capture a single window', content: 'Click the window you want, then press Alt+Print Screen to capture just that window.', whyItWorks: 'This captures only the active window, hiding everything else on screen. It is great when you want to share what you see in one app without showing your other open programs or personal information.' },
+      { title: 'Annotate and share', content: 'After using Snipping Tool, click the notification to open the screenshot in the editor where you can mark it up and save.', whyItWorks: 'Adding arrows, highlights, or circles to a screenshot makes it much easier to show someone exactly where to look. This is especially helpful when asking for tech support — a marked-up screenshot is worth a thousand words.' },
     ]
   },
   {
@@ -192,11 +194,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-10',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.' },
-      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".' },
-      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.' },
-      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).' },
-      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.' },
+      { title: 'Select text or files', content: 'Click and drag to highlight text, or click a file to select it. Hold Ctrl and click to select multiple items.', whyItWorks: 'Before you can copy anything, your computer needs to know WHAT you want to copy. Highlighting (selecting) tells it exactly which text or files you mean. Think of it like highlighting a sentence in a book with a marker.' },
+      { title: 'Copy the selection', content: 'Press Ctrl+C to copy the selected item to your clipboard. You can also right-click and choose "Copy".', whyItWorks: 'Copying puts a duplicate on the invisible clipboard — the original stays where it is. Nothing changes on screen, but the copy is now ready to be placed somewhere else.' },
+      { title: 'Paste the copied item', content: 'Navigate to where you want to place it and press Ctrl+V. Right-click and select "Paste" also works.', whyItWorks: 'Paste takes whatever is on the clipboard and puts it where your cursor is. You can paste the same thing multiple times — the clipboard holds onto it until you copy something new.' },
+      { title: 'Cut instead of copy', content: 'Press Ctrl+X to cut — this copies the item and removes it from the original location (great for moving files).', whyItWorks: 'Cut is like copy + delete in one step. It is the difference between photocopying a page (copy) and physically moving it to a new folder (cut). Use cut when you want to relocate something, not duplicate it.' },
+      { title: 'Use clipboard history', content: 'Press Win+V to see your clipboard history — a list of recently copied items you can paste from.', whyItWorks: 'Normally the clipboard only remembers the LAST thing you copied. Clipboard history keeps a list of your recent copies, so you can go back and paste something you copied earlier without re-copying it.' },
     ]
   },
   {
@@ -210,9 +212,9 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-11',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!' },
-      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.' },
-      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.' },
+      { title: 'Save with Ctrl+S', content: 'In any application, press Ctrl+S to save your current file. Do this frequently while working!', whyItWorks: 'Your work only exists in the computer\'s temporary memory until you save it. If the power goes out or the program crashes, unsaved work disappears. Saving writes it to permanent storage — like putting a document in a filing cabinet instead of leaving it on the table.' },
+      { title: 'Save As for a new copy', content: 'Press Ctrl+Shift+S or go to File → Save As to save with a different name, location, or format.', whyItWorks: '"Save As" creates a brand new file while keeping the original untouched. This is useful when you want to make a copy before making changes — like photocopying a letter before editing it.' },
+      { title: 'Choose a save location', content: 'Use the file browser to navigate to where you want to save — Desktop, Documents, or a specific folder.', whyItWorks: 'Your computer organizes files in folders, just like a filing cabinet. Choosing the right location now means you can find the file later. Documents and Desktop are the easiest places to remember.' },
       { title: 'Name your file clearly', content: 'Give files descriptive names like "Budget_March_2026" instead of "Untitled" so you can find them later.' },
       { title: 'Auto-save features', content: 'Many modern apps like Word and Google Docs auto-save your work. Look for the cloud or checkmark icon confirming saves.' },
     ]
@@ -228,11 +230,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-12',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.' },
-      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.' },
-      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.' },
-      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.' },
-      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.' },
+      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.', whyItWorks: 'Right-clicking opens a context menu — a list of actions that makes sense for where you clicked. On an empty space, it offers to create new things. On a file, it offers to rename, copy, or delete. The menu adapts to what you clicked on.' },
+      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.', whyItWorks: 'File Explorer is your computer\'s filing cabinet. Creating a folder here is like adding a new hanging folder — you choose which drawer (location) to put it in, so your files stay organized from the start.' },
+      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.', whyItWorks: 'Keyboard shortcuts skip the menus entirely. Once you memorize them, they are much faster than clicking through menus. Ctrl+Shift+N is worth learning if you create folders often.' },
+      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.', whyItWorks: 'A good folder name is one that helps you find what you need months later. "Stuff" or "New Folder" does not help, but "Tax Documents 2026" tells you exactly what is inside without opening it.' },
+      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.', whyItWorks: 'Subfolders work like categories and subcategories in a library. Instead of putting 500 files in one folder, you split them into logical groups. This makes finding any single file much faster.' },
     ]
   },
   {
@@ -298,11 +300,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-16',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Microsoft Edge', content: 'Click the Edge icon on the taskbar (blue wave icon) or search for "Edge" in the Start menu.' },
-      { title: 'Navigate to a website', content: 'Click the address bar at the top, type a URL (like google.com) or a search term, and press Enter.' },
-      { title: 'Use tabs', content: 'Click the + button next to your current tab to open a new tab. Click X on a tab to close it. Use Ctrl+T for a new tab.' },
-      { title: 'Bookmark a page', content: 'Click the star icon in the address bar to bookmark (save) a page for quick access later.' },
-      { title: 'Manage downloads', content: 'Press Ctrl+J to see your downloads. By default, files save to your Downloads folder.' },
+      { title: 'Open Microsoft Edge', content: 'Click the Edge icon on the taskbar (blue wave icon) or search for "Edge" in the Start menu.', whyItWorks: 'A web browser is your window to the internet — it translates website code into the pages you see. Edge comes built into Windows, so you do not need to install anything extra to start browsing.' },
+      { title: 'Navigate to a website', content: 'Click the address bar at the top, type a URL (like google.com) or a search term, and press Enter.', whyItWorks: 'The address bar does double duty: type a web address to go directly to a site, or type words to search. Every website has a unique address (URL) — like a street address for a building on the internet.' },
+      { title: 'Use tabs', content: 'Click the + button next to your current tab to open a new tab. Click X on a tab to close it. Use Ctrl+T for a new tab.', whyItWorks: 'Tabs let you have multiple websites open at the same time without opening multiple browser windows. It is like having several books open on your desk, each with a labeled tab sticking up so you can switch between them.' },
+      { title: 'Bookmark a page', content: 'Click the star icon in the address bar to bookmark (save) a page for quick access later.', whyItWorks: 'Bookmarks save a website\'s address so you do not have to remember or retype it. You can organize bookmarks into folders — think of it as your personal phone book for websites.' },
+      { title: 'Manage downloads', content: 'Press Ctrl+J to see your downloads. By default, files save to your Downloads folder.', whyItWorks: 'When you download a file from the internet, your browser saves a copy on your computer. The Downloads folder is where everything goes by default — knowing this means you will always be able to find what you downloaded.' },
     ]
   },
   {
@@ -316,11 +318,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-17',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Minimize and maximize', content: 'Use the buttons in the top-right corner: minimize (—), maximize (□), and close (X).' },
-      { title: 'Snap windows side by side', content: 'Drag a window to the left or right edge of the screen to snap it to half the display. Or press Win+Left/Right arrow.' },
-      { title: 'Use Snap Layouts', content: 'Hover over the maximize button to see Snap Layouts — choose from 2, 3, or 4 window arrangements.' },
-      { title: 'Switch between windows', content: 'Press Alt+Tab to quickly cycle through open windows. Hold Alt and press Tab repeatedly to choose.' },
-      { title: 'Use virtual desktops', content: 'Press Win+Ctrl+D to create a new virtual desktop. Switch between them with Win+Ctrl+Left/Right arrows.' },
+      { title: 'Minimize and maximize', content: 'Use the buttons in the top-right corner: minimize (—), maximize (□), and close (X).', whyItWorks: 'Minimize hides the window but keeps the program running — you can bring it back from the taskbar. Maximize fills the screen so you can focus on one thing. These controls give you flexibility in how you work.' },
+      { title: 'Snap windows side by side', content: 'Drag a window to the left or right edge of the screen to snap it to half the display. Or press Win+Left/Right arrow.', whyItWorks: 'Side-by-side windows let you see two things at once — like reading a recipe on one side while typing notes on the other. Your computer splits the screen precisely in half so both windows fit perfectly.' },
+      { title: 'Use Snap Layouts', content: 'Hover over the maximize button to see Snap Layouts — choose from 2, 3, or 4 window arrangements.', whyItWorks: 'Snap Layouts offer pre-built arrangements so you do not have to drag and resize windows manually. It is like having a desk organizer that arranges your papers in neat sections automatically.' },
+      { title: 'Switch between windows', content: 'Press Alt+Tab to quickly cycle through open windows. Hold Alt and press Tab repeatedly to choose.', whyItWorks: 'Alt+Tab shows thumbnail previews of all open windows so you can jump directly to the one you need. It is much faster than clicking around on the taskbar, especially when you have many programs open.' },
+      { title: 'Use virtual desktops', content: 'Press Win+Ctrl+D to create a new virtual desktop. Switch between them with Win+Ctrl+Left/Right arrows.', whyItWorks: 'Virtual desktops give you multiple workspaces — like having several desks you can switch between. Keep email on one, web browsing on another, and a document on a third. Each desktop stays organized independently.' },
     ]
   },
   {
@@ -352,10 +354,10 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-19',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.' },
-      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.' },
-      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!' },
-      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
+      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.', whyItWorks: 'Restarting clears your computer\'s temporary memory and stops all running programs. It is like giving your computer a fresh start for the day — any small glitches or stuck processes get cleaned up automatically.' },
+      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.', whyItWorks: 'Ctrl+Alt+Delete is a special key combination that interrupts everything on screen and gives you system-level controls. It works even when your mouse or other programs are frozen, which is why it is the go-to emergency shortcut.' },
+      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!', whyItWorks: 'Over time, programs can develop small memory leaks or get stuck waiting for something. Restarting wipes the slate clean. Tech support always asks "have you tried restarting?" because it genuinely fixes most issues.' },
+      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.', whyItWorks: 'Holding the power button sends a hardware-level shutdown signal that bypasses all software. The computer cannot ignore this command. However, any work not saved to disk will be lost, which is why it should only be a last resort.' },
     ]
   },
   {
@@ -387,11 +389,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-21',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.' },
-      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.' },
-      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.' },
-      { title: 'Customize your inbox', content: 'Set up notifications, choose a sync schedule, and customize swipe actions in Settings.' },
-      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.' },
+      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.', whyItWorks: 'An email app pulls your messages from the internet and displays them on your computer. You can read and write email without opening a web browser — the app checks for new messages automatically in the background.' },
+      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.', whyItWorks: 'When you add an account, the Mail app connects securely to your email provider\'s servers. It downloads copies of your messages to your computer so you can read them quickly, even when your internet is slow.' },
+      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.', whyItWorks: 'The sign-in process verifies your identity so no one else can read your email. Being redirected to Google\'s own page is a good thing — it means your password goes directly to Google, not through a third-party app.' },
+      { title: 'Customize your inbox', content: 'Set up notifications, choose a sync schedule, and customize swipe actions in Settings.', whyItWorks: 'Sync schedule controls how often the app checks for new mail. More frequent checks mean faster delivery but use more battery. Every 15 or 30 minutes is a good balance for most people.' },
+      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.', whyItWorks: 'Email travels through the internet in seconds. When you press Send, your message goes to your email provider\'s server, which delivers it to the recipient\'s server. They see it the next time they check their inbox.' },
     ]
   },
   {
@@ -441,11 +443,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-24',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.' },
-      { title: 'Select your printer', content: 'Choose your printer from the dropdown list. Make sure it\'s turned on and connected.' },
-      { title: 'Adjust settings', content: 'Set the number of copies, page range, orientation (portrait/landscape), and paper size.' },
-      { title: 'Preview before printing', content: 'Use the print preview to check how your document will look before using paper and ink.' },
-      { title: 'Click Print', content: 'Once everything looks right, click Print. Your document will be sent to the printer queue.' },
+      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.', whyItWorks: 'Ctrl+P is a universal shortcut — it opens the print dialog in almost every program on every computer. The "P" stands for Print. Learning this one shortcut means you can print from any application.' },
+      { title: 'Select your printer', content: 'Choose your printer from the dropdown list. Make sure it\'s turned on and connected.', whyItWorks: 'Your computer can connect to multiple printers (home, office, wireless). The dropdown list shows which ones are available right now. If your printer is not listed, it is either turned off or not connected.' },
+      { title: 'Adjust settings', content: 'Set the number of copies, page range, orientation (portrait/landscape), and paper size.', whyItWorks: 'Portrait (tall) works for letters and documents. Landscape (wide) works for photos and spreadsheets. Setting the page range lets you print just the pages you need instead of the whole document, saving paper and ink.' },
+      { title: 'Preview before printing', content: 'Use the print preview to check how your document will look before using paper and ink.', whyItWorks: 'What you see on screen does not always match what comes out of the printer — margins, font sizes, and image positions can shift. Preview catches these issues before you waste paper.' },
+      { title: 'Click Print', content: 'Once everything looks right, click Print. Your document will be sent to the printer queue.', whyItWorks: 'The print queue is a waiting line for documents. Your computer sends the file to the printer, which processes it in order. If nothing prints, check the queue — a stuck document might be blocking the line.' },
     ]
   },
 
@@ -479,12 +481,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-26',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Open File Explorer', content: 'Press Win+E or click the folder icon on the taskbar to open File Explorer.' },
-      { title: 'Navigate using the sidebar', content: 'Use Quick Access, This PC, Desktop, Documents, and Downloads in the left panel to navigate.' },
-      { title: 'Use the address bar', content: 'Click the address bar to type a direct path or folder name to jump to any location.' },
-      { title: 'Change the view', content: 'Use the View menu to switch between Icons, List, Details, and Tiles views depending on your needs.' },
-      { title: 'Search for files', content: 'Use the search box in the top-right to search within the current folder or across your PC.' },
-      { title: 'Use tabs', content: 'In Windows 11, press Ctrl+T to open a new tab in File Explorer for side-by-side file management.' },
+      { title: 'Open File Explorer', content: 'Press Win+E or click the folder icon on the taskbar to open File Explorer.', whyItWorks: 'File Explorer is your computer\'s filing cabinet — it shows every file and folder stored on your machine. Win+E opens it instantly from anywhere, even if another program is in front.' },
+      { title: 'Navigate using the sidebar', content: 'Use Quick Access, This PC, Desktop, Documents, and Downloads in the left panel to navigate.', whyItWorks: 'The sidebar gives you shortcuts to your most important locations. Quick Access shows recently used folders, so the places you visit most are always at the top — no digging required.' },
+      { title: 'Use the address bar', content: 'Click the address bar to type a direct path or folder name to jump to any location.', whyItWorks: 'Every folder on your computer has an address, just like a house has a street address. Typing in the address bar is the fastest way to jump directly to a known location instead of clicking through multiple folders.' },
+      { title: 'Change the view', content: 'Use the View menu to switch between Icons, List, Details, and Tiles views depending on your needs.', whyItWorks: 'Large Icons view is great for photos because you can see thumbnails. Details view is best for documents because it shows the file size, date, and type — helping you find the right version of a file.' },
+      { title: 'Search for files', content: 'Use the search box in the top-right to search within the current folder or across your PC.', whyItWorks: 'Windows indexes your files in the background, building a searchable catalog. When you type a search term, it checks this catalog instead of opening every file — which is why results appear almost instantly.' },
+      { title: 'Use tabs', content: 'In Windows 11, press Ctrl+T to open a new tab in File Explorer for side-by-side file management.', whyItWorks: 'Tabs in File Explorer work just like tabs in a web browser. Instead of opening two separate File Explorer windows to move files between folders, you can switch between tabs in one window — much less cluttered.' },
     ]
   },
   {
@@ -587,11 +589,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-02-01',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Open Windows Update', content: 'Go to Settings → Windows Update to check for available updates.' },
-      { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.' },
-      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your Mac is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.' },
-      { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.' },
-      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.' },
+      { title: 'Open Windows Update', content: 'Go to Settings → Windows Update to check for available updates.', whyItWorks: 'Windows Update is a built-in service that downloads fixes and improvements directly from Microsoft. Keeping it up to date protects you from known security vulnerabilities that hackers actively exploit.' },
+      { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.', whyItWorks: 'Microsoft releases security updates on the second Tuesday of each month (called "Patch Tuesday"), but critical fixes can come at any time. Checking regularly ensures you get these fixes as soon as they are available.' },
+      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your computer is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.', whyItWorks: 'Updates replace old files with new ones. If power is cut during this process, some files can be half-written, which can prevent your computer from starting properly. Always keep it plugged in during updates.' },
+      { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.', whyItWorks: 'Some system files cannot be replaced while Windows is running because they are actively in use. A restart lets Windows swap out these protected files safely before they are loaded again.' },
+      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.', whyItWorks: 'Active hours tell Windows when you are using your computer so it will not restart and interrupt your work. Setting this correctly means updates happen automatically while you sleep or are away.' },
     ]
   },
   {
@@ -1726,11 +1728,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-05',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.' },
-      { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.' },
-      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.' },
-      { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.' },
-      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.' },
+      { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.', whyItWorks: 'Hackers use computers to try millions of password guesses per second. A 6-character password can be cracked in seconds. A 12-character password would take thousands of years. Length is the single most important factor in password strength.' },
+      { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.', whyItWorks: 'Each type of character adds more possibilities the hacker\'s computer has to check. Using only lowercase letters means 26 options per character. Adding uppercase, numbers, and symbols increases that to 95 options per character — dramatically more combinations to try.' },
+      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.', whyItWorks: 'A passphrase is long (which makes it strong) but uses real words (which makes it memorable). Four random words strung together are far stronger than a short complex password like "P@ss1!" — and much easier to type correctly.' },
+      { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.', whyItWorks: 'Data breaches happen regularly — companies like Yahoo, LinkedIn, and Facebook have all had passwords stolen. When attackers get your password from one site, the first thing they do is try it on your email, bank, and social media. Unique passwords contain the damage to one account.' },
+      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.', whyItWorks: 'No one can remember 50 different strong passwords. A password manager remembers them all for you — you only need to remember one master password. It is like having a locked safe that holds all your keys.' },
     ]
   },
   {
@@ -1744,12 +1746,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).' },
-      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."' },
-      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.' },
-      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.' },
-      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.' },
-      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.' },
+      { title: 'Understand 2FA', content: 'Two-factor authentication requires both your password AND a second verification (like a code from your phone).', whyItWorks: 'Even if a hacker steals your password, they still cannot get in without the second factor — your phone. It is like having two locks on your front door. A thief would need both keys.' },
+      { title: 'Find the security settings', content: 'In your account settings, look for "Security," "Two-Factor," "2-Step Verification," or "Login Verification."', whyItWorks: 'Different companies use different names for the same feature. Knowing all the common names helps you find it no matter which service you are setting up.' },
+      { title: 'Choose your 2FA method', content: 'Options include: authenticator app (most secure), SMS codes, email codes, or hardware security keys.', tip: 'Authenticator apps are more secure than SMS. Use Google Authenticator, Authy, or Microsoft Authenticator.', whyItWorks: 'Authenticator apps generate codes on your phone that change every 30 seconds. SMS codes can sometimes be intercepted by hackers, but app codes cannot — they never travel over the phone network.' },
+      { title: 'Set up an authenticator app', content: 'Download Google Authenticator, Authy, or Microsoft Authenticator. Scan the QR code provided by the service.', whyItWorks: 'The QR code contains a secret key that links the app to your account. After scanning, the app generates matching codes that only your account will accept. No one else can generate these codes without that secret key.' },
+      { title: 'Save backup codes', content: 'Most services provide backup codes — you\'ll need these if you lose your phone. Save them in a secure place.', warning: 'Write down or print your backup codes and store them somewhere safe. If you lose your phone and don\'t have these, you could be locked out of your account permanently.', whyItWorks: 'Backup codes are one-time-use keys that bypass 2FA. If your phone breaks, gets lost, or is stolen, these codes are your emergency way back into your account. Keep them on paper in a safe place — not on your phone.' },
+      { title: 'Enable for critical accounts first', content: 'Prioritize: email, banking, social media, and cloud storage accounts.', tip: 'Start with your email account — it\'s the master key to all your other accounts via password resets.', whyItWorks: 'Your email is the most important account to protect because password resets for all your other accounts go through email. If a hacker controls your email, they can reset the password for your bank, social media, and everything else.' },
     ]
   },
   // Social: "That email from 'PayPal' might not be from PayPal. Here's how to check before you click anything."
@@ -5000,7 +5002,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'What to do if things go wrong',
-        content: 'If your item doesn\'t arrive or isn\'t as described: first contact the seller directly and give them 5 working days to respond. If no resolution, open a dispute through the platform (Amazon A-to-Z Guarantee, eBay Money Back Guarantee, or PayPal Resolution Center). If paid by credit card, contact your card provider and request a chargeback. If paid by debit card, contact your bank within 120 days. If you\'ve been scammed, report it to Action Fraud (actionfraud.police.uk) and your bank immediately.', tip: 'Keep all confirmation emails, screenshots of the listing, and communication with the seller — you\'ll need these for any dispute.', warning: 'Never pay extra money to "release" a parcel or "cover customs fees" for a package you weren\'t expecting — this is a common parcel delivery scam.'
+        content: 'If your item doesn\'t arrive or isn\'t as described: first contact the seller directly and give them 5 working days to respond. If no resolution, open a dispute through the platform (Amazon A-to-Z Guarantee, eBay Money Back Guarantee, or PayPal Resolution Center). If paid by credit card, contact your card provider and request a chargeback. If paid by debit card, contact your bank within 120 days. If you\'ve been scammed, report it to the FTC at ReportFraud.ftc.gov and your bank immediately.', tip: 'Keep all confirmation emails, screenshots of the listing, and communication with the seller — you\'ll need these for any dispute.', warning: 'Never pay extra money to "release" a parcel or "cover customs fees" for a package you weren\'t expecting — this is a common parcel delivery scam.'
       },
     ]
   },

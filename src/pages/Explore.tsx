@@ -6,7 +6,7 @@ import {
   LogIn, GraduationCap, LayoutDashboard, KeyRound, Wifi, Laptop,
   HardDrive, Smartphone, Languages, Keyboard, AlertCircle, Eye,
   Activity, Bluetooth, Trash2, Sliders, KeySquare, Brain, Flag,
-  Package, BarChart2, Users, Gift, Smile, Award, Bell,
+  Package, BarChart2, Users, Gift, Smile, Award, Bell, Map, Target,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -48,6 +48,9 @@ const sections: Section[] = [
       { to: '/quick-fixes', label: 'Quick Fixes', icon: Zap },
       { to: '/tips', label: 'Tips & Tricks', icon: Lightbulb },
       { to: '/glossary', label: 'Glossary', icon: BookOpenCheck },
+      { to: '/wiki', label: 'Knowledge Base', icon: BookOpenCheck },
+      { to: '/concept-map', label: 'Concept Map', icon: Map },
+      { to: '/daily-lessons', label: 'Daily Lessons', icon: GraduationCap },
       { to: '/blog', label: 'Blog', icon: Newspaper },
       { to: '/news', label: 'News', icon: Rss },
       { to: '/webinars', label: 'Webinars', icon: GraduationCap },
@@ -67,6 +70,7 @@ const sections: Section[] = [
       { to: '/tools/phishing-scanner', label: 'Phishing Scanner', icon: ShieldAlert },
       { to: '/tools/backup-wizard', label: 'Backup Wizard', icon: HardDrive },
       { to: '/tools/troubleshooter', label: 'Interactive Troubleshooter', icon: HelpCircle },
+      { to: '/tools/troubleshooting', label: 'Fix Common Problems', icon: Zap },
       { to: '/tools/device-chooser', label: 'Device Chooser Quiz', icon: Laptop },
       { to: '/tools/device-compare', label: 'Device Comparison', icon: Laptop },
       { to: '/tools/device-health', label: 'Device Health Dashboard', icon: Activity },
@@ -98,6 +102,7 @@ const sections: Section[] = [
     icon: ShieldAlert,
     links: [
       { to: '/safety/scam-alerts', label: 'Scam Alerts', icon: ShieldAlert },
+      { to: '/tools/scam-simulator', label: 'Scam Spotter Practice', icon: Target },
       { to: '/tools/phishing-scanner', label: 'Phishing Scanner', icon: ShieldCheck },
       { to: '/tools/cyber-scorecard', label: 'Cyber Scorecard', icon: Lock },
       { to: '/tools/cyber-toolkit', label: 'Cyber Toolkit', icon: ShieldCheck },
@@ -124,7 +129,7 @@ const sections: Section[] = [
     links: [
       { to: '/about', label: 'About Us', icon: Info },
       { to: '/how-it-works', label: 'How It Works', icon: Lightbulb },
-      { to: '/pricing', label: 'Pricing', icon: CreditCard },
+      { to: '/accessibility', label: 'Accessibility', icon: Eye },
       { to: '/technicians', label: 'Our Technicians', icon: Phone },
       { to: '/roadmap', label: 'Roadmap', icon: BarChart2 },
     ],

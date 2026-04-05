@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
-import { CheckCircle2, ArrowRight, Calendar, MessageSquare, Mail, Phone, CreditCard } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Calendar, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -26,8 +26,8 @@ export default function PaymentSuccess() {
   return (
     <>
       <SEOHead
-        title="Payment Confirmed | TekSure"
-        description="Your deposit has been received. Your TekSure booking is confirmed."
+        title="Booking Confirmed | TekSure"
+        description="Your TekSure booking has been placed. A technician will be in touch with you soon."
         path="/payment/success"
       />
       <Navbar />
@@ -42,9 +42,9 @@ export default function PaymentSuccess() {
           </div>
 
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Deposit received!</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Booking confirmed!</h1>
             <p className="text-muted-foreground text-lg">
-              Your $15 deposit has been processed and your booking is confirmed.
+              Your request has been received and your booking is all set. We're glad you reached out for help.
             </p>
           </div>
 
@@ -65,19 +65,19 @@ export default function PaymentSuccess() {
               <div className="flex items-start gap-3 text-sm">
                 <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
-                  You'll receive a confirmation email with your booking details and payment receipt.
+                  You'll receive a confirmation email with your booking details. Keep an eye on your inbox.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
                 <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
-                  One of our technicians will call or message you to confirm the exact appointment time.
+                  One of our friendly technicians will call or message you to confirm the exact appointment time.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
-                <CreditCard className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
-                  Pay the remaining amount directly to your technician after the visit.
+                  On the day of your appointment, your technician will walk you through everything step by step.
                 </p>
               </div>
             </CardContent>

@@ -1,22 +1,21 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { UserPlus, Search, Wrench, CreditCard, ArrowRight, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
+import { UserPlus, Search, Wrench, Star } from 'lucide-react';
 
 const steps = [
-  { icon: UserPlus, title: 'Sign Up', desc: 'Create your free account in seconds. Choose whether you need help or want to provide it.', emoji: '👋' },
-  { icon: Search, title: 'Describe Your Issue', desc: 'Tell us about your tech problem. Select a category, choose remote or in-person, and add details.', emoji: '🔍' },
-  { icon: Wrench, title: 'Get Matched & Fixed', desc: 'We match you with verified technicians based on skills, location, and availability.', emoji: '🔧' },
-  { icon: CreditCard, title: 'Pay Securely', desc: 'Only pay when the job is done. Transparent pricing with no hidden fees. Leave a review.', emoji: '💳' },
+  { icon: UserPlus, title: 'Sign Up Free', desc: 'Create your free account with an email address. That is all you need to get started.' },
+  { icon: Search, title: 'Describe Your Issue', desc: 'Tell us about your tech problem. Select a category, choose remote or in-person, and add details.' },
+  { icon: Wrench, title: 'Get Matched & Fixed', desc: 'We match you with a verified technician based on skills, location, and availability — at no cost to you.' },
+  { icon: Star, title: 'Rate Your Experience', desc: 'After your issue is resolved, leave a review to help others in the community find great support.' },
 ];
 
 const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
-      title="How TekSure Works — Get Tech Help in 4 Simple Steps"
-      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      title="How TekSure Works — Free Tech Help in 3 Steps"
+      description="Getting tech support is free with TekSure. Sign up, describe your issue, and get matched with a verified technician — all at no cost."
       path="/how-it-works"
       jsonLd={{
         '@context': 'https://schema.org',
@@ -35,56 +34,40 @@ const HowItWorks = () => (
     <main className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
-        <div className="container py-16 md:py-24 text-center">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">How TekSure Works</h1>
-            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-              Getting tech support has never been easier. Four simple steps.
+        <div className="container py-20 text-center">
+          <div
+          >
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">How TekSure Works</h1>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Free tech support in four straightforward steps. No payment needed.
             </p>
           </div>
         </div>
       </section>
 
       {/* Steps */}
-      <section className="container py-16 md:py-24">
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-6">
-            {steps.map((step, i) => (
-              <div
-                key={step.title}
-                className="bento-card flex items-start gap-6 group"
-              >
-                <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <span className="text-2xl">{step.emoji}</span>
+      <section className="container py-20">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {steps.map((step, i) => (
+            <div
+              key={step.title}
+            >
+              <Card className="h-full rounded-2xl border border-border bg-card">
+                <CardContent className="pt-8 pb-8">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                      <step.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Step {i + 1}</span>
+                      <h3 className="font-semibold text-lg mt-2 mb-2">{step.title}</h3>
+                      <p className="text-muted-foreground text-sm">{step.desc}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wide">Step {i + 1}</span>
-                  <h3 className="font-semibold text-lg mt-1 mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="hero-gradient text-white">
-        <div className="container py-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Ready to get started?</h2>
-          <p className="text-white/80 mb-8 max-w-md mx-auto">
-            Get matched with a verified technician today.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
-              <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
-              <Link to="/book"><Phone className="h-4 w-4" /> Book a Session</Link>
-            </Button>
-          </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
         </div>
       </section>
     </main>

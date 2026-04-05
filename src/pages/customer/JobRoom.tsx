@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
-  ArrowLeft, Clock, Calendar, CreditCard, FileText,
+  ArrowLeft, Clock, Calendar, FileText,
   AlertCircle, Loader2, Phone, MessageSquare,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
-import { Separator } from '@/components/ui/separator';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
@@ -23,10 +21,8 @@ interface Booking {
   issue_type: string | null;
   description: string | null;
   status: string;
-  payment_status: string | null;
   preferred_date: string | null;
   preferred_time: string | null;
-  deposit_paid_at: string | null;
   created_at: string;
 }
 
@@ -42,24 +38,12 @@ const ISSUE_LABELS: Record<string, string> = {
   other: 'Other',
 };
 
-const PAYMENT_BADGES: Record<string, { label: string; className: string }> = {
-  pending: { label: 'Awaiting payment', className: 'bg-gray-100 text-gray-600 border-gray-200' },
-  paid: { label: 'Deposit paid', className: 'bg-green-100 text-green-700 border-green-200' },
-  refunded: { label: 'Refunded', className: 'bg-amber-100 text-amber-700 border-amber-200' },
-  failed: { label: 'Payment failed', className: 'bg-red-100 text-red-700 border-red-200' },
-};
-
 /** Build a simple timeline from the booking's current status */
 function deriveTimeline(booking: Booking) {
   const steps: { label: string; time: string | null; done: boolean }[] = [];
 
   // Created is always the first step
   steps.push({ label: 'Request created', time: booking.created_at, done: true });
-
-  // Deposit paid
-  if (booking.payment_status === 'paid' && booking.deposit_paid_at) {
-    steps.push({ label: 'Deposit paid', time: booking.deposit_paid_at, done: true });
-  }
 
   const statusOrder = ['pending', 'confirmed', 'in_progress', 'completed'];
   const statusLabels: Record<string, string> = {
@@ -76,7 +60,7 @@ function deriveTimeline(booking: Booking) {
     if (s === 'pending') continue; // Covered by "Request created"
     steps.push({
       label: statusLabels[s],
-      time: i <= currentIdx ? null : null, // We only have timestamps for created/deposit
+      time: i <= currentIdx ? null : null, // We only have a timestamp for created
       done: currentIdx >= i,
     });
   }
@@ -129,7 +113,7 @@ const CustomerJobRoom = () => {
 
     const { data, error: fetchError } = await (supabase as any)
       .from('bookings')
-      .select('id, user_id, name, email, issue_type, description, status, payment_status, preferred_date, preferred_time, deposit_paid_at, created_at')
+      .select('id, user_id, name, email, issue_type, description, status, preferred_date, preferred_time, created_at')
       .eq('id', id)
       .single();
 
@@ -195,7 +179,6 @@ const CustomerJobRoom = () => {
   // ---------- Main view ----------
   const timeline = deriveTimeline(booking);
   const issueLabel = ISSUE_LABELS[booking.issue_type ?? ''] ?? booking.issue_type ?? 'Support Request';
-  const paymentBadge = PAYMENT_BADGES[booking.payment_status ?? 'pending'] ?? PAYMENT_BADGES.pending;
 
   return (
     <div className="min-h-screen bg-background">
@@ -274,32 +257,11 @@ const CustomerJobRoom = () => {
                     </p>
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Payment</p>
-                    <Badge variant="secondary" className={`border font-medium ${paymentBadge.className}`}>
-                      <CreditCard className="h-3 w-3 mr-1" />
-                      {paymentBadge.label}
-                    </Badge>
-                  </div>
-                  <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Booking ID</p>
                     <p className="text-sm font-mono text-muted-foreground">{booking.id.slice(0, 8)}...</p>
                   </div>
                 </div>
 
-                {booking.payment_status !== 'paid' && booking.status !== 'cancelled' && (
-                  <>
-                    <Separator />
-                    <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
-                      <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
-                        Payment not yet received
-                      </p>
-                      <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
-                        A deposit of 15 dollars is required to confirm your booking.
-                        If you have already paid, it may take a moment to process.
-                      </p>
-                    </div>
-                  </>
-                )}
               </CardContent>
             </Card>
 

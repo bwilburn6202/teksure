@@ -28,7 +28,6 @@ interface Booking {
   issue_type: string;
   description: string | null;
   status: string;
-  payment_status: string | null;
   preferred_date: string | null;
   preferred_time: string | null;
   created_at: string;
@@ -86,7 +85,7 @@ const Dashboard = () => {
       setLoadingBookings(true);
       const { data, error } = await (supabase as any)
         .from('bookings')
-        .select('id, issue_type, description, status, payment_status, preferred_date, preferred_time, created_at')
+        .select('id, issue_type, description, status, preferred_date, preferred_time, created_at')
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
       if (!error && data) {

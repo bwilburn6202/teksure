@@ -32,6 +32,7 @@ export function Footer() {
         { to: '/pricing', label: 'Pricing' },
         { to: '/roadmap', label: 'Roadmap' },
         { to: '/technicians', label: 'Technicians' },
+        { to: '/accessibility', label: 'Accessibility' },
       ],
     },
   ];

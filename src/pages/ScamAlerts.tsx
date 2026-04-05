@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ShieldAlert, AlertTriangle, CheckCircle2, Baby } from 'lucide-react';
+import { ShieldAlert, AlertTriangle, CheckCircle2, Baby, Search, Phone, ExternalLink } from 'lucide-react';
 
 interface Scam {
   title: string;
@@ -23,7 +24,7 @@ const scams: Scam[] = [
     whatToDo: [
       'Hang up immediately — legitimate companies never cold-call about viruses',
       'Never give remote access to someone who calls you',
-      'Report the number to the FTC at ReportFraud.ftc.gov or 1-877-382-4357',
+      'Report the number to the FTC at ReportFraud.ftc.gov',
       'If you gave access, disconnect from the internet and run a full antivirus scan',
     ],
   },
@@ -53,7 +54,7 @@ const scams: Scam[] = [
     whatToDo: [
       'Never click links in texts claiming to be from your bank',
       'Call your bank directly using the number on your card',
-      'Forward scam texts to 7726 (UK) to report them',
+      'Forward scam texts to 7726 (SPAM) to report them',
       'Delete the message after reporting',
     ],
   },
@@ -244,6 +245,12 @@ const scams: Scam[] = [
 ];
 
 export default function ScamAlerts() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredScams = scams.filter((scam) =>
+    scam.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
       <SEOHead
@@ -271,9 +278,67 @@ export default function ScamAlerts() {
           </div>
         </section>
 
+        {/* Quick Red Flags Banner */}
+        <section className="border-b border-border bg-orange-50 dark:bg-orange-950/20 py-10 px-4">
+          <div className="container max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <ShieldAlert className="h-6 w-6 text-orange-600" />
+              <h2 className="text-2xl font-bold">Quick Red Flags — Signs of ANY Scam</h2>
+            </div>
+            <p className="text-muted-foreground mb-5">
+              No matter what type of scam it is, most share these warning signs. If you notice even one of these, stop and verify before doing anything else.
+            </p>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>Someone you don't know contacts you first</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>They want you to act right now — no time to think</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>They ask for payment by gift card, wire transfer, or cryptocurrency</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>They ask for remote access to your computer</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>They tell you not to tell anyone else</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm">
+                <AlertTriangle className="h-4 w-4 text-orange-500 shrink-0 mt-0.5" />
+                <span>The deal sounds too good to be true</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <div className="container max-w-4xl mx-auto px-4 py-20">
+          {/* Search Filter */}
+          <div className="mb-8">
+            <div className="relative max-w-md">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search scam types by name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full rounded-xl border border-border bg-background py-3 pl-10 pr-4 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+              />
+            </div>
+            {searchQuery && (
+              <p className="text-sm text-muted-foreground mt-2">
+                Showing {filteredScams.length} of {scams.length} scam types
+              </p>
+            )}
+          </div>
+
           <div className="grid gap-6 lg:grid-cols-2">
-            {scams.map((scam, idx) => (
+            {filteredScams.map((scam, idx) => (
               <div
                 key={scam.title}
               >
@@ -319,9 +384,77 @@ export default function ScamAlerts() {
             ))}
           </div>
 
-          <div
-            className="mt-12"
-          >
+          {/* What To Do If You've Been Scammed */}
+          <section className="mt-16">
+            <div className="flex items-center gap-3 mb-6">
+              <ShieldAlert className="h-6 w-6 text-red-600" />
+              <h2 className="text-2xl font-bold">What To Do If You've Been Scammed</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              If you think you've fallen for a scam, don't panic. Take these steps as soon as possible to protect yourself and help catch the scammers.
+            </p>
+            <div className="grid gap-4">
+              {[
+                { step: 1, text: 'Contact your bank or credit card company right away. They may be able to stop or reverse the transaction.' },
+                { step: 2, text: 'Change your passwords for any accounts that may be affected. Start with email, banking, and social media.' },
+                { step: 3, text: 'Report to the FTC at ReportFraud.ftc.gov. Your report helps investigators track down scammers.' },
+                { step: 4, text: 'File a report with the FBI\'s Internet Crime Complaint Center (IC3) at ic3.gov.' },
+                { step: 5, text: 'Contact the AARP Fraud Watch Helpline: 877-908-3360. It\'s free and available to anyone, not only AARP members.' },
+                { step: 6, text: 'If you gave remote access to your computer, disconnect from the internet right away and run a full antivirus scan.' },
+              ].map((item) => (
+                <Card key={item.step} className="rounded-xl border border-border bg-card">
+                  <CardContent className="py-4 flex items-start gap-4">
+                    <span className="flex items-center justify-center h-8 w-8 rounded-full bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 font-bold text-sm shrink-0">
+                      {item.step}
+                    </span>
+                    <p className="text-sm text-muted-foreground leading-relaxed pt-1">{item.text}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Helplines */}
+          <section className="mt-16">
+            <Card className="rounded-2xl border-2 border-primary/30 bg-primary/5">
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-lg">Helplines &amp; Reporting Resources</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-2">
+                <p className="text-sm text-muted-foreground mb-4">
+                  Save these numbers and websites. If something feels wrong, reach out — these services are free.
+                </p>
+                <ul className="grid gap-3 sm:grid-cols-2">
+                  <li className="flex items-start gap-2 text-sm">
+                    <Phone className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                    <span><strong>FTC:</strong> 877-382-4357</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <Phone className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                    <span><strong>AARP Fraud Watch:</strong> 877-908-3360</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <ExternalLink className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                    <span><strong>FBI IC3:</strong>{' '}
+                      <a href="https://www.ic3.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">ic3.gov</a>
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <ExternalLink className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Identity Theft:</strong>{' '}
+                      <a href="https://www.identitytheft.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">IdentityTheft.gov</a>
+                    </span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Parental Controls Link */}
+          <div className="mt-12">
             <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="py-6 flex items-start gap-4">
                 <Baby className="h-6 w-6 text-primary shrink-0 mt-1" />

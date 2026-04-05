@@ -1,114 +1,212 @@
-import { useRef, useEffect, useState, useCallback } from 'react';
-import { Map, RefreshCw } from 'lucide-react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Search } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 // ─── Types & Data ─────────────────────────────────────────────────────────────
 
-type Group = 'core' | 'guides' | 'tools' | 'community' | 'infra' | 'revenue' | 'ai';
+type Category =
+  | 'Getting Started'
+  | 'Staying Safe'
+  | 'Communication'
+  | 'Entertainment & Services'
+  | 'Your Devices';
 
-interface MapNode {
+interface TopicNode {
   id: string;
   label: string;
-  group: Group;
-  fx: number;
-  fy: number;
-  r?: number;
-  desc: string;
-  href?: string;
-  hub?: boolean;
+  description: string;
+  category: Category;
+  emoji: string;
+  href: string;
 }
 
-const GROUP_META: Record<Group, { color: string; border: string; text: string; label: string }> = {
-  core:      { color: '#534AB7', border: '#3C3489', text: '#fff', label: 'Platform core' },
-  guides:    { color: '#0F6E56', border: '#085041', text: '#fff', label: 'Guide categories' },
-  tools:     { color: '#993C1D', border: '#712B13', text: '#fff', label: 'User tools' },
-  community: { color: '#993556', border: '#72243E', text: '#fff', label: 'Community' },
-  infra:     { color: '#185FA5', border: '#0C447C', text: '#fff', label: 'Infrastructure' },
-  revenue:   { color: '#3B6D11', border: '#27500A', text: '#fff', label: 'Revenue' },
-  ai:        { color: '#854F0B', border: '#633806', text: '#fff', label: 'AI features' },
+const CATEGORY_STYLES: Record<Category, { bg: string; text: string; border: string; ring: string }> = {
+  'Getting Started':          { bg: 'bg-blue-100',   text: 'text-blue-800',   border: 'border-blue-200',   ring: 'ring-blue-400' },
+  'Staying Safe':             { bg: 'bg-red-100',    text: 'text-red-800',    border: 'border-red-200',    ring: 'ring-red-400' },
+  'Communication':            { bg: 'bg-green-100',  text: 'text-green-800',  border: 'border-green-200',  ring: 'ring-green-400' },
+  'Entertainment & Services': { bg: 'bg-purple-100', text: 'text-purple-800', border: 'border-purple-200', ring: 'ring-purple-400' },
+  'Your Devices':             { bg: 'bg-amber-100',  text: 'text-amber-800',  border: 'border-amber-200',  ring: 'ring-amber-400' },
 };
 
-const NODES: MapNode[] = [
-  { id: 'teksure',   label: 'TekSure.com',      group: 'core',      fx: 0.50, fy: 0.50, r: 42, hub: true,
-    desc: 'Tech support & digital literacy platform for everyday users', href: '/' },
-  { id: 'guides',    label: 'Guides',            group: 'guides',    fx: 0.20, fy: 0.50, r: 28,
-    desc: '9 guide categories — Windows, Mac, Safety, AI and more', href: '/guides' },
-  { id: 'g-win',     label: 'Windows',           group: 'guides',    fx: 0.05, fy: 0.22, r: 19,
-    desc: '52 Windows guides from beginner to advanced', href: '/guides?category=windows-guides' },
-  { id: 'g-mac',     label: 'Mac',               group: 'guides',    fx: 0.17, fy: 0.12, r: 19,
-    desc: 'macOS guides for all skill levels', href: '/guides?category=mac-guides' },
-  { id: 'g-safe',    label: 'Safety & Privacy',  group: 'guides',    fx: 0.05, fy: 0.75, r: 19,
-    desc: 'Passwords, phishing, account security', href: '/guides?category=safety-guides' },
-  { id: 'g-ai',      label: 'AI Guides',         group: 'guides',    fx: 0.17, fy: 0.86, r: 19,
-    desc: 'ChatGPT, Copilot, voice assistants', href: '/guides?category=ai-guides' },
-  { id: 'g-ess',     label: 'Essential Skills',  group: 'guides',    fx: 0.04, fy: 0.48, r: 19,
-    desc: 'Email, files, browsers, updates', href: '/guides?category=essential-skills' },
-  { id: 'g-app',     label: 'Apps & Services',   group: 'guides',    fx: 0.13, fy: 0.65, r: 19,
-    desc: 'Zoom, streaming, social media walkthroughs', href: '/guides?category=app-guides' },
-  { id: 'g-how',     label: 'How-To',            group: 'guides',    fx: 0.13, fy: 0.35, r: 19,
-    desc: 'Step-by-step everyday device tasks', href: '/guides?category=how-to' },
-  { id: 'g-hlth',    label: 'Health Tech',       group: 'guides',    fx: 0.04, fy: 0.62, r: 19,
-    desc: 'Telehealth, fitness trackers, patient portals', href: '/guides?category=health-tech' },
-  { id: 'g-tips',    label: 'Tips & Tricks',     group: 'guides',    fx: 0.05, fy: 0.35, r: 19,
-    desc: 'Shortcuts and productivity hacks', href: '/guides?category=tips-tricks' },
-  { id: 'tools',     label: 'Tools',             group: 'tools',     fx: 0.78, fy: 0.33, r: 28,
-    desc: 'Interactive tools that solve specific problems', href: '/tools' },
-  { id: 't-app',     label: 'App Recommender',   group: 'tools',     fx: 0.93, fy: 0.12, r: 19,
-    desc: 'Suggests apps based on your needs', href: '/tools/app-recommender' },
-  { id: 't-war',     label: 'Warranty Checker',  group: 'tools',     fx: 0.93, fy: 0.28, r: 19,
-    desc: 'Look up warranty status for devices', href: '/tools/warranty-checker' },
-  { id: 't-bak',     label: 'Backup Wizard',     group: 'tools',     fx: 0.93, fy: 0.44, r: 19,
-    desc: 'Guided backup setup for photos and files', href: '/tools/backup-wizard' },
-  { id: 't-trbl',    label: 'Troubleshooter',    group: 'tools',     fx: 0.78, fy: 0.14, r: 19,
-    desc: 'Diagnose and fix common tech problems', href: '/tools/troubleshooter' },
-  { id: 't-setup',   label: 'Setup Wizard',      group: 'tools',     fx: 0.64, fy: 0.12, r: 19,
-    desc: 'Guided device setup for new users', href: '/setup' },
-  { id: 't-pass',    label: 'Password Strength', group: 'tools',     fx: 0.93, fy: 0.60, r: 19,
-    desc: 'Check how strong your passwords are', href: '/tools/password-strength' },
-  { id: 'community', label: 'Community',         group: 'community', fx: 0.73, fy: 0.72, r: 24,
-    desc: 'Forums, peer help, and booking', href: '/forum' },
-  { id: 'c-forum',   label: 'Forum',             group: 'community', fx: 0.88, fy: 0.80, r: 19,
-    desc: 'Community Q&A threads and replies', href: '/forum' },
-  { id: 'c-book',    label: 'Book a Tech',       group: 'community', fx: 0.88, fy: 0.65, r: 19,
-    desc: 'Schedule appointments with real technicians', href: '/book' },
-  { id: 'tekbot',    label: 'TekBot AI',         group: 'ai',        fx: 0.50, fy: 0.24, r: 24,
-    desc: 'Context-aware AI assistant — answers questions and links to guides' },
-  { id: 'revenue',   label: 'Revenue',           group: 'revenue',   fx: 0.50, fy: 0.79, r: 24,
-    desc: 'Stripe payments, premium access, affiliate links' },
-  { id: 'r-stripe',  label: 'Stripe Payments',   group: 'revenue',   fx: 0.37, fy: 0.92, r: 19,
-    desc: 'Booking and premium payments via Stripe' },
-  { id: 'r-prem',    label: 'Premium Access',    group: 'revenue',   fx: 0.51, fy: 0.94, r: 19,
-    desc: 'Gated content and pro tools tier', href: '/pricing' },
-  { id: 'r-aff',     label: 'Affiliate Links',   group: 'revenue',   fx: 0.65, fy: 0.92, r: 19,
-    desc: 'Monetized product recommendations in guides' },
-  { id: 'infra',     label: 'Infrastructure',    group: 'infra',     fx: 0.35, fy: 0.24, r: 24,
-    desc: 'Supabase auth, database, Edge Functions, Resend email' },
-  { id: 'i-auth',    label: 'Auth & Profiles',   group: 'infra',     fx: 0.21, fy: 0.14, r: 19,
-    desc: 'Supabase Auth — sign up, login, user profiles' },
-  { id: 'i-db',      label: 'Database',          group: 'infra',     fx: 0.35, fy: 0.11, r: 19,
-    desc: 'Supabase Postgres — bookings, forum, profiles' },
-  { id: 'i-email',   label: 'Email (Resend)',     group: 'infra',     fx: 0.22, fy: 0.31, r: 19,
-    desc: 'Transactional emails for bookings and confirmations' },
-  { id: 'admin',     label: 'Admin Dashboard',   group: 'infra',     fx: 0.65, fy: 0.88, r: 19,
-    desc: 'Manage bookings, users, content, and analytics', href: '/admin' },
+const CATEGORY_HEADER_STYLES: Record<Category, { bg: string; text: string }> = {
+  'Getting Started':          { bg: 'bg-blue-200',   text: 'text-blue-900' },
+  'Staying Safe':             { bg: 'bg-red-200',    text: 'text-red-900' },
+  'Communication':            { bg: 'bg-green-200',  text: 'text-green-900' },
+  'Entertainment & Services': { bg: 'bg-purple-200', text: 'text-purple-900' },
+  'Your Devices':             { bg: 'bg-amber-200',  text: 'text-amber-900' },
+};
+
+const TOPICS: TopicNode[] = [
+  // Getting Started
+  { id: 'wifi',       label: 'Wi-Fi',           description: 'How to connect to the internet at home or on the go',               category: 'Getting Started', emoji: '📶', href: '/wiki/wifi' },
+  { id: 'passwords',  label: 'Passwords',       description: 'Creating and remembering strong passwords that keep you safe',       category: 'Getting Started', emoji: '🔑', href: '/wiki/passwords' },
+  { id: 'email',      label: 'Email',           description: 'Sending, receiving, and organizing your messages',                   category: 'Getting Started', emoji: '📧', href: '/wiki/email' },
+  { id: 'apps',       label: 'Apps',            description: 'Finding, installing, and using apps on your phone or tablet',        category: 'Getting Started', emoji: '📱', href: '/wiki/apps' },
+  { id: 'updates',    label: 'Software Updates', description: 'Why updates matter and how to install them',                        category: 'Getting Started', emoji: '🔄', href: '/guides?category=essential-skills' },
+
+  // Staying Safe
+  { id: 'scams',      label: 'Scams',           description: 'How to spot and avoid phone, email, and online scams',               category: 'Staying Safe', emoji: '🚨', href: '/wiki/scam-prevention' },
+  { id: 'privacy',    label: 'Privacy',         description: 'Controlling who can see your personal information online',            category: 'Staying Safe', emoji: '🔒', href: '/wiki/privacy' },
+  { id: 'shopping',   label: 'Online Shopping',  description: 'How to buy things online without getting tricked',                  category: 'Staying Safe', emoji: '🛒', href: '/guides?category=safety-guides' },
+  { id: 'phishing',   label: 'Phishing',        description: 'Fake emails and messages that try to steal your information',         category: 'Staying Safe', emoji: '🎣', href: '/wiki/phishing' },
+
+  // Communication
+  { id: 'calls',      label: 'Phone Calls',     description: 'Making and receiving calls, including Wi-Fi calling',                 category: 'Communication', emoji: '📞', href: '/guides?category=essential-skills' },
+  { id: 'video',      label: 'Video Calling',   description: 'Seeing family and friends face-to-face with Zoom, FaceTime, and more', category: 'Communication', emoji: '🎥', href: '/wiki/video-calling' },
+  { id: 'texting',    label: 'Texting',          description: 'Sending text messages, photos, and emojis',                         category: 'Communication', emoji: '💬', href: '/guides?category=essential-skills' },
+  { id: 'facebook',   label: 'Facebook',         description: 'Staying connected with friends and family on social media',         category: 'Communication', emoji: '👥', href: '/wiki/facebook' },
+
+  // Entertainment & Services
+  { id: 'youtube',    label: 'YouTube',          description: 'Watching free videos, tutorials, and shows',                        category: 'Entertainment & Services', emoji: '▶️', href: '/wiki/youtube' },
+  { id: 'netflix',    label: 'Netflix',          description: 'Streaming movies and TV shows on any device',                       category: 'Entertainment & Services', emoji: '🎬', href: '/guides?category=app-guides' },
+  { id: 'banking',    label: 'Online Banking',   description: 'Checking your accounts and paying bills from home',                 category: 'Entertainment & Services', emoji: '🏦', href: '/guides?category=essential-skills' },
+  { id: 'maps',       label: 'Maps & Directions', description: 'Getting directions and finding nearby places',                    category: 'Entertainment & Services', emoji: '🗺️', href: '/wiki/google' },
+  { id: 'google',     label: 'Google',           description: 'Searching the web and using Google services',                       category: 'Entertainment & Services', emoji: '🔍', href: '/wiki/google' },
+  { id: 'telehealth', label: 'Telehealth',       description: 'Visiting your doctor through video from home',                     category: 'Entertainment & Services', emoji: '🩺', href: '/guides?category=health-tech' },
+
+  // Your Devices
+  { id: 'iphone',     label: 'iPhone',           description: 'Getting the most out of your Apple phone',                         category: 'Your Devices', emoji: '🍎', href: '/wiki/apple' },
+  { id: 'android',    label: 'Android',          description: 'Using Samsung, Google Pixel, and other Android phones',             category: 'Your Devices', emoji: '🤖', href: '/wiki/android' },
+  { id: 'windows',    label: 'Windows',          description: 'Your Windows computer — files, settings, and troubleshooting',      category: 'Your Devices', emoji: '🪟', href: '/wiki/windows' },
+  { id: 'mac',        label: 'Mac',              description: 'Using your Apple computer with confidence',                         category: 'Your Devices', emoji: '💻', href: '/wiki/apple' },
+  { id: 'cloud',      label: 'Cloud Storage',    description: 'Saving your photos and files so they are never lost',               category: 'Your Devices', emoji: '☁️', href: '/wiki/cloud-storage' },
+  { id: 'smarthome',  label: 'Smart Home',       description: 'Voice assistants, smart lights, and connected devices',             category: 'Your Devices', emoji: '🏠', href: '/wiki/smart-home' },
 ];
 
-const EDGES: [string, string][] = [
-  ['teksure','guides'], ['teksure','tools'], ['teksure','community'],
-  ['teksure','tekbot'], ['teksure','revenue'], ['teksure','infra'], ['teksure','admin'],
-  ['guides','g-win'], ['guides','g-mac'], ['guides','g-safe'], ['guides','g-ai'],
-  ['guides','g-ess'], ['guides','g-app'], ['guides','g-how'], ['guides','g-hlth'], ['guides','g-tips'],
-  ['tools','t-app'], ['tools','t-war'], ['tools','t-bak'], ['tools','t-trbl'], ['tools','t-setup'], ['tools','t-pass'],
-  ['community','c-forum'], ['community','c-book'],
-  ['revenue','r-stripe'], ['revenue','r-prem'], ['revenue','r-aff'],
-  ['infra','i-auth'], ['infra','i-db'], ['infra','i-email'],
-  ['tekbot','guides'], ['tekbot','tools'],
-  ['c-book','revenue'],
+const CATEGORY_ORDER: Category[] = [
+  'Getting Started',
+  'Staying Safe',
+  'Communication',
+  'Entertainment & Services',
+  'Your Devices',
 ];
 
-const CW = 800, CH = 580;
+// ─── Component ────────────────────────────────────────────────────────────────
+
+export default function ConceptMap() {
+  const [search, setSearch] = useState('');
+
+  const filteredTopics = useMemo(() => {
+    if (!search.trim()) return TOPICS;
+    const q = search.toLowerCase().trim();
+    return TOPICS.filter(
+      (t) =>
+        t.label.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q) ||
+        t.category.toLowerCase().includes(q)
+    );
+  }, [search]);
+
+  const groupedTopics = useMemo(() => {
+    const groups: Record<Category, TopicNode[]> = {
+      'Getting Started': [],
+      'Staying Safe': [],
+      'Communication': [],
+      'Entertainment & Services': [],
+      'Your Devices': [],
+    };
+    for (const topic of filteredTopics) {
+      groups[topic.category].push(topic);
+    }
+    return groups;
+  }, [filteredTopics]);
+
+  return (
+    <>
+      <SEOHead
+        title="How Technology Connects — TekSure"
+        description="An interactive map of everyday technology topics for seniors. Tap any topic to learn more — everything connects."
+      />
+      <Navbar />
+
+      <main className="min-h-screen bg-gray-50">
+        {/* Hero */}
+        <section className="bg-white border-b border-gray-200 py-10 md:py-14">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              How Technology Connects
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Tap any topic to learn more. Everything connects — understanding one thing helps you understand the next.
+            </p>
+          </div>
+        </section>
+
+        {/* Search */}
+        <section className="max-w-4xl mx-auto px-4 py-6">
+          <div className="relative max-w-md mx-auto">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search topics..."
+              aria-label="Search technology topics"
+              className="w-full pl-12 pr-4 py-3 text-lg rounded-xl border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+            />
+          </div>
+          {search.trim() && filteredTopics.length === 0 && (
+            <p className="text-center text-gray-500 mt-4 text-lg">
+              No topics match your search. Try a different word.
+            </p>
+          )}
+        </section>
+
+        {/* Topic Groups */}
+        <section className="max-w-5xl mx-auto px-4 pb-16 space-y-8">
+          {CATEGORY_ORDER.map((category) => {
+            const topics = groupedTopics[category];
+            if (topics.length === 0) return null;
+
+            const styles = CATEGORY_STYLES[category];
+            const headerStyles = CATEGORY_HEADER_STYLES[category];
+
+            return (
+              <div
+                key={category}
+                className={`rounded-2xl border-2 ${styles.border} overflow-hidden`}
+              >
+                {/* Category header */}
+                <div className={`${headerStyles.bg} ${headerStyles.text} px-6 py-4`}>
+                  <h2 className="text-xl md:text-2xl font-bold">{category}</h2>
+                </div>
+
+                {/* Topic cards grid */}
+                <div className={`${styles.bg} p-4 md:p-6`}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {topics.map((topic) => (
+                      <Link
+                        key={topic.id}
+                        to={topic.href}
+                        className={`group block rounded-xl border-2 ${styles.border} bg-white p-5 shadow-sm transition-all duration-150 hover:shadow-md hover:scale-[1.02] focus:outline-none focus:ring-2 ${styles.ring} focus:ring-offset-2`}
+                      >
+                        <div className="flex items-start gap-3">
+                          <span className="text-3xl leading-none flex-shrink-0" aria-hidden="true">
+                            {topic.emoji}
+                          </span>
+                          <div className="min-w-0">
+                            <h3 className={`text-lg font-semibold ${styles.text} group-hover:underline`}>
+                              {topic.label}
+                            </h3>
+                            <p className="text-gray-600 text-base mt-1 leading-snug">
+                              {topic.description}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}

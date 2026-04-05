@@ -11,6 +11,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
+import { BackToTop } from '@/components/BackToTop';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -376,7 +377,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
+            <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -404,9 +405,20 @@ const GuideDetail = () => {
               <StarRating guideSlug={guide.slug} readOnly size="sm" />
             </div>
 
+            {/* Print-only header: shows TekSure URL at the top of printed page */}
+            <div className="hidden print:block text-sm text-gray-500 mb-2">
+              Printed from TekSure.com &mdash; teksure.com/guides/{guide.slug}
+            </div>
+
             <div className="flex flex-wrap gap-2 mt-5">
-              <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={() => window.print()}>
-                <Printer className="h-4 w-4" /> Print Guide
+              <Button
+                variant="outline"
+                size="lg"
+                className="gap-2 no-print min-h-[48px] text-base font-semibold px-6"
+                onClick={() => window.print()}
+                aria-label="Print this guide"
+              >
+                <Printer className="h-5 w-5" /> Print this Guide
               </Button>
               <ListenButton guide={guide} />
             </div>
@@ -467,6 +479,13 @@ const GuideDetail = () => {
                           <div className="text-base text-muted-foreground leading-relaxed">
                             <StepContent text={step.content} />
                           </div>
+
+                          {step.whyItWorks && (
+                            <div className="mt-3 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/40 px-4 py-3">
+                              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-1">Why this works</p>
+                              <p className="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">{step.whyItWorks}</p>
+                            </div>
+                          )}
 
                           {step.screenshotUrl && (
                             <StepScreenshot
@@ -606,7 +625,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
+                        <img src={getGuideThumbnailSmall(g)} alt={g.title} className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
@@ -620,6 +639,7 @@ const GuideDetail = () => {
         </div>
       </article>
 
+      <BackToTop />
       <Footer />
     </div>
   );

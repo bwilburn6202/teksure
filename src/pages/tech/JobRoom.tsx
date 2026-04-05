@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, CheckCircle, XCircle, Play, Clock, Calendar,
-  CreditCard, FileText, AlertCircle, Loader2, User, Phone,
+  FileText, AlertCircle, Loader2, User, Phone,
   MessageSquare, StickyNote,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -31,10 +30,8 @@ interface Booking {
   issue_type: string | null;
   description: string | null;
   status: string;
-  payment_status: string | null;
   preferred_date: string | null;
   preferred_time: string | null;
-  deposit_paid_at: string | null;
   created_at: string;
 }
 
@@ -48,13 +45,6 @@ const ISSUE_LABELS: Record<string, string> = {
   phone: 'Phone / Tablet',
   general: 'General Help',
   other: 'Other',
-};
-
-const PAYMENT_BADGES: Record<string, { label: string; className: string }> = {
-  pending: { label: 'Unpaid', className: 'bg-gray-100 text-gray-600 border-gray-200' },
-  paid: { label: 'Deposit Paid', className: 'bg-green-100 text-green-700 border-green-200' },
-  refunded: { label: 'Refunded', className: 'bg-amber-100 text-amber-700 border-amber-200' },
-  failed: { label: 'Failed', className: 'bg-red-100 text-red-700 border-red-200' },
 };
 
 function formatDate(iso: string | null) {
@@ -87,7 +77,7 @@ const TechJobRoom = () => {
 
     const { data, error: fetchError } = await (supabase as any)
       .from('bookings')
-      .select('id, user_id, tech_id, name, email, phone, issue_type, description, status, payment_status, preferred_date, preferred_time, deposit_paid_at, created_at')
+      .select('id, user_id, tech_id, name, email, phone, issue_type, description, status, preferred_date, preferred_time, created_at')
       .eq('id', id)
       .single();
 
@@ -170,7 +160,6 @@ const TechJobRoom = () => {
 
   // ---------- Main view ----------
   const issueLabel = ISSUE_LABELS[booking.issue_type ?? ''] ?? booking.issue_type ?? 'Support Request';
-  const paymentBadge = PAYMENT_BADGES[booking.payment_status ?? 'pending'] ?? PAYMENT_BADGES.pending;
   const status = booking.status;
 
   return (
@@ -267,14 +256,6 @@ const TechJobRoom = () => {
                   <p className="text-sm">{booking.phone}</p>
                 </div>
               )}
-              <Separator />
-              <div>
-                <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Payment</p>
-                <Badge variant="secondary" className={`border font-medium ${paymentBadge.className}`}>
-                  <CreditCard className="h-3 w-3 mr-1" />
-                  {paymentBadge.label}
-                </Badge>
-              </div>
             </CardContent>
           </Card>
 

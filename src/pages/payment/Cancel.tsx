@@ -1,5 +1,5 @@
-import { useSearchParams, Link } from 'react-router-dom';
-import { XCircle, ArrowLeft, RefreshCcw, RotateCcw, DollarSign } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { AlertCircle, ArrowLeft, RefreshCcw, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -7,14 +7,11 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 export default function PaymentCancel() {
-  const [searchParams] = useSearchParams();
-  const bookingId = searchParams.get('booking_id') ?? '';
-
   return (
     <>
       <SEOHead
-        title="Payment Cancelled | TekSure"
-        description="Your payment was cancelled. Your booking details are still saved — you can try again."
+        title="Something Went Wrong | TekSure"
+        description="There was a problem with your booking. You can try again or contact us for help."
         path="/payment/cancel"
       />
       <Navbar />
@@ -24,30 +21,33 @@ export default function PaymentCancel() {
 
           <div className="flex justify-center">
             <div className="h-24 w-24 rounded-full bg-orange-100 flex items-center justify-center">
-              <XCircle className="h-12 w-12 text-orange-500" />
+              <AlertCircle className="h-12 w-12 text-orange-500" />
             </div>
           </div>
 
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Payment cancelled</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">
+              Something went wrong
+            </h1>
             <p className="text-muted-foreground text-lg">
-              No worries — your booking details are saved and no charge was made.
+              We weren't able to complete your booking this time. Don't worry — nothing has been
+              lost, and you can try again whenever you're ready.
             </p>
           </div>
 
           <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="p-5 text-left space-y-3">
-              <p className="font-semibold text-sm mb-2">What would you like to do?</p>
+              <p className="font-semibold text-sm mb-2">Here's what you can do</p>
               <div className="flex items-start gap-3 text-sm">
-                <RotateCcw className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <RefreshCcw className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
-                  Try the deposit payment again — your booking is still valid.
+                  Go back to the booking page and try again. Your information may still be saved.
                 </p>
               </div>
               <div className="flex items-start gap-3 text-sm">
-                <DollarSign className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
-                  Or choose "Pay on the day" to complete your booking for free.
+                  If this keeps happening, reach out to us and we'll help you get it sorted out.
                 </p>
               </div>
             </CardContent>
@@ -69,10 +69,11 @@ export default function PaymentCancel() {
           </div>
 
           <p className="text-xs text-muted-foreground">
-            Need help?{' '}
+            Need help? Email{' '}
             <a href="mailto:hello@teksure.com" className="text-primary hover:underline">
               hello@teksure.com
-            </a>
+            </a>{' '}
+            and we'll be happy to assist you.
           </p>
         </div>
       </main>

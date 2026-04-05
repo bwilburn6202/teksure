@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Wrench, CheckCircle2, Clock, DollarSign, Loader2,
+  Wrench, CheckCircle2, Clock, Loader2,
   Calendar, User, AlertCircle, Inbox,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -29,19 +29,8 @@ interface Booking {
   preferred_date: string | null;
   preferred_time: string | null;
   status: string;
-  payment_status: string | null;
-  deposit_paid_at: string | null;
   created_at: string;
 }
-
-const DEPOSIT_AMOUNT = 15;
-
-const paymentBadge: Record<string, { label: string; className: string }> = {
-  pending:   { label: 'Unpaid',   className: 'bg-gray-100 text-gray-600 border-gray-200' },
-  paid:      { label: 'Deposit Paid', className: 'bg-green-100 text-green-700 border-green-200' },
-  refunded:  { label: 'Refunded', className: 'bg-amber-100 text-amber-700 border-amber-200' },
-  failed:    { label: 'Failed',   className: 'bg-red-100 text-red-700 border-red-200' },
-};
 
 function formatDate(iso: string | null) {
   if (!iso) return 'Not set';
@@ -103,14 +92,10 @@ const TechDashboard = () => {
   const pendingBookings = bookings.filter(b => b.status === 'pending' || b.status === 'offered');
   const activeBookings = bookings.filter(b => b.status === 'confirmed' || b.status === 'accepted' || b.status === 'in_progress');
   const completedBookings = bookings.filter(b => b.status === 'completed');
-  const paidBookings = bookings.filter(b => b.payment_status === 'paid');
-  const totalEarnings = paidBookings.length * DEPOSIT_AMOUNT;
-
   const stats = [
     { icon: Inbox, label: 'Pending Jobs', value: pendingBookings.length, color: 'text-amber-500', bg: 'bg-amber-50 dark:bg-amber-950/30' },
     { icon: Wrench, label: 'Active Jobs', value: activeBookings.length, color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-950/30' },
     { icon: CheckCircle2, label: 'Completed', value: completedBookings.length, color: 'text-green-500', bg: 'bg-green-50 dark:bg-green-950/30' },
-    { icon: DollarSign, label: 'Earnings', value: `$${totalEarnings}`, color: 'text-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-950/30' },
   ];
 
   if (loading) {
@@ -128,7 +113,7 @@ const TechDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead title="Tech Dashboard | TekSure" description="Manage your jobs, availability, and earnings." path="/tech" />
+      <SEOHead title="Tech Dashboard | TekSure" description="Manage your jobs and availability." path="/tech" />
       <Navbar />
 
       <div className="container py-8 space-y-8">
@@ -139,7 +124,7 @@ const TechDashboard = () => {
               {getGreeting()}, {user?.fullName || 'Technician'}
             </h1>
             <p className="text-muted-foreground mt-1">
-              Manage your job offers, active bookings, and earnings
+              Manage your job offers and active bookings
             </p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
@@ -152,7 +137,7 @@ const TechDashboard = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {stats.map(stat => (
             <Card key={stat.label} className="rounded-2xl border border-border bg-card">
               <CardContent className="flex items-center gap-3 py-5 px-4">
@@ -271,8 +256,6 @@ function BookingCard({
   showAccept?: boolean;
   showComplete?: boolean;
 }) {
-  const payment = paymentBadge[booking.payment_status || 'pending'] || paymentBadge.pending;
-
   return (
     <Card className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
       <CardContent className="py-5 px-5">
@@ -282,9 +265,6 @@ function BookingCard({
             <div className="flex flex-wrap items-center gap-2">
               <span className="font-semibold text-base">{booking.name}</span>
               <StatusBadge status={booking.status} />
-              <Badge variant="outline" className={`text-xs border ${payment.className}`}>
-                {payment.label}
-              </Badge>
             </div>
 
             {booking.issue_type && (

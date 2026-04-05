@@ -1,10 +1,11 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
-  MessageCircle, Zap, Users, Star
+  Sparkles, Bot, BookOpen, ChevronRight, Clock,
+  Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
+  Smartphone, Share2, BrainCircuit, MessageSquare, AlertTriangle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,30 +22,31 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
   'ai-guides': Bot,
+  'ai-advanced': BrainCircuit,
   'how-to': BookOpen,
   'safety-guides': Shield,
   'app-guides': Phone,
   'health-tech': Heart,
+  'phone-guides': Smartphone,
+  'social-media': Share2,
 };
 
-const categoryColors: Record<string, string> = {
-  'windows-guides': 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300',
-  'mac-guides': 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
-  'essential-skills': 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300',
-  'tips-tricks': 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300',
-  'ai-guides': 'bg-cyan-50 text-cyan-700 dark:bg-cyan-950/40 dark:text-cyan-300',
-  'safety-guides': 'bg-red-50 text-red-700 dark:bg-red-950/40 dark:text-red-300',
-  'app-guides': 'bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-300',
-  'health-tech': 'bg-pink-50 text-pink-700 dark:bg-pink-950/40 dark:text-pink-300',
-};
+const topicPills = [
+  { label: 'WiFi Issues', query: 'wifi' },
+  { label: 'Slow Computer', query: 'slow' },
+  { label: 'Virus Alert', query: 'virus' },
+  { label: 'Printer Help', query: 'printer' },
+  { label: 'Passwords', query: 'password' },
+  { label: 'Phone Setup', query: 'phone' },
+];
 
-const problemCards = [
-  { label: 'WiFi Not Working', query: 'wifi', icon: '📶', color: 'from-blue-500/10 to-blue-500/5 border-blue-200/50 dark:border-blue-800/50' },
-  { label: 'Computer Is Slow', query: 'slow', icon: '🐌', color: 'from-amber-500/10 to-amber-500/5 border-amber-200/50 dark:border-amber-800/50' },
-  { label: 'Virus or Pop-up', query: 'virus', icon: '⚠️', color: 'from-red-500/10 to-red-500/5 border-red-200/50 dark:border-red-800/50' },
-  { label: 'Printer Help', query: 'printer', icon: '🖨️', color: 'from-gray-500/10 to-gray-500/5 border-gray-200/50 dark:border-gray-700/50' },
-  { label: 'Forgot Password', query: 'password', icon: '🔑', color: 'from-green-500/10 to-green-500/5 border-green-200/50 dark:border-green-800/50' },
-  { label: 'Phone Storage Full', query: 'storage', icon: '📱', color: 'from-purple-500/10 to-purple-500/5 border-purple-200/50 dark:border-purple-800/50' },
+const quickFixes = [
+  { problem: "Computer Won't Turn On", fix: "Check power cable and outlet first", slug: 'turn-pc-on-and-off', icon: Monitor },
+  { problem: "Everything is Slow", fix: "Restart your device — fixes 80% of slowdowns", slug: 'restart-pc-windows', icon: Sparkles },
+  { problem: "WiFi Not Working", fix: "Unplug your router for 30 seconds", slug: 'connect-wifi-windows', icon: Shield },
+  { problem: "Printer Won't Print", fix: "Check it's set as default printer", slug: 'fix-printer-windows', icon: Wrench },
+  { problem: "Forgot Password", fix: "Use 'Forgot Password' on the login page", slug: 'manage-passwords-windows', icon: Shield },
+  { problem: "Phone Storage Full", fix: "Delete unused apps and clear cache", slug: 'manage-storage-windows', icon: Phone },
 ];
 
 function NewsletterSignup() {
@@ -69,7 +71,7 @@ function NewsletterSignup() {
     return (
       <div className="flex flex-col items-center gap-2 py-2">
         <CheckCircle className="h-5 w-5 text-teksure-success" />
-        <p className="text-sm font-medium">You're in! Expect one friendly email each week.</p>
+        <p className="text-sm font-medium">You're in! Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.</p>
       </div>
     );
   }
@@ -100,25 +102,6 @@ function NewsletterSignup() {
   );
 }
 
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { el.classList.add('visible'); observer.unobserve(el); } },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-  return ref;
-}
-
-function RevealSection({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  const ref = useReveal();
-  return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
-}
 
 const Index = () => {
   const [search, setSearch] = useState('');
@@ -142,16 +125,12 @@ const Index = () => {
     return picks.slice(0, 6);
   }, []);
 
-  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
-
-  const quickFixes = [
-    { problem: "Computer Won't Turn On", fix: "Check power cable and outlet first", slug: 'turn-pc-on-and-off', icon: Monitor },
-    { problem: "Everything is Slow", fix: "Restart your device — fixes 80% of slowdowns", slug: 'restart-pc-windows', icon: Sparkles },
-    { problem: "WiFi Not Working", fix: "Unplug your router for 30 seconds", slug: 'connect-wifi-windows', icon: Shield },
-    { problem: "Printer Won't Print", fix: "Check it's set as default printer", slug: 'fix-printer-windows', icon: Wrench },
-    { problem: "Forgot Password", fix: "Use 'Forgot Password' on the login page", slug: 'manage-passwords-windows', icon: Shield },
-    { problem: "Phone Storage Full", fix: "Delete unused apps and clear cache", slug: 'manage-storage-windows', icon: Phone },
-  ];
+  const allCategories = useMemo(() => {
+    return (Object.keys(categoryLabels) as GuideCategory[])
+      .map(cat => ({ cat, count: guides.filter(g => g.category === cat).length }))
+      .sort((a, b) => b.count - a.count);
+  }, []);
+  const visibleCategories = allCategories.slice(0, 12);
 
   return (
     <div className="min-h-screen bg-background">
@@ -193,46 +172,31 @@ const Index = () => {
       />
       <Navbar />
 
-      {/* ── Conversational Hero ───────────────────────────── */}
-      <section className="relative overflow-hidden mesh-gradient">
-        <div className="absolute inset-0 dot-grid opacity-40" />
-        <div className="container relative pt-20 pb-16 md:pt-28 md:pb-24">
-          <div className="max-w-3xl mx-auto text-center">
-            {/* Greeting */}
-            <div className="conversation-bubble mb-8 animate-float">
-              <div className="flex items-start gap-3 text-left">
-                <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center shrink-0">
-                  <MessageCircle className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-lg font-semibold mb-1">Hi there! What can we help with today?</p>
-                  <p className="text-sm text-muted-foreground">Pick what's going on — or search below.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Problem picker grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8 stagger">
-              {problemCards.map((card) => (
-                <button
-                  key={card.query}
-                  onClick={() => navigate(`/guides?q=${encodeURIComponent(card.query)}`)}
-                  className={`group relative overflow-hidden rounded-2xl border bg-gradient-to-br ${card.color} p-4 text-left transition-all duration-200 hover:scale-[1.02] hover:shadow-md`}
-                >
-                  <span className="text-2xl mb-1 block">{card.icon}</span>
-                  <span className="text-sm font-medium block">{card.label}</span>
-                </button>
-              ))}
-            </div>
+      {/* ── Hero ────────────────────────────────────────── */}
+      <section id="main-content" className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent" />
+        <div className="container relative pt-16 pb-12 md:pt-20 md:pb-16">
+          <div
+            className="max-w-2xl mx-auto text-center"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 leading-[1.08]">
+              {t('hero.title', 'Tech help that')}{' '}
+              <span className="text-gradient">
+                {t('hero.highlight', 'makes sense')}
+              </span>
+            </h1>
+            <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto leading-relaxed">
+              {t('hero.subtitle', 'Free guides, real human support, and simple tools — built for people who just want their tech to work.')}
+            </p>
 
             {/* Search */}
             <form onSubmit={handleSearch} className="max-w-md mx-auto mb-6">
               <div className="relative">
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
-                  placeholder='Or type your question...'
+                  placeholder='Search for help... (e.g. "connect to Wi-Fi")'
                   aria-label="Search for tech help"
-                  className="pl-10 pr-20 h-12 bg-background shadow-sm rounded-xl text-sm"
+                  className="pl-10 pr-20 h-12 bg-muted/50 border-border rounded-xl text-sm"
                   value={search}
                   onChange={e => setSearch(e.target.value)}
                 />
@@ -246,10 +210,23 @@ const Index = () => {
               </div>
             </form>
 
+            {/* Topic pills */}
+            <div className="flex flex-wrap justify-center gap-2 mb-10">
+              {topicPills.map((topic) => (
+                <button
+                  key={topic.query}
+                  onClick={() => navigate(`/guides?q=${encodeURIComponent(topic.query)}`)}
+                  className="px-4 py-2.5 rounded-full text-sm font-medium text-muted-foreground bg-muted hover:bg-accent hover:text-foreground transition-colors border border-transparent hover:border-border"
+                >
+                  {topic.label}
+                </button>
+              ))}
+            </div>
+
             {/* CTAs */}
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-shadow">
-                <Link to="/get-help"><Phone className="h-4 w-4" /> Talk to a Person</Link>
+              <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6">
+                <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6">
                 <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
@@ -260,123 +237,89 @@ const Index = () => {
       </section>
 
       {/* ── Stats strip ─────────────────────────────────── */}
-      <RevealSection>
-        <div className="border-y bg-muted/30">
-          <div className="container py-6">
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 text-sm">
-              {[
-                { value: `${guides.length}+`, label: 'Free guides' },
-                { value: '30+', label: 'Interactive tools' },
-                { value: '100%', label: 'Free to browse' },
-                { value: 'No jargon', label: 'Plain English always' },
-              ].map((stat, i) => (
-                <div key={i} className="text-center">
-                  <p className="text-2xl font-bold text-foreground">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
-                </div>
-              ))}
+      <div className="border-y">
+        <div className="container py-5">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 text-sm">
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">{guides.length}+</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free guides</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">100%</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free to browse</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">No jargon</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Plain English</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-border" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-foreground">30+</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Free tools</p>
             </div>
           </div>
         </div>
-      </RevealSection>
+      </div>
 
-      {/* ── Bento Grid: Quick Fixes + Featured ──────────── */}
-      <section className="container py-16 md:py-24">
-        <RevealSection>
-          <div className="text-center mb-12">
-            <h2 className="display-heading text-3xl md:text-5xl mb-3">Quick answers, right now</h2>
-            <p className="text-muted-foreground max-w-md mx-auto">The most common fixes — no appointment needed.</p>
-          </div>
-        </RevealSection>
+      {/* ── Quick Fixes ─────────────────────────────────── */}
+      <section className="container py-12 md:py-16">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Quick Fixes</h2>
+          <p className="text-muted-foreground max-w-md mx-auto">Solutions to the most common tech problems — no appointment needed.</p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 max-w-5xl mx-auto stagger">
-          {/* Large card - spans 2 cols, 2 rows */}
-          <div className="md:col-span-2 md:row-span-2">
-            <div className="bento-card h-full bg-gradient-to-br from-primary/[0.06] to-primary/[0.02] flex flex-col justify-between">
-              <div>
-                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
-                  <Zap className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Need hands-on help?</h3>
-                <p className="text-muted-foreground mb-6">A real person will walk you through any fix — step by step, in plain English. No jargon, no rush.</p>
-              </div>
-              <Button asChild className="gap-2 rounded-xl self-start">
-                <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
-              </Button>
-            </div>
-          </div>
-
-          {/* Quick fix cards */}
-          {quickFixes.slice(0, 4).map((fix) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {quickFixes.map((fix, i) => (
             <div key={fix.slug}>
-              <Link to={`/guides/${fix.slug}`} className="block h-full">
-                <div className="bento-card h-full group">
-                  <div className="flex items-start gap-3">
-                    <div className="h-9 w-9 rounded-xl bg-primary/[0.07] flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
+              <Link to={`/guides/${fix.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                <div className="p-5 rounded-2xl border border-border bg-card hover:bg-accent/50 transition-all hover:shadow-sm">
+                  <div className="flex items-start gap-3.5">
+                    <div className="h-9 w-9 rounded-xl bg-primary/[0.07] flex items-center justify-center shrink-0">
                       <fix.icon className="h-4 w-4 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{fix.problem}</h3>
                       <p className="text-xs text-muted-foreground leading-relaxed">{fix.fix}</p>
                     </div>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
                   </div>
                 </div>
               </Link>
             </div>
           ))}
-
-          {/* Wide card */}
-          <div className="md:col-span-2">
-            <div className="bento-card bg-gradient-to-r from-teksure-success/[0.06] to-teksure-success/[0.02]">
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-2xl bg-teksure-success/10 flex items-center justify-center shrink-0">
-                  <Shield className="h-6 w-6 text-teksure-success" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold mb-1">Scam Alert Center</h3>
-                  <p className="text-sm text-muted-foreground">Latest scams targeting everyday users — stay informed and protected.</p>
-                </div>
-                <Button asChild variant="outline" size="sm" className="shrink-0 rounded-xl">
-                  <Link to="/safety/scam-alerts">View Alerts <ArrowRight className="h-3 w-3 ml-1" /></Link>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* ── Browse by Category ──────────────────────────── */}
-      <section className="zone-guides border-y">
-        <div className="container py-16 md:py-24">
-          <RevealSection>
-            <div className="flex items-end justify-between mb-10">
-              <div>
-                <h2 className="display-heading text-3xl md:text-4xl mb-2">Browse by Category</h2>
-                <p className="text-muted-foreground">Find guides organized by what you need help with.</p>
-              </div>
-              <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
-                <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
-              </Button>
+      <section className="bg-muted/60 border-y border-border/50 py-12 md:py-16">
+        <div className="container">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Browse by Category</h2>
+              <p className="text-muted-foreground">Find guides organized by what you need help with.</p>
             </div>
-          </RevealSection>
+            <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
+              <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+            </Button>
+          </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
-            {visibleCategories.map((cat) => {
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {visibleCategories.map(({ cat, count }) => {
               const Icon = categoryIcons[cat] || BookOpen;
-              const count = guides.filter(g => g.category === cat).length;
-              const colorClass = categoryColors[cat] || 'bg-muted text-muted-foreground';
 
               return (
                 <div key={cat}>
-                  <Link to={`/guides?category=${cat}`} className="block h-full">
-                    <div className="bento-card h-full group">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className={`h-11 w-11 rounded-xl flex items-center justify-center ${colorClass}`}>
-                          <Icon className="h-5 w-5" />
+                  <Link to={`/guides?category=${cat}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="h-10 w-10 rounded-xl bg-primary/[0.07] flex items-center justify-center">
+                          <Icon className="h-5 w-5 text-primary" />
                         </div>
-                        <span className="text-xs text-muted-foreground">{count} guides</span>
+                        <span className="text-xs text-muted-foreground">{count} {count === 1 ? 'guide' : 'guides'}</span>
                       </div>
-                      <h3 className="font-semibold text-base group-hover:text-primary transition-colors">
+                      <h3 className="font-semibold text-sm sm:text-base mb-1 group-hover:text-primary transition-colors">
                         {categoryLabels[cat]}
                       </h3>
                     </div>
@@ -395,36 +338,36 @@ const Index = () => {
       </section>
 
       {/* ── Popular Guides ──────────────────────────────── */}
-      <section className="container py-16 md:py-24">
-        <RevealSection>
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <h2 className="display-heading text-3xl md:text-4xl mb-2">Popular Guides</h2>
-              <p className="text-muted-foreground">The most helpful articles for beginners.</p>
-            </div>
-            <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
-              <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
-            </Button>
+      <section className="container py-12 md:py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Popular Guides</h2>
+            <p className="text-muted-foreground">The most helpful articles for beginners.</p>
           </div>
-        </RevealSection>
+          <Button asChild variant="ghost" className="hidden md:flex gap-1 text-sm">
+            <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+          </Button>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger">
-          {featuredGuides.map((guide) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {featuredGuides.map((guide, i) => (
             <div key={guide.slug}>
-              <Link to={`/guides/${guide.slug}`} className="block h-full">
-                <div className="bento-card h-full group overflow-hidden p-0">
+              <Link to={`/guides/${guide.slug}`} className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                <div className="rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full flex flex-col overflow-hidden">
                   <div className="h-36 overflow-hidden bg-muted">
                     <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
                   </div>
-                  <div className="p-5 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-3">
-                      <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
-                      <span className="text-xs text-muted-foreground">{guide.readTime}</span>
-                    </div>
-                    <h3 className="font-semibold text-sm mb-2 group-hover:text-primary transition-colors leading-snug flex-1">
-                      {guide.title}
-                    </h3>
-                    <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+                  <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
+                    <span className="text-xs text-muted-foreground flex items-center gap-1">
+                      <Clock className="h-3 w-3" /> {guide.readTime}
+                    </span>
+                  </div>
+                  <h3 className="font-semibold text-sm mb-2 group-hover:text-primary transition-colors leading-snug flex-1">
+                    {guide.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
                   </div>
                 </div>
               </Link>
@@ -433,101 +376,110 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── How It Works ────────────────────────────────── */}
-      <section className="zone-support border-y">
-        <div className="container py-16 md:py-24">
-          <RevealSection>
-            <div className="text-center mb-12">
-              <h2 className="display-heading text-3xl md:text-4xl mb-3">How TekSure Works</h2>
-              <p className="text-muted-foreground max-w-sm mx-auto">Three steps. Simpler than calling your cable company.</p>
-            </div>
-          </RevealSection>
+      {/* ── What's New ──────────────────────────────────── */}
+      <section className="bg-muted/50 border-y border-border/50 py-10 md:py-12">
+        <div className="container">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 text-center">What's New on TekSure</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link to="/guides" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <BookOpen className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">New Guides This Week</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">15+ new step-by-step guides added for beginners.</p>
+              </div>
+            </Link>
+            <Link to="/scam-alerts" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <AlertTriangle className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Scam Alert: Latest Warnings</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">Stay safe with up-to-date scam alerts from the FTC and AARP.</p>
+              </div>
+            </Link>
+            <Link to="/tools" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <Wrench className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Free Tools</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">30+ free tools for passwords, speed tests, and more.</p>
+              </div>
+            </Link>
+            <Link to="/forum" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+              <div className="p-5 rounded-2xl border border-border bg-card hover:shadow-md transition-all h-full">
+                <MessageSquare className="h-6 w-6 text-primary mb-3" />
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">Community Forum</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">Ask questions and share tips with fellow learners.</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto stagger">
+      {/* ── How It Works ────────────────────────────────── */}
+      <section className="bg-muted/60 border-y border-border/50 py-12 md:py-16">
+        <div className="container">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">How TekSure Works</h2>
+            <p className="text-muted-foreground max-w-sm mx-auto">Three steps. Simpler than calling your cable company.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {[
-              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Just your phone or email — that\'s all we need.', icon: MessageCircle },
-              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.', icon: Phone },
-              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.', icon: CheckCircle },
-            ].map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="relative inline-flex mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center text-lg font-bold">
+              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Just your phone or email — that\'s all we need.' },
+              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.' },
+              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.' },
+            ].map((s, i) => (
+              <div key={s.step}>
+                <div className="text-center">
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold mx-auto mb-5">
                     {s.step}
                   </div>
-                  <div className="absolute -inset-1 rounded-2xl bg-primary/20 animate-pulse-ring" />
+                  <h3 className="font-semibold text-base mb-2">{s.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 </div>
-                <h3 className="font-semibold text-base mb-2">{s.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 shadow-lg shadow-primary/20">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6">
               <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* ── Trust / Social Proof ────────────────────────── */}
-      <section className="container py-16 md:py-24">
-        <RevealSection>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid sm:grid-cols-3 gap-6">
-              {[
-                { icon: Users, value: '10,000+', label: 'People helped' },
-                { icon: Star, value: '4.9/5', label: 'Average rating' },
-                { icon: Zap, value: '< 2hrs', label: 'Response time' },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center p-6 rounded-2xl bg-muted/30">
-                  <stat.icon className="h-6 w-6 text-primary mx-auto mb-3" />
-                  <p className="text-3xl font-bold mb-1">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </RevealSection>
-      </section>
-
       {/* ── Newsletter ──────────────────────────────────── */}
-      <RevealSection>
-        <section className="border-y bg-muted/30">
-          <div className="container py-12">
-            <div className="max-w-md mx-auto text-center">
-              <Mail className="h-6 w-6 text-primary mx-auto mb-4" />
-              <h2 className="text-xl font-bold mb-2">Free weekly tech tip</h2>
-              <p className="text-sm text-muted-foreground mb-6">
-                One helpful tip every Sunday. No spam, unsubscribe any time.
-              </p>
-              <NewsletterSignup />
-            </div>
+      <section className="border-y bg-muted/30">
+        <div className="container py-10">
+          <div className="max-w-md mx-auto text-center">
+            <Mail className="h-6 w-6 text-primary mx-auto mb-4" />
+            <h2 className="text-xl font-bold mb-2">Free weekly tech tip</h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              One helpful tip every Sunday. No spam, unsubscribe any time.
+            </p>
+            <NewsletterSignup />
           </div>
-        </section>
-      </RevealSection>
+        </div>
+      </section>
 
       {/* ── Final CTA ───────────────────────────────────── */}
       <section className="hero-gradient text-white">
-        <div className="container py-16 md:py-24 text-center">
-          <RevealSection>
-            <div>
-              <h2 className="display-heading text-3xl md:text-5xl mb-4">
-                Tech trouble? We've got you.
-              </h2>
-              <p className="text-white/80 mb-8 max-w-md mx-auto text-lg">
-                Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
-              </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
-                  <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
-                  <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
-                </Button>
-              </div>
+        <div className="container py-12 md:py-16 text-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Tech trouble? We've got you.
+            </h2>
+            <p className="text-white/80 mb-8 max-w-md mx-auto">
+              Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
+                <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
+                <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
+              </Button>
             </div>
-          </RevealSection>
+          </div>
         </div>
       </section>
 
