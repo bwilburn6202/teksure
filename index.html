@@ -50,20 +50,11 @@
       name="twitter:description"
       content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
     />
+    <!--ssr-head-->
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script>
-      // Register service worker for offline support
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {
-            // SW registration failed — app still works online
-          });
-        });
-      }
-    </script>
+    <div id="root"><!--ssr-outlet--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
   </body>
 </html>

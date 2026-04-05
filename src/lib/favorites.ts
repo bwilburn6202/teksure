@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'teksure_favorites';
+const isServer = typeof window === 'undefined';
 
 export interface FavoriteGuide {
   slug: string;
@@ -7,6 +8,7 @@ export interface FavoriteGuide {
 }
 
 export function getFavorites(): FavoriteGuide[] {
+  if (isServer) return [];
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
   } catch {

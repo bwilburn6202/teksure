@@ -12,6 +12,7 @@ const HighContrastContext = createContext<HighContrastContextType>({
 
 export function HighContrastProvider({ children }: { children: ReactNode }) {
   const [highContrast, setHighContrast] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
     try {
       return localStorage.getItem('teksure-high-contrast') === 'true';
     } catch {
