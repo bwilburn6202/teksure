@@ -23,6 +23,15 @@ Synthesized all existing TekSure content into wiki pages:
 - Scam prevention page built from ScamAlerts data
 - Synthesis pages built from cross-category analysis
 
+## [2026-04-04] ingest | April 2026 research ingest (batch 3)
+
+Scraped additional sources (AARP, How-To Geek, Tom's Guide). Added 3 new wiki pages:
+- **social-media-safety** — Facebook privacy settings, friends list protection, location services, safety tips
+- **smart-home-basics** — Alexa/Google Home/HomeKit ecosystems, starter devices, tips for seniors
+- **streaming-setup** — Roku/Fire TV/Apple TV setup, HDMI instructions, free streaming options
+
+Added "Why It Works" explanations to 5 more guides (28 steps total): screenshot, copy-paste, save file, strong password, two-factor authentication.
+
 ## [2026-04-04] ingest | April 2026 research ingest (batch 2)
 
 Scraped and ingested from 10+ authoritative sources (FTC, AARP, CISA, Apple Support, Google Support, Tom's Guide, How-To Geek, NIH/NCOA). Updated files:
