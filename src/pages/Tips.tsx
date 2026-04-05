@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
-  summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
-  full: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency update that fixes a dangerous security hole called "DarkSword." Here\'s the important part: hackers could use this flaw to get into your phone silently, just by having you visit a malicious website. They could steal your text messages, photos, location, and saved passwords without you ever knowing. Here\'s how to check for and install the update right now: On iPhone, open the Settings app (the grey gear icon), then tap General, then tap Software Update. If you see iOS 18.7.7 available, tap Download and Install — you\'ll need your passcode and about 10 minutes. Make sure your phone is plugged in or has at least 50% battery first. If you\'re already on iOS 18.7.7 or iOS 26.4 (a newer version), you\'re protected. To make sure you never miss an update like this again, go back to Software Update and turn on Automatic Updates — your phone will install updates overnight while you\'re sleeping.',
-  category: 'Security',
-  icon: ShieldAlert,
+  title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
+  summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
+  full: 'Both iPhones and Android phones have a Medical ID or Emergency Information feature that displays your emergency contacts and basic health details right from the lock screen — no passcode needed. This means if something happens to you, a first responder can quickly find out who to call and what medications you take. On iPhone: Open the Health app (the white icon with a red heart), tap your profile picture in the top right, then tap Medical ID. Fill in your emergency contacts, medical conditions, allergies, and blood type, then make sure "Show When Locked" is turned on. On Android: Open the Settings app, tap Safety & Emergency (or search for "emergency"), then tap Emergency Information. Add your emergency contacts and any medical details. To make sure it works, lock your phone and try it yourself: on iPhone, tap Emergency on the lock screen, then Medical ID. On Android, swipe up on the lock screen and tap Emergency, then tap Emergency Information twice. Tell a family member or friend that this information is there — so they know to check if they ever need to help someone else, too.',
+  category: 'Safety',
+  icon: Heart,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
+    summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
+    category: 'Security',
+    icon: ShieldAlert,
+  },
   {
     title: 'Set Up a Screen Lock PIN to Protect Your Phone',
     summary: 'A screen lock PIN is the first line of defense if your phone is ever lost or stolen — it keeps strangers out of your personal information, photos, and accounts.',
