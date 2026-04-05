@@ -27,7 +27,7 @@ export const roadmapItems: RoadmapItem[] = [
 
   // Guides & Content
   { title: '780+ Step-by-Step Guides', description: 'A growing library of plain-language guides that walk you through common tech tasks one step at a time.', status: 'live', category: 'Guides & Content' },
-  { title: 'Technology Knowledge Base', description: 'A searchable wiki covering everyday tech topics — Wi-Fi, passwords, email, scams, devices, and more.', status: 'live', category: 'Guides & Content' },
+  { title: 'AI-Compiled Knowledge Base', description: 'Karpathy-inspired LLM knowledge base: 38 wiki articles compiled from 780+ guides and trusted sources (AARP, FTC, CISA, Apple, Google). Cross-linked with Maps of Content hubs, wikilinks, and topic clusters.', status: 'live', category: 'Guides & Content' },
   { title: 'Video Tutorials', description: 'Short video walkthroughs from official sources that show you exactly what to do on screen.', status: 'live', category: 'Guides & Content' },
   { title: 'Quick Fixes', description: 'Short, focused solutions for the most common tech problems — no long articles required.', status: 'live', category: 'Guides & Content' },
   { title: 'Tech Glossary (106 Terms)', description: 'Every tech term explained in everyday language with helpful analogies.', status: 'live', category: 'Guides & Content' },
@@ -100,9 +100,9 @@ export const roadmapItems: RoadmapItem[] = [
   // ═══════════════════════════════════════════════════════════════
 
   { title: 'Explain It Like I\'m New', description: 'Tell TekBot what confuses you in your own words — it figures out the problem and walks you through the fix, step by step. No menus, no searching.', status: 'in-progress', category: 'AI & Learning' },
-  { title: 'Concept Maps', description: 'Visual diagrams showing how tech concepts connect — tap any node to learn more. See the big picture of how Wi-Fi, passwords, email, and devices all relate.', status: 'in-progress', category: 'AI & Learning' },
-  { title: 'Why It Works Explanations', description: 'Every guide gets a short "Why this works" section so you understand the reason behind each step — not just what to tap.', status: 'in-progress', category: 'Guides & Content' },
-  { title: 'Fake Scam Simulator', description: 'Practice spotting realistic scam emails, texts, and calls in a safe environment. Build your scam radar without any risk.', status: 'in-progress', category: 'Safety & Privacy' },
+  { title: 'Concept Maps', description: 'Visual diagrams showing how tech concepts connect — tap any node to learn more. See the big picture of how Wi-Fi, passwords, email, and devices all relate.', status: 'live', category: 'AI & Learning' },
+  { title: 'Why It Works Explanations', description: 'Every guide step gets a "Why this works" section so you understand the reason behind each step — not just what to tap. Live on 16 guides (77 steps).', status: 'live', category: 'Guides & Content' },
+  { title: 'Fake Scam Simulator', description: 'Practice spotting realistic scam emails, texts, and calls in a safe environment. 10 scenarios, 7 scams + 3 legitimate — build your scam radar.', status: 'live', category: 'Safety & Privacy' },
   { title: 'Spanish Language Content', description: 'Translating the top 30 most-visited guides into Spanish to reach 42M+ Spanish speakers in the US.', status: 'in-progress', category: 'Accessibility' },
   { title: 'Live Chat Support', description: 'Chat with a real human technician for issues that need personal attention — free for all members.', status: 'in-progress', category: 'Support' },
 
@@ -110,12 +110,14 @@ export const roadmapItems: RoadmapItem[] = [
   // PLANNED — Designed and scheduled
   // ═══════════════════════════════════════════════════════════════
 
-  // AI & Learning — Karpathy-inspired
-  { title: 'AI Learning Companion', description: 'An always-available AI tutor (inspired by Eureka Labs) that teaches you technology through conversation. It designs lessons around your real questions, adapts to your pace, and remembers what you\'ve learned.', status: 'planned', category: 'AI & Learning' },
+  // AI & Learning — Karpathy-inspired + Custom LLM
+  { title: 'TekSure LLM (Custom Fine-Tuned Model)', description: 'Our own AI model, trained on TekSure\'s entire knowledge base. Built on Llama 3.1 8B or Mistral 7B, fine-tuned with Unsloth/LoRA on 780+ guides and 38 wiki articles. Served locally via Ollama — no cloud dependency, no API costs. TekBot becomes a true AI that answers from our compiled knowledge.', status: 'in-progress', category: 'AI & Learning' },
+  { title: 'LLM Training Dataset Generator', description: 'Automated pipeline that converts all TekSure guides, wiki pages, and scraped sources into ChatML Q&A pairs for fine-tuning. Generates 2,000+ training examples from existing content.', status: 'in-progress', category: 'AI & Learning' },
+  { title: 'AI Learning Companion', description: 'An always-available AI tutor (powered by our custom LLM) that teaches technology through conversation. Designs lessons around your real questions, adapts to your pace, remembers what you\'ve learned.', status: 'planned', category: 'AI & Learning' },
   { title: 'Show Me What You See', description: 'Take a photo of your screen and TekBot tells you exactly what to do next. No need to describe the problem — the AI reads your screen and guides you.', status: 'planned', category: 'AI & Learning' },
   { title: 'Teach-Back Quizzes', description: 'After each guide, a short quiz checks your understanding — not memorization. Can you explain it in your own words? That\'s how real learning sticks.', status: 'planned', category: 'AI & Learning' },
-  { title: 'Daily 5-Minute Lessons', description: 'Bite-sized daily lessons that build on each other over weeks — like Duolingo for technology. Five minutes a day, real progress over time.', status: 'planned', category: 'AI & Learning' },
-  { title: 'Troubleshooting Flowcharts', description: 'Visual decision trees for common problems: "My internet is slow" → follow the arrows → find your fix. No reading required.', status: 'planned', category: 'AI & Learning' },
+  { title: 'Daily 5-Minute Lessons', description: '20 bite-sized lessons across 4 tracks (Getting Started, Staying Safe, Your Phone, Staying Connected). Streak tracking, quizzes, progress bars.', status: 'live', category: 'AI & Learning' },
+  { title: 'Troubleshooting Flowcharts', description: '5 interactive decision trees: internet not working, phone slow, cannot print, forgot password, screen frozen. One step at a time.', status: 'live', category: 'AI & Learning' },
 
   // Guides & Content
   { title: 'How Things Actually Work', description: 'Short explainers that teach what happens behind the scenes — how Wi-Fi signals travel, how passwords protect you, why updates matter. Understanding beats memorization.', status: 'planned', category: 'Guides & Content' },
