@@ -652,7 +652,7 @@ const coreGuides: Guide[] = [
       { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Esc to open Task Manager directly.' },
       { title: 'Go to Startup tab', content: 'Click the "Startup apps" tab to see all programs that run when Windows starts.' },
       { title: 'Check the impact', content: 'Look at the "Startup impact" column — High impact programs slow your boot time the most.' , tip: 'Focus on disabling "High impact" programs first. These make the biggest difference to your startup time.' },
-      { title: 'Disable unnecessary programs', content: 'Right-click programs you don\'t need at startup and select "Disable." Be careful not to disable essential system programs.' , warning: 'Do not disable programs you do not recognise without checking first. Some are essential system processes. When in doubt, search the program name online.' },
+      { title: 'Disable unnecessary programs', content: 'Right-click programs you don\'t need at startup and select "Disable." Be careful not to disable essential system programs.' , warning: 'Do not disable programs you do not recognize without checking first. Some are essential system processes. When in doubt, search the program name online.' },
       { title: 'Alternative method', content: 'Go to Settings → Apps → Startup for a simpler toggle-based interface.' },
     ]
   },
@@ -937,7 +937,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open Windows Security', content: 'Go to Settings → Privacy & Security → Windows Security → Firewall & Network Protection.' },
       { title: 'Check firewall status', content: 'Ensure the firewall is On for all three network profiles: Domain, Private, and Public.' , warning: 'Never turn off the firewall unless a trusted technician specifically asks you to, and always turn it back on afterwards.' },
-      { title: 'Allow an app through', content: 'Click "Allow an app through firewall" to add specific programs to the allowed list.' , tip: 'Only allow apps you recognise and trust through the firewall. If you are unsure about an app, search its name online first.' },
+      { title: 'Allow an app through', content: 'Click "Allow an app through firewall" to add specific programs to the allowed list.' , tip: 'Only allow apps you recognize and trust through the firewall. If you are unsure about an app, search its name online first.' },
       { title: 'Create inbound/outbound rules', content: 'Open "Advanced settings" for Windows Defender Firewall with Advanced Security to create custom rules.' },
       { title: 'Restore default settings', content: 'If you\'ve misconfigured the firewall, click "Restore firewalls to default" to reset all rules.' },
     ]
@@ -1527,7 +1527,7 @@ const coreGuides: Guide[] = [
       { title: 'Open Bluetooth settings', content: 'Go to System Settings → Bluetooth, or click the Bluetooth icon in the menu bar.' },
       { title: 'Turn on Bluetooth', content: 'Make sure Bluetooth is turned on using the toggle.' },
       { title: 'Put device in pairing mode', content: 'On your Bluetooth device, hold the pairing button until the LED flashes.' , tip: 'Most Bluetooth devices have a small button you hold for 3-5 seconds. A flashing light usually means it is ready to pair.' },
-      { title: 'Connect', content: 'Your device will appear under "Nearby Devices." Click "Connect" next to it.' , warning: 'Only pair devices you recognise. Decline any unexpected pairing requests from unknown devices.' },
+      { title: 'Connect', content: 'Your device will appear under "Nearby Devices." Click "Connect" next to it.' , warning: 'Only pair devices you recognize. Decline any unexpected pairing requests from unknown devices.' },
     ]
   },
   {
@@ -2546,7 +2546,7 @@ AI is not futuristic — you are almost certainly using it right now:
 **How does AI actually work?**
 Most modern AI works through "machine learning." Instead of a programmer writing rules for every possible situation, the software is trained on huge amounts of data and learns to spot patterns itself.
 
-For example: to teach AI to recognise cats in photos, you show it millions of photos labelled "cat" and "not cat." The AI figures out the patterns — pointy ears, whiskers, fur — on its own. Nobody writes a rule that says "look for whiskers."
+For example: to teach AI to recognize cats in photos, you show it millions of photos labelled "cat" and "not cat." The AI figures out the patterns — pointy ears, whiskers, fur — on its own. Nobody writes a rule that says "look for whiskers."
 
 This is why AI gets better over time. The more data it processes, the more accurate it becomes.
 
@@ -2578,7 +2578,7 @@ For everyday tasks — writing emails, getting recipe ideas, learning new things
 If you are new to AI, the easiest way to try it is to visit ChatGPT, Google Gemini, or Claude in your web browser. Type a simple question like "Explain how a dishwasher works" and see what it says. It is free to try and you do not need to install anything.
 
 **Learn more**
-We have over 80 AI guides on TekSure covering everything from writing your first AI prompt to using AI for travel planning, email writing, photo editing, and more. Browse our AI Guides section to continue learning.`
+We have over 100 AI guides on TekSure covering everything from writing your first AI prompt to using AI for travel planning, email writing, photo editing, and more. Browse our AI Guides section to continue learning.`
   },
   {
     slug: 'getting-started-with-chatgpt',
@@ -4176,7 +4176,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Check who\'s connected to your network',
-        content: 'In your router admin panel, look for "Connected Devices", "DHCP Clients", or "Device List". You should recognise every device listed. If you see something unfamiliar, change your Wi-Fi password immediately.', tip: 'Run this check every few months. Most routers show the device name and type, making it easy to spot anything suspicious.'
+        content: 'In your router admin panel, look for "Connected Devices", "DHCP Clients", or "Device List". You should recognize every device listed. If you see something unfamiliar, change your Wi-Fi password immediately.', tip: 'Run this check every few months. Most routers show the device name and type, making it easy to spot anything suspicious.'
       },
       {
         title: 'Keep your router firmware updated',
@@ -4536,7 +4536,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
     steps: [
       {
         title: 'Use Google Photos (the easiest option for most people)',
-        content: 'Google Photos (free on iPhone and Android) automatically organizes your photos by date and can recognise people and places. Download it from the App Store or Google Play → sign in with your Google account → allow it to back up your photos. After the initial backup, all your photos are searchable — just type "beach 2024" or "Christmas" and it finds them.', tip: 'Google Photos\' free storage limit is 15GB. If you\'re over that, consider Google One ($1.59/month for 100GB) or regularly delete blurry or duplicate photos.'
+        content: 'Google Photos (free on iPhone and Android) automatically organizes your photos by date and can recognize people and places. Download it from the App Store or Google Play → sign in with your Google account → allow it to back up your photos. After the initial backup, all your photos are searchable — just type "beach 2024" or "Christmas" and it finds them.', tip: 'Google Photos\' free storage limit is 15GB. If you\'re over that, consider Google One ($1.59/month for 100GB) or regularly delete blurry or duplicate photos.'
       },
       {
         title: 'iCloud Photos on iPhone (for Apple users)',
@@ -4663,7 +4663,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Check your balance and transactions',
-        content: 'Open the app and tap your current account to see your balance. Scroll down to see recent transactions. If you see anything you don\'t recognise, contact your bank immediately using the number on the back of your card — not a number from a suspicious email or text.', tip: 'Check your balance weekly — catching problems early is key. Set up transaction notifications so your bank texts you for every purchase.'
+        content: 'Open the app and tap your current account to see your balance. Scroll down to see recent transactions. If you see anything you don\'t recognize, contact your bank immediately using the number on the back of your card — not a number from a suspicious email or text.', tip: 'Check your balance weekly — catching problems early is key. Set up transaction notifications so your bank texts you for every purchase.'
       },
       {
         title: 'Pay a bill or transfer money',
@@ -5147,7 +5147,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       },
       {
         title: 'Managing and removing extensions',
-        content: 'To see all your installed extensions: in Chrome, click the puzzle-piece icon in the top right → "Manage Extensions." You\'ll see a list of all installed extensions. Toggle the switch to temporarily disable one, or click "Remove" to delete it permanently. Keep only extensions you actually use — too many can slow your browser down. If you see an extension you don\'t recognise, remove it.',
+        content: 'To see all your installed extensions: in Chrome, click the puzzle-piece icon in the top right → "Manage Extensions." You\'ll see a list of all installed extensions. Toggle the switch to temporarily disable one, or click "Remove" to delete it permanently. Keep only extensions you actually use — too many can slow your browser down. If you see an extension you don\'t recognize, remove it.',
         warning: 'Malicious extensions exist. If an extension asks for permission to "read and change all your data on all websites" — think carefully before installing. Reputable extensions like uBlock Origin need this access, but random extensions should not.'
       },
     ]
@@ -6467,7 +6467,7 @@ Your Siri requests are sent to Apple's servers to process. Siri does not store y
 Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe from the bottom corner.
 
 **Set up "Hey Google"**
-Open the Google app, tap your profile photo > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognise your voice.
+Open the Google app, tap your profile photo > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognize your voice.
 
 **Useful things to ask Google Assistant**
 - "Hey Google, call [name]"
@@ -6505,7 +6505,7 @@ If you find it activates by accident, go to Settings > Google > Account Services
       { title: 'Go to Facebook.com', content: 'Open your web browser (Chrome, Safari, or Edge) and type facebook.com into the address bar at the top.' },
       { title: 'Fill in the sign-up form', content: 'Click "Create New Account." Enter your first name, last name, email address or mobile number, a new password, your date of birth, and your gender. Then click "Sign Up."', warning: 'Choose a password you have not used on any other website. Write it down and keep it somewhere safe.' },
       { title: 'Confirm your account', content: 'Facebook will send a confirmation code to your email or phone. Open your email or texts, find the code, and type it into the confirmation box on Facebook.' },
-      { title: 'Add a profile photo', content: 'Click on the silhouette photo on your profile page, then "Upload Photo." Choose a clear photo of yourself. This helps friends and family recognise you.', tip: 'Use a recent photo where your face is clearly visible. This is how old friends will find you.' },
+      { title: 'Add a profile photo', content: 'Click on the silhouette photo on your profile page, then "Upload Photo." Choose a clear photo of yourself. This helps friends and family recognize you.', tip: 'Use a recent photo where your face is clearly visible. This is how old friends will find you.' },
       { title: 'Find friends and family', content: 'Use the search bar at the top to search for people you know by name. When you find someone, click "Add Friend." They will receive a friend request.' },
       { title: 'Set your privacy', content: 'Go to Settings and Privacy, then Privacy Shortcuts, and set "Who can see your future posts?" to "Friends." This means only people you have accepted as friends can see what you share.', tip: 'Do this straight away before you post anything.' },
     ]
@@ -6537,7 +6537,7 @@ When someone sends you a friend request, a red number appears on the people icon
 To see all your Facebook friends, go to your profile and click "Friends." From here you can also "Unfriend" someone by clicking the three dots next to their name — they won't be notified.
 
 **People you may know**
-Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognise someone.`
+Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognize someone.`
   },
   {
     slug: 'post-photo-on-facebook',
@@ -6681,7 +6681,7 @@ Open Instagram and tap "Create new account." Enter your email address or phone n
 Your username is your @handle — it appears publicly. Use your name or something easy to remember (e.g., @marysmith or @mary_from_exeter). You can change it later.
 
 **Add a profile photo**
-Tap "Add a profile photo." Choose a photo from your gallery or take a new one. This helps people recognise you.
+Tap "Add a profile photo." Choose a photo from your gallery or take a new one. This helps people recognize you.
 
 **Make your account private**
 Recommended for most people: tap your profile icon > ☰ (menu) > Settings and Privacy > Account Privacy > turn on "Private account." This means only people you approve can follow you and see your posts.
@@ -7653,7 +7653,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       },
       {
         title: 'What to do when you get a code you didn\'t ask for',
-        content: 'If you receive a two-factor code on your phone but you did not try to log in anywhere, this is a warning sign. It could mean:\n\n- Someone knows your password and is trying to log in to your account.\n- You accidentally clicked a "forgot password" link earlier.\n\n**What to do:**\n1. Do not share the code with anyone — not even someone who says they are from your bank or Google.\n2. Log in to your account immediately (from a trusted device) and change your password.\n3. Check your account for any activity you do not recognise.\n4. If it is your bank, call the number on the back of your card straight away.\n\nA real company will never call you and ask for the code that was just sent to your phone.', warning: 'If someone calls you and says they need the code that was just sent to your phone, hang up immediately. This is always a scam. No legitimate company will ever ask for your 2FA code.'
+        content: 'If you receive a two-factor code on your phone but you did not try to log in anywhere, this is a warning sign. It could mean:\n\n- Someone knows your password and is trying to log in to your account.\n- You accidentally clicked a "forgot password" link earlier.\n\n**What to do:**\n1. Do not share the code with anyone — not even someone who says they are from your bank or Google.\n2. Log in to your account immediately (from a trusted device) and change your password.\n3. Check your account for any activity you do not recognize.\n4. If it is your bank, call the number on the back of your card straight away.\n\nA real company will never call you and ask for the code that was just sent to your phone.', warning: 'If someone calls you and says they need the code that was just sent to your phone, hang up immediately. This is always a scam. No legitimate company will ever ask for your 2FA code.'
       },
     ]
   },

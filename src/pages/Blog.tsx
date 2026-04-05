@@ -133,7 +133,7 @@ const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-22',
     readTime: '5 min',
     content: [
-      '"The cloud" means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data center, where it\'s stored safely.',
+      '"The cloud" means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s traveling over the internet to a large computer building called a data center, where it\'s stored safely.',
       'The big advantage: your files are available from any device, anywhere. Lose your phone? Your photos are still safe in the cloud. Get a new laptop? Sign in and all your documents reappear.',
       'Popular cloud services you may already use: iCloud (Apple), Google Drive, Google Photos, OneDrive (Microsoft), and Dropbox. Most offer free storage up to a certain limit, with paid plans for more space.',
       'Is it safe? Reputable cloud services encrypt your files both in transit and at rest, meaning even the company itself can\'t easily read them. They\'re generally safer than keeping everything on one device that could be lost, stolen, or broken.',
@@ -248,9 +248,9 @@ const BLOG_POSTS: BlogPost[] = [
     content: [
       'Google offers a suite of free tools that can genuinely change how you navigate the world, communicate, and preserve memories. Here are three worth knowing about.',
       'Google Maps: Far more than just directions. Use the "Explore" tab to find nearby restaurants, pharmacies, and shops with opening hours and reviews. The Street View feature lets you see what a destination looks like before you arrive. Offline maps let you download an area to navigate without mobile data.',
-      'Google Maps Tips: Save your home and work addresses under "Saved" for instant routing. Share your real-time location with family members for peace of mind when travelling alone. Use the wheelchair accessibility filter if mobility is a consideration.',
+      'Google Maps Tips: Save your home and work addresses under "Saved" for instant routing. Share your real-time location with family members for peace of mind when traveling alone. Use the wheelchair accessibility filter if mobility is a consideration.',
       'Google Translate: Point your camera at text in a foreign language — a menu, sign, or document — and it translates instantly on screen. You can also type or speak text for translation. Works with over 100 languages and is free.',
-      'Translate in conversation: The "Conversation" mode lets two people speak to each other in different languages and hear the translation automatically — remarkable for communication with carers, medical professionals, or while travelling.',
+      'Translate in conversation: The "Conversation" mode lets two people speak to each other in different languages and hear the translation automatically — remarkable for communication with carers, medical professionals, or while traveling.',
       'Google Photos: Automatically backs up every photo from your phone to the cloud. The search feature is astonishingly good — type "beach 2019" or "birthday cake" and it finds matching photos. Shared albums let you exchange photos with family without sending individual attachments.',
       'Google Photos memory features: The "Memories" section resurfaces photos from the same date in previous years — a lovely way to look back at moments. You can create albums, slideshows, and even books from your photos.',
     ],
