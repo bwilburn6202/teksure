@@ -139,11 +139,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-07',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.' },
-      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.' },
-      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.' },
-      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.' },
-      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.' },
+      { title: 'Open from the Start menu', content: 'Click the Windows icon (Start) in the taskbar. Browse or search for the app you want to open.', whyItWorks: 'The Start menu is your computer\'s main directory — like a phone book for all your programs. Searching here is the fastest way to find anything because you do not need to know where it is stored.' },
+      { title: 'Open from the desktop', content: 'Double-click a desktop shortcut icon to launch that program directly.', whyItWorks: 'Desktop shortcuts are like bookmarks — they point to the real program without moving it. Double-clicking tells the computer you want to open something, not just select it. One click selects; two clicks opens.' },
+      { title: 'Open from the taskbar', content: 'Click any pinned app icon on the taskbar for quick access to frequently used programs.', whyItWorks: 'The taskbar is always visible at the bottom of your screen, so pinned apps are always one click away — no searching required. Think of it as keeping your favorite tools on your desk instead of in a drawer.' },
+      { title: 'Close a program', content: 'Click the X button in the top-right corner of the program window to close it.', whyItWorks: 'Closing programs you are not using frees up your computer\'s memory (its short-term thinking power). Too many open programs can make your computer slow, just like trying to carry too many grocery bags at once.' },
+      { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.', whyItWorks: 'Sometimes a program gets stuck in a loop and stops responding. Task Manager lets you see everything running on your computer and shut down the stuck program without restarting. It is like a manager who can send a misbehaving employee home.' },
     ]
   },
   {
@@ -157,11 +157,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-08',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.' },
-      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.' },
-      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.' },
-      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.' },
-      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.' },
+      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.', whyItWorks: 'The taskbar is divided into zones, each with a purpose: left side for launching apps, middle for switching between open programs, right side for system controls. Once you understand this layout, you always know where to look.' },
+      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.', whyItWorks: 'Pinning keeps your most-used apps visible at all times. Instead of searching through menus every time, you have one-click access — like hanging your car keys by the front door instead of searching for them each morning.' },
+      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.', whyItWorks: 'Each running program gets its own button on the taskbar. Clicking switches your view instantly. Hovering shows a small preview so you can check what is in each window before switching — like peeking through a door before walking in.' },
+      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.', whyItWorks: 'The system tray is your computer\'s dashboard — it shows the status of important things at a glance. A quick look tells you if you are connected to WiFi, what time it is, and if anything needs your attention.' },
+      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.', whyItWorks: 'Task View gives you a bird\'s-eye view of everything open on your computer. It is especially helpful when you lose a window behind other programs — you can see and click on any window to bring it forward.' },
     ]
   },
   {
@@ -230,11 +230,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-12',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.' },
-      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.' },
-      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.' },
-      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.' },
-      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.' },
+      { title: 'Create on the desktop', content: 'Right-click an empty area on your desktop → New → Folder. Type a name and press Enter.', whyItWorks: 'Right-clicking opens a context menu — a list of actions that makes sense for where you clicked. On an empty space, it offers to create new things. On a file, it offers to rename, copy, or delete. The menu adapts to what you clicked on.' },
+      { title: 'Create in File Explorer', content: 'Open File Explorer, navigate to where you want the folder, then click "New" → Folder in the toolbar.', whyItWorks: 'File Explorer is your computer\'s filing cabinet. Creating a folder here is like adding a new hanging folder — you choose which drawer (location) to put it in, so your files stay organized from the start.' },
+      { title: 'Use a keyboard shortcut', content: 'In File Explorer, press Ctrl+Shift+N to instantly create a new folder in the current location.', whyItWorks: 'Keyboard shortcuts skip the menus entirely. Once you memorize them, they are much faster than clicking through menus. Ctrl+Shift+N is worth learning if you create folders often.' },
+      { title: 'Name it descriptively', content: 'Give folders clear names like "Work Projects" or "Family Photos 2026" to stay organized.', whyItWorks: 'A good folder name is one that helps you find what you need months later. "Stuff" or "New Folder" does not help, but "Tax Documents 2026" tells you exactly what is inside without opening it.' },
+      { title: 'Organize with subfolders', content: 'Create folders inside folders to build a hierarchy — e.g., Documents → Work → Projects → Client Name.', whyItWorks: 'Subfolders work like categories and subcategories in a library. Instead of putting 500 files in one folder, you split them into logical groups. This makes finding any single file much faster.' },
     ]
   },
   {
@@ -300,11 +300,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-16',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open Microsoft Edge', content: 'Click the Edge icon on the taskbar (blue wave icon) or search for "Edge" in the Start menu.' },
-      { title: 'Navigate to a website', content: 'Click the address bar at the top, type a URL (like google.com) or a search term, and press Enter.' },
-      { title: 'Use tabs', content: 'Click the + button next to your current tab to open a new tab. Click X on a tab to close it. Use Ctrl+T for a new tab.' },
-      { title: 'Bookmark a page', content: 'Click the star icon in the address bar to bookmark (save) a page for quick access later.' },
-      { title: 'Manage downloads', content: 'Press Ctrl+J to see your downloads. By default, files save to your Downloads folder.' },
+      { title: 'Open Microsoft Edge', content: 'Click the Edge icon on the taskbar (blue wave icon) or search for "Edge" in the Start menu.', whyItWorks: 'A web browser is your window to the internet — it translates website code into the pages you see. Edge comes built into Windows, so you do not need to install anything extra to start browsing.' },
+      { title: 'Navigate to a website', content: 'Click the address bar at the top, type a URL (like google.com) or a search term, and press Enter.', whyItWorks: 'The address bar does double duty: type a web address to go directly to a site, or type words to search. Every website has a unique address (URL) — like a street address for a building on the internet.' },
+      { title: 'Use tabs', content: 'Click the + button next to your current tab to open a new tab. Click X on a tab to close it. Use Ctrl+T for a new tab.', whyItWorks: 'Tabs let you have multiple websites open at the same time without opening multiple browser windows. It is like having several books open on your desk, each with a labeled tab sticking up so you can switch between them.' },
+      { title: 'Bookmark a page', content: 'Click the star icon in the address bar to bookmark (save) a page for quick access later.', whyItWorks: 'Bookmarks save a website\'s address so you do not have to remember or retype it. You can organize bookmarks into folders — think of it as your personal phone book for websites.' },
+      { title: 'Manage downloads', content: 'Press Ctrl+J to see your downloads. By default, files save to your Downloads folder.', whyItWorks: 'When you download a file from the internet, your browser saves a copy on your computer. The Downloads folder is where everything goes by default — knowing this means you will always be able to find what you downloaded.' },
     ]
   },
   {
@@ -318,11 +318,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-17',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Minimize and maximize', content: 'Use the buttons in the top-right corner: minimize (—), maximize (□), and close (X).' },
-      { title: 'Snap windows side by side', content: 'Drag a window to the left or right edge of the screen to snap it to half the display. Or press Win+Left/Right arrow.' },
-      { title: 'Use Snap Layouts', content: 'Hover over the maximize button to see Snap Layouts — choose from 2, 3, or 4 window arrangements.' },
-      { title: 'Switch between windows', content: 'Press Alt+Tab to quickly cycle through open windows. Hold Alt and press Tab repeatedly to choose.' },
-      { title: 'Use virtual desktops', content: 'Press Win+Ctrl+D to create a new virtual desktop. Switch between them with Win+Ctrl+Left/Right arrows.' },
+      { title: 'Minimize and maximize', content: 'Use the buttons in the top-right corner: minimize (—), maximize (□), and close (X).', whyItWorks: 'Minimize hides the window but keeps the program running — you can bring it back from the taskbar. Maximize fills the screen so you can focus on one thing. These controls give you flexibility in how you work.' },
+      { title: 'Snap windows side by side', content: 'Drag a window to the left or right edge of the screen to snap it to half the display. Or press Win+Left/Right arrow.', whyItWorks: 'Side-by-side windows let you see two things at once — like reading a recipe on one side while typing notes on the other. Your computer splits the screen precisely in half so both windows fit perfectly.' },
+      { title: 'Use Snap Layouts', content: 'Hover over the maximize button to see Snap Layouts — choose from 2, 3, or 4 window arrangements.', whyItWorks: 'Snap Layouts offer pre-built arrangements so you do not have to drag and resize windows manually. It is like having a desk organizer that arranges your papers in neat sections automatically.' },
+      { title: 'Switch between windows', content: 'Press Alt+Tab to quickly cycle through open windows. Hold Alt and press Tab repeatedly to choose.', whyItWorks: 'Alt+Tab shows thumbnail previews of all open windows so you can jump directly to the one you need. It is much faster than clicking around on the taskbar, especially when you have many programs open.' },
+      { title: 'Use virtual desktops', content: 'Press Win+Ctrl+D to create a new virtual desktop. Switch between them with Win+Ctrl+Left/Right arrows.', whyItWorks: 'Virtual desktops give you multiple workspaces — like having several desks you can switch between. Keep email on one, web browsing on another, and a document on a third. Each desktop stays organized independently.' },
     ]
   },
   {
@@ -354,10 +354,10 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-19',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.' },
-      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.' },
-      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!' },
-      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.' },
+      { title: 'Restart from Start menu', content: 'Click Start → Power → Restart. This is the standard, safest way to restart.', whyItWorks: 'Restarting clears your computer\'s temporary memory and stops all running programs. It is like giving your computer a fresh start for the day — any small glitches or stuck processes get cleaned up automatically.' },
+      { title: 'Restart with keyboard', content: 'Press Ctrl+Alt+Delete → click the Power icon (bottom-right) → Restart.', whyItWorks: 'Ctrl+Alt+Delete is a special key combination that interrupts everything on screen and gives you system-level controls. It works even when your mouse or other programs are frozen, which is why it is the go-to emergency shortcut.' },
+      { title: 'When to restart', content: 'Restart after installing updates, when your PC feels sluggish, or when programs stop responding.', tip: 'Restarting fixes about 80% of common computer problems. It\'s always the first thing to try!', whyItWorks: 'Over time, programs can develop small memory leaks or get stuck waiting for something. Restarting wipes the slate clean. Tech support always asks "have you tried restarting?" because it genuinely fixes most issues.' },
+      { title: 'Force restart if frozen', content: 'If your PC is completely frozen, hold the power button for 5-10 seconds. Use this only as a last resort.', warning: 'Only force restart when your PC is completely unresponsive. You may lose unsaved work.', whyItWorks: 'Holding the power button sends a hardware-level shutdown signal that bypasses all software. The computer cannot ignore this command. However, any work not saved to disk will be lost, which is why it should only be a last resort.' },
     ]
   },
   {
@@ -389,11 +389,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-21',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.' },
-      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.' },
-      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.' },
-      { title: 'Customize your inbox', content: 'Set up notifications, choose a sync schedule, and customize swipe actions in Settings.' },
-      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.' },
+      { title: 'Open the Mail app', content: 'Search for "Mail" in the Start menu and open the built-in Windows Mail application.', whyItWorks: 'An email app pulls your messages from the internet and displays them on your computer. You can read and write email without opening a web browser — the app checks for new messages automatically in the background.' },
+      { title: 'Add an account', content: 'Click "Add Account" and choose your email provider (Outlook, Gmail, Yahoo, or Other).' , tip: 'You can add multiple email accounts to the Mail app and see all your emails in one place.', whyItWorks: 'When you add an account, the Mail app connects securely to your email provider\'s servers. It downloads copies of your messages to your computer so you can read them quickly, even when your internet is slow.' },
+      { title: 'Sign in', content: 'Enter your email address and password. For Gmail, you\'ll be redirected to Google\'s sign-in page.' , warning: 'If using Gmail, you may need to enable "Less secure app access" or use an app-specific password if you have two-factor authentication enabled.', whyItWorks: 'The sign-in process verifies your identity so no one else can read your email. Being redirected to Google\'s own page is a good thing — it means your password goes directly to Google, not through a third-party app.' },
+      { title: 'Customize your inbox', content: 'Set up notifications, choose a sync schedule, and customize swipe actions in Settings.', whyItWorks: 'Sync schedule controls how often the app checks for new mail. More frequent checks mean faster delivery but use more battery. Every 15 or 30 minutes is a good balance for most people.' },
+      { title: 'Send your first email', content: 'Click the + (New Mail) button, enter a recipient, subject, and message, then click Send.', whyItWorks: 'Email travels through the internet in seconds. When you press Send, your message goes to your email provider\'s server, which delivers it to the recipient\'s server. They see it the next time they check their inbox.' },
     ]
   },
   {
