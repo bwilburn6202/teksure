@@ -15,12 +15,32 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch,
+  FileSearch, Terminal, Shield,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
 
 const tools = [
+  {
+    title: 'Cyber AI Toolkit',
+    description: 'Interactive browser-based security tools: password analyzer, hash generator, IOC extractor, encoding suite, and more.',
+    icon: Terminal,
+    path: '/tools/cyber-toolkit',
+    color: 'text-green-500',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Cybersecurity Command Center',
+    description: 'Explore 50 security modules across Red Team, Blue Team, White Hat, and OSINT operations.',
+    icon: Shield,
+    path: '/cybersec',
+    color: 'text-red-500',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
   {
     title: 'Chat with Docs',
     description: 'Ask questions about tech-support documentation in plain English — AI reads Apple, Google, and Microsoft docs for you.',

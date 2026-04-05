@@ -27,6 +27,45 @@ export function clearProgress(): void {
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
 }
 
+const RECENT_KEY = 'teksure-recent-guides';
+
+export function getInProgressGuides(): string[] {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    if (!raw) return [];
+    return JSON.parse(raw) as string[];
+  } catch {
+    return [];
+  }
+}
+
+export function getRecentGuides(): string[] {
+  return getInProgressGuides();
+}
+
+export function saveStepProgress(slug: string, stepIndex: number): void {
+  try {
+    const key = `teksure-step-progress-${slug}`;
+    localStorage.setItem(key, String(stepIndex));
+  } catch { /* ignore */ }
+}
+
+export function getStepProgress(slug: string): number {
+  try {
+    return parseInt(localStorage.getItem(`teksure-step-progress-${slug}`) || '0', 10);
+  } catch { return 0; }
+}
+
+export function recordGuideView(slug: string): void {
+  trackGuideVisit(slug);
+}
+
+export function trackGuideVisit(slug: string): void {
+  const recent = getInProgressGuides().filter(s => s !== slug);
+  recent.unshift(slug);
+  localStorage.setItem(RECENT_KEY, JSON.stringify(recent.slice(0, 10)));
+}
+
 export function getProgressCount(totalSlugs?: string[]): { completed: number; total: number; pct: number } {
   const done = getCompletedGuides();
   if (totalSlugs) {
