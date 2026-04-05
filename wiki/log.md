@@ -38,6 +38,15 @@ Scraped and ingested from 10+ authoritative sources (FTC, AARP, CISA, Apple Supp
 - **src/data/wiki.ts** — Updated scam-prevention (recovery scams, fake law enforcement, AI content poisoning, $12.5B fraud stats), password-security (manager recommendations), wifi-networking (router placement, 2.4/5GHz), us-resources (smartphone adoption stats). Added online-shopping-safety and telehealth wiki pages.
 - **src/components/TekBot.tsx** — Complete rewrite from chatbot to AI knowledge base. Now searches across 780+ guides and 20+ wiki pages instead of hardcoded 21-topic KB.
 
+## [2026-04-05] architecture | Skill graph and MOC implementation (batch 5)
+
+Implemented arscontexta-inspired Maps of Content (MOC) architecture. Added 3 hub pages that serve as navigation centers for topic clusters:
+- **moc-staying-safe** — Connects safety-checklist, password-security, scam-prevention, online-banking-safety
+- **moc-getting-started** — Step-by-step learning path from device basics to staying safe
+- **moc-communication** — Email, video calling, messaging, voice assistants, social media
+
+Updated cross-references across 8 existing wiki pages to link to MOC hubs. Created DESIGN.md (AI-readable design system). Upgraded SearchModal with knowledge base integration, keyboard navigation, and quick access links.
+
 ## [2026-04-05] ingest | April 2026 research ingest (batch 4)
 
 Scraped AARP, FTC, CISA, Tom's Guide, How-To Geek for banking safety, smartphone guides, and digital literacy content. Added 3 new wiki pages:

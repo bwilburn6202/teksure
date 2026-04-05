@@ -44,11 +44,8 @@ const popularSlugs = [
   'password-security',
   'scam-prevention',
   'smartphone-basics',
-  'beginners-roadmap',
   'digital-literacy',
-  'safety-checklist',
   'online-banking-safety',
-  'us-resources',
 ];
 
 function getExcerpt(content: string, maxLength = 120): string {
@@ -223,6 +220,58 @@ const Wiki = () => {
                 <p className="text-2xl md:text-3xl font-bold text-primary">{stats.categories}</p>
                 <p className="text-sm text-muted-foreground">Categories</p>
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Topic Clusters — MOC hub visualization (arscontexta-inspired) */}
+      {!isSearching && (
+        <section className="py-10 md:py-14 px-4 border-b border-border">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <LinkIcon className="h-5 w-5 text-primary" />
+              <h2 className="text-xl md:text-2xl font-bold">Topic Clusters</h2>
+            </div>
+            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
+              Our knowledge is organized into interconnected clusters. Each hub connects to detailed articles, forming a navigable knowledge graph.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {wikiPages
+                .filter(p => p.slug.startsWith('moc-'))
+                .map(moc => (
+                  <Link
+                    key={moc.slug}
+                    to={`/wiki/${moc.slug}`}
+                    className="group relative rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-6 hover:border-primary/50 hover:shadow-lg transition-all"
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-2xl">{getTagEmoji(moc.tags)}</span>
+                      <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                        {moc.title.replace('Map: ', '')}
+                      </h3>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      {moc.seeAlso.slice(0, 4).map(slug => {
+                        const linked = wikiPages.find(p => p.slug === slug);
+                        return linked ? (
+                          <span key={slug} className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                            {linked.title.length > 20 ? linked.title.slice(0, 20) + '...' : linked.title}
+                          </span>
+                        ) : null;
+                      })}
+                      {moc.seeAlso.length > 4 && (
+                        <span className="text-xs text-muted-foreground px-2 py-0.5">
+                          +{moc.seeAlso.length - 4} more
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {getExcerpt(moc.content, 100)}
+                    </p>
+                    <ArrowRight className="absolute top-6 right-5 h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                  </Link>
+                ))}
             </div>
           </div>
         </section>

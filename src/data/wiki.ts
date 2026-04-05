@@ -29,7 +29,7 @@ export const wikiPages: WikiPage[] = [
     category: 'concept',
     tags: ['wi-fi', 'internet', 'router', 'networking', 'home'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['password-security', 'safety-checklist', 'us-resources'],
+    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'moc-getting-started'],
     content: `## What Is Wi-Fi?
 
 Wi-Fi is a wireless technology that lets your devices — phones, tablets, laptops, and smart TVs — connect to the internet without plugging in a cable. It uses radio signals sent by a device called a **router** in your home.
@@ -87,8 +87,8 @@ Your router's network name and password are usually printed on a sticker on the 
     title: 'Password Security',
     category: 'concept',
     tags: ['passwords', 'security', 'accounts', '2fa', 'authentication'],
-    lastUpdated: '2026-04-04',
-    seeAlso: ['scam-prevention', 'safety-checklist', 'wifi-networking'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['scam-prevention', 'safety-checklist', 'online-banking-safety', 'moc-staying-safe'],
     content: `## Why Passwords Matter
 
 Your password is the lock on your digital front door. A weak or reused password is like using the same key for your house, car, and office — if someone copies it once, they can get into everything.
@@ -158,8 +158,8 @@ CISA's "Secure Our World" program provides free tip sheets in multiple languages
     title: 'Scam Prevention',
     category: 'concept',
     tags: ['scams', 'phishing', 'safety', 'fraud', 'email'],
-    lastUpdated: '2026-04-04',
-    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'online-shopping-safety'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'online-banking-safety', 'moc-staying-safe'],
     content: `## The Most Common Tech Scams
 
 Scammers use technology to trick people into handing over money or personal information. Here are the most common types:
@@ -223,7 +223,7 @@ Scammers now use artificial intelligence to create realistic-looking fake shoppi
     category: 'synthesis',
     tags: ['beginner', 'getting-started', 'learning', 'roadmap'],
     lastUpdated: '2026-04-01',
-    seeAlso: ['wifi-networking', 'password-security', 'safety-checklist', 'us-resources'],
+    seeAlso: ['wifi-networking', 'password-security', 'safety-checklist', 'moc-getting-started', 'digital-literacy'],
     content: `## Your First Steps with Technology
 
 Learning technology does not have to feel overwhelming. This roadmap breaks the journey into small, manageable steps. Go at your own pace — there is no deadline.
@@ -895,8 +895,8 @@ Every device has built-in tools to make screens easier to read:
     title: 'Video Calling',
     category: 'concept',
     tags: ['video-calls', 'zoom', 'facetime', 'google-meet', 'teams'],
-    lastUpdated: '2026-04-04',
-    seeAlso: ['google', 'microsoft', 'apple'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['google', 'microsoft', 'apple', 'moc-communication'],
     content: `## What Is Video Calling?
 
 Video calling lets you see and talk to someone in real time using your phone, tablet, or computer. It is a wonderful way to stay in touch with family, friends, and doctors — especially when you cannot visit in person.
@@ -991,7 +991,7 @@ All of these services let you share a file by creating a link. Instead of emaili
     category: 'concept',
     tags: ['email', 'gmail', 'outlook', 'phishing', 'communication'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['google', 'microsoft', 'scam-prevention'],
+    seeAlso: ['google', 'microsoft', 'scam-prevention', 'moc-communication'],
     content: `## Gmail vs. Outlook — Which Should I Use?
 
 - **Gmail** (by Google): Free, works on any device, and gives you 15 GB of storage. Great if you use other Google services like Google Drive or YouTube.
@@ -1436,6 +1436,151 @@ Digital literacy means knowing how to use technology to accomplish everyday task
 - **AARP Tech Resources** — Articles and videos at aarp.org/technology
 
 (Sources: AARP Tech Trends 2026, CISA Cybersecurity Awareness, Senior Planet)`,
+  },
+  {
+    slug: 'moc-staying-safe',
+    title: 'Map: Staying Safe Online',
+    category: 'synthesis',
+    tags: ['safety', 'scams', 'passwords', 'privacy', 'moc'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['scam-prevention', 'password-security', 'online-banking-safety', 'online-shopping-safety', 'safety-checklist'],
+    content: `## Staying Safe Online — Topic Map
+
+This page connects everything TekSure knows about online safety. Use it as your starting point — each link leads to a detailed article.
+
+## The Essentials (Start Here)
+
+- [[safety-checklist]] — The 10 things every person should do to stay safe online
+- [[password-security]] — How to create, manage, and protect your passwords
+- [[scam-prevention]] — How to spot and avoid the most common scams
+
+## Protecting Your Money
+
+- [[online-banking-safety]] — Safe banking habits, phishing red flags, fraud reporting
+- [[online-shopping-safety]] — Buying safely on Amazon, eBay, and other sites
+
+## Protecting Your Identity
+
+- [[password-security]] — Strong passwords, password managers, and two-factor authentication
+- [[scam-prevention]] — Phishing emails, phone scams, tech support scams, romance scams
+
+## Protecting Your Devices
+
+- [[wifi-networking]] — Securing your home WiFi network
+- [[device-basics]] — Keeping your devices updated and protected
+
+## Where to Get Help
+
+- [[us-resources]] — FTC, AARP Fraud Watch, CISA, and other free resources
+- AARP Fraud Watch Helpline: 877-908-3360
+- Report fraud at ReportFraud.ftc.gov
+
+## How These Topics Connect
+
+Safety is not one skill — it is a network of habits that protect each other. Strong passwords protect your accounts. Recognizing scams protects your money. Updating your devices protects everything. Each topic reinforces the others.
+
+(This is a Map of Content — a hub page that connects related articles in our knowledge base)`,
+  },
+  {
+    slug: 'moc-getting-started',
+    title: 'Map: Getting Started with Technology',
+    category: 'synthesis',
+    tags: ['beginner', 'getting-started', 'learning', 'moc'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['beginners-roadmap', 'device-basics', 'smartphone-basics', 'digital-literacy', 'wifi-networking'],
+    content: `## Getting Started — Topic Map
+
+New to technology? This page maps out everything you need to learn, in the right order. Follow the path from top to bottom.
+
+## Step 1: Understand Your Device
+
+- [[device-basics]] — Computers, phones, and tablets: what they are and how they work
+- [[smartphone-basics]] — iPhone vs Android, making your phone easier to use
+
+## Step 2: Get Connected
+
+- [[wifi-networking]] — What WiFi is, how to connect, and how to fix common problems
+- [[email-essentials]] — Setting up email, sending messages, staying safe in your inbox
+
+## Step 3: Learn Core Skills
+
+- [[copy-and-paste]] — One of the most useful skills on any device
+- [[taking-screenshots]] — Capturing what you see on screen
+- [[downloading-apps]] — How to safely get new apps on your phone
+- [[sending-text-messages]] — Communicating by text
+
+## Step 4: Stay Connected
+
+- [[video-calling]] — Zoom, FaceTime, Google Meet: talking face-to-face over the internet
+- [[using-voice-assistants]] — Siri, Google Assistant: using your voice to control your device
+- [[social-media-safety]] — Using Facebook, Instagram, and others safely
+
+## Step 5: Stay Safe
+
+- [[safety-checklist]] — Essential security steps everyone should complete
+- [[password-security]] — Protecting your accounts with strong passwords
+- [[scam-prevention]] — Recognizing and avoiding online scams
+
+## Step 6: Keep Learning
+
+- [[digital-literacy]] — Building confidence with technology over time
+- [[beginners-roadmap]] — Your complete learning path on TekSure
+
+## How This Map Works
+
+Each topic builds on the ones before it. You do not need to learn everything at once — pick one topic, master it, then move to the next. Come back to this page anytime to see what to learn next.
+
+(This is a Map of Content — a hub page that connects related articles in our knowledge base)`,
+  },
+  {
+    slug: 'moc-communication',
+    title: 'Map: Communicating with Technology',
+    category: 'synthesis',
+    tags: ['communication', 'email', 'video', 'messaging', 'moc'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['email-essentials', 'video-calling', 'sending-text-messages', 'using-voice-assistants', 'social-media-safety'],
+    content: `## Communication — Topic Map
+
+Technology gives you many ways to stay in touch with family, friends, doctors, and businesses. This page maps them all.
+
+## Text-Based Communication
+
+- [[sending-text-messages]] — SMS and iMessage on your phone
+- [[email-essentials]] — Gmail, Outlook, and other email services
+
+## Face-to-Face Over the Internet
+
+- [[video-calling]] — Zoom, FaceTime, Google Meet, Microsoft Teams
+- How video calls work: your camera sends a live picture over the internet to the other person's screen
+
+## Voice and Hands-Free
+
+- [[using-voice-assistants]] — Siri (iPhone), Google Assistant (Android), Alexa (Amazon)
+- Voice assistants can make calls, send texts, set reminders, and answer questions — all without touching the screen
+
+## Social Media
+
+- [[social-media-safety]] — Using Facebook, Instagram, and others while protecting your privacy
+- [[using-facebook]] — Setting up and using the world's largest social network
+
+## Staying Safe While Communicating
+
+- Never share passwords, Social Security numbers, or bank info over email, text, or social media
+- Be cautious of messages from people you do not know
+- Video calls from unknown contacts may be scams — only answer calls you expect
+- See [[scam-prevention]] for more safety tips
+
+## Choosing the Right Tool
+
+| Need | Best Tool |
+|------|-----------|
+| Quick message to family | Text message |
+| Longer message or attachment | Email |
+| Seeing someone face-to-face | Video call (Zoom, FaceTime) |
+| Hands-free while busy | Voice assistant |
+| Sharing photos with many people | Social media |
+
+(This is a Map of Content — a hub page that connects related articles in our knowledge base)`,
   },
 ];
 

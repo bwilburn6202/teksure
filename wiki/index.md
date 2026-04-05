@@ -43,6 +43,9 @@ Last updated: 2026-04-05
 | [Safety First Checklist](synthesis/safety-checklist.md) | The essential security steps every user should complete |
 | [Family Helper Guide](synthesis/family-helper-guide.md) | How to help a parent or grandparent get comfortable with tech |
 | [Digital Literacy](synthesis/digital-literacy.md) | The five core digital skills and how to build confidence | 5+ sources |
+| [Map: Staying Safe](synthesis/moc-staying-safe.md) | Hub page connecting all safety-related articles | 6 articles |
+| [Map: Getting Started](synthesis/moc-getting-started.md) | Hub page for beginners — follow the path from step 1 | 8 articles |
+| [Map: Communication](synthesis/moc-communication.md) | Hub page for all communication topics | 5 articles |
 
 ## Sources
 
