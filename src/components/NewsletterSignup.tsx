@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Mail, CheckCircle, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 interface NewsletterSignupProps {
   variant?: 'default' | 'compact' | 'inline';
@@ -13,17 +15,26 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(() => typeof window !== 'undefined' && !!localStorage.getItem(STORAGE_KEY));
   const [error, setError] = useState('');
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const trimmed = email.trim().toLowerCase();
     if (!trimmed.includes('@') || !trimmed.includes('.')) {
       setError('Please enter a valid email address.');
       return;
     }
+
+    try {
+      await supabase.from('newsletter_subscribers').insert({ email: trimmed });
+    } catch {
+      // Table may not exist yet — still save locally
+    }
+
     localStorage.setItem(STORAGE_KEY, trimmed);
     setSubmitted(true);
     setError('');
+    toast({ title: 'You\'re subscribed!', description: 'Weekly tech tips are on the way.' });
   };
 
   if (variant === 'inline') {

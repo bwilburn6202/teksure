@@ -4,6 +4,7 @@ import { Search, ArrowRight, Phone } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -482,6 +483,9 @@ export default function Tools() {
       />
       <Navbar />
       <main className="min-h-screen bg-background">
+        <div className="container pt-4">
+          <PageBreadcrumb segments={[{ label: 'Tools' }]} />
+        </div>
         {/* Header */}
         <section className="border-b zone-tools">
           <div className="container py-12 md:py-16">

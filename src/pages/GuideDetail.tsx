@@ -11,6 +11,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
+import { ShareGuideButton } from '@/components/ShareGuideButton';
+import { ReportBrokenLink } from '@/components/ReportBrokenLink';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -32,6 +34,13 @@ function calcReadTime(guide: { title: string; excerpt: string; steps?: GuideStep
   if (guide.body) words += guide.body.split(/\s+/).length;
   const mins = Math.max(1, Math.ceil(words / 200));
   return `${mins} min read`;
+}
+
+function calcStepTime(step: GuideStep): string {
+  const words = (step.title + ' ' + step.content + ' ' + (step.tip || '') + ' ' + (step.warning || '')).split(/\s+/).length;
+  const secs = Math.max(15, Math.ceil((words / 200) * 60));
+  if (secs < 60) return `~${secs}s`;
+  return `~${Math.ceil(secs / 60)} min`;
 }
 
 /* ── Sub-components ─────────────────────────────── */
@@ -409,6 +418,8 @@ const GuideDetail = () => {
                 <Printer className="h-4 w-4" /> Print Guide
               </Button>
               <ListenButton guide={guide} />
+              <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
+              <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
             </div>
           </div>
 
@@ -463,6 +474,7 @@ const GuideDetail = () => {
                               return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
                             })()}
                             <h3 className="font-bold text-lg">{step.title}</h3>
+                            <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
                           <div className="text-base text-muted-foreground leading-relaxed">
                             <StepContent text={step.content} />

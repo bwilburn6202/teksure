@@ -252,25 +252,71 @@ html.font-size-xxl {
 
 /* Print styles */
 @media print {
+  /* Hide non-content elements */
   header, footer, nav, .no-print, [data-radix-popper-content-wrapper],
-  .fixed, button:not(.print-btn) {
+  .fixed, .sticky, button:not(.print-btn) {
     display: none !important;
   }
+
+  /* Base typography and colors */
   body {
     color: #000 !important;
     background: #fff !important;
-    font-size: 12pt;
+    font-size: 14pt !important;
   }
+
+  * {
+    color: #000 !important;
+    background: #fff !important;
+  }
+
   .hero-gradient {
     background: none !important;
     color: #000 !important;
   }
-  a {
+
+  /* Show link URLs after text */
+  a[href] {
     color: #000 !important;
     text-decoration: underline;
   }
-  .shadow-sm, .shadow-md, .shadow-lg {
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    font-weight: normal;
+  }
+
+  /* Remove shadows and borders on cards */
+  .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl,
+  [class*="shadow"] {
     box-shadow: none !important;
+  }
+
+  [class*="rounded"],
+  .card, [class*="Card"] {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove max-width constraints on containers */
+  .container, [class*="max-w-"] {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  /* Avoid page breaks inside steps and cards */
+  [class*="step"], [class*="Step"],
+  [class*="card"], [class*="Card"],
+  li, .guide-step {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Clean page breaks between major sections */
+  h1, h2, h3 {
+    break-after: avoid;
+    page-break-after: avoid;
   }
 }
 
@@ -335,11 +381,25 @@ html.senior-mode * {
 
 /* ─── Reduced Motion Preference ─────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  * {
+    transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* Disable tailwindcss-animate animations */
+  [data-state="open"],
+  [data-state="closed"] {
+    animation-duration: 0.01ms !important;
+    animation-fill-mode: none !important;
+  }
+
+  .animate-in,
+  .animate-out,
+  [class*="animate-"] {
+    animation-duration: 0.01ms !important;
+    animation-fill-mode: none !important;
   }
 }
 

@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import { Eye, EyeOff, Check, X, ShieldCheck } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -8,9 +7,7 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import {
-  Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
-} from '@/components/ui/breadcrumb';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 const PasswordStrength = () => {
   const [password, setPassword] = useState('');
@@ -51,6 +48,10 @@ const PasswordStrength = () => {
       />
       <Navbar />
 
+      <div className="container pt-4">
+        <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Password Strength' }]} />
+      </div>
+
       <section className="border-b">
         <div className="container py-16 md:py-20">
           <div className="max-w-xl mx-auto text-center">
@@ -62,16 +63,6 @@ const PasswordStrength = () => {
       </section>
 
       <section className="container py-12 max-w-lg">
-        <Breadcrumb className="mb-8">
-          <BreadcrumbList>
-            <BreadcrumbItem><BreadcrumbLink asChild><Link to="/">Home</Link></BreadcrumbLink></BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem><BreadcrumbLink asChild><Link to="/quick-fixes">Tools</Link></BreadcrumbLink></BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem><BreadcrumbPage>Password Strength</BreadcrumbPage></BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-
         <Card>
           <CardContent className="pt-6 space-y-6">
             {/* Password input */}

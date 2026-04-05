@@ -19,6 +19,8 @@ import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { BackToTop } from "@/components/BackToTop";
+import { CookieConsent } from "@/components/CookieConsent";
 
 const isServer = typeof window === "undefined";
 
@@ -115,6 +117,8 @@ const Articles               = lazy(() => import("./pages/Articles"));
 const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"));
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
+const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
+const Privacy                = lazy(() => import("./pages/Privacy"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -127,16 +131,20 @@ const queryClient = new QueryClient({
   },
 });
 
-/** Minimal spinner shown during lazy-load */
+/** Skeleton loading screen shown during lazy-load — matches page layout for less perceived delay */
 function PageLoader() {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      role="status"
-      aria-live="polite"
-      aria-label="Loading page"
-    >
-      <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" aria-hidden="true" />
+    <div className="min-h-screen bg-background" role="status" aria-live="polite" aria-label="Loading page">
+      <div className="h-14 border-b border-border" />
+      <div className="container max-w-4xl py-8 space-y-6">
+        <div className="h-9 w-3/4 bg-muted animate-pulse rounded" />
+        <div className="h-5 w-1/2 bg-muted animate-pulse rounded" />
+        <div className="space-y-4 pt-4">
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+        </div>
+      </div>
     </div>
   );
 }
@@ -181,8 +189,10 @@ const AppContent = () => {
       <TekBot />
       {/* FloatingChat disabled — TekBot handles all chat */}
       <ScamPanicButton />
+      <BackToTop />
       <Toaster />
       <Sonner />
+      {!isServer && <CookieConsent />}
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
@@ -279,6 +289,8 @@ const AppContent = () => {
           <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
+          <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
