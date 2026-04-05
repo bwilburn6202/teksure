@@ -75,7 +75,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Monthly Webinars', description: 'Join live online workshops where we walk through tech topics together.', status: 'live', category: 'Community' },
   { title: 'Quick Reference Cards', description: 'Printable cheat sheets with the most important steps for common tasks.', status: 'live', category: 'Tools' },
   { title: 'Error Message Decoder', description: 'Paste any error message and get a simple explanation of what went wrong.', status: 'live', category: 'AI' },
-  { title: 'Phishing URL Scanner', description: "Paste a suspicious link and find out instantly if it's safe or a known phishing trap — all analysed privately in your browser.", status: 'live', category: 'Safety' },
+  { title: 'Phishing URL Scanner', description: "Paste a suspicious link and find out instantly if it's safe or a known phishing trap — all analyzed privately in your browser.", status: 'live', category: 'Safety' },
   { title: 'WiFi Troubleshooter', description: "Answer a few quick questions and follow a guided path to fix your WiFi — no router manual needed.", status: 'live', category: 'Tools' },
   { title: 'Cybersecurity Scorecard', description: 'Answer 13 yes/no questions to get a personal security grade across passwords, network, devices, and email safety.', status: 'live', category: 'Safety' },
   { title: 'Technician Profiles', description: 'Browse vetted TekSure technicians, read reviews, and book the right person for your problem.', status: 'live', category: 'Support' },

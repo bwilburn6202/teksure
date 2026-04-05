@@ -211,7 +211,7 @@ function tokenize(text: string): ContentSegment[] {
       continue;
     }
 
-    let str = seg.value;
+    const str = seg.value;
     const parts: ContentSegment[] = [];
     let lastIndex = 0;
 
@@ -280,7 +280,7 @@ function tokenize(text: string): ContentSegment[] {
         continue;
       }
 
-      let partStr = part.value;
+      const partStr = part.value;
       const glossaryMatches: Array<{ index: number; length: number; term: string; definition: string }> = [];
 
       for (const [term, definition] of Object.entries(GLOSSARY)) {

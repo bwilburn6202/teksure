@@ -34,7 +34,7 @@ const BLOG_POSTS: BlogPost[] = [
     content: [
       'Every time you see a "software update available" notification, your device is essentially saying: "We found some security holes — please let us fix them."',
       'When hackers discover a weakness in an operating system or app, they race to exploit it before the company can release a fix. These weaknesses are called "vulnerabilities." Software updates almost always include "patches" — code that closes those holes.',
-      'In 2017, a ransomware attack called WannaCry infected over 200,000 computers in 150 countries. The attack specifically targeted a Windows vulnerability that Microsoft had already released a patch for — months earlier. Every infected computer had simply skipped the update.',
+      'In 2017, a ransomware attack called WannaCry infected over 200,000 computers in 150 countries. The attack specifically targeted a Windows vulnerability that Microsoft had already released a patch for — months earlier. Every infected computer had skipped the update.',
       'How to stay updated: On iPhone, go to Settings → General → Software Update. On Android, go to Settings → System → Software Update. On Windows, go to Start → Settings → Windows Update. Enable automatic updates everywhere you can — the default choice is usually the safest.',
     ],
   },
@@ -133,7 +133,7 @@ const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-22',
     readTime: '5 min',
     content: [
-      '"The cloud" simply means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data center, where it\'s stored safely.',
+      '"The cloud" means storing your files on someone else\'s computer server — connected to the internet — instead of only on your own device. When you save a photo to iCloud or Google Photos, it\'s travelling over the internet to a large computer building called a data center, where it\'s stored safely.',
       'The big advantage: your files are available from any device, anywhere. Lose your phone? Your photos are still safe in the cloud. Get a new laptop? Sign in and all your documents reappear.',
       'Popular cloud services you may already use: iCloud (Apple), Google Drive, Google Photos, OneDrive (Microsoft), and Dropbox. Most offer free storage up to a certain limit, with paid plans for more space.',
       'Is it safe? Reputable cloud services encrypt your files both in transit and at rest, meaning even the company itself can\'t easily read them. They\'re generally safer than keeping everything on one device that could be lost, stolen, or broken.',
