@@ -194,33 +194,80 @@ function searchKnowledgeBase(query: string, device: DeviceType, limit = 5): Sear
 
 /* ── Response Builder ─────────────────────────────────────── */
 
+/** Find related wiki pages for a given result to surface cross-links */
+function findRelatedWikiPages(result: SearchResult): string[] {
+  const wikiPage = wikiPages.find(w => `/wiki/${w.slug}` === result.href);
+  if (wikiPage) return wikiPage.seeAlso.slice(0, 3);
+  // For guide results, find wiki pages with overlapping tags
+  const guideEntry = INDEX.find(e => e.href === result.href);
+  if (!guideEntry) return [];
+  const related: string[] = [];
+  for (const w of wikiPages) {
+    if (w.tags.some(t => guideEntry.tags.some(gt => gt.toLowerCase().includes(t.toLowerCase())))) {
+      related.push(w.slug);
+      if (related.length >= 2) break;
+    }
+  }
+  return related;
+}
+
 function buildResponse(query: string, results: SearchResult[], explainMode: boolean): string {
   if (results.length === 0) {
     if (explainMode) {
-      return "I could not find an exact match for that question, but that is okay! Everyone starts somewhere.\n\nHere are some things you can try:\n1. Describe your problem in different words — there is no wrong way to ask.\n2. Try a shorter question, like \"WiFi not working\" or \"forgot password.\"\n3. Browse our guides and wiki pages for step-by-step help.\n\nYou are doing great by asking questions!";
+      return "I could not find an exact match for that question, but that is okay! Everyone starts somewhere.\n\nHere are some things you can try:\n1. Describe your problem in different words — there is no wrong way to ask.\n2. Try a shorter question, like \"WiFi not working\" or \"forgot password.\"\n3. Browse our Knowledge Base at /wiki for compiled articles on every topic.\n\nYou are doing great by asking questions!";
     }
-    return "I could not find an exact match for that, but our knowledge base is always growing.\n\nTry rephrasing your question, or browse our guides and wiki pages. You can also book a free technician session for hands-on help.";
+    return "I could not find an exact match. Our AI-compiled knowledge base covers 780+ topics and is always growing.\n\nTry rephrasing, or browse the Knowledge Base for compiled articles organized by topic.";
   }
 
   const top = results[0];
+  const wikiResults = results.filter(r => r.type === 'wiki');
+  const guideResults = results.filter(r => r.type === 'guide');
   let response = '';
 
   if (explainMode) {
     response += "Let me walk you through what I found. Take your time reading this.\n\n";
-    response += `**${top.title}**\n${top.snippet}\n`;
-    if (top.steps && top.steps.length > 0) {
-      response += "\nHere are the first steps:\n";
-      top.steps.forEach((s, i) => {
-        response += `${i + 1}. ${s}\n`;
-      });
-      response += "\nTap the link below for the full guide with detailed instructions for each step.";
+    // Lead with wiki article if available (compiled knowledge > raw guide)
+    if (top.type === 'wiki') {
+      response += `**${top.title}** (from our Knowledge Base)\n${top.snippet}\n`;
+      const related = findRelatedWikiPages(top);
+      if (related.length > 0) {
+        const relatedTitles = related
+          .map(slug => wikiPages.find(w => w.slug === slug)?.title)
+          .filter(Boolean);
+        if (relatedTitles.length > 0) {
+          response += `\nRelated topics: ${relatedTitles.join(', ')}`;
+        }
+      }
+      if (guideResults.length > 0) {
+        response += `\n\nI also found ${guideResults.length} step-by-step guide${guideResults.length > 1 ? 's' : ''} with detailed instructions below.`;
+      }
+    } else {
+      response += `**${top.title}**\n${top.snippet}\n`;
+      if (top.steps && top.steps.length > 0) {
+        response += "\nHere are the first steps:\n";
+        top.steps.forEach((s, i) => {
+          response += `${i + 1}. ${s}\n`;
+        });
+        response += "\nTap the link below for full details on each step.";
+      }
+      if (wikiResults.length > 0) {
+        response += `\n\nFor deeper background, check the Knowledge Base article${wikiResults.length > 1 ? 's' : ''} below.`;
+      }
     }
-    response += "\n\nDid that help? If any part was confusing, ask me about it and I will explain it differently.";
+    response += "\n\nDid that help? Ask me about any part you want explained differently.";
   } else {
-    response += `Here is what I found about "${query}":\n\n`;
-    response += `**${top.title}** — ${top.snippet.slice(0, 150)}${top.snippet.length > 150 ? '...' : ''}`;
-    if (results.length > 1) {
-      response += `\n\nI also found ${results.length - 1} more resource${results.length > 2 ? 's' : ''} below.`;
+    // Lead with wiki if high-scoring (compiled knowledge)
+    if (top.type === 'wiki') {
+      response += `From the Knowledge Base: **${top.title}**\n${top.snippet.slice(0, 180)}${top.snippet.length > 180 ? '...' : ''}`;
+    } else {
+      response += `**${top.title}** — ${top.snippet.slice(0, 150)}${top.snippet.length > 150 ? '...' : ''}`;
+    }
+    const otherCount = results.length - 1;
+    if (otherCount > 0) {
+      const types = [];
+      if (wikiResults.length > (top.type === 'wiki' ? 1 : 0)) types.push('knowledge base articles');
+      if (guideResults.length > (top.type === 'guide' ? 1 : 0)) types.push('step-by-step guides');
+      response += `\n\n${otherCount} more result${otherCount > 1 ? 's' : ''} below${types.length > 0 ? ` (${types.join(' and ')})` : ''}.`;
     }
   }
 
@@ -288,7 +335,7 @@ export function TekBot() {
 
   const welcomeMessage = useMemo(() => {
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
-    return `Hi! I'm TekBot — your tech knowledge base.${deviceHint}\n\nI can search across ${guideCount}+ guides and ${wikiCount} topic pages to find answers to any tech question. Ask me anything!`;
+    return `Hi! I'm TekBot — your AI-compiled tech knowledge base.${deviceHint}\n\nI search across ${guideCount}+ guides and ${wikiCount} compiled articles from trusted sources like AARP, FTC, Apple Support, and Google Support. All knowledge is cross-linked and kept up to date.\n\nAsk me anything about technology!`;
   }, [device, guideCount, wikiCount]);
 
   useEffect(() => {
@@ -393,7 +440,7 @@ export function TekBot() {
               <div>
                 <span id="tekbot-heading" className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
                 <span className="text-white/80" style={{ fontSize: 11 }}>
-                  Search {guideCount}+ guides &amp; resources
+                  AI-compiled knowledge base &middot; {guideCount}+ sources
                 </span>
               </div>
             </div>

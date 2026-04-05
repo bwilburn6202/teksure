@@ -46,10 +46,11 @@ function parseSections(md: string): MarkdownSection[] {
   return sections;
 }
 
-/** Render inline markdown: bold, links, inline code */
+/** Render inline markdown: bold, links, inline code, wikilinks */
 function renderInline(text: string): string {
   return text
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[\[([^\]]+)\]\]/g, '<a href="/wiki/$1" class="text-primary underline underline-offset-2 hover:text-primary/80 font-medium">$1</a>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary/80">$1</a>')
     .replace(/`([^`]+)`/g, '<code class="bg-muted px-1.5 py-0.5 rounded text-sm">$1</code>');
 }
