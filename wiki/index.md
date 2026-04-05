@@ -46,6 +46,7 @@ Last updated: 2026-04-05
 | [Map: Staying Safe](synthesis/moc-staying-safe.md) | Hub page connecting all safety-related articles | 6 articles |
 | [Map: Getting Started](synthesis/moc-getting-started.md) | Hub page for beginners — follow the path from step 1 | 8 articles |
 | [Map: Communication](synthesis/moc-communication.md) | Hub page for all communication topics | 5 articles |
+| [LLM Architecture Plan](synthesis/llm-architecture-plan.md) | Custom fine-tuned LLM pipeline — Karpathy-inspired knowledge base approach | 8 sources |
 
 ## Sources
 

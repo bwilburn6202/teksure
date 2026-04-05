@@ -56,6 +56,12 @@ Scraped AARP, FTC, CISA, Tom's Guide, How-To Geek for banking safety, smartphone
 
 Added "Why It Works" explanations to 9 more guides (39 steps): open-close-programs, use-taskbar, create-folder, use-microsoft-edge, manage-windows, restart-pc, setup-email, plus partial coverage on brightness and volume guides. Total: 16 guides, 77 steps with Why It Works content.
 
+## [2026-04-05] architecture | LLM training dataset generator (batch 6)
+
+Built `scripts/generate-training-data.mjs` — converts all TekSure guides + wiki pages into ChatML Q&A pairs for fine-tuning a custom LLM. Generator produces ~2,000 unique training examples from 1,037 guides and 38 wiki pages using 5 strategies: step-by-step guides, practical questions, individual step explanations, category-based rephrasing, and wiki section extraction. Output: JSONL file ready for Unsloth/LoRA fine-tuning.
+
+Added `wiki/synthesis/llm-architecture-plan.md` documenting the full Karpathy-inspired pipeline: raw sources → compiled wiki → ChatML dataset → Unsloth + LoRA fine-tune → GGUF quantization → Ollama serving.
+
 ## [2026-04-04] ingest | April 2026 research ingest
 
 Ingested research from 6 authoritative sources (FTC, AARP, CISA, Google, HHS/NCOA, senior tech sites). Updated files:
