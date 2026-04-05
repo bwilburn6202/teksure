@@ -15,11 +15,22 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
+  FileSearch,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
 
 const tools = [
+  {
+    title: 'Chat with Docs',
+    description: 'Ask questions about tech-support documentation in plain English — AI reads Apple, Google, and Microsoft docs for you.',
+    icon: FileSearch,
+    path: '/tools/doc-browser',
+    color: 'text-cyan-600',
+    bg: 'bg-cyan-50 dark:bg-cyan-950/30',
+    badge: 'AI',
+    category: 'Learning' as ToolCategory,
+  },
   {
     title: 'Phishing URL Scanner',
     description: 'Paste any suspicious link and find out instantly if it\'s safe, risky, or a known phishing trap.',

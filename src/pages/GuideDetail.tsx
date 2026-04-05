@@ -18,6 +18,7 @@ import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } fro
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
+import { ThumbsFeedback } from '@/components/ThumbsFeedback';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
@@ -522,8 +523,11 @@ const GuideDetail = () => {
             </div>
           )}
 
-          {/* Was this helpful? */}
-          <HelpfulSection guideSlug={guide.slug} />
+          {/* Was this helpful? — binary feedback + star rating */}
+          <div className="space-y-6 mb-8">
+            <ThumbsFeedback guideSlug={guide.slug} />
+            <HelpfulSection guideSlug={guide.slug} />
+          </div>
 
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-2 mb-8">

@@ -250,27 +250,177 @@ html.font-size-xxl {
   font-size: 24px;
 }
 
-/* Print styles */
+/* Print styles — optimized for seniors (14pt+ text, high contrast, clean layout) */
 @media print {
+  @page {
+    margin: 0.75in 0.6in;
+    size: letter;
+  }
+
+  /* Hide everything that isn't the guide content */
   header, footer, nav, .no-print, [data-radix-popper-content-wrapper],
-  .fixed, button:not(.print-btn) {
+  .fixed, .sticky, button:not(.print-btn), [role="dialog"],
+  [aria-modal="true"], .sr-only {
     display: none !important;
   }
+
   body {
     color: #000 !important;
     background: #fff !important;
-    font-size: 12pt;
+    font-size: 14pt !important;
+    line-height: 1.6 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  .hero-gradient {
+
+  /* Reset layout for article content */
+  .min-h-screen, .container {
+    min-height: auto !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Guide header */
+  article h1 {
+    font-size: 22pt !important;
+    color: #000 !important;
+    margin-bottom: 0.5em !important;
+    page-break-after: avoid !important;
+  }
+
+  article h2 {
+    font-size: 18pt !important;
+    color: #000 !important;
+    margin-top: 1em !important;
+    page-break-after: avoid !important;
+  }
+
+  article h3 {
+    font-size: 15pt !important;
+    color: #000 !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Guide excerpt / description */
+  article p {
+    font-size: 14pt !important;
+    color: #1a1a1a !important;
+    margin-bottom: 0.75em !important;
+  }
+
+  /* Step cards — keep together on one page when possible */
+  .space-y-10 > div,
+  article > div > div > div[id^="step-"] {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1.5em !important;
+    padding-bottom: 1em !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  /* Step number circles */
+  article div[role="main"] .rounded-full,
+  article .bg-primary.text-primary-foreground {
+    background: #000 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Quick Tip boxes */
+  .bg-amber-50, [class*="amber"] {
+    background: #fffbe6 !important;
+    border: 1px solid #d4a800 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Warning boxes */
+  [class*="destructive"], [class*="red-50"] {
+    background: #fff0f0 !important;
+    border: 1px solid #cc0000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Links — show URL for external links, keep internal clean */
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 11pt;
+    color: #555 !important;
+    word-break: break-all;
+  }
+
+  /* Don't print URL for internal navigation */
+  a[href^="/"]::after {
+    content: "" !important;
+  }
+
+  /* Remove shadows and decorative effects */
+  .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+    box-shadow: none !important;
+  }
+
+  .rounded-xl, .rounded-2xl, .rounded-3xl {
+    border-radius: 0 !important;
+  }
+
+  /* Images — keep visible, scale to fit */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Badges and tags */
+  .badge, [class*="Badge"] {
+    border: 1px solid #999 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Table of contents */
+  [class*="bg-muted"] {
+    background: #f5f5f5 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hero gradients — flatten */
+  .hero-gradient, .mesh-gradient, .glass {
     background: none !important;
     color: #000 !important;
   }
-  a {
-    color: #000 !important;
-    text-decoration: underline;
+
+  /* CTA section at bottom */
+  [class*="bg-muted"].p-10, [class*="rounded-2xl"].p-10 {
+    border: 2px solid #000 !important;
+    padding: 1.5em !important;
+    margin-top: 2em !important;
   }
-  .shadow-sm, .shadow-md, .shadow-lg {
-    box-shadow: none !important;
+
+  /* Progress bar — hide */
+  .Progress, [class*="progress"] {
+    display: none !important;
+  }
+
+  /* Print footer with source */
+  article::after {
+    content: "Printed from TekSure.com — Free tech help for everyone";
+    display: block;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 10pt;
+    color: #666;
+    text-align: center;
   }
 }
 
