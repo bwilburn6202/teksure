@@ -443,11 +443,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-24',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.' },
-      { title: 'Select your printer', content: 'Choose your printer from the dropdown list. Make sure it\'s turned on and connected.' },
-      { title: 'Adjust settings', content: 'Set the number of copies, page range, orientation (portrait/landscape), and paper size.' },
-      { title: 'Preview before printing', content: 'Use the print preview to check how your document will look before using paper and ink.' },
-      { title: 'Click Print', content: 'Once everything looks right, click Print. Your document will be sent to the printer queue.' },
+      { title: 'Open the print dialog', content: 'In any application, press Ctrl+P to open the print dialog. You can also go to File → Print.', whyItWorks: 'Ctrl+P is a universal shortcut — it opens the print dialog in almost every program on every computer. The "P" stands for Print. Learning this one shortcut means you can print from any application.' },
+      { title: 'Select your printer', content: 'Choose your printer from the dropdown list. Make sure it\'s turned on and connected.', whyItWorks: 'Your computer can connect to multiple printers (home, office, wireless). The dropdown list shows which ones are available right now. If your printer is not listed, it is either turned off or not connected.' },
+      { title: 'Adjust settings', content: 'Set the number of copies, page range, orientation (portrait/landscape), and paper size.', whyItWorks: 'Portrait (tall) works for letters and documents. Landscape (wide) works for photos and spreadsheets. Setting the page range lets you print just the pages you need instead of the whole document, saving paper and ink.' },
+      { title: 'Preview before printing', content: 'Use the print preview to check how your document will look before using paper and ink.', whyItWorks: 'What you see on screen does not always match what comes out of the printer — margins, font sizes, and image positions can shift. Preview catches these issues before you waste paper.' },
+      { title: 'Click Print', content: 'Once everything looks right, click Print. Your document will be sent to the printer queue.', whyItWorks: 'The print queue is a waiting line for documents. Your computer sends the file to the printer, which processes it in order. If nothing prints, check the queue — a stuck document might be blocking the line.' },
     ]
   },
 
@@ -481,12 +481,12 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-01-26',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Open File Explorer', content: 'Press Win+E or click the folder icon on the taskbar to open File Explorer.' },
-      { title: 'Navigate using the sidebar', content: 'Use Quick Access, This PC, Desktop, Documents, and Downloads in the left panel to navigate.' },
-      { title: 'Use the address bar', content: 'Click the address bar to type a direct path or folder name to jump to any location.' },
-      { title: 'Change the view', content: 'Use the View menu to switch between Icons, List, Details, and Tiles views depending on your needs.' },
-      { title: 'Search for files', content: 'Use the search box in the top-right to search within the current folder or across your PC.' },
-      { title: 'Use tabs', content: 'In Windows 11, press Ctrl+T to open a new tab in File Explorer for side-by-side file management.' },
+      { title: 'Open File Explorer', content: 'Press Win+E or click the folder icon on the taskbar to open File Explorer.', whyItWorks: 'File Explorer is your computer\'s filing cabinet — it shows every file and folder stored on your machine. Win+E opens it instantly from anywhere, even if another program is in front.' },
+      { title: 'Navigate using the sidebar', content: 'Use Quick Access, This PC, Desktop, Documents, and Downloads in the left panel to navigate.', whyItWorks: 'The sidebar gives you shortcuts to your most important locations. Quick Access shows recently used folders, so the places you visit most are always at the top — no digging required.' },
+      { title: 'Use the address bar', content: 'Click the address bar to type a direct path or folder name to jump to any location.', whyItWorks: 'Every folder on your computer has an address, just like a house has a street address. Typing in the address bar is the fastest way to jump directly to a known location instead of clicking through multiple folders.' },
+      { title: 'Change the view', content: 'Use the View menu to switch between Icons, List, Details, and Tiles views depending on your needs.', whyItWorks: 'Large Icons view is great for photos because you can see thumbnails. Details view is best for documents because it shows the file size, date, and type — helping you find the right version of a file.' },
+      { title: 'Search for files', content: 'Use the search box in the top-right to search within the current folder or across your PC.', whyItWorks: 'Windows indexes your files in the background, building a searchable catalog. When you type a search term, it checks this catalog instead of opening every file — which is why results appear almost instantly.' },
+      { title: 'Use tabs', content: 'In Windows 11, press Ctrl+T to open a new tab in File Explorer for side-by-side file management.', whyItWorks: 'Tabs in File Explorer work just like tabs in a web browser. Instead of opening two separate File Explorer windows to move files between folders, you can switch between tabs in one window — much less cluttered.' },
     ]
   },
   {
@@ -589,11 +589,11 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-02-01',
     difficulty: 'Intermediate',
     steps: [
-      { title: 'Open Windows Update', content: 'Go to Settings → Windows Update to check for available updates.' },
-      { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.' },
-      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your Mac is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.' },
-      { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.' },
-      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.' },
+      { title: 'Open Windows Update', content: 'Go to Settings → Windows Update to check for available updates.', whyItWorks: 'Windows Update is a built-in service that downloads fixes and improvements directly from Microsoft. Keeping it up to date protects you from known security vulnerabilities that hackers actively exploit.' },
+      { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.', whyItWorks: 'Microsoft releases security updates on the second Tuesday of each month (called "Patch Tuesday"), but critical fixes can come at any time. Checking regularly ensures you get these fixes as soon as they are available.' },
+      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your computer is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.', whyItWorks: 'Updates replace old files with new ones. If power is cut during this process, some files can be half-written, which can prevent your computer from starting properly. Always keep it plugged in during updates.' },
+      { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.', whyItWorks: 'Some system files cannot be replaced while Windows is running because they are actively in use. A restart lets Windows swap out these protected files safely before they are loaded again.' },
+      { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.', whyItWorks: 'Active hours tell Windows when you are using your computer so it will not restart and interrupt your work. Setting this correctly means updates happen automatically while you sleep or are away.' },
     ]
   },
   {
