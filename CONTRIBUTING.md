@@ -52,6 +52,12 @@ test: add forum thread tests
 - CSS variables from `index.css` for theme colors
 - Minimum touch target: 44px
 
+**Colors:** Use `teksure-*` tokens for semantic colors (success, warning, info, brand). Raw Tailwind grays are fine for text/borders/backgrounds. Avoid raw greens, reds, ambers, blues for semantic states.
+
+**Section spacing:** Three tiers only — `py-12` (standard), `py-16` (major sections), `py-20` (hero/landing). Do not use `py-10` or `py-24`.
+
+**Icon sizes** (lucide-react): `h-3.5 w-3.5` (inline/small), `h-4 w-4` (buttons/nav), `h-5 w-5` (headers/cards).
+
 ### Accessibility
 
 - Every `<img>` must have `alt` text
