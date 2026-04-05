@@ -1,4 +1,6 @@
 const STORAGE_KEY = 'teksure-guide-progress';
+const STEP_KEY = 'teksure-guide-steps';
+const RECENT_KEY = 'teksure-recent-guides';
 
 export function getCompletedGuides(): Set<string> {
   try {
@@ -25,6 +27,55 @@ export function isGuideCompleted(slug: string): boolean {
 export function clearProgress(): void {
   localStorage.removeItem(STORAGE_KEY);
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+}
+
+export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    if (!raw) return [];
+    const steps = JSON.parse(raw) as Record<string, { step: number; totalSteps: number }>;
+    const completed = getCompletedGuides();
+    return Object.entries(steps)
+      .filter(([slug]) => !completed.has(slug))
+      .map(([slug, { step, totalSteps }]) => ({
+        slug,
+        step,
+        totalSteps,
+        pct: totalSteps > 0 ? Math.round((step / totalSteps) * 100) : 0,
+      }))
+      .sort((a, b) => b.pct - a.pct);
+  } catch {
+    return [];
+  }
+}
+
+export function getRecentGuides(): string[] {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    if (!raw) return [];
+    return JSON.parse(raw) as string[];
+  } catch {
+    return [];
+  }
+}
+
+export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    const steps = raw ? (JSON.parse(raw) as Record<string, { step: number; totalSteps: number }>) : {};
+    steps[slug] = { step, totalSteps };
+    localStorage.setItem(STEP_KEY, JSON.stringify(steps));
+  } catch { /* ignore storage errors */ }
+}
+
+export function recordGuideView(slug: string): void {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    const recent = raw ? (JSON.parse(raw) as string[]) : [];
+    const filtered = recent.filter(s => s !== slug);
+    filtered.unshift(slug);
+    localStorage.setItem(RECENT_KEY, JSON.stringify(filtered.slice(0, 20)));
+  } catch { /* ignore storage errors */ }
 }
 
 export function getProgressCount(totalSlugs?: string[]): { completed: number; total: number; pct: number } {
