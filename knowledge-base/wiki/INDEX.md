@@ -13,8 +13,14 @@
 |---------|---------|
 | [[compounding-knowledge-loop]] | The feedback loop where outputs get filed back into the knowledge base, making each query smarter |
 
+## Design & Development
+| Article | Summary |
+|---------|---------|
+| [[design-conventions]] | Color tokens, section spacing tiers, icon sizing, and component canonical paths |
+
 ## Sources Indexed
 | Raw File | Date | Topic |
 |----------|------|-------|
 | `karpathy-llm-knowledge-bases-2026-04-04.md` | 2026-04-04 | LLM knowledge base concept and workflow |
 | `spisak-knowledge-base-implementation-2026-04-05.md` | 2026-04-05 | Step-by-step implementation guide for LLM knowledge bases |
+| `design-critique-2026-04-04.md` | 2026-04-04 | Automated design review — color, spacing, Navbar, accessibility audit |
