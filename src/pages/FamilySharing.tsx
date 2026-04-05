@@ -18,6 +18,7 @@ interface Member { name: string; email: string; status: 'pending' | 'active'; ad
 export default function FamilySharing() {
   const { user } = useAuth();
   const [members, setMembers] = useState<Member[]>(() => {
+    if (typeof window === 'undefined') return [];
     try { return JSON.parse(localStorage.getItem('teksure-family-members') ?? '[]'); } catch { return []; }
   });
   const [name, setName] = useState('');

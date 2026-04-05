@@ -22,6 +22,7 @@ const CSS_CLASSES: Record<FontSize, string> = {
 
 export function FontSizeToggle() {
   const [size, setSize] = useState<FontSize>(() => {
+    if (typeof window === 'undefined') return 'normal';
     const stored = localStorage.getItem('teksure-font-size');
     return (SIZES.includes(stored as FontSize) ? stored : 'normal') as FontSize;
   });

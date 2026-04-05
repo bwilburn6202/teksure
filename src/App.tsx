@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -19,6 +19,8 @@ import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+const isServer = typeof window === "undefined";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
@@ -140,7 +142,7 @@ function PageLoader() {
 
 /** Offline banner — shown at top of screen when network is lost */
 function OfflineBanner() {
-  const [offline, setOffline] = useState(!navigator.onLine);
+  const [offline, setOffline] = useState(isServer ? false : !navigator.onLine);
   useEffect(() => {
     const goOffline = () => setOffline(true);
     const goOnline  = () => setOffline(false);
@@ -168,12 +170,12 @@ const AppContent = () => {
   const { open, onClose } = useSearchModal();
 
   return (
-    <BrowserRouter>
+    <>
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-sm focus:font-medium">
         Skip to main content
       </a>
       <OfflineBanner />
-      <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />
+      {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
       {/* FloatingChat disabled — TekBot handles all chat */}
@@ -279,19 +281,25 @@ const AppContent = () => {
         </Routes>
         </ErrorBoundary>
       </Suspense>
-    </BrowserRouter>
+    </>
   );
 };
 
-const App = () => (
+/**
+ * AppShell wraps all providers and routes. The router (BrowserRouter or
+ * StaticRouter) is supplied externally by the entry points so the same
+ * component tree works for both client-side and server-side rendering.
+ */
+export const AppShell = ({ children, helmetContext }: { children?: ReactNode; helmetContext?: Record<string, unknown> }) => (
   <ErrorBoundary>
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext ?? {}}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <LanguageProvider>
             <SeniorModeProvider>
               <HighContrastProvider>
                 <AuthProvider>
+                  {children}
                   <AppContent />
                 </AuthProvider>
               </HighContrastProvider>
@@ -301,6 +309,13 @@ const App = () => (
       </QueryClientProvider>
     </HelmetProvider>
   </ErrorBoundary>
+);
+
+/** Default export for backward compatibility (pure SPA / dev fallback) */
+const App = () => (
+  <BrowserRouter>
+    <AppShell />
+  </BrowserRouter>
 );
 
 export default App;

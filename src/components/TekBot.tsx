@@ -42,10 +42,12 @@ interface Message {
 const DEVICE_KEY = 'teksure_tekbot_device';
 
 function loadDevice(): DeviceType {
+  if (typeof window === 'undefined') return null;
   return (localStorage.getItem(DEVICE_KEY) as DeviceType) ?? null;
 }
 
 function saveDevice(d: DeviceType) {
+  if (typeof window === 'undefined') return;
   if (d) localStorage.setItem(DEVICE_KEY, d);
   else localStorage.removeItem(DEVICE_KEY);
 }
@@ -55,6 +57,7 @@ function saveDevice(d: DeviceType) {
 const SESSION_KEY = 'teksure_tekbot_session';
 
 function loadSession(): Message[] {
+  if (typeof window === 'undefined') return [];
   try {
     const raw = sessionStorage.getItem(SESSION_KEY);
     if (!raw) return [];

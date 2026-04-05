@@ -1,6 +1,8 @@
 const STORAGE_KEY = 'teksure-guide-progress';
+const isServer = typeof window === 'undefined';
 
 export function getCompletedGuides(): Set<string> {
+  if (isServer) return new Set();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return new Set();

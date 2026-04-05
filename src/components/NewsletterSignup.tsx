@@ -11,7 +11,7 @@ const STORAGE_KEY = 'teksure-newsletter-email';
 
 export function NewsletterSignup({ variant = 'default', className = '' }: NewsletterSignupProps) {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(!!localStorage.getItem(STORAGE_KEY));
+  const [submitted, setSubmitted] = useState(() => typeof window !== 'undefined' && !!localStorage.getItem(STORAGE_KEY));
   const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {

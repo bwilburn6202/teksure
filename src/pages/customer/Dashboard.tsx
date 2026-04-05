@@ -99,7 +99,7 @@ const Dashboard = () => {
 
   const completed = getCompletedGuides();
   const completedCount = completed.size;
-  const confidenceScore = parseInt(localStorage.getItem('teksure-confidence-score') ?? '0', 10);
+  const confidenceScore = typeof window !== 'undefined' ? parseInt(localStorage.getItem('teksure-confidence-score') ?? '0', 10) : 0;
   const next = nextMilestone(completedCount);
   const progressPct = next ? Math.round((completedCount / next) * 100) : 100;
 

@@ -199,6 +199,7 @@ const Guides = () => {
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
   const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
+    if (typeof window === 'undefined') return 'list';
     try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
   });
   const toggleView = (mode: 'list' | 'grid') => {
