@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
+import { SafeLink } from '@/components/SafeLink';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
@@ -37,14 +38,9 @@ const Accessibility = () => (
             <h2 className="text-2xl font-bold tracking-tight mb-4">What We're Working Toward</h2>
             <p className="text-muted-foreground leading-relaxed">
               We aim to meet the{' '}
-              <a
-                href="https://www.w3.org/WAI/WCAG21/quickref/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline hover:opacity-80"
-              >
+              <SafeLink to="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80">
                 Web Content Accessibility Guidelines (WCAG) 2.1 Level AA
-              </a>{' '}
+              </SafeLink>{' '}
               standard. WCAG is a widely recognized set of recommendations for making websites
               usable by people with disabilities — including those who use screen readers, keyboard
               navigation, or other assistive tools.

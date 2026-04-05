@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ArrowRight, Phone } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
+import { ToolSkeleton } from '@/components/skeletons/ToolSkeleton';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
@@ -492,6 +493,7 @@ export default function Tools() {
         }}
       />
       <Navbar />
+      <ToolSkeleton />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b zone-tools">

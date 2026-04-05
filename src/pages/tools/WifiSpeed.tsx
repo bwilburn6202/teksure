@@ -3,6 +3,7 @@ import { Wifi, ExternalLink, Lightbulb, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
+import { SafeLink } from '@/components/SafeLink';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import {
@@ -56,9 +57,9 @@ const WifiSpeed = () => {
               Click the button below to test your internet speed using Fast.com (powered by Netflix).
             </p>
             <Button asChild size="lg" className="gap-2">
-              <a href="https://fast.com" target="_blank" rel="noopener noreferrer">
+              <SafeLink to="https://fast.com" target="_blank" rel="noopener noreferrer">
                 Test Your Speed <ExternalLink className="h-4 w-4" />
-              </a>
+              </SafeLink>
             </Button>
             <p className="text-xs text-muted-foreground">Opens in a new tab. Free, no sign-up required.</p>
           </CardContent>

@@ -76,7 +76,8 @@ export function Footer() {
           <p className="text-xs text-muted-foreground">
             &copy; {currentYear} TekSure. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6">
+              <Link to="/changelog" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Changelog</Link>
             <Link to="/login" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Sign In</Link>
             <Link to="/signup" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Create Account</Link>
           </div>

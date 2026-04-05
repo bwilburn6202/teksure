@@ -18,12 +18,13 @@ import {
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
+import { saveStepProgress, saveStepProgressToDB, recordGuideView, markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { ReportGuideDialog } from '@/components/ReportGuideDialog';
 import { supabase } from '@/integrations/supabase/client';
 import { ThumbsFeedback } from '@/components/ThumbsFeedback';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
-import { markGuideCompleted, isGuideCompleted, saveStepProgress, recordGuideView } from '@/lib/progress';
+// Consolidated import above; removed duplicate
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { useAuth } from '@/contexts/AuthContext';
@@ -293,10 +294,18 @@ const GuideDetail = () => {
 
   // Save step-level progress as user scrolls
   useEffect(() => {
-    if (slug && stepCount > 0) {
-      saveStepProgress(slug, activeStep, stepCount);
-    }
-  }, [activeStep, slug, stepCount]);
+    const save = async () => {
+      if (slug && stepCount > 0) {
+        // If user is signed in, persist to DB; otherwise fall back to local storage
+        if (typeof user?.id === 'string') {
+          await saveStepProgressToDB(slug, user.id, activeStep, stepCount);
+        } else {
+          saveStepProgress(slug, activeStep, stepCount);
+        }
+      }
+    };
+    save();
+  }, [activeStep, slug, stepCount, user?.id]);
 
   if (!guide) return <Navigate to="/guides" replace />;
 
@@ -642,8 +651,9 @@ const GuideDetail = () => {
               onClose={() => setReportOpen(false)}
               slug={guide.slug}
               onSubmit={async (payload) => {
+                const payloadWithUser = { ...payload, user_id: user?.id ?? null, guide_slug: slug, created_at: new Date().toISOString() } as any
                 try {
-                  await (supabase as any).from('guide_reports').insert(payload);
+                  await (supabase as any).from('guide_reports').insert(payloadWithUser);
                   setReportOpen(false);
                   alert('Thanks for the report.');
                 } catch (err) {
@@ -654,7 +664,7 @@ const GuideDetail = () => {
             />
           </div>
 
-          <!-- Removed duplicate placeholder for report flow; dialog is above -->
+          {/* Removed duplicate placeholder for report flow; dialog is above */}
 
           {/* Related Guides */}
           {relatedGuides.length > 0 && (

@@ -10,5 +10,11 @@
 - Testing Plan: "Draft a minimal test plan targeting 60%+ coverage for critical modules with unit and integration tests."
 - Content Strategy: "Propose a US-centric content plan with 6 new guides, 2 video walkthroughs, and a refresh schedule."
 
+- Additional Prompts:
+- Phase Planning: "Draft a three-phase rollout for a new feature, including goals, risks, dependencies, and a 2-week sprint plan."
+- Rollback Plan: "Provide a rollback plan for a failed deployment, including SQL migrations and code flips."
+- Data Migration: "Design a migration for adding a new table; provide up/down SQL and a rollback strategy."
+- Accessibility: "Provide a 15-point WCAG 2.1 AA audit with fixes prioritized by impact."
+
 ---
 Tip: When you want a concrete patch, ask for a diff, and specify the target area (auth, UI, data, etc.).

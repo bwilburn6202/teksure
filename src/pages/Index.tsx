@@ -284,6 +284,7 @@ const Index = () => {
         ]}
       />
       <Navbar />
+      <ContinueWhereYouLeftOff />
 
       {/* ── Conversational Hero ───────────────────────────── */}
       <section className="relative overflow-hidden mesh-gradient">

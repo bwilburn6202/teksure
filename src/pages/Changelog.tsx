@@ -4,9 +4,9 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 
 const entries = [
-  { date: '2026-04-01', text: 'Phase 1: Core refactor for accessibility and routing stability.' },
-  { date: '2026-03-20', text: 'Added TekSure AI tip prompts and content strategy.' },
-  { date: '2026-03-01', text: 'Migrated forum RLs and started command palette.' },
+  { date: '2026-04-16', text: 'Phase 3: Added end-to-end report-broken-guide flow and saved to guide_reports; SafeLink external anchors; canonical SEO; data-guides index; tool skeletons.' },
+  { date: '2026-04-01', text: 'Phase 2 milestone: skeletons, RLs, command palette, and progress hooks.' },
+  { date: '2026-03-25', text: 'Phase 1: Accessibility, routing stability, and UI polish.' },
 ]
 
 export function Changelog() {
