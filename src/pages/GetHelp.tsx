@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2 } from 'lucide-react';
+import { Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -10,6 +10,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import { Link } from 'react-router-dom';
 
 const deviceTypes = [
   { value: 'phone', label: 'Phone' },
@@ -18,6 +19,15 @@ const deviceTypes = [
   { value: 'tv', label: 'TV / Streaming Device' },
   { value: 'smart-home', label: 'Smart Home Device' },
   { value: 'other', label: 'Other' },
+];
+
+const commonIssues = [
+  { emoji: '📶', label: 'WiFi not working', query: 'wifi' },
+  { emoji: '🐌', label: 'Computer is slow', query: 'slow' },
+  { emoji: '🖨️', label: 'Printer problems', query: 'printer' },
+  { emoji: '🔑', label: 'Forgot password', query: 'password' },
+  { emoji: '⚠️', label: 'Virus or pop-ups', query: 'virus' },
+  { emoji: '📱', label: 'Phone issues', query: 'phone' },
 ];
 
 const GetHelp = () => {
@@ -60,8 +70,6 @@ const GetHelp = () => {
       return;
     }
 
-    // Fire-and-forget confirmation + admin notification emails.
-    // Non-blocking — form succeeds even if email fails.
     supabase.functions.invoke('send-help-confirmation', {
       body: {
         name: name.trim() || undefined,
@@ -81,9 +89,7 @@ const GetHelp = () => {
         <SEOHead title="Get Help — TekSure" description="Submit a help request to TekSure." path="/get-help" />
         <Navbar />
         <main id="main-content" tabIndex={-1} className="flex-1 flex items-center justify-center px-4 py-20 outline-none">
-          <div
-            className="max-w-md w-full text-center space-y-6"
-          >
+          <div className="max-w-md w-full text-center space-y-6">
             <div className="flex justify-center">
               <div className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center">
                 <CheckCircle className="h-10 w-10 text-primary" />
@@ -110,150 +116,169 @@ const GetHelp = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <SEOHead title="Get Help — TekSure" description="Tell us what's going on and we'll reach out to help." path="/get-help" />
+      <SEOHead title="Get Help — TekSure" description="Tell us what's going on and we'll get someone real to help you." path="/get-help" />
       <Navbar />
 
-      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col py-20 px-4 outline-none">
-        <div className="max-w-2xl w-full mx-auto">
+      <main id="main-content" tabIndex={-1} className="flex-1 py-16 md:py-24">
+        <div className="container max-w-2xl mx-auto px-4">
 
-          {/* Header */}
-          <div
-            className="text-center mb-16 border-b border-border pb-12"
-          >
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Get Tech Help</h1>
-            <p className="text-muted-foreground text-lg">
-              Tell us what's happening and we'll get someone real to help you.
+          {/* Conversational header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <Sparkles className="h-4 w-4" />
+              Real humans, real help
+            </div>
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">What's going on?</h1>
+            <p className="text-muted-foreground text-lg max-w-md mx-auto">
+              Tell us what's happening and we'll get someone to help you. No jargon, no rush.
             </p>
           </div>
 
-          <form
-            onSubmit={handleSubmit}
-            className="space-y-8"
-          >
-
-            {/* Contact Section */}
-            <div className="space-y-4">
-              <div>
-                <p className="text-sm font-semibold text-primary mb-1">How should we reach you?</p>
-                <p className="text-xs text-muted-foreground">Phone is preferred — we can text or call.</p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-primary" />
-                    Phone Number <span className="text-primary font-semibold">★</span>
-                  </Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="(555) 867-5309"
-                    value={phone}
-                    onChange={e => setPhone(e.target.value)}
-                    className="h-11 text-base rounded-xl border-border"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm font-medium flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-muted-foreground" />
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@email.com"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                    className="h-11 text-base rounded-xl border-border"
-                  />
-                </div>
-              </div>
+          {/* Quick issue picker */}
+          <div className="mb-10">
+            <p className="text-sm font-medium text-muted-foreground mb-3 text-center">Or pick a common issue — we'll pre-fill the form:</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+              {commonIssues.map((issue) => (
+                <Link
+                  key={issue.query}
+                  to={`/guides?q=${encodeURIComponent(issue.query)}`}
+                  className="flex items-center gap-2 p-3 rounded-xl border border-border bg-card hover:bg-accent/50 hover:border-primary/30 transition-all text-left"
+                >
+                  <span className="text-lg">{issue.emoji}</span>
+                  <span className="text-sm font-medium">{issue.label}</span>
+                </Link>
+              ))}
             </div>
+          </div>
 
-            {/* Optional Info */}
-            <div className="space-y-4 border-t border-border pt-8">
-              <div>
-                <p className="text-sm font-semibold text-primary mb-1">Additional info (optional)</p>
-              </div>
+          {/* Form */}
+          <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
 
+              {/* Contact info */}
               <div className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-sm font-medium flex items-center gap-2">
-                    <User className="h-4 w-4 text-muted-foreground" />
-                    Your Name
-                  </Label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="First name is fine"
-                    value={name}
-                    onChange={e => setName(e.target.value)}
-                    className="h-11 text-base rounded-xl border-border"
-                  />
+                <div>
+                  <p className="text-sm font-semibold text-primary mb-1">How should we reach you?</p>
+                  <p className="text-xs text-muted-foreground">Phone is preferred — we can text or call.</p>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="device" className="text-sm font-medium flex items-center gap-2">
-                    <Monitor className="h-4 w-4 text-muted-foreground" />
-                    Device type
-                  </Label>
-                  <Select value={deviceType} onValueChange={setDeviceType}>
-                    <SelectTrigger id="device" className="h-11 text-base rounded-xl border-border">
-                      <SelectValue placeholder="Pick one (optional)" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {deviceTypes.map(d => (
-                        <SelectItem key={d.value} value={d.value}>{d.label}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-primary" />
+                      Phone Number
+                    </Label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      placeholder="(555) 867-5309"
+                      value={phone}
+                      onChange={e => setPhone(e.target.value)}
+                      className="h-11 text-base rounded-xl border-border"
+                    />
+                  </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="description" className="text-sm font-medium flex items-center gap-2">
-                    <MessageSquare className="h-4 w-4 text-muted-foreground" />
-                    What's going on?
-                  </Label>
-                  <Textarea
-                    id="description"
-                    placeholder="Describe your issue in plain English — no jargon needed!"
-                    value={description}
-                    onChange={e => setDescription(e.target.value)}
-                    rows={4}
-                    className="text-base resize-none rounded-xl border-border"
-                  />
+                  <div className="space-y-2">
+                    <Label htmlFor="email" className="text-sm font-medium flex items-center gap-2">
+                      <Mail className="h-4 w-4 text-muted-foreground" />
+                      Email Address
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="you@email.com"
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                      className="h-11 text-base rounded-xl border-border"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {error && (
-              <div
-                role="alert"
-                className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm"
-              >
-                {error}
+              {/* Optional info */}
+              <div className="space-y-4 border-t border-border pt-6">
+                <div>
+                  <p className="text-sm font-semibold text-primary mb-1">A bit more info (optional)</p>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name" className="text-sm font-medium flex items-center gap-2">
+                      <User className="h-4 w-4 text-muted-foreground" />
+                      Your Name
+                    </Label>
+                    <Input
+                      id="name"
+                      type="text"
+                      placeholder="First name is fine"
+                      value={name}
+                      onChange={e => setName(e.target.value)}
+                      className="h-11 text-base rounded-xl border-border"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="device" className="text-sm font-medium flex items-center gap-2">
+                      <Monitor className="h-4 w-4 text-muted-foreground" />
+                      Device type
+                    </Label>
+                    <Select value={deviceType} onValueChange={setDeviceType}>
+                      <SelectTrigger id="device" className="h-11 text-base rounded-xl border-border">
+                        <SelectValue placeholder="Pick one (optional)" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {deviceTypes.map(d => (
+                          <SelectItem key={d.value} value={d.value}>{d.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="description" className="text-sm font-medium flex items-center gap-2">
+                      <MessageSquare className="h-4 w-4 text-muted-foreground" />
+                      What's going on?
+                    </Label>
+                    <Textarea
+                      id="description"
+                      placeholder="Describe your issue in plain English — no jargon needed!"
+                      value={description}
+                      onChange={e => setDescription(e.target.value)}
+                      rows={4}
+                      className="text-base resize-none rounded-xl border-border"
+                    />
+                  </div>
+                </div>
               </div>
-            )}
 
-            <Button
-              type="submit"
-              disabled={submitting}
-              aria-busy={submitting}
-              className="w-full h-11 text-base gap-2 rounded-xl mt-8"
-              size="lg"
-            >
-              {submitting ? (
-                <><Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> Sending...</>
-              ) : (
-                <>Send Request <ArrowRight className="h-4 w-4" aria-hidden="true" /></>
+              {error && (
+                <div
+                  role="alert"
+                  className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm"
+                >
+                  {error}
+                </div>
               )}
-            </Button>
 
-            <p className="text-center text-xs text-muted-foreground">
-              No spam. No sales pitch. Just real tech help.
-            </p>
-          </form>
+              <Button
+                type="submit"
+                disabled={submitting}
+                aria-busy={submitting}
+                className="w-full h-11 text-base gap-2 rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-shadow"
+                size="lg"
+              >
+                {submitting ? (
+                  <><Loader2 className="h-4 w-4 animate-spin" /> Sending...</>
+                ) : (
+                  <>Send Request <ArrowRight className="h-4 w-4" /></>
+                )}
+              </Button>
+
+              <p className="text-center text-xs text-muted-foreground">
+                No spam. No sales pitch. Just real tech help.
+              </p>
+            </form>
+          </div>
         </div>
       </main>
 

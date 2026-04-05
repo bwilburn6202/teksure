@@ -1,9 +1,8 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Check, Shield, Clock, Star, Monitor, Home, Award } from 'lucide-react';
+import { Check, Shield, Clock, Star, Monitor, Home, Award, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const plans = [
@@ -124,9 +123,8 @@ const Pricing = () => (
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-12 md:py-16 text-center">
-          <div
-          >
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Simple, Transparent Pricing</h1>
+          <div>
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Simple, Honest Pricing</h1>
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
               No subscriptions. No hidden fees. Pay only for the help you need.
             </p>
@@ -136,46 +134,45 @@ const Pricing = () => (
       </section>
 
       {/* Plans */}
-      <section className="container py-12">
+      <section className="container py-12 md:py-16">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mb-12">
-          {plans.map((plan, i) => (
-            <div
-              key={plan.name}
-            >
-              <Card className={`relative flex flex-col h-full rounded-2xl border ${plan.popular ? 'border-primary bg-primary/5' : 'border-border bg-card'}`}>
+          {plans.map((plan) => (
+            <div key={plan.name}>
+              <div className={`relative flex flex-col h-full rounded-3xl border p-6 md:p-8 transition-all ${
+                plan.popular
+                  ? 'border-primary bg-primary/[0.03] shadow-lg shadow-primary/10'
+                  : 'border-border bg-card hover:shadow-md'
+              }`}>
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
                     Most Popular
                   </div>
                 )}
-                <CardHeader className="text-center pb-2 pt-8">
-                  <div className="flex justify-center mb-2">{(() => { const PIcon = plan.icon; return <PIcon className="h-10 w-10 text-primary" />; })()}</div>
-                  <CardTitle className="text-xl">{plan.name}</CardTitle>
-                  <div className="text-5xl font-bold mt-2 tracking-tight">{plan.price}</div>
-                  <p className="text-xs text-primary font-medium mt-1">Book with just a {plan.deposit} deposit</p>
-                  <p className="text-sm text-muted-foreground mt-2">{plan.desc}</p>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-1">
-                  <ul className="space-y-3 mb-8 flex-1">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm">
-                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className="w-full rounded-xl" variant={plan.popular ? 'default' : 'outline'}>
-                    <Link to="/book">Book Now</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+                <div className="text-center mb-6 pt-2">
+                  <div className="flex justify-center mb-3">{(() => { const PIcon = plan.icon; return <PIcon className="h-10 w-10 text-primary" />; })()}</div>
+                  <h3 className="text-xl font-bold mb-1">{plan.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{plan.desc}</p>
+                  <div className="text-5xl font-bold tracking-tight">{plan.price}</div>
+                  <p className="text-xs text-primary font-medium mt-2">Book with just a {plan.deposit} deposit</p>
+                </div>
+                <ul className="space-y-3 mb-8 flex-1">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild className="w-full rounded-xl" variant={plan.popular ? 'default' : 'outline'}>
+                  <Link to="/book">Book Now</Link>
+                </Button>
+              </div>
             </div>
           ))}
         </div>
 
-        <div
-          className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8"
-        >
+        {/* Deposit explainer */}
+        <div className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8">
           <h3 className="font-semibold text-base mb-2">How the deposit works</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Book with just a <strong className="text-foreground">$15 deposit</strong>. Pay the rest on the day of your appointment.
@@ -183,9 +180,7 @@ const Pricing = () => (
           </p>
         </div>
 
-        <p
-          className="text-center text-sm text-muted-foreground"
-        >
+        <p className="text-center text-sm text-muted-foreground">
           Not sure which plan you need?{' '}
           <Link to="/book" className="text-primary font-semibold hover:opacity-80 transition-opacity">
             Book a free consultation
@@ -196,9 +191,7 @@ const Pricing = () => (
 
       {/* Trust badges */}
       <section className="bg-muted/40 border-t border-border py-12">
-        <div
-          className="container max-w-3xl"
-        >
+        <div className="container max-w-3xl">
           <div className="grid sm:grid-cols-3 gap-8">
             {trustBadges.map(({ icon: Icon, label, sub }) => (
               <div key={label} className="text-center">
@@ -209,6 +202,26 @@ const Pricing = () => (
                 <p className="text-xs text-muted-foreground">{sub}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="hero-gradient text-white">
+        <div className="container py-12 md:py-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Ready to get your tech working?
+          </h2>
+          <p className="text-white/80 mb-8 max-w-md mx-auto">
+            Book a session today. A real person will help you — no jargon, no runaround.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
+              <Link to="/book">Book a Session <ArrowRight className="h-4 w-4" /></Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
+              <Link to="/get-help">Get Free Help</Link>
+            </Button>
           </div>
         </div>
       </section>
