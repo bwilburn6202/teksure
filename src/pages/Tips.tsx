@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
-  summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
-  full: 'Both iPhones and Android phones have a Medical ID or Emergency Information feature that displays your emergency contacts and basic health details right from the lock screen — no passcode needed. This means if something happens to you, a first responder can quickly find out who to call and what medications you take. On iPhone: Open the Health app (the white icon with a red heart), tap your profile picture in the top right, then tap Medical ID. Fill in your emergency contacts, medical conditions, allergies, and blood type, then make sure "Show When Locked" is turned on. On Android: Open the Settings app, tap Safety & Emergency (or search for "emergency"), then tap Emergency Information. Add your emergency contacts and any medical details. To make sure it works, lock your phone and try it yourself: on iPhone, tap Emergency on the lock screen, then Medical ID. On Android, swipe up on the lock screen and tap Emergency, then tap Emergency Information twice. Tell a family member or friend that this information is there — so they know to check if they ever need to help someone else, too.',
+  title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
+  summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
+  full: 'Scam text messages (sometimes called "smishing") are one of the fastest-growing threats right now. They pretend to be from your bank, a delivery service, or the IRS — and they want you to tap a link or call a number. The safest rule: never tap a link in a text from someone you do not know. On iPhone: Open the spam message, tap the sender\'s number at the top, tap the info (i) button, then scroll down and tap "Block this Caller." You can also turn on a built-in spam filter by going to Settings, then Messages, and switching on "Filter Unknown Senders" — this moves texts from people not in your contacts into a separate list so they will not bother you. On Android: Open the message, tap the three-dot menu in the top right corner, and choose "Block" or "Report spam." You can also open the Messages app, go to Settings, then Spam Protection, and make sure it is turned on. To report a scam text to your carrier, forward it to 7726 (which spells SPAM on your keypad) — this works on AT&T, T-Mobile, and Verizon. If you already tapped a suspicious link, change any passwords you may have entered and keep an eye on your bank statements for unusual charges.',
   category: 'Safety',
-  icon: Heart,
+  icon: Ban,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
+    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
+    category: 'Safety',
+    icon: Heart,
+  },
   {
     title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
     summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
