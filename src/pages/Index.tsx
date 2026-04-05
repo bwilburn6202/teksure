@@ -4,16 +4,19 @@ import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
-  MessageCircle, Zap, Users, Star
+  MessageCircle, Zap, Users, Star, PlayCircle, Clock
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
+import { Progress } from '@/components/ui/progress';
+import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
-import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { getInProgressGuides, getRecentGuides } from '@/lib/progress';
 
 const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
@@ -120,6 +123,89 @@ function RevealSection({ children, className = '' }: { children: React.ReactNode
   return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
 }
 
+function ContinueWhereYouLeftOff() {
+  const [inProgress, setInProgress] = useState<{ slug: string; step: number; totalSteps: number; pct: number }[]>([]);
+  const [recentSlugs, setRecentSlugs] = useState<string[]>([]);
+
+  useEffect(() => {
+    setInProgress(getInProgressGuides().slice(0, 3));
+    setRecentSlugs(getRecentGuides().slice(0, 6));
+  }, []);
+
+  useEffect(() => {
+    const handler = () => {
+      setInProgress(getInProgressGuides().slice(0, 3));
+      setRecentSlugs(getRecentGuides().slice(0, 6));
+    };
+    window.addEventListener('teksure-progress-update', handler);
+    return () => window.removeEventListener('teksure-progress-update', handler);
+  }, []);
+
+  if (inProgress.length === 0 && recentSlugs.length === 0) return null;
+
+  return (
+    <section className="border-y bg-muted/30">
+      <div className="container py-10">
+        {inProgress.length > 0 && (
+          <div className="mb-8">
+            <div className="flex items-center gap-2 mb-4">
+              <PlayCircle className="h-5 w-5 text-primary" />
+              <h2 className="text-xl font-bold">Continue where you left off</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {inProgress.map(item => {
+                const guide = guides.find(g => g.slug === item.slug);
+                if (!guide) return null;
+                return (
+                  <Link key={item.slug} to={`/guides/${item.slug}`} className="block">
+                    <Card className="h-full hover:shadow-md transition-shadow group">
+                      <CardContent className="pt-5">
+                        <div className="flex items-start gap-3">
+                          <img src={getGuideThumbnailSmall(guide)} alt="" className="w-10 h-10 rounded-lg object-cover shrink-0" loading="lazy" decoding="async" width="40" height="40" />
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{guide.title}</p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Progress value={item.pct} className="h-1.5 flex-1" />
+                              <span className="text-xs text-muted-foreground whitespace-nowrap">Step {item.step + 1}/{item.totalSteps}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {recentSlugs.length > 0 && (
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <Clock className="h-5 w-5 text-muted-foreground" />
+              <h2 className="text-lg font-semibold">Recently viewed</h2>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {recentSlugs.map(slug => {
+                const guide = guides.find(g => g.slug === slug);
+                if (!guide) return null;
+                return (
+                  <Link key={slug} to={`/guides/${guide.slug}`}>
+                    <Badge variant="outline" className="gap-1.5 px-3 py-1.5 text-sm hover:bg-muted transition-colors cursor-pointer min-h-[44px]">
+                      <img src={getGuideThumbnailSmall(guide)} alt="" className="w-4 h-4 rounded object-cover" loading="lazy" decoding="async" width="16" height="16" />
+                      {guide.title}
+                    </Badge>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 const Index = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
@@ -199,6 +285,9 @@ const Index = () => {
         <div className="container relative pt-20 pb-16 md:pt-28 md:pb-24">
           <div className="max-w-3xl mx-auto text-center">
             {/* Greeting */}
+            {/* Hidden h1 for SEO — the conversational design is for UX */}
+            <h1 className="sr-only">TekSure — Free Tech Help for Beginners &amp; Seniors</h1>
+
             <div className="conversation-bubble mb-8 animate-float">
               <div className="flex items-start gap-3 text-left">
                 <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center shrink-0">
@@ -258,6 +347,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Continue where you left off ─────────────────── */}
+      <ContinueWhereYouLeftOff />
 
       {/* ── Stats strip ─────────────────────────────────── */}
       <RevealSection>
@@ -414,7 +506,7 @@ const Index = () => {
               <Link to={`/guides/${guide.slug}`} className="block h-full">
                 <div className="bento-card h-full group overflow-hidden p-0">
                   <div className="h-36 overflow-hidden bg-muted">
-                    <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+                    <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" decoding="async" width="600" height="400" />
                   </div>
                   <div className="p-5 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-3">

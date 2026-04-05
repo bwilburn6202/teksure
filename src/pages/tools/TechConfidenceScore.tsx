@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -79,6 +80,11 @@ export default function TechConfidenceScore() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Tech Confidence Score — Find Your Level & Learning Path | TekSure"
+        description="Take a 10-question quiz to find out your true tech confidence level. Get a personalized learning plan matched to your result."
+        path="/tools/confidence-score"
+      />
       <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">

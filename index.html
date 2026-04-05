@@ -4,6 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="dns-prefetch" href="https://vrhxitxzqtbphzsbdqih.supabase.co" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TekSure — Free Tech Help for Beginners &amp; Seniors</title>
@@ -13,57 +15,54 @@
     <link rel="apple-touch-icon" href="/favicon-192.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#1a3560" />
-    <style>
-      /* Hide Lovable "Edit with Lovable" badge */
-      [id*="lovable"], [class*="lovable"], [id*="gptengineer"], [class*="gptengineer"],
-      a[href*="lovable.dev"][style*="position: fixed"] { display: none !important; }
-    </style>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="TekSure" />
-    <meta
-      name="description"
-      content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
-    />
-    <meta name="author" content="" />
-
-    <!-- TODO: Update og:title to match your application name -->
-
+    <meta name="description" content="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers." />
+    <meta name="author" content="TekSure" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="TekSure" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aedf8f51-c1aa-464b-887c-27dff1594553/id-preview-98b98c84--1b4a70fb-3796-4915-a8a6-8f75bb0b2587.lovable.app-1772487566674.png"
-    />
-
+    <meta property="og:url" content="https://teksure.com" />
+    <meta property="og:title" content="TekSure — Free Tech Help for Beginners &amp; Seniors" />
+    <meta property="og:description" content="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers." />
+    <meta property="og:image" content="https://teksure.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="" />
-    <meta
-      name="twitter:image"
-      content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aedf8f51-c1aa-464b-887c-27dff1594553/id-preview-98b98c84--1b4a70fb-3796-4915-a8a6-8f75bb0b2587.lovable.app-1772487566674.png"
-    />
-    <meta property="og:title" content="TekSure" />
-    <meta name="twitter:title" content="TekSure" />
-    <meta
-      property="og:description"
-      content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
-    />
-    <meta
-      name="twitter:description"
-      content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
-    />
+    <meta name="twitter:site" content="@teksure" />
+    <meta name="twitter:creator" content="@teksure" />
+    <meta name="twitter:title" content="TekSure — Free Tech Help for Beginners &amp; Seniors" />
+    <meta name="twitter:description" content="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers." />
+    <meta name="twitter:image" content="https://teksure.com/og-image.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TekSure",
+      "url": "https://teksure.com",
+      "logo": "https://teksure.com/og-image.png",
+      "description": "Free step-by-step tech guides for seniors and beginners. Plain English. No jargon.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@teksure.com",
+        "availableLanguage": "English"
+      },
+      "sameAs": []
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Register service worker for offline support
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {
-            // SW registration failed — app still works online
-          });
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
         });
       }
     </script>

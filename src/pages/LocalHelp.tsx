@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -58,6 +59,11 @@ export default function LocalHelp() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Find Local Tech Help — Libraries, Classes & Community Support | TekSure"
+        description="Find free local tech help near you — libraries, adult education, community groups, repair cafes, and senior centers offering digital skills support."
+        path="/local-help"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14">

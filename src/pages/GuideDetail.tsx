@@ -20,7 +20,7 @@ import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { ThumbsFeedback } from '@/components/ThumbsFeedback';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
-import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
+import { markGuideCompleted, isGuideCompleted, saveStepProgress, recordGuideView } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { useAuth } from '@/contexts/AuthContext';
 
@@ -259,11 +259,21 @@ const GuideDetail = () => {
   const stepCount = guide?.steps?.length || 0;
   const { activeStep, stepsRef } = useStepProgress(stepCount);
 
+  // Record this guide as recently viewed
+  useEffect(() => {
+    if (slug) recordGuideView(slug);
+  }, [slug]);
+
+  // Save step-level progress as user scrolls
+  useEffect(() => {
+    if (slug && stepCount > 0) {
+      saveStepProgress(slug, activeStep, stepCount);
+    }
+  }, [activeStep, slug, stepCount]);
+
   if (!guide) return <Navigate to="/guides" replace />;
 
-  if (!user) {
-    return <Navigate to="/login" state={{ message: 'Create a free account to read this guide.', from: location.pathname }} replace />;
-  }
+  // Guides are readable by everyone; auth is only required for interactive actions (rating, bookmarking, progress)
 
   const currentIndex = guides.findIndex(g => g.slug === slug);
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
@@ -353,7 +363,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
+            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -525,7 +535,7 @@ const GuideDetail = () => {
 
           {/* Was this helpful? — binary feedback + star rating */}
           <div className="space-y-6 mb-8">
-            <ThumbsFeedback guideSlug={guide.slug} />
+            <ThumbsFeedback slug={guide.slug} />
             <HelpfulSection guideSlug={guide.slug} />
           </div>
 
@@ -586,7 +596,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" decoding="async" width="40" height="40" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>

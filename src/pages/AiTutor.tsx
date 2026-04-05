@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -88,6 +89,11 @@ export default function AiTutor() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="AI Tutor — Learn Tech at Your Own Pace | TekSure"
+        description="Learn technology at your own pace with a friendly AI tutor that adapts to your skill level. Ask anything and get clear, plain-English answers."
+        path="/ai-tutor"
+      />
       <Navbar />
       <main className="flex-1 container max-w-3xl py-8">
         <div className="flex items-center justify-between mb-6 pb-6 border-b border-border">

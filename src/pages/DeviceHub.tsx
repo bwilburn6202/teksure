@@ -187,7 +187,7 @@ const DeviceHub = () => {
                     <Link to={`/guides/${guide.slug}`}>
                       <Card className="h-full rounded-2xl border border-border bg-card hover:border-primary/30 transition-all hover:shadow-sm group">
                         <CardContent className="pt-6 pb-5">
-                          <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" />
+                          <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" decoding="async" width="600" height="400" />
                           <div className="flex items-center gap-2 mb-3">
                             <Badge variant="outline" className="text-xs rounded-lg">
                               {categoryLabels[guide.category]}

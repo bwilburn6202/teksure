@@ -13,7 +13,6 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@google/genai": "^1.48.0",
     "@hookform/resolvers": "^3.10.0",
     "@playwright/test": "^1.58.2",
     "@radix-ui/react-accordion": "^1.2.11",

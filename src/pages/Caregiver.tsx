@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -35,6 +36,11 @@ const tips = [
 export default function Caregiver() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Caregiver Dashboard — Support Your Loved One with Technology | TekSure"
+        description="As a caregiver, you can share guides, book tech support, and monitor progress for the person you support. Built for families helping older relatives with technology."
+        path="/caregiver"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14">

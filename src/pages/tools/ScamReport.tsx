@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -86,6 +87,11 @@ export default function ScamReport() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Report a Scam — Help Protect the TekSure Community | TekSure"
+        description="Spotted a scam? Report it to TekSure. Your report helps protect others in the community and contributes to awareness of common online threats."
+        path="/tools/scam-report"
+      />
       <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">

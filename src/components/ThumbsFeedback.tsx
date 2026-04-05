@@ -6,6 +6,8 @@
 
 import { useState, useEffect } from 'react';
 import { ThumbsUp, ThumbsDown, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 
@@ -35,6 +37,7 @@ function saveFeedback(slug: string, data: FeedbackData) {
 }
 
 export function ThumbsFeedback({ slug }: { slug: string }) {
+  const { user } = useAuth();
   const [vote, setVote] = useState<'up' | 'down' | null>(() => getFeedback(slug)?.vote ?? null);
   const [comment, setComment] = useState('');
   const [submitted, setSubmitted] = useState(!!getFeedback(slug));
@@ -81,6 +84,14 @@ export function ThumbsFeedback({ slug }: { slug: string }) {
     localStorage.removeItem(STORAGE_PREFIX + slug);
   };
 
+  if (!user) {
+    return (
+      <div className="rounded-xl border border-border bg-muted/30 px-6 py-5 text-center">
+        <p className="text-sm text-muted-foreground mb-2">Sign in to provide feedback</p>
+        <Link to="/login" className="text-xs text-primary">Sign In</Link>
+      </div>
+    );
+  }
   if (submitted && vote) {
     return (
       <div className="rounded-xl border border-border bg-muted/30 px-6 py-5 text-center">

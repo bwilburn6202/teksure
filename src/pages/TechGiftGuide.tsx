@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -54,6 +55,11 @@ export default function TechGiftGuide() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Tech Gift Guide — Perfect Gifts for Anyone Who Uses Technology | TekSure"
+        description="Curated tech gift recommendations for every budget and recipient — from tablets to smart plugs. Handpicked for real people, not tech enthusiasts."
+        path="/gift-guide"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14 text-center">
