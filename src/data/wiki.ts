@@ -1582,6 +1582,234 @@ Technology gives you many ways to stay in touch with family, friends, doctors, a
 
 (This is a Map of Content — a hub page that connects related articles in our knowledge base)`,
   },
+  {
+    slug: 'apple',
+    title: 'Apple Ecosystem',
+    category: 'entity',
+    tags: ['apple', 'iphone', 'ipad', 'mac', 'icloud', 'facetime'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['android', 'smartphone-basics', 'device-basics'],
+    content: `## What Is Apple?
+
+Apple makes the iPhone, iPad, and Mac computers. All Apple devices work together through your **Apple Account** (formerly Apple ID), which connects your email, photos, purchases, and settings across every device.
+
+## Key Devices
+
+- **iPhone** — Apple's smartphone for calls, texts, photos, apps, and browsing
+- **iPad** — A tablet with a larger screen, great for reading and video calls
+- **Mac** — Apple's desktop and laptop computers, running macOS
+
+## Important Features
+
+- **iCloud** — Cloud storage that backs up photos, contacts, and files automatically (5 GB free)
+- **FaceTime** — Free video and audio calls to other Apple users
+- **App Store** — Where you download apps (blue icon with white "A")
+- **iMessage** — Apple's texting (blue bubbles between Apple devices)
+- **Siri** — Voice assistant: say "Hey Siri" to ask questions or set reminders
+
+## Common Tasks
+
+- **Update your device:** Settings > General > Software Update
+- **Take a screenshot:** Press Side button + Volume Up at the same time
+- **Find a lost device:** Use the Find My app or visit icloud.com/find
+
+## Official Support
+
+- Apple Support: support.apple.com
+- Apple Support app (free on the App Store)
+- Call Apple: 1-800-275-2273
+
+(Sources: Apple Support, 2026)`,
+  },
+  {
+    slug: 'android',
+    title: 'Android Phones and Tablets',
+    category: 'entity',
+    tags: ['android', 'google', 'samsung', 'pixel', 'smartphone'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['apple', 'google', 'smartphone-basics', 'device-basics'],
+    content: `## What Is Android?
+
+Android is the operating system made by Google that runs on phones from **Samsung**, **Google Pixel**, **Motorola**, and others. Your Android device is tied to your **Google account**, which connects your email, apps, photos, and settings.
+
+## Popular Android Brands
+
+- **Samsung Galaxy** — Most popular Android phones and tablets worldwide
+- **Google Pixel** — Made by Google with fast updates and a great camera
+- **Motorola** — Known for affordable, reliable phones
+
+## Key Features
+
+- **Google Play Store** — Where you download apps (colorful triangle icon)
+- **Google Assistant** — Say "Hey Google" to ask questions or send texts
+- **Google Photos** — Backs up photos and videos automatically
+- **Settings** — Swipe down from the top, then tap the gear icon
+
+## Common Tasks
+
+- **Update your phone:** Settings > System > Software Update
+- **Take a screenshot:** Press Power + Volume Down at the same time
+- **Uninstall an app:** Long-press the icon, then tap "Uninstall"
+- **Connect to WiFi:** Settings > Network & Internet > WiFi
+
+## Official Support
+
+- Google Pixel: support.google.com/pixelphone
+- Samsung: samsung.com/us/support
+- Google Play: support.google.com/googleplay
+
+(Sources: Google Support, Samsung Support, 2026)`,
+  },
+  {
+    slug: 'windows',
+    title: 'Windows 10 and 11',
+    category: 'entity',
+    tags: ['windows', 'microsoft', 'pc', 'desktop', 'laptop'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['microsoft', 'device-basics', 'moc-getting-started'],
+    content: `## What Is Windows?
+
+Windows is the operating system made by **Microsoft** for desktop and laptop computers. The two versions you will see today are **Windows 10** and **Windows 11**. They work the same way — Windows 11 has a more modern look with the Start menu centered at the bottom.
+
+## Key Parts of Windows
+
+- **Start Menu** — Click the Windows icon to find apps, settings, and power options
+- **File Explorer** — Yellow folder icon for browsing documents, pictures, and downloads
+- **Settings** — Click Start, then the gear icon to change WiFi, display, sound, and accounts
+- **Taskbar** — The bar along the bottom with pinned apps and the clock
+
+## Common Tasks
+
+- **Install updates:** Settings > Windows Update > Check for Updates
+- **Take a screenshot:** Windows key + Shift + S to select an area
+- **Open Task Manager:** Ctrl + Shift + Esc to see and close running programs
+- **Restart:** Start > Power > Restart (fixes many common issues)
+
+## Common Problems and Fixes
+
+- **Running slow:** Restart, check for updates, close unused programs
+- **WiFi not connecting:** Click WiFi icon, toggle off and on, reconnect
+- **Program not responding:** Open Task Manager, select it, click "End Task"
+
+## Official Support
+
+- Microsoft Support: support.microsoft.com
+- Call Microsoft: 1-800-642-7676
+
+(Sources: Microsoft Support, 2026)`,
+  },
+  {
+    slug: 'google',
+    title: 'Google Services',
+    category: 'entity',
+    tags: ['google', 'gmail', 'google-drive', 'google-meet', 'chrome'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['android', 'microsoft', 'email-essentials', 'video-calling'],
+    content: `## What Is Google?
+
+Google offers free tools that all connect through **one Google account**. When you sign up for Gmail, you automatically get Drive, Calendar, Maps, and more. Your Google account is your email address (usually @gmail.com) and one password.
+
+## Core Services
+
+- **Gmail** — Free email at gmail.com or the Gmail app
+- **Google Drive** — 15 GB free cloud storage for documents, photos, and files
+- **Google Docs, Sheets, Slides** — Free alternatives to Word, Excel, and PowerPoint
+- **Google Calendar** — Appointments and reminders that notify your phone
+- **Google Maps** — Directions, nearby stores, and street views
+- **Google Meet** — Free video calls from Gmail or meet.google.com
+- **Chrome** — Web browser that syncs bookmarks and passwords across devices
+- **Google Photos** — Photo storage and organization (counts toward 15 GB)
+
+## How They Connect
+
+Sign in once and everything shares the same account. A Calendar event can include a Meet link. A Drive file can be attached in Gmail. One connected account ties it all together.
+
+## Official Support
+
+- Google Account help: support.google.com/accounts
+- Gmail help: support.google.com/mail
+
+(Sources: Google Support, 2026)`,
+  },
+  {
+    slug: 'microsoft',
+    title: 'Microsoft Services',
+    category: 'entity',
+    tags: ['microsoft', 'outlook', 'onedrive', 'teams', 'office'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['windows', 'google', 'email-essentials'],
+    content: `## What Is Microsoft?
+
+Microsoft makes Windows, but it also offers online services through your **Microsoft account**. If you have an @outlook.com, @hotmail.com, or @live.com email, you already have a Microsoft account.
+
+## Core Services
+
+- **Outlook** — Email, calendar, and contacts at outlook.com or the Outlook app
+- **OneDrive** — 5 GB free cloud storage, built into Windows
+- **Microsoft 365** — Word, Excel, PowerPoint (free online version at microsoft365.com)
+- **Microsoft Teams** — Video calls, chat, and file sharing
+- **Microsoft Edge** — The web browser that comes with Windows
+
+## How They Connect
+
+One Microsoft account ties everything together. OneDrive files appear in File Explorer. Outlook events can include Teams meeting links. Word documents save directly to OneDrive.
+
+## Free vs. Paid
+
+Outlook email, OneDrive (5 GB), and online Word/Excel/PowerPoint are free. **Microsoft 365** (~$7/month) gives full desktop apps, 1 TB storage, and advanced features.
+
+## Official Support
+
+- Microsoft Support: support.microsoft.com
+- Call Microsoft: 1-800-642-7676
+
+(Sources: Microsoft Support, 2026)`,
+  },
+  {
+    slug: 'privacy-settings',
+    title: 'Privacy Settings',
+    category: 'concept',
+    tags: ['privacy', 'tracking', 'permissions', 'location', 'ads'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['apple', 'android', 'windows', 'device-basics', 'moc-staying-safe'],
+    content: `## Why Privacy Settings Matter
+
+Many apps and websites collect information about you — what you search for, where you go, what you buy. Most of this is used to show you ads, but it can also be shared or sold. Adjusting your privacy settings gives you more control.
+
+## What Apps Track
+
+- **Location:** Where you are and where you have been
+- **Browsing history:** What websites you visit
+- **Contacts and photos:** Some apps ask for access they do not need
+- **Microphone and camera:** Some apps request access unnecessarily
+- **Ad tracking:** Companies follow your activity to show targeted ads
+
+## Privacy on iPhone/iPad
+
+1. Settings > Privacy & Security
+2. Review each category (Location, Contacts, Photos, Microphone, Camera)
+3. Turn off access for apps that do not need it
+4. Limit ad tracking: Settings > Privacy & Security > Tracking > turn off "Allow Apps to Request to Track"
+
+## Privacy on Android
+
+1. Settings > Privacy > Permission Manager
+2. Review which apps access location, camera, microphone
+3. Remove access for apps that do not need it
+4. Limit ad tracking: Settings > Privacy > Ads > Delete advertising ID
+
+## Privacy on Windows
+
+1. Start > Settings > Privacy & Security
+2. Turn off "Let apps show me personalized ads"
+3. Review App Permissions for camera, microphone, and location
+
+## A Good Rule of Thumb
+
+Ask yourself: "Does this app need this access to do its job?" A weather app needs your location. A flashlight app does not need your contacts. If it does not make sense, deny the request.
+
+(Sources: Apple Support, Google Support, Microsoft Support, 2026)`,
+  },
 ];
 
 /** Look up a wiki page by slug */
