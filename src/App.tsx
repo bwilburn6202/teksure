@@ -12,12 +12,15 @@ import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { GuideSkeleton } from './components/skeletons/GuideSkeleton';
 import { TekBot } from "@/components/TekBot";
 // FloatingChat disabled — TekBot is the primary assistant with full features
 // import { FloatingChat } from "@/components/FloatingChat";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { CommandPalette } from './components/CommandPalette';
+import { Changelog } from './pages/Changelog';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
@@ -34,6 +37,7 @@ const TechDashboard          = lazy(() => import("./pages/tech/Dashboard"));
 const TechJobRoom            = lazy(() => import("./pages/tech/JobRoom"));
 const AdminConsole           = lazy(() => import("./pages/admin/Console"));
 const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
+const KnowledgeBase         = lazy(() => import("./pages/admin/KnowledgeBase"));
 const OpportunityDashboard   = lazy(() => import("./pages/OpportunityDashboard"));
 const Glossary               = lazy(() => import("./pages/Glossary"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
@@ -127,16 +131,7 @@ const queryClient = new QueryClient({
 
 /** Minimal spinner shown during lazy-load */
 function PageLoader() {
-  return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      role="status"
-      aria-live="polite"
-      aria-label="Loading page"
-    >
-      <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" aria-hidden="true" />
-    </div>
-  );
+  return <GuideSkeleton />;
 }
 
 /** Offline banner — shown at top of screen when network is lost */
@@ -166,6 +161,28 @@ function OfflineBanner() {
 }
 
 const AppContent = () => {
+  const [paletteOpen, setPaletteOpen] = useState(false);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const isMac = navigator.platform.toLowerCase().includes('mac');
+      if ((isMac && e.metaKey && e.key.toLowerCase() === 'k') || (!isMac && e.ctrlKey && e.key.toLowerCase() === 'k')) {
+        e.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+  useEffect(() => {
+    const saved = localStorage.getItem('teksure-theme');
+    if (saved) {
+      if (saved === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+      return;
+    }
+    const m = window.matchMedia('(prefers-color-scheme: dark)');
+    if (m.matches) document.documentElement.classList.add('dark');
+  }, []);
   const { open, onClose } = useSearchModal();
 
   return (
@@ -181,7 +198,8 @@ const AppContent = () => {
       <ScamPanicButton />
       <Toaster />
       <Sonner />
-      <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<PageLoader />}> 
+        <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
         <ErrorBoundary variant="section">
         <Routes>
           <Route path="/" element={<Index />} />
@@ -200,6 +218,7 @@ const AppContent = () => {
           <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
+          <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/quick-fixes" element={<QuickFixes />} />
@@ -248,6 +267,7 @@ const AppContent = () => {
           <Route path="/payment/cancel" element={<PaymentCancel />} />
           <Route path="/news" element={<News />} />
           <Route path="/forum" element={<ForumIndex />} />
+          <Route path="/changelog" element={<Changelog />} />
           <Route path="/forum/new" element={<NewThread />} />
           <Route path="/forum/:id" element={<ThreadDetail />} />
           <Route path="/safety/parental-controls" element={<ParentalControls />} />

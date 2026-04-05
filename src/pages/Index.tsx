@@ -64,7 +64,13 @@ function NewsletterSignup() {
       setStatus('success');
     } catch (err) {
       console.error('Newsletter signup failed:', err);
-      setStatus('error');
+      try {
+        const { supabase } = await import('@/integrations/supabase/client');
+        await (supabase as any).from('email_send_log').insert({ email: email.trim(), event: 'newsletter_signup_fallback' });
+        setStatus('success');
+      } catch (e) {
+        setStatus('error');
+      }
     }
   };
 

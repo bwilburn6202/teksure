@@ -11,6 +11,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
+import { BackToTop } from '@/components/BackToTop';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -18,10 +19,13 @@ import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } fro
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
+import { ReportGuideDialog } from '@/components/ReportGuideDialog';
+import { supabase } from '@/integrations/supabase/client';
 import { ThumbsFeedback } from '@/components/ThumbsFeedback';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted, saveStepProgress, recordGuideView } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { useAuth } from '@/contexts/AuthContext';
 
 /* ── Helpers ────────────────────────────────────── */
@@ -95,35 +99,58 @@ const StepScreenshot = ({
   screenshotAlt?: string;
   annotations?: ScreenshotAnnotation[];
 }) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   return (
-    <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
-      <div className="relative bg-muted/30">
-        <img
-          src={screenshotUrl}
-          alt={screenshotAlt || ''}
-          className="w-full h-auto"
-          loading="lazy"
-        />
+    <>
+      <div
+        className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm cursor-pointer group"
+        onClick={() => setLightboxOpen(true)}
+        role="button"
+        tabIndex={0}
+        aria-label={`Enlarge screenshot: ${screenshotAlt || 'guide step'}`}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLightboxOpen(true); } }}
+      >
+        <div className="relative bg-muted/30">
+          <img
+            src={screenshotUrl}
+            alt={screenshotAlt || ''}
+            className="w-full h-auto transition-opacity group-hover:opacity-90"
+            loading="lazy"
+          />
+          {annotations && annotations.length > 0 && (
+            <AnnotationLayer annotations={annotations} />
+          )}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10">
+            <span className="bg-black/60 text-white text-sm px-3 py-1.5 rounded-lg backdrop-blur-sm">
+              Click to enlarge
+            </span>
+          </div>
+        </div>
         {annotations && annotations.length > 0 && (
-          <AnnotationLayer annotations={annotations} />
+          <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
+            {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
+              <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                {a.type === 'callout' && (
+                  <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
+                    {a.label}
+                  </span>
+                )}
+                {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
+                {a.label}
+              </span>
+            ))}
+          </div>
         )}
       </div>
-      {annotations && annotations.length > 0 && (
-        <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
-          {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
-            <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              {a.type === 'callout' && (
-                <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
-                  {a.label}
-                </span>
-              )}
-              {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
-              {a.label}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+      <ScreenshotLightbox
+        open={lightboxOpen}
+        onOpenChange={setLightboxOpen}
+        screenshotUrl={screenshotUrl}
+        screenshotAlt={screenshotAlt}
+        annotations={annotations}
+      />
+    </>
   );
 };
 
@@ -279,6 +306,7 @@ const GuideDetail = () => {
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
   const nextGuide = currentIndex < guides.length - 1 ? guides[currentIndex + 1] : null;
 
+  const [reportOpen, setReportOpen] = useState(false);
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.category === guide.category)
     .slice(0, 3);
@@ -363,7 +391,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
+            <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -391,9 +419,20 @@ const GuideDetail = () => {
               <StarRating guideSlug={guide.slug} readOnly size="sm" />
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-5">
-              <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={() => window.print()}>
-                <Printer className="h-4 w-4" /> Print Guide
+            {/* Print-only header: shows TekSure URL at the top of printed page */}
+            <div className="hidden print:block text-sm text-gray-500 mb-2">
+              Printed from TekSure.com &mdash; teksure.com/guides/{guide.slug}
+            </div>
+
+              <div className="flex flex-wrap gap-2 mt-5">
+              <Button
+                variant="outline"
+                size="lg"
+                className="gap-2 no-print min-h-[48px] text-base font-semibold px-6"
+                onClick={() => window.print()}
+                aria-label="Print this guide"
+              >
+                <Printer className="h-5 w-5" /> Print this Guide
               </Button>
               <ListenButton guide={guide} />
             </div>
@@ -454,6 +493,13 @@ const GuideDetail = () => {
                           <div className="text-base text-muted-foreground leading-relaxed">
                             <StepContent text={step.content} />
                           </div>
+
+                          {(step as any).whyItWorks && (
+                            <div className="mt-3 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/40 px-4 py-3">
+                              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-1">Why this works</p>
+                              <p className="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">{(step as any).whyItWorks}</p>
+                            </div>
+                          )}
 
                           {step.screenshotUrl && (
                             <StepScreenshot
@@ -587,6 +633,29 @@ const GuideDetail = () => {
             </div>
           </div>
 
+          <div className="text-center mt-3">
+            <button onClick={() => setReportOpen(true)} className="text-xs text-muted-foreground hover:text-primary">
+              Report an issue with this guide
+            </button>
+            <ReportGuideDialog
+              open={reportOpen}
+              onClose={() => setReportOpen(false)}
+              slug={guide.slug}
+              onSubmit={async (payload) => {
+                try {
+                  await (supabase as any).from('guide_reports').insert(payload);
+                  setReportOpen(false);
+                  alert('Thanks for the report.');
+                } catch (err) {
+                  console.error('Report failed', err);
+                  alert('Could not submit report.');
+                }
+              }}
+            />
+          </div>
+
+          <!-- Removed duplicate placeholder for report flow; dialog is above -->
+
           {/* Related Guides */}
           {relatedGuides.length > 0 && (
             <div className="mb-8">
@@ -596,7 +665,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" decoding="async" width="40" height="40" />
+                        <img src={getGuideThumbnailSmall(g)} alt={g.title} className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
@@ -610,6 +679,7 @@ const GuideDetail = () => {
         </div>
       </article>
 
+      <BackToTop />
       <Footer />
     </div>
   );
