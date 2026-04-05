@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
+import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
@@ -175,6 +176,7 @@ const TechJobRoom = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="Job Details — TekSure Tech" description="View and manage support job details." path={`/tech/job/${id}`} />
       <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">

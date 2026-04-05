@@ -3009,7 +3009,7 @@ We have over 80 AI guides on TekSure covering everything from writing your first
       { title: 'AI-powered cameras', content: 'Smart cameras with AI (Ring, Nest, Arlo) distinguish between people, animals, packages, and vehicles to reduce false alerts.' },
       { title: 'Adaptive thermostats', content: 'Nest and Ecobee learn your schedule and preferences, automatically adjusting temperature to save energy without manual programming.' },
       { title: 'Cross-platform automation', content: 'Use IFTTT or Apple Shortcuts to create automations across brands: "When I leave home (GPS), turn off all lights and lock the door."' },
-      { title: 'Matter and Thread', content: 'The new Matter smart home standard lets devices from different brands work together seamlessly. Look for "Matter compatible" when buying.' },
+      { title: 'Matter and Thread', content: 'The new Matter smart home standard lets devices from different brands work together without extra setup. Look for "Matter compatible" when buying.' },
     ]
   },
   {
@@ -9727,7 +9727,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'When you need encryption', content: 'When sending sensitive information: Social Security numbers, financial data, medical information, legal documents, or private business communications.' },
     { title: 'Practical alternatives', content: 'For sharing sensitive documents, consider password-protected PDFs, secure file sharing (Google Drive with restricted access), or encrypted messaging apps like Signal.' },
   ] },
-  { slug: 'vpn-explained-simply', title: 'What Is a VPN and Should You Use One', excerpt: 'A plain-language guide to VPNs — what they do, when to use one, and how to get started.', category: 'safety-guides', tags: ['vpn', 'privacy', 'security', 'internet'], readTime: '6 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'vpn-explained', title: 'What Is a VPN and Should You Use One', excerpt: 'A plain-language guide to VPNs — what they do, when to use one, and how to get started.', category: 'safety-guides', tags: ['vpn', 'privacy', 'security', 'internet'], readTime: '6 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What a VPN does', content: 'A VPN (Virtual Private Network) creates a secure, encrypted tunnel for your internet traffic. It hides your browsing activity from your internet provider and protects you on public Wi-Fi.' },
     { title: 'When to use a VPN', content: 'On public Wi-Fi (coffee shops, hotels, airports) — this is the most important use case. Also useful for privacy from your internet provider, and when traveling internationally.' },
     { title: 'When you don\'t need one', content: 'At home on your private Wi-Fi, you generally don\'t need a VPN for everyday browsing. Most websites already use HTTPS encryption for your data.' },
@@ -11297,7 +11297,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // ── Batch 42: More Essential Skills ─────────────────────────────────────────
   { slug: 'choosing-a-computer', title: 'How to Choose the Right Computer', excerpt: 'Laptop vs desktop, Mac vs Windows, and what specs actually matter for your needs.', category: 'essential-skills', tags: ['computer', 'buying-guide', 'laptop', 'desktop', 'hardware'], readTime: '8 min', thumbnailEmoji: '💻', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Laptop vs desktop', content: 'Laptop: portable, built-in screen and keyboard, battery power. Desktop: more powerful per dollar, upgradeable, better for a permanent workspace. Most people should get a laptop unless they need maximum power.' },
-    { title: 'Mac vs Windows', content: 'Mac: easier to use, excellent build quality, works seamlessly with iPhone/iPad. Starts at $999. Windows: more affordable options, more software compatibility, wider hardware choice. Starts at $300.' },
+    { title: 'Mac vs Windows', content: 'Mac: easier to use, excellent build quality, works well with iPhone/iPad. Starts at $999. Windows: more affordable options, more software compatibility, wider hardware choice. Starts at $300.' },
     { title: 'How much to spend', content: 'Budget ($300-500): basic web browsing, email, video streaming. Mid-range ($500-1,000): good for most people, handles multitasking well. Premium ($1,000+): for creative work, gaming, or professionals.' },
     { title: 'RAM (memory)', content: '8 GB: minimum for comfortable use (email, browsing, streaming). 16 GB: recommended for multitasking and light creative work. 32 GB: for video editing, gaming, or professional work.' },
     { title: 'Storage', content: 'SSD (solid state drive) is essential — never buy a laptop with only an HDD. 256 GB: tight but works if you use cloud storage. 512 GB: comfortable for most people. 1 TB: for large photo/video libraries.' },

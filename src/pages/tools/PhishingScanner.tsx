@@ -16,7 +16,7 @@ interface ScanResult {
 }
 
 // Heuristic-based client-side analysis
-function analyseUrl(rawUrl: string): ScanResult {
+function analyzeUrl(rawUrl: string): ScanResult {
   const flags: string[] = [];
   let score = 0;
 
@@ -152,7 +152,7 @@ export default function PhishingScanner() {
     setScanning(true);
     // Small delay for UX feel
     setTimeout(() => {
-      setResult(analyseUrl(input.trim()));
+      setResult(analyzeUrl(input.trim()));
       setScanning(false);
     }, 600);
   };
@@ -173,7 +173,7 @@ export default function PhishingScanner() {
     <>
       <SEOHead
         title="Phishing URL Scanner — TekSure"
-        description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyses URLs for warning signs."
+        description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyzes URLs for warning signs."
       path="/tools/phishing-scanner"
       />
       <Navbar />
@@ -199,7 +199,7 @@ export default function PhishingScanner() {
           <div className="flex items-start gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-6">
             <Info className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
             <p className="text-xs text-blue-700 dark:text-blue-300">
-              <strong>How it works:</strong> This tool analyses the structure of web addresses for common phishing patterns. It does not visit the link or connect to external services — everything runs privately in your browser. No tool can guarantee 100% accuracy; use your judgement too.
+              <strong>How it works:</strong> This tool analyzes the structure of web addresses for common phishing patterns. It does not visit the link or connect to external services — everything runs privately in your browser. No tool can guarantee 100% accuracy; use your judgment too.
             </p>
           </div>
 

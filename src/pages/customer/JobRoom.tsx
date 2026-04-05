@@ -7,6 +7,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
@@ -199,6 +200,7 @@ const CustomerJobRoom = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="Booking Details — TekSure" description="View details and status of your TekSure support booking." path={`/customer/job/${id}`} />
       <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
