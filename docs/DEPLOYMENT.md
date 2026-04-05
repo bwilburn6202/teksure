@@ -39,7 +39,7 @@ Auto-deploys on every push to `main`.
 ## Supabase
 
 ```bash
-supabase link --project-ref zrgtoefkqafndhxhbuag
+supabase link --project-ref vrhxitxzqtbphzsbdqih
 supabase db push                        # Apply migrations
 supabase functions deploy               # Deploy all Edge Functions
 supabase secrets set STRIPE_SECRET_KEY=sk_live_...
@@ -81,6 +81,9 @@ supabase secrets set RESEND_API_KEY=re_...
 - [ ] Forum post creation tested
 - [ ] Admin console access verified
 - [ ] RLS policies block unauthorized access
+- [ ] Knowledge base migration applied
+- [ ] `ollama-health` and `knowledge-base-compile` functions deployed
+- [ ] `OLLAMA_BASE_URL` and `OLLAMA_MODEL` secrets set
 
 ---
 

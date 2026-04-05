@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "lastRun": "2026-03-31T00:00:00.000Z",
-  "currentFeature": "2fa-guide",
+  "currentFeature": "screenshot-annotations",
   "completedFeatures": [
     "video-tutorials",
     "community-forum",
@@ -20,39 +20,12 @@
     "guide-ratings",
     "technician-bookings",
     "admin-revenue-tab",
-    "tekbot-upgrade"
+    "tekbot-upgrade",
+    "2fa-guide",
+    "home-network-security-guide",
+    "software-update-guide"
   ],
   "queue": [
-    {
-      "id": "2fa-guide",
-      "name": "Two-Factor Authentication Guide",
-      "tier": 1,
-      "priority": "P1",
-      "description": "Step-by-step guide to setting up 2FA for common apps (Google, email, banking)",
-      "route": null,
-      "files": ["src/data/guides.ts"],
-      "approach": "Add full guide entry to guides.ts in Safety category with body, steps, screenshots, difficulty: beginner"
-    },
-    {
-      "id": "home-network-security-guide",
-      "name": "Home Network Security Guide",
-      "tier": 1,
-      "priority": "P1",
-      "description": "Guide covering WiFi password strength, router security, guest networks",
-      "route": null,
-      "files": ["src/data/guides.ts"],
-      "approach": "Add full guide entry to guides.ts in Safety category"
-    },
-    {
-      "id": "software-update-guide",
-      "name": "Software Update Guide",
-      "tier": 1,
-      "priority": "P1",
-      "description": "Why updates matter and how to do them on Windows, Mac, iPhone, Android",
-      "route": null,
-      "files": ["src/data/guides.ts"],
-      "approach": "Add full guide entry to guides.ts in Essential Skills category with device-specific steps"
-    },
     {
       "id": "screenshot-annotations",
       "name": "Screenshot Annotations Lightbox",
@@ -271,6 +244,24 @@
       "commitHash": "d92134e",
       "status": "completed",
       "notes": "Upgraded TekBot with sessionStorage-based session memory (persists conversation across page navigations), context-aware query enrichment that injects current page/guide slug into KB matching, a persistent related guides sidebar panel for page-relevant guides, a clear chat button, and a session message count badge on the floating button."
+    },
+    {
+      "feature": "2fa-guide",
+      "completedAt": "2026-04-05T00:00:00.000Z",
+      "status": "completed",
+      "notes": "Full 2FA guide already existed at two-factor-auth (safety-guides, 6 steps) and setup-two-factor-any-account (essential-skills, 6 steps). Covers SMS, authenticator apps, Gmail, Facebook, backup codes."
+    },
+    {
+      "feature": "home-network-security-guide",
+      "completedAt": "2026-04-05T00:00:00.000Z",
+      "status": "completed",
+      "notes": "Full home network security guide already existed at home-network-security (safety-guides, 7 steps). Covers router password, SSID, WPA3, guest network, connected devices, firmware updates."
+    },
+    {
+      "feature": "software-update-guide",
+      "completedAt": "2026-04-05T00:00:00.000Z",
+      "status": "completed",
+      "notes": "Software update guides already existed at software-updates (safety-guides) and understanding-software-updates (essential-skills). Covers Windows, Mac, iPhone, Android update procedures."
     }
   ]
 }
