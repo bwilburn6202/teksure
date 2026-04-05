@@ -24,11 +24,6 @@ export default function NewThread() {
   const [body, setBody] = useState('');
   const [category, setCategory] = useState<ForumCategory>('general');
 
-  if (!user) {
-    navigate('/login', { state: { from: '/forum/new' } });
-    return null;
-  }
-
   const createThread = useMutation({
     mutationFn: async () => {
       const { data, error } = await supabase
@@ -63,6 +58,11 @@ export default function NewThread() {
     if (!title.trim() || !body.trim()) return;
     createThread.mutate();
   };
+
+  if (!user) {
+    navigate('/login', { state: { from: '/forum/new' } });
+    return null;
+  }
 
   const categoryChoices = CATEGORIES.filter(c => c.value !== 'all');
   const isValid = title.trim().length >= 5 && body.trim().length >= 10;
