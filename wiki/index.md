@@ -2,7 +2,7 @@
 
 > A persistent, interlinked knowledge base maintained by LLMs. This wiki synthesizes all TekSure content — guides, scam alerts, tips, glossary terms, and tools — into a structured reference that compounds over time.
 
-Last updated: 2026-04-04
+Last updated: 2026-04-05
 
 ---
 
@@ -20,6 +20,8 @@ Last updated: 2026-04-04
 | [Online Shopping Safety](concepts/online-shopping-safety.md) | Buying safely on Amazon, eBay, and other sites | 5+ guides |
 | [Privacy & Settings](concepts/privacy-settings.md) | Controlling what apps and websites know about you | 10+ guides |
 | [Health Technology](concepts/health-technology.md) | Patient portals, telehealth, fitness trackers, medication apps | 18+ guides |
+| [Online Banking Safety](concepts/online-banking-safety.md) | Safe banking online — phishing, fraud alerts, what to do if scammed | 3+ sources |
+| [Smartphone Basics](concepts/smartphone-basics.md) | iPhone vs Android, setup tips, easy mode, senior-friendly plans | 4+ sources |
 
 ## Entities
 
@@ -40,6 +42,7 @@ Last updated: 2026-04-04
 | [Beginner's Roadmap](synthesis/beginners-roadmap.md) | Recommended learning path for someone brand new to technology |
 | [Safety First Checklist](synthesis/safety-checklist.md) | The essential security steps every user should complete |
 | [Family Helper Guide](synthesis/family-helper-guide.md) | How to help a parent or grandparent get comfortable with tech |
+| [Digital Literacy](synthesis/digital-literacy.md) | The five core digital skills and how to build confidence | 5+ sources |
 
 ## Sources
 

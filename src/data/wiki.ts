@@ -1300,6 +1300,143 @@ You do not need to pay for everything. These are free:
 
 (Sources: Tom's Guide, AARP, 2026)`,
   },
+  {
+    slug: 'online-banking-safety',
+    title: 'Online Banking Safety',
+    category: 'concept',
+    tags: ['banking', 'safety', 'scams', 'passwords', 'money'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['password-security', 'scam-prevention', 'safety-checklist'],
+    content: `## What Is Online Banking?
+
+Online banking lets you check your account balance, pay bills, and transfer money from your computer or phone — without visiting a bank branch. Most banks offer a website and a free app.
+
+## How to Stay Safe
+
+**Use strong, unique passwords.** Never use the same password for your bank that you use for other websites. If a hacker gets your password from one site, they will try it on your bank. Use a password manager to keep track of different passwords.
+
+**Watch out for phishing emails.** Scammers send emails that look exactly like your bank's official emails. They include fake links that lead to copycat websites designed to steal your login. Your real bank will **never** email you asking for your password, Social Security number, or PIN. If you get a suspicious email, do not click any links — call the number on the back of your bank card instead.
+
+**Check your accounts regularly.** Log in at least once a week and review recent transactions. If you see a charge you do not recognize, report it to your bank immediately. Most banks have fraud protection and will reverse unauthorized charges.
+
+**Enable account alerts.** Set up text or email notifications for every transaction. This way, you will know right away if someone makes a purchase with your account.
+
+## Red Flags to Watch For
+
+- Emails or calls asking for your PIN, password, or Social Security number
+- Texts saying your account is "locked" with a link to "verify" your identity
+- Someone claiming to be from your bank asking you to transfer money to a "safe" account
+- Requests to pay via gift cards, wire transfer, or cryptocurrency — banks never ask for this
+
+## What to Do If You Suspect Fraud
+
+1. Call your bank immediately using the number on your card (not a number from an email or text)
+2. Change your online banking password
+3. Review your recent transactions and flag anything suspicious
+4. Report the fraud to the FTC at ReportFraud.ftc.gov
+5. Call the AARP Fraud Watch Network Helpline at 877-908-3360 for guidance
+
+(Sources: AARP.org, FTC.gov, 2026)`,
+  },
+  {
+    slug: 'smartphone-basics',
+    title: 'Smartphone Basics for Beginners',
+    category: 'concept',
+    tags: ['smartphone', 'phone', 'iphone', 'android', 'beginner'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['device-basics', 'downloading-apps', 'accessibility'],
+    content: `## Choosing a Smartphone
+
+There are two main types of smartphones:
+
+- **iPhone** (made by Apple) — Uses the iOS operating system. Known for being easy to use and having strong privacy features.
+- **Android** (made by Samsung, Google, Motorola, and others) — Offers more variety in price and screen sizes. Very customizable.
+
+**Quick Tip:** Choose the same type of phone that your family and close friends use. They can help you learn faster, and features like FaceTime (iPhone) or Google Duo (Android) work best between the same types.
+
+## Making Your Phone Easier to Use
+
+**Increase text size:** Go to Settings > Display > Font Size. Drag the slider to make text larger across all apps.
+
+**Turn on Bold Text:** This makes everything on screen easier to read. Find it in Settings > Display (iPhone) or Settings > Accessibility > Visibility (Android).
+
+**Use Easy Mode (Android):** Samsung phones have "Easy Mode" in Settings that makes icons larger and simplifies the home screen. Other Android brands have similar features — look for "Simple Mode" in Settings.
+
+**Reduce clutter:** Remove apps you do not use by holding the app icon and selecting "Uninstall" or "Remove." Fewer apps means less confusion.
+
+## Essential Things to Learn First
+
+1. **Making and receiving calls** — Tap the phone icon, type a number or pick a contact, and tap the green button
+2. **Sending text messages** — Tap the messaging app, pick a contact, type your message, and press send
+3. **Taking photos** — Open the camera app and tap the round button to take a picture
+4. **Connecting to WiFi** — Go to Settings > WiFi, pick your network, and enter the password
+5. **Downloading apps** — Open the App Store (iPhone) or Google Play Store (Android), search for what you want, and tap Install
+
+## Keeping Your Phone Safe
+
+- Always lock your phone with a PIN, fingerprint, or face recognition
+- Keep your phone software updated — updates fix security problems
+- Only download apps from the official App Store or Google Play Store
+- Do not tap on links in text messages from people you do not know
+- Back up your photos and contacts to iCloud (iPhone) or Google (Android)
+
+## Best Cell Phone Plans for Seniors
+
+- **Lively** — Plans starting at $20/month, designed for seniors with safety features like Urgent Response
+- **T-Mobile Essentials 55+** — Discounted plan for people 55 and older
+- **Consumer Cellular** — AARP-recommended, no contracts, plans starting at $20/month
+- **Mint Mobile** — Budget option starting at $15/month with prepaid plans
+
+(Sources: Tom's Guide, How-To Geek, AARP, Apple Support, 2026)`,
+  },
+  {
+    slug: 'digital-literacy',
+    title: 'Digital Literacy for Everyday Life',
+    category: 'synthesis',
+    tags: ['digital-literacy', 'learning', 'skills', 'beginners'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['beginners-roadmap', 'device-basics', 'smartphone-basics', 'safety-checklist'],
+    content: `## What Is Digital Literacy?
+
+Digital literacy means knowing how to use technology to accomplish everyday tasks — checking email, browsing the web, making video calls, using apps, and staying safe online. It is not about becoming a tech expert. It is about gaining enough confidence to use technology on your own terms.
+
+## Why It Matters
+
+- **90% of Americans 50+** now own a smartphone (AARP 2026)
+- Government services, healthcare appointments, and banking are increasingly online
+- Staying connected with family through video calls and messaging requires basic digital skills
+- Protecting yourself from scams requires understanding how they work
+
+## The Five Core Skills
+
+**1. Using a Device** — Turning on your computer or phone, navigating the screen, opening and closing apps. Start with [[device-basics]] and [[smartphone-basics]].
+
+**2. Getting Online** — Connecting to WiFi, using a web browser, searching for information. See [[wifi-networking]].
+
+**3. Communicating** — Sending emails, text messages, and making video calls. See [[email-essentials]] and [[video-calling]].
+
+**4. Staying Safe** — Recognizing scams, creating strong passwords, and protecting personal information. See [[scam-prevention]] and [[password-security]].
+
+**5. Solving Problems** — Knowing what to do when something goes wrong — restarting, updating, or asking for help. Check our Troubleshooting Flowcharts tool.
+
+## How to Build Confidence
+
+- **Start small** — Master one thing at a time. Do not try to learn everything at once.
+- **Practice daily** — Even 5 minutes a day builds lasting skills. Try our Daily Lessons.
+- **Write it down** — Keep a notebook of steps that work for you. You can refer to it later.
+- **Ask for help** — There is no shame in asking. Family, librarians, and community centers all offer tech help.
+- **Be patient with yourself** — Everyone learns at their own pace. Mistakes are part of learning.
+
+## Free Learning Resources
+
+- **TekSure** — 780+ free guides, tools, and lessons (you are here!)
+- **Senior Planet** — Free in-person and online classes for older adults
+- **GCFGlobal.org** — Free tutorials on computers, smartphones, and the internet
+- **Your local library** — Many offer free one-on-one tech help sessions
+- **AARP Tech Resources** — Articles and videos at aarp.org/technology
+
+(Sources: AARP Tech Trends 2026, CISA Cybersecurity Awareness, Senior Planet)`,
+  },
 ];
 
 /** Look up a wiki page by slug */

@@ -38,6 +38,15 @@ Scraped and ingested from 10+ authoritative sources (FTC, AARP, CISA, Apple Supp
 - **src/data/wiki.ts** — Updated scam-prevention (recovery scams, fake law enforcement, AI content poisoning, $12.5B fraud stats), password-security (manager recommendations), wifi-networking (router placement, 2.4/5GHz), us-resources (smartphone adoption stats). Added online-shopping-safety and telehealth wiki pages.
 - **src/components/TekBot.tsx** — Complete rewrite from chatbot to AI knowledge base. Now searches across 780+ guides and 20+ wiki pages instead of hardcoded 21-topic KB.
 
+## [2026-04-05] ingest | April 2026 research ingest (batch 4)
+
+Scraped AARP, FTC, CISA, Tom's Guide, How-To Geek for banking safety, smartphone guides, and digital literacy content. Added 3 new wiki pages:
+- **online-banking-safety** — Phishing red flags, fraud reporting steps, AARP helpline, account monitoring
+- **smartphone-basics** — iPhone vs Android, Easy Mode, essential skills, senior-friendly cell plans
+- **digital-literacy** — Five core skills framework, confidence-building tips, free learning resources
+
+Added "Why It Works" explanations to 9 more guides (39 steps): open-close-programs, use-taskbar, create-folder, use-microsoft-edge, manage-windows, restart-pc, setup-email, plus partial coverage on brightness and volume guides. Total: 16 guides, 77 steps with Why It Works content.
+
 ## [2026-04-04] ingest | April 2026 research ingest
 
 Ingested research from 6 authoritative sources (FTC, AARP, CISA, Google, HHS/NCOA, senior tech sites). Updated files:
