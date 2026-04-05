@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useMemo } from 'react';
+import { SafeLink } from '@/components/SafeLink';
 import {
   Search,
   Lock,
@@ -1020,16 +1021,11 @@ export default function CyberToolkit() {
                 className="w-full pl-10 pr-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-green-500"
               />
             </div>
-            <a
-              href="https://github.com/TekSure/toolkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-sm"
-            >
+            <SafeLink to="https://github.com/TekSure/toolkit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-sm">
               <GitBranch className="w-4 h-4" />
               GitHub
               <ExternalLink className="w-3 h-3" />
-            </a>
+            </SafeLink>
           </div>
         </div>
       </div>

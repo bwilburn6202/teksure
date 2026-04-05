@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SafeLink } from '@/components/SafeLink';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -623,15 +624,11 @@ export default function CyberSec() {
             operations. Built with Python, it provides powerful automation and analysis capabilities
             for security professionals.
           </p>
-          <a
-            href="https://github.com/bwilburn6202/cyber-ai-toolkit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <SafeLink to="https://github.com/bwilburn6202/cyber-ai-toolkit" target="_blank" rel="noopener noreferrer">
             <Button className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 text-white font-semibold px-6 py-2">
               View on GitHub
             </Button>
-          </a>
+          </SafeLink>
         </div>
       </div>
 

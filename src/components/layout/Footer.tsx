@@ -46,7 +46,7 @@ export function Footer() {
               <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" loading="lazy" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
-              Tech help that makes sense. Free guides, real human support, and tools built for everyday people.
+              An American tech support company. Free guides, real human support, and tools built for everyday people.
             </p>
           </div>
 
@@ -74,9 +74,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground">
-            &copy; {currentYear} TekSure. All rights reserved.
+            &copy; {currentYear} TekSure. An American company. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6">
+              <Link to="/changelog" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Changelog</Link>
             <Link to="/login" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Sign In</Link>
             <Link to="/signup" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Create Account</Link>
           </div>

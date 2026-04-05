@@ -155,6 +155,7 @@ export default function GuidePacks() {
         title="Printable Guide Packs — Download Themed Collections | TekSure"
         description="Download themed collections of TekSure guides as a single print-ready document. Perfect for keeping by the computer or sharing with someone who prefers paper."
         path="/tools/guide-packs"
+        canonical="/tools/guide-packs"
       />
       <Navbar />
       <main className="flex-1">

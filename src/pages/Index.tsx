@@ -64,7 +64,13 @@ function NewsletterSignup() {
       setStatus('success');
     } catch (err) {
       console.error('Newsletter signup failed:', err);
-      setStatus('error');
+      try {
+        const { supabase } = await import('@/integrations/supabase/client');
+        await (supabase as any).from('email_send_log').insert({ email: email.trim(), event: 'newsletter_signup_fallback' });
+        setStatus('success');
+      } catch (e) {
+        setStatus('error');
+      }
     }
   };
 
@@ -242,8 +248,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="TekSure — Free Tech Help for Beginners | Step-by-Step Guides"
-        description="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
+        title="TekSure — Free Tech Help for Beginners | American Tech Support"
+        description="TekSure is an American tech support company offering free step-by-step guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
         path="/"
         jsonLd={[
           {
@@ -253,7 +259,7 @@ const Index = () => {
             name: 'TekSure',
             url: 'https://teksure.com',
             logo: 'https://teksure.com/og-image.png',
-            description: 'Free step-by-step tech guides for seniors and beginners. Plain English. No jargon.',
+            description: 'American tech support company offering free step-by-step guides for seniors and beginners. Plain English. No jargon.',
             contactPoint: {
               '@type': 'ContactPoint',
               contactType: 'customer support',
@@ -267,7 +273,7 @@ const Index = () => {
             '@id': 'https://teksure.com/#website',
             url: 'https://teksure.com',
             name: 'TekSure',
-            description: 'Free tech help for beginners and seniors — step-by-step guides, tools, and verified technicians.',
+            description: 'American tech support — free guides, tools, and verified technicians for beginners and seniors.',
             publisher: { '@id': 'https://teksure.com/#organization' },
             potentialAction: {
               '@type': 'SearchAction',
@@ -278,6 +284,7 @@ const Index = () => {
         ]}
       />
       <Navbar />
+      <ContinueWhereYouLeftOff />
 
       {/* ── Conversational Hero ───────────────────────────── */}
       <section className="relative overflow-hidden mesh-gradient">
@@ -286,7 +293,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             {/* Greeting */}
             {/* Hidden h1 for SEO — the conversational design is for UX */}
-            <h1 className="sr-only">TekSure — Free Tech Help for Beginners &amp; Seniors</h1>
+            <h1 className="sr-only">TekSure — American Tech Support Company | Free Help for Beginners &amp; Seniors</h1>
 
             <div className="conversation-bubble mb-8 animate-float">
               <div className="flex items-start gap-3 text-left">
