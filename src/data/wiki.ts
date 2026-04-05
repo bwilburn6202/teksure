@@ -29,7 +29,7 @@ export const wikiPages: WikiPage[] = [
     category: 'concept',
     tags: ['wi-fi', 'internet', 'router', 'networking', 'home'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'moc-getting-started'],
+    seeAlso: ['password-security', 'safety-checklist', 'us-resources', 'moc-getting-started', 'smart-home-basics'],
     content: `## What Is Wi-Fi?
 
 Wi-Fi is a wireless technology that lets your devices — phones, tablets, laptops, and smart TVs — connect to the internet without plugging in a cable. It uses radio signals sent by a device called a **router** in your home.
@@ -223,7 +223,7 @@ Scammers now use artificial intelligence to create realistic-looking fake shoppi
     category: 'synthesis',
     tags: ['beginner', 'getting-started', 'learning', 'roadmap'],
     lastUpdated: '2026-04-01',
-    seeAlso: ['wifi-networking', 'password-security', 'safety-checklist', 'moc-getting-started', 'digital-literacy'],
+    seeAlso: ['wifi-networking', 'password-security', 'safety-checklist', 'moc-getting-started', 'digital-literacy', 'cloud-storage'],
     content: `## Your First Steps with Technology
 
 Learning technology does not have to feel overwhelming. This roadmap breaks the journey into small, manageable steps. Go at your own pace — there is no deadline.
@@ -271,7 +271,7 @@ Write down your passwords in a notebook you keep in a safe place at home. This i
     category: 'synthesis',
     tags: ['safety', 'checklist', 'security', 'privacy', 'best-practices'],
     lastUpdated: '2026-04-02',
-    seeAlso: ['password-security', 'scam-prevention', 'wifi-networking'],
+    seeAlso: ['password-security', 'scam-prevention', 'wifi-networking', 'cloud-storage'],
     content: `## Your Personal Digital Safety Checklist
 
 Use this checklist to make sure your devices and accounts are secure. You do not need to do everything at once — work through it one item at a time.
@@ -816,7 +816,7 @@ Write down your streaming passwords in a safe place. It is frustrating to get lo
     category: 'concept',
     tags: ['devices', 'phone', 'tablet', 'computer', 'getting-started'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['apple', 'android', 'windows'],
+    seeAlso: ['apple', 'android', 'windows', 'cloud-storage', 'streaming-setup'],
     content: `## Phones, Tablets, and Computers — What Is the Difference?
 
 - A **smartphone** is a small, pocket-sized device for calls, texts, apps, and browsing the internet.
@@ -1227,7 +1227,7 @@ On your phone, go to **Settings > Privacy > Location Services** and disable loca
     category: 'concept',
     tags: ['smart home', 'alexa', 'google home', 'smart speaker', 'automation'],
     lastUpdated: '2026-04-04',
-    seeAlso: ['using-voice-assistants', 'wifi-networking', 'device-basics'],
+    seeAlso: ['using-voice-assistants', 'wifi-networking', 'device-basics', 'streaming-setup'],
     content: `## What Is a Smart Home?
 
 A smart home uses internet-connected devices that you can control with your voice or phone. The most common smart home devices are smart speakers (Amazon Echo, Google Home), smart lights, smart plugs, and smart thermostats.
@@ -1344,7 +1344,7 @@ Online banking lets you check your account balance, pay bills, and transfer mone
     category: 'concept',
     tags: ['smartphone', 'phone', 'iphone', 'android', 'beginner'],
     lastUpdated: '2026-04-05',
-    seeAlso: ['device-basics', 'downloading-apps', 'accessibility'],
+    seeAlso: ['device-basics', 'downloading-apps', 'accessibility', 'telehealth'],
     content: `## Choosing a Smartphone
 
 There are two main types of smartphones:
@@ -1771,7 +1771,7 @@ Outlook email, OneDrive (5 GB), and online Word/Excel/PowerPoint are free. **Mic
     category: 'concept',
     tags: ['privacy', 'tracking', 'permissions', 'location', 'ads'],
     lastUpdated: '2026-04-05',
-    seeAlso: ['apple', 'android', 'windows', 'device-basics', 'moc-staying-safe'],
+    seeAlso: ['apple', 'android', 'windows', 'device-basics', 'moc-staying-safe', 'smart-home-basics'],
     content: `## Why Privacy Settings Matter
 
 Many apps and websites collect information about you — what you search for, where you go, what you buy. Most of this is used to show you ads, but it can also be shared or sold. Adjusting your privacy settings gives you more control.
@@ -1809,6 +1809,294 @@ Many apps and websites collect information about you — what you search for, wh
 Ask yourself: "Does this app need this access to do its job?" A weather app needs your location. A flashlight app does not need your contacts. If it does not make sense, deny the request.
 
 (Sources: Apple Support, Google Support, Microsoft Support, 2026)`,
+  },
+  {
+    slug: 'printing-basics',
+    title: 'Printing Basics',
+    category: 'concept',
+    tags: ['printing', 'printer', 'wireless', 'setup', 'troubleshooting'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['device-basics', 'wifi-networking', 'smartphone-basics'],
+    content: `## What Does a Printer Do?
+
+A printer takes what you see on your screen — documents, photos, emails, or web pages — and puts it on paper. Most modern printers can also scan paper documents and make copies.
+
+## Types of Printers
+
+**USB printers** connect to your computer with a cable. They work well but can only print from the device they are plugged into.
+
+**Wireless (Wi-Fi) printers** connect to your home Wi-Fi network. Once set up, you can print from any device in your home — your computer, phone, or tablet — without any cables.
+
+**AirPrint** is a feature built into iPhones and iPads that lets you print to a compatible wireless printer without installing extra software. Most newer printers support AirPrint. Android phones have a similar feature called Google Cloud Print or the built-in print service.
+
+## How to Find Your Printer Model
+
+Look for a label on the front or back of the printer. It will say something like "HP DeskJet 2755e" or "Canon PIXMA MG3620." You need this when looking for help or ordering ink.
+
+## Common Printer Problems
+
+- **Printer says "Offline":** Turn the printer off and back on. Make sure it is connected to the same Wi-Fi network as your device.
+- **Paper jam:** Open the printer carefully and gently pull out any stuck paper. Check for small torn pieces left inside.
+- **Faded or streaky prints:** Your ink or toner may be running low. Check your ink levels in the printer settings on your computer.
+- **Nothing happens when you print:** Make sure the correct printer is selected. Sometimes your device tries to send to the wrong printer.
+
+## When to Replace Ink
+
+Most printers will show a warning when ink is low. You can also check ink levels in your printer software. Look for your printer model number, then search for the correct ink cartridge at a store or online.
+
+## Quick Tip
+
+Keep your printer plugged in and turned on, even when you are not using it. Many wireless printers need to stay on to receive print jobs and install updates.
+
+(Sources: HP Support, Canon Support, Apple Support, 2026)`,
+  },
+  {
+    slug: 'streaming-entertainment',
+    title: 'Streaming Entertainment',
+    category: 'concept',
+    tags: ['streaming', 'netflix', 'hulu', 'roku', 'smart-tv', 'entertainment'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['streaming-setup', 'wifi-networking', 'smart-home-basics'],
+    content: `## What Is Streaming?
+
+Streaming means watching TV shows, movies, or listening to music over the internet — without downloading files or using DVDs. Think of it like a water faucet: the content flows to your screen as long as you have an internet connection.
+
+## Free vs. Paid Streaming Services
+
+**Paid services** charge a monthly fee:
+- **Netflix** ($7–$23/month) — Large library of shows, movies, and documentaries.
+- **Hulu** ($8–$18/month) — Current TV shows from major networks, plus movies.
+- **Disney+** ($8–$14/month) — Disney, Pixar, Marvel, and Star Wars content.
+
+**Free services** show ads but cost nothing:
+- **Tubi** — Free movies and TV shows with ads.
+- **Pluto TV** — Free live TV channels and on-demand content.
+- **YouTube** — Free videos on every topic imaginable.
+
+Most services offer a free trial so you can try before paying.
+
+## Streaming Devices
+
+If your TV is not a "smart TV," you can add streaming with a small device that plugs into your TV:
+- **Roku** — Popular and affordable, with a straightforward remote.
+- **Amazon Fire TV Stick** — Works well if you use Amazon services.
+- **Apple TV** — Good choice if you use an iPhone or iPad.
+- **Chromecast** — Lets you send video from your phone to your TV.
+
+## What You Need to Stream
+
+1. **An internet connection** — Wi-Fi or a wired ethernet cable to your TV or device.
+2. **A streaming device or smart TV** — Something to watch on.
+3. **An account** — You will need to create a free or paid account for each service.
+
+## Common Streaming Problems
+
+- **Buffering (video keeps stopping):** Your internet may be too slow. Try moving closer to your router or restarting it.
+- **Picture is blurry:** Lower video quality settings can help if your internet is slow.
+- **"Content not available":** Some shows are only available in certain regions or have been removed.
+- **Forgot your password:** Use the "Forgot Password" link on the sign-in screen.
+
+## Quick Tip
+
+You do not need to subscribe to every service at once. Start with one free option like Tubi to get comfortable, then add a paid service if you want more choices.
+
+(Sources: Tom's Guide, How-To Geek, AARP Tech, 2026)`,
+  },
+  {
+    slug: 'government-services-online',
+    title: 'Government Services Online',
+    category: 'concept',
+    tags: ['government', 'social-security', 'medicare', 'taxes', 'veterans', 'benefits'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['safety-checklist', 'scam-prevention', 'online-banking-safety'],
+    content: `## Why Use Government Websites?
+
+Many government services that used to require a phone call or office visit can now be handled online. This saves time and lets you manage your benefits from home at any hour.
+
+## Key Government Websites
+
+**Social Security (ssa.gov)** — Create a "my Social Security" account to check your benefits, request a replacement Social Security card, get benefit verification letters, and manage your payments.
+
+**Medicare (medicare.gov)** — Compare health plans, check what is covered, find doctors and hospitals, and view your claims and costs. Log in with your Medicare account.
+
+**IRS (irs.gov)** — File your taxes for free using IRS Free File, check your refund status, make payments, and get copies of past tax returns. The "Where's My Refund?" tool is especially helpful.
+
+**Veterans Affairs (va.gov)** — Apply for VA health care, check your claim status, request travel reimbursement, and refill prescriptions. You will need a Login.gov or ID.me account.
+
+**Benefits.gov** — Not sure what benefits you qualify for? This site asks you a few questions and shows government programs you may be eligible for — including food assistance, housing, and health programs.
+
+**Voter Registration (vote.gov)** — Register to vote, check your registration status, and find your polling place. Available in multiple languages.
+
+## Staying Safe on Government Websites
+
+- **Check the web address:** Real government websites end in ".gov" — not ".com" or ".org."
+- **Never click links in unexpected emails or texts** claiming to be from the government. Go to the website yourself by typing the address.
+- **The government will not call you** to demand immediate payment or threaten arrest. That is a scam.
+- **Use strong passwords** and turn on two-factor authentication when available.
+- **Look for the lock icon** in your browser's address bar before entering personal information.
+
+## Quick Tip
+
+Bookmark the government websites you use most so you can find them quickly without searching. This also helps you avoid fake look-alike websites.
+
+(Sources: USA.gov, FTC.gov, AARP, 2026)`,
+  },
+  {
+    slug: 'tablets-guide',
+    title: 'Tablets Guide',
+    category: 'concept',
+    tags: ['tablet', 'ipad', 'android-tablet', 'kindle', 'device'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['device-basics', 'smartphone-basics', 'apple', 'android'],
+    content: `## What Is a Tablet?
+
+A tablet is a portable device with a touchscreen that is bigger than a phone but smaller and lighter than a laptop. You tap, swipe, and type on the screen to use it. Tablets are great for reading, video calls, watching shows, browsing the web, and playing games.
+
+## Types of Tablets
+
+**iPad (Apple)** — The most popular tablet. Works well with iPhones and other Apple devices. Uses the App Store for downloading apps. Comes in several sizes, from the compact iPad Mini to the large iPad Pro.
+
+**Android tablets (Samsung, Lenovo, and others)** — Run the Android operating system and use the Google Play Store. Available at many price points, from budget-friendly to premium.
+
+**Amazon Kindle / Fire tablets** — The Kindle is designed mainly for reading books. Fire tablets are affordable general-purpose tablets with access to Amazon's app store. Good budget option.
+
+## When to Use a Tablet vs. Phone vs. Computer
+
+- **Tablet:** Reading, watching videos, casual web browsing, video calls (bigger screen than a phone), drawing, and recipes in the kitchen.
+- **Phone:** On-the-go tasks, phone calls, quick messages, and anything where portability matters most.
+- **Computer:** Typing long documents, detailed work, managing files, and tasks that need a keyboard and mouse.
+
+## Setting Up Your Tablet
+
+1. Charge the tablet fully before first use.
+2. Turn it on and follow the on-screen setup steps.
+3. Connect to your home Wi-Fi network.
+4. Sign in with your Apple ID (iPad), Google Account (Android), or Amazon Account (Kindle/Fire).
+5. Set a passcode or fingerprint lock to keep your tablet secure.
+
+## Helpful Apps for Seniors
+
+- **Video calling:** FaceTime (iPad), Google Meet, Zoom
+- **Reading:** Kindle, Apple Books, Libby (free library books)
+- **News:** Apple News, Google News, your local newspaper app
+- **Health:** MyChart (patient portal), medication reminders
+- **Entertainment:** YouTube, Netflix, Tubi (free)
+
+## Accessibility Features
+
+Tablets have built-in tools that can help with vision, hearing, and motor challenges. Look in Settings under "Accessibility" for options like larger text, screen magnification, voice control, and hearing aid support.
+
+## Quick Tip
+
+If the on-screen keyboard feels too small, consider buying a Bluetooth keyboard that connects wirelessly to your tablet. This makes typing much more comfortable.
+
+(Sources: Apple Support, Samsung Support, Amazon Help, AARP Tech, 2026)`,
+  },
+  {
+    slug: 'bluetooth-connections',
+    title: 'Bluetooth Connections',
+    category: 'concept',
+    tags: ['bluetooth', 'wireless', 'headphones', 'hearing-aids', 'pairing'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['device-basics', 'smartphone-basics', 'wifi-networking'],
+    content: `## What Is Bluetooth?
+
+Bluetooth is a way to connect devices wirelessly over a short distance — usually within about 30 feet. Unlike Wi-Fi, which connects devices to the internet, Bluetooth connects devices directly to each other. It uses very little power, so it will not drain your battery quickly.
+
+## Common Bluetooth Devices
+
+- **Wireless headphones and earbuds** — Listen to music, podcasts, or phone calls without a cord.
+- **Bluetooth speakers** — Play music from your phone or tablet through a bigger speaker.
+- **Hearing aids** — Many modern hearing aids connect to your phone via Bluetooth, letting you stream phone calls and audio.
+- **Car audio systems** — Play music or take hands-free phone calls through your car speakers.
+- **Wireless keyboards and mice** — Connect to tablets or computers without cables.
+
+## How Pairing Works
+
+"Pairing" is the process of connecting two Bluetooth devices for the first time. Here is how it works:
+
+1. **Turn on Bluetooth** on your phone or tablet (found in Settings).
+2. **Put the other device in pairing mode.** This is different for each device — usually you hold down a button until a light blinks. Check the device manual if you are unsure.
+3. **Find the device** in your phone's Bluetooth settings. It should appear in a list of nearby devices.
+4. **Tap the device name** to connect. You may need to confirm a code or tap "Pair."
+5. **Done!** Once paired, the devices should reconnect automatically in the future.
+
+## Bluetooth vs. Wi-Fi
+
+| Feature | Bluetooth | Wi-Fi |
+|---------|-----------|-------|
+| Range | About 30 feet | About 150 feet |
+| Purpose | Connect devices to each other | Connect devices to the internet |
+| Power use | Very low | Moderate |
+
+## Troubleshooting Bluetooth Problems
+
+- **Device will not connect:** Turn Bluetooth off and back on, on both devices.
+- **Still will not work:** "Forget" the device in your Bluetooth settings, then pair it again from scratch.
+- **Audio is choppy:** Move the devices closer together. Walls and other electronics can interfere.
+- **Connected but no sound:** Check that the audio output is set to the Bluetooth device, not the phone speaker.
+
+## Quick Tip
+
+You can have multiple devices paired to your phone, but usually only one audio device plays sound at a time. If your headphones are not working, check that another Bluetooth device is not connected first.
+
+(Sources: Apple Support, Google Support, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'medical-technology',
+    title: 'Medical Technology for Seniors',
+    category: 'concept',
+    tags: ['health', 'medical', 'patient-portal', 'blood-pressure', 'medication', 'telehealth'],
+    lastUpdated: '2026-04-05',
+    seeAlso: ['telehealth', 'safety-checklist', 'smartphone-basics'],
+    content: `## How Technology Can Help Manage Your Health
+
+Technology offers several tools to help you stay on top of your health — from checking test results at home to having a doctor visit by video. You do not need to be a tech expert to use these tools.
+
+## Patient Portals
+
+A patient portal is a secure website or app where you can:
+- View your test results and medical records
+- Send messages to your doctor's office
+- Request prescription refills
+- Schedule and manage appointments
+- Check billing and insurance information
+
+**How to sign up:** Ask at your doctor's office or hospital. They will give you an access code or send an email invitation. Common portals include **MyChart**, **FollowMyHealth**, and **Patient Gateway**. You will create a username and password to log in.
+
+## Blood Pressure Monitors with Apps
+
+Home blood pressure monitors that connect to your phone via Bluetooth can track your readings over time. The app creates a log you can share with your doctor. Popular options include Omron and Withings monitors. Take readings at the same time each day for the most accurate tracking.
+
+## Medication Reminder Apps
+
+Missing a dose can be a real concern. Apps like **Medisafe**, **CareZone**, and the built-in **Apple Health** or **Google Health** apps can send you reminders when it is time to take your medication. You enter your medications and schedule, and the app alerts you.
+
+## Telehealth Video Visits
+
+Telehealth lets you see a doctor or specialist by video call from home. This is helpful for follow-up visits, prescription renewals, and non-emergency questions. You typically need:
+- A phone, tablet, or computer with a camera
+- A stable internet connection
+- The provider's telehealth app or a link they send you
+
+See our [[telehealth]] page for step-by-step instructions.
+
+## Fitness Trackers for Seniors
+
+Devices like the Apple Watch, Fitbit, and Garmin can track steps, heart rate, sleep, and even detect falls. Many can send alerts to family members if you need help. Start with a basic model and explore features as you get comfortable.
+
+## Keeping Your Health Data Private
+
+- Use a strong password on all health apps and portals.
+- Turn on two-factor authentication when available.
+- Only download health apps from the official App Store or Google Play Store.
+- Do not share your portal login with anyone except a trusted caregiver.
+
+## Quick Tip
+
+Ask your doctor's office if they offer a patient portal tutorial. Many offices will walk you through the setup in person or over the phone.
+
+(Sources: Medicare.gov, Apple Support, AARP Health, MyChart, 2026)`,
   },
 ];
 

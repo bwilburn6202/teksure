@@ -281,6 +281,21 @@ html.font-size-xxl {
   }
 }
 
+/* Brand shield icon animation */
+@keyframes shield-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-shield-float {
+  animation: shield-float 4s ease-in-out infinite;
+}
+
+/* Hero dot pattern background */
+.hero-dots {
+  background-image: radial-gradient(circle, hsl(var(--primary) / 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
 /* ── Senior Tech Mode ───────────────────────────────────────── */
 html.senior-mode {
   font-size: 20px;

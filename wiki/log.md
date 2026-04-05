@@ -56,6 +56,28 @@ Scraped AARP, FTC, CISA, Tom's Guide, How-To Geek for banking safety, smartphone
 
 Added "Why It Works" explanations to 9 more guides (39 steps): open-close-programs, use-taskbar, create-folder, use-microsoft-edge, manage-windows, restart-pc, setup-email, plus partial coverage on brightness and volume guides. Total: 16 guides, 77 steps with Why It Works content.
 
+## [2026-04-05] ingest | Content gap audit and expansion (batch 7)
+
+Major content audit identified gaps across the knowledge base. Added 6 new concept wiki pages:
+- **printing-basics** — USB vs wireless, AirPrint, common printer problems, ink replacement
+- **streaming-entertainment** — Free vs paid services, streaming devices, troubleshooting
+- **government-services-online** — Social Security, Medicare, IRS, VA, Benefits.gov, voter registration
+- **tablets-guide** — iPad vs Android tablets vs Kindle, accessibility features
+- **bluetooth-connections** — Pairing, troubleshooting, Bluetooth vs Wi-Fi
+- **medical-technology** — Patient portals, blood pressure monitors, medication reminders, telehealth
+
+Fixed 8 orphan wiki pages (cloud-storage, smart-home-basics, streaming-setup, telehealth, ride-sharing, copy-and-paste, taking-screenshots, online-banking) by adding reciprocal cross-links.
+
+Added 20 new guides covering: wireless printing, print from phone, printer troubleshooting, iPad basics, Android tablet, Bluetooth headphones, car Bluetooth, hearing aids, patient portals, blood pressure monitor apps, medication reminders, Social Security account, Medicare, free tax filing, Amazon Echo, Google Home, smart TV setup, YouTube on TV, sending photos by text, video calling.
+
+Built 2 new interactive tools:
+- **Printing Setup Wizard** (/tools/printing-wizard) — 3-mode wizard: setup, troubleshoot, learn
+- **Government Services Navigator** (/tools/gov-services) — 8 service categories with step-by-step guides
+
+Redesigned homepage with TekSure brand identity: shield logo, trust bar, learning categories, workshops section.
+
+Total wiki pages: 44. Total guides: 1,023+.
+
 ## [2026-04-05] architecture | LLM training dataset generator (batch 6)
 
 Built `scripts/generate-training-data.mjs` — converts all TekSure guides + wiki pages into ChatML Q&A pairs for fine-tuning a custom LLM. Generator produces ~2,000 unique training examples from 1,037 guides and 38 wiki pages using 5 strategies: step-by-step guides, practical questions, individual step explanations, category-based rephrasing, and wiki section extraction. Output: JSONL file ready for Unsloth/LoRA fine-tuning.

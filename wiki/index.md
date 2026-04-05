@@ -22,6 +22,12 @@ Last updated: 2026-04-05
 | [Health Technology](concepts/health-technology.md) | Patient portals, telehealth, fitness trackers, medication apps | 18+ guides |
 | [Online Banking Safety](concepts/online-banking-safety.md) | Safe banking online — phishing, fraud alerts, what to do if scammed | 3+ sources |
 | [Smartphone Basics](concepts/smartphone-basics.md) | iPhone vs Android, setup tips, easy mode, senior-friendly plans | 4+ sources |
+| [Printing Basics](concepts/printing-basics.md) | USB vs wireless printers, AirPrint, common problems, ink replacement | 5 sources |
+| [Streaming & Entertainment](concepts/streaming-entertainment.md) | Netflix, Hulu, Roku, free services, streaming devices, troubleshooting | 6 sources |
+| [Government Services Online](concepts/government-services-online.md) | Social Security, Medicare, IRS, VA, SNAP, voter registration | 8 sources |
+| [Tablets Guide](concepts/tablets-guide.md) | iPad vs Android tablets vs Kindle, setup, accessibility features | 5 sources |
+| [Bluetooth Connections](concepts/bluetooth-connections.md) | Pairing headphones, hearing aids, car audio, troubleshooting | 4 sources |
+| [Medical Technology](concepts/medical-technology.md) | Patient portals, blood pressure monitors, medication reminders, telehealth | 6 sources |
 
 ## Entities
 
@@ -52,7 +58,7 @@ Last updated: 2026-04-05
 
 | Page | Summary | Date Added |
 |------|---------|------------|
-| [Guide Library](sources/guide-library.md) | Index of all 780+ TekSure guides by category | 2026-04-04 |
+| [Guide Library](sources/guide-library.md) | Index of all 1,000+ TekSure guides by category | 2026-04-05 |
 | [Scam Alert Database](sources/scam-database.md) | All scam types tracked by TekSure | 2026-04-04 |
 | [Glossary Terms](sources/glossary-terms.md) | All 106 glossary definitions | 2026-04-04 |
 | [Weekly Tips Archive](sources/tips-archive.md) | All weekly tips published on TekSure | 2026-04-04 |

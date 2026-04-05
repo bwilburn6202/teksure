@@ -119,6 +119,8 @@ const ConceptMap             = lazy(() => import("./pages/ConceptMap"));
 const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
 const DailyLessons           = lazy(() => import("./pages/DailyLessons"));
 const TroubleshootingFlows   = lazy(() => import("./pages/tools/TroubleshootingFlows"));
+const PrintingWizard         = lazy(() => import("./pages/tools/PrintingWizard"));
+const GovServices            = lazy(() => import("./pages/tools/GovServices"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -289,6 +291,8 @@ const AppContent = () => {
           <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
           <Route path="/daily-lessons" element={<DailyLessons />} />
           <Route path="/tools/troubleshooting" element={<TroubleshootingFlows />} />
+          <Route path="/tools/printing-wizard" element={<PrintingWizard />} />
+          <Route path="/tools/gov-services" element={<GovServices />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
