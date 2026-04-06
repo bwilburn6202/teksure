@@ -28,12 +28,16 @@ export function Navbar() {
 
   const publicLinks = [
     { to: '/guides', label: 'Guides' },
+    { to: '/dream-builder', label: 'Dream Builder' },
+    { to: '/playground', label: 'Playground' },
     { to: '/tools', label: 'Tools' },
     { to: '/get-help', label: 'Get Help' },
     { to: '/pricing', label: 'Pricing' },
   ];
 
   const moreLinks = [
+    { to: '/dream-builder', label: 'Dream Builder' },
+    { to: '/playground', label: 'Playground' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
     { to: '/glossary', label: 'Glossary' },
     { to: '/videos', label: 'Videos' },

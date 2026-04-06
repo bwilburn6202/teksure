@@ -19,13 +19,16 @@ export default function GuideReports() {
   const [loading, setLoading] = useState(true)
 
   const toggleResolved = async (id: string | number) => {
-    setReports(prev => prev.map(r => r.id === id ? { ...r, resolved: !(r as any).resolved } : r))
+    const current = reports.find(r => r.id === id)
+    const next = !(current?.resolved ?? false)
+    // optimistic UI update
+    setReports(prev => prev.map(r => r.id === id ? { ...r, resolved: next } : r))
     try {
-      const found = reports.find(r => r.id === id)
-      const next = !(found?.resolved ?? false)
       await (supabase as any).from('guide_reports').update({ resolved: next }).eq('id', id)
     } catch (e) {
       console.error(e)
+      // rollback if needed
+      setReports(prev => prev.map(r => r.id === id ? { ...r, resolved: current?.resolved } : r))
     }
   }
 

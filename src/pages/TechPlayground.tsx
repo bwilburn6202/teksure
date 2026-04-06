@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Play, CheckCircle, XCircle, RotateCcw, Eye, EyeOff,
-  MousePointer, Keyboard, Touch, Wifi, Lock, Mail,
+  MousePointer, Keyboard, Hand, Wifi, Lock, Mail,
   Settings, Plus, Minus, ChevronRight, BookOpen,
   Shield, Sparkles
 } from 'lucide-react';
@@ -53,7 +53,7 @@ const playgroundModules: PlaygroundModule[] = [
     id: 'touch-gestures', 
     title: 'Touch Gestures', 
     description: 'Swipe, pinch, and tap on a virtual touchscreen',
-    icon: Touch,
+    icon: Hand,
     difficulty: 'beginner',
     duration: '6 min'
   },

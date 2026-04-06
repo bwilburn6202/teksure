@@ -119,6 +119,8 @@ const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
+const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -262,6 +264,8 @@ const AppContent = () => {
           <Route path="/tools/app-permissions" element={<AppPermissions />} />
           <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
           <Route path="/tools/password-manager" element={<PasswordManager />} />
+          <Route path="/dream-builder" element={<TechDreamBuilder />} />
+          <Route path="/playground" element={<TechPlayground />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
           <Route path="/technicians/:id" element={<TechnicianProfile />} />
