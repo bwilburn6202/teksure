@@ -10,7 +10,6 @@ const routeImports: Record<string, () => Promise<unknown>> = {
   '/quick-fixes': () => import('@/pages/QuickFixes'),
   '/device-hub': () => import('@/pages/DeviceHub'),
   '/how-it-works': () => import('@/pages/HowItWorks'),
-  '/pricing': () => import('@/pages/Pricing'),
   '/about': () => import('@/pages/About'),
   '/blog': () => import('@/pages/Blog'),
   '/forum': () => import('@/pages/forum/Index'),

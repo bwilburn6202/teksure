@@ -35,7 +35,6 @@
     <meta name="twitter:site" content="@teksure" />
     <meta name="twitter:creator" content="@teksure" />
     <meta name="twitter:title" content="TekSure — Free Tech Help for Beginners &amp; Seniors" />
-<<<<<<< HEAD
     <meta name="twitter:description" content="Free step-by-step tech guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers." />
     <meta name="twitter:image" content="https://teksure.com/og-image.png" />
     <script type="application/ld+json">
@@ -61,31 +60,15 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js').then(reg => {
-            console.log('ServiceWorker registered with scope:', reg.scope);
+      if (‘serviceWorker’ in navigator) {
+        window.addEventListener(‘load’, () => {
+          navigator.serviceWorker.register(‘/service-worker.js’).then(reg => {
+            console.log(‘ServiceWorker registered with scope:’, reg.scope);
           }).catch(() => {
-            console.log('ServiceWorker registration failed.');
+            console.log(‘ServiceWorker registration failed.’);
           });
         });
       }
     </script>
-=======
-    <meta
-      property="og:description"
-      content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
-    />
-    <meta
-      name="twitter:description"
-      content="TekSure connects people with trusted technicians for fast, reliable help with everyday tech problems. Whether it’s Wi-Fi issues, slow computers, or device setup"
-    />
-    <!--ssr-head-->
-  </head>
-
-  <body>
-    <div id="root"><!--ssr-outlet--></div>
-    <script type="module" src="/src/entry-client.tsx"></script>
->>>>>>> claude/add-server-side-rendering-JqvB5
   </body>
 </html>
