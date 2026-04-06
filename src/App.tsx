@@ -22,6 +22,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { CommandPalette } from './components/CommandPalette';
 import { Changelog } from './pages/Changelog';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GuideReports from './pages/admin/GuideReports';
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
@@ -218,6 +219,7 @@ const AppContent = () => {
           <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
+          <Route path="/admin/guide-reports" element={<ProtectedRoute allowedRoles={['admin']}><GuideReports /></ProtectedRoute>} />
           <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
