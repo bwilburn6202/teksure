@@ -184,7 +184,7 @@ Respond in JSON format:
         .eq('compile_status', 'ready')
         .limit(10);
 
-      const context = docs?.map((d: any) => 
+      const context = docs?.map((d) => 
         `## ${d.title}\n${d.markdown || d.summary || ''}`
       ).join('\n\n') || 'No documents in knowledge base.';
 
@@ -226,13 +226,13 @@ If the knowledge base doesn't have enough information, say so honestly.`;
           title: question,
           prompt: question,
           markdown: result.response,
-          source_document_ids: docs?.map((d: any) => d.id) || [],
+          source_document_ids: docs?.map((d) => d.id) || [],
           model_name: model,
         });
 
       return new Response(JSON.stringify({ 
         text: result.response,
-        sources: docs?.map((d: any) => ({ title: d.title, id: d.id })) || []
+        sources: docs?.map((d) => ({ title: d.title, id: d.id })) || []
       }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' }
       });
@@ -252,7 +252,7 @@ If the knowledge base doesn't have enough information, say so honestly.`;
         .eq('compile_status', 'ready')
         .limit(8);
 
-      const context = docs?.map((d: any) => 
+      const context = docs?.map((d) => 
         `# ${d.title}\n${d.markdown || ''}`
       ).join('\n\n') || '';
 
@@ -296,7 +296,7 @@ Create 6-10 slides covering the topic. Use simple language suitable for beginner
           title: question,
           prompt: question,
           markdown: result.response,
-          source_document_ids: docs?.map((d: any) => d.id) || [],
+          source_document_ids: docs?.map((d) => d.id) || [],
           model_name: model,
         });
 
@@ -322,7 +322,7 @@ Create 6-10 slides covering the topic. Use simple language suitable for beginner
         .eq('compile_status', 'ready')
         .limit(15);
 
-      const context = docs?.map((d: any) => 
+      const context = docs?.map((d) => 
         `## ${d.title}\n${d.markdown || d.summary || ''}`
       ).join('\n\n') || '';
 
@@ -368,7 +368,7 @@ Use plain English suitable for non-technical readers.`;
           title: question,
           prompt: question,
           markdown: result.response,
-          source_document_ids: docs?.map((d: any) => d.id) || [],
+          source_document_ids: docs?.map((d) => d.id) || [],
           model_name: model,
         });
 

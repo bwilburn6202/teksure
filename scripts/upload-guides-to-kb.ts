@@ -42,7 +42,7 @@ await require('fs/promises').writeFile(tempFilePath, tempFileContent, 'utf-8');
 // @ts-ignore: Using require for CommonJS module
 const guidesModule = require(tempFilePath);
 // @ts-ignore: Getting the exported value
-const guides: Array<any> = guidesModule;
+const guides = guidesModule as Guide[];
 
 // Clean up temp file
 await require('fs/promises').unlink(tempFilePath);
@@ -141,8 +141,9 @@ async function uploadGuides() {
 
       // Small delay to avoid rate limits
       await new Promise(r => setTimeout(r, 100));
-    } catch (err: any) {
-      console.error(`  ERROR: ${guide.title || 'Unknown'} - ${err.message}`);
+    } catch (err) {
+      const error = err instanceof Error ? err : new Error(String(err));
+      console.error(`  ERROR: ${guide.title || 'Unknown'} - ${error.message}`);
       errors++;
     }
   }

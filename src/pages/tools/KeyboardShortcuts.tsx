@@ -4,7 +4,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Printer, Keyboard, Monitor, Globe, Mail, FileText, Sheet } from 'lucide-react';
+import { Printer, Keyboard, Monitor, Globe, Mail, FileText, Sheet, Sparkles } from 'lucide-react';
 
 interface Shortcut {
   keys: string;
@@ -18,6 +18,23 @@ interface Section {
 }
 
 const sections: Section[] = [
+  {
+    title: 'TekSure Shortcuts',
+    icon: Sparkles,
+    shortcuts: [
+      { keys: 'Ctrl / ⌘ + K', action: 'Open quick search' },
+      { keys: 'Escape', action: 'Close dialogs, search, or popups' },
+      { keys: 'Tab', action: 'Move to the next button or link' },
+      { keys: 'Shift + Tab', action: 'Move to the previous button or link' },
+      { keys: 'Enter or Space', action: 'Activate the focused button or link' },
+      { keys: 'Ctrl / ⌘ + B', action: 'Toggle the sidebar (on pages with sidebar)' },
+      { keys: '?', action: 'Show keyboard shortcuts help (on some pages)' },
+      { keys: '/', action: 'Jump to search field (when not in a text field)' },
+      { keys: 'Ctrl / ⌘ + Shift + T', action: 'Reopen the last closed tab in your browser' },
+      { keys: 'Alt + F4 (Windows)', action: 'Close the current window' },
+      { keys: '⌘ + Q (Mac)', action: 'Quit TekSure' },
+    ],
+  },
   {
     title: 'Windows Shortcuts',
     icon: Monitor,
@@ -127,7 +144,7 @@ export default function KeyboardShortcuts() {
     <>
       <SEOHead
         title="Keyboard Shortcuts Cheat Sheet | TekSure"
-        description="Essential keyboard shortcuts for Windows, Mac, browsers, email, Word/Docs, and Excel/Sheets — all in one printable page."
+        description="Essential keyboard shortcuts for TekSure, Windows, Mac, browsers, email, Word/Docs, and Excel/Sheets — all in one printable page."
         path="/tools/keyboard-shortcuts"
       />
       <div className="print:hidden">
@@ -142,7 +159,7 @@ export default function KeyboardShortcuts() {
               <h1 className="text-3xl font-bold print:text-2xl">Keyboard Shortcuts</h1>
             </div>
             <p className="text-muted-foreground max-w-2xl print:text-sm">
-              The most useful shortcuts for everyday computing. Bookmark this page or print it out and stick it next to your screen.
+              The most useful shortcuts for TekSure and everyday computing. Bookmark this page or print it out and stick it next to your screen.
             </p>
           </div>
           <Button onClick={handlePrint} className="print:hidden gap-2 shrink-0">

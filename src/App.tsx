@@ -22,6 +22,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { CommandPalette } from './components/CommandPalette';
 import { Changelog } from './pages/Changelog';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GuideReports from './pages/admin/GuideReports';
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
@@ -118,6 +119,8 @@ const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
+const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -219,6 +222,7 @@ const AppContent = () => {
           <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
+          <Route path="/admin/guide-reports" element={<ProtectedRoute allowedRoles={['admin']}><GuideReports /></ProtectedRoute>} />
           <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
@@ -260,6 +264,8 @@ const AppContent = () => {
           <Route path="/tools/app-permissions" element={<AppPermissions />} />
           <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
           <Route path="/tools/password-manager" element={<PasswordManager />} />
+          <Route path="/dream-builder" element={<TechDreamBuilder />} />
+          <Route path="/playground" element={<TechPlayground />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
           <Route path="/technicians/:id" element={<TechnicianProfile />} />
