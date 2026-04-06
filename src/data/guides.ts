@@ -6058,20 +6058,13 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**iPhone with Face ID (iPhone X and newer)**
-Press the Side button and Volume Up button at the same time, then quickly release both. You'll see a white flash and hear a camera click sound. A small thumbnail appears in the bottom-left corner — tap it to edit or share, or swipe it away to save it automatically to Photos.
-
-**iPhone with Home button (iPhone 8 and older)**
-Press the Side (or Top) button and the Home button at the same time, then quickly release. The same white flash and thumbnail will appear.
-
-**Finding your screenshot**
-Screenshots are saved to the Photos app, in the Screenshots album. Open Photos > Albums > Screenshots to find them all in one place.
-
-**Screenshot of a long page (Full Page)**
-After taking a screenshot, tap the thumbnail and then tap "Full Page" at the top. This captures the entire webpage or document — useful for long emails or articles.
-
-**Tip: use Assistive Touch**
-If the buttons are hard to press, go to Settings > Accessibility > Touch > Assistive Touch > turn it on. You can then take screenshots by tapping the floating button on screen.`
+    steps: [
+      { title: 'Take a screenshot on iPhone with Face ID (iPhone X and newer)', content: 'Press the Side button (right edge) and the Volume Up button (left edge) at the same time, then quickly release both. You will see a white flash and hear a camera click. A small thumbnail appears in the bottom-left corner.', tip: 'Tap the thumbnail to edit or share the screenshot immediately, or swipe it away to save it to Photos automatically.' },
+      { title: 'Take a screenshot on iPhone with a Home button (iPhone 8 and older)', content: 'Press the Side button (or Top button) and the Home button at the same time, then quickly release. You will see the same white flash and a thumbnail will appear in the bottom-left corner.' },
+      { title: 'Find your screenshots in Photos', content: 'All screenshots are saved to the Photos app automatically. Open Photos, tap Albums at the bottom, then scroll down to find the Screenshots album. All your captures are stored there.' },
+      { title: 'Take a full-page screenshot', content: 'After taking a screenshot, tap the thumbnail before it disappears. At the top of the editing screen, tap "Full Page." This captures the entire webpage or document — great for long emails or articles you want to save.', tip: 'Full Page screenshots only work in Safari (Apple\'s web browser), not in all apps.' },
+      { title: 'Use Assistive Touch if buttons are hard to press', content: 'If pressing two buttons at once is difficult, turn on Assistive Touch. Go to Settings > Accessibility > Touch > Assistive Touch and turn it on. A floating button will appear on your screen. Tap it, then tap Device > More > Screenshot to take a screenshot with one tap.', tip: 'Apple\'s full guide to taking screenshots is at support.apple.com/en-us/111965' },
+    ],
   },
   {
     slug: 'how-to-take-a-screenshot-android',
@@ -6084,20 +6077,12 @@ If the buttons are hard to press, go to Settings > Accessibility > Touch > Assis
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**The universal method**
-Press the Power button and Volume Down button at the same time and hold for one second, then release. You'll see the screen flash and a screenshot notification in the notification bar.
-
-**Swipe method (Samsung Galaxy)**
-On Samsung phones, go to Settings > Advanced Features > Motions and Gestures and enable "Palm swipe to capture." Then swipe the edge of your hand across the screen from right to left (or left to right) to take a screenshot.
-
-**Three-finger swipe (some Android phones)**
-On phones from Huawei, OnePlus, and some others: swipe three fingers down the screen simultaneously.
-
-**Finding your screenshot**
-Screenshots are saved to the Photos or Gallery app, usually in a Screenshots folder. You can also pull down the notification bar and tap the screenshot notification to view it immediately.
-
-**Scrolling screenshot (long page)**
-Many Android phones offer a "Scroll capture" or "Extended screenshot" option that appears just after you take a screenshot. Tap it to keep scrolling and capture the full page.`
+    steps: [
+      { title: 'Use the universal button shortcut', content: 'Press the Power button and the Volume Down button at the same time. Hold them together for about one second, then release. You will see the screen flash and a screenshot notification will appear at the top of your screen.', tip: 'This method works on almost all Android phones, including Samsung Galaxy, Google Pixel, Motorola, and OnePlus.' },
+      { title: 'Use a palm swipe on Samsung Galaxy phones', content: 'Samsung Galaxy phones have a special swipe method. Go to Settings > Advanced Features > Motions and Gestures and turn on "Palm swipe to capture." Once enabled, swipe the edge of your open hand across the full screen from right to left to take a screenshot.' },
+      { title: 'Find your screenshot', content: 'Screenshots are saved to your Photos or Gallery app, usually in a Screenshots folder. You can also pull down from the top of your screen to see your notifications and tap the screenshot thumbnail to view it immediately.' },
+      { title: 'Take a scrolling screenshot to capture a whole page', content: 'Right after taking a screenshot, look for a "Scroll capture" button at the bottom of the screen. Tap it to keep adding more of the page below — useful for capturing a long webpage or conversation. Not all Android phones offer this feature.', tip: 'For Google Pixel help, visit support.google.com/pixelphone. For Samsung Galaxy help, visit samsung.com/us/support.' },
+    ],
   },
   {
     slug: 'make-text-bigger-iphone',
@@ -6110,20 +6095,13 @@ Many Android phones offer a "Scroll capture" or "Extended screenshot" option tha
     thumbnailEmoji: '🔤',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Increase text size system-wide**
-Go to Settings > Display & Brightness > Text Size. Drag the slider to the right to make all text larger. This affects most apps on your iPhone immediately.
-
-**Enable Larger Accessibility Sizes**
-For even bigger text, go to Settings > Accessibility > Display & Text Size > Larger Text and turn on "Larger Accessibility Sizes." Then drag the slider to the largest size you're comfortable with.
-
-**Make everything bigger (not just text)**
-Settings > Accessibility > Display & Text Size > Display Zoom lets you choose "Larger Text" which zooms the entire interface, not just fonts.
-
-**Zoom in on any part of the screen**
-Settings > Accessibility > Zoom: turn this on, then double-tap with three fingers to zoom into any part of any screen. Drag with three fingers to move around.
-
-**Make text bold**
-Settings > Display & Brightness > Bold Text. Bold text is easier to read for many people, especially in low light.`
+    steps: [
+      { title: 'Open Settings and go to Display & Brightness', content: 'Open the Settings app (the grey gear icon). Scroll down and tap "Display & Brightness." Then tap "Text Size." You will see a slider at the bottom of the screen.' },
+      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect immediately.', tip: 'Apple\'s guide to changing text size is at support.apple.com/en-us/111799 — it covers all accessibility display options.' },
+      { title: 'Enable even larger text sizes', content: 'If the regular slider does not go big enough, go to Settings > Accessibility > Display & Text Size > Larger Text. Turn on "Larger Accessibility Sizes." This unlocks a much larger range — drag the new slider all the way to the right for maximum size.' },
+      { title: 'Make text bold', content: 'Go to Settings > Display & Brightness and turn on "Bold Text." Bold text is much easier to read for many people, especially in dim lighting. This works alongside any text size you have chosen.' },
+      { title: 'Zoom in on any part of the screen', content: 'For extra help reading specific things, turn on Zoom. Go to Settings > Accessibility > Zoom and turn it on. Then double-tap the screen with three fingers to zoom in on anything — a menu, a small label, or a phone number.', tip: 'You can also pinch and spread two fingers in Safari to zoom in on any webpage, even without turning on Zoom in Settings.' },
+    ],
   },
   {
     slug: 'make-text-bigger-android',
@@ -6136,20 +6114,12 @@ Settings > Display & Brightness > Bold Text. Bold text is easier to read for man
     thumbnailEmoji: '🔤',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Standard method**
-Go to Settings > Display > Font Size and Style (or just Settings > Accessibility > Font Size on some phones). Drag the slider to increase the text size. A preview shows what it will look like before you confirm.
-
-**Samsung Galaxy**
-Settings > Display > Font Size and Style — you can also change the font style here.
-
-**Pixel phones (Google)**
-Settings > Accessibility > Text and Display > Font Size — drag the slider. You can preview the change in real time.
-
-**Make everything larger (not just text)**
-Settings > Accessibility > Display Size (or Screen Zoom) increases the entire interface, including icons and images.
-
-**Magnification**
-Settings > Accessibility > Magnification: turn this on. You can then triple-tap the screen to zoom in on anything. Very useful for menus, maps, and small print.`
+    steps: [
+      { title: 'Open Settings and find Font Size', content: 'Open the Settings app. Depending on your phone brand: Samsung Galaxy — tap Display > Font Size and Style. Google Pixel — tap Accessibility > Text and Display > Font Size. Most other Android phones — tap Display > Font Size, or tap Accessibility > Font Size.', tip: 'If you cannot find the font size setting, open Settings and use the search bar at the top. Type "font" or "text size" and it will take you right there.' },
+      { title: 'Drag the slider to make text bigger', content: 'Once you find the Font Size slider, drag it to the right to increase the text. As you move the slider, a preview shows what text will look like at that size. Release the slider and the change applies immediately.' },
+      { title: 'Make everything bigger — icons and all', content: 'For Samsung: go to Settings > Display > Screen Zoom to make icons and images bigger too, not just text. For Pixel: go to Settings > Display > Display Size. Increasing the display size makes the entire screen easier to see.', tip: 'Google\'s accessibility guide for Android is at support.google.com/accessibility/android/answer/6006986' },
+      { title: 'Turn on Magnification to zoom in anywhere', content: 'Go to Settings > Accessibility > Magnification and turn it on. Once enabled, you can triple-tap anywhere on the screen to zoom in — great for reading a small menu, a price tag on a website, or a tiny phone number.', warning: 'Magnification stays on until you triple-tap again to zoom back out. If your screen suddenly seems zoomed in and stuck, triple-tap the screen with one finger to return to normal.' },
+    ],
   },
   {
     slug: 'free-up-storage-iphone',
@@ -6162,26 +6132,14 @@ Settings > Accessibility > Magnification: turn this on. You can then triple-tap 
     thumbnailEmoji: '💾',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Check what's using storage**
-Go to Settings > General > iPhone Storage. You'll see a breakdown of what's taking up space — usually Photos, Apps, and iOS itself are the biggest users.
-
-**Offload unused apps**
-Scroll down the storage screen to see your apps listed by size. Tap any app you haven't used recently and choose "Offload App." This removes the app but keeps its data, so you can reinstall it later without losing your progress or settings.
-
-**Clear Safari cache**
-Go to Settings > Safari > Clear History and Website Data. This can free several hundred megabytes without deleting any of your photos or files.
-
-**Delete old text messages and attachments**
-Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments" to delete old videos and photos sent in iMessage that you no longer need.
-
-**Enable iCloud Photos**
-Go to Settings > Photos and turn on iCloud Photos. Then enable "Optimise iPhone Storage." This keeps full-resolution photos in iCloud and stores smaller versions on your phone, freeing up lots of space.
-
-**Delete duplicate photos**
-Open the Photos app, go to Albums > Duplicates. Tap Merge to remove duplicates automatically (available in iOS 16 and later).
-
-**Official help**
-For Apple's complete storage management guide, visit support.apple.com/en-us/108324 — it covers every option for freeing up space on your iPhone.`
+    steps: [
+      { title: 'Check what is using your storage', content: 'Go to Settings > General > iPhone Storage. Wait a moment for it to load. You will see a colored bar at the top showing how much space is used, and a list below showing what is taking up the most space — usually Photos, Apps, and the iOS system itself.', tip: 'For Apple\'s complete storage guide, visit support.apple.com/en-us/108324' },
+      { title: 'Offload apps you rarely use', content: 'In the iPhone Storage screen, scroll down to see your apps listed from largest to smallest. Tap any app you have not used in months and tap "Offload App." This removes the app to free up space but keeps all your data — if you reinstall the app later, everything picks up where you left off.', tip: 'You can also let iPhone do this for you automatically. At the top of the iPhone Storage page, tap "Enable" next to "Offload Unused Apps." iPhone will automatically offload apps you haven\'t used when storage is low.' },
+      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You just need a Wi-Fi connection to see the full-quality version.' },
+      { title: 'Delete old text message photos and videos', content: 'Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments." You will see a list of photos and videos sent through text messages, sorted by size. Tap Edit and select the ones you don\'t need, then delete them.' },
+      { title: 'Clear Safari browser cache', content: 'Go to Settings > Safari > Clear History and Website Data. Tap "Clear History and Data" to confirm. This removes temporary web files stored on your phone and can free up several hundred megabytes. Your bookmarks and saved passwords are not affected.' },
+      { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 16 or later.' },
+    ],
   },
   {
     slug: 'free-up-storage-android',
@@ -6194,23 +6152,13 @@ For Apple's complete storage management guide, visit support.apple.com/en-us/108
     thumbnailEmoji: '💾',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Check storage usage**
-Go to Settings > Storage (or Settings > Device Care > Storage on Samsung). You'll see a bar graph showing what categories are using the most space.
-
-**Use Google Files to clean up**
-Download the free "Files by Google" app from the Play Store if you don't have it. It automatically identifies junk files, duplicate photos, large files, and unused apps, and helps you delete them safely.
-
-**Clear app cache**
-Go to Settings > Apps > [select an app] > Storage > Clear Cache. Doing this for your browser, social media apps, and streaming apps can free hundreds of megabytes. Note: this doesn't delete your login or personal data.
-
-**Move photos to Google Photos**
-Install Google Photos and turn on Backup. Once your photos are backed up to Google's servers, you can tap "Free up space" to remove local copies from your phone.
-
-**Delete downloaded files**
-Open the Files app and look in the Downloads folder. It often contains old documents, APK files, and downloads you no longer need.
-
-**Use a microSD card (if your phone supports it)**
-Many Android phones have a microSD card slot. Insert a card (64GB or 128GB is inexpensive) and go to Settings > Storage > SD card to move apps or photos to it.`
+    steps: [
+      { title: 'Check what is using your storage', content: 'Go to Settings > Storage (on Samsung: Settings > Device Care > Storage). You will see a bar graph and a breakdown showing how much space photos, apps, and other files are using. Start by identifying the biggest categories.' },
+      { title: 'Use Files by Google to clean up automatically', content: 'Open the Files app (pre-installed on most Android phones) or download "Files by Google" free from the Play Store. Tap "Clean" at the bottom. The app will find junk files, duplicate photos, and large unused files and walk you through deleting them safely.', tip: 'Google\'s guide to managing storage on Android is at support.google.com/android/answer/9355956' },
+      { title: 'Back up photos and free up space with Google Photos', content: 'Open Google Photos and make sure backup is turned on (tap your profile photo > Photos Settings > Backup). Once your photos are safely backed up to Google\'s servers, tap your profile photo > "Free up space on this device" — this removes local copies from your phone while keeping them safe in Google Photos.', warning: 'Only free up space after you confirm your photos are fully backed up. Look for "Backup is on" and "X photos backed up" before tapping Free up space.' },
+      { title: 'Clear app cache', content: 'Go to Settings > Apps. Tap any large app like Chrome, Facebook, or YouTube. Tap "Storage & Cache" and then "Clear Cache." This removes temporary files stored by that app. It does not delete your login information or personal data — just temporary junk.' },
+      { title: 'Delete files in your Downloads folder', content: 'Open the Files app and tap "Downloads." You will often find old documents, PDFs, or files you downloaded months ago and no longer need. Select them and delete. This folder is frequently full of forgotten downloads.' },
+    ],
   },
   {
     slug: 'backup-iphone-to-icloud',
@@ -6223,23 +6171,13 @@ Many Android phones have a microSD card slot. Insert a card (64GB or 128GB is in
     thumbnailEmoji: '☁️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What does a backup include?**
-An iCloud backup saves your photos, contacts, messages, app data, settings, and more. It doesn't include apps themselves (those can be re-downloaded for free) or content already stored in iCloud like iCloud Photos.
-
-**Turn on iCloud Backup**
-Go to Settings > [Your Name] > iCloud > iCloud Backup and toggle it on. Then tap "Back Up Now" to do an immediate backup.
-
-**Automatic backups**
-Your iPhone backs up automatically every night when it's connected to Wi-Fi, plugged into power, and the screen is locked. Just plug it in at night and it happens on its own.
-
-**Check your last backup date**
-Go to Settings > [Your Name] > iCloud > iCloud Backup. You'll see the date and time of your last backup.
-
-**Check available iCloud storage**
-Apple gives you 5GB of free iCloud storage. Go to Settings > [Your Name] > iCloud > Manage Account Storage to see how much you've used. If it's full, you can buy more storage (50GB costs about $0.79/month) or selectively exclude large apps from backup.
-
-**Restore from a backup**
-If you get a new phone, sign in with your Apple ID and choose "Restore from iCloud Backup" during setup. Your phone will be restored to exactly how it was.`
+    steps: [
+      { title: 'Turn on iCloud Backup', content: 'Go to Settings, tap your name at the very top, then tap iCloud. Scroll down and tap "iCloud Backup." Tap the toggle to turn it on. Then tap "Back Up Now" to start your first backup right away.', tip: 'Apple\'s full iCloud Backup guide is at support.apple.com/guide/iphone/back-up-iphone-iph3ecf67d29/ios' },
+      { title: 'What gets backed up', content: 'An iCloud backup saves your contacts, photos (if iCloud Photos is off), messages, app data, settings, and ringtones. Apps themselves are not backed up — they can be re-downloaded for free from the App Store. Photos stored in iCloud Photos are already in iCloud and do not need to be in your backup separately.' },
+      { title: 'Let it back up automatically every night', content: 'Your iPhone backs up automatically when it is plugged into power, connected to Wi-Fi, and the screen is locked. The easiest way to keep your backup current is to plug your phone in to charge each night before bed — the backup happens on its own while you sleep.' },
+      { title: 'Check when your last backup was', content: 'Go to Settings > [Your Name] > iCloud > iCloud Backup. Underneath the toggle, you will see the date and time of your most recent backup. If it says "Never" or the date is weeks old, tap "Back Up Now" to create a fresh backup.', warning: 'If your backup is more than a week old, you could lose recent photos and contacts if your phone is lost or breaks. Aim to keep it backed up every few days at minimum.' },
+      { title: 'Check your iCloud storage', content: 'Apple gives you 5GB of free iCloud storage. To see how much you have used, go to Settings > [Your Name] > iCloud > Manage Account Storage. If your backup is failing due to full storage, you can upgrade to 50GB for $0.99 per month or delete old backups from devices you no longer use.' },
+    ],
   },
   {
     slug: 'backup-android-to-google',
@@ -6252,23 +6190,13 @@ If you get a new phone, sign in with your Apple ID and choose "Restore from iClo
     thumbnailEmoji: '☁️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Enable Google Backup**
-Go to Settings > System > Backup (the exact path varies slightly by phone brand). Turn on "Back up to Google Drive." This saves contacts, app data, call history, SMS messages, and settings.
-
-**Back up your photos with Google Photos**
-Install or open the Google Photos app and sign in with your Google account. Tap your profile photo > Photos Settings > Backup and turn it on. Choose "Storage saver" quality for free unlimited backups, or "Original quality" (counts toward your 15GB of free storage).
-
-**Check backup status**
-Open Google Photos, tap your profile photo > Photos Settings > Backup. You'll see if backup is "On" and when photos were last backed up.
-
-**What's backed up automatically**
-- Contacts: synced to Google Contacts at contacts.google.com
-- Photos & videos: Google Photos (when backup is enabled)
-- App data, Wi-Fi passwords, call history: via Google Account backup
-- SMS messages: some Android versions back these up; third-party apps like SMS Backup & Restore can help if yours doesn't
-
-**Restore on a new phone**
-When setting up a new Android phone, sign in with your Google account and choose "Restore from backup." Your contacts, apps, and settings will transfer over automatically.`
+    steps: [
+      { title: 'Turn on Google Backup', content: 'Go to Settings > System > Backup (on Samsung: Settings > Accounts and Backup > Google Drive). Turn on "Back up to Google Drive." This automatically saves your contacts, app data, call history, and Wi-Fi passwords to your Google account.', tip: 'Google\'s backup guide is at support.google.com/android/answer/2819582 — it covers all Android versions and brands.' },
+      { title: 'Back up your photos with Google Photos', content: 'Open the Google Photos app (download it free from the Play Store if you do not have it). Tap your profile photo in the top-right corner, then tap "Photos Settings" > "Backup" and turn it on. Choose "Storage saver" quality to back up unlimited photos for free.', tip: 'Google gives every account 15GB of free storage for backups. Photos backed up in "Storage saver" mode do not count against this limit.' },
+      { title: 'Check that your backup is working', content: 'Open Google Photos, tap your profile photo, and tap "Photos Settings" > "Backup." You will see "Backup is on" and when your photos were last backed up. You should see "Backup complete" or the number of photos waiting to upload.' },
+      { title: 'What gets backed up', content: 'Google Backup saves: your contacts (viewable at contacts.google.com), app data and settings, call history, Wi-Fi passwords, and photos and videos (through Google Photos). SMS text messages are backed up on some Android versions — if yours does not, the free app "SMS Backup & Restore" from the Play Store can help.' },
+      { title: 'Restore your phone from a backup', content: 'When you get a new Android phone, sign in with your Google account during setup and choose "Restore from backup." Select your most recent backup from the list. Your contacts, apps, and settings will transfer over automatically.', warning: 'For your backup to be complete, keep your phone connected to Wi-Fi and plugged in overnight at least once a week. Backups only happen when you are on Wi-Fi.' },
+    ],
   },
   {
     slug: 'download-apps-app-store-iphone',
@@ -6339,20 +6267,13 @@ Press and hold the app icon, then drag it to "Uninstall" at the top of the scree
     thumbnailEmoji: '🚫',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Block a specific number**
-Open the Phone app, go to Recents, and tap the (i) icon next to the number you want to block. Scroll down and tap "Block this Caller." They'll go straight to voicemail.
-
-**Silence unknown callers**
-Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts will be silenced and sent to voicemail. This dramatically reduces spam calls.
-
-**Register with the Telephone Preference Service (UK)**
-Visit tpsonline.org.uk and register your mobile number for free. Companies are legally required to remove you from their call lists within 28 days.
-
-**Report spam calls**
-In the Phone app, go to Recents and tap the (i) next to the number. Scroll down and tap "Report as Spam." Apple uses this data to improve spam detection.
-
-**Use Truecaller or Hiya (free apps)**
-These apps identify spam callers before you even answer. Download from the App Store and enable them as a caller ID service in Settings > Phone > Call Blocking & Identification.`
+    steps: [
+      { title: 'Turn on Silence Unknown Callers', content: 'Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not saved in your contacts will be automatically silenced and sent to voicemail. You will still see missed calls from unknown numbers in your Recents list.', tip: 'Apple\'s guide on managing calls is at support.apple.com/en-us/111106 — it covers blocking, filtering, and silencing options on iPhone.' },
+      { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block and tap the (i) icon next to it. Scroll down and tap "Block this Caller." Future calls, texts, and FaceTime from that number will be blocked automatically.', tip: 'You can view and manage your blocked numbers by going to Settings > Phone > Blocked Contacts.' },
+      { title: 'Report spam calls', content: 'In the Phone app, tap "Recents" and tap the (i) icon next to a spam number. Scroll down and tap "Report as Junk." Apple uses this information to improve spam detection for all iPhone users.' },
+      { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to add your phone number to the National Do Not Call Registry. Most legitimate companies are legally required to stop calling you within 31 days of registration. It is free and takes less than a minute.', tip: 'Registration lasts permanently. If you still get calls after 31 days, those are likely scammers (who do not follow the law) — report them at DoNotCall.gov.' },
+      { title: 'Install a free call-blocking app', content: 'Download a free spam-blocking app like Hiya or Nomorobo from the App Store. Once installed, go to Settings > Phone > Call Blocking & Identification and turn on the app. It will automatically identify spam callers before you even answer.', warning: 'No app or setting can block every spam call. Scammers constantly change numbers. Silence Unknown Callers (step 1) combined with a blocking app gives you the best protection.' },
+    ],
   },
   {
     slug: 'block-spam-calls-android',
@@ -6365,20 +6286,13 @@ These apps identify spam callers before you even answer. Download from the App S
     thumbnailEmoji: '🚫',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Block a specific number**
-Open the Phone app, tap Recents, press and hold the number you want to block (or tap the three-dot menu next to it), then tap "Block number." Future calls from this number will be declined automatically.
-
-**Enable Google spam protection**
-Open the Phone app, tap the three-dot menu (top right) > Settings > Caller ID & Spam > turn on "Filter spam calls." Google will automatically screen calls that look like spam.
-
-**Screen calls with Google Assistant**
-On Pixel phones: when an unknown number calls, tap "Screen call." Google Assistant answers on your behalf, asks who's calling, and shows you the caller's response in real time. You then decide whether to pick up.
-
-**Register with the Telephone Preference Service (UK)**
-Visit tpsonline.org.uk to register your number. It's free and legally requires UK businesses to stop calling you within 28 days.
-
-**Use Truecaller (free)**
-Download Truecaller from the Play Store. It identifies billions of spam numbers and automatically blocks the most persistent ones. Very effective against cold callers.`
+    steps: [
+      { title: 'Turn on Google spam protection', content: 'Open the Phone app on your Android. Tap the three-dot menu in the top-right corner, then tap Settings > Caller ID & Spam. Turn on "Filter spam calls." Google will automatically identify and silence calls that look like spam before your phone rings.', tip: 'Google\'s guide to blocking calls on Android is at support.google.com/phoneapp/answer/6325463' },
+      { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block. Tap and hold on the number (or tap the three-dot menu next to it) and select "Block number." Future calls from this number will be declined automatically and will not ring your phone.' },
+      { title: 'Screen calls with Google Assistant (Pixel phones)', content: 'On Google Pixel phones, when an unknown number calls, tap "Screen call." Google Assistant will answer on your behalf, ask who is calling and why, and show you the caller\'s response on your screen in real time. You then decide whether to pick up or hang up.' },
+      { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to register your number for free. Most legitimate companies must stop calling you within 31 days. Registration never expires — you only need to do it once.', tip: 'If you still receive calls after 31 days of registering, report them at DoNotCall.gov. These are likely scammers, which you can also report to the FTC at ReportFraud.ftc.gov.' },
+      { title: 'Install a free call-blocking app', content: 'Download a free app like Hiya Caller ID & Block or Nomorobo from the Google Play Store. These apps recognize spam numbers before you answer. Open the app and follow its setup instructions to start filtering calls.', warning: 'No app can block every spam call — scammers constantly rotate numbers. Combining Google spam protection with a blocking app gives you the strongest defense.' },
+    ],
   },
   {
     slug: 'fix-phone-battery-draining-fast',
@@ -12851,6 +12765,222 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'Read reviews and see photos', content: 'Before choosing a trail, read reviews from other hikers. They will tell you about trail conditions, crowds, scenery, and anything to watch out for. Photos help you know what to expect.' },
       { title: 'Navigate the trail', content: 'Once you choose a trail, tap "Start" to begin navigation. AllTrails shows you a map with your position marked. This helps you stay on the right path.', warning: 'Download the trail map before you go in case you lose cell phone service on the trail. Look for the download icon on the trail page.' },
     ]
+  },
+
+  // ═══════════════════════════════════════════
+  // WEEKLY ENRICHMENT — 2026-04-07 (5 new guides)
+  // ═══════════════════════════════════════════
+
+  // Social: "Getting fake texts from 'FedEx' or 'your bank'? Here's exactly how to tell if it's a scam."
+  {
+    slug: 'spot-fake-text-smishing',
+    title: 'How to Spot a Fake Text Message (Smishing Scam)',
+    excerpt: 'Scam texts cost Americans $470 million in 2024. Learn how to recognize a fake text before you tap any links.',
+    category: 'safety-guides',
+    tags: ['scam', 'text-message', 'smishing', 'phishing', 'safety', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/b3HJNNiMOjA',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Know what a smishing scam looks like',
+        content: 'Smishing is when a scammer sends a text pretending to be a real company — like FedEx, your bank, Amazon, USPS, or even the IRS. The goal is to get you to tap a link and enter your personal information or pay money.',
+        tip: 'The FTC says text scams hit a record $470 million in losses in 2024. Seniors are the most targeted group. Learn more at consumer.ftc.gov/articles/how-recognize-report-spam-text-messages',
+      },
+      {
+        title: 'Look for these red flags',
+        content: 'Watch out for: urgency ("Your account will be closed in 24 hours!"), strange sender numbers or email addresses, links with odd web addresses (like "usps-delivery.net" instead of usps.com), requests for gift cards or wire transfers, and unexpected prizes or refunds.',
+        warning: 'Real companies like FedEx, UPS, Amazon, and your bank will NEVER ask you to pay with gift cards or send them money by text message.',
+      },
+      {
+        title: 'Never tap links in unexpected texts',
+        content: 'If you get a text about a package, an account problem, or a payment — do not tap the link. Instead, open your web browser and type the company\'s real website address yourself (like fedex.com or amazon.com) to check your account directly.',
+      },
+      {
+        title: 'Check the sender carefully',
+        content: 'Legitimate companies usually send texts from short 5-6 digit numbers called "short codes" (like 22395 for USPS). If you get a long phone number claiming to be a big company, that\'s a warning sign. Scammers also send texts from email addresses or random international numbers.',
+      },
+      {
+        title: 'Forward spam texts to 7726',
+        content: 'Forward any suspicious text message to 7726 (which spells SPAM on your keypad). It\'s free on all US carriers. This reports the scam to your carrier so they can block it for other customers.',
+        tip: 'You can also report text scams directly to the FTC at ReportFraud.ftc.gov — it takes less than 2 minutes.',
+      },
+      {
+        title: 'What to do if you already tapped a link',
+        content: 'If you tapped a scam link: do not enter any personal information. Close the browser immediately. If you entered a password, change it right away. If you entered a credit card number, call your bank and report it. Run a security scan on your phone.',
+        warning: 'Contact your bank immediately if you entered any payment information. Many banks can reverse unauthorized charges if you report them quickly.',
+      },
+    ],
+  },
+
+  // Social: "Did you know you can share your Wi-Fi password with a visitor without ever saying the password out loud?"
+  {
+    slug: 'share-wifi-password',
+    title: 'How to Share Your Wi-Fi Password With a Guest',
+    excerpt: 'Share your home Wi-Fi with visitors instantly — no need to read out a long password. Works on iPhone and Android.',
+    category: 'essential-skills',
+    tags: ['wifi', 'password', 'sharing', 'iphone', 'android', 'beginner'],
+    readTime: '3 min',
+    videoUrl: 'https://www.youtube.com/embed/OyBaqlwNRBs',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Share Wi-Fi from iPhone to iPhone (the easy way)',
+        content: 'Make sure both phones have Wi-Fi and Bluetooth turned on and are close together. Ask your guest to go to Settings > Wi-Fi and tap your network name. On your iPhone, a pop-up will appear asking if you want to share the password. Tap "Share Password." Your guest\'s phone will connect automatically — no typing required.',
+        tip: 'This iPhone-to-iPhone sharing only works if the guest\'s Apple ID email is saved in your Contacts, and vice versa. If you don\'t see the pop-up, make sure both people\'s contact info is in each other\'s phones.',
+      },
+      {
+        title: 'Share Wi-Fi using a QR code (works on any phone)',
+        content: 'On iPhone: go to Settings > Wi-Fi and tap the (i) next to your network name. Tap "Share" and a QR code will appear. Your guest can point their phone camera at it to connect instantly. On Android: go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the QR code icon to display a shareable code.',
+        tip: 'For more on iPhone Wi-Fi sharing, visit Apple\'s support page: support.apple.com/guide/iphone/connect-to-a-wi-fi-network-iph6c493dde/ios',
+      },
+      {
+        title: 'Find and share your Wi-Fi password manually',
+        content: 'If the automatic methods don\'t work, you can look up your password. On iPhone (iOS 16 or later): go to Settings > Wi-Fi, tap the (i) next to your network, then tap "Password." On Android: go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the share icon — your password will appear on screen.',
+        warning: 'Your Wi-Fi password gives guests full access to your home network. Change it after guests leave if security is a concern — especially for short-term rentals.',
+      },
+      {
+        title: 'Set up a guest network for visitors',
+        content: 'Most home routers let you create a separate "guest network" — a second Wi-Fi that visitors can use without accessing your main network (and the devices on it). Log in to your router\'s settings page and look for "Guest Network." Your internet provider\'s website can walk you through the steps for your specific router.',
+        tip: 'A guest network is ideal if you have smart home devices, a security camera, or a home office computer that you want to keep separate from visitor traffic.',
+      },
+    ],
+  },
+
+  // Social: "Your email got hacked. Now what? Here are the exact steps to take RIGHT NOW to regain control."
+  {
+    slug: 'what-to-do-email-hacked',
+    title: 'What to Do If Your Email Account Gets Hacked',
+    excerpt: 'Hacked email account? Act fast with these steps to regain control, secure your data, and prevent more damage.',
+    category: 'safety-guides',
+    tags: ['email', 'hacked', 'security', 'account', 'recovery', 'beginner'],
+    readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/R1Z_9XMFbrk',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Try to sign in to your email account right now',
+        content: 'Go to your email provider\'s website (gmail.com, outlook.com, yahoo.com) and try your regular password. If it works, the hacker may not have changed your password yet. Move quickly through the next steps before they do.',
+        tip: 'If you can still sign in, scroll through your Sent folder. Hackers often use hacked email accounts to send spam or scam messages to your contacts. Your contacts may have already received suspicious emails from you.',
+      },
+      {
+        title: 'Change your password immediately',
+        content: 'If you can sign in: look for Settings > Security > Change Password and create a new, strong password. Make it at least 12 characters with a mix of letters, numbers, and symbols. If you cannot sign in because the hacker changed your password, click "Forgot Password" or "Recover Account" to start the account recovery process.',
+        tip: 'For Gmail recovery, visit myaccount.google.com/security. For Outlook/Hotmail, visit account.live.com/acsr. For Yahoo, visit login.yahoo.com/account/challenge/forgot-password.',
+      },
+      {
+        title: 'Turn on two-step verification',
+        content: 'Once you regain access, turn on two-step verification (also called two-factor authentication). This means even if a hacker gets your password, they still cannot get in without a code sent to your phone. In Gmail: Settings > Security > 2-Step Verification. In Outlook: account.microsoft.com > Security > Advanced Security Options.',
+        warning: 'Two-step verification is the single most important thing you can do to prevent future hacking. Turn it on today — it only takes 5 minutes to set up.',
+      },
+      {
+        title: 'Check what the hacker may have done',
+        content: 'Look through your account for: emails sent from your account that you did not write, your email recovery phone number or backup email changed to an unfamiliar address, apps or services connected to your email that you don\'t recognize, and your mail forwarding settings (sometimes hackers forward copies of your emails to themselves).',
+      },
+      {
+        title: 'Change passwords on your other accounts',
+        content: 'Your email is the master key to your other accounts — password reset emails go to your inbox. Change the password on any important account that uses your email to sign in: your bank, Amazon, PayPal, Social Security portal, health insurance, and any other financial accounts.',
+        warning: 'If you use the same password on multiple sites, change all of them. A hacker who gets one password will try it on your bank, Amazon, and every major service.',
+      },
+      {
+        title: 'Tell your contacts what happened',
+        content: 'Send a message to your contacts letting them know your email was hacked and they should delete any unexpected messages they received from you recently. This protects them from falling for any scam emails the hacker may have sent from your account.',
+      },
+      {
+        title: 'Report the hack to the FTC',
+        content: 'Report the incident to the FTC at IdentityTheft.gov — this gives you a personalized recovery plan and formal documentation of the event. If you believe your identity was stolen (Social Security number, bank account), IdentityTheft.gov will walk you through every step of recovery.',
+        tip: 'The FTC\'s identity theft recovery website is free and gives you a step-by-step checklist tailored to your situation. Visit IdentityTheft.gov.',
+      },
+    ],
+  },
+
+  // Social: "Before you tap that link — here's a 5-second check that could save you from a scam."
+  {
+    slug: 'check-if-link-safe',
+    title: 'How to Tell If a Link Is Safe Before You Click It',
+    excerpt: 'Not sure if a link is safe to tap? These quick checks can help you avoid fake websites and scams.',
+    category: 'safety-guides',
+    tags: ['links', 'phishing', 'scam', 'safety', 'websites', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/5cT9v22SCXI',
+    thumbnailEmoji: '🔗',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Look at the web address carefully',
+        content: 'Scammers create fake websites with addresses that look almost right. Before tapping a link, look at the full address. Real addresses: amazon.com, paypal.com, bankofamerica.com. Fake addresses: amazon-support.net, paypa1.com (with a number 1), bankofamerica.customer-service.com. The part right before the first "/" is the real domain — that\'s what matters.',
+        tip: 'On your phone, press and hold a link (don\'t tap) to see the full web address before visiting it. On a computer, hover your mouse over a link to see the address at the bottom of the screen.',
+      },
+      {
+        title: 'Check for HTTPS',
+        content: 'Legitimate websites use HTTPS (the "S" stands for secure). When you visit a website, look for a padlock icon in your browser\'s address bar. If you see a warning like "Not Secure" or an X instead of a padlock, do not enter any personal information on that site.',
+        warning: 'A padlock icon means the connection is encrypted — but it does NOT guarantee the site is legitimate. Scammers can also get HTTPS certificates. Always check the full web address too.',
+      },
+      {
+        title: 'Use Google\'s Safe Browsing checker',
+        content: 'Google offers a free tool to check if any link is safe. Go to transparencyreport.google.com/safe-browsing/search and paste the link into the search box. Google will tell you instantly if the site is known to be dangerous.',
+        tip: 'You can also check a link at Norton Safe Web (safeweb.norton.com) or URLVoid (urlvoid.com) for a second opinion.',
+      },
+      {
+        title: 'Be extra careful with shortened links',
+        content: 'Links that start with "bit.ly," "tinyurl.com," or "t.co" hide the real destination. You cannot tell where they go just by looking. If you receive a shortened link from an unknown source, use a link expander like checkshorturl.com to see the full address before tapping.',
+      },
+      {
+        title: 'When in doubt, go directly to the website',
+        content: 'If a text or email says there\'s a problem with your Amazon order, your bank account, or a package — do not tap any link. Instead, open your web browser and type the company\'s real website address yourself (amazon.com, your bank\'s website, etc.). If there really is an issue, you will see it when you log in.',
+        tip: 'Save the websites you use most as bookmarks in your browser. When you want to check your bank or shop online, tap your saved bookmark instead of any link sent to you.',
+      },
+    ],
+  },
+
+  // Social: "This one iPhone setting could save your life in an emergency — and most people don't know it exists."
+  {
+    slug: 'iphone-medical-id',
+    title: 'How to Set Up Medical ID on Your iPhone',
+    excerpt: 'Medical ID lets paramedics see your medical conditions, allergies, and emergency contacts from your locked iPhone screen.',
+    category: 'health-tech',
+    tags: ['iphone', 'medical-id', 'emergency', 'safety', 'health', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
+    thumbnailEmoji: '🏥',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Open the Health app',
+        content: 'Find and open the Health app on your iPhone. It is a white icon with a red heart. If you can\'t find it, swipe down from the middle of your home screen and type "Health" in the search bar.',
+      },
+      {
+        title: 'Tap your profile picture and then Medical ID',
+        content: 'In the Health app, tap your profile picture or initial in the top-right corner. Then tap "Medical ID." If you have not set one up yet, tap "Create Medical ID."',
+        tip: 'For Apple\'s full guide on setting up Medical ID, visit support.apple.com/en-us/111993',
+      },
+      {
+        title: 'Fill in your medical information',
+        content: 'Add information that emergency responders need to know: medical conditions (such as diabetes, heart disease, epilepsy), medications you take and their dosages, allergies and reactions, and your blood type if you know it. Add as much or as little as you are comfortable sharing.',
+        tip: 'You do not have to fill in every field. Even just adding your name, blood type, and one emergency contact is extremely helpful for first responders.',
+      },
+      {
+        title: 'Add emergency contacts',
+        content: 'Scroll down to "Emergency Contacts" and tap the + button to add a contact from your phone. Add a spouse, adult child, or close family member. Include their relationship to you. Emergency responders can call this person directly from your locked phone.',
+        warning: 'Make sure your emergency contacts know they are listed and that their phone number in your contacts is current.',
+      },
+      {
+        title: 'Turn on "Show When Locked"',
+        content: 'At the top of the Medical ID screen, make sure "Show When Locked" is turned on. This is critical — it means emergency responders can see your medical information even when your iPhone is locked with a passcode. Without this turned on, your Medical ID is useless in an emergency.',
+      },
+      {
+        title: 'Save and verify it works',
+        content: 'Tap "Done" to save. To verify it works from your lock screen: press the Side button to wake your phone, tap "Emergency" in the bottom-left corner, then tap "Medical ID." You should see all the information you just entered. This is exactly what a paramedic or ER nurse would see.',
+      },
+    ],
   },
 ];
 
