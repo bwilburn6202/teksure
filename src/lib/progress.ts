@@ -1,6 +1,8 @@
 const STORAGE_KEY = 'teksure-guide-progress';
+const isServer = typeof window === 'undefined';
 
 export function getCompletedGuides(): Set<string> {
+  if (isServer) return new Set();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return new Set();
@@ -10,12 +12,21 @@ export function getCompletedGuides(): Set<string> {
   }
 }
 
-export function markGuideCompleted(slug: string): void {
+export function markGuideCompleted(slug: string, userId?: string): void {
   const completed = getCompletedGuides();
   completed.add(slug);
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...completed]));
   // Dispatch a custom event so components can react without prop drilling
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+
+  // If a logged-in user ID is provided, sync progress to Supabase
+  if (userId) {
+    import('./syncProgress').then(({ syncProgressToSupabase }) => {
+      syncProgressToSupabase(userId);
+    }).catch(() => {
+      // Silent fail if sync module unavailable
+    });
+  }
 }
 
 export function isGuideCompleted(slug: string): boolean {

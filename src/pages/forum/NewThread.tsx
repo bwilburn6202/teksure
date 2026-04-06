@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import { checkRateLimit } from '@/lib/rateLimit';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -26,6 +27,9 @@ export default function NewThread() {
 
   const createThread = useMutation({
     mutationFn: async () => {
+      if (!checkRateLimit('forum-post', 5, 600_000)) {
+        throw new Error('You\'ve posted several times recently. Please wait a few minutes.');
+      }
       const { data, error } = await supabase
         .from('forum_threads' as any)
         .insert({

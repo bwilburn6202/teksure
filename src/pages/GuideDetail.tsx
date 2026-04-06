@@ -11,22 +11,19 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
-import { BackToTop } from '@/components/BackToTop';
+import { ShareGuideButton } from '@/components/ShareGuideButton';
+import { ReportBrokenLink } from '@/components/ReportBrokenLink';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
-import { saveStepProgress, saveStepProgressToDB, recordGuideView, markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
-import { ReportGuideDialog } from '@/components/ReportGuideDialog';
-import { supabase } from '@/integrations/supabase/client';
-import { ThumbsFeedback } from '@/components/ThumbsFeedback';
-import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
-// Consolidated import above; removed duplicate
-import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
+import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
+import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { useAuth } from '@/contexts/AuthContext';
 
 /* ── Helpers ────────────────────────────────────── */
@@ -37,6 +34,13 @@ function calcReadTime(guide: { title: string; excerpt: string; steps?: GuideStep
   if (guide.body) words += guide.body.split(/\s+/).length;
   const mins = Math.max(1, Math.ceil(words / 200));
   return `${mins} min read`;
+}
+
+function calcStepTime(step: GuideStep): string {
+  const words = (step.title + ' ' + step.content + ' ' + (step.tip || '') + ' ' + (step.warning || '')).split(/\s+/).length;
+  const secs = Math.max(15, Math.ceil((words / 200) * 60));
+  if (secs < 60) return `~${secs}s`;
+  return `~${Math.ceil(secs / 60)} min`;
 }
 
 /* ── Sub-components ─────────────────────────────── */
@@ -287,35 +291,16 @@ const GuideDetail = () => {
   const stepCount = guide?.steps?.length || 0;
   const { activeStep, stepsRef } = useStepProgress(stepCount);
 
-  // Record this guide as recently viewed
-  useEffect(() => {
-    if (slug) recordGuideView(slug);
-  }, [slug]);
-
-  // Save step-level progress as user scrolls
-  useEffect(() => {
-    const save = async () => {
-      if (slug && stepCount > 0) {
-        // If user is signed in, persist to DB; otherwise fall back to local storage
-        if (typeof user?.id === 'string') {
-          await saveStepProgressToDB(slug, user.id, activeStep, stepCount);
-        } else {
-          saveStepProgress(slug, activeStep, stepCount);
-        }
-      }
-    };
-    save();
-  }, [activeStep, slug, stepCount, user?.id]);
-
   if (!guide) return <Navigate to="/guides" replace />;
 
-  // Guides are readable by everyone; auth is only required for interactive actions (rating, bookmarking, progress)
+  if (!user) {
+    return <Navigate to="/login" state={{ message: 'Create a free account to read this guide.', from: location.pathname }} replace />;
+  }
 
   const currentIndex = guides.findIndex(g => g.slug === slug);
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
   const nextGuide = currentIndex < guides.length - 1 ? guides[currentIndex + 1] : null;
 
-  const [reportOpen, setReportOpen] = useState(false);
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.category === guide.category)
     .slice(0, 3);
@@ -400,7 +385,7 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt={guide.title} className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" decoding="async" width="80" height="56" />
+            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -428,22 +413,13 @@ const GuideDetail = () => {
               <StarRating guideSlug={guide.slug} readOnly size="sm" />
             </div>
 
-            {/* Print-only header: shows TekSure URL at the top of printed page */}
-            <div className="hidden print:block text-sm text-gray-500 mb-2">
-              Printed from TekSure.com &mdash; teksure.com/guides/{guide.slug}
-            </div>
-
-              <div className="flex flex-wrap gap-2 mt-5">
-              <Button
-                variant="outline"
-                size="lg"
-                className="gap-2 no-print min-h-[48px] text-base font-semibold px-6"
-                onClick={() => window.print()}
-                aria-label="Print this guide"
-              >
-                <Printer className="h-5 w-5" /> Print this Guide
+            <div className="flex flex-wrap gap-2 mt-5">
+              <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={() => window.print()}>
+                <Printer className="h-4 w-4" /> Print Guide
               </Button>
               <ListenButton guide={guide} />
+              <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
+              <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
             </div>
           </div>
 
@@ -498,17 +474,11 @@ const GuideDetail = () => {
                               return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
                             })()}
                             <h3 className="font-bold text-lg">{step.title}</h3>
+                            <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
                           <div className="text-base text-muted-foreground leading-relaxed">
                             <StepContent text={step.content} />
                           </div>
-
-                          {(step as any).whyItWorks && (
-                            <div className="mt-3 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/40 px-4 py-3">
-                              <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-1">Why this works</p>
-                              <p className="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">{(step as any).whyItWorks}</p>
-                            </div>
-                          )}
 
                           {step.screenshotUrl && (
                             <StepScreenshot
@@ -588,11 +558,8 @@ const GuideDetail = () => {
             </div>
           )}
 
-          {/* Was this helpful? — binary feedback + star rating */}
-          <div className="space-y-6 mb-8">
-            <ThumbsFeedback slug={guide.slug} />
-            <HelpfulSection guideSlug={guide.slug} />
-          </div>
+          {/* Was this helpful? */}
+          <HelpfulSection guideSlug={guide.slug} />
 
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-2 mb-8">
@@ -637,34 +604,10 @@ const GuideDetail = () => {
                 <Link to="/signup">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-xl">
-                <Link to="/get-help">Get Help</Link>
+                <Link to="/pricing">See Pricing</Link>
               </Button>
             </div>
           </div>
-
-          <div className="text-center mt-3">
-            <button onClick={() => setReportOpen(true)} className="text-xs text-muted-foreground hover:text-primary">
-              Report an issue with this guide
-            </button>
-            <ReportGuideDialog
-              open={reportOpen}
-              onClose={() => setReportOpen(false)}
-              slug={guide.slug}
-              onSubmit={async (payload) => {
-                const payloadWithUser = { ...payload, user_id: user?.id ?? null, guide_slug: slug, created_at: new Date().toISOString() } as any
-                try {
-                  await (supabase as any).from('guide_reports').insert(payloadWithUser);
-                  setReportOpen(false);
-                  alert('Thanks for the report.');
-                } catch (err) {
-                  console.error('Report failed', err);
-                  alert('Could not submit report.');
-                }
-              }}
-            />
-          </div>
-
-          {/* Removed duplicate placeholder for report flow; dialog is above */}
 
           {/* Related Guides */}
           {relatedGuides.length > 0 && (
@@ -675,7 +618,7 @@ const GuideDetail = () => {
                   <Link to={`/guides/${g.slug}`} key={g.slug}>
                     <Card className="h-full hover:shadow-md transition-shadow group">
                       <CardContent className="pt-5">
-                        <img src={getGuideThumbnailSmall(g)} alt={g.title} className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
                         <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
@@ -689,7 +632,6 @@ const GuideDetail = () => {
         </div>
       </article>
 
-      <BackToTop />
       <Footer />
     </div>
   );
