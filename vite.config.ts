@@ -122,9 +122,19 @@ export default defineConfig(({ mode }) => ({
     ],
   },
   optimizeDeps: {
+    // Restrict dep scanning to the client entry only.
+    // Without this, Vite crawls entry-server.tsx, discovers react-dom/server,
+    // and triggers a partial re-optimisation mid-session. That partial run
+    // assigns a NEW browserHash to React DOM while React keeps the old hash,
+    // producing two separate ReactCurrentDispatcher instances and the
+    // "Cannot read properties of null (reading 'useState')" crash.
+    entries: ['index.html'],
     include: [
       'react',
       'react-dom',
+    ],
+    exclude: [
+      'react-dom/server',
     ],
   },
   ssr: {
