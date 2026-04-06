@@ -110,6 +110,8 @@ const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
 const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
+const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
 const Articles               = lazy(() => import("./pages/Articles"));
@@ -282,6 +284,8 @@ const AppContent = () => {
           <Route path="/family-sharing" element={<FamilySharing />} />
           <Route path="/caregiver" element={<Caregiver />} />
           <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
+          <Route path="/tools/osint-tools" element={<OsintTools />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
           <Route path="/cybersec" element={<CyberSec />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/explore" element={<Explore />} />
