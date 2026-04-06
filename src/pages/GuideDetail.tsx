@@ -637,7 +637,7 @@ const GuideDetail = () => {
                 <Link to="/signup">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-xl">
-                <Link to="/pricing">See Pricing</Link>
+                <Link to="/get-help">Get Help</Link>
               </Button>
             </div>
           </div>

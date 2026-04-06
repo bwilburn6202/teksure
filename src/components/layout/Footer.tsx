@@ -29,7 +29,6 @@ export function Footer() {
       links: [
         { to: '/about', label: 'About' },
         { to: '/how-it-works', label: 'How It Works' },
-        { to: '/pricing', label: 'Pricing' },
         { to: '/roadmap', label: 'Roadmap' },
         { to: '/technicians', label: 'Technicians' },
       ],

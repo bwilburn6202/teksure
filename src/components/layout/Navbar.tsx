@@ -32,7 +32,6 @@ export function Navbar() {
     { to: '/playground', label: 'Playground' },
     { to: '/tools', label: 'Tools' },
     { to: '/get-help', label: 'Get Help' },
-    { to: '/pricing', label: 'Pricing' },
   ];
 
   const moreLinks = [
