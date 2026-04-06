@@ -170,7 +170,7 @@ export function Navbar() {
                   <MessageSquare className="h-4 w-4 mr-2" aria-hidden="true" /> My Requests
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate('/my-path')}>
-                  <Map className="h-4 w-4 mr-2" aria-hidden="true" /> Learning Path
+                  <Map className="h-4 w-4 mr-2" aria-hidden="true" /> My Learning Path
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate('/profile')}>
                   <User className="h-4 w-4 mr-2" aria-hidden="true" /> Profile

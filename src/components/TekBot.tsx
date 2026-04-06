@@ -415,6 +415,7 @@ const PAGE_PROMPTS: Record<string, string[]> = {
   '/quick-fixes': ['My screen is frozen', 'WiFi not working', 'Computer running slow', 'Printer not responding'],
   '/tips': ['Best tip for beginners?', 'How to stay safe online?', 'Speed up my device', 'Save battery life'],
   '/my-path': ['Which learning path should I take?', 'How do I complete a guide?', 'What\'s the safety path?', 'I\'m a complete beginner'],
+  '/pricing': ['What does a visit cost?', 'How do I book a technician?', 'Is there a call-out fee?', 'Remote vs on-site help'],
 };
 
 function getPagePrompts(pathname: string, device: DeviceType): string[] {
