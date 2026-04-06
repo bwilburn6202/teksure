@@ -11,11 +11,23 @@ type ReportRow = {
   report_type: string
   description: string | null
   created_at: string
+  resolved?: boolean
 }
 
 export default function GuideReports() {
   const [reports, setReports] = useState<ReportRow[]>([])
   const [loading, setLoading] = useState(true)
+
+  const toggleResolved = async (id: string | number) => {
+    setReports(prev => prev.map(r => r.id === id ? { ...r, resolved: !(r as any).resolved } : r))
+    try {
+      const found = reports.find(r => r.id === id)
+      const next = !(found?.resolved ?? false)
+      await (supabase as any).from('guide_reports').update({ resolved: next }).eq('id', id)
+    } catch (e) {
+      console.error(e)
+    }
+  }
 
   useEffect(() => {
     const fetchReports = async () => {
@@ -50,6 +62,7 @@ export default function GuideReports() {
                 <th className="border px-3 py-2 text-left">Type</th>
                 <th className="border px-3 py-2 text-left">Description</th>
                 <th className="border px-3 py-2 text-left">Created</th>
+                <th className="border px-3 py-2 text-left">Resolved</th>
               </tr>
             </thead>
             <tbody>
@@ -61,6 +74,8 @@ export default function GuideReports() {
                   <td className="border px-3 py-2">{r.report_type}</td>
                   <td className="border px-3 py-2">{r.description ?? ''}</td>
                   <td className="border px-3 py-2">{new Date(r.created_at).toLocaleString()}</td>
+                  <td className="border px-3 py-2">{(r as any).resolved ? 'Yes' : 'No'}</td>
+                  <td className="border px-3 py-2"><button className="px-2 py-1 text-xs rounded bg-blue-100" onClick={() => toggleResolved(r.id)}>Toggle</button></td>
                 </tr>
               ))}
             </tbody>
