@@ -37,6 +37,7 @@ export function Navbar() {
     { to: '/quick-fixes', label: 'Quick Fixes' },
     { to: '/glossary', label: 'Glossary' },
     { to: '/videos', label: 'Videos' },
+    { to: '/llm-knowledge-base', label: 'LLM KB' },
     { to: '/blog', label: 'Blog' },
     { to: '/forum', label: 'Forum' },
     { to: '/safety/scam-alerts', label: 'Safety' },
