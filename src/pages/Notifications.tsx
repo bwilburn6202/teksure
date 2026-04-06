@@ -51,6 +51,7 @@ const defaultPrefs: NotifPrefs = {
 };
 
 function loadPrefs(): NotifPrefs {
+  if (typeof window === 'undefined') return defaultPrefs;
   try {
     return { ...defaultPrefs, ...JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '{}') };
   } catch {
@@ -59,6 +60,7 @@ function loadPrefs(): NotifPrefs {
 }
 
 function savePrefs(p: NotifPrefs) {
+  if (typeof window === 'undefined') return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
 }
 

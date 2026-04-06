@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 interface QuickFix {
   emoji: string;
@@ -244,6 +245,10 @@ const QuickFixes = () => {
         jsonLd={faqJsonLd}
       />
       <Navbar />
+
+      <div className="max-w-4xl mx-auto pt-4 px-4">
+        <PageBreadcrumb segments={[{ label: 'Quick Fixes' }]} />
+      </div>
 
       {/* Header */}
       <section className="border-b border-border">

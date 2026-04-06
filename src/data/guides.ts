@@ -12982,6 +12982,68 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       },
     ],
   },
+
+  // ═══════════════════════════════════════════
+  // OSINT GUIDES — added by remote (2026-04-06)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'reverse-image-search-scams',
+    title: 'How to Reverse Image Search to Spot Fake Photos and Scams',
+    excerpt: 'Use reverse image search to verify if someone is using a real photo or a stolen one — great for catching romance scams and fake profiles.',
+    category: 'safety-guides',
+    tags: ['osint', 'images', 'scams', 'verification', 'safety', 'romance scams'],
+    readTime: '6 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'What is reverse image search?', content: 'Reverse image search is a tool that finds where a photo appears online. Instead of typing text to search, you upload an image. Google, Bing, and other search engines will show you every place that photo has been used on the web. This helps you catch fake profiles, stolen photos, and scams.' },
+      { title: 'Use Google Images to search a photo', content: 'Go to images.google.com on your computer or phone. Click the camera icon in the search bar. You can either paste the URL of a photo (the web link) or upload a photo file from your phone. Google will show you every place that photo appears online.', tip: 'If someone sends you a photo on Facebook or WhatsApp, right-click the image and copy the image address. Then paste it into Google Images to search.' },
+      { title: 'Check if a profile photo is real', content: 'If you meet someone online and they send you a photo, use Google Images to search for it. If the photo appears on other profiles with different names, it is fake. You are probably talking to a scammer. If the photo only appears once, it is more likely to be real.' },
+      { title: 'Use TinEye for deeper searches', content: 'Visit tineye.com and upload or paste a photo URL. TinEye is especially good at finding older photos and tracking where a photo has been used over time. It shows the complete history of where an image has appeared.', tip: 'TinEye sometimes finds matches that Google misses. If Google Images does not find anything, try TinEye.' },
+      { title: 'Spot AI-generated and stolen photos', content: 'Look at the search results carefully. If you see the same photo on stock photo websites like Shutterstock or Getty Images, it is a stock photo — someone paid for it or stole it. AI-generated faces often appear on no real social media profiles or only on one fake account. Real people\'s photos usually appear on multiple social networks and have a history.' },
+      { title: 'Red flags for fake photos', content: 'Be suspicious if: the person refuses to do a video call, the photo looks professionally done or very polished, the same photo is used on multiple fake profiles, or the search shows the photo on stock photo sites. Do not send money or personal information to anyone you have not video called.', warning: 'Never send money or personal information to someone you have only communicated with online. Always do a video call first. Romance scammers often ask for money for flights, medical bills, or emergencies — this is a major red flag.' },
+    ]
+  },
+  {
+    slug: 'verify-website-legitimacy',
+    title: 'How to Verify If a Website or Business Is Legitimate',
+    excerpt: 'Learn simple checks to determine if a website is real and trustworthy before you give it your money or personal information.',
+    category: 'safety-guides',
+    tags: ['osint', 'scams', 'websites', 'safety', 'verification', 'fraud'],
+    readTime: '7 min',
+    thumbnailEmoji: '🌐',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'Check when the website was created', content: 'Go to whois.domaintools.com and type in the website address. This will show you when the website was registered. New websites (less than a week old) are more likely to be scams. Real businesses usually have websites that have existed for several years.' },
+      { title: 'Scan the website with VirusTotal', content: 'Visit virustotal.com and paste the website address in the search box. VirusTotal checks the website against 70+ antivirus programs to see if it contains malware or is flagged as a scam site. If many security vendors flag it, do not visit the site.' },
+      { title: 'Look up the business on the Better Business Bureau', content: 'Go to bbb.org and search for the company name. The BBB shows you the business address, how long they have been in business, customer complaints, and their rating (A+ through F). A new business with many complaints is a red flag. Real businesses have customer reviews going back years.' },
+      { title: 'Search for customer reviews and complaints', content: 'Search the company name + "scam" or "reviews" on Google. If you see many complaints about people not receiving their orders or losing money, it is likely a scam. Read through reviews on Google Maps, Trustpilot, or the BBB website.' },
+      { title: 'Check for HTTPS and a valid SSL certificate', content: 'Look at the web address at the top of your browser. It should start with "https://" (not just "http://"). The "s" means the website is secure and encrypted. You should also see a small lock icon next to the address. If there is no lock or the address starts with "http://", the site may not be safe.' },
+      { title: 'Red flags that indicate a fake website', content: 'Avoid websites if: they are very new (created recently), they have poor spelling and grammar, the design looks amateurish or copied from another site, they ask for payment by wire transfer or gift cards, they ask for unusual payment methods like cryptocurrency, prices are much lower than competitors, they pressure you to buy immediately, or they refuse to answer your questions.', warning: 'Never buy from a website that only accepts wire transfers, gift cards, or cryptocurrency. Legitimate businesses accept credit cards and PayPal. These payment methods give you protection if something goes wrong.' },
+    ]
+  },
+  {
+    slug: 'check-personal-data-leaks',
+    title: 'How to Check If Your Personal Information Has Been Leaked Online',
+    excerpt: 'Find out if your email, password, or personal data appears in known data breaches — and what to do about it.',
+    category: 'safety-guides',
+    tags: ['osint', 'privacy', 'breaches', 'safety', 'passwords', 'security'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'Understand what a data breach is', content: 'A data breach happens when hackers steal information from a company\'s database. Millions of emails, passwords, names, and addresses get stolen and sold on the dark web. Even the biggest companies like Facebook, Yahoo, and Target have had breaches. The good news: you can check if your information is in a leaked database.' },
+      { title: 'Check your email on Have I Been Pwned', content: 'Go to haveibeenpwned.com and type in your email address. Press Enter. This website will tell you if your email appears in any known data breach. If it says "Good news — no pwnage found," you are not in any known breaches. If it finds your email, it will show you which companies were breached.', tip: 'Have I Been Pwned is completely free and trusted by millions of people. It was created by security expert Troy Hunt and does not collect your personal information.' },
+      { title: 'Check if your passwords are compromised', content: 'If your email appears in a breach, change your password for that service immediately. Go to the company\'s website (like Facebook, Gmail, etc.) and create a new password. Use a strong password: at least 12 characters with uppercase, lowercase, numbers, and symbols. If you used that same password on other accounts, change those too.' },
+      { title: 'Search for your username across the web', content: 'Some hackers sell leaked data with usernames instead of just emails. Search your username in Google to see if it appears on data dump websites or dark web forums. If you see your username on a suspicious site, assume your information has been leaked.' },
+      { title: 'Check for your address and phone number', content: 'Visit haveibeenpwned.com again and scroll down to "Pastes." If your phone number or home address appears in leaked data, be careful — scammers might call or mail you offers. Do not give any information to unsolicited callers claiming to be from a company you know.' },
+      { title: 'What to do if your information was leaked', content: 'First, change your passwords on important accounts (email, banking, social media). Consider using a password manager like Bitwarden or 1Password to create and store strong, unique passwords. Second, watch your bank and credit card statements for fraud. You can freeze your credit for free with the three credit bureaus (Equifax, Experian, TransUnion) to prevent identity theft. Finally, check your credit report annually at annualcreditreport.com for any accounts opened in your name.', warning: 'If you see accounts opened in your name on your credit report, contact the company and the FTC immediately. Do not ignore it — identity theft can take years to fix.' },
+    ]
+  },
 ];
 
 import { guidesBatch2 } from './guides-batch-2';

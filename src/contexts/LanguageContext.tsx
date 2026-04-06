@@ -139,11 +139,12 @@ const LanguageContext = createContext<LanguageContextValue>({
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Language>(() => {
+    if (typeof window === 'undefined') return 'en';
     return (localStorage.getItem('teksure_lang') as Language) ?? 'en';
   });
 
   const setLang = useCallback((l: Language) => {
-    localStorage.setItem('teksure_lang', l);
+    if (typeof window !== 'undefined') localStorage.setItem('teksure_lang', l);
     setLangState(l);
   }, []);
 

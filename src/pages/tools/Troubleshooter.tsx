@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Progress } from '@/components/ui/progress';
 
 /* ── Decision tree types ─────────────────────────── */
@@ -202,9 +203,10 @@ export default function Troubleshooter() {
       />
       <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
+        <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Troubleshooter' }]} />
 
         {/* Header */}
-        <div className="flex items-start gap-3 mb-8">
+        <div className="flex items-start gap-3 mb-8 mt-6">
           <HelpCircle className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Interactive Troubleshooter</h1>
