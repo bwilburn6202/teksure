@@ -49,7 +49,6 @@ const routePreloaders: Record<string, () => Promise<unknown>> = {
   '/safety/scam-alerts': () => import('@/pages/ScamAlerts'),
   '/get-help': () => import('@/pages/GetHelp'),
   '/book': () => import('@/pages/Book'),
-  '/pricing': () => import('@/pages/Pricing'),
   '/how-it-works': () => import('@/pages/HowItWorks'),
   '/about': () => import('@/pages/About'),
   '/login': () => import('@/pages/Login'),
