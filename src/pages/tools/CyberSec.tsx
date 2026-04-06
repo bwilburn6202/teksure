@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import { SafeLink } from '@/components/SafeLink';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
+import {
+  Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
+} from '@/components/ui/breadcrumb';
 import {
   Shield,
   Lock,
@@ -535,12 +541,29 @@ const TeamSection = ({
 export default function CyberSec() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <SEOHead
+        title="Cybersecurity Command Center — 50 Security Modules | TekSure"
+        description="Explore 50 cybersecurity modules across Red Team, Blue Team, White Hat, and OSINT operations. Free interactive security tools powered by the Cyber AI Toolkit."
+        path="/cybersec"
+      />
+      <Navbar />
+
       {/* Header */}
       <div className="relative overflow-hidden border-b border-gray-700 bg-gradient-to-r from-red-900/30 to-gray-900/30">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(239,68,68,0.1),transparent)]" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+          <Breadcrumb className="mb-6">
+            <BreadcrumbList>
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/" className="text-gray-400 hover:text-white">Home</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-gray-600" />
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/tools" className="text-gray-400 hover:text-white">Tools</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-gray-600" />
+              <BreadcrumbItem><BreadcrumbPage className="text-white">Cybersecurity Command Center</BreadcrumbPage></BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
           <div className="flex items-center gap-4 mb-4">
             <Shield className="w-12 h-12 text-red-500" />
             <h1 className="text-5xl font-black bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
@@ -632,8 +655,7 @@ export default function CyberSec() {
         </div>
       </div>
 
-      {/* Footer spacing */}
-      <div className="py-12" />
+      <Footer />
     </div>
   );
 }
