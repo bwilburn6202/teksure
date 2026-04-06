@@ -82,6 +82,10 @@ const ThreadDetail           = lazy(() => import("./pages/forum/ThreadDetail"));
 const NewThread              = lazy(() => import("./pages/forum/NewThread"));
 const ParentalControls       = lazy(() => import("./pages/ParentalControls"));
 const Favorites              = lazy(() => import("./pages/Favorites"));
+const TechJournal            = lazy(() => import("./pages/TechJournal"));
+const MyDevices              = lazy(() => import("./pages/MyDevices"));
+const Achievements           = lazy(() => import("./pages/Achievements"));
+const QuickReferenceCards    = lazy(() => import("./pages/QuickReferenceCards"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
 const MyRequests             = lazy(() => import("./pages/MyRequests"));
 const MyPath                 = lazy(() => import("./pages/MyPath"));
@@ -121,6 +125,7 @@ const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
+const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -279,6 +284,10 @@ const AppContent = () => {
           <Route path="/forum/:id" element={<ThreadDetail />} />
           <Route path="/safety/parental-controls" element={<ParentalControls />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/journal" element={<TechJournal />} />
+          <Route path="/my-devices" element={<MyDevices />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/quick-reference-cards" element={<QuickReferenceCards />} />
           <Route path="/get-help" element={<GetHelp />} />
           <Route path="/my-path" element={<MyPath />} />
           <Route path="/my-requests" element={<MyRequests />} />

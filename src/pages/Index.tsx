@@ -16,7 +16,8 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
-import { getInProgressGuides, getRecentGuides } from '@/lib/progress';
+import { getInProgressGuides, getRecentGuides, getUserProgressFromDB } from '@/lib/progress';
+import { DailyTechTip } from '@/components/DailyTechTip';
 
 const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor,
@@ -357,6 +358,11 @@ const Index = () => {
 
       {/* ── Continue where you left off ─────────────────── */}
       <ContinueWhereYouLeftOff />
+
+      {/* ── Daily Tech Tip ─────────────────────────────── */}
+      <section className="container py-4">
+        <DailyTechTip />
+      </section>
 
       {/* ── Stats strip ─────────────────────────────────── */}
       <RevealSection>
