@@ -36,64 +36,20 @@ export function getProgressCount(totalSlugs?: string[]): { completed: number; to
   return { completed: done.size, total: done.size, pct: 100 };
 }
 
-// Return in-progress guides based on step progress map
-export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
-  try {
-    const raw = localStorage.getItem('teksure_step_progress');
-    const map = raw ? JSON.parse(raw) : {};
-    const items = Object.entries(map).map(([slug, v]: any) => {
-      const step = typeof v.step === 'number' ? v.step : 0;
-      const total = typeof v.totalSteps === 'number' ? v.totalSteps : (typeof v.total_steps === 'number' ? v.total_steps : 0);
-      const pct = total > 0 ? Math.round(((step + 1) / total) * 100) : 0;
-      return { slug, step, totalSteps: total, pct };
-    });
-    // sort by pct desc (most progressed first)
-    return items.sort((a, b) => b.pct - a.pct);
-  } catch {
-    return [];
-  }
-}
-
-export function getRecentGuides(): string[] {
-  try {
-    const raw = localStorage.getItem('teksure_guide_views');
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
-}
-
-// Record a guide view in local storage for quick UX features
-export function recordGuideView(slug: string) {
-  try {
-    const key = 'teksure_guide_views';
-    const raw = localStorage.getItem(key);
-    const arr: string[] = raw ? JSON.parse(raw) : [];
-    const next = [slug, ...arr.filter(s => s !== slug)].slice(0, 50);
-    localStorage.setItem(key, JSON.stringify(next));
-  } catch {
-    // ignore storage issues
-  }
-}
-
-// Phase 3: Persist step progress to DB when user is authenticated
-export async function saveStepProgressToDB(slug: string, userId: string, step: number, totalSteps: number) {
+// Persist step progress to DB when user is authenticated
+export async function saveStepProgressToDB(slug: string, userId: string, step: number, totalSteps: number): Promise<void> {
   try {
     const { supabase } = await import('@/integrations/supabase/client');
-    await (supabase as any).from('guide_progress').upsert({ slug, user_id: userId, step, total_steps: totalSteps, updated_at: new Date().toISOString() });
+    await (supabase as unknown as { from: (table: string) => { upsert: (data: Record<string, unknown>) => Promise<unknown> } })
+      .from('guide_progress')
+      .upsert({ 
+        slug, 
+        user_id: userId, 
+        step, 
+        total_steps: totalSteps, 
+        updated_at: new Date().toISOString() 
+      });
   } catch {
     // swallow DB errors to avoid affecting UX; fallback to local storage only
-  }
-}
-
-export function saveStepProgress(slug: string, step: number, totalSteps: number) {
-  try {
-    const key = 'teksure_step_progress';
-    const raw = localStorage.getItem(key);
-    const map = raw ? JSON.parse(raw) : {};
-    map[slug] = { step, totalSteps, updated_at: new Date().toISOString() };
-    localStorage.setItem(key, JSON.stringify(map));
-  } catch {
-    // ignore
   }
 }
