@@ -118,6 +118,7 @@ const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
+const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -289,6 +290,7 @@ const AppContent = () => {
           <Route path="/videos" element={<Videos />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
