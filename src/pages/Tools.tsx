@@ -16,7 +16,7 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, Terminal, Shield,
+  FileSearch, Terminal, Shield, Globe,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
@@ -39,6 +39,16 @@ const tools = [
     path: '/cybersec',
     color: 'text-red-500',
     bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'OSINT Tools Directory',
+    description: 'Browse 100+ open-source intelligence tools across 15 categories — search engines, social media, people finders, and more.',
+    icon: Globe,
+    path: '/tools/osint-tools',
+    color: 'text-indigo-500',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
     badge: 'New',
     category: 'Security' as ToolCategory,
   },
