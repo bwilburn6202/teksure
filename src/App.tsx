@@ -117,6 +117,7 @@ const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -297,6 +298,7 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
