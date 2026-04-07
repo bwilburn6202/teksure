@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'How to Safely Log Out of Public Computers at Libraries and Other Shared Spaces',
-  summary: 'If you use a computer at the library, a hotel, or any shared space, logging out properly is essential — otherwise the next person who sits down could access your email, bank account, or social media.',
-  full: 'Public computers at libraries, community centers, and hotels are convenient, but they can leave your personal information exposed if you do not log out correctly. The most important step: when you are done, log out of every website you signed into — do not just close the browser window. Closing a window does not always end your session. In your browser (usually Chrome or Edge on public computers), click your profile picture or name in the top-right corner of sites like Gmail, Facebook, or your bank, and choose "Sign out" or "Log out." After logging out, clear the browser history so saved passwords and form data are removed. Press Ctrl + Shift + Delete on the keyboard, check all the boxes (browsing history, cookies, cached files, passwords, form data), set the time range to "All time," and click "Clear data." Finally, if the computer has a separate Windows account, click the Start button in the bottom-left corner, click your user icon, and choose "Sign out" to end your Windows session completely. A good habit: before you leave, take one last look at the screen to make sure nothing personal is still showing. If you visit public computers regularly, consider using the browser\'s "Guest mode" or "InPrivate/Incognito" window from the start — it automatically deletes everything when you close the window.',
-  category: 'Safety',
-  icon: LogOut,
+  title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
+  summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
+  full: 'Many websites and apps like Facebook, Instagram, and YouTube automatically start playing videos as you scroll, which uses up your mobile data quickly and can slow down your phone. The good news: you can turn this off. On Facebook, open the app, tap the three lines (menu) in the bottom-right corner, go to Settings & Privacy, then Settings, scroll down to "Media," and set "Autoplay" to "Never Autoplay Videos" or "On Wi-Fi Connections Only." On Instagram, go to your profile, tap the three lines at the top, then Settings, then "Data Usage and Media Quality," and turn on "Use Less Mobile Data." On an iPhone, you can also stop videos from autoplaying across many apps at once: go to Settings, tap Accessibility, then Motion, and turn off "Auto-Play Video Previews." On Android, open Chrome, tap the three dots in the top-right, go to Settings, then Site Settings, and look for "Autoplay" — you can block it there. Turning off auto-play not only saves data but also makes browsing quieter and less distracting, especially if you are in a waiting room or a quiet place.',
+  category: 'Productivity',
+  icon: PauseCircle,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'How to Safely Log Out of Public Computers at Libraries and Other Shared Spaces',
+    summary: 'If you use a computer at the library, a hotel, or any shared space, logging out properly is essential — otherwise the next person who sits down could access your email, bank account, or social media.',
+    category: 'Safety',
+    icon: LogOut,
+  },
   {
     title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
     summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
