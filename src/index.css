@@ -6,88 +6,90 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 99%;
+    --foreground: 220 25% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 220 25% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 221 83% 53%;
+    --popover-foreground: 220 25% 10%;
+    --primary: 172 50% 36%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 13% 33%;
-    --accent: 220 14% 96%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84% 60%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 15% 15%;
+    --muted: 210 16% 95%;
+    --muted-foreground: 220 10% 42%;
+    --accent: 32 80% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 55%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 83% 53%;
-    --radius: 0.75rem;
+    --border: 220 12% 90%;
+    --input: 220 12% 90%;
+    --ring: 172 50% 36%;
+    --radius: 0.875rem;
 
-    --teksure-blue: 221 83% 53%;
-    --teksure-success: 142 71% 45%;
-    --teksure-warning: 38 92% 50%;
-    --teksure-info: 217 91% 60%;
+    --teksure-teal: 172 50% 36%;
+    --teksure-blue: 172 50% 36%;
+    --teksure-success: 152 60% 40%;
+    --teksure-warning: 38 85% 52%;
+    --teksure-info: 210 70% 55%;
 
-    --zone-guides: 221 83% 97%;
-    --zone-tools: 142 71% 97%;
-    --zone-safety: 38 92% 97%;
-    --zone-support: 270 50% 97%;
-    --zone-cta: 221 83% 53%;
+    --zone-guides: 172 40% 97%;
+    --zone-tools: 152 50% 97%;
+    --zone-safety: 38 80% 97%;
+    --zone-support: 270 40% 97%;
+    --zone-cta: 172 50% 36%;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 221 83% 53%;
+    --sidebar-foreground: 220 20% 20%;
+    --sidebar-primary: 172 50% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 96%;
-    --sidebar-accent-foreground: 0 0% 9%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 221 83% 53%;
+    --sidebar-accent: 210 16% 95%;
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 220 12% 90%;
+    --sidebar-ring: 172 50% 36%;
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 20% 98%;
-    --card: 222 47% 8%;
-    --card-foreground: 210 20% 98%;
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 217 91% 60%;
+    --background: 220 20% 7%;
+    --foreground: 210 15% 93%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 15% 93%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 15% 93%;
+    --primary: 172 50% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 215 28% 17%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 28% 17%;
-    --muted-foreground: 218 11% 65%;
-    --accent: 215 28% 17%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62% 30%;
+    --secondary: 220 18% 16%;
+    --secondary-foreground: 210 15% 93%;
+    --muted: 220 18% 14%;
+    --muted-foreground: 215 10% 60%;
+    --accent: 32 75% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 55% 40%;
     --destructive-foreground: 0 0% 100%;
-    --border: 215 28% 20%;
-    --input: 215 28% 17%;
-    --ring: 217 91% 60%;
+    --border: 220 15% 18%;
+    --input: 220 18% 16%;
+    --ring: 172 50% 50%;
 
-    --teksure-blue: 217 91% 60%;
-    --teksure-success: 142 71% 45%;
-    --teksure-warning: 38 92% 55%;
-    --teksure-info: 217 91% 60%;
+    --teksure-teal: 172 50% 50%;
+    --teksure-blue: 172 50% 50%;
+    --teksure-success: 152 60% 45%;
+    --teksure-warning: 38 85% 55%;
+    --teksure-info: 210 70% 60%;
 
-    --zone-guides: 221 83% 12%;
-    --zone-tools: 142 71% 10%;
-    --zone-safety: 38 92% 12%;
-    --zone-support: 270 50% 12%;
-    --zone-cta: 217 91% 60%;
+    --zone-guides: 172 40% 10%;
+    --zone-tools: 152 50% 10%;
+    --zone-safety: 38 80% 10%;
+    --zone-support: 270 40% 10%;
+    --zone-cta: 172 50% 50%;
 
-    --sidebar-background: 222 47% 6%;
-    --sidebar-foreground: 210 20% 98%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-background: 220 20% 7%;
+    --sidebar-foreground: 210 15% 93%;
+    --sidebar-primary: 172 50% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 28% 17%;
-    --sidebar-accent-foreground: 210 20% 98%;
-    --sidebar-border: 215 28% 17%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 220 18% 16%;
+    --sidebar-accent-foreground: 210 15% 93%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 172 50% 50%;
   }
 }
 
@@ -120,60 +122,100 @@
     @apply bg-muted/50;
   }
 
-  /* Subtle glass header */
+  /* Glass header with gradient accent line */
   .glass {
-    @apply bg-background/80 backdrop-blur-xl border-b border-border/50;
+    @apply bg-background/85 backdrop-blur-2xl;
+    border-bottom: 1px solid hsl(var(--border) / 0.5);
+    box-shadow: 0 1px 0 0 hsl(var(--primary) / 0.06);
   }
 
-  /* Hero gradient — refined deep blue */
+  /* Dark inverted section */
   .hero-gradient {
-    background: linear-gradient(180deg, hsl(224 71% 4%) 0%, hsl(221 60% 12%) 100%);
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
   }
 
   .btn-hero-outline {
     @apply border border-white/20 text-white hover:bg-white/10 transition-colors;
   }
 
-  /* Revolutionary: Living mesh gradient background */
+  /* Hero glow — subtle teal radial */
+  .hero-glow {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 40%, hsl(var(--primary) / 0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 75% 60%, hsl(var(--accent) / 0.04) 0%, transparent 60%);
+  }
+
+  /* Keep mesh-gradient as alias for hero-glow (backward compat) */
   .mesh-gradient {
-    background: 
-      radial-gradient(at 20% 80%, hsl(var(--primary) / 0.08) 0px, transparent 50%),
-      radial-gradient(at 80% 20%, hsl(var(--teksure-success) / 0.06) 0px, transparent 50%),
-      radial-gradient(at 50% 50%, hsl(var(--teksure-warning) / 0.04) 0px, transparent 50%),
-      radial-gradient(at 80% 80%, hsl(var(--primary) / 0.05) 0px, transparent 50%);
-    animation: mesh-shift 20s ease-in-out infinite alternate;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 40%, hsl(var(--primary) / 0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 75% 60%, hsl(var(--accent) / 0.04) 0%, transparent 60%);
   }
 
-  /* Revolutionary: Dot grid pattern */
+  /* Grain texture overlay */
+  .grain {
+    position: relative;
+  }
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 256px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Dot grid pattern (keep for backward compat) */
   .dot-grid {
-    background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.15) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
   }
 
-  /* Revolutionary: Bento card */
+  /* Refined card */
   .bento-card {
-    @apply rounded-3xl border border-border/60 bg-card p-6 transition-all duration-300;
-    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.04), 0 1px 2px hsl(var(--foreground) / 0.06);
+    @apply rounded-2xl border border-border/50 bg-card p-6 transition-all duration-300;
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.03);
   }
   .bento-card:hover {
-    box-shadow: 0 4px 12px hsl(var(--foreground) / 0.08), 0 2px 4px hsl(var(--foreground) / 0.06);
-    border-color: hsl(var(--border));
+    box-shadow: 0 8px 24px hsl(var(--primary) / 0.08), 0 2px 8px hsl(var(--foreground) / 0.04);
+    border-color: hsl(var(--primary) / 0.25);
+    transform: translateY(-2px);
   }
 
-  /* Revolutionary: Zone-colored sections */
+  /* Glow card variant */
+  .glow-card {
+    @apply rounded-2xl border border-border/50 bg-card p-6 transition-all duration-300;
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.03);
+  }
+  .glow-card:hover {
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.15), 0 8px 30px hsl(var(--primary) / 0.1);
+    border-color: hsl(var(--primary) / 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Zone-colored sections */
   .zone-guides { background-color: hsl(var(--zone-guides)); }
   .zone-tools { background-color: hsl(var(--zone-tools)); }
   .zone-safety { background-color: hsl(var(--zone-safety)); }
   .zone-support { background-color: hsl(var(--zone-support)); }
 
-  /* Revolutionary: Conversation bubble */
+  /* Conversation bubble (backward compat) */
   .conversation-bubble {
-    @apply rounded-3xl p-6 max-w-2xl mx-auto;
+    @apply rounded-2xl p-6 max-w-2xl mx-auto;
     background: linear-gradient(135deg, hsl(var(--primary) / 0.06), hsl(var(--primary) / 0.02));
     border: 1px solid hsl(var(--primary) / 0.12);
   }
 
-  /* Revolutionary: Pill button */
+  /* Section divider — subtle gradient line */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, hsl(var(--border)), transparent);
+  }
+
+  /* Pill button */
   .pill {
     @apply inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer;
   }
@@ -181,13 +223,13 @@
     @apply pill bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20;
   }
   .pill-outline {
-    @apply pill border-2 border-border bg-background text-foreground hover:border-primary/40 hover:bg-primary/5;
+    @apply pill border border-border bg-background text-foreground hover:border-primary/40 hover:bg-primary/5;
   }
   .pill-ghost {
     @apply pill text-muted-foreground bg-muted/50 hover:bg-muted hover:text-foreground;
   }
 
-  /* Revolutionary: Stagger animation */
+  /* Stagger animation */
   .stagger > * {
     opacity: 0;
     animation: stagger-fade 0.5s ease-out forwards;
@@ -205,10 +247,10 @@
   .stagger > *:nth-child(11) { animation-delay: 0.55s; }
   .stagger > *:nth-child(12) { animation-delay: 0.6s; }
 
-  /* Revolutionary: Scroll reveal */
+  /* Scroll reveal — subtler entrance */
   .reveal {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(16px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
   .reveal.visible {
@@ -216,24 +258,24 @@
     transform: translateY(0);
   }
 
-  /* Revolutionary: Large display heading */
+  /* Display heading */
   .display-heading {
     @apply font-bold tracking-tight leading-[1.05];
     letter-spacing: -0.035em;
   }
 
-  /* Revolutionary: Bottom nav (mobile) */
+  /* Bottom nav (mobile) */
   .bottom-nav {
     @apply fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-xl border-t border-border/50 md:hidden;
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 
-  /* Revolutionary: Minimal top bar */
+  /* Minimal top bar */
   .top-bar {
     @apply sticky top-0 z-50 w-full bg-background/90 backdrop-blur-xl border-b border-border/30;
   }
 
-  /* Revolutionary: Full-viewport section */
+  /* Full-viewport section */
   .viewport-section {
     @apply min-h-[80vh] flex items-center py-16 md:py-24;
   }
@@ -325,7 +367,13 @@ html.font-size-xxl {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(217 91% 60%));
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+  .gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
   }
   .status-requested {
     @apply bg-muted text-muted-foreground;
@@ -413,7 +461,7 @@ html.high-contrast {
   --muted-foreground: 0 0% 10%;
   --border: 0 0% 0%;
   --input: 0 0% 0%;
-  --primary: 221 83% 30%;
+  --primary: 172 60% 25%;
   --primary-foreground: 0 0% 100%;
 }
 
@@ -425,7 +473,7 @@ html.high-contrast.dark {
   --muted: 0 0% 15%;
   --muted-foreground: 0 0% 90%;
   --border: 0 0% 100%;
-  --primary: 221 83% 70%;
+  --primary: 172 50% 65%;
   --primary-foreground: 0 0% 0%;
 }
 
