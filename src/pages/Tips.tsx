@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,26 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
-  summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
-  full: 'Many websites and apps like Facebook, Instagram, and YouTube automatically start playing videos as you scroll, which uses up your mobile data quickly and can slow down your phone. The good news: you can turn this off. On Facebook, open the app, tap the three lines (menu) in the bottom-right corner, go to Settings & Privacy, then Settings, scroll down to "Media," and set "Autoplay" to "Never Autoplay Videos" or "On Wi-Fi Connections Only." On Instagram, go to your profile, tap the three lines at the top, then Settings, then "Data Usage and Media Quality," and turn on "Use Less Mobile Data." On an iPhone, you can also stop videos from autoplaying across many apps at once: go to Settings, tap Accessibility, then Motion, and turn off "Auto-Play Video Previews." On Android, open Chrome, tap the three dots in the top-right, go to Settings, then Site Settings, and look for "Autoplay" — you can block it there. Turning off auto-play not only saves data but also makes browsing quieter and less distracting, especially if you are in a waiting room or a quiet place.',
-  category: 'Productivity',
-  icon: PauseCircle,
+  title: 'How to Spot and Avoid QR Code Scams',
+  summary: 'Scammers are placing fake QR codes on parking meters, restaurant tables, and flyers to steal your personal information — here is how to stay safe.',
+  full: 'QR codes are everywhere now — on restaurant menus, parking meters, store windows, and even in your mail. Unfortunately, scammers have started placing fake QR code stickers over real ones, or printing them on official-looking flyers. When you scan a fake code, it takes you to a website that looks legitimate but is designed to steal your login, credit card number, or personal information. To protect yourself, always preview the web address before tapping it after scanning a QR code — your phone will show the URL on screen for a moment. If the address looks strange, misspelled, or does not match the business, do not open it. Be extra cautious with QR codes on stickers placed over other stickers (a sign of tampering), codes in unexpected emails or text messages, and codes taped to parking meters or public signs. If a business has a QR code for payment, ask an employee to confirm it is legitimate before scanning. When in doubt, skip the QR code entirely and type the website address directly into your browser, or ask the business for a paper menu or receipt instead.',
+  category: 'Safety',
+  icon: QrCode,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'How to Find Your Saved Wi-Fi Password on Any Device',
+    summary: 'Forgot your Wi-Fi password? Your phone, tablet, or computer already knows it — here is how to look it up without calling your internet provider.',
+    category: 'Productivity',
+    icon: Wifi,
+  },
+  {
+    title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
+    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
+    category: 'Productivity',
+    icon: PauseCircle,
+  },
   {
     title: 'How to Safely Log Out of Public Computers at Libraries and Other Shared Spaces',
     summary: 'If you use a computer at the library, a hotel, or any shared space, logging out properly is essential — otherwise the next person who sits down could access your email, bank account, or social media.',
