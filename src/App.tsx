@@ -116,6 +116,8 @@ const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
 const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const GeointResources        = lazy(() => import("./pages/tools/GeointResources"));
+const OsintCollections       = lazy(() => import("./pages/tools/OsintCollections"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
 const Articles               = lazy(() => import("./pages/Articles"));
@@ -298,6 +300,8 @@ const AppContent = () => {
           <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
           <Route path="/tools/osint-tools" element={<OsintTools />} />
           <Route path="/tools/osint-framework" element={<OsintFramework />} />
+          <Route path="/tools/geoint" element={<GeointResources />} />
+          <Route path="/tools/osint-collections" element={<OsintCollections />} />
           <Route path="/cybersec" element={<CyberSec />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/explore" element={<Explore />} />
