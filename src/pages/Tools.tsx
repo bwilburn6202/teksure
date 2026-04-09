@@ -17,7 +17,7 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, Terminal, Shield, Globe,
+  FileSearch, Terminal, Shield, Globe, BookOpen,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
@@ -45,11 +45,31 @@ const tools = [
   },
   {
     title: 'OSINT Tools Directory',
-    description: 'Browse 100+ open-source intelligence tools across 15 categories — search engines, social media, people finders, and more.',
+    description: 'Browse 220+ open-source intelligence tools across 30 categories — search engines, social media, crypto, threat intel, and more.',
     icon: Globe,
     path: '/tools/osint-tools',
     color: 'text-indigo-500',
     bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'GEOINT & Mapping Resources',
+    description: 'Satellite imagery, flight tracking, ship monitoring, terrain analysis, and 65+ geospatial intelligence tools.',
+    icon: MapPin,
+    path: '/tools/geoint',
+    color: 'text-emerald-500',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'OSINT Collections & Bookmarks',
+    description: 'Curated directory of the best OSINT tool collections — start.me pages, GitHub repos, and expert toolkits with thousands of links.',
+    icon: BookOpen,
+    path: '/tools/osint-collections',
+    color: 'text-purple-500',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
     badge: 'New',
     category: 'Security' as ToolCategory,
   },
