@@ -14,6 +14,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
+import { SafeLink } from '@/components/SafeLink';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
@@ -50,6 +51,7 @@ const defaultPrefs: NotifPrefs = {
 };
 
 function loadPrefs(): NotifPrefs {
+  if (typeof window === 'undefined') return defaultPrefs;
   try {
     return { ...defaultPrefs, ...JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '{}') };
   } catch {
@@ -58,6 +60,7 @@ function loadPrefs(): NotifPrefs {
 }
 
 function savePrefs(p: NotifPrefs) {
+  if (typeof window === 'undefined') return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
 }
 
@@ -139,6 +142,7 @@ export default function Notifications() {
         title="Notifications | TekSure"
         description="Get weekly tech tips, scam alerts, and new guide announcements delivered right to your device."
         path="/notifications"
+        canonical="/notifications"
       />
       <Navbar />
 
@@ -232,9 +236,9 @@ export default function Notifications() {
                 Your browser has blocked notifications from TekSure. To re-enable, click the lock icon in your browser's address bar and allow notifications for this site.
               </p>
               <Button variant="outline" size="sm" asChild>
-                <a href="https://support.google.com/chrome/answer/3220216" target="_blank" rel="noopener noreferrer">
+                <SafeLink to="https://support.google.com/chrome/answer/3220216" target="_blank" rel="noopener noreferrer">
                   How to Re-Enable →
-                </a>
+                </SafeLink>
               </Button>
             </CardContent>
           </Card>

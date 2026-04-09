@@ -8,6 +8,7 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 /* ── Lesson data ─────────────────────────────────── */
 
@@ -190,7 +191,7 @@ const lessons: Lesson[] = [
       { text: 'Even careful people sometimes get caught out. Knowing what to do in the first few hours makes a huge difference to how much damage is done.' },
       { heading: 'You clicked a suspicious link', text: 'Don\'t panic. Close the browser tab immediately. Don\'t enter any passwords. Run a security scan (Windows Defender on PC). If you entered any details, change those passwords immediately from a different device.' },
       { heading: 'You think you\'ve been hacked', text: 'Change your email password immediately — your email is the key to everything else. Then change passwords for banking, social media, and any site that matters. Enable 2FA where you haven\'t already.' },
-      { heading: 'You gave money to a scammer', text: 'Contact your bank immediately — within hours is much better than days. Banks can sometimes reverse transactions quickly. Report the scam to Action Fraud (UK: actionfraud.police.uk) or the FTC (US: reportfraud.ftc.gov).' },
+      { heading: 'You gave money to a scammer', text: 'Contact your bank immediately — within hours is much better than days. Banks can sometimes reverse transactions quickly. Report the scam to the FTC at ReportFraud.ftc.gov or call 1-877-382-4357.' },
       { heading: 'Someone has remote access to your computer', text: 'Disconnect from the internet immediately — unplug the network cable or turn off WiFi. This cuts their access. Then call a trusted tech helper. Do not use that computer until it\'s been checked.' },
       { heading: 'You\'re not sure if it\'s a scam', text: 'When in doubt, ask someone you trust. Contact TekSure and we\'ll help you work out if something is safe. It\'s always better to ask than to ignore it.' },
     ],
@@ -329,8 +330,9 @@ export default function SafetyCourse() {
       />
       <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
+        <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Safety Course' }]} />
 
-        <div className="flex items-start gap-3 mb-8">
+        <div className="flex items-start gap-3 mb-8 mt-6">
           <GraduationCap className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Internet Safety Course</h1>

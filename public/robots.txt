@@ -13,4 +13,19 @@ Allow: /
 User-agent: *
 Allow: /
 
+# Block authenticated-only routes from crawling
+Disallow: /admin/
+Disallow: /customer/
+Disallow: /tech/
+Disallow: /profile
+Disallow: /my-requests
+Disallow: /my-path
+Disallow: /favorites
+Disallow: /setup
+Disallow: /join
+Disallow: /book/confirmation
+Disallow: /payment/success
+Disallow: /payment/cancel
+Disallow: /api/
+
 Sitemap: https://teksure.com/sitemap.xml

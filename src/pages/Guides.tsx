@@ -34,7 +34,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
       <div className="relative h-36 overflow-hidden bg-muted">
         <img
           src={getGuideThumbnailUrl(guide)}
-          alt=""
+          alt={guide.title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
@@ -82,7 +82,7 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
     }`}>
       <img
         src={getGuideThumbnailSmall(guide)}
-        alt=""
+        alt={guide.title}
         className="w-8 h-8 rounded-md object-cover shrink-0"
         loading="lazy"
         onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
@@ -199,6 +199,7 @@ const Guides = () => {
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
   const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
+    if (typeof window === 'undefined') return 'list';
     try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
   });
   const toggleView = (mode: 'list' | 'grid') => {
@@ -260,20 +261,20 @@ const Guides = () => {
 
       {/* Header */}
       <section className="border-b">
-        <div className="container py-12 md:py-16">
+        <div className="container py-14 md:py-20">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
               Guides & Tutorials
             </h1>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground text-lg mb-8">
               {guides.length}+ free step-by-step guides. No jargon, just answers.
             </p>
             <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
               <Input
                 placeholder="Search guides..."
                 aria-label="Search guides"
-                className="pl-10 h-11 bg-muted/50 border-border rounded-xl text-sm"
+                className="pl-11 h-12 bg-card border-border/60 rounded-2xl text-sm shadow-sm focus:border-primary/40 focus:shadow-md focus:shadow-primary/[0.06] transition-all"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />

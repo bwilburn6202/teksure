@@ -5,6 +5,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 
 export function DarkModeToggle() {
   const [dark, setDark] = useState(() => {
+    if (typeof window === 'undefined') return false;
     const stored = localStorage.getItem('teksure-theme');
     if (stored) return stored === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;

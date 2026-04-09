@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -17,7 +18,7 @@ const gifts: GiftItem[] = [
   { name: 'iPad (entry level)', emoji: '📱', price: '~$329', why: 'The easiest tablet to learn on. Video calls, photos, guides, email — all in one simple device.', recipient: ['senior', 'parent', 'anyone'], budget: ['over150'], tag: 'Life Changer', searchQuery: 'Apple iPad 10th generation' },
   { name: 'Ring Video Doorbell', emoji: '🔔', price: '~$50–100', why: 'See and speak to visitors on your phone — no need to rush to the door. Great safety gift for older relatives living alone.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75', '75to150'], searchQuery: 'Ring Video Doorbell' },
   { name: 'Tile Bluetooth Tracker (4-pack)', emoji: '🔑', price: '~$35', why: 'Attach to keys, wallet, or bag — find them instantly with a phone app. Brilliant for anyone who regularly misplaces things.', recipient: ['senior', 'parent', 'anyone'], budget: ['25to75'], searchQuery: 'Tile Bluetooth Tracker 4 pack' },
-  { name: 'Portable phone charger', emoji: '🔋', price: '~$20–35', why: 'Never run out of battery on the go. Choose a high-capacity (20,000mAh) one for travelling or a compact slim one for everyday use.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'portable phone charger power bank' },
+  { name: 'Portable phone charger', emoji: '🔋', price: '~$20–35', why: 'Never run out of battery on the go. Choose a high-capacity (20,000mAh) one for traveling or a compact slim one for everyday use.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'portable phone charger power bank' },
   { name: 'Wireless charging pad', emoji: '⚡', price: '~$15–25', why: 'Just place the phone on the pad to charge — no fumbling with cables. Works with most modern iPhones and Android phones.', recipient: ['senior', 'parent', 'child', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'wireless charging pad Qi' },
   { name: 'Smart plug (2-pack)', emoji: '🔌', price: '~$25', why: 'Turn any lamp or appliance on/off with your voice or phone. Great starter smart home gift that works with Alexa and Google.', recipient: ['senior', 'parent', 'anyone'], budget: ['under25', '25to75'], searchQuery: 'smart plug 2 pack Alexa Google' },
   { name: 'Over-ear noise-cancelling headphones', emoji: '🎧', price: '~$80–150', why: 'Block out background noise for clearer calls and better music. The Sony WH-1000XM4 or Jabra Evolve 40 are excellent mid-range options.', recipient: ['parent', 'child', 'anyone'], budget: ['75to150'], tag: 'Popular', searchQuery: 'over ear noise cancelling headphones' },
@@ -54,6 +55,11 @@ export default function TechGiftGuide() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Tech Gift Guide — Perfect Gifts for Anyone Who Uses Technology | TekSure"
+        description="Curated tech gift recommendations for every budget and recipient — from tablets to smart plugs. Handpicked for real people, not tech enthusiasts."
+        path="/gift-guide"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14 text-center">

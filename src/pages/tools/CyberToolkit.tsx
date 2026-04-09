@@ -1,4 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { SafeLink } from '@/components/SafeLink';
 import {
   Search,
   Lock,
@@ -17,7 +19,16 @@ import {
   Eye,
   EyeOff,
   RotateCcw,
+  RefreshCw,
+  FileSearch,
+  Mail,
 } from 'lucide-react';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
+import {
+  Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
+} from '@/components/ui/breadcrumb';
 
 interface Tool {
   id: string;
@@ -86,7 +97,35 @@ const TOOLS: Tool[] = [
     icon: <Code className="w-5 h-5" />,
   },
 
+  {
+    id: 'password-generator',
+    name: 'Secure Password Generator',
+    description: 'Generate cryptographically strong passwords with customizable options',
+    team: 'red',
+    category: 'Cryptography',
+    isInteractive: true,
+    icon: <RefreshCw className="w-5 h-5" />,
+  },
+
   // Blue Team Tools
+  {
+    id: 'ioc-extractor',
+    name: 'IOC Extractor',
+    description: 'Extract IPs, domains, URLs, hashes, CVEs, and emails from text',
+    team: 'blue',
+    category: 'Analysis',
+    isInteractive: true,
+    icon: <FileSearch className="w-5 h-5" />,
+  },
+  {
+    id: 'email-header-analyzer',
+    name: 'Email Header Analyzer',
+    description: 'Paste email headers to detect spoofing, check SPF/DKIM/DMARC alignment',
+    team: 'blue',
+    category: 'Email Security',
+    isInteractive: true,
+    icon: <Mail className="w-5 h-5" />,
+  },
   {
     id: 'ip-calculator',
     name: 'IP Subnet Calculator',
@@ -944,6 +983,323 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   );
 };
 
+// ── Secure Password Generator (from cyber-ai-toolkit) ─────────────────────────
+const SecurePasswordGenerator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  const [length, setLength] = useState(20);
+  const [includeLower, setIncludeLower] = useState(true);
+  const [includeUpper, setIncludeUpper] = useState(true);
+  const [includeDigits, setIncludeDigits] = useState(true);
+  const [includeSpecial, setIncludeSpecial] = useState(true);
+  const [password, setPassword] = useState('');
+  const [copied, setCopied] = useState(false);
+
+  const generate = React.useCallback(() => {
+    let chars = '';
+    if (includeLower) chars += 'abcdefghijklmnopqrstuvwxyz';
+    if (includeUpper) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (includeDigits) chars += '0123456789';
+    if (includeSpecial) chars += '!@#$%^&*()-_=+[]{}|;:,.<>?';
+    if (!chars) { setPassword('Select at least one character type'); return; }
+    const array = new Uint32Array(length);
+    crypto.getRandomValues(array);
+    let pwd = '';
+    for (let i = 0; i < length; i++) pwd += chars[array[i] % chars.length];
+    setPassword(pwd);
+    setCopied(false);
+  }, [length, includeLower, includeUpper, includeDigits, includeSpecial]);
+
+  React.useEffect(() => { generate(); }, [generate]);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(password);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  // Calculate entropy
+  let charsetSize = 0;
+  if (includeLower) charsetSize += 26;
+  if (includeUpper) charsetSize += 26;
+  if (includeDigits) charsetSize += 10;
+  if (includeSpecial) charsetSize += 27;
+  const entropy = charsetSize > 0 ? length * Math.log2(charsetSize) : 0;
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Password Length: {length}</label>
+        <input
+          type="range" min="8" max="64" value={length}
+          onChange={(e) => setLength(parseInt(e.target.value))}
+          className="w-full accent-green-500"
+        />
+        <div className="flex justify-between text-xs text-gray-500 mt-1"><span>8</span><span>64</span></div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-2">
+        {[
+          { label: 'Lowercase (a-z)', checked: includeLower, set: setIncludeLower },
+          { label: 'Uppercase (A-Z)', checked: includeUpper, set: setIncludeUpper },
+          { label: 'Numbers (0-9)', checked: includeDigits, set: setIncludeDigits },
+          { label: 'Symbols (!@#$)', checked: includeSpecial, set: setIncludeSpecial },
+        ].map((opt) => (
+          <label key={opt.label} className="flex items-center gap-2 text-sm text-gray-300 p-2 bg-gray-900/30 rounded border border-gray-700 cursor-pointer">
+            <input type="checkbox" checked={opt.checked} onChange={(e) => opt.set(e.target.checked)} className="rounded" />
+            {opt.label}
+          </label>
+        ))}
+      </div>
+
+      <div className="bg-gray-900/50 p-4 rounded border border-gray-700">
+        <div className="text-xs text-gray-400 mb-2">Generated Password</div>
+        <div className="flex items-center gap-2">
+          <div className="flex-1 font-mono text-sm text-green-400 break-all select-all">{password}</div>
+          <button onClick={copyToClipboard} className="p-2 hover:bg-gray-800 rounded transition-colors shrink-0">
+            {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4 text-gray-400" />}
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+        <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
+          <div className="text-xs text-gray-400 mb-1">Entropy</div>
+          <div className="text-lg font-mono text-blue-400">{entropy.toFixed(1)} bits</div>
+        </div>
+        <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
+          <div className="text-xs text-gray-400 mb-1">Charset Size</div>
+          <div className="text-lg font-mono text-blue-400">{charsetSize}</div>
+        </div>
+      </div>
+
+      <button onClick={generate} className="w-full px-4 py-2 bg-green-600 hover:bg-green-700 rounded text-white font-medium transition-colors flex items-center justify-center gap-2">
+        <RefreshCw className="w-4 h-4" /> Regenerate
+      </button>
+    </div>
+  );
+};
+
+// ── IOC Extractor (from cyber-ai-toolkit) ─────────────────────────────────────
+const IOC_PATTERNS: Record<string, { pattern: RegExp; label: string; color: string }> = {
+  ipv4: { pattern: /\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g, label: 'IPv4 Addresses', color: 'text-red-400' },
+  url: { pattern: /https?:\/\/[^\s)]+/g, label: 'URLs', color: 'text-blue-400' },
+  email: { pattern: /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g, label: 'Email Addresses', color: 'text-cyan-400' },
+  md5: { pattern: /\b[a-fA-F0-9]{32}\b/g, label: 'MD5 Hashes', color: 'text-yellow-400' },
+  sha256: { pattern: /\b[a-fA-F0-9]{64}\b/g, label: 'SHA-256 Hashes', color: 'text-orange-400' },
+  cve: { pattern: /\bCVE-\d{4}-\d{4,}\b/g, label: 'CVE IDs', color: 'text-purple-400' },
+  domain: { pattern: /\b(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:com|net|org|io|gov|edu|mil|co|uk|de|ru|cn|info|biz|xyz)\b/gi, label: 'Domains', color: 'text-green-400' },
+  mitre: { pattern: /\bT\d{4}(?:\.\d{3})?\b/g, label: 'MITRE ATT&CK', color: 'text-pink-400' },
+};
+
+const IOCExtractor: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  const [text, setText] = useState('');
+  const [results, setResults] = useState<Record<string, string[]>>({});
+
+  const extract = React.useCallback(() => {
+    if (!text.trim()) { setResults({}); return; }
+    const found: Record<string, string[]> = {};
+    for (const [key, { pattern }] of Object.entries(IOC_PATTERNS)) {
+      const matches = [...new Set(text.match(pattern) || [])];
+      if (matches.length > 0) found[key] = matches;
+    }
+    setResults(found);
+  }, [text]);
+
+  React.useEffect(() => { extract(); }, [extract]);
+
+  const totalIOCs = Object.values(results).reduce((sum, arr) => sum + arr.length, 0);
+  const [copied, setCopied] = useState(false);
+
+  const exportJSON = () => {
+    const output = JSON.stringify(results, null, 2);
+    navigator.clipboard.writeText(output);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Paste incident report, log data, or threat intel</label>
+        <textarea
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded text-white placeholder-gray-500 focus:outline-none focus:border-green-500 font-mono text-xs"
+          placeholder={"Example: Malicious IP 45.33.32.156 contacted C2 at https://evil.example.com/payload\nMD5: d41d8cd98f00b204e9800998ecf8427e\nCVE-2024-1234 exploited via T1059.001"}
+          rows={5}
+        />
+      </div>
+
+      {totalIOCs > 0 && (
+        <div className="space-y-3 pt-4 border-t border-gray-700">
+          <div className="flex items-center justify-between">
+            <div className="text-sm font-medium text-gray-300">{totalIOCs} IOC{totalIOCs !== 1 ? 's' : ''} found</div>
+            <button onClick={exportJSON} className="text-xs px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded border border-gray-600 transition-colors flex items-center gap-1">
+              {copied ? <Check className="w-3 h-3 text-green-400" /> : <Copy className="w-3 h-3" />}
+              {copied ? 'Copied!' : 'Copy JSON'}
+            </button>
+          </div>
+          {Object.entries(results).map(([key, matches]) => {
+            const info = IOC_PATTERNS[key];
+            return (
+              <div key={key} className="bg-gray-900/50 p-3 rounded border border-gray-700">
+                <div className="text-xs text-gray-400 mb-2">{info.label} ({matches.length})</div>
+                <div className="space-y-1">
+                  {matches.map((m, i) => (
+                    <div key={i} className={`font-mono text-xs break-all ${info.color}`}>{m}</div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {text.trim() && totalIOCs === 0 && (
+        <div className="p-3 bg-gray-900/50 border border-gray-700 rounded text-center text-sm text-gray-400">
+          No IOCs detected in the provided text.
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ── Email Header Analyzer (from cyber-ai-toolkit email_security module) ──────
+const EmailHeaderAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  const [headers, setHeaders] = useState('');
+  const [analysis, setAnalysis] = useState<any>(null);
+
+  const analyze = React.useCallback(() => {
+    if (!headers.trim()) { setAnalysis(null); return; }
+
+    const lines = headers.split('\n');
+    const parsed: Record<string, string> = {};
+    let currentKey = '';
+
+    for (const line of lines) {
+      const match = line.match(/^([A-Za-z-]+):\s*(.*)$/);
+      if (match) {
+        currentKey = match[1].toLowerCase();
+        parsed[currentKey] = match[2].trim();
+      } else if (currentKey && line.startsWith(' ') || line.startsWith('\t')) {
+        parsed[currentKey] += ' ' + line.trim();
+      }
+    }
+
+    const findings: { severity: string; message: string }[] = [];
+
+    // Check From / Return-Path mismatch
+    const from = parsed['from'] || '';
+    const returnPath = parsed['return-path'] || '';
+    if (from && returnPath) {
+      const fromDomain = from.match(/@([a-zA-Z0-9.-]+)/)?.[1]?.toLowerCase();
+      const rpDomain = returnPath.match(/@([a-zA-Z0-9.-]+)/)?.[1]?.toLowerCase();
+      if (fromDomain && rpDomain && fromDomain !== rpDomain) {
+        findings.push({ severity: 'HIGH', message: `From domain (${fromDomain}) differs from Return-Path (${rpDomain}) — possible spoofing` });
+      }
+    }
+
+    // Check authentication results
+    const authResults = parsed['authentication-results'] || '';
+    if (authResults) {
+      if (authResults.includes('spf=fail')) findings.push({ severity: 'HIGH', message: 'SPF check FAILED — sender IP not authorized' });
+      else if (authResults.includes('spf=pass')) findings.push({ severity: 'PASS', message: 'SPF check passed' });
+      if (authResults.includes('dkim=fail')) findings.push({ severity: 'HIGH', message: 'DKIM check FAILED — message integrity not verified' });
+      else if (authResults.includes('dkim=pass')) findings.push({ severity: 'PASS', message: 'DKIM check passed' });
+      if (authResults.includes('dmarc=fail')) findings.push({ severity: 'HIGH', message: 'DMARC check FAILED — sender policy violated' });
+      else if (authResults.includes('dmarc=pass')) findings.push({ severity: 'PASS', message: 'DMARC check passed' });
+    }
+
+    // Count Received headers (hop count)
+    const receivedCount = lines.filter(l => l.toLowerCase().startsWith('received:')).length;
+    if (receivedCount > 8) {
+      findings.push({ severity: 'MEDIUM', message: `Unusually high hop count (${receivedCount}) — may indicate relaying` });
+    }
+
+    // Check Reply-To mismatch
+    const replyTo = parsed['reply-to'] || '';
+    if (replyTo && from) {
+      const replyDomain = replyTo.match(/@([a-zA-Z0-9.-]+)/)?.[1]?.toLowerCase();
+      const fromDomain = from.match(/@([a-zA-Z0-9.-]+)/)?.[1]?.toLowerCase();
+      if (replyDomain && fromDomain && replyDomain !== fromDomain) {
+        findings.push({ severity: 'MEDIUM', message: `Reply-To domain (${replyDomain}) differs from From (${fromDomain})` });
+      }
+    }
+
+    // Check X-Mailer
+    const xMailer = parsed['x-mailer'] || '';
+    if (xMailer) {
+      findings.push({ severity: 'INFO', message: `X-Mailer: ${xMailer}` });
+    }
+
+    if (findings.length === 0) {
+      findings.push({ severity: 'INFO', message: 'No suspicious patterns detected (paste full headers for better analysis)' });
+    }
+
+    setAnalysis({
+      from: parsed['from'] || 'Not found',
+      to: parsed['to'] || 'Not found',
+      subject: parsed['subject'] || 'Not found',
+      date: parsed['date'] || 'Not found',
+      returnPath: parsed['return-path'] || 'Not found',
+      replyTo: parsed['reply-to'] || 'Not specified',
+      receivedCount,
+      findings,
+    });
+  }, [headers]);
+
+  React.useEffect(() => { analyze(); }, [analyze]);
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Paste Email Headers</label>
+        <textarea
+          value={headers}
+          onChange={(e) => setHeaders(e.target.value)}
+          className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded text-white placeholder-gray-500 focus:outline-none focus:border-green-500 font-mono text-xs"
+          placeholder={"From: sender@example.com\nTo: recipient@example.com\nSubject: Important message\nReturn-Path: <bounce@other-domain.com>\nAuthentication-Results: mx.google.com; spf=pass; dkim=pass; dmarc=pass"}
+          rows={6}
+        />
+      </div>
+
+      {analysis && (
+        <div className="space-y-3 pt-4 border-t border-gray-700">
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
+              <div className="text-xs text-gray-400">From</div>
+              <div className="font-mono text-blue-400 text-xs break-all">{analysis.from}</div>
+            </div>
+            <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
+              <div className="text-xs text-gray-400">Return-Path</div>
+              <div className="font-mono text-blue-400 text-xs break-all">{analysis.returnPath}</div>
+            </div>
+          </div>
+          <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
+            <div className="text-xs text-gray-400">Subject</div>
+            <div className="font-mono text-blue-400 text-xs break-all">{analysis.subject}</div>
+          </div>
+          <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
+            <div className="text-xs text-gray-400">Hops (Received headers)</div>
+            <div className="font-mono text-blue-400">{analysis.receivedCount}</div>
+          </div>
+
+          <div className="text-xs font-medium text-gray-400 mt-2">Findings:</div>
+          {analysis.findings.map((f: any, i: number) => (
+            <div key={i} className={`p-2 rounded border text-xs ${
+              f.severity === 'HIGH' ? 'bg-red-950/30 border-red-500/30 text-red-400' :
+              f.severity === 'MEDIUM' ? 'bg-yellow-950/30 border-yellow-500/30 text-yellow-400' :
+              f.severity === 'PASS' ? 'bg-green-950/30 border-green-500/30 text-green-400' :
+              'bg-gray-900/50 border-gray-700 text-gray-400'
+            }`}>
+              {f.severity === 'HIGH' ? '!! ' : f.severity === 'PASS' ? '++ ' : '-- '}{f.message}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 // Main Component
 export default function CyberToolkit() {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
@@ -987,6 +1343,12 @@ export default function CyberToolkit() {
         return <HTTPHeaderChecker onClose={() => setSelectedTool(null)} />;
       case 'regex-tester':
         return <RegexTester onClose={() => setSelectedTool(null)} />;
+      case 'password-generator':
+        return <SecurePasswordGenerator onClose={() => setSelectedTool(null)} />;
+      case 'ioc-extractor':
+        return <IOCExtractor onClose={() => setSelectedTool(null)} />;
+      case 'email-header-analyzer':
+        return <EmailHeaderAnalyzer onClose={() => setSelectedTool(null)} />;
       default:
         return null;
     }
@@ -996,9 +1358,26 @@ export default function CyberToolkit() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white">
+      <SEOHead
+        title="Cyber AI Toolkit — Interactive Security Tools | TekSure"
+        description="Free browser-based cybersecurity tools: password analyzer, hash generator, IOC extractor, email header analyzer, and more. No downloads needed."
+        path="/tools/cyber-toolkit"
+      />
+      <Navbar />
+
       {/* Header */}
       <div className="border-b border-gray-800 bg-gray-950/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-8">
+          <Breadcrumb className="mb-6">
+            <BreadcrumbList>
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/" className="text-gray-400 hover:text-white">Home</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-gray-600" />
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/tools" className="text-gray-400 hover:text-white">Tools</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-gray-600" />
+              <BreadcrumbItem><BreadcrumbPage className="text-white">Cyber AI Toolkit</BreadcrumbPage></BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+
           <div className="flex items-center gap-3 mb-6">
             <Terminal className="w-8 h-8 text-green-400" />
             <div>
@@ -1020,16 +1399,11 @@ export default function CyberToolkit() {
                 className="w-full pl-10 pr-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-green-500"
               />
             </div>
-            <a
-              href="https://github.com/TekSure/toolkit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-sm"
-            >
+            <SafeLink to="https://github.com/bwilburn6202/cyber-ai-toolkit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-sm">
               <GitBranch className="w-4 h-4" />
               GitHub
               <ExternalLink className="w-3 h-3" />
-            </a>
+            </SafeLink>
           </div>
         </div>
       </div>
@@ -1154,13 +1528,14 @@ export default function CyberToolkit() {
         </div>
       )}
 
-      {/* Footer */}
+      {/* Disclaimer */}
       <div className="border-t border-gray-800 bg-gray-950/50 backdrop-blur-sm mt-12">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400">
-          <p>TekSure Cyber AI Toolkit | Advanced Security & Penetration Testing Tools</p>
-          <p className="text-xs mt-2">For educational and authorized testing purposes only. Unauthorized access is illegal.</p>
+          <p>TekSure Cyber AI Toolkit | Interactive Browser-Based Security Tools</p>
+          <p className="text-xs mt-2">For educational and authorized testing purposes only. All tools run locally in your browser — no data is sent anywhere.</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

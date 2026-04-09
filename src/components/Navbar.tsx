@@ -7,6 +7,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
+import { PreloadLink } from '@/components/PreloadLink';
 
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -42,7 +43,6 @@ export function Navbar() {
       label: 'More',
       icon: Info,
       links: [
-        { to: '/pricing', label: 'Pricing' },
         { to: '/how-it-works', label: 'How It Works' },
         { to: '/about', label: 'About' },
       ],
@@ -54,19 +54,19 @@ export function Navbar() {
       return (
         <>
           {directLinks.map((link) => (
-            <Link key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
+            <PreloadLink key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
               className="flex items-center text-lg font-medium min-h-[44px] py-2">
               {link.label}
-            </Link>
+            </PreloadLink>
           ))}
           {navGroups.map((group) => (
             <div key={group.label} className="space-y-1">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 pt-3 pb-1">{group.label}</p>
               {group.links.map((link) => (
-                <Link key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
+                <PreloadLink key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center text-lg font-medium min-h-[44px] py-2">
                   {link.label}
-                </Link>
+                </PreloadLink>
               ))}
             </div>
           ))}
@@ -77,9 +77,9 @@ export function Navbar() {
     return (
       <>
         {directLinks.map((link) => (
-          <Link key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
+          <PreloadLink key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground hover:bg-muted/60 px-2.5 py-1.5 rounded-md transition-colors">
             {link.label}
-          </Link>
+          </PreloadLink>
         ))}
         {navGroups.map((group) => (
           <DropdownMenu key={group.label}>
@@ -93,9 +93,9 @@ export function Navbar() {
             <DropdownMenuContent align="start" className="min-w-[160px]">
               {group.links.map((link) => (
                 <DropdownMenuItem key={link.to} asChild>
-                  <Link to={link.to} className="w-full cursor-pointer">
+                  <PreloadLink to={link.to} className="w-full cursor-pointer">
                     {link.label}
-                  </Link>
+                  </PreloadLink>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -112,10 +112,10 @@ export function Navbar() {
 
     return (
       <>
-        <Link to={dashboardPath} onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Dashboard</Link>
-        <Link to="/guides" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Guides</Link>
-        <Link to="/favorites" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Favorites</Link>
-        <Link to="/tools" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Tools</Link>
+        <PreloadLink to={dashboardPath} onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Dashboard</PreloadLink>
+        <PreloadLink to="/guides" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Guides</PreloadLink>
+        <PreloadLink to="/favorites" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Favorites</PreloadLink>
+        <PreloadLink to="/tools" onClick={mobile ? () => setMobileMenuOpen(false) : undefined} className={linkClass}>Tools</PreloadLink>
       </>
     );
   };

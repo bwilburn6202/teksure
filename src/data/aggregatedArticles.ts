@@ -1031,7 +1031,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
       { title: 'Satellite internet everywhere', content: 'Starlink and competitors now provide high-speed internet to rural areas that had no options before. Prices start at $120/month. This is closing the digital divide for millions of Americans.' },
       { title: 'Passkeys replace passwords', content: 'Apple, Google, and Microsoft are replacing passwords with passkeys — biometric logins using your face or fingerprint. More secure and nothing to remember. Most major sites now support them.' },
       { title: 'Electric vehicles and smart features', content: 'New cars increasingly feature over-the-air updates, built-in streaming, and AI driving assistance. Even non-EVs are getting smartphone-like features and app control.' },
-      { title: 'Smart home becomes seamless', content: 'The Matter standard now lets devices from different brands work together: Apple HomeKit, Google Home, and Amazon Alexa can all control the same smart devices without compatibility issues.' },
+      { title: 'Smart home devices now work together', content: 'The Matter standard now lets devices from different brands work together: Apple HomeKit, Google Home, and Amazon Alexa can all control the same smart devices without compatibility issues.' },
     ],
   },
 

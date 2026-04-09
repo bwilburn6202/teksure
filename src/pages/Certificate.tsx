@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -56,6 +57,11 @@ export default function Certificate() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Digital Skills Certificate — Track Your Progress | TekSure"
+        description="Earn printable certificates as you complete TekSure guides. Track your learning journey and celebrate your tech achievements."
+        path="/certificate"
+      />
       <Navbar />
       <main className="flex-1 container max-w-3xl py-12">
         <div className="border-b border-border pb-10 mb-10">

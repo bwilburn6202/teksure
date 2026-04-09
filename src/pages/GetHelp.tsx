@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2 } from 'lucide-react';
+import { checkRateLimit } from '@/lib/rateLimit';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -35,6 +36,11 @@ const GetHelp = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
+    if (!checkRateLimit('help-request', 3, 300_000)) {
+      setError('You\'ve submitted several requests recently. Please wait a few minutes before trying again.');
+      return;
+    }
 
     if (!phone.trim() && !email.trim()) {
       setError('Please provide at least a phone number or email so we can reach you.');

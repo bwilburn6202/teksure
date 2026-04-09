@@ -16,7 +16,7 @@ interface ScanResult {
 }
 
 // Heuristic-based client-side analysis
-function analyseUrl(rawUrl: string): ScanResult {
+function analyzeUrl(rawUrl: string): ScanResult {
   const flags: string[] = [];
   let score = 0;
 
@@ -136,7 +136,7 @@ function analyseUrl(rawUrl: string): ScanResult {
 }
 
 const RECENT_EXAMPLES = [
-  { label: 'Fake Royal Mail (scam)', url: 'http://royalmail-delivery.xyz/tracking?ref=12345&redelivery=confirm' },
+  { label: 'Fake USPS (scam)', url: 'http://usps-delivery.xyz/tracking?ref=12345&redelivery=confirm' },
   { label: 'Legitimate PayPal', url: 'https://paypal.com/myaccount' },
   { label: 'Suspicious login page', url: 'http://secure-paypal-login.com/signin' },
 ];
@@ -152,7 +152,7 @@ export default function PhishingScanner() {
     setScanning(true);
     // Small delay for UX feel
     setTimeout(() => {
-      setResult(analyseUrl(input.trim()));
+      setResult(analyzeUrl(input.trim()));
       setScanning(false);
     }, 600);
   };
@@ -173,7 +173,7 @@ export default function PhishingScanner() {
     <>
       <SEOHead
         title="Phishing URL Scanner — TekSure"
-        description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyses URLs for warning signs."
+        description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyzes URLs for warning signs."
       path="/tools/phishing-scanner"
       />
       <Navbar />
@@ -199,7 +199,7 @@ export default function PhishingScanner() {
           <div className="flex items-start gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-6">
             <Info className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
             <p className="text-xs text-blue-700 dark:text-blue-300">
-              <strong>How it works:</strong> This tool analyses the structure of web addresses for common phishing patterns. It does not visit the link or connect to external services — everything runs privately in your browser. No tool can guarantee 100% accuracy; use your judgement too.
+              <strong>How it works:</strong> This tool analyzes the structure of web addresses for common phishing patterns. It does not visit the link or connect to external services — everything runs privately in your browser. No tool can guarantee 100% accuracy; use your judgment too.
             </p>
           </div>
 
@@ -335,7 +335,7 @@ export default function PhishingScanner() {
                       <p className="text-sm text-muted-foreground">Proceed with caution. If you received this link unexpectedly (via text, email, or social media), it\'s safer not to click it. If it\'s from a company you use, go to their website directly by typing the address rather than clicking the link.</p>
                     )}
                     {result.risk === 'dangerous' && (
-                      <p className="text-sm text-muted-foreground">Do not click this link. Delete the message that contained it. If you think you\'ve already been scammed, contact your bank and report it to Action Fraud at <strong>0300 123 2040</strong> or <strong>actionfraud.police.uk</strong>.</p>
+                      <p className="text-sm text-muted-foreground">Do not click this link. Delete the message that contained it. If you think you\'ve already been scammed, contact your bank and report it to the FTC at <strong>1-877-382-4357</strong> or <strong>ReportFraud.ftc.gov</strong>.</p>
                     )}
                   </CardContent>
                 </Card>

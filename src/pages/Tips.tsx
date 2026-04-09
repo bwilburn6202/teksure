@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,38 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
-  summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
-  full: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency update that fixes a dangerous security hole called "DarkSword." Here\'s the important part: hackers could use this flaw to get into your phone silently, just by having you visit a malicious website. They could steal your text messages, photos, location, and saved passwords without you ever knowing. Here\'s how to check for and install the update right now: On iPhone, open the Settings app (the grey gear icon), then tap General, then tap Software Update. If you see iOS 18.7.7 available, tap Download and Install — you\'ll need your passcode and about 10 minutes. Make sure your phone is plugged in or has at least 50% battery first. If you\'re already on iOS 18.7.7 or iOS 26.4 (a newer version), you\'re protected. To make sure you never miss an update like this again, go back to Software Update and turn on Automatic Updates — your phone will install updates overnight while you\'re sleeping.',
-  category: 'Security',
-  icon: ShieldAlert,
+  title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
+  summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
+  full: 'Many websites and apps like Facebook, Instagram, and YouTube automatically start playing videos as you scroll, which uses up your mobile data quickly and can slow down your phone. The good news: you can turn this off. On Facebook, open the app, tap the three lines (menu) in the bottom-right corner, go to Settings & Privacy, then Settings, scroll down to "Media," and set "Autoplay" to "Never Autoplay Videos" or "On Wi-Fi Connections Only." On Instagram, go to your profile, tap the three lines at the top, then Settings, then "Data Usage and Media Quality," and turn on "Use Less Mobile Data." On an iPhone, you can also stop videos from autoplaying across many apps at once: go to Settings, tap Accessibility, then Motion, and turn off "Auto-Play Video Previews." On Android, open Chrome, tap the three dots in the top-right, go to Settings, then Site Settings, and look for "Autoplay" — you can block it there. Turning off auto-play not only saves data but also makes browsing quieter and less distracting, especially if you are in a waiting room or a quiet place.',
+  category: 'Productivity',
+  icon: PauseCircle,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'How to Safely Log Out of Public Computers at Libraries and Other Shared Spaces',
+    summary: 'If you use a computer at the library, a hotel, or any shared space, logging out properly is essential — otherwise the next person who sits down could access your email, bank account, or social media.',
+    category: 'Safety',
+    icon: LogOut,
+  },
+  {
+    title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
+    summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
+    category: 'Safety',
+    icon: Ban,
+  },
+  {
+    title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
+    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
+    category: 'Safety',
+    icon: Heart,
+  },
+  {
+    title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
+    summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
+    category: 'Security',
+    icon: ShieldAlert,
+  },
   {
     title: 'Set Up a Screen Lock PIN to Protect Your Phone',
     summary: 'A screen lock PIN is the first line of defense if your phone is ever lost or stolen — it keeps strangers out of your personal information, photos, and accounts.',

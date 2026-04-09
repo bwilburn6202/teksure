@@ -120,7 +120,7 @@ const SearchResults = () => {
                         <Link to={`/guides/${guide.slug}`}>
                           <Card className="h-full rounded-2xl border border-border bg-card hover:shadow-lg transition-all hover:-translate-y-1 group">
                             <CardContent className="pt-6">
-                              <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" />
+                              <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" decoding="async" width="600" height="400" />
                               <div className="flex items-center gap-2 mb-2">
                                 <Badge variant="secondary" className="text-xs rounded-full">{categoryLabels[guide.category]}</Badge>
                                 <span className="text-xs text-muted-foreground flex items-center gap-1">

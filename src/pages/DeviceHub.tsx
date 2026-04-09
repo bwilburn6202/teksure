@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { guides, categoryLabels } from '@/data/guides';
 import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
 
@@ -102,6 +103,10 @@ const DeviceHub = () => {
       />
       <Navbar />
 
+      <div className="container pt-4">
+        <PageBreadcrumb segments={[{ label: 'Device Hub' }]} />
+      </div>
+
       {/* Header */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="container">
@@ -187,7 +192,7 @@ const DeviceHub = () => {
                     <Link to={`/guides/${guide.slug}`}>
                       <Card className="h-full rounded-2xl border border-border bg-card hover:border-primary/30 transition-all hover:shadow-sm group">
                         <CardContent className="pt-6 pb-5">
-                          <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" />
+                          <img src={getGuideThumbnailUrl(guide)} alt="" className="w-full h-28 rounded-lg object-cover mb-3" loading="lazy" decoding="async" width="600" height="400" />
                           <div className="flex items-center gap-2 mb-3">
                             <Badge variant="outline" className="text-xs rounded-lg">
                               {categoryLabels[guide.category]}

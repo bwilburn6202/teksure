@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Home, Search, BookOpen, Wrench, HelpCircle, ArrowRight } from 'lucide-react';
 
@@ -22,6 +23,12 @@ const NotFound = () => {
 
   return (
     <>
+      <SEOHead
+        title="Page Not Found — TekSure"
+        description="The page you're looking for doesn't exist. Browse our guides, tools, or get help from a real person."
+        path="/404"
+        type="error"
+      />
       <Navbar />
       <main className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-background">
         <div className="text-center max-w-lg mx-auto">

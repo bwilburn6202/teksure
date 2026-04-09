@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -43,6 +44,11 @@ const occasions: { icon: LucideIcon; label: string }[] = [
 export default function GiftSubscription() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Gift a TekSure Subscription — Give the Gift of Tech Confidence"
+        description="Give someone the gift of digital confidence. Gift TekSure subscriptions from $9.99 — perfect for parents, grandparents, and loved ones."
+        path="/gift"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-16">
@@ -86,7 +92,7 @@ export default function GiftSubscription() {
                       ))}
                     </ul>
                     <Button className={`w-full gap-2 rounded-xl ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}`} asChild>
-                      <Link to="/pricing"><Gift className="h-4 w-4" /> Give This Gift</Link>
+                      <Link to="/get-help"><Gift className="h-4 w-4" /> Give This Gift</Link>
                     </Button>
                   </CardContent>
                 </Card>

@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart, BookOpen, Users, MessageCircle, Phone, ArrowRight, Timer, CheckCircle, RefreshCw, Handshake, PenLine, Leaf } from 'lucide-react';
@@ -30,6 +31,11 @@ const quotes = [
 export default function TechAnxiety() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Dealing with Tech Anxiety — It's Normal to Feel Overwhelmed | TekSure"
+        description="Practical tips for managing technology anxiety. Learn at your own pace, without judgment — TekSure is here to help you feel confident with technology."
+        path="/tech-anxiety"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-16">

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -18,7 +19,7 @@ const GOALS = [5, 10, 20, 50, 100];
 
 function getStreak(completed: string[]): number {
   if (completed.length === 0) return 0;
-  const raw = localStorage.getItem('teksure-last-activity');
+  const raw = typeof window !== 'undefined' ? localStorage.getItem('teksure-last-activity') : null;
   if (!raw) return completed.length > 0 ? 1 : 0;
   const lastDate = new Date(raw);
   const today = new Date();
@@ -49,7 +50,7 @@ export default function ProgressReport() {
   const pctToGoal = Math.min(100, (total / nextGoal) * 100);
   const recentGuides = completedArr.slice(-5).reverse().map(slug => guides.find(g => g.slug === slug)).filter(Boolean);
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(!!localStorage.getItem('teksure-report-email'));
+  const [subscribed, setSubscribed] = useState(() => typeof window !== 'undefined' && !!localStorage.getItem('teksure-report-email'));
 
   function handleSubscribe(e: React.FormEvent) {
     e.preventDefault();
@@ -59,11 +60,16 @@ export default function ProgressReport() {
     toast.success('You\'re subscribed! Your first monthly report will arrive next month.');
   }
 
-  const confidenceScore = parseInt(localStorage.getItem('teksure-confidence-score') ?? '0', 10);
-  const chosenPath = localStorage.getItem('teksure-my-path-chosen');
+  const confidenceScore = typeof window !== 'undefined' ? parseInt(localStorage.getItem('teksure-confidence-score') ?? '0', 10) : 0;
+  const chosenPath = typeof window !== 'undefined' ? localStorage.getItem('teksure-my-path-chosen') : null;
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Your Monthly Progress Report — Track Your Learning | TekSure"
+        description="Track your TekSure learning journey. See how many guides you've completed, your streak, confidence score, and what to tackle next."
+        path="/progress-report"
+      />
       <Navbar />
       <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">

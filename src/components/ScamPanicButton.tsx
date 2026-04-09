@@ -21,14 +21,14 @@ const steps = [
   },
   {
     icon: Flag,
-    title: 'Report it to Action Fraud',
-    description: 'Call 0300 123 2040 or visit actionfraud.police.uk. Your report helps protect others.',
-    action: { label: 'Call Action Fraud', href: 'tel:03001232040' },
+    title: 'Report it to the FTC',
+    description: 'Go to ReportFraud.ftc.gov or call 1-877-382-4357. Your report helps protect others.',
+    action: { label: 'Call the FTC', href: 'tel:18773824357' },
   },
   {
     icon: Users,
     title: 'Tell someone you trust',
-    description: "Talk to a family member, friend, or neighbour. You are not alone and this is not your fault — scammers are professionals.",
+    description: "Talk to a family member, friend, or neighbor. You are not alone and this is not your fault — scammers are professionals.",
   },
 ];
 

@@ -11,6 +11,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
+import { ShareGuideButton } from '@/components/ShareGuideButton';
+import { ReportBrokenLink } from '@/components/ReportBrokenLink';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -18,6 +20,7 @@ import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } fro
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
+import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
@@ -31,6 +34,13 @@ function calcReadTime(guide: { title: string; excerpt: string; steps?: GuideStep
   if (guide.body) words += guide.body.split(/\s+/).length;
   const mins = Math.max(1, Math.ceil(words / 200));
   return `${mins} min read`;
+}
+
+function calcStepTime(step: GuideStep): string {
+  const words = (step.title + ' ' + step.content + ' ' + (step.tip || '') + ' ' + (step.warning || '')).split(/\s+/).length;
+  const secs = Math.max(15, Math.ceil((words / 200) * 60));
+  if (secs < 60) return `~${secs}s`;
+  return `~${Math.ceil(secs / 60)} min`;
 }
 
 /* ── Sub-components ─────────────────────────────── */
@@ -94,35 +104,58 @@ const StepScreenshot = ({
   screenshotAlt?: string;
   annotations?: ScreenshotAnnotation[];
 }) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   return (
-    <div className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm">
-      <div className="relative bg-muted/30">
-        <img
-          src={screenshotUrl}
-          alt={screenshotAlt || ''}
-          className="w-full h-auto"
-          loading="lazy"
-        />
+    <>
+      <div
+        className="mt-4 rounded-xl overflow-hidden border border-border shadow-sm cursor-pointer group"
+        onClick={() => setLightboxOpen(true)}
+        role="button"
+        tabIndex={0}
+        aria-label={`Enlarge screenshot: ${screenshotAlt || 'guide step'}`}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLightboxOpen(true); } }}
+      >
+        <div className="relative bg-muted/30">
+          <img
+            src={screenshotUrl}
+            alt={screenshotAlt || ''}
+            className="w-full h-auto transition-opacity group-hover:opacity-90"
+            loading="lazy"
+          />
+          {annotations && annotations.length > 0 && (
+            <AnnotationLayer annotations={annotations} />
+          )}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10">
+            <span className="bg-black/60 text-white text-sm px-3 py-1.5 rounded-lg backdrop-blur-sm">
+              Click to enlarge
+            </span>
+          </div>
+        </div>
         {annotations && annotations.length > 0 && (
-          <AnnotationLayer annotations={annotations} />
+          <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
+            {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
+              <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                {a.type === 'callout' && (
+                  <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
+                    {a.label}
+                  </span>
+                )}
+                {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
+                {a.label}
+              </span>
+            ))}
+          </div>
         )}
       </div>
-      {annotations && annotations.length > 0 && (
-        <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
-          {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
-            <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              {a.type === 'callout' && (
-                <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
-                  {a.label}
-                </span>
-              )}
-              {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
-              {a.label}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
+      <ScreenshotLightbox
+        open={lightboxOpen}
+        onOpenChange={setLightboxOpen}
+        screenshotUrl={screenshotUrl}
+        screenshotAlt={screenshotAlt}
+        annotations={annotations}
+      />
+    </>
   );
 };
 
@@ -385,6 +418,8 @@ const GuideDetail = () => {
                 <Printer className="h-4 w-4" /> Print Guide
               </Button>
               <ListenButton guide={guide} />
+              <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
+              <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
             </div>
           </div>
 
@@ -439,6 +474,7 @@ const GuideDetail = () => {
                               return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
                             })()}
                             <h3 className="font-bold text-lg">{step.title}</h3>
+                            <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
                           <div className="text-base text-muted-foreground leading-relaxed">
                             <StepContent text={step.content} />

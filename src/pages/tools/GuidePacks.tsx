@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -150,6 +151,12 @@ export default function GuidePacks() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Printable Guide Packs — Download Themed Collections | TekSure"
+        description="Download themed collections of TekSure guides as a single print-ready document. Perfect for keeping by the computer or sharing with someone who prefers paper."
+        path="/tools/guide-packs"
+        canonical="/tools/guide-packs"
+      />
       <Navbar />
       <main className="flex-1">
         <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14 text-center">
