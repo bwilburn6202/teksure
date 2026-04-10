@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'How to Spot and Avoid QR Code Scams',
-  summary: 'Scammers are placing fake QR codes on parking meters, restaurant tables, and flyers to steal your personal information — here is how to stay safe.',
-  full: 'QR codes are everywhere now — on restaurant menus, parking meters, store windows, and even in your mail. Unfortunately, scammers have started placing fake QR code stickers over real ones, or printing them on official-looking flyers. When you scan a fake code, it takes you to a website that looks legitimate but is designed to steal your login, credit card number, or personal information. To protect yourself, always preview the web address before tapping it after scanning a QR code — your phone will show the URL on screen for a moment. If the address looks strange, misspelled, or does not match the business, do not open it. Be extra cautious with QR codes on stickers placed over other stickers (a sign of tampering), codes in unexpected emails or text messages, and codes taped to parking meters or public signs. If a business has a QR code for payment, ask an employee to confirm it is legitimate before scanning. When in doubt, skip the QR code entirely and type the website address directly into your browser, or ask the business for a paper menu or receipt instead.',
-  category: 'Safety',
-  icon: QrCode,
+  title: 'Do a Free Security Checkup on Your Google Account in 5 Minutes',
+  summary: 'Google offers a free Security Checkup that shows every device signed in to your account, flags weak passwords, and checks for suspicious activity — all in one place, no tech knowledge needed.',
+  full: 'Did you know Google lets you run a free security check on your account — no tech knowledge required? Here is how to do it: open a browser and go to myaccount.google.com, then click "Security" on the left side. Look for the "Security Checkup" section and click "Get started." In about five minutes, it walks you through four things. First, it shows every device currently signed in to your account — you can remove any old phones or computers you no longer use. Second, it checks whether any of your saved passwords have appeared in data breaches and tells you which ones to change. Third, it shows apps and services that have access to your Google account — you can remove any you do not recognize. Fourth, it shows whether two-step verification is turned on, which is an extra security step that stops strangers from logging in even if they know your password. If any red flags come up, Google explains what to do in plain language. You do not need to understand technology — it guides you through every step. If you use Gmail, Google Photos, YouTube, or any Google service, this five-minute check is one of the most useful things you can do for your online safety this week.',
+  category: 'Security',
+  icon: ShieldCheck,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'How to Spot and Avoid QR Code Scams',
+    summary: 'Scammers are placing fake QR codes on parking meters, restaurant tables, and flyers to steal your personal information — always preview the web address before tapping, and skip the code entirely if the address looks strange or misspelled.',
+    category: 'Safety',
+    icon: QrCode,
+  },
   {
     title: 'How to Find Your Saved Wi-Fi Password on Any Device',
     summary: 'Forgot your Wi-Fi password? Your phone, tablet, or computer already knows it — here is how to look it up without calling your internet provider.',
