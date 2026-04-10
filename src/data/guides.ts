@@ -7184,7 +7184,7 @@ Look for "English [CC]" or "English [SDH]" — these include descriptions of sou
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     body: `**Windows Security is built in and free**
-Windows 11 (and Windows 10) includes Windows Security (formerly Windows Defender), a free antivirus program that runs automatically in the background. You don't need to pay for separate antivirus software.
+Windows 11 includes Windows Security (formerly Windows Defender), a free antivirus program that runs automatically in the background. You don't need to pay for separate antivirus software. Note: Windows 10 reached end of support on October 14, 2025 — if you are still on Windows 10, upgrading to Windows 11 is strongly recommended for continued security updates.
 
 **Run a quick scan**
 Click Start, search for "Windows Security," and open it. Click "Virus & threat protection." Click "Quick scan." Windows will scan the most common locations where viruses hide — this takes 1-5 minutes.
@@ -9992,7 +9992,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // Source: Apple iCloud Advanced Data Protection (scraped)
   { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'What it does', content: 'Advanced Data Protection encrypts the majority of your iCloud data — Backups, Photos, Notes, and more — with end-to-end encryption. Not even Apple can access your data.' },
-    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia). You must set up at least one recovery method first.' },
+    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia 15). You must set up at least one recovery method first.' },
     { title: 'Set up recovery', content: 'Before enabling, set up either a Recovery Contact (trusted person who can help you regain access) or a Recovery Key (a 28-character code you store securely). This is essential — if you lose access, Apple cannot help.' },
     { title: 'Enable on iPhone/iPad', content: 'Settings > tap your name > iCloud > scroll down > Advanced Data Protection > Turn on Advanced Data Protection. Follow the prompts to verify your recovery methods.' },
     { title: 'Enable on Mac', content: 'Apple Menu > System Settings > click your name > iCloud > Advanced Data Protection > Turn On. Follow the on-screen instructions.' },
