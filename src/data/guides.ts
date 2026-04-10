@@ -6209,26 +6209,14 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '📲',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Open the App Store**
-Tap the blue App Store icon on your home screen (it looks like a white "A" made of sticks on a blue background). If you can't find it, swipe down from the middle of your screen and type "App Store" in the search bar.
-
-**Search for an app**
-Tap the Search icon at the bottom of the App Store. Type the name of the app you're looking for (e.g., "WhatsApp", "Netflix", "Zoom"). Tap Search on your keyboard.
-
-**Download a free app**
-Tap the app from the search results to see its page. Tap the "Get" button (blue). You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.
-
-**Download a paid app**
-The price button shows the cost (e.g., "$1.99"). Tap it to purchase. You'll be charged to the payment method linked to your Apple ID.
-
-**Update your apps**
-Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.
-
-**Delete an app**
-Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps any time at no charge.
-
-**Official help**
-For Apple's complete guide to the App Store, visit support.apple.com/guide/iphone/get-apps-games-and-more-iph27b83d108/ios. For a video walkthrough, search "How to download apps iPhone" on YouTube or visit Apple's YouTube channel at youtube.com/apple.`
+    steps: [
+      { title: 'Open the App Store', content: 'Tap the blue App Store icon on your home screen. It looks like a white "A" made of sticks on a blue background. If you cannot find it, swipe down from the middle of your screen and type "App Store" in the search bar.' },
+      { title: 'Search for an app', content: 'Tap the Search icon at the bottom of the App Store. Type the name of the app you are looking for — for example, "WhatsApp," "Netflix," or "Zoom." Tap Search on your keyboard.' },
+      { title: 'Download a free app', content: 'Tap the app from the search results to see its page. Tap the blue "Get" button. You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.', tip: 'Always check the number of reviews and star rating before downloading. Apps with thousands of reviews and 4+ stars are usually trustworthy.' },
+      { title: 'Download a paid app', content: 'The price button shows the cost (for example, "$1.99"). Tap it to purchase. You will be charged to the payment method linked to your Apple ID.' },
+      { title: 'Update your apps', content: 'Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.', tip: 'You can turn on automatic updates in Settings > App Store > App Updates so your apps stay current without any effort.' },
+      { title: 'Delete an app', content: 'Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps at any time at no charge.', tip: 'For Apple\'s complete App Store guide, visit support.apple.com/guide/iphone/get-apps-games-and-more-iph27b83d108/ios' },
+    ],
   },
   {
     slug: 'download-apps-google-play-android',
@@ -6241,26 +6229,14 @@ For Apple's complete guide to the App Store, visit support.apple.com/guide/iphon
     thumbnailEmoji: '📲',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Open the Google Play Store**
-Tap the Play Store icon (a colorful triangle on a white background) on your home screen or app drawer. If you can't find it, swipe up to open the app drawer and search for "Play Store."
-
-**Search for an app**
-Tap the search bar at the top and type the name of the app you want (e.g., "WhatsApp", "Netflix", "Zoom"). Tap the search/enter key on your keyboard.
-
-**Install a free app**
-Tap the app in the results. Check the reviews (aim for 4 stars or above) and the number of downloads. Tap "Install." The app will download and appear on your home screen or app drawer.
-
-**Install a paid app**
-Tap the price button. You'll need to confirm payment using your Google account's linked payment method or Google Play balance.
-
-**Manage your apps**
-Tap your profile photo in the top right > Manage apps & device > Updates available to see which apps have updates. Tap "Update all" regularly.
-
-**Uninstall an app**
-Press and hold the app icon, then drag it to "Uninstall" at the top of the screen, or go to Play Store > profile > Manage apps & device > find the app > Uninstall.
-
-**Official help**
-For Google's complete guide to the Play Store, visit support.google.com/googleplay/answer/113410. For a video walkthrough, search "How to install apps Android" on YouTube or visit the Google channel at youtube.com/google.`
+    steps: [
+      { title: 'Open the Google Play Store', content: 'Tap the Play Store icon (a colorful triangle on a white background) on your home screen or app drawer. If you cannot find it, swipe up to open the app drawer and search for "Play Store."' },
+      { title: 'Search for an app', content: 'Tap the search bar at the top and type the name of the app you want — for example, "WhatsApp," "Netflix," or "Zoom." Tap the Search key on your keyboard.' },
+      { title: 'Install a free app', content: 'Tap the app in the results. Check the star rating (aim for 4 stars or above) and the number of downloads — more downloads usually means more trustworthy. Tap "Install." The app will download and appear on your home screen or app drawer.', tip: 'Only install apps from the official Google Play Store. Avoid installing apps from websites or text message links.' },
+      { title: 'Install a paid app', content: 'Tap the price button. You will need to confirm payment using your Google account\'s linked payment method or Google Play balance.' },
+      { title: 'Update your apps', content: 'Tap your profile photo in the top right > Manage apps & device > Updates available. Tap "Update all" to keep all your apps current. Updates fix security issues and add new features.', tip: 'You can turn on automatic updates by tapping Settings in the Play Store > Network preferences > Auto-update apps.' },
+      { title: 'Uninstall an app', content: 'Press and hold the app icon on your home screen, then tap "Uninstall." Or go to Play Store > tap your profile photo > Manage apps & device > find the app > Uninstall.', tip: 'For Google\'s complete guide to the Play Store, visit support.google.com/googleplay/answer/113410' },
+    ],
   },
   {
     slug: 'block-spam-calls-iphone',
@@ -6394,26 +6370,13 @@ For Google's complete guide to the Play Store, visit support.google.com/googlepl
     thumbnailEmoji: '🤝',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Search for someone**
-Click the search bar at the top of Facebook and type the person's name. Press Enter. Facebook will show you a list of people with that name.
-
-**Identify the right person**
-Look at the profile photos and any mutual friends shown beneath the names. Mutual friends (people you both know) are a good sign you've found the right person.
-
-**Send a friend request**
-Click the person's name to go to their profile. Click the blue "Add Friend" button. The person will be notified that you've sent them a friend request.
-
-**Accepting a friend request**
-When someone sends you a friend request, a red number appears on the people icon at the top of Facebook. Click it to see pending requests. Click "Confirm" to accept or "Delete" to decline.
-
-**Managing your friends**
-To see all your Facebook friends, go to your profile and click "Friends." From here you can also "Unfriend" someone by clicking the three dots next to their name — they won't be notified.
-
-**People you may know**
-Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognize someone.
-
-**Official help**
-Facebook's help center for adding friends is at facebook.com/help/336320879782850. For a video guide to using Facebook, AARP has free tutorials at aarp.org/home-family/personal-technology/info-2021/facebook-guide.html.`
+    steps: [
+      { title: 'Search for someone', content: 'Click the search bar at the top of Facebook and type the person\'s name. Press Enter. Facebook will show you a list of people with that name.' },
+      { title: 'Identify the right person', content: 'Look at the profile photos and any mutual friends shown beneath the names. Mutual friends — people you both know — are a good sign you have found the right person.', tip: 'If you are not sure, check their About section for details like hometown or workplace to confirm it\'s who you\'re looking for.' },
+      { title: 'Send a friend request', content: 'Click the person\'s name to go to their profile. Click the blue "Add Friend" button. They will get a notification that you sent a friend request. You can cancel a pending request by going back to their profile and clicking "Cancel Request."' },
+      { title: 'Accept a friend request', content: 'When someone sends you a friend request, a red number appears on the people icon at the top of Facebook. Click it to see pending requests. Click "Confirm" to accept or "Delete" to decline.', warning: 'Do not accept friend requests from people you do not recognize. Scammers sometimes create fake profiles to gain access to your information.' },
+      { title: 'Manage your friends list', content: 'To see all your Facebook friends, go to your profile and click "Friends." To unfriend someone, click the three dots next to their name and choose "Unfriend." They will not be notified.', tip: 'For Facebook\'s official guide to adding friends, visit facebook.com/help/336320879782850. AARP has free Facebook tutorials at aarp.org/home-family/personal-technology.' },
+    ],
   },
   {
     slug: 'post-photo-on-facebook',
@@ -9305,7 +9268,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Subscribe to channels you like', content: 'If you find a creator whose videos you enjoy, tap the "Subscribe" button below the video. Subscribed channels will appear in your "Subscriptions" tab, making it easy to find their new videos. Subscribing is free.', tip: 'Some great YouTube channels for tech beginners: "Kevin Stratvert" for Windows, "9to5Mac" for Apple, and "AARP" for senior-focused tech tutorials.' },
     { title: 'Adjust playback speed and captions', content: 'Tap the gear icon on a video for settings. "Playback speed" lets you slow down (0.75x) or speed up (1.25x) the video. "Captions" turns on subtitles — extremely helpful if the speaker talks fast or has an accent.' },
   ] },
-  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative, but it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative, but it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
     { title: 'Set your account to private', content: 'Open TikTok > tap Profile (bottom right) > tap the three lines (top right) > Settings and Privacy > Privacy. Turn on "Private Account." Only people you approve as followers can see your videos. This is especially important for anyone who does not want strangers viewing their content.' },
     { title: 'Control who can interact with you', content: 'In Settings > Privacy: set "Who can comment on your videos" to "Friends" or "No one." Set "Who can send you direct messages" to "Friends" or "No one." Set "Who can duet/stitch with your videos" to "Friends." This prevents unwanted contact from strangers.' },
     { title: 'Be careful what you share', content: 'Never share: your home address or neighborhood landmarks, your daily routine or schedule, financial information, personal identification details. Even with a private account, approved followers can screenshot or screen-record your videos.' },
