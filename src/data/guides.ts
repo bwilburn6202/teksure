@@ -2508,7 +2508,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Increase text size everywhere', content: 'iPhone: Settings → Display. Mac: System Settings → Accessibility → Display. Windows: Settings → Accessibility → Text Size.' },
       { title: 'Use dark mode', content: 'Dark mode reduces eye strain in low light. Available on iPhone, Mac, Windows, and most apps.' },
-      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 16+), Mac, Android, and Windows 11.' },
+      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 18 and later), Mac (macOS Sonoma and later), Android, and Windows 11.' },
       { title: 'Magnification tools', content: 'iPhone: triple-click home/side button. Mac: Cmd+Option+= to zoom. Windows: Win+Plus to magnify.', tip: 'For the full iPhone accessibility guide, visit support.apple.com/en-us/guide/iphone/iph3e2e1fb0/ios. For Android accessibility, visit support.google.com/accessibility/android/answer/6006972. AARP also has free tech help articles at aarp.org/personal-technology.' },
     ]
   },
@@ -2882,7 +2882,7 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     publishedAt: '2026-03-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 16+). Just tap and hold on a subject to lift it out.' },
+      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 16 and later, including iOS 18). Just tap and hold on a subject to lift it out.' },
       { title: 'Enhance photo quality', content: 'Tools like Remini and Let\'s Enhance use AI to upscale blurry photos, sharpen details, and improve lighting.' },
       { title: 'Remove unwanted objects', content: 'Google Photos Magic Eraser, Samsung Object Eraser, and Adobe\'s Generative Fill can remove photobombers and distractions.' },
       { title: 'AI filters and styles', content: 'Apps like Prisma and Lensa transform photos into artwork, cartoon styles, or professional headshots using AI.' },
@@ -6138,7 +6138,7 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
       { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You just need a Wi-Fi connection to see the full-quality version.' },
       { title: 'Delete old text message photos and videos', content: 'Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments." You will see a list of photos and videos sent through text messages, sorted by size. Tap Edit and select the ones you don\'t need, then delete them.' },
       { title: 'Clear Safari browser cache', content: 'Go to Settings > Safari > Clear History and Website Data. Tap "Clear History and Data" to confirm. This removes temporary web files stored on your phone and can free up several hundred megabytes. Your bookmarks and saved passwords are not affected.' },
-      { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 16 or later.' },
+      { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 16 or later (including iOS 18).' },
     ],
   },
   {
@@ -6213,7 +6213,7 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
 Tap the blue App Store icon on your home screen (it looks like a white "A" made of sticks on a blue background). If you can't find it, swipe down from the middle of your screen and type "App Store" in the search bar.
 
 **Search for an app**
-Tap the Search icon at the bottom of the App Store. Type the name of the app you're looking for (e.g., "WhatsApp", "BBC iPlayer", "Zoom"). Tap Search on your keyboard.
+Tap the Search icon at the bottom of the App Store. Type the name of the app you're looking for (e.g., "WhatsApp", "Netflix", "Zoom"). Tap Search on your keyboard.
 
 **Download a free app**
 Tap the app from the search results to see its page. Tap the "Get" button (blue). You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.
@@ -6225,7 +6225,10 @@ The price button shows the cost (e.g., "$1.99"). Tap it to purchase. You'll be c
 Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.
 
 **Delete an app**
-Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps any time at no charge.`
+Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps any time at no charge.
+
+**Official help**
+For Apple's complete guide to the App Store, visit support.apple.com/guide/iphone/get-apps-games-and-more-iph27b83d108/ios. For a video walkthrough, search "How to download apps iPhone" on YouTube or visit Apple's YouTube channel at youtube.com/apple.`
   },
   {
     slug: 'download-apps-google-play-android',
@@ -6254,7 +6257,10 @@ Tap the price button. You'll need to confirm payment using your Google account's
 Tap your profile photo in the top right > Manage apps & device > Updates available to see which apps have updates. Tap "Update all" regularly.
 
 **Uninstall an app**
-Press and hold the app icon, then drag it to "Uninstall" at the top of the screen, or go to Play Store > profile > Manage apps & device > find the app > Uninstall.`
+Press and hold the app icon, then drag it to "Uninstall" at the top of the screen, or go to Play Store > profile > Manage apps & device > find the app > Uninstall.
+
+**Official help**
+For Google's complete guide to the Play Store, visit support.google.com/googleplay/answer/113410. For a video walkthrough, search "How to install apps Android" on YouTube or visit the Google channel at youtube.com/google.`
   },
   {
     slug: 'block-spam-calls-iphone',
@@ -6305,33 +6311,14 @@ Press and hold the app icon, then drag it to "Uninstall" at the top of the scree
     thumbnailEmoji: '🔋',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Lower your screen brightness**
-Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness (Settings > Accessibility > Display & Text Size > Auto-Brightness on iPhone; Settings > Display > Adaptive brightness on Android).
-
-**Turn off Wi-Fi and Bluetooth when not in use**
-If you're out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel (swipe down from the top of the screen).
-
-**Check which apps are draining your battery**
-- iPhone: Settings > Battery — scroll down to see apps and their battery usage
-- Android: Settings > Battery > Battery Usage
-
-Delete or restrict background activity for any apps using an unusually high percentage.
-
-**Reduce background app refresh**
-- iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only
-- Android: Settings > Apps > [app name] > Battery > Restricted
-
-**Enable Low Power Mode**
-- iPhone: Settings > Battery > Low Power Mode (or ask Siri: "turn on Low Power Mode")
-- Android: Settings > Battery > Battery Saver
-
-This reduces background activity and notifications to stretch your remaining battery.
-
-**Check your battery health (iPhone)**
-Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple offers battery replacement for a fixed fee.
-
-**Official help**
-For Apple's free battery troubleshooting guide, visit support.apple.com/en-us/108055. For Android battery help, visit support.google.com/android.`
+    steps: [
+      { title: 'Lower your screen brightness', content: 'Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness: on iPhone go to Settings > Accessibility > Display & Text Size > Auto-Brightness; on Android go to Settings > Display > Adaptive brightness.', tip: 'Even dropping brightness from 80% to 50% can add an hour or more of battery life.' },
+      { title: 'Turn off Wi-Fi and Bluetooth when not in use', content: 'If you are out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel — swipe down from the top of the screen and tap the Wi-Fi or Bluetooth button to toggle them off.' },
+      { title: 'Check which apps are draining your battery', content: 'iPhone: go to Settings > Battery and scroll down to see apps and their battery usage percentages. Android: go to Settings > Battery > Battery Usage. Delete or restrict background activity for any apps using an unusually high percentage.', tip: 'Social media apps like Facebook and Instagram are frequent battery hogs. Try restricting their background activity first.' },
+      { title: 'Reduce background app refresh', content: 'This setting lets apps update in the background even when you are not using them — and it drains your battery. iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only. Android: Settings > Apps > [app name] > Battery > Restricted.' },
+      { title: 'Enable Low Power Mode or Battery Saver', content: 'iPhone: Settings > Battery > Low Power Mode. Android: Settings > Battery > Battery Saver. This reduces background activity and dims notifications to stretch your remaining battery. Most people only lose features they do not need.', tip: 'On iPhone you can also say "Siri, turn on Low Power Mode" to activate it hands-free.' },
+      { title: 'Check your battery health (iPhone)', content: 'Go to Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple charges a set fee for battery replacement at any Apple Store or authorized service provider.', tip: 'For Apple\'s complete battery guide, visit support.apple.com/en-us/108055. For Android battery tips, visit support.google.com/android/answer/7664358.' },
+    ],
   },
   {
     slug: 'use-siri-basics',
@@ -6344,27 +6331,13 @@ For Apple's free battery troubleshooting guide, visit support.apple.com/en-us/10
     thumbnailEmoji: '🎙️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Activate Siri**
-Say "Hey Siri" (if enabled) or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.
-
-**Enable "Hey Siri"**
-Go to Settings > Siri & Search > Listen for "Hey Siri" and turn it on. Now you can activate Siri hands-free just by saying "Hey Siri."
-
-**Useful things to ask Siri**
-- "Hey Siri, call [name]"
-- "Hey Siri, text [name] I'm on my way"
-- "Hey Siri, set an alarm for 7am"
-- "Hey Siri, remind me to take my tablets at 8pm"
-- "Hey Siri, what's the weather today?"
-- "Hey Siri, how do I spell [word]?"
-- "Hey Siri, open Maps"
-- "Hey Siri, turn on Bluetooth"
-
-**If Siri doesn't understand you**
-Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing. If Siri keeps misunderstanding, try rephrasing your request.
-
-**Siri and privacy**
-Your Siri requests are sent to Apple's servers to process. Siri does not store your voice recordings by default. You can review and delete Siri history in Settings > Siri & Search > Siri History.`
+    steps: [
+      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), just say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
+      { title: 'Enable hands-free Siri', content: 'Go to Settings > Siri > Talk to Siri and select "Always On." Now you can activate Siri hands-free at any time just by saying "Siri" without picking up your phone.', tip: 'For Apple\'s complete Siri guide, visit support.apple.com/guide/iphone/use-siri-iph83aad8922/ios' },
+      { title: 'Try these voice commands', content: 'Some useful things to ask: "Siri, call [name]" — "Siri, text [name] I\'m on my way" — "Siri, set an alarm for 7am" — "Siri, remind me to take my medication at 8pm" — "Siri, what\'s the weather today?" — "Siri, open Maps" — "Siri, turn on Bluetooth." Speak naturally and Siri will understand you.' },
+      { title: 'If Siri doesn\'t understand you', content: 'Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing before saying anything else. If Siri keeps misunderstanding, try rephrasing your request or check that your microphone is not blocked by a case.' },
+      { title: 'Siri and your privacy', content: 'In iOS 18, many Siri requests are processed on your device without being sent to Apple\'s servers. You can review and delete your Siri history at any time in Settings > Siri > Siri History.' },
+    ],
   },
   {
     slug: 'use-google-assistant-basics',
@@ -6377,27 +6350,13 @@ Your Siri requests are sent to Apple's servers to process. Siri does not store y
     thumbnailEmoji: '🎙️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Activate Google Assistant**
-Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe from the bottom corner.
-
-**Set up "Hey Google"**
-Open the Google app, tap your profile photo > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognize your voice.
-
-**Useful things to ask Google Assistant**
-- "Hey Google, call [name]"
-- "Hey Google, send a text to [name] saying I'll be late"
-- "Hey Google, set an alarm for 7am tomorrow"
-- "Hey Google, remind me to take my tablets at 8pm every day"
-- "Hey Google, what's the weather this weekend?"
-- "Hey Google, navigate to [address]"
-- "Hey Google, turn on torch" (turns on the flashlight)
-- "Hey Google, set a timer for 10 minutes"
-
-**If Google Assistant doesn't understand you**
-Speak slowly and clearly. Make sure your microphone isn't blocked. If it mishears a contact name, try saying the full name.
-
-**Turn off Google Assistant**
-If you find it activates by accident, go to Settings > Google > Account Services > Search, Assistant & Voice > Google Assistant > General and toggle it off.`
+    steps: [
+      { title: 'Activate Google Assistant', content: 'Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe up from the bottom corner. Wait for the colored dots to appear before speaking.' },
+      { title: 'Set up "Hey Google" voice activation', content: 'Open the Google app, tap your profile photo in the top right > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognize your voice. Once done, you can activate Google Assistant hands-free from anywhere.', tip: 'Google\'s guide to setting up Assistant is at support.google.com/assistant/answer/7172657' },
+      { title: 'Try these voice commands', content: 'Some useful things to ask: "Hey Google, call [name]" — "Hey Google, send a text to [name] saying I\'ll be late" — "Hey Google, set an alarm for 7am tomorrow" — "Hey Google, remind me to take my medication at 8pm every day" — "Hey Google, what\'s the weather this weekend?" — "Hey Google, navigate to [address]" — "Hey Google, turn on flashlight" — "Hey Google, set a timer for 10 minutes."' },
+      { title: 'If Google Assistant doesn\'t understand you', content: 'Speak slowly and clearly. Make sure your microphone is not blocked by your hand or a case. If it mishears a contact name, try saying the full name. You can also type your request — tap the keyboard icon in the Google Assistant window.' },
+      { title: 'Turn off Google Assistant if needed', content: 'If you find it activates by accident, go to Settings > Google > Account Services > Search, Assistant & Voice > Google Assistant > General and toggle it off. You can always turn it back on the same way.' },
+    ],
   },
 
   // ═══════════════════════════════════════════
@@ -6451,7 +6410,10 @@ When someone sends you a friend request, a red number appears on the people icon
 To see all your Facebook friends, go to your profile and click "Friends." From here you can also "Unfriend" someone by clicking the three dots next to their name — they won't be notified.
 
 **People you may know**
-Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognize someone.`
+Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognize someone.
+
+**Official help**
+Facebook's help center for adding friends is at facebook.com/help/336320879782850. For a video guide to using Facebook, AARP has free tutorials at aarp.org/home-family/personal-technology/info-2021/facebook-guide.html.`
   },
   {
     slug: 'post-photo-on-facebook',
@@ -7222,7 +7184,7 @@ Look for "English [CC]" or "English [SDH]" — these include descriptions of sou
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     body: `**Windows Security is built in and free**
-Windows 10 and 11 include Windows Security (formerly Windows Defender), a free antivirus programme that runs automatically in the background. You don't need to pay for separate antivirus software.
+Windows 11 includes Windows Security (formerly Windows Defender), a free antivirus program that runs automatically in the background. You don't need to pay for separate antivirus software. Note: Windows 10 reached end of support on October 14, 2025 — if you are still on Windows 10, upgrading to Windows 11 is strongly recommended for continued security updates.
 
 **Run a quick scan**
 Click Start, search for "Windows Security," and open it. Click "Virus & threat protection." Click "Quick scan." Windows will scan the most common locations where viruses hide — this takes 1-5 minutes.
@@ -7238,10 +7200,13 @@ Windows Security updates its threat database automatically via Windows Update. M
 
 **Signs your PC might have a virus**
 - Running noticeably slower than usual
-- Unexpected pop-up adverts
+- Unexpected pop-up ads appearing
 - Browser homepage changed without you doing it
-- New programmes appearing you didn't install
-- Antivirus has been disabled`
+- New programs appearing you didn't install
+- Antivirus has been disabled
+
+**Official help**
+Microsoft's guide to running Windows Security scans is at support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39574f1fd. For a video walkthrough, watch "How to Run a Virus Scan on Windows 11" on YouTube — search that phrase to find Microsoft's official tutorial.`
   },
   {
     slug: 'clear-browser-cache-windows',
@@ -7274,8 +7239,11 @@ History menu > Clear History. Choose "all history" from the dropdown. Click "Cle
 - You'll be logged out of most websites — have your passwords ready
 - Pages that weren't loading correctly should now load fresh
 
-**Tip: Use InPrivate/Incognito mode**
-Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.`
+**Quick Tip: Use InPrivate/Incognito mode**
+Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.
+
+**Official help**
+Google's guide for clearing Chrome data is at support.google.com/chrome/answer/2392709. Microsoft's Edge guide is at support.microsoft.com/en-us/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943. For a video tutorial, search "How to clear browser cache Chrome" on YouTube.`
   },
   {
     slug: 'screenshot-windows-quick',
@@ -7295,7 +7263,7 @@ Press Win+Shift+S. Your screen will dim and a small toolbar appears at the top. 
 Press the PrtSc (Print Screen) key on your keyboard. This copies the entire screen to your clipboard. Open Paint (search in Start), press Ctrl+V to paste, then Ctrl+S to save.
 
 **Method 3: Screenshot of just one window**
-Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another programme.
+Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another program.
 
 **Method 4: Win+PrtSc (auto-save)**
 Press the Windows key and PrtSc at the same time. The screen will flash briefly. The screenshot is automatically saved to: Pictures > Screenshots folder.
@@ -7324,7 +7292,7 @@ A zip file is a "container" that holds multiple files compressed into a smaller 
 1. Open File Explorer and navigate to the files or folder you want to compress
 2. Select the files you want (hold Ctrl and click each one, or Ctrl+A for all)
 3. Right-click the selected files
-4. Choose "Send to" > "Compressed (zipped) folder" (Windows 10) or "Compress to ZIP file" (Windows 11)
+4. Choose "Compress to ZIP file" (Windows 11) — on older Windows 10 systems this shows as "Send to" > "Compressed (zipped) folder"
 5. A new .zip file appears in the same folder. Rename it something descriptive.
 
 **Extract (unzip) a zip file**
@@ -7526,6 +7494,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // ═══════════════════════════════════════════
   // SAFETY GUIDES — NEW ADDITIONS
   // ═══════════════════════════════════════════
+  // Social: "Your password alone isn't enough anymore. Here's the free fix."
+  // Social: "One 5-minute change stops most account break-ins cold. Are you protected?"
+  // Social: "Turn this on today: the account security setting most people skip."
+  // Newsletter: "Most account break-ins happen because of a stolen password — and two-factor authentication stops them cold. It takes about five minutes to turn on for your email, Google, and banking accounts, and it's completely free. Here's exactly how to do it."
   {
     slug: 'two-factor-authentication',
     title: 'How to Set Up Two-Factor Authentication (2FA)',
@@ -8164,6 +8136,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // BATCH 3: SAFETY GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
+  // Social: "Scammers can now clone your family's voices using AI. Here's the one habit that protects you."
+  // Social: "If you get a call from a 'family member' asking for money urgently — hang up and call them back. Here's why."
+  // Social: "Before you send emergency money to a family member in trouble, do this first. It takes 10 seconds."
+  // Newsletter: "AI voice scams are the fastest-growing fraud type right now — scammers clone a loved one's voice from social media and call you in a fake emergency. The good news: one simple habit stops this scam every time. Read our guide to learn what it is and share it with someone you care about."
   {
     slug: 'ai-voice-scam-detection',
     title: 'AI Voice Scams: How to Spot a Fake Call from a "Family Member"',
@@ -8274,6 +8250,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'If you think you are being scammed', content: 'Stop all contact immediately. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
     ]
   },
+  // Social: "Microsoft will NEVER call you to say your computer has a virus. If someone does — hang up."
+  // Social: "Got a scary pop-up saying your computer is infected and to call a number? Here's what's really going on."
+  // Social: "Tech support scammers target seniors the most. Share this with someone who needs to see it."
+  // Newsletter: "Thousands of Americans lose money every month to fake tech support calls and pop-ups. Scammers pose as Microsoft or Apple, claim your computer has a virus, and ask for remote access or payment. Learn the three telltale signs — and what to do if you already let one in."
   {
     slug: 'tech-support-scam-guide',
     title: 'How to Recognize and Avoid Tech Support Scams',
@@ -8292,6 +8272,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/book or call a trusted local computer repair shop. Never trust unsolicited callers.' },
     ]
   },
+  // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
+  // Social: "USPS, FedEx, and UPS will never text you asking for a credit card. If a delivery text does — it's a scam."
+  // Social: "Millions of Americans get this text every week. Most don't know it's fake until it's too late."
+  // Newsletter: "Fake delivery notification texts are one of the most common scams right now — and they're getting harder to spot. Before you click any link about a 'missed package,' take 10 seconds to verify. Our guide shows you exactly how to tell the real ones from the fakes."
   {
     slug: 'package-delivery-scams',
     title: 'Fake Delivery Notification Scams: How to Spot Them',
@@ -10008,7 +9992,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // Source: Apple iCloud Advanced Data Protection (scraped)
   { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'What it does', content: 'Advanced Data Protection encrypts the majority of your iCloud data — Backups, Photos, Notes, and more — with end-to-end encryption. Not even Apple can access your data.' },
-    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2+ or macOS 13.1+. You must set up at least one recovery method first.' },
+    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia 15). You must set up at least one recovery method first.' },
     { title: 'Set up recovery', content: 'Before enabling, set up either a Recovery Contact (trusted person who can help you regain access) or a Recovery Key (a 28-character code you store securely). This is essential — if you lose access, Apple cannot help.' },
     { title: 'Enable on iPhone/iPad', content: 'Settings > tap your name > iCloud > scroll down > Advanced Data Protection > Turn on Advanced Data Protection. Follow the prompts to verify your recovery methods.' },
     { title: 'Enable on Mac', content: 'Apple Menu > System Settings > click your name > iCloud > Advanced Data Protection > Turn On. Follow the on-screen instructions.' },
@@ -10496,7 +10480,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
   { slug: 'windows-backup-guide', title: 'How to Back Up Your Windows Computer', excerpt: 'Protect your files, photos, and documents by setting up automatic backups on Windows.', category: 'windows-guides', tags: ['windows', 'backup', 'files', 'onedrive', 'recovery'], readTime: '8 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Why backups matter', content: 'Hard drives fail, computers get stolen, and ransomware can lock your files. Regular backups mean you never lose important documents, photos, or memories. Set it up once, and it works automatically.' },
-    { title: 'OneDrive backup (easiest)', content: 'Windows 10/11 includes OneDrive. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.' },
+    { title: 'OneDrive backup (easiest)', content: 'Windows 11 (and Windows 10) includes OneDrive built in. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.' },
     { title: 'How OneDrive works', content: 'Files in your backed-up folders automatically sync to Microsoft\'s cloud. Access them from any device at onedrive.com. 5 GB free storage; Microsoft 365 includes 1 TB ($6.99/month).' },
     { title: 'External drive backup', content: 'Connect an external USB hard drive ($40-80 for 1-2 TB). Go to Settings > System > Storage > Advanced Storage Settings > Backup Options > Back Up Using File History. Select the drive and turn on.' },
     { title: 'File History', content: 'File History automatically saves copies of your files every hour. If you accidentally delete or change a file, right-click it > Properties > Previous Versions to restore an older copy.' },
@@ -10744,7 +10728,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Troubleshooting', content: 'If connection drops: toggle Bluetooth off and on. Restart your hearing aids (open/close battery door). Remove and re-pair the devices. Keep your phone within 30 feet of your hearing aids.' },
   ] },
   { slug: 'medication-management-digital', title: 'Digital Tools for Managing Medications', excerpt: 'Never miss a dose again with apps, smart pill dispensers, and pharmacy delivery services.', category: 'health-tech', tags: ['medication', 'health', 'apps', 'pharmacy', 'seniors'], readTime: '7 min', thumbnailEmoji: '💊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Set up phone reminders', content: 'The simplest approach: iPhone users can track medications in the Health app (iOS 16+). Open Health > Browse > Medications > Add Medication. It sends reminders and tracks whether you took each dose.' },
+    { title: 'Set up phone reminders', content: 'The simplest approach: iPhone users can track medications in the Health app (iOS 16 and later, including iOS 18). Open Health > Browse > Medications > Add Medication. It sends reminders and tracks whether you took each dose.' },
     { title: 'Medisafe app', content: 'Free app for iOS and Android. Add all your medications with dosages and schedules. Get reminders with a friendly chime. Log when you take each dose. See your medication history.' },
     { title: 'Share with caregivers', content: 'Most medication apps let you connect with family members. They get notified if you miss a dose. This gives peace of mind to both you and your loved ones, especially for complex medication schedules.' },
     { title: 'Prescription delivery services', content: 'Many pharmacies deliver for free: CVS, Walgreens, Walmart, and Amazon Pharmacy. Mark Cuban\'s Cost Plus Drugs (costplusdrugs.com) offers medications at near-wholesale prices with home delivery.' },
@@ -11477,7 +11461,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
   { slug: 'iphone-siri-shortcuts-guide', title: 'iPhone Shortcuts: Automate Your Daily Tasks', excerpt: 'Create powerful automations on your iPhone that save time on repetitive tasks.', category: 'phone-guides', tags: ['iphone', 'shortcuts', 'automation', 'siri', 'productivity'], readTime: '7 min', thumbnailEmoji: '⚡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What are Shortcuts?', content: 'Shortcuts let you chain multiple iPhone actions into one tap or voice command. Instead of opening 3 apps and tapping 10 times, a shortcut does it all instantly.' },
-    { title: 'Download the Shortcuts app', content: 'Shortcuts comes pre-installed on iOS 16+. Open it and browse the Gallery for hundreds of pre-made shortcuts: "Calculate Tip," "Shazam Shortcut," "Water Reminder," and more.' },
+    { title: 'Download the Shortcuts app', content: 'Shortcuts comes pre-installed on iOS 16 and later (including iOS 18). Open it and browse the Gallery for hundreds of pre-made shortcuts: "Calculate Tip," "Shazam Shortcut," "Water Reminder," and more.' },
     { title: 'Create a morning routine', content: 'New Shortcut: "Get weather forecast" > "Read text aloud" > "Open Calendar" > "Play playlist." Name it "Good Morning." Say "Hey Siri, good morning" to run your entire morning briefing.' },
     { title: 'Location-based automations', content: 'Automations tab > Create Personal Automation > Arrive/Leave. When you arrive home: turn on smart lights, play music. When you leave work: start navigation home. These run automatically.' },
     { title: 'Time-based automations', content: 'Create automations that run at specific times. Example: at 10 PM, activate Night mode + Do Not Disturb + dim lights. At 7 AM, disable Do Not Disturb and show your calendar.' },
@@ -12840,7 +12824,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       },
       {
         title: 'Find and share your Wi-Fi password manually',
-        content: 'If the automatic methods don\'t work, you can look up your password. On iPhone (iOS 16 or later): go to Settings > Wi-Fi, tap the (i) next to your network, then tap "Password." On Android: go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the share icon — your password will appear on screen.',
+        content: 'If the automatic methods don\'t work, you can look up your password. On iPhone (iOS 16 or later, including iOS 18): go to Settings > Wi-Fi, tap the (i) next to your network, then tap "Password." On Android (Android 10 and later): go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the share icon — your password will appear on screen.',
         warning: 'Your Wi-Fi password gives guests full access to your home network. Change it after guests leave if security is a concern — especially for short-term rentals.',
       },
       {
@@ -13048,5 +13032,6 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
 
 import { guidesBatch2 } from './guides-batch-2';
 import { guidesBatch3 } from './guides-batch-3';
+import { guidesBatch4 } from './guides-batch-4';
 
-export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3];
+export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3, ...guidesBatch4];
