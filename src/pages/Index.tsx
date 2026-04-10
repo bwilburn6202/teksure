@@ -199,30 +199,30 @@ const Index = () => {
       <Navbar />
 
       {/* ── Hero ─────────────────────────────────────────── */}
-      <section className="relative overflow-hidden hero-glow grain">
-        <div className="container relative pt-20 pb-16 md:pt-32 md:pb-28 z-10">
+      <section className="relative overflow-hidden hero-glow">
+        <div className="container relative pt-20 pb-16 md:pt-28 md:pb-24">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="sr-only">TekSure — American Tech Support Company | Free Help for Beginners &amp; Seniors</h1>
 
             {/* Main heading */}
-            <div className="mb-6 stagger">
-              <h2 className="display-heading text-4xl md:text-6xl lg:text-7xl mb-4">
+            <div className="mb-8 stagger">
+              <h2 className="display-heading text-4xl md:text-6xl lg:text-7xl mb-5">
                 Tech help that{' '}
                 <span className="gradient-text">speaks your language</span>.
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto leading-relaxed">
-                Free step-by-step guides, tools, and real human support — all in plain English.
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
+                Free step-by-step guides, tools, and real human support — all in plain English. No jargon, no rush, no judgment.
               </p>
             </div>
 
             {/* Search bar */}
             <form onSubmit={handleSearch} className="max-w-xl mx-auto mb-8">
               <div className="relative group">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground/60" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground/50" />
                 <Input
                   placeholder="What do you need help with?"
                   aria-label="Search for tech help"
-                  className="pl-12 pr-24 h-14 bg-card shadow-lg shadow-foreground/[0.03] rounded-2xl text-base border-border/60 focus:border-primary/40 focus:shadow-xl focus:shadow-primary/[0.06] transition-all duration-300"
+                  className="pl-12 pr-24 h-14 bg-card shadow-md rounded-2xl text-base border-border focus:border-primary/40 focus:shadow-lg focus:shadow-primary/[0.08] transition-all duration-300"
                   value={search}
                   onChange={e => setSearch(e.target.value)}
                 />
@@ -242,7 +242,7 @@ const Index = () => {
                 <button
                   key={pill.query}
                   onClick={() => navigate(`/guides?q=${encodeURIComponent(pill.query)}`)}
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-card border border-border/60 text-sm font-medium text-muted-foreground hover:text-foreground hover:border-primary/30 hover:shadow-sm transition-all duration-200"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-card border border-border text-sm font-medium text-muted-foreground hover:text-foreground hover:border-primary/30 hover:shadow-sm shadow-sm transition-all duration-200"
                 >
                   <span aria-hidden="true">{pill.icon}</span>
                   {pill.label}
@@ -252,31 +252,53 @@ const Index = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-              <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-7 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-base">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-7 shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 text-base">
                 <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-7 text-base border-border/60 hover:border-primary/30">
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-7 text-base border-border hover:border-primary/30">
                 <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
               </Button>
             </div>
 
-            {/* Trust line */}
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><Users className="h-4 w-4 text-primary/70" /> <strong className="text-foreground">10,000+</strong> people helped</span>
-              <span className="hidden sm:inline text-border">|</span>
-              <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-primary/70" /> <strong className="text-foreground">4.9/5</strong> average rating</span>
-              <span className="hidden sm:inline text-border">|</span>
-              <span className="flex items-center gap-1.5"><Zap className="h-4 w-4 text-primary/70" /> <strong className="text-foreground">{guides.length}+</strong> free guides</span>
+            {/* Trust stats */}
+            <div className="inline-flex flex-wrap items-center justify-center gap-6 md:gap-8 text-sm bg-card rounded-2xl border border-border px-6 py-4 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Users className="h-4 w-4 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-foreground leading-tight">10,000+</p>
+                  <p className="text-xs text-muted-foreground">people helped</p>
+                </div>
+              </div>
+              <div className="w-px h-8 bg-border hidden sm:block" />
+              <div className="flex items-center gap-2">
+                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Star className="h-4 w-4 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-foreground leading-tight">4.9/5</p>
+                  <p className="text-xs text-muted-foreground">average rating</p>
+                </div>
+              </div>
+              <div className="w-px h-8 bg-border hidden sm:block" />
+              <div className="flex items-center gap-2">
+                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Zap className="h-4 w-4 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-foreground leading-tight">{guides.length}+</p>
+                  <p className="text-xs text-muted-foreground">free guides</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section divider */}
-      <div className="section-divider" />
-
       {/* ── Quick Solutions ──────────────────────────────── */}
-      <section className="container py-20 md:py-28">
+      <section className="py-20 md:py-28 border-y border-border/50">
+        <div className="container">
         <RevealSection>
           <div className="text-center mb-12">
             <h2 className="display-heading text-3xl md:text-4xl mb-3">Quick solutions, right now</h2>
@@ -317,13 +339,12 @@ const Index = () => {
             </div>
           </Link>
         </RevealSection>
+        </div>
       </section>
 
-      {/* Section divider */}
-      <div className="section-divider" />
-
       {/* ── Browse by Category ──────────────────────────── */}
-      <section className="container py-20 md:py-28">
+      <section className="py-20 md:py-28 bg-muted/40">
+        <div className="container">
         <RevealSection>
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -368,10 +389,8 @@ const Index = () => {
             <Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link>
           </Button>
         </div>
+        </div>
       </section>
-
-      {/* Section divider */}
-      <div className="section-divider" />
 
       {/* ── How It Works ────────────────────────────────── */}
       <section className="container py-20 md:py-28">
@@ -406,11 +425,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Section divider */}
-      <div className="section-divider" />
-
       {/* ── Popular Guides ──────────────────────────────── */}
-      <section className="container py-20 md:py-28">
+      <section className="py-20 md:py-28 bg-muted/40">
+        <div className="container">
         <RevealSection>
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -445,6 +462,7 @@ const Index = () => {
           <Button asChild variant="outline" className="gap-1.5 rounded-xl">
             <Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link>
           </Button>
+        </div>
         </div>
       </section>
 
