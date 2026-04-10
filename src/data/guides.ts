@@ -2508,7 +2508,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Increase text size everywhere', content: 'iPhone: Settings → Display. Mac: System Settings → Accessibility → Display. Windows: Settings → Accessibility → Text Size.' },
       { title: 'Use dark mode', content: 'Dark mode reduces eye strain in low light. Available on iPhone, Mac, Windows, and most apps.' },
-      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 17 and later), Mac (macOS Sonoma and later), Android, and Windows 11.' },
+      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 18 and later), Mac (macOS Sonoma and later), Android, and Windows 11.' },
       { title: 'Magnification tools', content: 'iPhone: triple-click home/side button. Mac: Cmd+Option+= to zoom. Windows: Win+Plus to magnify.', tip: 'For the full iPhone accessibility guide, visit support.apple.com/en-us/guide/iphone/iph3e2e1fb0/ios. For Android accessibility, visit support.google.com/accessibility/android/answer/6006972. AARP also has free tech help articles at aarp.org/personal-technology.' },
     ]
   },
@@ -6332,7 +6332,7 @@ For Google's complete guide to the Play Store, visit support.google.com/googlepl
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Activate Siri', content: 'On iOS 17 and later, say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking. If your iPhone is still on iOS 16, say "Hey Siri" instead.' },
+      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), just say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
       { title: 'Enable hands-free Siri', content: 'Go to Settings > Siri > Talk to Siri and select "Always On." Now you can activate Siri hands-free at any time just by saying "Siri" without picking up your phone.', tip: 'For Apple\'s complete Siri guide, visit support.apple.com/guide/iphone/use-siri-iph83aad8922/ios' },
       { title: 'Try these voice commands', content: 'Some useful things to ask: "Siri, call [name]" — "Siri, text [name] I\'m on my way" — "Siri, set an alarm for 7am" — "Siri, remind me to take my medication at 8pm" — "Siri, what\'s the weather today?" — "Siri, open Maps" — "Siri, turn on Bluetooth." Speak naturally and Siri will understand you.' },
       { title: 'If Siri doesn\'t understand you', content: 'Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing before saying anything else. If Siri keeps misunderstanding, try rephrasing your request or check that your microphone is not blocked by a case.' },
@@ -7494,6 +7494,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // ═══════════════════════════════════════════
   // SAFETY GUIDES — NEW ADDITIONS
   // ═══════════════════════════════════════════
+  // Social: "Your password alone isn't enough anymore. Here's the free fix."
+  // Social: "One 5-minute change stops most account break-ins cold. Are you protected?"
+  // Social: "Turn this on today: the account security setting most people skip."
+  // Newsletter: "Most account break-ins happen because of a stolen password — and two-factor authentication stops them cold. It takes about five minutes to turn on for your email, Google, and banking accounts, and it's completely free. Here's exactly how to do it."
   {
     slug: 'two-factor-authentication',
     title: 'How to Set Up Two-Factor Authentication (2FA)',
@@ -8132,6 +8136,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // BATCH 3: SAFETY GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
+  // Social: "Scammers can now clone your family's voices using AI. Here's the one habit that protects you."
+  // Social: "If you get a call from a 'family member' asking for money urgently — hang up and call them back. Here's why."
+  // Social: "Before you send emergency money to a family member in trouble, do this first. It takes 10 seconds."
+  // Newsletter: "AI voice scams are the fastest-growing fraud type right now — scammers clone a loved one's voice from social media and call you in a fake emergency. The good news: one simple habit stops this scam every time. Read our guide to learn what it is and share it with someone you care about."
   {
     slug: 'ai-voice-scam-detection',
     title: 'AI Voice Scams: How to Spot a Fake Call from a "Family Member"',
@@ -8242,6 +8250,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'If you think you are being scammed', content: 'Stop all contact immediately. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
     ]
   },
+  // Social: "Microsoft will NEVER call you to say your computer has a virus. If someone does — hang up."
+  // Social: "Got a scary pop-up saying your computer is infected and to call a number? Here's what's really going on."
+  // Social: "Tech support scammers target seniors the most. Share this with someone who needs to see it."
+  // Newsletter: "Thousands of Americans lose money every month to fake tech support calls and pop-ups. Scammers pose as Microsoft or Apple, claim your computer has a virus, and ask for remote access or payment. Learn the three telltale signs — and what to do if you already let one in."
   {
     slug: 'tech-support-scam-guide',
     title: 'How to Recognize and Avoid Tech Support Scams',
@@ -8260,6 +8272,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/book or call a trusted local computer repair shop. Never trust unsolicited callers.' },
     ]
   },
+  // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
+  // Social: "USPS, FedEx, and UPS will never text you asking for a credit card. If a delivery text does — it's a scam."
+  // Social: "Millions of Americans get this text every week. Most don't know it's fake until it's too late."
+  // Newsletter: "Fake delivery notification texts are one of the most common scams right now — and they're getting harder to spot. Before you click any link about a 'missed package,' take 10 seconds to verify. Our guide shows you exactly how to tell the real ones from the fakes."
   {
     slug: 'package-delivery-scams',
     title: 'Fake Delivery Notification Scams: How to Spot Them',
