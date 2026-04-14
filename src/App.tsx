@@ -125,6 +125,8 @@ const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
@@ -309,6 +311,9 @@ const AppContent = () => {
           <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
+          <Route path="/tools/doc-browser" element={<DocBrowser />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
+          <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/memory" element={<MemoryDashboard />} />
