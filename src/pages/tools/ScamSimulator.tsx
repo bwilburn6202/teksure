@@ -202,7 +202,7 @@ const scenarios: Scenario[] = [
 
 function EmailCard({ scenario }: { scenario: Scenario }) {
   return (
-    <Card className="border-2 border-gray-200 bg-white overflow-hidden">
+    <Card className="border-2 border-border bg-card overflow-hidden">
       {/* email header */}
       <div className="bg-gray-50 border-b px-5 py-4 space-y-1">
         <p className="text-sm text-gray-500 font-medium">From:</p>
@@ -233,7 +233,7 @@ function TextBubble({ scenario }: { scenario: Scenario }) {
 
 function PhoneTranscript({ scenario }: { scenario: Scenario }) {
   return (
-    <Card className="border-2 border-gray-200 bg-white overflow-hidden">
+    <Card className="border-2 border-border bg-card overflow-hidden">
       <div className="bg-green-50 border-b px-5 py-4 flex items-center gap-3">
         <Phone className="w-5 h-5 text-green-700" />
         <div>

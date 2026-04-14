@@ -1,6 +1,8 @@
 const STORAGE_KEY = 'teksure-guide-progress';
+const isServer = typeof window === 'undefined';
 
 export function getCompletedGuides(): Set<string> {
+  if (isServer) return new Set();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return new Set();
@@ -10,12 +12,21 @@ export function getCompletedGuides(): Set<string> {
   }
 }
 
-export function markGuideCompleted(slug: string): void {
+export function markGuideCompleted(slug: string, userId?: string): void {
   const completed = getCompletedGuides();
   completed.add(slug);
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...completed]));
   // Dispatch a custom event so components can react without prop drilling
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+
+  // If a logged-in user ID is provided, sync progress to Supabase
+  if (userId) {
+    import('./syncProgress').then(({ syncProgressToSupabase }) => {
+      syncProgressToSupabase(userId);
+    }).catch(() => {
+      // Silent fail if sync module unavailable
+    });
+  }
 }
 
 export function isGuideCompleted(slug: string): boolean {
@@ -25,6 +36,59 @@ export function isGuideCompleted(slug: string): boolean {
 export function clearProgress(): void {
   localStorage.removeItem(STORAGE_KEY);
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+}
+
+const STEP_KEY = 'teksure-step-progress';
+const RECENT_KEY = 'teksure-recent-guides';
+
+export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    const data: Record<string, { step: number; totalSteps: number }> = raw ? JSON.parse(raw) : {};
+    data[slug] = { step, totalSteps };
+    localStorage.setItem(STEP_KEY, JSON.stringify(data));
+    window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+  } catch { /* ignore */ }
+}
+
+export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    if (!raw) return [];
+    const data: Record<string, { step: number; totalSteps: number }> = JSON.parse(raw);
+    const completed = getCompletedGuides();
+    return Object.entries(data)
+      .filter(([slug]) => !completed.has(slug))
+      .map(([slug, { step, totalSteps }]) => ({
+        slug,
+        step,
+        totalSteps,
+        pct: totalSteps > 0 ? Math.round((step / totalSteps) * 100) : 0,
+      }))
+      .sort((a, b) => b.pct - a.pct);
+  } catch {
+    return [];
+  }
+}
+
+export function recordGuideView(slug: string): void {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    const recent: string[] = raw ? JSON.parse(raw) : [];
+    const filtered = recent.filter(s => s !== slug);
+    filtered.unshift(slug);
+    localStorage.setItem(RECENT_KEY, JSON.stringify(filtered.slice(0, 20)));
+    window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+  } catch { /* ignore */ }
+}
+
+export function getRecentGuides(): string[] {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
 }
 
 export function getProgressCount(totalSlugs?: string[]): { completed: number; total: number; pct: number } {
@@ -41,14 +105,16 @@ export function getInProgressGuides(): { slug: string; step: number; totalSteps:
   try {
     const raw = localStorage.getItem('teksure_step_progress');
     const map = raw ? JSON.parse(raw) : {};
-    const items = Object.entries(map).map(([slug, v]: any) => {
-      const step = typeof v.step === 'number' ? v.step : 0;
-      const total = typeof v.totalSteps === 'number' ? v.totalSteps : (typeof v.total_steps === 'number' ? v.total_steps : 0);
-      const pct = total > 0 ? Math.round(((step + 1) / total) * 100) : 0;
-      return { slug, step, totalSteps: total, pct };
-    });
-    // sort by pct desc (most progressed first)
-    return items.sort((a, b) => b.pct - a.pct);
+    const completed = getCompletedGuides();
+    return Object.entries(map)
+      .filter(([slug]) => !completed.has(slug))
+      .map(([slug, v]: [string, any]) => {
+        const step = typeof v.step === 'number' ? v.step : 0;
+        const total = typeof v.totalSteps === 'number' ? v.totalSteps : (typeof v.total_steps === 'number' ? v.total_steps : 0);
+        const pct = total > 0 ? Math.round(((step + 1) / total) * 100) : 0;
+        return { slug, step, totalSteps: total, pct };
+      })
+      .sort((a, b) => b.pct - a.pct);
   } catch {
     return [];
   }
@@ -63,37 +129,57 @@ export function getRecentGuides(): string[] {
   }
 }
 
-// Record a guide view in local storage for quick UX features
-export function recordGuideView(slug: string) {
+export function recordGuideView(slug: string): void {
   try {
     const key = 'teksure_guide_views';
     const raw = localStorage.getItem(key);
     const arr: string[] = raw ? JSON.parse(raw) : [];
     const next = [slug, ...arr.filter(s => s !== slug)].slice(0, 50);
     localStorage.setItem(key, JSON.stringify(next));
-  } catch {
-    // ignore storage issues
-  }
+  } catch { /* ignore */ }
 }
 
-// Phase 3: Persist step progress to DB when user is authenticated
-export async function saveStepProgressToDB(slug: string, userId: string, step: number, totalSteps: number) {
-  try {
-    const { supabase } = await import('@/integrations/supabase/client');
-    await (supabase as any).from('guide_progress').upsert({ slug, user_id: userId, step, total_steps: totalSteps, updated_at: new Date().toISOString() });
-  } catch {
-    // swallow DB errors to avoid affecting UX; fallback to local storage only
-  }
-}
-
-export function saveStepProgress(slug: string, step: number, totalSteps: number) {
+export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
   try {
     const key = 'teksure_step_progress';
     const raw = localStorage.getItem(key);
     const map = raw ? JSON.parse(raw) : {};
     map[slug] = { step, totalSteps, updated_at: new Date().toISOString() };
     localStorage.setItem(key, JSON.stringify(map));
+  } catch { /* ignore */ }
+}
+
+// Persist step progress to DB when user is authenticated
+export async function saveStepProgressToDB(slug: string, userId: string, step: number, totalSteps: number): Promise<void> {
+  try {
+    const { supabase } = await import('@/integrations/supabase/client');
+    await (supabase as unknown as { from: (table: string) => { upsert: (data: Record<string, unknown>) => Promise<unknown> } })
+      .from('guide_progress')
+      .upsert({ 
+        slug, 
+        user_id: userId, 
+        step, 
+        total_steps: totalSteps, 
+        updated_at: new Date().toISOString() 
+      });
   } catch {
-    // ignore
+    // swallow DB errors to avoid affecting UX; fallback to local storage only
+  }
+}
+
+// Fetch per-user progress from DB for cross-device sync
+export async function getUserProgressFromDB(userId: string): Promise<{ slug: string; step: number; totalSteps: number; pct: number }[]> {
+  try {
+    const { supabase } = await import('@/integrations/supabase/client');
+    const { data, error } = await (supabase as any).from('guide_progress').select('slug, step, total_steps').eq('user_id', userId);
+    if (error || !data) return [];
+    return (data as any[]).map(r => {
+      const total = Number(r.total_steps) || 0;
+      const stepVal = Number(r.step) || 0;
+      const pct = total > 0 ? Math.round(((stepVal + 1) / total) * 100) : 0;
+      return { slug: String(r.slug), step: stepVal, totalSteps: total, pct };
+    });
+  } catch {
+    return [];
   }
 }

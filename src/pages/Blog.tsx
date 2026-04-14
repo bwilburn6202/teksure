@@ -291,8 +291,8 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
   return (
     <div
     >
-      <Card className={`rounded-2xl border border-border bg-card hover:border-border/60 transition-all ${featured ? 'col-span-full' : ''}`}>
-        <CardContent className={`p-6 ${featured ? 'md:flex md:gap-8' : ''}`}>
+      <div className={`glow-card ${featured ? 'col-span-full' : ''}`}>
+        <div className={`${featured ? 'md:flex md:gap-8' : ''}`}>
           {featured && <post.icon className="h-14 w-14 text-primary shrink-0 mb-4 md:mb-0" />}
           <div className="flex-1">
             <div className="flex items-center gap-2 flex-wrap mb-3">
@@ -317,8 +317,8 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
               Read article <ChevronRight className="h-4 w-4" />
             </Link>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }

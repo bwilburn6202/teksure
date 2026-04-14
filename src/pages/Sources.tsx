@@ -97,7 +97,7 @@ export default function Sources() {
                     className={`flex flex-col sm:flex-row sm:items-center gap-4 p-5 rounded-2xl border border-border ${source.accentColor}`}
                   >
                     {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-white dark:bg-gray-800 border border-border shadow-sm overflow-hidden">
+                    <div className="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-card border border-border shadow-sm overflow-hidden">
                       <img
                         src={source.logoUrl}
                         alt={`${source.name} logo`}

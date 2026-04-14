@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { guides, categoryLabels } from '@/data/guides';
 import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
 
@@ -101,6 +102,10 @@ const DeviceHub = () => {
         path="/device-hub"
       />
       <Navbar />
+
+      <div className="container pt-4">
+        <PageBreadcrumb segments={[{ label: 'Device Hub' }]} />
+      </div>
 
       {/* Header */}
       <section className="border-b border-border py-16 md:py-20">

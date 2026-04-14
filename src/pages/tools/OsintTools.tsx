@@ -35,7 +35,7 @@ function CategorySection({ category, searchTerm }: { category: OsintCategory; se
   if (searchTerm && filteredTools.length === 0) return null;
 
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden bg-white dark:bg-gray-900">
+    <div className="border border-border rounded-xl overflow-hidden bg-card">
       {/* Category Header */}
       <button
         onClick={() => setExpanded(!expanded)}
@@ -236,8 +236,35 @@ export default function OsintTools() {
                 className="underline font-medium hover:text-indigo-900 dark:hover:text-indigo-100"
               >
                 The Ultimate OSINT Collection
-              </a>{' '}
-              and the{' '}
+              </a>
+              ,{' '}
+              <a
+                href="https://start.me/p/0Pqbdg/osint-500-tools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium hover:text-indigo-900 dark:hover:text-indigo-100"
+              >
+                OSINT 500+ Tools
+              </a>
+              ,{' '}
+              <a
+                href="https://start.me/p/mweaYY/osint-resources"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium hover:text-indigo-900 dark:hover:text-indigo-100"
+              >
+                OSINT Resources
+              </a>
+              ,{' '}
+              <a
+                href="https://start.me/p/W1kDAj/geoint"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium hover:text-indigo-900 dark:hover:text-indigo-100"
+              >
+                GEOINT
+              </a>
+              , and the{' '}
               <a
                 href="https://github.com/rashidwassan/My-Ultimate-OSINT-Arsenal"
                 target="_blank"

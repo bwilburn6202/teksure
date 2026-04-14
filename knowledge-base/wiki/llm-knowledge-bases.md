@@ -1,14 +1,14 @@
 # LLM Knowledge Bases
 
-Using large language models to build, maintain, and query structured knowledge bases stored as plain markdown files. Pioneered publicly by Andrej Karpathy (April 2026), this approach replaces traditional note-taking apps and databases with a simple folder structure that an AI agent maintains autonomously.
+Using large language models to build, maintain, and query structured knowledge bases stored as plain markdown files. Popularized publicly by Andrej Karpathy (April 2026), this approach replaces scattered note apps with a simple folder structure that an AI agent can maintain.
 
 **Tags:** #ai-industry #workflow #content-strategy #tool
 
 ## Core Concept
 
-Instead of keeping notes scattered across apps, you dump raw sources into one folder and have an AI compile them into an organized wiki. The AI handles all organization, linking, summarization, and maintenance. You interact with the knowledge base by asking questions and filing answers back in.
+Put source material into `raw/`, let AI maintain `wiki/`, and store generated analyses in `outputs/`. The system improves through repeated use as long as updates are governed by a schema and periodic quality checks.
 
-## Architecture
+## Canonical Architecture
 
 ```
 project/
@@ -18,36 +18,43 @@ project/
   SCHEMA.md  → rules and structure the AI follows
 ```
 
+## Eight-Step Operating Workflow
+
+1. Create `raw/`, `wiki/`, and `outputs/`.
+2. Collect and dump source material in `raw/` without manually organizing first.
+3. Optionally automate collection from the web with browser automation tooling.
+4. Define behavior in one schema file (`SCHEMA.md`, `CLAUDE.md`, or `AGENTS.md`).
+5. Instruct the AI to compile `wiki/INDEX.md` first, then topic pages.
+6. Ask questions across the wiki and save high-value answers into `outputs/`.
+7. Feed validated outputs back into relevant wiki pages.
+8. Run recurring health checks to prevent contradiction and source drift.
+
 ## Key Principles
 
-1. **AI owns the wiki** — you rarely edit it directly
-2. **Schema file is the instruction manual** — tells the AI how to organize, link, and maintain content
-3. **Compounding loop** — every query and its output can be filed back, making the next query better (see [[compounding-knowledge-loop]])
-4. **No fancy tooling needed** — folders + markdown + AI agent. No database, no RAG at small scale (~100 articles / ~400K words)
-5. **Health checks prevent drift** — monthly LLM review catches contradictions, missing sources, and gaps
+1. **AI owns wiki maintenance** — humans review, steer, and validate.
+2. **Schema is mandatory** — clear rules prevent random structure changes.
+3. **Compounding loop** — the system gets better as validated outputs are folded back in (see [[compounding-knowledge-loop]]).
+4. **Flat files beat complexity at small and medium scale** — markdown and folders are enough for many workflows.
+5. **Quality checks are non-optional** — unverified outputs can compound errors over time.
 
-## Tools & Implementation
+## Tooling Notes
 
-- **Schema file:** CLAUDE.md / AGENTS.md in project root (see [[ai-content-pipeline-patterns]])
-- **Source collection:** Obsidian Web Clipper, agent-browser CLI (Vercel Labs, 26K+ GitHub stars, 82% fewer tokens than Playwright MCP)
-- **Frontend:** Any text editor — Obsidian, VS Code, terminal. The AI doesn't care.
-- **Compilation prompt:** "Read everything in raw/. Compile a wiki in wiki/ following SCHEMA.md rules. Create INDEX.md first, then one .md per topic."
+- **Schema file:** project-level `SCHEMA.md` (or equivalent instruction file)
+- **Collection options:** manual copy/paste, exports from note tools, automated browser capture
+- **Optional automation:** `agent-browser` CLI for dynamic page extraction workflows
+- **Compilation prompt pattern:** “Read everything in `raw/` and compile `wiki/` following `SCHEMA.md` rules.”
 
 ## TekSure Application
 
-This pattern directly maps to how TekSure can manage its content pipeline:
-
-| Karpathy Pattern | TekSure Equivalent |
-|------------------|-------------------|
-| raw/ sources | Competitor articles, trending topics, user feedback, research |
-| wiki/ articles | Content strategy docs, guide planning, audience insights |
-| outputs/ | Content briefs, gap analyses, weekly enrichment plans |
-| Health checks | Content freshness checks (Wednesday 8:41 AM task) |
-| Compounding loop | Guide stubs → published guides → ratings → improved guides |
+| Knowledge-Base Pattern | TekSure Equivalent |
+|------------------------|-------------------|
+| `raw/` sources | Competitor articles, trends, user feedback, research notes |
+| `wiki/` | Content strategy docs, guide planning, audience insights |
+| `outputs/` | Briefs, gap analyses, publishing recommendations |
+| Health checks | Existing content freshness and quality audits |
 
 ## Sources
-- [[raw/karpathy-llm-knowledge-bases-2026-04-04.md]]
-- [[raw/spisak-knowledge-base-implementation-2026-04-05.md]]
+- [[raw/spisak-knowledge-base-implementation-2026-04-06.md]]
 
 ## Related
 - [[ai-content-pipeline-patterns]]

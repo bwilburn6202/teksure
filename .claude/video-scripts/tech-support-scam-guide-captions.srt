@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:03,000
+If you ever get a call saying
+your computer has a virus —
+
+2
+00:00:03,000 --> 00:00:05,500
+hang up. Here's what's really going on.
+
+3
+00:00:05,500 --> 00:00:09,500
+This is a tech support scam —
+one of the most common ways
+
+4
+00:00:09,500 --> 00:00:12,500
+people lose money online.
+
+5
+00:00:12,500 --> 00:00:16,000
+The truth: Microsoft, Apple, and Google
+will NEVER call you
+
+6
+00:00:16,000 --> 00:00:19,500
+out of the blue to say
+your computer has a problem. Never.
+
+7
+00:00:19,500 --> 00:00:23,500
+What about scary pop-ups?
+If a website says
+
+8
+00:00:23,500 --> 00:00:27,000
+"YOUR COMPUTER IS INFECTED —
+CALL THIS NUMBER" — that's fake.
+
+9
+00:00:27,000 --> 00:00:30,500
+Real virus warnings come from
+your antivirus software,
+
+10
+00:00:30,500 --> 00:00:33,500
+not from a website.
+
+11
+00:00:33,500 --> 00:00:37,000
+To close a fake pop-up:
+press Alt + F4 on Windows,
+
+12
+00:00:37,000 --> 00:00:40,000
+or Command + Q on a Mac.
+
+13
+00:00:40,000 --> 00:00:43,500
+Scammers want three things:
+remote access to your computer,
+
+14
+00:00:43,500 --> 00:00:47,000
+your credit card number,
+and your personal information.
+
+15
+00:00:47,000 --> 00:00:50,500
+If you already let someone in:
+disconnect from the internet now.
+
+16
+00:00:50,500 --> 00:00:54,000
+Turn off your WiFi,
+then run a full security scan.
+
+17
+00:00:54,000 --> 00:00:57,500
+Change your passwords from
+a different device.
+
+18
+00:00:57,500 --> 00:01:01,000
+Call your bank if you shared
+any payment information.
+
+19
+00:01:01,000 --> 00:01:04,500
+No real company will ever call you
+about a virus.
+
+20
+00:01:04,500 --> 00:01:08,000
+If someone does — hang up.
+Never give them access.
+
+21
+00:01:08,000 --> 00:01:10,500
+For plain-English guides,
+visit TekSure.com.
+
+22
+00:01:10,500 --> 00:01:12,000
+[END]

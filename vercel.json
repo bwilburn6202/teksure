@@ -26,6 +26,8 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!api/.*).*)", "destination": "/index.html" }
-  ]
+    { "source": "/((?!api/|assets/|favicon|manifest|sw\\.js|sitemap|robots).*)", "destination": "/api/ssr" }
+  ],
+  "buildCommand": "npm run build:ssr",
+  "outputDirectory": "dist/client"
 }

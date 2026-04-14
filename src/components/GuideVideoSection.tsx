@@ -28,6 +28,7 @@ interface GuideVideoRow {
 const SESSION_KEY = 'teksure_selected_os';
 
 function getSessionOS(): OSType | null {
+  if (typeof window === 'undefined') return null;
   try {
     return (sessionStorage.getItem(SESSION_KEY) as OSType) ?? null;
   } catch {
@@ -36,6 +37,7 @@ function getSessionOS(): OSType | null {
 }
 
 function setSessionOS(os: OSType) {
+  if (typeof window === 'undefined') return;
   try { sessionStorage.setItem(SESSION_KEY, os); } catch { /* ignore */ }
 }
 

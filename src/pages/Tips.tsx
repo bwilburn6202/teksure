@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,44 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
-  summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
-  full: 'Scam text messages (sometimes called "smishing") are one of the fastest-growing threats right now. They pretend to be from your bank, a delivery service, or the IRS — and they want you to tap a link or call a number. The safest rule: never tap a link in a text from someone you do not know. On iPhone: Open the spam message, tap the sender\'s number at the top, tap the info (i) button, then scroll down and tap "Block this Caller." You can also turn on a built-in spam filter by going to Settings, then Messages, and switching on "Filter Unknown Senders" — this moves texts from people not in your contacts into a separate list so they will not bother you. On Android: Open the message, tap the three-dot menu in the top right corner, and choose "Block" or "Report spam." You can also open the Messages app, go to Settings, then Spam Protection, and make sure it is turned on. To report a scam text to your carrier, forward it to 7726 (which spells SPAM on your keypad) — this works on AT&T, T-Mobile, and Verizon. If you already tapped a suspicious link, change any passwords you may have entered and keep an eye on your bank statements for unusual charges.',
-  category: 'Safety',
-  icon: Ban,
+  title: 'Do a Free Security Checkup on Your Google Account in 5 Minutes',
+  summary: 'Google offers a free Security Checkup that shows every device signed in to your account, flags weak passwords, and checks for suspicious activity — all in one place, no tech knowledge needed.',
+  full: 'Did you know Google lets you run a free security check on your account — no tech knowledge required? Here is how to do it: open a browser and go to myaccount.google.com, then click "Security" on the left side. Look for the "Security Checkup" section and click "Get started." In about five minutes, it walks you through four things. First, it shows every device currently signed in to your account — you can remove any old phones or computers you no longer use. Second, it checks whether any of your saved passwords have appeared in data breaches and tells you which ones to change. Third, it shows apps and services that have access to your Google account — you can remove any you do not recognize. Fourth, it shows whether two-step verification is turned on, which is an extra security step that stops strangers from logging in even if they know your password. If any red flags come up, Google explains what to do in plain language. You do not need to understand technology — it guides you through every step. If you use Gmail, Google Photos, YouTube, or any Google service, this five-minute check is one of the most useful things you can do for your online safety this week.',
+  category: 'Security',
+  icon: ShieldCheck,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'How to Spot and Avoid QR Code Scams',
+    summary: 'Scammers are placing fake QR codes on parking meters, restaurant tables, and flyers to steal your personal information — always preview the web address before tapping, and skip the code entirely if the address looks strange or misspelled.',
+    category: 'Safety',
+    icon: QrCode,
+  },
+  {
+    title: 'How to Find Your Saved Wi-Fi Password on Any Device',
+    summary: 'Forgot your Wi-Fi password? Your phone, tablet, or computer already knows it — here is how to look it up without calling your internet provider.',
+    category: 'Productivity',
+    icon: Wifi,
+  },
+  {
+    title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
+    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
+    category: 'Productivity',
+    icon: PauseCircle,
+  },
+  {
+    title: 'How to Safely Log Out of Public Computers at Libraries and Other Shared Spaces',
+    summary: 'If you use a computer at the library, a hotel, or any shared space, logging out properly is essential — otherwise the next person who sits down could access your email, bank account, or social media.',
+    category: 'Safety',
+    icon: LogOut,
+  },
+  {
+    title: 'How to Block Spam Texts and Stop Scam Messages on Your Phone',
+    summary: 'Spam texts with fake delivery notices, bank alerts, and prize offers are on the rise — but your phone has built-in tools to block them and report them as junk.',
+    category: 'Safety',
+    icon: Ban,
+  },
   {
     title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
     summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
