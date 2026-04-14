@@ -128,10 +128,12 @@ const QUIZ = [
 const QUIZ_KEY = 'teksure-my-path-chosen';
 
 function getSavedPath(): string | null {
+  if (typeof window === 'undefined') return null;
   return localStorage.getItem(QUIZ_KEY);
 }
 
 function savePathChoice(id: string) {
+  if (typeof window === 'undefined') return;
   localStorage.setItem(QUIZ_KEY, id);
 }
 

@@ -49,6 +49,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 18,
+    title: 'Google\'s New AI Works Directly on Your Phone — No Internet Needed',
+    summary: 'Google released a new AI system called Gemma 4 that runs directly on your smartphone without sending your information to a server somewhere else. For everyday users, this means two things: it works faster, and your private photos, texts, and questions stay on your device instead of being uploaded to the cloud. Apple and Samsung are doing similar things. Over the next year, your phone will get noticeably smarter at tasks like summarizing long messages, improving your photos, and answering questions — all without your data leaving your hands. No action needed on your part: these improvements come through regular phone software updates.',
+    category: 'ai',
+    date: '2026-04-09',
+    icon: Bot,
+    readTime: '2 min',
+    source: 'Google',
+    sourceUrl: 'https://ai.google.dev',
+  },
+  {
+    id: 17,
+    title: 'FTC Alert: Fake "Expiring Reward Points" Texts Are a Scam',
+    summary: 'The FTC is warning that millions of Americans are receiving text messages claiming their airline miles, store points, or credit card rewards are about to expire — and asking them to click a link to save them. If you click, the link takes you to a fake website designed to steal your login, credit card number, or Social Security number. The safe move: never click the link in the text. Instead, open the company\'s official app yourself and check your rewards balance there. You can also reduce how many scam texts you receive by turning on your carrier\'s free spam filter: AT&T Call Protect, T-Mobile Scam Shield, or Verizon Call Filter. Report scam texts to the FTC at ReportFraud.ftc.gov.',
+    category: 'scams',
+    date: '2026-04-07',
+    icon: AlertTriangle,
+    readTime: '2 min',
+    source: 'FTC Consumer Advice',
+    sourceUrl: 'https://consumer.ftc.gov',
+  },
+  {
     id: 16,
     title: 'Urgent: Apple Released a Critical iPhone Security Update — Install It Now',
     summary: 'Apple released iOS 18.7.7 on April 1, 2026 — a rare emergency security update that patches a serious flaw called "DarkSword." Without this update, a hacker could silently break into your iPhone just by getting you to visit the wrong website. No download required on your part. To install it: go to Settings → General → Software Update. If you see iOS 18.7.7 available, tap Download and Install. You\'ll need about 10 minutes and a charger. This is one of the rare updates worth doing right away.',

@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageSquare, Users, Plus, Clock, ChevronRight } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { formatDistanceToNow } from 'date-fns';
 
 export type ForumCategory = 'general' | 'wifi' | 'passwords' | 'devices' | 'software';
@@ -40,6 +41,11 @@ interface ForumThread {
   reply_count: number;
   created_at: string;
   updated_at: string;
+}
+
+function calcReadTime(text: string): string {
+  const words = text?.split(/\s+/).length ?? 0;
+  return `${Math.max(1, Math.ceil(words / 200))} min read`;
 }
 
 export default function ForumIndex() {
@@ -91,6 +97,9 @@ export default function ForumIndex() {
       <Navbar />
 
       <main className="min-h-screen bg-background">
+        <div className="container max-w-4xl mx-auto pt-4 px-4">
+          <PageBreadcrumb segments={[{ label: 'Forum' }]} />
+        </div>
         {/* Header */}
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
@@ -194,6 +203,10 @@ export default function ForumIndex() {
                               <span className="flex items-center gap-1">
                                 <Clock className="h-3 w-3" />
                                 {formatDistanceToNow(new Date(thread.updated_at), { addSuffix: true })}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <Clock className="h-3 w-3" />
+                                {calcReadTime(thread.body)}
                               </span>
                             </div>
                           </div>

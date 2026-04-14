@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 interface QuickFix {
   emoji: string;
@@ -245,6 +246,10 @@ const QuickFixes = () => {
       />
       <Navbar />
 
+      <div className="max-w-4xl mx-auto pt-4 px-4">
+        <PageBreadcrumb segments={[{ label: 'Quick Fixes' }]} />
+      </div>
+
       {/* Header */}
       <section className="border-b border-border">
         <div className="max-w-4xl mx-auto py-16 md:py-20 px-4">
@@ -258,10 +263,10 @@ const QuickFixes = () => {
               Instant solutions to the most common tech problems.
             </p>
             <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
               <Input
                 placeholder='Find your problem... (e.g. "no sound", "slow")'
-                className="pl-10 h-11 text-base rounded-xl border-border"
+                className="pl-11 h-12 text-base bg-card rounded-2xl border-border shadow-sm focus:border-primary/40 focus:shadow-md focus:shadow-primary/[0.06] transition-all"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
@@ -363,13 +368,13 @@ const QuickFixes = () => {
         <div
           className="mt-20 max-w-3xl mx-auto"
         >
-          <div className="rounded-2xl border border-border bg-card p-8 md:p-12 text-center">
+          <div className="rounded-2xl border border-primary/10 bg-primary/[0.04] p-8 md:p-12 text-center">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Didn't find your fix?</h2>
             <p className="text-muted-foreground mb-6 max-w-md mx-auto">
               Our verified technicians can diagnose and solve any tech issue remotely or in person.
             </p>
-            <Button asChild size="lg" className="rounded-xl">
-              <Link to="/signup">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button asChild size="lg" className="rounded-xl shadow-sm shadow-primary/20">
+              <Link to="/get-help">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
         </div>
