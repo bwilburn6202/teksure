@@ -409,10 +409,6 @@ const HashGenerator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       }
     }
 
-    // MD5 and SHA1 simulation (for demo purposes - using a simple approach)
-    newHashes['MD5'] = input ? `[MD5 requires crypto library]` : '';
-    newHashes['SHA-1'] = input ? `[Use SHA-256 instead for security]` : '';
-
     setHashes(newHashes);
   };
 
@@ -476,8 +472,15 @@ const EncodingDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const urlEncode = (str: string) => encodeURIComponent(str);
   const urlDecode = (str: string) => decodeURIComponent(str);
   const hexEncode = (str: string) => Array.from(str).map((c) => c.charCodeAt(0).toString(16).padStart(2, '0')).join('');
-  const hexDecode = (str: string) => String.fromCharCode(...str.match(/../g)!.map((x) => parseInt(x, 16)));
-  const rot13 = (str: string) => str.replace(/[a-zA-Z]/g, (c) => String.fromCharCode(c.charCodeAt(0) + (c <= 'Z' ? 13 : 13) * (c < 'N' || c < 'n' ? 1 : -1)));
+  const hexDecode = (str: string) => {
+    const pairs = str.match(/../g);
+    if (!pairs) return '';
+    return String.fromCharCode(...pairs.map((x) => parseInt(x, 16)));
+  };
+  const rot13 = (str: string) => str.replace(/[a-zA-Z]/g, (c) => {
+    const base = c <= 'Z' ? 65 : 97;
+    return String.fromCharCode(((c.charCodeAt(0) - base + 13) % 26) + base);
+  });
 
   const transform = () => {
     try {
