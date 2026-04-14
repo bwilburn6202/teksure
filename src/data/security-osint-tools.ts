@@ -219,7 +219,7 @@ export const osintCollections: OsintCollection[] = [
 ];
 
 // ── Re-exports ─────────────────────────────────────────────────────────────
-export { osintCategories, osintToolCount, osintCategoryCount } from './osint-tools';
+export { osintCategories, totalToolCount as osintToolCount, categoryCount as osintCategoryCount } from './osint-tools';
 export { geointCategories, geointToolCount, geointCategoryCount } from './geoint-resources';
 export type { OsintCategory, OsintTool } from './osint-tools';
 export type { GeointCategory, GeointTool } from './geoint-resources';
