@@ -131,7 +131,10 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Family Tech Sharing', description: 'Share your TekSure subscription and guides with family members.', status: 'live', category: 'Community' },
   { title: 'Caregiver Dashboard', description: 'Let a trusted family member or caregiver help manage your tech support requests.', status: 'live', category: 'Support' },
   { title: 'AI Personal Tech Tutor', description: 'An AI-powered tutor that learns your pace and adapts lessons just for you.', status: 'live', category: 'AI' },
-  { title: 'Tech Confidence Score', description: 'A short quiz that measures your overall tech confidence and tracks how it grows over time.', status: 'live', category: 'Gamification' },
+  { title: 'Emergency Tech Help Page', description: 'Step-by-step instructions for what to do right now if your phone is lost, your account is hacked, or you see a scary warning.', status: 'live', category: 'Safety' },
+  { title: 'Printer Troubleshooter Tool', description: 'An interactive tool that walks you through fixing printer problems step by step — offline printers, paper jams, quality issues, and ink problems.', status: 'live', category: 'Tools' },
+  { title: 'Guide Freshness Indicators', description: 'Every guide now shows when it was last verified for accuracy, so you know the information is current.', status: 'live', category: 'UX' },
+  { title: 'Verified Helpful Badges', description: 'Top-rated guides earn a "Verified Helpful" badge so you can spot the most useful content at a glance.', status: 'live', category: 'Gamification' },
   // Premium / commerce
   { title: 'Premium Subscription Tier', description: 'Unlock advanced tools, unlimited bookings, and priority support with a TekSure Premium plan.', status: 'live', category: 'Support' },
   { title: 'Gift Subscriptions', description: 'Buy a TekSure Premium subscription as a gift for a family member or friend.', status: 'live', category: 'Community' },
@@ -151,7 +154,6 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'TekSure Mobile App', description: 'A dedicated phone app for quick access to TekSure help on the go.', status: 'planned', category: 'UX' },
   { title: 'TekSure Chrome Extension', description: "Get instant TekSure help on any website — right-click any error message or confusing term.", status: 'planned', category: 'Tools' },
   { title: 'Partner Integrations API', description: 'Let libraries, care homes, and community centers embed TekSure guides directly in their own websites.', status: 'planned', category: 'Community' },
-  { title: 'Printer Troubleshooter Tool', description: 'Interactive diagnostic wizard for printer problems — guided step-by-step like the WiFi Troubleshooter.', status: 'planned', category: 'Tools' },
   { title: 'Spanish Language Content', description: 'Translate the top 30 most-visited guides into Spanish to reach 42M+ Spanish speakers in the US.', status: 'planned', category: 'Accessibility' },
   { title: 'Gift a Session Flow', description: 'Let adult children buy a technician session as a gift for a parent — with personalized message and easy redemption.', status: 'planned', category: 'Support' },
   // ── BRAND GAPS ───────────────────────────────────────────────
