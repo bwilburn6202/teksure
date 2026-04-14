@@ -130,6 +130,7 @@ const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
@@ -320,6 +321,8 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
+          <Route path="/tools/osint-tools" element={<OsintTools />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
