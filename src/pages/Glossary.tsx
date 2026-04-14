@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 interface GlossaryTerm {
   term: string;
@@ -129,6 +130,10 @@ const Glossary = () => {
         }}
       />
       <Navbar />
+
+      <div className="max-w-4xl mx-auto pt-4 px-4">
+        <PageBreadcrumb segments={[{ label: 'Glossary' }]} />
+      </div>
 
       {/* Header */}
       <section className="border-b border-border">

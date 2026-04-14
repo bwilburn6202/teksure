@@ -166,7 +166,7 @@ export default function Setup() {
   const progress = ((step) / 3) * 100;
 
   function saveAndFinish(finalAnswers: SetupAnswers) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(finalAnswers));
+    if (typeof window !== 'undefined') localStorage.setItem(STORAGE_KEY, JSON.stringify(finalAnswers));
   }
 
   function toggleGoal(goal: Goal) {

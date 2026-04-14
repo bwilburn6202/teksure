@@ -16,16 +16,17 @@
  *  - Clear chat button — lets users reset session memory
  */
 
-import { useState, useRef, useEffect, useMemo } from 'react';
+import { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   Bot, X, Send, BookOpen, ExternalLink,
   Laptop, Smartphone, Apple, Monitor, Settings2, ChevronDown,
-  Trash2, MessageSquare,
+  Trash2, MessageSquare, Brain,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { guides, type Guide } from '@/data/guides';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { useAgentMemory } from '@/hooks/useAgentMemory';
 
 /* ── Types ─────────────────────────────────────────────────── */
 
@@ -42,10 +43,12 @@ interface Message {
 const DEVICE_KEY = 'teksure_tekbot_device';
 
 function loadDevice(): DeviceType {
+  if (typeof window === 'undefined') return null;
   return (localStorage.getItem(DEVICE_KEY) as DeviceType) ?? null;
 }
 
 function saveDevice(d: DeviceType) {
+  if (typeof window === 'undefined') return;
   if (d) localStorage.setItem(DEVICE_KEY, d);
   else localStorage.removeItem(DEVICE_KEY);
 }
@@ -55,6 +58,7 @@ function saveDevice(d: DeviceType) {
 const SESSION_KEY = 'teksure_tekbot_session';
 
 function loadSession(): Message[] {
+  if (typeof window === 'undefined') return [];
   try {
     const raw = sessionStorage.getItem(SESSION_KEY);
     if (!raw) return [];
@@ -461,6 +465,73 @@ export function TekBot() {
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const enrichedRef = useRef<string>('');
 
+  /* ── Agent Memory ─────────────────────────────────────────── */
+  const memory = useAgentMemory();
+
+  // Observe device selection as a semantic memory
+  const observeDevice = useCallback((d: DeviceType) => {
+    if (!d) return;
+    memory.remember('device', 'primary_device', {
+      device: d,
+      label: deviceLabel(d),
+      detectedAt: new Date().toISOString(),
+    }, 8).catch(() => {});
+  }, [memory]);
+
+  // Observe user topics as working memories for consolidation
+  const observeTopic = useCallback((userText: string, matchedCategory: string | undefined) => {
+    memory.observe({
+      category: 'topic_interest',
+      key: matchedCategory ?? 'general',
+      value: {
+        query: userText.slice(0, 200), // cap length
+        category: matchedCategory ?? 'unknown',
+        page: location.pathname,
+      },
+      importance: matchedCategory ? 6 : 3,
+      tier: 'working',
+    }).catch(() => {});
+  }, [memory, location.pathname]);
+
+  // Observe successful solutions as procedural memories
+  const observeSolution = useCallback((topic: string, category: string | undefined, hadGuides: boolean) => {
+    if (!category) return;
+    memory.observe({
+      category: 'solution',
+      key: `solution_${category}`,
+      value: {
+        topic,
+        category,
+        hadRelatedGuides: hadGuides,
+        resolvedAt: new Date().toISOString(),
+      },
+      importance: 7,
+      tier: 'procedural',
+    }).catch(() => {});
+  }, [memory]);
+
+  // Recall relevant memories for context enrichment
+  const recallContext = useCallback(async (query: string): Promise<string> => {
+    try {
+      const memories = await memory.recall(query, {
+        tiers: ['semantic', 'procedural', 'episodic'],
+        limit: 3,
+        minImportance: 4,
+      });
+      if (memories.length === 0) return '';
+
+      const hints = memories.map(m => {
+        if (m.category === 'device') return `User's device: ${(m.value as Record<string, string>).label ?? (m.value as Record<string, string>).device}`;
+        if (m.category === 'solution') return `Previously helped with: ${(m.value as Record<string, string>).topic}`;
+        if (m.category === 'topic_interest') return `Interested in: ${(m.value as Record<string, string>).category}`;
+        return `Known: ${m.key}`;
+      });
+      return hints.join('. ') + '.';
+    } catch {
+      return '';
+    }
+  }, [memory]);
+
   /* Focus input when chat opens; return focus to open button when it closes */
   useEffect(() => {
     if (open) {
@@ -524,6 +595,7 @@ export function TekBot() {
     setDevice(d);
     saveDevice(d);
     setShowDevicePicker(false);
+    observeDevice(d);
     const label = d ? deviceLabel(d) : 'all devices';
     setMessages(prev => [
       ...prev,
@@ -550,6 +622,7 @@ export function TekBot() {
     if (detected) {
       setDevice(detected);
       saveDevice(detected);
+      observeDevice(detected);
     }
     const activeDevice = detected ?? device;
 
@@ -570,22 +643,64 @@ export function TekBot() {
 
     const delay = isContinuation(text) ? 600 : 900 + Math.random() * 700;
 
-    setTimeout(() => {
-      setTyping(false);
-      const enriched = enrichedRef.current || text;
-      const answer = getResponse(enriched, activeDevice);
-      const related = findRelatedGuides(enriched);
+    // Recall relevant memories to enrich the response
+    recallContext(text).then(memoryContext => {
+      setTimeout(() => {
+        setTyping(false);
+        const enriched = enrichedRef.current || text;
+        const answer = getResponse(enriched, activeDevice);
+        const related = findRelatedGuides(enriched);
 
-      let finalAnswer = answer;
-      if (detected) {
-        finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
-      }
+        // Find which KB category matched (for memory observation)
+        const matchedEntry = KB.find(entry =>
+          entry.keywords.some(kw => enriched.toLowerCase().includes(kw))
+        );
 
-      setMessages(prev => [
-        ...prev,
-        { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
-      ]);
-    }, delay);
+        // Observe the user's topic interest
+        observeTopic(text, matchedEntry?.category);
+
+        // If we found a good answer, observe it as a successful solution
+        if (matchedEntry) {
+          observeSolution(text, matchedEntry.category, related.length > 0);
+        }
+
+        let finalAnswer = answer;
+        if (detected) {
+          finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
+        }
+
+        // Add memory-powered context hint if we have relevant past interactions
+        if (memoryContext && !detected) {
+          const isReturning = memoryContext.includes('Previously helped');
+          if (isReturning) {
+            finalAnswer = `(Welcome back! I remember helping you before.)\n\n${answer}`;
+          }
+        }
+
+        setMessages(prev => [
+          ...prev,
+          { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
+        ]);
+      }, delay);
+    }).catch(() => {
+      // Fallback: proceed without memory context
+      setTimeout(() => {
+        setTyping(false);
+        const enriched = enrichedRef.current || text;
+        const answer = getResponse(enriched, activeDevice);
+        const related = findRelatedGuides(enriched);
+
+        let finalAnswer = answer;
+        if (detected) {
+          finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
+        }
+
+        setMessages(prev => [
+          ...prev,
+          { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
+        ]);
+      }, delay);
+    });
   };
 
   // Page-aware prompts: use page-specific chips first, fall back to device/default
@@ -693,7 +808,14 @@ export function TekBot() {
                 <Bot className="h-5 w-5" aria-hidden="true" />
                 <div>
                   <span id="tekbot-heading" className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
-                  <span className="text-white/80" style={{ fontSize: 11 }}>
+                  <span className="text-white/80 flex items-center gap-1" style={{ fontSize: 11 }}>
+                    {memory.stats && memory.stats.total > 0 && (
+                      <span className="inline-flex items-center gap-0.5" title={`${memory.stats.total} memories stored`}>
+                        <Brain className="h-3 w-3 text-teksure-success" aria-hidden="true" />
+                        <span className="text-teksure-success">{memory.stats.total}</span>
+                        <span className="mx-0.5 text-white/40">·</span>
+                      </span>
+                    )}
                     {conversationCount > 0
                       ? `${conversationCount} message${conversationCount === 1 ? '' : 's'} this session`
                       : 'Your friendly tech helper'}

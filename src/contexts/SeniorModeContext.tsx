@@ -12,6 +12,7 @@ const SeniorModeContext = createContext<SeniorModeContextType>({
 
 export function SeniorModeProvider({ children }: { children: ReactNode }) {
   const [seniorMode, setSeniorMode] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
     try {
       return localStorage.getItem('teksure-senior-mode') === 'true';
     } catch {

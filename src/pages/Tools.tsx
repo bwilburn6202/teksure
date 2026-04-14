@@ -5,6 +5,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { ToolSkeleton } from '@/components/skeletons/ToolSkeleton';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -16,7 +17,7 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, Terminal, Shield,
+  FileSearch, Terminal, Shield, Globe, BookOpen,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
@@ -39,6 +40,36 @@ const tools = [
     path: '/cybersec',
     color: 'text-red-500',
     bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'OSINT Tools Directory',
+    description: 'Browse 220+ open-source intelligence tools across 30 categories — search engines, social media, crypto, threat intel, and more.',
+    icon: Globe,
+    path: '/tools/osint-tools',
+    color: 'text-indigo-500',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'GEOINT & Mapping Resources',
+    description: 'Satellite imagery, flight tracking, ship monitoring, terrain analysis, and 65+ geospatial intelligence tools.',
+    icon: MapPin,
+    path: '/tools/geoint',
+    color: 'text-emerald-500',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'OSINT Collections & Bookmarks',
+    description: 'Curated directory of the best OSINT tool collections — start.me pages, GitHub repos, and expert toolkits with thousands of links.',
+    icon: BookOpen,
+    path: '/tools/osint-collections',
+    color: 'text-purple-500',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
     badge: 'New',
     category: 'Security' as ToolCategory,
   },
@@ -515,21 +546,24 @@ export default function Tools() {
       <Navbar />
       <ToolSkeleton />
       <main className="min-h-screen bg-background">
+        <div className="container pt-4">
+          <PageBreadcrumb segments={[{ label: 'Tools' }]} />
+        </div>
         {/* Header */}
-        <section className="border-b zone-tools">
-          <div className="container py-12 md:py-16">
+        <section className="border-b">
+          <div className="container py-14 md:py-20">
             <div className="max-w-2xl mx-auto text-center">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                 Tools & Utilities
               </h1>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-muted-foreground text-lg mb-8">
                 Over 30 free interactive tools — all private, all free.
               </p>
               <div className="relative max-w-md mx-auto">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
                 <Input
                   placeholder="Search tools..."
-                  className="pl-10 h-11 bg-background border-border rounded-xl text-sm"
+                  className="pl-11 h-12 bg-card border-border/60 rounded-2xl text-sm shadow-sm focus:border-primary/40 focus:shadow-md focus:shadow-primary/[0.06] transition-all"
                   value={search}
                   onChange={e => setSearch(e.target.value)}
                 />
@@ -581,7 +615,7 @@ export default function Tools() {
                           const tool = featuredTools[0];
                           if (!tool) return null;
                           const card = (
-                            <div className={`rounded-3xl border p-8 h-full flex flex-col justify-between bg-gradient-to-br ${tool.bg} border-border/60 transition-all hover:shadow-md`}>
+                            <div className={`glow-card p-8 h-full flex flex-col justify-between`}>
                               <div>
                                 <div className={`h-14 w-14 rounded-2xl ${tool.bg} flex items-center justify-center mb-4`}>
                                   <tool.icon className={`h-7 w-7 ${tool.color}`} />
@@ -611,7 +645,7 @@ export default function Tools() {
                       {/* Smaller featured cards */}
                       {featuredTools.slice(1, 5).map((tool, i) => {
                         const card = (
-                          <div className={`rounded-2xl border p-5 h-full flex flex-col bg-gradient-to-br ${tool.bg} border-border/60 transition-all hover:shadow-md`}>
+                          <div className={`glow-card p-5 h-full flex flex-col`}>
                             <div className="flex items-start justify-between mb-3">
                               <div className={`h-10 w-10 rounded-xl ${tool.bg} flex items-center justify-center`}>
                                 <tool.icon className={`h-5 w-5 ${tool.color}`} />
@@ -637,7 +671,7 @@ export default function Tools() {
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {(activeTab === 'All' && !search.trim() ? remainingTools : filtered).map((tool, i) => {
                       const card = (
-                        <div className={`rounded-2xl border p-5 h-full transition-all hover:shadow-md bg-card`}>
+                        <div className={`glow-card p-5 h-full`}>
                           <div className="flex items-start justify-between mb-3">
                             <div className={`h-10 w-10 rounded-xl ${tool.bg} flex items-center justify-center`}>
                               <tool.icon className={`h-5 w-5 ${tool.color}`} />
@@ -666,12 +700,12 @@ export default function Tools() {
           </Tabs>
 
           {/* CTA */}
-          <div className="mt-16 text-center p-10 rounded-2xl bg-muted/50 border border-border">
+          <div className="mt-16 text-center p-10 rounded-2xl bg-primary/[0.04] border border-primary/10">
             <h2 className="text-xl font-bold mb-2">Still need help?</h2>
             <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
               Our verified technicians are ready to walk you through any issue.
             </p>
-            <Button asChild className="gap-2 rounded-xl">
+            <Button asChild className="gap-2 rounded-xl shadow-sm shadow-primary/20">
               <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help</Link>
             </Button>
           </div>
