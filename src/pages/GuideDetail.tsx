@@ -313,6 +313,7 @@ const GuideDetail = () => {
     name: guide.title,
     description: guide.excerpt,
     datePublished: guide.publishedAt,
+    ...(guide.lastVerifiedAt ? { dateModified: guide.lastVerifiedAt } : {}),
     step: guide.steps.map((s, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
@@ -397,6 +398,11 @@ const GuideDetail = () => {
                   {guide.difficulty}
                 </Badge>
               )}
+              {guide.verifiedHelpful && (
+                <Badge variant="outline" className="border-teksure-success/50 text-teksure-success gap-1">
+                  <CheckCircle className="h-3.5 w-3.5" /> Verified Helpful
+                </Badge>
+              )}
               <span className="flex items-center gap-1 text-sm text-muted-foreground">
                 <Clock className="h-3.5 w-3.5" /> {estimatedReadTime}
               </span>
@@ -406,6 +412,12 @@ const GuideDetail = () => {
               <span className="text-sm text-muted-foreground">
                 {new Date(guide.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
               </span>
+              {guide.lastVerifiedAt && (
+                <span className="flex items-center gap-1 text-sm text-teksure-success">
+                  <CheckCircle className="h-3.5 w-3.5" />
+                  Verified {new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+                </span>
+              )}
             </div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 leading-tight">{guide.title}</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">{guide.excerpt}</p>

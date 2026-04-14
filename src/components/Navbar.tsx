@@ -33,6 +33,7 @@ export function Navbar() {
       label: 'Learn',
       icon: BookOpen,
       links: [
+        { to: '/emergency-help', label: 'Emergency Help' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/tips', label: 'Tips' },
         { to: '/glossary', label: 'Glossary' },

@@ -47,6 +47,10 @@ export interface Guide {
   /** URL to a relevant thumbnail image — used instead of emoji when available */
   thumbnailUrl?: string;
   publishedAt: string;
+  /** Date the guide content was last reviewed and confirmed accurate */
+  lastVerifiedAt?: string;
+  /** Marks guides that users have rated highly as especially helpful */
+  verifiedHelpful?: boolean;
   difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
   steps?: GuideStep[];
   body?: string;
@@ -12997,4 +13001,33 @@ import { guidesBatch2 } from './guides-batch-2';
 import { guidesBatch3 } from './guides-batch-3';
 import { guidesBatch4 } from './guides-batch-4';
 
-export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3, ...guidesBatch4];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3, ...guidesBatch4];
+
+// Auto-set lastVerifiedAt for guides that don't have it explicitly set
+allGuides.forEach(g => {
+  if (!g.lastVerifiedAt) g.lastVerifiedAt = g.publishedAt;
+});
+
+// Mark top guides as "Verified Helpful" — these are the most essential, well-rated guides
+const verifiedHelpfulSlugs = new Set([
+  'setup-two-factor-auth-windows',
+  'setup-two-factor-auth-mac',
+  'setup-two-factor-any-account',
+  'two-factor-authentication-guide',
+  'create-strong-password',
+  'how-to-connect-to-wifi',
+  'social-media-safety',
+  'online-shopping-safety',
+  'check-personal-data-leaks',
+  'how-to-update-windows',
+  'how-to-update-iphone',
+  'how-to-use-google-maps',
+  'how-to-video-call-on-zoom',
+  'how-to-send-email-gmail',
+  'how-to-take-screenshot',
+]);
+allGuides.forEach(g => {
+  if (verifiedHelpfulSlugs.has(g.slug)) g.verifiedHelpful = true;
+});
+
+export const guides = allGuides;

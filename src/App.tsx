@@ -129,12 +129,12 @@ const Mockups                = lazy(() => import("./pages/Mockups"));
 const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
-const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
-const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
+const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
+const PrinterTroubleshooter  = lazy(() => import("./pages/tools/PrinterTroubleshooter"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
@@ -227,6 +227,7 @@ const AppContent = () => {
           <Route path="/guides" element={<Guides />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="/about" element={<About />} />
+          <Route path="/emergency-help" element={<EmergencyHelp />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/search" element={<SearchResults />} />
           <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
@@ -268,6 +269,7 @@ const AppContent = () => {
           <Route path="/community/ambassadors" element={<Ambassadors />} />
           <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
           <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
+          <Route path="/tools/printer-troubleshooter" element={<PrinterTroubleshooter />} />
           <Route path="/tools/device-health" element={<DeviceHealthDashboard />} />
           <Route path="/tools/bluetooth-troubleshooter" element={<BluetoothTroubleshooter />} />
           <Route path="/tools/tech-health-quiz" element={<TechHealthQuiz />} />
@@ -321,8 +323,6 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
-          <Route path="/tools/osint-framework" element={<OsintFramework />} />
-          <Route path="/tools/osint-tools" element={<OsintTools />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />

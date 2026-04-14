@@ -59,6 +59,11 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
           <Badge variant="secondary" className="text-xs font-medium">
             {categoryLabels[guide.category]}
           </Badge>
+          {guide.verifiedHelpful && (
+            <Badge variant="outline" className="text-xs border-green-500/50 text-green-600 dark:text-green-400 gap-1">
+              <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
+            </Badge>
+          )}
           <span className="flex items-center gap-1 text-xs text-muted-foreground">
             <Clock className="h-2.5 w-2.5" /> {guide.readTime}
           </span>
