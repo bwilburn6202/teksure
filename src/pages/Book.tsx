@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Calendar, Clock, Wrench, CheckCircle2, ChevronRight, ArrowRight,
@@ -100,7 +100,7 @@ export default function Book() {
     description: '',
   });
 
-  const availableDates = getAvailableDates();
+  const availableDates = useMemo(() => getAvailableDates(), []);
   const progress = (step / 4) * 100;
 
   const selectedService = services.find(s => s.id === form.serviceType);
@@ -166,8 +166,9 @@ export default function Book() {
     if (!form.email.trim() && !form.phone.trim()) { setError('Please enter an email or phone number so we can reach you.'); return; }
 
     setSubmitting(true);
+    let bookingId: string | null = null;
     try {
-      const bookingId = await createBookingRecord('deposit_pending');
+      bookingId = await createBookingRecord('deposit_pending');
 
       const { data: fnData, error: fnError } = await supabase.functions.invoke(
         'create-checkout-session',
@@ -190,6 +191,15 @@ export default function Book() {
       // Redirect to Stripe Checkout
       window.location.href = fnData.url;
     } catch (err: unknown) {
+      if (bookingId) {
+        await (supabase as any)
+          .from('bookings')
+          .update({
+            payment_status: 'none',
+            notes: 'Deposit checkout could not be created; customer can pay on the day.',
+          })
+          .eq('id', bookingId);
+      }
       console.error(err);
       setError(err instanceof Error ? err.message : 'Payment setup failed. Please try again.');
       setSubmitting(false);

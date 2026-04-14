@@ -129,8 +129,6 @@ const Mockups                = lazy(() => import("./pages/Mockups"));
 const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
-const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
-const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));

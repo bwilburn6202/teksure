@@ -40,10 +40,12 @@ export function clearProgress(): void {
 
 const STEP_KEY = 'teksure-step-progress';
 const RECENT_KEY = 'teksure-recent-guides';
+const LEGACY_STEP_KEY = 'teksure_step_progress';
+const LEGACY_RECENT_KEY = 'teksure_guide_views';
 
 export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
   try {
-    const raw = localStorage.getItem(STEP_KEY);
+    const raw = localStorage.getItem(STEP_KEY) ?? localStorage.getItem(LEGACY_STEP_KEY);
     const data: Record<string, { step: number; totalSteps: number }> = raw ? JSON.parse(raw) : {};
     data[slug] = { step, totalSteps };
     localStorage.setItem(STEP_KEY, JSON.stringify(data));
@@ -53,7 +55,7 @@ export function saveStepProgress(slug: string, step: number, totalSteps: number)
 
 export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
   try {
-    const raw = localStorage.getItem(STEP_KEY);
+    const raw = localStorage.getItem(STEP_KEY) ?? localStorage.getItem(LEGACY_STEP_KEY);
     if (!raw) return [];
     const data: Record<string, { step: number; totalSteps: number }> = JSON.parse(raw);
     const completed = getCompletedGuides();
@@ -73,7 +75,7 @@ export function getInProgressGuides(): { slug: string; step: number; totalSteps:
 
 export function recordGuideView(slug: string): void {
   try {
-    const raw = localStorage.getItem(RECENT_KEY);
+    const raw = localStorage.getItem(RECENT_KEY) ?? localStorage.getItem(LEGACY_RECENT_KEY);
     const recent: string[] = raw ? JSON.parse(raw) : [];
     const filtered = recent.filter(s => s !== slug);
     filtered.unshift(slug);
@@ -84,7 +86,7 @@ export function recordGuideView(slug: string): void {
 
 export function getRecentGuides(): string[] {
   try {
-    const raw = localStorage.getItem(RECENT_KEY);
+    const raw = localStorage.getItem(RECENT_KEY) ?? localStorage.getItem(LEGACY_RECENT_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch {
     return [];
@@ -98,55 +100,6 @@ export function getProgressCount(totalSlugs?: string[]): { completed: number; to
     return { completed, total: totalSlugs.length, pct: Math.round((completed / totalSlugs.length) * 100) };
   }
   return { completed: done.size, total: done.size, pct: 100 };
-}
-
-// Return in-progress guides based on step progress map
-export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
-  try {
-    const raw = localStorage.getItem('teksure_step_progress');
-    const map = raw ? JSON.parse(raw) : {};
-    const completed = getCompletedGuides();
-    return Object.entries(map)
-      .filter(([slug]) => !completed.has(slug))
-      .map(([slug, v]: [string, any]) => {
-        const step = typeof v.step === 'number' ? v.step : 0;
-        const total = typeof v.totalSteps === 'number' ? v.totalSteps : (typeof v.total_steps === 'number' ? v.total_steps : 0);
-        const pct = total > 0 ? Math.round(((step + 1) / total) * 100) : 0;
-        return { slug, step, totalSteps: total, pct };
-      })
-      .sort((a, b) => b.pct - a.pct);
-  } catch {
-    return [];
-  }
-}
-
-export function getRecentGuides(): string[] {
-  try {
-    const raw = localStorage.getItem('teksure_guide_views');
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
-}
-
-export function recordGuideView(slug: string): void {
-  try {
-    const key = 'teksure_guide_views';
-    const raw = localStorage.getItem(key);
-    const arr: string[] = raw ? JSON.parse(raw) : [];
-    const next = [slug, ...arr.filter(s => s !== slug)].slice(0, 50);
-    localStorage.setItem(key, JSON.stringify(next));
-  } catch { /* ignore */ }
-}
-
-export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
-  try {
-    const key = 'teksure_step_progress';
-    const raw = localStorage.getItem(key);
-    const map = raw ? JSON.parse(raw) : {};
-    map[slug] = { step, totalSteps, updated_at: new Date().toISOString() };
-    localStorage.setItem(key, JSON.stringify(map));
-  } catch { /* ignore */ }
 }
 
 // Persist step progress to DB when user is authenticated
