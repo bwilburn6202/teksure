@@ -70,7 +70,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
-                className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-secondary/50"
+                className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-primary/30"
               />
               <Button type="submit" size="sm">
                 Subscribe <ArrowRight className="h-3.5 w-3.5 ml-1" />
@@ -87,7 +87,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
     return (
       <div className={`rounded-xl border border-border bg-muted/50 p-4 ${className}`}>
         <div className="flex items-center gap-2 mb-3">
-          <Mail className="h-4 w-4 text-secondary" />
+          <Mail className="h-4 w-4 text-primary" />
           <span className="text-sm font-semibold">Weekly tech tips — free</span>
         </div>
         <>
@@ -102,7 +102,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
-                className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-secondary/50"
+                className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-primary/30"
               />
               <Button type="submit" size="sm" className="shrink-0">Go</Button>
             </form>
@@ -116,14 +116,14 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
 
   // Default full-size variant
   return (
-    <section className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-secondary/10 to-primary/5 border border-secondary/20 p-8 text-center ${className}`}>
-      <div className="absolute top-4 right-6 text-secondary/20 pointer-events-none">
+    <section className={`relative overflow-hidden rounded-xl bg-muted/50 border border-border p-8 text-center ${className}`}>
+      <div className="absolute top-4 right-6 text-primary/20 pointer-events-none">
         <Sparkles className="h-24 w-24" />
       </div>
 
       <div className="relative z-10 max-w-md mx-auto">
-        <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-secondary/15 border border-secondary/30 mb-4">
-          <Mail className="h-6 w-6 text-secondary" />
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-primary/15 border border-primary/30 mb-4">
+          <Mail className="h-6 w-6 text-primary" />
         </div>
 
         <>
@@ -147,7 +147,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                   value={email}
                   onChange={e => { setEmail(e.target.value); setError(''); }}
                   placeholder="your@email.com"
-                  className="flex-1 text-sm bg-background border border-border rounded-xl px-4 py-2.5 outline-none focus:ring-2 focus:ring-secondary/50"
+                  className="flex-1 text-sm bg-background border border-border rounded-xl px-4 py-2.5 outline-none focus:ring-2 focus:ring-primary/30"
                 />
                 <Button type="submit" className="sm:shrink-0">
                   Subscribe <ArrowRight className="h-4 w-4 ml-1" />
