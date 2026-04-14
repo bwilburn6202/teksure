@@ -197,7 +197,7 @@ export default function OsintCollections() {
                   href={collection.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group border border-gray-200 dark:border-gray-700 rounded-xl p-5 bg-white dark:bg-gray-900 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-lg transition-all"
+                  className="group glow-card p-5"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h2 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">

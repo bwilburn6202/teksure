@@ -207,19 +207,19 @@ const Pricing = () => (
       </section>
 
       {/* Final CTA */}
-      <section className="hero-gradient text-white">
-        <div className="container py-12 md:py-16 text-center">
+      <section className="bg-foreground text-background">
+        <div className="container py-16 md:py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Ready to get your tech working?
           </h2>
-          <p className="text-white/80 mb-8 max-w-md mx-auto">
+          <p className="text-background/60 mb-8 max-w-md mx-auto">
             Book a session today. A real person will help you — no jargon, no runaround.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-background text-foreground hover:bg-background/90">
               <Link to="/book">Book a Session <ArrowRight className="h-4 w-4" /></Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
               <Link to="/get-help">Get Free Help</Link>
             </Button>
           </div>

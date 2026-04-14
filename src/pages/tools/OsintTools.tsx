@@ -35,7 +35,7 @@ function CategorySection({ category, searchTerm }: { category: OsintCategory; se
   if (searchTerm && filteredTools.length === 0) return null;
 
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden bg-white dark:bg-gray-900">
+    <div className="border border-border rounded-xl overflow-hidden bg-card">
       {/* Category Header */}
       <button
         onClick={() => setExpanded(!expanded)}

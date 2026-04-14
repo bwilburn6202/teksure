@@ -34,7 +34,7 @@ function CategorySection({ category, searchTerm }: { category: GeointCategory; s
   if (searchTerm && filteredTools.length === 0) return null;
 
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden bg-white dark:bg-gray-900">
+    <div className="border border-border rounded-xl overflow-hidden bg-card">
       <button
         onClick={() => setExpanded(!expanded)}
         className="w-full flex items-center justify-between p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors text-left"
@@ -63,7 +63,7 @@ function CategorySection({ category, searchTerm }: { category: GeointCategory; s
       </button>
 
       {isExpanded && (
-        <div className="border-t border-gray-200 dark:border-gray-700 divide-y divide-gray-100 dark:divide-gray-800">
+        <div className="border-t border-border divide-y divide-border">
           {filteredTools.map((tool) => (
             <a
               key={tool.url}
