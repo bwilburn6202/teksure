@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { PreloadLink } from '@/components/PreloadLink';
-import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, Phone, X, BookOpen, Wrench, Shield, HelpCircle, Video, Newspaper, Users, ArrowRight } from 'lucide-react';
+import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, Phone, X, BookOpen, Wrench, Shield, ShieldAlert, HelpCircle, Video, Newspaper, Users, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -51,6 +51,7 @@ export function Navbar() {
   ];
 
   const moreLinksLeft = [
+    { to: '/emergency-help', label: 'Emergency Help', icon: ShieldAlert },
     { to: '/get-help', label: 'Get Help', icon: HelpCircle },
     { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench },
     { to: '/safety/scam-alerts', label: 'Safety Center', icon: Shield },
