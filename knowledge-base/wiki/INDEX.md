@@ -5,7 +5,7 @@
 ## AI & Workflow
 | Article | Summary |
 |---------|---------|
-| [[llm-knowledge-bases]] | Using LLMs to build and maintain structured knowledge bases from raw sources — the Karpathy method |
+| [[llm-knowledge-bases]] | Flat-file AI knowledge-base architecture, 8-step workflow, and quality controls |
 | [[ai-content-pipeline-patterns]] | Patterns for using AI to automate content creation, organization, and quality assurance |
 
 ## Content Strategy
@@ -41,5 +41,6 @@ Full analysis: [[00-CONTENT-GAP-INDEX]] — 785 existing guides audited, 38 new 
 |----------|------|-------|
 | `karpathy-llm-knowledge-bases-2026-04-04.md` | 2026-04-04 | LLM knowledge base concept and workflow |
 | `spisak-knowledge-base-implementation-2026-04-05.md` | 2026-04-05 | Step-by-step implementation guide for LLM knowledge bases |
+| `spisak-knowledge-base-implementation-2026-04-06.md` | 2026-04-06 | Step-by-step implementation flow for a flat-file LLM knowledge base |
 | `design-critique-2026-04-04.md` | 2026-04-04 | Automated design review — color, spacing, Navbar, accessibility audit |
 | `content-gap-analysis-2026-04-06` | 2026-04-06 | Comprehensive gap analysis of 785 guides — 38 new guides across 10 areas |

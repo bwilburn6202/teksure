@@ -61,6 +61,7 @@ export function Navbar() {
   const moreLinksRight = [
     { to: '/glossary', label: 'Glossary', icon: BookOpen },
     { to: '/blog', label: 'Blog', icon: Newspaper },
+    { to: '/llm-knowledge-base', label: 'Knowledge Base', icon: BookOpen },
     { to: '/about', label: 'About', icon: Users },
     { to: '/roadmap', label: 'Roadmap', icon: Map },
     { to: '/explore', label: 'Explore', icon: ArrowRight },

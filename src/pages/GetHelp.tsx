@@ -123,12 +123,10 @@ const GetHelp = () => {
         <div className="max-w-2xl w-full mx-auto">
 
           {/* Header */}
-          <div
-            className="text-center mb-16 border-b border-border pb-12"
-          >
+          <div className="text-center mb-16 pb-12 border-b border-border">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Get Tech Help</h1>
-            <p className="text-muted-foreground text-lg">
-              Tell us what's happening and we'll get someone real to help you.
+            <p className="text-muted-foreground text-lg max-w-md mx-auto">
+              Tell us what's happening and we'll get someone real to help you. No jargon, no runaround.
             </p>
           </div>
 

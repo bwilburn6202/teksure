@@ -148,10 +148,10 @@ const Glossary = () => {
               Every tech term explained in plain English — no jargon, just answers.
             </p>
             <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
               <Input
                 placeholder="Search terms... (e.g. Wi-Fi, RAM, VPN)"
-                className="pl-10 h-11 text-base rounded-xl border-border"
+                className="pl-11 h-12 text-base bg-card rounded-2xl border-border shadow-sm focus:border-primary/40 focus:shadow-md focus:shadow-primary/[0.06] transition-all"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
@@ -213,7 +213,7 @@ const Glossary = () => {
                     <div
                       key={item.term}
                     >
-                      <div className="rounded-2xl border border-border bg-card p-5 hover:border-border/80 transition-colors">
+                      <div className="glow-card">
                         <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
                         <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
                         {item.analogy && (

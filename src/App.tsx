@@ -125,6 +125,13 @@ const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
+const Mockups                = lazy(() => import("./pages/Mockups"));
+const MockupA                = lazy(() => import("./pages/MockupA"));
+const MockupB                = lazy(() => import("./pages/MockupB"));
+const MockupC                = lazy(() => import("./pages/MockupC"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
+const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
@@ -209,6 +216,10 @@ const AppContent = () => {
         <ErrorBoundary variant="section">
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/mockups" element={<Mockups />} />
+          <Route path="/mockup-a" element={<MockupA />} />
+          <Route path="/mockup-b" element={<MockupB />} />
+          <Route path="/mockup-c" element={<MockupC />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
@@ -309,6 +320,11 @@ const AppContent = () => {
           <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
+          <Route path="/tools/doc-browser" element={<DocBrowser />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
+          <Route path="/tools/osint-tools" element={<OsintTools />} />
+          <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
+          <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/memory" element={<MemoryDashboard />} />
