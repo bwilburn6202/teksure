@@ -74,6 +74,16 @@ const tools = [
     category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
+    title: "Can't Log In? Account Recovery",
+    description: 'Locked out of Google, Apple, Facebook, Amazon, or Microsoft? Get step-by-step recovery instructions in plain English.',
+    icon: KeyRound,
+    path: '/tools/account-recovery',
+    color: 'text-primary',
+    bg: 'bg-primary/5 dark:bg-primary/10',
+    badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
+  },
+  {
     title: 'Cybersecurity Scorecard',
     description: '13 quick yes/no questions. Get a grade and a personalized action plan.',
     icon: Lock,

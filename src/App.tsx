@@ -114,6 +114,7 @@ const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
 const SecurityOsintTools     = lazy(() => import("./pages/tools/SecurityOsintTools"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
+const AccountRecovery        = lazy(() => import("./pages/tools/AccountRecovery"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
@@ -266,6 +267,7 @@ const AppContent = () => {
           <Route path="/community/ambassadors" element={<Ambassadors />} />
           <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
           <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
+          <Route path="/tools/account-recovery" element={<AccountRecovery />} />
           <Route path="/tools/printer-troubleshooter" element={<PrinterTroubleshooter />} />
           <Route path="/tools/device-health" element={<DeviceHealthDashboard />} />
           <Route path="/tools/bluetooth-troubleshooter" element={<BluetoothTroubleshooter />} />
