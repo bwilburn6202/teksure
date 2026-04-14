@@ -1,34 +1,48 @@
-/**
- * TekSure Landing Page — AI & LLM Resources Hub
- *
- * Mockup A (Warm & Minimal / Notion-inspired) design system:
- * - Brand colors: Blue (#0066FF), Dark Navy (#003366), Gray (#A6A8AB)
- * - Warm off-white sections, whisper borders, generous whitespace
- * - Focused entirely on AI/LLM resources and information
- */
-
-import { useState, useRef, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-  Search, ArrowRight, BookOpen, Bot, Sparkles, Brain,
-  Zap, ChevronRight, Mail, Loader2, CheckCircle,
-  Layers, TrendingUp, Shield, Eye, MessageSquare, Code,
-  Cpu, Globe, Lock, BarChart3, Lightbulb
+  Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
+  Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
+  Users, Star, Zap, MessageCircle, ChevronRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Badge } from '@/components/ui/badge';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 
-/* ── Brand Colors ── */
-const BLUE = '#0066FF';
-const NAVY = '#003366';
-const GRAY = '#A6A8AB';
+const categoryIcons: Record<string, typeof Monitor> = {
+  'windows-guides': Monitor, 'mac-guides': Apple, 'essential-skills': Lightbulb,
+  'tips-tricks': Sparkles, 'ai-guides': Bot, 'how-to': BookOpen,
+  'safety-guides': Shield, 'app-guides': Phone, 'health-tech': Heart,
+};
 
-/* ── Newsletter Signup ── */
+const categoryColors: Record<string, { border: string; bg: string; text: string; iconBg: string }> = {
+  'windows-guides':   { border: 'border-l-blue-500',   bg: 'bg-blue-50 dark:bg-blue-950/30',   text: 'text-blue-600 dark:text-blue-400',   iconBg: 'bg-blue-100 dark:bg-blue-900/40' },
+  'mac-guides':       { border: 'border-l-gray-500',   bg: 'bg-gray-100 dark:bg-gray-800/30',  text: 'text-gray-600 dark:text-gray-400',   iconBg: 'bg-gray-100 dark:bg-gray-800/40' },
+  'essential-skills': { border: 'border-l-amber-500',  bg: 'bg-amber-50 dark:bg-amber-950/30', text: 'text-amber-600 dark:text-amber-400', iconBg: 'bg-amber-100 dark:bg-amber-900/40' },
+  'tips-tricks':      { border: 'border-l-purple-500', bg: 'bg-purple-50 dark:bg-purple-950/30',text: 'text-purple-600 dark:text-purple-400',iconBg: 'bg-purple-100 dark:bg-purple-900/40' },
+  'ai-guides':        { border: 'border-l-cyan-500',   bg: 'bg-cyan-50 dark:bg-cyan-950/30',   text: 'text-cyan-600 dark:text-cyan-400',   iconBg: 'bg-cyan-100 dark:bg-cyan-900/40' },
+  'safety-guides':    { border: 'border-l-red-500',    bg: 'bg-red-50 dark:bg-red-950/30',     text: 'text-red-600 dark:text-red-400',     iconBg: 'bg-red-100 dark:bg-red-900/40' },
+  'app-guides':       { border: 'border-l-green-500',  bg: 'bg-green-50 dark:bg-green-950/30', text: 'text-green-600 dark:text-green-400', iconBg: 'bg-green-100 dark:bg-green-900/40' },
+  'health-tech':      { border: 'border-l-pink-500',   bg: 'bg-pink-50 dark:bg-pink-950/30',   text: 'text-pink-600 dark:text-pink-400',   iconBg: 'bg-pink-100 dark:bg-pink-900/40' },
+};
+
+const quickProblems = [
+  { label: 'WiFi Not Working', query: 'wifi', emoji: '📶', slug: 'connect-wifi-windows', fix: 'Unplug your router for 30 seconds' },
+  { label: 'Computer Is Slow', query: 'slow', emoji: '🐢', slug: 'restart-pc-windows', fix: 'Restart your device — fixes 80% of slowdowns' },
+  { label: 'Virus or Pop-up', query: 'virus', emoji: '⚠️', slug: 'spot-phishing-emails', fix: 'Run a scan and close suspicious tabs' },
+  { label: 'Printer Help', query: 'printer', emoji: '🖨️', slug: 'fix-printer-windows', fix: 'Check it\'s set as the default printer' },
+  { label: 'Forgot Password', query: 'password', emoji: '🔑', slug: 'manage-passwords-windows', fix: 'Use \'Forgot Password\' on the login page' },
+  { label: 'Phone Storage Full', query: 'storage', emoji: '📱', slug: 'manage-storage-windows', fix: 'Delete unused apps and clear cache' },
+];
+
 function NewsletterSignup() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
@@ -38,427 +52,368 @@ function NewsletterSignup() {
       await (supabase as any).from('newsletter_signups').insert({ email: email.trim() });
       setStatus('success');
     } catch {
-      setStatus('error');
+      try {
+        const { supabase } = await import('@/integrations/supabase/client');
+        await (supabase as any).from('email_send_log').insert({ email: email.trim(), event: 'newsletter_signup_fallback' });
+        setStatus('success');
+      } catch { setStatus('error'); }
     }
   };
-
-  if (status === 'success') {
-    return (
-      <div className="flex flex-col items-center gap-2 py-2">
-        <CheckCircle className="h-5 w-5" style={{ color: BLUE }} />
-        <p className="text-sm font-medium" style={{ color: NAVY }}>You're in! Weekly AI insights headed your way.</p>
-      </div>
-    );
-  }
-
-  if (status === 'error') {
-    return (
-      <div className="flex flex-col items-center gap-2 py-2">
-        <p className="text-sm font-medium text-red-600">Something went wrong. Please try again.</p>
-        <button onClick={() => setStatus('idle')} className="text-sm hover:underline" style={{ color: BLUE }}>Try again</button>
-      </div>
-    );
-  }
-
+  if (status === 'success') return (<div className="flex flex-col items-center gap-2 py-2"><CheckCircle className="h-5 w-5 text-green-400" /><p className="text-sm font-medium text-white/90">You're in! One friendly email each week.</p></div>);
+  if (status === 'error') return (<div className="flex flex-col items-center gap-2 py-2"><p className="text-sm text-red-300 font-medium">Something went wrong.</p><button onClick={() => setStatus('idle')} className="text-sm text-primary hover:underline">Try again</button></div>);
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto">
-      <input
-        type="email"
-        placeholder="your@email.com"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        required
-        className="h-12 flex-1 px-4 rounded-lg text-[15px] outline-none"
-        style={{ border: '1px solid rgba(0,0,0,0.12)', background: '#ffffff' }}
-      />
-      <button
-        type="submit"
-        disabled={status === 'loading'}
-        className="h-12 px-6 rounded-lg text-[15px] font-semibold text-white shrink-0"
-        style={{ background: BLUE }}
-      >
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 w-full">
+      <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/40 rounded-xl focus:border-primary/60" />
+      <Button type="submit" disabled={status === 'loading'} className="h-12 px-6 shrink-0 rounded-xl bg-primary text-white hover:bg-primary/90">
         {status === 'loading' ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Subscribe'}
-      </button>
+      </Button>
     </form>
   );
 }
 
-/* ── Scroll Reveal Hook ── */
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { el.classList.add('visible'); observer.unobserve(el); } },
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.unobserve(el); } }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    obs.observe(el);
+    return () => obs.disconnect();
   }, []);
   return ref;
 }
-
 function RevealSection({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   const ref = useReveal();
   return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
 }
 
-/* ── Data ── */
-const aiModels = [
-  { name: 'Claude', maker: 'Anthropic', desc: 'Advanced reasoning, coding, and analysis with a focus on safety.', icon: Brain, color: '#D97706' },
-  { name: 'GPT-4o', maker: 'OpenAI', desc: 'Multimodal model for text, vision, and audio understanding.', icon: Sparkles, color: '#10B981' },
-  { name: 'Gemini', maker: 'Google', desc: 'Natively multimodal AI with deep Google ecosystem integration.', icon: Globe, color: '#3B82F6' },
-  { name: 'Llama', maker: 'Meta', desc: 'Open-source large language model family for research and apps.', icon: Code, color: '#8B5CF6' },
-  { name: 'Mistral', maker: 'Mistral AI', desc: 'Efficient European-built models with strong multilingual support.', icon: Zap, color: '#F97316' },
-  { name: 'Grok', maker: 'xAI', desc: 'Real-time knowledge model with a distinctive conversational style.', icon: MessageSquare, color: '#EF4444' },
-];
-
-const resourceCategories = [
-  { name: 'Getting Started with AI', icon: Lightbulb, count: 24, desc: 'Beginner-friendly introductions to AI and LLMs' },
-  { name: 'Model Comparisons', icon: BarChart3, count: 18, desc: 'Side-by-side breakdowns of leading AI models' },
-  { name: 'Prompt Engineering', icon: MessageSquare, count: 31, desc: 'Write better prompts for better AI results' },
-  { name: 'AI Safety & Ethics', icon: Shield, count: 15, desc: 'Responsible AI use, bias, and alignment' },
-  { name: 'Coding with AI', icon: Code, count: 22, desc: 'Using AI assistants for development and debugging' },
-  { name: 'AI News & Trends', icon: TrendingUp, count: 40, desc: 'Latest breakthroughs, releases, and analysis' },
-];
-
-const latestGuides = [
-  { title: 'What Are Large Language Models? A Plain-English Guide', category: 'Getting Started', time: '6 min', icon: Brain },
-  { title: 'Claude vs GPT-4o vs Gemini: Which AI Should You Use?', category: 'Comparisons', time: '8 min', icon: BarChart3 },
-  { title: 'How to Write Prompts That Get Great Results', category: 'Prompt Engineering', time: '5 min', icon: MessageSquare },
-  { title: 'Understanding AI Hallucinations and How to Spot Them', category: 'Safety', time: '4 min', icon: Eye },
-  { title: 'Building Your First App with an AI API', category: 'Coding', time: '10 min', icon: Code },
-  { title: 'The State of Open-Source AI in 2026', category: 'News', time: '7 min', icon: TrendingUp },
-];
-
-const stats = [
-  { number: '200+', label: 'AI guides and resources' },
-  { number: '30+', label: 'Interactive AI tools' },
-  { number: '6', label: 'Major models covered' },
-];
-
-/* ── Main Component ── */
 const Index = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
+  const { t } = useLanguage();
+  const handleSearch = (e: React.FormEvent) => { e.preventDefault(); if (search.trim()) navigate(`/search?q=${encodeURIComponent(search.trim())}`); };
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (search.trim()) navigate(`/search?q=${encodeURIComponent(search.trim())}`);
-  };
+  const featuredGuides = useMemo(() => {
+    const picks: typeof guides[0][] = [];
+    const cats: GuideCategory[] = ['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides', 'app-guides'];
+    for (const cat of cats) { const g = guides.filter(g => g.category === cat); if (g.length) picks.push(g[0]); if (picks.length >= 6) break; }
+    if (picks.length < 6) picks.push(...guides.filter(g => !picks.includes(g)).slice(0, 6 - picks.length));
+    return picks.slice(0, 6);
+  }, []);
+
+  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
 
   return (
-    <div className="min-h-screen" style={{ background: '#ffffff', color: 'rgba(0,0,0,0.90)', fontFamily: 'Inter, -apple-system, system-ui, sans-serif' }}>
+    <div className="min-h-screen bg-background">
       <SEOHead
-        title="TekSure — AI & LLM Resources | Guides, Comparisons & Tools"
-        description="Your go-to resource for understanding AI and large language models. Guides, model comparisons, prompt engineering tips, and the latest AI news — all in plain English."
+        title="TekSure — Free Tech Help for Beginners | American Tech Support"
+        description="TekSure is an American tech support company offering free step-by-step guides, quick fixes, and verified tech support for seniors and beginners. No jargon, just answers."
         path="/"
         jsonLd={[
-          {
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            '@id': 'https://teksure.com/#organization',
-            name: 'TekSure',
-            url: 'https://teksure.com',
-            logo: 'https://teksure.com/teksure-logo.svg',
-            description: 'AI and LLM resources hub — guides, comparisons, tools, and news in plain English.',
-          },
-          {
-            '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            '@id': 'https://teksure.com/#website',
-            url: 'https://teksure.com',
-            name: 'TekSure',
-            description: 'AI & LLM resources — guides, model comparisons, prompt engineering, and AI news.',
-            publisher: { '@id': 'https://teksure.com/#organization' },
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: { '@type': 'EntryPoint', urlTemplate: 'https://teksure.com/search?q={search_term_string}' },
-              'query-input': 'required name=search_term_string',
-            },
-          },
+          { '@context': 'https://schema.org', '@type': 'Organization', '@id': 'https://teksure.com/#organization', name: 'TekSure', url: 'https://teksure.com', logo: 'https://teksure.com/og-image.png', description: 'American tech support company offering free step-by-step guides for seniors and beginners. Plain English. No jargon.', contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'hello@teksure.com', availableLanguage: 'English' } },
+          { '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://teksure.com/#website', url: 'https://teksure.com', name: 'TekSure', description: 'American tech support — free guides, tools, and verified technicians for beginners and seniors.', publisher: { '@id': 'https://teksure.com/#organization' }, potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: 'https://teksure.com/search?q={search_term_string}' }, 'query-input': 'required name=search_term_string' } },
         ]}
       />
+      <Navbar />
 
-      {/* ─── Navigation ─── */}
-      <nav className="sticky top-0 z-50" style={{ borderBottom: '1px solid rgba(0,0,0,0.06)', background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(12px)' }}>
-        <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" />
-          </Link>
-          <div className="hidden md:flex items-center gap-8">
-            <Link to="/guides" className="text-[15px] font-medium" style={{ color: 'rgba(0,0,0,0.55)' }}>Guides</Link>
-            <Link to="/tools" className="text-[15px] font-medium" style={{ color: 'rgba(0,0,0,0.55)' }}>Tools</Link>
-            <Link to="/blog" className="text-[15px] font-medium" style={{ color: 'rgba(0,0,0,0.55)' }}>News</Link>
-            <Link to="/about" className="text-[15px] font-medium" style={{ color: 'rgba(0,0,0,0.55)' }}>About</Link>
-          </div>
-          <div className="flex items-center gap-3">
-            <button className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-md text-sm" style={{ background: 'rgba(0,0,0,0.04)', color: 'rgba(0,0,0,0.45)' }}>
-              <Search className="w-3.5 h-3.5" /> Search...
-            </button>
-            <Link to="/guides" className="px-4 py-2 rounded-md text-sm font-semibold text-white" style={{ background: BLUE }}>
-              Explore
-            </Link>
-          </div>
+      {/* ══════════════════════════════════════════════════ */}
+      {/* HERO — dark, bold, dramatic                       */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="relative bg-[hsl(220,25%,8%)] text-white overflow-hidden">
+        {/* Decorative gradient orbs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full bg-primary/20 blur-[120px]" />
+          <div className="absolute top-1/3 -right-32 w-[400px] h-[400px] rounded-full bg-accent/15 blur-[100px]" />
+          <div className="absolute bottom-0 -left-20 w-[300px] h-[300px] rounded-full bg-primary/10 blur-[80px]" />
         </div>
-      </nav>
 
-      {/* ─── Hero Section ─── */}
-      <section className="py-20 md:py-28 px-6">
-        <div className="max-w-[800px] mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-6" style={{ background: `${BLUE}10`, color: BLUE }}>
-            <Bot className="w-3 h-3" /> Your AI & LLM Resource Hub
-          </div>
-          <h1 className="text-4xl md:text-[56px] font-bold leading-[1.05] tracking-tight mb-6" style={{ color: NAVY, letterSpacing: '-0.035em' }}>
-            Understand AI.{' '}
-            <span style={{ color: BLUE }}>Use it better.</span>
-          </h1>
-          <p className="text-lg md:text-xl leading-relaxed mb-10 max-w-[600px] mx-auto" style={{ color: 'rgba(0,0,0,0.50)' }}>
-            Guides, model comparisons, prompt tips, and the latest news on large language models — all explained in plain English.
-          </p>
-          <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: 'rgba(0,0,0,0.3)' }} />
-              <input
-                type="text"
-                placeholder="Search AI topics, models, guides..."
-                className="w-full h-12 pl-10 pr-4 rounded-lg text-[15px] outline-none"
-                style={{ border: '1px solid rgba(0,0,0,0.12)', background: '#ffffff' }}
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-              />
-            </div>
-            <button type="submit" className="h-12 px-6 rounded-lg text-[15px] font-semibold text-white shrink-0" style={{ background: BLUE }}>
-              Search
-            </button>
-          </form>
-        </div>
-      </section>
+        <div className="container relative pt-24 pb-20 md:pt-32 md:pb-28">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="sr-only">TekSure — American Tech Support Company | Free Help for Beginners &amp; Seniors</h1>
 
-      {/* ─── Stats Strip ─── */}
-      <section className="py-10 px-6" style={{ borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)', background: '#f6f5f4' }}>
-        <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <div className="text-3xl md:text-4xl font-bold tracking-tight mb-1" style={{ color: NAVY }}>{stat.number}</div>
-              <div className="text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+            <div className="stagger">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/10 text-sm text-white/70 mb-8">
+                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+                Free for everyone — no account needed
+              </div>
 
-      {/* ─── AI Models Overview ─── */}
-      <RevealSection>
-        <section className="py-16 md:py-24 px-6">
-          <div className="max-w-[1100px] mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-[36px] font-bold tracking-tight mb-3" style={{ color: NAVY, letterSpacing: '-0.025em' }}>
-                Leading AI Models
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6" style={{ letterSpacing: '-0.035em' }}>
+                Tech help that{' '}
+                <span className="bg-gradient-to-r from-teal-300 to-amber-300 bg-clip-text text-transparent">speaks your language</span>.
               </h2>
-              <p className="text-base" style={{ color: 'rgba(0,0,0,0.45)' }}>
-                Learn about the most important large language models and what makes each one different.
+
+              <p className="text-lg md:text-xl text-white/60 max-w-xl mx-auto leading-relaxed mb-10">
+                Free step-by-step guides, interactive tools, and real human support — all in plain English.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {aiModels.map((model) => (
-                <div
-                  key={model.name}
-                  className="group p-5 rounded-xl cursor-pointer transition-all hover:shadow-md"
-                  style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.06)' }}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: `${model.color}15` }}>
-                      <model.icon className="w-5 h-5" style={{ color: model.color }} />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        <h3 className="text-[15px] font-semibold" style={{ color: NAVY }}>{model.name}</h3>
-                        <span className="text-xs" style={{ color: GRAY }}>{model.maker}</span>
-                      </div>
-                      <p className="text-sm leading-relaxed" style={{ color: 'rgba(0,0,0,0.50)' }}>{model.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </RevealSection>
 
-      {/* ─── Resource Categories ─── */}
-      <RevealSection>
-        <section className="py-16 md:py-24 px-6" style={{ background: '#f6f5f4' }}>
-          <div className="max-w-[1100px] mx-auto">
-            <div className="flex items-end justify-between mb-10">
-              <div>
-                <h2 className="text-2xl md:text-[36px] font-bold tracking-tight mb-2" style={{ color: NAVY, letterSpacing: '-0.025em' }}>
-                  Browse by topic
-                </h2>
-                <p className="text-base" style={{ color: 'rgba(0,0,0,0.45)' }}>Deep dives into every aspect of AI.</p>
+            {/* Search */}
+            <form onSubmit={handleSearch} className="max-w-xl mx-auto mb-8">
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/30" />
+                <Input
+                  placeholder="What do you need help with?"
+                  aria-label="Search for tech help"
+                  className="pl-12 pr-24 h-14 bg-white/[0.08] border-white/[0.12] text-white placeholder:text-white/30 rounded-2xl text-base focus:bg-white/[0.12] focus:border-white/25 transition-all duration-300"
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                />
+                <Button type="submit" size="sm" className="absolute right-2 top-1/2 -translate-y-1/2 h-10 rounded-xl px-5 text-sm font-medium">
+                  Search
+                </Button>
               </div>
-              <Link to="/guides" className="hidden md:flex items-center gap-1 text-sm font-semibold" style={{ color: BLUE }}>
-                View all <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {resourceCategories.map((cat) => (
-                <div
-                  key={cat.name}
-                  className="flex items-start gap-4 p-5 rounded-xl cursor-pointer transition-shadow hover:shadow-md"
-                  style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.06)' }}
-                >
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: `${BLUE}10` }}>
-                    <cat.icon className="w-5 h-5" style={{ color: BLUE }} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[15px] font-semibold mb-1" style={{ color: NAVY }}>{cat.name}</div>
-                    <p className="text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>{cat.desc}</p>
-                    <span className="text-xs mt-2 inline-block" style={{ color: GRAY }}>{cat.count} articles</span>
-                  </div>
-                </div>
+            </form>
+
+            {/* Quick topic pills */}
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+              {quickProblems.map((p) => (
+                <button key={p.query} onClick={() => navigate(`/guides?q=${encodeURIComponent(p.query)}`)}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/[0.07] border border-white/[0.1] text-sm text-white/70 hover:bg-white/[0.12] hover:text-white transition-all duration-200">
+                  <span>{p.emoji}</span> {p.label}
+                </button>
               ))}
             </div>
-          </div>
-        </section>
-      </RevealSection>
 
-      {/* ─── Latest Guides ─── */}
-      <RevealSection>
-        <section className="py-16 md:py-24 px-6">
-          <div className="max-w-[1100px] mx-auto">
-            <h2 className="text-2xl md:text-[36px] font-bold tracking-tight mb-10 text-center" style={{ color: NAVY, letterSpacing: '-0.025em' }}>
-              Latest guides
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {latestGuides.map((guide) => (
-                <div
-                  key={guide.title}
-                  className="group p-5 rounded-xl cursor-pointer transition-all hover:shadow-md"
-                  style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.06)' }}
-                >
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3" style={{ background: `${BLUE}10` }}>
-                    <guide.icon className="w-4 h-4" style={{ color: BLUE }} />
-                  </div>
-                  <h3 className="text-[15px] font-semibold mb-2 leading-snug" style={{ color: NAVY }}>
-                    {guide.title}
-                  </h3>
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium" style={{ background: `${BLUE}10`, color: BLUE }}>
-                      {guide.category}
-                    </span>
-                    <span className="text-xs" style={{ color: 'rgba(0,0,0,0.35)' }}>{guide.time} read</span>
-                  </div>
-                </div>
-              ))}
+            {/* CTAs */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all">
+                <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-8 text-base border-white/20 text-white hover:bg-white/10">
+                <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
+              </Button>
             </div>
-          </div>
-        </section>
-      </RevealSection>
 
-      {/* ─── Why TekSure ─── */}
-      <RevealSection>
-        <section className="py-16 md:py-24 px-6" style={{ background: '#f6f5f4' }}>
-          <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-2xl md:text-[36px] font-bold tracking-tight mb-4" style={{ color: NAVY, letterSpacing: '-0.025em' }}>
-              AI information you can trust
-            </h2>
-            <p className="text-base mb-10" style={{ color: 'rgba(0,0,0,0.45)' }}>
-              We cut through the hype and explain AI in language that actually makes sense.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {[
-                { icon: Eye, title: 'No hype, no jargon', desc: 'Clear explanations of real AI capabilities and limitations.' },
-                { icon: Layers, title: 'Always up to date', desc: 'New models and breakthroughs covered as they happen.' },
-                { icon: Lock, title: 'Unbiased coverage', desc: 'We cover all major AI providers — no favorites, no sponsors.' },
-              ].map((item) => (
-                <div key={item.title} className="p-5 rounded-xl text-left" style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.06)' }}>
-                  <item.icon className="w-5 h-5 mb-3" style={{ color: BLUE }} />
-                  <h3 className="text-[15px] font-semibold mb-1" style={{ color: NAVY }}>{item.title}</h3>
-                  <p className="text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>{item.desc}</p>
-                </div>
-              ))}
+            {/* Trust bar */}
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-sm text-white/50">
+              <div className="flex items-center gap-2"><Users className="h-4 w-4 text-primary" /><span><strong className="text-white">10,000+</strong> people helped</span></div>
+              <div className="flex items-center gap-2"><Star className="h-4 w-4 text-amber-400" /><span><strong className="text-white">4.9/5</strong> average rating</span></div>
+              <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /><span><strong className="text-white">{guides.length}+</strong> free guides</span></div>
             </div>
-          </div>
-        </section>
-      </RevealSection>
-
-      {/* ─── Newsletter ─── */}
-      <RevealSection>
-        <section className="py-16 md:py-24 px-6">
-          <div className="max-w-[500px] mx-auto text-center">
-            <Mail className="w-6 h-6 mx-auto mb-4" style={{ color: BLUE }} />
-            <h2 className="text-xl font-bold mb-2" style={{ color: NAVY }}>Weekly AI Digest</h2>
-            <p className="text-sm mb-6" style={{ color: 'rgba(0,0,0,0.45)' }}>
-              The most important AI developments, explained in under 5 minutes. Every Sunday.
-            </p>
-            <NewsletterSignup />
-          </div>
-        </section>
-      </RevealSection>
-
-      {/* ─── Final CTA ─── */}
-      <section className="py-16 md:py-24 px-6" style={{ background: NAVY }}>
-        <div className="max-w-[600px] mx-auto text-center">
-          <h2 className="text-2xl md:text-[40px] font-bold tracking-tight mb-4 text-white" style={{ letterSpacing: '-0.03em' }}>
-            Start exploring AI today
-          </h2>
-          <p className="text-base mb-8" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            200+ free guides covering every major AI model, use case, and technique.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link to="/guides" className="inline-flex items-center justify-center h-12 px-6 rounded-lg text-[15px] font-semibold" style={{ background: '#ffffff', color: NAVY }}>
-              Browse All Guides <ArrowRight className="w-4 h-4 ml-2" />
-            </Link>
-            <Link to="/tools" className="inline-flex items-center justify-center h-12 px-6 rounded-lg text-[15px] font-semibold text-white" style={{ border: '1px solid rgba(255,255,255,0.25)' }}>
-              Try AI Tools
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ─── Footer ─── */}
-      <footer className="py-12 px-6" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-        <div className="max-w-[1100px] mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <Link to="/" className="inline-block mb-4">
-                <img src="/teksure-logo.svg" alt="TekSure" className="h-6 w-auto" />
+      {/* ══════════════════════════════════════════════════ */}
+      {/* QUICK SOLUTIONS                                   */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <RevealSection>
+            <div className="text-center mb-14">
+              <h2 className="display-heading text-3xl md:text-4xl mb-3">Quick solutions, right now</h2>
+              <p className="text-muted-foreground max-w-md mx-auto text-lg">The most common fixes — no appointment needed.</p>
+            </div>
+          </RevealSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto stagger">
+            {quickProblems.map((fix) => (
+              <Link key={fix.slug} to={`/guides/${fix.slug}`} className="block group">
+                <div className="glow-card h-full">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors text-2xl">
+                      {fix.emoji}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-base mb-1 group-hover:text-primary transition-colors">{fix.label}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{fix.fix}</p>
+                    </div>
+                  </div>
+                </div>
               </Link>
-              <p className="text-sm" style={{ color: 'rgba(0,0,0,0.40)' }}>AI & LLM resources in plain English.</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3" style={{ color: NAVY }}>Resources</h4>
-              <div className="flex flex-col gap-2 text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>
-                <Link to="/guides" className="hover:underline">Guides</Link>
-                <Link to="/tools" className="hover:underline">AI Tools</Link>
-                <Link to="/glossary" className="hover:underline">AI Glossary</Link>
-                <Link to="/blog" className="hover:underline">News</Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3" style={{ color: NAVY }}>Topics</h4>
-              <div className="flex flex-col gap-2 text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>
-                <Link to="/guides" className="hover:underline">Getting Started</Link>
-                <Link to="/guides" className="hover:underline">Model Comparisons</Link>
-                <Link to="/guides" className="hover:underline">Prompt Engineering</Link>
-                <Link to="/guides" className="hover:underline">AI Safety</Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-3" style={{ color: NAVY }}>Company</h4>
-              <div className="flex flex-col gap-2 text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>
-                <Link to="/about" className="hover:underline">About</Link>
-                <Link to="/blog" className="hover:underline">Blog</Link>
-                <Link to="/forum" className="hover:underline">Community</Link>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="pt-6 text-center text-sm" style={{ borderTop: '1px solid rgba(0,0,0,0.06)', color: 'rgba(0,0,0,0.30)' }}>
-            &copy; 2026 TekSure. AI & LLM resources for everyone.
+
+          <RevealSection className="mt-6 max-w-4xl mx-auto">
+            <Link to="/safety/scam-alerts" className="block group">
+              <div className="flex items-center gap-4 p-5 rounded-2xl border border-amber-200 dark:border-amber-800/40 bg-gradient-to-r from-amber-50 to-amber-50/30 dark:from-amber-950/40 dark:to-transparent shadow-sm hover:shadow-md transition-all">
+                <div className="h-12 w-12 rounded-xl bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center text-2xl shrink-0">🛡️</div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base mb-0.5">Scam Alert Center</h3>
+                  <p className="text-sm text-muted-foreground">Latest scams targeting everyday users — stay informed and protected.</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-amber-500/60 group-hover:text-amber-600 group-hover:translate-x-1 transition-all shrink-0" />
+              </div>
+            </Link>
+          </RevealSection>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* BROWSE BY CATEGORY                                */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-28 bg-muted/50 border-y border-border/50">
+        <div className="container">
+          <RevealSection>
+            <div className="flex items-end justify-between mb-12">
+              <div>
+                <h2 className="display-heading text-3xl md:text-4xl mb-2">Browse by Category</h2>
+                <p className="text-muted-foreground text-lg">Find guides organized by what you need help with.</p>
+              </div>
+              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
+            </div>
+          </RevealSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
+            {visibleCategories.map((cat) => {
+              const Icon = categoryIcons[cat] || BookOpen;
+              const count = guides.filter(g => g.category === cat).length;
+              const c = categoryColors[cat] || { border: 'border-l-gray-400', iconBg: 'bg-muted', text: 'text-muted-foreground' };
+              return (
+                <Link key={cat} to={`/guides?category=${cat}`} className="block group">
+                  <div className={`glow-card h-full border-l-4 ${c.border}`}>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className={`h-10 w-10 rounded-lg ${c.iconBg} flex items-center justify-center`}>
+                          <Icon className={`h-5 w-5 ${c.text}`} />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-base group-hover:text-primary transition-colors">{categoryLabels[cat]}</h3>
+                          <span className="text-xs text-muted-foreground">{count} guides</span>
+                        </div>
+                      </div>
+                      <ChevronRight className="h-5 w-5 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="md:hidden text-center mt-8">
+            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link></Button>
           </div>
         </div>
-      </footer>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* HOW IT WORKS                                      */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <RevealSection>
+            <div className="text-center mb-16">
+              <h2 className="display-heading text-3xl md:text-4xl mb-3">How TekSure Works</h2>
+              <p className="text-muted-foreground max-w-sm mx-auto text-lg">Three steps. Simpler than calling your cable company.</p>
+            </div>
+          </RevealSection>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto stagger">
+            {[
+              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Your phone or email — that\'s all we need.', emoji: '💬', color: 'from-teal-500/20 to-teal-500/5' },
+              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.', emoji: '📞', color: 'from-blue-500/20 to-blue-500/5' },
+              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.', emoji: '✅', color: 'from-green-500/20 to-green-500/5' },
+            ].map((s) => (
+              <div key={s.step} className={`rounded-2xl border border-border bg-gradient-to-b ${s.color} p-8 text-center relative overflow-hidden shadow-sm`}>
+                <div className="absolute top-3 right-4 text-6xl font-black text-foreground/[0.04] leading-none select-none">{s.step}</div>
+                <div className="relative">
+                  <div className="h-16 w-16 rounded-2xl bg-card border border-border shadow-sm flex items-center justify-center mx-auto mb-5 text-3xl">
+                    {s.emoji}
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">{s.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 shadow-md shadow-primary/20 text-base">
+              <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* POPULAR GUIDES                                    */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-28 bg-muted/50 border-y border-border/50">
+        <div className="container">
+          <RevealSection>
+            <div className="flex items-end justify-between mb-12">
+              <div>
+                <h2 className="display-heading text-3xl md:text-4xl mb-2">Popular Guides</h2>
+                <p className="text-muted-foreground text-lg">The most helpful articles for beginners.</p>
+              </div>
+              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
+            </div>
+          </RevealSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger">
+            {featuredGuides.map((guide) => {
+              const c = categoryColors[guide.category] || { iconBg: 'bg-muted', text: 'text-muted-foreground' };
+              return (
+                <Link key={guide.slug} to={`/guides/${guide.slug}`} className="block group">
+                  <div className="glow-card h-full">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`h-12 w-12 rounded-xl ${c.iconBg} flex items-center justify-center text-2xl shrink-0`}>{guide.emoji}</div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge variant="secondary" className="text-xs font-medium rounded-full">{categoryLabels[guide.category]}</Badge>
+                        <span className="text-xs text-muted-foreground">{guide.readTime}</span>
+                      </div>
+                    </div>
+                    <h3 className="font-semibold text-base mb-2 group-hover:text-primary transition-colors leading-snug">{guide.title}</h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="md:hidden text-center mt-8">
+            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link></Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* NEWSLETTER + CTA                                  */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="relative bg-[hsl(220,25%,8%)] text-white overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/3 w-[500px] h-[400px] rounded-full bg-primary/15 blur-[100px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full bg-accent/10 blur-[80px]" />
+        </div>
+
+        <div className="container relative py-20 md:py-28">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1] mb-4" style={{ letterSpacing: '-0.035em' }}>
+                Ready to feel confident with technology?
+              </h2>
+              <p className="text-white/60 mb-8 text-lg leading-relaxed">
+                Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 text-base shadow-lg shadow-primary/30">
+                  <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-8 text-base border-white/20 text-white hover:bg-white/10">
+                  <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/[0.05] backdrop-blur-sm p-8">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-11 w-11 rounded-xl bg-white/10 flex items-center justify-center text-xl">✉️</div>
+                <div>
+                  <h3 className="font-semibold text-lg">Free weekly tech tip</h3>
+                  <p className="text-sm text-white/50">One helpful tip every Sunday. No spam.</p>
+                </div>
+              </div>
+              <NewsletterSignup />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };

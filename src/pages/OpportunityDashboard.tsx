@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -72,7 +73,7 @@ export default function OpportunityDashboard() {
   const [sortBy, setSortBy] = useState<SortKey>('revenue');
 
   const filtered = useMemo(() => {
-    let list = category === 'all' ? [...models] : models.filter(m => m.category === category);
+    const list = category === 'all' ? [...models] : models.filter(m => m.category === category);
     const sorters: Record<SortKey, (a: BusinessModel, b: BusinessModel) => number> = {
       revenue: (a, b) => b.monthlyRevenue - a.monthlyRevenue,
       startupCost: (a, b) => a.startupCost - b.startupCost,
@@ -137,6 +138,7 @@ export default function OpportunityDashboard() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEOHead title="Business Opportunity Dashboard — TekSure" description="Compare 16 business models across revenue, startup cost, margins, and break-even timelines." path="/opportunity-dashboard" />
       <Navbar />
       <main className="container py-8 space-y-8">
         {/* Header */}

@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import { checkRateLimit } from '@/lib/rateLimit';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -24,13 +25,11 @@ export default function NewThread() {
   const [body, setBody] = useState('');
   const [category, setCategory] = useState<ForumCategory>('general');
 
-  if (!user) {
-    navigate('/login', { state: { from: '/forum/new' } });
-    return null;
-  }
-
   const createThread = useMutation({
     mutationFn: async () => {
+      if (!checkRateLimit('forum-post', 5, 600_000)) {
+        throw new Error('You\'ve posted several times recently. Please wait a few minutes.');
+      }
       const { data, error } = await supabase
         .from('forum_threads' as any)
         .insert({
@@ -63,6 +62,11 @@ export default function NewThread() {
     if (!title.trim() || !body.trim()) return;
     createThread.mutate();
   };
+
+  if (!user) {
+    navigate('/login', { state: { from: '/forum/new' } });
+    return null;
+  }
 
   const categoryChoices = CATEGORIES.filter(c => c.value !== 'all');
   const isValid = title.trim().length >= 5 && body.trim().length >= 10;

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -19,13 +19,16 @@ import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { BackToTop } from "@/components/BackToTop";
+import { CookieConsent } from "@/components/CookieConsent";
+
+const isServer = typeof window === "undefined";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
 const Index                  = lazy(() => import("./pages/Index"));
 const Login                  = lazy(() => import("./pages/Login"));
 const Signup                 = lazy(() => import("./pages/Signup"));
 const HowItWorks             = lazy(() => import("./pages/HowItWorks"));
-const Pricing                = lazy(() => import("./pages/Pricing"));
 const Guides                 = lazy(() => import("./pages/Guides"));
 const GuideDetail            = lazy(() => import("./pages/GuideDetail"));
 const CustomerDashboard      = lazy(() => import("./pages/customer/Dashboard"));
@@ -34,6 +37,7 @@ const TechDashboard          = lazy(() => import("./pages/tech/Dashboard"));
 const TechJobRoom            = lazy(() => import("./pages/tech/JobRoom"));
 const AdminConsole           = lazy(() => import("./pages/admin/Console"));
 const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
+const KnowledgeBase          = lazy(() => import("./pages/admin/KnowledgeBase"));
 const OpportunityDashboard   = lazy(() => import("./pages/OpportunityDashboard"));
 const Glossary               = lazy(() => import("./pages/Glossary"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
@@ -77,6 +81,10 @@ const ThreadDetail           = lazy(() => import("./pages/forum/ThreadDetail"));
 const NewThread              = lazy(() => import("./pages/forum/NewThread"));
 const ParentalControls       = lazy(() => import("./pages/ParentalControls"));
 const Favorites              = lazy(() => import("./pages/Favorites"));
+const TechJournal            = lazy(() => import("./pages/TechJournal"));
+const MyDevices              = lazy(() => import("./pages/MyDevices"));
+const Achievements           = lazy(() => import("./pages/Achievements"));
+const QuickReferenceCards    = lazy(() => import("./pages/QuickReferenceCards"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
 const MyRequests             = lazy(() => import("./pages/MyRequests"));
 const MyPath                 = lazy(() => import("./pages/MyPath"));
@@ -106,6 +114,10 @@ const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
 const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
+const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const GeointResources        = lazy(() => import("./pages/tools/GeointResources"));
+const OsintCollections       = lazy(() => import("./pages/tools/OsintCollections"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
 const Articles               = lazy(() => import("./pages/Articles"));
@@ -117,6 +129,14 @@ const Mockups                = lazy(() => import("./pages/Mockups"));
 const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
+const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
+const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
+const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
+const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
+const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
+const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
+const Privacy                = lazy(() => import("./pages/Privacy"));
+const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -129,23 +149,27 @@ const queryClient = new QueryClient({
   },
 });
 
-/** Minimal spinner shown during lazy-load */
+/** Skeleton loading screen shown during lazy-load — matches page layout for less perceived delay */
 function PageLoader() {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      role="status"
-      aria-live="polite"
-      aria-label="Loading page"
-    >
-      <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" aria-hidden="true" />
+    <div className="min-h-screen bg-background" role="status" aria-live="polite" aria-label="Loading page">
+      <div className="h-14 border-b border-border" />
+      <div className="container max-w-4xl py-8 space-y-6">
+        <div className="h-9 w-3/4 bg-muted animate-pulse rounded" />
+        <div className="h-5 w-1/2 bg-muted animate-pulse rounded" />
+        <div className="space-y-4 pt-4">
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
+        </div>
+      </div>
     </div>
   );
 }
 
 /** Offline banner — shown at top of screen when network is lost */
 function OfflineBanner() {
-  const [offline, setOffline] = useState(!navigator.onLine);
+  const [offline, setOffline] = useState(isServer ? false : !navigator.onLine);
   useEffect(() => {
     const goOffline = () => setOffline(true);
     const goOnline  = () => setOffline(false);
@@ -173,18 +197,20 @@ const AppContent = () => {
   const { open, onClose } = useSearchModal();
 
   return (
-    <BrowserRouter>
+    <>
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-sm focus:font-medium">
         Skip to main content
       </a>
       <OfflineBanner />
-      <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />
+      {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
       {/* FloatingChat disabled — TekBot handles all chat */}
       <ScamPanicButton />
+      <BackToTop />
       <Toaster />
       <Sonner />
+      {!isServer && <CookieConsent />}
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
@@ -196,7 +222,7 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/pricing" element={<Pricing />} />
+          {/* Pricing page TBD */}
           <Route path="/guides" element={<Guides />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="/about" element={<About />} />
@@ -208,6 +234,7 @@ const AppContent = () => {
           <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
+          <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/quick-fixes" element={<QuickFixes />} />
@@ -260,6 +287,10 @@ const AppContent = () => {
           <Route path="/forum/:id" element={<ThreadDetail />} />
           <Route path="/safety/parental-controls" element={<ParentalControls />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/journal" element={<TechJournal />} />
+          <Route path="/my-devices" element={<MyDevices />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/quick-reference-cards" element={<QuickReferenceCards />} />
           <Route path="/get-help" element={<GetHelp />} />
           <Route path="/my-path" element={<MyPath />} />
           <Route path="/my-requests" element={<MyRequests />} />
@@ -277,6 +308,10 @@ const AppContent = () => {
           <Route path="/family-sharing" element={<FamilySharing />} />
           <Route path="/caregiver" element={<Caregiver />} />
           <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
+          <Route path="/tools/osint-tools" element={<OsintTools />} />
+          <Route path="/tools/osint-framework" element={<OsintFramework />} />
+          <Route path="/tools/geoint" element={<GeointResources />} />
+          <Route path="/tools/osint-collections" element={<OsintCollections />} />
           <Route path="/cybersec" element={<CyberSec />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/explore" element={<Explore />} />
@@ -285,23 +320,34 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
+          <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
+          <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
+          <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>
       </Suspense>
-    </BrowserRouter>
+    </>
   );
 };
 
-const App = () => (
+/**
+ * AppShell wraps all providers and routes. The router (BrowserRouter or
+ * StaticRouter) is supplied externally by the entry points so the same
+ * component tree works for both client-side and server-side rendering.
+ */
+export const AppShell = ({ children, helmetContext }: { children?: ReactNode; helmetContext?: Record<string, unknown> }) => (
   <ErrorBoundary>
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext ?? {}}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <LanguageProvider>
             <SeniorModeProvider>
               <HighContrastProvider>
                 <AuthProvider>
+                  {children}
                   <AppContent />
                 </AuthProvider>
               </HighContrastProvider>
@@ -311,6 +357,13 @@ const App = () => (
       </QueryClientProvider>
     </HelmetProvider>
   </ErrorBoundary>
+);
+
+/** Default export for backward compatibility (pure SPA / dev fallback) */
+const App = () => (
+  <BrowserRouter>
+    <AppShell />
+  </BrowserRouter>
 );
 
 export default App;

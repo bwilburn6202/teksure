@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
+import { SafeLink } from '@/components/SafeLink';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
@@ -71,7 +72,7 @@ export default function ScamReport() {
               <p className="font-semibold text-amber-800 mb-2 flex items-center gap-2"><AlertTriangle className="h-4 w-4" /> If you lost money or shared personal details:</p>
               <ul className="text-sm text-amber-700 space-y-1">
                 <li>• <strong>Call your bank immediately</strong> to freeze the account or cancel any payments.</li>
-                <li>• Report to the <strong>FTC</strong>: <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer" className="underline">ReportFraud.ftc.gov</a> or 1-877-382-4357.</li>
+            <li>• Report to the <strong>FTC</strong>: <SafeLink to="https://reportfraud.ftc.gov" className="underline" target="_blank" rel="noopener noreferrer">ReportFraud.ftc.gov</SafeLink> or 1-877-382-4357.</li>
                 <li>• Change your passwords on any affected accounts straight away.</li>
               </ul>
             </div>

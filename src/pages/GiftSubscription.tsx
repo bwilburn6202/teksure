@@ -92,7 +92,7 @@ export default function GiftSubscription() {
                       ))}
                     </ul>
                     <Button className={`w-full gap-2 rounded-xl ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}`} asChild>
-                      <Link to="/pricing"><Gift className="h-4 w-4" /> Give This Gift</Link>
+                      <Link to="/get-help"><Gift className="h-4 w-4" /> Give This Gift</Link>
                     </Button>
                   </CardContent>
                 </Card>

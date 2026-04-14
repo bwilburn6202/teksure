@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowLeft, MessageSquare, Clock, Send, AlertCircle } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { formatDistanceToNow } from 'date-fns';
 import { CATEGORIES, CATEGORY_COLORS, type ForumCategory } from './Index';
 import { useToast } from '@/hooks/use-toast';
@@ -30,6 +31,11 @@ interface ForumReply {
   body: string;
   author_name: string;
   created_at: string;
+}
+
+function calcReadTime(text: string): string {
+  const words = text?.split(/\s+/).length ?? 0;
+  return `${Math.max(1, Math.ceil(words / 200))} min read`;
 }
 
 export default function ThreadDetail() {
@@ -140,6 +146,8 @@ export default function ThreadDetail() {
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto px-4 py-8">
+          <PageBreadcrumb segments={[{ label: 'Forum', href: '/forum' }, { label: thread?.title ?? 'Thread' }]} />
+
           <Link
             to="/forum"
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6 transition-colors"
@@ -164,6 +172,10 @@ export default function ThreadDetail() {
                 <span className="flex items-center gap-1">
                   <Clock className="h-3.5 w-3.5" />
                   {formatDistanceToNow(new Date(thread.created_at), { addSuffix: true })}
+                </span>
+                <span className="flex items-center gap-1">
+                  <Clock className="h-3.5 w-3.5" />
+                  {calcReadTime(thread.body)}
                 </span>
                 <span className="flex items-center gap-1 ml-auto">
                   <MessageSquare className="h-3.5 w-3.5" />

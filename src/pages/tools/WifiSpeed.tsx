@@ -3,11 +3,10 @@ import { Wifi, ExternalLink, Lightbulb, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
+import { SafeLink } from '@/components/SafeLink';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import {
-  Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
-} from '@/components/ui/breadcrumb';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 const tips = [
   { emoji: '📡', title: 'Move closer to your router', desc: 'Walls and distance weaken Wi-Fi signals significantly.' },
@@ -28,6 +27,10 @@ const WifiSpeed = () => {
       />
       <Navbar />
 
+      <div className="container pt-4">
+        <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Wi-Fi Speed Test' }]} />
+      </div>
+
       <section className="border-b">
         <div className="container py-16 md:py-20">
           <div className="max-w-xl mx-auto text-center">
@@ -39,16 +42,6 @@ const WifiSpeed = () => {
       </section>
 
       <section className="container py-12 max-w-2xl">
-        <Breadcrumb className="mb-8">
-          <BreadcrumbList>
-            <BreadcrumbItem><BreadcrumbLink asChild><Link to="/">Home</Link></BreadcrumbLink></BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem><BreadcrumbLink asChild><Link to="/quick-fixes">Tools</Link></BreadcrumbLink></BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem><BreadcrumbPage>WiFi Speed Test</BreadcrumbPage></BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-
         {/* Speed test embed */}
         <Card className="mb-10 overflow-hidden">
           <CardContent className="pt-6 text-center space-y-4">
@@ -56,9 +49,9 @@ const WifiSpeed = () => {
               Click the button below to test your internet speed using Fast.com (powered by Netflix).
             </p>
             <Button asChild size="lg" className="gap-2">
-              <a href="https://fast.com" target="_blank" rel="noopener noreferrer">
+              <SafeLink to="https://fast.com" target="_blank" rel="noopener noreferrer">
                 Test Your Speed <ExternalLink className="h-4 w-4" />
-              </a>
+              </SafeLink>
             </Button>
             <p className="text-xs text-muted-foreground">Opens in a new tab. Free, no sign-up required.</p>
           </CardContent>
