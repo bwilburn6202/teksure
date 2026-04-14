@@ -13,6 +13,7 @@ export interface Badge {
 const BADGE_KEY = 'teksure-badges';
 
 function getStoredBadges(): Record<string, string> {
+  if (typeof window === 'undefined') return {};
   try {
     const raw = localStorage.getItem(BADGE_KEY);
     return raw ? (JSON.parse(raw) as Record<string, string>) : {};

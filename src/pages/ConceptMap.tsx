@@ -83,7 +83,7 @@ const NODES: MapNode[] = [
   { id: 'r-stripe',  label: 'Stripe Payments',   group: 'revenue',   fx: 0.37, fy: 0.92, r: 19,
     desc: 'Booking and premium payments via Stripe' },
   { id: 'r-prem',    label: 'Premium Access',    group: 'revenue',   fx: 0.51, fy: 0.94, r: 19,
-    desc: 'Gated content and pro tools tier', href: '/pricing' },
+    desc: 'Gated content and pro tools tier' },
   { id: 'r-aff',     label: 'Affiliate Links',   group: 'revenue',   fx: 0.65, fy: 0.92, r: 19,
     desc: 'Monetized product recommendations in guides' },
   { id: 'infra',     label: 'Infrastructure',    group: 'infra',     fx: 0.35, fy: 0.24, r: 24,

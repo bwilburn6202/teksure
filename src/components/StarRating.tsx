@@ -18,6 +18,7 @@ import { useAuth } from '@/contexts/AuthContext';
 
 /** Stable anonymous key stored in localStorage so anon users keep their rating */
 function getAnonKey(): string {
+  if (typeof window === 'undefined') return 'ssr';
   const KEY = 'teksure_anon_rater';
   let k = localStorage.getItem(KEY);
   if (!k) {

@@ -87,7 +87,7 @@ export default function Certificate() {
           <>
             {/* Live certificate preview */}
             {latestPath && (
-              <div ref={certRef} className="rounded-2xl border border-border bg-white p-10 text-center mb-8">
+              <div ref={certRef} className="rounded-2xl border border-border bg-card p-10 text-center mb-8">
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">TekSure · Certificate of Achievement</p>
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3"><latestPath.icon className="h-8 w-8 text-primary" /></div>
                 <h2 className="text-2xl font-bold mb-1">{latestPath.name} Certificate</h2>

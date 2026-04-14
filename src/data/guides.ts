@@ -2508,7 +2508,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Increase text size everywhere', content: 'iPhone: Settings → Display. Mac: System Settings → Accessibility → Display. Windows: Settings → Accessibility → Text Size.' },
       { title: 'Use dark mode', content: 'Dark mode reduces eye strain in low light. Available on iPhone, Mac, Windows, and most apps.' },
-      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 16+), Mac, Android, and Windows 11.' },
+      { title: 'Enable live captions', content: 'Get real-time subtitles for any audio on iPhone (iOS 18 and later), Mac (macOS Sonoma and later), Android, and Windows 11.' },
       { title: 'Magnification tools', content: 'iPhone: triple-click home/side button. Mac: Cmd+Option+= to zoom. Windows: Win+Plus to magnify.', tip: 'For the full iPhone accessibility guide, visit support.apple.com/en-us/guide/iphone/iph3e2e1fb0/ios. For Android accessibility, visit support.google.com/accessibility/android/answer/6006972. AARP also has free tech help articles at aarp.org/personal-technology.' },
     ]
   },
@@ -2882,7 +2882,7 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     publishedAt: '2026-03-09',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 16+). Just tap and hold on a subject to lift it out.' },
+      { title: 'Remove backgrounds instantly', content: 'Use remove.bg or the built-in background removal in iPhone Photos (iOS 16 and later, including iOS 18). Just tap and hold on a subject to lift it out.' },
       { title: 'Enhance photo quality', content: 'Tools like Remini and Let\'s Enhance use AI to upscale blurry photos, sharpen details, and improve lighting.' },
       { title: 'Remove unwanted objects', content: 'Google Photos Magic Eraser, Samsung Object Eraser, and Adobe\'s Generative Fill can remove photobombers and distractions.' },
       { title: 'AI filters and styles', content: 'Apps like Prisma and Lensa transform photos into artwork, cartoon styles, or professional headshots using AI.' },
@@ -6058,20 +6058,13 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**iPhone with Face ID (iPhone X and newer)**
-Press the Side button and Volume Up button at the same time, then quickly release both. You'll see a white flash and hear a camera click sound. A small thumbnail appears in the bottom-left corner — tap it to edit or share, or swipe it away to save it automatically to Photos.
-
-**iPhone with Home button (iPhone 8 and older)**
-Press the Side (or Top) button and the Home button at the same time, then quickly release. The same white flash and thumbnail will appear.
-
-**Finding your screenshot**
-Screenshots are saved to the Photos app, in the Screenshots album. Open Photos > Albums > Screenshots to find them all in one place.
-
-**Screenshot of a long page (Full Page)**
-After taking a screenshot, tap the thumbnail and then tap "Full Page" at the top. This captures the entire webpage or document — useful for long emails or articles.
-
-**Tip: use Assistive Touch**
-If the buttons are hard to press, go to Settings > Accessibility > Touch > Assistive Touch > turn it on. You can then take screenshots by tapping the floating button on screen.`
+    steps: [
+      { title: 'Take a screenshot on iPhone with Face ID (iPhone X and newer)', content: 'Press the Side button (right edge) and the Volume Up button (left edge) at the same time, then quickly release both. You will see a white flash and hear a camera click. A small thumbnail appears in the bottom-left corner.', tip: 'Tap the thumbnail to edit or share the screenshot immediately, or swipe it away to save it to Photos automatically.' },
+      { title: 'Take a screenshot on iPhone with a Home button (iPhone 8 and older)', content: 'Press the Side button (or Top button) and the Home button at the same time, then quickly release. You will see the same white flash and a thumbnail will appear in the bottom-left corner.' },
+      { title: 'Find your screenshots in Photos', content: 'All screenshots are saved to the Photos app automatically. Open Photos, tap Albums at the bottom, then scroll down to find the Screenshots album. All your captures are stored there.' },
+      { title: 'Take a full-page screenshot', content: 'After taking a screenshot, tap the thumbnail before it disappears. At the top of the editing screen, tap "Full Page." This captures the entire webpage or document — great for long emails or articles you want to save.', tip: 'Full Page screenshots only work in Safari (Apple\'s web browser), not in all apps.' },
+      { title: 'Use Assistive Touch if buttons are hard to press', content: 'If pressing two buttons at once is difficult, turn on Assistive Touch. Go to Settings > Accessibility > Touch > Assistive Touch and turn it on. A floating button will appear on your screen. Tap it, then tap Device > More > Screenshot to take a screenshot with one tap.', tip: 'Apple\'s full guide to taking screenshots is at support.apple.com/en-us/111965' },
+    ],
   },
   {
     slug: 'how-to-take-a-screenshot-android',
@@ -6084,20 +6077,12 @@ If the buttons are hard to press, go to Settings > Accessibility > Touch > Assis
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**The universal method**
-Press the Power button and Volume Down button at the same time and hold for one second, then release. You'll see the screen flash and a screenshot notification in the notification bar.
-
-**Swipe method (Samsung Galaxy)**
-On Samsung phones, go to Settings > Advanced Features > Motions and Gestures and enable "Palm swipe to capture." Then swipe the edge of your hand across the screen from right to left (or left to right) to take a screenshot.
-
-**Three-finger swipe (some Android phones)**
-On phones from Huawei, OnePlus, and some others: swipe three fingers down the screen simultaneously.
-
-**Finding your screenshot**
-Screenshots are saved to the Photos or Gallery app, usually in a Screenshots folder. You can also pull down the notification bar and tap the screenshot notification to view it immediately.
-
-**Scrolling screenshot (long page)**
-Many Android phones offer a "Scroll capture" or "Extended screenshot" option that appears just after you take a screenshot. Tap it to keep scrolling and capture the full page.`
+    steps: [
+      { title: 'Use the universal button shortcut', content: 'Press the Power button and the Volume Down button at the same time. Hold them together for about one second, then release. You will see the screen flash and a screenshot notification will appear at the top of your screen.', tip: 'This method works on almost all Android phones, including Samsung Galaxy, Google Pixel, Motorola, and OnePlus.' },
+      { title: 'Use a palm swipe on Samsung Galaxy phones', content: 'Samsung Galaxy phones have a special swipe method. Go to Settings > Advanced Features > Motions and Gestures and turn on "Palm swipe to capture." Once enabled, swipe the edge of your open hand across the full screen from right to left to take a screenshot.' },
+      { title: 'Find your screenshot', content: 'Screenshots are saved to your Photos or Gallery app, usually in a Screenshots folder. You can also pull down from the top of your screen to see your notifications and tap the screenshot thumbnail to view it immediately.' },
+      { title: 'Take a scrolling screenshot to capture a whole page', content: 'Right after taking a screenshot, look for a "Scroll capture" button at the bottom of the screen. Tap it to keep adding more of the page below — useful for capturing a long webpage or conversation. Not all Android phones offer this feature.', tip: 'For Google Pixel help, visit support.google.com/pixelphone. For Samsung Galaxy help, visit samsung.com/us/support.' },
+    ],
   },
   {
     slug: 'make-text-bigger-iphone',
@@ -6110,20 +6095,13 @@ Many Android phones offer a "Scroll capture" or "Extended screenshot" option tha
     thumbnailEmoji: '🔤',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Increase text size system-wide**
-Go to Settings > Display & Brightness > Text Size. Drag the slider to the right to make all text larger. This affects most apps on your iPhone immediately.
-
-**Enable Larger Accessibility Sizes**
-For even bigger text, go to Settings > Accessibility > Display & Text Size > Larger Text and turn on "Larger Accessibility Sizes." Then drag the slider to the largest size you're comfortable with.
-
-**Make everything bigger (not just text)**
-Settings > Accessibility > Display & Text Size > Display Zoom lets you choose "Larger Text" which zooms the entire interface, not just fonts.
-
-**Zoom in on any part of the screen**
-Settings > Accessibility > Zoom: turn this on, then double-tap with three fingers to zoom into any part of any screen. Drag with three fingers to move around.
-
-**Make text bold**
-Settings > Display & Brightness > Bold Text. Bold text is easier to read for many people, especially in low light.`
+    steps: [
+      { title: 'Open Settings and go to Display & Brightness', content: 'Open the Settings app (the grey gear icon). Scroll down and tap "Display & Brightness." Then tap "Text Size." You will see a slider at the bottom of the screen.' },
+      { title: 'Drag the slider to make text bigger', content: 'Drag the slider to the right to increase the text size. As you drag, the preview text above the slider will grow larger so you can see exactly what it will look like. When you are happy with the size, press the back arrow or close Settings — the change takes effect immediately.', tip: 'Apple\'s guide to changing text size is at support.apple.com/en-us/111799 — it covers all accessibility display options.' },
+      { title: 'Enable even larger text sizes', content: 'If the regular slider does not go big enough, go to Settings > Accessibility > Display & Text Size > Larger Text. Turn on "Larger Accessibility Sizes." This unlocks a much larger range — drag the new slider all the way to the right for maximum size.' },
+      { title: 'Make text bold', content: 'Go to Settings > Display & Brightness and turn on "Bold Text." Bold text is much easier to read for many people, especially in dim lighting. This works alongside any text size you have chosen.' },
+      { title: 'Zoom in on any part of the screen', content: 'For extra help reading specific things, turn on Zoom. Go to Settings > Accessibility > Zoom and turn it on. Then double-tap the screen with three fingers to zoom in on anything — a menu, a small label, or a phone number.', tip: 'You can also pinch and spread two fingers in Safari to zoom in on any webpage, even without turning on Zoom in Settings.' },
+    ],
   },
   {
     slug: 'make-text-bigger-android',
@@ -6136,20 +6114,12 @@ Settings > Display & Brightness > Bold Text. Bold text is easier to read for man
     thumbnailEmoji: '🔤',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Standard method**
-Go to Settings > Display > Font Size and Style (or just Settings > Accessibility > Font Size on some phones). Drag the slider to increase the text size. A preview shows what it will look like before you confirm.
-
-**Samsung Galaxy**
-Settings > Display > Font Size and Style — you can also change the font style here.
-
-**Pixel phones (Google)**
-Settings > Accessibility > Text and Display > Font Size — drag the slider. You can preview the change in real time.
-
-**Make everything larger (not just text)**
-Settings > Accessibility > Display Size (or Screen Zoom) increases the entire interface, including icons and images.
-
-**Magnification**
-Settings > Accessibility > Magnification: turn this on. You can then triple-tap the screen to zoom in on anything. Very useful for menus, maps, and small print.`
+    steps: [
+      { title: 'Open Settings and find Font Size', content: 'Open the Settings app. Depending on your phone brand: Samsung Galaxy — tap Display > Font Size and Style. Google Pixel — tap Accessibility > Text and Display > Font Size. Most other Android phones — tap Display > Font Size, or tap Accessibility > Font Size.', tip: 'If you cannot find the font size setting, open Settings and use the search bar at the top. Type "font" or "text size" and it will take you right there.' },
+      { title: 'Drag the slider to make text bigger', content: 'Once you find the Font Size slider, drag it to the right to increase the text. As you move the slider, a preview shows what text will look like at that size. Release the slider and the change applies immediately.' },
+      { title: 'Make everything bigger — icons and all', content: 'For Samsung: go to Settings > Display > Screen Zoom to make icons and images bigger too, not just text. For Pixel: go to Settings > Display > Display Size. Increasing the display size makes the entire screen easier to see.', tip: 'Google\'s accessibility guide for Android is at support.google.com/accessibility/android/answer/6006986' },
+      { title: 'Turn on Magnification to zoom in anywhere', content: 'Go to Settings > Accessibility > Magnification and turn it on. Once enabled, you can triple-tap anywhere on the screen to zoom in — great for reading a small menu, a price tag on a website, or a tiny phone number.', warning: 'Magnification stays on until you triple-tap again to zoom back out. If your screen suddenly seems zoomed in and stuck, triple-tap the screen with one finger to return to normal.' },
+    ],
   },
   {
     slug: 'free-up-storage-iphone',
@@ -6162,26 +6132,14 @@ Settings > Accessibility > Magnification: turn this on. You can then triple-tap 
     thumbnailEmoji: '💾',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Check what's using storage**
-Go to Settings > General > iPhone Storage. You'll see a breakdown of what's taking up space — usually Photos, Apps, and iOS itself are the biggest users.
-
-**Offload unused apps**
-Scroll down the storage screen to see your apps listed by size. Tap any app you haven't used recently and choose "Offload App." This removes the app but keeps its data, so you can reinstall it later without losing your progress or settings.
-
-**Clear Safari cache**
-Go to Settings > Safari > Clear History and Website Data. This can free several hundred megabytes without deleting any of your photos or files.
-
-**Delete old text messages and attachments**
-Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments" to delete old videos and photos sent in iMessage that you no longer need.
-
-**Enable iCloud Photos**
-Go to Settings > Photos and turn on iCloud Photos. Then enable "Optimise iPhone Storage." This keeps full-resolution photos in iCloud and stores smaller versions on your phone, freeing up lots of space.
-
-**Delete duplicate photos**
-Open the Photos app, go to Albums > Duplicates. Tap Merge to remove duplicates automatically (available in iOS 16 and later).
-
-**Official help**
-For Apple's complete storage management guide, visit support.apple.com/en-us/108324 — it covers every option for freeing up space on your iPhone.`
+    steps: [
+      { title: 'Check what is using your storage', content: 'Go to Settings > General > iPhone Storage. Wait a moment for it to load. You will see a colored bar at the top showing how much space is used, and a list below showing what is taking up the most space — usually Photos, Apps, and the iOS system itself.', tip: 'For Apple\'s complete storage guide, visit support.apple.com/en-us/108324' },
+      { title: 'Offload apps you rarely use', content: 'In the iPhone Storage screen, scroll down to see your apps listed from largest to smallest. Tap any app you have not used in months and tap "Offload App." This removes the app to free up space but keeps all your data — if you reinstall the app later, everything picks up where you left off.', tip: 'You can also let iPhone do this for you automatically. At the top of the iPhone Storage page, tap "Enable" next to "Offload Unused Apps." iPhone will automatically offload apps you haven\'t used when storage is low.' },
+      { title: 'Move your photos to iCloud', content: 'Go to Settings > [Your Name] > iCloud > Photos and turn on "iCloud Photos." Then go back to Settings > Photos and turn on "Optimize iPhone Storage." Full-resolution photos move to iCloud and your phone keeps smaller versions — this can free several gigabytes instantly.', warning: 'Your photos are still safe in iCloud — you can view and download any of them anytime. You just need a Wi-Fi connection to see the full-quality version.' },
+      { title: 'Delete old text message photos and videos', content: 'Go to Settings > General > iPhone Storage > Messages. Tap "Review Large Attachments." You will see a list of photos and videos sent through text messages, sorted by size. Tap Edit and select the ones you don\'t need, then delete them.' },
+      { title: 'Clear Safari browser cache', content: 'Go to Settings > Safari > Clear History and Website Data. Tap "Clear History and Data" to confirm. This removes temporary web files stored on your phone and can free up several hundred megabytes. Your bookmarks and saved passwords are not affected.' },
+      { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 16 or later (including iOS 18).' },
+    ],
   },
   {
     slug: 'free-up-storage-android',
@@ -6194,23 +6152,13 @@ For Apple's complete storage management guide, visit support.apple.com/en-us/108
     thumbnailEmoji: '💾',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Check storage usage**
-Go to Settings > Storage (or Settings > Device Care > Storage on Samsung). You'll see a bar graph showing what categories are using the most space.
-
-**Use Google Files to clean up**
-Download the free "Files by Google" app from the Play Store if you don't have it. It automatically identifies junk files, duplicate photos, large files, and unused apps, and helps you delete them safely.
-
-**Clear app cache**
-Go to Settings > Apps > [select an app] > Storage > Clear Cache. Doing this for your browser, social media apps, and streaming apps can free hundreds of megabytes. Note: this doesn't delete your login or personal data.
-
-**Move photos to Google Photos**
-Install Google Photos and turn on Backup. Once your photos are backed up to Google's servers, you can tap "Free up space" to remove local copies from your phone.
-
-**Delete downloaded files**
-Open the Files app and look in the Downloads folder. It often contains old documents, APK files, and downloads you no longer need.
-
-**Use a microSD card (if your phone supports it)**
-Many Android phones have a microSD card slot. Insert a card (64GB or 128GB is inexpensive) and go to Settings > Storage > SD card to move apps or photos to it.`
+    steps: [
+      { title: 'Check what is using your storage', content: 'Go to Settings > Storage (on Samsung: Settings > Device Care > Storage). You will see a bar graph and a breakdown showing how much space photos, apps, and other files are using. Start by identifying the biggest categories.' },
+      { title: 'Use Files by Google to clean up automatically', content: 'Open the Files app (pre-installed on most Android phones) or download "Files by Google" free from the Play Store. Tap "Clean" at the bottom. The app will find junk files, duplicate photos, and large unused files and walk you through deleting them safely.', tip: 'Google\'s guide to managing storage on Android is at support.google.com/android/answer/9355956' },
+      { title: 'Back up photos and free up space with Google Photos', content: 'Open Google Photos and make sure backup is turned on (tap your profile photo > Photos Settings > Backup). Once your photos are safely backed up to Google\'s servers, tap your profile photo > "Free up space on this device" — this removes local copies from your phone while keeping them safe in Google Photos.', warning: 'Only free up space after you confirm your photos are fully backed up. Look for "Backup is on" and "X photos backed up" before tapping Free up space.' },
+      { title: 'Clear app cache', content: 'Go to Settings > Apps. Tap any large app like Chrome, Facebook, or YouTube. Tap "Storage & Cache" and then "Clear Cache." This removes temporary files stored by that app. It does not delete your login information or personal data — just temporary junk.' },
+      { title: 'Delete files in your Downloads folder', content: 'Open the Files app and tap "Downloads." You will often find old documents, PDFs, or files you downloaded months ago and no longer need. Select them and delete. This folder is frequently full of forgotten downloads.' },
+    ],
   },
   {
     slug: 'backup-iphone-to-icloud',
@@ -6223,23 +6171,13 @@ Many Android phones have a microSD card slot. Insert a card (64GB or 128GB is in
     thumbnailEmoji: '☁️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What does a backup include?**
-An iCloud backup saves your photos, contacts, messages, app data, settings, and more. It doesn't include apps themselves (those can be re-downloaded for free) or content already stored in iCloud like iCloud Photos.
-
-**Turn on iCloud Backup**
-Go to Settings > [Your Name] > iCloud > iCloud Backup and toggle it on. Then tap "Back Up Now" to do an immediate backup.
-
-**Automatic backups**
-Your iPhone backs up automatically every night when it's connected to Wi-Fi, plugged into power, and the screen is locked. Just plug it in at night and it happens on its own.
-
-**Check your last backup date**
-Go to Settings > [Your Name] > iCloud > iCloud Backup. You'll see the date and time of your last backup.
-
-**Check available iCloud storage**
-Apple gives you 5GB of free iCloud storage. Go to Settings > [Your Name] > iCloud > Manage Account Storage to see how much you've used. If it's full, you can buy more storage (50GB costs about $0.79/month) or selectively exclude large apps from backup.
-
-**Restore from a backup**
-If you get a new phone, sign in with your Apple ID and choose "Restore from iCloud Backup" during setup. Your phone will be restored to exactly how it was.`
+    steps: [
+      { title: 'Turn on iCloud Backup', content: 'Go to Settings, tap your name at the very top, then tap iCloud. Scroll down and tap "iCloud Backup." Tap the toggle to turn it on. Then tap "Back Up Now" to start your first backup right away.', tip: 'Apple\'s full iCloud Backup guide is at support.apple.com/guide/iphone/back-up-iphone-iph3ecf67d29/ios' },
+      { title: 'What gets backed up', content: 'An iCloud backup saves your contacts, photos (if iCloud Photos is off), messages, app data, settings, and ringtones. Apps themselves are not backed up — they can be re-downloaded for free from the App Store. Photos stored in iCloud Photos are already in iCloud and do not need to be in your backup separately.' },
+      { title: 'Let it back up automatically every night', content: 'Your iPhone backs up automatically when it is plugged into power, connected to Wi-Fi, and the screen is locked. The easiest way to keep your backup current is to plug your phone in to charge each night before bed — the backup happens on its own while you sleep.' },
+      { title: 'Check when your last backup was', content: 'Go to Settings > [Your Name] > iCloud > iCloud Backup. Underneath the toggle, you will see the date and time of your most recent backup. If it says "Never" or the date is weeks old, tap "Back Up Now" to create a fresh backup.', warning: 'If your backup is more than a week old, you could lose recent photos and contacts if your phone is lost or breaks. Aim to keep it backed up every few days at minimum.' },
+      { title: 'Check your iCloud storage', content: 'Apple gives you 5GB of free iCloud storage. To see how much you have used, go to Settings > [Your Name] > iCloud > Manage Account Storage. If your backup is failing due to full storage, you can upgrade to 50GB for $0.99 per month or delete old backups from devices you no longer use.' },
+    ],
   },
   {
     slug: 'backup-android-to-google',
@@ -6252,23 +6190,13 @@ If you get a new phone, sign in with your Apple ID and choose "Restore from iClo
     thumbnailEmoji: '☁️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Enable Google Backup**
-Go to Settings > System > Backup (the exact path varies slightly by phone brand). Turn on "Back up to Google Drive." This saves contacts, app data, call history, SMS messages, and settings.
-
-**Back up your photos with Google Photos**
-Install or open the Google Photos app and sign in with your Google account. Tap your profile photo > Photos Settings > Backup and turn it on. Choose "Storage saver" quality for free unlimited backups, or "Original quality" (counts toward your 15GB of free storage).
-
-**Check backup status**
-Open Google Photos, tap your profile photo > Photos Settings > Backup. You'll see if backup is "On" and when photos were last backed up.
-
-**What's backed up automatically**
-- Contacts: synced to Google Contacts at contacts.google.com
-- Photos & videos: Google Photos (when backup is enabled)
-- App data, Wi-Fi passwords, call history: via Google Account backup
-- SMS messages: some Android versions back these up; third-party apps like SMS Backup & Restore can help if yours doesn't
-
-**Restore on a new phone**
-When setting up a new Android phone, sign in with your Google account and choose "Restore from backup." Your contacts, apps, and settings will transfer over automatically.`
+    steps: [
+      { title: 'Turn on Google Backup', content: 'Go to Settings > System > Backup (on Samsung: Settings > Accounts and Backup > Google Drive). Turn on "Back up to Google Drive." This automatically saves your contacts, app data, call history, and Wi-Fi passwords to your Google account.', tip: 'Google\'s backup guide is at support.google.com/android/answer/2819582 — it covers all Android versions and brands.' },
+      { title: 'Back up your photos with Google Photos', content: 'Open the Google Photos app (download it free from the Play Store if you do not have it). Tap your profile photo in the top-right corner, then tap "Photos Settings" > "Backup" and turn it on. Choose "Storage saver" quality to back up unlimited photos for free.', tip: 'Google gives every account 15GB of free storage for backups. Photos backed up in "Storage saver" mode do not count against this limit.' },
+      { title: 'Check that your backup is working', content: 'Open Google Photos, tap your profile photo, and tap "Photos Settings" > "Backup." You will see "Backup is on" and when your photos were last backed up. You should see "Backup complete" or the number of photos waiting to upload.' },
+      { title: 'What gets backed up', content: 'Google Backup saves: your contacts (viewable at contacts.google.com), app data and settings, call history, Wi-Fi passwords, and photos and videos (through Google Photos). SMS text messages are backed up on some Android versions — if yours does not, the free app "SMS Backup & Restore" from the Play Store can help.' },
+      { title: 'Restore your phone from a backup', content: 'When you get a new Android phone, sign in with your Google account during setup and choose "Restore from backup." Select your most recent backup from the list. Your contacts, apps, and settings will transfer over automatically.', warning: 'For your backup to be complete, keep your phone connected to Wi-Fi and plugged in overnight at least once a week. Backups only happen when you are on Wi-Fi.' },
+    ],
   },
   {
     slug: 'download-apps-app-store-iphone',
@@ -6281,23 +6209,14 @@ When setting up a new Android phone, sign in with your Google account and choose
     thumbnailEmoji: '📲',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Open the App Store**
-Tap the blue App Store icon on your home screen (it looks like a white "A" made of sticks on a blue background). If you can't find it, swipe down from the middle of your screen and type "App Store" in the search bar.
-
-**Search for an app**
-Tap the Search icon at the bottom of the App Store. Type the name of the app you're looking for (e.g., "WhatsApp", "BBC iPlayer", "Zoom"). Tap Search on your keyboard.
-
-**Download a free app**
-Tap the app from the search results to see its page. Tap the "Get" button (blue). You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.
-
-**Download a paid app**
-The price button shows the cost (e.g., "$1.99"). Tap it to purchase. You'll be charged to the payment method linked to your Apple ID.
-
-**Update your apps**
-Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.
-
-**Delete an app**
-Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps any time at no charge.`
+    steps: [
+      { title: 'Open the App Store', content: 'Tap the blue App Store icon on your home screen. It looks like a white "A" made of sticks on a blue background. If you cannot find it, swipe down from the middle of your screen and type "App Store" in the search bar.' },
+      { title: 'Search for an app', content: 'Tap the Search icon at the bottom of the App Store. Type the name of the app you are looking for — for example, "WhatsApp," "Netflix," or "Zoom." Tap Search on your keyboard.' },
+      { title: 'Download a free app', content: 'Tap the app from the search results to see its page. Tap the blue "Get" button. You may be asked to confirm with Face ID, Touch ID, or your Apple ID password. The app will download and appear on your home screen.', tip: 'Always check the number of reviews and star rating before downloading. Apps with thousands of reviews and 4+ stars are usually trustworthy.' },
+      { title: 'Download a paid app', content: 'The price button shows the cost (for example, "$1.99"). Tap it to purchase. You will be charged to the payment method linked to your Apple ID.' },
+      { title: 'Update your apps', content: 'Tap your profile photo in the top right of the App Store to see available updates. Tap "Update All" to update everything at once. Keeping apps updated is important for security.', tip: 'You can turn on automatic updates in Settings > App Store > App Updates so your apps stay current without any effort.' },
+      { title: 'Delete an app', content: 'Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App" to uninstall it. You can re-download free apps at any time at no charge.', tip: 'For Apple\'s complete App Store guide, visit support.apple.com/guide/iphone/get-apps-games-and-more-iph27b83d108/ios' },
+    ],
   },
   {
     slug: 'download-apps-google-play-android',
@@ -6310,23 +6229,14 @@ Press and hold the app icon on your home screen. Tap "Remove App" > "Delete App"
     thumbnailEmoji: '📲',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Open the Google Play Store**
-Tap the Play Store icon (a colorful triangle on a white background) on your home screen or app drawer. If you can't find it, swipe up to open the app drawer and search for "Play Store."
-
-**Search for an app**
-Tap the search bar at the top and type the name of the app you want (e.g., "WhatsApp", "Netflix", "Zoom"). Tap the search/enter key on your keyboard.
-
-**Install a free app**
-Tap the app in the results. Check the reviews (aim for 4 stars or above) and the number of downloads. Tap "Install." The app will download and appear on your home screen or app drawer.
-
-**Install a paid app**
-Tap the price button. You'll need to confirm payment using your Google account's linked payment method or Google Play balance.
-
-**Manage your apps**
-Tap your profile photo in the top right > Manage apps & device > Updates available to see which apps have updates. Tap "Update all" regularly.
-
-**Uninstall an app**
-Press and hold the app icon, then drag it to "Uninstall" at the top of the screen, or go to Play Store > profile > Manage apps & device > find the app > Uninstall.`
+    steps: [
+      { title: 'Open the Google Play Store', content: 'Tap the Play Store icon (a colorful triangle on a white background) on your home screen or app drawer. If you cannot find it, swipe up to open the app drawer and search for "Play Store."' },
+      { title: 'Search for an app', content: 'Tap the search bar at the top and type the name of the app you want — for example, "WhatsApp," "Netflix," or "Zoom." Tap the Search key on your keyboard.' },
+      { title: 'Install a free app', content: 'Tap the app in the results. Check the star rating (aim for 4 stars or above) and the number of downloads — more downloads usually means more trustworthy. Tap "Install." The app will download and appear on your home screen or app drawer.', tip: 'Only install apps from the official Google Play Store. Avoid installing apps from websites or text message links.' },
+      { title: 'Install a paid app', content: 'Tap the price button. You will need to confirm payment using your Google account\'s linked payment method or Google Play balance.' },
+      { title: 'Update your apps', content: 'Tap your profile photo in the top right > Manage apps & device > Updates available. Tap "Update all" to keep all your apps current. Updates fix security issues and add new features.', tip: 'You can turn on automatic updates by tapping Settings in the Play Store > Network preferences > Auto-update apps.' },
+      { title: 'Uninstall an app', content: 'Press and hold the app icon on your home screen, then tap "Uninstall." Or go to Play Store > tap your profile photo > Manage apps & device > find the app > Uninstall.', tip: 'For Google\'s complete guide to the Play Store, visit support.google.com/googleplay/answer/113410' },
+    ],
   },
   {
     slug: 'block-spam-calls-iphone',
@@ -6339,20 +6249,13 @@ Press and hold the app icon, then drag it to "Uninstall" at the top of the scree
     thumbnailEmoji: '🚫',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Block a specific number**
-Open the Phone app, go to Recents, and tap the (i) icon next to the number you want to block. Scroll down and tap "Block this Caller." They'll go straight to voicemail.
-
-**Silence unknown callers**
-Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts will be silenced and sent to voicemail. This dramatically reduces spam calls.
-
-**Register with the Telephone Preference Service (UK)**
-Visit tpsonline.org.uk and register your mobile number for free. Companies are legally required to remove you from their call lists within 28 days.
-
-**Report spam calls**
-In the Phone app, go to Recents and tap the (i) next to the number. Scroll down and tap "Report as Spam." Apple uses this data to improve spam detection.
-
-**Use Truecaller or Hiya (free apps)**
-These apps identify spam callers before you even answer. Download from the App Store and enable them as a caller ID service in Settings > Phone > Call Blocking & Identification.`
+    steps: [
+      { title: 'Turn on Silence Unknown Callers', content: 'Go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not saved in your contacts will be automatically silenced and sent to voicemail. You will still see missed calls from unknown numbers in your Recents list.', tip: 'Apple\'s guide on managing calls is at support.apple.com/en-us/111106 — it covers blocking, filtering, and silencing options on iPhone.' },
+      { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block and tap the (i) icon next to it. Scroll down and tap "Block this Caller." Future calls, texts, and FaceTime from that number will be blocked automatically.', tip: 'You can view and manage your blocked numbers by going to Settings > Phone > Blocked Contacts.' },
+      { title: 'Report spam calls', content: 'In the Phone app, tap "Recents" and tap the (i) icon next to a spam number. Scroll down and tap "Report as Junk." Apple uses this information to improve spam detection for all iPhone users.' },
+      { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to add your phone number to the National Do Not Call Registry. Most legitimate companies are legally required to stop calling you within 31 days of registration. It is free and takes less than a minute.', tip: 'Registration lasts permanently. If you still get calls after 31 days, those are likely scammers (who do not follow the law) — report them at DoNotCall.gov.' },
+      { title: 'Install a free call-blocking app', content: 'Download a free spam-blocking app like Hiya or Nomorobo from the App Store. Once installed, go to Settings > Phone > Call Blocking & Identification and turn on the app. It will automatically identify spam callers before you even answer.', warning: 'No app or setting can block every spam call. Scammers constantly change numbers. Silence Unknown Callers (step 1) combined with a blocking app gives you the best protection.' },
+    ],
   },
   {
     slug: 'block-spam-calls-android',
@@ -6365,20 +6268,13 @@ These apps identify spam callers before you even answer. Download from the App S
     thumbnailEmoji: '🚫',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Block a specific number**
-Open the Phone app, tap Recents, press and hold the number you want to block (or tap the three-dot menu next to it), then tap "Block number." Future calls from this number will be declined automatically.
-
-**Enable Google spam protection**
-Open the Phone app, tap the three-dot menu (top right) > Settings > Caller ID & Spam > turn on "Filter spam calls." Google will automatically screen calls that look like spam.
-
-**Screen calls with Google Assistant**
-On Pixel phones: when an unknown number calls, tap "Screen call." Google Assistant answers on your behalf, asks who's calling, and shows you the caller's response in real time. You then decide whether to pick up.
-
-**Register with the Telephone Preference Service (UK)**
-Visit tpsonline.org.uk to register your number. It's free and legally requires UK businesses to stop calling you within 28 days.
-
-**Use Truecaller (free)**
-Download Truecaller from the Play Store. It identifies billions of spam numbers and automatically blocks the most persistent ones. Very effective against cold callers.`
+    steps: [
+      { title: 'Turn on Google spam protection', content: 'Open the Phone app on your Android. Tap the three-dot menu in the top-right corner, then tap Settings > Caller ID & Spam. Turn on "Filter spam calls." Google will automatically identify and silence calls that look like spam before your phone rings.', tip: 'Google\'s guide to blocking calls on Android is at support.google.com/phoneapp/answer/6325463' },
+      { title: 'Block a specific number', content: 'Open the Phone app and tap "Recents." Find the number you want to block. Tap and hold on the number (or tap the three-dot menu next to it) and select "Block number." Future calls from this number will be declined automatically and will not ring your phone.' },
+      { title: 'Screen calls with Google Assistant (Pixel phones)', content: 'On Google Pixel phones, when an unknown number calls, tap "Screen call." Google Assistant will answer on your behalf, ask who is calling and why, and show you the caller\'s response on your screen in real time. You then decide whether to pick up or hang up.' },
+      { title: 'Register on the National Do Not Call Registry', content: 'Visit DoNotCall.gov or call 1-888-382-1222 to register your number for free. Most legitimate companies must stop calling you within 31 days. Registration never expires — you only need to do it once.', tip: 'If you still receive calls after 31 days of registering, report them at DoNotCall.gov. These are likely scammers, which you can also report to the FTC at ReportFraud.ftc.gov.' },
+      { title: 'Install a free call-blocking app', content: 'Download a free app like Hiya Caller ID & Block or Nomorobo from the Google Play Store. These apps recognize spam numbers before you answer. Open the app and follow its setup instructions to start filtering calls.', warning: 'No app can block every spam call — scammers constantly rotate numbers. Combining Google spam protection with a blocking app gives you the strongest defense.' },
+    ],
   },
   {
     slug: 'fix-phone-battery-draining-fast',
@@ -6391,33 +6287,14 @@ Download Truecaller from the Play Store. It identifies billions of spam numbers 
     thumbnailEmoji: '🔋',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Lower your screen brightness**
-Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness (Settings > Accessibility > Display & Text Size > Auto-Brightness on iPhone; Settings > Display > Adaptive brightness on Android).
-
-**Turn off Wi-Fi and Bluetooth when not in use**
-If you're out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel (swipe down from the top of the screen).
-
-**Check which apps are draining your battery**
-- iPhone: Settings > Battery — scroll down to see apps and their battery usage
-- Android: Settings > Battery > Battery Usage
-
-Delete or restrict background activity for any apps using an unusually high percentage.
-
-**Reduce background app refresh**
-- iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only
-- Android: Settings > Apps > [app name] > Battery > Restricted
-
-**Enable Low Power Mode**
-- iPhone: Settings > Battery > Low Power Mode (or ask Siri: "turn on Low Power Mode")
-- Android: Settings > Battery > Battery Saver
-
-This reduces background activity and notifications to stretch your remaining battery.
-
-**Check your battery health (iPhone)**
-Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple offers battery replacement for a fixed fee.
-
-**Official help**
-For Apple's free battery troubleshooting guide, visit support.apple.com/en-us/108055. For Android battery help, visit support.google.com/android.`
+    steps: [
+      { title: 'Lower your screen brightness', content: 'Your screen is the biggest battery drain. Pull down from the top of your screen and drag the brightness slider down to around 50%. Or enable Auto-Brightness: on iPhone go to Settings > Accessibility > Display & Text Size > Auto-Brightness; on Android go to Settings > Display > Adaptive brightness.', tip: 'Even dropping brightness from 80% to 50% can add an hour or more of battery life.' },
+      { title: 'Turn off Wi-Fi and Bluetooth when not in use', content: 'If you are out and not using Wi-Fi or Bluetooth, turn them off. On both iPhone and Android, you can do this from the quick settings panel — swipe down from the top of the screen and tap the Wi-Fi or Bluetooth button to toggle them off.' },
+      { title: 'Check which apps are draining your battery', content: 'iPhone: go to Settings > Battery and scroll down to see apps and their battery usage percentages. Android: go to Settings > Battery > Battery Usage. Delete or restrict background activity for any apps using an unusually high percentage.', tip: 'Social media apps like Facebook and Instagram are frequent battery hogs. Try restricting their background activity first.' },
+      { title: 'Reduce background app refresh', content: 'This setting lets apps update in the background even when you are not using them — and it drains your battery. iPhone: Settings > General > Background App Refresh — turn it off entirely or set it to Wi-Fi only. Android: Settings > Apps > [app name] > Battery > Restricted.' },
+      { title: 'Enable Low Power Mode or Battery Saver', content: 'iPhone: Settings > Battery > Low Power Mode. Android: Settings > Battery > Battery Saver. This reduces background activity and dims notifications to stretch your remaining battery. Most people only lose features they do not need.', tip: 'On iPhone you can also say "Siri, turn on Low Power Mode" to activate it hands-free.' },
+      { title: 'Check your battery health (iPhone)', content: 'Go to Settings > Battery > Battery Health & Charging. If Maximum Capacity is below 80%, your battery has degraded and may need replacing. Apple charges a set fee for battery replacement at any Apple Store or authorized service provider.', tip: 'For Apple\'s complete battery guide, visit support.apple.com/en-us/108055. For Android battery tips, visit support.google.com/android/answer/7664358.' },
+    ],
   },
   {
     slug: 'use-siri-basics',
@@ -6430,27 +6307,13 @@ For Apple's free battery troubleshooting guide, visit support.apple.com/en-us/10
     thumbnailEmoji: '🎙️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Activate Siri**
-Say "Hey Siri" (if enabled) or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.
-
-**Enable "Hey Siri"**
-Go to Settings > Siri & Search > Listen for "Hey Siri" and turn it on. Now you can activate Siri hands-free just by saying "Hey Siri."
-
-**Useful things to ask Siri**
-- "Hey Siri, call [name]"
-- "Hey Siri, text [name] I'm on my way"
-- "Hey Siri, set an alarm for 7am"
-- "Hey Siri, remind me to take my tablets at 8pm"
-- "Hey Siri, what's the weather today?"
-- "Hey Siri, how do I spell [word]?"
-- "Hey Siri, open Maps"
-- "Hey Siri, turn on Bluetooth"
-
-**If Siri doesn't understand you**
-Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing. If Siri keeps misunderstanding, try rephrasing your request.
-
-**Siri and privacy**
-Your Siri requests are sent to Apple's servers to process. Siri does not store your voice recordings by default. You can review and delete Siri history in Settings > Siri & Search > Siri History.`
+    steps: [
+      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), just say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
+      { title: 'Enable hands-free Siri', content: 'Go to Settings > Siri > Talk to Siri and select "Always On." Now you can activate Siri hands-free at any time just by saying "Siri" without picking up your phone.', tip: 'For Apple\'s complete Siri guide, visit support.apple.com/guide/iphone/use-siri-iph83aad8922/ios' },
+      { title: 'Try these voice commands', content: 'Some useful things to ask: "Siri, call [name]" — "Siri, text [name] I\'m on my way" — "Siri, set an alarm for 7am" — "Siri, remind me to take my medication at 8pm" — "Siri, what\'s the weather today?" — "Siri, open Maps" — "Siri, turn on Bluetooth." Speak naturally and Siri will understand you.' },
+      { title: 'If Siri doesn\'t understand you', content: 'Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing before saying anything else. If Siri keeps misunderstanding, try rephrasing your request or check that your microphone is not blocked by a case.' },
+      { title: 'Siri and your privacy', content: 'In iOS 18, many Siri requests are processed on your device without being sent to Apple\'s servers. You can review and delete your Siri history at any time in Settings > Siri > Siri History.' },
+    ],
   },
   {
     slug: 'use-google-assistant-basics',
@@ -6463,27 +6326,13 @@ Your Siri requests are sent to Apple's servers to process. Siri does not store y
     thumbnailEmoji: '🎙️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Activate Google Assistant**
-Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe from the bottom corner.
-
-**Set up "Hey Google"**
-Open the Google app, tap your profile photo > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognize your voice.
-
-**Useful things to ask Google Assistant**
-- "Hey Google, call [name]"
-- "Hey Google, send a text to [name] saying I'll be late"
-- "Hey Google, set an alarm for 7am tomorrow"
-- "Hey Google, remind me to take my tablets at 8pm every day"
-- "Hey Google, what's the weather this weekend?"
-- "Hey Google, navigate to [address]"
-- "Hey Google, turn on torch" (turns on the flashlight)
-- "Hey Google, set a timer for 10 minutes"
-
-**If Google Assistant doesn't understand you**
-Speak slowly and clearly. Make sure your microphone isn't blocked. If it mishears a contact name, try saying the full name.
-
-**Turn off Google Assistant**
-If you find it activates by accident, go to Settings > Google > Account Services > Search, Assistant & Voice > Google Assistant > General and toggle it off.`
+    steps: [
+      { title: 'Activate Google Assistant', content: 'Say "Hey Google" (if set up) or press and hold the Home button. On newer Android phones, you can also swipe up from the bottom corner. Wait for the colored dots to appear before speaking.' },
+      { title: 'Set up "Hey Google" voice activation', content: 'Open the Google app, tap your profile photo in the top right > Settings > Voice > Voice Match > set up "Hey Google." Follow the prompts to train it to recognize your voice. Once done, you can activate Google Assistant hands-free from anywhere.', tip: 'Google\'s guide to setting up Assistant is at support.google.com/assistant/answer/7172657' },
+      { title: 'Try these voice commands', content: 'Some useful things to ask: "Hey Google, call [name]" — "Hey Google, send a text to [name] saying I\'ll be late" — "Hey Google, set an alarm for 7am tomorrow" — "Hey Google, remind me to take my medication at 8pm every day" — "Hey Google, what\'s the weather this weekend?" — "Hey Google, navigate to [address]" — "Hey Google, turn on flashlight" — "Hey Google, set a timer for 10 minutes."' },
+      { title: 'If Google Assistant doesn\'t understand you', content: 'Speak slowly and clearly. Make sure your microphone is not blocked by your hand or a case. If it mishears a contact name, try saying the full name. You can also type your request — tap the keyboard icon in the Google Assistant window.' },
+      { title: 'Turn off Google Assistant if needed', content: 'If you find it activates by accident, go to Settings > Google > Account Services > Search, Assistant & Voice > Google Assistant > General and toggle it off. You can always turn it back on the same way.' },
+    ],
   },
 
   // ═══════════════════════════════════════════
@@ -6521,23 +6370,13 @@ If you find it activates by accident, go to Settings > Google > Account Services
     thumbnailEmoji: '🤝',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Search for someone**
-Click the search bar at the top of Facebook and type the person's name. Press Enter. Facebook will show you a list of people with that name.
-
-**Identify the right person**
-Look at the profile photos and any mutual friends shown beneath the names. Mutual friends (people you both know) are a good sign you've found the right person.
-
-**Send a friend request**
-Click the person's name to go to their profile. Click the blue "Add Friend" button. The person will be notified that you've sent them a friend request.
-
-**Accepting a friend request**
-When someone sends you a friend request, a red number appears on the people icon at the top of Facebook. Click it to see pending requests. Click "Confirm" to accept or "Delete" to decline.
-
-**Managing your friends**
-To see all your Facebook friends, go to your profile and click "Friends." From here you can also "Unfriend" someone by clicking the three dots next to their name — they won't be notified.
-
-**People you may know**
-Facebook sometimes suggests "People You May Know" based on mutual friends, workplaces, or schools. You can send friend requests from these suggestions if you recognize someone.`
+    steps: [
+      { title: 'Search for someone', content: 'Click the search bar at the top of Facebook and type the person\'s name. Press Enter. Facebook will show you a list of people with that name.' },
+      { title: 'Identify the right person', content: 'Look at the profile photos and any mutual friends shown beneath the names. Mutual friends — people you both know — are a good sign you have found the right person.', tip: 'If you are not sure, check their About section for details like hometown or workplace to confirm it\'s who you\'re looking for.' },
+      { title: 'Send a friend request', content: 'Click the person\'s name to go to their profile. Click the blue "Add Friend" button. They will get a notification that you sent a friend request. You can cancel a pending request by going back to their profile and clicking "Cancel Request."' },
+      { title: 'Accept a friend request', content: 'When someone sends you a friend request, a red number appears on the people icon at the top of Facebook. Click it to see pending requests. Click "Confirm" to accept or "Delete" to decline.', warning: 'Do not accept friend requests from people you do not recognize. Scammers sometimes create fake profiles to gain access to your information.' },
+      { title: 'Manage your friends list', content: 'To see all your Facebook friends, go to your profile and click "Friends." To unfriend someone, click the three dots next to their name and choose "Unfriend." They will not be notified.', tip: 'For Facebook\'s official guide to adding friends, visit facebook.com/help/336320879782850. AARP has free Facebook tutorials at aarp.org/home-family/personal-technology.' },
+    ],
   },
   {
     slug: 'post-photo-on-facebook',
@@ -7308,7 +7147,7 @@ Look for "English [CC]" or "English [SDH]" — these include descriptions of sou
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     body: `**Windows Security is built in and free**
-Windows 10 and 11 include Windows Security (formerly Windows Defender), a free antivirus programme that runs automatically in the background. You don't need to pay for separate antivirus software.
+Windows 11 includes Windows Security (formerly Windows Defender), a free antivirus program that runs automatically in the background. You don't need to pay for separate antivirus software. Note: Windows 10 reached end of support on October 14, 2025 — if you are still on Windows 10, upgrading to Windows 11 is strongly recommended for continued security updates.
 
 **Run a quick scan**
 Click Start, search for "Windows Security," and open it. Click "Virus & threat protection." Click "Quick scan." Windows will scan the most common locations where viruses hide — this takes 1-5 minutes.
@@ -7324,10 +7163,13 @@ Windows Security updates its threat database automatically via Windows Update. M
 
 **Signs your PC might have a virus**
 - Running noticeably slower than usual
-- Unexpected pop-up adverts
+- Unexpected pop-up ads appearing
 - Browser homepage changed without you doing it
-- New programmes appearing you didn't install
-- Antivirus has been disabled`
+- New programs appearing you didn't install
+- Antivirus has been disabled
+
+**Official help**
+Microsoft's guide to running Windows Security scans is at support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39574f1fd. For a video walkthrough, watch "How to Run a Virus Scan on Windows 11" on YouTube — search that phrase to find Microsoft's official tutorial.`
   },
   {
     slug: 'clear-browser-cache-windows',
@@ -7360,8 +7202,11 @@ History menu > Clear History. Choose "all history" from the dropdown. Click "Cle
 - You'll be logged out of most websites — have your passwords ready
 - Pages that weren't loading correctly should now load fresh
 
-**Tip: Use InPrivate/Incognito mode**
-Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.`
+**Quick Tip: Use InPrivate/Incognito mode**
+Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.
+
+**Official help**
+Google's guide for clearing Chrome data is at support.google.com/chrome/answer/2392709. Microsoft's Edge guide is at support.microsoft.com/en-us/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943. For a video tutorial, search "How to clear browser cache Chrome" on YouTube.`
   },
   {
     slug: 'screenshot-windows-quick',
@@ -7381,7 +7226,7 @@ Press Win+Shift+S. Your screen will dim and a small toolbar appears at the top. 
 Press the PrtSc (Print Screen) key on your keyboard. This copies the entire screen to your clipboard. Open Paint (search in Start), press Ctrl+V to paste, then Ctrl+S to save.
 
 **Method 3: Screenshot of just one window**
-Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another programme.
+Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another program.
 
 **Method 4: Win+PrtSc (auto-save)**
 Press the Windows key and PrtSc at the same time. The screen will flash briefly. The screenshot is automatically saved to: Pictures > Screenshots folder.
@@ -7410,7 +7255,7 @@ A zip file is a "container" that holds multiple files compressed into a smaller 
 1. Open File Explorer and navigate to the files or folder you want to compress
 2. Select the files you want (hold Ctrl and click each one, or Ctrl+A for all)
 3. Right-click the selected files
-4. Choose "Send to" > "Compressed (zipped) folder" (Windows 10) or "Compress to ZIP file" (Windows 11)
+4. Choose "Compress to ZIP file" (Windows 11 and later) — on Windows 10 this shows as "Send to" > "Compressed (zipped) folder" instead
 5. A new .zip file appears in the same folder. Rename it something descriptive.
 
 **Extract (unzip) a zip file**
@@ -7612,6 +7457,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // ═══════════════════════════════════════════
   // SAFETY GUIDES — NEW ADDITIONS
   // ═══════════════════════════════════════════
+  // Social: "Your password alone isn't enough anymore. Here's the free fix."
+  // Social: "One 5-minute change stops most account break-ins cold. Are you protected?"
+  // Social: "Turn this on today: the account security setting most people skip."
+  // Newsletter: "Most account break-ins happen because of a stolen password — and two-factor authentication stops them cold. It takes about five minutes to turn on for your email, Google, and banking accounts, and it's completely free. Here's exactly how to do it."
   {
     slug: 'two-factor-authentication',
     title: 'How to Set Up Two-Factor Authentication (2FA)',
@@ -8250,6 +8099,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // BATCH 3: SAFETY GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
+  // Social: "Scammers can now clone your family's voices using AI. Here's the one habit that protects you."
+  // Social: "If you get a call from a 'family member' asking for money urgently — hang up and call them back. Here's why."
+  // Social: "Before you send emergency money to a family member in trouble, do this first. It takes 10 seconds."
+  // Newsletter: "AI voice scams are the fastest-growing fraud type right now — scammers clone a loved one's voice from social media and call you in a fake emergency. The good news: one simple habit stops this scam every time. Read our guide to learn what it is and share it with someone you care about."
   {
     slug: 'ai-voice-scam-detection',
     title: 'AI Voice Scams: How to Spot a Fake Call from a "Family Member"',
@@ -8360,6 +8213,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'If you think you are being scammed', content: 'Stop all contact immediately. Do not send any more money. Report the profile to the dating site or social media platform. File a report at reportfraud.ftc.gov. If you sent money, contact your bank — some transfers can be reversed. Talk to someone you trust — there is no shame in being targeted by a professional scammer.', warning: 'Romance scammers are professionals who manipulate emotions for a living. Being targeted does not mean you are foolish — it means someone deliberately exploited your kindness.' },
     ]
   },
+  // Social: "Microsoft will NEVER call you to say your computer has a virus. If someone does — hang up."
+  // Social: "Got a scary pop-up saying your computer is infected and to call a number? Here's what's really going on."
+  // Social: "Tech support scammers target seniors the most. Share this with someone who needs to see it."
+  // Newsletter: "Thousands of Americans lose money every month to fake tech support calls and pop-ups. Scammers pose as Microsoft or Apple, claim your computer has a virus, and ask for remote access or payment. Learn the three telltale signs — and what to do if you already let one in."
   {
     slug: 'tech-support-scam-guide',
     title: 'How to Recognize and Avoid Tech Support Scams',
@@ -8378,6 +8235,10 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/book or call a trusted local computer repair shop. Never trust unsolicited callers.' },
     ]
   },
+  // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
+  // Social: "USPS, FedEx, and UPS will never text you asking for a credit card. If a delivery text does — it's a scam."
+  // Social: "Millions of Americans get this text every week. Most don't know it's fake until it's too late."
+  // Newsletter: "Fake delivery notification texts are one of the most common scams right now — and they're getting harder to spot. Before you click any link about a 'missed package,' take 10 seconds to verify. Our guide shows you exactly how to tell the real ones from the fakes."
   {
     slug: 'package-delivery-scams',
     title: 'Fake Delivery Notification Scams: How to Spot Them',
@@ -9344,38 +9205,38 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // BATCH 4: PHONE GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
-  { slug: 'extend-phone-battery', title: 'How to Make Your Phone Battery Last All Day', excerpt: 'Simple settings changes that can double your battery life.', category: 'phone-guides', tags: ['battery', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
+  { slug: 'extend-phone-battery', title: 'How to Make Your Phone Battery Last All Day', excerpt: 'Simple settings changes that can double your battery life.', category: 'phone-guides', tags: ['battery', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🔋', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
     { title: 'Turn down screen brightness', content: 'Your screen is the biggest battery drain. Swipe down from the top of your screen (Android) or swipe down from the top-right corner (iPhone) to open the control panel. Drag the brightness slider to about 40-50%. Enable "Auto-Brightness" so your phone adjusts automatically based on lighting.' },
     { title: 'Turn off WiFi and Bluetooth when not needed', content: 'When you leave your house, turn off WiFi so your phone stops searching for networks. If you are not using wireless headphones or a smartwatch, turn off Bluetooth too. Both drain battery in the background.' },
     { title: 'Close background apps', content: 'Apps running in the background use battery even when you are not looking at them. On iPhone: swipe up from the bottom and swipe away apps. On Android: tap the square button and swipe apps away. You do not need to close every app, just the ones you are done with.', tip: 'Your phone is smart about managing background apps. Focus on closing navigation, streaming, and social media apps — these use the most battery.' },
     { title: 'Enable Low Power Mode', content: 'When your battery drops below 20%, turn on Low Power Mode. iPhone: Settings > Battery > Low Power Mode. Android: Settings > Battery > Battery Saver. This reduces background activity, mail fetch, and visual effects to stretch your remaining battery.' },
     { title: 'Check which apps drain the most battery', content: 'iPhone: Settings > Battery shows which apps used the most battery in the last 24 hours or 10 days. Android: Settings > Battery > Battery Usage. If an app you rarely use is near the top, consider uninstalling it or restricting its background activity.' },
   ] },
-  { slug: 'manage-app-permissions-phone', title: 'How to Control App Permissions on Your Phone', excerpt: 'Stop apps from accessing your camera, location, and contacts without your knowledge.', category: 'phone-guides', tags: ['privacy', 'permissions', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
+  { slug: 'manage-app-permissions-phone', title: 'How to Control App Permissions on Your Phone', excerpt: 'Stop apps from accessing your camera, location, and contacts without your knowledge.', category: 'phone-guides', tags: ['privacy', 'permissions', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🔐', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
     { title: 'What are app permissions', content: 'When you install an app, it may ask for access to things like your camera, microphone, location, contacts, or photos. Some of these make sense — a camera app needs camera access. But many apps ask for more than they need. You can review and change these permissions anytime.' },
     { title: 'Review permissions on iPhone', content: 'Go to Settings > Privacy & Security. You will see categories like Location Services, Camera, Microphone, Contacts, Photos. Tap each one to see which apps have access and toggle off any that do not need it.' },
     { title: 'Review permissions on Android', content: 'Go to Settings > Privacy > Permission Manager. Tap a permission type (Camera, Location, Microphone) to see which apps have access. Change any app to "Don\'t allow" or "Ask every time" if it does not need that permission.' },
     { title: 'Permissions to watch carefully', content: 'Location: Only maps, weather, and ride-sharing apps truly need this. Set others to "Never" or "While Using." Camera & Microphone: Only apps you actively use for photos, video calls, or voice notes. Contacts: Very few apps need access to your contacts. If a flashlight app asks for contacts, that is a red flag.', warning: 'If an app stops working after you remove a permission, you can always grant it again. Start restrictive and loosen only if needed.' },
   ] },
-  { slug: 'clear-phone-storage', title: 'How to Free Up Space When Your Phone Says "Storage Full"', excerpt: 'Quick steps to reclaim storage space on any phone without losing important files.', category: 'phone-guides', tags: ['storage', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '💾', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
+  { slug: 'clear-phone-storage', title: 'How to Free Up Space When Your Phone Says "Storage Full"', excerpt: 'Quick steps to reclaim storage space on any phone without losing important files.', category: 'phone-guides', tags: ['storage', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '💾', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
     { title: 'Check what is using your storage', content: 'iPhone: Settings > General > iPhone Storage. Android: Settings > Storage. Both show a breakdown of what is taking up space — apps, photos, messages, and system files. Look for the biggest categories first.' },
     { title: 'Delete old photos and videos', content: 'Photos and especially videos are usually the biggest space hogs. Open your Photos app, go to Albums > Videos, and delete any you no longer need. Then empty the "Recently Deleted" folder (iPhone) or Trash (Android) — deleted photos still take up space for 30 days.', tip: 'Before deleting photos, back them up to Google Photos or iCloud first. Then you can delete them from your phone knowing they are safely stored in the cloud.' },
     { title: 'Remove apps you do not use', content: 'iPhone: Settings > General > iPhone Storage > tap an app > Delete App. Android: Settings > Apps > tap an app > Uninstall. Focus on large apps and games you have not opened in months.' },
     { title: 'Clear message attachments', content: 'Text messages with photos and videos can use gigabytes of space. iPhone: Settings > General > iPhone Storage > Messages > Review Large Attachments. Delete old photos and videos from conversations. Android: Open Messages > tap a conversation > tap the contact name > Media > delete old items.' },
     { title: 'Use cloud storage going forward', content: 'To prevent this from happening again, enable cloud photo backup: iPhone: Settings > [your name] > iCloud > Photos > On. Android: Google Photos app > tap profile > Photos settings > Backup > On. Once backed up, you can safely delete photos from your phone.' },
   ] },
-  { slug: 'use-do-not-disturb', title: 'How to Set Up Do Not Disturb on Your Phone', excerpt: 'Silence notifications at night or during important moments without missing emergency calls.', category: 'phone-guides', tags: ['do-not-disturb', 'notifications', 'iphone', 'android', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'use-do-not-disturb', title: 'How to Set Up Do Not Disturb on Your Phone', excerpt: 'Silence notifications at night or during important moments without missing emergency calls.', category: 'phone-guides', tags: ['do-not-disturb', 'notifications', 'iphone', 'android', 'beginner'], readTime: '3 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🌙', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Turn on Do Not Disturb manually', content: 'iPhone: Open Control Center (swipe down from top-right) and tap the crescent moon icon. Android: Swipe down from the top and tap "Do Not Disturb." This silences all notifications, calls, and alerts until you turn it off.' },
     { title: 'Schedule Do Not Disturb', content: 'iPhone: Settings > Focus > Do Not Disturb > Set a Schedule. Choose times like 10 PM to 7 AM. Android: Settings > Sound > Do Not Disturb > Schedules. Set "Sleeping" to your bedtime hours. Your phone will automatically go silent at night and wake up in the morning.' },
     { title: 'Allow important calls through', content: 'You probably still want emergency calls to ring through. iPhone: Settings > Focus > Do Not Disturb > People > Allow Calls From > Favorites (or Everyone). Android: Settings > Sound > Do Not Disturb > People > Calls > Starred contacts. Add important people to your Favorites or Starred contacts.', tip: 'Most phones also allow repeated callers through — if someone calls twice within 3 minutes, the second call will ring. This catches genuine emergencies.' },
   ] },
-  { slug: 'find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Use built-in tracking to locate, ring, or lock your phone if it goes missing.', category: 'phone-guides', tags: ['find-my', 'lost-phone', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '📍', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Use built-in tracking to locate, ring, or lock your phone if it goes missing.', category: 'phone-guides', tags: ['find-my', 'lost-phone', 'iphone', 'android', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📍', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Find a lost iPhone', content: 'On any web browser, go to icloud.com/find. Sign in with your Apple ID. Click "All Devices" and select your iPhone. You will see its location on a map. Click "Play Sound" to make it ring (even on silent). If you cannot recover it, click "Lost Mode" to lock it and display a message.' },
     { title: 'Find a lost Android phone', content: 'On any web browser, go to google.com/android/find. Sign in with the same Google account on your phone. Your phone location will appear on a map. Click "Play sound" to make it ring for 5 minutes at full volume. Click "Secure device" to lock it remotely.' },
     { title: 'Set this up BEFORE you lose your phone', content: 'iPhone: Settings > [your name] > Find My > Find My iPhone — make sure it is ON. Also turn on "Send Last Location." Android: Settings > Security > Find My Device — make sure it is ON. These features only work if they were enabled before the phone was lost.', warning: 'If you believe your phone was stolen, do NOT try to retrieve it yourself. Use the "Lost Mode" or "Secure device" feature to lock it, then file a police report.' },
     { title: 'What to do if you cannot find it', content: 'If the phone is offline or the battery died, the map will show the last known location. Check coat pockets, car seats, and couch cushions first — most "lost" phones are within 10 feet of where you are. If truly lost or stolen, remotely wipe the device to protect your personal data, then contact your phone carrier to suspend the line.' },
   ] },
-  { slug: 'phone-camera-tips', title: 'How to Take Better Photos with Your Phone', excerpt: 'Simple tips that will instantly improve your phone photos — no expensive equipment needed.', category: 'phone-guides', tags: ['camera', 'photos', 'iphone', 'android', 'tips'], readTime: '4 min', thumbnailEmoji: '📷', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'phone-camera-tips', title: 'How to Take Better Photos with Your Phone', excerpt: 'Simple tips that will instantly improve your phone photos — no expensive equipment needed.', category: 'phone-guides', tags: ['camera', 'photos', 'iphone', 'android', 'tips'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📷', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Clean your camera lens', content: 'This sounds obvious but makes a huge difference. Your phone lives in your pocket and collects smudges. Wipe the camera lens with a soft cloth before taking photos. Smudgy lenses cause blurry, hazy photos.' },
     { title: 'Use natural light', content: 'The single biggest factor in photo quality is lighting. Face your subject toward a window or light source. Avoid shooting with a bright light behind your subject (backlighting makes faces dark). The best natural light is during "golden hour" — the hour after sunrise or before sunset.' },
     { title: 'Tap to focus on your subject', content: 'Before pressing the shutter button, tap on the screen where your main subject is. This tells the camera to focus and adjust brightness for that specific area. For portraits, tap on the person face.' },
@@ -9387,27 +9248,27 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // BATCH 4: SOCIAL MEDIA GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
-  { slug: 'facebook-privacy-2026', title: 'How to Lock Down Your Facebook Privacy Settings (2026)', excerpt: 'Protect your personal information on Facebook with these essential privacy settings.', category: 'social-media', tags: ['facebook', 'privacy', 'settings', 'safety', 'beginner'], readTime: '5 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'facebook-privacy-2026', title: 'How to Lock Down Your Facebook Privacy Settings (2026)', excerpt: 'Protect your personal information on Facebook with these essential privacy settings.', category: 'social-media', tags: ['facebook', 'privacy', 'settings', 'safety', 'beginner'], readTime: '5 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🔒', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Open Privacy Settings', content: 'Open the Facebook app or go to facebook.com. Tap the menu icon (three lines or your profile picture) > Settings & Privacy > Settings > Privacy. You will see a list of privacy controls.' },
     { title: 'Control who sees your posts', content: 'Under "Who can see your future posts?" change this from "Public" to "Friends." This means only people you have added as friends can see what you share. You can also go back and change old posts: tap "Limit Past Posts" to change all previous public posts to Friends only at once.', tip: 'You can also set individual posts to "Only Me" if you want to save something privately without sharing it.' },
     { title: 'Control who can find you', content: 'Under "How people find and contact you": set "Who can send you friend requests?" to "Friends of Friends." Set "Who can look you up using your email/phone?" to "Friends." This prevents strangers from finding your profile through your contact information.' },
     { title: 'Review your profile information', content: 'Go to your profile and tap "About." Review each section: work, education, places lived, contact info, family. Remove anything you do not want public. For each item, tap the audience selector (globe or friends icon) to control who can see it.' },
     { title: 'Check your tagged photos', content: 'Go to Settings > Privacy > Profile and Tagging. Turn on "Review tags people add to your posts before they appear" and "Review posts you are tagged in before they appear on your profile." This gives you control over what others post about you.' },
   ] },
-  { slug: 'instagram-beginners', title: 'Getting Started with Instagram', excerpt: 'Create an account, find people to follow, and share your first photo on Instagram.', category: 'social-media', tags: ['instagram', 'beginner', 'photos', 'social'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'instagram-beginners', title: 'Getting Started with Instagram', excerpt: 'Create an account, find people to follow, and share your first photo on Instagram.', category: 'social-media', tags: ['instagram', 'beginner', 'photos', 'social'], readTime: '5 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📸', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Download and create your account', content: 'Download Instagram from the App Store or Google Play. Open it and tap "Create new account." Enter your email or phone number, create a username and password. Your username is how people find you — it can be your real name or a nickname.' },
     { title: 'Set up your profile', content: 'Tap your profile icon (bottom right). Tap "Edit Profile." Add a profile photo (a clear photo of yourself helps friends find you). Write a short bio — just a line or two about yourself. Set your account to "Private" if you only want approved followers to see your posts: Settings > Account Privacy > toggle on.' },
     { title: 'Find people to follow', content: 'Instagram will suggest people from your contacts if you allow it. You can also search for people by name using the search icon (magnifying glass). Tap "Follow" next to anyone you want to follow. Start with family and close friends. You will see their photos and videos in your feed.' },
     { title: 'Share your first photo', content: 'Tap the + icon at the bottom center. Choose a photo from your gallery or take a new one. Apply a filter if you want (swipe left/right to see options). Write a caption describing the photo. Tap "Share." Your followers will now see it in their feed.' },
     { title: 'Interact with posts', content: 'Double-tap a photo to "like" it (a heart appears). Tap the speech bubble icon to leave a comment. Tap the paper plane icon to share a post with someone via direct message. Liking and commenting is how you stay connected with friends and family on Instagram.' },
   ] },
-  { slug: 'youtube-for-beginners', title: 'How to Use YouTube: Find, Watch, and Subscribe', excerpt: 'YouTube has a video for almost everything. Here is how to find what you need and make the most of it.', category: 'social-media', tags: ['youtube', 'video', 'streaming', 'beginner'], readTime: '4 min', thumbnailEmoji: '📺', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+  { slug: 'youtube-for-beginners', title: 'How to Use YouTube: Find, Watch, and Subscribe', excerpt: 'YouTube has a video for almost everything. Here is how to find what you need and make the most of it.', category: 'social-media', tags: ['youtube', 'video', 'streaming', 'beginner'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '📺', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Search for videos', content: 'Go to youtube.com in your browser or open the YouTube app. Tap the search icon (magnifying glass) and type what you want to learn or watch. For example: "how to connect WiFi" or "easy dinner recipes." Press Enter or tap Search.' },
     { title: 'Watch a video', content: 'Tap any video thumbnail to start watching. Use the controls at the bottom: play/pause, skip forward/back, and adjust volume. Tap the fullscreen icon (square in the corner) to watch in full screen. Tap anywhere on the video to show/hide controls.' },
     { title: 'Subscribe to channels you like', content: 'If you find a creator whose videos you enjoy, tap the "Subscribe" button below the video. Subscribed channels will appear in your "Subscriptions" tab, making it easy to find their new videos. Subscribing is free.', tip: 'Some great YouTube channels for tech beginners: "Kevin Stratvert" for Windows, "9to5Mac" for Apple, and "AARP" for senior-focused tech tutorials.' },
     { title: 'Adjust playback speed and captions', content: 'Tap the gear icon on a video for settings. "Playback speed" lets you slow down (0.75x) or speed up (1.25x) the video. "Captions" turns on subtitles — extremely helpful if the speaker talks fast or has an accent.' },
   ] },
-  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative, but it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'tiktok-safety-guide', title: 'How to Stay Safe on TikTok', excerpt: 'TikTok can be fun and informative, but it needs some privacy settings to stay safe.', category: 'social-media', tags: ['tiktok', 'safety', 'privacy', 'social'], readTime: '4 min', videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8', thumbnailEmoji: '🎵', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
     { title: 'Set your account to private', content: 'Open TikTok > tap Profile (bottom right) > tap the three lines (top right) > Settings and Privacy > Privacy. Turn on "Private Account." Only people you approve as followers can see your videos. This is especially important for anyone who does not want strangers viewing their content.' },
     { title: 'Control who can interact with you', content: 'In Settings > Privacy: set "Who can comment on your videos" to "Friends" or "No one." Set "Who can send you direct messages" to "Friends" or "No one." Set "Who can duet/stitch with your videos" to "Friends." This prevents unwanted contact from strangers.' },
     { title: 'Be careful what you share', content: 'Never share: your home address or neighborhood landmarks, your daily routine or schedule, financial information, personal identification details. Even with a private account, approved followers can screenshot or screen-record your videos.' },
@@ -10094,7 +9955,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   // Source: Apple iCloud Advanced Data Protection (scraped)
   { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
     { title: 'What it does', content: 'Advanced Data Protection encrypts the majority of your iCloud data — Backups, Photos, Notes, and more — with end-to-end encryption. Not even Apple can access your data.' },
-    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2+ or macOS 13.1+. You must set up at least one recovery method first.' },
+    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia 15). You must set up at least one recovery method first.' },
     { title: 'Set up recovery', content: 'Before enabling, set up either a Recovery Contact (trusted person who can help you regain access) or a Recovery Key (a 28-character code you store securely). This is essential — if you lose access, Apple cannot help.' },
     { title: 'Enable on iPhone/iPad', content: 'Settings > tap your name > iCloud > scroll down > Advanced Data Protection > Turn on Advanced Data Protection. Follow the prompts to verify your recovery methods.' },
     { title: 'Enable on Mac', content: 'Apple Menu > System Settings > click your name > iCloud > Advanced Data Protection > Turn On. Follow the on-screen instructions.' },
@@ -10582,7 +10443,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
   { slug: 'windows-backup-guide', title: 'How to Back Up Your Windows Computer', excerpt: 'Protect your files, photos, and documents by setting up automatic backups on Windows.', category: 'windows-guides', tags: ['windows', 'backup', 'files', 'onedrive', 'recovery'], readTime: '8 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Why backups matter', content: 'Hard drives fail, computers get stolen, and ransomware can lock your files. Regular backups mean you never lose important documents, photos, or memories. Set it up once, and it works automatically.' },
-    { title: 'OneDrive backup (easiest)', content: 'Windows 10/11 includes OneDrive. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.' },
+    { title: 'OneDrive backup (easiest)', content: 'Windows 11 includes OneDrive built in. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.', tip: 'Windows 10 reached end of support on October 14, 2025. If you are still on Windows 10, consider upgrading to Windows 11 for continued security updates.' },
     { title: 'How OneDrive works', content: 'Files in your backed-up folders automatically sync to Microsoft\'s cloud. Access them from any device at onedrive.com. 5 GB free storage; Microsoft 365 includes 1 TB ($6.99/month).' },
     { title: 'External drive backup', content: 'Connect an external USB hard drive ($40-80 for 1-2 TB). Go to Settings > System > Storage > Advanced Storage Settings > Backup Options > Back Up Using File History. Select the drive and turn on.' },
     { title: 'File History', content: 'File History automatically saves copies of your files every hour. If you accidentally delete or change a file, right-click it > Properties > Previous Versions to restore an older copy.' },
@@ -10830,7 +10691,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
     { title: 'Troubleshooting', content: 'If connection drops: toggle Bluetooth off and on. Restart your hearing aids (open/close battery door). Remove and re-pair the devices. Keep your phone within 30 feet of your hearing aids.' },
   ] },
   { slug: 'medication-management-digital', title: 'Digital Tools for Managing Medications', excerpt: 'Never miss a dose again with apps, smart pill dispensers, and pharmacy delivery services.', category: 'health-tech', tags: ['medication', 'health', 'apps', 'pharmacy', 'seniors'], readTime: '7 min', thumbnailEmoji: '💊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Set up phone reminders', content: 'The simplest approach: iPhone users can track medications in the Health app (iOS 16+). Open Health > Browse > Medications > Add Medication. It sends reminders and tracks whether you took each dose.' },
+    { title: 'Set up phone reminders', content: 'The simplest approach: iPhone users can track medications in the Health app (iOS 16 and later, including iOS 18). Open Health > Browse > Medications > Add Medication. It sends reminders and tracks whether you took each dose.' },
     { title: 'Medisafe app', content: 'Free app for iOS and Android. Add all your medications with dosages and schedules. Get reminders with a friendly chime. Log when you take each dose. See your medication history.' },
     { title: 'Share with caregivers', content: 'Most medication apps let you connect with family members. They get notified if you miss a dose. This gives peace of mind to both you and your loved ones, especially for complex medication schedules.' },
     { title: 'Prescription delivery services', content: 'Many pharmacies deliver for free: CVS, Walgreens, Walmart, and Amazon Pharmacy. Mark Cuban\'s Cost Plus Drugs (costplusdrugs.com) offers medications at near-wholesale prices with home delivery.' },
@@ -11563,7 +11424,7 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   ] },
   { slug: 'iphone-siri-shortcuts-guide', title: 'iPhone Shortcuts: Automate Your Daily Tasks', excerpt: 'Create powerful automations on your iPhone that save time on repetitive tasks.', category: 'phone-guides', tags: ['iphone', 'shortcuts', 'automation', 'siri', 'productivity'], readTime: '7 min', thumbnailEmoji: '⚡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What are Shortcuts?', content: 'Shortcuts let you chain multiple iPhone actions into one tap or voice command. Instead of opening 3 apps and tapping 10 times, a shortcut does it all instantly.' },
-    { title: 'Download the Shortcuts app', content: 'Shortcuts comes pre-installed on iOS 16+. Open it and browse the Gallery for hundreds of pre-made shortcuts: "Calculate Tip," "Shazam Shortcut," "Water Reminder," and more.' },
+    { title: 'Download the Shortcuts app', content: 'Shortcuts comes pre-installed on iOS 16 and later (including iOS 18). Open it and browse the Gallery for hundreds of pre-made shortcuts: "Calculate Tip," "Shazam Shortcut," "Water Reminder," and more.' },
     { title: 'Create a morning routine', content: 'New Shortcut: "Get weather forecast" > "Read text aloud" > "Open Calendar" > "Play playlist." Name it "Good Morning." Say "Hey Siri, good morning" to run your entire morning briefing.' },
     { title: 'Location-based automations', content: 'Automations tab > Create Personal Automation > Arrive/Leave. When you arrive home: turn on smart lights, play music. When you leave work: start navigation home. These run automatically.' },
     { title: 'Time-based automations', content: 'Create automations that run at specific times. Example: at 10 PM, activate Night mode + Do Not Disturb + dim lights. At 7 AM, disable Do Not Disturb and show your calendar.' },
@@ -12852,9 +12713,288 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
       { title: 'Navigate the trail', content: 'Once you choose a trail, tap "Start" to begin navigation. AllTrails shows you a map with your position marked. This helps you stay on the right path.', warning: 'Download the trail map before you go in case you lose cell phone service on the trail. Look for the download icon on the trail page.' },
     ]
   },
+
+  // ═══════════════════════════════════════════
+  // WEEKLY ENRICHMENT — 2026-04-07 (5 new guides)
+  // ═══════════════════════════════════════════
+
+  // Social: "Getting fake texts from 'FedEx' or 'your bank'? Here's exactly how to tell if it's a scam."
+  {
+    slug: 'spot-fake-text-smishing',
+    title: 'How to Spot a Fake Text Message (Smishing Scam)',
+    excerpt: 'Scam texts cost Americans $470 million in 2024. Learn how to recognize a fake text before you tap any links.',
+    category: 'safety-guides',
+    tags: ['scam', 'text-message', 'smishing', 'phishing', 'safety', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/b3HJNNiMOjA',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Know what a smishing scam looks like',
+        content: 'Smishing is when a scammer sends a text pretending to be a real company — like FedEx, your bank, Amazon, USPS, or even the IRS. The goal is to get you to tap a link and enter your personal information or pay money.',
+        tip: 'The FTC says text scams hit a record $470 million in losses in 2024. Seniors are the most targeted group. Learn more at consumer.ftc.gov/articles/how-recognize-report-spam-text-messages',
+      },
+      {
+        title: 'Look for these red flags',
+        content: 'Watch out for: urgency ("Your account will be closed in 24 hours!"), strange sender numbers or email addresses, links with odd web addresses (like "usps-delivery.net" instead of usps.com), requests for gift cards or wire transfers, and unexpected prizes or refunds.',
+        warning: 'Real companies like FedEx, UPS, Amazon, and your bank will NEVER ask you to pay with gift cards or send them money by text message.',
+      },
+      {
+        title: 'Never tap links in unexpected texts',
+        content: 'If you get a text about a package, an account problem, or a payment — do not tap the link. Instead, open your web browser and type the company\'s real website address yourself (like fedex.com or amazon.com) to check your account directly.',
+      },
+      {
+        title: 'Check the sender carefully',
+        content: 'Legitimate companies usually send texts from short 5-6 digit numbers called "short codes" (like 22395 for USPS). If you get a long phone number claiming to be a big company, that\'s a warning sign. Scammers also send texts from email addresses or random international numbers.',
+      },
+      {
+        title: 'Forward spam texts to 7726',
+        content: 'Forward any suspicious text message to 7726 (which spells SPAM on your keypad). It\'s free on all US carriers. This reports the scam to your carrier so they can block it for other customers.',
+        tip: 'You can also report text scams directly to the FTC at ReportFraud.ftc.gov — it takes less than 2 minutes.',
+      },
+      {
+        title: 'What to do if you already tapped a link',
+        content: 'If you tapped a scam link: do not enter any personal information. Close the browser immediately. If you entered a password, change it right away. If you entered a credit card number, call your bank and report it. Run a security scan on your phone.',
+        warning: 'Contact your bank immediately if you entered any payment information. Many banks can reverse unauthorized charges if you report them quickly.',
+      },
+    ],
+  },
+
+  // Social: "Did you know you can share your Wi-Fi password with a visitor without ever saying the password out loud?"
+  {
+    slug: 'share-wifi-password',
+    title: 'How to Share Your Wi-Fi Password With a Guest',
+    excerpt: 'Share your home Wi-Fi with visitors instantly — no need to read out a long password. Works on iPhone and Android.',
+    category: 'essential-skills',
+    tags: ['wifi', 'password', 'sharing', 'iphone', 'android', 'beginner'],
+    readTime: '3 min',
+    videoUrl: 'https://www.youtube.com/embed/OyBaqlwNRBs',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Share Wi-Fi from iPhone to iPhone (the easy way)',
+        content: 'Make sure both phones have Wi-Fi and Bluetooth turned on and are close together. Ask your guest to go to Settings > Wi-Fi and tap your network name. On your iPhone, a pop-up will appear asking if you want to share the password. Tap "Share Password." Your guest\'s phone will connect automatically — no typing required.',
+        tip: 'This iPhone-to-iPhone sharing only works if the guest\'s Apple ID email is saved in your Contacts, and vice versa. If you don\'t see the pop-up, make sure both people\'s contact info is in each other\'s phones.',
+      },
+      {
+        title: 'Share Wi-Fi using a QR code (works on any phone)',
+        content: 'On iPhone: go to Settings > Wi-Fi and tap the (i) next to your network name. Tap "Share" and a QR code will appear. Your guest can point their phone camera at it to connect instantly. On Android: go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the QR code icon to display a shareable code.',
+        tip: 'For more on iPhone Wi-Fi sharing, visit Apple\'s support page: support.apple.com/guide/iphone/connect-to-a-wi-fi-network-iph6c493dde/ios',
+      },
+      {
+        title: 'Find and share your Wi-Fi password manually',
+        content: 'If the automatic methods don\'t work, you can look up your password. On iPhone (iOS 16 or later, including iOS 18): go to Settings > Wi-Fi, tap the (i) next to your network, then tap "Password." On Android (Android 10 and later): go to Settings > Network & Internet > Wi-Fi, tap your network, then tap the share icon — your password will appear on screen.',
+        warning: 'Your Wi-Fi password gives guests full access to your home network. Change it after guests leave if security is a concern — especially for short-term rentals.',
+      },
+      {
+        title: 'Set up a guest network for visitors',
+        content: 'Most home routers let you create a separate "guest network" — a second Wi-Fi that visitors can use without accessing your main network (and the devices on it). Log in to your router\'s settings page and look for "Guest Network." Your internet provider\'s website can walk you through the steps for your specific router.',
+        tip: 'A guest network is ideal if you have smart home devices, a security camera, or a home office computer that you want to keep separate from visitor traffic.',
+      },
+    ],
+  },
+
+  // Social: "Your email got hacked. Now what? Here are the exact steps to take RIGHT NOW to regain control."
+  {
+    slug: 'what-to-do-email-hacked',
+    title: 'What to Do If Your Email Account Gets Hacked',
+    excerpt: 'Hacked email account? Act fast with these steps to regain control, secure your data, and prevent more damage.',
+    category: 'safety-guides',
+    tags: ['email', 'hacked', 'security', 'account', 'recovery', 'beginner'],
+    readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/R1Z_9XMFbrk',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Try to sign in to your email account right now',
+        content: 'Go to your email provider\'s website (gmail.com, outlook.com, yahoo.com) and try your regular password. If it works, the hacker may not have changed your password yet. Move quickly through the next steps before they do.',
+        tip: 'If you can still sign in, scroll through your Sent folder. Hackers often use hacked email accounts to send spam or scam messages to your contacts. Your contacts may have already received suspicious emails from you.',
+      },
+      {
+        title: 'Change your password immediately',
+        content: 'If you can sign in: look for Settings > Security > Change Password and create a new, strong password. Make it at least 12 characters with a mix of letters, numbers, and symbols. If you cannot sign in because the hacker changed your password, click "Forgot Password" or "Recover Account" to start the account recovery process.',
+        tip: 'For Gmail recovery, visit myaccount.google.com/security. For Outlook/Hotmail, visit account.live.com/acsr. For Yahoo, visit login.yahoo.com/account/challenge/forgot-password.',
+      },
+      {
+        title: 'Turn on two-step verification',
+        content: 'Once you regain access, turn on two-step verification (also called two-factor authentication). This means even if a hacker gets your password, they still cannot get in without a code sent to your phone. In Gmail: Settings > Security > 2-Step Verification. In Outlook: account.microsoft.com > Security > Advanced Security Options.',
+        warning: 'Two-step verification is the single most important thing you can do to prevent future hacking. Turn it on today — it only takes 5 minutes to set up.',
+      },
+      {
+        title: 'Check what the hacker may have done',
+        content: 'Look through your account for: emails sent from your account that you did not write, your email recovery phone number or backup email changed to an unfamiliar address, apps or services connected to your email that you don\'t recognize, and your mail forwarding settings (sometimes hackers forward copies of your emails to themselves).',
+      },
+      {
+        title: 'Change passwords on your other accounts',
+        content: 'Your email is the master key to your other accounts — password reset emails go to your inbox. Change the password on any important account that uses your email to sign in: your bank, Amazon, PayPal, Social Security portal, health insurance, and any other financial accounts.',
+        warning: 'If you use the same password on multiple sites, change all of them. A hacker who gets one password will try it on your bank, Amazon, and every major service.',
+      },
+      {
+        title: 'Tell your contacts what happened',
+        content: 'Send a message to your contacts letting them know your email was hacked and they should delete any unexpected messages they received from you recently. This protects them from falling for any scam emails the hacker may have sent from your account.',
+      },
+      {
+        title: 'Report the hack to the FTC',
+        content: 'Report the incident to the FTC at IdentityTheft.gov — this gives you a personalized recovery plan and formal documentation of the event. If you believe your identity was stolen (Social Security number, bank account), IdentityTheft.gov will walk you through every step of recovery.',
+        tip: 'The FTC\'s identity theft recovery website is free and gives you a step-by-step checklist tailored to your situation. Visit IdentityTheft.gov.',
+      },
+    ],
+  },
+
+  // Social: "Before you tap that link — here's a 5-second check that could save you from a scam."
+  {
+    slug: 'check-if-link-safe',
+    title: 'How to Tell If a Link Is Safe Before You Click It',
+    excerpt: 'Not sure if a link is safe to tap? These quick checks can help you avoid fake websites and scams.',
+    category: 'safety-guides',
+    tags: ['links', 'phishing', 'scam', 'safety', 'websites', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/5cT9v22SCXI',
+    thumbnailEmoji: '🔗',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Look at the web address carefully',
+        content: 'Scammers create fake websites with addresses that look almost right. Before tapping a link, look at the full address. Real addresses: amazon.com, paypal.com, bankofamerica.com. Fake addresses: amazon-support.net, paypa1.com (with a number 1), bankofamerica.customer-service.com. The part right before the first "/" is the real domain — that\'s what matters.',
+        tip: 'On your phone, press and hold a link (don\'t tap) to see the full web address before visiting it. On a computer, hover your mouse over a link to see the address at the bottom of the screen.',
+      },
+      {
+        title: 'Check for HTTPS',
+        content: 'Legitimate websites use HTTPS (the "S" stands for secure). When you visit a website, look for a padlock icon in your browser\'s address bar. If you see a warning like "Not Secure" or an X instead of a padlock, do not enter any personal information on that site.',
+        warning: 'A padlock icon means the connection is encrypted — but it does NOT guarantee the site is legitimate. Scammers can also get HTTPS certificates. Always check the full web address too.',
+      },
+      {
+        title: 'Use Google\'s Safe Browsing checker',
+        content: 'Google offers a free tool to check if any link is safe. Go to transparencyreport.google.com/safe-browsing/search and paste the link into the search box. Google will tell you instantly if the site is known to be dangerous.',
+        tip: 'You can also check a link at Norton Safe Web (safeweb.norton.com) or URLVoid (urlvoid.com) for a second opinion.',
+      },
+      {
+        title: 'Be extra careful with shortened links',
+        content: 'Links that start with "bit.ly," "tinyurl.com," or "t.co" hide the real destination. You cannot tell where they go just by looking. If you receive a shortened link from an unknown source, use a link expander like checkshorturl.com to see the full address before tapping.',
+      },
+      {
+        title: 'When in doubt, go directly to the website',
+        content: 'If a text or email says there\'s a problem with your Amazon order, your bank account, or a package — do not tap any link. Instead, open your web browser and type the company\'s real website address yourself (amazon.com, your bank\'s website, etc.). If there really is an issue, you will see it when you log in.',
+        tip: 'Save the websites you use most as bookmarks in your browser. When you want to check your bank or shop online, tap your saved bookmark instead of any link sent to you.',
+      },
+    ],
+  },
+
+  // Social: "This one iPhone setting could save your life in an emergency — and most people don't know it exists."
+  {
+    slug: 'iphone-medical-id',
+    title: 'How to Set Up Medical ID on Your iPhone',
+    excerpt: 'Medical ID lets paramedics see your medical conditions, allergies, and emergency contacts from your locked iPhone screen.',
+    category: 'health-tech',
+    tags: ['iphone', 'medical-id', 'emergency', 'safety', 'health', 'beginner'],
+    readTime: '4 min',
+    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
+    thumbnailEmoji: '🏥',
+    publishedAt: '2026-04-07',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Open the Health app',
+        content: 'Find and open the Health app on your iPhone. It is a white icon with a red heart. If you can\'t find it, swipe down from the middle of your home screen and type "Health" in the search bar.',
+      },
+      {
+        title: 'Tap your profile picture and then Medical ID',
+        content: 'In the Health app, tap your profile picture or initial in the top-right corner. Then tap "Medical ID." If you have not set one up yet, tap "Create Medical ID."',
+        tip: 'For Apple\'s full guide on setting up Medical ID, visit support.apple.com/en-us/111993',
+      },
+      {
+        title: 'Fill in your medical information',
+        content: 'Add information that emergency responders need to know: medical conditions (such as diabetes, heart disease, epilepsy), medications you take and their dosages, allergies and reactions, and your blood type if you know it. Add as much or as little as you are comfortable sharing.',
+        tip: 'You do not have to fill in every field. Even just adding your name, blood type, and one emergency contact is extremely helpful for first responders.',
+      },
+      {
+        title: 'Add emergency contacts',
+        content: 'Scroll down to "Emergency Contacts" and tap the + button to add a contact from your phone. Add a spouse, adult child, or close family member. Include their relationship to you. Emergency responders can call this person directly from your locked phone.',
+        warning: 'Make sure your emergency contacts know they are listed and that their phone number in your contacts is current.',
+      },
+      {
+        title: 'Turn on "Show When Locked"',
+        content: 'At the top of the Medical ID screen, make sure "Show When Locked" is turned on. This is critical — it means emergency responders can see your medical information even when your iPhone is locked with a passcode. Without this turned on, your Medical ID is useless in an emergency.',
+      },
+      {
+        title: 'Save and verify it works',
+        content: 'Tap "Done" to save. To verify it works from your lock screen: press the Side button to wake your phone, tap "Emergency" in the bottom-left corner, then tap "Medical ID." You should see all the information you just entered. This is exactly what a paramedic or ER nurse would see.',
+      },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // OSINT GUIDES — added by remote (2026-04-06)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'reverse-image-search-scams',
+    title: 'How to Reverse Image Search to Spot Fake Photos and Scams',
+    excerpt: 'Use reverse image search to verify if someone is using a real photo or a stolen one — great for catching romance scams and fake profiles.',
+    category: 'safety-guides',
+    tags: ['osint', 'images', 'scams', 'verification', 'safety', 'romance scams'],
+    readTime: '6 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'What is reverse image search?', content: 'Reverse image search is a tool that finds where a photo appears online. Instead of typing text to search, you upload an image. Google, Bing, and other search engines will show you every place that photo has been used on the web. This helps you catch fake profiles, stolen photos, and scams.' },
+      { title: 'Use Google Images to search a photo', content: 'Go to images.google.com on your computer or phone. Click the camera icon in the search bar. You can either paste the URL of a photo (the web link) or upload a photo file from your phone. Google will show you every place that photo appears online.', tip: 'If someone sends you a photo on Facebook or WhatsApp, right-click the image and copy the image address. Then paste it into Google Images to search.' },
+      { title: 'Check if a profile photo is real', content: 'If you meet someone online and they send you a photo, use Google Images to search for it. If the photo appears on other profiles with different names, it is fake. You are probably talking to a scammer. If the photo only appears once, it is more likely to be real.' },
+      { title: 'Use TinEye for deeper searches', content: 'Visit tineye.com and upload or paste a photo URL. TinEye is especially good at finding older photos and tracking where a photo has been used over time. It shows the complete history of where an image has appeared.', tip: 'TinEye sometimes finds matches that Google misses. If Google Images does not find anything, try TinEye.' },
+      { title: 'Spot AI-generated and stolen photos', content: 'Look at the search results carefully. If you see the same photo on stock photo websites like Shutterstock or Getty Images, it is a stock photo — someone paid for it or stole it. AI-generated faces often appear on no real social media profiles or only on one fake account. Real people\'s photos usually appear on multiple social networks and have a history.' },
+      { title: 'Red flags for fake photos', content: 'Be suspicious if: the person refuses to do a video call, the photo looks professionally done or very polished, the same photo is used on multiple fake profiles, or the search shows the photo on stock photo sites. Do not send money or personal information to anyone you have not video called.', warning: 'Never send money or personal information to someone you have only communicated with online. Always do a video call first. Romance scammers often ask for money for flights, medical bills, or emergencies — this is a major red flag.' },
+    ]
+  },
+  {
+    slug: 'verify-website-legitimacy',
+    title: 'How to Verify If a Website or Business Is Legitimate',
+    excerpt: 'Learn simple checks to determine if a website is real and trustworthy before you give it your money or personal information.',
+    category: 'safety-guides',
+    tags: ['osint', 'scams', 'websites', 'safety', 'verification', 'fraud'],
+    readTime: '7 min',
+    thumbnailEmoji: '🌐',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'Check when the website was created', content: 'Go to whois.domaintools.com and type in the website address. This will show you when the website was registered. New websites (less than a week old) are more likely to be scams. Real businesses usually have websites that have existed for several years.' },
+      { title: 'Scan the website with VirusTotal', content: 'Visit virustotal.com and paste the website address in the search box. VirusTotal checks the website against 70+ antivirus programs to see if it contains malware or is flagged as a scam site. If many security vendors flag it, do not visit the site.' },
+      { title: 'Look up the business on the Better Business Bureau', content: 'Go to bbb.org and search for the company name. The BBB shows you the business address, how long they have been in business, customer complaints, and their rating (A+ through F). A new business with many complaints is a red flag. Real businesses have customer reviews going back years.' },
+      { title: 'Search for customer reviews and complaints', content: 'Search the company name + "scam" or "reviews" on Google. If you see many complaints about people not receiving their orders or losing money, it is likely a scam. Read through reviews on Google Maps, Trustpilot, or the BBB website.' },
+      { title: 'Check for HTTPS and a valid SSL certificate', content: 'Look at the web address at the top of your browser. It should start with "https://" (not just "http://"). The "s" means the website is secure and encrypted. You should also see a small lock icon next to the address. If there is no lock or the address starts with "http://", the site may not be safe.' },
+      { title: 'Red flags that indicate a fake website', content: 'Avoid websites if: they are very new (created recently), they have poor spelling and grammar, the design looks amateurish or copied from another site, they ask for payment by wire transfer or gift cards, they ask for unusual payment methods like cryptocurrency, prices are much lower than competitors, they pressure you to buy immediately, or they refuse to answer your questions.', warning: 'Never buy from a website that only accepts wire transfers, gift cards, or cryptocurrency. Legitimate businesses accept credit cards and PayPal. These payment methods give you protection if something goes wrong.' },
+    ]
+  },
+  {
+    slug: 'check-personal-data-leaks',
+    title: 'How to Check If Your Personal Information Has Been Leaked Online',
+    excerpt: 'Find out if your email, password, or personal data appears in known data breaches — and what to do about it.',
+    category: 'safety-guides',
+    tags: ['osint', 'privacy', 'breaches', 'safety', 'passwords', 'security'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-06',
+    difficulty: 'Beginner',
+    steps: [
+      { title: 'Understand what a data breach is', content: 'A data breach happens when hackers steal information from a company\'s database. Millions of emails, passwords, names, and addresses get stolen and sold on the dark web. Even the biggest companies like Facebook, Yahoo, and Target have had breaches. The good news: you can check if your information is in a leaked database.' },
+      { title: 'Check your email on Have I Been Pwned', content: 'Go to haveibeenpwned.com and type in your email address. Press Enter. This website will tell you if your email appears in any known data breach. If it says "Good news — no pwnage found," you are not in any known breaches. If it finds your email, it will show you which companies were breached.', tip: 'Have I Been Pwned is completely free and trusted by millions of people. It was created by security expert Troy Hunt and does not collect your personal information.' },
+      { title: 'Check if your passwords are compromised', content: 'If your email appears in a breach, change your password for that service immediately. Go to the company\'s website (like Facebook, Gmail, etc.) and create a new password. Use a strong password: at least 12 characters with uppercase, lowercase, numbers, and symbols. If you used that same password on other accounts, change those too.' },
+      { title: 'Search for your username across the web', content: 'Some hackers sell leaked data with usernames instead of just emails. Search your username in Google to see if it appears on data dump websites or dark web forums. If you see your username on a suspicious site, assume your information has been leaked.' },
+      { title: 'Check for your address and phone number', content: 'Visit haveibeenpwned.com again and scroll down to "Pastes." If your phone number or home address appears in leaked data, be careful — scammers might call or mail you offers. Do not give any information to unsolicited callers claiming to be from a company you know.' },
+      { title: 'What to do if your information was leaked', content: 'First, change your passwords on important accounts (email, banking, social media). Consider using a password manager like Bitwarden or 1Password to create and store strong, unique passwords. Second, watch your bank and credit card statements for fraud. You can freeze your credit for free with the three credit bureaus (Equifax, Experian, TransUnion) to prevent identity theft. Finally, check your credit report annually at annualcreditreport.com for any accounts opened in your name.', warning: 'If you see accounts opened in your name on your credit report, contact the company and the FTC immediately. Do not ignore it — identity theft can take years to fix.' },
+    ]
+  },
 ];
 
 import { guidesBatch2 } from './guides-batch-2';
 import { guidesBatch3 } from './guides-batch-3';
+import { guidesBatch4 } from './guides-batch-4';
 
-export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3];
+export const guides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3, ...guidesBatch4];

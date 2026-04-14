@@ -61,16 +61,16 @@ const About = () => (
       </section>
 
       {/* How We Help */}
-      <section className="container py-16 md:py-24">
+      <section className="container py-20 md:py-28">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">How We Help</h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">
+          <p className="text-muted-foreground max-w-lg mx-auto text-lg">
             Three pillars of support designed for real people with real tech problems.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
           {helpCards.map((card) => (
-            <div key={card.title} className="bento-card text-center">
+            <div key={card.title} className="glow-card text-center">
               <span className="text-4xl mb-4 block">{card.emoji}</span>
               <h3 className="font-semibold text-base mb-3">{card.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
@@ -79,16 +79,18 @@ const About = () => (
         </div>
       </section>
 
+      <div className="section-divider" />
+
       {/* Contact Us */}
-      <section className="bg-muted/40 py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container max-w-2xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Contact Us</h2>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-muted-foreground mb-8 text-lg">
             Have a question, suggestion, or just want to say hi? We'd love to hear from you.
           </p>
           <a
             href="mailto:hello@teksure.com"
-            className="inline-flex items-center gap-2 text-primary font-semibold hover:opacity-80 transition-opacity"
+            className="inline-flex items-center gap-2 text-primary font-semibold hover:opacity-80 transition-opacity text-lg"
           >
             <Mail className="h-5 w-5" />
             hello@teksure.com

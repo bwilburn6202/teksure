@@ -224,6 +224,41 @@ const scams: Scam[] = [
       'Report the call to the FTC at ReportFraud.ftc.gov and your state attorney general',
     ],
   },
+  // Social: "Getting a text about your reward points expiring? The FTC says scammers are behind thousands of these messages. Don't click the link — here's the safe way to check."
+  // Newsletter: "The FTC just issued an alert about fake 'expiring reward points' texts. Clicking the link can steal your personal info or install malware. The safe move: open the company's app yourself and check there — never through the text link."
+  {
+    title: 'Fake "Expiring Reward Points" Text Scam (April 2026)',
+    redFlags: [
+      'Text claims your airline miles, store points, or credit card rewards are about to expire today — and includes a link to "save" them',
+      'The link goes to a site that looks like a real retailer or airline but asks for your login, credit card, or Social Security number',
+      'Message creates urgency: "Your points expire TODAY — click now or lose them"',
+      'The sender is an unknown number or the text arrives completely out of nowhere',
+    ],
+    whatToDo: [
+      'Do not click the link — open the company\'s official app or type their website address yourself instead',
+      'Check your rewards balance there directly — if points were really expiring, it will show up in your account',
+      'Turn on spam filters: AT&T Call Protect, T-Mobile Scam Shield, and Verizon Call Filter are all free',
+      'Report the scam text to the FTC at ReportFraud.ftc.gov and forward it to 7726 (SPAM)',
+    ],
+  },
+  // Social: "Getting a message about a product recall from Amazon or Costco? Scammers are faking official recall notices to steal your login. Here's the safe way to check."
+  // Newsletter: "AARP's Fraud Watch Network is warning about a surge in fake product recall notices — they look exactly like messages from Amazon, Walmart, or Costco. Never click the link. Go directly to the store's app and check your order history instead."
+  {
+    title: 'Fake Product Recall Scam (April 2026)',
+    redFlags: [
+      'Message claims a product you bought has been recalled for a "safety issue" — with a link to get your refund',
+      'The message appears to come from a trusted store like Amazon, Walmart, Costco, or Target',
+      'Uses urgent language: "Process your refund immediately to ensure your safety"',
+      'Clicking the link takes you to a login page designed to steal your username and password',
+    ],
+    whatToDo: [
+      'Never click the link in the message — even if it looks completely official',
+      'Open the store\'s app yourself (or type their web address) and check your order history there',
+      'Real product recalls show up directly in your account — you will never need to click a link in a text',
+      'If you think the recall might be real, call the retailer using the phone number on their official website',
+      'Report the scam to the FTC at ReportFraud.ftc.gov or call 1-877-382-4357',
+    ],
+  },
   // Social: "Scammers are using your real name and partial Social Security number to pretend they're from the government. Here's the new trick to watch for."
   // Newsletter: "The SSA impersonation scam just got scarier: callers now use stolen data (your real name, partial SSN) to make the threat feel real. The SSA will NEVER threaten you with arrest. Here's what to do."
   {

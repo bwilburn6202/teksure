@@ -43,7 +43,6 @@ export function Navbar() {
       label: 'More',
       icon: Info,
       links: [
-        { to: '/pricing', label: 'Pricing' },
         { to: '/how-it-works', label: 'How It Works' },
         { to: '/about', label: 'About' },
       ],

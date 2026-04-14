@@ -58,6 +58,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         teksure: {
+          teal: "hsl(var(--teksure-teal) / <alpha-value>)",
           blue: "hsl(var(--teksure-blue) / <alpha-value>)",
           success: "hsl(var(--teksure-success) / <alpha-value>)",
           warning: "hsl(var(--teksure-warning) / <alpha-value>)",
@@ -72,6 +73,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        display: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,11 +93,9 @@ export default {
           from: { opacity: "0", transform: "translateY(8px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
-        "mesh-shift": {
-          "0%": { transform: "translate(0, 0) scale(1)" },
-          "33%": { transform: "translate(2%, -1%) scale(1.02)" },
-          "66%": { transform: "translate(-1%, 2%) scale(0.98)" },
-          "100%": { transform: "translate(1%, -2%) scale(1.01)" },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(16px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
         "stagger-fade": {
           from: { opacity: "0", transform: "translateY(12px)" },
@@ -105,10 +105,6 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-6px)" },
         },
-        "pulse-ring": {
-          "0%": { transform: "scale(0.95)", opacity: "1" },
-          "100%": { transform: "scale(1.3)", opacity: "0" },
-        },
         "slide-up": {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
@@ -117,15 +113,20 @@ export default {
           from: { opacity: "0", transform: "scale(0.95)" },
           to: { opacity: "1", transform: "scale(1)" },
         },
+        "glow-pulse": {
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--primary) / 0)" },
+          "50%": { boxShadow: "0 0 20px 4px hsl(var(--primary) / 0.15)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "mesh-shift": "mesh-shift 20s ease-in-out infinite alternate",
+        "fade-up": "fade-up 0.6s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
         "slide-up": "slide-up 0.6s ease-out forwards",
         "scale-in": "scale-in 0.4s ease-out forwards",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
       },
     },
   },

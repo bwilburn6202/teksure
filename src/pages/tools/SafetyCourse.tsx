@@ -8,6 +8,7 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 /* ── Lesson data ─────────────────────────────────── */
 
@@ -329,8 +330,9 @@ export default function SafetyCourse() {
       />
       <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
+        <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Safety Course' }]} />
 
-        <div className="flex items-start gap-3 mb-8">
+        <div className="flex items-start gap-3 mb-8 mt-6">
           <GraduationCap className="h-8 w-8 text-primary shrink-0 mt-0.5" />
           <div>
             <h1 className="text-3xl font-bold">Internet Safety Course</h1>

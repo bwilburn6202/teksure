@@ -46,13 +46,13 @@ const HowItWorks = () => (
       </section>
 
       {/* Steps */}
-      <section className="container py-16 md:py-24">
+      <section className="container py-20 md:py-28">
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-6">
+          <div className="space-y-5">
             {steps.map((step, i) => (
               <div
                 key={step.title}
-                className="bento-card flex items-start gap-6 group"
+                className="glow-card flex items-start gap-6 group"
               >
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
@@ -71,17 +71,17 @@ const HowItWorks = () => (
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient text-white">
-        <div className="container py-16 text-center">
+      <section className="bg-foreground text-background">
+        <div className="container py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Ready to get started?</h2>
-          <p className="text-white/80 mb-8 max-w-md mx-auto">
+          <p className="text-background/70 mb-8 max-w-md mx-auto">
             Get matched with a verified technician today.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-white text-foreground hover:bg-white/90">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-12 px-6 bg-background text-foreground hover:bg-background/90">
               <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-white/20 text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
               <Link to="/book"><Phone className="h-4 w-4" /> Book a Session</Link>
             </Button>
           </div>
