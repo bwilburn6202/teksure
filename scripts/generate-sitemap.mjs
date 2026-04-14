@@ -16,7 +16,8 @@ import { dirname, join } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const BASE_URL = 'https://teksure.com';
-const TODAY = new Date().toISOString().slice(0, 10);
+const _d = new Date();
+const TODAY = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, '0')}-${String(_d.getDate()).padStart(2, '0')}`;
 
 // ── Static pages ──────────────────────────────────────────────
 const STATIC_PAGES = [

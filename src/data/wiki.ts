@@ -686,7 +686,7 @@ You can save your home address so getting directions home is always quick:
 If you need to share your location with a family member (for safety or to help them find you), tap the **blue dot** that shows your location, then tap **Share location**. You can choose how long to share it and send a link to anyone you trust.`,
   },
   {
-    slug: 'ride-sharing',
+    slug: 'ride-sharing-explained',
     title: 'How to Use Uber and Lyft',
     category: 'concept',
     tags: ['uber', 'lyft', 'rides', 'transportation'],
@@ -1037,7 +1037,7 @@ Phishing emails try to trick you into clicking a bad link or sharing personal in
 When in doubt, do not click. Go directly to the company's official website by typing the address into your browser.`,
   },
   {
-    slug: 'online-shopping-safety',
+    slug: 'online-shopping-safety-guide',
     title: 'Online Shopping Safety',
     category: 'concept',
     tags: ['shopping', 'safety', 'scams', 'credit-card', 'online'],
@@ -1188,7 +1188,7 @@ You do not need to have a disability to benefit from accessibility features. Man
 (Sources: Apple Support, Google Support, 2026)`,
   },
   {
-    slug: 'social-media-safety',
+    slug: 'social-media-safety-guide',
     title: 'Social Media Privacy and Safety',
     category: 'concept',
     tags: ['facebook', 'social media', 'privacy', 'safety', 'settings'],
@@ -1259,7 +1259,7 @@ The best way to start is with just one or two devices:
 (Sources: How-To Geek, Tom's Guide, 2026)`,
   },
   {
-    slug: 'streaming-setup',
+    slug: 'streaming-setup-guide',
     title: 'How to Set Up Streaming TV',
     category: 'concept',
     tags: ['streaming', 'roku', 'fire tv', 'netflix', 'tv'],

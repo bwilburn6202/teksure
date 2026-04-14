@@ -12998,10 +12998,9 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
 ];
 
 import { guidesBatch2 } from './guides-batch-2';
-import { guidesBatch3 } from './guides-batch-3';
 import { guidesBatch4 } from './guides-batch-4';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch3, ...guidesBatch4];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch4];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {
