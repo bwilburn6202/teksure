@@ -25,11 +25,26 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
       return;
     }
 
-    try {
-      await supabase.from('newsletter_subscribers').insert({ email: trimmed });
-    } catch {
-      // Table may not exist yet — still save locally
+    const { error: dbError } = await supabase.from('newsletter_subscribers').insert({ email: trimmed });
+
+    if (dbError) {
+      // Duplicate email is fine — treat as success
+      if (dbError.code === '23505') {
+        localStorage.setItem(STORAGE_KEY, trimmed);
+        setSubmitted(true);
+        setError('');
+        toast({ title: 'You\'re already subscribed!', description: 'You\'re on the list for weekly tech tips.' });
+        return;
+      }
+      console.error('Newsletter signup error:', dbError);
+      setError('Something went wrong. Please try again.');
+      return;
     }
+
+    // Fire-and-forget admin notification
+    supabase.functions.invoke('send-notification', {
+      body: { type: 'newsletter_signup', data: { email: trimmed } },
+    }).catch(err => console.warn('Newsletter notification failed (non-fatal):', err));
 
     localStorage.setItem(STORAGE_KEY, trimmed);
     setSubmitted(true);

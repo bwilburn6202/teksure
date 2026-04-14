@@ -41,7 +41,7 @@ export default function ScamReport() {
     if (!form.type || !form.description) { toast.error('Please fill in the required fields.'); return; }
     setLoading(true);
     try {
-      await (supabase as any).from('scam_reports').insert({
+      const { error: dbError } = await supabase.from('scam_reports').insert({
         scam_type: form.type,
         description: form.description,
         scam_url: form.url || null,
@@ -50,10 +50,33 @@ export default function ScamReport() {
         money_lost: form.lostMoney || null,
         reporter_contact: form.contactEmail || null,
       });
+
+      if (dbError) {
+        console.error('Scam report DB error:', dbError);
+        toast.error('Something went wrong. Please try again.');
+        return;
+      }
+
+      // Fire-and-forget admin notification email
+      supabase.functions.invoke('send-notification', {
+        body: {
+          type: 'scam_report',
+          data: {
+            scam_type: form.type,
+            description: form.description,
+            scam_url: form.url || undefined,
+            scam_phone: form.phone || undefined,
+            scam_email_address: form.email || undefined,
+            money_lost: form.lostMoney || undefined,
+            reporter_contact: form.contactEmail || undefined,
+          },
+        },
+      }).catch(err => console.warn('Scam report notification failed (non-fatal):', err));
+
       setSubmitted(true);
-    } catch {
-      toast.success('Thank you — your report has been submitted.');
-      setSubmitted(true);
+    } catch (err) {
+      console.error('Scam report submission error:', err);
+      toast.error('Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }

@@ -10,94 +10,254 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.4"
+    PostgrestVersion: "14.5"
   }
   public: {
     Tables: {
-      email_send_log: {
+      article_duplicates: {
         Row: {
-          created_at: string
-          error_message: string | null
+          detected_at: string
+          duplicate_article_id: string
           id: string
-          message_id: string | null
-          metadata: Json | null
-          recipient_email: string
-          status: string
-          template_name: string
+          primary_article_id: string
+          similarity_score: number
         }
         Insert: {
-          created_at?: string
-          error_message?: string | null
+          detected_at?: string
+          duplicate_article_id: string
           id?: string
-          message_id?: string | null
-          metadata?: Json | null
-          recipient_email: string
-          status: string
-          template_name: string
+          primary_article_id: string
+          similarity_score: number
         }
         Update: {
-          created_at?: string
-          error_message?: string | null
+          detected_at?: string
+          duplicate_article_id?: string
           id?: string
-          message_id?: string | null
-          metadata?: Json | null
-          recipient_email?: string
-          status?: string
-          template_name?: string
+          primary_article_id?: string
+          similarity_score?: number
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "article_duplicates_duplicate_article_id_fkey"
+            columns: ["duplicate_article_id"]
+            isOneToOne: false
+            referencedRelation: "scraped_articles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "article_duplicates_primary_article_id_fkey"
+            columns: ["primary_article_id"]
+            isOneToOne: false
+            referencedRelation: "scraped_articles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
-      email_send_state: {
+      bookings: {
         Row: {
-          auth_email_ttl_minutes: number
-          batch_size: number
-          id: number
-          retry_after_until: string | null
-          send_delay_ms: number
-          transactional_email_ttl_minutes: number
+          created_at: string
+          deposit_paid_at: string | null
+          device_type: string | null
+          email: string | null
+          id: string
+          name: string
+          notes: string | null
+          payment_status: string
+          phone: string | null
+          preferred_date: string
+          preferred_slot: string
+          problem_description: string | null
+          service_type: string
+          status: string
+          stripe_session_id: string | null
+          tech_id: string | null
           updated_at: string
+          user_id: string | null
         }
         Insert: {
-          auth_email_ttl_minutes?: number
-          batch_size?: number
-          id?: number
-          retry_after_until?: string | null
-          send_delay_ms?: number
-          transactional_email_ttl_minutes?: number
+          created_at?: string
+          deposit_paid_at?: string | null
+          device_type?: string | null
+          email?: string | null
+          id?: string
+          name: string
+          notes?: string | null
+          payment_status?: string
+          phone?: string | null
+          preferred_date: string
+          preferred_slot: string
+          problem_description?: string | null
+          service_type: string
+          status?: string
+          stripe_session_id?: string | null
+          tech_id?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Update: {
-          auth_email_ttl_minutes?: number
-          batch_size?: number
-          id?: number
-          retry_after_until?: string | null
-          send_delay_ms?: number
-          transactional_email_ttl_minutes?: number
+          created_at?: string
+          deposit_paid_at?: string | null
+          device_type?: string | null
+          email?: string | null
+          id?: string
+          name?: string
+          notes?: string | null
+          payment_status?: string
+          phone?: string | null
+          preferred_date?: string
+          preferred_slot?: string
+          problem_description?: string | null
+          service_type?: string
+          status?: string
+          stripe_session_id?: string | null
+          tech_id?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Relationships: []
       }
-      email_unsubscribe_tokens: {
+      content_categories: {
+        Row: {
+          icon: string | null
+          id: string
+          name: string
+          parent_id: string | null
+          slug: string
+          sort_order: number
+        }
+        Insert: {
+          icon?: string | null
+          id?: string
+          name: string
+          parent_id?: string | null
+          slug: string
+          sort_order?: number
+        }
+        Update: {
+          icon?: string | null
+          id?: string
+          name?: string
+          parent_id?: string | null
+          slug?: string
+          sort_order?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "content_categories_parent_id_fkey"
+            columns: ["parent_id"]
+            isOneToOne: false
+            referencedRelation: "content_categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      content_sources: {
         Row: {
           created_at: string
-          email: string
+          domain: string
+          feed_type: string
+          feed_url: string | null
           id: string
-          token: string
-          used_at: string | null
+          last_scraped_at: string | null
+          logo_url: string | null
+          name: string
+          scrape_enabled: boolean
+          scrape_frequency_hours: number
         }
         Insert: {
           created_at?: string
-          email: string
+          domain: string
+          feed_type?: string
+          feed_url?: string | null
           id?: string
-          token: string
-          used_at?: string | null
+          last_scraped_at?: string | null
+          logo_url?: string | null
+          name: string
+          scrape_enabled?: boolean
+          scrape_frequency_hours?: number
         }
         Update: {
           created_at?: string
-          email?: string
+          domain?: string
+          feed_type?: string
+          feed_url?: string | null
           id?: string
-          token?: string
-          used_at?: string | null
+          last_scraped_at?: string | null
+          logo_url?: string | null
+          name?: string
+          scrape_enabled?: boolean
+          scrape_frequency_hours?: number
+        }
+        Relationships: []
+      }
+      forum_replies: {
+        Row: {
+          author_name: string
+          body: string
+          created_at: string
+          id: string
+          thread_id: string
+          user_id: string | null
+        }
+        Insert: {
+          author_name?: string
+          body: string
+          created_at?: string
+          id?: string
+          thread_id: string
+          user_id?: string | null
+        }
+        Update: {
+          author_name?: string
+          body?: string
+          created_at?: string
+          id?: string
+          thread_id?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "forum_replies_thread_id_fkey"
+            columns: ["thread_id"]
+            isOneToOne: false
+            referencedRelation: "forum_threads"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      forum_threads: {
+        Row: {
+          author_name: string
+          body: string
+          category: string
+          created_at: string
+          id: string
+          reply_count: number
+          title: string
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          author_name?: string
+          body: string
+          category?: string
+          created_at?: string
+          id?: string
+          reply_count?: number
+          title: string
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          author_name?: string
+          body?: string
+          category?: string
+          created_at?: string
+          id?: string
+          reply_count?: number
+          title?: string
+          updated_at?: string
+          user_id?: string | null
         }
         Relationships: []
       }
@@ -193,6 +353,24 @@ export type Database = {
         }
         Relationships: []
       }
+      newsletter_subscribers: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -217,29 +395,150 @@ export type Database = {
         }
         Relationships: []
       }
-      suppressed_emails: {
+      scam_reports: {
         Row: {
           created_at: string
-          email: string
+          description: string
           id: string
-          metadata: Json | null
-          reason: string
+          money_lost: string | null
+          reporter_contact: string | null
+          scam_email_address: string | null
+          scam_phone: string | null
+          scam_type: string
+          scam_url: string | null
         }
         Insert: {
           created_at?: string
-          email: string
+          description: string
           id?: string
-          metadata?: Json | null
-          reason: string
+          money_lost?: string | null
+          reporter_contact?: string | null
+          scam_email_address?: string | null
+          scam_phone?: string | null
+          scam_type: string
+          scam_url?: string | null
         }
         Update: {
           created_at?: string
-          email?: string
+          description?: string
           id?: string
-          metadata?: Json | null
-          reason?: string
+          money_lost?: string | null
+          reporter_contact?: string | null
+          scam_email_address?: string | null
+          scam_phone?: string | null
+          scam_type?: string
+          scam_url?: string | null
         }
         Relationships: []
+      }
+      scraped_articles: {
+        Row: {
+          category: string | null
+          id: string
+          original_author: string | null
+          original_content: string
+          original_published_at: string | null
+          original_title: string
+          original_url: string
+          quality_score: number | null
+          scrape_status: string
+          scraped_at: string
+          source_id: string
+          tags: string[] | null
+        }
+        Insert: {
+          category?: string | null
+          id?: string
+          original_author?: string | null
+          original_content: string
+          original_published_at?: string | null
+          original_title: string
+          original_url: string
+          quality_score?: number | null
+          scrape_status?: string
+          scraped_at?: string
+          source_id: string
+          tags?: string[] | null
+        }
+        Update: {
+          category?: string | null
+          id?: string
+          original_author?: string | null
+          original_content?: string
+          original_published_at?: string | null
+          original_title?: string
+          original_url?: string
+          quality_score?: number | null
+          scrape_status?: string
+          scraped_at?: string
+          source_id?: string
+          tags?: string[] | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scraped_articles_source_id_fkey"
+            columns: ["source_id"]
+            isOneToOne: false
+            referencedRelation: "content_sources"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      simplified_articles: {
+        Row: {
+          created_at: string
+          difficulty_level: string
+          estimated_read_minutes: number
+          id: string
+          is_published: boolean
+          published_at: string | null
+          scraped_article_id: string
+          simplified_content: string
+          simplified_steps: Json | null
+          simplified_title: string
+          slug: string
+          target_os: string[] | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          difficulty_level?: string
+          estimated_read_minutes?: number
+          id?: string
+          is_published?: boolean
+          published_at?: string | null
+          scraped_article_id: string
+          simplified_content: string
+          simplified_steps?: Json | null
+          simplified_title: string
+          slug: string
+          target_os?: string[] | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          difficulty_level?: string
+          estimated_read_minutes?: number
+          id?: string
+          is_published?: boolean
+          published_at?: string | null
+          scraped_article_id?: string
+          simplified_content?: string
+          simplified_steps?: Json | null
+          simplified_title?: string
+          slug?: string
+          target_os?: string[] | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "simplified_articles_scraped_article_id_fkey"
+            columns: ["scraped_article_id"]
+            isOneToOne: true
+            referencedRelation: "scraped_articles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       video_tutorials: {
         Row: {
@@ -298,31 +597,7 @@ export type Database = {
       }
     }
     Functions: {
-      delete_email: {
-        Args: { message_id: number; queue_name: string }
-        Returns: boolean
-      }
-      enqueue_email: {
-        Args: { payload: Json; queue_name: string }
-        Returns: number
-      }
-      move_to_dlq: {
-        Args: {
-          dlq_name: string
-          message_id: number
-          payload: Json
-          source_queue: string
-        }
-        Returns: number
-      }
-      read_email_batch: {
-        Args: { batch_size: number; queue_name: string; vt: number }
-        Returns: {
-          message: Json
-          msg_id: number
-          read_ct: number
-        }[]
-      }
+      [_ in never]: never
     }
     Enums: {
       os_type: "windows" | "macos" | "ios" | "android"

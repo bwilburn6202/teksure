@@ -109,7 +109,7 @@ export default function Book() {
 
   /** Save booking to DB and return its ID, or throw */
   const createBookingRecord = async (payStatus: 'none' | 'deposit_pending') => {
-    const { data, error: dbError } = await (supabase as any).from('bookings').insert({
+    const { data, error: dbError } = await supabase.from('bookings').insert({
       user_id: user?.id ?? null,
       name: form.name.trim(),
       email: form.email.trim() || null,

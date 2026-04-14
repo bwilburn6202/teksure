@@ -52,21 +52,28 @@ function NewsletterSignup() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim()) return;
+    const trimmed = email.trim().toLowerCase();
+    if (!trimmed) return;
     setStatus('loading');
     try {
       const { supabase } = await import('@/integrations/supabase/client');
-      await (supabase as any).from('newsletter_signups').insert({ email: email.trim() });
+      const { error: dbError } = await supabase.from('newsletter_subscribers').insert({ email: trimmed });
+
+      if (dbError && dbError.code !== '23505') {
+        console.error('Newsletter signup error:', dbError);
+        setStatus('error');
+        return;
+      }
+
+      // Fire-and-forget admin notification
+      supabase.functions.invoke('send-notification', {
+        body: { type: 'newsletter_signup', data: { email: trimmed } },
+      }).catch(err => console.warn('Newsletter notification failed (non-fatal):', err));
+
       setStatus('success');
     } catch (err) {
       console.error('Newsletter signup failed:', err);
-      try {
-        const { supabase } = await import('@/integrations/supabase/client');
-        await (supabase as any).from('email_send_log').insert({ email: email.trim(), event: 'newsletter_signup_fallback' });
-        setStatus('success');
-      } catch (e) {
-        setStatus('error');
-      }
+      setStatus('error');
     }
   };
 
