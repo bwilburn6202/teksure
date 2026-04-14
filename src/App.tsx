@@ -314,6 +314,7 @@ const AppContent = () => {
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/tools/osint-framework" element={<OsintFramework />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
+          <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/memory" element={<MemoryDashboard />} />
