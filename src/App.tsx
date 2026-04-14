@@ -125,6 +125,10 @@ const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
+const Mockups                = lazy(() => import("./pages/Mockups"));
+const MockupA                = lazy(() => import("./pages/MockupA"));
+const MockupB                = lazy(() => import("./pages/MockupB"));
+const MockupC                = lazy(() => import("./pages/MockupC"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
@@ -211,6 +215,10 @@ const AppContent = () => {
         <ErrorBoundary variant="section">
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/mockups" element={<Mockups />} />
+          <Route path="/mockup-a" element={<MockupA />} />
+          <Route path="/mockup-b" element={<MockupB />} />
+          <Route path="/mockup-c" element={<MockupC />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
@@ -312,7 +320,6 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
-          <Route path="/tools/osint-framework" element={<OsintFramework />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />

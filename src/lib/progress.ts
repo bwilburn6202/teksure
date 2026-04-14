@@ -38,6 +38,59 @@ export function clearProgress(): void {
   window.dispatchEvent(new CustomEvent('teksure-progress-update'));
 }
 
+const STEP_KEY = 'teksure-step-progress';
+const RECENT_KEY = 'teksure-recent-guides';
+
+export function saveStepProgress(slug: string, step: number, totalSteps: number): void {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    const data: Record<string, { step: number; totalSteps: number }> = raw ? JSON.parse(raw) : {};
+    data[slug] = { step, totalSteps };
+    localStorage.setItem(STEP_KEY, JSON.stringify(data));
+    window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+  } catch { /* ignore */ }
+}
+
+export function getInProgressGuides(): { slug: string; step: number; totalSteps: number; pct: number }[] {
+  try {
+    const raw = localStorage.getItem(STEP_KEY);
+    if (!raw) return [];
+    const data: Record<string, { step: number; totalSteps: number }> = JSON.parse(raw);
+    const completed = getCompletedGuides();
+    return Object.entries(data)
+      .filter(([slug]) => !completed.has(slug))
+      .map(([slug, { step, totalSteps }]) => ({
+        slug,
+        step,
+        totalSteps,
+        pct: totalSteps > 0 ? Math.round((step / totalSteps) * 100) : 0,
+      }))
+      .sort((a, b) => b.pct - a.pct);
+  } catch {
+    return [];
+  }
+}
+
+export function recordGuideView(slug: string): void {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    const recent: string[] = raw ? JSON.parse(raw) : [];
+    const filtered = recent.filter(s => s !== slug);
+    filtered.unshift(slug);
+    localStorage.setItem(RECENT_KEY, JSON.stringify(filtered.slice(0, 20)));
+    window.dispatchEvent(new CustomEvent('teksure-progress-update'));
+  } catch { /* ignore */ }
+}
+
+export function getRecentGuides(): string[] {
+  try {
+    const raw = localStorage.getItem(RECENT_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
 export function getProgressCount(totalSlugs?: string[]): { completed: number; total: number; pct: number } {
   const done = getCompletedGuides();
   if (totalSlugs) {
