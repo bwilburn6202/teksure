@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { WifiOff } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
@@ -112,12 +112,9 @@ const AppPermissions         = lazy(() => import("./pages/tools/AppPermissions")
 const TwoFactorSetup         = lazy(() => import("./pages/tools/TwoFactorSetup"));
 const Notifications          = lazy(() => import("./pages/Notifications"));
 const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
-const CyberSec               = lazy(() => import("./pages/tools/CyberSec"));
+const SecurityOsintTools     = lazy(() => import("./pages/tools/SecurityOsintTools"));
 const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
-const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
-const GeointResources        = lazy(() => import("./pages/tools/GeointResources"));
-const OsintCollections       = lazy(() => import("./pages/tools/OsintCollections"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
 const Articles               = lazy(() => import("./pages/Articles"));
@@ -129,8 +126,6 @@ const Mockups                = lazy(() => import("./pages/Mockups"));
 const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
-const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
-const OsintTools             = lazy(() => import("./pages/tools/OsintTools"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
 const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
@@ -309,11 +304,12 @@ const AppContent = () => {
           <Route path="/family-sharing" element={<FamilySharing />} />
           <Route path="/caregiver" element={<Caregiver />} />
           <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
-          <Route path="/tools/osint-tools" element={<OsintTools />} />
+          <Route path="/tools/security-osint" element={<SecurityOsintTools />} />
           <Route path="/tools/osint-framework" element={<OsintFramework />} />
-          <Route path="/tools/geoint" element={<GeointResources />} />
-          <Route path="/tools/osint-collections" element={<OsintCollections />} />
-          <Route path="/cybersec" element={<CyberSec />} />
+          <Route path="/tools/osint-tools" element={<Navigate to="/tools/security-osint?tab=osint" replace />} />
+          <Route path="/tools/geoint" element={<Navigate to="/tools/security-osint?tab=geoint" replace />} />
+          <Route path="/tools/osint-collections" element={<Navigate to="/tools/security-osint?tab=collections" replace />} />
+          <Route path="/cybersec" element={<Navigate to="/tools/security-osint?tab=cybersec" replace />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/articles" element={<Articles />} />
@@ -321,8 +317,6 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
-          <Route path="/tools/osint-framework" element={<OsintFramework />} />
-          <Route path="/tools/osint-tools" element={<OsintTools />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
