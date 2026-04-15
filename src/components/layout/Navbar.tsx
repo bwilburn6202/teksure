@@ -90,7 +90,7 @@ export function Navbar() {
         <div className="container flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to={user ? dashboardPath : '/'} className="flex items-center gap-2.5 shrink-0" aria-label="TekSure home">
-            <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" fetchPriority="high" />
+            <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto" fetchPriority="high" />
           </Link>
 
           {/* Desktop Nav */}
@@ -280,7 +280,7 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between h-16 px-6">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto" />
+              <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto" />
             </Link>
             <Button variant="ghost" size="icon" className="h-11 w-11 rounded-full" aria-label="Close menu" onClick={() => setMobileMenuOpen(false)}>
               <X className="h-5 w-5" aria-hidden="true" />

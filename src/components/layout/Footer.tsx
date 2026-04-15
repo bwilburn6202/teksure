@@ -42,7 +42,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-6 w-auto dark:brightness-0 dark:invert" loading="lazy" />
+              <img src="/teksure-logo-stacked.svg" alt="TekSure" className="h-16 w-auto dark:brightness-0 dark:invert" loading="lazy" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               An American tech support company. Free guides, real human support, and tools built for everyday people.
