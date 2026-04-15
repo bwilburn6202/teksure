@@ -142,6 +142,7 @@ export default defineConfig(({ mode }) => ({
       // Ensure these packages are bundled into the SSR build
       // (they use browser-style imports that Node can't resolve natively)
       'lucide-react',
+      'react-helmet-async',
     ],
   },
   build: {
