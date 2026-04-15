@@ -133,6 +133,9 @@ const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
 const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
 const PrinterTroubleshooter  = lazy(() => import("./pages/tools/PrinterTroubleshooter"));
+const NotificationDecoder    = lazy(() => import("./pages/tools/NotificationDecoder"));
+const SafeCall               = lazy(() => import("./pages/tools/SafeCall"));
+const BillDecoder            = lazy(() => import("./pages/tools/BillDecoder"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
@@ -355,6 +358,9 @@ const AppContent = () => {
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/memory" element={<MemoryDashboard />} />
+          <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
+          <Route path="/tools/safe-call" element={<SafeCall />} />
+          <Route path="/tools/bill-decoder" element={<BillDecoder />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>

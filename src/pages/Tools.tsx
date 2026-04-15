@@ -17,12 +17,42 @@ import {
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, Terminal, Shield, Globe, BookOpen,
+  FileSearch, Terminal, Shield, Globe, BookOpen, Receipt,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
 
 const tools = [
+  {
+    title: 'Notification Decoder',
+    description: 'Got a confusing popup or notification on your phone or computer? Look it up and get a plain-English explanation of what it means and what to do.',
+    icon: Bell,
+    path: '/tools/notification-decoder',
+    color: 'text-violet-600',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
+  },
+  {
+    title: 'Safe Call Evaluator',
+    description: 'Got a suspicious phone call? Answer 4 quick questions and find out if it was a scam — with clear steps on what to do next.',
+    icon: Phone,
+    path: '/tools/safe-call',
+    color: 'text-green-600',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Bill Decoder',
+    description: 'Confused by a charge on your internet, phone, or cable bill? Search any fee and get a plain-English explanation — plus whether you can get rid of it.',
+    icon: Receipt,
+    path: '/tools/bill-decoder',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Learning' as ToolCategory,
+  },
   {
     title: 'Cyber AI Toolkit',
     description: 'Interactive browser-based security tools: password analyzer, hash generator, IOC extractor, encoding suite, and more.',
