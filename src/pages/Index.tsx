@@ -3,8 +3,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Wrench, Heart,
-  Users, Star, Zap, MessageCircle, ChevronRight
+  Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Heart,
+  Users, Star, Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -32,12 +32,12 @@ const categoryColors: Record<string, { border: string; bg: string; text: string;
 };
 
 const quickProblems = [
-  { label: 'WiFi Not Working', query: 'wifi', emoji: '📶', slug: 'connect-wifi-windows', fix: 'Unplug your router for 30 seconds' },
-  { label: 'Computer Is Slow', query: 'slow', emoji: '🐢', slug: 'restart-pc-windows', fix: 'Restart your device — fixes 80% of slowdowns' },
-  { label: 'Virus or Pop-up', query: 'virus', emoji: '⚠️', slug: 'spot-phishing-emails', fix: 'Run a scan and close suspicious tabs' },
-  { label: 'Printer Help', query: 'printer', emoji: '🖨️', slug: 'fix-printer-windows', fix: 'Check it\'s set as the default printer' },
-  { label: 'Forgot Password', query: 'password', emoji: '🔑', slug: 'manage-passwords-windows', fix: 'Use \'Forgot Password\' on the login page' },
-  { label: 'Phone Storage Full', query: 'storage', emoji: '📱', slug: 'manage-storage-windows', fix: 'Delete unused apps and clear cache' },
+  { label: 'WiFi Not Working', query: 'wifi', icon: Wifi, color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400', slug: 'connect-wifi-windows', fix: 'Unplug your router for 30 seconds' },
+  { label: 'Computer Is Slow', query: 'slow', icon: Gauge, color: 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400', slug: 'restart-pc-windows', fix: 'Restart your device — fixes 80% of slowdowns' },
+  { label: 'Virus or Pop-up', query: 'virus', icon: AlertTriangle, color: 'bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400', slug: 'spot-phishing-emails', fix: 'Run a scan and close suspicious tabs' },
+  { label: 'Printer Help', query: 'printer', icon: Printer, color: 'bg-slate-100 dark:bg-slate-800/30 text-slate-600 dark:text-slate-400', slug: 'fix-printer-windows', fix: 'Check it\'s set as the default printer' },
+  { label: 'Forgot Password', query: 'password', icon: KeyRound, color: 'bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400', slug: 'manage-passwords-windows', fix: 'Use \'Forgot Password\' on the login page' },
+  { label: 'Phone Storage Full', query: 'storage', icon: Smartphone, color: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400', slug: 'manage-storage-windows', fix: 'Delete unused apps and clear cache' },
 ];
 
 function NewsletterCTA() {
@@ -177,7 +177,7 @@ const Index = () => {
                 <button key={p.query} onClick={() => navigate(`/guides?q=${encodeURIComponent(p.query)}`)}
                   aria-label={p.label}
                   className="inline-flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-full bg-muted border border-border text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors duration-200">
-                  <span aria-hidden="true">{p.emoji}</span> {p.label}
+                  <p.icon className="h-4 w-4" aria-hidden="true" /> {p.label}
                 </button>
               ))}
             </div>
@@ -219,8 +219,8 @@ const Index = () => {
               <Link key={fix.slug} to={`/guides/${fix.slug}`} className="block group">
                 <div className="glow-card h-full">
                   <div className="flex items-start gap-3.5">
-                    <div className="h-11 w-11 rounded-lg bg-muted flex items-center justify-center shrink-0 text-xl">
-                      {fix.emoji}
+                    <div className={`h-11 w-11 rounded-xl ${fix.color} flex items-center justify-center shrink-0`}>
+                      <fix.icon className="h-5 w-5" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{fix.label}</h3>
@@ -310,15 +310,15 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto stagger">
             {[
-              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Your phone or email — that\'s all we need.', emoji: '💬' },
-              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.', emoji: '📞' },
-              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.', emoji: '✅' },
+              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Your phone or email — that\'s all we need.', icon: Mail, color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' },
+              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.', icon: Phone, color: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400' },
+              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.', icon: CheckCircle, color: 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400' },
             ].map((s) => (
-              <div key={s.step} className="rounded-xl border border-border bg-card p-7 text-center relative overflow-hidden">
+              <div key={s.step} className="rounded-2xl border border-border/60 bg-card p-7 text-center relative overflow-hidden shadow-sm">
                 <div className="absolute top-2 right-3 text-5xl font-black text-foreground/[0.03] leading-none select-none">{s.step}</div>
                 <div className="relative">
-                  <div className="h-14 w-14 rounded-xl bg-muted flex items-center justify-center mx-auto mb-5 text-2xl">
-                    {s.emoji}
+                  <div className={`h-14 w-14 rounded-xl ${s.color} flex items-center justify-center mx-auto mb-5`}>
+                    <s.icon className="h-6 w-6" />
                   </div>
                   <h3 className="font-semibold text-base mb-2">{s.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
@@ -359,7 +359,9 @@ const Index = () => {
                 <Link key={guide.slug} to={`/guides/${guide.slug}`} className="block group">
                   <div className="glow-card h-full">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className={`h-10 w-10 rounded-lg ${c.iconBg} flex items-center justify-center text-xl shrink-0`}>{guide.emoji}</div>
+                      <div className={`h-10 w-10 rounded-xl ${c.iconBg} flex items-center justify-center shrink-0 ${c.text}`}>
+                        {(() => { const Icon = categoryIcons[guide.category] || BookOpen; return <Icon className="h-5 w-5" />; })()}
+                      </div>
                       <div className="flex flex-wrap items-center gap-2">
                         <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
                         <span className="text-xs text-muted-foreground">{guide.readTime}</span>

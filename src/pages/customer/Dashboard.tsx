@@ -26,12 +26,12 @@ import { supabase } from '@/integrations/supabase/client';
 
 interface Booking {
   id: string;
-  issue_type: string;
-  description: string | null;
+  service_type: string;
+  problem_description: string | null;
   status: string;
   payment_status: string | null;
   preferred_date: string | null;
-  preferred_time: string | null;
+  preferred_slot: string | null;
   created_at: string;
 }
 
@@ -87,7 +87,7 @@ const Dashboard = () => {
       setLoadingBookings(true);
       const { data, error } = await (supabase as any)
         .from('bookings')
-        .select('id, issue_type, description, status, payment_status, preferred_date, preferred_time, created_at')
+        .select('id, service_type, problem_description, status, payment_status, preferred_date, preferred_slot, created_at')
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
       if (!error && data) {
@@ -322,15 +322,15 @@ const Dashboard = () => {
               ) : (
                 <div className="space-y-2">
                   {bookings.map(booking => {
-                    const Icon = CATEGORY_ICONS[booking.issue_type] ?? MessageSquare;
+                    const Icon = CATEGORY_ICONS[booking.service_type] ?? MessageSquare;
                     return (
                       <Link to={`/customer/jobs/${booking.id}`} key={booking.id} className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-primary/40 hover:shadow-sm transition-all group">
                         <div className="h-9 w-9 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                           <Icon className="h-4 w-4 text-muted-foreground" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium">{CATEGORY_LABELS[booking.issue_type] ?? booking.issue_type}</p>
-                          <p className="text-xs text-muted-foreground truncate">{booking.description ?? 'No description'}</p>
+                          <p className="text-sm font-medium">{CATEGORY_LABELS[booking.service_type] ?? booking.service_type}</p>
+                          <p className="text-xs text-muted-foreground truncate">{booking.problem_description ?? 'No description'}</p>
                         </div>
                         <div className="flex flex-col items-end gap-1 shrink-0">
                           <StatusBadge status={booking.status} />

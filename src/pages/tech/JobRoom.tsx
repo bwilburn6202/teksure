@@ -29,12 +29,12 @@ interface Booking {
   name: string;
   email: string | null;
   phone: string | null;
-  issue_type: string | null;
-  description: string | null;
+  service_type: string | null;
+  problem_description: string | null;
   status: string;
   payment_status: string | null;
   preferred_date: string | null;
-  preferred_time: string | null;
+  preferred_slot: string | null;
   deposit_paid_at: string | null;
   created_at: string;
 }
@@ -88,7 +88,7 @@ const TechJobRoom = () => {
 
     const { data, error: fetchError } = await (supabase as any)
       .from('bookings')
-      .select('id, user_id, tech_id, name, email, phone, issue_type, description, status, payment_status, preferred_date, preferred_time, deposit_paid_at, created_at')
+      .select('id, user_id, tech_id, name, email, phone, service_type, problem_description, status, payment_status, preferred_date, preferred_slot, deposit_paid_at, created_at')
       .eq('id', id)
       .single();
 
@@ -170,7 +170,7 @@ const TechJobRoom = () => {
   }
 
   // ---------- Main view ----------
-  const issueLabel = ISSUE_LABELS[booking.issue_type ?? ''] ?? booking.issue_type ?? 'Support Request';
+  const issueLabel = ISSUE_LABELS[booking.service_type ?? ''] ?? booking.service_type ?? 'Support Request';
   const paymentBadge = PAYMENT_BADGES[booking.payment_status ?? 'pending'] ?? PAYMENT_BADGES.pending;
   const status = booking.status;
 
@@ -187,8 +187,8 @@ const TechJobRoom = () => {
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{issueLabel}</h1>
-            {booking.description && (
-              <p className="text-muted-foreground mt-1 text-lg">{booking.description}</p>
+            {booking.problem_description && (
+              <p className="text-muted-foreground mt-1 text-lg">{booking.problem_description}</p>
             )}
           </div>
           <StatusBadge status={status} />
@@ -310,17 +310,17 @@ const TechJobRoom = () => {
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Time</p>
                     <p className="text-sm font-medium flex items-center gap-1.5">
                       <Clock className="h-4 w-4 text-muted-foreground" />
-                      {booking.preferred_time ?? 'Not set'}
+                      {booking.preferred_slot ?? 'Not set'}
                     </p>
                   </div>
                 </div>
 
-                {booking.description && (
+                {booking.problem_description && (
                   <>
                     <Separator />
                     <div>
                       <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Problem Description</p>
-                      <p className="text-sm leading-relaxed">{booking.description}</p>
+                      <p className="text-sm leading-relaxed">{booking.problem_description}</p>
                     </div>
                   </>
                 )}

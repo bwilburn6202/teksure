@@ -250,10 +250,10 @@ interface Job {
   name: string;
   email: string | null;
   phone: string | null;
-  issue_type: string;
-  description: string | null;
+  service_type: string;
+  problem_description: string | null;
   preferred_date: string;
-  preferred_time: string | null;
+  preferred_slot: string | null;
   status: string;
   payment_status: string | null;
   created_at: string;
@@ -375,7 +375,7 @@ function JobsTab() {
                 <>
                   <TableRow key={job.id} className="cursor-pointer hover:bg-muted/50" onClick={() => setExpandedId(isExpanded ? null : job.id)}>
                     <TableCell className="font-medium">{job.name}</TableCell>
-                    <TableCell className="text-muted-foreground">{serviceLabels[job.issue_type] || job.issue_type}</TableCell>
+                    <TableCell className="text-muted-foreground">{serviceLabels[job.service_type] || job.service_type}</TableCell>
                     <TableCell>{job.tech_name || '—'}</TableCell>
                     <TableCell>
                       <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${cfg.color}`}>
@@ -399,7 +399,7 @@ function JobsTab() {
                             {job.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${job.phone}`} className="hover:underline text-foreground">{job.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
                               Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
-                              {job.preferred_time && ` · ${job.preferred_time}`}
+                              {job.preferred_slot && ` · ${job.preferred_slot}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
                           </div>
@@ -441,10 +441,10 @@ interface Dispute {
   name: string;
   email: string | null;
   phone: string | null;
-  issue_type: string;
-  description: string | null;
+  service_type: string;
+  problem_description: string | null;
   preferred_date: string;
-  preferred_time: string | null;
+  preferred_slot: string | null;
   status: string;
   payment_status: string | null;
   created_at: string;
@@ -531,7 +531,7 @@ function DisputesTab() {
                 <>
                   <TableRow key={d.id} className="cursor-pointer hover:bg-muted/50" onClick={() => setExpandedId(isExpanded ? null : d.id)}>
                     <TableCell className="font-medium">{d.name}</TableCell>
-                    <TableCell className="text-muted-foreground">{serviceLabels[d.issue_type] || d.issue_type}</TableCell>
+                    <TableCell className="text-muted-foreground">{serviceLabels[d.service_type] || d.service_type}</TableCell>
                     <TableCell>{d.tech_name || '—'}</TableCell>
                     <TableCell className="text-muted-foreground text-sm">{timeAgo(d.created_at)}</TableCell>
                     <TableCell>{isExpanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}</TableCell>
@@ -545,7 +545,7 @@ function DisputesTab() {
                             {d.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${d.phone}`} className="hover:underline text-foreground">{d.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
                               Booked for {new Date(d.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
-                              {d.preferred_time && ` at ${d.preferred_time}`}
+                              {d.preferred_slot && ` at ${d.preferred_slot}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
                             {d.payment_status && (

@@ -24,10 +24,10 @@ interface Booking {
   name: string;
   email: string | null;
   phone: string | null;
-  issue_type: string | null;
-  description: string | null;
+  service_type: string | null;
+  problem_description: string | null;
   preferred_date: string | null;
-  preferred_time: string | null;
+  preferred_slot: string | null;
   status: string;
   payment_status: string | null;
   deposit_paid_at: string | null;
@@ -287,8 +287,8 @@ function BookingCard({
               </Badge>
             </div>
 
-            {booking.issue_type && (
-              <p className="text-sm font-medium text-primary capitalize">{booking.issue_type.replace(/_/g, ' ')}</p>
+            {booking.service_type && (
+              <p className="text-sm font-medium text-primary capitalize">{booking.service_type.replace(/_/g, ' ')}</p>
             )}
 
             {booking.description && (
@@ -300,7 +300,7 @@ function BookingCard({
                 <span className="inline-flex items-center gap-1">
                   <Calendar className="h-3.5 w-3.5" />
                   {formatDate(booking.preferred_date)}
-                  {booking.preferred_time && ` at ${booking.preferred_time}`}
+                  {booking.preferred_slot && ` at ${booking.preferred_slot}`}
                 </span>
               )}
               {booking.email && (
