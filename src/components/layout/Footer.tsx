@@ -36,15 +36,15 @@ export function Footer() {
   ];
 
   return (
-    <footer aria-label="Site footer" className="bg-foreground text-background">
-      <div className="container py-16 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-14">
+    <footer aria-label="Site footer" className="border-t border-border bg-muted/30">
+      <div className="container py-14 md:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2">
-            <Link to="/" className="inline-block mb-5" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-7 w-auto brightness-0 invert" loading="lazy" />
+            <Link to="/" className="inline-block mb-4" aria-label="TekSure home">
+              <img src="/teksure-logo.svg" alt="TekSure" className="h-6 w-auto dark:brightness-0 dark:invert" loading="lazy" />
             </Link>
-            <p className="text-sm text-background/55 max-w-xs leading-relaxed">
+            <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               An American tech support company. Free guides, real human support, and tools built for everyday people.
             </p>
           </div>
@@ -52,15 +52,15 @@ export function Footer() {
           {/* Link columns */}
           {columns.map((col) => (
             <div key={col.title}>
-              <h4 id={`footer-nav-${col.title.toLowerCase()}`} className="text-[10px] font-semibold uppercase tracking-[0.15em] text-background/35 mb-5">
+              <h4 id={`footer-nav-${col.title.toLowerCase()}`} className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60 mb-4">
                 {col.title}
               </h4>
-              <nav aria-labelledby={`footer-nav-${col.title.toLowerCase()}`} className="flex flex-col gap-3">
+              <nav aria-labelledby={`footer-nav-${col.title.toLowerCase()}`} className="flex flex-col gap-2.5">
                 {col.links.map((link) => (
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="text-sm text-background/55 hover:text-background transition-colors duration-200"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -71,13 +71,13 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-background/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-background/35">
+        <div className="border-t border-border/60 pt-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-muted-foreground/60">
             &copy; {currentYear} TekSure. An American company. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link to="/changelog" className="text-xs text-background/35 hover:text-background/70 transition-colors">Changelog</Link>
-            <Link to="/privacy" className="text-xs text-background/35 hover:text-background/70 transition-colors">Privacy</Link>
+            <Link to="/changelog" className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors">Changelog</Link>
+            <Link to="/privacy" className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors">Privacy</Link>
           </div>
         </div>
       </div>
