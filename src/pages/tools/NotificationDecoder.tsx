@@ -35,9 +35,9 @@ const notifications: Notification[] = [
     whatItMeans: 'Your phone or tablet is running out of space to save new photos, apps, or updates. When storage fills up completely, your device may stop working properly.',
     whatCausedIt: 'Photos, videos, and apps have built up over time. Videos are especially large — a single 1-minute video can use as much space as 300 photos.',
     whatToDo: [
-      'Go to Settings → General → iPhone Storage to see what\'s using the most space.',
+      `Go to Settings → General → iPhone Storage to see what's using the most space.`,
       'Delete photos and videos you no longer need (or move them to iCloud).',
-      'Delete apps you haven\'t opened in over 6 months.',
+      `Delete apps you haven't opened in over 6 months.`,
       'Turn on iCloud Photos to automatically move photos off your device.',
     ],
     safeToIgnore: false,
@@ -50,13 +50,13 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Mac', 'Windows', 'Android'],
     category: 'Updates',
     urgency: 'act',
-    whatItMeans: 'Your device\'s maker has released a new version of the software that runs it. Updates fix security problems, bugs, and sometimes add new features.',
+    whatItMeans: `Your device's maker has released a new version of the software that runs it. Updates fix security problems, bugs, and sometimes add new features.`,
     whatCausedIt: 'Your device checked for updates (which it does automatically in the background) and found a newer version.',
     whatToDo: [
       'Plug your device into power first — updates can drain battery.',
       'Connect to WiFi before updating (updates are large downloads).',
       'Tap "Install Tonight" or "Install Now" — both are safe options.',
-      'If you\'re asked to back up first, tap "Back Up Then Update."',
+      `If you're asked to back up first, tap "Back Up Then Update."`,
     ],
     safeToIgnore: false,
     keywords: ['software update', 'update available', 'new update', 'install update', 'system update'],
@@ -68,13 +68,13 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Android', 'Mac', 'Windows'],
     category: 'Battery',
     urgency: 'info',
-    whatItMeans: 'Your device\'s battery is getting low and will need charging soon. At 20%, most devices switch to a low-power mode to stretch the remaining charge.',
-    whatCausedIt: 'You\'ve been using the device for a while without plugging it in.',
+    whatItMeans: `Your device's battery is getting low and will need charging soon. At 20%, most devices switch to a low-power mode to stretch the remaining charge.`,
+    whatCausedIt: `You've been using the device for a while without plugging it in.`,
     whatToDo: [
       'Plug your device into a charger as soon as you can.',
-      'If you can\'t charge right away, turn down screen brightness to save power.',
+      `If you can't charge right away, turn down screen brightness to save power.`,
       'On iPhone, turn on Low Power Mode under Settings → Battery.',
-      'Avoid running video or games until you\'re charged.',
+      `Avoid running video or games until you're charged.`,
     ],
     safeToIgnore: true,
     keywords: ['low battery', 'battery low', 'battery warning', '20% battery', '10% battery', 'charge your device'],
@@ -86,14 +86,14 @@ const notifications: Notification[] = [
     device: ['Windows', 'Mac', 'iPhone', 'Android'],
     category: 'Scam Alerts',
     urgency: 'scam',
-    whatItMeans: 'This is almost certainly a scam. Real virus warnings from Apple, Microsoft, or Google do NOT appear as pop-ups asking you to call a phone number. Real warnings appear in your device\'s Settings app — not in a browser window.',
+    whatItMeans: `This is almost certainly a scam. Real virus warnings from Apple, Microsoft, or Google do NOT appear as pop-ups asking you to call a phone number. Real warnings appear in your device's Settings app — not in a browser window.`,
     whatCausedIt: 'You visited a website that ran a scam script designed to scare you into calling a fake "tech support" number or paying for fake software.',
     whatToDo: [
       'Do NOT call any phone number shown in the popup.',
       'Do NOT click any button inside the popup — not even "X" to close it.',
       'On your keyboard, press Alt + F4 (Windows) or Command + Q (Mac) to close the browser entirely.',
       'On a phone, swipe the browser app away from your recent apps list.',
-      'If the popup won\'t close, restart your device.',
+      `If the popup won't close, restart your device.`,
       'You do NOT need to pay anyone or download anything.',
     ],
     safeToIgnore: false,
@@ -106,12 +106,12 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Android'],
     category: 'App Permissions',
     urgency: 'info',
-    whatItMeans: 'An app is asking for permission to see where you are physically located. Some apps need this to work (like Maps or Weather). Others don\'t really need it.',
+    whatItMeans: `An app is asking for permission to see where you are physically located. Some apps need this to work (like Maps or Weather). Others don't really need it.`,
     whatCausedIt: 'You opened an app for the first time, or the app was updated and is asking for new access.',
     whatToDo: [
-      'Ask yourself: does this app actually need my location to work? Maps and Weather apps do. A game or recipe app probably doesn\'t.',
-      'Tap "Allow While Using App" if you want to allow it only while you\'re actively using the app.',
-      'Tap "Don\'t Allow" if you\'re not comfortable — most apps still work without location access.',
+      `Ask yourself: does this app actually need my location to work? Maps and Weather apps do. A game or recipe app probably doesn't.`,
+      `Tap "Allow While Using App" if you want to allow it only while you're actively using the app.`,
+      `Tap "Don't Allow" if you're not comfortable — most apps still work without location access.`,
       'Tap "Allow Once" if you want to grant permission just this one time.',
       'You can always change this later in Settings → Privacy → Location Services.',
     ],
@@ -125,11 +125,11 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Android'],
     category: 'App Permissions',
     urgency: 'info',
-    whatItMeans: 'An app is asking for permission to send you alerts, sounds, and badges on your screen even when you\'re not actively using the app.',
+    whatItMeans: `An app is asking for permission to send you alerts, sounds, and badges on your screen even when you're not actively using the app.`,
     whatCausedIt: 'You installed a new app or opened one that wants to alert you about new messages, deals, or activity.',
     whatToDo: [
-      'If it\'s an app where you want alerts (like a news app, messaging app, or banking app), tap "Allow."',
-      'If it\'s a game or shopping app and you don\'t need reminders, tap "Don\'t Allow."',
+      `If it's an app where you want alerts (like a news app, messaging app, or banking app), tap "Allow."`,
+      `If it's a game or shopping app and you don't need reminders, tap "Don't Allow."`,
       'You can change this anytime in Settings → Notifications and find the app name.',
     ],
     safeToIgnore: false,
@@ -145,7 +145,7 @@ const notifications: Notification[] = [
     whatItMeans: 'Windows Defender (the built-in security tool on all Windows computers) is letting you know about something it found or is actively monitoring. These are real, legitimate alerts — not scams.',
     whatCausedIt: 'Windows Defender regularly scans your computer for threats and sends updates about what it found.',
     whatToDo: [
-      'If it says "No action needed" or "Real-time protection is on" — you\'re fine, no action required.',
+      `If it says "No action needed" or "Real-time protection is on" — you're fine, no action required.`,
       'If it says "Threat found" or "Action recommended," click the notification to see what it found.',
       'Follow the on-screen steps — Windows Defender will usually handle threats automatically.',
       'Do NOT call any phone number from this notification. The real Windows security tool never asks you to call.',
@@ -160,7 +160,7 @@ const notifications: Notification[] = [
     device: ['iPhone', 'Android'],
     category: 'Account Security',
     urgency: 'info',
-    whatItMeans: 'A website or app you have an account with sent you a one-time code to confirm it\'s really you logging in. This is a good security feature called two-factor authentication.',
+    whatItMeans: `A website or app you have an account with sent you a one-time code to confirm it's really you logging in. This is a good security feature called two-factor authentication.`,
     whatCausedIt: 'Either you (or someone with your password) just tried to log into an account that requires this extra step.',
     whatToDo: [
       'If YOU just tried to log in — go back to that website or app and enter the code. Codes usually expire in 10 minutes.',
@@ -177,8 +177,8 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Android'],
     category: 'Updates',
     urgency: 'info',
-    whatItMeans: 'The company that makes the app has released a new version with improvements or security fixes. Your device is letting you know it\'s ready to download.',
-    whatCausedIt: 'The app developer published an update through Apple\'s App Store or Google\'s Play Store.',
+    whatItMeans: `The company that makes the app has released a new version with improvements or security fixes. Your device is letting you know it's ready to download.`,
+    whatCausedIt: `The app developer published an update through Apple's App Store or Google's Play Store.`,
     whatToDo: [
       'Tap "Update" to install it — this is safe and free.',
       'To update all your apps at once: open the App Store → tap your profile picture at the top → scroll down and tap "Update All."',
@@ -195,11 +195,11 @@ const notifications: Notification[] = [
     category: 'Connectivity',
     urgency: 'info',
     whatItMeans: 'Your device found a WiFi network nearby but needs the password to connect. This is normal when connecting somewhere new.',
-    whatCausedIt: 'Your device detected a WiFi network it hasn\'t connected to before, or you asked it to join a new network.',
+    whatCausedIt: `Your device detected a WiFi network it hasn't connected to before, or you asked it to join a new network.`,
     whatToDo: [
       'Find the WiFi password on your router (usually on a sticker on the side or bottom of the box).',
       'Ask the homeowner or business for the password.',
-      'Make sure you\'re connecting to the right network name — scammers sometimes create fake networks with similar names to real ones.',
+      `Make sure you're connecting to the right network name — scammers sometimes create fake networks with similar names to real ones.`,
       'At home, your network name and password are printed on your internet router.',
     ],
     safeToIgnore: false,
@@ -212,13 +212,13 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Mac'],
     category: 'Device Storage',
     urgency: 'act',
-    whatItMeans: 'Your free iCloud storage (5 GB) is full. iCloud stores your photos, contacts, and device backups in the cloud. When it\'s full, new photos won\'t back up and your device won\'t save a recent backup.',
+    whatItMeans: `Your free iCloud storage (5 GB) is full. iCloud stores your photos, contacts, and device backups in the cloud. When it's full, new photos won't back up and your device won't save a recent backup.`,
     whatCausedIt: 'Photos, device backups, and files have accumulated over time and filled the 5 GB Apple provides for free.',
     whatToDo: [
       'Delete old iCloud backups you no longer need: Settings → [Your Name] → iCloud → Manage Storage → Backups.',
       'Upgrade your storage plan for 50 GB for $0.99/month in Settings → [Your Name] → iCloud → Manage Storage.',
       'Delete large files or photos from iCloud Drive.',
-      'Turn off iCloud backup for apps you don\'t need backed up.',
+      `Turn off iCloud backup for apps you don't need backed up.`,
     ],
     safeToIgnore: false,
     keywords: ['icloud storage full', 'icloud full', 'icloud storage is full', 'icloud backup'],
@@ -230,11 +230,11 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Android', 'Windows', 'Mac'],
     category: 'Account Security',
     urgency: 'safe',
-    whatItMeans: 'Your browser or phone is offering to remember your password so you don\'t have to type it next time. This is a convenience feature built into all major devices and browsers.',
+    whatItMeans: `Your browser or phone is offering to remember your password so you don't have to type it next time. This is a convenience feature built into all major devices and browsers.`,
     whatCausedIt: 'You just logged into a website and your device noticed you entered a password.',
     whatToDo: [
-      'Tap "Save" or "Yes" if it\'s your own personal device. It\'s safe and convenient.',
-      'Tap "Never" or "Not Now" if you\'re on someone else\'s device or a public computer.',
+      `Tap "Save" or "Yes" if it's your own personal device. It's safe and convenient.`,
+      `Tap "Never" or "Not Now" if you're on someone else's device or a public computer.`,
       'Passwords saved on your device are encrypted and stored securely.',
     ],
     safeToIgnore: false,
@@ -247,7 +247,7 @@ const notifications: Notification[] = [
     device: ['Mac'],
     category: 'Device Storage',
     urgency: 'act',
-    whatItMeans: 'Your Mac is running very low on storage space. When a Mac\'s disk fills up completely, it can become very slow or stop working correctly.',
+    whatItMeans: `Your Mac is running very low on storage space. When a Mac's disk fills up completely, it can become very slow or stop working correctly.`,
     whatCausedIt: 'Files, downloads, photos, and apps have built up over time.',
     whatToDo: [
       'Click the Apple menu (top left) → About This Mac → Storage → Manage.',
@@ -267,9 +267,9 @@ const notifications: Notification[] = [
     category: 'Phone Safety',
     urgency: 'scam',
     whatItMeans: 'Your phone carrier or a spam-detection service has identified this phone number as one that has been used for spam or scam calls. The call may be a robocall, a sales pitch, or a scam attempt.',
-    whatCausedIt: 'Other people reported this number, or your carrier\'s system detected patterns of mass-calling from it.',
+    whatCausedIt: `Other people reported this number, or your carrier's system detected patterns of mass-calling from it.`,
     whatToDo: [
-      'You can let it go to voicemail. If it\'s important, they\'ll leave a message.',
+      `You can let it go to voicemail. If it's important, they'll leave a message.`,
       'Do not give out personal information, your Social Security number, bank details, or gift card numbers to unknown callers.',
       'If they claim to be from the IRS, Social Security, Medicare, or a government agency — hang up. Real government agencies send letters first.',
       'You can block the number after the call by tapping the number in your recent calls list.',
@@ -285,7 +285,7 @@ const notifications: Notification[] = [
     category: 'App Permissions',
     urgency: 'info',
     whatItMeans: 'An app wants permission to use your camera. Some apps genuinely need it (like video calls, photo editing, or QR code scanners). Others should not need it.',
-    whatCausedIt: 'You\'re using a feature in an app that requires the camera, or the app is requesting access it shouldn\'t need.',
+    whatCausedIt: `You're using a feature in an app that requires the camera, or the app is requesting access it shouldn't need.`,
     whatToDo: [
       'Allow it for apps where camera use makes sense: video calling apps (Zoom, FaceTime), photo apps, QR code scanners, document scanners.',
       'Deny it for apps that have no reason to use your camera: games, weather apps, news apps.',
@@ -301,11 +301,11 @@ const notifications: Notification[] = [
     device: ['iPhone', 'iPad', 'Mac'],
     category: 'Privacy',
     urgency: 'info',
-    whatItMeans: 'Someone in your Family Sharing group (or yourself) is using Apple\'s Find My app to see your device\'s location, or you\'ve received an alert about an AirTag nearby.',
+    whatItMeans: `Someone in your Family Sharing group (or yourself) is using Apple's Find My app to see your device's location, or you've received an alert about an AirTag nearby.`,
     whatCausedIt: 'A family member checked your location, you have location sharing turned on with someone, or an unknown AirTag may be traveling with you.',
     whatToDo: [
-      'If a family member is checking your location and that\'s expected — no action needed.',
-      'If you don\'t recognize who is tracking you, go to Settings → [Your Name] → Find My → Share My Location and review who can see you.',
+      `If a family member is checking your location and that's expected — no action needed.`,
+      `If you don't recognize who is tracking you, go to Settings → [Your Name] → Find My → Share My Location and review who can see you.`,
       'If an unknown AirTag is detected near you, follow the on-screen instructions to find and disable it.',
     ],
     safeToIgnore: false,
@@ -492,7 +492,7 @@ export default function NotificationDecoder() {
 
                         {/* What caused it */}
                         <div>
-                          <h3 className="font-semibold text-sm mb-1.5">Why you\'re seeing it</h3>
+                          <h3 className="font-semibold text-sm mb-1.5">Why you're seeing it</h3>
                           <p className="text-sm text-muted-foreground leading-relaxed">{n.whatCausedIt}</p>
                         </div>
 
@@ -514,8 +514,8 @@ export default function NotificationDecoder() {
                         {/* Safe to ignore */}
                         <div className={`flex items-center gap-2 text-sm px-3 py-2.5 rounded-xl ${n.safeToIgnore ? 'bg-green-50 dark:bg-green-950/20 text-green-700 dark:text-green-400' : 'bg-amber-50 dark:bg-amber-950/20 text-amber-700 dark:text-amber-400'}`}>
                           {n.safeToIgnore
-                            ? <><CheckCircle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is safe to ignore if you\'re not ready to act.</span></>
-                            : <><AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is worth acting on — don\'t dismiss it without reading what to do.</span></>
+                            ? <><CheckCircle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is safe to ignore if you're not ready to act.</span></>
+                            : <><AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is worth acting on — don't dismiss it without reading what to do.</span></>
                           }
                         </div>
 
@@ -540,7 +540,7 @@ export default function NotificationDecoder() {
               <div>
                 <p className="font-semibold text-sm mb-1">Quick Tip: Real vs. Fake alerts</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Real security alerts from Apple, Microsoft, and Google appear in your device\'s Settings app — not in a browser pop-up. If a pop-up shows a phone number to call, it\'s always a scam. Close it without clicking anything.
+                  Real security alerts from Apple, Microsoft, and Google appear in your device's Settings app — not in a browser pop-up. If a pop-up shows a phone number to call, it\'s always a scam. Close it without clicking anything.
                 </p>
               </div>
             </div>

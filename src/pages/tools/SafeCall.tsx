@@ -24,7 +24,7 @@ const questions: Question[] = [
       { label: 'My bank or credit card company', value: 'bank' },
       { label: 'Medicare or a health insurance company', value: 'health' },
       { label: 'A prize company (lottery, sweepstakes)', value: 'prize' },
-      { label: 'They didn\'t say, or it was a recorded message', value: 'unknown' },
+      { label: `They didn't say, or it was a recorded message`, value: 'unknown' },
       { label: 'A family member or friend in trouble', value: 'family' },
       { label: 'A utility company (electric, gas, water)', value: 'utility' },
     ],
@@ -33,7 +33,7 @@ const questions: Question[] = [
     id: 'initiated',
     text: 'Did YOU call them, or did they call YOU?',
     options: [
-      { label: 'They called me (I didn\'t expect the call)', value: 'they_called' },
+      { label: `They called me (I didn't expect the call)`, value: 'they_called' },
       { label: 'I called a number I found online or in an ad', value: 'i_called_ad' },
       { label: 'I called the number printed on my card or statement', value: 'i_called_card' },
     ],
@@ -57,7 +57,7 @@ const questions: Question[] = [
     id: 'pressure',
     text: 'How did the caller behave?',
     options: [
-      { label: 'They said it was urgent — I\'d be arrested, fined, or lose my account immediately', value: 'urgent' },
+      { label: `They said it was urgent — I'd be arrested, fined, or lose my account immediately`, value: 'urgent' },
       { label: 'They were friendly and I called them back at a number I found myself', value: 'normal_callback' },
       { label: 'They said not to tell anyone (my family, bank, or the police)', value: 'secret' },
       { label: 'They were calm and professional — no unusual pressure', value: 'calm' },
@@ -121,14 +121,14 @@ function evaluate(answers: Record<string, string>): Result {
   if (likelyScam) {
     return {
       risk: 'likely-scam',
-      headline: 'This looks suspicious — don\'t act yet.',
+      headline: `This looks suspicious — don't act yet.`,
       summary: 'Several things about this call raise red flags. Scammers often create fake urgency and impersonate tech companies, government agencies, or even family members. Before doing anything, verify the call independently.',
       actions: [
         'Do not pay, share personal information, or install anything on your computer yet.',
         'Hang up and call the company or person back using a number you find yourself (on their official website or on your bill).',
         'For family members — call a second family member to verify the story.',
         'Ask yourself: why would a legitimate company call me with this urgency?',
-        'If you\'re still unsure, ask a trusted person to help you.',
+        `If you're still unsure, ask a trusted person to help you.`,
       ],
       reportLinks: [
         { label: 'Report to FTC (reportfraud.ftc.gov)', url: 'https://reportfraud.ftc.gov' },
@@ -147,10 +147,10 @@ function evaluate(answers: Record<string, string>): Result {
     return {
       risk: 'possibly-legit',
       headline: 'This could be legitimate — but verify first.',
-      summary: 'The details you described don\'t set off major alarms, but it\'s always worth double-checking before sharing any personal information or making a payment.',
+      summary: `The details you described don't set off major alarms, but it's always worth double-checking before sharing any personal information or making a payment.`,
       actions: [
         'Never share full account numbers, passwords, or Social Security numbers over the phone.',
-        'It\'s always okay to say "I\'ll call you back" and hang up to verify.',
+        `It's always okay to say "I'll call you back" and hang up to verify.`,
         'Call the company back using the number on your bill, card, or their official website.',
         'Legitimate companies will understand if you need a moment to verify.',
       ],
@@ -161,9 +161,9 @@ function evaluate(answers: Record<string, string>): Result {
   return {
     risk: 'likely-legit',
     headline: 'This call sounds legitimate.',
-    summary: 'Based on what you\'ve described, this appears to be a routine call. You called a number you found yourself and there were no unusual demands. That\'s a good sign.',
+    summary: `Based on what you've described, this appears to be a routine call. You called a number you found yourself and there were no unusual demands. That's a good sign.`,
     actions: [
-      'Always confirm the company\'s identity before sharing sensitive information.',
+      `Always confirm the company's identity before sharing sensitive information.`,
       'You can always call back using the number on your official statement or their website.',
       'Never feel pressured to decide immediately on a call.',
     ],
@@ -265,7 +265,7 @@ export default function SafeCall() {
               <div className="p-6 rounded-2xl border bg-card space-y-4">
                 <h2 className="font-bold text-xl">How this works</h2>
                 <p className="text-muted-foreground">
-                  We\'ll ask you 4 simple questions about the call. Based on your answers, we\'ll tell you whether it shows signs of being a scam — and give you clear steps on what to do.
+                  We'll ask you 4 simple questions about the call. Based on your answers, we'll tell you whether it shows signs of being a scam — and give you clear steps on what to do.
                 </p>
                 <p className="text-muted-foreground">
                   This tool uses patterns identified by the FTC (Federal Trade Commission) and AARP to flag common scam tactics.
@@ -386,7 +386,7 @@ export default function SafeCall() {
                   {[
                     'Asks for gift cards as payment — any card brand',
                     'Claims you owe money to the IRS or government',
-                    'Says you\'ll be arrested if you don\'t pay immediately',
+                    `Says you'll be arrested if you don't pay immediately`,
                     'Asks you to let them control your computer',
                     'Tells you to keep the call secret from your family',
                     'A "family member" calls asking for emergency money',

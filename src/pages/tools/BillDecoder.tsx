@@ -44,7 +44,7 @@ const lineItems: LineItem[] = [
     amount: 'Usually $8–$15/month',
     isOptional: false,
     canNegotiate: true,
-    tip: 'If you don\'t watch live sports, this is one of the best arguments for canceling cable. Streaming services like Hulu Live TV or YouTube TV include these channels at a lower overall cost.',
+    tip: `If you don't watch live sports, this is one of the best arguments for canceling cable. Streaming services like Hulu Live TV or YouTube TV include these channels at a lower overall cost.`,
     keywords: ['regional sports', 'rsn', 'sports fee', 'regional sports network'],
   },
   {
@@ -56,7 +56,7 @@ const lineItems: LineItem[] = [
     amount: 'Usually $5–$10/month',
     isOptional: false,
     canNegotiate: true,
-    tip: 'Call and ask to have this removed. Many customers successfully get it waived, especially if they\'ve been a customer for years.',
+    tip: `Call and ask to have this removed. Many customers successfully get it waived, especially if they've been a customer for years.`,
     keywords: ['hd technology fee', 'hd fee', 'high definition fee', 'hd service fee'],
   },
   {
@@ -80,7 +80,7 @@ const lineItems: LineItem[] = [
     amount: 'Usually $2–$4/month',
     isOptional: false,
     canNegotiate: false,
-    tip: 'While you can\'t remove this fee, you can factor it in when comparing plans. A plan advertised at $40/month might actually cost $46/month after fees like this.',
+    tip: `While you can't remove this fee, you can factor it in when comparing plans. A plan advertised at $40/month might actually cost $46/month after fees like this.`,
     keywords: ['administrative fee', 'admin fee', 'network access fee', 'service fee'],
   },
   {
@@ -104,7 +104,7 @@ const lineItems: LineItem[] = [
     amount: 'Usually $1–$5/month',
     isOptional: true,
     canNegotiate: false,
-    tip: 'Log in to your account online (or call customer service) and switch to paperless billing. You\'ll receive the same bill information by email and save this charge immediately.',
+    tip: `Log in to your account online (or call customer service) and switch to paperless billing. You'll receive the same bill information by email and save this charge immediately.`,
     keywords: ['paper bill', 'mailed bill', 'paper statement', 'printed bill fee'],
   },
   {
@@ -112,7 +112,7 @@ const lineItems: LineItem[] = [
     name: 'Early Termination Fee (ETF)',
     aliases: ['ETF', 'Cancellation Fee', 'Contract Cancellation Fee'],
     provider: ['Phone', 'Internet', 'TV'],
-    plainEnglish: 'A charge if you cancel your service before your contract period ends (usually 1 or 2 years). This fee is designed to keep you locked in. If you\'re paying off a financed phone, you\'ll also still owe the remaining phone balance.',
+    plainEnglish: `A charge if you cancel your service before your contract period ends (usually 1 or 2 years). This fee is designed to keep you locked in. If you're paying off a financed phone, you'll also still owe the remaining phone balance.`,
     amount: 'Usually $100–$350 or remaining phone balance',
     isOptional: false,
     canNegotiate: true,
@@ -152,7 +152,7 @@ const lineItems: LineItem[] = [
     amount: 'Usually $10–$15 per extra GB',
     isOptional: true,
     canNegotiate: true,
-    tip: 'To avoid this: connect to WiFi whenever possible, turn on "Data Saver" mode on your phone, and set a data warning in your phone\'s settings. If you frequently hit your limit, a plan with unlimited data may be cheaper than recurring overage charges.',
+    tip: `To avoid this: connect to WiFi whenever possible, turn on "Data Saver" mode on your phone, and set a data warning in your phone's settings. If you frequently hit your limit, a plan with unlimited data may be cheaper than recurring overage charges.`,
     keywords: ['data overage', 'overage charge', 'exceeded data', 'data usage fee', 'over limit'],
   },
   {
@@ -172,11 +172,11 @@ const lineItems: LineItem[] = [
     name: 'Streaming Service Charge',
     aliases: ['Netflix', 'Hulu', 'Disney+', 'Max', 'Peacock', 'Prime Video', 'Paramount+', 'Apple TV+'],
     provider: ['Streaming'],
-    plainEnglish: 'A monthly subscription for an on-demand video service. These are separate from your cable or internet bill. You pay them independently, and they can be canceled at any time — usually right on the company\'s website.',
+    plainEnglish: `A monthly subscription for an on-demand video service. These are separate from your cable or internet bill. You pay them independently, and they can be canceled at any time — usually right on the company's website.`,
     amount: '$7–$23/month depending on service and tier',
     isOptional: true,
     canNegotiate: false,
-    tip: 'Audit your streaming subscriptions: look at your credit card or bank statement for the last 3 months and find every streaming charge. Cancel any you haven\'t used in the last month. Many people pay for 4–6 services and only actively use 2.',
+    tip: `Audit your streaming subscriptions: look at your credit card or bank statement for the last 3 months and find every streaming charge. Cancel any you haven't used in the last month. Many people pay for 4–6 services and only actively use 2.`,
     keywords: ['netflix', 'hulu', 'disney plus', 'max', 'hbo max', 'peacock', 'prime video', 'streaming', 'apple tv', 'paramount'],
   },
   {
@@ -196,7 +196,7 @@ const lineItems: LineItem[] = [
     name: 'Line Access Fee',
     aliases: ['Access Charge', 'Device Access Charge', 'Per Line Fee'],
     provider: ['Phone'],
-    plainEnglish: 'A charge for each phone line (device) on your account. If you have a family plan with 4 lines, you pay this fee 4 times. It covers the basic cost of having a phone number and access to the carrier\'s network.',
+    plainEnglish: `A charge for each phone line (device) on your account. If you have a family plan with 4 lines, you pay this fee 4 times. It covers the basic cost of having a phone number and access to the carrier's network.`,
     amount: 'Usually $10–$30/line/month',
     isOptional: false,
     canNegotiate: true,
@@ -410,7 +410,7 @@ export default function BillDecoder() {
               <div>
                 <p className="font-semibold text-sm mb-1">Quick Tip: Call and ask</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Most people never call to negotiate their bill — which is exactly what providers count on. A 10-minute call saying "I\'m thinking about switching carriers" often results in $20–$40 off your monthly bill, waived fees, or a loyalty discount. The worst they can say is no.
+                  Most people never call to negotiate their bill — which is exactly what providers count on. A 10-minute call saying "I'm thinking about switching carriers" often results in $20–$40 off your monthly bill, waived fees, or a loyalty discount. The worst they can say is no.
                 </p>
               </div>
             </div>
