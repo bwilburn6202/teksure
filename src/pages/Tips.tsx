@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Got a Text About a Traffic Ticket? Delete It — It\'s a Scam',
-  summary: 'The FTC issued a fresh warning: fake "unpaid traffic violation" texts are hitting millions of phones. Clicking the link leads to a page that steals your card number. Here\'s how to stay safe.',
-  full: 'The Federal Trade Commission issued an urgent alert this week: millions of Americans are receiving text messages claiming they owe money for an unpaid traffic ticket, toll violation, or moving violation — and that they must pay immediately or risk license suspension. These texts look very convincing. They include fake case numbers, legal-sounding language, and a link that appears to go to a government website. But it is a scam. If you click the link and enter your card number, scammers steal it immediately. Here is what you need to know. First, real government agencies — including your state\'s DMV, courts, and toll authorities — never send payment links by text message. If you have a real unpaid fine, you receive an official letter by mail. Second, if you are worried a fine might be genuine, here is the safe way to check: open your phone\'s browser and search for your state\'s official DMV website or toll authority (look for the .gov address). You can call the phone number listed there. Do not use the phone number or link in the text. Third, delete the text immediately. You can also report it by forwarding it to 7726 (SPAM) — a free service that alerts your carrier. Finally, turn on spam text filtering to catch more of these before they arrive: on iPhone go to Settings → Messages → Filter Unknown Senders. On Android, open the Messages app → Settings → Spam protection → Enable spam protection. The FTC\'s full advisory is at consumer.ftc.gov.',
-  category: 'Safety',
-  icon: Car,
+  title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
+  summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. The good news: you can usually free up a lot of space in just a few minutes without losing anything important.',
+  full: 'A "Storage Full" warning is one of the most common phone problems — and one of the easiest to fix. Start by checking what is using the most space. On iPhone, go to Settings → General → iPhone Storage. On Android, go to Settings → Storage. You will see a breakdown showing how much space photos, apps, and messages are using. The biggest space saver is usually photos and videos. If you use Google Photos or iCloud Photos, your pictures are already backed up to the cloud — you can safely delete them from your phone to reclaim space. On iPhone, go to Settings → General → iPhone Storage → tap "Review Personal Videos" or "Review Large Attachments" to find the biggest files. On Android, open the Files app (or "My Files" on Samsung) and tap "Clean" — it will suggest junk files, duplicate photos, and old downloads you can safely remove. Next, delete apps you no longer use. On iPhone, the iPhone Storage screen shows your last-used date for each app. If you have not opened an app in months, tap it and choose "Delete App." On Android, go to Settings → Apps and sort by size or last used. Finally, clear your text message attachments — old group chats with lots of photos and videos can quietly use gigabytes of space. Open your messaging app, find large conversations, and delete the ones you no longer need. Doing this cleanup once a month keeps your phone running smoothly.',
+  category: 'Maintenance',
+  icon: Smartphone,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Got a Text About a Traffic Ticket? Delete It — It\'s a Scam',
+    summary: 'The FTC issued a fresh warning: fake "unpaid traffic violation" texts are hitting millions of phones. Clicking the link leads to a page that steals your card number. Here\'s how to stay safe.',
+    category: 'Safety',
+    icon: Car,
+  },
   {
     title: 'Do a Free Security Checkup on Your Google Account in 5 Minutes',
     summary: 'Google offers a free Security Checkup that shows every device signed in to your account, flags weak passwords, and checks for suspicious activity — all in one place, no tech knowledge needed.',
