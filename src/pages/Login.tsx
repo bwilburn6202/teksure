@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { CheckCircle, Mail } from 'lucide-react';
+import { CheckCircle, Mail, KeyRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -27,7 +27,10 @@ const Login = () => {
   const [resetEmail, setResetEmail] = useState('');
   const [resetStatus, setResetStatus] = useState<'idle' | 'loading' | 'sent'>('idle');
   const [oauthLoading, setOauthLoading] = useState<'google' | 'apple' | null>(null);
-  const { user, login, signup, loginWithProvider, isLoading } = useAuth();
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordUpdateStatus, setPasswordUpdateStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const { user, login, signup, loginWithProvider, isLoading, passwordRecoveryMode, clearPasswordRecoveryMode } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -35,12 +38,13 @@ const Login = () => {
   const from = (location.state as { from?: string })?.from || '/';
   const defaultTab = (location.state as { defaultTab?: string })?.defaultTab || 'signin';
 
+  // Don't redirect while the user is in the middle of setting a new password
   useEffect(() => {
-    if (user) {
+    if (user && !passwordRecoveryMode) {
       const path = user.role === 'customer' ? '/customer' : user.role === 'tech' ? '/tech' : '/admin';
       navigate(from !== '/' ? from : path, { replace: true });
     }
-  }, [user, navigate, from]);
+  }, [user, navigate, from, passwordRecoveryMode]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -75,6 +79,104 @@ const Login = () => {
       setResetStatus('sent');
     }
   };
+
+  const handleSetNewPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (newPassword !== confirmPassword) {
+      setError('Passwords do not match.');
+      return;
+    }
+    setError('');
+    setPasswordUpdateStatus('loading');
+    const { error: updateError } = await supabase.auth.updateUser({ password: newPassword });
+    if (updateError) {
+      setError(updateError.message);
+      setPasswordUpdateStatus('idle');
+    } else {
+      setPasswordUpdateStatus('success');
+      clearPasswordRecoveryMode();
+    }
+  };
+
+  // ── Password Recovery Screen ─────────────────────────────────────────────────
+  // Shown when user arrives via a password-reset email link.
+  // Supabase fires PASSWORD_RECOVERY → AuthContext sets passwordRecoveryMode = true.
+  if (passwordRecoveryMode) {
+    return (
+      <>
+        <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" />
+        <Navbar />
+        <main className="min-h-screen bg-background">
+          <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
+            <div className="w-full">
+              <Card className="rounded-2xl border border-border bg-card">
+                <CardContent className="p-8 text-center">
+                  {passwordUpdateStatus === 'success' ? (
+                    <>
+                      <CheckCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <h2 className="text-2xl font-bold tracking-tight mb-2">Password updated!</h2>
+                      <p className="text-muted-foreground mb-6">Your new password has been saved. You're still signed in.</p>
+                      <Button
+                        className="w-full"
+                        onClick={() => {
+                          const path = user?.role === 'tech' ? '/tech' : user?.role === 'admin' ? '/admin' : '/customer';
+                          navigate(path, { replace: true });
+                        }}
+                      >
+                        Go to my dashboard
+                      </Button>
+                    </>
+                  ) : (
+                    <>
+                      <KeyRound className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <h2 className="text-2xl font-bold tracking-tight mb-2">Set your new password</h2>
+                      <p className="text-muted-foreground mb-6">Choose a strong password — at least 6 characters.</p>
+                      {error && (
+                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive text-left">
+                          {error}
+                        </div>
+                      )}
+                      <form onSubmit={handleSetNewPassword} className="space-y-5 text-left">
+                        <div className="space-y-2">
+                          <Label htmlFor="new-password" className="text-sm font-medium">New password</Label>
+                          <Input
+                            id="new-password"
+                            type="password"
+                            value={newPassword}
+                            onChange={e => setNewPassword(e.target.value)}
+                            className="h-11 rounded-lg border border-border bg-background"
+                            required
+                            minLength={6}
+                            autoFocus
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="confirm-password" className="text-sm font-medium">Confirm new password</Label>
+                          <Input
+                            id="confirm-password"
+                            type="password"
+                            value={confirmPassword}
+                            onChange={e => setConfirmPassword(e.target.value)}
+                            className="h-11 rounded-lg border border-border bg-background"
+                            required
+                            minLength={6}
+                          />
+                        </div>
+                        <Button type="submit" className="w-full h-11" disabled={passwordUpdateStatus === 'loading'}>
+                          {passwordUpdateStatus === 'loading' ? 'Saving...' : 'Save new password'}
+                        </Button>
+                      </form>
+                    </>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
 
   if (showResetForm) {
     return (

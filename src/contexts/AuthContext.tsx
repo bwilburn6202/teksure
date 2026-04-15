@@ -14,6 +14,8 @@ interface AuthContextType {
   user: AuthUser | null;
   session: Session | null;
   isLoading: boolean;
+  passwordRecoveryMode: boolean;
+  clearPasswordRecoveryMode: () => void;
   login: (email: string, password: string) => Promise<{ error: string | null }>;
   signup: (email: string, password: string, role: UserRole, fullName: string) => Promise<{ error: string | null; needsConfirmation: boolean }>;
   loginWithProvider: (provider: 'google' | 'apple') => Promise<{ error: string | null }>;
@@ -45,10 +47,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [passwordRecoveryMode, setPasswordRecoveryMode] = useState(false);
+
+  const clearPasswordRecoveryMode = useCallback(() => {
+    setPasswordRecoveryMode(false);
+  }, []);
 
   useEffect(() => {
     // Set up auth listener FIRST
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, newSession) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, newSession) => {
+      // When a password-reset link is clicked, Supabase fires PASSWORD_RECOVERY.
+      // We capture that here so the Login page can show the set-new-password form
+      // instead of silently redirecting to the dashboard.
+      if (event === 'PASSWORD_RECOVERY') {
+        setPasswordRecoveryMode(true);
+      }
       setSession(newSession);
       if (newSession?.user) {
         // Use setTimeout to avoid Supabase client deadlock
@@ -132,7 +145,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, session, isLoading, login, signup, loginWithProvider, logout }}>
+    <AuthContext.Provider value={{ user, session, isLoading, passwordRecoveryMode, clearPasswordRecoveryMode, login, signup, loginWithProvider, logout }}>
       {children}
     </AuthContext.Provider>
   );
