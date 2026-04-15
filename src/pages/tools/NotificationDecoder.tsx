@@ -35,9 +35,9 @@ const notifications: Notification[] = [
     whatItMeans: 'Your phone or tablet is running out of space to save new photos, apps, or updates. When storage fills up completely, your device may stop working properly.',
     whatCausedIt: 'Photos, videos, and apps have built up over time. Videos are especially large — a single 1-minute video can use as much space as 300 photos.',
     whatToDo: [
-      'Go to Settings → General → iPhone Storage to see what's using the most space.',
+      'Go to Settings → General → iPhone Storage to see what\'s using the most space.',
       'Delete photos and videos you no longer need (or move them to iCloud).',
-      'Delete apps you haven't opened in over 6 months.',
+      'Delete apps you haven\'t opened in over 6 months.',
       'Turn on iCloud Photos to automatically move photos off your device.',
     ],
     safeToIgnore: false,
@@ -492,7 +492,7 @@ export default function NotificationDecoder() {
 
                         {/* What caused it */}
                         <div>
-                          <h3 className="font-semibold text-sm mb-1.5">Why you're seeing it</h3>
+                          <h3 className="font-semibold text-sm mb-1.5">Why you\'re seeing it</h3>
                           <p className="text-sm text-muted-foreground leading-relaxed">{n.whatCausedIt}</p>
                         </div>
 
@@ -514,8 +514,8 @@ export default function NotificationDecoder() {
                         {/* Safe to ignore */}
                         <div className={`flex items-center gap-2 text-sm px-3 py-2.5 rounded-xl ${n.safeToIgnore ? 'bg-green-50 dark:bg-green-950/20 text-green-700 dark:text-green-400' : 'bg-amber-50 dark:bg-amber-950/20 text-amber-700 dark:text-amber-400'}`}>
                           {n.safeToIgnore
-                            ? <><CheckCircle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is safe to ignore if you're not ready to act.</span></>
-                            : <><AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is worth acting on — don't dismiss it without reading what to do.</span></>
+                            ? <><CheckCircle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is safe to ignore if you\'re not ready to act.</span></>
+                            : <><AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is worth acting on — don\'t dismiss it without reading what to do.</span></>
                           }
                         </div>
 
@@ -540,7 +540,7 @@ export default function NotificationDecoder() {
               <div>
                 <p className="font-semibold text-sm mb-1">Quick Tip: Real vs. Fake alerts</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Real security alerts from Apple, Microsoft, and Google appear in your device's Settings app — not in a browser pop-up. If a pop-up shows a phone number to call, it's always a scam. Close it without clicking anything.
+                  Real security alerts from Apple, Microsoft, and Google appear in your device\'s Settings app — not in a browser pop-up. If a pop-up shows a phone number to call, it\'s always a scam. Close it without clicking anything.
                 </p>
               </div>
             </div>

@@ -265,7 +265,7 @@ export default function SafeCall() {
               <div className="p-6 rounded-2xl border bg-card space-y-4">
                 <h2 className="font-bold text-xl">How this works</h2>
                 <p className="text-muted-foreground">
-                  We'll ask you 4 simple questions about the call. Based on your answers, we'll tell you whether it shows signs of being a scam — and give you clear steps on what to do.
+                  We\'ll ask you 4 simple questions about the call. Based on your answers, we\'ll tell you whether it shows signs of being a scam — and give you clear steps on what to do.
                 </p>
                 <p className="text-muted-foreground">
                   This tool uses patterns identified by the FTC (Federal Trade Commission) and AARP to flag common scam tactics.

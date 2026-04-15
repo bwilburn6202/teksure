@@ -13030,8 +13030,9 @@ const coreGuides: Guide[] = [
 ];
 
 import { guidesBatch4 } from './guides-batch-4';
+import { guidesBatch5 } from './guides-batch-5';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

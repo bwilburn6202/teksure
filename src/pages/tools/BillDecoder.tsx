@@ -410,7 +410,7 @@ export default function BillDecoder() {
               <div>
                 <p className="font-semibold text-sm mb-1">Quick Tip: Call and ask</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Most people never call to negotiate their bill — which is exactly what providers count on. A 10-minute call saying "I'm thinking about switching carriers" often results in $20–$40 off your monthly bill, waived fees, or a loyalty discount. The worst they can say is no.
+                  Most people never call to negotiate their bill — which is exactly what providers count on. A 10-minute call saying "I\'m thinking about switching carriers" often results in $20–$40 off your monthly bill, waived fees, or a loyalty discount. The worst they can say is no.
                 </p>
               </div>
             </div>
