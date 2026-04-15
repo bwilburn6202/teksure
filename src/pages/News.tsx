@@ -49,6 +49,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 20,
+    title: 'FTC Alert: Fake Traffic Violation Texts Are Hitting Millions of Phones',
+    summary: 'The FTC issued an urgent warning on April 14, 2026: scammers are sending fake text messages claiming recipients owe money for an unpaid traffic ticket, toll violation, or moving violation. The texts look official — they include case numbers and urgent payment deadlines — but the link leads to a page that steals your credit card number. Real government agencies never send payment links by text. If you receive one of these texts, delete it immediately and report it to the FTC at ReportFraud.ftc.gov. You can verify any real fine directly through your state\'s official DMV website.',
+    category: 'scams',
+    date: '2026-04-14',
+    icon: AlertTriangle,
+    readTime: '2 min',
+    source: 'FTC Consumer Advice',
+    sourceUrl: 'https://consumer.ftc.gov',
+  },
+  {
+    id: 19,
+    title: 'AARP: 7 in 10 Americans Over 50 Say Fraud Is a Top Concern in 2026',
+    summary: 'New AARP research published April 8, 2026 shows that 70% of Americans over 50 now list fraud and scams as a major concern — up from 58% in 2024. The research found that AI-generated voice calls, fake government impersonators, and phishing texts are the three most frequently reported scam types. AARP is running free Fraud Prevention Month events throughout April, including community shred days and free fraud helpline sessions. If you or a family member wants free, confidential guidance from a trained fraud specialist, call the AARP Fraud Watch Network helpline at 877-908-3360, Monday through Friday, 8 AM – 8 PM Eastern.',
+    category: 'scams',
+    date: '2026-04-08',
+    icon: AlertTriangle,
+    readTime: '2 min',
+    source: 'AARP',
+    sourceUrl: 'https://www.aarp.org',
+  },
+  {
     id: 18,
     title: 'Google\'s New AI Works Directly on Your Phone — No Internet Needed',
     summary: 'Google released a new AI system called Gemma 4 that runs directly on your smartphone without sending your information to a server somewhere else. For everyday users, this means two things: it works faster, and your private photos, texts, and questions stay on your device instead of being uploaded to the cloud. Apple and Samsung are doing similar things. Over the next year, your phone will get noticeably smarter at tasks like summarizing long messages, improving your photos, and answering questions — all without your data leaving your hands. No action needed on your part: these improvements come through regular phone software updates.',

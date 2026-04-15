@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode, Car,
 } from 'lucide-react';
 
 interface Tip {
@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Do a Free Security Checkup on Your Google Account in 5 Minutes',
-  summary: 'Google offers a free Security Checkup that shows every device signed in to your account, flags weak passwords, and checks for suspicious activity — all in one place, no tech knowledge needed.',
-  full: 'Did you know Google lets you run a free security check on your account — no tech knowledge required? Here is how to do it: open a browser and go to myaccount.google.com, then click "Security" on the left side. Look for the "Security Checkup" section and click "Get started." In about five minutes, it walks you through four things. First, it shows every device currently signed in to your account — you can remove any old phones or computers you no longer use. Second, it checks whether any of your saved passwords have appeared in data breaches and tells you which ones to change. Third, it shows apps and services that have access to your Google account — you can remove any you do not recognize. Fourth, it shows whether two-step verification is turned on, which is an extra security step that stops strangers from logging in even if they know your password. If any red flags come up, Google explains what to do in plain language. You do not need to understand technology — it guides you through every step. If you use Gmail, Google Photos, YouTube, or any Google service, this five-minute check is one of the most useful things you can do for your online safety this week.',
-  category: 'Security',
-  icon: ShieldCheck,
+  title: 'Got a Text About a Traffic Ticket? Delete It — It\'s a Scam',
+  summary: 'The FTC issued a fresh warning: fake "unpaid traffic violation" texts are hitting millions of phones. Clicking the link leads to a page that steals your card number. Here\'s how to stay safe.',
+  full: 'The Federal Trade Commission issued an urgent alert this week: millions of Americans are receiving text messages claiming they owe money for an unpaid traffic ticket, toll violation, or moving violation — and that they must pay immediately or risk license suspension. These texts look very convincing. They include fake case numbers, legal-sounding language, and a link that appears to go to a government website. But it is a scam. If you click the link and enter your card number, scammers steal it immediately. Here is what you need to know. First, real government agencies — including your state\'s DMV, courts, and toll authorities — never send payment links by text message. If you have a real unpaid fine, you receive an official letter by mail. Second, if you are worried a fine might be genuine, here is the safe way to check: open your phone\'s browser and search for your state\'s official DMV website or toll authority (look for the .gov address). You can call the phone number listed there. Do not use the phone number or link in the text. Third, delete the text immediately. You can also report it by forwarding it to 7726 (SPAM) — a free service that alerts your carrier. Finally, turn on spam text filtering to catch more of these before they arrive: on iPhone go to Settings → Messages → Filter Unknown Senders. On Android, open the Messages app → Settings → Spam protection → Enable spam protection. The FTC\'s full advisory is at consumer.ftc.gov.',
+  category: 'Safety',
+  icon: Car,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Do a Free Security Checkup on Your Google Account in 5 Minutes',
+    summary: 'Google offers a free Security Checkup that shows every device signed in to your account, flags weak passwords, and checks for suspicious activity — all in one place, no tech knowledge needed.',
+    category: 'Security',
+    icon: ShieldCheck,
+  },
   {
     title: 'How to Spot and Avoid QR Code Scams',
     summary: 'Scammers are placing fake QR codes on parking meters, restaurant tables, and flyers to steal your personal information — always preview the web address before tapping, and skip the code entirely if the address looks strange or misspelled.',

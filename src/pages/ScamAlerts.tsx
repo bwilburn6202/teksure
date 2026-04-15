@@ -259,6 +259,23 @@ const scams: Scam[] = [
       'Report the scam to the FTC at ReportFraud.ftc.gov or call 1-877-382-4357',
     ],
   },
+  // Social: "Got a text saying you owe money for an unpaid traffic ticket? Don't click — the FTC just flagged this as a major new scam targeting millions of Americans."
+  // Newsletter: "The FTC issued a fresh alert on April 14, 2026: scammers are flooding phones with fake traffic violation texts that look like they come from your state's DMV or a toll authority. Clicking the link takes you to a convincing fake payment page. The safe move: delete the text and look up any real fines yourself through your state's official DMV website."
+  {
+    title: 'Fake Traffic Violation Text Scam (April 2026)',
+    redFlags: [
+      'Text claims you have an unpaid traffic ticket, toll violation, or moving violation — even if you don\'t remember getting one',
+      'Message uses urgent language: "Pay within 24 hours to avoid license suspension" or "Final notice — 35% fee applies"',
+      'Includes a link to pay that looks official but goes to a fake website designed to steal your card number',
+      'May include a fake case number or legal code to seem more convincing',
+    ],
+    whatToDo: [
+      'Do not click the link — delete the text immediately',
+      'If you think the fine might be real, look up your state\'s official DMV or toll authority website yourself (never use a link from a text)',
+      'You can verify real traffic violations by calling your local court or DMV using a number from the official government website',
+      'Report the scam text to the FTC at ReportFraud.ftc.gov and forward it to 7726 (SPAM)',
+    ],
+  },
   // Social: "Scammers are using your real name and partial Social Security number to pretend they're from the government. Here's the new trick to watch for."
   // Newsletter: "The SSA impersonation scam just got scarier: callers now use stolen data (your real name, partial SSN) to make the threat feel real. The SSA will NEVER threaten you with arrest. Here's what to do."
   {

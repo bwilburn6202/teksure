@@ -618,9 +618,10 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Open Windows Update', content: 'Go to Settings → Windows Update to check for available updates.' },
       { title: 'Check for updates', content: 'Click "Check for updates." Windows will search for and list any available updates.' , tip: 'Check for updates at least once a week, or enable automatic updates so you never need to remember.' },
-      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your Mac is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.' },
+      { title: 'Download and install', content: 'Click "Download & install" for any pending updates. Some install automatically.' , warning: 'Make sure your PC is plugged into power before installing a major update. If it loses power during installation, it could cause serious problems.' },
       { title: 'Restart when prompted', content: 'Many updates require a restart. Save your work and click "Restart now" or schedule a restart time.' , warning: 'Postponing restarts for too long leaves your PC vulnerable. Updates only fully install after a restart.' },
       { title: 'Manage update settings', content: 'Set active hours so Windows won\'t restart during your work time. Pause updates for up to 5 weeks if needed.', tip: 'If updates keep failing, visit support.microsoft.com/en-us/windows/fix-windows-update-issues — Microsoft\'s official guide to fixing stuck or failed Windows updates.' },
+      { title: 'Important: Install updates before June 2026', content: 'Microsoft has warned that some security certificates built into Windows 11 will expire in June 2026. If you have not run Windows Update before then, your PC may have trouble starting correctly. Run Windows Update now and make sure automatic updates are turned on.', warning: 'This is one of the rare cases where skipping updates can cause your PC to stop working properly. Run Windows Update today if you have not done so recently.' },
     ]
   },
   {
@@ -2361,6 +2362,7 @@ const coreGuides: Guide[] = [
     steps: [
       { title: 'Tech support scams', content: 'Microsoft, Apple, and Google will NEVER call you about a virus. Hang up immediately.' , warning: 'Microsoft, Apple, and Google will NEVER call you about a virus on your computer. If someone calls claiming this, hang up immediately.' },
       { title: 'Phishing emails and texts', content: 'Don\'t click links in unexpected messages. Go to the company\'s website directly instead.' },
+      { title: 'Traffic violation text scams (April 2026 FTC Alert)', content: 'A major new scam is spreading fast: fake text messages claiming you owe money for an unpaid traffic ticket, toll, or moving violation. Delete these immediately. Real government agencies never send payment links by text. If you think a fine might be real, look up your state\'s official DMV website yourself.', tip: 'The FTC issued a fresh alert about this scam on April 14, 2026. Report these texts to the FTC at ReportFraud.ftc.gov and forward them to 7726 (SPAM).' },
       { title: 'Too-good-to-be-true offers', content: 'Free iPhones, lottery winnings, and unexpected refunds are almost always scams.' },
       { title: 'Social media scams', content: 'Be wary of friend requests from strangers, investment schemes, and "free gift" posts.' },
       { title: 'What to do if you\'ve been scammed', content: 'Change your passwords immediately, contact your bank, report to the FTC at reportfraud.ftc.gov.', tip: 'Report fraud at ReportFraud.ftc.gov and stay up to date on the latest scams at consumer.ftc.gov/scams. For tech support scam protection specifically, visit support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams.' },
@@ -5891,7 +5893,31 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `If you hear unexplained sounds or voices from your Windows laptop while it is idle, act quickly. Open Task Manager (Ctrl+Shift+Esc) and look for unfamiliar processes — especially ones using high CPU or network activity. End any suspicious processes. Temporarily disable Wi-Fi to see if the audio stops, which can confirm a network-based source. Run a full scan with Malwarebytes (free) and Windows Defender. If the issue persists, consider resetting Windows from Settings > Recovery.`
+    body: `If you hear unexplained sounds or voices from your Windows laptop while it is idle, act quickly. Open Task Manager (Ctrl+Shift+Esc) and look for unfamiliar processes — especially ones using high CPU or network activity. End any suspicious processes. Temporarily disable Wi-Fi to see if the audio stops, which can confirm a network-based source. Run a full scan with Malwarebytes (free) and Windows Defender. If the issue persists, consider resetting Windows from Settings > Recovery.`,
+    steps: [
+      {
+        title: 'Open Task Manager and look for unfamiliar processes',
+        content: 'Press Ctrl + Shift + Esc on your keyboard to open Task Manager. Click "More details" if you see a compact view. Look through the list of running processes for anything unfamiliar — especially programs using high CPU or network activity that you did not open yourself.',
+        warning: 'Do not end processes called "System," "Windows Explorer," or anything associated with your antivirus software — ending these can cause your computer to freeze.',
+      },
+      {
+        title: 'Temporarily turn off Wi-Fi to test',
+        content: 'Click the Wi-Fi icon in the bottom-right corner of your screen and click "Disconnect" or turn off Wi-Fi. Wait 60 seconds and listen. If the sounds stop, the source is network-based — a browser tab, a streaming app, or malware communicating online.',
+      },
+      {
+        title: 'Run a full scan with Malwarebytes',
+        content: 'Download the free version of Malwarebytes from malwarebytes.com. Install it and run a full scan. Malwarebytes is excellent at finding malware that Windows Defender misses. If it finds anything, follow its prompts to quarantine and remove the threats.',
+        tip: 'Malwarebytes Free is genuinely free with no subscription required for manual scans. You do not need to pay for the premium version to run a one-time scan.',
+      },
+      {
+        title: 'Run Windows Defender as well',
+        content: 'Open the Start menu, search for "Windows Security," and open it. Click "Virus & threat protection" → "Quick scan" or "Full scan." Windows Defender and Malwarebytes catch different threats, so running both is more thorough.',
+      },
+      {
+        title: 'If the problem persists, reset Windows',
+        content: 'If sounds continue after removing any found threats, consider a Windows reset. Go to Settings → System → Recovery → Reset this PC. Choose "Keep my files" to preserve your documents while reinstalling Windows fresh.',
+      },
+    ],
   },
   {
     slug: 'how-to-turn-off-google-ai-overviews-in-search',
@@ -5904,7 +5930,22 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔍',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Google's AI Overview feature summarizes results at the top of the page, which can push down the actual links you want. To bypass it: after searching, click "More" under the search bar and select "Web" to see traditional results only. You can also try adding "-ai" or "verbatim" to your search, or switch to a search engine like DuckDuckGo that doesn't use AI summaries by default.`
+    body: `Google's AI Overview feature summarizes results at the top of the page, which can push down the actual links you want. To bypass it: after searching, click "More" under the search bar and select "Web" to see traditional results only. You can also try adding "-ai" or "verbatim" to your search, or switch to a search engine like DuckDuckGo that doesn't use AI summaries by default.`,
+    steps: [
+      {
+        title: 'Use the "Web" filter after searching',
+        content: 'After typing your search in Google and pressing Enter, look just below the search bar for filter options like "All," "Images," "News," "Shopping." Click "More" to see additional options, then select "Web." This view shows traditional links only — no AI summary at the top.',
+        tip: 'Once you click "Web," Google remembers the filter for the rest of your session. You will need to do this again in a new browser window.',
+      },
+      {
+        title: 'Add "verbatim" to your search',
+        content: 'At the end of any search, add the word verbatim (for example: "best plants for indoors verbatim"). This tells Google to search for your exact words and typically skips the AI Overview. You can also try adding -ai at the end of your search as an alternative.',
+      },
+      {
+        title: 'Try a different search engine',
+        content: 'DuckDuckGo (duckduckgo.com) does not show AI summaries by default and respects your privacy more than Google — it does not track your searches. Bing also lets you turn off AI answers in its settings if you prefer Microsoft\'s search engine.',
+      },
+    ],
   },
   {
     slug: 'free-file-converter-websites-track-you-with-hundreds-of-cookies',
@@ -5917,7 +5958,27 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Free file converter websites can set hundreds of tracking cookies from dozens of advertising networks when you upload a single document. Your files may also be stored on their servers. Safer alternatives: use Microsoft Word or Google Docs to convert files (File > Save As or Download As), or use LibreOffice — a free, offline app that converts documents without uploading anything. If you must use a web converter, use a private/incognito window and clear cookies afterward.`
+    body: `Free file converter websites can set hundreds of tracking cookies from dozens of advertising networks when you upload a single document. Your files may also be stored on their servers. Safer alternatives: use Microsoft Word or Google Docs to convert files (File > Save As or Download As), or use LibreOffice — a free, offline app that converts documents without uploading anything. If you must use a web converter, use a private/incognito window and clear cookies afterward.`,
+    steps: [
+      {
+        title: 'Use Google Docs to convert files for free',
+        content: 'Go to docs.google.com and sign in with a Google account (free). Click the folder icon to open a file from your computer. Google Docs opens it automatically. To save in a different format, click File → Download and choose your format (PDF, Word .docx, etc.). Your file never goes to a third-party site.',
+        tip: 'Google Docs can open Word documents (.docx), PowerPoint files (.pptx), and many other formats directly. No separate converter needed.',
+      },
+      {
+        title: 'Use Microsoft Word if you already have it',
+        content: 'Open your file in Microsoft Word. Click File → Save As (or Export). Choose the format you want — PDF is the most common. Word converts it instantly on your computer with no uploading.',
+      },
+      {
+        title: 'Use LibreOffice for offline converting',
+        content: 'LibreOffice is a free, offline office program that converts files without uploading them anywhere. Download it at libreoffice.org. Open your file in LibreOffice → File → Export As PDF (or Save As for other formats). Your file never leaves your computer.',
+      },
+      {
+        title: 'If you must use a web converter, go incognito first',
+        content: 'Open a private or incognito window in your browser (Ctrl+Shift+N in Chrome, Ctrl+Shift+P in Firefox or Edge). Use the converter in this window. Close the incognito window when done — this automatically deletes the tracking cookies set during your visit.',
+        warning: 'Never upload files containing your Social Security number, bank details, medical records, or passwords to a free online converter. These services may store your files on their servers.',
+      },
+    ],
   },
   {
     slug: 'your-phone-number-is-listed-on-data-broker-websites',
@@ -5930,7 +5991,27 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Data broker websites like Spokeo, Whitepages, and BeenVerified collect your name, phone number, address, and other personal details and sell them to marketers or anyone willing to pay. To remove your info: search your name on each site and use their opt-out forms (usually found under Privacy or Do Not Sell My Info). This process can be tedious since there are hundreds of brokers — services like DeleteMe ($129/year) automate it for you. Removing your data reduces spam calls and protects against social engineering attacks.`
+    body: `Data broker websites like Spokeo, Whitepages, and BeenVerified collect your name, phone number, address, and other personal details and sell them to marketers or anyone willing to pay. To remove your info: search your name on each site and use their opt-out forms (usually found under Privacy or Do Not Sell My Info). This process can be tedious since there are hundreds of brokers — services like DeleteMe ($129/year) automate it for you. Removing your data reduces spam calls and protects against social engineering attacks.`,
+    steps: [
+      {
+        title: 'Search for your name on each data broker site',
+        content: 'Go to each of these sites and search your full name and city: Spokeo (spokeo.com), Whitepages (whitepages.com), BeenVerified (beenverified.com), Intelius (intelius.com), and Radaris (radaris.com). Note where your information appears.',
+        tip: 'Search in a private or incognito browser window so these sites cannot connect your searches to your account or browser profile.',
+      },
+      {
+        title: 'Request removal using each site\'s opt-out form',
+        content: 'Each data broker is required by law to offer a way to opt out or remove your data. Look for links labeled "Privacy," "Do Not Sell My Info," or "Opt Out" — usually in the website footer. Follow their removal process. Some send a confirmation email; click the link to confirm your request.',
+        warning: 'Removals can take 7–30 days to take effect. Your information may reappear after several months as data brokers refresh their databases — you may need to opt out again periodically.',
+      },
+      {
+        title: 'Consider a removal service for ongoing protection',
+        content: 'If removing your data manually from hundreds of sites sounds overwhelming, services like DeleteMe (joindeleteme.com) do it for you — they charge around $129 per year and submit removal requests to 750+ brokers on your behalf, with quarterly reports. This is the most thorough option for ongoing privacy.',
+      },
+      {
+        title: 'Reduce future data collection',
+        content: 'Going forward, you can slow down how much new data brokers collect: opt out of data sharing in your loyalty program accounts (grocery stores, pharmacies), turn off location tracking on apps you rarely use, and use a free email alias service like SimpleLogin (simplelogin.io) when signing up for things online so your real email is not collected.',
+      },
+    ],
   },
   {
     slug: 'your-phone-tracks-location-even-when-location-services-are-off',
@@ -5943,7 +6024,26 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Even with Location Services turned off, your phone can still be tracked via Wi-Fi network scanning, Bluetooth signals, cell tower triangulation, and apps that have been granted location access at the system level. For stronger privacy: turn on Airplane Mode (disables all radios), disable Wi-Fi and Bluetooth separately, and review which apps have location permission (Settings > Privacy > Location Services on iPhone, or Settings > Location on Android) — set non-essential apps to "Never" or "Only While Using."`
+    body: `Even with Location Services turned off, your phone can still be tracked via Wi-Fi network scanning, Bluetooth signals, cell tower triangulation, and apps that have been granted location access at the system level. For stronger privacy: turn on Airplane Mode (disables all radios), disable Wi-Fi and Bluetooth separately, and review which apps have location permission (Settings > Privacy > Location Services on iPhone, or Settings > Location on Android) — set non-essential apps to "Never" or "Only While Using."`,
+    steps: [
+      {
+        title: 'Understand how location tracking still works with Location Services off',
+        content: 'Turning off Location Services stops GPS, but your phone can still estimate your location using Wi-Fi network names nearby (even if you are not connected), Bluetooth signals from nearby devices, and which cell towers your phone connects to. Some apps that were granted system-level permissions may also continue tracking.',
+      },
+      {
+        title: 'Review and restrict app location permissions (iPhone)',
+        content: 'Go to Settings → Privacy & Security → Location Services. You will see a list of every app that has asked for your location. Tap each app and set it to "Never" if it does not need location, or "While Using the App" for apps like maps that only need it when open. Avoid leaving apps set to "Always" unless absolutely necessary (navigation apps, for example).',
+        tip: 'Common apps that do not need location access at all: social media apps, games, news apps, shopping apps, and email clients.',
+      },
+      {
+        title: 'Review and restrict app location permissions (Android)',
+        content: 'Go to Settings → Location → App permissions. Tap each app and change its setting to "Deny" or "Allow only while using the app." Turn off "Wi-Fi scanning" and "Bluetooth scanning" in Settings → Location → Location Services — these let apps estimate your location even without GPS.',
+      },
+      {
+        title: 'Turn off Wi-Fi and Bluetooth when not in use',
+        content: 'Both Wi-Fi and Bluetooth signals reveal your approximate location to companies and advertisers even when you are not actively using them. On iPhone: swipe down from the top-right corner to open Control Center and tap the Wi-Fi and Bluetooth icons to disable them. On Android: swipe down and tap the Wi-Fi and Bluetooth tiles to turn them off.',
+      },
+    ],
   },
   {
     slug: 'reset-your-smartphone-ad-tracking-id-for-privacy',
@@ -5956,7 +6056,23 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔒',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Every smartphone has an advertising ID (IDFA on iPhone, GAID on Android) that advertisers use to track your behavior across apps and target you with ads. On iPhone: go to Settings > Privacy & Security > Tracking and turn off "Allow Apps to Request to Track." On Android: go to Settings > Privacy > Ads and tap "Delete advertising ID." Resetting or deleting this ID breaks the trail of data advertisers have built on you. You can also reset it periodically rather than deleting — reinstalling apps also resets it.`
+    body: `Every smartphone has an advertising ID (IDFA on iPhone, GAID on Android) that advertisers use to track your behavior across apps and target you with ads. On iPhone: go to Settings > Privacy & Security > Tracking and turn off "Allow Apps to Request to Track." On Android: go to Settings > Privacy > Ads and tap "Delete advertising ID." Resetting or deleting this ID breaks the trail of data advertisers have built on you. You can also reset it periodically rather than deleting — reinstalling apps also resets it.`,
+    steps: [
+      {
+        title: 'Turn off ad tracking on iPhone',
+        content: 'Go to Settings → Privacy & Security → Tracking. Turn off "Allow Apps to Request to Track." This prevents any app from even asking to track your activity across other apps and websites for advertising purposes. Apps that previously had tracking permission will no longer be able to use it.',
+        tip: 'This is one of the highest-impact privacy settings on an iPhone. Apple introduced it in 2021 with iOS 14.5 and it works on all iPhones running iOS 14.5 or later (including iOS 18).',
+      },
+      {
+        title: 'Delete your advertising ID on Android',
+        content: 'Go to Settings → Privacy → Ads → Delete advertising ID. On older Android versions, this option may be called "Reset advertising ID" — tap it to assign yourself a new random ID, breaking the existing trail of data. On Android 12 and later, you can delete it entirely.',
+        tip: 'The exact path varies by phone brand. On Samsung phones: Settings → Privacy → Ads. On Pixel phones: Settings → Privacy → Ads.',
+      },
+      {
+        title: 'Why this matters',
+        content: 'Ad tracking IDs allow advertisers to build detailed profiles of your interests, habits, and behavior by watching which apps you open, how long you use them, and what you search for. Deleting or resetting the ID breaks that profile. Your apps still work normally — you just see less targeted advertising.',
+      },
+    ],
   },
   {
     slug: 'android-battery-drain-background-apps-how-to-fix',
@@ -5969,7 +6085,27 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔋',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `Even with background restrictions enabled, some Android apps continue draining battery through push notifications, system-level permissions, and manufacturer-specific wake locks. To dig deeper: go to Settings > Battery > Battery Usage and look for apps consuming power disproportionately. For each culprit, go to Settings > Apps > [App Name] > Battery and set it to "Restricted." Also check Settings > Battery > Background App Optimization. Some manufacturers (Samsung, Xiaomi) have aggressive battery management — search for your phone model plus "battery optimization" for model-specific steps.`
+    body: `Even with background restrictions enabled, some Android apps continue draining battery through push notifications, system-level permissions, and manufacturer-specific wake locks. To dig deeper: go to Settings > Battery > Battery Usage and look for apps consuming power disproportionately. For each culprit, go to Settings > Apps > [App Name] > Battery and set it to "Restricted." Also check Settings > Battery > Background App Optimization. Some manufacturers (Samsung, Xiaomi) have aggressive battery management — search for your phone model plus "battery optimization" for model-specific steps.`,
+    steps: [
+      {
+        title: 'Check which apps are using the most battery',
+        content: 'Go to Settings → Battery → Battery Usage (the path may vary slightly by phone brand). You will see a list of apps ranked by how much battery they have used in the past day. Look for apps at the top of the list that you do not use often — those are the culprits.',
+      },
+      {
+        title: 'Restrict background activity for each culprit app',
+        content: 'Go to Settings → Apps → tap the problem app → Battery. Set it to "Restricted." This stops the app from running in the background when you are not actively using it. On Samsung phones, this setting may be called "Background usage limits." On Pixel phones: Settings → Apps → [App Name] → Battery → Restricted.',
+        warning: 'Do not restrict messaging apps like WhatsApp or Messages — restricting them will stop you from receiving messages when the app is not open.',
+      },
+      {
+        title: 'Turn off Background App Optimization for the worst offenders',
+        content: 'Go to Settings → Battery → Background App Optimization (available on Android 15). Turn it off for apps that continue draining battery even after being restricted. This is a stronger restriction than the Battery setting alone.',
+      },
+      {
+        title: 'For Samsung phones: use Deep Sleep mode',
+        content: 'Samsung has an extra aggressive battery saving option. Go to Settings → Device Care → Battery → Background Usage Limits. Add the worst offending apps to "Sleeping apps" or "Deep sleeping apps." Deep sleeping apps consume almost no battery when not in use.',
+        tip: 'Search your phone model plus "battery optimization tips" on Google for model-specific advice, as Samsung, Motorola, Xiaomi, and OnePlus all have different battery management systems.',
+      },
+    ],
   },
   {
     slug: 'how-to-stop-app-downloads-on-android-for-dementia-caregiver',
@@ -5982,7 +6118,28 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '📱',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `To prevent app downloads on an Android device for someone with dementia: open the Google Play Store, tap the profile icon > Settings > Authentication > Require authentication for purchases, and set it to "For all purchases." To go further, enable Family Link (even for adults) which gives a caregiver full control over app approvals. Alternatively, go to Settings > Digital Wellbeing > App Timers or use a third-party app lock. You can also disable the Play Store entirely via Settings > Apps > Google Play Store > Disable, though this is harder to reverse.`
+    body: `To prevent app downloads on an Android device for someone with dementia: open the Google Play Store, tap the profile icon > Settings > Authentication > Require authentication for purchases, and set it to "For all purchases." To go further, enable Family Link (even for adults) which gives a caregiver full control over app approvals. Alternatively, go to Settings > Digital Wellbeing > App Timers or use a third-party app lock. You can also disable the Play Store entirely via Settings > Apps > Google Play Store > Disable, though this is harder to reverse.`,
+    steps: [
+      {
+        title: 'Require authentication for all Play Store purchases',
+        content: 'On the person\'s Android phone, open the Google Play Store app. Tap the profile icon in the top-right corner → Settings → Authentication → Require authentication for purchases → select "For all purchases." From now on, any purchase or app download requires the Google account password to be entered first.',
+        tip: 'This does not block free app downloads. To also block those, continue to the next steps.',
+      },
+      {
+        title: 'Set up Google Family Link for full caregiver control',
+        content: 'Google Family Link (available at families.google.com/familylink) lets a caregiver approve or block every app download, even on an adult\'s account. The caregiver downloads the Family Link for Parents app on their own phone, and the supervised person uses the Family Link for Children & Teens app. Once linked, the caregiver receives a notification every time an app install is requested and can approve or deny it.',
+        tip: 'Family Link is free and does not require the supervised person to be a child — it can be set up for any Google account that the caregiver manages.',
+      },
+      {
+        title: 'Use App Pinning to keep the phone on a single app',
+        content: 'If the person with dementia should only use one or two specific apps (such as a phone or video calling app), Android\'s App Pinning feature locks the screen to that single app. Go to Settings → Security → App Pinning and turn it on. Open the app you want to pin, then tap the Recent Apps button and tap the app icon at the top of the card → Pin. A PIN is required to unpin.',
+      },
+      {
+        title: 'Disable the Google Play Store entirely if needed',
+        content: 'As a last resort, you can disable the Play Store so no new apps can be installed at all. Go to Settings → Apps → See all apps → Google Play Store → Disable. This prevents any app downloads. To re-enable it later, follow the same path and tap Enable.',
+        warning: 'Disabling the Play Store also stops app updates from being installed. Re-enable it periodically to allow security updates, then disable it again.',
+      },
+    ],
   },
 
   // ═══════════════════════════════════════════

@@ -14,9 +14,11 @@ export const guidesBatch4: Guide[] = [
     difficulty: 'Beginner',
     body: `Keeping your iPhone updated is one of the most important things you can do to keep it safe and working well. Apple releases updates that fix security holes (ways hackers can get into your phone), fix small bugs, and sometimes add helpful new features. Many people put off updates because they worry something will go wrong — but skipping updates actually makes your phone less safe.
 
+The current iPhone operating system as of April 2026 is iOS 18.7.7, which Apple released as an emergency security update. If you have not installed it yet, doing so is strongly recommended.
+
 Before you start, make sure your iPhone is plugged into a charger and connected to Wi-Fi. Updates can use a lot of data and battery, so you want both. You will also need about 15–30 minutes where you can leave your phone alone. Here is how to do it: Go to the Settings app (the gray gear icon on your home screen). Scroll down and tap "General." Tap "Software Update." Your iPhone will check for the latest update. If one is available, tap "Download and Install." You may be asked to enter your passcode. Tap "Install Now" and your phone will restart on its own — that is completely normal.
 
-If it says "Your software is up to date," that means your phone already has the newest version and you are all set. Apple makes updates available over several weeks, so if you do not see an update that others are talking about, it may simply not be ready for your phone yet. Updates are free and only take a few minutes of your attention. Setting a reminder to check for updates once a month is a simple habit that keeps your phone protected.`,
+If it says "Your software is up to date," that means your phone already has the newest version and you are all set. Apple makes updates available over several weeks, so if you do not see an update that others are talking about, it may not be ready for your specific phone model yet. Updates are free and only take a few minutes of your attention. Setting a reminder to check for updates once a month is a good habit that keeps your phone protected.`,
     steps: [
       { title: 'Plug in and connect to Wi-Fi', content: 'Before updating, plug your iPhone into its charger and make sure you are connected to your home Wi-Fi. Updates can be several gigabytes and need a stable connection.' },
       { title: 'Open Settings and tap General', content: 'Tap the gray gear icon on your home screen to open the Settings app. Scroll down and tap "General."' },
@@ -393,7 +395,7 @@ Open the app, make sure your phone's Wi-Fi is on, and tap the "Devices" tab or t
     thumbnailEmoji: '📧',
     publishedAt: '2026-04-08',
     difficulty: 'Beginner',
-    body: `Many people are afraid to click the "Unsubscribe" link at the bottom of emails, worried it will confirm their email address to scammers or open a virus. This is actually a smart instinct — but it applies only to a small category of emails. Understanding when it is safe to unsubscribe versus when you should simply delete and report the email is a useful skill that will help you keep a cleaner inbox.
+    body: `Many people are afraid to click the "Unsubscribe" link at the bottom of emails, worried it will confirm their email address to scammers or open a virus. This is actually a smart instinct — but it applies only to a small category of emails. Understanding when it is safe to unsubscribe versus when you should delete and report the email is a useful skill that will help you keep a cleaner inbox.
 
 It is safe to click "Unsubscribe" when the email is from a company you recognize and have done business with — a store you shop at, a newsletter you signed up for, a bank or insurance company, or a website you use. Legitimate companies are required by the CAN-SPAM Act to include a working unsubscribe link, and clicking it will actually remove you from their list within 10 business days. Gmail also has its own unsubscribe button that appears at the top of many promotional emails — clicking the "Unsubscribe" link right next to the sender's name in Gmail is very safe and works through Google's own systems.
 
@@ -450,6 +452,206 @@ Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to tur
       { title: 'Create a Screen Time passcode', content: 'When prompted, create a 4-digit Screen Time passcode — different from the regular phone passcode. Only you should know this, so the child cannot change the settings.', warning: 'Do not use a passcode the child might guess. This is the key to the whole system.' },
       { title: 'Enable Content & Privacy Restrictions', content: 'Settings → Screen Time → Content & Privacy Restrictions → turn it on → Web Content → Limit Adult Websites. You can also block the ability to install new apps or make purchases.' },
       { title: 'Manage remotely via Family Sharing', content: 'If your Apple ID and the child\'s are in the same Family group, go to your own Settings → Screen Time → your child\'s name to see usage and adjust limits from your own phone.', tip: 'Set up Family Sharing at Settings → your name → Family Sharing if you have not already.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // WEEKLY CONTENT — April 14, 2026
+  // ═══════════════════════════════════════════
+
+  // Social: "Got a text saying you owe money for a traffic ticket or toll? Don't click anything. The FTC just flagged this scam as one of the fastest-growing in the US. Here's what to do instead."
+  // Newsletter: "A brand-new FTC scam alert (April 14, 2026): millions of Americans are getting fake traffic violation texts that look like they come from a real DMV or toll authority. The link takes you to a page that steals your card number. We wrote a step-by-step guide showing you how to spot them and what to do — including how to verify a real fine without clicking a single link."
+  {
+    slug: 'traffic-violation-text-scam',
+    title: 'How to Spot the Fake Traffic Violation Text Scam',
+    excerpt: 'Got a text about an unpaid ticket or toll? It\'s probably a scam. Here\'s how to tell the difference and what to do.',
+    category: 'safety-guides',
+    tags: ['scams', 'text scams', 'smishing', 'traffic', 'FTC', 'safety'],
+    readTime: '5 min',
+    thumbnailEmoji: '🚗',
+    publishedAt: '2026-04-14',
+    difficulty: 'Beginner',
+    body: `The Federal Trade Commission issued a fresh warning on April 14, 2026: millions of Americans are receiving fake text messages claiming they owe money for an unpaid traffic ticket, a toll violation, or a moving violation — and that they must pay immediately or face serious penalties like license suspension. These texts look convincing. They may include a fake case number, legal-sounding language, and a link to what appears to be an official government website.
+
+If you click the link, it takes you to a realistic-looking fake payment page. The moment you enter your credit card number, the scammers steal it. Some pages also install software on your phone that can steal passwords and banking information.
+
+The scam is spreading rapidly in every state. Scammers are targeting people because traffic violations are common, so many people who receive the text assume it might be real. Here is everything you need to know to protect yourself.`,
+    steps: [
+      {
+        title: 'Recognize what these scam texts look like',
+        content: 'The text usually claims you have an unpaid fine — often for a toll, a parking ticket, or a moving violation. It uses urgent language: "Pay within 24 hours to avoid a 35% penalty," "Your license is at risk of suspension," or "This is your final notice." It includes a link to pay. The link often has a name that looks official, like "dmv-payments.com" or "toll-notice-us.com" — but these are fake sites.',
+        warning: 'Real government agencies never send payment links via text message. If you receive a text asking you to click a link and pay a fine, it is almost certainly a scam.',
+      },
+      {
+        title: 'Do not click the link — delete the text',
+        content: 'The safest thing to do is delete the text immediately without clicking anything. If you are worried the fine might be real, you can verify it — but not through the link in the text. See the next step for how to check safely.',
+      },
+      {
+        title: 'Verify a real fine the safe way',
+        content: 'If you think you might genuinely have an unpaid ticket or toll, check it without using the text link. Open your phone\'s browser and search for your state\'s official DMV website (for example, "California DMV official site") or your toll authority\'s official site. You can also call the phone number listed on your state\'s government website. Real fines show up in your official driving record.',
+        tip: 'The FTC\'s official traffic scam alert is at consumer.ftc.gov — search "traffic violation text scam" to read the full advisory.',
+      },
+      {
+        title: 'Report the scam text',
+        content: 'Forward the scam text to 7726 (SPAM) — this is a free service that reports the number to your phone carrier. You can also report it to the FTC at ReportFraud.ftc.gov. Reporting helps authorities track and shut down scam operations.',
+      },
+      {
+        title: 'Turn on spam text filtering',
+        content: 'Your phone has built-in tools to catch more scam texts before they reach you. On iPhone: Settings → Messages → scroll down to "Filter Unknown Senders" and turn it on. On Android: open the Messages app → three dots → Settings → Spam protection → turn on "Enable spam protection." Your carrier also offers free spam filtering: AT&T ActiveArmor, T-Mobile Scam Shield, and Verizon Call Filter.',
+        tip: 'If you already clicked the link, contact your bank or credit card company immediately to report a potential compromise, and consider placing a fraud alert on your credit at AnnualCreditReport.com.',
+      },
+    ],
+  },
+
+  // Social: "Got scammed? Don't panic. Here are the exact steps the FTC says you should take — in order — to protect your money and your identity."
+  // Newsletter: "If you or someone you know has fallen for a scam — a fake tech support call, a gift card demand, a romance scammer — this new TekSure guide walks you through every recovery step: who to call first, how to freeze your credit for free, and how to report it so it can't happen to someone else."
+  {
+    slug: 'what-to-do-after-being-scammed',
+    title: 'What to Do If You\'ve Been Scammed: A Step-by-Step Recovery Guide',
+    excerpt: 'Fell for a scam? Don\'t panic. Take these steps right away to protect your money, your accounts, and your identity.',
+    category: 'safety-guides',
+    tags: ['scams', 'recovery', 'identity theft', 'FTC', 'credit freeze', 'safety'],
+    readTime: '8 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-04-14',
+    difficulty: 'Beginner',
+    body: `Being scammed is one of the most distressing things that can happen — and it happens to millions of people every year, including smart, experienced adults. If you have recently realized you may have been scammed, the most important thing is to stay calm and take action quickly. Acting within the first 24 hours gives you the best chance of limiting the damage.
+
+Scams take many forms: a fake tech support call where you gave someone remote access to your computer, a phishing email where you entered your bank login, a gift card demand where you sent money, or a romance scammer who convinced you to wire funds. Each situation is a little different, but the core steps to protect yourself are the same. Go through this guide step by step — you do not need to do everything at once, but start with Step 1 immediately.`,
+    steps: [
+      {
+        title: 'Stop all contact with the scammer right now',
+        content: 'If you are still in contact with the scammer — on the phone, in email, or in a chat app — end all communication immediately. Block the phone number or email address. Do not respond to any further messages, even if they threaten you or claim to be from law enforcement. Real police and government agencies do not ask for payment via phone or email.',
+        warning: 'Scammers often call back after you hang up, pretending to be from a different agency that can "help" you recover your money. This is a second scam. Do not answer calls from numbers you do not recognize.',
+      },
+      {
+        title: 'Contact your bank or credit card company right away',
+        content: 'If you sent money or shared your bank or card details, call the fraud department of your bank or credit card company as soon as possible. Look for the phone number on the back of your card or on your bank\'s official website. Explain what happened and ask them to reverse the transaction or freeze the account if needed. The sooner you call, the better your chances of recovering funds. For wire transfers, ask about a recall. For gift cards, call the gift card company directly — each has a fraud line.',
+        tip: 'For credit card charges, request a chargeback. For debit card fraud, federal law gives you better protection if you report within two business days.',
+      },
+      {
+        title: 'Change your passwords on important accounts',
+        content: 'If you gave your password to anyone, or if you clicked a phishing link and logged in somewhere, change your passwords immediately for: your email account (this is the most important one), your bank and financial accounts, and any account you use the same password for. Use a different strong password for each account. A strong password is at least 12 characters long and includes uppercase letters, lowercase letters, numbers, and symbols.',
+        tip: 'If you need help managing multiple passwords, a free password manager like Bitwarden (bitwarden.com) stores all your passwords securely so you only need to remember one.',
+      },
+      {
+        title: 'Remove remote access software if someone installed it',
+        content: 'If a scammer talked you into installing software so they could "fix your computer" — common programs include AnyDesk, TeamViewer, and UltraViewer — you need to remove it immediately. On Windows: click Start → Settings → Apps → search for the program name → click Uninstall. On Mac: open Finder → Applications → drag the program to the Trash → empty the Trash. After removing the software, run a full scan using Windows Defender (built into Windows) or Malwarebytes (free at malwarebytes.com). Change all your passwords after doing this.',
+        warning: 'Even after removing remote access software, assume the scammer may have copied your files or saved your passwords. Change every important password as a precaution.',
+      },
+      {
+        title: 'Place a free fraud alert or credit freeze',
+        content: 'If you gave the scammer your Social Security number, date of birth, or other personal details, they may try to open accounts or take out loans in your name. Protect yourself by placing a free credit freeze with all three major credit bureaus: Equifax (equifax.com), Experian (experian.com), and TransUnion (transunion.com). A credit freeze stops anyone from opening new credit in your name — including you — until you unfreeze it. It is free and does not hurt your credit score. You can also place a free one-year fraud alert, which warns lenders to verify your identity before opening new accounts.',
+        tip: 'You must contact all three bureaus separately to freeze your credit. It takes about 5 minutes per bureau at their official websites.',
+      },
+      {
+        title: 'Report the scam',
+        content: 'Reporting helps authorities catch scammers and warn others. Report to the FTC at ReportFraud.ftc.gov — this takes about 5 minutes and the FTC uses reports to build cases against scammers. For investment fraud, report to the SEC at sec.gov/tcr. For internet-based fraud, file a complaint with the FBI\'s Internet Crime Complaint Center at ic3.gov. For gift card scams, contact the gift card issuer and report to the FTC.',
+        tip: 'The FTC\'s website at consumer.ftc.gov/articles/what-do-if-you-were-scammed has detailed guidance for every type of scam. Bookmark it.',
+      },
+      {
+        title: 'Monitor your accounts for unusual activity',
+        content: 'Check your bank and credit card statements daily for the next few weeks. Look for any charges you do not recognize — even small ones (scammers often test with a small charge before making larger ones). Sign up for transaction alerts through your bank\'s app so you get a text every time money moves. Check your credit report for free at AnnualCreditReport.com — you can now check it weekly for free.',
+      },
+      {
+        title: 'Talk to someone — you are not alone',
+        content: 'Being scammed can feel embarrassing or shameful, but it is not your fault. Scammers are professionals who do this full-time. Millions of people fall for scams every year, including lawyers, doctors, and security experts. If you need to talk to someone, the AARP Fraud Watch Network helpline (877-908-3360) is free and staffed by trained volunteers Monday through Friday, 8 AM to 8 PM Eastern. They can walk you through next steps and provide emotional support.',
+      },
+    ],
+  },
+
+  // Social: "WhatsApp messages can disappear forever when you switch phones — unless you back them up first. Here's the simple 3-step process that most people skip."
+  // Newsletter: "Switching to a new phone? Don't lose years of WhatsApp conversations and photos. This guide shows you exactly how to back up and transfer your WhatsApp messages to any new iPhone or Android — before you hand your old phone in."
+  {
+    slug: 'whatsapp-transfer-new-phone',
+    title: 'How to Transfer WhatsApp to a New Phone Without Losing Messages',
+    excerpt: 'Moving to a new iPhone or Android? Back up your WhatsApp chats and photos first so nothing gets lost when you switch.',
+    category: 'app-guides',
+    tags: ['WhatsApp', 'new phone', 'backup', 'transfer', 'messages', 'phone'],
+    readTime: '7 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-14',
+    difficulty: 'Beginner',
+    body: `When you get a new phone, your WhatsApp messages do not transfer automatically — they live on your old phone and will disappear unless you back them up first. The good news is that WhatsApp has a free built-in backup feature that saves all your chats, photos, and videos to either iCloud (for iPhone) or Google Drive (for Android). Once backed up, you can restore everything on your new phone in a few minutes.
+
+The key is to do the backup before you set up your new phone or hand in your old one. This guide covers both iPhone-to-iPhone and Android-to-Android transfers. If you are switching between iPhone and Android (for example, moving from an Android to an iPhone), the process is slightly different — WhatsApp has a special transfer tool for that which is covered in Step 5.`,
+    steps: [
+      {
+        title: 'Back up WhatsApp on your old phone (iPhone)',
+        content: 'On your old iPhone, open WhatsApp → tap the Settings icon (bottom right) → tap Chats → tap Chat Backup → tap "Back Up Now." You will see a progress bar as it uploads to iCloud. Wait for it to say "Last backup: just now" before moving on. Make sure you are connected to Wi-Fi — backups can be large.',
+        tip: 'For step-by-step help from WhatsApp, visit faq.whatsapp.com and search "back up on iPhone." This is WhatsApp\'s official support page.',
+        warning: 'Make sure iCloud has enough free storage. Go to Settings → your name → iCloud → Manage Storage to check. A free iCloud account includes 5 GB.',
+      },
+      {
+        title: 'Back up WhatsApp on your old phone (Android)',
+        content: 'On your old Android phone, open WhatsApp → tap the three dots in the top-right corner → tap Settings → tap Chats → tap Chat Backup → tap "Back Up." The backup saves to your Google Drive. Make sure you are signed in to a Google account and connected to Wi-Fi.',
+        tip: 'For official Android backup instructions, visit faq.whatsapp.com and search "back up on Android."',
+      },
+      {
+        title: 'Set up WhatsApp on your new iPhone using the same phone number',
+        content: 'On your new iPhone, download WhatsApp from the App Store (it is free). Open WhatsApp and enter your phone number — it must be the same number you used on your old phone. WhatsApp will send a verification code by text. Enter the code. WhatsApp will detect your backup on iCloud and ask "Restore Chat History?" — tap Restore. Your messages, photos, and videos will download. This may take a few minutes.',
+      },
+      {
+        title: 'Set up WhatsApp on your new Android phone',
+        content: 'Download WhatsApp from the Google Play Store (free). Open it and enter your same phone number. Enter the verification code sent by text. WhatsApp will find your Google Drive backup and ask you to restore it — tap Restore. All your chats and media will transfer over.',
+      },
+      {
+        title: 'Switching from Android to iPhone (or iPhone to Android)',
+        content: 'WhatsApp has a special built-in tool for cross-platform transfers called "Move to iOS" (when moving to iPhone) or using the Android companion app. On your new iPhone, during initial setup, use the "Move to iOS" app on your Android phone — it will prompt you to transfer WhatsApp data directly over a local wireless connection. For the iPhone-to-Android direction, open WhatsApp on your old iPhone → Settings → Chats → Move Chats to Android and follow the prompts. Both phones need to be near each other and connected to the same Wi-Fi.',
+        tip: 'WhatsApp\'s official cross-platform transfer guide is at faq.whatsapp.com — search "move WhatsApp from Android to iPhone" or vice versa.',
+      },
+      {
+        title: 'Verify everything transferred correctly',
+        content: 'Once set up, open a few important conversations to make sure your messages, photos, and videos are there. Check your profile photo and name in Settings. If anything is missing, the backup may not have been complete — try backing up your old phone again (if you still have access) and repeating the restore.',
+        warning: 'Do not delete WhatsApp from your old phone until you have confirmed everything transferred to your new phone. You may need to go back.',
+      },
+    ],
+  },
+
+  // Social: "Wi-Fi dropping every 10 minutes? You don't need to call a tech. Try these 5 free fixes first — most people are back online in under 5 minutes."
+  // Newsletter: "Unstable Wi-Fi is one of the most common tech complaints we hear. Before you call your internet company, try these 5 free steps — restarting your router correctly, forgetting and reconnecting to the network, and checking if the issue is your router's age. Most Wi-Fi problems are fixed in under 5 minutes with no tech knowledge needed."
+  {
+    slug: 'fix-wifi-keeps-dropping',
+    title: 'How to Fix Wi-Fi That Keeps Dropping or Disconnecting',
+    excerpt: 'Wi-Fi cutting out every few minutes? Try these free fixes in order — most people are back online within 5 minutes.',
+    category: 'essential-skills',
+    tags: ['Wi-Fi', 'internet', 'troubleshooting', 'router', 'connection', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-14',
+    difficulty: 'Beginner',
+    body: `A Wi-Fi connection that keeps dropping is one of the most frustrating tech problems — especially during a video call, while streaming a show, or when you are trying to get something done. The good news: most Wi-Fi problems are caused by straightforward things that you can fix yourself for free in a few minutes.
+
+The most common cause is a router that needs a restart. The second most common is your device getting confused about which Wi-Fi network to connect to. Follow these steps in order — start with Step 1 and only move to the next step if the problem continues.`,
+    steps: [
+      {
+        title: 'Restart your router — not only your device',
+        content: 'This fixes the majority of Wi-Fi problems. Find your router — the box provided by your internet company, usually with blinking lights. Unplug the power cord from the back of the router. Wait a full 60 seconds (count to 60). Plug it back in. Wait another 2 minutes for it to fully restart. The lights will blink and then stabilize. Try your Wi-Fi again.',
+        tip: 'Restarting a router clears its memory and resets its connection to your internet provider. Most internet providers also recommend doing this once a month.',
+        warning: 'Do not press the small "Reset" button on the router — that erases all your settings and requires starting over. Just unplug the power cord.',
+      },
+      {
+        title: 'Forget and rejoin the Wi-Fi network on your device',
+        content: 'Sometimes your device\'s memory of the Wi-Fi network gets corrupted. On iPhone: Settings → Wi-Fi → tap the (i) next to your network name → Forget This Network → then reconnect by tapping the network name and entering your password. On Android: Settings → Wi-Fi → tap your network name → tap Forget → then reconnect. On Windows: click the Wi-Fi icon in the taskbar → right-click your network → Forget → then reconnect.',
+      },
+      {
+        title: 'Move closer to the router',
+        content: 'Wi-Fi signal gets weaker the farther you are from the router, and thick walls, floors, and appliances can block it significantly. Try using your device in the same room as the router and see if the drops stop. If they do, distance or obstacles are the problem. A Wi-Fi extender (available for $20–$50 at any electronics store) can help extend coverage to farther rooms.',
+        tip: 'Microwaves, cordless phones, and baby monitors all use the same radio frequency as Wi-Fi and can cause interference when they are on. Try moving your router away from these devices.',
+      },
+      {
+        title: 'Check if too many devices are connected',
+        content: 'Every device connected to your Wi-Fi shares the same bandwidth. If many family members are streaming video, video calling, and downloading at the same time, the connection can get congested and appear to drop. Try temporarily disconnecting some devices and see if stability improves. You can manage connected devices through your router\'s admin panel — type 192.168.1.1 into your browser\'s address bar to access it (username and password are often on a sticker on the router).',
+      },
+      {
+        title: 'Check your router\'s age',
+        content: 'Routers more than 5 years old may no longer receive software updates from the manufacturer, which can make them unstable and cause frequent drops. If your router is old and the problem persists after trying the steps above, contact your internet provider. Many providers will replace an old router for free, or you can purchase a new one for $50–$150. Ask your provider if they offer a modem/router combo rental — it includes automatic updates.',
+        tip: 'For more detailed Wi-Fi troubleshooting, Microsoft\'s free guide is at support.microsoft.com — search "fix Wi-Fi connection issues." Apple\'s guide is at support.apple.com — search "use wireless diagnostics."',
+      },
+      {
+        title: 'Run your internet provider\'s speed test',
+        content: 'Visit fast.com (free, no sign-up) or speedtest.net to check your actual internet speed. If the speed shown is much lower than what you pay for, the problem is with your internet service, not your home Wi-Fi. In that case, call your internet provider\'s support line and tell them your speed test result — they can often diagnose and fix connection issues remotely.',
+      },
     ],
   },
 ];
