@@ -25,12 +25,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teksure.com/pricing</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://teksure.com/about</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -397,7 +391,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://teksure.com/parental-controls</loc>
+    <loc>https://teksure.com/safety/parental-controls</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

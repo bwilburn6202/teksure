@@ -1,5 +1,5 @@
 // Supabase Edge Function: create-checkout-session
-// Creates a Stripe Checkout session for a £15 booking deposit
+// Creates a Stripe Checkout session for a $15 booking deposit
 //
 // Required Supabase secrets:
 //   STRIPE_SECRET_KEY  — your Stripe secret key (sk_live_... or sk_test_...)
@@ -56,13 +56,13 @@ Deno.serve(async (req) => {
       line_items: [
         {
           price_data: {
-            currency: 'gbp',
+            currency: 'usd',
             product_data: {
               name: 'TekSure Booking Deposit',
               description: description || 'Technician appointment deposit',
               images: [`${siteUrl}/teksure-logo.svg`],
             },
-            unit_amount: 1500, // £15.00 in pence
+            unit_amount: 1500, // $15.00 in cents
           },
           quantity: 1,
         },

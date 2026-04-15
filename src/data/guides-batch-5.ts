@@ -288,7 +288,7 @@ Your assistant will read the message back to you and ask you to confirm before s
     ],
   },
   {
-    slug: 'what-is-ai',
+    slug: 'what-is-ai-plain-english-guide',
     title: 'What Is Artificial Intelligence (AI)? A Plain-English Guide',
     excerpt: 'AI is in the news constantly. Here\'s what it actually means, what it can do, what it can\'t do, and why you might find it useful in everyday life.',
     category: 'AI',

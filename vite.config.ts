@@ -15,7 +15,6 @@ function sitemapPlugin(): Plugin {
         { path: '/guides', priority: '0.9', changefreq: 'daily' },
         { path: '/tools', priority: '0.8', changefreq: 'weekly' },
         { path: '/get-help', priority: '0.8', changefreq: 'monthly' },
-        { path: '/pricing', priority: '0.7', changefreq: 'monthly' },
         { path: '/about', priority: '0.6', changefreq: 'monthly' },
         { path: '/how-it-works', priority: '0.7', changefreq: 'monthly' },
         { path: '/blog', priority: '0.8', changefreq: 'daily' },
@@ -77,7 +76,7 @@ function sitemapPlugin(): Plugin {
         { path: '/tools/scam-report', priority: '0.5', changefreq: 'monthly' },
         { path: '/tools/guide-packs', priority: '0.5', changefreq: 'monthly' },
         { path: '/tools/safety-course', priority: '0.5', changefreq: 'monthly' },
-        { path: '/parental-controls', priority: '0.5', changefreq: 'monthly' },
+        { path: '/safety/parental-controls', priority: '0.5', changefreq: 'monthly' },
       ];
 
       const guidesFile = fs.readFileSync(path.resolve(__dirname, 'src/data/guides.ts'), 'utf-8');
@@ -102,7 +101,7 @@ function sitemapPlugin(): Plugin {
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
+    port: 5173,
     hmr: {
       overlay: false,
     },

@@ -13,14 +13,13 @@ import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBot } from "@/components/TekBot";
-// FloatingChat disabled — TekBot is the primary assistant with full features
-// import { FloatingChat } from "@/components/FloatingChat";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { BackToTop } from "@/components/BackToTop";
 import { CookieConsent } from "@/components/CookieConsent";
+import { Analytics } from "@vercel/analytics/react";
 
 const isServer = typeof window === "undefined";
 
@@ -234,7 +233,6 @@ const AppContent = () => {
       {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
       <TekBot />
-      {/* FloatingChat disabled — TekBot handles all chat */}
       <ScamPanicButton />
       <BackToTop />
       <Toaster />
