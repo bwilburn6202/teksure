@@ -385,6 +385,7 @@ export const AppShell = ({ children, helmetContext }: { children?: ReactNode; he
                 <AuthProvider>
                   {children}
                   <AppContent />
+                  <Analytics />
                 </AuthProvider>
               </HighContrastProvider>
             </SeniorModeProvider>
