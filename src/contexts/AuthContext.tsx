@@ -111,9 +111,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const loginWithProvider = useCallback(async (provider: 'google' | 'apple') => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: window.location.origin },
+      options: { redirectTo: `${window.location.origin}/login` },
     });
-    return { error: error?.message || null };
+    if (error) {
+      // Translate provider-not-enabled into a plain-language message
+      const msg = error.message?.toLowerCase() ?? '';
+      if (msg.includes('unsupported provider') || msg.includes('not enabled') || msg.includes('provider')) {
+        const name = provider === 'google' ? 'Google' : 'Apple';
+        return { error: `${name} sign-in is not available right now. Please use your email and password below.` };
+      }
+      return { error: error.message };
+    }
+    return { error: null };
   }, []);
 
   const logout = useCallback(async () => {
