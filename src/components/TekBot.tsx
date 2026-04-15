@@ -464,6 +464,7 @@ export function TekBot() {
   const inputRef = useRef<HTMLInputElement>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const enrichedRef = useRef<string>('');
+  const devicePickerTriggerRef = useRef<HTMLButtonElement>(null);
 
   /* ── Agent Memory ─────────────────────────────────────────── */
   const memory = useAgentMemory();
@@ -643,64 +644,41 @@ export function TekBot() {
 
     const delay = isContinuation(text) ? 600 : 900 + Math.random() * 700;
 
-    // Recall relevant memories to enrich the response
-    recallContext(text).then(memoryContext => {
-      setTimeout(() => {
-        setTyping(false);
-        const enriched = enrichedRef.current || text;
-        const answer = getResponse(enriched, activeDevice);
-        const related = findRelatedGuides(enriched);
+    // Shared response delivery — called from both the memory-enriched and fallback paths
+    function deliver(memoryContext?: string) {
+      setTyping(false);
+      const enriched = enrichedRef.current || text;
+      const answer = getResponse(enriched, activeDevice);
+      const related = findRelatedGuides(enriched);
 
-        // Find which KB category matched (for memory observation)
+      // Memory observations only run on the happy path (when memoryContext is defined)
+      if (memoryContext !== undefined) {
         const matchedEntry = KB.find(entry =>
           entry.keywords.some(kw => enriched.toLowerCase().includes(kw))
         );
-
-        // Observe the user's topic interest
         observeTopic(text, matchedEntry?.category);
-
-        // If we found a good answer, observe it as a successful solution
         if (matchedEntry) {
           observeSolution(text, matchedEntry.category, related.length > 0);
         }
+      }
 
-        let finalAnswer = answer;
-        if (detected) {
-          finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
-        }
+      let finalAnswer = answer;
+      if (detected) {
+        finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
+      } else if (memoryContext?.includes('Previously helped')) {
+        finalAnswer = `(Welcome back! I remember helping you before.)\n\n${answer}`;
+      }
 
-        // Add memory-powered context hint if we have relevant past interactions
-        if (memoryContext && !detected) {
-          const isReturning = memoryContext.includes('Previously helped');
-          if (isReturning) {
-            finalAnswer = `(Welcome back! I remember helping you before.)\n\n${answer}`;
-          }
-        }
+      setMessages(prev => [
+        ...prev,
+        { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
+      ]);
+    }
 
-        setMessages(prev => [
-          ...prev,
-          { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
-        ]);
-      }, delay);
-    }).catch(() => {
-      // Fallback: proceed without memory context
-      setTimeout(() => {
-        setTyping(false);
-        const enriched = enrichedRef.current || text;
-        const answer = getResponse(enriched, activeDevice);
-        const related = findRelatedGuides(enriched);
-
-        let finalAnswer = answer;
-        if (detected) {
-          finalAnswer = `(I noticed you're on ${deviceLabel(detected)}! I'll remember that.)\n\n${answer}`;
-        }
-
-        setMessages(prev => [
-          ...prev,
-          { role: 'bot', content: finalAnswer, relatedGuides: related.length ? related : undefined },
-        ]);
-      }, delay);
-    });
+    // Recall relevant memories to enrich the response; fall back gracefully if unavailable
+    recallContext(text)
+      .then(memoryContext => { setTimeout(() => deliver(memoryContext), delay); })
+      .catch(() => { setTimeout(() => deliver(), delay); });
   };
 
   // Page-aware prompts: use page-specific chips first, fall back to device/default
@@ -840,12 +818,15 @@ export function TekBot() {
                 {/* Device picker button */}
                 <div className="relative">
                   <button
+                    ref={devicePickerTriggerRef}
                     onClick={() => setShowDevicePicker(v => !v)}
+                    onKeyDown={(e) => { if (e.key === 'Escape') { setShowDevicePicker(false); } }}
                     className="flex items-center gap-1 rounded-lg px-3 py-2 text-white/80 hover:text-white hover:bg-white/10 transition-all"
                     style={{ fontSize: 12, minHeight: 44 }}
                     aria-label={device ? `Device: ${deviceLabel(device)} — change device` : 'Select your device type'}
                     aria-expanded={showDevicePicker}
                     aria-haspopup="listbox"
+                    aria-controls="tekbot-device-listbox"
                   >
                     {device ? (
                       <>
@@ -867,10 +848,17 @@ export function TekBot() {
                   <>
                     {showDevicePicker && (
                       <div
+                        id="tekbot-device-listbox"
                         role="listbox"
                         aria-label="Select your device type"
                         className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-white shadow-xl"
                         style={{ minWidth: 160 }}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Escape') {
+                            setShowDevicePicker(false);
+                            devicePickerTriggerRef.current?.focus();
+                          }
+                        }}
                       >
                         <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground" aria-hidden="true">Your device</p>
                         {DEVICE_OPTIONS.map(opt => (

@@ -26,19 +26,27 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'health-tech': Heart,
 };
 
-const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
+const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
+  const [imgError, setImgError] = useState(false);
+  return (
   <Link to={`/guides/${guide.slug}`} className="group block h-full">
     <div className={`rounded-2xl border h-full transition-all hover:shadow-md overflow-hidden ${
       completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
     }`}>
       <div className="relative h-36 overflow-hidden bg-muted">
+        {imgError ? (
+          <div className="w-full h-full flex items-center justify-center text-4xl select-none" aria-hidden="true">
+            {guide.thumbnailEmoji}
+          </div>
+        ) : (
         <img
           src={getGuideThumbnailUrl(guide)}
           alt={guide.title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
-          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          onError={() => setImgError(true)}
         />
+        )}
         {completed && (
           <div className="absolute top-2 right-2 bg-green-500 text-white rounded-full p-1">
             <CheckCircle2 className="h-3.5 w-3.5" />
@@ -78,7 +86,8 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
       </div>
     </div>
   </Link>
-);
+  );
+};
 
 const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
   <Link to={`/guides/${guide.slug}`} className="group block">

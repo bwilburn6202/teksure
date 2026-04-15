@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
 import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
@@ -288,6 +288,9 @@ const GuideDetail = () => {
   const location = useLocation();
   const guide = guides.find(g => g.slug === slug);
 
+  // Hoisted before early returns to satisfy Rules of Hooks
+  const estimatedReadTime = useMemo(() => guide ? calcReadTime(guide) : '', [guide]);
+
   const stepCount = guide?.steps?.length || 0;
   const { activeStep, stepsRef } = useStepProgress(stepCount);
 
@@ -304,8 +307,6 @@ const GuideDetail = () => {
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.category === guide.category)
     .slice(0, 3);
-
-  const estimatedReadTime = calcReadTime(guide);
 
   const howToJsonLd = guide.steps ? {
     '@context': 'https://schema.org',
