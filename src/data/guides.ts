@@ -2535,56 +2535,31 @@ const coreGuides: Guide[] = [
     thumbnailEmoji: '🤖',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What is AI in simple terms?**
-Artificial intelligence (AI) is software that can learn from information and make decisions — rather than just following a fixed set of instructions. Think of it as the difference between a calculator (which only does what you tell it) and a smart assistant (which can understand your question and figure out the answer).
-
-AI is not a robot. It is not a single product. It is a broad term for technology that can process information, spot patterns, and make predictions in ways that seem "intelligent."
-
-**You already use AI every day**
-AI is not futuristic — you are almost certainly using it right now:
-- **Spam filters** in your email learn which messages are junk
-- **Netflix and YouTube** recommend shows based on what you have watched
-- **Voice assistants** like Siri, Alexa, and Google Assistant understand your spoken words
-- **Autocorrect** on your phone predicts what you are trying to type
-- **Sat navs** calculate the fastest route by analysing live traffic
-- **Online banking** flags unusual transactions to protect your account
-
-**How does AI actually work?**
-Most modern AI works through "machine learning." Instead of a programmer writing rules for every possible situation, the software is trained on huge amounts of data and learns to spot patterns itself.
-
-For example: to teach AI to recognize cats in photos, you show it millions of photos labelled "cat" and "not cat." The AI figures out the patterns — pointy ears, whiskers, fur — on its own. Nobody writes a rule that says "look for whiskers."
-
-This is why AI gets better over time. The more data it processes, the more accurate it becomes.
-
-**What is generative AI?**
-Generative AI is a newer type of AI that can create new content — text, images, music, even video. ChatGPT, Google Gemini, and Claude are all generative AI tools. You type a question or instruction, and the AI generates a response.
-
-Generative AI works by predicting the most likely next word (or pixel, or note) based on patterns it learned from vast amounts of text, images, or audio during training.
-
-**What is ChatGPT?**
-ChatGPT is a specific AI tool made by a company called OpenAI. It is a chatbot — you type questions or instructions, and it responds in natural language. It can write emails, explain concepts, summarise documents, help with homework, draft letters, and much more. There are other similar tools including Google Gemini, Microsoft Copilot, and Claude by Anthropic.
-
-**What AI cannot do**
-AI is not perfect, and understanding its limits is just as important as knowing its strengths:
-- AI is **not sentient** — it does not think, feel, or understand. It processes patterns
-- AI can be **confidently wrong** — it sometimes states false information as though it were true (called "hallucination")
-- AI can be **biased** — if the training data contains biases, the AI may reproduce them
-- AI **does not know your personal situation** unless you tell it
-- AI should **never replace professional advice** for medical, legal, or financial decisions
-
-Always verify important information from AI, just as you would double-check something you read online.
-
-**Is AI safe to use?**
-For everyday tasks — writing emails, getting recipe ideas, learning new things — AI tools are generally safe to use. However:
-- Do not share sensitive personal information (bank details, passwords, medical records) with AI chatbots
-- Be cautious of AI-generated scams — scammers now use AI to write more convincing phishing emails
-- Remember that anything you type into an AI chatbot may be stored and used to train future models
-
-**Where to start with AI**
-If you are new to AI, the easiest way to try it is to visit ChatGPT, Google Gemini, or Claude in your web browser. Type a simple question like "Explain how a dishwasher works" and see what it says. It is free to try and you do not need to install anything.
-
-**Learn more**
-We have over 100 AI guides on TekSure covering everything from writing your first AI prompt to using AI for travel planning, email writing, photo editing, and more. Browse our AI Guides section to continue learning.`
+    steps: [
+      {
+        title: 'Understand what AI actually means',
+        content: 'Artificial intelligence (AI) is software that can learn from information and make decisions \u2014 rather than just following a fixed set of instructions. Think of it like this: a calculator only does what you tell it, but a smart assistant can understand your question and figure out the answer on its own. AI is not a robot or a single product. It is a broad term for technology that can process information, spot patterns, and make predictions in ways that seem "intelligent." You are almost certainly using AI right now \u2014 spam filters in your email learn which messages are junk, Netflix and YouTube recommend shows based on what you have watched, voice assistants like Siri and Alexa understand your spoken words, and autocorrect on your phone predicts what you are trying to type.'
+      },
+      {
+        title: 'Learn how AI works behind the scenes',
+        content: 'Most modern AI works through something called "machine learning." Instead of a programmer writing rules for every possible situation, the software is trained on huge amounts of data and learns to spot patterns on its own. For example, to teach AI to recognize cats in photos, you show it millions of photos labeled "cat" and "not cat." The AI figures out the patterns \u2014 pointy ears, whiskers, fur \u2014 by itself. Nobody writes a rule that says "look for whiskers." This is why AI gets better over time: the more data it processes, the more accurate it becomes.',
+        tip: 'You do not need to understand the technical details to use AI. Knowing the basics helps you feel more confident, but you can start using AI tools right away without any special knowledge.'
+      },
+      {
+        title: 'Know the different types of AI tools',
+        content: 'Generative AI is a newer type that can create new content \u2014 text, images, music, and even video. ChatGPT (made by OpenAI), Google Gemini, Microsoft Copilot, and Claude (by Anthropic) are all generative AI tools. You type a question or instruction, and the AI generates a response. These tools can write emails, explain concepts, summarize documents, help with homework, draft letters, and much more. You use them by typing in plain English \u2014 no special commands needed.'
+      },
+      {
+        title: 'Understand what AI cannot do',
+        content: 'AI is not perfect, and understanding its limits is just as important as knowing what it can do. AI does not think, feel, or understand \u2014 it processes patterns. It can sometimes be confidently wrong, stating false information as if it were true (this is called a "hallucination"). AI can also reflect biases from its training data. It does not know your personal situation unless you tell it, and it should never replace professional advice for medical, legal, or financial decisions. Always double-check important information from AI, just as you would verify something you read online.',
+        warning: 'Do not share sensitive personal information (bank details, passwords, Social Security numbers, medical records) with AI chatbots. Anything you type may be stored and used to improve future versions of the software.'
+      },
+      {
+        title: 'Try AI for yourself',
+        content: 'The easiest way to get started is to visit ChatGPT (chat.openai.com), Google Gemini (gemini.google.com), or Claude (claude.ai) in your web browser. Type a simple question like "Explain how a dishwasher works" and see what comes back. It is free to try and you do not need to install anything. Be cautious of AI-generated scams \u2014 scammers now use AI to write more convincing phishing emails. We have over 100 AI guides on TekSure covering everything from writing your first prompt to using AI for travel planning, email writing, and more.',
+        tip: 'For more help getting started with AI, visit support.google.com/gemini or openai.com/chatgpt for official guides. The AARP also has beginner-friendly AI articles at aarp.org/technology.'
+      }
+    ]
   },
   {
     slug: 'getting-started-with-chatgpt',
@@ -5880,7 +5855,27 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '🔋',
     publishedAt: '2026-03-30',
     difficulty: 'Beginner',
-    body: `If your Anker power bank won't turn on and you received a warranty expiration notice showing a future date, that notice is likely an error. Contact Anker support directly — a device that is completely dead cannot perform the suggested USB-C reset. Document the issue with photos and keep your proof of purchase. If the manufacturer won't honor the warranty, dispute the charge with your credit card company, as many cards offer purchase protection.`
+    steps: [
+      {
+        title: 'Check your warranty dates and proof of purchase',
+        content: 'If your Anker power bank will not turn on and you received a warranty expiration notice showing a future date, that notice is likely an error. Before contacting anyone, gather your proof of purchase \u2014 this could be an email receipt, a bank or credit card statement showing the charge, or a screenshot of your order from Amazon or wherever you bought it. Having this ready will speed things up.',
+        tip: 'Check your email for the original order confirmation. Search your inbox for "Anker" or check your Amazon order history if you bought it there.'
+      },
+      {
+        title: 'Contact Anker support directly',
+        content: 'Go to anker.com and look for their "Support" or "Contact Us" page, or email support@anker.com. Explain that your power bank is completely dead and will not turn on, and that the warranty expiration notice shows a date that has not passed yet. If they suggest a USB-C reset, let them know the device is unresponsive and cannot perform that step. Be polite but firm \u2014 a dead device within the warranty period should be replaced or refunded.',
+        warning: 'Do not throw away the broken power bank until your warranty claim is fully resolved. The company may ask you to return it or send photos as proof.'
+      },
+      {
+        title: 'Document the issue with photos',
+        content: 'Take clear photos of the power bank from the front and back, showing the model number and any indicator lights (or lack of them). If the device has a screen, photograph it showing no response. Also screenshot the warranty expiration email showing the future date. These photos will strengthen your claim if the company pushes back.'
+      },
+      {
+        title: 'Use your credit card purchase protection if needed',
+        content: 'If Anker will not honor the warranty, check whether you paid with a credit card. Many credit cards offer purchase protection that covers defective products \u2014 typically for 90 to 120 days after purchase, and some extend the manufacturer warranty by a year. Call the number on the back of your credit card and ask about filing a purchase protection or extended warranty claim. They will walk you through the process.',
+        tip: 'Visa, Mastercard, and American Express cards often include purchase protection at no extra cost. Check your card benefits online or call your card company to ask.'
+      }
+    ]
   },
   {
     slug: 'random-sounds-chinese-voices-from-laptop-what-to-do',
@@ -6586,25 +6581,12 @@ We have over 100 AI guides on TekSure covering everything from writing your firs
     thumbnailEmoji: '📹',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What you need**
-Both you and the person you're calling must have Facebook accounts and the Messenger app installed (or be on Facebook.com on a computer). Video calls are free over Wi-Fi or mobile data.
-
-**Install Messenger**
-Download the "Messenger" app from the App Store (iPhone) or Play Store (Android). It's a separate app from the main Facebook app but uses the same login.
-
-**Start a video call on your phone**
-Open Messenger, find the conversation with the person you want to call (or tap the new message icon to find them), then tap the video camera icon in the top right corner of the conversation. Their phone will ring.
-
-**Start a video call on a computer**
-Go to messenger.com or open a conversation in Facebook. Click the video camera icon in the top right of the conversation.
-
-**During the call**
-- Tap the microphone icon to mute yourself
-- Tap the camera icon to turn off your video
-- Tap the red phone icon to end the call
-
-**If the video quality is poor**
-Move closer to your Wi-Fi router, or switch from mobile data to Wi-Fi. Poor video is almost always a connection issue, not a device problem.`
+    steps: [
+      { title: 'Install the Messenger app', content: 'Open the App Store (iPhone) or Play Store (Android) and search for "Messenger." Download it for free. It is a separate app from Facebook but uses the same login.', tip: 'Both you and the person you are calling need a Facebook account and the Messenger app (or access to Facebook.com on a computer). Video calls are free over Wi-Fi or mobile data.' },
+      { title: 'Find the person you want to call', content: 'Open the Messenger app on your phone. Look through your recent conversations, or tap the pencil icon (new message) to search for someone by name.' },
+      { title: 'Start the video call', content: 'Open the conversation with the person you want to call. Tap the video camera icon in the top right corner. Their phone will ring and you will see them when they answer. On a computer, go to messenger.com and click the video camera icon in the conversation.' },
+      { title: 'Use the call controls', content: 'During the call, tap the microphone icon to mute yourself, tap the camera icon to turn off your video, or tap the red phone icon to end the call.', warning: 'If the video is blurry or choppy, move closer to your Wi-Fi router. Poor video quality is almost always caused by a weak internet connection, not a problem with your device.' },
+    ]
   },
   {
     slug: 'get-started-with-whatsapp',
@@ -6671,23 +6653,13 @@ Move closer to your Wi-Fi router, or switch from mobile data to Wi-Fi. Poor vide
     thumbnailEmoji: '📷',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Download Instagram**
-Search for "Instagram" in the App Store (iPhone) or Play Store (Android). Download the free app.
-
-**Create your account**
-Open Instagram and tap "Create new account." Enter your email address or phone number. You can also sign up with your Facebook account by tapping "Log in with Facebook." Create a password.
-
-**Choose a username**
-Your username is your @handle — it appears publicly. Use your name or something easy to remember (e.g., @marysmith or @mary_from_exeter). You can change it later.
-
-**Add a profile photo**
-Tap "Add a profile photo." Choose a photo from your gallery or take a new one. This helps people recognize you.
-
-**Make your account private**
-Recommended for most people: tap your profile icon > ☰ (menu) > Settings and Privacy > Account Privacy > turn on "Private account." This means only people you approve can follow you and see your posts.
-
-**Follow some accounts**
-Instagram works best when you follow accounts you're interested in. Search for friends, family, local businesses, news outlets, or hobbyist accounts. Tap "Follow" on any account you'd like to see posts from.`
+    steps: [
+      { title: 'Download the Instagram app', content: 'Open the App Store (iPhone) or Play Store (Android). Search for "Instagram" and tap Install. The app is free.' },
+      { title: 'Create your account', content: 'Open Instagram and tap "Create new account." Enter your email address or phone number and create a password. You can also sign up using your Facebook account if you have one.' },
+      { title: 'Choose a username and add a photo', content: 'Pick a username (your public @handle). Use your real name or something easy to remember, like @marysmith. Then tap "Add a profile photo" and choose a photo so friends and family can recognize you.', tip: 'You can change your username later if you do not like it.' },
+      { title: 'Make your account private', content: 'Tap your profile icon at the bottom right, then tap the three lines (menu) at the top right. Go to Settings and Privacy, then Account Privacy, and turn on "Private account." This means only people you approve can see your posts.', warning: 'A private account is strongly recommended. Without it, anyone on the internet can see everything you post.' },
+      { title: 'Follow people and accounts you like', content: 'Use the search icon (magnifying glass) to find friends, family, local businesses, or topics you enjoy. Tap "Follow" on any account to see their photos and videos in your feed.' },
+    ]
   },
   {
     slug: 'post-photo-on-instagram',
@@ -6700,26 +6672,12 @@ Instagram works best when you follow accounts you're interested in. Search for f
     thumbnailEmoji: '🖼️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Tap the + button**
-At the bottom of the Instagram app, tap the + (plus) icon in the center of the bottom menu bar.
-
-**Choose your photo**
-Your camera roll will appear. Tap the photo you want to post. You can select multiple photos to create a carousel post (up to 10 photos that people swipe through).
-
-**Crop and filter your photo**
-Instagram lets you crop your photo and apply a filter to change the look. Tap "Next" when you're happy. Most people use "Normal" (no filter) or "Clarendon" (slightly brightened).
-
-**Write a caption (optional)**
-Tap "Write a caption..." and describe your photo or share a thought. You can add hashtags (#) to help people find your post — e.g., #Cornwall2026 #family.
-
-**Tag people (optional)**
-Tap "Tag people" to tag Instagram friends who appear in your photo. They'll be notified.
-
-**Share your post**
-Tap "Share." Your photo is now on your profile and will appear in the feeds of people who follow you.
-
-**Delete a post**
-Tap the three dots (⋯) above your post on your profile > Delete > Delete.`
+    steps: [
+      { title: 'Tap the plus button', content: 'Open the Instagram app and tap the + (plus) icon at the center of the bottom menu bar. This starts a new post.' },
+      { title: 'Choose your photo', content: 'Your camera roll will appear. Tap the photo you want to share. You can select more than one photo (up to 10) to create a set that people swipe through.' },
+      { title: 'Adjust and filter your photo', content: 'You can crop your photo or apply a filter to change the look. When you are happy with it, tap "Next." Most people leave it on "Normal" (no filter).', tip: 'You do not have to use a filter. Your photo looks great as it is.' },
+      { title: 'Add a caption and share', content: 'Tap "Write a caption..." to describe your photo or share a thought. When you are ready, tap "Share." Your photo will appear on your profile and in the feeds of people who follow you.', tip: 'To delete a post later, go to your profile, open the post, tap the three dots at the top right, and choose "Delete."' },
+    ]
   },
   {
     slug: 'understand-instagram-stories',
@@ -6732,23 +6690,12 @@ Tap the three dots (⋯) above your post on your profile > Delete > Delete.`
     thumbnailEmoji: '⭕',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What are Stories?**
-Instagram Stories are photos or short videos (up to 60 seconds) that you share with your followers. Unlike regular posts, Stories disappear after 24 hours. They appear in a row of circles at the top of the Instagram home screen.
-
-**View someone's Story**
-Tap on a person's profile photo circle at the top of your home feed to view their Story. Tap the right side of the screen to go to the next Story; tap the left to go back.
-
-**Post your own Story**
-Tap your own profile photo circle (with the + sign) at the top left of the home feed. Choose a photo or video from your camera roll, or tap the camera icon to take a new one. Add text, stickers, or drawings using the icons at the top. Tap "Your Story" to share it.
-
-**Add text and stickers**
-Tap the "Aa" icon to add text over your photo. Tap the smiley face icon to add stickers, GIFs, location tags, polls, and more.
-
-**Highlights**
-If you want to keep a Story beyond 24 hours, add it to a Highlight. Go to your profile, tap the + next to "Story Highlights" and select Stories to save permanently to your profile.
-
-**Who can see your Story?**
-If your account is private, only your followers can see your Stories. If your account is public, anyone can see them.`
+    steps: [
+      { title: 'Understand what Stories are', content: 'Instagram Stories are photos or short videos (up to 60 seconds) that disappear after 24 hours. They appear as circles at the top of your Instagram home screen. Think of them as quick updates that do not stay on your profile permanently.' },
+      { title: 'View someone else\'s Story', content: 'On the Instagram home screen, tap any profile photo circle at the top to watch that person\'s Story. Tap the right side of the screen to skip forward, or the left side to go back.' },
+      { title: 'Post your own Story', content: 'Tap your own profile photo circle (with the + sign) at the top left of the home screen. Choose a photo or video from your camera roll, or take a new one. You can add text by tapping "Aa" or add stickers by tapping the smiley face icon. When you are ready, tap "Your Story" to share it.', tip: 'If your account is private, only your approved followers can see your Stories. If your account is public, anyone can see them.' },
+      { title: 'Save a Story as a Highlight', content: 'If you want to keep a Story beyond 24 hours, you can save it as a Highlight. Go to your profile, tap the + next to "Story Highlights," and choose which Stories to keep. Highlights stay on your profile permanently for anyone to see.' },
+    ]
   },
   {
     slug: 'watch-youtube-videos',
@@ -6761,23 +6708,13 @@ If your account is private, only your followers can see your Stories. If your ac
     thumbnailEmoji: '▶️',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Access YouTube**
-On a computer: go to youtube.com in your browser. On a phone or tablet: download the YouTube app (free) from the App Store or Play Store.
-
-**Search for a video**
-Click or tap the search bar (magnifying glass icon) at the top. Type what you're looking for — e.g., "how to make shepherd's pie" or "BBC news today" — and press Enter or tap Search.
-
-**Play a video**
-Tap on a video thumbnail to start playing it. Tap the screen to show controls. Tap the pause button (||) to pause, or the play button (▶) to resume.
-
-**Adjust volume and quality**
-Use your device's volume buttons during playback. To adjust video quality (useful on slow internet), tap the three dots (⋮) in the video > Quality. Try "360p" or "480p" on slow connections.
-
-**Full-screen mode**
-Rotate your phone sideways to go full screen on mobile, or tap the full-screen icon (four corners) at the bottom right of the video.
-
-**No account needed**
-You don't need to sign in to watch videos. Creating a free Google account lets you subscribe to channels, like videos, and save videos to watch later.`
+    steps: [
+      { title: 'Open YouTube', content: 'On a computer, open your web browser and go to youtube.com. On a phone or tablet, open the App Store (iPhone) or Play Store (Android), search for "YouTube," and download the free app.', tip: 'You do not need an account to watch videos. You can start watching right away without signing in.' },
+      { title: 'Search for a video', content: 'Tap or click the magnifying glass icon at the top of the screen. Type what you want to watch — for example, "how to make banana bread" or "today\'s news." Then press Enter on a keyboard or tap Search on your phone.' },
+      { title: 'Play and control the video', content: 'Tap on a video thumbnail (the small picture) to start playing it. Tap the screen once to show the controls. Tap the pause button (two vertical lines) to pause, or the play button (triangle) to resume. Use your device\'s volume buttons on the side to adjust the sound.' },
+      { title: 'Watch in full screen', content: 'On a phone, turn your phone sideways to fill the whole screen with the video. On a computer, click the small square icon in the bottom right corner of the video to go full screen. Press the Escape key on your keyboard to exit full screen.' },
+      { title: 'Adjust video quality if needed', content: 'If the video looks blurry or keeps stopping, tap the three dots in the top right corner of the video, then tap "Quality." Choose a lower number like "360p" or "480p." This uses less internet and helps the video play smoothly on slower connections.', tip: 'Creating a free Google account lets you subscribe to channels, save videos for later, and leave comments.' },
+    ]
   },
   {
     slug: 'subscribe-youtube-channels',
@@ -6790,23 +6727,13 @@ You don't need to sign in to watch videos. Creating a free Google account lets y
     thumbnailEmoji: '🔔',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What is subscribing?**
-When you subscribe to a YouTube channel, new videos from that channel appear in your Subscriptions feed. It's like choosing which TV channels you want to see — and it's completely free.
-
-**Subscribe to a channel**
-While watching a video, click or tap the channel name below the video (or the round channel logo). On the channel's page, click the red "Subscribe" button. It will change to "Subscribed."
-
-**Turn on notifications**
-After subscribing, tap the bell icon (🔔) next to "Subscribed" and select "All" to get notified when they post a new video.
-
-**View your subscriptions**
-On the YouTube app: tap "Subscriptions" in the bottom menu bar. On YouTube.com: click "Subscriptions" in the left sidebar. You'll see the latest videos from all channels you follow.
-
-**Unsubscribe**
-Go to the channel's page and tap the "Subscribed" button > "Unsubscribe." Or go to your Subscriptions feed, long-press the channel, and select Unsubscribe.
-
-**Good channels to start with**
-Search for: BBC News, ITV News, your local council, hobbies (gardening, cooking, travel), or healthcare topics like "NHS health advice."`
+    steps: [
+      { title: 'Understand what subscribing means', content: 'When you subscribe to a YouTube channel, new videos from that channel show up in your Subscriptions feed automatically. Think of it like choosing your favorite TV channels — except it is completely free. You need a free Google account to subscribe.' },
+      { title: 'Subscribe to a channel', content: 'While watching a video, look below the video for the channel name or the round channel picture. Tap or click it to go to the channel\'s page. Then tap the red "Subscribe" button. It will change to say "Subscribed."', tip: 'To get a notification every time that channel posts a new video, tap the bell icon next to "Subscribed" and choose "All."' },
+      { title: 'View your subscriptions', content: 'On the YouTube app, tap "Subscriptions" at the bottom of the screen. On a computer, click "Subscriptions" in the menu on the left side. You will see the latest videos from every channel you follow, all in one place.' },
+      { title: 'Unsubscribe from a channel', content: 'If you no longer want to see videos from a channel, go to that channel\'s page and tap the "Subscribed" button. Then tap "Unsubscribe." You can also go to your Subscriptions feed, press and hold the channel name, and choose Unsubscribe.' },
+      { title: 'Find good channels to follow', content: 'Try searching for topics you enjoy — cooking, gardening, travel, health tips, or local news. Some popular channels to start with include your local news station, AARP, and How-To Geek for tech help.', tip: 'You can subscribe to as many channels as you want. There is no limit and no cost.' },
+    ]
   },
   {
     slug: 'youtube-on-smart-tv',
@@ -6819,20 +6746,13 @@ Search for: BBC News, ITV News, your local council, hobbies (gardening, cooking,
     thumbnailEmoji: '📺',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Option 1: YouTube app on your smart TV**
-Most smart TVs (Samsung, LG, Sony, Hisense) have YouTube pre-installed. Press the Home button on your remote, look for the YouTube app icon, and open it. Use your remote to search for and play videos.
-
-**If YouTube isn't installed**
-Go to your TV's app store (Smart Hub on Samsung, Content Store on LG, Google Play on Android TV). Search for "YouTube" and download it — it's free.
-
-**Option 2: Chromecast (Google)**
-If you have a Chromecast plugged into your TV's HDMI port, open YouTube on your phone, start a video, and tap the "Cast" icon (rectangle with Wi-Fi waves). Select your Chromecast. The video will play on your TV and you can control it from your phone.
-
-**Option 3: HDMI cable from laptop**
-Connect your laptop to your TV using an HDMI cable. Switch your TV's input to the HDMI channel. Open YouTube in your browser on the laptop and it'll display on the TV screen.
-
-**Sign in to YouTube on your TV**
-On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone or computer, go to youtube.com/activate and enter the code to link your Google account.`
+    steps: [
+      { title: 'Check if YouTube is already on your TV', content: 'Most smart TVs (Samsung, LG, Sony, Hisense, and others) come with YouTube already installed. Press the Home button on your TV remote and look for the YouTube icon. If you see it, open it and you are ready to watch.', tip: 'If YouTube is not on your TV, go to your TV\'s app store (called "Smart Hub" on Samsung, "Content Store" on LG, or "Google Play" on Android TV). Search for "YouTube" and download it for free.' },
+      { title: 'Use your remote to find videos', content: 'Once YouTube is open on your TV, use the arrow buttons on your remote to move around the screen. Select the search icon (magnifying glass) at the top, then use the on-screen keyboard to type what you want to watch. Press Enter or OK on your remote to search.' },
+      { title: 'Cast from your phone (alternative method)', content: 'If you have a Chromecast plugged into your TV, or if your smart TV supports casting, open YouTube on your phone and start a video. Tap the Cast icon (a rectangle with Wi-Fi waves in the corner). Choose your TV from the list. The video will play on the big screen and you can control it from your phone.' },
+      { title: 'Connect a laptop with an HDMI cable (another option)', content: 'Plug one end of an HDMI cable into your laptop and the other end into an HDMI port on your TV. Switch your TV\'s input to the correct HDMI channel using the Input or Source button on your remote. Then open YouTube in your laptop\'s web browser — it will show on the TV screen.' },
+      { title: 'Sign in to your Google account on the TV', content: 'To see your subscriptions and saved videos on the TV, open the YouTube app on your TV and go to Sign In. A code will appear on screen. On your phone or computer, go to youtube.com/activate and type in that code. Your account will be linked to the TV.', warning: 'Only sign in on a TV you own or trust. If you are at someone else\'s home, you can watch YouTube without signing in.' },
+    ]
   },
 
   // ═══════════════════════════════════════════
@@ -6923,24 +6843,12 @@ On the YouTube TV app, go to Sign In. You'll see a code on screen. On your phone
     thumbnailEmoji: '📁',
     publishedAt: '2026-03-31',
     difficulty: 'Intermediate',
-    body: `**Gmail: Labels instead of folders**
-Gmail uses "Labels" (which work like folders). In the left sidebar, scroll down and click "+ Create new label." Name it (e.g., "Bank," "Family," "Medical," "Receipts") and click Create.
-
-**Move an email to a label (Gmail)**
-Select the email by ticking the checkbox. Click the label icon (🏷️) at the top. Choose the label you want. The email is now organized under that label.
-
-**Outlook: Real folders**
-In Outlook, right-click "Inbox" in the left sidebar and choose "New folder." Name your folder and press Enter.
-
-**Move an email to a folder (Outlook)**
-Right-click the email and choose "Move" > select your folder. Or drag and drop the email onto the folder name.
-
-**Create rules to auto-sort emails**
-- Gmail: Open an email > click three dots > "Filter messages like these" > choose "Apply label" > select your label. Future emails from that sender automatically go to that label.
-- Outlook: Home > Rules > Create Rule > set conditions and actions.
-
-**Unsubscribe from mailing lists**
-The fastest way to tidy your inbox: open any newsletter, scroll to the bottom, and click "Unsubscribe." Google also shows an "Unsubscribe" link at the top of many marketing emails.`
+    steps: [
+      { title: 'Create a new folder or label', content: 'In Gmail, scroll down the left sidebar and click "+ Create new label." Name it something clear like "Bank," "Family," "Medical," or "Receipts" and click Create. In Outlook, right-click "Inbox" in the left sidebar and choose "New folder." Type a name and press Enter.', tip: 'Gmail calls folders "Labels" but they work the same way — they help you group related emails together.' },
+      { title: 'Move emails into your folders', content: 'In Gmail, check the box next to an email, then click the label icon at the top of the screen and pick the label you want. In Outlook, right-click the email and choose "Move," then select your folder. You can also drag and drop the email onto the folder name in the sidebar.' },
+      { title: 'Set up rules to sort emails automatically', content: 'In Gmail, open an email, click the three dots menu, and choose "Filter messages like these." Then select "Apply label" and pick your label. Future emails from that sender will go there automatically. In Outlook, go to Home, then Rules, then Create Rule, and set your conditions.' },
+      { title: 'Unsubscribe from emails you do not need', content: 'The fastest way to tidy your inbox is to open any newsletter you no longer want, scroll to the very bottom, and click "Unsubscribe." In Gmail, many marketing emails also show an "Unsubscribe" link right at the top, next to the sender name.', tip: 'Unsubscribing from emails you never read can cut your daily inbox clutter in half.' },
+    ]
   },
   {
     slug: 'unsubscribe-from-emails',
@@ -6953,21 +6861,13 @@ The fastest way to tidy your inbox: open any newsletter, scroll to the bottom, a
     thumbnailEmoji: '🚫',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Unsubscribe from newsletters and marketing emails**
-Legitimate companies (shops, charities, newsletters) are legally required to include an unsubscribe link. Open the email, scroll to the very bottom, and click "Unsubscribe" or "Manage preferences." It may take up to 10 business days to take effect.
-
-**Gmail's built-in unsubscribe button**
-In Gmail, many marketing emails show an "Unsubscribe" link directly at the top of the email, next to the sender's name. Click it for a one-click unsubscribe — much faster than scrolling to the bottom.
-
-**Mark as Spam**
-If an email is genuinely spam (not something you ever signed up for), click the spam/junk button rather than unsubscribing — this trains your email filter. In Gmail: the ! icon. In Outlook: right-click > Junk > Mark as Junk.
-
-**Block a specific sender**
-- Gmail: open the email, click three dots (⋮) > "Block [sender name]"
-- Outlook: right-click > Junk > Block Sender
-
-**Create a filter to automatically delete or archive**
-If spam keeps getting through, create a filter (see the Organize Emails guide) to automatically delete or archive emails from that sender or containing certain words.`
+    steps: [
+      { title: 'Unsubscribe from newsletters and marketing emails', content: 'Open the unwanted email and scroll to the very bottom. Look for a link that says "Unsubscribe" or "Manage preferences" and click it. Legitimate companies are legally required to include this link. It may take up to 10 business days to take effect.' },
+      { title: 'Use Gmail\'s built-in unsubscribe button', content: 'In Gmail, many marketing emails show an "Unsubscribe" link right at the top of the email, next to the sender\'s name. Click it for a quick one-click unsubscribe — much faster than scrolling to the bottom.', tip: 'This top-of-email unsubscribe link only appears on emails Gmail recognizes as marketing or newsletters.' },
+      { title: 'Mark genuine spam as junk', content: 'If an email is real spam (not something you ever signed up for), click the spam or junk button instead of unsubscribing. This trains your email filter to catch similar messages in the future. In Gmail, click the exclamation mark (!) icon. In Outlook, right-click the email, choose Junk, then Mark as Junk.', warning: 'Never click links inside a suspicious spam email. Use the spam button in your email app instead.' },
+      { title: 'Block a specific sender', content: 'In Gmail, open the email, click the three dots menu, and choose "Block" followed by the sender\'s name. In Outlook, right-click the email, choose Junk, then Block Sender. You will no longer receive emails from that address.' },
+      { title: 'Create a filter to automatically delete or archive', content: 'If unwanted emails keep getting through, you can set up a filter. In Gmail, open an email from the sender, click the three dots menu, and choose "Filter messages like these." Then set it to automatically delete or archive those messages. In Outlook, go to Rules and create a rule for that sender.' },
+    ]
   },
   {
     slug: 'spot-phishing-email',
@@ -6999,27 +6899,13 @@ If spam keeps getting through, create a filter (see the Organize Emails guide) t
     thumbnailEmoji: '📱',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Download the Gmail app**
-- iPhone: search "Gmail" in the App Store and tap Get (it's free)
-- Android: Gmail is usually pre-installed. If not, find it in the Play Store
-
-**Sign in with your Google account**
-Open the Gmail app. Tap "Sign in." Enter your Gmail address (yourname@gmail.com) and password. Tap "Next." Your emails will start loading within a minute.
-
-**Add a non-Gmail account (Outlook, Yahoo, etc.)**
-You can also manage non-Gmail accounts in the Gmail app. Tap your profile photo in the top right > "Add another account" > choose your email provider > enter your email address and password.
-
-**Set up notifications**
-Gmail will ask if you want to receive notifications for new emails. Tap "Allow." You can manage notification settings later in your phone's Settings.
-
-**Read, reply, and compose**
-- Tap an email to open it
-- Tap the left-pointing arrow (↩) to reply
-- Tap the right-pointing arrow (→) to forward
-- Tap the pencil (✏️) icon at the bottom right to compose a new email
-
-**Keep your inbox tidy**
-Swipe left on an email to archive it (hide from inbox but keep it). Swipe right to mark as read/unread. Long-press to select multiple emails.`
+    steps: [
+      { title: 'Download the Gmail app', content: 'On an iPhone, open the App Store, search for "Gmail," and tap Get — it is free. On an Android phone, Gmail is usually already installed. If you do not see it, open the Play Store and search for "Gmail" to download it.' },
+      { title: 'Sign in with your Google account', content: 'Open the Gmail app. Tap "Sign in." Type your Gmail address (for example, yourname@gmail.com) and tap Next. Enter your password and tap Next again. Your emails will start loading within a minute.' },
+      { title: 'Set up notifications', content: 'Gmail will ask if you want to receive notifications when new emails arrive. Tap "Allow" so you do not miss important messages. You can change this later in your phone\'s Settings app.', tip: 'If you get too many notifications, you can set Gmail to only notify you about emails marked as important. Look in the Gmail app settings under Notifications.' },
+      { title: 'Read, reply, and write new emails', content: 'Tap any email to open it. To reply, tap the arrow pointing left at the bottom of the message. To forward, tap the arrow pointing right. To write a brand new email, tap the pencil icon in the bottom right corner of the screen.' },
+      { title: 'Keep your inbox tidy', content: 'Swipe an email to the left to archive it — this hides it from your inbox but keeps it saved. Swipe right to mark it as read or unread. To select several emails at once, press and hold on one email, then tap the others.' },
+    ]
   },
 
   // ═══════════════════════════════════════════
@@ -7150,25 +7036,13 @@ Swipe left on an email to archive it (hide from inbox but keep it). Swipe right 
     thumbnailEmoji: '🎬',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What you need**
-- A smart TV, or a streaming device (Roku, Amazon Fire Stick, Apple TV, Chromecast) plugged into your TV
-- A broadband internet connection (Netflix recommends at least 5 Mbps for standard definition, 15 Mbps for HD)
-- A Netflix account (plans start from around $4.99/month)
-
-**On a Smart TV**
-Press the Home or Menu button on your remote. Look for the Netflix app — it's pre-installed on most Samsung, LG, Sony, and Panasonic TVs from 2012 onwards. If you don't see it, go to the TV's App Store and search for "Netflix" to download it free.
-
-**Sign in to Netflix**
-Open the Netflix app. Select "Sign In." Use your TV remote to enter your email address and password. Netflix may also give you a code to enter at netflix.com/tv8 on your phone to sign in without typing.
-
-**Browse and watch**
-Use your remote's directional buttons to browse categories. Press OK or Enter to select a show. Press the Play button or OK again to start watching.
-
-**Netflix on an Amazon Fire Stick**
-Netflix comes pre-installed. From the Fire Stick home screen, select Netflix and sign in.
-
-**Parental controls**
-In Netflix settings, you can create a Kids profile that only shows age-appropriate content, or set a PIN to restrict access to mature content.`
+    steps: [
+      { title: 'Check what you need before you start', content: 'You will need a smart TV (or a streaming device like a Roku, Amazon Fire Stick, Apple TV, or Chromecast plugged into your TV), a broadband internet connection, and a Netflix account. Netflix plans start from around $4.99 per month.' },
+      { title: 'Find and open the Netflix app on your TV', content: 'Press the Home or Menu button on your TV remote. Look for the Netflix app — it comes pre-installed on most Samsung, LG, Sony, and Panasonic smart TVs made after 2012. If you do not see it, go to your TV\'s App Store and search for "Netflix" to download it for free.', tip: 'If you are using an Amazon Fire Stick, Netflix is already installed. Look for it on the Fire Stick home screen.' },
+      { title: 'Sign in to your Netflix account', content: 'Open the Netflix app and select "Sign In." Use your TV remote to type your email address and password. If typing with the remote is difficult, Netflix may show a code on screen — go to netflix.com/tv on your phone or computer and enter the code to sign in without typing.' },
+      { title: 'Browse and start watching', content: 'Use the arrow buttons on your remote to scroll through categories and shows. Press OK or Enter to select something. Press OK or Play again to start watching. Use the back button to return to browsing.' },
+      { title: 'Set up parental controls (optional)', content: 'If children use your TV, go to Netflix Settings and create a Kids profile — this only shows age-appropriate content. You can also set a PIN to stop anyone from watching mature-rated shows without permission.' },
+    ]
   },
   {
     slug: 'set-up-roku',
@@ -7181,24 +7055,13 @@ In Netflix settings, you can create a Kids profile that only shows age-appropria
     thumbnailEmoji: '📺',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**What's in the box?**
-Your Roku comes with: the Roku stick or box, an HDMI cable or the stick itself (which plugs directly into the TV), a remote control, and batteries.
-
-**Connect to your TV**
-Plug the Roku into a spare HDMI port on your TV. Plug the Roku's power cable into the mains. Switch your TV to the correct HDMI input using your TV remote (usually an "Input" or "Source" button).
-
-**Follow the on-screen setup**
-Roku will walk you through the setup automatically:
-1. Choose your language
-2. Connect to your home Wi-Fi — enter your Wi-Fi password using the on-screen keyboard
-3. The Roku will update its software (this takes a few minutes)
-4. You'll be asked to create a free Roku account or sign in at roku.com/link
-
-**Add channels (apps)**
-From the Roku home screen, select "Streaming Channels" to browse the Channel Store. Free channels include BBC iPlayer, ITV Hub, All4, YouTube. Paid services like Netflix and Disney+ require their own subscriptions.
-
-**The Roku remote**
-The remote has dedicated buttons for popular services. Use the directional pad to navigate and OK to select. The * button opens settings for whatever you're watching. The home button always takes you back to the main menu.`
+    steps: [
+      { title: 'Unbox and check the contents', content: 'Your Roku comes with the Roku stick or box, an HDMI cable (or the stick plugs directly into the TV), a remote control, and batteries. Make sure you have all the pieces before you start.' },
+      { title: 'Connect the Roku to your TV', content: 'Plug the Roku into a spare HDMI port on the back or side of your TV. Plug the Roku\'s power cable into a wall outlet. Then use your TV remote to switch to the correct HDMI input — look for a button labeled "Input" or "Source" on your TV remote.' },
+      { title: 'Follow the on-screen setup', content: 'The Roku will guide you through setup step by step. First, choose your language. Next, connect to your home Wi-Fi by selecting your network name and typing your Wi-Fi password. The Roku will then update its software, which takes a few minutes. Finally, you will create a free Roku account or sign in at roku.com/link.', tip: 'Have your Wi-Fi password written down before you start — you will need to type it using the on-screen keyboard.' },
+      { title: 'Add channels (apps) to watch', content: 'From the Roku home screen, select "Streaming Channels" to browse the Channel Store. Free channels include YouTube, Pluto TV, and Tubi. Paid services like Netflix and Disney+ are also available but require their own subscriptions.' },
+      { title: 'Learn the Roku remote basics', content: 'Use the arrow buttons to move around the screen and press OK to select. The Home button always takes you back to the main menu. The star (*) button opens settings for whatever you are watching. Some remotes also have shortcut buttons for popular apps like Netflix.' },
+    ]
   },
   {
     slug: 'use-amazon-fire-stick',
@@ -7211,26 +7074,13 @@ The remote has dedicated buttons for popular services. Use the directional pad t
     thumbnailEmoji: '🔥',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Plug it in**
-Insert the Fire Stick into an HDMI port on your TV. Plug the power adapter into the mains and connect it to the Fire Stick. Switch your TV to that HDMI input.
-
-**Pair the remote**
-The remote usually pairs automatically. If not, press and hold the Home button (🏠) for 10 seconds. Insert batteries if needed.
-
-**Connect to Wi-Fi**
-Follow the on-screen setup to connect to your home Wi-Fi network. Enter your password using the on-screen keyboard.
-
-**Sign in with your Amazon account**
-Enter your Amazon email and password. If you bought the Fire Stick from Amazon while logged in, it may already be registered to your account.
-
-**Find and watch content**
-The home screen shows apps across the top: Netflix, BBC iPlayer, Prime Video, YouTube, ITV Hub, etc. Use the directional pad to navigate. Press the magnifying glass (🔍) at the top to search across all services at once.
-
-**Alexa on Fire Stick**
-Press the microphone button on the remote and say "Search for [show name]" or "Play [show name] on Netflix." Alexa can also control volume, play/pause, and answer general questions.
-
-**Parental controls**
-Settings > Parental Controls — set a PIN to restrict purchases or control what content is accessible.`
+    steps: [
+      { title: 'Plug the Fire Stick into your TV', content: 'Insert the Fire Stick into an HDMI port on the back or side of your TV. Plug the power adapter into a wall outlet and connect the other end to the Fire Stick. Then use your TV remote to switch to that HDMI input — look for a button labeled "Input" or "Source."' },
+      { title: 'Pair the remote and connect to Wi-Fi', content: 'The Fire Stick remote usually pairs with the device automatically. If it does not, press and hold the Home button for 10 seconds. Make sure batteries are inserted. Then follow the on-screen setup to connect to your home Wi-Fi network by selecting your network and typing your password.', tip: 'Have your Wi-Fi password ready before you start. You will need to type it using the on-screen keyboard.' },
+      { title: 'Sign in with your Amazon account', content: 'Enter your Amazon email address and password when prompted. If you bought the Fire Stick from Amazon while logged into your account, it may already be registered to you and this step will be done automatically.' },
+      { title: 'Find and watch shows', content: 'The home screen shows popular apps across the top, including Netflix, Prime Video, YouTube, and more. Use the arrow buttons on the remote to browse. To search across all your streaming services at once, select the magnifying glass icon at the top of the screen and type or speak what you are looking for.' },
+      { title: 'Use Alexa voice search and set parental controls', content: 'Press and hold the microphone button on the remote and say something like "Search for comedy movies" or "Play Stranger Things on Netflix." Alexa can also pause, play, and control the volume. To set parental controls, go to Settings, then Parental Controls, and create a PIN to restrict purchases or block certain content.' },
+    ]
   },
   {
     slug: 'cast-phone-to-tv',
@@ -7243,24 +7093,13 @@ Settings > Parental Controls — set a PIN to restrict purchases or control what
     thumbnailEmoji: '📡',
     publishedAt: '2026-03-31',
     difficulty: 'Intermediate',
-    body: `**Option 1: Chromecast (Android phones + Chrome browser)**
-1. Plug a Chromecast into your TV's HDMI port and set it up using the Google Home app
-2. Open a supported app (YouTube, Netflix, Google Photos) on your Android phone
-3. Tap the Cast icon (rectangle with Wi-Fi waves) in the app
-4. Select your Chromecast from the list
-5. The content will play on your TV. Your phone becomes the remote control.
-
-**Option 2: AirPlay (iPhone + Apple TV or AirPlay-compatible TV)**
-1. Make sure your iPhone and Apple TV (or compatible smart TV) are on the same Wi-Fi network
-2. On your iPhone, open the app you want to cast (or open Photos/Videos)
-3. Tap the Share icon (box with arrow) or the AirPlay icon (rectangle with triangle at bottom)
-4. Select your Apple TV or TV from the list
-
-**Option 3: Screen Mirroring on Android (Miracast)**
-On many Samsung, LG, and other Android phones: swipe down for quick settings, look for "Smart View," "Screen Mirror," or "Cast." Tap it and select your TV. This mirrors your entire phone screen.
-
-**Option 4: HDMI adapter**
-For any phone: buy a USB-C to HDMI or Lightning to HDMI adapter. Connect your phone to the TV via HDMI. Switch the TV input and your phone screen appears on the TV.`
+    steps: [
+      { title: 'Make sure your phone and TV are on the same Wi-Fi network', content: 'Before you can cast wirelessly, both your phone and your TV (or streaming device) need to be connected to the same home Wi-Fi network. Check your phone\'s Wi-Fi settings and your TV\'s network settings to confirm they match.', warning: 'If your phone is on a different Wi-Fi network than your TV, casting will not work. This is the most common reason it fails.' },
+      { title: 'Cast from an Android phone using Chromecast', content: 'If you have a Chromecast plugged into your TV, open a supported app on your phone (like YouTube, Netflix, or Google Photos). Look for the Cast icon — it looks like a rectangle with Wi-Fi waves in the corner. Tap it and select your Chromecast from the list. The video or photo will appear on your TV, and your phone becomes the remote control.' },
+      { title: 'Cast from an iPhone using AirPlay', content: 'On your iPhone, open the app or photo you want to show on the TV. Tap the Share icon (a box with an arrow pointing up) or the AirPlay icon (a rectangle with a small triangle at the bottom). Select your Apple TV or AirPlay-compatible smart TV from the list that appears.' },
+      { title: 'Mirror your entire phone screen (Android)', content: 'On Samsung, LG, and many other Android phones, swipe down from the top of the screen to open quick settings. Look for "Smart View," "Screen Mirror," or "Cast" and tap it. Select your TV from the list. Everything on your phone screen will now show on the TV.' },
+      { title: 'Use an HDMI adapter as a backup option', content: 'If wireless casting is not working, you can connect your phone to the TV with a cable. Buy a USB-C to HDMI adapter (for most Android phones) or a Lightning to HDMI adapter (for iPhones). Plug one end into your phone and the other into your TV\'s HDMI port. Switch the TV to that HDMI input, and your phone screen will appear on the TV.', tip: 'A wired connection using an HDMI adapter always gives the most reliable picture with no lag or buffering.' },
+    ]
   },
   {
     slug: 'turn-on-subtitles-netflix',
@@ -7273,23 +7112,12 @@ For any phone: buy a USB-C to HDMI or Lightning to HDMI adapter. Connect your ph
     thumbnailEmoji: '💬',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**While watching on a TV**
-Press any button on your remote to show the playback controls. Look for a speech bubble or "CC" icon, or a "Subtitles & Audio" option. Select it, then choose "English" (or your preferred language) from the subtitle options.
-
-**While watching on a computer**
-Click the screen to show playback controls. Click the speech bubble icon (💬) in the bottom right. Choose a subtitle language.
-
-**While watching on a phone or tablet**
-Tap the screen to show controls. Tap the speech bubble icon or "Audio & Subtitles" button. Select your preferred subtitle language.
-
-**Change subtitle appearance**
-You can make subtitles larger and easier to read. On a TV: go to Netflix Settings > Subtitle Appearance. On a phone: Netflix app > More (☰) > Subtitle Appearance. You can change font size, color, background, and more.
-
-**Set subtitles as default**
-Netflix doesn't save your subtitle preference globally. You'll need to turn them on for each show. However, your preference is remembered within a show.
-
-**Subtitles for the deaf and hard-of-hearing (SDH)**
-Look for "English [CC]" or "English [SDH]" — these include descriptions of sounds and music, not just spoken dialogue.`
+    steps: [
+      { title: 'Turn on subtitles while watching on a TV', content: 'Press any button on your TV remote to show the playback controls at the bottom of the screen. Look for a speech bubble icon, a "CC" icon, or a "Subtitles & Audio" option. Select it, then choose "English" (or your preferred language) from the list of subtitle options.' },
+      { title: 'Turn on subtitles on a computer, phone, or tablet', content: 'On a computer, click anywhere on the screen to show the playback controls, then click the speech bubble icon in the bottom right corner and choose a subtitle language. On a phone or tablet, tap the screen to show controls, then tap the speech bubble icon or the "Audio & Subtitles" button and pick your language.' },
+      { title: 'Make subtitles larger and easier to read', content: 'You can change how subtitles look to make them more readable. On a TV, go to Netflix Settings, then Subtitle Appearance. On a phone, open the Netflix app, tap More (the three-line menu), then Subtitle Appearance. You can change the font size, color, and background to whatever is most comfortable for your eyes.', tip: 'A yellow or white font on a black background is often the easiest combination to read, especially in bright rooms.' },
+      { title: 'Choose subtitles designed for the deaf and hard-of-hearing', content: 'When selecting subtitles, look for options labeled "English [CC]" or "English [SDH]." These include descriptions of important sounds and music (like "door slams" or "suspenseful music"), not only the spoken words. This gives you a fuller understanding of what is happening in the show.' },
+    ]
   },
 
   // ═══════════════════════════════════════════
@@ -7307,30 +7135,31 @@ Look for "English [CC]" or "English [SDH]" — these include descriptions of sou
     thumbnailEmoji: '🦠',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Windows Security is built in and free**
-Windows 11 includes Windows Security (formerly Windows Defender), a free antivirus program that runs automatically in the background. You don't need to pay for separate antivirus software. Note: Windows 10 reached end of support on October 14, 2025 — if you are still on Windows 10, upgrading to Windows 11 is strongly recommended for continued security updates.
-
-**Run a quick scan**
-Click Start, search for "Windows Security," and open it. Click "Virus & threat protection." Click "Quick scan." Windows will scan the most common locations where viruses hide — this takes 1-5 minutes.
-
-**Run a full scan**
-For a thorough check: in Virus & threat protection, click "Scan options" > "Full scan" > "Scan now." A full scan checks every file on your computer and can take 30-60 minutes. Best done overnight.
-
-**What to do if a threat is found**
-If Windows Security finds something, it will show a notification and a red warning on screen. Click "Start actions" and follow the recommendations. Windows will usually quarantine or remove the threat automatically.
-
-**Keep Windows Security updated**
-Windows Security updates its threat database automatically via Windows Update. Make sure Windows Update is enabled: Start > Settings > Windows Update.
-
-**Signs your PC might have a virus**
-- Running noticeably slower than usual
-- Unexpected pop-up ads appearing
-- Browser homepage changed without you doing it
-- New programs appearing you didn't install
-- Antivirus has been disabled
-
-**Official help**
-Microsoft's guide to running Windows Security scans is at support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39574f1fd. For a video walkthrough, watch "How to Run a Virus Scan on Windows 11" on YouTube — search that phrase to find Microsoft's official tutorial.`
+    steps: [
+      {
+        title: 'Know that Windows has free virus protection built in',
+        content: 'Windows 11 includes a free antivirus program called Windows Security (it used to be called Windows Defender). It runs automatically in the background, so you do not need to buy separate antivirus software. If you are still using Windows 10, you should upgrade to Windows 11 — Microsoft stopped providing security updates for Windows 10 on October 14, 2025.',
+        tip: 'Windows Security is already installed and turned on — you do not need to download or install anything extra.'
+      },
+      {
+        title: 'Run a quick virus scan',
+        content: 'Click the Start button (the Windows icon in the bottom left corner). Type "Windows Security" and click it when it appears. Click "Virus & threat protection." Then click the "Quick scan" button. Windows will check the most common places where viruses tend to hide. This usually takes between 1 and 5 minutes.'
+      },
+      {
+        title: 'Run a full scan for a deeper check',
+        content: 'If you want a more thorough scan, go to Virus & threat protection and click "Scan options." Select "Full scan" and then click "Scan now." A full scan checks every single file on your computer, so it can take 30 to 60 minutes. It is best to start this when you will not need your computer for a while — overnight is a good time.',
+        tip: 'A quick scan is fine for regular checkups. Use a full scan if your computer is acting strangely or you suspect a problem.'
+      },
+      {
+        title: 'Handle any threats that are found',
+        content: 'If Windows Security finds a virus or suspicious file, it will show you a notification with a red warning. Click "Start actions" and follow the steps on screen. In most cases, Windows will automatically quarantine (isolate) or remove the threat for you.\n\nWatch for these signs that your PC might have a virus: it runs much slower than usual, unexpected pop-up ads appear, your browser homepage changes on its own, new programs appear that you did not install, or your antivirus gets turned off by itself.',
+        warning: 'If Windows Security finds something serious, do not ignore the warning. Let it finish removing the threat, and consider changing your important passwords afterward.'
+      },
+      {
+        title: 'Keep your virus protection up to date',
+        content: 'Windows Security updates its list of known viruses automatically through Windows Update. To make sure this is working, click Start, then Settings, then Windows Update, and check that updates are turned on. For more help, visit support.microsoft.com and search for "Windows Security." You can also search YouTube for "How to Run a Virus Scan on Windows 11" to find a video walkthrough.'
+      }
+    ]
   },
   {
     slug: 'clear-browser-cache-windows',
@@ -7343,31 +7172,30 @@ Microsoft's guide to running Windows Security scans is at support.microsoft.com/
     thumbnailEmoji: '🧹',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Why clear your cache?**
-Your browser saves copies of websites (images, scripts) to load them faster next time. But this stored data (called cache) can become outdated and cause pages to load incorrectly, or slow down your browser.
-
-**Google Chrome**
-Press Ctrl+Shift+Delete. A "Clear browsing data" window opens. Choose the time range ("All time" for a full clear). Tick "Browsing history," "Cookies and other site data," and "Cached images and files." Click "Clear data."
-
-**Microsoft Edge**
-Press Ctrl+Shift+Delete. Tick the same options as Chrome. Click "Clear now."
-
-**Mozilla Firefox**
-Press Ctrl+Shift+Delete. Choose "Everything" from the time range dropdown. Tick all boxes. Click "OK."
-
-**Safari (Mac)**
-History menu > Clear History. Choose "all history" from the dropdown. Click "Clear History."
-
-**What happens after clearing**
-- Websites will load slightly slower the first time (they need to rebuild the cache)
-- You'll be logged out of most websites — have your passwords ready
-- Pages that weren't loading correctly should now load fresh
-
-**Quick Tip: Use InPrivate/Incognito mode**
-Press Ctrl+Shift+N (Chrome/Edge) or Ctrl+Shift+P (Firefox) for a private browsing window. Nothing is saved — no history, no cache, no cookies. Good for one-off visits to websites you don't want remembered.
-
-**Official help**
-Google's guide for clearing Chrome data is at support.google.com/chrome/answer/2392709. Microsoft's Edge guide is at support.microsoft.com/en-us/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943. For a video tutorial, search "How to clear browser cache Chrome" on YouTube.`
+    steps: [
+      {
+        title: 'Understand why clearing your cache helps',
+        content: 'Your browser saves copies of websites you visit (things like images and page layouts) so they load faster next time. This saved data is called the "cache." Over time, these saved copies can become outdated and cause websites to look wrong, load slowly, or show old information. Clearing the cache forces your browser to download fresh copies of everything.',
+        tip: 'If a website looks broken or will not load properly, clearing your cache is one of the first things to try.'
+      },
+      {
+        title: 'Clear the cache in Google Chrome',
+        content: 'Hold down the Ctrl key, then hold the Shift key, then press the Delete key (all three together: Ctrl+Shift+Delete). A window called "Clear browsing data" will open. At the top, change the time range to "All time" if you want a full clear. Make sure these three boxes are checked: "Browsing history," "Cookies and other site data," and "Cached images and files." Then click the blue "Clear data" button.'
+      },
+      {
+        title: 'Clear the cache in Microsoft Edge or Firefox',
+        content: 'In Microsoft Edge, press Ctrl+Shift+Delete. Check the same boxes as Chrome (history, cookies, cached files) and click "Clear now."\n\nIn Mozilla Firefox, press Ctrl+Shift+Delete. Choose "Everything" from the time range dropdown at the top. Check all the boxes and click "OK."\n\nOn a Mac using Safari, click the History menu at the top of the screen, then click "Clear History." Choose "all history" from the dropdown and click "Clear History."'
+      },
+      {
+        title: 'Know what to expect after clearing',
+        content: 'After you clear your cache, websites may load a little slower the first time you visit them — this is normal because your browser needs to download everything fresh. You will also be logged out of most websites, so have your passwords ready before you start. Any pages that were not loading correctly should now work properly.',
+        warning: 'You will be signed out of most websites after clearing your cache and cookies. Make sure you know your passwords before you begin.'
+      },
+      {
+        title: 'Try private browsing for a quick alternative',
+        content: 'If you do not want to clear your entire cache, you can open a private browsing window instead. In Chrome or Edge, press Ctrl+Shift+N. In Firefox, press Ctrl+Shift+P. In this special window, nothing is saved — no history, no cache, no cookies. It is useful when you want to visit a website without leaving any trace. For more help, visit support.google.com/chrome/answer/2392709 for Chrome or search YouTube for "How to clear browser cache."'
+      }
+    ]
   },
   {
     slug: 'screenshot-windows-quick',
@@ -7380,23 +7208,30 @@ Google's guide for clearing Chrome data is at support.google.com/chrome/answer/2
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Method 1: Snipping Tool (Windows 11) — recommended**
-Press Win+Shift+S. Your screen will dim and a small toolbar appears at the top. Choose "Rectangular Snip" to drag and select any area of the screen. The screenshot copies to your clipboard and saves automatically. Click the notification to open and edit it.
-
-**Method 2: Print Screen key (older method)**
-Press the PrtSc (Print Screen) key on your keyboard. This copies the entire screen to your clipboard. Open Paint (search in Start), press Ctrl+V to paste, then Ctrl+S to save.
-
-**Method 3: Screenshot of just one window**
-Click the window you want to capture to make it active. Press Alt+PrtSc. This copies just that window to your clipboard. Paste into Paint or another program.
-
-**Method 4: Win+PrtSc (auto-save)**
-Press the Windows key and PrtSc at the same time. The screen will flash briefly. The screenshot is automatically saved to: Pictures > Screenshots folder.
-
-**Finding your screenshots**
-Open File Explorer, go to Pictures > Screenshots. All screenshots taken with Win+PrtSc are saved here automatically.
-
-**Snipping Tool app**
-For more control: search "Snipping Tool" in the Start menu. You can set a timer (useful for capturing menus that disappear), annotate screenshots, and save in different formats.`
+    steps: [
+      {
+        title: 'Use the Snipping Tool shortcut (recommended for Windows 11)',
+        content: 'Hold the Windows key, then hold the Shift key, then press the S key (all three together: Win+Shift+S). Your screen will go slightly dim and a small toolbar will appear at the top. Click "Rectangular Snip" and then drag your mouse to draw a box around the part of the screen you want to capture. When you let go, the screenshot is copied to your clipboard and a notification pops up. Click the notification to open, edit, or save it.',
+        tip: 'This is the fastest and most flexible way to take a screenshot on Windows 11. It lets you capture any part of the screen you choose.'
+      },
+      {
+        title: 'Use the Print Screen key to capture the whole screen',
+        content: 'Look for a key labeled "PrtSc" or "Print Screen" on your keyboard (usually in the top right area). Press it once. This copies a picture of your entire screen to the clipboard. To save it, open Paint (type "Paint" in the Start menu search), press Ctrl+V to paste the image, then press Ctrl+S to save it as a file.'
+      },
+      {
+        title: 'Capture a single window',
+        content: 'Click on the window you want to capture to make sure it is in front. Then hold the Alt key and press PrtSc. This copies only that one window to your clipboard — not the whole screen. You can paste it into Paint, an email, or a document using Ctrl+V.'
+      },
+      {
+        title: 'Auto-save a screenshot with one shortcut',
+        content: 'Press the Windows key and PrtSc at the same time. Your screen will flash briefly to confirm the screenshot was taken. The image is saved automatically to your Pictures folder, inside a subfolder called "Screenshots." Open File Explorer and go to Pictures then Screenshots to find all your saved screenshots.',
+        tip: 'This method is great when you want to save many screenshots quickly without opening any other program.'
+      },
+      {
+        title: 'Use the Snipping Tool app for more options',
+        content: 'For extra features, type "Snipping Tool" in the Start menu and open the app. From here you can set a timer before the screenshot is taken (helpful for capturing menus that close when you click away), draw on your screenshot to highlight something, and save in different file formats. This is the best option when you need more control over your screenshots.'
+      }
+    ]
   },
   {
     slug: 'zip-files-windows',
@@ -7409,24 +7244,26 @@ For more control: search "Snipping Tool" in the Start menu. You can set a timer 
     thumbnailEmoji: '🗜️',
     publishedAt: '2026-03-31',
     difficulty: 'Intermediate',
-    body: `**What is a zip file?**
-A zip file is a "container" that holds multiple files compressed into a smaller size. It makes it easier to send several documents or photos as one attachment.
-
-**Create a zip file (Windows)**
-1. Open File Explorer and navigate to the files or folder you want to compress
-2. Select the files you want (hold Ctrl and click each one, or Ctrl+A for all)
-3. Right-click the selected files
-4. Choose "Compress to ZIP file" (Windows 11 and later) — on Windows 10 this shows as "Send to" > "Compressed (zipped) folder" instead
-5. A new .zip file appears in the same folder. Rename it something descriptive.
-
-**Extract (unzip) a zip file**
-If someone sends you a zip file: double-click it to see its contents. Or right-click > "Extract All" > choose where to save the extracted files > click Extract.
-
-**Email attachment size limits**
-Most email services allow attachments up to 25MB. If your zip file is larger, use Google Drive or WeTransfer (free) instead — upload the file there and share a link.
-
-**Password-protect a zip file**
-Windows doesn't support password-protecting zip files natively, but you can download the free 7-Zip app from 7-zip.org to create password-protected archives.`
+    steps: [
+      {
+        title: 'Understand what a zip file is',
+        content: 'A zip file is like a digital container that holds multiple files squeezed together into one smaller package. Instead of attaching five separate photos to an email, you can put them all into one zip file and send that single file. The files inside get compressed (made smaller), which also helps with email size limits.'
+      },
+      {
+        title: 'Create a zip file on Windows',
+        content: 'Open File Explorer (the yellow folder icon on your taskbar). Navigate to the files or folder you want to compress. To select multiple files, hold down the Ctrl key and click each file you want to include. Once your files are highlighted, right-click on any one of them. On Windows 11, choose "Compress to ZIP file." On Windows 10, choose "Send to" and then "Compressed (zipped) folder." A new zip file will appear in the same folder — you can rename it to something descriptive by right-clicking it and choosing "Rename."',
+        tip: 'To select all files in a folder at once, press Ctrl+A. To select a range of files, click the first one, then hold Shift and click the last one.'
+      },
+      {
+        title: 'Open (extract) a zip file someone sent you',
+        content: 'If someone sends you a zip file by email or you download one, you can double-click it to see what is inside. To extract (unzip) the files so you can use them normally, right-click the zip file and choose "Extract All." Pick a location to save the files (your Desktop or Documents folder works well) and click "Extract." The individual files will appear in the location you chose.'
+      },
+      {
+        title: 'Know the email size limits',
+        content: 'Most email services (Gmail, Outlook, Yahoo) allow attachments up to 25 megabytes (MB). If your zip file is larger than that, you will need to use a file-sharing service instead. Google Drive and WeTransfer (wetransfer.com) are both free — upload your file there and send the recipient a link to download it.',
+        tip: 'To check a file\'s size, right-click it in File Explorer and choose "Properties." The size is shown near the top of the window.'
+      }
+    ]
   },
   {
     slug: 'windows-update-check',
@@ -7439,23 +7276,31 @@ Windows doesn't support password-protecting zip files natively, but you can down
     thumbnailEmoji: '🔄',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Why updates matter**
-Windows updates fix security vulnerabilities — gaps in the software that hackers could exploit. They also fix bugs and can improve your computer's performance. It's important to install them regularly.
-
-**Check for updates now**
-Click Start > Settings (⚙️) > Windows Update. Click "Check for updates." Windows will look for any available updates.
-
-**Install available updates**
-If updates are found, click "Download & install." Some updates install in the background; others need a restart. Let the computer restart when prompted — don't skip it.
-
-**Enable automatic updates**
-In Windows Update settings, click "Advanced options" and make sure "Receive updates for other Microsoft products" is on. Under "Active hours," set the times you use your computer — Windows will schedule restarts outside of those hours.
-
-**Driver updates**
-Windows Update also installs updates for your printer, graphics card, and other hardware. These are included automatically — you don't need to update drivers separately in most cases.
-
-**How long do updates take?**
-Most monthly updates take 5-15 minutes. Major feature updates (twice a year) can take 30-60 minutes. It's best to start an update when you won't need the computer for a while.`
+    steps: [
+      {
+        title: 'Understand why updates matter',
+        content: 'Windows updates fix security holes that hackers could use to break into your computer. They also fix problems (bugs) and can make your computer run better. Keeping Windows updated is one of the most important things you can do to stay safe online.',
+        tip: 'Think of updates like changing the locks on your front door. They keep the bad guys out by fixing weaknesses before anyone can take advantage of them.'
+      },
+      {
+        title: 'Check for updates now',
+        content: 'Click the Start button (the Windows icon in the bottom left corner). Click the gear-shaped Settings icon. Click "Windows Update" in the left-hand menu. Then click the "Check for updates" button. Windows will search for any new updates that are available for your computer.'
+      },
+      {
+        title: 'Download and install the updates',
+        content: 'If Windows finds any updates, you will see a "Download & install" button — click it. Some smaller updates install in the background while you keep working. Larger updates will ask you to restart your computer. When you see the restart prompt, save any open work and let the computer restart. Do not skip the restart — the update will not finish until you do.',
+        warning: 'Do not turn off or unplug your computer while updates are installing. Let the process finish completely, even if it takes a few minutes.'
+      },
+      {
+        title: 'Turn on automatic updates',
+        content: 'To make sure you never miss an important update, go to Windows Update settings and click "Advanced options." Make sure "Receive updates for other Microsoft products" is turned on. Under "Active hours," set the times when you normally use your computer — Windows will schedule restarts outside of those times so it does not interrupt you. Windows Update also installs updates for your printer, graphics card, and other hardware automatically.'
+      },
+      {
+        title: 'Know how long updates take',
+        content: 'Regular monthly updates usually take between 5 and 15 minutes. Bigger feature updates (which come about twice a year) can take 30 to 60 minutes. It is best to start a big update when you will not need your computer for a while — before lunch, before bed, or when you step away for an errand.',
+        tip: 'You can keep using your computer while updates download. The restart is the only part that interrupts your work.'
+      }
+    ]
   },
 
   // ═══════════════════════════════════════════
@@ -7473,23 +7318,30 @@ Most monthly updates take 5-15 minutes. Major feature updates (twice a year) can
     thumbnailEmoji: '📸',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Full screen screenshot**
-Press Cmd+Shift+3. A thumbnail appears in the bottom right corner of your screen. Click it to edit, or wait and it saves automatically to your desktop as a .png file.
-
-**Select a portion of the screen**
-Press Cmd+Shift+4. Your cursor turns into crosshairs. Click and drag to select the area you want to capture. Release the mouse to take the screenshot. It saves to your desktop.
-
-**Screenshot of a specific window**
-Press Cmd+Shift+4, then press the Space bar. Your cursor turns into a camera. Click on any window to capture just that window (with a subtle shadow). Great for capturing dialogue boxes.
-
-**Screenshot toolbar (macOS Mojave and later)**
-Press Cmd+Shift+5. A small toolbar appears at the bottom of the screen with options for full screen, window, or selected area — and also screen recording. Useful if you can't remember the other shortcuts.
-
-**Copy to clipboard instead of saving**
-Add Ctrl to any of the above shortcuts (e.g., Ctrl+Cmd+Shift+3) to copy the screenshot to your clipboard instead of saving it. You can then paste it directly into an email or document with Cmd+V.
-
-**Finding your screenshots**
-Screenshots save to the Desktop by default. In Cmd+Shift+5 options, you can change the save location.`
+    steps: [
+      {
+        title: 'Capture your entire screen',
+        content: 'Hold down the Cmd key, then hold the Shift key, then press the number 3 key (all three together: Cmd+Shift+3). You will see a small thumbnail appear briefly in the bottom right corner of your screen. If you click it, you can edit the screenshot. If you do nothing, it saves automatically to your Desktop as an image file.',
+        tip: 'This is the fastest way to capture everything on your screen at once.'
+      },
+      {
+        title: 'Capture a selected area of the screen',
+        content: 'Press Cmd+Shift+4. Your mouse cursor will turn into a small crosshair. Click and drag to draw a box around the part of the screen you want to capture. When you release the mouse button, the screenshot is taken and saved to your Desktop.'
+      },
+      {
+        title: 'Capture a single window',
+        content: 'Press Cmd+Shift+4, and then press the Space bar. Your cursor will change into a small camera icon. Move the camera over the window you want to capture — it will highlight in blue. Click on it to take a screenshot of that window only. This is great for capturing a single app or dialog box without the rest of your screen.'
+      },
+      {
+        title: 'Use the screenshot toolbar for more options',
+        content: 'Press Cmd+Shift+5. A small toolbar will appear at the bottom of your screen with buttons for capturing the full screen, a window, or a selected area. It also has a screen recording option. This toolbar is the best choice if you cannot remember the other keyboard shortcuts.',
+        tip: 'If you want to copy a screenshot to your clipboard instead of saving it as a file, add the Ctrl key to any shortcut (for example, Ctrl+Cmd+Shift+3). You can then paste it into an email or document with Cmd+V.'
+      },
+      {
+        title: 'Find your saved screenshots',
+        content: 'By default, all screenshots save directly to your Desktop. You will see them as image files with names like "Screenshot 2026-04-14 at 10.30.00 AM." If you want to change where screenshots are saved, press Cmd+Shift+5 to open the toolbar, click "Options," and choose a different save location.'
+      }
+    ]
   },
   {
     slug: 'force-quit-mac',
@@ -7502,23 +7354,31 @@ Screenshots save to the Desktop by default. In Cmd+Shift+5 options, you can chan
     thumbnailEmoji: '🔄',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Method 1: Keyboard shortcut (quickest)**
-Press Cmd+Option+Esc. The Force Quit Applications window opens. Select the app that says "(not responding)" and click "Force Quit."
-
-**Method 2: Apple menu**
-Click the Apple logo (🍎) in the top left corner > Force Quit. Same window appears — select the stuck app and click Force Quit.
-
-**Method 3: Right-click the Dock icon**
-Hold Option and right-click (or two-finger click) on the app's icon in the Dock. You'll see "Force Quit" at the top of the context menu. Click it.
-
-**Method 4: Activity Monitor (for stubborn cases)**
-Open Activity Monitor (search in Spotlight with Cmd+Space). Find the app in the list, click it, then click the X button in the top left of Activity Monitor. Click "Force Quit" to confirm.
-
-**After force quitting**
-You may lose unsaved work in that app. When you re-open the app, it may offer to restore your previous work — click "Restore" if available.
-
-**If the whole Mac is frozen**
-Hold the power button for 5-10 seconds to force a hard shutdown. Wait 10 seconds and press the power button to restart. Do this only as a last resort.`
+    steps: [
+      {
+        title: 'Use the keyboard shortcut (quickest method)',
+        content: 'Press and hold Cmd+Option+Esc (all three keys at the same time). The Option key is also labeled "Alt" on some keyboards — it is right next to the Cmd key. A window called "Force Quit Applications" will appear. Look for the app that says "(not responding)" next to its name, click on it to highlight it, and then click the "Force Quit" button.',
+        tip: 'This keyboard shortcut is the fastest way to close a frozen app. Try to memorize it: Cmd+Option+Esc.'
+      },
+      {
+        title: 'Use the Apple menu instead',
+        content: 'If you prefer using the mouse, click the Apple logo in the very top left corner of your screen. In the menu that drops down, click "Force Quit." The same Force Quit Applications window will appear. Select the stuck app from the list and click "Force Quit."'
+      },
+      {
+        title: 'Right-click the app icon in the Dock',
+        content: 'Look at the row of app icons at the bottom of your screen (this is called the Dock). Hold down the Option key on your keyboard, then right-click (or tap with two fingers on a trackpad) on the icon of the frozen app. You will see "Force Quit" appear at the top of the menu. Click it to close the app immediately.'
+      },
+      {
+        title: 'Use Activity Monitor for stubborn apps',
+        content: 'If none of the above methods work, open Activity Monitor by pressing Cmd+Space to open Spotlight search, then typing "Activity Monitor" and pressing Enter. Find the frozen app in the list, click on it, then click the X button in the top left corner of the Activity Monitor window. Click "Force Quit" to confirm. This is the most powerful method and works even when the others do not.',
+        warning: 'You may lose any unsaved work in the app you force quit. When you reopen the app, it may offer to restore your previous work — click "Restore" if you see that option.'
+      },
+      {
+        title: 'What to do if your entire Mac is frozen',
+        content: 'If your Mac is completely unresponsive and nothing works — the mouse will not move, keyboard shortcuts do nothing — press and hold the power button for about 10 seconds until the screen goes dark. Wait another 10 seconds, then press the power button again to restart. Only do this as an absolute last resort, because any unsaved work will be lost.',
+        warning: 'A forced shutdown should only be used when nothing else works. It will not damage your Mac, but you will lose anything you had not saved.'
+      }
+    ]
   },
   {
     slug: 'find-files-spotlight-mac',
@@ -7531,23 +7391,30 @@ Hold the power button for 5-10 seconds to force a hard shutdown. Wait 10 seconds
     thumbnailEmoji: '🔍',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Open Spotlight**
-Press Cmd+Space. A search bar appears in the center of your screen. Start typing immediately.
-
-**Search for a file**
-Type the filename or part of it. Spotlight shows results instantly as you type. Use the arrow keys to move through results, and press Enter to open the selected item.
-
-**Search for an app**
-Type the app name (e.g., "Pages," "Safari," "Photos") and press Enter to open it. Much faster than looking through the Applications folder.
-
-**Search for a word inside a document**
-Spotlight can search inside documents, not just file names. Type a word or phrase you remember from the document — Spotlight will find documents containing that text.
-
-**Get quick answers**
-Spotlight can also: calculate maths (type "15% of 340"), convert units (type "5 miles in km"), look up word definitions (type "define serendipity"), and show local weather.
-
-**Open Finder search for more detail**
-In Spotlight results, click "Search in Finder" at the bottom to open a full Finder search window with more filter options (file type, date modified, size, etc.).`
+    steps: [
+      {
+        title: 'Open Spotlight search',
+        content: 'Press and hold the Cmd key, then press the Space bar (Cmd+Space). A search bar will appear in the center of your screen. You can start typing right away — there is no need to click anything first.',
+        tip: 'Spotlight is the fastest way to find anything on your Mac. Once you get used to it, you will use it many times a day.'
+      },
+      {
+        title: 'Search for a file by name',
+        content: 'Type the name of the file you are looking for (or even part of the name). Spotlight shows results instantly as you type. Use the up and down arrow keys on your keyboard to move through the results, and press Enter to open the one you want.'
+      },
+      {
+        title: 'Open an app quickly',
+        content: 'Type the name of any app — for example, "Safari," "Photos," or "Pages" — and press Enter to open it immediately. This is much faster than looking through your Applications folder or scrolling through the Dock.'
+      },
+      {
+        title: 'Search for words inside a document',
+        content: 'Spotlight does not only search file names — it can also search for words inside your documents. If you remember a phrase from a letter or a note but cannot remember what you named the file, type that phrase into Spotlight. It will find documents that contain that text.',
+        tip: 'This is especially helpful when you saved a file with a name you cannot remember. Search for a word you know is in the document instead.'
+      },
+      {
+        title: 'Use Spotlight for quick answers and detailed searches',
+        content: 'Spotlight can also do quick math (type "15% of 340"), convert measurements (type "5 miles in km"), look up definitions (type "define curious"), and show local weather. If you need more detailed search results, scroll to the bottom of the Spotlight results and click "Search in Finder" to open a full search window with extra filter options like file type, date, and size.'
+      }
+    ]
   },
   {
     slug: 'check-mac-storage',
@@ -7560,27 +7427,30 @@ In Spotlight results, click "Search in Finder" at the bottom to open a full Find
     thumbnailEmoji: '💾',
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
-    body: `**Check your storage at a glance**
-Click the Apple logo (🍎) > About This Mac > Storage (or "More Info" on newer Macs, then "Storage Settings"). A color-coded bar shows how your storage is divided — apps, photos, documents, system, and free space.
-
-**What the colors mean**
-- Grey/dark: macOS system files
-- Purple: apps
-- Pink: photos
-- Yellow: documents
-- Green or white: available free space
-
-**Optimise storage automatically**
-In the Storage overview, click "Manage." You'll see recommendations like "Store in iCloud" and "Optimise Storage." These move old files to iCloud to free up local space — you can still access them, but they download on demand.
-
-**Find large files manually**
-In Finder, press Cmd+F. Click "Kind" (first dropdown) and change to "File Size." Set the second dropdown to "is greater than" and type 100 (MB). This shows all files over 100MB so you can decide which to delete.
-
-**Empty the Trash**
-Right-click the Trash icon in the Dock and choose "Empty Trash." Files you've deleted stay in the Trash until you empty it — they still take up space until then.
-
-**Remove unused apps**
-Open Finder > Applications. Drag any apps you no longer use to the Trash. Empty the Trash afterwards.`
+    steps: [
+      {
+        title: 'Check how much storage you have left',
+        content: 'Click the Apple logo in the top left corner of your screen. Click "About This Mac." Then click "Storage" (on older Macs) or "More Info" and then "Storage Settings" (on newer Macs). You will see a color-coded bar that shows how your storage is being used — different colors represent apps, photos, documents, system files, and free space.',
+        tip: 'If the "available" (free) space is very small, your Mac may start running slowly. Try to keep at least 10 to 20 percent of your storage free.'
+      },
+      {
+        title: 'Use built-in tools to free up space',
+        content: 'In the Storage overview, click "Manage." Your Mac will show recommendations to help you free up space. Options like "Store in iCloud" move older files to Apple\'s online storage so they do not take up room on your Mac — you can still open them anytime, but they will need to download first. "Optimize Storage" removes movies and shows you have already watched.'
+      },
+      {
+        title: 'Find and delete large files',
+        content: 'Open Finder (the blue and white smiley face icon in your Dock). Press Cmd+F to start a search. Click the dropdown that says "Kind" and change it to "File Size." Set the next dropdown to "is greater than" and type 100. Change the unit to "MB." This will show you all files on your Mac that are larger than 100 megabytes, so you can decide which ones you no longer need.'
+      },
+      {
+        title: 'Empty the Trash to reclaim space',
+        content: 'When you delete files on a Mac, they go to the Trash but still take up storage space. To permanently remove them, right-click (or two-finger click) the Trash icon in the Dock and choose "Empty Trash." Click "Empty Trash" again to confirm.',
+        warning: 'Once you empty the Trash, those files are gone for good. Make sure you do not need any of them before confirming.'
+      },
+      {
+        title: 'Remove apps you no longer use',
+        content: 'Open Finder and click "Applications" in the left sidebar. Look through your apps and find any you no longer use. Drag them to the Trash icon in the Dock. Then empty the Trash to free up the space. Some apps are large and removing even one or two unused ones can free up a lot of room on your Mac.'
+      }
+    ]
   },
   {
     slug: 'time-machine-backup-mac',
@@ -7593,26 +7463,31 @@ Open Finder > Applications. Drag any apps you no longer use to the Trash. Empty 
     thumbnailEmoji: '⏱️',
     publishedAt: '2026-03-31',
     difficulty: 'Intermediate',
-    body: `**What you need**
-An external hard drive or SSD with at least as much storage as your Mac (ideally 2x more). These are available from electronics shops or Amazon. A 1TB drive costs around $40-60 and is plenty for most people.
-
-**Connect the drive**
-Plug your external drive into your Mac using USB or USB-C. It should appear on your desktop and in Finder.
-
-**Set up Time Machine**
-Click the Apple logo (🍎) > System Settings (or System Preferences) > Time Machine > click "Add Backup Disk" (or "Select Backup Disk"). Choose your external drive and click "Set Up Disk."
-
-**Let it run**
-Time Machine starts its first backup immediately — this can take several hours if you have a lot of files. Subsequent backups happen automatically every hour when the drive is connected and take only a few minutes.
-
-**Restore a file from backup**
-If you accidentally delete a file: connect the drive, open Time Machine from the menu bar, and navigate back in time to find and restore the file.
-
-**Restore your entire Mac**
-If your Mac is replaced or has a major failure: set up the new Mac and choose "Restore from Time Machine backup" in the setup assistant. Everything will be restored.
-
-**Cloud alternative**
-iCloud Drive syncs your Desktop and Documents folders to the cloud automatically. It's not a full backup (unlike Time Machine) but is a useful additional safety net.`
+    steps: [
+      {
+        title: 'Get an external drive for backups',
+        content: 'You will need an external hard drive or SSD (solid state drive) with at least as much storage as your Mac has — ideally twice as much. A 1 terabyte (TB) drive is plenty for most people and costs around $40 to $60 at electronics stores or on Amazon. Look for one that connects with USB or USB-C, which is the type of port on newer Macs.',
+        tip: 'If you are not sure how much storage your Mac has, click the Apple logo in the top left corner, then "About This Mac," then "Storage."'
+      },
+      {
+        title: 'Connect the drive and set up Time Machine',
+        content: 'Plug your external drive into your Mac using the USB or USB-C cable. The drive should appear on your Desktop and in Finder. Then click the Apple logo in the top left corner, go to System Settings (or System Preferences on older Macs), and click "Time Machine." Click "Add Backup Disk" (or "Select Backup Disk"). Choose your external drive from the list and click "Set Up Disk."'
+      },
+      {
+        title: 'Let the first backup run',
+        content: 'Time Machine will start backing up your Mac right away. The first backup can take several hours if you have a lot of files — this is normal. Let it run and try not to unplug the drive while it is working. After the first backup is done, Time Machine will automatically back up any new or changed files every hour, and those smaller backups usually take only a few minutes.',
+        warning: 'Do not unplug the external drive while a backup is in progress. Wait until the backup finishes before disconnecting it.'
+      },
+      {
+        title: 'Restore a lost file from your backup',
+        content: 'If you accidentally delete a file or need an older version of something, connect your backup drive and open Time Machine from the menu bar (look for a small clock icon with an arrow around it). A timeline appears on the right side of the screen. Navigate back in time to find the file you need, select it, and click "Restore."'
+      },
+      {
+        title: 'Know your options if your Mac needs to be replaced',
+        content: 'If your Mac breaks down or you get a new one, you can restore everything from your Time Machine backup. During the setup of your new Mac, choose "Restore from Time Machine Backup" when prompted. Connect your backup drive and follow the steps. All your files, apps, and settings will be transferred to the new Mac. As an extra safety net, consider also turning on iCloud Drive in System Settings — it syncs your Desktop and Documents folders to Apple\'s online storage automatically.',
+        tip: 'iCloud Drive is not a full replacement for Time Machine, but having both gives you two layers of protection for your most important files.'
+      }
+    ]
   },
 
   // ═══════════════════════════════════════════
@@ -13154,10 +13029,9 @@ iCloud Drive syncs your Desktop and Documents folders to the cloud automatically
   },
 ];
 
-import { guidesBatch2 } from './guides-batch-2';
 import { guidesBatch4 } from './guides-batch-4';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch2, ...guidesBatch4];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

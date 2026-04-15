@@ -178,6 +178,11 @@ export default defineConfig(({ mode }) => ({
             id.includes('node_modules/embla-carousel')
           ) return 'vendor-ui';
 
+          // Guide data — large dataset, split into its own cacheable chunk
+          if (id.includes('src/data/guides') && !id.includes('node_modules')) {
+            return 'guide-data';
+          }
+
           // TanStack Query
           if (id.includes('node_modules/@tanstack')) {
             return 'vendor-query';
