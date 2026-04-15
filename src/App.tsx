@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { WifiOff } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
@@ -194,6 +194,33 @@ function OfflineBanner() {
 
 const AppContent = () => {
   const { open, onClose } = useSearchModal();
+  const navigate = useNavigate();
+
+  // Handle Supabase auth redirects that land with a hash fragment.
+  // On success (#access_token=...) the Supabase client handles it automatically.
+  // On failure (#error=...) we surface a plain-language message on the login page.
+  useEffect(() => {
+    if (isServer) return;
+    const hash = window.location.hash;
+    if (!hash.includes('error=')) return;
+
+    const params = new URLSearchParams(hash.replace(/^#/, ''));
+    const code = params.get('error_code') ?? '';
+    const rawDesc = (params.get('error_description') ?? 'Something went wrong.').replace(/\+/g, ' ');
+
+    let message: string;
+    if (code === 'otp_expired') {
+      message = 'That link has expired — links are only valid for 24 hours. Request a new one below.';
+    } else if (code === 'access_denied') {
+      message = rawDesc || 'Access was denied. Please try signing in again.';
+    } else {
+      message = rawDesc;
+    }
+
+    // Strip the error hash from the URL before navigating
+    window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    navigate('/login', { state: { message }, replace: true });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
