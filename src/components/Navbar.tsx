@@ -125,7 +125,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full glass">
       <div className="container flex h-16 items-center justify-between">
         <Link to={user ? dashboardPath : '/'} className="flex items-center gap-2 font-bold text-xl">
-          <Shield className="h-6 w-6 text-primary" />
+          <Shield className="h-6 w-6 text-primary" aria-hidden="true" />
           <span>TekSure</span>
         </Link>
 
@@ -134,11 +134,12 @@ export function Navbar() {
           <FontSizeToggle />
           <button
             onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
+            aria-label="Open search"
             className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border bg-muted/50 text-xs text-muted-foreground hover:bg-muted transition-colors"
-            style={{ minHeight: '32px' }}
+            style={{ minHeight: '44px' }}
           >
-            <Search className="h-3.5 w-3.5" />
-            <span>⌘K</span>
+            <Search className="h-3.5 w-3.5" aria-hidden="true" />
+            <span aria-hidden="true">⌘K</span>
           </button>
 
           {user ? (

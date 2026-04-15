@@ -986,7 +986,7 @@ export function TekBot() {
                     key={p}
                     onClick={() => send(p)}
                     className="text-sm px-3 py-2 rounded-full bg-white border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
-                    style={{ minHeight: 40 }}
+                    style={{ minHeight: 44 }}
                   >
                     {p}
                   </button>

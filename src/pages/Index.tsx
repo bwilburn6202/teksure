@@ -68,11 +68,11 @@ function NewsletterCTA() {
       setStatus('error');
     }
   };
-  if (status === 'success') return (<div className="flex flex-col items-center gap-2 py-2"><CheckCircle className="h-5 w-5 text-green-500" /><p className="text-sm font-medium">You're in! One friendly email each week.</p></div>);
-  if (status === 'error') return (<div className="flex flex-col items-center gap-2 py-2"><p className="text-sm text-destructive font-medium">Something went wrong.</p><button onClick={() => setStatus('idle')} className="text-sm text-primary hover:underline">Try again</button></div>);
+  if (status === 'success') return (<div role="status" className="flex flex-col items-center gap-2 py-2"><CheckCircle className="h-5 w-5 text-green-500" /><p className="text-sm font-medium">You're in! One friendly email each week.</p></div>);
+  if (status === 'error') return (<div role="status" className="flex flex-col items-center gap-2 py-2"><p className="text-sm text-destructive font-medium">Something went wrong.</p><button onClick={() => setStatus('idle')} className="text-sm text-primary hover:underline">Try again</button></div>);
   return (
     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 w-full">
-      <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required className="h-11 flex-1 bg-card border-border rounded-lg focus:border-primary/50" />
+      <Input type="email" id="newsletter-email" aria-label="Your email address" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required className="h-11 flex-1 bg-card border-border rounded-lg focus:border-primary/50" />
       <Button type="submit" disabled={status === 'loading'} className="h-11 px-6 shrink-0 rounded-lg">
         {status === 'loading' ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Subscribe'}
       </Button>
@@ -165,7 +165,7 @@ const Index = () => {
                   value={search}
                   onChange={e => setSearch(e.target.value)}
                 />
-                <Button type="submit" size="sm" className="absolute right-2 top-1/2 -translate-y-1/2 h-10 rounded-lg px-5 text-sm font-medium">
+                <Button type="submit" size="sm" className="absolute right-2 top-1/2 -translate-y-1/2 h-11 rounded-lg px-5 text-sm font-medium">
                   Search
                 </Button>
               </div>
@@ -175,18 +175,19 @@ const Index = () => {
             <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
               {quickProblems.map((p) => (
                 <button key={p.query} onClick={() => navigate(`/guides?q=${encodeURIComponent(p.query)}`)}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-muted border border-border text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors duration-200">
-                  <span>{p.emoji}</span> {p.label}
+                  aria-label={p.label}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-full bg-muted border border-border text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors duration-200">
+                  <span aria-hidden="true">{p.emoji}</span> {p.label}
                 </button>
               ))}
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-              <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 text-base shadow-sm hover:shadow-md transition-shadow">
+              <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base shadow-sm hover:shadow-md transition-shadow">
                 <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-8 text-base">
+              <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
                 <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
               </Button>
             </div>
@@ -327,7 +328,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-10">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 text-base">
+            <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
               <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
             </Button>
           </div>
@@ -392,10 +393,10 @@ const Index = () => {
                 Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="gap-2 rounded-xl h-13 px-8 text-base">
+                <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
                   <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-13 px-8 text-base">
+                <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
                   <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
                 </Button>
               </div>

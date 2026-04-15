@@ -45,7 +45,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
           </div>
         )}
         {guide.difficulty && (
-          <span className={`absolute top-2 left-2 text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+          <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-0.5 rounded-full ${
             guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
             guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
             'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
@@ -71,7 +71,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
         <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
           {guide.title}
         </h3>
-        <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+        <p className="text-sm text-foreground/70 line-clamp-2 leading-relaxed">{guide.excerpt}</p>
         <div className="mt-2.5">
           <StarRating guideSlug={guide.slug} readOnly size="sm" />
         </div>
@@ -82,7 +82,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
 
 const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
   <Link to={`/guides/${guide.slug}`} className="group block">
-    <div className={`flex items-center gap-3 px-3 py-2.5 border-b border-border hover:bg-accent/50 transition-colors ${
+    <div className={`flex items-center gap-3 px-3 py-2.5 min-h-[44px] border-b border-border hover:bg-accent/50 transition-colors ${
       completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
     }`}>
       <img
@@ -98,11 +98,11 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
       <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
         {categoryLabels[guide.category]}
       </Badge>
-      <span className={`text-xs font-medium shrink-0 hidden md:inline ${
+      <span aria-label={guide.difficulty ?? ''} className={`text-xs font-medium shrink-0 hidden md:inline ${
         guide.difficulty === 'Beginner' ? 'text-green-600' :
         guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
       }`}>
-        {guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}
+        <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
       </span>
       <span className="text-xs text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
       {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
@@ -117,10 +117,12 @@ function GuidesEmptyState({
   search,
   activeTab,
   onClear,
+  onSearch,
 }: {
   search: string;
   activeTab: string;
   onClear: () => void;
+  onSearch: (term: string) => void;
 }) {
   if (search.trim() && activeTab !== 'all') {
     return (
@@ -156,15 +158,7 @@ function GuidesEmptyState({
           {POPULAR_SEARCHES.map(term => (
             <button
               key={term}
-              onClick={() => {
-                const input = document.querySelector<HTMLInputElement>('input[aria-label="Search guides"]');
-                if (input) {
-                  const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
-                  setter?.call(input, term);
-                  input.dispatchEvent(new Event('input', { bubbles: true }));
-                  input.focus();
-                }
-              }}
+              onClick={() => onSearch(term)}
               className="rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
             >
               {term}
@@ -228,7 +222,7 @@ const Guides = () => {
   }, []);
 
   const allSlugs = useMemo(() => guides.map(g => g.slug), []);
-  const progressStats = getProgressCount(allSlugs);
+  const progressStats = useMemo(() => getProgressCount(allSlugs), [allSlugs]);
 
   const filtered = useMemo(() => {
     let results = guides;
@@ -311,7 +305,7 @@ const Guides = () => {
             <TabsList className="h-auto gap-1 bg-transparent p-0 flex-wrap">
               <TabsTrigger
                 value="all"
-                className="text-xs rounded-full px-3 py-1.5 data-[state=active]:bg-foreground data-[state=active]:text-background"
+                className="text-xs rounded-full px-3 py-1.5 min-h-[44px] data-[state=active]:bg-foreground data-[state=active]:text-background"
               >
                 All ({guides.length})
               </TabsTrigger>
@@ -321,7 +315,7 @@ const Guides = () => {
                   <TabsTrigger
                     key={cat}
                     value={cat}
-                    className="text-xs rounded-full px-3 py-1.5 data-[state=active]:bg-foreground data-[state=active]:text-background"
+                    className="text-xs rounded-full px-3 py-1.5 min-h-[44px] data-[state=active]:bg-foreground data-[state=active]:text-background"
                   >
                     {categoryLabels[cat]} ({count})
                   </TabsTrigger>
@@ -342,6 +336,7 @@ const Guides = () => {
                   onClick={() => toggleView('list')}
                   className={`p-2.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
                   aria-label="List view"
+                  aria-pressed={viewMode === 'list'}
                 >
                   <LayoutList className="h-4 w-4" />
                 </button>
@@ -349,6 +344,7 @@ const Guides = () => {
                   onClick={() => toggleView('grid')}
                   className={`p-2.5 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
                   aria-label="Grid view"
+                  aria-pressed={viewMode === 'grid'}
                 >
                   <LayoutGrid className="h-4 w-4" />
                 </button>
@@ -356,7 +352,7 @@ const Guides = () => {
             </div>
 
             {filtered.length === 0 ? (
-              <GuidesEmptyState search={search} activeTab={activeTab} onClear={() => { setSearch(''); setActiveTab('all'); }} />
+              <GuidesEmptyState search={search} activeTab={activeTab} onClear={() => { setSearch(''); setActiveTab('all'); }} onSearch={setSearch} />
             ) : viewMode === 'list' ? (
               <div className="border rounded-xl overflow-hidden">
                 {filtered.map((guide) => (

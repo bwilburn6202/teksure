@@ -137,7 +137,7 @@ const StepScreenshot = ({
             {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
               <span key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 {a.type === 'callout' && (
-                  <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-red-500 text-white text-[9px] font-bold shrink-0">
+                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-[11px] font-bold shrink-0">
                     {a.label}
                   </span>
                 )}
@@ -163,7 +163,7 @@ const ProTip = ({ children }: { children: React.ReactNode }) => (
   <div className="mt-4 rounded-lg border border-amber-300/40 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-700/40 px-4 py-3 flex items-start gap-3">
     <Lightbulb className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
     <div>
-      <p className="text-xs font-bold text-amber-700 dark:text-amber-400 mb-0.5">Quick Tip</p>
+      <p className="text-sm font-bold text-amber-700 dark:text-amber-400 mb-0.5">Quick Tip</p>
       <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
@@ -173,7 +173,7 @@ const WarningBox = ({ children }: { children: React.ReactNode }) => (
   <div className="mt-4 rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 flex items-start gap-3">
     <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
     <div>
-      <p className="text-xs font-bold text-destructive mb-0.5">Warning</p>
+      <p className="text-sm font-bold text-destructive mb-0.5">Warning</p>
       <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
@@ -201,7 +201,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
           <CheckCircle className="h-4 w-4" /> Mark as Complete
         </Button>
       )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech →</Link></p>
+      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
     </div>
   );
 };
@@ -238,7 +238,7 @@ const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string;
     setSaved(!saved);
   };
   return (
-    <Button variant="ghost" size="icon" className="absolute top-0 right-0 no-print" onClick={toggle} aria-label={saved ? 'Remove from favorites' : 'Add to favorites'}>
+    <Button variant="ghost" size="icon" className="absolute top-0 right-0 no-print min-h-[44px] min-w-[44px]" onClick={toggle} aria-label={saved ? 'Remove from favorites' : 'Add to favorites'}>
       <Heart className={`h-5 w-5 transition-colors ${saved ? 'fill-destructive text-destructive' : 'text-muted-foreground'}`} />
     </Button>
   );
