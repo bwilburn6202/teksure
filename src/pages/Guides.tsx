@@ -213,6 +213,7 @@ const Guides = () => {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
+  const [difficultyFilter, setDifficultyFilter] = useState<'all' | 'Beginner' | 'Intermediate' | 'Advanced'>('all');
   const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
     if (typeof window === 'undefined') return 'list';
     try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
@@ -243,16 +244,19 @@ const Guides = () => {
   const filtered = useMemo(() => {
     let results = guides;
     if (activeTab !== 'all') results = results.filter(g => g.category === activeTab);
+    if (difficultyFilter !== 'all') results = results.filter(g => g.difficulty === difficultyFilter);
     if (search.trim()) {
       const q = search.toLowerCase();
       results = results.filter(g =>
         g.title.toLowerCase().includes(q) ||
         g.excerpt.toLowerCase().includes(q) ||
-        g.tags.some(t => t.includes(q))
+        g.tags.some(t => t.includes(q)) ||
+        (g.body && g.body.toLowerCase().includes(q)) ||
+        (g.steps && g.steps.some(s => s.title.toLowerCase().includes(q) || s.content.toLowerCase().includes(q)))
       );
     }
     return results;
-  }, [search, activeTab]);
+  }, [search, activeTab, difficultyFilter]);
 
   const categories = Object.keys(categoryLabels) as GuideCategory[];
 
@@ -338,6 +342,27 @@ const Guides = () => {
                 );
               })}
             </TabsList>
+          </div>
+
+          {/* Difficulty filter */}
+          <div className="flex items-center gap-2 mb-6">
+            <span className="text-xs text-muted-foreground font-medium">Difficulty:</span>
+            {(['all', 'Beginner', 'Intermediate', 'Advanced'] as const).map(level => (
+              <button
+                key={level}
+                onClick={() => setDifficultyFilter(level)}
+                className={`text-xs px-3 py-1.5 rounded-full border transition-all min-h-[36px] ${
+                  difficultyFilter === level
+                    ? level === 'Beginner' ? 'bg-green-100 border-green-300 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300'
+                    : level === 'Intermediate' ? 'bg-amber-100 border-amber-300 text-amber-700 dark:bg-amber-900/30 dark:border-amber-700 dark:text-amber-300'
+                    : level === 'Advanced' ? 'bg-red-100 border-red-300 text-red-700 dark:bg-red-900/30 dark:border-red-700 dark:text-red-300'
+                    : 'bg-foreground text-background border-foreground'
+                    : 'border-border hover:border-primary/30'
+                }`}
+              >
+                {level === 'all' ? 'All Levels' : level}
+              </button>
+            ))}
           </div>
 
           <TabsContent value={activeTab} className="mt-0">
