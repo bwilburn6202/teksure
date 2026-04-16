@@ -85,6 +85,57 @@ const tools = [
     badge: 'New',
     category: 'Money & Bills' as ToolCategory,
   },
+  // ── NEW: Communication & Setup ──
+  {
+    title: 'Robocall Blocker Setup',
+    description: 'Block spam calls using your carrier\'s free tools. Guides for AT&T, T-Mobile, Verizon, and all other carriers.',
+    icon: Phone,
+    path: '/tools/robocall-blocker',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
+  },
+  {
+    title: 'Phone Plan Comparator',
+    description: 'Compare phone plans from every major carrier side-by-side — find the best deal for your needs.',
+    icon: Phone,
+    path: '/tools/phone-plan-comparator',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  {
+    title: 'Digital Literacy Assessment',
+    description: 'Take a 25-question self-assessment across 5 areas — get your skill level and a personalized learning plan.',
+    icon: GraduationCap,
+    path: '/tools/digital-literacy-assessment',
+    color: 'text-violet-600',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'New',
+    category: 'Learning' as ToolCategory,
+  },
+  {
+    title: 'Meeting Setup Helper',
+    description: 'Need to start or join a video call? Choose your platform and follow the guided steps.',
+    icon: Laptop,
+    path: '/tools/meeting-setup',
+    color: 'text-cyan-600',
+    bg: 'bg-cyan-50 dark:bg-cyan-950/30',
+    badge: 'New',
+    category: 'Communication' as ToolCategory,
+  },
+  {
+    title: 'Contact Backup Guide',
+    description: 'Make sure your phone contacts are backed up and safe — step-by-step for iPhone and Android.',
+    icon: Smartphone,
+    path: '/tools/contact-backup',
+    color: 'text-green-600',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
+  },
   // ── NEW: Security ──
   {
     title: 'Scam Practice Simulator',
@@ -672,7 +723,7 @@ export default function Tools() {
                 Tools & Utilities
               </h1>
               <p className="text-muted-foreground text-lg mb-8">
-                Over 50 free interactive tools — all private, all free.
+                Over 55 free interactive tools — all private, all free.
               </p>
               <div className="relative max-w-md mx-auto">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />

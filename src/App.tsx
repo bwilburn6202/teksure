@@ -151,6 +151,11 @@ const InternetSpeedAdvisor   = lazy(() => import("./pages/tools/InternetSpeedAdv
 const DigitalCleanup         = lazy(() => import("./pages/tools/DigitalCleanup"));
 const DeviceSetupChecklist   = lazy(() => import("./pages/tools/DeviceSetupChecklist"));
 const TechGlossaryQuiz       = lazy(() => import("./pages/tools/TechGlossaryQuiz"));
+const RobocallBlocker        = lazy(() => import("./pages/tools/RobocallBlocker"));
+const PhonePlanComparator    = lazy(() => import("./pages/tools/PhonePlanComparator"));
+const DigitalLiteracyAssessment = lazy(() => import("./pages/tools/DigitalLiteracyAssessment"));
+const MeetingSetupHelper     = lazy(() => import("./pages/tools/MeetingSetupHelper"));
+const ContactBackupTool      = lazy(() => import("./pages/tools/ContactBackupTool"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -385,6 +390,11 @@ const AppContent = () => {
           <Route path="/tools/digital-cleanup" element={<DigitalCleanup />} />
           <Route path="/tools/device-setup-checklist" element={<DeviceSetupChecklist />} />
           <Route path="/tools/tech-glossary-quiz" element={<TechGlossaryQuiz />} />
+          <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
+          <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
+          <Route path="/tools/digital-literacy-assessment" element={<DigitalLiteracyAssessment />} />
+          <Route path="/tools/meeting-setup" element={<MeetingSetupHelper />} />
+          <Route path="/tools/contact-backup" element={<ContactBackupTool />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

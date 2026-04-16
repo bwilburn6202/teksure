@@ -333,6 +333,20 @@ const GuideDetail = () => {
     publisher: { '@type': 'Organization', name: 'TekSure', logo: { '@type': 'ImageObject', url: 'https://teksure.com/og-image.png' } },
   } : undefined;
 
+  // FAQ schema from guide steps — boosts chances of rich snippets in Google
+  const faqJsonLd = guide.steps && guide.steps.length >= 3 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: guide.steps.slice(0, 8).map(s => ({
+      '@type': 'Question',
+      name: `How do I ${s.title.toLowerCase().replace(/^(step \d+[:\s]*)/i, '')}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: s.content,
+      },
+    })),
+  } : undefined;
+
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -351,7 +365,7 @@ const GuideDetail = () => {
         description={guide.excerpt}
         path={`/guides/${guide.slug}`}
         type="article"
-        jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
+        jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd, faqJsonLd].filter(Boolean) as Record<string, unknown>[]}
       />
       <Navbar />
 

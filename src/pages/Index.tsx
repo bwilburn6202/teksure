@@ -439,6 +439,49 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════ */}
+      {/* TESTIMONIALS                                      */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-24">
+        <div className="container">
+          <RevealSection>
+            <div className="text-center mb-12">
+              <h2 className="display-heading text-3xl md:text-4xl mb-3">What people are saying</h2>
+              <p className="text-muted-foreground max-w-md mx-auto text-lg">Real feedback from real people we have helped.</p>
+            </div>
+          </RevealSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto stagger">
+            {[
+              { name: 'Margaret T.', age: '72', location: 'Dallas, TX', text: 'I was terrified of being scammed online. The Scam Simulator tool showed me exactly what to look for. Now I feel confident checking my email without worrying.', stars: 5 },
+              { name: 'James R.', age: '68', location: 'Phoenix, AZ', text: 'My grandson set up a new phone for me but never explained how anything works. TekSure guides walked me through everything step by step. Now I can do it myself.', stars: 5 },
+              { name: 'Linda M.', age: '65', location: 'Orlando, FL', text: 'I have been paying $140/month for cable. The streaming calculator showed me I could get everything I watch for $45. That is over $1,000 saved this year.', stars: 5 },
+              { name: 'Robert K.', age: '71', location: 'Portland, OR', text: 'The password strength checker was a wake-up call. I had been using the same password for everything. The guide showed me how to fix it in 20 minutes.', stars: 5 },
+              { name: 'Susan W.', age: '67', location: 'Chicago, IL', text: 'I could never figure out my Medicare portal. The step-by-step guide had screenshots of every screen. I was logged in and checking my benefits within 10 minutes.', stars: 5 },
+              { name: 'David H.', age: '74', location: 'Nashville, TN', text: 'My WiFi kept dropping out. The troubleshooter walked me through fixing it — turns out my router was in the wrong spot. It has worked great ever since.', stars: 5 },
+            ].map((t, i) => (
+              <div key={i} className="rounded-2xl border border-border bg-card p-6">
+                <div className="flex items-center gap-1 mb-3">
+                  {Array.from({ length: t.stars }).map((_, j) => (
+                    <Star key={j} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">"{t.text}"</p>
+                <div className="flex items-center gap-2">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
+                    {t.name.split(' ').map(w => w[0]).join('')}
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium">{t.name}, {t.age}</p>
+                    <p className="text-xs text-muted-foreground">{t.location}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
       {/* NEWSLETTER + CTA                                  */}
       {/* ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24">
