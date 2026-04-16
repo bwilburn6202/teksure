@@ -21,7 +21,7 @@ interface CheckItem {
 const CHECKS: CheckItem[] = [
   // Passwords
   { id: 'pw1', category: 'Passwords', categoryIcon: Lock, question: 'Do you use a different password for each important account (email, banking, etc.)?', yesPoints: 15, tip: 'Reusing passwords is one of the biggest security risks. If one site is hacked, all your accounts become vulnerable. Use a password manager to keep unique passwords for everything.' },
-  { id: 'pw2', category: 'Passwords', categoryIcon: Lock, question: 'Are your important passwords at least 12 characters long?', yesPoints: 10, tip: 'Longer passwords are exponentially harder to crack. Aim for 12+ characters — use a passphrase like "PurpleTigerEats7Apples!" which is easy to remember but hard to guess.', guideSlug: 'creating-strong-passwords' },
+  { id: 'pw2', category: 'Passwords', categoryIcon: Lock, question: 'Are your important passwords at least 12 characters long?', yesPoints: 10, tip: 'Longer passwords are exponentially harder to crack. Aim for 12+ characters — use a passphrase like "PurpleTigerEats7Apples!" which is easy to remember but hard to guess.', guideSlug: 'create-strong-password' },
   { id: 'pw3', category: 'Passwords', categoryIcon: Lock, question: 'Do you use two-factor authentication (2FA) on your email and banking accounts?', yesPoints: 15, tip: 'Two-factor authentication means even if someone has your password, they can\'t get in without a code from your phone. Enable it today — especially on email and banking.', guideSlug: 'two-factor-auth' },
   // Network
   { id: 'net1', category: 'Home Network', categoryIcon: Wifi, question: 'Have you changed your home Wi-Fi router\'s default password?', yesPoints: 10, tip: 'Default router passwords (like "admin" or "password") are publicly known. Change yours via your router\'s settings page — usually found at 192.168.1.1 in your browser.', guideSlug: 'home-network-security' },
@@ -33,9 +33,9 @@ const CHECKS: CheckItem[] = [
   { id: 'dev3', category: 'Devices', categoryIcon: Smartphone, question: 'Do you have a backup of your important files (photos, documents)?', yesPoints: 5, tip: 'Ransomware and device failures can wipe your data. Enable iCloud, Google Photos, or an external hard drive backup now.' },
   // Online behavior
   { id: 'web1', category: 'Online Safety', categoryIcon: Globe, question: 'Do you check that websites show "https://" and a padlock before entering personal details?', yesPoints: 5, tip: 'The "s" in "https" stands for secure — it means the connection is encrypted. Never enter passwords or payment details on a site that only shows "http://".' },
-  { id: 'web2', category: 'Online Safety', categoryIcon: Globe, question: 'Do you avoid clicking links in unsolicited text messages or emails?', yesPoints: 10, tip: 'Phishing links are disguised to look real but lead to fake sites that steal your information. If in doubt, go to the website directly by typing it in your browser.', guideSlug: 'phishing-emails' },
+  { id: 'web2', category: 'Online Safety', categoryIcon: Globe, question: 'Do you avoid clicking links in unsolicited text messages or emails?', yesPoints: 10, tip: 'Phishing links are disguised to look real but lead to fake sites that steal your information. If in doubt, go to the website directly by typing it in your browser.', guideSlug: 'identify-phishing-emails' },
   { id: 'email1', category: 'Email Safety', categoryIcon: Mail, question: 'Can you identify the signs of a phishing email (urgency, spelling errors, suspicious sender)?', yesPoints: 5, tip: 'Phishing emails often create false urgency ("Act now!"), have spelling mistakes, or come from odd email addresses. If in doubt, delete and contact the organization directly.' },
-  { id: 'email2', category: 'Email Safety', categoryIcon: Mail, question: 'Do you avoid sharing your main email address publicly on social media or websites?', yesPoints: 5, tip: 'Your email is a gateway to all your accounts. Consider using a separate address for newsletters/sign-ups and keeping your main email private.', guideSlug: 'avoiding-scams' },
+  { id: 'email2', category: 'Email Safety', categoryIcon: Mail, question: 'Do you avoid sharing your main email address publicly on social media or websites?', yesPoints: 5, tip: 'Your email is a gateway to all your accounts. Consider using a separate address for newsletters/sign-ups and keeping your main email private.', guideSlug: 'recognizing-avoiding-scams' },
 ];
 
 const CATEGORIES = [...new Set(CHECKS.map(c => c.category))];
@@ -274,7 +274,7 @@ export default function CyberScorecard() {
                 <div className="mb-6">
                   <h2 className="text-base font-semibold mb-3 flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-500" />
-                    {passedChecks.length} thing{passedChecks.length !== 1 ? 's' : ''} you\'re already doing right
+                    {passedChecks.length} thing{passedChecks.length !== 1 ? 's' : ''} {"you're"} already doing right
                   </h2>
                   <div className="space-y-2">
                     {passedChecks.map(check => (

@@ -174,9 +174,9 @@ const TOOLS: Tool[] = [
 
   // White Hat Tools
   {
-    id: 'password-generator',
-    name: 'Secure Password Generator',
-    description: 'Generate cryptographically strong passwords',
+    id: 'password-generator-cli',
+    name: 'Secure Password Generator (CLI)',
+    description: 'Generate cryptographically strong passwords via command line',
     team: 'white',
     category: 'Security',
     isInteractive: false,
@@ -305,6 +305,8 @@ const PasswordStrengthAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }
     if (/[A-Z]/.test(pwd)) charset += 26;
     if (/[0-9]/.test(pwd)) charset += 10;
     if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(pwd)) charset += 32;
+    if (/[^\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(pwd)) charset += 64; // Unicode/other chars
+    if (charset === 0) return 0;
     return pwd.length * Math.log2(charset);
   };
 
@@ -653,9 +655,10 @@ const IPSubnetCalculator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         d: network.d | (~maskValue & 0xff),
       };
 
-      const firstHost = { ...network, d: network.d + 1 };
-      const lastHost = { ...broadcast, d: broadcast.d - 1 };
-      const totalHosts = Math.pow(2, 32 - maskBits) - 2;
+      const hostBits = 32 - maskBits;
+      const totalHosts = hostBits >= 2 ? Math.pow(2, hostBits) - 2 : (hostBits === 1 ? 2 : 1);
+      const firstHost = hostBits >= 2 ? { ...network, d: network.d + 1 } : network;
+      const lastHost = hostBits >= 2 ? { ...broadcast, d: broadcast.d - 1 } : broadcast;
 
       setResults({
         network: `${network.a}.${network.b}.${network.c}.${network.d}`,
@@ -824,14 +827,24 @@ const HTTPHeaderChecker: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const checkHeaders = async (url: string) => {
     setLoading(true);
     try {
-      const response = await fetch(url, { mode: 'no-cors' });
-      const headerObj: Record<string, string> = {};
-      response.headers.forEach((value, name) => {
-        headerObj[name] = value;
-      });
-      setHeaders(headerObj);
+      // Use a public CORS proxy to fetch headers since browser fetch with no-cors returns opaque responses
+      const targetUrl = url.startsWith('http') ? url : `https://${url}`;
+      const response = await fetch(targetUrl, { method: 'HEAD', mode: 'cors' }).catch(() => null);
+      if (response) {
+        const headerObj: Record<string, string> = {};
+        response.headers.forEach((value, name) => {
+          headerObj[name] = value;
+        });
+        if (Object.keys(headerObj).length === 0) {
+          setHeaders({ info: 'CORS restriction: the server does not expose headers to browser requests. Try using a command-line tool like curl instead: curl -I ' + targetUrl });
+        } else {
+          setHeaders(headerObj);
+        }
+      } else {
+        setHeaders({ info: 'Unable to reach this domain from the browser. CORS restrictions prevent reading headers for most sites. Try: curl -I ' + targetUrl });
+      }
     } catch (e) {
-      setHeaders({ error: 'Unable to fetch headers (CORS restriction). For production, use a backend proxy.' });
+      setHeaders({ info: 'Unable to fetch headers. Most sites block cross-origin header requests from browsers. Try using curl in your terminal: curl -I https://' + url });
     } finally {
       setLoading(false);
     }
@@ -1183,7 +1196,7 @@ const EmailHeaderAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => 
       if (match) {
         currentKey = match[1].toLowerCase();
         parsed[currentKey] = match[2].trim();
-      } else if (currentKey && line.startsWith(' ') || line.startsWith('\t')) {
+      } else if (currentKey && (line.startsWith(' ') || line.startsWith('\t'))) {
         parsed[currentKey] += ' ' + line.trim();
       }
     }
@@ -1421,19 +1434,24 @@ export default function CyberToolkit() {
           >
             All ({totalTools})
           </button>
-          {Object.entries(TEAM_INFO).map(([key, team]) => (
+          {Object.entries(TEAM_INFO).map(([key, team]) => {
+            // Use static class map so Tailwind doesn't purge dynamic classes
+            const activeColorMap: Record<string, string> = { red: 'bg-red-600', blue: 'bg-blue-600', green: 'bg-green-600', purple: 'bg-purple-600' };
+            const borderColorMap: Record<string, string> = { red: 'border-red-500/20', blue: 'border-blue-500/20', green: 'border-green-500/20', purple: 'border-purple-500/20' };
+            return (
             <button
               key={key}
               onClick={() => setSelectedTeam(key)}
               className={`px-4 py-2 rounded-lg font-medium transition-colors text-sm whitespace-nowrap ${
                 selectedTeam === key
-                  ? `bg-${team.color}-600 text-white`
-                  : `bg-gray-800 text-gray-300 hover:bg-gray-700 border border-${team.color}-500/20`
+                  ? `${activeColorMap[team.color] || 'bg-green-600'} text-white`
+                  : `bg-gray-800 text-gray-300 hover:bg-gray-700 border ${borderColorMap[team.color] || 'border-green-500/20'}`
               }`}
             >
               {team.name} ({teamCounts[key] || 0})
             </button>
-          ))}
+            );
+          })}
         </div>
 
         {/* Tools Grid */}

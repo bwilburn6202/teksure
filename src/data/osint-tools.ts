@@ -294,7 +294,7 @@ export const osintCategories: OsintCategory[] = [
     tools: [
       { name: 'Google News', url: 'https://news.google.com/', description: 'Search and browse news from thousands of sources, organized by topic.', pricing: 'free' },
       { name: 'Flipboard', url: 'https://flipboard.com/', description: 'Personalized news magazine that collects stories from sources you trust.', pricing: 'free' },
-      { name: 'BBC News', url: 'https://www.bbc.co.uk/news', description: 'World news from the BBC, one of the most widely trusted news organizations.', pricing: 'free' },
+      { name: 'BBC News', url: 'https://www.bbc.com/news', description: 'World news from the BBC, one of the most widely trusted news organizations.', pricing: 'free' },
       { name: 'Reuters', url: 'https://www.reuters.com/', description: 'Breaking news and investigative reporting from one of the world\'s largest news agencies.', pricing: 'free' },
       { name: 'AllSides', url: 'https://www.allsides.com/', description: 'Shows the same news story from left, center, and right perspectives side by side.', pricing: 'free' },
       { name: 'MediaBiasFactCheck', url: 'https://mediabiasfactcheck.com/', description: 'Look up any news source to see its political bias rating and factual accuracy.', pricing: 'free' },
