@@ -9324,8 +9324,7 @@ const coreGuides: Guide[] = [
     { title: 'Be careful what you share', content: 'Never share: your home address or neighborhood landmarks, your daily routine or schedule, financial information, personal identification details. Even with a private account, approved followers can screenshot or screen-record your videos.' },
     { title: 'Manage your For You page', content: 'The "For You" page shows videos TikTok thinks you will like. If you see something inappropriate: press and hold the video > "Not interested." If you see potential misinformation: tap Share > Report. Use Screen Time settings to limit how long you spend scrolling.', tip: 'TikTok has a "Restricted Mode" in Settings > Content Preferences that filters out potentially mature content. Turn it on if you want a family-friendly experience.' },
   ] },
-  { slug: 'linkedin-basics', title: 'How to Create and Use a LinkedIn Profile', excerpt: 'LinkedIn is the professional social network. Here is how to set up a profile and start connecting.', category: 'social-media', tags: ['linkedin', 'professional', 'networking', 'beginner'], readTime: '5 min', thumbnailEmoji: '💼', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/MSmkyW9TSb8',
+  { slug: 'linkedin-basics', title: 'How to Create and Use a LinkedIn Profile', excerpt: 'LinkedIn is the professional social network. Here is how to set up a profile and start connecting.', category: 'social-media', tags: ['linkedin', 'professional', 'networking', 'beginner'], readTime: '5 min', thumbnailEmoji: '💼', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/MSmkyW9TSb8', steps: [
     { title: 'Create your profile', content: 'Go to linkedin.com and click "Join now." Enter your email, create a password, and fill in your name and location. LinkedIn will ask for your current job title and company — enter them even if you are retired (you can say "Retired from [Industry]").' },
     { title: 'Add a professional photo', content: 'Upload a clear headshot where your face is visible. It does not need to be professionally taken — a well-lit photo from your phone works fine. Profiles with photos get 21 times more views than those without.' },
     { title: 'Write your headline and summary', content: 'Your headline appears right below your name. Make it descriptive: "Retired Teacher | Community Volunteer | Lifelong Learner" works well. In the About section, write 2-3 sentences about your background and interests.' },
@@ -9371,8 +9370,7 @@ const coreGuides: Guide[] = [
     { title: 'Check for malware', content: 'Malware running in the background can make your computer extremely slow. Windows: Open Windows Security > Virus & threat protection > Quick scan. Mac: Consider installing Malwarebytes (free version) for a one-time scan.' },
     { title: 'Consider an SSD upgrade', content: 'If your computer is more than 5 years old and has a traditional hard drive (not SSD), upgrading to a solid-state drive (SSD) is the single most impactful upgrade you can make. SSDs cost $30-60 for 500GB and make everything 5-10 times faster. A local computer shop can do the upgrade for you.', tip: 'If your computer is less than 3 years old and still slow after these steps, you may have too little RAM. 8GB is the minimum for comfortable use in 2026; 16GB is ideal.' },
   ] },
-  { slug: 'organize-email-inbox', title: 'How to Get to Inbox Zero and Stay There', excerpt: 'A cluttered inbox causes stress. Here is a simple system to get it under control in 30 minutes.', category: 'tips-tricks', tags: ['email', 'inbox', 'organization', 'productivity', 'beginner'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/QC2DAzTtR80',
+  { slug: 'organize-email-inbox', title: 'How to Get to Inbox Zero and Stay There', excerpt: 'A cluttered inbox causes stress. Here is a simple system to get it under control in 30 minutes.', category: 'tips-tricks', tags: ['email', 'inbox', 'organization', 'productivity', 'beginner'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/QC2DAzTtR80', steps: [
     { title: 'Unsubscribe from newsletters', content: 'Scroll through your inbox and find emails from companies or newsletters you never read. Open each one and look for the "Unsubscribe" link at the bottom. Click it and confirm. Do this for 15-20 newsletters and you will immediately notice fewer incoming emails.', tip: 'In Gmail, search for "unsubscribe" to find all newsletter emails at once. Select all and delete, then unsubscribe from the ones that keep coming.' },
     { title: 'Create 4 folders (and only 4)', content: 'Keep it simple. Create these folders: "Action Required" (things you need to respond to or do), "Waiting For" (things you are waiting on others for), "Reference" (important info you might need later), "Archive" (everything else). Move every email in your inbox into one of these folders.' },
     { title: 'Process your inbox daily', content: 'Spend 5-10 minutes each morning going through new emails. For each one, make a quick decision: Reply now if it takes less than 2 minutes, Move to "Action Required" if it needs more time, Move to "Waiting For" if you need a response from someone, Archive or delete everything else.' },
@@ -9420,8 +9418,7 @@ const coreGuides: Guide[] = [
     { title: 'Live captions', content: 'Settings > Accessibility > Captions > Live Captions. Automatically captions any audio on your computer.' },
     { title: 'Voice control', content: 'Settings > Accessibility > Speech > Voice Access. Control your computer with voice commands.' },
   ] },
-  { slug: 'mac-accessibility-features', title: 'Accessibility Features Built into macOS', excerpt: 'Your Mac has powerful free accessibility tools ready to use.', category: 'mac-guides', tags: ['accessibility', 'mac', 'vision', 'hearing'], readTime: '5 min', thumbnailEmoji: '♿', publishedAt: '2026-04-10', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/zIHC68aa5i4',
+  { slug: 'mac-accessibility-features', title: 'Accessibility Features Built into macOS', excerpt: 'Your Mac has powerful free accessibility tools ready to use.', category: 'mac-guides', tags: ['accessibility', 'mac', 'vision', 'hearing'], readTime: '5 min', thumbnailEmoji: '♿', publishedAt: '2026-04-10', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/zIHC68aa5i4', steps: [
     { title: 'Find Accessibility settings', content: 'System Settings > Accessibility. Or press Option + Command + F5 for Accessibility Shortcuts.' },
     { title: 'Make text bigger', content: 'System Settings > Accessibility > Display > Text Size. In browsers, press Command + Plus to zoom.' },
     { title: 'Use Zoom', content: 'System Settings > Accessibility > Zoom. Use Option + Command + = to zoom in, Option + Command + - to zoom out.' },
@@ -9569,7 +9566,7 @@ const coreGuides: Guide[] = [
     { title: 'Phishing links', content: 'Don\'t click links from strangers. "Is this you?" links steal your login.' },
     { title: 'Report and block', content: 'Three dots > Report. Block the account. Warn friends.' },
   ] },
-  { slug: 'facebook-marketplace', title: 'How to Use Facebook Marketplace', excerpt: 'Buy and sell locally through Facebook.', category: 'social-media', tags: ['facebook', 'marketplace', 'shopping'], readTime: '6 min', thumbnailEmoji: '🏷️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'facebook-marketplace', title: 'How to Use Facebook Marketplace', excerpt: 'Buy and sell locally through Facebook.', category: 'social-media', tags: ['facebook', 'marketplace', 'shopping'], readTime: '6 min', thumbnailEmoji: '🏷️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7lCXyy1e5Zo', steps: [
     { title: 'Open Marketplace', content: 'In Facebook, tap the Marketplace icon (storefront).' },
     { title: 'Browse or search', content: 'Scroll items near you or search for something specific.' },
     { title: 'Sell an item', content: 'Tap Sell. Take clear photos, write description, set price.' },
@@ -9833,8 +9830,7 @@ const coreGuides: Guide[] = [
     { title: 'Sidebar', content: 'Quick access: Desktop, Downloads, Documents, Pictures.' },
     { title: 'Search', content: 'Use search bar in top-right to find any file.' },
   ] },
-  { slug: 'windows-screenshot-tools', title: 'Screenshots on Windows', excerpt: 'Capture your screen multiple ways.', category: 'windows-guides', tags: ['windows', 'screenshot'], readTime: '4 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/tirNbkEXZII',
+  { slug: 'windows-screenshot-tools', title: 'Screenshots on Windows', excerpt: 'Capture your screen multiple ways.', category: 'windows-guides', tags: ['windows', 'screenshot'], readTime: '4 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tirNbkEXZII', steps: [
     { title: 'Select area', content: 'Windows + Shift + S. Click and drag. Paste with Ctrl+V.' },
     { title: 'Full screen', content: 'Print Screen key. Paste into Paint or document.' },
     { title: 'Auto-save', content: 'Windows + Print Screen. Saves to Pictures > Screenshots.' },
@@ -9858,8 +9854,7 @@ const coreGuides: Guide[] = [
     { title: 'Sidebar', content: 'Desktop, Documents, Downloads, Applications, iCloud Drive.' },
     { title: 'Spotlight', content: 'Command + Space to search for anything instantly.' },
   ] },
-  { slug: 'mac-time-machine', title: 'Set Up Time Machine Backup', excerpt: 'Automatic backups for your Mac.', category: 'mac-guides', tags: ['mac', 'backup', 'time-machine'], readTime: '5 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/nel21v1FRmw',
+  { slug: 'mac-time-machine', title: 'Set Up Time Machine Backup', excerpt: 'Automatic backups for your Mac.', category: 'mac-guides', tags: ['mac', 'backup', 'time-machine'], readTime: '5 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/nel21v1FRmw', steps: [
     { title: 'Connect drive', content: 'Plug in external hard drive. Mac asks to use it for Time Machine.' },
     { title: 'How it works', content: 'Backs up automatically every hour when drive is connected.' },
     { title: 'Restore', content: 'Time Machine icon > Browse Backups > navigate back in time > Restore.' },
@@ -11104,8 +11099,7 @@ const coreGuides: Guide[] = [
     { title: 'LinkedIn Learning', content: 'LinkedIn offers thousands of professional courses (included with Premium, or accessible through many libraries for free). Earn certificates for completed courses that display on your profile.' },
     { title: 'Privacy settings', content: 'Settings > Visibility. Control who sees your connections, profile views, and activity. You can browse profiles privately (they won\'t know you viewed them) but you also won\'t see who viewed yours.' },
   ] },
-  { slug: 'twitter-x-beginners', title: 'How to Use X (Formerly Twitter)', excerpt: 'Follow news, join conversations, and share your thoughts on the real-time social platform.', category: 'social-media', tags: ['twitter', 'x', 'social-media', 'news', 'communication'], readTime: '6 min', thumbnailEmoji: '📢', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    videoUrl: 'https://www.youtube.com/embed/0WFoAZEwDB0',
+  { slug: 'twitter-x-beginners', title: 'How to Use X (Formerly Twitter)', excerpt: 'Follow news, join conversations, and share your thoughts on the real-time social platform.', category: 'social-media', tags: ['twitter', 'x', 'social-media', 'news', 'communication'], readTime: '6 min', thumbnailEmoji: '📢', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0WFoAZEwDB0', steps: [
     { title: 'Create an account', content: 'Visit x.com or download the X app. Sign up with your email or phone number. Choose a username (@handle). Add a profile photo and brief bio describing yourself or interests.' },
     { title: 'Follow accounts', content: 'Follow news outlets, public figures, and topics you care about. Their posts appear in your timeline. X will suggest accounts based on your interests. Start with 20-30 follows.' },
     { title: 'Post (formerly Tweet)', content: 'Click the compose button (+) to write a post (up to 280 characters for free, longer with premium). Add photos, videos, polls, or links. Keep it concise — brevity is valued here.' },
