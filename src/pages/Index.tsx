@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, Phone, Mail,
+  Sparkles, Bot, BookOpen, Phone, Mail, Heart,
   Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone,
   CreditCard
 } from 'lucide-react';
@@ -69,7 +68,6 @@ function RevealSection({ children, className = '' }: { children: React.ReactNode
 const Index = () => {
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
-  const { t } = useLanguage();
   const handleSearch = (e: React.FormEvent) => { e.preventDefault(); if (search.trim()) navigate(`/search?q=${encodeURIComponent(search.trim())}`); };
 
   const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).filter(cat => guides.some(g => g.category === cat)).slice(0, 12);

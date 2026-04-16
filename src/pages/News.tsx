@@ -343,7 +343,87 @@ export default function News() {
           </div>
         </section>
 
+        {/* HackerNews Live Feed */}
+        <section className="bg-muted/30 border-b border-border py-12 px-4">
+          <div className="container max-w-4xl mx-auto">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">🔥</span>
+                <div>
+                  <h2 className="font-bold text-lg">Top Tech Stories Right Now</h2>
+                  <p className="text-xs text-muted-foreground">Live from Hacker News · Updates when you refresh</p>
+                </div>
+              </div>
+              <a
+                href="https://news.ycombinator.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
+              >
+                View on HN <ExternalLink className="h-3 w-3" />
+              </a>
+            </div>
+
+            {hnLoading && (
+              <div className="space-y-3">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <div key={i} className="h-14 rounded-xl bg-muted animate-pulse" />
+                ))}
+              </div>
+            )}
+
+            {hnError && (
+              <div className="text-center py-8 text-muted-foreground text-sm">
+                <p>Could not load live stories right now. Check back in a moment.</p>
+              </div>
+            )}
+
+            {!hnLoading && !hnError && hnStories.length > 0 && (
+              <div className="space-y-2">
+                {hnStories.map((story, i) => (
+                  <a
+                    key={story.id}
+                    href={story.url || `https://news.ycombinator.com/item?id=${story.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-background transition-colors group border border-transparent hover:border-border"
+                  >
+                    <span className="text-sm font-bold text-muted-foreground/40 w-5 text-right shrink-0 mt-0.5">{i + 1}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium leading-snug group-hover:text-primary transition-colors line-clamp-2">
+                        {story.title}
+                      </p>
+                      <div className="flex items-center gap-3 mt-1">
+                        <span className="text-xs text-muted-foreground">▲ {story.score}</span>
+                        {story.url && (
+                          <span className="text-xs text-muted-foreground truncate">
+                            {new URL(story.url).hostname.replace('www.', '')}
+                          </span>
+                        )}
+                        {story.descendants !== undefined && (
+                          <span className="text-xs text-muted-foreground">{story.descendants} comments</span>
+                        )}
+                      </div>
+                    </div>
+                    <ExternalLink className="h-3.5 w-3.5 text-muted-foreground/30 group-hover:text-primary shrink-0 mt-1 transition-colors" />
+                  </a>
+                ))}
+              </div>
+            )}
+
+            <p className="text-xs text-muted-foreground mt-4 text-center">
+              Powered by the <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary">HackerNews API</a> · Stories update on page refresh
+            </p>
+          </div>
+        </section>
+
         <div className="container max-w-4xl mx-auto px-4 py-16">
+          {/* TekSure Curated Stories label */}
+          <div className="flex items-center gap-2 mb-6">
+            <h2 className="font-bold text-lg">TekSure Curated Stories</h2>
+            <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">Plain English summaries</span>
+          </div>
+
           {/* Category Filter */}
           <div className="flex flex-wrap gap-2 mb-12">
             {FILTER_CATEGORIES.map(cat => (
