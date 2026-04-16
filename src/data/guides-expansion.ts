@@ -2031,4 +2031,931 @@ Option 3: If you do not want to leave entirely but the notifications are too muc
       { title: 'Be reachable individually', content: 'After leaving, make sure close contacts know they can still reach you directly by phone or text.' },
     ],
   },
+
+  // ═══════════════════════════════════════════
+  // HEALTH & MEDICAL TECH (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'use-patient-portal-mychart',
+    title: 'How to Use a Patient Portal (MyChart)',
+    excerpt: 'Log in to MyChart or your doctor\'s patient portal to see test results, message your doctor, and manage appointments.',
+    category: 'health-tech' as any,
+    tags: ['MyChart', 'patient portal', 'healthcare', 'doctor', 'medical records'],
+    readTime: '6 min',
+    thumbnailEmoji: '🩺',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A patient portal is a secure website or app that lets you communicate with your doctor's office online. The most common portal is MyChart, used by hospitals and clinics across the country. Through the portal, you can view test results, message your doctor, schedule appointments, request prescription refills, and see your medical records — all without making a phone call.
+
+To get started, ask your doctor's office for a portal activation code or enrollment instructions. Many offices hand these out at appointments or email them. Go to your provider's portal website (often mychart.yourprovider.org) or download the MyChart app. Create an account using the activation code, your personal information, and a password.
+
+Once logged in, the dashboard shows your upcoming appointments, recent messages, and new test results. Tap "Test Results" to view lab work — results often appear within 1-2 days of your test. Tap "Messages" to send a secure message to your doctor's team about non-emergency questions (they typically respond within 1-2 business days).
+
+To schedule or cancel an appointment, look for "Appointments" → "Schedule an Appointment." Some offices let you book directly; others let you request a time and the office confirms.
+
+For prescription refills, go to "Medications" → "Request Refill." Select the medication and your preferred pharmacy. Your doctor approves and sends it to the pharmacy.
+
+Patient portals are secure — your health information is protected by federal law (HIPAA). Make sure to use a strong, unique password and enable two-factor authentication if offered.`,
+    steps: [
+      { title: 'Get your activation code', content: 'Ask your doctor\'s office for a patient portal activation code. They may give it to you at your next visit or send it by email.' },
+      { title: 'Create your account', content: 'Go to the portal website or download the MyChart app. Use the activation code to create an account with your email and a strong password.' },
+      { title: 'View test results', content: 'Tap "Test Results" to see lab work. Results typically appear within 1-2 days of your test.' },
+      { title: 'Message your doctor', content: 'Tap "Messages" to send secure, non-emergency questions to your doctor\'s team. Expect a reply within 1-2 business days.' },
+      { title: 'Schedule appointments', content: 'Go to "Appointments" to schedule, reschedule, or cancel visits. Some offices allow direct booking; others confirm your request.' },
+      { title: 'Request prescription refills', content: 'Go to "Medications" → "Request Refill." Select the medication and pharmacy. Your doctor approves and sends it.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-telehealth-appointment',
+    title: 'How to Set Up a Telehealth Appointment',
+    excerpt: 'See your doctor by video call from home — how to schedule, prepare for, and connect to a telehealth visit.',
+    category: 'health-tech' as any,
+    tags: ['telehealth', 'telemedicine', 'video visit', 'doctor', 'healthcare'],
+    readTime: '6 min',
+    thumbnailEmoji: '💻',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Telehealth lets you see your doctor by video call from the comfort of your home. It is great for follow-up visits, medication reviews, mental health appointments, and non-emergency consultations. Most insurance plans cover telehealth visits the same as in-person visits.
+
+To schedule a telehealth appointment, call your doctor's office and ask for a "virtual visit" or "video visit." Many offices also let you schedule through their patient portal (like MyChart) — look for a "Video Visit" option when booking.
+
+Before your appointment, make sure your device is ready. You need a phone, tablet, or computer with a camera and microphone (all smartphones and most laptops have these built in). Test your internet connection — a stable WiFi connection is important for clear video. Find a quiet, well-lit room for the call.
+
+Your doctor's office will send you a link to join the video visit, usually by email or text. At the scheduled time, click the link. You may be asked to "check in" online and confirm your information. Then wait in a virtual waiting room until your doctor joins.
+
+During the visit, your doctor can see and hear you, ask questions, review your symptoms, look at anything you show on camera (like a skin condition), and prescribe medications. Have your medications, a list of questions, and your pharmacy information ready.
+
+If you have trouble connecting, call your doctor's office. Many have a support line for telehealth technical issues. Check that your browser is up to date, or try a different device if the video is not working.`,
+    steps: [
+      { title: 'Schedule a video visit', content: 'Call your doctor\'s office or use the patient portal to book a telehealth appointment. Ask for a "video visit."' },
+      { title: 'Prepare your device', content: 'Use a phone, tablet, or computer with a camera and microphone. Test your WiFi connection beforehand.' },
+      { title: 'Set up your space', content: 'Find a quiet, well-lit room. Sit near a window for natural light on your face. Minimize background noise.' },
+      { title: 'Join the video call', content: 'Click the link your doctor\'s office sent by email or text. Check in online if prompted. Wait in the virtual waiting room.' },
+      { title: 'Have your information ready', content: 'Keep your medications, list of questions, pharmacy name, and insurance card nearby during the visit.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-medication-reminders-phone',
+    title: 'How to Set Up Medication Reminders on Your Phone',
+    excerpt: 'Never forget to take your medication — use your phone\'s built-in tools or a free app to set daily reminders.',
+    category: 'health-tech' as any,
+    tags: ['medication', 'reminders', 'health', 'phone', 'alarms'],
+    readTime: '5 min',
+    thumbnailEmoji: '💊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Taking medication on schedule is important for your health, and your phone can help. There are several ways to set up daily medication reminders — from basic alarms to dedicated apps that track your medications and refill dates.
+
+The most straightforward method is your phone's built-in alarm or reminder. On iPhone: open the Clock app → Alarms → "+" to add a new alarm. Set the time for your medication, label it with the medication name (tap "Label"), and set it to repeat daily. On Android: open the Clock app → Alarm → "+" → set time, label, and repeat schedule.
+
+For more features, use a dedicated medication reminder app. Medisafe (free, iPhone and Android) lets you add all your medications, set multiple daily reminders, track whether you took each dose, and get refill reminders. It also alerts a family member if you miss a dose.
+
+Apple Health (iPhone): open the Health app → Browse → Medications. Add your medications by name. The app sends reminders and logs when you take each dose. It can also check for potential drug interactions.
+
+If you prefer voice reminders, ask your smart speaker: "Alexa, remind me to take my blood pressure medicine at 8 AM every day" or "Hey Google, set a medication reminder for 9 AM daily."
+
+Whatever method you choose, consistency is key. Set your reminders for the same time each day, and keep your medication in a visible place near where you will be when the reminder goes off.`,
+    steps: [
+      { title: 'Use a basic alarm', content: 'Open Clock → Alarms → "+" → set time, label with medication name, and set to repeat daily. Create separate alarms for each medication.' },
+      { title: 'Try the Medisafe app', content: 'Download Medisafe (free). Add medications, set reminder times, and track doses. It alerts a family member if you miss a dose.' },
+      { title: 'Use Apple Health (iPhone)', content: 'Open Health → Browse → Medications. Add your medications and enable reminders. The app checks for drug interactions.' },
+      { title: 'Use a smart speaker', content: '"Alexa, remind me to take my medicine at 8 AM every day" or "Hey Google, set a medication reminder for 9 AM daily."' },
+      { title: 'Keep medication visible', content: 'Place your medication near where you will be when the reminder goes off — by your coffee maker, bedside table, or breakfast spot.' },
+    ],
+  },
+
+  {
+    slug: 'use-apple-health-google-fit',
+    title: 'How to Use Apple Health or Google Fit',
+    excerpt: 'Track your steps, activity, and health metrics with the free health app already on your phone.',
+    category: 'health-tech' as any,
+    tags: ['Apple Health', 'Google Fit', 'fitness', 'steps', 'health tracking'],
+    readTime: '5 min',
+    thumbnailEmoji: '❤️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone can track your daily steps, walking distance, and other activity without any extra devices — using its built-in motion sensors. Apple Health (iPhone) and Google Fit (Android) are free apps that collect this data and present it in an easy-to-understand dashboard.
+
+Apple Health comes pre-installed on every iPhone (white icon with a red heart). Open it and you will see a Summary dashboard showing your recent activity. The app automatically tracks your steps and walking distance using your phone's motion sensors — you do not need to turn anything on. You can also manually log other health data like weight, blood pressure, sleep, and medications.
+
+Google Fit is available on Android (download from Play Store if not pre-installed). Open it, sign in with your Google account, and set your activity goals. Like Apple Health, it automatically tracks steps and active minutes using your phone's sensors.
+
+Both apps can connect to third-party health devices. If you have a fitness tracker, smart scale, blood pressure monitor, or sleep tracker, check if it connects to Apple Health or Google Fit. Go to the app's settings and look for "Connected Apps" or "Connected Devices."
+
+Set a daily step goal to stay motivated. Health organizations recommend 7,000-10,000 steps per day, but any increase from your current level is beneficial. The apps show your progress throughout the day.
+
+Your health data is private and stored on your device. You control who can see it and which apps can access it. You can also share specific health data with family members or your doctor if you choose.`,
+    steps: [
+      { title: 'Open Apple Health or Google Fit', content: 'iPhone: open the Health app (heart icon). Android: download Google Fit from Play Store and sign in with your Google account.' },
+      { title: 'Review your dashboard', content: 'The main screen shows your daily steps, distance, and activity. Your phone tracks these automatically.' },
+      { title: 'Set a daily goal', content: 'Set a step goal to stay motivated. Start with your current average and increase gradually.' },
+      { title: 'Connect health devices', content: 'In settings, look for "Connected Apps" or "Connected Devices" to link fitness trackers, scales, or blood pressure monitors.' },
+      { title: 'Log additional health data', content: 'Manually log weight, blood pressure, sleep, or medications. Over time, you build a useful health history to share with your doctor.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-fall-detection-apple-watch',
+    title: 'How to Set Up Fall Detection on Apple Watch',
+    excerpt: 'Enable Fall Detection on your Apple Watch so it automatically calls emergency services if you fall and cannot respond.',
+    category: 'health-tech' as any,
+    tags: ['Apple Watch', 'fall detection', 'safety', 'seniors', 'emergency'],
+    readTime: '5 min',
+    thumbnailEmoji: '⌚',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Apple Watch has a built-in Fall Detection feature that can detect when you take a hard fall. If it detects a fall and you do not respond within about a minute, it automatically calls emergency services (911) and sends your location to your emergency contacts. This feature is available on Apple Watch Series 4 and later.
+
+For users age 55 and older, Fall Detection is turned on automatically when you set up your Apple Watch and enter your age. For younger users, you need to enable it manually.
+
+To turn on Fall Detection: on your iPhone, open the Watch app → My Watch → Emergency SOS → Fall Detection → turn it on. You can also access this directly on the Apple Watch: Settings → SOS → Fall Detection.
+
+When the Apple Watch detects a fall, it taps your wrist, sounds an alarm, and displays an alert asking if you are okay. You can tap "I'm OK" to dismiss it, or tap "Emergency SOS" to call for help. If you do not respond and the watch detects you are not moving for about a minute, it starts a 30-second countdown. If you still do not respond, it automatically calls 911, plays a recorded message about your fall, and sends your location to your emergency contacts.
+
+Set up your emergency contacts in the Health app on your iPhone: open Health → tap your profile picture → Medical ID → Edit → add Emergency Contacts. Also fill out your Medical ID with blood type, allergies, conditions, and medications — first responders can access this from your locked Apple Watch or iPhone.`,
+    steps: [
+      { title: 'Open the Watch app on your iPhone', content: 'Open the Watch app (black icon with a watch outline) and tap "My Watch" at the bottom.' },
+      { title: 'Enable Fall Detection', content: 'Tap Emergency SOS → Fall Detection → turn it on. For users 55+, this may already be enabled.' },
+      { title: 'Set up emergency contacts', content: 'Open Health app → profile picture → Medical ID → Edit → add Emergency Contacts. Add at least one trusted person.' },
+      { title: 'Fill out your Medical ID', content: 'In the same Medical ID section, add your blood type, allergies, medical conditions, and medications. First responders can see this.' },
+      { title: 'Know how it works', content: 'After a fall, the watch taps your wrist and asks if you are OK. If you do not respond for about a minute, it calls 911 and texts your emergency contacts with your location.' },
+    ],
+  },
+
+  {
+    slug: 'use-medical-id-phone',
+    title: 'How to Use Medical ID on Your Phone',
+    excerpt: 'Set up your Medical ID so first responders can see your allergies, medications, and emergency contacts from your locked phone.',
+    category: 'health-tech' as any,
+    tags: ['Medical ID', 'emergency', 'health', 'iPhone', 'Android'],
+    readTime: '5 min',
+    thumbnailEmoji: '🆔',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Medical ID is a feature on your phone that stores critical health information — allergies, medications, medical conditions, blood type, and emergency contacts — that first responders and hospital staff can access even when your phone is locked. This can be life-saving if you are in an accident or medical emergency and cannot communicate.
+
+On iPhone: open the Health app → tap your profile picture (top right) → "Medical ID" → "Edit." Fill in your medical conditions, allergies, medications, blood type, weight, height, and at least one emergency contact. Most importantly, toggle on "Show When Locked" so this information is accessible from the lock screen. Also enable "Share During Emergency Call" to automatically send your Medical ID to emergency services when you call 911.
+
+To access someone's Medical ID in an emergency: on the iPhone lock screen, tap "Emergency" → "Medical ID." This works even if the phone is locked.
+
+On Android: open the Settings app → Safety and Emergency (or "About Phone" → "Emergency Information"). Add medical information and emergency contacts. On newer Android phones, this information is accessible from the lock screen by tapping "Emergency Call" then "Emergency Information."
+
+For both iPhone and Android, make sure your emergency contacts know they are listed. They should have their phone nearby and available, especially for older family members.
+
+Review and update your Medical ID at least once a year or whenever your medications, conditions, or emergency contacts change.`,
+    steps: [
+      { title: 'Open Medical ID settings', content: 'iPhone: Health app → profile → Medical ID → Edit. Android: Settings → Safety and Emergency or About Phone → Emergency Information.' },
+      { title: 'Enter your health information', content: 'Add medical conditions, allergies, current medications, blood type, and any other critical health details.' },
+      { title: 'Add emergency contacts', content: 'Add at least one trusted person (family member or close friend) as an emergency contact. Include their relationship to you.' },
+      { title: 'Enable lock screen access', content: 'iPhone: toggle on "Show When Locked" and "Share During Emergency Call." Android: verify the information is accessible from the lock screen.' },
+      { title: 'Review annually', content: 'Update your Medical ID whenever medications, conditions, or emergency contacts change. Check at least once a year.' },
+    ],
+  },
+
+  {
+    slug: 'connect-hearing-aids-phone-bluetooth',
+    title: 'How to Connect Hearing Aids to Your Phone via Bluetooth',
+    excerpt: 'Pair your Bluetooth hearing aids with your iPhone or Android phone to stream calls, music, and audio directly.',
+    category: 'health-tech' as any,
+    tags: ['hearing aids', 'Bluetooth', 'accessibility', 'phone', 'audio'],
+    readTime: '6 min',
+    thumbnailEmoji: '👂',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Many modern hearing aids connect to your phone via Bluetooth. This lets you stream phone calls, music, podcasts, and other audio directly to your hearing aids — like wireless earbuds designed for your hearing needs. You can also use your phone as a remote control to adjust volume and settings.
+
+First, check if your hearing aids support Bluetooth. Most hearing aids made after 2018 from brands like Phonak, Oticon, ReSound, Signia, Starkey, and Widex include Bluetooth connectivity. Ask your audiologist or check the manufacturer's website.
+
+On iPhone: iPhones have built-in support for "Made for iPhone" hearing aids. Go to Settings → Accessibility → Hearing Devices. Put your hearing aids in pairing mode (usually by opening and closing the battery door, or following the instructions from your hearing aid brand). Your iPhone will detect them — tap to pair.
+
+On Android: go to Settings → Connected Devices → Pair New Device. Put your hearing aids in pairing mode. They should appear in the list. For ASHA (Audio Streaming for Hearing Aids) compatible hearing aids and Android phones, go to Settings → Accessibility → Hearing Devices.
+
+Many hearing aid manufacturers also have companion apps (Phonak myPhonak, Oticon ON, ReSound Smart 3D) that offer additional controls: adjusting bass and treble, creating custom listening programs for different environments, and locating lost hearing aids.
+
+If you have trouble pairing, make sure your hearing aids have fresh batteries (or are charged), your phone's Bluetooth is turned on, and you are within 3 feet of your phone during pairing.`,
+    steps: [
+      { title: 'Check Bluetooth compatibility', content: 'Verify your hearing aids support Bluetooth. Check the manufacturer\'s website or ask your audiologist.' },
+      { title: 'Put hearing aids in pairing mode', content: 'Open and close the battery door, or follow your hearing aid\'s specific pairing instructions. The hearing aids are ready to connect.' },
+      { title: 'Pair on iPhone', content: 'Settings → Accessibility → Hearing Devices. Your iPhone detects them. Tap to pair.' },
+      { title: 'Pair on Android', content: 'Settings → Connected Devices → Pair New Device. Or Settings → Accessibility → Hearing Devices for ASHA-compatible aids.' },
+      { title: 'Download the companion app', content: 'Get your hearing aid brand\'s app for extra controls: volume, programs, equalizer, and lost hearing aid locator.' },
+    ],
+  },
+
+  {
+    slug: 'track-sleep-wearable',
+    title: 'How to Track Your Sleep with a Wearable',
+    excerpt: 'Use your smartwatch or fitness tracker to understand your sleep patterns and improve your rest.',
+    category: 'health-tech' as any,
+    tags: ['sleep tracking', 'wearable', 'fitness tracker', 'health', 'Apple Watch'],
+    readTime: '5 min',
+    thumbnailEmoji: '😴',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Many smartwatches and fitness trackers can monitor your sleep — how long you slept, how often you woke up, and how much time you spent in different sleep stages (light, deep, and REM sleep). This information helps you understand your sleep quality and make changes to improve it.
+
+Apple Watch: open the Watch app on your iPhone → Sleep → enable Sleep Tracking. Wear your Apple Watch to bed. In the morning, open the Health app → Browse → Sleep to see your data. The watch also offers a Wind Down feature that dims your screen and limits notifications before bedtime.
+
+Fitbit: sleep tracking is automatic — wear your Fitbit to bed and check the Fitbit app in the morning. It shows time asleep, sleep stages, and a Sleep Score (0-100).
+
+Samsung Galaxy Watch: wear it to bed and check Samsung Health the next morning for sleep duration and stages.
+
+For accurate tracking, wear your device snugly on your wrist (not too tight, not too loose). Charge your device before bed if the battery is low — most need at least 20-30% charge to track a full night.
+
+What to look for: most adults need 7-9 hours of sleep. If your tracker consistently shows less, or if you spend very little time in deep sleep, consider adjusting your bedtime, reducing caffeine after noon, keeping your bedroom cool and dark, and putting screens away 30 minutes before bed.`,
+    steps: [
+      { title: 'Enable sleep tracking', content: 'Apple Watch: Watch app → Sleep → enable tracking. Fitbit: automatic. Samsung: automatic. Wear your device to bed.' },
+      { title: 'Wear your device overnight', content: 'Make sure the device fits snugly on your wrist and has enough battery (20%+ for a full night).' },
+      { title: 'Check your data in the morning', content: 'Open your device\'s health app to see time asleep, wake-ups, and sleep stages (light, deep, REM).' },
+      { title: 'Review trends over time', content: 'Look at weekly and monthly sleep trends rather than single nights. Consistent patterns are more meaningful.' },
+      { title: 'Make adjustments based on data', content: 'If you consistently get less than 7 hours or little deep sleep, try adjusting bedtime, reducing caffeine, and limiting screens before bed.' },
+    ],
+  },
+
+  {
+    slug: 'share-health-data-with-doctor',
+    title: 'How to Share Health Data with Your Doctor',
+    excerpt: 'Export and share health information from your phone or wearable with your doctor for better care.',
+    category: 'health-tech' as any,
+    tags: ['health data', 'doctor', 'Apple Health', 'medical records', 'sharing'],
+    readTime: '5 min',
+    thumbnailEmoji: '📋',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If you track your health with a phone or wearable device — blood pressure readings, blood glucose levels, heart rate, activity, or sleep — sharing this data with your doctor gives them valuable information they cannot get from a single office visit. Trends over weeks and months can reveal patterns that help with diagnosis and treatment decisions.
+
+Apple Health (iPhone) can share data directly with your healthcare provider if they support it. Open Health → Sharing → "Share with a Healthcare Provider." If your provider uses a compatible system (many MyChart providers support this), your data flows automatically. Otherwise, you can export specific data: Health → Browse → select a category → "Show All Data" → export icon → share via email or AirDrop.
+
+For blood pressure or blood glucose readings: if you log readings in a health app, bring your phone to your appointment and show the history to your doctor. Most doctors find this very helpful. You can also take screenshots of your data trends and print them out.
+
+Fitbit and Samsung Health allow you to export data as CSV files through the app or website, which you can email to your doctor. Fitbit: go to fitbit.com → Settings → Data Export. Samsung Health: Menu → Settings → Download Personal Data.
+
+When sharing, focus on what is relevant to your current health concerns. If you are tracking blood pressure, show the blood pressure trends. If you are working on fitness, show step counts and active minutes. Your doctor does not need to see every piece of data.
+
+Before your appointment, prepare a one-page summary: your recent averages, any concerning readings, and questions about the data. This makes the most of your limited appointment time.`,
+    steps: [
+      { title: 'Review what you are tracking', content: 'Check what health data your phone or wearable collects — blood pressure, glucose, heart rate, steps, sleep, weight.' },
+      { title: 'Connect to your provider (iPhone)', content: 'Apple Health → Sharing → "Share with a Healthcare Provider." If your doctor uses MyChart, data may sync automatically.' },
+      { title: 'Export specific data', content: 'In your health app, navigate to the data category → export or share. Save as a file to email, or take screenshots of trends.' },
+      { title: 'Bring your phone to appointments', content: 'Show your doctor the health app data directly on your phone. Doctors find visual trend charts very useful.' },
+      { title: 'Prepare a summary', content: 'Before your appointment, note your recent averages, concerning readings, and specific questions about the data.' },
+    ],
+  },
+
+  {
+    slug: 'use-blood-pressure-monitor-app',
+    title: 'How to Use a Blood Pressure Monitor App',
+    excerpt: 'Connect a Bluetooth blood pressure monitor to your phone to track readings over time and share with your doctor.',
+    category: 'health-tech' as any,
+    tags: ['blood pressure', 'health monitoring', 'Bluetooth', 'medical', 'health app'],
+    readTime: '5 min',
+    thumbnailEmoji: '🫀',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Tracking your blood pressure at home gives you and your doctor a much more complete picture of your cardiovascular health than occasional office readings. Many blood pressure monitors now connect to your phone via Bluetooth, automatically logging each reading so you can see trends over time.
+
+Popular Bluetooth-connected blood pressure monitors include Omron (connects to the Omron Connect app), Withings BPM (connects to the Withings Health Mate app), and QardioArm (connects to the Qardio app). These monitors cost $50-100 and are available at pharmacies and online retailers.
+
+To set up: take the monitor out of the box and install batteries or charge it. Download the monitor's companion app (Omron Connect, Withings Health Mate, or Qardio) on your phone. Create an account and follow the in-app instructions to pair the monitor via Bluetooth.
+
+To take a reading: sit in a chair with your feet flat on the floor. Rest for 5 minutes before measuring. Place the cuff on your upper arm (follow the instructions that came with the monitor for proper placement). Press start. The monitor inflates, takes your reading, and automatically sends it to the app.
+
+The app stores every reading with the date and time. Over weeks and months, you build a clear picture of your blood pressure trends. Most apps display charts and averages. You can share these with your doctor at your next appointment.
+
+Normal blood pressure is below 120/80. Talk to your doctor about your target if you are on medication. The American Heart Association recommends measuring at the same time each day for consistent results.`,
+    steps: [
+      { title: 'Get a Bluetooth blood pressure monitor', content: 'Purchase an Omron, Withings, or QardioArm Bluetooth-connected monitor from a pharmacy or online retailer ($50-100).' },
+      { title: 'Download the companion app', content: 'Get the monitor\'s app (Omron Connect, Withings Health Mate, or Qardio) from the App Store or Google Play Store.' },
+      { title: 'Pair via Bluetooth', content: 'Follow the app instructions to connect the monitor to your phone. Keep Bluetooth turned on during pairing.' },
+      { title: 'Take a proper reading', content: 'Sit in a chair, feet flat, rest 5 minutes. Place the cuff on your upper arm correctly. Press start and keep still.' },
+      { title: 'Review trends and share', content: 'Check your app for charts and averages over time. Bring your phone to doctor appointments to share the data.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // LIFE TRANSITIONS (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-new-iphone-complete',
+    title: 'How to Set Up a Brand New iPhone (Complete Guide)',
+    excerpt: 'Unbox and set up your new iPhone from scratch — Apple ID, WiFi, apps, and transferring data from your old phone.',
+    category: 'life-transitions' as any,
+    tags: ['iPhone', 'setup', 'Apple', 'new phone', 'beginners'],
+    readTime: '10 min',
+    videoUrl: 'https://www.youtube.com/embed/7LcXfRZvdyo',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Getting a new iPhone is exciting, and setting it up correctly from the start will save you headaches later. This guide walks you through the entire process from unboxing to your first apps.
+
+Turn on your new iPhone by holding the side button until the Apple logo appears. Select your language and region. The iPhone asks if you want to set it up as new or transfer from another device.
+
+If you have an old iPhone: place both phones next to each other. A "Quick Start" animation appears on the old phone — hold the new phone's camera over it. Your settings, accounts, and data transfer automatically over WiFi. This can take 30 minutes to several hours depending on how much data you have.
+
+If this is your first iPhone: choose "Set Up Manually." Connect to your WiFi network and sign in with your Apple ID (or create one for free). Set up Face ID or Touch ID by following the on-screen instructions — this lets you unlock your phone with your face or fingerprint.
+
+Choose whether to enable Location Services (recommended for maps, weather, and Find My iPhone). Set up Siri by reading a few phrases aloud. Choose your display preferences (text size, display zoom).
+
+Once at the home screen, open the App Store (blue icon with an "A") and download the apps you need: your bank's app, email, WhatsApp, social media, and anything else you use regularly. Sign in to each with your existing accounts.
+
+Set up your email: Settings → Mail → Accounts → Add Account. Choose your email provider (Gmail, Outlook, Yahoo, etc.) and sign in. Set up your voicemail: open the Phone app → Voicemail → Set Up Now.`,
+    steps: [
+      { title: 'Turn on and select language', content: 'Hold the side button until the Apple logo appears. Select your language and region.' },
+      { title: 'Transfer from old phone (if applicable)', content: 'Place old and new iPhones next to each other. Follow the Quick Start animation to transfer data automatically.' },
+      { title: 'Connect to WiFi and sign in', content: 'Select your WiFi network, enter the password, and sign in with your Apple ID. Create one for free if needed.' },
+      { title: 'Set up Face ID or Touch ID', content: 'Follow the on-screen instructions to register your face or fingerprint. This unlocks your phone and authorizes purchases.' },
+      { title: 'Download your apps', content: 'Open the App Store and download the apps you need — banking, email, messaging, social media. Sign in to each.' },
+      { title: 'Set up email and voicemail', content: 'Settings → Mail → Accounts → Add Account for email. Phone app → Voicemail → Set Up Now for voicemail.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-new-android-phone',
+    title: 'How to Set Up a Brand New Android Phone',
+    excerpt: 'Set up your new Android phone step by step — Google account, WiFi, apps, and transferring data from your old phone.',
+    category: 'life-transitions' as any,
+    tags: ['Android', 'setup', 'new phone', 'Google', 'beginners'],
+    readTime: '10 min',
+    thumbnailEmoji: '🤖',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Setting up a new Android phone takes about 15-20 minutes. Whether this is your first Android or you are upgrading from an older phone, this guide walks you through every step.
+
+Turn on your phone by holding the power button until the screen lights up. Select your language and connect to your WiFi network by selecting it and entering the password.
+
+The phone asks if you want to copy data from another device. If you have an old Android phone, you can transfer using a cable (if included) or wirelessly. The setup wizard walks you through this. If you are coming from an iPhone, you can use the "Switch to Android" option to transfer contacts, photos, and some data.
+
+Sign in with your Google account (the same one you use for Gmail). If you do not have one, create a free Google account during setup. Your Google account syncs your contacts, calendar, photos, and app purchases across all your devices.
+
+Set up a screen lock for security: choose PIN, pattern, or password, and set up fingerprint unlock if your phone has a reader. Enable Google's "Find My Device" so you can locate your phone if lost.
+
+Once at the home screen, open the Google Play Store and download your essential apps: your bank's app, WhatsApp, social media, and anything else you use. Sign in to each with your existing accounts.
+
+Check for software updates: Settings → System → Software Update. Installing the latest update ensures you have the newest security patches and features.`,
+    steps: [
+      { title: 'Turn on and connect to WiFi', content: 'Hold the power button to turn on. Select your language and connect to your WiFi network.' },
+      { title: 'Transfer data from old phone', content: 'Follow the setup wizard to transfer data from your old phone — wirelessly or with a cable. You can also transfer from iPhone.' },
+      { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. This syncs contacts, calendar, photos, and apps.' },
+      { title: 'Set up security', content: 'Choose a PIN, pattern, or password. Set up fingerprint unlock. Enable "Find My Device" in Settings → Security.' },
+      { title: 'Download your apps', content: 'Open the Google Play Store and download banking, messaging, social media, and other apps you need.' },
+      { title: 'Check for updates', content: 'Go to Settings → System → Software Update. Install any available updates for security and new features.' },
+    ],
+  },
+
+  {
+    slug: 'switch-iphone-to-android',
+    title: 'How to Switch from iPhone to Android',
+    excerpt: 'Move your contacts, photos, messages, and apps from iPhone to a new Android phone — without losing anything.',
+    category: 'life-transitions' as any,
+    tags: ['switch', 'iPhone', 'Android', 'data transfer', 'migration'],
+    readTime: '8 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Switching from iPhone to Android is a bigger change than upgrading within the same platform, but modern transfer tools make it much smoother than it used to be. Here is what transfers and what you need to handle manually.
+
+What transfers automatically: contacts, photos and videos, calendar events, and free apps that exist on both platforms. What requires manual work: paid apps (you may need to re-purchase), iMessage threads (important to deregister — see below), app-specific data (game progress, etc.), and Apple-exclusive features (FaceTime, iMessage, AirDrop).
+
+Before switching, make sure everything is backed up. Go to iPhone Settings → your name → iCloud → iCloud Backup → Back Up Now. Also make sure your photos are backed up — download Google Photos on your iPhone and let it upload your full photo library before switching.
+
+The most critical step: turn off iMessage before switching. If you do not do this, text messages from iPhone users will continue going to iMessage (which your Android phone cannot receive) instead of SMS. Go to Settings → Messages → toggle off iMessage. Also go to Settings → FaceTime → toggle it off.
+
+During Android setup, use Google's "Switch to Android" tool or Samsung's "Smart Switch" app. These tools transfer contacts, photos, videos, calendar events, and more from your iPhone. Follow the on-screen instructions — the process usually takes 15-30 minutes depending on how much data you have.
+
+After switching, download the Android versions of your apps from the Google Play Store and sign in to each one. Set up your email, bank apps, and messaging apps on the new phone.`,
+    steps: [
+      { title: 'Back up your iPhone', content: 'Settings → your name → iCloud → iCloud Backup → Back Up Now. Also download Google Photos on iPhone and back up all photos.' },
+      { title: 'Turn off iMessage and FaceTime', content: 'This is critical. Settings → Messages → toggle off iMessage. Settings → FaceTime → toggle off. Without this step, you will miss text messages.' },
+      { title: 'Use the transfer tool during setup', content: 'During Android setup, use "Switch to Android" or Samsung Smart Switch to transfer contacts, photos, calendar, and more from your iPhone.' },
+      { title: 'Download your apps', content: 'Open Google Play Store and download the Android versions of your apps. Sign in to each with your existing accounts.' },
+      { title: 'Verify everything transferred', content: 'Check that contacts, photos, and calendar events are on your new phone. If anything is missing, it may still be in your iCloud backup.' },
+    ],
+  },
+
+  {
+    slug: 'switch-android-to-iphone',
+    title: 'How to Switch from Android to iPhone',
+    excerpt: 'Move your contacts, photos, apps, and data from Android to a new iPhone using Apple\'s Move to iOS tool.',
+    category: 'life-transitions' as any,
+    tags: ['switch', 'Android', 'iPhone', 'data transfer', 'migration'],
+    readTime: '8 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Switching from Android to iPhone is straightforward with Apple's "Move to iOS" app, which transfers your contacts, message history, photos, videos, web bookmarks, mail accounts, and calendars. Free apps that exist on both platforms are also suggested for download.
+
+Before switching, make sure your Android phone is connected to WiFi and has enough battery (or is plugged in). Download the "Move to iOS" app from the Google Play Store on your Android phone. Do not start this process after you have already set up your iPhone — you need to do it during the initial iPhone setup.
+
+Turn on your new iPhone and begin setup. When you reach the "Apps & Data" screen, select "Move Data from Android." Your iPhone will display a code. Open the Move to iOS app on your Android phone and enter this code. The two devices will connect and you select what to transfer.
+
+The transfer can take anywhere from a few minutes to over an hour depending on how much data you have. Do not use either phone during the transfer. When complete, finish setting up your iPhone.
+
+After setup, open the App Store and download the iPhone versions of your apps. Sign in to each with your existing accounts. Your contacts and photos should already be on the new iPhone.
+
+Note: some Android-specific features do not exist on iPhone, and vice versa. You gain iMessage, FaceTime, AirDrop, and tight integration with other Apple devices. You may need to adjust to differences in how notifications, file management, and customization work.`,
+    steps: [
+      { title: 'Download Move to iOS on Android', content: 'On your Android phone, download the "Move to iOS" app from the Google Play Store. Make sure both phones are on WiFi and charged.' },
+      { title: 'Start iPhone setup', content: 'Turn on your new iPhone and follow the setup steps. At "Apps & Data," select "Move Data from Android."' },
+      { title: 'Enter the code', content: 'Your iPhone displays a code. Enter it in the Move to iOS app on your Android phone. The devices connect.' },
+      { title: 'Select what to transfer', content: 'Choose contacts, messages, photos, videos, bookmarks, and other data to transfer. Wait for the process to complete.' },
+      { title: 'Download your apps', content: 'After setup, open the App Store and download iPhone versions of your apps. Sign in to each with existing accounts.' },
+    ],
+  },
+
+  {
+    slug: 'transfer-data-new-computer',
+    title: 'How to Transfer Your Data to a New Computer',
+    excerpt: 'Move your files, photos, and settings from an old computer to a new one — Windows or Mac.',
+    category: 'life-transitions' as any,
+    tags: ['computer', 'data transfer', 'backup', 'Windows', 'Mac'],
+    readTime: '8 min',
+    thumbnailEmoji: '💻',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Getting a new computer is exciting, but you need to bring your files, photos, and documents along. Here are the most reliable ways to transfer your data.
+
+For Windows to Windows: use an external hard drive or USB flash drive. On your old computer, copy your important folders (Documents, Pictures, Music, Desktop, and Downloads) to the external drive. Plug the drive into your new computer and copy the folders to the same locations. For a more automated approach, use Microsoft's OneDrive — sign in to OneDrive on your old computer, let it sync your files to the cloud, then sign in on your new computer and your files download automatically.
+
+For Mac to Mac: use Apple's Migration Assistant. Connect both Macs to the same WiFi network. On the new Mac, open Migration Assistant (Applications → Utilities). On the old Mac, also open Migration Assistant. Follow the on-screen steps — it transfers your files, apps, settings, and even user accounts. You can also use Time Machine: back up your old Mac to an external drive, then during new Mac setup, choose "Restore from Time Machine Backup."
+
+For Windows to Mac (or vice versa): use an external drive or cloud storage (Google Drive, Dropbox, or OneDrive) to move files. Copy files from your old computer to the cloud or drive, then download them on the new one. Note that Windows programs do not run on Mac and vice versa — you will need to download Mac versions of your software.
+
+Before getting rid of your old computer: make sure everything is transferred, sign out of all accounts, and reset the computer to factory settings. Windows: Settings → System → Recovery → Reset this PC. Mac: System Settings → General → Transfer or Reset → Erase All Content and Settings.`,
+    steps: [
+      { title: 'Identify your important files', content: 'Check Documents, Pictures, Music, Desktop, and Downloads folders. Also note browser bookmarks and email accounts.' },
+      { title: 'Choose a transfer method', content: 'External drive (fastest for large amounts), cloud storage (OneDrive, Google Drive), or built-in tools (Mac Migration Assistant).' },
+      { title: 'Copy files to the transfer medium', content: 'Copy your folders to the external drive or upload to cloud storage. Verify the files are there before proceeding.' },
+      { title: 'Move files to the new computer', content: 'Connect the external drive or sign in to cloud storage on your new computer. Copy files to the appropriate folders.' },
+      { title: 'Download your software', content: 'Install the programs you need on the new computer. Sign in to your accounts (email, browser, banking, etc.).' },
+      { title: 'Reset your old computer', content: 'After verifying everything transferred, sign out of all accounts and reset to factory settings before disposing of the old computer.' },
+    ],
+  },
+
+  {
+    slug: 'help-family-set-up-new-device',
+    title: 'How to Help a Family Member Set Up Their New Device',
+    excerpt: 'A patient, step-by-step approach to helping a parent, grandparent, or other family member with a new phone or tablet.',
+    category: 'life-transitions' as any,
+    tags: ['family', 'setup', 'helping others', 'seniors', 'patience'],
+    readTime: '6 min',
+    thumbnailEmoji: '👨‍👩‍👧‍👦',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Helping a family member set up a new device is a generous act — and it goes smoother when you approach it with a plan. Whether you are helping in person or over the phone, here is a framework that works.
+
+Before you start, gather what you need: the new device, charger, WiFi password, their Apple ID or Google account credentials (write these down and store safely), and any accounts they use (email, banking, social media).
+
+Set up the essentials first — WiFi connection, Apple ID or Google account, screen lock, and email. Do not overwhelm them with every feature at once. Focus on the 3-5 things they will use most: phone calls, texting, email, photos, and maybe one or two apps (video calling, banking).
+
+As you set things up, explain what you are doing and why. Instead of doing everything silently, narrate: "I am connecting you to WiFi so the phone can access the internet." After setting something up, have them practice it while you are still there.
+
+Increase the text size: iPhone: Settings → Display & Brightness → Text Size. Android: Settings → Display → Font Size. This makes the screen much more comfortable to read.
+
+Write down key information on paper (not in the phone): their Apple ID or Google account email and password, WiFi password, phone PIN, and instructions for the 3-5 things they will use most. Keep this paper in a safe place.
+
+Before you leave, make sure they can: make a phone call, send and receive a text message, check their email, and take and view a photo. Schedule a follow-up check-in for a week later to answer questions that come up with daily use.`,
+    steps: [
+      { title: 'Gather account information', content: 'Collect WiFi password, Apple ID or Google account credentials, and login info for email and apps they use. Write these down on paper.' },
+      { title: 'Set up essentials', content: 'Connect to WiFi, sign in with their account, set a screen lock, and set up email. Focus on what they will use most.' },
+      { title: 'Increase text size', content: 'iPhone: Settings → Display & Brightness → Text Size. Android: Settings → Display → Font Size. Make it comfortable for them.' },
+      { title: 'Have them practice while you are there', content: 'Walk them through making a call, sending a text, and opening their email. Let them do it themselves with your guidance.' },
+      { title: 'Leave written instructions', content: 'Write down steps for their most common tasks on paper. Include account passwords stored in a safe place.' },
+      { title: 'Schedule a follow-up', content: 'Check in after a week to answer questions. Be patient — learning new technology takes time and repetition.' },
+    ],
+  },
+
+  {
+    slug: 'close-online-accounts-deceased',
+    title: 'How to Close Online Accounts of a Deceased Loved One',
+    excerpt: 'A compassionate guide to managing the digital accounts of someone who has passed away.',
+    category: 'life-transitions' as any,
+    tags: ['deceased', 'accounts', 'digital estate', 'family', 'end of life'],
+    readTime: '8 min',
+    thumbnailEmoji: '🕊️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `When a loved one passes away, their online accounts do not close automatically. Email, social media, banking, subscriptions, and other accounts remain active — and in some cases, they continue to charge fees. Handling these accounts is an important part of settling their affairs.
+
+Start with the most critical accounts first: financial accounts and recurring charges. Check their bank and credit card statements (online or paper) for recurring subscriptions. Cancel these to stop ongoing charges. Contact their bank to close or freeze accounts — you will typically need a death certificate and proof that you are the executor or next of kin.
+
+For email accounts: gaining access to a deceased person's email is important because it is often the key to finding and closing their other accounts. Google (Gmail) has an "Inactive Account Manager" and a process for requesting access. Apple has a "Digital Legacy" program. In both cases, you need a death certificate and legal documentation.
+
+For social media: Facebook allows you to "memorialize" an account (it stays visible with "Remembering" next to the name) or delete it. Go to facebook.com/help/contact/228813257197480. Instagram and Twitter/X have similar processes. Search for "[platform name] deceased account" to find the request form.
+
+For subscriptions: check their phone for apps with active subscriptions. iPhone: sign in to their Apple ID → Settings → Subscriptions. Cancel each one. For other subscriptions (Netflix, Spotify, gym memberships), contact each company with a death certificate.
+
+Keep a record of every account you close, including confirmation numbers and dates. This helps if there are any disputes later.
+
+If the deceased had a password manager or left a written list of accounts and passwords, this makes the process much more manageable. Consider this as motivation to create your own digital estate plan.`,
+    steps: [
+      { title: 'Gather documentation', content: 'Obtain certified copies of the death certificate. Locate the will or trust to identify the executor. Gather any account information the deceased may have kept.' },
+      { title: 'Address financial accounts first', content: 'Contact banks and credit card companies with the death certificate. Review statements for recurring charges and cancel subscriptions.' },
+      { title: 'Request email access', content: 'Contact the email provider\'s deceased account process. Google: Inactive Account Manager or data request. Apple: Digital Legacy program.' },
+      { title: 'Handle social media', content: 'For each platform, search "[platform] deceased account" to find the request form. Choose to memorialize or delete.' },
+      { title: 'Cancel phone and subscriptions', content: 'Contact the cell phone carrier. Check for app subscriptions on their phone. Cancel streaming services, gym memberships, and other recurring services.' },
+      { title: 'Keep records', content: 'Document every account you close with confirmation numbers and dates. Store these with other estate documents.' },
+    ],
+  },
+
+  {
+    slug: 'digitize-old-photos-documents',
+    title: 'How to Digitize Old Photos and Documents',
+    excerpt: 'Turn printed photos, letters, and important documents into digital files using your phone or a scanner.',
+    category: 'life-transitions' as any,
+    tags: ['photos', 'scanning', 'documents', 'preservation', 'phone'],
+    readTime: '6 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Printed photos fade over time, and paper documents can be lost in floods, fires, or moves. Digitizing your most important photos and documents preserves them forever and makes them available for sharing with family.
+
+The fastest free option is Google PhotoScan (free app, iPhone and Android). It is specifically designed for scanning printed photos — it reduces glare, automatically crops, and enhances colors. Open the app, position your phone above the photo, tap the shutter button, then move your phone to capture four corner markers. The app combines these into a single, glare-free digital copy.
+
+For documents (birth certificates, insurance policies, legal papers), use your phone's built-in scanner. iPhone: open the Notes app → create a new note → tap the camera icon → "Scan Documents." Position the document under the camera and it automatically captures and crops it. You can save as PDF. Android: open Google Drive → tap "+" → "Scan." Same process — position the document and it captures and saves it.
+
+For large photo projects (shoe boxes full of old photos), consider a dedicated photo scanner ($50-100) or a scanning service. Companies like ScanCafe and GoPhoto send you a prepaid box — you mail your photos, they scan them at high quality, and mail them back. Prices range from 10 to 40 cents per photo.
+
+After digitizing, back up your files. Upload to Google Photos, iCloud, or a cloud storage service. Also keep a copy on an external hard drive stored in a different location than the originals (a family member's house, a safe deposit box).
+
+Start with the most irreplaceable photos first — the oldest ones, the ones that are fading or damaged, and photos of people who have passed away. These are the ones you cannot replace.`,
+    steps: [
+      { title: 'Download a scanning app', content: 'For photos: Google PhotoScan (App Store or Google Play). For documents: use iPhone Notes scanner or Google Drive scanner.' },
+      { title: 'Set up good lighting', content: 'Use natural daylight or a bright, even lamp. Avoid harsh overhead lighting that creates shadows. Place photos on a flat, dark surface.' },
+      { title: 'Scan your photos', content: 'Open PhotoScan, position above the photo, tap the shutter, and move your phone to capture the corner markers. The app removes glare automatically.' },
+      { title: 'Scan important documents', content: 'iPhone: Notes → camera → Scan Documents. Android: Google Drive → "+" → Scan. Save important docs as PDFs.' },
+      { title: 'Back up your digital files', content: 'Upload scanned files to Google Photos, iCloud, or another cloud service. Keep an extra copy on an external hard drive in a different location.' },
+    ],
+  },
+
+  {
+    slug: 'prepare-old-phone-selling-trading',
+    title: 'How to Prepare Your Old Phone Before Selling or Trading It',
+    excerpt: 'Erase your personal data and reset your old phone before selling, trading in, or giving it away.',
+    category: 'life-transitions' as any,
+    tags: ['phone', 'selling', 'trade-in', 'factory reset', 'privacy'],
+    readTime: '6 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Before you sell, trade in, or give away your old phone, you need to erase all your personal data. Your phone contains emails, photos, bank apps, passwords, and personal information that you do not want a stranger to have. A factory reset wipes everything and returns the phone to its original state.
+
+Step 1: Back up everything first. iPhone: Settings → your name → iCloud → iCloud Backup → Back Up Now. Android: Settings → System → Backup → Back Up Now. Make sure photos are backed up to Google Photos or iCloud before proceeding.
+
+Step 2: Sign out of all your accounts. This is important — if you skip this step, the new owner may be locked out of the phone, or worse, have access to your accounts.
+
+iPhone: go to Settings → your name → scroll down → "Sign Out." Enter your Apple ID password. This removes your iCloud account and turns off Find My iPhone (which must be off for the new owner to use the phone). Also sign out of iMessage: Settings → Messages → toggle off iMessage.
+
+Android: go to Settings → Accounts → tap each account → "Remove Account." Also go to Settings → Security → Device Admin → disable "Find My Device."
+
+Step 3: Factory reset. iPhone: Settings → General → Transfer or Reset iPhone → Erase All Content and Settings. Android: Settings → System → Reset Options → Erase All Data (Factory Reset).
+
+Step 4: Remove your SIM card and any memory cards. Your SIM card contains your phone number and should go in your new phone. Memory cards may contain personal photos and files.
+
+After the reset, the phone restarts as if it were brand new — ready for the next owner.`,
+    steps: [
+      { title: 'Back up your data', content: 'iPhone: Settings → your name → iCloud → Back Up Now. Android: Settings → System → Backup. Verify photos are backed up.' },
+      { title: 'Sign out of all accounts', content: 'iPhone: Settings → your name → Sign Out (enter Apple ID password). Android: Settings → Accounts → remove each account.' },
+      { title: 'Turn off Find My / Find My Device', content: 'Signing out of your account on iPhone turns off Find My iPhone. On Android: Settings → Security → disable Find My Device.' },
+      { title: 'Factory reset', content: 'iPhone: Settings → General → Transfer or Reset → Erase All Content and Settings. Android: Settings → System → Reset → Erase All Data.' },
+      { title: 'Remove SIM and memory cards', content: 'Use the SIM tool (or a paperclip) to pop out the SIM tray. Remove any microSD memory card. These go with you, not the phone.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-tech-new-home-moving',
+    title: 'How to Set Up Tech in a New Home (Moving Checklist)',
+    excerpt: 'A moving checklist for getting your internet, WiFi, smart home devices, and streaming services working in a new home.',
+    category: 'life-transitions' as any,
+    tags: ['moving', 'internet', 'WiFi', 'smart home', 'setup'],
+    readTime: '7 min',
+    thumbnailEmoji: '🏡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Moving to a new home means setting up your technology from scratch. Here is a checklist to make sure everything works when you arrive.
+
+Before moving day: schedule your internet installation. Contact an internet service provider (ISP) for your new address at least 2 weeks before your move. If your current provider serves the new address, you can often transfer your service. Otherwise, research providers at your new address — use broadbandnow.com to see what is available.
+
+If you are keeping your current router, unplug it and pack it carefully. If the ISP is providing a new one, confirm the installation appointment.
+
+Moving day tech checklist: bring your router, modem, streaming devices (Roku, Fire Stick, Apple TV), smart speakers, security cameras, and all cables and power adapters. Label cables before unpacking so you know what goes where.
+
+After arrival: set up internet first — everything else depends on it. Plug in your modem and router. If the ISP is installing, they will handle this. Once you have WiFi, reconnect your devices.
+
+All your smart home devices need to be reconnected to the new WiFi network. Smart speakers, smart bulbs, smart plugs, thermostats, and cameras: open each device's app and update the WiFi connection. For some devices (like smart bulbs), you may need to reset them and set them up from scratch.
+
+Update your WiFi-dependent settings: security camera motion zones (different house layout), smart speaker location settings (for local weather and news), and streaming device location (for local channels).
+
+Update your address on important accounts: bank, credit cards, insurance, voter registration, USPS (set up mail forwarding at usps.com), and any subscriptions that ship to your home.`,
+    steps: [
+      { title: 'Schedule internet 2 weeks early', content: 'Contact an ISP to set up internet at your new address before moving day. Use broadbandnow.com to compare providers.' },
+      { title: 'Pack tech carefully', content: 'Bring your router, streaming devices, smart speakers, cameras, and all cables. Label cables before packing.' },
+      { title: 'Set up internet first', content: 'Plug in modem and router. Wait for the connection to activate. Everything else depends on WiFi being ready.' },
+      { title: 'Reconnect smart home devices', content: 'Open each device\'s app and update the WiFi network. Some devices may need a full reset and re-setup.' },
+      { title: 'Update location-based settings', content: 'Update smart speaker location (weather/news), camera motion zones, and streaming device location (local channels).' },
+      { title: 'Update your address everywhere', content: 'Bank, credit cards, insurance, voter registration, USPS mail forwarding (usps.com), and subscriptions.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // INTERNET & CONNECTIVITY (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'choose-right-internet-plan',
+    title: 'How to Choose the Right Internet Plan for Your Home',
+    excerpt: 'Understand internet speeds, plan types, and how to pick the best plan for your household without overpaying.',
+    category: 'internet-connectivity' as any,
+    tags: ['internet', 'ISP', 'broadband', 'WiFi', 'home internet'],
+    readTime: '7 min',
+    thumbnailEmoji: '🌐',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Choosing an internet plan can be confusing with all the speed numbers, plan tiers, and promotional pricing. Here is what you actually need to know to make a good decision without overpaying.
+
+Internet speed is measured in Mbps (megabits per second). Here is what different speeds handle: 25 Mbps is enough for 1-2 people doing basic browsing and email. 50-100 Mbps handles a household of 2-4 people streaming video, browsing, and video calling. 200-300 Mbps supports a larger household with multiple people streaming 4K video simultaneously. 500+ Mbps is typically more than most households need unless you have many devices running simultaneously.
+
+Types of internet connections: cable (widely available, speeds from 25-1,000 Mbps), fiber optic (fastest and most reliable, up to 5,000 Mbps, but not available everywhere), DSL (uses phone lines, slower, 5-100 Mbps), fixed wireless (rural areas, improving rapidly), and satellite (available anywhere, higher latency — noticeable delay).
+
+To find providers at your address, go to broadbandnow.com or the FCC's broadband map at broadbandmap.fcc.gov. Enter your address to see which providers serve your area and what speeds they offer.
+
+Watch out for: promotional pricing that expires after 12 months (ask what the regular price is), data caps (limits on how much data you can use per month — some providers charge overage fees), equipment rental fees ($10-15/month for a router — consider buying your own), and bundling pressure (you may not need TV and phone bundled with internet).
+
+Before signing up, ask: "What is the price after the promotional period?" "Is there a data cap, and how much?" "Can I use my own router instead of renting yours?" "Is there a contract, and what is the early termination fee?"`,
+    steps: [
+      { title: 'Determine your speed needs', content: '1-2 people basic use: 25 Mbps. 2-4 people with streaming: 50-100 Mbps. Large household or 4K streaming: 200-300 Mbps.' },
+      { title: 'Find providers at your address', content: 'Go to broadbandnow.com or broadbandmap.fcc.gov. Enter your address to see available providers and speeds.' },
+      { title: 'Compare plans and pricing', content: 'Look at the regular price (not promotional), data caps, equipment fees, and contract terms for each provider.' },
+      { title: 'Ask the right questions', content: 'Price after promo period? Data cap? Can I use my own router? Contract length and early termination fee?' },
+      { title: 'Choose fiber if available', content: 'Fiber optic is the fastest, most reliable, and often most competitively priced option. Choose it if available at your address.' },
+    ],
+  },
+
+  {
+    slug: 'understand-internet-bill',
+    title: 'How to Understand Your Internet Bill',
+    excerpt: 'Decode your internet bill — what each charge means, how to spot fees you can remove, and how to lower your bill.',
+    category: 'internet-connectivity' as any,
+    tags: ['internet', 'billing', 'ISP', 'fees', 'saving money'],
+    readTime: '5 min',
+    thumbnailEmoji: '📑',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Internet bills can be confusing with multiple line items, fees, and charges that are not clearly explained. Understanding each part helps you spot unnecessary charges and potentially lower your bill.
+
+Common line items: the base internet service fee (what you signed up for), equipment rental (modem and/or router — typically $10-15/month each), WiFi charges (some providers charge extra for WiFi on top of internet), data overage fees (if you exceed your monthly data cap), taxes and regulatory fees, and installation or setup fees (one-time charges).
+
+Charges you may be able to remove: equipment rental fees — if you are paying $10-15/month to rent a modem or router, buying your own can save $120-180/year. Check your provider's list of compatible modems. WiFi service fees — some providers charge a separate fee for WiFi. Using your own router eliminates this. Service protection plans — these are basically insurance on the provider's equipment and often not worth the cost.
+
+If your promotional rate has expired and your bill increased significantly, call your provider and ask for a retention discount. Say that you are considering switching to another provider and ask what deals they can offer. Many providers will extend promotional pricing or offer a discount to keep you as a customer.
+
+Check your bill each month for changes. Providers sometimes add services or change pricing without clear notification. If you see a new charge, call and ask what it is and whether it can be removed.`,
+    steps: [
+      { title: 'Review each line item', content: 'Look at your bill and identify each charge: base service, equipment rental, taxes, fees, and any extras.' },
+      { title: 'Check for equipment rental', content: 'If you are renting a modem or router ($10-15/month), consider buying your own compatible model to save $120+/year.' },
+      { title: 'Look for unnecessary add-ons', content: 'WiFi service fees, protection plans, and premium support charges can often be removed. Call and ask.' },
+      { title: 'Check if your promo expired', content: 'If your bill jumped recently, your promotional rate may have ended. Call and ask for a retention discount.' },
+      { title: 'Monitor monthly for changes', content: 'Check your bill each month for new or increased charges. Call immediately if something unexpected appears.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-new-wifi-router',
+    title: 'How to Set Up a New WiFi Router',
+    excerpt: 'Install and configure a new WiFi router for your home — connect to your modem, set a password, and get online.',
+    category: 'internet-connectivity' as any,
+    tags: ['WiFi', 'router', 'internet', 'setup', 'networking'],
+    readTime: '7 min',
+    thumbnailEmoji: '📡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `A WiFi router takes the internet connection from your modem (the device from your internet provider) and broadcasts it wirelessly throughout your home. Setting up a new router takes about 15-20 minutes.
+
+Unplug your old router (if you have one). Plug an Ethernet cable from your modem into the router's WAN or Internet port (usually a different color from the other ports). Plug the router into a power outlet and turn it on. Wait 2-3 minutes for it to start up fully.
+
+Most modern routers have a setup app. Check the router's packaging or quick-start guide for the app name (TP-Link Tether, Netgear Nighthawk, ASUS Router, Linksys, etc.). Download the app and follow the setup wizard.
+
+During setup, you will create a WiFi network name (SSID) and password. Choose a name you will recognize (like "SmithFamily-WiFi") and a strong password that is at least 12 characters with a mix of letters, numbers, and symbols. Write these down and keep them somewhere safe — you will need the password to connect every device.
+
+Place your router in a central location in your home, elevated if possible (on a shelf, not on the floor). Avoid placing it near thick walls, metal objects, mirrors, or microwaves, which can interfere with the signal. The more central the location, the more even the coverage throughout your home.
+
+After setup, connect your devices: on each phone, computer, tablet, and smart TV, go to WiFi settings, select your new network name, and enter the password.`,
+    steps: [
+      { title: 'Connect the router to your modem', content: 'Plug an Ethernet cable from your modem into the router\'s WAN or Internet port. Plug in the power and wait 2-3 minutes.' },
+      { title: 'Download the router\'s app', content: 'Check the packaging for the app name. Download it from the App Store or Google Play Store and follow the setup wizard.' },
+      { title: 'Create your WiFi name and password', content: 'Choose a recognizable network name and a strong password (12+ characters). Write them down and store safely.' },
+      { title: 'Place the router centrally', content: 'Put the router in a central, elevated location. Avoid placing near thick walls, metal objects, or microwaves.' },
+      { title: 'Connect your devices', content: 'On each device, go to WiFi settings, select your new network, and enter the password.' },
+    ],
+  },
+
+  {
+    slug: 'extend-wifi-mesh-system',
+    title: 'How to Extend Your WiFi with a Mesh System',
+    excerpt: 'Eliminate WiFi dead zones by setting up a mesh WiFi system that blankets your entire home in strong signal.',
+    category: 'internet-connectivity' as any,
+    tags: ['WiFi', 'mesh', 'extender', 'coverage', 'networking'],
+    readTime: '6 min',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If your WiFi works well near the router but is weak or non-existent in other rooms, a mesh WiFi system can solve the problem. A mesh system uses multiple units placed around your home that work together to create one seamless WiFi network with consistent coverage everywhere.
+
+Popular mesh systems include Google Nest WiFi, Amazon Eero, TP-Link Deco, Netgear Orbi, and Linksys Velop. Most come with 2 or 3 units and cost $150-300. For larger homes, you can add more units.
+
+The main difference between a mesh system and a WiFi extender: extenders create a separate network with a different name (like "Home-WiFi-EXT") and often reduce speed. Mesh systems create one seamless network — your devices automatically connect to the nearest unit without you doing anything.
+
+Setup: connect the first mesh unit to your modem with an Ethernet cable (this replaces your existing router). Download the manufacturer's app and follow the setup wizard. Place additional units in rooms where you need better coverage — ideally halfway between the main unit and the dead zone.
+
+The app guides you through optimal placement, tests the connection between units, and lets you manage your network settings. Most mesh systems also include parental controls, guest network options, and device prioritization.
+
+For a 2-bedroom apartment, two units are usually sufficient. For a 3-4 bedroom house, three units cover most layouts. For larger or multi-story homes, consider adding a fourth unit.`,
+    steps: [
+      { title: 'Choose a mesh system', content: 'Google Nest WiFi, Eero, TP-Link Deco, Orbi, or Velop. Get 2-3 units depending on your home size ($150-300).' },
+      { title: 'Connect the main unit', content: 'Plug an Ethernet cable from your modem into the first mesh unit. This replaces your existing router.' },
+      { title: 'Download the app and set up', content: 'Get the manufacturer\'s app, create an account, and follow the setup wizard. Set your WiFi name and password.' },
+      { title: 'Place additional units', content: 'Put extra units halfway between the main unit and areas with poor signal. The app tests connection strength and suggests placement.' },
+      { title: 'Connect all devices to the single network', content: 'All mesh units broadcast the same network. Connect each device once — it automatically switches to the nearest unit.' },
+    ],
+  },
+
+  {
+    slug: 'use-phone-wifi-hotspot',
+    title: 'How to Use Your Phone as a WiFi Hotspot',
+    excerpt: 'Turn your phone into a portable WiFi hotspot to connect your laptop or tablet when there is no WiFi available.',
+    category: 'internet-connectivity' as any,
+    tags: ['hotspot', 'tethering', 'WiFi', 'mobile data', 'connectivity'],
+    readTime: '5 min',
+    thumbnailEmoji: '📡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone can act as a portable WiFi hotspot, sharing its cellular data connection with your laptop, tablet, or other devices. This is useful when you are somewhere without WiFi — a hotel without internet, a waiting room, or while traveling.
+
+On iPhone: go to Settings → Personal Hotspot → toggle on "Allow Others to Join." Note the WiFi password shown on the screen. On your laptop or tablet, look for your iPhone's name in the WiFi network list and connect using that password.
+
+On Android: go to Settings → Network & Internet (or Connections) → Hotspot & Tethering → WiFi Hotspot → turn it on. Note the network name and password. Connect your other device to this network.
+
+Important: hotspot uses your cellular data. If you have a limited data plan, streaming video, downloading files, or extended use can consume your data allowance quickly. Check your plan's hotspot data allowance — some carriers include it for free, others charge extra, and some throttle speeds after a certain amount.
+
+Tips for conserving data while using hotspot: avoid streaming video (it uses the most data), turn off automatic app updates and cloud backups on connected devices, and close unnecessary browser tabs and apps.
+
+If you use hotspot frequently, consider an unlimited data plan that includes hotspot, or a separate mobile hotspot device (available from all major carriers). These devices often provide better speeds and battery life than using your phone.`,
+    steps: [
+      { title: 'Turn on Personal Hotspot', content: 'iPhone: Settings → Personal Hotspot → Allow Others to Join. Android: Settings → Network → Hotspot & Tethering → WiFi Hotspot → on.' },
+      { title: 'Note the password', content: 'Your phone displays the hotspot password. You will enter this on the device you want to connect.' },
+      { title: 'Connect your other device', content: 'On your laptop or tablet, go to WiFi settings, find your phone\'s network name, and enter the password.' },
+      { title: 'Monitor data usage', content: 'Check your cellular data usage in Settings. Avoid video streaming and large downloads to conserve data.' },
+      { title: 'Turn off hotspot when done', content: 'Disable the hotspot when you are finished to save battery and prevent unauthorized connections.' },
+    ],
+  },
+
+  {
+    slug: 'check-data-usage',
+    title: 'How to Check How Much Data You Are Using',
+    excerpt: 'Monitor your mobile data and WiFi usage to avoid overage charges and understand which apps use the most.',
+    category: 'internet-connectivity' as any,
+    tags: ['data usage', 'mobile data', 'data plan', 'phone', 'monitoring'],
+    readTime: '5 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Understanding your data usage helps you avoid overage charges and choose the right plan. Most people use more data than they think — especially from video streaming, social media, and automatic app updates.
+
+On iPhone: go to Settings → Cellular (or Mobile Data). You see your total data used and a breakdown by app. Scroll down to see which apps use the most data. You can toggle off cellular data for specific apps that use too much.
+
+On Android: go to Settings → Network & Internet → Data Usage (or Settings → Connections → Data Usage). You see total usage and a per-app breakdown. Set a data warning or limit: Settings → Data Usage → "Set data warning" or "Set data limit."
+
+What uses the most data: streaming video (Netflix, YouTube, TikTok — 1-3 GB per hour), video calls (Zoom, FaceTime — 1-2 GB per hour), social media (Instagram, Facebook — 100-500 MB per hour of scrolling), music streaming (50-150 MB per hour), and automatic updates and backups.
+
+To reduce data usage: connect to WiFi whenever possible (home, work, coffee shops), set apps to download updates only over WiFi (Settings → App Store → turn off "App Downloads" under cellular), download content for offline viewing before leaving WiFi, and reduce video quality on streaming apps when using cellular data.
+
+Check your carrier's app or website to see your current billing cycle usage and how much of your plan you have used. Most carriers (AT&T, Verizon, T-Mobile) show this in their app.`,
+    steps: [
+      { title: 'Check usage on your phone', content: 'iPhone: Settings → Cellular. Android: Settings → Data Usage. See total usage and per-app breakdown.' },
+      { title: 'Identify your biggest data users', content: 'Look at which apps use the most data. Video streaming and social media are usually the top consumers.' },
+      { title: 'Set a data warning', content: 'Android: Settings → Data Usage → set a warning at 80% of your plan limit. iPhone: check your carrier\'s app for usage alerts.' },
+      { title: 'Connect to WiFi when available', content: 'Use WiFi at home, work, and public places. WiFi does not count against your mobile data plan.' },
+      { title: 'Restrict background data', content: 'Set apps to update and back up only on WiFi. iPhone: Settings → App Store → turn off cellular downloads. Android: similar in app settings.' },
+    ],
+  },
+
+  {
+    slug: 'stay-safe-public-wifi',
+    title: 'How to Stay Safe on Public WiFi',
+    excerpt: 'Protect your personal information when using WiFi at coffee shops, airports, hotels, and other public places.',
+    category: 'internet-connectivity' as any,
+    tags: ['public WiFi', 'security', 'privacy', 'VPN', 'safety'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Public WiFi at coffee shops, airports, hotels, and libraries is convenient but comes with security risks. Unlike your home WiFi, public networks are shared with strangers — and on poorly secured networks, someone nearby could potentially see your internet activity.
+
+Rules for safe public WiFi use: never do online banking or enter credit card numbers on public WiFi. Avoid logging in to sensitive accounts (banking, email, financial accounts). If you must, use your phone's cellular data instead of the public WiFi. Make sure websites use HTTPS (look for the padlock icon in the address bar) before entering any information.
+
+Use a VPN (Virtual Private Network) for the best protection. A VPN encrypts all your internet traffic so no one on the network can see what you are doing. Reputable VPN services include ExpressVPN, NordVPN, and Surfshark ($3-13/month). Download the VPN app, sign in, and tap "Connect" before using public WiFi.
+
+Beware of fake WiFi networks. Scammers set up networks with names like "Free Airport WiFi" or "Coffee Shop Guest" to trick you into connecting. Always confirm the exact network name with the business. If a coffee shop's WiFi is "CafeDowntown" and you also see "CafeDowntown-Free," the second one could be a scammer.
+
+Additional precautions: turn off automatic WiFi connections (so your phone does not connect to unknown networks automatically), turn off file sharing and AirDrop in public, and forget the public network when you are done (Settings → WiFi → tap the network → "Forget This Network").`,
+    steps: [
+      { title: 'Avoid sensitive activities', content: 'Do not do banking, enter credit card numbers, or log in to financial accounts on public WiFi. Use cellular data for these tasks.' },
+      { title: 'Verify the network name', content: 'Ask the business for the exact WiFi network name. Do not connect to similarly named networks that could be scams.' },
+      { title: 'Use a VPN', content: 'Subscribe to a VPN service (ExpressVPN, NordVPN, Surfshark). Connect the VPN before using public WiFi.' },
+      { title: 'Check for HTTPS', content: 'Only enter information on websites with a padlock icon in the address bar (HTTPS). Avoid HTTP sites on public WiFi.' },
+      { title: 'Forget the network when done', content: 'Go to WiFi settings and tap "Forget This Network" after leaving. Turn off auto-connect to prevent reconnecting.' },
+    ],
+  },
+
+  {
+    slug: 'get-better-wifi-signal',
+    title: 'How to Get Better WiFi Signal in Every Room',
+    excerpt: 'Improve your WiFi coverage and speed with router placement tips, extenders, and settings adjustments.',
+    category: 'internet-connectivity' as any,
+    tags: ['WiFi', 'signal', 'coverage', 'router', 'tips'],
+    readTime: '5 min',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Weak WiFi in certain rooms is one of the most common tech frustrations. Before spending money on new equipment, try these free fixes that often make a significant difference.
+
+Move your router to a central location. If your router is in a corner of the house, one side gets great coverage and the other gets almost nothing. Move it to the middle of your home if possible. Place it on a shelf or table — not on the floor. WiFi signals travel outward and downward, so elevation helps.
+
+Remove obstructions. WiFi signals are weakened by thick walls (especially concrete and brick), metal objects, mirrors, aquariums, and microwaves. Move your router away from these obstacles. Even moving it a few feet can make a difference.
+
+Reduce interference. Other electronic devices can interfere with WiFi: baby monitors, cordless phones, and Bluetooth devices. If your router is 2.4GHz, try switching to 5GHz (faster but shorter range) or vice versa. Most modern routers broadcast both — they usually have separate names or one combined network.
+
+Update your router's firmware. Log in to your router's admin page (usually 192.168.1.1 or 192.168.0.1 — check the router's label) and check for firmware updates. Updates can improve performance and fix bugs.
+
+If these steps are not enough, consider: a WiFi extender ($20-40, adds coverage to one area), a mesh WiFi system ($150-300, blankets your entire home), or upgrading your router (if it is more than 5 years old, a new router can dramatically improve speeds and coverage).`,
+    steps: [
+      { title: 'Move your router centrally', content: 'Place the router in the middle of your home, elevated on a shelf. Avoid corners, closets, and the floor.' },
+      { title: 'Remove obstructions', content: 'Move the router away from thick walls, metal objects, mirrors, and microwaves. Even a few feet can help.' },
+      { title: 'Try different frequencies', content: 'If your router broadcasts both 2.4GHz and 5GHz, connect to the other one. 5GHz is faster but shorter range; 2.4GHz reaches farther.' },
+      { title: 'Update router firmware', content: 'Log in to your router\'s admin page and check for updates. Updated firmware improves performance.' },
+      { title: 'Consider a mesh system or extender', content: 'For persistent dead zones, a mesh system ($150-300) provides the most comprehensive solution.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-parental-controls-router',
+    title: 'How to Set Up Parental Controls on Your Router',
+    excerpt: 'Manage internet access for your household — set time limits, filter content, and monitor activity from your router.',
+    category: 'internet-connectivity' as any,
+    tags: ['parental controls', 'router', 'internet safety', 'kids', 'networking'],
+    readTime: '6 min',
+    thumbnailEmoji: '👨‍👧',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Parental controls on your router let you manage internet access for your entire household — set bedtime schedules, filter inappropriate content, pause internet for specific devices, and see which websites are being visited. Because these controls are on the router, they apply to every device connected to your WiFi.
+
+Most modern routers include basic parental controls. Log in to your router's admin page or app. The address is usually printed on the router's label (like 192.168.1.1 or 192.168.0.1). Enter the admin username and password (also on the label, unless you changed them).
+
+Look for "Parental Controls," "Access Control," or "Content Filtering" in the settings. Common features include: content filtering (blocks adult content and malicious websites), schedule controls (set times when specific devices can and cannot access the internet — great for bedtime), device pausing (instantly pause internet access for a specific device), and usage monitoring (see how much time devices spend online).
+
+If your router's built-in controls are limited, consider these options: many mesh WiFi systems (Google Nest WiFi, Eero, TP-Link Deco) include robust parental controls in their apps — much easier to use than traditional router settings. Third-party services like OpenDNS Family Shield (free) or Circle ($10/month device) offer more advanced filtering and monitoring.
+
+Set reasonable expectations. Parental controls are a tool, not a complete solution. They work best as part of ongoing conversations about internet safety. Older children may find ways around filters, so open communication is important.`,
+    steps: [
+      { title: 'Access your router settings', content: 'Open a browser and go to your router\'s admin address (check the label on the router). Sign in with the admin username and password.' },
+      { title: 'Find Parental Controls', content: 'Look for "Parental Controls," "Access Control," or "Content Filtering" in the router settings menu.' },
+      { title: 'Set up content filtering', content: 'Enable filters to block adult content and known malicious websites. Most routers offer preset filter levels.' },
+      { title: 'Create internet schedules', content: 'Set times when specific devices can access the internet. Create a "bedtime" schedule that cuts off access at a set hour.' },
+      { title: 'Use your router app for easier control', content: 'If you have a mesh system, use its app for more user-friendly parental controls including device pausing and time limits.' },
+    ],
+  },
+
+  {
+    slug: 'test-improve-internet-speed',
+    title: 'How to Test and Improve Your Internet Speed',
+    excerpt: 'Run a speed test to see if you are getting the speed you pay for, and learn fixes for slow internet.',
+    category: 'internet-connectivity' as any,
+    tags: ['speed test', 'internet speed', 'WiFi', 'performance', 'troubleshooting'],
+    readTime: '5 min',
+    thumbnailEmoji: '⚡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `If your internet feels slow, the first step is measuring your actual speed to see if you are getting what you pay for. Speed tests take less than a minute and tell you exactly how fast your connection is.
+
+Go to speedtest.net or fast.com on your phone or computer. Tap "Go" or wait for the test to run automatically. It measures your download speed (how fast you receive data — important for streaming and browsing), upload speed (how fast you send data — important for video calls and uploading photos), and ping (response time — important for video calls and online games).
+
+Compare your results to what you pay for. Check your internet plan for the advertised speed. If you are paying for 200 Mbps but only getting 50 Mbps, something is wrong.
+
+Common fixes for slow internet: restart your router (unplug it, wait 30 seconds, plug it back in — this fixes many issues), connect via Ethernet cable instead of WiFi for the fastest speed, close unused apps and browser tabs (they use bandwidth in the background), move closer to your router, and check if other devices on your network are using heavy bandwidth (someone streaming 4K video or downloading large files).
+
+If speeds are consistently well below what you pay for, call your internet provider. They can run diagnostics from their end and may need to send a technician. If you are renting their modem/router, ask if it is outdated and needs replacement.
+
+Run speed tests at different times of day. Internet speeds often slow down during peak hours (evenings) when everyone in your neighborhood is online. If peak speeds are significantly lower, your provider's network may be congested in your area.`,
+    steps: [
+      { title: 'Run a speed test', content: 'Go to speedtest.net or fast.com on your phone or computer. Wait for the test to complete (less than a minute).' },
+      { title: 'Compare to your plan', content: 'Check what speed your internet plan includes. If you are getting significantly less, troubleshooting is needed.' },
+      { title: 'Restart your router', content: 'Unplug your router, wait 30 seconds, plug it back in. Wait 2-3 minutes for it to restart fully. This fixes many speed issues.' },
+      { title: 'Reduce network load', content: 'Close unused apps and browser tabs. Check if other devices are streaming or downloading. These compete for bandwidth.' },
+      { title: 'Contact your provider if needed', content: 'If speeds remain low after troubleshooting, call your ISP. They can run diagnostics and may need to replace equipment or fix a line issue.' },
+    ],
+  },
+
 ];
