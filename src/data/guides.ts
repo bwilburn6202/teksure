@@ -9475,7 +9475,7 @@ const coreGuides: Guide[] = [
     { title: 'During the call', content: 'Tap screen for controls. Mute mic, flip camera, or turn off video.' },
     { title: 'Call Android users', content: 'Tap Create Link and share it. Android users join through their browser.' },
   ] },
-  { slug: 'phone-connect-bluetooth', title: 'How to Connect Bluetooth Devices', excerpt: 'Pair headphones, speakers, or your car wirelessly.', category: 'phone-guides', tags: ['phone', 'bluetooth', 'wireless'], readTime: '5 min', thumbnailEmoji: '🎧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'phone-connect-bluetooth', title: 'How to Connect Bluetooth Devices', excerpt: 'Pair headphones, speakers, or your car wirelessly.', category: 'phone-guides', tags: ['phone', 'bluetooth', 'wireless'], readTime: '5 min', thumbnailEmoji: '🎧', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jqGDd7KRqlE', steps: [
     { title: 'Put device in pairing mode', content: 'Press and hold the pairing button until a light blinks.' },
     { title: 'Open Bluetooth settings', content: 'iPhone: Settings > Bluetooth. Android: Settings > Connected Devices > Pair New.' },
     { title: 'Select your device', content: 'Tap the device name in the list to connect.' },
@@ -9672,14 +9672,14 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 9: AI Guides — Claude Code, Codex, Practical AI (20 new) =====
-  { slug: 'what-is-claude-code', title: 'What Is Claude Code and How Does It Work', excerpt: 'An AI coding assistant that reads, writes, and fixes code using plain English.', category: 'ai-guides', tags: ['claude', 'ai', 'coding'], readTime: '6 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'what-is-claude-code', title: 'What Is Claude Code and How Does It Work', excerpt: 'An AI coding assistant that reads, writes, and fixes code using plain English.', category: 'ai-guides', tags: ['claude', 'ai', 'coding'], readTime: '6 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/AJpK3YTTKZ4', steps: [
     { title: 'What it does', content: 'Claude Code is an AI assistant by Anthropic that reads your entire codebase, writes new code, fixes bugs, and runs commands — all from plain English instructions.' },
     { title: 'Where it works', content: 'Runs in your terminal, VS Code, JetBrains editors, a desktop app, or your web browser. Work syncs across all of them.' },
     { title: 'How you use it', content: 'Describe what you want: "add a login page" or "fix the error on line 42." Claude plans the approach, writes the code, and verifies it works.' },
     { title: 'Key features', content: 'Understands entire projects, integrates with Git, connects to tools like Google Drive and Slack via MCP, and remembers your preferences.' },
     { title: 'Who it is for', content: 'Developers and people learning to code. Handles tedious tasks (tests, lint errors, dependencies) so you focus on creative work.' },
   ] },
-  { slug: 'claude-code-getting-started', title: 'Getting Started with Claude Code', excerpt: 'Set up and use Claude Code for the first time.', category: 'ai-guides', tags: ['claude', 'setup', 'tutorial'], readTime: '7 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'claude-code-getting-started', title: 'Getting Started with Claude Code', excerpt: 'Set up and use Claude Code for the first time.', category: 'ai-guides', tags: ['claude', 'setup', 'tutorial'], readTime: '7 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/eMZmDH3T2bY', steps: [
     { title: 'Sign up', content: 'You need a Claude subscription or Anthropic Console account at claude.ai.' },
     { title: 'Install', content: 'Open your terminal and run the install command from Claude Code documentation. Works on Mac, Windows, and Linux.' },
     { title: 'Open your project', content: 'Navigate to your project folder and type "claude" to start a session.' },
@@ -10909,7 +10909,7 @@ const coreGuides: Guide[] = [
     { title: 'Recognizing unreliable information', content: 'Check the source: is it a reputable news outlet or an unknown blog? Look for author credentials. Check if other reliable sources report the same thing. Be skeptical of sensational headlines.' },
     { title: 'Getting help', content: 'Don\'t be afraid to ask for help. Library staff, tech-savvy family members, and services like TekSure exist to help. There\'s no such thing as a "dumb question" when learning technology.' },
   ] },
-  { slug: 'screenshot-guide', title: 'How to Take a Screenshot on Any Device', excerpt: 'Capture what\'s on your screen to save, share, or get help with a tech problem.', category: 'essential-skills', tags: ['screenshot', 'computer-basics', 'windows', 'mac', 'phone'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'screenshot-guide', title: 'How to Take a Screenshot on Any Device', excerpt: 'Capture what\'s on your screen to save, share, or get help with a tech problem.', category: 'essential-skills', tags: ['screenshot', 'computer-basics', 'windows', 'mac', 'phone'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7V8oR1rE3LU', steps: [
     { title: 'Windows screenshot', content: 'Press PrtScn (Print Screen) to capture the entire screen to clipboard. Press Win+Shift+S to select a specific area (Snipping Tool). Press Win+PrtScn to save a screenshot directly to your Pictures > Screenshots folder.' },
     { title: 'Mac screenshot', content: 'Cmd+Shift+3: capture entire screen. Cmd+Shift+4: select an area to capture. Cmd+Shift+5: opens screenshot toolbar with more options including screen recording. Screenshots save to your desktop.' },
     { title: 'iPhone screenshot', content: 'Press Side Button + Volume Up simultaneously. A thumbnail appears in the bottom-left — tap it to edit (crop, annotate). Screenshots go to Photos > Albums > Screenshots.' },
@@ -11170,7 +11170,7 @@ const coreGuides: Guide[] = [
     { title: 'Translate conversations', content: '"Hey Google, help me speak French." Interpreter mode translates conversations in real time between two languages. Speak in your language, and it translates to the other person\'s language.' },
     { title: 'Family features', content: 'Family Bell: set custom announcements ("Time for homework!"). Broadcast: send voice messages to all speakers ("Dinner is ready!"). Family notes: shared to-do lists on smart displays.' },
   ] },
-  { slug: 'siri-tips-tricks', title: 'Getting the Most Out of Siri', excerpt: 'Use Apple\'s voice assistant more effectively with these commands, shortcuts, and tips.', category: 'app-guides', tags: ['siri', 'apple', 'voice-assistant', 'iphone', 'productivity'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'siri-tips-tricks', title: 'Getting the Most Out of Siri', excerpt: 'Use Apple\'s voice assistant more effectively with these commands, shortcuts, and tips.', category: 'app-guides', tags: ['siri', 'apple', 'voice-assistant', 'iphone', 'productivity'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/uG1UTAJsyMc', steps: [
     { title: 'Activate Siri', content: 'Say "Hey Siri" (or just "Siri" on newer devices). Or press and hold the side button (iPhone) or top button (iPad). On Mac: hold Cmd+Space or click the Siri icon.' },
     { title: 'Useful daily commands', content: '"What\'s the weather?" "Set a timer for 15 minutes." "Remind me to pick up prescriptions at 3 PM." "Call my daughter." "Send a text to John saying I\'ll be late."' },
     { title: 'Navigation and local', content: '"Navigate home." "Where\'s the nearest gas station?" "What restaurants are nearby?" "How long to drive to the airport?" Siri integrates with Apple Maps for directions.' },
@@ -11789,7 +11789,7 @@ const coreGuides: Guide[] = [
     { title: 'Best practices', content: 'Always review and edit AI output — it\'s a starting point, not a final product. Add your personal voice and specific details. Don\'t submit AI writing as your own for academic work. Verify any facts the AI includes.' },
     { title: 'Privacy reminder', content: 'Don\'t paste sensitive information (financial data, medical records, passwords) into AI chatbots. Your inputs may be used to train the model. For sensitive work, use enterprise versions with data privacy guarantees.' },
   ] },
-  { slug: 'voice-assistant-comparison', title: 'Siri vs Alexa vs Google Assistant: Which Is Best?', excerpt: 'Compare the three major voice assistants to find the right one for your home.', category: 'essential-skills', tags: ['siri', 'alexa', 'google-assistant', 'comparison', 'smart-home'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'voice-assistant-comparison', title: 'Siri vs Alexa vs Google Assistant: Which Is Best?', excerpt: 'Compare the three major voice assistants to find the right one for your home.', category: 'essential-skills', tags: ['siri', 'alexa', 'google-assistant', 'comparison', 'smart-home'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/ebO842HHG6U', steps: [
     { title: 'Siri (Apple)', content: 'Best for: Apple device owners. Works on iPhone, iPad, Mac, Apple Watch, HomePod. Deep integration with Apple apps and services. Improving rapidly with Apple Intelligence. Less smart home compatibility than competitors.' },
     { title: 'Alexa (Amazon)', content: 'Best for: Smart home enthusiasts. Works with the most smart home devices. Best shopping integration (Amazon). Thousands of third-party "skills." Echo devices are affordable ($30-250). Best smart home ecosystem.' },
     { title: 'Google Assistant', content: 'Best for: Answering questions and Google users. Most accurate for general knowledge queries. Best at understanding natural, conversational language. Deep integration with Google services (Calendar, Maps, Gmail).' },
