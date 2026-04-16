@@ -2958,4 +2958,92 @@ Run speed tests at different times of day. Internet speeds often slow down durin
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // ADDITIONAL GUIDES (3 more to reach 101+)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'use-turbotax-free-edition',
+    title: 'How to Use TurboTax Free Edition',
+    excerpt: 'File your taxes for free with TurboTax Free Edition — who qualifies and how to avoid being upsold to a paid version.',
+    category: 'financial-tech' as any,
+    tags: ['TurboTax', 'taxes', 'free filing', 'tax return', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '🧾',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `TurboTax is the most popular tax preparation software in the United States. While many products cost money, TurboTax does offer a free edition for taxpayers with straightforward returns. However, knowing exactly who qualifies and how to stay on the free version requires some awareness.
+
+TurboTax Free Edition covers: W-2 income, limited interest and dividend income (1099-INT, 1099-DIV), the Earned Income Tax Credit, the Child Tax Credit, and student loan interest deduction. It does NOT cover: itemized deductions, freelance or 1099-NEC income, rental property income, stock sales, or HSA contributions. If you have any of these, TurboTax will prompt you to upgrade.
+
+Go to turbotax.com and click "Start for Free." Create an account or sign in. TurboTax walks you through your return with interview-style questions about income, deductions, and credits. Answer each question and TurboTax fills in the correct forms.
+
+Be alert for upselling throughout the process. TurboTax may suggest upgrading to a paid version. If your situation is covered by the free edition, you can decline. Look for "Continue with Free" or "No thanks" options.
+
+After completing your return, review every number. Choose direct deposit for the fastest refund (about 21 days), then e-file. If your income is below $84,000 and you want to ensure a truly free experience, consider using IRS Free File (irs.gov/freefile) instead, which guarantees no upselling.`,
+    steps: [
+      { title: 'Go to turbotax.com', content: 'Click "Start for Free" and create an account. The free edition covers W-2 income and basic returns.' },
+      { title: 'Gather your documents', content: 'Have your W-2, any 1099 forms, Social Security number, and bank routing and account numbers ready.' },
+      { title: 'Answer the interview questions', content: 'TurboTax asks about income, deductions, and credits step by step. The software handles forms and calculations.' },
+      { title: 'Watch for upgrade prompts', content: 'TurboTax may suggest paid upgrades. Look for "Continue with Free" options if your return is covered by the free edition.' },
+      { title: 'Review and e-file', content: 'Check every number before submitting. Choose direct deposit for the fastest refund. Save your confirmation.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-spotify-smart-speaker',
+    title: 'How to Set Up Spotify on a Smart Speaker',
+    excerpt: 'Link Spotify to your Echo or Google Home so you can play music, playlists, and podcasts with voice commands.',
+    category: 'entertainment' as any,
+    tags: ['Spotify', 'smart speaker', 'Alexa', 'Google Home', 'music'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎵',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Connecting Spotify to your smart speaker lets you play any song, album, playlist, or podcast using voice commands. This works with both Amazon Echo and Google Home speakers, and you can set Spotify as your default music service.
+
+For Amazon Echo: open the Alexa app → More → Settings → Music & Podcasts → Link New Service → Spotify. Sign in with your Spotify account. Then tap "Default Services" and set Spotify as the default. Now "Alexa, play jazz" automatically uses Spotify.
+
+For Google Home: open the Google Home app → profile icon → Assistant Settings → Music → tap Spotify and link your account. Set Spotify as default. Now "Hey Google, play my Discover Weekly" plays from Spotify.
+
+Once linked, try: "Play my Liked Songs." "Play the Daily Mix." "Play [artist name]." "Play [playlist name]." "What song is this?" You can also use Spotify Connect — open Spotify on your phone, start playing, tap "Devices Available," and select your speaker for full app-controlled playback.
+
+Both free and premium Spotify accounts work. Free accounts have ads between songs; Premium has no ads and higher quality audio.`,
+    steps: [
+      { title: 'Open your speaker\'s app', content: 'Echo: open Alexa app. Google Home: open Google Home app.' },
+      { title: 'Link Spotify', content: 'Alexa: More → Settings → Music → Link New Service → Spotify. Google: profile → Assistant Settings → Music → Spotify.' },
+      { title: 'Set as default music service', content: 'In music settings, set Spotify as default so every request uses Spotify automatically.' },
+      { title: 'Test with voice commands', content: 'Say "Alexa, play my Liked Songs" or "Hey Google, play jazz music."' },
+      { title: 'Use Spotify Connect', content: 'Open Spotify on your phone, tap "Devices Available," and select your speaker for full app control.' },
+    ],
+  },
+
+  {
+    slug: 'make-video-calls-smart-display',
+    title: 'How to Make Video Calls on a Smart Display (Nest Hub, Echo Show)',
+    excerpt: 'Use your Google Nest Hub Max or Amazon Echo Show to make hands-free video calls to family and friends.',
+    category: 'communication' as any,
+    tags: ['video call', 'Nest Hub', 'Echo Show', 'smart display', 'hands-free'],
+    readTime: '5 min',
+    thumbnailEmoji: '🖥️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Smart displays like the Google Nest Hub Max and Amazon Echo Show have built-in cameras and screens for hands-free video calling. They are especially useful in the kitchen or living room, and for family members who find phones difficult.
+
+Google Nest Hub Max uses Google Meet for calls. Open the Google Home app → tap your Nest Hub Max → set up calling. You can call anyone with Google Meet or Google Contacts. Say "Hey Google, call Mom" or "Hey Google, call [phone number]." The camera and screen activate automatically.
+
+Amazon Echo Show uses Alexa calling. Open the Alexa app → Communication → sync your contacts. Say "Alexa, call Grandma" (she needs an Echo or Alexa app). For video calls, both parties need a device with a camera. You can also make regular phone calls to any U.S. phone number.
+
+Both devices support "Drop In" — authorized family members can connect instantly like an intercom. The display chimes before connecting. This is popular for checking in on elderly family members. Both parties must agree to enable this feature.
+
+For privacy, both devices have a physical camera cover or switch. Slide it closed or press the button to physically disable the camera when you want privacy.`,
+    steps: [
+      { title: 'Set up calling', content: 'Nest Hub Max: Google Home app → tap device → set up calling. Echo Show: Alexa app → Communication → sync contacts.' },
+      { title: 'Make a call by voice', content: '"Hey Google, call [name]" or "Alexa, call [name]." Video starts automatically on the display.' },
+      { title: 'Receive calls', content: 'When someone calls, the display rings. Say "Hey Google, answer" or "Alexa, answer" for hands-free pickup.' },
+      { title: 'Set up Drop In', content: 'Enable Drop In so family can check in instantly. Both parties must agree. Great for elderly family members.' },
+      { title: 'Use the camera privacy cover', content: 'Slide the camera cover closed when you want privacy. A light confirms the camera is off.' },
+    ],
+  },
+
 ];
