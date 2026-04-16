@@ -545,8 +545,9 @@ export const osintCategories: OsintCategory[] = [
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
+    id: 'ai-search',
     name: 'AI Search Engines',
-    icon: 'Bot',
+    emoji: '🤖',
     description: 'AI-powered search engines that understand natural language and provide direct answers instead of just links.',
     tools: [
       { name: 'Perplexity', url: 'https://www.perplexity.ai/', description: 'AI search engine that gives direct answers with cited sources — like asking a researcher your question.', pricing: 'freemium' },
@@ -566,8 +567,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'source-code',
     name: 'Source Code Search',
-    icon: 'Code',
+    emoji: '💻',
     description: 'Search through publicly available source code, websites, and repositories for specific code patterns.',
     tools: [
       { name: 'GitHub Code Search', url: 'https://github.com/search', description: 'Search across all public GitHub repositories for code, commits, issues, and users.', pricing: 'free' },
@@ -579,8 +581,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'exploits',
     name: 'Exploit & Vulnerability Search',
-    icon: 'Bug',
+    emoji: '🛡️',
     description: 'Search databases of known software vulnerabilities and security exploits for research purposes.',
     tools: [
       { name: 'Exploit-DB', url: 'https://www.exploit-db.com/', description: 'Archive of public exploits and vulnerable software — maintained by Offensive Security.', pricing: 'free' },
@@ -594,8 +597,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'google-dorks',
     name: 'Google Dork Generators',
-    icon: 'Search',
+    emoji: '🎯',
     description: 'Tools that help build advanced Google search queries (dorks) to find specific information on the web.',
     tools: [
       { name: 'Google Hacking Database', url: 'https://www.exploit-db.com/google-hacking-database', description: 'Collection of Google dorks organized by category — the original dork library from Exploit-DB.', pricing: 'free' },
@@ -607,8 +611,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'pastebins',
     name: 'Pastebin & Paste Sites',
-    icon: 'FileText',
+    emoji: '📋',
     description: 'Search and monitor text-sharing sites where sensitive data is sometimes publicly posted.',
     tools: [
       { name: 'Pastebin', url: 'https://pastebin.com/', description: 'The original text-sharing site — search public pastes for leaked data or shared information.', pricing: 'freemium' },
@@ -624,8 +629,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'patents',
     name: 'Patent & Intellectual Property Search',
-    icon: 'FileSearch',
+    emoji: '📜',
     description: 'Search patent databases worldwide to research inventions, trademarks, and intellectual property.',
     tools: [
       { name: 'Google Patents', url: 'https://patents.google.com/', description: 'Search 120+ million patent documents from around the world — free, with PDF downloads.', pricing: 'free' },
@@ -641,8 +647,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'translation',
     name: 'Translation & Language Tools',
-    icon: 'Languages',
+    emoji: '🌐',
     description: 'Translate text between languages — essential for investigating foreign-language sources.',
     tools: [
       { name: 'Google Translate', url: 'https://translate.google.com/', description: 'Translate text, documents, and websites between 130+ languages — supports camera and voice input.', pricing: 'free' },
@@ -658,8 +665,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'image-enhancement',
     name: 'Image Enhancement & Upscaling',
-    icon: 'ImagePlus',
+    emoji: '🖌️',
     description: 'AI-powered tools to enhance, upscale, and improve the quality of images for analysis.',
     tools: [
       { name: 'Upscale.media', url: 'https://www.upscale.media/', description: 'AI image upscaler — increase resolution up to 4x without losing quality.', pricing: 'freemium' },
@@ -673,8 +681,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'ftp-search',
     name: 'FTP & File Search',
-    icon: 'HardDrive',
+    emoji: '🗄️',
     description: 'Search public FTP servers and file-sharing sites for documents and files.',
     tools: [
       { name: 'Mamont', url: 'https://www.mmnt.ru/', description: 'FTP search engine — find files on public FTP servers worldwide.', pricing: 'free' },
@@ -684,8 +693,9 @@ export const osintCategories: OsintCategory[] = [
     ],
   },
   {
+    id: 'blog-search',
     name: 'Blog & Forum Search',
-    icon: 'BookOpen',
+    emoji: '📝',
     description: 'Search blog posts, forum discussions, and community content across the web.',
     tools: [
       { name: 'Twingly', url: 'https://www.twingly.com/', description: 'Blog search engine covering millions of blogs in multiple languages worldwide.', pricing: 'freemium' },
