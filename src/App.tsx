@@ -177,6 +177,17 @@ const WifiPasswordFinder     = lazy(() => import("./pages/tools/WifiPasswordFind
 const TechEmergencyKit       = lazy(() => import("./pages/tools/TechEmergencyKit"));
 const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 
+// ── Master Plan tools (April 16 2026 batch-2) ──
+const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
+const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
+const ComputerCleanupWizard  = lazy(() => import("./pages/tools/ComputerCleanupWizard"));
+const DigitalFootprintScanner = lazy(() => import("./pages/tools/DigitalFootprintScanner"));
+const InternetPlanComparator = lazy(() => import("./pages/tools/InternetPlanComparator"));
+const ScamIqTest             = lazy(() => import("./pages/tools/ScamIqTest"));
+const AccessibilityNeedsFinder = lazy(() => import("./pages/tools/AccessibilityNeedsFinder"));
+const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGuide"));
+const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
+
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -435,6 +446,17 @@ const AppContent = () => {
           <Route path="/tools/wifi-password-finder" element={<WifiPasswordFinder />} />
           <Route path="/tools/tech-emergency-kit" element={<TechEmergencyKit />} />
           <Route path="/weekly-tips" element={<WeeklyTips />} />
+
+          {/* Master Plan tools */}
+          <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
+          <Route path="/tools/smart-tv-setup" element={<SmartTvSetupWizard />} />
+          <Route path="/tools/computer-cleanup-wizard" element={<ComputerCleanupWizard />} />
+          <Route path="/tools/digital-footprint-scanner" element={<DigitalFootprintScanner />} />
+          <Route path="/tools/internet-plan-comparator" element={<InternetPlanComparator />} />
+          <Route path="/tools/scam-iq-test" element={<ScamIqTest />} />
+          <Route path="/tools/accessibility-needs-finder" element={<AccessibilityNeedsFinder />} />
+          <Route path="/tools/file-organizer-guide" element={<FileOrganizerGuide />} />
+          <Route path="/tools/scam-phone-database" element={<ScamPhoneDatabase />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
