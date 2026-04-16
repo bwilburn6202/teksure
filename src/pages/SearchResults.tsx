@@ -11,7 +11,12 @@ import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type GuideCategory } from '@/data/guides';
 import { getGuideThumbnailUrl } from '@/lib/guideThumbnails';
 
-const SUGGESTED_SEARCHES = ['WiFi problems', 'forgot password', 'slow computer', 'how to print', 'email setup', 'video call', 'update Windows', 'back up my phone'];
+const SUGGESTED_SEARCHES = [
+  'WiFi problems', 'forgot password', 'slow computer', 'how to print',
+  'email setup', 'video call', 'update Windows', 'back up my phone',
+  'Alexa setup', 'scam', 'Medicare', 'Zelle', 'streaming', 'Bluetooth',
+  'screenshot', 'new phone', 'privacy settings',
+];
 
 function SearchEmptyState({ query, onSuggest }: { query: string; onSuggest: (term: string) => void }) {
   return (
@@ -59,7 +64,9 @@ const SearchResults = () => {
     let results = guides.filter(g =>
       g.title.toLowerCase().includes(q) ||
       g.excerpt.toLowerCase().includes(q) ||
-      g.tags.some(t => t.includes(q))
+      g.tags.some(t => t.includes(q)) ||
+      (g.body && g.body.toLowerCase().includes(q)) ||
+      (g.steps && g.steps.some(s => s.title.toLowerCase().includes(q) || s.content.toLowerCase().includes(q)))
     );
     if (activeTab !== 'all') {
       results = results.filter(g => g.category === activeTab);
@@ -72,7 +79,22 @@ const SearchResults = () => {
     setSearchParams(value ? { q: value } : {});
   };
 
-  const categories: ('all' | GuideCategory)[] = ['all', 'windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides'];
+  // Dynamically show only categories that have matching results
+  const matchingCategories = useMemo(() => {
+    if (!search.trim()) return [] as GuideCategory[];
+    const q = search.toLowerCase();
+    const allMatches = guides.filter(g =>
+      g.title.toLowerCase().includes(q) ||
+      g.excerpt.toLowerCase().includes(q) ||
+      g.tags.some(t => t.includes(q)) ||
+      (g.body && g.body.toLowerCase().includes(q)) ||
+      (g.steps && g.steps.some(s => s.title.toLowerCase().includes(q) || s.content.toLowerCase().includes(q)))
+    );
+    const cats = [...new Set(allMatches.map(g => g.category))];
+    return cats;
+  }, [search]);
+
+  const categories: ('all' | GuideCategory)[] = ['all', ...matchingCategories];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

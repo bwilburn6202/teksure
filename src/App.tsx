@@ -137,6 +137,7 @@ const SafeCall               = lazy(() => import("./pages/tools/SafeCall"));
 const BillDecoder            = lazy(() => import("./pages/tools/BillDecoder"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
+const Changelog              = lazy(() => import("./pages/Changelog"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 
 // ── New tools (April 2026 expansion) ──
@@ -367,6 +368,7 @@ const AppContent = () => {
           <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/changelog" element={<Changelog />} />
           <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
           <Route path="/tools/safe-call" element={<SafeCall />} />
