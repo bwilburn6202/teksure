@@ -3,8 +3,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
-  Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Heart,
-  Users, Star, Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone,
+  Sparkles, Bot, BookOpen, Phone, Mail,
+  Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone,
   CreditCard
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -50,46 +50,6 @@ const quickProblems = [
   { label: 'Forgot Password', query: 'password', icon: KeyRound, color: 'bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400', slug: 'manage-passwords-windows', fix: 'Use \'Forgot Password\' on the login page' },
   { label: 'Phone Storage Full', query: 'storage', icon: Smartphone, color: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400', slug: 'manage-storage-windows', fix: 'Delete unused apps and clear cache' },
 ];
-
-function NewsletterCTA() {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const trimmed = email.trim().toLowerCase();
-    if (!trimmed) return;
-    setStatus('loading');
-    try {
-      const { supabase } = await import('@/integrations/supabase/client');
-      const { error: dbError } = await supabase.from('newsletter_subscribers').insert({ email: trimmed });
-
-      if (dbError && dbError.code !== '23505') {
-        console.error('Newsletter signup error:', dbError);
-        setStatus('error');
-        return;
-      }
-
-      supabase.functions.invoke('send-notification', {
-        body: { type: 'newsletter_signup', data: { email: trimmed } },
-      }).catch(err => console.warn('Newsletter notification failed (non-fatal):', err));
-
-      setStatus('success');
-    } catch (err) {
-      console.error('Newsletter signup failed:', err);
-      setStatus('error');
-    }
-  };
-  if (status === 'success') return (<div role="status" className="flex flex-col items-center gap-2 py-2"><CheckCircle className="h-5 w-5 text-green-500" /><p className="text-sm font-medium">You're in! One friendly email each week.</p></div>);
-  if (status === 'error') return (<div role="status" className="flex flex-col items-center gap-2 py-2"><p className="text-sm text-destructive font-medium">Something went wrong.</p><button onClick={() => setStatus('idle')} className="text-sm text-primary hover:underline">Try again</button></div>);
-  return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 w-full">
-      <Input type="email" id="newsletter-email" aria-label="Your email address" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required className="h-11 flex-1 bg-card border-border rounded-lg focus:border-primary/50" />
-      <Button type="submit" disabled={status === 'loading'} className="h-11 px-6 shrink-0 rounded-lg">
-        {status === 'loading' ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Subscribe'}
-      </Button>
-    </form>
-  );
-}
 
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
@@ -205,8 +165,6 @@ const Index = () => {
 
             {/* Trust bar */}
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2"><Users className="h-4 w-4 text-primary" /><span><strong className="text-foreground">10,000+</strong> people helped</span></div>
-              <div className="flex items-center gap-2"><Star className="h-4 w-4 text-amber-500" /><span><strong className="text-foreground">4.9/5</strong> average rating</span></div>
               <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /><span><strong className="text-foreground">{guides.length.toLocaleString()}+</strong> free guides</span></div>
             </div>
           </div>

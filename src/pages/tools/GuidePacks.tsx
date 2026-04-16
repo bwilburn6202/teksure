@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Download, Printer, FileText, CheckCircle2, Lock, Sprout, Shield, Camera, Monitor, Laptop, Bot, type LucideIcon } from 'lucide-react';
+import { Download, Printer, FileText, CheckCircle2, Lock, Sprout, Shield, Camera, Monitor, Laptop, Bot, Wifi, Heart, CreditCard, Phone, AlertTriangle, type LucideIcon } from 'lucide-react';
 import { guides } from '@/data/guides';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
@@ -76,6 +76,72 @@ const packs: { id: string; name: string; icon: LucideIcon; color: string; desc: 
     free: false,
     pages: '~24',
   },
+  {
+    id: 'smart-home',
+    name: 'Smart Home Basics Pack',
+    icon: Wifi,
+    color: 'from-cyan-400 to-teal-500',
+    desc: 'Set up smart speakers, smart TVs, streaming devices, and control your home tech with confidence.',
+    tags: ['smart', 'alexa', 'tv', 'streaming', 'bluetooth', 'roku', 'wifi'],
+    guideCount: 8,
+    free: true,
+    pages: '~24',
+  },
+  {
+    id: 'health-tech',
+    name: 'Health & Medical Tech Pack',
+    icon: Heart,
+    color: 'from-pink-400 to-rose-500',
+    desc: 'Medicare portal, telehealth visits, health apps, medication reminders, and fitness trackers.',
+    tags: ['medicare', 'health', 'telehealth', 'medication', 'fitness', 'prescription'],
+    guideCount: 6,
+    free: true,
+    pages: '~18',
+  },
+  {
+    id: 'government-benefits',
+    name: 'Government & Benefits Pack',
+    icon: Shield,
+    color: 'from-indigo-400 to-blue-600',
+    desc: 'SSA portal, Medicare online, IRS tools, USPS tracking, and government app guides.',
+    tags: ['social security', 'ssa', 'government', 'irs', 'medicare', 'usps', 'benefits'],
+    guideCount: 7,
+    free: true,
+    pages: '~21',
+  },
+  {
+    id: 'financial-tech',
+    name: 'Financial Tech Pack',
+    icon: CreditCard,
+    color: 'from-green-400 to-emerald-600',
+    desc: 'Online banking, Venmo and Zelle safely, checking credit scores, and avoiding financial scams.',
+    tags: ['bank', 'venmo', 'zelle', 'credit', 'payment', 'financial', 'money'],
+    guideCount: 8,
+    free: false,
+    pages: '~24',
+  },
+  {
+    id: 'phone-basics',
+    name: 'Phone Basics Pack',
+    icon: Phone,
+    color: 'from-blue-400 to-sky-600',
+    desc: 'iPhone and Android essentials — calls, texts, camera, apps, storage, and accessibility features.',
+    tags: ['phone', 'iphone', 'android', 'camera', 'text', 'app', 'storage'],
+    guideCount: 10,
+    free: false,
+    pages: '~30',
+  },
+  {
+    id: 'emergency-prep',
+    name: 'Digital Emergency Prep Pack',
+    icon: AlertTriangle,
+    color: 'from-amber-400 to-orange-500',
+    desc: 'Password backups, ICE contacts, Medical ID, offline maps, emergency alerts, and family plans.',
+    tags: ['emergency', 'backup', 'password', 'password', 'medical', 'ice', 'safety'],
+    guideCount: 6,
+    free: true,
+    pages: '~18',
+  },
 ];
 
 function generatePrintContent(packId: string) {
@@ -94,7 +160,7 @@ function generatePrintContent(packId: string) {
         </div>
       </div>
       <p>${g.excerpt}</p>
-      ${g.steps ? g.steps.slice(0, 4).map((s, i) => `
+      ${g.steps ? g.steps.map((s, i) => `
         <div class="step">
           <span class="step-num">${i + 1}</span>
           <div>
@@ -104,7 +170,7 @@ function generatePrintContent(packId: string) {
           </div>
         </div>
       `).join('') : ''}
-      ${g.steps && g.steps.length > 4 ? `<p class="more">…and ${g.steps.length - 4} more steps at teksure.com/guides/${g.slug}</p>` : ''}
+      <p class="more">📱 Full guide online: teksure.com/guides/${g.slug}</p>
     </div>
   `).join('');
 
@@ -162,7 +228,7 @@ export default function GuidePacks() {
         <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14 text-center">
           <div className="text-4xl mb-3">📦</div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3">Printable Guide Packs</h1>
-          <p className="text-muted-foreground max-w-md mx-auto">Download themed collections of guides as a single print-ready document — perfect for keeping by the computer or sharing with someone who prefers paper.</p>
+          <p className="text-muted-foreground max-w-lg mx-auto">Download themed collections of guides as a single print-ready document — with <strong>all steps included</strong>. Perfect for keeping by the computer or sharing with someone who prefers paper.</p>
         </div>
 
         <div className="container max-w-5xl py-12">
