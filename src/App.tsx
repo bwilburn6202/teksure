@@ -138,6 +138,7 @@ const BillDecoder            = lazy(() => import("./pages/tools/BillDecoder"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const Changelog              = lazy(() => import("./pages/Changelog"));
+const GiftSession            = lazy(() => import("./pages/GiftSession"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 
 // ── New tools (April 2026 expansion) ──
@@ -374,6 +375,7 @@ const AppContent = () => {
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/changelog" element={<Changelog />} />
+          <Route path="/gift-session" element={<GiftSession />} />
           <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
           <Route path="/tools/safe-call" element={<SafeCall />} />
