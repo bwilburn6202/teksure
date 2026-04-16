@@ -2098,6 +2098,2022 @@ Ask your doctor's office if they offer a patient portal tutorial. Many offices w
 
 (Sources: Medicare.gov, Apple Support, AARP Health, MyChart, 2026)`,
   },
+
+  // ─── Internet & Networking ─────────────────────────────────────────
+
+  {
+    slug: 'ip-address',
+    title: 'IP Address',
+    category: 'concept',
+    tags: ['internet', 'networking', 'ip', 'address', 'connection'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['dns', 'router', 'wifi-networking'],
+    content: `## What Is an IP Address?
+
+An IP address is a unique number assigned to every device connected to the internet. Think of it like a mailing address for your phone, computer, or tablet — it tells other devices where to send information so it reaches the right place.
+
+Every time you visit a website, your device sends its IP address along with the request so the website knows where to send the page back to. Without IP addresses, data would have no way of knowing where to go.
+
+## Public vs. Private IP Addresses
+
+Your home network has two types of IP addresses. Your **public IP address** is what the outside internet sees — it is assigned by your internet provider and shared by every device in your home. Your **private IP address** is used inside your home network so your router can tell your phone apart from your laptop.
+
+You can find your public IP address by searching "what is my IP address" in any search browser. Your private IP address can be found in your device's Wi-Fi or network settings.
+
+## Why It Matters
+
+IP addresses are how the internet routes information. They also play a role in security — websites can sometimes use your IP address to estimate your general location (city level, not your exact address). Using a VPN can mask your public IP address for added privacy.
+
+(Sources: How-To Geek, Tom's Guide, 2026)`,
+  },
+  {
+    slug: 'dns',
+    title: 'DNS (Domain Name System)',
+    category: 'concept',
+    tags: ['internet', 'networking', 'dns', 'domain', 'web'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['ip-address', 'url', 'http-https'],
+    content: `## What Is DNS?
+
+DNS stands for Domain Name System. It works like a phone book for the internet. When you type a website name like "google.com" into your browser, DNS translates that name into a numerical IP address that computers use to find the website. Without DNS, you would need to memorize long strings of numbers to visit every website.
+
+## How DNS Works
+
+When you type a web address and press Enter, your device asks a DNS server, "What is the IP address for this website?" The DNS server looks it up and responds with the correct number. Your browser then uses that number to connect to the website. This entire process happens in milliseconds.
+
+## Why DNS Matters to You
+
+Most of the time, DNS works silently in the background. But if DNS has a problem, websites will not load even though your internet connection is working. If you can connect to the internet but websites will not open, DNS could be the issue.
+
+You can try switching to a free, fast DNS service like Google Public DNS (8.8.8.8) or Cloudflare DNS (1.1.1.1) in your device's network settings. This can sometimes speed up your browsing and improve reliability.
+
+(Sources: Cloudflare Learning Center, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'url',
+    title: 'URL (Web Address)',
+    category: 'concept',
+    tags: ['internet', 'web', 'url', 'browser', 'address'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['dns', 'http-https', 'email-essentials'],
+    content: `## What Is a URL?
+
+A URL (Uniform Resource Locator) is the address you type or click to visit a specific page on the internet. It appears in the address bar at the top of your browser. For example, "https://www.google.com/search" is a URL.
+
+## Parts of a URL
+
+A URL has several parts, each with a purpose:
+
+- **https://** — The protocol. This tells your browser how to connect securely (the "s" stands for secure).
+- **www.google.com** — The domain name. This is the website's name.
+- **/search** — The path. This points to a specific page within the website.
+
+## Why URLs Matter for Safety
+
+Being able to read a URL helps you spot scams. Phishing websites often use URLs that look similar to real ones but have small changes — like "g00gle.com" instead of "google.com" or "paypa1.com" instead of "paypal.com."
+
+Before clicking any link in an email or text message, hover over it (on a computer) or long-press it (on a phone) to preview where it actually leads. If the URL looks suspicious or unfamiliar, do not click it.
+
+## Quick Tip
+
+A legitimate URL for a well-known company will match the company's actual domain. When in doubt, type the website address directly into your browser instead of clicking a link.
+
+(Sources: Google Safety Center, FTC.gov, 2026)`,
+  },
+  {
+    slug: 'http-https',
+    title: 'HTTP and HTTPS',
+    category: 'concept',
+    tags: ['internet', 'security', 'web', 'https', 'encryption'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['url', 'encryption', 'online-shopping-safety-guide'],
+    content: `## What Are HTTP and HTTPS?
+
+HTTP (HyperText Transfer Protocol) and HTTPS (HyperText Transfer Protocol Secure) are the systems your browser uses to communicate with websites. Think of HTTP as sending a postcard — anyone handling it along the way can read it. HTTPS is like sending a sealed letter — the contents are encrypted so only you and the website can read them.
+
+## Why HTTPS Matters
+
+When you see a padlock icon in your browser's address bar and the URL starts with "https://", it means the connection between your device and the website is encrypted. This is especially important when you are entering passwords, credit card numbers, or personal information.
+
+If a website uses plain "http://" without the "s," your information travels without protection. Modern browsers will often warn you when a site is not secure.
+
+## What to Look For
+
+- **Padlock icon** in the address bar means the connection is encrypted.
+- **"Not Secure" warning** means the site uses HTTP and your data is not protected.
+- Always check for HTTPS before entering any sensitive information like passwords or payment details.
+
+## Quick Tip
+
+Most reputable websites now use HTTPS by default. If a shopping or banking website does not show the padlock, leave the site and find the company through a trusted search instead.
+
+(Sources: Google Safety Center, How-To Geek, CISA.gov, 2026)`,
+  },
+  {
+    slug: 'bandwidth',
+    title: 'Bandwidth',
+    category: 'concept',
+    tags: ['internet', 'speed', 'bandwidth', 'networking', 'streaming'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['latency', 'isp', 'wifi-networking'],
+    content: `## What Is Bandwidth?
+
+Bandwidth is the maximum amount of data that can travel through your internet connection at one time. Think of it like a highway — the more lanes (bandwidth) you have, the more cars (data) can travel at once without slowing down.
+
+Bandwidth is measured in megabits per second (Mbps). A higher number means your connection can handle more data at the same time.
+
+## How Much Bandwidth Do You Need?
+
+Different activities use different amounts of bandwidth:
+
+- **Email and web browsing**: 5-10 Mbps is enough.
+- **Streaming video (Netflix, YouTube)**: 25 Mbps for high-definition, 50+ Mbps for 4K.
+- **Video calls (Zoom, FaceTime)**: 10-25 Mbps works well.
+- **Multiple devices at once**: Add up the needs of each device. A household with several people streaming, gaming, and video calling may need 100-300 Mbps.
+
+## Bandwidth vs. Speed
+
+Bandwidth is the capacity of your connection, not necessarily the speed you experience. If five family members are all streaming video at the same time, they are sharing that bandwidth, and each person gets a smaller slice. This is why your internet can feel slower during peak usage times.
+
+## Quick Tip
+
+You can check your current internet speed for free at speedtest.net. If your speed is consistently much lower than what your internet provider promised, contact them — you may need a plan upgrade or there could be an equipment issue.
+
+(Sources: Tom's Guide, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'latency',
+    title: 'Latency',
+    category: 'concept',
+    tags: ['internet', 'speed', 'latency', 'ping', 'networking'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['bandwidth', 'wifi-networking', 'isp'],
+    content: `## What Is Latency?
+
+Latency is the delay between when you take an action online and when you see a response. If you click a link and there is a noticeable pause before the page starts loading, that pause is latency. It is measured in milliseconds (ms).
+
+Think of bandwidth as how wide the highway is, and latency as how long it takes a car to drive from one end to the other. You can have a wide highway (high bandwidth) but still experience delays if the distance is long or there are traffic jams along the way.
+
+## What Causes High Latency?
+
+Several factors contribute to latency:
+
+- **Physical distance**: Data traveling to a server across the country takes longer than data going to a nearby server.
+- **Network congestion**: Too many people using the same connection at once.
+- **Old equipment**: An outdated router or modem can introduce delays.
+- **Wi-Fi vs. wired**: A direct Ethernet cable connection typically has lower latency than Wi-Fi.
+
+## Why It Matters
+
+For most everyday tasks like reading email or browsing the web, you will not notice latency. But for video calls, online gaming, or real-time applications, high latency causes lag — choppy video, delayed audio, or unresponsive controls.
+
+## Quick Tip
+
+If video calls keep freezing, latency may be the culprit. Try connecting your computer directly to the router with an Ethernet cable, or move closer to the router to improve your Wi-Fi signal.
+
+(Sources: How-To Geek, Cloudflare Learning Center, 2026)`,
+  },
+  {
+    slug: 'isp',
+    title: 'ISP (Internet Service Provider)',
+    category: 'concept',
+    tags: ['internet', 'isp', 'provider', 'connection', 'service'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['bandwidth', 'modem', 'router'],
+    content: `## What Is an ISP?
+
+An ISP, or Internet Service Provider, is the company that provides your home or business with access to the internet. Common ISPs in the United States include Comcast (Xfinity), AT&T, Spectrum, Verizon (Fios), and T-Mobile Home Internet.
+
+Your ISP is the bridge between your home network and the rest of the internet. Without an ISP, your router and modem have nothing to connect to.
+
+## Types of Internet Connections
+
+ISPs deliver internet using different technologies:
+
+- **Cable**: Uses the same wires as cable TV. Widely available and offers good speeds.
+- **Fiber optic**: Uses light signals through glass cables. Fastest and most reliable, but not available everywhere.
+- **DSL**: Uses phone lines. Slower than cable or fiber, but still functional for basic use.
+- **Satellite**: Available almost anywhere, but higher latency and slower speeds. Starlink is improving this category.
+- **Fixed wireless / 5G Home**: Uses cellular towers. Growing in availability.
+
+## Choosing an ISP
+
+When picking an ISP, consider:
+
+- **Speed**: Make sure the plan supports your household's needs (streaming, video calls, multiple devices).
+- **Data caps**: Some ISPs limit how much data you can use per month. Going over can result in extra charges or throttled speeds.
+- **Price**: Introductory rates often go up after 12 months. Read the fine print.
+- **Reliability**: Check reviews from people in your area.
+
+(Sources: CNET, Tom's Guide, FCC Broadband Map, 2026)`,
+  },
+  {
+    slug: 'modem',
+    title: 'Modem',
+    category: 'concept',
+    tags: ['internet', 'hardware', 'modem', 'networking', 'connection'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['router', 'isp', 'wifi-networking'],
+    content: `## What Is a Modem?
+
+A modem is a device that connects your home to your Internet Service Provider (ISP). It translates the signal coming from your ISP — whether through a cable line, phone line, or fiber optic cable — into a format your home devices can use.
+
+Think of the modem as a translator between your ISP's language and your home network's language. Without it, your devices would not be able to communicate with the internet.
+
+## Modem vs. Router
+
+People often confuse modems and routers, but they do different things:
+
+- **Modem**: Connects your home to the internet (talks to your ISP).
+- **Router**: Takes the internet connection from the modem and shares it with all the devices in your home, usually over Wi-Fi.
+
+Many ISPs provide a combined modem-router unit (sometimes called a gateway), which handles both jobs in one box.
+
+## Do You Need Your Own Modem?
+
+Most ISPs rent you a modem for a monthly fee (typically $10-15 per month). Buying your own compatible modem can save you money over time. Check your ISP's website for a list of approved modem models before purchasing one.
+
+## Quick Tip
+
+If your internet goes down, try restarting your modem first. Unplug it from power, wait 30 seconds, then plug it back in. Wait a couple of minutes for it to fully reconnect. This fixes many common connection problems.
+
+(Sources: How-To Geek, CNET, Tom's Guide, 2026)`,
+  },
+  {
+    slug: 'router',
+    title: 'Router',
+    category: 'concept',
+    tags: ['internet', 'hardware', 'router', 'wifi', 'networking'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['modem', 'wifi-networking', 'ethernet'],
+    content: `## What Is a Router?
+
+A router is a device that takes the internet connection from your modem and shares it with all the devices in your home. It acts like a traffic cop directing internet data to the right device — sending a YouTube video to your TV, an email to your phone, and a web page to your laptop, all at the same time.
+
+Most routers also create your Wi-Fi network, which allows devices to connect wirelessly.
+
+## Wired vs. Wireless Routers
+
+Nearly all modern routers are wireless, meaning they broadcast a Wi-Fi signal. However, most also have ports on the back where you can plug in Ethernet cables for a faster, more stable connection to specific devices like desktop computers or gaming consoles.
+
+## Mesh Routers
+
+If your home is large or has thick walls that block Wi-Fi signal, a **mesh router system** uses multiple units placed around your house to create one continuous Wi-Fi network with no dead zones. Popular mesh systems include Google Nest WiFi, Eero, and TP-Link Deco.
+
+## Keeping Your Router Secure
+
+- Change the default Wi-Fi password printed on the router's sticker.
+- Change the default administrator login (this is different from your Wi-Fi password).
+- Keep your router's firmware updated — most modern routers do this automatically.
+- Place your router in an open, central location for the best coverage.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'ethernet',
+    title: 'Ethernet',
+    category: 'concept',
+    tags: ['internet', 'networking', 'ethernet', 'cable', 'wired'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['router', 'wifi-networking', 'latency'],
+    content: `## What Is Ethernet?
+
+Ethernet is a way to connect your device to the internet using a physical cable instead of Wi-Fi. An Ethernet cable plugs directly into your router on one end and into your computer, gaming console, or smart TV on the other end.
+
+Think of Wi-Fi as talking across a room — it works, but there is background noise and the signal can weaken. Ethernet is like having a private phone line — the connection is direct, stable, and interference-free.
+
+## Why Use Ethernet Over Wi-Fi?
+
+Ethernet offers several advantages:
+
+- **Faster speeds**: A wired connection delivers the full speed your internet plan provides.
+- **Lower latency**: Ideal for video calls, gaming, and real-time applications.
+- **More reliable**: No signal drops caused by walls, distance, or interference from other devices.
+- **More secure**: It is much harder for someone to intercept data on a physical cable than on a wireless signal.
+
+## When to Use Ethernet
+
+You do not need to wire every device. Ethernet is most useful for:
+
+- Desktop computers that stay in one place.
+- Smart TVs or streaming boxes for uninterrupted 4K video.
+- Home office setups where reliable video calls are important.
+- Gaming consoles where lag matters.
+
+## Quick Tip
+
+Ethernet cables come in different categories (Cat 5e, Cat 6, Cat 6a). For home use, a Cat 6 cable is the sweet spot — it supports fast speeds and is affordable. You can find them at any electronics store or online for a few dollars.
+
+(Sources: How-To Geek, Tom's Guide, CNET, 2026)`,
+  },
+
+  // ─── Security ──────────────────────────────────────────────────────
+
+  {
+    slug: 'malware',
+    title: 'Malware',
+    category: 'concept',
+    tags: ['security', 'malware', 'virus', 'threats', 'protection'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['ransomware', 'phishing', 'firewall'],
+    content: `## What Is Malware?
+
+Malware is short for "malicious software." It is any program or file designed to harm your device, steal your information, or take control of your system without your permission. Malware is the umbrella term that covers viruses, spyware, ransomware, trojans, and other digital threats.
+
+## How Malware Gets on Your Device
+
+Malware can sneak onto your device through:
+
+- **Email attachments**: Opening a file from an unknown sender.
+- **Suspicious downloads**: Downloading software from unofficial websites.
+- **Infected websites**: Visiting compromised web pages.
+- **USB drives**: Plugging in a flash drive that contains malware.
+- **Fake ads or pop-ups**: Clicking on deceptive advertisements.
+
+## Signs Your Device May Be Infected
+
+- Your device is running much slower than usual.
+- You see pop-up ads or unfamiliar programs you did not install.
+- Your browser homepage or search engine changed without your permission.
+- Files are missing or have been modified.
+- Your device crashes or freezes frequently.
+
+## How to Protect Yourself
+
+- Keep your operating system and apps updated — updates often patch security holes.
+- Install reputable antivirus software (Windows Defender is built into Windows and works well).
+- Do not download software from websites you do not trust.
+- Be cautious with email attachments, even from people you know.
+- Back up your important files regularly.
+
+(Sources: CISA.gov, How-To Geek, Microsoft Support, 2026)`,
+  },
+  {
+    slug: 'ransomware',
+    title: 'Ransomware',
+    category: 'concept',
+    tags: ['security', 'ransomware', 'malware', 'threats', 'data'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['malware', 'data-breach', 'encryption'],
+    content: `## What Is Ransomware?
+
+Ransomware is a specific type of malware that locks you out of your own files or device and demands a payment (ransom) to give you access back. It encrypts your photos, documents, and other files so you cannot open them, then displays a message demanding money — usually in cryptocurrency — in exchange for unlocking them.
+
+Think of it like someone changing the locks on your house and slipping a note under the door saying, "Pay me $500 and I will give you the new key."
+
+## How Ransomware Spreads
+
+Ransomware typically arrives through:
+
+- **Phishing emails**: A message that tricks you into clicking a malicious link or opening an infected attachment.
+- **Fake software updates**: Pop-ups claiming you need to update your system that actually install ransomware.
+- **Compromised websites**: Visiting a site that has been infected.
+
+## What to Do If You Get Ransomware
+
+- **Do not pay the ransom.** There is no guarantee you will get your files back, and paying encourages more attacks.
+- Disconnect from the internet immediately to prevent the ransomware from spreading.
+- Contact a trusted tech professional for help.
+- Report the attack to the FBI's Internet Crime Complaint Center (IC3.gov).
+- Restore your files from a backup if you have one.
+
+## How to Protect Yourself
+
+The best defense is having regular backups of your important files stored on an external hard drive or in the cloud. If ransomware hits, you can wipe your device and restore from the backup.
+
+(Sources: CISA.gov, FBI IC3, FTC.gov, 2026)`,
+  },
+  {
+    slug: 'two-factor-authentication',
+    title: 'Two-Factor Authentication (2FA)',
+    category: 'concept',
+    tags: ['security', '2fa', 'authentication', 'login', 'accounts'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['password-security', 'phishing', 'encryption'],
+    content: `## What Is Two-Factor Authentication?
+
+Two-factor authentication (often called 2FA) adds a second step when you log into an account. Instead of relying on your password alone, 2FA requires you to verify your identity with something else — like a code sent to your phone or generated by an app.
+
+Think of it like a bank vault that needs two keys to open. Even if someone steals one key (your password), they still cannot get in without the second key (the verification code).
+
+## Types of 2FA
+
+- **Text message (SMS) code**: A six-digit code sent to your phone via text. This is the most common type, but it is also the least secure because phone numbers can be hijacked.
+- **Authenticator app**: Apps like Google Authenticator, Microsoft Authenticator, or Authy generate a new code every 30 seconds. More secure than text messages.
+- **Security key**: A small physical device (like a YubiKey) that you plug into your computer or tap against your phone. The most secure option available.
+- **Biometric**: Using your fingerprint or face scan as the second factor.
+
+## Where to Turn On 2FA
+
+Start with your most important accounts:
+
+1. **Email** — Your email is the gateway to resetting all your other passwords.
+2. **Banking and financial accounts**
+3. **Social media** (Facebook, Instagram, X)
+4. **Shopping** (Amazon, PayPal)
+
+Look in each account's Settings or Security section for an option labeled "Two-Factor Authentication," "2-Step Verification," or "Login Verification."
+
+(Sources: CISA.gov, Google Support, AARP, 2026)`,
+  },
+  {
+    slug: 'encryption',
+    title: 'Encryption',
+    category: 'concept',
+    tags: ['security', 'encryption', 'privacy', 'data', 'protection'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['http-https', 'vpn', 'two-factor-authentication'],
+    content: `## What Is Encryption?
+
+Encryption is a process that scrambles your data so that only authorized people can read it. When information is encrypted, it looks like gibberish to anyone who does not have the key to unscramble it.
+
+Imagine writing a letter in a secret code that only you and the recipient understand. Even if someone intercepts the letter, they cannot read it without knowing the code. That is what encryption does for your digital information.
+
+## Where Encryption Is Used
+
+Encryption protects you in many everyday situations:
+
+- **Websites (HTTPS)**: When you see the padlock icon in your browser, the connection between your device and the website is encrypted.
+- **Messaging apps**: Apps like iMessage, WhatsApp, and Signal use end-to-end encryption, meaning only you and the person you are messaging can read the conversation — not even the app maker.
+- **Online banking**: Your financial transactions are encrypted so hackers cannot steal your account details.
+- **Device storage**: iPhones and modern Android phones encrypt everything stored on them by default. If someone steals your phone, they cannot read your data without your passcode.
+
+## Why It Matters
+
+Without encryption, anyone who intercepts your data — hackers on public Wi-Fi, for example — could read your passwords, messages, and financial information. Encryption is one of the most important layers of protection in the digital world.
+
+## Quick Tip
+
+To make sure your phone is encrypted, go to Settings and look for "Encryption" or "Security." On most modern smartphones, encryption is turned on automatically when you set a passcode or PIN.
+
+(Sources: CISA.gov, EFF.org, Apple Support, 2026)`,
+  },
+  {
+    slug: 'firewall',
+    title: 'Firewall',
+    category: 'concept',
+    tags: ['security', 'firewall', 'protection', 'networking', 'threats'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['malware', 'router', 'vpn'],
+    content: `## What Is a Firewall?
+
+A firewall is a security system that monitors and controls the data coming in and going out of your device or network. It acts like a security guard at the entrance of a building — checking everyone who tries to enter and turning away anyone who should not be there.
+
+Firewalls help block hackers, malware, and other threats from reaching your device through the internet.
+
+## Types of Firewalls
+
+- **Software firewalls**: Built into your computer's operating system. Windows has Windows Defender Firewall, and macOS has a built-in firewall in System Settings. These monitor traffic on your individual device.
+- **Hardware firewalls**: Built into your router. This protects your entire home network by filtering traffic before it reaches any of your devices.
+
+Most homes have both working together — the router's firewall protects the network as a whole, and each device's software firewall adds another layer of protection.
+
+## Do You Need to Do Anything?
+
+For most people, the default firewall settings are fine. Here is what to keep in mind:
+
+- **Windows**: Windows Defender Firewall is on by default. Do not turn it off.
+- **Mac**: You can turn on the firewall in System Settings > Network > Firewall.
+- **Router**: Your router's firewall is typically enabled by default.
+
+If an app asks you to allow it through the firewall, only say yes if you trust the app and you installed it yourself.
+
+(Sources: Microsoft Support, Apple Support, CISA.gov, 2026)`,
+  },
+  {
+    slug: 'phishing',
+    title: 'Phishing',
+    category: 'concept',
+    tags: ['security', 'phishing', 'scam', 'email', 'fraud'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['scam-prevention', 'malware', 'two-factor-authentication'],
+    content: `## What Is Phishing?
+
+Phishing is a type of scam where criminals try to trick you into giving up personal information — like passwords, credit card numbers, or Social Security numbers — by pretending to be someone you trust. The name comes from "fishing" because scammers are casting bait and hoping you will bite.
+
+## How Phishing Works
+
+Phishing attempts usually arrive by email, text message, or phone call. They often look like they come from a legitimate company — your bank, Amazon, the IRS, or a tech company. The message creates urgency: "Your account has been compromised," "You have a package delivery issue," or "You owe money and must pay immediately."
+
+The message includes a link to a fake website that looks real or asks you to call a phone number where scammers are waiting to collect your information.
+
+## Red Flags to Watch For
+
+- **Urgency or threats**: "Act now or your account will be closed."
+- **Unfamiliar sender**: The email address does not match the company it claims to be from.
+- **Suspicious links**: The URL does not match the company's real website.
+- **Requests for personal information**: Legitimate companies will not ask for your password by email.
+- **Poor grammar or spelling**: Many phishing messages have noticeable errors.
+
+## What to Do
+
+- Do not click links or open attachments from suspicious messages.
+- Go directly to the company's website by typing the address into your browser.
+- Report phishing emails to the FTC at reportfraud.ftc.gov.
+- If you clicked a link and entered information, change your passwords immediately.
+
+(Sources: FTC.gov, CISA.gov, AARP Fraud Watch, 2026)`,
+  },
+  {
+    slug: 'vpn',
+    title: 'VPN (Virtual Private Network)',
+    category: 'concept',
+    tags: ['security', 'vpn', 'privacy', 'internet', 'encryption'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['encryption', 'ip-address', 'privacy-settings'],
+    content: `## What Is a VPN?
+
+A VPN, or Virtual Private Network, creates a secure, encrypted tunnel between your device and the internet. When you use a VPN, your internet traffic is routed through a server operated by the VPN provider, hiding your IP address and encrypting all the data you send and receive.
+
+Think of it like sending a letter through a secure courier service instead of regular mail. No one along the way can read the letter or see who sent it.
+
+## When to Use a VPN
+
+A VPN is most useful in these situations:
+
+- **Public Wi-Fi**: Coffee shops, airports, hotels, and libraries have open networks where hackers can intercept your data. A VPN encrypts everything so they cannot see what you are doing.
+- **Privacy**: A VPN prevents your ISP from tracking which websites you visit.
+- **Traveling**: Some content may be restricted in certain countries. A VPN can help you access your usual services.
+
+## What a VPN Does NOT Do
+
+A VPN does not make you anonymous or protect you from every threat. It does not stop you from clicking phishing links, downloading malware, or using weak passwords. It is one layer of protection, not a complete security solution.
+
+## Choosing a VPN
+
+Look for a reputable, paid VPN service. Free VPNs often make money by collecting and selling your data — the opposite of what you want. Trusted options include NordVPN, ExpressVPN, and Proton VPN (which has a trustworthy free tier).
+
+(Sources: CISA.gov, Tom's Guide, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'dark-web',
+    title: 'Dark Web',
+    category: 'concept',
+    tags: ['security', 'dark-web', 'internet', 'privacy', 'data'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['data-breach', 'vpn', 'password-security'],
+    content: `## What Is the Dark Web?
+
+The internet has layers, and the dark web is the deepest one. The **surface web** is everything you can find through Google — websites, news, shopping. The **deep web** includes password-protected content like your email inbox and bank account. The **dark web** is a hidden portion of the internet that requires special software (like the Tor browser) to access.
+
+The dark web is not inherently illegal, but it is often used for illicit activities, including selling stolen personal data, passwords, credit card numbers, and Social Security numbers.
+
+## Why Should You Care?
+
+If your personal information is involved in a data breach, it may end up for sale on the dark web. This is how identity theft often starts — criminals buy stolen login credentials and use them to access your accounts.
+
+## How to Check If Your Information Is on the Dark Web
+
+- **Have I Been Pwned** (haveibeenpwned.com): A free, trusted service that tells you if your email address has appeared in known data breaches.
+- **Credit monitoring services**: Many banks and credit card companies now offer free dark web monitoring alerts.
+- **Google's dark web report**: Available through Google One, it scans for your personal information on the dark web.
+
+## What to Do If Your Data Is Found
+
+- Change your passwords immediately, especially for affected accounts.
+- Turn on two-factor authentication.
+- Monitor your bank statements and credit reports for unfamiliar activity.
+- Consider placing a fraud alert or credit freeze with the three major credit bureaus.
+
+(Sources: FTC.gov, AARP, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'data-breach',
+    title: 'Data Breach',
+    category: 'concept',
+    tags: ['security', 'data-breach', 'privacy', 'identity', 'protection'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['dark-web', 'password-security', 'two-factor-authentication'],
+    content: `## What Is a Data Breach?
+
+A data breach happens when unauthorized people gain access to sensitive information stored by a company or organization. This can include usernames, passwords, email addresses, Social Security numbers, credit card details, and medical records.
+
+Data breaches affect millions of people every year. Major companies like Target, Equifax, Yahoo, and T-Mobile have all experienced breaches that exposed customer data.
+
+## How Breaches Happen
+
+- **Hacking**: Attackers exploit weaknesses in a company's security systems.
+- **Human error**: An employee accidentally exposes data or falls for a phishing attack.
+- **Insider threats**: A disgruntled employee intentionally leaks information.
+- **Poor security practices**: Companies that do not encrypt data or use weak passwords.
+
+## How to Know If You Are Affected
+
+- The company involved will usually notify you by email or mail.
+- Check haveibeenpwned.com to see if your email appears in known breaches.
+- Watch for unexpected activity in your bank accounts or credit reports.
+
+## What to Do After a Breach
+
+1. **Change passwords** for the affected service and any other account using the same password.
+2. **Turn on 2FA** for affected accounts.
+3. **Monitor your credit**: Request free credit reports at annualcreditreport.com.
+4. **Consider a credit freeze**: This prevents anyone from opening new accounts in your name. You can freeze your credit for free at Equifax, Experian, and TransUnion.
+5. **Be extra cautious of phishing**: Scammers often target breach victims with follow-up scams.
+
+(Sources: FTC.gov, CISA.gov, IdentityTheft.gov, 2026)`,
+  },
+  {
+    slug: 'zero-day-vulnerability',
+    title: 'Zero-Day Vulnerability',
+    category: 'concept',
+    tags: ['security', 'vulnerability', 'software', 'threats', 'updates'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['malware', 'firewall', 'data-breach'],
+    content: `## What Is a Zero-Day Vulnerability?
+
+A zero-day vulnerability is a security flaw in software that the software maker does not yet know about — or knows about but has not had time to fix. The name "zero-day" refers to the fact that the developer has had zero days to create a patch or update to fix the problem.
+
+Think of it like discovering a broken lock on a building's back door that nobody knew was broken. Until someone fixes it, anyone who discovers it can walk right in.
+
+## Why Zero-Days Are Dangerous
+
+Because there is no fix available yet, zero-day vulnerabilities are extremely valuable to hackers. They can exploit these flaws to install malware, steal data, or take control of systems before anyone knows what is happening.
+
+Zero-day attacks often target widely used software like web browsers, operating systems, and popular applications — because the more people using the software, the more potential victims there are.
+
+## How to Protect Yourself
+
+While you cannot prevent zero-day vulnerabilities from existing, you can reduce your risk:
+
+- **Install updates immediately**: When your phone, computer, or apps prompt you to update, do it as soon as possible. Many updates contain security patches for recently discovered vulnerabilities.
+- **Turn on automatic updates**: This ensures you get fixes without having to think about it.
+- **Use reputable software**: Stick with well-known apps and operating systems that have dedicated security teams working to find and fix flaws.
+- **Keep backups**: If a zero-day attack does hit, having a recent backup lets you restore your data.
+
+(Sources: CISA.gov, How-To Geek, Microsoft Security, 2026)`,
+  },
+
+  // ─── Devices & Hardware ────────────────────────────────────────────
+
+  {
+    slug: 'ssd',
+    title: 'SSD (Solid State Drive)',
+    category: 'concept',
+    tags: ['hardware', 'storage', 'ssd', 'computer', 'performance'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['ram', 'cpu', 'device-basics'],
+    content: `## What Is an SSD?
+
+An SSD, or Solid State Drive, is a type of storage device inside your computer that holds all your files, apps, photos, and the operating system. Unlike older hard drives (HDDs) that used spinning metal disks to read and write data, an SSD uses electronic chips with no moving parts.
+
+Think of the difference like a record player versus a streaming music app. The record player has to physically move a needle along a spinning disc to find a song. The streaming app accesses any song instantly because everything is stored electronically.
+
+## Why SSDs Matter
+
+SSDs are significantly faster than traditional hard drives. A computer with an SSD:
+
+- **Starts up in seconds** instead of minutes.
+- **Opens apps and files much faster.**
+- **Is more durable** because there are no moving parts to break if you bump or drop the device.
+- **Runs quieter and cooler** since nothing is spinning.
+
+Most modern laptops, tablets, and phones use SSD technology by default. If you have an older desktop computer with a traditional hard drive, upgrading to an SSD is one of the most noticeable performance improvements you can make.
+
+## Quick Tip
+
+When shopping for a computer, check the storage type. A computer with a 256GB SSD will feel faster in daily use than one with a 1TB traditional hard drive, even though the hard drive holds more data.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'ram',
+    title: 'RAM (Random Access Memory)',
+    category: 'concept',
+    tags: ['hardware', 'memory', 'ram', 'computer', 'performance'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['ssd', 'cpu', 'device-basics'],
+    content: `## What Is RAM?
+
+RAM stands for Random Access Memory. It is your computer's short-term memory — the workspace where your device keeps the information it is actively using right now. When you open an app, a web browser tab, or a document, it gets loaded into RAM so your device can access it quickly.
+
+Think of RAM like your desk at work. The bigger your desk, the more papers and projects you can spread out and work on at the same time. A small desk means you constantly have to put things away and pull out new ones, which slows you down.
+
+## How Much RAM Do You Need?
+
+- **4 GB**: Enough for basic tasks like email, web browsing, and word processing, but you may notice slowdowns with multiple tabs open.
+- **8 GB**: The sweet spot for most people. Handles web browsing, streaming, video calls, and everyday apps comfortably.
+- **16 GB or more**: Needed for demanding tasks like video editing, gaming, or running many applications at once.
+
+## RAM vs. Storage
+
+RAM and storage (SSD or hard drive) are different things:
+
+- **RAM** is temporary — it clears when you turn off your device. It is for what you are doing right now.
+- **Storage** is permanent — it keeps your files, photos, and apps saved even when the device is off.
+
+## Quick Tip
+
+If your computer feels sluggish, check how many browser tabs and apps are open. Each one uses RAM. Closing tabs you are not using can make your device feel noticeably faster.
+
+(Sources: How-To Geek, Tom's Guide, Apple Support, 2026)`,
+  },
+  {
+    slug: 'cpu',
+    title: 'CPU (Processor)',
+    category: 'concept',
+    tags: ['hardware', 'cpu', 'processor', 'computer', 'performance'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['ram', 'gpu', 'ssd'],
+    content: `## What Is a CPU?
+
+CPU stands for Central Processing Unit, and it is often called the "brain" of your computer. The CPU handles all the instructions and calculations that make your device work — from opening an app to running a spell check to playing a video.
+
+Every click, tap, and command you give your device goes through the CPU. The faster and more powerful the CPU, the quicker your device can handle tasks.
+
+## What Makes a CPU Fast?
+
+Two main factors determine CPU performance:
+
+- **Clock speed**: Measured in gigahertz (GHz). Higher numbers mean the CPU processes instructions faster. A 3.5 GHz processor runs faster than a 2.0 GHz one.
+- **Cores**: Modern CPUs have multiple cores, which are like having multiple brains working at the same time. A quad-core CPU can handle four tasks simultaneously, making it better for multitasking.
+
+## Common CPU Brands
+
+- **Intel**: Makes Core i3, i5, i7, and i9 processors. Higher numbers generally mean better performance.
+- **AMD**: Makes Ryzen 3, 5, 7, and 9 processors. A competitive alternative to Intel.
+- **Apple Silicon**: Apple's M-series chips (M1, M2, M3, M4) combine the CPU, GPU, and RAM into one efficient chip, offering excellent performance with long battery life.
+
+## Quick Tip
+
+For everyday use — email, web browsing, video calls, and document editing — a mid-range processor like an Intel Core i5 or Apple M3 is more than enough. You do not need the most expensive option unless you are doing intensive tasks like video production.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'gpu',
+    title: 'GPU (Graphics Processing Unit)',
+    category: 'concept',
+    tags: ['hardware', 'gpu', 'graphics', 'gaming', 'video'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['cpu', 'ram', 'device-basics'],
+    content: `## What Is a GPU?
+
+A GPU, or Graphics Processing Unit, is a specialized processor designed to handle visual tasks — rendering images, playing videos, displaying animations, and running games. While the CPU is the brain of your computer handling general tasks, the GPU is a specialist that excels at processing images and visual data quickly.
+
+Think of it this way: the CPU is a highly skilled worker who can do many different jobs one at a time. The GPU is a team of workers who are each less versatile but can do thousands of smaller visual tasks simultaneously.
+
+## Where GPUs Live
+
+- **Integrated graphics**: Built into the CPU. Found in most everyday laptops and desktops. Fine for web browsing, video streaming, office work, and casual photo editing.
+- **Dedicated (discrete) graphics**: A separate, more powerful GPU with its own memory. Found in gaming computers, workstations for video editing, and machines used for AI or 3D design.
+
+## When the GPU Matters
+
+For most everyday users, the integrated graphics built into modern processors are more than adequate. A dedicated GPU becomes important for:
+
+- **Gaming**: Modern games require significant graphics processing power.
+- **Video editing**: Rendering and exporting video is much faster with a good GPU.
+- **3D design and modeling**: Professional creative software relies heavily on GPU power.
+- **AI and machine learning**: These workloads use GPUs for parallel processing.
+
+## Quick Tip
+
+If you are buying a computer for everyday tasks, you do not need to worry about a dedicated GPU. The integrated graphics in modern Intel, AMD, or Apple Silicon chips handle streaming, video calls, and basic photo editing with no problem.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'usb-c',
+    title: 'USB-C',
+    category: 'concept',
+    tags: ['hardware', 'usb', 'cable', 'connector', 'charging'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['hdmi', 'bluetooth-technology', 'device-basics'],
+    content: `## What Is USB-C?
+
+USB-C is a type of connector — the small, oval-shaped plug found on most modern phones, tablets, laptops, and accessories. Unlike the older rectangular USB-A plugs, USB-C is reversible, meaning you can plug it in either way without fumbling to find the "right side up."
+
+## Why USB-C Is Everywhere
+
+USB-C has become the universal standard because it can do many things through one port:
+
+- **Charging**: Powers phones, tablets, laptops, and even some monitors.
+- **Data transfer**: Moves files between devices at high speeds.
+- **Video output**: Can connect to an external monitor or TV with the right cable or adapter.
+- **Audio**: Some devices use USB-C for headphones instead of a traditional headphone jack.
+
+## The Confusing Part
+
+Not all USB-C cables and ports are the same. Two cables that look identical may support different speeds or features. A cheap USB-C cable might only handle slow charging, while a higher-quality one supports fast data transfer and video output. When buying USB-C cables, look for ones that specify "USB 3.2" or "Thunderbolt" if you need high performance.
+
+## USB-C and Your Phone
+
+As of 2024, new iPhones use USB-C (replacing the Lightning connector). Android phones have used USB-C for years. This means one cable type can now charge almost all your devices — phones, tablets, laptops, and earbuds.
+
+## Quick Tip
+
+Keep a few USB-C cables around the house. Since most new devices use this connector, having extras in the kitchen, bedroom, and car means you are always ready to charge.
+
+(Sources: Tom's Guide, How-To Geek, Apple Support, 2026)`,
+  },
+  {
+    slug: 'hdmi',
+    title: 'HDMI',
+    category: 'concept',
+    tags: ['hardware', 'hdmi', 'video', 'tv', 'cable'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['usb-c', 'streaming-setup-guide', 'device-basics'],
+    content: `## What Is HDMI?
+
+HDMI stands for High-Definition Multimedia Interface. It is the most common cable used to connect devices to a TV or monitor, carrying both video and audio through a single cable. If you have ever plugged a streaming stick, game console, or laptop into a TV, you have likely used an HDMI cable.
+
+## What HDMI Connects
+
+HDMI cables connect a wide range of devices to displays:
+
+- **Streaming devices** (Roku, Fire Stick, Apple TV) to your TV.
+- **Laptops** to an external monitor or projector.
+- **Gaming consoles** (PlayStation, Xbox, Nintendo Switch) to your TV.
+- **Cable/satellite boxes** to your TV.
+- **Blu-ray players** to your TV.
+
+## HDMI Versions
+
+HDMI cables come in different versions that support different features:
+
+- **HDMI 1.4**: Supports up to 4K video at 30fps. Fine for most basic use.
+- **HDMI 2.0**: Supports 4K at 60fps. Good for streaming and everyday use.
+- **HDMI 2.1**: Supports 4K at 120fps and 8K. Needed mainly for advanced gaming.
+
+For most people, any standard HDMI cable works well. You do not need to spend a lot — a basic certified cable from Amazon or a local store works identically to an expensive one for everyday use.
+
+## Quick Tip
+
+Most TVs have multiple HDMI ports on the back or side. Use your TV remote's "Input" or "Source" button to switch between devices plugged into different HDMI ports.
+
+(Sources: How-To Geek, Tom's Guide, CNET, 2026)`,
+  },
+  {
+    slug: 'bluetooth-technology',
+    title: 'Bluetooth',
+    category: 'concept',
+    tags: ['hardware', 'bluetooth', 'wireless', 'connectivity', 'audio'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['nfc', 'wifi-networking', 'bluetooth-connections'],
+    content: `## What Is Bluetooth?
+
+Bluetooth is a wireless technology that lets devices communicate with each other over short distances — typically within about 30 feet. It uses radio waves to create a direct connection between two devices without needing Wi-Fi or a cable.
+
+Think of Bluetooth as a short-range walkie-talkie for your devices. It lets them talk to each other directly.
+
+## Common Uses of Bluetooth
+
+- **Wireless headphones and earbuds**: AirPods, Galaxy Buds, and similar earbuds connect to your phone via Bluetooth.
+- **Wireless speakers**: Portable speakers play music streamed from your phone over Bluetooth.
+- **Car audio**: Your phone connects to your car's audio system for hands-free calls and music.
+- **Keyboards and mice**: Wireless input devices connect to computers via Bluetooth.
+- **Smartwatches and fitness trackers**: These sync with your phone using Bluetooth.
+
+## How to Connect (Pair) a Bluetooth Device
+
+1. Turn on Bluetooth in your phone or computer settings.
+2. Put the device you want to connect into "pairing mode" (usually by holding down a button until a light blinks).
+3. Your phone or computer will detect the device and show it in a list.
+4. Tap the device name to connect.
+5. Once paired, devices usually reconnect automatically in the future.
+
+## Quick Tip
+
+If a Bluetooth device will not connect, try turning Bluetooth off and back on, or "forget" the device in your settings and pair it again from scratch. Also make sure the device is charged — low battery can cause connection problems.
+
+(Sources: How-To Geek, Apple Support, Google Support, 2026)`,
+  },
+  {
+    slug: 'nfc',
+    title: 'NFC (Near Field Communication)',
+    category: 'concept',
+    tags: ['hardware', 'nfc', 'wireless', 'payments', 'connectivity'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['contactless-payment', 'bluetooth-technology', 'digital-wallet'],
+    content: `## What Is NFC?
+
+NFC stands for Near Field Communication. It is a wireless technology that allows two devices to exchange information when they are held very close together — within about an inch or two. Unlike Bluetooth, which works over several feet, NFC requires near-contact proximity.
+
+## Where NFC Is Used
+
+You probably use NFC more than you realize:
+
+- **Contactless payments**: When you tap your phone or credit card at a store checkout, that is NFC at work. Apple Pay, Google Pay, and Samsung Pay all use NFC.
+- **Transit passes**: Many city bus and subway systems use NFC cards or phone apps for tap-to-ride access.
+- **File sharing**: Some phones can share contacts, photos, or links by tapping them together (though this feature is becoming less common as other sharing methods improve).
+- **Smart tags**: Small NFC tags can be programmed to trigger actions when you tap your phone against them — like turning on smart lights or opening a website.
+
+## Is NFC Safe?
+
+NFC is considered secure for payments because:
+
+- It only works within an inch or two, so someone cannot intercept the signal from across the room.
+- Payment transactions generate a unique, one-time code instead of transmitting your actual card number.
+- Your phone requires authentication (Face ID, fingerprint, or PIN) before completing a payment.
+
+## Quick Tip
+
+Most modern smartphones have NFC built in. On iPhone, it works automatically for Apple Pay. On Android, check Settings > Connected Devices > NFC to make sure it is turned on.
+
+(Sources: How-To Geek, Tom's Guide, Google Support, 2026)`,
+  },
+
+  // ─── Software & Apps ───────────────────────────────────────────────
+
+  {
+    slug: 'operating-system',
+    title: 'Operating System (OS)',
+    category: 'concept',
+    tags: ['software', 'os', 'system', 'computer', 'phone'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['browser', 'firmware', 'device-basics'],
+    content: `## What Is an Operating System?
+
+An operating system (OS) is the foundational software that makes your device work. It manages everything — the screen, the keyboard, the files, the apps — and acts as the middleman between you and the hardware. Without an operating system, your device is an expensive paperweight.
+
+Think of the OS as the manager of a restaurant. The kitchen (hardware) has all the equipment, and the waitstaff (apps) interact with customers. But the manager coordinates everything, making sure orders get to the right place and everything runs on time.
+
+## Common Operating Systems
+
+- **Windows**: Made by Microsoft. Used on most PCs and laptops (except Apple). Current version: Windows 11.
+- **macOS**: Made by Apple. Used on Mac computers (MacBook, iMac, Mac Mini).
+- **iOS**: Made by Apple. Runs on iPhones.
+- **Android**: Made by Google. Runs on Samsung, Google Pixel, and many other phone brands.
+- **iPadOS**: Made by Apple. Runs on iPads.
+- **ChromeOS**: Made by Google. Runs on Chromebooks — lightweight laptops focused on web browsing.
+
+## Keeping Your OS Updated
+
+Operating system updates include security patches, bug fixes, and sometimes new features. Keeping your OS updated is one of the most important things you can do to protect your device. Turn on automatic updates in your settings so you do not have to remember to do it manually.
+
+(Sources: Microsoft Support, Apple Support, Google Support, 2026)`,
+  },
+  {
+    slug: 'browser',
+    title: 'Web Browser',
+    category: 'concept',
+    tags: ['software', 'browser', 'web', 'internet', 'apps'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['url', 'http-https', 'operating-system'],
+    content: `## What Is a Web Browser?
+
+A web browser is the app you use to access the internet and visit websites. When you type a web address, click a link, or search for something online, you are using a browser. It is your window to the internet.
+
+## Popular Web Browsers
+
+- **Google Chrome**: The most widely used browser. Works on all devices and syncs your bookmarks and passwords across them.
+- **Safari**: Apple's browser, built into iPhones, iPads, and Macs. Fast and energy-efficient on Apple devices.
+- **Microsoft Edge**: Comes with Windows computers. Has improved significantly and includes useful features like built-in AI tools.
+- **Mozilla Firefox**: A privacy-focused option that does not track your activity as aggressively.
+- **Brave**: Blocks ads and trackers by default.
+
+## Key Browser Features
+
+- **Tabs**: Open multiple web pages at the same time without losing your place.
+- **Bookmarks**: Save your favorite websites for quick access later.
+- **Private/Incognito mode**: Browse without your device saving your history. Note: this does not hide your activity from your ISP or employer.
+- **Password manager**: Most browsers offer to save and fill in your passwords.
+- **Extensions/add-ons**: Small programs that add features like ad blocking or password management.
+
+## Quick Tip
+
+No matter which browser you use, keep it updated. Browser updates include important security fixes. If your browser is not up to date, you are more vulnerable to online threats.
+
+(Sources: Google Support, Apple Support, Mozilla Support, 2026)`,
+  },
+  {
+    slug: 'app-store',
+    title: 'App Store',
+    category: 'concept',
+    tags: ['software', 'apps', 'download', 'mobile', 'store'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['operating-system', 'downloading-apps', 'open-source'],
+    content: `## What Is an App Store?
+
+An app store is a digital marketplace where you can browse, download, and install apps on your device. Apps are programs that add functionality to your phone, tablet, or computer — from social media and games to banking and health tracking.
+
+## The Main App Stores
+
+- **Apple App Store**: For iPhones and iPads. All apps are reviewed by Apple before being published, which adds a layer of security.
+- **Google Play Store**: For Android phones and tablets. Has a wider selection but a slightly less strict review process.
+- **Microsoft Store**: For Windows computers. Includes desktop apps, games, and some mobile-style apps.
+- **Mac App Store**: For Mac computers. Similar to the iOS App Store but for desktop applications.
+
+## Staying Safe When Downloading Apps
+
+Not every app is trustworthy, even in official app stores. Follow these guidelines:
+
+- **Download from official stores only.** Avoid downloading apps from random websites or links in text messages.
+- **Check reviews and ratings** before downloading. Look for recent reviews and how many people have downloaded the app.
+- **Review permissions.** If a flashlight app asks to access your contacts and microphone, that is a red flag.
+- **Keep apps updated.** Developers release updates to fix security issues and add features.
+
+## Quick Tip
+
+Delete apps you no longer use. Old, unupdated apps can have security vulnerabilities and take up storage space on your device.
+
+(Sources: Apple Support, Google Support, FTC.gov, 2026)`,
+  },
+  {
+    slug: 'cloud-computing',
+    title: 'Cloud Computing',
+    category: 'synthesis',
+    tags: ['software', 'cloud', 'storage', 'internet', 'services'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['cloud-storage', 'saas', 'api'],
+    content: `## What Is Cloud Computing?
+
+Cloud computing means using someone else's computers, accessed over the internet, instead of running everything on your own device. When you use Google Docs, stream a movie on Netflix, or back up your photos to iCloud, you are using cloud computing.
+
+Think of it like electricity. You do not need to own a power plant to use electricity — you plug into the grid and pay for what you use. Cloud computing works the same way: companies like Amazon, Google, and Microsoft run massive data centers full of powerful computers, and you access their power over the internet.
+
+## Everyday Cloud Services You Already Use
+
+- **Email**: Gmail, Outlook, and Yahoo Mail all run in the cloud.
+- **Photo storage**: iCloud Photos, Google Photos, and Amazon Photos store your pictures on remote servers.
+- **File storage**: Google Drive, Dropbox, and OneDrive let you save and access files from any device.
+- **Streaming**: Netflix, Spotify, and YouTube deliver content from the cloud.
+- **Online banking**: Your bank's website and app connect to cloud-based systems.
+
+## Why Cloud Computing Matters
+
+- **Access anywhere**: Your files and apps are available on any device with an internet connection.
+- **Automatic backups**: Cloud services often back up your data automatically.
+- **No maintenance**: The cloud provider handles all the hardware, updates, and security.
+- **Scalability**: You can add more storage or features as you need them.
+
+(Sources: How-To Geek, Tom's Guide, Microsoft Azure Documentation, 2026)`,
+  },
+  {
+    slug: 'saas',
+    title: 'SaaS (Software as a Service)',
+    category: 'concept',
+    tags: ['software', 'saas', 'cloud', 'subscription', 'apps'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['cloud-computing', 'api', 'app-store'],
+    content: `## What Is SaaS?
+
+SaaS stands for Software as a Service. It is a way of using software through the internet — usually through a web browser — instead of buying and installing it on your computer. Instead of a one-time purchase, you typically pay a monthly or yearly subscription.
+
+Think of it like renting versus buying. In the old days, you bought a box of software at the store for $200 and installed it from a CD. With SaaS, you pay $10 a month and access the software online, always getting the latest version without reinstalling anything.
+
+## SaaS You Probably Already Use
+
+- **Google Workspace** (Docs, Sheets, Gmail): Free tools that run entirely in your browser.
+- **Microsoft 365**: Word, Excel, and PowerPoint available as a subscription with cloud features.
+- **Netflix, Spotify, Hulu**: Entertainment delivered as a service.
+- **Zoom**: Video calling accessible from your browser or app with a subscription.
+- **Dropbox**: Cloud file storage available on a subscription plan.
+
+## Advantages of SaaS
+
+- **No installation hassles**: Access the software from any device with a browser.
+- **Always up to date**: The provider handles updates and bug fixes automatically.
+- **Lower upfront cost**: Small monthly fees instead of large one-time purchases.
+- **Work from anywhere**: Your data and tools travel with you.
+
+## Things to Watch Out For
+
+- Subscriptions can add up — review what you are paying for each month.
+- If the service goes offline, you lose access temporarily.
+- Your data lives on someone else's servers, so check the provider's privacy and security policies.
+
+(Sources: How-To Geek, Tom's Guide, 2026)`,
+  },
+  {
+    slug: 'api',
+    title: 'API (Application Programming Interface)',
+    category: 'concept',
+    tags: ['software', 'api', 'programming', 'integration', 'data'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['cloud-computing', 'saas', 'open-source'],
+    content: `## What Is an API?
+
+API stands for Application Programming Interface. It is a set of rules that allows different software programs to communicate with each other. You can think of an API as a waiter in a restaurant — you (the customer) tell the waiter what you want, the waiter goes to the kitchen (another system), and brings back your food (the data or result).
+
+## APIs in Everyday Life
+
+You interact with APIs constantly without knowing it:
+
+- **Weather apps** pull forecast data from a weather service's API.
+- **Ride-sharing apps** (Uber, Lyft) use Google Maps API to show maps and calculate routes.
+- **Login with Google or Facebook**: When a website offers "Sign in with Google," it is using Google's API to verify your identity.
+- **Payment processing**: When you buy something online, the store's website uses a payment API (like Stripe or PayPal) to handle your transaction securely.
+
+## Why APIs Matter to You
+
+APIs are the reason different apps and services can work together. Your smart home app can control lights from one company, a thermostat from another, and a doorbell from a third — all because those devices offer APIs that let the app communicate with each one.
+
+## Quick Tip
+
+As a regular user, you do not need to understand the technical details of APIs. But knowing the concept helps you understand why certain apps work well together (they share APIs) and why some devices or services are not compatible (they use different, non-connected systems).
+
+(Sources: How-To Geek, Mozilla Developer Network, 2026)`,
+  },
+  {
+    slug: 'open-source',
+    title: 'Open Source',
+    category: 'concept',
+    tags: ['software', 'open-source', 'free', 'community', 'code'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['operating-system', 'browser', 'api'],
+    content: `## What Is Open Source?
+
+Open-source software is software whose source code — the underlying instructions that make it work — is freely available for anyone to view, modify, and distribute. It is built and maintained by communities of developers who collaborate openly.
+
+Think of it like a recipe that is shared publicly. Anyone can make the dish, adjust the ingredients to their taste, or share an improved version. Proprietary software, by contrast, keeps the recipe secret — you can use the product but not see how it is made.
+
+## Open-Source Software You May Already Use
+
+- **Android**: Google's mobile operating system is open source at its core.
+- **Mozilla Firefox**: A popular, privacy-focused web browser.
+- **VLC Media Player**: Plays almost any audio or video file format.
+- **LibreOffice**: A free alternative to Microsoft Office (word processing, spreadsheets, presentations).
+- **WordPress**: The platform behind a large portion of all websites.
+- **Bitwarden**: A free, highly regarded password manager.
+
+## Why Open Source Matters
+
+- **Free to use**: Most open-source software costs nothing.
+- **Transparency**: Because the code is public, security researchers can inspect it for vulnerabilities.
+- **Community-driven**: Bugs get found and fixed by a global community of developers.
+- **No vendor lock-in**: You are not dependent on one company's decisions or pricing.
+
+## Quick Tip
+
+Open source does not mean lower quality. Many of the technologies that power the internet — including the servers, programming languages, and databases behind sites like Netflix and Google — are open source.
+
+(Sources: OpenSource.org, How-To Geek, Mozilla Foundation, 2026)`,
+  },
+  {
+    slug: 'firmware',
+    title: 'Firmware',
+    category: 'concept',
+    tags: ['software', 'firmware', 'hardware', 'updates', 'devices'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['operating-system', 'router', 'smart-plug'],
+    content: `## What Is Firmware?
+
+Firmware is a type of software that is built directly into a piece of hardware. It tells the hardware how to operate at the most basic level. While apps and operating systems can be installed, uninstalled, and updated frequently, firmware is embedded into the device itself and updated less often.
+
+Think of firmware as the instincts of a device. An operating system is like learned skills you can change, but firmware is the built-in knowledge the device needs to function at all.
+
+## Where Firmware Lives
+
+Almost every electronic device has firmware:
+
+- **Routers and modems**: Firmware controls how they manage network traffic.
+- **Smart TVs**: Firmware runs the basic display and input functions.
+- **Printers**: Firmware manages printing processes and communication with computers.
+- **Smart home devices**: Smart speakers, cameras, and thermostats all run on firmware.
+- **Gaming controllers, USB drives, keyboards**: Even small accessories have firmware.
+
+## Firmware Updates
+
+Manufacturers occasionally release firmware updates to fix bugs, patch security vulnerabilities, or add new features. Unlike app updates, firmware updates often require the device to restart and should not be interrupted — turning off a device during a firmware update can sometimes damage it.
+
+## Quick Tip
+
+When your router, smart TV, or other device notifies you about a firmware update, install it. These updates often fix security holes that could leave your device vulnerable. Most modern devices can be set to update firmware automatically.
+
+(Sources: How-To Geek, Tom's Guide, CISA.gov, 2026)`,
+  },
+
+  // ─── Social Media & Communication ──────────────────────────────────
+
+  {
+    slug: 'algorithm',
+    title: 'Algorithm (Social Media)',
+    category: 'concept',
+    tags: ['social-media', 'algorithm', 'feed', 'content', 'platform'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['engagement', 'going-viral', 'social-media-safety-guide'],
+    content: `## What Is a Social Media Algorithm?
+
+An algorithm is a set of rules and calculations that a platform uses to decide what content to show you and in what order. When you open Facebook, Instagram, TikTok, or YouTube, an algorithm decides which posts, videos, and ads appear in your feed.
+
+Think of it like a librarian who knows your reading habits. Instead of showing you every book in the library, the librarian picks the ones you are most likely to enjoy based on what you have read before.
+
+## How Algorithms Decide What You See
+
+Social media algorithms look at many factors:
+
+- **What you interact with**: Posts you like, comment on, share, or spend time viewing.
+- **Who you interact with**: Content from people you frequently engage with is prioritized.
+- **Content type**: If you watch a lot of videos, the algorithm shows you more videos.
+- **Recency**: Newer posts generally get priority, but popular older posts may resurface.
+- **Engagement signals**: Content that many people are interacting with gets boosted to more users.
+
+## Why This Matters
+
+Algorithms create a "filter bubble" — you tend to see content that matches your existing interests and views. This can be helpful (you see things you care about) but also limiting (you may miss different perspectives).
+
+## Quick Tip
+
+If your feed feels repetitive or you are seeing too much of a certain type of content, interact with different kinds of posts. Like a few new topics, follow different accounts, or use the "not interested" option to tell the algorithm to adjust.
+
+(Sources: How-To Geek, AARP, Pew Research Center, 2026)`,
+  },
+  {
+    slug: 'hashtag',
+    title: 'Hashtag',
+    category: 'concept',
+    tags: ['social-media', 'hashtag', 'search', 'trending', 'content'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['algorithm', 'going-viral', 'engagement'],
+    content: `## What Is a Hashtag?
+
+A hashtag is a word or phrase preceded by the pound sign (#), used on social media to categorize content and make it searchable. When you add a hashtag to a post — like #cooking, #travel, or #techhelp — your post becomes discoverable by anyone searching for or following that topic.
+
+Think of hashtags like labels on file folders. They help organize the massive amount of content posted every day so people can find what interests them.
+
+## How Hashtags Work
+
+When you click or tap a hashtag, the platform shows you all public posts that include that same hashtag. This is how people discover new content, join conversations, and follow trending topics.
+
+## Where Hashtags Are Used
+
+- **Instagram**: Hashtags are widely used to help posts reach new audiences. You can add up to 30 per post.
+- **X (formerly Twitter)**: Hashtags help categorize tweets and track trending topics.
+- **TikTok**: Hashtags help the algorithm categorize and recommend videos.
+- **Facebook**: Hashtags work but are used less frequently.
+- **LinkedIn**: Professional hashtags like #leadership or #hiring are common.
+
+## Tips for Using Hashtags
+
+- Use hashtags that are relevant to your post — do not use random popular ones hoping for more views.
+- Mix popular hashtags with specific ones (e.g., #cooking and #beginner-soup-recipes).
+- Do not overdo it. On most platforms, 3-5 relevant hashtags are effective.
+
+## Quick Tip
+
+Hashtags are not case-sensitive — #TechHelp and #techhelp work the same way. However, capitalizing the first letter of each word makes multi-word hashtags easier to read: #SocialMediaTips instead of #socialmediatips.
+
+(Sources: How-To Geek, Buffer Blog, 2026)`,
+  },
+  {
+    slug: 'stories',
+    title: 'Stories (Social Media)',
+    category: 'concept',
+    tags: ['social-media', 'stories', 'content', 'photos', 'video'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['dm-direct-message', 'content-creator', 'using-facebook'],
+    content: `## What Are Stories?
+
+Stories are short pieces of content — photos, videos, or text — that disappear after 24 hours. They appear at the top of your feed in a horizontal strip of circles, each representing a different person or account. Tap one to view their story.
+
+Stories were first popularized by Snapchat, and now Instagram, Facebook, WhatsApp, and even LinkedIn all offer them.
+
+## How Stories Are Different from Regular Posts
+
+- **Temporary**: Stories vanish after 24 hours (unless you save them to "Highlights" on Instagram).
+- **Casual**: Stories are meant for quick, informal updates — what you are doing right now, a photo from your day, or a quick thought.
+- **Full screen**: Stories take up your entire phone screen, making them more immersive.
+- **Interactive**: You can add polls, quizzes, music, stickers, and text overlays.
+
+## How to View and Post Stories
+
+**Viewing**: Open the app and tap on any circular profile picture at the top of your feed. Tap the right side of the screen to skip forward, or the left side to go back.
+
+**Posting**: Look for a "+" button next to your profile picture at the top of the feed, or swipe right from the main screen. Take a photo or video, add any effects, and share. You can choose who sees your stories in your privacy settings.
+
+## Quick Tip
+
+If you enjoy creating stories but want them to last longer than 24 hours, Instagram lets you save them as "Highlights" on your profile. This way, new visitors can see your past stories even after they have expired.
+
+(Sources: Instagram Help, Facebook Help, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'dm-direct-message',
+    title: 'DM (Direct Message)',
+    category: 'concept',
+    tags: ['social-media', 'messaging', 'dm', 'communication', 'private'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['stories', 'social-media-safety-guide', 'scam-prevention'],
+    content: `## What Is a DM?
+
+DM stands for Direct Message — a private message sent to another person on a social media platform. Unlike posts that are visible to your followers or the public, DMs are private conversations between you and one or more specific people.
+
+## Where You Can Send DMs
+
+Most social media platforms have a DM feature:
+
+- **Instagram**: Tap the paper airplane icon in the top right.
+- **Facebook Messenger**: Facebook's entire messaging system is built around DMs.
+- **X (formerly Twitter)**: Tap the envelope icon.
+- **TikTok**: Tap the inbox icon. Note: both users must follow each other to DM on TikTok.
+- **LinkedIn**: Click the messaging icon to send professional messages.
+
+## DM Safety Tips
+
+DMs are a common tool for scammers because the messages feel personal and private. Protect yourself:
+
+- **Do not click links from strangers.** Scammers send DMs with fake prize notifications, job offers, and urgent warnings.
+- **Ignore messages asking for money or personal information**, even if they appear to come from someone you know — their account may have been hacked.
+- **Be wary of "too good to be true" offers**: Free giveaways, investment opportunities, and romance scams often start in DMs.
+- **Report and block** suspicious accounts.
+
+## Quick Tip
+
+Most platforms let you filter DMs from people you do not follow into a separate "Message Requests" folder. Check this folder occasionally, but be cautious — it is where most spam and scam messages end up.
+
+(Sources: Instagram Help, FTC.gov, AARP, 2026)`,
+  },
+  {
+    slug: 'influencer',
+    title: 'Influencer',
+    category: 'concept',
+    tags: ['social-media', 'influencer', 'content', 'marketing', 'creator'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['content-creator', 'algorithm', 'engagement'],
+    content: `## What Is an Influencer?
+
+An influencer is a person who has built a large or dedicated following on social media and uses that audience to share opinions, recommendations, and sponsored content. Companies pay influencers to promote products because their followers trust their recommendations.
+
+The term covers a wide range — from celebrities with millions of followers to everyday people with a few thousand followers who are experts in a specific topic like cooking, fitness, parenting, or technology.
+
+## How Influencer Marketing Works
+
+Brands partner with influencers to reach specific audiences. An influencer might:
+
+- Post a photo wearing a brand's clothing.
+- Film a video reviewing a product.
+- Share a discount code with their followers.
+- Create content showcasing how they use a service.
+
+In the United States, influencers are required by the FTC to disclose when content is sponsored. Look for labels like "#ad," "#sponsored," or "Paid partnership" on posts.
+
+## What to Watch Out For
+
+Not all influencer recommendations are genuine. Some things to keep in mind:
+
+- **Sponsored does not mean endorsed.** An influencer may promote a product because they are being paid, not because they truly use or believe in it.
+- **Fake followers exist.** Some accounts inflate their follower counts by purchasing fake followers.
+- **Do your own research.** Before buying something an influencer recommends, read independent reviews from sources like Consumer Reports or Wirecutter.
+
+(Sources: FTC.gov, AARP, Pew Research Center, 2026)`,
+  },
+  {
+    slug: 'engagement',
+    title: 'Engagement (Social Media)',
+    category: 'concept',
+    tags: ['social-media', 'engagement', 'interaction', 'metrics', 'content'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['algorithm', 'going-viral', 'hashtag'],
+    content: `## What Is Engagement?
+
+In social media, engagement refers to any interaction people have with your content. This includes likes, comments, shares, saves, clicks, and views. When someone does any of these things, they are "engaging" with your post.
+
+Engagement is the currency of social media. Platforms use engagement to measure how interesting or relevant content is, and the more engagement a post gets, the more people the algorithm shows it to.
+
+## Types of Engagement
+
+- **Likes/Reactions**: The quickest form of engagement. A thumbs up, heart, or emoji reaction.
+- **Comments**: Written responses to a post. Comments signal higher interest than a like.
+- **Shares/Reposts**: When someone shares your content with their own followers. This is one of the most valuable forms of engagement because it expands your reach.
+- **Saves**: When someone bookmarks your post to view later. Platforms like Instagram weigh saves heavily.
+- **Clicks**: When someone clicks a link, image, or profile from your post.
+- **Views**: How many times a video or story has been watched.
+
+## Why Engagement Matters
+
+For everyday users, engagement determines what you see in your feed. Posts with high engagement get shown to more people, which is why some content seems to be everywhere while other posts go unnoticed.
+
+## Quick Tip
+
+If you want to see more content from a particular friend or page, engage with their posts — like, comment, or share. The algorithm will learn that you want to see more from that account and prioritize their content in your feed.
+
+(Sources: Buffer Blog, How-To Geek, Hootsuite Blog, 2026)`,
+  },
+  {
+    slug: 'content-creator',
+    title: 'Content Creator',
+    category: 'concept',
+    tags: ['social-media', 'content-creator', 'video', 'creative', 'platform'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['influencer', 'stories', 'going-viral'],
+    content: `## What Is a Content Creator?
+
+A content creator is anyone who makes and shares original material online — videos, photos, articles, podcasts, illustrations, or other creative work. While the term is often associated with YouTube, TikTok, and Instagram, content creators work across all platforms and formats.
+
+The key difference between a content creator and a casual social media user is intent: content creators regularly produce material for an audience, often building a following around a specific topic or niche.
+
+## What Content Creators Do
+
+Content creation takes many forms:
+
+- **YouTube creators** produce videos ranging from tutorials to vlogs to documentaries.
+- **TikTok creators** make short-form videos, often using trends, music, and humor.
+- **Podcasters** create audio shows on every topic imaginable.
+- **Bloggers** write articles and guides on personal websites.
+- **Instagram creators** share photos, reels, and stories around themes like travel, food, or fashion.
+
+## How Creators Earn Money
+
+Many content creators turn their work into a career through:
+
+- **Ad revenue**: YouTube pays creators based on how many people watch ads on their videos.
+- **Sponsorships**: Brands pay creators to feature products in their content.
+- **Subscriptions**: Platforms like Patreon let fans pay a monthly fee for exclusive content.
+- **Merchandise**: Selling branded products to their audience.
+- **Affiliate links**: Earning a commission when followers buy products through their links.
+
+## Quick Tip
+
+The most successful content creators tend to focus on a specific topic they are passionate about and post consistently. Quality and authenticity matter more than expensive equipment.
+
+(Sources: How-To Geek, Pew Research Center, 2026)`,
+  },
+  {
+    slug: 'going-viral',
+    title: 'Going Viral',
+    category: 'concept',
+    tags: ['social-media', 'viral', 'trending', 'sharing', 'content'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['algorithm', 'engagement', 'hashtag'],
+    content: `## What Does "Going Viral" Mean?
+
+When a piece of content "goes viral," it means it is being shared, viewed, and engaged with at an explosive rate — spreading across the internet like a virus spreads between people. A viral post can reach millions of people within hours or days, far beyond the original poster's usual audience.
+
+Viral content can be anything — a funny video, a heartwarming story, a catchy song, a meme, a news clip, or even a tweet. What makes it viral is the speed and scale at which people share it.
+
+## How Content Goes Viral
+
+There is no guaranteed formula, but viral content often shares common traits:
+
+- **Emotional impact**: Content that makes people laugh, cry, feel inspired, or feel outraged gets shared more.
+- **Relatability**: People share things they identify with — "This is so me" moments.
+- **Timing**: Posting content that connects to a current event, trend, or cultural moment increases its chances.
+- **Platform algorithms**: When a post gets a burst of early engagement, the algorithm shows it to more people, creating a snowball effect.
+
+## The Downside of Going Viral
+
+Going viral is not always positive:
+
+- **Loss of control**: Once content is shared widely, you cannot control how it is used or interpreted.
+- **Unwanted attention**: Viral fame can bring harassment, criticism, or invasion of privacy.
+- **Misinformation**: False or misleading content can go viral and spread inaccurate information to millions of people.
+
+## Quick Tip
+
+Before sharing something that seems too shocking or unbelievable, verify it. Viral misinformation is a real problem. Check the source and search for fact-checks on sites like Snopes.com or FactCheck.org.
+
+(Sources: Pew Research Center, How-To Geek, AARP, 2026)`,
+  },
+
+  // ─── Smart Home ────────────────────────────────────────────────────
+
+  {
+    slug: 'iot',
+    title: 'IoT (Internet of Things)',
+    category: 'synthesis',
+    tags: ['smart-home', 'iot', 'connected-devices', 'internet', 'automation'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['smart-hub', 'voice-assistant', 'smart-plug'],
+    content: `## What Is the Internet of Things?
+
+The Internet of Things (IoT) refers to the growing network of everyday physical objects that connect to the internet and communicate with each other. These are not traditional computers or phones — they are things like thermostats, doorbells, light bulbs, refrigerators, and security cameras that have been made "smart" by adding internet connectivity.
+
+Think of it this way: your phone has always been a connected device. IoT is about giving that same connectivity to objects that previously had no connection to the internet.
+
+## IoT Devices You Might Already Own
+
+- **Smart speakers** (Amazon Echo, Google Nest) — voice-controlled assistants connected to the internet.
+- **Smart thermostats** (Nest, Ecobee) — learn your schedule and adjust your home temperature automatically.
+- **Smart doorbells** (Ring, Google Nest Doorbell) — let you see and talk to visitors from your phone.
+- **Smart light bulbs** (Philips Hue, LIFX) — controllable by voice or app, with customizable colors and schedules.
+- **Smart plugs** — turn any regular appliance into a smart device you can control remotely.
+
+## Security Considerations
+
+Every IoT device is a potential entry point for hackers. Protect your smart home:
+
+- Change default passwords on all devices.
+- Keep device firmware updated.
+- Use a separate Wi-Fi network (guest network) for smart devices.
+- Buy from reputable brands that provide regular security updates.
+
+(Sources: CISA.gov, How-To Geek, Tom's Guide, 2026)`,
+  },
+  {
+    slug: 'smart-hub',
+    title: 'Smart Hub',
+    category: 'concept',
+    tags: ['smart-home', 'hub', 'automation', 'control', 'connected'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['iot', 'voice-assistant', 'zigbee-zwave'],
+    content: `## What Is a Smart Hub?
+
+A smart hub is a central device that connects and controls all your smart home gadgets from one place. Instead of using a separate app for your lights, another for your thermostat, and another for your doorbell, a smart hub brings everything together.
+
+Think of it like the conductor of an orchestra. Each musician (smart device) can play on their own, but the conductor coordinates them all to work together harmoniously.
+
+## Why You Might Need a Smart Hub
+
+- **Unified control**: Manage all your smart devices from one app or interface.
+- **Automation**: Create routines like "When I leave the house, turn off all lights, lock the door, and lower the thermostat."
+- **Device compatibility**: Some smart devices use communication protocols like Zigbee or Z-Wave that require a hub to connect to your network.
+- **Reliability**: A hub can help devices communicate locally (without depending on the internet), which can make your smart home faster and more reliable.
+
+## Popular Smart Hubs
+
+- **Amazon Echo (with Zigbee hub)**: Doubles as a smart speaker and a hub for Zigbee devices.
+- **Apple HomePod / Apple TV**: Acts as a hub for Apple HomeKit-compatible devices.
+- **Samsung SmartThings**: Supports a wide range of devices and protocols.
+- **Google Nest Hub**: Controls Google Home-compatible devices with a touchscreen.
+
+## Quick Tip
+
+Before buying a smart hub, make a list of the smart devices you already own and check what protocols they use. This helps you choose a hub that is compatible with your existing setup.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'voice-assistant',
+    title: 'Voice Assistant',
+    category: 'concept',
+    tags: ['smart-home', 'voice', 'assistant', 'ai', 'hands-free'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['smart-hub', 'iot', 'using-voice-assistants'],
+    content: `## What Is a Voice Assistant?
+
+A voice assistant is software that listens to your voice commands and responds by performing tasks, answering questions, or controlling devices. You activate it by saying a wake word — "Hey Siri," "Alexa," or "Hey Google" — and then ask it what you need.
+
+Voice assistants live on your phone, smart speaker, or other devices and connect to the internet to process your requests.
+
+## Major Voice Assistants
+
+- **Siri** (Apple): Built into iPhones, iPads, Macs, Apple Watch, and HomePod. Works best within the Apple ecosystem.
+- **Alexa** (Amazon): Powers Amazon Echo speakers and many third-party devices. Has the largest library of "skills" (add-on capabilities).
+- **Google Assistant** (Google): Built into Android phones, Google Nest speakers, and many smart home devices. Excels at answering questions and web searches.
+
+## What Voice Assistants Can Do
+
+- Set timers and alarms.
+- Play music or podcasts.
+- Check the weather forecast.
+- Control smart home devices (lights, thermostat, locks).
+- Send text messages and make phone calls (hands-free).
+- Answer general knowledge questions.
+- Set reminders and calendar events.
+- Read the news headlines.
+
+## Privacy Considerations
+
+Voice assistants are always listening for their wake word. This raises privacy concerns:
+
+- Review and delete your voice history regularly in the assistant's settings.
+- Mute the microphone when you do not want the device listening.
+- Understand that voice recordings may be stored on company servers.
+
+(Sources: Apple Support, Amazon Alexa Help, Google Support, 2026)`,
+  },
+  {
+    slug: 'zigbee-zwave',
+    title: 'Zigbee and Z-Wave',
+    category: 'concept',
+    tags: ['smart-home', 'zigbee', 'z-wave', 'protocol', 'wireless'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['smart-hub', 'iot', 'wifi-networking'],
+    content: `## What Are Zigbee and Z-Wave?
+
+Zigbee and Z-Wave are wireless communication protocols designed specifically for smart home devices. They are alternatives to Wi-Fi and Bluetooth for connecting things like smart light bulbs, sensors, locks, and switches.
+
+Think of them as different languages that smart devices speak. Some devices speak "Zigbee," others speak "Z-Wave," and others speak "Wi-Fi." For devices to work together, they need to speak the same language or use a translator (a smart hub).
+
+## Why Not Use Wi-Fi for Everything?
+
+Wi-Fi is great for phones and laptops, but it has limitations for smart home devices:
+
+- **Power consumption**: Wi-Fi uses more energy. Small battery-powered sensors would drain quickly on Wi-Fi.
+- **Network congestion**: Each Wi-Fi device takes up space on your network. A home with 30+ smart devices could overwhelm a standard router.
+- **Range**: Zigbee and Z-Wave devices create a "mesh network" — each device acts as a signal relay, extending coverage through your home.
+
+## Zigbee vs. Z-Wave
+
+- **Zigbee**: Used by Amazon Echo Plus, Philips Hue lights, and many Samsung SmartThings devices. Supports more devices on one network.
+- **Z-Wave**: Used by many locks, sensors, and security systems. Each device has a unique ID, reducing interference. Limited to about 232 devices per network.
+
+## Matter: The Future Standard
+
+A newer protocol called **Matter** aims to unify smart home communication. Backed by Apple, Google, Amazon, and Samsung, Matter allows devices to work together regardless of brand or protocol. Many new smart devices now support Matter.
+
+(Sources: How-To Geek, Tom's Guide, Connectivity Standards Alliance, 2026)`,
+  },
+  {
+    slug: 'geofencing',
+    title: 'Geofencing',
+    category: 'concept',
+    tags: ['smart-home', 'geofencing', 'location', 'automation', 'gps'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['iot', 'smart-hub', 'voice-assistant'],
+    content: `## What Is Geofencing?
+
+Geofencing is a technology that uses your phone's GPS location to trigger automatic actions when you enter or leave a specific area. It creates an invisible virtual boundary — a "fence" — around a location, and when your phone crosses that boundary, something happens.
+
+Think of it like an automatic welcome mat that notices when you arrive home and turns on the lights for you.
+
+## How Geofencing Is Used
+
+- **Smart home automation**: Your thermostat can start heating or cooling your home when your phone gets within a mile of your house, and lower the temperature when you leave.
+- **Reminder apps**: Set a reminder to "buy milk" that triggers when you arrive at the grocery store.
+- **Smart lighting**: Lights turn on when you arrive home and off when you leave.
+- **Security systems**: Your alarm can automatically arm when everyone in the household has left and disarm when the first person returns.
+- **Retail**: Some stores send promotional notifications to your phone when you walk near their location.
+
+## Setting Up Geofencing
+
+Most smart home apps (Google Home, Apple Home, SmartThings) include geofencing options. You set the location and radius of your "fence," choose which actions to trigger, and select which family members' phones to track.
+
+## Privacy Considerations
+
+Geofencing relies on your phone's location services. Review which apps have access to your location in Settings > Privacy > Location Services (iPhone) or Settings > Location (Android). Grant "Always" location access only to apps you fully trust.
+
+(Sources: How-To Geek, Tom's Guide, Apple Support, 2026)`,
+  },
+  {
+    slug: 'smart-plug',
+    title: 'Smart Plug',
+    category: 'concept',
+    tags: ['smart-home', 'smart-plug', 'automation', 'devices', 'power'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['iot', 'voice-assistant', 'smart-hub'],
+    content: `## What Is a Smart Plug?
+
+A smart plug is a small device that plugs into a standard wall outlet. You then plug any regular appliance — a lamp, fan, coffee maker, or space heater — into the smart plug. This lets you control that appliance remotely using an app on your phone or through a voice assistant like Alexa or Google Assistant.
+
+A smart plug is the most affordable and approachable way to start building a smart home because it turns things you already own into smart devices.
+
+## What You Can Do with Smart Plugs
+
+- **Turn devices on and off remotely**: Forgot to turn off the living room lamp? Open the app and turn it off from anywhere.
+- **Set schedules**: Program your coffee maker to start at 6:30 AM every morning, or your bedroom lamp to turn on at sunset.
+- **Use voice control**: Say "Alexa, turn off the fan" to control any device plugged into a smart plug.
+- **Monitor energy use**: Some smart plugs track how much electricity a device is using, helping you spot energy hogs.
+- **Automate routines**: Pair with other smart home devices — when your smart doorbell detects you arriving home, the smart plug turns on the hallway lamp.
+
+## Popular Smart Plug Brands
+
+- **Amazon Smart Plug**: Works with Alexa out of the box.
+- **TP-Link Kasa**: Affordable, reliable, works with Alexa and Google Assistant.
+- **Wyze Plug**: Budget-friendly with good features.
+- **Apple HomeKit-compatible plugs**: Work with Siri and the Apple Home app.
+
+## Quick Tip
+
+Smart plugs work best with devices that have a physical on/off switch (like a lamp or fan). They cannot control devices that require you to press a digital button to turn on, since the plug can only cut or restore power — it cannot press buttons.
+
+(Sources: How-To Geek, Tom's Guide, CNET, 2026)`,
+  },
+
+  // ─── Finance & Payments ────────────────────────────────────────────
+
+  {
+    slug: 'digital-wallet',
+    title: 'Digital Wallet',
+    category: 'concept',
+    tags: ['finance', 'payments', 'wallet', 'mobile', 'contactless'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['contactless-payment', 'nfc', 'cryptocurrency'],
+    content: `## What Is a Digital Wallet?
+
+A digital wallet is an app on your phone that stores your credit cards, debit cards, and sometimes loyalty cards, ID cards, and transit passes. Instead of pulling out a physical card, you hold your phone near a payment terminal to pay.
+
+Think of it as a virtual version of the wallet in your pocket — it holds the same cards, but they are stored securely on your phone.
+
+## Popular Digital Wallets
+
+- **Apple Pay**: Built into iPhones and Apple Watch. Works with Face ID or fingerprint verification.
+- **Google Wallet**: For Android phones. Stores cards, boarding passes, and event tickets.
+- **Samsung Pay**: For Samsung devices. Also supports magnetic stripe terminals (older card readers).
+- **PayPal**: An online wallet that works on websites, apps, and in some stores.
+- **Venmo**: Owned by PayPal. Popular for sending money between friends.
+
+## How to Set Up a Digital Wallet
+
+1. Open the wallet app on your phone (Wallet on iPhone, Google Wallet on Android).
+2. Tap "Add Card" or the "+" button.
+3. Scan your physical card with your phone's camera or type in the card details.
+4. Your bank will verify the card — this may involve a text message or a call.
+5. Once verified, you can use your phone to pay anywhere that accepts contactless payments.
+
+## Is It Safe?
+
+Digital wallets are actually more secure than physical cards. They use tokenization — instead of sharing your real card number during a purchase, the wallet generates a unique temporary number for each transaction. If that number is stolen, it cannot be reused.
+
+(Sources: Apple Support, Google Support, FTC.gov, 2026)`,
+  },
+  {
+    slug: 'cryptocurrency',
+    title: 'Cryptocurrency',
+    category: 'concept',
+    tags: ['finance', 'crypto', 'bitcoin', 'digital-currency', 'blockchain'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['blockchain', 'digital-wallet', 'encryption'],
+    content: `## What Is Cryptocurrency?
+
+Cryptocurrency is digital money that exists entirely online. Unlike dollars or euros, it is not issued or controlled by any government or central bank. Instead, it uses encryption and a technology called blockchain to verify transactions and prevent fraud.
+
+The most well-known cryptocurrency is **Bitcoin**, created in 2009. Others include **Ethereum**, **Solana**, and thousands of smaller tokens.
+
+## How Cryptocurrency Works
+
+Traditional money flows through banks. When you send someone $50, your bank verifies you have the money, deducts it from your account, and adds it to theirs. Cryptocurrency does the same thing but without a bank in the middle. Instead, a decentralized network of computers verifies and records every transaction on a public ledger called a blockchain.
+
+## Important Things to Know
+
+- **Volatile**: Cryptocurrency prices can swing wildly. Bitcoin has gained and lost thousands of dollars in value within days.
+- **Not insured**: Unlike bank deposits protected by FDIC insurance, cryptocurrency is not protected if the platform you use goes bankrupt or gets hacked.
+- **Irreversible transactions**: If you send crypto to the wrong address, there is no customer service to reverse it.
+- **Scam magnet**: Cryptocurrency is a frequent tool for fraud. Be extremely cautious of anyone asking you to pay in crypto or promising guaranteed returns.
+
+## Quick Tip
+
+If someone contacts you — especially through social media, email, or phone — demanding payment in cryptocurrency, it is almost certainly a scam. Legitimate businesses and government agencies do not require cryptocurrency payments.
+
+(Sources: FTC.gov, CISA.gov, SEC.gov, 2026)`,
+  },
+  {
+    slug: 'blockchain',
+    title: 'Blockchain',
+    category: 'concept',
+    tags: ['finance', 'blockchain', 'technology', 'crypto', 'ledger'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['cryptocurrency', 'encryption', 'digital-wallet'],
+    content: `## What Is Blockchain?
+
+A blockchain is a digital record-keeping system — a ledger — that stores information across a network of computers rather than in one central location. Each "block" in the chain contains a batch of transaction records, and each new block is linked to the previous one, forming an unbreakable chain.
+
+Think of it like a notebook where every time you write an entry, it gets verified by thousands of people and locked in permanently. No single person can go back and change what was written without everyone noticing.
+
+## How Blockchain Works
+
+1. Someone initiates a transaction (like sending cryptocurrency to another person).
+2. The transaction is broadcast to a network of computers around the world.
+3. These computers verify that the transaction is legitimate.
+4. Once verified, the transaction is grouped with others into a "block."
+5. The block is added to the existing chain of blocks — permanently.
+6. The transaction is complete.
+
+## Why Blockchain Matters
+
+- **Transparency**: Anyone can view the blockchain and verify transactions.
+- **Security**: Altering any single block would require changing every subsequent block across thousands of computers simultaneously — making tampering practically impossible.
+- **Decentralization**: No single company, bank, or government controls the ledger.
+
+## Beyond Cryptocurrency
+
+While blockchain is best known for powering Bitcoin and other cryptocurrencies, the technology has other applications, including supply chain tracking, digital identity verification, and secure medical record sharing.
+
+## Quick Tip
+
+Blockchain is the technology behind cryptocurrency, but they are not the same thing. Blockchain is the system; cryptocurrency is one use of that system.
+
+(Sources: How-To Geek, IBM Blockchain, MIT Technology Review, 2026)`,
+  },
+  {
+    slug: 'contactless-payment',
+    title: 'Contactless Payment',
+    category: 'concept',
+    tags: ['finance', 'payments', 'contactless', 'tap', 'nfc'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['digital-wallet', 'nfc', 'encryption'],
+    content: `## What Is Contactless Payment?
+
+Contactless payment lets you pay for purchases by tapping or holding your credit card, debit card, phone, or smartwatch near a payment terminal — without swiping, inserting a chip, or entering a PIN for small transactions. The entire process takes about a second.
+
+You will see a symbol that looks like a sideways Wi-Fi icon on cards and terminals that support contactless payment.
+
+## How It Works
+
+Contactless payment uses NFC (Near Field Communication) technology. When you tap your card or phone against the terminal, it transmits an encrypted, one-time code that represents your payment information. Your actual card number is never shared with the store.
+
+## Ways to Pay Contactlessly
+
+- **Tap your card**: Most credit and debit cards issued in recent years have a built-in contactless chip.
+- **Use your phone**: Apple Pay, Google Pay, and Samsung Pay turn your phone into a contactless payment device.
+- **Use your smartwatch**: Apple Watch and many Android smartwatches support tap-to-pay.
+
+## Is Contactless Payment Safe?
+
+Yes — contactless payments are generally more secure than swiping a magnetic stripe card. Here is why:
+
+- **Tokenization**: Each transaction uses a unique code, so your real card number is never exposed.
+- **Short range**: NFC works within 1-2 inches, so someone cannot intercept the signal from a distance.
+- **Authentication**: Phone-based payments require Face ID, fingerprint, or a PIN before they work.
+
+## Quick Tip
+
+If you are worried about someone skimming your contactless card, know that the risk is extremely low due to the encryption and tokenization built into the technology. However, you can always use your phone's digital wallet for an extra layer of authentication.
+
+(Sources: Visa.com, Apple Support, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'ach-transfer',
+    title: 'ACH Transfer',
+    category: 'concept',
+    tags: ['finance', 'banking', 'ach', 'transfer', 'payments'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['digital-wallet', 'online-banking-safety', 'contactless-payment'],
+    content: `## What Is an ACH Transfer?
+
+ACH stands for Automated Clearing House. An ACH transfer is an electronic payment that moves money directly from one bank account to another through a centralized network. It is one of the most common ways money moves in the United States.
+
+Think of it like a digital version of writing a check — the money moves from your bank to another bank, but electronically and usually faster.
+
+## Where ACH Transfers Are Used
+
+You likely use ACH transfers regularly without knowing it:
+
+- **Direct deposit**: Your paycheck going from your employer's bank to your bank account.
+- **Bill pay**: Paying rent, utilities, or insurance directly from your bank.
+- **Government payments**: Social Security, tax refunds, and stimulus payments are sent via ACH.
+- **Person-to-person apps**: Venmo, Zelle, and PayPal use ACH to move money between bank accounts.
+- **Online purchases**: Some websites let you pay directly from your bank account.
+
+## ACH Transfer Timing
+
+- **Standard ACH**: Takes 1-3 business days.
+- **Same-day ACH**: Available for an extra fee from some banks and services. Funds arrive the same business day.
+
+## Security Tips
+
+- Only provide your bank account and routing numbers to trusted organizations.
+- Set up account alerts so you are notified of any incoming or outgoing ACH transactions.
+- If you see an unauthorized ACH debit on your account, report it to your bank immediately — federal regulations give you 60 days to dispute an unauthorized transaction.
+
+## Quick Tip
+
+Wire transfers and ACH transfers are different. Wire transfers are faster (often same-day) but cost $15-30 per transaction. ACH transfers are free or low-cost but take 1-3 days. For most routine payments, ACH is the better option.
+
+(Sources: Nacha.org, Consumer Financial Protection Bureau, NerdWallet, 2026)`,
+  },
+
+  // ─── Emerging Tech ─────────────────────────────────────────────────
+
+  {
+    slug: 'artificial-intelligence',
+    title: 'Artificial Intelligence (AI)',
+    category: 'synthesis',
+    tags: ['emerging-tech', 'ai', 'technology', 'automation', 'future'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['machine-learning', 'voice-assistant', 'algorithm'],
+    content: `## What Is Artificial Intelligence?
+
+Artificial intelligence (AI) is technology that enables computers to perform tasks that normally require human intelligence — like understanding language, recognizing images, making decisions, and solving problems. AI is behind many tools you already use daily, from the suggestions in your email to the voice assistant on your phone.
+
+AI does not mean robots that think like humans. In practice, today's AI is highly specialized: an AI that can recognize faces in photos cannot play chess, and an AI that can write text cannot drive a car.
+
+## AI You Already Use
+
+- **Voice assistants**: Siri, Alexa, and Google Assistant use AI to understand and respond to your questions.
+- **Email spam filters**: AI identifies and blocks junk mail before it reaches your inbox.
+- **Photo apps**: AI recognizes faces in your photos and groups them together.
+- **Autocorrect and predictive text**: AI suggests words as you type.
+- **Navigation apps**: Google Maps and Waze use AI to predict traffic and suggest faster routes.
+- **Streaming recommendations**: Netflix, Spotify, and YouTube use AI to suggest content you might enjoy.
+
+## AI Chatbots
+
+AI chatbots like ChatGPT, Claude, and Google Gemini can have conversations, answer questions, help with writing, summarize information, and much more. They generate responses by analyzing patterns in large amounts of text.
+
+## Things to Keep in Mind
+
+- AI can make mistakes. Always verify important information from AI tools.
+- AI learns from data, and that data can contain biases.
+- Be cautious about sharing personal information with AI tools — read their privacy policies.
+
+(Sources: MIT Technology Review, How-To Geek, AARP, 2026)`,
+  },
+  {
+    slug: 'machine-learning',
+    title: 'Machine Learning',
+    category: 'concept',
+    tags: ['emerging-tech', 'machine-learning', 'ai', 'data', 'patterns'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['artificial-intelligence', 'algorithm', 'cloud-computing'],
+    content: `## What Is Machine Learning?
+
+Machine learning is a branch of artificial intelligence where computers learn from data and experience rather than being explicitly programmed for every task. Instead of a programmer writing rules for every possible situation, the computer analyzes large amounts of data, finds patterns, and uses those patterns to make predictions or decisions.
+
+Think of it like teaching a child to recognize dogs. You do not give the child a checklist of rules ("four legs, fur, tail"). Instead, you show them hundreds of pictures of dogs, and they learn to recognize dogs on their own — even breeds they have never seen before.
+
+## How Machine Learning Works
+
+1. **Training**: The system is fed large amounts of data (images, text, numbers, etc.).
+2. **Learning**: The system finds patterns and relationships in the data.
+3. **Predicting**: When given new data, the system uses what it learned to make predictions.
+
+The more data the system is trained on, the better its predictions tend to be.
+
+## Machine Learning in Everyday Life
+
+- **Email**: Gmail uses machine learning to sort emails into Primary, Social, and Promotions tabs.
+- **Shopping**: Amazon recommends products based on your browsing and purchase history.
+- **Healthcare**: Machine learning helps doctors detect diseases in medical images.
+- **Fraud detection**: Banks use machine learning to flag suspicious transactions on your account.
+- **Photo search**: Google Photos lets you search your photos by typing descriptions like "beach" or "birthday."
+
+## Quick Tip
+
+Machine learning is the engine behind many AI features you interact with daily. When an app gets better at predicting what you want over time, that improvement is machine learning at work.
+
+(Sources: Google AI, MIT Technology Review, How-To Geek, 2026)`,
+  },
+  {
+    slug: 'augmented-reality',
+    title: 'Augmented Reality (AR)',
+    category: 'concept',
+    tags: ['emerging-tech', 'ar', 'augmented-reality', 'visual', 'technology'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['artificial-intelligence', '5g', 'smartphone-basics'],
+    content: `## What Is Augmented Reality?
+
+Augmented reality (AR) overlays digital information — images, text, animations — on top of the real world, viewed through your phone's camera, tablet screen, or special glasses. Unlike virtual reality (VR), which replaces the real world with a completely artificial one, AR adds to what you are already seeing.
+
+Think of it like looking through a magic magnifying glass that shows you extra information floating over real objects.
+
+## AR You Might Have Already Used
+
+- **Snapchat and Instagram filters**: Those face filters that add bunny ears, hats, or change your appearance are AR.
+- **Google Maps Live View**: Hold up your phone while walking, and AR arrows appear overlaid on the real street to guide you.
+- **IKEA Place app**: Lets you see how a piece of furniture would look in your room before you buy it, using your phone's camera.
+- **Pokémon GO**: The mobile game that placed virtual creatures in real-world locations through your phone's camera.
+- **Apple Measure app**: Uses AR to measure real objects by pointing your phone's camera at them.
+
+## AR Glasses
+
+Apple's Vision Pro and Meta's smart glasses represent the next step in AR — wearing a device that blends digital content with the real world hands-free. While still expensive and early-stage, AR glasses are expected to become more mainstream in coming years.
+
+## Quick Tip
+
+You do not need special equipment to try AR. Open your phone's camera, go to Google Search, and type something like "tiger" — Google will let you view a 3D tiger in your room through your camera using AR.
+
+(Sources: How-To Geek, Apple Support, Tom's Guide, 2026)`,
+  },
+  {
+    slug: '5g',
+    title: '5G',
+    category: 'concept',
+    tags: ['emerging-tech', '5g', 'mobile', 'network', 'speed'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['bandwidth', 'latency', 'isp'],
+    content: `## What Is 5G?
+
+5G is the fifth generation of mobile network technology — the system that lets your phone connect to the internet when you are away from Wi-Fi. Each generation has been faster and more capable than the last. 5G brings significantly faster speeds, lower latency, and the ability to connect more devices at once compared to 4G LTE.
+
+## How 5G Compares
+
+- **3G**: Made basic smartphone internet possible (email, simple web browsing).
+- **4G LTE**: Enabled streaming video, video calls, and fast app downloads. This is what most people use today.
+- **5G**: Offers speeds up to 10 times faster than 4G, with much lower delay (latency). Downloading a full movie could take seconds instead of minutes.
+
+## Types of 5G
+
+Not all 5G is the same:
+
+- **Low-band 5G**: Wide coverage but modest speed improvements over 4G. This is the most common type.
+- **Mid-band 5G**: Good balance of speed and coverage. Growing quickly in availability.
+- **High-band 5G (mmWave)**: Extremely fast but very short range. Works best in dense urban areas and stadiums.
+
+## Do You Need a 5G Phone?
+
+If your current phone works well for your needs, there is no rush to upgrade. 4G LTE is not going away soon and handles streaming, video calls, and web browsing well. However, most new phones sold today include 5G, so your next phone will likely support it.
+
+## Quick Tip
+
+5G performance depends heavily on your location and carrier. In areas with strong 5G coverage, you will notice faster downloads and smoother streaming. In areas with limited coverage, your phone may fall back to 4G — which is completely normal.
+
+(Sources: Tom's Guide, How-To Geek, CNET, 2026)`,
+  },
+  {
+    slug: 'quantum-computing',
+    title: 'Quantum Computing',
+    category: 'concept',
+    tags: ['emerging-tech', 'quantum', 'computing', 'future', 'technology'],
+    lastUpdated: '2026-04-16',
+    seeAlso: ['artificial-intelligence', 'encryption', 'cpu'],
+    content: `## What Is Quantum Computing?
+
+Quantum computing is an advanced form of computing that uses the principles of quantum physics to process information in fundamentally different ways than regular computers. While a traditional computer works with bits that are either 0 or 1 (like a light switch that is on or off), a quantum computer uses **qubits** that can be 0, 1, or both at the same time.
+
+Think of it this way: a regular computer tries to solve a maze by going down one path at a time. A quantum computer can explore many paths simultaneously, making it extraordinarily powerful for certain types of problems.
+
+## What Quantum Computers Are Good At
+
+Quantum computers are not faster versions of regular computers. They excel at specific tasks that would take traditional computers millions of years to solve:
+
+- **Breaking encryption**: Quantum computers could theoretically crack the encryption that protects online banking and communications (which is why researchers are developing quantum-resistant encryption).
+- **Drug discovery**: Simulating molecular interactions to speed up the development of new medicines.
+- **Logistics and optimization**: Finding the most efficient routes, schedules, or resource allocations.
+- **Climate modeling**: Processing complex weather and climate simulations.
+
+## Where Quantum Computing Stands Today
+
+Quantum computing is still in its early stages. Current quantum computers are fragile, expensive, and require extreme cooling (near absolute zero). They are not replacing your laptop or phone anytime soon. Major companies like IBM, Google, and Microsoft are leading quantum research.
+
+## Quick Tip
+
+You do not need to worry about quantum computing affecting your daily life right now. But it is worth knowing about because it will likely reshape areas like medicine, security, and artificial intelligence in the coming decades.
+
+(Sources: IBM Quantum, MIT Technology Review, How-To Geek, 2026)`,
+  },
 ];
 
 /** Look up a wiki page by slug */
