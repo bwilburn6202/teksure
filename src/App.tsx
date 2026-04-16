@@ -139,6 +139,18 @@ const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 
+// ── New tools (April 2026 expansion) ──
+const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
+const PrivacyAudit           = lazy(() => import("./pages/tools/PrivacyAudit"));
+const StreamingCalculator    = lazy(() => import("./pages/tools/StreamingCalculator"));
+const DataBreachChecker      = lazy(() => import("./pages/tools/DataBreachChecker"));
+const NewPhoneSetup          = lazy(() => import("./pages/tools/NewPhoneSetup"));
+const SubscriptionTracker    = lazy(() => import("./pages/tools/SubscriptionTracker"));
+const InternetSpeedAdvisor   = lazy(() => import("./pages/tools/InternetSpeedAdvisor"));
+const DigitalCleanup         = lazy(() => import("./pages/tools/DigitalCleanup"));
+const DeviceSetupChecklist   = lazy(() => import("./pages/tools/DeviceSetupChecklist"));
+const TechGlossaryQuiz       = lazy(() => import("./pages/tools/TechGlossaryQuiz"));
+
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -359,6 +371,19 @@ const AppContent = () => {
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
           <Route path="/tools/safe-call" element={<SafeCall />} />
           <Route path="/tools/bill-decoder" element={<BillDecoder />} />
+
+          {/* ── New tools (April 2026 expansion) ── */}
+          <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
+          <Route path="/tools/privacy-audit" element={<PrivacyAudit />} />
+          <Route path="/tools/streaming-calculator" element={<StreamingCalculator />} />
+          <Route path="/tools/data-breach-checker" element={<DataBreachChecker />} />
+          <Route path="/tools/new-phone-setup" element={<NewPhoneSetup />} />
+          <Route path="/tools/subscription-tracker" element={<SubscriptionTracker />} />
+          <Route path="/tools/internet-speed-advisor" element={<InternetSpeedAdvisor />} />
+          <Route path="/tools/digital-cleanup" element={<DigitalCleanup />} />
+          <Route path="/tools/device-setup-checklist" element={<DeviceSetupChecklist />} />
+          <Route path="/tools/tech-glossary-quiz" element={<TechGlossaryQuiz />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
         </ErrorBoundary>

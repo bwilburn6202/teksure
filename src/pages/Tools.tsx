@@ -20,9 +20,114 @@ import {
   FileSearch, Terminal, Shield, Globe, BookOpen, Receipt,
 } from 'lucide-react';
 
-type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting';
+type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting' | 'Money & Bills' | 'Setup Wizards';
 
 const tools = [
+  // ── NEW: Setup Wizards ──
+  {
+    title: 'New Phone Setup Wizard',
+    description: 'Got a new iPhone or Android? Walk through every setup step with clear instructions — from Apple ID to privacy settings.',
+    icon: Smartphone,
+    path: '/tools/new-phone-setup',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'New',
+    category: 'Setup Wizards' as ToolCategory,
+  },
+  {
+    title: 'Device Setup Checklist',
+    description: 'Select your new device and get a complete setup checklist — security, accounts, apps, backup, and accessibility.',
+    icon: ClipboardCheck,
+    path: '/tools/device-setup-checklist',
+    color: 'text-teal-600',
+    bg: 'bg-teal-50 dark:bg-teal-950/30',
+    badge: 'New',
+    category: 'Setup Wizards' as ToolCategory,
+  },
+  {
+    title: 'Digital Cleanup Wizard',
+    description: 'Guided cleanup for your inbox, photos, apps, browser, and accounts. Earn a cleanup score when you finish.',
+    icon: Trash2,
+    path: '/tools/digital-cleanup',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'New',
+    category: 'Setup Wizards' as ToolCategory,
+  },
+  // ── NEW: Money & Bills ──
+  {
+    title: 'Streaming Cost Calculator',
+    description: 'Add up all your streaming services, see the total cost, and find money-saving alternatives — including free options.',
+    icon: CreditCard,
+    path: '/tools/streaming-calculator',
+    color: 'text-purple-600',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  {
+    title: 'Subscription Tracker',
+    description: 'Track every subscription you pay for — streaming, music, cloud storage, software. See your total monthly and annual spend.',
+    icon: CreditCard,
+    path: '/tools/subscription-tracker',
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  {
+    title: 'Internet Speed Advisor',
+    description: 'Find out if your internet is fast enough for what you do — and get a script for calling your provider if it is not.',
+    icon: Wifi,
+    path: '/tools/internet-speed-advisor',
+    color: 'text-sky-600',
+    bg: 'bg-sky-50 dark:bg-sky-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  // ── NEW: Security ──
+  {
+    title: 'Scam Practice Simulator',
+    description: 'Practice spotting real scam emails, texts, and calls in a safe environment. Get a Scam IQ score when you finish.',
+    icon: ShieldAlert,
+    path: '/tools/scam-simulator',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Privacy Settings Audit',
+    description: 'Select your devices and apps, then walk through a personalized privacy checklist — with links to every setting.',
+    icon: Eye,
+    path: '/tools/privacy-audit',
+    color: 'text-violet-600',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Data Breach Checker',
+    description: 'Learn if your email may have been exposed in a data breach — and get step-by-step instructions for what to do next.',
+    icon: ShieldCheck,
+    path: '/tools/data-breach-checker',
+    color: 'text-rose-600',
+    bg: 'bg-rose-50 dark:bg-rose-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  // ── NEW: Learning ──
+  {
+    title: 'Tech Glossary Quiz',
+    description: 'Test your tech vocabulary with a fun quiz — 30+ questions with plain-English explanations after each answer.',
+    icon: GraduationCap,
+    path: '/tools/tech-glossary-quiz',
+    color: 'text-amber-600',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'New',
+    category: 'Learning' as ToolCategory,
+  },
+  // ── EXISTING tools below ──
   {
     title: 'Notification Decoder',
     description: 'Got a confusing popup or notification on your phone or computer? Look it up and get a plain-English explanation of what it means and what to do.',
@@ -30,7 +135,7 @@ const tools = [
     path: '/tools/notification-decoder',
     color: 'text-violet-600',
     bg: 'bg-violet-50 dark:bg-violet-950/30',
-    badge: 'New',
+    badge: 'Popular',
     category: 'Setup & Troubleshooting' as ToolCategory,
   },
   {
@@ -515,7 +620,7 @@ const tools = [
   },
 ];
 
-const categories: ToolCategory[] = ['All', 'Security', 'Device Health', 'Learning', 'Communication', 'Setup & Troubleshooting'];
+const categories: ToolCategory[] = ['All', 'Security', 'Setup Wizards', 'Money & Bills', 'Device Health', 'Learning', 'Communication', 'Setup & Troubleshooting'];
 
 export default function Tools() {
   const [search, setSearch] = useState('');
@@ -567,7 +672,7 @@ export default function Tools() {
                 Tools & Utilities
               </h1>
               <p className="text-muted-foreground text-lg mb-8">
-                Over 30 free interactive tools — all private, all free.
+                Over 50 free interactive tools — all private, all free.
               </p>
               <div className="relative max-w-md mx-auto">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />

@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, Phone, Mail, Loader2, CheckCircle, Heart,
-  Users, Star, Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone
+  Users, Star, Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone,
+  CreditCard
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,6 +19,9 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'windows-guides': Monitor, 'mac-guides': Apple, 'essential-skills': Lightbulb,
   'tips-tricks': Sparkles, 'ai-guides': Bot, 'how-to': BookOpen,
   'safety-guides': Shield, 'app-guides': Phone, 'health-tech': Heart,
+  'government-civic': BookOpen, 'financial-tech': CreditCard, 'smart-home': Wifi,
+  'entertainment': Smartphone, 'communication': Mail, 'life-transitions': ArrowRight,
+  'internet-connectivity': Wifi,
 };
 
 const categoryColors: Record<string, { border: string; bg: string; text: string; iconBg: string }> = {
@@ -29,6 +33,13 @@ const categoryColors: Record<string, { border: string; bg: string; text: string;
   'safety-guides':    { border: 'border-l-rose-400',   bg: 'bg-rose-50 dark:bg-rose-950/30',     text: 'text-rose-600 dark:text-rose-400',     iconBg: 'bg-rose-50 dark:bg-rose-900/30' },
   'app-guides':       { border: 'border-l-emerald-400',bg: 'bg-emerald-50 dark:bg-emerald-950/30', text: 'text-emerald-600 dark:text-emerald-400', iconBg: 'bg-emerald-50 dark:bg-emerald-900/30' },
   'health-tech':      { border: 'border-l-pink-400',   bg: 'bg-pink-50 dark:bg-pink-950/30',   text: 'text-pink-600 dark:text-pink-400',   iconBg: 'bg-pink-50 dark:bg-pink-900/30' },
+  'government-civic': { border: 'border-l-indigo-400', bg: 'bg-indigo-50 dark:bg-indigo-950/30', text: 'text-indigo-600 dark:text-indigo-400', iconBg: 'bg-indigo-50 dark:bg-indigo-900/30' },
+  'financial-tech':   { border: 'border-l-green-400',  bg: 'bg-green-50 dark:bg-green-950/30',  text: 'text-green-600 dark:text-green-400',  iconBg: 'bg-green-50 dark:bg-green-900/30' },
+  'smart-home':       { border: 'border-l-cyan-400',   bg: 'bg-cyan-50 dark:bg-cyan-950/30',    text: 'text-cyan-600 dark:text-cyan-400',    iconBg: 'bg-cyan-50 dark:bg-cyan-900/30' },
+  'entertainment':    { border: 'border-l-fuchsia-400', bg: 'bg-fuchsia-50 dark:bg-fuchsia-950/30', text: 'text-fuchsia-600 dark:text-fuchsia-400', iconBg: 'bg-fuchsia-50 dark:bg-fuchsia-900/30' },
+  'communication':    { border: 'border-l-teal-400',   bg: 'bg-teal-50 dark:bg-teal-950/30',    text: 'text-teal-600 dark:text-teal-400',    iconBg: 'bg-teal-50 dark:bg-teal-900/30' },
+  'life-transitions': { border: 'border-l-orange-400',  bg: 'bg-orange-50 dark:bg-orange-950/30', text: 'text-orange-600 dark:text-orange-400', iconBg: 'bg-orange-50 dark:bg-orange-900/30' },
+  'internet-connectivity': { border: 'border-l-sky-400', bg: 'bg-sky-50 dark:bg-sky-950/30', text: 'text-sky-600 dark:text-sky-400', iconBg: 'bg-sky-50 dark:bg-sky-900/30' },
 };
 
 const quickProblems = [
@@ -110,7 +121,7 @@ const Index = () => {
     return picks.slice(0, 6);
   }, []);
 
-  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).slice(0, 6);
+  const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).filter(cat => guides.some(g => g.category === cat)).slice(0, 12);
 
   return (
     <div className="min-h-screen bg-background">
@@ -292,6 +303,52 @@ const Index = () => {
 
           <div className="md:hidden text-center mt-8">
             <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link></Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* POPULAR TOOLS                                     */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-24">
+        <div className="container">
+          <RevealSection>
+            <div className="flex items-end justify-between mb-10">
+              <div>
+                <h2 className="display-heading text-3xl md:text-4xl mb-2">Interactive tools</h2>
+                <p className="text-muted-foreground text-lg">Check your security, clean up your device, and more — all free.</p>
+              </div>
+              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                <Link to="/tools">View all tools <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
+            </div>
+          </RevealSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 stagger">
+            {[
+              { title: 'Scam Simulator', desc: 'Practice spotting scams in a safe environment.', to: '/tools/scam-simulator', emoji: '🛡️', color: 'bg-red-50 dark:bg-red-950/30' },
+              { title: 'Privacy Audit', desc: 'Check your privacy settings step by step.', to: '/tools/privacy-audit', emoji: '🔒', color: 'bg-violet-50 dark:bg-violet-950/30' },
+              { title: 'Streaming Calculator', desc: 'See what you spend on streaming services.', to: '/tools/streaming-calculator', emoji: '📺', color: 'bg-purple-50 dark:bg-purple-950/30' },
+              { title: 'Security Scorecard', desc: 'Get your personal security grade.', to: '/tools/cyber-scorecard', emoji: '🏆', color: 'bg-amber-50 dark:bg-amber-950/30' },
+              { title: 'New Phone Setup', desc: 'Set up your new iPhone or Android.', to: '/tools/new-phone-setup', emoji: '📱', color: 'bg-blue-50 dark:bg-blue-950/30' },
+              { title: 'WiFi Troubleshooter', desc: 'Fix your WiFi step by step.', to: '/tools/wifi-troubleshooter', emoji: '📶', color: 'bg-sky-50 dark:bg-sky-950/30' },
+              { title: 'Password Strength', desc: 'Test how strong your passwords are.', to: '/tools/password-strength', emoji: '🔑', color: 'bg-green-50 dark:bg-green-950/30' },
+              { title: 'Digital Cleanup', desc: 'Clean up your inbox, apps, and files.', to: '/tools/digital-cleanup', emoji: '🧹', color: 'bg-orange-50 dark:bg-orange-950/30' },
+            ].map((tool) => (
+              <Link key={tool.to} to={tool.to} className="block group">
+                <div className={`glow-card h-full`}>
+                  <div className={`h-10 w-10 rounded-xl ${tool.color} flex items-center justify-center text-xl mb-3`}>
+                    {tool.emoji}
+                  </div>
+                  <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{tool.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{tool.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="md:hidden text-center mt-8">
+            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/tools">View all tools <ArrowRight className="h-4 w-4" /></Link></Button>
           </div>
         </div>
       </section>

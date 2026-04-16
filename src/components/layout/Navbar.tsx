@@ -47,22 +47,23 @@ export function Navbar() {
   const publicLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
-    { to: '/how-it-works', label: 'How It Works' },
+    { to: '/safety/scam-alerts', label: 'Safety' },
+    { to: '/get-help', label: 'Get Help' },
   ];
 
   const moreLinksLeft = [
     { to: '/emergency-help', label: 'Emergency Help', icon: ShieldAlert },
-    { to: '/get-help', label: 'Get Help', icon: HelpCircle },
     { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench },
-    { to: '/safety/scam-alerts', label: 'Safety Center', icon: Shield },
+    { to: '/tools/scam-simulator', label: 'Scam Simulator', icon: Shield },
+    { to: '/tools/privacy-audit', label: 'Privacy Audit', icon: Shield },
+    { to: '/forum', label: 'Community Forum', icon: Users },
     { to: '/videos', label: 'Videos', icon: Video },
-    { to: '/forum', label: 'Forum', icon: Users },
   ];
 
   const moreLinksRight = [
     { to: '/glossary', label: 'Glossary', icon: BookOpen },
     { to: '/blog', label: 'Blog', icon: Newspaper },
-    { to: '/llm-knowledge-base', label: 'Knowledge Base', icon: BookOpen },
+    { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen },
     { to: '/about', label: 'About', icon: Users },
     { to: '/roadmap', label: 'Roadmap', icon: Map },
     { to: '/explore', label: 'Explore', icon: ArrowRight },

@@ -7,21 +7,32 @@ export function Footer() {
     {
       title: 'Learn',
       links: [
-        { to: '/guides', label: 'Guides' },
+        { to: '/guides', label: 'All Guides' },
+        { to: '/tools', label: 'Interactive Tools' },
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/glossary', label: 'Glossary' },
-        { to: '/tools', label: 'Tools' },
+        { to: '/ai-tutor', label: 'AI Tutor' },
         { to: '/blog', label: 'Blog' },
+      ],
+    },
+    {
+      title: 'Safety',
+      links: [
+        { to: '/safety/scam-alerts', label: 'Scam Alerts' },
+        { to: '/tools/scam-simulator', label: 'Scam Simulator' },
+        { to: '/tools/privacy-audit', label: 'Privacy Audit' },
+        { to: '/tools/cyber-scorecard', label: 'Security Scorecard' },
+        { to: '/emergency-help', label: 'Emergency Help' },
       ],
     },
     {
       title: 'Support',
       links: [
         { to: '/get-help', label: 'Get Help' },
-        { to: '/forum', label: 'Forum' },
-        { to: '/safety/scam-alerts', label: 'Safety Center' },
-        { to: '/device-hub', label: 'Device Hub' },
+        { to: '/forum', label: 'Community Forum' },
         { to: '/local-help', label: 'Local Help' },
+        { to: '/device-hub', label: 'Device Hub' },
+        { to: '/technicians', label: 'Technicians' },
       ],
     },
     {
@@ -30,7 +41,7 @@ export function Footer() {
         { to: '/about', label: 'About' },
         { to: '/how-it-works', label: 'How It Works' },
         { to: '/roadmap', label: 'Roadmap' },
-        { to: '/technicians', label: 'Technicians' },
+        { to: '/sources', label: 'Our Sources' },
       ],
     },
   ];
@@ -38,7 +49,7 @@ export function Footer() {
   return (
     <footer aria-label="Site footer" className="border-t border-border bg-muted/30">
       <div className="container py-14 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4" aria-label="TekSure home">

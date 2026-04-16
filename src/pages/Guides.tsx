@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -24,6 +24,13 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'how-to': BookOpen,
   'app-guides': Phone,
   'health-tech': Heart,
+  'government-civic': Landmark,
+  'financial-tech': CreditCard,
+  'smart-home': Tv,
+  'entertainment': Sparkles,
+  'communication': MessageSquare,
+  'life-transitions': ArrowRightLeft,
+  'internet-connectivity': Wifi,
 };
 
 const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
