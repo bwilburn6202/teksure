@@ -1313,4 +1313,722 @@ If there is a delay between video and audio (lip sync issue), look for "Audio De
       { title: 'Adjust for audio delay', content: 'If sound is out of sync, look for "Audio Delay" or "Lip Sync Adjustment" in Sound settings.' },
     ],
   },
+
+  // ═══════════════════════════════════════════
+  // ENTERTAINMENT & MEDIA (12 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-spotify-find-music',
+    title: 'How to Set Up Spotify and Find Music',
+    excerpt: 'Create a Spotify account, search for your favorite artists, and build playlists — free or premium.',
+    category: 'entertainment' as any,
+    tags: ['Spotify', 'music', 'streaming', 'playlists', 'entertainment'],
+    readTime: '6 min',
+    thumbnailEmoji: '🎵',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Spotify is the world's most popular music streaming service with over 100 million songs. You can use it free (with ads between songs) or subscribe to Spotify Premium (no ads, offline downloads, and higher quality audio). The free version still lets you search, browse, and play music — ads play every few songs.
+
+Download Spotify from the App Store or Google Play Store. Create an account with your email or sign up with your Google, Facebook, or Apple account. Once in, you can search for any artist, album, or song using the search bar. Tap the magnifying glass icon, type a name, and tap to play.
+
+To build a playlist: tap "Your Library" at the bottom, then "+" to create a new playlist. Name it and start adding songs. While playing any song, tap the three dots (menu) and "Add to Playlist" to add it to your collection. Spotify also creates personalized playlists for you based on your listening — check "Made For You" on the Home screen.
+
+For listening at home, connect Spotify to your smart speaker. In the Alexa app or Google Home app, link your Spotify account as the default music service. Then say "Alexa, play classic rock on Spotify."
+
+Spotify's "Discover Weekly" playlist updates every Monday with 30 songs it thinks you will like based on your listening habits — a great way to find new music.`,
+    steps: [
+      { title: 'Download Spotify', content: 'Get the Spotify app from the App Store or Google Play Store. Create an account with your email or sign in with Google/Apple.' },
+      { title: 'Search for music', content: 'Tap the search icon, type an artist, album, or song name, and tap to play. Browse by genre or mood on the Search screen.' },
+      { title: 'Create a playlist', content: 'Tap "Your Library" → "+" to create a new playlist. While playing a song, tap the three dots → "Add to Playlist."' },
+      { title: 'Discover personalized music', content: 'Check "Made For You" on the Home screen. "Discover Weekly" updates every Monday with 30 recommended songs.' },
+      { title: 'Connect to smart speakers', content: 'Link Spotify in your Alexa or Google Home app. Say "Alexa, play jazz on Spotify" for hands-free listening.' },
+    ],
+  },
+
+  {
+    slug: 'listen-to-podcasts-phone',
+    title: 'How to Listen to Podcasts on Your Phone',
+    excerpt: 'Find and listen to podcasts on your phone — free shows on every topic from news and history to comedy and true crime.',
+    category: 'entertainment' as any,
+    tags: ['podcasts', 'audio', 'phone', 'entertainment', 'free'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎙️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Podcasts are free audio shows you can listen to anytime — like radio on demand. There are podcasts on every topic: news, history, true crime, comedy, science, health, cooking, and more. New episodes are released on a schedule (daily, weekly, etc.) and you can listen whenever you want.
+
+On iPhone, the Podcasts app comes pre-installed (purple icon). On Android, use Google Podcasts, Spotify, or another podcast app from the Play Store. Open the app and browse or search for a topic that interests you.
+
+When you find a podcast, tap an episode to play it. If you like it, tap "Subscribe" or "Follow" to automatically get new episodes. Subscriptions are free — you are not paying for anything, you are bookmarking the show.
+
+While listening, you can adjust the speed (1.5x is popular for faster listening), set a sleep timer, and download episodes for offline listening during flights or areas without internet.
+
+Great starter podcasts include NPR's "Up First" (daily news in 10 minutes), "Stuff You Should Know" (interesting topics explained), and "SmartLess" (celebrity interviews with humor).`,
+    steps: [
+      { title: 'Open a podcast app', content: 'iPhone: open the Podcasts app (purple icon). Android: open Spotify, Google Podcasts, or download a podcast app from the Play Store.' },
+      { title: 'Search for a topic', content: 'Use the search bar to find podcasts about news, history, true crime, comedy, or any topic that interests you.' },
+      { title: 'Play an episode', content: 'Tap any episode to start listening. Use the playback controls to pause, rewind, or fast forward.' },
+      { title: 'Follow shows you like', content: 'Tap "Subscribe" or "Follow" to bookmark a show and automatically get new episodes. This is free.' },
+      { title: 'Download for offline listening', content: 'Tap the download icon on an episode to save it to your phone for listening without internet.' },
+    ],
+  },
+
+  {
+    slug: 'use-audible-audiobooks',
+    title: 'How to Use Audible for Audiobooks',
+    excerpt: 'Sign up for Audible and listen to bestselling books narrated by professional voices — in the car, on walks, or at home.',
+    category: 'entertainment' as any,
+    tags: ['Audible', 'audiobooks', 'Amazon', 'reading', 'entertainment'],
+    readTime: '5 min',
+    thumbnailEmoji: '📚',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Audible is Amazon's audiobook service where professional narrators read books aloud. It is great for people who enjoy books but find reading small text difficult, or who want to "read" while driving, walking, or doing housework. Audible offers a free 30-day trial that includes one or two free audiobooks.
+
+Download the Audible app from the App Store or Google Play Store. Sign in with your Amazon account. If you want to try it, start the free trial — you can cancel anytime before the trial ends without being charged.
+
+Browse the Audible store by category (mystery, biography, self-help, fiction, etc.) or search for a specific title or author. When you find a book, tap it to hear a sample before using a credit. Each month of membership gives you 1-2 credits to use on any audiobook, regardless of price.
+
+While listening, you can bookmark sections, adjust playback speed, set a sleep timer, and see how much time is left. If you fall asleep while listening, Audible remembers where you left off.
+
+Audible also includes a growing library of titles in "Audible Plus" — thousands of audiobooks and podcasts included free with any Audible membership, no credits needed. Browse these under "Included" in the app.`,
+    steps: [
+      { title: 'Download Audible', content: 'Get the Audible app from App Store or Google Play Store. Sign in with your Amazon account.' },
+      { title: 'Start the free trial', content: 'Tap to begin the 30-day free trial, which includes free audiobooks. Cancel before the trial ends to avoid charges.' },
+      { title: 'Browse and choose a book', content: 'Search by title, author, or category. Tap a book to hear a sample before committing.' },
+      { title: 'Listen and control playback', content: 'Use playback controls to pause, skip, adjust speed, and set a sleep timer. Audible remembers your place.' },
+      { title: 'Explore included titles', content: 'Browse "Included" or "Audible Plus" for thousands of audiobooks and podcasts at no extra credit cost.' },
+    ],
+  },
+
+  {
+    slug: 'get-free-audiobooks-libby-app',
+    title: 'How to Get Free Audiobooks from Your Library (Libby App)',
+    excerpt: 'Borrow audiobooks and ebooks from your local library for free using the Libby app — no late fees.',
+    category: 'entertainment' as any,
+    tags: ['Libby', 'library', 'audiobooks', 'ebooks', 'free'],
+    readTime: '5 min',
+    thumbnailEmoji: '📖',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Libby is a free app that lets you borrow audiobooks and ebooks from your local public library — right on your phone, with no late fees. Books are automatically returned when the lending period ends (usually 14-21 days). If you have a library card, you can start borrowing today.
+
+Download the Libby app from the App Store or Google Play Store. Open it and search for your library. You will need your library card number (found on the back of your card) and your library PIN (often the last four digits of your phone number — check with your library if you are unsure).
+
+Once signed in, browse your library's digital collection. Search for a specific title or browse by genre, bestsellers, or what is available right now. When you find something, tap "Borrow" to check it out immediately, or "Place Hold" if someone else has it checked out (you will be notified when it is available).
+
+For audiobooks, tap "Open in Libby" to start listening right in the app. For ebooks, you can read in Libby or send to your Kindle. Libby remembers your place across devices — start on your phone and pick up on your tablet.
+
+If you do not have a library card, most libraries let you sign up online for free. Visit your library's website and look for "Get a Card" or "Register."`,
+    steps: [
+      { title: 'Download Libby', content: 'Get the Libby app from the App Store or Google Play Store. It is free.' },
+      { title: 'Find and sign in to your library', content: 'Search for your local library in the app. Enter your library card number and PIN.' },
+      { title: 'Browse and borrow', content: 'Search by title, author, or genre. Tap "Borrow" for available titles or "Place Hold" for ones in use.' },
+      { title: 'Listen or read', content: 'For audiobooks, tap "Open in Libby" to listen. For ebooks, read in the app or send to your Kindle.' },
+      { title: 'Get a library card if needed', content: 'Visit your local library\'s website and look for "Get a Card" or "Register" — most offer free online sign-up.' },
+    ],
+  },
+
+  {
+    slug: 'manage-streaming-subscriptions',
+    title: 'How to Manage Your Streaming Subscriptions',
+    excerpt: 'Track which streaming services you pay for, how much they cost, and decide which ones to keep or cancel.',
+    category: 'entertainment' as any,
+    tags: ['streaming', 'subscriptions', 'budgeting', 'Netflix', 'entertainment'],
+    readTime: '6 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Streaming subscriptions can quietly add up. If you have Netflix, Hulu, Disney+, Max, Amazon Prime, Apple TV+, Peacock, Paramount+, and Spotify, you could be paying over $100 per month. Reviewing and managing these subscriptions saves real money.
+
+Start by listing everything you pay for. Check your credit card or bank statements for recurring charges. Common streaming services and their approximate 2026 prices: Netflix ($7-23/month), Hulu ($8-18/month), Disney+ ($8-14/month), Max ($10-17/month), Amazon Prime ($15/month includes shipping), Apple TV+ ($10/month), Peacock ($8-14/month), Paramount+ ($6-13/month), and Spotify ($12/month).
+
+On iPhone, check your subscriptions: Settings → your name → Subscriptions. On Android: Google Play Store → your profile → Payments & subscriptions → Subscriptions.
+
+To decide what to keep: check which services you actually used in the past month. If you have not opened an app in 30+ days, consider canceling. You can always re-subscribe later.
+
+Consider rotating services — subscribe to one for a month, watch what you want, cancel, then subscribe to another. This works well for services with shows that release all episodes at once. Some services offer annual plans that save 15-20% over monthly payments.`,
+    steps: [
+      { title: 'List all your subscriptions', content: 'Check bank/credit card statements for recurring streaming charges. Note each service and monthly cost.' },
+      { title: 'Check on your phone', content: 'iPhone: Settings → your name → Subscriptions. Android: Play Store → profile → Payments & subscriptions.' },
+      { title: 'Review usage', content: 'For each service, check when you last opened the app. If you have not used it in 30+ days, consider canceling.' },
+      { title: 'Consider rotating services', content: 'Subscribe to one service, watch your shows, cancel, then try another. This spreads costs over time.' },
+      { title: 'Look for bundles and annual plans', content: 'Some services bundle together (Disney+/Hulu/ESPN+). Annual plans often save 15-20% over monthly.' },
+    ],
+  },
+
+  {
+    slug: 'use-youtube-music',
+    title: 'How to Use YouTube Music',
+    excerpt: 'Stream music for free with YouTube Music — search for songs, create playlists, and discover new artists.',
+    category: 'entertainment' as any,
+    tags: ['YouTube Music', 'music', 'streaming', 'free', 'entertainment'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎶',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `YouTube Music is Google's music streaming service. The free version lets you search and play any song with ads between tracks (but your phone screen must stay on). YouTube Music Premium ($11/month) removes ads, allows background play, and lets you download songs offline.
+
+Download YouTube Music from the App Store or Google Play Store. Sign in with your Google account. The home screen shows personalized recommendations based on your listening history.
+
+Search for any artist, song, or album using the search bar. YouTube Music has official recordings plus live performances, covers, and remixes from YouTube. You can switch between "Song" (audio only) and "Video" (music video) modes.
+
+Create playlists: tap "Library" → "New Playlist." While playing a song, tap the three dots → "Add to playlist." YouTube Music also creates automatic playlists like "Your Likes" and "Discover Mix" (personalized weekly recommendations).
+
+If you have a YouTube Premium subscription, YouTube Music Premium is included at no extra cost.`,
+    steps: [
+      { title: 'Download YouTube Music', content: 'Get the app from the App Store or Google Play Store. Sign in with your Google account.' },
+      { title: 'Search for music', content: 'Use the search bar to find any artist, song, or album. Switch between audio-only and music video modes.' },
+      { title: 'Create playlists', content: 'Tap "Library" → "New Playlist." Add songs using the three-dot menu → "Add to playlist."' },
+      { title: 'Discover new music', content: 'Check "Discover Mix" and other auto-generated playlists on the Home screen for personalized recommendations.' },
+      { title: 'Consider Premium', content: 'YouTube Music Premium ($11/month) removes ads, enables background play, and allows offline downloads.' },
+    ],
+  },
+
+  {
+    slug: 'cancel-streaming-subscription',
+    title: 'How to Cancel a Streaming Subscription',
+    excerpt: 'Cancel Netflix, Hulu, Disney+, or any streaming service — where to find the cancel button on each platform.',
+    category: 'entertainment' as any,
+    tags: ['cancel', 'subscription', 'streaming', 'Netflix', 'entertainment'],
+    readTime: '5 min',
+    thumbnailEmoji: '❌',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Canceling a streaming subscription should take less than 5 minutes, but every service hides the cancel button in a slightly different place. Here is where to find it for major services:
+
+Netflix: Go to netflix.com (not the app — you cannot cancel from the app on most devices). Click your profile icon → Account → Cancel Membership. You keep access until the end of your billing period.
+
+Hulu: Go to hulu.com, click your profile → Account → Cancel. Or in the app: profile icon → Account → Cancel Subscription.
+
+Disney+: Go to disneyplus.com, click your profile → Account → Subscription → Cancel Subscription.
+
+Amazon Prime Video: Go to amazon.com → Account & Lists → Memberships & Subscriptions → Prime → Manage Membership → End Membership. Note: this cancels all of Amazon Prime, not just video.
+
+Apple TV+: On iPhone: Settings → your name → Subscriptions → Apple TV+ → Cancel. On a computer: go to Apple ID settings.
+
+If you subscribed through the App Store (iPhone) or Google Play (Android), the cancellation happens there, not on the streaming service's website. iPhone: Settings → your name → Subscriptions. Android: Play Store → profile → Payments & subscriptions → Subscriptions.
+
+After canceling, you keep access until the end of your current billing period. You will not receive a refund for unused days, but you also will not be charged again.`,
+    steps: [
+      { title: 'Determine where you subscribed', content: 'Check if you signed up through the service\'s website, the App Store, or Google Play — cancellation happens where you subscribed.' },
+      { title: 'Cancel through the service\'s website', content: 'Go to the service\'s website, sign in, navigate to Account or Membership settings, and find the Cancel option.' },
+      { title: 'Cancel through App Store', content: 'iPhone: Settings → your name → Subscriptions → select the service → Cancel Subscription.' },
+      { title: 'Cancel through Google Play', content: 'Android: Play Store → profile → Payments & subscriptions → Subscriptions → select → Cancel.' },
+      { title: 'Verify cancellation', content: 'You should receive a confirmation email. You keep access until the end of the billing period.' },
+    ],
+  },
+
+  {
+    slug: 'share-netflix-account-properly',
+    title: 'How to Share Your Netflix Account the Right Way',
+    excerpt: 'Understand Netflix household rules, add extra members, and manage who has access to your account.',
+    category: 'entertainment' as any,
+    tags: ['Netflix', 'sharing', 'streaming', 'account', 'household'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎬',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Netflix now requires that accounts be used by people who live in the same household (same home, same WiFi network). If you want to share Netflix with someone outside your home, you need to use Netflix's official "Extra Member" feature.
+
+Extra Members: Netflix Standard and Premium plans allow you to add extra members who live at a different address. Each extra member costs about $8/month and gets their own profile, login, and recommendations. To add one: go to netflix.com → Account → Extra Members → Buy an Extra Member Slot. The person receives an invitation to create their own login.
+
+For people in your household: Netflix plans support 1-4 simultaneous streams depending on your plan. Standard supports 2 screens, and Premium supports 4 screens. Everyone in the same home can have their own profile within the account.
+
+To manage profiles: go to netflix.com → Manage Profiles. You can add, edit, or delete profiles. Set up a Kids profile for children — it limits content to age-appropriate titles and uses a more colorful interface.
+
+To see who is using your account: go to Account → Manage Access and Devices. This shows every device signed into your account and lets you sign out devices you do not recognize.
+
+If you no longer want to share with someone, you can remove their profile and change your password to force them to sign out.`,
+    steps: [
+      { title: 'Understand household rules', content: 'Netflix accounts are for people in the same household (same home, same WiFi). People outside your home need the Extra Member feature.' },
+      { title: 'Add an Extra Member', content: 'Go to netflix.com → Account → Extra Members → Buy a slot. The person receives an invitation to create their own login ($8/month extra).' },
+      { title: 'Create profiles for household members', content: 'Go to Manage Profiles. Add a profile for each person so everyone gets personalized recommendations.' },
+      { title: 'Set up a Kids profile', content: 'Add a profile and check the "Kids" option. This limits content to age-appropriate titles.' },
+      { title: 'Check who has access', content: 'Go to Account → Manage Access and Devices. Sign out devices you do not recognize.' },
+    ],
+  },
+
+  {
+    slug: 'use-apple-music-beginners',
+    title: 'How to Use Apple Music for Beginners',
+    excerpt: 'Set up Apple Music on your iPhone or iPad — search, play, and build your personal music library.',
+    category: 'entertainment' as any,
+    tags: ['Apple Music', 'music', 'iPhone', 'streaming', 'Apple'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎧',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Apple Music is Apple's music streaming service with over 100 million songs. It comes pre-installed on iPhone and iPad. Apple Music costs $11/month (individual) or $17/month (family plan for up to 6 people). There is a free 1-month trial for new subscribers.
+
+Open the Music app on your iPhone (pink/red icon with a musical note). Tap "Listen Now" to see personalized recommendations, or tap "Search" to find specific artists, albums, or songs.
+
+When you find a song you like, tap the "+" button to add it to your library. Tap the heart icon to "Love" it — this helps Apple Music learn your taste and improve recommendations. To create a playlist: go to Library → Playlists → New Playlist. Name it and add songs.
+
+Apple Music works with Siri. Say "Hey Siri, play jazz music" or "Hey Siri, play the latest album by Adele." You can also ask Siri to add the current song to a playlist or to your library.
+
+To download music for offline listening (when you do not have internet): add a song to your library, then tap the download icon (arrow pointing down). Downloaded songs are available even in airplane mode.
+
+Apple Music syncs across all your Apple devices — iPhone, iPad, Mac, and Apple Watch.`,
+    steps: [
+      { title: 'Open the Music app', content: 'Find the Music app on your iPhone (pink/red icon). If prompted, start the free trial or sign up.' },
+      { title: 'Search for music', content: 'Tap "Search" and type an artist, album, or song name. Tap any result to play it.' },
+      { title: 'Build your library', content: 'Tap "+" to add songs to your library. Tap the heart to "Love" songs and improve recommendations.' },
+      { title: 'Create playlists', content: 'Go to Library → Playlists → New Playlist. Add songs from your library or search results.' },
+      { title: 'Use Siri for hands-free control', content: 'Say "Hey Siri, play [artist/genre]" for voice-controlled music. Siri also adds songs to playlists.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-music-playlist',
+    title: 'How to Set Up a Music Playlist on Any Service',
+    excerpt: 'Create your own custom music playlist on Spotify, Apple Music, YouTube Music, or Amazon Music — step by step.',
+    category: 'entertainment' as any,
+    tags: ['playlist', 'music', 'Spotify', 'Apple Music', 'entertainment'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎼',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A playlist is a custom collection of songs you group together — workout music, relaxing evening songs, road trip favorites, or a mix of your all-time favorites. Every music service lets you create playlists, and the process is similar across all of them.
+
+On Spotify: tap "Your Library" → "+" → "Playlist." Name it, then search for songs. Tap the three dots next to any song → "Add to Playlist" → select your playlist. You can also tap "Add Songs" from within the playlist view.
+
+On Apple Music: tap "Library" → "Playlists" → "New Playlist." Name it and tap "Add Music." Search and select songs to add. Or while playing any song, tap the three dots → "Add to a Playlist."
+
+On YouTube Music: tap "Library" → "New Playlist." While playing a song, tap the three dots → "Add to playlist."
+
+On Amazon Music: tap "Library" → "+" → "Create new playlist." Search for songs and tap "Add to Playlist."
+
+All services let you reorder songs by dragging them. You can also make playlists collaborative (on Spotify and Apple Music), letting friends add songs too. Playlists can be as long as you want — some people have playlists with hundreds of songs.
+
+Most services also offer "smart" or auto-generated playlists based on a theme or your listening history, which you can save and modify.`,
+    steps: [
+      { title: 'Open your music app', content: 'Open Spotify, Apple Music, YouTube Music, or Amazon Music on your phone.' },
+      { title: 'Create a new playlist', content: 'Navigate to Library → "+" or "New Playlist." Give your playlist a name that describes the mood or purpose.' },
+      { title: 'Search for and add songs', content: 'Use the search bar to find songs. Tap the menu (three dots) on a song → "Add to Playlist" → select your playlist.' },
+      { title: 'Reorder songs', content: 'Open your playlist and drag songs to rearrange the order. Most apps show a drag handle on the right side of each song.' },
+      { title: 'Download for offline listening', content: 'Toggle the download button on your playlist to save all songs for listening without internet (requires a premium subscription).' },
+    ],
+  },
+
+  {
+    slug: 'watch-live-tv-without-cable',
+    title: 'How to Watch Live TV Without Cable',
+    excerpt: 'Cut the cord and still watch live news, sports, and shows using streaming services and free options.',
+    category: 'entertainment' as any,
+    tags: ['cord cutting', 'live TV', 'streaming', 'cable alternative', 'entertainment'],
+    readTime: '6 min',
+    thumbnailEmoji: '📡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `You do not need cable to watch live TV. Several streaming services offer live channels — local news, sports, and cable networks — at a fraction of cable costs. And some options are completely free.
+
+Paid live TV streaming services: YouTube TV ($73/month) offers 100+ channels including local networks, ESPN, CNN, and more. Hulu + Live TV ($77/month) includes Hulu's on-demand library plus live channels. Sling TV ($40-55/month) is a more affordable option with fewer channels. fuboTV ($80/month) focuses on sports with 200+ channels. All include a cloud DVR for recording shows.
+
+Free options: An indoor digital antenna ($15-30, one-time purchase) picks up local broadcast channels (ABC, CBS, NBC, FOX, PBS) in HD for free. No subscription needed — plug it into your TV's antenna port and scan for channels. Pluto TV, Tubi, and The Roku Channel offer hundreds of free streaming channels with ads — live news, movies, TV shows, and more. Download these apps on any streaming device.
+
+To choose the best option: make a list of the channels and shows you watch most. Check which live TV service carries those channels. Try a free trial before committing. Most services offer 5-7 day trials.
+
+For sports specifically: check which service carries your team's games. Regional sports networks are not available on all services.`,
+    steps: [
+      { title: 'List the channels you watch', content: 'Write down the channels and shows you cannot live without. This helps you choose the right service.' },
+      { title: 'Consider a digital antenna', content: 'A $15-30 indoor antenna picks up local channels (ABC, CBS, NBC, FOX, PBS) in HD for free. One-time purchase, no subscription.' },
+      { title: 'Compare live TV streaming services', content: 'YouTube TV ($73/month), Hulu + Live TV ($77/month), Sling TV ($40-55/month), and fuboTV ($80/month) each offer different channel lineups.' },
+      { title: 'Try free streaming apps', content: 'Download Pluto TV, Tubi, or The Roku Channel for free live channels and on-demand content with ads.' },
+      { title: 'Start a free trial', content: 'Most live TV services offer 5-7 day free trials. Try before committing to see if it meets your needs.' },
+    ],
+  },
+
+  {
+    slug: 'download-movies-offline-viewing',
+    title: 'How to Download Movies for Offline Viewing',
+    excerpt: 'Download movies and shows to your phone or tablet for watching on planes, road trips, or places without internet.',
+    category: 'entertainment' as any,
+    tags: ['download', 'offline', 'movies', 'streaming', 'travel'],
+    readTime: '5 min',
+    thumbnailEmoji: '⬇️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Most streaming services let you download movies and shows to your phone or tablet for watching without internet — perfect for flights, road trips, or areas with poor cell service. You need a paid subscription (downloads are not available on free plans) and enough storage space on your device.
+
+Netflix: open the app, find a movie or show, and tap the download icon (arrow pointing down). Downloaded titles appear in the "Downloads" section of the app. Not all titles are available for download — look for the download icon.
+
+Disney+: tap the download icon on any movie or show page. You can download on up to 10 devices.
+
+Amazon Prime Video: tap the download button on any Prime-eligible title. Choose video quality (higher quality uses more storage).
+
+Hulu: only the No Ads plan supports downloads. Tap the download icon next to eligible episodes.
+
+Apple TV+: tap the download icon on movies and shows in the Apple TV app.
+
+Downloads expire after a set period (usually 30 days if you have not started watching, or 48 hours after you press play). Re-download if needed.
+
+To manage storage: go to your streaming app's settings → Downloads. You can see how much space downloads are using and delete ones you have finished watching. Lower video quality saves storage space.`,
+    steps: [
+      { title: 'Open your streaming app', content: 'Open Netflix, Disney+, Amazon Prime Video, Hulu (No Ads), or Apple TV+ on your phone or tablet.' },
+      { title: 'Find the download icon', content: 'On a movie or episode page, look for the download icon (arrow pointing down). Not all titles are available for download.' },
+      { title: 'Download before your trip', content: 'Download movies and shows while connected to WiFi before traveling. Downloads use your storage space.' },
+      { title: 'Watch offline', content: 'Go to the Downloads section of the app. Tap any title to watch — no internet needed.' },
+      { title: 'Manage storage', content: 'In the app\'s settings, check download storage usage. Delete finished downloads and consider lower quality to save space.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // COMMUNICATION & SOCIAL (12 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'make-whatsapp-video-call',
+    title: 'How to Make a WhatsApp Video Call',
+    excerpt: 'Use WhatsApp to make free video calls to friends and family anywhere in the world — all you need is WiFi.',
+    category: 'communication' as any,
+    tags: ['WhatsApp', 'video call', 'messaging', 'communication', 'free'],
+    readTime: '5 min',
+    thumbnailEmoji: '📹',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `WhatsApp is a free messaging app that lets you make video calls, voice calls, and send messages to anyone in the world who also has WhatsApp — at no cost beyond your internet connection. It is especially popular for staying in touch with family and friends overseas.
+
+Download WhatsApp from the App Store or Google Play Store. Set it up with your phone number — WhatsApp sends a verification code via text to confirm. Once verified, WhatsApp automatically shows contacts from your phone who also use the app.
+
+To make a video call: open WhatsApp, tap the "Calls" tab at the bottom, tap the phone icon with a "+" to start a new call, select a contact, and tap the video camera icon. You can also start a video call from within a chat — tap the video camera icon at the top of the conversation.
+
+For group video calls with up to 8 people: start a call with one person, then tap "Add Participant" to bring others in. Or create a group chat first, then tap the video icon to call all group members.
+
+During a call, you can switch between front and back cameras, mute your microphone, turn off your camera (audio only), and share your screen. WhatsApp video calls are encrypted end-to-end, meaning only you and the people on the call can see and hear the conversation.`,
+    steps: [
+      { title: 'Download and set up WhatsApp', content: 'Get WhatsApp from App Store or Google Play. Set up with your phone number and verify with the texted code.' },
+      { title: 'Find your contact', content: 'WhatsApp shows contacts who already use the app. Tap the "Calls" tab, then "+" to start a new call.' },
+      { title: 'Start a video call', content: 'Select a contact and tap the video camera icon. Or from a chat, tap the video icon at the top.' },
+      { title: 'Add people for group calls', content: 'During a call, tap "Add Participant" to include up to 8 people total.' },
+      { title: 'Use call controls', content: 'Switch cameras, mute microphone, turn camera on/off, or share your screen during the call.' },
+    ],
+  },
+
+  {
+    slug: 'use-facebook-marketplace-safely',
+    title: 'How to Use Facebook Marketplace Safely',
+    excerpt: 'Buy and sell items locally on Facebook Marketplace — with tips to avoid scams and stay safe meeting strangers.',
+    category: 'communication' as any,
+    tags: ['Facebook', 'Marketplace', 'buying', 'selling', 'safety'],
+    readTime: '6 min',
+    thumbnailEmoji: '🏪',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Facebook Marketplace is a free way to buy and sell items locally — furniture, electronics, cars, clothing, and more. It is built into the Facebook app and shows listings from people in your area. You message sellers directly and arrange to meet in person.
+
+To browse: open the Facebook app and tap the Marketplace icon (storefront icon) at the bottom or top of the screen. Browse categories or search for specific items. Filter by location, price range, and condition.
+
+To sell: tap "Create new listing" → choose a category → add photos, a title, price, description, and your location. Your listing appears to people in your area. Respond promptly to messages from potential buyers.
+
+Safety rules for buying: always meet in a public place (police station parking lots are ideal — many have designated "Safe Exchange Zones"). Bring a friend. Never send payment before seeing the item in person. If a deal sounds too good to be true, it probably is. Never share personal financial information.
+
+Safety rules for selling: do not invite strangers to your home. Meet in public. Accept cash or use Facebook's built-in checkout for shipped items. Be wary of anyone who offers more than your asking price or wants to pay with a cashier's check.
+
+Check the buyer or seller's Facebook profile. Established profiles with friends, photos, and posting history are more trustworthy than brand-new profiles with no activity.`,
+    steps: [
+      { title: 'Open Marketplace', content: 'In the Facebook app, tap the Marketplace icon (storefront). Browse listings or search for specific items.' },
+      { title: 'Filter your search', content: 'Use filters for location, price range, condition (new/used), and category to narrow results.' },
+      { title: 'Message the seller', content: 'Tap "Message" on a listing to ask questions or arrange a meeting. Be specific about when and where to meet.' },
+      { title: 'Meet in a safe public place', content: 'Always meet at a police station parking lot, coffee shop, or other well-lit public location. Bring a friend.' },
+      { title: 'Check profiles before dealing', content: 'Review the buyer or seller\'s Facebook profile. Established accounts with history are more trustworthy than brand-new empty profiles.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-group-chat-phone',
+    title: 'How to Set Up a Group Chat on iPhone or Android',
+    excerpt: 'Create a group text conversation with family or friends so everyone stays in the loop at once.',
+    category: 'communication' as any,
+    tags: ['group chat', 'texting', 'iPhone', 'Android', 'messaging'],
+    readTime: '5 min',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A group chat lets you text multiple people at once — everyone sees and responds in the same conversation. This is great for family updates, planning events, sharing photos, and staying connected with a group.
+
+On iPhone (Messages): open the Messages app, tap the compose button (pencil icon in the top-right), type the names or phone numbers of everyone you want in the group, type your message, and send. Everyone receives the message and can respond. To name the group: tap the group at the top of the conversation → tap the group icon → "Change Name and Photo."
+
+On Android (Messages or default texting app): open your messaging app, tap the compose button, tap "New Group" or start typing multiple recipients, add everyone, and send your first message. To name the group (varies by app): tap the group name at the top → "Group Details" → edit the name.
+
+Note on iPhone: if everyone in the group has an iPhone, the conversation uses iMessage (blue bubbles) with features like reactions, effects, and typing indicators. If any member has an Android phone, the group uses SMS/MMS (green bubbles) with fewer features. For the best experience across both platforms, consider using WhatsApp, Facebook Messenger, or another cross-platform messaging app.
+
+You can leave a group chat if it becomes too active: on iPhone, tap the group name → "Leave this Conversation" (only works in iMessage groups with 3+ people). On Android, look for "Leave Group" in the group details.`,
+    steps: [
+      { title: 'Open your messaging app', content: 'Open Messages on iPhone or your default texting app on Android.' },
+      { title: 'Start a new message', content: 'Tap the compose button (pencil icon). Add multiple contacts by name or phone number.' },
+      { title: 'Send your first message', content: 'Type a greeting and send. Everyone receives it and can respond in the same conversation.' },
+      { title: 'Name the group', content: 'iPhone: tap group info at top → "Change Name and Photo." Android: tap group name → "Group Details" → edit name.' },
+      { title: 'Manage notifications', content: 'If the group is too active, tap the group name and select "Hide Alerts" (iPhone) or "Mute" (Android) to silence notifications.' },
+    ],
+  },
+
+  {
+    slug: 'block-unwanted-calls-texts',
+    title: 'How to Block Unwanted Calls and Texts',
+    excerpt: 'Stop spam calls, robocalls, and unwanted text messages on your iPhone or Android phone.',
+    category: 'communication' as any,
+    tags: ['block', 'spam', 'calls', 'texts', 'phone'],
+    readTime: '5 min',
+    thumbnailEmoji: '🚫',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Unwanted calls and spam texts are frustrating and sometimes dangerous. Both iPhone and Android have built-in tools to block specific numbers and filter spam.
+
+To block a specific number on iPhone: open the Phone app → Recents → find the number → tap the (i) icon → scroll down → "Block this Caller." For texts: open the message → tap the contact/number at the top → "Block this Caller." Blocked contacts cannot call, text, or FaceTime you.
+
+To block on Android: open the Phone app → Recents → long-press the number → "Block" or "Block and report spam." For texts: open the message → tap the three dots → "Block" or "Report spam."
+
+To silence all unknown callers on iPhone: Settings → Phone → Silence Unknown Callers. Calls from numbers not in your contacts go to voicemail. On Android: Phone app → Settings → "Spam and Call Screen" → enable spam filtering.
+
+For spam texts on iPhone: Settings → Messages → "Filter Unknown Senders" moves texts from unknown numbers to a separate list. On Android: Messages → Settings → Spam Protection → turn it on.
+
+Register your number at donotcall.gov to reduce calls from legitimate telemarketers. For extra protection, activate your carrier's free spam blocking: AT&T ActiveArmor, Verizon Call Filter, or T-Mobile Scam Shield.`,
+    steps: [
+      { title: 'Block a specific number', content: 'iPhone: Phone → Recents → tap (i) → "Block this Caller." Android: Phone → Recents → long-press → "Block."' },
+      { title: 'Silence unknown callers', content: 'iPhone: Settings → Phone → Silence Unknown Callers. Android: Phone → Settings → enable spam filtering.' },
+      { title: 'Filter spam texts', content: 'iPhone: Settings → Messages → "Filter Unknown Senders." Android: Messages → Settings → Spam Protection.' },
+      { title: 'Register on the Do Not Call list', content: 'Go to donotcall.gov and enter your phone number. Reduces legitimate telemarketer calls.' },
+      { title: 'Activate carrier spam blocking', content: 'Download your carrier\'s free app: AT&T ActiveArmor, Verizon Call Filter, or T-Mobile Scam Shield.' },
+    ],
+  },
+
+  {
+    slug: 'manage-notification-settings',
+    title: 'How to Manage Your Notification Settings',
+    excerpt: 'Take control of your phone\'s notifications — silence the noisy apps and keep the ones that matter.',
+    category: 'communication' as any,
+    tags: ['notifications', 'settings', 'phone', 'iPhone', 'Android'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔔',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Phone notifications can be overwhelming — constant buzzing from news apps, social media, games, and shopping apps. The good news is you have complete control over which apps can notify you and how.
+
+On iPhone: go to Settings → Notifications. You see a list of every app. Tap any app to control it: turn notifications on or off entirely, choose whether they appear on the lock screen, in the notification center, or as banners, and choose whether they make a sound. For apps that are too noisy, turn off "Sounds" but keep "Banners" so you still see them silently.
+
+On Android: go to Settings → Notifications (or Apps & Notifications). Tap an app to manage its notification channels. Android lets you control different types of notifications within the same app separately.
+
+A good approach: keep notifications on for calls, texts, email, calendar, and banking alerts. Turn off notifications for social media, news, games, and shopping apps — check those on your own schedule instead.
+
+Both iPhone and Android offer "Do Not Disturb" and "Focus" modes that silence all notifications during set times (like bedtime or meetings). iPhone: Control Center → Focus → Do Not Disturb. Android: Settings → Do Not Disturb.
+
+For a quick cleanup, check your notification history: iPhone swipe down from the top; Android swipe down. Notice which apps are sending the most notifications and turn those off.`,
+    steps: [
+      { title: 'Open notification settings', content: 'iPhone: Settings → Notifications. Android: Settings → Notifications or Apps & Notifications.' },
+      { title: 'Review each app', content: 'Go through the list and decide which apps should notify you. Keep essentials (calls, texts, banking) and turn off noisy apps.' },
+      { title: 'Customize instead of turning off', content: 'For some apps, turn off "Sounds" but keep "Banners" for silent visual notifications.' },
+      { title: 'Set up Do Not Disturb', content: 'Schedule quiet hours for bedtime. iPhone: Focus → Do Not Disturb. Android: Settings → Do Not Disturb.' },
+      { title: 'Review periodically', content: 'Check your notification shade weekly. If an app sends too many notifications, go to settings and turn them off.' },
+    ],
+  },
+
+  {
+    slug: 'delete-old-social-media-accounts',
+    title: 'How to Delete Old Social Media Accounts',
+    excerpt: 'Remove old social media accounts you no longer use to protect your privacy and reduce your digital footprint.',
+    category: 'communication' as any,
+    tags: ['social media', 'privacy', 'delete account', 'security', 'digital footprint'],
+    readTime: '6 min',
+    thumbnailEmoji: '🗑️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Old social media accounts you no longer use are a privacy and security risk. They may contain personal photos, your birthday, email address, and other information that hackers or scammers can use. If the service gets hacked, your data is exposed. Deleting unused accounts reduces your digital footprint and improves your online safety.
+
+Before deleting, download your data. Most services let you export your photos, posts, and messages. Facebook: Settings → Your Information → Download Your Information. Instagram: Settings → Accounts Center → Your Information and Permissions → Download Your Information. Twitter/X: Settings → Your Account → Download an Archive.
+
+To delete Facebook: Settings → Accounts Center → Personal Details → Account Ownership and Control → Deactivation or Deletion → Delete Account. Facebook gives you a 30-day grace period — if you log in during that time, the deletion is canceled.
+
+To delete Instagram: Settings → Accounts Center → Personal Details → Account Ownership and Control → Deactivation or Deletion → Delete Account. Same 30-day window applies.
+
+To delete Twitter/X: Settings → Your Account → Deactivate Your Account. After 30 days of inactivity, the account is permanently deleted.
+
+To delete LinkedIn: Settings → Account Management → Close Account.
+
+For other services you have forgotten about, try searching your email inbox for "welcome to" or "confirm your email" to find old accounts. The website justdelete.me provides direct links to the deletion pages of hundreds of services.`,
+    steps: [
+      { title: 'List your old accounts', content: 'Search your email inbox for "welcome to" or "confirm your email" to find accounts you may have forgotten about.' },
+      { title: 'Download your data first', content: 'Before deleting, export your photos, posts, and messages. Each service has a data download tool in Settings.' },
+      { title: 'Navigate to the delete page', content: 'Go to each service\'s settings and find "Delete Account" or "Close Account." It is often under Privacy, Security, or Account Management.' },
+      { title: 'Confirm deletion', content: 'Follow the prompts to confirm. Most services have a 30-day grace period where you can change your mind.' },
+      { title: 'Use justdelete.me for other services', content: 'Visit justdelete.me for direct links to deletion pages of hundreds of online services.' },
+    ],
+  },
+
+  {
+    slug: 'use-instagram-beginners',
+    title: 'How to Use Instagram for Beginners',
+    excerpt: 'Set up Instagram, follow friends and interests, and learn how to post photos and view Stories.',
+    category: 'communication' as any,
+    tags: ['Instagram', 'social media', 'photos', 'beginners', 'app'],
+    readTime: '6 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Instagram is a social media app focused on sharing photos and short videos. You can follow friends, family, celebrities, news accounts, and pages about your interests (gardening, cooking, travel, pets). It is free to use and available on iPhone and Android.
+
+Download Instagram from the App Store or Google Play Store. Create an account with your email, phone number, or sign in with Facebook. Choose a username and add a profile photo. Consider making your account private: Settings → Privacy → "Private Account" — this means only people you approve can see your posts.
+
+The home screen (house icon) shows posts from people you follow. Scroll down to see photos and videos. Tap the heart to "like" a post. Tap the speech bubble to leave a comment.
+
+To follow people: tap the search icon (magnifying glass) and search for friends by name, or browse topics you are interested in. Tap "Follow" on profiles you want to see updates from.
+
+To post a photo: tap the "+" at the bottom center, select a photo from your phone or take a new one, add a filter or caption, and tap "Share." Your followers will see it in their feed.
+
+Stories are short posts (photos or videos) that disappear after 24 hours. They appear as circles at the top of your home screen. Tap someone's circle to view their Story. To post your own Story, tap your profile circle or swipe right from the home screen.`,
+    steps: [
+      { title: 'Download and create an account', content: 'Get Instagram from App Store or Google Play. Sign up with email or phone number, choose a username, and add a profile photo.' },
+      { title: 'Set your account to private', content: 'Go to Settings → Privacy → toggle on "Private Account" so only approved followers can see your posts.' },
+      { title: 'Find and follow people', content: 'Tap the search icon, search for friends by name, and tap "Follow." Browse topics that interest you.' },
+      { title: 'Post a photo', content: 'Tap "+" at the bottom, select or take a photo, add a caption, and tap "Share."' },
+      { title: 'View and post Stories', content: 'Tap circles at the top to view others\' Stories. Swipe right from the home screen to create your own 24-hour Story.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-zoom-call',
+    title: 'How to Set Up a Zoom Call from Scratch',
+    excerpt: 'Download Zoom, create an account, and start or join a video call — whether for family, friends, or appointments.',
+    category: 'communication' as any,
+    tags: ['Zoom', 'video call', 'meetings', 'communication', 'setup'],
+    readTime: '6 min',
+    thumbnailEmoji: '🖥️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Zoom is one of the most popular video calling apps. You can use it on your phone, tablet, or computer for family calls, doctor appointments, classes, and meetings. The free plan allows calls with up to 100 participants for up to 40 minutes (unlimited time for 1-on-1 calls).
+
+Download Zoom from the App Store, Google Play Store, or zoom.us for computers. Create a free account with your email address, or sign in with Google or Apple.
+
+To start a call: open Zoom, tap "New Meeting," and tap "Start a Meeting." Zoom gives you a meeting link or ID you can share with others. Tap "Participants" → "Invite" to send the link via text, email, or any messaging app.
+
+To join someone else's call: tap "Join" in Zoom and enter the Meeting ID (the number the host shared with you). Or tap the link they sent you — it opens Zoom automatically.
+
+During a call: tap the screen to see controls. "Mute" silences your microphone (tap again to unmute). "Stop Video" turns off your camera. "Chat" lets you type messages. "Share Screen" shows your screen to everyone.
+
+If you are hosting a call for family, send the meeting link via text message so everyone can tap it to join directly. For recurring calls (like a weekly family catch-up), use "Schedule" to create a meeting with a fixed time and reusable link.`,
+    steps: [
+      { title: 'Download Zoom', content: 'Get Zoom from App Store, Google Play, or zoom.us on your computer. Create a free account.' },
+      { title: 'Start a meeting', content: 'Tap "New Meeting" → "Start a Meeting." Share the meeting link with participants via text or email.' },
+      { title: 'Join someone else\'s meeting', content: 'Tap "Join" and enter the Meeting ID, or tap the link they shared with you.' },
+      { title: 'Learn the controls', content: 'Tap the screen to see Mute, Stop Video, Chat, and Share Screen buttons.' },
+      { title: 'Schedule recurring calls', content: 'Use "Schedule" to create meetings with a set time and reusable link — great for weekly family calls.' },
+    ],
+  },
+
+  {
+    slug: 'send-photos-text-message',
+    title: 'How to Send Photos Through Text Message',
+    excerpt: 'Share photos with friends and family by text — on iPhone or Android, step by step.',
+    category: 'communication' as any,
+    tags: ['photos', 'texting', 'MMS', 'iPhone', 'Android'],
+    readTime: '4 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Sending photos by text message is one of the most common things people do on their phones. Here is how to do it on both iPhone and Android.
+
+On iPhone: open the Messages app and start a new conversation or open an existing one. Tap the "+" or camera icon next to the text field. Choose "Photos" to select from your photo library, or "Camera" to take a new photo. Select the photos you want to send (you can select multiple), tap "Add," then tap the blue send arrow.
+
+On Android: open your messaging app and start or open a conversation. Tap the attachment icon (paperclip or "+") next to the text field. Select "Gallery" or "Photos" to choose from your library, or "Camera" to take a new one. Select photos and tap "Send."
+
+Note about photo quality: when you send photos by regular text message (SMS/MMS), the quality is reduced to fit the file size limit. For full-quality photos, use iMessage (iPhone-to-iPhone, blue bubbles keep full quality), email, or an app like WhatsApp or Google Photos sharing.
+
+To send multiple photos at once, select several before sending. Most messaging apps let you choose multiple photos in one message. For very large batches (like vacation photos), consider creating a shared album in Google Photos or iCloud instead.`,
+    steps: [
+      { title: 'Open your messaging app', content: 'Open Messages (iPhone) or your default texting app (Android). Start a new conversation or open an existing one.' },
+      { title: 'Tap the attachment button', content: 'iPhone: tap "+" or the camera icon. Android: tap the paperclip or "+" icon next to the text field.' },
+      { title: 'Select photos', content: 'Choose "Photos" or "Gallery" to pick from your library. Tap to select one or more photos.' },
+      { title: 'Send', content: 'Tap "Add" or the checkmark, then tap the send arrow. The photos are sent as part of your text message.' },
+      { title: 'For full-quality sharing', content: 'For highest quality, use iMessage (iPhone-to-iPhone), email, or share a Google Photos or iCloud album link.' },
+    ],
+  },
+
+  {
+    slug: 'use-google-meet-video-calls',
+    title: 'How to Use Google Meet for Video Calls',
+    excerpt: 'Start or join a free Google Meet video call — right from your Gmail, phone, or web browser.',
+    category: 'communication' as any,
+    tags: ['Google Meet', 'video call', 'Google', 'communication', 'meetings'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎥',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Google Meet is Google's free video calling service. You can use it from your phone, tablet, or computer. Anyone with a Google account (Gmail) can start a meeting, and participants can join from a web browser without installing anything. Free calls allow up to 100 participants for up to 60 minutes.
+
+To start a meeting on your phone: download the Google Meet app, sign in with your Google account, and tap "New Meeting." You get a meeting link to share via text, email, or any messaging app.
+
+To start from a computer: go to meet.google.com, sign in with your Google account, and click "New Meeting." You can also start a meeting directly from Gmail — look for the "Meet" section in the sidebar.
+
+To join a meeting: click the meeting link someone shared with you, or go to meet.google.com and enter the meeting code. On your phone, tapping the link automatically opens the Google Meet app.
+
+During a call, use the bottom toolbar to mute/unmute your microphone, turn your camera on/off, share your screen, access the chat, and leave the meeting. Tap the three dots for more options like changing your background or adjusting layout.
+
+Google Meet is a great option for families where some members use iPhone and others use Android — it works on every platform through a web browser.`,
+    steps: [
+      { title: 'Open Google Meet', content: 'On phone: download the Google Meet app. On computer: go to meet.google.com. Sign in with your Google account.' },
+      { title: 'Start a new meeting', content: 'Tap "New Meeting" and share the link with participants via text or email.' },
+      { title: 'Join a meeting', content: 'Click the meeting link shared with you, or go to meet.google.com and enter the meeting code.' },
+      { title: 'Use call controls', content: 'The bottom toolbar has mute, camera, screen share, chat, and leave buttons.' },
+      { title: 'Share with anyone', content: 'Google Meet works on any device with a web browser — great for mixed iPhone/Android families.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-microsoft-teams',
+    title: 'How to Set Up Microsoft Teams',
+    excerpt: 'Install and use Microsoft Teams for video calls, messaging, and file sharing with family, friends, or coworkers.',
+    category: 'communication' as any,
+    tags: ['Microsoft Teams', 'video call', 'Microsoft', 'communication', 'meetings'],
+    readTime: '6 min',
+    thumbnailEmoji: '👥',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Microsoft Teams is a communication app for video calls, messaging, and file sharing. While many people use it for work, the free personal version is also great for family and friends. It works on phones, tablets, and computers.
+
+Download Microsoft Teams from the App Store, Google Play Store, or teams.microsoft.com. Sign in with your Microsoft account (the same one you use for Outlook, Hotmail, or Xbox). If you do not have a Microsoft account, create one for free.
+
+For a video call: tap "Chat" → the new chat icon → type the person's name, email, or phone number → send them a message → then tap the video camera icon at the top to start a video call. Or tap "Calendar" → "Meet Now" to create an instant meeting link you can share.
+
+For group conversations: create a group chat by adding multiple people. Everyone in the group can message, share files, and start group video calls.
+
+Teams also lets you share files — tap the paperclip in a chat to send photos, documents, or other files. Shared files are stored in the chat history so anyone in the conversation can access them later.
+
+For scheduling calls: tap "Calendar" → "New Meeting" → set a date and time → add participants by email. They receive an invitation with a link to join.`,
+    steps: [
+      { title: 'Download Microsoft Teams', content: 'Get Teams from App Store, Google Play, or teams.microsoft.com. Sign in with your Microsoft account.' },
+      { title: 'Start a chat', content: 'Tap "Chat" → new chat icon → type a name, email, or phone number → send a message.' },
+      { title: 'Make a video call', content: 'From a chat, tap the video camera icon at the top. Or use "Meet Now" in Calendar for an instant meeting link.' },
+      { title: 'Create a group', content: 'Add multiple people to a chat for group messaging, file sharing, and group video calls.' },
+      { title: 'Schedule a meeting', content: 'Tap "Calendar" → "New Meeting" → set date/time → add participants. They receive an email invitation with a join link.' },
+    ],
+  },
+
+  {
+    slug: 'leave-group-chat-politely',
+    title: 'How to Leave a Group Chat Without Being Rude',
+    excerpt: 'Leave an overwhelming group chat on iPhone or Android gracefully — with tips for handling it politely.',
+    category: 'communication' as any,
+    tags: ['group chat', 'texting', 'etiquette', 'messaging', 'social'],
+    readTime: '4 min',
+    thumbnailEmoji: '👋',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Group chats are great for staying connected, but sometimes they get too active — dozens of notifications an hour, conversations you are not interested in, or a group that has outlived its purpose. Here is how to gracefully reduce the noise or leave.
+
+Option 1: Mute the conversation (recommended first step). This keeps you in the group but stops notifications. iPhone: open the group, tap the group name at the top → "Hide Alerts." Android: open the group → three dots → "Mute" or "Notifications Off." You can still read messages when you open the app, but your phone will not buzz.
+
+Option 2: Leave the group. On iPhone (iMessage groups with 3+ people): tap the group name → "Leave this Conversation." Note: this sends a notification to the group saying you left. On Android: this depends on the app. In Google Messages, you cannot leave a group SMS/MMS — you can only mute it. In apps like WhatsApp, tap the group name → "Exit Group."
+
+If you want to be polite about leaving: send a brief message first. Something like "Thanks for including me! I need to step away from this group for now, but I am always reachable by regular text. Talk soon!" Then leave. Most people understand — and most have wanted to leave a group chat themselves at some point.
+
+Option 3: If you do not want to leave entirely but the notifications are too much, ask the group to be less active. Or suggest moving to a platform with better notification controls, like a group in WhatsApp where you can read at your own pace.`,
+    steps: [
+      { title: 'Mute the group first', content: 'iPhone: tap group name → "Hide Alerts." Android: three dots → "Mute." This stops notifications without leaving.' },
+      { title: 'Consider if leaving is necessary', content: 'Muting may solve the problem. Only leave if you genuinely do not want to be in the group at all.' },
+      { title: 'Send a polite exit message', content: 'Say something brief like "Thanks for including me! I need to step away — reach me by regular text anytime."' },
+      { title: 'Leave the group', content: 'iPhone: tap group name → "Leave this Conversation." WhatsApp: group name → "Exit Group."' },
+      { title: 'Be reachable individually', content: 'After leaving, make sure close contacts know they can still reach you directly by phone or text.' },
+    ],
+  },
 ];

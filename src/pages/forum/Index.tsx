@@ -8,28 +8,35 @@ import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { MessageSquare, Users, Plus, Clock, ChevronRight } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { MessageSquare, Users, Plus, Clock, ChevronRight, Search, CheckCircle2, TrendingUp } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { formatDistanceToNow } from 'date-fns';
 
-export type ForumCategory = 'general' | 'wifi' | 'passwords' | 'devices' | 'software';
+export type ForumCategory = 'general' | 'wifi' | 'passwords' | 'devices' | 'software' | 'smart-home' | 'scams' | 'printing';
 
 export const CATEGORIES: { value: ForumCategory | 'all'; label: string; emoji: string; description: string }[] = [
-  { value: 'all',       label: 'All Topics',            emoji: '💬', description: 'Browse everything' },
-  { value: 'general',   label: 'General',               emoji: '🙋', description: 'Introductions & general chat' },
-  { value: 'wifi',      label: 'WiFi & Connectivity',   emoji: '📶', description: 'Internet and network help' },
-  { value: 'passwords', label: 'Passwords & Security',  emoji: '🔒', description: 'Stay safe online' },
-  { value: 'devices',   label: 'Devices',               emoji: '💻', description: 'Phones, tablets, computers' },
-  { value: 'software',  label: 'Apps & Software',       emoji: '📱', description: 'Apps, programs, updates' },
+  { value: 'all',        label: 'All Topics',            emoji: '💬', description: 'Browse everything' },
+  { value: 'general',    label: 'General',               emoji: '🙋', description: 'Introductions & general chat' },
+  { value: 'wifi',       label: 'WiFi & Internet',       emoji: '📶', description: 'Internet and network help' },
+  { value: 'passwords',  label: 'Passwords & Security',  emoji: '🔒', description: 'Stay safe online' },
+  { value: 'devices',    label: 'Phones & Computers',    emoji: '💻', description: 'Phones, tablets, computers' },
+  { value: 'software',   label: 'Apps & Software',       emoji: '📱', description: 'Apps, programs, updates' },
+  { value: 'smart-home', label: 'Smart Home',            emoji: '🏠', description: 'Alexa, smart TVs, cameras' },
+  { value: 'scams',      label: 'Scams & Safety',        emoji: '🛡️', description: 'Report and discuss scams' },
+  { value: 'printing',   label: 'Printers & Peripherals',emoji: '🖨️', description: 'Printers, scanners, accessories' },
 ];
 
 export const CATEGORY_COLORS: Record<ForumCategory, string> = {
-  general:   'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
-  wifi:      'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
-  passwords: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
-  devices:   'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
-  software:  'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
+  general:     'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  wifi:        'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  passwords:   'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
+  devices:     'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+  software:    'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
+  'smart-home':'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300',
+  scams:       'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  printing:    'bg-slate-100 text-slate-700 dark:bg-slate-800/30 dark:text-slate-300',
 };
 
 interface ForumThread {
@@ -52,6 +59,7 @@ export default function ForumIndex() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState<ForumCategory | 'all'>('all');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const { data: threads = [], isLoading, isError, refetch } = useQuery({
     queryKey: ['forum-threads', activeCategory],
@@ -109,6 +117,15 @@ export default function ForumIndex() {
               <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
                 Ask questions, share tips, and help each other out. No question is too simple!
               </p>
+              <div className="relative max-w-md mx-auto mb-6">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
+                <Input
+                  placeholder="Search discussions..."
+                  className="pl-11 h-12 bg-card border-border/60 rounded-2xl text-sm"
+                  value={searchQuery}
+                  onChange={e => setSearchQuery(e.target.value)}
+                />
+              </div>
               <Button size="lg" onClick={handleNewThread} className="rounded-xl gap-2">
                 <Plus className="h-5 w-5" />
                 Start a New Discussion
@@ -179,7 +196,7 @@ export default function ForumIndex() {
             <div
               className="space-y-3"
             >
-              {threads.map((thread, i) => (
+              {threads.filter(t => !searchQuery.trim() || t.title.toLowerCase().includes(searchQuery.toLowerCase()) || t.body.toLowerCase().includes(searchQuery.toLowerCase())).map((thread, i) => (
                 <div
                   key={thread.id}
                 >
