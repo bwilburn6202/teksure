@@ -51,22 +51,30 @@ export function Navbar() {
     { to: '/get-help', label: 'Get Help' },
   ];
 
-  const moreLinksLeft = [
-    { to: '/emergency-help', label: 'Emergency Help', icon: ShieldAlert },
-    { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench },
-    { to: '/tools/scam-simulator', label: 'Scam Simulator', icon: Shield },
-    { to: '/tools/privacy-audit', label: 'Privacy Audit', icon: Shield },
-    { to: '/forum', label: 'Community Forum', icon: Users },
-    { to: '/videos', label: 'Videos', icon: Video },
+  const safetyLinks = [
+    { to: '/emergency-help', label: 'Emergency Help', icon: ShieldAlert, desc: 'Urgent help now' },
+    { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench, desc: 'Common fixes fast' },
+    { to: '/tools/scam-simulator', label: 'Scam Simulator', icon: Shield, desc: 'Practice spotting scams' },
+    { to: '/tools/privacy-audit', label: 'Privacy Audit', icon: Shield, desc: 'Check your settings' },
+    { to: '/safety/scam-alerts', label: 'Scam Alerts', icon: ShieldAlert, desc: 'Latest scam warnings' },
   ];
 
-  const moreLinksRight = [
-    { to: '/glossary', label: 'Glossary', icon: BookOpen },
-    { to: '/weekly-tips', label: 'Weekly Tips', icon: Newspaper },
-    { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen },
-    { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight },
-    { to: '/about', label: 'About', icon: Users },
-    { to: '/explore', label: 'Explore All', icon: Map },
+  const learnLinks = [
+    { to: '/glossary', label: 'Glossary', icon: BookOpen, desc: 'Plain-English terms' },
+    { to: '/weekly-tips', label: 'Weekly Tips', icon: Newspaper, desc: 'One tip every Sunday' },
+    { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen, desc: 'Learn at your pace' },
+    { to: '/videos', label: 'Video Tutorials', icon: Video, desc: 'Watch & learn' },
+    { to: '/forum', label: 'Community', icon: Users, desc: 'Ask real people' },
+    { to: '/news', label: 'Tech News', icon: Newspaper, desc: 'Top tech stories' },
+  ];
+
+  const supportLinks = [
+    { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight, desc: 'Give the gift of help' },
+    { to: '/local-help', label: 'Find Local Help', icon: ArrowRight, desc: 'Near you' },
+    { to: '/about', label: 'About TekSure', icon: Users, desc: 'Our mission' },
+    { to: '/sources', label: 'Sources & Credits', icon: BookOpen, desc: 'Our references' },
+    { to: '/roadmap', label: 'Roadmap', icon: Map, desc: "What's coming" },
+    { to: '/explore', label: 'Explore All', icon: Map, desc: 'Everything we offer' },
   ];
 
   const authLinks = [
@@ -79,8 +87,9 @@ export function Navbar() {
 
   const allMobileLinks = [
     ...publicLinks,
-    ...moreLinksLeft.map(l => ({ to: l.to, label: l.label })),
-    ...moreLinksRight.map(l => ({ to: l.to, label: l.label })),
+    ...safetyLinks.map(l => ({ to: l.to, label: l.label })),
+    ...learnLinks.map(l => ({ to: l.to, label: l.label })),
+    ...supportLinks.map(l => ({ to: l.to, label: l.label })),
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -115,38 +124,78 @@ export function Navbar() {
               <Popover>
                 <PopoverTrigger asChild>
                   <button
-                    aria-label="More navigation links"
+                    aria-label="Resources and more navigation links"
                     className="flex items-center gap-1 px-3.5 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-full transition-all duration-200 hover:bg-muted/60"
                   >
-                    More
+                    Resources
                     <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
                   </button>
                 </PopoverTrigger>
-                <PopoverContent align="center" className="w-[420px] p-4">
-                  <div className="grid grid-cols-2 gap-1">
+                <PopoverContent align="center" className="w-[540px] p-5">
+                  <div className="grid grid-cols-3 gap-x-6 gap-y-1">
+                    {/* Safety */}
                     <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 px-3 pb-2">Resources</p>
-                      {moreLinksLeft.map((link) => (
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">🛡️ Safety</p>
+                      {safetyLinks.map((link) => (
                         <PreloadLink
                           key={link.to}
                           to={link.to}
-                          className="flex items-center gap-2.5 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/60 rounded-lg transition-colors"
+                          className="flex flex-col px-2 py-2 rounded-lg hover:bg-muted/60 transition-colors group"
                         >
-                          <link.icon className="h-4 w-4 text-primary/60" aria-hidden="true" />
-                          {link.label}
+                          <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{link.label}</span>
+                          <span className="text-xs text-muted-foreground">{link.desc}</span>
                         </PreloadLink>
                       ))}
                     </div>
+                    {/* Learn */}
                     <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 px-3 pb-2">More</p>
-                      {moreLinksRight.map((link) => (
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">📚 Learn</p>
+                      {learnLinks.map((link) => (
                         <PreloadLink
                           key={link.to}
                           to={link.to}
-                          className="flex items-center gap-2.5 px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/60 rounded-lg transition-colors"
+                          className="flex flex-col px-2 py-2 rounded-lg hover:bg-muted/60 transition-colors group"
                         >
-                          <link.icon className="h-4 w-4 text-primary/60" aria-hidden="true" />
-                          {link.label}
+                          <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{link.label}</span>
+                          <span className="text-xs text-muted-foreground">{link.desc}</span>
+                        </PreloadLink>
+                      ))}
+                    </div>
+                    {/* Support */}
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">🤝 Support</p>
+                      {supportLinks.map((link) => (
+                        <PreloadLink
+                          key={link.to}
+                          to={link.to}
+                          className="flex flex-col px-2 py-2 rounded-lg hover:bg-muted/60 transition-colors group"
+                        >
+                          <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{link.label}</span>
+                          <span className="text-xs text-muted-foreground">{link.desc}</span>
+                        </PreloadLink>
+                      ))}
+                    </div>
+                  </div>
+                  {/* Popular tools strip */}
+                  <div className="mt-4 pt-4 border-t border-border/60">
+                    <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2">Quick Tools</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {[
+                        { to: '/tools/scam-simulator', label: '🛡️ Scam Test' },
+                        { to: '/tools/password-strength', label: '🔑 Password Check' },
+                        { to: '/tools/wifi-troubleshooter', label: '📶 WiFi Fix' },
+                        { to: '/tools/cyber-scorecard', label: '🏆 Security Grade' },
+                        { to: '/tools/privacy-audit', label: '🔒 Privacy Audit' },
+                        { to: '/tools/streaming-calculator', label: '📺 Streaming Cost' },
+                        { to: '/ai-tutor', label: '🤖 AI Tutor' },
+                        { to: '/tools/guide-packs', label: '📦 Print Guides' },
+                      ].map(t => (
+                        <PreloadLink
+                          key={t.to}
+                          to={t.to}
+                          className="px-2.5 py-1 rounded-full bg-muted hover:bg-muted/80 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors border border-border/40"
+                        >
+                          {t.label}
                         </PreloadLink>
                       ))}
                     </div>
