@@ -9331,13 +9331,13 @@ const coreGuides: Guide[] = [
     { title: 'Connect with people you know', content: 'LinkedIn will suggest people from your email contacts. Send connection requests to people you know: former colleagues, friends, family. When sending a request, always include a short personal note: "Hi John, it has been a while! Would love to stay connected."' },
     { title: 'Use LinkedIn safely', content: 'Be cautious of unsolicited messages offering jobs or business deals — scams exist on LinkedIn too. Never share your Social Security number, bank details, or pay money to a "recruiter." Legitimate recruiters and companies will never ask for payment.' },
   ] },
-  { slug: 'social-media-for-grandparents', title: 'How to Use Social Media to Stay Connected with Grandkids', excerpt: 'See photos, share messages, and video call your grandchildren using the apps they already use.', category: 'social-media', tags: ['grandparents', 'family', 'social-media', 'connection', 'beginner'], readTime: '4 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'social-media-for-grandparents', title: 'How to Use Social Media to Stay Connected with Grandkids', excerpt: 'See photos, share messages, and video call your grandchildren using the apps they already use.', category: 'social-media', tags: ['grandparents', 'family', 'social-media', 'connection', 'beginner'], readTime: '4 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/UXivTFSYQ6Q', steps: [
     { title: 'Ask which apps they use', content: 'Different age groups use different apps. Teens and young adults are most active on Instagram, TikTok, and Snapchat. Adults tend to use Facebook and Instagram. The key is to be where they are — not the other way around. Ask your grandchild which app they prefer.' },
     { title: 'Share photos on Facebook or Instagram', content: 'Both Facebook and Instagram make it easy to share photos and see what family members post. Create an account on whichever your family uses. Follow or friend your grandchildren. Like and comment on their posts — they notice and appreciate it more than you think.' },
     { title: 'Use group messaging', content: 'Create a family group chat on iMessage (iPhone), WhatsApp, or Facebook Messenger. This is a great way to share daily updates, photos, and quick messages with the whole family at once. Ask a family member to help set up the group and add everyone.' },
     { title: 'Video call regularly', content: 'FaceTime (Apple), Google Meet, or WhatsApp Video are all free and easy. Schedule a regular "Sunday video call" or similar routine. Seeing faces and hearing voices is much more connecting than text messages. Even 10 minutes makes a difference.', tip: 'If your grandchildren are young, try playing simple games during video calls — hold up drawings, play "I Spy," or read a story together. It makes the call more engaging for kids.' },
   ] },
-  { slug: 'delete-social-media-account', title: 'How to Permanently Delete Your Social Media Accounts', excerpt: 'Ready to leave a social media platform? Here is how to fully delete your account on every major service.', category: 'social-media', tags: ['delete', 'privacy', 'facebook', 'instagram', 'twitter', 'beginner'], readTime: '5 min', thumbnailEmoji: '🗑️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'delete-social-media-account', title: 'How to Permanently Delete Your Social Media Accounts', excerpt: 'Ready to leave a social media platform? Here is how to fully delete your account on every major service.', category: 'social-media', tags: ['delete', 'privacy', 'facebook', 'instagram', 'twitter', 'beginner'], readTime: '5 min', thumbnailEmoji: '🗑️', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/qZC8TUl2czw', steps: [
     { title: 'Download your data first', content: 'Before deleting, download a copy of everything you have posted. Facebook: Settings > Your Facebook Information > Download Your Information. Instagram: Settings > Accounts Center > Your information and permissions > Download your information. This gives you a backup of photos, posts, and messages.' },
     { title: 'Delete Facebook', content: 'Go to Settings > Accounts Center > Personal Details > Account Ownership and Control > Deactivation or Deletion > Delete Account. Facebook gives you 30 days to change your mind. After 30 days, the deletion is permanent and cannot be undone.', warning: 'Deactivating is different from deleting. Deactivating hides your profile but keeps your data. Deleting permanently removes everything after 30 days.' },
     { title: 'Delete Instagram', content: 'Go to Settings > Accounts Center > Personal Details > Account Ownership and Control > Deactivation or Deletion > Delete Account. Like Facebook, you have 30 days to change your mind.' },
@@ -9349,14 +9349,14 @@ const coreGuides: Guide[] = [
   // BATCH 4: TIPS & TRICKS (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
-  { slug: 'keyboard-shortcuts-everyone', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and will make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'windows', 'mac', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'keyboard-shortcuts-everyone', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and will make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'windows', 'mac', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/d_rH4uAm9MY', steps: [
     { title: 'Copy, Cut, and Paste', content: 'Ctrl+C (Windows) or Cmd+C (Mac) copies selected text or files. Ctrl+X / Cmd+X cuts (moves) them. Ctrl+V / Cmd+V pastes. These three shortcuts alone save more time than any others. They work everywhere: documents, emails, web browsers, file managers.' },
     { title: 'Undo and Redo', content: 'Ctrl+Z / Cmd+Z undoes your last action — like a magic "go back" button. Made a typo? Ctrl+Z. Accidentally deleted text? Ctrl+Z. Want to redo what you just undid? Ctrl+Y (Windows) or Cmd+Shift+Z (Mac).' },
     { title: 'Select All', content: 'Ctrl+A / Cmd+A selects everything — all text in a document, all files in a folder, all items on a page. Great for when you need to copy an entire document or select all photos in a folder.' },
     { title: 'Find text on any page', content: 'Ctrl+F / Cmd+F opens a search box on any web page, document, or email. Type a word and it highlights every instance on the page. Essential for finding information in long documents or web pages.' },
     { title: 'Save, Print, and close tabs', content: 'Ctrl+S / Cmd+S saves your document. Ctrl+P / Cmd+P opens the print dialog. Ctrl+W / Cmd+W closes the current browser tab or document. Ctrl+T / Cmd+T opens a new browser tab. Ctrl+Tab switches between open tabs.', tip: 'Start with just Copy (Ctrl+C), Paste (Ctrl+V), and Undo (Ctrl+Z). Once these become second nature, add more shortcuts gradually.' },
   ] },
-  { slug: 'dark-mode-guide', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great. Here is how to turn it on everywhere.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'dark-mode-guide', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great. Here is how to turn it on everywhere.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/O3KhewH9V_Q', steps: [
     { title: 'Dark mode on iPhone', content: 'Go to Settings > Display & Brightness. Tap "Dark." You can also set it to switch automatically at sunset: toggle on "Automatic" and choose "Sunset to Sunrise."' },
     { title: 'Dark mode on Android', content: 'Go to Settings > Display. Tap "Dark theme" or "Dark mode" to turn it on. Some Android phones also have a "Schedule" option to switch automatically at night.' },
     { title: 'Dark mode on Windows', content: 'Go to Settings > Personalization > Colors. Under "Choose your mode" select "Dark." This changes the system apps and menus to a dark background. Individual apps like Chrome and Edge have their own dark mode settings too.' },
@@ -9381,13 +9381,13 @@ const coreGuides: Guide[] = [
   // BATCH 5: ESSENTIAL SKILLS + ACCESSIBILITY (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
 
-  { slug: 'understand-wifi-vs-data', title: 'WiFi vs Cellular Data: What Is the Difference?', excerpt: 'Two ways your phone connects to the internet — here is when to use each one.', category: 'essential-skills', tags: ['wifi', 'cellular', 'data', 'internet', 'beginner'], readTime: '3 min', thumbnailEmoji: '📶', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+  { slug: 'understand-wifi-vs-data', title: 'WiFi vs Cellular Data: What Is the Difference?', excerpt: 'Two ways your phone connects to the internet — here is when to use each one.', category: 'essential-skills', tags: ['wifi', 'cellular', 'data', 'internet', 'beginner'], readTime: '3 min', thumbnailEmoji: '📶', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/9p3he-A3RbU', steps: [
     { title: 'What is WiFi', content: 'WiFi is a wireless internet connection from a router in your home, office, or public place. It has a limited range — about 100-150 feet. WiFi is typically faster and does not count against your phone plan data limit.' },
     { title: 'What is cellular data', content: 'Cellular data (4G/5G) connects your phone through cell towers. It works almost anywhere you have phone signal. Cellular data counts against your monthly data plan unless you have unlimited data.' },
     { title: 'When to use each', content: 'Use WiFi at home, work, or places with free WiFi. Use cellular data when on the go. Download large files and stream video on WiFi to avoid data charges.' },
     { title: 'How to check which you are using', content: 'Look at the top of your phone. A WiFi icon (curved lines) means WiFi. "4G," "5G," or "LTE" means cellular data. Your phone switches automatically when WiFi is unavailable.' },
   ] },
-  { slug: 'what-is-bluetooth', title: 'Bluetooth Explained: What It Is and How to Use It', excerpt: 'Bluetooth connects your phone to headphones, speakers, cars, and more — wirelessly.', category: 'essential-skills', tags: ['bluetooth', 'wireless', 'connections', 'beginner'], readTime: '4 min', thumbnailEmoji: '🔵', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+  { slug: 'what-is-bluetooth', title: 'Bluetooth Explained: What It Is and How to Use It', excerpt: 'Bluetooth connects your phone to headphones, speakers, cars, and more — wirelessly.', category: 'essential-skills', tags: ['bluetooth', 'wireless', 'connections', 'beginner'], readTime: '4 min', thumbnailEmoji: '🔵', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/cxP0Mdoz_Bo', steps: [
     { title: 'What Bluetooth does', content: 'Bluetooth lets devices communicate wirelessly over short distances (up to 30 feet). It connects your phone to headphones, car audio, speakers, fitness trackers, and keyboards.' },
     { title: 'Turn Bluetooth on', content: 'iPhone: Settings > Bluetooth > toggle on. Android: Settings > Connected Devices > Bluetooth > toggle on.' },
     { title: 'Pair a device', content: 'Put your Bluetooth device into pairing mode (usually hold a button for a few seconds). On your phone, go to Bluetooth settings and tap the device name when it appears. You only pair once — devices reconnect automatically after that.' },
@@ -9425,19 +9425,19 @@ const coreGuides: Guide[] = [
     { title: 'VoiceOver', content: 'Press Command + F5 to toggle VoiceOver. It reads screen content aloud and supports full keyboard navigation.' },
     { title: 'Dictation', content: 'Press Fn key twice to start dictating. Speak naturally, say punctuation out loud.' },
   ] },
-  { slug: 'keyboard-shortcuts-everyone-v2', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'keyboard-shortcuts-everyone-v2', title: '10 Keyboard Shortcuts That Save Hours Every Week', excerpt: 'These simple key combinations work on every computer and make you noticeably faster.', category: 'tips-tricks', tags: ['keyboard', 'shortcuts', 'productivity', 'beginner'], readTime: '4 min', thumbnailEmoji: '⌨️', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/d_rH4uAm9MY', steps: [
     { title: 'Copy, Cut, Paste', content: 'Ctrl+C / Cmd+C copies. Ctrl+X / Cmd+X cuts. Ctrl+V / Cmd+V pastes. Works everywhere.' },
     { title: 'Undo and Redo', content: 'Ctrl+Z / Cmd+Z undoes your last action. Ctrl+Y / Cmd+Shift+Z redoes it.' },
     { title: 'Select All and Find', content: 'Ctrl+A / Cmd+A selects everything. Ctrl+F / Cmd+F opens search on any page.' },
     { title: 'Save, Print, Tabs', content: 'Ctrl+S saves. Ctrl+P prints. Ctrl+W closes a tab. Ctrl+T opens a new tab. Ctrl+Tab switches between tabs.' },
   ] },
-  { slug: 'dark-mode-guide-v2', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', steps: [
+  { slug: 'dark-mode-guide-v2', title: 'How to Enable Dark Mode on Any Device', excerpt: 'Dark mode reduces eye strain, saves battery, and looks great.', category: 'tips-tricks', tags: ['dark-mode', 'eye-strain', 'settings', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-08', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/O3KhewH9V_Q', steps: [
     { title: 'iPhone', content: 'Settings > Display & Brightness > tap Dark. Set to Automatic for sunset switching.' },
     { title: 'Android', content: 'Settings > Display > Dark theme toggle on.' },
     { title: 'Windows', content: 'Settings > Personalization > Colors > choose Dark.' },
     { title: 'Mac', content: 'System Settings > Appearance > choose Dark or Auto.' },
   ] },
-  { slug: 'speed-up-slow-computer-v2', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', steps: [
+  { slug: 'speed-up-slow-computer-v2', title: '7 Ways to Make a Slow Computer Faster', excerpt: 'Your computer does not need replacing — these fixes often make it feel new.', category: 'tips-tricks', tags: ['performance', 'speed', 'windows', 'mac', 'beginner'], readTime: '5 min', thumbnailEmoji: '🚀', publishedAt: '2026-04-09', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/mwfVqqSTI88', steps: [
     { title: 'Restart your computer', content: 'A proper restart clears temporary files and resets stuck programs. Use Start > Power > Restart.' },
     { title: 'Close unused programs', content: 'Every open program uses memory. Close what you are not using. Press Ctrl+Shift+Esc for Task Manager.' },
     { title: 'Disable startup programs', content: 'Many programs start automatically. Windows: Ctrl+Shift+Esc > Startup Apps tab > disable what you do not need. Mac: System Settings > General > Login Items.' },
@@ -9446,19 +9446,19 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 6: Phone Guides (15 new) =====
-  { slug: 'iphone-battery-tips', title: 'How to Make Your iPhone Battery Last All Day', excerpt: 'Simple settings changes that dramatically extend battery life.', category: 'phone-guides', tags: ['iphone', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'iphone-battery-tips', title: 'How to Make Your iPhone Battery Last All Day', excerpt: 'Simple settings changes that dramatically extend battery life.', category: 'phone-guides', tags: ['iphone', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/a3VG6CEkqo8', steps: [
     { title: 'Check battery usage', content: 'Go to Settings > Battery. See which apps use the most power.' },
     { title: 'Turn on Low Power Mode', content: 'Settings > Battery > Low Power Mode. Reduces background activity significantly.' },
     { title: 'Reduce brightness', content: 'Swipe down from top-right for Control Center. Drag brightness to 40-50%.' },
     { title: 'Disable unnecessary Location Services', content: 'Settings > Privacy > Location Services. Set apps to "While Using" instead of "Always."' },
   ] },
-  { slug: 'android-battery-tips', title: 'How to Extend Your Android Battery Life', excerpt: 'Get more hours from your Android phone with these tips.', category: 'phone-guides', tags: ['android', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'android-battery-tips', title: 'How to Extend Your Android Battery Life', excerpt: 'Get more hours from your Android phone with these tips.', category: 'phone-guides', tags: ['android', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/n1-9LS0ICC8', steps: [
     { title: 'Turn on Battery Saver', content: 'Settings > Battery > Battery Saver. Limits background activity.' },
     { title: 'Reduce brightness', content: 'Swipe down for Quick Settings. Lower the brightness slider.' },
     { title: 'Turn off unused connections', content: 'Turn off Bluetooth, Wi-Fi, or Data when not using them.' },
     { title: 'Use Dark Mode', content: 'Settings > Display > Dark Theme. On OLED screens, this saves significant battery.' },
   ] },
-  { slug: 'iphone-organize-home-screen', title: 'How to Organize Your iPhone Home Screen', excerpt: 'Clean up your home screen so you find apps quickly.', category: 'phone-guides', tags: ['iphone', 'organization', 'apps'], readTime: '5 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'iphone-organize-home-screen', title: 'How to Organize Your iPhone Home Screen', excerpt: 'Clean up your home screen so you find apps quickly.', category: 'phone-guides', tags: ['iphone', 'organization', 'apps'], readTime: '5 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/VlxKnUOMBRU', steps: [
     { title: 'Enter edit mode', content: 'Long-press on any empty space until apps jiggle.' },
     { title: 'Create a folder', content: 'Drag one app on top of another. Rename the folder ("Social", "Games").' },
     { title: 'Use App Library', content: 'Swipe right past your last page. App Library organizes all apps automatically.' },
@@ -9485,7 +9485,7 @@ const coreGuides: Guide[] = [
     { title: 'iPhone (Home button)', content: 'Press Home + Side button simultaneously.' },
     { title: 'Android', content: 'Press Power + Volume Down for one second.' },
   ] },
-  { slug: 'phone-google-maps', title: 'How to Use Google Maps', excerpt: 'Get directions and find businesses anywhere.', category: 'phone-guides', tags: ['phone', 'google-maps', 'navigation'], readTime: '6 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'phone-google-maps', title: 'How to Use Google Maps', excerpt: 'Get directions and find businesses anywhere.', category: 'phone-guides', tags: ['phone', 'google-maps', 'navigation'], readTime: '6 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tui9hq9lfsU', steps: [
     { title: 'Search for a place', content: 'Tap the search bar. Type an address, business name, or "pharmacy near me."' },
     { title: 'Get directions', content: 'Tap Directions. Choose driving, walking, or transit. Tap Start for voice navigation.' },
     { title: 'Save favorites', content: 'Search for a place > tap Save > add to "Favorites" for quick access.' },
@@ -9500,7 +9500,7 @@ const coreGuides: Guide[] = [
     { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
     { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
   ] },
-  { slug: 'iphone-airdrop', title: 'How to Use AirDrop on iPhone', excerpt: 'Share photos and files instantly with nearby Apple devices.', category: 'phone-guides', tags: ['iphone', 'airdrop', 'sharing'], readTime: '4 min', thumbnailEmoji: '📤', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'iphone-airdrop', title: 'How to Use AirDrop on iPhone', excerpt: 'Share photos and files instantly with nearby Apple devices.', category: 'phone-guides', tags: ['iphone', 'airdrop', 'sharing'], readTime: '4 min', thumbnailEmoji: '📤', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/SGGj_UxMM1s', steps: [
     { title: 'Enable AirDrop', content: 'Control Center > long-press Wi-Fi area > AirDrop > Contacts Only.' },
     { title: 'Share a photo', content: 'Photos app > select photo > Share > tap person\'s AirDrop icon.' },
     { title: 'Security', content: 'Use "Contacts Only" — not "Everyone" — to prevent unwanted content from strangers.' },
@@ -9528,7 +9528,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 7: Social Media (12 new) =====
-  { slug: 'facebook-create-account', title: 'How to Create a Facebook Account', excerpt: 'Join Facebook to connect with family and friends.', category: 'social-media', tags: ['facebook', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '👤', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'facebook-create-account', title: 'How to Create a Facebook Account', excerpt: 'Join Facebook to connect with family and friends.', category: 'social-media', tags: ['facebook', 'account', 'setup'], readTime: '5 min', thumbnailEmoji: '👤', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/EYgKPSC32Po', steps: [
     { title: 'Go to Facebook', content: 'Go to facebook.com or download the Facebook app.' },
     { title: 'Create account', content: 'Click "Create New Account." Enter name, email, birthday. Create a password.' },
     { title: 'Verify', content: 'Enter the code sent to your email or phone.' },
@@ -9595,22 +9595,22 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 8: How-To (15 new) =====
-  { slug: 'how-to-scan-document-phone', title: 'How to Scan Documents with Your Phone', excerpt: 'Turn your phone into a scanner.', category: 'how-to', tags: ['scanning', 'documents', 'phone'], readTime: '4 min', thumbnailEmoji: '📄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-scan-document-phone', title: 'How to Scan Documents with Your Phone', excerpt: 'Turn your phone into a scanner.', category: 'how-to', tags: ['scanning', 'documents', 'phone'], readTime: '4 min', thumbnailEmoji: '📄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/aRmek2wfckw', steps: [
     { title: 'iPhone', content: 'Notes app > camera icon > Scan Documents.' },
     { title: 'Android', content: 'Google Drive > + > Scan.' },
     { title: 'Tips', content: 'Lay flat on dark surface, good lighting, hold phone above. Save as PDF.' },
   ] },
-  { slug: 'how-to-print-from-phone', title: 'How to Print from Your Phone', excerpt: 'Print photos and documents wirelessly.', category: 'how-to', tags: ['printing', 'phone'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-print-from-phone', title: 'How to Print from Your Phone', excerpt: 'Print photos and documents wirelessly.', category: 'how-to', tags: ['printing', 'phone'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/WFVYs_57WWs', steps: [
     { title: 'Connect to same Wi-Fi', content: 'Printer and phone must be on the same network.' },
     { title: 'iPhone (AirPrint)', content: 'Share > Print > select printer.' },
     { title: 'Android', content: 'Menu > Print > select printer.' },
   ] },
-  { slug: 'how-to-use-qr-codes-v2', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-qr-codes-v2', title: 'How to Scan QR Codes', excerpt: 'Those square barcodes are everywhere.', category: 'how-to', tags: ['qr-codes', 'phone'], readTime: '4 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/LMirtqYbpsc', steps: [
     { title: 'iPhone', content: 'Open Camera, point at QR code, tap the notification.' },
     { title: 'Android', content: 'Open Camera, point at QR code. Or use Google Lens.' },
     { title: 'Stay safe', content: 'Only scan QR codes from trusted sources.' },
   ] },
-  { slug: 'how-to-copy-paste', title: 'How to Copy and Paste', excerpt: 'An essential time-saving skill for any device.', category: 'how-to', tags: ['copy-paste', 'basics'], readTime: '4 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-copy-paste', title: 'How to Copy and Paste', excerpt: 'An essential time-saving skill for any device.', category: 'how-to', tags: ['copy-paste', 'basics'], readTime: '4 min', thumbnailEmoji: '📋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/6fJyG1nfXjE', steps: [
     { title: 'Phone', content: 'Long-press word > drag handles > tap Copy. Long-press where to paste > Paste.' },
     { title: 'Windows', content: 'Select text > Ctrl+C to copy > Ctrl+V to paste.' },
     { title: 'Mac', content: 'Select text > Command+C to copy > Command+V to paste.' },
@@ -9620,12 +9620,12 @@ const coreGuides: Guide[] = [
     { title: 'Upload', content: 'Click + New > File Upload. Or tap + on mobile.' },
     { title: 'Share', content: 'Right-click file > Share > enter email > choose permission.' },
   ] },
-  { slug: 'how-to-use-apple-pay', title: 'How to Use Apple Pay', excerpt: 'Pay with your iPhone at stores and online.', category: 'how-to', tags: ['apple-pay', 'payment'], readTime: '5 min', thumbnailEmoji: '💳', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-apple-pay', title: 'How to Use Apple Pay', excerpt: 'Pay with your iPhone at stores and online.', category: 'how-to', tags: ['apple-pay', 'payment'], readTime: '5 min', thumbnailEmoji: '💳', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/xlZEQbd-2Dw', steps: [
     { title: 'Add a card', content: 'Wallet app > + button > scan card or enter manually.' },
     { title: 'Verify', content: 'Bank verifies via text, email, or call.' },
     { title: 'Pay in stores', content: 'Double-click side button > Face ID > hold near terminal.' },
   ] },
-  { slug: 'how-to-use-uber-lyft-v2', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-uber-lyft-v2', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jWW0-ub8d90', steps: [
     { title: 'Download', content: 'Get Uber or Lyft. Create account with phone and payment method.' },
     { title: 'Request', content: 'Enter destination. Choose ride type. Tap Request.' },
     { title: 'Safety', content: 'Check driver photo, car, and plate. Share trip status with family.' },
@@ -9635,7 +9635,7 @@ const coreGuides: Guide[] = [
     { title: 'Download app', content: 'Get Alexa app. Sign in with Amazon account. Follow Wi-Fi setup.' },
     { title: 'Try commands', content: '"Alexa, what\'s the weather?" "Set a timer for 20 minutes." "Remind me at 3 PM."' },
   ] },
-  { slug: 'how-to-use-siri', title: 'How to Use Siri', excerpt: 'Your iPhone voice assistant.', category: 'how-to', tags: ['siri', 'iphone', 'voice'], readTime: '5 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-use-siri', title: 'How to Use Siri', excerpt: 'Your iPhone voice assistant.', category: 'how-to', tags: ['siri', 'iphone', 'voice'], readTime: '5 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7ZQcMOeu860', steps: [
     { title: 'Activate', content: 'Say "Hey Siri" or hold the side button.' },
     { title: 'Ask', content: '"What\'s the weather?" "Set alarm for 7 AM." "Call Mom."' },
     { title: 'Control phone', content: '"Turn on flashlight." "Play jazz music." "Set timer 15 minutes."' },
@@ -9784,7 +9784,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 10: Essential Skills (8 new) =====
-  { slug: 'understanding-cloud-storage-v2', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'understanding-cloud-storage-v2', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What is it', content: 'Secure servers on the internet. Your files are stored safely online and accessible anywhere.' },
     { title: 'Services', content: 'iCloud (5 GB free), Google Drive (15 GB free), OneDrive (5 GB free).' },
     { title: 'Is it safe', content: 'Major services use strong encryption. Safer than a single device that can be lost or damaged.' },
@@ -9794,7 +9794,7 @@ const coreGuides: Guide[] = [
     { title: 'Red flags', content: 'Urgent language, spelling errors, generic greetings, suspicious sender addresses.' },
     { title: 'What to do', content: 'Never click suspicious links. Go directly to the real website. Change passwords if you clicked.' },
   ] },
-  { slug: 'understanding-two-factor-auth', title: 'What Is Two-Factor Authentication', excerpt: 'An extra lock hackers cannot bypass.', category: 'essential-skills', tags: ['2fa', 'security'], readTime: '5 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'understanding-two-factor-auth', title: 'What Is Two-Factor Authentication', excerpt: 'An extra lock hackers cannot bypass.', category: 'essential-skills', tags: ['2fa', 'security'], readTime: '5 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0mvCeNsTa1g', steps: [
     { title: 'How it works', content: 'Password + code sent to your phone. Even if someone has your password, they need your phone too.' },
     { title: 'Enable it', content: 'Gmail: myaccount.google.com > Security > 2-Step Verification. Facebook: Settings > Security > 2FA.' },
   ] },
@@ -9876,27 +9876,27 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 12: App Guides (10 new) =====
-  { slug: 'netflix-getting-started', title: 'Getting Started with Netflix', excerpt: 'Set up Netflix and start watching.', category: 'app-guides', tags: ['netflix', 'streaming'], readTime: '5 min', thumbnailEmoji: '🎬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'netflix-getting-started', title: 'Getting Started with Netflix', excerpt: 'Set up Netflix and start watching.', category: 'app-guides', tags: ['netflix', 'streaming'], readTime: '5 min', thumbnailEmoji: '🎬', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/nvNfzsTbNMc', steps: [
     { title: 'Sign up', content: 'netflix.com > choose plan (from $6.99/mo) > enter email and password.' },
     { title: 'Browse', content: 'Search by name, actor, or genre. Create separate profiles for each person.' },
     { title: 'Download', content: 'Tap download icon on shows for offline viewing.' },
   ] },
-  { slug: 'google-photos-basics', title: 'Using Google Photos', excerpt: 'Keep photos safe and organized.', category: 'app-guides', tags: ['google-photos', 'cloud'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'google-photos-basics', title: 'Using Google Photos', excerpt: 'Keep photos safe and organized.', category: 'app-guides', tags: ['google-photos', 'cloud'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7Ew5Oej19tU', steps: [
     { title: 'Backup', content: 'Profile > Settings > Backup > turn on. Photos auto-save to cloud.' },
     { title: 'Search', content: 'Type "beach" or "birthday" — AI finds matching photos.' },
     { title: 'Free space', content: 'Profile > Free Up Space deletes phone copies already backed up.' },
   ] },
-  { slug: 'spotify-music', title: 'Listen to Music on Spotify', excerpt: 'Stream millions of songs free or premium.', category: 'app-guides', tags: ['spotify', 'music'], readTime: '5 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'spotify-music', title: 'Listen to Music on Spotify', excerpt: 'Stream millions of songs free or premium.', category: 'app-guides', tags: ['spotify', 'music'], readTime: '5 min', thumbnailEmoji: '🎵', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/ijxzROsS1Pg', steps: [
     { title: 'Sign up', content: 'Download Spotify. Create free account.' },
     { title: 'Search', content: 'Search songs, artists, or genres. Tap to play.' },
     { title: 'Discover', content: 'Spotify creates "Discover Weekly" personalized playlists.' },
   ] },
-  { slug: 'amazon-shopping', title: 'Shopping on Amazon', excerpt: 'Find, compare, and order products.', category: 'app-guides', tags: ['amazon', 'shopping'], readTime: '5 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'amazon-shopping', title: 'Shopping on Amazon', excerpt: 'Find, compare, and order products.', category: 'app-guides', tags: ['amazon', 'shopping'], readTime: '5 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/37P87hQDxpk', steps: [
     { title: 'Search', content: 'Type what you need. Read 3-4 star "Verified Purchase" reviews.' },
     { title: 'Order', content: 'Add to Cart > Proceed to Checkout > confirm address.' },
     { title: 'Track', content: 'Your Orders shows status and tracking info.' },
   ] },
-  { slug: 'venmo-send-money', title: 'Send Money with Venmo', excerpt: 'Split bills and pay friends easily.', category: 'app-guides', tags: ['venmo', 'payments'], readTime: '5 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'venmo-send-money', title: 'Send Money with Venmo', excerpt: 'Split bills and pay friends easily.', category: 'app-guides', tags: ['venmo', 'payments'], readTime: '5 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/YhXkJYPLhC4', steps: [
     { title: 'Setup', content: 'Download Venmo. Link bank or debit card.' },
     { title: 'Pay', content: 'Tap Pay > search person > enter amount > Pay.' },
     { title: 'Privacy', content: 'Settings > Privacy > set to Private.' },
@@ -9994,7 +9994,7 @@ const coreGuides: Guide[] = [
     { title: 'Read Mode', content: 'Click View > Read Mode for distraction-free reading. Navigate with page arrows or swipe on a touchscreen. Great for reviewing long documents.' },
   ] },
   // Source: CFPB — Fraud Protection (scraped)
-  { slug: 'protect-yourself-from-fraud', title: 'How to Protect Yourself from Financial Fraud and Scams', excerpt: 'Essential steps to protect your money and identity from common scams.', category: 'safety-guides', tags: ['fraud', 'scams', 'identity-theft', 'finance'], readTime: '7 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'protect-yourself-from-fraud', title: 'How to Protect Yourself from Financial Fraud and Scams', excerpt: 'Essential steps to protect your money and identity from common scams.', category: 'safety-guides', tags: ['fraud', 'scams', 'identity-theft', 'finance'], readTime: '7 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CDhAOvsyw2s', steps: [
     { title: 'Know common scam types', content: 'Identity theft (someone steals your info), imposter scams (pretending to be your bank or the IRS), phishing (fake emails/texts), and wire transfer fraud. Being aware is your first defense.' },
     { title: 'Watch for warning signs', content: 'Pressure to act immediately, requests for payment via gift cards or wire transfer, unsolicited contact asking for personal info, and deals that seem too good to be true.' },
     { title: 'Protect your credit', content: 'You can place a free fraud alert or security freeze on your credit reports at the three bureaus (Equifax, Experian, TransUnion). This prevents criminals from opening accounts in your name.' },
@@ -10003,7 +10003,7 @@ const coreGuides: Guide[] = [
     { title: 'If you are a victim', content: 'Contact your bank immediately about unauthorized transactions. Report the scam at reportfraud.ftc.gov. Document everything. If your Social Security number was stolen, visit identitytheft.gov.' },
   ] },
   // Source: Apple iCloud Advanced Data Protection (scraped)
-  { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+  { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What it does', content: 'Advanced Data Protection encrypts the majority of your iCloud data — Backups, Photos, Notes, and more — with end-to-end encryption. Not even Apple can access your data.' },
     { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia 15). You must set up at least one recovery method first.' },
     { title: 'Set up recovery', content: 'Before enabling, set up either a Recovery Contact (trusted person who can help you regain access) or a Recovery Key (a 28-character code you store securely). This is essential — if you lose access, Apple cannot help.' },
@@ -10035,7 +10035,7 @@ const coreGuides: Guide[] = [
     { title: 'When you need encryption', content: 'When sending sensitive information: Social Security numbers, financial data, medical information, legal documents, or private business communications.' },
     { title: 'Practical alternatives', content: 'For sharing sensitive documents, consider password-protected PDFs, secure file sharing (Google Drive with restricted access), or encrypted messaging apps like Signal.' },
   ] },
-  { slug: 'vpn-explained', title: 'What Is a VPN and Should You Use One', excerpt: 'A plain-language guide to VPNs — what they do, when to use one, and how to get started.', category: 'safety-guides', tags: ['vpn', 'privacy', 'security', 'internet'], readTime: '6 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'vpn-explained', title: 'What Is a VPN and Should You Use One', excerpt: 'A plain-language guide to VPNs — what they do, when to use one, and how to get started.', category: 'safety-guides', tags: ['vpn', 'privacy', 'security', 'internet'], readTime: '6 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/_wQTRMBAvzg', steps: [
     { title: 'What a VPN does', content: 'A VPN (Virtual Private Network) creates a secure, encrypted tunnel for your internet traffic. It hides your browsing activity from your internet provider and protects you on public Wi-Fi.' },
     { title: 'When to use a VPN', content: 'On public Wi-Fi (coffee shops, hotels, airports) — this is the most important use case. Also useful for privacy from your internet provider, and when traveling internationally.' },
     { title: 'When you don\'t need one', content: 'At home on your private Wi-Fi, you generally don\'t need a VPN for everyday browsing. Most websites already use HTTPS encryption for your data.' },
@@ -10068,7 +10068,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 16: Advanced Level Guides =====
-  { slug: 'password-manager-setup', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords — a password manager remembers them all for you securely.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager'], readTime: '8 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'password-manager-setup', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords — a password manager remembers them all for you securely.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager'], readTime: '8 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/wcDtLMraTkQ', steps: [
     { title: 'Why use a password manager', content: 'The average person has 100+ online accounts. Reusing passwords is dangerous — if one site gets hacked, criminals try that password everywhere. A password manager creates and stores unique passwords for every account.' },
     { title: 'Choose a password manager', content: 'Built-in options: Apple Keychain (iPhone/Mac), Google Password Manager (Chrome/Android). Dedicated apps: 1Password ($3/mo), Bitwarden (free), Dashlane, or LastPass.' },
     { title: 'Create your master password', content: 'This is the ONE password you need to remember. Make it strong: "Correct-Horse-Battery-Staple" style passphrases work well. Write it down and store it in a safe place.' },
@@ -10122,7 +10122,7 @@ const coreGuides: Guide[] = [
     { title: 'Facebook memorialization', content: 'In Facebook Settings > Memorialization Settings, choose a Legacy Contact who can manage your profile after you pass. They can pin a tribute post and respond to friend requests.' },
     { title: 'Tell someone your plan', content: 'Let a trusted family member know your plan exists and where to find your digital inventory. Consider including digital account info in your will or giving it to your estate attorney.' },
   ] },
-  { slug: 'telehealth-appointments', title: 'How to Do a Telehealth Video Appointment', excerpt: 'See your doctor through a video call from the comfort of home.', category: 'health-tech', tags: ['telehealth', 'doctor', 'video-call', 'healthcare'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'telehealth-appointments', title: 'How to Do a Telehealth Video Appointment', excerpt: 'See your doctor through a video call from the comfort of home.', category: 'health-tech', tags: ['telehealth', 'doctor', 'video-call', 'healthcare'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Ed40jgObFA4', steps: [
     { title: 'What is telehealth', content: 'A telehealth appointment is a video call with your doctor. You see and talk to them on your phone, tablet, or computer. It is real medical care — they can diagnose, prescribe medicine, and refer you to specialists.' },
     { title: 'Schedule your appointment', content: 'Call your doctor\'s office and ask for a telehealth visit. Or use your patient portal (MyChart, patient website) to book online. They will send you a link or instructions.' },
     { title: 'Prepare your technology', content: 'Test your camera and microphone before the appointment. Make sure you have a stable internet connection (Wi-Fi is best). Charge your device. Find a quiet, well-lit room.' },
@@ -10330,7 +10330,7 @@ const coreGuides: Guide[] = [
     { title: 'Check privacy settings regularly', content: 'Review Facebook, Google, and Apple privacy settings every few months. Companies change defaults, and you may be sharing more than you realize.' },
     { title: 'Be careful on public Wi-Fi', content: 'Don\'t access banking or enter passwords on public Wi-Fi (coffee shops, airports). If you must, use a VPN. Public networks can be monitored by others.' },
   ] },
-  { slug: 'cloud-gaming-explained', title: 'Cloud Gaming: Play Video Games Without a Console', excerpt: 'Stream games directly to your TV, phone, or laptop without buying expensive hardware.', category: 'how-to', tags: ['gaming', 'cloud', 'streaming', 'entertainment', 'technology'], readTime: '7 min', thumbnailEmoji: '🎮', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'cloud-gaming-explained', title: 'Cloud Gaming: Play Video Games Without a Console', excerpt: 'Stream games directly to your TV, phone, or laptop without buying expensive hardware.', category: 'how-to', tags: ['gaming', 'cloud', 'streaming', 'entertainment', 'technology'], readTime: '7 min', thumbnailEmoji: '🎮', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What is cloud gaming?', content: 'Cloud gaming runs games on powerful remote servers and streams the video to your device — like Netflix for video games. You don\'t need an expensive gaming PC or console.' },
     { title: 'Popular services', content: 'Xbox Cloud Gaming (included with Game Pass Ultimate, $19.99/month). NVIDIA GeForce NOW (free tier available, paid starts at $9.99/month). Amazon Luna ($9.99/month). Each offers hundreds of games.' },
     { title: 'What you need', content: 'A strong internet connection (at least 15 Mbps, 35+ Mbps recommended). A controller (Xbox controller works best). A compatible device: phone, tablet, laptop, smart TV, or Chromebook.' },
@@ -10387,7 +10387,7 @@ const coreGuides: Guide[] = [
     { title: 'Important files to organize', content: 'Create a folder (physical or digital) with: insurance policies, tax records, investment accounts, property deeds, medical directives, and contact info for your lawyer and financial advisor.' },
     { title: 'Review annually', content: 'Update your account list when you create new accounts or change passwords. Review legacy contact settings yearly. Make sure your designated person knows where to find your information.' },
   ] },
-  { slug: 'telehealth-guide-v2', title: 'How to Use Telehealth for Doctor Visits', excerpt: 'See your doctor from home using video calls on your phone, tablet, or computer.', category: 'health-tech', tags: ['telehealth', 'doctor', 'health', 'video-call', 'medicare'], readTime: '7 min', thumbnailEmoji: '🩺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'telehealth-guide-v2', title: 'How to Use Telehealth for Doctor Visits', excerpt: 'See your doctor from home using video calls on your phone, tablet, or computer.', category: 'health-tech', tags: ['telehealth', 'doctor', 'health', 'video-call', 'medicare'], readTime: '7 min', thumbnailEmoji: '🩺', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Ed40jgObFA4', steps: [
     { title: 'What is telehealth?', content: 'Telehealth lets you visit your doctor through a video call on your phone, tablet, or computer. It\'s real medical care — the doctor can diagnose conditions, prescribe medications, and order tests.' },
     { title: 'When to use telehealth', content: 'Good for: cold/flu symptoms, medication refills, follow-up visits, mental health, rashes, minor injuries, chronic condition check-ins. Not ideal for: emergencies, chest pain, serious injuries, procedures.' },
     { title: 'Set up your account', content: 'Ask your doctor if they offer telehealth. They\'ll direct you to their platform (MyChart, Doxy.me, Zoom for Healthcare, etc.). Create an account and fill out any forms before your appointment.' },
@@ -10414,7 +10414,7 @@ const coreGuides: Guide[] = [
     { title: 'What a VPN can\'t do', content: 'A VPN doesn\'t make you anonymous. It doesn\'t protect against viruses. It doesn\'t prevent you from clicking phishing links. It\'s one layer of protection, not a complete security solution.' },
     { title: 'Speed considerations', content: 'VPNs can slow your internet slightly because your data travels through an extra server. Good VPN services minimize this. If streaming is slow with VPN on, try a different server location.' },
   ] },
-  { slug: 'password-manager-setup-v2', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords. A password manager creates and remembers strong passwords for every account.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager', 'bitwarden', '1password'], readTime: '7 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'password-manager-setup-v2', title: 'How to Set Up and Use a Password Manager', excerpt: 'Stop reusing passwords. A password manager creates and remembers strong passwords for every account.', category: 'safety-guides', tags: ['passwords', 'security', 'password-manager', 'bitwarden', '1password'], readTime: '7 min', thumbnailEmoji: '🔑', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/wcDtLMraTkQ', steps: [
     { title: 'Why you need one', content: 'The average person has 100+ online accounts. Reusing passwords means one breach exposes them all. A password manager creates unique, strong passwords for every site and remembers them for you.' },
     { title: 'Choose a password manager', content: 'Free options: Bitwarden (best free), Apple iCloud Keychain (Apple devices), Google Password Manager (Chrome). Paid: 1Password ($2.99/month) and Dashlane ($4.99/month) with extra features.' },
     { title: 'Create your master password', content: 'This is the ONE password you\'ll memorize. Make it long and memorable: a phrase like "My-dog-Max-loves-pizza-42!" is strong and easy to remember. Write it down and store it somewhere safe.' },
@@ -10443,7 +10443,7 @@ const coreGuides: Guide[] = [
     { title: 'Create a simple chart', content: 'Select your data including headers. Go to Insert > Chart. Choose a chart type (bar, line, pie). Excel creates a visual chart of your data. Drag to resize or move it.' },
     { title: 'Save and share', content: 'Ctrl+S saves your file. Save as .xlsx for Excel format. You can also save to OneDrive for cloud access and sharing with others who can edit simultaneously.' },
   ] },
-  { slug: 'google-docs-complete-guide', title: 'Google Docs: A Complete Beginner\'s Guide', excerpt: 'Create, edit, and share documents for free using Google Docs — no software installation needed.', category: 'app-guides', tags: ['google-docs', 'writing', 'documents', 'productivity', 'free'], readTime: '7 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'google-docs-complete-guide', title: 'Google Docs: A Complete Beginner\'s Guide', excerpt: 'Create, edit, and share documents for free using Google Docs — no software installation needed.', category: 'app-guides', tags: ['google-docs', 'writing', 'documents', 'productivity', 'free'], readTime: '7 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/4c0fn40-gyQ', steps: [
     { title: 'Access Google Docs', content: 'Go to docs.google.com in any web browser and sign in with your Google account. Or go to Google Drive, click New > Google Docs. No software to install — it works in your browser.' },
     { title: 'Create a new document', content: 'Click the + (Blank) button or choose a template (resume, letter, report). Templates give you a professional starting point. Start typing — your document saves automatically.' },
     { title: 'Format text', content: 'Select text and use the toolbar: Bold (Ctrl+B), Italic (Ctrl+I), font size, font style, text color. Use heading styles (Normal Text dropdown) to organize longer documents.' },
@@ -10554,7 +10554,7 @@ const coreGuides: Guide[] = [
     { title: 'Share your location', content: 'In Messages, tap the + or info button > Share My Location. Choose how long: one hour, until end of day, or indefinitely. Family members can see where you are on a map.' },
     { title: 'Mute conversations', content: 'Getting too many notifications from a group chat? Swipe left on the conversation (iPhone) or long-press (Android) and select Mute or Hide Alerts. You still receive messages but no notifications.' },
   ] },
-  { slug: 'email-basics-guide', title: 'Email for Complete Beginners', excerpt: 'Everything you need to know about email: sending, receiving, attachments, and staying safe.', category: 'essential-skills', tags: ['email', 'gmail', 'outlook', 'beginner', 'communication'], readTime: '8 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'email-basics-guide', title: 'Email for Complete Beginners', excerpt: 'Everything you need to know about email: sending, receiving, attachments, and staying safe.', category: 'essential-skills', tags: ['email', 'gmail', 'outlook', 'beginner', 'communication'], readTime: '8 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CtRgwJaW2N4', steps: [
     { title: 'What is email?', content: 'Email (electronic mail) is like sending a letter instantly over the internet. It\'s free, arrives in seconds, and you can attach photos, documents, and other files. You need an email address to send and receive.' },
     { title: 'Get a free email account', content: 'Gmail (by Google) and Outlook (by Microsoft) are the most popular free email services. Visit gmail.com or outlook.com to create an account. Choose an address like yourname@gmail.com.' },
     { title: 'Send an email', content: 'Click Compose (Gmail) or New Mail (Outlook). Enter the recipient\'s email address in the To field. Add a Subject line describing your message. Type your message in the body. Click Send.' },
@@ -10564,7 +10564,7 @@ const coreGuides: Guide[] = [
     { title: 'Stay safe', content: 'Never click links in emails from unknown senders. Your bank will never ask for your password by email. Look for spelling mistakes and urgent language — these are signs of scam emails.' },
     { title: 'Email on your phone', content: 'Set up email on your phone: iPhone uses the Mail app, Android uses Gmail. Your emails sync between all your devices — read on your phone, and it\'s marked as read on your computer too.' },
   ] },
-  { slug: 'google-maps-guide', title: 'How to Use Google Maps', excerpt: 'Navigate anywhere with turn-by-turn directions, find businesses, and explore with Google Maps.', category: 'app-guides', tags: ['google-maps', 'navigation', 'directions', 'travel'], readTime: '7 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'google-maps-guide', title: 'How to Use Google Maps', excerpt: 'Navigate anywhere with turn-by-turn directions, find businesses, and explore with Google Maps.', category: 'app-guides', tags: ['google-maps', 'navigation', 'directions', 'travel'], readTime: '7 min', thumbnailEmoji: '🗺️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/tui9hq9lfsU', steps: [
     { title: 'Search for a place', content: 'Open Google Maps and type an address, business name, or category (like "pharmacy near me") in the search bar. Tap the result to see it on the map with details, hours, and reviews.' },
     { title: 'Get directions', content: 'Tap Directions (arrow icon) and enter your destination. Google Maps shows driving, walking, transit, and rideshare options with estimated travel times. Choose your preferred route.' },
     { title: 'Start navigation', content: 'Tap Start for turn-by-turn voice directions. Your phone tells you when and where to turn. Mount your phone on your dashboard for safe viewing while driving.' },
@@ -10637,7 +10637,7 @@ const coreGuides: Guide[] = [
     { title: 'Use search', content: 'Can\'t find a file? Windows: Press Win+S and type the filename. Mac: Press Cmd+Space (Spotlight) and type. Search is faster than browsing through folders.' },
     { title: 'Clean up regularly', content: 'Delete files you don\'t need. Empty the Recycle Bin (Windows) or Trash (Mac) to free up space. Uninstall programs you no longer use. Set a monthly reminder to tidy up.' },
   ] },
-  { slug: 'cloud-storage-comparison', title: 'Cloud Storage Compared: Google Drive vs OneDrive vs iCloud vs Dropbox', excerpt: 'Choose the best cloud storage service for backing up and accessing your files anywhere.', category: 'essential-skills', tags: ['cloud', 'storage', 'google-drive', 'onedrive', 'icloud', 'dropbox'], readTime: '7 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'cloud-storage-comparison', title: 'Cloud Storage Compared: Google Drive vs OneDrive vs iCloud vs Dropbox', excerpt: 'Choose the best cloud storage service for backing up and accessing your files anywhere.', category: 'essential-skills', tags: ['cloud', 'storage', 'google-drive', 'onedrive', 'icloud', 'dropbox'], readTime: '7 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What is cloud storage?', content: 'Cloud storage saves your files on secure internet servers instead of (or in addition to) your computer. Access files from any device. If your computer breaks, your files are safe in the cloud.' },
     { title: 'Google Drive', content: '15 GB free (shared with Gmail and Photos). Works on everything. Tight integration with Google Docs, Sheets, and Slides. 100 GB for $1.99/month. Best for Android and Google users.' },
     { title: 'Microsoft OneDrive', content: '5 GB free. 100 GB for $1.99/month. 1 TB included with Microsoft 365 ($6.99/month, which also includes Office apps). Best for Windows users and Microsoft 365 subscribers.' },
@@ -10665,7 +10665,7 @@ const coreGuides: Guide[] = [
     { title: 'How to get real tech support', content: 'Go to the company\'s official website yourself (don\'t Google "tech support" — scam ads appear at the top). Call the number on the product packaging or your account settings page.' },
     { title: 'Protect vulnerable family members', content: 'Tell older family members about these scams. Install an ad blocker (uBlock Origin) to prevent scary pop-ups. Set their browser to block pop-ups. Reassure them that legitimate companies don\'t operate this way.' },
   ] },
-  { slug: 'two-factor-authentication-guide', title: 'How to Set Up Two-Factor Authentication (2FA)', excerpt: 'Add an extra layer of security to your most important accounts in just a few minutes.', category: 'safety-guides', tags: ['2fa', 'security', 'authentication', 'passwords'], readTime: '7 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'two-factor-authentication-guide', title: 'How to Set Up Two-Factor Authentication (2FA)', excerpt: 'Add an extra layer of security to your most important accounts in just a few minutes.', category: 'safety-guides', tags: ['2fa', 'security', 'authentication', 'passwords'], readTime: '7 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0mvCeNsTa1g', steps: [
     { title: 'What is 2FA?', content: 'Two-factor authentication requires two things to log in: your password PLUS a second verification (usually a code sent to your phone). Even if someone steals your password, they can\'t access your account without your phone.' },
     { title: 'Which accounts to protect first', content: 'Start with: email (it\'s the master key to all other accounts), banking and financial sites, social media, shopping accounts with saved credit cards, and cloud storage.' },
     { title: 'Set up 2FA on Google/Gmail', content: 'Go to myaccount.google.com > Security > 2-Step Verification > Get Started. Google can send prompts to your phone, text codes, or use an authenticator app. Choose what\'s easiest for you.' },
@@ -10683,7 +10683,7 @@ const coreGuides: Guide[] = [
     { title: 'Common phishing scenarios', content: 'Package delivery problems (USPS/FedEx). Payment issues (PayPal/Venmo). Account verification (bank/email). Prize winning. Tax refund. Netflix/subscription problems. All designed to get you to click.' },
     { title: 'What to do if you clicked', content: 'Change your password immediately on the affected account. Enable 2FA. Check your account for unauthorized activity. If you entered financial info, call your bank. Report to reportphishing@apwg.org.' },
   ] },
-  { slug: 'identity-theft-prevention', title: 'How to Protect Yourself from Identity Theft', excerpt: 'Practical steps to keep your personal information safe and what to do if it\'s stolen.', category: 'safety-guides', tags: ['identity-theft', 'security', 'fraud', 'credit', 'protection'], readTime: '8 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'identity-theft-prevention', title: 'How to Protect Yourself from Identity Theft', excerpt: 'Practical steps to keep your personal information safe and what to do if it\'s stolen.', category: 'safety-guides', tags: ['identity-theft', 'security', 'fraud', 'credit', 'protection'], readTime: '8 min', thumbnailEmoji: '🛡️', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/IzjPUURxEMo', steps: [
     { title: 'What is identity theft?', content: 'Identity theft happens when someone uses your personal information (Social Security number, credit card, bank details) without permission. They may open accounts, make purchases, or file taxes in your name.' },
     { title: 'Freeze your credit', content: 'Contact all three credit bureaus to freeze your credit for free: Equifax (equifax.com), Experian (experian.com), TransUnion (transunion.com). A freeze prevents anyone from opening new accounts in your name.' },
     { title: 'Monitor your accounts', content: 'Check bank and credit card statements weekly. Set up transaction alerts — your bank can text you for every purchase. Review your free credit report annually at annualcreditreport.com.' },
@@ -10789,7 +10789,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 25: Travel & Transportation Tech ──────────────────────────────────
-  { slug: 'uber-lyft-beginners-guide', title: 'How to Use Uber and Lyft for Rides', excerpt: 'Get safe, affordable rides anywhere using your phone. No cash needed.', category: 'app-guides', tags: ['uber', 'lyft', 'rideshare', 'transportation', 'travel'], readTime: '7 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'uber-lyft-beginners-guide', title: 'How to Use Uber and Lyft for Rides', excerpt: 'Get safe, affordable rides anywhere using your phone. No cash needed.', category: 'app-guides', tags: ['uber', 'lyft', 'rideshare', 'transportation', 'travel'], readTime: '7 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jWW0-ub8d90', steps: [
     { title: 'Download the app', content: 'Get Uber or Lyft from your app store. Create an account with your name, phone number, and email. Add a payment method (credit/debit card, PayPal, or Apple Pay).' },
     { title: 'Request a ride', content: 'Open the app and enter your destination in the "Where to?" box. The app shows estimated price and arrival time. Tap "Confirm" to request the ride. A nearby driver is matched to you.' },
     { title: 'Track your driver', content: 'The app shows your driver\'s name, photo, car model, color, and license plate. Watch the map as they approach. You\'ll get a notification when they arrive.' },
@@ -10824,7 +10824,7 @@ const coreGuides: Guide[] = [
     { title: 'Credit card reimbursement', content: 'Many credit cards reimburse the TSA PreCheck or Global Entry fee. Check if your card offers this before paying out of pocket. Popular cards: Chase Sapphire, Amex Platinum, Capital One Venture.' },
     { title: 'Add it to your boarding pass', content: 'After approval, add your Known Traveler Number (KTN) to your airline profiles and booking confirmations. "TSA PRE" appears on your boarding pass automatically.' },
   ] },
-  { slug: 'google-translate-guide', title: 'How to Use Google Translate', excerpt: 'Translate text, conversations, menus, and signs in real time using your phone.', category: 'app-guides', tags: ['google', 'translate', 'language', 'travel', 'communication'], readTime: '6 min', thumbnailEmoji: '🌍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'google-translate-guide', title: 'How to Use Google Translate', excerpt: 'Translate text, conversations, menus, and signs in real time using your phone.', category: 'app-guides', tags: ['google', 'translate', 'language', 'travel', 'communication'], readTime: '6 min', thumbnailEmoji: '🌍', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/W0JQqkKjHZw', steps: [
     { title: 'Text translation', content: 'Open Google Translate (app or translate.google.com). Select source and target languages. Type or paste text. Translation appears instantly. Copy it to share via text or email.' },
     { title: 'Camera translation', content: 'Tap the camera icon in the app. Point at signs, menus, or text in another language. The translation overlays the original text in real time — like magic. Great for travel.' },
     { title: 'Conversation mode', content: 'Tap the microphone icon and select Conversation. Speak in your language, then hand the phone to the other person. The app translates speech in both directions — like a personal interpreter.' },
@@ -10852,7 +10852,7 @@ const coreGuides: Guide[] = [
     { title: 'Start simple', content: 'Don\'t try to track every penny on day one. Start by connecting your main accounts and reviewing where your money goes for a month. Then set reasonable budgets for your biggest spending categories.' },
     { title: 'Security note', content: 'Budgeting apps use bank-level encryption and read-only access. They can see your transactions but cannot move money or make payments. They\'re safe to connect to your accounts.' },
   ] },
-  { slug: 'venmo-zelle-cashapp-guide', title: 'How to Send Money with Venmo, Zelle, and Cash App', excerpt: 'Send and receive money instantly using your phone — split bills, pay friends, and more.', category: 'app-guides', tags: ['venmo', 'zelle', 'cashapp', 'money', 'payment'], readTime: '7 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'venmo-zelle-cashapp-guide', title: 'How to Send Money with Venmo, Zelle, and Cash App', excerpt: 'Send and receive money instantly using your phone — split bills, pay friends, and more.', category: 'app-guides', tags: ['venmo', 'zelle', 'cashapp', 'money', 'payment'], readTime: '7 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/YhXkJYPLhC4', steps: [
     { title: 'The big three compared', content: 'Zelle: built into most banking apps, instant transfers to bank accounts, no fees. Venmo: social feed, can hold balance, accepted by many merchants. Cash App: includes investing features, Cash Card for spending.' },
     { title: 'Set up Zelle', content: 'Open your banking app and look for Zelle (most major banks include it). Register your email or phone number. Send money using the recipient\'s email or phone number. Money arrives in minutes.' },
     { title: 'Set up Venmo', content: 'Download Venmo, create an account, and link your bank account or debit card. Search for friends by name, username, or phone number. Enter the amount and tap Pay. Bank transfers are free; instant transfers cost 1.75%.' },
@@ -11210,7 +11210,7 @@ const coreGuides: Guide[] = [
     { title: 'Safe Mode', content: 'Intel: restart, hold Shift. Apple Silicon: shut down, hold power button, select your disk, hold Shift, click Continue in Safe Mode. Safe Mode clears caches and checks the disk.' },
     { title: 'Reinstall macOS', content: 'Last resort. Restart, hold Cmd+R (Intel) or hold Power button (Apple Silicon). Choose Reinstall macOS. This reinstalls the system without erasing your files. Takes 30-60 minutes.' },
   ] },
-  { slug: 'iphone-storage-management', title: 'How to Free Up Space on Your iPhone', excerpt: 'Running out of storage? Clear space without losing important photos and data.', category: 'phone-guides', tags: ['iphone', 'storage', 'space', 'optimization', 'photos'], readTime: '7 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'iphone-storage-management', title: 'How to Free Up Space on Your iPhone', excerpt: 'Running out of storage? Clear space without losing important photos and data.', category: 'phone-guides', tags: ['iphone', 'storage', 'space', 'optimization', 'photos'], readTime: '7 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/bwjcYyCneNc', steps: [
     { title: 'Check what\'s using space', content: 'Settings > General > iPhone Storage. See a breakdown by app. Apps are listed by size. Large apps you don\'t use are the quickest wins for freeing space.' },
     { title: 'Offload unused apps', content: 'Settings > General > iPhone Storage > Enable Offload Unused Apps. iOS removes apps you haven\'t used recently but keeps their data. Reinstall anytime and your data returns.' },
     { title: 'Clear Safari cache', content: 'Settings > Safari > Clear History and Website Data. This removes temporary files, cookies, and browsing history. Can free up several hundred MB or more.' },
@@ -11443,7 +11443,7 @@ const coreGuides: Guide[] = [
     { title: 'Keyboard shortcuts', content: 'Cmd+T: new tab. Cmd+W: close tab. Cmd+Z: reopen closed tab. Cmd+L: select address bar. Cmd+Shift+]: next tab. Cmd+Shift+[: previous tab. Cmd+F: find on page.' },
     { title: 'Profiles', content: 'Safari > Settings > Profiles. Create separate browsing profiles (Personal, Work) with their own history, cookies, bookmarks, and extensions. Keep work and personal browsing completely separate.' },
   ] },
-  { slug: 'mac-icloud-guide', title: 'Understanding and Managing iCloud', excerpt: 'Get the most out of Apple\'s cloud service for storage, sync, and backup.', category: 'mac-guides', tags: ['mac', 'icloud', 'cloud', 'storage', 'backup', 'apple'], readTime: '7 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-icloud-guide', title: 'Understanding and Managing iCloud', excerpt: 'Get the most out of Apple\'s cloud service for storage, sync, and backup.', category: 'mac-guides', tags: ['mac', 'icloud', 'cloud', 'storage', 'backup', 'apple'], readTime: '7 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What iCloud does', content: 'iCloud syncs your photos, files, contacts, calendars, notes, and passwords across all Apple devices. It also backs up your iPhone and stores files in iCloud Drive. 5 GB is free.' },
     { title: 'Manage your storage', content: 'Mac: System Settings > Apple ID > iCloud > Manage. iPhone: Settings > Your Name > iCloud > Manage Storage. See what\'s using space. Delete old backups, large files, or unnecessary data.' },
     { title: 'iCloud storage plans', content: '5 GB: free (fills up fast with photos). 50 GB: $0.99/month. 200 GB: $2.99/month. 2 TB: $9.99/month (can share with family). For most people with iPhones, 200 GB is the sweet spot.' },
@@ -11537,7 +11537,7 @@ const coreGuides: Guide[] = [
     { title: 'What to do if you\'ve been scammed', content: 'Report to the FTC (reportfraud.ftc.gov), SEC (sec.gov/tcr), and your state attorney general. Contact your bank immediately. File a report at ic3.gov (FBI). Document everything — screenshots, emails, transaction records.' },
     { title: 'Safe investing basics', content: 'Use regulated brokerages (Fidelity, Vanguard, Schwab). Diversify — never put all money in one investment. Index funds are the simplest, safest way to invest. If you don\'t understand it, don\'t invest in it.' },
   ] },
-  { slug: 'child-online-safety', title: 'Keeping Children Safe Online', excerpt: 'Comprehensive guide to protecting kids from online dangers while allowing healthy digital exploration.', category: 'safety-guides', tags: ['children', 'safety', 'parenting', 'online-safety', 'education'], readTime: '8 min', thumbnailEmoji: '👶', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'child-online-safety', title: 'Keeping Children Safe Online', excerpt: 'Comprehensive guide to protecting kids from online dangers while allowing healthy digital exploration.', category: 'safety-guides', tags: ['children', 'safety', 'parenting', 'online-safety', 'education'], readTime: '8 min', thumbnailEmoji: '👶', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/Yh_T6pTrZLE', steps: [
     { title: 'Set up age-appropriate devices', content: 'Use parental controls (Screen Time on Apple, Family Link on Android). Enable content filters. Set up child accounts that you manage. Choose age-appropriate apps from curated lists.' },
     { title: 'Cyberbullying awareness', content: 'Signs: child becomes withdrawn, avoids devices, or gets upset after phone use. Teach them: don\'t respond, save evidence (screenshots), tell a trusted adult. Block and report bullies on the platform.' },
     { title: 'Stranger danger online', content: 'Teach children: never share personal information (name, school, address, phone number). Never agree to meet someone from the internet. Not everyone online is who they claim to be.' },
