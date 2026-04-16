@@ -330,7 +330,7 @@ export default function News() {
                             <Clock className="h-3 w-3" /> {item.readTime}
                           </span>
                           <span className="text-xs text-muted-foreground ml-auto">
-                            {new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                            {new Date(item.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
                         <h2 className="font-semibold text-base leading-snug mb-2">{item.title}</h2>

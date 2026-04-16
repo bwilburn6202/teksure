@@ -69,8 +69,8 @@ function analyzeUrl(rawUrl: string): ScanResult {
   }
 
   // Brand impersonation in subdomain/path
-  const brands = ['paypal', 'apple', 'google', 'amazon', 'microsoft', 'netflix', 'hmrc', 'natwest', 'barclays', 'lloyds', 'halifax', 'santander', 'royalmail', 'fedex', 'dhl', 'ups', 'facebook', 'instagram', 'whatsapp', 'nhs', 'gov'];
-  const knownDomains: Record<string, string> = { paypal: 'paypal.com', apple: 'apple.com', google: 'google.com', amazon: 'amazon.co.uk', microsoft: 'microsoft.com', netflix: 'netflix.com', hmrc: 'gov.uk', royalmail: 'royalmail.com', fedex: 'fedex.com', dhl: 'dhl.com', facebook: 'facebook.com', instagram: 'instagram.com' };
+  const brands = ['paypal', 'apple', 'google', 'amazon', 'microsoft', 'netflix', 'irs', 'chase', 'bankofamerica', 'wellsfargo', 'citi', 'usps', 'fedex', 'dhl', 'ups', 'facebook', 'instagram', 'whatsapp', 'ssa', 'gov'];
+  const knownDomains: Record<string, string> = { paypal: 'paypal.com', apple: 'apple.com', google: 'google.com', amazon: 'amazon.com', microsoft: 'microsoft.com', netflix: 'netflix.com', irs: 'irs.gov', chase: 'chase.com', bankofamerica: 'bankofamerica.com', wellsfargo: 'wellsfargo.com', usps: 'usps.com', fedex: 'fedex.com', dhl: 'dhl.com', facebook: 'facebook.com', instagram: 'instagram.com' };
   for (const brand of brands) {
     if (hostname.includes(brand)) {
       const official = knownDomains[brand];
@@ -358,7 +358,7 @@ export default function PhishingScanner() {
                     '📧 If you didn\'t expect the link, be suspicious regardless of who sent it',
                     '🔤 Check for subtle misspellings like "roya1mail.com" (number 1 not letter l)',
                     '⏩ Shortened URLs like bit.ly hide where you\'re actually going',
-                    '🏦 Banks and HMRC never ask you to click a link to verify your account',
+                    '🏦 Banks and the IRS never ask you to click a link to verify your account',
                   ].map((tip, i) => (
                     <p key={i} className="text-xs text-muted-foreground">{tip}</p>
                   ))}

@@ -156,7 +156,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               {error && <p className="text-xs text-destructive mt-2">{error}</p>}
               <p className="text-[11px] text-muted-foreground mt-3">
                 We respect your inbox. No spam, ever. Read our{' '}
-                <a href="/about" className="underline hover:text-foreground transition-colors">privacy policy</a>.
+                <a href="/privacy" className="underline hover:text-foreground transition-colors">privacy policy</a>.
               </p>
             </div>
           )}

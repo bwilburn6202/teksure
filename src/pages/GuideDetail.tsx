@@ -201,7 +201,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
           <CheckCircle className="h-4 w-4" /> Mark as Complete
         </Button>
       )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/signup" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
+      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
     </div>
   );
 };
@@ -296,9 +296,7 @@ const GuideDetail = () => {
 
   if (!guide) return <Navigate to="/guides" replace />;
 
-  if (!user) {
-    return <Navigate to="/login" state={{ message: 'Create a free account to read this guide.', from: location.pathname }} replace />;
-  }
+  // Guides are free for everyone — no auth required to read
 
   const currentIndex = guides.findIndex(g => g.slug === slug);
   const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
@@ -614,10 +612,10 @@ const GuideDetail = () => {
             <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">Our verified technicians can fix this issue for you — remotely or in person.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Button asChild size="lg" className="rounded-xl gap-2">
-                <Link to="/signup">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/book">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-xl">
-                <Link to="/pricing">See Pricing</Link>
+                <Link to="/how-it-works">How It Works</Link>
               </Button>
             </div>
           </div>

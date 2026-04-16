@@ -335,7 +335,7 @@ const Dashboard = () => {
                         <div className="flex flex-col items-end gap-1 shrink-0">
                           <StatusBadge status={booking.status} />
                           <span className="text-[10px] text-muted-foreground">
-                            {new Date(booking.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                            {new Date(booking.created_at).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
                       </Link>

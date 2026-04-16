@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ShieldAlert, X, Phone, KeyRound, Flag, Users, Ban, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -12,7 +13,7 @@ const steps = [
     icon: Phone,
     title: 'Call your bank right now',
     description: 'Tell them you may have been scammed. They can freeze your account and sometimes reverse payments.',
-    action: { label: 'Call your bank', href: 'tel:' },
+    action: { label: 'Find your bank\'s number', href: '/tools/scam-report' },
   },
   {
     icon: KeyRound,
@@ -145,21 +146,21 @@ export function ScamPanicButton() {
             Being scammed does not mean you did something wrong. Thousands of people are targeted every day.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4">
-            <a
-              href="/tools/scam-report"
+            <Link
+              to="/tools/scam-report"
               className="text-sm font-medium text-primary hover:underline"
               onClick={() => setOpen(false)}
             >
               Report a scam on TekSure
-            </a>
+            </Link>
             <span className="hidden sm:inline text-muted-foreground">·</span>
-            <a
-              href="/safety/scam-alerts"
+            <Link
+              to="/safety/scam-alerts"
               className="text-sm font-medium text-primary hover:underline"
               onClick={() => setOpen(false)}
             >
               Learn how to spot scams
-            </a>
+            </Link>
           </div>
         </div>
       </div>

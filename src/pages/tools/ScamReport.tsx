@@ -24,7 +24,7 @@ const scamTypes = [
   'Romance scam',
   'Parcel delivery scam',
   'Tech support scam',
-  'HMRC / government impersonation',
+  'IRS / government impersonation',
   'Bank impersonation',
   'Other',
 ];
@@ -161,7 +161,7 @@ export default function ScamReport() {
                 </div>
                 <div>
                   <Label className="mb-1.5 block">Phone number used (if any)</Label>
-                  <Input placeholder="+44 7..." value={form.phone} onChange={e => update('phone', e.target.value)} />
+                  <Input placeholder="(555) 123-4567" value={form.phone} onChange={e => update('phone', e.target.value)} />
                 </div>
               </div>
 

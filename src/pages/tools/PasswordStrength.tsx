@@ -95,7 +95,8 @@ const PasswordStrength = () => {
                 </div>
                 <div className="h-3 rounded-full bg-muted overflow-hidden">
                   <div
-                    className={`h-full rounded-full ${barColor}`}
+                    className={`h-full rounded-full transition-all duration-300 ${barColor}`}
+                    style={{ width: `${strength.percent}%` }}
                   />
                 </div>
               </div>

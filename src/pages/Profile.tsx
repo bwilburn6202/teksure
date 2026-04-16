@@ -353,7 +353,7 @@ export default function Profile() {
                   <p className="text-xs text-muted-foreground leading-tight">{badge.description}</p>
                   {badge.earned && badge.earnedAt && (
                     <p className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
-                      {new Date(badge.earnedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                      {new Date(badge.earnedAt).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                     </p>
                   )}
                 </div>

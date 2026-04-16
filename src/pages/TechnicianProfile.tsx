@@ -308,7 +308,7 @@ export default function TechnicianProfile() {
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-medium text-sm">{review.author}</span>
                       <span className="text-xs text-muted-foreground">
-                        {new Date(review.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                        {new Date(review.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                       </span>
                     </div>
                     <StarRating rating={review.rating} />

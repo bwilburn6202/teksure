@@ -226,7 +226,7 @@ export default function Webinars() {
                       <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground mb-3">
                         <span className="flex items-center gap-1">
                           <Calendar className="h-3 w-3" />
-                          {new Date(webinar.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })}
+                          {new Date(webinar.date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })}
                         </span>
                         <span className="flex items-center gap-1">
                           <Clock className="h-3 w-3" />

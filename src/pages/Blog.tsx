@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -305,7 +305,7 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
                 <Clock className="h-3 w-3" /> {post.readTime}
               </span>
               <span className="text-xs text-muted-foreground">
-                {new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                {new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
               </span>
             </div>
             <h2 className={`font-semibold leading-snug mb-2 ${featured ? 'text-2xl' : 'text-base'}`}>{post.title}</h2>
@@ -333,7 +333,7 @@ function PostDetail({ post }: { post: BlogPost }) {
       <div className="flex items-center gap-2 mb-3">
         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>{post.category}</span>
         <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime} read</span>
-        <span className="text-xs text-muted-foreground ml-auto">{new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+        <span className="text-xs text-muted-foreground ml-auto">{new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
       </div>
       <post.icon className="h-12 w-12 text-primary mb-4" />
       <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">{post.title}</h1>
@@ -357,7 +357,8 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [visibleCount, setVisibleCount] = useState(6);
   // Detect if we're on a detail page via URL slug
-  const slug = window.location.pathname.replace('/blog/', '').replace('/blog', '');
+  const { slug: routeSlug } = useParams<{ slug: string }>();
+  const slug = routeSlug || '';
   const detailPost = slug && slug !== '' ? BLOG_POSTS.find(p => p.slug === slug) : null;
 
   if (detailPost) {

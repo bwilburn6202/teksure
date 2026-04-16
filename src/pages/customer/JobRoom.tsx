@@ -95,7 +95,7 @@ function deriveTimeline(booking: Booking) {
 
 function formatDate(iso: string | null) {
   if (!iso) return 'Not set';
-  return new Date(iso).toLocaleDateString('en-GB', {
+  return new Date(iso).toLocaleDateString('en-US', {
     weekday: 'short',
     day: 'numeric',
     month: 'short',
@@ -104,7 +104,7 @@ function formatDate(iso: string | null) {
 }
 
 function formatTime(iso: string) {
-  return new Date(iso).toLocaleString('en-GB', {
+  return new Date(iso).toLocaleString('en-US', {
     day: 'numeric',
     month: 'short',
     hour: '2-digit',

@@ -35,7 +35,7 @@ export default function FamilySharing() {
     if (!name.trim() || !email.trim()) { toast.error('Please enter a name and email.'); return; }
     if (members.length >= MAX_MEMBERS) { toast.error('Maximum 4 family members reached.'); return; }
     if (members.some(m => m.email.toLowerCase() === email.toLowerCase())) { toast.error('That email is already in your family group.'); return; }
-    const m: Member = { name: name.trim(), email: email.trim().toLowerCase(), status: 'pending', added: new Date().toLocaleDateString('en-GB') };
+    const m: Member = { name: name.trim(), email: email.trim().toLowerCase(), status: 'pending', added: new Date().toLocaleDateString('en-US') };
     save([...members, m]);
     setName(''); setEmail('');
     toast.success(`Invite sent to ${name}! They'll receive an email with instructions.`);

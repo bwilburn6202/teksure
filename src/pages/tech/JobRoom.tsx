@@ -60,7 +60,7 @@ const PAYMENT_BADGES: Record<string, { label: string; className: string }> = {
 
 function formatDate(iso: string | null) {
   if (!iso) return 'Not set';
-  return new Date(iso).toLocaleDateString('en-GB', {
+  return new Date(iso).toLocaleDateString('en-US', {
     weekday: 'short',
     day: 'numeric',
     month: 'short',
@@ -329,7 +329,7 @@ const TechJobRoom = () => {
                 <div>
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Created</p>
                   <p className="text-sm text-muted-foreground">
-                    {new Date(booking.created_at).toLocaleString('en-GB', {
+                    {new Date(booking.created_at).toLocaleString('en-US', {
                       weekday: 'short', day: 'numeric', month: 'short', year: 'numeric',
                       hour: '2-digit', minute: '2-digit',
                     })}

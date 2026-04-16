@@ -25,7 +25,7 @@ export default function Certificate() {
   const earnedPaths = paths.filter(p => total >= p.required);
   const latestPath = earnedPaths[earnedPaths.length - 1];
 
-  const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  const today = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
   function handlePrint() {
     if (!certRef.current) return;

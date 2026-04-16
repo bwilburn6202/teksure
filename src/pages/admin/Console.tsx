@@ -191,7 +191,7 @@ function BookingsTab() {
                     <TableCell className="font-medium">{b.name}</TableCell>
                     <TableCell className="text-muted-foreground">{serviceLabels[b.service_type] || b.service_type}</TableCell>
                     <TableCell className="text-sm">
-                      {new Date(b.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                      {new Date(b.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
                       <span className="text-muted-foreground ml-1 capitalize">· {b.preferred_slot}</span>
                     </TableCell>
                     <TableCell>
@@ -398,13 +398,13 @@ function JobsTab() {
                             {job.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${job.email}`} className="hover:underline text-foreground">{job.email}</a></div>}
                             {job.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${job.phone}`} className="hover:underline text-foreground">{job.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
-                              Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                              Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
                               {job.preferred_slot && ` · ${job.preferred_slot}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
                           </div>
-                          {job.description && (
-                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{job.description}</p>
+                          {job.problem_description && (
+                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{job.problem_description}</p>
                           )}
                         </div>
                         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
@@ -544,7 +544,7 @@ function DisputesTab() {
                             {d.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${d.email}`} className="hover:underline text-foreground">{d.email}</a></div>}
                             {d.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${d.phone}`} className="hover:underline text-foreground">{d.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
-                              Booked for {new Date(d.preferred_date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                              Booked for {new Date(d.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
                               {d.preferred_slot && ` at ${d.preferred_slot}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
@@ -554,8 +554,8 @@ function DisputesTab() {
                               </span>
                             )}
                           </div>
-                          {d.description && (
-                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{d.description}</p>
+                          {d.problem_description && (
+                            <p className="rounded-lg bg-background border p-3 leading-relaxed">{d.problem_description}</p>
                           )}
                         </div>
                       </TableCell>
@@ -653,7 +653,7 @@ function TechVerificationTab() {
                   {tech.email ? <a href={`mailto:${tech.email}`} className="hover:underline">{tech.email}</a> : '—'}
                 </TableCell>
                 <TableCell className="text-muted-foreground text-sm">
-                  {new Date(tech.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                  {new Date(tech.created_at).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                 </TableCell>
                 <TableCell>
                   <Badge variant="secondary" className="bg-green-500/10 text-green-600 border-green-500/20">

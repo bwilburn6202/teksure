@@ -63,8 +63,8 @@ function getAvailableDates(): { date: string; label: string; dayName: string }[]
     const dateStr = d.toISOString().split('T')[0];
     dates.push({
       date: dateStr,
-      label: d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }),
-      dayName: d.toLocaleDateString('en-GB', { weekday: 'short' }),
+      label: d.toLocaleDateString('en-US', { day: 'numeric', month: 'short' }),
+      dayName: d.toLocaleDateString('en-US', { weekday: 'short' }),
     });
     d.setDate(d.getDate() + 1);
   }
@@ -469,7 +469,7 @@ export default function Book() {
                         type="tel"
                         value={form.phone}
                         onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
-                        placeholder="07700 900000"
+                        placeholder="(555) 123-4567"
                         className="rounded-lg"
                       />
                     </div>

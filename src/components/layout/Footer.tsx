@@ -76,7 +76,7 @@ export function Footer() {
             &copy; {currentYear} TekSure. An American company. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link to="/changelog" className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors">Changelog</Link>
+            <Link to="/roadmap" className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors">Roadmap</Link>
             <Link to="/privacy" className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors">Privacy</Link>
           </div>
         </div>

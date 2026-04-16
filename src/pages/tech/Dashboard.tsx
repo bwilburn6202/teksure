@@ -45,7 +45,7 @@ const paymentBadge: Record<string, { label: string; className: string }> = {
 
 function formatDate(iso: string | null) {
   if (!iso) return 'Not set';
-  return new Date(iso).toLocaleDateString('en-GB', {
+  return new Date(iso).toLocaleDateString('en-US', {
     day: 'numeric', month: 'short', year: 'numeric',
   });
 }

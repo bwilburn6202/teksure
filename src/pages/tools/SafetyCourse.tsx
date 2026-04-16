@@ -239,7 +239,7 @@ const Certificate = ({ onReset }: { onReset: () => void }) => (
       <Shield className="h-12 w-12 text-amber-500 mx-auto mb-3" />
       <p className="text-lg font-bold mb-1">Internet Safety Certificate</p>
       <p className="text-sm text-muted-foreground">Issued by TekSure</p>
-      <p className="text-xs text-muted-foreground mt-1">{new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+      <p className="text-xs text-muted-foreground mt-1">{new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
       <div className="mt-4 pt-4 border-t border-amber-200 dark:border-amber-800 grid grid-cols-1 gap-1.5 text-xs text-left">
         {lessons.map(l => (
           <div key={l.id} className="flex items-center gap-2">
