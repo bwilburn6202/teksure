@@ -492,4 +492,825 @@ Set a reminder for when reservations open. Most parks release sites at 10:00 AM 
       { title: 'Consider the annual pass', content: 'The $80 America the Beautiful pass covers entrance fees at all national parks for a year — a great value if you visit more than two parks.' },
     ],
   },
+
+  // ═══════════════════════════════════════════
+  // FINANCIAL TECHNOLOGY (15 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-mobile-check-deposit',
+    title: 'How to Set Up Mobile Check Deposit on Your Phone',
+    excerpt: 'Deposit checks from your phone using your bank\'s app — no trip to the branch or ATM required.',
+    category: 'financial-tech' as any,
+    tags: ['mobile banking', 'check deposit', 'banking', 'phone', 'finances'],
+    readTime: '5 min',
+    thumbnailEmoji: '🏦',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Mobile check deposit lets you deposit a paper check into your bank account by taking a photo of it with your phone. Nearly every major bank and credit union offers this free feature. Download your bank's app from the App Store or Google Play Store and sign in with your online banking credentials.
+
+Look for "Deposit" or "Mobile Deposit" in the app. The first time, your bank may take a day or two to enable the feature. When ready, endorse the back of the check with your signature and write "For Mobile Deposit Only" below it — this is required by federal regulations.
+
+Tap "Deposit," enter the check amount, select your account, and photograph the front and back of the check. Place the check on a dark, flat surface under good lighting. Hold your phone steady directly above it. Review the images for clarity, then tap "Submit." Funds are typically available within 1 to 2 business days.
+
+Keep the physical check for 30 days after depositing, then shred it. Never deposit the same check at an ATM or branch — double-depositing causes serious account problems.`,
+    steps: [
+      { title: 'Download your bank\'s app', content: 'Open the App Store or Google Play Store, search for your bank\'s name, download the official app, and sign in with your online banking credentials.' },
+      { title: 'Find Mobile Deposit', content: 'Look for "Deposit" or "Mobile Deposit" on the home screen or navigation menu. Your bank may take a day to activate this feature the first time.' },
+      { title: 'Endorse the check', content: 'Sign the back of the check and write "For Mobile Deposit Only" below your signature. This endorsement is required by federal regulations.' },
+      { title: 'Enter deposit details', content: 'Tap "Deposit," enter the exact dollar amount on the check, and select which account receives the deposit.' },
+      { title: 'Photograph front and back', content: 'Place the check on a dark, flat surface under good lighting. Hold your phone steady above it and let the app capture clear photos of both sides.' },
+      { title: 'Submit and keep the check', content: 'Review images for clarity and tap "Submit." Funds arrive in 1 to 2 business days. Keep the paper check for 30 days, then shred it.' },
+    ],
+  },
+
+  {
+    slug: 'send-money-with-zelle',
+    title: 'How to Send Money with Zelle',
+    excerpt: 'Send money to friends and family in minutes using Zelle — built into most major bank apps, with no fees.',
+    category: 'financial-tech' as any,
+    tags: ['Zelle', 'money transfer', 'banking', 'payments', 'finances'],
+    readTime: '5 min',
+    thumbnailEmoji: '💸',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Zelle lets you send money from your bank account to someone else's bank account in minutes. It is built into 2,000+ bank apps including Chase, Bank of America, Wells Fargo, and Capital One. There are no fees, and money moves directly between bank accounts — no separate balance to manage.
+
+Open your bank's app and look for "Zelle" or "Send Money with Zelle" in the transfers section. The first time, you enroll by connecting your email or phone number to your bank account. When someone sends you money using that email or phone, it goes directly to your linked account.
+
+To send: enter the recipient's email or phone number, enter the amount, add an optional note, and tap "Send." If the recipient is enrolled, money arrives in minutes. If not, they get instructions to sign up and claim the payment. You can also request money from someone.
+
+Important safety note: Zelle transfers are instant and cannot be reversed. Only send money to people you know and trust. Scammers pretend to be your bank and ask you to "send money to yourself" to fix a problem — your bank will never ask this. If a stranger asks you to pay with Zelle, that is a red flag.`,
+    steps: [
+      { title: 'Open Zelle in your bank\'s app', content: 'Open your bank\'s mobile app and look for "Zelle" or "Send Money with Zelle" in the transfers or payments section.' },
+      { title: 'Enroll your email or phone number', content: 'Choose whether to connect your email address or phone number. This is how people will send money to you.' },
+      { title: 'Enter the recipient\'s information', content: 'Tap "Send" and enter the recipient\'s email address or phone number. They need to be enrolled with Zelle or will receive signup instructions.' },
+      { title: 'Enter amount and send', content: 'Type the dollar amount, add an optional note, review the details, and tap "Send." Money arrives in minutes.' },
+      { title: 'Know the safety rules', content: 'Only send to people you know and trust. Transfers cannot be reversed. Your bank will never ask you to send money through Zelle to fix a problem.' },
+    ],
+  },
+
+  {
+    slug: 'use-venmo-safely',
+    title: 'How to Use Venmo Safely',
+    excerpt: 'Set up Venmo, send payments to friends, and adjust privacy settings to keep your transactions private.',
+    category: 'financial-tech' as any,
+    tags: ['Venmo', 'payments', 'money transfer', 'privacy', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Venmo is a mobile payment app owned by PayPal for sending and receiving money from friends and family. It is free for personal payments from your bank account or Venmo balance. Download Venmo from the App Store or Google Play Store, create an account, and link a bank account or debit card.
+
+Critical privacy setting: By default, Venmo makes your transactions visible to friends and sometimes the public. Change this immediately. Go to Settings, then Privacy, and change your default setting to "Private." This hides transactions from everyone except you and the recipient.
+
+To send money, tap "Pay or Request," search for the person by username, phone, or email, enter the amount and a note, and tap "Pay." Use bank account or debit card to avoid fees (credit cards charge 3%).
+
+When you receive money, it goes to your Venmo balance. Transfer it to your bank account — standard transfers (1-3 days) are free, instant transfers cost 1.75%. Enable PIN or biometric login in Settings, then Security for extra protection.
+
+Only use Venmo with people you know. Never use it to pay strangers for online purchases. If someone you do not know sends you money, do not spend it — it may be a scam involving a stolen card.`,
+    steps: [
+      { title: 'Download and set up Venmo', content: 'Download from App Store or Google Play Store. Create an account and link a bank account or debit card.' },
+      { title: 'Change privacy to Private immediately', content: 'Go to Settings → Privacy → change default to "Private" to prevent transactions from being visible to others.' },
+      { title: 'Send a payment', content: 'Tap "Pay or Request," search for the person, enter amount and note, then tap "Pay." Use bank account or debit card to avoid fees.' },
+      { title: 'Transfer money to your bank', content: 'Tap "Transfer" to move received money to your bank. Standard transfers are free (1-3 days); instant costs 1.75%.' },
+      { title: 'Enable biometric security', content: 'Go to Settings → Security and turn on Face ID, Touch ID, or PIN to protect your account if someone else has your phone.' },
+    ],
+  },
+
+  {
+    slug: 'use-cash-app-step-by-step',
+    title: 'How to Use Cash App Step by Step',
+    excerpt: 'Set up Cash App, link your bank account, and send or receive money — with safety tips to protect your account.',
+    category: 'financial-tech' as any,
+    tags: ['Cash App', 'money transfer', 'payments', 'mobile banking', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '💵',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Cash App by Block (formerly Square) lets you send and receive money, invest, and buy Bitcoin. For most people, the main use is sending money to friends and family. Download Cash App, enter your phone number or email, verify with a code, and create a unique $cashtag (your Cash App username).
+
+Link a funding source: tap your profile icon, then "Linked Banks." Enter your bank routing and account numbers or a debit card. Bank transfers are free; credit cards charge 3%.
+
+To send money: tap the "$" on the home screen, type the amount, tap "Pay," enter the recipient's $cashtag, phone number, or email, add a note, and confirm. Money comes from your Cash App balance first, then your linked bank.
+
+When you receive money, tap "Cash Out" to transfer to your bank. Standard transfers (1-3 business days) are free; instant costs 0.5% to 1.75%.
+
+Safety is critical. Never send money to someone you do not know. Never share your sign-in code with anyone. Cash App support will never ask for your PIN or sign-in code. If someone promises to "flip" your money, it is always a scam. Turn on Security Lock in settings to require Face ID, Touch ID, or PIN every time you open the app.`,
+    steps: [
+      { title: 'Download Cash App', content: 'Get Cash App from the App Store or Google Play Store. Open it, enter your phone number or email, and verify with the code sent to you.' },
+      { title: 'Create your $cashtag', content: 'Choose a unique $cashtag — your public username for receiving payments (like $JohnSmith).' },
+      { title: 'Link your bank account', content: 'Tap your profile → "Linked Banks" → enter routing and account numbers or add a debit card. Bank transfers are free.' },
+      { title: 'Send money', content: 'Tap "$," enter amount, tap "Pay," search for recipient by $cashtag, phone, or email. Add a note and confirm.' },
+      { title: 'Cash out to your bank', content: 'Tap "Cash Out" to transfer your balance. Standard is free (1-3 days); instant has a small fee.' },
+      { title: 'Enable Security Lock', content: 'Go to profile → Privacy & Security → Security Lock. This requires biometric or PIN authentication every time you open Cash App.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-auto-pay-bills',
+    title: 'How to Set Up Auto-Pay for Your Bills',
+    excerpt: 'Set up automatic payments for recurring bills so you never miss a due date or pay a late fee again.',
+    category: 'financial-tech' as any,
+    tags: ['auto-pay', 'bills', 'payments', 'banking', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Auto-pay lets you set recurring bills to pay automatically each month from your bank account, debit card, or credit card. It eliminates missed due dates, late fees, and the stress of remembering every bill.
+
+There are two ways to set it up. Through the biller's website: log in to your electric company, phone carrier, or credit card issuer, find "Payment Settings" or "Auto-Pay," choose your payment method and amount (full balance, minimum, or fixed amount), and set when payments occur. Through your bank's bill pay: most banks offer "Bill Pay" where you enter the biller's info, set the amount and frequency, and your bank sends payment each month.
+
+Good candidates for auto-pay: rent or mortgage, utilities, phone and internet, insurance, streaming subscriptions, and credit card minimum payments. Even with auto-pay, review your bills and statements each month for errors, price increases, or fraudulent charges.
+
+Be cautious with free trials requiring a credit card — companies often start charging when the trial ends. Set a calendar reminder to cancel before conversion. If using auto-pay with a bank account, ensure you always have enough to cover the payment. Insufficient funds can result in overdraft fees from your bank and returned-payment fees from the biller.`,
+    steps: [
+      { title: 'Choose bills for auto-pay', content: 'Start with fixed-amount bills (insurance, subscriptions, phone). Then consider variable bills like utilities where you can auto-pay the full balance or minimum.' },
+      { title: 'Log in to the biller\'s website', content: 'Go to the company\'s website or app, sign in, and find "Payment Settings," "Auto-Pay," or "Automatic Payments."' },
+      { title: 'Choose your payment method', content: 'Select bank account (usually free) or card (some billers charge a fee). Enter your payment information.' },
+      { title: 'Set amount and timing', content: 'Choose to pay the full balance, minimum, or a fixed amount. Set whether payment happens on the due date or a few days before.' },
+      { title: 'Confirm and verify', content: 'Review settings and confirm. You should receive a confirmation email. The next payment processes automatically on schedule.' },
+      { title: 'Review statements monthly', content: 'Set a monthly reminder to review bills and statements. Auto-pay does not catch billing errors or unauthorized charges.' },
+    ],
+  },
+
+  {
+    slug: 'check-credit-score-free',
+    title: 'How to Check Your Credit Score for Free',
+    excerpt: 'Check your credit score without paying — your bank, credit card company, or free apps show your score at no cost.',
+    category: 'financial-tech' as any,
+    tags: ['credit score', 'credit', 'finances', 'banking', 'free'],
+    readTime: '5 min',
+    thumbnailEmoji: '📈',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your credit score (300-850) represents your creditworthiness. A higher score means better loan rates, easier apartment approvals, and sometimes lower insurance premiums. You can check it for free — no need to pay anyone.
+
+Your bank or credit card company likely shows it for free. Chase, Bank of America, Capital One, Discover, and American Express all offer this. Log in and look for "Credit Score" or "FICO Score" on your dashboard.
+
+Credit Karma is a free app showing TransUnion and Equifax scores, updated weekly, plus factors affecting your score. It makes money by recommending products — you do not have to buy anything. Experian offers a free FICO Score at experian.com with free monitoring.
+
+Your score may vary 20-40 points between sources depending on the scoring model (FICO vs. VantageScore) and bureau. What matters is the range: 670+ is "Good," 740+ is "Very Good," 800+ is "Exceptional."
+
+Checking your own score is a "soft inquiry" and does NOT lower it. Check as often as you want. The biggest factor in your score is payment history — paying on time accounts for 35%. Setting up auto-pay for at least minimum payments is one of the most effective ways to build and maintain a good score.`,
+    steps: [
+      { title: 'Check your bank or credit card app', content: 'Log in and look for "Credit Score" or "FICO Score" on your dashboard. Most major issuers include this for free.' },
+      { title: 'Download Credit Karma', content: 'Get the free app for TransUnion and Equifax scores updated weekly, plus factors affecting your score.' },
+      { title: 'Get your Experian score', content: 'Create a free account at experian.com for your Experian FICO Score and free monitoring alerts.' },
+      { title: 'Understand the ranges', content: 'Below 580 is "Poor," 580-669 "Fair," 670-739 "Good," 740-799 "Very Good," 800+ "Exceptional."' },
+      { title: 'Know what affects your score', content: 'Payment history (35%), amounts owed (30%), credit history length (15%), new inquiries (10%), and credit types (10%). Paying on time matters most.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-fraud-alerts-bank',
+    title: 'How to Set Up Fraud Alerts on Your Bank Account',
+    excerpt: 'Enable transaction alerts and fraud notifications so your bank contacts you immediately about suspicious activity.',
+    category: 'financial-tech' as any,
+    tags: ['fraud', 'banking', 'security', 'alerts', 'identity theft'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔔',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Fraud alerts and transaction notifications are your first defense against unauthorized charges. When enabled, your bank sends a text, email, or push notification for every transaction — or when something suspicious is detected. This lets you catch fraud within minutes instead of weeks.
+
+Banks offer transaction alerts (notifications for every transaction over a threshold you set) and fraud monitoring alerts (automated detection of unusual activity like purchases in different states or large transactions).
+
+To set up: log in to your bank's app or website, go to Settings or Alerts, and look for "Transaction Alerts" or "Security Alerts." Choose notification types: purchases over a certain amount, ATM withdrawals, online transactions, international transactions, low balance warnings, and deposits received.
+
+For fraud monitoring, make sure your phone number and email are current in your bank's records. If your bank cannot reach you about suspicious activity, they may freeze your card.
+
+If you receive a text claiming to be from your bank with a link to click — do NOT click it. Scammers send fake alert texts to steal your login. Instead, call your bank directly using the number on the back of your card.`,
+    steps: [
+      { title: 'Open your bank\'s settings', content: 'Sign in to your bank\'s app or website. Navigate to Settings, Alerts, Notifications, or Security.' },
+      { title: 'Enable transaction alerts', content: 'Turn on notifications for purchases, ATM withdrawals, online transactions, and balance changes. Set threshold to $0 to see every transaction.' },
+      { title: 'Choose notification method', content: 'Select push notifications (fastest), text messages, or email. Push notifications offer the most immediate protection.' },
+      { title: 'Verify contact information', content: 'Make sure your phone number and email are up to date so your bank can reach you about suspicious transactions.' },
+      { title: 'Recognize fake fraud alerts', content: 'If you get a text with a link claiming to be your bank, do not click it. Call the number on the back of your card to verify if the alert is real.' },
+    ],
+  },
+
+  {
+    slug: 'use-paypal-safely',
+    title: 'How to Use PayPal Safely',
+    excerpt: 'Set up PayPal, link your bank account, and use it for online purchases with extra protection for your financial info.',
+    category: 'financial-tech' as any,
+    tags: ['PayPal', 'online shopping', 'payments', 'security', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `PayPal lets you pay online without sharing your card or bank details with the seller. You log in to PayPal at checkout, confirm payment, and PayPal handles the rest. The seller never sees your financial details.
+
+Create an account at paypal.com — click "Sign Up," choose "Personal Account," enter your info, and verify your email. Link a bank account in your PayPal Wallet — PayPal verifies it with two small deposits you confirm. Bank payments have no fees for personal transactions.
+
+At checkout online, look for the PayPal button. Click it, sign in, and confirm. PayPal's buyer protection means if an item does not arrive or is significantly different from described, PayPal investigates and may refund your money — protection for eligible purchases within 180 days.
+
+Enable two-factor authentication in Settings → Security → 2-Step Verification. Never send money to strangers outside normal checkout. Never click links in emails claiming to be PayPal — always type paypal.com directly. Do not keep a large balance in PayPal; link a bank account and let PayPal pull when needed to minimize exposure if compromised.`,
+    steps: [
+      { title: 'Create a PayPal account', content: 'Go to paypal.com, click "Sign Up," choose "Personal Account," enter your details, and verify your email.' },
+      { title: 'Link your bank account', content: 'In PayPal Wallet, click "Link a bank account" and enter routing and account numbers. Verify with the two small deposits PayPal makes.' },
+      { title: 'Enable two-factor authentication', content: 'Go to Settings → Security → 2-Step Verification. Choose text message or authenticator app for extra login protection.' },
+      { title: 'Use PayPal at checkout', content: 'When shopping online, click the PayPal button at checkout, sign in, and confirm. The seller never sees your bank or card details.' },
+      { title: 'Understand buyer protection', content: 'If an item does not arrive or is not as described, open a dispute within 180 days. PayPal investigates and may refund you.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-apple-pay-google-pay',
+    title: 'How to Set Up Apple Pay or Google Pay',
+    excerpt: 'Add your card to Apple Pay or Google Pay for quick, secure contactless payments with your phone.',
+    category: 'financial-tech' as any,
+    tags: ['Apple Pay', 'Google Pay', 'contactless', 'mobile payments', 'wallet'],
+    readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/IN1370MtoTs',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Apple Pay (iPhone) and Google Pay (Android) let you pay at stores by holding your phone near the card reader. Look for the contactless payment symbol (sideways WiFi icon) at checkout. These are safer than physical cards — your real card number is never transmitted to the merchant.
+
+For iPhone: open the Wallet app, tap "+," scan your card or enter numbers manually. Your bank verifies the card with a code. To pay: double-click the side button (Face ID) or rest your finger on Home button (Touch ID) while holding near the reader.
+
+For Android: download Google Wallet from Play Store, tap "Add to Wallet" → "Payment card," and enter card info. Your bank sends a verification code. To pay: unlock your phone and hold it near the reader.
+
+You can add multiple cards and set a default for everyday purchases. Switch cards at payment time if needed. Contactless payments work at millions of stores, restaurants, and vending machines.`,
+    steps: [
+      { title: 'iPhone: Open Wallet app', content: 'Find the Wallet app (blue icon) and tap "+" to add a new card.' },
+      { title: 'Android: Open Google Wallet', content: 'Download Google Wallet from Play Store, tap "Add to Wallet" → "Payment card."' },
+      { title: 'Add your card', content: 'Scan your physical card with the camera or enter the number, expiration, and security code manually.' },
+      { title: 'Verify with your bank', content: 'Your bank sends a verification code by text, email, or call. Enter the code in the app.' },
+      { title: 'Pay at a store', content: 'Look for the contactless symbol. iPhone: double-click side button, hold near reader. Android: unlock phone, hold near reader. Wait for vibration confirmation.' },
+    ],
+  },
+
+  {
+    slug: 'use-bank-mobile-app',
+    title: 'How to Use Your Bank\'s Mobile App',
+    excerpt: 'Download and set up your bank\'s app to check balances, pay bills, transfer money, and deposit checks from your phone.',
+    category: 'financial-tech' as any,
+    tags: ['mobile banking', 'bank app', 'finances', 'phone', 'beginners'],
+    readTime: '6 min',
+    thumbnailEmoji: '🏧',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your bank's mobile app puts your entire banking experience in your pocket — check balances, review transactions, pay bills, transfer money, deposit checks, and lock your debit card. Nearly every bank offers a free app.
+
+Download your bank's official app from the App Store or Google Play Store. Verify the publisher matches your bank's name. Sign in with your online banking credentials. If you have never set up online banking, the app guides you through enrollment.
+
+Enable Face ID, Touch ID, or fingerprint login when prompted — this is faster and adds security. The home screen shows account balances; tap an account for recent transactions and available balance.
+
+Key features: "Transfer" or "Move Money" for moving between accounts, "Bill Pay" for scheduling payments, "Mobile Deposit" for photographing checks, and the ability to lock/unlock your debit card if misplaced.
+
+Turn on push notifications in the app settings for instant alerts about deposits, withdrawals, and suspicious activity. This is one of the best ways to catch unauthorized transactions quickly.`,
+    steps: [
+      { title: 'Download your bank\'s official app', content: 'Search your bank\'s name in the App Store or Google Play Store. Verify the publisher is your actual bank before downloading.' },
+      { title: 'Sign in or enroll', content: 'Sign in with your online banking username and password. If you have not set up online banking, tap "Enroll" and follow the prompts.' },
+      { title: 'Enable biometric login', content: 'When asked to use Face ID, Touch ID, or fingerprint, tap "Yes" for faster, more secure logins.' },
+      { title: 'Explore your accounts', content: 'The home screen shows balances. Tap any account to see recent transactions, pending charges, and available balance.' },
+      { title: 'Set up bill pay and transfers', content: 'Find "Bill Pay" to set up regular payments and "Transfer" to move money between your accounts.' },
+      { title: 'Turn on push notifications', content: 'Enable alerts for deposits, withdrawals, large transactions, and low balance warnings in the app settings.' },
+    ],
+  },
+
+  {
+    slug: 'monitor-bank-suspicious-activity',
+    title: 'How to Monitor Your Bank Account for Suspicious Activity',
+    excerpt: 'Learn what to watch for in bank statements and how to catch unauthorized charges before they become bigger problems.',
+    category: 'financial-tech' as any,
+    tags: ['banking', 'fraud', 'security', 'monitoring', 'finances'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔍',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Regularly checking your bank account is one of the most effective fraud protections. Thieves often start with small test charges ($1-2) to check if an account is active before making larger purchases. Catching these early can save thousands.
+
+Check your account at least weekly — with your bank's app, this takes under two minutes. Watch for: charges from unfamiliar merchants (especially small amounts), duplicate charges, unauthorized recurring payments, and transactions in places you have not visited.
+
+If you find suspicious activity: contact your bank immediately by calling the number on the back of your card. They will freeze the card, issue a new one, investigate, and reverse confirmed fraud. Federal law limits your liability to $50 for credit cards and $50-$500 for debit cards depending on how quickly you report.
+
+After reporting, change your online banking password and passwords for connected accounts. Monitor closely for the next few weeks as additional unauthorized charges may appear.
+
+Prevention: enable transaction alerts for every charge, use strong unique passwords, avoid banking on public WiFi, and check your credit report annually. Consider using credit cards instead of debit cards for everyday purchases — credit cards have stronger federal fraud protections and the money is not taken directly from your bank account.`,
+    steps: [
+      { title: 'Check your account weekly', content: 'Open your bank app and review recent transactions — takes under two minutes. Set a weekly reminder.' },
+      { title: 'Look for small unfamiliar charges', content: 'Watch for charges as small as $1 from unknown merchants. Also check for duplicates and unfamiliar recurring payments.' },
+      { title: 'Report suspicious charges immediately', content: 'Call the number on your bank card right away. They will freeze the card, investigate, and issue a replacement.' },
+      { title: 'Change your banking password', content: 'After reporting fraud, change your online banking password and any accounts using the same credentials.' },
+      { title: 'Enable transaction notifications', content: 'Turn on push notifications for every transaction so you catch unauthorized charges within minutes.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-direct-deposit',
+    title: 'How to Set Up Direct Deposit',
+    excerpt: 'Get your paycheck, Social Security, or tax refund deposited straight to your bank account — faster and safer.',
+    category: 'financial-tech' as any,
+    tags: ['direct deposit', 'paycheck', 'banking', 'employment', 'finances'],
+    readTime: '5 min',
+    thumbnailEmoji: '💰',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Direct deposit sends money from a payer (employer, government, retirement fund) straight into your bank account on payday. No paper check, no bank trip, no waiting for it to clear. Money is available on the payment date, often earlier than a physical check.
+
+You need two numbers from your bank: the routing number (9 digits identifying your bank) and your account number. Find both in your bank's app under "Account Details" or "Direct Deposit," on a check, or on your bank's website.
+
+For your paycheck: ask HR or payroll for a direct deposit form. Fill in routing number, account number, and whether it goes to checking or savings. Many employers let you split deposits between accounts (like 80% checking, 20% savings).
+
+For Social Security: sign in at ssa.gov and update your payment method in account settings. For tax refunds: enter routing and account numbers when filing your return — refunds arrive in about 21 days versus 6-8 weeks by mail.
+
+Double-check every digit before submitting. A wrong number can send money to someone else's account. Most banks display these numbers clearly in their app.`,
+    steps: [
+      { title: 'Find your routing and account numbers', content: 'Open your bank app and look for "Account Details" or "Direct Deposit Info." The routing number is 9 digits; the account number identifies your specific account.' },
+      { title: 'Get the form from your employer', content: 'Ask HR or payroll for a direct deposit authorization form, or look for the option in your employee portal.' },
+      { title: 'Fill in bank information', content: 'Enter routing number, account number, and specify checking or savings. Double-check every digit.' },
+      { title: 'Choose deposit split (optional)', content: 'Many employers let you split your paycheck — consider sending a percentage directly to savings.' },
+      { title: 'Submit and confirm', content: 'Submit the form. It may take one or two pay cycles to start. Confirm with HR when active.' },
+    ],
+  },
+
+  {
+    slug: 'dispute-credit-card-charge',
+    title: 'How to Dispute a Charge on Your Credit Card',
+    excerpt: 'Found a charge you do not recognize? Learn how to dispute it with your credit card company and get your money back.',
+    category: 'financial-tech' as any,
+    tags: ['credit card', 'dispute', 'fraud', 'billing', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '⚠️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If you find an unauthorized charge, wrong amount, or charge for something you did not receive on your credit card, you have the right to dispute it under the Fair Credit Billing Act. Your maximum liability for unauthorized charges is $50, and most issuers waive even that.
+
+Reasons to dispute: unauthorized transactions, billing errors (wrong amount, double charges, returned item charges), goods not received, or goods significantly different from advertised.
+
+Try contacting the merchant first for billing errors or undelivered goods — many issues resolve with a phone call. Keep records of communication. If the merchant does not resolve it, or the charge is unauthorized, contact your credit card company through the app, website, or phone number on your card.
+
+When filing: explain specifically why you are disputing ("I did not authorize this transaction" or "I was charged $75.99 but the correct amount was $45.99"). Provide supporting documents — receipts, confirmations, emails, photos.
+
+Your card company must acknowledge within 30 days and resolve within 90 days. During investigation, you do not pay the disputed amount and it cannot be reported as overdue. You must dispute within 60 days of the statement date, so review statements regularly.`,
+    steps: [
+      { title: 'Identify the suspicious charge', content: 'Review your statement in your card company\'s app or website. Note the date, amount, and merchant name.' },
+      { title: 'Try contacting the merchant', content: 'For billing errors or undelivered goods, call or email the merchant first. Keep records of your communication.' },
+      { title: 'File a dispute with your card company', content: 'In the app or website, find the charge and tap "Dispute" or "Report a problem." Or call the number on your card.' },
+      { title: 'Provide documentation', content: 'Upload evidence: receipts, order confirmations, emails, tracking numbers, or photos of damaged goods.' },
+      { title: 'Wait for investigation', content: 'Your card company acknowledges within 30 days and resolves within 90 days. You do not pay the disputed amount during this time.' },
+      { title: 'Review the outcome', content: 'If the charge is removed, verify on your statement. If it stands, you can request the evidence used in the decision.' },
+    ],
+  },
+
+  {
+    slug: 'understand-credit-card-statement',
+    title: 'How to Understand Your Credit Card Statement',
+    excerpt: 'Learn how to read your credit card statement — what each section means, how interest works, and what to watch for.',
+    category: 'financial-tech' as any,
+    tags: ['credit card', 'statement', 'interest', 'billing', 'finances'],
+    readTime: '6 min',
+    thumbnailEmoji: '📄',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your credit card statement shows everything that happened on your account during the billing period. Understanding each section helps you manage money, catch errors, and avoid unnecessary interest.
+
+The Account Summary at the top shows: previous balance, payments made, new charges, fees, interest, new balance, credit limit, and available credit. Payment Information shows your minimum payment due, total balance, due date, and a federally required warning about how long it takes to pay off the balance with minimums only.
+
+Transaction Details lists every purchase, payment, return, and fee with dates, merchant names, and amounts. Review these carefully to verify every charge. Fees and Interest shows late fees, annual fees, cash advance fees, interest charged, and your APR. If you pay your full balance by the due date, you pay zero interest.
+
+Key dates: billing cycle end date (when the statement generates), payment due date (when payment must arrive), and grace period (21-25 days between statement date and due date — no interest on new purchases if you paid last month in full).
+
+Pay your full statement balance by the due date to avoid all interest. If you cannot, always pay at least the minimum to avoid late fees and credit score damage. Set up auto-pay for at least the minimum.`,
+    steps: [
+      { title: 'Find your statement', content: 'Log in to your card company\'s website or app. Look for "Statements" or "Documents" in the menu.' },
+      { title: 'Review the Account Summary', content: 'Check previous balance, new charges, payments, and new balance. Compare to your credit limit.' },
+      { title: 'Check Payment Information', content: 'Note your due date and minimum payment. Read the payoff warning to understand why paying more than the minimum matters.' },
+      { title: 'Review every transaction', content: 'Go through the list carefully. Flag any unfamiliar charges — these could be errors or unauthorized transactions.' },
+      { title: 'Understand interest charges', content: 'Check your APR and interest charged. If you paid last statement in full by the due date, interest should be $0.' },
+      { title: 'Pay by the due date', content: 'Pay at least the minimum to avoid late fees ($25-41). Pay the full balance to avoid interest. Set up auto-pay for safety.' },
+    ],
+  },
 ];
+
+  // ═══════════════════════════════════════════
+  // SMART HOME (15 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-amazon-alexa-echo',
+    title: 'How to Set Up Amazon Alexa (Echo) from Scratch',
+    excerpt: 'Unbox and set up your Amazon Echo speaker — connect to WiFi, personalize settings, and start using voice commands.',
+    category: 'smart-home' as any,
+    tags: ['Alexa', 'Amazon Echo', 'smart speaker', 'voice assistant', 'setup'],
+    readTime: '7 min',
+    videoUrl: 'https://www.youtube.com/embed/UaEQRwaMEQk',
+    thumbnailEmoji: '🔊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `The Amazon Echo is a smart speaker powered by Alexa. Once set up, you can ask it to play music, set timers, answer questions, control smart home devices, make calls, and more — all by voice. Setup takes about 10 to 15 minutes.
+
+Plug the Echo into a power outlet and wait for the light ring to turn orange (setup mode). Download the Amazon Alexa app from the App Store or Google Play Store and sign in with your Amazon account. The app should detect your Echo automatically — if not, tap Devices → "+" → Add Device → Amazon Echo.
+
+The app walks you through connecting to WiFi (select your network and enter the password). Once connected, personalize by setting your location for weather and news, choosing a default music service, and linking smart home devices if you have any.
+
+Test by saying "Alexa, what time is it?" or "Alexa, play some music." Place the Echo in a central location — kitchen and living room work well. Alexa hears you across the room, but walls and background noise reduce accuracy.`,
+    steps: [
+      { title: 'Plug in your Echo', content: 'Plug in and wait for the orange light ring indicating setup mode.' },
+      { title: 'Download the Alexa app', content: 'Get "Amazon Alexa" from the App Store or Google Play Store. Sign in with your Amazon account.' },
+      { title: 'Add your device', content: 'The app detects your Echo automatically. If not, tap Devices → "+" → Add Device → Amazon Echo.' },
+      { title: 'Connect to WiFi', content: 'Select your home WiFi network and enter the password. Wait for the connection to complete.' },
+      { title: 'Personalize settings', content: 'Set your location, default music service, and news sources. These can be changed later in the app.' },
+      { title: 'Test with a voice command', content: 'Say "Alexa, what is the weather today?" If she responds, your Echo is ready to use.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-google-home-nest',
+    title: 'How to Set Up Google Home (Nest Hub)',
+    excerpt: 'Set up your Google Nest speaker or display — connect to WiFi, link accounts, and start using Google Assistant.',
+    category: 'smart-home' as any,
+    tags: ['Google Home', 'Nest Hub', 'smart speaker', 'Google Assistant', 'setup'],
+    readTime: '7 min',
+    thumbnailEmoji: '🏠',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Google Home devices (now Google Nest) are smart speakers and displays powered by Google Assistant. They answer questions, play music, control smart devices, make video calls (screen models), and more. Setup takes about 10 minutes.
+
+Plug in your Nest device — speakers chime and lights pulse, displays show a setup message. Download the Google Home app and sign in with your Google account (if you use Gmail, you already have one).
+
+Tap "+" → "Set up device" → "New device." The app finds your Nest device and plays a confirmation sound. Connect to WiFi by selecting your network and entering the password. Personalize: set your address, default music service, link your calendar, and set up Voice Match so Google Assistant recognizes your voice specifically.
+
+Voice Match lets the assistant give personalized calendar, commute, and music for each household member. Set it up for everyone who uses the device.
+
+Test by saying "Hey Google, what is the weather?" or "Hey Google, play jazz music."`,
+    steps: [
+      { title: 'Plug in your Nest device', content: 'Plug in and wait for the chime (speakers) or setup screen (displays).' },
+      { title: 'Download Google Home app', content: 'Get "Google Home" from the App Store or Google Play Store. Sign in with your Google account.' },
+      { title: 'Add your device', content: 'Tap "+" → "Set up device" → "New device." The app searches and plays a confirmation sound.' },
+      { title: 'Connect to WiFi', content: 'Select your network and enter the password. The device connects and downloads updates.' },
+      { title: 'Personalize settings', content: 'Set your address, music service, calendar, and Voice Match so Google recognizes your voice.' },
+      { title: 'Test a voice command', content: 'Say "Hey Google, what time is it?" or "Hey Google, tell me a joke."' },
+    ],
+  },
+
+  {
+    slug: 'connect-smart-tv-to-wifi',
+    title: 'How to Connect Your Smart TV to WiFi',
+    excerpt: 'Get your smart TV online to stream Netflix, YouTube, and apps — step-by-step for any brand.',
+    category: 'smart-home' as any,
+    tags: ['smart TV', 'WiFi', 'streaming', 'setup', 'television'],
+    readTime: '5 min',
+    thumbnailEmoji: '📺',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A smart TV needs WiFi to stream Netflix, Hulu, YouTube, and other apps. Connecting is a one-time setup that takes a few minutes. Steps are similar across Samsung, LG, Sony, TCL, Vizio, Hisense, and Roku TVs.
+
+You need your WiFi network name and password. If you do not know the password, check the back or bottom of your router for a sticker with the default password.
+
+Turn on your TV, press "Home" or "Menu" on the remote, navigate to Settings (gear icon), select "Network," "Internet," or "WiFi," choose "Wireless," and select your network name. Enter your password using the on-screen keyboard and arrow keys on your remote. Passwords are case-sensitive — enter capitals and lowercase exactly.
+
+If your router broadcasts both 2.4GHz and 5GHz networks, try 2.4GHz first — it has longer range. If the TV does not find your network, make sure the router is on and other devices can connect. Once connected, open Netflix or YouTube to test.`,
+    steps: [
+      { title: 'Open TV Settings', content: 'Press "Home" or "Menu" on your remote and navigate to Settings (gear icon).' },
+      { title: 'Find Network or WiFi settings', content: 'Look for "Network," "Internet," or "WiFi." Select it and choose "Wireless."' },
+      { title: 'Select your WiFi network', content: 'Your TV scans for networks. Find yours in the list. Try 2.4GHz for better range if you see two networks.' },
+      { title: 'Enter your WiFi password', content: 'Use the on-screen keyboard and remote arrow keys. Passwords are case-sensitive. Press "Connect."' },
+      { title: 'Verify and update', content: 'Wait for "Connected" message. Allow software updates if prompted.' },
+      { title: 'Test with a streaming app', content: 'Open Netflix or YouTube. If content loads, your TV is connected.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-roku-streaming-device',
+    title: 'How to Set Up a Roku Streaming Device',
+    excerpt: 'Set up your Roku to watch Netflix, Hulu, and hundreds of free and paid channels on any TV.',
+    category: 'smart-home' as any,
+    tags: ['Roku', 'streaming', 'setup', 'television', 'entertainment'],
+    readTime: '6 min',
+    thumbnailEmoji: '🟣',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Roku plugs into your TV's HDMI port and provides access to thousands of streaming channels — Netflix, Hulu, Disney+, YouTube, Peacock, and hundreds of free channels. Roku devices start around $30 and are known for being straightforward.
+
+Plug the Roku into an HDMI port and connect power. Turn on your TV and use the "Input" or "Source" button on your TV remote to select the correct HDMI port. Follow the on-screen setup: choose language, connect to WiFi, and link your Roku account.
+
+To link your account, the screen displays a code. On a phone or computer, go to roku.com/link and enter the code. Sign in or create a free Roku account.
+
+From the home screen, select "Streaming Channels" to browse and add apps. Most popular apps are free to download — subscriptions like Netflix require your existing account login. Roku also offers thousands of free movies and shows through The Roku Channel.
+
+Some Roku remotes have a headphone jack or support wireless listening through the free Roku mobile app, allowing private viewing without disturbing others.`,
+    steps: [
+      { title: 'Connect Roku to your TV', content: 'Plug into an HDMI port and connect the power cable to a wall outlet. Note the HDMI port number.' },
+      { title: 'Switch to the correct input', content: 'Press "Input" or "Source" on your TV remote and select the HDMI port where Roku is connected.' },
+      { title: 'Follow on-screen setup', content: 'Choose language, connect to WiFi by entering your password. Roku checks for updates.' },
+      { title: 'Link your Roku account', content: 'Enter the code shown on your TV at roku.com/link on your phone or computer. Sign in or create a free account.' },
+      { title: 'Add streaming channels', content: 'Select "Streaming Channels" and search for or browse apps. Select "Add Channel" for each one you want.' },
+      { title: 'Sign in to your services', content: 'Open each channel and sign in with your existing subscription credentials.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-amazon-fire-stick',
+    title: 'How to Set Up Amazon Fire Stick',
+    excerpt: 'Plug in and set up your Fire TV Stick to stream movies, shows, and live TV on any television.',
+    category: 'smart-home' as any,
+    tags: ['Fire Stick', 'Amazon', 'streaming', 'setup', 'television'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔥',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `The Amazon Fire TV Stick turns any TV into a smart TV with access to Netflix, Prime Video, Hulu, Disney+, YouTube, and thousands of apps. It also has Alexa built into the remote for voice search.
+
+Plug the Fire Stick into an HDMI port. Connect the USB power cable to the included power adapter (use the wall outlet, not the TV's USB port — the Fire Stick needs more power). Turn on your TV and select the correct HDMI input.
+
+The remote pairs automatically. If it does not, hold the Home button for 10 seconds. Follow the on-screen steps: choose language, connect to WiFi, and sign in with your Amazon account.
+
+The Fire Stick downloads updates and may restart. Browse and install apps from the home screen. The Alexa button on the remote (microphone icon) lets you search by voice — hold it and say "Find comedies on Netflix" or "Open YouTube."
+
+If you have Amazon Prime, you get free access to thousands of titles through Prime Video — look for titles marked "Prime."`,
+    steps: [
+      { title: 'Connect to your TV', content: 'Plug the Fire Stick into an HDMI port. Connect the power cable to the wall adapter (not TV USB). Note the HDMI port number.' },
+      { title: 'Switch to the correct input', content: 'Press "Input" or "Source" on your TV remote. Select the HDMI port where the Fire Stick is plugged in.' },
+      { title: 'Pair the remote', content: 'The remote should pair automatically. If not, hold the Home button (house icon) for 10 seconds.' },
+      { title: 'Connect to WiFi and sign in', content: 'Select your language, choose your WiFi network, enter the password, and sign in with your Amazon account.' },
+      { title: 'Download updates and browse', content: 'Wait for updates to install. Browse the home screen for featured apps or search for specific ones.' },
+      { title: 'Try Alexa voice search', content: 'Hold the microphone button and say the name of a show, movie, or app. Alexa finds it across your installed apps.' },
+    ],
+  },
+
+  {
+    slug: 'use-apple-tv-beginners',
+    title: 'How to Use Apple TV for Beginners',
+    excerpt: 'Set up and navigate your Apple TV to stream shows, movies, music, and more — a complete first-time guide.',
+    category: 'smart-home' as any,
+    tags: ['Apple TV', 'streaming', 'Apple', 'setup', 'beginners'],
+    readTime: '7 min',
+    thumbnailEmoji: '🍎',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Apple TV plugs into your TV and provides access to the Apple TV app, Netflix, Hulu, Disney+, YouTube, and thousands of other apps. It integrates with iPhone — you can AirPlay content, use your phone as a remote, and access photos and music.
+
+Connect Apple TV to your TV with HDMI, plug in the power cable, and select the correct input. If you have an iPhone, hold it near the Apple TV to transfer WiFi and Apple ID settings automatically. Otherwise, follow on-screen steps to connect to WiFi and sign in with your Apple ID.
+
+The Siri Remote has a touch surface on top — swipe to navigate, click to select, press the back button to go back, and hold the Siri button for voice search. Download apps from the App Store (blue "A" icon).
+
+Siri searches across all installed apps — hold the microphone button and say "Show me action movies." You can also AirPlay from your iPhone by tapping the AirPlay icon (rectangle with triangle) in any app. If the Siri Remote feels tricky, use your iPhone as a remote through Control Center.`,
+    steps: [
+      { title: 'Connect Apple TV', content: 'Connect HDMI cable, plug in power, and select the correct HDMI input on your TV.' },
+      { title: 'Set up with iPhone or manually', content: 'Hold your iPhone near Apple TV for automatic setup, or select language, connect to WiFi, and sign in manually.' },
+      { title: 'Sign in with your Apple ID', content: 'Enter your Apple ID and password. Approve two-factor authentication if prompted.' },
+      { title: 'Learn the Siri Remote', content: 'Swipe the touch surface to navigate, click center to select, press back to go to previous screen, hold Siri button for voice search.' },
+      { title: 'Download streaming apps', content: 'Open the App Store and search for Netflix, Hulu, Disney+, YouTube, and other services. Sign in to each.' },
+      { title: 'Try AirPlay', content: 'On your iPhone, tap the AirPlay icon in any app and select Apple TV to send content to your TV screen.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-ring-doorbell',
+    title: 'How to Set Up a Ring Doorbell',
+    excerpt: 'Install your Ring Video Doorbell to see who is at your door from your phone — home or away.',
+    category: 'smart-home' as any,
+    tags: ['Ring', 'doorbell', 'home security', 'smart home', 'camera'],
+    readTime: '8 min',
+    thumbnailEmoji: '🚪',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `A Ring Video Doorbell lets you see, hear, and talk to whoever is at your door from your phone. It records video and sends motion alerts. Most models can be installed with basic tools.
+
+Download the Ring app, create an account, tap "Set Up a Device" → "Doorbells," and scan the QR code on the back of the Ring. The app guides you through WiFi connection.
+
+For battery-powered models: position the mounting bracket at about 4 feet from the ground, mark and drill screw holes, attach the bracket, and snap the Ring onto it. For wired models: turn off power at the breaker, remove your old doorbell, connect the two wires to the Ring's terminals, mount it, and turn power back on.
+
+Test by pressing the doorbell button — you should receive a notification and see live video. Adjust motion sensitivity in the app to reduce false alerts. Use Motion Zones to focus detection on your porch and walkway only.
+
+Ring Protect subscription plans let you save and review video recordings. Without a plan, you still get live video and motion alerts.`,
+    steps: [
+      { title: 'Download the Ring app', content: 'Get the Ring app from App Store or Google Play Store. Create an account or sign in.' },
+      { title: 'Add your device', content: 'Tap "Set Up a Device" → "Doorbells." Scan the QR code on the Ring\'s back to begin WiFi setup.' },
+      { title: 'Choose installation type', content: 'Battery-powered models need no wiring. Wired models connect to existing doorbell wires.' },
+      { title: 'Mount the doorbell', content: 'Position the bracket at 4 feet high, drill screw holes, attach the bracket, and snap on the Ring.' },
+      { title: 'Test the doorbell', content: 'Press the button to trigger a notification and live video on your phone. Test two-way audio.' },
+      { title: 'Adjust motion settings', content: 'In the app, set Motion Zones and sensitivity to reduce false alerts from street traffic and pets.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-smart-light-bulbs',
+    title: 'How to Set Up Smart Light Bulbs',
+    excerpt: 'Install smart bulbs and control them from your phone or with voice commands through Alexa or Google Assistant.',
+    category: 'smart-home' as any,
+    tags: ['smart lights', 'Philips Hue', 'smart home', 'lighting', 'automation'],
+    readTime: '6 min',
+    thumbnailEmoji: '💡',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Smart light bulbs let you control lighting from your phone, set schedules, change colors, and dim — all without getting up. Popular brands include Philips Hue, LIFX, Wyze, and TP-Link Kasa. WiFi bulbs (Wyze, LIFX, Kasa) connect directly to your WiFi — no extra equipment needed. Hub-based bulbs (Philips Hue) require a small hub that plugs into your router.
+
+For WiFi bulbs: screw the bulb in and make sure the wall switch is ON (smart bulbs need constant power). Download the manufacturer's app, create an account, tap "Add Device," and follow the pairing instructions — the bulb usually blinks to confirm pairing mode.
+
+Once connected, you can turn lights on/off, adjust brightness, change color temperature (warm for evenings, cool for working), set schedules, and create "scenes" for different activities.
+
+For voice control, link your smart bulb account in the Alexa or Google Home app. Then say "Alexa, turn off the living room light" or "Hey Google, dim the bedroom to 50%."
+
+Leave wall switches ON at all times with smart bulbs. If the switch is off, the bulb loses power and cannot respond to commands. Consider a smart switch cover to prevent accidental switch-offs.`,
+    steps: [
+      { title: 'Install the bulb', content: 'Screw in the smart bulb and make sure the wall switch is ON — smart bulbs need constant power.' },
+      { title: 'Download the app', content: 'Get your bulb brand\'s app (Wyze, LIFX, Kasa, Philips Hue) and create an account.' },
+      { title: 'Add the bulb', content: 'Tap "Add Device" and follow pairing instructions. The bulb blinks to confirm pairing mode. Connect to your WiFi.' },
+      { title: 'Test the controls', content: 'Use the app to turn on/off, adjust brightness, and change color. Set a schedule for automatic on/off times.' },
+      { title: 'Connect to your smart speaker', content: 'In the Alexa or Google Home app, link your bulb\'s brand account for voice control.' },
+      { title: 'Keep the wall switch ON', content: 'Leave the physical switch on. Use the app or voice commands to control the bulb.' },
+    ],
+  },
+
+  {
+    slug: 'use-smart-thermostat',
+    title: 'How to Use a Smart Thermostat (Nest/Ecobee)',
+    excerpt: 'Set up a smart thermostat to control home temperature from your phone and save on energy bills.',
+    category: 'smart-home' as any,
+    tags: ['smart thermostat', 'Nest', 'Ecobee', 'energy saving', 'smart home'],
+    readTime: '7 min',
+    thumbnailEmoji: '🌡️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `A smart thermostat replaces your old thermostat and lets you control heating and cooling from your phone, set schedules, and save money. Nest and Ecobee are the most popular brands. Both learn your preferences and adjust automatically when you leave home.
+
+Before buying, check compatibility with your HVAC system. Both Nest and Ecobee have compatibility checkers on their websites. Turn off your HVAC at the breaker, photograph your current wiring (crucial for correct installation), label each wire with the included stickers, mount the new base plate, connect wires to matching terminals, attach the display, and turn power back on.
+
+Download the Nest or Ecobee app, create an account, and follow the setup wizard for WiFi connection, temperature preferences, and schedule creation. Set comfortable temperatures for home/awake, sleeping, and away. Enable Eco/Away mode to save energy when you leave.
+
+Both Nest and Ecobee typically pay for themselves in 1-2 years through energy savings — the EPA estimates about $180 per year with a properly programmed thermostat.`,
+    steps: [
+      { title: 'Check compatibility', content: 'Visit nest.com/widget/compatibility or ecobee.com/compatibility. Enter your current wiring details.' },
+      { title: 'Photograph and label wiring', content: 'Turn off HVAC at the breaker. Take a clear photo of current wires, then label each with the included stickers.' },
+      { title: 'Install the thermostat', content: 'Mount the base plate, connect labeled wires to matching terminals, and attach the display.' },
+      { title: 'Turn on and set up in the app', content: 'Turn HVAC back on. Download the app, create an account, connect to WiFi, and configure preferences.' },
+      { title: 'Create a schedule', content: 'Set temperatures for home/awake, sleeping, and away. Enable Eco mode for automatic savings when you leave.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-robot-vacuum',
+    title: 'How to Set Up a Robot Vacuum (Roomba)',
+    excerpt: 'Unbox, charge, and set up your robot vacuum to clean floors automatically on a schedule.',
+    category: 'smart-home' as any,
+    tags: ['Roomba', 'robot vacuum', 'smart home', 'cleaning', 'automation'],
+    readTime: '6 min',
+    thumbnailEmoji: '🤖',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A robot vacuum cleans floors automatically, navigating around furniture and along baseboards. Popular brands include Roomba (iRobot), Roborock, Shark, and Ecovacs. Once set up, schedule it to clean daily or start it from your phone.
+
+Place the charging dock against a wall on a hard floor with 1.5 feet of clearance on each side and 4 feet in front. Plug it in and place the robot on the dock to charge fully (2-3 hours).
+
+Download the manufacturer's app (iRobot Home for Roomba, Roborock, etc.), create an account, and tap "Add a Robot." The app guides you through WiFi connection — usually hold a button on the robot until it beeps, then enter your WiFi password in the app.
+
+Before the first run, pick up loose items from the floor — charging cables, socks, shoelaces, and small toys can tangle in the brushes. Tuck cords behind furniture.
+
+Tap "Clean" in the app or press the button on top. The robot maps your home during the first few runs and gets more efficient over time. Set a cleaning schedule (like weekdays at 10 AM) so it cleans automatically while you are out.`,
+    steps: [
+      { title: 'Set up the charging dock', content: 'Place against a wall on hard floor with clearance. Plug in and place the robot on it to charge fully (2-3 hours).' },
+      { title: 'Download the app', content: 'Get the app for your robot\'s brand, create an account, and tap "Add a Robot."' },
+      { title: 'Connect to WiFi', content: 'Follow app instructions — press a button on the robot, then enter your WiFi password.' },
+      { title: 'Prepare your floors', content: 'Pick up loose items — cables, socks, small toys. Tuck cords behind furniture.' },
+      { title: 'Run the first cleaning', content: 'Tap "Clean" in the app or press the robot\'s button. It maps your home during the first few runs.' },
+      { title: 'Set a schedule', content: 'Create a cleaning schedule in the app. The robot starts automatically, cleans, and returns to dock.' },
+    ],
+  },
+
+  {
+    slug: 'use-voice-commands-alexa',
+    title: 'How to Use Voice Commands with Alexa',
+    excerpt: 'Learn the most useful Alexa voice commands for music, timers, news, smart home, and everyday tasks.',
+    category: 'smart-home' as any,
+    tags: ['Alexa', 'voice commands', 'smart speaker', 'Amazon Echo', 'tips'],
+    readTime: '6 min',
+    thumbnailEmoji: '🗣️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Once your Echo is set up, learn what to ask Alexa. Start every request with "Alexa" followed by your command. Here are the most useful commands:
+
+Timers: "Alexa, set a timer for 10 minutes." "Alexa, set a pasta timer for 12 minutes." You can have multiple named timers running at once. Weather: "Alexa, what is the weather today?" "Alexa, will it rain tomorrow?" Music: "Alexa, play jazz music." "Alexa, play Frank Sinatra." "Alexa, turn up the volume." "Alexa, skip this song."
+
+News: "Alexa, what is the news?" Customize news sources in the app under Flash Briefing. Smart home: "Alexa, turn off the living room lights." "Alexa, set the thermostat to 72." (Requires compatible linked devices.)
+
+Shopping and reminders: "Alexa, add milk to my shopping list." "Alexa, remind me to take my medication at 8 PM." Communication: "Alexa, call Mom." "Alexa, announce that dinner is ready." (Broadcasts to all Echo devices in your home.)
+
+General knowledge: "Alexa, how many cups are in a gallon?" "Alexa, what time does Walgreens close?"
+
+If Alexa misunderstands you, check what she heard in the Alexa app under "Activity."`,
+    steps: [
+      { title: 'Start with timers and weather', content: 'Try "Alexa, set a timer for 5 minutes" and "Alexa, what is the weather?" These build comfort with voice commands.' },
+      { title: 'Play music', content: 'Say "Alexa, play [artist]" or "Alexa, play relaxing music." Control with "Alexa, pause/skip/volume up."' },
+      { title: 'Set reminders and alarms', content: '"Alexa, remind me to call the doctor at 2 PM." "Alexa, set an alarm for 7:30 AM every weekday."' },
+      { title: 'Manage lists', content: '"Alexa, add eggs to my shopping list." View and manage lists in the Alexa app.' },
+      { title: 'Control smart home devices', content: '"Alexa, turn off the lights." "Alexa, set the thermostat to 70." Link devices in the Alexa app first.' },
+      { title: 'Use announcements', content: '"Alexa, announce that lunch is ready" broadcasts to all Echo devices in your home.' },
+    ],
+  },
+
+  {
+    slug: 'change-alexa-privacy-settings',
+    title: 'How to Change Alexa Privacy Settings',
+    excerpt: 'Control what data Alexa collects — delete voice recordings, manage permissions, and protect your privacy.',
+    category: 'smart-home' as any,
+    tags: ['Alexa', 'privacy', 'Amazon Echo', 'settings', 'data'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `When you talk to Alexa, Amazon records what you say. You can manage and delete these recordings and control data usage.
+
+Open the Alexa app → More → Settings → Alexa Privacy → Review Voice History. Here you can listen to and delete recordings individually, by date range, or all at once. In "Manage Your Alexa Data," set automatic deletion after 3 or 18 months, or choose "Do not save recordings."
+
+Opt out of human review by toggling off "Help Improve Alexa" and "Use of Messages to Improve Transcriptions" in Manage Your Alexa Data.
+
+Every Echo has a microphone mute button (red, with a microphone icon). When muted, the device physically disconnects the microphone — a red light confirms it is muted. Use this during private conversations or when sleeping.
+
+Review Alexa skills permissions under More → Skills & Games → Your Skills. Tap any skill to manage its access to your location, address, or contacts. Check your privacy settings at least once a year as Amazon occasionally adds new data features.`,
+    steps: [
+      { title: 'Open Alexa Privacy settings', content: 'Alexa app → More → Settings → Alexa Privacy. This is the hub for all privacy controls.' },
+      { title: 'Delete voice history', content: 'Tap "Review Voice History." Delete individual recordings or all of them at once.' },
+      { title: 'Set up automatic deletion', content: 'In "Manage Your Alexa Data," choose auto-delete after 3 months, 18 months, or "Do not save recordings."' },
+      { title: 'Opt out of human review', content: 'Toggle off "Help Improve Alexa" and "Use of Messages to Improve Transcriptions."' },
+      { title: 'Use the mute button', content: 'Press the microphone button (turns red) when you want complete privacy. Press again to unmute.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-smart-plug',
+    title: 'How to Set Up a Smart Plug',
+    excerpt: 'Turn any lamp or appliance into a smart device with a smart plug — control it by phone or voice.',
+    category: 'smart-home' as any,
+    tags: ['smart plug', 'smart home', 'automation', 'Alexa', 'Google Home'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔌',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A smart plug goes between a wall outlet and your lamp, fan, or coffee maker. Once set up, you control that device from your phone, set schedules, and use voice commands. Popular brands include TP-Link Kasa, Wyze, Amazon Smart Plug, and Meross, costing $8-15 each.
+
+Plug it in — the indicator light blinks for pairing mode. Download the brand's app, create an account, tap "Add Device," and follow the instructions to connect to WiFi.
+
+Plug a device with a physical ON/OFF switch (lamp, fan, coffee maker) into the smart plug. The device's switch must be in the ON position so the smart plug can control it. Smart plugs do NOT work with electronic-button devices (modern TVs, computers).
+
+Test on/off from the app. Set schedules — turn the lamp on at sunset and off at 11 PM. For voice control, link the smart plug's account in the Alexa or Google Home app. Then say "Alexa, turn on the living room lamp."
+
+Great uses: scheduling lamps for vacation security, starting a coffee maker in the morning, turning off fans at bedtime, and monitoring energy usage (some models track electricity consumption).`,
+    steps: [
+      { title: 'Plug it in', content: 'Insert the smart plug into a wall outlet. The indicator light should blink for pairing mode.' },
+      { title: 'Download the app and add device', content: 'Get the brand\'s app, create an account, tap "Add Device," and follow instructions to connect to WiFi.' },
+      { title: 'Plug in your device', content: 'Plug a lamp or appliance with a physical ON/OFF switch into the smart plug. Leave the switch in the ON position.' },
+      { title: 'Test and set schedules', content: 'Use the app to turn on/off. Create schedules for automatic control — sunset to 11 PM for lamps, for example.' },
+      { title: 'Link to voice assistant', content: 'In the Alexa or Google Home app, link your smart plug brand for voice control.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-home-security-camera',
+    title: 'How to Set Up a Security Camera at Home',
+    excerpt: 'Install a security camera to monitor your home from your phone — live video and motion alerts.',
+    category: 'smart-home' as any,
+    tags: ['security camera', 'home security', 'smart home', 'surveillance', 'safety'],
+    readTime: '7 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Home security cameras let you watch live video, receive motion alerts, and review recordings from your phone. Popular brands include Ring, Wyze, Arlo, Nest Cam, and Eufy, starting around $25-40. No professional installation or monitoring contract is required.
+
+Choose indoor vs. outdoor, wired vs. battery-powered, and whether you need cloud storage (subscription) or local storage (microSD card). Place indoor cameras in living rooms, entryways, and hallways. Outdoor cameras go near front door, garage, or back yard.
+
+Download the camera's app, create an account, tap "Add Device," and select your model. Connect to WiFi — usually scan a QR code on the camera and enter your WiFi password. Mount using included hardware (magnetic, adhesive, or screw-in bracket) at a slight downward angle.
+
+Configure motion detection zones in the app to focus on areas that matter (doorways, walkways) and exclude areas that cause false alerts (roads, trees). Check local recording laws — video is generally permitted on your property, but audio rules may differ.
+
+A visible camera also acts as a deterrent. For outdoor use, ensure the camera is weather-rated (IP65 or IP67).`,
+    steps: [
+      { title: 'Choose type and location', content: 'Decide indoor or outdoor, wired or battery. Choose a spot with a good vantage point and WiFi signal.' },
+      { title: 'Download the app', content: 'Get the camera brand\'s app, create an account, tap "Add Device," and select your model.' },
+      { title: 'Connect to WiFi', content: 'Scan the QR code on the camera and enter your WiFi password in the app.' },
+      { title: 'Mount the camera', content: 'Use included hardware. Position at a slight downward angle aimed at entry points.' },
+      { title: 'Configure motion detection', content: 'Set detection zones and sensitivity to focus on important areas and reduce false alerts.' },
+      { title: 'Test and review', content: 'Walk through the camera\'s view to trigger an alert. Check video quality and adjust angle if needed.' },
+    ],
+  },
+
+  {
+    slug: 'connect-bluetooth-speakers-tv',
+    title: 'How to Connect Bluetooth Speakers to Your TV',
+    excerpt: 'Pair wireless Bluetooth speakers or headphones with your TV for better sound or private listening.',
+    category: 'smart-home' as any,
+    tags: ['Bluetooth', 'speakers', 'television', 'audio', 'wireless'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔈',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `If your TV speakers sound thin, connect Bluetooth speakers for better audio. Bluetooth headphones are great for private listening at night. Most smart TVs made after 2018 have built-in Bluetooth — check in Settings → Sound for "Bluetooth" options. If your TV lacks Bluetooth, buy a Bluetooth transmitter ($15-40) that plugs into the headphone jack or optical port.
+
+Put your speaker/headphones into pairing mode — usually hold the power or Bluetooth button until a light flashes blue. On your TV, go to Settings → Sound → Bluetooth → "Add Device" or "Pair New Device." Select your device from the list and wait for "Connected."
+
+Audio now plays through the Bluetooth device. To switch back, change the output to "TV Speaker" in Sound settings.
+
+If there is a delay between video and audio (lip sync issue), look for "Audio Delay" or "Lip Sync" in your TV's Sound settings. For the best experience with soundbars, use HDMI ARC instead of Bluetooth — it provides better quality with no delay. Look for an HDMI port labeled "ARC" or "eARC."`,
+    steps: [
+      { title: 'Check if your TV has Bluetooth', content: 'Go to Settings → Sound. Look for "Bluetooth" or "Bluetooth Speaker List."' },
+      { title: 'Put speaker in pairing mode', content: 'Hold the power or Bluetooth button until the light flashes blue or you hear "pairing mode."' },
+      { title: 'Search for devices on your TV', content: 'Settings → Sound → Bluetooth → "Add Device." Your TV searches for nearby Bluetooth devices.' },
+      { title: 'Connect your speaker', content: 'Select your device from the list. Wait for "Connected" confirmation.' },
+      { title: 'Adjust for audio delay', content: 'If sound is out of sync, look for "Audio Delay" or "Lip Sync Adjustment" in Sound settings.' },
+    ],
+  },

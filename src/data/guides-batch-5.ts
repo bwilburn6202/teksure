@@ -11,6 +11,7 @@ export const guidesBatch5: Guide[] = [
     emoji: '🔐',
     difficulty: 'beginner' as const,
     readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/27opg4HVzW8',
     publishedAt: '2026-04-14',
     body: `Losing your phone — or having it stolen — is stressful. But there are steps you can take right now to protect your personal information, lock your device remotely, and prevent anyone from accessing your accounts. Acting quickly makes a big difference.
 
@@ -47,6 +48,7 @@ export const guidesBatch5: Guide[] = [
     emoji: '🔍',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/oR1q_XZjSd4',
     publishedAt: '2026-04-14',
     body: `Google Lens is one of the most useful tools on your phone — and most people have never heard of it. It lets you point your camera at almost anything and get instant information: the name of a plant, a translation of text in another language, information about a restaurant, or a link to buy a product you see in a store.
 
@@ -93,6 +95,7 @@ On any phone: Open Google Photos and find a photo you\'ve already taken. Tap the
     emoji: '📵',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/nzYKHHVRKKQ',
     publishedAt: '2026-04-14',
     body: `Spam calls — robocalls, scam attempts, and unwanted sales calls — are one of the most frustrating parts of owning a phone. Americans receive billions of spam calls every year. The good news is that your iPhone has several built-in tools to significantly reduce them.
 
@@ -144,6 +147,7 @@ Nomorobo is a free service available for some carriers. It automatically blocks 
     emoji: '📵',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/oMq5Hq1GBmU',
     publishedAt: '2026-04-14',
     body: `Android phones have several powerful tools to reduce spam calls. Google\'s Phone app (available on most Android phones) even includes AI-powered spam detection built in.
 
@@ -198,6 +202,7 @@ The app "Hiya" (free, from the Google Play Store) identifies spam calls before y
     emoji: '✂️',
     difficulty: 'beginner' as const,
     readTime: '7 min',
+    videoUrl: 'https://www.youtube.com/embed/MQkHY4DOdfw',
     publishedAt: '2026-04-14',
     body: `Subscription charges are easy to forget about — especially the small ones. A $9.99 streaming service, a $4.99 app, a $12.99 cloud storage plan. Individually they seem small, but together they can add up to $50–$100 or more per month without you realizing it.
 
@@ -245,6 +250,7 @@ If a service makes it hard to cancel (buried menus, endless pop-ups), you can ca
     emoji: '🎤',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/ZAXS0kFCyaI',
     publishedAt: '2026-04-14',
     body: `Typing on a small phone screen can be frustrating — especially if you have larger fingers, or if your hands aren\'t as steady as they used to be. The good news: you don\'t have to type. You can talk to your phone and it will type for you, almost perfectly.
 
@@ -296,6 +302,7 @@ Your assistant will read the message back to you and ask you to confirm before s
     emoji: '🤖',
     difficulty: 'beginner' as const,
     readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/ad79nYk2keg',
     publishedAt: '2026-04-14',
     body: `You can\'t read the news without seeing the phrase "artificial intelligence" (AI). It sounds complicated — and a lot of it is — but the basic idea is actually something you probably use every day without realizing it.
 
@@ -351,6 +358,7 @@ Similar tools include Google Gemini (gemini.google.com) and Microsoft Copilot (c
     emoji: '💬',
     difficulty: 'beginner' as const,
     readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/JTxsNm9IdYU',
     publishedAt: '2026-04-14',
     body: `ChatGPT is one of the most useful free tools available right now. You type a question or request in plain English, and it responds with a detailed, conversational answer. Think of it like having a very knowledgeable assistant available 24/7 — one who\'s read everything and is always willing to help.
 
@@ -414,6 +422,7 @@ ChatGPT can make mistakes — sometimes confidently. Always verify important inf
     emoji: '🖥️',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/C4sptqFb0Bk',
     publishedAt: '2026-04-14',
     body: `Screen sharing lets the person you\'re video calling see exactly what\'s on your screen. This is incredibly useful if you want someone to help you with a tech problem ("I can just show you what I\'m seeing"), if you\'re working on a document together, or if you want to share photos with family during a call.
 
@@ -457,6 +466,7 @@ Here\'s how to do it step by step.
     emoji: '🆘',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/0W8KOCF1SFA',
     publishedAt: '2026-04-14',
     body: `Emergency SOS is one of the most important safety features on your iPhone. With a few button presses, it can automatically call 911 and send your current location to your emergency contacts — even if you can\'t speak or if your phone is locked.
 
@@ -512,6 +522,7 @@ If you have an Apple Watch, it can detect if you fall and automatically call 911
     emoji: '⭐',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/pzR9MwIKCOQ',
     publishedAt: '2026-04-14',
     body: `Online reviews help us decide what to buy, where to eat, and which services to use. But fake reviews — paid for by sellers or generated by software — are a major problem. The FTC estimates that billions of fake reviews are posted online every year.
 
@@ -564,6 +575,7 @@ Click on the name of the reviewer (on Amazon). If their profile shows they\'ve o
     emoji: '🗄️',
     difficulty: 'beginner' as const,
     readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/QwyybmZ7UMk',
     publishedAt: '2026-04-14',
     body: `When your Android phone fills up with photos, videos, and apps, it slows down and stops being able to download new apps or take pictures. Here\'s how to quickly reclaim storage space — step by step.
 
@@ -624,6 +636,7 @@ Many Android phones have a built-in "Free Up Space" or "Storage Optimizer" tool.
     emoji: '🎣',
     difficulty: 'beginner' as const,
     readTime: '6 min',
+    videoUrl: 'https://www.youtube.com/embed/XBkzBrXlle0',
     publishedAt: '2026-04-14',
     body: `Phishing emails are designed to look like they come from real companies — your bank, Amazon, the IRS, Apple, or your email provider. Their goal is to get you to click a link that takes you to a fake website, where they steal your password or personal information.
 
@@ -684,6 +697,7 @@ Never open an attachment you weren\'t expecting, even if the email claims to be 
     emoji: '📍',
     difficulty: 'beginner' as const,
     readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/6INEi5vtE1E',
     publishedAt: '2026-04-14',
     body: `Find My is Apple\'s built-in service that helps you locate a lost or stolen iPhone, iPad, or Mac. It works even when the device is offline (it uses Bluetooth from nearby Apple devices to report the location). Setting it up takes 2 minutes and can save you significant stress if your phone ever goes missing.
 
@@ -734,6 +748,7 @@ If you put it in "Lost Mode," the screen shows a message you wrote (like "This i
     emoji: '🛡️',
     difficulty: 'beginner' as const,
     readTime: '7 min',
+    videoUrl: 'https://www.youtube.com/embed/Uy60wy20ADE',
     publishedAt: '2026-04-14',
     body: `Your personal information — name, address, phone number, birthdate, and Social Security number — is valuable to criminals. Identity theft affects over 15 million Americans every year, according to the FTC. But you can make yourself a much harder target with a few practical steps.
 

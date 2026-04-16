@@ -9577,7 +9577,7 @@ const coreGuides: Guide[] = [
     { title: 'Browse', content: 'See posts about lost pets, plumber recommendations, events, safety alerts.' },
     { title: 'Post', content: 'Tap + to ask questions or share helpful information.' },
   ] },
-  { slug: 'pinterest-basics', title: 'How to Use Pinterest for Inspiration', excerpt: 'Discover recipes, decor ideas, and crafts.', category: 'social-media', tags: ['pinterest', 'inspiration', 'recipes'], readTime: '5 min', thumbnailEmoji: '📌', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'pinterest-basics', title: 'How to Use Pinterest for Inspiration', excerpt: 'Discover recipes, decor ideas, and crafts.', category: 'social-media', tags: ['pinterest', 'inspiration', 'recipes'], readTime: '5 min', thumbnailEmoji: '📌', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/QYCkPU5K_XE', steps: [
     { title: 'Sign up', content: 'Download Pinterest or go to pinterest.com.' },
     { title: 'Choose interests', content: 'Select topics: recipes, gardening, travel, crafts.' },
     { title: 'Save pins', content: 'Tap Save on a pin > choose a board like "Recipes to Try."' },
@@ -9655,7 +9655,7 @@ const coreGuides: Guide[] = [
     { title: 'Android', content: 'Go to android.com/find. Sign in. Play Sound.' },
     { title: 'Set up now', content: 'Enable Find My iPhone or Find My Device BEFORE you lose it.' },
   ] },
-  { slug: 'how-to-video-call-grandkids', title: 'How to Video Call Your Grandchildren', excerpt: 'Stay connected with family through video calls.', category: 'how-to', tags: ['video-calls', 'family'], readTime: '5 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'how-to-video-call-grandkids', title: 'How to Video Call Your Grandchildren', excerpt: 'Stay connected with family through video calls.', category: 'how-to', tags: ['video-calls', 'family'], readTime: '5 min', thumbnailEmoji: '👨‍👩‍👧‍👦', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/CIQ0-iNhYjQ', steps: [
     { title: 'Choose an app', content: 'FaceTime (Apple), Zoom, Google Meet, or WhatsApp.' },
     { title: 'Setup', content: 'Prop phone at eye level. Good lighting. Connect to Wi-Fi.' },
     { title: 'Fun activities', content: 'Read a book, show your garden, play I Spy, cook together.' },
@@ -9835,7 +9835,7 @@ const coreGuides: Guide[] = [
     { title: 'Full screen', content: 'Print Screen key. Paste into Paint or document.' },
     { title: 'Auto-save', content: 'Windows + Print Screen. Saves to Pictures > Screenshots.' },
   ] },
-  { slug: 'windows-connect-printer', title: 'Connect a Printer to Windows', excerpt: 'Set up your printer for Windows.', category: 'windows-guides', tags: ['windows', 'printer'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'windows-connect-printer', title: 'Connect a Printer to Windows', excerpt: 'Set up your printer for Windows.', category: 'windows-guides', tags: ['windows', 'printer'], readTime: '5 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/K_A3GR9r8dM', steps: [
     { title: 'USB', content: 'Plug printer USB into computer. Windows detects automatically.' },
     { title: 'Wi-Fi', content: 'Settings > Bluetooth & Devices > Printers & Scanners > Add Device.' },
     { title: 'Test', content: 'Select printer > Print Test Page.' },
@@ -9859,12 +9859,12 @@ const coreGuides: Guide[] = [
     { title: 'How it works', content: 'Backs up automatically every hour when drive is connected.' },
     { title: 'Restore', content: 'Time Machine icon > Browse Backups > navigate back in time > Restore.' },
   ] },
-  { slug: 'mac-install-apps', title: 'Install and Remove Mac Apps', excerpt: 'Get new apps and remove old ones.', category: 'mac-guides', tags: ['mac', 'apps', 'install'], readTime: '4 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-install-apps', title: 'Install and Remove Mac Apps', excerpt: 'Get new apps and remove old ones.', category: 'mac-guides', tags: ['mac', 'apps', 'install'], readTime: '4 min', thumbnailEmoji: '📦', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/KpPqn0mEJZA', steps: [
     { title: 'App Store', content: 'Open App Store > search > Get > Install.' },
     { title: 'From website', content: 'Download .dmg > drag app to Applications.' },
     { title: 'Uninstall', content: 'Finder > Applications > drag to Trash > empty Trash.' },
   ] },
-  { slug: 'mac-trackpad-gestures', title: 'Mac Trackpad Gestures', excerpt: 'Multi-touch gestures for your trackpad.', category: 'mac-guides', tags: ['mac', 'trackpad', 'gestures'], readTime: '4 min', thumbnailEmoji: '👆', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-trackpad-gestures', title: 'Mac Trackpad Gestures', excerpt: 'Multi-touch gestures for your trackpad.', category: 'mac-guides', tags: ['mac', 'trackpad', 'gestures'], readTime: '4 min', thumbnailEmoji: '👆', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/OGpivA1VMZM', steps: [
     { title: 'Scroll', content: 'Two fingers up/down.' },
     { title: 'Zoom', content: 'Pinch together (out) or spread apart (in).' },
     { title: 'Mission Control', content: 'Three fingers swipe up to see all windows.' },
@@ -9911,7 +9911,7 @@ const coreGuides: Guide[] = [
     { title: 'Camera', content: 'Tap camera icon. Point at sign or menu. Real-time overlay.' },
     { title: 'Offline', content: 'Download languages for use without internet.' },
   ] },
-  { slug: 'doordash-food-delivery', title: 'Order Food with DoorDash', excerpt: 'Restaurant food delivered to your door.', category: 'app-guides', tags: ['doordash', 'delivery'], readTime: '5 min', thumbnailEmoji: '🍔', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'doordash-food-delivery', title: 'Order Food with DoorDash', excerpt: 'Restaurant food delivered to your door.', category: 'app-guides', tags: ['doordash', 'delivery'], readTime: '5 min', thumbnailEmoji: '🍔', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/vY0IH8eMwio', steps: [
     { title: 'Browse', content: 'See restaurants near you. Filter by cuisine, price, rating.' },
     { title: 'Order', content: 'Choose items, customize, review cart, place order.' },
     { title: 'Track', content: 'Watch your driver on the map in real time.' },
@@ -10013,14 +10013,14 @@ const coreGuides: Guide[] = [
   ] },
 
   // ===== BATCH 15: Intermediate Level Guides =====
-  { slug: 'windows-task-manager-guide', title: 'How to Use Windows Task Manager Like a Pro', excerpt: 'Diagnose slow performance, find resource hogs, and force-close frozen apps.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '6 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'windows-task-manager-guide', title: 'How to Use Windows Task Manager Like a Pro', excerpt: 'Diagnose slow performance, find resource hogs, and force-close frozen apps.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '6 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/lMhOmJT7xbs', steps: [
     { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Escape. Or right-click the taskbar and select Task Manager. This shows everything running on your computer.' },
     { title: 'End a frozen program', content: 'In the Processes tab, find the unresponsive app. Click it, then click End Task. This force-closes the program without restarting your computer.' },
     { title: 'Find what is slowing you down', content: 'Click the CPU or Memory column headers to sort by usage. If one app is using 90% of CPU or memory, that is likely causing slowness.' },
     { title: 'Manage startup apps', content: 'Click the Startup Apps tab. Disable programs you don\'t need starting with your computer. This speeds up boot time significantly.' },
     { title: 'Monitor performance', content: 'Click the Performance tab for real-time graphs of CPU, memory, disk, and network usage. Useful for diagnosing whether you need more RAM or a faster drive.' },
   ] },
-  { slug: 'home-network-security-v2', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from intruders and keep your family safe online.', category: 'safety-guides', tags: ['wifi', 'network', 'security', 'router'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'home-network-security-v2', title: 'How to Secure Your Home Wi-Fi Network', excerpt: 'Protect your home network from intruders and keep your family safe online.', category: 'safety-guides', tags: ['wifi', 'network', 'security', 'router'], readTime: '7 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/jbRmY6erMeA', steps: [
     { title: 'Change your router password', content: 'Your router has a default admin password (often "admin" or "password"). Log into your router (usually 192.168.1.1 or 192.168.0.1 in your browser) and change the admin password to something strong.' },
     { title: 'Set a strong Wi-Fi password', content: 'Use WPA3 or WPA2 encryption (not WEP — that is outdated and insecure). Create a Wi-Fi password that is at least 12 characters with mixed letters, numbers, and symbols.' },
     { title: 'Change the network name', content: 'Rename your Wi-Fi network to something that does not identify you personally. Avoid names like "SmithFamily" or "Apt302." Something generic like "HomeNet2024" is better.' },
@@ -10130,7 +10130,7 @@ const coreGuides: Guide[] = [
     { title: 'Join the appointment', content: 'Click the link sent by your doctor\'s office a few minutes early. You may need to enter a virtual waiting room. When the doctor joins, the video call begins just like FaceTime or Zoom.' },
     { title: 'After the visit', content: 'The doctor may send prescriptions to your pharmacy electronically. Notes from the visit appear in your patient portal. Follow up on any referrals or tests they recommend.' },
   ] },
-  { slug: 'medicare-online-account', title: 'How to Create and Use Your Medicare.gov Account', excerpt: 'Manage your Medicare benefits online — check claims, find doctors, and compare plans.', category: 'health-tech', tags: ['medicare', 'healthcare', 'government', 'insurance'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'medicare-online-account', title: 'How to Create and Use Your Medicare.gov Account', excerpt: 'Manage your Medicare benefits online — check claims, find doctors, and compare plans.', category: 'health-tech', tags: ['medicare', 'healthcare', 'government', 'insurance'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
     { title: 'Create your account', content: 'Go to medicare.gov and click "Log in to your Medicare account." If you don\'t have an account, click "Create an account." You will need your Medicare number (on your red, white, and blue card).' },
     { title: 'What you can do', content: 'View your claims and what Medicare paid, see your coverage details, find doctors and hospitals that accept Medicare, and compare Medicare Advantage and Part D plans.' },
     { title: 'Check your claims', content: 'After a doctor visit, the claim appears in your account (usually within a few weeks). You can see what was charged, what Medicare paid, and what you may owe.' },
@@ -10396,7 +10396,7 @@ const coreGuides: Guide[] = [
     { title: 'Medicare coverage', content: 'Medicare covers many telehealth services, especially since 2020. You\'ll pay the same copay as an in-person visit. Check with your plan for specific coverage details.' },
     { title: 'After the visit', content: 'The doctor sends prescriptions electronically to your pharmacy. Follow-up instructions appear in your patient portal. Save your visit summary for your records.' },
   ] },
-  { slug: 'medicare-online-guide', title: 'How to Use Medicare.gov Online', excerpt: 'Navigate the Medicare website to manage your coverage, find plans, and access benefits.', category: 'how-to', tags: ['medicare', 'health', 'government', 'insurance', 'seniors'], readTime: '7 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'medicare-online-guide', title: 'How to Use Medicare.gov Online', excerpt: 'Navigate the Medicare website to manage your coverage, find plans, and access benefits.', category: 'how-to', tags: ['medicare', 'health', 'government', 'insurance', 'seniors'], readTime: '7 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
     { title: 'Create a Medicare.gov account', content: 'Visit Medicare.gov and click "Log in to your Medicare account." Create a login using Login.gov. You\'ll need your Medicare number (on your red, white, and blue card), email, and phone.' },
     { title: 'View your coverage', content: 'Once logged in, see your current Medicare plan details: Part A (hospital), Part B (medical), Part D (prescription drugs), and any Medicare Advantage plan information.' },
     { title: 'Compare plans', content: 'During Open Enrollment (October 15 - December 7), use the Plan Finder tool. Enter your medications and preferred pharmacies to see which plans cover your drugs at the lowest cost.' },
@@ -10491,7 +10491,7 @@ const coreGuides: Guide[] = [
     { title: 'Live Caption', content: 'Settings > Accessibility > Live Caption. Automatically adds captions to any audio or video playing on your phone. Works offline. Great for videos without subtitles.' },
     { title: 'Extra dim', content: 'Settings > Accessibility > Extra Dim. Reduces screen brightness below the normal minimum. Helpful for nighttime reading or light-sensitive users.' },
   ] },
-  { slug: 'windows-backup-guide', title: 'How to Back Up Your Windows Computer', excerpt: 'Protect your files, photos, and documents by setting up automatic backups on Windows.', category: 'windows-guides', tags: ['windows', 'backup', 'files', 'onedrive', 'recovery'], readTime: '8 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'windows-backup-guide', title: 'How to Back Up Your Windows Computer', excerpt: 'Protect your files, photos, and documents by setting up automatic backups on Windows.', category: 'windows-guides', tags: ['windows', 'backup', 'files', 'onedrive', 'recovery'], readTime: '8 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/f-3CI5_T3v4', steps: [
     { title: 'Why backups matter', content: 'Hard drives fail, computers get stolen, and ransomware can lock your files. Regular backups mean you never lose important documents, photos, or memories. Set it up once, and it works automatically.' },
     { title: 'OneDrive backup (easiest)', content: 'Windows 11 includes OneDrive built in. Sign in with your Microsoft account. Right-click the OneDrive icon (cloud, bottom-right taskbar) > Settings > Sync and Backup > Manage Backup. Select Desktop, Documents, and Pictures.', tip: 'Windows 10 reached end of support on October 14, 2025. If you are still on Windows 10, consider upgrading to Windows 11 for continued security updates.' },
     { title: 'How OneDrive works', content: 'Files in your backed-up folders automatically sync to Microsoft\'s cloud. Access them from any device at onedrive.com. 5 GB free storage; Microsoft 365 includes 1 TB ($6.99/month).' },
@@ -10713,7 +10713,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 23: Health & Wellness Tech ────────────────────────────────────────
-  { slug: 'fitness-tracker-guide', title: 'How to Use a Fitness Tracker or Smartwatch', excerpt: 'Get the most out of your Apple Watch, Fitbit, or Samsung Galaxy Watch for health tracking.', category: 'health-tech', tags: ['fitness', 'smartwatch', 'health', 'apple-watch', 'fitbit'], readTime: '8 min', thumbnailEmoji: '⌚', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'fitness-tracker-guide', title: 'How to Use a Fitness Tracker or Smartwatch', excerpt: 'Get the most out of your Apple Watch, Fitbit, or Samsung Galaxy Watch for health tracking.', category: 'health-tech', tags: ['fitness', 'smartwatch', 'health', 'apple-watch', 'fitbit'], readTime: '8 min', thumbnailEmoji: '⌚', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/KxCKkrDCnDU', steps: [
     { title: 'Set up your device', content: 'Apple Watch: pair through the Watch app on iPhone. Fitbit: pair through the Fitbit app. Samsung Watch: pair through Galaxy Wearable app. Follow the on-screen setup wizard.' },
     { title: 'Track your steps', content: 'Your tracker counts steps automatically by detecting motion. Most health experts recommend 7,000-10,000 steps per day. Check your daily count on the watch face or companion app.' },
     { title: 'Monitor heart rate', content: 'Your watch measures heart rate throughout the day using sensors on the back. Review trends in the companion app. Get alerts if your heart rate goes unusually high or low.' },
@@ -10980,7 +10980,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 29: Advanced Windows & Mac ────────────────────────────────────────
-  { slug: 'windows-task-manager-guide-v2', title: 'How to Use Windows Task Manager', excerpt: 'Diagnose performance problems, force-close frozen apps, and understand what\'s using your resources.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'windows-task-manager-guide-v2', title: 'How to Use Windows Task Manager', excerpt: 'Diagnose performance problems, force-close frozen apps, and understand what\'s using your resources.', category: 'windows-guides', tags: ['windows', 'task-manager', 'performance', 'troubleshooting'], readTime: '7 min', thumbnailEmoji: '📊', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/lMhOmJT7xbs', steps: [
     { title: 'Open Task Manager', content: 'Press Ctrl+Shift+Esc (quickest method). Or right-click the taskbar and select Task Manager. Or press Ctrl+Alt+Delete and choose Task Manager.' },
     { title: 'Force-close a frozen program', content: 'In the Processes tab, find the frozen program (it may say "Not Responding"). Click it, then click End Task. This immediately closes the program. You may lose unsaved work in that program.' },
     { title: 'See what\'s using your CPU', content: 'The Processes tab shows CPU, Memory, Disk, and Network usage for each program. Click the CPU column header to sort by highest usage. If something is using 90%+ CPU constantly, it might be a problem.' },
@@ -10998,7 +10998,7 @@ const coreGuides: Guide[] = [
     { title: 'Search permissions', content: 'Settings > Privacy & Security > Search Permissions. Turn off cloud content search and search history if you prefer privacy. SafeSearch can be set to filter explicit content.' },
     { title: 'App permissions review', content: 'Go through each category in Privacy & Security: Contacts, Calendar, Email, Call History, Messaging. Revoke access for apps that don\'t need it. Most apps only need the specific permissions related to their function.' },
   ] },
-  { slug: 'mac-system-preferences-guide', title: 'Mac System Settings Explained', excerpt: 'A guided tour of macOS System Settings to help you customize and optimize your Mac.', category: 'mac-guides', tags: ['mac', 'macos', 'settings', 'customization', 'system-preferences'], readTime: '8 min', thumbnailEmoji: '⚙️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'mac-system-preferences-guide', title: 'Mac System Settings Explained', excerpt: 'A guided tour of macOS System Settings to help you customize and optimize your Mac.', category: 'mac-guides', tags: ['mac', 'macos', 'settings', 'customization', 'system-preferences'], readTime: '8 min', thumbnailEmoji: '⚙️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/cKJ7zGI-Qkc', steps: [
     { title: 'Opening System Settings', content: 'Click the Apple menu (top-left) > System Settings. Or click the System Settings icon in your Dock. Use the search bar at the top to find any setting quickly.' },
     { title: 'Wi-Fi and Network', content: 'Click Wi-Fi in the sidebar. Connect to networks, forget old networks, and check your connection status. Network section shows all connections and allows advanced configuration.' },
     { title: 'Display settings', content: 'Click Displays. Adjust resolution (choose "More Space" for more screen real estate or "Larger Text" for readability). Adjust brightness. Night Shift reduces blue light in the evening.' },
@@ -11228,7 +11228,7 @@ const coreGuides: Guide[] = [
     { title: 'Move apps to SD card', content: 'If your phone has an SD card slot: Settings > Apps > select an app > Storage > Change > SD Card. Not all apps support this, but it helps for games and media-heavy apps.' },
     { title: 'Clear messaging attachments', content: 'Old photos and videos in messaging apps (WhatsApp, Facebook Messenger) take up significant space. In each app, go to Storage settings to review and delete old media files.' },
   ] },
-  { slug: 'email-encryption-basics-v2', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', steps: [
+  { slug: 'email-encryption-basics-v2', title: 'Email Encryption: Protecting Your Private Messages', excerpt: 'Understand how email encryption works and when you should use it.', category: 'safety-guides', tags: ['email', 'encryption', 'privacy', 'security', 'communication'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/tOGF9sRzFIo', steps: [
     { title: 'Why encrypt email?', content: 'Regular email is like a postcard — anyone handling it can read it. Encrypted email is like a sealed letter in a locked box. Only the intended recipient has the key. Important for sensitive financial, medical, or legal information.' },
     { title: 'Built-in encryption', content: 'Gmail and Outlook encrypt emails in transit (between servers) automatically. This protects against interception but the email provider (Google/Microsoft) can technically read your messages.' },
     { title: 'End-to-end encrypted email', content: 'ProtonMail (proton.me) offers end-to-end encryption — even ProtonMail can\'t read your emails. Free tier: 1 GB storage, 150 messages/day. Paid: $4.99/month for more features.' },
@@ -11481,7 +11481,7 @@ const coreGuides: Guide[] = [
     { title: 'Share shortcuts', content: 'Download shortcuts shared by the community at routinehub.co and shortcutsgallery.com. These are pre-built automations created by power users. Install with one tap.' },
     { title: 'Practical examples', content: 'Text your ETA to a contact. Log water intake. Convert files between formats. Calculate split bills. Create meeting notes. Schedule texts. Resize photos for social media.' },
   ] },
-  { slug: 'android-widgets-guide', title: 'How to Use Android Widgets', excerpt: 'Put useful information and controls right on your home screen with Android widgets.', category: 'phone-guides', tags: ['android', 'widgets', 'home-screen', 'customization', 'productivity'], readTime: '6 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'android-widgets-guide', title: 'How to Use Android Widgets', excerpt: 'Put useful information and controls right on your home screen with Android widgets.', category: 'phone-guides', tags: ['android', 'widgets', 'home-screen', 'customization', 'productivity'], readTime: '6 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/2cXxpBm3U2c', steps: [
     { title: 'What are widgets?', content: 'Widgets are mini app windows that live on your home screen. See weather, calendar events, news, music controls, and more without opening any app. They display live, updating information.' },
     { title: 'Add a widget', content: 'Long-press on empty home screen space > Widgets. Browse by app. Press and drag a widget to your home screen. Resize by long-pressing the widget and dragging its edges.' },
     { title: 'Essential widgets', content: 'Clock/Weather: see time and forecast at a glance. Calendar: see upcoming events. Google Search bar: search from the home screen. Music controls: play/pause without opening the app.' },
@@ -11816,7 +11816,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 48: Expanded Phone Guides ─────────────────────────────────────────
-  { slug: 'iphone-focus-modes', title: 'How to Use iPhone Focus Modes', excerpt: 'Customize notifications, lock screen, and home screen for different parts of your day.', category: 'phone-guides', tags: ['iphone', 'focus', 'notifications', 'productivity', 'customization'], readTime: '6 min', thumbnailEmoji: '🔔', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+  { slug: 'iphone-focus-modes', title: 'How to Use iPhone Focus Modes', excerpt: 'Customize notifications, lock screen, and home screen for different parts of your day.', category: 'phone-guides', tags: ['iphone', 'focus', 'notifications', 'productivity', 'customization'], readTime: '6 min', thumbnailEmoji: '🔔', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/C1HZqkpwbIo', steps: [
     { title: 'What are Focus modes?', content: 'Focus modes let you filter notifications, calls, and apps based on what you\'re doing. Work Focus: only work notifications. Personal: only family and friends. Sleep: silence everything. Each can have its own lock screen and home screen.' },
     { title: 'Set up Work Focus', content: 'Settings > Focus > Work. Add people and apps allowed to notify you during work hours. Set a schedule (9 AM - 5 PM, weekdays). Choose which home screen page appears. Link a professional lock screen.' },
     { title: 'Set up Sleep Focus', content: 'Settings > Focus > Sleep. Block all notifications. Set a wind-down period (30 minutes before bedtime) that dims the lock screen. Link to a dark, minimal lock screen wallpaper.' },
@@ -11864,7 +11864,7 @@ const coreGuides: Guide[] = [
   ] },
 
   // ── Batch 49: More Essential Skills ─────────────────────────────────────────
-  { slug: 'understanding-updates', title: 'Why Software Updates Matter (And How to Handle Them)', excerpt: 'Stop ignoring those update notifications — they protect your security and improve performance.', category: 'essential-skills', tags: ['updates', 'security', 'maintenance', 'software', 'patches'], readTime: '6 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+  { slug: 'understanding-updates', title: 'Why Software Updates Matter (And How to Handle Them)', excerpt: 'Stop ignoring those update notifications — they protect your security and improve performance.', category: 'essential-skills', tags: ['updates', 'security', 'maintenance', 'software', 'patches'], readTime: '6 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/5lZxPW2U9NQ', steps: [
     { title: 'Why updates are critical', content: 'Software updates fix security holes that hackers exploit. The WannaCry ransomware attack of 2017 only affected computers that hadn\'t installed a security update released months earlier. Updates literally prevent attacks.' },
     { title: 'Types of updates', content: 'Security patches: fix vulnerabilities (install immediately). Feature updates: add new capabilities (install when convenient). Bug fixes: resolve crashes and errors. Driver updates: improve hardware compatibility.' },
     { title: 'Enable automatic updates', content: 'Windows: Settings > Update & Security > Advanced Options > enable all auto-updates. Mac: System Settings > General > Software Update > Automatic Updates. Phone: enabled by default. Let updates install overnight.' },
@@ -11928,12 +11928,6 @@ const coreGuides: Guide[] = [
     tags: ['roku', 'streaming', 'smart tv', 'setup', 'beginner'],
     readTime: '5 min',
     videoUrl: 'https://www.youtube.com/embed/zIHC68aa5i4',
-    videoUrl: 'https://www.youtube.com/embed/nel21v1FRmw',
-    videoUrl: 'https://www.youtube.com/embed/tirNbkEXZII',
-    videoUrl: 'https://www.youtube.com/embed/QC2DAzTtR80',
-    videoUrl: 'https://www.youtube.com/embed/0WFoAZEwDB0',
-    videoUrl: 'https://www.youtube.com/embed/MSmkyW9TSb8',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
     thumbnailEmoji: '📺',
     publishedAt: '2026-03-01',
     difficulty: 'Beginner',
