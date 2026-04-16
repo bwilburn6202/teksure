@@ -150,10 +150,10 @@ const Index = () => {
             <h1 className="sr-only">TekSure — American Tech Support Company | Free Help for Beginners &amp; Seniors</h1>
 
             <div className="stagger">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/[0.08] border border-primary/[0.12] text-sm text-primary font-medium mb-8">
-                <span className="h-2 w-2 rounded-full bg-green-500" />
-                Free for everyone — no account needed
-              </div>
+              <Link to="/changelog" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/[0.08] border border-primary/[0.12] text-sm text-primary font-medium mb-8 hover:bg-primary/[0.12] transition-colors">
+                <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                New: 1,000+ guides, 55+ tools, now in Spanish — free for everyone
+              </Link>
 
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6" style={{ letterSpacing: '-0.035em' }}>
                 Tech help that{' '}
@@ -207,7 +207,7 @@ const Index = () => {
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 text-sm text-muted-foreground">
               <div className="flex items-center gap-2"><Users className="h-4 w-4 text-primary" /><span><strong className="text-foreground">10,000+</strong> people helped</span></div>
               <div className="flex items-center gap-2"><Star className="h-4 w-4 text-amber-500" /><span><strong className="text-foreground">4.9/5</strong> average rating</span></div>
-              <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /><span><strong className="text-foreground">{guides.length}+</strong> free guides</span></div>
+              <div className="flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /><span><strong className="text-foreground">{guides.length.toLocaleString()}+</strong> free guides</span></div>
             </div>
           </div>
         </div>
