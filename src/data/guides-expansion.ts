@@ -885,7 +885,6 @@ Pay your full statement balance by the due date to avoid all interest. If you ca
       { title: 'Pay by the due date', content: 'Pay at least the minimum to avoid late fees ($25-41). Pay the full balance to avoid interest. Set up auto-pay for safety.' },
     ],
   },
-];
 
   // ═══════════════════════════════════════════
   // SMART HOME (15 guides)
@@ -1314,3 +1313,4 @@ If there is a delay between video and audio (lip sync issue), look for "Audio De
       { title: 'Adjust for audio delay', content: 'If sound is out of sync, look for "Audio Delay" or "Lip Sync Adjustment" in Sound settings.' },
     ],
   },
+];
