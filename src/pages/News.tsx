@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -18,6 +18,56 @@ interface NewsItem {
   readTime: string;
   source?: string;
   sourceUrl?: string;
+}
+
+interface HNStory {
+  id: number;
+  title: string;
+  url?: string;
+  score: number;
+  by: string;
+  time: number;
+  descendants?: number;
+}
+
+function useHNTopStories(count = 10) {
+  const [stories, setStories] = useState<HNStory[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function fetchStories() {
+      try {
+        setLoading(true);
+        setError(false);
+        const idsRes = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json');
+        const ids: number[] = await idsRes.json();
+        const top = ids.slice(0, count * 3); // fetch extras to filter
+        const storyPromises = top.map(id =>
+          fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(r => r.json())
+        );
+        const results: HNStory[] = await Promise.all(storyPromises);
+        if (!cancelled) {
+          // Filter out job postings (type !== 'job') and items without URL
+          const techStories = results
+            .filter(s => s && s.title && s.url && !s.title.startsWith('Ask HN') && !s.title.startsWith('Hiring'))
+            .slice(0, count);
+          setStories(techStories);
+          setLoading(false);
+        }
+      } catch {
+        if (!cancelled) {
+          setError(true);
+          setLoading(false);
+        }
+      }
+    }
+    fetchStories();
+    return () => { cancelled = true; };
+  }, [count]);
+
+  return { stories, loading, error };
 }
 
 const CATEGORY_COLORS: Record<NewsItem['category'], string> = {
@@ -265,6 +315,7 @@ const FILTER_CATEGORIES: { value: NewsItem['category'] | 'all'; label: string; i
 export default function News() {
   const [activeCategory, setActiveCategory] = useState<NewsItem['category'] | 'all'>('all');
   const [visibleCount, setVisibleCount] = useState(6);
+  const { stories: hnStories, loading: hnLoading, error: hnError } = useHNTopStories(10);
 
   const filtered = activeCategory === 'all'
     ? NEWS_ITEMS

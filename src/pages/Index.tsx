@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -9,7 +9,6 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -72,14 +71,6 @@ const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
   const handleSearch = (e: React.FormEvent) => { e.preventDefault(); if (search.trim()) navigate(`/search?q=${encodeURIComponent(search.trim())}`); };
-
-  const featuredGuides = useMemo(() => {
-    const picks: typeof guides[0][] = [];
-    const cats: GuideCategory[] = ['windows-guides', 'mac-guides', 'essential-skills', 'tips-tricks', 'ai-guides', 'app-guides'];
-    for (const cat of cats) { const g = guides.filter(g => g.category === cat); if (g.length) picks.push(g[0]); if (picks.length >= 6) break; }
-    if (picks.length < 6) picks.push(...guides.filter(g => !picks.includes(g)).slice(0, 6 - picks.length));
-    return picks.slice(0, 6);
-  }, []);
 
   const visibleCategories = (Object.keys(categoryLabels) as GuideCategory[]).filter(cat => guides.some(g => g.category === cat)).slice(0, 12);
 
@@ -172,63 +163,99 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════ */}
-      {/* QUICK SOLUTIONS                                   */}
+      {/* TOOLS & UTILITIES                                 */}
       {/* ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24">
         <div className="container">
           <RevealSection>
-            <div className="text-center mb-12">
-              <h2 className="display-heading text-3xl md:text-4xl mb-3">Quick solutions, right now</h2>
-              <p className="text-muted-foreground max-w-md mx-auto text-lg">The most common fixes — no appointment needed.</p>
+            <div className="flex items-end justify-between mb-10">
+              <div>
+                <h2 className="display-heading text-3xl md:text-4xl mb-2">Tools &amp; Utilities</h2>
+                <p className="text-muted-foreground text-lg">Over 65 free interactive tools — all private, all free.</p>
+              </div>
+              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                <Link to="/tools">View all tools <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
             </div>
           </RevealSection>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto stagger">
-            {quickProblems.map((fix) => (
-              <Link key={fix.slug} to={`/guides/${fix.slug}`} className="block group">
-                <div className="glow-card h-full">
-                  <div className="flex items-start gap-3.5">
-                    <div className={`h-11 w-11 rounded-xl ${fix.color} flex items-center justify-center shrink-0`}>
-                      <fix.icon className="h-5 w-5" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{fix.label}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{fix.fix}</p>
-                    </div>
-                  </div>
+          {/* Category tabs */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {[
+              { label: '🔒 Security', tools: [
+                { title: 'Scam Simulator', desc: 'Practice spotting scams safely.', to: '/tools/scam-simulator', emoji: '🛡️', color: 'bg-red-50 dark:bg-red-950/30' },
+                { title: 'Privacy Audit', desc: 'Review your privacy settings.', to: '/tools/privacy-audit', emoji: '🔒', color: 'bg-violet-50 dark:bg-violet-950/30' },
+                { title: 'Cybersecurity Scorecard', desc: 'Get your personal security grade.', to: '/tools/cyber-scorecard', emoji: '🏆', color: 'bg-amber-50 dark:bg-amber-950/30' },
+                { title: 'Password Strength', desc: 'Test your password strength.', to: '/tools/password-strength', emoji: '🔑', color: 'bg-green-50 dark:bg-green-950/30' },
+                { title: 'Password Generator', desc: 'Generate strong passwords instantly.', to: '/tools/password-generator', emoji: '⚡', color: 'bg-emerald-50 dark:bg-emerald-950/30' },
+                { title: 'Data Breach Checker', desc: 'Check if your email was exposed.', to: '/tools/data-breach-checker', emoji: '🚨', color: 'bg-rose-50 dark:bg-rose-950/30' },
+              ]},
+              { label: '📱 Device & Setup', tools: [
+                { title: 'New Phone Setup', desc: 'Set up your iPhone or Android.', to: '/tools/new-phone-setup', emoji: '📱', color: 'bg-blue-50 dark:bg-blue-950/30' },
+                { title: 'Device Health Dashboard', desc: 'Check your device\'s health score.', to: '/tools/device-health', emoji: '❤️', color: 'bg-emerald-50 dark:bg-emerald-950/30' },
+                { title: 'WiFi Troubleshooter', desc: 'Fix your WiFi step by step.', to: '/tools/wifi-troubleshooter', emoji: '📶', color: 'bg-sky-50 dark:bg-sky-950/30' },
+                { title: 'Storage Cleanup', desc: 'Free up space on your device.', to: '/tools/storage-cleanup', emoji: '🧹', color: 'bg-orange-50 dark:bg-orange-950/30' },
+                { title: 'Digital Cleanup Wizard', desc: 'Clean inbox, apps, and files.', to: '/tools/digital-cleanup', emoji: '✨', color: 'bg-teal-50 dark:bg-teal-950/30' },
+                { title: 'Backup Wizard', desc: 'Personalized backup plan.', to: '/tools/backup-wizard', emoji: '💾', color: 'bg-cyan-50 dark:bg-cyan-950/30' },
+              ]},
+              { label: '💰 Money & Bills', tools: [
+                { title: 'Streaming Calculator', desc: 'Find savings on streaming.', to: '/tools/streaming-calculator', emoji: '📺', color: 'bg-purple-50 dark:bg-purple-950/30' },
+                { title: 'Subscription Tracker', desc: 'Track all your subscriptions.', to: '/tools/subscription-tracker', emoji: '📋', color: 'bg-indigo-50 dark:bg-indigo-950/30' },
+                { title: 'Tech Budget Planner', desc: 'Track monthly tech spending.', to: '/tools/tech-budget', emoji: '📊', color: 'bg-green-50 dark:bg-green-950/30' },
+                { title: 'Internet Speed Advisor', desc: 'Is your internet fast enough?', to: '/tools/internet-speed-advisor', emoji: '⚡', color: 'bg-sky-50 dark:bg-sky-950/30' },
+                { title: 'Phone Plan Comparator', desc: 'Compare carrier plans.', to: '/tools/phone-plan-comparator', emoji: '📞', color: 'bg-blue-50 dark:bg-blue-950/30' },
+                { title: 'Bill Decoder', desc: 'Understand confusing charges.', to: '/tools/bill-decoder', emoji: '🧾', color: 'bg-amber-50 dark:bg-amber-950/30' },
+              ]},
+              { label: '🎓 Learning', tools: [
+                { title: 'Jargon Translator', desc: 'Plain-English tech terms.', to: '/tools/jargon-translator', emoji: '💬', color: 'bg-cyan-50 dark:bg-cyan-950/30' },
+                { title: 'AI Tutor', desc: 'Learn tech at your own pace.', to: '/ai-tutor', emoji: '🤖', color: 'bg-violet-50 dark:bg-violet-950/30' },
+                { title: 'Digital Literacy Assessment', desc: 'Find your skill level.', to: '/tools/digital-literacy-assessment', emoji: '📝', color: 'bg-teal-50 dark:bg-teal-950/30' },
+                { title: 'Tech Confidence Score', desc: 'Assess your tech confidence.', to: '/tools/confidence-score', emoji: '⭐', color: 'bg-amber-50 dark:bg-amber-950/30' },
+                { title: 'Printable Guide Packs', desc: 'Download themed guide bundles.', to: '/tools/guide-packs', emoji: '📦', color: 'bg-orange-50 dark:bg-orange-950/30' },
+                { title: 'Keyboard Shortcuts', desc: 'Printable cheat sheets.', to: '/tools/keyboard-shortcuts', emoji: '⌨️', color: 'bg-slate-50 dark:bg-slate-800/30' },
+              ]},
+            ].map(group => (
+              <details key={group.label} className="group w-full border border-border rounded-2xl overflow-hidden bg-card">
+                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer font-semibold text-sm select-none hover:bg-muted/40 transition-colors list-none">
+                  <span>{group.label}</span>
+                  <ChevronRight className="h-4 w-4 text-muted-foreground transition-transform group-open:rotate-90" />
+                </summary>
+                <div className="px-5 pb-5 pt-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 border-t border-border/40">
+                  {group.tools.map(tool => (
+                    <Link key={tool.to} to={tool.to} className="group/tool block">
+                      <div className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted/50 transition-colors">
+                        <div className={`h-9 w-9 rounded-lg ${tool.color} flex items-center justify-center text-base shrink-0`}>{tool.emoji}</div>
+                        <div>
+                          <p className="text-sm font-medium group-hover/tool:text-primary transition-colors">{tool.title}</p>
+                          <p className="text-xs text-muted-foreground">{tool.desc}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              </Link>
+              </details>
             ))}
           </div>
 
-          <RevealSection className="mt-4 max-w-4xl mx-auto">
-            <Link to="/safety/scam-alerts" className="block group">
-              <div className="flex items-center gap-4 p-4 rounded-xl border border-amber-200/60 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20 hover:border-amber-300 dark:hover:border-amber-700/40 transition-colors">
-                <div className="h-10 w-10 rounded-lg bg-amber-100/80 dark:bg-amber-900/30 flex items-center justify-center text-xl shrink-0">🛡️</div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-sm mb-0.5">Scam Alert Center</h3>
-                  <p className="text-sm text-muted-foreground">Latest scams targeting everyday users — stay informed and protected.</p>
-                </div>
-                <ChevronRight className="h-4 w-4 text-amber-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
-              </div>
-            </Link>
-          </RevealSection>
+          <div className="text-center mt-4">
+            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/tools">Explore all 65+ tools <ArrowRight className="h-4 w-4" /></Link></Button>
+          </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════ */}
-      {/* BROWSE BY CATEGORY                                */}
+      {/* GUIDES & TUTORIALS                                */}
       {/* ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24 bg-muted/40">
         <div className="container">
           <RevealSection>
             <div className="flex items-end justify-between mb-10">
               <div>
-                <h2 className="display-heading text-3xl md:text-4xl mb-2">Browse by category</h2>
-                <p className="text-muted-foreground text-lg">Find guides organized by what you need help with.</p>
+                <h2 className="display-heading text-3xl md:text-4xl mb-2">Guides &amp; Tutorials</h2>
+                <p className="text-muted-foreground text-lg">{guides.length.toLocaleString()}+ free step-by-step guides. No jargon, just answers.</p>
               </div>
               <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
-                <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/guides">Browse all <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
           </RevealSection>
@@ -240,10 +267,10 @@ const Index = () => {
               const c = categoryColors[cat] || { border: 'border-l-gray-400', iconBg: 'bg-muted', text: 'text-muted-foreground' };
               return (
                 <Link key={cat} to={`/guides?category=${cat}`} className="block group">
-                  <div className="glow-card h-full">
+                  <div className={`glow-card h-full border-l-4 ${c.border}`}>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className={`h-10 w-10 rounded-lg ${c.iconBg} flex items-center justify-center`}>
+                        <div className={`h-10 w-10 rounded-lg ${c.iconBg} flex items-center justify-center shrink-0`}>
                           <Icon className={`h-5 w-5 ${c.text}`} />
                         </div>
                         <div>
@@ -251,7 +278,7 @@ const Index = () => {
                           <span className="text-xs text-muted-foreground">{count} guides</span>
                         </div>
                       </div>
-                      <ChevronRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
+                      <ChevronRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
                     </div>
                   </div>
                 </Link>
@@ -259,221 +286,47 @@ const Index = () => {
             })}
           </div>
 
-          <div className="md:hidden text-center mt-8">
-            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link></Button>
+          <div className="text-center mt-8">
+            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">Browse all {guides.length.toLocaleString()}+ guides <ArrowRight className="h-4 w-4" /></Link></Button>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════ */}
-      {/* POPULAR TOOLS                                     */}
+      {/* RESOURCES                                         */}
       {/* ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24">
         <div className="container">
           <RevealSection>
-            <div className="flex items-end justify-between mb-10">
-              <div>
-                <h2 className="display-heading text-3xl md:text-4xl mb-2">Interactive tools</h2>
-                <p className="text-muted-foreground text-lg">Check your security, clean up your device, and more — all free.</p>
-              </div>
-              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
-                <Link to="/tools">View all tools <ArrowRight className="h-4 w-4" /></Link>
-              </Button>
+            <div className="text-center mb-10">
+              <h2 className="display-heading text-3xl md:text-4xl mb-3">Resources</h2>
+              <p className="text-muted-foreground text-lg max-w-md mx-auto">Everything you need — organized in one place.</p>
             </div>
           </RevealSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 stagger">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto stagger">
             {[
-              { title: 'Scam Simulator', desc: 'Practice spotting scams in a safe environment.', to: '/tools/scam-simulator', emoji: '🛡️', color: 'bg-red-50 dark:bg-red-950/30' },
-              { title: 'Privacy Audit', desc: 'Check your privacy settings step by step.', to: '/tools/privacy-audit', emoji: '🔒', color: 'bg-violet-50 dark:bg-violet-950/30' },
-              { title: 'Streaming Calculator', desc: 'See what you spend on streaming services.', to: '/tools/streaming-calculator', emoji: '📺', color: 'bg-purple-50 dark:bg-purple-950/30' },
-              { title: 'Security Scorecard', desc: 'Get your personal security grade.', to: '/tools/cyber-scorecard', emoji: '🏆', color: 'bg-amber-50 dark:bg-amber-950/30' },
-              { title: 'New Phone Setup', desc: 'Set up your new iPhone or Android.', to: '/tools/new-phone-setup', emoji: '📱', color: 'bg-blue-50 dark:bg-blue-950/30' },
-              { title: 'WiFi Troubleshooter', desc: 'Fix your WiFi step by step.', to: '/tools/wifi-troubleshooter', emoji: '📶', color: 'bg-sky-50 dark:bg-sky-950/30' },
-              { title: 'Password Strength', desc: 'Test how strong your passwords are.', to: '/tools/password-strength', emoji: '🔑', color: 'bg-green-50 dark:bg-green-950/30' },
-              { title: 'Digital Cleanup', desc: 'Clean up your inbox, apps, and files.', to: '/tools/digital-cleanup', emoji: '🧹', color: 'bg-orange-50 dark:bg-orange-950/30' },
-            ].map((tool) => (
-              <Link key={tool.to} to={tool.to} className="block group">
-                <div className={`glow-card h-full`}>
-                  <div className={`h-10 w-10 rounded-xl ${tool.color} flex items-center justify-center text-xl mb-3`}>
-                    {tool.emoji}
-                  </div>
-                  <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{tool.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{tool.desc}</p>
+              { emoji: '🚨', title: 'Emergency Help', desc: 'Hacked, scammed, or locked out? Get urgent help now.', to: '/emergency-help', color: 'border-red-200 dark:border-red-800/30 bg-red-50/50 dark:bg-red-950/20' },
+              { emoji: '⚡', title: 'Quick Fixes', desc: 'The most common tech problems solved fast.', to: '/quick-fixes', color: 'border-amber-200 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20' },
+              { emoji: '🛡️', title: 'Scam Simulator', desc: 'Practice spotting scams before the real thing.', to: '/tools/scam-simulator', color: 'border-rose-200 dark:border-rose-800/30 bg-rose-50/50 dark:bg-rose-950/20' },
+              { emoji: '🔒', title: 'Privacy Audit', desc: 'Check and fix your privacy settings step by step.', to: '/tools/privacy-audit', color: 'border-violet-200 dark:border-violet-800/30 bg-violet-50/50 dark:bg-violet-950/20' },
+              { emoji: '💬', title: 'Community Forum', desc: 'Ask questions and get answers from real people.', to: '/forum', color: 'border-blue-200 dark:border-blue-800/30 bg-blue-50/50 dark:bg-blue-950/20' },
+              { emoji: '🎥', title: 'Video Tutorials', desc: 'Watch step-by-step video walkthroughs.', to: '/videos', color: 'border-purple-200 dark:border-purple-800/30 bg-purple-50/50 dark:bg-purple-950/20' },
+              { emoji: '📖', title: 'Glossary', desc: 'Plain-English definitions for any tech term.', to: '/glossary', color: 'border-teal-200 dark:border-teal-800/30 bg-teal-50/50 dark:bg-teal-950/20' },
+              { emoji: '💡', title: 'Weekly Tips', desc: 'One helpful tech tip delivered every Sunday.', to: '/weekly-tips', color: 'border-green-200 dark:border-green-800/30 bg-green-50/50 dark:bg-green-950/20' },
+              { emoji: '🤖', title: 'AI Tutor', desc: 'A friendly AI that explains tech in plain English.', to: '/ai-tutor', color: 'border-cyan-200 dark:border-cyan-800/30 bg-cyan-50/50 dark:bg-cyan-950/20' },
+              { emoji: '🎁', title: 'Gift Tech Help', desc: 'Give someone the gift of digital confidence.', to: '/gift-session', color: 'border-pink-200 dark:border-pink-800/30 bg-pink-50/50 dark:bg-pink-950/20' },
+              { emoji: 'ℹ️', title: 'About TekSure', desc: 'Who we are and why we built this.', to: '/about', color: 'border-slate-200 dark:border-slate-700/30 bg-slate-50/50 dark:bg-slate-800/20' },
+              { emoji: '🗺️', title: 'Explore All', desc: 'See everything TekSure has to offer.', to: '/explore', color: 'border-indigo-200 dark:border-indigo-800/30 bg-indigo-50/50 dark:bg-indigo-950/20' },
+            ].map((r) => (
+              <Link key={r.to} to={r.to} className="group block">
+                <div className={`rounded-xl border p-4 h-full hover:shadow-sm transition-all ${r.color}`}>
+                  <div className="text-2xl mb-2">{r.emoji}</div>
+                  <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{r.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{r.desc}</p>
                 </div>
               </Link>
             ))}
-          </div>
-
-          <div className="md:hidden text-center mt-8">
-            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/tools">View all tools <ArrowRight className="h-4 w-4" /></Link></Button>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════ */}
-      {/* HOW IT WORKS                                      */}
-      {/* ══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24">
-        <div className="container">
-          <RevealSection>
-            <div className="text-center mb-14">
-              <h2 className="display-heading text-3xl md:text-4xl mb-3">How TekSure works</h2>
-              <p className="text-muted-foreground max-w-sm mx-auto text-lg">Three steps. Simpler than calling your cable company.</p>
-            </div>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto stagger">
-            {[
-              { step: '1', title: 'Tell us what\'s wrong', desc: 'One quick form. Your phone or email — that\'s all we need.', icon: Mail, color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' },
-              { step: '2', title: 'We reach out to you', desc: 'A real person calls or texts. No chatbots. Usually within a few hours.', icon: Phone, color: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400' },
-              { step: '3', title: 'Problem solved', desc: 'We walk you through the fix step by step. Plain English, no jargon.', icon: CheckCircle, color: 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400' },
-            ].map((s) => (
-              <div key={s.step} className="rounded-2xl border border-border/60 bg-card p-7 text-center relative overflow-hidden shadow-sm">
-                <div className="absolute top-2 right-3 text-5xl font-black text-foreground/[0.03] leading-none select-none">{s.step}</div>
-                <div className="relative">
-                  <div className={`h-14 w-14 rounded-xl ${s.color} flex items-center justify-center mx-auto mb-5`}>
-                    <s.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="font-semibold text-base mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
-              <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════ */}
-      {/* POPULAR GUIDES                                    */}
-      {/* ══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24 bg-muted/40">
-        <div className="container">
-          <RevealSection>
-            <div className="flex items-end justify-between mb-10">
-              <div>
-                <h2 className="display-heading text-3xl md:text-4xl mb-2">Popular guides</h2>
-                <p className="text-muted-foreground text-lg">The most helpful articles for beginners.</p>
-              </div>
-              <Button asChild variant="ghost" className="hidden md:flex gap-1.5 text-sm text-muted-foreground hover:text-primary">
-                <Link to="/guides">View all <ArrowRight className="h-4 w-4" /></Link>
-              </Button>
-            </div>
-          </RevealSection>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 stagger">
-            {featuredGuides.map((guide) => {
-              const c = categoryColors[guide.category] || { iconBg: 'bg-muted', text: 'text-muted-foreground' };
-              return (
-                <Link key={guide.slug} to={`/guides/${guide.slug}`} className="block group">
-                  <div className="glow-card h-full">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className={`h-10 w-10 rounded-xl ${c.iconBg} flex items-center justify-center shrink-0 ${c.text}`}>
-                        {(() => { const Icon = categoryIcons[guide.category] || BookOpen; return <Icon className="h-5 w-5" />; })()}
-                      </div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <Badge variant="secondary" className="text-xs font-medium">{categoryLabels[guide.category]}</Badge>
-                        <span className="text-xs text-muted-foreground">{guide.readTime}</span>
-                      </div>
-                    </div>
-                    <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug">{guide.title}</h3>
-                    <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="md:hidden text-center mt-8">
-            <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">View all guides <ArrowRight className="h-4 w-4" /></Link></Button>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════ */}
-      {/* TESTIMONIALS                                      */}
-      {/* ══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24">
-        <div className="container">
-          <RevealSection>
-            <div className="text-center mb-12">
-              <h2 className="display-heading text-3xl md:text-4xl mb-3">What people are saying</h2>
-              <p className="text-muted-foreground max-w-md mx-auto text-lg">Real feedback from real people we have helped.</p>
-            </div>
-          </RevealSection>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto stagger">
-            {[
-              { name: 'Margaret T.', age: '72', location: 'Dallas, TX', text: 'I was terrified of being scammed online. The Scam Simulator tool showed me exactly what to look for. Now I feel confident checking my email without worrying.', stars: 5 },
-              { name: 'James R.', age: '68', location: 'Phoenix, AZ', text: 'My grandson set up a new phone for me but never explained how anything works. TekSure guides walked me through everything step by step. Now I can do it myself.', stars: 5 },
-              { name: 'Linda M.', age: '65', location: 'Orlando, FL', text: 'I have been paying $140/month for cable. The streaming calculator showed me I could get everything I watch for $45. That is over $1,000 saved this year.', stars: 5 },
-              { name: 'Robert K.', age: '71', location: 'Portland, OR', text: 'The password strength checker was a wake-up call. I had been using the same password for everything. The guide showed me how to fix it in 20 minutes.', stars: 5 },
-              { name: 'Susan W.', age: '67', location: 'Chicago, IL', text: 'I could never figure out my Medicare portal. The step-by-step guide had screenshots of every screen. I was logged in and checking my benefits within 10 minutes.', stars: 5 },
-              { name: 'David H.', age: '74', location: 'Nashville, TN', text: 'My WiFi kept dropping out. The troubleshooter walked me through fixing it — turns out my router was in the wrong spot. It has worked great ever since.', stars: 5 },
-            ].map((t, i) => (
-              <div key={i} className="rounded-2xl border border-border bg-card p-6">
-                <div className="flex items-center gap-1 mb-3">
-                  {Array.from({ length: t.stars }).map((_, j) => (
-                    <Star key={j} className="h-4 w-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">"{t.text}"</p>
-                <div className="flex items-center gap-2">
-                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">
-                    {t.name.split(' ').map(w => w[0]).join('')}
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium">{t.name}, {t.age}</p>
-                    <p className="text-xs text-muted-foreground">{t.location}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════ */}
-      {/* NEWSLETTER + CTA                                  */}
-      {/* ══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-24">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center max-w-5xl mx-auto">
-            <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1] mb-4" style={{ letterSpacing: '-0.035em' }}>
-                Ready to feel confident with technology?
-              </h2>
-              <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-                Browse {guides.length}+ free guides — or skip the reading and talk to a real person.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
-                  <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help Now</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
-                  <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse Guides</Link>
-                </Button>
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-border bg-muted/50 p-7">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-base">Free weekly tech tip</h3>
-                  <p className="text-sm text-muted-foreground">One helpful tip every Sunday. No spam.</p>
-                </div>
-              </div>
-              <NewsletterCTA />
-            </div>
           </div>
         </div>
       </section>
