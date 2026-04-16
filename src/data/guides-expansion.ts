@@ -3046,4 +3046,1862 @@ For privacy, both devices have a physical camera cover or switch. Slide it close
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // MORE GOVERNMENT & CIVIC (5 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'renew-passport-online',
+    title: 'How to Renew Your Passport Online',
+    excerpt: 'Renew your U.S. passport from home using the State Department website — no post office visit required for eligible renewals.',
+    category: 'government-civic' as any,
+    tags: ['passport', 'travel', 'government', 'state department', 'renewal'],
+    readTime: '7 min',
+    thumbnailEmoji: '🛂',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Renewing your U.S. passport used to mean printing forms, getting new photos taken, and mailing everything to the State Department. Now, if you qualify, you can renew online through the State Department website at travel.state.gov — and the whole process takes about 20 minutes from your couch.
+
+You are eligible for online renewal if your most recent passport was issued when you were 16 or older, it was issued within the last 15 years, it is not damaged, and you are not changing your name (or you have a legal document for the name change). If your passport does not meet these requirements, you will need to apply in person at a passport acceptance facility.
+
+To get started, go to travel.state.gov and look for "Renew My Passport" or "Online Passport Renewal." You will need to create a MyTravelGov account if you do not already have one. Have these items ready: your most recent passport, a digital passport photo (you can take one with your phone against a white background), and a credit or debit card for the fee.
+
+The application walks you through entering your personal information, uploading your photo, and paying the renewal fee. Standard processing takes 6 to 8 weeks. Expedited processing (for an additional fee) takes 2 to 3 weeks. You can check the status of your renewal anytime by logging back into your MyTravelGov account.
+
+One important note: your old passport will be cancelled once the new one is issued. If you need to travel while your renewal is processing, consider expedited processing or check the State Department website for emergency passport services.
+
+Keep your confirmation number in a safe place — you will need it to check your application status. The State Department will mail your new passport book to you when it is ready.`,
+    steps: [
+      { title: 'Check your eligibility', content: 'Your passport must have been issued when you were 16+, within the last 15 years, and must not be damaged. Visit travel.state.gov to confirm you qualify for online renewal.' },
+      { title: 'Create a MyTravelGov account', content: 'Go to travel.state.gov → "Renew My Passport" → "Start Online Renewal." Create a MyTravelGov account with your email address and a password.' },
+      { title: 'Take your passport photo', content: 'Use your phone to take a photo against a plain white background. Face the camera directly, remove glasses, and keep a neutral expression. The site provides photo guidelines.' },
+      { title: 'Fill out the renewal application', content: 'Enter your personal details, passport information from your current passport, and upload your digital photo. Double-check all spellings and dates.' },
+      { title: 'Pay the renewal fee', content: 'Pay with a credit or debit card. Standard renewal is around $130. Expedited processing costs an additional $60 and cuts the wait time to 2-3 weeks.' },
+      { title: 'Save your confirmation number', content: 'Write down or screenshot your confirmation number. Log back into MyTravelGov anytime to check your application status. Your new passport arrives by mail.' },
+    ],
+  },
+
+  {
+    slug: 'apply-unemployment-benefits-online',
+    title: 'How to Apply for Unemployment Benefits Online',
+    excerpt: 'File for unemployment insurance through your state workforce agency website — what you need and how the process works.',
+    category: 'government-civic' as any,
+    tags: ['unemployment', 'benefits', 'government', 'workforce', 'jobs'],
+    readTime: '8 min',
+    thumbnailEmoji: '📋',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If you have lost your job through no fault of your own, you may be eligible for unemployment insurance benefits. Every state runs its own unemployment program, but the process for applying is similar across the country — and most states allow you to file your claim entirely online.
+
+Unemployment benefits replace a portion of your income while you look for new work. The amount and duration vary by state, but most states pay benefits for up to 26 weeks. To qualify, you generally must have earned enough wages during a specific period (called the "base period," usually the first four of the last five completed calendar quarters), and you must be able and available to work.
+
+Before you start your application, gather these documents: your Social Security number, your driver's license or state ID, your most recent employer's name, address, and phone number, the dates you worked there, and the reason you are no longer employed. If you worked for more than one employer in the last 18 months, have that information ready too.
+
+To file, search online for "[your state] unemployment" or go to careeronestop.org, which links to every state's unemployment website. Create an account on your state's workforce agency site. The application asks about your work history, the reason you lost your job, your availability to work, and your contact information.
+
+After you submit your application, your former employer will be notified and may respond. The state agency reviews your claim and determines if you qualify. This process usually takes 2 to 3 weeks. If approved, you will receive instructions on how to certify your benefits each week — this means confirming that you are still unemployed and actively looking for work.
+
+Most states pay benefits through direct deposit or a prepaid debit card. You must certify each week (or every two weeks, depending on your state) to keep receiving payments. Missing a certification can delay or stop your benefits.`,
+    steps: [
+      { title: 'Find your state unemployment website', content: 'Search for "[your state] unemployment benefits" or visit careeronestop.org to find a direct link to your state workforce agency.' },
+      { title: 'Gather your documents', content: 'Have ready: Social Security number, state ID, recent employer name/address/phone, dates of employment, and the reason you are no longer working.' },
+      { title: 'Create an account and start the application', content: 'Register on your state workforce site with your email and personal details. Begin the unemployment claim application — it typically takes 30-45 minutes.' },
+      { title: 'Complete the work history section', content: 'Enter details for every employer you worked for in the last 18 months. Include company names, addresses, dates, and your reason for leaving each job.' },
+      { title: 'Submit and save your confirmation', content: 'Review your application carefully, then submit. Save or print your confirmation number and any reference documents the site provides.' },
+      { title: 'Certify weekly to receive payments', content: 'Each week (or every two weeks), log back in and certify that you are still unemployed and actively seeking work. Missing certifications can delay your benefits.' },
+    ],
+  },
+
+  {
+    slug: 'find-property-tax-information-online',
+    title: 'How to Find Your Property Tax Information Online',
+    excerpt: 'Look up your property tax bill, assessed value, and payment history using your county assessor or treasurer website.',
+    category: 'government-civic' as any,
+    tags: ['property tax', 'real estate', 'county', 'government', 'homeowner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🏠',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `If you own a home, you pay property taxes — and all that information is available online through your county government website. You can look up your current tax bill, see your property's assessed value, check payment due dates, view your payment history, and in many counties, pay your taxes online.
+
+Property taxes are handled at the county level, so the website you need depends on where your home is located. The two offices that handle property taxes are the County Assessor (who determines your property's value) and the County Treasurer or Tax Collector (who sends you the bill and collects payments).
+
+To find your property tax information, search online for "[your county name] property tax lookup" or "[your county name] assessor." Most county websites have a property search tool where you can look up your parcel by address, owner name, or parcel number (also called an APN or PIN — this number is on your previous tax bill).
+
+Once you find your property, you can see the assessed value (what the county says your property is worth for tax purposes), the tax rate, and the amount you owe. Many counties break down the tax into categories: school district, city, county, special districts, and so on.
+
+If your property taxes seem too high, the assessed value is where to look first. If you believe your home is assessed for more than its actual market value, you can file an appeal with your county assessor's office. Most counties have a deadline for appeals, usually within 30 to 90 days of receiving your assessment notice.
+
+You can also check whether you qualify for any property tax exemptions. Many states offer homestead exemptions, senior citizen exemptions, veteran exemptions, or disability exemptions that can reduce your tax bill. These are usually listed on your county assessor's website.`,
+    steps: [
+      { title: 'Search for your county tax website', content: 'Open your browser and search for "[your county name] property tax" or "[your county name] assessor." Click the official county government result (usually ending in .gov or .us).' },
+      { title: 'Use the property search tool', content: 'Look for "Property Search" or "Parcel Lookup." Enter your home address, owner name, or parcel number. Your parcel number is on previous tax bills.' },
+      { title: 'Review your assessed value', content: 'The assessed value is what the county says your property is worth for tax purposes. Compare this to recent home sales in your area to check if it seems accurate.' },
+      { title: 'Check your tax bill and due dates', content: 'View your current tax bill, which is usually split into two installments. Note the due dates — late payments incur penalties in most counties.' },
+      { title: 'Look into exemptions', content: 'Check your county assessor website for property tax exemptions you may qualify for: homestead, senior, veteran, or disability exemptions can reduce your bill.' },
+      { title: 'Pay online if available', content: 'Many counties let you pay property taxes online by credit card, debit card, or electronic check. Look for "Pay Taxes" or "Online Payments" on the treasurer website.' },
+    ],
+  },
+
+  {
+    slug: 'use-ssa-retirement-estimator',
+    title: 'How to Use the SSA Retirement Estimator',
+    excerpt: 'Use the Social Security Administration retirement estimator to see how much you could receive at different retirement ages.',
+    category: 'government-civic' as any,
+    tags: ['social security', 'retirement', 'benefits', 'estimator', 'planning'],
+    readTime: '6 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `The Social Security Administration offers a free retirement estimator tool that shows you approximately how much you will receive in monthly Social Security benefits based on your actual earnings record. This is one of the most useful planning tools available, and it takes less than five minutes to use.
+
+The estimator uses your real work history — every job where Social Security taxes were withheld — to calculate your benefit amount. It shows you estimates at three key ages: 62 (the earliest you can start collecting), your full retirement age (66 or 67, depending on when you were born), and 70 (when your benefit maxes out).
+
+The difference between starting at 62 versus 70 can be significant. Your monthly benefit at 70 can be 70 to 80 percent higher than at 62. The estimator helps you see these numbers clearly so you can plan.
+
+To use the estimator, go to ssa.gov and look for "Estimate My Benefits" or "Retirement Estimator." You can use the quick estimator without logging in — you enter your date of birth, this year's earnings, and the age you plan to stop working. For a more detailed estimate based on your actual earnings history, sign in to your my Social Security account.
+
+Once signed in, the estimator pulls your complete earnings record and gives you personalized estimates. You can adjust the numbers by changing your expected future earnings or your planned retirement age to see how different scenarios affect your monthly payment.
+
+Keep in mind that these are estimates, not guarantees. Your actual benefit will depend on your earnings between now and when you retire. But the estimator gives you a solid ballpark figure for planning your retirement budget.
+
+If you have not created a my Social Security account yet, the estimator is a great reason to set one up. You can also view your full earnings history to make sure all your past jobs and wages are recorded correctly — errors happen, and fixing them now ensures you get the full benefit you have earned.`,
+    steps: [
+      { title: 'Go to ssa.gov', content: 'Open your browser and go to ssa.gov. Look for "Estimate My Benefits" or "Retirement Estimator" on the homepage.' },
+      { title: 'Choose quick or detailed estimate', content: 'The quick estimator does not require logging in — enter your date of birth, current earnings, and planned retirement age. For a detailed estimate, sign in to your my Social Security account.' },
+      { title: 'Sign in to my Social Security (recommended)', content: 'Log in with your Login.gov credentials. The estimator will pull your actual earnings history for a more accurate calculation.' },
+      { title: 'Review estimates at different ages', content: 'The tool shows your estimated monthly benefit at age 62, your full retirement age (66 or 67), and age 70. Compare the amounts to see the impact of waiting.' },
+      { title: 'Adjust your assumptions', content: 'Change your expected future earnings or retirement age to model different scenarios. See how working an extra year or two affects your monthly payment.' },
+      { title: 'Check your earnings record', content: 'While logged in, review your earnings history to make sure every job is listed and wages are correct. Report any errors to the SSA to protect your benefit amount.' },
+    ],
+  },
+
+  {
+    slug: 'report-identity-theft-ftc',
+    title: 'How to Report Identity Theft to the FTC',
+    excerpt: 'Report identity theft at IdentityTheft.gov to create a recovery plan, dispute fraudulent accounts, and protect your credit.',
+    category: 'government-civic' as any,
+    tags: ['identity theft', 'FTC', 'fraud', 'credit', 'security'],
+    readTime: '7 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If someone has used your personal information to open accounts, make purchases, or file taxes in your name, you are a victim of identity theft. The Federal Trade Commission (FTC) runs IdentityTheft.gov — the federal government's one-stop resource for reporting identity theft and creating a personalized recovery plan.
+
+Reporting to the FTC is important for several reasons. First, it creates an official Identity Theft Report that you can use to dispute fraudulent accounts and charges. Second, the FTC generates a step-by-step recovery plan tailored to your specific situation. Third, the report helps law enforcement track identity theft patterns and catch criminals.
+
+Before you start, write down everything you know about the theft: which accounts were affected, when you noticed the problem, any fraudulent charges or accounts you have found, and how you think the thief got your information. You will also need your Social Security number, driver's license number, and contact information.
+
+Go to IdentityTheft.gov and click "Get Started." The site walks you through a series of questions about what happened — did someone open new accounts in your name, use your existing accounts, file taxes using your information, or something else? Based on your answers, the FTC builds a custom recovery plan.
+
+Your recovery plan includes specific letters to send to companies, instructions for placing fraud alerts or credit freezes with the three credit bureaus (Equifax, Experian, and TransUnion), steps to dispute fraudulent charges, and a timeline to follow. You can also print your Identity Theft Report to share with creditors and law enforcement.
+
+The FTC also recommends filing a report with your local police department. While police may not investigate individual cases, having a police report on file adds another layer of documentation that creditors may require.
+
+After filing your FTC report, the site tracks your progress and sends you reminders about next steps. You can log back in anytime to update your case or access your recovery plan.`,
+    steps: [
+      { title: 'Go to IdentityTheft.gov', content: 'Open your browser and go to IdentityTheft.gov. This is the official FTC website for reporting identity theft. Click "Get Started."' },
+      { title: 'Answer the questions about what happened', content: 'The site asks what type of identity theft occurred: unauthorized accounts, misuse of existing accounts, tax fraud, or other types. Select everything that applies.' },
+      { title: 'Provide your personal information', content: 'Enter your name, address, Social Security number, and contact information. This is needed to create your Identity Theft Report.' },
+      { title: 'Review your personalized recovery plan', content: 'The FTC generates a step-by-step plan with specific actions, pre-written letters, and a timeline. Read through each step carefully.' },
+      { title: 'Place a fraud alert or credit freeze', content: 'Follow the plan to contact Equifax (1-800-525-6285), Experian (1-888-397-3742), and TransUnion (1-800-680-7289) to freeze your credit or place a fraud alert.' },
+      { title: 'File a police report', content: 'Contact your local police department to file an identity theft report. Bring your FTC Identity Theft Report and any evidence of the fraud.' },
+      { title: 'Follow up and monitor', content: 'Log back into IdentityTheft.gov to track your progress. Check your credit reports at annualcreditreport.com for any new suspicious activity over the next year.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE COMMUNICATION (7 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-group-chat-iphone',
+    title: 'How to Set Up a Group Chat on iPhone',
+    excerpt: 'Create a group text on iPhone using iMessage or SMS so you can message multiple people at once.',
+    category: 'communication' as any,
+    tags: ['group chat', 'iPhone', 'iMessage', 'texting', 'messaging'],
+    readTime: '4 min',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Group chats on iPhone let you send one message to multiple people at the same time — great for family updates, event planning, or keeping a small circle connected. The Messages app on iPhone makes it straightforward to create one.
+
+There are two types of group messages on iPhone. If everyone in the group has an iPhone (and iMessage is turned on), you get a blue-bubble iMessage group with features like reactions, typing indicators, and the ability to name the group. If anyone in the group has an Android phone, the conversation uses SMS/MMS (green bubbles), which is more limited but still works for basic group texting.
+
+To create a group chat, open the Messages app and tap the compose button (the pencil-and-paper icon in the top-right corner). In the "To:" field, start typing the name or phone number of the first person you want to add. Tap their name when it appears. Then type the next person's name and tap it. Keep adding people until your group is complete.
+
+Once you have added everyone, type your message in the text field at the bottom and tap the blue send arrow. Your group chat is now created, and everyone will see the messages.
+
+If all members are using iMessage, you can name the group by tapping the group icons at the top of the conversation, then tapping "Change Name and Photo." You can also add or remove members from the group here. For SMS/MMS groups, naming and member management are not available.
+
+A few things to keep in mind: group texts can get busy fast. Each member can mute the conversation by tapping the group name and toggling "Hide Alerts." You can also leave an iMessage group (if there are four or more people) by tapping the group name and choosing "Leave this Conversation."
+
+Group chats are saved in your Messages app like any other conversation. You can scroll back through the history, share photos, and use all the same features you would in a one-on-one text.`,
+    steps: [
+      { title: 'Open the Messages app', content: 'Find the green Messages icon on your iPhone home screen and tap it to open the app.' },
+      { title: 'Tap the compose button', content: 'In the top-right corner, tap the pencil-and-paper icon (compose button) to start a new message.' },
+      { title: 'Add your contacts', content: 'In the "To:" field, type a name or phone number. Tap the correct contact when it appears. Repeat for each person you want in the group.' },
+      { title: 'Type and send your first message', content: 'Tap the text field at the bottom, type your message, and tap the blue send arrow. This creates the group chat.' },
+      { title: 'Name your group (iMessage only)', content: 'If everyone has an iPhone: tap the group icons at the top → "Change Name and Photo." Type a group name and choose an icon or emoji.' },
+      { title: 'Manage the group', content: 'Tap the group icons at the top to add or remove members, mute notifications with "Hide Alerts," or leave the conversation if needed.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-group-chat-android',
+    title: 'How to Set Up a Group Chat on Android',
+    excerpt: 'Create a group text on Android using Google Messages or your default messaging app to reach multiple people at once.',
+    category: 'communication' as any,
+    tags: ['group chat', 'Android', 'Google Messages', 'texting', 'messaging'],
+    readTime: '4 min',
+    thumbnailEmoji: '💬',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Group chats on Android let you message multiple people in a single conversation. Whether you are coordinating a family dinner, planning a trip with friends, or keeping coworkers in the loop, a group text keeps everyone on the same page.
+
+Most Android phones use Google Messages as the default texting app. If your phone uses a different messaging app (like Samsung Messages), the steps are similar. The basic idea is the same: create a new message, add multiple recipients, and start typing.
+
+To create a group chat in Google Messages, open the app and tap "Start chat" at the bottom-right (or the compose button, which looks like a pencil or plus sign). Then tap "New group." You can search for contacts by name or phone number. Tap each person you want to add — a checkmark appears next to their name. When you have selected everyone, tap "Next."
+
+You will be prompted to give your group a name. This is optional but helpful, especially if you have multiple group chats. Type a name like "Family," "Book Club," or "Weekend Plans," then tap "Next" or "Create." Your group chat is ready.
+
+Type your first message in the text field and tap the send button. All members receive the message and can reply to the group. If anyone in the group uses RCS (Rich Communication Services, which is like iMessage for Android), you will see features like read receipts, typing indicators, and higher-quality photos.
+
+To manage the group later, open the conversation and tap the group name at the top. You can add or remove members, change the group name, or mute notifications. Muting is helpful if the group gets chatty — you will still see messages when you open the conversation, but your phone will not buzz for every new text.
+
+If you are using Samsung Messages instead of Google Messages, the process is almost identical: tap the compose button, add multiple contacts, and send your first message. Samsung Messages also supports group naming and management.`,
+    steps: [
+      { title: 'Open Google Messages', content: 'Find the Messages app on your home screen (blue chat bubble icon) and tap to open it.' },
+      { title: 'Start a new group', content: 'Tap "Start chat" at the bottom-right, then tap "New group." On some phones, tap the pencil or plus icon first.' },
+      { title: 'Add contacts to the group', content: 'Search for contacts by name or phone number. Tap each person to add them — a checkmark appears. Add everyone you want, then tap "Next."' },
+      { title: 'Name your group', content: 'Type a group name like "Family" or "Weekend Plans." This is optional but makes it easier to find the conversation later. Tap "Next" or "Create."' },
+      { title: 'Send your first message', content: 'Type a message in the text field at the bottom and tap the send arrow. All group members receive the message and can reply.' },
+      { title: 'Manage the group', content: 'Tap the group name at the top of the conversation to add or remove members, rename the group, or mute notifications.' },
+    ],
+  },
+
+  {
+    slug: 'delete-old-social-media-accounts',
+    title: 'How to Delete Old Social Media Accounts You No Longer Use',
+    excerpt: 'Close inactive social media accounts to protect your privacy and reduce your digital footprint.',
+    category: 'communication' as any,
+    tags: ['social media', 'privacy', 'accounts', 'security', 'Facebook', 'Twitter'],
+    readTime: '6 min',
+    thumbnailEmoji: '🗑️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Old social media accounts you no longer use are a privacy and security risk. They contain your personal information, photos, and connections — and if a data breach happens, hackers get access to all of it. Deleting accounts you do not use anymore is a smart move.
+
+The challenge is that every social media platform makes the deletion process a little different, and some make it intentionally hard to find. Here is how to handle the most common platforms.
+
+Facebook: Go to Settings and Privacy, then Settings, then Your Facebook Information, then Deactivation and Deletion. Choose "Permanently Delete Account." Facebook gives you a 30-day grace period — if you log back in during that time, the deletion is cancelled. Before deleting, you can download a copy of your data from "Download Your Information" in the same menu.
+
+Instagram: Go to Settings, then Account, then Delete Account (on the website) or search "Delete Instagram account" in a browser. You will be asked why you are leaving and must enter your password to confirm. Instagram also has a 30-day grace period.
+
+Twitter/X: Go to Settings, then Your Account, then Deactivate Your Account. After deactivation, Twitter keeps your data for 30 days before permanently deleting it. You cannot undo this after 30 days.
+
+LinkedIn: Click your profile photo, then Settings and Privacy, then Account management, then Close account. LinkedIn will show you what you will lose (connections, endorsements, messages) and ask you to confirm.
+
+If you cannot remember your password for an old account, use the "Forgot Password" link on the login page to reset it. If you no longer have access to the email address associated with the account, you may need to contact the platform's support team for help.
+
+Before deleting any account, consider downloading your data first. Most platforms offer an export tool that creates a file with your posts, photos, messages, and other content. This way you keep your memories even after the account is gone.
+
+Also update any other services where you used that social media account to log in (for example, apps or websites where you chose "Log in with Facebook"). Switch those to email-based login before deleting the social account.`,
+    steps: [
+      { title: 'Make a list of old accounts', content: 'Think through platforms you have used: Facebook, Instagram, Twitter/X, LinkedIn, Pinterest, Snapchat, TikTok, Reddit, Tumblr. Search your email for "welcome" or "verify" messages to find forgotten accounts.' },
+      { title: 'Log into each account', content: 'Visit each platform and log in. If you forgot your password, use "Forgot Password" to reset it via your email address.' },
+      { title: 'Download your data first', content: 'Before deleting, look for "Download Your Data" or "Request Your Information" in the account settings. Save the file to your computer as a backup of your posts and photos.' },
+      { title: 'Update linked logins', content: 'Check if you used this account to log into other apps or websites (like "Log in with Facebook"). Switch those to email-based login before deleting.' },
+      { title: 'Find the deletion option', content: 'Each platform buries it differently. Look in Settings, then Account, then Delete or Deactivate. If you cannot find it, search online for "how to delete [platform name] account."' },
+      { title: 'Confirm and wait out the grace period', content: 'Most platforms have a 30-day grace period. Do not log back in during this time or the deletion will be cancelled. After 30 days, your account is permanently removed.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-microsoft-teams-video-calls',
+    title: 'How to Set Up Microsoft Teams for Video Calls',
+    excerpt: 'Install Microsoft Teams on your computer or phone and make your first video call — free version included.',
+    category: 'communication' as any,
+    tags: ['Microsoft Teams', 'video call', 'meetings', 'remote work', 'communication'],
+    readTime: '6 min',
+    thumbnailEmoji: '🟦',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Microsoft Teams is a popular video calling and messaging app used by many workplaces, schools, and families. The good news is there is a free version that anyone can use for personal video calls, group chats, and screen sharing — you do not need a paid Microsoft 365 subscription.
+
+To get started, you need a Microsoft account. If you have ever used Outlook, Hotmail, Xbox, or Skype, you already have one. If not, you can create a free account at account.microsoft.com. You will need an email address and a password.
+
+Next, download Microsoft Teams. On a computer, go to microsoft.com/teams and click "Download Teams." On an iPhone, find it in the App Store. On an Android, find it in the Google Play Store. Install the app and sign in with your Microsoft account.
+
+When you open Teams for the first time, you will see the main screen with options for Chat, Calendar, Calls, and Activity. To start a video call right away, tap or click the "Meet" button (it looks like a video camera). You can start an instant meeting or schedule one for later.
+
+To invite someone to a video call, you have several options. You can share the meeting link by copying it and sending it via text or email. You can also type their name or email address to invite them directly if they are already in your Teams contacts.
+
+During a video call, you will see controls at the bottom of the screen: camera on/off, microphone on/off, screen sharing, chat, and reactions. You can also change your background by clicking the three dots (more options) and selecting "Video Effects" — this lets you blur your background or choose a virtual background.
+
+Teams works well on slower internet connections because it automatically adjusts video quality. If your connection is weak, you can turn off your camera and use audio only to improve the experience.
+
+The free version of Teams supports meetings with up to 100 participants for up to 60 minutes, which is more than enough for most personal and small group calls.`,
+    steps: [
+      { title: 'Create or sign into a Microsoft account', content: 'If you already use Outlook or Hotmail, use that account. Otherwise, go to account.microsoft.com and create a free account with your email address.' },
+      { title: 'Download Microsoft Teams', content: 'Computer: go to microsoft.com/teams and click "Download Teams." iPhone: App Store. Android: Google Play Store. Install and open the app.' },
+      { title: 'Sign in to Teams', content: 'Open Teams and sign in with your Microsoft account email and password. The app may ask to send you a verification code — check your email or phone.' },
+      { title: 'Start a video call', content: 'Tap the "Meet" button (video camera icon). Choose "Start Meeting" for an instant call or "Schedule Meeting" for a future time.' },
+      { title: 'Invite people to the call', content: 'Copy the meeting link and send it by text or email. Or type their name or email address to invite them directly through Teams.' },
+      { title: 'Use the call controls', content: 'During the call, use the bottom toolbar to toggle your camera and microphone, share your screen, open the chat, or send reactions. Click the three dots for background effects.' },
+    ],
+  },
+
+  {
+    slug: 'send-photos-through-text-message',
+    title: 'How to Send Photos Through Text Message (iPhone and Android)',
+    excerpt: 'Share photos from your phone through a text message — step-by-step instructions for both iPhone and Android.',
+    category: 'communication' as any,
+    tags: ['photos', 'texting', 'MMS', 'iPhone', 'Android', 'messaging'],
+    readTime: '4 min',
+    thumbnailEmoji: '📸',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Sending a photo through a text message is one of the most common things people do with their phones. Whether it is a picture of the grandkids, a receipt you need to share, or a photo of your garden, the process works the same way on both iPhone and Android.
+
+When you send a photo through a text message, your phone uses MMS (Multimedia Messaging Service) instead of regular SMS. This happens automatically — you do not need to change any settings. The photo gets compressed slightly to fit through the messaging system, but it is still good enough for viewing on a phone screen.
+
+On iPhone: Open the Messages app and tap the conversation with the person you want to send the photo to (or start a new message). Tap the plus sign (+) to the left of the text field. You will see options including "Photos," "Camera," and others. Tap "Photos" to choose a photo from your library, or tap "Camera" to take a new photo right now. Select the photo you want to send — it appears in the message field. Add a text caption if you want, then tap the blue send arrow.
+
+On Android (Google Messages): Open the Messages app and tap the conversation. Tap the plus sign (+) or the camera icon next to the text field. Choose "Gallery" or "Photos" to pick an existing photo, or "Camera" to take a new one. Select your photo, add an optional message, and tap the send arrow.
+
+You can send multiple photos at once by selecting more than one from your photo library before sending. On iPhone, tap multiple photos to select them, then tap "Add" to attach them all. On Android, tap and hold to select the first photo, then tap additional photos.
+
+Keep in mind that MMS has a file size limit (usually 1 to 3 megabytes depending on your carrier). If you are sending a high-resolution photo, your phone automatically compresses it. For full-quality photos, use email, AirDrop (iPhone), Nearby Share (Android), or a cloud service like Google Photos.`,
+    steps: [
+      { title: 'Open your messaging app', content: 'iPhone: tap the green Messages icon. Android: tap the Messages app (blue chat bubble). Open the conversation with the person you want to send the photo to.' },
+      { title: 'Tap the attachment button', content: 'iPhone: tap the plus sign (+) to the left of the text field. Android: tap the plus sign (+) or the camera/paperclip icon next to the text field.' },
+      { title: 'Choose a photo or take a new one', content: 'Select "Photos" or "Gallery" to pick an existing photo from your library. Or select "Camera" to take a new photo right now.' },
+      { title: 'Select your photo', content: 'Browse your photos and tap the one you want to send. To send multiple photos, tap each one to select them (iPhone: tap, then "Add"; Android: tap and hold the first, then tap others).' },
+      { title: 'Add a message and send', content: 'The photo appears in the message field. Type an optional caption in the text box, then tap the blue send arrow to deliver the photo.' },
+    ],
+  },
+
+  {
+    slug: 'use-google-meet-video-calls',
+    title: 'How to Use Google Meet for Video Calls',
+    excerpt: 'Start or join a Google Meet video call from your computer or phone — no software installation needed on a computer.',
+    category: 'communication' as any,
+    tags: ['Google Meet', 'video call', 'Google', 'meetings', 'communication'],
+    readTime: '5 min',
+    thumbnailEmoji: '📹',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Google Meet is a free video calling service from Google. One of its biggest advantages is that on a computer, you do not need to install anything — it runs directly in your web browser (Chrome, Firefox, Safari, or Edge). On a phone, you can download the Google Meet app from the App Store or Google Play Store.
+
+To use Google Meet, you need a Google account. If you have a Gmail address, you already have one. If not, you can create a free Google account at accounts.google.com.
+
+To start a new meeting, go to meet.google.com in your web browser and click "New Meeting." You will see three options: create a meeting link for later, start an instant meeting, or schedule a meeting in Google Calendar. For a quick call, choose "Start an instant meeting." Your camera and microphone will turn on (you can turn them off before joining), and you will get a meeting link to share with others.
+
+To invite someone, copy the meeting link and send it to them by email, text, or any messaging app. When they click the link, they will join your meeting. You can also type their email address directly in Meet to send them an invitation.
+
+To join a meeting someone else started, click the link they sent you. If you do not have a link, go to meet.google.com and enter the meeting code (the string of letters after meet.google.com/ in the URL).
+
+During a call, the controls at the bottom of the screen let you turn your camera and microphone on and off, share your screen, use the chat, and adjust settings. Click the three dots for more options like changing your layout, turning on captions (which transcribe what people are saying in real time), and adjusting your background.
+
+The free version of Google Meet supports up to 100 participants and meetings up to 60 minutes — plenty for most personal and small business calls.`,
+    steps: [
+      { title: 'Go to meet.google.com', content: 'Open your web browser and go to meet.google.com. Sign in with your Google account (Gmail address and password).' },
+      { title: 'Start a new meeting', content: 'Click "New Meeting" and choose "Start an instant meeting" for a call right now. Your camera preview will appear — you can adjust your camera and microphone before joining.' },
+      { title: 'Share the meeting link', content: 'Copy the meeting link from the screen and send it to the people you want to invite via text, email, or messaging app.' },
+      { title: 'Join a meeting from a link', content: 'If someone sent you a Google Meet link, click it in your browser. You will see a preview of your camera — click "Join now" to enter the meeting.' },
+      { title: 'Use the meeting controls', content: 'The bottom toolbar has buttons for camera, microphone, screen sharing, chat, reactions, and a red phone icon to leave the call.' },
+      { title: 'Turn on captions', content: 'Click the three dots (more options) then select "Turn on captions." Google Meet transcribes speech in real time at the bottom of the screen — helpful in noisy environments.' },
+    ],
+  },
+
+  {
+    slug: 'manage-notification-settings-phone',
+    title: 'How to Manage Notification Settings on Your Phone',
+    excerpt: 'Take control of which apps can send you notifications and how they appear on your iPhone or Android phone.',
+    category: 'communication' as any,
+    tags: ['notifications', 'settings', 'iPhone', 'Android', 'phone management'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔔',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone buzzing and dinging all day can be overwhelming. The good news is you have complete control over which apps can send you notifications, how they appear, and whether they make sounds. Taking a few minutes to manage your notification settings can make a big difference in your daily phone experience.
+
+On iPhone, go to Settings then Notifications. You will see a list of every app installed on your phone. Tap any app to control its notification settings. For each app, you can toggle "Allow Notifications" on or off. You can also choose how notifications appear: on the Lock Screen, in Notification Center, or as Banners (pop-up alerts at the top of your screen). You can turn on or off Sounds and Badges (the red number circles on app icons).
+
+A helpful iPhone feature is "Notification Summary." Go to Settings then Notifications then Scheduled Summary. When turned on, this collects non-urgent notifications and delivers them in a bundle at times you choose (like 8 AM and 6 PM), instead of interrupting you throughout the day.
+
+On Android, go to Settings then Notifications (or Settings then Apps and Notifications, depending on your phone). You can see which apps send the most notifications at the top of the screen. Tap any app to control its notification settings. Android gives you fine-grained control — many apps have notification "categories" or "channels" that let you turn off specific types of notifications while keeping others. For example, you might want delivery updates from a shopping app but not promotional offers.
+
+Both iPhone and Android let you quickly silence a notification type by long-pressing (pressing and holding) on a notification when it appears. This opens a quick menu where you can mute that app or change its settings without going into the full Settings app.
+
+A good approach is to go through your notification list once and turn off notifications for apps that do not need your immediate attention — games, shopping apps, news apps, and social media are common culprits. Keep notifications on for calls, texts, calendar reminders, and anything time-sensitive.`,
+    steps: [
+      { title: 'Open notification settings', content: 'iPhone: Settings then Notifications. Android: Settings then Notifications (or Apps and Notifications). You will see a list of all your apps.' },
+      { title: 'Review which apps send notifications', content: 'Scroll through the list. Turn off "Allow Notifications" for apps that do not need your immediate attention — games, shopping apps, and promotional apps are good ones to silence.' },
+      { title: 'Customize how notifications appear', content: 'For apps you keep on: choose whether alerts show on the Lock Screen, as banners, or only in the notification center. Turn sounds on or off per app.' },
+      { title: 'Set up notification summary (iPhone)', content: 'Go to Settings then Notifications then Scheduled Summary. Turn it on and choose delivery times. Non-urgent notifications get bundled instead of interrupting you.' },
+      { title: 'Use long-press for quick changes', content: 'When a notification pops up that you do not want, press and hold on it. A menu appears letting you mute that app or adjust its settings without opening the Settings app.' },
+      { title: 'Revisit your settings periodically', content: 'New apps you install default to sending notifications. Every month or so, check your notification settings and silence any new apps that are cluttering your screen.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE ESSENTIAL SKILLS (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'take-screenshot-any-device',
+    title: 'How to Take a Screenshot on Any Device',
+    excerpt: 'Capture what is on your screen — step-by-step instructions for iPhone, Android, Windows, Mac, and Chromebook.',
+    category: 'essential-skills' as any,
+    tags: ['screenshot', 'screen capture', 'iPhone', 'Android', 'Windows', 'Mac'],
+    readTime: '5 min',
+    thumbnailEmoji: '📱',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A screenshot is a picture of whatever is currently showing on your screen. Screenshots are useful for saving information, sharing what you see with someone else, documenting an error message, or keeping a record of a confirmation page.
+
+Every device has a built-in way to take screenshots. Here is how to do it on each one.
+
+iPhone (with Face ID — iPhone X and later): Press the Side button and Volume Up button at the same time. You will see a flash and hear a camera click sound (if your phone is not on silent). A small preview appears in the bottom-left corner. Tap it to edit, or swipe it away to save it to your Photos app.
+
+iPhone (with Home button — iPhone 8 and earlier): Press the Home button and Side button at the same time.
+
+Android: Press the Power button and Volume Down button at the same time. Hold both for about one second. The screen flashes and the screenshot saves to your Photos or Gallery app. On some Samsung phones, you can also swipe the edge of your hand across the screen to capture.
+
+Windows: Press the Windows key + Shift + S. A toolbar appears at the top of the screen letting you select what to capture — the whole screen, a rectangle, or a freeform shape. The screenshot copies to your clipboard so you can paste it, and also saves as a notification you can click to edit.
+
+Mac: Press Command + Shift + 3 to capture the entire screen. Press Command + Shift + 4 to select a specific area with your cursor. Press Command + Shift + 5 to open a screenshot toolbar with more options. Screenshots save to your Desktop by default.
+
+Chromebook: Press Ctrl + Show Windows (the rectangle with two lines, above the 6 key). For a partial screenshot, press Ctrl + Shift + Show Windows, then drag to select an area.
+
+All screenshots are saved as image files that you can share by text, email, or any other method you use to send photos.`,
+    steps: [
+      { title: 'iPhone (Face ID): Side + Volume Up', content: 'Press the Side button and Volume Up button at the same time. A preview appears in the bottom-left corner — tap it to edit or swipe it away to save.' },
+      { title: 'iPhone (Home button): Home + Side', content: 'Press the Home button and the Side (or Top) button at the same time. The screenshot saves to your Photos app.' },
+      { title: 'Android: Power + Volume Down', content: 'Press the Power button and Volume Down button at the same time and hold for one second. The screenshot saves to your Gallery or Photos app.' },
+      { title: 'Windows: Windows + Shift + S', content: 'Press the Windows key + Shift + S. A snipping toolbar appears at the top — select the area to capture. The image copies to your clipboard for pasting.' },
+      { title: 'Mac: Command + Shift + 3 or 4', content: 'Command + Shift + 3 captures the full screen. Command + Shift + 4 lets you drag to select an area. Screenshots save to your Desktop.' },
+      { title: 'Find your screenshots', content: 'iPhone/Android: open the Photos or Gallery app and look for a "Screenshots" album. Windows: check the notification that appears, or paste from clipboard. Mac: look on your Desktop.' },
+    ],
+  },
+
+  {
+    slug: 'copy-and-paste-phone-computer',
+    title: 'How to Copy and Paste on Phone and Computer',
+    excerpt: 'Learn the universal skill of copying and pasting text, links, and images on iPhone, Android, Windows, and Mac.',
+    category: 'essential-skills' as any,
+    tags: ['copy', 'paste', 'clipboard', 'text', 'basics'],
+    readTime: '4 min',
+    thumbnailEmoji: '📋',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Copy and paste lets you take text, a link, an image, or other content from one place and put it somewhere else — without having to retype it. It is one of the most useful skills you can learn on any device.
+
+The concept works the same everywhere: first, you select what you want to copy. Then you copy it (which stores it temporarily in an invisible "clipboard"). Then you go to where you want to put it and paste it.
+
+On a phone (iPhone or Android), copying text works by pressing and holding on a word. After a moment, the word gets highlighted and two handles appear (small circles or lines) that you can drag to select more or less text. Once the text is selected, a menu appears with options including "Copy." Tap "Copy." The text is now on your clipboard. Go to where you want to paste it (a text message, email, search bar, notes app, etc.), tap and hold in the text field, and tap "Paste" from the menu that appears.
+
+On a Windows computer, select text by clicking and dragging your mouse over it. Press Ctrl + C to copy. Click where you want to paste it, then press Ctrl + V. These keyboard shortcuts work in almost every program — word processors, email, web browsers, and more.
+
+On a Mac, select text by clicking and dragging, then press Command + C to copy and Command + V to paste.
+
+You can copy more than text. To copy a link from your browser, tap the address bar (the URL at the top), select all the text, and copy it. To copy an image on a computer, right-click the image and choose "Copy image." On a phone, press and hold on an image and look for "Copy" in the menu.
+
+One important thing to know: your clipboard holds only one item at a time. When you copy something new, it replaces whatever was there before. If you need to paste the same thing multiple times, you can — it stays on the clipboard until you copy something else.`,
+    steps: [
+      { title: 'Select text on a phone', content: 'Press and hold on a word until it highlights. Drag the handles to select the text you want. A menu appears above the selection.' },
+      { title: 'Copy the selection', content: 'Tap "Copy" from the menu. The text is stored on your clipboard — you will not see anything happen, but it is saved.' },
+      { title: 'Paste on a phone', content: 'Go to where you want to put the text (message, email, search bar). Tap and hold in the text field. Tap "Paste" from the menu.' },
+      { title: 'Copy on a Windows computer', content: 'Click and drag your mouse to select text. Press Ctrl + C to copy. To paste, click where you want the text and press Ctrl + V.' },
+      { title: 'Copy on a Mac', content: 'Click and drag to select text. Press Command + C to copy. Press Command + V to paste. These shortcuts work in nearly every app.' },
+      { title: 'Copy a link or image', content: 'For links: tap the address bar and copy the URL. For images: right-click (computer) or press and hold (phone) and choose "Copy" or "Copy image."' },
+    ],
+  },
+
+  {
+    slug: 'scan-qr-code-phone',
+    title: 'How to Scan a QR Code with Your Phone',
+    excerpt: 'Use your phone camera to scan QR codes for menus, websites, payments, WiFi passwords, and more.',
+    category: 'essential-skills' as any,
+    tags: ['QR code', 'camera', 'scanning', 'iPhone', 'Android'],
+    readTime: '3 min',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `QR codes are those square black-and-white patterns you see on restaurant menus, event tickets, product packaging, and signs. When you scan one with your phone camera, it takes you to a website, shows information, connects you to WiFi, or completes some other action automatically.
+
+The great news is that most modern phones can scan QR codes using the built-in camera app — no special app needed.
+
+On iPhone (iOS 11 and later): Open the Camera app and point it at the QR code. Hold your phone steady so the QR code is visible in the frame. After a moment, a notification banner appears at the top of the screen showing what the QR code links to (usually a website). Tap the banner to open it.
+
+On Android (most phones running Android 9 and later): Open the Camera app and point it at the QR code. If your camera supports it, a link or popup appears that you can tap. On some Android phones, you may need to tap a small QR code icon that appears, or you may need to use Google Lens instead. To use Google Lens, open the Camera app and look for the Lens icon (a square with a dot), or open the Google app and tap the Lens icon in the search bar.
+
+On Samsung phones: Open the Camera app, and QR code scanning is on by default. If it does not work, go to Camera Settings and make sure "Scan QR codes" is toggled on.
+
+Tips for scanning: hold your phone about 6 to 12 inches from the QR code. Make sure the code is well-lit and not wrinkled, damaged, or partially covered. If the QR code is on a screen (like a TV or another phone), reduce glare by adjusting your angle.
+
+A word of caution: QR codes can link to any website, including malicious ones. Before tapping the link that appears, glance at the URL to make sure it looks legitimate. If a QR code on a random sticker or flyer sends you to an unfamiliar website, it is better to skip it.`,
+    steps: [
+      { title: 'Open your camera app', content: 'On both iPhone and Android, open the Camera app from your home screen. No special QR scanning app is needed on most modern phones.' },
+      { title: 'Point the camera at the QR code', content: 'Hold your phone about 6 to 12 inches away from the QR code. Keep the entire QR code visible in the camera frame and hold steady.' },
+      { title: 'Wait for the notification', content: 'After a second or two, a notification banner or link appears on screen showing what the QR code does (usually a website URL).' },
+      { title: 'Tap to open', content: 'Tap the notification banner (iPhone) or the popup link (Android) to follow the QR code to its destination.' },
+      { title: 'If it does not work', content: 'Samsung: check Camera Settings and make sure "Scan QR codes" is on. Other Android: try Google Lens (open the Google app, tap the Lens icon in the search bar, point at the QR code).' },
+      { title: 'Stay safe', content: 'Before tapping the link, glance at the URL. If it looks unfamiliar or suspicious, do not open it. QR codes in trusted locations (restaurants, stores, offices) are generally safe.' },
+    ],
+  },
+
+  {
+    slug: 'update-your-phone',
+    title: 'How to Update Your Phone (iPhone and Android)',
+    excerpt: 'Keep your phone secure and running well by installing the latest software updates on iPhone or Android.',
+    category: 'essential-skills' as any,
+    tags: ['software update', 'iPhone', 'Android', 'security', 'phone maintenance'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Software updates keep your phone secure, fix bugs, and sometimes add new features. Both Apple and Google release regular updates for their phones, and installing them is one of the most important things you can do to protect your device and your personal information.
+
+There are two types of updates: major updates (like going from iOS 17 to iOS 18, or Android 14 to Android 15) that come once a year and add big new features, and smaller updates (like iOS 17.4.1) that come more frequently and fix security issues and bugs. Both types are important.
+
+Before updating, make sure your phone is connected to WiFi (updates are large and can use a lot of mobile data), has at least 50 percent battery (or is plugged in), and has enough storage space (some updates need several gigabytes of free space).
+
+On iPhone: Go to Settings, then General, then Software Update. Your phone checks for available updates. If one is available, you will see a description of what it includes. Tap "Download and Install." You may need to enter your passcode. The download can take several minutes depending on your internet speed, and the installation requires your phone to restart. Do not use your phone during the installation — it will come back on when it is done.
+
+On Android: Go to Settings, then System, then System Update (the exact path varies by phone brand — Samsung uses Settings then Software Update). Tap "Check for updates." If an update is available, tap "Download" or "Download and Install." Your phone downloads the update, then restarts to install it. The whole process can take 10 to 30 minutes.
+
+You can set up automatic updates so your phone installs them overnight. On iPhone: Settings, then General, then Software Update, then Automatic Updates, then turn on both toggles. On Android: Settings, then System, then System Update, then look for an automatic update option (availability varies by manufacturer).
+
+If you are running low on storage and cannot install an update, delete old photos, apps you do not use, or large message attachments to free up space.`,
+    steps: [
+      { title: 'Prepare your phone', content: 'Connect to WiFi, plug in your charger (or make sure battery is above 50 percent), and close any apps you are working in. Updates need a stable connection and power.' },
+      { title: 'Open update settings', content: 'iPhone: Settings then General then Software Update. Android: Settings then System then System Update (Samsung: Settings then Software Update).' },
+      { title: 'Check for available updates', content: 'Your phone searches for updates. If one is available, you will see the version number and a description of what it includes.' },
+      { title: 'Download and install', content: 'Tap "Download and Install." Enter your passcode if asked. The download may take several minutes. Your phone will restart during installation — this is normal.' },
+      { title: 'Wait for installation to complete', content: 'Do not try to use your phone during the restart. It may show a progress bar or Apple/Android logo. The process typically takes 10 to 30 minutes.' },
+      { title: 'Turn on automatic updates', content: 'iPhone: Settings then General then Software Update then Automatic Updates then turn on. Android: check System Update settings for an auto-update toggle.' },
+    ],
+  },
+
+  {
+    slug: 'restart-phone-when-it-freezes',
+    title: 'How to Restart Your Phone When It Freezes',
+    excerpt: 'Force restart a frozen iPhone or Android phone when the screen is unresponsive or the device is stuck.',
+    category: 'essential-skills' as any,
+    tags: ['restart', 'frozen phone', 'troubleshooting', 'iPhone', 'Android'],
+    readTime: '3 min',
+    thumbnailEmoji: '🔃',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A frozen phone — where the screen does not respond to taps and nothing seems to work — is frustrating but usually not serious. Most of the time, a force restart fixes the problem. A force restart is different from a normal restart: it forces the phone to power off and back on even when the screen is unresponsive.
+
+A force restart does not delete your data, apps, or settings. Think of it like unplugging a computer and plugging it back in — it clears whatever was causing the freeze and starts fresh.
+
+iPhone (Face ID models — iPhone X and later): Press and quickly release the Volume Up button. Then press and quickly release the Volume Down button. Then press and hold the Side button until you see the Apple logo appear. This takes about 10 seconds. Let go of the Side button and wait for the phone to restart.
+
+iPhone 7: Press and hold both the Volume Down button and the Side button at the same time. Keep holding until you see the Apple logo (about 10 seconds).
+
+iPhone 6s and earlier: Press and hold both the Home button and the Top (or Side) button at the same time until the Apple logo appears.
+
+Android phones: Press and hold the Power button for 10 to 20 seconds. On most Android phones, this forces a restart. If that does not work, try holding the Power button and Volume Down button at the same time for 10 to 20 seconds. Samsung phones: hold Power + Volume Down for about 7 seconds.
+
+After the restart, your phone should work normally. If your phone keeps freezing, it may be running low on storage, have an app that is misbehaving, or need a software update. Try updating your phone, closing apps running in the background, or freeing up storage space.
+
+If force restart does not work and your phone is completely unresponsive, let the battery drain completely. Once it dies, plug it in and turn it back on normally.`,
+    steps: [
+      { title: 'iPhone (Face ID): Volume Up, Volume Down, then hold Side', content: 'Press and quickly release Volume Up. Press and quickly release Volume Down. Then press and hold the Side button until the Apple logo appears (about 10 seconds).' },
+      { title: 'iPhone 7: Volume Down + Side', content: 'Press and hold both the Volume Down button and Side button at the same time. Keep holding until the Apple logo appears.' },
+      { title: 'iPhone 6s and earlier: Home + Top/Side', content: 'Press and hold both the Home button and the Top (or Side) button at the same time until the Apple logo appears.' },
+      { title: 'Android: Hold Power for 10 to 20 seconds', content: 'Press and hold the Power button for 10 to 20 seconds. The phone should vibrate and restart. If not, try Power + Volume Down together for 10 to 20 seconds.' },
+      { title: 'Wait for restart to complete', content: 'Once the logo appears, release the buttons and wait for the phone to boot up. This takes about 30 seconds to a minute.' },
+      { title: 'If freezing continues', content: 'Update your phone software, close background apps, and free up storage. If it keeps happening, visit your phone carrier store or the manufacturer support website for help.' },
+    ],
+  },
+
+  {
+    slug: 'free-up-storage-phone',
+    title: 'How to Free Up Storage on Your Phone',
+    excerpt: 'Reclaim space on your iPhone or Android by clearing out what you do not need — photos, apps, caches, and more.',
+    category: 'essential-skills' as any,
+    tags: ['storage', 'phone maintenance', 'photos', 'apps', 'iPhone', 'Android'],
+    readTime: '6 min',
+    thumbnailEmoji: '💾',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `When your phone runs out of storage, things start going wrong: you cannot take photos, apps crash, updates fail, and everything slows down. Fortunately, freeing up space is something you can do yourself, and you do not need to delete everything — a targeted cleanup usually recovers a surprising amount of space.
+
+First, check how much storage you are using. On iPhone: Settings then General then iPhone Storage. This shows a bar chart of what is using your space (Apps, Photos, Messages, System, etc.) and a list of apps sorted by size. On Android: Settings then Storage (or Settings then Battery and Device Care then Storage on Samsung). You will see a breakdown of what is taking up space.
+
+The biggest storage hog for most people is photos and videos. Videos especially take up enormous space — a single one-minute video can be 100 to 200 megabytes. Here are your options: delete photos and videos you no longer want (do not forget to empty the "Recently Deleted" or "Trash" album afterward — they stay there for 30 days). Use a cloud service like iCloud Photos (iPhone) or Google Photos (both platforms) to store originals in the cloud and keep smaller versions on your phone.
+
+Next, look at apps you do not use. On the iPhone Storage screen, you can see when you last used each app. If you have not opened an app in months, consider deleting it. On Android, go to Settings then Apps and sort by size to find the biggest apps. You can delete them or clear their cache (temporary files).
+
+Messages with lots of photos and videos can also eat up storage. On iPhone, go to Settings then General then iPhone Storage then Messages to see how much space messages are using. You can set messages to auto-delete after 30 days or one year instead of keeping them forever.
+
+Clear your browser cache: Safari (Settings then Safari then Clear History and Website Data) or Chrome (open Chrome then three dots then Settings then Privacy then Clear browsing data).
+
+Offline music and podcasts are another hidden storage drain. If you downloaded albums or podcast episodes for offline listening, removing the ones you have already enjoyed frees significant space.`,
+    steps: [
+      { title: 'Check your storage usage', content: 'iPhone: Settings then General then iPhone Storage. Android: Settings then Storage. See what categories (photos, apps, messages) are using the most space.' },
+      { title: 'Clean up photos and videos', content: 'Delete photos and videos you no longer need. Remember to empty the "Recently Deleted" or "Trash" album afterward. Consider using iCloud Photos or Google Photos for cloud storage.' },
+      { title: 'Remove unused apps', content: 'iPhone: tap an app in the iPhone Storage list and choose "Delete App." Android: Settings then Apps, select the app, and tap "Uninstall." Start with apps you have not opened in months.' },
+      { title: 'Clear app caches', content: 'Android: Settings then Apps, select an app, then Storage, then "Clear Cache." iPhone does not have a manual cache clear for most apps — deleting and reinstalling an app clears its cache.' },
+      { title: 'Manage messages and downloads', content: 'iPhone: Settings then General then iPhone Storage then Messages to review and delete old message attachments. Both platforms: check your Downloads folder for files you no longer need.' },
+      { title: 'Clear browser data', content: 'Safari: Settings then Safari then Clear History and Website Data. Chrome: three dots then Settings then Privacy then Clear Browsing Data.' },
+    ],
+  },
+
+  {
+    slug: 'change-phone-wallpaper',
+    title: 'How to Change Your Phone Wallpaper',
+    excerpt: 'Personalize your phone by changing the background image on your Lock Screen and Home Screen.',
+    category: 'essential-skills' as any,
+    tags: ['wallpaper', 'personalization', 'iPhone', 'Android', 'home screen'],
+    readTime: '3 min',
+    thumbnailEmoji: '🎨',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone wallpaper is the background image you see on your Lock Screen (before you unlock) and your Home Screen (behind your apps). Changing it is a quick way to personalize your phone with a photo of your family, a nature scene, or any image you like.
+
+On iPhone: Go to Settings then Wallpaper then "Add New Wallpaper." You will see options to choose from your Photos library, Apple's built-in wallpapers, colors, and dynamic options. Tap "Photos" to use one of your own pictures. Select the photo, then pinch and drag to adjust how it fits the screen. Tap "Add" when you are happy with it. The phone asks if you want to set it as a pair (both Lock Screen and Home Screen) or customize each separately.
+
+You can also change your wallpaper directly from the Lock Screen. Press and hold on the Lock Screen until the customization view appears. Tap the plus sign (+) to add a new wallpaper, or swipe between wallpapers you have already set up.
+
+On Android: Go to Settings then Wallpaper (or Settings then Display then Wallpaper). You will see options to choose from your Gallery, live wallpapers, or built-in wallpapers. Select "My Photos" or "Gallery" to use your own picture. Choose a photo, crop or adjust it to fit, and tap "Set Wallpaper." You will be asked if you want it on the Home Screen, Lock Screen, or both.
+
+On Samsung phones, you can also press and hold on an empty area of your Home Screen and tap "Wallpaper and style" for quick access.
+
+Tips for choosing a good wallpaper: pick an image that is not too busy, so you can still read your app names and notifications clearly. Darker wallpapers tend to look better and use less battery on phones with OLED screens. Photos of landscapes, sunsets, or solid colors work well.`,
+    steps: [
+      { title: 'Open wallpaper settings', content: 'iPhone: Settings then Wallpaper then "Add New Wallpaper." Android: Settings then Wallpaper (or Settings then Display then Wallpaper).' },
+      { title: 'Choose your image source', content: 'Select "Photos" or "Gallery" to use your own photo. Or browse built-in wallpapers, colors, and other options provided by your phone.' },
+      { title: 'Select and adjust your photo', content: 'Tap the photo you want. Pinch to zoom in or out, and drag to position it. Make sure faces or important parts of the photo are centered.' },
+      { title: 'Set where it applies', content: 'Choose whether to use the wallpaper on the Lock Screen, Home Screen, or both. iPhone lets you customize each separately.' },
+      { title: 'Confirm your choice', content: 'Tap "Set" or "Add" to apply the wallpaper. Press the Home button or swipe up to see your new wallpaper in action.' },
+    ],
+  },
+
+  {
+    slug: 'adjust-screen-brightness-any-device',
+    title: 'How to Adjust Screen Brightness on Any Device',
+    excerpt: 'Make your screen brighter or dimmer on iPhone, Android, Windows, Mac, or Chromebook for comfort and battery life.',
+    category: 'essential-skills' as any,
+    tags: ['brightness', 'display', 'screen', 'settings', 'battery'],
+    readTime: '3 min',
+    thumbnailEmoji: '☀️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Adjusting your screen brightness is something you will do often — brighter outdoors so you can see in sunlight, dimmer at night so it does not strain your eyes, and somewhere in the middle most of the time. Every device gives you a quick way to control brightness.
+
+On iPhone: Swipe down from the top-right corner of the screen (on iPhones with Face ID) or swipe up from the bottom (on older iPhones with a Home button) to open Control Center. You will see a brightness slider — a tall bar with a sun icon. Drag it up to increase brightness or down to decrease it. You can also go to Settings then Display and Brightness and adjust the slider there.
+
+On Android: Swipe down from the top of the screen to open Quick Settings. You will see a brightness slider near the top. Drag it left to dim or right to brighten. Pull down again (or tap the slider) for a larger view. You can also go to Settings then Display then Brightness Level. Most Android phones have an "Adaptive Brightness" toggle that learns your preferred brightness in different lighting conditions.
+
+On Windows: Click the battery icon or the notification area in the bottom-right corner of the taskbar. You will see a brightness slider. Drag it to adjust. You can also go to Settings then System then Display and use the brightness slider. Many laptops also have brightness keys on the keyboard (usually F1/F2 or function keys with sun icons).
+
+On Mac: Use the F1 key (dimmer) and F2 key (brighter) on the keyboard. Or click the Control Center icon in the menu bar and drag the brightness slider. You can also go to System Settings then Displays and adjust brightness there.
+
+Lower brightness saves battery. If you are trying to make your phone or laptop last longer between charges, dimming the screen is one of the most effective things you can do.`,
+    steps: [
+      { title: 'iPhone: Use Control Center', content: 'Swipe down from the top-right corner (or up from the bottom on older iPhones). Drag the brightness slider (tall bar with sun icon) up or down.' },
+      { title: 'Android: Use Quick Settings', content: 'Swipe down from the top of the screen. Find the brightness slider and drag it left (dimmer) or right (brighter).' },
+      { title: 'Windows: Use the taskbar', content: 'Click the battery or notification area in the bottom-right corner. Drag the brightness slider. Or use the F-key brightness controls on your laptop keyboard.' },
+      { title: 'Mac: Use keyboard or Control Center', content: 'Press F1 to dim or F2 to brighten. Or click the Control Center icon in the menu bar and drag the brightness slider.' },
+      { title: 'Enable auto-brightness', content: 'iPhone: Settings then Accessibility then Display and Text Size then Auto-Brightness. Android: Settings then Display then Adaptive Brightness. This adjusts brightness automatically based on your environment.' },
+    ],
+  },
+
+  {
+    slug: 'connect-to-wifi-any-device',
+    title: 'How to Connect to WiFi on Any Device',
+    excerpt: 'Get online by connecting your iPhone, Android, Windows, Mac, or Chromebook to a WiFi network.',
+    category: 'essential-skills' as any,
+    tags: ['WiFi', 'internet', 'connectivity', 'network', 'settings'],
+    readTime: '4 min',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Connecting to WiFi is one of the first things you do with any device. WiFi lets you use the internet without using your cellular data, and it is available in homes, coffee shops, libraries, airports, and many other places.
+
+To connect, you need the name of the WiFi network (sometimes called the SSID) and the password. At home, these are usually on a sticker on the back or bottom of your router. In public places, ask staff for the WiFi name and password, or look for a sign.
+
+On iPhone: Go to Settings then Wi-Fi. Make sure the toggle at the top is turned on (green). Your phone scans for nearby networks and lists them. Tap the name of the network you want to join. If it is password-protected (you will see a lock icon), type the password and tap "Join." A checkmark appears next to the network name when you are connected.
+
+On Android: Go to Settings then Network and Internet then Wi-Fi (or Settings then Connections then Wi-Fi on Samsung). Make sure WiFi is toggled on. Tap the network name from the list. Enter the password if required and tap "Connect." A "Connected" label appears under the network name.
+
+On Windows: Click the WiFi icon in the bottom-right corner of the taskbar. A list of nearby networks appears. Click the one you want and click "Connect." Enter the password and click "Next." A connected icon appears.
+
+On Mac: Click the WiFi icon in the menu bar at the top-right of the screen. Select the network from the dropdown list. Enter the password when prompted and click "Join."
+
+Once connected, your device remembers the network and reconnects automatically in the future. If the WiFi is not working, try turning WiFi off and back on, moving closer to the router, or restarting your device.
+
+Public WiFi networks (at cafes, airports, hotels) are convenient but less secure than your home network. Avoid doing banking or entering passwords on public WiFi unless you are using a VPN (Virtual Private Network), which encrypts your connection.`,
+    steps: [
+      { title: 'Find the WiFi name and password', content: 'At home: check the sticker on your router. In public: ask staff or look for a sign with the WiFi name and password.' },
+      { title: 'Open WiFi settings', content: 'iPhone: Settings then Wi-Fi. Android: Settings then Network and Internet then Wi-Fi. Windows: click WiFi icon on taskbar. Mac: click WiFi icon in menu bar.' },
+      { title: 'Turn on WiFi if needed', content: 'Make sure the WiFi toggle is turned on. Your device will scan for nearby networks and display a list.' },
+      { title: 'Select your network', content: 'Tap or click the name of the WiFi network you want to join. A lock icon means it requires a password.' },
+      { title: 'Enter the password', content: 'Type the WiFi password carefully — passwords are case-sensitive. Tap "Join" (iPhone/Mac), "Connect" (Android/Windows), or press Enter.' },
+      { title: 'Verify the connection', content: 'A checkmark, "Connected" label, or WiFi icon appears when successful. Open a browser and visit any website to confirm internet access.' },
+    ],
+  },
+
+  {
+    slug: 'use-do-not-disturb-mode',
+    title: 'How to Use Do Not Disturb Mode',
+    excerpt: 'Silence calls, texts, and notifications on your phone when you need focused time or uninterrupted sleep.',
+    category: 'essential-skills' as any,
+    tags: ['do not disturb', 'notifications', 'focus', 'sleep', 'phone settings'],
+    readTime: '4 min',
+    thumbnailEmoji: '🌙',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Do Not Disturb mode silences incoming calls, texts, and app notifications so your phone does not ring, buzz, or light up. It is perfect for sleeping, meetings, meals, or any time you want peace and quiet without turning off your phone entirely.
+
+When Do Not Disturb is on, everything still arrives — you will see the notifications when you check your phone. They are being collected, not deleted. The difference is your phone stays silent and the screen stays dark.
+
+On iPhone: You can turn on Do Not Disturb two ways. The quickest: open Control Center (swipe down from the top-right corner) and tap the Focus button (the crescent moon icon). Select "Do Not Disturb." For more options, go to Settings then Focus then Do Not Disturb. Here you can allow calls from specific people (like family members), allow repeated calls (if someone calls twice within three minutes, the second call comes through — useful for emergencies), and schedule Do Not Disturb to turn on and off automatically at certain times.
+
+On Android: Swipe down from the top of the screen to open Quick Settings. Tap the "Do Not Disturb" tile (it might say "DND" or show a circle with a line through it). For more control, tap and hold the tile or go to Settings then Sound then Do Not Disturb. You can set exceptions for calls from contacts, allow repeat callers, and create automatic schedules. Samsung phones call this "Do not disturb" and it is in Settings then Notifications then Do not disturb.
+
+Both platforms let you schedule Do Not Disturb to turn on automatically at bedtime and turn off in the morning. This is one of the most useful features for better sleep — no more getting woken up by a spam notification at 2 AM.
+
+You can also allow specific contacts to break through Do Not Disturb. This way, if your kids, parents, or spouse calls, the phone rings — but everyone else gets sent to voicemail or silence.
+
+Alarms still work during Do Not Disturb on both iPhone and Android, so you do not need to worry about sleeping through your morning alarm.`,
+    steps: [
+      { title: 'Turn on Do Not Disturb quickly', content: 'iPhone: swipe down from top-right, tap the moon icon (Focus), then "Do Not Disturb." Android: swipe down from top, tap the Do Not Disturb tile.' },
+      { title: 'Allow calls from important contacts', content: 'iPhone: Settings then Focus then Do Not Disturb then People then "Allow Calls From" and choose "Favorites" or specific contacts. Android: Settings then Sound then Do Not Disturb then Exceptions.' },
+      { title: 'Enable repeated callers', content: 'Turn on the "Allow Repeated Calls" setting. If someone calls you twice within three minutes, the second call rings through — helpful for emergencies.' },
+      { title: 'Set a bedtime schedule', content: 'iPhone: Settings then Focus then Do Not Disturb then "Add Schedule" and set times. Android: Settings then Sound then Do Not Disturb then Schedules then "Sleeping" and set times.' },
+      { title: 'Know that alarms still work', content: 'Alarms from the Clock app ring even when Do Not Disturb is on. You will not sleep through your morning alarm.' },
+      { title: 'Check missed notifications', content: 'When you turn off Do Not Disturb or pick up your phone, all the notifications that came in while it was on are waiting for you in the notification center.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE APP GUIDES (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'use-google-maps-navigation',
+    title: 'How to Use Google Maps for Navigation',
+    excerpt: 'Get turn-by-turn directions to anywhere using Google Maps on your phone — driving, walking, or public transit.',
+    category: 'app-guides' as any,
+    tags: ['Google Maps', 'navigation', 'directions', 'GPS', 'driving'],
+    readTime: '5 min',
+    thumbnailEmoji: '🗺️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Google Maps is a free navigation app that gives you turn-by-turn directions to any address, business, or landmark. It works for driving, walking, biking, and public transit. If you have a smartphone, Google Maps can replace a standalone GPS device.
+
+Google Maps comes pre-installed on most Android phones. On iPhone, download it free from the App Store if it is not already on your phone. The app uses your phone's GPS to know where you are, so make sure Location Services are turned on.
+
+To get directions, open Google Maps and tap the search bar at the top. Type where you want to go — an address, a business name, a city, or a landmark. Tap the result and then tap "Directions." The app shows your route on a map. At the top, you will see icons for different travel modes: car, transit, walking, and biking. Tap the one you want.
+
+For driving directions, tap "Start" to begin navigation. Your phone gives voice instructions ("In 500 feet, turn right on Main Street") and shows a moving map. The app updates in real time based on traffic conditions and can reroute you if there is a traffic jam or accident ahead.
+
+A few helpful features: if you search for a business (like "coffee shop" or "gas station"), Google Maps shows nearby options with ratings, hours, and phone numbers. You can save your Home and Work addresses in the app so getting directions is quicker. You can also share your location with someone in real time by tapping the blue dot (your location) and selecting "Share your location."
+
+To stop navigation, tap the X or the arrow in the bottom-left corner and tap "Exit navigation."
+
+Google Maps also works offline — handy for areas with poor cell service. Before your trip, search for the area, tap your profile icon, tap "Offline maps," and download the region you need.`,
+    steps: [
+      { title: 'Open Google Maps', content: 'Find the Google Maps icon on your phone (a map pin on a green, yellow, and blue map) and tap to open it.' },
+      { title: 'Search for your destination', content: 'Tap the search bar at the top and type an address, business name, or landmark. Tap the correct result from the suggestions.' },
+      { title: 'Tap Directions', content: 'On the location card that appears, tap the blue "Directions" button. Choose your travel mode: car, transit, walking, or biking.' },
+      { title: 'Review the route', content: 'The map shows your route with the estimated travel time. If there are multiple route options, tap the different paths to compare.' },
+      { title: 'Start navigation', content: 'Tap "Start" to begin turn-by-turn directions. Follow the voice instructions. Keep your phone mounted on your dashboard or in a holder for safe driving.' },
+      { title: 'End navigation', content: 'When you arrive, navigation ends automatically. To stop early, tap the screen, then tap the X or "Exit" button.' },
+    ],
+  },
+
+  {
+    slug: 'order-groceries-instacart',
+    title: 'How to Order Groceries with Instacart',
+    excerpt: 'Get groceries delivered to your door using the Instacart app or website — choose your store, pick items, and schedule delivery.',
+    category: 'app-guides' as any,
+    tags: ['Instacart', 'grocery delivery', 'shopping', 'food', 'delivery'],
+    readTime: '6 min',
+    thumbnailEmoji: '🛒',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Instacart is a grocery delivery service that lets you shop from local stores — like Kroger, Costco, Publix, Safeway, Aldi, and many others — without leaving your home. A personal shopper picks your items and delivers them to your door, usually the same day.
+
+You can use Instacart through the website (instacart.com) or the app (free on iPhone and Android). To get started, create an account with your email address, name, and delivery address. Instacart uses your address to show which stores deliver to your area.
+
+Once logged in, you will see a list of available stores. Tap a store to start shopping. You can browse by category (produce, dairy, meat, bakery, etc.) or use the search bar to find specific items. Tap an item to add it to your cart, and choose the quantity. You can also write notes for the shopper, like "pick the greenest bananas" or "no substitutions for this item."
+
+A key feature is replacement preferences. If an item you ordered is out of stock, the shopper can either substitute something similar or skip it. For each item, you can choose your preference: "Pick best replacement," "Choose a specific replacement," or "Do not replace."
+
+When you are done shopping, tap your cart to review your order. You will see the item total plus fees: a service fee, a delivery fee (which may be reduced or waived with Instacart+ membership), and an optional tip for your shopper. Tips go directly to the person shopping for you — most people tip 15 to 20 percent.
+
+Choose a delivery window: same-day delivery is usually available in 1-hour, 2-hour, or larger windows. Some stores offer scheduled delivery for the next day. Tap "Place Order" and enter your payment information.
+
+After placing your order, you can track it in real time. You will see when the shopper starts shopping, what items they pick, any replacements they suggest (you can approve or reject through the app), and when they are on their way.`,
+    steps: [
+      { title: 'Download and create an account', content: 'Get the Instacart app from the App Store or Google Play, or go to instacart.com. Sign up with your email, name, and delivery address.' },
+      { title: 'Choose a store', content: 'Browse the list of stores that deliver to your area. Tap one to start shopping. You can shop from multiple stores in separate orders.' },
+      { title: 'Add items to your cart', content: 'Browse categories or search for items. Tap an item to add it, choose the quantity, and optionally add notes for the shopper.' },
+      { title: 'Set replacement preferences', content: 'For each item, choose whether the shopper should substitute a similar item if yours is out of stock, or skip it entirely.' },
+      { title: 'Review and choose delivery time', content: 'Tap your cart to review the order. Select a delivery window — same-day options are usually available. Add a tip for your shopper.' },
+      { title: 'Place the order and track delivery', content: 'Enter your payment information and tap "Place Order." Track the shopper in real time and approve or reject any substitutions they suggest.' },
+    ],
+  },
+
+  {
+    slug: 'use-uber-lyft-first-time',
+    title: 'How to Use Uber or Lyft for the First Time',
+    excerpt: 'Request a ride with Uber or Lyft — from downloading the app to getting picked up and arriving safely.',
+    category: 'app-guides' as any,
+    tags: ['Uber', 'Lyft', 'rideshare', 'transportation', 'ride'],
+    readTime: '6 min',
+    thumbnailEmoji: '🚗',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Uber and Lyft are ride-hailing apps that let you request a car and driver to take you somewhere — like a taxi, but you request and pay for it through your phone. Both apps work very similarly, so once you know one, you know the other.
+
+To get started, download the Uber or Lyft app from the App Store (iPhone) or Google Play Store (Android). Create an account with your name, phone number, and email address. You will also need to add a payment method: a credit card, debit card, or connect a service like PayPal or Apple Pay. The app charges automatically — you never need cash.
+
+When you open the app, it uses your phone's location to know where you are. Type where you want to go in the "Where to?" field. The app shows you ride options with estimated prices and arrival times. Common options include: standard rides (UberX or Lyft), shared rides (cheaper but you may share with other passengers), and larger vehicles (UberXL or Lyft XL for groups).
+
+Tap the ride type you want and then tap "Request" or "Confirm." The app matches you with a nearby driver and shows their name, photo, car make, model, color, and license plate number. You will see their estimated arrival time on the map.
+
+When the driver is close, go outside to your pickup location. Verify the car matches what the app shows — check the license plate number. Many riders also confirm by asking the driver "Who are you here for?" to make sure they get in the right car.
+
+During the ride, the app shows your route in real time. You can share your trip status with a friend or family member using the "Share trip" feature — they can follow your ride live on a map.
+
+When you arrive, you do not need to do anything — the fare is charged to your payment method automatically. After the trip, the app asks you to rate your driver (1 to 5 stars) and leave an optional tip.`,
+    steps: [
+      { title: 'Download the app and create an account', content: 'Get Uber or Lyft from the App Store or Google Play. Sign up with your phone number, email, and name. Add a credit card, debit card, or other payment method.' },
+      { title: 'Enter your destination', content: 'Open the app and type where you want to go in the "Where to?" field. The app shows ride options with estimated prices and arrival times.' },
+      { title: 'Choose your ride type and request', content: 'Select a ride type (standard, shared, or larger vehicle). Review the estimated price, then tap "Request" or "Confirm Ride."' },
+      { title: 'Wait for your driver', content: 'The app matches you with a driver and shows their name, photo, car details, and estimated arrival time. Go outside when they are close.' },
+      { title: 'Verify the car and get in', content: 'Check that the car make, model, color, and license plate match what the app shows. Ask "Who are you picking up?" to confirm before getting in.' },
+      { title: 'Arrive and rate your driver', content: 'The fare charges automatically when you arrive. Rate your driver (1 to 5 stars) and add an optional tip. The receipt is emailed to you.' },
+    ],
+  },
+
+  {
+    slug: 'use-amazon-shop-online-safely',
+    title: 'How to Use Amazon to Shop Online Safely',
+    excerpt: 'Browse, compare, and purchase products on Amazon with confidence — including how to spot trustworthy sellers.',
+    category: 'app-guides' as any,
+    tags: ['Amazon', 'online shopping', 'safety', 'delivery', 'retail'],
+    readTime: '6 min',
+    thumbnailEmoji: '📦',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Amazon is the largest online marketplace in the United States. You can buy almost anything — from household supplies to electronics to clothing — and have it delivered to your door, often within one to two days. Here is how to shop on Amazon safely, whether you are a first-time user or want to improve your shopping habits.
+
+First, create an account at amazon.com or through the Amazon app (free on iPhone and Android). You will need an email address and a password. Once logged in, you can add a payment method (credit card, debit card, or Amazon gift card) and your shipping address.
+
+To find products, use the search bar at the top. Type what you are looking for, like "wireless keyboard" or "running shoes size 10." Results show product images, titles, prices, star ratings, and number of reviews.
+
+When evaluating a product, pay attention to the star rating and the number of reviews. A product with 4.5 stars and 10,000 reviews is more reliable than one with 5 stars and 15 reviews. Read a few of the detailed reviews — especially the 3-star reviews, which tend to be the most balanced and honest.
+
+Check who is selling the product. Items "Sold by Amazon.com" are sold directly by Amazon. Items sold by third-party sellers (other companies using Amazon's marketplace) can still be great, but check the seller's rating. Click the seller name to see their feedback score. Stick with sellers who have 95 percent or higher positive feedback.
+
+Look for "Fulfilled by Amazon" — this means even if a third-party seller lists the product, Amazon handles shipping and returns, giving you the same return policy and customer service as Amazon-sold items.
+
+Before purchasing, check the return policy. Most items sold or fulfilled by Amazon can be returned within 30 days. Review the total price including tax and any shipping fees.`,
+    steps: [
+      { title: 'Create an Amazon account', content: 'Go to amazon.com or download the Amazon app. Sign up with your email address and a password. Add your shipping address and a payment method.' },
+      { title: 'Search for what you need', content: 'Type a product name or description in the search bar. Use filters on the left to narrow by price, rating, brand, or Prime eligibility.' },
+      { title: 'Evaluate products carefully', content: 'Check the star rating and number of reviews. Read 3-star reviews for balanced opinions. Look at product photos from other buyers in the reviews section.' },
+      { title: 'Check the seller', content: 'Look for "Sold by Amazon.com" or "Fulfilled by Amazon." For third-party sellers, click their name and check their feedback percentage (aim for 95 percent or higher).' },
+      { title: 'Review the order before purchasing', content: 'Tap "Add to Cart" then "Proceed to Checkout." Verify your shipping address, payment method, delivery date, and total price including tax.' },
+      { title: 'Place your order and track delivery', content: 'Tap "Place your order." A confirmation email arrives immediately. Track your package in the Amazon app under "Your Orders."' },
+    ],
+  },
+
+  {
+    slug: 'set-up-use-gmail',
+    title: 'How to Set Up and Use Gmail',
+    excerpt: 'Create a free Gmail account and learn how to send, receive, and organize email using Google\'s email service.',
+    category: 'app-guides' as any,
+    tags: ['Gmail', 'email', 'Google', 'communication', 'account'],
+    readTime: '6 min',
+    thumbnailEmoji: '✉️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Gmail is Google's free email service used by over a billion people worldwide. It is reliable, has excellent spam filtering, and works on any device — computer, phone, or tablet. If you do not have an email address yet, Gmail is a great place to start.
+
+To create a Gmail account, go to gmail.com and click "Create account." You will choose your email address (something like yourname@gmail.com), create a password, and enter basic information like your name and date of birth. Choose an email address that is professional and straightforward to remember — your first and last name is a good option. If the address you want is taken, try adding a middle initial or a number.
+
+Once your account is created, you can access Gmail at gmail.com in any web browser, or through the Gmail app on your phone (pre-installed on Android, available free on iPhone).
+
+The Gmail inbox organizes your email into tabs: Primary (important emails), Social (social media notifications), and Promotions (marketing emails and deals). You can switch between tabs by tapping them at the top.
+
+To send an email, tap the "Compose" button (a pencil icon or the word "Compose"). Enter the recipient's email address in the "To" field, type a subject line, write your message, and tap the send button (a paper airplane icon). You can add attachments (photos, documents) by tapping the paperclip icon.
+
+To reply to an email, open the message and tap "Reply" at the bottom. Type your response and tap send. "Reply All" sends your reply to everyone who was included in the original email — use this carefully.
+
+Gmail automatically filters spam (junk email) into a separate folder. Check your Spam folder occasionally — sometimes legitimate emails end up there by mistake. If you find one, tap "Not spam" to move it to your inbox.
+
+You can organize emails by starring important ones (tap the star next to any email), archiving emails you have dealt with (swipe right to archive), or using labels to categorize them. The search bar at the top is powerful — you can search by sender, subject, date, or any word in the email body.`,
+    steps: [
+      { title: 'Create your Gmail account', content: 'Go to gmail.com and click "Create account." Choose a username (your email address), set a password, and fill in your name and date of birth.' },
+      { title: 'Open Gmail on your device', content: 'On a computer: go to gmail.com. On iPhone: download the Gmail app from the App Store. On Android: the Gmail app is pre-installed.' },
+      { title: 'Explore your inbox', content: 'Your inbox has tabs: Primary (important mail), Social, and Promotions. Tap each tab to see different types of messages.' },
+      { title: 'Send your first email', content: 'Tap "Compose" (pencil icon). Enter the recipient\'s email in "To," type a subject, write your message, and tap the send button (paper airplane icon).' },
+      { title: 'Reply to emails', content: 'Open an email and tap "Reply" at the bottom. Type your response and tap send. Use "Reply All" only when everyone needs to see your response.' },
+      { title: 'Organize your email', content: 'Star important emails by tapping the star icon. Swipe right to archive emails you have dealt with. Use the search bar to find any email by sender, subject, or keyword.' },
+    ],
+  },
+
+  {
+    slug: 'use-google-drive-store-files',
+    title: 'How to Use Google Drive to Store Files',
+    excerpt: 'Save documents, photos, and files to Google Drive so you can access them from any device and never lose them.',
+    category: 'app-guides' as any,
+    tags: ['Google Drive', 'cloud storage', 'files', 'backup', 'Google'],
+    readTime: '5 min',
+    thumbnailEmoji: '📁',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Google Drive is a free cloud storage service that lets you save files — documents, photos, spreadsheets, presentations, and more — on the internet so you can access them from any device. You get 15 gigabytes of free storage, which is enough for thousands of documents and hundreds of photos.
+
+The biggest benefit of Google Drive is that your files are not trapped on one device. If your computer breaks or your phone gets lost, your files are safe in the cloud. You can access them from any computer, phone, or tablet by signing into your Google account.
+
+If you have a Gmail account, you already have Google Drive. Go to drive.google.com in your web browser, or download the Google Drive app on your phone (free on iPhone and Android).
+
+To upload a file from your computer, go to drive.google.com and click "New" then "File upload." Select the file from your computer and it uploads to Drive. You can also drag and drop files from your computer directly into the Drive window in your browser.
+
+On your phone, open the Google Drive app and tap the plus sign (+) then "Upload." Choose a file from your phone to upload.
+
+Google Drive also includes built-in tools for creating documents. Click "New" then "Google Docs" for a word processor (like Microsoft Word), "Google Sheets" for a spreadsheet (like Excel), or "Google Slides" for a presentation (like PowerPoint). These tools are free and your work saves automatically.
+
+To organize your files, create folders by clicking "New" then "Folder." Name it something descriptive (like "Tax Documents 2026" or "Family Photos") and drag files into it. You can also use the search bar at the top to find any file by name or content.
+
+To share a file with someone, right-click it (or tap the three dots on your phone) and select "Share." Enter their email address and choose whether they can view only or edit. They receive an email with a link to the file.`,
+    steps: [
+      { title: 'Access Google Drive', content: 'On a computer: go to drive.google.com and sign in with your Google account. On phone: download the Google Drive app from the App Store or Google Play.' },
+      { title: 'Upload a file', content: 'Computer: click "New" then "File upload" and select a file, or drag and drop files into the browser window. Phone: tap the (+) then "Upload."' },
+      { title: 'Create a document', content: 'Click "New" then choose "Google Docs" (word processor), "Google Sheets" (spreadsheet), or "Google Slides" (presentation). Your work saves automatically.' },
+      { title: 'Organize with folders', content: 'Click "New" then "Folder" to create a folder. Give it a descriptive name and drag files into it to keep things organized.' },
+      { title: 'Share a file', content: 'Right-click a file (or tap three dots on phone) then choose "Share." Enter the email address of the person you want to share with.' },
+      { title: 'Access files from anywhere', content: 'Sign into drive.google.com or the Drive app on any device to access all your files. The search bar helps you find files by name or content.' },
+    ],
+  },
+
+  {
+    slug: 'use-microsoft-word-online-free',
+    title: 'How to Use Microsoft Word Online for Free',
+    excerpt: 'Create and edit Word documents for free using Microsoft Word Online — no software purchase or installation needed.',
+    category: 'app-guides' as any,
+    tags: ['Microsoft Word', 'Word Online', 'documents', 'free', 'Office'],
+    readTime: '5 min',
+    thumbnailEmoji: '📝',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `You do not need to buy Microsoft Office to use Microsoft Word. Microsoft offers a free online version called Word Online that runs in your web browser — no download or installation required. It includes most of the features everyday users need for writing letters, creating resumes, formatting documents, and more.
+
+To use Word Online, you need a free Microsoft account. If you have a Hotmail, Outlook, or Xbox account, you already have one. If not, go to account.microsoft.com and create one with your email address.
+
+Once you have an account, go to office.com (or microsoft365.com) and sign in. You will see icons for Word, Excel, PowerPoint, and other apps. Click the Word icon (the blue W) to get started. You can create a new blank document or choose from templates like resumes, cover letters, flyers, and more.
+
+The Word Online interface looks similar to the desktop version. The toolbar at the top has tabs for Home (fonts, formatting, alignment), Insert (tables, images, links), and more. The most commonly used formatting tools — bold, italic, underline, font size, text color, and alignment — are all on the Home tab.
+
+Your work saves automatically to OneDrive (Microsoft's cloud storage). You never need to press "Save" — it happens continuously as you type. You can access your document later from any computer or phone by going to office.com and signing in.
+
+To download your document as a file, click File then Save As then Download a Copy. You can download it as a Word document (.docx) or PDF. To print, use File then Print or press Ctrl + P (Command + P on Mac).
+
+Word Online also supports collaboration. Click the "Share" button in the top-right corner to invite others to view or edit the document. You can work on the same document at the same time and see each other's changes in real time.
+
+The main limitations of Word Online compared to the paid desktop version: fewer formatting options, no advanced mail merge, and no offline access. But for writing documents, formatting text, creating tables, and basic tasks, Word Online has everything you need.`,
+    steps: [
+      { title: 'Create a Microsoft account', content: 'Go to account.microsoft.com and sign up for a free account. If you have an Outlook, Hotmail, or Xbox account, use that instead.' },
+      { title: 'Go to office.com and sign in', content: 'Open your browser and go to office.com (or microsoft365.com). Sign in with your Microsoft account email and password.' },
+      { title: 'Open Word and create a document', content: 'Click the blue Word icon. Choose "Blank document" to start from scratch, or pick a template for resumes, letters, and other common formats.' },
+      { title: 'Format your document', content: 'Use the Home tab toolbar to change fonts, make text bold or italic, adjust alignment, add bullet lists, and change text color.' },
+      { title: 'Save and download', content: 'Your work saves automatically to OneDrive. To download a copy: File then Save As then Download a Copy. Choose .docx (Word format) or .pdf.' },
+      { title: 'Share with others', content: 'Click "Share" in the top-right corner. Enter email addresses to invite collaborators. Choose whether they can view only or edit the document.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-use-zoom',
+    title: 'How to Set Up and Use Zoom',
+    excerpt: 'Download Zoom, create an account, and start or join video meetings with family, friends, or coworkers.',
+    category: 'app-guides' as any,
+    tags: ['Zoom', 'video call', 'meetings', 'communication', 'setup'],
+    readTime: '6 min',
+    thumbnailEmoji: '🎥',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Zoom is one of the most widely used video calling apps in the world. Millions of people use it for family calls, doctor appointments, work meetings, classes, and social gatherings. The free version lets you host meetings with up to 100 people for up to 40 minutes — more than enough for most personal use.
+
+To get started, download Zoom. On a computer, go to zoom.us and click "Download" at the bottom of the page. On iPhone, find "Zoom Workplace" in the App Store. On Android, find it in the Google Play Store. Install it and open the app.
+
+You can join a Zoom meeting without an account — if someone sends you a link, you can click it and join as a guest. But to host your own meetings, you need a free account. Go to zoom.us and click "Sign Up, It's Free." Enter your email address, create a password, and verify your email.
+
+To start a meeting, open the Zoom app and click "New Meeting." Your camera turns on and you are in a meeting room. To invite others, click "Participants" then "Invite" then copy the meeting link. Send this link to people by text, email, or messaging app. When they click it, they join your meeting.
+
+To join a meeting someone else is hosting, click the link they sent you. Or open the Zoom app, click "Join," and enter the Meeting ID (a number the host gives you). You may also need a passcode.
+
+During a meeting, the controls at the bottom of the screen include: microphone on/off (Mute/Unmute), camera on/off (Start/Stop Video), Participants (see who is in the call), Chat (send text messages during the call), Share Screen (show your screen to others), and a red "Leave" button to exit.
+
+Zoom tips: position your camera at eye level for the most natural look. Make sure you are well-lit from the front (not backlit by a window). Mute yourself when you are not speaking to reduce background noise. Use the chat feature to share links or messages without interrupting the speaker.`,
+    steps: [
+      { title: 'Download Zoom', content: 'Computer: go to zoom.us and click "Download." iPhone: search "Zoom Workplace" in App Store. Android: search "Zoom Workplace" in Google Play Store. Install and open.' },
+      { title: 'Create a free account', content: 'Go to zoom.us and click "Sign Up, It\'s Free." Enter your email, create a password, and verify your email address.' },
+      { title: 'Start a meeting', content: 'Open Zoom and click "New Meeting." Your camera turns on. Click "Participants" then "Invite" to copy the link and send it to others.' },
+      { title: 'Join a meeting', content: 'Click the meeting link someone sent you. Or open Zoom, click "Join," and enter the Meeting ID and passcode.' },
+      { title: 'Use the meeting controls', content: 'Bottom toolbar: Mute/Unmute (microphone), Start/Stop Video (camera), Participants, Chat, Share Screen. Click "Leave" when the meeting is over.' },
+      { title: 'Improve your video call experience', content: 'Position your camera at eye level. Face a light source (not a window behind you). Mute yourself when not speaking. Use a headset for better audio quality.' },
+    ],
+  },
+
+  {
+    slug: 'use-weather-app-phone',
+    title: 'How to Use the Weather App on Your Phone',
+    excerpt: 'Check the current conditions, hourly forecast, and weekly outlook using the built-in weather app on your phone.',
+    category: 'app-guides' as any,
+    tags: ['weather', 'forecast', 'iPhone', 'Android', 'app'],
+    readTime: '3 min',
+    thumbnailEmoji: '🌤️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone comes with a built-in weather app that gives you current conditions, hourly forecasts, and a 10-day outlook for your location and any other cities you want to track. You do not need to download anything — it is already on your phone.
+
+On iPhone, the Weather app has a sun/cloud icon and is pre-installed. Open it and you will see the current temperature, conditions (sunny, cloudy, rainy), and a summary for the day. Scroll down to see the hourly forecast (temperature and conditions for each hour) and the 10-day forecast. At the bottom, you will find details like UV index, wind speed, humidity, and sunset/sunrise times.
+
+On Android, the weather is often shown as a widget on your home screen (a small panel showing temperature and conditions). Tap it to open the full weather app. If you do not see a weather widget, look for the Weather app in your app drawer, or use Google Weather by searching "weather" in Google.
+
+To add another city (useful for checking the weather where family lives, or where you are traveling), open the weather app and look for a list or search icon. On iPhone, tap the list icon in the bottom-right corner, then tap the plus sign (+) and search for a city. On Android, tap the menu or settings icon and add a location.
+
+The weather app uses your phone's location to show conditions for where you are right now. Make sure Location Services are turned on for the weather app.
+
+Some weather apps also send severe weather alerts — tornado warnings, flash flood warnings, and extreme heat advisories. These alerts can appear as push notifications even if you do not have the app open, which can be lifesaving during dangerous weather events. Make sure notifications are turned on for the weather app.`,
+    steps: [
+      { title: 'Find and open the weather app', content: 'iPhone: look for the Weather app icon (sun and cloud). Android: tap the weather widget on your home screen, or search "weather" in Google.' },
+      { title: 'View current conditions', content: 'The main screen shows current temperature, weather conditions, and a brief summary. This updates automatically based on your location.' },
+      { title: 'Check the hourly forecast', content: 'Scroll through the hourly forecast to see how temperature and conditions change throughout the day. Helpful for deciding when to go outside.' },
+      { title: 'View the 10-day forecast', content: 'Scroll down to see the multi-day forecast with high and low temperatures for each day. Tap a day for more details.' },
+      { title: 'Add another city', content: 'iPhone: tap the list icon then (+) then search for a city. Android: tap the menu or settings and add a location. Useful for checking weather in other places.' },
+      { title: 'Enable weather alerts', content: 'Make sure notifications are turned on for the weather app in your phone settings. Severe weather alerts can warn you about dangerous conditions.' },
+    ],
+  },
+
+  {
+    slug: 'use-calculator-app-everyday-math',
+    title: 'How to Use the Calculator App for Everyday Math',
+    excerpt: 'Use the built-in calculator on your phone for tips, discounts, splitting bills, and other everyday calculations.',
+    category: 'app-guides' as any,
+    tags: ['calculator', 'math', 'tips', 'phone', 'everyday'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔢',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Your phone has a built-in calculator that is more powerful than you might think. Beyond basic math, it can help you figure out tips at restaurants, calculate discounts while shopping, split bills with friends, and more.
+
+On iPhone, the Calculator app has numbers on the bottom, basic operations on the right (plus, minus, multiply, divide), and clear/percent/plus-minus buttons at the top. Rotate your phone to landscape mode (sideways) to reveal a scientific calculator with advanced functions.
+
+On Android, the Calculator app (or Google Calculator) works the same way. Some Android phones have it in the app drawer; you can also say "OK Google, open calculator" or search for "calculator" to find it.
+
+Here are practical ways to use your calculator every day:
+
+Calculating a tip: Enter the bill total, multiply by the tip percentage as a decimal. For a 20 percent tip on a $45 meal: type 45 x 0.20 = $9. For 15 percent: type 45 x 0.15 = $6.75. Add the tip to the total for your payment amount.
+
+Figuring out a sale discount: If something is 30 percent off, multiply the price by 0.70 (which gives you the discounted price directly). For a $80 item at 30 percent off: type 80 x 0.70 = $56.
+
+Splitting a bill: Add up the total, then divide by the number of people. For a $120 dinner with four people: type 120 / 4 = $30 each.
+
+The calculator keeps your last answer on screen, so you can continue calculating without starting over. Tap "AC" (All Clear) or "C" (Clear) to start fresh. "C" clears the current number, while "AC" clears everything.
+
+You can also ask Siri or Google Assistant to do math for you. Say "Hey Siri, what is 20 percent of 85?" or "OK Google, what is 156 divided by 4?" and get the answer without opening the app.`,
+    steps: [
+      { title: 'Open the calculator', content: 'iPhone: find the Calculator app icon on your home screen. Android: look in the app drawer or say "OK Google, open calculator."' },
+      { title: 'Calculate a tip', content: 'Enter the bill total, tap the multiply button (x), type the tip percentage as a decimal (0.15 for 15 percent, 0.20 for 20 percent), tap equals (=). Add the result to the bill total.' },
+      { title: 'Figure out a sale discount', content: 'Enter the original price, tap multiply (x), type the amount you will pay as a decimal (0.70 for 30 percent off, 0.75 for 25 percent off), tap equals (=).' },
+      { title: 'Split a bill', content: 'Enter the total bill amount, tap divide (/), enter the number of people, tap equals (=). Each person pays that amount.' },
+      { title: 'Use the percent button', content: 'The percent button converts a number to its decimal form. Some calculators let you type "45 + 20 percent" to automatically add 20 percent to 45.' },
+      { title: 'Use voice assistant instead', content: 'Say "Hey Siri, what is 20 percent of 85?" or "OK Google, what is 156 divided by 4?" for hands-free calculations — no app needed.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE PHONE GUIDES (8 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'set-up-voicemail-iphone',
+    title: 'How to Set Up Voicemail on iPhone',
+    excerpt: 'Record a voicemail greeting and learn how to check messages using Visual Voicemail on your iPhone.',
+    category: 'phone-guides' as any,
+    tags: ['voicemail', 'iPhone', 'phone setup', 'greeting', 'messages'],
+    readTime: '4 min',
+    thumbnailEmoji: '📞',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Voicemail lets people leave you a voice message when you cannot answer the phone. On iPhone, you get Visual Voicemail — a feature that shows all your voicemail messages in a list so you can listen to them in any order, without having to call a number and navigate a phone menu.
+
+To set up voicemail for the first time, open the Phone app (the green phone icon) and tap the "Voicemail" tab at the bottom-right corner. If this is your first time, you will see a "Set Up Now" button. Tap it.
+
+You will be asked to create a voicemail password. Choose a 4 to 6 digit number and enter it twice to confirm. Write this down somewhere safe — you may need it if you ever need to reset your voicemail or access it from a different phone.
+
+Next, you record your greeting. You have two options: "Default" plays a generic carrier greeting that says your phone number. "Custom" lets you record your own message. Most people choose Custom so callers hear their voice and know they reached the right person.
+
+To record a custom greeting, tap "Custom" then "Record." Hold the phone to your ear (or use speakerphone) and say something like: "Hi, you have reached [your name]. I cannot answer the phone right now, but please leave a message and I will call you back as soon as I can." Tap "Stop" when you are done. Tap "Play" to listen to it. If you are happy with it, tap "Save."
+
+Once voicemail is set up, whenever you miss a call and the caller leaves a message, it appears in the Voicemail tab as a list item. Tap any message to play it. You will also see a transcription of the message (this is automatic and may not be perfectly accurate, but it is helpful for quickly scanning messages without listening).
+
+You can delete voicemails by swiping left on them or tapping "Delete." Deleted voicemails go to a "Deleted Messages" folder at the bottom of the list, where they are permanently removed after 30 days.`,
+    steps: [
+      { title: 'Open the Phone app', content: 'Tap the green Phone icon on your home screen. Tap the "Voicemail" tab at the bottom-right corner of the screen.' },
+      { title: 'Tap Set Up Now', content: 'If this is your first time, a "Set Up Now" button appears. Tap it to begin the setup process.' },
+      { title: 'Create a voicemail password', content: 'Choose a 4 to 6 digit password and enter it twice. Write this down somewhere safe — you will need it to access voicemail from another phone.' },
+      { title: 'Choose and record your greeting', content: 'Choose "Custom" to record your own greeting. Tap "Record," speak your message, and tap "Stop." Tap "Play" to listen, then "Save" when satisfied.' },
+      { title: 'Listen to voicemails', content: 'When someone leaves a message, it appears in the Voicemail tab. Tap any message to play it. A text transcription also appears below each message.' },
+      { title: 'Manage your voicemails', content: 'Swipe left on a voicemail to delete it. Tap "Speaker" to play through the speaker. Tap "Call Back" to return the call directly.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-voicemail-android',
+    title: 'How to Set Up Voicemail on Android',
+    excerpt: 'Set up your voicemail greeting on an Android phone and learn how to check your messages.',
+    category: 'phone-guides' as any,
+    tags: ['voicemail', 'Android', 'phone setup', 'greeting', 'messages'],
+    readTime: '4 min',
+    thumbnailEmoji: '📞',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Voicemail on Android lets callers leave a voice message when you do not answer. Setting it up takes a few minutes, and the exact steps depend on your phone carrier (Verizon, AT&T, T-Mobile, etc.) and phone brand (Samsung, Google Pixel, etc.).
+
+The most common way to set up voicemail is through the Phone app. Open the Phone app (the phone icon on your home screen) and press and hold the number 1 on the keypad. This is the universal voicemail speed dial on most carriers. The first time you call, you will hear automated prompts walking you through setup.
+
+The setup process typically asks you to create a PIN (4 to 6 digits) and record a greeting. For the PIN, choose something you will remember — you need it to check voicemail from another phone. For the greeting, you can use the default (an automated voice says your number) or record a custom greeting.
+
+For a custom greeting, the system prompts you to record after a beep. Say something like: "Hi, you have reached [your name]. I am not available right now. Please leave your name, number, and a brief message, and I will get back to you." Press the pound key (#) or follow the prompts to save your recording.
+
+On newer Android phones, you may have Visual Voicemail. This shows your voicemails as a list in the Phone app, similar to how iPhone does it. To check if your phone supports it, open the Phone app and look for a "Voicemail" tab at the bottom. If it is there, tap it to see your messages in a list. If not, press and hold 1 to call into your voicemail the traditional way.
+
+Some carriers (T-Mobile, Verizon) also offer their own Visual Voicemail apps that you can download from the Play Store. These apps show your messages in a list, often with transcriptions.
+
+To check voicemail the traditional way: press and hold 1 in the Phone app. Enter your PIN when prompted. Listen to your messages and follow the prompts to save, delete, or repeat them.`,
+    steps: [
+      { title: 'Open the Phone app', content: 'Tap the Phone icon on your home screen. If you see a "Voicemail" tab at the bottom, you have Visual Voicemail. If not, proceed to the next step.' },
+      { title: 'Press and hold 1 to call voicemail', content: 'Open the keypad in the Phone app and press and hold the number 1. This calls your voicemail system. The first time, it walks you through setup.' },
+      { title: 'Create a voicemail PIN', content: 'When prompted, choose a 4 to 6 digit PIN. Enter it twice to confirm. Write it down somewhere safe — you need it to access voicemail remotely.' },
+      { title: 'Record your greeting', content: 'Choose "Personal" or "Custom" greeting. Record after the beep. Press pound (#) or follow prompts to save.' },
+      { title: 'Check your voicemails', content: 'Visual Voicemail: tap the Voicemail tab in the Phone app to see messages in a list. Traditional: press and hold 1, enter your PIN, and listen to messages.' },
+      { title: 'Consider a Visual Voicemail app', content: 'If your Phone app does not have a Voicemail tab, search the Play Store for your carrier\'s Visual Voicemail app (T-Mobile, Verizon, AT&T each offer one).' },
+    ],
+  },
+
+  {
+    slug: 'transfer-photos-phone-to-computer',
+    title: 'How to Transfer Photos from Phone to Computer',
+    excerpt: 'Move photos from your iPhone or Android to a Windows PC or Mac — using a cable, cloud service, or wireless transfer.',
+    category: 'phone-guides' as any,
+    tags: ['photos', 'transfer', 'backup', 'iPhone', 'Android', 'computer'],
+    readTime: '6 min',
+    thumbnailEmoji: '🖼️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Transferring photos from your phone to your computer is a great way to free up phone storage, create backups, and have your photos available on a larger screen for viewing and editing. There are several methods depending on what devices you have.
+
+Method 1: USB cable (works with any combination). Connect your phone to your computer with a USB cable (the same cable you use to charge your phone). On iPhone to Windows: your phone appears in File Explorer. Open it and navigate to the DCIM folder to find your photos. Copy and paste them to a folder on your computer. On iPhone to Mac: open the Photos app on your Mac — an import screen appears showing your phone's photos. Select the ones you want and click "Import."
+
+On Android to Windows: your phone appears as a device in File Explorer. Open it and navigate to DCIM then Camera. Copy photos to your computer. On Android to Mac: download the "Android File Transfer" app on your Mac, connect your phone, and browse its files.
+
+Method 2: Cloud services (automatic, no cable needed). iCloud Photos (iPhone): go to Settings then [your name] then iCloud then Photos then turn on iCloud Photos. Your photos upload automatically. On a Windows PC, install iCloud for Windows to access them, or go to icloud.com. On Mac, they appear in the Photos app automatically.
+
+Google Photos (iPhone or Android): install the Google Photos app, sign in, and turn on backup. Your photos upload to your Google account. On your computer, go to photos.google.com to view and download them.
+
+Method 3: AirDrop (iPhone to Mac only). On your iPhone, open the Photos app, select photos, tap the share icon, and tap the name of your Mac in the AirDrop section.
+
+Method 4: Email or messaging. For small numbers of photos, you can email them to yourself or send them through a messaging app and download them on your computer. This is the slowest method but requires no setup.`,
+    steps: [
+      { title: 'USB cable method', content: 'Connect your phone to your computer with a USB cable. Your phone appears as a device. Navigate to the DCIM folder and copy photos to your computer.' },
+      { title: 'iPhone to Mac (Photos app)', content: 'Connect iPhone to Mac with a cable. Open the Photos app on Mac. An import screen appears — select photos and click "Import Selected."' },
+      { title: 'Use iCloud Photos (iPhone)', content: 'Settings then [your name] then iCloud then Photos then turn on iCloud Photos. Photos upload automatically. Access them at icloud.com on your computer.' },
+      { title: 'Use Google Photos (any phone)', content: 'Install Google Photos, sign in, turn on backup. Photos upload automatically. Go to photos.google.com on your computer to view and download them.' },
+      { title: 'AirDrop (iPhone to Mac)', content: 'On iPhone: select photos, tap share icon, tap AirDrop, tap your Mac name. Photos transfer wirelessly in seconds.' },
+      { title: 'Email for small batches', content: 'Select a few photos, tap share, choose Email or Messages. Send them to yourself and download the attachments on your computer.' },
+    ],
+  },
+
+  {
+    slug: 'use-airdrop-iphone',
+    title: 'How to Use AirDrop on iPhone',
+    excerpt: 'Share photos, files, links, and more wirelessly between iPhones, iPads, and Macs using AirDrop.',
+    category: 'phone-guides' as any,
+    tags: ['AirDrop', 'iPhone', 'sharing', 'wireless', 'Apple'],
+    readTime: '4 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `AirDrop is Apple's wireless sharing feature that lets you send photos, videos, documents, links, contacts, and more between Apple devices — iPhone, iPad, and Mac. It uses Bluetooth and WiFi to transfer files directly between devices, and it is fast. A photo transfers in about one second.
+
+Both devices need to have WiFi and Bluetooth turned on (they do not need to be connected to the same WiFi network). AirDrop works when devices are within about 30 feet of each other.
+
+Before sending, make sure the receiving device has AirDrop turned on and set to receive. On iPhone: open Control Center (swipe down from the top-right corner). Press and hold the network settings card (the area with WiFi and Bluetooth icons). Tap AirDrop. Choose "Contacts Only" (receive from people in your contacts) or "Everyone for 10 Minutes" (receive from any nearby Apple device).
+
+To send a file via AirDrop, find what you want to share. For a photo: open the Photos app, select the photo (or multiple photos), tap the share button (the square with an upward arrow). In the AirDrop section, you will see icons for nearby Apple devices. Tap the person or device you want to send to.
+
+The receiving device shows a notification asking to accept or decline. Once they tap "Accept," the file transfers immediately. Photos go to the Photos app, documents go to the Files app, links open in Safari, and contacts go to the Contacts app.
+
+AirDrop works with almost anything you can share on your iPhone: photos, videos, websites, map locations, contacts, voice memos, app links, and documents. If you see a share button, you can likely use AirDrop.
+
+Privacy tip: set AirDrop to "Contacts Only" when you are in public places. The "Everyone" setting means strangers nearby can see your device and potentially send you unwanted content.`,
+    steps: [
+      { title: 'Turn on AirDrop on both devices', content: 'Open Control Center, press and hold the network card, tap AirDrop. Choose "Contacts Only" or "Everyone for 10 Minutes." Both WiFi and Bluetooth must be on.' },
+      { title: 'Select what you want to share', content: 'Open the content you want to send (a photo, document, link, etc.). Tap the share button — the square with an upward arrow.' },
+      { title: 'Tap the recipient in AirDrop', content: 'In the share sheet, look for the AirDrop section showing nearby devices. Tap the name or device icon of the person you want to send to.' },
+      { title: 'Accept on the receiving device', content: 'The receiving device shows a notification with a preview. Tap "Accept" to receive the file. It opens or saves automatically in the right app.' },
+      { title: 'Send to a Mac', content: 'Macs appear in the AirDrop section too. Make sure AirDrop is enabled on the Mac: open Finder, click AirDrop in the sidebar, and set to "Contacts Only" or "Everyone."' },
+      { title: 'Set privacy for public places', content: 'When in public, set AirDrop to "Contacts Only" to prevent strangers from sending you unsolicited content. You can always switch back when needed.' },
+    ],
+  },
+
+  {
+    slug: 'use-nearby-share-android',
+    title: 'How to Use Nearby Share on Android',
+    excerpt: 'Share photos, files, and links wirelessly between Android phones and Chromebooks using Nearby Share.',
+    category: 'phone-guides' as any,
+    tags: ['Nearby Share', 'Android', 'sharing', 'wireless', 'Quick Share'],
+    readTime: '4 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Nearby Share (also called Quick Share on Samsung phones) is Android's answer to Apple's AirDrop. It lets you wirelessly share photos, videos, files, links, and more between Android phones, tablets, and Chromebooks. The transfer uses a combination of Bluetooth, WiFi, and your internet connection, so it is fast even for large files.
+
+Both devices need to have Bluetooth and Location turned on. The devices should be within about 15 feet of each other. Nearby Share is built into most Android phones running Android 6 or later — no app installation needed.
+
+To set up Nearby Share, go to Settings then Google then Devices and sharing then Nearby Share (or Settings then Connected devices then Connection preferences then Nearby Share). Turn it on and choose who can see your device: "Your devices" (only your own Google account devices), "Contacts" (people in your contacts list), or "Everyone" (any nearby Android device).
+
+To share something, find the content you want to send — a photo, file, or link. Tap the share button (usually three connected dots or a square with an arrow). In the sharing options, look for "Nearby Share" or "Quick Share." Tap it. Your phone searches for nearby devices. When the other person's device appears, tap their name.
+
+The receiving device shows a notification asking to accept the file. Once they tap "Accept," the transfer begins. Small files transfer in seconds; larger files may take a minute or two.
+
+On Samsung phones, this feature is called "Quick Share." The process is the same — tap the share button on any content and look for "Quick Share" in the options.
+
+Nearby Share also works with Chromebooks. To enable it on a Chromebook: click the clock area then Quick Settings then Nearby Share. Files shared from a phone to a Chromebook appear in the Downloads folder.
+
+For privacy in public places, set your visibility to "Your devices" or "Contacts" so strangers cannot see your device. Switch to "Everyone" temporarily when you need to receive from someone new, then switch back.`,
+    steps: [
+      { title: 'Turn on Nearby Share', content: 'Go to Settings then Google then Devices and sharing then Nearby Share. Turn it on and choose your visibility: Contacts or Everyone.' },
+      { title: 'Prepare the receiving device', content: 'The other person should also have Nearby Share enabled and set to "Everyone" or "Contacts." Bluetooth and Location must be on for both devices.' },
+      { title: 'Select content and tap Share', content: 'Open the photo, file, or link you want to send. Tap the share button (three connected dots or a share icon) and select "Nearby Share" or "Quick Share."' },
+      { title: 'Choose the recipient', content: 'Your phone scans for nearby devices. When the other device appears in the list, tap their name to start the transfer.' },
+      { title: 'Accept on the receiving device', content: 'A notification appears on the receiving device. Tap "Accept" to receive the file. Photos go to the Gallery, other files go to Downloads.' },
+      { title: 'Adjust privacy settings after sharing', content: 'If you switched to "Everyone" to receive a file, switch back to "Contacts" or "Your devices" when you are done to protect your privacy in public.' },
+    ],
+  },
+
+  {
+    slug: 'turn-on-do-not-disturb-at-night',
+    title: 'How to Turn On Do Not Disturb at Night',
+    excerpt: 'Schedule your phone to silence notifications automatically at bedtime so you get uninterrupted sleep.',
+    category: 'phone-guides' as any,
+    tags: ['do not disturb', 'sleep', 'bedtime', 'iPhone', 'Android', 'schedule'],
+    readTime: '4 min',
+    thumbnailEmoji: '😴',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Nothing ruins a good night of sleep like your phone buzzing at midnight with a promotional email or a group chat message. Scheduling Do Not Disturb to turn on automatically at bedtime and off in the morning means you never have to think about it — your phone goes quiet when you do.
+
+On iPhone: Apple calls this "Sleep Focus" and it is part of the Focus system. Go to Settings then Focus then Sleep. Tap "Add Schedule" and set the times you want it active (for example, 10:00 PM to 7:00 AM). You can set it for every day or only certain days of the week. While Sleep Focus is on, notifications are silenced, the Lock Screen dims, and only the people you allow can reach you.
+
+To allow important callers through: tap "People" in the Sleep Focus settings and add contacts who can still call you during sleep hours (your spouse, children, or other emergency contacts). You can also enable "Allow Repeated Calls" — if someone calls twice within three minutes, the second call comes through.
+
+On Android: Go to Settings then Sound then Do Not Disturb then Schedules. Tap "Add more" or the plus sign to create a new schedule. Many Android phones have a built-in "Sleeping" schedule you can customize. Set your start time (bedtime) and end time (wake-up time), and choose which days it applies.
+
+Samsung phones: Settings then Notifications then Do not disturb then "Turn on as scheduled." Set your times. You can also use Samsung's "Bedtime" mode in the Clock app, which adds screen dimming and grayscale on top of silencing notifications.
+
+On Android, you can set exceptions for calls from specific contacts: Settings then Sound then Do Not Disturb then People then "Calls from" then choose "Starred contacts" or "Contacts." Add your important people to your Starred contacts by opening their contact card and tapping the star icon.
+
+Your alarm clock still works normally during Do Not Disturb on both iPhone and Android. You will not oversleep because of this setting — alarms always ring regardless.`,
+    steps: [
+      { title: 'iPhone: Set up Sleep Focus', content: 'Settings then Focus then Sleep then "Add Schedule." Set your bedtime and wake-up time. Choose which days it applies.' },
+      { title: 'Android: Create a DND schedule', content: 'Settings then Sound then Do Not Disturb then Schedules, then add a "Sleeping" schedule. Set start and end times.' },
+      { title: 'Allow important contacts through', content: 'iPhone: Focus then Sleep then People, then add emergency contacts. Android: Do Not Disturb then People then Calls from then Starred contacts.' },
+      { title: 'Enable repeated callers', content: 'Turn on "Allow Repeated Calls" so if someone calls twice within 3 minutes, the second call rings through — useful for real emergencies.' },
+      { title: 'Verify alarms still work', content: 'Set a test alarm to confirm it rings during Do Not Disturb. Both iPhone and Android let alarms through — you will not oversleep.' },
+      { title: 'Samsung bonus: Use Bedtime mode', content: 'Open the Clock app then Bedtime tab then set your sleep schedule. This adds screen dimming and grayscale on top of Do Not Disturb for better sleep habits.' },
+    ],
+  },
+
+  {
+    slug: 'add-contact-phone',
+    title: 'How to Add a Contact on Your Phone',
+    excerpt: 'Save a phone number with a name in your contacts list on iPhone or Android so you can call or text them anytime.',
+    category: 'phone-guides' as any,
+    tags: ['contacts', 'phone number', 'iPhone', 'Android', 'address book'],
+    readTime: '3 min',
+    thumbnailEmoji: '👤',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Adding contacts to your phone means you do not have to remember phone numbers — you can call or text people by name. It also means when they call you, their name shows up on your screen instead of an unknown number.
+
+On iPhone: Open the Phone app and tap the "Contacts" tab at the bottom. Tap the plus sign (+) in the top-right corner. Enter the person's first name, last name, and phone number. You can also add their email address, home address, birthday, and a note. Tap "Done" in the top-right corner to save.
+
+You can also save a number from a recent call or text. If someone called or texted you and their number is not in your contacts: open the Phone app, go to the Recents tab, tap the (i) icon next to the number, then choose "Create New Contact" or "Add to Existing Contact."
+
+On Android: Open the Phone app or the Contacts app (they work together). Tap the plus sign (+) or "Create contact" button. Enter the person's name and phone number. Add optional details like email, address, and notes. Tap "Save."
+
+On Android, you can also save a contact from a recent call: open the Phone app, go to the Recents tab, tap the phone number, then choose "Add to contacts" or "Create new contact."
+
+When entering a phone number, include the area code (all 10 digits). For international numbers, include the country code with a plus sign (like +44 for the UK or +1 for the US).
+
+Contacts sync with your account (iCloud on iPhone, Google account on Android), so if you get a new phone and sign in with the same account, all your contacts transfer automatically. This also means your contacts are backed up — if your phone is lost or broken, your contacts are safe.
+
+To edit a contact later: find them in your Contacts, tap their name, then tap "Edit." Change any information and tap "Done" or "Save."`,
+    steps: [
+      { title: 'Open the Contacts app', content: 'iPhone: open the Phone app then tap "Contacts" tab. Android: open the Contacts app or the Phone app then "Contacts."' },
+      { title: 'Tap the plus (+) button', content: 'Look for the plus sign (+) or "Create contact" button, usually in the top-right or bottom-right corner. Tap it to start a new contact.' },
+      { title: 'Enter the name and phone number', content: 'Type the person\'s first and last name. Enter their phone number including the area code (10 digits). Add email, address, and notes if you want.' },
+      { title: 'Save the contact', content: 'Tap "Done" (iPhone) or "Save" (Android) in the top corner. The contact is now saved in your phone.' },
+      { title: 'Save from a recent call or text', content: 'If someone called you: open Recents, tap the (i) icon or the phone number, then choose "Create New Contact" or "Add to Existing Contact."' },
+      { title: 'Contacts sync automatically', content: 'Your contacts back up to iCloud (iPhone) or your Google account (Android). If you get a new phone and sign in with the same account, all contacts transfer.' },
+    ],
+  },
+
+  {
+    slug: 'find-lost-phone',
+    title: 'How to Find a Lost Phone (Find My iPhone / Find My Device)',
+    excerpt: 'Locate your lost or stolen iPhone or Android phone, make it ring, lock it, or erase it remotely.',
+    category: 'phone-guides' as any,
+    tags: ['find my phone', 'lost phone', 'stolen phone', 'iPhone', 'Android', 'security'],
+    readTime: '6 min',
+    thumbnailEmoji: '📍',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Losing your phone is stressful, but both iPhone and Android have built-in tracking features that can help you find it, make it ring, lock it, or erase it remotely. The key is that these features need to be enabled before the phone is lost — so if you have not set them up yet, do it now.
+
+For iPhone — Find My iPhone: This is usually turned on by default when you set up your Apple ID. To check: Settings then [your name] then Find My then Find My iPhone — make sure it is turned on. Also turn on "Find My network" and "Send Last Location."
+
+If your iPhone is lost: go to icloud.com/find on any computer or phone and sign in with your Apple ID. Or open the Find My app on another Apple device (iPad, Mac, or a friend's iPhone). You will see your phone's location on a map. From here you can: play a sound (makes the phone ring at full volume even if it is on silent — great for finding it in couch cushions), put it in Lost Mode (locks the phone, displays a message with your contact number, and tracks its location), or erase the phone (deletes all data remotely — use this only if you believe the phone is stolen and you have a backup).
+
+For Android — Find My Device: Go to Settings then Security then Find My Device and make sure it is turned on. Location must also be on.
+
+If your Android is lost: go to google.com/android/find on any computer or phone and sign in with your Google account. You will see your phone on a map. Options include: play sound (rings at full volume for 5 minutes even if on silent), secure device (locks the phone and displays a message), and erase device (deletes everything remotely).
+
+Important: for both features to work, the phone must be turned on, connected to the internet (WiFi or cellular), and have location services enabled. If the phone is turned off or the battery is dead, you will see its last known location.
+
+If you believe your phone was stolen, contact your phone carrier to suspend your service (this prevents the thief from using your phone number). Also file a police report with the phone's location information.`,
+    steps: [
+      { title: 'Set up tracking now (before losing your phone)', content: 'iPhone: Settings then [your name] then Find My then Find My iPhone, then turn on. Android: Settings then Security then Find My Device, then turn on. Make sure Location is enabled.' },
+      { title: 'Go to the tracking website', content: 'iPhone: go to icloud.com/find on any device. Android: go to google.com/android/find. Sign in with your Apple ID or Google account.' },
+      { title: 'View your phone on the map', content: 'Your phone\'s location appears on a map. If the phone is off, you will see its last known location and when it was last online.' },
+      { title: 'Play a sound', content: 'If the phone is nearby (in the house, car, or office), tap "Play Sound." It rings at full volume for several minutes even if the phone is on silent.' },
+      { title: 'Lock the phone remotely', content: 'Tap "Lost Mode" (iPhone) or "Secure Device" (Android) to lock the phone with a passcode and display a message with a callback number.' },
+      { title: 'Erase as a last resort', content: 'If the phone is stolen, tap "Erase" to delete all data remotely. Contact your carrier to suspend service and file a police report.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE SAFETY GUIDES (8 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'spot-phishing-email',
+    title: 'How to Spot a Phishing Email',
+    excerpt: 'Recognize the warning signs of a phishing email before you click a link, open an attachment, or share personal information.',
+    category: 'safety-guides' as any,
+    tags: ['phishing', 'email safety', 'scams', 'security', 'fraud'],
+    readTime: '6 min',
+    thumbnailEmoji: '🎣',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Phishing emails are fake messages designed to trick you into giving away personal information — passwords, credit card numbers, Social Security numbers, or login credentials. They are the most common type of online scam, and they have become very convincing. Knowing what to look for can protect you from falling victim.
+
+Phishing emails typically pretend to be from a company or person you trust: your bank, Amazon, Netflix, the IRS, Microsoft, Apple, or even a friend or coworker. The goal is to get you to click a link, download an attachment, or reply with sensitive information.
+
+Here are the key warning signs. Urgency and fear: phishing emails create panic with messages like "Your account has been compromised" or "You must act within 24 hours." Real companies rarely demand immediate action through email. Suspicious sender address: the "From" name might say "Apple Support," but the actual email address might be something like support@apple-security-verify.com instead of @apple.com. Always check the full email address, not the display name.
+
+Generic greetings are another red flag. Phishing emails often say "Dear Customer" instead of your actual name. Links that do not match the company's real website are a major warning sign — before clicking any link, hover over it on a computer or press and hold on a phone to see the actual URL.
+
+Spelling and grammar mistakes, unexpected attachments (especially .zip or .exe files), and requests for personal information are all classic phishing indicators. No legitimate company will ask you to send your password or credit card number through email.
+
+If you receive a suspicious email, do not click any links or open any attachments. If the email claims to be from a company you use, go directly to that company's website by typing the address in your browser and log into your account to check for any real alerts.
+
+Report phishing emails by forwarding them to reportphishing@apwg.org and to the company being impersonated. In Gmail, click the three dots then "Report phishing." In Outlook, click "Report" then "Report phishing."`,
+    steps: [
+      { title: 'Check the sender address', content: 'Look at the full email address, not the display name. A real email from Apple comes from @apple.com, not @apple-verify-account.com or similar.' },
+      { title: 'Look for urgency and threats', content: 'Phishing emails pressure you to act immediately. Real companies give you time and multiple contact methods.' },
+      { title: 'Hover over links before clicking', content: 'On a computer, move your mouse over any link to see the real URL. On a phone, press and hold the link. If the URL looks wrong or unfamiliar, do not click.' },
+      { title: 'Watch for generic greetings', content: 'Emails that say "Dear Customer" instead of your name are suspicious. Companies you have accounts with know your name.' },
+      { title: 'Do not open unexpected attachments', content: 'If you were not expecting a file — especially .zip, .exe, or .doc files — do not open it. Contact the sender through a different method to verify.' },
+      { title: 'Go directly to the website', content: 'If an email claims something is wrong with your account, type the company\'s real website address in your browser instead of clicking the email link.' },
+      { title: 'Report the phishing email', content: 'Forward to reportphishing@apwg.org. In Gmail: three dots then "Report phishing." In Outlook: "Report" then "Report phishing." Then delete the email.' },
+    ],
+  },
+
+  {
+    slug: 'create-strong-password-remember',
+    title: 'How to Create a Strong Password You Can Remember',
+    excerpt: 'Build passwords that are hard for hackers to crack but possible for you to recall — plus how to manage them all.',
+    category: 'safety-guides' as any,
+    tags: ['password', 'security', 'accounts', 'password manager', 'login'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔐',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A strong password is your first line of defense against hackers. The problem is that truly strong passwords (long, random, and unique for every account) are hard to remember. Here is how to create passwords that are both secure and memorable, plus how to manage them without going crazy.
+
+What makes a password strong: length is the single most important factor. A 16-character password is exponentially harder to crack than an 8-character one. The password should also include a mix of uppercase and lowercase letters, numbers, and special characters. And it should be unique — never reuse the same password on multiple accounts.
+
+The passphrase method: one of the best approaches is to create a passphrase — a string of random words that create a mental image. For example: "purple-giraffe-eats-tacos-42" is 28 characters long, includes letters, a number, and special characters, and you can picture it in your head. Pick four to five unrelated words, add a number and a special character, and you have a strong password.
+
+Another method: take a sentence you will remember and use the first letter of each word. "My daughter Sarah was born in Portland in 1998!" becomes "MdSwbiPi1998!" — 13 characters with uppercase, lowercase, numbers, and a special character.
+
+What not to do: do not use your name, birthday, pet's name, "123456," "password," or any single dictionary word. Do not use the same password on multiple websites — if one site gets hacked, the attacker tries that password on every other site.
+
+For managing multiple passwords, use a password manager. A password manager is an app that stores all your passwords in an encrypted vault. You remember one master password, and the manager fills in the rest. Recommended options: Apple's built-in password manager (iCloud Keychain), Google Password Manager (built into Chrome and Android), or dedicated apps like 1Password or Bitwarden.
+
+Turn on two-factor authentication (2FA) wherever it is available. This adds a second step to logging in — usually a code sent to your phone — so even if someone gets your password, they cannot get into your account without your phone.`,
+    steps: [
+      { title: 'Use the passphrase method', content: 'Pick 4 to 5 random, unrelated words and connect them with hyphens or other characters. Example: "purple-giraffe-eats-tacos-42." It is long, complex, and memorable.' },
+      { title: 'Or use the first-letter method', content: 'Take a sentence you know well and use the first letter of each word plus a number. "My cat Felix loves tuna every Friday at 5" becomes "McFlteFa5!"' },
+      { title: 'Make every password unique', content: 'Never use the same password on two different websites. If one site gets hacked, attackers will try that password on your email, bank, and social media.' },
+      { title: 'Use a password manager', content: 'Apple: iCloud Keychain (built into iPhone/Mac). Google: Password Manager (built into Chrome/Android). Or try 1Password or Bitwarden. One master password unlocks all others.' },
+      { title: 'Turn on two-factor authentication', content: 'Go to the security settings of your important accounts (email, bank, social media). Turn on 2FA — it sends a code to your phone as an extra login step.' },
+      { title: 'Update your weakest passwords first', content: 'Start with your email, bank, and social media accounts. Change any password that is short, uses a common word, or is reused across multiple sites.' },
+    ],
+  },
+
+  {
+    slug: 'recognize-avoid-tech-support-scams',
+    title: 'How to Recognize and Avoid Tech Support Scams',
+    excerpt: 'Identify fake tech support calls, pop-ups, and emails that try to trick you into paying for unnecessary repairs.',
+    category: 'safety-guides' as any,
+    tags: ['tech support scam', 'scams', 'fraud', 'security', 'phone scam'],
+    readTime: '6 min',
+    thumbnailEmoji: '🚨',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Tech support scams are one of the most common frauds targeting non-technical users. Scammers pose as technical support from companies like Microsoft, Apple, or your internet provider and claim your computer or phone has a virus or security problem. Their goal is to get you to pay for fake repairs, give them remote access to your device, or hand over personal and financial information.
+
+These scams come in several forms. Phone calls: you receive a call from someone claiming to be from "Microsoft Windows Support" or "Apple Technical Services." They say they have detected a problem with your computer and offer to fix it. Real tech companies do not call you out of the blue about computer problems.
+
+Pop-up warnings: while browsing the internet, a scary full-screen message appears saying your computer is infected and to call a number immediately. The message may include flashing text, warning sounds, and an official-looking logo. These are fake — real virus warnings come from your installed antivirus software, not from websites.
+
+Here is how the scam usually works: the scammer convinces you there is a problem, then asks you to install remote access software so they can "fix" it. Once they have access, they may install actual malware, steal your files, or access your bank accounts. They then charge you $200 to $500 for the "repair."
+
+How to protect yourself: never give remote access to your computer to someone who contacted you first. Never call a phone number from a pop-up warning. Never pay for tech support you did not request. If you get a suspicious call, hang up. If you see a pop-up, close your browser (press Ctrl + W on Windows or Command + W on Mac, or force-quit the browser if needed).
+
+If you have already fallen for a tech support scam: change your passwords immediately (especially email, banking, and social media). Run a legitimate antivirus scan. Check your bank and credit card statements for unauthorized charges. Report the scam to the FTC at reportfraud.ftc.gov.`,
+    steps: [
+      { title: 'Know the warning signs', content: 'Unsolicited calls from "Microsoft" or "Apple," scary pop-up warnings with phone numbers, and emails about computer problems are almost always scams.' },
+      { title: 'Never give remote access to unsolicited callers', content: 'If someone you did not contact asks to remotely connect to your computer, say no and hang up. Legitimate companies do not need remote access to detect problems.' },
+      { title: 'Close scary pop-ups without calling', content: 'If a pop-up says "call this number" — do not call. Close the browser tab (Ctrl+W on Windows, Command+W on Mac). If the browser is frozen, force-quit it.' },
+      { title: 'Do not pay for unsolicited tech support', content: 'If you did not ask for help, do not pay for it. Scammers pressure you to pay by gift card, wire transfer, or cryptocurrency — these are red flags.' },
+      { title: 'Use official support channels', content: 'If you think your computer has a real problem, go to the manufacturer\'s official website (apple.com/support, support.microsoft.com) or visit a reputable local repair shop.' },
+      { title: 'If you already fell for the scam', content: 'Change all passwords immediately. Run a real antivirus scan. Check bank statements for unauthorized charges. Report to the FTC at reportfraud.ftc.gov.' },
+    ],
+  },
+
+  {
+    slug: 'keep-social-media-accounts-private',
+    title: 'How to Keep Your Social Media Accounts Private',
+    excerpt: 'Lock down your Facebook, Instagram, and other social media accounts so only the people you trust can see your content.',
+    category: 'safety-guides' as any,
+    tags: ['social media', 'privacy', 'Facebook', 'Instagram', 'settings'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Social media accounts are often set to share more than you realize. Your posts, photos, friends list, location, and personal details may be visible to anyone on the internet — not only your friends and family. Taking a few minutes to adjust your privacy settings can significantly reduce what strangers can see.
+
+Facebook: Go to Settings and Privacy, then Settings, then Privacy. Under "Who can see your future posts?" change it from "Public" to "Friends." Under "Who can send you friend requests?" choose "Friends of friends." Under "Who can look you up by email/phone?" change to "Friends." Also go to your Profile, tap the three dots, then "View As" to see what your profile looks like to the public.
+
+Review your past posts: Settings then Privacy then "Limit Past Posts" applies the "Friends only" setting to all your previous posts that were set to Public or Friends of Friends. This is a powerful one-click change.
+
+Instagram: Go to Settings then Privacy then "Private Account" and turn it on. When your account is private, only people you approve as followers can see your posts, stories, and followers list. Your profile photo and bio are still visible to everyone.
+
+Twitter/X: Go to Settings then Privacy and Safety then "Protect your posts." When turned on, only your followers can see your tweets, and new followers require your approval.
+
+General tips for all platforms: review your friends or followers list periodically and remove people you do not know. Turn off location tagging on posts (this reveals where you are in real time). Be cautious about sharing personal details like your full birth date, home address, phone number, or travel plans.
+
+Check your tagged photos: on most platforms, you can review tags before they appear on your profile. Facebook: Settings then Profile and Tagging then "Review tags people add to your posts before they appear" then turn on. Instagram: Settings then Privacy then Tags then "Manually Approve Tags" then turn on.`,
+    steps: [
+      { title: 'Lock down Facebook', content: 'Settings then Privacy: change "Who can see your future posts" to "Friends." Use "Limit Past Posts" to apply this to all old posts too.' },
+      { title: 'Make Instagram private', content: 'Settings then Privacy, then turn on "Private Account." Only approved followers can see your posts, stories, and followers list.' },
+      { title: 'Protect Twitter/X posts', content: 'Settings then Privacy and Safety then "Protect your posts." Only approved followers can see your tweets.' },
+      { title: 'Turn off location sharing', content: 'On each platform, avoid adding your location to posts. Check Privacy settings and turn off location access for social media apps.' },
+      { title: 'Review tags and mentions', content: 'Turn on tag review: Facebook: Profile and Tagging then "Review tags." Instagram: Privacy then Tags then "Manually Approve Tags."' },
+      { title: 'Audit your friends and followers', content: 'Periodically review your connections. Remove people you do not know. Check "View As" on Facebook to see what strangers see on your profile.' },
+    ],
+  },
+
+  {
+    slug: 'shop-online-safely',
+    title: 'How to Shop Online Safely',
+    excerpt: 'Protect your money and personal information when buying from websites — know what to look for and what to avoid.',
+    category: 'safety-guides' as any,
+    tags: ['online shopping', 'safety', 'scams', 'credit card', 'security'],
+    readTime: '6 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Shopping online is convenient, but it also creates opportunities for scammers. Fake websites, stolen credit card information, and counterfeit products are real risks. By following some straightforward practices, you can shop online with confidence.
+
+Use trusted websites. Stick to well-known retailers like Amazon, Walmart, Target, Best Buy, and the official websites of brands you trust. If you find a deal on a website you have never heard of, be cautious. Search for the company name plus "reviews" or "scam" to see what other people say.
+
+Check for HTTPS. Before entering any payment information, look at the website address in your browser. It should start with "https://" (not "http://") — the "s" means the connection is encrypted. You should also see a padlock icon in the address bar.
+
+Use a credit card, not a debit card. Credit cards offer better fraud protection. If someone makes an unauthorized charge, your credit card company can reverse it while investigating. With a debit card, the money is taken directly from your bank account and can be harder to recover.
+
+Be skeptical of deals that seem too good to be true. A brand-new phone for $99? A designer handbag for $30? These are almost certainly scams or counterfeits. If the price is drastically below what everyone else charges, walk away.
+
+Watch out for fake review sites and social media ads. Scammers create convincing product ads on Facebook, Instagram, and TikTok that lead to fake shopping websites. These sites take your payment but never deliver the product. Check the website's contact information, return policy, and physical address before buying.
+
+Keep records. Save confirmation emails, order numbers, and receipts. Take screenshots of the product listing and price. These are essential if you need to dispute a charge or return an item.
+
+Monitor your statements. After shopping online, check your credit card or bank statement within a few days to make sure only the correct charges appear. Report any unauthorized charges to your bank immediately.`,
+    steps: [
+      { title: 'Shop on trusted websites', content: 'Stick to well-known retailers and brand websites. If a site is unfamiliar, search for it online along with "reviews" or "scam" before purchasing.' },
+      { title: 'Check for HTTPS and the padlock', content: 'Before entering payment info, verify the URL starts with "https://" and shows a padlock icon. No padlock means do not purchase.' },
+      { title: 'Use a credit card', content: 'Credit cards offer better fraud protection than debit cards. If there is an unauthorized charge, your credit card company can dispute and reverse it.' },
+      { title: 'Be skeptical of extreme deals', content: 'If the price is dramatically lower than everywhere else, it is likely a scam or counterfeit. Compare prices across multiple reputable stores.' },
+      { title: 'Avoid clicking social media ads for unfamiliar stores', content: 'Scam ads are common on Facebook, Instagram, and TikTok. If an ad leads to a site you do not recognize, research the company before buying.' },
+      { title: 'Save receipts and monitor your bank statement', content: 'Keep confirmation emails and order numbers. Check your credit card or bank statement within a few days to catch unauthorized charges early.' },
+    ],
+  },
+
+  {
+    slug: 'avoid-package-delivery-scams',
+    title: 'How to Avoid Package Delivery Scams',
+    excerpt: 'Recognize fake delivery notifications from USPS, UPS, FedEx, and Amazon that try to steal your information or money.',
+    category: 'safety-guides' as any,
+    tags: ['delivery scam', 'USPS', 'UPS', 'FedEx', 'phishing', 'packages'],
+    readTime: '5 min',
+    thumbnailEmoji: '📦',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Package delivery scams are one of the fastest-growing types of fraud. You receive a text message or email claiming to be from USPS, UPS, FedEx, or Amazon saying there is a problem with your delivery — a missed package, a required fee, or an address confirmation needed. The message includes a link that leads to a fake website designed to steal your personal or financial information.
+
+These scams work because so many people order packages online. At any given time, you might actually be expecting a delivery, which makes the scam message seem plausible.
+
+How to recognize a delivery scam: the message creates urgency ("Your package will be returned if you do not respond within 24 hours"). Real delivery companies leave a note or try again — they do not threaten to return packages by text. The link looks off — the URL might be something like usps-delivery-update.com instead of the real domain (usps.com). It asks for payment — real delivery companies do not charge unexpected fees by text. It asks for personal information — a real delivery notification never asks for your Social Security number or credit card number.
+
+What to do instead: if you get a suspicious delivery message, do not click the link. If you are expecting a package, go directly to the carrier's official website (usps.com, ups.com, fedex.com) and enter your tracking number there. You can also use the official app for each carrier to track packages.
+
+If you already clicked a scam link: do not enter any information. Close the browser. If you entered financial information, call your bank or credit card company immediately. If you entered login credentials, change those passwords right away.
+
+Report delivery scams: forward scam texts to 7726 (SPAM). Report fake USPS messages at uspis.gov. Report phishing to the FTC at reportfraud.ftc.gov.`,
+    steps: [
+      { title: 'Recognize the signs', content: 'Fake delivery messages create urgency, use suspicious links, ask for payment, or request personal information. Real carriers do not operate this way by text or email.' },
+      { title: 'Do not click the link', content: 'If you receive a suspicious delivery text or email, do not tap the link. Delete the message.' },
+      { title: 'Track packages through official channels', content: 'If you are expecting a delivery, go directly to usps.com, ups.com, fedex.com, or the Amazon app and enter your tracking number there.' },
+      { title: 'Check the sender and URL', content: 'Real USPS texts come from short numbers, not regular phone numbers. Real URLs use the exact domain (usps.com, ups.com). Look for misspellings or extra words in the URL.' },
+      { title: 'Never pay unexpected fees by text', content: 'If a package truly requires a fee, it is handled at delivery or through the carrier\'s official website — never through a link in a random text message.' },
+      { title: 'Report and block', content: 'Forward scam texts to 7726. Report to the FTC at reportfraud.ftc.gov. Block the sender on your phone.' },
+    ],
+  },
+
+  {
+    slug: 'protect-phone-if-stolen',
+    title: 'How to Protect Your Phone If It Gets Stolen',
+    excerpt: 'Steps to take immediately after your phone is stolen — lock it, track it, protect your accounts, and report the theft.',
+    category: 'safety-guides' as any,
+    tags: ['stolen phone', 'security', 'lock', 'remote wipe', 'theft'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔓',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `If your phone is stolen, time matters. Your phone contains your email, banking apps, social media, photos, and personal information. Acting quickly can prevent a thief from accessing your accounts and data.
+
+Step 1: Lock your phone remotely. This is the most urgent step. iPhone: go to icloud.com/find from any computer or device, sign in with your Apple ID, select your phone, and tap "Lost Mode." This locks the phone with your passcode, disables Apple Pay, and displays a custom message. Android: go to google.com/android/find, sign in with your Google account, and tap "Secure device." This locks the phone and signs out of your Google account.
+
+Step 2: Call your phone carrier. Contact your carrier (Verizon, AT&T, T-Mobile, etc.) and report your phone stolen. They can suspend your line so the thief cannot make calls, send texts, or use your data. Your carrier can also blacklist your phone's IMEI number, which prevents it from being activated on any U.S. carrier network.
+
+Step 3: Change your important passwords. Using another device, change the passwords for your email account first (this is the key to resetting every other password). Then change passwords for your banking and financial apps, social media accounts, and any accounts where you used auto-login or saved passwords.
+
+Step 4: Check for unauthorized activity. Log into your email and check for any messages you did not send. Check your bank and credit card accounts for unauthorized transactions. Review your social media for posts or messages you did not make.
+
+Step 5: File a police report. Contact your local police department and report the theft. Include the phone's make, model, serial number, and last known location from Find My or Find My Device.
+
+Step 6: Consider a remote erase. If you cannot recover your phone and you have a backup of your data, you can erase the phone remotely. iPhone: icloud.com/find then "Erase This Device." Android: google.com/android/find then "Erase Device." This permanently deletes everything on the phone.
+
+If you get a replacement phone, restore your data from your most recent backup (iCloud or Google account). All your apps, contacts, photos, and settings come back.`,
+    steps: [
+      { title: 'Lock your phone remotely (do this first)', content: 'iPhone: icloud.com/find, select phone, then "Lost Mode." Android: google.com/android/find then "Secure device." This locks the phone immediately.' },
+      { title: 'Call your phone carrier', content: 'Call Verizon, AT&T, T-Mobile, or your carrier to suspend your line and blacklist the phone\'s IMEI number.' },
+      { title: 'Change your passwords', content: 'Starting with email, then banking, then social media — change passwords for all accounts you accessed on the stolen phone. Use a computer or another device.' },
+      { title: 'Check for unauthorized activity', content: 'Review your email sent folder, bank transactions, and social media for anything you did not do. Report unauthorized activity immediately.' },
+      { title: 'File a police report', content: 'Report the theft to local police with the phone\'s make, model, serial number, and last known location. Keep a copy of the report for insurance claims.' },
+      { title: 'Erase the phone remotely if needed', content: 'If recovery is unlikely and you have backups, erase the phone remotely: icloud.com/find then "Erase" (iPhone) or google.com/android/find then "Erase Device" (Android).' },
+    ],
+  },
+
+  {
+    slug: 'set-up-pin-password-phone',
+    title: 'How to Set Up a PIN or Password on Your Phone',
+    excerpt: 'Protect your phone with a PIN, password, or biometric lock so no one can access your information without permission.',
+    category: 'safety-guides' as any,
+    tags: ['PIN', 'password', 'phone lock', 'security', 'biometrics', 'Face ID'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔑',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A locked phone is a protected phone. Setting up a PIN, password, or biometric lock (fingerprint or face recognition) means that if your phone is lost or stolen, no one can access your emails, banking apps, photos, or personal information without your permission.
+
+Your phone offers several lock options. PIN: a 4 to 6 digit number. This is the most straightforward option and works well for most people. Choose something you will remember but that is not obvious — avoid 1234, 0000, your birth year, or the last four digits of your phone number.
+
+Password: a longer combination of letters, numbers, and special characters. More secure than a PIN, but slower to type every time you unlock your phone.
+
+Pattern (Android only): draw a pattern connecting dots on a grid. This is fast but can be guessed by someone watching over your shoulder or by looking at smudge marks on your screen.
+
+Biometrics: Face ID (iPhone X and later), Touch ID (older iPhones), or fingerprint sensors (most Android phones). These are the most convenient — you unlock your phone by looking at it or touching the sensor. You still set a PIN or password as a backup.
+
+On iPhone: Go to Settings then Face ID and Passcode (or Touch ID and Passcode on older models). Tap "Turn Passcode On." Choose a 6-digit passcode (recommended) or tap "Passcode Options" for a 4-digit PIN or a custom password. After setting a passcode, the phone asks if you want to set up Face ID or Touch ID — follow the prompts to register your face or fingerprint.
+
+On Android: Go to Settings then Security then Screen Lock (the path varies slightly by brand). Choose your lock type: PIN, Password, or Pattern. Enter your choice and confirm it. Then look for "Fingerprint" or "Face Unlock" in the Security settings to add biometric unlock.
+
+Set your phone to lock automatically after a short idle period: iPhone: Settings then Display and Brightness then Auto-Lock, then choose 30 seconds or 1 minute. Android: Settings then Display then Screen timeout, then 30 seconds or 1 minute.`,
+    steps: [
+      { title: 'Open security settings', content: 'iPhone: Settings then Face ID and Passcode. Android: Settings then Security then Screen Lock. This is where you set up your phone lock.' },
+      { title: 'Choose a lock type', content: 'A 6-digit PIN is recommended for most people. It balances security and convenience. Avoid obvious numbers like 123456, your birthday, or 000000.' },
+      { title: 'Set your PIN or password', content: 'Enter your chosen PIN or password twice to confirm. Write it down and keep it somewhere safe (not on the phone) until you have it memorized.' },
+      { title: 'Set up biometric unlock', content: 'iPhone: Settings then Face ID and Passcode then "Set Up Face ID" or "Add a Fingerprint." Android: Settings then Security then "Fingerprint" or "Face Unlock." Follow the prompts.' },
+      { title: 'Set auto-lock timing', content: 'iPhone: Settings then Display and Brightness then Auto-Lock, then 30 seconds or 1 minute. Android: Settings then Display then Screen timeout, then 30 seconds or 1 minute.' },
+      { title: 'Test your lock', content: 'Press the power button to lock your phone. Wake it up and make sure the lock screen appears and requires your PIN, password, or biometric to unlock.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MORE HOW-TO (7 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'print-from-phone',
+    title: 'How to Print from Your Phone',
+    excerpt: 'Send documents, photos, and web pages from your iPhone or Android directly to a wireless printer.',
+    category: 'how-to' as any,
+    tags: ['printing', 'wireless', 'AirPrint', 'iPhone', 'Android'],
+    readTime: '5 min',
+    thumbnailEmoji: '🖨️',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Printing from your phone is more useful than you might think — boarding passes, shipping labels, recipes, photos, directions, medical forms, and documents can all be printed directly from your iPhone or Android without needing a computer.
+
+The key requirement is a wireless printer. Most printers made in the last 5 to 10 years support wireless printing. Your phone and printer need to be on the same WiFi network.
+
+On iPhone (AirPrint): Apple's built-in printing system is called AirPrint, and it works with most modern wireless printers. Find the document, photo, or web page you want to print. Tap the share button (the square with an upward arrow). Scroll down in the share menu and tap "Print." Your phone searches for printers on your network. Tap "Select Printer" and choose your printer from the list. Adjust options like number of copies and page range if available. Tap "Print."
+
+On Android: Open the document, photo, or web page. Tap the three-dot menu (or the share button) and look for "Print." If you do not see it, tap "Share" and then look for "Print." Your phone searches for printers on your network. Select your printer, adjust settings, and tap the print button. If your printer does not appear, you may need to install your printer manufacturer's app (like HP Smart, Canon PRINT, or Epson iPrint) from the Google Play Store.
+
+For photos: open the Photos or Gallery app, select the photo, tap share, and choose "Print." You can print photos on regular paper or on glossy photo paper if your printer supports it.
+
+For web pages: while viewing the page in your browser, tap the share button or the three-dot menu and look for "Print."
+
+If your printer is not wireless, some printers support USB connections through an adapter. Alternatively, you can use a printer manufacturer's app to print from your phone to a wired printer connected to a computer.`,
+    steps: [
+      { title: 'Make sure your printer is on the same WiFi', content: 'Your phone and printer must be connected to the same WiFi network. Check your printer settings to verify it is connected to WiFi.' },
+      { title: 'iPhone: Use the Share button then Print', content: 'Open the document, photo, or web page. Tap the share button (square with arrow), scroll down to "Print." Select your printer and tap Print.' },
+      { title: 'Android: Use the menu then Print', content: 'Open the content you want to print. Tap the three-dot menu or share button then "Print." Select your printer. If it does not appear, install your printer\'s app from the Play Store.' },
+      { title: 'Print a photo', content: 'Open the Photos or Gallery app, select a photo, tap share, then "Print." Choose your printer and adjust the number of copies.' },
+      { title: 'Print a web page or email', content: 'While viewing a web page or email, tap the share button or three-dot menu and select "Print." The page prints as displayed on your screen.' },
+      { title: 'Troubleshooting', content: 'If your printer does not appear: make sure both devices are on the same WiFi network, restart the printer, or install the printer manufacturer\'s app for better compatibility.' },
+    ],
+  },
+
+  {
+    slug: 'connect-phone-bluetooth-speaker',
+    title: 'How to Connect Your Phone to a Bluetooth Speaker',
+    excerpt: 'Pair your iPhone or Android with a Bluetooth speaker to play music, podcasts, and audiobooks through a bigger speaker.',
+    category: 'how-to' as any,
+    tags: ['Bluetooth', 'speaker', 'audio', 'pairing', 'wireless'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔊',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Bluetooth speakers let you play music, podcasts, and audiobooks from your phone through a speaker that is louder and has better sound quality. Connecting your phone to a Bluetooth speaker (called "pairing") takes less than a minute once you know the steps.
+
+First, put the speaker in pairing mode. Every Bluetooth speaker has a way to enter pairing mode — this makes it visible to your phone. Usually you press and hold the power button or a dedicated Bluetooth button until a light flashes blue (or you hear a tone or voice prompt saying "pairing mode" or "ready to connect"). Check your speaker's instruction manual if you are not sure which button to hold.
+
+On iPhone: Go to Settings then Bluetooth. Make sure Bluetooth is turned on (the toggle should be green). Under "Other Devices," your speaker name should appear. Tap it. After a moment, it will say "Connected" next to the speaker name. You are now paired.
+
+On Android: Go to Settings then Connected devices then "Pair new device" (or Settings then Bluetooth on some phones). Make sure Bluetooth is turned on. Under "Available devices," your speaker should appear. Tap it. A "Connected" label appears when pairing is complete.
+
+Once paired, your phone remembers the speaker. Next time you want to use it, turn on the speaker and turn on Bluetooth on your phone — they will reconnect automatically without going through the pairing process again.
+
+If you have trouble connecting: make sure the speaker is in pairing mode (not connected to another device). Move the phone and speaker closer together. Turn both off and back on. If the speaker was previously connected to a different phone, it may need to be unpaired from that phone first or put back into pairing mode.
+
+You can only connect to one Bluetooth speaker at a time (unless your speaker or phone specifically supports multi-device features). To switch to a different speaker, disconnect from the current one first.`,
+    steps: [
+      { title: 'Put the speaker in pairing mode', content: 'Press and hold the power button or Bluetooth button on the speaker until a light flashes blue (or you hear "pairing mode"). Check your speaker manual if unsure.' },
+      { title: 'Open Bluetooth settings on your phone', content: 'iPhone: Settings then Bluetooth (make sure it is on). Android: Settings then Connected devices then "Pair new device" (or Settings then Bluetooth).' },
+      { title: 'Find and tap your speaker', content: 'Your speaker name appears under "Other Devices" (iPhone) or "Available devices" (Android). Tap it to connect.' },
+      { title: 'Wait for the "Connected" confirmation', content: 'After a few seconds, the status changes to "Connected." You may also hear a confirmation tone from the speaker.' },
+      { title: 'Play audio through the speaker', content: 'Open any music, podcast, or video app and press play. The audio should come through the Bluetooth speaker instead of your phone.' },
+      { title: 'Reconnecting next time', content: 'Turn on the speaker and make sure Bluetooth is on your phone. They reconnect automatically. If not, open Bluetooth settings and tap the speaker name.' },
+    ],
+  },
+
+  {
+    slug: 'use-voice-typing',
+    title: 'How to Use Voice Typing Instead of the Keyboard',
+    excerpt: 'Dictate text messages, emails, notes, and searches using your voice on iPhone, Android, Windows, and Mac.',
+    category: 'how-to' as any,
+    tags: ['voice typing', 'dictation', 'speech to text', 'accessibility', 'hands-free'],
+    readTime: '4 min',
+    thumbnailEmoji: '🎤',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Voice typing (also called dictation) lets you talk instead of type. Your phone or computer converts your spoken words into text in real time. It works in text messages, emails, search bars, notes apps, documents — anywhere you would normally type.
+
+Voice typing has gotten remarkably accurate in recent years, and it is built into every modern device. It is faster than typing for many people, and it is a great accessibility feature for anyone with difficulty using a keyboard.
+
+On iPhone: whenever the keyboard is showing, look for the microphone icon at the bottom of the keyboard (near the space bar). Tap it. Start speaking, and your words appear as text. Speak punctuation out loud: say "period," "comma," "question mark," "exclamation point," or "new line" and the phone types those characters. Tap the microphone icon again to stop dictation.
+
+On Android: when the keyboard is showing, tap the microphone icon on the keyboard (usually at the top-right or near the space bar). If you use Gboard (Google's keyboard), you can also press and hold the space bar to activate voice typing. Start speaking. Say punctuation aloud. Tap the microphone again to stop.
+
+On Windows: Press Windows key + H to start voice typing. A toolbar appears. Start speaking. Say punctuation aloud. Press Windows + H again to stop. This works in any text field.
+
+On Mac: Go to System Settings then Keyboard then Dictation and turn it on. Press the fn (function) key twice to start dictation. Start speaking. Press fn twice again to stop.
+
+Tips for better accuracy: speak clearly and at a natural pace. Minimize background noise. If the app gets a word wrong, you can go back and correct it manually. You can mix voice typing and keyboard typing in the same message.
+
+Voice typing also works great for quick searches: tap the search bar, tap the microphone, and say what you are looking for.`,
+    steps: [
+      { title: 'iPhone: Tap the microphone on the keyboard', content: 'When any keyboard is showing, tap the microphone icon near the space bar. Start speaking. Your words appear as text. Say "period" or "comma" for punctuation.' },
+      { title: 'Android: Tap the microphone on the keyboard', content: 'Tap the microphone icon on the keyboard (top-right corner on Gboard). Or press and hold the space bar. Speak naturally and say punctuation aloud.' },
+      { title: 'Windows: Press Windows + H', content: 'Press the Windows key and H at the same time. A dictation toolbar appears. Start speaking into your microphone. Press Windows + H again to stop.' },
+      { title: 'Mac: Press fn key twice', content: 'First enable: System Settings then Keyboard then Dictation, then turn on. Then press the fn key twice to start dictating. Press fn twice again to stop.' },
+      { title: 'Speak punctuation aloud', content: 'Say "period," "comma," "question mark," "exclamation point," "new line," or "new paragraph" and the device types those characters for you.' },
+      { title: 'Edit and continue', content: 'If a word is wrong, tap it to select it and type the correction manually. Then tap the microphone again to continue dictating. You can mix typing and voice freely.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-email-on-phone',
+    title: 'How to Set Up Email on Your Phone',
+    excerpt: 'Add your email account to your iPhone or Android phone so you can read and send email from anywhere.',
+    category: 'how-to' as any,
+    tags: ['email', 'phone setup', 'Gmail', 'Outlook', 'Yahoo', 'iPhone', 'Android'],
+    readTime: '5 min',
+    thumbnailEmoji: '📧',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Having email on your phone means you can read and respond to messages wherever you are — no need to sit at a computer. Setting it up takes about two minutes, and your phone handles the technical details automatically.
+
+On iPhone, the built-in Mail app supports all major email providers. Go to Settings then Mail then Accounts then Add Account. You will see options for Microsoft Outlook, Google (Gmail), Yahoo, AOL, and others. Tap your email provider and sign in with your email address and password. The phone configures everything automatically. Once added, open the Mail app to see your inbox.
+
+If your email provider is not listed, tap "Other" and enter your email address, password, and the mail server settings. Your email provider can give you these settings — search for "[your provider name] mail server settings" online.
+
+On Android, the Gmail app handles most email accounts, not only Gmail. Open the Gmail app, tap your profile icon (or menu), then "Add another account." Choose your provider (Google, Outlook, Yahoo, etc.) and enter your email and password. The app handles the configuration automatically.
+
+You can also use the official app for your email provider. Microsoft Outlook has its own app (great for Outlook, Hotmail, and work email). Yahoo Mail has its own app. These are free on both iPhone and Android.
+
+After setting up, you will receive push notifications when new emails arrive (you can turn these off or customize them in your notification settings). Your email syncs automatically — messages you read on your phone are marked as read on your computer too, and messages you send from your phone appear in your Sent folder everywhere.
+
+If you have multiple email accounts, you can add them all to the same app. The Mail app (iPhone) and Gmail app (Android) both support multiple accounts, and you can switch between them by tapping the account selector at the top of the inbox.`,
+    steps: [
+      { title: 'iPhone: Go to Mail settings', content: 'Settings then Mail then Accounts then Add Account. Tap your email provider (Google, Outlook, Yahoo, AOL) and sign in with your email and password.' },
+      { title: 'Android: Use the Gmail app', content: 'Open Gmail, tap your profile icon, then "Add another account." Choose your provider and enter your email address and password.' },
+      { title: 'Sign in and authorize', content: 'Enter your email address and password. You may see a permissions screen — tap "Allow" or "Accept" to let the mail app access your email.' },
+      { title: 'Wait for sync to complete', content: 'Your phone downloads recent emails. This may take a minute or two. Once complete, your inbox appears in the mail app.' },
+      { title: 'Consider the official app', content: 'For the best experience, download your provider\'s official app: Outlook for Microsoft email, Gmail for Google email, Yahoo Mail for Yahoo. Free on both platforms.' },
+      { title: 'Add multiple accounts', content: 'Repeat the process to add more email accounts. Both the Mail app (iPhone) and Gmail (Android) support multiple accounts — switch between them from the inbox.' },
+    ],
+  },
+
+  {
+    slug: 'share-wifi-password',
+    title: 'How to Share Your WiFi Password',
+    excerpt: 'Share your home WiFi password with guests using your iPhone, Android, or by finding it in your router settings.',
+    category: 'how-to' as any,
+    tags: ['WiFi', 'password', 'sharing', 'network', 'guests'],
+    readTime: '4 min',
+    thumbnailEmoji: '📶',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `When guests visit your home, they often want to connect to your WiFi. If you do not remember the password, there are several ways to find it and share it without crawling behind your router.
+
+Method 1: iPhone to iPhone (or iPad/Mac) — WiFi sharing. If you are connected to your WiFi and your guest has an iPhone, iPad, or Mac, you can share the password without typing it. Make sure both devices have Bluetooth and WiFi turned on. Have your guest try to connect to your WiFi network from their device's Settings. When they select your network and the password prompt appears, a popup shows on YOUR phone asking "Share Your Wi-Fi?" Tap "Share Password." Your guest connects automatically without ever seeing the password.
+
+Method 2: Android — share via QR code. On most Android phones running Android 10 or later, go to Settings then Network and Internet then Wi-Fi (or Settings then Connections then Wi-Fi on Samsung). Tap the gear icon next to your connected network. Look for a "Share" button or QR code icon. A QR code appears that your guest can scan with their phone camera to connect instantly. The password may also be displayed as text below the QR code.
+
+Method 3: Check your router. The default WiFi password is usually printed on a sticker on the bottom or back of your router. It is labeled "WiFi Password," "Network Key," "WPA Key," or similar. Note: if you changed the password from the default, the sticker shows the original, not your current password.
+
+Method 4: Find the password on a Windows computer. If a Windows computer is connected to the WiFi, you can look up the password through the network settings.
+
+Method 5: Find the password on a Mac. Open the Passwords app (or Keychain Access), search for your WiFi network name, click it, and show the password.
+
+Once you find the password, you can share it by telling your guest, writing it on a note card near your door, or texting it.`,
+    steps: [
+      { title: 'iPhone to iPhone: Tap "Share Password"', content: 'Both devices need WiFi and Bluetooth on. Your guest selects your WiFi network — a popup appears on your phone asking to share. Tap "Share Password."' },
+      { title: 'Android: Share via QR code', content: 'Settings then Wi-Fi, tap the gear icon next to your network, then "Share" or QR code icon. Your guest scans the QR code with their camera to connect.' },
+      { title: 'Check the router sticker', content: 'Look at the bottom or back of your router for a sticker labeled "WiFi Password," "Network Key," or "WPA Key." This shows the default password.' },
+      { title: 'Find it on Windows', content: 'Open Network Settings, find your WiFi connection properties, go to the Security tab, and check "Show characters" to reveal the password.' },
+      { title: 'Find it on Mac', content: 'Open the Passwords app (or Keychain Access), search for your WiFi network name, click to view, and show the password (authenticate with your Mac password).' },
+      { title: 'Post the password for guests', content: 'Write your WiFi network name and password on a small card and place it in a visible spot for guests — near the front door or on the fridge.' },
+    ],
+  },
+
+  {
+    slug: 'schedule-text-message',
+    title: 'How to Schedule a Text Message',
+    excerpt: 'Write a text now and have it delivered later — schedule texts for birthdays, reminders, and perfect timing.',
+    category: 'how-to' as any,
+    tags: ['text message', 'schedule', 'SMS', 'iPhone', 'Android', 'messaging'],
+    readTime: '4 min',
+    thumbnailEmoji: '⏰',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `Sometimes you want to send a text at a specific time — a birthday message at midnight, a reminder to a friend tomorrow morning, or a follow-up message during business hours. Scheduling a text lets you write it now and have it delivered later, automatically.
+
+On iPhone (iOS 18 and later): Apple added scheduled sending to the Messages app. Open a conversation in Messages, type your message, then press and hold the send button (the blue arrow). A menu appears with options including "Send Later." Tap "Send Later" and choose the date and time you want the message delivered. The message sits in the conversation with a "Scheduled" label until it sends. You can edit or cancel it before the scheduled time by tapping on it.
+
+On iPhone (iOS 17 and earlier): The built-in Messages app does not support scheduling. Use the Shortcuts app as a workaround or a third-party app.
+
+On Android (Google Messages): Open a conversation, type your message, then press and hold the send button. A scheduling menu appears. Choose a suggested time or tap "Pick date and time" to set a custom time. The message shows a clock icon until it sends. Tap the scheduled message to edit or cancel it.
+
+On Samsung Messages: Open a conversation, type your message, tap the plus (+) or the three dots, and look for "Schedule message." Set the date and time and confirm.
+
+Scheduled messages only send if your phone is on and has a cellular or WiFi connection at the scheduled time. If your phone is off or in airplane mode, the message waits until the phone comes back online.
+
+This feature is especially useful for: birthday and holiday messages at the right time, business-appropriate timing for professional texts, reminders for friends or family members, and follow-up messages you do not want to forget.`,
+    steps: [
+      { title: 'iPhone (iOS 18+): Press and hold the send button', content: 'Type your message in Messages. Press and hold the blue send arrow. Tap "Send Later" and choose the date and time for delivery.' },
+      { title: 'Android (Google Messages): Press and hold send', content: 'Type your message. Press and hold the send button. Choose a suggested time or tap "Pick date and time." Confirm your selection.' },
+      { title: 'Samsung Messages: Use the schedule option', content: 'Type your message. Tap the plus (+) or three dots menu. Select "Schedule message." Set the date and time, then confirm.' },
+      { title: 'Review your scheduled message', content: 'The message appears in the conversation with a "Scheduled" label or clock icon. Tap it to edit the message text or change the delivery time.' },
+      { title: 'Cancel if needed', content: 'Tap the scheduled message and choose "Delete" or "Cancel" to prevent it from sending. You can always reschedule or send it manually.' },
+      { title: 'Make sure your phone is on', content: 'Scheduled messages only send when your phone is powered on and connected. Leave your phone on and connected to WiFi or cellular at the scheduled time.' },
+    ],
+  },
+
+  {
+    slug: 'turn-off-location-tracking-phone',
+    title: 'How to Turn Off Location Tracking on Your Phone',
+    excerpt: 'Control which apps can track your location and when — protect your privacy on iPhone and Android.',
+    category: 'how-to' as any,
+    tags: ['location', 'privacy', 'tracking', 'GPS', 'iPhone', 'Android', 'settings'],
+    readTime: '5 min',
+    thumbnailEmoji: '📍',
+    publishedAt: '2026-04-15',
+    difficulty: 'Intermediate',
+    body: `Your phone tracks your location throughout the day, and many apps request access to that information. Some apps need your location to work (like maps and weather), but others (like games, shopping apps, and social media) collect it for advertising purposes. Taking control of which apps can see your location is one of the most important privacy steps you can take.
+
+On iPhone: Go to Settings then Privacy and Security then Location Services. At the top, you see the master toggle — turning this off disables all location tracking for all apps. But a better approach is to go app by app. Tap each app in the list and choose: "Never" (the app cannot access your location), "Ask Next Time or When I Share" (the app asks each time), "While Using the App" (only when the app is open), or "Always" (the app can track your location even when it is not open).
+
+For most apps, "While Using the App" or "Never" is the right choice. The only apps that genuinely need "Always" are navigation apps you use for driving, family location-sharing apps, and fitness apps that track outdoor workouts.
+
+Also on iPhone: scroll down in Location Services and tap "System Services." Turn off "Significant Locations" to stop Apple from tracking the places you visit frequently. Turn off "Location-Based Apple Ads" to stop location-targeted advertising.
+
+On Android: Go to Settings then Location. The master toggle at the top turns all location tracking on or off. For per-app control, tap "App location permissions" (or Settings then Apps, select an app, then Permissions then Location). For each app, choose: "Allow all the time," "Allow only while using the app," "Ask every time," or "Don't allow."
+
+Android also lets you see which apps recently accessed your location: Settings then Location then "App location permissions" shows a list with recent usage. This helps you identify apps that are tracking you without your awareness.
+
+Review these settings periodically. When you install new apps, they often ask for location permission during setup. It is fine to deny location access and see if the app works without it — many apps request location but do not actually need it.`,
+    steps: [
+      { title: 'Open location settings', content: 'iPhone: Settings then Privacy and Security then Location Services. Android: Settings then Location. You will see the master toggle and a list of apps.' },
+      { title: 'Review each app individually', content: 'Go through the list and change each app\'s location access. Most apps work fine with "While Using" or "Never." Only maps and navigation truly need "Always."' },
+      { title: 'Turn off location for apps that do not need it', content: 'Games, shopping apps, news apps, and social media rarely need your location. Set them to "Never" and see if they still work as expected.' },
+      { title: 'iPhone: Disable Significant Locations', content: 'Settings then Privacy and Security then Location Services then System Services: turn off "Significant Locations" and "Location-Based Apple Ads."' },
+      { title: 'Android: Check recent location access', content: 'Settings then Location then "App location permissions." See which apps recently accessed your location. Revoke access from any you do not recognize or trust.' },
+      { title: 'Revisit after installing new apps', content: 'New apps often request location access during setup. Deny it initially and only grant access if the app genuinely needs it to function.' },
+    ],
+  },
+
 ];

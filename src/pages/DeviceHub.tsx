@@ -58,9 +58,19 @@ const devices: DeviceType[] = [
     suggestedGuides: ['connect-wifi-windows'],
   },
   {
-    id: 'tv', name: 'Smart TV', icon: Tv, bgClass: 'bg-primary', guideCount: '29 guides',
-    keywords: ['tv', 'streaming', 'hdmi', 'chromecast', 'firestick', 'roku'],
-    suggestedGuides: [],
+    id: 'tv', name: 'Smart TV & Streaming', icon: Tv, bgClass: 'bg-primary', guideCount: '35+ guides',
+    keywords: ['tv', 'streaming', 'hdmi', 'chromecast', 'firestick', 'roku', 'apple tv', 'netflix', 'hulu', 'disney'],
+    suggestedGuides: ['connect-smart-tv-wifi', 'set-up-roku-streaming', 'set-up-amazon-fire-stick', 'set-up-apple-tv-beginners'],
+  },
+  {
+    id: 'smart-speaker', name: 'Smart Speaker', icon: Wifi, bgClass: 'bg-primary', guideCount: '15+ guides',
+    keywords: ['alexa', 'echo', 'google home', 'nest', 'smart speaker', 'voice assistant', 'siri'],
+    suggestedGuides: ['set-up-amazon-alexa-echo', 'set-up-google-home-nest', 'use-voice-commands-alexa', 'change-alexa-privacy-settings'],
+  },
+  {
+    id: 'smart-home', name: 'Smart Home Devices', icon: Monitor, bgClass: 'bg-primary', guideCount: '20+ guides',
+    keywords: ['ring', 'doorbell', 'camera', 'smart light', 'thermostat', 'nest', 'ecobee', 'smart plug', 'security camera'],
+    suggestedGuides: ['set-up-ring-doorbell', 'set-up-smart-light-bulbs', 'use-smart-thermostat', 'set-up-security-camera-home'],
   },
 ];
 
@@ -85,7 +95,10 @@ const DeviceHub = () => {
         g.tags.some(t => t.toLowerCase().includes(kw)) ||
         (kw === 'windows' && g.category === 'windows-guides') ||
         (kw === 'mac' && g.category === 'mac-guides') ||
-        (kw === 'apple' && g.category === 'mac-guides')
+        (kw === 'apple' && g.category === 'mac-guides') ||
+        (kw === 'alexa' && g.category === ('smart-home' as any)) ||
+        (kw === 'streaming' && g.category === ('entertainment' as any)) ||
+        (kw === 'tv' && g.category === ('smart-home' as any))
       )
     );
 
