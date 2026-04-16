@@ -164,6 +164,19 @@ const DataLeakDashboard      = lazy(() => import("./pages/tools/DataLeakDashboar
 const ReverseImageSearch     = lazy(() => import("./pages/tools/ReverseImageSearch"));
 const FactCheckToolkit       = lazy(() => import("./pages/tools/FactCheckToolkit"));
 
+// ── Tools expansion (April 16 2026) ──
+const PasswordGenerator      = lazy(() => import("./pages/tools/PasswordGenerator"));
+const ScreenTimeAnalyzer     = lazy(() => import("./pages/tools/ScreenTimeAnalyzer"));
+const EmailSecurityCheck     = lazy(() => import("./pages/tools/EmailSecurityCheck"));
+const AppCleanup             = lazy(() => import("./pages/tools/AppCleanup"));
+const TechBudgetPlanner      = lazy(() => import("./pages/tools/TechBudgetPlanner"));
+const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
+const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
+const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
+const WifiPasswordFinder     = lazy(() => import("./pages/tools/WifiPasswordFinder"));
+const TechEmergencyKit       = lazy(() => import("./pages/tools/TechEmergencyKit"));
+const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
+
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -409,6 +422,19 @@ const AppContent = () => {
           <Route path="/tools/data-leak-dashboard" element={<DataLeakDashboard />} />
           <Route path="/tools/reverse-image-search" element={<ReverseImageSearch />} />
           <Route path="/tools/fact-check-toolkit" element={<FactCheckToolkit />} />
+
+          {/* ── Tools expansion April 16 ── */}
+          <Route path="/tools/password-generator" element={<PasswordGenerator />} />
+          <Route path="/tools/screen-time" element={<ScreenTimeAnalyzer />} />
+          <Route path="/tools/email-security-check" element={<EmailSecurityCheck />} />
+          <Route path="/tools/app-cleanup" element={<AppCleanup />} />
+          <Route path="/tools/tech-budget" element={<TechBudgetPlanner />} />
+          <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
+          <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
+          <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
+          <Route path="/tools/wifi-password-finder" element={<WifiPasswordFinder />} />
+          <Route path="/tools/tech-emergency-kit" element={<TechEmergencyKit />} />
+          <Route path="/weekly-tips" element={<WeeklyTips />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

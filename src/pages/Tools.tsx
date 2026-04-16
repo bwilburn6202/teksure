@@ -178,6 +178,107 @@ const tools = [
     badge: 'New',
     category: 'Learning' as ToolCategory,
   },
+  // ── NEWEST tools (April 16) ──
+  {
+    title: 'Password Generator',
+    description: 'Generate strong, random passwords instantly — customizable length, symbols, and copy to clipboard.',
+    icon: KeyRound,
+    path: '/tools/password-generator',
+    color: 'text-green-600',
+    bg: 'bg-green-50 dark:bg-green-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Screen Time Analyzer',
+    description: 'Understand your phone usage — compare to averages and get tips for healthy screen habits.',
+    icon: Smartphone,
+    path: '/tools/screen-time',
+    color: 'text-blue-600',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'New',
+    category: 'Device Health' as ToolCategory,
+  },
+  {
+    title: 'Email Security Check',
+    description: '12-point email security audit — check your Gmail, Outlook, or Yahoo settings for vulnerabilities.',
+    icon: Mail,
+    path: '/tools/email-security-check',
+    color: 'text-teal-600',
+    bg: 'bg-teal-50 dark:bg-teal-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'App Cleanup Guide',
+    description: 'Find and remove apps you no longer use — free up storage and reduce security risks.',
+    icon: Trash2,
+    path: '/tools/app-cleanup',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'New',
+    category: 'Device Health' as ToolCategory,
+  },
+  {
+    title: 'Tech Budget Planner',
+    description: 'Track your monthly tech spending — internet, phone, streaming, and subscriptions — and find savings.',
+    icon: CreditCard,
+    path: '/tools/tech-budget',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  {
+    title: 'Device Trade-In Estimator',
+    description: 'Find out what your old phone, tablet, or laptop is worth — compare trade-in values across retailers.',
+    icon: Smartphone,
+    path: '/tools/trade-in-estimator',
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Money & Bills' as ToolCategory,
+  },
+  {
+    title: 'Parental Controls Wizard',
+    description: 'Set up parental controls on any device — iPhone, Android, Windows, Mac, smart TV, and router.',
+    icon: ShieldCheck,
+    path: '/tools/parental-controls-wizard',
+    color: 'text-pink-600',
+    bg: 'bg-pink-50 dark:bg-pink-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Home Network Map',
+    description: 'Create a visual inventory of every device on your WiFi — phones, TVs, cameras, speakers, and more.',
+    icon: Wifi,
+    path: '/tools/home-network-map',
+    color: 'text-cyan-600',
+    bg: 'bg-cyan-50 dark:bg-cyan-950/30',
+    badge: 'New',
+    category: 'Device Health' as ToolCategory,
+  },
+  {
+    title: 'WiFi Password Finder',
+    description: 'Forgot your WiFi password? Find it on your iPhone, Android, Windows, or Mac in 30 seconds.',
+    icon: KeyRound,
+    path: '/tools/wifi-password-finder',
+    color: 'text-sky-600',
+    bg: 'bg-sky-50 dark:bg-sky-950/30',
+    badge: 'New',
+    category: 'Setup & Troubleshooting' as ToolCategory,
+  },
+  {
+    title: 'Tech Emergency Kit',
+    description: 'A preparedness checklist for your digital life — passwords, emergency contacts, backups, and more.',
+    icon: ShieldAlert,
+    path: '/tools/tech-emergency-kit',
+    color: 'text-red-600',
+    bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
   // ── EXISTING tools below ──
   {
     title: 'Notification Decoder',
@@ -723,7 +824,7 @@ export default function Tools() {
                 Tools & Utilities
               </h1>
               <p className="text-muted-foreground text-lg mb-8">
-                Over 55 free interactive tools — all private, all free.
+                Over 65 free interactive tools — all private, all free.
               </p>
               <div className="relative max-w-md mx-auto">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
