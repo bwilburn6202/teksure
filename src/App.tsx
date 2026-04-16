@@ -158,6 +158,12 @@ const DigitalLiteracyAssessment = lazy(() => import("./pages/tools/DigitalLitera
 const MeetingSetupHelper     = lazy(() => import("./pages/tools/MeetingSetupHelper"));
 const ContactBackupTool      = lazy(() => import("./pages/tools/ContactBackupTool"));
 
+// ── OSINT.link-inspired tools ──
+const GoogleDorkGenerator    = lazy(() => import("./pages/tools/GoogleDorkGenerator"));
+const DataLeakDashboard      = lazy(() => import("./pages/tools/DataLeakDashboard"));
+const ReverseImageSearch     = lazy(() => import("./pages/tools/ReverseImageSearch"));
+const FactCheckToolkit       = lazy(() => import("./pages/tools/FactCheckToolkit"));
+
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -397,6 +403,12 @@ const AppContent = () => {
           <Route path="/tools/digital-literacy-assessment" element={<DigitalLiteracyAssessment />} />
           <Route path="/tools/meeting-setup" element={<MeetingSetupHelper />} />
           <Route path="/tools/contact-backup" element={<ContactBackupTool />} />
+
+          {/* OSINT.link-inspired tools */}
+          <Route path="/tools/google-dork-generator" element={<GoogleDorkGenerator />} />
+          <Route path="/tools/data-leak-dashboard" element={<DataLeakDashboard />} />
+          <Route path="/tools/reverse-image-search" element={<ReverseImageSearch />} />
+          <Route path="/tools/fact-check-toolkit" element={<FactCheckToolkit />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
