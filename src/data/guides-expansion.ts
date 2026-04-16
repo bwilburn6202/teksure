@@ -4904,4 +4904,670 @@ Review these settings periodically. When you install new apps, they often ask fo
     ],
   },
 
+  // ═══════════════════════════════════════════
+  // WINDOWS ADVANCED (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'use-task-manager-windows',
+    title: 'How to Use Task Manager on Windows',
+    excerpt: 'Open Task Manager to see what programs are running, close frozen apps, and check your computer performance in real time.',
+    category: 'windows' as any,
+    tags: ['windows', 'task manager', 'performance', 'frozen apps', 'troubleshooting'],
+    readTime: '6 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Task Manager is one of the most useful tools built into Windows. It shows you every program and background process running on your computer, how much memory and processor power each one uses, and lets you force-close apps that have stopped responding.
+
+You can open Task Manager in several ways. The quickest is to press Ctrl + Shift + Esc on your keyboard. You can also right-click the taskbar (the bar at the bottom of your screen) and select "Task Manager" from the menu. A third option is to press Ctrl + Alt + Delete and then click "Task Manager" from the screen that appears.
+
+When Task Manager opens, you will see a list of apps currently running on your computer. If an app says "Not Responding" next to its name, that means it has frozen. You can select that app and click "End task" in the upper right corner to close it. This is the most common reason people open Task Manager — to close a frozen program without restarting the entire computer.
+
+Click the "Performance" tab to see real-time graphs of your CPU (processor), memory (RAM), disk, and network usage. If your computer feels slow, check this tab. If your memory usage is above 90 percent, you have too many programs open. If your disk usage is at 100 percent, a program may be reading or writing data heavily and slowing everything down.
+
+The "Startup" tab shows programs that automatically launch when you turn on your computer. Too many startup programs can make your computer take a long time to become usable after turning it on. You can right-click any program in this list and select "Disable" to stop it from launching at startup. This does not uninstall the program — it only prevents it from opening automatically.
+
+Task Manager also has a "Processes" tab that shows every single process running, including background services. Sort by memory or CPU to find which programs are using the most resources. If something you do not recognize is using a lot of resources, search for its name online before ending it — some processes are required by Windows to function properly.`,
+    steps: [
+      { title: 'Open Task Manager', content: 'Press Ctrl + Shift + Esc on your keyboard. Alternatively, right-click the taskbar at the bottom of your screen and select "Task Manager." The window will open showing your running applications.' },
+      { title: 'Close a frozen app', content: 'Look for any app that says "Not Responding." Click on it to select it, then click "End task" in the upper right corner. The frozen app will close, and you can reopen it fresh.' },
+      { title: 'Check the Performance tab', content: 'Click the "Performance" tab on the left side. You will see graphs showing CPU, Memory, Disk, and Network usage. If Memory is above 90 percent, close some programs to free up resources.' },
+      { title: 'Review the Processes tab', content: 'Click "Processes" to see everything running on your computer. Click the "Memory" or "CPU" column header to sort by usage. This helps you identify which programs are consuming the most resources.' },
+      { title: 'Manage startup programs', content: 'Click the "Startup apps" tab. Right-click any program you do not need at startup and select "Disable." This prevents it from launching automatically when you turn on your computer, which speeds up boot time.' },
+      { title: 'Use Task Manager regularly', content: 'Whenever your computer feels slow or an app freezes, open Task Manager first. It gives you a clear picture of what is happening and lets you take action without restarting your computer.' },
+    ],
+  },
+
+  {
+    slug: 'check-windows-updates',
+    title: 'How to Check for Windows Updates',
+    excerpt: 'Keep your Windows computer secure and running well by checking for and installing the latest updates from Microsoft.',
+    category: 'windows' as any,
+    tags: ['windows', 'updates', 'security', 'microsoft', 'maintenance'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔄',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Windows updates fix security vulnerabilities, patch bugs, and sometimes add new features to your computer. Microsoft releases updates regularly, and keeping your computer updated is one of the most important things you can do to stay safe online. Outdated computers are much more vulnerable to viruses and hackers.
+
+To check for updates, click the Start button (the Windows icon in the bottom-left or bottom-center of your screen) and then click the gear icon to open Settings. In Settings, click "Windows Update" from the left sidebar. On this page, you will see whether your computer is up to date or if updates are available.
+
+Click the "Check for updates" button. Windows will connect to Microsoft's servers and look for any available updates. This process takes a minute or two. If updates are found, they will begin downloading automatically. Some updates are small and install quickly, while others — especially feature updates — can take 30 minutes or more.
+
+After updates download, you may need to restart your computer to complete the installation. Windows will show a "Restart now" button, or you can schedule the restart for a time that works better for you by clicking "Schedule the restart" and picking a time when you will not be using the computer.
+
+You can also check your update history to see what has been installed recently. On the Windows Update page, click "Update history" to see a list of all recent updates, including security updates, driver updates, and feature updates.
+
+If an update fails to install, try checking for updates again — sometimes a second attempt succeeds. If it keeps failing, note the update number (it starts with KB followed by numbers) and search for it on Microsoft's support website for specific troubleshooting steps.
+
+Windows is set to download updates automatically by default. However, it is good practice to manually check at least once a month to make sure nothing was missed, especially if you do not leave your computer on overnight when automatic updates typically run.`,
+    steps: [
+      { title: 'Open Settings', content: 'Click the Start button (Windows icon) at the bottom of your screen, then click the gear icon to open Settings. You can also press the Windows key + I on your keyboard as a shortcut.' },
+      { title: 'Go to Windows Update', content: 'In the Settings window, click "Windows Update" in the left sidebar. This page shows your current update status and when updates were last checked.' },
+      { title: 'Click Check for updates', content: 'Click the "Check for updates" button. Windows will search for available updates. Wait a minute or two for the search to complete. Any found updates will begin downloading automatically.' },
+      { title: 'Install the updates', content: 'If updates are found, they will download and prepare for installation. Some install in the background while you work. Others require a restart — you will see a "Restart now" button when this is needed.' },
+      { title: 'Restart your computer', content: 'When prompted, save your work and click "Restart now." Your computer will restart and install the updates. This can take anywhere from a few minutes to 30 minutes depending on the size of the updates.' },
+      { title: 'Verify updates are installed', content: 'After restarting, go back to Settings then Windows Update. It should say "You are up to date." Click "Update history" to confirm the latest updates were installed successfully.' },
+    ],
+  },
+
+  {
+    slug: 'uninstall-programs-windows',
+    title: 'How to Uninstall Programs on Windows',
+    excerpt: 'Remove programs you no longer use from your Windows computer to free up storage space and keep things running smoothly.',
+    category: 'windows' as any,
+    tags: ['windows', 'uninstall', 'storage', 'programs', 'cleanup'],
+    readTime: '5 min',
+    thumbnailEmoji: '🗑️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Over time, your Windows computer accumulates programs you no longer use. These take up storage space and sometimes run background processes that slow down your computer. Uninstalling programs you do not need is one of the best ways to keep your computer running well.
+
+To uninstall a program, click the Start button and open Settings (the gear icon). Then click "Apps" in the left sidebar, and then "Installed apps." You will see a list of every program installed on your computer, along with how much space each one uses and when it was installed.
+
+You can sort this list by size to find the biggest programs, or by install date to find programs you installed recently. To uninstall a program, click the three dots (or the menu icon) next to the program name and select "Uninstall." A confirmation window will appear — click "Uninstall" again to confirm.
+
+Some programs have their own uninstaller that opens when you click uninstall. Follow the prompts in that window to complete the removal. Most will ask if you want to keep your settings or remove everything — if you do not plan to reinstall the program, choose to remove everything.
+
+Be careful about what you uninstall. Do not remove programs from your computer manufacturer (like Dell, HP, or Lenovo system tools) unless you know what they do. Do not remove Microsoft Visual C++ Redistributable packages or .NET Framework — these are required by other programs to function. If you are unsure about a program, search for its name online before removing it.
+
+After uninstalling programs, your computer may need a restart to fully complete the removal. You should also empty your Recycle Bin afterward by right-clicking its icon on the desktop and selecting "Empty Recycle Bin" to reclaim all the freed storage space.
+
+A good practice is to review your installed programs every few months and remove anything you have not used. This keeps your computer lean and helps it start up faster.`,
+    steps: [
+      { title: 'Open Settings', content: 'Click the Start button and then click the gear icon for Settings. You can also press Windows key + I on your keyboard.' },
+      { title: 'Navigate to Installed apps', content: 'Click "Apps" in the left sidebar, then click "Installed apps." A list of all programs on your computer will appear with their sizes and install dates.' },
+      { title: 'Find the program to remove', content: 'Scroll through the list or use the search bar at the top to find the program. You can also sort by size or date installed using the "Sort by" dropdown.' },
+      { title: 'Uninstall the program', content: 'Click the three-dot menu icon next to the program name and select "Uninstall." Click "Uninstall" again when asked to confirm. Follow any additional prompts from the program\'s own uninstaller.' },
+      { title: 'Restart if prompted', content: 'Some programs require a restart to fully remove. Save your work and restart your computer if Windows asks you to.' },
+      { title: 'Empty the Recycle Bin', content: 'Right-click the Recycle Bin icon on your desktop and select "Empty Recycle Bin." This permanently deletes the removed program files and frees up the storage space.' },
+    ],
+  },
+
+  {
+    slug: 'change-default-browser-windows',
+    title: 'How to Change Your Default Browser on Windows',
+    excerpt: 'Set Chrome, Firefox, or another browser as your default so all links and web pages open in the browser you prefer.',
+    category: 'windows' as any,
+    tags: ['windows', 'browser', 'default apps', 'chrome', 'firefox'],
+    readTime: '4 min',
+    thumbnailEmoji: '🌐',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `When you click a link in an email or document, Windows opens it in your default browser. Out of the box, that default is Microsoft Edge. If you prefer to use Google Chrome, Mozilla Firefox, or another browser, you can change this setting so all links automatically open in your preferred browser.
+
+First, make sure the browser you want to use is already installed on your computer. If you have not installed it yet, open Edge, go to the browser's website (like google.com/chrome or mozilla.org/firefox), download the installer, and run it.
+
+To change your default browser, open Settings by clicking the Start button and then the gear icon. Click "Apps" in the left sidebar, then click "Default apps." In the search bar at the top of the Default Apps page, type the name of the browser you want to use as your default — for example, "Chrome" or "Firefox."
+
+Click on the browser name when it appears in the search results. You will see a list of file types and link types that this browser can handle. At the top, there should be a "Set default" button — click it. This tells Windows to use this browser for opening web links, HTML files, and other web-related content.
+
+On Windows 11, you may need to change individual file types one by one. Click on each file type (like .htm, .html, .pdf) and select your preferred browser from the list. For the most important setting, make sure "HTTPS" and "HTTP" links are set to your chosen browser — these control what happens when you click web links.
+
+After making these changes, test by clicking a link in an email or document. It should now open in your preferred browser instead of Edge. If any links still open in Edge, go back to Default Apps and make sure all the link types are set correctly.
+
+Some browsers will ask you to set them as the default the first time you open them. You can use that prompt to go directly to the settings page, which saves a few steps.`,
+    steps: [
+      { title: 'Install your preferred browser', content: 'If you have not already, download and install the browser you want to use. Open Edge, go to the browser\'s website (google.com/chrome or mozilla.org/firefox), and follow the download instructions.' },
+      { title: 'Open Settings', content: 'Click the Start button and then click the gear icon for Settings, or press Windows key + I on your keyboard.' },
+      { title: 'Go to Default apps', content: 'Click "Apps" in the left sidebar, then click "Default apps." This page lets you choose which apps handle different types of files and links.' },
+      { title: 'Search for your browser', content: 'In the search bar at the top of the Default Apps page, type the name of your preferred browser (for example, "Chrome"). Click on the browser when it appears in the results.' },
+      { title: 'Set it as default', content: 'Click the "Set default" button at the top of the browser\'s page. On Windows 11, you may also need to click individual file types like .htm, .html, HTTP, and HTTPS and select your browser for each one.' },
+      { title: 'Test the change', content: 'Click any link in an email or document. It should now open in your newly selected default browser. If it still opens in Edge, return to Default Apps and verify all link types are assigned correctly.' },
+    ],
+  },
+
+  {
+    slug: 'create-user-account-windows',
+    title: 'How to Create a User Account on Windows',
+    excerpt: 'Add a new user account on your Windows computer so family members or guests can have their own login and personal settings.',
+    category: 'windows' as any,
+    tags: ['windows', 'user accounts', 'family', 'security', 'sharing'],
+    readTime: '6 min',
+    thumbnailEmoji: '👤',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `If multiple people use the same Windows computer, creating separate user accounts is the best way to keep everyone's files, settings, and desktop organized independently. Each person gets their own login, their own desktop background, their own browser bookmarks, and their own documents folder. One person's changes do not affect another person's experience.
+
+There are two types of accounts: Microsoft accounts and local accounts. A Microsoft account connects to an email address (like outlook.com or hotmail.com) and syncs settings across devices. A local account works only on that one computer and does not require an email address. For most family members, a Microsoft account is recommended because it enables features like password recovery and parental controls.
+
+To create a new account, open Settings by clicking the Start button and then the gear icon. Click "Accounts" in the left sidebar, then click "Other users" (or "Family & other users" on some versions). Under "Other users," click the "Add account" button.
+
+If the person has a Microsoft account (an Outlook, Hotmail, or Live email address), enter it and click Next. They will receive an email to verify the account. If they do not have a Microsoft account and you want to create a local account instead, click "I don't have this person's sign-in information," then click "Add a user without a Microsoft account." Enter a username and password for the new local account.
+
+By default, new accounts are created as "Standard Users," which means they can use the computer but cannot install programs or change system settings. This is appropriate for most family members and guests. If you need to give someone full control, you can change their account type to "Administrator" — but be cautious with this, as administrators can make changes that affect the entire computer.
+
+After creating the account, the new user can sign in from the Windows login screen by clicking their name and entering their password. The first time they sign in, Windows will set up their profile, which takes a few minutes. After that, they will have their own clean desktop and personal settings.`,
+    steps: [
+      { title: 'Open Settings', content: 'Click the Start button and then the gear icon for Settings. You can also press Windows key + I on your keyboard.' },
+      { title: 'Go to Accounts', content: 'Click "Accounts" in the left sidebar, then click "Other users" or "Family & other users." This page shows all user accounts on the computer.' },
+      { title: 'Click Add account', content: 'Under "Other users," click the "Add account" button. A window will appear asking for a Microsoft account email address.' },
+      { title: 'Choose account type', content: 'Enter a Microsoft email address if the person has one. For a local account without an email, click "I don\'t have this person\'s sign-in information" then "Add a user without a Microsoft account." Enter a username and password.' },
+      { title: 'Set the account type', content: 'New accounts default to "Standard User," which is appropriate for most people. To change it, click on the new account name, click "Change account type," and select Administrator if full access is needed.' },
+      { title: 'Have the new user sign in', content: 'At the Windows login screen, the new user clicks their name and enters their password. The first sign-in takes a few minutes while Windows sets up their personal profile and desktop.' },
+    ],
+  },
+
+  {
+    slug: 'use-windows-defender',
+    title: 'How to Use Windows Defender to Protect Your Computer',
+    excerpt: 'Windows Defender is free antivirus software built into Windows. Learn how to run scans and keep your computer protected.',
+    category: 'windows' as any,
+    tags: ['windows', 'security', 'antivirus', 'windows defender', 'malware'],
+    readTime: '6 min',
+    thumbnailEmoji: '🛡️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Windows Defender (also called Windows Security or Microsoft Defender) is free antivirus and security software that comes built into every Windows 10 and Windows 11 computer. It runs in the background, protecting you from viruses, malware, spyware, and other threats — and for most people, it provides all the protection you need without purchasing additional antivirus software.
+
+To open Windows Defender, click the Start button and type "Windows Security" in the search bar, then click on the Windows Security app. The main dashboard shows you an overview of your security status. Green check marks mean everything is good. Yellow or red indicators mean something needs your attention.
+
+The most important section is "Virus & threat protection." Click on it to see when your last scan was performed and whether any threats were found. Under "Current threats," you will see if anything suspicious has been detected. Windows Defender runs a quick scan automatically, but you can run a manual scan anytime by clicking "Quick scan." A quick scan checks the most common places where threats hide and takes about 5 to 10 minutes.
+
+For a more thorough check, click "Scan options" and select "Full scan." A full scan checks every file and program on your computer and can take an hour or more depending on how many files you have. Run a full scan if your computer is behaving strangely, if you recently downloaded something suspicious, or as a monthly maintenance step.
+
+Under "Virus & threat protection settings," click "Manage settings" to see your protection options. Make sure "Real-time protection" is turned on — this continuously monitors your computer and blocks threats as they appear. Also ensure "Cloud-delivered protection" and "Automatic sample submission" are turned on for the best detection rates.
+
+The "Firewall & network protection" section controls your Windows Firewall, which monitors internet traffic and blocks unauthorized connections. Make sure the firewall is turned on for all network types (Domain, Private, and Public). Do not turn off the firewall unless specifically instructed to do so by a trusted tech support professional.
+
+Windows Defender updates its virus definitions automatically through Windows Update. You do not need to manually update it, but you can click "Check for updates" in the Virus & threat protection page to ensure you have the latest definitions.`,
+    steps: [
+      { title: 'Open Windows Security', content: 'Click the Start button and type "Windows Security" in the search bar. Click the Windows Security app when it appears. The dashboard shows your overall protection status with green, yellow, or red indicators.' },
+      { title: 'Run a Quick scan', content: 'Click "Virus & threat protection" and then click the "Quick scan" button. The scan checks common threat locations and takes about 5 to 10 minutes. Any detected threats will be shown with options to remove them.' },
+      { title: 'Run a Full scan when needed', content: 'Under "Virus & threat protection," click "Scan options" and select "Full scan," then click "Scan now." This checks every file on your computer and takes an hour or more. Do this monthly or if you suspect a problem.' },
+      { title: 'Check your protection settings', content: 'In "Virus & threat protection," click "Manage settings." Make sure Real-time protection, Cloud-delivered protection, and Automatic sample submission are all turned on.' },
+      { title: 'Verify your firewall is on', content: 'Go back to the main Windows Security dashboard and click "Firewall & network protection." Make sure the firewall is turned on for Domain, Private, and Public networks.' },
+      { title: 'Remove any detected threats', content: 'If Windows Defender finds a threat, it will show options to Quarantine, Remove, or Allow. Choose "Remove" for confirmed threats. If unsure, choose "Quarantine" — this isolates the file without deleting it.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-windows-backup',
+    title: 'How to Set Up Windows Backup',
+    excerpt: 'Protect your important files by setting up automatic backups on your Windows computer using built-in backup tools.',
+    category: 'windows' as any,
+    tags: ['windows', 'backup', 'file protection', 'onedrive', 'recovery'],
+    readTime: '7 min',
+    thumbnailEmoji: '💾',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Backing up your computer means creating copies of your important files so you can recover them if something goes wrong — whether your hard drive fails, your computer gets a virus, or you accidentally delete something important. Windows has built-in backup tools that make this process straightforward once you set them up.
+
+Windows 11 offers two main backup approaches: OneDrive cloud backup and File History (for backing up to an external drive). Using both together gives you the strongest protection.
+
+For cloud backup with OneDrive, open Settings, click "Accounts," then "Windows backup." Here you will see options to back up your folders (Desktop, Documents, and Pictures) to OneDrive. Toggle on the folders you want to back up. Files in these folders will automatically sync to the cloud, meaning they are saved online in your Microsoft account. You get 5 GB of free OneDrive storage. If you need more, Microsoft 365 subscriptions include 1 TB of OneDrive storage.
+
+For local backup with File History, you need an external hard drive or USB drive. Plug in your external drive, then open Settings and go to "System" then "Storage" then "Advanced storage settings" then "Backup options." Under "Back up using File History," click "Add a drive" and select your external drive. Once set up, File History automatically saves copies of your files at regular intervals.
+
+You can customize how often File History runs and how long it keeps old copies. Click "More options" under File History to adjust these settings. Backing up every hour and keeping saved versions for at least 3 months is a good balance between protection and storage use.
+
+To restore files from a File History backup, open File Explorer, navigate to the folder where the file was, click the "Home" tab, and click "History." You can browse through previous versions of your files and restore the one you need.
+
+The most important rule of backups: they only protect you if they are running. Check your backup settings once a month to make sure everything is still working. If you use an external drive for File History, keep it plugged in or plug it in regularly so backups can run.`,
+    steps: [
+      { title: 'Set up OneDrive cloud backup', content: 'Open Settings, click "Accounts," then "Windows backup." Toggle on Desktop, Documents, and Pictures to back up these folders to OneDrive automatically. You get 5 GB free with your Microsoft account.' },
+      { title: 'Connect an external drive', content: 'Plug a USB external hard drive into your computer. This drive will store local backup copies of your files using File History.' },
+      { title: 'Enable File History', content: 'Go to Settings then System then Storage then Advanced storage settings then Backup options. Click "Add a drive" and select your external hard drive. File History will begin backing up your files.' },
+      { title: 'Customize backup frequency', content: 'Click "More options" under File History settings. Set how often backups run (every hour is recommended) and how long old versions are kept (at least 3 months). You can also choose which folders to include.' },
+      { title: 'Test restoring a file', content: 'Open File Explorer, navigate to any folder, click the "Home" tab, and click "History." Browse through saved versions of your files to confirm the backup is working. Select a file and click the green restore button to bring it back.' },
+      { title: 'Check backups monthly', content: 'Once a month, open your backup settings and verify that backups are running. If using an external drive, make sure it is still connected and has available storage space.' },
+    ],
+  },
+
+  {
+    slug: 'use-snipping-tool-windows',
+    title: 'How to Use the Snipping Tool on Windows',
+    excerpt: 'Capture screenshots of your screen or specific areas using the Snipping Tool built into Windows — no extra software needed.',
+    category: 'windows' as any,
+    tags: ['windows', 'screenshots', 'snipping tool', 'screen capture', 'productivity'],
+    readTime: '5 min',
+    thumbnailEmoji: '✂️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `The Snipping Tool lets you capture pictures of anything on your screen — the whole screen, a specific window, or a custom area you draw with your mouse. It is built into Windows 10 and Windows 11, so you do not need to download anything. Screenshots are useful for saving information, sharing what you see with others, or documenting error messages when you need tech support.
+
+The fastest way to open the Snipping Tool is to press Windows key + Shift + S on your keyboard. Your screen will dim slightly, and a small toolbar will appear at the top of the screen with four capture options: rectangular snip, freeform snip, window snip, and full-screen snip.
+
+Rectangular snip is the most commonly used option. Click and drag your mouse to draw a rectangle around the area you want to capture. As soon as you release the mouse button, the screenshot is copied to your clipboard and a notification appears in the bottom-right corner of your screen. Click the notification to open the Snipping Tool editor where you can annotate, highlight, or save the image.
+
+Window snip captures an entire window — hover your mouse over the window you want and click on it. Full-screen snip captures your entire screen at once. Freeform snip lets you draw any shape around the area you want to capture, though this is rarely needed.
+
+After capturing a snip, you can paste it directly into an email, document, or message by pressing Ctrl + V. The screenshot is stored on your clipboard, ready to paste. If you want to save it as a file, click the notification that appears after snipping, then click the save icon (the floppy disk) in the Snipping Tool editor. Choose where to save it and give it a name.
+
+You can also open the Snipping Tool as a standalone app by clicking the Start button and typing "Snipping Tool." The app version lets you set a delay before capturing (useful for capturing dropdown menus or tooltips that disappear when you click away) and includes basic markup tools for adding notes and highlights to your screenshots.`,
+    steps: [
+      { title: 'Open the Snipping Tool', content: 'Press Windows key + Shift + S on your keyboard. Your screen will dim and a toolbar will appear at the top with four capture modes. You can also search for "Snipping Tool" in the Start menu.' },
+      { title: 'Choose a capture mode', content: 'Select the type of snip from the toolbar: Rectangular (drag to select an area), Window (click a window), Full-screen (captures everything), or Freeform (draw any shape). Rectangular is the most common choice.' },
+      { title: 'Capture the screenshot', content: 'For a rectangular snip, click and drag your mouse to draw a rectangle around the area you want. Release the mouse button to capture. A notification will appear in the bottom-right corner.' },
+      { title: 'Edit or annotate the screenshot', content: 'Click the notification to open the Snipping Tool editor. Use the pen and highlighter tools to mark up the screenshot. You can add text, draw arrows, or highlight important areas.' },
+      { title: 'Save or share the screenshot', content: 'To save as a file, click the save icon (floppy disk) and choose a location. To paste directly into an email or document, press Ctrl + V — the screenshot is already on your clipboard.' },
+      { title: 'Use the delay feature for menus', content: 'Open the Snipping Tool app from the Start menu. Click the clock icon to set a 3, 5, or 10 second delay before capture. This gives you time to open a menu or tooltip before the screenshot is taken.' },
+    ],
+  },
+
+  {
+    slug: 'pin-apps-to-taskbar-windows',
+    title: 'How to Pin Apps to the Taskbar on Windows',
+    excerpt: 'Keep your most-used programs on the Windows taskbar at the bottom of your screen for quick one-click access anytime.',
+    category: 'windows' as any,
+    tags: ['windows', 'taskbar', 'shortcuts', 'productivity', 'customization'],
+    readTime: '4 min',
+    thumbnailEmoji: '📌',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `The taskbar is the bar that runs along the bottom of your Windows screen. It shows the programs that are currently running and can also hold shortcuts to your favorite apps so you can open them with one click — without searching through the Start menu. Pinning your most-used apps to the taskbar is one of the quickest ways to customize your computer and save time.
+
+To pin an app that is currently open and running, right-click its icon in the taskbar. A small menu will appear — click "Pin to taskbar." The app's icon will stay in the taskbar even after you close the program, ready for you to open it again with a single click.
+
+To pin an app from the Start menu, click the Start button and find the app in your list of programs. Right-click the app's name and select "Pin to taskbar." The app's icon will appear in the taskbar. You can do this for any app — your web browser, email, word processor, photo viewer, or anything else you use regularly.
+
+You can rearrange the order of pinned apps by clicking and dragging their icons left or right along the taskbar. Put your most frequently used apps on the left side where they are closest to the Start button and most visible.
+
+To remove a pinned app from the taskbar (without uninstalling it from your computer), right-click its icon in the taskbar and select "Unpin from taskbar." The icon will disappear from the taskbar, but the program remains installed on your computer and available in the Start menu.
+
+A good approach is to pin 5 to 8 of your most-used apps. Common choices include your web browser, email app, File Explorer (for managing files), Settings, and any apps you use daily. Having too many pinned apps can make the taskbar crowded and defeat the purpose of quick access.`,
+    steps: [
+      { title: 'Pin an open app', content: 'With the app running, look for its icon in the taskbar at the bottom of your screen. Right-click the icon and select "Pin to taskbar." It will stay there even after you close the app.' },
+      { title: 'Pin an app from the Start menu', content: 'Click the Start button and find the app in your list of programs. Right-click the app name and select "Pin to taskbar." The icon will appear in the taskbar.' },
+      { title: 'Rearrange pinned apps', content: 'Click and hold any pinned app icon in the taskbar, then drag it left or right to change its position. Place your most-used apps toward the left for quick access.' },
+      { title: 'Unpin an app you no longer need', content: 'Right-click the app icon in the taskbar and select "Unpin from taskbar." This removes the shortcut but does not uninstall the app from your computer.' },
+      { title: 'Choose your essential apps', content: 'Pin 5 to 8 of your most-used apps. Common choices include your web browser, email, File Explorer, and any apps you open daily. Too many pinned apps makes the taskbar cluttered.' },
+      { title: 'Find pinned apps quickly', content: 'Your pinned apps are always visible in the taskbar. Click once on any pinned icon to open the app. If the app is already open, clicking its icon brings it to the front of your screen.' },
+    ],
+  },
+
+  {
+    slug: 'customize-start-menu-windows',
+    title: 'How to Customize the Start Menu on Windows',
+    excerpt: 'Organize your Windows Start menu by pinning your favorite apps, removing clutter, and arranging everything how you want it.',
+    category: 'windows' as any,
+    tags: ['windows', 'start menu', 'customization', 'organization', 'productivity'],
+    readTime: '5 min',
+    thumbnailEmoji: '🪟',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `The Start menu is the gateway to everything on your Windows computer. When you click the Start button (the Windows icon at the bottom of your screen), you see a menu with pinned apps, recommended files, and a list of all your programs. Customizing this menu so it shows what you actually use makes your computer much more pleasant to work with.
+
+In Windows 11, the Start menu has two main sections: "Pinned" at the top (showing app icons you have pinned there) and "Recommended" at the bottom (showing recently opened files and apps). You can pin any app to the Start menu by right-clicking it in the All Apps list and selecting "Pin to Start."
+
+To remove an app from the pinned section, right-click its icon in the Start menu and select "Unpin from Start." This does not uninstall the app — it only removes it from the pinned area. The app remains available in the All Apps list.
+
+You can rearrange pinned apps by clicking and dragging them to different positions. Group related apps together — for example, put all your communication apps (email, video calling, messaging) near each other and all your productivity apps (word processor, spreadsheet, calendar) together.
+
+To change how much space the Start menu gives to pinned apps versus recommendations, go to Settings then Personalization then Start. Here you can choose "More pins" to show more pinned apps, "More recommendations" to show more recent files, or "Default" for a balanced view. If you do not find the Recommended section useful, choose "More pins" to maximize your pinned app space.
+
+You can also control which folders appear next to the power button at the bottom of the Start menu. Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other locations you access frequently. These small icons appear at the bottom of the Start menu and give you one-click access to important folders.
+
+The Start menu also includes a search bar. If you cannot find an app, start typing its name in the search bar and it will appear in the results. This is often faster than scrolling through the All Apps list.`,
+    steps: [
+      { title: 'Pin apps to the Start menu', content: 'Click the Start button and then click "All apps." Find the app you want to pin, right-click it, and select "Pin to Start." The app icon will appear in the Pinned section of the Start menu.' },
+      { title: 'Unpin apps you do not use', content: 'In the Start menu, right-click any pinned app you do not need and select "Unpin from Start." This removes it from the pinned area but does not uninstall it from your computer.' },
+      { title: 'Rearrange your pinned apps', content: 'Click and drag pinned app icons to rearrange them. Group related apps together — communication apps in one area, productivity tools in another — so they are organized logically.' },
+      { title: 'Adjust the Start menu layout', content: 'Go to Settings then Personalization then Start. Choose "More pins" to see more app icons, "More recommendations" for recent files, or "Default" for a balanced view.' },
+      { title: 'Add folder shortcuts', content: 'Go to Settings then Personalization then Start then Folders. Toggle on shortcuts for Settings, File Explorer, Documents, Downloads, and other frequently used locations. These appear as small icons at the bottom of the Start menu.' },
+      { title: 'Use search to find anything', content: 'Click the Start button and start typing the name of any app, setting, or file. The search bar shows results instantly, making it the fastest way to find anything on your computer.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════
+  // MAC ADVANCED (10 guides)
+  // ═══════════════════════════════════════════
+
+  {
+    slug: 'use-activity-monitor-mac',
+    title: 'How to Use Activity Monitor on Mac',
+    excerpt: 'Check which apps are using the most resources on your Mac and close unresponsive programs using Activity Monitor.',
+    category: 'mac' as any,
+    tags: ['mac', 'activity monitor', 'performance', 'troubleshooting', 'memory'],
+    readTime: '6 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Activity Monitor is the Mac equivalent of Task Manager on Windows. It shows you every process running on your Mac, how much CPU (processing power) and memory each one uses, and lets you force-close apps that have become unresponsive. It is a built-in tool that every Mac owner should know how to use.
+
+To open Activity Monitor, click the magnifying glass icon in the top-right corner of your screen (Spotlight Search) and type "Activity Monitor." Click the app when it appears in the search results. Alternatively, you can find it in your Applications folder under Utilities: open Finder, click Applications, then Utilities, then Activity Monitor.
+
+When Activity Monitor opens, you will see five tabs across the top: CPU, Memory, Energy, Disk, and Network. The CPU tab shows which apps and processes are using your processor. If your Mac is running slowly, look for any process using a very high percentage of CPU. The Memory tab shows how much RAM each app is using. If the "Memory Pressure" graph at the bottom is yellow or red, your Mac is running low on memory and you should close some apps.
+
+To close an unresponsive app, find it in the list, click on it to select it, and then click the "X" button in the upper-left corner of the Activity Monitor window (the octagonal stop sign icon). A dialog will ask if you want to "Quit" or "Force Quit." Try "Quit" first. If the app does not close, click "Force Quit" to force it to shut down immediately.
+
+The Energy tab is particularly useful for laptop users. It shows which apps are using the most battery power. If your MacBook's battery is draining faster than expected, check this tab to find energy-hungry apps and close them when you do not need them.
+
+You can sort any column by clicking its header. Click "% CPU" to see which processes use the most processor power, or click "Memory" to sort by RAM usage. This helps you quickly identify which apps are slowing down your computer.
+
+Be careful about force-quitting processes you do not recognize. Many background processes are required by macOS to run properly. If you are unsure about a process, search for its name online before closing it. Processes that start with "com.apple" are part of the Mac operating system and should generally be left alone.`,
+    steps: [
+      { title: 'Open Activity Monitor', content: 'Click the magnifying glass (Spotlight) in the top-right corner of your screen and type "Activity Monitor." Click the app to open it. You will see a list of all running processes.' },
+      { title: 'Check the CPU tab', content: 'The CPU tab shows which apps are using your processor. Click the "% CPU" column header to sort by usage. Look for any app using an unusually high percentage — this may be causing your Mac to slow down.' },
+      { title: 'Check the Memory tab', content: 'Click the "Memory" tab to see RAM usage. Look at the "Memory Pressure" graph at the bottom. Green means you are fine. Yellow or red means your Mac needs you to close some apps.' },
+      { title: 'Force-close an unresponsive app', content: 'Select the frozen app in the list, then click the octagonal "X" button in the upper-left corner of the window. Try "Quit" first, and if that does not work, click "Force Quit."' },
+      { title: 'Check the Energy tab', content: 'Click the "Energy" tab to see which apps use the most battery power on a MacBook. Close energy-hungry apps you are not actively using to extend your battery life.' },
+      { title: 'Use Activity Monitor for troubleshooting', content: 'Whenever your Mac feels slow, open Activity Monitor and sort by CPU or Memory to find the culprit. If a process you do not recognize is using a lot of resources, search for its name online before closing it.' },
+    ],
+  },
+
+  {
+    slug: 'use-time-machine-backup-mac',
+    title: 'How to Use Time Machine Backup on Mac',
+    excerpt: 'Set up Time Machine to automatically back up your Mac so you can restore files or your entire system if something goes wrong.',
+    category: 'mac' as any,
+    tags: ['mac', 'time machine', 'backup', 'data protection', 'recovery'],
+    readTime: '7 min',
+    thumbnailEmoji: '⏰',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Time Machine is Apple's built-in backup tool that automatically saves copies of everything on your Mac — your files, photos, music, apps, and system settings. If you accidentally delete a file, your hard drive fails, or you need to set up a new Mac, Time Machine lets you restore everything exactly as it was.
+
+To use Time Machine, you need an external hard drive or a network-attached storage (NAS) device. An external USB hard drive with at least twice the storage capacity of your Mac's internal drive is recommended. For example, if your Mac has 256 GB of storage, get an external drive with at least 512 GB. External drives designed for Mac backup are widely available and affordable.
+
+To set up Time Machine, plug in your external hard drive. Your Mac may ask if you want to use the drive for Time Machine — click "Use as Backup Disk." If it does not ask, go to System Settings (click the Apple menu in the top-left corner, then System Settings), click "General" in the sidebar, then click "Time Machine." Click the "+" button to add your external drive as a backup disk.
+
+Once set up, Time Machine runs automatically in the background. It creates hourly backups for the past 24 hours, daily backups for the past month, and weekly backups for everything older. When the external drive gets full, Time Machine automatically deletes the oldest backups to make room for new ones.
+
+To restore a deleted or changed file, open the folder where the file was located, then click the Time Machine icon in the menu bar and select "Browse Time Machine Backups." You will see a visual timeline on the right side of the screen. Use the arrows or timeline to go back in time. When you find the file you want, select it and click "Restore."
+
+If you need to restore your entire Mac (for example, after replacing a hard drive or setting up a new Mac), restart your computer and hold down Command + R to enter Recovery Mode. From there, select "Restore from Time Machine Backup" and follow the on-screen instructions.
+
+Keep your Time Machine drive connected whenever possible. If you use a desktop Mac, leave it plugged in all the time. If you use a MacBook, plug it in regularly — at least once a week — so Time Machine can run its backups.`,
+    steps: [
+      { title: 'Get an external hard drive', content: 'Purchase an external USB hard drive with at least twice the storage of your Mac. If your Mac has 256 GB, get a 512 GB or larger external drive. Plug it into your Mac.' },
+      { title: 'Set up Time Machine', content: 'When your Mac asks if you want to use the drive for Time Machine, click "Use as Backup Disk." If it does not ask, go to System Settings then General then Time Machine and click the "+" button to add the drive.' },
+      { title: 'Let the first backup complete', content: 'The first backup copies everything on your Mac and may take several hours depending on how much data you have. Let it run to completion without unplugging the drive.' },
+      { title: 'Keep the drive connected', content: 'Time Machine backs up automatically every hour when the external drive is connected. For desktop Macs, leave it plugged in. For MacBooks, connect it regularly — at least once a week.' },
+      { title: 'Restore individual files', content: 'To recover a deleted file, open the folder where it was, click the Time Machine icon in the menu bar, and select "Browse Time Machine Backups." Navigate back in time, select the file, and click "Restore."' },
+      { title: 'Verify backups are running', content: 'Click the Time Machine icon in the menu bar to see when the last backup was completed. If backups have not run recently, check that your external drive is connected and has available space.' },
+    ],
+  },
+
+  {
+    slug: 'install-apps-outside-app-store-mac',
+    title: 'How to Install Apps Outside the App Store on Mac',
+    excerpt: 'Download and install Mac apps from the internet when they are not available in the App Store, while staying safe.',
+    category: 'mac' as any,
+    tags: ['mac', 'apps', 'installation', 'gatekeeper', 'security'],
+    readTime: '6 min',
+    thumbnailEmoji: '📦',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `The Mac App Store has thousands of apps, but many popular programs — like Google Chrome, Zoom, Microsoft Office, and others — need to be downloaded directly from their developer's website. macOS includes a security feature called Gatekeeper that protects you from installing malicious software, but you need to know how to work with it properly when installing legitimate apps from the internet.
+
+To install an app from outside the App Store, first go to the developer's official website using your web browser. For example, to install Google Chrome, go to google.com/chrome. Look for a download button and click it. The file will download to your Downloads folder and will typically be a .dmg file (disk image) or a .pkg file (installer package).
+
+For .dmg files: Double-click the downloaded file to open it. A window will appear showing the app icon and usually an arrow pointing to the Applications folder. Drag the app icon to the Applications folder to install it. Then close the window and eject the disk image by right-clicking it on your desktop and selecting "Eject." The app is now in your Applications folder and ready to use.
+
+For .pkg files: Double-click the downloaded file to run the installer. Follow the on-screen prompts, clicking "Continue" and "Install" when asked. You may need to enter your Mac's password to authorize the installation.
+
+When you open an app downloaded from the internet for the first time, macOS may show a warning saying the app "cannot be opened because it is from an unidentified developer" or that it "was downloaded from the internet." This is Gatekeeper protecting you. To open the app, right-click (or Control-click) the app icon and select "Open" from the menu. A new dialog will appear with an "Open" button — click it. You only need to do this the first time you open the app.
+
+If you get a message that the app "is damaged and can't be opened," this often means the app is from a developer that Apple has not verified. Go to System Settings, click "Privacy & Security," and scroll down to the "Security" section. You may see a message about the blocked app with an "Open Anyway" button. Click it to allow the app.
+
+Stay safe by only downloading apps from official developer websites. Avoid downloading software from unfamiliar third-party sites, as these may include malware or unwanted bundled programs. When in doubt, search for the app's official website and download directly from there.`,
+    steps: [
+      { title: 'Download from the official website', content: 'Open your web browser and go to the app developer\'s official website. Click the download button. The file will save to your Downloads folder as a .dmg or .pkg file.' },
+      { title: 'Open a .dmg file', content: 'Double-click the .dmg file in your Downloads folder. A window will appear with the app icon and an arrow pointing to Applications. Drag the app icon to the Applications folder.' },
+      { title: 'Run a .pkg installer', content: 'For .pkg files, double-click the file and follow the on-screen prompts. Click "Continue" and "Install" when asked. Enter your Mac password if prompted.' },
+      { title: 'Handle the Gatekeeper warning', content: 'The first time you open the app, macOS may warn you it was downloaded from the internet. Right-click (or Control-click) the app and select "Open." Click "Open" again in the dialog that appears.' },
+      { title: 'Eject and clean up', content: 'After installing from a .dmg file, right-click the disk image icon on your desktop and select "Eject." You can also delete the .dmg or .pkg file from your Downloads folder to free up space.' },
+      { title: 'Stay safe with downloads', content: 'Only download apps from official developer websites. Avoid third-party download sites that may bundle unwanted software. If an app seems suspicious, do not install it — search online for reviews first.' },
+    ],
+  },
+
+  {
+    slug: 'customize-dock-mac',
+    title: 'How to Customize the Dock on Mac',
+    excerpt: 'Add, remove, and rearrange apps on your Mac Dock to keep your most-used programs within one-click reach at all times.',
+    category: 'mac' as any,
+    tags: ['mac', 'dock', 'customization', 'shortcuts', 'productivity'],
+    readTime: '5 min',
+    thumbnailEmoji: '🖥️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `The Dock is the row of app icons that appears at the bottom (or side) of your Mac's screen. It gives you one-click access to your most-used apps and shows which apps are currently running (indicated by a small dot beneath the icon). Customizing your Dock so it contains only the apps you use regularly makes your Mac faster and more pleasant to work with.
+
+To add an app to the Dock, open Finder, click "Applications" in the sidebar, find the app you want, and drag its icon down to the Dock. You can also add a currently running app by right-clicking its icon in the Dock and selecting "Options" then "Keep in Dock."
+
+To remove an app from the Dock, click and drag its icon out of the Dock toward the center of your screen. Hold it there for a moment until you see the word "Remove" appear, then release. The icon will disappear with a small poof animation. This does not delete or uninstall the app — it only removes the shortcut from your Dock. The app is still available in your Applications folder.
+
+You can rearrange apps in the Dock by clicking and dragging them left or right to new positions. The Dock has a divider line (a thin vertical line) that separates apps on the left from folders and files on the right. You can drag folders (like Downloads or Documents) to the right side of this divider for quick access.
+
+To change the Dock's size, go to System Settings (click the Apple menu, then System Settings), click "Desktop & Dock." Use the "Size" slider to make the Dock icons larger or smaller. You can also turn on "Magnification," which makes Dock icons grow larger when you hover your mouse over them — helpful if you prefer a small Dock but want to see icons clearly.
+
+You can also change where the Dock appears on your screen. In the Desktop & Dock settings, find "Position on screen" and choose Bottom, Left, or Right. Most people keep it at the bottom, but placing it on the left or right side gives you more vertical screen space, which is useful on smaller screens.
+
+If you find the Dock distracting, turn on "Automatically hide and show the Dock." When enabled, the Dock hides off-screen until you move your mouse to the edge where it is positioned. This gives you full use of your screen while still having quick access to the Dock when you need it.`,
+    steps: [
+      { title: 'Add an app to the Dock', content: 'Open Finder and click Applications. Find the app you want and drag its icon to the Dock at the bottom of your screen. You can also right-click a running app in the Dock and select Options then Keep in Dock.' },
+      { title: 'Remove an app from the Dock', content: 'Click and drag the app icon out of the Dock toward the center of your screen. Hold it until "Remove" appears, then release. The app is not uninstalled — only the Dock shortcut is removed.' },
+      { title: 'Rearrange Dock icons', content: 'Click and drag any app icon left or right to change its position in the Dock. Place your most frequently used apps where they are most accessible to you.' },
+      { title: 'Change Dock size', content: 'Go to System Settings then Desktop & Dock. Use the "Size" slider to adjust icon size. Turn on "Magnification" if you want icons to enlarge when you hover over them.' },
+      { title: 'Move the Dock position', content: 'In Desktop & Dock settings, find "Position on screen" and choose Bottom, Left, or Right. Placing the Dock on the side gives you more vertical space on your screen.' },
+      { title: 'Auto-hide the Dock', content: 'In Desktop & Dock settings, toggle on "Automatically hide and show the Dock." The Dock will hide when not in use and reappear when you move your mouse to the screen edge.' },
+    ],
+  },
+
+  {
+    slug: 'use-spotlight-search-mac',
+    title: 'How to Use Spotlight Search on Mac',
+    excerpt: 'Find apps, files, emails, and information on your Mac in seconds using Spotlight Search — the fastest way to find anything.',
+    category: 'mac' as any,
+    tags: ['mac', 'spotlight', 'search', 'productivity', 'finder'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔍',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Spotlight Search is one of the most powerful features on your Mac. It lets you find anything — apps, documents, emails, photos, system settings, dictionary definitions, and even do math calculations — all from one search bar. Once you start using Spotlight regularly, you may never go back to digging through folders to find things.
+
+To open Spotlight, press Command + Space on your keyboard. A search bar will appear in the center of your screen. Start typing what you are looking for. Results appear instantly as you type.
+
+To open an app, type the first few letters of its name. For example, type "saf" and Safari will appear as the top result. Press Enter to open it. This is often faster than clicking through the Dock or Applications folder, especially for apps you use less frequently.
+
+To find a file or document, type its name or part of its name. Spotlight searches file names, folder names, and even the text inside documents. If you remember that a document contained the phrase "vacation planning," type that into Spotlight and it will find any document containing those words.
+
+Spotlight can also do quick calculations and conversions. Type a math problem like "145 * 3" and the answer appears immediately. Type "50 USD in EUR" to convert currencies. Type "68 degrees Fahrenheit in Celsius" for temperature conversions. Type "5 miles in kilometers" for distance conversions.
+
+You can search for system settings too. If you want to change your display brightness, type "display" into Spotlight, and the Display settings option will appear. Click it to go directly to that settings page. This saves you from navigating through multiple menus in System Settings.
+
+Spotlight also searches your email, messages, contacts, calendar events, and web results. If you search for a person's name, it will show you their contact card, recent emails from them, and upcoming calendar events with them.
+
+To customize what Spotlight searches, go to System Settings then Spotlight (or Siri & Spotlight). You can uncheck categories you do not want to appear in search results. For example, if you never want to see web results in Spotlight, uncheck "Siri Suggestions" or "Websites."`,
+    steps: [
+      { title: 'Open Spotlight', content: 'Press Command + Space on your keyboard. A search bar will appear in the center of your screen. You can also click the magnifying glass icon in the top-right corner of the menu bar.' },
+      { title: 'Search for apps', content: 'Type the first few letters of any app name and press Enter to open it. For example, type "pho" to find Photos, or "cal" to find Calendar. This is the fastest way to launch apps.' },
+      { title: 'Find files and documents', content: 'Type a file name or words you remember being in the document. Spotlight searches both file names and content inside documents. Click on a result to open it, or press Command + Enter to show it in Finder.' },
+      { title: 'Do calculations and conversions', content: 'Type math problems like "250 / 4" for instant answers. Type "100 USD in GBP" for currency conversion, or "5 miles in km" for unit conversions. Results appear right in the search bar.' },
+      { title: 'Search for settings', content: 'Type the name of any system setting, like "Wi-Fi," "display," or "keyboard." Spotlight shows the matching settings page so you can click to go directly there.' },
+      { title: 'Customize Spotlight categories', content: 'Go to System Settings then Siri & Spotlight. Uncheck any categories you do not want in search results. This keeps Spotlight focused on the types of results most useful to you.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-multiple-desktops-mac',
+    title: 'How to Set Up Multiple Desktops on Mac',
+    excerpt: 'Create separate desktops (Spaces) on your Mac to organize your work — one for email, one for browsing, one for documents.',
+    category: 'mac' as any,
+    tags: ['mac', 'spaces', 'desktops', 'multitasking', 'organization'],
+    readTime: '5 min',
+    thumbnailEmoji: '🖥️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `If your Mac screen gets cluttered with too many open windows, multiple desktops (called Spaces on Mac) can help. Spaces let you create separate virtual desktops — for example, one for work with your email and documents, another for web browsing, and a third for personal tasks. You switch between them with a swipe or keyboard shortcut, keeping each workspace clean and focused.
+
+To see your current desktops, swipe up with three fingers on your trackpad (or press Control + Up Arrow on your keyboard). This opens Mission Control, which shows all your open windows and your desktop spaces as thumbnails across the top of the screen.
+
+To create a new desktop, move your mouse to the top-right corner of the Mission Control view. A "+" button will appear. Click it to add a new desktop. You can create as many desktops as you need, though 2 to 4 is typical for most people.
+
+To move a window to a different desktop, open Mission Control (three-finger swipe up or Control + Up Arrow). Then click and drag any window from the center of the screen up to the desktop thumbnail where you want it. Release the window to move it to that desktop.
+
+To switch between desktops, swipe left or right with three fingers on your trackpad. You can also press Control + Left Arrow or Control + Right Arrow on your keyboard. Each swipe takes you to the next desktop, and the transition is smooth enough that it feels like sliding between screens.
+
+You can assign specific apps to always open on a particular desktop. Right-click (or Control-click) an app icon in the Dock, go to "Options," and under "Assign To," choose a specific desktop. For example, you can set Mail to always appear on Desktop 2, so whenever you click its icon, it takes you to that desktop.
+
+To remove a desktop you no longer need, open Mission Control and hover over the desktop thumbnail you want to remove. An "X" button will appear in its corner. Click it to close that desktop. Any windows on that desktop will move to an adjacent desktop — nothing is lost.
+
+Multiple desktops work particularly well when paired with full-screen apps. Open an app in full screen (by clicking the green button in the top-left corner of any window), and it automatically becomes its own separate Space that you can swipe to.`,
+    steps: [
+      { title: 'Open Mission Control', content: 'Swipe up with three fingers on your trackpad, or press Control + Up Arrow on your keyboard. You will see all open windows and desktop thumbnails across the top of the screen.' },
+      { title: 'Create a new desktop', content: 'In Mission Control, move your mouse to the top-right corner of the screen. Click the "+" button that appears to create a new desktop. Repeat to create additional desktops.' },
+      { title: 'Move windows between desktops', content: 'In Mission Control, drag any window from the center of the screen up to the desktop thumbnail where you want it. Release the window to place it on that desktop.' },
+      { title: 'Switch between desktops', content: 'Swipe left or right with three fingers on your trackpad, or press Control + Left/Right Arrow on your keyboard. Each swipe moves you to the adjacent desktop.' },
+      { title: 'Assign apps to specific desktops', content: 'Right-click an app icon in the Dock, go to Options, and choose "Assign To" to select a specific desktop. That app will always open on the chosen desktop.' },
+      { title: 'Remove a desktop', content: 'Open Mission Control, hover over the desktop thumbnail you want to remove, and click the "X" button. Windows from that desktop will move to an adjacent one.' },
+    ],
+  },
+
+  {
+    slug: 'force-quit-apps-mac',
+    title: 'How to Force Quit Apps on Mac',
+    excerpt: 'When an app freezes and stops responding on your Mac, use Force Quit to close it without restarting your entire computer.',
+    category: 'mac' as any,
+    tags: ['mac', 'force quit', 'frozen apps', 'troubleshooting', 'unresponsive'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔴',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Sometimes an app on your Mac stops responding — the spinning rainbow wheel appears, and the app will not react to your clicks or keyboard input. When this happens, you do not need to restart your entire computer. Instead, you can force-quit the unresponsive app and continue using your Mac normally.
+
+The quickest way to force-quit an app is to press Command + Option + Esc on your keyboard. This opens the Force Quit Applications window, which lists all currently running apps. Find the unresponsive app (it may say "Not Responding" next to its name), click on it to select it, and then click the "Force Quit" button. Confirm by clicking "Force Quit" again in the dialog that appears.
+
+You can also force-quit from the Apple menu. Click the Apple icon in the top-left corner of your screen and select "Force Quit." This opens the same Force Quit Applications window.
+
+A third method is to right-click (or Control-click) the app's icon in the Dock while holding down the Option key on your keyboard. The menu option will change from "Quit" to "Force Quit." Click "Force Quit" to close the app immediately.
+
+After force-quitting an app, wait a few seconds and then reopen it. In most cases, the app will work normally after being restarted. If the app was working on an unsaved document, you may lose recent changes — many apps (like Pages, Numbers, and TextEdit) have auto-save features that recover most of your work, but not all apps do.
+
+If an app freezes repeatedly, it may indicate a problem. Try updating the app to the latest version from the App Store or the developer's website. You can also try deleting the app and reinstalling it. If the problem persists, check the app's support website or forums for known issues.
+
+Force-quit should be a last resort — always try closing the app normally first (Command + Q). Give a slow app a minute or two before force-quitting, as it may be processing something that takes time. But if the rainbow wheel spins for more than a couple of minutes and the app is truly frozen, force-quit is the right move.`,
+    steps: [
+      { title: 'Use the keyboard shortcut', content: 'Press Command + Option + Esc on your keyboard. The Force Quit Applications window will open showing all running apps.' },
+      { title: 'Select the unresponsive app', content: 'Find the frozen app in the list — it may say "Not Responding" next to its name. Click on it to select it.' },
+      { title: 'Click Force Quit', content: 'Click the "Force Quit" button at the bottom of the window. Confirm by clicking "Force Quit" again in the dialog that appears. The app will close immediately.' },
+      { title: 'Alternative: Use the Apple menu', content: 'Click the Apple icon in the top-left corner of your screen and select "Force Quit" to open the same Force Quit Applications window.' },
+      { title: 'Alternative: Use the Dock', content: 'Hold down the Option key on your keyboard, then right-click (or Control-click) the frozen app\'s icon in the Dock. Select "Force Quit" from the menu that appears.' },
+      { title: 'Reopen the app', content: 'Wait a few seconds after force-quitting, then reopen the app. It should work normally. If it freezes again, try updating or reinstalling the app.' },
+    ],
+  },
+
+  {
+    slug: 'use-airdrop-mac-iphone',
+    title: 'How to Share Files Between Mac and iPhone (AirDrop)',
+    excerpt: 'Transfer photos, documents, and files wirelessly between your Mac and iPhone using AirDrop — no cables or email needed.',
+    category: 'mac' as any,
+    tags: ['mac', 'iphone', 'airdrop', 'file sharing', 'wireless transfer'],
+    readTime: '5 min',
+    thumbnailEmoji: '📲',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `AirDrop is Apple's built-in wireless file transfer feature. It lets you send photos, documents, videos, web links, and other files between your Mac and iPhone (or between any Apple devices) without cables, email, or cloud storage. Files transfer directly between devices using a combination of Wi-Fi and Bluetooth, and the transfer is fast — even large files take only a few seconds.
+
+To use AirDrop, both devices need to have Wi-Fi and Bluetooth turned on (they do not need to be connected to the same Wi-Fi network — AirDrop creates its own direct connection). On your iPhone, open Control Center by swiping down from the top-right corner and make sure both Wi-Fi and Bluetooth icons are blue (turned on). On your Mac, click the Wi-Fi and Bluetooth icons in the menu bar to confirm they are on.
+
+To send a file from your iPhone to your Mac: Open the file you want to share (a photo, document, or web page). Tap the Share button (the square with an upward arrow). Look for AirDrop in the sharing options and tap it. Your Mac should appear as an available device — tap its icon. On your Mac, you will see a notification asking you to accept the file. Click "Accept" and the file will transfer immediately. Photos go to your Downloads folder by default.
+
+To send a file from your Mac to your iPhone: Find the file in Finder, right-click it, and select "Share" then "AirDrop." Your iPhone should appear as an available device in the AirDrop window. Click your iPhone's icon. On your iPhone, you will see a notification asking you to accept the file. Tap "Accept" and the file will open in the appropriate app.
+
+If the other device does not appear in AirDrop, check the receiving device's AirDrop settings. On iPhone, go to Settings then General then AirDrop, and make sure it is set to "Everyone for 10 Minutes" or "Contacts Only" (if the sender is in your contacts). On Mac, open Finder, click "AirDrop" in the sidebar, and set the receiving option to "Everyone" or "Contacts Only."
+
+AirDrop is one of the best reasons to use Apple devices together. It is faster and more convenient than emailing files to yourself, and it works without an internet connection. Use it to transfer vacation photos from your iPhone to your Mac, send documents from your Mac to your iPhone for reading on the go, or share web links between devices.`,
+    steps: [
+      { title: 'Turn on Wi-Fi and Bluetooth on both devices', content: 'On iPhone, open Control Center and make sure Wi-Fi and Bluetooth are both turned on (blue icons). On Mac, check the menu bar to confirm Wi-Fi and Bluetooth are enabled.' },
+      { title: 'Set AirDrop to be discoverable', content: 'On the receiving device, set AirDrop to "Everyone for 10 Minutes" or "Contacts Only." On iPhone: Settings then General then AirDrop. On Mac: open Finder, click AirDrop in the sidebar.' },
+      { title: 'Send from iPhone to Mac', content: 'Open the photo or file on your iPhone, tap the Share button (square with arrow), tap AirDrop, and select your Mac. Accept the file on your Mac when the notification appears.' },
+      { title: 'Send from Mac to iPhone', content: 'In Finder, right-click the file you want to send, select Share then AirDrop. Click your iPhone\'s icon in the AirDrop window. Accept the file on your iPhone when prompted.' },
+      { title: 'Find transferred files', content: 'Files received on Mac go to the Downloads folder by default. Files received on iPhone open in the appropriate app — photos go to the Photos app, documents to Files.' },
+      { title: 'Troubleshoot if devices do not appear', content: 'Make sure both devices have Wi-Fi and Bluetooth on. Set AirDrop to "Everyone for 10 Minutes" temporarily. Bring the devices within 30 feet of each other. Restart Wi-Fi and Bluetooth if needed.' },
+    ],
+  },
+
+  {
+    slug: 'use-preview-edit-pdfs-mac',
+    title: 'How to Use Preview to Edit PDFs on Mac',
+    excerpt: 'Fill out forms, add signatures, highlight text, and annotate PDF documents using the free Preview app on your Mac.',
+    category: 'mac' as any,
+    tags: ['mac', 'preview', 'pdf', 'annotate', 'signatures'],
+    readTime: '6 min',
+    thumbnailEmoji: '📄',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `Preview is a free app that comes with every Mac, and it is surprisingly powerful for working with PDF documents. You can use it to fill out PDF forms, add your signature, highlight text, add notes and comments, merge PDFs, and more — all without paying for Adobe Acrobat or other expensive PDF software.
+
+To open a PDF in Preview, double-click the PDF file in Finder. If it does not open in Preview by default, right-click the file, select "Open With," and choose "Preview." Once the PDF is open, you can read through it by scrolling or using the arrow keys.
+
+To fill out a form, click on any form field (text box, checkbox, or dropdown) and type your information. Preview recognizes most PDF form fields automatically. If a form field does not respond to clicking, you may need to use the Text tool instead — click the "Markup" toolbar button (it looks like a pen tip in a circle) and then click the "T" (Text) button to add a text box where you need to type.
+
+To add your signature, click the Markup toolbar button, then click the "Sign" button (it looks like a signature). If this is your first time, you will be asked to create your signature. You can do this by signing on your trackpad with your finger, holding a signed piece of paper up to your Mac's camera, or signing on your iPhone. Once created, your signature is saved and you can reuse it on future documents. Click your saved signature and it will appear on the PDF — drag it to the correct location and resize it by dragging the corners.
+
+To highlight text, click the Markup button and select the Highlight tool (the marker icon). Then click and drag over the text you want to highlight. You can change the highlight color by clicking the dropdown arrow next to the highlight tool.
+
+To add notes and comments, use the "Note" tool in the Markup toolbar. Click anywhere on the page to place a note. You can type your comments inside the note, and it will appear as a small colored square on the page. This is useful for reviewing documents and leaving feedback.
+
+To merge two PDFs, open the first PDF in Preview, then go to View and make sure "Thumbnails" is checked (so you see page thumbnails in the sidebar). Open a Finder window with the second PDF and drag it from Finder into the thumbnail sidebar of Preview. Drop it where you want the pages to be inserted. Then save the file by pressing Command + S.
+
+Remember to save your changes by pressing Command + S or going to File then Save. If you want to keep the original unchanged and save a modified copy, go to File then "Export as PDF" and give it a new name.`,
+    steps: [
+      { title: 'Open a PDF in Preview', content: 'Double-click any PDF file in Finder. If it does not open in Preview, right-click the file, select "Open With," and choose "Preview." The PDF will open for viewing and editing.' },
+      { title: 'Fill out form fields', content: 'Click on any text field, checkbox, or dropdown in the PDF form and type or select your response. Preview recognizes most standard PDF form fields automatically.' },
+      { title: 'Add your signature', content: 'Click the Markup toolbar button (pen tip icon), then click "Sign." Create your signature using the trackpad, camera, or iPhone. Click your saved signature to place it on the document, then drag to position and resize it.' },
+      { title: 'Highlight text', content: 'Click the Markup button, select the Highlight tool (marker icon), then click and drag over the text you want to highlight. Click the dropdown arrow next to the tool to change the highlight color.' },
+      { title: 'Add notes and text', content: 'Use the "Note" tool in the Markup toolbar to add comments. Use the "T" (Text) tool to add text boxes for areas where form fields do not exist. Drag text boxes to position them correctly.' },
+      { title: 'Save your changes', content: 'Press Command + S to save. To keep the original file unchanged, go to File then "Export as PDF" and enter a new file name. The original PDF will remain unmodified.' },
+    ],
+  },
+
+  {
+    slug: 'set-up-parental-controls-mac',
+    title: 'How to Set Up Parental Controls on Mac',
+    excerpt: 'Use Screen Time on Mac to set content restrictions, time limits, and app controls for a child using your Mac.',
+    category: 'mac' as any,
+    tags: ['mac', 'parental controls', 'screen time', 'child safety', 'content restrictions'],
+    readTime: '7 min',
+    thumbnailEmoji: '👨‍👧',
+    publishedAt: '2026-04-16',
+    difficulty: 'Intermediate',
+    body: `If a child or grandchild uses your Mac, you can set up parental controls to limit what they can access, how long they can use the computer, and which apps and websites they can visit. Apple's Screen Time feature provides all of these controls and is built into macOS — no additional software needed.
+
+The first step is to create a separate user account for the child. This keeps their settings, files, and restrictions separate from yours. Go to System Settings, click "Users & Groups," and add a new account. Make sure to create a Standard account (not Administrator). Set a password that you know but the child does not — this prevents them from changing the restrictions.
+
+Next, set up Screen Time for the child's account. Go to System Settings and click "Screen Time." If you have Family Sharing set up, you can manage the child's Screen Time from your own account. If not, you will need to log into the child's account to configure Screen Time there.
+
+Under "Content & Privacy," click "Content & Privacy Restrictions" and toggle it on. This gives you control over web content, app access, and more. Under "Content Restrictions," you can choose to limit adult websites, allow only approved websites, or set the content rating for movies, TV shows, and apps. For younger children, setting web content to "Allowed Websites Only" and adding specific approved sites gives you the most control.
+
+Under "App Limits," you can set daily time limits for categories of apps — like games, social media, or entertainment. When the time limit is reached, the app will lock and the child will see a "Time Limit Reached" message. They can request more time, which sends a notification to your device for you to approve or deny.
+
+"Downtime" lets you schedule hours when the Mac can only be used for phone calls and apps you specifically allow. For example, you can set Downtime from 8 PM to 8 AM so the child cannot use the computer at night. During Downtime, only the apps you mark as "Always Allowed" will be accessible.
+
+Under "Communication Limits," you can control who the child can communicate with through Messages, FaceTime, and other Apple communication features. You can restrict communication to contacts only, or allow everyone.
+
+Set a Screen Time passcode that is different from the child's login password. This prevents them from changing the Screen Time settings themselves. Go to Screen Time settings and click "Lock Screen Time Settings" to create this passcode. Keep this passcode private — it is your master key to all the parental control settings.`,
+    steps: [
+      { title: 'Create a child user account', content: 'Go to System Settings then Users & Groups. Click "Add Account" and create a Standard user account for the child. Set a password that you know. This gives them their own separate space on the Mac.' },
+      { title: 'Open Screen Time settings', content: 'Go to System Settings then Screen Time. If using Family Sharing, you can manage the child\'s settings from your account. Otherwise, log into the child\'s account to set up Screen Time.' },
+      { title: 'Set content restrictions', content: 'Click "Content & Privacy" then toggle on "Content & Privacy Restrictions." Under Content Restrictions, choose web filtering (limit adult websites or allow only approved websites) and set age-appropriate content ratings.' },
+      { title: 'Set app time limits', content: 'Click "App Limits" and add limits for categories like Games, Social Media, or Entertainment. Set a daily time allowance. When the limit is reached, the app locks and the child can request more time.' },
+      { title: 'Schedule Downtime', content: 'Click "Downtime" and set the hours when the Mac should be restricted (for example, 8 PM to 8 AM). During Downtime, only apps you mark as "Always Allowed" will be accessible.' },
+      { title: 'Lock the settings with a passcode', content: 'In Screen Time settings, click "Lock Screen Time Settings" and create a passcode different from the child\'s login password. This prevents the child from changing the restrictions themselves.' },
+    ],
+  },
+
 ];

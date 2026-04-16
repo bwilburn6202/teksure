@@ -1029,4 +1029,1400 @@ Revisa tu reporte de crédito al menos una vez al año para verificar que no hay
       },
     ],
   },
+
+  // ─── 21. Cómo usar Facebook para principiantes ────────────────────────────────
+  {
+    slug: 'es-facebook-beginners',
+    title: 'Cómo usar Facebook para principiantes',
+    excerpt: 'Aprende a usar Facebook paso a paso: publicar, conectarte con familia y amigos, y mantenerte seguro.',
+    category: 'social-media' as any,
+    tags: ['facebook', 'social-media', 'redes-sociales', 'beginner', 'familia'],
+    readTime: '6 min',
+    thumbnailEmoji: '👤',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Facebook es la red social más popular del mundo y es una herramienta increíble para mantenerte en contacto con tu familia, amigos y comunidad. Millones de personas en Estados Unidos la usan todos los días para compartir fotos, ver noticias y participar en grupos de interés. No necesitas ser experto en tecnología para usarla — aquí te explicamos todo desde cero.
+
+Para empezar, necesitas una cuenta de Facebook. Si todavía no tienes una, puedes crearla gratis en facebook.com o descargando la app de Facebook desde la App Store (iPhone) o Google Play (Android). Solo necesitas un correo electrónico o número de teléfono, tu nombre y tu fecha de nacimiento.
+
+Una vez dentro, verás tu "Muro" o "Feed de noticias". Aquí aparecen las publicaciones de tus amigos, familiares y páginas que sigues. Puedes darle "Me gusta" tocando el ícono del pulgar arriba, dejar un comentario o compartir la publicación con otros.
+
+Para encontrar a tus familiares y amigos, usa la barra de búsqueda en la parte superior. Escribe su nombre y envíales una solicitud de amistad. También puedes buscar grupos de tu comunidad, iglesia, o intereses como cocina, jardinería o noticias locales.
+
+Es importante que revises tu configuración de privacidad. Ve a Configuración > Privacidad y asegúrate de que solo tus amigos puedan ver tus publicaciones. Nunca aceptes solicitudes de amistad de personas que no conoces, y nunca compartas información personal como tu dirección o número de seguro social en Facebook.`,
+    steps: [
+      {
+        title: 'Descarga la app o visita facebook.com',
+        content: 'En tu teléfono, abre la App Store (iPhone) o Google Play (Android) y busca "Facebook". Descárgala gratis. Si prefieres usar tu computadora, ve a facebook.com en tu navegador.',
+      },
+      {
+        title: 'Crea tu cuenta o inicia sesión',
+        content: 'Si ya tienes cuenta, ingresa tu correo y contraseña. Si no, toca "Crear cuenta nueva" y sigue las instrucciones. Necesitarás un correo electrónico o número de teléfono, tu nombre y fecha de nacimiento.',
+      },
+      {
+        title: 'Busca a tu familia y amigos',
+        content: 'Usa la lupa de búsqueda en la parte superior para buscar personas por nombre. Cuando encuentres a alguien que conoces, toca "Agregar amigo". Ellos recibirán la solicitud y la pueden aceptar.',
+      },
+      {
+        title: 'Publica algo en tu muro',
+        content: 'Toca donde dice "¿Qué estás pensando?" en la parte superior. Escribe un mensaje, agrega una foto tocando el ícono de la cámara, y luego toca "Publicar". Tus amigos podrán verlo y comentar.',
+      },
+      {
+        title: 'Ajusta tu privacidad',
+        content: 'Ve a tu foto de perfil > Configuración y privacidad > Configuración > Privacidad. Cambia "¿Quién puede ver tus publicaciones futuras?" a "Amigos". Así solo las personas que conoces verán lo que compartes.',
+      },
+      {
+        title: 'Únete a grupos de tu interés',
+        content: 'Busca grupos escribiendo temas como "recetas mexicanas", "comunidad hispana [tu ciudad]" o "jardinería". Únete a los que te interesen para ver publicaciones y participar en conversaciones con personas que comparten tus gustos.',
+      },
+    ],
+  },
+
+  // ─── 22. Cómo configurar un televisor inteligente ─────────────────────────────
+  {
+    slug: 'es-smart-tv-setup',
+    title: 'Cómo configurar un televisor inteligente',
+    excerpt: 'Conecta tu Smart TV a WiFi y aprende a ver Netflix, YouTube y más sin complicaciones.',
+    category: 'smart-home' as any,
+    tags: ['smart-tv', 'television', 'streaming', 'wifi', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '📺',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Un televisor inteligente (o Smart TV) es un televisor que se conecta a internet y te permite ver programas, películas y videos sin necesidad de cable tradicional. Marcas como Samsung, LG, TCL, Vizio y Roku hacen televisores inteligentes muy populares en Estados Unidos. Si acabas de comprar uno, esta guía te ayuda a configurarlo desde cero.
+
+Lo primero es conectar tu Smart TV a tu red WiFi. Cuando enciendes el televisor por primera vez, generalmente te pide que selecciones tu idioma y te conectes a WiFi. Usa el control remoto para navegar a tu red WiFi, selecciónala e ingresa la contraseña. Si no sabes la contraseña, búscala en la etiqueta de tu router (la cajita con luces de tu proveedor de internet).
+
+Una vez conectado a internet, tu televisor te pedirá que inicies sesión o crees una cuenta. Dependiendo de la marca, puede ser una cuenta Samsung, LG, Roku o Google. Si ya tienes un correo de Gmail, puedes usar esa cuenta para televisores con Google TV o Android TV.
+
+Después de la configuración inicial, podrás descargar apps como Netflix, YouTube, Hulu, Disney+, Peacock, Tubi (gratis), y Pluto TV (gratis). Cada app tiene su propia suscripción, pero hay varias opciones gratuitas como Tubi y Pluto TV que tienen muchos programas en español.
+
+Un consejo importante: mantén tu televisor actualizado. Ve a Configuración > Sistema > Actualización de software y revisa si hay actualizaciones disponibles. Esto mantiene tu televisor funcionando bien y con las apps más recientes.`,
+    steps: [
+      {
+        title: 'Enciende tu televisor y selecciona el idioma',
+        content: 'Al encender tu Smart TV por primera vez, aparecerá una pantalla de bienvenida. Usa las flechas del control remoto para seleccionar "Español" como idioma y presiona OK o Enter.',
+      },
+      {
+        title: 'Conéctalo a tu red WiFi',
+        content: 'El televisor buscará redes WiFi cercanas. Selecciona el nombre de tu red e ingresa la contraseña usando el teclado en pantalla. La contraseña está en la etiqueta de tu router si no la recuerdas.',
+      },
+      {
+        title: 'Crea o inicia sesión en tu cuenta del televisor',
+        content: 'Dependiendo de la marca, necesitarás una cuenta Samsung, LG, Roku o Google. Si tienes Gmail, puedes usarla para televisores Google TV. Si no tienes cuenta, el televisor te guiará para crear una gratis.',
+      },
+      {
+        title: 'Descarga las apps que quieras ver',
+        content: 'Ve a la tienda de aplicaciones de tu televisor. Busca Netflix, YouTube, Hulu, Tubi (gratis) o Pluto TV (gratis). Selecciona la app y toca "Instalar" o "Descargar". Se agregarán a tu pantalla principal.',
+      },
+      {
+        title: 'Inicia sesión en cada app de streaming',
+        content: 'Abre la app que descargaste (como Netflix). Te pedirá iniciar sesión o activar el dispositivo visitando un sitio web en tu teléfono. Sigue las instrucciones en pantalla para vincular tu cuenta.',
+      },
+      {
+        title: 'Actualiza el software de tu televisor',
+        content: 'Ve a Configuración > Sistema > Actualización de software. Si hay una actualización disponible, descárgala e instálala. Esto arregla problemas y agrega funciones nuevas. Es como actualizar tu teléfono.',
+      },
+    ],
+  },
+
+  // ─── 23. Cómo usar Google Maps en tu teléfono ────────────────────────────────
+  {
+    slug: 'es-google-maps',
+    title: 'Cómo usar Google Maps en tu teléfono',
+    excerpt: 'Aprende a usar Google Maps para encontrar direcciones, navegar en el carro y buscar lugares cercanos.',
+    category: 'essential-skills' as any,
+    tags: ['google-maps', 'navigation', 'directions', 'gps', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🗺️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Google Maps es como tener un mapa y un GPS gratis en tu teléfono. Te dice cómo llegar a cualquier lugar, te muestra el tráfico en tiempo real, y te ayuda a encontrar restaurantes, tiendas, gasolineras y más cerca de ti. Es una de las aplicaciones más útiles que puedes tener, y aquí te enseñamos a usarla.
+
+Google Maps viene preinstalado en la mayoría de los teléfonos Android. Si tienes un iPhone, descárgala gratis desde la App Store. Cuando la abras por primera vez, te pedirá permiso para usar tu ubicación — di que sí, porque así el mapa sabe dónde estás y puede darte direcciones precisas.
+
+Para buscar un lugar, toca la barra de búsqueda en la parte superior y escribe la dirección, el nombre del lugar o algo como "farmacia cerca de mí". Google Maps te mostrará el lugar en el mapa con opciones para navegar en carro, transporte público, a pie o en bicicleta.
+
+Cuando toques "Iniciar" o "Comenzar navegación", Google Maps te dará instrucciones paso a paso con voz. Te dirá cuándo doblar, en cuántas millas, y te avisará si hay tráfico o accidentes en el camino. Es como tener un copiloto que nunca se equivoca.
+
+También puedes guardar lugares frecuentes como tu casa y tu trabajo. Así, cuando quieras ir a casa, solo tocas el ícono de casa y Google Maps automáticamente te da la ruta más rápida.`,
+    steps: [
+      {
+        title: 'Abre Google Maps en tu teléfono',
+        content: 'Busca el ícono de Google Maps (un pin rojo sobre un mapa). En Android ya viene instalado. En iPhone, descárgalo gratis desde la App Store. Cuando lo abras, permite el acceso a tu ubicación.',
+      },
+      {
+        title: 'Busca el lugar a donde quieres ir',
+        content: 'Toca la barra de búsqueda arriba y escribe la dirección completa o el nombre del lugar, como "Walmart" o "DMV cerca de mí". Google Maps te mostrará resultados con dirección, horarios y calificaciones.',
+      },
+      {
+        title: 'Selecciona cómo quieres llegar',
+        content: 'Toca "Cómo llegar" o "Directions". Verás opciones: carro, transporte público, caminar o bicicleta. Selecciona la que prefieras. Google Maps te mostrará la ruta y cuánto tiempo tomará.',
+      },
+      {
+        title: 'Inicia la navegación con voz',
+        content: 'Toca el botón azul "Iniciar" para comenzar la navegación. Una voz te irá diciendo paso a paso hacia dónde ir. Asegúrate de tener el volumen alto. Puedes montar tu teléfono en el tablero del carro con un soporte.',
+      },
+      {
+        title: 'Guarda tus lugares frecuentes',
+        content: 'Toca tu foto de perfil > Configuración > Editar casa o trabajo. Ingresa la dirección de tu hogar y tu trabajo. Así, la próxima vez solo tienes que tocar "Casa" o "Trabajo" para obtener la ruta rápidamente.',
+      },
+    ],
+  },
+
+  // ─── 24. Cómo enviar fotos por mensaje de texto ──────────────────────────────
+  {
+    slug: 'es-send-photos-text',
+    title: 'Cómo enviar fotos por mensaje de texto',
+    excerpt: 'Aprende a compartir fotos con tu familia y amigos por mensaje de texto desde tu teléfono.',
+    category: 'communication' as any,
+    tags: ['photos', 'text-message', 'mms', 'sharing', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📸',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Compartir fotos por mensaje de texto es una de las formas más rápidas y sencillas de mandarle una imagen a un familiar o amigo. No necesitas ninguna app especial — puedes hacerlo directamente desde la aplicación de Mensajes que ya viene en tu teléfono. Aquí te enseñamos cómo hacerlo tanto en iPhone como en Android.
+
+En un iPhone, abre la app de Mensajes (el ícono verde con un globo de texto blanco). Selecciona la conversación con la persona a quien quieres enviarle la foto, o toca el ícono de nuevo mensaje para empezar una nueva. Junto al campo donde escribes, verás un ícono de cámara y un ícono de "+". Toca el "+" y luego "Fotos" para elegir una foto de tu galería, o toca la cámara para tomar una foto nueva en ese momento.
+
+En un teléfono Android, abre Google Messages o la app de mensajes que uses. Abre la conversación y toca el ícono de la imagen o el clip (📎) junto al campo de texto. Selecciona "Galería" o "Fotos" para elegir una imagen guardada, o "Cámara" para tomar una nueva.
+
+Una vez que selecciones la foto, aparecerá como vista previa en el mensaje. Puedes agregar un texto si quieres y luego tocar la flecha de enviar. La foto se enviará como un mensaje multimedia (MMS), que es diferente a un mensaje de texto normal. La mayoría de los planes de T-Mobile, AT&T, Verizon y otros proveedores incluyen MMS sin costo adicional.
+
+Si la foto es muy pesada o quieres enviar muchas fotos a la vez, considera usar WhatsApp, que es gratis y muy popular entre la comunidad hispana.`,
+    steps: [
+      {
+        title: 'Abre tu app de Mensajes',
+        content: 'En iPhone, toca el ícono verde de Mensajes. En Android, abre Google Messages o tu app de mensajes. Selecciona la conversación con la persona a quien quieres enviarle la foto.',
+      },
+      {
+        title: 'Toca el ícono para agregar una foto',
+        content: 'En iPhone: toca el "+" junto al campo de texto y luego "Fotos". En Android: toca el ícono de la imagen (📷) o el clip (📎). Esto te abrirá la galería de fotos de tu teléfono.',
+      },
+      {
+        title: 'Selecciona la foto que quieres enviar',
+        content: 'Navega por tu galería de fotos y toca la imagen que quieres enviar. Puedes seleccionar varias fotos a la vez en la mayoría de los teléfonos. La foto aparecerá como vista previa en tu mensaje.',
+      },
+      {
+        title: 'Agrega un mensaje si quieres',
+        content: 'Puedes escribir algo debajo de la foto, como "¡Mira qué bonita salió!" o "Aquí estamos en la fiesta". Esto es opcional — puedes enviar solo la foto si prefieres.',
+      },
+      {
+        title: 'Toca enviar',
+        content: 'Toca la flecha azul (iPhone) o el ícono de enviar (Android) para mandar la foto. Puede tardar unos segundos si la foto es grande. Verás "Enviado" cuando se complete.',
+      },
+    ],
+  },
+
+  // ─── 25. Cómo hacer una copia de seguridad de tu teléfono ────────────────────
+  {
+    slug: 'es-phone-backup',
+    title: 'Cómo hacer una copia de seguridad de tu teléfono',
+    excerpt: 'Protege tus fotos, contactos y datos importantes haciendo una copia de seguridad de tu teléfono.',
+    category: 'phone-guides' as any,
+    tags: ['backup', 'cloud', 'icloud', 'google', 'data-protection', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '☁️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Imagina que pierdes tu teléfono o se te cae al agua. Si no tienes una copia de seguridad, podrías perder todas tus fotos, contactos, mensajes y todo lo que guardas en él. Una copia de seguridad (o "backup") es como hacer una copia de todo lo importante de tu teléfono y guardarla en un lugar seguro en internet, llamado "la nube".
+
+Si tienes un iPhone, Apple te da un servicio llamado iCloud. Tu teléfono puede hacer copias automáticas todas las noches mientras está conectado al cargador y al WiFi. Para activarlo, ve a Ajustes > toca tu nombre arriba > iCloud > Copia en iCloud y actívala. Apple te da 5 GB gratis, pero si necesitas más espacio, puedes pagar $0.99 al mes por 50 GB.
+
+Si tienes un teléfono Android, Google te da 15 GB gratis con tu cuenta de Google. Ve a Configuración > Google > Copia de seguridad y actívala. Google guardará tus contactos, apps, fotos (con Google Photos) y configuraciones importantes.
+
+Además de la copia en la nube, puedes guardar tus fotos más importantes en Google Photos (gratis hasta cierto límite) o en Amazon Photos (gratis con Amazon Prime). También puedes copiar fotos importantes a tu computadora conectando el teléfono con un cable USB.
+
+Lo más importante es que hagas la copia de seguridad regularmente. Configúrala para que sea automática y así nunca tendrás que preocuparte por perder tus recuerdos y contactos.`,
+    steps: [
+      {
+        title: 'Verifica que estés conectado a WiFi',
+        content: 'Las copias de seguridad usan mucho internet, así que asegúrate de estar conectado a tu WiFi de casa. No uses datos móviles porque puede salirte caro o ir muy lento.',
+      },
+      {
+        title: 'Activa la copia de seguridad en tu teléfono',
+        content: 'iPhone: ve a Ajustes > tu nombre > iCloud > Copia en iCloud > Activar. Android: ve a Configuración > Google > Copia de seguridad > Activar. Esto guardará tus datos en la nube automáticamente.',
+      },
+      {
+        title: 'Haz tu primera copia ahora mismo',
+        content: 'iPhone: en la misma pantalla de Copia en iCloud, toca "Realizar copia ahora". Android: toca "Crear copia de seguridad ahora". Esto puede tomar varios minutos la primera vez.',
+      },
+      {
+        title: 'Activa Google Photos o iCloud Photos para tus fotos',
+        content: 'iPhone: en Ajustes > tu nombre > iCloud > Fotos, activa "Fotos en iCloud". Android: abre la app Google Photos > tu foto de perfil > Configuración de Fotos > Copia de seguridad > Activar.',
+      },
+      {
+        title: 'Verifica que tu copia de seguridad funcionó',
+        content: 'iPhone: ve a Ajustes > tu nombre > iCloud > Copia en iCloud y mira la fecha de la última copia. Android: en Configuración > Google > Copia de seguridad verás cuándo fue la última copia exitosa.',
+      },
+      {
+        title: 'Configura las copias automáticas',
+        content: 'Deja la copia de seguridad activada y conecta tu teléfono al cargador cada noche con WiFi encendido. Tu teléfono hará la copia automáticamente mientras duermes.',
+      },
+    ],
+  },
+
+  // ─── 26. Cómo usar FaceTime para videollamadas ───────────────────────────────
+  {
+    slug: 'es-facetime-video-calls',
+    title: 'Cómo usar FaceTime para videollamadas',
+    excerpt: 'Aprende a hacer videollamadas con FaceTime para ver a tu familia y amigos cara a cara.',
+    category: 'communication' as any,
+    tags: ['facetime', 'video-call', 'videollamada', 'apple', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📱',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `FaceTime es la aplicación de Apple para hacer videollamadas gratis. Es como hablar por teléfono, pero puedes ver a la otra persona en la pantalla. Es perfecta para hablar con familiares que viven lejos, ver a los nietos, o simplemente ponerte al día con amigos. Y lo mejor: es completamente gratis — solo necesitas WiFi o datos.
+
+FaceTime viene incluido en todos los iPhones, iPads y Mac. No necesitas descargarlo ni pagar nada. Para usarlo, la otra persona también necesita un dispositivo Apple (iPhone, iPad o Mac). Sin embargo, desde hace poco, también puedes invitar a personas con teléfonos Android o computadoras Windows a unirse a una llamada de FaceTime a través de un enlace.
+
+Para hacer una videollamada, abre la app de FaceTime (el ícono verde con una cámara de video blanca). Toca "Nueva FaceTime" o el botón de "+" arriba. Escribe el nombre, número de teléfono o correo electrónico de la persona a quien quieres llamar. Luego toca el botón verde de video.
+
+Durante la llamada, puedes voltear la cámara para mostrar algo a tu alrededor (tocando el ícono de flechas circulares), silenciar tu micrófono, o poner la cámara en modo horizontal para que se vea más grande. Para colgar, toca el botón rojo.
+
+Si tienes problemas con la calidad de video, asegúrate de estar en un lugar con buena señal WiFi y con suficiente luz para que la otra persona te pueda ver bien.`,
+    steps: [
+      {
+        title: 'Abre la app de FaceTime',
+        content: 'Busca el ícono verde con la cámara blanca en tu iPhone o iPad. Si no lo encuentras, desliza hacia abajo en tu pantalla principal y escribe "FaceTime" en la búsqueda.',
+      },
+      {
+        title: 'Inicia una nueva llamada',
+        content: 'Toca "Nueva FaceTime" o el botón de "+" en la esquina superior. Escribe el nombre del contacto, su número de teléfono o su correo electrónico en el campo de búsqueda.',
+      },
+      {
+        title: 'Elige videollamada',
+        content: 'Toca el botón verde de video (📹) para iniciar la videollamada. Espera a que la otra persona conteste. Verás tu imagen en una ventanita pequeña y a la otra persona en la pantalla grande.',
+      },
+      {
+        title: 'Usa los controles durante la llamada',
+        content: 'Durante la llamada verás botones en la pantalla: el micrófono (para silenciarte), la cámara (para apagarla), las flechas (para voltear la cámara) y el altavoz. Toca la pantalla si los botones desaparecen.',
+      },
+      {
+        title: 'Invita a alguien con Android usando un enlace',
+        content: 'En la pantalla principal de FaceTime, toca "Crear enlace". Comparte ese enlace por mensaje de texto o WhatsApp. La persona con Android puede abrirlo en su navegador Chrome para unirse a la llamada.',
+      },
+      {
+        title: 'Cuelga la llamada',
+        content: 'Cuando termines de hablar, toca el botón rojo con el ícono de teléfono para colgar. La llamada se terminará para ambos. Verás un resumen con la duración de la llamada.',
+      },
+    ],
+  },
+
+  // ─── 27. Cómo usar el correo de voz en tu teléfono ───────────────────────────
+  {
+    slug: 'es-voicemail-setup',
+    title: 'Cómo usar el correo de voz en tu teléfono',
+    excerpt: 'Configura y escucha tu correo de voz para no perder llamadas importantes.',
+    category: 'phone-guides' as any,
+    tags: ['voicemail', 'phone', 'calls', 'setup', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📞',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `El correo de voz (voicemail) es un servicio que graba mensajes cuando no puedes contestar el teléfono. Es como una contestadora automática que vive dentro de tu teléfono. Cuando alguien te llama y no contestas, pueden dejar un mensaje de voz que puedes escuchar después. Es muy útil para no perder llamadas importantes del doctor, la escuela o el trabajo.
+
+La mayoría de los planes de T-Mobile, AT&T, Verizon y otros proveedores en Estados Unidos incluyen el correo de voz gratis. Solo necesitas configurarlo una vez y después funciona automáticamente.
+
+En un iPhone, el correo de voz viene integrado como "Visual Voicemail". Esto significa que puedes ver una lista de todos tus mensajes de voz y tocar el que quieras escuchar, sin tener que escucharlos en orden. En Android, algunos teléfonos también tienen Visual Voicemail, o puedes escuchar tus mensajes marcando el número de correo de voz.
+
+Para grabar tu saludo personal, necesitas decidir qué quieres que la gente escuche cuando no contestas. Puede ser algo como "Hola, soy María. No puedo contestar en este momento. Deja tu mensaje y te llamo de regreso". Grabar tu propio saludo ayuda a que la gente sepa que llamó al número correcto.
+
+Si no configuras un saludo, tu proveedor usará un mensaje genérico automático que solo dice tu número de teléfono.`,
+    steps: [
+      {
+        title: 'Abre la app de Teléfono',
+        content: 'Busca la app de Teléfono (el ícono verde con un teléfono blanco en iPhone, o el ícono azul del teléfono en Android). En iPhone, toca la pestaña "Correo de voz" abajo a la derecha.',
+      },
+      {
+        title: 'Configura tu correo de voz por primera vez',
+        content: 'iPhone: toca "Configurar ahora" en la pestaña de Correo de voz. Crea un PIN de 4 a 6 dígitos que puedas recordar. Android: mantén presionada la tecla 1 en el teclado del teléfono y sigue las instrucciones de voz.',
+      },
+      {
+        title: 'Graba tu saludo personal',
+        content: 'iPhone: toca "Saludo" arriba a la izquierda > "Personalizado" > "Grabar". Graba tu mensaje y toca "Guardar". Android: llama a tu correo de voz (tecla 1) y sigue las opciones del menú para grabar tu saludo.',
+      },
+      {
+        title: 'Escucha tus mensajes de voz',
+        content: 'iPhone: ve a Teléfono > Correo de voz. Verás una lista de mensajes. Toca cualquiera para escucharlo. Android: mantén presionado el 1 o abre la app de Visual Voicemail si la tienes.',
+      },
+      {
+        title: 'Devuelve la llamada o borra el mensaje',
+        content: 'Después de escuchar un mensaje, puedes tocar el nombre o número para devolver la llamada. Si ya no necesitas el mensaje, deslízalo a la izquierda (iPhone) o toca "Borrar" para eliminarlo.',
+      },
+    ],
+  },
+
+  // ─── 28. Cómo proteger tu teléfono con una contraseña ────────────────────────
+  {
+    slug: 'es-phone-lock-password',
+    title: 'Cómo proteger tu teléfono con una contraseña',
+    excerpt: 'Aprende a ponerle contraseña, PIN o huella digital a tu teléfono para proteger tu información.',
+    category: 'safety-guides' as any,
+    tags: ['security', 'password', 'lock-screen', 'fingerprint', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🔒',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Proteger tu teléfono con una contraseña o PIN es como ponerle llave a tu casa. Si alguien encuentra tu teléfono o te lo roban, no podrán ver tus fotos, mensajes, correos electrónicos, apps bancarias ni nada personal. En Estados Unidos, el robo de teléfonos es un problema común, así que es muy importante que tu teléfono esté protegido.
+
+Hay varias formas de proteger tu teléfono. La más común es un PIN (un número de 4 o 6 dígitos). También puedes usar un patrón (dibujar una forma en la pantalla), una contraseña con letras y números, tu huella digital (Touch ID o sensor de huella), o reconocimiento facial (Face ID en iPhone).
+
+Te recomendamos usar al menos un PIN de 6 dígitos junto con tu huella digital o Face ID. La huella y el reconocimiento facial son los más rápidos — solo tocas el botón o miras tu teléfono y se desbloquea instantáneamente. Pero siempre necesitas un PIN como respaldo en caso de que la huella o el rostro no funcionen.
+
+Evita usar PINs fáciles de adivinar como 123456, 000000, tu año de nacimiento o los últimos dígitos de tu número de teléfono. Los ladrones prueban estos primero. Escoge un número que puedas recordar pero que no sea obvio para otros.
+
+Además, configura tu teléfono para que se bloquee automáticamente después de 30 segundos o 1 minuto de no usarlo. Así, aunque lo dejes en la mesa y te distraigas, nadie podrá abrirlo.`,
+    steps: [
+      {
+        title: 'Abre la configuración de bloqueo de pantalla',
+        content: 'iPhone: ve a Ajustes > Face ID y código (o Touch ID y código). Android: ve a Configuración > Seguridad > Bloqueo de pantalla. Aquí podrás elegir cómo proteger tu teléfono.',
+      },
+      {
+        title: 'Configura un PIN de 6 dígitos',
+        content: 'Selecciona "Código" o "PIN" y escoge un número de 6 dígitos que puedas recordar. Evita números obvios como 123456 o tu cumpleaños. Tendrás que escribirlo dos veces para confirmarlo.',
+      },
+      {
+        title: 'Activa la huella digital o Face ID',
+        content: 'iPhone: en Ajustes > Face ID y código, sigue las instrucciones para escanear tu rostro o huella. Android: en Seguridad > Huella digital, coloca tu dedo varias veces en el sensor. Esto te permitirá desbloquear tu teléfono instantáneamente.',
+      },
+      {
+        title: 'Configura el bloqueo automático',
+        content: 'iPhone: ve a Ajustes > Pantalla y brillo > Bloqueo automático y selecciona "30 segundos" o "1 minuto". Android: en Configuración > Seguridad > Bloqueo automático, selecciona el menor tiempo posible.',
+      },
+      {
+        title: 'Prueba que el bloqueo funcione',
+        content: 'Presiona el botón lateral de tu teléfono para apagar la pantalla. Luego enciéndela de nuevo. Debería pedirte el PIN, huella o rostro antes de dejarte entrar. Si funciona, tu teléfono está protegido.',
+      },
+    ],
+  },
+
+  // ─── 29. Cómo descargar aplicaciones de forma segura ─────────────────────────
+  {
+    slug: 'es-download-apps-safely',
+    title: 'Cómo descargar aplicaciones de forma segura',
+    excerpt: 'Aprende a descargar apps confiables y evitar aplicaciones peligrosas o fraudulentas.',
+    category: 'safety-guides' as any,
+    tags: ['apps', 'download', 'app-store', 'google-play', 'safety', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '⬇️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Las aplicaciones (o "apps") agregan funciones a tu teléfono — desde ver el clima hasta hacer videollamadas con tu familia. Pero no todas las apps son seguras. Algunas apps falsas pueden robar tu información personal, llenar tu teléfono de anuncios molestos, o cobrarte sin tu permiso. Por eso es importante saber cómo descargar apps de forma segura.
+
+La regla número uno es descargar apps solamente de las tiendas oficiales: la App Store de Apple (iPhone) o Google Play Store (Android). Estas tiendas revisan las apps antes de publicarlas para asegurarse de que no sean peligrosas. Nunca descargues apps desde enlaces que te lleguen por mensaje de texto, correo electrónico o redes sociales — esto es una táctica común de estafadores.
+
+Antes de descargar una app, revisa tres cosas importantes. Primero, mira las calificaciones (las estrellas). Una app con 4 estrellas o más generalmente es confiable. Segundo, lee algunos comentarios de otros usuarios. Si ves quejas de cobros inesperados o anuncios excesivos, no la descargues. Tercero, verifica quién publicó la app. Por ejemplo, la app oficial de tu banco debe estar publicada por el banco mismo, no por un desarrollador desconocido.
+
+También presta atención a los permisos que pide la app. Si una app de linterna te pide acceso a tus contactos y mensajes, eso es sospechoso. Una app solo debería pedir permisos que tengan sentido para lo que hace.
+
+Ten cuidado con las apps "gratis" que luego te piden suscripciones caras. Lee bien antes de tocar "Aceptar" o "Suscribirse". Puedes cancelar suscripciones no deseadas en Ajustes > tu nombre > Suscripciones (iPhone) o Google Play > Pagos y suscripciones (Android).`,
+    steps: [
+      {
+        title: 'Abre la tienda oficial de aplicaciones',
+        content: 'En iPhone, busca el ícono azul de la App Store. En Android, busca el ícono de la bolsa de colores de Google Play Store. Estas son las únicas tiendas seguras para descargar apps.',
+      },
+      {
+        title: 'Busca la app que necesitas',
+        content: 'Toca la lupa de búsqueda y escribe el nombre de la app que quieres, como "WhatsApp" o "Facebook". También puedes buscar por categoría, como "app del clima" o "traductor".',
+      },
+      {
+        title: 'Revisa la calificación y los comentarios',
+        content: 'Antes de descargar, mira las estrellas (4 o más es bueno) y lee algunos comentarios. Fíjate en quejas sobre cobros, virus o mal funcionamiento. También verifica que el creador sea la empresa oficial.',
+      },
+      {
+        title: 'Descarga la app',
+        content: 'Toca "Obtener" (iPhone) o "Instalar" (Android). Es posible que te pida tu contraseña o huella digital para confirmar. La app se descargará y aparecerá en tu pantalla principal.',
+      },
+      {
+        title: 'Revisa los permisos que pide',
+        content: 'Cuando abras la app por primera vez, te pedirá permisos (cámara, ubicación, contactos, etc.). Solo acepta los que tengan sentido. Si una app de recetas te pide acceso a tus llamadas, es sospechoso — niégale el permiso.',
+      },
+      {
+        title: 'Borra apps que no uses o parezcan sospechosas',
+        content: 'Si descargaste una app y no te gusta o es sospechosa, bórrala. iPhone: mantén presionado el ícono > Eliminar app. Android: mantén presionado > Desinstalar. Revisa tu teléfono cada mes y borra lo que no usas.',
+      },
+    ],
+  },
+
+  // ─── 30. Cómo conectar audífonos Bluetooth ───────────────────────────────────
+  {
+    slug: 'es-connect-bluetooth-headphones',
+    title: 'Cómo conectar audífonos Bluetooth',
+    excerpt: 'Conecta tus audífonos inalámbricos a tu teléfono por Bluetooth en unos pasos.',
+    category: 'phone-guides' as any,
+    tags: ['bluetooth', 'headphones', 'wireless', 'audio', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🎧',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Los audífonos Bluetooth son audífonos inalámbricos que se conectan a tu teléfono sin cables. Son muy prácticos para escuchar música, hacer llamadas con las manos libres, o ver videos sin molestar a los demás. Bluetooth es la tecnología que permite que tus audífonos y tu teléfono se "hablen" sin necesidad de un cable.
+
+Hay muchos tipos de audífonos Bluetooth: los AirPods de Apple, los Galaxy Buds de Samsung, los de JBL, Sony, Beats y muchas marcas más. Todos se conectan de forma muy similar. El proceso se llama "emparejar" (pairing en inglés), y solo necesitas hacerlo una vez. Después de emparejarlos, se conectan automáticamente cada vez que los enciendes.
+
+Antes de empezar, asegúrate de que tus audífonos estén cargados. La mayoría vienen con un estuche de carga — coloca los audífonos dentro del estuche y conéctalo al cargador hasta que la luz indique que están llenos. La primera carga puede tomar entre 1 y 2 horas.
+
+El paso clave es poner los audífonos en "modo de emparejamiento". Esto le dice a los audífonos que busquen un teléfono nuevo al cual conectarse. Cada marca tiene una forma diferente de activar este modo — generalmente es mantener presionado un botón durante unos segundos hasta que una luz parpadee.
+
+Si tienes AirPods y un iPhone, el proceso es aún más fácil: simplemente abre el estuche de los AirPods cerca de tu iPhone y aparecerá una ventana automática para conectarlos.`,
+    steps: [
+      {
+        title: 'Carga tus audífonos completamente',
+        content: 'Coloca los audífonos en su estuche de carga y conéctalo a la corriente con el cable incluido. Espera hasta que la luz del estuche indique carga completa (generalmente cambia a verde o deja de parpadear).',
+      },
+      {
+        title: 'Pon los audífonos en modo de emparejamiento',
+        content: 'Para la mayoría de audífonos: mantén presionado el botón de encendido por 5 segundos hasta que la luz parpadee en azul o blanco. Para AirPods: abre el estuche con los audífonos dentro y mantén presionado el botón trasero del estuche.',
+      },
+      {
+        title: 'Activa Bluetooth en tu teléfono',
+        content: 'iPhone: ve a Ajustes > Bluetooth y actívalo (verde). Android: ve a Configuración > Conexiones > Bluetooth y actívalo. Tu teléfono empezará a buscar dispositivos cercanos.',
+      },
+      {
+        title: 'Selecciona tus audífonos de la lista',
+        content: 'En la lista de dispositivos Bluetooth, aparecerá el nombre de tus audífonos (como "AirPods de María" o "JBL Tune 510"). Toca el nombre para conectarlos. Escucharás un sonido de confirmación.',
+      },
+      {
+        title: 'Prueba el sonido',
+        content: 'Abre Spotify, YouTube o cualquier app de música y reproduce algo. El sonido debería salir por tus audífonos. Si sigue saliendo por el teléfono, revisa que los audífonos aparezcan como "Conectados" en la configuración Bluetooth.',
+      },
+    ],
+  },
+
+  // ─── 31. Cómo usar Spotify para escuchar música ──────────────────────────────
+  {
+    slug: 'es-spotify-music',
+    title: 'Cómo usar Spotify para escuchar música',
+    excerpt: 'Descubre cómo escuchar música gratis o con suscripción usando Spotify en tu teléfono.',
+    category: 'entertainment' as any,
+    tags: ['spotify', 'music', 'streaming', 'entertainment', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎵',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Spotify es una de las aplicaciones más populares para escuchar música en Estados Unidos y el mundo. Piensa en Spotify como una biblioteca gigante de música donde puedes escuchar casi cualquier canción, artista o género que quieras — desde música regional mexicana y reggaetón hasta country, pop y música clásica. Hay millones de canciones disponibles.
+
+Spotify tiene dos versiones: la gratuita y la de pago (Premium). La versión gratuita te permite escuchar música con anuncios entre canciones, similar a la radio. La versión Premium cuesta $11.99 al mes (hay planes familiares de $19.99 para hasta 6 personas) y te permite escuchar sin anuncios, descargar música para escuchar sin internet, y escoger las canciones exactas que quieras.
+
+Para empezar, descarga Spotify desde la App Store (iPhone) o Google Play (Android). Puedes crear una cuenta con tu correo electrónico o usar tu cuenta de Google, Facebook o Apple para registrarte más rápido.
+
+Una vez dentro, puedes buscar música por artista, canción, álbum o género. Spotify también tiene "playlists" o listas de reproducción creadas por ellos y por otros usuarios. Por ejemplo, puedes buscar "Éxitos de los 80s en español" o "Música para cocinar" y encontrar horas de música seleccionada.
+
+Una función muy útil es "Descubrimiento semanal" — una playlist que Spotify crea especialmente para ti cada lunes con canciones nuevas basadas en lo que te gusta escuchar. Mientras más uses Spotify, mejor aprenderá tus gustos.`,
+    steps: [
+      {
+        title: 'Descarga Spotify en tu teléfono',
+        content: 'Abre la App Store (iPhone) o Google Play (Android) y busca "Spotify". Descárgala gratis. Cuando la abras, toca "Registrarte" para crear una cuenta nueva o "Iniciar sesión" si ya tienes una.',
+      },
+      {
+        title: 'Crea tu cuenta',
+        content: 'Puedes registrarte con tu correo electrónico o usar tu cuenta de Google, Facebook o Apple. Escoge un nombre de usuario y una contraseña. La app te pedirá que selecciones algunos artistas que te gustan para personalizar tus recomendaciones.',
+      },
+      {
+        title: 'Busca tu música favorita',
+        content: 'Toca la lupa de "Buscar" en la parte inferior. Escribe el nombre de un artista como "Vicente Fernández", "Bad Bunny" o "Luis Miguel". Toca su nombre para ver sus canciones y álbumes.',
+      },
+      {
+        title: 'Crea tu propia playlist',
+        content: 'Ve a "Tu biblioteca" abajo a la derecha. Toca el "+" para crear una playlist nueva. Ponle un nombre como "Mis favoritas" y agrega canciones buscándolas y tocando los tres puntitos > "Agregar a playlist".',
+      },
+      {
+        title: 'Explora playlists hechas por Spotify',
+        content: 'En la pantalla de Inicio, verás secciones como "Hecho para ti", "Éxitos", y listas por género. Toca cualquier playlist y dale "Play" para escucharla. Si te gusta, toca el corazón para guardarla.',
+      },
+      {
+        title: 'Conecta Spotify a una bocina o audífonos',
+        content: 'Para escuchar en una bocina Bluetooth, conéctala en los ajustes de Bluetooth de tu teléfono. Luego abre Spotify y reproduce música — el sonido saldrá por la bocina. También puedes usar Spotify con Alexa o Google Home.',
+      },
+    ],
+  },
+
+  // ─── 32. Cómo configurar Amazon Alexa en español ─────────────────────────────
+  {
+    slug: 'es-amazon-alexa-setup',
+    title: 'Cómo configurar Amazon Alexa en español',
+    excerpt: 'Aprende a configurar tu bocina Alexa para que entienda y responda en español.',
+    category: 'smart-home' as any,
+    tags: ['alexa', 'amazon', 'smart-speaker', 'smart-home', 'spanish', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔊',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Amazon Alexa es un asistente de voz que vive dentro de las bocinas Echo de Amazon. Le puedes hablar y ella responde: pone música, te dice el clima, configura temporizadores, te recuerda citas, controla luces inteligentes y mucho más. Y lo mejor es que Alexa habla español, así que puedes usarla completamente en tu idioma.
+
+Para empezar, necesitas una bocina Amazon Echo (los modelos más populares son Echo Dot, Echo y Echo Show). Se venden en Amazon.com, Best Buy, Target y Walmart. El Echo Dot básico cuesta alrededor de $50 y es perfecto para empezar.
+
+La configuración se hace desde tu teléfono usando la app de Amazon Alexa, que es gratuita. Necesitas una cuenta de Amazon — si ya compras en Amazon, puedes usar esa misma cuenta. También necesitas WiFi en tu casa.
+
+Una vez configurada en español, puedes hablarle diciendo "Alexa, ¿qué tiempo hace hoy?", "Alexa, pon música de Marco Antonio Solís", "Alexa, pon un temporizador de 10 minutos", o "Alexa, recuérdame tomar mi medicina a las 8 de la noche". Es como tener un asistente personal en tu casa.
+
+Alexa también puede hacer llamadas a otros dispositivos Alexa o teléfonos, lo cual es muy útil para comunicarte con familiares que también tengan un Echo. Simplemente dices "Alexa, llama a María" y ella marca automáticamente.`,
+    steps: [
+      {
+        title: 'Conecta tu bocina Echo a la corriente',
+        content: 'Saca la bocina de la caja y conecta el cable de corriente a la pared. Espera un minuto hasta que la luz azul se encienda y Alexa diga "Hola, estoy lista para configurarse" o algo similar.',
+      },
+      {
+        title: 'Descarga la app Amazon Alexa',
+        content: 'En tu teléfono, abre la App Store (iPhone) o Google Play (Android) y busca "Amazon Alexa". Descárgala gratis e inicia sesión con tu cuenta de Amazon.',
+      },
+      {
+        title: 'Conecta la bocina a tu WiFi',
+        content: 'En la app de Alexa, toca "Dispositivos" abajo > "+" arriba > "Agregar dispositivo" > "Amazon Echo". La app buscará tu bocina y te guiará para conectarla a tu red WiFi.',
+      },
+      {
+        title: 'Cambia el idioma a español',
+        content: 'En la app de Alexa, ve a Dispositivos > selecciona tu Echo > Configuración del dispositivo (⚙️) > Idioma. Selecciona "Español (Estados Unidos)". Alexa ahora te hablará y entenderá en español.',
+      },
+      {
+        title: 'Prueba con comandos de voz',
+        content: 'Di "Alexa, ¿qué hora es?" o "Alexa, pon música en español". Si responde correctamente, ya está lista. Prueba también: "Alexa, pon un temporizador de 5 minutos" y "Alexa, ¿cómo está el clima?".',
+      },
+      {
+        title: 'Configura rutinas y recordatorios',
+        content: 'En la app de Alexa, ve a "Más" > "Rutinas" para crear automatizaciones. Por ejemplo, puedes hacer que al decir "Alexa, buenos días" ella te diga el clima, las noticias y encienda las luces. También puedes decir "Alexa, recuérdame tomar mi medicina a las 8 PM".',
+      },
+    ],
+  },
+
+  // ─── 33. Cómo tomar una captura de pantalla ──────────────────────────────────
+  {
+    slug: 'es-take-screenshot',
+    title: 'Cómo tomar una captura de pantalla',
+    excerpt: 'Aprende a tomar una foto de lo que aparece en la pantalla de tu teléfono o computadora.',
+    category: 'essential-skills' as any,
+    tags: ['screenshot', 'capture', 'screen', 'essential', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📷',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Una captura de pantalla (o "screenshot") es una foto de todo lo que aparece en la pantalla de tu teléfono o computadora en ese momento. Es muy útil para guardar información importante como confirmaciones de pedidos, recibos digitales, direcciones, mensajes que quieres recordar, o para mostrarle a alguien lo que ves en tu pantalla cuando necesitas ayuda técnica.
+
+Tomar una captura de pantalla es rápido y gratuito — la imagen se guarda automáticamente en la galería de fotos de tu dispositivo. Después puedes compartirla por mensaje de texto, WhatsApp, correo electrónico, o simplemente guardarla para verla después.
+
+En los iPhones con Face ID (los modelos más nuevos que no tienen botón de inicio), presionas el botón lateral derecho y el botón de subir volumen al mismo tiempo. Verás un destello y la captura aparecerá como una miniatura en la esquina inferior izquierda. En iPhones más antiguos con botón de inicio, presionas el botón de inicio y el botón lateral al mismo tiempo.
+
+En teléfonos Android, generalmente presionas el botón de encendido y el de bajar volumen al mismo tiempo durante un segundo. Algunos teléfonos Samsung también permiten tomar capturas deslizando el borde de la mano por la pantalla de un lado a otro.
+
+En una computadora con Windows, presiona la tecla "PrtSc" (Print Screen) o usa la herramienta de recortes buscando "Snipping Tool" en el menú de inicio. En una Mac, presiona Command + Shift + 3 para capturar toda la pantalla o Command + Shift + 4 para seleccionar un área específica.`,
+    steps: [
+      {
+        title: 'Abre lo que quieres capturar',
+        content: 'Primero, asegúrate de que lo que quieres guardar esté visible en tu pantalla. Puede ser un mensaje, una confirmación de compra, un mapa, un error que quieres reportar, o cualquier otra cosa.',
+      },
+      {
+        title: 'Toma la captura en tu teléfono',
+        content: 'iPhone con Face ID: presiona el botón lateral + subir volumen al mismo tiempo. iPhone con botón de inicio: presiona botón de inicio + botón lateral. Android: presiona encendido + bajar volumen al mismo tiempo.',
+      },
+      {
+        title: 'Revisa la captura',
+        content: 'La captura aparecerá brevemente en una esquina de la pantalla. Tócala para verla en grande, recortarla o dibujar sobre ella. Si no la tocas, se guardará automáticamente en tu galería de fotos.',
+      },
+      {
+        title: 'Encuentra la captura en tu galería',
+        content: 'Abre la app de Fotos (iPhone) o Galería/Google Photos (Android). Las capturas se guardan en un álbum llamado "Capturas de pantalla" o "Screenshots". También aparecen en tu rollo de fotos principal.',
+      },
+      {
+        title: 'Comparte la captura si la necesitas enviar',
+        content: 'Abre la captura en tu galería, toca el ícono de compartir (el cuadrado con flecha en iPhone o los tres puntos conectados en Android) y selecciona cómo quieres enviarla: mensaje de texto, WhatsApp, correo, etc.',
+      },
+    ],
+  },
+
+  // ─── 34. Cómo liberar espacio en tu teléfono ─────────────────────────────────
+  {
+    slug: 'es-free-phone-storage',
+    title: 'Cómo liberar espacio en tu teléfono',
+    excerpt: 'Tu teléfono dice que está lleno. Aprende a liberar espacio eliminando lo que no necesitas.',
+    category: 'phone-guides' as any,
+    tags: ['storage', 'space', 'cleanup', 'phone', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🗑️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Si tu teléfono te muestra un aviso de "Almacenamiento lleno" o notas que funciona más lento de lo normal, probablemente necesitas liberar espacio. Con el tiempo, las fotos, videos, apps y archivos se van acumulando y llenan la memoria de tu teléfono. Pero no te preocupes — hay varias formas de recuperar espacio sin perder nada importante.
+
+Lo que más espacio ocupa generalmente son las fotos y los videos. Un solo video de un minuto puede ocupar más espacio que cientos de fotos. Las apps también ocupan mucho, especialmente las redes sociales como Facebook, Instagram y TikTok que guardan datos temporales llamados "caché" que se acumulan con el uso.
+
+Antes de borrar cualquier cosa, asegúrate de tener una copia de seguridad de tus fotos en la nube (iCloud para iPhone o Google Photos para Android). Así, aunque borres las fotos de tu teléfono, seguirán guardadas en internet y podrás verlas desde cualquier dispositivo.
+
+En iPhone, puedes ver qué ocupa más espacio en Ajustes > General > Almacenamiento del iPhone. Te mostrará una lista de todo lo que ocupa espacio, ordenado de mayor a menor. En Android, ve a Configuración > Almacenamiento para ver el mismo resumen.
+
+Una regla sencilla: si no has usado una app en los últimos 3 meses, probablemente no la necesitas. Bórrala y siempre la puedes volver a descargar gratis si la necesitas en el futuro.`,
+    steps: [
+      {
+        title: 'Revisa cuánto espacio te queda',
+        content: 'iPhone: ve a Ajustes > General > Almacenamiento del iPhone. Android: ve a Configuración > Almacenamiento. Verás una barra que muestra cuánto espacio estás usando y cuánto queda libre.',
+      },
+      {
+        title: 'Borra fotos y videos que no necesitas',
+        content: 'Abre tu app de Fotos y revisa tus imágenes. Borra las fotos borrosas, duplicadas o que ya no quieras. Recuerda que los videos ocupan mucho más que las fotos. Después, ve a "Eliminados recientemente" y vacía esa carpeta también.',
+      },
+      {
+        title: 'Desinstala apps que no uses',
+        content: 'Mira la lista de apps en tu almacenamiento. Las que no hayas abierto en meses, bórralas. iPhone: mantén presionado el ícono > Eliminar app. Android: mantén presionado > Desinstalar. Siempre las puedes volver a descargar.',
+      },
+      {
+        title: 'Limpia la caché de tus apps',
+        content: 'Android: ve a Configuración > Aplicaciones > selecciona una app (como Facebook) > Almacenamiento > Borrar caché. iPhone: la forma más fácil es desinstalar y reinstalar la app. La caché de WhatsApp y Facebook puede ocupar varios gigabytes.',
+      },
+      {
+        title: 'Usa la nube para guardar tus fotos',
+        content: 'Activa Google Photos (Android) o iCloud Photos (iPhone) para que tus fotos se guarden en la nube. Después puedes borrar las fotos del teléfono sabiendo que siguen seguras en internet.',
+      },
+      {
+        title: 'Borra mensajes y archivos de WhatsApp',
+        content: 'WhatsApp guarda muchos videos y fotos que te envían. Abre WhatsApp > Ajustes > Almacenamiento y datos > Administrar almacenamiento. Verás los archivos más pesados y podrás borrar los que no necesites.',
+      },
+    ],
+  },
+
+  // ─── 35. Cómo usar la aplicación de Uber o Lyft ──────────────────────────────
+  {
+    slug: 'es-uber-lyft-app',
+    title: 'Cómo usar la aplicación de Uber o Lyft',
+    excerpt: 'Pide un viaje con Uber o Lyft desde tu teléfono de forma segura y paso a paso.',
+    category: 'essential-skills' as any,
+    tags: ['uber', 'lyft', 'rideshare', 'transportation', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '🚗',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Uber y Lyft son aplicaciones que te permiten pedir un carro con chofer desde tu teléfono. Es como pedir un taxi, pero más fácil y generalmente más barato. No necesitas llamar por teléfono ni ir a parar un taxi en la calle — simplemente abres la app, pones a dónde quieres ir, y un conductor llega a recogerte en minutos.
+
+Ambas apps funcionan de manera muy similar. Descargas la app, creas una cuenta, agregas una forma de pago (tarjeta de débito, crédito o PayPal), y listo. Cuando necesites un viaje, la app te muestra cuánto costará y cuánto tardará en llegar el conductor antes de que confirmes el viaje.
+
+Uber y Lyft están disponibles en la mayoría de ciudades grandes y medianas en Estados Unidos. Los precios varían según la distancia, el tráfico y la hora del día. En horas pico (como las mañanas y tardes entre semana), los precios pueden ser más altos. La app siempre te muestra el precio estimado antes de confirmar para que no haya sorpresas.
+
+Para tu seguridad, ambas apps te muestran el nombre del conductor, su foto, la placa del carro y el modelo del vehículo. Siempre verifica que el carro que llega coincida con la información en tu pantalla antes de subirte. Nunca te subas a un carro que no coincida. También puedes compartir tu viaje en vivo con un familiar para que sepan dónde estás.
+
+Tanto Uber como Lyft están disponibles en español. Puedes cambiar el idioma en la configuración de la app.`,
+    steps: [
+      {
+        title: 'Descarga Uber o Lyft',
+        content: 'Abre la App Store (iPhone) o Google Play (Android) y busca "Uber" o "Lyft". Descarga la que prefieras (o ambas para comparar precios). Crea una cuenta con tu número de teléfono y correo electrónico.',
+      },
+      {
+        title: 'Agrega una forma de pago',
+        content: 'En la app, ve a la sección de "Pago" o "Billetera". Agrega una tarjeta de débito, crédito, o conecta PayPal. Todo se cobra automáticamente — no necesitas pagar en efectivo (aunque algunas ciudades lo permiten).',
+      },
+      {
+        title: 'Pide tu viaje',
+        content: 'Abre la app y escribe a dónde quieres ir en "¿A dónde quieres ir?". La app te mostrará opciones de viaje (económico, compartido, premium) con el precio y tiempo estimado. Selecciona la opción que prefieras.',
+      },
+      {
+        title: 'Confirma y espera al conductor',
+        content: 'Toca "Confirmar" para pedir el viaje. Verás el nombre del conductor, su foto, el modelo y color del carro, y la placa. La app te muestra en tiempo real dónde está el conductor y cuánto falta para que llegue.',
+      },
+      {
+        title: 'Verifica el carro antes de subirte',
+        content: 'Cuando llegue el carro, verifica que la placa, el modelo y el conductor coincidan con lo que dice la app. Pregunta "¿Viaje para [tu nombre]?" antes de subirte. Nunca te subas a un carro que no coincida.',
+      },
+      {
+        title: 'Comparte tu viaje con alguien de confianza',
+        content: 'Dentro de la app durante el viaje, busca "Compartir mi viaje" o "Share trip". Selecciona un contacto de confianza y ellos recibirán un enlace para ver tu ruta en tiempo real. Es una buena medida de seguridad.',
+      },
+    ],
+  },
+
+  // ─── 36. Cómo configurar el correo electrónico en tu teléfono ────────────────
+  {
+    slug: 'es-setup-email-phone',
+    title: 'Cómo configurar el correo electrónico en tu teléfono',
+    excerpt: 'Recibe y envía correos desde tu teléfono configurando tu cuenta de email paso a paso.',
+    category: 'communication' as any,
+    tags: ['email', 'gmail', 'outlook', 'yahoo', 'setup', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📧',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Tener tu correo electrónico en tu teléfono es como tener un buzón de correo que llevas contigo a todas partes. Puedes recibir y enviar correos al instante sin necesidad de prender la computadora. Esto es especialmente útil para recibir confirmaciones de citas médicas, recibos de compras, mensajes del trabajo o la escuela de tus hijos, y avisos importantes.
+
+Los correos más populares en Estados Unidos son Gmail (de Google), Outlook/Hotmail (de Microsoft) y Yahoo Mail. Si ya tienes un correo electrónico, solo necesitas agregarlo a tu teléfono. Si no tienes correo, te recomendamos crear uno de Gmail porque es gratis y funciona muy bien con teléfonos Android, y también es compatible con iPhone.
+
+En un iPhone, puedes usar la app de Mail que ya viene instalada, o descargar la app de Gmail, Outlook o Yahoo Mail desde la App Store. En Android, Gmail ya viene preinstalado y funciona con cualquier tipo de correo, no solo Gmail.
+
+La configuración es muy sencilla: abres la app de correo, ingresas tu dirección de email (como tunombre@gmail.com) y tu contraseña, y la app hace el resto automáticamente. En pocos segundos, todos tus correos aparecerán en tu teléfono.
+
+Un consejo importante: activa las notificaciones para que tu teléfono te avise cuando llegue un correo nuevo. Así nunca te perderás un mensaje importante.`,
+    steps: [
+      {
+        title: 'Decide qué app de correo usar',
+        content: 'iPhone: puedes usar la app "Mail" que ya viene incluida, o descargar "Gmail" o "Outlook" de la App Store. Android: usa la app "Gmail" que ya está instalada. Gmail puede manejar correos de Gmail, Outlook, Yahoo y más.',
+      },
+      {
+        title: 'Abre la app y agrega tu cuenta',
+        content: 'Abre la app de correo. Toca "Agregar cuenta" o "Iniciar sesión". Selecciona tu proveedor de correo: Google (Gmail), Microsoft (Outlook/Hotmail), Yahoo, u otro. Si no ves tu proveedor, selecciona "Otro".',
+      },
+      {
+        title: 'Ingresa tu correo y contraseña',
+        content: 'Escribe tu dirección de correo completa (ejemplo: maria.garcia@gmail.com) y tu contraseña. Si tienes activada la verificación en dos pasos, te pedirá un código que recibirás por mensaje de texto.',
+      },
+      {
+        title: 'Permite que la app acceda a tu correo',
+        content: 'La app te pedirá permisos para acceder a tu correo, calendario y contactos. Acepta todos para que funcione correctamente. Esto es seguro — solo le das acceso a la app oficial de correo.',
+      },
+      {
+        title: 'Activa las notificaciones',
+        content: 'Si la app te pregunta si quieres recibir notificaciones, di que sí. Así tu teléfono te avisará con un sonido o vibración cada vez que recibas un correo nuevo. Puedes ajustar esto después en Ajustes > Notificaciones.',
+      },
+      {
+        title: 'Envía un correo de prueba',
+        content: 'Toca el ícono de "+" o "Redactar" (generalmente un lápiz o un cuadrado con un lápiz). Escribe la dirección de un familiar en "Para", un asunto como "Prueba", y un mensaje como "¡Hola! Estoy probando mi correo nuevo". Toca Enviar.',
+      },
+    ],
+  },
+
+  // ─── 37. Cómo usar la cámara de tu teléfono ─────────────────────────────────
+  {
+    slug: 'es-phone-camera',
+    title: 'Cómo usar la cámara de tu teléfono',
+    excerpt: 'Toma fotos y videos claros con la cámara de tu teléfono, incluso si eres principiante.',
+    category: 'essential-skills' as any,
+    tags: ['camera', 'photos', 'video', 'photography', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '📸',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `La cámara de tu teléfono es una herramienta increíble que llevas contigo a todos lados. Los teléfonos modernos toman fotos de excelente calidad — en muchos casos, mejores que las cámaras digitales de hace unos años. Ya sea para capturar un momento familiar, tomar una foto de una receta, o grabar un video del recital de tus nietos, tu teléfono puede hacerlo todo.
+
+La app de cámara es una de las más fáciles de usar. La mayoría de los teléfonos te permiten abrirla rápidamente sin desbloquear el teléfono — en iPhone, desliza a la izquierda desde la pantalla de bloqueo; en Android, presiona dos veces el botón de encendido.
+
+Para tomar una buena foto, lo más importante es la luz. Trata de tener la luz frente a lo que estás fotografiando, no detrás. Por ejemplo, si quieres tomarle una foto a alguien, no los pongas frente a una ventana con el sol detrás porque saldrán oscuros. También asegúrate de que la lente de la cámara esté limpia — con frecuencia se ensucia con huellas de dedos.
+
+Tu teléfono tiene dos cámaras: la trasera (que toma las mejores fotos) y la frontal o "selfie" (para tomarte fotos a ti mismo o hacer videollamadas). Puedes cambiar entre ellas tocando el ícono de flechas circulares en la app de cámara.
+
+Además de fotos, puedes grabar videos deslizando al modo "Video" en la app de cámara. También puedes tomar fotos panorámicas (para paisajes anchos) y fotos en modo retrato (que desenfocan el fondo como las fotos profesionales).`,
+    steps: [
+      {
+        title: 'Abre la cámara rápidamente',
+        content: 'iPhone: desde la pantalla de bloqueo, desliza a la izquierda. Android: presiona dos veces el botón de encendido. También puedes tocar el ícono de la cámara en tu pantalla principal. No necesitas desbloquear el teléfono.',
+      },
+      {
+        title: 'Encuadra la foto y enfoca',
+        content: 'Apunta tu teléfono hacia lo que quieres fotografiar. Toca la pantalla en el objeto principal para enfocarlo — verás un cuadrito amarillo que indica dónde está el enfoque. Sostén el teléfono con ambas manos para que no salga movida.',
+      },
+      {
+        title: 'Toma la foto',
+        content: 'Toca el botón grande y redondo en la parte inferior de la pantalla (el "obturador"). Escucharás un sonido de clic y la foto se guardará automáticamente en tu galería. Puedes tomar varias fotos seguidas.',
+      },
+      {
+        title: 'Cambia a la cámara frontal para selfies',
+        content: 'Toca el ícono de flechas circulares (🔄) para cambiar entre la cámara trasera y la frontal. La cámara frontal es perfecta para tomarte fotos a ti mismo, con familia, o para videollamadas.',
+      },
+      {
+        title: 'Graba un video',
+        content: 'Desliza a la derecha en la app de cámara hasta que diga "Video" o toca "Video" en las opciones. Toca el botón rojo para empezar a grabar y tócalo de nuevo para detener. El video se guardará en tu galería.',
+      },
+      {
+        title: 'Revisa y comparte tus fotos',
+        content: 'Toca la miniatura de la última foto en la esquina inferior de la cámara para verla. Desde ahí puedes deslizar para ver todas tus fotos, borrar las que no te gusten, o tocar el ícono de compartir para enviarla.',
+      },
+    ],
+  },
+
+  // ─── 38. Cómo imprimir desde tu teléfono ─────────────────────────────────────
+  {
+    slug: 'es-print-from-phone',
+    title: 'Cómo imprimir desde tu teléfono',
+    excerpt: 'Imprime documentos, fotos y correos directamente desde tu teléfono sin cables.',
+    category: 'essential-skills' as any,
+    tags: ['printing', 'wireless', 'airprint', 'documents', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🖨️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Imprimir desde tu teléfono es más fácil de lo que piensas. No necesitas cables ni una computadora — si tu impresora se conecta a WiFi (la mayoría de las impresoras modernas lo hacen), puedes enviar documentos, fotos, correos y más directamente desde tu teléfono. Es muy útil para imprimir recetas, cupones, formularios del gobierno, cartas, y fotos familiares.
+
+Para que funcione, tu teléfono y tu impresora deben estar conectados a la misma red WiFi. Es decir, ambos deben usar el mismo internet de tu casa. Si tienes un iPhone, la función se llama AirPrint y funciona automáticamente con impresoras compatibles de HP, Canon, Epson y Brother. En Android, se llama Google Cloud Print o simplemente "Imprimir".
+
+Las marcas de impresoras más populares en Estados Unidos son HP, Canon, Epson y Brother. Todas tienen sus propias apps gratuitas que puedes descargar para tener más opciones de impresión: HP Smart, Canon PRINT, Epson iPrint, y Brother iPrint&Scan.
+
+Si no tienes impresora en casa, puedes imprimir en tiendas como FedEx Office, Staples, CVS, Walgreens o la biblioteca pública. Muchas de estas tiendas tienen apps donde puedes enviar tus documentos para recogerlos ya impresos.
+
+Un consejo: antes de imprimir, revisa la vista previa en tu pantalla para asegurarte de que el documento se ve bien y no vas a gastar tinta y papel innecesariamente.`,
+    steps: [
+      {
+        title: 'Verifica que tu impresora esté conectada al WiFi',
+        content: 'Enciende tu impresora y asegúrate de que esté conectada a la misma red WiFi que tu teléfono. Busca el ícono de WiFi en la pantalla de la impresora. Si no está conectada, usa el menú de configuración de la impresora para conectarla.',
+      },
+      {
+        title: 'Abre lo que quieres imprimir',
+        content: 'Puede ser una foto en tu galería, un correo electrónico, un documento PDF, o una página web. Abre el archivo que quieras imprimir en la app correspondiente.',
+      },
+      {
+        title: 'Busca la opción de imprimir',
+        content: 'Toca el ícono de compartir (cuadrado con flecha en iPhone, tres puntos en Android) y busca "Imprimir" en las opciones. En algunas apps, la opción está en el menú de tres puntos (⋯) arriba a la derecha.',
+      },
+      {
+        title: 'Selecciona tu impresora',
+        content: 'Tu teléfono buscará impresoras disponibles en tu red WiFi. Toca el nombre de tu impresora cuando aparezca. Si no aparece, verifica que ambos dispositivos estén en la misma red WiFi.',
+      },
+      {
+        title: 'Ajusta las opciones y toca Imprimir',
+        content: 'Puedes cambiar el número de copias, elegir blanco y negro o color, y seleccionar qué páginas imprimir. Cuando todo esté listo, toca "Imprimir". El documento saldrá de tu impresora en unos segundos.',
+      },
+    ],
+  },
+
+  // ─── 39. Cómo usar Venmo de forma segura ─────────────────────────────────────
+  {
+    slug: 'es-venmo-safely',
+    title: 'Cómo usar Venmo de forma segura',
+    excerpt: 'Envía y recibe dinero con Venmo de manera segura, paso a paso.',
+    category: 'financial-tech' as any,
+    tags: ['venmo', 'payments', 'money', 'safety', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '💸',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Venmo es una de las aplicaciones más populares en Estados Unidos para enviar y recibir dinero entre personas. Es perfecta para dividir la cuenta de un restaurante, pagarle a alguien por un mandado, enviar dinero a tus hijos, o recibir pagos por cosas que vendas. Millones de estadounidenses la usan todos los días.
+
+Venmo es propiedad de PayPal, una empresa muy conocida y confiable. La app es gratuita y enviar dinero desde tu cuenta de Venmo, banco o tarjeta de débito no tiene costo. Solo cobran una pequeña comisión (alrededor de 3%) si usas tarjeta de crédito.
+
+Para empezar, descarga Venmo desde la App Store o Google Play y crea una cuenta con tu número de teléfono y correo electrónico. Luego necesitas conectar tu banco o tarjeta de débito para poder agregar fondos y enviar dinero.
+
+Cuando quieras enviarle dinero a alguien, buscas a la persona por su nombre, usuario de Venmo o número de teléfono, escribes la cantidad, agregas una nota (como "renta de abril" o "pizza de anoche"), y tocas "Pagar". El dinero llega al instante a su cuenta de Venmo.
+
+Para mantener tu dinero seguro, es muy importante que actives la verificación en dos pasos y que uses un PIN o huella digital para abrir la app. Nunca envíes dinero a personas que no conoces personalmente, y desconfía de mensajes de extraños pidiéndote dinero — es una estafa muy común.`,
+    steps: [
+      {
+        title: 'Descarga Venmo y crea tu cuenta',
+        content: 'Busca "Venmo" en la App Store (iPhone) o Google Play (Android). Descárgala gratis. Regístrate con tu número de teléfono, correo electrónico y crea una contraseña segura.',
+      },
+      {
+        title: 'Conecta tu banco o tarjeta de débito',
+        content: 'Ve al menú (☰) > Configuración > Métodos de pago > Agregar banco o tarjeta. Puedes conectar tu banco directamente ingresando tu usuario y contraseña de banca en línea, o agregar una tarjeta de débito manualmente.',
+      },
+      {
+        title: 'Activa la seguridad de la app',
+        content: 'Ve a Configuración > Seguridad. Activa el PIN o la huella digital para que nadie pueda abrir la app sin tu permiso. También activa la verificación en dos pasos para proteger tu cuenta.',
+      },
+      {
+        title: 'Envía dinero a alguien',
+        content: 'Toca el botón de "Pagar o solicitar" (el ícono de lápiz arriba). Busca a la persona por nombre, teléfono o usuario. Ingresa la cantidad, escribe una nota (como "cena"), y toca "Pagar".',
+      },
+      {
+        title: 'Cambia tu privacidad',
+        content: 'Por defecto, Venmo muestra tus transacciones a todos. Para cambiar esto, ve a Configuración > Privacidad y selecciona "Privado". Así nadie más podrá ver a quién le envías dinero.',
+      },
+      {
+        title: 'Transfiere dinero a tu banco',
+        content: 'Si recibes dinero en Venmo, puedes transferirlo a tu banco. Ve a tu saldo de Venmo y toca "Transferir". La transferencia estándar (gratis) tarda 1-3 días. La transferencia instantánea cobra $0.25.',
+      },
+    ],
+  },
+
+  // ─── 40. Cómo configurar un router WiFi nuevo ────────────────────────────────
+  {
+    slug: 'es-setup-wifi-router',
+    title: 'Cómo configurar un router WiFi nuevo',
+    excerpt: 'Configura tu nuevo router WiFi paso a paso para tener internet en toda tu casa.',
+    category: 'internet-connectivity' as any,
+    tags: ['router', 'wifi', 'internet', 'setup', 'networking', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '📡',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Un router WiFi es la cajita que reparte la señal de internet a todos los dispositivos de tu casa — tu teléfono, computadora, televisor, tableta y más. Si acabas de contratar internet con un proveedor como Spectrum, Xfinity (Comcast), AT&T o T-Mobile Home Internet, probablemente te dieron un router o compraste uno nuevo. Aquí te enseñamos a configurarlo.
+
+El router se conecta a internet a través de un cable que viene de la pared (cable coaxial o fibra óptica) o del módem que te dio tu proveedor. El módem recibe la señal de internet y el router la reparte por toda tu casa vía WiFi. Algunos proveedores te dan un aparato que es módem y router combinado — esto es lo más común.
+
+Para la configuración inicial, necesitarás el router, el cable de corriente, un cable Ethernet (un cable plano con un conector transparente de plástico que generalmente viene incluido), y la información de tu cuenta de internet.
+
+Una vez configurado, es importante que cambies el nombre de la red WiFi y la contraseña que vienen por defecto. Los nombres y contraseñas de fábrica son fáciles de adivinar para los hackers. Elige un nombre de red que puedas identificar fácilmente (como "WiFi_Casa_Garcia") y una contraseña de al menos 12 caracteres.
+
+La ubicación del router también importa. Colócalo en un lugar central de tu casa, preferiblemente en alto (como un estante), lejos de paredes gruesas y del microondas (el microondas puede interferir con la señal WiFi).`,
+    steps: [
+      {
+        title: 'Conecta el router a la corriente y al internet',
+        content: 'Conecta el cable de corriente del router a la pared. Luego conecta el cable de internet: si tienes un módem separado, usa el cable Ethernet para conectar el puerto "WAN" o "Internet" del router al módem. Espera 2-3 minutos hasta que las luces se estabilicen.',
+      },
+      {
+        title: 'Encuentra el nombre y contraseña predeterminados',
+        content: 'Busca una etiqueta en la parte de abajo o trasera del router. Ahí verás el nombre de la red WiFi (SSID) y la contraseña predeterminados. También puede venir en una tarjeta dentro de la caja del router.',
+      },
+      {
+        title: 'Conéctate al WiFi desde tu teléfono',
+        content: 'En tu teléfono, ve a Ajustes > WiFi. Busca el nombre de la red que leíste en la etiqueta del router y conéctate usando la contraseña predeterminada. Esto es temporal — luego la cambiarás.',
+      },
+      {
+        title: 'Configura el router desde la app o el navegador',
+        content: 'La mayoría de los routers tienen una app (como Xfinity My Account, My Spectrum, AT&T Smart Home Manager). Descárgala y sigue las instrucciones. Si no hay app, abre el navegador y escribe 192.168.1.1 o la dirección que indique el manual.',
+      },
+      {
+        title: 'Cambia el nombre y contraseña del WiFi',
+        content: 'En la app o configuración del router, busca la opción de "Red WiFi" o "Wireless Settings". Cambia el nombre de la red a algo que reconozcas (como "WiFi_Casa") y crea una contraseña fuerte de al menos 12 caracteres.',
+      },
+      {
+        title: 'Reconecta todos tus dispositivos',
+        content: 'Después de cambiar el nombre y contraseña, todos los dispositivos se desconectarán. Ve a Ajustes > WiFi en cada dispositivo (teléfono, tableta, TV, computadora) y conéctate con el nuevo nombre y contraseña.',
+      },
+    ],
+  },
+
+  // ─── 41. Cómo usar Cash App paso a paso ──────────────────────────────────────
+  {
+    slug: 'es-cash-app-guide',
+    title: 'Cómo usar Cash App paso a paso',
+    excerpt: 'Aprende a enviar, recibir dinero y usar tu Cash App Card con esta guía completa.',
+    category: 'financial-tech' as any,
+    tags: ['cash-app', 'payments', 'money-transfer', 'debit-card', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '💵',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Cash App es una aplicación gratuita de Block (antes Square) que te permite enviar y recibir dinero instantáneamente. Es muy popular en Estados Unidos, especialmente entre personas que quieren una forma rápida de mandar dinero a familiares y amigos, pagar por servicios, o incluso recibir pagos del gobierno. Más de 50 millones de personas en EE.UU. la usan.
+
+Con Cash App puedes hacer varias cosas: enviar dinero a cualquier persona que tenga la app, recibir pagos, pedir una tarjeta de débito gratuita llamada "Cash Card" que puedes usar en cualquier tienda que acepte Visa, e incluso depositar cheques tomándoles una foto. Algunos empleadores también usan Cash App para pagar a sus trabajadores.
+
+Para empezar, descarga Cash App desde la App Store o Google Play. Te pedirá tu número de teléfono o correo electrónico para crear la cuenta. Luego necesitas elegir un "Cash Tag" — es como tu nombre de usuario (empieza con $, por ejemplo $MariaGarcia). Este es el nombre que le das a la gente para que te envíen dinero.
+
+Después, conecta tu banco o tarjeta de débito para poder agregar fondos y retirar dinero. Cash App usa el sistema bancario de EE.UU., así que necesitas una cuenta en un banco estadounidense.
+
+Un aspecto importante de seguridad: Cash App nunca te llamará por teléfono para pedirte tu PIN, contraseña o código de verificación. Si alguien te llama diciendo que es de Cash App, es una estafa. El soporte real de Cash App solo se contacta a través de la app.`,
+    steps: [
+      {
+        title: 'Descarga Cash App y crea tu cuenta',
+        content: 'Busca "Cash App" en la App Store o Google Play. Descárgala gratis. Ábrela, ingresa tu número de teléfono o correo, y sigue las instrucciones. Crea un Cash Tag único (como $TuNombre) — esto es lo que le darás a la gente para que te paguen.',
+      },
+      {
+        title: 'Conecta tu banco o tarjeta de débito',
+        content: 'Toca el ícono del banco en la pantalla principal. Selecciona "Agregar banco" e ingresa el número de tu cuenta bancaria y número de ruta (routing number). También puedes agregar una tarjeta de débito ingresando el número de la tarjeta.',
+      },
+      {
+        title: 'Envía dinero a alguien',
+        content: 'Toca "$" en la pantalla principal, escribe la cantidad (ejemplo: 25), toca "Pagar", busca a la persona por su Cash Tag, teléfono o nombre, y toca "Pagar". El dinero llega al instante a su cuenta de Cash App.',
+      },
+      {
+        title: 'Pide tu Cash Card gratis',
+        content: 'Toca el ícono de la tarjeta en la parte inferior. Selecciona "Obtener Cash Card". Es una tarjeta de débito Visa gratuita que te envían por correo. La puedes usar en tiendas, gasolineras, restaurantes y cajeros automáticos.',
+      },
+      {
+        title: 'Deposita un cheque con tu cámara',
+        content: 'Toca el ícono del banco > "Depositar cheque". Endosa el cheque (firma atrás y escribe "Solo para depósito móvil"). Toma una foto del frente y reverso del cheque. Los fondos generalmente están disponibles en 1-2 días.',
+      },
+      {
+        title: 'Activa la seguridad de tu cuenta',
+        content: 'Ve a tu foto de perfil > Privacidad y seguridad. Activa el "Security Lock" (bloqueo de seguridad) para que te pida un PIN antes de cada pago. También activa las notificaciones para saber cada vez que se mueva dinero en tu cuenta.',
+      },
+    ],
+  },
+
+  // ─── 42. Cómo proteger tu cuenta de banco en línea ───────────────────────────
+  {
+    slug: 'es-online-banking-security',
+    title: 'Cómo proteger tu cuenta de banco en línea',
+    excerpt: 'Protege tu dinero con estos consejos de seguridad para tu banca en línea y app del banco.',
+    category: 'financial-tech' as any,
+    tags: ['banking', 'security', 'online-banking', 'fraud', 'safety', 'beginner'],
+    readTime: '6 min',
+    thumbnailEmoji: '🏦',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `La banca en línea (online banking) te permite manejar tu dinero desde tu teléfono o computadora sin ir al banco. Puedes ver tu saldo, pagar facturas, transferir dinero y depositar cheques desde la comodidad de tu casa. Los bancos más grandes de Estados Unidos como Chase, Bank of America, Wells Fargo, Citibank y Capital One tienen apps excelentes y seguras.
+
+Sin embargo, es importante tomar precauciones para proteger tu cuenta. Los estafadores están constantemente inventando nuevas formas de robar información bancaria, y la comunidad hispana es uno de sus blancos principales. Según la FTC (Comisión Federal de Comercio), los hispanos en EE.UU. reportaron más de $1 mil millones en pérdidas por fraude en años recientes.
+
+La primera regla de seguridad: tu banco nunca te llamará, enviará un mensaje de texto o correo electrónico pidiéndote tu contraseña, PIN, número de seguro social o código de verificación. Si alguien te contacta diciendo que es de tu banco y te pide esta información, es una estafa — cuelga inmediatamente y llama al número que aparece detrás de tu tarjeta bancaria.
+
+Siempre descarga la app oficial de tu banco desde la App Store o Google Play. Nunca descargues una app bancaria desde un enlace que te llegue por mensaje de texto o correo electrónico — esto es "phishing", una técnica que usan los estafadores para crear apps falsas que se parecen a las de tu banco.
+
+Revisa tu cuenta bancaria al menos una vez por semana. Si ves alguna transacción que no reconoces, llama a tu banco inmediatamente al número que está detrás de tu tarjeta. Mientras más rápido reportes actividad sospechosa, más fácil es recuperar tu dinero.`,
+    steps: [
+      {
+        title: 'Descarga la app oficial de tu banco',
+        content: 'Abre la App Store o Google Play y busca el nombre exacto de tu banco (Chase, Bank of America, Wells Fargo, etc.). Verifica que el creador de la app sea el banco oficial. Descárgala e inicia sesión con tus credenciales.',
+      },
+      {
+        title: 'Crea una contraseña fuerte y única',
+        content: 'Tu contraseña del banco debe ser diferente a todas las demás. Usa al menos 12 caracteres con mayúsculas, minúsculas, números y símbolos. Nunca uses la misma contraseña del banco para Facebook, correo u otras cuentas.',
+      },
+      {
+        title: 'Activa la verificación en dos pasos',
+        content: 'En la app de tu banco, ve a Seguridad o Configuración > Verificación en dos pasos. Actívala. Cada vez que inicies sesión, te enviarán un código por mensaje de texto o llamada que debes ingresar. Esto evita que alguien entre a tu cuenta aunque sepa tu contraseña.',
+      },
+      {
+        title: 'Activa alertas de transacciones',
+        content: 'Configura tu app para que te envíe una notificación cada vez que se haga un cobro, transferencia o retiro. Así sabrás al instante si alguien usa tu cuenta sin permiso. Búscalo en Configuración > Alertas.',
+      },
+      {
+        title: 'Nunca uses WiFi público para tu banco',
+        content: 'No entres a tu cuenta del banco cuando estés conectado al WiFi de Starbucks, el aeropuerto, hoteles u otros lugares públicos. Los hackers pueden interceptar tu información. Usa tus datos celulares (4G/5G) o espera a llegar a tu casa.',
+      },
+      {
+        title: 'Revisa tu cuenta semanalmente',
+        content: 'Abre la app de tu banco al menos una vez por semana y revisa las transacciones recientes. Si ves algo que no reconoces, llama inmediatamente al número de atrás de tu tarjeta bancaria. No esperes — reporta cualquier actividad sospechosa de inmediato.',
+      },
+    ],
+  },
+
+  // ─── 43. Cómo configurar el modo No Molestar ────────────────────────────────
+  {
+    slug: 'es-do-not-disturb',
+    title: 'Cómo configurar el modo No Molestar',
+    excerpt: 'Silencia llamadas y notificaciones cuando necesitas descansar o concentrarte.',
+    category: 'phone-guides' as any,
+    tags: ['do-not-disturb', 'notifications', 'quiet', 'sleep', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🌙',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `El modo "No Molestar" (o "Do Not Disturb" en inglés) es una función de tu teléfono que silencia llamadas, mensajes de texto, notificaciones y alertas temporalmente. Es perfecto para cuando quieres dormir sin que te despierten, cuando estás en una cita médica, en la iglesia, en una reunión, o simplemente cuando necesitas un rato de tranquilidad.
+
+Cuando activas el modo No Molestar, tu teléfono no sonará ni vibrará. Las llamadas y mensajes siguen llegando — simplemente no te notifican hasta que desactives el modo. Es como poner tu teléfono en silencio, pero con más opciones de personalización.
+
+La mejor parte es que puedes permitir que ciertas personas te llamen incluso cuando No Molestar está activado. Por ejemplo, puedes configurarlo para que las llamadas de tus hijos, tu pareja o tu médico siempre suenen, mientras que las llamadas de números desconocidos o de spam se silencian completamente.
+
+En iPhone, la función se llama "Modos de concentración" (Focus) y No Molestar es uno de ellos. En Android, la función se llama simplemente "No Molestar" o "Do Not Disturb".
+
+También puedes programar un horario para que No Molestar se active y desactive automáticamente. Por ejemplo, puedes configurarlo para que se active todas las noches a las 10 PM y se desactive a las 7 AM. Así no tienes que acordarte de activarlo cada noche.`,
+    steps: [
+      {
+        title: 'Encuentra la opción de No Molestar',
+        content: 'iPhone: ve a Ajustes > Modos de concentración > No Molestar. También puedes deslizar desde arriba a la derecha y tocar el ícono de la luna (🌙). Android: ve a Configuración > Sonido > No Molestar. También puedes deslizar hacia abajo y tocar el ícono de No Molestar.',
+      },
+      {
+        title: 'Actívalo manualmente',
+        content: 'La forma más rápida es desde el Centro de Control. iPhone: desliza desde la esquina superior derecha y toca la luna. Android: desliza hacia abajo desde arriba y toca "No Molestar". El ícono de la luna aparecerá en tu barra de estado.',
+      },
+      {
+        title: 'Permite llamadas de tus contactos importantes',
+        content: 'iPhone: en Modos de concentración > No Molestar > Personas > Llamadas de, selecciona "Favoritos" o agrega personas específicas. Android: en No Molestar > Excepciones > Llamadas, selecciona "Solo de contactos favoritos".',
+      },
+      {
+        title: 'Programa un horario automático',
+        content: 'iPhone: en No Molestar, toca "Agregar horario". Android: en No Molestar, toca "Horarios" o "Activar automáticamente". Configura la hora de inicio (como 10 PM) y la hora de fin (como 7 AM) para que se active solo durante la noche.',
+      },
+      {
+        title: 'Permite llamadas repetidas de emergencia',
+        content: 'Activa la opción de "Llamadas repetidas" en la configuración de No Molestar. Si alguien te llama dos veces en 3 minutos, la segunda llamada sonará. Esto permite que las llamadas de emergencia reales te lleguen.',
+      },
+    ],
+  },
+
+  // ─── 44. Cómo usar la aplicación del clima ───────────────────────────────────
+  {
+    slug: 'es-weather-app',
+    title: 'Cómo usar la aplicación del clima',
+    excerpt: 'Consulta el clima actual y el pronóstico de la semana usando la app del clima en tu teléfono.',
+    category: 'essential-skills' as any,
+    tags: ['weather', 'clima', 'forecast', 'app', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '🌤️',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `La aplicación del clima te dice la temperatura actual, si va a llover, si hará frío o calor, y el pronóstico para los próximos días. Es como tener un meteorólogo personal en tu bolsillo. Es especialmente útil para planear qué ropa ponerte, si debes llevar sombrilla, o si es un buen día para actividades al aire libre.
+
+Tu teléfono ya viene con una app del clima preinstalada. En iPhone, se llama "Clima" (Weather) y tiene un ícono azul con nubes y sol. En Android, la app de Google ya incluye información del clima, y muchos teléfonos Samsung y otros traen su propia app del clima.
+
+La app te muestra la temperatura en grados Fahrenheit (que es lo que se usa en Estados Unidos) o Celsius. Si ves un número como 75°F, eso es una temperatura agradable, perfecta para estar afuera. Si ves 32°F o menos, hace mucho frío y puede haber hielo. Si ves 90°F o más, hace mucho calor y debes hidratarte bien.
+
+También puedes ver alertas de clima severo como tormentas, huracanes, tornados y olas de calor. Estas alertas son importantes para tu seguridad, especialmente si vives en áreas propensas a este tipo de eventos climáticos. Tu teléfono te enviará una notificación de emergencia automáticamente si hay un peligro en tu zona, pero la app del clima te da más detalles.
+
+Si quieres más opciones, apps gratuitas como Weather Channel, AccuWeather y Weather Underground ofrecen pronósticos más detallados, radar de lluvia en tiempo real y alertas personalizadas.`,
+    steps: [
+      {
+        title: 'Abre la app del clima en tu teléfono',
+        content: 'iPhone: busca el ícono azul de "Clima" (Weather). Android: busca "Clima" o "Weather" en tu pantalla principal, o pregúntale a Google Assistant "¿Qué clima hace hoy?". Si no la encuentras, descarga "The Weather Channel" gratis.',
+      },
+      {
+        title: 'Permite el acceso a tu ubicación',
+        content: 'La app te preguntará si puede usar tu ubicación para darte el clima de donde estás. Di que sí ("Permitir mientras se usa la app"). Así te mostrará la temperatura exacta de tu zona.',
+      },
+      {
+        title: 'Lee la temperatura actual',
+        content: 'La pantalla principal te muestra la temperatura actual en grande. Debajo verás si está soleado, nublado, lloviendo, etc. También verás la temperatura máxima y mínima del día. Recuerda: en EE.UU. se usa Fahrenheit, no Celsius.',
+      },
+      {
+        title: 'Revisa el pronóstico de la semana',
+        content: 'Desliza hacia abajo para ver el pronóstico de los próximos 7-10 días. Cada día muestra la temperatura alta y baja, y si se esperan lluvias. Esto te ayuda a planear actividades y saber qué ropa usar.',
+      },
+      {
+        title: 'Agrega otras ciudades',
+        content: 'Si tienes familia en otra ciudad o estado, puedes agregar su ubicación. Toca el ícono de lista o el "+" y busca la ciudad (como "Houston, TX" o "Los Angeles, CA"). Así puedes ver el clima de varias ciudades.',
+      },
+    ],
+  },
+
+  // ─── 45. Cómo copiar y pegar en tu teléfono ─────────────────────────────────
+  {
+    slug: 'es-copy-paste',
+    title: 'Cómo copiar y pegar en tu teléfono',
+    excerpt: 'Domina una de las funciones más útiles: copiar texto, imágenes y enlaces para pegarlos donde quieras.',
+    category: 'essential-skills' as any,
+    tags: ['copy', 'paste', 'clipboard', 'essential', 'beginner'],
+    readTime: '4 min',
+    thumbnailEmoji: '📋',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Copiar y pegar es una de las funciones más útiles que puedes aprender en tu teléfono. Te permite tomar un texto, una dirección, un enlace web, un número de teléfono o casi cualquier información de un lugar y ponerla en otro, sin tener que escribirla de nuevo. Es como recortar algo de un papel y pegarlo en otro.
+
+Por ejemplo, si alguien te envía una dirección por mensaje de texto y quieres buscarla en Google Maps, no necesitas memorizar la dirección y escribirla letra por letra. Simplemente la copias del mensaje y la pegas en Google Maps. También es muy útil para copiar contraseñas largas, números de confirmación, o recetas.
+
+El proceso es muy similar en iPhone y Android. Primero, mantienes presionado el dedo sobre el texto que quieres copiar hasta que se resalte en azul. Luego ajustas los "manijitas" (esos círculos azules al inicio y fin del texto) para seleccionar exactamente lo que quieres. Después, tocas "Copiar" en el menú que aparece.
+
+Para pegar lo que copiaste, ve a la otra app o campo de texto donde lo quieres poner, mantén presionado el dedo en el espacio vacío, y toca "Pegar". El texto aparecerá como si lo hubieras escrito.
+
+También puedes copiar y pegar imágenes en muchas apps. En WhatsApp, por ejemplo, puedes copiar una imagen y pegarla en otra conversación. Y en el navegador, puedes copiar la dirección de una página web (la URL) y pegarla en un mensaje para compartirla.`,
+    steps: [
+      {
+        title: 'Selecciona el texto que quieres copiar',
+        content: 'Mantén presionado el dedo sobre la palabra o número que quieres copiar. Espera hasta que se resalte en azul y aparezcan dos "manijitas" o bolitas azules. No levantes el dedo hasta que veas el resaltado.',
+      },
+      {
+        title: 'Ajusta la selección si es necesario',
+        content: 'Si se resaltó más o menos texto del que necesitas, arrastra las bolitas azules al inicio y fin del texto que quieres copiar. Puedes seleccionar una palabra, una oración completa o un párrafo entero.',
+      },
+      {
+        title: 'Toca "Copiar"',
+        content: 'Aparecerá un menú con opciones como "Copiar", "Cortar", "Seleccionar todo". Toca "Copiar". El texto se guardará temporalmente en la memoria de tu teléfono (esto se llama "portapapeles"). No verás ningún cambio visible, pero el texto ya está copiado.',
+      },
+      {
+        title: 'Ve al lugar donde quieres pegar',
+        content: 'Abre la app donde quieres pegar el texto — puede ser un mensaje de texto, WhatsApp, un correo electrónico, Google Maps, notas, o cualquier otro lugar donde puedas escribir.',
+      },
+      {
+        title: 'Pega el texto',
+        content: 'Toca el campo donde quieres escribir y mantén presionado el dedo por un segundo. Aparecerá la opción "Pegar". Tócala y el texto que copiaste aparecerá instantáneamente. Ya puedes enviarlo o editarlo.',
+      },
+    ],
+  },
+
+  // ─── 46. Cómo configurar recordatorios de medicamentos ───────────────────────
+  {
+    slug: 'es-medication-reminders',
+    title: 'Cómo configurar recordatorios de medicamentos',
+    excerpt: 'Usa tu teléfono para recordarte cuándo tomar tus medicinas y nunca olvidar una dosis.',
+    category: 'health-tech' as any,
+    tags: ['medication', 'reminders', 'health', 'alarms', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '💊',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Si tomas medicamentos todos los días, sabes lo fácil que es olvidar una dosis. Tu teléfono puede ayudarte a recordar exactamente cuándo tomar cada medicina, haciendo que tu salud sea una prioridad sin tener que depender solo de tu memoria. Es como tener una enfermera personal que te avisa a la hora exacta.
+
+Hay varias formas de configurar recordatorios. La más sencilla es usar las alarmas de tu teléfono, pero hay opciones mejores como la app de Salud de Apple (iPhone), Google Clock (Android), o apps especializadas como Medisafe que están diseñadas específicamente para esto.
+
+La app de Salud de Apple (iPhone) tiene una función llamada "Medicamentos" que te permite registrar cada medicina que tomas, incluyendo el nombre, la dosis y los horarios. Te envía recordatorios automáticos y lleva un registro de cuándo tomaste cada dosis. Esto puede ser muy útil cuando vas al doctor y te pregunta si estás tomando tu medicina regularmente.
+
+En Android, puedes usar Google Clock para poner alarmas con etiquetas como "Tomar medicina de la presión" o descargar Medisafe, que es gratuita y muy popular. Medisafe te muestra una bandeja virtual de pastillas y te envía alertas con sonido hasta que confirmes que tomaste tu medicina.
+
+Si tomas varias medicinas al día, los recordatorios son aún más importantes. Configurar un recordatorio para cada medicina evita confusiones y te ayuda a mantener el tratamiento correcto que te recetó tu doctor.`,
+    steps: [
+      {
+        title: 'Decide qué método usar',
+        content: 'iPhone: usa la app "Salud" (el ícono blanco con un corazón rojo) > pestaña "Explorar" > "Medicamentos". Android: usa la app de Reloj para alarmas o descarga "Medisafe" gratis desde Google Play. Ambas opciones funcionan muy bien.',
+      },
+      {
+        title: 'Agrega tu medicamento',
+        content: 'iPhone (Salud): toca "Agregar un medicamento", escribe el nombre y selecciona la forma (pastilla, cápsula, líquido). Android (Medisafe): toca "+" y busca tu medicamento. Ingresa la dosis que te recetó tu doctor.',
+      },
+      {
+        title: 'Configura los horarios',
+        content: 'Ingresa a qué hora debes tomar cada medicina. Si es una vez al día, pon la hora. Si son dos o tres veces al día, agrega cada horario. Por ejemplo: "Metformina" a las 8:00 AM y 8:00 PM.',
+      },
+      {
+        title: 'Activa las notificaciones',
+        content: 'Asegúrate de que las notificaciones estén activadas para la app. Cuando sea hora de tu medicina, tu teléfono sonará y mostrará una notificación en la pantalla. No la ignores — toca para confirmar que la tomaste.',
+      },
+      {
+        title: 'Confirma cuando tomes tu medicina',
+        content: 'Cada vez que suene el recordatorio, toca "Tomada" o "Listo" para registrar que tomaste tu dosis. Esto crea un historial que puedes mostrarle a tu doctor. Si no puedes tomarla en ese momento, la app te recordará de nuevo.',
+      },
+      {
+        title: 'Revisa tu historial de medicamentos',
+        content: 'iPhone: en Salud > Medicamentos, ve tu registro de las últimas semanas. Medisafe: toca "Historial" para ver qué días tomaste tus medicinas y cuáles olvidaste. Esta información es valiosa para tus citas médicas.',
+      },
+    ],
+  },
+
+  // ─── 47. Cómo usar Netflix en tu teléfono o televisor ────────────────────────
+  {
+    slug: 'es-netflix-guide',
+    title: 'Cómo usar Netflix en tu teléfono o televisor',
+    excerpt: 'Aprende a ver películas y series en Netflix desde tu teléfono, tableta o Smart TV.',
+    category: 'entertainment' as any,
+    tags: ['netflix', 'streaming', 'movies', 'tv-shows', 'entertainment', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🎬',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Netflix es uno de los servicios de entretenimiento más populares del mundo. Te permite ver miles de películas, series, documentales y programas cuando quieras, sin comerciales. En lugar de esperar a que un programa pase por televisión, tú decides qué ver y cuándo verlo. Funciona en tu teléfono, tableta, computadora, y Smart TV.
+
+Netflix requiere una suscripción mensual. El plan más económico (con anuncios) cuesta $7.99 al mes, el plan estándar cuesta $17.99 al mes, y el plan premium $24.99. Puedes cancelar en cualquier momento sin penalidad. Netflix tiene mucho contenido en español, incluyendo series originales, películas dobladas y subtituladas, y contenido de toda Latinoamérica.
+
+Para ver Netflix en tu televisor inteligente (Smart TV), busca la app de Netflix que generalmente ya viene preinstalada. Si no la tiene, descárgala desde la tienda de apps de tu televisor. También puedes usar dispositivos como Roku, Amazon Fire Stick o Chromecast, que se conectan a tu televisor y te permiten ver Netflix.
+
+Una función muy útil es la de descargar películas y series para verlas sin internet. Esto es perfecto para viajes largos en carro o avión. Solo funciona en teléfonos y tabletas con la app de Netflix.
+
+Netflix te recomienda películas y series basándose en lo que ves. Mientras más uses Netflix, mejores serán las recomendaciones. También puedes crear perfiles separados para cada persona de la familia, incluyendo un perfil especial para niños con contenido apropiado para su edad.`,
+    steps: [
+      {
+        title: 'Crea tu cuenta de Netflix',
+        content: 'Ve a netflix.com en tu navegador o descarga la app de Netflix. Toca "Comenzar" y sigue los pasos para crear una cuenta. Necesitarás un correo electrónico, una contraseña y una forma de pago (tarjeta de débito o crédito).',
+      },
+      {
+        title: 'Descarga la app en tu dispositivo',
+        content: 'En tu teléfono: busca "Netflix" en la App Store o Google Play. En tu Smart TV: busca Netflix en la tienda de apps del televisor. En Roku o Fire Stick: Netflix generalmente ya está instalado. Inicia sesión con tu correo y contraseña.',
+      },
+      {
+        title: 'Crea perfiles para tu familia',
+        content: 'Netflix permite hasta 5 perfiles por cuenta. Toca "Agregar perfil" para crear uno para cada familiar. Para niños, activa la opción "Perfil infantil" para que solo vean contenido apropiado para su edad.',
+      },
+      {
+        title: 'Busca algo para ver',
+        content: 'Usa la lupa de búsqueda para buscar una película o serie por nombre. También puedes explorar por categoría: acción, comedia, drama, documentales, telenovelas, etc. Netflix tiene una sección de "Tendencias" que muestra lo más popular.',
+      },
+      {
+        title: 'Cambia el idioma y los subtítulos',
+        content: 'Mientras ves algo, toca la pantalla y busca el ícono de diálogo o "Audio y subtítulos". Puedes cambiar el audio a español latinoamericano y activar subtítulos en español o inglés. Muchas películas están disponibles en ambos idiomas.',
+      },
+      {
+        title: 'Descarga contenido para ver sin internet',
+        content: 'En tu teléfono o tableta, busca el ícono de descarga (↓) junto a las películas y episodios. Descárgalos mientras estés conectado al WiFi y podrás verlos después sin internet, perfecto para viajes.',
+      },
+    ],
+  },
+
+  // ─── 48. Cómo encontrar tu teléfono perdido ─────────────────────────────────
+  {
+    slug: 'es-find-lost-phone',
+    title: 'Cómo encontrar tu teléfono perdido',
+    excerpt: 'Localiza tu teléfono perdido, hazlo sonar o protege tus datos si fue robado.',
+    category: 'safety-guides' as any,
+    tags: ['find-my-phone', 'lost-phone', 'gps', 'security', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔍',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Perder tu teléfono es una situación muy estresante, pero no te desesperes — hay herramientas que te pueden ayudar a encontrarlo. Tanto Apple como Google tienen servicios gratuitos que te permiten localizar tu teléfono en un mapa, hacerlo sonar aunque esté en silencio, e incluso borrar toda tu información remotamente si crees que fue robado.
+
+Si tienes un iPhone, el servicio se llama "Buscar mi iPhone" (Find My iPhone). Si tienes un Android, se llama "Encontrar mi dispositivo" (Find My Device). Ambos funcionan de manera similar: desde otro teléfono o una computadora, puedes ver dónde está tu teléfono en un mapa en tiempo real.
+
+Para que estos servicios funcionen, necesitas haberlos activado antes de perder el teléfono. La buena noticia es que en la mayoría de los teléfonos nuevos, estas funciones vienen activadas automáticamente. Pero vale la pena verificar que estén encendidas ahora, antes de que necesites usarlas.
+
+Si perdiste tu teléfono en tu casa, la función más útil es hacerlo sonar. Aunque tu teléfono esté en silencio o en modo No Molestar, esta función lo hará sonar a todo volumen durante varios minutos para que puedas seguir el sonido y encontrarlo.
+
+Si crees que te lo robaron, puedes poner tu teléfono en "Modo perdido" (Lost Mode), que lo bloquea con un mensaje en la pantalla mostrando un número de teléfono alternativo para que alguien te llame si lo encuentra. Si no hay esperanza de recuperarlo, puedes borrar todos tus datos remotamente para proteger tu información personal.`,
+    steps: [
+      {
+        title: 'Verifica que la función de localización esté activada ahora',
+        content: 'iPhone: ve a Ajustes > tu nombre > Buscar > Buscar mi iPhone y asegúrate de que esté activado. Android: ve a Configuración > Google > Encontrar mi dispositivo y actívalo. Hazlo ahora, antes de perder tu teléfono.',
+      },
+      {
+        title: 'Si perdiste tu teléfono, usa una computadora o el teléfono de alguien',
+        content: 'iPhone: ve a icloud.com/find en cualquier navegador e inicia sesión con tu Apple ID. Android: ve a google.com/android/find e inicia sesión con tu cuenta de Google. Verás tu teléfono en un mapa.',
+      },
+      {
+        title: 'Haz sonar tu teléfono',
+        content: 'En la pantalla del mapa, selecciona tu teléfono y toca "Reproducir sonido" o "Hacer sonar". Tu teléfono sonará a todo volumen durante varios minutos, aunque esté en silencio. Esto es perfecto si lo perdiste en casa o en el carro.',
+      },
+      {
+        title: 'Activa el Modo Perdido si no lo encuentras',
+        content: 'Si crees que lo perdiste fuera de casa, activa el "Modo perdido" (iPhone) o "Bloquear dispositivo" (Android). Esto bloquea tu teléfono y muestra un mensaje con tu número alternativo en la pantalla para que alguien te contacte.',
+      },
+      {
+        title: 'Borra tus datos si crees que fue robado',
+        content: 'Como último recurso, puedes seleccionar "Borrar iPhone" o "Borrar dispositivo" para eliminar toda tu información remotamente. Esto protege tus fotos, cuentas bancarias, correos y datos personales. Solo hazlo si estás seguro de que no lo vas a recuperar.',
+      },
+      {
+        title: 'Reporta el robo si corresponde',
+        content: 'Si te lo robaron, haz una denuncia policial y llama a tu proveedor de teléfono (T-Mobile, AT&T, Verizon) para que bloqueen la línea. También cambia las contraseñas de tus cuentas importantes (banco, correo, redes sociales) desde otro dispositivo.',
+      },
+    ],
+  },
+
+  // ─── 49. Cómo usar la calculadora en tu teléfono ─────────────────────────────
+  {
+    slug: 'es-phone-calculator',
+    title: 'Cómo usar la calculadora en tu teléfono',
+    excerpt: 'Aprende a usar la calculadora de tu teléfono para operaciones básicas y cálculos de propinas.',
+    category: 'essential-skills' as any,
+    tags: ['calculator', 'math', 'tips', 'essential', 'beginner'],
+    readTime: '3 min',
+    thumbnailEmoji: '🔢',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Tu teléfono tiene una calculadora incorporada que puedes usar para cualquier operación matemática, desde sumar la cuenta del supermercado hasta calcular la propina en un restaurante. Es gratuita, ya viene instalada, y es mucho más rápida que buscar una calculadora de mano.
+
+En iPhone, la calculadora es una app con un fondo negro y botones de colores (naranja, gris y blanco). La encuentras buscando "Calculadora" en tu pantalla o deslizando desde arriba a la derecha para abrir el Centro de Control, donde también hay un ícono de calculadora.
+
+En Android, la app se llama "Calculadora" y generalmente tiene un ícono con el símbolo de igual (=) o un signo de más (+). Si no la encuentras, búscala en tu lista de aplicaciones o descarga "Google Calculator" gratis desde Google Play.
+
+Los botones básicos son: números del 0 al 9, + (sumar), - (restar), × (multiplicar), ÷ (dividir), y = (obtener el resultado). El botón "C" o "AC" borra todo para empezar un cálculo nuevo. Si te equivocas en un número, puedes tocar el botón de borrar (generalmente una flecha con una "x") para borrar el último dígito.
+
+Un truco muy útil: si giras tu teléfono horizontalmente (de lado), la calculadora se convierte en una calculadora científica con más funciones como porcentajes, raíces cuadradas y más. Esto funciona en iPhone; en Android depende de la app que uses.`,
+    steps: [
+      {
+        title: 'Abre la calculadora',
+        content: 'iPhone: busca el ícono negro de la calculadora en tu pantalla, o desliza desde arriba a la derecha y toca el ícono de calculadora. Android: busca "Calculadora" en tu lista de apps. Si no la tienes, descarga "Google Calculator" gratis.',
+      },
+      {
+        title: 'Haz una operación básica',
+        content: 'Para sumar: toca los números, luego "+", luego los otros números, y finalmente "=". Ejemplo: para sumar 25 + 13, toca 2, 5, +, 1, 3, =. El resultado (38) aparecerá en la pantalla.',
+      },
+      {
+        title: 'Calcula un porcentaje o propina',
+        content: 'Para calcular el 20% de propina en una cuenta de $45: toca 45, luego ×, luego 20, luego %. El resultado es $9 de propina. O multiplica la cuenta por 0.20 (45 × 0.20 = 9).',
+      },
+      {
+        title: 'Borra si te equivocas',
+        content: 'Si escribes un número equivocado, toca la tecla de borrar (⌫) para quitar el último dígito. Si quieres empezar de cero, toca "C" o "AC" (All Clear) para borrar todo el cálculo.',
+      },
+      {
+        title: 'Usa la calculadora científica (iPhone)',
+        content: 'Si necesitas funciones avanzadas, gira tu iPhone de lado (horizontal). La calculadora mostrará más botones como paréntesis, raíz cuadrada, porcentaje y funciones trigonométricas. Asegúrate de que el bloqueo de rotación esté desactivado.',
+      },
+    ],
+  },
+
+  // ─── 50. Cómo configurar el ahorro de batería ───────────────────────────────
+  {
+    slug: 'es-battery-saver',
+    title: 'Cómo configurar el ahorro de batería',
+    excerpt: 'Haz que la batería de tu teléfono dure más tiempo con estos ajustes y consejos.',
+    category: 'phone-guides' as any,
+    tags: ['battery', 'power', 'settings', 'optimization', 'beginner'],
+    readTime: '5 min',
+    thumbnailEmoji: '🔋',
+    difficulty: 'Beginner',
+    publishedAt: '2026-04-16',
+    body: `Si tu teléfono se queda sin batería antes de que termine el día, no estás solo — es uno de los problemas más comunes. La buena noticia es que tu teléfono tiene funciones de ahorro de batería que pueden hacer que dure mucho más tiempo. Con unos ajustes sencillos, puedes ganar horas adicionales de uso.
+
+Lo que más gasta batería en tu teléfono es la pantalla, especialmente si el brillo está muy alto. Las apps de redes sociales como Facebook, Instagram y TikTok también consumen mucha batería porque están constantemente actualizándose en segundo plano. Y la señal de WiFi o datos celulares también usa energía, especialmente en áreas donde la señal es débil.
+
+El modo de ahorro de batería (Low Power Mode en iPhone, Battery Saver en Android) es la forma más rápida de extender la vida de tu batería. Cuando lo activas, tu teléfono reduce el brillo, limita las actualizaciones en segundo plano, desactiva algunas animaciones visuales y baja el rendimiento del procesador un poco. No te preocupes — tu teléfono sigue funcionando normalmente para llamadas, mensajes y lo esencial.
+
+En iPhone, puedes configurar el modo de ahorro de energía para que se active automáticamente cuando la batería llegue al 20%. En Android, puedes personalizarlo para que se active al 15% o 20%.
+
+Otro consejo importante: no dejes tu teléfono cargando toda la noche regularmente. Aunque los teléfonos modernos están diseñados para manejar esto, mantener la batería entre 20% y 80% ayuda a preservar su vida útil a largo plazo. Muchos teléfonos nuevos tienen la opción de "Carga optimizada" que se encarga de esto automáticamente.`,
+    steps: [
+      {
+        title: 'Activa el modo de ahorro de batería',
+        content: 'iPhone: ve a Ajustes > Batería > Modo de bajo consumo y actívalo. Android: ve a Configuración > Batería > Ahorro de batería y actívalo. También puedes activarlo rápidamente desde el Centro de Control deslizando hacia abajo.',
+      },
+      {
+        title: 'Reduce el brillo de la pantalla',
+        content: 'La pantalla es lo que más batería gasta. Desliza hacia abajo (Android) o desde la esquina superior derecha (iPhone) y baja la barra de brillo. También activa el "Brillo automático" para que se ajuste solo según la luz del ambiente.',
+      },
+      {
+        title: 'Revisa qué apps gastan más batería',
+        content: 'iPhone: ve a Ajustes > Batería y desplázate hacia abajo para ver qué apps gastan más. Android: ve a Configuración > Batería > Uso de batería. Si una app que no usas mucho gasta demasiada batería, considera desinstalarla.',
+      },
+      {
+        title: 'Desactiva la actualización en segundo plano',
+        content: 'iPhone: ve a Ajustes > General > Actualizar en segundo plano y desactívala para las apps que no necesitas que se actualicen constantemente. Android: ve a Configuración > Aplicaciones > selecciona la app > Batería > Restringir uso en segundo plano.',
+      },
+      {
+        title: 'Reduce el tiempo de pantalla encendida',
+        content: 'iPhone: ve a Ajustes > Pantalla y brillo > Bloqueo automático y selecciona "30 segundos". Android: ve a Configuración > Pantalla > Tiempo de espera de pantalla y selecciona "15 segundos" o "30 segundos". Así la pantalla se apaga rápido cuando no la usas.',
+      },
+      {
+        title: 'Activa la carga optimizada',
+        content: 'iPhone: ve a Ajustes > Batería > Salud y carga de la batería > Carga optimizada. Android: ve a Configuración > Batería > Carga adaptable. Esta función cuida la salud de tu batería a largo plazo aprendiendo tus hábitos de carga.',
+      },
+    ],
+  },
 ];
