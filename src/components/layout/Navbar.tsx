@@ -62,11 +62,11 @@ export function Navbar() {
 
   const moreLinksRight = [
     { to: '/glossary', label: 'Glossary', icon: BookOpen },
-    { to: '/blog', label: 'Blog', icon: Newspaper },
+    { to: '/weekly-tips', label: 'Weekly Tips', icon: Newspaper },
     { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen },
+    { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight },
     { to: '/about', label: 'About', icon: Users },
-    { to: '/roadmap', label: 'Roadmap', icon: Map },
-    { to: '/explore', label: 'Explore', icon: ArrowRight },
+    { to: '/explore', label: 'Explore All', icon: Map },
   ];
 
   const authLinks = [

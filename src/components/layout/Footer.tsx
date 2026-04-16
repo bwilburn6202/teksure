@@ -12,6 +12,7 @@ export function Footer() {
         { to: '/quick-fixes', label: 'Quick Fixes' },
         { to: '/glossary', label: 'Glossary' },
         { to: '/ai-tutor', label: 'AI Tutor' },
+        { to: '/weekly-tips', label: 'Weekly Tips' },
         { to: '/blog', label: 'Blog' },
       ],
     },
@@ -33,6 +34,7 @@ export function Footer() {
         { to: '/local-help', label: 'Local Help' },
         { to: '/device-hub', label: 'Device Hub' },
         { to: '/technicians', label: 'Technicians' },
+        { to: '/gift-session', label: 'Gift Tech Help' },
       ],
     },
     {
@@ -42,6 +44,7 @@ export function Footer() {
         { to: '/how-it-works', label: 'How It Works' },
         { to: '/roadmap', label: 'Roadmap' },
         { to: '/sources', label: 'Our Sources' },
+        { to: '/changelog', label: 'Changelog' },
       ],
     },
   ];
