@@ -57,7 +57,7 @@ function getResult(device: DeviceType, year: number): SupportResult {
           detail: `iPhones from 2019 (iPhone 11 series) received iOS 17 support, but iOS 18 support may be limited or ending soon. Apple has been providing roughly 5–6 years of software updates. Your device is at or near the end of that window.`,
           yearsLeft: 0,
           recommendation: 'plan',
-          recommendationText: 'Plan to replace within 1–2 years. Your phone still works fine, but security updates may stop soon. Start shopping when you're ready — you don't need to rush today.',
+          recommendationText: `Plan to replace within 1–2 years. Your phone still works fine, but security updates may stop soon. Start shopping when you're ready — you don't need to rush today.`,
         };
       }
       // 2018 and older (iPhone 8, X) — end of life
@@ -66,7 +66,7 @@ function getResult(device: DeviceType, year: number): SupportResult {
         headline: 'Your iPhone is no longer receiving security updates.',
         detail: `iPhones from ${year} have reached the end of Apple's support window. The iPhone 8 and iPhone X (both 2017) stopped receiving iOS updates after iOS 16. Without security updates, new threats discovered after that point are not fixed on your device.`,
         recommendation: 'replace',
-        recommendationText: 'Consider replacing when you're ready. An unsupported phone isn't a crisis if you stay careful — see our safety tips below — but a newer device will be significantly more secure.',
+        recommendationText: `Consider replacing when you're ready. An unsupported phone isn't a crisis if you stay careful — see our safety tips below — but a newer device will be significantly more secure.`,
       };
     }
 
@@ -96,7 +96,7 @@ function getResult(device: DeviceType, year: number): SupportResult {
           headline: 'Your Android is likely approaching the end of security updates.',
           detail: `Android phones from ${year} are near or past the end of typical manufacturer support windows. Most Android brands provide 3–4 years of updates, so a ${year} phone may have received its last security patch in ${year + 4} or earlier. Go to Settings → About Phone → Android Security Patch Level to check your last update date.`,
           recommendation: 'plan',
-          recommendationText: 'Plan to replace within 1–2 years. Check your security patch date in Settings — if it's more than a year old, moving to a newer device would improve your security meaningfully.',
+          recommendationText: `Plan to replace within 1–2 years. Check your security patch date in Settings — if it's more than a year old, moving to a newer device would improve your security meaningfully.`,
         };
       }
       // 2018 and older

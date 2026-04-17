@@ -2,320 +2,419 @@ import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { PageBreadcrumb } from '@/components/PageBreadcrumb';
+import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { PhoneOff, ShieldCheck, CheckCircle, ChevronDown, ChevronUp, ExternalLink, Smartphone, AlertTriangle } from 'lucide-react';
+import {
+  PhoneOff,
+  ShieldCheck,
+  Smartphone,
+  ExternalLink,
+  CheckCircle2,
+  Phone,
+  AlertTriangle,
+} from 'lucide-react';
 
-type Carrier = 'att' | 'tmobile' | 'verizon' | 'other' | null;
+type Carrier = 'verizon' | 'att' | 'tmobile' | 'uscellular' | 'spectrum' | 'xfinity' | 'other';
+type PhoneType = 'iphone' | 'android';
 
 interface CarrierInfo {
+  id: Carrier;
   name: string;
-  app: string;
-  appDescription: string;
-  steps: string[];
+  freeService: string;
+  freeServiceDetails: string;
+  activation: string;
+  premium?: string;
+  appUrl?: string;
 }
 
-const carrierData: Record<Exclude<Carrier, null | 'other'>, CarrierInfo> = {
-  att: {
-    name: 'AT&T',
-    app: 'AT&T ActiveArmor',
-    appDescription: 'Free app that blocks fraud calls and labels suspected spam. Available on the App Store and Google Play.',
-    steps: [
-      'Download "AT&T ActiveArmor" from the App Store (iPhone) or Google Play (Android).',
-      'Open the app and sign in with your AT&T account (the same email and password you use to pay your bill).',
-      'The app will ask for permission to access your phone and contacts — tap "Allow" for each.',
-      'Turn on "Automatic Fraud Blocking" in the main settings screen.',
-      'Turn on "Suspected Spam Labels" so you can see warnings on incoming calls.',
-      'Optional: Add your own numbers to the "Block List" for specific callers you want to stop.',
-    ],
-  },
-  tmobile: {
-    name: 'T-Mobile',
-    app: 'T-Mobile Scam Shield',
-    appDescription: 'Free app that identifies and blocks scam calls. Works on all T-Mobile and Metro by T-Mobile plans.',
-    steps: [
-      'Download "Scam Shield" from the App Store (iPhone) or Google Play (Android).',
-      'Open the app and sign in with your T-Mobile ID (the same account you use online or in the T-Mobile app).',
-      'Tap "Enable Scam Block" — this will automatically block calls identified as scams.',
-      'Turn on "Scam ID" to see a warning label on calls that might be spam.',
-      'Optional: Turn on "Caller ID" to see the name of unknown callers (free on most plans).',
-      'Check the "Blocked Calls" tab to see what the app has caught for you.',
-    ],
-  },
-  verizon: {
+const CARRIERS: CarrierInfo[] = [
+  {
+    id: 'verizon',
     name: 'Verizon',
-    app: 'Verizon Call Filter',
-    appDescription: 'Free app that detects and filters spam calls. Comes included with every Verizon wireless plan.',
-    steps: [
-      'Download "Call Filter" from the App Store (iPhone) or Google Play (Android).',
-      'Open the app and it will automatically detect your Verizon account.',
-      'Tap "Activate" to turn on spam detection and blocking.',
-      'Go to "Filter Level" and set it to "Block spam calls" for the strongest protection.',
-      'Turn on "Silence Unknown Callers" within the app for an extra layer of protection.',
-      'Check your "Spam List" regularly to make sure no important calls were blocked by mistake.',
-    ],
-  },
-};
-
-const universalTips = [
-  {
-    title: 'Register with the Do Not Call List',
-    description: 'Add your phone number to the National Do Not Call Registry at donotcall.gov or by calling 1-888-382-1222. Legitimate telemarketers must stop calling within 31 days. This will not stop scammers, but it will reduce legal sales calls.',
+    freeService: 'Call Filter',
+    freeServiceDetails:
+      'Free basic version automatically blocks the highest-risk spam calls and labels others as "Potential Spam." Premium version ($3.99/mo per line) adds caller ID, personal block list, and a spam risk meter.',
+    activation: 'Dial *86 from your Verizon phone, or download the Call Filter app from your app store and sign in with your My Verizon account.',
+    premium: 'Call Filter Plus — $3.99/mo/line (or $7.99 for 3+ lines)',
+    appUrl: 'https://www.verizon.com/solutions-and-services/call-filter/',
   },
   {
-    title: 'Turn on "Silence Unknown Callers" (iPhone)',
-    description: 'Go to Settings, then Phone, then Silence Unknown Callers, and turn it on. Calls from numbers not in your contacts, recent calls, or Siri suggestions will go straight to voicemail.',
+    id: 'att',
+    name: 'AT&T',
+    freeService: 'AT&T ActiveArmor',
+    freeServiceDetails:
+      'Free service (formerly AT&T Call Protect) that automatically blocks suspected fraud calls and warns about likely spam. Includes a personal block list and caller ID.',
+    activation: 'Download the AT&T ActiveArmor Mobile Security app from the App Store or Google Play and sign in with your AT&T wireless account.',
+    premium: 'ActiveArmor Advanced — $3.99/mo for reverse number lookup and enhanced caller ID',
+    appUrl: 'https://www.att.com/security/',
   },
   {
-    title: 'Turn on spam filter (Android)',
-    description: 'Open the Phone app, tap the three-dot menu, then Settings, then Caller ID & spam, and turn on "Filter spam calls." Suspected spam calls will be silently blocked.',
+    id: 'tmobile',
+    name: 'T-Mobile',
+    freeService: 'Scam Shield',
+    freeServiceDetails:
+      'Free service that blocks scam calls automatically and labels others as "Scam Likely." Includes free Caller ID and a monthly Scam Report.',
+    activation: 'Dial #662# from your T-Mobile phone to enable Scam Block, or download the T-Mobile Scam Shield app.',
+    premium: 'Scam Shield Premium — $4/mo for reverse number lookup and call categorization',
+    appUrl: 'https://www.t-mobile.com/benefits/scam-shield',
   },
   {
-    title: 'Never press a number when prompted',
-    description: 'If a robocall tells you to "press 1 to be removed from our list," hang up. Pressing any number confirms your number is active and you will get MORE calls.',
+    id: 'uscellular',
+    name: 'US Cellular',
+    freeService: 'Call Guardian',
+    freeServiceDetails:
+      'Free spam blocking and caller identification. Automatically blocks highest-risk calls and labels others as spam.',
+    activation: 'Download the Call Guardian app from your app store and sign in with your US Cellular account.',
+    appUrl: 'https://www.uscellular.com/support/call-guardian',
   },
   {
-    title: 'Do not answer calls from unknown numbers',
-    description: 'Let unknown calls go to voicemail. Legitimate callers will leave a message. If it is important, you can always call them back.',
+    id: 'spectrum',
+    name: 'Spectrum Mobile',
+    freeService: 'Spectrum Mobile Call Filter',
+    freeServiceDetails:
+      'Since Spectrum Mobile runs on Verizon\'s network, it offers a version of Call Filter. Basic filtering is free.',
+    activation: 'Download Spectrum\'s Call Filter app (or Verizon Call Filter on Verizon-branded devices).',
+    appUrl: 'https://www.spectrum.com/mobile',
   },
   {
-    title: 'Report spam calls to the FTC',
-    description: 'If you receive an unwanted call, report it at reportfraud.ftc.gov. This helps the FTC take action against illegal callers.',
+    id: 'xfinity',
+    name: 'Xfinity Mobile',
+    freeService: 'Call Filter (Verizon)',
+    freeServiceDetails:
+      'Xfinity Mobile uses Verizon\'s network, so you get access to Verizon\'s Call Filter service for free.',
+    activation: 'Download the Call Filter app from your app store and sign in using your Xfinity Mobile credentials.',
+    appUrl: 'https://www.xfinity.com/mobile',
+  },
+  {
+    id: 'other',
+    name: 'Other / MVNO',
+    freeService: 'Built-in phone settings + third-party apps',
+    freeServiceDetails:
+      'Smaller carriers (Mint, Visible, Cricket, Metro, Consumer Cellular, etc.) generally do not offer a full-featured carrier-level blocker. Your best options are your phone\'s built-in settings and a third-party app.',
+    activation: 'Skip to the native phone settings and third-party app sections below.',
   },
 ];
 
-const testProtectionTips = [
-  'When you get a spam call, check if your carrier app flagged it. If it did, your protection is working.',
-  'Try calling yourself from a different phone — your carrier app should not block calls from real numbers.',
-  'Check your voicemail after enabling spam filtering to make sure real messages are still getting through.',
-  'If you are still getting many spam calls after 2 weeks, try increasing your filter level in your carrier app.',
+interface ThirdPartyApp {
+  name: string;
+  pricing: string;
+  notes: string;
+  url: string;
+}
+
+const THIRD_PARTY_APPS: ThirdPartyApp[] = [
+  {
+    name: 'Nomorobo',
+    pricing: '$1.99/mo on iOS (free for landlines & Android)',
+    notes: 'Built from the FTC Robocall Challenge winner. Simple, effective, highly rated for older users.',
+    url: 'https://www.nomorobo.com/',
+  },
+  {
+    name: 'Hiya',
+    pricing: 'Free with ads, Premium $14.99/yr',
+    notes: 'Strong caller ID and spam detection. Free tier is often enough.',
+    url: 'https://www.hiya.com/',
+  },
+  {
+    name: 'RoboKiller',
+    pricing: '$5.99/mo or $39.99/yr',
+    notes: 'Uses "answer bots" that waste scammers\' time. Blocks the most calls of any app.',
+    url: 'https://www.robokiller.com/',
+  },
+  {
+    name: 'Truecaller',
+    pricing: 'Free with ads, Premium $2.99/mo',
+    notes: 'Huge crowdsourced database. Ad-supported free tier is usable.',
+    url: 'https://www.truecaller.com/',
+  },
 ];
 
 export default function RobocallBlocker() {
-  const [selectedCarrier, setSelectedCarrier] = useState<Carrier>(null);
-  const [completedSteps, setCompletedSteps] = useState<Set<string>>(new Set());
-  const [completedTips, setCompletedTips] = useState<Set<number>>(new Set());
-  const [showTestTips, setShowTestTips] = useState(false);
+  const [carrier, setCarrier] = useState<Carrier | null>(null);
+  const [phoneType, setPhoneType] = useState<PhoneType | null>(null);
 
-  const toggleStep = (key: string) => {
-    setCompletedSteps(prev => {
-      const next = new Set(prev);
-      next.has(key) ? next.delete(key) : next.add(key);
-      return next;
-    });
-  };
-
-  const toggleTip = (index: number) => {
-    setCompletedTips(prev => {
-      const next = new Set(prev);
-      next.has(index) ? next.delete(index) : next.add(index);
-      return next;
-    });
-  };
-
-  const carrierStepCount = selectedCarrier && selectedCarrier !== 'other'
-    ? carrierData[selectedCarrier].steps.length
-    : 0;
-
-  const totalTasks = carrierStepCount + universalTips.length;
-  const completedCount = completedSteps.size + completedTips.size;
-  const progressPercent = totalTasks > 0 ? Math.round((completedCount / totalTasks) * 100) : 0;
+  const selectedCarrier = CARRIERS.find(c => c.id === carrier);
 
   return (
     <>
       <SEOHead
-        title="Robocall Blocker Guide — Stop Spam Calls for Free | TekSure"
-        description="Step-by-step guide to block robocalls and spam calls on AT&T, T-Mobile, Verizon, and any carrier. Set up free call blocking in minutes."
+        title="Stop Robocalls — Step-by-Step Carrier Guide | TekSure"
+        description="Get your exact carrier's instructions to stop robocalls. Free built-in tools from Verizon, AT&T, T-Mobile plus iPhone and Android settings and the best third-party apps."
         path="/tools/robocall-blocker"
       />
       <Navbar />
       <main className="min-h-screen bg-background">
-        <div className="container pt-4">
-          <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Robocall Blocker' }]} />
-        </div>
-
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-red-50 dark:bg-red-950/30 flex items-center justify-center flex-shrink-0">
-                <PhoneOff className="h-6 w-6 text-red-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
+                <PhoneOff className="h-6 w-6 text-rose-600" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Robocall Blocker Guide</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Stop Robocalls — Customized for Your Phone
+            </h1>
             <p className="text-muted-foreground text-lg">
-              Follow these steps to block robocalls and spam calls on your phone. Works with every major carrier.
+              Pick your carrier and phone type. We'll show you the exact steps to turn on every free robocall blocker available to you — from your carrier, your phone itself, and the best third-party apps.
             </p>
           </div>
         </section>
 
-        <div className="container py-8 pb-24 max-w-3xl space-y-8">
-          {/* Progress */}
-          {totalTasks > 0 && (
-            <Card>
-              <CardContent className="pt-6">
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">Your progress</span>
-                  <span className="text-muted-foreground">{completedCount} of {totalTasks} steps done</span>
-                </div>
-                <Progress value={progressPercent} className="h-3" aria-label={`${progressPercent}% complete`} />
-                {progressPercent === 100 && (
-                  <p className="text-sm text-green-600 mt-2 flex items-center gap-1">
-                    <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Your phone is now protected against spam calls.
-                  </p>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Step 1: Select carrier */}
-          <Card>
-            <CardHeader><CardTitle className="text-lg">Step 1: Select Your Carrier</CardTitle></CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Which phone carrier do you use? This determines which free app to download.</p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {([['att', 'AT&T'], ['tmobile', 'T-Mobile'], ['verizon', 'Verizon'], ['other', 'Other']] as const).map(([key, label]) => (
-                  <Button
-                    key={key}
-                    variant={selectedCarrier === key ? 'default' : 'outline'}
-                    onClick={() => { setSelectedCarrier(key); setCompletedSteps(new Set()); }}
-                    className="h-auto py-3"
-                    aria-pressed={selectedCarrier === key}
-                  >
-                    <Smartphone className="h-4 w-4 mr-2" aria-hidden="true" />
-                    {label}
-                  </Button>
-                ))}
+        {/* Step 1 */}
+        <section className="container py-10 max-w-3xl">
+          <Card className="p-6 md:p-8 rounded-2xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-8 w-8 rounded-full bg-rose-600 text-white flex items-center justify-center font-bold text-sm">
+                1
               </div>
-            </CardContent>
+              <h2 className="text-xl font-bold">Select your phone carrier</h2>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+              {CARRIERS.map(c => (
+                <button
+                  key={c.id}
+                  onClick={() => setCarrier(c.id)}
+                  className={`px-4 py-3 rounded-xl text-sm font-medium min-h-[48px] border text-center ${
+                    carrier === c.id
+                      ? 'bg-foreground text-background border-foreground'
+                      : 'bg-background border-border hover:border-foreground/30'
+                  }`}
+                >
+                  {c.name}
+                </button>
+              ))}
+            </div>
           </Card>
 
-          {/* Step 2: Carrier-specific instructions */}
-          {selectedCarrier && selectedCarrier !== 'other' && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  Step 2: Set Up {carrierData[selectedCarrier].app}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="rounded-lg bg-blue-50 dark:bg-blue-950/20 p-4 text-sm">
-                  <p className="font-medium text-blue-800 dark:text-blue-300">{carrierData[selectedCarrier].app}</p>
-                  <p className="text-blue-700 dark:text-blue-400 mt-1">{carrierData[selectedCarrier].appDescription}</p>
+          {/* Step 2 */}
+          {carrier && (
+            <Card className="p-6 md:p-8 rounded-2xl mt-4">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-8 w-8 rounded-full bg-rose-600 text-white flex items-center justify-center font-bold text-sm">
+                  2
                 </div>
-                <div className="space-y-2">
-                  {carrierData[selectedCarrier].steps.map((step, i) => {
-                    const key = `carrier-${i}`;
-                    return (
-                      <label key={i} className="flex items-start gap-3 text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
-                        <input
-                          type="checkbox"
-                          checked={completedSteps.has(key)}
-                          onChange={() => toggleStep(key)}
-                          className="mt-0.5 h-4 w-4 rounded"
-                          aria-label={`Mark step ${i + 1} as done`}
-                        />
-                        <span className={completedSteps.has(key) ? 'line-through text-muted-foreground' : ''}>
-                          <span className="font-medium">Step {i + 1}:</span> {step}
-                        </span>
-                      </label>
-                    );
-                  })}
-                </div>
-              </CardContent>
+                <h2 className="text-xl font-bold">Select your phone type</h2>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {(
+                  [
+                    ['iphone', 'iPhone'],
+                    ['android', 'Android'],
+                  ] as [PhoneType, string][]
+                ).map(([v, label]) => (
+                  <button
+                    key={v}
+                    onClick={() => setPhoneType(v)}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium min-h-[48px] border ${
+                      phoneType === v
+                        ? 'bg-foreground text-background border-foreground'
+                        : 'bg-background border-border hover:border-foreground/30'
+                    }`}
+                  >
+                    <Smartphone className="h-4 w-4 inline mr-2" />
+                    {label}
+                  </button>
+                ))}
+              </div>
             </Card>
           )}
+        </section>
 
-          {selectedCarrier === 'other' && (
-            <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <div className="text-sm space-y-2">
-                    <p className="font-medium">If your carrier is not listed, do not worry.</p>
-                    <p className="text-muted-foreground">
-                      The universal tips below work on every phone and carrier. You can also contact your carrier directly and ask if they offer a free spam call blocking service.
+        {/* Step 3: Instructions */}
+        {carrier && phoneType && selectedCarrier && (
+          <section className="container pb-12 max-w-3xl space-y-4">
+            {/* 1. Carrier service */}
+            <Card className="p-6 md:p-8 rounded-2xl border-rose-200 dark:border-rose-900">
+              <div className="flex items-start gap-3 mb-3">
+                <ShieldCheck className="h-6 w-6 text-rose-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <Badge variant="secondary" className="mb-1">
+                    Step 1 — Free carrier service
+                  </Badge>
+                  <h3 className="font-bold text-lg">{selectedCarrier.freeService}</h3>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mb-3">
+                {selectedCarrier.freeServiceDetails}
+              </p>
+              <div className="rounded-xl bg-muted p-4 mb-3">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
+                  How to turn it on
+                </div>
+                <p className="text-sm">{selectedCarrier.activation}</p>
+              </div>
+              {selectedCarrier.premium && (
+                <p className="text-xs text-muted-foreground italic mb-3">
+                  Optional upgrade: {selectedCarrier.premium}
+                </p>
+              )}
+              {selectedCarrier.appUrl && (
+                <Button asChild variant="outline" size="sm" className="rounded-xl">
+                  <a href={selectedCarrier.appUrl} target="_blank" rel="noopener noreferrer">
+                    Open carrier page <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
+                  </a>
+                </Button>
+              )}
+            </Card>
+
+            {/* 2. Native phone setting */}
+            <Card className="p-6 md:p-8 rounded-2xl">
+              <div className="flex items-start gap-3 mb-3">
+                <Smartphone className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <Badge variant="secondary" className="mb-1">
+                    Step 2 — Your phone's built-in setting
+                  </Badge>
+                  <h3 className="font-bold text-lg">
+                    {phoneType === 'iphone' ? 'Silence Unknown Callers' : 'Caller ID & Spam / Call Screen'}
+                  </h3>
+                </div>
+              </div>
+              {phoneType === 'iphone' ? (
+                <div className="space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    iOS has a built-in feature that sends any number not in your contacts straight to voicemail. It won't ring your phone, but legitimate calls still leave a voicemail so you don't miss anything important.
+                  </p>
+                  <ol className="space-y-2 text-sm pl-1">
+                    <li className="flex gap-2">
+                      <span className="font-bold text-rose-600">1.</span>
+                      <span>Open <strong>Settings</strong></span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-bold text-rose-600">2.</span>
+                      <span>Tap <strong>Apps</strong> → <strong>Phone</strong> (on iOS 18+) or just <strong>Phone</strong> on older iOS</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-bold text-rose-600">3.</span>
+                      <span>Scroll down and turn on <strong>Silence Unknown Callers</strong></span>
+                    </li>
+                  </ol>
+                  <p className="text-xs text-muted-foreground italic">
+                    Requires iOS 13 or later.
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    Android phones include call screening and spam filtering. The exact menu names depend on your manufacturer — here are the two most common.
+                  </p>
+                  <div className="rounded-xl bg-muted p-4">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+                      Google Pixel / stock Android
+                    </div>
+                    <p className="text-sm">
+                      Open the <strong>Phone app</strong> → tap the three-dot menu → <strong>Settings</strong> → <strong>Caller ID & spam</strong> → turn on "Filter spam calls." On Pixel, also enable <strong>Call Screen</strong> so Google Assistant answers unknown calls for you.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-muted p-4">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
+                      Samsung Galaxy
+                    </div>
+                    <p className="text-sm">
+                      Open the <strong>Phone app</strong> → tap the three-dot menu → <strong>Settings</strong> → <strong>Block numbers</strong> → turn on "Block unknown/private numbers" and "Block spam and scam calls."
                     </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Step 3: Universal tips */}
-          {selectedCarrier && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  {selectedCarrier !== 'other' ? 'Step 3: ' : ''}Universal Protection Tips
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <p className="text-sm text-muted-foreground mb-3">These tips work on every phone, regardless of your carrier.</p>
-                {universalTips.map((tip, i) => (
-                  <label key={i} className="flex items-start gap-3 text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
-                    <input
-                      type="checkbox"
-                      checked={completedTips.has(i)}
-                      onChange={() => toggleTip(i)}
-                      className="mt-0.5 h-4 w-4 rounded"
-                      aria-label={`Mark "${tip.title}" as done`}
-                    />
-                    <div className={completedTips.has(i) ? 'text-muted-foreground' : ''}>
-                      <p className={`font-medium ${completedTips.has(i) ? 'line-through' : ''}`}>{tip.title}</p>
-                      <p className="text-muted-foreground mt-0.5">{tip.description}</p>
-                    </div>
-                  </label>
-                ))}
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Test your protection */}
-          {selectedCarrier && (
-            <div className="rounded-2xl border p-6">
-              <button onClick={() => setShowTestTips(!showTestTips)} className="flex items-center gap-3 w-full text-left">
-                <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" aria-hidden="true" />
-                <span className="font-semibold text-sm flex-1">Test Your Protection</span>
-                {showTestTips ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-              </button>
-              {showTestTips && (
-                <ul className="mt-4 space-y-2">
-                  {testProtectionTips.map((tip, i) => (
-                    <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-green-100 dark:bg-green-950/30 text-green-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
               )}
-            </div>
-          )}
+            </Card>
 
-          {/* Do Not Call link */}
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-center justify-between">
+            {/* 3. Third party apps */}
+            <Card className="p-6 md:p-8 rounded-2xl">
+              <div className="flex items-start gap-3 mb-3">
+                <Phone className="h-6 w-6 text-purple-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-sm">National Do Not Call Registry</p>
-                  <p className="text-sm text-muted-foreground mt-1">Register your phone number for free to reduce telemarketing calls.</p>
+                  <Badge variant="secondary" className="mb-1">
+                    Step 3 — Third-party apps (optional)
+                  </Badge>
+                  <h3 className="font-bold text-lg">If you still get robocalls</h3>
                 </div>
-                <a
-                  href="https://www.donotcall.gov"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-primary hover:underline flex-shrink-0"
-                  aria-label="Visit donotcall.gov (opens in a new tab)"
-                >
-                  donotcall.gov <ExternalLink className="h-3 w-3" aria-hidden="true" />
-                </a>
               </div>
-            </CardContent>
-          </Card>
-        </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                These apps add an extra layer of protection. Most have free tiers that are good enough for most people.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {THIRD_PARTY_APPS.map(app => (
+                  <div
+                    key={app.name}
+                    className="rounded-xl border p-4 flex flex-col"
+                  >
+                    <h4 className="font-semibold">{app.name}</h4>
+                    <p className="text-xs text-muted-foreground mb-1">{app.pricing}</p>
+                    <p className="text-sm text-muted-foreground flex-1 mb-3">{app.notes}</p>
+                    <a
+                      href={app.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-rose-600 hover:underline inline-flex items-center gap-1"
+                    >
+                      Visit website <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            {/* 4. DNC */}
+            <Card className="p-6 md:p-8 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/10 border-emerald-200 dark:border-emerald-900">
+              <div className="flex items-start gap-3 mb-3">
+                <CheckCircle2 className="h-6 w-6 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <Badge variant="secondary" className="mb-1">
+                    Step 4 — Join the National Do Not Call Registry
+                  </Badge>
+                  <h3 className="font-bold text-lg">Free, federal, 31 days to take effect</h3>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Registering your number tells legitimate telemarketers to stop calling. It won't stop actual scammers (they already break the law), but it cuts way down on legal telemarketing calls.
+              </p>
+              <Button asChild className="rounded-xl bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://www.donotcall.gov/" target="_blank" rel="noopener noreferrer">
+                  Register at donotcall.gov <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
+                </a>
+              </Button>
+            </Card>
+
+            {/* Reporting */}
+            <Card className="p-6 md:p-8 rounded-2xl bg-amber-50/50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900">
+              <div className="flex items-start gap-3 mb-3">
+                <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold text-lg">Report bad calls to the feds</h3>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Reporting helps the FTC and FCC track and prosecute illegal robocallers. Takes two minutes.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Button asChild variant="outline" size="sm" className="rounded-xl">
+                  <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer">
+                    Report to FTC <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="sm" className="rounded-xl">
+                  <a
+                    href="https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    FCC robocall guide <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
+                  </a>
+                </Button>
+              </div>
+            </Card>
+          </section>
+        )}
+
+        {!carrier && (
+          <section className="container pb-24 max-w-3xl">
+            <div className="text-center py-12 text-muted-foreground text-sm">
+              Pick your carrier above to see your personalized instructions.
+            </div>
+          </section>
+        )}
       </main>
       <Footer />
     </>

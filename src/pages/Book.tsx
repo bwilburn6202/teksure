@@ -136,18 +136,30 @@ export default function Book() {
     try {
       const bookingId = await createBookingRecord('none');
 
-      // Fire-and-forget confirmation email
-      supabase.functions.invoke('send-booking-confirmation', {
-        body: {
-          name: form.name,
-          email: form.email || undefined,
-          service: selectedService?.label,
-          date: selectedDate?.label,
-          slot: selectedSlot?.label,
-          time: selectedSlot?.time,
-          bookingId,
-        },
-      }).catch(err => console.warn('Booking email failed (non-fatal):', err));
+      // Confirmation email — non-blocking for user, but surface failures to console
+      try {
+        const { data: emailData, error: emailError } = await supabase.functions.invoke(
+          'send-booking-confirmation',
+          {
+            body: {
+              name: form.name,
+              email: form.email || undefined,
+              service: selectedService?.label,
+              date: selectedDate?.label,
+              slot: selectedSlot?.label,
+              time: selectedSlot?.time,
+              bookingId,
+            },
+          }
+        );
+        if (emailError) {
+          console.error('send-booking-confirmation invoke error:', emailError);
+        } else if (emailData && typeof emailData === 'object' && 'error' in emailData) {
+          console.error('send-booking-confirmation returned error:', (emailData as { error: unknown }).error);
+        }
+      } catch (err) {
+        console.error('send-booking-confirmation threw:', err);
+      }
 
       setBookingRef(bookingId?.slice(0, 8).toUpperCase() ?? 'TEKSURE');
       setStep(5);

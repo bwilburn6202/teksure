@@ -4,7 +4,7 @@ import {
   Search, Shield, ArrowRight, Monitor, Apple, Lightbulb,
   Sparkles, Bot, BookOpen, Phone, Mail, Heart,
   Zap, ChevronRight, Wifi, Gauge, AlertTriangle, Printer, KeyRound, Smartphone,
-  CreditCard
+  CreditCard, Compass
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -242,6 +242,28 @@ const Index = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════ */}
+      {/* GUIDE FINDER CTA                                   */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-10 md:py-14">
+        <div className="container">
+          <div className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div className="h-14 w-14 rounded-xl bg-primary/15 flex items-center justify-center shrink-0">
+              <Compass className="h-7 w-7 text-primary" aria-hidden="true" />
+            </div>
+            <div className="flex-1">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">Not sure where to start?</h2>
+              <p className="text-muted-foreground text-base md:text-lg max-w-xl">
+                Answer three short questions and we'll point you to the right guide — no browsing through thousands.
+              </p>
+            </div>
+            <Button asChild size="lg" className="gap-1.5 rounded-xl shrink-0">
+              <Link to="/find-a-guide">Find my guide <ArrowRight className="h-4 w-4" /></Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
       {/* GUIDES & TUTORIALS                                */}
       {/* ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-24 bg-muted/40">
@@ -287,6 +309,108 @@ const Index = () => {
           <div className="text-center mt-8">
             <Button asChild variant="outline" className="gap-1.5 rounded-xl"><Link to="/guides">Browse all {guides.length.toLocaleString()}+ guides <ArrowRight className="h-4 w-4" /></Link></Button>
           </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* FREE HELP FOR EVERYONE                            */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-24">
+        <div className="container">
+          <RevealSection>
+            <div className="text-center mb-10">
+              <h2 className="display-heading text-3xl md:text-4xl mb-3">Free Help for Everyone</h2>
+              <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+                Three free pillars of TekSure — programs, protection, and instant answers.
+              </p>
+            </div>
+          </RevealSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto stagger">
+            {[
+              {
+                emoji: '🎁',
+                title: 'Free Tech Programs',
+                desc: 'Free internet, devices, and training from government and nonprofit programs.',
+                to: '/free-resources',
+                color: 'border-emerald-200 dark:border-emerald-800/30 bg-emerald-50/50 dark:bg-emerald-950/20',
+                accent: 'text-emerald-600 dark:text-emerald-400',
+              },
+              {
+                emoji: '🛡️',
+                title: 'Scam Defense Center',
+                desc: 'Protect yourself from scams. Top threats, warning signs, and recovery help.',
+                to: '/scam-defense',
+                color: 'border-rose-200 dark:border-rose-800/30 bg-rose-50/50 dark:bg-rose-950/20',
+                accent: 'text-rose-600 dark:text-rose-400',
+              },
+              {
+                emoji: '🧠',
+                title: 'TekSure Brain',
+                desc: 'Ask any tech question. Instant answers from 1,200+ guides.',
+                to: '/brain',
+                color: 'border-sky-200 dark:border-sky-800/30 bg-sky-50/50 dark:bg-sky-950/20',
+                accent: 'text-sky-600 dark:text-sky-400',
+              },
+            ].map((card) => (
+              <Link key={card.to} to={card.to} className="group block">
+                <div className={`rounded-2xl border p-6 h-full hover:shadow-md transition-all ${card.color}`}>
+                  <div className="text-3xl mb-3">{card.emoji}</div>
+                  <h3 className={`font-semibold text-lg mb-2 group-hover:${card.accent} transition-colors`}>{card.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{card.desc}</p>
+                  <span className={`inline-flex items-center gap-1 text-sm font-medium ${card.accent}`}>
+                    Learn more <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* NEW TO TEKSURE — START HERE                       */}
+      {/* ══════════════════════════════════════════════════ */}
+      <section className="pb-20 md:pb-24">
+        <div className="container">
+          <RevealSection>
+            <div className="max-w-5xl mx-auto">
+              <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 via-violet-500/5 to-sky-500/10 dark:from-primary/15 dark:via-violet-500/10 dark:to-sky-500/15 p-8 md:p-12">
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full bg-primary/10 blur-[80px]" />
+                  <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full bg-sky-400/10 blur-[80px]" />
+                </div>
+                <div className="relative grid md:grid-cols-[1fr_auto] items-center gap-8">
+                  <div className="text-center md:text-left">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary mb-4">
+                      <Sparkles className="h-3 w-3" /> NEW TO TEKSURE? START HERE
+                    </div>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-3">
+                      Never touched a computer before? <span className="text-primary">Start with the Internet Basics course.</span>
+                    </h2>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                      A free 5-lesson course for complete beginners. No sign-up needed. Work at your own pace.
+                    </p>
+                    <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mt-6">
+                      <Button asChild size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base shadow-sm hover:shadow-md transition-shadow">
+                        <Link to="/courses/internet-basics">
+                          <Compass className="h-4 w-4" /> Start Learning
+                        </Link>
+                      </Button>
+                      <Button asChild variant="ghost" size="lg" className="gap-1.5 rounded-xl h-[52px] px-5 text-base text-muted-foreground hover:text-primary">
+                        <Link to="/learn">Or browse all learning paths <ArrowRight className="h-4 w-4" /></Link>
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center shrink-0">
+                    <div className="h-32 w-32 lg:h-40 lg:w-40 rounded-3xl bg-white dark:bg-card border border-primary/20 shadow-sm flex items-center justify-center text-6xl lg:text-7xl">
+                      🎓
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </RevealSection>
         </div>
       </section>
 

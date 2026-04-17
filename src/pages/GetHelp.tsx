@@ -66,17 +66,30 @@ const GetHelp = () => {
       return;
     }
 
-    // Fire-and-forget confirmation + admin notification emails.
-    // Non-blocking — form succeeds even if email fails.
-    supabase.functions.invoke('send-help-confirmation', {
-      body: {
-        name: name.trim() || undefined,
-        email: email.trim() || undefined,
-        phone: phone.trim() || undefined,
-        device_type: deviceType || undefined,
-        problem_description: description.trim() || undefined,
-      },
-    }).catch(err => console.warn('Email notification failed (non-fatal):', err));
+    // Confirmation + admin notification emails. Non-blocking for the user
+    // (DB row is the source of truth), but we surface failures so missing
+    // env vars / undeployed functions don't go unnoticed.
+    try {
+      const { data: emailData, error: emailError } = await supabase.functions.invoke(
+        'send-help-confirmation',
+        {
+          body: {
+            name: name.trim() || undefined,
+            email: email.trim() || undefined,
+            phone: phone.trim() || undefined,
+            device_type: deviceType || undefined,
+            problem_description: description.trim() || undefined,
+          },
+        }
+      );
+      if (emailError) {
+        console.error('send-help-confirmation invoke error:', emailError);
+      } else if (emailData && typeof emailData === 'object' && 'error' in emailData) {
+        console.error('send-help-confirmation returned error:', (emailData as { error: unknown }).error);
+      }
+    } catch (err) {
+      console.error('send-help-confirmation threw:', err);
+    }
 
     setSubmitted(true);
   };

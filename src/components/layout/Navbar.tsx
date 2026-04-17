@@ -62,16 +62,19 @@ export function Navbar() {
 
   const learnLinks = [
     { to: '/brain', label: 'TekSure Brain', icon: BookOpen, desc: 'Ask any tech question' },
+    { to: '/learn', label: 'Learning Paths', icon: BookOpen, desc: 'Structured free courses' },
+    { to: '/senior-tech-path', label: 'Tech for Seniors', icon: BookOpen, desc: 'Path for adults 60+' },
+    { to: '/accessibility', label: 'Accessibility', icon: BookOpen, desc: 'Make devices easier' },
     { to: '/glossary', label: 'Glossary', icon: BookOpen, desc: 'Plain-English terms' },
-    { to: '/weekly-tips', label: 'Weekly Tips', icon: Newspaper, desc: 'One tip every Sunday' },
-    { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen, desc: 'Learn at your pace' },
     { to: '/videos', label: 'Video Tutorials', icon: Video, desc: 'Watch & learn' },
     { to: '/forum', label: 'Community', icon: Users, desc: 'Ask real people' },
-    { to: '/news', label: 'Tech News', icon: Newspaper, desc: 'Top tech stories' },
   ];
 
   const supportLinks = [
     { to: '/free-resources', label: 'Free Tech Programs', icon: ArrowRight, desc: 'Free internet, devices & training' },
+    { to: '/free-software', label: 'Free Software', icon: ArrowRight, desc: '40+ free alternatives' },
+    { to: '/caregiver-hub', label: 'Caregiver Hub', icon: Users, desc: 'Helping a loved one' },
+    { to: '/tech-help-near-me', label: 'Help Near Me', icon: ArrowRight, desc: 'Find local tech help' },
     { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight, desc: 'Give the gift of help' },
     { to: '/local-help', label: 'Find Local Help', icon: ArrowRight, desc: 'Near you' },
     { to: '/about', label: 'About TekSure', icon: Users, desc: 'Our mission' },

@@ -915,6 +915,12 @@ const AdminConsole = () => (
           >
             Content Pipeline →
           </Link>
+          <Link
+            to="/admin/newsletter"
+            className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-muted/40 hover:bg-muted transition-colors text-foreground"
+          >
+            <Mail className="h-3 w-3" /> Newsletter →
+          </Link>
         </div>
       </div>
 

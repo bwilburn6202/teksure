@@ -37,8 +37,10 @@ const TechJobRoom            = lazy(() => import("./pages/tech/JobRoom"));
 const AdminConsole           = lazy(() => import("./pages/admin/Console"));
 const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
 const KnowledgeBase          = lazy(() => import("./pages/admin/KnowledgeBase"));
+const AdminNewsletter        = lazy(() => import("./pages/admin/Newsletter"));
 const OpportunityDashboard   = lazy(() => import("./pages/OpportunityDashboard"));
 const Glossary               = lazy(() => import("./pages/Glossary"));
+const FindAGuide             = lazy(() => import("./pages/FindAGuide"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
 const DeviceHub              = lazy(() => import("./pages/DeviceHub"));
 const About                  = lazy(() => import("./pages/About"));
@@ -192,6 +194,21 @@ const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
 const FreeResources          = lazy(() => import("./pages/FreeResources"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
+const Learn                  = lazy(() => import("./pages/Learn"));
+const AccessibilityHub       = lazy(() => import("./pages/AccessibilityHub"));
+const CaregiverHub           = lazy(() => import("./pages/CaregiverHub"));
+const FreeSoftware           = lazy(() => import("./pages/FreeSoftware"));
+const TechHelpNearMe         = lazy(() => import("./pages/TechHelpNearMe"));
+const SeniorTechPath         = lazy(() => import("./pages/SeniorTechPath"));
+const ChromebookHub          = lazy(() => import("./pages/ChromebookHub"));
+const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics"));
+const ErrorDecoderTool       = lazy(() => import("./pages/tools/ErrorDecoder"));
+const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
+const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
+const PhonePlanComparator    = lazy(() => import("./pages/tools/PhonePlanComparator"));
+const RobocallBlocker        = lazy(() => import("./pages/tools/RobocallBlocker"));
+const PasswordLeakChecker    = lazy(() => import("./pages/tools/PasswordLeakChecker"));
+const SubscriptionAuditor    = lazy(() => import("./pages/tools/SubscriptionAuditor"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -318,8 +335,10 @@ const AppContent = () => {
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
           <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
+          <Route path="/admin/newsletter" element={<ProtectedRoute allowedRoles={['admin']}><AdminNewsletter /></ProtectedRoute>} />
           <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
+          <Route path="/find-a-guide" element={<FindAGuide />} />
           <Route path="/quick-fixes" element={<QuickFixes />} />
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
@@ -407,6 +426,21 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/free-resources" element={<FreeResources />} />
           <Route path="/scam-defense" element={<ScamDefenseCenter />} />
+          <Route path="/learn" element={<Learn />} />
+          <Route path="/accessibility" element={<AccessibilityHub />} />
+          <Route path="/caregiver-hub" element={<CaregiverHub />} />
+          <Route path="/free-software" element={<FreeSoftware />} />
+          <Route path="/tech-help-near-me" element={<TechHelpNearMe />} />
+          <Route path="/senior-tech-path" element={<SeniorTechPath />} />
+          <Route path="/chromebook" element={<ChromebookHub />} />
+          <Route path="/courses/internet-basics" element={<InternetBasics />} />
+          <Route path="/tools/error-decoder" element={<ErrorDecoderTool />} />
+          <Route path="/tools/is-this-a-scam" element={<IsThisAScam />} />
+          <Route path="/tools/device-comparison" element={<DeviceComparison />} />
+          <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
+          <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
+          <Route path="/tools/password-leak-checker" element={<PasswordLeakChecker />} />
+          <Route path="/tools/subscription-auditor" element={<SubscriptionAuditor />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
