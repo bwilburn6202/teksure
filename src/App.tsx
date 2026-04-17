@@ -187,6 +187,7 @@ const ScamIqTest             = lazy(() => import("./pages/tools/ScamIqTest"));
 const AccessibilityNeedsFinder = lazy(() => import("./pages/tools/AccessibilityNeedsFinder"));
 const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGuide"));
 const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
+const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -300,6 +301,7 @@ const AppContent = () => {
           <Route path="/how-it-works" element={<HowItWorks />} />
           {/* Pricing page TBD */}
           <Route path="/guides" element={<Guides />} />
+          <Route path="/guias" element={<GuidesEspanol />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/emergency-help" element={<EmergencyHelp />} />

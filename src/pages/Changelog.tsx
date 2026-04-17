@@ -20,6 +20,20 @@ interface ChangelogEntry {
 
 const changelog: ChangelogEntry[] = [
   {
+    date: 'April 16, 2026',
+    items: [
+      { type: 'feature', text: 'Homepage redesigned — Tools & Utilities accordion, Guides & Tutorials category grid, and Resources section replace old sections. Cleaner, faster to navigate.' },
+      { type: 'feature', text: 'Navigation mega-menu — "Resources" dropdown replaces "More" with a 3-column layout (Safety, Learn, Support) and Quick Tools pill strip for one-click access to popular tools' },
+      { type: 'content', text: '50+ new guides added across 8 new topic areas: Work from Home, Online Shopping, Travel Tech, Entertainment & Streaming, Financial Tech, Health Tech, Communication, and Smart Home' },
+      { type: 'feature', text: 'Live tech news feed on /news powered by the HackerNews API — top 10 tech stories fetched in real time on every page load' },
+      { type: 'feature', text: 'Spanish guides landing page at /guias — 50 guides in Spanish organized by category with search' },
+      { type: 'feature', text: 'Official Resources section added to every guide detail page — 3-4 authoritative links (Apple Support, FTC, Medicare.gov, etc.) matched to guide category' },
+      { type: 'content', text: 'Printable Guide Packs expanded to 12 packs — added Smart Home, Health & Medical, Government & Benefits, Financial Tech, Phone Basics, and Emergency Prep packs. All steps now included in printed output.' },
+      { type: 'feature', text: 'Sources & Credits page at /sources — 31 attributed sources across 7 categories with descriptions and direct links' },
+      { type: 'improvement', text: 'Guide library reaches 1,117+ guides across 19 categories' },
+    ],
+  },
+  {
     date: 'April 15, 2026',
     items: [
       { type: 'feature', text: '10 new interactive tools: Scam Simulator, Privacy Audit, Streaming Calculator, Data Breach Checker, New Phone Setup Wizard, Subscription Tracker, Internet Speed Advisor, Digital Cleanup, Device Setup Checklist, and Tech Glossary Quiz' },

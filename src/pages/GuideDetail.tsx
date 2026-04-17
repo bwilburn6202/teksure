@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen, ExternalLink } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -25,6 +25,100 @@ import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { useAuth } from '@/contexts/AuthContext';
+
+const CATEGORY_RESOURCES: Record<string, { label: string; url: string }[]> = {
+  'windows-guides': [
+    { label: 'Microsoft Support', url: 'https://support.microsoft.com' },
+    { label: 'How-To Geek — Windows', url: 'https://www.howtogeek.com/category/windows/' },
+    { label: 'GCFGlobal — Windows Basics', url: 'https://edu.gcfglobal.org/en/topics/windows/' },
+  ],
+  'mac-guides': [
+    { label: 'Apple Support', url: 'https://support.apple.com' },
+    { label: 'How-To Geek — Mac', url: 'https://www.howtogeek.com/category/mac/' },
+    { label: 'Apple Support YouTube', url: 'https://www.youtube.com/@AppleSupport' },
+  ],
+  'phone-guides': [
+    { label: 'Apple Support — iPhone', url: 'https://support.apple.com/iphone' },
+    { label: 'Google Help — Android', url: 'https://support.google.com/android' },
+    { label: 'Samsung Support', url: 'https://www.samsung.com/us/support/' },
+  ],
+  'safety-guides': [
+    { label: 'FTC Consumer Protection', url: 'https://consumer.ftc.gov' },
+    { label: 'CISA — Cybersecurity Tips', url: 'https://www.cisa.gov/topics/cybersecurity-best-practices' },
+    { label: 'AARP Fraud Watch Network', url: 'https://www.aarp.org/money/scams-fraud/' },
+  ],
+  'health-tech': [
+    { label: 'Medicare.gov', url: 'https://www.medicare.gov' },
+    { label: 'MedlinePlus — Health Info', url: 'https://medlineplus.gov' },
+    { label: 'AARP Health & Technology', url: 'https://www.aarp.org/health/' },
+  ],
+  'government-civic': [
+    { label: 'USA.gov — Government Services', url: 'https://www.usa.gov' },
+    { label: 'SSA — Social Security', url: 'https://www.ssa.gov' },
+    { label: 'Benefits.gov', url: 'https://www.benefits.gov' },
+    { label: 'IRS Free File', url: 'https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free' },
+  ],
+  'financial-tech': [
+    { label: 'Consumer Financial Protection Bureau', url: 'https://www.consumerfinance.gov' },
+    { label: 'FTC — Identity Theft', url: 'https://consumer.ftc.gov/features/identity-theft' },
+    { label: 'AnnualCreditReport.com', url: 'https://www.annualcreditreport.com' },
+  ],
+  'essential-skills': [
+    { label: 'GCFGlobal — Free Digital Skills', url: 'https://edu.gcfglobal.org/en/' },
+    { label: 'AARP Technology Tips', url: 'https://www.aarp.org/home-family/personal-technology/' },
+    { label: 'Senior Planet', url: 'https://seniorplanet.org/' },
+  ],
+  'ai-guides': [
+    { label: 'Google AI Overview', url: 'https://ai.google' },
+    { label: 'OpenAI — ChatGPT Help', url: 'https://help.openai.com' },
+    { label: 'AARP on Artificial Intelligence', url: 'https://www.aarp.org/home-family/personal-technology/info-2023/what-is-artificial-intelligence-chatgpt.html' },
+  ],
+  'app-guides': [
+    { label: 'Apple App Store Support', url: 'https://support.apple.com/apps' },
+    { label: 'Google Play Help', url: 'https://support.google.com/googleplay' },
+    { label: 'GCFGlobal — Apps', url: 'https://edu.gcfglobal.org/en/topics/mobile-devices/' },
+  ],
+  'smart-home': [
+    { label: 'Amazon Alexa Help', url: 'https://www.amazon.com/gp/help/customer/display.html?nodeId=GCM2UCAJHE9QXRXK' },
+    { label: 'Google Nest Help', url: 'https://support.google.com/googlenest' },
+    { label: 'How-To Geek — Smart Home', url: 'https://www.howtogeek.com/category/smart-home/' },
+  ],
+  'internet-connectivity': [
+    { label: 'FCC Broadband Help', url: 'https://www.fcc.gov/consumers/guides' },
+    { label: 'How-To Geek — Networking', url: 'https://www.howtogeek.com/category/networking/' },
+    { label: 'Google — Test Your Speed', url: 'https://fiber.google.com/about/speedtest/' },
+  ],
+  'social-media': [
+    { label: 'Facebook Help Center', url: 'https://www.facebook.com/help' },
+    { label: 'AARP Social Media Guide', url: 'https://www.aarp.org/home-family/personal-technology/info-2020/social-media-beginners-guide.html' },
+    { label: 'FTC — Social Media Safety', url: 'https://consumer.ftc.gov/articles/what-know-about-social-media' },
+  ],
+  'entertainment': [
+    { label: 'Netflix Help Center', url: 'https://help.netflix.com' },
+    { label: 'Spotify Support', url: 'https://support.spotify.com' },
+    { label: 'How-To Geek — Streaming', url: 'https://www.howtogeek.com/category/streaming/' },
+  ],
+  'communication': [
+    { label: 'Zoom Help Center', url: 'https://support.zoom.us' },
+    { label: 'Apple FaceTime Support', url: 'https://support.apple.com/facetime' },
+    { label: 'WhatsApp Help', url: 'https://faq.whatsapp.com' },
+  ],
+  'life-transitions': [
+    { label: 'AARP Life Changes', url: 'https://www.aarp.org/home-family/' },
+    { label: 'Senior Planet', url: 'https://seniorplanet.org/' },
+    { label: 'GCFGlobal — Digital Skills', url: 'https://edu.gcfglobal.org/en/' },
+  ],
+  'tips-tricks': [
+    { label: 'How-To Geek', url: 'https://www.howtogeek.com' },
+    { label: 'AARP Technology Tips', url: 'https://www.aarp.org/home-family/personal-technology/' },
+    { label: "Tom's Guide — Tips", url: 'https://www.tomsguide.com/how-to' },
+  ],
+  'how-to': [
+    { label: 'GCFGlobal', url: 'https://edu.gcfglobal.org/en/' },
+    { label: 'How-To Geek', url: 'https://www.howtogeek.com' },
+    { label: 'AARP Technology Tips', url: 'https://www.aarp.org/home-family/personal-technology/' },
+  ],
+};
 
 /* ── Helpers ────────────────────────────────────── */
 
@@ -593,6 +687,33 @@ const GuideDetail = () => {
               <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
             ))}
           </div>
+
+          {/* Official Resources */}
+          {CATEGORY_RESOURCES[guide.category] && (
+            <div className="mb-8 p-5 rounded-2xl border border-border bg-muted/30">
+              <h2 className="text-sm font-semibold mb-3 flex items-center gap-2">
+                <ExternalLink className="h-4 w-4 text-primary" />
+                Official Resources
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {CATEGORY_RESOURCES[guide.category].map((r) => (
+                  <a
+                    key={r.url}
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-medium text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  >
+                    {r.label}
+                    <ExternalLink className="h-3 w-3 opacity-50" />
+                  </a>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">
+                Sources used to create and verify this guide. <a href="/sources" className="text-primary hover:underline">View all sources →</a>
+              </p>
+            </div>
+          )}
 
           {/* Prev/Next */}
           <div className="grid grid-cols-2 gap-4 mb-8">

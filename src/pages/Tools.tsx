@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ArrowRight, Phone } from 'lucide-react';
+import { Search, Phone } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { ToolSkeleton } from '@/components/skeletons/ToolSkeleton';
 import { Footer } from '@/components/layout/Footer';
@@ -791,9 +791,6 @@ export default function Tools() {
     return results;
   }, [search, activeTab]);
 
-  const featuredTools = filtered.slice(0, 6);
-  const remainingTools = filtered.slice(6);
-
   return (
     <>
       <SEOHead
@@ -873,94 +870,81 @@ export default function Tools() {
                 </div>
               ) : (
                 <>
-                  {/* Featured tools bento-style */}
-                  {activeTab === 'All' && !search.trim() && (
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                      {/* Large featured card */}
-                      <div className="md:col-span-2 md:row-span-2">
-                        {(() => {
-                          const tool = featuredTools[0];
-                          if (!tool) return null;
-                          const card = (
-                            <div className={`glow-card p-8 h-full flex flex-col justify-between`}>
-                              <div>
-                                <div className={`h-14 w-14 rounded-2xl ${tool.bg} flex items-center justify-center mb-4`}>
-                                  <tool.icon className={`h-7 w-7 ${tool.color}`} />
-                                </div>
-                                <Badge variant="secondary" className="text-xs font-normal mb-3">{tool.badge}</Badge>
-                                <h3 className="text-xl font-bold mb-2">{tool.title}</h3>
-                                <p className="text-muted-foreground">{tool.description}</p>
-                              </div>
-                              {tool.path && (
-                                <div className="mt-6">
-                                  <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
-                                    Try it now <ArrowRight className="h-3 w-3" />
-                                  </span>
-                                </div>
-                              )}
+                  {activeTab === 'All' && !search.trim() ? (
+                    // Grouped by category view
+                    <div className="space-y-12">
+                      {(
+                        ['Security', 'Setup Wizards', 'Device Health', 'Money & Bills', 'Learning', 'Communication', 'Setup & Troubleshooting'] as ToolCategory[]
+                      ).map(cat => {
+                        const catTools = tools.filter(t => t.category === cat);
+                        if (catTools.length === 0) return null;
+                        const catEmojis: Record<string, string> = {
+                          'Security': '🔒',
+                          'Setup Wizards': '🔧',
+                          'Device Health': '❤️',
+                          'Money & Bills': '💰',
+                          'Learning': '🎓',
+                          'Communication': '💬',
+                          'Setup & Troubleshooting': '⚡',
+                        };
+                        return (
+                          <div key={cat}>
+                            <div className="flex items-center gap-2 mb-5">
+                              <span className="text-xl">{catEmojis[cat] || '🛠️'}</span>
+                              <h2 className="text-lg font-bold">{cat}</h2>
+                              <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full ml-1">{catTools.length} tools</span>
                             </div>
-                          );
-                          if (!tool.path) return <div key={0}>{card}</div>;
-                          return (
-                            <Link key={tool.path} to={tool.path} className="group block">
-                              {card}
-                            </Link>
-                          );
-                        })()}
-                      </div>
-
-                      {/* Smaller featured cards */}
-                      {featuredTools.slice(1, 5).map((tool, i) => {
+                            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                              {catTools.map((tool, i) => {
+                                const card = (
+                                  <div className="glow-card p-5 h-full">
+                                    <div className="flex items-start justify-between mb-3">
+                                      <div className={`h-10 w-10 rounded-xl ${tool.bg} flex items-center justify-center`}>
+                                        <tool.icon className={`h-5 w-5 ${tool.color}`} />
+                                      </div>
+                                      <Badge variant="secondary" className="text-xs font-normal">{tool.badge}</Badge>
+                                    </div>
+                                    <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
+                                    <p className="text-muted-foreground text-sm">{tool.description}</p>
+                                  </div>
+                                );
+                                if (!tool.path) return <div key={i}>{card}</div>;
+                                return (
+                                  <Link key={tool.path} to={tool.path} className="group">
+                                    {card}
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    // Flat grid for search or filtered category
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                      {filtered.map((tool, i) => {
                         const card = (
-                          <div className={`glow-card p-5 h-full flex flex-col`}>
+                          <div className="glow-card p-5 h-full">
                             <div className="flex items-start justify-between mb-3">
                               <div className={`h-10 w-10 rounded-xl ${tool.bg} flex items-center justify-center`}>
                                 <tool.icon className={`h-5 w-5 ${tool.color}`} />
                               </div>
                               <Badge variant="secondary" className="text-xs font-normal">{tool.badge}</Badge>
                             </div>
-                            <h3 className="font-semibold text-sm mb-1">{tool.title}</h3>
-                            <p className="text-xs text-muted-foreground line-clamp-2">{tool.description}</p>
+                            <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
+                            <p className="text-muted-foreground text-sm">{tool.description}</p>
                           </div>
                         );
-
                         if (!tool.path) return <div key={i}>{card}</div>;
                         return (
-                          <Link key={tool.path} to={tool.path} className="group block">
+                          <Link key={tool.path} to={tool.path} className="group">
                             {card}
                           </Link>
                         );
                       })}
                     </div>
                   )}
-
-                  {/* Remaining tools grid */}
-                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {(activeTab === 'All' && !search.trim() ? remainingTools : filtered).map((tool, i) => {
-                      const card = (
-                        <div className={`glow-card p-5 h-full`}>
-                          <div className="flex items-start justify-between mb-3">
-                            <div className={`h-10 w-10 rounded-xl ${tool.bg} flex items-center justify-center`}>
-                              <tool.icon className={`h-5 w-5 ${tool.color}`} />
-                            </div>
-                            <Badge variant="secondary" className="text-xs font-normal">
-                              {tool.badge}
-                            </Badge>
-                          </div>
-                          <h3 className="font-semibold text-base mb-2">{tool.title}</h3>
-                          <p className="text-muted-foreground text-sm">{tool.description}</p>
-                        </div>
-                      );
-
-                      if (!tool.path) return <div key={i}>{card}</div>;
-
-                      return (
-                        <Link key={tool.path} to={tool.path} className="group">
-                          {card}
-                        </Link>
-                      );
-                    })}
-                  </div>
                 </>
               )}
             </TabsContent>
