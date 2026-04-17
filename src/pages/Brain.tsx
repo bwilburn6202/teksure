@@ -8,7 +8,8 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { guides, categoryLabels } from '@/data/guides';
-import { Brain, Search, ExternalLink, Sparkles, BookOpen, ArrowRight, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
 
 // Stop words to ignore when scoring
 const STOP_WORDS = new Set(['how', 'to', 'a', 'the', 'is', 'my', 'can', 'i', 'do', 'what', 'why', 'when', 'where', 'who', 'which', 'are', 'was', 'be', 'been', 'have', 'has', 'had', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'shall', 'not', 'no', 'on', 'in', 'at', 'by', 'for', 'with', 'about', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'if', 'then', 'that', 'this', 'it', 'its', 'of', 'or', 'and', 'but', 'so', 'yet', 'nor', 'get', 'set', 'use', 'using', 'make', 'need', 'want', 'help', 'me', 'you', 'your', 'my', 'our', 'their', 'an']);
@@ -84,25 +85,18 @@ function findRelevantGuides(query: string, count = 5) {
     .map(({ guide }) => guide);
 }
 
-async function queryOllama(question: string, contextGuides: typeof guides): Promise<string | null> {
+async function queryBrainAPI(question: string, contextGuides: typeof guides): Promise<string | null> {
   try {
     const context = contextGuides.slice(0, 3).map(g =>
       `GUIDE: ${g.title}\nURL: https://teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
     ).join('\n\n---\n\n');
 
-    const res = await fetch('http://localhost:11434/api/generate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      signal: AbortSignal.timeout(15000),
-      body: JSON.stringify({
-        model: 'llama3.2:1b',
-        prompt: `You are TekSure, a friendly tech helper for everyday people and seniors. Answer the question below using ONLY the provided guide content. Keep your answer to 2-3 sentences. Always mention the most relevant guide URL.\n\nGuide content:\n${context}\n\nQuestion: ${question}\n\nAnswer:`,
-        stream: false,
-      }),
+    const { data, error } = await supabase.functions.invoke('brain-query', {
+      body: { question, context },
     });
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data.response || null;
+
+    if (error || !data?.answer) return null;
+    return data.answer;
   } catch {
     return null;
   }
@@ -133,10 +127,10 @@ export default function BrainPage() {
   const [ollamaStatus, setOllamaStatus] = useState<'unknown' | 'online' | 'offline'>('unknown');
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Check if Ollama is running
+  // Check if the hosted Ollama server is reachable via edge function
   useEffect(() => {
-    fetch('http://localhost:11434/api/tags', { signal: AbortSignal.timeout(2000) })
-      .then(() => setOllamaStatus('online'))
+    supabase.functions.invoke('ollama-health')
+      .then(({ data }) => setOllamaStatus(data?.available ? 'online' : 'offline'))
       .catch(() => setOllamaStatus('offline'));
   }, []);
 
@@ -149,7 +143,7 @@ export default function BrainPage() {
     let aiAnswer: string | null = null;
 
     if (ollamaStatus === 'online' && matchedGuides.length > 0) {
-      aiAnswer = await queryOllama(q, matchedGuides);
+      aiAnswer = await queryBrainAPI(q, matchedGuides);
     }
 
     setResult({ query: q, guides: matchedGuides, aiAnswer, ollamaAvailable: ollamaStatus === 'online' });
@@ -305,33 +299,17 @@ export default function BrainPage() {
             </div>
           )}
 
-          {/* Ollama setup card — shown when offline */}
-          {ollamaStatus === 'offline' && (
+          {/* AI unavailable notice */}
+          {ollamaStatus === 'offline' && !result && (
             <Card className="mt-8 border-amber-200/60 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20">
               <CardContent className="p-5">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl shrink-0">🦙</span>
                   <div>
-                    <h3 className="font-semibold text-sm mb-1">Enable AI Answers with Ollama</h3>
-                    <p className="text-xs text-muted-foreground mb-3">
-                      Install Ollama to get AI-generated answers powered by a local LLM — no internet required, completely private.
+                    <h3 className="font-semibold text-sm mb-1">AI answers coming soon</h3>
+                    <p className="text-xs text-muted-foreground">
+                      The guide search below works great right now. AI-powered answers are being set up and will appear here automatically once ready.
                     </p>
-                    <div className="space-y-1.5 text-xs font-mono bg-background rounded-lg p-3 border border-border mb-3">
-                      <p># 1. Install Ollama</p>
-                      <p className="text-primary">brew install ollama</p>
-                      <p className="mt-2"># 2. Start Ollama</p>
-                      <p className="text-primary">ollama serve</p>
-                      <p className="mt-2"># 3. Pull a small model</p>
-                      <p className="text-primary">ollama pull llama3.2:1b</p>
-                    </div>
-                    <a
-                      href="https://ollama.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-primary font-medium hover:underline"
-                    >
-                      Download Ollama <ExternalLink className="h-3 w-3" />
-                    </a>
                   </div>
                 </div>
               </CardContent>
