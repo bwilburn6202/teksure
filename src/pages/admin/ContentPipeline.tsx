@@ -222,7 +222,7 @@ export default function ContentPipeline() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Content Pipeline — TekSure Admin" description="Manage the TekSure content processing pipeline from scraping to publication." path="/admin/content" />
+      <SEOHead title="Content Pipeline — TekSure Admin" description="Manage the TekSure content processing pipeline from scraping to publication." path="/admin/content" noindex />
       <Navbar />
 
       <main id="main-content" className="flex-1 container mx-auto px-4 py-8 max-w-7xl">

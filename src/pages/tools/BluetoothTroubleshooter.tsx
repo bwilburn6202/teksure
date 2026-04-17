@@ -175,7 +175,7 @@ const deviceSteps: Record<DeviceType, Step[]> = {
     {
       id: 'ph3',
       instruction: 'Both phones need Bluetooth on and one must be discoverable.',
-      detail: 'On Android: Settings → Bluetooth → make visible. On iPhone, just open the Bluetooth settings screen — it automatically becomes discoverable.',
+      detail: 'On Android: Settings → Bluetooth → make visible. On iPhone, open the Bluetooth settings screen — it automatically becomes discoverable.',
       yesNext: 'ph5', noNext: 'expert',
       yesLabel: 'Both phones ready', noLabel: 'Having trouble',
     },

@@ -143,7 +143,7 @@ const platforms: Record<Exclude<Platform, null>, PlatformInfo> = {
       'Paste the link into an email, text message, or messaging app.',
     ],
     tips: [
-      'Teams works in a web browser without downloading anything — just go to teams.microsoft.com.',
+      'Teams works in a web browser without downloading anything — visit teams.microsoft.com.',
       'If your meeting was set up through Outlook, look for the "Join Microsoft Teams Meeting" link in the calendar event.',
       'The free version of Teams allows meetings up to 60 minutes with up to 100 people.',
     ],

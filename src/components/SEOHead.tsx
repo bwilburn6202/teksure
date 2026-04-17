@@ -10,6 +10,8 @@ export interface SEOHeadProps {
   modifiedTime?: string;
   canonical?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /** Exclude this page from search engines. Use for admin, auth, and private routes. */
+  noindex?: boolean;
 }
 
 const BASE_URL = 'https://teksure.com';
@@ -17,7 +19,7 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 const OG_IMAGE_WIDTH = 1200;
 const OG_IMAGE_HEIGHT = 630;
 
-export function SEOHead({ title, description, path = '/', type = 'website', ogImage, publishedTime, modifiedTime, canonical, jsonLd }: SEOHeadProps) {
+export function SEOHead({ title, description, path = '/', type = 'website', ogImage, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
   const url = `${BASE_URL}${path}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
   const fullTitle = title.includes('TekSure') ? title : `${title} — TekSure`;
@@ -26,6 +28,7 @@ export function SEOHead({ title, description, path = '/', type = 'website', ogIm
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       {canonical ? <link rel="canonical" href={canonical} /> : <link rel="canonical" href={url} />}
 
       {/* Open Graph */}

@@ -902,7 +902,7 @@ function HelpRequestsTab() {
 
 const AdminConsole = () => (
   <div className="min-h-screen bg-background">
-    <SEOHead title="Admin Console — TekSure" description="TekSure admin dashboard for managing bookings, users, and support tickets." path="/admin" />
+    <SEOHead title="Admin Console — TekSure" description="TekSure admin dashboard for managing bookings, users, and support tickets." path="/admin" noindex />
     <Navbar />
     <div className="container py-8">
       <div className="border-b border-border pb-6 mb-8">

@@ -29,7 +29,7 @@ type AppData = Record<Usage, Record<DeviceType, AppRec[]>>;
 const appData: AppData = {
   'video-calls': {
     iphone: [
-      { name: 'FaceTime', emoji: '📱', tagline: 'Built-in Apple video calling', description: 'Already on your iPhone — free calls to any other Apple device.', whySeniors: "No setup needed — just tap a contact's name. Large clear buttons.", price: 'Free', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/facetime/id1110145091', badge: 'Best Pick' },
+      { name: 'FaceTime', emoji: '📱', tagline: 'Built-in Apple video calling', description: 'Already on your iPhone — free calls to any other Apple device.', whySeniors: "No setup needed — tap a contact's name. Large clear buttons.", price: 'Free', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/facetime/id1110145091', badge: 'Best Pick' },
       { name: 'Zoom', emoji: '💻', tagline: 'Video meetings with anyone', description: 'Join or host video calls with family, doctors, or groups.', whySeniors: 'Simple "Join a Meeting" button. Works on any device so everyone can join.', price: 'Free', rating: '4.6★', iosUrl: 'https://apps.apple.com/app/zoom/id546505307' },
     ],
     android: [
@@ -37,12 +37,12 @@ const appData: AppData = {
       { name: 'WhatsApp', emoji: '💬', tagline: 'Chat and video call in one app', description: 'Free video calls, voice calls, and messages worldwide.', whySeniors: "Used by billions — your family probably already has it. Easy to find contacts.", price: 'Free', rating: '4.4★', androidUrl: 'https://play.google.com/store/apps/details?id=com.whatsapp' },
     ],
     windows: [
-      { name: 'Zoom', emoji: '💻', tagline: 'The most popular video call app', description: 'Join or host video meetings with anyone on any device.', whySeniors: 'Just click a link to join. No account needed to join other calls.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download', badge: 'Best Pick' },
+      { name: 'Zoom', emoji: '💻', tagline: 'The most popular video call app', description: 'Join or host video meetings with anyone on any device.', whySeniors: 'Click a meeting link to join. No account needed to join other calls.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download', badge: 'Best Pick' },
       { name: 'Microsoft Teams', emoji: '🟣', tagline: 'Video calls built into Windows', description: 'Pre-installed on Windows 11. Great for family group chats.', whySeniors: 'Already on your PC — no download needed on Windows 11.', price: 'Free', rating: '4.4★' },
     ],
     mac: [
       { name: 'FaceTime', emoji: '📱', tagline: 'Apple video calling on your Mac', description: 'Already installed — free calls to any Apple device.', whySeniors: 'Same easy interface on Mac as iPhone. Nothing to download.', price: 'Free', rating: '4.8★', badge: 'Best Pick' },
-      { name: 'Zoom', emoji: '💻', tagline: 'Video meetings with anyone', description: 'Join calls with family, friends, or doctors on any device.', whySeniors: 'Just click a link — works even if others use Android or Windows.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download' },
+      { name: 'Zoom', emoji: '💻', tagline: 'Video meetings with anyone', description: 'Join calls with family, friends, or doctors on any device.', whySeniors: 'Click a meeting link — works even if others use Android or Windows.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download' },
     ],
   },
   'banking': {
@@ -55,10 +55,10 @@ const appData: AppData = {
       { name: 'Google Pay', emoji: '🔵', tagline: 'Pay with your phone', description: 'Tap your phone on a card reader to pay — like a contactless card.', whySeniors: 'No need to dig out your wallet. Works at millions of shops.', price: 'Free', rating: '4.3★', androidUrl: 'https://pay.google.com' },
     ],
     windows: [
-      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — just go to your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
     ],
     mac: [
-      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — just go to your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
     ],
   },
   'photos': {
@@ -71,7 +71,7 @@ const appData: AppData = {
     ],
     windows: [
       { name: 'Google Photos (browser)', emoji: '🖼️', tagline: 'View and manage photos online', description: 'Access all your Google Photos from photos.google.com — no download needed.', whySeniors: 'Big screen makes it easy to browse and edit photos. Download for printing.', price: 'Free (15GB)', rating: '4.6★', badge: 'Best Pick' },
-      { name: 'Microsoft Photos', emoji: '🪟', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organize photos easily.', whySeniors: 'No setup needed — just double-click any photo to open it.', price: 'Free', rating: '4.2★' },
+      { name: 'Microsoft Photos', emoji: '🪟', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organize photos easily.', whySeniors: 'No setup needed — double-click any photo to open it.', price: 'Free', rating: '4.2★' },
     ],
     mac: [
       { name: 'Apple Photos', emoji: '🌸', tagline: 'Built-in Mac photo manager', description: "Already installed on your Mac — organizes photos by year, month, and day automatically.", whySeniors: 'Nothing to install. Syncs with your iPhone automatically via iCloud.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },

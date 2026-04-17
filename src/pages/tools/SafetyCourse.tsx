@@ -109,10 +109,10 @@ const lessons: Lesson[] = [
     id: 3,
     icon: ShoppingCart,
     title: 'Safe Online Shopping',
-    subtitle: 'Buy online with confidence and spot dodgy websites',
+    subtitle: 'Buy online with confidence and spot shady websites',
     content: [
-      { text: 'Online shopping is safe when you know what to look for. Millions of safe transactions happen every day — you just need to spot the rare dodgy ones.' },
-      { heading: 'Check for HTTPS', text: 'Before entering any payment details, look at the address bar. The web address should start with "https://" — the "s" stands for secure. Most browsers also show a padlock icon. If it just says "http://" without the "s", leave immediately.' },
+      { text: 'Online shopping is safe when you know what to look for. Millions of safe transactions happen every day — you only need to learn how to spot the rare bad ones.' },
+      { heading: 'Check for HTTPS', text: 'Before entering any payment details, look at the address bar. The web address should start with "https://" — the "s" stands for secure. Most browsers also show a padlock icon. If it only says "http://" without the "s", leave immediately.' },
       { heading: 'Research the seller', text: 'Search for "[shop name] reviews" or "[shop name] scam" before buying from an unfamiliar website. Check Trustpilot. If you can\'t find any information, that\'s a warning sign.' },
       { heading: 'If it seems too good to be true...', text: 'A $500 phone for $39.99 is almost certainly a scam or counterfeit. Scammers attract buyers with unbeatable prices then take your money and send nothing — or cheap fakes.' },
       { heading: 'Use credit cards or PayPal when possible', text: 'Credit cards and PayPal offer purchase protection — you can dispute charges if goods don\'t arrive. Paying by bank transfer directly gives you no protection at all.' },
