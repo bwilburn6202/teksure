@@ -65,6 +65,16 @@ Stripe — LIVE. £15 deposit model. Never touch the Stripe edge functions witho
 
 ---
 
+## Current State (as of 2026-04-16)
+- **1,200+ guides** across 19 categories (incl. 50 Spanish at /guias, Batch 7 in progress)
+- **68+ interactive tools** at /tools
+- **161+ routes**, 80+ pages
+- **TekSure Brain** live at /brain — semantic search + optional hosted Ollama
+- **Hosted Ollama:** edge functions deployed (`brain-query`, `ollama-health`). Awaiting Hetzner CX22 server — set `OLLAMA_BASE_URL` + `OLLAMA_MODEL=llama3.2:1b` in Supabase secrets to activate
+- **New pages in progress:** /free-resources (Free Tech Programs), /scam-defense (Scam Defense Center)
+- **New tools in progress:** /tools/streaming-calculator, /tools/device-age-checker
+- **Stale files deleted:** teksure-sprint-plan-march2026.md, daily-tip files, content-gaps/, old roadmap reviews
+
 ## Autonomous Development System (as of 2026-04-01)
 
 TekSure is maintained by a fully autonomous development pipeline. The system has **full creative freedom** to add guides, build features, update content, and evolve the site — all in service of helping non-technical people with technology.

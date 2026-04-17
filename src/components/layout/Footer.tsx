@@ -19,16 +19,17 @@ export function Footer() {
     {
       title: 'Safety',
       links: [
+        { to: '/scam-defense', label: 'Scam Defense Center' },
         { to: '/safety/scam-alerts', label: 'Scam Alerts' },
         { to: '/tools/scam-simulator', label: 'Scam Simulator' },
         { to: '/tools/privacy-audit', label: 'Privacy Audit' },
-        { to: '/tools/cyber-scorecard', label: 'Security Scorecard' },
         { to: '/emergency-help', label: 'Emergency Help' },
       ],
     },
     {
       title: 'Support',
       links: [
+        { to: '/free-resources', label: 'Free Tech Programs' },
         { to: '/get-help', label: 'Get Help' },
         { to: '/forum', label: 'Community Forum' },
         { to: '/local-help', label: 'Local Help' },

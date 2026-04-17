@@ -54,6 +54,7 @@ export function Navbar() {
   const safetyLinks = [
     { to: '/emergency-help', label: 'Emergency Help', icon: ShieldAlert, desc: 'Urgent help now' },
     { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench, desc: 'Common fixes fast' },
+    { to: '/scam-defense', label: 'Scam Defense Center', icon: ShieldAlert, desc: 'Protect yourself from scams' },
     { to: '/tools/scam-simulator', label: 'Scam Simulator', icon: Shield, desc: 'Practice spotting scams' },
     { to: '/tools/privacy-audit', label: 'Privacy Audit', icon: Shield, desc: 'Check your settings' },
     { to: '/safety/scam-alerts', label: 'Scam Alerts', icon: ShieldAlert, desc: 'Latest scam warnings' },
@@ -70,6 +71,7 @@ export function Navbar() {
   ];
 
   const supportLinks = [
+    { to: '/free-resources', label: 'Free Tech Programs', icon: ArrowRight, desc: 'Free internet, devices & training' },
     { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight, desc: 'Give the gift of help' },
     { to: '/local-help', label: 'Find Local Help', icon: ArrowRight, desc: 'Near you' },
     { to: '/about', label: 'About TekSure', icon: Users, desc: 'Our mission' },

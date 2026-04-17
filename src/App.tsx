@@ -170,6 +170,7 @@ const ScreenTimeAnalyzer     = lazy(() => import("./pages/tools/ScreenTimeAnalyz
 const EmailSecurityCheck     = lazy(() => import("./pages/tools/EmailSecurityCheck"));
 const AppCleanup             = lazy(() => import("./pages/tools/AppCleanup"));
 const TechBudgetPlanner      = lazy(() => import("./pages/tools/TechBudgetPlanner"));
+const DeviceAgeChecker       = lazy(() => import("./pages/tools/DeviceAgeChecker"));
 const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
 const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
 const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
@@ -189,6 +190,8 @@ const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGui
 const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
+const FreeResources          = lazy(() => import("./pages/FreeResources"));
+const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -402,6 +405,8 @@ const AppContent = () => {
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
           <Route path="/sources" element={<Sources />} />
+          <Route path="/free-resources" element={<FreeResources />} />
+          <Route path="/scam-defense" element={<ScamDefenseCenter />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
@@ -444,6 +449,7 @@ const AppContent = () => {
           <Route path="/tools/email-security-check" element={<EmailSecurityCheck />} />
           <Route path="/tools/app-cleanup" element={<AppCleanup />} />
           <Route path="/tools/tech-budget" element={<TechBudgetPlanner />} />
+          <Route path="/tools/device-age-checker" element={<DeviceAgeChecker />} />
           <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
           <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
           <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
