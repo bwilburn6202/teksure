@@ -599,7 +599,7 @@ const JWTDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             if (e.target.value) decodeJWT(e.target.value);
           }}
           className="w-full px-3 py-2 bg-gray-900 border border-gray-700 rounded text-white placeholder-gray-500 focus:outline-none focus:border-green-500 font-mono text-xs"
-          placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+          placeholder="Paste your JWT token here..."
           rows={3}
         />
       </div>

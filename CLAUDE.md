@@ -30,7 +30,7 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 - Never use: "It's easy", "simply", "just", "obviously", "leverage", "utilize", "seamless", "cutting-edge"
 - Never use jargon without immediately explaining it
 - Use "Quick Tip" not "Pro Tip"
-- Difficulty levels: `beginner` / `intermediate` / `advanced`
+- Difficulty levels: `Beginner` / `Intermediate` / `Advanced` (PascalCase — enforced by the `Guide` type in `src/data/guides.ts`)
 - All new pages need a `<SEOHead title="..." description="..." />` component
 - Commit format: `feat: [description]` or `fix: [description]`
 
@@ -44,7 +44,7 @@ TekSure is a tech support and digital literacy platform for non-technical users 
   category: "Safety" | "Essential Skills" | "Tips & Tricks" | "AI" | "Apps" | "Health Tech" | ...,
   tags: ["tag1", "tag2"],
   emoji: "🔒",
-  difficulty: "beginner",
+  difficulty: "Beginner",
   readTime: "5 min",
   publishedAt: "2026-03-31",
   steps: [

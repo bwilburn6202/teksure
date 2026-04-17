@@ -44,7 +44,6 @@
     "compression": "^1.8.1",
     "date-fns": "^3.6.0",
     "express": "^5.2.1",
-    "framer-motion": "^12.34.4",
     "lucide-react": "^0.462.0",
     "mammoth": "^1.9.1",
     "marked": "^18.0.0",
