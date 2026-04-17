@@ -1586,50 +1586,6 @@ Alexa también puede hacer llamadas a otros dispositivos Alexa o teléfonos, lo 
     ],
   },
 
-  // ─── 33. Cómo tomar una captura de pantalla ──────────────────────────────────
-  {
-    slug: 'es-take-screenshot',
-    title: 'Cómo tomar una captura de pantalla',
-    excerpt: 'Aprende a tomar una foto de lo que aparece en la pantalla de tu teléfono o computadora.',
-    category: 'essential-skills' as any,
-    tags: ['screenshot', 'capture', 'screen', 'essential', 'beginner'],
-    readTime: '4 min',
-    thumbnailEmoji: '📷',
-    difficulty: 'Beginner',
-    publishedAt: '2026-04-16',
-    body: `Una captura de pantalla (o "screenshot") es una foto de todo lo que aparece en la pantalla de tu teléfono o computadora en ese momento. Es muy útil para guardar información importante como confirmaciones de pedidos, recibos digitales, direcciones, mensajes que quieres recordar, o para mostrarle a alguien lo que ves en tu pantalla cuando necesitas ayuda técnica.
-
-Tomar una captura de pantalla es rápido y gratuito — la imagen se guarda automáticamente en la galería de fotos de tu dispositivo. Después puedes compartirla por mensaje de texto, WhatsApp, correo electrónico, o simplemente guardarla para verla después.
-
-En los iPhones con Face ID (los modelos más nuevos que no tienen botón de inicio), presionas el botón lateral derecho y el botón de subir volumen al mismo tiempo. Verás un destello y la captura aparecerá como una miniatura en la esquina inferior izquierda. En iPhones más antiguos con botón de inicio, presionas el botón de inicio y el botón lateral al mismo tiempo.
-
-En teléfonos Android, generalmente presionas el botón de encendido y el de bajar volumen al mismo tiempo durante un segundo. Algunos teléfonos Samsung también permiten tomar capturas deslizando el borde de la mano por la pantalla de un lado a otro.
-
-En una computadora con Windows, presiona la tecla "PrtSc" (Print Screen) o usa la herramienta de recortes buscando "Snipping Tool" en el menú de inicio. En una Mac, presiona Command + Shift + 3 para capturar toda la pantalla o Command + Shift + 4 para seleccionar un área específica.`,
-    steps: [
-      {
-        title: 'Abre lo que quieres capturar',
-        content: 'Primero, asegúrate de que lo que quieres guardar esté visible en tu pantalla. Puede ser un mensaje, una confirmación de compra, un mapa, un error que quieres reportar, o cualquier otra cosa.',
-      },
-      {
-        title: 'Toma la captura en tu teléfono',
-        content: 'iPhone con Face ID: presiona el botón lateral + subir volumen al mismo tiempo. iPhone con botón de inicio: presiona botón de inicio + botón lateral. Android: presiona encendido + bajar volumen al mismo tiempo.',
-      },
-      {
-        title: 'Revisa la captura',
-        content: 'La captura aparecerá brevemente en una esquina de la pantalla. Tócala para verla en grande, recortarla o dibujar sobre ella. Si no la tocas, se guardará automáticamente en tu galería de fotos.',
-      },
-      {
-        title: 'Encuentra la captura en tu galería',
-        content: 'Abre la app de Fotos (iPhone) o Galería/Google Photos (Android). Las capturas se guardan en un álbum llamado "Capturas de pantalla" o "Screenshots". También aparecen en tu rollo de fotos principal.',
-      },
-      {
-        title: 'Comparte la captura si la necesitas enviar',
-        content: 'Abre la captura en tu galería, toca el ícono de compartir (el cuadrado con flecha en iPhone o los tres puntos conectados en Android) y selecciona cómo quieres enviarla: mensaje de texto, WhatsApp, correo, etc.',
-      },
-    ],
-  },
-
   // ─── 34. Cómo liberar espacio en tu teléfono ─────────────────────────────────
   {
     slug: 'es-free-phone-storage',

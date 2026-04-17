@@ -948,62 +948,6 @@ Test by saying "Hey Google, what is the weather?" or "Hey Google, play jazz musi
   },
 
   {
-    slug: 'connect-smart-tv-to-wifi',
-    title: 'How to Connect Your Smart TV to WiFi',
-    excerpt: 'Get your smart TV online to stream Netflix, YouTube, and apps — step-by-step for any brand.',
-    category: 'smart-home' as any,
-    tags: ['smart TV', 'WiFi', 'streaming', 'setup', 'television'],
-    readTime: '5 min',
-    thumbnailEmoji: '📺',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `A smart TV needs WiFi to stream Netflix, Hulu, YouTube, and other apps. Connecting is a one-time setup that takes a few minutes. Steps are similar across Samsung, LG, Sony, TCL, Vizio, Hisense, and Roku TVs.
-
-You need your WiFi network name and password. If you do not know the password, check the back or bottom of your router for a sticker with the default password.
-
-Turn on your TV, press "Home" or "Menu" on the remote, navigate to Settings (gear icon), select "Network," "Internet," or "WiFi," choose "Wireless," and select your network name. Enter your password using the on-screen keyboard and arrow keys on your remote. Passwords are case-sensitive — enter capitals and lowercase exactly.
-
-If your router broadcasts both 2.4GHz and 5GHz networks, try 2.4GHz first — it has longer range. If the TV does not find your network, make sure the router is on and other devices can connect. Once connected, open Netflix or YouTube to test.`,
-    steps: [
-      { title: 'Open TV Settings', content: 'Press "Home" or "Menu" on your remote and navigate to Settings (gear icon).' },
-      { title: 'Find Network or WiFi settings', content: 'Look for "Network," "Internet," or "WiFi." Select it and choose "Wireless."' },
-      { title: 'Select your WiFi network', content: 'Your TV scans for networks. Find yours in the list. Try 2.4GHz for better range if you see two networks.' },
-      { title: 'Enter your WiFi password', content: 'Use the on-screen keyboard and remote arrow keys. Passwords are case-sensitive. Press "Connect."' },
-      { title: 'Verify and update', content: 'Wait for "Connected" message. Allow software updates if prompted.' },
-      { title: 'Test with a streaming app', content: 'Open Netflix or YouTube. If content loads, your TV is connected.' },
-    ],
-  },
-
-  {
-    slug: 'set-up-roku-streaming-device',
-    title: 'How to Set Up a Roku Streaming Device',
-    excerpt: 'Set up your Roku to watch Netflix, Hulu, and hundreds of free and paid channels on any TV.',
-    category: 'smart-home' as any,
-    tags: ['Roku', 'streaming', 'setup', 'television', 'entertainment'],
-    readTime: '6 min',
-    thumbnailEmoji: '🟣',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Roku plugs into your TV's HDMI port and provides access to thousands of streaming channels — Netflix, Hulu, Disney+, YouTube, Peacock, and hundreds of free channels. Roku devices start around $30 and are known for being straightforward.
-
-Plug the Roku into an HDMI port and connect power. Turn on your TV and use the "Input" or "Source" button on your TV remote to select the correct HDMI port. Follow the on-screen setup: choose language, connect to WiFi, and link your Roku account.
-
-To link your account, the screen displays a code. On a phone or computer, go to roku.com/link and enter the code. Sign in or create a free Roku account.
-
-From the home screen, select "Streaming Channels" to browse and add apps. Most popular apps are free to download — subscriptions like Netflix require your existing account login. Roku also offers thousands of free movies and shows through The Roku Channel.
-
-Some Roku remotes have a headphone jack or support wireless listening through the free Roku mobile app, allowing private viewing without disturbing others.`,
-    steps: [
-      { title: 'Connect Roku to your TV', content: 'Plug into an HDMI port and connect the power cable to a wall outlet. Note the HDMI port number.' },
-      { title: 'Switch to the correct input', content: 'Press "Input" or "Source" on your TV remote and select the HDMI port where Roku is connected.' },
-      { title: 'Follow on-screen setup', content: 'Choose language, connect to WiFi by entering your password. Roku checks for updates.' },
-      { title: 'Link your Roku account', content: 'Enter the code shown on your TV at roku.com/link on your phone or computer. Sign in or create a free account.' },
-      { title: 'Add streaming channels', content: 'Select "Streaming Channels" and search for or browse apps. Select "Add Channel" for each one you want.' },
-      { title: 'Sign in to your services', content: 'Open each channel and sign in with your existing subscription credentials.' },
-    ],
-  },
-
-  {
     slug: 'set-up-amazon-fire-stick',
     title: 'How to Set Up Amazon Fire Stick',
     excerpt: 'Plug in and set up your Fire TV Stick to stream movies, shows, and live TV on any television.',
@@ -1375,34 +1319,6 @@ Great starter podcasts include NPR's "Up First" (daily news in 10 minutes), "Stu
   },
 
   {
-    slug: 'use-audible-audiobooks',
-    title: 'How to Use Audible for Audiobooks',
-    excerpt: 'Sign up for Audible and listen to bestselling books narrated by professional voices — in the car, on walks, or at home.',
-    category: 'entertainment' as any,
-    tags: ['Audible', 'audiobooks', 'Amazon', 'reading', 'entertainment'],
-    readTime: '5 min',
-    thumbnailEmoji: '📚',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Audible is Amazon's audiobook service where professional narrators read books aloud. It is great for people who enjoy books but find reading small text difficult, or who want to "read" while driving, walking, or doing housework. Audible offers a free 30-day trial that includes one or two free audiobooks.
-
-Download the Audible app from the App Store or Google Play Store. Sign in with your Amazon account. If you want to try it, start the free trial — you can cancel anytime before the trial ends without being charged.
-
-Browse the Audible store by category (mystery, biography, self-help, fiction, etc.) or search for a specific title or author. When you find a book, tap it to hear a sample before using a credit. Each month of membership gives you 1-2 credits to use on any audiobook, regardless of price.
-
-While listening, you can bookmark sections, adjust playback speed, set a sleep timer, and see how much time is left. If you fall asleep while listening, Audible remembers where you left off.
-
-Audible also includes a growing library of titles in "Audible Plus" — thousands of audiobooks and podcasts included free with any Audible membership, no credits needed. Browse these under "Included" in the app.`,
-    steps: [
-      { title: 'Download Audible', content: 'Get the Audible app from App Store or Google Play Store. Sign in with your Amazon account.' },
-      { title: 'Start the free trial', content: 'Tap to begin the 30-day free trial, which includes free audiobooks. Cancel before the trial ends to avoid charges.' },
-      { title: 'Browse and choose a book', content: 'Search by title, author, or category. Tap a book to hear a sample before committing.' },
-      { title: 'Listen and control playback', content: 'Use playback controls to pause, skip, adjust speed, and set a sleep timer. Audible remembers your place.' },
-      { title: 'Explore included titles', content: 'Browse "Included" or "Audible Plus" for thousands of audiobooks and podcasts at no extra credit cost.' },
-    ],
-  },
-
-  {
     slug: 'get-free-audiobooks-libby-app',
     title: 'How to Get Free Audiobooks from Your Library (Libby App)',
     excerpt: 'Borrow audiobooks and ebooks from your local library for free using the Libby app — no late fees.',
@@ -1483,40 +1399,6 @@ If you have a YouTube Premium subscription, YouTube Music Premium is included at
       { title: 'Create playlists', content: 'Tap "Library" → "New Playlist." Add songs using the three-dot menu → "Add to playlist."' },
       { title: 'Discover new music', content: 'Check "Discover Mix" and other auto-generated playlists on the Home screen for personalized recommendations.' },
       { title: 'Consider Premium', content: 'YouTube Music Premium ($11/month) removes ads, enables background play, and allows offline downloads.' },
-    ],
-  },
-
-  {
-    slug: 'cancel-streaming-subscription',
-    title: 'How to Cancel a Streaming Subscription',
-    excerpt: 'Cancel Netflix, Hulu, Disney+, or any streaming service — where to find the cancel button on each platform.',
-    category: 'entertainment' as any,
-    tags: ['cancel', 'subscription', 'streaming', 'Netflix', 'entertainment'],
-    readTime: '5 min',
-    thumbnailEmoji: '❌',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Canceling a streaming subscription should take less than 5 minutes, but every service hides the cancel button in a slightly different place. Here is where to find it for major services:
-
-Netflix: Go to netflix.com (not the app — you cannot cancel from the app on most devices). Click your profile icon → Account → Cancel Membership. You keep access until the end of your billing period.
-
-Hulu: Go to hulu.com, click your profile → Account → Cancel. Or in the app: profile icon → Account → Cancel Subscription.
-
-Disney+: Go to disneyplus.com, click your profile → Account → Subscription → Cancel Subscription.
-
-Amazon Prime Video: Go to amazon.com → Account & Lists → Memberships & Subscriptions → Prime → Manage Membership → End Membership. Note: this cancels all of Amazon Prime, not just video.
-
-Apple TV+: On iPhone: Settings → your name → Subscriptions → Apple TV+ → Cancel. On a computer: go to Apple ID settings.
-
-If you subscribed through the App Store (iPhone) or Google Play (Android), the cancellation happens there, not on the streaming service's website. iPhone: Settings → your name → Subscriptions. Android: Play Store → profile → Payments & subscriptions → Subscriptions.
-
-After canceling, you keep access until the end of your current billing period. You will not receive a refund for unused days, but you also will not be charged again.`,
-    steps: [
-      { title: 'Determine where you subscribed', content: 'Check if you signed up through the service\'s website, the App Store, or Google Play — cancellation happens where you subscribed.' },
-      { title: 'Cancel through the service\'s website', content: 'Go to the service\'s website, sign in, navigate to Account or Membership settings, and find the Cancel option.' },
-      { title: 'Cancel through App Store', content: 'iPhone: Settings → your name → Subscriptions → select the service → Cancel Subscription.' },
-      { title: 'Cancel through Google Play', content: 'Android: Play Store → profile → Payments & subscriptions → Subscriptions → select → Cancel.' },
-      { title: 'Verify cancellation', content: 'You should receive a confirmation email. You keep access until the end of the billing period.' },
     ],
   },
 
@@ -3051,68 +2933,6 @@ For privacy, both devices have a physical camera cover or switch. Slide it close
   // ═══════════════════════════════════════════
 
   {
-    slug: 'renew-passport-online',
-    title: 'How to Renew Your Passport Online',
-    excerpt: 'Renew your U.S. passport from home using the State Department website — no post office visit required for eligible renewals.',
-    category: 'government-civic' as any,
-    tags: ['passport', 'travel', 'government', 'state department', 'renewal'],
-    readTime: '7 min',
-    thumbnailEmoji: '🛂',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Renewing your U.S. passport used to mean printing forms, getting new photos taken, and mailing everything to the State Department. Now, if you qualify, you can renew online through the State Department website at travel.state.gov — and the whole process takes about 20 minutes from your couch.
-
-You are eligible for online renewal if your most recent passport was issued when you were 16 or older, it was issued within the last 15 years, it is not damaged, and you are not changing your name (or you have a legal document for the name change). If your passport does not meet these requirements, you will need to apply in person at a passport acceptance facility.
-
-To get started, go to travel.state.gov and look for "Renew My Passport" or "Online Passport Renewal." You will need to create a MyTravelGov account if you do not already have one. Have these items ready: your most recent passport, a digital passport photo (you can take one with your phone against a white background), and a credit or debit card for the fee.
-
-The application walks you through entering your personal information, uploading your photo, and paying the renewal fee. Standard processing takes 6 to 8 weeks. Expedited processing (for an additional fee) takes 2 to 3 weeks. You can check the status of your renewal anytime by logging back into your MyTravelGov account.
-
-One important note: your old passport will be cancelled once the new one is issued. If you need to travel while your renewal is processing, consider expedited processing or check the State Department website for emergency passport services.
-
-Keep your confirmation number in a safe place — you will need it to check your application status. The State Department will mail your new passport book to you when it is ready.`,
-    steps: [
-      { title: 'Check your eligibility', content: 'Your passport must have been issued when you were 16+, within the last 15 years, and must not be damaged. Visit travel.state.gov to confirm you qualify for online renewal.' },
-      { title: 'Create a MyTravelGov account', content: 'Go to travel.state.gov → "Renew My Passport" → "Start Online Renewal." Create a MyTravelGov account with your email address and a password.' },
-      { title: 'Take your passport photo', content: 'Use your phone to take a photo against a plain white background. Face the camera directly, remove glasses, and keep a neutral expression. The site provides photo guidelines.' },
-      { title: 'Fill out the renewal application', content: 'Enter your personal details, passport information from your current passport, and upload your digital photo. Double-check all spellings and dates.' },
-      { title: 'Pay the renewal fee', content: 'Pay with a credit or debit card. Standard renewal is around $130. Expedited processing costs an additional $60 and cuts the wait time to 2-3 weeks.' },
-      { title: 'Save your confirmation number', content: 'Write down or screenshot your confirmation number. Log back into MyTravelGov anytime to check your application status. Your new passport arrives by mail.' },
-    ],
-  },
-
-  {
-    slug: 'apply-unemployment-benefits-online',
-    title: 'How to Apply for Unemployment Benefits Online',
-    excerpt: 'File for unemployment insurance through your state workforce agency website — what you need and how the process works.',
-    category: 'government-civic' as any,
-    tags: ['unemployment', 'benefits', 'government', 'workforce', 'jobs'],
-    readTime: '8 min',
-    thumbnailEmoji: '📋',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `If you have lost your job through no fault of your own, you may be eligible for unemployment insurance benefits. Every state runs its own unemployment program, but the process for applying is similar across the country — and most states allow you to file your claim entirely online.
-
-Unemployment benefits replace a portion of your income while you look for new work. The amount and duration vary by state, but most states pay benefits for up to 26 weeks. To qualify, you generally must have earned enough wages during a specific period (called the "base period," usually the first four of the last five completed calendar quarters), and you must be able and available to work.
-
-Before you start your application, gather these documents: your Social Security number, your driver's license or state ID, your most recent employer's name, address, and phone number, the dates you worked there, and the reason you are no longer employed. If you worked for more than one employer in the last 18 months, have that information ready too.
-
-To file, search online for "[your state] unemployment" or go to careeronestop.org, which links to every state's unemployment website. Create an account on your state's workforce agency site. The application asks about your work history, the reason you lost your job, your availability to work, and your contact information.
-
-After you submit your application, your former employer will be notified and may respond. The state agency reviews your claim and determines if you qualify. This process usually takes 2 to 3 weeks. If approved, you will receive instructions on how to certify your benefits each week — this means confirming that you are still unemployed and actively looking for work.
-
-Most states pay benefits through direct deposit or a prepaid debit card. You must certify each week (or every two weeks, depending on your state) to keep receiving payments. Missing a certification can delay or stop your benefits.`,
-    steps: [
-      { title: 'Find your state unemployment website', content: 'Search for "[your state] unemployment benefits" or visit careeronestop.org to find a direct link to your state workforce agency.' },
-      { title: 'Gather your documents', content: 'Have ready: Social Security number, state ID, recent employer name/address/phone, dates of employment, and the reason you are no longer working.' },
-      { title: 'Create an account and start the application', content: 'Register on your state workforce site with your email and personal details. Begin the unemployment claim application — it typically takes 30-45 minutes.' },
-      { title: 'Complete the work history section', content: 'Enter details for every employer you worked for in the last 18 months. Include company names, addresses, dates, and your reason for leaving each job.' },
-      { title: 'Submit and save your confirmation', content: 'Review your application carefully, then submit. Save or print your confirmation number and any reference documents the site provides.' },
-      { title: 'Certify weekly to receive payments', content: 'Each week (or every two weeks), log back in and certify that you are still unemployed and actively seeking work. Missing certifications can delay your benefits.' },
-    ],
-  },
-
-  {
     slug: 'find-property-tax-information-online',
     title: 'How to Find Your Property Tax Information Online',
     excerpt: 'Look up your property tax bill, assessed value, and payment history using your county assessor or treasurer website.',
@@ -3281,43 +3101,6 @@ If you are using Samsung Messages instead of Google Messages, the process is alm
   },
 
   {
-    slug: 'delete-old-social-media-accounts',
-    title: 'How to Delete Old Social Media Accounts You No Longer Use',
-    excerpt: 'Close inactive social media accounts to protect your privacy and reduce your digital footprint.',
-    category: 'communication' as any,
-    tags: ['social media', 'privacy', 'accounts', 'security', 'Facebook', 'Twitter'],
-    readTime: '6 min',
-    thumbnailEmoji: '🗑️',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Old social media accounts you no longer use are a privacy and security risk. They contain your personal information, photos, and connections — and if a data breach happens, hackers get access to all of it. Deleting accounts you do not use anymore is a smart move.
-
-The challenge is that every social media platform makes the deletion process a little different, and some make it intentionally hard to find. Here is how to handle the most common platforms.
-
-Facebook: Go to Settings and Privacy, then Settings, then Your Facebook Information, then Deactivation and Deletion. Choose "Permanently Delete Account." Facebook gives you a 30-day grace period — if you log back in during that time, the deletion is cancelled. Before deleting, you can download a copy of your data from "Download Your Information" in the same menu.
-
-Instagram: Go to Settings, then Account, then Delete Account (on the website) or search "Delete Instagram account" in a browser. You will be asked why you are leaving and must enter your password to confirm. Instagram also has a 30-day grace period.
-
-Twitter/X: Go to Settings, then Your Account, then Deactivate Your Account. After deactivation, Twitter keeps your data for 30 days before permanently deleting it. You cannot undo this after 30 days.
-
-LinkedIn: Click your profile photo, then Settings and Privacy, then Account management, then Close account. LinkedIn will show you what you will lose (connections, endorsements, messages) and ask you to confirm.
-
-If you cannot remember your password for an old account, use the "Forgot Password" link on the login page to reset it. If you no longer have access to the email address associated with the account, you may need to contact the platform's support team for help.
-
-Before deleting any account, consider downloading your data first. Most platforms offer an export tool that creates a file with your posts, photos, messages, and other content. This way you keep your memories even after the account is gone.
-
-Also update any other services where you used that social media account to log in (for example, apps or websites where you chose "Log in with Facebook"). Switch those to email-based login before deleting the social account.`,
-    steps: [
-      { title: 'Make a list of old accounts', content: 'Think through platforms you have used: Facebook, Instagram, Twitter/X, LinkedIn, Pinterest, Snapchat, TikTok, Reddit, Tumblr. Search your email for "welcome" or "verify" messages to find forgotten accounts.' },
-      { title: 'Log into each account', content: 'Visit each platform and log in. If you forgot your password, use "Forgot Password" to reset it via your email address.' },
-      { title: 'Download your data first', content: 'Before deleting, look for "Download Your Data" or "Request Your Information" in the account settings. Save the file to your computer as a backup of your posts and photos.' },
-      { title: 'Update linked logins', content: 'Check if you used this account to log into other apps or websites (like "Log in with Facebook"). Switch those to email-based login before deleting.' },
-      { title: 'Find the deletion option', content: 'Each platform buries it differently. Look in Settings, then Account, then Delete or Deactivate. If you cannot find it, search online for "how to delete [platform name] account."' },
-      { title: 'Confirm and wait out the grace period', content: 'Most platforms have a 30-day grace period. Do not log back in during this time or the deletion will be cancelled. After 30 days, your account is permanently removed.' },
-    ],
-  },
-
-  {
     slug: 'set-up-microsoft-teams-video-calls',
     title: 'How to Set Up Microsoft Teams for Video Calls',
     excerpt: 'Install Microsoft Teams on your computer or phone and make your first video call — free version included.',
@@ -3379,39 +3162,6 @@ Keep in mind that MMS has a file size limit (usually 1 to 3 megabytes depending 
       { title: 'Choose a photo or take a new one', content: 'Select "Photos" or "Gallery" to pick an existing photo from your library. Or select "Camera" to take a new photo right now.' },
       { title: 'Select your photo', content: 'Browse your photos and tap the one you want to send. To send multiple photos, tap each one to select them (iPhone: tap, then "Add"; Android: tap and hold the first, then tap others).' },
       { title: 'Add a message and send', content: 'The photo appears in the message field. Type an optional caption in the text box, then tap the blue send arrow to deliver the photo.' },
-    ],
-  },
-
-  {
-    slug: 'use-google-meet-video-calls',
-    title: 'How to Use Google Meet for Video Calls',
-    excerpt: 'Start or join a Google Meet video call from your computer or phone — no software installation needed on a computer.',
-    category: 'communication' as any,
-    tags: ['Google Meet', 'video call', 'Google', 'meetings', 'communication'],
-    readTime: '5 min',
-    thumbnailEmoji: '📹',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Google Meet is a free video calling service from Google. One of its biggest advantages is that on a computer, you do not need to install anything — it runs directly in your web browser (Chrome, Firefox, Safari, or Edge). On a phone, you can download the Google Meet app from the App Store or Google Play Store.
-
-To use Google Meet, you need a Google account. If you have a Gmail address, you already have one. If not, you can create a free Google account at accounts.google.com.
-
-To start a new meeting, go to meet.google.com in your web browser and click "New Meeting." You will see three options: create a meeting link for later, start an instant meeting, or schedule a meeting in Google Calendar. For a quick call, choose "Start an instant meeting." Your camera and microphone will turn on (you can turn them off before joining), and you will get a meeting link to share with others.
-
-To invite someone, copy the meeting link and send it to them by email, text, or any messaging app. When they click the link, they will join your meeting. You can also type their email address directly in Meet to send them an invitation.
-
-To join a meeting someone else started, click the link they sent you. If you do not have a link, go to meet.google.com and enter the meeting code (the string of letters after meet.google.com/ in the URL).
-
-During a call, the controls at the bottom of the screen let you turn your camera and microphone on and off, share your screen, use the chat, and adjust settings. Click the three dots for more options like changing your layout, turning on captions (which transcribe what people are saying in real time), and adjusting your background.
-
-The free version of Google Meet supports up to 100 participants and meetings up to 60 minutes — plenty for most personal and small business calls.`,
-    steps: [
-      { title: 'Go to meet.google.com', content: 'Open your web browser and go to meet.google.com. Sign in with your Google account (Gmail address and password).' },
-      { title: 'Start a new meeting', content: 'Click "New Meeting" and choose "Start an instant meeting" for a call right now. Your camera preview will appear — you can adjust your camera and microphone before joining.' },
-      { title: 'Share the meeting link', content: 'Copy the meeting link from the screen and send it to the people you want to invite via text, email, or messaging app.' },
-      { title: 'Join a meeting from a link', content: 'If someone sent you a Google Meet link, click it in your browser. You will see a preview of your camera — click "Join now" to enter the meeting.' },
-      { title: 'Use the meeting controls', content: 'The bottom toolbar has buttons for camera, microphone, screen sharing, chat, reactions, and a red phone icon to leave the call.' },
-      { title: 'Turn on captions', content: 'Click the three dots (more options) then select "Turn on captions." Google Meet transcribes speech in real time at the bottom of the screen — helpful in noisy environments.' },
     ],
   },
 
@@ -3820,39 +3570,6 @@ Google Maps also works offline — handy for areas with poor cell service. Befor
   },
 
   {
-    slug: 'order-groceries-instacart',
-    title: 'How to Order Groceries with Instacart',
-    excerpt: 'Get groceries delivered to your door using the Instacart app or website — choose your store, pick items, and schedule delivery.',
-    category: 'app-guides' as any,
-    tags: ['Instacart', 'grocery delivery', 'shopping', 'food', 'delivery'],
-    readTime: '6 min',
-    thumbnailEmoji: '🛒',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Instacart is a grocery delivery service that lets you shop from local stores — like Kroger, Costco, Publix, Safeway, Aldi, and many others — without leaving your home. A personal shopper picks your items and delivers them to your door, usually the same day.
-
-You can use Instacart through the website (instacart.com) or the app (free on iPhone and Android). To get started, create an account with your email address, name, and delivery address. Instacart uses your address to show which stores deliver to your area.
-
-Once logged in, you will see a list of available stores. Tap a store to start shopping. You can browse by category (produce, dairy, meat, bakery, etc.) or use the search bar to find specific items. Tap an item to add it to your cart, and choose the quantity. You can also write notes for the shopper, like "pick the greenest bananas" or "no substitutions for this item."
-
-A key feature is replacement preferences. If an item you ordered is out of stock, the shopper can either substitute something similar or skip it. For each item, you can choose your preference: "Pick best replacement," "Choose a specific replacement," or "Do not replace."
-
-When you are done shopping, tap your cart to review your order. You will see the item total plus fees: a service fee, a delivery fee (which may be reduced or waived with Instacart+ membership), and an optional tip for your shopper. Tips go directly to the person shopping for you — most people tip 15 to 20 percent.
-
-Choose a delivery window: same-day delivery is usually available in 1-hour, 2-hour, or larger windows. Some stores offer scheduled delivery for the next day. Tap "Place Order" and enter your payment information.
-
-After placing your order, you can track it in real time. You will see when the shopper starts shopping, what items they pick, any replacements they suggest (you can approve or reject through the app), and when they are on their way.`,
-    steps: [
-      { title: 'Download and create an account', content: 'Get the Instacart app from the App Store or Google Play, or go to instacart.com. Sign up with your email, name, and delivery address.' },
-      { title: 'Choose a store', content: 'Browse the list of stores that deliver to your area. Tap one to start shopping. You can shop from multiple stores in separate orders.' },
-      { title: 'Add items to your cart', content: 'Browse categories or search for items. Tap an item to add it, choose the quantity, and optionally add notes for the shopper.' },
-      { title: 'Set replacement preferences', content: 'For each item, choose whether the shopper should substitute a similar item if yours is out of stock, or skip it entirely.' },
-      { title: 'Review and choose delivery time', content: 'Tap your cart to review the order. Select a delivery window — same-day options are usually available. Add a tip for your shopper.' },
-      { title: 'Place the order and track delivery', content: 'Enter your payment information and tap "Place Order." Track the shopper in real time and approve or reject any substitutions they suggest.' },
-    ],
-  },
-
-  {
     slug: 'use-uber-lyft-first-time',
     title: 'How to Use Uber or Lyft for the First Time',
     excerpt: 'Request a ride with Uber or Lyft — from downloading the app to getting picked up and arriving safely.',
@@ -4053,37 +3770,6 @@ Zoom tips: position your camera at eye level for the most natural look. Make sur
       { title: 'Join a meeting', content: 'Click the meeting link someone sent you. Or open Zoom, click "Join," and enter the Meeting ID and passcode.' },
       { title: 'Use the meeting controls', content: 'Bottom toolbar: Mute/Unmute (microphone), Start/Stop Video (camera), Participants, Chat, Share Screen. Click "Leave" when the meeting is over.' },
       { title: 'Improve your video call experience', content: 'Position your camera at eye level. Face a light source (not a window behind you). Mute yourself when not speaking. Use a headset for better audio quality.' },
-    ],
-  },
-
-  {
-    slug: 'use-weather-app-phone',
-    title: 'How to Use the Weather App on Your Phone',
-    excerpt: 'Check the current conditions, hourly forecast, and weekly outlook using the built-in weather app on your phone.',
-    category: 'app-guides' as any,
-    tags: ['weather', 'forecast', 'iPhone', 'Android', 'app'],
-    readTime: '3 min',
-    thumbnailEmoji: '🌤️',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Your phone comes with a built-in weather app that gives you current conditions, hourly forecasts, and a 10-day outlook for your location and any other cities you want to track. You do not need to download anything — it is already on your phone.
-
-On iPhone, the Weather app has a sun/cloud icon and is pre-installed. Open it and you will see the current temperature, conditions (sunny, cloudy, rainy), and a summary for the day. Scroll down to see the hourly forecast (temperature and conditions for each hour) and the 10-day forecast. At the bottom, you will find details like UV index, wind speed, humidity, and sunset/sunrise times.
-
-On Android, the weather is often shown as a widget on your home screen (a small panel showing temperature and conditions). Tap it to open the full weather app. If you do not see a weather widget, look for the Weather app in your app drawer, or use Google Weather by searching "weather" in Google.
-
-To add another city (useful for checking the weather where family lives, or where you are traveling), open the weather app and look for a list or search icon. On iPhone, tap the list icon in the bottom-right corner, then tap the plus sign (+) and search for a city. On Android, tap the menu or settings icon and add a location.
-
-The weather app uses your phone's location to show conditions for where you are right now. Make sure Location Services are turned on for the weather app.
-
-Some weather apps also send severe weather alerts — tornado warnings, flash flood warnings, and extreme heat advisories. These alerts can appear as push notifications even if you do not have the app open, which can be lifesaving during dangerous weather events. Make sure notifications are turned on for the weather app.`,
-    steps: [
-      { title: 'Find and open the weather app', content: 'iPhone: look for the Weather app icon (sun and cloud). Android: tap the weather widget on your home screen, or search "weather" in Google.' },
-      { title: 'View current conditions', content: 'The main screen shows current temperature, weather conditions, and a brief summary. This updates automatically based on your location.' },
-      { title: 'Check the hourly forecast', content: 'Scroll through the hourly forecast to see how temperature and conditions change throughout the day. Helpful for deciding when to go outside.' },
-      { title: 'View the 10-day forecast', content: 'Scroll down to see the multi-day forecast with high and low temperatures for each day. Tap a day for more details.' },
-      { title: 'Add another city', content: 'iPhone: tap the list icon then (+) then search for a city. Android: tap the menu or settings and add a location. Useful for checking weather in other places.' },
-      { title: 'Enable weather alerts', content: 'Make sure notifications are turned on for the weather app in your phone settings. Severe weather alerts can warn you about dangerous conditions.' },
     ],
   },
 
@@ -4363,76 +4049,9 @@ To edit a contact later: find them in your Contacts, tap their name, then tap "E
     ],
   },
 
-  {
-    slug: 'find-lost-phone',
-    title: 'How to Find a Lost Phone (Find My iPhone / Find My Device)',
-    excerpt: 'Locate your lost or stolen iPhone or Android phone, make it ring, lock it, or erase it remotely.',
-    category: 'phone-guides' as any,
-    tags: ['find my phone', 'lost phone', 'stolen phone', 'iPhone', 'Android', 'security'],
-    readTime: '6 min',
-    thumbnailEmoji: '📍',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Losing your phone is stressful, but both iPhone and Android have built-in tracking features that can help you find it, make it ring, lock it, or erase it remotely. The key is that these features need to be enabled before the phone is lost — so if you have not set them up yet, do it now.
-
-For iPhone — Find My iPhone: This is usually turned on by default when you set up your Apple ID. To check: Settings then [your name] then Find My then Find My iPhone — make sure it is turned on. Also turn on "Find My network" and "Send Last Location."
-
-If your iPhone is lost: go to icloud.com/find on any computer or phone and sign in with your Apple ID. Or open the Find My app on another Apple device (iPad, Mac, or a friend's iPhone). You will see your phone's location on a map. From here you can: play a sound (makes the phone ring at full volume even if it is on silent — great for finding it in couch cushions), put it in Lost Mode (locks the phone, displays a message with your contact number, and tracks its location), or erase the phone (deletes all data remotely — use this only if you believe the phone is stolen and you have a backup).
-
-For Android — Find My Device: Go to Settings then Security then Find My Device and make sure it is turned on. Location must also be on.
-
-If your Android is lost: go to google.com/android/find on any computer or phone and sign in with your Google account. You will see your phone on a map. Options include: play sound (rings at full volume for 5 minutes even if on silent), secure device (locks the phone and displays a message), and erase device (deletes everything remotely).
-
-Important: for both features to work, the phone must be turned on, connected to the internet (WiFi or cellular), and have location services enabled. If the phone is turned off or the battery is dead, you will see its last known location.
-
-If you believe your phone was stolen, contact your phone carrier to suspend your service (this prevents the thief from using your phone number). Also file a police report with the phone's location information.`,
-    steps: [
-      { title: 'Set up tracking now (before losing your phone)', content: 'iPhone: Settings then [your name] then Find My then Find My iPhone, then turn on. Android: Settings then Security then Find My Device, then turn on. Make sure Location is enabled.' },
-      { title: 'Go to the tracking website', content: 'iPhone: go to icloud.com/find on any device. Android: go to google.com/android/find. Sign in with your Apple ID or Google account.' },
-      { title: 'View your phone on the map', content: 'Your phone\'s location appears on a map. If the phone is off, you will see its last known location and when it was last online.' },
-      { title: 'Play a sound', content: 'If the phone is nearby (in the house, car, or office), tap "Play Sound." It rings at full volume for several minutes even if the phone is on silent.' },
-      { title: 'Lock the phone remotely', content: 'Tap "Lost Mode" (iPhone) or "Secure Device" (Android) to lock the phone with a passcode and display a message with a callback number.' },
-      { title: 'Erase as a last resort', content: 'If the phone is stolen, tap "Erase" to delete all data remotely. Contact your carrier to suspend service and file a police report.' },
-    ],
-  },
-
   // ═══════════════════════════════════════════
   // MORE SAFETY GUIDES (8 guides)
   // ═══════════════════════════════════════════
-
-  {
-    slug: 'spot-phishing-email',
-    title: 'How to Spot a Phishing Email',
-    excerpt: 'Recognize the warning signs of a phishing email before you click a link, open an attachment, or share personal information.',
-    category: 'safety-guides' as any,
-    tags: ['phishing', 'email safety', 'scams', 'security', 'fraud'],
-    readTime: '6 min',
-    thumbnailEmoji: '🎣',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Phishing emails are fake messages designed to trick you into giving away personal information — passwords, credit card numbers, Social Security numbers, or login credentials. They are the most common type of online scam, and they have become very convincing. Knowing what to look for can protect you from falling victim.
-
-Phishing emails typically pretend to be from a company or person you trust: your bank, Amazon, Netflix, the IRS, Microsoft, Apple, or even a friend or coworker. The goal is to get you to click a link, download an attachment, or reply with sensitive information.
-
-Here are the key warning signs. Urgency and fear: phishing emails create panic with messages like "Your account has been compromised" or "You must act within 24 hours." Real companies rarely demand immediate action through email. Suspicious sender address: the "From" name might say "Apple Support," but the actual email address might be something like support@apple-security-verify.com instead of @apple.com. Always check the full email address, not the display name.
-
-Generic greetings are another red flag. Phishing emails often say "Dear Customer" instead of your actual name. Links that do not match the company's real website are a major warning sign — before clicking any link, hover over it on a computer or press and hold on a phone to see the actual URL.
-
-Spelling and grammar mistakes, unexpected attachments (especially .zip or .exe files), and requests for personal information are all classic phishing indicators. No legitimate company will ask you to send your password or credit card number through email.
-
-If you receive a suspicious email, do not click any links or open any attachments. If the email claims to be from a company you use, go directly to that company's website by typing the address in your browser and log into your account to check for any real alerts.
-
-Report phishing emails by forwarding them to reportphishing@apwg.org and to the company being impersonated. In Gmail, click the three dots then "Report phishing." In Outlook, click "Report" then "Report phishing."`,
-    steps: [
-      { title: 'Check the sender address', content: 'Look at the full email address, not the display name. A real email from Apple comes from @apple.com, not @apple-verify-account.com or similar.' },
-      { title: 'Look for urgency and threats', content: 'Phishing emails pressure you to act immediately. Real companies give you time and multiple contact methods.' },
-      { title: 'Hover over links before clicking', content: 'On a computer, move your mouse over any link to see the real URL. On a phone, press and hold the link. If the URL looks wrong or unfamiliar, do not click.' },
-      { title: 'Watch for generic greetings', content: 'Emails that say "Dear Customer" instead of your name are suspicious. Companies you have accounts with know your name.' },
-      { title: 'Do not open unexpected attachments', content: 'If you were not expecting a file — especially .zip, .exe, or .doc files — do not open it. Contact the sender through a different method to verify.' },
-      { title: 'Go directly to the website', content: 'If an email claims something is wrong with your account, type the company\'s real website address in your browser instead of clicking the email link.' },
-      { title: 'Report the phishing email', content: 'Forward to reportphishing@apwg.org. In Gmail: three dots then "Report phishing." In Outlook: "Report" then "Report phishing." Then delete the email.' },
-    ],
-  },
 
   {
     slug: 'create-strong-password-remember',
@@ -4806,39 +4425,6 @@ If you have multiple email accounts, you can add them all to the same app. The M
   },
 
   {
-    slug: 'share-wifi-password',
-    title: 'How to Share Your WiFi Password',
-    excerpt: 'Share your home WiFi password with guests using your iPhone, Android, or by finding it in your router settings.',
-    category: 'how-to' as any,
-    tags: ['WiFi', 'password', 'sharing', 'network', 'guests'],
-    readTime: '4 min',
-    thumbnailEmoji: '📶',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `When guests visit your home, they often want to connect to your WiFi. If you do not remember the password, there are several ways to find it and share it without crawling behind your router.
-
-Method 1: iPhone to iPhone (or iPad/Mac) — WiFi sharing. If you are connected to your WiFi and your guest has an iPhone, iPad, or Mac, you can share the password without typing it. Make sure both devices have Bluetooth and WiFi turned on. Have your guest try to connect to your WiFi network from their device's Settings. When they select your network and the password prompt appears, a popup shows on YOUR phone asking "Share Your Wi-Fi?" Tap "Share Password." Your guest connects automatically without ever seeing the password.
-
-Method 2: Android — share via QR code. On most Android phones running Android 10 or later, go to Settings then Network and Internet then Wi-Fi (or Settings then Connections then Wi-Fi on Samsung). Tap the gear icon next to your connected network. Look for a "Share" button or QR code icon. A QR code appears that your guest can scan with their phone camera to connect instantly. The password may also be displayed as text below the QR code.
-
-Method 3: Check your router. The default WiFi password is usually printed on a sticker on the bottom or back of your router. It is labeled "WiFi Password," "Network Key," "WPA Key," or similar. Note: if you changed the password from the default, the sticker shows the original, not your current password.
-
-Method 4: Find the password on a Windows computer. If a Windows computer is connected to the WiFi, you can look up the password through the network settings.
-
-Method 5: Find the password on a Mac. Open the Passwords app (or Keychain Access), search for your WiFi network name, click it, and show the password.
-
-Once you find the password, you can share it by telling your guest, writing it on a note card near your door, or texting it.`,
-    steps: [
-      { title: 'iPhone to iPhone: Tap "Share Password"', content: 'Both devices need WiFi and Bluetooth on. Your guest selects your WiFi network — a popup appears on your phone asking to share. Tap "Share Password."' },
-      { title: 'Android: Share via QR code', content: 'Settings then Wi-Fi, tap the gear icon next to your network, then "Share" or QR code icon. Your guest scans the QR code with their camera to connect.' },
-      { title: 'Check the router sticker', content: 'Look at the bottom or back of your router for a sticker labeled "WiFi Password," "Network Key," or "WPA Key." This shows the default password.' },
-      { title: 'Find it on Windows', content: 'Open Network Settings, find your WiFi connection properties, go to the Security tab, and check "Show characters" to reveal the password.' },
-      { title: 'Find it on Mac', content: 'Open the Passwords app (or Keychain Access), search for your WiFi network name, click to view, and show the password (authenticate with your Mac password).' },
-      { title: 'Post the password for guests', content: 'Write your WiFi network name and password on a small card and place it in a visible spot for guests — near the front door or on the fridge.' },
-    ],
-  },
-
-  {
     slug: 'schedule-text-message',
     title: 'How to Schedule a Text Message',
     excerpt: 'Write a text now and have it delivered later — schedule texts for birthdays, reminders, and perfect timing.',
@@ -4907,37 +4493,6 @@ Review these settings periodically. When you install new apps, they often ask fo
   // ═══════════════════════════════════════════
   // WINDOWS ADVANCED (10 guides)
   // ═══════════════════════════════════════════
-
-  {
-    slug: 'use-task-manager-windows',
-    title: 'How to Use Task Manager on Windows',
-    excerpt: 'Open Task Manager to see what programs are running, close frozen apps, and check your computer performance in real time.',
-    category: 'windows' as any,
-    tags: ['windows', 'task manager', 'performance', 'frozen apps', 'troubleshooting'],
-    readTime: '6 min',
-    thumbnailEmoji: '📊',
-    publishedAt: '2026-04-16',
-    difficulty: 'Intermediate',
-    body: `Task Manager is one of the most useful tools built into Windows. It shows you every program and background process running on your computer, how much memory and processor power each one uses, and lets you force-close apps that have stopped responding.
-
-You can open Task Manager in several ways. The quickest is to press Ctrl + Shift + Esc on your keyboard. You can also right-click the taskbar (the bar at the bottom of your screen) and select "Task Manager" from the menu. A third option is to press Ctrl + Alt + Delete and then click "Task Manager" from the screen that appears.
-
-When Task Manager opens, you will see a list of apps currently running on your computer. If an app says "Not Responding" next to its name, that means it has frozen. You can select that app and click "End task" in the upper right corner to close it. This is the most common reason people open Task Manager — to close a frozen program without restarting the entire computer.
-
-Click the "Performance" tab to see real-time graphs of your CPU (processor), memory (RAM), disk, and network usage. If your computer feels slow, check this tab. If your memory usage is above 90 percent, you have too many programs open. If your disk usage is at 100 percent, a program may be reading or writing data heavily and slowing everything down.
-
-The "Startup" tab shows programs that automatically launch when you turn on your computer. Too many startup programs can make your computer take a long time to become usable after turning it on. You can right-click any program in this list and select "Disable" to stop it from launching at startup. This does not uninstall the program — it only prevents it from opening automatically.
-
-Task Manager also has a "Processes" tab that shows every single process running, including background services. Sort by memory or CPU to find which programs are using the most resources. If something you do not recognize is using a lot of resources, search for its name online before ending it — some processes are required by Windows to function properly.`,
-    steps: [
-      { title: 'Open Task Manager', content: 'Press Ctrl + Shift + Esc on your keyboard. Alternatively, right-click the taskbar at the bottom of your screen and select "Task Manager." The window will open showing your running applications.' },
-      { title: 'Close a frozen app', content: 'Look for any app that says "Not Responding." Click on it to select it, then click "End task" in the upper right corner. The frozen app will close, and you can reopen it fresh.' },
-      { title: 'Check the Performance tab', content: 'Click the "Performance" tab on the left side. You will see graphs showing CPU, Memory, Disk, and Network usage. If Memory is above 90 percent, close some programs to free up resources.' },
-      { title: 'Review the Processes tab', content: 'Click "Processes" to see everything running on your computer. Click the "Memory" or "CPU" column header to sort by usage. This helps you identify which programs are consuming the most resources.' },
-      { title: 'Manage startup programs', content: 'Click the "Startup apps" tab. Right-click any program you do not need at startup and select "Disable." This prevents it from launching automatically when you turn on your computer, which speeds up boot time.' },
-      { title: 'Use Task Manager regularly', content: 'Whenever your computer feels slow or an app freezes, open Task Manager first. It gives you a clear picture of what is happening and lets you take action without restarting your computer.' },
-    ],
-  },
 
   {
     slug: 'check-windows-updates',
@@ -5136,37 +4691,6 @@ The most important rule of backups: they only protect you if they are running. C
   },
 
   {
-    slug: 'use-snipping-tool-windows',
-    title: 'How to Use the Snipping Tool on Windows',
-    excerpt: 'Capture screenshots of your screen or specific areas using the Snipping Tool built into Windows — no extra software needed.',
-    category: 'windows' as any,
-    tags: ['windows', 'screenshots', 'snipping tool', 'screen capture', 'productivity'],
-    readTime: '5 min',
-    thumbnailEmoji: '✂️',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `The Snipping Tool lets you capture pictures of anything on your screen — the whole screen, a specific window, or a custom area you draw with your mouse. It is built into Windows 10 and Windows 11, so you do not need to download anything. Screenshots are useful for saving information, sharing what you see with others, or documenting error messages when you need tech support.
-
-The fastest way to open the Snipping Tool is to press Windows key + Shift + S on your keyboard. Your screen will dim slightly, and a small toolbar will appear at the top of the screen with four capture options: rectangular snip, freeform snip, window snip, and full-screen snip.
-
-Rectangular snip is the most commonly used option. Click and drag your mouse to draw a rectangle around the area you want to capture. As soon as you release the mouse button, the screenshot is copied to your clipboard and a notification appears in the bottom-right corner of your screen. Click the notification to open the Snipping Tool editor where you can annotate, highlight, or save the image.
-
-Window snip captures an entire window — hover your mouse over the window you want and click on it. Full-screen snip captures your entire screen at once. Freeform snip lets you draw any shape around the area you want to capture, though this is rarely needed.
-
-After capturing a snip, you can paste it directly into an email, document, or message by pressing Ctrl + V. The screenshot is stored on your clipboard, ready to paste. If you want to save it as a file, click the notification that appears after snipping, then click the save icon (the floppy disk) in the Snipping Tool editor. Choose where to save it and give it a name.
-
-You can also open the Snipping Tool as a standalone app by clicking the Start button and typing "Snipping Tool." The app version lets you set a delay before capturing (useful for capturing dropdown menus or tooltips that disappear when you click away) and includes basic markup tools for adding notes and highlights to your screenshots.`,
-    steps: [
-      { title: 'Open the Snipping Tool', content: 'Press Windows key + Shift + S on your keyboard. Your screen will dim and a toolbar will appear at the top with four capture modes. You can also search for "Snipping Tool" in the Start menu.' },
-      { title: 'Choose a capture mode', content: 'Select the type of snip from the toolbar: Rectangular (drag to select an area), Window (click a window), Full-screen (captures everything), or Freeform (draw any shape). Rectangular is the most common choice.' },
-      { title: 'Capture the screenshot', content: 'For a rectangular snip, click and drag your mouse to draw a rectangle around the area you want. Release the mouse button to capture. A notification will appear in the bottom-right corner.' },
-      { title: 'Edit or annotate the screenshot', content: 'Click the notification to open the Snipping Tool editor. Use the pen and highlighter tools to mark up the screenshot. You can add text, draw arrows, or highlight important areas.' },
-      { title: 'Save or share the screenshot', content: 'To save as a file, click the save icon (floppy disk) and choose a location. To paste directly into an email or document, press Ctrl + V — the screenshot is already on your clipboard.' },
-      { title: 'Use the delay feature for menus', content: 'Open the Snipping Tool app from the Start menu. Click the clock icon to set a 3, 5, or 10 second delay before capture. This gives you time to open a menu or tooltip before the screenshot is taken.' },
-    ],
-  },
-
-  {
     slug: 'pin-apps-to-taskbar-windows',
     title: 'How to Pin Apps to the Taskbar on Windows',
     excerpt: 'Keep your most-used programs on the Windows taskbar at the bottom of your screen for quick one-click access anytime.',
@@ -5233,39 +4757,6 @@ The Start menu also includes a search bar. If you cannot find an app, start typi
   // ═══════════════════════════════════════════
   // MAC ADVANCED (10 guides)
   // ═══════════════════════════════════════════
-
-  {
-    slug: 'use-activity-monitor-mac',
-    title: 'How to Use Activity Monitor on Mac',
-    excerpt: 'Check which apps are using the most resources on your Mac and close unresponsive programs using Activity Monitor.',
-    category: 'mac' as any,
-    tags: ['mac', 'activity monitor', 'performance', 'troubleshooting', 'memory'],
-    readTime: '6 min',
-    thumbnailEmoji: '📊',
-    publishedAt: '2026-04-16',
-    difficulty: 'Intermediate',
-    body: `Activity Monitor is the Mac equivalent of Task Manager on Windows. It shows you every process running on your Mac, how much CPU (processing power) and memory each one uses, and lets you force-close apps that have become unresponsive. It is a built-in tool that every Mac owner should know how to use.
-
-To open Activity Monitor, click the magnifying glass icon in the top-right corner of your screen (Spotlight Search) and type "Activity Monitor." Click the app when it appears in the search results. Alternatively, you can find it in your Applications folder under Utilities: open Finder, click Applications, then Utilities, then Activity Monitor.
-
-When Activity Monitor opens, you will see five tabs across the top: CPU, Memory, Energy, Disk, and Network. The CPU tab shows which apps and processes are using your processor. If your Mac is running slowly, look for any process using a very high percentage of CPU. The Memory tab shows how much RAM each app is using. If the "Memory Pressure" graph at the bottom is yellow or red, your Mac is running low on memory and you should close some apps.
-
-To close an unresponsive app, find it in the list, click on it to select it, and then click the "X" button in the upper-left corner of the Activity Monitor window (the octagonal stop sign icon). A dialog will ask if you want to "Quit" or "Force Quit." Try "Quit" first. If the app does not close, click "Force Quit" to force it to shut down immediately.
-
-The Energy tab is particularly useful for laptop users. It shows which apps are using the most battery power. If your MacBook's battery is draining faster than expected, check this tab to find energy-hungry apps and close them when you do not need them.
-
-You can sort any column by clicking its header. Click "% CPU" to see which processes use the most processor power, or click "Memory" to sort by RAM usage. This helps you quickly identify which apps are slowing down your computer.
-
-Be careful about force-quitting processes you do not recognize. Many background processes are required by macOS to run properly. If you are unsure about a process, search for its name online before closing it. Processes that start with "com.apple" are part of the Mac operating system and should generally be left alone.`,
-    steps: [
-      { title: 'Open Activity Monitor', content: 'Click the magnifying glass (Spotlight) in the top-right corner of your screen and type "Activity Monitor." Click the app to open it. You will see a list of all running processes.' },
-      { title: 'Check the CPU tab', content: 'The CPU tab shows which apps are using your processor. Click the "% CPU" column header to sort by usage. Look for any app using an unusually high percentage — this may be causing your Mac to slow down.' },
-      { title: 'Check the Memory tab', content: 'Click the "Memory" tab to see RAM usage. Look at the "Memory Pressure" graph at the bottom. Green means you are fine. Yellow or red means your Mac needs you to close some apps.' },
-      { title: 'Force-close an unresponsive app', content: 'Select the frozen app in the list, then click the octagonal "X" button in the upper-left corner of the window. Try "Quit" first, and if that does not work, click "Force Quit."' },
-      { title: 'Check the Energy tab', content: 'Click the "Energy" tab to see which apps use the most battery power on a MacBook. Close energy-hungry apps you are not actively using to extend your battery life.' },
-      { title: 'Use Activity Monitor for troubleshooting', content: 'Whenever your Mac feels slow, open Activity Monitor and sort by CPU or Memory to find the culprit. If a process you do not recognize is using a lot of resources, search for its name online before closing it.' },
-    ],
-  },
 
   {
     slug: 'use-time-machine-backup-mac',
@@ -5363,41 +4854,6 @@ If you find the Dock distracting, turn on "Automatically hide and show the Dock.
       { title: 'Change Dock size', content: 'Go to System Settings then Desktop & Dock. Use the "Size" slider to adjust icon size. Turn on "Magnification" if you want icons to enlarge when you hover over them.' },
       { title: 'Move the Dock position', content: 'In Desktop & Dock settings, find "Position on screen" and choose Bottom, Left, or Right. Placing the Dock on the side gives you more vertical space on your screen.' },
       { title: 'Auto-hide the Dock', content: 'In Desktop & Dock settings, toggle on "Automatically hide and show the Dock." The Dock will hide when not in use and reappear when you move your mouse to the screen edge.' },
-    ],
-  },
-
-  {
-    slug: 'use-spotlight-search-mac',
-    title: 'How to Use Spotlight Search on Mac',
-    excerpt: 'Find apps, files, emails, and information on your Mac in seconds using Spotlight Search — the fastest way to find anything.',
-    category: 'mac' as any,
-    tags: ['mac', 'spotlight', 'search', 'productivity', 'finder'],
-    readTime: '5 min',
-    thumbnailEmoji: '🔍',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Spotlight Search is one of the most powerful features on your Mac. It lets you find anything — apps, documents, emails, photos, system settings, dictionary definitions, and even do math calculations — all from one search bar. Once you start using Spotlight regularly, you may never go back to digging through folders to find things.
-
-To open Spotlight, press Command + Space on your keyboard. A search bar will appear in the center of your screen. Start typing what you are looking for. Results appear instantly as you type.
-
-To open an app, type the first few letters of its name. For example, type "saf" and Safari will appear as the top result. Press Enter to open it. This is often faster than clicking through the Dock or Applications folder, especially for apps you use less frequently.
-
-To find a file or document, type its name or part of its name. Spotlight searches file names, folder names, and even the text inside documents. If you remember that a document contained the phrase "vacation planning," type that into Spotlight and it will find any document containing those words.
-
-Spotlight can also do quick calculations and conversions. Type a math problem like "145 * 3" and the answer appears immediately. Type "50 USD in EUR" to convert currencies. Type "68 degrees Fahrenheit in Celsius" for temperature conversions. Type "5 miles in kilometers" for distance conversions.
-
-You can search for system settings too. If you want to change your display brightness, type "display" into Spotlight, and the Display settings option will appear. Click it to go directly to that settings page. This saves you from navigating through multiple menus in System Settings.
-
-Spotlight also searches your email, messages, contacts, calendar events, and web results. If you search for a person's name, it will show you their contact card, recent emails from them, and upcoming calendar events with them.
-
-To customize what Spotlight searches, go to System Settings then Spotlight (or Siri & Spotlight). You can uncheck categories you do not want to appear in search results. For example, if you never want to see web results in Spotlight, uncheck "Siri Suggestions" or "Websites."`,
-    steps: [
-      { title: 'Open Spotlight', content: 'Press Command + Space on your keyboard. A search bar will appear in the center of your screen. You can also click the magnifying glass icon in the top-right corner of the menu bar.' },
-      { title: 'Search for apps', content: 'Type the first few letters of any app name and press Enter to open it. For example, type "pho" to find Photos, or "cal" to find Calendar. This is the fastest way to launch apps.' },
-      { title: 'Find files and documents', content: 'Type a file name or words you remember being in the document. Spotlight searches both file names and content inside documents. Click on a result to open it, or press Command + Enter to show it in Finder.' },
-      { title: 'Do calculations and conversions', content: 'Type math problems like "250 / 4" for instant answers. Type "100 USD in GBP" for currency conversion, or "5 miles in km" for unit conversions. Results appear right in the search bar.' },
-      { title: 'Search for settings', content: 'Type the name of any system setting, like "Wi-Fi," "display," or "keyboard." Spotlight shows the matching settings page so you can click to go directly there.' },
-      { title: 'Customize Spotlight categories', content: 'Go to System Settings then Siri & Spotlight. Uncheck any categories you do not want in search results. This keeps Spotlight focused on the types of results most useful to you.' },
     ],
   },
 
