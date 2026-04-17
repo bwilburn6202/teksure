@@ -1,0 +1,360 @@
+import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { SEOHead } from '@/components/SEOHead';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
+import { guides, categoryLabels } from '@/data/guides';
+import { Brain, Search, ExternalLink, Sparkles, BookOpen, ArrowRight, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
+
+// Stop words to ignore when scoring
+const STOP_WORDS = new Set(['how', 'to', 'a', 'the', 'is', 'my', 'can', 'i', 'do', 'what', 'why', 'when', 'where', 'who', 'which', 'are', 'was', 'be', 'been', 'have', 'has', 'had', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'shall', 'not', 'no', 'on', 'in', 'at', 'by', 'for', 'with', 'about', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'if', 'then', 'that', 'this', 'it', 'its', 'of', 'or', 'and', 'but', 'so', 'yet', 'nor', 'get', 'set', 'use', 'using', 'make', 'need', 'want', 'help', 'me', 'you', 'your', 'my', 'our', 'their', 'an']);
+
+// Synonym expansions for common queries
+const SYNONYMS: Record<string, string[]> = {
+  'slow': ['performance', 'speed', 'lag', 'fast', 'sluggish', 'freeze', 'freezing'],
+  'wifi': ['internet', 'wireless', 'network', 'connection', 'connect', 'router'],
+  'password': ['login', 'signin', 'credentials', 'forgot', 'reset', 'locked'],
+  'scam': ['fraud', 'phishing', 'suspicious', 'fake', 'trick', 'stolen'],
+  'photo': ['picture', 'image', 'camera', 'screenshot', 'gallery'],
+  'phone': ['iphone', 'android', 'mobile', 'smartphone', 'device', 'samsung', 'galaxy'],
+  'email': ['gmail', 'outlook', 'mail', 'inbox', 'message'],
+  'update': ['upgrade', 'install', 'download', 'version', 'latest'],
+  'backup': ['save', 'copy', 'restore', 'cloud', 'storage', 'icloud', 'google'],
+  'print': ['printer', 'printing', 'paper', 'document'],
+  'virus': ['malware', 'hack', 'security', 'infected', 'safe'],
+  'youtube': ['video', 'watch', 'stream', 'netflix', 'hulu'],
+  'medicare': ['medicaid', 'insurance', 'health', 'benefits', 'social security'],
+  'bank': ['banking', 'account', 'money', 'payment', 'zelle', 'venmo', 'cash'],
+};
+
+function extractKeywords(query: string): string[] {
+  const words = query.toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length > 2 && !STOP_WORDS.has(w));
+
+  const expanded = new Set(words);
+  for (const word of words) {
+    const syns = SYNONYMS[word] || [];
+    syns.forEach(s => expanded.add(s));
+    // Also add partial matches
+    Object.entries(SYNONYMS).forEach(([key, vals]) => {
+      if (vals.includes(word)) expanded.add(key);
+    });
+  }
+  return Array.from(expanded);
+}
+
+function scoreGuide(guide: typeof guides[0], keywords: string[]): number {
+  if (keywords.length === 0) return 0;
+  let score = 0;
+  const title = guide.title.toLowerCase();
+  const excerpt = guide.excerpt.toLowerCase();
+  const tags = guide.tags.map(t => t.toLowerCase()).join(' ');
+  const body = (guide.body || '').toLowerCase().slice(0, 500);
+  const category = (categoryLabels[guide.category] || '').toLowerCase();
+
+  for (const kw of keywords) {
+    if (title.includes(kw)) score += 4;
+    if (tags.includes(kw)) score += 3;
+    if (category.includes(kw)) score += 2;
+    if (excerpt.includes(kw)) score += 1.5;
+    if (body.includes(kw)) score += 0.5;
+  }
+  // Bonus for multiple keyword hits
+  const hitCount = keywords.filter(kw => title.includes(kw) || tags.includes(kw) || excerpt.includes(kw)).length;
+  if (hitCount >= 2) score *= 1.3;
+  if (hitCount >= 3) score *= 1.5;
+  return score;
+}
+
+function findRelevantGuides(query: string, count = 5) {
+  const keywords = extractKeywords(query);
+  if (keywords.length === 0) return [];
+
+  return guides
+    .map(g => ({ guide: g, score: scoreGuide(g, keywords) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
+    .map(({ guide }) => guide);
+}
+
+async function queryOllama(question: string, contextGuides: typeof guides): Promise<string | null> {
+  try {
+    const context = contextGuides.slice(0, 3).map(g =>
+      `GUIDE: ${g.title}\nURL: https://teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
+    ).join('\n\n---\n\n');
+
+    const res = await fetch('http://localhost:11434/api/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: AbortSignal.timeout(15000),
+      body: JSON.stringify({
+        model: 'llama3.2:1b',
+        prompt: `You are TekSure, a friendly tech helper for everyday people and seniors. Answer the question below using ONLY the provided guide content. Keep your answer to 2-3 sentences. Always mention the most relevant guide URL.\n\nGuide content:\n${context}\n\nQuestion: ${question}\n\nAnswer:`,
+        stream: false,
+      }),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.response || null;
+  } catch {
+    return null;
+  }
+}
+
+const SUGGESTED_QUESTIONS = [
+  'How do I connect to WiFi?',
+  'My computer is running slow',
+  'How do I spot a scam email?',
+  'How do I set up two-factor authentication?',
+  'How do I back up my phone?',
+  'How do I check Medicare online?',
+  'How do I use Zoom for video calls?',
+  'How do I freeze my credit?',
+];
+
+interface SearchResult {
+  query: string;
+  guides: typeof guides;
+  aiAnswer: string | null;
+  ollamaAvailable: boolean;
+}
+
+export default function BrainPage() {
+  const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<SearchResult | null>(null);
+  const [ollamaStatus, setOllamaStatus] = useState<'unknown' | 'online' | 'offline'>('unknown');
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Check if Ollama is running
+  useEffect(() => {
+    fetch('http://localhost:11434/api/tags', { signal: AbortSignal.timeout(2000) })
+      .then(() => setOllamaStatus('online'))
+      .catch(() => setOllamaStatus('offline'));
+  }, []);
+
+  async function handleSearch(q: string) {
+    if (!q.trim()) return;
+    setLoading(true);
+    setQuery(q);
+
+    const matchedGuides = findRelevantGuides(q, 5);
+    let aiAnswer: string | null = null;
+
+    if (ollamaStatus === 'online' && matchedGuides.length > 0) {
+      aiAnswer = await queryOllama(q, matchedGuides);
+    }
+
+    setResult({ query: q, guides: matchedGuides, aiAnswer, ollamaAvailable: ollamaStatus === 'online' });
+    setLoading(false);
+  }
+
+  return (
+    <>
+      <SEOHead
+        title="TekSure Brain — Ask Anything About Technology"
+        description="Ask TekSure any tech question and instantly find the right guide. Powered by our library of 1,100+ guides. Works offline — no API needed."
+        path="/brain"
+      />
+      <Navbar />
+      <main className="min-h-screen bg-background">
+        {/* Header */}
+        <section className="border-b border-border py-16 text-center">
+          <div className="container max-w-2xl">
+            <Brain className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h1 className="text-3xl md:text-4xl font-bold mb-3">TekSure Brain</h1>
+            <p className="text-muted-foreground text-lg mb-2">
+              Ask any tech question. Get answers from our library of {guides.length.toLocaleString()}+ guides.
+            </p>
+            <p className="text-xs text-muted-foreground mb-8 flex items-center justify-center gap-1">
+              {ollamaStatus === 'online' ? (
+                <><CheckCircle className="h-3 w-3 text-green-500" /> Ollama connected — AI answers enabled</>
+              ) : ollamaStatus === 'offline' ? (
+                <><AlertCircle className="h-3 w-3 text-amber-500" /> Ollama not detected — using guide search only</>
+              ) : (
+                <><Loader2 className="h-3 w-3 animate-spin" /> Checking for local AI...</>
+              )}
+            </p>
+
+            {/* Search */}
+            <form onSubmit={e => { e.preventDefault(); handleSearch(query); }} className="flex gap-2 max-w-xl mx-auto mb-6">
+              <div className="relative flex-1">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
+                <Input
+                  ref={inputRef}
+                  placeholder="Ask anything — e.g. 'how do I back up my phone?'"
+                  className="pl-11 h-12 rounded-2xl text-sm"
+                  value={query}
+                  onChange={e => setQuery(e.target.value)}
+                />
+              </div>
+              <Button type="submit" disabled={loading} className="h-12 px-6 rounded-2xl gap-2 shrink-0">
+                {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <><Brain className="h-4 w-4" /> Ask</>}
+              </Button>
+            </form>
+
+            {/* Suggested questions */}
+            {!result && (
+              <div className="flex flex-wrap justify-center gap-2">
+                {SUGGESTED_QUESTIONS.map(q => (
+                  <button
+                    key={q}
+                    onClick={() => { setQuery(q); handleSearch(q); }}
+                    className="px-3 py-1.5 rounded-full bg-muted border border-border text-xs text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Results */}
+        <div className="container max-w-3xl py-12 px-4">
+          {loading && (
+            <div className="text-center py-20">
+              <Loader2 className="h-8 w-8 animate-spin text-primary mx-auto mb-3" />
+              <p className="text-muted-foreground">Searching {guides.length.toLocaleString()}+ guides…</p>
+            </div>
+          )}
+
+          {result && !loading && (
+            <div className="space-y-6">
+              {/* AI Answer (if Ollama available) */}
+              {result.aiAnswer && (
+                <Card className="border-primary/20 bg-primary/[0.03]">
+                  <CardContent className="p-5">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Sparkles className="h-4 w-4 text-primary" />
+                      <span className="text-sm font-semibold text-primary">AI Answer</span>
+                      <Badge variant="outline" className="text-xs ml-auto">Powered by Ollama</Badge>
+                    </div>
+                    <p className="text-sm leading-relaxed">{result.aiAnswer}</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Guide results */}
+              <div>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {result.guides.length > 0
+                    ? `Found ${result.guides.length} relevant guide${result.guides.length !== 1 ? 's' : ''} for "${result.query}"`
+                    : `No guides found for "${result.query}"`}
+                </p>
+
+                {result.guides.length === 0 ? (
+                  <div className="text-center py-12 rounded-2xl border border-border bg-muted/30">
+                    <p className="text-2xl mb-3">🤔</p>
+                    <p className="font-medium mb-2">No exact matches found</p>
+                    <p className="text-sm text-muted-foreground mb-4">Try different words or browse all guides.</p>
+                    <Button asChild variant="outline" className="rounded-xl gap-2">
+                      <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse all guides</Link>
+                    </Button>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    {result.guides.map((guide) => (
+                      <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
+                        <Card className="hover:border-primary/30 hover:shadow-sm transition-all">
+                          <CardContent className="p-4">
+                            <div className="flex items-start gap-4">
+                              <div className="text-2xl shrink-0 mt-0.5">{guide.thumbnailEmoji}</div>
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                                  <Badge variant="secondary" className="text-xs">{categoryLabels[guide.category]}</Badge>
+                                  <span className="text-xs text-muted-foreground flex items-center gap-1">
+                                    <Clock className="h-3 w-3" />{guide.readTime}
+                                  </span>
+                                </div>
+                                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">{guide.title}</h3>
+                                <p className="text-xs text-muted-foreground line-clamp-2">{guide.excerpt}</p>
+                              </div>
+                              <ChevronRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary shrink-0 mt-1 transition-colors" />
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Try another search */}
+              <div className="pt-4 border-t border-border">
+                <p className="text-xs text-muted-foreground mb-3 text-center">Try another question</p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {SUGGESTED_QUESTIONS.filter(q => q !== result.query).slice(0, 4).map(q => (
+                    <button
+                      key={q}
+                      onClick={() => { setQuery(q); handleSearch(q); }}
+                      className="px-3 py-1.5 rounded-full bg-muted border border-border text-xs text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+                    >
+                      {q}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Ollama setup card — shown when offline */}
+          {ollamaStatus === 'offline' && (
+            <Card className="mt-8 border-amber-200/60 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20">
+              <CardContent className="p-5">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl shrink-0">🦙</span>
+                  <div>
+                    <h3 className="font-semibold text-sm mb-1">Enable AI Answers with Ollama</h3>
+                    <p className="text-xs text-muted-foreground mb-3">
+                      Install Ollama to get AI-generated answers powered by a local LLM — no internet required, completely private.
+                    </p>
+                    <div className="space-y-1.5 text-xs font-mono bg-background rounded-lg p-3 border border-border mb-3">
+                      <p># 1. Install Ollama</p>
+                      <p className="text-primary">brew install ollama</p>
+                      <p className="mt-2"># 2. Start Ollama</p>
+                      <p className="text-primary">ollama serve</p>
+                      <p className="mt-2"># 3. Pull a small model</p>
+                      <p className="text-primary">ollama pull llama3.2:1b</p>
+                    </div>
+                    <a
+                      href="https://ollama.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-primary font-medium hover:underline"
+                    >
+                      Download Ollama <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Info section */}
+          <div className="mt-12 grid sm:grid-cols-3 gap-4 text-center">
+            {[
+              { emoji: '🔒', title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
+              { emoji: '⚡', title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
+              { emoji: '🦙', title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
+            ].map(item => (
+              <div key={item.title} className="p-4 rounded-xl border border-border bg-muted/30">
+                <div className="text-2xl mb-2">{item.emoji}</div>
+                <h3 className="font-semibold text-sm mb-1">{item.title}</h3>
+                <p className="text-xs text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}

@@ -188,6 +188,7 @@ const AccessibilityNeedsFinder = lazy(() => import("./pages/tools/AccessibilityN
 const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGuide"));
 const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
+const Brain                  = lazy(() => import("./pages/Brain"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -319,6 +320,7 @@ const AppContent = () => {
           <Route path="/quick-fixes" element={<QuickFixes />} />
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/brain" element={<Brain />} />
           <Route path="/tools/password-strength" element={<PasswordStrength />} />
           <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
           <Route path="/tools/health-check" element={<HealthCheck />} />

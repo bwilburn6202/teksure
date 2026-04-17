@@ -60,6 +60,7 @@ export function Navbar() {
   ];
 
   const learnLinks = [
+    { to: '/brain', label: 'TekSure Brain', icon: BookOpen, desc: 'Ask any tech question' },
     { to: '/glossary', label: 'Glossary', icon: BookOpen, desc: 'Plain-English terms' },
     { to: '/weekly-tips', label: 'Weekly Tips', icon: Newspaper, desc: 'One tip every Sunday' },
     { to: '/ai-tutor', label: 'AI Tutor', icon: BookOpen, desc: 'Learn at your pace' },

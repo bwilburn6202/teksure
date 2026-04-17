@@ -2,8 +2,8 @@
 
 > **Vision:** TekSure becomes the single destination where any non-technical person in America can find the answer to any technology question, get human help when they need it, and grow their confidence — all for free.
 
-**Last updated:** 2026-04-15
-**Current state:** 829 guides, 39 tools, 65+ pages, forum, booking system, AI tutor, payments live
+**Last updated:** 2026-04-16
+**Current state:** 1,117+ guides, 65+ tools, 80+ pages, 19 categories
 
 ---
 
@@ -421,16 +421,26 @@
 ## IX. IMPLEMENTATION PRIORITY
 
 ### Phase 1: Foundation (Now — May 2026)
-- [ ] Spanish language infrastructure + top 50 guides translated
-- [ ] Government & civic tech guides (Medicare, SSA, IRS — 20 guides)
-- [ ] Financial tech guides (banking apps, Zelle/Venmo — 15 guides)
-- [ ] Smart home guides (Alexa, Google Home, smart TV — 15 guides)
-- [ ] Scam Simulator tool
-- [ ] Privacy Audit tool
-- [ ] New Phone Setup Wizard
+- [x] Spanish language infrastructure + top 50 guides translated
+- [x] Government & civic tech guides (Medicare, SSA, IRS — 20+ guides done)
+- [x] Financial tech guides (banking apps, Zelle/Venmo — 15+ guides done)
+- [x] Smart home guides (Alexa, Google Home, smart TV — 15+ guides done)
+- [x] Scam Simulator tool
+- [x] Privacy Audit tool
+- [x] New Phone Setup Wizard
 - [ ] Live chat MVP (text-based technician chat)
 - [ ] Weekly email newsletter launch
-- [ ] Print-friendly PDF export for guides
+- [x] Print-friendly PDF export for guides (Printable Guide Packs — 12 packs)
+
+### Phase 1b: Shipped April 16, 2026
+- [x] Homepage redesigned — Tools & Utilities accordion, Guides & Tutorials category grid, Resources section
+- [x] Navigation mega-menu — "Resources" dropdown with Safety/Learn/Support columns
+- [x] Live HackerNews API news feed on /news page
+- [x] Spanish guides landing page at /guias
+- [x] Official source links on every guide page (18 categories → 3-4 authoritative links each)
+- [x] Sources & Credits page at /sources (31 attributed sources)
+- [x] Tools page grouped by category
+- [x] Changelog updated
 
 ### Phase 2: Growth (June — August 2026)
 - [ ] Mobile app (React Native) — iOS first
@@ -470,12 +480,46 @@
 
 ---
 
-## X. SUCCESS METRICS
+## X. NEW OPPORTUNITIES — Added April 2026
+
+### A. TekSure Brain — Local AI Knowledge Engine
+**Vision:** Every visitor can ask TekSure any tech question and get an instant answer sourced directly from our guide library — with no external API calls required.
+
+**Implementation:**
+1. **Browser-based semantic search** — Keywords + scoring over 1,117+ guides, returns top 5 matching guides with links
+2. **Local Ollama integration** — When user has Ollama running locally, full RAG with small LLM (llama3.2:1b or phi3:mini) synthesizes answers from guide content
+3. **Knowledge base export** — All guides exported to markdown files at `/brain/guides/` for offline use
+4. **CLI brain tool** — `local-brain/query.mjs` lets developers query the full guide library from command line
+
+**Why this matters:** Zero API costs, works completely offline, answers questions with our verified content, not hallucinated responses.
+
+### B. Audio Guide Layer
+- "Read aloud" button on every guide using Web Speech API (no cost, built into browsers)
+- Podcast-style weekly tip audio generated from newsletter content
+
+### C. Programmatic SEO Pages
+- Auto-generate `/how-to/[device]/[task]` pages for 1,000+ device+task combinations
+- Example: `/how-to/iphone-14/connect-wifi` — targets long-tail search traffic
+
+### D. Free Tech Resource Hub (Open Directory)
+- Curated directory of free government, nonprofit, and community tech resources
+- Organized by: Seniors, Veterans, Low-income, Non-English speakers
+- Filters by state/region
+- Links to: FCC Lifeline, ConnectingKids, EveryoneOn, PCs for People
+
+### E. "Tech Problem of the Week" Feature
+- Crowdsourced from forum posts and FTC scam reports
+- Featured prominently on homepage every week
+- Builds SEO through timely, specific content
+
+---
+
+## XI. SUCCESS METRICS
 
 | Metric | Current | 6-Month Target | 12-Month Target |
 |--------|---------|----------------|-----------------|
-| Total guides | 829 | 1,500 | 2,500 |
-| Interactive tools | 39 | 60 | 100 |
+| Total guides | 1,117 | 1,500 | 2,500 |
+| Interactive tools | 65 | 80 | 100 |
 | Monthly visitors | TBD | 50,000 | 250,000 |
 | Registered users | TBD | 5,000 | 25,000 |
 | Forum posts/week | TBD | 50 | 500 |

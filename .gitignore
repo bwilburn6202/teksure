@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 coverage/
+
+# TekSure Brain — generated knowledge base files (large)
+public/brain/guides/
+public/brain/knowledge-base.json
