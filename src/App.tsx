@@ -209,6 +209,26 @@ const PhonePlanComparator    = lazy(() => import("./pages/tools/PhonePlanCompara
 const RobocallBlocker        = lazy(() => import("./pages/tools/RobocallBlocker"));
 const PasswordLeakChecker    = lazy(() => import("./pages/tools/PasswordLeakChecker"));
 const SubscriptionAuditor    = lazy(() => import("./pages/tools/SubscriptionAuditor"));
+const PrivacyHub             = lazy(() => import("./pages/PrivacyHub"));
+const DataBrokerRemoval      = lazy(() => import("./pages/DataBrokerRemoval"));
+const VeteransTechHub        = lazy(() => import("./pages/VeteransTechHub"));
+const EmergencyTech          = lazy(() => import("./pages/EmergencyTech"));
+const KidsOnlineSafety       = lazy(() => import("./pages/KidsOnlineSafety"));
+const DigitalDetox           = lazy(() => import("./pages/DigitalDetox"));
+const MovingTech             = lazy(() => import("./pages/MovingTech"));
+const RetirementTech         = lazy(() => import("./pages/RetirementTech"));
+const NewGrandparentTech     = lazy(() => import("./pages/NewGrandparentTech"));
+const AskTekSure             = lazy(() => import("./pages/AskTekSure"));
+const SuccessStories         = lazy(() => import("./pages/SuccessStories"));
+const TechProblemOfWeek      = lazy(() => import("./pages/TechProblemOfWeek"));
+const UrlSafetyChecker       = lazy(() => import("./pages/tools/UrlSafetyChecker"));
+const QrCodeExplainer        = lazy(() => import("./pages/tools/QrCodeExplainer"));
+const InternetSpeedNeeds     = lazy(() => import("./pages/tools/InternetSpeedNeeds"));
+const BatteryOptimizer       = lazy(() => import("./pages/tools/BatteryOptimizer"));
+const PasswordPhraseGenerator = lazy(() => import("./pages/tools/PasswordPhraseGenerator"));
+const DigitalWillTemplate    = lazy(() => import("./pages/tools/DigitalWillTemplate"));
+const WifiCoveragePlanner    = lazy(() => import("./pages/tools/WifiCoveragePlanner"));
+const StorageOptimizer       = lazy(() => import("./pages/tools/StorageOptimizer"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -441,6 +461,26 @@ const AppContent = () => {
           <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
           <Route path="/tools/password-leak-checker" element={<PasswordLeakChecker />} />
           <Route path="/tools/subscription-auditor" element={<SubscriptionAuditor />} />
+          <Route path="/privacy-hub" element={<PrivacyHub />} />
+          <Route path="/data-broker-removal" element={<DataBrokerRemoval />} />
+          <Route path="/veterans-tech-hub" element={<VeteransTechHub />} />
+          <Route path="/emergency-tech" element={<EmergencyTech />} />
+          <Route path="/kids-online-safety" element={<KidsOnlineSafety />} />
+          <Route path="/digital-detox" element={<DigitalDetox />} />
+          <Route path="/moving-tech" element={<MovingTech />} />
+          <Route path="/retirement-tech" element={<RetirementTech />} />
+          <Route path="/new-grandparent-tech" element={<NewGrandparentTech />} />
+          <Route path="/ask" element={<AskTekSure />} />
+          <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
+          <Route path="/tools/url-safety-checker" element={<UrlSafetyChecker />} />
+          <Route path="/tools/qr-code-explainer" element={<QrCodeExplainer />} />
+          <Route path="/tools/internet-speed-needs" element={<InternetSpeedNeeds />} />
+          <Route path="/tools/battery-optimizer" element={<BatteryOptimizer />} />
+          <Route path="/tools/password-phrase-generator" element={<PasswordPhraseGenerator />} />
+          <Route path="/tools/digital-will-template" element={<DigitalWillTemplate />} />
+          <Route path="/tools/wifi-coverage-planner" element={<WifiCoveragePlanner />} />
+          <Route path="/tools/storage-optimizer" element={<StorageOptimizer />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
