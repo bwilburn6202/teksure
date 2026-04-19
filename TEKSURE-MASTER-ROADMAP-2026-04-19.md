@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 34** (486 guides added in batches 12-34, 2026-04-19) — total ~1,755 guides
-- Next: **Batch 35** → **Batch 36** → ... (no upper limit)
+- Last completed: **Batch 35** (506 guides added in batches 12-35, 2026-04-19) — total ~1,775 guides
+- Next: **Batch 36** → **Batch 37** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -113,7 +113,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 32** | **20** | **2026-04-19** | Medisafe medication reminders, SilverSneakers fitness, Life360 family location, Microsoft To Do, Grubhub, Amazon Fresh, VA.gov, spam call blocking iPhone/Android, Costco app, Target Circle, CVS ExtraCare, Walgreens myWalgreens, digital driver license, Apple TV+, Max streaming, Windows clipboard history, scan docs Android, iPhone satellite messaging |
 | **Batch 33** | **20** | **2026-04-19** | Vizio SmartCast, Google TV setup, iPhone StandBy mode, lock screen customize, Control Center customize, Dynamic Island, iPhone Translate, Android translate, Chrome tips, Google Home setup, Windows 11 widgets, Mac Notification Center, Chrome profiles, CGM diabetes guide, Apple Watch setup, Wear OS smartwatch, iMessage games, AirDrop tips, Bixby Samsung, Windows 11 battery saver |
 | **Batch 34** | **20** | **2026-04-19** | Grandparent scam, gift card scam, IRS scam, Social Security scam, Medicare fraud, utility scam, lottery scam, FTC fraud reporting, Apple ID security, Google account security, Microsoft account security, Instagram privacy, LinkedIn privacy, Google Password Manager, 1Password, LastPass, AccuWeather, Lumosity, weather radar |
-| **Total** | **~1,755** | | |
+| **Batch 35** | **20** | **2026-04-19** | Android Live Transcribe, iPhone Guided Access, Android guest mode, Android data limit, iPhone cellular data, Face ID app lock, Android app lock, iPhone Reachability, shake to undo & hidden gestures, Memoji guide, iPhone keyboard tips, Android Gboard tips, Gmail Smart Compose, Mac Dictation, Google Docs voice typing, Merlin Bird ID, Strava fitness, Android Personal Safety app |
+| **Total** | **~1,775** | | |
 
 ---
 
