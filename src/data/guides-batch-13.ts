@@ -563,7 +563,7 @@ export const guidesBatch13: Guide[] = [
     steps: [
       {
         title: 'Turn on Hey Siri',
-        content: 'Go to Settings → Siri & Search → turn on "Listen for 'Hey Siri.'" If prompted, speak a few phrases so Siri learns your voice. Once enabled, you can activate Siri at any time — even when your phone is locked and face-down on a table — by saying "Hey Siri" out loud.',
+        content: 'Go to Settings → Siri & Search → turn on "Listen for \'Hey Siri.\'" If prompted, speak a few phrases so Siri learns your voice. Once enabled, you can activate Siri at any time — even when your phone is locked and face-down on a table — by saying "Hey Siri" out loud.',
         tip: 'You can also activate Siri by pressing and holding the side button (on Face ID iPhones) or the Home button (on older iPhones with a round button at the bottom).',
       },
       {
