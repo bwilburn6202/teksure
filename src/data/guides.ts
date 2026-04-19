@@ -13075,8 +13075,9 @@ import { guidesBatch30 } from './guides-batch-30';
 import { guidesBatch31 } from './guides-batch-31';
 import { guidesBatch32 } from './guides-batch-32';
 import { guidesBatch33 } from './guides-batch-33';
+import { guidesBatch34 } from './guides-batch-34';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {
