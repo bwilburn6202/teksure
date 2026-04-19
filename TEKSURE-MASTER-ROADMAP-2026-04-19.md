@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 21** (216 guides added in batches 12-21, 2026-04-19) — total ~1,485 guides
-- Next: **Batch 22** → **Batch 23** → ... (no upper limit)
+- Last completed: **Batch 22** (238 guides added in batches 12-22, 2026-04-19) — total ~1,507 guides
+- Next: **Batch 23** → **Batch 24** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -100,7 +100,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 19** | **22** | **2026-04-19** | Wireless charger setup, Tile tracker, suspicious login response, Venmo/Cash App scam, Android font size, phone captions, read PDF on phone, scan receipts, home inventory, digital emergency prep, MagSafe charging, Apple Watch ECG, doctor visit notes, phone translation, senior online discounts, Google Photos memories, Apple Maps share ETA, report scam to FTC/FBI, Windows night light, Mac Dock, password sharing, Siri hands-free |
 | **Batch 20** | **22** | **2026-04-19** | OneDrive setup, Microsoft Copilot, Apple Calendar, Apple Wallet, Google Wallet, Find My Android, new Windows laptop setup, recover deleted files (Win+Mac), malware removal, Alexa Guard, iPhone/Android charging fix, free internet for seniors, block phone numbers, Samsung Pay, video calls on smart TV, iCloud Photos, Microsoft 365 intro, Google Photos auto-backup, AARP tech benefits, silence unknown callers |
 | **Batch 21** | **22** | **2026-04-19** | Recycle/donate old phone, iMessage vs SMS, Kindle Paperwhite setup, Wyze camera, video call lighting/audio tips, Amazon Music, Apple Books, Google Play Books, Apple Podcasts, iHeartRadio, Android vision accessibility, Jitterbug/Lively phone, internet speed test, fix slow internet, print photos at Walgreens/CVS, force restart iPhone, iPhone battery health, clear browser cache, force close frozen app, frozen Windows fix, photo collage, Amazon returns |
-| **Total** | **~1,485** | | |
+| **Batch 22** | **22** | **2026-04-19** | Facebook Marketplace selling, AirPlay to TV, Android cast to TV, Google account privacy, Apple ID management, fax from phone, telehealth prep, health symptom tracker, Fitbit vs Apple Watch, Apple News, Google News, Google Alerts, iPhone home screen organize, autocorrect settings, soundbar setup, replace Medicare card, check Social Security benefits online, power of attorney, digital grocery coupons, Medicare Parts A/B/C/D explained |
+| **Total** | **~1,507** | | |
 
 ---
 
