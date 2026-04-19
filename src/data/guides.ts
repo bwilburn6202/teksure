@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'accessibility' | 'passwords-accounts' | 'photos-files' | 'devices-maintenance';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -76,6 +76,10 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'communication': 'Communication',
   'life-transitions': 'Life Transitions',
   'internet-connectivity': 'Internet & WiFi',
+  'accessibility': 'Accessibility',
+  'passwords-accounts': 'Passwords & Accounts',
+  'photos-files': 'Photos & Files',
+  'devices-maintenance': 'Device Maintenance',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {

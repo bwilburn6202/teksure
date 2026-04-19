@@ -48,12 +48,64 @@ const BANNED_WORDS = [
   "it's easy", 'its easy',
 ];
 
-/** Allowed TekSure Guide categories (match src/data/guides.ts) */
+/**
+ * Allowed TekSure Guide category slugs — mirrors `GuideCategory` union in
+ * src/data/guides.ts:1. Keep this list in sync with that type. The adjacent
+ * `CATEGORY_GUIDE` is sent to Claude so it picks the right slug.
+ */
 const VALID_CATEGORIES = [
-  'Safety', 'Essential Skills', 'Tips & Tricks', 'AI', 'Apps',
-  'Health Tech', 'How-To', 'Money', 'Smart Home',
-  'Internet & WiFi', 'Accessibility', 'Life Transitions',
+  'windows-guides',
+  'mac-guides',
+  'essential-skills',
+  'tips-tricks',
+  'ai-guides',
+  'ai-advanced',
+  'safety-guides',
+  'how-to',
+  'app-guides',
+  'health-tech',
+  'phone-guides',
+  'social-media',
+  'government-civic',
+  'financial-tech',
+  'smart-home',
+  'entertainment',
+  'communication',
+  'life-transitions',
+  'internet-connectivity',
+  'accessibility',
+  'passwords-accounts',
+  'photos-files',
+  'devices-maintenance',
 ] as const;
+
+type GuideCategory = (typeof VALID_CATEGORIES)[number];
+
+/** Human-readable hint shown to Claude so the slug choice is unambiguous. */
+const CATEGORY_GUIDE = `
+  safety-guides         → scams, privacy, security, 2FA, phishing, fraud recovery
+  phone-guides          → iPhone, Android, smartphone, tablet, iPad basics
+  windows-guides        → Windows 10/11, PC setup, Microsoft account
+  mac-guides            → macOS, MacBook, Apple computer
+  essential-skills      → typing, browsing basics, intro guides
+  tips-tricks           → productivity shortcuts, quick wins
+  ai-guides             → ChatGPT, Gemini, Claude basics
+  ai-advanced           → prompt engineering, agents, power features
+  how-to                → step-by-step task guide not in another bucket
+  app-guides            → specific app walkthroughs (Zoom, WhatsApp, etc.)
+  health-tech           → telehealth, medical apps, wearables, MyChart
+  social-media          → Facebook, Instagram, TikTok use
+  government-civic      → SSA, Medicare, IRS, FCC Lifeline, voting
+  financial-tech        → online banking, Zelle, Venmo, PayPal
+  smart-home            → Alexa, Nest, Ring, thermostats, smart plugs
+  entertainment         → streaming, Netflix, Roku, music, podcasts
+  communication         → email clients, messaging, video calling
+  life-transitions      → digital legacy, moving, estate planning
+  internet-connectivity → Wi-Fi, router, ISP, connection troubleshooting
+  accessibility         → screen readers, magnifier, captions, voice control, hearing aids
+  passwords-accounts    → password managers, 2FA, passkeys, account recovery
+  photos-files          → photo backup, cloud storage, file organization, iCloud/Drive
+  devices-maintenance   → battery life, storage cleanup, OS updates, slow device fixes`;
 
 const VALID_TARGET_OS = [
   'windows', 'mac', 'iphone', 'android',
@@ -82,25 +134,44 @@ interface ScrapedArticle {
 type VerificationStatus = 'verified' | 'partial' | 'rejected';
 type Difficulty = 'Beginner' | 'Intermediate' | 'Advanced';
 
+/**
+ * Shape that Claude must return. Mirrors the public `Guide` type in
+ * src/data/guides.ts plus pipeline-only fields (verification_*, attribution).
+ * Keep this shape drop-in assignable to `Guide` so publish-guide can import
+ * it without a mapping layer.
+ */
 interface ClaudeGuide {
+  // Pipeline metadata (stripped on publish)
   verification_status: VerificationStatus;
   verification_notes: string;
-  slug: string;
-  title: string;
-  excerpt: string;
-  emoji: string;
-  category: string;
-  tags: string[];
-  difficulty: Difficulty;
-  readTime: string;                 // e.g. "3 min"
-  target_os: string[];
-  body: string;
-  steps: Array<{ title: string; description: string }>;
   attribution: {
     source_name: string;
     source_url: string;
     author?: string | null;
   };
+
+  // Guide-type fields (must match src/data/guides.ts:38-57)
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: GuideCategory;
+  tags: string[];
+  readTime: string;                    // e.g. "3 min"
+  thumbnailEmoji: string;
+  videoUrl?: string;
+  publishedAt: string;                 // ISO date
+  lastVerifiedAt: string;              // ISO date — when fact-check ran
+  difficulty: Difficulty;
+  body: string;
+  steps: Array<{
+    title: string;
+    content: string;
+    tip?: string;
+    warning?: string;
+  }>;
+
+  // Pipeline-only (not on Guide)
+  target_os: string[];
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -207,31 +278,58 @@ simply · just · obviously · seamless · cutting-edge · leverage · utilize
 "Pro Tip" — use "Quick Tip" instead
 "it's easy" — readers are learning; don't minimize their effort
 
+════════════════════ CATEGORY SLUG REFERENCE ════════════════════
+Pick the single best slug. Slug (not the human label) goes in "category".
+${CATEGORY_GUIDE}
+
 ════════════════════ OUTPUT — valid JSON ONLY ════════════════════
 Return exactly this shape. No markdown fences, no commentary, no trailing text.
+Every field must match the TekSure Guide type exactly — field names are
+case-sensitive (note: thumbnailEmoji, steps[].content — NOT emoji or
+steps[].description).
 
 {
   "verification_status": "verified" | "partial" | "rejected",
   "verification_notes":  "1-3 sentences. If rejected: which claim failed and against what source. If partial: list unverified parts.",
-  "slug":                "kebab-case-slug-max-80-chars",
-  "title":               "How to ... (max 70 chars, starts with a verb)",
-  "excerpt":             "Max 160 chars. Plain summary for cards and meta tags.",
-  "emoji":               "single relevant emoji",
-  "category":            "one of: ${VALID_CATEGORIES.join(' | ')}",
-  "tags":                ["3-6 kebab-case tags"],
-  "difficulty":          "Beginner" | "Intermediate" | "Advanced",
-  "readTime":            "N min (1-10)",
-  "target_os":           ["one or more of: ${VALID_TARGET_OS.join(', ')}"],
-  "body":                "The full guide. 300-600 words. Plain English. Numbered steps where applicable. Include a 'Quick Tip:' callout if relevant. Do NOT repeat the title.",
-  "steps":               [ { "title": "Verb phrase (<=10 words)", "description": "Plain-language detail for the step." } ],
   "attribution": {
     "source_name": "${source}",
     "source_url":  "${article.original_url}",
     "author":      "author name or null"
-  }
+  },
+
+  "slug":                "kebab-case-slug-max-80-chars",
+  "title":               "How to ... (max 70 chars, starts with a verb)",
+  "excerpt":             "Max 160 chars. Plain summary for cards and meta tags.",
+  "thumbnailEmoji":      "single relevant emoji",
+  "category":            "one slug from: ${VALID_CATEGORIES.join(' | ')}",
+  "tags":                ["3-6 kebab-case tags"],
+  "readTime":            "N min (1-10)",
+  "publishedAt":         "${new Date().toISOString().slice(0, 10)}",
+  "lastVerifiedAt":      "${new Date().toISOString().slice(0, 10)}",
+  "difficulty":          "Beginner" | "Intermediate" | "Advanced",
+  "target_os":           ["one or more of: ${VALID_TARGET_OS.join(', ')}"],
+  "body":                "The full guide. 300-600 words. Plain English. Numbered steps where applicable. Include a 'Quick Tip:' callout if relevant. Do NOT repeat the title.",
+  "steps": [
+    {
+      "title":   "Verb phrase (<=10 words)",
+      "content": "Plain-language detail for the step, 1-3 short sentences.",
+      "tip":     "optional Quick Tip — omit the key entirely if not relevant",
+      "warning": "optional safety warning — omit the key entirely if not relevant"
+    }
+  ]${sourceType === 'youtube' ? `,
+  "videoUrl": "${article.original_url}"` : ''}
 }
 
-If verification_status is "rejected", all other fields may be empty strings/arrays but the JSON shape MUST still be complete so the caller can parse it.
+Rules:
+- "slug" must be kebab-case (lowercase, hyphens, no punctuation).
+- "category" MUST be the exact slug (e.g. "safety-guides"), not the human label.
+- "thumbnailEmoji" is a single emoji character, not a word.
+- "steps[].content" — NEVER call this field "description".
+- "steps[].tip" uses the phrase "Quick Tip" (never "Pro Tip").
+- "publishedAt" and "lastVerifiedAt" are today's date in YYYY-MM-DD format.
+- If verification_status is "rejected", return the shape above with empty
+  strings/arrays for Guide fields; only verification_status, verification_notes,
+  and attribution need real values.
 
 ════════════════════ ORIGINAL ARTICLE ════════════════════
 Title: ${article.original_title}
@@ -280,7 +378,7 @@ function validateGuide(g: ClaudeGuide): { ok: true } | { ok: false; reason: stri
 
   if (g.verification_status === 'rejected') return { ok: true }; // rejection doesn't need full validation
 
-  const required = ['slug','title','excerpt','emoji','category','body'] as const;
+  const required = ['slug','title','excerpt','thumbnailEmoji','category','body'] as const;
   for (const f of required) {
     if (!g[f] || (typeof g[f] === 'string' && (g[f] as string).trim() === '')) {
       return { ok: false, reason: `missing field: ${f}` };
@@ -289,7 +387,7 @@ function validateGuide(g: ClaudeGuide): { ok: true } | { ok: false; reason: stri
 
   if (g.excerpt.length > 180) return { ok: false, reason: `excerpt too long: ${g.excerpt.length} chars` };
 
-  if (!VALID_CATEGORIES.includes(g.category as typeof VALID_CATEGORIES[number])) {
+  if (!VALID_CATEGORIES.includes(g.category as GuideCategory)) {
     return { ok: false, reason: `invalid category: ${g.category}` };
   }
 
@@ -302,7 +400,12 @@ function validateGuide(g: ClaudeGuide): { ok: true } | { ok: false; reason: stri
   if (words > 800) return { ok: false, reason: `body too long (${words} words, max 800)` };
 
   // Banned-word check across title, excerpt, body, and steps
-  const combined = [g.title, g.excerpt, g.body, ...(g.steps ?? []).flatMap(s => [s.title, s.description])].join(' ');
+  const combined = [
+    g.title,
+    g.excerpt,
+    g.body,
+    ...(g.steps ?? []).flatMap(s => [s.title, s.content, s.tip ?? '', s.warning ?? '']),
+  ].join(' ');
   const banned = containsBannedWord(combined);
   if (banned) return { ok: false, reason: `contains banned word: "${banned}"` };
 
@@ -422,7 +525,7 @@ serve(async (req) => {
         verification_notes:     guide.verification_notes,
         category:               guide.category,
         tags:                   guide.tags ?? [],
-        emoji:                  guide.emoji,
+        emoji:                  guide.thumbnailEmoji,
         excerpt:                guide.excerpt,
         attribution:            guide.attribution,
       })
