@@ -258,7 +258,7 @@ export default function StreamingCalculator() {
                       key={t.label}
                       type="button"
                       onClick={e => { e.preventDefault(); setTier(svc.id, t.price); }}
-                      className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors min-h-[36px] ${
+                      className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors min-h-[44px] ${
                         activeTierPrice === t.price
                           ? 'bg-foreground text-background border-foreground'
                           : 'border-border hover:border-foreground/40'

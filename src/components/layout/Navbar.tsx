@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { PreloadLink } from '@/components/PreloadLink';
-import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, Phone, X, BookOpen, Wrench, Shield, ShieldAlert, HelpCircle, Video, Newspaper, Users, ArrowRight } from 'lucide-react';
+import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, X, BookOpen, Wrench, Shield, ShieldAlert, Video, Users, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';

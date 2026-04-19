@@ -1,436 +1,652 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Receipt, Search, ChevronDown, ChevronUp, HelpCircle, CheckCircle, AlertTriangle, ExternalLink } from 'lucide-react';
+import {
+  Receipt,
+  Wifi,
+  Phone,
+  Stethoscope,
+  ShieldCheck,
+  Zap,
+  AlertTriangle,
+  CheckCircle,
+  HelpCircle,
+  Flag,
+  Info,
+} from 'lucide-react';
 
-type Provider = 'All' | 'Internet' | 'Phone' | 'TV' | 'Streaming' | 'Any';
+type BillType = 'internet' | 'phone' | 'medical' | 'insurance' | 'utility';
 
 interface LineItem {
   id: string;
-  name: string;
-  aliases: string[];
-  provider: Provider[];
-  plainEnglish: string;
+  label: string;
   amount: string;
-  isOptional: boolean;
-  canNegotiate: boolean;
-  tip?: string;
-  keywords: string[];
+  plainEnglish: string;
+  status: 'normal' | 'questionable' | 'scammy';
+  action: string;
 }
 
-const lineItems: LineItem[] = [
-  {
-    id: 'broadcast-tv-surcharge',
-    name: 'Broadcast TV Surcharge',
-    aliases: ['Broadcast TV Fee', 'Local Broadcast TV'],
-    provider: ['TV'],
-    plainEnglish: 'This is a fee your cable company added to help cover the cost of airing local TV channels (like ABC, NBC, CBS, and Fox). Despite the name, this is not a government-required fee — the cable company created it themselves and added it to your bill separately from the advertised price.',
-    amount: 'Usually $15–$25/month',
-    isOptional: false,
-    canNegotiate: true,
-    tip: 'You can sometimes get this reduced by calling and threatening to cancel. You can also cut the cord entirely — local channels are free over the air with a $20–$40 antenna.',
-    keywords: ['broadcast tv', 'broadcast surcharge', 'local tv fee', 'broadcast television fee'],
+interface BillData {
+  type: BillType;
+  title: string;
+  icon: typeof Wifi;
+  provider: string;
+  accountDetail: string;
+  items: LineItem[];
+  questions: string[];
+  disputeGuidance: string;
+  resourceLinks: { label: string; href: string }[];
+}
+
+const BILLS: Record<BillType, BillData> = {
+  internet: {
+    type: 'internet',
+    title: 'Internet Bill',
+    icon: Wifi,
+    provider: 'Sample Cable Co.',
+    accountDetail: 'Account #XXX-0042 — Gigabit plan',
+    items: [
+      {
+        id: 'service',
+        label: 'Monthly internet service',
+        amount: '$79.99',
+        plainEnglish: 'The price you pay for the actual internet. This is almost always higher than the "advertised" price because promotional credits expire after 12 months.',
+        status: 'normal',
+        action: 'If this jumped recently, your promo ended. Call and ask to renew it — they almost always will.',
+      },
+      {
+        id: 'equipment',
+        label: 'Equipment rental (modem/router)',
+        amount: '$15.00',
+        plainEnglish: 'A monthly rental fee for the modem and router they gave you. Over 3 years, that is $540 to rent a $120 box.',
+        status: 'scammy',
+        action: 'Buy your own modem (around $100) and router (around $100). You break even in about 13 months.',
+      },
+      {
+        id: 'broadcast-tv',
+        label: 'Broadcast TV fee',
+        amount: '$22.75',
+        plainEnglish: 'For cable TV bundles only. This covers the cost of "free" local channels (ABC, NBC, CBS, Fox). It is not required by law — the cable company invented this line item to raise prices without raising the advertised price.',
+        status: 'scammy',
+        action: 'Call and ask them to waive or reduce it. Threaten to cancel. You can also just watch local channels for free with a $30 antenna.',
+      },
+      {
+        id: 'regional-sports',
+        label: 'Regional sports fee',
+        amount: '$14.45',
+        plainEnglish: 'A charge for local sports channels, even if you never watch sports. Same trick as the broadcast TV fee.',
+        status: 'scammy',
+        action: 'If you do not watch sports, this is a strong argument to cancel cable TV and go streaming-only.',
+      },
+      {
+        id: 'fcc',
+        label: 'FCC regulatory fee',
+        amount: '$0.08',
+        plainEnglish: 'A tiny government-required fee that helps fund the FCC. This one is real and very small.',
+        status: 'normal',
+        action: 'Nothing to do here — it is legitimate and pennies.',
+      },
+      {
+        id: 'infra',
+        label: 'Internet infrastructure fee',
+        amount: '$3.99',
+        plainEnglish: 'A vague, made-up fee that is just more hidden price. It is not a tax and it is not going anywhere special — it is profit.',
+        status: 'scammy',
+        action: 'Call and complain. It can often be removed on request, especially if you threaten to cancel.',
+      },
+      {
+        id: 'late',
+        label: 'Late payment fee',
+        amount: '$10.00',
+        plainEnglish: 'You pay this if your payment was late. Usually a flat $10 or so.',
+        status: 'questionable',
+        action: 'If this is your first time being late in a year, call and ask them to waive it. They almost always say yes the first time.',
+      },
+      {
+        id: 'taxes',
+        label: 'Taxes and surcharges',
+        amount: '$4.52',
+        plainEnglish: 'Real state and federal taxes on telecom services. These are genuine.',
+        status: 'normal',
+        action: 'Nothing to do — taxes are taxes.',
+      },
+      {
+        id: 'promo',
+        label: 'Promotional credit (ENDING NEXT MONTH)',
+        amount: '-$20.00',
+        plainEnglish: 'A discount you signed up with that is about to expire. Your bill will jump $20/month starting next cycle.',
+        status: 'questionable',
+        action: 'Call BEFORE it expires and ask for a new promo or to switch to a retention department. Mention competitor pricing.',
+      },
+    ],
+    questions: [
+      'Why did my bill go up? (Usually: a promo ended.)',
+      'Can you waive the equipment rental if I buy my own modem?',
+      'Is there a current promotion I can switch to?',
+      'Is this broadcast TV/regional sports fee optional?',
+      'What would it cost to drop the TV bundle entirely?',
+    ],
+    disputeGuidance: 'Call and ask for the "retention" or "loyalty" department — not regular customer service. Be polite, mention you are shopping around (most areas have at least one fiber competitor now), and ask what they can do. If you get nowhere, file a complaint at fcc.gov/consumers — internet companies take FCC complaints very seriously and usually call you back within a week with a better offer.',
+    resourceLinks: [
+      { label: 'FCC complaint form', href: 'https://consumercomplaints.fcc.gov/' },
+      { label: 'TekSure: Lower your internet bill', href: '/guides' },
+    ],
   },
-  {
-    id: 'regional-sports-fee',
-    name: 'Regional Sports Fee',
-    aliases: ['RSN Fee', 'Regional Sports Network Fee', 'Sports Programming Fee'],
-    provider: ['TV'],
-    plainEnglish: 'A charge for local sports channels in your area (like NBC Sports regional channels or Bally Sports). This fee exists even if you never watch sports. Cable companies charge it to every subscriber regardless.',
-    amount: 'Usually $8–$15/month',
-    isOptional: false,
-    canNegotiate: true,
-    tip: `If you don't watch live sports, this is one of the best arguments for canceling cable. Streaming services like Hulu Live TV or YouTube TV include these channels at a lower overall cost.`,
-    keywords: ['regional sports', 'rsn', 'sports fee', 'regional sports network'],
+  phone: {
+    type: 'phone',
+    title: 'Phone Bill',
+    icon: Phone,
+    provider: 'Sample Wireless Co.',
+    accountDetail: '2 lines — Unlimited plan',
+    items: [
+      {
+        id: 'base',
+        label: 'Base plan (2 lines, Unlimited)',
+        amount: '$90.00',
+        plainEnglish: 'The actual cost of the phone service itself. Often advertised as "$45/line" but only with auto-pay and paperless billing.',
+        status: 'normal',
+        action: 'Make sure you have auto-pay and paperless billing on — that is usually $10/line discount.',
+      },
+      {
+        id: 'universal-service',
+        label: 'Federal universal service fee',
+        amount: '$4.82',
+        plainEnglish: 'A real federal fee that helps fund phone service in rural areas and for low-income families.',
+        status: 'normal',
+        action: 'Nothing to do — this is a legitimate federal charge.',
+      },
+      {
+        id: 'regulatory',
+        label: 'Regulatory cost recovery charge',
+        amount: '$3.29',
+        plainEnglish: 'Sounds official, but this is a fee the carrier created to cover their own regulatory costs. It is not a tax.',
+        status: 'scammy',
+        action: 'You generally cannot get this removed, but know it is bloat. Use it when comparison shopping.',
+      },
+      {
+        id: 'device-payment',
+        label: 'Device payment plan (iPhone, month 14/24)',
+        amount: '$41.63',
+        plainEnglish: 'The monthly installment on a phone you are financing. This is basically a $1,000 phone split into 24 payments.',
+        status: 'normal',
+        action: 'If you pay this off early, make sure you also renegotiate the plan — some carriers force you onto a cheaper plan once the phone is paid off.',
+      },
+      {
+        id: 'insurance',
+        label: 'Device protection plan',
+        amount: '$17.00',
+        plainEnglish: 'Phone insurance, usually per line. Covers drops, water damage, and loss — but with deductibles of $100–$250 per claim.',
+        status: 'questionable',
+        action: 'Worth it only if you tend to break phones. If your phone is older than 18 months, cancel — it is not worth insuring anymore.',
+      },
+      {
+        id: 'third-party',
+        label: 'Third-party charges (text services, ringtones, etc.)',
+        amount: '$9.99',
+        plainEnglish: 'Charges from OUTSIDE companies that somehow got added to your bill. This is called "cramming" and it is often a scam.',
+        status: 'scammy',
+        action: 'Call immediately and demand the charge be removed AND that third-party billing be blocked on your account. Most carriers let you block this for free.',
+      },
+      {
+        id: 'taxes',
+        label: 'Local taxes and 911 fee',
+        amount: '$6.14',
+        plainEnglish: 'State, city, and 911 fees. These are real government charges.',
+        status: 'normal',
+        action: 'Nothing to do — these are genuine taxes.',
+      },
+    ],
+    questions: [
+      'Am I paying for any third-party services I did not sign up for?',
+      'Can you block third-party billing on my account?',
+      'Is my device paid off — can my plan be cheaper now?',
+      'What promotions are available if I sign a new 2-year agreement?',
+      'Is there a cheaper plan that still fits how I use my phone?',
+    ],
+    disputeGuidance: 'For third-party "cramming" charges, you are legally entitled to a refund. If the carrier refuses, file a complaint with the FCC (fcc.gov/consumers) and your state Attorney General. These almost always get refunded. Check every bill for surprise charges — cramming quietly adds up to billions each year.',
+    resourceLinks: [
+      { label: 'FCC on cramming', href: 'https://www.fcc.gov/consumers/guides/cramming-unauthorized-charges-your-phone-bill' },
+      { label: 'File an FCC complaint', href: 'https://consumercomplaints.fcc.gov/' },
+    ],
   },
-  {
-    id: 'hd-technology-fee',
-    name: 'HD Technology Fee',
-    aliases: ['HD Fee', 'High Definition Technology Fee'],
-    provider: ['TV'],
-    plainEnglish: 'A charge for receiving HD (high-definition) picture quality on your TV. This is controversial because HD is now the standard — charging extra for it is like a restaurant charging extra for clean plates. You almost certainly already pay for this.',
-    amount: 'Usually $5–$10/month',
-    isOptional: false,
-    canNegotiate: true,
-    tip: `Call and ask to have this removed. Many customers successfully get it waived, especially if they've been a customer for years.`,
-    keywords: ['hd technology fee', 'hd fee', 'high definition fee', 'hd service fee'],
+  medical: {
+    type: 'medical',
+    title: 'Medical Bill / EOB',
+    icon: Stethoscope,
+    provider: 'Sample Hospital',
+    accountDetail: 'Visit date: 03/14/2026 — Outpatient',
+    items: [
+      {
+        id: 'cpt',
+        label: 'Procedure code 99213 (office visit)',
+        amount: '$285.00 (billed)',
+        plainEnglish: 'The CPT code identifies what was done. 99213 is a standard 15-minute office visit. The billed amount is the "sticker price" — what they bill when they do not have a contract.',
+        status: 'normal',
+        action: 'Look up your CPT codes at fairhealthconsumer.org to see typical prices in your area.',
+      },
+      {
+        id: 'allowed',
+        label: 'Allowed amount (negotiated rate)',
+        amount: '$142.00',
+        plainEnglish: 'The amount your insurance and the doctor have agreed is a fair price. This should be way lower than the billed amount.',
+        status: 'normal',
+        action: 'If your insurance paid based on the billed amount instead of the allowed amount, that is a mistake — call them.',
+      },
+      {
+        id: 'plan-paid',
+        label: 'Plan paid',
+        amount: '$113.60',
+        plainEnglish: 'The amount your insurance company paid after their contract discount.',
+        status: 'normal',
+        action: 'Verify this matches what your insurance company\'s Explanation of Benefits (EOB) shows.',
+      },
+      {
+        id: 'deductible',
+        label: 'Deductible applied',
+        amount: '$0.00',
+        plainEnglish: 'Anything you had to pay because you had not hit your yearly deductible yet. Zero means your deductible was already met.',
+        status: 'normal',
+        action: 'Track your deductible in your insurance portal so there are no surprises.',
+      },
+      {
+        id: 'copay',
+        label: 'Copay / coinsurance',
+        amount: '$28.40',
+        plainEnglish: 'Your share of the allowed amount. Copay is a flat fee (like $25 per visit). Coinsurance is a percentage (like 20% of the cost).',
+        status: 'normal',
+        action: 'This is what you actually owe. Pay this part.',
+      },
+      {
+        id: 'adjustment',
+        label: 'Provider adjustment (write-off)',
+        amount: '-$143.00',
+        plainEnglish: 'The amount the doctor had to knock off their sticker price to match the insurance contract. You do not owe this.',
+        status: 'normal',
+        action: 'Make sure this appears on your bill. Without it, the provider is double-billing.',
+      },
+      {
+        id: 'oon',
+        label: 'Out-of-network charge',
+        amount: '$412.00',
+        plainEnglish: 'A provider you saw (often an anesthesiologist or lab) was not in your network, even at an in-network hospital. You got blindsided.',
+        status: 'scammy',
+        action: 'Fight this. Under the No Surprises Act (2022), most surprise out-of-network bills at in-network hospitals are illegal. File a complaint.',
+      },
+      {
+        id: 'balance-billing',
+        label: 'Balance billing',
+        amount: '$186.00',
+        plainEnglish: 'The provider is trying to bill you for the difference between their sticker price and what insurance paid. This is often illegal.',
+        status: 'scammy',
+        action: 'For in-network care and most emergencies, balance billing is banned. Call the provider and demand they remove it. Cite the No Surprises Act.',
+      },
+    ],
+    questions: [
+      'Can I have an itemized bill with every CPT code and charge spelled out?',
+      'Does this charge include a surprise out-of-network provider?',
+      'Is this balance billing — and is it legal under the No Surprises Act?',
+      'What is your financial assistance policy? (Nonprofit hospitals must have one.)',
+      'Can I get a cash discount if I pay today?',
+    ],
+    disputeGuidance: 'ALWAYS request an itemized bill before paying anything — studies show 30–80% of medical bills have errors. Dispute surprise billing under the federal No Surprises Act by calling 1-800-985-3059 or filing at cms.gov/nosurprises. Most hospitals will negotiate down cash payments by 30–50% if you simply ask. Nonprofit hospitals are federally required to offer financial assistance — ask.',
+    resourceLinks: [
+      { label: 'No Surprises Act help', href: 'https://www.cms.gov/nosurprises' },
+      { label: 'Price-check CPT codes', href: 'https://www.fairhealthconsumer.org/' },
+    ],
   },
-  {
-    id: 'equipment-rental',
-    name: 'Equipment Rental / Set-Top Box Fee',
-    aliases: ['Cable Box Rental', 'DVR Fee', 'Receiver Fee', 'Gateway Rental', 'Modem Rental'],
-    provider: ['TV', 'Internet'],
-    plainEnglish: 'A monthly fee for renting the cable box, DVR, or internet modem/router from your provider. This is optional — you can buy your own compatible equipment instead and eliminate this charge permanently.',
-    amount: 'Usually $10–$15/month per device',
-    isOptional: true,
-    canNegotiate: false,
-    tip: 'Buying your own modem and router typically pays for itself in under a year. Search "compatible modem for [your provider]" on Amazon and look for ones listed as approved by your carrier. For cable boxes, check if your provider offers an app on your smart TV instead.',
-    keywords: ['equipment rental', 'set top box', 'cable box rental', 'dvr fee', 'modem rental', 'receiver fee', 'gateway rental'],
+  insurance: {
+    type: 'insurance',
+    title: 'Insurance Premium Bill',
+    icon: ShieldCheck,
+    provider: 'Sample Health Plan',
+    accountDetail: 'Member ID: XXX-987 — PPO Plan',
+    items: [
+      {
+        id: 'premium',
+        label: 'Monthly premium',
+        amount: '$612.00',
+        plainEnglish: 'The amount you pay every month for coverage, even if you never see a doctor. Think of it like rent for your insurance.',
+        status: 'normal',
+        action: 'If this jumped at renewal, shop around — most people never do. Check the health exchange (healthcare.gov) every November.',
+      },
+      {
+        id: 'copay',
+        label: 'Your copay (per visit)',
+        amount: '$30 primary / $60 specialist',
+        plainEnglish: 'The flat fee you pay when you see a doctor. Primary care is usually cheaper than a specialist.',
+        status: 'normal',
+        action: 'Know these numbers before every visit. Ask the front desk to confirm your copay before being seen.',
+      },
+      {
+        id: 'deductible',
+        label: 'Annual deductible remaining',
+        amount: '$1,420 of $2,500',
+        plainEnglish: 'How much more you have to pay out of pocket before insurance kicks in for most services. Resets every January 1st.',
+        status: 'normal',
+        action: 'Schedule elective procedures late in the year if your deductible is already met — they will be much cheaper.',
+      },
+      {
+        id: 'oop',
+        label: 'Out-of-pocket maximum progress',
+        amount: '$2,840 of $8,700',
+        plainEnglish: 'Once you hit your out-of-pocket max, insurance pays 100% of covered care for the rest of the year. It is the most you should ever have to pay in a year.',
+        status: 'normal',
+        action: 'If you are close to hitting it (say, $500 away), consider scheduling any needed procedures before year end.',
+      },
+      {
+        id: 'prescription',
+        label: 'Prescription tier copays',
+        amount: 'T1: $10 / T2: $40 / T3: $75',
+        plainEnglish: 'Your cost per prescription depends on its "tier." Generic is tier 1, brand-name preferred is tier 2, brand-name non-preferred is tier 3.',
+        status: 'normal',
+        action: 'Always ask for generic. Ask your doctor if a tier 1 alternative would work.',
+      },
+    ],
+    questions: [
+      'Is my current doctor still in-network?',
+      'Has the formulary (covered drug list) changed?',
+      'What is my actual deductible and out-of-pocket max for this year?',
+      'If I switch plans at open enrollment, what would I save?',
+    ],
+    disputeGuidance: 'Premium increases at renewal are not inevitable. Every November, spend one hour comparing your current plan to alternatives on healthcare.gov or your state exchange. Many people overpay by $1,000+/year because they auto-renew. If you have employer coverage, check if your spouse\'s plan is better.',
+    resourceLinks: [
+      { label: 'HealthCare.gov marketplace', href: 'https://www.healthcare.gov/' },
+      { label: 'Medicare.gov (if 65+)', href: 'https://www.medicare.gov/' },
+    ],
   },
-  {
-    id: 'admin-fee',
-    name: 'Administrative Fee',
-    aliases: ['Admin Fee', 'Service Fee', 'Network Access Fee'],
-    provider: ['Phone'],
-    plainEnglish: 'A fee that phone companies charge for the cost of doing business — things like maintaining their network, customer service, and billing. This is not a government-required fee; the carrier invented it to keep advertised prices lower while increasing your actual bill.',
-    amount: 'Usually $2–$4/month',
-    isOptional: false,
-    canNegotiate: false,
-    tip: `While you can't remove this fee, you can factor it in when comparing plans. A plan advertised at $40/month might actually cost $46/month after fees like this.`,
-    keywords: ['administrative fee', 'admin fee', 'network access fee', 'service fee'],
+  utility: {
+    type: 'utility',
+    title: 'Utility Bill (Electric)',
+    icon: Zap,
+    provider: 'Sample Power Co.',
+    accountDetail: 'Account #XX-2048 — Residential',
+    items: [
+      {
+        id: 'supply',
+        label: 'Supply charge (the electricity itself)',
+        amount: '$78.40',
+        plainEnglish: 'The cost of the actual electricity you used. This is the part you can shop for in deregulated states.',
+        status: 'normal',
+        action: 'In deregulated states (TX, PA, OH, IL, NJ, NY, MA, CT, MD), shop around for a cheaper supplier. You can save 10–30%.',
+      },
+      {
+        id: 'delivery',
+        label: 'Delivery charge',
+        amount: '$42.18',
+        plainEnglish: 'The cost of getting the electricity to your house through the wires. You cannot shop for this — only your local utility provides it.',
+        status: 'normal',
+        action: 'You are stuck with this charge. Use it to check if switching to time-of-use rates would help.',
+      },
+      {
+        id: 'customer-charge',
+        label: 'Customer charge (fixed monthly fee)',
+        amount: '$10.50',
+        plainEnglish: 'A flat fee just for being a customer, even if you used zero electricity. Pretty much unavoidable.',
+        status: 'normal',
+        action: 'You cannot avoid this, but know it is there when calculating if solar panels or a battery would pay off.',
+      },
+      {
+        id: 'peak',
+        label: 'Peak rate usage',
+        amount: '$0.24/kWh',
+        plainEnglish: 'What electricity costs between 3 PM and 9 PM on weekdays — the most expensive time to use power.',
+        status: 'normal',
+        action: 'Shift laundry, dishwashers, and EV charging to off-peak hours. Could save $30–100/month.',
+      },
+      {
+        id: 'off-peak',
+        label: 'Off-peak rate usage',
+        amount: '$0.09/kWh',
+        plainEnglish: 'What electricity costs during overnight and weekend hours — the cheapest time to use power.',
+        status: 'normal',
+        action: 'Run your big appliances during these times. Use a smart plug to automate it.',
+      },
+      {
+        id: 'taxes',
+        label: 'State and local taxes',
+        amount: '$7.29',
+        plainEnglish: 'Real taxes, genuinely going to the government.',
+        status: 'normal',
+        action: 'Nothing to do — these are legitimate.',
+      },
+      {
+        id: 'efficiency',
+        label: 'Energy efficiency surcharge',
+        amount: '$3.15',
+        plainEnglish: 'A state-mandated charge that funds rebates for insulation, efficient appliances, and home energy audits.',
+        status: 'normal',
+        action: 'You are paying for these programs — use them! Most utilities offer free home energy audits and rebates up to $500 on appliances.',
+      },
+    ],
+    questions: [
+      'Am I on the best rate plan for my usage? (Ask for "time-of-use" or "budget billing" comparison.)',
+      'Is there a lower rate for seniors or low-income customers?',
+      'What rebates and free home audits are available right now?',
+      'Can I switch suppliers in my state for a cheaper rate?',
+    ],
+    disputeGuidance: 'If a bill is wildly higher than usual, demand a meter read and usage breakdown. Sometimes meters are misread for months before anyone notices. In deregulated states, shop around every 1–2 years — supplier prices shift a lot. Most utilities offer free energy audits that pay for themselves in one season.',
+    resourceLinks: [
+      { label: 'LIHEAP energy assistance', href: 'https://www.acf.hhs.gov/ocs/programs/liheap' },
+      { label: 'ENERGY STAR rebate finder', href: 'https://www.energystar.gov/rebate-finder' },
+    ],
   },
-  {
-    id: 'activation-fee',
-    name: 'Activation Fee',
-    aliases: ['Setup Fee', 'New Line Fee', 'Service Activation Fee'],
-    provider: ['Phone', 'Internet', 'TV'],
-    plainEnglish: 'A one-time charge when you start new service or add a new line. This fee is almost entirely negotiable — providers regularly waive it to attract new customers.',
-    amount: 'Usually $25–$35 one time',
-    isOptional: true,
-    canNegotiate: true,
-    tip: 'Always ask to have this waived before you sign up. Say "Is there any way to waive the activation fee?" — agents have the authority to remove it and often will without much pushback.',
-    keywords: ['activation fee', 'setup fee', 'new line fee', 'service activation'],
-  },
-  {
-    id: 'paper-bill-fee',
-    name: 'Paper Bill Fee',
-    aliases: ['Mailed Bill Fee', 'Paper Statement Fee', 'Printed Bill Charge'],
-    provider: ['Internet', 'Phone', 'TV'],
-    plainEnglish: 'A charge for having your bill mailed to you on paper instead of receiving it electronically by email. Switching to paperless billing removes this fee instantly.',
-    amount: 'Usually $1–$5/month',
-    isOptional: true,
-    canNegotiate: false,
-    tip: `Log in to your account online (or call customer service) and switch to paperless billing. You'll receive the same bill information by email and save this charge immediately.`,
-    keywords: ['paper bill', 'mailed bill', 'paper statement', 'printed bill fee'],
-  },
-  {
-    id: 'early-termination-fee',
-    name: 'Early Termination Fee (ETF)',
-    aliases: ['ETF', 'Cancellation Fee', 'Contract Cancellation Fee'],
-    provider: ['Phone', 'Internet', 'TV'],
-    plainEnglish: `A charge if you cancel your service before your contract period ends (usually 1 or 2 years). This fee is designed to keep you locked in. If you're paying off a financed phone, you'll also still owe the remaining phone balance.`,
-    amount: 'Usually $100–$350 or remaining phone balance',
-    isOptional: false,
-    canNegotiate: true,
-    tip: 'If a competitor offers to pay your ETF when you switch, get that offer in writing. Many carriers (T-Mobile, Verizon, AT&T) run promotions to cover switching costs. Also check if you qualify for military, medical, or relocation exceptions that waive the ETF.',
-    keywords: ['early termination', 'etf', 'cancellation fee', 'contract cancellation', 'termination fee'],
-  },
-  {
-    id: 'universal-service-fund',
-    name: 'Universal Service Fund (USF)',
-    aliases: ['Federal Universal Service Fund', 'FUSF', 'Universal Service Charge'],
-    provider: ['Phone'],
-    plainEnglish: 'A federally regulated fee that phone carriers collect and pass on to the FCC. The money goes to programs that provide affordable phone and internet service to low-income households, schools, libraries, and rural areas. This is a real government-related fee (unlike many other surcharges).',
-    amount: 'Usually 1–3% of your bill',
-    isOptional: false,
-    canNegotiate: false,
-    tip: 'This fee is legitimate and non-negotiable. However, if you have low income, you may qualify for the Lifeline program (which subsidizes your phone bill) or the Affordable Connectivity Program (ACP).',
-    keywords: ['universal service fund', 'usf', 'federal universal service', 'universal service charge'],
-  },
-  {
-    id: 'e911-fee',
-    name: 'E911 Fee',
-    aliases: ['Emergency 911', '911 Fee', 'Emergency Services Fee'],
-    provider: ['Phone'],
-    plainEnglish: 'A small fee charged by your state or local government to fund 911 emergency services. This is a real, government-mandated fee that goes toward maintaining the 911 call centers that help people in emergencies.',
-    amount: 'Usually $0.25–$1/month',
-    isOptional: false,
-    canNegotiate: false,
-    tip: 'This is a legitimate government fee you cannot avoid. It goes directly toward emergency services in your community.',
-    keywords: ['e911', '911 fee', 'emergency services fee', 'emergency 911'],
-  },
-  {
-    id: 'data-overage',
-    name: 'Data Overage Charge',
-    aliases: ['Data Usage Fee', 'Overage Fee', 'Exceeded Data Limit'],
-    provider: ['Phone', 'Internet'],
-    plainEnglish: 'A charge for using more internet data than your plan allows in a billing month. On phones, data is what you use when you browse the internet, stream videos, or use apps without being on WiFi.',
-    amount: 'Usually $10–$15 per extra GB',
-    isOptional: true,
-    canNegotiate: true,
-    tip: `To avoid this: connect to WiFi whenever possible, turn on "Data Saver" mode on your phone, and set a data warning in your phone's settings. If you frequently hit your limit, a plan with unlimited data may be cheaper than recurring overage charges.`,
-    keywords: ['data overage', 'overage charge', 'exceeded data', 'data usage fee', 'over limit'],
-  },
-  {
-    id: 'late-payment-fee',
-    name: 'Late Payment Fee',
-    aliases: ['Late Fee', 'Past Due Fee', 'Returned Payment Fee'],
-    provider: ['Internet', 'Phone', 'TV'],
-    plainEnglish: 'A charge applied when your bill is not paid by the due date. This is avoidable by setting up autopay or setting a reminder a few days before your bill is due each month.',
-    amount: 'Usually $5–$15',
-    isOptional: true,
-    canNegotiate: true,
-    tip: 'If this is your first late fee, call and ask to have it waived as a "one-time courtesy." Most companies will do this once per year. Then set up autopay (you often get a discount of $5–$10/month for autopay too).',
-    keywords: ['late payment', 'late fee', 'past due', 'returned payment'],
-  },
-  {
-    id: 'streaming-service',
-    name: 'Streaming Service Charge',
-    aliases: ['Netflix', 'Hulu', 'Disney+', 'Max', 'Peacock', 'Prime Video', 'Paramount+', 'Apple TV+'],
-    provider: ['Streaming'],
-    plainEnglish: `A monthly subscription for an on-demand video service. These are separate from your cable or internet bill. You pay them independently, and they can be canceled at any time — usually right on the company's website.`,
-    amount: '$7–$23/month depending on service and tier',
-    isOptional: true,
-    canNegotiate: false,
-    tip: `Audit your streaming subscriptions: look at your credit card or bank statement for the last 3 months and find every streaming charge. Cancel any you haven't used in the last month. Many people pay for 4–6 services and only actively use 2.`,
-    keywords: ['netflix', 'hulu', 'disney plus', 'max', 'hbo max', 'peacock', 'prime video', 'streaming', 'apple tv', 'paramount'],
-  },
-  {
-    id: 'installation-fee',
-    name: 'Professional Installation Fee',
-    aliases: ['Technician Visit Fee', 'Install Fee', 'Service Call Fee'],
-    provider: ['Internet', 'TV'],
-    plainEnglish: 'A one-time charge for having a technician come to your home to set up your internet or cable service. Self-installation (doing it yourself with a kit they mail you) is almost always free and usually takes about 30 minutes.',
-    amount: 'Usually $50–$100 one time',
-    isOptional: true,
-    canNegotiate: true,
-    tip: 'Ask for a self-install kit. Most providers offer them free. The kits come with step-by-step picture instructions, and you can call customer service while you set it up if you get stuck.',
-    keywords: ['installation fee', 'professional installation', 'technician visit', 'service call', 'install fee'],
-  },
-  {
-    id: 'line-access-fee',
-    name: 'Line Access Fee',
-    aliases: ['Access Charge', 'Device Access Charge', 'Per Line Fee'],
-    provider: ['Phone'],
-    plainEnglish: `A charge for each phone line (device) on your account. If you have a family plan with 4 lines, you pay this fee 4 times. It covers the basic cost of having a phone number and access to the carrier's network.`,
-    amount: 'Usually $10–$30/line/month',
-    isOptional: false,
-    canNegotiate: true,
-    tip: 'Ask your carrier if there are discounts for adding multiple lines, or if autopay reduces the per-line cost. Carriers like Visible and Mint Mobile offer single-line unlimited plans for $25–$35/month total, much cheaper for single users.',
-    keywords: ['line access fee', 'access charge', 'device access', 'per line fee', 'line fee'],
-  },
+};
+
+const TYPE_META: Array<{ type: BillType; label: string; icon: typeof Wifi }> = [
+  { type: 'internet', label: 'Internet bill', icon: Wifi },
+  { type: 'phone', label: 'Phone bill', icon: Phone },
+  { type: 'medical', label: 'Medical / EOB', icon: Stethoscope },
+  { type: 'insurance', label: 'Insurance premium', icon: ShieldCheck },
+  { type: 'utility', label: 'Utility bill', icon: Zap },
 ];
 
-const providerFilters: Provider[] = ['All', 'Internet', 'Phone', 'TV', 'Streaming'];
+function statusBadge(status: LineItem['status']) {
+  if (status === 'normal') {
+    return (
+      <Badge variant="secondary" className="gap-1 bg-green-100 text-green-900 dark:bg-green-900/40 dark:text-green-200">
+        <CheckCircle className="h-3 w-3" /> Normal
+      </Badge>
+    );
+  }
+  if (status === 'questionable') {
+    return (
+      <Badge variant="secondary" className="gap-1 bg-yellow-100 text-yellow-900 dark:bg-yellow-900/40 dark:text-yellow-200">
+        <HelpCircle className="h-3 w-3" /> Worth questioning
+      </Badge>
+    );
+  }
+  return (
+    <Badge variant="secondary" className="gap-1 bg-red-100 text-red-900 dark:bg-red-900/40 dark:text-red-200">
+      <AlertTriangle className="h-3 w-3" /> Often bloat or scammy
+    </Badge>
+  );
+}
 
 export default function BillDecoder() {
-  const [search, setSearch] = useState('');
-  const [activeProvider, setActiveProvider] = useState<Provider>('All');
-  const [expanded, setExpanded] = useState<string | null>(null);
+  const [active, setActive] = useState<BillType>('internet');
+  const [openItem, setOpenItem] = useState<string | null>(null);
 
-  const filtered = useMemo(() => {
-    const q = search.toLowerCase().trim();
-    return lineItems.filter(item => {
-      const matchesSearch = !q ||
-        item.name.toLowerCase().includes(q) ||
-        item.aliases.some(a => a.toLowerCase().includes(q)) ||
-        item.keywords.some(k => k.includes(q)) ||
-        item.plainEnglish.toLowerCase().includes(q);
-      const matchesProvider = activeProvider === 'All' || item.provider.includes(activeProvider);
-      return matchesSearch && matchesProvider;
-    });
-  }, [search, activeProvider]);
+  const bill = BILLS[active];
+  const Icon = bill.icon;
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-background">
       <SEOHead
-        title="Tech Bill Decoder — What Are These Charges? | TekSure"
-        description="Confused by charges on your internet, phone, or cable bill? Look them up here and get a plain-English explanation of what each fee means — and whether you can get rid of it."
-        path="/tools/bill-decoder"
+        title="Bill Decoder — Understand Internet, Phone, Medical, & Insurance Bills | TekSure"
+        description="Decode confusing bills line by line. Internet, phone, medical, insurance, and utility bills explained in plain English — with action steps for fees you should question."
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
-        <div className="container pt-4">
-          <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Bill Decoder' }]} />
-        </div>
 
-        {/* Header */}
-        <section className="border-b">
-          <div className="container py-12 md:py-16 max-w-3xl">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                <Receipt className="h-6 w-6 text-emerald-600" aria-hidden="true" />
-              </div>
-              <Badge variant="secondary">Free Tool</Badge>
+      <main className="flex-1">
+        <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Bill Decoder' }]} />
+
+        {/* Hero */}
+        <section className="bg-gradient-to-b from-primary/5 to-background py-12 md:py-16">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <Receipt className="h-4 w-4" />
+              Line-by-line decoder
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-              Bill Decoder
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              Your Bill Is Confusing On Purpose. We'll Help You Read It.
             </h1>
-            <p className="text-muted-foreground text-lg mb-8">
-              Got a confusing charge on your internet, phone, cable, or streaming bill? Search for it here and get a plain-English explanation — plus whether you can get rid of it.
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Tap any line on a sample bill to see what it means, whether the charge is normal or
+              should be questioned, and exactly what to do if it seems wrong.
             </p>
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" aria-hidden="true" />
-              <Input
-                placeholder='Search for a charge, e.g. "broadcast TV surcharge" or "equipment rental"…'
-                className="pl-11 h-12 rounded-2xl text-sm"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                aria-label="Search for a bill charge"
-              />
+          </div>
+        </section>
+
+        {/* Bill type tabs */}
+        <section className="py-8 border-b">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="flex flex-wrap gap-2 justify-center">
+              {TYPE_META.map((t) => {
+                const TabIcon = t.icon;
+                const isActive = t.type === active;
+                return (
+                  <button
+                    key={t.type}
+                    onClick={() => { setActive(t.type); setOpenItem(null); }}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'bg-primary text-primary-foreground border-primary'
+                        : 'bg-card hover:bg-muted'
+                    }`}
+                  >
+                    <TabIcon className="h-4 w-4" />
+                    {t.label}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <div className="container py-8 pb-24 max-w-3xl">
-          {/* Provider filter pills */}
-          <div className="flex flex-wrap gap-2 mb-8" role="group" aria-label="Filter by bill type">
-            {providerFilters.map(prov => (
-              <button
-                key={prov}
-                onClick={() => setActiveProvider(prov)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors min-h-[44px] border ${
-                  activeProvider === prov
-                    ? 'bg-foreground text-background border-foreground'
-                    : 'bg-background text-foreground/70 border-border hover:border-foreground/30'
-                }`}
-                aria-pressed={activeProvider === prov}
-              >
-                {prov === 'All' ? 'All Bills' : `${prov} Bill`}
-              </button>
-            ))}
-          </div>
-
-          {/* Legend */}
-          <div className="flex flex-wrap gap-4 mb-6 text-xs text-muted-foreground">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle className="h-3.5 w-3.5 text-green-500" aria-hidden="true" />
-              Can negotiate or remove
-            </span>
-            <span className="flex items-center gap-1.5">
-              <AlertTriangle className="h-3.5 w-3.5 text-amber-500" aria-hidden="true" />
-              Optional / avoidable
-            </span>
-            <span className="flex items-center gap-1.5">
-              <HelpCircle className="h-3.5 w-3.5 text-muted-foreground/50" aria-hidden="true" />
-              Required / non-negotiable
-            </span>
-          </div>
-
-          <p className="text-sm text-muted-foreground mb-6">
-            Showing {filtered.length} charge{filtered.length !== 1 ? 's' : ''}
-          </p>
-
-          {filtered.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="text-4xl mb-3">🧾</p>
-              <p className="font-semibold text-lg mb-2">Charge not found</p>
-              <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                Try searching for just part of the charge name — for example "sports" instead of "Regional Sports Network Fee."
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {filtered.map(item => {
-                const isOpen = expanded === item.id;
-                return (
-                  <div
-                    key={item.id}
-                    className="rounded-2xl border border-border bg-card overflow-hidden transition-shadow hover:shadow-md"
-                  >
-                    {/* Header */}
-                    <button
-                      className="w-full text-left p-5 flex items-start gap-4"
-                      onClick={() => setExpanded(isOpen ? null : item.id)}
-                      aria-expanded={isOpen}
-                      aria-controls={`charge-${item.id}`}
-                    >
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap mb-2">
-                          {item.canNegotiate && (
-                            <span className="inline-flex items-center gap-1 text-xs font-medium text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-950/30 px-2 py-0.5 rounded-full">
-                              <CheckCircle className="h-3 w-3" aria-hidden="true" /> Can negotiate
-                            </span>
-                          )}
-                          {item.isOptional && (
-                            <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/20 px-2 py-0.5 rounded-full">
-                              <AlertTriangle className="h-3 w-3" aria-hidden="true" /> Optional
-                            </span>
-                          )}
-                          {item.provider.map(p => (
-                            <Badge key={p} variant="outline" className="text-xs">{p}</Badge>
-                          ))}
-                        </div>
-                        <h2 className="font-semibold text-base leading-snug mb-1">{item.name}</h2>
-                        <div className="flex flex-wrap gap-2 items-center">
-                          <span className="text-sm text-muted-foreground font-medium">{item.amount}</span>
-                          {item.aliases.length > 0 && (
-                            <span className="text-xs text-muted-foreground/60">
-                              Also listed as: {item.aliases.slice(0, 2).join(', ')}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      <div className="flex-shrink-0 mt-1">
-                        {isOpen
-                          ? <ChevronUp className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                          : <ChevronDown className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                        }
-                      </div>
-                    </button>
-
-                    {/* Expanded content */}
-                    {isOpen && (
-                      <div id={`charge-${item.id}`} className="px-5 pb-6 border-t border-border pt-5 space-y-5">
-                        <div>
-                          <h3 className="font-semibold text-sm mb-2">What this charge is</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{item.plainEnglish}</p>
-                        </div>
-
-                        {item.tip && (
-                          <div className="flex gap-3 p-4 rounded-xl bg-primary/5 border border-primary/10">
-                            <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
-                            <div>
-                              <p className="text-xs font-semibold text-primary mb-1">Quick Tip</p>
-                              <p className="text-sm text-muted-foreground leading-relaxed">{item.tip}</p>
-                            </div>
-                          </div>
-                        )}
-
-                        <div className="flex gap-4 text-sm flex-wrap">
-                          <div className="flex items-center gap-1.5">
-                            {item.isOptional
-                              ? <><AlertTriangle className="h-4 w-4 text-amber-500" aria-hidden="true" /><span className="text-amber-700 dark:text-amber-400 font-medium">Optional — you can avoid it</span></>
-                              : <><HelpCircle className="h-4 w-4 text-muted-foreground/50" aria-hidden="true" /><span className="text-muted-foreground">Required on this plan</span></>
-                            }
-                          </div>
-                          <div className="flex items-center gap-1.5">
-                            {item.canNegotiate
-                              ? <><CheckCircle className="h-4 w-4 text-green-500" aria-hidden="true" /><span className="text-green-700 dark:text-green-400 font-medium">Negotiable — worth asking</span></>
-                              : <><HelpCircle className="h-4 w-4 text-muted-foreground/50" aria-hidden="true" /><span className="text-muted-foreground">Not negotiable</span></>
-                            }
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
-
-          {/* Bottom tip */}
-          <div className="mt-12 p-6 rounded-2xl border border-border bg-muted/50">
-            <div className="flex gap-3 items-start">
-              <Receipt className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
-              <div>
-                <p className="font-semibold text-sm mb-1">Quick Tip: Call and ask</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Most people never call to negotiate their bill — which is exactly what providers count on. A 10-minute call saying "I'm thinking about switching carriers" often results in $20–$40 off your monthly bill, waived fees, or a loyalty discount. The worst they can say is no.
+        {/* Sample bill */}
+        <section className="py-10">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="bg-card border rounded-xl shadow-sm overflow-hidden">
+              {/* Bill header */}
+              <div className="bg-muted/50 border-b p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <Icon className="h-6 w-6 text-primary" />
+                  <h2 className="text-xl font-bold">{bill.provider} — {bill.title}</h2>
+                </div>
+                <p className="text-sm text-muted-foreground">{bill.accountDetail}</p>
+                <p className="text-xs text-muted-foreground mt-2 italic">
+                  This is a realistic example bill. Click any line to see what it means.
                 </p>
               </div>
+
+              {/* Line items */}
+              <div className="divide-y">
+                {bill.items.map((item) => {
+                  const isOpen = openItem === item.id;
+                  return (
+                    <div key={item.id}>
+                      <button
+                        onClick={() => setOpenItem(isOpen ? null : item.id)}
+                        className="w-full p-4 md:p-5 flex items-start justify-between gap-4 hover:bg-muted/30 text-left transition-colors"
+                      >
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium">{item.label}</div>
+                          <div className="mt-1">{statusBadge(item.status)}</div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <div className="font-semibold tabular-nums">{item.amount}</div>
+                          <div className="text-xs text-primary mt-1">
+                            {isOpen ? 'Hide' : 'Explain'}
+                          </div>
+                        </div>
+                      </button>
+                      {isOpen && (
+                        <div className="px-4 md:px-5 pb-5 bg-muted/20 space-y-3">
+                          <div>
+                            <div className="text-xs font-semibold uppercase text-muted-foreground mb-1">
+                              What it means
+                            </div>
+                            <p className="text-sm">{item.plainEnglish}</p>
+                          </div>
+                          <div>
+                            <div className="text-xs font-semibold uppercase text-muted-foreground mb-1">
+                              What to do
+                            </div>
+                            <p className="text-sm flex items-start gap-2">
+                              <Flag className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                              {item.action}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Questions to ask */}
+            <div className="mt-8 bg-card border rounded-xl p-6 md:p-8 shadow-sm">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <HelpCircle className="h-5 w-5 text-primary" />
+                Questions you should ask
+              </h3>
+              <ul className="space-y-2">
+                {bill.questions.map((q, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-primary font-bold">{i + 1}.</span>
+                    <span>{q}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Dispute guidance */}
+            <div className="mt-6 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-800 rounded-xl p-6 md:p-8">
+              <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                <AlertTriangle className="h-5 w-5 text-yellow-700 dark:text-yellow-300" />
+                When to dispute
+              </h3>
+              <p className="text-sm leading-relaxed">{bill.disputeGuidance}</p>
+            </div>
+
+            {/* Resource links */}
+            <div className="mt-6 bg-card border rounded-xl p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                <Info className="h-5 w-5 text-primary" />
+                Helpful resources
+              </h3>
+              <ul className="space-y-2">
+                {bill.resourceLinks.map((r) => (
+                  <li key={r.href}>
+                    <a
+                      href={r.href}
+                      target={r.href.startsWith('http') ? '_blank' : undefined}
+                      rel={r.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className="text-primary hover:underline font-medium"
+                    >
+                      {r.label} →
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-8 text-center">
+              <Button asChild size="lg" variant="outline">
+                <a href="/tools">← Back to all tools</a>
+              </Button>
             </div>
           </div>
-
-          <div className="mt-6 p-5 rounded-2xl bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800">
-            <p className="text-sm text-blue-800 dark:text-blue-300 font-medium mb-1">Helpful resource</p>
-            <a
-              href="https://www.consumerreports.org/telecom-services/how-to-lower-your-cable-bill/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-blue-700 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
-            >
-              <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-              Consumer Reports: How to Lower Your Cable Bill
-            </a>
-          </div>
-        </div>
+        </section>
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 }

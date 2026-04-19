@@ -351,7 +351,7 @@ const Guides = () => {
               <button
                 key={level}
                 onClick={() => setDifficultyFilter(level)}
-                className={`text-xs px-3 py-1.5 rounded-full border transition-all min-h-[36px] ${
+                className={`text-xs px-3 py-1.5 rounded-full border transition-all min-h-[44px] ${
                   difficultyFilter === level
                     ? level === 'Beginner' ? 'bg-green-100 border-green-300 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300'
                     : level === 'Intermediate' ? 'bg-amber-100 border-amber-300 text-amber-700 dark:bg-amber-900/30 dark:border-amber-700 dark:text-amber-300'
