@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 30** (406 guides added in batches 12-30, 2026-04-19) — total ~1,675 guides
-- Next: **Batch 31** → **Batch 32** → ... (no upper limit)
+- Last completed: **Batch 31** (426 guides added in batches 12-31, 2026-04-19) — total ~1,695 guides
+- Next: **Batch 32** → **Batch 33** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -109,7 +109,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 28** | **20** | **2026-04-19** | iCloud Shared Photo Library, AirPlay iPhone to TV, Android screen mirror, HDMI laptop to TV, Skylight digital frame, GroupMe messaging, Teleparty watch party, Perplexity AI, AI voice clone scam warning, unsubscribe from email, organize email folders, iPhone photo slideshow, Medicare drug price lookup, Vanguard app guide, iPhone driving mode, Android driving mode, deepfake detection, Apple TV Siri Remote, Google Photos albums, Windows Focus Sessions |
 | **Batch 29** | **20** | **2026-04-19** | Android battery health, slow phone fix, iPhone Emergency SOS satellite, Android Medical ID, delete Alexa voice history, text to 911, ChatGPT voice mode, AI meal planning, senior dating apps, Starbucks app, DocuSign guide, digital wallet loyalty cards, iPhone/Android notification settings, smart pill dispenser, Fetch Rewards, online notary, Ibotta savings, share location iPhone, iCloud storage management |
 | **Batch 30** | **20** | **2026-04-19** | Rakuten cashback, Honey coupons, CamelCamelCamel price tracker, GasBuddy, Ticketmaster mobile tickets, iPhone Live Photos, create QR code, Android RCS, screen record Android/Mac/Windows, iPhone voice message, Google Home routines, Alexa routines, Walmart+, Amazon Prime benefits, Samsung Galaxy tips, Mac Dock, Windows taskbar |
-| **Total** | **~1,675** | | |
+| **Batch 31** | **20** | **2026-04-19** | Back Tap, NameDrop, Sound Recognition, vehicle motion cues, screen distance, battery management, iPhone/Android hotspot, Android magnification, iPad Split View, Uber for seniors, AAA app, senior travel discounts, cruise booking, PocketGuard, GoodBudget, Spotify audiobooks, Windows Copilot, ChatGPT image analysis, Zoom virtual backgrounds |
+| **Total** | **~1,695** | | |
 
 ---
 
