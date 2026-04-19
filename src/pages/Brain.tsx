@@ -9,7 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { guides, categoryLabels } from '@/data/guides';
 import { supabase } from '@/integrations/supabase/client';
-import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
+import { Brain, Search, Sparkles, BookOpen, Clock, ChevronRight, Loader2, CheckCircle } from 'lucide-react';
 
 // Stop words to ignore when scoring
 const STOP_WORDS = new Set(['how', 'to', 'a', 'the', 'is', 'my', 'can', 'i', 'do', 'what', 'why', 'when', 'where', 'who', 'which', 'are', 'was', 'be', 'been', 'have', 'has', 'had', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'shall', 'not', 'no', 'on', 'in', 'at', 'by', 'for', 'with', 'about', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'if', 'then', 'that', 'this', 'it', 'its', 'of', 'or', 'and', 'but', 'so', 'yet', 'nor', 'get', 'set', 'use', 'using', 'make', 'need', 'want', 'help', 'me', 'you', 'your', 'my', 'our', 'their', 'an']);
@@ -85,18 +85,23 @@ function findRelevantGuides(query: string, count = 5) {
     .map(({ guide }) => guide);
 }
 
-async function queryBrainAPI(question: string, contextGuides: typeof guides): Promise<string | null> {
+async function queryBrainAPI(question: string): Promise<{
+  answer: string | null;
+  sources: Array<{ title: string; url: string; summary: string }>;
+  modelUsed: 'ollama' | 'claude' | 'none';
+  kbHits: number;
+} | null> {
   try {
-    const context = contextGuides.slice(0, 3).map(g =>
-      `GUIDE: ${g.title}\nURL: https://teksure.com/guides/${g.slug}\nSUMMARY: ${g.excerpt}\n${g.steps?.slice(0, 3).map(s => `- ${s.title}: ${s.content}`).join('\n') || ''}`
-    ).join('\n\n---\n\n');
-
     const { data, error } = await supabase.functions.invoke('brain-query', {
-      body: { question, context },
+      body: { question },
     });
-
-    if (error || !data?.answer) return null;
-    return data.answer;
+    if (error || !data) return null;
+    return {
+      answer:    data.answer ?? null,
+      sources:   Array.isArray(data.sources) ? data.sources : [],
+      modelUsed: data.model_used ?? 'none',
+      kbHits:    data.kb_hits ?? 0,
+    };
   } catch {
     return null;
   }
@@ -113,10 +118,19 @@ const SUGGESTED_QUESTIONS = [
   'How do I freeze my credit?',
 ];
 
+interface BrainSource {
+  title: string;
+  url: string;
+  summary: string;
+}
+
 interface SearchResult {
   query: string;
   guides: typeof guides;
   aiAnswer: string | null;
+  aiSources: BrainSource[];
+  modelUsed: 'ollama' | 'claude' | 'none';
+  kbHits: number;
   ollamaAvailable: boolean;
 }
 
@@ -139,14 +153,22 @@ export default function BrainPage() {
     setLoading(true);
     setQuery(q);
 
-    const matchedGuides = findRelevantGuides(q, 5);
-    let aiAnswer: string | null = null;
+    // Always ask the backend — it retrieves from the KB and falls back
+    // between Ollama and Claude automatically.
+    const [matchedGuides, brainRes] = await Promise.all([
+      Promise.resolve(findRelevantGuides(q, 5)),
+      queryBrainAPI(q),
+    ]);
 
-    if (ollamaStatus === 'online' && matchedGuides.length > 0) {
-      aiAnswer = await queryBrainAPI(q, matchedGuides);
-    }
-
-    setResult({ query: q, guides: matchedGuides, aiAnswer, ollamaAvailable: ollamaStatus === 'online' });
+    setResult({
+      query: q,
+      guides: matchedGuides,
+      aiAnswer:  brainRes?.answer ?? null,
+      aiSources: brainRes?.sources ?? [],
+      modelUsed: brainRes?.modelUsed ?? 'none',
+      kbHits:    brainRes?.kbHits ?? 0,
+      ollamaAvailable: brainRes?.modelUsed === 'ollama',
+    });
     setLoading(false);
   }
 
@@ -169,11 +191,11 @@ export default function BrainPage() {
             </p>
             <p className="text-xs text-muted-foreground mb-8 flex items-center justify-center gap-1">
               {ollamaStatus === 'online' ? (
-                <><CheckCircle className="h-3 w-3 text-green-500" /> Ollama connected — AI answers enabled</>
+                <><CheckCircle className="h-3 w-3 text-green-500" /> Local AI connected — answering from our knowledge base</>
               ) : ollamaStatus === 'offline' ? (
-                <><AlertCircle className="h-3 w-3 text-amber-500" /> Ollama not detected — using guide search only</>
+                <><CheckCircle className="h-3 w-3 text-green-500" /> AI answers ready — backed by our verified knowledge base</>
               ) : (
-                <><Loader2 className="h-3 w-3 animate-spin" /> Checking for local AI...</>
+                <><Loader2 className="h-3 w-3 animate-spin" /> Warming up AI...</>
               )}
             </p>
 
@@ -222,16 +244,43 @@ export default function BrainPage() {
 
           {result && !loading && (
             <div className="space-y-6">
-              {/* AI Answer (if Ollama available) */}
+              {/* AI Answer */}
               {result.aiAnswer && (
                 <Card className="border-primary/20 bg-primary/[0.03]">
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-3">
                       <Sparkles className="h-4 w-4 text-primary" />
                       <span className="text-sm font-semibold text-primary">AI Answer</span>
-                      <Badge variant="outline" className="text-xs ml-auto">Powered by Ollama</Badge>
+                      <Badge variant="outline" className="text-xs ml-auto">
+                        {result.modelUsed === 'ollama'
+                          ? 'Powered by Ollama'
+                          : result.modelUsed === 'claude'
+                            ? 'Powered by Claude'
+                            : 'AI'}
+                        {result.kbHits > 0 && ` · ${result.kbHits} source${result.kbHits === 1 ? '' : 's'}`}
+                      </Badge>
                     </div>
-                    <p className="text-sm leading-relaxed">{result.aiAnswer}</p>
+                    <p className="text-sm leading-relaxed mb-4 whitespace-pre-line">{result.aiAnswer}</p>
+                    {result.aiSources.length > 0 && (
+                      <div className="pt-3 border-t border-border/50">
+                        <p className="text-xs font-semibold text-muted-foreground mb-2">Sources</p>
+                        <ul className="space-y-1.5">
+                          {result.aiSources.map((src) => (
+                            <li key={src.url} className="text-xs">
+                              <a
+                                href={src.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary hover:underline"
+                              >
+                                {src.title}
+                              </a>
+                              {src.summary && <span className="text-muted-foreground"> — {src.summary}</span>}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               )}
@@ -299,29 +348,12 @@ export default function BrainPage() {
             </div>
           )}
 
-          {/* AI unavailable notice */}
-          {ollamaStatus === 'offline' && !result && (
-            <Card className="mt-8 border-amber-200/60 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20">
-              <CardContent className="p-5">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl shrink-0">🦙</span>
-                  <div>
-                    <h3 className="font-semibold text-sm mb-1">AI answers coming soon</h3>
-                    <p className="text-xs text-muted-foreground">
-                      The guide search below works great right now. AI-powered answers are being set up and will appear here automatically once ready.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
           {/* Info section */}
           <div className="mt-12 grid sm:grid-cols-3 gap-4 text-center">
             {[
-              { emoji: '🔒', title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
-              { emoji: '⚡', title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
-              { emoji: '🦙', title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
+              { emoji: '🔎', title: 'Verified knowledge', desc: 'AI answers draw only from our fact-checked knowledge base.' },
+              { emoji: '⚡', title: 'Instant results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
+              { emoji: '🦙', title: 'Private local AI', desc: 'When our hosted Ollama is online, answers stay on our server.' },
             ].map(item => (
               <div key={item.title} className="p-4 rounded-xl border border-border bg-muted/30">
                 <div className="text-2xl mb-2">{item.emoji}</div>
