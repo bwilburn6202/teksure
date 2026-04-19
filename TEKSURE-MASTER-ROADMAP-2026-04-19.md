@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 25** (304 guides added in batches 12-25, 2026-04-19) — total ~1,573 guides
-- Next: **Batch 26** → **Batch 27** → ... (no upper limit)
+- Last completed: **Batch 26** (326 guides added in batches 12-26, 2026-04-19) — total ~1,595 guides
+- Next: **Batch 27** → **Batch 28** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -104,7 +104,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 23** | **22** | **2026-04-19** | Face ID setup, Google Authenticator, Windows 11 Snap Layouts, iPhone Voice Memos, iPhone Control Center customize, video doorbell tips, Google Maps tips, Google Earth, change Wi-Fi password, ecobee thermostat setup, Apple Watch daily tips, Windows 11 new features, Google Photos people albums, email security best practices, Mac menu bar icons, Apple Notes tips, Windows auto update, Android system update, emergency contacts iPhone, choose smart speaker, Apple TV tips, iCloud Keychain |
 | **Batch 24** | **22** | **2026-04-19** | Samsung TV tips, Android split screen, USPS Informed Delivery, schedule Gmail, backup contacts Android, Windows Copilot, ChatGPT everyday guide, Sling TV setup, iPhone Live Text, AirTag vs Tile, best free apps seniors, Windows 11 Start Menu, cloud storage compare, Apple Watch fall detection, Android Digital Wellbeing, Hey Siri setup, Microsoft Edge tips, Gmail spam management, Outlook tips, transfer contacts, smart TV apps, iPad for seniors |
 | **Batch 25** | **22** | **2026-04-19** | Microsoft Authenticator setup, Echo Dot setup, Alexa daily tips, Shutterfly photo prints, PayPal guide, Medicare app, Facebook Marketplace buying safety, Craigslist safety, find free Wi-Fi, Senior Planet free classes, Google Assistant tips, Apple Cash setup, Android Find My Device, pharmacy app CVS/Walgreens, Apple Music family plan, Netflix household sharing, Windows Sticky Notes, add email to iPhone, Windows search guide, iPhone Health Records, Amazon Music guide |
-| **Total** | **~1,573** | | |
+| **Batch 26** | **22** | **2026-04-19** | Canva basics, FaceTime with Android via link, Discord basics, Reddit basics, YouTube captions, voice dictation iPhone/Android/Windows, Facebook Events, YouTube Shorts, manage iPhone/Android subscriptions, Google Slides basics, Shutterfly photo book, compare streaming costs, cancel Amazon Prime, iPhone crash detection, Android Emergency SOS, Medigap guide, phone plan comparison, Consumer Cellular guide |
+| **Total** | **~1,595** | | |
 
 ---
 
