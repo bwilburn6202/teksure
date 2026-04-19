@@ -10005,7 +10005,7 @@ const coreGuides: Guide[] = [
   // Source: Apple iCloud Advanced Data Protection (scraped)
   { slug: 'icloud-advanced-data-protection', title: 'How to Turn On iCloud Advanced Data Protection', excerpt: 'Encrypt almost all your iCloud data so only you can access it — not even Apple.', category: 'mac-guides', tags: ['icloud', 'encryption', 'privacy', 'apple'], readTime: '6 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Advanced', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
     { title: 'What it does', content: 'Advanced Data Protection encrypts the majority of your iCloud data — Backups, Photos, Notes, and more — with end-to-end encryption. Not even Apple can access your data.' },
-    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Ventura 13.1 or later (current: macOS Sequoia 15). You must set up at least one recovery method first.' },
+    { title: 'Requirements', content: 'You need two-factor authentication enabled, a device passcode or password, and iOS 16.2 or later (current: iOS 18) or macOS Sequoia 15 or later. You must set up at least one recovery method first.' },
     { title: 'Set up recovery', content: 'Before enabling, set up either a Recovery Contact (trusted person who can help you regain access) or a Recovery Key (a 28-character code you store securely). This is essential — if you lose access, Apple cannot help.' },
     { title: 'Enable on iPhone/iPad', content: 'Settings > tap your name > iCloud > scroll down > Advanced Data Protection > Turn on Advanced Data Protection. Follow the prompts to verify your recovery methods.' },
     { title: 'Enable on Mac', content: 'Apple Menu > System Settings > click your name > iCloud > Advanced Data Protection > Turn On. Follow the on-screen instructions.' },
@@ -13052,8 +13052,9 @@ import { guidesBatch7 } from './guides-batch-7';
 import { guidesBatch8 } from './guides-batch-8';
 import { guidesBatch9 } from './guides-batch-9';
 import { guidesBatch10 } from './guides-batch-10';
+import { guidesBatch11 } from './guides-batch-11';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

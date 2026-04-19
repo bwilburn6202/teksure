@@ -276,6 +276,42 @@ const scams: Scam[] = [
       'Report the scam text to the FTC at ReportFraud.ftc.gov and forward it to 7726 (SPAM)',
     ],
   },
+  // Social: "Scammers swapped out the link in their fake traffic violation texts — now they're using QR codes so filters can't catch them. Don't scan any QR code sent to you in a text."
+  // Newsletter: "The FTC confirmed a new twist on the traffic violation text scam: scammers now embed a QR code in an image of a fake 'official notice' to bypass spam filters. Scanning it opens a payment page that steals your card number. Never scan a QR code from an unexpected text message."
+  {
+    title: 'Traffic Violation QR Code Scam (April 2026)',
+    redFlags: [
+      'Text message includes an image of a fake "official court notice" with a state seal and a case number',
+      'Instead of a clickable link, the image contains a QR code to "pay your fine" — scammers use images to bypass spam filters',
+      'The fine is usually small — around $6.99 to $8.99 — designed to feel routine and low-stakes',
+      'Message uses urgent language: "final warning," "default judgment," or "enforcement action"',
+    ],
+    whatToDo: [
+      'Do NOT scan the QR code — it opens a fake payment page that steals your card number',
+      'If you think the fine might be real, go directly to your state\'s official court or DMV website — type the address yourself',
+      'Real traffic fines are mailed to you on paper, or show up when you log in to official government sites — never by text with a QR code',
+      'Report the text to the FTC at ReportFraud.ftc.gov and forward it to 7726 (SPAM)',
+      'If you already scanned the code and entered card information, call your bank immediately to report fraud',
+    ],
+  },
+  // Social: "Scammers are now calling people locked out of Windows 11 and offering to 'recover' their computer — for $300. Here's the safe, free fix."
+  // Newsletter: "Microsoft's April 2026 update (KB5083769) locked some Windows 11 users out with a BitLocker screen. Scammers are now cold-calling those people, pretending to offer free recovery and charging hundreds of dollars. The real fix is free — here's how to do it yourself."
+  {
+    title: 'Fake "Windows Recovery" Phone Scam (April 2026)',
+    redFlags: [
+      'Caller claims to know your computer is locked out after the recent Windows update — they got your number from public records or a data breach',
+      'They offer a "free recovery service" but ask for remote access to your computer or a one-time fee to fix it',
+      'Fees are often $150–$400, paid by gift card, wire transfer, or Zelle',
+      'They claim to be from "Microsoft Support," "Windows Technical Department," or a similar official-sounding name',
+    ],
+    whatToDo: [
+      'Hang up — Microsoft never calls you first, and the real BitLocker fix is completely free',
+      'The real fix: on another device, go to account.microsoft.com/devices/recoverykey, sign in, and find your 48-digit recovery key',
+      'Never give remote access to someone who calls you — not even if they claim to be from Microsoft',
+      'Microsoft\'s free official support is at support.microsoft.com or 1-800-642-7676',
+      'Report the call to the FTC at ReportFraud.ftc.gov',
+    ],
+  },
   // Social: "Scammers are using your real name and partial Social Security number to pretend they're from the government. Here's the new trick to watch for."
   // Newsletter: "The SSA impersonation scam just got scarier: callers now use stolen data (your real name, partial SSN) to make the threat feel real. The SSA will NEVER threaten you with arrest. Here's what to do."
   {

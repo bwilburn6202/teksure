@@ -99,6 +99,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 22,
+    title: 'Google Found 60 Security Holes in Chrome — Here\'s How to Make Sure Your Browser Is Protected',
+    summary: 'Google confirmed 60 newly discovered security vulnerabilities in Chrome this week, two of them rated "critical" — meaning they could allow an attacker to harm your computer or steal information while you browse. The fix is already available but only applies after you restart Chrome. To trigger it manually: click the three dots in the top-right corner of Chrome, select Help, then About Google Chrome. If an update is waiting, you will see a button to Relaunch — click it and your tabs will reopen exactly as they were, now protected. If you see "Google Chrome is up to date," you are already covered.',
+    category: 'security',
+    date: '2026-04-18',
+    icon: Monitor,
+    readTime: '2 min',
+    source: 'Google Chrome',
+    sourceUrl: 'https://chromereleases.googleblog.com',
+  },
+  {
+    id: 21,
+    title: 'Apple Is Sending Real Security Warnings Directly to iPhones — Here\'s What to Do',
+    summary: 'Apple has been pushing genuine lock-screen notifications to iPhones running older software, warning that hackers can attack your phone just by getting you to visit a compromised website — no clicking required. The vulnerability, known as DarkSword, affects devices running iOS 17 and earlier. If you see a "Critical Software" warning in your Settings app, it is a real Apple alert, not a scam. The fix is straightforward: go to Settings → General → Software Update and install the latest available update for your device. iPhone XR, 11, 12, and 13 owners should prioritize this — the update is free and takes about 10 minutes.',
+    category: 'security',
+    date: '2026-04-18',
+    icon: Smartphone,
+    readTime: '2 min',
+    source: 'Apple Support',
+    sourceUrl: 'https://support.apple.com',
+  },
+  {
     id: 20,
     title: 'FTC Alert: Fake Traffic Violation Texts Are Hitting Millions of Phones',
     summary: 'The FTC issued an urgent warning on April 14, 2026: scammers are sending fake text messages claiming recipients owe money for an unpaid traffic ticket, toll violation, or moving violation. The texts look official — they include case numbers and urgent payment deadlines — but the link leads to a page that steals your credit card number. Real government agencies never send payment links by text. If you receive one of these texts, delete it immediately and report it to the FTC at ReportFraud.ftc.gov. You can verify any real fine directly through your state\'s official DMV website.',

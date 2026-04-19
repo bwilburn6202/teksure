@@ -105,7 +105,7 @@ export const guidesBatch6: Guide[] = [
   {
     slug: 'what-is-osint-and-why-should-you-care',
     title: 'What Is OSINT? Why Your Public Information Matters',
-    excerpt: 'OSINT (Open Source Intelligence) is the practice of finding publicly available information about anyone. Here is what is out there about you and how to reduce it.',
+    excerpt: 'There is more public information about you online than you realize. Here is what OSINT means, what is out there, and how to reduce your exposure.',
     category: 'safety-guides',
     tags: ['osint', 'privacy', 'data brokers', 'digital footprint', 'personal information'],
     emoji: '🕵️',

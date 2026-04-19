@@ -3315,7 +3315,7 @@ A word of caution: QR codes can link to any website, including malicious ones. B
     difficulty: 'Beginner',
     body: `Software updates keep your phone secure, fix bugs, and sometimes add new features. Both Apple and Google release regular updates for their phones, and installing them is one of the most important things you can do to protect your device and your personal information.
 
-There are two types of updates: major updates (like going from iOS 17 to iOS 18, or Android 14 to Android 15) that come once a year and add big new features, and smaller updates (like iOS 17.4.1) that come more frequently and fix security issues and bugs. Both types are important.
+There are two types of updates: major updates (like going from iOS 18 to iOS 19, or Android 15 to Android 16) that come once a year and add big new features, and smaller updates (like iOS 18.4.1) that come more frequently and fix security issues and bugs. Both types are important.
 
 Before updating, make sure your phone is connected to WiFi (updates are large and can use a lot of mobile data), has at least 50 percent battery (or is plugged in), and has enough storage space (some updates need several gigabytes of free space).
 

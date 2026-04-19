@@ -28,6 +28,12 @@ const featuredTip: Tip & { full: string } = {
 
 const pastTips: Tip[] = [
   {
+    title: 'Update Chrome Right Now — Google Just Found 60 Security Holes',
+    summary: 'Google confirmed 60 newly discovered security vulnerabilities in Chrome this week, two of them serious. The fix is already out — but it only applies after you restart Chrome. Click the three dots in the top-right corner → Help → About Google Chrome, then click Relaunch.',
+    category: 'Security',
+    icon: RefreshCw,
+  },
+  {
     title: 'Got a Text About a Traffic Ticket? Delete It — It\'s a Scam',
     summary: 'The FTC issued a fresh warning: fake "unpaid traffic violation" texts are hitting millions of phones. Clicking the link leads to a page that steals your card number. Here\'s how to stay safe.',
     category: 'Safety',
