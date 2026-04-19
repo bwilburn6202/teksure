@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 22** (238 guides added in batches 12-22, 2026-04-19) — total ~1,507 guides
-- Next: **Batch 23** → **Batch 24** → ... (no upper limit)
+- Last completed: **Batch 23** (260 guides added in batches 12-23, 2026-04-19) — total ~1,529 guides
+- Next: **Batch 24** → **Batch 25** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -101,7 +101,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 20** | **22** | **2026-04-19** | OneDrive setup, Microsoft Copilot, Apple Calendar, Apple Wallet, Google Wallet, Find My Android, new Windows laptop setup, recover deleted files (Win+Mac), malware removal, Alexa Guard, iPhone/Android charging fix, free internet for seniors, block phone numbers, Samsung Pay, video calls on smart TV, iCloud Photos, Microsoft 365 intro, Google Photos auto-backup, AARP tech benefits, silence unknown callers |
 | **Batch 21** | **22** | **2026-04-19** | Recycle/donate old phone, iMessage vs SMS, Kindle Paperwhite setup, Wyze camera, video call lighting/audio tips, Amazon Music, Apple Books, Google Play Books, Apple Podcasts, iHeartRadio, Android vision accessibility, Jitterbug/Lively phone, internet speed test, fix slow internet, print photos at Walgreens/CVS, force restart iPhone, iPhone battery health, clear browser cache, force close frozen app, frozen Windows fix, photo collage, Amazon returns |
 | **Batch 22** | **22** | **2026-04-19** | Facebook Marketplace selling, AirPlay to TV, Android cast to TV, Google account privacy, Apple ID management, fax from phone, telehealth prep, health symptom tracker, Fitbit vs Apple Watch, Apple News, Google News, Google Alerts, iPhone home screen organize, autocorrect settings, soundbar setup, replace Medicare card, check Social Security benefits online, power of attorney, digital grocery coupons, Medicare Parts A/B/C/D explained |
-| **Total** | **~1,507** | | |
+| **Batch 23** | **22** | **2026-04-19** | Face ID setup, Google Authenticator, Windows 11 Snap Layouts, iPhone Voice Memos, iPhone Control Center customize, video doorbell tips, Google Maps tips, Google Earth, change Wi-Fi password, ecobee thermostat setup, Apple Watch daily tips, Windows 11 new features, Google Photos people albums, email security best practices, Mac menu bar icons, Apple Notes tips, Windows auto update, Android system update, emergency contacts iPhone, choose smart speaker, Apple TV tips, iCloud Keychain |
+| **Total** | **~1,529** | | |
 
 ---
 
