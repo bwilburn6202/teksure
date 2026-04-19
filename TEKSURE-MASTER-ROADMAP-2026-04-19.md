@@ -6,7 +6,7 @@
 > **Vision:** TekSure is America's free, plain-English technology resource — the single destination where any person can find an answer to any tech question, learn at their own pace, stay safe online, and get human help when they need it. Always free. No jargon. No walls.
 
 **Last updated:** 2026-04-19
-**Current state:** ~1,289 guides · 68+ tools · 19 categories · 161 routes
+**Current state:** ~1,353 guides · 68+ tools · 19 categories · 161 routes
 **Guide target:** 2,500 by end of 2026
 
 ---
@@ -42,7 +42,7 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 12** (20 guides, 2026-04-19)
+- Last completed: **Batch 15** (84 guides added in batches 12-15, 2026-04-19) — total ~1,353 guides
 - Next: **Batch 13** → **Batch 14** → ... (no upper limit)
 
 ### Guide format requirements
@@ -91,7 +91,10 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | Batch 11 | 5 | 2026-04-18 | Battery, BitLocker, Google account, Chrome security |
 | Spanish | 49 | 2026-04-18 | 50 Spanish-language guides |
 | **Batch 12** | **20** | **2026-04-19** | Apple Intelligence, WhatsApp scams, iPhone battery, voice cloning, WiFi passwords, printer, photo transfer, fake pop-ups, subscriptions, Google Photos, spam texts, 2FA, Windows 11 upgrade, Roku, iPhone accessibility, Facebook recovery, password managers, FaceTime, browser speed, iCloud backup |
-| **Total** | **~1,289** | | |
+| **Batch 13** | **24** | **2026-04-19** | Telehealth, Zoom, smart TV, Alexa, Apple Maps, Google Maps, SSA account, investment scams, MyChart, Bluetooth headphones, phone photography, sharing photos, imposter scams, recovery scams, Google Meet, Siri, Google Assistant, iPhone→TV, Apple Pay, Zelle, delete apps, FaceTime on iPad, scan documents, update apps |
+| **Batch 14** | **22** | **2026-04-19** | Venmo, caregiver tech help, dark mode, Ring doorbell, Nest thermostat, CarPlay, Android Auto, Alexa reminders, Chromecast, Windows/iPhone screenshots, GoodRx, Amazon Prime, Apple Watch+fall detection, Cash App, Google Home, iPhone Health app, Gmail, credit score, email attachments, Notes app, Magnifier |
+| **Batch 15** | **18** | **2026-04-19** | Windows Defender, Task Manager, Mac storage, Mac Spotlight, Time Machine, AirPods, iPad WiFi, Fire TV Stick, Echo Show, widgets (Android+iPhone), deleted photo recovery, medical alert systems, senior tech discounts, library e-books, mental health telehealth, retirement account, Apple TV |
+| **Total** | **~1,353** | | |
 
 ---
 
