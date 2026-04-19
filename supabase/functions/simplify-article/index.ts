@@ -541,6 +541,26 @@ serve(async (req) => {
 
     console.log(`[simplify-article] Saved slug="${slug}" verification=${guide.verification_status}`);
 
+    // ── 7. Bridge into the Brain's knowledge base ─────────────────────────────
+    // Fire-and-forget: a failure here must not fail the simplify step because
+    // the ingest-knowledge bulk cron picks up any missed rows.
+    try {
+      const ingestRes = await fetch(`${SUPABASE_URL}/functions/v1/ingest-knowledge`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${SUPABASE_SVC_KEY}`,
+          'Content-Type':  'application/json',
+        },
+        body: JSON.stringify({ simplified_article_id: (saved as { id: string }).id }),
+        signal: AbortSignal.timeout(15_000),
+      });
+      if (!ingestRes.ok) {
+        console.warn(`[simplify-article] ingest-knowledge returned ${ingestRes.status}`);
+      }
+    } catch (ingestErr) {
+      console.warn('[simplify-article] ingest-knowledge call failed (will retry on cron):', ingestErr);
+    }
+
     return json({
       success:            true,
       simplified_article: saved,
