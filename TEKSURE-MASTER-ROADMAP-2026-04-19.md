@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 31** (426 guides added in batches 12-31, 2026-04-19) — total ~1,695 guides
-- Next: **Batch 32** → **Batch 33** → ... (no upper limit)
+- Last completed: **Batch 32** (446 guides added in batches 12-32, 2026-04-19) — total ~1,715 guides
+- Next: **Batch 33** → **Batch 34** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -110,7 +110,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 29** | **20** | **2026-04-19** | Android battery health, slow phone fix, iPhone Emergency SOS satellite, Android Medical ID, delete Alexa voice history, text to 911, ChatGPT voice mode, AI meal planning, senior dating apps, Starbucks app, DocuSign guide, digital wallet loyalty cards, iPhone/Android notification settings, smart pill dispenser, Fetch Rewards, online notary, Ibotta savings, share location iPhone, iCloud storage management |
 | **Batch 30** | **20** | **2026-04-19** | Rakuten cashback, Honey coupons, CamelCamelCamel price tracker, GasBuddy, Ticketmaster mobile tickets, iPhone Live Photos, create QR code, Android RCS, screen record Android/Mac/Windows, iPhone voice message, Google Home routines, Alexa routines, Walmart+, Amazon Prime benefits, Samsung Galaxy tips, Mac Dock, Windows taskbar |
 | **Batch 31** | **20** | **2026-04-19** | Back Tap, NameDrop, Sound Recognition, vehicle motion cues, screen distance, battery management, iPhone/Android hotspot, Android magnification, iPad Split View, Uber for seniors, AAA app, senior travel discounts, cruise booking, PocketGuard, GoodBudget, Spotify audiobooks, Windows Copilot, ChatGPT image analysis, Zoom virtual backgrounds |
-| **Total** | **~1,695** | | |
+| **Batch 32** | **20** | **2026-04-19** | Medisafe medication reminders, SilverSneakers fitness, Life360 family location, Microsoft To Do, Grubhub, Amazon Fresh, VA.gov, spam call blocking iPhone/Android, Costco app, Target Circle, CVS ExtraCare, Walgreens myWalgreens, digital driver license, Apple TV+, Max streaming, Windows clipboard history, scan docs Android, iPhone satellite messaging |
+| **Total** | **~1,715** | | |
 
 ---
 
