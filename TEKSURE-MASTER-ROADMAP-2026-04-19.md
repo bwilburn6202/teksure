@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 20** (194 guides added in batches 12-20, 2026-04-19) — total ~1,463 guides
-- Next: **Batch 21** → **Batch 22** → ... (no upper limit)
+- Last completed: **Batch 21** (216 guides added in batches 12-21, 2026-04-19) — total ~1,485 guides
+- Next: **Batch 22** → **Batch 23** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -99,7 +99,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 18** | **22** | **2026-04-19** | Zoom backgrounds, undo sent email, restore iPhone, Samsung Health, Apple Fitness+, pill reminders, Paramount+, Apple One bundle, edit/crop photos, annotate screenshots, forward texts, set default apps, Android backup, Apple Shortcuts, Live Text, Android home screen, add TV apps, screen recorder, shared family calendar, Mac Split View, internet radio, Kindle library |
 | **Batch 19** | **22** | **2026-04-19** | Wireless charger setup, Tile tracker, suspicious login response, Venmo/Cash App scam, Android font size, phone captions, read PDF on phone, scan receipts, home inventory, digital emergency prep, MagSafe charging, Apple Watch ECG, doctor visit notes, phone translation, senior online discounts, Google Photos memories, Apple Maps share ETA, report scam to FTC/FBI, Windows night light, Mac Dock, password sharing, Siri hands-free |
 | **Batch 20** | **22** | **2026-04-19** | OneDrive setup, Microsoft Copilot, Apple Calendar, Apple Wallet, Google Wallet, Find My Android, new Windows laptop setup, recover deleted files (Win+Mac), malware removal, Alexa Guard, iPhone/Android charging fix, free internet for seniors, block phone numbers, Samsung Pay, video calls on smart TV, iCloud Photos, Microsoft 365 intro, Google Photos auto-backup, AARP tech benefits, silence unknown callers |
-| **Total** | **~1,463** | | |
+| **Batch 21** | **22** | **2026-04-19** | Recycle/donate old phone, iMessage vs SMS, Kindle Paperwhite setup, Wyze camera, video call lighting/audio tips, Amazon Music, Apple Books, Google Play Books, Apple Podcasts, iHeartRadio, Android vision accessibility, Jitterbug/Lively phone, internet speed test, fix slow internet, print photos at Walgreens/CVS, force restart iPhone, iPhone battery health, clear browser cache, force close frozen app, frozen Windows fix, photo collage, Amazon returns |
+| **Total** | **~1,485** | | |
 
 ---
 
