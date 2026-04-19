@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 18** (150 guides added in batches 12-18, 2026-04-19) — total ~1,419 guides
-- Next: **Batch 19** → **Batch 20** → ... (no upper limit)
+- Last completed: **Batch 19** (172 guides added in batches 12-19, 2026-04-19) — total ~1,441 guides
+- Next: **Batch 20** → **Batch 21** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -97,7 +97,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 16** | **22** | **2026-04-19** | Pig-butchering scam, eBay safety, multi-place photo backup, device charging safety, Netflix parental controls, Skype video calls, home Wi-Fi security, cast YouTube to TV, wet phone emergency, switch carriers, backup contacts, read phone bill, Max/HBO, YouTube TV, family location sharing, smart door lock, Google Photos albums, Amazon Photos, AI voice call scam, senior phone plan savings, Windows 11 Start Menu, Mac accessibility |
 | **Batch 17** | **22** | **2026-04-19** | Wi-Fi calling, Google One storage, hacked social media recovery, Alexa shopping list, Amazon order tracking, 5G explained, erase phone before selling, refurbished phones, TV remote app, group FaceTime, offline maps, iPhone camera modes, digital photo frame, lock screen security, emergency weather alerts, caregiver tech monitoring, smart home routines, night mode camera, find lost AirPods, Gmail inbox, Facebook data download |
 | **Batch 18** | **22** | **2026-04-19** | Zoom backgrounds, undo sent email, restore iPhone, Samsung Health, Apple Fitness+, pill reminders, Paramount+, Apple One bundle, edit/crop photos, annotate screenshots, forward texts, set default apps, Android backup, Apple Shortcuts, Live Text, Android home screen, add TV apps, screen recorder, shared family calendar, Mac Split View, internet radio, Kindle library |
-| **Total** | **~1,419** | | |
+| **Batch 19** | **22** | **2026-04-19** | Wireless charger setup, Tile tracker, suspicious login response, Venmo/Cash App scam, Android font size, phone captions, read PDF on phone, scan receipts, home inventory, digital emergency prep, MagSafe charging, Apple Watch ECG, doctor visit notes, phone translation, senior online discounts, Google Photos memories, Apple Maps share ETA, report scam to FTC/FBI, Windows night light, Mac Dock, password sharing, Siri hands-free |
+| **Total** | **~1,441** | | |
 
 ---
 
