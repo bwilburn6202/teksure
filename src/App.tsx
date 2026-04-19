@@ -205,8 +205,6 @@ const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics
 const ErrorDecoderTool       = lazy(() => import("./pages/tools/ErrorDecoder"));
 const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
 const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
-const PhonePlanComparator    = lazy(() => import("./pages/tools/PhonePlanComparator"));
-const RobocallBlocker        = lazy(() => import("./pages/tools/RobocallBlocker"));
 const PasswordLeakChecker    = lazy(() => import("./pages/tools/PasswordLeakChecker"));
 const SubscriptionAuditor    = lazy(() => import("./pages/tools/SubscriptionAuditor"));
 const PrivacyHub             = lazy(() => import("./pages/PrivacyHub"));
@@ -229,6 +227,30 @@ const PasswordPhraseGenerator = lazy(() => import("./pages/tools/PasswordPhraseG
 const DigitalWillTemplate    = lazy(() => import("./pages/tools/DigitalWillTemplate"));
 const WifiCoveragePlanner    = lazy(() => import("./pages/tools/WifiCoveragePlanner"));
 const StorageOptimizer       = lazy(() => import("./pages/tools/StorageOptimizer"));
+// ── Round 4 hubs ──
+const SmallBusinessTechHub   = lazy(() => import("./pages/SmallBusinessTechHub"));
+const AiLiteracyHub          = lazy(() => import("./pages/AiLiteracyHub"));
+const PasskeyHub             = lazy(() => import("./pages/PasskeyHub"));
+const DeepfakeDefenseHub     = lazy(() => import("./pages/DeepfakeDefenseHub"));
+const EslTechHub             = lazy(() => import("./pages/EslTechHub"));
+const RuralTechHub           = lazy(() => import("./pages/RuralTechHub"));
+const DivorceTechHub         = lazy(() => import("./pages/DivorceTechHub"));
+const WidowhoodTechHub       = lazy(() => import("./pages/WidowhoodTechHub"));
+const JobSearchTechHub       = lazy(() => import("./pages/JobSearchTechHub"));
+const DementiaCareTech       = lazy(() => import("./pages/DementiaCareTech"));
+const BereavementTech        = lazy(() => import("./pages/BereavementTech"));
+const EmptyNestTech          = lazy(() => import("./pages/EmptyNestTech"));
+const FirstApartmentTech     = lazy(() => import("./pages/FirstApartmentTech"));
+// ── Round 4 tools ──
+const PlainEnglishTranslator = lazy(() => import("./pages/tools/PlainEnglishTranslator"));
+const AccessibilityProfileBuilder = lazy(() => import("./pages/tools/AccessibilityProfileBuilder"));
+const TechSetupCostEstimator = lazy(() => import("./pages/tools/TechSetupCostEstimator"));
+const WifiQrGenerator        = lazy(() => import("./pages/tools/WifiQrGenerator"));
+const EmailWriterHelper      = lazy(() => import("./pages/tools/EmailWriterHelper"));
+const CreditReportReader     = lazy(() => import("./pages/tools/CreditReportReader"));
+const EobDecoder             = lazy(() => import("./pages/tools/EobDecoder"));
+const ReceiptScannerDemo     = lazy(() => import("./pages/tools/ReceiptScannerDemo"));
+const ChildAppSafetyChecker  = lazy(() => import("./pages/tools/ChildAppSafetyChecker"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -481,6 +503,31 @@ const AppContent = () => {
           <Route path="/tools/digital-will-template" element={<DigitalWillTemplate />} />
           <Route path="/tools/wifi-coverage-planner" element={<WifiCoveragePlanner />} />
           <Route path="/tools/storage-optimizer" element={<StorageOptimizer />} />
+          {/* Round 4 hubs */}
+          <Route path="/small-business-tech-hub" element={<SmallBusinessTechHub />} />
+          <Route path="/ai-literacy-hub" element={<AiLiteracyHub />} />
+          <Route path="/passkey-hub" element={<PasskeyHub />} />
+          <Route path="/deepfake-defense-hub" element={<DeepfakeDefenseHub />} />
+          <Route path="/esl-tech-hub" element={<EslTechHub />} />
+          <Route path="/rural-tech-hub" element={<RuralTechHub />} />
+          <Route path="/divorce-tech-hub" element={<DivorceTechHub />} />
+          <Route path="/widowhood-tech-hub" element={<WidowhoodTechHub />} />
+          <Route path="/job-search-tech-hub" element={<JobSearchTechHub />} />
+          <Route path="/dementia-care-tech" element={<DementiaCareTech />} />
+          <Route path="/bereavement-tech" element={<BereavementTech />} />
+          <Route path="/empty-nest-tech" element={<EmptyNestTech />} />
+          <Route path="/first-apartment-tech" element={<FirstApartmentTech />} />
+          {/* Round 4 tools */}
+          <Route path="/tools/plain-english-translator" element={<PlainEnglishTranslator />} />
+          <Route path="/tools/bill-decoder" element={<BillDecoder />} />
+          <Route path="/tools/accessibility-profile-builder" element={<AccessibilityProfileBuilder />} />
+          <Route path="/tools/tech-setup-cost-estimator" element={<TechSetupCostEstimator />} />
+          <Route path="/tools/wifi-qr-generator" element={<WifiQrGenerator />} />
+          <Route path="/tools/email-writer-helper" element={<EmailWriterHelper />} />
+          <Route path="/tools/credit-report-reader" element={<CreditReportReader />} />
+          <Route path="/tools/eob-decoder" element={<EobDecoder />} />
+          <Route path="/tools/receipt-scanner-demo" element={<ReceiptScannerDemo />} />
+          <Route path="/tools/child-app-safety-checker" element={<ChildAppSafetyChecker />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
@@ -492,7 +539,6 @@ const AppContent = () => {
           <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
           <Route path="/tools/safe-call" element={<SafeCall />} />
-          <Route path="/tools/bill-decoder" element={<BillDecoder />} />
 
           {/* ── New tools (April 2026 expansion) ── */}
           <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
