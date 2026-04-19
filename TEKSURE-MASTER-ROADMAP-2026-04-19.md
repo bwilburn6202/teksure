@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 32** (446 guides added in batches 12-32, 2026-04-19) — total ~1,715 guides
-- Next: **Batch 33** → **Batch 34** → ... (no upper limit)
+- Last completed: **Batch 33** (466 guides added in batches 12-33, 2026-04-19) — total ~1,735 guides
+- Next: **Batch 34** → **Batch 35** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -111,7 +111,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 30** | **20** | **2026-04-19** | Rakuten cashback, Honey coupons, CamelCamelCamel price tracker, GasBuddy, Ticketmaster mobile tickets, iPhone Live Photos, create QR code, Android RCS, screen record Android/Mac/Windows, iPhone voice message, Google Home routines, Alexa routines, Walmart+, Amazon Prime benefits, Samsung Galaxy tips, Mac Dock, Windows taskbar |
 | **Batch 31** | **20** | **2026-04-19** | Back Tap, NameDrop, Sound Recognition, vehicle motion cues, screen distance, battery management, iPhone/Android hotspot, Android magnification, iPad Split View, Uber for seniors, AAA app, senior travel discounts, cruise booking, PocketGuard, GoodBudget, Spotify audiobooks, Windows Copilot, ChatGPT image analysis, Zoom virtual backgrounds |
 | **Batch 32** | **20** | **2026-04-19** | Medisafe medication reminders, SilverSneakers fitness, Life360 family location, Microsoft To Do, Grubhub, Amazon Fresh, VA.gov, spam call blocking iPhone/Android, Costco app, Target Circle, CVS ExtraCare, Walgreens myWalgreens, digital driver license, Apple TV+, Max streaming, Windows clipboard history, scan docs Android, iPhone satellite messaging |
-| **Total** | **~1,715** | | |
+| **Batch 33** | **20** | **2026-04-19** | Vizio SmartCast, Google TV setup, iPhone StandBy mode, lock screen customize, Control Center customize, Dynamic Island, iPhone Translate, Android translate, Chrome tips, Google Home setup, Windows 11 widgets, Mac Notification Center, Chrome profiles, CGM diabetes guide, Apple Watch setup, Wear OS smartwatch, iMessage games, AirDrop tips, Bixby Samsung, Windows 11 battery saver |
+| **Total** | **~1,735** | | |
 
 ---
 
