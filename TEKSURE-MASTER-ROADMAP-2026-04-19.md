@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 16** (106 guides added in batches 12-16, 2026-04-19) — total ~1,375 guides
-- Next: **Batch 17** → **Batch 18** → ... (no upper limit)
+- Last completed: **Batch 17** (128 guides added in batches 12-17, 2026-04-19) — total ~1,397 guides
+- Next: **Batch 18** → **Batch 19** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -95,7 +95,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 14** | **22** | **2026-04-19** | Venmo, caregiver tech help, dark mode, Ring doorbell, Nest thermostat, CarPlay, Android Auto, Alexa reminders, Chromecast, Windows/iPhone screenshots, GoodRx, Amazon Prime, Apple Watch+fall detection, Cash App, Google Home, iPhone Health app, Gmail, credit score, email attachments, Notes app, Magnifier |
 | **Batch 15** | **18** | **2026-04-19** | Windows Defender, Task Manager, Mac storage, Mac Spotlight, Time Machine, AirPods, iPad WiFi, Fire TV Stick, Echo Show, widgets (Android+iPhone), deleted photo recovery, medical alert systems, senior tech discounts, library e-books, mental health telehealth, retirement account, Apple TV |
 | **Batch 16** | **22** | **2026-04-19** | Pig-butchering scam, eBay safety, multi-place photo backup, device charging safety, Netflix parental controls, Skype video calls, home Wi-Fi security, cast YouTube to TV, wet phone emergency, switch carriers, backup contacts, read phone bill, Max/HBO, YouTube TV, family location sharing, smart door lock, Google Photos albums, Amazon Photos, AI voice call scam, senior phone plan savings, Windows 11 Start Menu, Mac accessibility |
-| **Total** | **~1,375** | | |
+| **Batch 17** | **22** | **2026-04-19** | Wi-Fi calling, Google One storage, hacked social media recovery, Alexa shopping list, Amazon order tracking, 5G explained, erase phone before selling, refurbished phones, TV remote app, group FaceTime, offline maps, iPhone camera modes, digital photo frame, lock screen security, emergency weather alerts, caregiver tech monitoring, smart home routines, night mode camera, find lost AirPods, Gmail inbox, Facebook data download |
+| **Total** | **~1,397** | | |
 
 ---
 
