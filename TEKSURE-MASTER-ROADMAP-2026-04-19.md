@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 23** (260 guides added in batches 12-23, 2026-04-19) — total ~1,529 guides
-- Next: **Batch 24** → **Batch 25** → ... (no upper limit)
+- Last completed: **Batch 24** (282 guides added in batches 12-24, 2026-04-19) — total ~1,551 guides
+- Next: **Batch 25** → **Batch 26** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -102,7 +102,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 21** | **22** | **2026-04-19** | Recycle/donate old phone, iMessage vs SMS, Kindle Paperwhite setup, Wyze camera, video call lighting/audio tips, Amazon Music, Apple Books, Google Play Books, Apple Podcasts, iHeartRadio, Android vision accessibility, Jitterbug/Lively phone, internet speed test, fix slow internet, print photos at Walgreens/CVS, force restart iPhone, iPhone battery health, clear browser cache, force close frozen app, frozen Windows fix, photo collage, Amazon returns |
 | **Batch 22** | **22** | **2026-04-19** | Facebook Marketplace selling, AirPlay to TV, Android cast to TV, Google account privacy, Apple ID management, fax from phone, telehealth prep, health symptom tracker, Fitbit vs Apple Watch, Apple News, Google News, Google Alerts, iPhone home screen organize, autocorrect settings, soundbar setup, replace Medicare card, check Social Security benefits online, power of attorney, digital grocery coupons, Medicare Parts A/B/C/D explained |
 | **Batch 23** | **22** | **2026-04-19** | Face ID setup, Google Authenticator, Windows 11 Snap Layouts, iPhone Voice Memos, iPhone Control Center customize, video doorbell tips, Google Maps tips, Google Earth, change Wi-Fi password, ecobee thermostat setup, Apple Watch daily tips, Windows 11 new features, Google Photos people albums, email security best practices, Mac menu bar icons, Apple Notes tips, Windows auto update, Android system update, emergency contacts iPhone, choose smart speaker, Apple TV tips, iCloud Keychain |
-| **Total** | **~1,529** | | |
+| **Batch 24** | **22** | **2026-04-19** | Samsung TV tips, Android split screen, USPS Informed Delivery, schedule Gmail, backup contacts Android, Windows Copilot, ChatGPT everyday guide, Sling TV setup, iPhone Live Text, AirTag vs Tile, best free apps seniors, Windows 11 Start Menu, cloud storage compare, Apple Watch fall detection, Android Digital Wellbeing, Hey Siri setup, Microsoft Edge tips, Gmail spam management, Outlook tips, transfer contacts, smart TV apps, iPad for seniors |
+| **Total** | **~1,551** | | |
 
 ---
 
