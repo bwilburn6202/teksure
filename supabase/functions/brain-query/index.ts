@@ -35,6 +35,7 @@ const SUPABASE_SVC_KEY   = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
 const ANTHROPIC_API_KEY  = Deno.env.get('ANTHROPIC_API_KEY');
 const OLLAMA_BASE_URL    = Deno.env.get('OLLAMA_BASE_URL');
 const OLLAMA_MODEL       = Deno.env.get('OLLAMA_MODEL') ?? 'llama3.2:1b';
+const EMBED_MODEL        = Deno.env.get('OLLAMA_EMBED_MODEL') ?? 'nomic-embed-text';
 
 const CLAUDE_MODEL = 'claude-haiku-4-5-20251001';
 
@@ -53,13 +54,15 @@ interface KnowledgeHit {
   summary:    string;
   markdown:   string;
   keywords:   string[];
-  rank:       number;
+  rank?:      number;      // tsquery
+  similarity?: number;     // vector cosine similarity
 }
 
 interface BrainResponse {
   answer:       string;
   sources:      Array<{ title: string; url: string; summary: string }>;
   model_used:   'ollama' | 'claude' | 'none';
+  search_mode:  'vector' | 'tsquery' | 'none';
   kb_hits:      number;
 }
 
@@ -125,6 +128,31 @@ async function callOllama(prompt: string): Promise<string | null> {
   }
 }
 
+/**
+ * Embed a user's question via Ollama's nomic-embed-text. Returns null if
+ * Ollama isn't configured or the call fails — brain-query then falls back
+ * to full-text search.
+ */
+async function embedQuestion(text: string): Promise<number[] | null> {
+  if (!OLLAMA_BASE_URL) return null;
+  try {
+    const res = await fetch(`${OLLAMA_BASE_URL}/api/embeddings`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal:  AbortSignal.timeout(10_000),
+      body:    JSON.stringify({ model: EMBED_MODEL, prompt: text }),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const vec = data.embedding;
+    if (!Array.isArray(vec) || vec.length === 0) return null;
+    return vec as number[];
+  } catch (err) {
+    console.warn('[brain-query] embed call failed:', err);
+    return null;
+  }
+}
+
 async function callClaude(prompt: string): Promise<string | null> {
   if (!ANTHROPIC_API_KEY) return null;
   try {
@@ -170,17 +198,44 @@ serve(async (req) => {
     }
 
     // ── 1. Retrieve from knowledge base (unless client provided explicit context) ──
+    // Preference order:
+    //   a) Vector similarity — only if Ollama + an embedding model are live
+    //      and the query embedding succeeds. Best semantic match.
+    //   b) Postgres full-text (tsquery) — always available after the base
+    //      migrations run. Works without Ollama.
     let hits: KnowledgeHit[] = [];
+    let searchMode: BrainResponse['search_mode'] = 'none';
+
     if (!clientContext) {
       const supabase = createClient(SUPABASE_URL, SUPABASE_SVC_KEY);
-      const { data, error } = await supabase.rpc('search_knowledge_documents', {
-        q: question,
-        k: TOP_K,
-      });
-      if (error) {
-        console.warn('[brain-query] KB search failed:', error.message);
-      } else {
-        hits = (data ?? []) as KnowledgeHit[];
+
+      // a) Try vector search
+      const queryVec = await embedQuestion(question);
+      if (queryVec) {
+        const { data, error } = await supabase.rpc('search_knowledge_documents_vector', {
+          query_embedding: queryVec as unknown as string,
+          k:               TOP_K,
+        });
+        if (error) {
+          console.warn('[brain-query] vector search failed:', error.message);
+        } else if ((data ?? []).length > 0) {
+          hits = data as KnowledgeHit[];
+          searchMode = 'vector';
+        }
+      }
+
+      // b) Fall back to tsquery if vector returned nothing or wasn't attempted
+      if (hits.length === 0) {
+        const { data, error } = await supabase.rpc('search_knowledge_documents', {
+          q: question,
+          k: TOP_K,
+        });
+        if (error) {
+          console.warn('[brain-query] tsquery search failed:', error.message);
+        } else {
+          hits = (data ?? []) as KnowledgeHit[];
+          if (hits.length > 0) searchMode = 'tsquery';
+        }
       }
     }
 
@@ -201,10 +256,11 @@ serve(async (req) => {
 
     if (!answer) {
       return json({
-        answer:     "I can't reach the AI service right now. Please try again soon.",
-        sources:    [],
-        model_used: 'none',
-        kb_hits:    hits.length,
+        answer:      "I can't reach the AI service right now. Please try again soon.",
+        sources:     [],
+        model_used:  'none',
+        search_mode: searchMode,
+        kb_hits:     hits.length,
       } satisfies BrainResponse);
     }
 
@@ -218,8 +274,9 @@ serve(async (req) => {
     return json({
       answer,
       sources,
-      model_used: modelUsed,
-      kb_hits:    hits.length,
+      model_used:  modelUsed,
+      search_mode: searchMode,
+      kb_hits:     hits.length,
     } satisfies BrainResponse);
 
   } catch (err) {
