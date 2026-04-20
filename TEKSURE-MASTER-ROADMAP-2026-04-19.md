@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 95** (20 guides, 2026-04-20) — total ~2,980 guides
-- Next: **Batch 96** → **Batch 97** → ... (no upper limit)
+- Last completed: **Batch 97** (20 guides, 2026-04-20) — total ~3,020 guides
+- Next: **Batch 98** → **Batch 99** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -174,7 +174,9 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 93** | **20** | **2026-04-20** | Word Online, Excel Online, PowerPoint Online, Outlook setup, Clipchamp, Snipping Tool, Microsoft Designer AI, scan old photos, Google PhotoScan, VHS digitizing, best tablets for seniors, Chromebook buying, iPad vs Android tablet, 5G home internet, Starlink setup, T-Mobile Home Internet, fiber internet, tech gifts for seniors, refurbished laptop, Windows vs Mac |
 | **Batch 94** | **20** | **2026-04-20** | Dark web explained, dark web monitoring, data broker removal, private browsing, Google activity controls, online banking setup, mobile check deposit, bank app security, bill pay, reading tech specs, TV buying, printer buying, router buying, RAM explained, SSD vs HDD, screen resolution, slow computer fix, WiFi drops fix, phone won't charge, home office setup |
 | **Batch 95** | **20** | **2026-04-20** | Remote Desktop, work VPN, home office ergonomics, Toggl time tracking, Focusmate, routing numbers, wire transfers, FDIC insurance, bank statements, CPU explained, operating systems, cloud computing, bandwidth/Mbps, phishing link check, email spoofing, Authy 2FA, app crash fix, printer offline fix, Bluetooth pairing fix, computer won't start |
-| **Total** | **~2,980** | | |
+| **Batch 96** | **20** | **2026-04-20** | Battery health, fast charging, USB-C ports, HDMI vs DisplayPort, free credit report, credit freeze, fraud alert, contactless payment setup, power bank buying, laptop buying, phone buying, iPhone↔Android switch, new computer checklist, move files, 3-2-1 backup, email sync fix, texts not sending, file organization, desktop cleanup |
+| **Batch 97** | **20** | **2026-04-20** | Nest thermostat, ecobee, MyQ garage, Nest Protect, water leak sensors, Instagram Close Friends, Bluesky, Mastodon, TikTok Live, AI meal plan, AI greeting cards, AI travel itinerary, AI resume, AI bedtime stories, public WiFi safety, social media privacy checkup, delete old accounts, 5G vs WiFi, QR code safety, 2FA methods compared |
+| **Total** | **~3,020** | | |
 
 ---
 
