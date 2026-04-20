@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 76** (20 guides, 2026-04-20) — total ~2,600 guides
-- Next: **Batch 77** → **Batch 78** → ... (no upper limit)
+- Last completed: **Batch 77** (20 guides, 2026-04-20) — total ~2,620 guides
+- Next: **Batch 78** → **Batch 79** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -155,7 +155,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 74** | **20** | **2026-04-20** | Chatbooks photo books, Mixbook, Blue Apron, absentee ballot, voter registration online, Petfinder adoption, Noom weight loss, Lose It! tracker, Tasty recipe app, Google Fi, TracFone, Asurion insurance, Chase mobile, Bank of America app, Wells Fargo app, Google Voice, Visible by Verizon, Xfinity Mobile, AT&T senior plans, mail-in ballot |
 | **Batch 75** | **20** | **2026-04-20** | C25K running app, Peloton App, ClassPass, Fitbod, Day One journal, email unsubscribe, Yahoo Mail tips, HDMI ARC soundbar, indoor TV antenna, Kanopy free movies, Crackle streaming, YouTube free movies, Thumbtack, Rover pet sitters, DoorDash Dasher, Amazon Flex, Strava, 7-Minute Workout, senior fitness apps, Sworkit |
 | **Batch 76** | **20** | **2026-04-20** | Acorn TV, BritBox, CuriosityStream, Shudder horror, Movies Anywhere, Vudu free movies, Frndly TV, MasterClass, Skillshare, Udemy, Wondrium, Codecademy, Google Career Certificates, Microsoft Learn, WordPress, Squarespace, Wix, Google Sites, Linktree, Carrd |
-| **Total** | **~2,600** | | |
+| **Batch 77** | **20** | **2026-04-20** | Policygenius, Lemonade renters insurance, Allstate app, GEICO app, Progressive app, State Farm app, Medicare Advantage explained, SSDI application, CHIP program, Medicaid enrollment, COBRA, health open enrollment, Twitch, Discord voice chat, Reddit beginners, Trello, Todoist, TickTick, Asana personal, Microsoft To Do tips |
+| **Total** | **~2,620** | | |
 
 ---
 
