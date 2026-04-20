@@ -38,8 +38,8 @@ export const guidesBatch6: Guide[] = [
       { title: 'Understand what Google operators do', description: 'Google has special commands that narrow your search. For example, "site:example.com" only shows results from that website, and "filetype:pdf" only shows PDF files. These are called "operators."' },
       { title: 'Try a basic dork', description: 'Go to Google and search: site:linkedin.com "Your Name" — this shows all LinkedIn pages mentioning your name. Replace "Your Name" with your actual name in quotes.' },
       { title: 'Check if your personal documents are exposed', description: 'Search: "your full name" filetype:pdf — this finds any PDF documents on the internet that contain your name. You might find resumes, public records, or documents you forgot about.' },
-      { title: 'Use TekSure\'s Google Dork Generator', description: 'Visit teksure.com/tools/google-dork-generator for an easy-to-use tool that builds these advanced search queries for you — no memorization needed.' },
-      { title: 'Remove exposed information', description: 'If you find personal information you want removed, contact the website owner directly. For Google search results, use Google\'s removal request tool at google.com/webmasters/tools/removals.' },
+      { title: `Use TekSure's Google Dork Generator`, description: 'Visit teksure.com/tools/google-dork-generator for an easy-to-use tool that builds these advanced search queries for you — no memorization needed.' },
+      { title: 'Remove exposed information', description: `If you find personal information you want removed, contact the website owner directly. For Google search results, use Google's removal request tool at google.com/webmasters/tools/removals.` },
     ],
   },
   {
@@ -94,7 +94,7 @@ export const guidesBatch6: Guide[] = [
     publishedAt: '2026-04-15',
     body: `You received a notification that your data was exposed in a breach. Do not panic — but do act quickly. The first 24-48 hours are critical for preventing identity theft and account takeover.\n\n**The most important steps are:** change your passwords, freeze your credit, and watch for phishing emails that exploit the breach.`,
     steps: [
-      { title: 'Change the password on the breached account immediately', description: 'Go directly to the breached company\'s website (do NOT click links in the breach notification email). Change your password to something new and unique — at least 12 characters long.' },
+      { title: 'Change the password on the breached account immediately', description: `Go directly to the breached company's website (do NOT click links in the breach notification email). Change your password to something new and unique — at least 12 characters long.` },
       { title: 'Change that password everywhere else you used it', description: 'If you used the same password on any other account, change those too — right now. This is the #1 way hackers exploit breaches: they try your leaked password on other sites.' },
       { title: 'Enable two-factor authentication', description: 'Turn on 2FA on your email account first (it controls all your other accounts), then on banking, social media, and shopping sites. Use an authenticator app over SMS if possible.' },
       { title: 'Freeze your credit at all three bureaus', description: 'Visit equifax.com/personal/credit-report-services/credit-freeze/, experian.com/freeze/, and transunion.com/credit-freeze. A credit freeze is free and prevents anyone from opening new accounts in your name.' },
@@ -119,7 +119,7 @@ export const guidesBatch6: Guide[] = [
       { title: 'Understand your digital footprint', description: 'Every social media post, online review, forum comment, and photo you have ever shared contributes to your digital footprint. Even "deleted" content can persist in caches and archives.' },
       { title: 'Remove yourself from data brokers', description: 'Most data broker sites have opt-out pages. Visit each one and submit a removal request. This is time-consuming but effective. Services like DeleteMe (joindeleteme.com) automate this for a fee.' },
       { title: 'Tighten your social media privacy settings', description: 'On Facebook: Settings → Privacy. On Instagram: Settings → Privacy → Private Account. On LinkedIn: Settings → Visibility. Set everything to "Friends only" or the most restrictive option.' },
-      { title: 'Use TekSure\'s OSINT tools to audit your exposure', description: 'Visit teksure.com/tools/security-osint for our full directory of OSINT tools organized by category. Use them to understand what is publicly available about you — then take steps to reduce it.' },
+      { title: `Use TekSure's OSINT tools to audit your exposure`, description: 'Visit teksure.com/tools/security-osint for our full directory of OSINT tools organized by category. Use them to understand what is publicly available about you — then take steps to reduce it.' },
     ],
   },
   {
@@ -134,7 +134,7 @@ export const guidesBatch6: Guide[] = [
     publishedAt: '2026-04-15',
     body: `Fake news is not new, but artificial intelligence has made it much harder to spot. AI can now generate realistic photos of people who do not exist, write convincing fake articles, and even create video deepfakes of real people saying things they never said.\n\n**The good news:** There are clear patterns and tools that help you identify fake content. Once you know what to look for, it gets much easier.`,
     steps: [
-      { title: 'Check the source before reading', description: 'Before you read an article, look at WHO published it. Is it a known news organization (AP, Reuters, your local newspaper) or a site you have never heard of? Check mediabiasfactcheck.com for the source\'s reliability rating.' },
+      { title: 'Check the source before reading', description: `Before you read an article, look at WHO published it. Is it a known news organization (AP, Reuters, your local newspaper) or a site you have never heard of? Check mediabiasfactcheck.com for the source's reliability rating.` },
       { title: 'Read past the headline', description: 'Fake news relies on people sharing based on the headline alone. Read the full article. Does the body actually support what the headline claims? Often it does not.' },
       { title: 'Look for signs of AI-generated images', description: 'AI-generated faces often have: asymmetric earrings, blurred backgrounds near the face, strange teeth or hair patterns, and warped text in the background. Zoom in on details.' },
       { title: 'Reverse image search suspicious photos', description: 'Upload any suspicious image to images.google.com (camera icon) or tineye.com. If the photo is from a different event, location, or time period, the story is misleading.' },

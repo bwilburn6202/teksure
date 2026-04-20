@@ -6,7 +6,7 @@ export const guidesBatch7: Guide[] = [
   {
     slug: 'what-is-a-chromebook',
     title: 'What Is a Chromebook and Is It Right for You?',
-    excerpt: 'Chromebooks are affordable laptops that run Google\'s operating system — great for browsing, email, and video calls but different from Windows PCs.',
+    excerpt: `Chromebooks are affordable laptops that run Google's operating system — great for browsing, email, and video calls but different from Windows PCs.`,
     category: 'essential-skills',
     tags: ['Chromebook', 'Google', 'laptop', 'beginners', 'buying guide'],
     readTime: '5 min',
@@ -52,7 +52,7 @@ The whole setup typically takes less than 15 minutes. After it is complete, spen
   {
     slug: 'use-google-docs-chromebook',
     title: 'How to Use Google Docs, Sheets, and Slides on a Chromebook',
-    excerpt: 'Create documents, spreadsheets, and presentations for free using Google\'s built-in apps on your Chromebook — no Microsoft Office needed.',
+    excerpt: `Create documents, spreadsheets, and presentations for free using Google's built-in apps on your Chromebook — no Microsoft Office needed.`,
     category: 'how-to',
     tags: ['Google Docs', 'Google Sheets', 'Google Slides', 'Chromebook', 'word processing'],
     readTime: '7 min',
@@ -88,9 +88,9 @@ If your printer is on the same Wi-Fi network, your Chromebook will often find it
 
 Once your printer is set up once, it remembers the connection for future print jobs.`,
     steps: [
-      { title: 'Make sure the printer is on and connected to Wi-Fi', content: 'Turn on your printer and confirm it is connected to the same Wi-Fi network as your Chromebook. Most printers show a Wi-Fi symbol on their display when connected. Check your printer\'s manual or display screen for its network setup option if you are not sure.' },
+      { title: 'Make sure the printer is on and connected to Wi-Fi', content: `Turn on your printer and confirm it is connected to the same Wi-Fi network as your Chromebook. Most printers show a Wi-Fi symbol on their display when connected. Check your printer's manual or display screen for its network setup option if you are not sure.` },
       { title: 'Open the print dialog', content: 'On any page, document, or email you want to print, press Ctrl + P on your keyboard (hold the Ctrl key and press P). A print preview window will appear.' },
-      { title: 'Select your printer', content: 'In the print dialog, look for a dropdown menu labeled "Destination" or "Printer." Click it and look for your printer\'s name in the list. If it does not appear, click "See more" to scan the network.' },
+      { title: 'Select your printer', content: `In the print dialog, look for a dropdown menu labeled "Destination" or "Printer." Click it and look for your printer's name in the list. If it does not appear, click "See more" to scan the network.` },
       { title: 'Add the printer manually if needed', content: 'If your printer still does not show up, click the clock in the bottom-right corner, then the gear icon, and go to "Advanced" then "Printing" then "Printers." Click "Add Printer" and follow the on-screen steps.' },
       { title: 'Print your document', content: 'Once your printer is selected in the print dialog, check the number of copies and click the blue "Print" button. The document will send to your printer within a few seconds.' },
     ],
@@ -115,7 +115,7 @@ After setup, take a few minutes to increase the text size and screen brightness 
     steps: [
       { title: 'Power on and choose language', content: 'Press and hold the top button until the Apple logo appears. Swipe up on the "Hello" screen and select your language and country.' },
       { title: 'Connect to Wi-Fi', content: 'Select your home Wi-Fi network from the list and enter the password. The iPad needs an internet connection to finish setup and download your apps.' },
-      { title: 'Sign in with your Apple ID', content: 'Enter your Apple ID (the email address linked to your Apple account) and your password. If you do not have one, tap "Forgot password or don\'t have an Apple ID?" and choose "Create a free Apple ID."' },
+      { title: 'Sign in with your Apple ID', content: `Enter your Apple ID (the email address linked to your Apple account) and your password. If you do not have one, tap "Forgot password or don't have an Apple ID?" and choose "Create a free Apple ID."` },
       { title: 'Set a passcode', content: 'Create a 6-digit passcode — this is what you will type to unlock the iPad. Write it down somewhere safe. You can also set up Face ID (facial recognition) or Touch ID (fingerprint) during this step for a faster way to unlock.' },
       { title: 'Adjust text size and brightness', content: 'After setup, go to Settings (the gray gear icon), tap "Display & Brightness" to increase screen brightness, and tap "Accessibility" then "Display & Text Size" then "Larger Text" to make text easier to read.' },
     ],
@@ -192,9 +192,32 @@ Tablet screens are wide enough that split screen actually feels comfortable — 
 
   // ── EMAIL PLATFORMS ──────────────────────────────────────────────────────────
   {
+    slug: 'set-up-gmail-account',
+    title: 'How to Set Up and Use Gmail',
+    excerpt: 'Create a free Gmail account and learn how to send, receive, reply to, and organize your emails — step by step for beginners.',
+    category: 'essential-skills',
+    tags: ['Gmail', 'email', 'Google', 'beginners', 'inbox'],
+    readTime: '7 min',
+    thumbnailEmoji: '📧',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Gmail is Google's free email service, and it is one of the most widely used email services in the world. Your Gmail address ends in "@gmail.com" and can be used to sign in to many other services and apps — including Google Docs, YouTube, and Android phones. Creating an account takes about five minutes and costs nothing.
+
+Once your Gmail account is set up, you can access your email from any browser on any device by going to gmail.com, or by downloading the Gmail app on your phone or tablet. Gmail organizes your inbox automatically, sorting newsletters and social media notifications into separate tabs so your main inbox stays focused on messages from real people.
+
+Gmail also gives you 15 GB of free storage, which is enough to store tens of thousands of emails and attachments before you ever need to think about running out of space.`,
+    steps: [
+      { title: 'Create a Google account', content: 'Go to accounts.google.com/signup in any browser. Enter your first and last name, then choose an email address (for example, yourname123@gmail.com). If your preferred name is taken, Google will suggest alternatives.' },
+      { title: 'Set a strong password', content: 'Create a password that is at least 8 characters and includes letters, numbers, and at least one symbol. Write it down somewhere safe. You will need this password every time you sign in.' },
+      { title: 'Go to your inbox', content: 'After creating your account, go to gmail.com. Your inbox will be empty at first. Any emails you receive will appear here as a list, with the newest at the top.' },
+      { title: 'Compose and send an email', content: `Click the large "+ Compose" button in the upper left. A new email window opens. In the "To" field, type the recipient's email address. Fill in the "Subject" line with a brief description of your message, type your message in the large box, and click the blue "Send" button.` },
+      { title: 'Reply to and organize emails', content: 'Click on any email to open it. At the bottom of the email, click "Reply" to respond. To keep your inbox tidy, click the archive button (a box with a down arrow) to move emails out of your inbox without deleting them — you can find them later with the search bar.' },
+    ],
+  },
+  {
     slug: 'use-outlook-hotmail-email',
     title: 'How to Set Up and Use Outlook (Hotmail) Email',
-    excerpt: 'Set up a free Outlook.com (formerly Hotmail) email account and learn to send, receive, and organize your messages with Microsoft\'s email service.',
+    excerpt: `Set up a free Outlook.com (formerly Hotmail) email account and learn to send, receive, and organize your messages with Microsoft's email service.`,
     category: 'essential-skills',
     tags: ['Outlook', 'Hotmail', 'email', 'Microsoft', 'beginners'],
     readTime: '7 min',
@@ -210,14 +233,14 @@ Outlook is a good choice if you use a Windows PC, because your email account can
       { title: 'Create a Microsoft account', content: 'Go to outlook.com and click "Create free account." Choose an email address ending in @outlook.com, then set a password. You will also provide your name, birthdate, and country.' },
       { title: 'Verify your account', content: 'Microsoft may ask you to verify your identity by entering a code sent to a phone number or another email address. This step protects your account from being created by automated programs.' },
       { title: 'Explore your inbox', content: 'Once inside, your inbox appears on the left side. Unread emails are shown in bold. Click any email to read it in the panel on the right side of the screen.' },
-      { title: 'Write and send an email', content: 'Click the "+ New message" button at the top left. Fill in the "To" field with the recipient\'s email address, add a subject, write your message, and click "Send."' },
+      { title: 'Write and send an email', content: `Click the "+ New message" button at the top left. Fill in the "To" field with the recipient's email address, add a subject, write your message, and click "Send."` },
       { title: 'Organize with folders', content: 'Right-click on any email to see options including "Move to folder." You can create folders — like "Family" or "Bills" — to keep emails organized. Click the folder names in the left sidebar to view them.' },
     ],
   },
   {
     slug: 'use-yahoo-mail',
     title: 'How to Set Up and Use Yahoo Mail',
-    excerpt: 'Create a free Yahoo Mail account and learn to send emails, manage your inbox, and stay organized with Yahoo\'s email service.',
+    excerpt: `Create a free Yahoo Mail account and learn to send emails, manage your inbox, and stay organized with Yahoo's email service.`,
     category: 'essential-skills',
     tags: ['Yahoo Mail', 'email', 'Yahoo', 'beginners', 'inbox'],
     readTime: '6 min',
@@ -253,7 +276,7 @@ Receiving attachments is equally common — your doctor's office might send a PD
 
 One important safety note: never open an attachment from someone you do not know, and be cautious even with known senders if the email feels unexpected or strange. Malicious attachments can install harmful software on your device.`,
     steps: [
-      { title: 'Open a new email and start writing', content: 'In your email service (Gmail, Outlook, Yahoo, etc.), click "Compose" or "New Message" and fill in the recipient\'s address, subject, and your message.' },
+      { title: 'Open a new email and start writing', content: `In your email service (Gmail, Outlook, Yahoo, etc.), click "Compose" or "New Message" and fill in the recipient's address, subject, and your message.` },
       { title: 'Attach a file', content: 'Look for the paperclip icon in the email compose window and click it. A file browser will open — navigate to the file or photo you want to attach (for example, your Pictures folder) and click "Open" or "Choose." The file name will appear in the email.' },
       { title: 'Send the email', content: 'Once the attachment is uploaded (you will see a progress bar for large files), click "Send." Wait for the upload to finish before sending, or the attachment may be missing.' },
       { title: 'Open an attachment you received', content: 'When you receive an email with an attachment, you will see a file name or thumbnail image below the message. Click on it to open the file. Your device will open it in the appropriate program — PDFs open in a PDF viewer, photos open in your photo viewer, and so on.' },
@@ -303,14 +326,14 @@ Never share passwords via text message, regular email, or on paper left in an ob
     steps: [
       { title: 'Decide what to share', content: 'Make a list of the accounts that a trusted person might need access to in an emergency: your email, online banking, insurance portals, medical patient portals, and any subscription services you pay for.' },
       { title: 'Choose a sharing method', content: 'The two safest options are: (1) a password manager app with a family sharing or emergency access feature, or (2) a written record stored in a secure physical location. Avoid sharing passwords by text or email.' },
-      { title: 'Use a password manager\'s emergency access feature', content: 'If you use a password manager like Bitwarden or 1Password, look for a "Family Sharing" or "Emergency Access" option in the app settings. You can grant a family member emergency access, which they can request to activate if you become unreachable.' },
+      { title: `Use a password manager's emergency access feature`, content: 'If you use a password manager like Bitwarden or 1Password, look for a "Family Sharing" or "Emergency Access" option in the app settings. You can grant a family member emergency access, which they can request to activate if you become unreachable.' },
       { title: 'Write a secure physical backup', content: 'Write your important account names, email addresses, and passwords in a small notebook. Store it in a fireproof box or safe, or give it to your attorney to keep with your will. Tell the trusted person where it is stored.' },
       { title: 'Review and update regularly', content: 'Passwords change, and so do the accounts that matter. Review your shared password list at least once a year or any time you change a major password. An outdated list is nearly as unhelpful as no list at all.' },
     ],
   },
   {
     slug: 'google-inactive-account-manager',
-    title: 'How to Set Up Google\'s Inactive Account Manager',
+    title: `How to Set Up Google's Inactive Account Manager`,
     excerpt: 'Tell Google what to do with your Gmail, Drive, and Photos if your account becomes inactive — you can choose to share or delete your data.',
     category: 'life-transitions',
     tags: ['Google', 'Gmail', 'digital legacy', 'account manager', 'estate planning', 'seniors'],
@@ -333,8 +356,8 @@ You can find Inactive Account Manager in your Google account settings at myaccou
   },
   {
     slug: 'memorialize-facebook-account',
-    title: 'How to Memorialize or Delete a Loved One\'s Facebook Account',
-    excerpt: 'After losing a loved one, you can ask Facebook to memorialize their account as a tribute or request its removal — here\'s how to do both.',
+    title: `How to Memorialize or Delete a Loved One's Facebook Account`,
+    excerpt: `After losing a loved one, you can ask Facebook to memorialize their account as a tribute or request its removal — here's how to do both.`,
     category: 'life-transitions',
     tags: ['Facebook', 'memorialization', 'digital legacy', 'social media', 'bereavement', 'account removal'],
     readTime: '6 min',
@@ -347,10 +370,10 @@ To request either option, you need to submit a form on Facebook's Help Center. F
 
 The process typically takes a few days to a few weeks. You can also designate a "Legacy Contact" on your own Facebook account now — a trusted person who can manage your memorialized account someday.`,
     steps: [
-      { title: 'Find the person\'s Facebook profile link', content: 'Go to facebook.com and search for the person\'s name. When you find their profile, copy the URL from your browser address bar — it will look something like facebook.com/personname or facebook.com/profile.php?id=123456.' },
+      { title: `Find the person's Facebook profile link`, content: `Go to facebook.com and search for the person's name. When you find their profile, copy the URL from your browser address bar — it will look something like facebook.com/personname or facebook.com/profile.php?id=123456.` },
       { title: 'Go to the Facebook Special Request form', content: 'Go to facebook.com/help and search for "memorialization request" or "deceased person." Click the link for the official form — Facebook has separate forms for memorialization and for removal/deletion.' },
-      { title: 'Fill out the memorialization request', content: 'Enter your full name, your email address, your relationship to the deceased, the person\'s name on Facebook, and their profile URL. Upload a photo of an obituary or other documentation if available. Submit the form.' },
-      { title: 'Request account removal instead', content: 'If you want the account deleted rather than memorialized, find the "Special Request for Deceased Person\'s Account" form in Facebook\'s Help Center. This process requires proof of death (a death certificate) and proof of your authority to make the request.' },
+      { title: 'Fill out the memorialization request', content: `Enter your full name, your email address, your relationship to the deceased, the person's name on Facebook, and their profile URL. Upload a photo of an obituary or other documentation if available. Submit the form.` },
+      { title: 'Request account removal instead', content: `If you want the account deleted rather than memorialized, find the "Special Request for Deceased Person's Account" form in Facebook's Help Center. This process requires proof of death (a death certificate) and proof of your authority to make the request.` },
       { title: 'Set up a Legacy Contact for your own account', content: 'To spare your own family from this process someday, go to your Facebook Settings, click "Memorialization Settings," and designate a Legacy Contact — a person you trust to manage your account after you pass.' },
     ],
   },
@@ -358,7 +381,7 @@ The process typically takes a few days to a few weeks. You can also designate a 
   // ── RIDESHARE & TRANSPORTATION ───────────────────────────────────────────────
   {
     slug: 'use-uber-complete-guide',
-    title: 'How to Use Uber — A Complete Beginner\'s Guide',
+    title: `How to Use Uber — A Complete Beginner's Guide`,
     excerpt: 'Request a ride, track your driver, and pay automatically with Uber — a complete walkthrough for first-time users.',
     category: 'app-guides',
     tags: ['Uber', 'rideshare', 'transportation', 'app', 'beginners', 'seniors'],
@@ -375,14 +398,14 @@ Uber operates in most US cities and many smaller towns. Prices vary based on dem
       { title: 'Download the Uber app and create an account', content: 'Search for "Uber" in the App Store or Google Play Store and install the free app. Open it, tap "Create Account," and enter your name, email address, and phone number. Set a password and add a payment method — a credit or debit card number is required.' },
       { title: 'Enter your destination', content: 'Tap the "Where to?" search bar on the main screen. Start typing your destination — a specific address, a business name, or a landmark. Uber will show suggestions; tap the correct one.' },
       { title: 'Choose a ride type and confirm the price', content: 'Uber shows different ride options (UberX is the standard, most affordable option) along with an estimated price and arrival time. Review the estimated fare, then tap "Request" or "Confirm" to book the ride.' },
-      { title: 'Track your driver', content: 'After requesting, you will see a map showing your driver\'s car moving toward your location. The app shows the driver\'s name, photo, car model, license plate number, and estimated arrival time. Wait at your pickup location.' },
+      { title: 'Track your driver', content: `After requesting, you will see a map showing your driver's car moving toward your location. The app shows the driver's name, photo, car model, license plate number, and estimated arrival time. Wait at your pickup location.` },
       { title: 'Ride and rate your driver', content: 'When the driver arrives, confirm their name and license plate match what the app shows before getting in. After the ride, the app will ask you to rate the driver from 1 to 5 stars. Your payment is processed automatically — no cash needed.' },
     ],
   },
   {
     slug: 'use-lyft-complete-guide',
-    title: 'How to Use Lyft — A Complete Beginner\'s Guide',
-    excerpt: 'Book a Lyft ride, find your driver, and get where you\'re going safely — a full walkthrough for people using Lyft for the first time.',
+    title: `How to Use Lyft — A Complete Beginner's Guide`,
+    excerpt: `Book a Lyft ride, find your driver, and get where you're going safely — a full walkthrough for people using Lyft for the first time.`,
     category: 'app-guides',
     tags: ['Lyft', 'rideshare', 'transportation', 'app', 'beginners', 'seniors'],
     readTime: '8 min',
@@ -395,17 +418,17 @@ One feature Lyft offers that is especially helpful for older adults is Lyft Assi
 
 To get started, you will need the free Lyft app, an account with your name and phone number, and a payment method. Lyft accepts credit cards, debit cards, and prepaid debit cards. Fares are shown before you confirm, so there are no surprises.`,
     steps: [
-      { title: 'Download Lyft and create an account', content: 'Search for "Lyft" in the App Store or Google Play Store. Install the free app and open it. Tap "Get Started" and enter your phone number — Lyft will text you a verification code to confirm it\'s you.' },
+      { title: 'Download Lyft and create an account', content: `Search for "Lyft" in the App Store or Google Play Store. Install the free app and open it. Tap "Get Started" and enter your phone number — Lyft will text you a verification code to confirm it's you.` },
       { title: 'Add your payment method', content: 'After verifying your phone number, enter your name and add a payment method under "Payment" in the app menu. Lyft accepts most credit and debit cards as well as Apple Pay and Google Pay.' },
       { title: 'Request a ride', content: 'Tap "Enter destination" on the main screen and type your destination address. Lyft will show available ride types and estimated prices. The standard option is "Lyft" — tap it to see the fare estimate, then tap "Confirm Lyft."' },
-      { title: 'Meet your driver', content: 'The app shows your driver\'s name, photo, car make and model, and license plate. Your driver\'s ETA appears on screen. Walk to your pickup spot — shown as a pin on the map — and wait there.' },
-      { title: 'Ride safely and rate afterward', content: 'Before getting in, confirm the driver\'s name and license plate match the app. After the ride, Lyft asks you to rate the driver. You can also add a tip from the app if you want — it goes entirely to the driver.' },
+      { title: 'Meet your driver', content: `The app shows your driver's name, photo, car make and model, and license plate. Your driver's ETA appears on screen. Walk to your pickup spot — shown as a pin on the map — and wait there.` },
+      { title: 'Ride safely and rate afterward', content: `Before getting in, confirm the driver's name and license plate match the app. After the ride, Lyft asks you to rate the driver. You can also add a tip from the app if you want — it goes entirely to the driver.` },
     ],
   },
   {
     slug: 'book-medical-transportation-online',
     title: 'How to Book Non-Emergency Medical Transportation Online',
-    excerpt: 'Learn how to arrange a ride to a doctor\'s appointment through Medicaid, Medicare Advantage plans, or services like Uber Health and Veyo.',
+    excerpt: `Learn how to arrange a ride to a doctor's appointment through Medicaid, Medicare Advantage plans, or services like Uber Health and Veyo.`,
     category: 'health-tech',
     tags: ['medical transportation', 'NEMT', 'Medicaid', 'Medicare', 'rides', 'health', 'seniors'],
     readTime: '7 min',
@@ -419,10 +442,10 @@ Beyond insurance benefits, several services now offer medical-specific transport
 The process for booking depends on your insurance and location, but in most cases you call a number or use an app to request a ride at least 24–48 hours in advance.`,
     steps: [
       { title: 'Check your insurance benefits', content: 'Call the member services number on the back of your insurance card and ask: "Does my plan cover non-emergency medical transportation?" If you have Medicaid, the answer is almost certainly yes. Ask for the phone number or portal you use to schedule rides.' },
-      { title: 'Call or book online through your plan\'s transportation broker', content: 'Medicaid transportation is often managed by a "transportation broker" company — such as ModivCare or Veyo — contracted by your state. Call their scheduling number or go to their website to request a ride, giving your appointment date, time, address, and pickup address.' },
+      { title: `Call or book online through your plan's transportation broker`, content: 'Medicaid transportation is often managed by a "transportation broker" company — such as ModivCare or Veyo — contracted by your state. Call their scheduling number or go to their website to request a ride, giving your appointment date, time, address, and pickup address.' },
       { title: 'Book at least 2–3 business days ahead', content: 'NEMT services typically require advance notice — usually 2 to 3 business days minimum. Do not wait until the day before your appointment. Some plans allow next-day or same-day booking for urgent appointments.' },
-      { title: 'Confirm the day before', content: 'Call the transportation broker the day before your appointment to confirm the pickup time and address. Ask for the driver\'s name and what type of vehicle to expect. Write down the confirmation number.' },
-      { title: 'Ask your doctor\'s office for help if needed', content: 'If you are having trouble navigating the booking process, ask the social worker or care coordinator at your doctor\'s office for help. Many medical offices have staff who arrange transportation for patients regularly and can walk you through the process.' },
+      { title: 'Confirm the day before', content: `Call the transportation broker the day before your appointment to confirm the pickup time and address. Ask for the driver's name and what type of vehicle to expect. Write down the confirmation number.` },
+      { title: `Ask your doctor's office for help if needed`, content: `If you are having trouble navigating the booking process, ask the social worker or care coordinator at your doctor's office for help. Many medical offices have staff who arrange transportation for patients regularly and can walk you through the process.` },
     ],
   },
 
@@ -443,8 +466,8 @@ Before you deposit a check this way, you need to sign the back of the check — 
 
 Funds from a mobile deposit usually become available within one business day, though your bank may hold part of the amount for a few extra days if the check is large or from an unfamiliar account.`,
     steps: [
-      { title: 'Download your bank\'s official app', content: 'Search for your bank\'s name in the App Store or Google Play Store and download the official app. Look for the bank\'s official logo and make sure it has many reviews to confirm it is the real app. Log in with your online banking username and password.' },
-      { title: 'Sign the back of the check', content: 'Before photographing the check, flip it over and sign your name on the back in the endorsement area. Some banks require you to also write "For Mobile Deposit Only" under your signature — check your app\'s instructions.' },
+      { title: `Download your bank's official app`, content: `Search for your bank's name in the App Store or Google Play Store and download the official app. Look for the bank's official logo and make sure it has many reviews to confirm it is the real app. Log in with your online banking username and password.` },
+      { title: 'Sign the back of the check', content: `Before photographing the check, flip it over and sign your name on the back in the endorsement area. Some banks require you to also write "For Mobile Deposit Only" under your signature — check your app's instructions.` },
       { title: 'Find the deposit feature in the app', content: 'Open the banking app and look for a button or menu option labeled "Deposit," "Mobile Deposit," or "Deposit a Check." This is usually found in the main menu or at the bottom navigation bar.' },
       { title: 'Photograph the front and back of the check', content: 'The app will guide you to take two photos: one of the front and one of the back of the check. Hold the check flat against a dark background and make sure all four corners are visible in the frame. The app may capture the image automatically.' },
       { title: 'Confirm the amount and submit', content: 'The app will ask you to confirm or enter the check amount. Review the information, select which account to deposit into, and tap "Submit." Keep the physical check in a safe place for 2–3 weeks in case any questions arise, then shred it.' },
@@ -453,7 +476,7 @@ Funds from a mobile deposit usually become available within one business day, th
   {
     slug: 'pay-bills-online',
     title: 'How to Pay Bills Online Safely',
-    excerpt: 'Pay your electric, phone, and other bills online through official websites or your bank\'s bill pay feature — and avoid scams in the process.',
+    excerpt: `Pay your electric, phone, and other bills online through official websites or your bank's bill pay feature — and avoid scams in the process.`,
     category: 'financial-tech',
     tags: ['bill pay', 'online banking', 'utilities', 'financial', 'safety', 'beginners'],
     readTime: '7 min',
@@ -466,11 +489,11 @@ The biggest risk with online bill pay is accidentally giving your payment inform
 
 Your bank's bill pay feature is often the safest option because you enter the company's information once, and the bank sends the payment. You never have to enter your bank details on a third-party website.`,
     steps: [
-      { title: 'Find the official website for your bill', content: 'Look at your paper bill or the company\'s name on your account statement. Type their official web address directly into your browser — do not search and click on ads or links from emails. The correct site should have "https://" at the beginning of the address (the "s" stands for secure).' },
+      { title: 'Find the official website for your bill', content: `Look at your paper bill or the company's name on your account statement. Type their official web address directly into your browser — do not search and click on ads or links from emails. The correct site should have "https://" at the beginning of the address (the "s" stands for secure).` },
       { title: 'Create an online account with the company', content: 'Most companies ask you to register for an online account using your account number (found on your paper bill), your email address, and a password. This takes about five minutes and only needs to be done once.' },
       { title: 'Log in and navigate to Pay Bill', content: 'Sign in to your account and look for a button labeled "Pay Bill," "Make a Payment," or "Pay Now." Click it to start the payment process.' },
       { title: 'Enter your payment information', content: 'Choose your payment method: checking account (using your routing and account numbers from the bottom of a check) or debit/credit card. Enter the payment amount and the date you want the payment to post. Review the details carefully before confirming.' },
-      { title: 'Use your bank\'s bill pay as an alternative', content: 'Log into your bank\'s website or app and look for "Bill Pay." Add the company as a payee — you will need the company\'s name, your account number with them, and their mailing address. Once added, you can schedule payments without ever visiting the company\'s site.' },
+      { title: `Use your bank's bill pay as an alternative`, content: `Log into your bank's website or app and look for "Bill Pay." Add the company as a payee — you will need the company's name, your account number with them, and their mailing address. Once added, you can schedule payments without ever visiting the company's site.` },
     ],
   },
   {
@@ -498,6 +521,52 @@ Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 a
   },
 
   // ── SECURE MESSAGING ─────────────────────────────────────────────────────────
+  {
+    slug: 'use-signal-private-messaging',
+    title: 'How to Use Signal for Private Messaging',
+    excerpt: `Signal is a free messaging app that encrypts your texts and calls so only you and your recipient can read them — here's how to get started.`,
+    category: 'communication',
+    tags: ['Signal', 'private messaging', 'encryption', 'security', 'communication', 'privacy'],
+    readTime: '6 min',
+    thumbnailEmoji: '🔒',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Signal is a free messaging app for iPhone and Android that sends texts, photos, and voice calls using end-to-end encryption. End-to-end encryption means that the message is scrambled as it travels from your phone to the recipient's phone — only those two devices can unscramble and read it. Not even Signal's own company can read your messages. This makes Signal a good choice when you want to send something private, like medical information, financial details, or personal conversations.
+
+Signal works over Wi-Fi and mobile data and does not charge per message — it is free to use with no subscription. The app looks and works very much like regular text messaging, so switching to it feels familiar.
+
+Both you and the person you are messaging need to have Signal installed for the encryption to work. If you send a Signal message to someone who does not have the app, it may send as an unencrypted SMS (standard text message) instead.`,
+    steps: [
+      { title: 'Download Signal', content: 'Search for "Signal — Private Messenger" in the App Store (iPhone) or Google Play Store (Android). Install the free app. Make sure the developer is "Signal Messenger LLC" to confirm it is the official app.' },
+      { title: 'Register with your phone number', content: 'Open Signal and enter your mobile phone number. Signal will send a 6-digit verification code to your phone via text. Enter the code in the app to verify your number.' },
+      { title: 'Create a PIN', content: 'Signal asks you to create a PIN (a 4–6 digit number). This PIN protects your Signal account and can help you recover your account if you change phones. Write it down somewhere safe.' },
+      { title: 'Start a conversation', content: `Tap the pencil/compose icon to start a new message. Signal will show you which of your existing contacts also have Signal (they will appear at the top of the list). Tap a contact's name and start typing your message.` },
+      { title: 'Understand the lock icon', content: 'When you send a message to another Signal user, you will see a lock icon on the send button — this means your message is encrypted. If the lock icon is not there, the message is going as a regular (unencrypted) SMS text.' },
+    ],
+  },
+  {
+    slug: 'use-telegram-messaging',
+    title: 'How to Use Telegram',
+    excerpt: 'Telegram is a free messaging app that works on phones, tablets, and computers — great for group chats, large file sharing, and channels.',
+    category: 'communication',
+    tags: ['Telegram', 'messaging', 'group chat', 'communication', 'app'],
+    readTime: '6 min',
+    thumbnailEmoji: '✈️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner',
+    body: `Telegram is a free messaging app that works on iPhone, Android, Windows, Mac, and inside a web browser. You can use it to send text messages, photos, videos, and files to individuals or groups. One of Telegram's standout features is that it lets you send files up to 2 gigabytes in size — much larger than regular email or other messaging apps allow. It is also well suited for group conversations with large numbers of people.
+
+Telegram also has "Channels," which work like newsletters — you can subscribe to a channel and receive updates from a news source, community group, or organization. Many churches, community organizations, and local groups use Telegram channels to communicate with members.
+
+Telegram uses phone numbers for registration, similar to Signal. Standard Telegram chats are stored on Telegram's servers (which means they sync across devices), while "Secret Chats" use end-to-end encryption and are only stored on your device.`,
+    steps: [
+      { title: 'Download Telegram', content: 'Search for "Telegram" in the App Store or Google Play Store. Install the free app. On a computer, go to telegram.org and download the desktop app for Windows or Mac.' },
+      { title: 'Register your phone number', content: 'Open Telegram and enter your phone number including the country code (+1 for the United States). Telegram will send a verification code to your phone — enter it in the app to confirm your number.' },
+      { title: 'Set your name and profile photo', content: 'Enter your first and last name (you can use any name). Adding a profile photo is optional but helps your contacts identify you. Your phone number is not visible to others by default.' },
+      { title: 'Start a message or join a group', content: 'Tap the pencil icon to start a new message. Telegram shows you which of your phone contacts also use the app. To join a group or channel, ask the group admin for an invite link — tapping the link on your phone will add you to the group.' },
+      { title: 'Use Telegram on multiple devices', content: 'One advantage of Telegram over many messaging apps is that your message history syncs across devices. Sign in with the same phone number on your tablet or computer and all your messages will be there.' },
+    ],
+  },
   {
     slug: 'use-facetime-iphone-ipad',
     title: 'How to Use FaceTime on iPhone and iPad',
@@ -540,7 +609,7 @@ The most popular free options are Google Workspace (Docs, Sheets, Slides — fre
 For most everyday document needs — writing letters, making lists, creating basic spreadsheets — any of these free tools will do everything you need.`,
     steps: [
       { title: 'Try Google Docs first', content: 'If you have a Google account (Gmail), go to docs.google.com for word processing, sheets.google.com for spreadsheets, and slides.google.com for presentations. They are free, work in any browser, and save automatically to Google Drive.' },
-      { title: 'Try Microsoft Office for the Web', content: 'Go to office.com and sign in with a free Microsoft account. You can create and edit Word, Excel, and PowerPoint files in your browser without paying for a subscription. Files save to Microsoft\'s free OneDrive cloud storage.' },
+      { title: 'Try Microsoft Office for the Web', content: `Go to office.com and sign in with a free Microsoft account. You can create and edit Word, Excel, and PowerPoint files in your browser without paying for a subscription. Files save to Microsoft's free OneDrive cloud storage.` },
       { title: 'Download LibreOffice for offline use', content: 'If you prefer a program installed on your computer (rather than browser-based), go to libreoffice.org and download LibreOffice for free. It includes Writer (like Word), Calc (like Excel), and Impress (like PowerPoint), and it runs without an internet connection.' },
       { title: 'Open existing Word or Excel files', content: 'All three free alternatives can open files that were created in Microsoft Word or Excel. In Google Docs, drag a .docx file into Google Drive and double-click it to open. In LibreOffice, go to File > Open and browse to the file.' },
       { title: 'Save in Microsoft format when needed', content: 'If you need to send a file to someone who uses Microsoft Office, save in the Microsoft format. In Google Docs: File > Download > Microsoft Word (.docx). In LibreOffice: File > Save As > choose "Word 2007-365 (.docx)" from the format dropdown.' },
@@ -563,7 +632,7 @@ The app is available for iPhone, Android, and Amazon Fire tablets. Once you borr
 If you do not currently have a library card, many libraries now offer instant digital cards you can get online in minutes without visiting the library in person.`,
     steps: [
       { title: 'Download the Libby app', content: 'Search for "Libby, by OverDrive" in the App Store or Google Play Store. Install the free app. On Amazon Fire tablets, search in the Amazon Appstore.' },
-      { title: 'Find your library', content: 'Open Libby and tap "I\'ll search for a library." Type your city or the name of your library system (for example, "Chicago Public Library" or "Multnomah County Library"). Select your library from the results.' },
+      { title: 'Find your library', content: `Open Libby and tap "I'll search for a library." Type your city or the name of your library system (for example, "Chicago Public Library" or "Multnomah County Library"). Select your library from the results.` },
       { title: 'Sign in with your library card', content: 'Tap "Sign In With My Card" and enter your library card number (the long number on the back of your card) and your PIN. If you do not know your PIN, contact your library — it is often your birth year or a 4-digit number you set up.' },
       { title: 'Browse and borrow a book', content: 'Tap "Library" to browse available titles. Search for a book by title or author, or browse categories. When you find a book you want, tap "Borrow" — if it is available, it goes to your loans immediately. If there is a wait list, tap "Place Hold" and Libby will notify you when it is your turn.' },
       { title: 'Read or listen to your book', content: 'Tap the "Shelf" button (the person icon) to see your borrowed books. Tap any book to open it. For audiobooks, tap the headphones icon to start listening. Tap the "Aa" icon while reading to change font size and background color.' },
@@ -587,7 +656,7 @@ The Kindle app has excellent reading customization options: you can increase the
     steps: [
       { title: 'Download the Kindle app', content: 'Search for "Kindle" in the App Store (iPhone/iPad) or Google Play Store (Android). On a Windows or Mac computer, go to amazon.com/kindle-dbs/fd/kcp to download the desktop app. The app is free.' },
       { title: 'Sign in with your Amazon account', content: 'Open the Kindle app and sign in with your Amazon account email and password. If you do not have an Amazon account, tap "Create a new Amazon account" — it is free to create.' },
-      { title: 'Find free books', content: 'In the Kindle app, tap "Get Books" or open Amazon\'s website and go to the Kindle store. Search for a title or browse the "Free" section. Many classic books are listed at $0.00. Tap "Buy now with 1-Click" (even if it\'s free, the button says this) to add it to your library.' },
+      { title: 'Find free books', content: `In the Kindle app, tap "Get Books" or open Amazon's website and go to the Kindle store. Search for a title or browse the "Free" section. Many classic books are listed at $0.00. Tap "Buy now with 1-Click" (even if it's free, the button says this) to add it to your library.` },
       { title: 'Open and read your book', content: 'Tap the "Library" tab in the Kindle app to see all your books. Tap any book cover to open it. The book will download to your device — after that, you can read it without an internet connection.' },
       { title: 'Customize your reading experience', content: 'While reading, tap the middle of the screen to see the toolbar. Tap the "Aa" icon to open reading settings. Increase the font size, choose a font style like "Bookerly" (designed for screen reading), and try the Sepia background if the white page feels too bright.' },
     ],
@@ -610,7 +679,7 @@ All of these services are free for personal use and work over Wi-Fi, which means
     steps: [
       { title: 'Choose the right app for your situation', content: 'If calling family members with iPhones: FaceTime. If setting up a group call with people on different devices: Zoom. If calling someone who uses Gmail: Google Meet. If calling someone internationally or who uses Android: WhatsApp. If the person is already on Facebook: Facebook Messenger.' },
       { title: 'Download or find your chosen app', content: 'FaceTime is already on every iPhone. For Zoom, go to zoom.us or search "Zoom" in your app store. Google Meet is at meet.google.com or in the Play Store/App Store. WhatsApp is at whatsapp.com or your app store.' },
-      { title: 'Set up the app if needed', content: 'Zoom requires a free account — go to zoom.us and click "Sign Up, It\'s Free." Google Meet works with your existing Google account. WhatsApp requires a phone number to register.' },
+      { title: 'Set up the app if needed', content: `Zoom requires a free account — go to zoom.us and click "Sign Up, It's Free." Google Meet works with your existing Google account. WhatsApp requires a phone number to register.` },
       { title: 'Make your first video call', content: 'In Zoom, click "New Meeting" to start a call and share your meeting link. In Google Meet, click "New meeting" and share the link. In WhatsApp, open a chat with a contact and tap the video camera icon.' },
       { title: 'Troubleshoot common issues', content: 'If the other person cannot hear or see you, check that the app has permission to use your microphone and camera. On iPhone, go to Settings > Privacy > Microphone (or Camera) and make sure the app is turned on. On Android, go to Settings > Apps > [app name] > Permissions.' },
     ],
@@ -635,7 +704,7 @@ All the major browsers mentioned above are free, and most computers and phones c
     steps: [
       { title: 'Find your browser', content: 'On a Windows computer, look for Microsoft Edge (blue wave icon) in the taskbar at the bottom of the screen. On a Mac, look for Safari (compass icon) in the Dock. On an iPhone or iPad, Safari is the default. On Android, Chrome (colorful circle) is usually pre-installed.' },
       { title: 'Use the address bar', content: 'The long white bar at the very top of the browser window is the address bar. Click or tap inside it — the text there will highlight. Type a web address (like www.google.com) and press Enter or tap Go on your keyboard to visit that page.' },
-      { title: 'Search from the address bar', content: 'You can also type a question or topic directly into the address bar — for example, "nearest pharmacy" or "how to hard boil an egg." The browser will perform a search and show you results from Google, Bing, or your browser\'s default search engine.' },
+      { title: 'Search from the address bar', content: `You can also type a question or topic directly into the address bar — for example, "nearest pharmacy" or "how to hard boil an egg." The browser will perform a search and show you results from Google, Bing, or your browser's default search engine.` },
       { title: 'Use the Back and Forward buttons', content: 'The arrow buttons at the top left of the browser let you go back to the previous page you were on (left arrow) or forward to a page you backed away from (right arrow). Use these to navigate between pages you have already visited.' },
       { title: 'Recognize a secure website', content: 'When a web address starts with "https://" (note the "s") and shows a small padlock icon in the address bar, the connection to that site is encrypted — meaning your information travels securely. Be cautious on sites that show "http://" without the "s," especially when entering personal information.' },
     ],
@@ -728,7 +797,7 @@ Most printers made in the last several years support wireless printing. Popular 
 Before you start, have your Wi-Fi network name (also called SSID) and your Wi-Fi password ready. These are the same name and password you use to connect any other device to your home internet.`,
     steps: [
       { title: 'Unbox and turn on the printer', content: 'Place the printer near your router or in a location with good Wi-Fi signal. Remove all the tape and packaging materials, install the ink cartridges (they usually come in the box), and load a small stack of paper. Plug in the power cord and turn the printer on.' },
-      { title: 'Connect the printer to Wi-Fi', content: 'On the printer\'s display screen (or using the button menu), navigate to "Wireless Setup," "Wi-Fi Setup," or "Network Settings." Select your home Wi-Fi network name from the list and enter your Wi-Fi password using the on-screen keyboard or dial. The printer will confirm when connected.' },
+      { title: 'Connect the printer to Wi-Fi', content: `On the printer's display screen (or using the button menu), navigate to "Wireless Setup," "Wi-Fi Setup," or "Network Settings." Select your home Wi-Fi network name from the list and enter your Wi-Fi password using the on-screen keyboard or dial. The printer will confirm when connected.` },
       { title: 'Add the printer to your Windows computer', content: 'On your Windows computer, go to Start > Settings > Bluetooth & Devices > Printers & Scanners. Click "Add device." Windows will scan for printers on the network. When your printer appears, click its name then click "Add device."' },
       { title: 'Add the printer to a Mac', content: 'On your Mac, go to the Apple menu > System Settings > Printers & Scanners. Click the "+" button to add a printer. Your wireless printer should appear in the list — select it and click "Add."' },
       { title: 'Print a test page', content: 'After adding the printer, open any document or photo and press Ctrl+P (Windows) or Command+P (Mac). Select your new printer from the dropdown menu and click Print. If the test page prints correctly, your wireless printer is set up and ready to use.' },
@@ -751,7 +820,7 @@ Before printing, it helps to know the size you want to print. Standard photo siz
 The most common reason home photo prints look dull or blurry is using regular copy paper instead of actual photo paper. Photo paper is glossy or semi-glossy and is designed to hold ink evenly for sharp, bright images.`,
     steps: [
       { title: 'Get photo paper in the right size', content: 'Buy photo paper at an office supply store, Target, Walmart, or online. Look for glossy or semi-glossy paper in the size you want — 4x6 for standard prints, 5x7 for slightly larger. Make sure it is compatible with your printer brand (inkjet photo paper for inkjet printers).' },
-      { title: 'Load the photo paper into the printer', content: 'Check your printer\'s manual for which tray to use for photo paper and which side faces up — many inkjet printers print on the glossy side, but this varies. Load a small number of sheets at a time (3–5) rather than a full stack to avoid paper jams.' },
+      { title: 'Load the photo paper into the printer', content: `Check your printer's manual for which tray to use for photo paper and which side faces up — many inkjet printers print on the glossy side, but this varies. Load a small number of sheets at a time (3–5) rather than a full stack to avoid paper jams.` },
       { title: 'Open your photo on your computer', content: 'Find the photo you want to print in your Photos app, Windows Photos, or wherever you store images. Open it and press Ctrl+P (Windows) or Command+P (Mac) to open the print dialog.' },
       { title: 'Set the paper size and print quality', content: 'In the print dialog, select your printer from the dropdown. Look for a "Properties" or "More Settings" button to access paper settings. Set the paper size to match your photo paper (e.g., 4x6 inches) and set the quality to "Best" or "Photo" for the sharpest result.' },
       { title: 'Print and let the ink dry', content: 'Click "Print" and wait for the page to come out. Do not touch the printed surface immediately — inkjet ink needs a minute or two to dry completely. If the colors look dull, check that you selected "Best" quality in the print settings and that you are using actual photo paper.' },

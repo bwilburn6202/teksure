@@ -6,40 +6,40 @@ export const guidesBatch8: Guide[] = [
   {
     slug: 'set-up-apple-carplay',
     title: 'How to Set Up Apple CarPlay',
-    excerpt: 'Connect your iPhone to your car\'s screen to use Maps, music, and calls without picking up the phone while driving.',
+    excerpt: `Connect your iPhone to your car's screen to use Maps, music, and calls without picking up the phone while driving.`,
     category: 'app-guides',
     tags: ['CarPlay', 'iPhone', 'car', 'Apple', 'driving'],
     readTime: '6 min',
     thumbnailEmoji: '🚗',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Apple CarPlay connects your iPhone to your car\'s dashboard screen so you can see maps, play music, and answer calls using the car\'s controls instead of the phone itself. Most cars made after 2018 include CarPlay, and it usually works with a simple USB cable or wirelessly over Bluetooth.
+    body: `Apple CarPlay connects your iPhone to your car's dashboard screen so you can see maps, play music, and answer calls using the car's controls instead of the phone itself. Most cars made after 2018 include CarPlay, and it usually works with a simple USB cable or wirelessly over Bluetooth.
 
 Once set up, you can ask Siri to give directions, read text messages out loud, or play a podcast — all without touching your phone while driving.`,
     steps: [
-      { title: 'Check that your car supports CarPlay', content: 'Look for an Apple CarPlay logo near your car\'s USB port or infotainment screen. If you are not sure, check the owner\'s manual or the manufacturer\'s website.' },
+      { title: 'Check that your car supports CarPlay', content: `Look for an Apple CarPlay logo near your car's USB port or infotainment screen. If you are not sure, check the owner's manual or the manufacturer's website.` },
       { title: 'Turn on Siri on your iPhone', content: 'Open Settings, tap Siri & Search, and make sure "Press Side Button for Siri" or "Listen for Hey Siri" is turned on. CarPlay needs Siri to work.' },
-      { title: 'Plug in your iPhone with a USB cable', content: 'Start your car, then connect your iPhone to the car\'s USB port with the cable that came with your phone. For wireless CarPlay, hold down the voice-command button on your steering wheel instead.' },
-      { title: 'Tap Allow on your iPhone', content: 'Your phone will ask if you want to allow CarPlay. Tap Allow, and the CarPlay home screen should appear on the car\'s dashboard display within a few seconds.' },
+      { title: 'Plug in your iPhone with a USB cable', content: `Start your car, then connect your iPhone to the car's USB port with the cable that came with your phone. For wireless CarPlay, hold down the voice-command button on your steering wheel instead.` },
+      { title: 'Tap Allow on your iPhone', content: `Your phone will ask if you want to allow CarPlay. Tap Allow, and the CarPlay home screen should appear on the car's dashboard display within a few seconds.` },
       { title: 'Rearrange your apps', content: 'On your iPhone, open Settings, tap General, then CarPlay, and pick your car. From there you can drag icons to move the apps you use most — like Maps or Music — to the first screen.' },
     ],
   },
   {
     slug: 'set-up-android-auto',
     title: 'How to Set Up Android Auto',
-    excerpt: 'Mirror your Android phone to your car\'s display for hands-free navigation, music, and messaging while you drive.',
+    excerpt: `Mirror your Android phone to your car's display for hands-free navigation, music, and messaging while you drive.`,
     category: 'app-guides',
     tags: ['Android Auto', 'Android', 'car', 'Google', 'driving'],
     readTime: '6 min',
     thumbnailEmoji: '🚙',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Android Auto is Google\'s version of CarPlay — it puts a simplified version of your Android phone on the car\'s screen so you can use Google Maps, play music, and hear messages read aloud while driving. Most new cars and many aftermarket radios support it.
+    body: `Android Auto is Google's version of CarPlay — it puts a simplified version of your Android phone on the car's screen so you can use Google Maps, play music, and hear messages read aloud while driving. Most new cars and many aftermarket radios support it.
 
 After a one-time setup, Android Auto connects automatically whenever you start the car and plug in (or connect wirelessly). You control everything with voice commands or large, easy-to-tap buttons designed to be safer than looking at your phone.`,
     steps: [
       { title: 'Install the Android Auto app', content: 'On phones running Android 10 or newer, Android Auto is already built in. On older phones, open the Play Store, search for "Android Auto," and tap Install.' },
-      { title: 'Check your car\'s compatibility', content: 'Look for an Android Auto logo near the USB port or on your infotainment screen. Your car\'s manual or the Android Auto website lists supported models.' },
+      { title: `Check your car's compatibility`, content: `Look for an Android Auto logo near the USB port or on your infotainment screen. Your car's manual or the Android Auto website lists supported models.` },
       { title: 'Connect your phone with a USB cable', content: 'Start the car and plug your phone into the USB port using a good-quality cable. For wireless Android Auto, connect over Bluetooth after turning on the car.' },
       { title: 'Follow the setup prompts', content: 'Your phone will ask for permissions — allow access to location, contacts, and notifications so Maps and messaging work. This only happens the first time.' },
       { title: 'Try a test drive in the driveway', content: 'Before driving, say "Hey Google, navigate home" to check that voice commands work. Also open the music app you prefer to confirm audio plays through the car speakers.' },
@@ -69,22 +69,22 @@ These apps show which chargers are available right now, how fast they charge, wh
   {
     slug: 'use-in-car-bluetooth-calls',
     title: 'How to Set Up Bluetooth for Hands-Free Calling in Your Car',
-    excerpt: 'Pair your phone to your car\'s Bluetooth once, and calls will play through the speakers automatically every time you drive.',
+    excerpt: `Pair your phone to your car's Bluetooth once, and calls will play through the speakers automatically every time you drive.`,
     category: 'how-to',
     tags: ['Bluetooth', 'car', 'hands-free', 'calling', 'phone'],
     readTime: '5 min',
     thumbnailEmoji: '📻',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Pairing your phone to your car over Bluetooth is a one-time setup that lets you take calls through the car\'s speakers without touching the phone. This is safer — and legal in most states — compared to holding a phone while driving.
+    body: `Pairing your phone to your car over Bluetooth is a one-time setup that lets you take calls through the car's speakers without touching the phone. This is safer — and legal in most states — compared to holding a phone while driving.
 
-Once paired, your phone will connect automatically every time you start the car. You can answer calls with a button on the steering wheel and hear the other person through the car\'s audio system.`,
+Once paired, your phone will connect automatically every time you start the car. You can answer calls with a button on the steering wheel and hear the other person through the car's audio system.`,
     steps: [
       { title: 'Turn on Bluetooth on your phone', content: 'On iPhone, open Settings and tap Bluetooth, then flip the switch on. On Android, swipe down from the top and tap the Bluetooth icon.' },
-      { title: 'Put your car in pairing mode', content: 'On the car\'s infotainment screen, open Settings or Phone, then tap Bluetooth or Add Device. The exact wording varies — check the owner\'s manual if you cannot find it.' },
-      { title: 'Find the car on your phone', content: 'Your car\'s name (often the make and model) should appear in the Bluetooth list on your phone. Tap it to start pairing.' },
+      { title: 'Put your car in pairing mode', content: `On the car's infotainment screen, open Settings or Phone, then tap Bluetooth or Add Device. The exact wording varies — check the owner's manual if you cannot find it.` },
+      { title: 'Find the car on your phone', content: `Your car's name (often the make and model) should appear in the Bluetooth list on your phone. Tap it to start pairing.` },
       { title: 'Confirm the PIN code', content: 'Both the phone and car will show the same short code, usually four or six digits. Tap Yes or Pair on both to confirm they match.' },
-      { title: 'Make a test call', content: 'Call someone you know and check that you can hear them through the car speakers and they can hear you clearly. If the sound is quiet, turn up the car\'s volume — the phone volume may be separate.' },
+      { title: 'Make a test call', content: `Call someone you know and check that you can hear them through the car speakers and they can hear you clearly. If the sound is quiet, turn up the car's volume — the phone volume may be separate.` },
     ],
   },
   // ── CAREGIVER TECH ──────────────────────────────────────────────────────────
@@ -105,35 +105,35 @@ One person acts as the "family organizer" and invites everyone else. Each person
       { title: 'Open Family Sharing settings', content: 'On the iPhone of the person who will be the organizer, open Settings, tap your name at the top, then tap Family Sharing. Tap Set Up Your Family.' },
       { title: 'Pick what you want to share', content: 'Apple will ask if you want to share subscriptions, purchases, location, or screen time. You can pick all of them now or turn any on later.' },
       { title: 'Invite family members', content: 'Tap Invite People and enter their phone numbers or Apple ID email addresses. They will get a message with a link to join the family.' },
-      { title: 'Add a child under 13', content: 'Tap Create an Account for a Child from the Family Sharing screen. You will need the child\'s birthday and your permission as a parent — this gives them their own Apple ID with safety limits.' },
+      { title: 'Add a child under 13', content: `Tap Create an Account for a Child from the Family Sharing screen. You will need the child's birthday and your permission as a parent — this gives them their own Apple ID with safety limits.` },
       { title: 'Check shared subscriptions', content: 'Go back to Settings, tap your name, then Subscriptions. Any subscription that supports sharing — like Apple Music Family or iCloud+ — will now show "Shared with Family" under the name.' },
     ],
   },
   {
     slug: 'set-up-google-family-link',
     title: 'How to Set Up Google Family Link',
-    excerpt: 'Monitor a child\'s Android phone, approve app downloads, set screen time limits, and see their location with Google Family Link.',
+    excerpt: `Monitor a child's Android phone, approve app downloads, set screen time limits, and see their location with Google Family Link.`,
     category: 'essential-skills',
     tags: ['Family Link', 'Google', 'Android', 'parental controls', 'kids'],
     readTime: '7 min',
     thumbnailEmoji: '👪',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Google Family Link is a free app that lets parents manage a child\'s Android phone or Chromebook from their own phone. You can approve every app they download, set daily screen time limits, lock the device at bedtime, and see where the device is on a map.
+    body: `Google Family Link is a free app that lets parents manage a child's Android phone or Chromebook from their own phone. You can approve every app they download, set daily screen time limits, lock the device at bedtime, and see where the device is on a map.
 
 Family Link works for kids under 13 (who need parent permission for a Google account) and teenagers (who can use the app voluntarily). Both parent and child install the app, and the parent runs the setup.`,
     steps: [
-      { title: 'Install Family Link on the parent phone', content: 'On the parent\'s iPhone or Android, open the App Store or Play Store, search for "Google Family Link," and install it. Sign in with the parent\'s Google account.' },
-      { title: 'Create or link the child\'s Google account', content: 'In the app, tap the plus icon and choose Add Child. If your child does not have a Google account, Family Link walks you through creating one — a child account is free but needs parent consent.' },
-      { title: 'Install Family Link on the child\'s phone', content: 'On the child\'s Android phone, sign in with the child\'s Google account. The phone will prompt you to install Family Link and link it to the parent account.' },
-      { title: 'Set daily screen time limits', content: 'In the parent app, tap the child\'s name, then Controls, then Daily Limit. Set how many hours the phone can be used each day — when time runs out, the phone locks (calls still work).' },
+      { title: 'Install Family Link on the parent phone', content: `On the parent's iPhone or Android, open the App Store or Play Store, search for "Google Family Link," and install it. Sign in with the parent's Google account.` },
+      { title: `Create or link the child's Google account`, content: 'In the app, tap the plus icon and choose Add Child. If your child does not have a Google account, Family Link walks you through creating one — a child account is free but needs parent consent.' },
+      { title: `Install Family Link on the child's phone`, content: `On the child's Android phone, sign in with the child's Google account. The phone will prompt you to install Family Link and link it to the parent account.` },
+      { title: 'Set daily screen time limits', content: `In the parent app, tap the child's name, then Controls, then Daily Limit. Set how many hours the phone can be used each day — when time runs out, the phone locks (calls still work).` },
       { title: 'Approve apps and in-app purchases', content: 'Turn on the App Approval toggle under Controls. From then on, every time your child tries to download an app, you will get a notification asking you to approve or deny it.' },
     ],
   },
   {
     slug: 'use-chrome-remote-desktop',
     title: 'How to Use Chrome Remote Desktop to Help Family',
-    excerpt: 'See and control a family member\'s computer from your own — great for fixing problems over the phone without being in the room.',
+    excerpt: `See and control a family member's computer from your own — great for fixing problems over the phone without being in the room.`,
     category: 'how-to',
     tags: ['remote desktop', 'Chrome', 'Google', 'tech support', 'family'],
     readTime: '7 min',
@@ -145,9 +145,9 @@ Family Link works for kids under 13 (who need parent permission for a Google acc
 Both computers need the Chrome browser and a Google account. The person asking for help generates a short access code, shares it with you, and your computer connects to theirs within seconds.`,
     steps: [
       { title: 'Open Chrome Remote Desktop', content: 'On both computers, open the Chrome browser and go to remotedesktop.google.com. Sign in with any Google account.' },
-      { title: 'On the helper\'s computer, click Remote Support', content: 'On the screen, click Remote Support. This is the section for helping someone else — not for connecting to your own computer.' },
-      { title: 'On the family member\'s computer, generate a code', content: 'Have them click Remote Support, then under "Get Support" click Generate Code. A 12-digit code appears — they read it to you over the phone.' },
-      { title: 'Enter the code on the helper\'s computer', content: 'Under "Give Support," type the 12-digit code and click Connect. The family member will see a pop-up asking to share their screen — they click Share.' },
+      { title: `On the helper's computer, click Remote Support`, content: 'On the screen, click Remote Support. This is the section for helping someone else — not for connecting to your own computer.' },
+      { title: `On the family member's computer, generate a code`, content: 'Have them click Remote Support, then under "Get Support" click Generate Code. A 12-digit code appears — they read it to you over the phone.' },
+      { title: `Enter the code on the helper's computer`, content: 'Under "Give Support," type the 12-digit code and click Connect. The family member will see a pop-up asking to share their screen — they click Share.' },
       { title: 'End the session when done', content: 'When you finish helping, either person can click the Stop Sharing button. The code expires after five minutes, so you cannot reconnect without a new code — this keeps things secure.' },
     ],
   },
@@ -204,7 +204,7 @@ Setting it up takes about five minutes and could save your life. The information
     thumbnailEmoji: '🔊',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `VoiceOver is Apple\'s built-in screen reader for iPhone and iPad. When it is on, the phone speaks whatever your finger touches — button names, text messages, web pages — so you can use the phone without looking at the screen.
+    body: `VoiceOver is Apple's built-in screen reader for iPhone and iPad. When it is on, the phone speaks whatever your finger touches — button names, text messages, web pages — so you can use the phone without looking at the screen.
 
 VoiceOver changes how you interact with the phone: single-tap to hear an item, double-tap to activate it, and swipe with three fingers to scroll. It takes practice, but millions of blind and low-vision users rely on it every day.`,
     steps: [
@@ -218,14 +218,14 @@ VoiceOver changes how you interact with the phone: single-tap to hear an item, d
   {
     slug: 'use-talkback-android',
     title: 'How to Use TalkBack on Android (Screen Reader)',
-    excerpt: 'TalkBack is Android\'s free screen reader — it speaks everything on your phone so blind and low-vision users can navigate without seeing the screen.',
+    excerpt: `TalkBack is Android's free screen reader — it speaks everything on your phone so blind and low-vision users can navigate without seeing the screen.`,
     category: 'tips-tricks',
     tags: ['TalkBack', 'Android', 'accessibility', 'screen reader', 'blind'],
     readTime: '7 min',
     thumbnailEmoji: '📢',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
-    body: `TalkBack is Google\'s screen reader built into every Android phone. When turned on, it reads aloud whatever you touch and changes how gestures work — single-tap to hear, double-tap to select, swipe with two fingers to scroll.
+    body: `TalkBack is Google's screen reader built into every Android phone. When turned on, it reads aloud whatever you touch and changes how gestures work — single-tap to hear, double-tap to select, swipe with two fingers to scroll.
 
 TalkBack takes time to learn, but it makes Android fully usable without sight. Most major apps — Gmail, Maps, Chrome — are designed to work well with TalkBack.`,
     steps: [
@@ -248,7 +248,7 @@ TalkBack takes time to learn, but it makes Android fully usable without sight. M
     difficulty: 'Beginner',
     body: `Made for iPhone (MFi) hearing aids connect directly to an iPhone over Bluetooth, so phone calls, music, and even GPS directions play right in your ears. Most major brands — including Phonak, Oticon, ReSound, and Starkey — now make MFi models.
 
-Once paired, you can also change hearing-aid settings from the phone\'s Accessibility menu: volume, program, and background-noise reduction. No extra app needed for most features.`,
+Once paired, you can also change hearing-aid settings from the phone's Accessibility menu: volume, program, and background-noise reduction. No extra app needed for most features.`,
     steps: [
       { title: 'Turn on your hearing aids', content: 'Open the battery doors or place the hearing aids in their charger, then take them out and put them in your ears. They need to be on and near the phone for pairing.' },
       { title: 'Open iPhone Accessibility settings', content: 'Go to Settings, tap Accessibility, then scroll down and tap Hearing Devices. The phone will start searching for nearby hearing aids.' },
@@ -324,19 +324,19 @@ You can set the magnification level, pick how it follows your mouse, and even ha
   {
     slug: 'set-up-screen-time-iphone',
     title: 'How to Set Up Screen Time on iPhone for Kids',
-    excerpt: 'Limit your child\'s daily app usage, block inappropriate content, and see exactly what they do on their iPhone — all free from Apple.',
+    excerpt: `Limit your child's daily app usage, block inappropriate content, and see exactly what they do on their iPhone — all free from Apple.`,
     category: 'safety-guides',
     tags: ['Screen Time', 'iPhone', 'parental controls', 'kids', 'Apple'],
     readTime: '7 min',
     thumbnailEmoji: '⏰',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Screen Time is Apple\'s free parental-control system. On a family-shared iPhone, you can see how much time your child spends in each app, block apps during homework or bedtime, and stop them from buying apps without your permission.
+    body: `Screen Time is Apple's free parental-control system. On a family-shared iPhone, you can see how much time your child spends in each app, block apps during homework or bedtime, and stop them from buying apps without your permission.
 
-You set it up through Family Sharing — the parent sends a request from their own phone to the child\'s phone. A four-digit passcode (different from the phone passcode) protects the settings so the child cannot change them.`,
+You set it up through Family Sharing — the parent sends a request from their own phone to the child's phone. A four-digit passcode (different from the phone passcode) protects the settings so the child cannot change them.`,
     steps: [
       { title: 'Set up Family Sharing first', content: 'Screen Time for kids only works if the child is part of your Apple Family Sharing group. If you have not set that up, do that before continuing — see the Family Sharing guide.' },
-      { title: 'Open Screen Time on the parent phone', content: 'Open Settings, tap Screen Time, then scroll down and tap your child\'s name under Family. Tap Turn On Screen Time.' },
+      { title: 'Open Screen Time on the parent phone', content: `Open Settings, tap Screen Time, then scroll down and tap your child's name under Family. Tap Turn On Screen Time.` },
       { title: 'Set Downtime and App Limits', content: 'Tap Downtime to block all apps during specific hours (for example, 9 PM to 7 AM). Tap App Limits to set daily minutes for categories like Games or Social.' },
       { title: 'Turn on Content & Privacy Restrictions', content: 'Tap Content & Privacy Restrictions and flip it on. Pick Content Restrictions to block adult websites, mature movies, and explicit music.' },
       { title: 'Set a Screen Time passcode', content: 'Tap Change Screen Time Passcode and pick a four-digit code that your child does not know. Without it, they cannot change the limits you set.' },
@@ -356,10 +356,10 @@ You set it up through Family Sharing — the parent sends a request from their o
 
 Family Link is free and works for kids under 13 automatically. For teenagers, both parent and teen have to agree to turn it on — but it still gives parents strong oversight.`,
     steps: [
-      { title: 'Install Family Link and link accounts', content: 'Follow the Google Family Link setup guide first — install the app on both phones, create or link the child\'s Google account, and make sure the child\'s phone shows up in your parent app.' },
-      { title: 'Open Play Store restrictions', content: 'On the child\'s phone, open the Play Store app, tap the profile icon, then Settings, then Family, then Parental Controls. Flip the switch on and create a PIN only you know.' },
+      { title: 'Install Family Link and link accounts', content: `Follow the Google Family Link setup guide first — install the app on both phones, create or link the child's Google account, and make sure the child's phone shows up in your parent app.` },
+      { title: 'Open Play Store restrictions', content: `On the child's phone, open the Play Store app, tap the profile icon, then Settings, then Family, then Parental Controls. Flip the switch on and create a PIN only you know.` },
       { title: 'Pick content ratings', content: 'Tap each category — Apps & games, Movies, TV, Books, Music — and pick the maturity level you want. Everything above that level will be hidden or require your approval.' },
-      { title: 'Turn on Google SafeSearch', content: 'In Family Link, tap your child\'s name, then Controls, then Google Search, then SafeSearch. Turn it on — this filters adult content out of Google search results.' },
+      { title: 'Turn on Google SafeSearch', content: `In Family Link, tap your child's name, then Controls, then Google Search, then SafeSearch. Turn it on — this filters adult content out of Google search results.` },
       { title: 'Set bedtime and app limits', content: 'In Family Link, tap Controls, then Daily Limit for total screen time. Tap Bedtime to lock the phone automatically during sleep hours. Calls and emergency features still work when the phone is locked.' },
     ],
   },
@@ -378,8 +378,8 @@ Family Link is free and works for kids under 13 automatically. For teenagers, bo
 You control everything from a parent profile that requires your Google account password to open. Kids get their own profile with age-appropriate content only.`,
     steps: [
       { title: 'Download YouTube Kids', content: 'Open the App Store (iPhone) or Play Store (Android), search for "YouTube Kids," and install the app. It has a red icon with a play button — not the regular YouTube icon.' },
-      { title: 'Sign in as a parent', content: 'Open the app and tap I\'m a Parent. Enter your birth year and sign in with your Google account. This creates the parent profile.' },
-      { title: 'Create a profile for each child', content: 'Tap Add Profile and enter the child\'s name, age, and photo (optional). Each child gets their own profile so YouTube Kids can match content to their age.' },
+      { title: 'Sign in as a parent', content: `Open the app and tap I'm a Parent. Enter your birth year and sign in with your Google account. This creates the parent profile.` },
+      { title: 'Create a profile for each child', content: `Tap Add Profile and enter the child's name, age, and photo (optional). Each child gets their own profile so YouTube Kids can match content to their age.` },
       { title: 'Pick a content setting', content: 'Choose Preschool (under 5), Younger (5–8), Older (9–12), or Approve Content Yourself. The first three filter videos automatically; the last one lets you hand-pick every allowed video.' },
       { title: 'Set a timer to limit watching', content: 'Tap the lock icon in the corner, solve the math problem, and tap Timer. Set how many minutes your child can watch — when time runs out, the app locks and tells them to take a break.' },
     ],
@@ -418,11 +418,11 @@ The method depends on how strict you need to be. Built-in Mac Screen Time and Wi
     difficulty: 'Beginner',
     body: `Smart refrigerators connect to your home Wi-Fi so you can check the inside temperature, get a warning if someone left the door open, and create shopping lists from your phone. Some models even have touchscreens and cameras inside.
 
-Setup happens through the brand\'s phone app — SmartThings for Samsung, LG ThinQ for LG, SmartHQ for GE. You download the app, create an account, and follow prompts to connect the fridge to your Wi-Fi.`,
+Setup happens through the brand's phone app — SmartThings for Samsung, LG ThinQ for LG, SmartHQ for GE. You download the app, create an account, and follow prompts to connect the fridge to your Wi-Fi.`,
     steps: [
-      { title: 'Find your fridge\'s brand app', content: 'Check the sticker inside the fridge or the owner\'s manual for the app name. Common ones: SmartThings (Samsung), LG ThinQ (LG), SmartHQ (GE), Home Connect (Bosch).' },
+      { title: `Find your fridge's brand app`, content: `Check the sticker inside the fridge or the owner's manual for the app name. Common ones: SmartThings (Samsung), LG ThinQ (LG), SmartHQ (GE), Home Connect (Bosch).` },
       { title: 'Download the app and create an account', content: 'Open the App Store or Play Store, install the app, and sign up with your email. This account will hold all your connected appliances from that brand.' },
-      { title: 'Put the fridge in pairing mode', content: 'On the fridge\'s control panel, look for a Wi-Fi, Network, or Connect button. Hold it for 3–5 seconds until a light starts blinking or the screen shows "Pairing."' },
+      { title: 'Put the fridge in pairing mode', content: `On the fridge's control panel, look for a Wi-Fi, Network, or Connect button. Hold it for 3–5 seconds until a light starts blinking or the screen shows "Pairing."` },
       { title: 'Follow the app prompts', content: 'In the app, tap Add Device or the plus icon, and pick Refrigerator. The app searches for the fridge, asks for your Wi-Fi password, and connects it. This takes 2–5 minutes.' },
       { title: 'Turn on useful alerts', content: 'In the app settings, turn on Door Ajar Alert (get a notification if the door is open more than 2 minutes), Temperature Alert, and Filter Replacement Reminder.' },
     ],
@@ -439,10 +439,10 @@ Setup happens through the brand\'s phone app — SmartThings for Samsung, LG Thi
     difficulty: 'Beginner',
     body: `Smart washers and dryers connect to Wi-Fi and talk to a phone app so you know when the load is done without walking to the laundry room. You can also start or pause a cycle from your phone, download specialty cycles, and get alerts if something goes wrong.
 
-Setup is similar to other smart appliances: download the brand\'s app (SmartThings, LG ThinQ, SmartHQ, Whirlpool), put the machine in pairing mode, and connect it to Wi-Fi through the app.`,
+Setup is similar to other smart appliances: download the brand's app (SmartThings, LG ThinQ, SmartHQ, Whirlpool), put the machine in pairing mode, and connect it to Wi-Fi through the app.`,
     steps: [
-      { title: 'Install the brand\'s app', content: 'Check your washer and dryer\'s owner manual or sticker for the app name. Download it from the App Store or Play Store and create an account with your email.' },
-      { title: 'Start in pairing mode', content: 'On the washer or dryer\'s control panel, hold the Wi-Fi or Remote Start button for 3–5 seconds. A Wi-Fi symbol or light will blink to show it is ready to pair.' },
+      { title: `Install the brand's app`, content: `Check your washer and dryer's owner manual or sticker for the app name. Download it from the App Store or Play Store and create an account with your email.` },
+      { title: 'Start in pairing mode', content: `On the washer or dryer's control panel, hold the Wi-Fi or Remote Start button for 3–5 seconds. A Wi-Fi symbol or light will blink to show it is ready to pair.` },
       { title: 'Add the appliance in the app', content: 'In the app, tap the plus icon and pick Washer or Dryer. The app will ask for your Wi-Fi name and password — the machine needs 2.4 GHz Wi-Fi, not 5 GHz.' },
       { title: 'Turn on Remote Start', content: 'Most washers require you to physically enable Remote Start each time for safety. Press the Remote Start or Smart Control button on the machine, then close the door and leave it there.' },
       { title: 'Set up notifications', content: 'In the app settings, turn on Cycle Complete alerts so your phone buzzes when laundry is done. Also turn on Error Alerts to get warnings about clogged filters or drain issues.' },
@@ -462,11 +462,32 @@ Setup is similar to other smart appliances: download the brand\'s app (SmartThin
 
 Most brands use the same app as their washers and fridges — SmartThings for Samsung, Home Connect for Bosch, SmartHQ for GE — so if you already have one set up, adding the dishwasher takes only a few minutes.`,
     steps: [
-      { title: 'Open your appliance brand\'s app', content: 'If you already use SmartThings, LG ThinQ, Home Connect, or SmartHQ for another appliance, open that app. Otherwise, install the one that matches your dishwasher brand.' },
+      { title: `Open your appliance brand's app`, content: 'If you already use SmartThings, LG ThinQ, Home Connect, or SmartHQ for another appliance, open that app. Otherwise, install the one that matches your dishwasher brand.' },
       { title: 'Tap the plus icon to add a device', content: 'Pick Dishwasher from the device list. The app will explain how to put your specific model into pairing mode — usually by holding the Start or Wi-Fi button.' },
       { title: 'Connect to your 2.4 GHz Wi-Fi', content: 'Enter your Wi-Fi password in the app. Most dishwashers only work with 2.4 GHz Wi-Fi — if your router has two networks, pick the one without "5G" in the name.' },
       { title: 'Enable cycle notifications', content: 'In the app settings, turn on Cycle Complete, Rinse Aid Low, and Salt Low alerts. The dishwasher will ping your phone when any of these happen.' },
       { title: 'Download extra programs', content: 'Some Bosch and Samsung dishwashers let you download extra wash programs from the app — for baby bottles, wine glasses, or heavily soiled pots. Tap Programs in the app and pick ones to add.' },
+    ],
+  },
+  {
+    slug: 'set-up-robot-vacuum',
+    title: 'How to Set Up a Robot Vacuum (Roomba, Roborock, etc.)',
+    excerpt: 'Schedule cleanings, map rooms, and set no-go zones from your phone. Setup for Roomba, Roborock, Eufy, and Shark robot vacuums takes 15 minutes.',
+    category: 'smart-home',
+    tags: ['robot vacuum', 'Roomba', 'Roborock', 'smart home', 'cleaning'],
+    readTime: '7 min',
+    thumbnailEmoji: '🤖',
+    publishedAt: '2026-04-17',
+    difficulty: 'Beginner',
+    body: `Robot vacuums like Roomba, Roborock, Eufy, and Shark clean your floors on a schedule while you are at work. Through the phone app you can start a cleaning, pick which rooms to vacuum, set "no-go zones" where it should not go (like around pet bowls), and see a map of your home.
+
+Each brand has its own app: iRobot Home (Roomba), Roborock, Eufy Clean, SharkClean. Setup is similar for all: download the app, plug in the dock, turn on the vacuum, and follow the pairing steps.`,
+    steps: [
+      { title: 'Set up the charging dock', content: 'Place the dock against a wall with at least 18 inches clear on each side and 3 feet clear in front. Plug it in and put the robot on the dock to start charging.' },
+      { title: `Download the brand's app`, content: 'Install the app for your vacuum brand and create an account. Charge the robot for at least two hours before the first cleaning — map quality improves with a full battery.' },
+      { title: 'Put the vacuum in pairing mode', content: 'Hold the Home and Spot Clean buttons (Roomba) or the power button (Roborock, Eufy) for 3–5 seconds until the robot beeps or says "ready to pair."' },
+      { title: 'Connect to Wi-Fi', content: 'In the app, tap Add Robot and pick your model. Enter your Wi-Fi password — use 2.4 GHz Wi-Fi, as most robot vacuums do not support 5 GHz.' },
+      { title: 'Run a mapping run', content: 'Tap Clean or Mapping Run in the app. The robot drives through every room to build a map. After it finishes, you can name rooms (Kitchen, Living Room) and set no-go zones by dragging lines on the map.' },
     ],
   },
   // ── WEARABLES ───────────────────────────────────────────────────────────────
@@ -522,7 +543,7 @@ Setup takes under 15 minutes. You create a Google account (Fitbit accounts moved
     thumbnailEmoji: '⌚',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `Samsung Galaxy Watch is a smart watch that works best with Android phones — especially Samsung Galaxy phones. It tracks steps, sleep, heart rate, and blood oxygen, and can even take an EKG reading. Newer models (Watch 4 and later) run Google\'s Wear OS.
+    body: `Samsung Galaxy Watch is a smart watch that works best with Android phones — especially Samsung Galaxy phones. It tracks steps, sleep, heart rate, and blood oxygen, and can even take an EKG reading. Newer models (Watch 4 and later) run Google's Wear OS.
 
 Setup uses two apps: Galaxy Wearable (to pair and manage the watch) and Samsung Health (to track fitness). Both are free in the Play Store.`,
     steps: [
@@ -536,7 +557,7 @@ Setup uses two apps: Galaxy Wearable (to pair and manage the watch) and Samsung 
   {
     slug: 'use-fall-detection-wearables',
     title: 'How to Turn On Fall Detection on Your Device',
-    excerpt: 'Apple Watch, Pixel phones, and many medical alerts can detect a hard fall and automatically call for help — here\'s how to turn it on.',
+    excerpt: `Apple Watch, Pixel phones, and many medical alerts can detect a hard fall and automatically call for help — here's how to turn it on.`,
     category: 'health-tech',
     tags: ['fall detection', 'Apple Watch', 'emergency', 'safety', 'health'],
     readTime: '5 min',
@@ -598,6 +619,27 @@ A simple system works best: one folder for each big category (Bills, Family, Wor
     ],
   },
   {
+    slug: 'unsubscribe-from-emails',
+    title: 'How to Unsubscribe from Unwanted Emails',
+    excerpt: 'Stop junk newsletters and promotional emails with the one-click unsubscribe button in Gmail, Outlook, and Apple Mail.',
+    category: 'tips-tricks',
+    tags: ['unsubscribe', 'email', 'newsletters', 'cleanup', 'privacy'],
+    readTime: '4 min',
+    thumbnailEmoji: '✂️',
+    publishedAt: '2026-04-17',
+    difficulty: 'Beginner',
+    body: `The U.S. CAN-SPAM Act requires every marketing email to have an unsubscribe link. Most email apps now show a quick unsubscribe button at the top of promotional messages so you do not have to hunt for the link at the bottom.
+
+One click removes you from the sender's list. Unsubscribing from one email at a time is the safest way — avoid services that promise to unsubscribe you from everything, since some of them sell your data.`,
+    steps: [
+      { title: 'Open a promotional email', content: 'Open any newsletter or marketing email you no longer want. These are usually from a company, not a person.' },
+      { title: 'Look for the Unsubscribe button', content: `In Gmail, Outlook, and Apple Mail, a small Unsubscribe link appears at the top of the message, next to the sender's name. Click or tap it.` },
+      { title: 'Confirm on the unsubscribe page', content: `Your email app may confirm on its own, or it may open the sender's website. Click Confirm or Unsubscribe if asked — legitimate senders only need one click.` },
+      { title: 'Scroll to the bottom as a backup', content: 'If you do not see an Unsubscribe button at the top, scroll to the very bottom of the email. Every legitimate marketing email has an Unsubscribe link there in small print.' },
+      { title: 'Mark as spam if the sender ignores you', content: 'If you unsubscribe and they keep emailing, mark the message as spam. In Gmail, click the exclamation-point icon; in Outlook, click Junk. Future emails from that sender will skip the inbox.' },
+    ],
+  },
+  {
     slug: 'set-up-email-signature',
     title: 'How to Set Up an Email Signature',
     excerpt: 'Add your name, phone number, and any contact info at the bottom of every email you send — set it once and forget it.',
@@ -633,7 +675,7 @@ Each email app has its own signature setting, but the idea is the same: type it 
 
 You need a second monitor and a cable to connect it (HDMI, DisplayPort, or USB-C). Setup on both Windows and Mac is automatic — plug it in and the second screen works immediately.`,
     steps: [
-      { title: 'Check your computer\'s ports', content: 'Look at the back or side of your computer for video ports: HDMI is a small trapezoid, DisplayPort is similar but with a notch, and USB-C is oval. Laptops often have HDMI or USB-C.' },
+      { title: `Check your computer's ports`, content: 'Look at the back or side of your computer for video ports: HDMI is a small trapezoid, DisplayPort is similar but with a notch, and USB-C is oval. Laptops often have HDMI or USB-C.' },
       { title: 'Buy the right cable', content: 'Buy a cable that matches both the computer and the monitor. If one has HDMI and the other has USB-C, buy an HDMI-to-USB-C cable or an adapter.' },
       { title: 'Plug in the second monitor', content: 'Plug the monitor into a wall outlet, then connect one end of the cable to the monitor and the other to the computer. Turn on the monitor.' },
       { title: 'Arrange the screens in settings', content: 'On Windows, right-click the desktop and pick Display Settings. On Mac, open System Settings, then Displays. Drag the two screen boxes to match how they sit on your desk — this tells the computer which side the mouse should cross over.' },
@@ -749,7 +791,7 @@ It is useful for shopping for a gift on a shared computer, signing into a second
   {
     slug: 'install-browser-extensions-safely',
     title: 'How to Install Browser Extensions Safely',
-    excerpt: 'Extensions can block ads, save passwords, or take notes — but malicious ones can steal data. Here\'s how to pick safe ones and remove risky ones.',
+    excerpt: `Extensions can block ads, save passwords, or take notes — but malicious ones can steal data. Here's how to pick safe ones and remove risky ones.`,
     category: 'safety-guides',
     tags: ['extensions', 'browser', 'security', 'Chrome', 'privacy'],
     readTime: '6 min',

@@ -64,10 +64,10 @@ Once your identity is verified, you can sign in to my Social Security anytime. F
 If you are age 60 or older and have not created this account yet, do it soon. Scammers sometimes try to create accounts using other people's Social Security numbers. By creating your own account first, you lock out anyone else from doing so.`,
     steps: [
       { title: 'Go to ssa.gov', content: 'Open your web browser and type ssa.gov in the address bar. Look for the "Sign in / Up" or "my Social Security" button near the top of the page and click it.' },
-      { title: 'Click Create an Account', content: 'You will be directed to create a Login.gov account. This is the federal government\'s secure login system. Enter your email address and choose a strong password.' },
+      { title: 'Click Create an Account', content: `You will be directed to create a Login.gov account. This is the federal government's secure login system. Enter your email address and choose a strong password.` },
       { title: 'Verify your email', content: 'Check your email for a message from Login.gov. Click the verification link in the email to confirm your address. If you do not see it, check your spam or junk folder.' },
       { title: 'Set up two-factor authentication', content: 'Login.gov will ask you to set up a second way to verify your identity — choose text message or phone call. Enter your phone number and type in the code they send you.' },
-      { title: 'Verify your identity', content: 'Enter your Social Security number, answer security questions about your credit history, and if asked, upload a photo of your driver\'s license or state ID. This step may take a few minutes.' },
+      { title: 'Verify your identity', content: `Enter your Social Security number, answer security questions about your credit history, and if asked, upload a photo of your driver's license or state ID. This step may take a few minutes.` },
       { title: 'Access your Social Security dashboard', content: 'Once verified, you can now sign in to my Social Security anytime. View your earnings history, estimated benefits, and manage your account from the main dashboard.' },
     ],
   },
@@ -125,9 +125,9 @@ After completing your return, review every number carefully. Choose direct depos
 
 File early to get your refund sooner and reduce the risk of tax identity theft, where someone files a fraudulent return using your Social Security number before you do.`,
     steps: [
-      { title: 'Go to irs.gov/freefile', content: 'Open your web browser and go to irs.gov/freefile. Do not go to a tax company\'s website directly — always start from the IRS site to ensure you get the truly free version.' },
+      { title: 'Go to irs.gov/freefile', content: `Open your web browser and go to irs.gov/freefile. Do not go to a tax company's website directly — always start from the IRS site to ensure you get the truly free version.` },
       { title: 'Choose your filing option', content: 'Select "Guided Tax Software" if your AGI is $84,000 or less. Select "Free File Fillable Forms" if your income is higher or you are comfortable with tax forms.' },
-      { title: 'Gather your documents', content: 'Have ready: your W-2 forms, any 1099 forms, Social Security numbers for you and dependents, bank routing and account numbers, and last year\'s AGI.' },
+      { title: 'Gather your documents', content: `Have ready: your W-2 forms, any 1099 forms, Social Security numbers for you and dependents, bank routing and account numbers, and last year's AGI.` },
       { title: 'Complete the interview questions', content: 'The software asks about your filing status, income, deductions, and credits step by step. Answer each question and the software handles the math and form selection.' },
       { title: 'Review your return carefully', content: 'Before submitting, check that your name, Social Security number, income amounts, and bank information are all correct.' },
       { title: 'Choose direct deposit and e-file', content: 'Enter your bank routing and account number for the fastest refund. Submit electronically and save the confirmation page and completed return for your records.' },
@@ -218,9 +218,9 @@ Registration deadlines vary by state — some require you to register 30 days be
 
 Even if you think you are registered, check before every major election. Voter rolls are occasionally purged, especially if you have not voted recently or if you moved. A two-minute check can save you a problem on Election Day.`,
     steps: [
-      { title: 'Go to vote.gov', content: 'Open your web browser and go to vote.gov. This is the official federal website that connects you to your state\'s voter registration system.' },
-      { title: 'Select your state', content: 'Choose your state from the dropdown menu. You will be directed to your state\'s official online voter registration portal.' },
-      { title: 'Gather your ID information', content: 'Have ready: your driver\'s license or state ID number, the last four digits of your Social Security number, your date of birth, and your current home address.' },
+      { title: 'Go to vote.gov', content: `Open your web browser and go to vote.gov. This is the official federal website that connects you to your state's voter registration system.` },
+      { title: 'Select your state', content: `Choose your state from the dropdown menu. You will be directed to your state's official online voter registration portal.` },
+      { title: 'Gather your ID information', content: `Have ready: your driver's license or state ID number, the last four digits of your Social Security number, your date of birth, and your current home address.` },
       { title: 'Fill out the registration form', content: 'Enter your personal information as prompted. Double-check your name, address, and date of birth. Select your party affiliation if your state requires it.' },
       { title: 'Submit and save confirmation', content: 'Click "Submit" to complete registration. Save or print the confirmation page. Some states mail a voter registration card within a few weeks.' },
       { title: 'Check your registration before each election', content: 'Visit vote.gov before each election to confirm your registration is active and your polling place has not changed.' },
@@ -253,7 +253,7 @@ Renew your passport at least 6 months before it expires. Many countries require 
       { title: 'Go to travel.state.gov', content: 'Navigate to "U.S. Passports" then "Renew My Passport" and select the online renewal option.' },
       { title: 'Sign in with Login.gov', content: 'Sign in to your Login.gov account or create one. This is the same secure account used for Social Security and other federal websites.' },
       { title: 'Complete the renewal application', content: 'Enter your personal information and passport details from your current passport — passport number, issue date, expiration date.' },
-      { title: 'Upload your passport photo', content: 'Take a new photo with plain white background, good lighting, and face centered. Use the State Department\'s photo tool to verify it meets requirements.' },
+      { title: 'Upload your passport photo', content: `Take a new photo with plain white background, good lighting, and face centered. Use the State Department's photo tool to verify it meets requirements.` },
       { title: 'Pay the fee and track status', content: 'Pay by credit or debit card ($130 book + $35 fee). Track your application at travel.state.gov. Processing takes 4 to 6 weeks.' },
     ],
   },
@@ -281,7 +281,7 @@ After submitting, your state schedules a phone or in-person interview. A casewor
 If your household is in an emergency situation with very low income and almost no food, ask about expedited SNAP benefits — eligible households can receive benefits within 7 days.`,
     steps: [
       { title: 'Check if you may qualify', content: 'Visit fns.usda.gov/snap to review income limits for your household size. Even if you are close to the limit, deductions for rent, utilities, and medical costs may qualify you.' },
-      { title: 'Find your state\'s application', content: 'Go to fns.usda.gov/snap and click "SNAP State Directory." Select your state to find the link to your online application portal.' },
+      { title: `Find your state's application`, content: 'Go to fns.usda.gov/snap and click "SNAP State Directory." Select your state to find the link to your online application portal.' },
       { title: 'Gather your documents', content: 'Collect: pay stubs or income documentation, a photo ID, your Social Security number, proof of address, and records of monthly expenses.' },
       { title: 'Complete the online application', content: 'Fill out the application with your household information, income, expenses, and personal details. Many states let you upload document photos through the portal.' },
       { title: 'Complete your interview', content: 'Your state will contact you for a phone or in-person interview. A caseworker verifies your information and may request additional documents.' },
@@ -340,7 +340,7 @@ Set up alerts for the locations where your family members live so you know about
     steps: [
       { title: 'Download the FEMA app', content: 'Open the App Store (iPhone) or Google Play Store (Android). Search for "FEMA" and download the official app published by the Department of Homeland Security.' },
       { title: 'Allow notifications and location', content: 'When the app asks for permissions, tap "Allow" for both notifications and location access. This ensures you receive relevant emergency alerts for your area.' },
-      { title: 'Set up alert locations', content: 'In the Alerts section, add up to five locations — your home, workplace, and family members\' cities.' },
+      { title: 'Set up alert locations', content: `In the Alerts section, add up to five locations — your home, workplace, and family members' cities.` },
       { title: 'Explore preparedness resources', content: 'Tap the "Prepare" tab for checklists on emergency supplies, family communication plans, and disaster-specific preparation.' },
       { title: 'Know how to find shelters', content: 'During a disaster, open the Shelters tab to see nearby open shelters on a map with addresses, directions, and services.' },
     ],
@@ -373,7 +373,7 @@ Your credit report does NOT include your credit score. The report is free; the s
       { title: 'Answer security questions', content: 'Provide your name, address, Social Security number, and date of birth. Answer security questions based on your credit history.' },
       { title: 'Choose which bureaus to check', content: 'Select Equifax, Experian, and TransUnion — or stagger checks throughout the year for ongoing monitoring.' },
       { title: 'Review each report carefully', content: 'Look for unrecognized accounts, incorrect details, and inaccurate payment history. Any of these could be errors or identity theft.' },
-      { title: 'Dispute any errors', content: 'Use each bureau\'s online dispute process. They must investigate within 30 days and correct verified errors.' },
+      { title: 'Dispute any errors', content: `Use each bureau's online dispute process. They must investigate within 30 days and correct verified errors.` },
     ],
   },
 
@@ -395,7 +395,7 @@ You need to bring specific documents: one proof of identity (valid passport, bir
 
 Many state DMV websites have a document checker tool — enter what documents you have and it tells you if they meet the requirements. Use this before your appointment so you do not waste a trip.`,
     steps: [
-      { title: 'Find your state\'s DMV website', content: 'Search "[your state] DMV" in Google and look for the official .gov website.' },
+      { title: `Find your state's DMV website`, content: 'Search "[your state] DMV" in Google and look for the official .gov website.' },
       { title: 'Navigate to the appointment scheduler', content: 'Look for "Schedule an Appointment" or "REAL ID" and select the REAL ID service type.' },
       { title: 'Choose location, date, and time', content: 'Select a DMV office near you and pick an available slot. If booked, try other offices or check back for cancellations.' },
       { title: 'Use the document checker tool', content: 'Most DMV websites offer a tool to verify your documents meet REAL ID requirements before you go.' },
@@ -426,9 +426,9 @@ After filing, your state reviews the claim and may contact your former employer.
 
 File as soon as possible. Most states have a one-week unpaid waiting period, and delays in filing mean delays in payments.`,
     steps: [
-      { title: 'Find your state\'s unemployment website', content: 'Search "[your state] unemployment benefits" or go to careeronestop.org for a direct link to your state\'s portal.' },
+      { title: `Find your state's unemployment website`, content: `Search "[your state] unemployment benefits" or go to careeronestop.org for a direct link to your state's portal.` },
       { title: 'Create an account', content: 'Most states require an online account. Enter your personal information, email, and a password.' },
-      { title: 'Gather employment information', content: 'Collect: Social Security number, driver\'s license number, employer names and addresses for the past 18 months, employment dates, and reasons for leaving.' },
+      { title: 'Gather employment information', content: `Collect: Social Security number, driver's license number, employer names and addresses for the past 18 months, employment dates, and reasons for leaving.` },
       { title: 'Complete the application', content: 'Answer all questions about work history, reason for job loss, and current status. Be accurate — your former employer will be contacted.' },
       { title: 'Set up direct deposit', content: 'Enter bank routing and account numbers for faster, safer benefit payments.' },
       { title: 'Certify weekly', content: 'Log in every week or two to certify you are still looking for work, report any income, and confirm you have not turned down a job offer.' },
@@ -455,12 +455,12 @@ Many counties offer a homestead exemption that reduces your tax if the home is y
 
 If you believe your property is over-assessed, you can appeal. Look for an "Appeal" or "Protest" section on your assessor's website. Appeals are usually due within 30 to 90 days of your assessment notice.`,
     steps: [
-      { title: 'Search for your county\'s tax website', content: 'Google "[your county name] property tax" or "[your county name] assessor." Click the official .gov website.' },
+      { title: `Search for your county's tax website`, content: 'Google "[your county name] property tax" or "[your county name] assessor." Click the official .gov website.' },
       { title: 'Search for your property', content: 'Enter your home address, parcel number, or name to find your property record.' },
       { title: 'Review your assessed value', content: 'Check the value the county assigned to your property — this is used to calculate your tax and may differ from market value.' },
       { title: 'Check balance and due dates', content: 'Review how much you owe and when payments are due. Note any past-due amounts or penalties.' },
       { title: 'Look into exemptions', content: 'Check if you qualify for homestead, senior, veteran, or disability exemptions that can lower your bill.' },
-      { title: 'Appeal if assessment is too high', content: 'Look for the "Appeal" section on your assessor\'s website. Note the deadline — typically 30 to 90 days from your assessment notice.' },
+      { title: 'Appeal if assessment is too high', content: `Look for the "Appeal" section on your assessor's website. Note the deadline — typically 30 to 90 days from your assessment notice.` },
     ],
   },
 
@@ -500,7 +500,7 @@ Set a reminder for when reservations open. Most parks release sites at 10:00 AM 
   {
     slug: 'set-up-mobile-check-deposit',
     title: 'How to Set Up Mobile Check Deposit on Your Phone',
-    excerpt: 'Deposit checks from your phone using your bank\'s app — no trip to the branch or ATM required.',
+    excerpt: `Deposit checks from your phone using your bank's app — no trip to the branch or ATM required.`,
     category: 'financial-tech' as any,
     tags: ['mobile banking', 'check deposit', 'banking', 'phone', 'finances'],
     readTime: '5 min',
@@ -515,7 +515,7 @@ Tap "Deposit," enter the check amount, select your account, and photograph the f
 
 Keep the physical check for 30 days after depositing, then shred it. Never deposit the same check at an ATM or branch — double-depositing causes serious account problems.`,
     steps: [
-      { title: 'Download your bank\'s app', content: 'Open the App Store or Google Play Store, search for your bank\'s name, download the official app, and sign in with your online banking credentials.' },
+      { title: `Download your bank's app`, content: `Open the App Store or Google Play Store, search for your bank's name, download the official app, and sign in with your online banking credentials.` },
       { title: 'Find Mobile Deposit', content: 'Look for "Deposit" or "Mobile Deposit" on the home screen or navigation menu. Your bank may take a day to activate this feature the first time.' },
       { title: 'Endorse the check', content: 'Sign the back of the check and write "For Mobile Deposit Only" below your signature. This endorsement is required by federal regulations.' },
       { title: 'Enter deposit details', content: 'Tap "Deposit," enter the exact dollar amount on the check, and select which account receives the deposit.' },
@@ -542,9 +542,9 @@ To send: enter the recipient's email or phone number, enter the amount, add an o
 
 Important safety note: Zelle transfers are instant and cannot be reversed. Only send money to people you know and trust. Scammers pretend to be your bank and ask you to "send money to yourself" to fix a problem — your bank will never ask this. If a stranger asks you to pay with Zelle, that is a red flag.`,
     steps: [
-      { title: 'Open Zelle in your bank\'s app', content: 'Open your bank\'s mobile app and look for "Zelle" or "Send Money with Zelle" in the transfers or payments section.' },
+      { title: `Open Zelle in your bank's app`, content: `Open your bank's mobile app and look for "Zelle" or "Send Money with Zelle" in the transfers or payments section.` },
       { title: 'Enroll your email or phone number', content: 'Choose whether to connect your email address or phone number. This is how people will send money to you.' },
-      { title: 'Enter the recipient\'s information', content: 'Tap "Send" and enter the recipient\'s email address or phone number. They need to be enrolled with Zelle or will receive signup instructions.' },
+      { title: `Enter the recipient's information`, content: `Tap "Send" and enter the recipient's email address or phone number. They need to be enrolled with Zelle or will receive signup instructions.` },
       { title: 'Enter amount and send', content: 'Type the dollar amount, add an optional note, review the details, and tap "Send." Money arrives in minutes.' },
       { title: 'Know the safety rules', content: 'Only send to people you know and trust. Transfers cannot be reversed. Your bank will never ask you to send money through Zelle to fix a problem.' },
     ],
@@ -626,7 +626,7 @@ Good candidates for auto-pay: rent or mortgage, utilities, phone and internet, i
 Be cautious with free trials requiring a credit card — companies often start charging when the trial ends. Set a calendar reminder to cancel before conversion. If using auto-pay with a bank account, ensure you always have enough to cover the payment. Insufficient funds can result in overdraft fees from your bank and returned-payment fees from the biller.`,
     steps: [
       { title: 'Choose bills for auto-pay', content: 'Start with fixed-amount bills (insurance, subscriptions, phone). Then consider variable bills like utilities where you can auto-pay the full balance or minimum.' },
-      { title: 'Log in to the biller\'s website', content: 'Go to the company\'s website or app, sign in, and find "Payment Settings," "Auto-Pay," or "Automatic Payments."' },
+      { title: `Log in to the biller's website`, content: `Go to the company's website or app, sign in, and find "Payment Settings," "Auto-Pay," or "Automatic Payments."` },
       { title: 'Choose your payment method', content: 'Select bank account (usually free) or card (some billers charge a fee). Enter your payment information.' },
       { title: 'Set amount and timing', content: 'Choose to pay the full balance, minimum, or a fixed amount. Set whether payment happens on the due date or a few days before.' },
       { title: 'Confirm and verify', content: 'Review settings and confirm. You should receive a confirmation email. The next payment processes automatically on schedule.' },
@@ -682,7 +682,7 @@ For fraud monitoring, make sure your phone number and email are current in your 
 
 If you receive a text claiming to be from your bank with a link to click — do NOT click it. Scammers send fake alert texts to steal your login. Instead, call your bank directly using the number on the back of your card.`,
     steps: [
-      { title: 'Open your bank\'s settings', content: 'Sign in to your bank\'s app or website. Navigate to Settings, Alerts, Notifications, or Security.' },
+      { title: `Open your bank's settings`, content: `Sign in to your bank's app or website. Navigate to Settings, Alerts, Notifications, or Security.` },
       { title: 'Enable transaction alerts', content: 'Turn on notifications for purchases, ATM withdrawals, online transactions, and balance changes. Set threshold to $0 to see every transaction.' },
       { title: 'Choose notification method', content: 'Select push notifications (fastest), text messages, or email. Push notifications offer the most immediate protection.' },
       { title: 'Verify contact information', content: 'Make sure your phone number and email are up to date so your bank can reach you about suspicious transactions.' },
@@ -745,8 +745,8 @@ You can add multiple cards and set a default for everyday purchases. Switch card
 
   {
     slug: 'use-bank-mobile-app',
-    title: 'How to Use Your Bank\'s Mobile App',
-    excerpt: 'Download and set up your bank\'s app to check balances, pay bills, transfer money, and deposit checks from your phone.',
+    title: `How to Use Your Bank's Mobile App`,
+    excerpt: `Download and set up your bank's app to check balances, pay bills, transfer money, and deposit checks from your phone.`,
     category: 'financial-tech' as any,
     tags: ['mobile banking', 'bank app', 'finances', 'phone', 'beginners'],
     readTime: '6 min',
@@ -763,7 +763,7 @@ Key features: "Transfer" or "Move Money" for moving between accounts, "Bill Pay"
 
 Turn on push notifications in the app settings for instant alerts about deposits, withdrawals, and suspicious activity. This is one of the best ways to catch unauthorized transactions quickly.`,
     steps: [
-      { title: 'Download your bank\'s official app', content: 'Search your bank\'s name in the App Store or Google Play Store. Verify the publisher is your actual bank before downloading.' },
+      { title: `Download your bank's official app`, content: `Search your bank's name in the App Store or Google Play Store. Verify the publisher is your actual bank before downloading.` },
       { title: 'Sign in or enroll', content: 'Sign in with your online banking username and password. If you have not set up online banking, tap "Enroll" and follow the prompts.' },
       { title: 'Enable biometric login', content: 'When asked to use Face ID, Touch ID, or fingerprint, tap "Yes" for faster, more secure logins.' },
       { title: 'Explore your accounts', content: 'The home screen shows balances. Tap any account to see recent transactions, pending charges, and available balance.' },
@@ -848,7 +848,7 @@ When filing: explain specifically why you are disputing ("I did not authorize th
 
 Your card company must acknowledge within 30 days and resolve within 90 days. During investigation, you do not pay the disputed amount and it cannot be reported as overdue. You must dispute within 60 days of the statement date, so review statements regularly.`,
     steps: [
-      { title: 'Identify the suspicious charge', content: 'Review your statement in your card company\'s app or website. Note the date, amount, and merchant name.' },
+      { title: 'Identify the suspicious charge', content: `Review your statement in your card company's app or website. Note the date, amount, and merchant name.` },
       { title: 'Try contacting the merchant', content: 'For billing errors or undelivered goods, call or email the merchant first. Keep records of your communication.' },
       { title: 'File a dispute with your card company', content: 'In the app or website, find the charge and tap "Dispute" or "Report a problem." Or call the number on your card.' },
       { title: 'Provide documentation', content: 'Upload evidence: receipts, order confirmations, emails, tracking numbers, or photos of damaged goods.' },
@@ -877,7 +877,7 @@ Key dates: billing cycle end date (when the statement generates), payment due da
 
 Pay your full statement balance by the due date to avoid all interest. If you cannot, always pay at least the minimum to avoid late fees and credit score damage. Set up auto-pay for at least the minimum.`,
     steps: [
-      { title: 'Find your statement', content: 'Log in to your card company\'s website or app. Look for "Statements" or "Documents" in the menu.' },
+      { title: 'Find your statement', content: `Log in to your card company's website or app. Look for "Statements" or "Documents" in the menu.` },
       { title: 'Review the Account Summary', content: 'Check previous balance, new charges, payments, and new balance. Compare to your credit limit.' },
       { title: 'Check Payment Information', content: 'Note your due date and minimum payment. Read the payoff warning to understand why paying more than the minimum matters.' },
       { title: 'Review every transaction', content: 'Go through the list carefully. Flag any unfamiliar charges — these could be errors or unauthorized transactions.' },
@@ -1024,7 +1024,7 @@ Test by pressing the doorbell button — you should receive a notification and s
 Ring Protect subscription plans let you save and review video recordings. Without a plan, you still get live video and motion alerts.`,
     steps: [
       { title: 'Download the Ring app', content: 'Get the Ring app from App Store or Google Play Store. Create an account or sign in.' },
-      { title: 'Add your device', content: 'Tap "Set Up a Device" → "Doorbells." Scan the QR code on the Ring\'s back to begin WiFi setup.' },
+      { title: 'Add your device', content: `Tap "Set Up a Device" → "Doorbells." Scan the QR code on the Ring's back to begin WiFi setup.` },
       { title: 'Choose installation type', content: 'Battery-powered models need no wiring. Wired models connect to existing doorbell wires.' },
       { title: 'Mount the doorbell', content: 'Position the bracket at 4 feet high, drill screw holes, attach the bracket, and snap on the Ring.' },
       { title: 'Test the doorbell', content: 'Press the button to trigger a notification and live video on your phone. Test two-way audio.' },
@@ -1053,10 +1053,10 @@ For voice control, link your smart bulb account in the Alexa or Google Home app.
 Leave wall switches ON at all times with smart bulbs. If the switch is off, the bulb loses power and cannot respond to commands. Consider a smart switch cover to prevent accidental switch-offs.`,
     steps: [
       { title: 'Install the bulb', content: 'Screw in the smart bulb and make sure the wall switch is ON — smart bulbs need constant power.' },
-      { title: 'Download the app', content: 'Get your bulb brand\'s app (Wyze, LIFX, Kasa, Philips Hue) and create an account.' },
+      { title: 'Download the app', content: `Get your bulb brand's app (Wyze, LIFX, Kasa, Philips Hue) and create an account.` },
       { title: 'Add the bulb', content: 'Tap "Add Device" and follow pairing instructions. The bulb blinks to confirm pairing mode. Connect to your WiFi.' },
       { title: 'Test the controls', content: 'Use the app to turn on/off, adjust brightness, and change color. Set a schedule for automatic on/off times.' },
-      { title: 'Connect to your smart speaker', content: 'In the Alexa or Google Home app, link your bulb\'s brand account for voice control.' },
+      { title: 'Connect to your smart speaker', content: `In the Alexa or Google Home app, link your bulb's brand account for voice control.` },
       { title: 'Keep the wall switch ON', content: 'Leave the physical switch on. Use the app or voice commands to control the bulb.' },
     ],
   },
@@ -1087,6 +1087,34 @@ Both Nest and Ecobee typically pay for themselves in 1-2 years through energy sa
     ],
   },
 
+  {
+    slug: 'set-up-robot-vacuum',
+    title: 'How to Set Up a Robot Vacuum (Roomba)',
+    excerpt: 'Unbox, charge, and set up your robot vacuum to clean floors automatically on a schedule.',
+    category: 'smart-home' as any,
+    tags: ['Roomba', 'robot vacuum', 'smart home', 'cleaning', 'automation'],
+    readTime: '6 min',
+    thumbnailEmoji: '🤖',
+    publishedAt: '2026-04-15',
+    difficulty: 'Beginner',
+    body: `A robot vacuum cleans floors automatically, navigating around furniture and along baseboards. Popular brands include Roomba (iRobot), Roborock, Shark, and Ecovacs. Once set up, schedule it to clean daily or start it from your phone.
+
+Place the charging dock against a wall on a hard floor with 1.5 feet of clearance on each side and 4 feet in front. Plug it in and place the robot on the dock to charge fully (2-3 hours).
+
+Download the manufacturer's app (iRobot Home for Roomba, Roborock, etc.), create an account, and tap "Add a Robot." The app guides you through WiFi connection — usually hold a button on the robot until it beeps, then enter your WiFi password in the app.
+
+Before the first run, pick up loose items from the floor — charging cables, socks, shoelaces, and small toys can tangle in the brushes. Tuck cords behind furniture.
+
+Tap "Clean" in the app or press the button on top. The robot maps your home during the first few runs and gets more efficient over time. Set a cleaning schedule (like weekdays at 10 AM) so it cleans automatically while you are out.`,
+    steps: [
+      { title: 'Set up the charging dock', content: 'Place against a wall on hard floor with clearance. Plug in and place the robot on it to charge fully (2-3 hours).' },
+      { title: 'Download the app', content: `Get the app for your robot's brand, create an account, and tap "Add a Robot."` },
+      { title: 'Connect to WiFi', content: 'Follow app instructions — press a button on the robot, then enter your WiFi password.' },
+      { title: 'Prepare your floors', content: 'Pick up loose items — cables, socks, small toys. Tuck cords behind furniture.' },
+      { title: 'Run the first cleaning', content: `Tap "Clean" in the app or press the robot's button. It maps your home during the first few runs.` },
+      { title: 'Set a schedule', content: 'Create a cleaning schedule in the app. The robot starts automatically, cleans, and returns to dock.' },
+    ],
+  },
 
   {
     slug: 'use-voice-commands-alexa',
@@ -1168,7 +1196,7 @@ Test on/off from the app. Set schedules — turn the lamp on at sunset and off a
 Great uses: scheduling lamps for vacation security, starting a coffee maker in the morning, turning off fans at bedtime, and monitoring energy usage (some models track electricity consumption).`,
     steps: [
       { title: 'Plug it in', content: 'Insert the smart plug into a wall outlet. The indicator light should blink for pairing mode.' },
-      { title: 'Download the app and add device', content: 'Get the brand\'s app, create an account, tap "Add Device," and follow instructions to connect to WiFi.' },
+      { title: 'Download the app and add device', content: `Get the brand's app, create an account, tap "Add Device," and follow instructions to connect to WiFi.` },
       { title: 'Plug in your device', content: 'Plug a lamp or appliance with a physical ON/OFF switch into the smart plug. Leave the switch in the ON position.' },
       { title: 'Test and set schedules', content: 'Use the app to turn on/off. Create schedules for automatic control — sunset to 11 PM for lamps, for example.' },
       { title: 'Link to voice assistant', content: 'In the Alexa or Google Home app, link your smart plug brand for voice control.' },
@@ -1196,11 +1224,11 @@ Configure motion detection zones in the app to focus on areas that matter (doorw
 A visible camera also acts as a deterrent. For outdoor use, ensure the camera is weather-rated (IP65 or IP67).`,
     steps: [
       { title: 'Choose type and location', content: 'Decide indoor or outdoor, wired or battery. Choose a spot with a good vantage point and WiFi signal.' },
-      { title: 'Download the app', content: 'Get the camera brand\'s app, create an account, tap "Add Device," and select your model.' },
+      { title: 'Download the app', content: `Get the camera brand's app, create an account, tap "Add Device," and select your model.` },
       { title: 'Connect to WiFi', content: 'Scan the QR code on the camera and enter your WiFi password in the app.' },
       { title: 'Mount the camera', content: 'Use included hardware. Position at a slight downward angle aimed at entry points.' },
       { title: 'Configure motion detection', content: 'Set detection zones and sensitivity to focus on important areas and reduce false alerts.' },
-      { title: 'Test and review', content: 'Walk through the camera\'s view to trigger an alert. Check video quality and adjust angle if needed.' },
+      { title: 'Test and review', content: `Walk through the camera's view to trigger an alert. Check video quality and adjust angle if needed.` },
     ],
   },
 
@@ -1314,7 +1342,7 @@ If you do not have a library card, most libraries let you sign up online for fre
       { title: 'Find and sign in to your library', content: 'Search for your local library in the app. Enter your library card number and PIN.' },
       { title: 'Browse and borrow', content: 'Search by title, author, or genre. Tap "Borrow" for available titles or "Place Hold" for ones in use.' },
       { title: 'Listen or read', content: 'For audiobooks, tap "Open in Libby" to listen. For ebooks, read in the app or send to your Kindle.' },
-      { title: 'Get a library card if needed', content: 'Visit your local library\'s website and look for "Get a Card" or "Register" — most offer free online sign-up.' },
+      { title: 'Get a library card if needed', content: `Visit your local library's website and look for "Get a Card" or "Register" — most offer free online sign-up.` },
     ],
   },
 
@@ -1524,7 +1552,7 @@ To manage storage: go to your streaming app's settings → Downloads. You can se
       { title: 'Find the download icon', content: 'On a movie or episode page, look for the download icon (arrow pointing down). Not all titles are available for download.' },
       { title: 'Download before your trip', content: 'Download movies and shows while connected to WiFi before traveling. Downloads use your storage space.' },
       { title: 'Watch offline', content: 'Go to the Downloads section of the app. Tap any title to watch — no internet needed.' },
-      { title: 'Manage storage', content: 'In the app\'s settings, check download storage usage. Delete finished downloads and consider lower quality to save space.' },
+      { title: 'Manage storage', content: `In the app's settings, check download storage usage. Delete finished downloads and consider lower quality to save space.` },
     ],
   },
 
@@ -1586,7 +1614,7 @@ Check the buyer or seller's Facebook profile. Established profiles with friends,
       { title: 'Filter your search', content: 'Use filters for location, price range, condition (new/used), and category to narrow results.' },
       { title: 'Message the seller', content: 'Tap "Message" on a listing to ask questions or arrange a meeting. Be specific about when and where to meet.' },
       { title: 'Meet in a safe public place', content: 'Always meet at a police station parking lot, coffee shop, or other well-lit public location. Bring a friend.' },
-      { title: 'Check profiles before dealing', content: 'Review the buyer or seller\'s Facebook profile. Established accounts with history are more trustworthy than brand-new empty profiles.' },
+      { title: 'Check profiles before dealing', content: `Review the buyer or seller's Facebook profile. Established accounts with history are more trustworthy than brand-new empty profiles.` },
     ],
   },
 
@@ -1644,14 +1672,14 @@ Register your number at donotcall.gov to reduce calls from legitimate telemarket
       { title: 'Silence unknown callers', content: 'iPhone: Settings → Phone → Silence Unknown Callers. Android: Phone → Settings → enable spam filtering.' },
       { title: 'Filter spam texts', content: 'iPhone: Settings → Messages → "Filter Unknown Senders." Android: Messages → Settings → Spam Protection.' },
       { title: 'Register on the Do Not Call list', content: 'Go to donotcall.gov and enter your phone number. Reduces legitimate telemarketer calls.' },
-      { title: 'Activate carrier spam blocking', content: 'Download your carrier\'s free app: AT&T ActiveArmor, Verizon Call Filter, or T-Mobile Scam Shield.' },
+      { title: 'Activate carrier spam blocking', content: `Download your carrier's free app: AT&T ActiveArmor, Verizon Call Filter, or T-Mobile Scam Shield.` },
     ],
   },
 
   {
     slug: 'manage-notification-settings',
     title: 'How to Manage Your Notification Settings',
-    excerpt: 'Take control of your phone\'s notifications — silence the noisy apps and keep the ones that matter.',
+    excerpt: `Take control of your phone's notifications — silence the noisy apps and keep the ones that matter.`,
     category: 'communication' as any,
     tags: ['notifications', 'settings', 'phone', 'iPhone', 'Android'],
     readTime: '5 min',
@@ -1704,7 +1732,7 @@ For other services you have forgotten about, try searching your email inbox for 
     steps: [
       { title: 'List your old accounts', content: 'Search your email inbox for "welcome to" or "confirm your email" to find accounts you may have forgotten about.' },
       { title: 'Download your data first', content: 'Before deleting, export your photos, posts, and messages. Each service has a data download tool in Settings.' },
-      { title: 'Navigate to the delete page', content: 'Go to each service\'s settings and find "Delete Account" or "Close Account." It is often under Privacy, Security, or Account Management.' },
+      { title: 'Navigate to the delete page', content: `Go to each service's settings and find "Delete Account" or "Close Account." It is often under Privacy, Security, or Account Management.` },
       { title: 'Confirm deletion', content: 'Follow the prompts to confirm. Most services have a 30-day grace period where you can change your mind.' },
       { title: 'Use justdelete.me for other services', content: 'Visit justdelete.me for direct links to deletion pages of hundreds of online services.' },
     ],
@@ -1736,7 +1764,7 @@ Stories are short posts (photos or videos) that disappear after 24 hours. They a
       { title: 'Set your account to private', content: 'Go to Settings → Privacy → toggle on "Private Account" so only approved followers can see your posts.' },
       { title: 'Find and follow people', content: 'Tap the search icon, search for friends by name, and tap "Follow." Browse topics that interest you.' },
       { title: 'Post a photo', content: 'Tap "+" at the bottom, select or take a photo, add a caption, and tap "Share."' },
-      { title: 'View and post Stories', content: 'Tap circles at the top to view others\' Stories. Swipe right from the home screen to create your own 24-hour Story.' },
+      { title: 'View and post Stories', content: `Tap circles at the top to view others' Stories. Swipe right from the home screen to create your own 24-hour Story.` },
     ],
   },
 
@@ -1764,7 +1792,7 @@ If you are hosting a call for family, send the meeting link via text message so 
     steps: [
       { title: 'Download Zoom', content: 'Get Zoom from App Store, Google Play, or zoom.us on your computer. Create a free account.' },
       { title: 'Start a meeting', content: 'Tap "New Meeting" → "Start a Meeting." Share the meeting link with participants via text or email.' },
-      { title: 'Join someone else\'s meeting', content: 'Tap "Join" and enter the Meeting ID, or tap the link they shared with you.' },
+      { title: `Join someone else's meeting`, content: 'Tap "Join" and enter the Meeting ID, or tap the link they shared with you.' },
       { title: 'Learn the controls', content: 'Tap the screen to see Mute, Stop Video, Chat, and Share Screen buttons.' },
       { title: 'Schedule recurring calls', content: 'Use "Schedule" to create meetings with a set time and reusable link — great for weekly family calls.' },
     ],
@@ -1893,7 +1921,7 @@ Option 3: If you do not want to leave entirely but the notifications are too muc
   {
     slug: 'use-patient-portal-mychart',
     title: 'How to Use a Patient Portal (MyChart)',
-    excerpt: 'Log in to MyChart or your doctor\'s patient portal to see test results, message your doctor, and manage appointments.',
+    excerpt: `Log in to MyChart or your doctor's patient portal to see test results, message your doctor, and manage appointments.`,
     category: 'health-tech' as any,
     tags: ['MyChart', 'patient portal', 'healthcare', 'doctor', 'medical records'],
     readTime: '6 min',
@@ -1912,10 +1940,10 @@ For prescription refills, go to "Medications" → "Request Refill." Select the m
 
 Patient portals are secure — your health information is protected by federal law (HIPAA). Make sure to use a strong, unique password and enable two-factor authentication if offered.`,
     steps: [
-      { title: 'Get your activation code', content: 'Ask your doctor\'s office for a patient portal activation code. They may give it to you at your next visit or send it by email.' },
+      { title: 'Get your activation code', content: `Ask your doctor's office for a patient portal activation code. They may give it to you at your next visit or send it by email.` },
       { title: 'Create your account', content: 'Go to the portal website or download the MyChart app. Use the activation code to create an account with your email and a strong password.' },
       { title: 'View test results', content: 'Tap "Test Results" to see lab work. Results typically appear within 1-2 days of your test.' },
-      { title: 'Message your doctor', content: 'Tap "Messages" to send secure, non-emergency questions to your doctor\'s team. Expect a reply within 1-2 business days.' },
+      { title: 'Message your doctor', content: `Tap "Messages" to send secure, non-emergency questions to your doctor's team. Expect a reply within 1-2 business days.` },
       { title: 'Schedule appointments', content: 'Go to "Appointments" to schedule, reschedule, or cancel visits. Some offices allow direct booking; others confirm your request.' },
       { title: 'Request prescription refills', content: 'Go to "Medications" → "Request Refill." Select the medication and pharmacy. Your doctor approves and sends it.' },
     ],
@@ -1943,10 +1971,10 @@ During the visit, your doctor can see and hear you, ask questions, review your s
 
 If you have trouble connecting, call your doctor's office. Many have a support line for telehealth technical issues. Check that your browser is up to date, or try a different device if the video is not working.`,
     steps: [
-      { title: 'Schedule a video visit', content: 'Call your doctor\'s office or use the patient portal to book a telehealth appointment. Ask for a "video visit."' },
+      { title: 'Schedule a video visit', content: `Call your doctor's office or use the patient portal to book a telehealth appointment. Ask for a "video visit."` },
       { title: 'Prepare your device', content: 'Use a phone, tablet, or computer with a camera and microphone. Test your WiFi connection beforehand.' },
       { title: 'Set up your space', content: 'Find a quiet, well-lit room. Sit near a window for natural light on your face. Minimize background noise.' },
-      { title: 'Join the video call', content: 'Click the link your doctor\'s office sent by email or text. Check in online if prompted. Wait in the virtual waiting room.' },
+      { title: 'Join the video call', content: `Click the link your doctor's office sent by email or text. Check in online if prompted. Wait in the virtual waiting room.` },
       { title: 'Have your information ready', content: 'Keep your medications, list of questions, pharmacy name, and insurance card nearby during the visit.' },
     ],
   },
@@ -1954,7 +1982,7 @@ If you have trouble connecting, call your doctor's office. Many have a support l
   {
     slug: 'set-up-medication-reminders-phone',
     title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: 'Never forget to take your medication — use your phone\'s built-in tools or a free app to set daily reminders.',
+    excerpt: `Never forget to take your medication — use your phone's built-in tools or a free app to set daily reminders.`,
     category: 'health-tech' as any,
     tags: ['medication', 'reminders', 'health', 'phone', 'alarms'],
     readTime: '5 min',
@@ -2091,11 +2119,11 @@ Many hearing aid manufacturers also have companion apps (Phonak myPhonak, Oticon
 
 If you have trouble pairing, make sure your hearing aids have fresh batteries (or are charged), your phone's Bluetooth is turned on, and you are within 3 feet of your phone during pairing.`,
     steps: [
-      { title: 'Check Bluetooth compatibility', content: 'Verify your hearing aids support Bluetooth. Check the manufacturer\'s website or ask your audiologist.' },
-      { title: 'Put hearing aids in pairing mode', content: 'Open and close the battery door, or follow your hearing aid\'s specific pairing instructions. The hearing aids are ready to connect.' },
+      { title: 'Check Bluetooth compatibility', content: `Verify your hearing aids support Bluetooth. Check the manufacturer's website or ask your audiologist.` },
+      { title: 'Put hearing aids in pairing mode', content: `Open and close the battery door, or follow your hearing aid's specific pairing instructions. The hearing aids are ready to connect.` },
       { title: 'Pair on iPhone', content: 'Settings → Accessibility → Hearing Devices. Your iPhone detects them. Tap to pair.' },
       { title: 'Pair on Android', content: 'Settings → Connected Devices → Pair New Device. Or Settings → Accessibility → Hearing Devices for ASHA-compatible aids.' },
-      { title: 'Download the companion app', content: 'Get your hearing aid brand\'s app for extra controls: volume, programs, equalizer, and lost hearing aid locator.' },
+      { title: 'Download the companion app', content: `Get your hearing aid brand's app for extra controls: volume, programs, equalizer, and lost hearing aid locator.` },
     ],
   },
 
@@ -2123,7 +2151,7 @@ What to look for: most adults need 7-9 hours of sleep. If your tracker consisten
     steps: [
       { title: 'Enable sleep tracking', content: 'Apple Watch: Watch app → Sleep → enable tracking. Fitbit: automatic. Samsung: automatic. Wear your device to bed.' },
       { title: 'Wear your device overnight', content: 'Make sure the device fits snugly on your wrist and has enough battery (20%+ for a full night).' },
-      { title: 'Check your data in the morning', content: 'Open your device\'s health app to see time asleep, wake-ups, and sleep stages (light, deep, REM).' },
+      { title: 'Check your data in the morning', content: `Open your device's health app to see time asleep, wake-ups, and sleep stages (light, deep, REM).` },
       { title: 'Review trends over time', content: 'Look at weekly and monthly sleep trends rather than single nights. Consistent patterns are more meaningful.' },
       { title: 'Make adjustments based on data', content: 'If you consistently get less than 7 hours or little deep sleep, try adjusting bedtime, reducing caffeine, and limiting screens before bed.' },
     ],
@@ -2182,7 +2210,7 @@ The app stores every reading with the date and time. Over weeks and months, you 
 Normal blood pressure is below 120/80. Talk to your doctor about your target if you are on medication. The American Heart Association recommends measuring at the same time each day for consistent results.`,
     steps: [
       { title: 'Get a Bluetooth blood pressure monitor', content: 'Purchase an Omron, Withings, or QardioArm Bluetooth-connected monitor from a pharmacy or online retailer ($50-100).' },
-      { title: 'Download the companion app', content: 'Get the monitor\'s app (Omron Connect, Withings Health Mate, or Qardio) from the App Store or Google Play Store.' },
+      { title: 'Download the companion app', content: `Get the monitor's app (Omron Connect, Withings Health Mate, or Qardio) from the App Store or Google Play Store.` },
       { title: 'Pair via Bluetooth', content: 'Follow the app instructions to connect the monitor to your phone. Keep Bluetooth turned on during pairing.' },
       { title: 'Take a proper reading', content: 'Sit in a chair, feet flat, rest 5 minutes. Place the cuff on your upper arm correctly. Press start and keep still.' },
       { title: 'Review trends and share', content: 'Check your app for charts and averages over time. Bring your phone to doctor appointments to share the data.' },
@@ -2293,7 +2321,7 @@ After switching, download the Android versions of your apps from the Google Play
   {
     slug: 'switch-android-to-iphone',
     title: 'How to Switch from Android to iPhone',
-    excerpt: 'Move your contacts, photos, apps, and data from Android to a new iPhone using Apple\'s Move to iOS tool.',
+    excerpt: `Move your contacts, photos, apps, and data from Android to a new iPhone using Apple's Move to iOS tool.`,
     category: 'life-transitions' as any,
     tags: ['switch', 'Android', 'iPhone', 'data transfer', 'migration'],
     readTime: '8 min',
@@ -2408,7 +2436,7 @@ If the deceased had a password manager or left a written list of accounts and pa
     steps: [
       { title: 'Gather documentation', content: 'Obtain certified copies of the death certificate. Locate the will or trust to identify the executor. Gather any account information the deceased may have kept.' },
       { title: 'Address financial accounts first', content: 'Contact banks and credit card companies with the death certificate. Review statements for recurring charges and cancel subscriptions.' },
-      { title: 'Request email access', content: 'Contact the email provider\'s deceased account process. Google: Inactive Account Manager or data request. Apple: Digital Legacy program.' },
+      { title: 'Request email access', content: `Contact the email provider's deceased account process. Google: Inactive Account Manager or data request. Apple: Digital Legacy program.` },
       { title: 'Handle social media', content: 'For each platform, search "[platform] deceased account" to find the request form. Choose to memorialize or delete.' },
       { title: 'Cancel phone and subscriptions', content: 'Contact the cell phone carrier. Check for app subscriptions on their phone. Cancel streaming services, gym memberships, and other recurring services.' },
       { title: 'Keep records', content: 'Document every account you close with confirmation numbers and dates. Store these with other estate documents.' },
@@ -2508,7 +2536,7 @@ Update your address on important accounts: bank, credit cards, insurance, voter 
       { title: 'Schedule internet 2 weeks early', content: 'Contact an ISP to set up internet at your new address before moving day. Use broadbandnow.com to compare providers.' },
       { title: 'Pack tech carefully', content: 'Bring your router, streaming devices, smart speakers, cameras, and all cables. Label cables before packing.' },
       { title: 'Set up internet first', content: 'Plug in modem and router. Wait for the connection to activate. Everything else depends on WiFi being ready.' },
-      { title: 'Reconnect smart home devices', content: 'Open each device\'s app and update the WiFi network. Some devices may need a full reset and re-setup.' },
+      { title: 'Reconnect smart home devices', content: `Open each device's app and update the WiFi network. Some devices may need a full reset and re-setup.` },
       { title: 'Update location-based settings', content: 'Update smart speaker location (weather/news), camera motion zones, and streaming device location (local channels).' },
       { title: 'Update your address everywhere', content: 'Bank, credit cards, insurance, voter registration, USPS mail forwarding (usps.com), and subscriptions.' },
     ],
@@ -2598,8 +2626,8 @@ Place your router in a central location in your home, elevated if possible (on a
 
 After setup, connect your devices: on each phone, computer, tablet, and smart TV, go to WiFi settings, select your new network name, and enter the password.`,
     steps: [
-      { title: 'Connect the router to your modem', content: 'Plug an Ethernet cable from your modem into the router\'s WAN or Internet port. Plug in the power and wait 2-3 minutes.' },
-      { title: 'Download the router\'s app', content: 'Check the packaging for the app name. Download it from the App Store or Google Play Store and follow the setup wizard.' },
+      { title: 'Connect the router to your modem', content: `Plug an Ethernet cable from your modem into the router's WAN or Internet port. Plug in the power and wait 2-3 minutes.` },
+      { title: `Download the router's app`, content: 'Check the packaging for the app name. Download it from the App Store or Google Play Store and follow the setup wizard.' },
       { title: 'Create your WiFi name and password', content: 'Choose a recognizable network name and a strong password (12+ characters). Write them down and store safely.' },
       { title: 'Place the router centrally', content: 'Put the router in a central, elevated location. Avoid placing near thick walls, metal objects, or microwaves.' },
       { title: 'Connect your devices', content: 'On each device, go to WiFi settings, select your new network, and enter the password.' },
@@ -2630,7 +2658,7 @@ For a 2-bedroom apartment, two units are usually sufficient. For a 3-4 bedroom h
     steps: [
       { title: 'Choose a mesh system', content: 'Google Nest WiFi, Eero, TP-Link Deco, Orbi, or Velop. Get 2-3 units depending on your home size ($150-300).' },
       { title: 'Connect the main unit', content: 'Plug an Ethernet cable from your modem into the first mesh unit. This replaces your existing router.' },
-      { title: 'Download the app and set up', content: 'Get the manufacturer\'s app, create an account, and follow the setup wizard. Set your WiFi name and password.' },
+      { title: 'Download the app and set up', content: `Get the manufacturer's app, create an account, and follow the setup wizard. Set your WiFi name and password.` },
       { title: 'Place additional units', content: 'Put extra units halfway between the main unit and areas with poor signal. The app tests connection strength and suggests placement.' },
       { title: 'Connect all devices to the single network', content: 'All mesh units broadcast the same network. Connect each device once — it automatically switches to the nearest unit.' },
     ],
@@ -2660,7 +2688,7 @@ If you use hotspot frequently, consider an unlimited data plan that includes hot
     steps: [
       { title: 'Turn on Personal Hotspot', content: 'iPhone: Settings → Personal Hotspot → Allow Others to Join. Android: Settings → Network → Hotspot & Tethering → WiFi Hotspot → on.' },
       { title: 'Note the password', content: 'Your phone displays the hotspot password. You will enter this on the device you want to connect.' },
-      { title: 'Connect your other device', content: 'On your laptop or tablet, go to WiFi settings, find your phone\'s network name, and enter the password.' },
+      { title: 'Connect your other device', content: `On your laptop or tablet, go to WiFi settings, find your phone's network name, and enter the password.` },
       { title: 'Monitor data usage', content: 'Check your cellular data usage in Settings. Avoid video streaming and large downloads to conserve data.' },
       { title: 'Turn off hotspot when done', content: 'Disable the hotspot when you are finished to save battery and prevent unauthorized connections.' },
     ],
@@ -2690,7 +2718,7 @@ Check your carrier's app or website to see your current billing cycle usage and 
     steps: [
       { title: 'Check usage on your phone', content: 'iPhone: Settings → Cellular. Android: Settings → Data Usage. See total usage and per-app breakdown.' },
       { title: 'Identify your biggest data users', content: 'Look at which apps use the most data. Video streaming and social media are usually the top consumers.' },
-      { title: 'Set a data warning', content: 'Android: Settings → Data Usage → set a warning at 80% of your plan limit. iPhone: check your carrier\'s app for usage alerts.' },
+      { title: 'Set a data warning', content: `Android: Settings → Data Usage → set a warning at 80% of your plan limit. iPhone: check your carrier's app for usage alerts.` },
       { title: 'Connect to WiFi when available', content: 'Use WiFi at home, work, and public places. WiFi does not count against your mobile data plan.' },
       { title: 'Restrict background data', content: 'Set apps to update and back up only on WiFi. iPhone: Settings → App Store → turn off cellular downloads. Android: similar in app settings.' },
     ],
@@ -2749,7 +2777,7 @@ If these steps are not enough, consider: a WiFi extender ($20-40, adds coverage 
       { title: 'Move your router centrally', content: 'Place the router in the middle of your home, elevated on a shelf. Avoid corners, closets, and the floor.' },
       { title: 'Remove obstructions', content: 'Move the router away from thick walls, metal objects, mirrors, and microwaves. Even a few feet can help.' },
       { title: 'Try different frequencies', content: 'If your router broadcasts both 2.4GHz and 5GHz, connect to the other one. 5GHz is faster but shorter range; 2.4GHz reaches farther.' },
-      { title: 'Update router firmware', content: 'Log in to your router\'s admin page and check for updates. Updated firmware improves performance.' },
+      { title: 'Update router firmware', content: `Log in to your router's admin page and check for updates. Updated firmware improves performance.` },
       { title: 'Consider a mesh system or extender', content: 'For persistent dead zones, a mesh system ($150-300) provides the most comprehensive solution.' },
     ],
   },
@@ -2774,7 +2802,7 @@ If your router's built-in controls are limited, consider these options: many mes
 
 Set reasonable expectations. Parental controls are a tool, not a complete solution. They work best as part of ongoing conversations about internet safety. Older children may find ways around filters, so open communication is important.`,
     steps: [
-      { title: 'Access your router settings', content: 'Open a browser and go to your router\'s admin address (check the label on the router). Sign in with the admin username and password.' },
+      { title: 'Access your router settings', content: `Open a browser and go to your router's admin address (check the label on the router). Sign in with the admin username and password.` },
       { title: 'Find Parental Controls', content: 'Look for "Parental Controls," "Access Control," or "Content Filtering" in the router settings menu.' },
       { title: 'Set up content filtering', content: 'Enable filters to block adult content and known malicious websites. Most routers offer preset filter levels.' },
       { title: 'Create internet schedules', content: 'Set times when specific devices can access the internet. Create a "bedtime" schedule that cuts off access at a set hour.' },
@@ -2864,7 +2892,7 @@ Once linked, try: "Play my Liked Songs." "Play the Daily Mix." "Play [artist nam
 
 Both free and premium Spotify accounts work. Free accounts have ads between songs; Premium has no ads and higher quality audio.`,
     steps: [
-      { title: 'Open your speaker\'s app', content: 'Echo: open Alexa app. Google Home: open Google Home app.' },
+      { title: `Open your speaker's app`, content: 'Echo: open Alexa app. Google Home: open Google Home app.' },
       { title: 'Link Spotify', content: 'Alexa: More → Settings → Music → Link New Service → Spotify. Google: profile → Assistant Settings → Music → Spotify.' },
       { title: 'Set as default music service', content: 'In music settings, set Spotify as default so every request uses Spotify automatically.' },
       { title: 'Test with voice commands', content: 'Say "Alexa, play my Liked Songs" or "Hey Google, play jazz music."' },
@@ -3610,7 +3638,7 @@ Before purchasing, check the return policy. Most items sold or fulfilled by Amaz
   {
     slug: 'set-up-use-gmail',
     title: 'How to Set Up and Use Gmail',
-    excerpt: 'Create a free Gmail account and learn how to send, receive, and organize email using Google\'s email service.',
+    excerpt: `Create a free Gmail account and learn how to send, receive, and organize email using Google's email service.`,
     category: 'app-guides' as any,
     tags: ['Gmail', 'email', 'Google', 'communication', 'account'],
     readTime: '6 min',
@@ -3636,7 +3664,7 @@ You can organize emails by starring important ones (tap the star next to any ema
       { title: 'Create your Gmail account', content: 'Go to gmail.com and click "Create account." Choose a username (your email address), set a password, and fill in your name and date of birth.' },
       { title: 'Open Gmail on your device', content: 'On a computer: go to gmail.com. On iPhone: download the Gmail app from the App Store. On Android: the Gmail app is pre-installed.' },
       { title: 'Explore your inbox', content: 'Your inbox has tabs: Primary (important mail), Social, and Promotions. Tap each tab to see different types of messages.' },
-      { title: 'Send your first email', content: 'Tap "Compose" (pencil icon). Enter the recipient\'s email in "To," type a subject, write your message, and tap the send button (paper airplane icon).' },
+      { title: 'Send your first email', content: `Tap "Compose" (pencil icon). Enter the recipient's email in "To," type a subject, write your message, and tap the send button (paper airplane icon).` },
       { title: 'Reply to emails', content: 'Open an email and tap "Reply" at the bottom. Type your response and tap send. Use "Reply All" only when everyone needs to see your response.' },
       { title: 'Organize your email', content: 'Star important emails by tapping the star icon. Swipe right to archive emails you have dealt with. Use the search bar to find any email by sender, subject, or keyword.' },
     ],
@@ -3737,7 +3765,7 @@ During a meeting, the controls at the bottom of the screen include: microphone o
 Zoom tips: position your camera at eye level for the most natural look. Make sure you are well-lit from the front (not backlit by a window). Mute yourself when you are not speaking to reduce background noise. Use the chat feature to share links or messages without interrupting the speaker.`,
     steps: [
       { title: 'Download Zoom', content: 'Computer: go to zoom.us and click "Download." iPhone: search "Zoom Workplace" in App Store. Android: search "Zoom Workplace" in Google Play Store. Install and open.' },
-      { title: 'Create a free account', content: 'Go to zoom.us and click "Sign Up, It\'s Free." Enter your email, create a password, and verify your email address.' },
+      { title: 'Create a free account', content: `Go to zoom.us and click "Sign Up, It's Free." Enter your email, create a password, and verify your email address.` },
       { title: 'Start a meeting', content: 'Open Zoom and click "New Meeting." Your camera turns on. Click "Participants" then "Invite" to copy the link and send it to others.' },
       { title: 'Join a meeting', content: 'Click the meeting link someone sent you. Or open Zoom, click "Join," and enter the Meeting ID and passcode.' },
       { title: 'Use the meeting controls', content: 'Bottom toolbar: Mute/Unmute (microphone), Start/Stop Video (camera), Participants, Chat, Share Screen. Click "Leave" when the meeting is over.' },
@@ -3848,7 +3876,7 @@ To check voicemail the traditional way: press and hold 1 in the Phone app. Enter
       { title: 'Create a voicemail PIN', content: 'When prompted, choose a 4 to 6 digit PIN. Enter it twice to confirm. Write it down somewhere safe — you need it to access voicemail remotely.' },
       { title: 'Record your greeting', content: 'Choose "Personal" or "Custom" greeting. Record after the beep. Press pound (#) or follow prompts to save.' },
       { title: 'Check your voicemails', content: 'Visual Voicemail: tap the Voicemail tab in the Phone app to see messages in a list. Traditional: press and hold 1, enter your PIN, and listen to messages.' },
-      { title: 'Consider a Visual Voicemail app', content: 'If your Phone app does not have a Voicemail tab, search the Play Store for your carrier\'s Visual Voicemail app (T-Mobile, Verizon, AT&T each offer one).' },
+      { title: 'Consider a Visual Voicemail app', content: `If your Phone app does not have a Voicemail tab, search the Play Store for your carrier's Visual Voicemail app (T-Mobile, Verizon, AT&T each offer one).` },
     ],
   },
 
@@ -4014,7 +4042,7 @@ To edit a contact later: find them in your Contacts, tap their name, then tap "E
     steps: [
       { title: 'Open the Contacts app', content: 'iPhone: open the Phone app then tap "Contacts" tab. Android: open the Contacts app or the Phone app then "Contacts."' },
       { title: 'Tap the plus (+) button', content: 'Look for the plus sign (+) or "Create contact" button, usually in the top-right or bottom-right corner. Tap it to start a new contact.' },
-      { title: 'Enter the name and phone number', content: 'Type the person\'s first and last name. Enter their phone number including the area code (10 digits). Add email, address, and notes if you want.' },
+      { title: 'Enter the name and phone number', content: `Type the person's first and last name. Enter their phone number including the area code (10 digits). Add email, address, and notes if you want.` },
       { title: 'Save the contact', content: 'Tap "Done" (iPhone) or "Save" (Android) in the top corner. The contact is now saved in your phone.' },
       { title: 'Save from a recent call or text', content: 'If someone called you: open Recents, tap the (i) icon or the phone number, then choose "Create New Contact" or "Add to Existing Contact."' },
       { title: 'Contacts sync automatically', content: 'Your contacts back up to iCloud (iPhone) or your Google account (Android). If you get a new phone and sign in with the same account, all contacts transfer.' },
@@ -4084,7 +4112,7 @@ If you have already fallen for a tech support scam: change your passwords immedi
       { title: 'Never give remote access to unsolicited callers', content: 'If someone you did not contact asks to remotely connect to your computer, say no and hang up. Legitimate companies do not need remote access to detect problems.' },
       { title: 'Close scary pop-ups without calling', content: 'If a pop-up says "call this number" — do not call. Close the browser tab (Ctrl+W on Windows, Command+W on Mac). If the browser is frozen, force-quit it.' },
       { title: 'Do not pay for unsolicited tech support', content: 'If you did not ask for help, do not pay for it. Scammers pressure you to pay by gift card, wire transfer, or cryptocurrency — these are red flags.' },
-      { title: 'Use official support channels', content: 'If you think your computer has a real problem, go to the manufacturer\'s official website (apple.com/support, support.microsoft.com) or visit a reputable local repair shop.' },
+      { title: 'Use official support channels', content: `If you think your computer has a real problem, go to the manufacturer's official website (apple.com/support, support.microsoft.com) or visit a reputable local repair shop.` },
       { title: 'If you already fell for the scam', content: 'Change all passwords immediately. Run a real antivirus scan. Check bank statements for unauthorized charges. Report to the FTC at reportfraud.ftc.gov.' },
     ],
   },
@@ -4183,7 +4211,7 @@ Report delivery scams: forward scam texts to 7726 (SPAM). Report fake USPS messa
       { title: 'Do not click the link', content: 'If you receive a suspicious delivery text or email, do not tap the link. Delete the message.' },
       { title: 'Track packages through official channels', content: 'If you are expecting a delivery, go directly to usps.com, ups.com, fedex.com, or the Amazon app and enter your tracking number there.' },
       { title: 'Check the sender and URL', content: 'Real USPS texts come from short numbers, not regular phone numbers. Real URLs use the exact domain (usps.com, ups.com). Look for misspellings or extra words in the URL.' },
-      { title: 'Never pay unexpected fees by text', content: 'If a package truly requires a fee, it is handled at delivery or through the carrier\'s official website — never through a link in a random text message.' },
+      { title: 'Never pay unexpected fees by text', content: `If a package truly requires a fee, it is handled at delivery or through the carrier's official website — never through a link in a random text message.` },
       { title: 'Report and block', content: 'Forward scam texts to 7726. Report to the FTC at reportfraud.ftc.gov. Block the sender on your phone.' },
     ],
   },
@@ -4215,10 +4243,10 @@ Step 6: Consider a remote erase. If you cannot recover your phone and you have a
 If you get a replacement phone, restore your data from your most recent backup (iCloud or Google account). All your apps, contacts, photos, and settings come back.`,
     steps: [
       { title: 'Lock your phone remotely (do this first)', content: 'iPhone: icloud.com/find, select phone, then "Lost Mode." Android: google.com/android/find then "Secure device." This locks the phone immediately.' },
-      { title: 'Call your phone carrier', content: 'Call Verizon, AT&T, T-Mobile, or your carrier to suspend your line and blacklist the phone\'s IMEI number.' },
+      { title: 'Call your phone carrier', content: `Call Verizon, AT&T, T-Mobile, or your carrier to suspend your line and blacklist the phone's IMEI number.` },
       { title: 'Change your passwords', content: 'Starting with email, then banking, then social media — change passwords for all accounts you accessed on the stolen phone. Use a computer or another device.' },
       { title: 'Check for unauthorized activity', content: 'Review your email sent folder, bank transactions, and social media for anything you did not do. Report unauthorized activity immediately.' },
-      { title: 'File a police report', content: 'Report the theft to local police with the phone\'s make, model, serial number, and last known location. Keep a copy of the report for insurance claims.' },
+      { title: 'File a police report', content: `Report the theft to local police with the phone's make, model, serial number, and last known location. Keep a copy of the report for insurance claims.` },
       { title: 'Erase the phone remotely if needed', content: 'If recovery is unlikely and you have backups, erase the phone remotely: icloud.com/find then "Erase" (iPhone) or google.com/android/find then "Erase Device" (Android).' },
     ],
   },
@@ -4288,10 +4316,10 @@ If your printer is not wireless, some printers support USB connections through a
     steps: [
       { title: 'Make sure your printer is on the same WiFi', content: 'Your phone and printer must be connected to the same WiFi network. Check your printer settings to verify it is connected to WiFi.' },
       { title: 'iPhone: Use the Share button then Print', content: 'Open the document, photo, or web page. Tap the share button (square with arrow), scroll down to "Print." Select your printer and tap Print.' },
-      { title: 'Android: Use the menu then Print', content: 'Open the content you want to print. Tap the three-dot menu or share button then "Print." Select your printer. If it does not appear, install your printer\'s app from the Play Store.' },
+      { title: 'Android: Use the menu then Print', content: `Open the content you want to print. Tap the three-dot menu or share button then "Print." Select your printer. If it does not appear, install your printer's app from the Play Store.` },
       { title: 'Print a photo', content: 'Open the Photos or Gallery app, select a photo, tap share, then "Print." Choose your printer and adjust the number of copies.' },
       { title: 'Print a web page or email', content: 'While viewing a web page or email, tap the share button or three-dot menu and select "Print." The page prints as displayed on your screen.' },
-      { title: 'Troubleshooting', content: 'If your printer does not appear: make sure both devices are on the same WiFi network, restart the printer, or install the printer manufacturer\'s app for better compatibility.' },
+      { title: 'Troubleshooting', content: `If your printer does not appear: make sure both devices are on the same WiFi network, restart the printer, or install the printer manufacturer's app for better compatibility.` },
     ],
   },
 
@@ -4391,7 +4419,7 @@ If you have multiple email accounts, you can add them all to the same app. The M
       { title: 'Android: Use the Gmail app', content: 'Open Gmail, tap your profile icon, then "Add another account." Choose your provider and enter your email address and password.' },
       { title: 'Sign in and authorize', content: 'Enter your email address and password. You may see a permissions screen — tap "Allow" or "Accept" to let the mail app access your email.' },
       { title: 'Wait for sync to complete', content: 'Your phone downloads recent emails. This may take a minute or two. Once complete, your inbox appears in the mail app.' },
-      { title: 'Consider the official app', content: 'For the best experience, download your provider\'s official app: Outlook for Microsoft email, Gmail for Google email, Yahoo Mail for Yahoo. Free on both platforms.' },
+      { title: 'Consider the official app', content: `For the best experience, download your provider's official app: Outlook for Microsoft email, Gmail for Google email, Yahoo Mail for Yahoo. Free on both platforms.` },
       { title: 'Add multiple accounts', content: 'Repeat the process to add more email accounts. Both the Mail app (iPhone) and Gmail (Android) support multiple accounts — switch between them from the inbox.' },
     ],
   },
@@ -4454,7 +4482,7 @@ Android also lets you see which apps recently accessed your location: Settings t
 Review these settings periodically. When you install new apps, they often ask for location permission during setup. It is fine to deny location access and see if the app works without it — many apps request location but do not actually need it.`,
     steps: [
       { title: 'Open location settings', content: 'iPhone: Settings then Privacy and Security then Location Services. Android: Settings then Location. You will see the master toggle and a list of apps.' },
-      { title: 'Review each app individually', content: 'Go through the list and change each app\'s location access. Most apps work fine with "While Using" or "Never." Only maps and navigation truly need "Always."' },
+      { title: 'Review each app individually', content: `Go through the list and change each app's location access. Most apps work fine with "While Using" or "Never." Only maps and navigation truly need "Always."` },
       { title: 'Turn off location for apps that do not need it', content: 'Games, shopping apps, news apps, and social media rarely need your location. Set them to "Never" and see if they still work as expected.' },
       { title: 'iPhone: Disable Significant Locations', content: 'Settings then Privacy and Security then Location Services then System Services: turn off "Significant Locations" and "Location-Based Apple Ads."' },
       { title: 'Android: Check recent location access', content: 'Settings then Location then "App location permissions." See which apps recently accessed your location. Revoke access from any you do not recognize or trust.' },
@@ -4526,7 +4554,7 @@ A good practice is to review your installed programs every few months and remove
       { title: 'Open Settings', content: 'Click the Start button and then click the gear icon for Settings. You can also press Windows key + I on your keyboard.' },
       { title: 'Navigate to Installed apps', content: 'Click "Apps" in the left sidebar, then click "Installed apps." A list of all programs on your computer will appear with their sizes and install dates.' },
       { title: 'Find the program to remove', content: 'Scroll through the list or use the search bar at the top to find the program. You can also sort by size or date installed using the "Sort by" dropdown.' },
-      { title: 'Uninstall the program', content: 'Click the three-dot menu icon next to the program name and select "Uninstall." Click "Uninstall" again when asked to confirm. Follow any additional prompts from the program\'s own uninstaller.' },
+      { title: 'Uninstall the program', content: `Click the three-dot menu icon next to the program name and select "Uninstall." Click "Uninstall" again when asked to confirm. Follow any additional prompts from the program's own uninstaller.` },
       { title: 'Restart if prompted', content: 'Some programs require a restart to fully remove. Save your work and restart your computer if Windows asks you to.' },
       { title: 'Empty the Recycle Bin', content: 'Right-click the Recycle Bin icon on your desktop and select "Empty Recycle Bin." This permanently deletes the removed program files and frees up the storage space.' },
     ],
@@ -4556,11 +4584,11 @@ After making these changes, test by clicking a link in an email or document. It 
 
 Some browsers will ask you to set them as the default the first time you open them. You can use that prompt to go directly to the settings page, which saves a few steps.`,
     steps: [
-      { title: 'Install your preferred browser', content: 'If you have not already, download and install the browser you want to use. Open Edge, go to the browser\'s website (google.com/chrome or mozilla.org/firefox), and follow the download instructions.' },
+      { title: 'Install your preferred browser', content: `If you have not already, download and install the browser you want to use. Open Edge, go to the browser's website (google.com/chrome or mozilla.org/firefox), and follow the download instructions.` },
       { title: 'Open Settings', content: 'Click the Start button and then click the gear icon for Settings, or press Windows key + I on your keyboard.' },
       { title: 'Go to Default apps', content: 'Click "Apps" in the left sidebar, then click "Default apps." This page lets you choose which apps handle different types of files and links.' },
       { title: 'Search for your browser', content: 'In the search bar at the top of the Default Apps page, type the name of your preferred browser (for example, "Chrome"). Click on the browser when it appears in the results.' },
-      { title: 'Set it as default', content: 'Click the "Set default" button at the top of the browser\'s page. On Windows 11, you may also need to click individual file types like .htm, .html, HTTP, and HTTPS and select your browser for each one.' },
+      { title: 'Set it as default', content: `Click the "Set default" button at the top of the browser's page. On Windows 11, you may also need to click individual file types like .htm, .html, HTTP, and HTTPS and select your browser for each one.` },
       { title: 'Test the change', content: 'Click any link in an email or document. It should now open in your newly selected default browser. If it still opens in Edge, return to Default Apps and verify all link types are assigned correctly.' },
     ],
   },
@@ -4590,7 +4618,7 @@ After creating the account, the new user can sign in from the Windows login scre
       { title: 'Open Settings', content: 'Click the Start button and then the gear icon for Settings. You can also press Windows key + I on your keyboard.' },
       { title: 'Go to Accounts', content: 'Click "Accounts" in the left sidebar, then click "Other users" or "Family & other users." This page shows all user accounts on the computer.' },
       { title: 'Click Add account', content: 'Under "Other users," click the "Add account" button. A window will appear asking for a Microsoft account email address.' },
-      { title: 'Choose account type', content: 'Enter a Microsoft email address if the person has one. For a local account without an email, click "I don\'t have this person\'s sign-in information" then "Add a user without a Microsoft account." Enter a username and password.' },
+      { title: 'Choose account type', content: `Enter a Microsoft email address if the person has one. For a local account without an email, click "I don't have this person's sign-in information" then "Add a user without a Microsoft account." Enter a username and password.` },
       { title: 'Set the account type', content: 'New accounts default to "Standard User," which is appropriate for most people. To change it, click on the new account name, click "Change account type," and select Administrator if full access is needed.' },
       { title: 'Have the new user sign in', content: 'At the Windows login screen, the new user clicks their name and enters their password. The first sign-in takes a few minutes while Windows sets up their personal profile and desktop.' },
     ],
@@ -4787,7 +4815,7 @@ If you get a message that the app "is damaged and can't be opened," this often m
 
 Stay safe by only downloading apps from official developer websites. Avoid downloading software from unfamiliar third-party sites, as these may include malware or unwanted bundled programs. When in doubt, search for the app's official website and download directly from there.`,
     steps: [
-      { title: 'Download from the official website', content: 'Open your web browser and go to the app developer\'s official website. Click the download button. The file will save to your Downloads folder as a .dmg or .pkg file.' },
+      { title: 'Download from the official website', content: `Open your web browser and go to the app developer's official website. Click the download button. The file will save to your Downloads folder as a .dmg or .pkg file.` },
       { title: 'Open a .dmg file', content: 'Double-click the .dmg file in your Downloads folder. A window will appear with the app icon and an arrow pointing to Applications. Drag the app icon to the Applications folder.' },
       { title: 'Run a .pkg installer', content: 'For .pkg files, double-click the file and follow the on-screen prompts. Click "Continue" and "Install" when asked. Enter your Mac password if prompted.' },
       { title: 'Handle the Gatekeeper warning', content: 'The first time you open the app, macOS may warn you it was downloaded from the internet. Right-click (or Control-click) the app and select "Open." Click "Open" again in the dialog that appears.' },
@@ -4892,7 +4920,7 @@ Force-quit should be a last resort — always try closing the app normally first
       { title: 'Select the unresponsive app', content: 'Find the frozen app in the list — it may say "Not Responding" next to its name. Click on it to select it.' },
       { title: 'Click Force Quit', content: 'Click the "Force Quit" button at the bottom of the window. Confirm by clicking "Force Quit" again in the dialog that appears. The app will close immediately.' },
       { title: 'Alternative: Use the Apple menu', content: 'Click the Apple icon in the top-left corner of your screen and select "Force Quit" to open the same Force Quit Applications window.' },
-      { title: 'Alternative: Use the Dock', content: 'Hold down the Option key on your keyboard, then right-click (or Control-click) the frozen app\'s icon in the Dock. Select "Force Quit" from the menu that appears.' },
+      { title: 'Alternative: Use the Dock', content: `Hold down the Option key on your keyboard, then right-click (or Control-click) the frozen app's icon in the Dock. Select "Force Quit" from the menu that appears.` },
       { title: 'Reopen the app', content: 'Wait a few seconds after force-quitting, then reopen the app. It should work normally. If it freezes again, try updating or reinstalling the app.' },
     ],
   },
@@ -4922,7 +4950,7 @@ AirDrop is one of the best reasons to use Apple devices together. It is faster a
       { title: 'Turn on Wi-Fi and Bluetooth on both devices', content: 'On iPhone, open Control Center and make sure Wi-Fi and Bluetooth are both turned on (blue icons). On Mac, check the menu bar to confirm Wi-Fi and Bluetooth are enabled.' },
       { title: 'Set AirDrop to be discoverable', content: 'On the receiving device, set AirDrop to "Everyone for 10 Minutes" or "Contacts Only." On iPhone: Settings then General then AirDrop. On Mac: open Finder, click AirDrop in the sidebar.' },
       { title: 'Send from iPhone to Mac', content: 'Open the photo or file on your iPhone, tap the Share button (square with arrow), tap AirDrop, and select your Mac. Accept the file on your Mac when the notification appears.' },
-      { title: 'Send from Mac to iPhone', content: 'In Finder, right-click the file you want to send, select Share then AirDrop. Click your iPhone\'s icon in the AirDrop window. Accept the file on your iPhone when prompted.' },
+      { title: 'Send from Mac to iPhone', content: `In Finder, right-click the file you want to send, select Share then AirDrop. Click your iPhone's icon in the AirDrop window. Accept the file on your iPhone when prompted.` },
       { title: 'Find transferred files', content: 'Files received on Mac go to the Downloads folder by default. Files received on iPhone open in the appropriate app — photos go to the Photos app, documents to Files.' },
       { title: 'Troubleshoot if devices do not appear', content: 'Make sure both devices have Wi-Fi and Bluetooth on. Set AirDrop to "Everyone for 10 Minutes" temporarily. Bring the devices within 30 feet of each other. Restart Wi-Fi and Bluetooth if needed.' },
     ],
@@ -4990,11 +5018,11 @@ Under "Communication Limits," you can control who the child can communicate with
 Set a Screen Time passcode that is different from the child's login password. This prevents them from changing the Screen Time settings themselves. Go to Screen Time settings and click "Lock Screen Time Settings" to create this passcode. Keep this passcode private — it is your master key to all the parental control settings.`,
     steps: [
       { title: 'Create a child user account', content: 'Go to System Settings then Users & Groups. Click "Add Account" and create a Standard user account for the child. Set a password that you know. This gives them their own separate space on the Mac.' },
-      { title: 'Open Screen Time settings', content: 'Go to System Settings then Screen Time. If using Family Sharing, you can manage the child\'s settings from your account. Otherwise, log into the child\'s account to set up Screen Time.' },
+      { title: 'Open Screen Time settings', content: `Go to System Settings then Screen Time. If using Family Sharing, you can manage the child's settings from your account. Otherwise, log into the child's account to set up Screen Time.` },
       { title: 'Set content restrictions', content: 'Click "Content & Privacy" then toggle on "Content & Privacy Restrictions." Under Content Restrictions, choose web filtering (limit adult websites or allow only approved websites) and set age-appropriate content ratings.' },
       { title: 'Set app time limits', content: 'Click "App Limits" and add limits for categories like Games, Social Media, or Entertainment. Set a daily time allowance. When the limit is reached, the app locks and the child can request more time.' },
       { title: 'Schedule Downtime', content: 'Click "Downtime" and set the hours when the Mac should be restricted (for example, 8 PM to 8 AM). During Downtime, only apps you mark as "Always Allowed" will be accessible.' },
-      { title: 'Lock the settings with a passcode', content: 'In Screen Time settings, click "Lock Screen Time Settings" and create a passcode different from the child\'s login password. This prevents the child from changing the restrictions themselves.' },
+      { title: 'Lock the settings with a passcode', content: `In Screen Time settings, click "Lock Screen Time Settings" and create a passcode different from the child's login password. This prevents the child from changing the restrictions themselves.` },
     ],
   },
 
@@ -5018,7 +5046,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Set up your lighting', content: 'Place a lamp or ring light in front of you, at face level. Natural light from a window in front of you is ideal. The goal is to have light hitting your face so you are clearly visible on camera.' },
       { title: 'Check your background', content: 'Look at what appears behind you on camera. Remove clutter, laundry, or anything you would not want others to see. A plain wall or a tidy bookshelf makes a professional impression.' },
       { title: 'Position your camera at eye level', content: 'If you use a laptop, prop it up on books or a stand so the camera is level with your eyes. Looking down into a camera is unflattering and makes it hard to make eye contact with others.' },
-      { title: 'Test your audio', content: 'Use headphones with a built-in microphone or a USB microphone to improve your sound quality. Before any call, join a test meeting or use your app\'s audio test feature to confirm others can hear you clearly without echo or background noise.' },
+      { title: 'Test your audio', content: `Use headphones with a built-in microphone or a USB microphone to improve your sound quality. Before any call, join a test meeting or use your app's audio test feature to confirm others can hear you clearly without echo or background noise.` },
     ],
   },
 
@@ -5098,7 +5126,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Upload a file', content: 'On Google Drive or OneDrive, go to the website and drag a file from your computer into the browser window, or click "New" then "File upload." On iPhone, files saved in apps like Photos or Notes sync to iCloud automatically.' },
       { title: 'Access your files from another device', content: 'Sign in to the same account on any device and your files will be there. On a phone, download the Google Drive, OneDrive, or Files app (iPhone) to access your cloud files.' },
       { title: 'Organize files into folders', content: 'Right-click (or tap and hold on mobile) to create a new folder. Drag files into folders to keep things organized. Good folder names like "Tax Documents 2025" or "Family Photos" make it easy to find things later.' },
-      { title: 'Share a file with someone', content: 'Right-click a file and choose "Share." Enter the other person\'s email address or click "Copy link" to get a shareable link. You can choose whether they can just view it or also edit it.' },
+      { title: 'Share a file with someone', content: `Right-click a file and choose "Share." Enter the other person's email address or click "Copy link" to get a shareable link. You can choose whether they can just view it or also edit it.` },
     ],
   },
 
@@ -5156,7 +5184,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     steps: [
       { title: 'Understand when you need a VPN', content: 'Use a VPN whenever you are on public WiFi — at a coffee shop, hotel, airport, or library. It is also useful if your employer requires it for accessing company systems remotely. For everyday home internet use, a VPN is optional but adds an extra layer of privacy.' },
       { title: 'Choose a reputable VPN service', content: 'Trusted consumer VPN services include NordVPN, ExpressVPN, and Proton VPN (which has a free tier). Avoid free VPNs from unknown companies — they may sell your data. Many employers provide a VPN app; check with your IT department.' },
-      { title: 'Install the VPN app', content: 'Download the VPN app from the provider\'s official website or your phone\'s app store. Create an account and follow the setup instructions. Most VPN apps require you to allow a VPN configuration on your device — approve this when prompted.' },
+      { title: 'Install the VPN app', content: `Download the VPN app from the provider's official website or your phone's app store. Create an account and follow the setup instructions. Most VPN apps require you to allow a VPN configuration on your device — approve this when prompted.` },
       { title: 'Connect to the VPN', content: 'Open the VPN app and tap or click "Connect." The app will choose the best server automatically, or you can choose a specific country. A VPN icon — often a small padlock or key — will appear in your status bar when you are connected.' },
       { title: 'Disconnect when done', content: 'When you are finished working or leave the public location, open the VPN app and tap "Disconnect." Leaving a VPN on continuously can slow your connection. For home use, connect only when needed for extra privacy.' },
     ],
@@ -5222,7 +5250,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Browse restaurants near you', content: 'The app will show restaurants that deliver to your address. You can filter by cuisine type, rating, delivery time, or price. Tap a restaurant to see its full menu with prices.' },
       { title: 'Add items to your cart', content: 'Tap any menu item to add it to your cart. Many items let you customize them — size, toppings, or special requests. When you are done, tap "View Cart" or the cart icon to review your order.' },
       { title: 'Check out and pay', content: 'Review your order and enter a tip for the driver (15 to 20 percent is standard). Add a promo code if you have one. Tap "Place Order" and confirm your payment. Both apps accept credit cards, debit cards, and PayPal.' },
-      { title: 'Track your delivery', content: 'After ordering, the app shows a map with your driver\'s location. You will get a notification when the driver picks up your order and when they are nearby. Check the estimated delivery time on the tracking screen.' },
+      { title: 'Track your delivery', content: `After ordering, the app shows a map with your driver's location. You will get a notification when the driver picks up your order and when they are nearby. Check the estimated delivery time on the tracking screen.` },
     ],
   },
 
@@ -5241,7 +5269,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Create a Walmart account', content: 'Go to walmart.com or download the Walmart app. Click "Create an account" and enter your email address and a password. You will need to add your delivery address and a payment method.' },
       { title: 'Shop for items online', content: 'Use the search bar to find items, or browse the Grocery section. Add items to your cart just like any online store. The app shows which items are in stock at your local store.' },
       { title: 'Choose pickup or delivery at checkout', content: 'When you are ready to check out, select "Pickup" for free curbside service or "Delivery" if you prefer items brought to your door. Choose a pickup or delivery time slot that works for you.' },
-      { title: 'Check in when you arrive (for pickup)', content: 'When you pull into the Walmart parking lot, open the app and tap "I\'m here." Tell the app which parking spot you are in. A Walmart associate will bring your order to your car — you do not need to go inside.' },
+      { title: 'Check in when you arrive (for pickup)', content: `When you pull into the Walmart parking lot, open the app and tap "I'm here." Tell the app which parking spot you are in. A Walmart associate will bring your order to your car — you do not need to go inside.` },
       { title: 'Review your order after pickup', content: 'If any items were out of stock, the app will show substitutions that were made. You can approve substitutions in advance in your account settings. Report any missing or incorrect items through the app for a quick refund.' },
     ],
   },
@@ -5258,7 +5286,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Returning an online purchase is usually straightforward once you know the steps. Most major retailers make returns easy with prepaid labels or drop-off options. Acting quickly matters — most stores have a return window of 30 days, and keeping your original packaging makes the process much simpler.`,
     steps: [
-      { title: 'Find the return policy and window', content: 'Log in to your account on the retailer\'s website or app. Go to "Orders" and find the item you want to return. Check the return deadline — most stores allow 30 days, but it varies. Items must usually be unused and in original packaging.' },
+      { title: 'Find the return policy and window', content: `Log in to your account on the retailer's website or app. Go to "Orders" and find the item you want to return. Check the return deadline — most stores allow 30 days, but it varies. Items must usually be unused and in original packaging.` },
       { title: 'Start the return online', content: 'Click "Return or Replace Items" next to the order. Select the item, choose a reason for the return, and choose your refund method (original payment or store credit). Follow the prompts to generate a return label.' },
       { title: 'Print or save the return label', content: 'Most returns come with a free prepaid shipping label. Print it if you have a printer, or look for the option to show a QR code — UPS, FedEx, and USPS locations can print the label for you when you bring the QR code.' },
       { title: 'Pack and ship the item', content: 'Pack the item securely in its original box if possible. Tape the return label on the outside of the box, covering any old labels. Drop it off at the carrier location specified on the label — UPS Store, FedEx Office, or USPS post office.' },
@@ -5299,9 +5327,9 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `Fake reviews are a growing problem on Amazon, Google, Yelp, and other platforms. Businesses sometimes pay for fake 5-star reviews to boost their products, while competitors may leave fake negative reviews. Learning to spot the warning signs protects you from buying poor-quality products or being misled by dishonest sellers.`,
     steps: [
       { title: 'Check the rating distribution', content: 'Look at the star breakdown on any product or business page. A trustworthy product usually has a mix of ratings — some 5s, some 4s, some 3s, and a few 1s. If almost every review is exactly 5 stars with very few others, that is a red flag.' },
-      { title: 'Look for verified purchase badges', content: 'On Amazon, look for the "Verified Purchase" label under a reviewer\'s name. This means Amazon confirmed the reviewer actually bought the item. Reviews without this label should be given less weight.' },
+      { title: 'Look for verified purchase badges', content: `On Amazon, look for the "Verified Purchase" label under a reviewer's name. This means Amazon confirmed the reviewer actually bought the item. Reviews without this label should be given less weight.` },
       { title: 'Read the 1 and 2 star reviews', content: 'Low-rated reviews are harder to fake and are often the most honest. Look for patterns — do multiple reviewers mention the same problem? That is likely a real issue with the product.' },
-      { title: 'Check reviewer profiles', content: 'On Amazon, click a reviewer\'s name to see their review history. Be suspicious if an account has only reviewed one brand of products, left all 5-star reviews, or wrote all reviews on the same day.' },
+      { title: 'Check reviewer profiles', content: `On Amazon, click a reviewer's name to see their review history. Be suspicious if an account has only reviewed one brand of products, left all 5-star reviews, or wrote all reviews on the same day.` },
       { title: 'Use a fake review checker', content: 'Visit fakespot.com or reviewmeta.com and paste in the URL of an Amazon product page. These free tools analyze the reviews and give you an adjusted rating that filters out suspected fakes.' },
     ],
   },
@@ -5345,7 +5373,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Open Google Maps and allow location access', content: 'Download the Google Maps app from the App Store or Google Play if you do not already have it. When you open it for the first time, allow it to access your location — this is how it knows where you are starting from.' },
       { title: 'Enter your destination', content: 'Tap the search bar at the top of the screen and type the address, business name, or place you want to go. A list of suggestions will appear as you type — tap the correct one from the list.' },
       { title: 'Choose driving and review the route', content: 'Tap the blue "Directions" button. Make sure the car icon is selected at the top (not walking or transit). Google Maps will show you the fastest route and its estimated travel time, plus alternative routes you can choose.' },
-      { title: 'Start navigation', content: 'Tap the blue "Start" button at the bottom of the screen. Google Maps will begin giving you voice directions through your phone\'s speaker. The screen shows your next turn, your current speed, and your estimated arrival time.' },
+      { title: 'Start navigation', content: `Tap the blue "Start" button at the bottom of the screen. Google Maps will begin giving you voice directions through your phone's speaker. The screen shows your next turn, your current speed, and your estimated arrival time.` },
       { title: 'Use features during the drive', content: 'You can mute or adjust the voice volume using the speaker icon during navigation. If you miss a turn, Google Maps will automatically recalculate your route. When you arrive, tap the X to stop navigation.' },
     ],
   },
@@ -5362,11 +5390,11 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Booking flights online can save money compared to calling an airline, but there are pitfalls to avoid — scam booking websites, hidden fees, and confusing fare rules. Using trusted platforms and knowing what to look for will help you find a good deal and complete your booking with confidence.`,
     steps: [
-      { title: 'Use trusted booking sites', content: 'Stick to well-known sites: the airline\'s own website (such as delta.com or southwest.com), or major travel sites like Google Flights (flights.google.com), Expedia, Kayak, or Priceline. Avoid clicking ads or booking through unfamiliar sites found in search results.' },
+      { title: 'Use trusted booking sites', content: `Stick to well-known sites: the airline's own website (such as delta.com or southwest.com), or major travel sites like Google Flights (flights.google.com), Expedia, Kayak, or Priceline. Avoid clicking ads or booking through unfamiliar sites found in search results.` },
       { title: 'Use Google Flights to compare prices', content: 'Go to flights.google.com, enter your departure city, destination, and travel dates. Google Flights shows prices across all airlines side by side and has a calendar view to find the cheapest days to fly. It does not charge booking fees.' },
       { title: 'Read the fare rules before buying', content: 'Basic economy fares are usually non-refundable and may not include a carry-on bag. Read what is included in your fare before purchasing. If you need flexibility, choose a refundable fare or a standard economy ticket.' },
-      { title: 'Book directly with the airline when possible', content: 'Once you find a good price on Google Flights or Kayak, consider booking directly on the airline\'s website. This makes it easier to manage your booking, request changes, or get help if something goes wrong.' },
-      { title: 'Save your confirmation and check in online', content: 'After booking, save or print your confirmation email. Most airlines allow online check-in 24 hours before departure — check in through the airline\'s website or app to get your boarding pass and choose your seat in advance.' },
+      { title: 'Book directly with the airline when possible', content: `Once you find a good price on Google Flights or Kayak, consider booking directly on the airline's website. This makes it easier to manage your booking, request changes, or get help if something goes wrong.` },
+      { title: 'Save your confirmation and check in online', content: `After booking, save or print your confirmation email. Most airlines allow online check-in 24 hours before departure — check in through the airline's website or app to get your boarding pass and choose your seat in advance.` },
     ],
   },
 
@@ -5382,7 +5410,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Booking a place to stay for a trip is straightforward once you know the right apps and what to look for. Hotels.com, Booking.com, and the Hilton or Marriott apps are great for traditional hotels, while Airbnb offers private homes and apartments. Each has its own strengths, and comparing prices between a few options can save you money.`,
     steps: [
-      { title: 'Choose your booking platform', content: 'For hotels, try Hotels.com, Booking.com, or go directly to the hotel chain\'s own app (Hilton Honors, Marriott Bonvoy). For private homes and apartments, use the Airbnb app. You can also compare prices using Google Hotels at google.com/travel/hotels.' },
+      { title: 'Choose your booking platform', content: `For hotels, try Hotels.com, Booking.com, or go directly to the hotel chain's own app (Hilton Honors, Marriott Bonvoy). For private homes and apartments, use the Airbnb app. You can also compare prices using Google Hotels at google.com/travel/hotels.` },
       { title: 'Search for your destination and dates', content: 'Enter the city, your check-in and check-out dates, and the number of guests. The app will show available options sorted by price, rating, or distance from the city center. Use the filters to narrow by price range or amenities.' },
       { title: 'Read the reviews carefully', content: 'Always read recent guest reviews before booking. For hotels, look for mentions of cleanliness, noise, and staff helpfulness. For Airbnb, check that the host has many reviews and a high rating — aim for 4.7 stars or above.' },
       { title: 'Review the cancellation policy before booking', content: 'Check whether the booking is refundable and by what date you must cancel to get your money back. Free cancellation options exist but may cost slightly more. Non-refundable rates are cheaper but carry risk if your plans change.' },
@@ -5393,7 +5421,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
   {
     slug: 'use-digital-boarding-pass',
     title: 'How to Use a Digital Boarding Pass on Your Phone',
-    excerpt: 'Add your airline boarding pass to your phone\'s wallet app and breeze through the airport without printed paper.',
+    excerpt: `Add your airline boarding pass to your phone's wallet app and breeze through the airport without printed paper.`,
     category: 'phone-guides' as any,
     tags: ['boarding pass', 'digital wallet', 'airport', 'travel', 'airline'],
     readTime: '5 min',
@@ -5402,9 +5430,9 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `A digital boarding pass on your phone is accepted at nearly every US airport and most international ones. It works at security checkpoints and at the gate, and it eliminates the need to find a printer before a trip. Adding it to your phone's wallet app keeps it readily accessible even if your phone loses internet connection.`,
     steps: [
-      { title: 'Check in online 24 hours before your flight', content: 'Go to the airline\'s website or app the day before your flight. Log in with your booking reference number and last name. Tap "Check in" and follow the prompts to confirm your seat.' },
+      { title: 'Check in online 24 hours before your flight', content: `Go to the airline's website or app the day before your flight. Log in with your booking reference number and last name. Tap "Check in" and follow the prompts to confirm your seat.` },
       { title: 'Choose the mobile boarding pass option', content: 'When check-in is complete, the site or app will ask how you want your boarding pass. Choose "Email" or "Add to Apple Wallet" or "Add to Google Wallet." Pick the wallet option if you can — it is the most convenient.' },
-      { title: 'Add the pass to your phone\'s wallet', content: 'On iPhone, tap "Add to Apple Wallet" and then tap "Add." On Android, tap "Add to Google Wallet." The boarding pass will appear in your Wallet app with your flight details, seat number, and barcode.' },
+      { title: `Add the pass to your phone's wallet`, content: 'On iPhone, tap "Add to Apple Wallet" and then tap "Add." On Android, tap "Add to Google Wallet." The boarding pass will appear in your Wallet app with your flight details, seat number, and barcode.' },
       { title: 'Access the pass at the airport', content: 'Open the Wallet app (iPhone) or Google Wallet (Android) before you reach the TSA checkpoint. Show the barcode to the scanner at security and again at the gate. The pass should work even in Airplane Mode.' },
       { title: 'Keep your phone charged', content: 'Make sure your phone has at least 50% battery before heading to the airport. Bring a charging cable or portable battery pack just in case. As a backup, screenshot your boarding pass so you have it even if the app has trouble loading.' },
     ],
@@ -5422,7 +5450,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Using your US phone abroad without planning ahead can result in shocking bills — international roaming charges can add up to hundreds of dollars quickly. Fortunately, several easy options keep you connected overseas without breaking the bank. The right choice depends on how long you are traveling and which carrier you use.`,
     steps: [
-      { title: 'Check your carrier\'s international plan', content: 'Before traveling, call your carrier or check their app. T-Mobile and Google Fi include free international data in most countries. AT&T and Verizon offer day passes (around $10 per day) that include your existing plan abroad. Adding a plan for the duration of your trip is the simplest option.' },
+      { title: `Check your carrier's international plan`, content: 'Before traveling, call your carrier or check their app. T-Mobile and Google Fi include free international data in most countries. AT&T and Verizon offer day passes (around $10 per day) that include your existing plan abroad. Adding a plan for the duration of your trip is the simplest option.' },
       { title: 'Turn on WiFi Calling', content: 'On iPhone, go to Settings, then Phone, then WiFi Calling and turn it on. On Android, go to Settings, then Connections, then WiFi Calling. When connected to WiFi, your calls and texts will use WiFi instead of the cellular network, avoiding roaming charges.' },
       { title: 'Buy a local SIM card at your destination', content: 'For trips longer than a week, buying a prepaid SIM card from a local carrier at the airport or a convenience store in your destination country can be much cheaper. Look for prepaid data plans — they are widely available in Europe and most tourist destinations.' },
       { title: 'Use an eSIM for a modern option', content: 'If your phone supports eSIM (most phones made after 2019 do), you can purchase and activate an international data plan before you leave home through apps like Airalo or Holafly. An eSIM is a digital SIM — no physical card needed. Rates start around $5 for 1 GB.' },
@@ -5430,6 +5458,25 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
+  {
+    slug: 'stay-safe-public-wifi',
+    title: 'How to Stay Safe on Public WiFi While Traveling',
+    excerpt: 'Protect your passwords and personal information when using WiFi at hotels, airports, and coffee shops.',
+    category: 'safety-guides' as any,
+    tags: ['public wifi', 'security', 'travel', 'vpn', 'password'],
+    readTime: '6 min',
+    thumbnailEmoji: '📡',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner' as any,
+    body: `Public WiFi at hotels, airports, and coffee shops is convenient but risky. Anyone on the same network can potentially intercept your data, which is why you should never do online banking or enter passwords on public WiFi without protection. A few simple precautions keep your information safe while traveling.`,
+    steps: [
+      { title: 'Avoid logging into sensitive accounts on public WiFi', content: `Do not access your bank, investment accounts, or healthcare accounts over public WiFi. Save those tasks for your home network or your phone's cellular data connection, which is encrypted and much safer.` },
+      { title: 'Verify the network name before connecting', content: 'Cybercriminals sometimes set up fake WiFi hotspots with names like "Free Hotel WiFi" near hotels. Before connecting, ask hotel staff or check the official network name at the venue. Confirm you are connecting to the real network.' },
+      { title: 'Use a VPN', content: 'A VPN encrypts all your internet traffic so it cannot be read even on a compromised network. Install a trusted VPN like NordVPN, ExpressVPN, or Proton VPN before your trip and connect it whenever you use public WiFi.' },
+      { title: 'Look for HTTPS on websites', content: 'When browsing on public WiFi, make sure websites show "https://" (with an S) in the address bar and a padlock icon. HTTPS means the connection between your browser and the website is encrypted. Never enter personal information on a site that shows "http://" without the S.' },
+      { title: `Use your phone's hotspot instead of public WiFi`, content: `If you have cellular data available, consider turning on your phone's hotspot and connecting your laptop to it instead of using public WiFi. Your cellular connection is far more secure than any public network.` },
+    ],
+  },
 
   // ═══════════════════════════════════════════
   // ENTERTAINMENT & STREAMING (6 guides)
@@ -5508,9 +5555,9 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `YouTube has more free video content than any other platform — news, tutorials, cooking shows, music videos, documentaries, and much more. Watching it on your TV gives you a much better experience than a small phone screen, and it is completely free. Most smart TVs and streaming devices already have the YouTube app installed.`,
     steps: [
       { title: 'Find the YouTube app on your TV', content: 'On most smart TVs (Samsung, LG, Vizio), press the Home button on your remote and look for the YouTube app in the apps row. On Roku, find YouTube in the Streaming Channels section. On Amazon Fire TV, search for YouTube in the search bar.' },
-      { title: 'Install YouTube if it is not already there', content: 'If YouTube is not installed, go to your TV\'s app store (Samsung App Store, LG Content Store, Roku Channel Store) and search for "YouTube." Select it and click "Add Channel" or "Install."' },
+      { title: 'Install YouTube if it is not already there', content: `If YouTube is not installed, go to your TV's app store (Samsung App Store, LG Content Store, Roku Channel Store) and search for "YouTube." Select it and click "Add Channel" or "Install."` },
       { title: 'Sign in to your Google account (optional)', content: 'You can watch YouTube without signing in. To save videos, access your subscriptions, or use your history, press the profile icon and sign in with your Google account. You can link your phone to the TV for easier sign-in — the app will show a code to enter at youtube.com/activate.' },
-      { title: 'Search for videos', content: 'Use the remote\'s voice button (if available) or the on-screen keyboard to search for videos. Navigate using the arrow keys on your remote. Press OK or Enter to select a video and play it.' },
+      { title: 'Search for videos', content: `Use the remote's voice button (if available) or the on-screen keyboard to search for videos. Navigate using the arrow keys on your remote. Press OK or Enter to select a video and play it.` },
       { title: 'Use your phone as a remote', content: 'Open YouTube on your phone and tap the cast icon (a rectangle with WiFi waves) in the top right corner. Select your TV from the list. Now you can use your phone to search, browse, and control playback while the video plays on the TV.' },
     ],
   },
@@ -5530,7 +5577,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Download content on Netflix', content: 'Open the Netflix app on your phone or tablet. Find a show or movie and tap the download icon (a downward arrow) next to the title or episode. Downloaded content appears in the "Downloads" section accessible from the menu.' },
       { title: 'Download content on Disney+', content: 'Open the Disney+ app and find a movie or episode. Tap the download icon below the title. Go to "Downloads" at the bottom of the screen to see your downloaded content and watch it offline.' },
       { title: 'Download content on Amazon Prime Video', content: 'Open the Prime Video app and find a title. Tap the download icon (arrow pointing down) on the episode or movie. Go to "My Stuff" then "Downloads" to access offline content.' },
-      { title: 'Manage your storage', content: 'Downloaded videos take up significant storage space on your device — a one-hour show can use 1 to 3 GB. Check your phone\'s storage regularly (Settings, then General, then Storage on iPhone). Delete watched downloads to free up space.' },
+      { title: 'Manage your storage', content: `Downloaded videos take up significant storage space on your device — a one-hour show can use 1 to 3 GB. Check your phone's storage regularly (Settings, then General, then Storage on iPhone). Delete watched downloads to free up space.` },
       { title: 'Know the expiration rules', content: 'Downloaded content expires after a set period — typically 30 days from download, or 48 hours after you start watching. The app will warn you before expiration. You must be connected to the internet at least once every 30 days to keep downloads active.' },
     ],
   },
@@ -5548,7 +5595,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and it is easy to get started.`,
     steps: [
       { title: 'Create a free Spotify account', content: 'Go to spotify.com or download the Spotify app on your phone. Click "Sign up for free" and register with your email address or your Google or Facebook account. The free plan gives you access to the full library with ads.' },
-      { title: 'Search for music or artists', content: 'Tap the magnifying glass icon and type an artist name, song title, or genre. Tap a result to see that artist\'s top songs and albums. Tap the play button next to any song to start listening.' },
+      { title: 'Search for music or artists', content: `Tap the magnifying glass icon and type an artist name, song title, or genre. Tap a result to see that artist's top songs and albums. Tap the play button next to any song to start listening.` },
       { title: 'Explore curated playlists', content: 'Tap "Search" and browse genres like Pop, Country, Classical, or Jazz. Spotify creates playlists for every mood and occasion — "Chill Hits," "Workout," "Morning Coffee," and many more. Tap a playlist and hit play to enjoy a curated mix.' },
       { title: 'Listen to podcasts', content: 'Tap "Search" and scroll to the "Browse" section, then tap "Podcasts and Shows." Search for a podcast by name or browse by category. Tap an episode and press play. Episodes download automatically on premium plans.' },
       { title: 'Create your own playlist', content: 'Tap "Your Library" at the bottom, then the "+" icon to create a new playlist. Give it a name. To add songs to it, find a song you like, tap the three dots next to it, and choose "Add to playlist." Build your own personalized music collection.' },
@@ -5559,6 +5606,25 @@ Set a Screen Time passcode that is different from the child's login password. Th
   // FINANCIAL TECH (6 guides)
   // ═══════════════════════════════════════════
 
+  {
+    slug: 'check-credit-score-free',
+    title: 'How to Check Your Credit Score for Free',
+    excerpt: 'Check your credit score and full credit report for free — no credit card required — using official tools.',
+    category: 'financial-tech' as any,
+    tags: ['credit score', 'credit report', 'annualcreditreport', 'free', 'personal finance'],
+    readTime: '5 min',
+    thumbnailEmoji: '📊',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner' as any,
+    body: `Your credit score affects your ability to get a loan, rent an apartment, or even get some jobs. Checking it regularly helps you catch errors and signs of identity theft early. You are legally entitled to a free credit report from each of the three major bureaus every year, and many banks and apps now show your score for free with no impact on your credit.`,
+    steps: [
+      { title: 'Get your free credit report at AnnualCreditReport.com', content: 'Go to annualcreditreport.com — this is the official, government-authorized site. Click "Request your free credit reports" and fill in your name, address, Social Security number, and date of birth. You can request reports from Equifax, Experian, and TransUnion.' },
+      { title: 'Check your credit score through your bank or credit card', content: 'Many banks and credit card companies show your FICO score for free in their app or website. Look in your account dashboard for a "Credit Score" section. Capital One, Discover, Chase, and most major banks offer this feature.' },
+      { title: 'Use Credit Karma for free monitoring', content: 'Go to creditkarma.com and create a free account. Credit Karma shows your TransUnion and Equifax scores and updates them weekly. It also alerts you to changes in your credit report, which can help you catch identity theft early.' },
+      { title: 'Review your credit report for errors', content: 'Look through your credit report for accounts you do not recognize, incorrect balances, or late payments that were not actually late. Errors on your credit report can lower your score and are more common than most people realize.' },
+      { title: 'Dispute errors if you find them', content: `If you find an error, go to the bureau's website (equifax.com, experian.com, or transunion.com) and file a dispute online. Provide any documentation you have. The bureau must investigate and respond within 30 days.` },
+    ],
+  },
 
   {
     slug: 'set-up-online-banking',
@@ -5572,11 +5638,11 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Online banking lets you check your balance, view transactions, pay bills, and transfer money without visiting a branch or calling your bank. Every major US bank offers free online and mobile banking. Setting it up takes about 10 minutes, and the convenience of handling banking tasks from home is well worth it.`,
     steps: [
-      { title: 'Go to your bank\'s official website', content: 'Type your bank\'s name into your browser (for example, bankofamerica.com, chase.com, or wellsfargo.com). Do not click search result ads — type the address directly. Look for the "Sign In" or "Enroll in Online Banking" button.' },
+      { title: `Go to your bank's official website`, content: `Type your bank's name into your browser (for example, bankofamerica.com, chase.com, or wellsfargo.com). Do not click search result ads — type the address directly. Look for the "Sign In" or "Enroll in Online Banking" button.` },
       { title: 'Enroll and verify your identity', content: 'Click "Enroll" and enter your account number or debit card number, Social Security number (last 4 or full), and date of birth. The bank uses this to confirm you are the account holder. You will also verify your identity with a code sent to your phone or email.' },
       { title: 'Create a username and password', content: 'Choose a unique username and a strong password with a mix of letters, numbers, and symbols. Do not use the same password you use for other websites. Write it down and store it in a safe place.' },
       { title: 'Set up two-factor authentication', content: 'Enable two-factor authentication (2FA) in your security settings. This sends a one-time code to your phone every time you log in from a new device, preventing anyone else from accessing your account even if they have your password.' },
-      { title: 'Download the mobile app', content: 'Search for your bank\'s official app in the App Store or Google Play. Download it and sign in with your new username and password. The mobile app lets you check your balance, deposit checks by photo, and pay bills on the go.' },
+      { title: 'Download the mobile app', content: `Search for your bank's official app in the App Store or Google Play. Download it and sign in with your new username and password. The mobile app lets you check your balance, deposit checks by photo, and pay bills on the go.` },
     ],
   },
 
@@ -5592,11 +5658,11 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Zelle lets you send money directly from your bank account to another person's bank account in minutes — for free. It is built into the apps of most major US banks including Bank of America, Chase, Wells Fargo, and hundreds of others. Because transfers go directly between bank accounts, the money typically arrives within minutes.`,
     steps: [
-      { title: 'Find Zelle in your bank app', content: 'Open your bank\'s mobile app and look for "Zelle" in the menu — usually under "Transfer Money," "Pay and Transfer," or "Send Money." If your bank supports Zelle, it will be listed there. You do not need to download a separate app.' },
+      { title: 'Find Zelle in your bank app', content: `Open your bank's mobile app and look for "Zelle" in the menu — usually under "Transfer Money," "Pay and Transfer," or "Send Money." If your bank supports Zelle, it will be listed there. You do not need to download a separate app.` },
       { title: 'Enroll your email or phone number', content: 'The first time you use Zelle, you will need to enroll by entering your email address or US mobile phone number and verifying it with a code. This is a one-time setup.' },
-      { title: 'Send money', content: 'Tap "Send" and enter the recipient\'s email address or US phone number. Enter the amount you want to send and add a note if you like (such as "Dinner last night"). Review the details and tap "Send." If the recipient is already enrolled in Zelle, they receive the money in minutes.' },
+      { title: 'Send money', content: `Tap "Send" and enter the recipient's email address or US phone number. Enter the amount you want to send and add a note if you like (such as "Dinner last night"). Review the details and tap "Send." If the recipient is already enrolled in Zelle, they receive the money in minutes.` },
       { title: 'Know the safety rules', content: 'Only send money to people you know and trust — Zelle transfers are instant and generally cannot be reversed. The FTC warns that scammers often ask for Zelle payments pretending to be utilities, government agencies, or relatives in trouble. No legitimate company asks for Zelle payments for bills or emergencies.' },
-      { title: 'Request money from others', content: 'You can also use Zelle to request money. Tap "Request" and enter the person\'s email or phone number, then enter the amount. They will receive a notification and can send you the money through their own bank app.' },
+      { title: 'Request money from others', content: `You can also use Zelle to request money. Tap "Request" and enter the person's email or phone number, then enter the amount. They will receive a notification and can send you the money through their own bank app.` },
     ],
   },
 
@@ -5613,10 +5679,10 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `Bank impersonation scams are among the most common and damaging financial frauds in the US. Scammers call, text, or email pretending to be your bank's fraud department, claiming your account has been compromised. Their goal is to trick you into handing over your account credentials or transferring money. Knowing what real banks do and do not do is your best defense.`,
     steps: [
       { title: 'Know what your bank will never do', content: 'Your bank will never call you and ask for your full Social Security number, account password, PIN, or one-time security code. If someone asks for any of these while claiming to be your bank, hang up — it is a scam.' },
-      { title: 'Do not trust caller ID', content: 'Scammers can fake (spoof) phone numbers to make it look like your real bank is calling. A call that shows your bank\'s name on caller ID does not mean the caller is actually from your bank.' },
-      { title: 'Hang up and call your bank directly', content: 'If you receive a call or text that worries you, hang up or ignore it. Call the number on the back of your debit card or on your bank\'s official website to check whether there is actually a problem with your account.' },
+      { title: 'Do not trust caller ID', content: `Scammers can fake (spoof) phone numbers to make it look like your real bank is calling. A call that shows your bank's name on caller ID does not mean the caller is actually from your bank.` },
+      { title: 'Hang up and call your bank directly', content: `If you receive a call or text that worries you, hang up or ignore it. Call the number on the back of your debit card or on your bank's official website to check whether there is actually a problem with your account.` },
       { title: 'Recognize urgent language as a red flag', content: 'Scammers create panic by saying things like "Your account will be closed in 30 minutes" or "Unusual charges are being made right now." This urgency is designed to make you act without thinking. Take a breath and verify independently before doing anything.' },
-      { title: 'Report scam attempts', content: 'If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank\'s fraud line. If you shared information or sent money, contact your bank immediately — they may be able to stop or reverse a transfer.' },
+      { title: 'Report scam attempts', content: `If you receive a bank impersonation call, report it to the FTC at reportfraud.ftc.gov and to your bank's fraud line. If you shared information or sent money, contact your bank immediately — they may be able to stop or reverse a transfer.` },
     ],
   },
 
@@ -5635,8 +5701,8 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Freeze your credit at Equifax', content: 'Go to equifax.com/personal/credit-report-services/credit-freeze. Click "Place a Security Freeze" and follow the steps. You will need to create an account and verify your identity. You will receive a PIN — save this, as you will need it to unfreeze your credit later.' },
       { title: 'Freeze your credit at Experian', content: 'Go to experian.com/freeze/center.html and click "Freeze or Manage Freeze." Create an account or log in and follow the instructions to place the freeze. Experian will give you a PIN or confirmation number to save.' },
       { title: 'Freeze your credit at TransUnion', content: 'Go to transunion.com/credit-help/credit-freeze and click "Get Started." Create an account and follow the steps. TransUnion lets you manage the freeze through their website or app.' },
-      { title: 'Unfreeze when you need to apply for credit', content: 'If you want to apply for a loan, credit card, or apartment that requires a credit check, you will need to temporarily unfreeze your credit at the relevant bureau. Log in to each bureau\'s website and select "Temporary Lift" — you can usually do this in minutes.' },
-      { title: 'Consider freezing a child\'s credit too', content: 'Identity thieves sometimes target children because the fraud can go undetected for years. If you have children under 16, you can request a credit freeze on their behalf by contacting each bureau with proof of your identity and their relationship to you.' },
+      { title: 'Unfreeze when you need to apply for credit', content: `If you want to apply for a loan, credit card, or apartment that requires a credit check, you will need to temporarily unfreeze your credit at the relevant bureau. Log in to each bureau's website and select "Temporary Lift" — you can usually do this in minutes.` },
+      { title: `Consider freezing a child's credit too`, content: 'Identity thieves sometimes target children because the fraud can go undetected for years. If you have children under 16, you can request a credit freeze on their behalf by contacting each bureau with proof of your identity and their relationship to you.' },
     ],
   },
 
@@ -5652,7 +5718,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `The IRS Free File program offers free tax filing software to taxpayers who meet the income requirements. This includes free preparation and e-filing of your federal return — no hidden fees. Several companies participate, including TurboTax Free File and TaxAct. Filing electronically gets you your refund faster, often within 21 days.`,
     steps: [
-      { title: 'Gather your tax documents', content: 'Before you start, collect your W-2 forms from employers, 1099 forms for freelance or retirement income, Social Security statements (SSA-1099), last year\'s tax return, and your Social Security number and those of any dependents.' },
+      { title: 'Gather your tax documents', content: `Before you start, collect your W-2 forms from employers, 1099 forms for freelance or retirement income, Social Security statements (SSA-1099), last year's tax return, and your Social Security number and those of any dependents.` },
       { title: 'Go to IRS Free File at irs.gov/freefile', content: 'Type irs.gov/freefile directly into your browser — do not search for it to avoid lookalike scam sites. Click "Use Free Guided Tax Software" to see the list of participating companies. Each has different income requirements and state filing options.' },
       { title: 'Choose a Free File partner and start your return', content: 'Compare the options and click the link to your chosen provider. You will be taken directly to their Free File version. Create an account with your email address and start a new tax return. The software will ask you questions and fill in the forms for you.' },
       { title: 'Enter your income and deductions', content: 'Follow the step-by-step interview. Enter your wages from your W-2, any other income sources, and answer questions about deductions. The software calculates your refund or amount owed automatically as you go.' },
@@ -5676,11 +5742,11 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Medicare.gov is the official website for your Medicare health insurance, and the free app helps you understand your benefits on the go. Creating a Medicare account online lets you view your coverage, see claims that have been filed, find Medicare-approved doctors and facilities, and compare drug plans — all without calling Medicare's often-busy phone line.`,
     steps: [
-      { title: 'Create a Medicare.gov account', content: 'Go to medicare.gov and click "Log in / Create account." You will create a Login.gov account (the government\'s secure login system). Enter your email, create a password, and verify your identity. You will then link it to your Medicare number from your red, white, and blue Medicare card.' },
+      { title: 'Create a Medicare.gov account', content: `Go to medicare.gov and click "Log in / Create account." You will create a Login.gov account (the government's secure login system). Enter your email, create a password, and verify your identity. You will then link it to your Medicare number from your red, white, and blue Medicare card.` },
       { title: 'View your coverage and claims', content: 'Once logged in, click "My Medicare" to see your current coverage — Part A (hospital), Part B (medical), Part C (Medicare Advantage), and Part D (drug coverage). Click "Claims" to see recent Medicare claims filed by your doctors and what was paid.' },
       { title: 'Find Medicare-approved doctors', content: 'Click "Find care" and search for doctors, hospitals, or other providers near you. The tool shows whether they accept Medicare and their quality ratings. You can search by specialty, location, or provider name.' },
       { title: 'Compare drug plans using Plan Finder', content: 'Click "Find health and drug plans" to use the Medicare Plan Finder. Enter your drugs and pharmacy to compare Part D drug plans by cost. This tool can help you find a plan that covers your medications at the lowest price.' },
-      { title: 'Download the Medicare app', content: 'Search for "What\'s covered" in the App Store or Google Play and download the free official Medicare app. It lets you quickly check whether a specific service or item is covered by Medicare before your appointment.' },
+      { title: 'Download the Medicare app', content: `Search for "What's covered" in the App Store or Google Play and download the free official Medicare app. It lets you quickly check whether a specific service or item is covered by Medicare before your appointment.` },
     ],
   },
 
@@ -5700,7 +5766,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Download the companion app', content: 'Every tracker requires a companion app on your phone for setup. Fitbit uses the Fitbit app, Apple Watch uses the built-in Watch app on iPhone, and Garmin uses the Garmin Connect app. Search your app store for the app name and install it.' },
       { title: 'Pair the tracker to your phone', content: 'Open the companion app and follow the setup instructions. You will be asked to turn on Bluetooth on your phone and bring the tracker close to it. The app will find the device and pair them automatically. Enter any code if prompted.' },
       { title: 'Set up your health profile', content: 'Enter your age, height, weight, and daily step goal during setup. This information helps the tracker calculate accurate calorie burns and personalize your activity goals. You can update this information later in the app settings.' },
-      { title: 'Wear it and explore the app', content: 'Wear the tracker on your non-dominant wrist (the hand you do not write with). The device will automatically track steps, heart rate, and sleep. Open the app each morning to review your previous day\'s activity, sleep score, and heart rate trends.' },
+      { title: 'Wear it and explore the app', content: `Wear the tracker on your non-dominant wrist (the hand you do not write with). The device will automatically track steps, heart rate, and sleep. Open the app each morning to review your previous day's activity, sleep score, and heart rate trends.` },
     ],
   },
 
@@ -5716,10 +5782,10 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Telehealth lets you see a doctor, nurse practitioner, or specialist through a video call on your phone or computer without leaving home. It is a good option for non-emergency issues like colds, skin concerns, prescription refills, or mental health appointments. Most insurance plans including Medicare now cover telehealth visits, often at the same cost as an in-person visit.`,
     steps: [
-      { title: 'Check if your doctor offers telehealth', content: 'Call your primary care doctor\'s office or check their website to see if they offer video visits. Many practices have a patient portal where you can request a telehealth appointment directly. This is the best first option because your doctor already knows your medical history.' },
+      { title: 'Check if your doctor offers telehealth', content: `Call your primary care doctor's office or check their website to see if they offer video visits. Many practices have a patient portal where you can request a telehealth appointment directly. This is the best first option because your doctor already knows your medical history.` },
       { title: 'Use an on-demand telehealth service', content: 'If your doctor does not offer telehealth or you need to see someone quickly, services like Teladoc (teladoc.com), MDLive (mdlive.com), or Amwell (amwell.com) connect you with a licensed doctor in minutes. Many are available 24 hours a day, 7 days a week.' },
       { title: 'Check your insurance coverage', content: 'Before booking, call the number on your insurance card and ask whether telehealth visits are covered and what your copay will be. Medicare covers most telehealth services. Many plans cover telehealth at the same rate as an in-person visit.' },
-      { title: 'Prepare for your appointment', content: 'Find a quiet, well-lit private space for your video call. Have your insurance card, a list of your current medications, and your pharmacy\'s phone number ready. Test your phone or computer camera and microphone a few minutes before the appointment.' },
+      { title: 'Prepare for your appointment', content: `Find a quiet, well-lit private space for your video call. Have your insurance card, a list of your current medications, and your pharmacy's phone number ready. Test your phone or computer camera and microphone a few minutes before the appointment.` },
       { title: 'Join the visit and follow up', content: 'You will receive a link or a code to join the video call — usually through your patient portal, email, or the telehealth app. After the visit, prescriptions can be sent directly to your pharmacy and follow-up notes will appear in your patient portal.' },
     ],
   },
@@ -5736,19 +5802,38 @@ Set a Screen Time passcode that is different from the child's login password. Th
     difficulty: 'Beginner' as any,
     body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also significantly reduce your out-of-pocket costs.`,
     steps: [
-      { title: 'Create an account with your pharmacy', content: 'Go to your pharmacy\'s website (cvs.com, walgreens.com, etc.) or download their app. Create an account with your name, date of birth, insurance information, and address. Your prescription history and insurance will be linked to your account.' },
-      { title: 'Transfer or add a prescription', content: 'To transfer a prescription from another pharmacy, enter the current pharmacy\'s name and your prescription number in the transfer section. To add a new prescription, your doctor can send it electronically to your chosen pharmacy, or you can bring in a paper prescription.' },
+      { title: 'Create an account with your pharmacy', content: `Go to your pharmacy's website (cvs.com, walgreens.com, etc.) or download their app. Create an account with your name, date of birth, insurance information, and address. Your prescription history and insurance will be linked to your account.` },
+      { title: 'Transfer or add a prescription', content: `To transfer a prescription from another pharmacy, enter the current pharmacy's name and your prescription number in the transfer section. To add a new prescription, your doctor can send it electronically to your chosen pharmacy, or you can bring in a paper prescription.` },
       { title: 'Request a refill', content: 'In the app or website, go to "Prescriptions" or "My Medications" and find the medication you need to refill. Click "Refill" and choose whether to pick up in store or have it delivered to your home. Select a pickup time or delivery date.' },
       { title: 'Set up automatic refills', content: 'Most pharmacies offer automatic refills so you never run out of a medication. In your account settings or on the prescription page, look for "Auto Refill" and turn it on. The pharmacy will contact you when refills are ready.' },
       { title: 'Use GoodRx to save money', content: 'If you do not have prescription drug insurance or your copay is high, go to goodrx.com or download the GoodRx app. Enter your medication name and zip code to see prices at pharmacies near you. Show the GoodRx coupon at the pharmacy counter to get a significant discount — sometimes up to 80% off.' },
     ],
   },
 
+  {
+    slug: 'use-apple-health-google-fit',
+    title: 'How to Use Apple Health or Google Fit',
+    excerpt: `Use your phone's built-in health app to track steps, heart rate, sleep, and other health metrics automatically.`,
+    category: 'health-tech' as any,
+    tags: ['apple health', 'google fit', 'health tracking', 'steps', 'wellness'],
+    readTime: '5 min',
+    thumbnailEmoji: '❤️',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner' as any,
+    body: `Your smartphone already has a powerful health-tracking app built in. Apple Health (on iPhone) and Google Fit (on Android) automatically track your steps, estimate calories burned, and can pull in data from apps and wearable devices. The data you collect over time gives you and your doctor a clearer picture of your overall health.`,
+    steps: [
+      { title: `Open your phone's health app`, content: 'On iPhone, the Health app is pre-installed — look for the red heart icon. On Android, download Google Fit from the Play Store if it is not already installed. Open the app and complete the initial setup, entering your age, height, and weight.' },
+      { title: 'Set up your health profile', content: 'In Apple Health, tap "Summary" then your profile photo in the top right to enter your health details. In Google Fit, tap the profile icon. Accurate height and weight help the apps calculate calories and body mass index correctly.' },
+      { title: 'Carry your phone to track steps automatically', content: `Carrying your phone in your pocket or bag is enough for both apps to count your steps automatically using the phone's built-in motion sensor. No extra setup is needed.` },
+      { title: 'Explore your health data', content: 'In Apple Health, tap "Browse" to see all available health categories — steps, heart rate, sleep, and more. In Google Fit, tap "Journal" to see your daily activity. Tap any category to see trends over days, weeks, or months.' },
+      { title: 'Connect other apps and devices', content: 'Many apps can share data with Apple Health or Google Fit — including your pharmacy app, fitness trackers, and nutrition apps. In Apple Health, go to Settings, then Health, then Apps to see what is connected. Connecting more sources gives you a more complete picture of your health.' },
+    ],
+  },
 
   {
     slug: 'set-up-medication-reminders',
     title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: 'Never miss a dose by setting up medication reminders using your phone\'s built-in tools or a free app.',
+    excerpt: `Never miss a dose by setting up medication reminders using your phone's built-in tools or a free app.`,
     category: 'health-tech' as any,
     tags: ['medication reminders', 'pills', 'health', 'alarms', 'phone reminders'],
     readTime: '5 min',
@@ -5761,7 +5846,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Use Siri or Google Assistant to set a reminder', content: 'Say "Hey Siri, remind me to take my blood pressure pill every day at 9 AM" or "Hey Google, remind me to take my medication every morning at 8 AM." Your voice assistant will create the recurring reminder automatically.' },
       { title: 'Download a dedicated medication app', content: 'For more features, download a medication management app. Medisafe (free) and MyTherapy (free) are highly rated apps that let you log each medication with its dose and schedule, remind you when doses are due, and track whether you took each one.' },
       { title: 'Set up Medisafe or MyTherapy', content: 'Open the app and tap "Add Medication." Enter the medication name, dosage, and the time(s) you need to take it. The app will send you a push notification at the scheduled time. Tap the notification to confirm you took the dose.' },
-      { title: 'Ask a family member to join as a caregiver', content: 'Medisafe and MyTherapy let a family member or caregiver receive alerts if you miss a dose. In the app settings, look for "Add Care Partner" or "Caregiver Network" and enter the family member\'s email. They will get a notification if you miss a dose, providing an extra safety net.' },
+      { title: 'Ask a family member to join as a caregiver', content: `Medisafe and MyTherapy let a family member or caregiver receive alerts if you miss a dose. In the app settings, look for "Add Care Partner" or "Caregiver Network" and enter the family member's email. They will get a notification if you miss a dose, providing an extra safety net.` },
     ],
   },
 
@@ -5864,11 +5949,30 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Download Marco Polo', content: 'Search for "Marco Polo" in the App Store (iPhone) or Google Play (Android) and download the free app.' },
       { title: 'Create an account', content: 'Open the app and enter your phone number. Marco Polo will send a verification code by text — enter it to confirm your number. Add your first name and a profile photo to help friends recognize you.' },
       { title: 'Add a contact', content: 'Tap the "+" or "New" button to add a contact. You can search by phone number or name from your contacts. If the person already has Marco Polo, they will appear. If not, you can invite them by text message.' },
-      { title: 'Record and send a video', content: 'Tap a contact\'s name to open the conversation. Press and hold the large camera button to record your video message — speak naturally as if you were talking to them in person. Release the button when you are done and it sends automatically.' },
+      { title: 'Record and send a video', content: `Tap a contact's name to open the conversation. Press and hold the large camera button to record your video message — speak naturally as if you were talking to them in person. Release the button when you are done and it sends automatically.` },
       { title: 'Watch and reply to videos', content: 'When a friend sends you a video, you will get a notification. Open the app and tap their name to watch it. Press the camera button to record your reply. Videos stay in the conversation so you can rewatch them, and you can see whether the other person has watched your message.' },
     ],
   },
 
+  {
+    slug: 'block-unwanted-calls-texts',
+    title: 'How to Block Unwanted Calls and Texts',
+    excerpt: 'Block spam callers, robocalls, and unwanted texts on your iPhone or Android phone using built-in settings.',
+    category: 'phone-guides' as any,
+    tags: ['block calls', 'spam calls', 'robocalls', 'phone safety', 'do not call'],
+    readTime: '5 min',
+    thumbnailEmoji: '🚫',
+    publishedAt: '2026-04-16',
+    difficulty: 'Beginner' as any,
+    body: `Spam calls and unwanted texts are an enormous nuisance, and most people receive several every week. Both iPhone and Android have built-in tools to block specific numbers and silence unknown callers. Carrier-level tools and the National Do Not Call Registry provide additional layers of protection. Knowing how to use these tools gives you much more control over who can reach you.`,
+    steps: [
+      { title: 'Block a specific number on iPhone', content: 'Go to your recent calls list and tap the "i" (information) icon next to the number you want to block. Scroll down and tap "Block this Caller," then confirm. The number will no longer be able to call, text, or FaceTime you.' },
+      { title: 'Block a specific number on Android', content: 'Open your Phone app and go to recent calls. Tap and hold the number you want to block, then tap "Block / report spam" and confirm. You can also block a text by tapping and holding the message, then selecting "Block."' },
+      { title: 'Silence unknown callers on iPhone', content: 'Go to Settings, then Phone, then "Silence Unknown Callers" and turn it on. Calls from numbers not in your contacts will go directly to voicemail without ringing. This dramatically reduces spam calls.' },
+      { title: `Use your carrier's free spam protection`, content: `All major US carriers offer free robocall blocking tools. AT&T offers Call Protect, T-Mobile offers Scam Shield, and Verizon offers Call Filter. Search your carrier's website for their spam blocking app and enable it — they are free and can block millions of known spam numbers automatically.` },
+      { title: 'Register with the Do Not Call Registry', content: 'Go to donotcall.gov and register your phone number with the National Do Not Call Registry. This legally prohibits most telemarketers from calling you. It will not stop scammers, but it reduces legitimate marketing calls within 31 days of registration.' },
+    ],
+  },
 
   // ═══════════════════════════════════════════
   // SMART HOME (4 guides)
@@ -5917,7 +6021,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
   {
     slug: 'set-up-smart-thermostat',
     title: 'How to Set Up a Smart Thermostat',
-    excerpt: 'Install and set up a smart thermostat to control your home\'s temperature from your phone and save on energy bills.',
+    excerpt: `Install and set up a smart thermostat to control your home's temperature from your phone and save on energy bills.`,
     category: 'smart-home' as any,
     tags: ['smart thermostat', 'nest', 'ecobee', 'energy savings', 'home automation'],
     readTime: '7 min',
@@ -5928,8 +6032,8 @@ Set a Screen Time passcode that is different from the child's login password. Th
     steps: [
       { title: 'Check compatibility before buying', content: 'Most homes with a standard forced-air heating and cooling system are compatible. Use the compatibility checker on the Nest website (nest.com/compatibility) or ecobee website before purchasing. You will need to look at the wires on your current thermostat — check for a wire labeled "C" or "Common" for the best experience.' },
       { title: 'Turn off power and remove your old thermostat', content: 'Turn off the power to your HVAC system at the circuit breaker before starting. Remove your old thermostat from the wall and photograph the wiring configuration before disconnecting anything — you will need to replicate it on the new thermostat.' },
-      { title: 'Install the new thermostat', content: 'Attach the new thermostat\'s base plate to the wall, connect the wires to the matching terminals (use the photo you took), and snap the thermostat display onto the base. Turn the power back on at the breaker.' },
-      { title: 'Connect to WiFi using the app', content: 'Download the Nest app or ecobee app and create a free account. Follow the in-app setup instructions to connect your new thermostat to your home WiFi. The thermostat\'s screen will also guide you through the process.' },
+      { title: 'Install the new thermostat', content: `Attach the new thermostat's base plate to the wall, connect the wires to the matching terminals (use the photo you took), and snap the thermostat display onto the base. Turn the power back on at the breaker.` },
+      { title: 'Connect to WiFi using the app', content: `Download the Nest app or ecobee app and create a free account. Follow the in-app setup instructions to connect your new thermostat to your home WiFi. The thermostat's screen will also guide you through the process.` },
       { title: 'Set your schedule and preferences', content: 'Use the app to set your preferred temperatures for morning, daytime, evening, and night. Both Nest and ecobee will learn your schedule over time and suggest adjustments. Enable the "Away" mode so temperatures automatically adjust when everyone leaves home.' },
     ],
   },
@@ -5950,7 +6054,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Download the companion app', content: 'Download the app for your camera brand: Blink Home Monitor app, Arlo app, or Ring app from the App Store or Google Play. Create a free account with your email address.' },
       { title: 'Add the camera in the app', content: 'Open the app and tap "Add Device" or "+" to add your camera. The app will scan a QR code on the camera or walk you through connecting it to your home WiFi network. This takes about 3 to 5 minutes.' },
       { title: 'View the live feed', content: 'Once connected, tap the camera in the app to see a live video feed. Most apps show a thumbnail of recent motion clips on the main screen. Tap "Live View" to see what the camera sees in real time from wherever you are.' },
-      { title: 'Set up motion alerts', content: 'In the app\'s settings for each camera, enable "Motion Alerts." You can adjust the sensitivity to reduce false alerts from passing cars or swaying trees. When motion is detected, you will receive a push notification on your phone with a short video clip of what triggered it.' },
+      { title: 'Set up motion alerts', content: `In the app's settings for each camera, enable "Motion Alerts." You can adjust the sensitivity to reduce false alerts from passing cars or swaying trees. When motion is detected, you will receive a push notification on your phone with a short video clip of what triggered it.` },
     ],
   },
 
