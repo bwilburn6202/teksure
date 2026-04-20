@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 81** (20 guides, 2026-04-20) — total ~2,700 guides
-- Next: **Batch 82** → **Batch 83** → ... (no upper limit)
+- Last completed: **Batch 82** (20 guides, 2026-04-20) — total ~2,720 guides
+- Next: **Batch 83** → **Batch 84** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -160,7 +160,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 79** | **20** | **2026-04-20** | Sortly inventory, Trust & Will online, Apple Legacy Contact, Facebook memorial, password inheritance, vital records digital, Social Security survivor benefits, grief support tech, moving app checklist, PODS storage, caregiver app, CareZone app, MyChart portal, Kaiser Permanente app, CVS app, Walgreens app, Costco Pharmacy, Amazon Pharmacy, Cost Plus Drugs, Blink Health |
 | **Batch 80** | **20** | **2026-04-20** | Dexcom CGM, KardiaMobile EKG, Omron BP monitor, Withings scale, macro tracker, Cronometer, Carb Manager, MDLive, Amwell, Doctor On Demand, Amazon Clinic, One Medical, telehealth explained, ER vs urgent care, Zocdoc, WebMD app, Mayo Clinic, cancer screening, Sharecare, Livongo diabetes |
 | **Batch 81** | **20** | **2026-04-20** | Ford Pass app, EV road trip planning, PlugShare, ChargePoint, Audiomack, Bandcamp, SoundCloud, Tidal HiFi, AirPods Pro features, Sony WH-1000XM5, Bose QuietComfort, Echo Dot setup, Echo Show 8, Alexa Drop In, Google Home Broadcast, Nest Mini, Microsoft Copilot, Google Gemini, Meta AI, Grok xAI |
-| **Total** | **~2,700** | | |
+| **Batch 82** | **20** | **2026-04-20** | Home Depot app, Lowe's app, Zillow home search, Redfin, Rocket Mortgage, first-time homebuyer tools, reverse mortgage, Houzz, room planner apps, Fundrise, Poshmark, Depop, Mercari, thredUP, Whatnot, Vinted, Rent the Runway, Lyst, Rebag, Chrono24 |
+| **Total** | **~2,720** | | |
 
 ---
 
