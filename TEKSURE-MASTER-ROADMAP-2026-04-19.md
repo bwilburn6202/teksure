@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 56** (20 guides, 2026-04-19) — total ~2,193 guides
-- Next: **Batch 57** → **Batch 58** → ... (no upper limit)
+- Last completed: **Batch 57** (20 guides, 2026-04-19) — total ~2,213 guides
+- Next: **Batch 58** → **Batch 59** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -135,7 +135,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 54** | **20** | **2026-04-19** | WhatsApp backup, Telegram basics, Signal privacy, iPhone background removal, Mac Preview annotate, Mac Preview sign PDF, save-as-PDF, online chess, free senior games, Samsung camera, iPhone Action Mode, Google Photos video, iPhone contacts backup, Audible, Eventbrite, Photopea, Android contacts backup, Excel mobile, Google Meet, Adobe Express |
 | **Batch 55** | **20** | **2026-04-19** | Google Drive Desktop, iOS widgets, Apple Handoff, Universal Clipboard, iPhone Mirroring, TikTok basics, LinkedIn, Facebook Reels, Google Wallet, music ID apps, Street View, eBay selling, OfferUp, Flipboard, macOS Sequoia, Android 15, Edge browser, Brave browser, Android home screen, Google Classroom |
 | **Batch 56** | **20** | **2026-04-19** | Locked Apple Notes, Google Earth, Google Tasks, Walmart app, Target app, Grubhub, airline apps, hotel booking, TripAdvisor, OpenTable, Goodreads, OverDrive library, Find My app, Spotify tips, digital wallet, Drive folder sharing, Android accessibility, Google Photos family sharing, Android visual voicemail, Apple TV 4K |
-| **Total** | **~2,193** | | |
+| **Batch 57** | **20** | **2026-04-19** | Screen record iPhone, share WiFi password, iOS Voice Control, Android Voice Access, Chromebook basics, Windows Narrator, Mac VoiceOver, swipe typing, Google Maps directions, mobile banking, online bill pay, VA benefits online, bank wire transfer, iPhone parental controls, save parking location, reverse phone lookup, call blocker apps, CapCut, Google Photos editing, iPhone photo crop |
+| **Total** | **~2,213** | | |
 
 ---
 
