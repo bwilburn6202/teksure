@@ -939,7 +939,7 @@ You set up a guest network through your router's settings page, which you access
 
 **Finding your router's IP address**
 
-On Windows: open a Command Prompt, type `ipconfig`, and look for "Default Gateway" — that is your router's IP address, usually something like 192.168.1.1. On Mac: open System Settings > Network > Wi-Fi > Details, and look for the Router IP.
+On Windows: open a Command Prompt, type \`ipconfig\`, and look for "Default Gateway" — that is your router's IP address, usually something like 192.168.1.1. On Mac: open System Settings > Network > Wi-Fi > Details, and look for the Router IP.
 
 **Giving it a name and password**
 

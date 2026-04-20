@@ -329,6 +329,41 @@ const scams: Scam[] = [
       'Report it to the SSA Office of Inspector General at oig.ssa.gov or call 800-269-0271',
     ],
   },
+  // Social: "The FTC says investment scams are now the #1 way Americans lose money — average loss $20,000. Here are the exact warning signs to know before someone pitches you."
+  // Newsletter: "The FTC issued a fresh alert in April 2026: investment scams have hit record levels, with AI-generated celebrity endorsements making fake platforms nearly impossible to spot at a glance. Here's how to check if any investment opportunity is real before you put any money in."
+  {
+    title: 'Fake Investment Opportunity Scam (April 2026)',
+    redFlags: [
+      'Social media ads or unsolicited messages promise unusually high returns — often 10–20% per month — with "no risk"',
+      'AI-generated videos appear to show real celebrities like Elon Musk or Warren Buffett endorsing the platform',
+      'You are asked to invest using cryptocurrency, wire transfer, or gift cards — payment methods that cannot be reversed',
+      'The platform shows a large profit in your account but demands you pay a "tax," "withdrawal fee," or "compliance deposit" before you can take the money out',
+    ],
+    whatToDo: [
+      'No legitimate investment guarantees high returns with no risk — this is always the #1 red flag, no exceptions',
+      'Before investing anywhere, verify the firm at investor.gov/CRS (SEC) or at brokercheck.finra.org (licensed advisers)',
+      'Never pay a fee to withdraw your own money — demanding a withdrawal fee is a second theft designed to take even more from you',
+      'Report suspected investment fraud to the FTC at ReportFraud.ftc.gov and to the SEC at sec.gov/tcr',
+      'Call the AARP Fraud Watch Network helpline free at 877-908-3360 (Mon–Fri, 8 AM–8 PM ET) for help understanding your options',
+    ],
+  },
+  // Social: "Getting a job offer out of nowhere — great pay, fully remote, no experience needed? This is the #1 fake job scam pattern the FBI is warning about right now."
+  // Newsletter: "The FBI's IC3 says fake job offer scams jumped 40% in early 2026. Scammers post convincing job listings and even hold fake 'interviews' via AI video — then ask for money for equipment or background checks. Here's what to check before you share any personal information with a new employer."
+  {
+    title: 'Fake Job Offer / AI Interview Scam (2026)',
+    redFlags: [
+      'You receive an unsolicited job offer — often via LinkedIn, WhatsApp, or text — from a company you never applied to',
+      'The "interview" is conducted entirely via text message, chat, or a pre-recorded AI video — never a real live person',
+      'The job offers unusually high pay for remote work requiring little experience',
+      'After being "hired," they ask you to pay for equipment, software licenses, a background check, or a training course before you can start',
+    ],
+    whatToDo: [
+      'Real employers never ask job candidates to pay anything — any request for money from a new "employer" is a scam',
+      'Verify the company exists by calling the main number from their official website — find it yourself, not from a number they gave you',
+      'Never share your Social Security number, bank account details, or a photo of your ID until you have verified the employer is real',
+      'Report fake job offers to the FTC at ReportFraud.ftc.gov and to the FBI\'s Internet Crime Complaint Center at ic3.gov',
+    ],
+  },
 ];
 
 export default function ScamAlerts() {

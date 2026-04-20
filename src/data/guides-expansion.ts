@@ -5458,26 +5458,6 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'stay-safe-public-wifi',
-    title: 'How to Stay Safe on Public WiFi While Traveling',
-    excerpt: 'Protect your passwords and personal information when using WiFi at hotels, airports, and coffee shops.',
-    category: 'safety-guides' as any,
-    tags: ['public wifi', 'security', 'travel', 'vpn', 'password'],
-    readTime: '6 min',
-    thumbnailEmoji: '📡',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Public WiFi at hotels, airports, and coffee shops is convenient but risky. Anyone on the same network can potentially intercept your data, which is why you should never do online banking or enter passwords on public WiFi without protection. A few simple precautions keep your information safe while traveling.`,
-    steps: [
-      { title: 'Avoid logging into sensitive accounts on public WiFi', content: `Do not access your bank, investment accounts, or healthcare accounts over public WiFi. Save those tasks for your home network or your phone's cellular data connection, which is encrypted and much safer.` },
-      { title: 'Verify the network name before connecting', content: 'Cybercriminals sometimes set up fake WiFi hotspots with names like "Free Hotel WiFi" near hotels. Before connecting, ask hotel staff or check the official network name at the venue. Confirm you are connecting to the real network.' },
-      { title: 'Use a VPN', content: 'A VPN encrypts all your internet traffic so it cannot be read even on a compromised network. Install a trusted VPN like NordVPN, ExpressVPN, or Proton VPN before your trip and connect it whenever you use public WiFi.' },
-      { title: 'Look for HTTPS on websites', content: 'When browsing on public WiFi, make sure websites show "https://" (with an S) in the address bar and a padlock icon. HTTPS means the connection between your browser and the website is encrypted. Never enter personal information on a site that shows "http://" without the S.' },
-      { title: `Use your phone's hotspot instead of public WiFi`, content: `If you have cellular data available, consider turning on your phone's hotspot and connecting your laptop to it instead of using public WiFi. Your cellular connection is far more secure than any public network.` },
-    ],
-  },
-
   // ═══════════════════════════════════════════
   // ENTERTAINMENT & STREAMING (6 guides)
   // ═══════════════════════════════════════════
@@ -5605,26 +5585,6 @@ Set a Screen Time passcode that is different from the child's login password. Th
   // ═══════════════════════════════════════════
   // FINANCIAL TECH (6 guides)
   // ═══════════════════════════════════════════
-
-  {
-    slug: 'check-credit-score-free',
-    title: 'How to Check Your Credit Score for Free',
-    excerpt: 'Check your credit score and full credit report for free — no credit card required — using official tools.',
-    category: 'financial-tech' as any,
-    tags: ['credit score', 'credit report', 'annualcreditreport', 'free', 'personal finance'],
-    readTime: '5 min',
-    thumbnailEmoji: '📊',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Your credit score affects your ability to get a loan, rent an apartment, or even get some jobs. Checking it regularly helps you catch errors and signs of identity theft early. You are legally entitled to a free credit report from each of the three major bureaus every year, and many banks and apps now show your score for free with no impact on your credit.`,
-    steps: [
-      { title: 'Get your free credit report at AnnualCreditReport.com', content: 'Go to annualcreditreport.com — this is the official, government-authorized site. Click "Request your free credit reports" and fill in your name, address, Social Security number, and date of birth. You can request reports from Equifax, Experian, and TransUnion.' },
-      { title: 'Check your credit score through your bank or credit card', content: 'Many banks and credit card companies show your FICO score for free in their app or website. Look in your account dashboard for a "Credit Score" section. Capital One, Discover, Chase, and most major banks offer this feature.' },
-      { title: 'Use Credit Karma for free monitoring', content: 'Go to creditkarma.com and create a free account. Credit Karma shows your TransUnion and Equifax scores and updates them weekly. It also alerts you to changes in your credit report, which can help you catch identity theft early.' },
-      { title: 'Review your credit report for errors', content: 'Look through your credit report for accounts you do not recognize, incorrect balances, or late payments that were not actually late. Errors on your credit report can lower your score and are more common than most people realize.' },
-      { title: 'Dispute errors if you find them', content: `If you find an error, go to the bureau's website (equifax.com, experian.com, or transunion.com) and file a dispute online. Provide any documentation you have. The bureau must investigate and respond within 30 days.` },
-    ],
-  },
 
   {
     slug: 'set-up-online-banking',
@@ -5811,26 +5771,6 @@ Set a Screen Time passcode that is different from the child's login password. Th
   },
 
   {
-    slug: 'use-apple-health-google-fit',
-    title: 'How to Use Apple Health or Google Fit',
-    excerpt: `Use your phone's built-in health app to track steps, heart rate, sleep, and other health metrics automatically.`,
-    category: 'health-tech' as any,
-    tags: ['apple health', 'google fit', 'health tracking', 'steps', 'wellness'],
-    readTime: '5 min',
-    thumbnailEmoji: '❤️',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Your smartphone already has a powerful health-tracking app built in. Apple Health (on iPhone) and Google Fit (on Android) automatically track your steps, estimate calories burned, and can pull in data from apps and wearable devices. The data you collect over time gives you and your doctor a clearer picture of your overall health.`,
-    steps: [
-      { title: `Open your phone's health app`, content: 'On iPhone, the Health app is pre-installed — look for the red heart icon. On Android, download Google Fit from the Play Store if it is not already installed. Open the app and complete the initial setup, entering your age, height, and weight.' },
-      { title: 'Set up your health profile', content: 'In Apple Health, tap "Summary" then your profile photo in the top right to enter your health details. In Google Fit, tap the profile icon. Accurate height and weight help the apps calculate calories and body mass index correctly.' },
-      { title: 'Carry your phone to track steps automatically', content: `Carrying your phone in your pocket or bag is enough for both apps to count your steps automatically using the phone's built-in motion sensor. No extra setup is needed.` },
-      { title: 'Explore your health data', content: 'In Apple Health, tap "Browse" to see all available health categories — steps, heart rate, sleep, and more. In Google Fit, tap "Journal" to see your daily activity. Tap any category to see trends over days, weeks, or months.' },
-      { title: 'Connect other apps and devices', content: 'Many apps can share data with Apple Health or Google Fit — including your pharmacy app, fitness trackers, and nutrition apps. In Apple Health, go to Settings, then Health, then Apps to see what is connected. Connecting more sources gives you a more complete picture of your health.' },
-    ],
-  },
-
-  {
     slug: 'set-up-medication-reminders',
     title: 'How to Set Up Medication Reminders on Your Phone',
     excerpt: `Never miss a dose by setting up medication reminders using your phone's built-in tools or a free app.`,
@@ -5951,26 +5891,6 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Add a contact', content: 'Tap the "+" or "New" button to add a contact. You can search by phone number or name from your contacts. If the person already has Marco Polo, they will appear. If not, you can invite them by text message.' },
       { title: 'Record and send a video', content: `Tap a contact's name to open the conversation. Press and hold the large camera button to record your video message — speak naturally as if you were talking to them in person. Release the button when you are done and it sends automatically.` },
       { title: 'Watch and reply to videos', content: 'When a friend sends you a video, you will get a notification. Open the app and tap their name to watch it. Press the camera button to record your reply. Videos stay in the conversation so you can rewatch them, and you can see whether the other person has watched your message.' },
-    ],
-  },
-
-  {
-    slug: 'block-unwanted-calls-texts',
-    title: 'How to Block Unwanted Calls and Texts',
-    excerpt: 'Block spam callers, robocalls, and unwanted texts on your iPhone or Android phone using built-in settings.',
-    category: 'phone-guides' as any,
-    tags: ['block calls', 'spam calls', 'robocalls', 'phone safety', 'do not call'],
-    readTime: '5 min',
-    thumbnailEmoji: '🚫',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Spam calls and unwanted texts are an enormous nuisance, and most people receive several every week. Both iPhone and Android have built-in tools to block specific numbers and silence unknown callers. Carrier-level tools and the National Do Not Call Registry provide additional layers of protection. Knowing how to use these tools gives you much more control over who can reach you.`,
-    steps: [
-      { title: 'Block a specific number on iPhone', content: 'Go to your recent calls list and tap the "i" (information) icon next to the number you want to block. Scroll down and tap "Block this Caller," then confirm. The number will no longer be able to call, text, or FaceTime you.' },
-      { title: 'Block a specific number on Android', content: 'Open your Phone app and go to recent calls. Tap and hold the number you want to block, then tap "Block / report spam" and confirm. You can also block a text by tapping and holding the message, then selecting "Block."' },
-      { title: 'Silence unknown callers on iPhone', content: 'Go to Settings, then Phone, then "Silence Unknown Callers" and turn it on. Calls from numbers not in your contacts will go directly to voicemail without ringing. This dramatically reduces spam calls.' },
-      { title: `Use your carrier's free spam protection`, content: `All major US carriers offer free robocall blocking tools. AT&T offers Call Protect, T-Mobile offers Scam Shield, and Verizon offers Call Filter. Search your carrier's website for their spam blocking app and enable it — they are free and can block millions of known spam numbers automatically.` },
-      { title: 'Register with the Do Not Call Registry', content: 'Go to donotcall.gov and register your phone number with the National Do Not Call Registry. This legally prohibits most telemarketers from calling you. It will not stop scammers, but it reduces legitimate marketing calls within 31 days of registration.' },
     ],
   },
 

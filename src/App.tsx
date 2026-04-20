@@ -11,9 +11,11 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { TierProvider } from "@/contexts/TierContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBrain } from "@/components/TekBrain";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
+import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -321,22 +323,19 @@ const FloatingChrome = () => {
 };
 
 /**
- * Public surfaces default to the Landing v2 dark palette; protected/authed surfaces
- * (admin, customer, tech, profile) default to light. User's explicit DarkModeToggle
- * choice (stored in localStorage `teksure-theme`) always wins over the default.
+ * All surfaces default to light for first-time visitors — a welcoming light
+ * palette is easier for seniors and beginners than a dark starfield. A user's
+ * explicit DarkModeToggle choice (stored in localStorage `teksure-theme`)
+ * always wins over the default.
  */
-const PROTECTED_PREFIXES = ["/customer", "/tech", "/admin", "/profile"];
-
 const RouteThemeDefault = () => {
   const { pathname } = useLocation();
   useEffect(() => {
     if (isServer) return;
     const stored = localStorage.getItem("teksure-theme");
-    if (stored === "light" || stored === "dark") return;
-    const isProtected = PROTECTED_PREFIXES.some((p) => pathname.startsWith(p));
     const root = document.documentElement;
-    if (isProtected) root.classList.remove("dark");
-    else root.classList.add("dark");
+    if (stored === "dark") root.classList.add("dark");
+    else root.classList.remove("dark");
   }, [pathname]);
   return null;
 };
@@ -381,6 +380,7 @@ const AppContent = () => {
       <SearchModal open={open} onClose={onClose} />
       <RouteThemeDefault />
       <FloatingChrome />
+      <MobileBottomNav />
       <BackToTop />
       <Toaster />
       <Sonner />
@@ -643,11 +643,13 @@ export const AppShell = ({ children, helmetContext }: { children?: ReactNode; he
           <LanguageProvider>
             <SeniorModeProvider>
               <HighContrastProvider>
-                <AuthProvider>
-                  {children}
-                  <AppContent />
-                  <Analytics />
-                </AuthProvider>
+                <TierProvider>
+                  <AuthProvider>
+                    {children}
+                    <AppContent />
+                    <Analytics />
+                  </AuthProvider>
+                </TierProvider>
               </HighContrastProvider>
             </SeniorModeProvider>
           </LanguageProvider>

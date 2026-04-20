@@ -404,42 +404,6 @@ export const guidesBatch23: Guide[] = [
   },
 
   {
-    slug: 'windows-11-new-features',
-    title: 'Useful Windows 11 Features Worth Knowing About',
-    excerpt: 'Windows 11 added several improvements over Windows 10. These are the features most worth exploring — including a new Start menu, better virtual desktops, and Snap Layouts.',
-    category: 'windows-guides',
-    tags: ['windows 11', 'new features', 'upgrade', 'windows tips', 'PC'],
-    readTime: '5 min',
-    thumbnailEmoji: '🪟',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `Windows 11 launched in 2021 and has been gradually rolled out to eligible Windows 10 computers since then. If your computer recently updated to Windows 11, you've probably noticed it looks a bit different — the taskbar and Start menu are centered on the screen, and some things are in different places.\n\nBeyond the visual refresh, Windows 11 introduced genuinely useful features that weren't in Windows 10. This guide highlights the most practical ones for everyday users — the things you'll actually use once you know they exist.`,
-    steps: [
-      {
-        title: 'The new Start menu — centered and cleaner',
-        content: 'The Start menu is now centered at the bottom of the screen instead of in the corner. Click it to see Pinned apps (apps you use most) and a Recommended section showing recently opened files. To pin an app to Start: right-click any app and choose "Pin to Start." To move the Start menu back to the left: Settings > Personalization > Taskbar > Taskbar behaviors > Taskbar alignment > Left.',
-      },
-      {
-        title: 'Snap Layouts for side-by-side windows',
-        content: 'Hover over the maximize button on any window to see layout options for arranging two, three, or four windows on screen simultaneously. Click your preferred layout and position. This makes it much easier to work in two windows at once — a first for Windows users who had to manually resize everything before.',
-      },
-      {
-        title: 'Improved virtual desktops',
-        content: 'Click the task switcher button on the taskbar (two overlapping rectangles, or press Windows key + Tab). You can create multiple "desktops" — Desktop 1 might have work apps, Desktop 2 has personal apps. Switch between them without closing anything. Right-click a desktop to rename it or change its wallpaper independently.',
-        tip: 'Quick Tip: Press Windows key + Ctrl + D to create a new virtual desktop. Press Windows key + Ctrl + Left/Right arrow to switch between them.',
-      },
-      {
-        title: 'Quick Settings panel',
-        content: 'Click the network, volume, or battery icon area in the bottom-right corner to open Quick Settings — a mini control panel with Wi-Fi, Bluetooth, night light, accessibility, and sound controls. Click any tile to toggle it. Click the edit button (pencil icon) to add or remove tiles to match what you actually use.',
-      },
-      {
-        title: 'Focus sessions in the Clock app',
-        content: 'Open the Clock app (search "Clock" in Start). The new Focus Sessions feature lets you set a work timer with optional break reminders, integrates with Spotify for focus music, and syncs with Microsoft To-Do. If you tend to get distracted, using a 25–45 minute focus timer can make computer time more productive.',
-      },
-    ],
-  },
-
-  {
     slug: 'google-photos-people-albums',
     title: 'How to Find and Organize Photos by Person in Google Photos',
     excerpt: `Google Photos automatically groups photos by the people in them. Once you label who's who, you can instantly find all photos of any person.`,

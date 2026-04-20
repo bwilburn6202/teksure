@@ -83,43 +83,6 @@ export const guidesBatch13: Guide[] = [
   },
 
   {
-    slug: 'how-to-set-up-smart-tv',
-    title: 'How to Set Up a Smart TV and Start Watching Streaming Apps',
-    excerpt: `Smart TVs connect to the internet so you can watch Netflix, YouTube, and free channels without extra devices — here's how to get started.`,
-    category: 'entertainment',
-    tags: ['smart TV', 'streaming', 'netflix', 'setup', 'wifi', 'samsung', 'LG'],
-    readTime: '6 min',
-    thumbnailEmoji: '📺',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "A smart TV is a television with internet access built in, so you can watch Netflix, Hulu, YouTube, and hundreds of other apps directly on your TV without needing any extra devices. If your TV was made after 2015, there's a good chance it's already a smart TV. Here's how to get it connected and ready to watch.",
-    steps: [
-      {
-        title: 'Find out if your TV is a smart TV',
-        content: `Look at your TV's remote control. If you see buttons for Netflix, Amazon Prime, YouTube, or a "Smart Hub" or "Home" button with a house icon, your TV is a smart TV. You can also check the TV's settings menu — press the Home or Menu button on your remote and look for a "Network" or "Wi-Fi" option in the settings.`,
-      },
-      {
-        title: 'Connect your TV to your home WiFi',
-        content: `Press the Home or Menu button on your remote. Navigate to Settings (it may show as a gear icon). Look for "Network," "Wi-Fi," or "Internet." Select "Wireless" or "Wi-Fi." Your TV will scan for nearby networks — select your home WiFi network name from the list. Use the remote to type in your WiFi password. The TV will confirm when it's connected.`,
-        tip: `If you're having trouble typing your WiFi password with the TV remote, look for an option to use your phone's keyboard. Samsung TVs let you control the keyboard from a SmartThings app on your phone.`,
-      },
-      {
-        title: 'Find and open a streaming app',
-        content: `After connecting to WiFi, press the Home button on your remote. You'll see the smart TV's home screen with apps. Many popular apps like Netflix, YouTube, Amazon Prime Video, and Hulu are already installed. Highlight one with your remote and press the center button to open it. If you want to add more apps, look for an "App Store" or "Content Store" on the home screen.`,
-      },
-      {
-        title: 'Log in to your streaming account',
-        content: 'The first time you open Netflix, Hulu, or another streaming service, it will ask you to sign in. Use the TV remote to type your email address and password. If typing on the TV is slow, many streaming apps let you "activate" on your TV by going to a website on your phone — look for a code on the TV screen and go to netflix.com/activate (or similar) on your phone to complete the login faster.',
-        tip: `Pluto TV, Tubi, and The Roku Channel are completely free streaming apps with no account needed. Look for them in your TV's app store for immediate free content.`,
-      },
-      {
-        title: 'Adjust picture and sound settings for the best experience',
-        content: 'Many smart TVs come with the "Vivid" or "Dynamic" picture mode turned on by default — this is designed to stand out in a bright store, not for comfortable home viewing. For a more natural picture at home, go to Settings → Picture → Picture Mode and choose "Standard" or "Natural." For better sound, look for Settings → Sound → a "Clear Voice" or "Dialogue Enhancement" option to make voices easier to hear.',
-      },
-    ],
-  },
-
-  {
     slug: 'how-to-use-amazon-alexa',
     title: 'How to Set Up and Use Amazon Alexa (Echo)',
     excerpt: "Amazon Alexa is a voice assistant that answers questions, sets reminders, and controls smart home devices — here's how to get started.",
@@ -189,43 +152,6 @@ export const guidesBatch13: Guide[] = [
         title: 'Use Maps with Apple CarPlay if your car supports it',
         content: `If your car has an infotainment screen with CarPlay support, you can mirror Apple Maps on your car's larger screen. Connect your iPhone to your car using a USB cable (or wirelessly on newer iPhones) and CarPlay starts automatically. You'll see Maps and other apps on your car's display — this keeps your eyes on the road better than looking at your phone.`,
         tip: 'Even without CarPlay, many people prop their phone in a cup holder or on a phone mount attached to the dashboard. A phone mount costs $10-$20 at any electronics or auto parts store.',
-      },
-    ],
-  },
-
-  {
-    slug: 'how-to-use-google-maps',
-    title: 'How to Use Google Maps for Directions on iPhone and Android',
-    excerpt: 'Google Maps is a free navigation app that gives spoken turn-by-turn directions, shows live traffic, and helps you find nearby places.',
-    category: 'app-guides',
-    tags: ['google maps', 'navigation', 'directions', 'android', 'iphone', 'driving'],
-    readTime: '5 min',
-    thumbnailEmoji: '📍',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Google Maps is one of the most used apps in the world for navigation and finding places. It shows live traffic so you can avoid slowdowns, suggests the fastest route, and speaks directions out loud while you drive. It's free and works on both iPhone and Android.",
-    steps: [
-      {
-        title: `Download Google Maps if it's not already on your phone`,
-        content: `Google Maps is pre-installed on most Android phones. On iPhones, you can download it free from the App Store — search "Google Maps." Once installed, open the app. You don't need to sign in to use basic navigation, but signing in with your Google account lets you save places and have your search history across devices.`,
-      },
-      {
-        title: 'Search for a destination and get directions',
-        content: 'Tap the search bar at the top and type your destination — an address, business name, or place. Tap the correct result from the list. Tap the blue "Directions" button. Choose your transportation mode at the top: car (driving), walking, transit, or rideshare. Google Maps shows multiple route options with time estimates. Tap "Start" on your preferred route to begin navigation.',
-        tip: 'Google Maps shows live traffic in orange (slow) and red (very slow) on the map. If you tap "Routes," you can see alternative paths that may be faster.',
-      },
-      {
-        title: 'Follow the spoken turn-by-turn directions',
-        content: 'Once navigation starts, Google Maps speaks each turn out loud: "In half a mile, turn right on Oak Street." Keep your phone face-up in a visible spot or on a mount. The map automatically scrolls as you drive. If you miss a turn, Google Maps says "Recalculating" and immediately finds a new route without you having to do anything.',
-      },
-      {
-        title: 'Save your home and work addresses',
-        content: 'Tap your profile picture (or initial) in the top right corner → Settings → Edit home or work. Type your home address and save it. Now you can get directions home from anywhere in seconds by typing "Home" in the search bar — Google Maps already knows where it is. You can also save other important addresses by searching for a place and tapping the bookmark icon to save it to a list.',
-      },
-      {
-        title: 'Find nearby places using Google Maps',
-        content: 'Google Maps is great for finding things near you. Tap the search bar and type what you need: "pharmacy near me," "urgent care open now," "gas station near me," or "grocery store." Maps shows a list of nearby options with ratings, hours, and distance. Tap any result to see its phone number, photos, reviews, and hours — then tap "Directions" to go there.',
-        tip: 'Before a long trip, download the map for offline use — go to your profile picture → Offline Maps → Select Your Own Map → download the area. Then Maps works without internet, which is helpful in areas with spotty cell service.',
       },
     ],
   },
@@ -302,43 +228,6 @@ export const guidesBatch13: Guide[] = [
         title: 'Be skeptical of financial advice from strangers online',
         content: `Real financial advisors are licensed and regulated by state and federal agencies. They don't recruit clients through Instagram comments or Facebook Messenger. If someone contacts you unsolicited about making money with investments, assume it's a scam. The general rule: if someone contacts you first with an investment opportunity — especially online — it's almost certainly not legitimate.`,
         tip: 'Talk to a family member, friend, or your bank before sending any money to an investment you learned about online. A second opinion costs nothing and can save thousands.',
-      },
-    ],
-  },
-
-  {
-    slug: 'how-to-use-mychart',
-    title: 'How to Use MyChart to View Your Health Records and Message Your Doctor',
-    excerpt: "MyChart is a free app used by most hospitals and clinics that lets you see test results, message your care team, and request refills.",
-    category: 'health-tech',
-    tags: ['mychart', 'health records', 'patient portal', 'doctor', 'medical'],
-    readTime: '6 min',
-    thumbnailEmoji: '🏥',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "MyChart is a free app and website used by most major hospital systems and clinics in the US. Once you set up your account, you can see your test results as soon as they're ready, message your doctor directly without calling, request prescription refills, schedule appointments, and view your complete medical history — all from your phone.",
-    steps: [
-      {
-        title: 'Check if your doctor uses MyChart',
-        content: `MyChart is used by thousands of health systems including Epic, Cleveland Clinic, Kaiser Permanente, UCSF Health, and hundreds of local hospitals. The fastest way to find out if your provider uses MyChart: after your next appointment, check if your after-visit summary or paperwork has a MyChart logo or mentions a "patient portal." You can also call your doctor's office and ask "Do you use MyChart or a patient portal, and how do I sign up?"`,
-        tip: 'If your provider uses a different patient portal (not MyChart), most portals work similarly. The steps in this guide apply generally to most patient portals.',
-      },
-      {
-        title: 'Create your MyChart account',
-        content: `Your doctor's office can send you an activation code by email or text — ask for one when you call. Go to mychart.com, click "Sign Up Now," and enter your activation code when prompted. Create a username and password you'll remember. Alternatively, download the free "MyChart" app from the App Store or Google Play and tap "Sign Up" — you can verify your identity using your name, date of birth, and last four digits of your Social Security number.`,
-      },
-      {
-        title: 'View your test results',
-        content: `After signing in, tap or click "Test Results." Lab results, imaging reports (X-rays, MRIs), and other test results are usually available within a day or two of being completed. Each result shows the value, the normal range, and a brief explanation. If a result is flagged as "abnormal," don't panic — your doctor will often send a message through MyChart explaining what it means and whether any follow-up is needed.`,
-        tip: 'You can set up notifications so MyChart sends you a text or email alert when new results are available. Look for "Notification Settings" in your account settings.',
-      },
-      {
-        title: 'Message your care team',
-        content: `The "Messages" section of MyChart lets you send non-urgent questions directly to your doctor or nurse without calling. This is great for questions like "Is it OK to take ibuprofen with my new medication?" or "I'm still coughing after three days — should I come in?" Your care team typically responds within 1-2 business days. For urgent or emergency issues, always call the office or go to urgent care.`,
-      },
-      {
-        title: 'Request prescription refills',
-        content: `Tap "Medications" to see a list of all your current prescriptions. Find the medication you need refilled and tap "Request a Refill." Select your preferred pharmacy from the list (or add a new one) and submit. Most refill requests are processed within 24-48 hours. You'll receive a notification when it's ready to pick up. This is faster than calling and waiting on hold.`,
       },
     ],
   },
@@ -642,39 +531,6 @@ export const guidesBatch13: Guide[] = [
       {
         title: `What to do if AirPlay doesn't show your TV`,
         content: `If your TV doesn't appear in the AirPlay list, check that both your iPhone and TV are on the same WiFi network (not one on 2.4GHz and the other on 5GHz). Restart both your TV and iPhone. On some TVs, you need to enable AirPlay in the TV's settings — look in the TV's settings for "Apple AirPlay" and make sure it's turned on.`,
-      },
-    ],
-  },
-
-  {
-    slug: 'how-to-use-apple-pay',
-    title: 'How to Set Up and Use Apple Pay at Stores and Online',
-    excerpt: `Apple Pay lets you pay with your iPhone at checkout instead of using a physical card — it's secure, fast, and accepted at millions of stores.`,
-    category: 'financial-tech',
-    tags: ['apple pay', 'mobile payment', 'contactless', 'iphone', 'wallet', 'shopping'],
-    readTime: '5 min',
-    thumbnailEmoji: '💳',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Apple Pay lets you pay for things by tapping your iPhone at a payment terminal — just like a contactless credit card, but on your phone. It works at grocery stores, pharmacies, restaurants, and millions of other retailers. It's faster than swiping a card and more secure, because the store never sees your actual credit card number.",
-    steps: [
-      {
-        title: 'Add your credit or debit card to Apple Wallet',
-        content: 'Open the Wallet app on your iPhone (it has a black icon with colored cards). Tap the plus (+) button in the top right. Tap "Debit or Credit Card." Tap "Continue." Hold your card in front of the camera so it can scan the card number, or type it in manually. Enter the security code (CVV) from the back of the card when asked. Your bank will verify the card — you may receive a text message with a code to confirm.',
-        tip: 'You can add multiple cards and set one as your "default card" — the one that gets used first. Tap a card in Wallet, scroll down, and tap "Set as Default Card."',
-      },
-      {
-        title: 'Pay with Apple Pay at a store',
-        content: 'When checking out, look for the contactless payment symbol on the payment terminal — it looks like a WiFi symbol turned on its side, or the Apple Pay logo. Double-click the side button on your iPhone (the button on the right side). Your Wallet will open showing your default card. Hold the top of your iPhone near the payment terminal. Authenticate with Face ID (look at the phone) or Touch ID (press the home button with your fingerprint). Payment is complete when you feel a vibration and see "Done" on screen.',
-        tip: `The whole payment takes 5-10 seconds — often faster than inserting or swiping a card. You don't need to unlock your phone first; double-clicking the side button opens Apple Pay directly.`,
-      },
-      {
-        title: 'Use Apple Pay for online purchases',
-        content: `On many websites and apps, you'll see an "Apple Pay" button at checkout instead of (or alongside) the regular card entry form. Tap the Apple Pay button. Your default card will appear. Authenticate with Face ID or Touch ID. Payment is complete — no need to type your card number, expiration date, or billing address. Apple fills all of that in automatically.`,
-      },
-      {
-        title: 'Understand why Apple Pay is more secure than a physical card',
-        content: `When you pay with Apple Pay, the store receives a one-time transaction code — not your actual card number. Even if a store has a data breach, the thieves can't get your card number because the store never had it. Your actual card number is stored only on your iPhone and never leaves it. Additionally, every Apple Pay transaction requires Face ID or Touch ID — so if your phone is stolen, no one can use it to make payments.`,
       },
     ],
   },

@@ -9,20 +9,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <script>
-      // Pre-paint theme default: dark on public routes, light on protected routes,
-      // unless the user has a stored preference. Mirrors RouteThemeDefault in App.tsx.
+      // Pre-paint theme default: light for all visitors unless they've explicitly
+      // picked dark via the DarkModeToggle. A welcoming light surface is
+      // friendlier for first-time seniors/beginners than a dark starfield.
+      // Mirrors RouteThemeDefault in App.tsx.
       (function () {
         try {
           var stored = localStorage.getItem('teksure-theme');
-          if (stored === 'light') return;
           if (stored === 'dark') {
             document.documentElement.classList.add('dark');
-            return;
           }
-          var protectedPaths = ['/customer', '/tech', '/admin', '/profile'];
-          var path = window.location.pathname;
-          var isProtected = protectedPaths.some(function (p) { return path.indexOf(p) === 0; });
-          if (!isProtected) document.documentElement.classList.add('dark');
         } catch (_) { /* no-op */ }
       })();
     </script>
@@ -79,12 +75,12 @@
     <!--ssr-head-->
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      if (‘serviceWorker’ in navigator) {
-        window.addEventListener(‘load’, () => {
-          navigator.serviceWorker.register(‘/service-worker.js’).then(reg => {
-            console.log(‘ServiceWorker registered with scope:’, reg.scope);
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(reg => {
+            console.log('ServiceWorker registered with scope:', reg.scope);
           }).catch(() => {
-            console.log(‘ServiceWorker registration failed.’);
+            console.log('ServiceWorker registration failed.');
           });
         });
       }

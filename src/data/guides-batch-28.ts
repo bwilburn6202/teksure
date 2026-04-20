@@ -49,51 +49,6 @@ Each person still has their own Personal Library for private photos. You can swi
     ],
   },
   {
-    slug: 'airplay-iphone-to-tv',
-    title: 'How to Use AirPlay: Stream From iPhone to Your TV',
-    excerpt: `AirPlay lets you wirelessly show your iPhone screen — or just a video or photo — on your television. Here's how to set it up in minutes.`,
-    category: 'entertainment',
-    tags: ['AirPlay', 'iPhone', 'Apple TV', 'stream to TV', 'screen mirror'],
-    readTime: '5 min',
-    thumbnailEmoji: '📺',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `AirPlay is Apple's wireless technology for sending photos, videos, music, or your entire screen from an iPhone, iPad, or Mac to a compatible TV. If you've ever wanted to show vacation photos on the big screen or watch a YouTube video without squinting at your phone, AirPlay makes that straightforward.
-
-To use AirPlay, you need two things: an Apple device (iPhone, iPad, or Mac) and a receiver that supports AirPlay. Apple TV (any generation) is the most common receiver. Many modern smart TVs also have AirPlay 2 built in — Samsung, LG, Sony, Vizio, and several other brands added it in recent years. You can also use a Mac as an AirPlay receiver.
-
-Both your iPhone and the TV (or Apple TV) need to be connected to the same Wi-Fi network. That's the only requirement. AirPlay sends the content over your home Wi-Fi — no cables, no Bluetooth pairing needed.
-
-There are two types of AirPlay: screen mirroring and content streaming. Screen mirroring shows your entire iPhone screen on the TV — everything you do on your phone appears on screen. Content streaming sends just a specific video, photo, or song to the TV while your phone continues doing other things.
-
-Screen mirroring is good for showing websites, slideshows, or demonstrating how an app works. Content streaming is better for watching a video from your Camera Roll on a big screen, or playing music through TV speakers.
-
-AirPlay 2 also supports multi-room audio — you can play music simultaneously on multiple AirPlay 2 speakers throughout your home.`,
-    steps: [
-      {
-        title: 'Make Sure Everything Is on the Same Wi-Fi',
-        content: `Your iPhone and your Apple TV (or smart TV) must both be connected to the same Wi-Fi network. On your iPhone, go to Settings → Wi-Fi to see your network name. Check your TV's settings for its Wi-Fi connection. They need to match.`,
-      },
-      {
-        title: 'Mirror Your Entire Screen',
-        content: 'Swipe down from the top-right corner of your iPhone to open Control Center. Tap "Screen Mirroring" (the icon looks like two overlapping rectangles). A list of available AirPlay devices appears. Tap your TV or Apple TV name. Your screen now appears on the TV.',
-        tip: `If you don't see your TV in the list, try turning your TV off and back on, or restart your iPhone. Both devices need a moment to discover each other on Wi-Fi.`,
-      },
-      {
-        title: 'Stream a Specific Video or Photo',
-        content: 'Open the photo or video you want to share in the Photos app. Tap the share icon (square with an arrow pointing up). Scroll down and tap "AirPlay." Select your TV. The content plays on the TV while your phone stays available for other things.',
-      },
-      {
-        title: 'Stream From Apps Like YouTube or Netflix',
-        content: 'Many apps have an AirPlay button built in — it looks like a triangle pointing up into a rectangle. In YouTube, tap the cast/AirPlay icon in the video player. In Netflix, look for the same icon. Tap it and select your TV. The video plays on your TV while the phone controls playback.',
-      },
-      {
-        title: 'Stop AirPlay',
-        content: 'To stop screen mirroring: open Control Center, tap Screen Mirroring, then tap "Stop Mirroring." To stop content streaming: tap the AirPlay icon in the app and select "iPhone" (or your device name) to route audio and video back to your phone.',
-      },
-    ],
-  },
-  {
     slug: 'screen-mirror-android-to-tv',
     title: 'How to Mirror Your Android Phone Screen to a TV',
     excerpt: `Android phones can wirelessly display on your TV using Cast, Smart View, or a Chromecast device. Here's how to get your phone screen on the big screen.`,
@@ -458,52 +413,6 @@ The goal isn't to get to zero emails — it's to get to a state where the emails
       {
         title: 'Create a Filter for Recurring Senders',
         content: `For emails from a sender you want to skip but don't want to fully unsubscribe from: In Gmail, open an email → click the three-dot menu → "Filter messages like these" → click "Create filter" → choose "Skip the Inbox (Archive it)" or "Delete it." Future emails from that sender go straight to Archive or Trash.`,
-      },
-    ],
-  },
-  {
-    slug: 'organize-email-folders-labels',
-    title: 'How to Organize Your Email With Folders and Labels',
-    excerpt: `Keeping your inbox manageable is much easier when you create folders or labels to sort emails — here's how to do it in Gmail and Outlook.`,
-    category: 'essential-skills',
-    tags: ['email', 'Gmail', 'Outlook', 'folders', 'labels', 'organize'],
-    readTime: '5 min',
-    thumbnailEmoji: '📂',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `A cluttered email inbox is one of the most common frustrations with technology. The fix is simple: create a system of folders (in Outlook) or labels (in Gmail) to sort your emails into categories, just like sorting paper mail into different piles or filing cabinets.
-
-Gmail uses "labels" instead of folders, but they work similarly. You can apply multiple labels to one email (unlike a folder, which holds one copy), and you can color-code them to make them easy to spot. In Outlook, the equivalent is "Folders" — an email lives in one folder at a time.
-
-A practical folder/label system for most people includes: one folder for each family member you regularly email, one for finances/bills, one for medical records, one for receipts/orders, one for travel, and one for anything related to a specific hobby or activity. Keeping the total number manageable (under 15 folders) means you'll actually use the system.
-
-There's also the "Archive" feature — available in both Gmail and Outlook — which removes an email from your inbox without deleting it. Archived emails are searchable but out of the way. Archiving is faster than filing when you're clearing a backlog.
-
-The most useful feature for staying organized going forward is automatic rules or filters: you tell your email provider "whenever an email arrives from my doctor's office, put it in the Medical folder." This happens automatically without you needing to sort each email manually.
-
-Getting organized takes a bit of upfront effort, but once the system is in place, maintaining it takes just a few seconds per email.`,
-    steps: [
-      {
-        title: 'Create Labels in Gmail',
-        content: 'In Gmail on a computer, look at the left sidebar. Scroll down and click "Create new label." Give it a name (e.g., "Medical" or "Finances"). Click Create. The label appears in the left sidebar. To add a label to an email: open it, click the label icon (tag shape) at the top, and check the label name.',
-        tip: 'Color-code labels by right-clicking a label in the sidebar → "Label color." Use red for urgent, green for financial, blue for family.',
-      },
-      {
-        title: 'Create Folders in Outlook',
-        content: 'In Outlook, right-click "Inbox" in the left panel. Select "New Folder." Type a name and press Enter. The folder appears under Inbox. To move an email: right-click the email → "Move to Folder" → select your folder. Or drag the email into the folder in the left panel.',
-      },
-      {
-        title: 'Set Up Automatic Rules',
-        content: 'Gmail: Open an email from a sender. Click the three-dot menu at the top right → "Filter messages like these" → "Create filter" → check "Apply the label" and choose a label. Future emails from that sender go there automatically. Outlook: Right-click an email → "Rules" → "Create rule" → set the conditions and destination folder.',
-      },
-      {
-        title: 'Use Archive to Clear Your Inbox Fast',
-        content: `For emails you're done with but might need later: select them and press "E" in Gmail (Archive shortcut), or click the Archive button. In Outlook, press Backspace or click the Archive button. Archived emails are gone from the inbox but fully searchable if you need them later.`,
-        tip: `In Gmail, pressing "E" on your keyboard instantly archives an open email. Working through a backlog is faster when you just tap E repeatedly for emails you've read and are done with.`,
-      },
-      {
-        title: 'Search to Find Archived Emails',
-        content: `To find an archived email: use the search bar at the top of Gmail or Outlook. Search by the sender's name, a keyword from the subject, or a date range. Search finds emails in all folders, labels, and archives — it doesn't matter where the email was filed.`,
       },
     ],
   },

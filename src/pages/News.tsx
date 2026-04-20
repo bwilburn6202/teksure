@@ -99,6 +99,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 24,
+    title: 'Microsoft Released an Emergency Windows 11 Fix — Here\'s How to Get It',
+    summary: 'After Windows 11 security updates in early 2026, Outlook, Word, and File Explorer started freezing whenever users tried to open or save files stored in OneDrive or Dropbox. Microsoft confirmed the bug and released an emergency out-of-band patch (KB5078127 for version 25H2 and KB5082052 for version 24H2) to fix it. The fix is free and takes about 5 minutes. Go to Start → Settings → Windows Update → Check for updates. Install any available patches and restart your computer. If your apps stop freezing after the restart, the fix worked. You may also notice that some previously downloaded emails re-download in Outlook after the fix — this is normal and clears up on its own.',
+    category: 'devices',
+    date: '2026-04-19',
+    icon: Monitor,
+    readTime: '2 min',
+    source: 'Microsoft Support',
+    sourceUrl: 'https://support.microsoft.com',
+  },
+  {
+    id: 23,
+    title: 'Samsung Plans to Put AI in 800 Million Devices by End of 2026 — What That Means for You',
+    summary: 'Samsung announced a partnership with Google to double the number of mobile devices running advanced Gemini AI features, with a target of 800 million AI-capable Samsung and Google devices by end of 2026. For everyday users, this means your Samsung phone will gradually get smarter through regular software updates — things like AI-assisted photo editing, automatic text summarization in Messages, and a smarter voice assistant that understands follow-up questions. No new phone required: most Samsung Galaxy phones from 2023 onwards will receive these features as free over-the-air updates. The updates roll out in waves, so you may not see all features immediately — check Settings → Software Update to make sure you have the latest version.',
+    category: 'devices',
+    date: '2026-04-17',
+    icon: Smartphone,
+    readTime: '2 min',
+    source: 'Google',
+    sourceUrl: 'https://ai.google.dev',
+  },
+  {
     id: 22,
     title: 'Google Found 60 Security Holes in Chrome — Here\'s How to Make Sure Your Browser Is Protected',
     summary: 'Google confirmed 60 newly discovered security vulnerabilities in Chrome this week, two of them rated "critical" — meaning they could allow an attacker to harm your computer or steal information while you browse. The fix is already available but only applies after you restart Chrome. To trigger it manually: click the three dots in the top-right corner of Chrome, select Help, then About Google Chrome. If an update is waiting, you will see a button to Relaunch — click it and your tabs will reopen exactly as they were, now protected. If you see "Google Chrome is up to date," you are already covered.',

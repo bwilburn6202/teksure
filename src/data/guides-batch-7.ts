@@ -192,29 +192,6 @@ Tablet screens are wide enough that split screen actually feels comfortable — 
 
   // ── EMAIL PLATFORMS ──────────────────────────────────────────────────────────
   {
-    slug: 'set-up-gmail-account',
-    title: 'How to Set Up and Use Gmail',
-    excerpt: 'Create a free Gmail account and learn how to send, receive, reply to, and organize your emails — step by step for beginners.',
-    category: 'essential-skills',
-    tags: ['Gmail', 'email', 'Google', 'beginners', 'inbox'],
-    readTime: '7 min',
-    thumbnailEmoji: '📧',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Gmail is Google's free email service, and it is one of the most widely used email services in the world. Your Gmail address ends in "@gmail.com" and can be used to sign in to many other services and apps — including Google Docs, YouTube, and Android phones. Creating an account takes about five minutes and costs nothing.
-
-Once your Gmail account is set up, you can access your email from any browser on any device by going to gmail.com, or by downloading the Gmail app on your phone or tablet. Gmail organizes your inbox automatically, sorting newsletters and social media notifications into separate tabs so your main inbox stays focused on messages from real people.
-
-Gmail also gives you 15 GB of free storage, which is enough to store tens of thousands of emails and attachments before you ever need to think about running out of space.`,
-    steps: [
-      { title: 'Create a Google account', content: 'Go to accounts.google.com/signup in any browser. Enter your first and last name, then choose an email address (for example, yourname123@gmail.com). If your preferred name is taken, Google will suggest alternatives.' },
-      { title: 'Set a strong password', content: 'Create a password that is at least 8 characters and includes letters, numbers, and at least one symbol. Write it down somewhere safe. You will need this password every time you sign in.' },
-      { title: 'Go to your inbox', content: 'After creating your account, go to gmail.com. Your inbox will be empty at first. Any emails you receive will appear here as a list, with the newest at the top.' },
-      { title: 'Compose and send an email', content: `Click the large "+ Compose" button in the upper left. A new email window opens. In the "To" field, type the recipient's email address. Fill in the "Subject" line with a brief description of your message, type your message in the large box, and click the blue "Send" button.` },
-      { title: 'Reply to and organize emails', content: 'Click on any email to open it. At the bottom of the email, click "Reply" to respond. To keep your inbox tidy, click the archive button (a box with a down arrow) to move emails out of your inbox without deleting them — you can find them later with the search bar.' },
-    ],
-  },
-  {
     slug: 'use-outlook-hotmail-email',
     title: 'How to Set Up and Use Outlook (Hotmail) Email',
     excerpt: `Set up a free Outlook.com (formerly Hotmail) email account and learn to send, receive, and organize your messages with Microsoft's email service.`,
@@ -521,52 +498,6 @@ Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 a
   },
 
   // ── SECURE MESSAGING ─────────────────────────────────────────────────────────
-  {
-    slug: 'use-signal-private-messaging',
-    title: 'How to Use Signal for Private Messaging',
-    excerpt: `Signal is a free messaging app that encrypts your texts and calls so only you and your recipient can read them — here's how to get started.`,
-    category: 'communication',
-    tags: ['Signal', 'private messaging', 'encryption', 'security', 'communication', 'privacy'],
-    readTime: '6 min',
-    thumbnailEmoji: '🔒',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Signal is a free messaging app for iPhone and Android that sends texts, photos, and voice calls using end-to-end encryption. End-to-end encryption means that the message is scrambled as it travels from your phone to the recipient's phone — only those two devices can unscramble and read it. Not even Signal's own company can read your messages. This makes Signal a good choice when you want to send something private, like medical information, financial details, or personal conversations.
-
-Signal works over Wi-Fi and mobile data and does not charge per message — it is free to use with no subscription. The app looks and works very much like regular text messaging, so switching to it feels familiar.
-
-Both you and the person you are messaging need to have Signal installed for the encryption to work. If you send a Signal message to someone who does not have the app, it may send as an unencrypted SMS (standard text message) instead.`,
-    steps: [
-      { title: 'Download Signal', content: 'Search for "Signal — Private Messenger" in the App Store (iPhone) or Google Play Store (Android). Install the free app. Make sure the developer is "Signal Messenger LLC" to confirm it is the official app.' },
-      { title: 'Register with your phone number', content: 'Open Signal and enter your mobile phone number. Signal will send a 6-digit verification code to your phone via text. Enter the code in the app to verify your number.' },
-      { title: 'Create a PIN', content: 'Signal asks you to create a PIN (a 4–6 digit number). This PIN protects your Signal account and can help you recover your account if you change phones. Write it down somewhere safe.' },
-      { title: 'Start a conversation', content: `Tap the pencil/compose icon to start a new message. Signal will show you which of your existing contacts also have Signal (they will appear at the top of the list). Tap a contact's name and start typing your message.` },
-      { title: 'Understand the lock icon', content: 'When you send a message to another Signal user, you will see a lock icon on the send button — this means your message is encrypted. If the lock icon is not there, the message is going as a regular (unencrypted) SMS text.' },
-    ],
-  },
-  {
-    slug: 'use-telegram-messaging',
-    title: 'How to Use Telegram',
-    excerpt: 'Telegram is a free messaging app that works on phones, tablets, and computers — great for group chats, large file sharing, and channels.',
-    category: 'communication',
-    tags: ['Telegram', 'messaging', 'group chat', 'communication', 'app'],
-    readTime: '6 min',
-    thumbnailEmoji: '✈️',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Telegram is a free messaging app that works on iPhone, Android, Windows, Mac, and inside a web browser. You can use it to send text messages, photos, videos, and files to individuals or groups. One of Telegram's standout features is that it lets you send files up to 2 gigabytes in size — much larger than regular email or other messaging apps allow. It is also well suited for group conversations with large numbers of people.
-
-Telegram also has "Channels," which work like newsletters — you can subscribe to a channel and receive updates from a news source, community group, or organization. Many churches, community organizations, and local groups use Telegram channels to communicate with members.
-
-Telegram uses phone numbers for registration, similar to Signal. Standard Telegram chats are stored on Telegram's servers (which means they sync across devices), while "Secret Chats" use end-to-end encryption and are only stored on your device.`,
-    steps: [
-      { title: 'Download Telegram', content: 'Search for "Telegram" in the App Store or Google Play Store. Install the free app. On a computer, go to telegram.org and download the desktop app for Windows or Mac.' },
-      { title: 'Register your phone number', content: 'Open Telegram and enter your phone number including the country code (+1 for the United States). Telegram will send a verification code to your phone — enter it in the app to confirm your number.' },
-      { title: 'Set your name and profile photo', content: 'Enter your first and last name (you can use any name). Adding a profile photo is optional but helps your contacts identify you. Your phone number is not visible to others by default.' },
-      { title: 'Start a message or join a group', content: 'Tap the pencil icon to start a new message. Telegram shows you which of your phone contacts also use the app. To join a group or channel, ask the group admin for an invite link — tapping the link on your phone will add you to the group.' },
-      { title: 'Use Telegram on multiple devices', content: 'One advantage of Telegram over many messaging apps is that your message history syncs across devices. Sign in with the same phone number on your tablet or computer and all your messages will be there.' },
-    ],
-  },
   {
     slug: 'use-facetime-iphone-ipad',
     title: 'How to Use FaceTime on iPhone and iPad',
