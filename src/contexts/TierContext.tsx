@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
+import { supabase } from '@/integrations/supabase/client';
 
 /**
  * 4-tier experience level system.
@@ -113,14 +114,46 @@ export function TierProvider({ children }: { children: ReactNode }) {
     } catch {}
   }, [hasChosen]);
 
+  // Persist tier to profiles.tier for signed-in users
+  const persistToBackend = useCallback(async (next: UserTier | null) => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+      await supabase.from('profiles').update({ tier: next }).eq('id', user.id);
+    } catch {
+      // Non-fatal — localStorage is the primary store, backend is a mirror
+    }
+  }, []);
+
+  // On mount, if signed in, sync tier from backend (backend wins over localStorage)
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (!user) return;
+        const { data } = await supabase
+          .from('profiles')
+          .select('tier')
+          .eq('id', user.id)
+          .single();
+        if (data?.tier && (TIER_ORDER as string[]).includes(data.tier)) {
+          setTierState(data.tier as UserTier);
+          setHasChosen(true);
+        }
+      } catch {}
+    })();
+  }, []);
+
   const setTier = (next: UserTier) => {
     setTierState(next);
     setHasChosen(true);
+    persistToBackend(next);
   };
 
   const resetTier = () => {
     setTierState(null);
     setHasChosen(false);
+    persistToBackend(null);
   };
 
   return (
