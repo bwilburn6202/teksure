@@ -847,7 +847,7 @@ Using shortcuts has a small learning curve — your muscle memory needs to build
       {
         title: `Work with windows more efficiently`,
         content: `Command + M minimizes the current window to the Dock. Command + H hides the current app (all its windows disappear without closing). Command + Option + H hides all apps except the one you are in. Control + Command + F makes the current window go full-screen. Control + Command + F again exits full-screen.`,
-        tip: `Quick Tip: Command + ` (the backtick key, left of the number 1) cycles between multiple open windows within the same app. If you have three Safari windows open, this switches between them without showing the Dock or using the mouse.`,
+        tip: `Quick Tip: Command + \` (the backtick key, left of the number 1) cycles between multiple open windows within the same app. If you have three Safari windows open, this switches between them without showing the Dock or using the mouse.`,
       },
       {
         title: `Lock your screen and manage power`,
