@@ -14,7 +14,7 @@ import { guides } from '@/data/guides';
 const suggestions = [
   { label: 'Get real human help', to: '/get-help' },
   { label: 'Find the right guide', to: '/find-a-guide' },
-  { label: 'Ask TekBot', to: '/brain' },
+  { label: 'Ask TekBrain', to: '/brain' },
   { label: 'Browse tools', to: '/tools' },
   { label: 'More', to: '/guides' },
 ];

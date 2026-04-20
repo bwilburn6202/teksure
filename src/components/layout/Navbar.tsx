@@ -110,19 +110,19 @@ export function Navbar() {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Shared class fragments for the pill visual language
+  // Shared class fragments for the pill visual language.
+  // Solid dark-navy pill with subtle white border — consistent across light
+  // and dark mode so the signature navy look never flips.
   const pillBase =
     'pointer-events-auto flex items-center gap-0 h-[52px] rounded-full border ' +
-    'bg-background/70 border-border/60 shadow-sm ' +
-    'dark:bg-white/[0.08] dark:border-white/15 dark:shadow-[0_4px_24px_rgba(0,0,0,.2)] ' +
+    'bg-[#0A1830] border-white/[0.15] shadow-[0_4px_24px_rgba(0,0,0,.3)] ' +
     'backdrop-blur-xl';
   const navLinkCls =
     'inline-flex items-center h-[38px] px-[14px] rounded-full text-sm font-medium ' +
-    'text-muted-foreground hover:text-foreground hover:bg-muted/60 ' +
-    'dark:text-white/80 dark:hover:text-white dark:hover:bg-white/[0.12] ' +
+    'text-white/80 hover:text-white hover:bg-white/[0.12] ' +
     'transition-colors';
   const navLinkActiveCls =
-    'text-foreground bg-muted/60 dark:text-white dark:bg-white/[0.12]';
+    'text-white bg-white/[0.12]';
 
   return (
     <>
@@ -130,10 +130,9 @@ export function Navbar() {
         <div className="flex items-center justify-center gap-2 px-4 pt-6 pb-3 pointer-events-none">
           {/* ── Primary pill ── */}
           <nav aria-label="Main navigation" className={`hidden md:flex ${pillBase} px-2 pl-3`}>
-            {/* Logo */}
+            {/* Logo — pill is always navy, so always show the white-wordmark logo */}
             <Link to={user ? dashboardPath : '/'} className="flex items-center shrink-0 pr-4" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-[26px] w-auto block dark:hidden" fetchPriority="high" />
-              <img src="/teksure-logo-white.svg" alt="" aria-hidden="true" className="h-[26px] w-auto hidden dark:block" fetchPriority="high" />
+              <img src="/teksure-logo-white.svg" alt="TekSure" className="h-[26px] w-auto" fetchPriority="high" />
             </Link>
 
             {/* Link cluster */}
@@ -230,20 +229,19 @@ export function Navbar() {
             </div>
 
             {/* Divider */}
-            <div className="mx-1 h-5 w-px bg-border/70 dark:bg-white/15" aria-hidden="true" />
+            <div className="mx-1 h-5 w-px bg-white/15" aria-hidden="true" />
 
             {/* Search chip (⌘K) */}
             <button
               onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true }))}
               aria-label="Open search"
               className="hidden lg:inline-flex items-center gap-1.5 h-9 px-3 mx-1 rounded-full text-[13px] font-medium
-                         bg-background/40 border border-border/60 text-muted-foreground hover:text-foreground hover:bg-muted/60
-                         dark:bg-white/[0.08] dark:border-white/10 dark:text-white/55 dark:hover:text-white dark:hover:bg-white/[0.12]
+                         bg-white/[0.08] border border-white/10 text-white/55 hover:text-white hover:bg-white/[0.12]
                          transition-colors"
             >
               <Search className="h-3.5 w-3.5" aria-hidden="true" />
               Search
-              <kbd className="ml-1 text-[10px] font-sans border border-border/50 dark:border-white/20 rounded px-1 py-0.5 text-muted-foreground/60 dark:text-white/40" aria-hidden="true">⌘K</kbd>
+              <kbd className="ml-1 text-[10px] font-sans border border-white/20 rounded px-1 py-0.5 text-white/40" aria-hidden="true">⌘K</kbd>
             </button>
 
             {/* Right: account or sign in + CTA */}
@@ -252,7 +250,7 @@ export function Navbar() {
                 <DropdownMenuTrigger asChild>
                   <button
                     aria-label={`Account menu for ${user.fullName}`}
-                    className="ml-2 h-[38px] w-[38px] rounded-full flex items-center justify-center hover:bg-muted/60 dark:hover:bg-white/[0.12] transition-colors"
+                    className="ml-2 h-[38px] w-[38px] rounded-full flex items-center justify-center hover:bg-white/[0.12] transition-colors"
                   >
                     <Avatar className="h-8 w-8">
                       <AvatarFallback className="bg-primary text-primary-foreground text-[11px] font-semibold">{initials}</AvatarFallback>
@@ -299,14 +297,13 @@ export function Navbar() {
           {/* ── Mobile pill: logo + hamburger ── */}
           <nav aria-label="Main navigation" className={`md:hidden ${pillBase} px-2 pl-3`}>
             <Link to={user ? dashboardPath : '/'} className="flex items-center shrink-0 pr-3" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-[26px] w-auto block dark:hidden" fetchPriority="high" />
-              <img src="/teksure-logo-white.svg" alt="" aria-hidden="true" className="h-[26px] w-auto hidden dark:block" fetchPriority="high" />
+              <img src="/teksure-logo-white.svg" alt="TekSure" className="h-[26px] w-auto" fetchPriority="high" />
             </Link>
 
             <button
               aria-label="Search"
               onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true }))}
-              className="h-10 w-10 rounded-full flex items-center justify-center text-muted-foreground hover:bg-muted/60 dark:text-white/70 dark:hover:bg-white/[0.12] transition-colors"
+              className="h-10 w-10 rounded-full flex items-center justify-center text-white/70 hover:text-white hover:bg-white/[0.12] transition-colors"
             >
               <Search className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -314,7 +311,7 @@ export function Navbar() {
             <button
               aria-label="Open navigation menu"
               onClick={() => setMobileMenuOpen(true)}
-              className="h-10 w-10 rounded-full flex items-center justify-center text-muted-foreground hover:bg-muted/60 dark:text-white/70 dark:hover:bg-white/[0.12] transition-colors"
+              className="h-10 w-10 rounded-full flex items-center justify-center text-white/70 hover:text-white hover:bg-white/[0.12] transition-colors"
             >
               <Menu className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -325,10 +322,9 @@ export function Navbar() {
             <PopoverTrigger asChild>
               <button
                 aria-label="Display and accessibility settings"
-                className={`pointer-events-auto hidden md:flex h-[44px] w-[44px] rounded-full items-center justify-center
-                  bg-background/70 border border-border/60 text-muted-foreground hover:text-foreground hover:bg-muted/60 shadow-sm
-                  dark:bg-white/[0.08] dark:border-white/15 dark:text-white/70 dark:hover:text-white dark:hover:bg-white/[0.12]
-                  backdrop-blur-xl transition-colors`}
+                className="pointer-events-auto hidden md:flex h-[44px] w-[44px] rounded-full items-center justify-center
+                  bg-[#0A1830] border border-white/[0.15] text-white/70 hover:text-white hover:bg-white/[0.12] shadow-[0_4px_24px_rgba(0,0,0,.3)]
+                  backdrop-blur-xl transition-colors"
               >
                 <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
               </button>

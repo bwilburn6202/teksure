@@ -22,7 +22,7 @@ const TIER_CONFIG: Record<MemoryTier, { label: string; description: string; icon
   },
   semantic: {
     label: 'Semantic Memory',
-    description: 'Facts TekBot has learned about you, like your device and skill level.',
+    description: 'Facts TekBrain has learned about you, like your device and skill level.',
     icon: <Brain className="h-5 w-5" />,
     color: 'text-purple-500',
   },
@@ -157,8 +157,8 @@ export default function MemoryDashboard() {
   return (
     <>
       <SEOHead
-        title="TekBot Memory — TekSure"
-        description="View and manage what TekBot remembers about you. Your privacy is in your hands."
+        title="TekBrain Memory — TekSure"
+        description="View and manage what TekBrain remembers about you. Your privacy is in your hands."
       />
       <Navbar />
       <main className="min-h-screen bg-background">
@@ -170,10 +170,10 @@ export default function MemoryDashboard() {
               Agent Memory
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-foreground">
-              What TekBot Remembers
+              What TekBrain Remembers
             </h1>
             <p className="mt-3 text-lg text-muted-foreground max-w-xl mx-auto">
-              TekBot learns from your conversations to give you better, more personalized help.
+              TekBrain learns from your conversations to give you better, more personalized help.
               Everything is stored privately and you can delete anything at any time.
             </p>
 
@@ -254,7 +254,7 @@ export default function MemoryDashboard() {
               <p className="text-sm text-muted-foreground mt-0.5">
                 Memories are stored privately and never shared. Personal information like email addresses
                 and phone numbers are automatically removed before saving. You are always in control
-                of what TekBot remembers.
+                of what TekBrain remembers.
               </p>
             </div>
           </div>
@@ -287,7 +287,7 @@ export default function MemoryDashboard() {
               <Brain className="h-12 w-12 text-muted-foreground/40 mx-auto" />
               <h2 className="text-xl font-semibold text-foreground mt-4">No memories yet</h2>
               <p className="text-muted-foreground mt-2 max-w-md mx-auto">
-                Start chatting with TekBot and it will learn your preferences, device,
+                Start chatting with TekBrain and it will learn your preferences, device,
                 and what topics you need help with. This makes future conversations faster and more helpful.
               </p>
             </div>
