@@ -2,6 +2,58 @@
 
 ---
 
+## 2026-04-20 — Weekly Content Engine Run
+
+**Task:** teksure-weekly-content scheduled task  
+**Model:** Claude Sonnet 4.6  
+**PR:** https://github.com/bwilburn6202/teksure/pull/47
+
+### Research basis (April 20, 2026)
+Trending topics: Windows 11 BitLocker lockout (KB5083769), iPhone battery drain post-update, iPhone storage too full for iOS update, Gmail stopped working in Outlook/Apple Mail (OAuth2 change), account lockout surges post-Patch-Tuesday.  
+Scam alerts: FTC Medicare benefit review phone scam, utility shutoff threat scams, investment/pig butchering (already covered), traffic violation/QR scams (already covered).
+
+### New Guides — guides-batch-95.ts (5 guides)
+1. `fix-windows-11-bitlocker-recovery-screen-2026` — BitLocker screen fix from KB5083769; recovery key via account.microsoft.com; scam warning included
+2. `fix-iphone-battery-drain-after-update` — Why battery drains after iOS updates; Background App Refresh, app updates, battery health check
+3. `fix-iphone-not-enough-storage-to-update` — iCloud Photos offload, built-in Storage Recommendations, update-via-computer fallback
+4. `fix-gmail-not-working-in-outlook-apple-mail` — Google OAuth2 change; re-add account in Outlook, Apple Mail (iPhone/iPad/Mac), Outlook PC
+5. `locked-out-google-microsoft-account-recovery` — Recovery steps for Google, Microsoft, Apple ID; backup methods; post-recovery security
+
+### Scam Alerts (ScamAlerts.tsx — 2 new)
+- **Fake "Medicare Benefit Review" Call Scam (2026)** — unsolicited calls harvesting Medicare/SSN numbers under guise of benefit review
+- **Utility Shutoff Threat Scam (2026)** — robocalls threatening same-day disconnection, demanding gift card/Zelle payment
+
+### Tips.tsx
+- New featured tip: **Windows 11 BitLocker Recovery Screen Free Fix** (tied to KB5083769 April 2026 issue)
+- Previous featured tip (Phone Storage Full) moved to pastTips list
+
+### News.tsx (2 new items)
+- id:25 — Windows 11 April Update BitLocker Lockout (2026-04-20)
+- id:26 — iPhone Battery Draining Fast After Update (2026-04-20)
+
+### Phase 5 — 10 Existing Guide Updates
+1. guides-batch-17.ts: `macOS Ventura` → `macOS Sequoia` in offline maps guide
+2. guides-batch-17.ts: iOS 17 tip updated to note iOS 18 as current (offline maps)
+3. guides-batch-36.ts: `Android 14` → `Android 14 or later (Android 15 is current)` in Circle to Search
+4. guides-batch-47.ts: Check In feature step — added iOS 18 context
+5. guides-batch-47.ts: Check In feature tip — added iOS 18 context
+6. guides-batch-53.ts: `macOS Ventura` → added Sequoia mention in login items guide
+7. guides-batch-63.ts: `macOS Ventura` → added Sequoia mention in Stage Manager guide
+8. guides-batch-23.ts: iOS 17 transcript tip → added iOS 18 is current (Voice Memos)
+9. guides-batch-22.ts: iOS 17 autocorrect tip → added iOS 18 context
+10. guides-batch-81.ts: AirPods Conversation Awareness — iOS 17+ → added iOS 18 context
+
+### Phase 7 — Content Repurposing
+- Social/newsletter hooks embedded as comments at top of guides-batch-95.ts (5 guide × 2 hooks)
+- Video script created: `.claude/video-scripts/fix-iphone-not-enough-storage.md` (75 sec)
+- BitLocker video script already existed at `.claude/video-scripts/windows-bitlocker-lockout.md`
+
+### Build
+- `npm run build` passed — 0 TypeScript errors, 0 duplicate slugs (1833 unique slugs total)
+- Sitemap regenerated with 1899 URLs
+
+---
+
 ## 2026-04-14 — Weekly Content Engine Run
 
 **Task:** teksure-weekly-content scheduled task  
