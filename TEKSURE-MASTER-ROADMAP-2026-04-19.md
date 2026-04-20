@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 54** (20 guides, 2026-04-19) — total ~2,153 guides
-- Next: **Batch 55** → **Batch 56** → ... (no upper limit)
+- Last completed: **Batch 55** (20 guides, 2026-04-19) — total ~2,173 guides
+- Next: **Batch 56** → **Batch 57** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -133,7 +133,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 52** | **20** | **2026-04-19** | Android custom ringtone, edit/unsend iMessage, pin iMessage conversation, Spotify sleep timer, see WiFi password on Windows/Mac/Android, Mac AirPlay to TV, Firefox basics, Instagram DMs, alarm clock tips, iPhone bedtime alarm, iPhone accessibility overview, Google Assistant routine, smart speaker routines, Fire Stick tips, iPhone battery widget, block email sender, Alexa default music service, Google Home music |
 | **Batch 53** | **20** | **2026-04-19** | HDMI ARC, digital TV antenna, Amazon Freevee, VLC media player, Roku remote app, iMovie basics, iPhone video trim, upload to YouTube, Apple Watch apps, Apple Watch workout, Fitbit tips, iPhone Health steps, Samsung Health walk, Windows startup programs, Mac login items, clear Windows temp files, Android storage cleanup, iPhone storage breakdown, router access, WiFi 2.4GHz vs 5GHz bands |
 | **Batch 54** | **20** | **2026-04-19** | WhatsApp backup, Telegram basics, Signal privacy, iPhone background removal, Mac Preview annotate, Mac Preview sign PDF, save-as-PDF, online chess, free senior games, Samsung camera, iPhone Action Mode, Google Photos video, iPhone contacts backup, Audible, Eventbrite, Photopea, Android contacts backup, Excel mobile, Google Meet, Adobe Express |
-| **Total** | **~2,153** | | |
+| **Batch 55** | **20** | **2026-04-19** | Google Drive Desktop, iOS widgets, Apple Handoff, Universal Clipboard, iPhone Mirroring, TikTok basics, LinkedIn, Facebook Reels, Google Wallet, music ID apps, Street View, eBay selling, OfferUp, Flipboard, macOS Sequoia, Android 15, Edge browser, Brave browser, Android home screen, Google Classroom |
+| **Total** | **~2,173** | | |
 
 ---
 
