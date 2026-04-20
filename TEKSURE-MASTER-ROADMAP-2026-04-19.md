@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 86** (20 guides, 2026-04-20) — total ~2,800 guides
-- Next: **Batch 87** → **Batch 88** → ... (no upper limit)
+- Last completed: **Batch 87** (20 guides, 2026-04-20) — total ~2,820 guides
+- Next: **Batch 88** → **Batch 89** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -165,7 +165,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 84** | **20** | **2026-04-20** | Bark monitoring, Circle Home Plus, Qustodio, Disney+ Kids Mode, Netflix Kids, Amazon Kids+, Roblox safety, Minecraft for parents, Fortnite parental controls, Epic! Books, ABCmouse, Duolingo for kids, Scratch coding, Code.org, Tynker, Apple Family Sharing, Microsoft Family Safety, Amazon Parent Dashboard, Fire Kids tablet, Osmo learning |
 | **Batch 85** | **20** | **2026-04-20** | TripIt, KAYAK, Expedia app, Hotels.com, Booking.com, Airbnb hosting, VRBO hosting, Hipcamp, CLEAR biometric, Priority Pass, XE Currency, Wise transfers, Hopper flights, Skyscanner, SeatGuru, Packr packing list, Polarsteps journal, Moovit transit, FlixBus, Amtrak tips |
 | **Batch 86** | **20** | **2026-04-20** | Planta, Greg plant app, All About Birds, eBird, Merlin Sound ID, Stellarium, Star Walk, NASA app, moon phases, MyRadar, tornado warning apps, air quality apps, pollen/allergy apps, hurricane prep apps, wildfire tracking, Fishbrain, AllTrails beginner, Komoot, Gaia GPS, Garmin Connect |
-| **Total** | **~2,800** | | |
+| **Batch 87** | **20** | **2026-04-20** | Simply Piano, Yousician, Fender Play, Ultimate Guitar, GarageBand iPhone, Audacity, Spotify for Podcasters, Buzzsprout, Procreate, Autodesk Sketchbook, ibis Paint X, Photoshop Express, Snapseed advanced, Facetune, Pixlr, PicsArt, Remove.bg, Canva video, LumaFusion, InShot |
+| **Total** | **~2,820** | | |
 
 ---
 
