@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 49** (20 guides, 2026-04-19) — total ~2,053 guides
-- Next: **Batch 50** → **Batch 51** → ... (no upper limit)
+- Last completed: **Batch 50** (20 guides, 2026-04-19) — total ~2,073 guides
+- Next: **Batch 51** → **Batch 52** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -128,7 +128,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 47** | **20** | **2026-04-19** | Freeform app, iPhone Check In safety, iPhone Journal app, FaceTime reactions, Apple Home/HomeKit, USB flash drive on Windows, USB flash drive on Mac, Genius Bar appointment, mail package USPS, IRS2Go tax refund, iMessage group chat, Find in Page browser, share Apple Notes, Android one-handed mode, Windows PIN login, iPhone USB-C port, Google TV remote app, copy-paste on phones, iOS 18 Passwords app, Google Maps share ETA |
 | **Batch 48** | **20** | **2026-04-19** | Instagram Reels, WhatsApp Status, Facebook Live, Snapchat for seniors, Chrome extensions, Chrome tab groups, iOS App Privacy Report, Windows Paint, Mac TextEdit, Mac Stickies, Windows Family Safety, Android NFC, organize Chrome bookmarks, Samsung Internet tips, Outlook mobile app, Apple Pencil basics, share Google Calendar, Bluetooth car audio, Android voice recorder, iPad drag and drop |
 | **Batch 49** | **20** | **2026-04-19** | Snapseed photo editing, Walgreens photo prints, Hallmark ecards, iPhone Photos editing tips, Mac Photos app, send large files, iPad screenshot, Android display size, iPhone Display Zoom, Amazon Fire tablet setup, force stop Android app, clear Android app cache, clear Safari cache iPhone, Google account recovery, Facebook account recovery, Android tablet tips, print Google Photos, share iPhone health data, Android emergency info, Windows Quick Settings |
-| **Total** | **~2,053** | | |
+| **Batch 50** | **20** | **2026-04-19** | Create QR code, video call lighting, scan business card, Microsoft Lens, Apple Watch face, Google Photos partner share, Amazon Household, manage Amazon subscriptions, optimize iPhone battery, Android battery care, PayPal mobile, Google Pay send money, transit card wallet, Android spam calls, buy refurbished phone, iPhone Focus filters, Android work profile, Windows Clipboard tips, Google Keep tips, Apple Maps transit |
+| **Total** | **~2,073** | | |
 
 ---
 
