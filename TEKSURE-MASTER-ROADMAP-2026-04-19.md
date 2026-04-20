@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 36** (526 guides added in batches 12-36, 2026-04-19) — total ~1,795 guides
-- Next: **Batch 37** → **Batch 38** → ... (no upper limit)
+- Last completed: **Batch 37** (546 guides added in batches 12-37, 2026-04-19) — total ~1,815 guides
+- Next: **Batch 38** → **Batch 39** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -115,7 +115,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 34** | **20** | **2026-04-19** | Grandparent scam, gift card scam, IRS scam, Social Security scam, Medicare fraud, utility scam, lottery scam, FTC fraud reporting, Apple ID security, Google account security, Microsoft account security, Instagram privacy, LinkedIn privacy, Google Password Manager, 1Password, LastPass, AccuWeather, Lumosity, weather radar |
 | **Batch 35** | **20** | **2026-04-19** | Android Live Transcribe, iPhone Guided Access, Android guest mode, Android data limit, iPhone cellular data, Face ID app lock, Android app lock, iPhone Reachability, shake to undo & hidden gestures, Memoji guide, iPhone keyboard tips, Android Gboard tips, Gmail Smart Compose, Mac Dictation, Google Docs voice typing, Merlin Bird ID, Strava fitness, Android Personal Safety app |
 | **Batch 36** | **20** | **2026-04-19** | CapCut video editing, Poshmark buy/sell, Mercari resale, OfferUp local selling, smart door lock setup, Philips Hue smart bulbs, Angi contractors, Crunchyroll streaming, Babbel language learning, Citizen safety app, Ring Neighbors, Nike Run Club, Circle to Search Android, Google One VPN, iPhone mirror to TV, Canva greeting cards, iPhone Personal Voice, delete old accounts, Android Quick Settings, iPhone Live Voicemail |
-| **Total** | **~1,795** | | |
+| **Batch 37** | **20** | **2026-04-19** | ThredUp secondhand clothing, Depop fashion resale, Buy Nothing groups, FlightAware flight tracking, StubHub tickets, SeatGeek ticket deals, TickTick task manager, Evernote notes, Microsoft OneNote, iPhone App Library, iPhone lock screen widgets, Care.com caregivers, Wag dog walking, Healthgrades find doctor, Samsung Find My Mobile, Apple ID recovery, WhatsApp group chat, Android location sharing, Temu shopping guide, PictureThis plant ID |
+| **Total** | **~1,815** | | |
 
 ---
 
