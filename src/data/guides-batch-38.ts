@@ -310,7 +310,7 @@ export const guidesBatch38: Guide[] = [
     body: `Your WiFi router connects all your devices to the internet, but it can also be a security vulnerability if it is not set up correctly. Many people still use the factory default password, which is publicly known or printed on a sticker anyone can read. Securing your router takes about 15 minutes and protects every device in your home — phones, computers, smart TVs, and smart home gadgets.`,
     steps: [
       {
-        title: 'Find your router's login page',
+        title: `Find your router's login page`,
         content: `To change your router settings, you log into its admin panel through a web browser. Open Chrome, Safari, or Edge and type one of these addresses into the address bar (not a search engine): 192.168.1.1 or 192.168.0.1. One of those should open a login page for your router. The default username and password are usually printed on the sticker on the back or bottom of the router. Common defaults: Username "admin," Password "admin" or "password." Look for "Admin password," "Management password," or "Web access password" in the sticker's fine print.`,
         tip: `If neither 192.168.1.1 nor 192.168.0.1 works, try the number on the sticker labeled "Default Gateway" or look at the router brand's support website.`,
       },
@@ -352,7 +352,7 @@ export const guidesBatch38: Guide[] = [
         content: `When you first turn on a new iPhone, hold it near your old iPhone (both should be unlocked). A screen will appear on your old iPhone asking if you want to set up the new device — tap "Continue." Follow the prompts. Use "Transfer from iPhone" to move your data directly over a cable (fastest) or wirelessly. When transferring wirelessly over WiFi, a full transfer can take 30–90 minutes depending on how much data you have. Keep both phones plugged in and close together until it completes.`,
       },
       {
-        title: 'Transfer Android to Android using Google's setup',
+        title: `Transfer Android to Android using Google's setup`,
         content: `Samsung phones have a "Smart Switch" app that handles transfers via cable or WiFi. For any Android phone, during initial setup you will be asked to sign in with your Google account — this automatically restores your backed-up data. Your contacts, calendar, and some app settings restore automatically. Apps reinstall from the Play Store. For photos, open Google Photos on the new phone, sign in, and your entire photo library will be accessible from the cloud immediately.`,
       },
       {
@@ -389,7 +389,7 @@ export const guidesBatch38: Guide[] = [
         content: `Downtime schedules a period each day when only apps you specifically allow (like Phone and Messages) work — all others are blocked. Go to Settings → Screen Time → Downtime → Every Day or Customize Days. Set a start and end time. Many families use Downtime for overnight hours (like 9 PM to 7 AM) so children are not using phones when they should be sleeping.`,
       },
       {
-        title: 'Manage a child's phone remotely with Family Sharing',
+        title: `Manage a child's phone remotely with Family Sharing`,
         content: `If you have set up Family Sharing (Settings → your name → Family Sharing), you can view and control a child's Screen Time from your own iPhone. Go to Settings → Screen Time → tap your child's name. From here you can see their daily phone report, add or adjust limits, and approve extension requests — all from your own phone without needing to physically have theirs.`,
       },
     ],

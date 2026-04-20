@@ -349,7 +349,7 @@ export const guidesBatch39: Guide[] = [
     body: `Phones can accumulate thousands of duplicate photos over the years — when you back up and restore a phone, screenshots taken from shared images, or photos saved from messaging apps that already exist in your camera roll. These duplicates waste storage space and make your photo library harder to navigate. Both iPhone and Android have built-in tools to find and remove duplicates automatically.`,
     steps: [
       {
-        title: 'Use iPhone's built-in Duplicates finder',
+        title: `Use iPhone's built-in Duplicates finder`,
         content: `On iPhone running iOS 16 or later, the Photos app automatically identifies duplicate photos for you. Open Photos → tap "Albums" at the bottom → scroll down to find "Duplicates" under the Utilities section. If your phone found duplicates, they appear here in pairs with a "Merge" button. Tapping "Merge" keeps the highest quality version of each duplicate pair and deletes the other. Tap "Merge All" to remove all duplicates at once, or review each pair before merging.`,
         tip: `After merging duplicates, the deleted copies go to the "Recently Deleted" album, where they stay for 30 days before being permanently removed. If you merged something by mistake, you can recover it within 30 days.`,
       },
@@ -564,7 +564,7 @@ export const guidesBatch39: Guide[] = [
 
   {
     slug: 'ssi-ssdi-difference-guide',
-    title: 'SSI vs SSDI: What's the Difference and Who Qualifies for Each',
+    title: `SSI vs SSDI: What's the Difference and Who Qualifies for Each`,
     excerpt: `SSI and SSDI are both Social Security programs, but they work very differently — here's a plain-English explanation of which you may qualify for.`,
     category: 'government-civic',
     tags: ['SSI', 'SSDI', 'social security', 'disability benefits', 'government benefits'],
