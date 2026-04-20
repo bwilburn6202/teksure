@@ -428,7 +428,7 @@ AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the sam
       },
       {
         title: `Use Conversation Awareness for quick interactions`,
-        content: `Conversation Awareness is a feature (AirPods Pro 2 and later, with iOS 17+) that automatically lowers your music and activates Transparency Mode when it detects you starting to speak. This means you do not need to tap anything when someone starts talking to you or when you want to say something — the AirPods handle it automatically. Enable it under Settings > Bluetooth > your AirPods > Conversation Awareness.`,
+        content: `Conversation Awareness is a feature (AirPods Pro 2 and later, with iOS 17 or later — iOS 18 is the current version) that automatically lowers your music and activates Transparency Mode when it detects you starting to speak. This means you do not need to tap anything when someone starts talking to you or when you want to say something — the AirPods handle it automatically. Enable it under Settings > Bluetooth > your AirPods > Conversation Awareness.`,
       },
     ],
   },

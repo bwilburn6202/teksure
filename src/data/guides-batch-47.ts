@@ -68,8 +68,8 @@ Check In shares only what's necessary — it does not send your real-time locati
 You can use Check In for short trips or longer journeys. The feature asks for your estimated arrival time, and you can adjust it on the fly if your plans change.`,
     steps: [
       {
-        title: `Make sure you have iOS 17 or later`,
-        content: `Go to Settings > General > Software Update. If an update is available, install it first. Check In requires iOS 17 or newer.`,
+        title: `Make sure you have iOS 17 or later (iOS 18 is current)`,
+        content: `Go to Settings > General > Software Update. If an update is available, install it first. Check In requires iOS 17 or newer — iOS 18 is the current version and recommended for the best experience.`,
       },
       {
         title: `Open a Messages conversation with your trusted contact`,
@@ -78,7 +78,7 @@ You can use Check In for short trips or longer journeys. The feature asks for yo
       {
         title: `Start a Check In`,
         content: `Tap the plus (+) icon to the left of the text field, then tap "More." Scroll down and select "Check In." Tap "Continue" on the intro screen. You'll be asked to set your destination — you can type an address, choose a contact's address, or let Check In know when you arrive home.`,
-        tip: `If you don't see Check In in the menu, make sure both you and your contact are running iOS 17 or later.`,
+        tip: `If you don't see Check In in the menu, make sure both you and your contact are running iOS 17 or later (iOS 18 is the current version — update at Settings > General > Software Update).`,
       },
       {
         title: `Set the details and send`,

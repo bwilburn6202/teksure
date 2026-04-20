@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
-  summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. The good news: you can usually free up a lot of space in just a few minutes without losing anything important.',
-  full: 'A "Storage Full" warning is one of the most common phone problems — and one of the easiest to fix. Start by checking what is using the most space. On iPhone, go to Settings → General → iPhone Storage. On Android, go to Settings → Storage. You will see a breakdown showing how much space photos, apps, and messages are using. The biggest space saver is usually photos and videos. If you use Google Photos or iCloud Photos, your pictures are already backed up to the cloud — you can safely delete them from your phone to reclaim space. On iPhone, go to Settings → General → iPhone Storage → tap "Review Personal Videos" or "Review Large Attachments" to find the biggest files. On Android, open the Files app (or "My Files" on Samsung) and tap "Clean" — it will suggest junk files, duplicate photos, and old downloads you can safely remove. Next, delete apps you no longer use. On iPhone, the iPhone Storage screen shows your last-used date for each app. If you have not opened an app in months, tap it and choose "Delete App." On Android, go to Settings → Apps and sort by size or last used. Finally, clear your text message attachments — old group chats with lots of photos and videos can quietly use gigabytes of space. Open your messaging app, find large conversations, and delete the ones you no longer need. Doing this cleanup once a month keeps your phone running smoothly.',
+  title: 'Windows 11 Update Showed a Blue "Recovery Key" Screen — Here Is the Free Fix',
+  summary: 'Microsoft\'s April 2026 update accidentally triggered a security check on some Windows 11 PCs, locking users out with a blue screen asking for a 48-digit recovery key. Your files are safe — here is how to get back in for free in about 5 minutes.',
+  full: 'This blue screen is called a BitLocker Recovery screen. BitLocker is a Windows security feature that encrypts your data to protect it if your laptop is lost or stolen. The April 2026 update (KB5083769) accidentally triggered a security check that BitLocker treats as a sign of unauthorized hardware changes — so it locked the drive as a precaution. Your files are completely fine. You just need the recovery key to prove you are the real owner. Here is how to get it: on your phone or another device, open a browser and go to account.microsoft.com. Sign in with the same Microsoft account you use on your locked Windows computer. Tap Devices, then look for BitLocker recovery key. You will see a 48-digit number. Go back to the locked PC and type that number exactly into the box on the blue screen — then press Enter. Windows will unlock and start normally. Once you are logged in, go to Settings → Windows Update → Check for updates and install the latest patch — this fixes the underlying issue permanently. Important: do not pay anyone who calls offering to help with this. The real fix is completely free and takes about 5 minutes.',
   category: 'Maintenance',
-  icon: Smartphone,
+  icon: Monitor,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
+    summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. On iPhone: go to Settings → General → iPhone Storage and use the built-in recommendations to delete large attachments and unused apps. On Android: open the Files app and tap "Clean." The biggest space-saver is usually old photos — if yours are backed up to Google Photos or iCloud, you can safely delete the copies on your phone.',
+    category: 'Maintenance',
+    icon: Smartphone,
+  },
   {
     title: 'Windows 11 Apps Freezing When Saving Files? Here Is the Free Fix',
     summary: 'After recent Windows 11 updates, Outlook, Word, and File Explorer started freezing when opening or saving files in OneDrive or Dropbox. Microsoft released a free patch — go to Settings → Windows Update → Check for updates, and install any available patches. A restart applies the fix in about 5 minutes.',

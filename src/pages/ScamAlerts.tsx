@@ -329,6 +329,40 @@ const scams: Scam[] = [
       'Report it to the SSA Office of Inspector General at oig.ssa.gov or call 800-269-0271',
     ],
   },
+  // Social: "Getting a call about a free Medicare benefit review? This is a scam targeting seniors right now — here's the single thing to say before you hang up."
+  // Newsletter: "Medicare impersonation scams are up sharply in 2026. Callers claim to offer a free 'annual benefit review' — but their real goal is your Medicare number and banking details. Medicare will NEVER call you unsolicited for a benefit review. Here's what to do."
+  {
+    title: 'Fake "Medicare Benefit Review" Call Scam (2026)',
+    redFlags: [
+      'Caller claims to be from "Medicare," "Social Security," or a "Medicare Benefits Office" and offers a free annual benefit review or new benefits you have not yet claimed',
+      'They ask for your Medicare ID number, Social Security number, or banking information to "update your records" or "activate your benefits"',
+      'They offer free medical equipment, dental coverage, or extra benefits you were not expecting — often described as a "limited-time program"',
+      'They pressure you to confirm details immediately or warn that your benefits will be suspended if you don\'t comply',
+    ],
+    whatToDo: [
+      'Hang up — Medicare will never call you unsolicited to offer a benefit review or ask for your Medicare number over the phone',
+      'Never give your Medicare ID, Social Security number, or bank details to anyone who calls you first — even if they already know your name and some of your information',
+      'If you want to review your actual Medicare benefits, call Medicare directly at 1-800-MEDICARE (1-800-633-4227) using the number you find yourself',
+      'Report the call to the FTC at ReportFraud.ftc.gov and to 1-800-HHS-TIPS (1-800-447-8477)',
+    ],
+  },
+  // Social: "Getting a robocall saying your electricity will be shut off in 2 hours? That's not your utility company — it's a scam. Here's what to do."
+  // Newsletter: "Utility shutoff threat scams are surging in 2026 — scammers impersonate electric and gas companies, creating artificial urgency (\"shut off in 2 hours\") to pressure immediate payment by gift card or Zelle. Your real utility company will never demand gift card payment."
+  {
+    title: 'Utility Shutoff Threat Scam (2026)',
+    redFlags: [
+      'Robocall or live caller claims your electricity, gas, or water will be disconnected within 1–2 hours unless you pay an overdue balance immediately',
+      'They demand payment by gift card, Zelle, wire transfer, or cryptocurrency — payment methods that cannot be reversed',
+      'The caller ID shows a name that looks like your utility company, but caller ID can be faked',
+      'They offer to "waive the reconnection fee" if you pay right now — creating urgency to pressure a quick decision',
+    ],
+    whatToDo: [
+      'Hang up and call your utility company directly using the number printed on your paper bill or the official website — not any number the caller gives you',
+      'Real utilities always send multiple written notices by mail before disconnecting service — they do not threaten same-day shutoff without prior written warning',
+      'Never pay a utility bill by gift card — no legitimate utility company accepts gift cards as payment, ever',
+      'Report the call to the FTC at ReportFraud.ftc.gov and to your state\'s public utilities commission',
+    ],
+  },
   // Social: "The FTC says investment scams are now the #1 way Americans lose money — average loss $20,000. Here are the exact warning signs to know before someone pitches you."
   // Newsletter: "The FTC issued a fresh alert in April 2026: investment scams have hit record levels, with AI-generated celebrity endorsements making fake platforms nearly impossible to spot at a glance. Here's how to check if any investment opportunity is real before you put any money in."
   {

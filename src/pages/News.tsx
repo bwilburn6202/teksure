@@ -99,6 +99,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 26,
+    title: 'iPhone Battery Draining Fast After a Recent Update? Here Is What Helps',
+    summary: 'After any major iOS update, it is normal for your iPhone\'s battery to drain faster than usual for the first 24–48 hours while the phone finishes reindexing and reoptimizing in the background. If drain continues after 48 hours: go to Settings → Battery to see which app is using the most power, turn off Background App Refresh for apps that don\'t need it (Settings → General → Background App Refresh), and make sure your apps are all updated — developers release iOS-compatible versions alongside Apple\'s updates. If battery health has dropped below 80% (Settings → Battery → Battery Health & Charging), an Apple battery replacement for around $89 will restore normal battery life.',
+    category: 'devices',
+    date: '2026-04-20',
+    icon: Smartphone,
+    readTime: '2 min',
+    source: 'Apple Support',
+    sourceUrl: 'https://support.apple.com',
+  },
+  {
+    id: 25,
+    title: 'Windows 11 April Update Is Locking Some Users Out — Here Is the Free Fix',
+    summary: 'Microsoft\'s April 2026 Patch Tuesday update (KB5083769) is triggering an unexpected BitLocker recovery screen on some Windows 11 PCs — the blue screen that asks for a 48-digit recovery key before Windows will load. Microsoft has acknowledged the issue. The fix is free and takes about 5 minutes: on your phone or another device, go to account.microsoft.com, sign in, tap Devices, and find your BitLocker recovery key. Type that 48-digit key on the blue screen to unlock your PC. Then install the follow-up update from Windows Update to prevent it recurring. Do not pay anyone who calls offering to help with this — the fix is completely free.',
+    category: 'devices',
+    date: '2026-04-20',
+    icon: Monitor,
+    readTime: '2 min',
+    source: 'Microsoft Support',
+    sourceUrl: 'https://support.microsoft.com',
+  },
+  {
     id: 24,
     title: 'Microsoft Released an Emergency Windows 11 Fix — Here\'s How to Get It',
     summary: 'After Windows 11 security updates in early 2026, Outlook, Word, and File Explorer started freezing whenever users tried to open or save files stored in OneDrive or Dropbox. Microsoft confirmed the bug and released an emergency out-of-band patch (KB5078127 for version 25H2 and KB5082052 for version 24H2) to fix it. The fix is free and takes about 5 minutes. Go to Start → Settings → Windows Update → Check for updates. Install any available patches and restart your computer. If your apps stop freezing after the restart, the fix worked. You may also notice that some previously downloaded emails re-download in Outlook after the fix — this is normal and clears up on its own.',

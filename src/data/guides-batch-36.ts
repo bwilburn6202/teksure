@@ -580,7 +580,7 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
 
 This is especially useful when you see something and want to know more — for example, you're watching a cooking video and want to find the recipe, or you see a product and want to buy it, or you're reading about a person and want to learn who they are.
 
-Circle to Search works on most Android phones from 2023 and newer, including most Samsung Galaxy phones and Google Pixel phones. Your phone needs to be running Android 14 or later.
+Circle to Search works on most Android phones from 2023 and newer, including most Samsung Galaxy phones and Google Pixel phones. Your phone needs to be running Android 14 or later (Android 15 is the current version).
 
 Before Circle to Search existed, finding information about something you saw on your phone meant stopping, opening Google, typing a description, and hoping to find what you were looking for. Circle to Search makes this instant and much more accurate because Google can see exactly what's on your screen.`,
     steps: [

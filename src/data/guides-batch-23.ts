@@ -142,7 +142,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Use the transcript feature',
-        content: 'If your iPhone has iOS 17 or later, Voice Memos can transcribe recordings to text automatically. After recording, tap the waveform to see the full recording view. Tap "Transcript" to read a text version of what was said. You can search transcripts and copy text from them.',
+        content: 'If your iPhone has iOS 17 or later (iOS 18 is the current version), Voice Memos can transcribe recordings to text automatically. After recording, tap the waveform to see the full recording view. Tap "Transcript" to read a text version of what was said. You can search transcripts and copy text from them.',
       },
     ],
   },

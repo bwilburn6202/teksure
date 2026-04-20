@@ -495,7 +495,7 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Adjust or turn off autocorrect',
         content: 'Toggle "Auto-Correction" off to completely disable autocorrect — your phone will stop changing words you type. If you want to keep it but reduce how aggressively it changes things, keep it on but also turn off "Predictive Text" — this shows the row of suggested words above the keyboard which can sometimes cause confusion.',
-        tip: `Quick Tip: iOS 17 and later made autocorrect smarter — it now shows when it's about to correct you and gives you a chance to accept or reject. If you have this version, autocorrect is much less intrusive than it used to be.`,
+        tip: `Quick Tip: iOS 17 and later made autocorrect smarter — it now shows when it's about to correct you and gives you a chance to accept or reject. iOS 18 (the current version) improved this further. Update at Settings → General → Software Update to get the latest behavior.`,
       },
       {
         title: 'Create text shortcuts',

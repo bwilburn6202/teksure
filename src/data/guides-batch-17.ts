@@ -411,7 +411,7 @@ export const guidesBatch17: Guide[] = [
     thumbnailEmoji: '🗺️',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
-    body: `Driving or walking in an area with poor cell service is frustrating when your map app keeps loading. The solution: download a section of the map in advance when you have Wi-Fi, and Google Maps or Apple Maps will work offline — no internet required.\n\nThis is especially useful for road trips through rural areas, international travel where you don't want to use data, areas with known dead zones, and National Parks or remote locations. Both Google Maps (Android and iPhone) and Apple Maps (iPhone, macOS Ventura and later) support offline downloads. Google Maps has had this feature longer and is generally more reliable for offline use.`,
+    body: `Driving or walking in an area with poor cell service is frustrating when your map app keeps loading. The solution: download a section of the map in advance when you have Wi-Fi, and Google Maps or Apple Maps will work offline — no internet required.\n\nThis is especially useful for road trips through rural areas, international travel where you don't want to use data, areas with known dead zones, and National Parks or remote locations. Both Google Maps (Android and iPhone) and Apple Maps (iPhone, macOS Sequoia and later) support offline downloads. Google Maps has had this feature longer and is generally more reliable for offline use.`,
     steps: [
       {
         title: 'Download an offline map in Google Maps (recommended)',
@@ -428,7 +428,7 @@ export const guidesBatch17: Guide[] = [
         title: 'Download an offline map in Apple Maps',
         content:
           "On iPhone (iOS 17 and later): open Maps → tap your profile picture → \"Offline Maps\" → \"Download New Map.\" Zoom the map to the area you want, adjust the selection box, and tap \"Download.\" Downloaded maps appear in the Offline Maps section of your profile. Note: Apple Maps offline is available in select countries and regions — check if your destination is supported.",
-        tip: "Quick Tip: Apple Maps offline maps are available starting with iOS 17 (iPhone 8 and newer). If you don't see the Offline Maps option, check that your phone is running iOS 17 or later: Settings → General → Software Update.",
+        tip: "Quick Tip: Apple Maps offline maps require iOS 17 or later (iPhone 8 and newer). iOS 18 is the current version — update at Settings → General → Software Update if you don't see the Offline Maps option.",
       },
       {
         title: 'Keep your offline maps updated',

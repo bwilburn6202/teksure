@@ -382,7 +382,7 @@ Quick Tip: Snap works on most Windows 10 and 11 PCs. If you are on a small lapto
     thumbnailEmoji: `🎭`,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
-    body: `Stage Manager is a feature Apple introduced in macOS Ventura. It changes how open apps appear on your screen so things feel less cluttered. Instead of every open app piling up on the desktop, Stage Manager puts the app you are currently using in the center of the screen — large and in focus — while your other open apps sit in a neat strip on the left side, ready to be called back with one click.
+    body: `Stage Manager is a feature Apple introduced in macOS Ventura and continued through macOS Sequoia (the current version). It changes how open apps appear on your screen so things feel less cluttered. Instead of every open app piling up on the desktop, Stage Manager puts the app you are currently using in the center of the screen — large and in focus — while your other open apps sit in a neat strip on the left side, ready to be called back with one click.
 
 **Why it helps**
 

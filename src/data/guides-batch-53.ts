@@ -899,7 +899,7 @@ This is different from closing or quitting an app — removing an app from Login
 
 Some Login Items are important and should stay. Your security software (like Malwarebytes or a VPN) often needs to run at login to protect you. iCloud Drive and Handoff-related services are also important for Apple features to work. When in doubt about a specific item, search its name online to understand what it does before removing it.
 
-If you're running macOS Ventura (13) or later, the instructions below apply directly. On older macOS versions (like Big Sur or Monterey), the same setting is in System Preferences > Users & Groups > Login Items — the steps are nearly the same.
+If you're running macOS Ventura (13) or later — including macOS Sequoia (15), which is the current version — the instructions below apply directly. On older macOS versions (like Big Sur or Monterey), the same setting is in System Preferences > Users & Groups > Login Items — the steps are nearly the same.
 
 After removing several Login Items, restart your Mac to see the improvement. Many people find their Mac is ready to use 30–60 seconds faster after this cleanup.`,
     steps: [
