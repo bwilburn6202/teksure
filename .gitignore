@@ -34,4 +34,6 @@ public/brain/knowledge-base.json
 .env.production
 
 # Worktree artifacts
-.claude
+.claude/worktrees/
+.claire/worktrees/
+.claude/settings.local.json

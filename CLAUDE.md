@@ -61,14 +61,14 @@ TekSure is a tech support and digital literacy platform for non-technical users 
 `send-help-confirmation`, `send-booking-confirmation`, `create-checkout-session`, `stripe-webhook`
 
 ## Payments
-Stripe — LIVE. £15 deposit model. Never touch the Stripe edge functions without explicit instruction.
+Stripe — LIVE. $15 deposit model. Never touch the Stripe edge functions without explicit instruction.
 
 ---
 
-## Current State (as of 2026-04-16)
-- **1,200+ guides** across 19 categories (incl. 50 Spanish at /guias, Batch 7 in progress)
-- **68+ interactive tools** at /tools
-- **161+ routes**, 80+ pages
+## Current State (as of 2026-04-20)
+- **~2,900 guides** across 19 categories (incl. 50 Spanish at /guias, Batch 93+ in progress)
+- **99+ interactive tools** at /tools
+- **220+ routes**, 218+ pages
 - **TekSure Brain** live at /brain — semantic search + optional hosted Ollama
 - **Hosted Ollama:** edge functions deployed (`brain-query`, `ollama-health`). Awaiting Hetzner CX22 server — set `OLLAMA_BASE_URL` + `OLLAMA_MODEL=llama3.2:1b` in Supabase secrets to activate
 - **New pages in progress:** /free-resources (Free Tech Programs), /scam-defense (Scam Defense Center)

@@ -203,6 +203,7 @@ const SeniorTechPath         = lazy(() => import("./pages/SeniorTechPath"));
 const ChromebookHub          = lazy(() => import("./pages/ChromebookHub"));
 const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics"));
 
+const TechComfortQuiz        = lazy(() => import("./pages/tools/TechComfortQuiz"));
 const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
 const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
 const PasswordLeakChecker    = lazy(() => import("./pages/tools/PasswordLeakChecker"));
@@ -461,6 +462,7 @@ const AppContent = () => {
           <Route path="/tools/safety-course" element={<SafetyCourse />} />
           <Route path="/setup" element={<Setup />} />
           <Route path="/tools/app-recommender" element={<AppRecommender />} />
+          <Route path="/tools/tech-comfort-quiz" element={<TechComfortQuiz />} />
           <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
           <Route path="/tools/email-declutter" element={<EmailDeclutter />} />
           <Route path="/tools/accessibility-check" element={<AccessibilityCheck />} />
@@ -661,4 +663,32 @@ const AppContent = () => {
 export const AppShell = ({ children, helmetContext }: { children?: ReactNode; helmetContext?: Record<string, unknown> }) => (
   <ErrorBoundary>
     <HelmetProvider context={helmetContext ?? {}}>
-      <QueryClientProvid
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <LanguageProvider>
+            <SeniorModeProvider>
+              <HighContrastProvider>
+                <TierProvider>
+                  <AuthProvider>
+                    {children}
+                    <AppContent />
+                    <Analytics />
+                  </AuthProvider>
+                </TierProvider>
+              </HighContrastProvider>
+            </SeniorModeProvider>
+          </LanguageProvider>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
+  </ErrorBoundary>
+);
+
+/** Default export for backward compatibility (pure SPA / dev fallback) */
+const App = () => (
+  <BrowserRouter>
+    <AppShell />
+  </BrowserRouter>
+);
+
+export default App;

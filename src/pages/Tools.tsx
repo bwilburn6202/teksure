@@ -963,3 +963,6 @@ export default function Tools() {
         </div>
       </main>
       <Footer />
+    </>
+  );
+}

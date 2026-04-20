@@ -429,4 +429,4 @@ const Guides = () => {
   );
 };
 
-export
+export default Guides;
