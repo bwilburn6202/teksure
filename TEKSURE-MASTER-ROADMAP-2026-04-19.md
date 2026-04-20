@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 69** (20 guides, 2026-04-20) — total ~2,453 guides
-- Next: **Batch 70** → **Batch 71** → ... (no upper limit)
+- Last completed: **Batch 70** (20 guides, 2026-04-20) — total ~2,473 guides
+- Next: **Batch 71** → **Batch 72** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -148,7 +148,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 67** | **20** | **2026-04-20** | Google Nest Hub, Chromecast, LG TV apps, Samsung TV apps, Duolingo, Khan Academy, Coursera, Blinkist, Lightroom Mobile, VSCO, ChatGPT mobile, Claude AI, Perplexity, Bluetooth pairing, Sonos setup, photo collage, Snapfish, Android developer options, iPhone Shortcuts automation, Android parental controls |
 | **Batch 68** | **20** | **2026-04-20** | Windows 11 upgrade, macOS Sonoma, Google Docs, Microsoft 365, Teams, Yummly, Allrecipes, Mealime, grocery budget, meal planning, iPhone 16 features, AllTrails, weather apps, Android magnifier, Paprika, NYT Cooking, iPhone Emergency SOS, Google Maps Timeline, offline maps, Rome2rio |
 | **Batch 69** | **20** | **2026-04-20** | Eero mesh Wi-Fi, speed test, lower internet bill, home office tech, dual monitors, Apple Watch vs Garmin, Galaxy Watch, Fitbit Charge, Pixel Watch, wireless earbuds, Windows shortcuts, Mac shortcuts, NaturalReader TTS, Immersive Reader, typing speed, Windows read aloud, Orbi setup, AirPods alternatives, phone cases, device insurance |
-| **Total** | **~2,453** | | |
+| **Batch 70** | **20** | **2026-04-20** | Hulu + Live TV, Sling TV, FuboTV, Philo, TP-Link Deco, iCloud security, Facebook privacy, Apple impersonation scam, fake Microsoft support, lottery scam, online dating safety, crypto scam, medical alert systems, aging-in-place tech, caregiver apps, CaringBridge, IRS IP PIN, retirement budgeting, simplify finances, Lotsa Helping Hands |
+| **Total** | **~2,473** | | |
 
 ---
 
