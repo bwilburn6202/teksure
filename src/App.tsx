@@ -320,6 +320,27 @@ const FloatingChrome = () => {
   );
 };
 
+/**
+ * Public surfaces default to the Landing v2 dark palette; protected/authed surfaces
+ * (admin, customer, tech, profile) default to light. User's explicit DarkModeToggle
+ * choice (stored in localStorage `teksure-theme`) always wins over the default.
+ */
+const PROTECTED_PREFIXES = ["/customer", "/tech", "/admin", "/profile"];
+
+const RouteThemeDefault = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (isServer) return;
+    const stored = localStorage.getItem("teksure-theme");
+    if (stored === "light" || stored === "dark") return;
+    const isProtected = PROTECTED_PREFIXES.some((p) => pathname.startsWith(p));
+    const root = document.documentElement;
+    if (isProtected) root.classList.remove("dark");
+    else root.classList.add("dark");
+  }, [pathname]);
+  return null;
+};
+
 const AppContent = () => {
   const { open, onClose } = useSearchModal();
   const navigate = useNavigate();
@@ -358,6 +379,7 @@ const AppContent = () => {
       <OfflineBanner />
       {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
+      <RouteThemeDefault />
       <FloatingChrome />
       <BackToTop />
       <Toaster />

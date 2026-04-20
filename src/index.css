@@ -47,45 +47,47 @@
     --sidebar-ring: 210 70% 46%;
   }
 
+  /* Dark palette — tuned to match Landing Page v2
+     (navy #050D1F, electric blue #1D5FE8, white text). */
   .dark {
-    --background: 220 18% 8%;
-    --foreground: 210 12% 93%;
-    --card: 220 18% 11%;
-    --card-foreground: 210 12% 93%;
-    --popover: 220 18% 11%;
-    --popover-foreground: 210 12% 93%;
-    --primary: 210 65% 55%;
+    --background: 220 72% 7%;          /* #050D1F */
+    --foreground: 0 0% 100%;
+    --card: 220 55% 11%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 55% 11%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 219 83% 51%;             /* #1D5FE8 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 16% 16%;
-    --secondary-foreground: 210 12% 93%;
-    --muted: 220 16% 14%;
-    --muted-foreground: 215 8% 60%;
-    --accent: 16 65% 60%;
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 220 30% 13%;
+    --muted-foreground: 220 12% 68%;
+    --accent: 215 92% 63%;              /* #4B8EF8 */
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 55% 40%;
+    --destructive: 0 62% 48%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 14% 18%;
-    --input: 220 16% 16%;
-    --ring: 210 65% 55%;
+    --border: 220 25% 18%;
+    --input: 220 25% 18%;
+    --ring: 219 83% 51%;
 
-    --teksure-success: 152 55% 45%;
-    --teksure-warning: 38 85% 55%;
-    --teksure-info: 210 65% 60%;
+    --teksure-success: 152 55% 50%;
+    --teksure-warning: 38 90% 58%;
+    --teksure-info: 213 94% 68%;
 
-    --zone-guides: 210 35% 11%;
-    --zone-tools: 152 40% 11%;
-    --zone-safety: 38 50% 11%;
-    --zone-support: 270 30% 11%;
-    --zone-cta: 210 65% 55%;
+    --zone-guides: 220 55% 10%;
+    --zone-tools: 152 30% 11%;
+    --zone-safety: 38 35% 11%;
+    --zone-support: 270 30% 12%;
+    --zone-cta: 219 83% 51%;
 
-    --sidebar-background: 220 18% 8%;
-    --sidebar-foreground: 210 12% 93%;
-    --sidebar-primary: 210 65% 55%;
+    --sidebar-background: 220 72% 7%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 219 83% 51%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 16% 16%;
-    --sidebar-accent-foreground: 210 12% 93%;
-    --sidebar-border: 220 14% 18%;
-    --sidebar-ring: 210 65% 55%;
+    --sidebar-accent: 220 30% 13%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 25% 18%;
+    --sidebar-ring: 219 83% 51%;
   }
 }
 
@@ -229,6 +231,28 @@
     @apply min-h-[80vh] flex items-center py-16 md:py-24;
   }
 }
+
+/* ── Dark-mode safety net ──────────────────────────────────────────────────
+   Some legacy pages hardcode Tailwind light utilities (`bg-white`, `text-black`,
+   `text-gray-*`, etc.) that bypass the semantic-token system. These overrides
+   let those pages still look reasonable under the Landing v2 dark palette
+   without touching 220+ call sites. Remove once pages are migrated to tokens. */
+.dark .bg-white,
+.dark .bg-gray-50 { background-color: hsl(var(--card)); color: inherit; }
+.dark .bg-gray-100 { background-color: hsl(var(--muted)); }
+.dark .bg-gray-200 { background-color: hsl(var(--muted)); }
+.dark .text-black,
+.dark .text-gray-900,
+.dark .text-gray-800 { color: hsl(var(--foreground)); }
+.dark .text-gray-700 { color: hsl(var(--foreground) / 0.85); }
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400 { color: hsl(var(--muted-foreground)); }
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300 { border-color: hsl(var(--border)); }
+.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+.dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]) { border-color: hsl(var(--border)); }
 
 /* Font size adjuster classes */
 html.font-size-large {
