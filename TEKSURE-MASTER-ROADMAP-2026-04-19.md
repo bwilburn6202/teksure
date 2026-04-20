@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 40** (20 guides, 2026-04-19) — total ~1,875 guides
-- Next: **Batch 41** → **Batch 42** → ... (no upper limit)
+- Last completed: **Batch 41** (20 guides, 2026-04-19) — total ~1,895 guides
+- Next: **Batch 42** → **Batch 43** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -119,7 +119,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 38** | **20** | **2026-04-19** | Samsung Galaxy Ring, Oura Ring, VPN basics, data breach checker (HaveIBeenPwned), app permissions review, incognito/private browsing, Google Pixel AI camera (Magic Eraser/Best Take), streaming service comparison, smart TV buying guide, router security, phone upgrade without data loss, iPhone Screen Time family, Google Account privacy checkup, Alexa+ AI guide, voice assistant comparison (Siri vs Google vs Alexa), iMessage vs SMS vs RCS, Android to iPhone migration, iCloud Private Relay, spot AI-generated images, review connected apps |
 | **Batch 39** | **20** | **2026-04-19** | Signal private messaging, digitize old photos, compress PDF, merge PDF files, iPad buying guide for seniors, laptop buying guide for seniors, Windows 11 tips, Mac everyday tips, organize Google Drive, organize phone photos, delete duplicate photos, free up iCloud storage, Marco Polo video messaging, Medicare Extra Help program, Lifeline free phone service, SNAP EBT guide, neighborhood/community apps (Nextdoor vs Facebook Groups vs Ring Neighbors), SSI vs SSDI difference, Google Drive backup guide, iPad tips for everyday seniors |
 | **Batch 40** | **20** | **2026-04-19** | Bluesky social network, Threads app, Peacock streaming, NYT Games (Wordle/Connections), WhatsApp Channels, Netflix offline downloads, Disney+ offline downloads, Spotify offline listening, EveryDollar budgeting app, noise-canceling headphones, iPhone text size settings, iOS 18 new features, Android 15 new features, Google Photos Locked Folder, sell old tech safely, phone as TV remote, Samsung Galaxy AI features, iPhone Stolen Device Protection, recover hacked email account, online banking safety tips |
-| **Total** | **~1,875** | | |
+| **Batch 41** | **20** | **2026-04-19** | YouTube Music, TripAdvisor, Vrbo vacation rentals, ParkMobile, Amtrak app, Sam's Club Scan & Go, Kroger digital coupons, iPad Stage Manager, Android Nearby Share, Apple Health Records, Amazon Subscribe & Save, Lyft medical transportation, library digital perks (free NYT/LinkedIn Learning), auto bill pay, Medicare What's Covered app, VA mobile app, record video iPhone, FaceTime SharePlay, video message guide |
+| **Total** | **~1,895** | | |
 
 ---
 
