@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 45** (20 guides, 2026-04-19) — total ~1,974 guides
-- Next: **Batch 46** → **Batch 47** → ... (no upper limit)
+- Last completed: **Batch 46** (19 guides, 2026-04-19) — total ~1,993 guides
+- Next: **Batch 47** → **Batch 48** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -124,7 +124,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 43** | **19** | **2026-04-19** | iPhone Reminders app, Microsoft To Do, Gmail out-of-office/vacation responder, recover deleted Gmail emails, fill & sign PDF on iPhone, compress photos before emailing, add contact on iPhone, set iPhone ringtone, set iPhone wallpaper, change default browser on iPhone, Google search tips, find downloaded files on Android, Alexa calling & messaging, smart speaker music commands, add boarding pass to Apple Wallet, manage iPhone notification badges, block phone number on iPhone/Android, report scam call to FTC, iPhone Weather app guide |
 | **Batch 44** | **20** | **2026-04-19** | Google Keep notes, Zoom host meeting guide, Android email setup, Facebook birthdays, Windows Photos app, create Google account, clear Google search history, iPad iMessage setup, Android gesture navigation, Google Photos slideshow on TV, Gmail search tips, AirTag setup for beginners, Samsung DeX, Zoom live captions, record Zoom meeting, Android Adaptive Battery, phone charger types (USB-C/Lightning/wireless), Facebook Marketplace selling, Chrome Reading List, find iPhone serial number |
 | **Batch 45** | **20** | **2026-04-19** | Erase iPhone before selling, erase Android before selling, Google Drive file sharing, iPhone Measure app, Edge PDF viewer, iPhone Haptic Touch shortcuts, Amazon Prime Video tips, YouTube playlists, YouTube Watch Later, YouTube offline downloads (Premium), Apple ID trusted devices, Chrome password checkup, Android voicemail setup, Apple Maps offline, iPhone Low Power Mode, Android Battery Saver, Safari Reader Mode, Samsung Quick Share, enable TV closed captions, iPhone Emergency Bypass contact |
-| **Total** | **~1,974** | | |
+| **Batch 46** | **19** | **2026-04-19** | iPhone conference call, Android conference call, Google Forms beginners, Gmail filters/auto-sort, Google Pixel phone tips, iPhone Portrait Mode, Android Night Mode camera, iPhone camera timer/burst, Apple Watch health seniors, Google Maps saved places, iPhone Spotlight search, Windows Storage Sense, Google Smart Lock Android, iPhone flashlight, schedule text message iOS 18, iPhone volume settings, Mac Quick Look, iPhone battery replacement, Android auto-brightness |
+| **Total** | **~1,993** | | |
 
 ---
 
