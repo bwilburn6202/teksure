@@ -228,11 +228,11 @@ const Index = () => {
 
         /* Stat bar */
         .landing-v2 .stat-bar {
-          font: 400 12px 'Inter'; color: rgba(255,255,255,.45);
+          font: 400 12px 'Inter'; color: rgba(255,255,255,.87);
           display: flex; gap: 6px; align-items: center;
         }
-        .landing-v2 .stat-bar strong { color: rgba(255,255,255,.80); font-weight: 600; }
-        .landing-v2 .stat-dot { opacity: .4; }
+        .landing-v2 .stat-bar strong { color: #fff; font-weight: 600; }
+        .landing-v2 .stat-dot { opacity: .6; }
 
         /* Hide secondary nav + CTA on narrow screens so the pill doesn't overflow */
         @media (max-width: 760px) {
@@ -412,3 +412,4 @@ function HeroLogo() {
     </svg>
   );
 }
+                 

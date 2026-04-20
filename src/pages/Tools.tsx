@@ -809,7 +809,7 @@ export default function Tools() {
       />
       <Navbar />
       <ToolSkeleton />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools' }]} />
         </div>
@@ -963,6 +963,3 @@ export default function Tools() {
         </div>
       </main>
       <Footer />
-    </>
-  );
-}

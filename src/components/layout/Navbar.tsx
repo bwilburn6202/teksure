@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { PreloadLink } from '@/components/PreloadLink';
-import { Menu, Search, LogOut, User, ChevronDown, MessageSquare, Map, SlidersHorizontal, X, BookOpen, Wrench, Shield, ShieldAlert, Video, Users, ArrowRight } from 'lucide-react';
+import { Menu, Search, LogOut, User, UserCog, ChevronDown, MessageSquare, Map, SlidersHorizontal, X, BookOpen, Wrench, Shield, ShieldAlert, Video, Users, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
+import { useSeniorMode } from '@/contexts/SeniorModeContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
 import { SeniorModeToggle } from '@/components/SeniorModeToggle';
@@ -27,6 +28,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  */
 export function Navbar() {
   const { user, logout } = useAuth();
+  const { seniorMode, toggleSeniorMode } = useSeniorMode();
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,10 +63,6 @@ export function Navbar() {
     { to: '/quick-fixes', label: 'Quick Fixes', icon: Wrench, desc: 'Common fixes fast' },
     { to: '/scam-defense', label: 'Scam Defense Center', icon: ShieldAlert, desc: 'Protect yourself from scams' },
     { to: '/privacy-hub', label: 'Privacy Hub', icon: Shield, desc: 'Take control of your data' },
-    { to: '/data-broker-removal', label: 'Remove Personal Info', icon: Shield, desc: 'From data broker sites' },
-    { to: '/kids-online-safety', label: 'Kids Online Safety', icon: Shield, desc: 'For parents & grandparents' },
-    { to: '/tools/scam-simulator', label: 'Scam Simulator', icon: Shield, desc: 'Practice spotting scams' },
-    { to: '/tools/privacy-audit', label: 'Privacy Audit', icon: Shield, desc: 'Check your settings' },
     { to: '/safety/scam-alerts', label: 'Scam Alerts', icon: ShieldAlert, desc: 'Latest scam warnings' },
   ];
 
@@ -72,7 +70,6 @@ export function Navbar() {
     { to: '/brain', label: 'TekSure Brain', icon: BookOpen, desc: 'Ask any tech question' },
     { to: '/learn', label: 'Learning Paths', icon: BookOpen, desc: 'Structured free courses' },
     { to: '/senior-tech-path', label: 'Tech for Seniors', icon: BookOpen, desc: 'Path for adults 60+' },
-    { to: '/accessibility', label: 'Accessibility', icon: BookOpen, desc: 'Make devices easier' },
     { to: '/glossary', label: 'Glossary', icon: BookOpen, desc: 'Plain-English terms' },
     { to: '/videos', label: 'Video Tutorials', icon: Video, desc: 'Watch & learn' },
     { to: '/forum', label: 'Community', icon: Users, desc: 'Ask real people' },
@@ -80,16 +77,10 @@ export function Navbar() {
 
   const supportLinks = [
     { to: '/free-resources', label: 'Free Tech Programs', icon: ArrowRight, desc: 'Free internet, devices & training' },
-    { to: '/free-software', label: 'Free Software', icon: ArrowRight, desc: '40+ free alternatives' },
     { to: '/caregiver-hub', label: 'Caregiver Hub', icon: Users, desc: 'Helping a loved one' },
     { to: '/tech-help-near-me', label: 'Help Near Me', icon: ArrowRight, desc: 'Find local tech help' },
-    { to: '/veterans-tech-hub', label: 'For Veterans', icon: ArrowRight, desc: 'Free tech for those who served' },
-    { to: '/emergency-tech', label: 'Emergency Prep', icon: ArrowRight, desc: 'Storms, outages, disasters' },
-    { to: '/gift-session', label: 'Gift Tech Help', icon: ArrowRight, desc: 'Give the gift of help' },
-    { to: '/local-help', label: 'Find Local Help', icon: ArrowRight, desc: 'Near you' },
+    { to: '/free-software', label: 'Free Software', icon: ArrowRight, desc: '40+ free alternatives' },
     { to: '/about', label: 'About TekSure', icon: Users, desc: 'Our mission' },
-    { to: '/sources', label: 'Sources & Credits', icon: BookOpen, desc: 'Our references' },
-    { to: '/roadmap', label: 'Roadmap', icon: Map, desc: "What's coming" },
     { to: '/explore', label: 'Explore All', icon: Map, desc: 'Everything we offer' },
   ];
 
@@ -200,29 +191,6 @@ export function Navbar() {
                         ))}
                       </div>
                     </div>
-                    <div className="mt-4 pt-4 border-t border-border/60">
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2">Quick Tools</p>
-                      <div className="flex flex-wrap gap-1.5">
-                        {[
-                          { to: '/tools/scam-simulator', label: '🛡️ Scam Test' },
-                          { to: '/tools/password-strength', label: '🔑 Password Check' },
-                          { to: '/tools/wifi-troubleshooter', label: '📶 WiFi Fix' },
-                          { to: '/tools/cyber-scorecard', label: '🏆 Security Grade' },
-                          { to: '/tools/privacy-audit', label: '🔒 Privacy Audit' },
-                          { to: '/tools/streaming-calculator', label: '📺 Streaming Cost' },
-                          { to: '/ai-tutor', label: '🤖 AI Tutor' },
-                          { to: '/tools/guide-packs', label: '📦 Print Guides' },
-                        ].map(t => (
-                          <PreloadLink
-                            key={t.to}
-                            to={t.to}
-                            className="px-2.5 py-1 rounded-full bg-muted hover:bg-muted/80 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors border border-border/40"
-                          >
-                            {t.label}
-                          </PreloadLink>
-                        ))}
-                      </div>
-                    </div>
                   </PopoverContent>
                 </Popover>
               )}
@@ -316,6 +284,21 @@ export function Navbar() {
               <Menu className="h-5 w-5" aria-hidden="true" />
             </button>
           </nav>
+
+          {/* ── Easy Mode toggle — always visible so seniors can find it ── */}
+          <button
+            onClick={toggleSeniorMode}
+            aria-pressed={seniorMode}
+            className={`pointer-events-auto hidden md:inline-flex items-center gap-1.5 h-[44px] px-4 rounded-full text-sm font-semibold
+              border transition-colors backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,.3)]
+              ${seniorMode
+                ? 'bg-emerald-600 border-emerald-500/50 text-white hover:bg-emerald-700'
+                : 'bg-[#0A1830] border-white/[0.15] text-white/80 hover:text-white hover:bg-white/[0.12]'
+              }`}
+          >
+            <UserCog className="h-4 w-4" aria-hidden="true" />
+            {seniorMode ? 'Easy Mode ON' : 'Easy Mode'}
+          </button>
 
           {/* ── Gear button (Display & Accessibility, incl. DarkModeToggle) ── */}
           <Popover>
@@ -422,6 +405,20 @@ export function Navbar() {
             )}
 
             <div className="border-t mt-6 pt-6">
+              {/* Prominent Easy Mode button for mobile */}
+              <button
+                onClick={toggleSeniorMode}
+                aria-pressed={seniorMode}
+                className={`w-full mx-4 mb-4 inline-flex items-center justify-center gap-2 min-h-[52px] px-6 rounded-xl text-base font-semibold transition-colors
+                  ${seniorMode
+                    ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                    : 'bg-primary/10 text-primary hover:bg-primary/20'
+                  }`}
+                style={{ width: 'calc(100% - 2rem)' }}
+              >
+                <UserCog className="h-5 w-5" aria-hidden="true" />
+                {seniorMode ? 'Easy Mode ON — Tap to Turn Off' : 'Turn On Easy Mode'}
+              </button>
               <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 px-4 mb-3">Display &amp; Accessibility</p>
               <div className="flex items-center gap-1.5 px-4" role="group" aria-label="Display and accessibility settings">
                 <SeniorModeToggle />
@@ -437,3 +434,4 @@ export function Navbar() {
     </>
   );
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

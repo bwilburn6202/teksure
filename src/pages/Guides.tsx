@@ -261,7 +261,7 @@ const Guides = () => {
   const categories = Object.keys(categoryLabels) as GuideCategory[];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div id="main-content" className="min-h-screen bg-background">
       <SEOHead
         title="Free Tech Guides for Beginners | TekSure"
         description="Browse 1,000+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, and everyday apps. Written in plain language for beginners."
@@ -429,4 +429,4 @@ const Guides = () => {
   );
 };
 
-export default Guides;
+export

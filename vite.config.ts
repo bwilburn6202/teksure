@@ -167,12 +167,7 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-router';
           }
 
-          // Framer Motion — animation library, large, loaded lazily
-          if (id.includes('node_modules/framer-motion')) {
-            return 'vendor-motion';
-          }
-
-          // Supabase — only loaded when auth/db is needed
+// Supabase — only loaded when auth/db is needed
           if (id.includes('node_modules/@supabase')) {
             return 'vendor-supabase';
           }
@@ -181,9 +176,6 @@ export default defineConfig(({ mode }) => ({
           if (
             id.includes('node_modules/@radix-ui') ||
             id.includes('node_modules/class-variance-authority') ||
-            id.includes('node_modules/cmdk') ||
-            id.includes('node_modules/vaul') ||
-            id.includes('node_modules/embla-carousel')
           ) return 'vendor-ui';
 
           // Guide data — large dataset, split into its own cacheable chunk
@@ -196,14 +188,10 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-query';
           }
 
-          // Forms + validation
-          if (
-            id.includes('node_modules/react-hook-form') ||
-            id.includes('node_modules/@hookform') ||
-            id.includes('node_modules/zod')
-          ) return 'vendor-forms';
+
         },
       },
     },
   },
 }));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

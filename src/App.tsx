@@ -131,9 +131,7 @@ const MockupA                = lazy(() => import("./pages/MockupA"));
 const MockupB                = lazy(() => import("./pages/MockupB"));
 const MockupC                = lazy(() => import("./pages/MockupC"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
-const TechDreamBuilder       = lazy(() => import("./pages/TechDreamBuilder"));
-const TechPlayground         = lazy(() => import("./pages/TechPlayground"));
-const TechLifeSimulator     = lazy(() => import("./pages/TechLifeSimulator"));
+
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
 const PrinterTroubleshooter  = lazy(() => import("./pages/tools/PrinterTroubleshooter"));
 const NotificationDecoder    = lazy(() => import("./pages/tools/NotificationDecoder"));
@@ -204,7 +202,7 @@ const TechHelpNearMe         = lazy(() => import("./pages/TechHelpNearMe"));
 const SeniorTechPath         = lazy(() => import("./pages/SeniorTechPath"));
 const ChromebookHub          = lazy(() => import("./pages/ChromebookHub"));
 const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics"));
-const ErrorDecoderTool       = lazy(() => import("./pages/tools/ErrorDecoder"));
+
 const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
 const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
 const PasswordLeakChecker    = lazy(() => import("./pages/tools/PasswordLeakChecker"));
@@ -265,8 +263,35 @@ const queryClient = new QueryClient({
   },
 });
 
-/** Skeleton loading screen shown during lazy-load — matches page layout for less perceived delay */
+/** Skeleton loading screen shown during lazy-load — matches page layout for less perceived delay.
+ *  After 10 seconds, shows an error message with a retry button instead of looping forever. */
 function PageLoader() {
+  const [timedOut, setTimedOut] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setTimedOut(true), 10_000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (timedOut) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center" role="alert" aria-live="assertive">
+        <div className="text-center max-w-md px-6 space-y-4">
+          <p className="text-xl font-semibold text-foreground">This page took too long to load</p>
+          <p className="text-muted-foreground">
+            This could be a slow connection or a temporary issue. Try reloading the page.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="inline-flex items-center justify-center min-h-[44px] px-6 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background" role="status" aria-live="polite" aria-label="Loading page">
       <div className="h-14 border-b border-border" />
@@ -301,7 +326,7 @@ function OfflineBanner() {
     <div
       role="alert"
       aria-live="assertive"
-      className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-700 text-white text-sm font-medium py-2 px-4 shadow-lg"
+      className="fixed top-0 inset-x-0 z-[9999] flex items-center justify-center gap-2 bg-amber-900 text-white text-sm font-medium py-2 px-4 shadow-lg"
     >
       <WifiOff className="h-4 w-4 shrink-0" aria-hidden="true" />
       <span>You're offline — previously visited guides are still available.</span>
@@ -389,10 +414,10 @@ const AppContent = () => {
         <ErrorBoundary variant="section">
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/mockups" element={<Mockups />} />
-          <Route path="/mockup-a" element={<MockupA />} />
-          <Route path="/mockup-b" element={<MockupB />} />
-          <Route path="/mockup-c" element={<MockupC />} />
+          <Route path="/mockups" element={<ProtectedRoute allowedRoles={['admin']}><Mockups /></ProtectedRoute>} />
+          <Route path="/mockup-a" element={<ProtectedRoute allowedRoles={['admin']}><MockupA /></ProtectedRoute>} />
+          <Route path="/mockup-b" element={<ProtectedRoute allowedRoles={['admin']}><MockupB /></ProtectedRoute>} />
+          <Route path="/mockup-c" element={<ProtectedRoute allowedRoles={['admin']}><MockupC /></ProtectedRoute>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
@@ -510,7 +535,7 @@ const AppContent = () => {
           <Route path="/senior-tech-path" element={<SeniorTechPath />} />
           <Route path="/chromebook" element={<ChromebookHub />} />
           <Route path="/courses/internet-basics" element={<InternetBasics />} />
-          <Route path="/tools/error-decoder" element={<ErrorDecoderTool />} />
+
           <Route path="/tools/is-this-a-scam" element={<IsThisAScam />} />
           <Route path="/tools/device-comparison" element={<DeviceComparison />} />
           <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
@@ -585,8 +610,6 @@ const AppContent = () => {
           <Route path="/tools/digital-cleanup" element={<DigitalCleanup />} />
           <Route path="/tools/device-setup-checklist" element={<DeviceSetupChecklist />} />
           <Route path="/tools/tech-glossary-quiz" element={<TechGlossaryQuiz />} />
-          <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
-          <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
           <Route path="/tools/digital-literacy-assessment" element={<DigitalLiteracyAssessment />} />
           <Route path="/tools/meeting-setup" element={<MeetingSetupHelper />} />
           <Route path="/tools/contact-backup" element={<ContactBackupTool />} />
@@ -638,32 +661,4 @@ const AppContent = () => {
 export const AppShell = ({ children, helmetContext }: { children?: ReactNode; helmetContext?: Record<string, unknown> }) => (
   <ErrorBoundary>
     <HelmetProvider context={helmetContext ?? {}}>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <LanguageProvider>
-            <SeniorModeProvider>
-              <HighContrastProvider>
-                <TierProvider>
-                  <AuthProvider>
-                    {children}
-                    <AppContent />
-                    <Analytics />
-                  </AuthProvider>
-                </TierProvider>
-              </HighContrastProvider>
-            </SeniorModeProvider>
-          </LanguageProvider>
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
-  </ErrorBoundary>
-);
-
-/** Default export for backward compatibility (pure SPA / dev fallback) */
-const App = () => (
-  <BrowserRouter>
-    <AppShell />
-  </BrowserRouter>
-);
-
-export default App;
+      <QueryClientProvid
