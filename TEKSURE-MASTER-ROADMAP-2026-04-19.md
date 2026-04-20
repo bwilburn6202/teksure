@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 78** (20 guides, 2026-04-20) — total ~2,640 guides
-- Next: **Batch 79** → **Batch 80** → ... (no upper limit)
+- Last completed: **Batch 79** (20 guides, 2026-04-20) — total ~2,660 guides
+- Next: **Batch 80** → **Batch 81** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -157,7 +157,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 76** | **20** | **2026-04-20** | Acorn TV, BritBox, CuriosityStream, Shudder horror, Movies Anywhere, Vudu free movies, Frndly TV, MasterClass, Skillshare, Udemy, Wondrium, Codecademy, Google Career Certificates, Microsoft Learn, WordPress, Squarespace, Wix, Google Sites, Linktree, Carrd |
 | **Batch 77** | **20** | **2026-04-20** | Policygenius, Lemonade renters insurance, Allstate app, GEICO app, Progressive app, State Farm app, Medicare Advantage explained, SSDI application, CHIP program, Medicaid enrollment, COBRA, health open enrollment, Twitch, Discord voice chat, Reddit beginners, Trello, Todoist, TickTick, Asana personal, Microsoft To Do tips |
 | **Batch 78** | **20** | **2026-04-20** | Powerline adapters, ethernet setup, USB hubs, laptop docking station, Mac trackpad gestures, trackball mouse, Windows Magnifier, Mac Zoom, Android TalkBack, iPhone VoiceOver, captioned telephone, Windows High Contrast, iPhone font size, Android font size, blue light filter, Edge Read Aloud, Firefox Reader View, Chrome extensions safety, ad blockers, uBlock Origin |
-| **Total** | **~2,640** | | |
+| **Batch 79** | **20** | **2026-04-20** | Sortly inventory, Trust & Will online, Apple Legacy Contact, Facebook memorial, password inheritance, vital records digital, Social Security survivor benefits, grief support tech, moving app checklist, PODS storage, caregiver app, CareZone app, MyChart portal, Kaiser Permanente app, CVS app, Walgreens app, Costco Pharmacy, Amazon Pharmacy, Cost Plus Drugs, Blink Health |
+| **Total** | **~2,660** | | |
 
 ---
 
