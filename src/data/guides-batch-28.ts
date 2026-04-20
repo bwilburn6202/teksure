@@ -30,7 +30,7 @@ Each person still has their own Personal Library for private photos. You can swi
       },
       {
         title: 'Set Up the Shared Library',
-        content: 'Open the Photos app. Tap the three-line menu icon in the top-left corner. Tap "Create Shared Library." Follow the on-screen steps — you\'ll choose participants, select which existing photos to include, and set up automatic sharing preferences.',
+        content: `Open the Photos app. Tap the three-line menu icon in the top-left corner. Tap "Create Shared Library." Follow the on-screen steps — you'll choose participants, select which existing photos to include, and set up automatic sharing preferences.`,
       },
       {
         title: 'Invite Family Members',
@@ -39,7 +39,7 @@ Each person still has their own Personal Library for private photos. You can swi
       },
       {
         title: 'Choose What to Share Automatically',
-        content: 'You can set the camera to automatically add photos to the Shared Library when you\'re near invited family members (uses Bluetooth). Or set it to always add to shared, always add to personal, or ask each time. Go to Settings → Photos → Shared Library → Auto-Share.',
+        content: `You can set the camera to automatically add photos to the Shared Library when you're near invited family members (uses Bluetooth). Or set it to always add to shared, always add to personal, or ask each time. Go to Settings → Photos → Shared Library → Auto-Share.`,
       },
       {
         title: 'Switch Between Libraries',
@@ -51,7 +51,7 @@ Each person still has their own Personal Library for private photos. You can swi
   {
     slug: 'airplay-iphone-to-tv',
     title: 'How to Use AirPlay: Stream From iPhone to Your TV',
-    excerpt: 'AirPlay lets you wirelessly show your iPhone screen — or just a video or photo — on your television. Here\'s how to set it up in minutes.',
+    excerpt: `AirPlay lets you wirelessly show your iPhone screen — or just a video or photo — on your television. Here's how to set it up in minutes.`,
     category: 'entertainment',
     tags: ['AirPlay', 'iPhone', 'Apple TV', 'stream to TV', 'screen mirror'],
     readTime: '5 min',
@@ -72,12 +72,12 @@ AirPlay 2 also supports multi-room audio — you can play music simultaneously o
     steps: [
       {
         title: 'Make Sure Everything Is on the Same Wi-Fi',
-        content: 'Your iPhone and your Apple TV (or smart TV) must both be connected to the same Wi-Fi network. On your iPhone, go to Settings → Wi-Fi to see your network name. Check your TV\'s settings for its Wi-Fi connection. They need to match.',
+        content: `Your iPhone and your Apple TV (or smart TV) must both be connected to the same Wi-Fi network. On your iPhone, go to Settings → Wi-Fi to see your network name. Check your TV's settings for its Wi-Fi connection. They need to match.`,
       },
       {
         title: 'Mirror Your Entire Screen',
         content: 'Swipe down from the top-right corner of your iPhone to open Control Center. Tap "Screen Mirroring" (the icon looks like two overlapping rectangles). A list of available AirPlay devices appears. Tap your TV or Apple TV name. Your screen now appears on the TV.',
-        tip: 'If you don\'t see your TV in the list, try turning your TV off and back on, or restart your iPhone. Both devices need a moment to discover each other on Wi-Fi.',
+        tip: `If you don't see your TV in the list, try turning your TV off and back on, or restart your iPhone. Both devices need a moment to discover each other on Wi-Fi.`,
       },
       {
         title: 'Stream a Specific Video or Photo',
@@ -96,7 +96,7 @@ AirPlay 2 also supports multi-room audio — you can play music simultaneously o
   {
     slug: 'screen-mirror-android-to-tv',
     title: 'How to Mirror Your Android Phone Screen to a TV',
-    excerpt: 'Android phones can wirelessly display on your TV using Cast, Smart View, or a Chromecast device. Here\'s how to get your phone screen on the big screen.',
+    excerpt: `Android phones can wirelessly display on your TV using Cast, Smart View, or a Chromecast device. Here's how to get your phone screen on the big screen.`,
     category: 'entertainment',
     tags: ['Android', 'screen mirror', 'Chromecast', 'cast to TV', 'Samsung Smart View'],
     readTime: '5 min',
@@ -117,16 +117,16 @@ All devices need to be on the same Wi-Fi network for casting to work. The qualit
     steps: [
       {
         title: 'Check What Your TV Supports',
-        content: 'If your TV has a built-in Chromecast, you\'ll see "Cast" in its settings or apps. Samsung Smart TVs support Smart View natively. If your TV is older or basic, you\'ll need a Chromecast dongle (plugs into any HDMI port, about $30 from Best Buy or Amazon).',
+        content: `If your TV has a built-in Chromecast, you'll see "Cast" in its settings or apps. Samsung Smart TVs support Smart View natively. If your TV is older or basic, you'll need a Chromecast dongle (plugs into any HDMI port, about $30 from Best Buy or Amazon).`,
       },
       {
         title: 'Cast Using the Quick Settings Panel',
         content: 'Swipe down from the top of your phone to open Quick Settings (swipe twice on some phones to see all icons). Look for "Cast," "Smart View," "Screen Mirror," or "Screen Cast." Tap it. Your phone scans for available devices. Tap your TV or Chromecast name.',
-        tip: 'If you don\'t see a Cast icon in Quick Settings, go to Settings → Connected Devices → Cast. You can also add it to Quick Settings by tapping the pencil/edit icon.',
+        tip: `If you don't see a Cast icon in Quick Settings, go to Settings → Connected Devices → Cast. You can also add it to Quick Settings by tapping the pencil/edit icon.`,
       },
       {
         title: 'Cast From Google Home App',
-        content: 'If your TV or Chromecast is set up in Google Home: open the Google Home app, find your TV in the list, tap it, then tap "Cast my screen." Follow the on-screen confirmation. This approach works well if Quick Settings casting isn\'t finding your device.',
+        content: `If your TV or Chromecast is set up in Google Home: open the Google Home app, find your TV in the list, tap it, then tap "Cast my screen." Follow the on-screen confirmation. This approach works well if Quick Settings casting isn't finding your device.`,
       },
       {
         title: 'Cast a Specific Video From an App',
@@ -135,7 +135,7 @@ All devices need to be on the same Wi-Fi network for casting to work. The qualit
       {
         title: 'Stop Casting',
         content: 'Open Quick Settings again and tap Cast (or Smart View). Tap "Disconnect." Or, if you cast from an app, tap the Cast icon in the app and tap "Stop Casting." Your TV returns to its normal input.',
-        warning: 'If your phone screen stays on your TV after you\'re done, make sure to disconnect — otherwise anyone nearby can still see what\'s on your phone.',
+        warning: `If your phone screen stays on your TV after you're done, make sure to disconnect — otherwise anyone nearby can still see what's on your phone.`,
       },
     ],
   },
@@ -163,12 +163,12 @@ HDMI cables come in different lengths — 6-foot cables work for most living roo
     steps: [
       {
         title: 'Get the Right Cable and Adapter',
-        content: 'Check your laptop\'s ports. Full-size HDMI (looks like a wide trapezoid) connects directly. USB-C or Thunderbolt ports need a USB-C to HDMI adapter. Check your TV — locate the HDMI ports on the back or side and note which HDMI number (1, 2, 3) you\'ll use.',
-        tip: 'If you\'re not sure what ports your laptop has, take a photo of the sides of your laptop and search for its model name plus "ports" online.',
+        content: `Check your laptop's ports. Full-size HDMI (looks like a wide trapezoid) connects directly. USB-C or Thunderbolt ports need a USB-C to HDMI adapter. Check your TV — locate the HDMI ports on the back or side and note which HDMI number (1, 2, 3) you'll use.`,
+        tip: `If you're not sure what ports your laptop has, take a photo of the sides of your laptop and search for its model name plus "ports" online.`,
       },
       {
         title: 'Plug In the HDMI Cable',
-        content: 'With both the TV and laptop on, plug one end of the HDMI cable into your laptop (or adapter) and the other end into the TV\'s HDMI port. The cable only goes in one way — don\'t force it.',
+        content: `With both the TV and laptop on, plug one end of the HDMI cable into your laptop (or adapter) and the other end into the TV's HDMI port. The cable only goes in one way — don't force it.`,
       },
       {
         title: 'Switch Your TV to the Right Input',
@@ -177,11 +177,11 @@ HDMI cables come in different lengths — 6-foot cables work for most living roo
       {
         title: 'Set Up Display Mode on Your Laptop (Windows)',
         content: 'Press the Windows key + P on your keyboard. A sidebar appears with options: Duplicate (mirror laptop on TV), Extend (TV is a second screen), Second screen only (only TV shows content), or PC screen only. Choose "Duplicate" to mirror your screen on both displays.',
-        tip: 'On Mac: Go to Apple menu → System Settings → Displays. You\'ll see both screens and can drag to arrange them or check "Mirror Displays."',
+        tip: `On Mac: Go to Apple menu → System Settings → Displays. You'll see both screens and can drag to arrange them or check "Mirror Displays."`,
       },
       {
         title: 'Adjust Resolution If the Picture Looks Off',
-        content: 'If text looks blurry or the picture doesn\'t fill the screen: Windows — right-click the desktop → Display Settings → change Resolution to match your TV\'s native resolution (usually 1920×1080 for HD TVs). Mac — System Settings → Displays → select the TV → choose the appropriate resolution.',
+        content: `If text looks blurry or the picture doesn't fill the screen: Windows — right-click the desktop → Display Settings → change Resolution to match your TV's native resolution (usually 1920×1080 for HD TVs). Mac — System Settings → Displays → select the TV → choose the appropriate resolution.`,
       },
     ],
   },
@@ -212,17 +212,17 @@ Setup takes about 10-15 minutes. You'll need Wi-Fi name and password, a smartpho
         content: 'Plug the Skylight frame into a wall outlet. It powers on automatically and walks you through setup on the touchscreen: select your Wi-Fi network, enter your Wi-Fi password using the on-screen keyboard, and create a free Skylight account (or sign into an existing one).',
       },
       {
-        title: 'Note Your Frame\'s Unique Email Address',
+        title: `Note Your Frame's Unique Email Address`,
         content: 'During setup, Skylight gives you a unique email address for the frame — something like yourname@ourskylight.com. This is the address family members use to send photos. Write it down or screenshot it. You can also find it later in the Skylight app under frame settings.',
       },
       {
         title: 'Share the Email Address With Family',
-        content: 'Send the frame\'s email address to everyone you want to be able to send photos. They can save it as a contact on their phone ("Mom\'s Frame" or similar). To send a photo, they just email the image as an attachment to that address. The photo appears on the frame within minutes.',
-        tip: 'Create a family group text or email thread with the frame\'s address so everyone has it.',
+        content: `Send the frame's email address to everyone you want to be able to send photos. They can save it as a contact on their phone ("Mom's Frame" or similar). To send a photo, they just email the image as an attachment to that address. The photo appears on the frame within minutes.`,
+        tip: `Create a family group text or email thread with the frame's address so everyone has it.`,
       },
       {
         title: 'Download the Skylight App (Optional)',
-        content: 'The free Skylight app (available for iPhone and Android) lets the frame owner manage photos, delete ones they don\'t want, set the slideshow order, adjust display brightness, and see who sent what. It\'s optional — the frame works without the app.',
+        content: `The free Skylight app (available for iPhone and Android) lets the frame owner manage photos, delete ones they don't want, set the slideshow order, adjust display brightness, and see who sent what. It's optional — the frame works without the app.`,
       },
       {
         title: 'Adjust Display Settings',
@@ -255,7 +255,7 @@ GroupMe also works without the app: people can send and receive messages by regu
     steps: [
       {
         title: 'Download GroupMe and Create an Account',
-        content: 'Search for "GroupMe" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Open it and sign up with your phone number or Microsoft account. You\'ll receive a verification code by text to confirm your number.',
+        content: `Search for "GroupMe" in the App Store (iPhone) or Google Play Store (Android) and install the free app. Open it and sign up with your phone number or Microsoft account. You'll receive a verification code by text to confirm your number.`,
       },
       {
         title: 'Create a New Group',
@@ -264,16 +264,16 @@ GroupMe also works without the app: people can send and receive messages by regu
       },
       {
         title: 'Send and Receive Messages',
-        content: 'Open a group and type in the message bar at the bottom. Tap the send arrow. To share a photo, tap the paperclip or photo icon next to the text bar. Everyone in the group sees the message instantly (or as a text if they don\'t have the app).',
+        content: `Open a group and type in the message bar at the bottom. Tap the send arrow. To share a photo, tap the paperclip or photo icon next to the text bar. Everyone in the group sees the message instantly (or as a text if they don't have the app).`,
       },
       {
         title: 'Add or Remove Members',
-        content: 'Open the group. Tap the group name or avatar at the top. Scroll down to "Members." Tap "Add Members" to add someone new, or tap a member\'s name and choose "Remove from Group" if needed. You must be an admin to remove members.',
+        content: `Open the group. Tap the group name or avatar at the top. Scroll down to "Members." Tap "Add Members" to add someone new, or tap a member's name and choose "Remove from Group" if needed. You must be an admin to remove members.`,
       },
       {
         title: 'Manage Notifications',
-        content: 'If a group gets too chatty, you can mute it. Open the group → tap the name at the top → "Notifications" → choose "Do not disturb" for a set period or indefinitely. You\'ll still see messages when you open the app, but won\'t get constant alerts.',
-        warning: 'Muting a group means you won\'t get alerts for time-sensitive messages. Reserve muting for lower-priority groups.',
+        content: `If a group gets too chatty, you can mute it. Open the group → tap the name at the top → "Notifications" → choose "Do not disturb" for a set period or indefinitely. You'll still see messages when you open the app, but won't get constant alerts.`,
+        warning: `Muting a group means you won't get alerts for time-sensitive messages. Reserve muting for lower-priority groups.`,
       },
     ],
   },
@@ -301,8 +301,8 @@ Setup takes about five minutes: install the extension, start a watch party, and 
     steps: [
       {
         title: 'Install the Teleparty Extension',
-        content: 'On your computer, open the Chrome, Edge, or Firefox browser. Go to teleparty.com → "Get Extension." Click "Add to Chrome" (or your browser) and confirm the installation. You\'ll see the Teleparty icon appear in your browser toolbar.',
-        tip: 'If you\'re inviting family to join, they also need to install the extension on their computers. Send them to teleparty.com to download it — takes under two minutes.',
+        content: `On your computer, open the Chrome, Edge, or Firefox browser. Go to teleparty.com → "Get Extension." Click "Add to Chrome" (or your browser) and confirm the installation. You'll see the Teleparty icon appear in your browser toolbar.`,
+        tip: `If you're inviting family to join, they also need to install the extension on their computers. Send them to teleparty.com to download it — takes under two minutes.`,
       },
       {
         title: 'Open the Show or Movie You Want to Watch',
@@ -314,12 +314,12 @@ Setup takes about five minutes: install the extension, start a watch party, and 
       },
       {
         title: 'Share the Link With Family',
-        content: 'Paste the Teleparty link into a text message, email, or group chat and send it to everyone you want to watch with. When they click the link on their computer (where Teleparty is installed), they\'re automatically joined to your viewing session.',
+        content: `Paste the Teleparty link into a text message, email, or group chat and send it to everyone you want to watch with. When they click the link on their computer (where Teleparty is installed), they're automatically joined to your viewing session.`,
       },
       {
         title: 'Start Watching Together',
-        content: 'Once everyone has joined (you can see their names in the chat panel), press play. Teleparty keeps everyone\'s playback synchronized — if someone pauses, it pauses for everyone. Use the chat on the right to react and comment during the show.',
-        warning: 'Everyone needs their own active subscription to the streaming service. Teleparty is just a sync tool — it doesn\'t share account credentials.',
+        content: `Once everyone has joined (you can see their names in the chat panel), press play. Teleparty keeps everyone's playback synchronized — if someone pauses, it pauses for everyone. Use the chat on the right to react and comment during the show.`,
+        warning: `Everyone needs their own active subscription to the streaming service. Teleparty is just a sync tool — it doesn't share account credentials.`,
       },
     ],
   },
@@ -351,7 +351,7 @@ Each answer includes numbered citations in brackets, like [1] or [2]. Clicking t
       },
       {
         title: 'Type Your Question in Plain Language',
-        content: 'In the search bar at the center of the page, type a question the same way you would say it to a person. For example: "What blood pressure numbers are considered high for a 70-year-old?" You don\'t need special phrasing — natural questions work best.',
+        content: `In the search bar at the center of the page, type a question the same way you would say it to a person. For example: "What blood pressure numbers are considered high for a 70-year-old?" You don't need special phrasing — natural questions work best.`,
         tip: 'Be specific. "What are good exercises for someone with arthritis in the knee?" gets a more useful answer than just "knee exercises."',
       },
       {
@@ -372,7 +372,7 @@ Each answer includes numbered citations in brackets, like [1] or [2]. Clicking t
   {
     slug: 'ai-voice-clone-scam-warning',
     title: 'The AI Voice Clone Scam: How to Protect Yourself',
-    excerpt: 'Scammers now use AI to clone your family member\'s voice and call you pretending to be them in an emergency. Here\'s how to recognize it and protect yourself.',
+    excerpt: `Scammers now use AI to clone your family member's voice and call you pretending to be them in an emergency. Here's how to recognize it and protect yourself.`,
     category: 'safety-guides',
     tags: ['AI scam', 'voice clone', 'scam', 'phone scam', 'deepfake audio'],
     readTime: '6 min',
@@ -393,21 +393,21 @@ You should also always hang up and call back on the family member's real number,
     steps: [
       {
         title: 'Create a Family Code Word',
-        content: 'Choose a random, memorable word or phrase that all your close family members know — something that wouldn\'t come up naturally in conversation, like "pineapple bridge" or "blue Tuesday." Share it with every family member in person or over a private message. Tell them: if anyone ever calls claiming to be family in an emergency, they should use this word to prove it\'s really them.',
+        content: `Choose a random, memorable word or phrase that all your close family members know — something that wouldn't come up naturally in conversation, like "pineapple bridge" or "blue Tuesday." Share it with every family member in person or over a private message. Tell them: if anyone ever calls claiming to be family in an emergency, they should use this word to prove it's really them.`,
         tip: 'Write the code word on a piece of paper and keep it somewhere private at home — not on your phone where a scammer might find it.',
       },
       {
         title: 'Recognize the Red Flags',
-        content: 'Be immediately suspicious of any call that: claims a family member is in sudden danger or legal trouble, demands money urgently via gift cards or wire transfer, asks you to keep the call secret from other family members, won\'t allow you to call back or verify with another person, or says there\'s "no time" for any confirmation.',
+        content: `Be immediately suspicious of any call that: claims a family member is in sudden danger or legal trouble, demands money urgently via gift cards or wire transfer, asks you to keep the call secret from other family members, won't allow you to call back or verify with another person, or says there's "no time" for any confirmation.`,
       },
       {
         title: 'Hang Up and Call Back',
         content: 'If you get a call like this, hang up. Do not stay on the line. Then call your family member directly on their real, saved phone number — not any number the caller gave you. If it was truly an emergency, your family member can confirm. If they answer normally, it was a scam.',
-        warning: 'Scammers will tell you the family member can\'t take calls right now, or that calling will make things worse. Ignore this. Hang up and call back on their real number. Always.',
+        warning: `Scammers will tell you the family member can't take calls right now, or that calling will make things worse. Ignore this. Hang up and call back on their real number. Always.`,
       },
       {
         title: 'Limit Voice Content on Public Social Media',
-        content: 'AI voice cloning only needs a few seconds of audio. Be aware that videos you post publicly on Facebook, TikTok, or YouTube where family members speak can be used to clone their voice. You don\'t have to stop posting, but know that public audio is public. Limiting posts to "Friends" rather than "Public" reduces exposure.',
+        content: `AI voice cloning only needs a few seconds of audio. Be aware that videos you post publicly on Facebook, TikTok, or YouTube where family members speak can be used to clone their voice. You don't have to stop posting, but know that public audio is public. Limiting posts to "Friends" rather than "Public" reduces exposure.`,
       },
       {
         title: 'Report the Scam',
@@ -418,7 +418,7 @@ You should also always hang up and call back on the family member's real number,
   {
     slug: 'unsubscribe-from-email-lists',
     title: 'How to Unsubscribe From Junk Email and Clean Up Your Inbox',
-    excerpt: 'If your inbox is full of newsletters and promotions you never signed up for, here\'s how to unsubscribe and get a handle on the clutter.',
+    excerpt: `If your inbox is full of newsletters and promotions you never signed up for, here's how to unsubscribe and get a handle on the clutter.`,
     category: 'essential-skills',
     tags: ['email', 'unsubscribe', 'inbox', 'spam', 'Gmail', 'Outlook'],
     readTime: '5 min',
@@ -440,31 +440,31 @@ The goal isn't to get to zero emails — it's to get to a state where the emails
       {
         title: 'Find the Unsubscribe Link',
         content: 'Open an unwanted email. Scroll all the way to the very bottom of the email — past the message, past any images. Look for tiny text that says "Unsubscribe," "Manage email preferences," or "Opt out." Click that link. It usually takes you to a confirmation page where you click "Unsubscribe" once more.',
-        tip: 'In Gmail, some emails have an "Unsubscribe" link right next to the sender\'s name at the top — look for it in small text next to "From: [Company Name]." Clicking it is faster than scrolling to the bottom.',
+        tip: `In Gmail, some emails have an "Unsubscribe" link right next to the sender's name at the top — look for it in small text next to "From: [Company Name]." Clicking it is faster than scrolling to the bottom.`,
       },
       {
-        title: 'Use Gmail\'s Unsubscribe Prompt',
-        content: 'Gmail often detects subscription emails and shows an "Unsubscribe" link at the top of the email, right next to the sender\'s name. Click it, then click "Unsubscribe" in the popup. Gmail handles the process for you without having to visit the company\'s website.',
+        title: `Use Gmail's Unsubscribe Prompt`,
+        content: `Gmail often detects subscription emails and shows an "Unsubscribe" link at the top of the email, right next to the sender's name. Click it, then click "Unsubscribe" in the popup. Gmail handles the process for you without having to visit the company's website.`,
       },
       {
-        title: 'Mark True Spam as Spam (Don\'t Unsubscribe)',
-        content: 'If an email comes from a company you\'ve never heard of and never interacted with, don\'t click the unsubscribe link — clicking any link in unknown emails can confirm your address is active and lead to more spam. Instead, select the email and click "Report Spam" or "Mark as Spam." Your email provider learns to filter it.',
+        title: `Mark True Spam as Spam (Don't Unsubscribe)`,
+        content: `If an email comes from a company you've never heard of and never interacted with, don't click the unsubscribe link — clicking any link in unknown emails can confirm your address is active and lead to more spam. Instead, select the email and click "Report Spam" or "Mark as Spam." Your email provider learns to filter it.`,
         warning: 'Never click links in emails that look suspicious or come from completely unknown senders. When in doubt, mark as spam instead of clicking anything.',
       },
       {
         title: 'Use the Promotions Tab in Gmail',
-        content: 'Gmail automatically sorts many marketing and promotional emails into a "Promotions" tab — a separate tab at the top of your inbox. If you don\'t see it, go to the inbox view and click the gear icon → See all settings → Inbox → check "Promotions." This keeps your main inbox for important emails only.',
+        content: `Gmail automatically sorts many marketing and promotional emails into a "Promotions" tab — a separate tab at the top of your inbox. If you don't see it, go to the inbox view and click the gear icon → See all settings → Inbox → check "Promotions." This keeps your main inbox for important emails only.`,
       },
       {
         title: 'Create a Filter for Recurring Senders',
-        content: 'For emails from a sender you want to skip but don\'t want to fully unsubscribe from: In Gmail, open an email → click the three-dot menu → "Filter messages like these" → click "Create filter" → choose "Skip the Inbox (Archive it)" or "Delete it." Future emails from that sender go straight to Archive or Trash.',
+        content: `For emails from a sender you want to skip but don't want to fully unsubscribe from: In Gmail, open an email → click the three-dot menu → "Filter messages like these" → click "Create filter" → choose "Skip the Inbox (Archive it)" or "Delete it." Future emails from that sender go straight to Archive or Trash.`,
       },
     ],
   },
   {
     slug: 'organize-email-folders-labels',
     title: 'How to Organize Your Email With Folders and Labels',
-    excerpt: 'Keeping your inbox manageable is much easier when you create folders or labels to sort emails — here\'s how to do it in Gmail and Outlook.',
+    excerpt: `Keeping your inbox manageable is much easier when you create folders or labels to sort emails — here's how to do it in Gmail and Outlook.`,
     category: 'essential-skills',
     tags: ['email', 'Gmail', 'Outlook', 'folders', 'labels', 'organize'],
     readTime: '5 min',
@@ -498,19 +498,19 @@ Getting organized takes a bit of upfront effort, but once the system is in place
       },
       {
         title: 'Use Archive to Clear Your Inbox Fast',
-        content: 'For emails you\'re done with but might need later: select them and press "E" in Gmail (Archive shortcut), or click the Archive button. In Outlook, press Backspace or click the Archive button. Archived emails are gone from the inbox but fully searchable if you need them later.',
-        tip: 'In Gmail, pressing "E" on your keyboard instantly archives an open email. Working through a backlog is faster when you just tap E repeatedly for emails you\'ve read and are done with.',
+        content: `For emails you're done with but might need later: select them and press "E" in Gmail (Archive shortcut), or click the Archive button. In Outlook, press Backspace or click the Archive button. Archived emails are gone from the inbox but fully searchable if you need them later.`,
+        tip: `In Gmail, pressing "E" on your keyboard instantly archives an open email. Working through a backlog is faster when you just tap E repeatedly for emails you've read and are done with.`,
       },
       {
         title: 'Search to Find Archived Emails',
-        content: 'To find an archived email: use the search bar at the top of Gmail or Outlook. Search by the sender\'s name, a keyword from the subject, or a date range. Search finds emails in all folders, labels, and archives — it doesn\'t matter where the email was filed.',
+        content: `To find an archived email: use the search bar at the top of Gmail or Outlook. Search by the sender's name, a keyword from the subject, or a date range. Search finds emails in all folders, labels, and archives — it doesn't matter where the email was filed.`,
       },
     ],
   },
   {
     slug: 'iphone-photo-slideshow',
     title: 'How to Create a Photo Slideshow on Your iPhone',
-    excerpt: 'Your iPhone automatically creates Memories slideshows from your photos — and you can also make your own to share with family. Here\'s how both work.',
+    excerpt: `Your iPhone automatically creates Memories slideshows from your photos — and you can also make your own to share with family. Here's how both work.`,
     category: 'phone-guides',
     tags: ['iPhone', 'photos', 'slideshow', 'Memories', 'family photos'],
     readTime: '5 min',
@@ -556,7 +556,7 @@ These features use AI that runs entirely on your phone — Apple doesn't upload 
   {
     slug: 'medicare-drug-price-lookup',
     title: 'How to Look Up Drug Prices on Medicare.gov',
-    excerpt: 'Medicare.gov has a free tool that lets you compare what different Part D plans would charge for your specific medications. Here\'s how to use it.',
+    excerpt: `Medicare.gov has a free tool that lets you compare what different Part D plans would charge for your specific medications. Here's how to use it.`,
     category: 'health-tech',
     tags: ['Medicare', 'Part D', 'drug prices', 'prescription', 'Medicare.gov'],
     readTime: '6 min',
@@ -577,16 +577,16 @@ Pharmacies matter too — the tool asks which pharmacy you use. The same plan mi
     steps: [
       {
         title: 'Gather Your Medication List First',
-        content: 'Write down all prescription medications you currently take, including the exact name (generic or brand), dosage, and how often you take them (e.g., "metformin 500mg twice daily"). You\'ll enter this information into the Medicare Plan Finder. Your pharmacy or doctor can give you a printed medication list if you need help.',
+        content: `Write down all prescription medications you currently take, including the exact name (generic or brand), dosage, and how often you take them (e.g., "metformin 500mg twice daily"). You'll enter this information into the Medicare Plan Finder. Your pharmacy or doctor can give you a printed medication list if you need help.`,
       },
       {
         title: 'Go to the Medicare Plan Finder',
-        content: 'In a web browser, go to medicare.gov/plan-compare. You can use it without signing in. Enter your zip code when prompted. Choose "Drug plan (Part D)" — not Advantage plan — unless you\'re looking at Medicare Advantage plans that include drug coverage.',
+        content: `In a web browser, go to medicare.gov/plan-compare. You can use it without signing in. Enter your zip code when prompted. Choose "Drug plan (Part D)" — not Advantage plan — unless you're looking at Medicare Advantage plans that include drug coverage.`,
       },
       {
         title: 'Enter Your Medications',
         content: 'Click "Add Drugs." Type the name of each medication in the search box — the tool suggests drug names as you type. Select the correct medication, then select the strength and form (tablet, capsule, liquid, etc.). Enter how many pills you take per month and click "Add drug." Repeat for each medication.',
-        tip: 'Include all prescription medications, even ones you take rarely or only when needed. Costs can vary widely based on what\'s on each plan\'s formulary.',
+        tip: `Include all prescription medications, even ones you take rarely or only when needed. Costs can vary widely based on what's on each plan's formulary.`,
       },
       {
         title: 'Enter Your Pharmacy',
@@ -595,7 +595,7 @@ Pharmacies matter too — the tool asks which pharmacy you use. The same plan mi
       {
         title: 'Compare Plans and Enroll',
         content: 'The tool shows available Part D plans ranked by estimated yearly cost — your total cost including premiums, deductibles, and drug costs for your specific medication list. Look at "Total estimated annual drug cost" to compare. Click any plan for details. To enroll, click "Enroll" on the plan page, or call 1-800-MEDICARE (1-800-633-4227).',
-        warning: 'Only switch plans during Open Enrollment (October 15 – December 7) or a Special Enrollment Period. Switching outside those windows generally isn\'t allowed except for specific qualifying events.',
+        warning: `Only switch plans during Open Enrollment (October 15 – December 7) or a Special Enrollment Period. Switching outside those windows generally isn't allowed except for specific qualifying events.`,
       },
     ],
   },
@@ -623,11 +623,11 @@ Vanguard's app is separate from your employer's 401(k) portal if your employer u
     steps: [
       {
         title: 'Download the Vanguard App',
-        content: 'Search for "Vanguard" in the App Store (iPhone) or Google Play (Android). Download the free "Vanguard Investments" app — published by The Vanguard Group. Open it once it\'s installed.',
+        content: `Search for "Vanguard" in the App Store (iPhone) or Google Play (Android). Download the free "Vanguard Investments" app — published by The Vanguard Group. Open it once it's installed.`,
       },
       {
         title: 'Log In to Your Account',
-        content: 'Tap "Log in." Enter your Vanguard username and password — these are the same credentials you use at vanguard.com. If you don\'t have a Vanguard online account yet, tap "Register" to create one. You\'ll need your Vanguard account number (found on any statement) to register.',
+        content: `Tap "Log in." Enter your Vanguard username and password — these are the same credentials you use at vanguard.com. If you don't have a Vanguard online account yet, tap "Register" to create one. You'll need your Vanguard account number (found on any statement) to register.`,
         tip: 'Enable Face ID or fingerprint login in the app settings for faster, more secure access after the first login.',
       },
       {
@@ -648,7 +648,7 @@ Vanguard's app is separate from your employer's 401(k) portal if your employer u
   {
     slug: 'iphone-driving-mode-setup',
     title: 'How to Set Up iPhone Driving Focus to Avoid Distractions While Driving',
-    excerpt: 'iPhone\'s Driving Focus automatically silences notifications when you\'re in a car — so you can drive without your phone lighting up every few minutes.',
+    excerpt: `iPhone's Driving Focus automatically silences notifications when you're in a car — so you can drive without your phone lighting up every few minutes.`,
     category: 'phone-guides',
     tags: ['iPhone', 'Driving Focus', 'distracted driving', 'safety', 'Focus mode'],
     readTime: '4 min',
@@ -667,17 +667,17 @@ Setting up Driving Focus takes about two minutes. Once configured, it works auto
     steps: [
       {
         title: 'Open Focus Settings',
-        content: 'Go to Settings → Focus. You\'ll see a list of Focus modes including "Driving." Tap "Driving" to configure it. If you don\'t see Driving listed, tap the "+" button and select Driving from the list.',
+        content: `Go to Settings → Focus. You'll see a list of Focus modes including "Driving." Tap "Driving" to configure it. If you don't see Driving listed, tap the "+" button and select Driving from the list.`,
       },
       {
         title: 'Set It to Turn On Automatically',
         content: 'Under "Turn On Automatically," tap "Automatically." Choose your preference: "When Connected to Car Bluetooth" (activates when paired to your car), "When Activated by CarPlay" (if you use CarPlay), or "Automatically" (iPhone detects motion/speed and enables it). Choose whatever matches your driving setup.',
-        tip: 'If you don\'t have Bluetooth in your car, choose "Automatically" — iPhone will detect motion and speed via GPS.',
+        tip: `If you don't have Bluetooth in your car, choose "Automatically" — iPhone will detect motion and speed via GPS.`,
       },
       {
         title: 'Set Up Auto-Reply',
-        content: 'Scroll down to "Auto-Reply." Tap "Auto-Reply To" and choose who gets the automatic reply: No One, Recents, Favorites, or All Contacts. Tap "Auto-Reply" to customize the message text — the default says "I\'m driving with Focus turned on. I\'ll see your message when I get where I\'m going." You can edit it.',
-        tip: 'Choose "Favorites" so close family members get the auto-reply but you\'re not sending it to every spam text or unknown number.',
+        content: `Scroll down to "Auto-Reply." Tap "Auto-Reply To" and choose who gets the automatic reply: No One, Recents, Favorites, or All Contacts. Tap "Auto-Reply" to customize the message text — the default says "I'm driving with Focus turned on. I'll see your message when I get where I'm going." You can edit it.`,
+        tip: `Choose "Favorites" so close family members get the auto-reply but you're not sending it to every spam text or unknown number.`,
       },
       {
         title: 'Customize Allowed Notifications',
@@ -691,7 +691,7 @@ Setting up Driving Focus takes about two minutes. Once configured, it works auto
   },
   {
     slug: 'android-driving-mode',
-    title: 'How to Enable Android\'s Driving Mode to Stay Focused Behind the Wheel',
+    title: `How to Enable Android's Driving Mode to Stay Focused Behind the Wheel`,
     excerpt: 'Android phones have built-in options to reduce distractions while driving — including Do Not Disturb while driving and Google Assistant driving mode.',
     category: 'phone-guides',
     tags: ['Android', 'driving mode', 'distracted driving', 'Do Not Disturb', 'Google Assistant'],
@@ -714,11 +714,11 @@ If you use Android Auto (connecting your phone to your car's screen), that inter
       {
         title: 'Turn On Do Not Disturb While Driving',
         content: 'Go to Settings → Sound (or Notifications) → Do Not Disturb → turn it on. Look for "Schedules" or "Turn on automatically." Select "Driving" or "While driving." On Google Pixel phones: Settings → Digital Wellbeing → Do Not Disturb → Driving. This activates DND automatically when motion is detected.',
-        tip: 'The exact location of this setting varies by phone brand. If you can\'t find it, search "Driving" in your phone\'s Settings search bar.',
+        tip: `The exact location of this setting varies by phone brand. If you can't find it, search "Driving" in your phone's Settings search bar.`,
       },
       {
         title: 'Configure Exceptions for Important Calls',
-        content: 'While in Do Not Disturb settings, find "Exceptions" or "Allow calls from." Set it to "Starred contacts" or "Favorites" — people you\'ve marked as important in your Contacts app. This lets urgent calls from close family break through the silence while everything else is muted.',
+        content: `While in Do Not Disturb settings, find "Exceptions" or "Allow calls from." Set it to "Starred contacts" or "Favorites" — people you've marked as important in your Contacts app. This lets urgent calls from close family break through the silence while everything else is muted.`,
       },
       {
         title: 'Enable Google Assistant Driving Mode in Google Maps',
@@ -730,14 +730,14 @@ If you use Android Auto (connecting your phone to your car's screen), that inter
       },
       {
         title: 'Turn Off When Not Driving',
-        content: 'Driving mode deactivates automatically when your phone detects you\'ve stopped. If it stays on after parking, swipe down to open Quick Settings and tap the Do Not Disturb icon to turn it off manually. Or just wait — most phones detect when you\'ve been stationary for a few minutes and deactivate automatically.',
+        content: `Driving mode deactivates automatically when your phone detects you've stopped. If it stays on after parking, swipe down to open Quick Settings and tap the Do Not Disturb icon to turn it off manually. Or just wait — most phones detect when you've been stationary for a few minutes and deactivate automatically.`,
       },
     ],
   },
   {
     slug: 'deepfake-photo-video-detection',
     title: 'How to Spot AI-Generated Images and Deepfake Videos',
-    excerpt: 'AI can now create realistic fake photos and videos of people saying or doing things they never did. Here\'s how to tell what\'s real from what\'s artificial.',
+    excerpt: `AI can now create realistic fake photos and videos of people saying or doing things they never did. Here's how to tell what's real from what's artificial.`,
     category: 'safety-guides',
     tags: ['deepfake', 'AI images', 'misinformation', 'scam', 'verification'],
     readTime: '6 min',
@@ -761,7 +761,7 @@ The best habit is a brief pause before sharing anything shocking or outrageous: 
       {
         title: 'Check the Fine Details in Photos',
         content: 'Zoom in on any suspicious photo. Check: Are the hands normal? (AI often gets fingers wrong — six fingers, fused joints, or impossible angles.) Is background text readable? (AI-generated text in images is usually garbled.) Do shadows fall in consistent directions? Do reflections in eyes or glasses look natural?',
-        tip: 'Faces are what AI gets right — hands and text are where it struggles. If the face looks perfect but the hands look strange, that\'s a strong signal.',
+        tip: `Faces are what AI gets right — hands and text are where it struggles. If the face looks perfect but the hands look strange, that's a strong signal.`,
       },
       {
         title: 'Reverse Image Search the Photo',
@@ -773,12 +773,12 @@ The best habit is a brief pause before sharing anything shocking or outrageous: 
       },
       {
         title: 'Look for Deepfake Signs in Videos',
-        content: 'Watch for: blinking that\'s too infrequent or too fast, facial expressions that don\'t match the emotion in the voice, mouth movements that are slightly out of sync with audio, smooth or waxy-looking skin texture, and inconsistent lighting on the face versus the background.',
-        warning: 'These signs aren\'t foolproof — high-quality deepfakes may not show obvious flaws. When a video shows someone doing or saying something potentially damaging, treat it as unverified until confirmed by multiple credible sources.',
+        content: `Watch for: blinking that's too infrequent or too fast, facial expressions that don't match the emotion in the voice, mouth movements that are slightly out of sync with audio, smooth or waxy-looking skin texture, and inconsistent lighting on the face versus the background.`,
+        warning: `These signs aren't foolproof — high-quality deepfakes may not show obvious flaws. When a video shows someone doing or saying something potentially damaging, treat it as unverified until confirmed by multiple credible sources.`,
       },
       {
         title: 'Use Detection Tools for Important Verification',
-        content: 'Free tools can help with important verifications: Hive Moderation (hivemoderation.com), Google\'s About This Image (right-click an image in Chrome → "About this image"), and InVID/WeVerify browser extension for video analysis. These tools aren\'t perfect but can flag likely AI-generated content. For critical claims, defer to fact-checking organizations like Snopes, PolitiFact, or AP Fact Check.',
+        content: `Free tools can help with important verifications: Hive Moderation (hivemoderation.com), Google's About This Image (right-click an image in Chrome → "About this image"), and InVID/WeVerify browser extension for video analysis. These tools aren't perfect but can flag likely AI-generated content. For critical claims, defer to fact-checking organizations like Snopes, PolitiFact, or AP Fact Check.`,
       },
     ],
   },
@@ -819,12 +819,12 @@ The remote also controls playback: single click the clickpad to pause/play. Clic
       },
       {
         title: 'Use Siri for Voice Control',
-        content: 'Press and hold the Siri button (circle with microphone). Speak your request. You can ask Siri to: open specific apps ("Open Netflix"), search for content ("Find comedies from the 1980s"), control playback ("Skip ahead 5 minutes"), answer questions about what you\'re watching ("Who plays the main character?"), or enable captions ("Turn on subtitles").',
+        content: `Press and hold the Siri button (circle with microphone). Speak your request. You can ask Siri to: open specific apps ("Open Netflix"), search for content ("Find comedies from the 1980s"), control playback ("Skip ahead 5 minutes"), answer questions about what you're watching ("Who plays the main character?"), or enable captions ("Turn on subtitles").`,
         tip: '"What did she say?" asks Siri to rewind 15 seconds and turn on captions temporarily — helpful when dialogue is hard to hear.',
       },
       {
         title: 'Control TV Volume and Power',
-        content: 'Use the Volume Up (+) and Volume Down (-) buttons on the right edge of the remote to control your TV\'s volume — this works through HDMI-CEC. You can also press and hold the Home button → Sleep to put Apple TV to sleep. The remote\'s power button (circle with line) controls the TV directly.',
+        content: `Use the Volume Up (+) and Volume Down (-) buttons on the right edge of the remote to control your TV's volume — this works through HDMI-CEC. You can also press and hold the Home button → Sleep to put Apple TV to sleep. The remote's power button (circle with line) controls the TV directly.`,
       },
     ],
   },
@@ -898,12 +898,12 @@ Focus Sessions is particularly helpful if you work from home and get easily pull
     steps: [
       {
         title: 'Open the Clock App',
-        content: 'Click the Start menu (Windows button) and search for "Clock." Open the Clock app. Along the left side, click "Focus Sessions" (the icon looks like a timer or target). If you don\'t see it, make sure Windows is updated — Focus Sessions was added in Windows 11.',
+        content: `Click the Start menu (Windows button) and search for "Clock." Open the Clock app. Along the left side, click "Focus Sessions" (the icon looks like a timer or target). If you don't see it, make sure Windows is updated — Focus Sessions was added in Windows 11.`,
       },
       {
         title: 'Set Your Session Length',
         content: 'The large dial in the center lets you set how long you want to focus. Click the "+" and "-" buttons or drag the dial. The default is 25 minutes. For longer tasks, try 45 minutes or an hour. For tasks you keep avoiding, a short 10-minute session can be enough to get started.',
-        tip: 'Start with 25 minutes if you\'re new to timed focus work. The goal is to maintain concentration for the full duration without switching tasks.',
+        tip: `Start with 25 minutes if you're new to timed focus work. The goal is to maintain concentration for the full duration without switching tasks.`,
       },
       {
         title: 'Set Up Do Not Disturb',
@@ -911,11 +911,11 @@ Focus Sessions is particularly helpful if you work from home and get easily pull
       },
       {
         title: 'Link to Microsoft To Do (Optional)',
-        content: 'Click "Get started" or the To Do integration button. Sign in with a Microsoft account to connect Microsoft To Do. Your task list then appears alongside the Focus timer — you can select a specific task to focus on, helping you stay intentional about what you\'re working on.',
+        content: `Click "Get started" or the To Do integration button. Sign in with a Microsoft account to connect Microsoft To Do. Your task list then appears alongside the Focus timer — you can select a specific task to focus on, helping you stay intentional about what you're working on.`,
       },
       {
         title: 'Start and Use a Session',
-        content: 'Click "Start focus session." The timer counts down. Windows enters Do Not Disturb mode — you won\'t see pop-up notifications. Work on your chosen task until the timer ends. When it finishes, a tone plays and a break timer starts (5 minutes by default). After the break, start the next session.',
+        content: `Click "Start focus session." The timer counts down. Windows enters Do Not Disturb mode — you won't see pop-up notifications. Work on your chosen task until the timer ends. When it finishes, a tone plays and a break timer starts (5 minutes by default). After the break, start the next session.`,
         tip: 'You can pause a session mid-way by clicking Pause — useful if a genuine interruption arises. Click Resume to continue from where you paused.',
       },
     ],

@@ -4,7 +4,7 @@ export const guidesBatch29: Guide[] = [
   {
     slug: 'android-battery-health-guide',
     title: 'How to Check and Improve Your Android Battery Health',
-    excerpt: 'Android phones give you detailed battery health information — here\'s how to find it, understand what the numbers mean, and extend your battery life.',
+    excerpt: `Android phones give you detailed battery health information — here's how to find it, understand what the numbers mean, and extend your battery life.`,
     category: 'phone-guides',
     tags: ['Android', 'battery', 'battery health', 'battery life', 'Samsung', 'Google Pixel'],
     readTime: '5 min',
@@ -26,7 +26,7 @@ When the battery degrades significantly, most Android phones can have the batter
       {
         title: 'Check Battery Health on Samsung Galaxy',
         content: 'Open the Samsung Members app (search for it in the Galaxy Store or Google Play). Tap "Support" → "Phone diagnostics." Tap "Battery" or "Battery status." The app shows your battery health percentage and capacity. You can also go to Settings → Battery and device care → Battery, which shows usage patterns and charging optimization options.',
-        tip: 'If you don\'t have Samsung Members installed, search for it in the Galaxy Store app, not Google Play.',
+        tip: `If you don't have Samsung Members installed, search for it in the Galaxy Store app, not Google Play.`,
       },
       {
         title: 'Check Battery Health on Google Pixel',
@@ -34,7 +34,7 @@ When the battery degrades significantly, most Android phones can have the batter
       },
       {
         title: 'Use AccuBattery for Detailed Tracking (Any Android)',
-        content: 'Download AccuBattery free from Google Play. Open it and tap "Health." The app monitors each charge cycle and estimates battery wear over time. It\'s most accurate after several charge cycles have been recorded — give it a week of normal use to build a baseline.',
+        content: `Download AccuBattery free from Google Play. Open it and tap "Health." The app monitors each charge cycle and estimates battery wear over time. It's most accurate after several charge cycles have been recorded — give it a week of normal use to build a baseline.`,
       },
       {
         title: 'Turn On Battery Optimization',
@@ -43,14 +43,14 @@ When the battery degrades significantly, most Android phones can have the batter
       },
       {
         title: 'When to Replace the Battery',
-        content: 'If battery health is below 80% and you\'re consistently running out of power by mid-day, replacement is worth considering. Contact your phone manufacturer\'s service center, visit Best Buy Geek Squad, or find a local phone repair shop. Get a quote — for older phones, a new battery often costs less than a new phone and extends device life by 1-2 years.',
+        content: `If battery health is below 80% and you're consistently running out of power by mid-day, replacement is worth considering. Contact your phone manufacturer's service center, visit Best Buy Geek Squad, or find a local phone repair shop. Get a quote — for older phones, a new battery often costs less than a new phone and extends device life by 1-2 years.`,
       },
     ],
   },
   {
     slug: 'slow-phone-fix-guide',
     title: 'Why Is My Phone So Slow? How to Speed It Up',
-    excerpt: 'A slow phone is usually caused by a few fixable things — storage that\'s nearly full, too many background apps, or an outdated operating system. Here\'s how to fix each one.',
+    excerpt: `A slow phone is usually caused by a few fixable things — storage that's nearly full, too many background apps, or an outdated operating system. Here's how to fix each one.`,
     category: 'essential-skills',
     tags: ['slow phone', 'phone performance', 'speed up phone', 'iPhone', 'Android'],
     readTime: '6 min',
@@ -71,7 +71,7 @@ The good news: most phone slowdowns are caused by these fixable issues, not hard
     steps: [
       {
         title: 'Free Up Storage Space First',
-        content: 'iPhone: Settings → General → iPhone Storage. Android: Settings → Storage. Check how much space is used. If you\'re over 85% full, that\'s your primary problem. Delete unused apps (tap the app name to get the delete option), clear large video files, and offload old photos to iCloud or Google Photos.',
+        content: `iPhone: Settings → General → iPhone Storage. Android: Settings → Storage. Check how much space is used. If you're over 85% full, that's your primary problem. Delete unused apps (tap the app name to get the delete option), clear large video files, and offload old photos to iCloud or Google Photos.`,
         tip: 'On iPhone, "Offload Unused Apps" automatically removes apps you rarely use while keeping their data — go to Settings → App Store → Offload Unused Apps to enable this.',
       },
       {
@@ -96,7 +96,7 @@ The good news: most phone slowdowns are caused by these fixable issues, not hard
   {
     slug: 'iphone-emergency-sos-satellite',
     title: 'How to Use iPhone Emergency SOS via Satellite',
-    excerpt: 'iPhone 14 and newer models can send emergency texts via satellite when you\'re out of cell range — no Wi-Fi or cell signal needed. Here\'s how it works.',
+    excerpt: `iPhone 14 and newer models can send emergency texts via satellite when you're out of cell range — no Wi-Fi or cell signal needed. Here's how it works.`,
     category: 'phone-guides',
     tags: ['iPhone', 'Emergency SOS', 'satellite', 'emergency', 'safety', 'outdoor'],
     readTime: '5 min',
@@ -115,11 +115,11 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
     steps: [
       {
         title: 'Check If Your iPhone Supports It',
-        content: 'This feature requires iPhone 14 or newer (iPhone 14, 14 Plus, 14 Pro, 14 Pro Max, and all newer models). Go to Settings → Emergency SOS to confirm "Call via satellite" is listed and available. If you see it, your phone supports the feature. It\'s on by default.',
+        content: `This feature requires iPhone 14 or newer (iPhone 14, 14 Plus, 14 Pro, 14 Pro Max, and all newer models). Go to Settings → Emergency SOS to confirm "Call via satellite" is listed and available. If you see it, your phone supports the feature. It's on by default.`,
       },
       {
         title: 'How to Trigger Emergency SOS',
-        content: 'The same way you always would: hold the side button + volume button simultaneously until the Emergency SOS slider appears, then slide it. Or rapidly press the side button five times. When there\'s no cell service, the iPhone automatically attempts satellite connection after a short delay.',
+        content: `The same way you always would: hold the side button + volume button simultaneously until the Emergency SOS slider appears, then slide it. Or rapidly press the side button five times. When there's no cell service, the iPhone automatically attempts satellite connection after a short delay.`,
       },
       {
         title: 'Follow the On-Screen Satellite Positioning Guide',
@@ -133,14 +133,14 @@ Setup requires nothing — the feature is on by default on compatible iPhones. Y
       {
         title: 'Practice the Demo Mode',
         content: 'You can experience the satellite interface without actually calling for help. Go to Settings → Emergency SOS → Try Demo. The demo walks you through the entire satellite connection process including the positioning screen, so you know exactly what to expect if you ever need it in a real emergency.',
-        warning: 'This feature requires an open view of the sky — it does not work inside buildings or in areas with dense overhead cover. If you\'re in an emergency inside a structure, try to reach a window or exit before attempting satellite SOS.',
+        warning: `This feature requires an open view of the sky — it does not work inside buildings or in areas with dense overhead cover. If you're in an emergency inside a structure, try to reach a window or exit before attempting satellite SOS.`,
       },
     ],
   },
   {
     slug: 'medical-id-android-setup',
     title: 'How to Set Up a Medical ID on Android',
-    excerpt: 'A Medical ID stores your critical health information on your phone\'s lock screen — so emergency responders can access it even if your phone is locked.',
+    excerpt: `A Medical ID stores your critical health information on your phone's lock screen — so emergency responders can access it even if your phone is locked.`,
     category: 'health-tech',
     tags: ['Android', 'Medical ID', 'emergency', 'health', 'Samsung', 'safety'],
     readTime: '4 min',
@@ -161,7 +161,7 @@ Setting this up takes less than five minutes and could make a life-saving differ
     steps: [
       {
         title: 'Find Emergency Information Settings (All Android)',
-        content: 'Go to your phone\'s Settings. Search for "Emergency" or "Medical ID." The most common paths: Settings → Safety & emergency → Medical information (Pixel phones), Settings → About phone → Emergency information (some Samsung), or Samsung Health app → Profile → Medical information. Tap whatever result appears.',
+        content: `Go to your phone's Settings. Search for "Emergency" or "Medical ID." The most common paths: Settings → Safety & emergency → Medical information (Pixel phones), Settings → About phone → Emergency information (some Samsung), or Samsung Health app → Profile → Medical information. Tap whatever result appears.`,
       },
       {
         title: 'Set Up on Samsung Galaxy (Detailed Steps)',
@@ -174,10 +174,10 @@ Setting this up takes less than five minutes and could make a life-saving differ
       {
         title: 'Add Emergency Contacts',
         content: 'In the same Emergency information section, tap "Emergency contacts" or "Add contact." Select from your Contacts app. Add at least two people who know your medical history — a spouse, adult child, or close family member. Their phone number appears on your lock screen under "Emergency" without needing to unlock the phone.',
-        tip: 'Tell your emergency contacts that they\'re listed on your phone so they know to expect a call if something happens.',
+        tip: `Tell your emergency contacts that they're listed on your phone so they know to expect a call if something happens.`,
       },
       {
-        title: 'Verify It\'s Accessible From Lock Screen',
+        title: `Verify It's Accessible From Lock Screen`,
         content: 'Lock your phone. On the lock screen, look for an "Emergency" button (usually at the bottom left or bottom center). Tap it. You should see an "Emergency information" or "View medical info" option. Tap it to confirm your information appears. This is what paramedics will see.',
       },
     ],
@@ -185,7 +185,7 @@ Setting this up takes less than five minutes and could make a life-saving differ
   {
     slug: 'delete-alexa-voice-history',
     title: 'How to Review and Delete Your Alexa Voice History',
-    excerpt: 'Amazon saves recordings of your Alexa voice commands. Here\'s how to review what\'s been recorded, delete it, and change your privacy settings.',
+    excerpt: `Amazon saves recordings of your Alexa voice commands. Here's how to review what's been recorded, delete it, and change your privacy settings.`,
     category: 'safety-guides',
     tags: ['Alexa', 'privacy', 'voice history', 'Amazon Echo', 'voice recordings'],
     readTime: '5 min',
@@ -206,11 +206,11 @@ Some people choose to mute their Echo devices when they're having private conver
     steps: [
       {
         title: 'Open the Alexa App and Go to Privacy Settings',
-        content: 'Open the Alexa app on your phone. Tap "More" (three lines) in the bottom right. Tap "Settings" → "Alexa Privacy." You\'ll see options for "Review Voice History," "Manage Your Alexa Data," and "Manage Skill Permissions."',
+        content: `Open the Alexa app on your phone. Tap "More" (three lines) in the bottom right. Tap "Settings" → "Alexa Privacy." You'll see options for "Review Voice History," "Manage Your Alexa Data," and "Manage Skill Permissions."`,
       },
       {
         title: 'Review Voice History',
-        content: 'Tap "Review Voice History." You\'ll see a timeline of voice interactions. Tap any entry to listen to the actual recording. You\'ll see entries labeled "Voice recording" (successfully captured), "Text not available," or the text of what Alexa understood.',
+        content: `Tap "Review Voice History." You'll see a timeline of voice interactions. Tap any entry to listen to the actual recording. You'll see entries labeled "Voice recording" (successfully captured), "Text not available," or the text of what Alexa understood.`,
         tip: 'Filter by device and date range using the filter options at the top. Look for any recordings that sound like private conversations — those may have been accidental activations.',
       },
       {
@@ -219,20 +219,20 @@ Some people choose to mute their Echo devices when they're having private conver
       },
       {
         title: 'Change How Long Recordings Are Kept',
-        content: 'Go back to "Alexa Privacy" → "Manage Your Alexa Data" → "Voice Recordings." Choose: "Don\'t save recordings" (Alexa still works but nothing is stored), "Save recordings" with automatic deletion after 3 months or 18 months. Tap "Confirm" to save your choice.',
-        tip: 'Setting auto-deletion to 3 months is a good balance — Alexa still learns your preferences during that window, but recordings don\'t accumulate indefinitely.',
+        content: `Go back to "Alexa Privacy" → "Manage Your Alexa Data" → "Voice Recordings." Choose: "Don't save recordings" (Alexa still works but nothing is stored), "Save recordings" with automatic deletion after 3 months or 18 months. Tap "Confirm" to save your choice.`,
+        tip: `Setting auto-deletion to 3 months is a good balance — Alexa still learns your preferences during that window, but recordings don't accumulate indefinitely.`,
       },
       {
         title: 'Use the Mute Button for Sensitive Conversations',
         content: 'On your Echo device, press the top button with a circle and line (the microphone mute button). A red ring lights up, confirming the microphone is off. Alexa cannot hear anything while muted. Press the same button again to unmute. This is the simplest way to ensure privacy during phone calls, medical discussions, or other conversations you want to keep private.',
-        warning: 'While muted, Alexa cannot hear your commands at all — you\'ll need to manually press the button to unmute before giving any commands.',
+        warning: `While muted, Alexa cannot hear your commands at all — you'll need to manually press the button to unmute before giving any commands.`,
       },
     ],
   },
   {
     slug: 'text-to-911-guide',
     title: 'Can You Text 911? How and When to Use Text-to-911',
-    excerpt: 'In most of the US, you can text 911 if you can\'t safely make a voice call. Here\'s how it works, when to use it, and its limitations.',
+    excerpt: `In most of the US, you can text 911 if you can't safely make a voice call. Here's how it works, when to use it, and its limitations.`,
     category: 'safety-guides',
     tags: ['911', 'text 911', 'emergency', 'safety', 'hearing impaired'],
     readTime: '4 min',
@@ -257,15 +257,15 @@ The FCC recommends calling 911 when possible and texting only when calling is no
       },
       {
         title: 'When to Use Text vs. Call',
-        content: 'Use text when: you\'re in a situation where speaking is dangerous (hiding from an intruder), you\'re hearing impaired or have a speech impediment, you\'re in an area with poor voice coverage but data signal, or you can only type (throat injury, etc.). Always call if you can — voice calls allow back-and-forth faster.',
+        content: `Use text when: you're in a situation where speaking is dangerous (hiding from an intruder), you're hearing impaired or have a speech impediment, you're in an area with poor voice coverage but data signal, or you can only type (throat injury, etc.). Always call if you can — voice calls allow back-and-forth faster.`,
       },
       {
         title: 'How to Send a Text to 911',
-        content: 'Open your phone\'s regular messaging app (the same one you use for texts). Create a new message. In the "To" field, type: 911. Do NOT type any other number or format — just 911. Begin typing your message.',
+        content: `Open your phone's regular messaging app (the same one you use for texts). Create a new message. In the "To" field, type: 911. Do NOT type any other number or format — just 911. Begin typing your message.`,
       },
       {
         title: 'What to Include in Your First Message',
-        content: 'Your first text must include your location and the type of emergency. Example: "1234 Oak Street Springfield, car crash, 2 injured, need ambulance." Include as much detail in that first message as possible — cross streets if you don\'t know the exact address, a landmark ("across from CVS on Main Street"), and what happened.',
+        content: `Your first text must include your location and the type of emergency. Example: "1234 Oak Street Springfield, car crash, 2 injured, need ambulance." Include as much detail in that first message as possible — cross streets if you don't know the exact address, a landmark ("across from CVS on Main Street"), and what happened.`,
         tip: 'Keep your first message under 160 characters to ensure it sends as a single text rather than a split multi-part message.',
       },
       {
@@ -278,7 +278,7 @@ The FCC recommends calling 911 when possible and texting only when calling is no
   {
     slug: 'chatgpt-voice-mode-guide',
     title: 'How to Talk to ChatGPT Using Voice Mode',
-    excerpt: 'ChatGPT\'s Voice Mode lets you have a spoken conversation with AI — great for hands-free use, practicing conversations, or when typing is inconvenient.',
+    excerpt: `ChatGPT's Voice Mode lets you have a spoken conversation with AI — great for hands-free use, practicing conversations, or when typing is inconvenient.`,
     category: 'ai-guides',
     tags: ['ChatGPT', 'voice mode', 'AI', 'conversation', 'OpenAI'],
     readTime: '5 min',
@@ -303,12 +303,12 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
       },
       {
         title: 'Start a Voice Conversation',
-        content: 'In the ChatGPT app, tap the headphone icon or the sound wave icon at the bottom of the chat screen. (The exact icon may differ slightly by app version.) The screen transitions to a voice mode interface. Speak your question or comment when the indicator shows it\'s listening.',
-        tip: 'The app needs microphone permission — if it asks, tap "Allow." Without microphone access, voice mode can\'t hear you.',
+        content: `In the ChatGPT app, tap the headphone icon or the sound wave icon at the bottom of the chat screen. (The exact icon may differ slightly by app version.) The screen transitions to a voice mode interface. Speak your question or comment when the indicator shows it's listening.`,
+        tip: `The app needs microphone permission — if it asks, tap "Allow." Without microphone access, voice mode can't hear you.`,
       },
       {
         title: 'Have a Natural Conversation',
-        content: 'ChatGPT responds out loud. You can let it finish, or interrupt by speaking — it detects that you\'ve started talking and pauses. Ask follow-ups naturally: "Can you explain that more?" or "What about..." Continue as long as you want. The conversation is also transcribed as text so you can scroll back and read the exchange.',
+        content: `ChatGPT responds out loud. You can let it finish, or interrupt by speaking — it detects that you've started talking and pauses. Ask follow-ups naturally: "Can you explain that more?" or "What about..." Continue as long as you want. The conversation is also transcribed as text so you can scroll back and read the exchange.`,
       },
       {
         title: 'Change the Voice',
@@ -317,7 +317,7 @@ One limitation: ChatGPT's Voice Mode does not browse the internet in real time (
       {
         title: 'Exit Voice Mode',
         content: 'Tap the "X" or swipe down to exit voice mode and return to the standard text chat. The conversation you had is saved in your chat history as a text transcript. You can continue by typing follow-up questions even after leaving voice mode.',
-        tip: 'Voice Mode works best with headphones — it prevents the phone\'s speaker from picking up ChatGPT\'s voice as input and causing an echo loop.',
+        tip: `Voice Mode works best with headphones — it prevents the phone's speaker from picking up ChatGPT's voice as input and causing an echo loop.`,
       },
     ],
   },
@@ -345,12 +345,12 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
     steps: [
       {
         title: 'Tell the AI Your Constraints',
-        content: 'Open ChatGPT, Perplexity, or another AI assistant. Start with a clear prompt describing your needs. Example: "Create a 7-day dinner meal plan for 2 people. Budget is about $80 for the week. I need low-sodium options because my partner has high blood pressure. We don\'t eat shellfish. Most meals should take under 45 minutes. Include simple breakfasts and lunches too."',
+        content: `Open ChatGPT, Perplexity, or another AI assistant. Start with a clear prompt describing your needs. Example: "Create a 7-day dinner meal plan for 2 people. Budget is about $80 for the week. I need low-sodium options because my partner has high blood pressure. We don't eat shellfish. Most meals should take under 45 minutes. Include simple breakfasts and lunches too."`,
         tip: 'The more specific your constraints, the better the suggestions. Include: number of people, dietary restrictions, budget, time available to cook, and any foods you dislike.',
       },
       {
         title: 'Review and Adjust the Plan',
-        content: 'Read through the suggested meal plan. If something doesn\'t appeal to you, just say so: "Replace Wednesday dinner — I don\'t like salmon. Suggest something else with similar nutrition." AI adjusts immediately. Keep refining until the plan works for your week.',
+        content: `Read through the suggested meal plan. If something doesn't appeal to you, just say so: "Replace Wednesday dinner — I don't like salmon. Suggest something else with similar nutrition." AI adjusts immediately. Keep refining until the plan works for your week.`,
       },
       {
         title: 'Request a Shopping List',
@@ -362,15 +362,15 @@ This works with ChatGPT, Perplexity, Claude (Anthropic), or any other AI assista
       },
       {
         title: 'Get Detailed Recipes',
-        content: 'For any meal in the plan, ask for the full recipe: "Give me the step-by-step recipe for the chicken stir-fry from Monday night. I\'m not very experienced in the kitchen, so please be detailed." AI provides exact ingredients, quantities, and numbered steps tailored to your experience level.',
-        tip: 'Save favorite meal plans and recipes by copying the AI\'s response into a Notes app on your phone. This builds a personal recipe collection over time.',
+        content: `For any meal in the plan, ask for the full recipe: "Give me the step-by-step recipe for the chicken stir-fry from Monday night. I'm not very experienced in the kitchen, so please be detailed." AI provides exact ingredients, quantities, and numbered steps tailored to your experience level.`,
+        tip: `Save favorite meal plans and recipes by copying the AI's response into a Notes app on your phone. This builds a personal recipe collection over time.`,
       },
     ],
   },
   {
     slug: 'senior-dating-apps-guide',
     title: 'Dating Apps for Seniors: Silver Singles, OurTime, and More',
-    excerpt: 'Online dating for people over 50 and 60 has grown significantly. Here\'s an honest overview of the apps designed for seniors and what to expect.',
+    excerpt: `Online dating for people over 50 and 60 has grown significantly. Here's an honest overview of the apps designed for seniors and what to expect.`,
     category: 'social-media',
     tags: ['senior dating', 'Silver Singles', 'OurTime', 'dating app', 'over 50', 'over 60'],
     readTime: '6 min',
@@ -402,23 +402,23 @@ Romance scams targeting older adults on dating apps have increased significantly
       },
       {
         title: 'Be Selective and Thoughtful in Communication',
-        content: 'Don\'t feel pressure to respond to everyone who contacts you. Focus on profiles that genuinely interest you. Take your time getting to know someone through messages before moving to phone calls or meeting in person. Well-written, personalized messages get better responses than brief generic ones.',
+        content: `Don't feel pressure to respond to everyone who contacts you. Focus on profiles that genuinely interest you. Take your time getting to know someone through messages before moving to phone calls or meeting in person. Well-written, personalized messages get better responses than brief generic ones.`,
       },
       {
         title: 'Recognize Red Flags and Romance Scams',
-        content: 'Be very cautious of anyone who: claims to be military or overseas (a common scam persona), quickly becomes intensely romantic or says "I love you" within days, has a profile that seems too perfect, makes up reasons why they can\'t do a video call, or eventually asks for money for any reason (an emergency, travel costs, medical bills). These are scam warning signs.',
-        warning: 'Never send money to someone you\'ve met through an online dating app, regardless of how well you feel you know them and how compelling their reason seems. Romance scams cause significant financial harm every year — billions of dollars lost nationwide.',
+        content: `Be very cautious of anyone who: claims to be military or overseas (a common scam persona), quickly becomes intensely romantic or says "I love you" within days, has a profile that seems too perfect, makes up reasons why they can't do a video call, or eventually asks for money for any reason (an emergency, travel costs, medical bills). These are scam warning signs.`,
+        warning: `Never send money to someone you've met through an online dating app, regardless of how well you feel you know them and how compelling their reason seems. Romance scams cause significant financial harm every year — billions of dollars lost nationwide.`,
       },
       {
         title: 'Arrange a Safe First Meeting',
-        content: 'Meet in a public place (coffee shop, restaurant) for first meetings. Tell a friend or family member where you\'re going and who you\'re meeting. Drive yourself or arrange your own transportation. Plan a meeting you can leave whenever you\'re ready. This protects you while still allowing for a genuine connection.',
+        content: `Meet in a public place (coffee shop, restaurant) for first meetings. Tell a friend or family member where you're going and who you're meeting. Drive yourself or arrange your own transportation. Plan a meeting you can leave whenever you're ready. This protects you while still allowing for a genuine connection.`,
       },
     ],
   },
   {
     slug: 'starbucks-app-guide',
     title: 'How to Order Ahead and Earn Rewards With the Starbucks App',
-    excerpt: 'The Starbucks app lets you skip the line by ordering from your phone — and every purchase earns Stars toward free drinks. Here\'s how to get started.',
+    excerpt: `The Starbucks app lets you skip the line by ordering from your phone — and every purchase earns Stars toward free drinks. Here's how to get started.`,
     category: 'app-guides',
     tags: ['Starbucks', 'mobile order', 'rewards', 'coffee', 'app'],
     readTime: '4 min',
@@ -452,12 +452,12 @@ Starbucks frequently runs "Happy Hours" visible in the app — promotional times
       },
       {
         title: 'Earn and Redeem Stars',
-        content: 'Stars are automatically added to your account after each purchase. Check your balance by tapping the person icon. To redeem: when you have enough Stars, tap "Redeem" during checkout. You\'ll see what free items are available at your current Star balance. Select what you want and it\'s applied to your order.',
+        content: `Stars are automatically added to your account after each purchase. Check your balance by tapping the person icon. To redeem: when you have enough Stars, tap "Redeem" during checkout. You'll see what free items are available at your current Star balance. Select what you want and it's applied to your order.`,
       },
       {
         title: 'Check for Offers and Happy Hour',
         content: 'Tap the "Offers" tab (or the star icon) to see current bonus Star promotions, limited-time deals, and any Happy Hours. Happy Hours typically run for a few hours on specific days and offer buy-one-get-one deals or discounted beverages — these are only available to Rewards members and are announced through the app.',
-        tip: 'Turn on app notifications to get Happy Hour alerts before they start — they\'re time-limited and sometimes only a few hours long.',
+        tip: `Turn on app notifications to get Happy Hour alerts before they start — they're time-limited and sometimes only a few hours long.`,
       },
     ],
   },
@@ -485,7 +485,7 @@ Beyond DocuSign, similar services include Adobe Sign, HelloSign (now Dropbox Sig
     steps: [
       {
         title: 'Signing a Document Someone Sent You',
-        content: 'You\'ll receive an email saying "[Company/Person] has sent you a document to sign via DocuSign." Open the email. Click the big yellow "Review Document" button. DocuSign opens in your browser (you don\'t need to download anything). Review the document, then click the yellow "Sign" tags placed at your signature locations.',
+        content: `You'll receive an email saying "[Company/Person] has sent you a document to sign via DocuSign." Open the email. Click the big yellow "Review Document" button. DocuSign opens in your browser (you don't need to download anything). Review the document, then click the yellow "Sign" tags placed at your signature locations.`,
         tip: 'DocuSign guides you through the document — yellow arrows point to every place you need to click, sign, or initial. You rarely need to scroll and search.',
       },
       {
@@ -494,7 +494,7 @@ Beyond DocuSign, similar services include Adobe Sign, HelloSign (now Dropbox Sig
       },
       {
         title: 'Complete and Submit',
-        content: 'Work through the document, clicking each yellow tag to add your signature, initials, or date. When you\'ve signed everywhere required, click the "Finish" button. DocuSign sends a confirmation email to all parties. The signed copy is emailed to you as a PDF attachment.',
+        content: `Work through the document, clicking each yellow tag to add your signature, initials, or date. When you've signed everywhere required, click the "Finish" button. DocuSign sends a confirmation email to all parties. The signed copy is emailed to you as a PDF attachment.`,
       },
       {
         title: 'Save Your Signed Copies',
@@ -502,14 +502,14 @@ Beyond DocuSign, similar services include Adobe Sign, HelloSign (now Dropbox Sig
       },
       {
         title: 'Create a Free Account to Send Documents',
-        content: 'Go to docusign.com → "Start Free Trial" or "Free Account." The free tier allows a limited number of signature requests per month (enough for occasional personal use). Upload a PDF, drag signature fields to the appropriate places, enter the recipient\'s email address, and click Send. They receive the signing request email.',
-        warning: 'Be cautious of phishing emails that look like DocuSign requests from unknown senders. Legitimate DocuSign requests come from accounts at docusign.com and will clearly identify who sent the document. If you weren\'t expecting a document, verify with the sender before clicking.',
+        content: `Go to docusign.com → "Start Free Trial" or "Free Account." The free tier allows a limited number of signature requests per month (enough for occasional personal use). Upload a PDF, drag signature fields to the appropriate places, enter the recipient's email address, and click Send. They receive the signing request email.`,
+        warning: `Be cautious of phishing emails that look like DocuSign requests from unknown senders. Legitimate DocuSign requests come from accounts at docusign.com and will clearly identify who sent the document. If you weren't expecting a document, verify with the sender before clicking.`,
       },
     ],
   },
   {
     slug: 'digital-wallet-loyalty-cards',
-    title: 'How to Store Store Loyalty Cards in Your Phone\'s Wallet',
+    title: `How to Store Store Loyalty Cards in Your Phone's Wallet`,
     excerpt: 'Stop carrying a wallet full of loyalty cards — your iPhone or Android phone can store them all digitally so you can pull them up at checkout in seconds.',
     category: 'essential-skills',
     tags: ['loyalty cards', 'Apple Wallet', 'Google Wallet', 'rewards cards', 'digital wallet'],
@@ -531,11 +531,11 @@ Adding cards to your Wallet doesn't replace your physical cards — you can keep
     steps: [
       {
         title: 'Add Cards to Apple Wallet (iPhone)',
-        content: 'Open the Wallet app on your iPhone. Tap the "+" button in the top right. Tap "Other" or "Loyalty & Rewards" (wording varies by iOS version). Search for your store by name. If found, tap it and sign in or enter your rewards number. Alternatively, open the retailer\'s app (Target, CVS, etc.) — many have a "Add to Apple Wallet" button right in the app.',
+        content: `Open the Wallet app on your iPhone. Tap the "+" button in the top right. Tap "Other" or "Loyalty & Rewards" (wording varies by iOS version). Search for your store by name. If found, tap it and sign in or enter your rewards number. Alternatively, open the retailer's app (Target, CVS, etc.) — many have a "Add to Apple Wallet" button right in the app.`,
       },
       {
         title: 'Add Cards to Google Wallet (Android)',
-        content: 'Open the Google Wallet app. If you don\'t have it, search for "Google Wallet" in Google Play and install it. Tap "Add to Wallet" → "Loyalty card." Search for the store. If supported, enter your card number or scan your physical card. The digital card is added to your Wallet.',
+        content: `Open the Google Wallet app. If you don't have it, search for "Google Wallet" in Google Play and install it. Tap "Add to Wallet" → "Loyalty card." Search for the store. If supported, enter your card number or scan your physical card. The digital card is added to your Wallet.`,
       },
       {
         title: 'Scan Your Physical Card to Add It',
@@ -544,19 +544,19 @@ Adding cards to your Wallet doesn't replace your physical cards — you can keep
       },
       {
         title: 'Use the Card at Checkout',
-        content: 'When you\'re at the register and the cashier asks for your rewards card: pull out your phone, open Wallet (Apple) or Google Wallet (Android), find the card, and hold the barcode up to the scanner — the same laser scanner the cashier uses for products. Most scanners read phone screens accurately. If it doesn\'t read, increase your screen brightness.',
+        content: `When you're at the register and the cashier asks for your rewards card: pull out your phone, open Wallet (Apple) or Google Wallet (Android), find the card, and hold the barcode up to the scanner — the same laser scanner the cashier uses for products. Most scanners read phone screens accurately. If it doesn't read, increase your screen brightness.`,
       },
       {
         title: 'Organize Your Cards',
-        content: 'In Apple Wallet, you can rearrange cards by pressing and holding one and dragging it to reorder. Cards you use most often can be moved to the top of the list. Apple also automatically moves relevant cards (like a coffee shop card) to the front when you\'re near that location, if you allow location access.',
-        tip: 'While you\'re at it, add your health insurance ID card if your insurer supports it — many do via their apps. This means you\'ll always have your insurance card on hand for doctor visits.',
+        content: `In Apple Wallet, you can rearrange cards by pressing and holding one and dragging it to reorder. Cards you use most often can be moved to the top of the list. Apple also automatically moves relevant cards (like a coffee shop card) to the front when you're near that location, if you allow location access.`,
+        tip: `While you're at it, add your health insurance ID card if your insurer supports it — many do via their apps. This means you'll always have your insurance card on hand for doctor visits.`,
       },
     ],
   },
   {
     slug: 'iphone-notification-settings',
     title: 'How to Take Control of Your iPhone Notifications',
-    excerpt: 'If your iPhone buzzes and dings constantly, here\'s how to customize which apps can notify you, when, and how — so your phone interrupts you less.',
+    excerpt: `If your iPhone buzzes and dings constantly, here's how to customize which apps can notify you, when, and how — so your phone interrupts you less.`,
     category: 'phone-guides',
     tags: ['iPhone', 'notifications', 'alerts', 'Focus mode', 'Do Not Disturb'],
     readTime: '5 min',
@@ -577,16 +577,16 @@ Going through your notification settings once a month and pruning apps you've gi
     steps: [
       {
         title: 'Open Notification Settings',
-        content: 'Go to Settings → Notifications. You\'ll see every app that has requested notification permission, with its current setting. Scroll through and identify apps you want to adjust. Tap any app name to see and change its notification settings.',
+        content: `Go to Settings → Notifications. You'll see every app that has requested notification permission, with its current setting. Scroll through and identify apps you want to adjust. Tap any app name to see and change its notification settings.`,
       },
       {
         title: 'Turn Off Notifications for Unnecessary Apps',
-        content: 'For apps you don\'t need interrupting you (games, shopping apps, social media you check on your own schedule): tap the app name → toggle "Allow Notifications" to off. The app can still send you notifications when you actively open it, but it won\'t interrupt you otherwise.',
-        tip: 'Start with a few obvious ones: news apps, social media, and games. Then check the full list and turn off anything you don\'t recognize as needing real-time alerts.',
+        content: `For apps you don't need interrupting you (games, shopping apps, social media you check on your own schedule): tap the app name → toggle "Allow Notifications" to off. The app can still send you notifications when you actively open it, but it won't interrupt you otherwise.`,
+        tip: `Start with a few obvious ones: news apps, social media, and games. Then check the full list and turn off anything you don't recognize as needing real-time alerts.`,
       },
       {
         title: 'Set Notifications to Silent (No Sound/Vibration)',
-        content: 'For apps that are useful to notify you but don\'t need to interrupt: tap the app → keep "Allow Notifications" on but turn off "Sounds" and "Badges" (the red dot counters). You\'ll still see these notifications when you look at your Lock Screen or Notification Center, but they won\'t buzz or ding.',
+        content: `For apps that are useful to notify you but don't need to interrupt: tap the app → keep "Allow Notifications" on but turn off "Sounds" and "Badges" (the red dot counters). You'll still see these notifications when you look at your Lock Screen or Notification Center, but they won't buzz or ding.`,
       },
       {
         title: 'Enable Notification Summary',
@@ -594,15 +594,15 @@ Going through your notification settings once a month and pruning apps you've gi
       },
       {
         title: 'Use Focus Modes to Silence Everything at Set Times',
-        content: 'Settings → Focus. Tap "Do Not Disturb" to set it to turn on automatically at bedtime. Tap "Sleep" to set sleep hours. During these times, your phone doesn\'t make sounds or show notifications — with exceptions for allowed contacts like family members. Customize who can break through under "Allowed Notifications."',
-        warning: 'If you turn on Do Not Disturb and expect an important call tonight, set your most important contacts as allowed — they\'ll still get through while everything else is silenced.',
+        content: `Settings → Focus. Tap "Do Not Disturb" to set it to turn on automatically at bedtime. Tap "Sleep" to set sleep hours. During these times, your phone doesn't make sounds or show notifications — with exceptions for allowed contacts like family members. Customize who can break through under "Allowed Notifications."`,
+        warning: `If you turn on Do Not Disturb and expect an important call tonight, set your most important contacts as allowed — they'll still get through while everything else is silenced.`,
       },
     ],
   },
   {
     slug: 'android-notification-settings',
     title: 'How to Manage Your Android Notifications',
-    excerpt: 'Android gives you detailed control over which apps can notify you and how — here\'s how to cut through the noise and keep only the alerts that matter.',
+    excerpt: `Android gives you detailed control over which apps can notify you and how — here's how to cut through the noise and keep only the alerts that matter.`,
     category: 'phone-guides',
     tags: ['Android', 'notifications', 'alerts', 'Do Not Disturb', 'Samsung', 'Google Pixel'],
     readTime: '5 min',
@@ -623,16 +623,16 @@ Do Not Disturb on Android is more granular than many users realize: you can allo
     steps: [
       {
         title: 'Open Notification Settings',
-        content: 'Go to Settings → Notifications (or Settings → Apps → Notifications on some versions). You\'ll see all apps with their notification status. Most Android phones also let you access notification settings by pressing and holding a notification when it appears on screen and tapping "Settings" or "Manage notifications."',
+        content: `Go to Settings → Notifications (or Settings → Apps → Notifications on some versions). You'll see all apps with their notification status. Most Android phones also let you access notification settings by pressing and holding a notification when it appears on screen and tapping "Settings" or "Manage notifications."`,
       },
       {
         title: 'Turn Off Notifications for Individual Apps',
-        content: 'Scroll through the app list. Tap any app. Toggle "Allow notifications" to off for apps you don\'t need interrupting you. Apps like games, shopping apps, and social media you check on your own schedule are good candidates to silence completely. This doesn\'t affect the app\'s function — it just stops unprompted interruptions.',
-        tip: 'On Samsung phones, apps are listed with a "Recent" sort by default. Sort by "Most recent" or "All" to see everything that\'s been notifying you.',
+        content: `Scroll through the app list. Tap any app. Toggle "Allow notifications" to off for apps you don't need interrupting you. Apps like games, shopping apps, and social media you check on your own schedule are good candidates to silence completely. This doesn't affect the app's function — it just stops unprompted interruptions.`,
+        tip: `On Samsung phones, apps are listed with a "Recent" sort by default. Sort by "Most recent" or "All" to see everything that's been notifying you.`,
       },
       {
         title: 'Control Notification Channels',
-        content: 'Many apps have multiple notification channels (categories). For example, a news app might have channels for "Breaking news," "Daily digest," and "Promotions." Tap the app → see the channel list → turn off only the channels you don\'t want (like "Promotions") while keeping "Breaking news" active. This granular control prevents having to choose all-or-nothing.',
+        content: `Many apps have multiple notification channels (categories). For example, a news app might have channels for "Breaking news," "Daily digest," and "Promotions." Tap the app → see the channel list → turn off only the channels you don't want (like "Promotions") while keeping "Breaking news" active. This granular control prevents having to choose all-or-nothing.`,
       },
       {
         title: 'Set Up Do Not Disturb on a Schedule',
@@ -677,7 +677,7 @@ The right choice depends on how many medications are involved, how important car
       },
       {
         title: 'Choose the Right Device',
-        content: 'Hero is best for independent seniors who want full automation and family app integration. Medminder is best for seniors who want phone-call reminders and don\'t use apps — a real person calls if a dose is missed. GMS eCAP is best for a single medication with a simple tracking need. Check current prices at Amazon and the manufacturers\' websites — subscription costs change.',
+        content: `Hero is best for independent seniors who want full automation and family app integration. Medminder is best for seniors who want phone-call reminders and don't use apps — a real person calls if a dose is missed. GMS eCAP is best for a single medication with a simple tracking need. Check current prices at Amazon and the manufacturers' websites — subscription costs change.`,
         tip: 'Many devices offer a free trial period. Test the device before committing to a long subscription.',
       },
       {
@@ -687,11 +687,11 @@ The right choice depends on how many medications are involved, how important car
       },
       {
         title: 'Configure Caregiver Alerts',
-        content: 'For devices with caregiver apps (Hero, Medminder): download the caregiver app on a family member\'s phone. Create an account and link it to the senior\'s device. Set alert preferences — alert after 30 minutes, 1 hour, or whatever threshold makes sense. Test the alert system before relying on it.',
+        content: `For devices with caregiver apps (Hero, Medminder): download the caregiver app on a family member's phone. Create an account and link it to the senior's device. Set alert preferences — alert after 30 minutes, 1 hour, or whatever threshold makes sense. Test the alert system before relying on it.`,
       },
       {
         title: 'Maintain the Device',
-        content: 'Restock the dispenser at the same time as picking up refills — keeping track together is easier than managing separately. Clean the dispenser according to manufacturer instructions. Regularly verify the medication schedule hasn\'t changed (after any doctor visit where prescriptions change, update the dispenser before the new prescription starts).',
+        content: `Restock the dispenser at the same time as picking up refills — keeping track together is easier than managing separately. Clean the dispenser according to manufacturer instructions. Regularly verify the medication schedule hasn't changed (after any doctor visit where prescriptions change, update the dispenser before the new prescription starts).`,
       },
     ],
   },
@@ -766,7 +766,7 @@ If online notarization isn't available for your document, banks (particularly cr
     steps: [
       {
         title: 'Verify Your Document and State Allow RON',
-        content: 'Check if your state allows Remote Online Notarization: notarize.com/state-requirements lists requirements by state. Confirm your document type qualifies — powers of attorney and affidavits almost always do; real estate deeds vary by state. If your state doesn\'t support RON or your document doesn\'t qualify, use an in-person notary instead.',
+        content: `Check if your state allows Remote Online Notarization: notarize.com/state-requirements lists requirements by state. Confirm your document type qualifies — powers of attorney and affidavits almost always do; real estate deeds vary by state. If your state doesn't support RON or your document doesn't qualify, use an in-person notary instead.`,
       },
       {
         title: 'Choose an Online Notary Platform',
@@ -774,7 +774,7 @@ If online notarization isn't available for your document, banks (particularly cr
       },
       {
         title: 'Upload Your Document',
-        content: 'On the platform\'s website or app, upload your document as a PDF. If you only have a paper document, scan it with your phone first (iPhone Notes app or Google Drive both have built-in scanners). Check that the uploaded document looks clear and all text is readable.',
+        content: `On the platform's website or app, upload your document as a PDF. If you only have a paper document, scan it with your phone first (iPhone Notes app or Google Drive both have built-in scanners). Check that the uploaded document looks clear and all text is readable.`,
       },
       {
         title: 'Verify Your Identity',
@@ -790,7 +790,7 @@ If online notarization isn't available for your document, banks (particularly cr
   {
     slug: 'ibotta-grocery-savings',
     title: 'How to Use Ibotta to Save Money on Groceries',
-    excerpt: 'Ibotta gives you cash back on groceries and everyday purchases by claiming offers before you shop and scanning your receipt after. Here\'s how to use it.',
+    excerpt: `Ibotta gives you cash back on groceries and everyday purchases by claiming offers before you shop and scanning your receipt after. Here's how to use it.`,
     category: 'financial-tech',
     tags: ['Ibotta', 'grocery savings', 'cash back', 'coupons', 'rebates'],
     readTime: '4 min',
@@ -815,28 +815,28 @@ A typical family can save $20-50/month on groceries with consistent Ibotta use. 
       },
       {
         title: 'Browse and Claim Offers Before Shopping',
-        content: 'Open Ibotta before your next shopping trip. Tap the retailer where you\'re shopping (e.g., Walmart, Kroger). Browse available offers — they show the product and rebate amount. Tap offers that match what you plan to buy. After tapping, the offer should show as "Added." You must claim offers BEFORE purchasing.',
+        content: `Open Ibotta before your next shopping trip. Tap the retailer where you're shopping (e.g., Walmart, Kroger). Browse available offers — they show the product and rebate amount. Tap offers that match what you plan to buy. After tapping, the offer should show as "Added." You must claim offers BEFORE purchasing.`,
         tip: 'Sort offers by "Highest Value" to find the best rebates. Check "Any Brand" offers — these give you cash back on any brand of that product type.',
       },
       {
         title: 'Shop Normally and Buy the Claimed Products',
-        content: 'Buy the products you\'ve claimed offers for during your normal shopping. You don\'t need to do anything special at checkout — just buy the items. In-store purchase works with receipt scan; online purchase works differently (link below).',
+        content: `Buy the products you've claimed offers for during your normal shopping. You don't need to do anything special at checkout — just buy the items. In-store purchase works with receipt scan; online purchase works differently (link below).`,
       },
       {
         title: 'Submit Your Receipt',
-        content: 'After shopping, open Ibotta. Tap the receipt icon at the bottom center. Select your store from the list. Photograph your receipt. Ibotta reads the receipt, identifies your qualifying purchases, and adds the cash back to your account within a few minutes. If a product isn\'t automatically matched, tap "Can\'t find your product?" and enter the UPC code from the package.',
+        content: `After shopping, open Ibotta. Tap the receipt icon at the bottom center. Select your store from the list. Photograph your receipt. Ibotta reads the receipt, identifies your qualifying purchases, and adds the cash back to your account within a few minutes. If a product isn't automatically matched, tap "Can't find your product?" and enter the UPC code from the package.`,
       },
       {
         title: 'Cash Out When You Reach $20',
-        content: 'When your Ibotta balance reaches $20, you can cash out. Tap "Redeem" → choose PayPal, Venmo, or a gift card. PayPal and Venmo transfer typically process within 24-48 hours. Gift cards are usually delivered by email within minutes. There\'s no fee to cash out.',
-        warning: 'Don\'t buy products just to earn the Ibotta rebate — only claim offers for things you were already planning to buy. Spending $5 on a product to earn a $0.75 rebate doesn\'t make financial sense.',
+        content: `When your Ibotta balance reaches $20, you can cash out. Tap "Redeem" → choose PayPal, Venmo, or a gift card. PayPal and Venmo transfer typically process within 24-48 hours. Gift cards are usually delivered by email within minutes. There's no fee to cash out.`,
+        warning: `Don't buy products just to earn the Ibotta rebate — only claim offers for things you were already planning to buy. Spending $5 on a product to earn a $0.75 rebate doesn't make financial sense.`,
       },
     ],
   },
   {
     slug: 'share-location-iphone',
     title: 'How to Share Your Location With Family on iPhone',
-    excerpt: 'iPhone\'s Find My app lets you share your real-time location with specific family members so they always know you\'re safe — without tracking your every move.',
+    excerpt: `iPhone's Find My app lets you share your real-time location with specific family members so they always know you're safe — without tracking your every move.`,
     category: 'phone-guides',
     tags: ['iPhone', 'location sharing', 'Find My', 'family', 'safety'],
     readTime: '4 min',
@@ -857,11 +857,11 @@ As an alternative, Google Maps has a similar location-sharing feature for Androi
     steps: [
       {
         title: 'Open the Find My App',
-        content: 'The Find My app comes pre-installed on every iPhone. Open it by searching "Find My" in your app library or asking Siri "Open Find My." Make sure you\'re signed in with your Apple ID (the same as your iCloud). Tap the "People" tab at the bottom.',
+        content: `The Find My app comes pre-installed on every iPhone. Open it by searching "Find My" in your app library or asking Siri "Open Find My." Make sure you're signed in with your Apple ID (the same as your iCloud). Tap the "People" tab at the bottom.`,
       },
       {
         title: 'Share Your Location With a Family Member',
-        content: 'On the People tab, tap "Share My Location" (or the "+" button). A contact picker appears. Search for and select the family member\'s name. Tap "Send." They receive a notification on their iPhone asking to accept your location sharing. Once they accept, you appear on each other\'s maps.',
+        content: `On the People tab, tap "Share My Location" (or the "+" button). A contact picker appears. Search for and select the family member's name. Tap "Send." They receive a notification on their iPhone asking to accept your location sharing. Once they accept, you appear on each other's maps.`,
         tip: 'Both people need to have Location Services turned on: Settings → Privacy & Security → Location Services → Make sure this is On.',
       },
       {
@@ -869,20 +869,20 @@ As an alternative, Google Maps has a similar location-sharing feature for Androi
         content: 'When someone sends you a location sharing request, you receive an iPhone notification. Tap it and choose "Share Once," "Share Until You Leave" (a specific location), or "Always Share." For ongoing family location sharing, choose "Always Share." You can change or revoke this at any time.',
       },
       {
-        title: 'See Your Family\'s Locations',
-        content: 'In the Find My app → People tab, you see everyone sharing their location with you. Tap a person\'s name to see their location on a full map, get turn-by-turn directions to them, or see when they last updated their location. The map also shows their battery level.',
+        title: `See Your Family's Locations`,
+        content: `In the Find My app → People tab, you see everyone sharing their location with you. Tap a person's name to see their location on a full map, get turn-by-turn directions to them, or see when they last updated their location. The map also shows their battery level.`,
       },
       {
         title: 'Stop Sharing or Remove Someone',
-        content: 'In Find My → People tab, tap the person\'s name → scroll down → "Stop Sharing My Location." This immediately stops that person from seeing your location. They receive no notification that you\'ve stopped. You can also tap "Remove" on the contact to remove them entirely from your People list.',
-        warning: 'Location sharing should always be consensual. Don\'t attempt to share someone\'s location without their knowledge or use it to monitor someone who hasn\'t agreed to share.',
+        content: `In Find My → People tab, tap the person's name → scroll down → "Stop Sharing My Location." This immediately stops that person from seeing your location. They receive no notification that you've stopped. You can also tap "Remove" on the contact to remove them entirely from your People list.`,
+        warning: `Location sharing should always be consensual. Don't attempt to share someone's location without their knowledge or use it to monitor someone who hasn't agreed to share.`,
       },
     ],
   },
   {
     slug: 'icloud-storage-management',
     title: 'How to Fix "iPhone Storage Full" and Manage iCloud Storage',
-    excerpt: 'When your iPhone says storage is full or iCloud is almost full, here\'s how to figure out what\'s taking up space and what to do about it.',
+    excerpt: `When your iPhone says storage is full or iCloud is almost full, here's how to figure out what's taking up space and what to do about it.`,
     category: 'phone-guides',
     tags: ['iCloud', 'iPhone storage', 'storage full', 'backup', 'iOS'],
     readTime: '6 min',
@@ -906,9 +906,9 @@ The fixes range from free (deleting things you don't need) to paid (upgrading iC
 iCloud storage is separate from your iPhone's built-in storage and they're managed in different places, which confuses many people.`,
     steps: [
       {
-        title: 'Check What\'s Filling Your iPhone Storage',
+        title: `Check What's Filling Your iPhone Storage`,
         content: 'Go to Settings → General → iPhone Storage. A bar at the top shows total usage by category (Photos, Apps, Messages, etc.). Scroll down to see a list of apps sorted by size. Look for the biggest offenders. Tapping an app shows how much space the app itself takes versus its stored data.',
-        tip: 'iOS shows "Recommendations" near the top of this screen suggesting specific things to delete or offload — read these first, they\'re usually accurate.',
+        tip: `iOS shows "Recommendations" near the top of this screen suggesting specific things to delete or offload — read these first, they're usually accurate.`,
       },
       {
         title: 'Free Up iPhone Storage: Photos and Videos',
@@ -920,7 +920,7 @@ iCloud storage is separate from your iPhone's built-in storage and they're manag
       },
       {
         title: 'Check Your iCloud Storage',
-        content: 'iCloud storage is separate. Check it at Settings → [your name] → iCloud → "Manage Account Storage." You\'ll see what\'s using your iCloud storage: Backups, Photos, Messages, iCloud Drive. The free plan is 5 GB — most people need more. Upgrading to 50 GB costs $0.99/month, 200 GB costs $2.99/month.',
+        content: `iCloud storage is separate. Check it at Settings → [your name] → iCloud → "Manage Account Storage." You'll see what's using your iCloud storage: Backups, Photos, Messages, iCloud Drive. The free plan is 5 GB — most people need more. Upgrading to 50 GB costs $0.99/month, 200 GB costs $2.99/month.`,
         warning: 'If iCloud backup says "Off" or shows an old date, your phone is not being backed up. A full iCloud means no backup. Either free up iCloud space or upgrade to ensure your data is protected.',
       },
       {

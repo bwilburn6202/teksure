@@ -4,7 +4,7 @@ export const guidesBatch33: Guide[] = [
   {
     slug: 'vizio-smartcast-guide',
     title: 'How to Navigate Your Vizio Smart TV',
-    excerpt: 'Vizio SmartCast TVs let you stream apps, cast from your phone, and control everything from the SmartCast app — here\'s how to get started.',
+    excerpt: `Vizio SmartCast TVs let you stream apps, cast from your phone, and control everything from the SmartCast app — here's how to get started.`,
     body: `Vizio Smart TVs use a system called SmartCast that works differently from Roku or Amazon Fire TV. Instead of a traditional app store on the TV itself, many Vizio models are designed to be controlled from the Vizio SmartCast app on your phone. However, newer Vizio TVs also have a built-in menu with streaming apps available directly on the screen.\n\n**Built-in apps**: Press the Home button on your Vizio remote. You will see a row of app icons at the bottom of the screen — Netflix, Hulu, Disney+, YouTube, Amazon Prime Video, Peacock, and others. Use the directional pad on the remote to navigate and click to open them.\n\n**SmartCast app control**: Download the Vizio SmartCast app on your phone. Connect it to your TV over Wi-Fi. You can use the app as a remote, search for content, and cast content directly from your phone to the TV.\n\n**Casting from your phone**: Any app that supports Google Cast (Netflix, YouTube, Disney+, etc.) can cast content to your Vizio TV. Look for the cast icon (a rectangle with waves) in the app and tap it to send the video to your TV.\n\n**Vizio Voice Remote**: Many Vizio remotes have a microphone button. Press it and speak a channel name, show title, or app name to search or open it directly without navigating menus.\n\nIf your Vizio TV seems slow or apps stop working, the most common fix is to unplug the TV from the wall for 60 seconds, then plug it back in. This clears temporary files and usually resolves issues.`,
     category: 'entertainment',
     tags: ['vizio', 'smart tv', 'smartcast', 'streaming', 'tv setup'],
@@ -40,7 +40,7 @@ export const guidesBatch33: Guide[] = [
   {
     slug: 'google-tv-setup-guide',
     title: 'How to Set Up Google TV (Chromecast with Google TV)',
-    excerpt: 'Google TV is a smart streaming device that plugs into your TV\'s HDMI port and gives you access to Netflix, YouTube, HBO, and hundreds of other apps in one place.',
+    excerpt: `Google TV is a smart streaming device that plugs into your TV's HDMI port and gives you access to Netflix, YouTube, HBO, and hundreds of other apps in one place.`,
     body: `Google TV is Google's streaming platform, available as a standalone device (Chromecast with Google TV) or built into certain smart TVs. The Chromecast with Google TV is a small dongle that plugs into any TV's HDMI port and transforms it into a smart TV.\n\nThe device costs $29.99 (HD version) or $49.99 (4K version) and provides access to thousands of streaming apps including Netflix, YouTube, HBO Max, Disney+, Hulu, Paramount+, and more. It also integrates with Google services — Gmail, Google Photos, and Google Assistant — and works with Google Home smart home devices.\n\n**Key advantages of Google TV over basic Chromecast**: Earlier Chromecasts required you to cast content from your phone. Google TV has a full remote control and an on-screen interface, so you can browse and watch without needing your phone at all.\n\nGoogle TV features a personalized home screen that pulls in recommendations from multiple streaming services in one place. Rather than opening each app separately to look for something to watch, Google TV shows a combined "For You" feed based on your preferences.\n\nGoogle Assistant is built in. Press the microphone button on the remote and say "Show me comedies on Netflix" or "What is the weather tomorrow?" to search and get information hands-free.\n\nSetup takes about 10 minutes and requires a smartphone (Android or iPhone), a Google account, and your home Wi-Fi password.`,
     category: 'entertainment',
     tags: ['google tv', 'chromecast', 'streaming', 'smart tv', 'google'],
@@ -50,7 +50,7 @@ export const guidesBatch33: Guide[] = [
     difficulty: 'Beginner',
     steps: [
       {
-        title: 'Plug the Chromecast into your TV\'s HDMI port',
+        title: `Plug the Chromecast into your TV's HDMI port`,
         content: 'Plug the Chromecast device into an HDMI port on your TV. Connect the power cable to the device and plug it into a wall outlet (or USB port on the TV if available). Switch your TV input to the corresponding HDMI channel.',
       },
       {
@@ -294,7 +294,7 @@ export const guidesBatch33: Guide[] = [
   {
     slug: 'android-chrome-tips-guide',
     title: 'Helpful Tips for Using Chrome on Android',
-    excerpt: 'Chrome on Android has useful hidden features — tab groups, reading mode, data saver, and address bar at the bottom. Here\'s what most people miss.',
+    excerpt: `Chrome on Android has useful hidden features — tab groups, reading mode, data saver, and address bar at the bottom. Here's what most people miss.`,
     body: `Google Chrome is the most widely used browser on Android phones. While most people use it just for browsing, Chrome on Android has several features that make reading, saving, and organizing web content much easier.\n\n**Reading list**: Save articles to read later without needing a separate app. In any article, tap the bookmark icon (star) → "Reading list." Access your saved articles by tapping the three dots (⋮) → Bookmarks → Reading List.\n\n**Reader mode**: For cluttered websites with lots of ads, tap the book icon in the address bar (appears on supported sites) to switch to a clean reading view with just the article text and images.\n\n**Move the address bar to the bottom**: Go to chrome://flags in the address bar → search "Address bar" → enable "Chrome Home" or "Bottom Omnibox." Now the address bar sits at the bottom, making it easier to reach with one thumb.\n\n**Tab groups**: When you have many tabs open, long-press a tab thumbnail → "Add tab to group." Organize tabs by topic — news, shopping, recipes — to reduce clutter.\n\n**Cast a tab to your TV**: If you have a Chromecast or Google TV, tap the three dots → "Cast." Your current Chrome tab streams to the TV — great for sharing a website, video, or article on a large screen.\n\n**Data Saver**: Go to Settings → "Lite mode" to compress web pages and save mobile data. Useful if you have a limited data plan.`,
     category: 'essential-skills',
     tags: ['chrome', 'android', 'browser tips', 'reading mode', 'tab management'],
@@ -414,11 +414,11 @@ export const guidesBatch33: Guide[] = [
     steps: [
       {
         title: 'Open Notification Center',
-        content: 'Click the date and time at the very top-right corner of your Mac\'s screen. A panel slides in from the right showing your recent notifications and widgets.',
+        content: `Click the date and time at the very top-right corner of your Mac's screen. A panel slides in from the right showing your recent notifications and widgets.`,
       },
       {
         title: 'Clear notifications',
-        content: 'Hover over a group of notifications → click "X" to dismiss them. To clear all notifications from one app at once, hover over the app\'s group and click the X that appears.',
+        content: `Hover over a group of notifications → click "X" to dismiss them. To clear all notifications from one app at once, hover over the app's group and click the X that appears.`,
         tip: 'If notifications are distracting during a meeting or focused work, click the moon icon (or go to Control Center → Focus → Do Not Disturb) to pause all notifications temporarily.',
       },
       {
@@ -494,12 +494,12 @@ export const guidesBatch33: Guide[] = [
       },
       {
         title: 'Apply the sensor',
-        content: 'Follow the manufacturer\'s instructions to apply the sensor to the back of your upper arm or abdomen. It uses a small applicator that inserts a tiny filament — most people describe the insertion as a mild pinch.',
+        content: `Follow the manufacturer's instructions to apply the sensor to the back of your upper arm or abdomen. It uses a small applicator that inserts a tiny filament — most people describe the insertion as a mild pinch.`,
         tip: 'Apply the sensor on a fresh area each time to prevent skin irritation. Rotate application sites with each new sensor.',
       },
       {
         title: 'Connect the sensor to your phone app',
-        content: 'Download the associated app (Dexcom G7 app or FreeStyle LibreLink). Open Bluetooth on your phone and follow the app\'s setup instructions to pair with the sensor. Readings start appearing after a warm-up period (usually 30 minutes to 2 hours).',
+        content: `Download the associated app (Dexcom G7 app or FreeStyle LibreLink). Open Bluetooth on your phone and follow the app's setup instructions to pair with the sensor. Readings start appearing after a warm-up period (usually 30 minutes to 2 hours).`,
       },
       {
         title: 'Set up alerts and share access with family',
@@ -528,7 +528,7 @@ export const guidesBatch33: Guide[] = [
       {
         title: 'Turn on the Apple Watch and bring it near your iPhone',
         content: 'Press and hold the side button on the Watch until the Apple logo appears. A pairing animation appears on the Watch screen — hold the Watch up in front of your iPhone camera.',
-        tip: 'Your iPhone will show a camera viewfinder. Center the Watch\'s swirling animation in the viewfinder. Pairing completes automatically when the iPhone detects it.',
+        tip: `Your iPhone will show a camera viewfinder. Center the Watch's swirling animation in the viewfinder. Pairing completes automatically when the iPhone detects it.`,
       },
       {
         title: 'Follow the setup steps on your iPhone',
@@ -548,7 +548,7 @@ export const guidesBatch33: Guide[] = [
   {
     slug: 'android-wear-smartwatch-guide',
     title: 'How to Set Up a Wear OS Smartwatch with Android',
-    excerpt: 'Wear OS is Google\'s operating system for smartwatches from brands like Samsung, Fossil, and Mobvoi — pair it with your Android phone to track health, get notifications, and more.',
+    excerpt: `Wear OS is Google's operating system for smartwatches from brands like Samsung, Fossil, and Mobvoi — pair it with your Android phone to track health, get notifications, and more.`,
     body: `Wear OS is Google's platform for Android smartwatches. It runs on watches from multiple manufacturers — Samsung Galaxy Watch (Series 4 and later), Fossil, Mobvoi TicWatch, Misfit, and others. If you bought an Android-compatible smartwatch that is not an Apple Watch, it likely runs Wear OS.\n\nWear OS watches pair with any Android phone running Android 8.0 or later. The pairing is done through the Google Pixel Watch app (for Pixel Watches) or the Galaxy Wearable app (for Samsung Galaxy Watch).\n\n**What Wear OS watches can do**:\n- Show notifications from your phone on your wrist\n- Track steps, heart rate, sleep, and workouts\n- Control music playback from your wrist\n- Respond to messages using preset replies or voice\n- Make and receive calls (on LTE models) or when phone is nearby\n- Use Google Assistant for voice commands\n- Make contactless payments with Google Pay\n- Track blood oxygen on supported models\n- Detect falls and contact emergency services on some models\n\nSamsung Galaxy Watch uses a version of Wear OS customized with Samsung's own One UI Watch interface on top, so setup uses the Galaxy Wearable app rather than the standard Wear OS app.\n\nFor best battery life, expect most Wear OS watches to last 1 to 3 days on a charge, depending on features used and watch model.`,
     category: 'health-tech',
     tags: ['wear os', 'smartwatch', 'android watch', 'samsung galaxy watch', 'fitness tracker'],
@@ -572,7 +572,7 @@ export const guidesBatch33: Guide[] = [
       },
       {
         title: 'Set up health permissions',
-        content: 'The pairing app will ask to access your health data — heart rate, steps, sleep. Grant these permissions so the watch can sync health data to your phone\'s health app.',
+        content: `The pairing app will ask to access your health data — heart rate, steps, sleep. Grant these permissions so the watch can sync health data to your phone's health app.`,
       },
       {
         title: 'Customize notifications and watch face',
@@ -638,7 +638,7 @@ export const guidesBatch33: Guide[] = [
         content: 'Open Photos and find the photo you want to share. Tap the Share button (box with an arrow pointing up). Look for the AirDrop section showing nearby Apple devices.',
       },
       {
-        title: 'Tap the recipient\'s name',
+        title: `Tap the recipient's name`,
         content: 'Nearby Apple devices with AirDrop on appear in the share sheet with their device name. Tap the name of the person or device you want to share with.',
         tip: 'If the recipient does not appear, make sure their iPhone is unlocked and they have AirDrop turned on. Check both devices are within 30 feet of each other.',
       },
@@ -657,7 +657,7 @@ export const guidesBatch33: Guide[] = [
   {
     slug: 'bixby-samsung-guide',
     title: 'How to Use Bixby on Samsung Galaxy Phones',
-    excerpt: 'Bixby is Samsung\'s voice assistant built into Galaxy phones — use it to control your phone, send texts, set reminders, and get answers hands-free.',
+    excerpt: `Bixby is Samsung's voice assistant built into Galaxy phones — use it to control your phone, send texts, set reminders, and get answers hands-free.`,
     body: `Bixby is Samsung's built-in voice assistant available on Galaxy smartphones. It works similarly to Siri (on iPhone) or Google Assistant — you give voice commands and Bixby performs actions or answers questions.\n\nYou can wake Bixby by pressing and holding the side button on your Galaxy phone (if configured) or by saying "Hi Bixby" if voice wake is turned on.\n\n**What Bixby can do**:\n- Set alarms, timers, and calendar events\n- Send text messages or make calls by voice\n- Open any app on your phone\n- Change phone settings (turn on Wi-Fi, adjust brightness, enable Do Not Disturb)\n- Answer general knowledge questions\n- Read out your schedule or reminders\n- Take photos or start recording by voice\n- Set up routines that perform multiple actions with one command\n\n**Bixby Routines**: This is Bixby's most powerful feature for everyday use. You create automation rules — "When I connect to my home Wi-Fi, turn on Do Not Disturb and reduce brightness." Or "At 9 PM every night, start playing calm music and dim my screen." Routines run automatically without any voice command.\n\nIf you find Bixby accidentally opens when you press the side button, you can go to Settings → Advanced Features → Side key and change what the side button does (long press can be set to power menu instead).`,
     category: 'phone-guides',
     tags: ['bixby', 'samsung', 'galaxy', 'voice assistant', 'android'],

@@ -9,7 +9,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-use-venmo-safely',
     title: 'How to Use Venmo to Pay Friends and Family — Safely',
-    excerpt: 'Venmo makes splitting bills and paying friends easy — here\'s how to set it up and stay safe while using it.',
+    excerpt: `Venmo makes splitting bills and paying friends easy — here's how to set it up and stay safe while using it.`,
     category: 'financial-tech',
     tags: ['venmo', 'money transfer', 'payments', 'friends', 'bank', 'safety'],
     readTime: '5 min',
@@ -20,7 +20,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Download Venmo and connect your bank account',
-        content: 'Download the free Venmo app from the App Store (iPhone) or Google Play (Android). Open it and tap "Sign Up." Create an account with your email address and phone number. To send money, you\'ll need to connect a bank account or debit card: tap the three horizontal lines (menu), tap "Manage Balance," then "Add a bank or card." Add your bank account using your account and routing numbers, or link a debit or credit card.',
+        content: `Download the free Venmo app from the App Store (iPhone) or Google Play (Android). Open it and tap "Sign Up." Create an account with your email address and phone number. To send money, you'll need to connect a bank account or debit card: tap the three horizontal lines (menu), tap "Manage Balance," then "Add a bank or card." Add your bank account using your account and routing numbers, or link a debit or credit card.`,
         tip: 'Link a bank account or debit card rather than a credit card if possible — Venmo charges a fee (around 3%) when you use a credit card to send money.',
       },
       {
@@ -35,7 +35,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Know the scams that target Venmo users',
-        content: 'The most common Venmo scam: someone sends you money "accidentally" and asks you to send it back. You send the money back, then the original payment is reversed (it was made with a stolen account) and you\'ve lost your own money. Another scam: someone on Facebook Marketplace or Craigslist asks for Venmo payment before you\'ve received the item. Use Venmo only with people you know and trust in real life — not strangers from online listings.',
+        content: `The most common Venmo scam: someone sends you money "accidentally" and asks you to send it back. You send the money back, then the original payment is reversed (it was made with a stolen account) and you've lost your own money. Another scam: someone on Facebook Marketplace or Craigslist asks for Venmo payment before you've received the item. Use Venmo only with people you know and trust in real life — not strangers from online listings.`,
       },
     ],
   },
@@ -59,15 +59,15 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Explain the "why" not just the "how"',
-        content: 'When showing someone how to do something, explain why each step is necessary. Instead of "tap here," say "we\'re tapping here because this opens the camera, and we need the camera to start the video call." Understanding the purpose behind each step helps it stick much better than just mimicking steps. If someone asks "why is this step necessary?" — that\'s a great sign; answer it fully.',
+        content: `When showing someone how to do something, explain why each step is necessary. Instead of "tap here," say "we're tapping here because this opens the camera, and we need the camera to start the video call." Understanding the purpose behind each step helps it stick much better than just mimicking steps. If someone asks "why is this step necessary?" — that's a great sign; answer it fully.`,
       },
       {
         title: 'Let them drive — put the device in their hands',
-        content: 'It\'s tempting to take the phone and do it yourself when a family member gets stuck. Resist this. Say "I\'ll describe what to tap and you do the tapping." The physical act of doing it themselves is what builds the muscle memory. Let them make mistakes and recover — that\'s more valuable than a perfect walkthrough you did for them. After the session, ask them to try the same task without any help while you watch.',
+        content: `It's tempting to take the phone and do it yourself when a family member gets stuck. Resist this. Say "I'll describe what to tap and you do the tapping." The physical act of doing it themselves is what builds the muscle memory. Let them make mistakes and recover — that's more valuable than a perfect walkthrough you did for them. After the session, ask them to try the same task without any help while you watch.`,
       },
       {
         title: 'Create a simple written reference card',
-        content: 'After each session, write down the three to five most important steps on a piece of paper in large, clear text — or print them from a computer. Tape it near the device. Examples: "To FaceTime Sarah: Open FaceTime app → Tap + → Type Sarah → Tap Video." Having physical reference cards means they don\'t need to remember everything or call you every time. Over time, these cards become less necessary as things become habit.',
+        content: `After each session, write down the three to five most important steps on a piece of paper in large, clear text — or print them from a computer. Tape it near the device. Examples: "To FaceTime Sarah: Open FaceTime app → Tap + → Type Sarah → Tap Video." Having physical reference cards means they don't need to remember everything or call you every time. Over time, these cards become less necessary as things become habit.`,
         tip: 'Guides at TekSure are designed to be printed. Every guide at teksure.com has a "Print this guide" button at the top. Print relevant guides and keep them in a folder near the computer or TV.',
       },
       {
@@ -91,7 +91,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Turn on dark mode on iPhone',
-        content: 'Go to Settings → Display & Brightness. Under "Appearance," you\'ll see two options: Light and Dark. Tap "Dark" to turn on dark mode across your entire iPhone. All of Apple\'s built-in apps and most third-party apps will switch to dark mode immediately.',
+        content: `Go to Settings → Display & Brightness. Under "Appearance," you'll see two options: Light and Dark. Tap "Dark" to turn on dark mode across your entire iPhone. All of Apple's built-in apps and most third-party apps will switch to dark mode immediately.`,
         tip: 'Scroll down to "Automatic" and turn it on to have your iPhone automatically switch to dark mode at sunset and back to light mode at sunrise. This is a popular option that most people find easy on their eyes.',
       },
       {
@@ -100,11 +100,11 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Turn on dark mode on Windows 11',
-        content: 'Click the Start button → Settings (gear icon) → Personalization → Colors. Under "Choose your mode," click the dropdown and select "Dark." Windows switches to a dark theme for all built-in apps and the taskbar immediately. Note: some third-party apps have their own light/dark settings that you\'ll need to change within the app itself.',
+        content: `Click the Start button → Settings (gear icon) → Personalization → Colors. Under "Choose your mode," click the dropdown and select "Dark." Windows switches to a dark theme for all built-in apps and the taskbar immediately. Note: some third-party apps have their own light/dark settings that you'll need to change within the app itself.`,
       },
       {
         title: 'Turn on dark mode in specific apps',
-        content: 'Many apps have their own dark mode setting independent of your device\'s setting. In Gmail: tap the three horizontal lines → Settings → tap your email address → Theme → Dark. In Facebook: tap the three horizontal lines (menu) → Settings & Privacy → Settings → Dark Mode → On. In YouTube: tap your profile picture → Appearance → Dark theme.',
+        content: `Many apps have their own dark mode setting independent of your device's setting. In Gmail: tap the three horizontal lines → Settings → tap your email address → Theme → Dark. In Facebook: tap the three horizontal lines (menu) → Settings & Privacy → Settings → Dark Mode → On. In YouTube: tap your profile picture → Appearance → Dark theme.`,
         tip: 'If white backgrounds cause eye strain or headaches, also try "Night Shift" on iPhone (Settings → Display & Brightness → Night Shift) which reduces blue light in the evenings. Windows has a similar feature called "Night light" in Settings → Display.',
       },
     ],
@@ -113,7 +113,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'ring-doorbell-setup',
     title: 'How to Set Up a Ring Video Doorbell',
-    excerpt: 'A Ring doorbell lets you see and talk to anyone at your door from your phone — even when you\'re not home. Here\'s how to install and set it up.',
+    excerpt: `A Ring doorbell lets you see and talk to anyone at your door from your phone — even when you're not home. Here's how to install and set it up.`,
     category: 'smart-home',
     tags: ['ring', 'doorbell', 'home security', 'smart home', 'camera', 'setup'],
     readTime: '7 min',
@@ -128,8 +128,8 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Charge the battery (or hardwire the power)',
-        content: 'Most Ring video doorbells run on a rechargeable battery. Before installing, charge the battery fully using the included USB cable — this takes 5-10 hours. Some Ring models can also be connected to your existing doorbell wiring for continuous power (no battery recharging needed). Check your Ring model\'s instruction booklet or go to support.ring.com for wiring guides specific to your model.',
-        tip: 'Plug your doorbell wiring type into Ring\'s website search to find installation videos for your specific model. Most battery-powered Rings are installed in under 15 minutes with a screwdriver.',
+        content: `Most Ring video doorbells run on a rechargeable battery. Before installing, charge the battery fully using the included USB cable — this takes 5-10 hours. Some Ring models can also be connected to your existing doorbell wiring for continuous power (no battery recharging needed). Check your Ring model's instruction booklet or go to support.ring.com for wiring guides specific to your model.`,
+        tip: `Plug your doorbell wiring type into Ring's website search to find installation videos for your specific model. Most battery-powered Rings are installed in under 15 minutes with a screwdriver.`,
       },
       {
         title: 'Mount the Ring doorbell outside your door',
@@ -137,11 +137,11 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Set up the Ring in the app',
-        content: 'Open the Ring app and tap the plus (+) button to add a device. Tap "Doorbell." Follow the step-by-step setup guide in the app — it will ask you to scan a QR code on the back of the Ring, then connect it to your home WiFi network. The setup process takes about 5-10 minutes. You\'ll be able to see live video from the doorbell in the app when setup is complete.',
+        content: `Open the Ring app and tap the plus (+) button to add a device. Tap "Doorbell." Follow the step-by-step setup guide in the app — it will ask you to scan a QR code on the back of the Ring, then connect it to your home WiFi network. The setup process takes about 5-10 minutes. You'll be able to see live video from the doorbell in the app when setup is complete.`,
       },
       {
         title: 'Adjust motion sensitivity and notification settings',
-        content: 'After setup, go to the device settings in the Ring app. Under "Motion Settings," adjust the sensitivity slider — start with "Medium" and adjust based on whether you\'re getting too many alerts from passing cars or not enough from actual visitors. Under "Motion Zones," you can draw a box on the camera view to tell Ring which area to watch. Turn on "Rich Notifications" to see a snapshot of who\'s at the door directly in your phone\'s notification.',
+        content: `After setup, go to the device settings in the Ring app. Under "Motion Settings," adjust the sensitivity slider — start with "Medium" and adjust based on whether you're getting too many alerts from passing cars or not enough from actual visitors. Under "Motion Zones," you can draw a box on the camera view to tell Ring which area to watch. Turn on "Rich Notifications" to see a snapshot of who's at the door directly in your phone's notification.`,
         tip: 'If neighbors or pedestrians keep triggering your motion alerts, reduce the motion distance slider. Most people find keeping it to your driveway and front porch gives the best balance of useful alerts without false alarms.',
       },
     ],
@@ -150,7 +150,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'google-nest-thermostat-setup',
     title: 'How to Set Up and Use a Google Nest Thermostat',
-    excerpt: 'A Nest thermostat learns your preferences and saves energy automatically — here\'s how to install it and control it from your phone.',
+    excerpt: `A Nest thermostat learns your preferences and saves energy automatically — here's how to install it and control it from your phone.`,
     category: 'smart-home',
     tags: ['nest', 'thermostat', 'smart home', 'google', 'energy saving', 'heating'],
     readTime: '6 min',
@@ -161,7 +161,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Check compatibility and turn off power before installing',
-        content: 'Before buying a Nest thermostat, check if your heating and cooling system is compatible at nest.com/compatibility. Type in your wiring details and the site will tell you which Nest model works. IMPORTANT: Before touching any wiring, turn off the power to your thermostat at your home\'s breaker box. Find the breaker labeled "Heating," "HVAC," or "Furnace" and switch it off. Test that the thermostat has no power before proceeding.',
+        content: `Before buying a Nest thermostat, check if your heating and cooling system is compatible at nest.com/compatibility. Type in your wiring details and the site will tell you which Nest model works. IMPORTANT: Before touching any wiring, turn off the power to your thermostat at your home's breaker box. Find the breaker labeled "Heating," "HVAC," or "Furnace" and switch it off. Test that the thermostat has no power before proceeding.`,
         warning: 'Always turn off the circuit breaker before removing or touching thermostat wires. This is a 24-volt system — not as dangerous as household current, but touching live wires can damage the thermostat.',
       },
       {
@@ -170,7 +170,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Mount the Nest base and connect wires',
-        content: 'Mount the Nest\'s metal base plate to the wall using the included screws and anchors. Connect each wire to the matching terminal on the Nest base — use your photo from the previous step. The Nest base has labeled holes that match your old thermostat\'s labels. Push each wire into the correct hole until it clicks. Snap the Nest display onto the base. Turn the breaker back on.',
+        content: `Mount the Nest's metal base plate to the wall using the included screws and anchors. Connect each wire to the matching terminal on the Nest base — use your photo from the previous step. The Nest base has labeled holes that match your old thermostat's labels. Push each wire into the correct hole until it clicks. Snap the Nest display onto the base. Turn the breaker back on.`,
       },
       {
         title: 'Connect to WiFi and create a Google Home account',
@@ -178,7 +178,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Use the Nest from your phone or the thermostat display',
-        content: 'In the Google Home app, tap your Nest thermostat to see and control the temperature. Tap the + or - buttons to adjust. You can also set a schedule under "Schedules" — tell the Nest what temperatures you prefer at different times of day. The "Home/Away Assist" feature uses your phone\'s location to automatically lower heat or air conditioning when you leave home, saving energy automatically.',
+        content: `In the Google Home app, tap your Nest thermostat to see and control the temperature. Tap the + or - buttons to adjust. You can also set a schedule under "Schedules" — tell the Nest what temperatures you prefer at different times of day. The "Home/Away Assist" feature uses your phone's location to automatically lower heat or air conditioning when you leave home, saving energy automatically.`,
         tip: 'Most Nest thermostat owners report saving 10-15% on heating and cooling costs. The Nest app shows you energy savings in a monthly "Energy History" report.',
       },
     ],
@@ -187,7 +187,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'apple-carplay-setup',
     title: 'How to Use Apple CarPlay in Your Car',
-    excerpt: 'Apple CarPlay shows your iPhone\'s maps, music, and messages on your car\'s screen — safer and easier than looking at your phone while driving.',
+    excerpt: `Apple CarPlay shows your iPhone's maps, music, and messages on your car's screen — safer and easier than looking at your phone while driving.`,
     category: 'tips-tricks',
     tags: ['carplay', 'apple', 'car', 'navigation', 'driving', 'iphone'],
     readTime: '5 min',
@@ -198,20 +198,20 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Check if your car has CarPlay',
-        content: 'Most new cars and many cars from 2016 onward include CarPlay. Check your car\'s owner manual or look for the CarPlay logo on your car\'s infotainment screen. You can also check apple.com/ios/carplay — there\'s a searchable list of compatible vehicles. If your car doesn\'t have CarPlay built in, aftermarket head units (the car\'s screen unit) from Alpine, Pioneer, and Kenwood add CarPlay for $200-$500 installed.',
+        content: `Most new cars and many cars from 2016 onward include CarPlay. Check your car's owner manual or look for the CarPlay logo on your car's infotainment screen. You can also check apple.com/ios/carplay — there's a searchable list of compatible vehicles. If your car doesn't have CarPlay built in, aftermarket head units (the car's screen unit) from Alpine, Pioneer, and Kenwood add CarPlay for $200-$500 installed.`,
       },
       {
         title: 'Connect your iPhone to CarPlay',
-        content: 'Wired: Plug your iPhone into the USB port in your car using the Lightning or USB-C cable that came with your iPhone. The CarPlay interface should appear on your car\'s screen automatically within 30 seconds. Wireless (newer cars and iPhones): Turn on WiFi and Bluetooth on your iPhone. Some cars automatically detect and connect wirelessly — look for a CarPlay option in your car\'s Bluetooth settings or on the infotainment screen.',
-        tip: 'If CarPlay doesn\'t start automatically when you plug in, look for a CarPlay or Apple icon on your car\'s infotainment screen and tap it to start the connection.',
+        content: `Wired: Plug your iPhone into the USB port in your car using the Lightning or USB-C cable that came with your iPhone. The CarPlay interface should appear on your car's screen automatically within 30 seconds. Wireless (newer cars and iPhones): Turn on WiFi and Bluetooth on your iPhone. Some cars automatically detect and connect wirelessly — look for a CarPlay option in your car's Bluetooth settings or on the infotainment screen.`,
+        tip: `If CarPlay doesn't start automatically when you plug in, look for a CarPlay or Apple icon on your car's infotainment screen and tap it to start the connection.`,
       },
       {
         title: 'Navigate with Apple Maps or Google Maps on CarPlay',
-        content: 'Once CarPlay is running on your car\'s screen, tap the Maps icon to get directions. Type your destination using the car\'s touchscreen keyboard or say "Hey Siri, navigate to [destination]" — this is the hands-free method recommended while driving. Your car\'s screen will show the map while your iPhone\'s speaker (or car audio) gives turn-by-turn directions.',
+        content: `Once CarPlay is running on your car's screen, tap the Maps icon to get directions. Type your destination using the car's touchscreen keyboard or say "Hey Siri, navigate to [destination]" — this is the hands-free method recommended while driving. Your car's screen will show the map while your iPhone's speaker (or car audio) gives turn-by-turn directions.`,
       },
       {
         title: 'Use CarPlay for calls and messages hands-free',
-        content: 'To make a phone call, tap the Phone icon on CarPlay and tap a contact, or say "Hey Siri, call Mom." The call plays through your car\'s speakers with your hands on the wheel. To listen to or reply to text messages, say "Hey Siri, read my messages" — Siri reads them and can send a spoken reply, all without touching your phone.',
+        content: `To make a phone call, tap the Phone icon on CarPlay and tap a contact, or say "Hey Siri, call Mom." The call plays through your car's speakers with your hands on the wheel. To listen to or reply to text messages, say "Hey Siri, read my messages" — Siri reads them and can send a spoken reply, all without touching your phone.`,
         tip: 'Using your voice through Siri is the safest way to use CarPlay — you keep your eyes on the road and hands on the wheel. CarPlay is designed specifically for this purpose.',
       },
     ],
@@ -220,7 +220,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'android-auto-setup',
     title: 'How to Use Android Auto in Your Car',
-    excerpt: 'Android Auto displays your phone\'s maps, music, and messages on your car\'s screen — keeping your eyes on the road while staying connected.',
+    excerpt: `Android Auto displays your phone's maps, music, and messages on your car's screen — keeping your eyes on the road while staying connected.`,
     category: 'tips-tricks',
     tags: ['android auto', 'android', 'car', 'navigation', 'driving', 'google maps'],
     readTime: '5 min',
@@ -231,15 +231,15 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Check if your car and phone support Android Auto',
-        content: 'Android Auto is built into the settings of most Android phones running Android 9 or later. Most cars made after 2017 include Android Auto — check your car\'s manual or look for the Android Auto logo on the infotainment screen. For a list of compatible vehicles, go to android.com/auto.',
+        content: `Android Auto is built into the settings of most Android phones running Android 9 or later. Most cars made after 2017 include Android Auto — check your car's manual or look for the Android Auto logo on the infotainment screen. For a list of compatible vehicles, go to android.com/auto.`,
       },
       {
         title: 'Connect your Android phone to your car',
-        content: 'Wired: Plug your Android phone into the USB port in your car using a USB-A to USB-C cable (or whatever cable your phone uses). Android Auto should launch on the car\'s screen within 30-60 seconds. On the first connection, you\'ll need to accept Android Auto\'s permissions on your phone screen. Wireless: Some newer Android phones and cars connect wirelessly via Bluetooth and WiFi — look for an Android Auto option in your car\'s Bluetooth settings.',
+        content: `Wired: Plug your Android phone into the USB port in your car using a USB-A to USB-C cable (or whatever cable your phone uses). Android Auto should launch on the car's screen within 30-60 seconds. On the first connection, you'll need to accept Android Auto's permissions on your phone screen. Wireless: Some newer Android phones and cars connect wirelessly via Bluetooth and WiFi — look for an Android Auto option in your car's Bluetooth settings.`,
       },
       {
         title: 'Navigate with Google Maps on Android Auto',
-        content: 'Tap the navigation icon on your car\'s Android Auto screen. Google Maps opens on the car\'s display. Search for your destination by tapping the search bar or saying "OK Google, navigate to [destination]." Google Maps shows turn-by-turn directions on the car\'s screen while speaking directions through the car\'s speakers.',
+        content: `Tap the navigation icon on your car's Android Auto screen. Google Maps opens on the car's display. Search for your destination by tapping the search bar or saying "OK Google, navigate to [destination]." Google Maps shows turn-by-turn directions on the car's screen while speaking directions through the car's speakers.`,
       },
       {
         title: 'Use your voice for calls and messages',
@@ -251,7 +251,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'alexa-reminders-setup',
     title: 'How to Set Up Alexa Reminders for Medications and Appointments',
-    excerpt: 'Amazon Alexa can remind you to take medications, attend appointments, and complete tasks — here\'s how to set up daily and one-time reminders.',
+    excerpt: `Amazon Alexa can remind you to take medications, attend appointments, and complete tasks — here's how to set up daily and one-time reminders.`,
     category: 'smart-home',
     tags: ['alexa', 'reminders', 'medications', 'echo', 'amazon', 'health'],
     readTime: '4 min',
@@ -262,7 +262,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Set a daily medication reminder by voice',
-        content: 'Say "Hey Alexa, remind me to take my morning medication every day at 8 AM." At 8 AM each morning, Alexa will say out loud "It\'s time to take your morning medication." To set reminders for multiple medications at different times: "Hey Alexa, remind me to take my blood pressure pill every day at 7 AM" and separately "Hey Alexa, remind me to take my evening pill every day at 9 PM."',
+        content: `Say "Hey Alexa, remind me to take my morning medication every day at 8 AM." At 8 AM each morning, Alexa will say out loud "It's time to take your morning medication." To set reminders for multiple medications at different times: "Hey Alexa, remind me to take my blood pressure pill every day at 7 AM" and separately "Hey Alexa, remind me to take my evening pill every day at 9 PM."`,
         tip: 'You can be specific in the reminder name: "Hey Alexa, remind me to take my metformin with breakfast every day at 8 AM." Alexa will repeat exactly what you said when the reminder goes off.',
       },
       {
@@ -271,11 +271,11 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Manage reminders in the Alexa app',
-        content: 'Open the Alexa app on your phone and tap "More" (three horizontal lines) at the bottom right. Tap "Reminders & Alarms." You\'ll see all your active reminders. Tap any reminder to edit the time, date, or message, or tap the trash icon to delete it. The app gives you a convenient overview of everything scheduled.',
+        content: `Open the Alexa app on your phone and tap "More" (three horizontal lines) at the bottom right. Tap "Reminders & Alarms." You'll see all your active reminders. Tap any reminder to edit the time, date, or message, or tap the trash icon to delete it. The app gives you a convenient overview of everything scheduled.`,
       },
       {
         title: 'Hear a list of your reminders',
-        content: 'Ask "Hey Alexa, what are my reminders?" at any time to hear all your scheduled reminders read back to you. Or "Hey Alexa, what are my reminders for today?" for just today\'s items. If you set a reminder and want to confirm Alexa understood it correctly: "Hey Alexa, what reminders do I have for tomorrow?" Alexa will read them back.',
+        content: `Ask "Hey Alexa, what are my reminders?" at any time to hear all your scheduled reminders read back to you. Or "Hey Alexa, what are my reminders for today?" for just today's items. If you set a reminder and want to confirm Alexa understood it correctly: "Hey Alexa, what reminders do I have for tomorrow?" Alexa will read them back.`,
         tip: 'Alexa can also help track more than medications. "Hey Alexa, remind me to drink water every hour" — "Hey Alexa, remind me to call my daughter every Sunday at 2 PM." These consistent prompts are especially helpful for people managing health conditions.',
       },
     ],
@@ -295,7 +295,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Plug in your Chromecast',
-        content: 'Plug the Chromecast into an HDMI port on the back or side of your TV. Plug the power cable into the Chromecast and a wall outlet. Turn your TV on and use your TV remote to switch to the HDMI input you used. You\'ll see the Chromecast setup screen appear on your TV.',
+        content: `Plug the Chromecast into an HDMI port on the back or side of your TV. Plug the power cable into the Chromecast and a wall outlet. Turn your TV on and use your TV remote to switch to the HDMI input you used. You'll see the Chromecast setup screen appear on your TV.`,
       },
       {
         title: 'Download the Google Home app and complete setup',
@@ -304,11 +304,11 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Cast from a streaming app on your phone',
         content: 'Open Netflix, YouTube, or another streaming app on your phone. Find the Cast icon — it looks like a rectangle with a WiFi symbol in the bottom left corner. Tap it. Your Chromecast will appear in the list — tap it. The video will appear on your TV screen. You can now control the video from your phone (play, pause, fast-forward) while your TV displays it.',
-        tip: 'Once you\'ve started casting, you can put your phone away or use it for other things. The video continues playing on your TV from the internet — you don\'t need to keep the app open on your phone.',
+        tip: `Once you've started casting, you can put your phone away or use it for other things. The video continues playing on your TV from the internet — you don't need to keep the app open on your phone.`,
       },
       {
         title: 'Cast photos or music to your TV',
-        content: 'In Google Photos: tap a photo, tap the Share icon, tap "Cast to TV." Your photos will display as a slideshow on your TV — great for sharing vacation photos with family. For music, open Spotify or Google Play Music, tap the Cast icon, and select your Chromecast. Your music plays through your TV\'s speakers.',
+        content: `In Google Photos: tap a photo, tap the Share icon, tap "Cast to TV." Your photos will display as a slideshow on your TV — great for sharing vacation photos with family. For music, open Spotify or Google Play Music, tap the Cast icon, and select your Chromecast. Your music plays through your TV's speakers.`,
       },
     ],
   },
@@ -327,7 +327,7 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Capture the whole screen with Print Screen',
-        content: 'Press the "PrtSc" (Print Screen) key on your keyboard — it\'s usually in the top right area of the keyboard, often labeled "PrtSc" or "Print Screen." This copies an image of your entire screen to the clipboard. Open the Photos app or Word, press Ctrl+V to paste it, and save the file. Alternatively, press the Windows key + PrtSc together — this automatically saves a screenshot to your Pictures → Screenshots folder.',
+        content: `Press the "PrtSc" (Print Screen) key on your keyboard — it's usually in the top right area of the keyboard, often labeled "PrtSc" or "Print Screen." This copies an image of your entire screen to the clipboard. Open the Photos app or Word, press Ctrl+V to paste it, and save the file. Alternatively, press the Windows key + PrtSc together — this automatically saves a screenshot to your Pictures → Screenshots folder.`,
         tip: 'The Windows key is the key with the Windows logo (four squares) on it, usually at the bottom left of the keyboard.',
       },
       {
@@ -359,16 +359,16 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Take a screenshot on iPhones with Face ID (iPhone X and newer)',
-        content: 'Press the Side button (on the right side of the phone) and the Volume Up button (on the left side) at the same time. Press them simultaneously — not one after the other. Release both buttons. You\'ll see a white flash and hear a camera shutter sound (if your volume is on). A small thumbnail of the screenshot appears in the bottom left corner.',
-        tip: 'Pressing both buttons simultaneously is the tricky part — if the screenshot isn\'t working, try pressing the Side button first and then quickly adding the Volume Up button.',
+        content: `Press the Side button (on the right side of the phone) and the Volume Up button (on the left side) at the same time. Press them simultaneously — not one after the other. Release both buttons. You'll see a white flash and hear a camera shutter sound (if your volume is on). A small thumbnail of the screenshot appears in the bottom left corner.`,
+        tip: `Pressing both buttons simultaneously is the tricky part — if the screenshot isn't working, try pressing the Side button first and then quickly adding the Volume Up button.`,
       },
       {
         title: 'Take a screenshot on iPhones with a Home button (iPhone 8 and older)',
-        content: 'Press the Home button (the round button at the bottom center) and the Side or Sleep/Wake button (on the right side) at the same time. You\'ll see a white flash and hear the shutter sound. The screenshot thumbnail appears in the bottom left corner.',
+        content: `Press the Home button (the round button at the bottom center) and the Side or Sleep/Wake button (on the right side) at the same time. You'll see a white flash and hear the shutter sound. The screenshot thumbnail appears in the bottom left corner.`,
       },
       {
         title: 'View and share your screenshot',
-        content: 'Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor — you can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to immediately send it by text or email. If you don\'t tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.',
+        content: `Tap the thumbnail in the bottom left corner right after taking the screenshot to open the markup editor — you can add arrows or text to highlight something. Tap "Done" to save it, or tap the Share icon to immediately send it by text or email. If you don't tap the thumbnail, it disappears after a few seconds but is automatically saved to your Photos app in the "Recents" album.`,
       },
     ],
   },
@@ -396,8 +396,8 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Get the coupon and show it to your pharmacist',
-        content: 'Tap or click the price for the pharmacy you\'d like to use. GoodRx shows a coupon with a discount code and your medication details. Save this to your phone or print it. When you pick up your prescription, hand the pharmacist your GoodRx coupon (or show it on your phone screen) and ask them to use the GoodRx price. Say: "I have a GoodRx coupon — can I use this instead of my insurance?"',
-        warning: 'You can\'t use a GoodRx coupon and Medicare/insurance at the same time on the same prescription. Compare the GoodRx price to your insurance copay and choose whichever is lower.',
+        content: `Tap or click the price for the pharmacy you'd like to use. GoodRx shows a coupon with a discount code and your medication details. Save this to your phone or print it. When you pick up your prescription, hand the pharmacist your GoodRx coupon (or show it on your phone screen) and ask them to use the GoodRx price. Say: "I have a GoodRx coupon — can I use this instead of my insurance?"`,
+        warning: `You can't use a GoodRx coupon and Medicare/insurance at the same time on the same prescription. Compare the GoodRx price to your insurance copay and choose whichever is lower.`,
       },
       {
         title: 'Compare the GoodRx price to your Medicare Part D copay',
@@ -410,7 +410,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-use-amazon-prime',
     title: 'How to Get the Most Out of Amazon Prime',
-    excerpt: 'Amazon Prime is more than free shipping — it includes video streaming, photo storage, prescription savings, and more. Here\'s what you\'re already paying for.',
+    excerpt: `Amazon Prime is more than free shipping — it includes video streaming, photo storage, prescription savings, and more. Here's what you're already paying for.`,
     category: 'app-guides',
     tags: ['amazon prime', 'amazon', 'streaming', 'prime video', 'shopping', 'benefits'],
     readTime: '5 min',
@@ -435,7 +435,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Read free books with Prime Reading',
         content: 'Prime includes "Prime Reading" — a rotating library of over 3,000 books, magazines, and comics available for free. Open the Kindle app (free download) or go to amazon.com/kindle and look for the "Prime Reading" category. Tap any book and tap "Read for Free." Books are delivered to your Kindle app or Kindle device instantly.',
-        tip: 'The Kindle app is free and works on any iPhone, Android phone, iPad, or tablet — you don\'t need a physical Kindle device to read Kindle books.',
+        tip: `The Kindle app is free and works on any iPhone, Android phone, iPad, or tablet — you don't need a physical Kindle device to read Kindle books.`,
       },
     ],
   },
@@ -462,17 +462,17 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Turn on Fall Detection and Emergency SOS',
-        content: 'Fall Detection is one of the most important features for older adults. If your Apple Watch detects you\'ve fallen and you don\'t respond to a check-in within 30 seconds, it automatically calls emergency services and sends your location to your emergency contacts. To enable: open the Watch app on your iPhone → Emergency SOS → turn on "Fall Detection" and "Emergency SOS via Satellite." Add emergency contacts under Health → Medical ID.',
-        tip: 'Fall Detection works best when worn on the wrist. It\'s most accurate on Apple Watch Series 4 and newer. The watch can also detect irregular heart rhythm (atrial fibrillation) and notify you.',
+        content: `Fall Detection is one of the most important features for older adults. If your Apple Watch detects you've fallen and you don't respond to a check-in within 30 seconds, it automatically calls emergency services and sends your location to your emergency contacts. To enable: open the Watch app on your iPhone → Emergency SOS → turn on "Fall Detection" and "Emergency SOS via Satellite." Add emergency contacts under Health → Medical ID.`,
+        tip: `Fall Detection works best when worn on the wrist. It's most accurate on Apple Watch Series 4 and newer. The watch can also detect irregular heart rhythm (atrial fibrillation) and notify you.`,
       },
       {
         title: 'Use the most helpful daily features',
-        content: 'Activity tracking: your Watch automatically tracks steps, calories burned, and "Move, Exercise, Stand" goals — three colorful rings on the watch face. Close all three rings to meet your daily activity goal. Heart rate: tap the Heart Rate app to see your current heart rate. Messages: when a text arrives, your Watch taps your wrist. Raise your wrist to read it and tap the reply button to send a quick "OK" or "I\'ll call you."',
+        content: `Activity tracking: your Watch automatically tracks steps, calories burned, and "Move, Exercise, Stand" goals — three colorful rings on the watch face. Close all three rings to meet your daily activity goal. Heart rate: tap the Heart Rate app to see your current heart rate. Messages: when a text arrives, your Watch taps your wrist. Raise your wrist to read it and tap the reply button to send a quick "OK" or "I'll call you."`,
       },
       {
         title: 'Charge your Apple Watch every night',
-        content: 'Apple Watch batteries last about 18-24 hours depending on the model and usage. Place your Watch on its magnetic charger every night before bed. Most people develop the habit of charging their Watch on their nightstand while they sleep — it\'s fully charged every morning when they put it on.',
-        tip: 'The Sleep Tracking feature requires a different charging habit — charge your Watch during the day (while showering and getting ready) so it\'s charged by bedtime. You can track sleep by wearing it at night and charging in the morning instead.',
+        content: `Apple Watch batteries last about 18-24 hours depending on the model and usage. Place your Watch on its magnetic charger every night before bed. Most people develop the habit of charging their Watch on their nightstand while they sleep — it's fully charged every morning when they put it on.`,
+        tip: `The Sleep Tracking feature requires a different charging habit — charge your Watch during the day (while showering and getting ready) so it's charged by bedtime. You can track sleep by wearing it at night and charging in the morning instead.`,
       },
     ],
   },
@@ -495,17 +495,17 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Send money safely',
-        content: 'Tap the dollar sign ($) icon, type an amount, then tap "Pay." Type the recipient\'s phone number, email, or $Cashtag. Add a note. Review all details carefully — especially the $Cashtag spelling — and tap "Pay." Cash App payments are instant and difficult to reverse, so accuracy matters.',
+        content: `Tap the dollar sign ($) icon, type an amount, then tap "Pay." Type the recipient's phone number, email, or $Cashtag. Add a note. Review all details carefully — especially the $Cashtag spelling — and tap "Pay." Cash App payments are instant and difficult to reverse, so accuracy matters.`,
         warning: 'Only send money to people you know. Cash App is not designed for purchases from strangers and does not offer buyer protection like PayPal Goods & Services does.',
       },
       {
         title: 'Transfer your Cash App balance to your bank',
-        content: 'Don\'t leave money sitting in Cash App for long. On the home screen, tap the dollar amount showing your balance. Tap "Cash Out" → select "Instant" (free, up to $2,500 per day) or "Standard" (1-3 business days, free). Tap "Confirm Cash Out." Your money moves from Cash App to your linked bank account. The Consumer Financial Protection Bureau (CFPB) recommends not leaving large balances in payment apps.',
+        content: `Don't leave money sitting in Cash App for long. On the home screen, tap the dollar amount showing your balance. Tap "Cash Out" → select "Instant" (free, up to $2,500 per day) or "Standard" (1-3 business days, free). Tap "Confirm Cash Out." Your money moves from Cash App to your linked bank account. The Consumer Financial Protection Bureau (CFPB) recommends not leaving large balances in payment apps.`,
       },
       {
         title: 'Recognize Cash App scams',
-        content: 'Common Cash App scams: (1) "Cash App Friday" giveaways on social media — Cash App never asks you to send money to receive a larger payout. (2) Fake Cash App support on social media or phone — Cash App has no phone support; real support is only through the app. (3) Accidental payment scam — same as with Venmo. (4) Flipping scams — "send me $50 and I\'ll flip it to $500." These always result in total loss.',
-        tip: 'Enable Cash App\'s security lock: tap the profile icon → Security → Enable Security Lock. This requires your fingerprint or PIN for every payment.',
+        content: `Common Cash App scams: (1) "Cash App Friday" giveaways on social media — Cash App never asks you to send money to receive a larger payout. (2) Fake Cash App support on social media or phone — Cash App has no phone support; real support is only through the app. (3) Accidental payment scam — same as with Venmo. (4) Flipping scams — "send me $50 and I'll flip it to $500." These always result in total loss.`,
+        tip: `Enable Cash App's security lock: tap the profile icon → Security → Enable Security Lock. This requires your fingerprint or PIN for every payment.`,
       },
     ],
   },
@@ -528,12 +528,12 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Add the device and connect to WiFi',
-        content: 'In the Google Home app, tap the plus (+) button at the top left → "Set up device" → "New devices." Your Google Home speaker will appear in the list. Tap it. The app will ask you to select which room the device is in (like "Living Room"). Then it will connect the speaker to your home WiFi — you\'ll need to enter your WiFi password once.',
+        content: `In the Google Home app, tap the plus (+) button at the top left → "Set up device" → "New devices." Your Google Home speaker will appear in the list. Tap it. The app will ask you to select which room the device is in (like "Living Room"). Then it will connect the speaker to your home WiFi — you'll need to enter your WiFi password once.`,
       },
       {
         title: 'Try your first voice commands',
-        content: 'Say "Hey Google, what\'s the weather?" — your speaker will respond out loud. Other useful starters: "Hey Google, play relaxing music" — "Hey Google, set a timer for 20 minutes" — "Hey Google, how many cups in a quart?" — "Hey Google, tell me a fun fact" — "Hey Google, remind me to take my medication every day at 8 AM." The speaker uses the same Google Assistant as Android phones, so anything you can ask Google Assistant, you can ask it here.',
-        tip: 'Google Home devices can hear you from across the room even with some background noise — you don\'t need to be close to them or raise your voice.',
+        content: `Say "Hey Google, what's the weather?" — your speaker will respond out loud. Other useful starters: "Hey Google, play relaxing music" — "Hey Google, set a timer for 20 minutes" — "Hey Google, how many cups in a quart?" — "Hey Google, tell me a fun fact" — "Hey Google, remind me to take my medication every day at 8 AM." The speaker uses the same Google Assistant as Android phones, so anything you can ask Google Assistant, you can ask it here.`,
+        tip: `Google Home devices can hear you from across the room even with some background noise — you don't need to be close to them or raise your voice.`,
       },
       {
         title: 'Link smart devices to control them with your voice',
@@ -565,11 +565,11 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Track your medications in the Health app',
-        content: 'The Health app has a Medications feature to help you remember your prescriptions. Tap "Browse" → "Medications" → "Add a Medication." Type the medication name, set the dosage, and choose a schedule (daily at a certain time, as needed, etc.). The Health app will send you a reminder notification when it\'s time to take each medication. Tap to log whether you took it or skipped it.',
+        content: `The Health app has a Medications feature to help you remember your prescriptions. Tap "Browse" → "Medications" → "Add a Medication." Type the medication name, set the dosage, and choose a schedule (daily at a certain time, as needed, etc.). The Health app will send you a reminder notification when it's time to take each medication. Tap to log whether you took it or skipped it.`,
       },
       {
         title: 'Share health data with your doctor',
-        content: 'If your doctor uses a compatible system (like Epic\'s Health app integration or Apple Health Records), you can share your health data directly with them digitally. Tap your profile picture → "Health Records" → look for your health system or hospital. If connected, lab results, medications, and visit history will sync automatically into your Health app. You can also export your health data: profile picture → "Export All Health Data" to create a file to email to your doctor.',
+        content: `If your doctor uses a compatible system (like Epic's Health app integration or Apple Health Records), you can share your health data directly with them digitally. Tap your profile picture → "Health Records" → look for your health system or hospital. If connected, lab results, medications, and visit history will sync automatically into your Health app. You can also export your health data: profile picture → "Export All Health Data" to create a file to email to your doctor.`,
       },
     ],
   },
@@ -577,7 +577,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-use-gmail',
     title: 'How to Set Up and Use Gmail',
-    excerpt: 'Gmail is a free email service from Google — here\'s how to create an account, send emails, and stay organized.',
+    excerpt: `Gmail is a free email service from Google — here's how to create an account, send emails, and stay organized.`,
     category: 'essential-skills',
     tags: ['gmail', 'email', 'google', 'setup', 'send email', 'inbox'],
     readTime: '6 min',
@@ -593,20 +593,20 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Send your first email',
-        content: 'On computer: Click the "Compose" button (red pencil icon) on the left side. In the "To" field, type the recipient\'s email address. In "Subject," type a brief description of the email. Click in the large text area and type your message. Click the blue "Send" button when ready. On the app: tap the pencil/compose icon at the bottom right and follow the same steps.',
+        content: `On computer: Click the "Compose" button (red pencil icon) on the left side. In the "To" field, type the recipient's email address. In "Subject," type a brief description of the email. Click in the large text area and type your message. Click the blue "Send" button when ready. On the app: tap the pencil/compose icon at the bottom right and follow the same steps.`,
       },
       {
         title: 'Read, reply to, and organize emails',
         content: 'Your inbox shows all received emails. Tap or click any email to read it. At the bottom of the email, tap "Reply" to respond to the sender, "Reply all" to respond to everyone on the email, or "Forward" to send the email to someone new. To delete an email, swipe it left (on phone) or check the box and click the trash icon. Deleted emails go to Trash and are automatically deleted after 30 days.',
       },
       {
-        title: 'Use Gmail\'s search to find any email',
-        content: 'Gmail has powerful search built in. Click or tap the search bar at the top and type any words from the email you\'re looking for — the sender\'s name, a subject word, or any text from the message. Gmail searches all your emails instantly. You can also search for "emails from John" or "emails about dentist" in plain language.',
-        tip: 'Gmail automatically sorts promotional emails (store ads) and social media notifications into separate "Promotions" and "Social" tabs to keep your main inbox cleaner. Tap these tabs to see what\'s there.',
+        title: `Use Gmail's search to find any email`,
+        content: `Gmail has powerful search built in. Click or tap the search bar at the top and type any words from the email you're looking for — the sender's name, a subject word, or any text from the message. Gmail searches all your emails instantly. You can also search for "emails from John" or "emails about dentist" in plain language.`,
+        tip: `Gmail automatically sorts promotional emails (store ads) and social media notifications into separate "Promotions" and "Social" tabs to keep your main inbox cleaner. Tap these tabs to see what's there.`,
       },
       {
         title: 'Keep your inbox safe from spam',
-        content: 'If a suspicious email arrives, do not click any links in it. Instead, open the email and click the three-dot menu (or right-click on a computer) and select "Report spam." Gmail will move it to Spam and use it to train its filters. For emails that keep coming that you don\'t want, scroll to the very bottom of the email and click "Unsubscribe" — this stops legitimate senders from emailing you again.',
+        content: `If a suspicious email arrives, do not click any links in it. Instead, open the email and click the three-dot menu (or right-click on a computer) and select "Report spam." Gmail will move it to Spam and use it to train its filters. For emails that keep coming that you don't want, scroll to the very bottom of the email and click "Unsubscribe" — this stops legitimate senders from emailing you again.`,
       },
     ],
   },
@@ -614,7 +614,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'how-to-check-credit-score-free',
     title: 'How to Check Your Credit Score for Free',
-    excerpt: 'You can check your credit score for free without hurting it — here\'s how to use the official free sources and what the numbers mean.',
+    excerpt: `You can check your credit score for free without hurting it — here's how to use the official free sources and what the numbers mean.`,
     category: 'financial-tech',
     tags: ['credit score', 'credit report', 'free', 'annualcreditreport', 'credit bureaus'],
     readTime: '5 min',
@@ -631,7 +631,7 @@ export const guidesBatch14: Guide[] = [
       {
         title: 'Check your free credit score through your bank or credit card',
         content: 'Many banks and credit card companies now offer free credit score monitoring to their customers. Log in to your bank or credit card app and look for "Credit Score" or "FICO Score" in the app. Popular banks offering this include Chase (Credit Journey), Wells Fargo (Credit Close-Up), Capital One (CreditWise), and many credit unions. This score updates monthly and checking it does not affect your credit.',
-        tip: 'CreditWise from Capital One is free to anyone — you don\'t need to be a Capital One customer. Download the app or go to creditwise.capitalone.com.',
+        tip: `CreditWise from Capital One is free to anyone — you don't need to be a Capital One customer. Download the app or go to creditwise.capitalone.com.`,
       },
       {
         title: 'Understand what your credit score means',
@@ -639,7 +639,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Review your credit report for errors',
-        content: 'When you get your credit report, scan it for accounts you don\'t recognize, late payments that weren\'t actually late, or incorrect personal information. Errors on credit reports are more common than most people realize and can lower your score unfairly. To dispute an error, go directly to the credit bureau\'s website (equifax.com, transunion.com, or experian.com) and click "Dispute" to submit a correction with your documentation.',
+        content: `When you get your credit report, scan it for accounts you don't recognize, late payments that weren't actually late, or incorrect personal information. Errors on credit reports are more common than most people realize and can lower your score unfairly. To dispute an error, go directly to the credit bureau's website (equifax.com, transunion.com, or experian.com) and click "Dispute" to submit a correction with your documentation.`,
       },
     ],
   },
@@ -647,7 +647,7 @@ export const guidesBatch14: Guide[] = [
   {
     slug: 'email-attachment-send-receive',
     title: 'How to Send and Receive Email Attachments (Photos and Documents)',
-    excerpt: 'Sending a photo or file by email is easy once you know where the attachment button is — here\'s how it works on iPhone and computer.',
+    excerpt: `Sending a photo or file by email is easy once you know where the attachment button is — here's how it works on iPhone and computer.`,
     category: 'essential-skills',
     tags: ['email', 'attachment', 'send photo', 'document', 'gmail', 'iphone'],
     readTime: '4 min',
@@ -663,11 +663,11 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Attach a file to an email on a Windows computer',
-        content: 'In Gmail on a computer, click "Compose" to start a new email. At the bottom of the compose window, click the paperclip icon. A file browser opens — navigate to the photo or document you want to attach (photos are often in the "Pictures" folder). Double-click the file to attach it. You\'ll see it appear at the bottom of your email before you send.',
+        content: `In Gmail on a computer, click "Compose" to start a new email. At the bottom of the compose window, click the paperclip icon. A file browser opens — navigate to the photo or document you want to attach (photos are often in the "Pictures" folder). Double-click the file to attach it. You'll see it appear at the bottom of your email before you send.`,
       },
       {
         title: 'Open an attachment someone sent you',
-        content: 'When an email has an attachment, you\'ll see a paperclip icon on the email in your inbox or a preview of the file inside the email. On iPhone: tap the attachment image or file name to open it. For photos, they open in Photos app. For PDFs, they open in a reading view. Tap the Share icon to save or forward it. On a computer: click the attachment file name or thumbnail to download it to your computer, then open it from your Downloads folder.',
+        content: `When an email has an attachment, you'll see a paperclip icon on the email in your inbox or a preview of the file inside the email. On iPhone: tap the attachment image or file name to open it. For photos, they open in Photos app. For PDFs, they open in a reading view. Tap the Share icon to save or forward it. On a computer: click the attachment file name or thumbnail to download it to your computer, then open it from your Downloads folder.`,
         warning: 'Only open attachments from people you know and trust. Attachments from strangers — especially .exe files, .zip files, or unexpected documents — can contain viruses or malware. When in doubt, do not open it.',
       },
     ],
@@ -687,12 +687,12 @@ export const guidesBatch14: Guide[] = [
     steps: [
       {
         title: 'Create a new note',
-        content: 'Open the Notes app (yellow icon with white lines). Tap the compose button — a yellow square with a pencil — in the bottom right corner. A blank note opens with the keyboard ready. Type your note. The first line becomes the title. Tap "Done" when finished. Your note is saved automatically — you don\'t need to press a Save button.',
+        content: `Open the Notes app (yellow icon with white lines). Tap the compose button — a yellow square with a pencil — in the bottom right corner. A blank note opens with the keyboard ready. Type your note. The first line becomes the title. Tap "Done" when finished. Your note is saved automatically — you don't need to press a Save button.`,
         tip: 'You can also quickly create a note by saying "Hey Siri, create a new note" or "Hey Siri, add milk to my grocery list."',
       },
       {
         title: 'Make a checklist for shopping or tasks',
-        content: 'To create a checklist inside a note, tap the checklist icon in the toolbar above the keyboard (it looks like a circle with a checkmark). Type the first item and press Return to add the next. When you\'re in a store or completing tasks, tap the circle next to each item to check it off — the item moves to the bottom with a strikethrough.',
+        content: `To create a checklist inside a note, tap the checklist icon in the toolbar above the keyboard (it looks like a circle with a checkmark). Type the first item and press Return to add the next. When you're in a store or completing tasks, tap the circle next to each item to check it off — the item moves to the bottom with a strikethrough.`,
       },
       {
         title: 'Add a photo to a note',
@@ -700,7 +700,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Find any note quickly',
-        content: 'Swipe down while in the Notes app to reveal the search bar at the top. Type any word that appears in the note you\'re looking for. Notes searches the text of every note you\'ve ever written and shows matching results instantly. You can also organize notes into folders: tap "New Folder" at the bottom left of the main Notes screen.',
+        content: `Swipe down while in the Notes app to reveal the search bar at the top. Type any word that appears in the note you're looking for. Notes searches the text of every note you've ever written and shows matching results instantly. You can also organize notes into folders: tap "New Folder" at the bottom left of the main Notes screen.`,
       },
     ],
   },
@@ -724,7 +724,7 @@ export const guidesBatch14: Guide[] = [
       },
       {
         title: 'Zoom in on small text',
-        content: 'Hold your iPhone over the small text you want to read. Use the yellow zoom slider at the bottom of the screen — drag it to the right to zoom in. The camera will magnify the text on your screen. Use both hands if needed to keep the phone steady over the item you\'re reading.',
+        content: `Hold your iPhone over the small text you want to read. Use the yellow zoom slider at the bottom of the screen — drag it to the right to zoom in. The camera will magnify the text on your screen. Use both hands if needed to keep the phone steady over the item you're reading.`,
       },
       {
         title: 'Freeze the image to read comfortably',

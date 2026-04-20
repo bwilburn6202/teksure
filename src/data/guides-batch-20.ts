@@ -4,7 +4,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'onedrive-setup-guide',
     title: 'How to Set Up and Use OneDrive on Windows',
-    excerpt: 'OneDrive is Microsoft\'s free cloud storage built into Windows. Learn how to set it up and automatically back up your files.',
+    excerpt: `OneDrive is Microsoft's free cloud storage built into Windows. Learn how to set it up and automatically back up your files.`,
     category: 'windows-guides',
     tags: ['onedrive', 'cloud storage', 'windows', 'backup', 'microsoft'],
     readTime: '6 min',
@@ -15,7 +15,7 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Sign in to OneDrive',
-        content: 'Click the white or blue cloud icon in the bottom-right corner of your taskbar (near the clock). If you don\'t see it, click the small up-arrow (^) first to show hidden icons. A window will ask you to sign in — use your Microsoft account email and password. If you don\'t have a Microsoft account, you can create one free at account.microsoft.com.',
+        content: `Click the white or blue cloud icon in the bottom-right corner of your taskbar (near the clock). If you don't see it, click the small up-arrow (^) first to show hidden icons. A window will ask you to sign in — use your Microsoft account email and password. If you don't have a Microsoft account, you can create one free at account.microsoft.com.`,
         tip: 'Your Microsoft account is the same one you use for Windows sign-in, Outlook email, or Xbox. You likely already have one.',
       },
       {
@@ -25,16 +25,16 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Find your OneDrive folder',
-        content: 'Open File Explorer (the folder icon on your taskbar). In the left sidebar, you\'ll see "OneDrive" listed — click it to open the folder. Any file or folder you drag into here will be saved to the cloud. Files with a green checkmark are backed up. Files with a blue circle are still uploading.',
+        content: `Open File Explorer (the folder icon on your taskbar). In the left sidebar, you'll see "OneDrive" listed — click it to open the folder. Any file or folder you drag into here will be saved to the cloud. Files with a green checkmark are backed up. Files with a blue circle are still uploading.`,
       },
       {
         title: 'Access your files from anywhere',
-        content: 'To reach your files from another device or a web browser, go to onedrive.live.com and sign in with your Microsoft account. You\'ll see all your backed-up files and folders. You can view, download, or share anything stored there.',
+        content: `To reach your files from another device or a web browser, go to onedrive.live.com and sign in with your Microsoft account. You'll see all your backed-up files and folders. You can view, download, or share anything stored there.`,
         tip: 'Quick Tip: Install the OneDrive app on your iPhone or Android phone to access and upload files directly from your phone camera.',
       },
       {
         title: 'Share a file with someone',
-        content: 'Right-click any file in your OneDrive folder and choose "Share." Type the email address of the person you want to share with and click Send. They\'ll get a link to view or edit the file — no need to email large attachments.',
+        content: `Right-click any file in your OneDrive folder and choose "Share." Type the email address of the person you want to share with and click Send. They'll get a link to view or edit the file — no need to email large attachments.`,
         warning: 'When sharing, make sure the permission is set to "Can view" unless you actually want the other person to edit your document.',
       },
     ],
@@ -59,12 +59,12 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Ask your first question',
-        content: 'Click in the text box at the bottom and type your question in everyday language. For example: "What is the weather going to be like this week?" or "Can you help me write a thank-you note to my doctor?" or "What does \'bandwidth\' mean in plain English?" Then press Enter or click the send button.',
+        content: `Click in the text box at the bottom and type your question in everyday language. For example: "What is the weather going to be like this week?" or "Can you help me write a thank-you note to my doctor?" or "What does 'bandwidth' mean in plain English?" Then press Enter or click the send button.`,
       },
       {
         title: 'Try some helpful everyday requests',
         content: 'Copilot works well for: writing or polishing emails and messages, summarizing an article you paste in, explaining confusing tech or medical terms, giving you a simple recipe, looking up phone numbers or addresses, translating short phrases to Spanish, and suggesting what to say in a tricky situation.',
-        tip: 'Quick Tip: If Copilot\'s first answer is too long or technical, just reply "Can you say that in simpler language?" or "Give me just the short version."',
+        tip: `Quick Tip: If Copilot's first answer is too long or technical, just reply "Can you say that in simpler language?" or "Give me just the short version."`,
       },
       {
         title: 'Use Copilot in Microsoft Word or Outlook',
@@ -81,7 +81,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'apple-calendar-beginners',
     title: 'How to Use Apple Calendar on iPhone, iPad, and Mac',
-    excerpt: 'Apple Calendar keeps all your appointments in one place and syncs across all your Apple devices. Here\'s how to add events, set reminders, and share with family.',
+    excerpt: `Apple Calendar keeps all your appointments in one place and syncs across all your Apple devices. Here's how to add events, set reminders, and share with family.`,
     category: 'essential-skills',
     tags: ['apple calendar', 'iphone', 'ipad', 'mac', 'icloud', 'appointments'],
     readTime: '5 min',
@@ -92,12 +92,12 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Open the Calendar app and add an event',
-        content: 'Tap the Calendar app on your iPhone or iPad. Tap the "+" button in the top-right corner to add a new event. Type a title (like "Doctor appointment"), then tap the date and time fields to set when it is. Tap "Add" when you\'re done.',
+        content: `Tap the Calendar app on your iPhone or iPad. Tap the "+" button in the top-right corner to add a new event. Type a title (like "Doctor appointment"), then tap the date and time fields to set when it is. Tap "Add" when you're done.`,
         tip: 'Quick Tip: On iPhone, you can also tap directly on the date of the event in the month view, then tap the "+" button to pre-fill that date.',
       },
       {
-        title: 'Set a reminder so you don\'t forget',
-        content: 'When creating or editing an event, tap "Alert." You\'ll see options like "5 minutes before," "30 minutes before," "1 day before," and more. Tap whichever works for you. For doctor appointments, "1 day before" and "2 hours before" together is a good combination. Your phone will send a notification at that time.',
+        title: `Set a reminder so you don't forget`,
+        content: `When creating or editing an event, tap "Alert." You'll see options like "5 minutes before," "30 minutes before," "1 day before," and more. Tap whichever works for you. For doctor appointments, "1 day before" and "2 hours before" together is a good combination. Your phone will send a notification at that time.`,
       },
       {
         title: 'Add a repeating event',
@@ -105,8 +105,8 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Share a calendar with family',
-        content: 'Go to the Calendars tab at the bottom. Tap the info button (circle with an "i") next to a calendar name. Tap "Add Person" and enter a family member\'s email address. They\'ll get an invitation to view (or edit, your choice) that calendar. Great for sharing a family events calendar.',
-        warning: 'Only share calendars with people you trust — they\'ll be able to see all events on that calendar.',
+        content: `Go to the Calendars tab at the bottom. Tap the info button (circle with an "i") next to a calendar name. Tap "Add Person" and enter a family member's email address. They'll get an invitation to view (or edit, your choice) that calendar. Great for sharing a family events calendar.`,
+        warning: `Only share calendars with people you trust — they'll be able to see all events on that calendar.`,
       },
       {
         title: 'Make sure iCloud sync is on',
@@ -129,25 +129,25 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Open Apple Wallet',
-        content: 'Tap the Wallet app on your iPhone (it looks like a folded leather wallet). If you\'ve never added anything, it will show you an empty screen with a "+" button. Tap that "+" to start adding things.',
+        content: `Tap the Wallet app on your iPhone (it looks like a folded leather wallet). If you've never added anything, it will show you an empty screen with a "+" button. Tap that "+" to start adding things.`,
       },
       {
         title: 'Add a credit or debit card',
-        content: 'Tap the "+" button, then tap "Debit or Credit Card." You can either point your camera at the card to scan it automatically, or type the card number manually. Then enter the expiration date and security code when asked. Your bank may send a text to verify it\'s you.',
-        tip: 'Quick Tip: Most major banks — Chase, Bank of America, Wells Fargo, Capital One, and others — work with Apple Wallet. Check your bank\'s app or website if you\'re not sure.',
+        content: `Tap the "+" button, then tap "Debit or Credit Card." You can either point your camera at the card to scan it automatically, or type the card number manually. Then enter the expiration date and security code when asked. Your bank may send a text to verify it's you.`,
+        tip: `Quick Tip: Most major banks — Chase, Bank of America, Wells Fargo, Capital One, and others — work with Apple Wallet. Check your bank's app or website if you're not sure.`,
       },
       {
         title: 'Add a boarding pass or event ticket',
-        content: 'Airlines and ticket sellers (like Ticketmaster) often email you a boarding pass or ticket with a button that says "Add to Apple Wallet." Tap that button and it\'ll be saved automatically. When you\'re at the airport or venue, open Wallet and the right pass typically appears on your screen based on your location.',
+        content: `Airlines and ticket sellers (like Ticketmaster) often email you a boarding pass or ticket with a button that says "Add to Apple Wallet." Tap that button and it'll be saved automatically. When you're at the airport or venue, open Wallet and the right pass typically appears on your screen based on your location.`,
       },
       {
         title: 'Add a loyalty or rewards card',
-        content: 'Many store apps (Starbucks, CVS, Walgreens, Target, etc.) let you add your rewards card to Wallet. Open the store\'s app, find the rewards or membership card section, and look for an "Add to Apple Wallet" button. Or tap "+" in Wallet and search for the store name.',
+        content: `Many store apps (Starbucks, CVS, Walgreens, Target, etc.) let you add your rewards card to Wallet. Open the store's app, find the rewards or membership card section, and look for an "Add to Apple Wallet" button. Or tap "+" in Wallet and search for the store name.`,
         tip: 'Quick Tip: Once a loyalty card is in Wallet, your phone shows it automatically when you arrive at that store — no more hunting through apps.',
       },
       {
         title: 'Use a card to pay at a store',
-        content: 'To pay with a card in your Wallet at checkout, double-click the side button on your iPhone (Face ID models) or rest your thumb on the Home button (Touch ID models). Your Wallet opens. Hover the top of your iPhone near the store\'s card reader. When the payment goes through, you\'ll feel a tap and see a checkmark.',
+        content: `To pay with a card in your Wallet at checkout, double-click the side button on your iPhone (Face ID models) or rest your thumb on the Home button (Touch ID models). Your Wallet opens. Hover the top of your iPhone near the store's card reader. When the payment goes through, you'll feel a tap and see a checkmark.`,
       },
     ],
   },
@@ -166,12 +166,12 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Find and open Google Wallet',
-        content: 'Look for the Google Wallet app on your Android phone (it has a white icon with a small "G" logo on a colorful card). If you don\'t see it, open the Google Play Store and search for "Google Wallet" to install it for free.',
+        content: `Look for the Google Wallet app on your Android phone (it has a white icon with a small "G" logo on a colorful card). If you don't see it, open the Google Play Store and search for "Google Wallet" to install it for free.`,
       },
       {
         title: 'Add a payment card',
-        content: 'Open Google Wallet and tap the "+" button or "Add to Wallet." Tap "Payment card." Either scan your card by pointing the camera at it, or enter the number manually. You\'ll need the expiration date and CVV security code. Your bank may send a one-time verification code to confirm.',
-        tip: 'Quick Tip: Visa, Mastercard, American Express, and Discover cards from most major US banks work with Google Wallet. Some credit unions and small banks may not yet support it — check your bank\'s website.',
+        content: `Open Google Wallet and tap the "+" button or "Add to Wallet." Tap "Payment card." Either scan your card by pointing the camera at it, or enter the number manually. You'll need the expiration date and CVV security code. Your bank may send a one-time verification code to confirm.`,
+        tip: `Quick Tip: Visa, Mastercard, American Express, and Discover cards from most major US banks work with Google Wallet. Some credit unions and small banks may not yet support it — check your bank's website.`,
       },
       {
         title: 'Set your default payment card',
@@ -179,7 +179,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Pay at a store',
-        content: 'At checkout, unlock your phone (it must be unlocked to pay). Hold the back of your phone near the store\'s payment terminal. You\'ll see or hear a confirmation, and a checkmark will appear on your screen. That\'s it — payment complete.',
+        content: `At checkout, unlock your phone (it must be unlocked to pay). Hold the back of your phone near the store's payment terminal. You'll see or hear a confirmation, and a checkmark will appear on your screen. That's it — payment complete.`,
         warning: 'Your phone needs to be unlocked before a Google Wallet payment will go through. This protects you if your phone is lost or stolen.',
       },
       {
@@ -192,7 +192,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'find-my-device-android',
     title: 'How to Find a Lost or Stolen Android Phone',
-    excerpt: 'Google\'s Find My Device can locate, lock, or remotely erase your Android phone if it goes missing. Learn how to set it up before you need it.',
+    excerpt: `Google's Find My Device can locate, lock, or remotely erase your Android phone if it goes missing. Learn how to set it up before you need it.`,
     category: 'safety-guides',
     tags: ['find my device', 'android', 'lost phone', 'stolen phone', 'google'],
     readTime: '5 min',
@@ -203,16 +203,16 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Make sure Find My Device is turned on',
-        content: 'Open your phone\'s Settings app. Tap "Security" (or "Security & privacy" on some phones). Tap "Find My Device" and make sure the toggle is turned on (green or blue). Your phone also needs location services on — go to Settings > Location and make sure it\'s enabled.',
+        content: `Open your phone's Settings app. Tap "Security" (or "Security & privacy" on some phones). Tap "Find My Device" and make sure the toggle is turned on (green or blue). Your phone also needs location services on — go to Settings > Location and make sure it's enabled.`,
         tip: 'Quick Tip: On Samsung Galaxy phones, this feature is called "Find My Mobile" and lives in Settings > Biometrics and Security > Find My Mobile.',
       },
       {
         title: 'Locate your phone from any browser',
-        content: 'From any computer or phone, go to android.com/find and sign in with the Google account on your missing phone. You\'ll see a map with your phone\'s last known location. The map updates every few minutes as long as the phone has internet.',
+        content: `From any computer or phone, go to android.com/find and sign in with the Google account on your missing phone. You'll see a map with your phone's last known location. The map updates every few minutes as long as the phone has internet.`,
       },
       {
         title: 'Make your phone ring',
-        content: 'On the Find My Device page, click or tap "Play sound." Your phone will ring at full volume for 5 minutes — even if it\'s on silent or vibrate. This is handy when you\'ve simply misplaced it somewhere in your home.',
+        content: `On the Find My Device page, click or tap "Play sound." Your phone will ring at full volume for 5 minutes — even if it's on silent or vibrate. This is handy when you've simply misplaced it somewhere in your home.`,
       },
       {
         title: 'Lock your phone remotely',
@@ -220,8 +220,8 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Erase your phone as a last resort',
-        content: 'If you\'re certain the phone is stolen and won\'t be recovered, click "Erase device." This permanently deletes all data on the phone. Only do this as a last resort — after erasing, you can no longer track the phone\'s location.',
-        warning: 'Erasing is permanent and cannot be undone. Make sure you\'ve tried locating and locking first. A clean erase is the right choice if sensitive financial or personal information is at risk.',
+        content: `If you're certain the phone is stolen and won't be recovered, click "Erase device." This permanently deletes all data on the phone. Only do this as a last resort — after erasing, you can no longer track the phone's location.`,
+        warning: `Erasing is permanent and cannot be undone. Make sure you've tried locating and locking first. A clean erase is the right choice if sensitive financial or personal information is at risk.`,
       },
     ],
   },
@@ -229,7 +229,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'set-up-new-windows-laptop',
     title: 'How to Set Up a Brand-New Windows Laptop Step by Step',
-    excerpt: 'Got a new Windows laptop? This step-by-step guide walks you through the first-time setup so you\'re ready to use it safely and comfortably.',
+    excerpt: `Got a new Windows laptop? This step-by-step guide walks you through the first-time setup so you're ready to use it safely and comfortably.`,
     category: 'windows-guides',
     tags: ['windows', 'new laptop', 'setup', 'windows 11', 'first time'],
     readTime: '8 min',
@@ -240,29 +240,29 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Press power and follow the welcome screens',
-        content: 'Press the power button. Windows will load and show you a series of setup screens. Select your country/region (United States), your keyboard layout (US), and whether you want to connect to Wi-Fi right now. Connect to your home Wi-Fi — you\'ll need it to continue.',
+        content: `Press the power button. Windows will load and show you a series of setup screens. Select your country/region (United States), your keyboard layout (US), and whether you want to connect to Wi-Fi right now. Connect to your home Wi-Fi — you'll need it to continue.`,
       },
       {
         title: 'Sign in with or create a Microsoft account',
         content: 'Windows 11 asks you to sign in with a Microsoft account (an email ending in @outlook.com, @hotmail.com, or @live.com). If you have one, enter it. If not, click "Create one" to make a free account. This account is tied to your Windows license, OneDrive storage, and other Microsoft services.',
-        tip: 'Quick Tip: If you already have an Outlook or Hotmail email, that\'s your Microsoft account. Use the same email and password.',
+        tip: `Quick Tip: If you already have an Outlook or Hotmail email, that's your Microsoft account. Use the same email and password.`,
       },
       {
         title: 'Set up your PIN',
-        content: 'After signing into your Microsoft account, Windows will ask you to create a PIN — a 4-6 digit number you\'ll use to log in each day instead of typing your full password. Make it something you\'ll remember but others won\'t guess. This is faster and safer than typing a password each time.',
+        content: `After signing into your Microsoft account, Windows will ask you to create a PIN — a 4-6 digit number you'll use to log in each day instead of typing your full password. Make it something you'll remember but others won't guess. This is faster and safer than typing a password each time.`,
       },
       {
         title: 'Choose your privacy settings',
-        content: 'Windows asks several questions about sharing location, diagnostic data, and other settings. For most people, choosing "No" or turning these off is fine. The important one to keep on is "Find my device" — that helps locate your laptop if it\'s lost.',
+        content: `Windows asks several questions about sharing location, diagnostic data, and other settings. For most people, choosing "No" or turning these off is fine. The important one to keep on is "Find my device" — that helps locate your laptop if it's lost.`,
       },
       {
         title: 'Run Windows Update right away',
         content: 'Once setup is complete, click Start > Settings > Windows Update > "Check for updates." Your laptop may have been sitting in a warehouse for months. Installing all available updates takes 20–45 minutes but patches security holes and prevents many problems down the road.',
-        warning: 'Don\'t skip Windows updates on a new laptop. Security patches are included in these updates, and an unpatched laptop is far more vulnerable to viruses and hacking.',
+        warning: `Don't skip Windows updates on a new laptop. Security patches are included in these updates, and an unpatched laptop is far more vulnerable to viruses and hacking.`,
       },
       {
         title: 'Set up OneDrive for automatic backups',
-        content: 'OneDrive (Microsoft\'s cloud backup service) will likely prompt you to back up your Desktop, Documents, and Pictures folders. Accept this — it means your files are safe even if the laptop fails. Check that the cloud icon in your system tray is white or blue and not showing errors.',
+        content: `OneDrive (Microsoft's cloud backup service) will likely prompt you to back up your Desktop, Documents, and Pictures folders. Accept this — it means your files are safe even if the laptop fails. Check that the cloud icon in your system tray is white or blue and not showing errors.`,
       },
     ],
   },
@@ -270,7 +270,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'recover-deleted-files-windows',
     title: 'How to Recover Accidentally Deleted Files on Windows',
-    excerpt: 'Deleted a file by mistake? Windows has a Recycle Bin and a File History backup feature. Here\'s how to get your files back.',
+    excerpt: `Deleted a file by mistake? Windows has a Recycle Bin and a File History backup feature. Here's how to get your files back.`,
     category: 'windows-guides',
     tags: ['recover files', 'recycle bin', 'deleted files', 'windows', 'file history'],
     readTime: '5 min',
@@ -295,11 +295,11 @@ export const guidesBatch20: Guide[] = [
       {
         title: 'Use File History to restore older versions',
         content: 'If you had File History set up (Windows > Settings > Update & Security > Backup), navigate to the folder where the file used to be. Right-click the folder and choose "Restore previous versions." A list of saved snapshots will appear. Find one from before the deletion and click Restore.',
-        warning: 'File History only works if you set it up before the deletion happened. If you haven\'t turned it on, consider setting it up today so you\'re protected in the future.',
+        warning: `File History only works if you set it up before the deletion happened. If you haven't turned it on, consider setting it up today so you're protected in the future.`,
       },
       {
         title: 'Use Windows File Recovery for permanently deleted files',
-        content: 'If none of the above worked, Microsoft offers a free tool called Windows File Recovery from the Microsoft Store. It\'s a command-line tool (more advanced) that scans your drive for recoverable data. Search "Windows File Recovery" in the Microsoft Store to install it.',
+        content: `If none of the above worked, Microsoft offers a free tool called Windows File Recovery from the Microsoft Store. It's a command-line tool (more advanced) that scans your drive for recoverable data. Search "Windows File Recovery" in the Microsoft Store to install it.`,
       },
     ],
   },
@@ -326,17 +326,17 @@ export const guidesBatch20: Guide[] = [
         content: 'If you deleted the file just moments ago, press Command+Z (hold the Command key and press Z). This undo shortcut works on the Mac desktop and in Finder and can reverse a deletion instantly.',
       },
       {
-        title: 'Check iCloud Drive\'s Recently Deleted',
+        title: `Check iCloud Drive's Recently Deleted`,
         content: 'If the file was in your iCloud Drive, go to iCloud.com in your browser and sign in. Click the Drive icon, then look at the bottom of the left sidebar for "Recently Deleted." Files deleted within the last 30 days appear here. Click the file and choose "Recover."',
       },
       {
         title: 'Restore from Time Machine backup',
         content: 'If you have a Time Machine backup drive plugged in, open the folder where your file used to be. Then click the Time Machine icon in your menu bar (a clock with a circular arrow) and choose "Enter Time Machine." Use the timeline on the right to go back to a date before the file was deleted. Find the file and click Restore.',
-        warning: 'Time Machine only helps if you\'ve been regularly connecting a backup drive to your Mac. If you haven\'t set this up, consider buying an external hard drive and turning on Time Machine in System Settings > General > Time Machine.',
+        warning: `Time Machine only helps if you've been regularly connecting a backup drive to your Mac. If you haven't set this up, consider buying an external hard drive and turning on Time Machine in System Settings > General > Time Machine.`,
       },
       {
         title: 'What if nothing worked?',
-        content: 'If your file is permanently gone and you have no backup, there are professional data recovery services that can sometimes retrieve files from a hard drive. These services can be expensive ($300–$1,500), so they\'re best reserved for truly irreplaceable files like family photos. Apple Support (apple.com/support) can help you find authorized recovery partners.',
+        content: `If your file is permanently gone and you have no backup, there are professional data recovery services that can sometimes retrieve files from a hard drive. These services can be expensive ($300–$1,500), so they're best reserved for truly irreplaceable files like family photos. Apple Support (apple.com/support) can help you find authorized recovery partners.`,
       },
     ],
   },
@@ -344,7 +344,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'malware-removal-windows',
     title: 'How to Remove Malware or a Virus from a Windows Computer',
-    excerpt: 'If your Windows PC is acting strange — slow, covered in pop-ups, or showing fake warnings — it may have malware. Here\'s how to check and clean it.',
+    excerpt: `If your Windows PC is acting strange — slow, covered in pop-ups, or showing fake warnings — it may have malware. Here's how to check and clean it.`,
     category: 'safety-guides',
     tags: ['malware', 'virus', 'windows', 'security', 'windows defender', 'malwarebytes'],
     readTime: '7 min',
@@ -368,8 +368,8 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Remove suspicious programs',
-        content: 'Click Start > Settings > Apps. Scroll through the list and look for programs you don\'t recognize or didn\'t intentionally install — especially anything with names like "PC Optimizer," "Search Helper," "Browser Guard," or similar vague names. Click on any suspicious entry and choose Uninstall.',
-        warning: 'Don\'t uninstall programs you\'re unsure about if they look like system tools (Dell, HP, Intel, Microsoft branded items). Only remove clearly unfamiliar or suspicious names.',
+        content: `Click Start > Settings > Apps. Scroll through the list and look for programs you don't recognize or didn't intentionally install — especially anything with names like "PC Optimizer," "Search Helper," "Browser Guard," or similar vague names. Click on any suspicious entry and choose Uninstall.`,
+        warning: `Don't uninstall programs you're unsure about if they look like system tools (Dell, HP, Intel, Microsoft branded items). Only remove clearly unfamiliar or suspicious names.`,
       },
       {
         title: 'Change your passwords after cleanup',
@@ -377,7 +377,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Prevent future infections',
-        content: 'Keep Windows Defender on at all times. Never download software from email attachments or unofficial websites. Be wary of pop-ups claiming your computer is infected — legitimate security software doesn\'t use pop-ups from your browser to alert you. Microsoft and Apple will never call you unsolicited about a virus.',
+        content: `Keep Windows Defender on at all times. Never download software from email attachments or unofficial websites. Be wary of pop-ups claiming your computer is infected — legitimate security software doesn't use pop-ups from your browser to alert you. Microsoft and Apple will never call you unsolicited about a virus.`,
       },
     ],
   },
@@ -385,7 +385,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'alexa-guard-home-security',
     title: 'How to Use Alexa Guard to Monitor Your Home',
-    excerpt: 'Alexa Guard uses your Echo speaker to listen for smoke alarms, CO detectors, breaking glass, and suspicious activity while you\'re away.',
+    excerpt: `Alexa Guard uses your Echo speaker to listen for smoke alarms, CO detectors, breaking glass, and suspicious activity while you're away.`,
     category: 'smart-home',
     tags: ['alexa', 'amazon echo', 'home security', 'alexa guard', 'smart home'],
     readTime: '5 min',
@@ -396,11 +396,11 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Set up Alexa Guard in the Alexa app',
-        content: 'Open the Alexa app on your phone. Tap the "More" tab (three horizontal lines) at the bottom right. Tap "Guard." If you haven\'t set it up, you\'ll see a "Set Up Guard" button — tap it and follow the prompts. Select which Echo devices in your home you want Guard to use.',
+        content: `Open the Alexa app on your phone. Tap the "More" tab (three horizontal lines) at the bottom right. Tap "Guard." If you haven't set it up, you'll see a "Set Up Guard" button — tap it and follow the prompts. Select which Echo devices in your home you want Guard to use.`,
       },
       {
         title: 'Activate Guard when you leave',
-        content: 'When you\'re heading out, say "Alexa, I\'m leaving." Alexa will confirm that Guard is active. Alternatively, you can open the Alexa app and tap the shield icon at the top to switch to "Away" mode.',
+        content: `When you're heading out, say "Alexa, I'm leaving." Alexa will confirm that Guard is active. Alternatively, you can open the Alexa app and tap the shield icon at the top to switch to "Away" mode.`,
         tip: 'Quick Tip: You can also set Guard to activate automatically at certain times or when your phone leaves the area — look for these options in the Guard settings.',
       },
       {
@@ -409,19 +409,19 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Deactivate Guard when you return',
-        content: 'When you get home, say "Alexa, I\'m home." Guard deactivates and Alexa returns to normal listening mode. Or open the Alexa app and switch Guard back to "Home" mode manually.',
+        content: `When you get home, say "Alexa, I'm home." Guard deactivates and Alexa returns to normal listening mode. Or open the Alexa app and switch Guard back to "Home" mode manually.`,
       },
       {
         title: 'Review Guard Plus for additional features',
-        content: 'Guard Plus ($4.99/month) adds features like an emergency helpline, the ability to play sounds that make your home seem occupied while you\'re away, and professional monitoring partnerships. The free version is sufficient for basic sound detection and most households.',
+        content: `Guard Plus ($4.99/month) adds features like an emergency helpline, the ability to play sounds that make your home seem occupied while you're away, and professional monitoring partnerships. The free version is sufficient for basic sound detection and most households.`,
       },
     ],
   },
 
   {
     slug: 'iphone-wont-charge-fix',
-    title: 'What to Do When Your iPhone Won\'t Charge',
-    excerpt: 'If your iPhone isn\'t charging, there are several common causes — most of which you can fix yourself in minutes without going to a store.',
+    title: `What to Do When Your iPhone Won't Charge`,
+    excerpt: `If your iPhone isn't charging, there are several common causes — most of which you can fix yourself in minutes without going to a store.`,
     category: 'phone-guides',
     tags: ['iphone', 'charging', 'troubleshoot', 'lightning', 'USB-C', 'battery'],
     readTime: '6 min',
@@ -441,7 +441,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Try a different power adapter or outlet',
-        content: 'Plug the cable into a different USB charging adapter or wall outlet. The power brick itself may have failed. You can also try plugging into a computer\'s USB port to see if the iPhone charges that way.',
+        content: `Plug the cable into a different USB charging adapter or wall outlet. The power brick itself may have failed. You can also try plugging into a computer's USB port to see if the iPhone charges that way.`,
       },
       {
         title: 'Restart your iPhone',
@@ -453,14 +453,14 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Contact Apple Support if nothing worked',
-        content: 'If you\'ve tried everything above and the iPhone still won\'t charge, the issue may be hardware — a damaged charging port or a battery that needs replacement. Go to apple.com/support to chat, schedule an appointment at an Apple Store or Apple Authorized Service Provider, or call 1-800-275-2273.',
+        content: `If you've tried everything above and the iPhone still won't charge, the issue may be hardware — a damaged charging port or a battery that needs replacement. Go to apple.com/support to chat, schedule an appointment at an Apple Store or Apple Authorized Service Provider, or call 1-800-275-2273.`,
       },
     ],
   },
 
   {
     slug: 'android-wont-charge-fix',
-    title: 'What to Do When Your Android Phone Won\'t Charge',
+    title: `What to Do When Your Android Phone Won't Charge`,
     excerpt: 'Android phone not charging? Walk through these common fixes — most charging problems can be solved at home without visiting a repair shop.',
     category: 'phone-guides',
     tags: ['android', 'charging', 'troubleshoot', 'USB-C', 'battery', 'samsung'],
@@ -473,11 +473,11 @@ export const guidesBatch20: Guide[] = [
       {
         title: 'Clean the charging port',
         content: 'The USB-C port at the bottom of your phone collects lint and debris from pockets and bags. Shine a flashlight inside — if you see anything fluffy or gray, use a wooden toothpick to carefully loosen and remove it. Work gently. Even a small amount of lint can prevent the connector from seating fully.',
-        tip: 'Quick Tip: This is the fix for at least half of all "won\'t charge" problems. It takes 60 seconds and costs nothing.',
+        tip: `Quick Tip: This is the fix for at least half of all "won't charge" problems. It takes 60 seconds and costs nothing.`,
       },
       {
         title: 'Switch to a different cable',
-        content: 'USB-C cables fray and fail, especially at the ends. Try a different cable — ideally one you know is working, like the one that came in the box. Avoid very cheap cables from dollar stores; they often fail quickly and can damage your phone\'s charging port over time.',
+        content: `USB-C cables fray and fail, especially at the ends. Try a different cable — ideally one you know is working, like the one that came in the box. Avoid very cheap cables from dollar stores; they often fail quickly and can damage your phone's charging port over time.`,
       },
       {
         title: 'Test a different power adapter and outlet',
@@ -493,7 +493,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Contact your manufacturer or visit a repair shop',
-        content: 'Samsung Galaxy users can visit a Samsung Experience Store or authorized repair location, or call 1-800-726-7864. For other Android brands, check the manufacturer\'s website or visit uBreakiFix, a national repair chain that handles most Android phones.',
+        content: `Samsung Galaxy users can visit a Samsung Experience Store or authorized repair location, or call 1-800-726-7864. For other Android brands, check the manufacturer's website or visit uBreakiFix, a national repair chain that handles most Android phones.`,
       },
     ],
   },
@@ -501,7 +501,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'free-low-cost-internet-seniors',
     title: 'How to Get Free or Low-Cost Home Internet Service',
-    excerpt: 'Several government programs and ISP discounts offer free or low-cost home internet to qualifying households. Here\'s what\'s available and how to apply.',
+    excerpt: `Several government programs and ISP discounts offer free or low-cost home internet to qualifying households. Here's what's available and how to apply.`,
     category: 'life-transitions',
     tags: ['low income internet', 'free internet', 'ACP', 'Lifeline', 'broadband', 'senior discount'],
     readTime: '6 min',
@@ -512,8 +512,8 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Check if you qualify for Lifeline',
-        content: 'The FCC\'s Lifeline program offers $9.25/month off phone or internet service if your income is at or below 135% of the federal poverty guidelines, or if you participate in programs like Medicaid, SNAP, SSI, Federal Public Housing, or the Veterans Pension and Survivors Benefit. Go to lifelinesupport.org to check eligibility and find participating providers in your area.',
-        tip: 'Quick Tip: If you\'re on Medicaid, SSI, or SNAP, you automatically qualify for Lifeline — you don\'t need to check income separately.',
+        content: `The FCC's Lifeline program offers $9.25/month off phone or internet service if your income is at or below 135% of the federal poverty guidelines, or if you participate in programs like Medicaid, SNAP, SSI, Federal Public Housing, or the Veterans Pension and Survivors Benefit. Go to lifelinesupport.org to check eligibility and find participating providers in your area.`,
+        tip: `Quick Tip: If you're on Medicaid, SSI, or SNAP, you automatically qualify for Lifeline — you don't need to check income separately.`,
       },
       {
         title: 'Ask your internet provider about low-income programs',
@@ -521,7 +521,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Search for state-specific programs',
-        content: 'Many states have their own broadband assistance programs. Go to your state government\'s website (search "[your state] affordable broadband program") or visit broadbandnow.com/low-income-internet for a state-by-state guide to available programs.',
+        content: `Many states have their own broadband assistance programs. Go to your state government's website (search "[your state] affordable broadband program") or visit broadbandnow.com/low-income-internet for a state-by-state guide to available programs.`,
       },
       {
         title: 'Consider mobile hotspot plans as an alternative',
@@ -537,7 +537,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'block-phone-number-guide',
     title: 'How to Block a Phone Number on iPhone and Android',
-    excerpt: 'Getting calls from someone you don\'t want to hear from? Learn how to block any phone number on iPhone and Android in under a minute.',
+    excerpt: `Getting calls from someone you don't want to hear from? Learn how to block any phone number on iPhone and Android in under a minute.`,
     category: 'essential-skills',
     tags: ['block number', 'spam calls', 'iphone', 'android', 'unwanted calls'],
     readTime: '4 min',
@@ -565,7 +565,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Silence all unknown callers at once',
-        content: 'If you\'re getting many unwanted calls from different numbers: On iPhone, go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts go straight to voicemail. On Android, open the Phone app > Settings (three dots) > Blocked numbers > turn on "Block calls from unidentified callers."',
+        content: `If you're getting many unwanted calls from different numbers: On iPhone, go to Settings > Phone > Silence Unknown Callers and turn it on. Calls from numbers not in your contacts go straight to voicemail. On Android, open the Phone app > Settings (three dots) > Blocked numbers > turn on "Block calls from unidentified callers."`,
         tip: 'Quick Tip: The "Silence Unknown Callers" feature is especially useful for seniors who frequently receive scam calls from new numbers. Legitimate callers will leave a voicemail.',
       },
     ],
@@ -574,7 +574,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'samsung-pay-how-to-use',
     title: 'How to Use Samsung Pay to Pay with Your Galaxy Phone',
-    excerpt: 'Samsung Pay lets Galaxy phone users pay at almost any store checkout by tapping their phone — even at terminals that don\'t have tap-to-pay.',
+    excerpt: `Samsung Pay lets Galaxy phone users pay at almost any store checkout by tapping their phone — even at terminals that don't have tap-to-pay.`,
     category: 'financial-tech',
     tags: ['samsung pay', 'samsung galaxy', 'tap to pay', 'digital wallet', 'contactless payment'],
     readTime: '5 min',
@@ -585,25 +585,25 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Open Samsung Pay or Samsung Wallet',
-        content: 'Look for the Samsung Pay or Samsung Wallet app on your Galaxy phone. If you don\'t have it, search in the Galaxy Store or Google Play Store. Sign in with your Samsung account (the same one you use for your Samsung phone setup).',
+        content: `Look for the Samsung Pay or Samsung Wallet app on your Galaxy phone. If you don't have it, search in the Galaxy Store or Google Play Store. Sign in with your Samsung account (the same one you use for your Samsung phone setup).`,
       },
       {
         title: 'Add a card',
-        content: 'Tap the "+" button or "Add card." Point your camera at your credit or debit card to scan it, or enter the card details manually. You\'ll need the card number, expiration date, and security code. Your bank will send a verification code to confirm it\'s you.',
+        content: `Tap the "+" button or "Add card." Point your camera at your credit or debit card to scan it, or enter the card details manually. You'll need the card number, expiration date, and security code. Your bank will send a verification code to confirm it's you.`,
         tip: 'Quick Tip: Most Visa, Mastercard, American Express, and Discover cards issued by major US banks work with Samsung Pay.',
       },
       {
         title: 'Set up your fingerprint or PIN for security',
-        content: 'Samsung Pay requires fingerprint verification, iris scan, or PIN before each payment. If you haven\'t already, set up your fingerprint in Settings > Biometrics and security > Fingerprints. Using your fingerprint is faster than typing a PIN.',
+        content: `Samsung Pay requires fingerprint verification, iris scan, or PIN before each payment. If you haven't already, set up your fingerprint in Settings > Biometrics and security > Fingerprints. Using your fingerprint is faster than typing a PIN.`,
       },
       {
         title: 'Pay at a store',
-        content: 'At checkout, swipe up from the bottom of your screen (even from the lock screen) to open Samsung Pay. Or open the Samsung Pay/Wallet app. Select the card you want to use. When ready, hold the back of your phone near (or against) the card reader terminal. Verify with fingerprint or PIN. You\'ll see a payment confirmed screen.',
+        content: `At checkout, swipe up from the bottom of your screen (even from the lock screen) to open Samsung Pay. Or open the Samsung Pay/Wallet app. Select the card you want to use. When ready, hold the back of your phone near (or against) the card reader terminal. Verify with fingerprint or PIN. You'll see a payment confirmed screen.`,
       },
       {
         title: 'Check your payment history',
         content: 'Open Samsung Pay/Wallet and tap the card you used to see a recent transaction history. This lets you quickly confirm a payment went through or spot any unexpected charges.',
-        tip: 'Quick Tip: Samsung Pay transactions still appear on your regular credit or debit card statement — Samsung Pay doesn\'t create a separate account or bill.',
+        tip: `Quick Tip: Samsung Pay transactions still appear on your regular credit or debit card statement — Samsung Pay doesn't create a separate account or bill.`,
       },
     ],
   },
@@ -611,7 +611,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'video-call-on-smart-tv',
     title: 'How to Make Video Calls on a Smart TV',
-    excerpt: 'Some smart TVs let you video chat with family right on the big screen. Here\'s how to set it up on Google TV, Amazon Fire TV, and Facebook Portal TV.',
+    excerpt: `Some smart TVs let you video chat with family right on the big screen. Here's how to set it up on Google TV, Amazon Fire TV, and Facebook Portal TV.`,
     category: 'communication',
     tags: ['video call', 'smart tv', 'google tv', 'amazon fire tv', 'facebook portal', 'family video chat'],
     readTime: '6 min',
@@ -622,7 +622,7 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Check if your TV already supports video calls',
-        content: 'On your TV\'s home screen or app menu, look for: Google Meet, Google Duo, Zoom, Amazon Alexa Calling, or Facebook. Some newer smart TVs have these pre-installed. If you see one, you\'re already most of the way there — you just need a camera.',
+        content: `On your TV's home screen or app menu, look for: Google Meet, Google Duo, Zoom, Amazon Alexa Calling, or Facebook. Some newer smart TVs have these pre-installed. If you see one, you're already most of the way there — you just need a camera.`,
       },
       {
         title: 'Option 1 — Use Google Meet on Google TV',
@@ -631,11 +631,11 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Option 2 — Use Alexa Calling on Amazon Fire TV',
-        content: 'On Amazon Fire TV, open the Alexa app on your phone, go to Communicate tab, and set up Alexa Calling. Then on your Fire TV, use the Alexa voice button on your remote and say "Call [contact name]." You\'ll need a compatible camera (Amazon sells several for Fire TV) or you can call to an Echo Show device another family member has.',
+        content: `On Amazon Fire TV, open the Alexa app on your phone, go to Communicate tab, and set up Alexa Calling. Then on your Fire TV, use the Alexa voice button on your remote and say "Call [contact name]." You'll need a compatible camera (Amazon sells several for Fire TV) or you can call to an Echo Show device another family member has.`,
       },
       {
         title: 'Option 3 — Facebook Portal TV',
-        content: 'Facebook Portal TV ($99–$149 at Amazon or Meta.com) is a device that plugs into your TV\'s HDMI port and adds a camera and microphone. It supports Facebook Messenger video calls, WhatsApp video calls, and Zoom. Setup takes about 10 minutes and just requires a Facebook or WhatsApp account. The camera automatically tracks your face as you move around the room.',
+        content: `Facebook Portal TV ($99–$149 at Amazon or Meta.com) is a device that plugs into your TV's HDMI port and adds a camera and microphone. It supports Facebook Messenger video calls, WhatsApp video calls, and Zoom. Setup takes about 10 minutes and just requires a Facebook or WhatsApp account. The camera automatically tracks your face as you move around the room.`,
       },
       {
         title: 'Option 4 — Use a laptop or tablet on the TV',
@@ -648,7 +648,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'icloud-photos-explained',
     title: 'How iCloud Photos Works and How to Manage Your Storage',
-    excerpt: 'iCloud Photos keeps all your iPhone photos backed up and synced across your Apple devices — but it can fill up your iCloud storage. Here\'s how it works and how to manage it.',
+    excerpt: `iCloud Photos keeps all your iPhone photos backed up and synced across your Apple devices — but it can fill up your iCloud storage. Here's how it works and how to manage it.`,
     category: 'phone-guides',
     tags: ['icloud photos', 'iphone', 'photo backup', 'icloud storage', 'apple'],
     readTime: '6 min',
@@ -667,8 +667,8 @@ export const guidesBatch20: Guide[] = [
         content: 'iCloud Photos stores full-resolution versions in the cloud. To save space on your phone, turn on "Optimize iPhone Storage" (in the same settings screen). With this on, your phone keeps smaller preview versions locally, and the full-size original downloads only when you open a photo. You can still see and share all your photos — they just live in the cloud.',
       },
       {
-        title: 'Check how much iCloud storage you\'re using',
-        content: 'Go to Settings > [your name] > iCloud > Manage Account Storage. This shows how much of your iCloud storage is used and what\'s using it. If photos are the main item, you\'re using iCloud Photos normally.',
+        title: `Check how much iCloud storage you're using`,
+        content: `Go to Settings > [your name] > iCloud > Manage Account Storage. This shows how much of your iCloud storage is used and what's using it. If photos are the main item, you're using iCloud Photos normally.`,
       },
       {
         title: 'Upgrade iCloud storage if needed',
@@ -676,7 +676,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Free up space by deleting unwanted photos',
-        content: 'Open the Photos app, tap Albums, then "Recently Deleted." These are photos you\'ve deleted but which are being held for 30 days. Tap "Delete All" to permanently remove them and immediately free up iCloud storage. Also scroll through your main library and delete any duplicates, blurry shots, or screenshots you no longer need.',
+        content: `Open the Photos app, tap Albums, then "Recently Deleted." These are photos you've deleted but which are being held for 30 days. Tap "Delete All" to permanently remove them and immediately free up iCloud storage. Also scroll through your main library and delete any duplicates, blurry shots, or screenshots you no longer need.`,
       },
     ],
   },
@@ -684,7 +684,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'microsoft-365-getting-started',
     title: 'How to Get Started with Microsoft 365 (Word, Excel, and More)',
-    excerpt: 'Microsoft 365 includes Word, Excel, PowerPoint, and Outlook — tools for writing, spreadsheets, and email. Here\'s how to access and start using them.',
+    excerpt: `Microsoft 365 includes Word, Excel, PowerPoint, and Outlook — tools for writing, spreadsheets, and email. Here's how to access and start using them.`,
     category: 'windows-guides',
     tags: ['microsoft 365', 'microsoft office', 'word', 'excel', 'outlook', 'powerpoint'],
     readTime: '6 min',
@@ -704,8 +704,8 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Create your first document in Word',
-        content: 'At office.com, click "Word." Click "New blank document." You\'ll see a white page with a blinking cursor — start typing. Use the toolbar at the top to change font size (make it larger if you prefer bigger text — 14 or 16 is more comfortable than the default 11), bold or italic text, and alignment.',
-        tip: 'Quick Tip: Press Ctrl+S (or Command+S on Mac) to save your document. If you\'re using the online version, it saves automatically to OneDrive.',
+        content: `At office.com, click "Word." Click "New blank document." You'll see a white page with a blinking cursor — start typing. Use the toolbar at the top to change font size (make it larger if you prefer bigger text — 14 or 16 is more comfortable than the default 11), bold or italic text, and alignment.`,
+        tip: `Quick Tip: Press Ctrl+S (or Command+S on Mac) to save your document. If you're using the online version, it saves automatically to OneDrive.`,
       },
       {
         title: 'Save and find your documents',
@@ -721,7 +721,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'google-photos-auto-backup',
     title: 'How to Set Up Automatic Photo Backup with Google Photos',
-    excerpt: 'Google Photos can back up every photo and video on your phone automatically so they\'re safe even if your phone is lost or broken.',
+    excerpt: `Google Photos can back up every photo and video on your phone automatically so they're safe even if your phone is lost or broken.`,
     category: 'app-guides',
     tags: ['google photos', 'photo backup', 'android', 'iphone', 'cloud storage', 'automatic backup'],
     readTime: '5 min',
@@ -732,20 +732,20 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Download Google Photos if needed',
-        content: 'Google Photos is pre-installed on most Android phones. If you don\'t have it, search "Google Photos" in the Google Play Store or Apple App Store and install it for free. Sign in with your Google account (Gmail) when it opens.',
+        content: `Google Photos is pre-installed on most Android phones. If you don't have it, search "Google Photos" in the Google Play Store or Apple App Store and install it for free. Sign in with your Google account (Gmail) when it opens.`,
       },
       {
         title: 'Turn on Backup',
         content: 'Open the Google Photos app. Tap your profile picture (circle with your initial or photo) in the top right corner. Tap "Photos settings," then "Backup." Make sure "Backup" is toggled on. Google Photos will start uploading your existing photos and will continue automatically for every new photo you take.',
-        tip: 'Quick Tip: The backup status is shown at the top of the Photos app. A green checkmark means everything is backed up. A cloud with a loading bar means it\'s still uploading.',
+        tip: `Quick Tip: The backup status is shown at the top of the Photos app. A green checkmark means everything is backed up. A cloud with a loading bar means it's still uploading.`,
       },
       {
         title: 'Choose your storage quality',
-        content: 'Google Photos asks which quality to use. "Storage saver" compresses photos very slightly — you probably won\'t notice the difference — and doesn\'t count against your 15 GB limit. "Original quality" keeps photos at full resolution but counts toward storage. For most people, Storage saver is the better choice.',
+        content: `Google Photos asks which quality to use. "Storage saver" compresses photos very slightly — you probably won't notice the difference — and doesn't count against your 15 GB limit. "Original quality" keeps photos at full resolution but counts toward storage. For most people, Storage saver is the better choice.`,
       },
       {
         title: 'Set backup to use Wi-Fi only',
-        content: 'In the same Backup settings, look for "Back up over mobile data/cellular" and make sure it\'s turned off unless you have an unlimited data plan. This way, uploads happen over Wi-Fi and won\'t eat into your monthly phone data.',
+        content: `In the same Backup settings, look for "Back up over mobile data/cellular" and make sure it's turned off unless you have an unlimited data plan. This way, uploads happen over Wi-Fi and won't eat into your monthly phone data.`,
       },
       {
         title: 'Access your photos from any device',
@@ -777,16 +777,16 @@ export const guidesBatch20: Guide[] = [
         content: 'AARP has negotiated discounts with security software companies including Norton, McAfee, and others. Check the "Electronics & Technology" section of your member benefits to see current offers. These are often 40–60% off first-year subscriptions.',
       },
       {
-        title: 'Explore AARP\'s free technology training',
+        title: `Explore AARP's free technology training`,
         content: 'Go to aarp.org/technology and look for "Tech Resources" or "AARP Technology Education." AARP offers free online workshops, video tutorials, and guides on topics like smartphone use, avoiding scams, understanding AI, and online safety. These are available to non-members too, but members get additional content.',
       },
       {
-        title: 'Use AARP\'s Fraud Watch Network',
-        content: 'Go to aarp.org/money/scams-fraud. AARP\'s Fraud Watch Network provides free scam alerts by email, a helpline to call if you think you\'ve been scammed (1-877-908-3360), and a Fraud Watch helpline staffed by volunteers trained in elder fraud. This is one of the most valuable benefits for anyone who receives suspicious calls or emails.',
+        title: `Use AARP's Fraud Watch Network`,
+        content: `Go to aarp.org/money/scams-fraud. AARP's Fraud Watch Network provides free scam alerts by email, a helpline to call if you think you've been scammed (1-877-908-3360), and a Fraud Watch helpline staffed by volunteers trained in elder fraud. This is one of the most valuable benefits for anyone who receives suspicious calls or emails.`,
       },
       {
         title: 'Get discounts on phone and internet plans',
-        content: 'AARP has partnerships with some carriers and internet providers for discounted plans. Check the "Phone & Internet" category in your member benefits portal. Also search online for "[carrier name] AARP discount" — some offers aren\'t prominently displayed but exist if you ask.',
+        content: `AARP has partnerships with some carriers and internet providers for discounted plans. Check the "Phone & Internet" category in your member benefits portal. Also search online for "[carrier name] AARP discount" — some offers aren't prominently displayed but exist if you ask.`,
       },
     ],
   },
@@ -794,7 +794,7 @@ export const guidesBatch20: Guide[] = [
   {
     slug: 'silence-unknown-callers-guide',
     title: 'How to Silence Unknown Callers and Reduce Spam Phone Calls',
-    excerpt: 'If your phone rings constantly with calls from numbers you don\'t recognize, there are free built-in tools to silence unknown callers and cut down on robocalls.',
+    excerpt: `If your phone rings constantly with calls from numbers you don't recognize, there are free built-in tools to silence unknown callers and cut down on robocalls.`,
     category: 'essential-skills',
     tags: ['spam calls', 'robocalls', 'unknown callers', 'iphone', 'android', 'silence calls'],
     readTime: '5 min',
@@ -805,8 +805,8 @@ export const guidesBatch20: Guide[] = [
     steps: [
       {
         title: 'Turn on Silence Unknown Callers (iPhone)',
-        content: 'Go to Settings > Phone > Silence Unknown Callers. Tap the toggle to turn it on. From now on, calls from numbers not saved in your contacts, not in your recent calls list, and not suggested by Siri will ring silently and go to voicemail. You\'ll see a missed call notification but your phone won\'t make a sound.',
-        tip: 'Quick Tip: After turning this on, you\'ll notice your phone is dramatically quieter. If you miss a call from a real person, they\'ll leave a voicemail and you can add their number to contacts.',
+        content: `Go to Settings > Phone > Silence Unknown Callers. Tap the toggle to turn it on. From now on, calls from numbers not saved in your contacts, not in your recent calls list, and not suggested by Siri will ring silently and go to voicemail. You'll see a missed call notification but your phone won't make a sound.`,
+        tip: `Quick Tip: After turning this on, you'll notice your phone is dramatically quieter. If you miss a call from a real person, they'll leave a voicemail and you can add their number to contacts.`,
       },
       {
         title: 'Enable call screening on Android',
@@ -814,7 +814,7 @@ export const guidesBatch20: Guide[] = [
       },
       {
         title: 'Register with the Do Not Call Registry',
-        content: 'Visit donotcall.gov (official FTC website) and register your phone number. It\'s free and takes about 2 minutes. Legitimate telemarketers are legally required to stop calling registered numbers. This doesn\'t stop scammers (who ignore the law), but it does reduce sales calls from companies that follow the rules.',
+        content: `Visit donotcall.gov (official FTC website) and register your phone number. It's free and takes about 2 minutes. Legitimate telemarketers are legally required to stop calling registered numbers. This doesn't stop scammers (who ignore the law), but it does reduce sales calls from companies that follow the rules.`,
       },
       {
         title: 'Install a free call-blocking app',

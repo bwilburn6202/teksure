@@ -113,7 +113,7 @@ export const guidesBatch35: Guide[] = [
   {
     slug: 'android-data-limit-guide',
     title: 'How to Set a Mobile Data Limit on Android',
-    excerpt: 'Android can warn you when you\'re approaching your data limit and automatically turn off mobile data when you hit your cap — preventing surprise overage charges.',
+    excerpt: `Android can warn you when you're approaching your data limit and automatically turn off mobile data when you hit your cap — preventing surprise overage charges.`,
     body: `If you have a limited mobile data plan, Android can monitor how much data you use and automatically turn it off when you hit a set limit. This prevents unexpected overage charges from your carrier.\n\nThe data usage settings in Android track data over a month-long cycle that you set to match your billing period. At the end of the cycle, the counter resets.\n\n**Two key features**:\n1. **Data warning**: The phone sends you a notification when you reach a specified amount — say 3 GB — so you know to be careful the rest of the month\n2. **Data limit**: The phone automatically disables mobile data when you reach the cap, preventing any further cellular data use until you manually re-enable it or the cycle resets\n\nNote that these are tracked by Android, not your carrier. Your carrier's data tracking may differ slightly. The Android counter serves as a practical early warning system, but carrier billing is the official record.\n\nData-heavy activities to watch: streaming video (Netflix, YouTube) uses 1-3 GB per hour. Video calls use 500 MB to 1 GB per hour. Music streaming uses about 50-150 MB per hour. Web browsing and email use much less.\n\nYou can also see which specific apps are using the most data and restrict background data use for individual apps.`,
     category: 'phone-guides',
     tags: ['android', 'data limit', 'mobile data', 'data usage', 'overage'],
@@ -137,7 +137,7 @@ export const guidesBatch35: Guide[] = [
       },
       {
         title: 'Set a data limit (optional)',
-        content: 'Toggle "Set data limit" on. Enter your plan\'s data cap. When you reach this amount, Android turns off mobile data automatically. Tap "OK" to confirm.',
+        content: `Toggle "Set data limit" on. Enter your plan's data cap. When you reach this amount, Android turns off mobile data automatically. Tap "OK" to confirm.`,
       },
       {
         title: 'Review which apps use the most data',
@@ -149,7 +149,7 @@ export const guidesBatch35: Guide[] = [
   {
     slug: 'iphone-cellular-data-guide',
     title: 'How to Monitor and Limit Cellular Data Use on iPhone',
-    excerpt: 'See exactly which apps are using your iPhone\'s cellular data, turn off data for specific apps, and avoid hitting your monthly data cap.',
+    excerpt: `See exactly which apps are using your iPhone's cellular data, turn off data for specific apps, and avoid hitting your monthly data cap.`,
     body: `iPhones give you granular control over which apps can use cellular data (your carrier's mobile network). If you have a limited data plan, turning off cellular data for data-hungry apps like streaming video can make your monthly allowance last much longer.\n\n**Checking data usage**: Go to Settings → Cellular and scroll down. Every app installed on your phone appears with its cellular data usage since the last time you reset the counter. The counter does not reset automatically — you need to scroll to the bottom of the list and tap "Reset Statistics" at the start of each billing cycle for accurate tracking.\n\n**Turning off cellular data for specific apps**: Next to each app in the Cellular settings is a toggle. If you turn off Netflix's cellular data, it will only stream over Wi-Fi. Same for YouTube, social media apps, or any other data-heavy service. The app still works — it just does not use your cellular plan.\n\n**Low Data Mode**: iOS 13 and later has a Low Data Mode toggle in Settings → Cellular → Cellular Data Options. When enabled, iPhone reduces background data activity — pausing automatic downloads, reducing streaming quality, and limiting updates — to conserve your data plan.\n\nFor people with limited data plans (under 5 GB/month), turning off cellular data for video and music streaming apps and only using them on Wi-Fi can make a dramatic difference in monthly data consumption.`,
     category: 'phone-guides',
     tags: ['iphone', 'cellular data', 'data limit', 'low data mode', 'data usage'],
@@ -177,8 +177,8 @@ export const guidesBatch35: Guide[] = [
         warning: 'iPhone does not automatically reset data counters monthly. If you never reset, the numbers shown reflect all-time usage since you last reset, not just this month.',
       },
       {
-        title: 'Check your carrier\'s own usage tool',
-        content: 'Your carrier\'s app (My AT&T, T-Mobile, My Verizon) shows your official data usage and remaining balance. iPhone\'s counter is a helpful guide, but the carrier\'s data is what determines your bill.',
+        title: `Check your carrier's own usage tool`,
+        content: `Your carrier's app (My AT&T, T-Mobile, My Verizon) shows your official data usage and remaining balance. iPhone's counter is a helpful guide, but the carrier's data is what determines your bill.`,
       },
     ],
   },
@@ -214,7 +214,7 @@ export const guidesBatch35: Guide[] = [
       },
       {
         title: 'Remove the lock if needed',
-        content: 'To remove Face ID from an app: long-press the app icon → "Don\'t Require Face ID." Confirm with Face ID. The app opens normally without authentication from that point.',
+        content: `To remove Face ID from an app: long-press the app icon → "Don't Require Face ID." Confirm with Face ID. The app opens normally without authentication from that point.`,
       },
     ],
   },
@@ -241,7 +241,7 @@ export const guidesBatch35: Guide[] = [
       },
       {
         title: 'On Pixel / stock Android: use App Pinning for temporary locking',
-        content: 'Go to Settings → Security → More Security Settings → App Pinning → turn on. Open the app you want to lock. Tap the square (Recent Apps) button → tap the app\'s icon at the top of the card → Pin. The phone is locked to that app.',
+        content: `Go to Settings → Security → More Security Settings → App Pinning → turn on. Open the app you want to lock. Tap the square (Recent Apps) button → tap the app's icon at the top of the card → Pin. The phone is locked to that app.`,
         tip: 'App Pinning is a session lock — it locks the phone to one app until you enter your PIN. Useful for handing your phone to someone for a specific task.',
       },
       {
@@ -398,7 +398,7 @@ export const guidesBatch35: Guide[] = [
   {
     slug: 'android-gboard-guide',
     title: 'How to Get More Out of Gboard on Android',
-    excerpt: 'Gboard is Google\'s free keyboard for Android with swipe typing, voice input, GIF search, translation, and more — all without leaving the keyboard.',
+    excerpt: `Gboard is Google's free keyboard for Android with swipe typing, voice input, GIF search, translation, and more — all without leaving the keyboard.`,
     body: `Gboard is the default keyboard on Pixel phones and available on all Android devices. It goes far beyond basic typing with a collection of features built directly into the keyboard so you never have to switch apps.\n\n**Swipe/Glide typing**: Slide your finger from letter to letter without lifting to form words. Google's Gboard pioneered this feature and it remains one of the most accurate implementations. Enable it in Gboard settings → Glide Typing.\n\n**Voice input**: Tap the microphone icon to speak instead of type. Gboard transcribes speech in real time with high accuracy. Useful when typing is impractical — in a car, for long messages, or when your hands are occupied.\n\n**GIF and sticker search**: Tap the GIF or sticker icon to search for animated images by keyword. Search "congratulations" or "thank you" to find relevant GIFs to send in messages.\n\n**Built-in Google Search**: Tap the Google icon (colored G) on the keyboard to search Google without leaving the conversation. Paste the link or information directly into your message.\n\n**Translation**: Tap the three-dot menu → Translate. Type in any language and Gboard translates to your chosen language in real time. Send the translated text with one tap.\n\n**Clipboard**: Gboard has a clipboard that saves copied text for one hour. Tap the clipboard icon to see recently copied items and paste from history.`,
     category: 'essential-skills',
     tags: ['gboard', 'android', 'keyboard', 'swipe typing', 'voice input'],
@@ -434,7 +434,7 @@ export const guidesBatch35: Guide[] = [
   {
     slug: 'gmail-smart-compose-guide',
     title: 'How to Use Gmail Smart Compose to Write Emails Faster',
-    excerpt: 'Gmail\'s Smart Compose suggests words and phrases as you type — just press Tab to accept a suggestion and finish sentences in seconds.',
+    excerpt: `Gmail's Smart Compose suggests words and phrases as you type — just press Tab to accept a suggestion and finish sentences in seconds.`,
     body: `Gmail's Smart Compose feature shows text suggestions as you type an email. When Smart Compose predicts what you are going to write next, it shows the suggested text in light gray after your cursor. Press Tab on a keyboard (or tap the suggestion on mobile) to accept it and continue.\n\nFor example, if you start typing "Looking forward to," Gmail might suggest "hearing from you." Press Tab and that phrase is inserted. This speeds up writing repetitive phrases significantly.\n\nSmart Compose learns from your writing patterns over time. The more you use it and accept (or reject) suggestions, the more accurately it reflects how you personally write.\n\n**Smart Reply** is a companion feature that suggests short responses at the bottom of emails you receive. For common responses like "Thank you, see you then" or "Sounds great!" tapping a Smart Reply suggestion creates and sends the response in seconds.\n\nBoth features work on Gmail for iPhone, Android, and the Gmail website on a computer.\n\nSome people find Smart Compose helpful for formal emails but distracting for casual ones. You can turn it off for specific accounts while keeping it on for others, or disable it entirely in Gmail Settings → General → Smart Compose.`,
     category: 'app-guides',
     tags: ['gmail', 'smart compose', 'email tips', 'productivity', 'writing'],
@@ -607,7 +607,7 @@ export const guidesBatch35: Guide[] = [
       },
       {
         title: 'Follow friends or family on Strava',
-        content: 'Tap "Find Friends" → search by name or email. Follow people to see their activities in your feed and give them "Kudos" (Strava\'s equivalent of a like). Sharing fitness progress with others adds accountability and encouragement.',
+        content: `Tap "Find Friends" → search by name or email. Follow people to see their activities in your feed and give them "Kudos" (Strava's equivalent of a like). Sharing fitness progress with others adds accountability and encouragement.`,
       },
     ],
   },

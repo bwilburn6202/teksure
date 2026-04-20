@@ -25,7 +25,7 @@ export const guidesBatch19: Guide[] = [
       {
         title: 'Check if your phone supports wireless charging',
         content:
-          'iPhones: all models from iPhone 8 (2017) onward support Qi wireless charging. Android: most Samsung Galaxy phones (S6 and later), Google Pixel (3 and later), and many other Android phones from 2017 onward support it. To confirm your Android: go to your phone manufacturer\'s website and search your model name plus "wireless charging." If you see a "Qi" or "wireless charging compatible" symbol anywhere on the phone\'s box or specs, you are good to go.',
+          `iPhones: all models from iPhone 8 (2017) onward support Qi wireless charging. Android: most Samsung Galaxy phones (S6 and later), Google Pixel (3 and later), and many other Android phones from 2017 onward support it. To confirm your Android: go to your phone manufacturer's website and search your model name plus "wireless charging." If you see a "Qi" or "wireless charging compatible" symbol anywhere on the phone's box or specs, you are good to go.`,
         tip: "Quick Tip: If your Android phone doesn't support wireless charging natively, you can add it with a Qi receiver case — a thin attachment that sticks inside the back of your phone case. Search your phone model plus \"Qi receiver\" on Amazon.",
       },
       {
@@ -221,7 +221,7 @@ export const guidesBatch19: Guide[] = [
         tip: "Quick Tip: Live Caption also works during phone calls on Pixel phones. When you receive or make a call, the caption bar appears at the bottom of the screen automatically (if Live Caption is enabled) showing what the other person is saying.",
       },
       {
-        title: 'Use Google\'s Phone App Call Captions on Pixel',
+        title: `Use Google's Phone App Call Captions on Pixel`,
         content:
           "Google Pixel phones (3a and later) have a dedicated call captioning feature in the Phone app. Open the Phone app → tap the three-dot menu → Settings → Accessibility → \"Call captions.\" Turn it on. During any phone call, real-time captions of both sides of the conversation appear on screen. You can pause, resume, and review the transcript after the call. This is significantly more accurate than standard voice-to-text because it processes audio in real time.",
       },
@@ -397,7 +397,7 @@ export const guidesBatch19: Guide[] = [
     slug: 'magsafe-wireless-charging-guide',
     title: 'What Is MagSafe? How to Use Apple MagSafe Charging and Accessories',
     excerpt:
-      'MagSafe is Apple\'s magnetic charging system for iPhone 12 and later. It snaps into place automatically and charges faster than standard wireless charging.',
+      `MagSafe is Apple's magnetic charging system for iPhone 12 and later. It snaps into place automatically and charges faster than standard wireless charging.`,
     category: 'phone-guides',
     tags: ['magsafe', 'apple magsafe', 'iphone charging', 'wireless charging', 'iphone 12', 'magnetic'],
     readTime: '4 min',
@@ -650,7 +650,7 @@ export const guidesBatch19: Guide[] = [
         tip: "Quick Tip: ETA sharing stops automatically when you reach your destination or cancel navigation. You don't need to manually stop sharing at the end of a trip.",
       },
       {
-        title: 'Share ETA with people who don\'t have iPhones',
+        title: `Share ETA with people who don't have iPhones`,
         content:
           "If the recipient uses Android or doesn't have iMessage: Apple Maps sends a regular SMS text with a link. They can tap the link to open a webpage showing your location on a map that updates approximately every 2-3 minutes. The experience is slightly less seamless than iMessage sharing, but still provides real-time tracking.",
       },
@@ -731,7 +731,7 @@ export const guidesBatch19: Guide[] = [
           "Chrome has its own dark mode setting that controls web page appearance — Windows Dark Mode does not automatically make web pages dark. To enable Chrome dark mode: click the three-dot menu → Settings → Appearance → \"Theme\" → \"Use Classic.\" In the Chrome flags (more advanced): type chrome://flags in the address bar → search \"dark mode\" → enable \"Auto Dark Mode for Web Contents.\" This makes most websites appear in dark mode. You can also install the \"Dark Reader\" Chrome extension for more control.",
       },
       {
-        title: 'Try Microsoft\'s "High Contrast" mode for low vision',
+        title: `Try Microsoft's "High Contrast" mode for low vision`,
         content:
           "For significantly better visibility for people with vision challenges, Windows High Contrast mode uses a very limited color palette with maximum contrast. Go to Settings → Accessibility → Contrast themes. Choose from preset themes like High Contrast Black (white text on pure black background) or High Contrast White. These are more extreme than Dark Mode but can make text significantly easier to read for people with low vision. Press Left Alt + Left Shift + Print Screen to toggle High Contrast mode on and off quickly.",
       },

@@ -184,7 +184,7 @@ export const guidesBatch17: Guide[] = [
         title: 'Track orders in the Amazon app or website',
         content:
           'Open the Amazon app on your phone and tap the three-line menu (☰) → "Returns & Orders." You see a list of recent orders with their current status. Tap any order for details. For orders being shipped, tap "Track package" to see the estimated delivery date, shipping carrier, tracking number, and current location in the shipping process. On the website (amazon.com), click "Returns & Orders" in the top right.',
-        tip: 'Quick Tip: Orders typically go through stages: "Preparing for shipment" → "Shipped" → "Out for delivery" → "Delivered." If it says "Delivered" but you can\'t find the package, check around your front door, porch, mailbox, and with neighbors.',
+        tip: `Quick Tip: Orders typically go through stages: "Preparing for shipment" → "Shipped" → "Out for delivery" → "Delivered." If it says "Delivered" but you can't find the package, check around your front door, porch, mailbox, and with neighbors.`,
       },
       {
         title: 'Set up delivery notifications',
@@ -661,7 +661,7 @@ export const guidesBatch17: Guide[] = [
         tip: "Quick Tip: Start with just one simple routine to get comfortable with the concept before building complex ones. A \"good morning\" routine is a great first one.",
       },
       {
-        title: 'Troubleshoot routines that don\'t run',
+        title: `Troubleshoot routines that don't run`,
         content:
           "If a routine is not running as expected: check that the trigger time is correct and AM/PM are set right. Confirm the devices in the routine are online and responding to manual commands. Check that the Alexa or Google Home app has the location permissions if using location-based triggers. Verify the routine is turned on (has a toggle). Delete and recreate the routine if it consistently fails — sometimes a fresh setup resolves unexplained issues.",
       },
@@ -758,7 +758,7 @@ export const guidesBatch17: Guide[] = [
     body: `Many people have hundreds or thousands of emails sitting in their Gmail inbox — a mix of newsletters, receipts, personal messages, and automated notifications. This makes it hard to find important emails and creates a constant feeling of digital clutter.\n\nGmail has several built-in tools for organizing this: Categories (which automatically sort incoming mail), Labels (like folders), Filters (automatic rules for sorting future email), and Archive (remove from inbox without deleting). Using these tools, you can go from an overwhelming inbox to a manageable one.\n\nThe goal is an inbox where only emails that need your attention appear, while everything else is automatically filed away.`,
     steps: [
       {
-        title: 'Use Gmail\'s automatic categories',
+        title: `Use Gmail's automatic categories`,
         content:
           "Gmail automatically sorts incoming email into tabs: Primary (personal and important emails), Social (Facebook, Twitter, Instagram), Promotions (ads and newsletters), Updates (receipts, confirmations, bills), and Forums (mailing lists). To enable tabs: in Gmail, click the gear icon → \"See all settings\" → \"Inbox\" tab → under Inbox type, select \"Default\" and check the category tabs you want. Unimportant emails automatically go to Promotions or Social, keeping your Primary inbox cleaner.",
         tip: 'Quick Tip: If an email ends up in the wrong category (like a newsletter in Primary), drag it to the correct category tab. Gmail will ask if you want all future emails from that sender to go there automatically.',

@@ -4,7 +4,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'face-id-setup-iphone',
     title: 'How to Set Up and Use Face ID on iPhone',
-    excerpt: 'Face ID lets you unlock your iPhone, approve purchases, and log into apps just by looking at it — no passcode typing needed. Here\'s how to set it up.',
+    excerpt: `Face ID lets you unlock your iPhone, approve purchases, and log into apps just by looking at it — no passcode typing needed. Here's how to set it up.`,
     category: 'phone-guides',
     tags: ['face ID', 'iphone', 'unlock', 'biometric', 'security', 'face recognition'],
     readTime: '4 min',
@@ -15,16 +15,16 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Open Face ID settings',
-        content: 'Go to Settings > Face ID & Passcode. Enter your current passcode when prompted. You\'ll see the Face ID setup screen.',
+        content: `Go to Settings > Face ID & Passcode. Enter your current passcode when prompted. You'll see the Face ID setup screen.`,
       },
       {
         title: 'Set up Face ID',
-        content: 'Tap "Set Up Face ID." Hold your phone at normal viewing distance — about 10–20 inches from your face. A circle appears on screen. Slowly move your head in a circular motion, as if tracing the edge of the circle with your nose, to scan your face from different angles. You\'ll do this twice (two scans for thoroughness).',
-        tip: 'Quick Tip: If you have limited head mobility, tap "Accessibility Options" during setup to use a stationary scan that doesn\'t require moving your head.',
+        content: `Tap "Set Up Face ID." Hold your phone at normal viewing distance — about 10–20 inches from your face. A circle appears on screen. Slowly move your head in a circular motion, as if tracing the edge of the circle with your nose, to scan your face from different angles. You'll do this twice (two scans for thoroughness).`,
+        tip: `Quick Tip: If you have limited head mobility, tap "Accessibility Options" during setup to use a stationary scan that doesn't require moving your head.`,
       },
       {
         title: 'Unlock your iPhone with Face ID',
-        content: 'Press the side button to wake your phone. Look at the screen. The lock icon at the top changes from locked to unlocked — you\'ll see a small animation. Swipe up from the bottom of the screen to go to the Home screen. Face ID happens in the moment you glance at it — almost imperceptibly fast.',
+        content: `Press the side button to wake your phone. Look at the screen. The lock icon at the top changes from locked to unlocked — you'll see a small animation. Swipe up from the bottom of the screen to go to the Home screen. Face ID happens in the moment you glance at it — almost imperceptibly fast.`,
       },
       {
         title: 'Use Face ID for App Store and payments',
@@ -52,25 +52,25 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Download Google Authenticator',
-        content: 'Search "Google Authenticator" in the App Store or Google Play Store. Download and install the free app. Open it — you\'ll see an empty screen on first launch.',
+        content: `Search "Google Authenticator" in the App Store or Google Play Store. Download and install the free app. Open it — you'll see an empty screen on first launch.`,
       },
       {
         title: 'Enable 2FA on a service and get the QR code',
-        content: 'Log into the account you want to secure (for example, Gmail). Go to that account\'s Security settings and look for "2-Step Verification," "Two-Factor Authentication," or "Authenticator App." Choose the authenticator app option. The service will show you a QR code (a square barcode) on screen.',
+        content: `Log into the account you want to secure (for example, Gmail). Go to that account's Security settings and look for "2-Step Verification," "Two-Factor Authentication," or "Authenticator App." Choose the authenticator app option. The service will show you a QR code (a square barcode) on screen.`,
         tip: 'Quick Tip: Google, Facebook, Amazon, and most banks support authenticator apps. Look in Security Settings > Two-Factor Authentication > Authenticator App.',
       },
       {
         title: 'Scan the QR code in the app',
-        content: 'In Google Authenticator, tap "+" at the bottom. Choose "Scan a QR code." Point your phone camera at the QR code on your computer screen — the app scans it automatically and adds the account. You\'ll see the account name and a 6-digit code that refreshes every 30 seconds.',
+        content: `In Google Authenticator, tap "+" at the bottom. Choose "Scan a QR code." Point your phone camera at the QR code on your computer screen — the app scans it automatically and adds the account. You'll see the account name and a 6-digit code that refreshes every 30 seconds.`,
       },
       {
         title: 'Finish setup on the service',
-        content: 'After scanning, the service will ask you to enter the current 6-digit code to confirm it worked. Open Authenticator, copy the code showing for that account (work fast — you have 30 seconds), and enter it on the service\'s setup page. The service is now secured with 2FA.',
+        content: `After scanning, the service will ask you to enter the current 6-digit code to confirm it worked. Open Authenticator, copy the code showing for that account (work fast — you have 30 seconds), and enter it on the service's setup page. The service is now secured with 2FA.`,
       },
       {
         title: 'What to do if you get a new phone',
-        content: 'This is important: if you upgrade phones, transfer Google Authenticator before you lose access. In the app, tap your profile icon > "Transfer accounts" > "Export accounts." Scan the QR code with your new phone\'s Authenticator app. Also save backup codes each service provides during 2FA setup — store them in a safe place.',
-        warning: 'If you lose your phone and didn\'t export Authenticator or save backup codes, you may be locked out of accounts. Always save the backup codes services provide when you enable 2FA.',
+        content: `This is important: if you upgrade phones, transfer Google Authenticator before you lose access. In the app, tap your profile icon > "Transfer accounts" > "Export accounts." Scan the QR code with your new phone's Authenticator app. Also save backup codes each service provides during 2FA setup — store them in a safe place.`,
+        warning: `If you lose your phone and didn't export Authenticator or save backup codes, you may be locked out of accounts. Always save the backup codes services provide when you enable 2FA.`,
       },
     ],
   },
@@ -125,7 +125,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Open Voice Memos and start recording',
-        content: 'Find the Voice Memos app on your iPhone — it has a gray icon with sound waves. Tap the large red circle button at the bottom to start recording. Speak normally — the phone\'s microphone picks up audio well from 1–3 feet away. A waveform shows the recording in progress.',
+        content: `Find the Voice Memos app on your iPhone — it has a gray icon with sound waves. Tap the large red circle button at the bottom to start recording. Speak normally — the phone's microphone picks up audio well from 1–3 feet away. A waveform shows the recording in progress.`,
         tip: 'Quick Tip: You can ask Siri to open Voice Memos and start recording without touching your phone: say "Hey Siri, open Voice Memos" or "Hey Siri, record a voice memo."',
       },
       {
@@ -177,7 +177,7 @@ export const guidesBatch23: Guide[] = [
         content: 'On the Control Center settings page, press and hold the three horizontal lines (grab handle) on the right side of any control and drag it up or down to reorder. Your most-used controls should be at the top so they appear prominently in Control Center.',
       },
       {
-        title: 'Remove controls you don\'t use',
+        title: `Remove controls you don't use`,
         content: 'On the same Control Center settings page, tap the red "–" button on the left side of any control, then tap "Remove" to delete it from your Control Center. Removing clutter makes it faster to find what you need.',
       },
     ],
@@ -206,16 +206,16 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Use the two-way talk feature',
-        content: 'Both Ring and Nest doorbells have a microphone and speaker — you can talk to whoever is at your door from your phone, anywhere. When you get a doorbell alert on your phone, tap the video notification and look for a microphone button to start a two-way conversation. Great for accepting deliveries or speaking with visitors when you\'re away from home.',
+        content: `Both Ring and Nest doorbells have a microphone and speaker — you can talk to whoever is at your door from your phone, anywhere. When you get a doorbell alert on your phone, tap the video notification and look for a microphone button to start a two-way conversation. Great for accepting deliveries or speaking with visitors when you're away from home.`,
       },
       {
         title: 'Set up package detection',
-        content: 'Ring Protect subscribers (paid plan) and Google Nest Aware subscribers can enable Package Detection alerts — the camera specifically alerts you when a package is placed at your door and when it\'s removed. This is different from general motion and only triggers for package-sized objects.',
+        content: `Ring Protect subscribers (paid plan) and Google Nest Aware subscribers can enable Package Detection alerts — the camera specifically alerts you when a package is placed at your door and when it's removed. This is different from general motion and only triggers for package-sized objects.`,
       },
       {
         title: 'Protect neighbor privacy',
-        content: 'Ring and Nest have privacy zone features that let you block out a portion of the video — like a neighbor\'s driveway or window. In Ring: Device Settings > Privacy Settings > Privacy Zones. Draw a black rectangle over the area you don\'t want recorded. This is good neighbor policy and may be legally required in some jurisdictions.',
-        warning: 'Check local laws about video recording. Generally, recording your own property is fine, but consistently recording a neighbor\'s property without their knowledge may raise legal issues depending on your location.',
+        content: `Ring and Nest have privacy zone features that let you block out a portion of the video — like a neighbor's driveway or window. In Ring: Device Settings > Privacy Settings > Privacy Zones. Draw a black rectangle over the area you don't want recorded. This is good neighbor policy and may be legally required in some jurisdictions.`,
+        warning: `Check local laws about video recording. Generally, recording your own property is fine, but consistently recording a neighbor's property without their knowledge may raise legal issues depending on your location.`,
       },
     ],
   },
@@ -235,23 +235,23 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Save places you visit frequently',
         content: 'Search for a location in Google Maps. Tap on it to open the details panel. Tap the bookmark icon (looks like a ribbon) to save it. Choose a list: "Favorites," "Want to go," or "Starred places." Saved places appear with a star on the map and are quickly accessible from your home screen in the app.',
-        tip: 'Quick Tip: Save your doctor\'s office, pharmacy, library, and any places you visit regularly. When you open Maps, these appear right away — no retyping needed.',
+        tip: `Quick Tip: Save your doctor's office, pharmacy, library, and any places you visit regularly. When you open Maps, these appear right away — no retyping needed.`,
       },
       {
         title: 'Preview a place with Street View',
-        content: 'Before visiting somewhere you\'ve never been, you can see exactly what the building and street look like. Search for the address, tap on the place, then scroll the bottom panel and tap the street-level photo at the bottom. Or drag the orange person icon (on the bottom right of the map) to a street to enter Street View. Use this to find an unfamiliar entrance or parking lot before you arrive.',
+        content: `Before visiting somewhere you've never been, you can see exactly what the building and street look like. Search for the address, tap on the place, then scroll the bottom panel and tap the street-level photo at the bottom. Or drag the orange person icon (on the bottom right of the map) to a street to enter Street View. Use this to find an unfamiliar entrance or parking lot before you arrive.`,
       },
       {
         title: 'Find restaurant and business hours',
-        content: 'Tap any restaurant or business on the map. The details panel shows current hours, phone number, website, and whether it\'s busy right now (the busyness graph). You can call directly from Maps by tapping the phone icon — no need to look up the number separately.',
+        content: `Tap any restaurant or business on the map. The details panel shows current hours, phone number, website, and whether it's busy right now (the busyness graph). You can call directly from Maps by tapping the phone icon — no need to look up the number separately.`,
       },
       {
         title: 'Share your live location with family',
-        content: 'Tap your profile picture in Google Maps > "Location sharing." Tap "New share" and choose a contact and how long to share (one hour, until you turn it off, etc.). They\'ll see a link showing your real-time location on their Google Maps. Great for letting family know you\'ve arrived safely or tracking each other in a new city.',
+        content: `Tap your profile picture in Google Maps > "Location sharing." Tap "New share" and choose a contact and how long to share (one hour, until you turn it off, etc.). They'll see a link showing your real-time location on their Google Maps. Great for letting family know you've arrived safely or tracking each other in a new city.`,
       },
       {
         title: 'Download maps for offline use',
-        content: 'If you\'re traveling to an area with poor cell signal, download the map beforehand. Search for a city or region, tap the name at the top of the screen, scroll down to "Download offline map," adjust the area, and tap "Download." The map works without internet for 30 days.',
+        content: `If you're traveling to an area with poor cell signal, download the map beforehand. Search for a city or region, tap the name at the top of the screen, scroll down to "Download offline map," adjust the area, and tap "Download." The map works without internet for 30 days.`,
       },
     ],
   },
@@ -270,7 +270,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Download and open Google Earth',
-        content: 'Search "Google Earth" in the App Store or Google Play Store. Install the free app. Open it — you\'ll see the rotating globe on your screen. You can also use Google Earth in your web browser at earth.google.com.',
+        content: `Search "Google Earth" in the App Store or Google Play Store. Install the free app. Open it — you'll see the rotating globe on your screen. You can also use Google Earth in your web browser at earth.google.com.`,
       },
       {
         title: 'Search for any place',
@@ -295,7 +295,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'change-wifi-password-guide',
     title: 'How to Change Your Wi-Fi Network Name and Password',
-    excerpt: 'Changing your Wi-Fi password improves security and lets you remove old or unknown devices from your network. Here\'s how to do it from any browser.',
+    excerpt: `Changing your Wi-Fi password improves security and lets you remove old or unknown devices from your network. Here's how to do it from any browser.`,
     category: 'internet-connectivity',
     tags: ['wifi password', 'router', 'change password', 'home network', 'internet security'],
     readTime: '5 min',
@@ -305,13 +305,13 @@ export const guidesBatch23: Guide[] = [
     body: `Your Wi-Fi password controls who can use your home internet. If you've never changed it since the router was set up, you're probably still using the default password — which is often printed on a sticker on the router itself. Anyone who has ever visited and seen that sticker can still connect to your network.\n\nChanging your Wi-Fi password logs out every device currently connected (including your own — you'll need to reconnect with the new password). It's worth doing once a year as a security practice, or if you've had a houseguest you no longer want to have access.\n\nThis process involves logging into your router's admin page through a web browser. It takes about 10 minutes once you have the right information.`,
     steps: [
       {
-        title: 'Find your router\'s admin page address',
-        content: 'Most routers use the address 192.168.1.1 or 192.168.0.1. Type one of these into your browser\'s address bar (the same bar where you type website addresses) and press Enter. If neither works, check the sticker on the back of your router — it often shows the admin address and default login.',
-        tip: 'Quick Tip: You can also find your router\'s address on your computer: Windows — open Command Prompt, type "ipconfig", look for "Default Gateway." Mac — System Settings > Network > your network > Details > "Router" address.',
+        title: `Find your router's admin page address`,
+        content: `Most routers use the address 192.168.1.1 or 192.168.0.1. Type one of these into your browser's address bar (the same bar where you type website addresses) and press Enter. If neither works, check the sticker on the back of your router — it often shows the admin address and default login.`,
+        tip: `Quick Tip: You can also find your router's address on your computer: Windows — open Command Prompt, type "ipconfig", look for "Default Gateway." Mac — System Settings > Network > your network > Details > "Router" address.`,
       },
       {
         title: 'Log into the router admin page',
-        content: 'A login page appears asking for a username and password. These are different from your Wi-Fi password — they\'re the admin credentials for the router itself. Default values are usually "admin" for both username and password, or "admin" / "password," or they\'re printed on the router sticker. Check your router\'s documentation if unsure.',
+        content: `A login page appears asking for a username and password. These are different from your Wi-Fi password — they're the admin credentials for the router itself. Default values are usually "admin" for both username and password, or "admin" / "password," or they're printed on the router sticker. Check your router's documentation if unsure.`,
       },
       {
         title: 'Find the Wi-Fi settings',
@@ -323,8 +323,8 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Reconnect all your devices',
-        content: 'After saving, your router restarts and all devices disconnect. On each device — phone, tablet, laptop, TV — go to Wi-Fi settings, find your network\'s new name, and enter the new password. Write the new password on a sticky note inside a kitchen cabinet in case you need it later.',
-        warning: 'Don\'t forget to reconnect smart home devices like security cameras, smart speakers, and smart TVs after changing the password. These devices may need to be set up again in their respective apps.',
+        content: `After saving, your router restarts and all devices disconnect. On each device — phone, tablet, laptop, TV — go to Wi-Fi settings, find your network's new name, and enter the new password. Write the new password on a sticky note inside a kitchen cabinet in case you need it later.`,
+        warning: `Don't forget to reconnect smart home devices like security cameras, smart speakers, and smart TVs after changing the password. These devices may need to be set up again in their respective apps.`,
       },
     ],
   },
@@ -332,7 +332,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'ecobee-setup-guide',
     title: 'How to Set Up and Use an ecobee Smart Thermostat',
-    excerpt: 'An ecobee smart thermostat learns your schedule, adjusts temperature automatically, and can save 23% on heating and cooling costs. Here\'s how to set it up.',
+    excerpt: `An ecobee smart thermostat learns your schedule, adjusts temperature automatically, and can save 23% on heating and cooling costs. Here's how to set it up.`,
     category: 'smart-home',
     tags: ['ecobee', 'smart thermostat', 'home automation', 'energy savings', 'heating', 'cooling'],
     readTime: '6 min',
@@ -343,16 +343,16 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Check compatibility first',
-        content: 'ecobee works with most central forced-air heating and cooling systems. Go to ecobee.com/compatibility and enter information about your current thermostat\'s wiring. If you see the "C-wire" (common wire) is required and you don\'t have one, ecobee includes a Power Extender Kit (PEK) that works around this — most modern ecobee packages include it.',
+        content: `ecobee works with most central forced-air heating and cooling systems. Go to ecobee.com/compatibility and enter information about your current thermostat's wiring. If you see the "C-wire" (common wire) is required and you don't have one, ecobee includes a Power Extender Kit (PEK) that works around this — most modern ecobee packages include it.`,
       },
       {
         title: 'Turn off power at the breaker',
-        content: 'Before touching the thermostat wiring, find your home\'s circuit breaker panel and turn off the breaker for your HVAC system (usually labeled "Furnace," "Heating," "AC," or "HVAC"). Confirm the thermostat goes dark to confirm power is off. Safety first.',
+        content: `Before touching the thermostat wiring, find your home's circuit breaker panel and turn off the breaker for your HVAC system (usually labeled "Furnace," "Heating," "AC," or "HVAC"). Confirm the thermostat goes dark to confirm power is off. Safety first.`,
         warning: 'Always turn off power to your HVAC system at the breaker before installing or removing any thermostat. Working on live wires can damage your equipment or cause injury.',
       },
       {
         title: 'Remove old thermostat and connect wires',
-        content: 'Remove the old thermostat from the wall. Take a photo of the wiring before disconnecting anything — this is your reference. Each wire connects to a letter-labeled terminal (R, G, Y, W, C, etc.). Connect the same wires to the matching terminals on the ecobee\'s mounting plate. The ecobee installation guide provides a clear diagram.',
+        content: `Remove the old thermostat from the wall. Take a photo of the wiring before disconnecting anything — this is your reference. Each wire connects to a letter-labeled terminal (R, G, Y, W, C, etc.). Connect the same wires to the matching terminals on the ecobee's mounting plate. The ecobee installation guide provides a clear diagram.`,
       },
       {
         title: 'Attach the ecobee and power on',
@@ -360,7 +360,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Complete setup in the ecobee app',
-        content: 'Download the free ecobee app on your phone. Sign in or create an account. The app walks you through: confirming your equipment type, setting up your schedule (when you\'re home, away, asleep), and enabling SmartHome/Away (it uses sensors to detect occupancy and adjust temperature automatically). Within a week, the ecobee learns your patterns.',
+        content: `Download the free ecobee app on your phone. Sign in or create an account. The app walks you through: confirming your equipment type, setting up your schedule (when you're home, away, asleep), and enabling SmartHome/Away (it uses sensors to detect occupancy and adjust temperature automatically). Within a week, the ecobee learns your patterns.`,
         tip: 'Quick Tip: Enable "Follow Me" mode — ecobee comes with a remote sensor you place in another room. The thermostat uses it to heat/cool based on where you actually are in the house, not just the hallway where the main thermostat sits.',
       },
     ],
@@ -385,11 +385,11 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Use quick replies to texts from your wrist',
-        content: 'When a text notification appears on your watch, scroll down to see reply options. Apple Watch offers suggested quick replies ("OK," "On my way," "Yes," "No") plus a way to dictate a voice reply — tap the microphone icon and speak your response. Great for acknowledging messages when you can\'t reach for your phone.',
+        content: `When a text notification appears on your watch, scroll down to see reply options. Apple Watch offers suggested quick replies ("OK," "On my way," "Yes," "No") plus a way to dictate a voice reply — tap the microphone icon and speak your response. Great for acknowledging messages when you can't reach for your phone.`,
       },
       {
         title: 'Enable fall detection',
-        content: 'Go to the Apple Watch app on your iPhone > Emergency SOS > turn on Fall Detection. If the watch detects a hard fall and you don\'t respond within 60 seconds, it automatically calls 911 and sends your location to your emergency contacts. This is one of the most important safety features, especially for people who live alone.',
+        content: `Go to the Apple Watch app on your iPhone > Emergency SOS > turn on Fall Detection. If the watch detects a hard fall and you don't respond within 60 seconds, it automatically calls 911 and sends your location to your emergency contacts. This is one of the most important safety features, especially for people who live alone.`,
         warning: 'Fall Detection can occasionally trigger during exercises like golf or tennis. During workouts, you can temporarily disable it in the workout settings if you prefer.',
       },
       {
@@ -442,7 +442,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'google-photos-people-albums',
     title: 'How to Find and Organize Photos by Person in Google Photos',
-    excerpt: 'Google Photos automatically groups photos by the people in them. Once you label who\'s who, you can instantly find all photos of any person.',
+    excerpt: `Google Photos automatically groups photos by the people in them. Once you label who's who, you can instantly find all photos of any person.`,
     category: 'app-guides',
     tags: ['google photos', 'face recognition', 'people albums', 'photo organization', 'find photos'],
     readTime: '4 min',
@@ -453,24 +453,24 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Find the People album',
-        content: 'Open Google Photos. Tap "Search" at the bottom. Scroll down and look for "People & Pets." You\'ll see circular photos representing groups of faces Google has detected. Each cluster represents a different person, even before you label them.',
-        tip: 'Quick Tip: If you don\'t see People & Pets, go to Photos settings (tap your profile picture > Photos settings) and make sure Face grouping is turned on.',
+        content: `Open Google Photos. Tap "Search" at the bottom. Scroll down and look for "People & Pets." You'll see circular photos representing groups of faces Google has detected. Each cluster represents a different person, even before you label them.`,
+        tip: `Quick Tip: If you don't see People & Pets, go to Photos settings (tap your profile picture > Photos settings) and make sure Face grouping is turned on.`,
       },
       {
         title: 'Label faces with names',
-        content: 'Tap on any face cluster to see all photos Google grouped together. Tap "Add a name" or "Who is this?" at the top. Type the person\'s name — just a first name or a nickname is fine. Tap Done. Google Photos will now recognize this person and label their photos going forward.',
+        content: `Tap on any face cluster to see all photos Google grouped together. Tap "Add a name" or "Who is this?" at the top. Type the person's name — just a first name or a nickname is fine. Tap Done. Google Photos will now recognize this person and label their photos going forward.`,
       },
       {
         title: 'Confirm and correct suggestions',
-        content: 'After labeling a face, Google Photos may ask you to confirm additional photos: "Is this the same person?" It shows photo batches and asks if they match. Tap checkmarks to confirm and X\'s to reject. This helps Google learn more precisely over time.',
+        content: `After labeling a face, Google Photos may ask you to confirm additional photos: "Is this the same person?" It shows photo batches and asks if they match. Tap checkmarks to confirm and X's to reject. This helps Google learn more precisely over time.`,
       },
       {
         title: 'Search for a person by name',
-        content: 'Once labeled, tap the Search bar in Google Photos and type the person\'s name. All photos featuring that person appear — across your entire library, going back years. Tap "All photos" to see the complete collection or view them in chronological order.',
+        content: `Once labeled, tap the Search bar in Google Photos and type the person's name. All photos featuring that person appear — across your entire library, going back years. Tap "All photos" to see the complete collection or view them in chronological order.`,
       },
       {
-        title: 'Share a person\'s album with family',
-        content: 'Open a person\'s People album. Tap the three-dot menu (⋮) and look for "Share" or "Create shared album." You can share all photos of that person with another Google Photos user — great for sharing all grandchild photos with grandparents, for example.',
+        title: `Share a person's album with family`,
+        content: `Open a person's People album. Tap the three-dot menu (⋮) and look for "Share" or "Create shared album." You can share all photos of that person with another Google Photos user — great for sharing all grandchild photos with grandparents, for example.`,
       },
     ],
   },
@@ -478,7 +478,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'email-security-best-practices',
     title: 'How to Keep Your Email Account Safe from Hackers and Scammers',
-    excerpt: 'Your email account is the key to all your other accounts. Here\'s how to lock it down with a strong password, two-factor authentication, and smart habits.',
+    excerpt: `Your email account is the key to all your other accounts. Here's how to lock it down with a strong password, two-factor authentication, and smart habits.`,
     category: 'safety-guides',
     tags: ['email security', 'gmail', 'password', 'two-factor', 'account security', 'phishing'],
     readTime: '6 min',
@@ -489,20 +489,20 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Use a strong, unique email password',
-        content: 'Your email password should be different from every other password you use, and strong: at least 12 characters, mixing uppercase and lowercase letters, numbers, and symbols. Don\'t use your name, birthday, or any word from the dictionary. If your password is weak, change it today. Gmail: Google Account > Security > Password. Outlook: account.microsoft.com > Security.',
+        content: `Your email password should be different from every other password you use, and strong: at least 12 characters, mixing uppercase and lowercase letters, numbers, and symbols. Don't use your name, birthday, or any word from the dictionary. If your password is weak, change it today. Gmail: Google Account > Security > Password. Outlook: account.microsoft.com > Security.`,
       },
       {
         title: 'Turn on two-step verification',
-        content: 'Two-step verification (also called 2FA) means logging in requires both your password AND a code from your phone. Even if someone steals your password, they can\'t access your email without the code. For Gmail: Google Account > Security > 2-Step Verification > Get Started. For Outlook: account.microsoft.com > Security > Advanced security > Two-step verification.',
+        content: `Two-step verification (also called 2FA) means logging in requires both your password AND a code from your phone. Even if someone steals your password, they can't access your email without the code. For Gmail: Google Account > Security > 2-Step Verification > Get Started. For Outlook: account.microsoft.com > Security > Advanced security > Two-step verification.`,
         tip: 'Quick Tip: Choose the authenticator app method over SMS for better security — see our guide "How to Use Google Authenticator" for setup instructions.',
       },
       {
         title: 'Add a recovery phone and email',
-        content: 'Make sure your email account has your current phone number and a secondary email address as recovery options. This lets you regain access if you\'re ever locked out. Gmail: Google Account > Security > Ways we can verify it\'s you. Outlook: account.microsoft.com > Security > Update your security info.',
+        content: `Make sure your email account has your current phone number and a secondary email address as recovery options. This lets you regain access if you're ever locked out. Gmail: Google Account > Security > Ways we can verify it's you. Outlook: account.microsoft.com > Security > Update your security info.`,
       },
       {
         title: 'Learn to recognize phishing emails',
-        content: 'Phishing emails look like they\'re from your bank, Amazon, PayPal, or another trusted sender, but they\'re actually designed to steal your login. Warning signs: urgent language ("Your account will be closed!"), requests to click a link and enter your password, email addresses that look slightly wrong (bank@amazon.support.xyz instead of @amazon.com). When in doubt, go directly to the website by typing the address — never follow a link from a suspicious email.',
+        content: `Phishing emails look like they're from your bank, Amazon, PayPal, or another trusted sender, but they're actually designed to steal your login. Warning signs: urgent language ("Your account will be closed!"), requests to click a link and enter your password, email addresses that look slightly wrong (bank@amazon.support.xyz instead of @amazon.com). When in doubt, go directly to the website by typing the address — never follow a link from a suspicious email.`,
       },
       {
         title: 'Review what apps have access to your email',
@@ -515,7 +515,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'mac-menu-bar-icons-guide',
     title: 'Understanding the Mac Menu Bar and Its Icons',
-    excerpt: 'The row of small icons in the top-right corner of your Mac screen shows what\'s running, your connection status, and gives you quick access to settings.',
+    excerpt: `The row of small icons in the top-right corner of your Mac screen shows what's running, your connection status, and gives you quick access to settings.`,
     category: 'mac-guides',
     tags: ['mac', 'menu bar', 'status bar', 'mac tips', 'menu bar icons', 'macos'],
     readTime: '4 min',
@@ -535,15 +535,15 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Why does a menu bar icon turn yellow, red, or show a warning?',
-        content: 'Battery with exclamation point: battery condition has degraded (replace soon). Bluetooth with an X: Bluetooth is off or something failed. Wi-Fi with an X: not connected to internet. A spinning loading indicator: your Mac is downloading updates or syncing. These are worth addressing — click the icon to see what\'s happening.',
+        content: `Battery with exclamation point: battery condition has degraded (replace soon). Bluetooth with an X: Bluetooth is off or something failed. Wi-Fi with an X: not connected to internet. A spinning loading indicator: your Mac is downloading updates or syncing. These are worth addressing — click the icon to see what's happening.`,
       },
       {
         title: 'Rearrange menu bar icons',
-        content: 'Hold the Command key (⌘) and click and drag a menu bar icon to move it to a new position. This works for icons you\'ve added yourself and some system icons. Third-party apps often put icons in the menu bar too — you can drag these around the same way.',
+        content: `Hold the Command key (⌘) and click and drag a menu bar icon to move it to a new position. This works for icons you've added yourself and some system icons. Third-party apps often put icons in the menu bar too — you can drag these around the same way.`,
       },
       {
         title: 'Control Center — the hub for quick settings',
-        content: 'Click the Control Center icon (two toggle switches) to access a panel of quick settings similar to iPhone\'s Control Center: Wi-Fi, Bluetooth, AirDrop, Focus (Do Not Disturb), Keyboard Brightness (MacBook), Display brightness, and Sound. You can also drag items from Control Center directly to the menu bar to keep them permanently visible.',
+        content: `Click the Control Center icon (two toggle switches) to access a panel of quick settings similar to iPhone's Control Center: Wi-Fi, Bluetooth, AirDrop, Focus (Do Not Disturb), Keyboard Brightness (MacBook), Display brightness, and Sound. You can also drag items from Control Center directly to the menu bar to keep them permanently visible.`,
       },
     ],
   },
@@ -575,12 +575,12 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Lock a note for sensitive information',
-        content: 'Tap the three-dot menu (⋮) at the top of any note. Tap "Lock." You\'ll set a password (or use your Face ID/Touch ID). Locked notes show a padlock icon and require authentication to open. Good for storing: account numbers, important contact details, insurance information, or any note you want to keep private.',
-        warning: 'Don\'t forget the password for locked notes — Apple cannot recover it. Use a password you\'ll remember or the Face ID/Touch ID option.',
+        content: `Tap the three-dot menu (⋮) at the top of any note. Tap "Lock." You'll set a password (or use your Face ID/Touch ID). Locked notes show a padlock icon and require authentication to open. Good for storing: account numbers, important contact details, insurance information, or any note you want to keep private.`,
+        warning: `Don't forget the password for locked notes — Apple cannot recover it. Use a password you'll remember or the Face ID/Touch ID option.`,
       },
       {
         title: 'Pin important notes to the top',
-        content: 'Swipe right on any note in the list and tap "Pin." Pinned notes appear at the very top of the note list with a pin icon, so they\'re always easy to find. Pin your grocery list, today\'s to-do, or any note you access frequently.',
+        content: `Swipe right on any note in the list and tap "Pin." Pinned notes appear at the very top of the note list with a pin icon, so they're always easy to find. Pin your grocery list, today's to-do, or any note you access frequently.`,
       },
     ],
   },
@@ -588,7 +588,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'windows-auto-update-guide',
     title: 'How to Make Sure Windows Updates Automatically',
-    excerpt: 'Windows security updates protect your computer from viruses and hackers. Here\'s how to turn on automatic updates so you\'re always protected without thinking about it.',
+    excerpt: `Windows security updates protect your computer from viruses and hackers. Here's how to turn on automatic updates so you're always protected without thinking about it.`,
     category: 'windows-guides',
     tags: ['windows update', 'automatic updates', 'security patches', 'windows 11', 'windows 10'],
     readTime: '4 min',
@@ -599,7 +599,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Check Windows Update status',
-        content: 'Click Start, type "Windows Update," and open it. You\'ll see your current update status. If it says "You\'re up to date" with a checkmark, you\'re current. If it shows pending updates, click "Install now." The important thing is that this screen should say updates are on.',
+        content: `Click Start, type "Windows Update," and open it. You'll see your current update status. If it says "You're up to date" with a checkmark, you're current. If it shows pending updates, click "Install now." The important thing is that this screen should say updates are on.`,
       },
       {
         title: 'Make sure automatic updates are enabled',
@@ -607,8 +607,8 @@ export const guidesBatch23: Guide[] = [
         tip: 'Quick Tip: If you see the option "Notify to schedule restart" for major updates, enable it — your computer will ask before restarting for an update instead of restarting unexpectedly.',
       },
       {
-        title: 'Set Active Hours so updates don\'t interrupt you',
-        content: 'Click "Advanced options" > "Active hours." Set this to the hours you\'re typically using your computer (like 8am–10pm). Windows will only restart for updates outside these hours — late at night — so your computer won\'t restart in the middle of a video call or document you\'re working on.',
+        title: `Set Active Hours so updates don't interrupt you`,
+        content: `Click "Advanced options" > "Active hours." Set this to the hours you're typically using your computer (like 8am–10pm). Windows will only restart for updates outside these hours — late at night — so your computer won't restart in the middle of a video call or document you're working on.`,
       },
       {
         title: 'Install any pending updates now',
@@ -623,8 +623,8 @@ export const guidesBatch23: Guide[] = [
 
   {
     slug: 'android-system-update-guide',
-    title: 'How to Update Your Android Phone\'s Software',
-    excerpt: 'Android software updates improve security, fix bugs, and add new features. Here\'s how to check for and install updates on any Android phone.',
+    title: `How to Update Your Android Phone's Software`,
+    excerpt: `Android software updates improve security, fix bugs, and add new features. Here's how to check for and install updates on any Android phone.`,
     category: 'phone-guides',
     tags: ['android update', 'system update', 'android software', 'phone update', 'security update'],
     readTime: '4 min',
@@ -644,7 +644,7 @@ export const guidesBatch23: Guide[] = [
       {
         title: 'Find software update on other Android phones',
         content: 'The location varies by manufacturer:\n- Motorola: Settings > About phone > Check for updates\n- LG: Settings > General > About phone > Update Center\n- OnePlus: Settings > System > System Updates\n- Most others: Settings > About phone > Software update (or System update)',
-        tip: 'Quick Tip: If you can\'t find it, open Settings and use the search bar — type "update" and it will find the setting regardless of where it\'s buried.',
+        tip: `Quick Tip: If you can't find it, open Settings and use the search bar — type "update" and it will find the setting regardless of where it's buried.`,
       },
       {
         title: 'Prepare before updating',
@@ -652,7 +652,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'What if no updates are available?',
-        content: 'If your phone says it\'s up to date but the software version seems old, your phone may no longer be receiving updates. Most Android phones get security updates for 3–5 years from their release date. After that, the manufacturer stops providing patches. If your phone is more than 4–5 years old and no longer receiving security updates, this is a good reason to consider upgrading.',
+        content: `If your phone says it's up to date but the software version seems old, your phone may no longer be receiving updates. Most Android phones get security updates for 3–5 years from their release date. After that, the manufacturer stops providing patches. If your phone is more than 4–5 years old and no longer receiving security updates, this is a good reason to consider upgrading.`,
       },
     ],
   },
@@ -671,16 +671,16 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Open Medical ID in the Health app',
-        content: 'Open the Health app (red heart icon on iPhone). Tap your profile picture in the top right corner. Tap "Medical ID." If you\'ve never set it up, tap "Create Medical ID." If you already have one, tap "Edit."',
+        content: `Open the Health app (red heart icon on iPhone). Tap your profile picture in the top right corner. Tap "Medical ID." If you've never set it up, tap "Create Medical ID." If you already have one, tap "Edit."`,
       },
       {
         title: 'Fill in your health information',
-        content: 'Fill in what\'s relevant:\n- Blood type (if you know it)\n- Allergies and reactions\n- Medical conditions (diabetes, heart conditions, etc.)\n- Medications you take regularly\n- Organ donor status\n\nYou don\'t need to fill in everything — any information you include could be helpful to emergency responders.',
-        tip: 'Quick Tip: Include your doctor\'s name and phone number in the "Notes" field — first responders can call them for more information.',
+        content: `Fill in what's relevant:\n- Blood type (if you know it)\n- Allergies and reactions\n- Medical conditions (diabetes, heart conditions, etc.)\n- Medications you take regularly\n- Organ donor status\n\nYou don't need to fill in everything — any information you include could be helpful to emergency responders.`,
+        tip: `Quick Tip: Include your doctor's name and phone number in the "Notes" field — first responders can call them for more information.`,
       },
       {
         title: 'Add emergency contacts',
-        content: 'Scroll down to "Emergency Contacts" and tap the "+" button. Choose a contact from your contacts list — a spouse, adult child, sibling, or close friend. You can add more than one. Enter their relationship (Spouse, Son, Daughter, Friend, etc.). These people will be shown on screen if someone accesses your Medical ID, and they\'ll be called automatically if you use Emergency SOS.',
+        content: `Scroll down to "Emergency Contacts" and tap the "+" button. Choose a contact from your contacts list — a spouse, adult child, sibling, or close friend. You can add more than one. Enter their relationship (Spouse, Son, Daughter, Friend, etc.). These people will be shown on screen if someone accesses your Medical ID, and they'll be called automatically if you use Emergency SOS.`,
       },
       {
         title: 'Enable "Show When Locked"',
@@ -696,7 +696,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'choose-best-smart-speaker',
     title: 'Alexa Echo, Google Nest, or Apple HomePod: Which Smart Speaker Is Right for You',
-    excerpt: 'Three major smart speakers serve different households. Here\'s how to choose based on what devices you already own and what you\'ll use it for.',
+    excerpt: `Three major smart speakers serve different households. Here's how to choose based on what devices you already own and what you'll use it for.`,
     category: 'smart-home',
     tags: ['smart speaker', 'amazon echo', 'google nest', 'apple homepod', 'alexa', 'comparison'],
     readTime: '5 min',
@@ -715,7 +715,7 @@ export const guidesBatch23: Guide[] = [
         content: 'Google Nest Mini and Nest Audio work best with Android phones and Google services (Gmail, Google Calendar, Google Maps). Google Assistant is excellent at answering factual questions, managing Google Calendar appointments, and understanding natural language. If your household has multiple Android users, Nest fits seamlessly.',
       },
       {
-        title: 'Choose Apple HomePod if you\'re deep in the Apple ecosystem',
+        title: `Choose Apple HomePod if you're deep in the Apple ecosystem`,
         content: 'Apple HomePod and HomePod Mini ($99) are designed for iPhone, iPad, and Mac users. HomePod has excellent sound quality and integrates deeply with Apple Music, iCloud, and HomeKit smart home devices. It can hand off calls from your iPhone and sync with your Apple Calendar. HomePod works best as a secondary device alongside other Apple devices — less useful if you use Android.',
       },
       {
@@ -724,7 +724,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Start with an entry-level model',
-        content: 'All three brands offer $50–$100 entry-level speakers. Start there — if you love it, consider upgrading later. You can return within 30 days if it doesn\'t fit your needs. Best Buy lets you see all three in person and even demo them in-store.',
+        content: `All three brands offer $50–$100 entry-level speakers. Start there — if you love it, consider upgrading later. You can return within 30 days if it doesn't fit your needs. Best Buy lets you see all three in person and even demo them in-store.`,
       },
     ],
   },
@@ -743,7 +743,7 @@ export const guidesBatch23: Guide[] = [
     steps: [
       {
         title: 'Use Siri to find what to watch across all apps',
-        content: 'Press and hold the microphone button on the Siri Remote and say what you\'re looking for: "Show me Tom Hanks movies," "Find nature documentaries," "Play something funny," or "What\'s on tonight?" Siri searches across Apple TV+, Netflix, Hulu, Amazon Prime, Disney+, and other installed apps simultaneously and shows results from all of them.',
+        content: `Press and hold the microphone button on the Siri Remote and say what you're looking for: "Show me Tom Hanks movies," "Find nature documentaries," "Play something funny," or "What's on tonight?" Siri searches across Apple TV+, Netflix, Hulu, Amazon Prime, Disney+, and other installed apps simultaneously and shows results from all of them.`,
         tip: 'Quick Tip: Asking Siri "What did he just say?" rewinds the scene you just watched by 15 seconds and turns on captions for that brief segment — great for moments when dialogue is hard to hear.',
       },
       {
@@ -756,7 +756,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Control HomeKit smart home devices',
-        content: 'If you use Apple HomeKit compatible smart home devices (lights, locks, cameras, thermostat), Apple TV acts as a home hub that controls them remotely. Go to Settings > AirPlay and HomeKit to confirm it\'s set as a home hub. You can then control HomeKit devices from your iPhone even when away from home.',
+        content: `If you use Apple HomeKit compatible smart home devices (lights, locks, cameras, thermostat), Apple TV acts as a home hub that controls them remotely. Go to Settings > AirPlay and HomeKit to confirm it's set as a home hub. You can then control HomeKit devices from your iPhone even when away from home.`,
       },
       {
         title: 'Set a sleep timer',
@@ -768,7 +768,7 @@ export const guidesBatch23: Guide[] = [
   {
     slug: 'icloud-keychain-guide',
     title: 'How to Use iCloud Keychain to Manage Your Passwords on iPhone',
-    excerpt: 'iCloud Keychain is Apple\'s built-in password manager — it remembers your passwords, fills them in automatically, generates strong new ones, and alerts you to reused passwords.',
+    excerpt: `iCloud Keychain is Apple's built-in password manager — it remembers your passwords, fills them in automatically, generates strong new ones, and alerts you to reused passwords.`,
     category: 'safety-guides',
     tags: ['icloud keychain', 'passwords', 'password manager', 'iphone', 'safari', 'autofill'],
     readTime: '5 min',
@@ -783,7 +783,7 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'View and manage your saved passwords',
-        content: 'Go to Settings > Passwords. Authenticate with Face ID or your passcode. You\'ll see a list of every username and password saved to your keychain, organized by website or app. Tap any entry to see the full password. You can edit incorrect entries or delete ones you no longer need.',
+        content: `Go to Settings > Passwords. Authenticate with Face ID or your passcode. You'll see a list of every username and password saved to your keychain, organized by website or app. Tap any entry to see the full password. You can edit incorrect entries or delete ones you no longer need.`,
         tip: 'Quick Tip: Look for the yellow warning icon next to passwords — it indicates that password was found in a data breach or is reused on multiple sites. These should be changed to new, unique passwords.',
       },
       {
@@ -792,8 +792,8 @@ export const guidesBatch23: Guide[] = [
       },
       {
         title: 'Let Keychain generate a strong password',
-        content: 'When creating a new account on a website, tap in the password field. Safari suggests a strong, unique password (a long random combination of letters, numbers, and symbols). Tap "Use Strong Password" to accept it. Keychain saves it automatically — you don\'t need to memorize it.',
-        warning: 'Letting Keychain generate strong passwords only works well if you stay in the Apple ecosystem. If you switch to Android, you\'ll need to export or transfer your passwords. Consider this before building your entire password library in Keychain.',
+        content: `When creating a new account on a website, tap in the password field. Safari suggests a strong, unique password (a long random combination of letters, numbers, and symbols). Tap "Use Strong Password" to accept it. Keychain saves it automatically — you don't need to memorize it.`,
+        warning: `Letting Keychain generate strong passwords only works well if you stay in the Apple ecosystem. If you switch to Android, you'll need to export or transfer your passwords. Consider this before building your entire password library in Keychain.`,
       },
       {
         title: 'Access passwords on your Mac',

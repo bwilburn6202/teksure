@@ -73,7 +73,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Create an eBay account and understand seller ratings',
         content:
-          'Go to ebay.com and click "Register" to create a free account. Use a strong, unique password and add a phone number for security. When shopping, always check the seller\'s feedback score before buying. The score appears next to the seller\'s username as a percentage. Sellers with 98% or higher positive feedback and hundreds of reviews are reliable. New sellers with 0 or very few reviews carry more risk — consider whether the deal is worth it.',
+          `Go to ebay.com and click "Register" to create a free account. Use a strong, unique password and add a phone number for security. When shopping, always check the seller's feedback score before buying. The score appears next to the seller's username as a percentage. Sellers with 98% or higher positive feedback and hundreds of reviews are reliable. New sellers with 0 or very few reviews carry more risk — consider whether the deal is worth it.`,
         tip: 'Quick Tip: Read the most recent feedback comments, not just the overall score. If someone recently left negative reviews mentioning slow shipping or items not as described, that is more relevant than a high overall score built up years ago.',
       },
       {
@@ -85,7 +85,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Pay safely and check the listing carefully before buying',
         content:
-          'Always pay through eBay\'s official checkout page — never send money by wire transfer, gift cards, or Zelle to a seller. These payment methods offer no buyer protection. Read the full item description carefully, look at all the photos, and note the item\'s condition (New, Used, Refurbished, Parts Only). Check the return policy. If a listing has very few photos, a vague description, or a price that seems impossibly low, proceed with caution.',
+          `Always pay through eBay's official checkout page — never send money by wire transfer, gift cards, or Zelle to a seller. These payment methods offer no buyer protection. Read the full item description carefully, look at all the photos, and note the item's condition (New, Used, Refurbished, Parts Only). Check the return policy. If a listing has very few photos, a vague description, or a price that seems impossibly low, proceed with caution.`,
         warning:
           "If a seller asks you to take the transaction 'off eBay' and pay them directly — even with a story about saving on fees — this is a scam attempt and voids all buyer protection. Report the seller and do not pay outside eBay.",
       },
@@ -214,7 +214,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Create a Kids Profile on Netflix',
         content:
-          'Open Netflix and click or tap on the profile icon at the top right. Click "Manage Profiles" → "Add Profile." Enter a name like "Kids" or a grandchild\'s name. Turn on the "Kids" toggle — this automatically applies the strictest content filters. Click Save. This profile now appears on the account select screen whenever anyone opens Netflix. Grandchildren can use this profile and will only see age-appropriate content.',
+          `Open Netflix and click or tap on the profile icon at the top right. Click "Manage Profiles" → "Add Profile." Enter a name like "Kids" or a grandchild's name. Turn on the "Kids" toggle — this automatically applies the strictest content filters. Click Save. This profile now appears on the account select screen whenever anyone opens Netflix. Grandchildren can use this profile and will only see age-appropriate content.`,
         tip: 'Quick Tip: A Kids Profile cannot be changed without logging into the main Netflix account. Children cannot turn off the content filters from within a Kids Profile.',
       },
       {
@@ -305,7 +305,7 @@ export const guidesBatch16: Guide[] = [
         title: 'Set a strong Wi-Fi password and use WPA3 or WPA2 security',
         content:
           "In your router settings, find \"Wireless Settings\" or \"Wi-Fi Settings.\" Look for the \"Security Mode\" or \"Encryption\" setting. Choose WPA3 if available; if not, WPA2-AES. Avoid WEP and WPA (older, insecure options). Change your Wi-Fi password to something at least 12 characters long — a phrase with spaces works well (example: PurpleSunset2026!). After saving, all your devices will need to re-enter the new password once.",
-        tip: 'Quick Tip: After changing your Wi-Fi password, go to each device and reconnect with the new password. Start with the device you\'re most likely to use, then work through the others.',
+        tip: `Quick Tip: After changing your Wi-Fi password, go to each device and reconnect with the new password. Start with the device you're most likely to use, then work through the others.`,
       },
       {
         title: 'Create a guest network for visitors',
@@ -420,7 +420,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Compare plans before you switch',
         content:
-          'Common options worth comparing: T-Mobile Essentials 55+ (two lines, special senior pricing), AT&T Value Plus 55+, Consumer Cellular (AARP partner, no contracts, widely recommended for seniors), Mint Mobile (T-Mobile network, very low cost, pay monthly or upfront), Visible (Verizon network, $25-$30/month unlimited). For the best deals, search AARP Wireless Partners or compare plans on the AARP cell phone plan comparison tool. Check coverage in your area by entering your zip code on each carrier\'s website before switching.',
+          `Common options worth comparing: T-Mobile Essentials 55+ (two lines, special senior pricing), AT&T Value Plus 55+, Consumer Cellular (AARP partner, no contracts, widely recommended for seniors), Mint Mobile (T-Mobile network, very low cost, pay monthly or upfront), Visible (Verizon network, $25-$30/month unlimited). For the best deals, search AARP Wireless Partners or compare plans on the AARP cell phone plan comparison tool. Check coverage in your area by entering your zip code on each carrier's website before switching.`,
         tip: "Quick Tip: If you don't use much data (only check email, browse Facebook, and occasionally use maps), a 5GB or 10GB plan may be all you need and will cost significantly less than unlimited.",
       },
       {
@@ -623,7 +623,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Share location on iPhone using Find My',
         content:
-          'Open the Find My app on your iPhone (it comes pre-installed — search for it if you don\'t see it). Tap "People" at the bottom. Tap "Share My Location" or the "+" button. Type in the name or phone number of the family member you want to share with — they need to have an iPhone and an Apple ID. Choose whether to share "For One Hour," "Until End of Day," or "Share Indefinitely." They will receive a notification and can accept your location sharing request.',
+          `Open the Find My app on your iPhone (it comes pre-installed — search for it if you don't see it). Tap "People" at the bottom. Tap "Share My Location" or the "+" button. Type in the name or phone number of the family member you want to share with — they need to have an iPhone and an Apple ID. Choose whether to share "For One Hour," "Until End of Day," or "Share Indefinitely." They will receive a notification and can accept your location sharing request.`,
         tip: 'Quick Tip: Both people can share with each other — so you can also see where your family member is, not just the other way around. Each person has to agree to sharing.',
       },
       {
@@ -671,7 +671,7 @@ export const guidesBatch16: Guide[] = [
         title: 'Choose the right smart lock for your door',
         content:
           "Most smart locks fit standard deadbolts. Measure your door thickness (usually 1-3/4 inches) and check that your deadbolt is a standard single-cylinder type. Smart locks come in two main types: retrofit locks that attach to the inside of your existing deadbolt (like August), leaving your exterior lock and keys unchanged — and full deadbolt replacements that swap out the whole lock (like Schlage Encode). Retrofit locks are easier to install; full replacements give more options for exterior keypads.",
-        tip: 'Quick Tip: If you rent your home, a retrofit lock (interior-only attachment) is ideal because it doesn\'t modify the exterior and you can take it when you move.',
+        tip: `Quick Tip: If you rent your home, a retrofit lock (interior-only attachment) is ideal because it doesn't modify the exterior and you can take it when you move.`,
       },
       {
         title: 'Install the lock hardware',
@@ -716,7 +716,7 @@ export const guidesBatch16: Guide[] = [
       {
         title: 'Create a new shared album',
         content:
-          'Open Google Photos on your phone or at photos.google.com on a computer. Tap the "+" or "Create" button → choose "Shared album." Give the album a title (example: "Thanksgiving 2026" or "Emma\'s Birthday"). Select photos you want to include from your library — tap each photo to select it, then tap "Add." Tap "Share" or "Next" to continue to the sharing step.',
+          `Open Google Photos on your phone or at photos.google.com on a computer. Tap the "+" or "Create" button → choose "Shared album." Give the album a title (example: "Thanksgiving 2026" or "Emma's Birthday"). Select photos you want to include from your library — tap each photo to select it, then tap "Add." Tap "Share" or "Next" to continue to the sharing step.`,
       },
       {
         title: 'Invite family members to the album',
@@ -862,7 +862,7 @@ export const guidesBatch16: Guide[] = [
         content:
           "MVNOs (Mobile Virtual Network Operators) rent tower access from Verizon, AT&T, or T-Mobile and resell service at much lower prices — often $15-$35/month for unlimited calls, texts, and several gigabytes of data. Recommended MVNOs with strong reputations for seniors: Consumer Cellular (AARP partner, US-based customer service, no contracts, plans from $20/month), Mint Mobile (T-Mobile network, $15-$30/month), Visible (Verizon network, $25/month unlimited). Coverage is generally identical to the parent carrier.",
         warning:
-          'MVNO plans are usually "deprioritized" — during peak network congestion in busy areas, your data may slow down compared to customers on the parent carrier\'s premium plans. For most daily use, this is not noticeable.',
+          `MVNO plans are usually "deprioritized" — during peak network congestion in busy areas, your data may slow down compared to customers on the parent carrier's premium plans. For most daily use, this is not noticeable.`,
       },
       {
         title: 'Know how much data you actually use',

@@ -24,8 +24,8 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Run a Quick Scan',
-        content: 'Click "Virus & threat protection." Under "Current threats," click "Quick scan." Windows Defender scans the areas of your computer most likely to have viruses. A quick scan usually takes 2-5 minutes. When it finishes, you\'ll see either "No current threats" (your computer is clean) or a list of any items found. Quick scans are good for routine checks.',
-        tip: 'Run a Quick Scan about once a month even if you haven\'t noticed any problems. Windows Defender also scans files automatically in real time as you download and use them.',
+        content: `Click "Virus & threat protection." Under "Current threats," click "Quick scan." Windows Defender scans the areas of your computer most likely to have viruses. A quick scan usually takes 2-5 minutes. When it finishes, you'll see either "No current threats" (your computer is clean) or a list of any items found. Quick scans are good for routine checks.`,
+        tip: `Run a Quick Scan about once a month even if you haven't noticed any problems. Windows Defender also scans files automatically in real time as you download and use them.`,
       },
       {
         title: 'Run a Full Scan for peace of mind',
@@ -34,11 +34,11 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Make sure real-time protection is turned on',
         content: 'Click "Virus & threat protection" → scroll down to "Virus & threat protection settings" → click "Manage settings." Make sure "Real-time protection" is turned ON (toggle should be blue/on). Real-time protection monitors everything your computer does and blocks threats automatically — this should always be on.',
-        warning: 'If you have a third-party antivirus program installed (like McAfee or Norton), Windows Defender typically turns off its real-time protection automatically to avoid conflicts. This is expected behavior — you\'re protected by the other program instead.',
+        warning: `If you have a third-party antivirus program installed (like McAfee or Norton), Windows Defender typically turns off its real-time protection automatically to avoid conflicts. This is expected behavior — you're protected by the other program instead.`,
       },
       {
         title: 'Keep Windows updated for the best protection',
-        content: 'Windows Defender\'s virus definitions update automatically through Windows Update. To check that your updates are current: click Start → Settings → Windows Update → click "Check for updates." Install any available updates. Virus definition updates happen frequently (often daily) and are small downloads that don\'t require a restart.',
+        content: `Windows Defender's virus definitions update automatically through Windows Update. To check that your updates are current: click Start → Settings → Windows Update → click "Check for updates." Install any available updates. Virus definition updates happen frequently (often daily) and are small downloads that don't require a restart.`,
       },
     ],
   },
@@ -60,18 +60,18 @@ export const guidesBatch15: Guide[] = [
         content: 'Press Ctrl + Alt + Delete on your keyboard at the same time. A blue screen appears with a small menu. Click "Task Manager." Alternatively, right-click anywhere on the empty space in the Taskbar (the bar at the bottom of your screen) and click "Task Manager." Task Manager opens showing a list of all running programs and processes.',
       },
       {
-        title: 'Find what\'s slowing your computer down',
-        content: 'Click the "CPU" column header to sort programs by how much processor power they\'re using (highest at top). Click "Memory" to sort by RAM usage. Any program using 80-100% CPU is likely causing slowdowns. If your computer feels slow overall, look for programs using high percentages and that you\'re not actively using.',
+        title: `Find what's slowing your computer down`,
+        content: `Click the "CPU" column header to sort programs by how much processor power they're using (highest at top). Click "Memory" to sort by RAM usage. Any program using 80-100% CPU is likely causing slowdowns. If your computer feels slow overall, look for programs using high percentages and that you're not actively using.`,
         tip: 'One program using 100% CPU is often an antivirus scan, Windows Update, or a web browser with too many tabs. Give it a few minutes before taking action — many high-usage tasks finish on their own.',
       },
       {
         title: 'Close a frozen or unresponsive program',
-        content: 'If a program shows "(Not Responding)" next to its name in Task Manager, it\'s frozen. Click on that program\'s name once to highlight it. Click "End Task" at the bottom right (or top right in newer Windows versions). The program will close immediately. You may lose any unsaved work in that program — this is a last resort when the program won\'t close normally.',
+        content: `If a program shows "(Not Responding)" next to its name in Task Manager, it's frozen. Click on that program's name once to highlight it. Click "End Task" at the bottom right (or top right in newer Windows versions). The program will close immediately. You may lose any unsaved work in that program — this is a last resort when the program won't close normally.`,
       },
       {
         title: 'Prevent programs from starting automatically',
-        content: 'Many programs start automatically when you turn on your computer, which slows down startup. In Task Manager, click the "Startup apps" tab. You\'ll see all programs that launch when Windows starts, and whether they have a "High," "Medium," or "Low" startup impact. Right-click any program you don\'t need to start automatically and click "Disable." This doesn\'t delete the program — it just stops it from starting with Windows.',
-        tip: 'Good candidates to disable at startup: music apps (Spotify, iTunes), gaming apps, creative software — anything you don\'t use every single day. Keep your antivirus and cloud backup apps enabled.',
+        content: `Many programs start automatically when you turn on your computer, which slows down startup. In Task Manager, click the "Startup apps" tab. You'll see all programs that launch when Windows starts, and whether they have a "High," "Medium," or "Low" startup impact. Right-click any program you don't need to start automatically and click "Disable." This doesn't delete the program — it just stops it from starting with Windows.`,
+        tip: `Good candidates to disable at startup: music apps (Spotify, iTunes), gaming apps, creative software — anything you don't use every single day. Keep your antivirus and cloud backup apps enabled.`,
       },
     ],
   },
@@ -90,16 +90,16 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Check how much storage you have left',
-        content: 'Click the Apple menu (the apple icon in the top left corner) → "About This Mac" → "Storage." You\'ll see a colored bar showing how your storage is being used — with different colors for different file types. Hover over any color to see what type of files it represents. This gives you a clear picture of where your storage is going.',
+        content: `Click the Apple menu (the apple icon in the top left corner) → "About This Mac" → "Storage." You'll see a colored bar showing how your storage is being used — with different colors for different file types. Hover over any color to see what type of files it represents. This gives you a clear picture of where your storage is going.`,
       },
       {
         title: 'Use macOS Optimize Storage feature',
-        content: 'Click the Apple menu → "About This Mac" → "Storage" → click "Manage." Click "Optimize Storage" → click "Optimize." This removes movies and TV shows you\'ve already watched from Apple TV (they can be re-downloaded for free later). It also keeps only recent email attachments locally, moving older ones to iCloud. This alone can free several gigabytes on many Macs.',
-        tip: 'Also turn on "Store in iCloud" in this same window — it moves files you haven\'t accessed recently to iCloud, keeping your Mac storage free while preserving all your files.',
+        content: `Click the Apple menu → "About This Mac" → "Storage" → click "Manage." Click "Optimize Storage" → click "Optimize." This removes movies and TV shows you've already watched from Apple TV (they can be re-downloaded for free later). It also keeps only recent email attachments locally, moving older ones to iCloud. This alone can free several gigabytes on many Macs.`,
+        tip: `Also turn on "Store in iCloud" in this same window — it moves files you haven't accessed recently to iCloud, keeping your Mac storage free while preserving all your files.`,
       },
       {
         title: 'Empty the Trash',
-        content: 'When you delete files on a Mac, they go to the Trash but don\'t actually free up space until you empty it. Right-click the Trash icon in the Dock at the bottom of your screen and click "Empty Trash." Click "Empty Trash" to confirm. Depending on what\'s in your Trash, this might free up a significant amount of storage immediately.',
+        content: `When you delete files on a Mac, they go to the Trash but don't actually free up space until you empty it. Right-click the Trash icon in the Dock at the bottom of your screen and click "Empty Trash." Click "Empty Trash" to confirm. Depending on what's in your Trash, this might free up a significant amount of storage immediately.`,
       },
       {
         title: 'Delete large files you no longer need',
@@ -127,7 +127,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Open Spotlight',
         content: 'Press the Command key (⌘, the key with the Apple logo or a clover symbol) and the Spacebar at the same time. A search bar appears in the center of your screen. Start typing immediately — results appear as you type.',
-        tip: 'You can also click the small magnifying glass icon (🔍) in the top right corner of your Mac\'s menu bar to open Spotlight.',
+        tip: `You can also click the small magnifying glass icon (🔍) in the top right corner of your Mac's menu bar to open Spotlight.`,
       },
       {
         title: 'Search for files and apps',
@@ -139,7 +139,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Search for words within documents',
-        content: 'If you can\'t remember a file\'s name but remember a word in it, type that word in Spotlight. It searches inside documents, emails, and notes for the word. This is especially useful for finding old emails — type a distinctive word from the email and Spotlight will locate it across all your email accounts.',
+        content: `If you can't remember a file's name but remember a word in it, type that word in Spotlight. It searches inside documents, emails, and notes for the word. This is especially useful for finding old emails — type a distinctive word from the email and Spotlight will locate it across all your email accounts.`,
       },
     ],
   },
@@ -158,12 +158,12 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Get an external hard drive',
-        content: 'Time Machine requires an external hard drive (a portable drive you plug in via USB). Look for one with at least 1 TB (terabyte) of capacity — they typically cost $50-$80 at Target, Best Buy, Walmart, or Amazon. Brands like Seagate, Western Digital (WD), and Samsung make reliable options. The drive should be at least 2x the size of your Mac\'s internal storage for the best backup coverage.',
+        content: `Time Machine requires an external hard drive (a portable drive you plug in via USB). Look for one with at least 1 TB (terabyte) of capacity — they typically cost $50-$80 at Target, Best Buy, Walmart, or Amazon. Brands like Seagate, Western Digital (WD), and Samsung make reliable options. The drive should be at least 2x the size of your Mac's internal storage for the best backup coverage.`,
         tip: 'Look for "portable hard drive" or "external hard drive" when shopping. You want a drive that connects via USB-A or USB-C depending on which ports your Mac has.',
       },
       {
         title: 'Plug in the drive and set up Time Machine',
-        content: 'Plug the external drive into your Mac\'s USB port. macOS may ask if you want to use this drive for Time Machine backups — click "Use as Backup Disk." If it doesn\'t ask, go to the Apple menu → System Settings → Time Machine → click "Add Backup Disk" and select your drive. Time Machine will prepare the drive (no formatting needed) and start the first backup automatically.',
+        content: `Plug the external drive into your Mac's USB port. macOS may ask if you want to use this drive for Time Machine backups — click "Use as Backup Disk." If it doesn't ask, go to the Apple menu → System Settings → Time Machine → click "Add Backup Disk" and select your drive. Time Machine will prepare the drive (no formatting needed) and start the first backup automatically.`,
       },
       {
         title: 'Let the first backup complete',
@@ -192,7 +192,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Pair AirPods with your iPhone for the first time',
         content: 'Make sure your AirPods are in their charging case with the case lid open and the AirPods inside. Hold the open case near your unlocked iPhone. An animation appears on your iPhone showing the AirPods. Tap "Connect." Follow any prompts. The AirPods are now paired with your Apple ID — they will automatically connect to any Apple device signed in to your account.',
-        tip: 'If the connection popup doesn\'t appear, make sure Bluetooth is on in your iPhone\'s Settings and the AirPods have some charge (the case LED should show a light).',
+        tip: `If the connection popup doesn't appear, make sure Bluetooth is on in your iPhone's Settings and the AirPods have some charge (the case LED should show a light).`,
       },
       {
         title: 'Use AirPods for calls and music',
@@ -205,7 +205,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Check your AirPods battery level',
         content: 'Open the AirPods case near your iPhone — a pop-up shows the battery level for each AirPod and the case. Or add the Batteries widget to your iPhone: press and hold an empty area of your Home Screen, tap the + button, search for "Batteries," and add it. The widget shows battery levels for all connected devices including your AirPods whenever you open your phone.',
-        tip: 'When battery is low on AirPods, you\'ll hear a tone in your ear. Put them back in the case for even 15 minutes — they charge quickly and the case holds multiple full charges.',
+        tip: `When battery is low on AirPods, you'll hear a tone in your ear. Put them back in the case for even 15 minutes — they charge quickly and the case holds multiple full charges.`,
       },
     ],
   },
@@ -224,7 +224,7 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Open iPad Settings and go to Wi-Fi',
-        content: 'Tap the "Settings" app (gray gear icon) on your iPad\'s Home Screen. Tap "Wi-Fi" in the left column. Make sure the Wi-Fi switch at the top is turned on (it will be green when on). Your iPad will scan for nearby networks and display them as a list.',
+        content: `Tap the "Settings" app (gray gear icon) on your iPad's Home Screen. Tap "Wi-Fi" in the left column. Make sure the Wi-Fi switch at the top is turned on (it will be green when on). Your iPad will scan for nearby networks and display them as a list.`,
       },
       {
         title: 'Select your WiFi network',
@@ -232,12 +232,12 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Enter your WiFi password',
-        content: 'A keyboard appears asking for your WiFi password. Type your password carefully — WiFi passwords are case-sensitive (capital letters matter). Tap "Join" when you\'ve entered the password. Your iPad will connect to the network, and a WiFi symbol (fan shape) will appear at the top of the screen to confirm you\'re connected.',
-        tip: 'If you don\'t know your WiFi password, see the TekSure guide "How to Find Your WiFi Password on Any Device" at teksure.com/guides/how-to-find-your-wifi-password.',
+        content: `A keyboard appears asking for your WiFi password. Type your password carefully — WiFi passwords are case-sensitive (capital letters matter). Tap "Join" when you've entered the password. Your iPad will connect to the network, and a WiFi symbol (fan shape) will appear at the top of the screen to confirm you're connected.`,
+        tip: `If you don't know your WiFi password, see the TekSure guide "How to Find Your WiFi Password on Any Device" at teksure.com/guides/how-to-find-your-wifi-password.`,
       },
       {
         title: 'Your iPad will remember this network',
-        content: 'Once connected, your iPad remembers this WiFi network. The next time you\'re within range, your iPad reconnects automatically without asking for the password again. If you need to change which WiFi network you\'re using (for example, at a friend\'s house), repeat these steps and select the different network.',
+        content: `Once connected, your iPad remembers this WiFi network. The next time you're within range, your iPad reconnects automatically without asking for the password again. If you need to change which WiFi network you're using (for example, at a friend's house), repeat these steps and select the different network.`,
       },
     ],
   },
@@ -265,12 +265,12 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Sign in to your Amazon account',
-        content: 'Fire TV will ask you to sign in to your Amazon account. If you already have an Amazon account (the same one you use for shopping), enter your email and password using the on-screen keyboard. If you\'re setting up a Fire Stick you ordered from Amazon while logged in, it may already be registered to your account — skip to the home screen.',
+        content: `Fire TV will ask you to sign in to your Amazon account. If you already have an Amazon account (the same one you use for shopping), enter your email and password using the on-screen keyboard. If you're setting up a Fire Stick you ordered from Amazon while logged in, it may already be registered to your account — skip to the home screen.`,
         tip: 'You must have an Amazon account to use a Fire TV Stick. Creating one is free at amazon.com.',
       },
       {
         title: 'Find and watch content',
-        content: 'After setup, you\'ll see the Fire TV home screen. Use the directional pad on the remote to scroll through featured content. Navigate to "Apps" to see all available apps — find Netflix, Hulu, or others and click "Get" to install them. Free apps include Pluto TV, Tubi, Peacock (free tier), and The Roku Channel. Press and hold the microphone button on the remote to search for a movie or show by voice — say the title and Fire TV finds it.',
+        content: `After setup, you'll see the Fire TV home screen. Use the directional pad on the remote to scroll through featured content. Navigate to "Apps" to see all available apps — find Netflix, Hulu, or others and click "Get" to install them. Free apps include Pluto TV, Tubi, Peacock (free tier), and The Roku Channel. Press and hold the microphone button on the remote to search for a movie or show by voice — say the title and Fire TV finds it.`,
       },
     ],
   },
@@ -278,7 +278,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'how-to-set-up-amazon-echo-show',
     title: 'How to Set Up an Amazon Echo Show (Screen + Alexa)',
-    excerpt: 'The Amazon Echo Show has a built-in screen for video calls, recipes, news, and more — here\'s how to set it up and use its key features.',
+    excerpt: `The Amazon Echo Show has a built-in screen for video calls, recipes, news, and more — here's how to set it up and use its key features.`,
     category: 'smart-home',
     tags: ['echo show', 'amazon', 'alexa', 'video call', 'smart display', 'setup'],
     readTime: '5 min',
@@ -293,12 +293,12 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Make a video call with Drop-In',
-        content: 'Echo Shows can make video calls to other Echo Show owners (or through the Alexa app on a phone). Say "Hey Alexa, call [name]" and if that person has an Alexa device or the Alexa app, a video call will start. The screen shows the other person\'s face. You can also set up "Drop-In" with trusted family members — they can check in on you from their phone or their own Echo Show (with your permission).',
-        tip: 'Drop-In requires permission to be set up in advance. In the Alexa app, go to the Communicate tab → Contacts → find a family member and enable "Allow Drop-In." They\'ll need to do the same on their end.',
+        content: `Echo Shows can make video calls to other Echo Show owners (or through the Alexa app on a phone). Say "Hey Alexa, call [name]" and if that person has an Alexa device or the Alexa app, a video call will start. The screen shows the other person's face. You can also set up "Drop-In" with trusted family members — they can check in on you from their phone or their own Echo Show (with your permission).`,
+        tip: `Drop-In requires permission to be set up in advance. In the Alexa app, go to the Communicate tab → Contacts → find a family member and enable "Allow Drop-In." They'll need to do the same on their end.`,
       },
       {
         title: 'Ask Alexa to show you recipes, weather, and news',
-        content: 'The Echo Show\'s screen makes many Alexa responses much richer. "Hey Alexa, show me a recipe for chicken soup" — Alexa displays step-by-step instructions on the screen with photos. "Hey Alexa, what\'s the weather this week?" — shows a 7-day forecast. "Hey Alexa, show me the news" — plays video news headlines. "Hey Alexa, show me my Ring camera" — displays your Ring doorbell live feed (if you have Ring set up).',
+        content: `The Echo Show's screen makes many Alexa responses much richer. "Hey Alexa, show me a recipe for chicken soup" — Alexa displays step-by-step instructions on the screen with photos. "Hey Alexa, what's the weather this week?" — shows a 7-day forecast. "Hey Alexa, show me the news" — plays video news headlines. "Hey Alexa, show me my Ring camera" — displays your Ring doorbell live feed (if you have Ring set up).`,
       },
       {
         title: 'Use the touchscreen for quick controls',
@@ -309,7 +309,7 @@ export const guidesBatch15: Guide[] = [
 
   {
     slug: 'how-to-use-android-widgets',
-    title: 'How to Add Widgets to Your Android Phone\'s Home Screen',
+    title: `How to Add Widgets to Your Android Phone's Home Screen`,
     excerpt: 'Android widgets show live information — weather, news, calendar events — right on your home screen without opening any apps.',
     category: 'tips-tricks',
     tags: ['widgets', 'android', 'home screen', 'customize', 'weather', 'calendar'],
@@ -330,10 +330,10 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Place the widget on your home screen',
         content: 'Press and hold the widget you want to add. Drag it from the widget menu and drop it on your home screen in an empty area. Resize the widget by pressing and holding it on the home screen — blue dots appear at the edges. Drag the dots to resize. Tap anywhere else to confirm the placement.',
-        tip: 'If there isn\'t enough space for the widget where you want it, delete or rearrange some apps first to create an open area.',
+        tip: `If there isn't enough space for the widget where you want it, delete or rearrange some apps first to create an open area.`,
       },
       {
-        title: 'Remove a widget you don\'t want',
+        title: `Remove a widget you don't want`,
         content: 'Press and hold the widget on your home screen. Drag it to the "Remove" option that appears at the top of the screen. This removes the widget from your home screen but does not uninstall the app it came from.',
       },
     ],
@@ -341,8 +341,8 @@ export const guidesBatch15: Guide[] = [
 
   {
     slug: 'how-to-use-iphone-widgets',
-    title: 'How to Add Widgets to Your iPhone\'s Home Screen',
-    excerpt: 'iPhone widgets show weather, calendar, battery level, and more directly on your home screen — here\'s how to add and arrange them.',
+    title: `How to Add Widgets to Your iPhone's Home Screen`,
+    excerpt: `iPhone widgets show weather, calendar, battery level, and more directly on your home screen — here's how to add and arrange them.`,
     category: 'tips-tricks',
     tags: ['widgets', 'iphone', 'home screen', 'ios', 'weather', 'customize'],
     readTime: '3 min',
@@ -353,15 +353,15 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Enter editing mode',
-        content: 'Press and hold any empty space on your iPhone\'s Home Screen until the apps start to wiggle. Tap the plus (+) button in the top left corner of the screen. The "Add a Widget" gallery opens showing all available widgets.',
+        content: `Press and hold any empty space on your iPhone's Home Screen until the apps start to wiggle. Tap the plus (+) button in the top left corner of the screen. The "Add a Widget" gallery opens showing all available widgets.`,
       },
       {
         title: 'Choose and add a widget',
-        content: 'Scroll through or search the widget gallery. Tap any widget to see size options — small (about the size of 4 app icons), medium (8 app icons wide), or large (a full row). Swipe through the size options and tap "Add Widget" when you\'ve chosen the one you want. The widget is added to your Home Screen.',
+        content: `Scroll through or search the widget gallery. Tap any widget to see size options — small (about the size of 4 app icons), medium (8 app icons wide), or large (a full row). Swipe through the size options and tap "Add Widget" when you've chosen the one you want. The widget is added to your Home Screen.`,
       },
       {
         title: 'Move and arrange widgets',
-        content: 'While still in wiggle mode, press and hold any widget or app to drag it to a new position. Widgets can sit alongside regular app icons or be placed together in a "Smart Stack" (a stack of widgets you swipe through). Tap "Done" in the top right corner when you\'re satisfied with the arrangement.',
+        content: `While still in wiggle mode, press and hold any widget or app to drag it to a new position. Widgets can sit alongside regular app icons or be placed together in a "Smart Stack" (a stack of widgets you swipe through). Tap "Done" in the top right corner when you're satisfied with the arrangement.`,
       },
       {
         title: 'Add widgets to your Lock Screen',
@@ -384,7 +384,7 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Open the Recently Deleted album',
-        content: 'Open the Photos app. Tap "Albums" at the bottom of the screen. Scroll down to the "Utilities" section. Tap "Recently Deleted." This album shows all photos and videos you\'ve deleted in the last 30 days.',
+        content: `Open the Photos app. Tap "Albums" at the bottom of the screen. Scroll down to the "Utilities" section. Tap "Recently Deleted." This album shows all photos and videos you've deleted in the last 30 days.`,
         tip: 'On iPhones running iOS 16 or later, the Recently Deleted album is locked by default — you need to authenticate with Face ID or Touch ID to open it.',
       },
       {
@@ -413,7 +413,7 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Understand the two main types of medical alert systems',
-        content: 'In-home systems: A base unit plugs into your home\'s landline or cellular connection. You wear a waterproof button (as a necklace or wristband) and press it to connect to a monitoring center from anywhere inside your home or yard. Best for people who stay mostly at home. Mobile/GPS systems: A portable device goes with you everywhere and works via cellular (like a smartphone). You can call for help at the grocery store, on a walk, or anywhere. Best for active seniors.',
+        content: `In-home systems: A base unit plugs into your home's landline or cellular connection. You wear a waterproof button (as a necklace or wristband) and press it to connect to a monitoring center from anywhere inside your home or yard. Best for people who stay mostly at home. Mobile/GPS systems: A portable device goes with you everywhere and works via cellular (like a smartphone). You can call for help at the grocery store, on a walk, or anywhere. Best for active seniors.`,
         tip: 'If you already have an Apple Watch Series 4 or later, it has built-in fall detection and Emergency SOS that works like a medical alert device at no additional cost. See the TekSure guide on setting up Apple Watch for details.',
       },
       {
@@ -422,7 +422,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Set up an in-home system',
-        content: 'Plug the base unit into a power outlet and a phone jack or activate cellular service per the instructions. Test the system: press the help button and the monitoring center will answer — tell them it\'s a test. They\'ll confirm the address on file and verify the system works. Program emergency contacts with the monitoring center — names and phone numbers of family members to call if you press the button. Wear the wearable button every day, including in the shower (most are waterproof).',
+        content: `Plug the base unit into a power outlet and a phone jack or activate cellular service per the instructions. Test the system: press the help button and the monitoring center will answer — tell them it's a test. They'll confirm the address on file and verify the system works. Program emergency contacts with the monitoring center — names and phone numbers of family members to call if you press the button. Wear the wearable button every day, including in the shower (most are waterproof).`,
       },
       {
         title: 'Where to place the base unit for best coverage',
@@ -430,7 +430,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'What to expect when you press the button',
-        content: 'When you press your medical alert button: a trained operator answers within about 30 seconds. They\'ll say something like "This is [company name] monitoring, we received an alert — are you okay?" If you need help, tell them what happened. If it\'s accidental, tell them it was a test or mistake. They\'ll contact emergency services if needed and call your emergency contacts. If you can\'t speak, after 30-60 seconds of no response, they\'ll call emergency services automatically.',
+        content: `When you press your medical alert button: a trained operator answers within about 30 seconds. They'll say something like "This is [company name] monitoring, we received an alert — are you okay?" If you need help, tell them what happened. If it's accidental, tell them it was a test or mistake. They'll contact emergency services if needed and call your emergency contacts. If you can't speak, after 30-60 seconds of no response, they'll call emergency services automatically.`,
         tip: 'Set up a combination that works for your household. An in-home system plus an Apple Watch for when you leave the house provides comprehensive coverage for different situations.',
       },
     ],
@@ -439,7 +439,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'senior-citizen-discount-apps-programs',
     title: 'Free and Discounted Tech Programs for Seniors',
-    excerpt: 'Many internet, phone, and tech services offer deep discounts for seniors and people on fixed incomes — here\'s a complete guide to what\'s available.',
+    excerpt: `Many internet, phone, and tech services offer deep discounts for seniors and people on fixed incomes — here's a complete guide to what's available.`,
     category: 'government-civic',
     tags: ['senior discounts', 'free internet', 'Lifeline', 'ACP', 'discounts', 'low income'],
     readTime: '6 min',
@@ -451,7 +451,7 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'FCC Lifeline Program — Free or discounted phone/internet service',
         content: 'The Lifeline program provides up to $9.25/month discount on phone or internet service for qualifying households. You qualify if you receive Medicaid, SNAP (food stamps), SSI, Federal Public Housing Assistance, or Veterans Pension Benefits. To apply: go to lifelinesupport.org to find participating providers in your area and apply online. Call 1-800-234-9473 for help.',
-        tip: 'The Emergency Connectivity Fund and other federal programs expanded broadband access significantly. If you\'ve been denied before, recheck — eligibility rules and funding change.',
+        tip: `The Emergency Connectivity Fund and other federal programs expanded broadband access significantly. If you've been denied before, recheck — eligibility rules and funding change.`,
       },
       {
         title: 'Comcast Internet Essentials — Low-cost internet',
@@ -459,7 +459,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'AT&T Access and other carrier discount programs',
-        content: 'AT&T offers AT&T Access for about $10/month for qualifying households (Medicaid, SNAP, SSI, federal housing assistance). Spectrum also offers $14.99/month internet for qualifying customers. T-Mobile and Verizon have low-income phone programs. Call your current phone or internet carrier and ask specifically: "Do you have a low-income or senior discount program I might qualify for?" Many people don\'t know to ask.',
+        content: `AT&T offers AT&T Access for about $10/month for qualifying households (Medicaid, SNAP, SSI, federal housing assistance). Spectrum also offers $14.99/month internet for qualifying customers. T-Mobile and Verizon have low-income phone programs. Call your current phone or internet carrier and ask specifically: "Do you have a low-income or senior discount program I might qualify for?" Many people don't know to ask.`,
       },
       {
         title: 'Free tech training and help programs',
@@ -476,7 +476,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'online-library-card-borrow-ebooks',
     title: 'How to Use Your Library Card to Borrow Free E-Books and Audiobooks',
-    excerpt: 'Your public library card gives you access to thousands of free e-books and audiobooks on your phone — here\'s how to set it up.',
+    excerpt: `Your public library card gives you access to thousands of free e-books and audiobooks on your phone — here's how to set it up.`,
     category: 'app-guides',
     tags: ['library', 'ebooks', 'audiobooks', 'libby', 'kindle', 'free books', 'reading'],
     readTime: '5 min',
@@ -488,15 +488,15 @@ export const guidesBatch15: Guide[] = [
       {
         title: 'Download the Libby app',
         content: 'Download the free "Libby" app from the App Store (iPhone/iPad) or Google Play Store (Android). Open the app. Tap "Yes" when asked if you have a library card. Search for your library by city, county name, or zip code. Select your library from the results.',
-        tip: 'Many libraries offer digital library cards you can get online instantly — no visit required. Go to your library\'s website and look for "Get a Library Card" or "Digital Card."',
+        tip: `Many libraries offer digital library cards you can get online instantly — no visit required. Go to your library's website and look for "Get a Library Card" or "Digital Card."`,
       },
       {
         title: 'Enter your library card number',
-        content: 'Select your library from the search results. Tap "Sign In with My Card." Enter your library card number — this is the long number on the back of your physical library card. Enter your PIN (usually your birthdate as MMDD or the last 4 digits of your phone number — check with your library if you\'re not sure). Tap "Sign In."',
+        content: `Select your library from the search results. Tap "Sign In with My Card." Enter your library card number — this is the long number on the back of your physical library card. Enter your PIN (usually your birthdate as MMDD or the last 4 digits of your phone number — check with your library if you're not sure). Tap "Sign In."`,
       },
       {
         title: 'Browse and borrow e-books',
-        content: 'Tap "Search" at the bottom to look for a specific book by title or author. Tap "Browse" to explore popular books, recent releases, or categories. When you find a book you want, tap it, then tap "Borrow." If it\'s available, it downloads to your device immediately. If there\'s a waiting list (popular books may have holds), tap "Place a Hold" and you\'ll be notified when it\'s your turn.',
+        content: `Tap "Search" at the bottom to look for a specific book by title or author. Tap "Browse" to explore popular books, recent releases, or categories. When you find a book you want, tap it, then tap "Borrow." If it's available, it downloads to your device immediately. If there's a waiting list (popular books may have holds), tap "Place a Hold" and you'll be notified when it's your turn.`,
         tip: 'The "Available Now" filter (look for it in the search or browse filters) shows only books you can borrow immediately without waiting. Great for finding something to read right now.',
       },
       {
@@ -505,7 +505,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Send e-books to your Kindle or Kindle app',
-        content: 'If you prefer reading on a Kindle or in the Kindle app, Libby can send borrowed books there. When borrowing a book, tap "Read Now" → choose "Send to Kindle." You\'ll be directed to Amazon\'s website to confirm delivery to your Kindle device or the free Kindle app. This is optional — books read just as well in the Libby app itself.',
+        content: `If you prefer reading on a Kindle or in the Kindle app, Libby can send borrowed books there. When borrowing a book, tap "Read Now" → choose "Send to Kindle." You'll be directed to Amazon's website to confirm delivery to your Kindle device or the free Kindle app. This is optional — books read just as well in the Libby app itself.`,
       },
     ],
   },
@@ -513,7 +513,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'how-to-use-telehealth-for-mental-health',
     title: 'How to Use Telehealth for Mental Health Support',
-    excerpt: 'Online therapy and mental health counseling are now widely available by video — here\'s how to find a provider and what to expect.',
+    excerpt: `Online therapy and mental health counseling are now widely available by video — here's how to find a provider and what to expect.`,
     category: 'health-tech',
     tags: ['telehealth', 'mental health', 'therapy', 'counseling', 'video', 'medicare'],
     readTime: '5 min',
@@ -528,8 +528,8 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Find a telehealth therapist through your insurance',
-        content: 'Log in to your insurance company\'s website and use the "Find a Provider" or "Find a Therapist" tool. Filter results for "telehealth" or "video visits." Look for therapists who specialize in areas relevant to you — seniors and aging, grief, anxiety, or depression. Your primary care doctor can also provide a referral, which some plans require.',
-        tip: 'Psychology Today\'s therapist finder at psychologytoday.com/us/therapists has a telehealth filter and shows accepted insurance for each therapist. Many are listed as LGBTQ-affirming, grief specialists, or aging specialists.',
+        content: `Log in to your insurance company's website and use the "Find a Provider" or "Find a Therapist" tool. Filter results for "telehealth" or "video visits." Look for therapists who specialize in areas relevant to you — seniors and aging, grief, anxiety, or depression. Your primary care doctor can also provide a referral, which some plans require.`,
+        tip: `Psychology Today's therapist finder at psychologytoday.com/us/therapists has a telehealth filter and shows accepted insurance for each therapist. Many are listed as LGBTQ-affirming, grief specialists, or aging specialists.`,
       },
       {
         title: 'Use established telehealth mental health platforms',
@@ -537,7 +537,7 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'What to expect in your first session',
-        content: 'The first session is usually an intake appointment — the therapist asks about your background, what brought you to seek help, and your goals. You don\'t need to share anything you\'re not comfortable sharing in the first session. Most video therapy sessions are 45-50 minutes. You\'ll use the same telehealth setup as a regular video doctor appointment — a link emailed to you, a camera on your device, and a quiet private space.',
+        content: `The first session is usually an intake appointment — the therapist asks about your background, what brought you to seek help, and your goals. You don't need to share anything you're not comfortable sharing in the first session. Most video therapy sessions are 45-50 minutes. You'll use the same telehealth setup as a regular video doctor appointment — a link emailed to you, a camera on your device, and a quiet private space.`,
         tip: 'A few free mental health resources by phone: SAMHSA National Helpline: 1-800-662-4357 (free, 24/7, confidential). Veterans Crisis Line: 988 then press 1. 988 Suicide and Crisis Lifeline: call or text 988.',
       },
     ],
@@ -546,7 +546,7 @@ export const guidesBatch15: Guide[] = [
   {
     slug: 'retirement-account-online-access',
     title: 'How to Access and Check Your Retirement Account Online',
-    excerpt: 'Your 401(k), IRA, or pension account can be checked online anytime — here\'s how to find your account and understand what you\'re looking at.',
+    excerpt: `Your 401(k), IRA, or pension account can be checked online anytime — here's how to find your account and understand what you're looking at.`,
     category: 'financial-tech',
     tags: ['retirement', '401k', 'IRA', 'pension', 'online account', 'savings'],
     readTime: '5 min',
@@ -557,20 +557,20 @@ export const guidesBatch15: Guide[] = [
     steps: [
       {
         title: 'Find where your retirement account is held',
-        content: 'Your account is held by a financial firm — common ones include Fidelity (fidelity.com), Vanguard (vanguard.com), Charles Schwab (schwab.com), TIAA (tiaa.org), and Empower (formerly Great-West). Check your most recent paper statement — the company name and website are printed on it. If you\'re not sure, ask your employer\'s HR department which company manages your 401(k).',
+        content: `Your account is held by a financial firm — common ones include Fidelity (fidelity.com), Vanguard (vanguard.com), Charles Schwab (schwab.com), TIAA (tiaa.org), and Empower (formerly Great-West). Check your most recent paper statement — the company name and website are printed on it. If you're not sure, ask your employer's HR department which company manages your 401(k).`,
       },
       {
         title: 'Create an online account',
-        content: 'Go to the financial firm\'s website. Click "Register," "Create Account," or "Open Online Access." You\'ll be asked for your Social Security number, account number (from your statement), date of birth, and email address to verify your identity. Create a username and password. Many firms also offer or require two-step verification — highly recommended for financial accounts.',
-        tip: 'If you run into trouble registering online, call the firm\'s customer service number (printed on your statement). They can help you set up online access over the phone in about 10-15 minutes.',
+        content: `Go to the financial firm's website. Click "Register," "Create Account," or "Open Online Access." You'll be asked for your Social Security number, account number (from your statement), date of birth, and email address to verify your identity. Create a username and password. Many firms also offer or require two-step verification — highly recommended for financial accounts.`,
+        tip: `If you run into trouble registering online, call the firm's customer service number (printed on your statement). They can help you set up online access over the phone in about 10-15 minutes.`,
       },
       {
         title: 'Understand your account dashboard',
-        content: 'After logging in, you\'ll see a dashboard with your account balance (current value of all your investments), recent activity (contributions, withdrawals, investment changes), and your investment holdings (a list of the funds you\'re invested in with their current values). The "Performance" or "Returns" section shows how much your account has grown over time.',
+        content: `After logging in, you'll see a dashboard with your account balance (current value of all your investments), recent activity (contributions, withdrawals, investment changes), and your investment holdings (a list of the funds you're invested in with their current values). The "Performance" or "Returns" section shows how much your account has grown over time.`,
       },
       {
         title: 'Set up alerts and paperless statements',
-        content: 'Look for "Alerts" or "Notifications" in your account settings. Set up an email alert for: large account balance changes (unusual activity), successful or failed login attempts, and statement availability. Switching to paperless statements means you\'ll receive statements by email — log in to view them any time. This is also more secure than paper statements that could be taken from a mailbox.',
+        content: `Look for "Alerts" or "Notifications" in your account settings. Set up an email alert for: large account balance changes (unusual activity), successful or failed login attempts, and statement availability. Switching to paperless statements means you'll receive statements by email — log in to view them any time. This is also more secure than paper statements that could be taken from a mailbox.`,
         tip: 'Never share your retirement account login credentials with anyone over the phone or email, even if they claim to be from the financial firm. Real financial firms will never ask for your password.',
       },
     ],
@@ -598,12 +598,12 @@ export const guidesBatch15: Guide[] = [
       },
       {
         title: 'Navigate with the Siri Remote',
-        content: 'The Apple TV remote has a touch-sensitive surface at the top — swipe across it to move the cursor. Press the center to select. The Back button goes back one screen. The TV icon takes you to the Apple TV home screen. Press and hold the Siri button (looks like a microphone) on the remote and say what you\'re looking for — "Find thriller movies," "Open Netflix," or "Play the news."',
+        content: `The Apple TV remote has a touch-sensitive surface at the top — swipe across it to move the cursor. Press the center to select. The Back button goes back one screen. The TV icon takes you to the Apple TV home screen. Press and hold the Siri button (looks like a microphone) on the remote and say what you're looking for — "Find thriller movies," "Open Netflix," or "Play the news."`,
         tip: 'You can also control Apple TV from your iPhone. Open the Control Center (swipe down from top right) and tap the Apple TV Remote icon.',
       },
       {
         title: 'Download apps and start watching',
-        content: 'On the Apple TV home screen, you\'ll see apps like Apple TV+, Netflix, Prime Video, YouTube, and others. The App Store on Apple TV has hundreds more. Tap the App Store, search for the app you want (like Hulu), and tap "Get" to install it for free. Then open the app and sign in with your existing account. Apple TV+ content (shows like Ted Lasso, Severance) requires a separate subscription — $9.99/month or free with new Apple device purchase.',
+        content: `On the Apple TV home screen, you'll see apps like Apple TV+, Netflix, Prime Video, YouTube, and others. The App Store on Apple TV has hundreds more. Tap the App Store, search for the app you want (like Hulu), and tap "Get" to install it for free. Then open the app and sign in with your existing account. Apple TV+ content (shows like Ted Lasso, Severance) requires a separate subscription — $9.99/month or free with new Apple device purchase.`,
       },
     ],
   },

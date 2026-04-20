@@ -34,7 +34,7 @@ The app is free, available on iPhone and Android, and stores your accounts secur
       },
       {
         title: 'Add a Non-Microsoft Account (Google, Facebook, etc.)',
-        content: 'Go to the account\'s security settings in a browser. Find "Two-factor authentication" or "2-Step Verification" and choose "Authenticator app." The website shows a QR code. In Microsoft Authenticator, tap "+" → "Other account (Google, Facebook, etc.)." Point your phone camera at the QR code to scan it.',
+        content: `Go to the account's security settings in a browser. Find "Two-factor authentication" or "2-Step Verification" and choose "Authenticator app." The website shows a QR code. In Microsoft Authenticator, tap "+" → "Other account (Google, Facebook, etc.)." Point your phone camera at the QR code to scan it.`,
       },
       {
         title: 'Use the App to Sign In',
@@ -51,7 +51,7 @@ The app is free, available on iPhone and Android, and stores your accounts secur
   {
     slug: 'amazon-echo-dot-setup',
     title: 'How to Set Up Your Amazon Echo Dot for the First Time',
-    excerpt: 'Echo Dot is Amazon\'s small, affordable Alexa speaker. This step-by-step guide walks you through setup so you can start asking Alexa questions in minutes.',
+    excerpt: `Echo Dot is Amazon's small, affordable Alexa speaker. This step-by-step guide walks you through setup so you can start asking Alexa questions in minutes.`,
     category: 'smart-home',
     tags: ['Amazon Echo', 'Alexa', 'Echo Dot', 'smart speaker', 'setup'],
     readTime: '6 min',
@@ -85,12 +85,12 @@ The Echo Dot does not have a screen. If you want a device with a screen for vide
       },
       {
         title: 'Connect to Your Wi-Fi',
-        content: 'The app shows a setup screen asking you to connect to a temporary Wi-Fi network from the Echo Dot. Follow the steps — you may need to open your phone\'s Wi-Fi settings briefly. Then return to the Alexa app and enter your home Wi-Fi password. The Echo Dot connects to your home network.',
+        content: `The app shows a setup screen asking you to connect to a temporary Wi-Fi network from the Echo Dot. Follow the steps — you may need to open your phone's Wi-Fi settings briefly. Then return to the Alexa app and enter your home Wi-Fi password. The Echo Dot connects to your home network.`,
         tip: 'Keep your phone and Echo Dot close together during setup for the best connection.',
       },
       {
         title: 'Say Your First Command',
-        content: 'The orange ring turns blue and Alexa announces she is ready. Say "Alexa, what\'s the weather today?" or "Alexa, play relaxing music." Alexa responds immediately. You are set up.',
+        content: `The orange ring turns blue and Alexa announces she is ready. Say "Alexa, what's the weather today?" or "Alexa, play relaxing music." Alexa responds immediately. You are set up.`,
         tip: 'Say "Alexa, help" at any time to hear a list of things Alexa can do. Or ask "Alexa, what can you do?" for a longer overview.',
       },
     ],
@@ -129,7 +129,7 @@ Alexa also handles shopping lists. "Alexa, add milk to my shopping list" adds it
       },
       {
         title: 'Manage Your Shopping List',
-        content: 'Say: "Alexa, add bread to my shopping list" or "Alexa, add eggs to my shopping list." Items accumulate in a list. When you\'re at the store, open the Alexa app on your phone and tap "Lists" to see everything. Say "Alexa, what\'s on my shopping list?" to hear it read aloud.',
+        content: `Say: "Alexa, add bread to my shopping list" or "Alexa, add eggs to my shopping list." Items accumulate in a list. When you're at the store, open the Alexa app on your phone and tap "Lists" to see everything. Say "Alexa, what's on my shopping list?" to hear it read aloud.`,
       },
       {
         title: 'Control Smart Home Devices',
@@ -191,7 +191,7 @@ Competitors to Shutterfly include Walgreens Photos (for same-day pickup at a loc
   {
     slug: 'paypal-guide-seniors',
     title: 'How to Use PayPal Safely for Online Payments',
-    excerpt: 'PayPal lets you pay for things online without sharing your credit card with every website. Here\'s how to set it up and use it safely.',
+    excerpt: `PayPal lets you pay for things online without sharing your credit card with every website. Here's how to set it up and use it safely.`,
     category: 'financial-tech',
     tags: ['PayPal', 'online payments', 'security', 'shopping', 'financial'],
     readTime: '6 min',
@@ -214,7 +214,7 @@ Your PayPal balance is not the same as a bank account — it is not FDIC insured
       },
       {
         title: 'Link a Payment Method',
-        content: 'After creating your account, go to "Wallet" and tap "Link a card or bank." You can add a bank account (enter your routing and account number) or a credit or debit card. Adding a credit card is safest for online shopping — your credit card offers additional fraud protection on top of PayPal\'s.',
+        content: `After creating your account, go to "Wallet" and tap "Link a card or bank." You can add a bank account (enter your routing and account number) or a credit or debit card. Adding a credit card is safest for online shopping — your credit card offers additional fraud protection on top of PayPal's.`,
         tip: 'Link a credit card rather than a debit card for extra protection. Credit cards can dispute charges more easily than debit cards.',
       },
       {
@@ -223,7 +223,7 @@ Your PayPal balance is not the same as a bank account — it is not FDIC insured
       },
       {
         title: 'Send Money to Another Person',
-        content: 'Log in to paypal.com or the PayPal app. Tap "Send & Request" → "Send money." Enter the recipient\'s email address or phone number. Enter the amount. Select "Friends and Family" (free) or "Goods and Services" (includes buyer protection, with a small fee to the seller). Confirm and send.',
+        content: `Log in to paypal.com or the PayPal app. Tap "Send & Request" → "Send money." Enter the recipient's email address or phone number. Enter the amount. Select "Friends and Family" (free) or "Goods and Services" (includes buyer protection, with a small fee to the seller). Confirm and send.`,
         warning: 'Only use "Friends and Family" for people you know personally. For buying items from strangers, always use "Goods and Services" — this gives you purchase protection.',
       },
       {
@@ -253,8 +253,8 @@ The "What's Covered" app is particularly useful for checking coverage before a p
 The app requires creating a Medicare.gov account if you do not have one. Your Medicare number (on your red, white, and blue card) is needed during registration.`,
     steps: [
       {
-        title: 'Download the Medicare "What\'s Covered" App',
-        content: 'Search "What\'s Covered" in the App Store (iPhone) or Google Play (Android). The developer is the Centers for Medicare & Medicaid Services — make sure you download the official government app. Install it for free.',
+        title: `Download the Medicare "What's Covered" App`,
+        content: `Search "What's Covered" in the App Store (iPhone) or Google Play (Android). The developer is the Centers for Medicare & Medicaid Services — make sure you download the official government app. Install it for free.`,
         tip: 'The companion website at medicare.gov and your MyMedicare.gov account offer additional features like viewing claims and managing plan information.',
       },
       {
@@ -280,7 +280,7 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
   {
     slug: 'facebook-marketplace-buy-safely',
     title: 'How to Buy Items Safely on Facebook Marketplace',
-    excerpt: 'Facebook Marketplace has great deals on used furniture, electronics, and more — but meeting strangers carries risk. Here\'s how to shop safely.',
+    excerpt: `Facebook Marketplace has great deals on used furniture, electronics, and more — but meeting strangers carries risk. Here's how to shop safely.`,
     category: 'social-media',
     tags: ['Facebook Marketplace', 'buying', 'safety', 'online shopping', 'used items'],
     readTime: '5 min',
@@ -300,11 +300,11 @@ Meeting safely in person is straightforward if you follow a few common-sense rul
       {
         title: 'Browse Marketplace and Find an Item',
         content: 'Open Facebook and tap the Marketplace icon (looks like a storefront). Enter a search term or browse categories. Filter by location radius to see local listings. Tap a listing to see photos, price, seller name, and description.',
-        tip: 'Look at the seller\'s profile. How long have they been on Facebook? Do they have mutual friends? A profile with real posts and photos over several years is more trustworthy than a brand-new account.',
+        tip: `Look at the seller's profile. How long have they been on Facebook? Do they have mutual friends? A profile with real posts and photos over several years is more trustworthy than a brand-new account.`,
       },
       {
         title: 'Message the Seller',
-        content: 'Tap "Message Seller" to open a chat. Ask questions about the item\'s condition, dimensions, age, or reason for selling. Request additional photos if the listing only has one or two. A responsive seller who answers questions thoroughly is a good sign.',
+        content: `Tap "Message Seller" to open a chat. Ask questions about the item's condition, dimensions, age, or reason for selling. Request additional photos if the listing only has one or two. A responsive seller who answers questions thoroughly is a good sign.`,
         warning: 'If a seller asks for payment before meeting, refuses to show the item in person, or claims they cannot meet locally due to a hardship situation — these are common scam patterns. Walk away.',
       },
       {
@@ -345,17 +345,17 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
     steps: [
       {
         title: 'Search Your Local Area',
-        content: 'Go to craigslist.org and your city\'s listing appears automatically based on your location. Or type your city name in the site search. Browse by category or use the search bar. Stick to listings in your area — deals from distant cities or other countries are almost always scams.',
+        content: `Go to craigslist.org and your city's listing appears automatically based on your location. Or type your city name in the site search. Browse by category or use the search bar. Stick to listings in your area — deals from distant cities or other countries are almost always scams.`,
         warning: 'If a seller says they are in the military overseas, traveling abroad, or stuck in another state and needs you to pay before meeting — stop immediately. These are classic scam setups.',
       },
       {
         title: 'Contact the Seller',
-        content: 'Reply using the anonymous Craigslist email relay — do not give out your personal email or phone number until you feel comfortable. Ask basic questions about the item\'s condition, availability, and whether local pickup is possible.',
+        content: `Reply using the anonymous Craigslist email relay — do not give out your personal email or phone number until you feel comfortable. Ask basic questions about the item's condition, availability, and whether local pickup is possible.`,
       },
       {
         title: 'Meet in Person for the Transaction',
-        content: 'Always meet in person to see the item before any payment. Choose a public place: a police station safe exchange zone, a bank lobby, a busy coffee shop, or a well-lit shopping center. Never meet at someone\'s private home unless you are bringing a second person with you.',
-        tip: 'Tell a friend or family member where you are going and when you expect to return. Share the seller\'s contact information with them.',
+        content: `Always meet in person to see the item before any payment. Choose a public place: a police station safe exchange zone, a bank lobby, a busy coffee shop, or a well-lit shopping center. Never meet at someone's private home unless you are bringing a second person with you.`,
+        tip: `Tell a friend or family member where you are going and when you expect to return. Share the seller's contact information with them.`,
       },
       {
         title: 'Recognize Red Flags',
@@ -370,8 +370,8 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
   },
   {
     slug: 'find-free-wifi-hotspots',
-    title: 'How to Find Free, Safe Wi-Fi Hotspots When You\'re Away From Home',
-    excerpt: 'Save your phone data and stay connected away from home. Here\'s where to find free Wi-Fi and how to stay safe while using it.',
+    title: `How to Find Free, Safe Wi-Fi Hotspots When You're Away From Home`,
+    excerpt: `Save your phone data and stay connected away from home. Here's where to find free Wi-Fi and how to stay safe while using it.`,
     category: 'internet-connectivity',
     tags: ['Wi-Fi', 'hotspot', 'free internet', 'public Wi-Fi', 'data saving'],
     readTime: '5 min',
@@ -389,7 +389,7 @@ Your phone can help you find free hotspots automatically. Many carriers and cabl
 Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Public libraries universally offer free Wi-Fi, and many offer it in parking lots as well — useful if the library is closed.`,
     steps: [
       {
-        title: 'Use Your Carrier\'s Free Hotspots',
+        title: `Use Your Carrier's Free Hotspots`,
         content: 'Check if your phone carrier offers free hotspot access. Xfinity customers get free access to millions of hotspots — look for networks named "xfinitywifi." AT&T customers can use AT&T Wi-Fi. Verizon has a hotspot finder app. Log in with your carrier account credentials when prompted.',
       },
       {
@@ -399,7 +399,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
       {
         title: 'Connect to a Trusted Network',
         content: 'On your phone, go to Settings → Wi-Fi. Tap the name of the hotspot network to connect. For library and government networks, simply tap and connect. For coffee shops and restaurants, you may need to open a browser and accept terms of service before internet access begins.',
-        tip: 'Familiar brand names (Starbucks, McDonald\'s, Barnes & Noble) are more reliable than random network names you do not recognize.',
+        tip: `Familiar brand names (Starbucks, McDonald's, Barnes & Noble) are more reliable than random network names you do not recognize.`,
       },
       {
         title: 'Stay Safe on Public Wi-Fi',
@@ -408,7 +408,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
       },
       {
         title: 'Use Your Phone as a Hotspot When Needed',
-        content: 'If no safe public Wi-Fi is available and you need a secure connection for sensitive tasks, use your own phone\'s hotspot instead. Go to Settings → Personal Hotspot (iPhone) or Settings → Network & Internet → Hotspot (Android). Connect your laptop or tablet to your phone\'s hotspot — this uses your phone\'s cellular data but is your own secure network.',
+        content: `If no safe public Wi-Fi is available and you need a secure connection for sensitive tasks, use your own phone's hotspot instead. Go to Settings → Personal Hotspot (iPhone) or Settings → Network & Internet → Hotspot (Android). Connect your laptop or tablet to your phone's hotspot — this uses your phone's cellular data but is your own secure network.`,
       },
     ],
   },
@@ -488,12 +488,12 @@ Some of the most useful everyday commands for older adults: checking medication 
       },
       {
         title: 'Ask Questions Hands-Free',
-        content: 'Say "Hey Google" then ask anything: "Hey Google, what\'s the weather this week?" or "Hey Google, how many tablespoons are in a cup?" or "Hey Google, who invented the telephone?" Google responds aloud and shows the answer on screen.',
+        content: `Say "Hey Google" then ask anything: "Hey Google, what's the weather this week?" or "Hey Google, how many tablespoons are in a cup?" or "Hey Google, who invented the telephone?" Google responds aloud and shows the answer on screen.`,
       },
       {
         title: 'Make a Phone Call',
         content: 'Say "Hey Google, call [contact name]." Google Assistant finds the contact and places the call. If a person has multiple numbers, it may ask "Home or mobile?" — say which you want. Say "Hey Google, hang up" to end the call.',
-        tip: 'You can say "Hey Google, text Sarah I\'m running 10 minutes late" to send a text message entirely by voice.',
+        tip: `You can say "Hey Google, text Sarah I'm running 10 minutes late" to send a text message entirely by voice.`,
       },
       {
         title: 'Set Reminders and Timers',
@@ -501,7 +501,7 @@ Some of the most useful everyday commands for older adults: checking medication 
       },
       {
         title: 'Get Directions and Navigate',
-        content: 'Say "Hey Google, navigate to Walmart on Main Street" or "Hey Google, what\'s the traffic like to the airport?" Google Maps opens with turn-by-turn directions automatically. This is particularly useful in the car when you cannot safely type an address.',
+        content: `Say "Hey Google, navigate to Walmart on Main Street" or "Hey Google, what's the traffic like to the airport?" Google Maps opens with turn-by-turn directions automatically. This is particularly useful in the car when you cannot safely type an address.`,
         warning: 'Set up Google Assistant and test it before driving — do not fiddle with phone settings while driving. The voice-only interaction is meant to keep your hands on the wheel.',
       },
     ],
@@ -556,7 +556,7 @@ For most people, Apple Cash is simpler to set up and use than Venmo or Zelle, be
   {
     slug: 'android-find-my-device',
     title: 'How to Find or Erase a Lost Android Phone Using Find My Device',
-    excerpt: 'Google\'s Find My Device lets you locate, lock, or erase a lost Android phone remotely — before someone else can access your personal information.',
+    excerpt: `Google's Find My Device lets you locate, lock, or erase a lost Android phone remotely — before someone else can access your personal information.`,
     category: 'phone-guides',
     tags: ['Android', 'Find My Device', 'lost phone', 'Google', 'security'],
     readTime: '5 min',
@@ -582,7 +582,7 @@ Setting up a screen lock PIN or fingerprint is essential for this to matter — 
       },
       {
         title: 'Locate Your Phone from a Computer',
-        content: 'On any computer or tablet, go to android.com/find in a browser. Sign in with the same Google account that is on your phone. After a moment, your phone\'s location appears on a map. The map shows street-level detail and updates in real time if the phone is online.',
+        content: `On any computer or tablet, go to android.com/find in a browser. Sign in with the same Google account that is on your phone. After a moment, your phone's location appears on a map. The map shows street-level detail and updates in real time if the phone is online.`,
       },
       {
         title: 'Play a Sound to Find a Nearby Phone',
@@ -651,7 +651,7 @@ For people who take multiple prescriptions, the medication reminder feature can 
   {
     slug: 'apple-music-family-plan',
     title: 'How to Share Apple Music with Your Family on One Subscription',
-    excerpt: 'Apple Music Family plan costs $17/month and gives 6 people unlimited music streaming. Here\'s how to set it up and invite family members.',
+    excerpt: `Apple Music Family plan costs $17/month and gives 6 people unlimited music streaming. Here's how to set it up and invite family members.`,
     category: 'entertainment',
     tags: ['Apple Music', 'Family Sharing', 'music streaming', 'iPhone', 'subscription'],
     readTime: '5 min',
@@ -672,21 +672,21 @@ This same Family Sharing setup can be used to share Apple TV+, iCloud+ storage p
     steps: [
       {
         title: 'Set Up Family Sharing',
-        content: 'On the organizer\'s iPhone, go to Settings → tap your name at the top → "Family Sharing." Tap "Set Up Your Family" and follow the prompts. You become the family organizer and your payment method is used for shared subscriptions.',
+        content: `On the organizer's iPhone, go to Settings → tap your name at the top → "Family Sharing." Tap "Set Up Your Family" and follow the prompts. You become the family organizer and your payment method is used for shared subscriptions.`,
       },
       {
         title: 'Invite Family Members',
-        content: 'In Family Sharing settings, tap "Add Family Member." Enter the person\'s Apple ID (email address) or send an invitation via iMessage. They receive an invitation on their device and tap "Accept" to join the family group.',
+        content: `In Family Sharing settings, tap "Add Family Member." Enter the person's Apple ID (email address) or send an invitation via iMessage. They receive an invitation on their device and tap "Accept" to join the family group.`,
         tip: 'Family members must have their own Apple IDs. If a family member does not have one, they can create a free Apple ID at appleid.apple.com.',
       },
       {
         title: 'Subscribe to Apple Music Family Plan',
-        content: 'On the organizer\'s iPhone, open the Music app or go to Settings → Music → "Subscribe to Apple Music." Choose the "Family" plan at $16.99/month. Once subscribed, all accepted family members automatically get access.',
+        content: `On the organizer's iPhone, open the Music app or go to Settings → Music → "Subscribe to Apple Music." Choose the "Family" plan at $16.99/month. Once subscribed, all accepted family members automatically get access.`,
         tip: 'If you already have an individual Apple Music plan, upgrading to Family is done in Settings → [your name] → Subscriptions → Apple Music → Change Plan.',
       },
       {
-        title: 'Accept Apple Music on Family Members\' Devices',
-        content: 'On each family member\'s iPhone, open the Music app. If prompted to subscribe, they should see the option to use the family subscription at no charge. Sign in with their own Apple ID. Their music library is separate from yours — personal playlists and listening history do not mix.',
+        title: `Accept Apple Music on Family Members' Devices`,
+        content: `On each family member's iPhone, open the Music app. If prompted to subscribe, they should see the option to use the family subscription at no charge. Sign in with their own Apple ID. Their music library is separate from yours — personal playlists and listening history do not mix.`,
       },
       {
         title: 'Download Music for Offline Listening',
@@ -697,8 +697,8 @@ This same Family Sharing setup can be used to share Apple TV+, iCloud+ storage p
   },
   {
     slug: 'netflix-household-sharing',
-    title: 'Netflix\'s Household Sharing Rules Explained',
-    excerpt: 'Netflix changed its password sharing rules. Here\'s what "household" means, who can use your account, how to add extra members, and how to manage your account.',
+    title: `Netflix's Household Sharing Rules Explained`,
+    excerpt: `Netflix changed its password sharing rules. Here's what "household" means, who can use your account, how to add extra members, and how to manage your account.`,
     category: 'entertainment',
     tags: ['Netflix', 'password sharing', 'household', 'streaming', 'account'],
     readTime: '5 min',
@@ -744,7 +744,7 @@ Managing your Netflix account — checking which devices are logged in and remov
   {
     slug: 'windows-sticky-notes-guide',
     title: 'How to Use Windows Sticky Notes for Quick Reminders',
-    excerpt: 'Windows Sticky Notes lets you keep colorful reminder notes on your desktop — visible every time you open your computer. Here\'s how to use this built-in tool.',
+    excerpt: `Windows Sticky Notes lets you keep colorful reminder notes on your desktop — visible every time you open your computer. Here's how to use this built-in tool.`,
     category: 'windows-guides',
     tags: ['Sticky Notes', 'Windows', 'reminders', 'productivity', 'notes'],
     readTime: '4 min',
@@ -789,8 +789,8 @@ When you no longer need a note, hover over it and click the X button to delete i
   },
   {
     slug: 'add-email-account-iphone',
-    title: 'How to Add Gmail, Yahoo, or Outlook to iPhone\'s Mail App',
-    excerpt: 'iPhone\'s built-in Mail app can show all your email accounts in one place. Here\'s how to add Gmail, Yahoo Mail, or Outlook in a few easy steps.',
+    title: `How to Add Gmail, Yahoo, or Outlook to iPhone's Mail App`,
+    excerpt: `iPhone's built-in Mail app can show all your email accounts in one place. Here's how to add Gmail, Yahoo Mail, or Outlook in a few easy steps.`,
     category: 'phone-guides',
     tags: ['iPhone', 'Mail app', 'Gmail', 'email setup', 'iOS'],
     readTime: '4 min',
@@ -836,7 +836,7 @@ If you prefer using a dedicated app (like the Gmail app), you do not need to add
   {
     slug: 'windows-search-guide',
     title: 'How to Use Windows Search to Find Files and Programs Fast',
-    excerpt: 'Windows has a powerful built-in search that can find any file, app, email, or setting on your computer in seconds. Here\'s how to use it like a pro.',
+    excerpt: `Windows has a powerful built-in search that can find any file, app, email, or setting on your computer in seconds. Here's how to use it like a pro.`,
     category: 'windows-guides',
     tags: ['Windows', 'search', 'find files', 'tips', 'productivity'],
     readTime: '4 min',
@@ -867,7 +867,7 @@ In Windows 11, Microsoft improved search significantly — it can now search ins
       {
         title: 'Search for a File by Name or Content',
         content: 'Press Windows key and type part of the file name — for example, "tax return" or "birthday photo." Windows searches Documents, Downloads, Desktop, and other folders. Click a result to open it directly.',
-        tip: 'If you remember part of what\'s inside a document but not the file name, Windows Search can search inside document text. Type words from the document content — it may still find the file.',
+        tip: `If you remember part of what's inside a document but not the file name, Windows Search can search inside document text. Type words from the document content — it may still find the file.`,
       },
       {
         title: 'Find a Settings Page Quickly',
@@ -883,7 +883,7 @@ In Windows 11, Microsoft improved search significantly — it can now search ins
   {
     slug: 'iphone-health-records-app',
     title: 'How to Connect iPhone Health App to Your Hospital Records',
-    excerpt: 'iPhone\'s Health app can display your medical records — test results, medications, and conditions — directly from your hospital or doctor\'s office.',
+    excerpt: `iPhone's Health app can display your medical records — test results, medications, and conditions — directly from your hospital or doctor's office.`,
     category: 'health-tech',
     tags: ['iPhone', 'Health app', 'medical records', 'patient data', 'iOS'],
     readTime: '5 min',
@@ -904,12 +904,12 @@ Not every doctor's office or small practice supports this yet — it is most rel
     steps: [
       {
         title: 'Check if Your Hospital Is Supported',
-        content: 'Open the Health app on your iPhone. Tap your profile photo (top right) → "Health Records" → "Add Account." Type your hospital or doctor\'s name. If the organization appears in the list, it supports Health Records. If it does not appear, the connection is not yet available for that provider.',
+        content: `Open the Health app on your iPhone. Tap your profile photo (top right) → "Health Records" → "Add Account." Type your hospital or doctor's name. If the organization appears in the list, it supports Health Records. If it does not appear, the connection is not yet available for that provider.`,
       },
       {
         title: 'Connect Your Health System',
-        content: 'Tap your health organization from the search results. You are redirected to your hospital\'s patient portal sign-in page within the Health app (this is usually MyChart). Enter your patient portal username and password to authorize the connection.',
-        tip: 'If you do not have a patient portal account, create one first at your hospital\'s website or by calling the patient services line. You typically need your date of birth and medical record number to sign up.',
+        content: `Tap your health organization from the search results. You are redirected to your hospital's patient portal sign-in page within the Health app (this is usually MyChart). Enter your patient portal username and password to authorize the connection.`,
+        tip: `If you do not have a patient portal account, create one first at your hospital's website or by calling the patient services line. You typically need your date of birth and medical record number to sign up.`,
       },
       {
         title: 'Review Your Medical Records',
@@ -922,7 +922,7 @@ Not every doctor's office or small practice supports this yet — it is most rel
       },
       {
         title: 'Share Records with a Provider',
-        content: 'During a doctor\'s appointment, open Health → Health Records. Show the provider your current medications, allergies, or recent lab results on screen. You can also take a screenshot to share or print. For formal medical record transfers, use your patient portal instead of the Health app.',
+        content: `During a doctor's appointment, open Health → Health Records. Show the provider your current medications, allergies, or recent lab results on screen. You can also take a screenshot to share or print. For formal medical record transfers, use your patient portal instead of the Health app.`,
         warning: 'Health app data is for your personal reference. Medical decisions should always be made with a qualified healthcare provider, not based solely on app data.',
       },
     ],
@@ -930,7 +930,7 @@ Not every doctor's office or small practice supports this yet — it is most rel
   {
     slug: 'amazon-music-unlimited-guide',
     title: 'Amazon Music: Understanding Free, Prime, and Unlimited',
-    excerpt: 'Amazon offers three tiers of music streaming. Here\'s what each one includes, which is right for you, and how to get started.',
+    excerpt: `Amazon offers three tiers of music streaming. Here's what each one includes, which is right for you, and how to get started.`,
     category: 'entertainment',
     tags: ['Amazon Music', 'streaming', 'Prime Music', 'music', 'Amazon'],
     readTime: '5 min',

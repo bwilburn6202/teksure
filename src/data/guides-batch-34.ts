@@ -15,7 +15,7 @@ export const guidesBatch34: Guide[] = [
     steps: [
       {
         title: 'Recognize the setup',
-        content: 'The call starts with "It\'s me, Grandma/Grandpa!" without saying a name. If you say "Tommy, is that you?" they will become Tommy. Never supply the name yourself — make them identify themselves.',
+        content: `The call starts with "It's me, Grandma/Grandpa!" without saying a name. If you say "Tommy, is that you?" they will become Tommy. Never supply the name yourself — make them identify themselves.`,
       },
       {
         title: 'Pause before reacting to urgency',
@@ -33,7 +33,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Report the scam even if you did not lose money',
-        content: 'Report the attempt to the FTC at ReportFraud.ftc.gov and to local police. Reporting helps track scam operations and warn others. If you did lose money, also contact your state Attorney General\'s office.',
+        content: `Report the attempt to the FTC at ReportFraud.ftc.gov and to local police. Reporting helps track scam operations and warn others. If you did lose money, also contact your state Attorney General's office.`,
       },
     ],
   },
@@ -78,7 +78,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'irs-scam-guide',
     title: 'How to Recognize IRS Impersonation Scams',
-    excerpt: 'Scammers pretend to be IRS agents threatening arrest for unpaid taxes. The real IRS never calls demanding immediate payment — here\'s what you need to know.',
+    excerpt: `Scammers pretend to be IRS agents threatening arrest for unpaid taxes. The real IRS never calls demanding immediate payment — here's what you need to know.`,
     body: `IRS impersonation scams consistently rank among the top reported frauds in the US. Criminals call, email, or even show up claiming to be IRS agents and threatening immediate arrest, deportation, or lawsuits unless you pay a debt right away.\n\n**The real IRS sends letters first**: The IRS always initiates contact with taxpayers by mail through the US Postal Service. The first time you hear from the IRS about a tax issue, it will be a letter — not a phone call, not an email, not a text. If someone calls claiming to be the IRS on an issue you have not received a letter about, it is fraud.\n\n**What the real IRS will never do**:\n- Demand immediate payment over the phone\n- Require a specific payment method like gift cards, wire transfer, cryptocurrency, or prepaid debit card\n- Threaten to call police, immigration, or other agencies to arrest you\n- Demand payment without giving you an opportunity to question or appeal\n- Ask for credit or debit card numbers over the phone\n\n**How to verify**: If you are unsure whether a tax debt is real, hang up and call the IRS directly at 1-800-829-1040. Look up this number yourself — do not call a number the supposed IRS agent gave you.\n\nThe IRS also has an online tool at IRS.gov where you can check your account balance and see any real correspondence that has been sent.`,
     category: 'safety-guides',
     tags: ['irs scam', 'tax scam', 'impersonation fraud', 'phone scam', 'elder fraud'],
@@ -150,7 +150,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'medicare-fraud-guide',
     title: 'How to Recognize Medicare Fraud and Scams',
-    excerpt: 'Medicare fraud costs billions per year and often starts with an unsolicited call offering "free" equipment or asking to confirm your Medicare number. Here\'s how to protect yourself.',
+    excerpt: `Medicare fraud costs billions per year and often starts with an unsolicited call offering "free" equipment or asking to confirm your Medicare number. Here's how to protect yourself.`,
     body: `Medicare fraud is a major and growing problem. Scammers target Medicare beneficiaries (people age 65 and older or those with certain disabilities) using several common approaches.\n\n**Common Medicare scams**:\n\n**"Free" medical equipment**: A caller offers free braces, wheelchairs, or medical devices — you "just need" to provide your Medicare number to claim them. The caller then bills Medicare for equipment you never ordered or needed, pocketing the money. Medicare fraud of this type is a federal crime, but you may be held responsible for equipment charges on your account.\n\n**Fake cards and enrollment**: Near Medicare Open Enrollment (October 15 – December 7 each year), scammers call claiming your Medicare card is being updated and you need to verify your number. Medicare cards are never updated over the phone.\n\n**DNA testing kits**: Scammers offer "free" genetic tests, claiming Medicare covers them. They take a cheek swab, bill Medicare for the test, and sell your genetic data.\n\n**What your Medicare number is worth**: Your Medicare number is as valuable as your Social Security number. With it, criminals can bill Medicare for thousands of dollars in fake services in your name.\n\n**Protections**: Review your Medicare Summary Notice (MSN) or check your claims at MyMedicare.gov every month. If you see services, equipment, or providers you do not recognize, call 1-800-MEDICARE immediately.`,
     category: 'safety-guides',
     tags: ['medicare fraud', 'medicare scam', 'elder fraud', 'health insurance fraud', 'senior safety'],
@@ -205,16 +205,16 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Look up the real number and call back',
-        content: 'Find your utility company\'s number on your paper bill or by searching "[Company Name] official contact." Call that number directly and ask whether your account has any overdue balance.',
-        tip: 'Save your utility company\'s official number in your contacts. When a suspicious call comes in, you can quickly verify without searching.',
+        content: `Find your utility company's number on your paper bill or by searching "[Company Name] official contact." Call that number directly and ask whether your account has any overdue balance.`,
+        tip: `Save your utility company's official number in your contacts. When a suspicious call comes in, you can quickly verify without searching.`,
       },
       {
         title: 'Log into your utility account online',
-        content: 'Go to your utility\'s official website and log into your account. Check your current balance and payment history. If you see no overdue amount, the call was fraudulent.',
+        content: `Go to your utility's official website and log into your account. Check your current balance and payment history. If you see no overdue amount, the call was fraudulent.`,
       },
       {
         title: 'Report the scam',
-        content: 'Report utility scams to the FTC at ReportFraud.ftc.gov and to your state\'s Public Utilities Commission (search "[State] Public Utilities Commission" to find the reporting page). Reporting helps protect others in your area.',
+        content: `Report utility scams to the FTC at ReportFraud.ftc.gov and to your state's Public Utilities Commission (search "[State] Public Utilities Commission" to find the reporting page). Reporting helps protect others in your area.`,
       },
     ],
   },
@@ -222,7 +222,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'lottery-sweepstakes-scam-guide',
     title: 'How to Recognize Lottery and Sweepstakes Scams',
-    excerpt: 'You cannot win a lottery or sweepstakes you never entered. If someone says you\'ve won a prize but must pay fees first, it\'s a scam — every single time.',
+    excerpt: `You cannot win a lottery or sweepstakes you never entered. If someone says you've won a prize but must pay fees first, it's a scam — every single time.`,
     body: `Lottery and sweepstakes scams are among the most persistent forms of fraud. The setup is always the same: you receive a call, letter, or email congratulating you on winning a large sum of money or valuable prize. But to claim the winnings, you must first pay taxes, processing fees, insurance, customs, or some other charge.\n\n**The fundamental truth**: Legitimate lotteries and sweepstakes never require you to pay money to claim your prize. If you have to pay, it is not a real prize.\n\nReal sweepstakes taxes are handled by the prize-giver or deducted from your winnings — you never need to send money in advance. Real lottery winners (if you even entered a lottery) are notified through official channels, and winnings are paid out directly without upfront fees.\n\n**Common variations**:\n- Publishers Clearing House imposters (the real PCH visits winners in person)\n- Foreign lottery winnings (you cannot win a lottery in a country you never entered)\n- Jamaica lottery scam (particularly targeted at older Americans — calls from Jamaican area codes 876)\n- Social media "winner" DMs claiming you won a giveaway from a celebrity or company\n\n**The escalating fee trap**: Scammers often start with a small fee, then add another, then another, keeping victims engaged with the promise that the prize is just one more payment away. Some victims lose tens of thousands of dollars over months.\n\nIf a contact mentions any prize combined with any upfront payment, do not engage further.`,
     category: 'safety-guides',
     tags: ['lottery scam', 'sweepstakes scam', 'prize fraud', 'advance fee fraud', 'elder fraud'],
@@ -246,7 +246,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Verify before getting excited',
-        content: 'If you genuinely entered a contest and want to verify whether a notification is real: look up the company\'s official website independently, call their official number, and ask about the promotion. Never call back a number the notification provided.',
+        content: `If you genuinely entered a contest and want to verify whether a notification is real: look up the company's official website independently, call their official number, and ask about the promotion. Never call back a number the notification provided.`,
       },
       {
         title: 'Report to the FTC and stop contact',
@@ -258,7 +258,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'report-scam-ftc-guide',
     title: 'How to Report a Scam to the FTC',
-    excerpt: 'If you\'ve been targeted by a scam — whether or not you lost money — reporting it helps the FTC investigate fraud and warn others. Takes 5 minutes online.',
+    excerpt: `If you've been targeted by a scam — whether or not you lost money — reporting it helps the FTC investigate fraud and warn others. Takes 5 minutes online.`,
     body: `Reporting scams to the Federal Trade Commission (FTC) is one of the most effective things you can do after being targeted by fraud. The FTC collects millions of reports per year and uses them to investigate fraud operations, pursue legal action against scammers, and issue warnings to the public.\n\nYou should report even if you did not lose money. Reports of attempted scams (where you hung up and did not send anything) are just as valuable for tracking trends as reports from victims who lost money.\n\n**Where to report**:\n- **FTC online**: ReportFraud.ftc.gov — the primary fraud reporting site. Easy form, takes about 5 minutes.\n- **FTC by phone**: 1-877-FTC-HELP (1-877-382-4357), Monday–Friday 9 AM–8 PM ET\n- **FBI Internet Crime Complaint Center (IC3)**: IC3.gov — for online fraud (email scams, online shopping fraud, ransomware)\n- **AARP Fraud Watch Network**: 1-877-908-3360 — free fraud counseling and reporting assistance, even if you are not an AARP member\n- **State Attorney General**: Search "[Your State] Attorney General report scam" to find your state-specific reporting page\n\n**Information to have ready**: date and time of contact, phone number or email address of the scammer, company or agency they claimed to represent, payment method demanded, and how much money was lost (if any).\n\nIf you lost money, also contact your bank, credit card company, or payment service immediately. Some losses can be reversed if reported quickly.`,
     category: 'safety-guides',
     tags: ['report scam', 'ftc', 'fraud reporting', 'consumer protection', 'elder fraud'],
@@ -310,7 +310,7 @@ export const guidesBatch34: Guide[] = [
       {
         title: 'Review your trusted phone number',
         content: 'In Settings → [Your Name] → Sign-In & Security → Trusted Phone Number. Confirm the number shown is current and accessible. Update it if you have changed phone numbers.',
-        tip: 'Add a second trusted phone number (like a family member\'s) as a backup in case you lose access to your primary phone.',
+        tip: `Add a second trusted phone number (like a family member's) as a backup in case you lose access to your primary phone.`,
       },
       {
         title: 'Check which devices are signed in',
@@ -331,7 +331,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'google-account-security-guide',
     title: 'How to Secure Your Google Account',
-    excerpt: 'Your Google account connects Gmail, Google Photos, Maps, YouTube, and more. Use Google\'s Security Checkup to spot and fix vulnerabilities in minutes.',
+    excerpt: `Your Google account connects Gmail, Google Photos, Maps, YouTube, and more. Use Google's Security Checkup to spot and fix vulnerabilities in minutes.`,
     body: `Your Google account is one of the most important accounts you have online. It connects Gmail, Google Photos, Google Drive, YouTube, Google Maps, and any app you have signed into with Google. A compromised Google account means someone can read your emails, see your photos, access your files, and even reset passwords on other accounts.\n\n**Google Security Checkup**: Google offers a free tool that walks you through your account's security settings in about five minutes. Go to myaccount.google.com/security to see your Security Checkup results.\n\nThe Security Checkup shows:\n- Whether you have 2-Step Verification turned on\n- What devices are currently signed into your account\n- Third-party apps with access to your account\n- Any recent security events\n- Password strength check\n\n**2-Step Verification (2SV)**: The most important protection. After you enter your password, Google sends a prompt to your phone or a text code you must confirm. Enable it at myaccount.google.com → Security → 2-Step Verification.\n\n**Review app access**: Many apps ask to sign in with Google. Over time, these apps accumulate access to your account. In the Security Checkup, review third-party apps and remove any you do not use or recognize.\n\n**Check sign-in activity**: Google shows you the last 28 days of sign-in activity at myaccount.google.com/security-checkup. If you see activity from locations you do not recognize, change your password immediately.`,
     category: 'safety-guides',
     tags: ['google account', 'gmail security', 'two-step verification', 'account security', 'password'],
@@ -360,7 +360,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Set up a recovery phone and email',
-        content: 'In Google Account → Security → Ways to verify it\'s you, add a recovery phone number and a recovery email. These are critical for regaining access if you ever forget your password.',
+        content: `In Google Account → Security → Ways to verify it's you, add a recovery phone number and a recovery email. These are critical for regaining access if you ever forget your password.`,
       },
     ],
   },
@@ -388,7 +388,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Review recent sign-in activity',
-        content: 'On the Security page, click "Review recent activity." A list shows recent sign-ins with location and device. Click "This was me" to confirm known activity, or "This wasn\'t me" if you see unrecognized access.',
+        content: `On the Security page, click "Review recent activity." A list shows recent sign-ins with location and device. Click "This was me" to confirm known activity, or "This wasn't me" if you see unrecognized access.`,
       },
       {
         title: 'Check connected apps and devices',
@@ -421,7 +421,7 @@ export const guidesBatch34: Guide[] = [
       {
         title: 'Control who can message you',
         content: 'In Settings → Messages and Story Replies → Message Controls. Under "Who can send you messages," choose "Followers and people you follow" or "People you follow" to reduce DMs from strangers.',
-        tip: 'Setting message requests to "Off for people you don\'t follow" dramatically reduces spam and scam messages.',
+        tip: `Setting message requests to "Off for people you don't follow" dramatically reduces spam and scam messages.`,
       },
       {
         title: 'Limit who can tag you',
@@ -441,7 +441,7 @@ export const guidesBatch34: Guide[] = [
   {
     slug: 'linkedin-privacy-guide',
     title: 'How to Manage Your LinkedIn Privacy Settings',
-    excerpt: 'LinkedIn is a professional network, but it can expose your home city, employer history, and connections to strangers. Here\'s how to limit what is visible.',
+    excerpt: `LinkedIn is a professional network, but it can expose your home city, employer history, and connections to strangers. Here's how to limit what is visible.`,
     body: `LinkedIn is the world's largest professional networking site. It is useful for career connections, job searching, and industry news, but it also exposes a lot of personal information by default — your current and past employers, education history, location, connections, and even your activity (posts you like, jobs you view).\n\nFor older adults who are not actively job searching, LinkedIn privacy settings can be significantly tightened without losing the value of the platform.\n\n**Who can see your profile**: LinkedIn allows you to restrict your profile to connections only, 1st/2nd degree connections, or keep it public. Recruiters and sales people routinely search LinkedIn for leads, so restricting visibility reduces unwanted messages.\n\n**Activity broadcast**: By default, LinkedIn notifies your connections when you update your profile, change your job, or add a skill. You can turn this off if you prefer to make changes quietly.\n\n**Connection visibility**: Your connections list is valuable to recruiters and scammers alike. Restricting who can see your connections reduces this exposure.\n\n**Scams on LinkedIn**: LinkedIn has seen a significant increase in scam activity — particularly fake job offers requesting personal information, investment scams from fake "financial advisors," and romance scams from fake profiles. Be skeptical of unsolicited messages from people you have not met, especially those quickly asking for personal information or moving conversation to other platforms.`,
     category: 'social-media',
     tags: ['linkedin', 'privacy settings', 'professional network', 'social media safety', 'job scams'],
@@ -469,8 +469,8 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Manage LinkedIn ads and data',
-        content: 'In Settings → Data Privacy → Manage your data and activity → you can limit LinkedIn\'s ability to use your data for third-party advertising and review what data LinkedIn has collected about you.',
-        warning: 'LinkedIn job offer scams are common — fake recruiters ask for your resume and personal information. Verify any recruiter\'s profile carefully, and never share sensitive personal data (SSN, bank info) over LinkedIn.',
+        content: `In Settings → Data Privacy → Manage your data and activity → you can limit LinkedIn's ability to use your data for third-party advertising and review what data LinkedIn has collected about you.`,
+        warning: `LinkedIn job offer scams are common — fake recruiters ask for your resume and personal information. Verify any recruiter's profile carefully, and never share sensitive personal data (SSN, bank info) over LinkedIn.`,
       },
     ],
   },
@@ -567,7 +567,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Install the browser extension',
-        content: 'After creating your account, install the LastPass browser extension for Chrome, Firefox, or Safari from each browser\'s extension store. Log into the extension with your email and master password.',
+        content: `After creating your account, install the LastPass browser extension for Chrome, Firefox, or Safari from each browser's extension store. Log into the extension with your email and master password.`,
       },
       {
         title: 'Save passwords as you log in',
@@ -616,7 +616,7 @@ export const guidesBatch34: Guide[] = [
       },
       {
         title: 'Add multiple locations',
-        content: 'Tap the location icon or the "+" button to add other locations — a family member\'s city, a vacation destination. Swipe between locations to check forecasts for each.',
+        content: `Tap the location icon or the "+" button to add other locations — a family member's city, a vacation destination. Swipe between locations to check forecasts for each.`,
       },
     ],
   },

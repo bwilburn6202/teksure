@@ -28,21 +28,21 @@ For buyers, ThredUp is free to use with no membership required. Shipping is typi
       },
       {
         title: 'Check item details',
-        content: 'Each listing shows multiple photos, condition rating, original retail price, and ThredUp\'s selling price so you can see how much you\'re saving. Tap the size guide if you\'re unsure about fit. Read the condition description carefully — ThredUp notes any flaws.',
+        content: `Each listing shows multiple photos, condition rating, original retail price, and ThredUp's selling price so you can see how much you're saving. Tap the size guide if you're unsure about fit. Read the condition description carefully — ThredUp notes any flaws.`,
       },
       {
         title: 'Place an order',
-        content: 'Add items to your cart and check out using a credit card or PayPal. Most orders ship within 1-3 business days via USPS or FedEx. Shipping costs $5.99 for a standard order or is free on orders over a certain threshold. You can return items within 14 days if they don\'t fit or match the description.',
+        content: `Add items to your cart and check out using a credit card or PayPal. Most orders ship within 1-3 business days via USPS or FedEx. Shipping costs $5.99 for a standard order or is free on orders over a certain threshold. You can return items within 14 days if they don't fit or match the description.`,
       },
       {
         title: 'Sell your old clothes with a Clean Out Kit',
-        content: 'On the ThredUp website, go to "Sell" and request a Clean Out Kit. A prepaid bag is mailed to you for free. Fill it with gently used women\'s or kids\' clothing (washed, no major damage, no stains). Seal the bag and drop it at any USPS location using the prepaid label.',
+        content: `On the ThredUp website, go to "Sell" and request a Clean Out Kit. A prepaid bag is mailed to you for free. Fill it with gently used women's or kids' clothing (washed, no major damage, no stains). Seal the bag and drop it at any USPS location using the prepaid label.`,
         tip: 'Focus on quality over quantity. ThredUp accepts higher-value brands more readily. Outdated fast fashion may be rejected. Stick to items that are clean, free of damage, and from recognizable brands.',
       },
       {
         title: 'Track your earnings',
-        content: 'Once ThredUp processes your bag (2-4 weeks after they receive it), you\'ll see your accepted items listed in your seller account. You earn cash when items sell — usually 5-40% of the sale price, with higher-priced items earning you a larger percentage. Cash out to your bank account or use ThredUp shopping credit.',
-        warning: 'ThredUp is selective — they may not accept all items from your bag. Items that don\'t meet their standards are either returned (for a fee) or donated. Review their acceptance criteria on the website before filling your bag.',
+        content: `Once ThredUp processes your bag (2-4 weeks after they receive it), you'll see your accepted items listed in your seller account. You earn cash when items sell — usually 5-40% of the sale price, with higher-priced items earning you a larger percentage. Cash out to your bank account or use ThredUp shopping credit.`,
+        warning: `ThredUp is selective — they may not accept all items from your bag. Items that don't meet their standards are either returned (for a fee) or donated. Review their acceptance criteria on the website before filling your bag.`,
       },
     ],
   },
@@ -69,13 +69,13 @@ Depop works on iPhone, Android, and the web at depop.com.`,
     steps: [
       {
         title: 'Download and browse Depop',
-        content: 'Search for "Depop" in the App Store or Google Play. Create a free account with your email address or Google login. Tap the Explore tab (compass icon) to browse items curated for your taste. Tap any item to see photos, price, size, condition, and the seller\'s other listings.',
-        tip: 'Save searches for specific styles, brands, or sizes by tapping the bookmark icon — you\'ll get notifications when new matching items are listed.',
+        content: `Search for "Depop" in the App Store or Google Play. Create a free account with your email address or Google login. Tap the Explore tab (compass icon) to browse items curated for your taste. Tap any item to see photos, price, size, condition, and the seller's other listings.`,
+        tip: `Save searches for specific styles, brands, or sizes by tapping the bookmark icon — you'll get notifications when new matching items are listed.`,
       },
       {
         title: 'Buy an item safely',
-        content: 'Tap "Buy" on any item you want. Pay using a credit card or PayPal. All transactions are processed through Depop\'s secure payment system — never pay sellers outside the app via Venmo or bank transfer, as you lose buyer protection.',
-        warning: 'Depop Buyer Protection covers you if an item doesn\'t arrive or significantly differs from the listing. This protection only applies to purchases made through the app — not to any side deals.',
+        content: `Tap "Buy" on any item you want. Pay using a credit card or PayPal. All transactions are processed through Depop's secure payment system — never pay sellers outside the app via Venmo or bank transfer, as you lose buyer protection.`,
+        warning: `Depop Buyer Protection covers you if an item doesn't arrive or significantly differs from the listing. This protection only applies to purchases made through the app — not to any side deals.`,
       },
       {
         title: 'Sell an item',
@@ -84,11 +84,11 @@ Depop works on iPhone, Android, and the web at depop.com.`,
       },
       {
         title: 'Ship a sold item',
-        content: 'When something sells, you receive a notification with the buyer\'s shipping address. Pack the item securely and ship it within 7 days. You can print a prepaid Depop shipping label (available in the app for US shipments) or arrange your own shipping. Drop it at USPS.',
+        content: `When something sells, you receive a notification with the buyer's shipping address. Pack the item securely and ship it within 7 days. You can print a prepaid Depop shipping label (available in the app for US shipments) or arrange your own shipping. Drop it at USPS.`,
       },
       {
         title: 'Get paid',
-        content: 'After the buyer confirms receipt (or after 5 days if they don\'t), your earnings appear in your Depop balance. Transfer to your PayPal account from the Balance section in your profile. Depop takes a 10% selling fee on the total transaction price.',
+        content: `After the buyer confirms receipt (or after 5 days if they don't), your earnings appear in your Depop balance. Transfer to your PayPal account from the Balance section in your profile. Depop takes a 10% selling fee on the total transaction price.`,
       },
     ],
   },
@@ -116,7 +116,7 @@ To participate, you'll need either Facebook (where most groups exist) or the sta
       {
         title: 'Find your local Buy Nothing group on Facebook',
         content: 'Open Facebook and search "Buy Nothing [your city or neighborhood name]." Look for the official Buy Nothing group with your area name. Tap "Join Group" and answer the entry questions (usually your zip code and agreement to follow group rules). Admins approve new members, usually within 24-48 hours.',
-        tip: 'If you can\'t find a Facebook group, download the "Buy Nothing" app and enter your address to find groups in your specific area.',
+        tip: `If you can't find a Facebook group, download the "Buy Nothing" app and enter your address to find groups in your specific area.`,
       },
       {
         title: 'Browse available items',
@@ -124,11 +124,11 @@ To participate, you'll need either Facebook (where most groups exist) or the sta
       },
       {
         title: 'Comment to receive an item',
-        content: 'If you want an item, comment on the post — usually just "Interested!" or a short note about why you\'d like it. The giver chooses who receives the item (they may pick randomly or based on need). If chosen, they\'ll message you to arrange a pickup time.',
+        content: `If you want an item, comment on the post — usually just "Interested!" or a short note about why you'd like it. The giver chooses who receives the item (they may pick randomly or based on need). If chosen, they'll message you to arrange a pickup time.`,
         tip: 'Personalized comments that explain why you want or need an item are more effective than just typing "Interested." Givers appreciate knowing their item will be well used.',
       },
       {
-        title: 'Give away something you don\'t need',
+        title: `Give away something you don't need`,
         content: 'Tap "Create Post" and choose "GIVE." Upload photos and describe the item honestly — condition, size, any flaws. You choose who receives it from the people who comment. Arrange a porch pickup or a time to hand it off. Giving regularly helps you receive items too — participation is part of the community spirit.',
       },
       {
@@ -141,7 +141,7 @@ To participate, you'll need either Facebook (where most groups exist) or the sta
   {
     slug: 'flightaware-track-flights-guide',
     title: 'How to Track Flights in Real Time with FlightAware',
-    excerpt: 'FlightAware shows you exactly where any airplane is right now, when it will land, and whether your family\'s flight is on time.',
+    excerpt: `FlightAware shows you exactly where any airplane is right now, when it will land, and whether your family's flight is on time.`,
     category: 'app-guides',
     tags: ['flightaware', 'flight tracking', 'flight status', 'travel', 'airport', 'plane tracking'],
     readTime: '4 min',
@@ -164,8 +164,8 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
       },
       {
         title: 'Search for a specific flight',
-        content: 'In the app, tap the Search icon and type the flight number (for example, "Delta 1450" or "DL1450"). You can find the flight number on the ticket confirmation email or boarding pass. Tap the correct result to see the flight\'s status and live map.',
-        tip: 'If you don\'t have the flight number, search by route — type the departure city and arrival city and FlightAware will show scheduled flights between them.',
+        content: `In the app, tap the Search icon and type the flight number (for example, "Delta 1450" or "DL1450"). You can find the flight number on the ticket confirmation email or boarding pass. Tap the correct result to see the flight's status and live map.`,
+        tip: `If you don't have the flight number, search by route — type the departure city and arrival city and FlightAware will show scheduled flights between them.`,
       },
       {
         title: 'Read the flight status screen',
@@ -174,11 +174,11 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
       {
         title: 'Watch the live map',
         content: 'Tap "Track Flight" to open the live map. The plane icon moves in real time, showing exactly where the flight is. The dotted line shows the planned route; the solid line shows where the plane has already flown. Pinch to zoom in and out of the map.',
-        tip: 'The estimated arrival time is much more accurate than the airline\'s official estimate because it\'s based on the plane\'s actual position, speed, and altitude — not just the schedule.',
+        tip: `The estimated arrival time is much more accurate than the airline's official estimate because it's based on the plane's actual position, speed, and altitude — not just the schedule.`,
       },
       {
         title: 'Set up flight alerts',
-        content: 'Create a free FlightAware account to set up notifications. Tap the bell icon on any flight to receive alerts when the plane takes off, lands, or experiences a delay. This way you\'ll know exactly when to leave for the airport to pick someone up.',
+        content: `Create a free FlightAware account to set up notifications. Tap the bell icon on any flight to receive alerts when the plane takes off, lands, or experiences a delay. This way you'll know exactly when to leave for the airport to pick someone up.`,
       },
     ],
   },
@@ -186,7 +186,7 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
   {
     slug: 'stubhub-buy-tickets-guide',
     title: 'How to Buy Event Tickets on StubHub',
-    excerpt: 'StubHub is a trusted resale marketplace where you can find tickets to concerts, sports games, theater, and events when they\'re sold out elsewhere.',
+    excerpt: `StubHub is a trusted resale marketplace where you can find tickets to concerts, sports games, theater, and events when they're sold out elsewhere.`,
     category: 'app-guides',
     tags: ['stubhub', 'event tickets', 'concert tickets', 'sports tickets', 'resale', 'ticket buying'],
     readTime: '5 min',
@@ -209,7 +209,7 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
       },
       {
         title: 'Search for your event',
-        content: 'Use the search bar to find the specific event, artist, team, or venue you\'re interested in. Tap on the event to see all available tickets. You\'ll see a list of available tickets with the section, row, number of seats, and price per ticket.',
+        content: `Use the search bar to find the specific event, artist, team, or venue you're interested in. Tap on the event to see all available tickets. You'll see a list of available tickets with the section, row, number of seats, and price per ticket.`,
         tip: 'Use the "Interactive Seat Map" view to see exactly where seats are located in the venue. Click on a section to see the price range and available seats in that area.',
       },
       {
@@ -219,7 +219,7 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
       },
       {
         title: 'Review and purchase',
-        content: 'Tap on a listing to see the full price including all fees. StubHub shows the total price before you confirm. Enter your payment information (credit card or PayPal) and confirm the purchase. You\'ll receive a confirmation email immediately.',
+        content: `Tap on a listing to see the full price including all fees. StubHub shows the total price before you confirm. Enter your payment information (credit card or PayPal) and confirm the purchase. You'll receive a confirmation email immediately.`,
         warning: 'StubHub prices include service fees that can add 10-20% to the ticket price. Always check the "All-in Pricing" view (a toggle in the app) to see final prices from the start, without surprises at checkout.',
       },
       {
@@ -232,7 +232,7 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
   {
     slug: 'seatgeek-buy-tickets-guide',
     title: 'How to Find the Best Ticket Deals with SeatGeek',
-    excerpt: 'SeatGeek compares ticket prices across multiple sellers and gives each listing a "Deal Score" so you can tell at a glance if you\'re getting a good price.',
+    excerpt: `SeatGeek compares ticket prices across multiple sellers and gives each listing a "Deal Score" so you can tell at a glance if you're getting a good price.`,
     category: 'app-guides',
     tags: ['seatgeek', 'ticket deals', 'concert tickets', 'sports tickets', 'ticket comparison'],
     readTime: '4 min',
@@ -259,7 +259,7 @@ SeatGeek has its own exclusive deals and is the official ticketing partner for s
       },
       {
         title: 'Read the Deal Score',
-        content: 'On the ticket listing page, look for the Deal Score badge next to each listing. A score above 70 (shown in green) means it\'s a better deal than average for that event. A score below 40 (shown in red or orange) means it\'s overpriced compared to similar seats.',
+        content: `On the ticket listing page, look for the Deal Score badge next to each listing. A score above 70 (shown in green) means it's a better deal than average for that event. A score below 40 (shown in red or orange) means it's overpriced compared to similar seats.`,
         tip: 'Scroll through a few pages of listings to find the best-scoring tickets for your preferred area of the venue.',
       },
       {
@@ -313,7 +313,7 @@ Many people find TickTick replaces a combination of sticky notes, paper lists, p
       },
       {
         title: 'Use the calendar view',
-        content: 'Tap the Calendar icon at the bottom to see all your tasks and reminders laid out by day and week. This gives you a clear picture of what\'s coming up. Drag tasks to different days to reschedule them. Tap a day to see what\'s planned.',
+        content: `Tap the Calendar icon at the bottom to see all your tasks and reminders laid out by day and week. This gives you a clear picture of what's coming up. Drag tasks to different days to reschedule them. Tap a day to see what's planned.`,
         tip: 'Tap the grid icon in the top right to switch between day, week, and month views.',
       },
     ],
@@ -345,13 +345,13 @@ Many people use Evernote as their digital filing cabinet — photographing recei
       },
       {
         title: 'Create your first note',
-        content: 'Tap the green "+" button to create a new note. Type your text, add a title at the top, and format using the toolbar (bold, bullet points, headings, etc.). Your note saves automatically — there\'s no separate save button.',
+        content: `Tap the green "+" button to create a new note. Type your text, add a title at the top, and format using the toolbar (bold, bullet points, headings, etc.). Your note saves automatically — there's no separate save button.`,
         tip: 'Use clear, specific titles so notes are easy to find later. "Blood pressure readings April 2026" is much easier to find than just "BP."',
       },
       {
         title: 'Save a photo or document',
         content: 'In a new or existing note, tap the paperclip icon or camera icon. Choose to take a new photo or select one from your gallery. Evernote will scan the text in the photo and make it searchable. This works for business cards, receipts, medicine labels, and handwritten notes.',
-        tip: 'Evernote\'s document camera (tap the camera icon, then "Document") automatically flattens and enhances photos of papers for better readability.',
+        tip: `Evernote's document camera (tap the camera icon, then "Document") automatically flattens and enhances photos of papers for better readability.`,
       },
       {
         title: 'Organize notes into Notebooks',
@@ -387,7 +387,7 @@ If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, E
     steps: [
       {
         title: 'Download OneNote and sign in',
-        content: 'Search for "Microsoft OneNote" in the App Store or Google Play. Install the free app. Sign in with your Microsoft account (the email address you use with Outlook, Hotmail, or Xbox). If you don\'t have one, tap "Create Account" — it\'s free.',
+        content: `Search for "Microsoft OneNote" in the App Store or Google Play. Install the free app. Sign in with your Microsoft account (the email address you use with Outlook, Hotmail, or Xbox). If you don't have one, tap "Create Account" — it's free.`,
       },
       {
         title: 'Create a Notebook and Section',
@@ -404,7 +404,7 @@ If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, E
       },
       {
         title: 'Share a Notebook with someone',
-        content: 'To share a Notebook with a family member or caregiver, open the Notebook and tap "Share Notebook" in the settings. Enter the person\'s email address. They\'ll receive a link and can view or edit the Notebook after signing in with their own Microsoft account.',
+        content: `To share a Notebook with a family member or caregiver, open the Notebook and tap "Share Notebook" in the settings. Enter the person's email address. They'll receive a link and can view or edit the Notebook after signing in with their own Microsoft account.`,
         tip: 'Sharing a "Medical Information" Notebook with a trusted family member means they have access to your medication list, doctor contacts, and medical history in an emergency.',
       },
     ],
@@ -413,7 +413,7 @@ If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, E
   {
     slug: 'iphone-app-library-guide',
     title: 'How to Use iPhone App Library to Organize Your Apps',
-    excerpt: 'App Library automatically sorts all your apps into categories so you can find any app instantly — even if you\'ve hidden it from your home screen.',
+    excerpt: `App Library automatically sorts all your apps into categories so you can find any app instantly — even if you've hidden it from your home screen.`,
     category: 'phone-guides',
     tags: ['app library', 'iphone', 'organize iphone', 'ios tips', 'home screen', 'iphone tips'],
     readTime: '4 min',
@@ -434,7 +434,7 @@ The App Library works automatically — you don't need to set anything up. All y
       },
       {
         title: 'Search for any app',
-        content: 'At the top of the App Library, tap the Search bar. Type the name of any app. Matching apps appear immediately — tap one to open it. This works for every installed app, not just the ones on your home screen. It\'s often the fastest way to find a rarely-used app.',
+        content: `At the top of the App Library, tap the Search bar. Type the name of any app. Matching apps appear immediately — tap one to open it. This works for every installed app, not just the ones on your home screen. It's often the fastest way to find a rarely-used app.`,
       },
       {
         title: 'Hide an app from your home screen',
@@ -474,7 +474,7 @@ This feature requires iOS 16 or later and any recent iPhone model (iPhone 8 or n
     steps: [
       {
         title: 'Enter lock screen editing mode',
-        content: 'Wake your iPhone and go to the lock screen (don\'t unlock it yet). Press and hold anywhere on the lock screen wallpaper for 1-2 seconds. The lock screen will animate slightly and a "Customize" button will appear at the bottom. Tap "Customize."',
+        content: `Wake your iPhone and go to the lock screen (don't unlock it yet). Press and hold anywhere on the lock screen wallpaper for 1-2 seconds. The lock screen will animate slightly and a "Customize" button will appear at the bottom. Tap "Customize."`,
       },
       {
         title: 'Choose to edit the lock screen',
@@ -482,16 +482,16 @@ This feature requires iOS 16 or later and any recent iPhone model (iPhone 8 or n
       },
       {
         title: 'Add widgets below the clock',
-        content: 'In the lock screen editor, you\'ll see a rectangular box below the clock with a "+" icon. Tap this box. A widget picker appears. Browse available widgets or search by app name. Tap a widget to add it. The row holds 4 small circular widgets, or 2 small + 1 rectangular, or similar combinations. Experiment to fit what you want.',
+        content: `In the lock screen editor, you'll see a rectangular box below the clock with a "+" icon. Tap this box. A widget picker appears. Browse available widgets or search by app name. Tap a widget to add it. The row holds 4 small circular widgets, or 2 small + 1 rectangular, or similar combinations. Experiment to fit what you want.`,
         tip: 'Weather (current temperature), Calendar (next event), and Battery (iPhone battery %) are the most universally useful lock screen widgets.',
       },
       {
         title: 'Add a widget above the clock',
-        content: 'There\'s also a smaller widget area above the clock showing the date. Tap it to customize — you can swap the date for an activity ring, a second clock for another time zone, UV index, or other single-piece widgets.',
+        content: `There's also a smaller widget area above the clock showing the date. Tap it to customize — you can swap the date for an activity ring, a second clock for another time zone, UV index, or other single-piece widgets.`,
       },
       {
         title: 'Save your customized lock screen',
-        content: 'When you\'re happy with your changes, tap "Done" in the top right corner. Tap "Set as Wallpaper Pair" (or "Use as Lock Screen") to apply the changes. Lock your iPhone and wake it to see your new lock screen with widgets.',
+        content: `When you're happy with your changes, tap "Done" in the top right corner. Tap "Set as Wallpaper Pair" (or "Use as Lock Screen") to apply the changes. Lock your iPhone and wake it to see your new lock screen with widgets.`,
         tip: 'You can save multiple lock screens with different widgets for different contexts — work, weekend, or travel — and switch between them by pressing and holding the lock screen.',
       },
     ],
@@ -519,16 +519,16 @@ The platform is used by both families seeking care and individuals looking to of
     steps: [
       {
         title: 'Create an account and post a job',
-        content: 'Go to care.com or download the Care.com app. Create a free account and choose "I need care." Describe what you\'re looking for — for example, "In-home companion for 3 hours/day on weekdays" or "Help with grocery shopping and light housekeeping." Enter your zip code. Posting a job is free.',
+        content: `Go to care.com or download the Care.com app. Create a free account and choose "I need care." Describe what you're looking for — for example, "In-home companion for 3 hours/day on weekdays" or "Help with grocery shopping and light housekeeping." Enter your zip code. Posting a job is free.`,
         tip: 'Be specific in your job description. Mention the specific tasks needed, any required experience (like experience with dementia or mobility assistance), and whether the role involves transportation.',
       },
       {
         title: 'Browse caregiver profiles',
-        content: 'Review caregivers who apply to your posting or browse profiles in your area. Look at their experience description, how long they\'ve been on Care.com, previous client reviews, and stated skills. Photos and video introductions (when present) help you get a better sense of the person.',
+        content: `Review caregivers who apply to your posting or browse profiles in your area. Look at their experience description, how long they've been on Care.com, previous client reviews, and stated skills. Photos and video introductions (when present) help you get a better sense of the person.`,
       },
       {
         title: 'Run a background check',
-        content: 'For caregivers you\'re seriously considering, purchase a background check through Care.com. These typically cost $5-$10 per check. The background check verifies identity, checks national criminal databases, and may include sex offender registry and motor vehicle records. This step is highly recommended before inviting anyone into your home.',
+        content: `For caregivers you're seriously considering, purchase a background check through Care.com. These typically cost $5-$10 per check. The background check verifies identity, checks national criminal databases, and may include sex offender registry and motor vehicle records. This step is highly recommended before inviting anyone into your home.`,
         warning: 'Never hire a caregiver for in-home work without running a background check first, regardless of how good their reviews are.',
       },
       {
@@ -538,7 +538,7 @@ The platform is used by both families seeking care and individuals looking to of
       {
         title: 'Manage care through the platform',
         content: 'Care.com has tools for tracking hours and processing payments if you choose to use them. You can also message your caregiver through the app. After care begins, leave a review for your caregiver — it helps other families and provides helpful feedback.',
-        tip: 'Care.com\'s HomePay service (a separate subscription) can handle payroll taxes and payments automatically if you hire a caregiver as a household employee — which the IRS requires for regularly scheduled in-home care.',
+        tip: `Care.com's HomePay service (a separate subscription) can handle payroll taxes and payments automatically if you hire a caregiver as a household employee — which the IRS requires for regularly scheduled in-home care.`,
       },
     ],
   },
@@ -565,24 +565,24 @@ Wag is available in most US cities. If your area isn't covered, Rover (rover.com
     steps: [
       {
         title: 'Download and create your profile',
-        content: 'Search for "Wag" in the App Store or Google Play. Install the free app and create an account. Add your pet\'s profile — name, breed, age, weight, temperament, and any special needs or medical conditions. Upload a photo. This helps walkers know what to expect.',
+        content: `Search for "Wag" in the App Store or Google Play. Install the free app and create an account. Add your pet's profile — name, breed, age, weight, temperament, and any special needs or medical conditions. Upload a photo. This helps walkers know what to expect.`,
       },
       {
         title: 'Choose your service type',
-        content: 'On the home screen, choose the service you need: Walk (20 or 30 min guided walk), Drop-in (30 min check-in, feeding, and playtime at your home), Overnight Boarding (your dog stays at the sitter\'s home), or House Sitting (sitter stays overnight at your home). Tap your service type and select a date and time.',
+        content: `On the home screen, choose the service you need: Walk (20 or 30 min guided walk), Drop-in (30 min check-in, feeding, and playtime at your home), Overnight Boarding (your dog stays at the sitter's home), or House Sitting (sitter stays overnight at your home). Tap your service type and select a date and time.`,
       },
       {
         title: 'Browse and choose a walker or sitter',
-        content: 'Wag will show you available, vetted providers in your area with their rates, star ratings, number of completed walks, and profile photos. Read reviews from other dog owners. Look for providers who have experience with your dog\'s breed and size.',
-        tip: 'If your dog has specific needs (anxiety, reactive to other dogs, requires medication), write this clearly in your pet\'s profile and mention it when booking.',
+        content: `Wag will show you available, vetted providers in your area with their rates, star ratings, number of completed walks, and profile photos. Read reviews from other dog owners. Look for providers who have experience with your dog's breed and size.`,
+        tip: `If your dog has specific needs (anxiety, reactive to other dogs, requires medication), write this clearly in your pet's profile and mention it when booking.`,
       },
       {
         title: 'Book and prepare your home',
-        content: 'Confirm the booking and complete payment in the app. You\'ll receive the walker\'s contact information. Before the first service, ensure you have an approved way to share access — most people use a lockbox with a spare key or a smart lock code rather than meeting in person every time.',
+        content: `Confirm the booking and complete payment in the app. You'll receive the walker's contact information. Before the first service, ensure you have an approved way to share access — most people use a lockbox with a spare key or a smart lock code rather than meeting in person every time.`,
       },
       {
         title: 'Track the walk and review',
-        content: 'When the walk starts, open Wag to watch the GPS map in real time. After the walk, you\'ll receive a "Walk Report Card" with GPS route, photos, and notes from the walker (including a pee/poop checklist). Leave a rating and tip if the service was good.',
+        content: `When the walk starts, open Wag to watch the GPS map in real time. After the walk, you'll receive a "Walk Report Card" with GPS route, photos, and notes from the walker (including a pee/poop checklist). Leave a rating and tip if the service was good.`,
         tip: 'Request the same walker for recurring walks — Wag lets you book a "preferred walker" so your dog builds a relationship with the same person.',
       },
     ],
@@ -610,26 +610,26 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
     steps: [
       {
         title: 'Go to Healthgrades',
-        content: 'Open your phone\'s browser and go to healthgrades.com. The Healthgrades app is also available in the App Store and Google Play. No account is required to search. Tap the search bar to get started.',
+        content: `Open your phone's browser and go to healthgrades.com. The Healthgrades app is also available in the App Store and Google Play. No account is required to search. Tap the search bar to get started.`,
       },
       {
         title: 'Search for a doctor or specialist',
-        content: 'Type in what you\'re looking for — a specialty ("cardiologist"), a doctor\'s name, or a condition ("diabetes specialist"). Enter your zip code or city. Tap Search. Filter results by insurance accepted, distance, gender, and whether they\'re accepting new patients.',
+        content: `Type in what you're looking for — a specialty ("cardiologist"), a doctor's name, or a condition ("diabetes specialist"). Enter your zip code or city. Tap Search. Filter results by insurance accepted, distance, gender, and whether they're accepting new patients.`,
         tip: 'If you need a specialist, ask your primary care doctor for a recommendation first — then verify that doctor on Healthgrades before booking.',
       },
       {
-        title: 'Review a doctor\'s profile',
-        content: 'Tap on any doctor to see their profile. Look for: board certifications (indicates specialty training), years in practice, hospital affiliations, education and residency, and patient ratings. A "Healthgrades Award for Excellence" or "Patient\'s Choice Award" indicates consistently high ratings over multiple years.',
-        warning: 'A low number of reviews doesn\'t necessarily mean the doctor is bad — some excellent doctors simply don\'t have many online reviewers. Read the reviews that exist carefully rather than just looking at the overall star number.',
+        title: `Review a doctor's profile`,
+        content: `Tap on any doctor to see their profile. Look for: board certifications (indicates specialty training), years in practice, hospital affiliations, education and residency, and patient ratings. A "Healthgrades Award for Excellence" or "Patient's Choice Award" indicates consistently high ratings over multiple years.`,
+        warning: `A low number of reviews doesn't necessarily mean the doctor is bad — some excellent doctors simply don't have many online reviewers. Read the reviews that exist carefully rather than just looking at the overall star number.`,
       },
       {
         title: 'Check for disciplinary history',
-        content: 'Scroll to the "Background" section of the doctor\'s profile. Healthgrades displays any malpractice claims and disciplinary actions on record. Keep in mind that malpractice claims can occur in high-risk specialties even for excellent doctors — context matters.',
+        content: `Scroll to the "Background" section of the doctor's profile. Healthgrades displays any malpractice claims and disciplinary actions on record. Keep in mind that malpractice claims can occur in high-risk specialties even for excellent doctors — context matters.`,
       },
       {
         title: 'Book an appointment',
-        content: 'If the doctor accepts online booking, a "Book Now" or "Request Appointment" button will appear. Click it to see available times. Select your preferred time, enter your insurance information and reason for the visit, and confirm the booking. You\'ll receive a confirmation by email or text.',
-        tip: 'Call the office directly to verify insurance acceptance before your appointment — Healthgrades\' insurance data isn\'t always current.',
+        content: `If the doctor accepts online booking, a "Book Now" or "Request Appointment" button will appear. Click it to see available times. Select your preferred time, enter your insurance information and reason for the visit, and confirm the booking. You'll receive a confirmation by email or text.`,
+        tip: `Call the office directly to verify insurance acceptance before your appointment — Healthgrades' insurance data isn't always current.`,
       },
     ],
   },
@@ -637,7 +637,7 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
   {
     slug: 'samsung-find-my-mobile-guide',
     title: 'How to Find a Lost Samsung Galaxy Phone',
-    excerpt: 'Samsung\'s Find My Mobile lets you locate, lock, or remotely wipe a lost or stolen Samsung Galaxy phone using any web browser.',
+    excerpt: `Samsung's Find My Mobile lets you locate, lock, or remotely wipe a lost or stolen Samsung Galaxy phone using any web browser.`,
     category: 'phone-guides',
     tags: ['samsung', 'find my mobile', 'lost phone', 'samsung galaxy', 'phone security', 'remote lock'],
     readTime: '5 min',
@@ -657,24 +657,24 @@ If you have a non-Samsung Android phone, use Google's Find My Device at google.c
       {
         title: 'Enable Find My Mobile on your Samsung phone',
         content: 'On your Samsung Galaxy phone, go to Settings → Biometrics and Security → Find My Mobile. Make sure the toggle is turned On. If prompted, sign into your Samsung account. Also confirm that "Remote unlock," "Send last location," and "Offline finding" are enabled.',
-        tip: 'While you\'re in Find My Mobile settings, test the setup by tapping "Log in to Samsung account" to verify your account is connected.',
+        tip: `While you're in Find My Mobile settings, test the setup by tapping "Log in to Samsung account" to verify your account is connected.`,
       },
       {
         title: 'If your phone is lost: go to Find My Mobile',
-        content: 'From any computer or phone, open a browser and go to findmymobile.samsung.com. Sign in with the same Samsung account that\'s on your lost phone. You\'ll see your Samsung devices listed on the left side. Click on your lost phone.',
+        content: `From any computer or phone, open a browser and go to findmymobile.samsung.com. Sign in with the same Samsung account that's on your lost phone. You'll see your Samsung devices listed on the left side. Click on your lost phone.`,
       },
       {
         title: 'Locate your phone on the map',
-        content: 'The website shows your phone\'s last known location on a map. The green circle indicates the accuracy of the location. If the phone is actively connected to the internet, the location updates in real time. If offline, it shows the last location before it went offline.',
+        content: `The website shows your phone's last known location on a map. The green circle indicates the accuracy of the location. If the phone is actively connected to the internet, the location updates in real time. If offline, it shows the last location before it went offline.`,
       },
       {
         title: 'Ring the phone',
-        content: 'If you think your phone is nearby (lost at home, dropped in a car, etc.), click "Ring" in the Find My Mobile panel. The phone will ring at full volume for 60 seconds — even if it\'s on silent or set to vibrate. This can help you locate a phone that slipped under couch cushions or into a bag.',
+        content: `If you think your phone is nearby (lost at home, dropped in a car, etc.), click "Ring" in the Find My Mobile panel. The phone will ring at full volume for 60 seconds — even if it's on silent or set to vibrate. This can help you locate a phone that slipped under couch cushions or into a bag.`,
       },
       {
         title: 'Lock or wipe if necessary',
-        content: 'If you believe the phone was stolen, click "Lock" to lock it remotely with a custom PIN and message (like "Lost phone — please call 555-1234"). If you need to protect sensitive data, click "Erase Data" to factory reset the phone remotely — this erases everything. Only do this as a last resort since it can\'t be undone.',
-        warning: 'Remote wipe permanently deletes all data on the phone. Do this only if you\'re certain the phone is stolen and you\'ve already backed up your data, or if the phone contains sensitive information that must be protected.',
+        content: `If you believe the phone was stolen, click "Lock" to lock it remotely with a custom PIN and message (like "Lost phone — please call 555-1234"). If you need to protect sensitive data, click "Erase Data" to factory reset the phone remotely — this erases everything. Only do this as a last resort since it can't be undone.`,
+        warning: `Remote wipe permanently deletes all data on the phone. Do this only if you're certain the phone is stolen and you've already backed up your data, or if the phone contains sensitive information that must be protected.`,
       },
     ],
   },
@@ -701,8 +701,8 @@ Never pay anyone claiming to "recover" your Apple ID for a fee — this is a sca
     steps: [
       {
         title: 'Try resetting your password first',
-        content: 'On your iPhone, go to Settings → [Your Name] → Sign-In & Security → Change Password. If you can\'t access Settings because you\'re locked out, go to iforgot.apple.com on any browser. Enter your Apple ID email and follow the prompts. Apple will text a verification code to your trusted phone number.',
-        tip: 'If you\'re not sure what email address you used as your Apple ID, check your oldest Apple purchase confirmation emails, or look on older Apple devices where you might still be signed in.',
+        content: `On your iPhone, go to Settings → [Your Name] → Sign-In & Security → Change Password. If you can't access Settings because you're locked out, go to iforgot.apple.com on any browser. Enter your Apple ID email and follow the prompts. Apple will text a verification code to your trusted phone number.`,
+        tip: `If you're not sure what email address you used as your Apple ID, check your oldest Apple purchase confirmation emails, or look on older Apple devices where you might still be signed in.`,
       },
       {
         title: 'Verify with a trusted phone number',
@@ -711,7 +711,7 @@ Never pay anyone claiming to "recover" your Apple ID for a fee — this is a sca
       {
         title: 'Use a Recovery Key if you set one up',
         content: 'If you previously set up a Recovery Key (a 28-character code provided when you turned on Advanced Data Protection), enter it now. This key overrides the phone number verification. Keep your Recovery Key stored securely — if you lose it and lose your phone number, account recovery is much harder.',
-        warning: 'If you have Advanced Data Protection turned on and don\'t have your Recovery Key or a Recovery Contact, Apple cannot help you recover your account. This is intentional for maximum security.',
+        warning: `If you have Advanced Data Protection turned on and don't have your Recovery Key or a Recovery Contact, Apple cannot help you recover your account. This is intentional for maximum security.`,
       },
       {
         title: 'Use a Recovery Contact (if set up)',
@@ -719,8 +719,8 @@ Never pay anyone claiming to "recover" your Apple ID for a fee — this is a sca
         tip: 'Set up a Recovery Contact now before you ever need it: Settings → [Your Name] → Sign-In & Security → Account Recovery → Add Recovery Contact.',
       },
       {
-        title: 'Use Apple\'s Account Recovery process',
-        content: 'If all else fails, request Account Recovery at iforgot.apple.com. Apple will verify your identity through a manual review process — this can take several days. You\'ll receive an email with a recovery link when the review is complete. This is the last resort but does work.',
+        title: `Use Apple's Account Recovery process`,
+        content: `If all else fails, request Account Recovery at iforgot.apple.com. Apple will verify your identity through a manual review process — this can take several days. You'll receive an email with a recovery link when the review is complete. This is the last resort but does work.`,
       },
     ],
   },
@@ -747,8 +747,8 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
     steps: [
       {
         title: 'Open a new group chat',
-        content: 'In WhatsApp, tap the chat icon (pencil icon on iPhone, or the new chat button on Android). Tap "New Group." You\'ll see your WhatsApp contacts. Tap each person you want to add to the group — they must already have WhatsApp installed. Tap the green arrow when done.',
-        tip: 'You can add more people after creating the group, so don\'t worry if someone is missing at first.',
+        content: `In WhatsApp, tap the chat icon (pencil icon on iPhone, or the new chat button on Android). Tap "New Group." You'll see your WhatsApp contacts. Tap each person you want to add to the group — they must already have WhatsApp installed. Tap the green arrow when done.`,
+        tip: `You can add more people after creating the group, so don't worry if someone is missing at first.`,
       },
       {
         title: 'Name the group',
@@ -757,7 +757,7 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
       {
         title: 'Send messages to the group',
         content: 'The group chat opens like a regular conversation. Type in the text box and tap Send. Everyone in the group receives and can see your message. When anyone replies, all group members see the reply. This keeps all related conversation in one place.',
-        tip: 'If you want to reply specifically to one message, press and hold that message and tap "Reply" — your response will be visually connected to the specific message you\'re answering.',
+        tip: `If you want to reply specifically to one message, press and hold that message and tap "Reply" — your response will be visually connected to the specific message you're answering.`,
       },
       {
         title: 'Manage group settings',
@@ -766,8 +766,8 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
       },
       {
         title: 'Mute or leave a group',
-        content: 'If a group becomes too busy, tap the group name → Mute and choose 8 hours, 1 week, or Always. You\'ll still receive messages but won\'t get sound notifications. To leave a group entirely, tap the group name → Scroll down → Exit Group. Members will see that you left.',
-        tip: 'You can mute a group\'s notifications while still being able to read messages when you choose. This is better than leaving — you stay connected but aren\'t interrupted constantly.',
+        content: `If a group becomes too busy, tap the group name → Mute and choose 8 hours, 1 week, or Always. You'll still receive messages but won't get sound notifications. To leave a group entirely, tap the group name → Scroll down → Exit Group. Members will see that you left.`,
+        tip: `You can mute a group's notifications while still being able to read messages when you choose. This is better than leaving — you stay connected but aren't interrupted constantly.`,
       },
     ],
   },
@@ -802,16 +802,16 @@ Location sharing uses a small amount of battery life and mobile data when active
       },
       {
         title: 'Choose who to share with',
-        content: 'Search for the person\'s name from your Google contacts, enter their email address, or choose them from your suggested contacts. The person will receive a notification or email that you\'re sharing your location with them. They can accept to see your location on their Maps.',
-        tip: 'If the person uses an iPhone, they can still see your location in the Google Maps app on their iPhone — they don\'t need an Android phone.',
+        content: `Search for the person's name from your Google contacts, enter their email address, or choose them from your suggested contacts. The person will receive a notification or email that you're sharing your location with them. They can accept to see your location on their Maps.`,
+        tip: `If the person uses an iPhone, they can still see your location in the Google Maps app on their iPhone — they don't need an Android phone.`,
       },
       {
-        title: 'View someone\'s location who\'s sharing with you',
-        content: 'When someone shares their location with you, open Google Maps and tap your profile icon → Location Sharing. You\'ll see a list of people sharing their location with you and a mini map showing where each person is. Tap a person to zoom in to their location.',
+        title: `View someone's location who's sharing with you`,
+        content: `When someone shares their location with you, open Google Maps and tap your profile icon → Location Sharing. You'll see a list of people sharing their location with you and a mini map showing where each person is. Tap a person to zoom in to their location.`,
       },
       {
         title: 'Stop sharing your location',
-        content: 'To stop sharing with a specific person, go to Google Maps → Profile icon → Location Sharing. Tap the person\'s name and tap "Stop sharing." Your location immediately becomes invisible to them.',
+        content: `To stop sharing with a specific person, go to Google Maps → Profile icon → Location Sharing. Tap the person's name and tap "Stop sharing." Your location immediately becomes invisible to them.`,
         tip: 'To share location using Apple devices instead, use the "Share My Location" feature in the Find My app — iPhone and Android can share locations with each other through Google Maps.',
       },
     ],
@@ -840,7 +840,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
       {
         title: 'Download the app or use the website',
         content: 'Search for "Temu" in the App Store or Google Play, or go to temu.com in your browser. Creating an account is free. You can browse without an account but need one to purchase.',
-        tip: 'If you\'re concerned about privacy, shopping through temu.com in your phone\'s browser (rather than the app) limits data the app can collect from your phone.',
+        tip: `If you're concerned about privacy, shopping through temu.com in your phone's browser (rather than the app) limits data the app can collect from your phone.`,
       },
       {
         title: 'Search and browse products',
@@ -849,7 +849,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
       },
       {
         title: 'Read product details carefully',
-        content: 'Check the size chart carefully for clothing — sizing often runs smaller than US standards. Read the materials list. Look at the seller\'s other items and their overall rating. Check the estimated delivery date — longer shipping times are common. Note whether the item ships from a US warehouse (faster) or directly from overseas (slower).',
+        content: `Check the size chart carefully for clothing — sizing often runs smaller than US standards. Read the materials list. Look at the seller's other items and their overall rating. Check the estimated delivery date — longer shipping times are common. Note whether the item ships from a US warehouse (faster) or directly from overseas (slower).`,
         warning: 'What you see in professional product photos may differ significantly from what arrives. Always read customer reviews and look at real customer photos before buying anything you need to look exactly right.',
       },
       {
@@ -858,8 +858,8 @@ Privacy-conscious users should know that Temu collects extensive data through it
       },
       {
         title: 'Handle returns if needed',
-        content: 'If an item doesn\'t match the description, arrives damaged, or doesn\'t arrive at all, open the Temu app and go to My Orders → the specific order → Return/Refund. Follow the prompts. For most first-time returns per order, Temu provides a free return label. Refunds typically process within 5-14 business days.',
-        tip: 'Temu\'s "Purchase Protection" gives you 90 days to dispute an order. For items that are significantly wrong, Temu often approves a refund without requiring you to ship the item back.',
+        content: `If an item doesn't match the description, arrives damaged, or doesn't arrive at all, open the Temu app and go to My Orders → the specific order → Return/Refund. Follow the prompts. For most first-time returns per order, Temu provides a free return label. Refunds typically process within 5-14 business days.`,
+        tip: `Temu's "Purchase Protection" gives you 90 days to dispute an order. For items that are significantly wrong, Temu often approves a refund without requiring you to ship the item back.`,
       },
     ],
   },
@@ -867,7 +867,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
   {
     slug: 'picturethis-plant-id-guide',
     title: 'How to Identify Plants with the PictureThis App',
-    excerpt: 'PictureThis identifies any plant from a photo in seconds — helpful for knowing what\'s growing in your yard, spotting poisonous plants, and learning to garden.',
+    excerpt: `PictureThis identifies any plant from a photo in seconds — helpful for knowing what's growing in your yard, spotting poisonous plants, and learning to garden.`,
     category: 'app-guides',
     tags: ['picturethis', 'plant identification', 'gardening', 'plant app', 'nature', 'garden help'],
     readTime: '5 min',
@@ -895,12 +895,12 @@ For most casual users, the free version is sufficient for occasional plant ident
       },
       {
         title: 'Get the identification',
-        content: 'After taking the photo, PictureThis analyzes it and displays the plant\'s name — both the common name and scientific name. It shows a confidence percentage and shows similar plants you might be confusing it with. Tap "Learn More" to see detailed information about the plant.',
+        content: `After taking the photo, PictureThis analyzes it and displays the plant's name — both the common name and scientific name. It shows a confidence percentage and shows similar plants you might be confusing it with. Tap "Learn More" to see detailed information about the plant.`,
       },
       {
         title: 'Read the plant details',
         content: 'The plant profile includes common names, native region, growing conditions, care instructions (watering, sunlight, soil), and toxicity information. Look for the toxicity warning — this tells you if the plant is harmful to cats, dogs, or humans. This information is especially important for parents, grandparents, and pet owners.',
-        tip: 'If a plant is labeled as toxic, take note of which parts are toxic (often the berries or leaves) and whether it\'s dangerous if touched, ingested, or both.',
+        tip: `If a plant is labeled as toxic, take note of which parts are toxic (often the berries or leaves) and whether it's dangerous if touched, ingested, or both.`,
       },
       {
         title: 'Diagnose plant health problems',

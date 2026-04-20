@@ -30,7 +30,7 @@ If you've ever wanted to create a slideshow video for a grandchild's birthday or
       },
       {
         title: 'Start a new project',
-        content: 'Tap the large "+" button on the home screen. Select the photos and videos from your phone\'s gallery that you want to include in your video. Tap them in the order you want them to appear, then tap "Add" to bring them into the editor.',
+        content: `Tap the large "+" button on the home screen. Select the photos and videos from your phone's gallery that you want to include in your video. Tap them in the order you want them to appear, then tap "Add" to bring them into the editor.`,
       },
       {
         title: 'Trim clips and reorder',
@@ -39,8 +39,8 @@ If you've ever wanted to create a slideshow video for a grandchild's birthday or
       },
       {
         title: 'Add music',
-        content: 'Tap "Audio" at the bottom menu, then "Music." You can search for songs, browse by mood, or choose from CapCut\'s free library. Tap a song to preview it, then tap "+" to add it to your video. Use the volume slider to set how loud the music is compared to any original audio.',
-        warning: 'If you plan to share on social media, use songs from CapCut\'s free library to avoid copyright issues.',
+        content: `Tap "Audio" at the bottom menu, then "Music." You can search for songs, browse by mood, or choose from CapCut's free library. Tap a song to preview it, then tap "+" to add it to your video. Use the volume slider to set how loud the music is compared to any original audio.`,
+        warning: `If you plan to share on social media, use songs from CapCut's free library to avoid copyright issues.`,
       },
       {
         title: 'Add text and captions',
@@ -48,7 +48,7 @@ If you've ever wanted to create a slideshow video for a grandchild's birthday or
       },
       {
         title: 'Export and share',
-        content: 'When your video is ready, tap the export button (arrow pointing up or "1080P") in the top right corner. Choose 1080p resolution for the best quality. The video saves to your phone\'s camera roll. Then open Instagram, Facebook, or any other app to share it.',
+        content: `When your video is ready, tap the export button (arrow pointing up or "1080P") in the top right corner. Choose 1080p resolution for the best quality. The video saves to your phone's camera roll. Then open Instagram, Facebook, or any other app to share it.`,
         tip: 'Tap "Share" inside CapCut to post directly to TikTok, Instagram, or YouTube without leaving the app.',
       },
     ],
@@ -76,7 +76,7 @@ The app is free to download and use. Listing items is free — you only pay when
     steps: [
       {
         title: 'Download the Poshmark app',
-        content: 'Search for "Poshmark" in the App Store or Google Play and download the free app. Create a free account with your email address. You\'ll set up a seller profile with a short bio and profile photo.',
+        content: `Search for "Poshmark" in the App Store or Google Play and download the free app. Create a free account with your email address. You'll set up a seller profile with a short bio and profile photo.`,
       },
       {
         title: 'List an item to sell',
@@ -85,7 +85,7 @@ The app is free to download and use. Listing items is free — you only pay when
       },
       {
         title: 'Price your item',
-        content: 'Search Poshmark for the same or similar item and filter by "Sold" to see what others got for it. Price your item 10-20% higher than your minimum so there\'s room to accept offers. Poshmark lets buyers make offers — you can accept, decline, or counter.',
+        content: `Search Poshmark for the same or similar item and filter by "Sold" to see what others got for it. Price your item 10-20% higher than your minimum so there's room to accept offers. Poshmark lets buyers make offers — you can accept, decline, or counter.`,
       },
       {
         title: 'Ship when something sells',
@@ -127,7 +127,7 @@ Mercari is particularly popular for selling electronics, gaming items, trading c
       {
         title: 'Take photos and create a listing',
         content: 'Tap the camera icon at the bottom of the screen to start a listing. Take up to 12 photos of your item from different angles. Add a clear title (brand + item name works well), a description of the condition, and any details that matter to buyers like model numbers or included accessories.',
-        tip: 'Mercari\'s AI will suggest a category, price, and description automatically based on your photos. You can accept these suggestions or customize them.',
+        tip: `Mercari's AI will suggest a category, price, and description automatically based on your photos. You can accept these suggestions or customize them.`,
       },
       {
         title: 'Set your price and shipping',
@@ -136,12 +136,12 @@ Mercari is particularly popular for selling electronics, gaming items, trading c
       },
       {
         title: 'Pack and ship the sold item',
-        content: 'When your item sells, you\'ll receive a notification and a prepaid shipping label. Pack the item securely in a box or padded mailer. Tape the label to the outside and drop the package at any USPS location. Ship within 3 business days to keep your seller rating high.',
-        warning: 'If the item is fragile, add extra padding. If a buyer receives a broken item and you didn\'t pack it properly, the dispute may go against you.',
+        content: `When your item sells, you'll receive a notification and a prepaid shipping label. Pack the item securely in a box or padded mailer. Tape the label to the outside and drop the package at any USPS location. Ship within 3 business days to keep your seller rating high.`,
+        warning: `If the item is fragile, add extra padding. If a buyer receives a broken item and you didn't pack it properly, the dispute may go against you.`,
       },
       {
         title: 'Confirm and get paid',
-        content: 'Mercari holds the payment until the buyer receives the item and confirms it. Buyers have 3 days to rate the sale; if they don\'t, Mercari automatically releases the funds. Transfer your balance to your bank account from the "Balance" section in the app.',
+        content: `Mercari holds the payment until the buyer receives the item and confirms it. Buyers have 3 days to rate the sale; if they don't, Mercari automatically releases the funds. Transfer your balance to your bank account from the "Balance" section in the app.`,
       },
     ],
   },
@@ -177,7 +177,7 @@ OfferUp is one of the best options for selling things like couches, TVs, exercis
       },
       {
         title: 'Respond to messages',
-        content: 'Interested buyers will send you messages through the app\'s built-in chat. Respond promptly — quick responses lead to faster sales. You can negotiate price through the chat or set "No Offers" if you want to keep your asking price firm.',
+        content: `Interested buyers will send you messages through the app's built-in chat. Respond promptly — quick responses lead to faster sales. You can negotiate price through the chat or set "No Offers" if you want to keep your asking price firm.`,
         warning: 'Never share your home address in messages. Arrange to meet at a public location first.',
       },
       {
@@ -187,7 +187,7 @@ OfferUp is one of the best options for selling things like couches, TVs, exercis
       },
       {
         title: 'Complete the sale',
-        content: 'Once the buyer has inspected the item and you\'ve received payment, mark the item as sold in the app. Leave a rating for the buyer and ask them to rate you — your seller rating helps future buyers trust you.',
+        content: `Once the buyer has inspected the item and you've received payment, mark the item as sold in the app. Leave a rating for the buyer and ask them to rate you — your seller rating helps future buyers trust you.`,
       },
     ],
   },
@@ -216,7 +216,7 @@ Smart locks are especially helpful for people who forget to lock the door, want 
     steps: [
       {
         title: 'Choose and purchase your smart lock',
-        content: 'August Wi-Fi Smart Lock (model 4th gen) and Schlage Encode Plus are popular choices that work without a separate hub. Check that the lock fits your door thickness (most standard doors are 1.375" to 2" thick). You can find them at Home Depot, Lowe\'s, Best Buy, or Amazon for $100-$250.',
+        content: `August Wi-Fi Smart Lock (model 4th gen) and Schlage Encode Plus are popular choices that work without a separate hub. Check that the lock fits your door thickness (most standard doors are 1.375" to 2" thick). You can find them at Home Depot, Lowe's, Best Buy, or Amazon for $100-$250.`,
         tip: 'If you want Apple HomeKit support, look for locks labeled "Works with Apple Home." For Alexa or Google, most major brands work.',
       },
       {
@@ -230,12 +230,12 @@ Smart locks are especially helpful for people who forget to lock the door, want 
       },
       {
         title: 'Download the app and connect',
-        content: 'Download the "August Home" app (or your lock brand\'s app) on your phone. Create an account, then tap "Set Up New Device" and follow the on-screen prompts. The app will connect the lock to your home Wi-Fi network. This usually takes 5-10 minutes.',
+        content: `Download the "August Home" app (or your lock brand's app) on your phone. Create an account, then tap "Set Up New Device" and follow the on-screen prompts. The app will connect the lock to your home Wi-Fi network. This usually takes 5-10 minutes.`,
       },
       {
         title: 'Add family members and set auto-lock',
         content: 'In the app, go to "Users" to invite family members by email. Each person gets the app and can lock or unlock. Under Settings, turn on "Auto-Lock" to have the door automatically lock after a set time (like 1 minute) — a great safety feature if you sometimes forget to lock up.',
-        tip: 'Enable "DoorSense" if available — this detects whether the door is physically open or closed and prevents the lock from engaging if the door isn\'t fully shut.',
+        tip: `Enable "DoorSense" if available — this detects whether the door is physically open or closed and prevents the lock from engaging if the door isn't fully shut.`,
       },
     ],
   },
@@ -269,7 +269,7 @@ Hue works with Amazon Alexa, Google Home, and Apple HomeKit, so you can also con
       },
       {
         title: 'Screw in the bulbs',
-        content: 'Turn off the light switch, then screw the Hue bulbs into your light fixtures like any normal bulb. Important: leave the physical light switch in the ON position at all times after setup. The switch needs to stay on so the bulb always has power. You\'ll control the bulb through the app instead of the physical switch.',
+        content: `Turn off the light switch, then screw the Hue bulbs into your light fixtures like any normal bulb. Important: leave the physical light switch in the ON position at all times after setup. The switch needs to stay on so the bulb always has power. You'll control the bulb through the app instead of the physical switch.`,
         warning: 'If someone turns off the physical light switch, the bulb loses power and becomes unavailable in the app. Consider covering the switch with a guard or label.',
       },
       {
@@ -293,7 +293,7 @@ Hue works with Amazon Alexa, Google Home, and Apple HomeKit, so you can also con
     title: 'How to Find Home Service Providers with Angi',
     excerpt: 'Find verified, reviewed local plumbers, electricians, handymen, and other home service professionals using the Angi app.',
     category: 'app-guides',
-    tags: ['angi', 'angie\'s list', 'home repair', 'contractors', 'handyman', 'home services'],
+    tags: ['angi', `angie's list`, 'home repair', 'contractors', 'handyman', 'home services'],
     readTime: '5 min',
     thumbnailEmoji: '🔧',
     publishedAt: '2026-04-19',
@@ -314,22 +314,22 @@ The app also has an "Angi Services" feature where you can book pre-priced jobs l
       },
       {
         title: 'Search for a service',
-        content: 'In the app, tap the search bar and type what you need — for example, "plumber," "roof repair," or "lawn mowing." You can also browse categories. Angi will show you local professionals with star ratings, number of reviews, and how many years they\'ve been in business.',
+        content: `In the app, tap the search bar and type what you need — for example, "plumber," "roof repair," or "lawn mowing." You can also browse categories. Angi will show you local professionals with star ratings, number of reviews, and how many years they've been in business.`,
         tip: 'Sort results by "Highest Rated" to see the most trusted local pros first.',
       },
       {
         title: 'Read reviews carefully',
-        content: 'Tap on a pro\'s profile to read customer reviews. Look at both the overall star rating and the number of reviews — a 4.8 star rating with 200 reviews is more trustworthy than a 5.0 star rating with 3 reviews. Check if they have verified licenses for your state.',
+        content: `Tap on a pro's profile to read customer reviews. Look at both the overall star rating and the number of reviews — a 4.8 star rating with 200 reviews is more trustworthy than a 5.0 star rating with 3 reviews. Check if they have verified licenses for your state.`,
         tip: 'Angi shows which reviews are from verified, confirmed jobs — these are the most trustworthy.',
       },
       {
         title: 'Request a quote',
-        content: 'Tap "Request a Quote" on a pro\'s profile. Describe your project in as much detail as possible — include the size of the job, what materials might be needed, and any urgency. Request quotes from 2-3 different pros to compare prices.',
-        warning: 'Never pay the full project cost upfront. A standard deposit of 25-33% is normal; the rest should be paid when the work is complete and you\'re satisfied.',
+        content: `Tap "Request a Quote" on a pro's profile. Describe your project in as much detail as possible — include the size of the job, what materials might be needed, and any urgency. Request quotes from 2-3 different pros to compare prices.`,
+        warning: `Never pay the full project cost upfront. A standard deposit of 25-33% is normal; the rest should be paid when the work is complete and you're satisfied.`,
       },
       {
         title: 'Book and confirm',
-        content: 'Once you\'ve chosen a pro, book the appointment through the app. Angi sends a confirmation with the pro\'s contact information. Save this confirmation. After the job is done, leave a review — it helps other homeowners in your community find trustworthy help.',
+        content: `Once you've chosen a pro, book the appointment through the app. Angi sends a confirmation with the pro's contact information. Save this confirmation. After the job is done, leave a review — it helps other homeowners in your community find trustworthy help.`,
       },
     ],
   },
@@ -356,7 +356,7 @@ The app has parental controls, including content ratings you can filter by to av
     steps: [
       {
         title: 'Download Crunchyroll',
-        content: 'Search for "Crunchyroll" in the App Store, Google Play, or your smart TV\'s app store. Download and install the free app. You can also visit crunchyroll.com on a computer.',
+        content: `Search for "Crunchyroll" in the App Store, Google Play, or your smart TV's app store. Download and install the free app. You can also visit crunchyroll.com on a computer.`,
       },
       {
         title: 'Create a free account',
@@ -365,8 +365,8 @@ The app has parental controls, including content ratings you can filter by to av
       },
       {
         title: 'Find a show to watch',
-        content: 'Use the search bar to look up a specific show, or tap "Browse" to explore by genre (action, comedy, romance, fantasy, etc.). Tap on any show to see its description, the number of episodes, and whether it\'s available in English dubbed (spoken in English) or subtitled (Japanese audio with English text).',
-        tip: 'If you\'re new to anime, try "My Hero Academia," "Fullmetal Alchemist: Brotherhood," or "Spy x Family" — these are popular with first-time viewers.',
+        content: `Use the search bar to look up a specific show, or tap "Browse" to explore by genre (action, comedy, romance, fantasy, etc.). Tap on any show to see its description, the number of episodes, and whether it's available in English dubbed (spoken in English) or subtitled (Japanese audio with English text).`,
+        tip: `If you're new to anime, try "My Hero Academia," "Fullmetal Alchemist: Brotherhood," or "Spy x Family" — these are popular with first-time viewers.`,
       },
       {
         title: 'Choose subtitles or dubbed',
@@ -408,12 +408,12 @@ If you're planning a trip to another country, have family members who speak anot
       },
       {
         title: 'Start the free trial',
-        content: 'Babbel offers a 20-day free trial. Tap "Try Free" to begin — you don\'t need to enter a credit card. This gives you access to the first course in your chosen language. After the trial, a subscription is required to continue.',
-        tip: 'If you prefer a completely free option, Duolingo offers basic language learning at no cost. Babbel\'s paid model goes deeper into grammar and practical phrases.',
+        content: `Babbel offers a 20-day free trial. Tap "Try Free" to begin — you don't need to enter a credit card. This gives you access to the first course in your chosen language. After the trial, a subscription is required to continue.`,
+        tip: `If you prefer a completely free option, Duolingo offers basic language learning at no cost. Babbel's paid model goes deeper into grammar and practical phrases.`,
       },
       {
         title: 'Take your first lesson',
-        content: 'Each lesson starts by introducing vocabulary through pictures and audio. You\'ll hear a native speaker say a word, see its spelling, and then practice using it in short exercises — matching, fill-in-the-blank, and speaking practice. Lessons are 10-15 minutes and can be paused at any time.',
+        content: `Each lesson starts by introducing vocabulary through pictures and audio. You'll hear a native speaker say a word, see its spelling, and then practice using it in short exercises — matching, fill-in-the-blank, and speaking practice. Lessons are 10-15 minutes and can be paused at any time.`,
         tip: 'Turn on the speaking exercises (microphone icon) so you can practice pronunciation. Babbel will tell you when your pronunciation is close to correct.',
       },
       {
@@ -422,7 +422,7 @@ If you're planning a trip to another country, have family members who speak anot
       },
       {
         title: 'Explore different course types',
-        content: 'After finishing beginner lessons, explore Babbel\'s other content: podcasts in your target language, grammar review courses, and themed vocabulary sets (travel phrases, food vocabulary, business language). Tap "Learn" at the bottom of the screen and scroll to see all available content.',
+        content: `After finishing beginner lessons, explore Babbel's other content: podcasts in your target language, grammar review courses, and themed vocabulary sets (travel phrases, food vocabulary, business language). Tap "Learn" at the bottom of the screen and scroll to see all available content.`,
       },
     ],
   },
@@ -450,7 +450,7 @@ Citizen does not replace calling 911 in an emergency — it's an information too
       {
         title: 'Download and install Citizen',
         content: 'Search for "Citizen" in the App Store or Google Play. Download and open the free app. On iPhone, Citizen is listed as "Citizen — Safety Alerts." When first opening, allow the app to use your location so it can show alerts near you.',
-        tip: 'Choose "Always Allow" location access so Citizen can alert you even when the app isn\'t open.',
+        tip: `Choose "Always Allow" location access so Citizen can alert you even when the app isn't open.`,
       },
       {
         title: 'Create an account',
@@ -458,8 +458,8 @@ Citizen does not replace calling 911 in an emergency — it's an information too
       },
       {
         title: 'Set your alert radius',
-        content: 'Go to Settings → Notifications and set your alert radius — the distance around your home address that will trigger alerts. A half-mile to 1-mile radius is good for staying informed about what\'s immediately nearby. You can set up to 3 different alert areas (home, work, a family member\'s address).',
-        tip: 'You can add a second location — like a child\'s or parent\'s neighborhood — to receive alerts from areas you care about even when you\'re elsewhere.',
+        content: `Go to Settings → Notifications and set your alert radius — the distance around your home address that will trigger alerts. A half-mile to 1-mile radius is good for staying informed about what's immediately nearby. You can set up to 3 different alert areas (home, work, a family member's address).`,
+        tip: `You can add a second location — like a child's or parent's neighborhood — to receive alerts from areas you care about even when you're elsewhere.`,
       },
       {
         title: 'Read an incident report',
@@ -476,7 +476,7 @@ Citizen does not replace calling 911 in an emergency — it's an information too
   {
     slug: 'neighbors-ring-app-guide',
     title: 'How to Use the Neighbors App for Community Safety',
-    excerpt: 'Ring\'s Neighbors app lets you see safety alerts, share video, and stay connected with your neighborhood watch community.',
+    excerpt: `Ring's Neighbors app lets you see safety alerts, share video, and stay connected with your neighborhood watch community.`,
     category: 'safety-guides',
     tags: ['ring neighbors', 'neighborhood watch', 'community safety', 'ring doorbell', 'local alerts'],
     readTime: '5 min',
@@ -542,7 +542,7 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
     steps: [
       {
         title: 'Download and create a Nike account',
-        content: 'Search for "Nike Run Club" in the App Store or Google Play. Download the free app. You\'ll need a free Nike account — tap "Join Us" and sign up with your email, or sign in with Apple or Google. Your account stores your run history across devices.',
+        content: `Search for "Nike Run Club" in the App Store or Google Play. Download the free app. You'll need a free Nike account — tap "Join Us" and sign up with your email, or sign in with Apple or Google. Your account stores your run history across devices.`,
       },
       {
         title: 'Set up your profile',
@@ -556,7 +556,7 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
       {
         title: 'Try a Guided Run',
         content: 'Tap "Guided Runs" from the home screen to browse audio-guided sessions. Filter by duration (try "20-30 min" to start) or type. Tap a session to preview it. Press Start to begin — the guide will talk you through the workout as you go. There are sessions specifically for beginning walkers and runners.',
-        tip: 'The "First Run" guided session is a great starting point — it\'s designed for people who are new to the app or returning from a break.',
+        tip: `The "First Run" guided session is a great starting point — it's designed for people who are new to the app or returning from a break.`,
       },
       {
         title: 'View your history and milestones',
@@ -569,7 +569,7 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
   {
     slug: 'circle-to-search-android-guide',
     title: 'How to Use Circle to Search on Android',
-    excerpt: 'Circle to Search lets you search anything on your screen — a word, image, or video — without leaving the app you\'re in.',
+    excerpt: `Circle to Search lets you search anything on your screen — a word, image, or video — without leaving the app you're in.`,
     category: 'phone-guides',
     tags: ['circle to search', 'android', 'google search', 'android tips', 'pixel', 'samsung'],
     readTime: '4 min',
@@ -586,11 +586,11 @@ Before Circle to Search existed, finding information about something you saw on 
     steps: [
       {
         title: 'Check if your phone has Circle to Search',
-        content: 'Circle to Search works on Samsung Galaxy phones (S24 series, A54, and newer) and Google Pixel phones (Pixel 6 and newer). Go to your phone\'s Settings → Display → Navigation Bar to see if Circle to Search is listed. If you don\'t see it, your phone may not support this feature yet.',
+        content: `Circle to Search works on Samsung Galaxy phones (S24 series, A54, and newer) and Google Pixel phones (Pixel 6 and newer). Go to your phone's Settings → Display → Navigation Bar to see if Circle to Search is listed. If you don't see it, your phone may not support this feature yet.`,
       },
       {
         title: 'Enable Circle to Search',
-        content: 'On Samsung: Go to Settings → Display → Navigation Bar → Circle to Search, and tap the toggle to turn it on. On Google Pixel: Go to Settings → System → Circle to Search and toggle it on. Once enabled, it\'s ready to use immediately.',
+        content: `On Samsung: Go to Settings → Display → Navigation Bar → Circle to Search, and tap the toggle to turn it on. On Google Pixel: Go to Settings → System → Circle to Search and toggle it on. Once enabled, it's ready to use immediately.`,
       },
       {
         title: 'Activate it',
@@ -598,12 +598,12 @@ Before Circle to Search existed, finding information about something you saw on 
       },
       {
         title: 'Search for something',
-        content: 'Draw a circle around anything on the screen — a product, a person\'s face, a word, a plant, a landmark — anything. You can also tap on a specific item, or drag your finger across text to highlight it. After you release, Google search results appear at the bottom of the screen.',
-        tip: 'You can also tap the microphone icon to ask a voice question about what\'s on your screen, or tap the camera icon to let Google analyze the entire screen automatically.',
+        content: `Draw a circle around anything on the screen — a product, a person's face, a word, a plant, a landmark — anything. You can also tap on a specific item, or drag your finger across text to highlight it. After you release, Google search results appear at the bottom of the screen.`,
+        tip: `You can also tap the microphone icon to ask a voice question about what's on your screen, or tap the camera icon to let Google analyze the entire screen automatically.`,
       },
       {
         title: 'Use the results',
-        content: 'The search results appear in a panel at the bottom. Swipe up to see more results. Tap any result to open it. When you\'re done, swipe down or tap the X to dismiss Circle to Search and return to what you were doing — your app will still be exactly where you left it.',
+        content: `The search results appear in a panel at the bottom. Swipe up to see more results. Tap any result to open it. When you're done, swipe down or tap the X to dismiss Circle to Search and return to what you were doing — your app will still be exactly where you left it.`,
       },
     ],
   },
@@ -630,7 +630,7 @@ The VPN is especially worth using at airports, hotels, coffee shops, and any oth
     steps: [
       {
         title: 'Check if you have Google One',
-        content: 'Open the Google One app (or visit one.google.com) and check your subscription tier. VPN access is included in plans starting at $2.99/month (100 GB storage). If you\'re on the free 15 GB tier, you\'d need to upgrade to access the VPN.',
+        content: `Open the Google One app (or visit one.google.com) and check your subscription tier. VPN access is included in plans starting at $2.99/month (100 GB storage). If you're on the free 15 GB tier, you'd need to upgrade to access the VPN.`,
         tip: 'If you share a Google One plan with family members, all members have access to the VPN benefit.',
       },
       {
@@ -639,12 +639,12 @@ The VPN is especially worth using at airports, hotels, coffee shops, and any oth
       },
       {
         title: 'Turn on the VPN',
-        content: 'Open the Google One app and scroll to the "VPN" section. Tap "Enable VPN." On iPhone, you\'ll be asked to allow a VPN configuration — tap Allow. The VPN will connect within a few seconds. You\'ll see a small key icon in your phone\'s status bar when the VPN is active.',
+        content: `Open the Google One app and scroll to the "VPN" section. Tap "Enable VPN." On iPhone, you'll be asked to allow a VPN configuration — tap Allow. The VPN will connect within a few seconds. You'll see a small key icon in your phone's status bar when the VPN is active.`,
       },
       {
         title: 'Use it on public Wi-Fi',
-        content: 'Make it a habit to turn on the VPN whenever you connect to public Wi-Fi — at coffee shops, airports, hotels, libraries, or anywhere that isn\'t your home network. Turn it off when you return home, since your home network is already much more private than public networks.',
-        warning: 'Some apps and websites may behave differently with a VPN on. If something isn\'t loading properly, try turning off the VPN temporarily to see if that resolves it.',
+        content: `Make it a habit to turn on the VPN whenever you connect to public Wi-Fi — at coffee shops, airports, hotels, libraries, or anywhere that isn't your home network. Turn it off when you return home, since your home network is already much more private than public networks.`,
+        warning: `Some apps and websites may behave differently with a VPN on. If something isn't loading properly, try turning off the VPN temporarily to see if that resolves it.`,
       },
       {
         title: 'Review VPN settings',
@@ -673,12 +673,12 @@ Screen mirroring is great for showing vacation photos on the big screen, video c
     steps: [
       {
         title: 'Check if your TV supports AirPlay',
-        content: 'Go to your TV\'s home screen and look for the AirPlay logo or an AirPlay option in settings. Most Samsung, LG, Sony, and Vizio smart TVs from 2019 or later support AirPlay 2. You can also check by searching your TV\'s brand and model number online.',
-        tip: 'If you have an Apple TV (the small black box) connected to your TV, AirPlay will always work perfectly regardless of your TV\'s age.',
+        content: `Go to your TV's home screen and look for the AirPlay logo or an AirPlay option in settings. Most Samsung, LG, Sony, and Vizio smart TVs from 2019 or later support AirPlay 2. You can also check by searching your TV's brand and model number online.`,
+        tip: `If you have an Apple TV (the small black box) connected to your TV, AirPlay will always work perfectly regardless of your TV's age.`,
       },
       {
         title: 'Connect your iPhone to the same Wi-Fi',
-        content: 'For AirPlay to work wirelessly, your iPhone and TV must be on the same Wi-Fi network. On your iPhone, go to Settings → Wi-Fi and confirm the network name. On your TV, confirm it\'s connected to the same network in its Network Settings.',
+        content: `For AirPlay to work wirelessly, your iPhone and TV must be on the same Wi-Fi network. On your iPhone, go to Settings → Wi-Fi and confirm the network name. On your TV, confirm it's connected to the same network in its Network Settings.`,
       },
       {
         title: 'Open Control Center',
@@ -686,12 +686,12 @@ Screen mirroring is great for showing vacation photos on the big screen, video c
       },
       {
         title: 'Select your TV',
-        content: 'Tap "Screen Mirroring" and wait a few seconds. Your TV should appear in the list of available devices. Tap your TV\'s name. If prompted on the TV screen, enter the passcode shown on the TV into your iPhone.',
-        tip: 'If your TV doesn\'t appear, make sure both devices are on the same Wi-Fi network and try toggling Wi-Fi off and on on your iPhone.',
+        content: `Tap "Screen Mirroring" and wait a few seconds. Your TV should appear in the list of available devices. Tap your TV's name. If prompted on the TV screen, enter the passcode shown on the TV into your iPhone.`,
+        tip: `If your TV doesn't appear, make sure both devices are on the same Wi-Fi network and try toggling Wi-Fi off and on on your iPhone.`,
       },
       {
         title: 'Use the cable method (for older TVs)',
-        content: 'If your TV doesn\'t support AirPlay, buy a Lightning to HDMI adapter (about $10-$15) or USB-C to HDMI adapter at Amazon, Best Buy, or any electronics store. Plug one end into your iPhone and the other into an HDMI port on your TV. Switch the TV to the correct HDMI input and your screen will appear automatically.',
+        content: `If your TV doesn't support AirPlay, buy a Lightning to HDMI adapter (about $10-$15) or USB-C to HDMI adapter at Amazon, Best Buy, or any electronics store. Plug one end into your iPhone and the other into an HDMI port on your TV. Switch the TV to the correct HDMI input and your screen will appear automatically.`,
         warning: 'Use genuine Apple-certified adapters. Uncertified cheap adapters often overheat or display poor quality video.',
       },
     ],
@@ -700,7 +700,7 @@ Screen mirroring is great for showing vacation photos on the big screen, video c
   {
     slug: 'canva-greeting-cards-guide',
     title: 'How to Make Greeting Cards and Invitations with Canva',
-    excerpt: 'Create beautiful, personalized birthday cards, invitations, and thank-you notes using Canva\'s free templates — no design experience needed.',
+    excerpt: `Create beautiful, personalized birthday cards, invitations, and thank-you notes using Canva's free templates — no design experience needed.`,
     category: 'tips-tricks',
     tags: ['canva', 'greeting cards', 'invitations', 'design', 'birthday card', 'printable'],
     readTime: '6 min',
@@ -719,7 +719,7 @@ Designs you create in Canva are saved to your account automatically, so you can 
     steps: [
       {
         title: 'Open Canva and find a template',
-        content: 'Go to canva.com on your computer, or download the Canva app on your phone. Create a free account with your email or Google account. On the home screen, tap the search bar and type what you\'re looking for — for example, "birthday card," "party invitation," or "thank you card." You\'ll see hundreds of templates.',
+        content: `Go to canva.com on your computer, or download the Canva app on your phone. Create a free account with your email or Google account. On the home screen, tap the search bar and type what you're looking for — for example, "birthday card," "party invitation," or "thank you card." You'll see hundreds of templates.`,
         tip: 'For printed cards, search specifically for "5x7 card" or "4x6 card" to find templates in standard greeting card sizes.',
       },
       {
@@ -770,7 +770,7 @@ To use your Personal Voice with Live Speech, you type on your phone screen and p
       {
         title: 'Record the phrases',
         content: 'The recording session consists of 150 short phrases. Hold your iPhone about 6-8 inches from your mouth in a quiet room. Tap the microphone button and read each phrase clearly and naturally — speak at your normal volume and pace. Tap the checkmark when done with each phrase.',
-        tip: 'You don\'t have to record all 150 phrases in one session. Tap "Done" at any time and come back later — your progress is saved.',
+        tip: `You don't have to record all 150 phrases in one session. Tap "Done" at any time and come back later — your progress is saved.`,
       },
       {
         title: 'Let your phone process the voice',
@@ -779,12 +779,12 @@ To use your Personal Voice with Live Speech, you type on your phone screen and p
       },
       {
         title: 'Set up Live Speech',
-        content: 'Once Personal Voice is ready, go to Settings → Accessibility → Live Speech and toggle it on. Select your Personal Voice from the voice list. You can also add frequently used phrases as shortcuts (like "Could you repeat that?" or "I\'ll need a moment to type").',
+        content: `Once Personal Voice is ready, go to Settings → Accessibility → Live Speech and toggle it on. Select your Personal Voice from the voice list. You can also add frequently used phrases as shortcuts (like "Could you repeat that?" or "I'll need a moment to type").`,
       },
       {
         title: 'Use Live Speech to speak',
-        content: 'To activate Live Speech, triple-click the side button (or Home button on older models). The Live Speech keyboard will appear. Type what you want to say and tap the "Send" button. Your Personal Voice will speak the text through your phone\'s speaker. During phone or FaceTime calls, the voice plays through the call.',
-        tip: 'You can add saved phrases so you don\'t have to type common responses each time. Go to Settings → Accessibility → Live Speech → Phrases to add your most-used phrases.',
+        content: `To activate Live Speech, triple-click the side button (or Home button on older models). The Live Speech keyboard will appear. Type what you want to say and tap the "Send" button. Your Personal Voice will speak the text through your phone's speaker. During phone or FaceTime calls, the voice plays through the call.`,
+        tip: `You can add saved phrases so you don't have to type common responses each time. Go to Settings → Accessibility → Live Speech → Phrases to add your most-used phrases.`,
       },
     ],
   },
@@ -811,7 +811,7 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
     steps: [
       {
         title: 'Find old accounts using your email',
-        content: 'Open Gmail, Outlook, or your email app. Search for common phrases like "welcome to," "verify your email," "confirm your account," or "you have successfully registered." These subject lines reveal services you signed up for. Make a list of any you don\'t actively use.',
+        content: `Open Gmail, Outlook, or your email app. Search for common phrases like "welcome to," "verify your email," "confirm your account," or "you have successfully registered." These subject lines reveal services you signed up for. Make a list of any you don't actively use.`,
         tip: 'Also search your email for "unsubscribe" — marketing emails from services you no longer use often have an unsubscribe link, and many services have a full account deletion option nearby.',
       },
       {
@@ -826,12 +826,12 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
       },
       {
         title: 'Handle difficult cases',
-        content: 'If a service doesn\'t have a self-service deletion option, email their privacy or support team and explicitly request account deletion under your data privacy rights. In the US, California residents have rights under CCPA; if you\'re in Europe, GDPR applies. Many companies will comply when you formally request it.',
+        content: `If a service doesn't have a self-service deletion option, email their privacy or support team and explicitly request account deletion under your data privacy rights. In the US, California residents have rights under CCPA; if you're in Europe, GDPR applies. Many companies will comply when you formally request it.`,
       },
       {
         title: 'Clean up "Sign in with Google/Facebook"',
-        content: 'Go to myaccount.google.com → Security → Third-party apps with account access. You\'ll see every service that has access to your Google account. Click any old service and tap "Remove Access" to revoke their permission. Do the same on Facebook: Settings → Apps and Websites.',
-        tip: 'Revoking app access doesn\'t delete the account, but it does stop the service from accessing your Google or Facebook data going forward.',
+        content: `Go to myaccount.google.com → Security → Third-party apps with account access. You'll see every service that has access to your Google account. Click any old service and tap "Remove Access" to revoke their permission. Do the same on Facebook: Settings → Apps and Websites.`,
+        tip: `Revoking app access doesn't delete the account, but it does stop the service from accessing your Google or Facebook data going forward.`,
       },
     ],
   },
@@ -860,21 +860,21 @@ The Quick Settings panel looks slightly different depending on your Android phon
       },
       {
         title: 'Enter edit mode',
-        content: 'Look for an edit button — it\'s usually a pencil icon, a grid icon, or the word "Edit" near the bottom of the expanded Quick Settings panel. Tap it to enter editing mode. On Samsung phones, tap the three vertical dots and choose "Edit buttons."',
+        content: `Look for an edit button — it's usually a pencil icon, a grid icon, or the word "Edit" near the bottom of the expanded Quick Settings panel. Tap it to enter editing mode. On Samsung phones, tap the three vertical dots and choose "Edit buttons."`,
       },
       {
         title: 'Add new tiles',
-        content: 'In edit mode, you\'ll see all your current active tiles at the top, and a list of available tiles below. To add a new tile (like flashlight, hotspot, or screenshot), press and hold it, then drag it up into the active tiles area. Place it where you want it in the order.',
-        tip: 'The first 4-6 tiles are the ones visible without expanding the panel. Put your most-used shortcuts here so they\'re always one swipe away.',
+        content: `In edit mode, you'll see all your current active tiles at the top, and a list of available tiles below. To add a new tile (like flashlight, hotspot, or screenshot), press and hold it, then drag it up into the active tiles area. Place it where you want it in the order.`,
+        tip: `The first 4-6 tiles are the ones visible without expanding the panel. Put your most-used shortcuts here so they're always one swipe away.`,
       },
       {
         title: 'Remove and rearrange',
-        content: 'To remove a tile you don\'t use, press and hold it in the active area and drag it down to the available tiles section. To rearrange the order, press and hold any tile and drag it to a new position. Release to drop it in place.',
+        content: `To remove a tile you don't use, press and hold it in the active area and drag it down to the available tiles section. To rearrange the order, press and hold any tile and drag it to a new position. Release to drop it in place.`,
       },
       {
         title: 'Save and use',
-        content: 'When you\'re done, tap "Done" or tap the back arrow to exit edit mode. Your new Quick Settings layout is saved immediately. Swipe down to see your customized panel and test your new tiles.',
-        tip: 'Quick Tip: add the "Flashlight" tile to your first position — it\'s one of the most-used Quick Settings and having it first saves time when you need it in the dark.',
+        content: `When you're done, tap "Done" or tap the back arrow to exit edit mode. Your new Quick Settings layout is saved immediately. Swipe down to see your customized panel and test your new tiles.`,
+        tip: `Quick Tip: add the "Flashlight" tile to your first position — it's one of the most-used Quick Settings and having it first saves time when you need it in the dark.`,
       },
     ],
   },
@@ -882,7 +882,7 @@ The Quick Settings panel looks slightly different depending on your Android phon
   {
     slug: 'iphone-live-voicemail-guide',
     title: 'How to Use iPhone Live Voicemail',
-    excerpt: 'Live Voicemail shows you a real-time text transcript of a voicemail as it\'s being left, so you can decide whether to pick up.',
+    excerpt: `Live Voicemail shows you a real-time text transcript of a voicemail as it's being left, so you can decide whether to pick up.`,
     category: 'phone-guides',
     tags: ['live voicemail', 'iphone', 'voicemail', 'phone calls', 'iOS 17', 'call screening'],
     readTime: '4 min',
@@ -901,15 +901,15 @@ Live Voicemail is turned on by default in iOS 17 and later — you likely alread
     steps: [
       {
         title: 'Check if Live Voicemail is enabled',
-        content: 'Go to Settings → Phone → Live Voicemail and confirm the toggle is turned on. This feature is on by default in iOS 17 and later. If you don\'t see "Live Voicemail" in your Phone settings, update your iPhone to the latest iOS version.',
+        content: `Go to Settings → Phone → Live Voicemail and confirm the toggle is turned on. This feature is on by default in iOS 17 and later. If you don't see "Live Voicemail" in your Phone settings, update your iPhone to the latest iOS version.`,
       },
       {
         title: 'Let a call go to voicemail',
-        content: 'When you receive a call you don\'t want to answer right away, press the volume down button or tap "Decline" to send it to voicemail. The call goes to voicemail while your phone screen shows the Live Voicemail view.',
+        content: `When you receive a call you don't want to answer right away, press the volume down button or tap "Decline" to send it to voicemail. The call goes to voicemail while your phone screen shows the Live Voicemail view.`,
       },
       {
         title: 'Read the transcription',
-        content: 'As the caller leaves their message, the words appear on your screen in real time — just like watching a text conversation. You can read what they\'re saying as they say it. The transcription is displayed large and clearly so you can read it at a glance.',
+        content: `As the caller leaves their message, the words appear on your screen in real time — just like watching a text conversation. You can read what they're saying as they say it. The transcription is displayed large and clearly so you can read it at a glance.`,
       },
       {
         title: 'Pick up if needed',

@@ -4,7 +4,7 @@ export const guidesBatch27: Guide[] = [
   {
     slug: 'mint-mobile-plan-guide',
     title: 'What Is Mint Mobile and How Does Prepaid Wireless Work?',
-    excerpt: 'Mint Mobile offers plans starting at $15/month on T-Mobile\'s network — with no contracts. Here\'s what prepaid wireless means and whether Mint is right for you.',
+    excerpt: `Mint Mobile offers plans starting at $15/month on T-Mobile's network — with no contracts. Here's what prepaid wireless means and whether Mint is right for you.`,
     category: 'essential-skills',
     tags: ['Mint Mobile', 'prepaid wireless', 'phone plan', 'savings', 'T-Mobile'],
     readTime: '5 min',
@@ -25,7 +25,7 @@ Mint Mobile is owned by T-Mobile but operates as a separate brand with its own p
     steps: [
       {
         title: 'Check T-Mobile Coverage in Your Area',
-        content: 'Go to t-mobile.com/coverage and enter your home address and places you frequently travel. Mint Mobile uses T-Mobile\'s exact network. If T-Mobile coverage is marked as "Excellent" or "Good" in your key areas, Mint will work well for you.',
+        content: `Go to t-mobile.com/coverage and enter your home address and places you frequently travel. Mint Mobile uses T-Mobile's exact network. If T-Mobile coverage is marked as "Excellent" or "Good" in your key areas, Mint will work well for you.`,
       },
       {
         title: 'Choose a Plan',
@@ -51,7 +51,7 @@ Mint Mobile is owned by T-Mobile but operates as a separate brand with its own p
   {
     slug: 'esim-setup-guide',
     title: 'What Is an eSIM and How Do You Set One Up?',
-    excerpt: 'An eSIM is a built-in digital SIM that lets you switch carriers or add a plan without a physical SIM card. Here\'s what it is and how to use it.',
+    excerpt: `An eSIM is a built-in digital SIM that lets you switch carriers or add a plan without a physical SIM card. Here's what it is and how to use it.`,
     category: 'phone-guides',
     tags: ['eSIM', 'SIM card', 'iPhone', 'Android', 'carrier'],
     readTime: '5 min',
@@ -97,7 +97,7 @@ One important caveat: not all phone plans support eSIM, and some carriers charge
   {
     slug: 'mesh-wifi-guide',
     title: 'What Is Mesh Wi-Fi and Do You Need It at Home?',
-    excerpt: 'Mesh Wi-Fi systems eliminate dead zones by using multiple small routers that work together. Here\'s what mesh Wi-Fi is, when it helps, and what to look for.',
+    excerpt: `Mesh Wi-Fi systems eliminate dead zones by using multiple small routers that work together. Here's what mesh Wi-Fi is, when it helps, and what to look for.`,
     category: 'internet-connectivity',
     tags: ['mesh Wi-Fi', 'router', 'Wi-Fi', 'dead zones', 'home network'],
     readTime: '5 min',
@@ -122,7 +122,7 @@ Setup for most mesh systems is done entirely through a smartphone app — the ap
       },
       {
         title: 'Choose a Mesh System',
-        content: 'Amazon Eero is the most popular beginner choice — the Eero 6 3-pack covers about 5,000 sq ft and setup is through the Amazon app. Google Nest WiFi Pro is a strong alternative for Google account users. Check coverage specifications to confirm the system covers your home\'s square footage.',
+        content: `Amazon Eero is the most popular beginner choice — the Eero 6 3-pack covers about 5,000 sq ft and setup is through the Amazon app. Google Nest WiFi Pro is a strong alternative for Google account users. Check coverage specifications to confirm the system covers your home's square footage.`,
         tip: 'Buy a 3-pack rather than a 2-pack if your home is over 2,500 square feet or has multiple floors.',
       },
       {
@@ -132,7 +132,7 @@ Setup for most mesh systems is done entirely through a smartphone app — the ap
       },
       {
         title: 'Set Up Through the Manufacturer App',
-        content: 'Download the system\'s app (Eero app, Google Home app, etc.). Open the app and follow the guided setup. The app tells you where to place nodes for best coverage, guides you through connecting each unit, and creates your network name and password.',
+        content: `Download the system's app (Eero app, Google Home app, etc.). Open the app and follow the guided setup. The app tells you where to place nodes for best coverage, guides you through connecting each unit, and creates your network name and password.`,
       },
       {
         title: 'Keep Your Old Network Name and Password',
@@ -143,7 +143,7 @@ Setup for most mesh systems is done entirely through a smartphone app — the ap
   {
     slug: 'wifi-extender-setup',
     title: 'How to Set Up a Wi-Fi Range Extender to Eliminate Dead Zones',
-    excerpt: 'A Wi-Fi range extender boosts your existing signal into rooms where it is weak. Here\'s how to place and set one up for the best results.',
+    excerpt: `A Wi-Fi range extender boosts your existing signal into rooms where it is weak. Here's how to place and set one up for the best results.`,
     category: 'internet-connectivity',
     tags: ['Wi-Fi extender', 'range extender', 'Wi-Fi booster', 'dead zones', 'internet'],
     readTime: '5 min',
@@ -174,23 +174,23 @@ Placement is the most important factor in getting good results from an extender.
       },
       {
         title: 'Set Up Without WPS (Using a Browser)',
-        content: 'Connect your phone or laptop to the extender\'s temporary Wi-Fi network (listed as the extender\'s model name, e.g., "TP-LINK_EXTENDER"). Open a browser and go to the setup address shown in the extender\'s manual (often 192.168.0.254 or tplinkwifi.net). Follow the setup wizard to select your main Wi-Fi network and enter its password.',
+        content: `Connect your phone or laptop to the extender's temporary Wi-Fi network (listed as the extender's model name, e.g., "TP-LINK_EXTENDER"). Open a browser and go to the setup address shown in the extender's manual (often 192.168.0.254 or tplinkwifi.net). Follow the setup wizard to select your main Wi-Fi network and enter its password.`,
       },
       {
         title: 'Connect Devices to the Extender Network',
-        content: 'The extender creates a new Wi-Fi network, usually named "[YourNetworkName]_EXT." Go to your device\'s Wi-Fi settings and connect to the extender network when you are in the extended coverage area. Use the same password as your main network.',
+        content: `The extender creates a new Wi-Fi network, usually named "[YourNetworkName]_EXT." Go to your device's Wi-Fi settings and connect to the extender network when you are in the extended coverage area. Use the same password as your main network.`,
       },
       {
         title: 'Optimize Placement for Best Signal',
-        content: 'After setup, check the extender\'s signal indicator light. Green usually means good connection to the router. Amber or red means weak connection — move the extender closer to the router. Aim for the green zone while still reaching the dead zone.',
-        tip: 'Test by bringing your phone to the previously weak area — you should now see the extender\'s network and get a stronger, more stable connection.',
+        content: `After setup, check the extender's signal indicator light. Green usually means good connection to the router. Amber or red means weak connection — move the extender closer to the router. Aim for the green zone while still reaching the dead zone.`,
+        tip: `Test by bringing your phone to the previously weak area — you should now see the extender's network and get a stronger, more stable connection.`,
       },
     ],
   },
   {
     slug: 'bitwarden-guide',
     title: 'How to Set Up Bitwarden — the Free, Secure Password Manager',
-    excerpt: 'Bitwarden is a free, open-source password manager that stores all your passwords in one secure vault. Here\'s how to set it up on your phone and computer.',
+    excerpt: `Bitwarden is a free, open-source password manager that stores all your passwords in one secure vault. Here's how to set it up on your phone and computer.`,
     category: 'safety-guides',
     tags: ['Bitwarden', 'password manager', 'security', 'passwords', 'free'],
     readTime: '6 min',
@@ -212,7 +212,7 @@ The one thing to do first: create a strong master password that you will remembe
       {
         title: 'Create a Free Bitwarden Account',
         content: 'Go to bitwarden.com → "Get Started Free." Enter your email address and create a strong master password — at least 12 characters, mixing letters, numbers, and symbols. Write this master password down and store it somewhere safe offline — if you forget it, Bitwarden cannot recover your vault.',
-        warning: 'Your master password is never sent to Bitwarden\'s servers. If you forget it, there is no recovery option. Store a written copy somewhere secure.',
+        warning: `Your master password is never sent to Bitwarden's servers. If you forget it, there is no recovery option. Store a written copy somewhere secure.`,
       },
       {
         title: 'Install the Browser Extension',
@@ -230,7 +230,7 @@ The one thing to do first: create a strong master password that you will remembe
       {
         title: 'Let Bitwarden Fill In Passwords Automatically',
         content: 'When you visit a login page, click the Bitwarden browser extension icon — it shows matching logins for that site. Click the correct entry to auto-fill your username and password. On mobile, tap the key icon above the keyboard to trigger Bitwarden autofill.',
-        tip: 'Use Bitwarden\'s password generator to create strong unique passwords for new accounts: in the extension, tap the "Generator" icon to create a random, strong password — then save it to Bitwarden immediately.',
+        tip: `Use Bitwarden's password generator to create strong unique passwords for new accounts: in the extension, tap the "Generator" icon to create a random, strong password — then save it to Bitwarden immediately.`,
       },
     ],
   },
@@ -270,7 +270,7 @@ Before diving into complex fixes, always try the simplest steps first: turn Blue
       {
         title: 'Restart Both Devices',
         content: 'Restart your phone (or computer) and the Bluetooth device. Restarting clears software glitches that can prevent connections. After both restart, attempt to pair again.',
-        tip: 'For headphones that seem permanently stuck, some models have a factory reset button — check the manual. This clears all paired devices from the headphone\'s memory.',
+        tip: `For headphones that seem permanently stuck, some models have a factory reset button — check the manual. This clears all paired devices from the headphone's memory.`,
       },
       {
         title: 'Check for Interference',
@@ -282,7 +282,7 @@ Before diving into complex fixes, always try the simplest steps first: turn Blue
   {
     slug: 'streaming-buffering-fix',
     title: 'How to Fix Streaming Buffering and Loading Issues',
-    excerpt: 'Video keeps pausing to load? Here\'s how to diagnose and fix buffering on Netflix, Hulu, YouTube, and other streaming services.',
+    excerpt: `Video keeps pausing to load? Here's how to diagnose and fix buffering on Netflix, Hulu, YouTube, and other streaming services.`,
     category: 'internet-connectivity',
     tags: ['streaming', 'buffering', 'Netflix', 'Wi-Fi', 'fix'],
     readTime: '5 min',
@@ -320,7 +320,7 @@ The most impactful fix for most households: physically move the router closer to
       },
       {
         title: 'Lower the Streaming Quality',
-        content: 'In the streaming app\'s settings, reduce video quality from 4K or "Auto" to 1080p (HD) or even 720p. Lower quality requires less bandwidth and buffers less. For Netflix: Settings (profile icon) → Playback Settings → choose a lower quality. This is a temporary measure but can immediately stop buffering.',
+        content: `In the streaming app's settings, reduce video quality from 4K or "Auto" to 1080p (HD) or even 720p. Lower quality requires less bandwidth and buffers less. For Netflix: Settings (profile icon) → Playback Settings → choose a lower quality. This is a temporary measure but can immediately stop buffering.`,
         warning: 'If the speed test shows your internet speed is below 5 Mbps even when connected directly, the issue may be with your internet plan itself — contact your ISP.',
       },
     ],
@@ -328,7 +328,7 @@ The most impactful fix for most households: physically move the router closer to
   {
     slug: 'restart-router-guide',
     title: 'When and How to Restart Your Home Router',
-    excerpt: 'Restarting your router fixes many internet problems — slow speeds, devices not connecting, and random dropouts. Here\'s how to do it correctly and when it helps.',
+    excerpt: `Restarting your router fixes many internet problems — slow speeds, devices not connecting, and random dropouts. Here's how to do it correctly and when it helps.`,
     category: 'internet-connectivity',
     tags: ['router', 'restart', 'internet', 'Wi-Fi', 'troubleshoot'],
     readTime: '4 min',
@@ -365,7 +365,7 @@ After restarting, allow 2-3 minutes for all devices to reconnect. Some smart hom
       },
       {
         title: 'Set Up Monthly Scheduled Restarts',
-        content: 'Many routers have a scheduled restart feature in their admin settings. Log into your router\'s admin panel (typically by going to 192.168.1.1 in a browser) and look for a scheduled reboot option. Setting a monthly overnight restart keeps your router running smoothly.',
+        content: `Many routers have a scheduled restart feature in their admin settings. Log into your router's admin panel (typically by going to 192.168.1.1 in a browser) and look for a scheduled reboot option. Setting a monthly overnight restart keeps your router running smoothly.`,
         tip: 'A simple smart plug with a timer is another approach — schedule it to cut power to the router for 1 minute at 3 AM on the first day of each month, then restore power automatically.',
       },
     ],
@@ -373,7 +373,7 @@ After restarting, allow 2-3 minutes for all devices to reconnect. Some smart hom
   {
     slug: 'backup-text-messages-iphone',
     title: 'How to Back Up Your Text Messages on iPhone',
-    excerpt: 'Your text messages are stored on your iPhone — if you lose or replace the phone without a backup, they may be gone forever. Here\'s how to save them.',
+    excerpt: `Your text messages are stored on your iPhone — if you lose or replace the phone without a backup, they may be gone forever. Here's how to save them.`,
     category: 'phone-guides',
     tags: ['iPhone', 'text messages', 'backup', 'iCloud', 'Messages'],
     readTime: '5 min',
@@ -393,7 +393,7 @@ An important note: iMessage chats sync through iCloud Messages if enabled, which
       {
         title: 'Enable iCloud Backup',
         content: 'Go to Settings → tap your name → iCloud → iCloud Backup → toggle "iCloud Backup" to on. Tap "Back Up Now" to immediately run a backup. After this, your iPhone backs up automatically every night when plugged in and connected to Wi-Fi.',
-        tip: 'Check the backup status: Settings → your name → iCloud → iCloud Backup → look for "Last Successful Backup" with today\'s date.',
+        tip: `Check the backup status: Settings → your name → iCloud → iCloud Backup → look for "Last Successful Backup" with today's date.`,
       },
       {
         title: 'Enable Messages in iCloud',
@@ -460,8 +460,8 @@ For users who want a permanent, accessible archive of their messages — not jus
   },
   {
     slug: 'gmail-tabs-guide',
-    title: 'Understanding Gmail\'s Category Tabs (Primary, Social, Promotions)',
-    excerpt: 'Gmail automatically sorts your email into tabs — Primary, Social, Promotions, and more. Here\'s how the system works and how to customize it.',
+    title: `Understanding Gmail's Category Tabs (Primary, Social, Promotions)`,
+    excerpt: `Gmail automatically sorts your email into tabs — Primary, Social, Promotions, and more. Here's how the system works and how to customize it.`,
     category: 'communication',
     tags: ['Gmail', 'tabs', 'inbox', 'email organization', 'Primary'],
     readTime: '4 min',
@@ -507,8 +507,8 @@ Even with tabs enabled, the search function in Gmail finds emails across all tab
   },
   {
     slug: 'router-password-change',
-    title: 'How to Change Your Home Router\'s Wi-Fi Password and Admin Password',
-    excerpt: 'Using the default router password is a security risk. Here\'s how to change both your Wi-Fi network password and your router\'s admin login password.',
+    title: `How to Change Your Home Router's Wi-Fi Password and Admin Password`,
+    excerpt: `Using the default router password is a security risk. Here's how to change both your Wi-Fi network password and your router's admin login password.`,
     category: 'safety-guides',
     tags: ['router', 'Wi-Fi password', 'security', 'home network', 'settings'],
     readTime: '5 min',
@@ -528,14 +528,14 @@ After changing your Wi-Fi password, every device in your home will need to recon
 Write your new passwords down and store them somewhere safe — in a drawer, notebook, or password manager. Do not store them on a sticky note attached to the router itself.`,
     steps: [
       {
-        title: 'Find Your Router\'s IP Address',
+        title: `Find Your Router's IP Address`,
         content: 'On a computer connected to your Wi-Fi, open a browser and try typing 192.168.1.1 or 192.168.0.1 in the address bar. The router admin login page appears. If neither works, look at the back or bottom of your router — the admin address is usually printed there.',
         tip: 'On a Mac: Apple menu → System Settings → Network → select Wi-Fi → Details → look for "Router" IP address. On Windows: search "cmd" → type "ipconfig" → look for "Default Gateway."',
       },
       {
         title: 'Log Into the Admin Panel',
         content: 'Enter the admin username and password on the router login page. If you have never changed these, try "admin" for username and "admin," "password," or "1234" for the password. Or look at the back of your router — the default admin credentials are often printed there.',
-        warning: 'If you cannot log in and have never changed the admin password, check the router\'s printed documentation or search "[your router brand and model] default admin password" online.',
+        warning: `If you cannot log in and have never changed the admin password, check the router's printed documentation or search "[your router brand and model] default admin password" online.`,
       },
       {
         title: 'Change the Wi-Fi Password',
@@ -557,7 +557,7 @@ Write your new passwords down and store them somewhere safe — in a drawer, not
   {
     slug: 'guest-wifi-setup',
     title: 'How to Set Up a Guest Wi-Fi Network at Home',
-    excerpt: 'A guest Wi-Fi network gives visitors internet access without exposing your main network devices. Here\'s how to set one up on most home routers.',
+    excerpt: `A guest Wi-Fi network gives visitors internet access without exposing your main network devices. Here's how to set one up on most home routers.`,
     category: 'internet-connectivity',
     tags: ['guest Wi-Fi', 'router', 'network security', 'internet', 'home'],
     readTime: '4 min',
@@ -578,7 +578,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
     steps: [
       {
         title: 'Log Into Your Router Admin Panel',
-        content: 'Open a browser while connected to your home Wi-Fi. Type 192.168.1.1 or 192.168.0.1 in the address bar. Enter your admin username and password. The router\'s control panel opens.',
+        content: `Open a browser while connected to your home Wi-Fi. Type 192.168.1.1 or 192.168.0.1 in the address bar. Enter your admin username and password. The router's control panel opens.`,
         tip: 'If you are unsure of your admin credentials, they may be printed on the router, or refer to our "Change Your Router Password" guide.',
       },
       {
@@ -604,7 +604,7 @@ Setting up a guest network requires logging into your router's admin panel (as d
   {
     slug: 'windows-virtual-desktops',
     title: 'How to Use Windows 11 Virtual Desktops (Task View)',
-    excerpt: 'Windows 11 lets you create multiple desktops to separate your work, personal apps, and projects. Here\'s how to set up and switch between virtual desktops.',
+    excerpt: `Windows 11 lets you create multiple desktops to separate your work, personal apps, and projects. Here's how to set up and switch between virtual desktops.`,
     category: 'windows-guides',
     tags: ['Windows 11', 'virtual desktops', 'Task View', 'productivity', 'organization'],
     readTime: '4 min',
@@ -648,7 +648,7 @@ The keyboard shortcuts are the fastest way to use virtual desktops once you lear
   {
     slug: 'iphone-storage-full',
     title: 'How to Fix "iPhone Storage Is Almost Full"',
-    excerpt: 'Running out of storage on iPhone? Here\'s a step-by-step guide to finding what is taking up space and freeing up gigabytes without deleting what matters.',
+    excerpt: `Running out of storage on iPhone? Here's a step-by-step guide to finding what is taking up space and freeing up gigabytes without deleting what matters.`,
     category: 'phone-guides',
     tags: ['iPhone', 'storage', 'free up space', 'iOS', 'photos'],
     readTime: '6 min',
@@ -683,20 +683,20 @@ A common mistake: deleting apps to free up space, then reinstalling them — eac
       },
       {
         title: 'Clear Streaming App Caches',
-        content: 'Netflix, Hulu, Spotify, and podcast apps store downloaded content on your phone. In each app\'s settings, find "Downloads" and delete content you have already watched or listened to. Spotify: Settings → Storage → Delete Cache. Podcast app: delete individual downloaded episodes.',
+        content: `Netflix, Hulu, Spotify, and podcast apps store downloaded content on your phone. In each app's settings, find "Downloads" and delete content you have already watched or listened to. Spotify: Settings → Storage → Delete Cache. Podcast app: delete individual downloaded episodes.`,
         tip: 'Streaming apps can each use 1-5 GB for downloaded content. Review each one regularly.',
       },
       {
         title: 'Review and Delete Large Messages',
         content: 'In iPhone Storage, scroll to "Messages" and tap it. Look for "Review Large Attachments" — photos, videos, and GIFs shared in messages accumulate quickly. Scroll through and delete attachments you no longer need. This often frees 1-3 GB.',
-        tip: 'You can also go to a specific Messages conversation, tap the person\'s name at the top → "i" → "Photos" to see and delete all media from that conversation.',
+        tip: `You can also go to a specific Messages conversation, tap the person's name at the top → "i" → "Photos" to see and delete all media from that conversation.`,
       },
     ],
   },
   {
     slug: 'android-storage-guide',
     title: 'How to Free Up Storage Space on Your Android Phone',
-    excerpt: 'Android running out of space? Here\'s how to identify what\'s taking up storage and clear gigabytes without losing anything important.',
+    excerpt: `Android running out of space? Here's how to identify what's taking up storage and clear gigabytes without losing anything important.`,
     category: 'phone-guides',
     tags: ['Android', 'storage', 'free up space', 'photos', 'apps'],
     readTime: '5 min',
@@ -744,7 +744,7 @@ Unlike iPhone, many Android phones have a microSD card slot that allows you to a
   {
     slug: 'laptop-battery-tips',
     title: 'How to Extend Your Laptop Battery Life',
-    excerpt: 'Simple settings and habits can double your laptop\'s battery life on a single charge. Here\'s what actually makes a difference on Windows and Mac.',
+    excerpt: `Simple settings and habits can double your laptop's battery life on a single charge. Here's what actually makes a difference on Windows and Mac.`,
     category: 'essential-skills',
     tags: ['laptop', 'battery', 'Windows', 'Mac', 'power saving'],
     readTime: '5 min',
@@ -789,7 +789,7 @@ Screen brightness is consistently the most impactful single setting. Reducing br
   {
     slug: 'iphone-recovery-mode',
     title: 'What Is iPhone Recovery Mode and When to Use It',
-    excerpt: 'Recovery mode is an emergency tool for updating or restoring an iPhone that won\'t turn on, is stuck, or has a forgotten passcode. Here\'s how to use it safely.',
+    excerpt: `Recovery mode is an emergency tool for updating or restoring an iPhone that won't turn on, is stuck, or has a forgotten passcode. Here's how to use it safely.`,
     category: 'phone-guides',
     tags: ['iPhone', 'recovery mode', 'restore', 'fix', 'iOS'],
     readTime: '5 min',
@@ -812,7 +812,7 @@ Entering recovery mode requires a computer and a cable. If you do not have a com
       },
       {
         title: 'Prepare Your Computer',
-        content: 'Connect your phone to your computer using a USB cable. On Mac (macOS Catalina or later): open Finder. On Mac (older): open iTunes. On Windows: open iTunes (download from Apple\'s website if not installed). Make sure the software is updated.',
+        content: `Connect your phone to your computer using a USB cable. On Mac (macOS Catalina or later): open Finder. On Mac (older): open iTunes. On Windows: open iTunes (download from Apple's website if not installed). Make sure the software is updated.`,
       },
       {
         title: 'Enter Recovery Mode',
@@ -833,7 +833,7 @@ Entering recovery mode requires a computer and a cable. If you do not have a com
   {
     slug: 'android-safe-mode',
     title: 'How to Start Android in Safe Mode to Fix App Problems',
-    excerpt: 'Android Safe Mode runs without third-party apps, which helps identify whether a downloaded app is causing crashes or slowdowns. Here\'s how to use it.',
+    excerpt: `Android Safe Mode runs without third-party apps, which helps identify whether a downloaded app is causing crashes or slowdowns. Here's how to use it.`,
     category: 'phone-guides',
     tags: ['Android', 'safe mode', 'troubleshoot', 'apps', 'fix'],
     readTime: '4 min',
@@ -861,7 +861,7 @@ Your phone shows "Safe mode" in the bottom left corner of the screen when safe m
       },
       {
         title: 'Test the Problem in Safe Mode',
-        content: 'In safe mode, try to reproduce the problem that was happening. If the crash, slowdown, or issue does not occur in safe mode, a downloaded app is causing the problem. If the problem still occurs, the issue is in the phone\'s base software or hardware.',
+        content: `In safe mode, try to reproduce the problem that was happening. If the crash, slowdown, or issue does not occur in safe mode, a downloaded app is causing the problem. If the problem still occurs, the issue is in the phone's base software or hardware.`,
       },
       {
         title: 'Identify the Problem App',
@@ -902,7 +902,7 @@ Before buying any new hardware, try repositioning your router and switching to 5
       {
         title: 'Move the Router to a Central Location',
         content: 'Place the router as close to the center of your home as possible, elevated off the floor (a shelf or table works well). Avoid corners, closets, and areas surrounded by thick walls. The router should be out in the open — not hidden in a cabinet or behind furniture.',
-        tip: 'You can extend the router\'s cable run or use a powerline ethernet adapter to move the router to a better location even if the modem jack is in an inconvenient spot.',
+        tip: `You can extend the router's cable run or use a powerline ethernet adapter to move the router to a better location even if the modem jack is in an inconvenient spot.`,
       },
       {
         title: 'Switch to 5 GHz Wi-Fi',
@@ -919,7 +919,7 @@ Before buying any new hardware, try repositioning your router and switching to 5
       },
       {
         title: 'Check for Firmware Updates',
-        content: 'Router manufacturers release firmware updates that improve performance and fix issues. Log into your router\'s admin panel → look for "Firmware Update" or "Software Update" under Advanced settings. Install any available updates. Enable automatic updates if the option exists.',
+        content: `Router manufacturers release firmware updates that improve performance and fix issues. Log into your router's admin panel → look for "Firmware Update" or "Software Update" under Advanced settings. Install any available updates. Enable automatic updates if the option exists.`,
         tip: 'Outdated router firmware is one of the most overlooked reasons for slow Wi-Fi — it is worth checking once per year at minimum.',
       },
     ],

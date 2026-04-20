@@ -44,14 +44,14 @@ Finished designs can be downloaded as image files (JPEG or PNG), printed through
       {
         title: 'Download Your Design',
         content: 'When your design is finished, click the "Share" button (top right) → "Download." Choose PNG or JPEG for photos, or PDF for printable documents. Click "Download" and save the file to your device.',
-        tip: 'To print a card at home, download as PDF and print to your printer. For a professional print, use Canva\'s built-in print service — they mail the finished card directly to you.',
+        tip: `To print a card at home, download as PDF and print to your printer. For a professional print, use Canva's built-in print service — they mail the finished card directly to you.`,
       },
     ],
   },
   {
     slug: 'facetime-android-link-guide',
     title: 'How to Video Call Android and Windows Users Using FaceTime',
-    excerpt: 'FaceTime links let you invite anyone — Android or Windows users — to a FaceTime video call. Here\'s how to create a link and share it.',
+    excerpt: `FaceTime links let you invite anyone — Android or Windows users — to a FaceTime video call. Here's how to create a link and share it.`,
     category: 'communication',
     tags: ['FaceTime', 'video call', 'Android', 'cross-platform', 'iPhone'],
     readTime: '4 min',
@@ -95,7 +95,7 @@ This feature requires iOS 15 or later on the iPhone creating the link. Non-Apple
   {
     slug: 'discord-basics-guide',
     title: 'What Is Discord and How to Use It to Stay Connected with Family',
-    excerpt: 'Discord is a free group communication app popular with families, communities, and hobby groups. Here\'s a plain-English introduction for new users.',
+    excerpt: `Discord is a free group communication app popular with families, communities, and hobby groups. Here's a plain-English introduction for new users.`,
     category: 'communication',
     tags: ['Discord', 'group chat', 'communication', 'family', 'voice chat'],
     readTime: '6 min',
@@ -142,7 +142,7 @@ For families spread across different states or countries, Discord can serve as a
   {
     slug: 'reddit-basics-guide',
     title: 'What Is Reddit and How to Find Helpful Communities',
-    excerpt: 'Reddit is one of the largest websites in the world — a collection of thousands of communities where people share advice, news, and discussions. Here\'s how to use it.',
+    excerpt: `Reddit is one of the largest websites in the world — a collection of thousands of communities where people share advice, news, and discussions. Here's how to use it.`,
     category: 'essential-skills',
     tags: ['Reddit', 'community', 'forums', 'information', 'tips'],
     readTime: '5 min',
@@ -189,7 +189,7 @@ Reddit has communities specifically for seniors (r/seniors), technology help (r/
   {
     slug: 'youtube-captions-guide',
     title: 'How to Turn On Captions and Subtitles for YouTube Videos',
-    excerpt: 'YouTube can display captions on any video — helpful if audio is hard to hear or you\'re watching without sound. Here\'s how to turn them on and customize them.',
+    excerpt: `YouTube can display captions on any video — helpful if audio is hard to hear or you're watching without sound. Here's how to turn them on and customize them.`,
     category: 'entertainment',
     tags: ['YouTube', 'captions', 'subtitles', 'accessibility', 'hearing'],
     readTime: '4 min',
@@ -236,7 +236,7 @@ Automatic captions can be translated in real time — you can watch a Spanish or
   {
     slug: 'voice-dictation-iphone-guide',
     title: 'How to Type by Speaking on iPhone Using Voice Dictation',
-    excerpt: 'iPhone\'s built-in voice dictation lets you speak instead of type — in any app, on any text field. Here\'s how to use it and get accurate results.',
+    excerpt: `iPhone's built-in voice dictation lets you speak instead of type — in any app, on any text field. Here's how to use it and get accurate results.`,
     category: 'phone-guides',
     tags: ['iPhone', 'voice dictation', 'speak to type', 'accessibility', 'iOS'],
     readTime: '4 min',
@@ -267,7 +267,7 @@ Editing dictated text works the same as editing any text — tap where you want 
       {
         title: 'Speak Your Message',
         content: 'When the microphone is active (an audio wave animation appears), speak clearly and naturally. Say your text out loud. Your words appear on screen as you speak. For punctuation, say "period," "comma," "question mark," "exclamation point," or "new paragraph."',
-        tip: 'To dictate a full email: "Dear Maria comma new paragraph I hope you are doing well period I wanted to remind you about Saturday\'s lunch period..."',
+        tip: `To dictate a full email: "Dear Maria comma new paragraph I hope you are doing well period I wanted to remind you about Saturday's lunch period..."`,
       },
       {
         title: 'Stop Dictation',
@@ -283,7 +283,7 @@ Editing dictated text works the same as editing any text — tap where you want 
   {
     slug: 'voice-typing-android-guide',
     title: 'How to Type by Speaking on Android Using Google Voice Typing',
-    excerpt: 'Android\'s built-in voice typing lets you speak instead of type in any app. Here\'s how to use it and get the best results.',
+    excerpt: `Android's built-in voice typing lets you speak instead of type in any app. Here's how to use it and get the best results.`,
     category: 'phone-guides',
     tags: ['Android', 'voice typing', 'speak to type', 'Google', 'accessibility'],
     readTime: '4 min',
@@ -406,8 +406,8 @@ For public events in your area, Facebook's event discovery is useful for finding
       },
       {
         title: 'RSVP to an Event',
-        content: 'Tap an event you are interested in. Tap "Going," "Interested," or "Can\'t Go." "Going" tells the host you plan to attend. "Interested" adds the event to your calendar as a maybe. Once you respond, the event appears in your Events section for easy reference.',
-        tip: 'Tapping "Going" may notify the event creator and show your RSVP to others who are attending, depending on the event\'s privacy settings.',
+        content: `Tap an event you are interested in. Tap "Going," "Interested," or "Can't Go." "Going" tells the host you plan to attend. "Interested" adds the event to your calendar as a maybe. Once you respond, the event appears in your Events section for easy reference.`,
+        tip: `Tapping "Going" may notify the event creator and show your RSVP to others who are attending, depending on the event's privacy settings.`,
       },
       {
         title: 'Create Your Own Event',
@@ -416,14 +416,14 @@ For public events in your area, Facebook's event discovery is useful for finding
       {
         title: 'Invite Friends and Family',
         content: 'After creating your event, tap "Invite" → "Invite Facebook friends." Search for specific people by name and tap their name to invite them. They receive a notification. You can also copy the event link and share it via text message to invite people who are not on Facebook.',
-        tip: 'Post updates to the event wall — important information like parking, what to bring, or schedule changes — by typing in the event\'s "write something" field.',
+        tip: `Post updates to the event wall — important information like parking, what to bring, or schedule changes — by typing in the event's "write something" field.`,
       },
     ],
   },
   {
     slug: 'youtube-shorts-guide',
     title: 'What Are YouTube Shorts and How to Find What You Actually Want',
-    excerpt: 'YouTube Shorts are brief vertical videos. Here\'s what they are, how they differ from regular videos, and how to stop them from taking over your feed.',
+    excerpt: `YouTube Shorts are brief vertical videos. Here's what they are, how they differ from regular videos, and how to stop them from taking over your feed.`,
     category: 'entertainment',
     tags: ['YouTube', 'Shorts', 'video', 'tips', 'settings'],
     readTime: '4 min',
@@ -447,8 +447,8 @@ YouTube does not currently offer an official "disable all Shorts" option in the 
         content: 'YouTube Shorts appear in your feed with a small "Shorts" label and a film reel icon. They are vertical format (tall, not wide). When you tap one, you enter a vertical swipe mode where you can scroll up for the next Short — like TikTok. Tap the X or the back button to exit Shorts mode.',
       },
       {
-        title: 'Tell YouTube You\'re Not Interested',
-        content: 'If a Short appears in your feed and you do not want similar content, tap and hold the Short thumbnail (or tap the three dots next to it). Tap "Not interested" or "Don\'t recommend this channel." This feedback reduces similar Shorts in your recommendations.',
+        title: `Tell YouTube You're Not Interested`,
+        content: `If a Short appears in your feed and you do not want similar content, tap and hold the Short thumbnail (or tap the three dots next to it). Tap "Not interested" or "Don't recommend this channel." This feedback reduces similar Shorts in your recommendations.`,
       },
       {
         title: 'Search for Long-Form Videos Only',
@@ -457,11 +457,11 @@ YouTube does not currently offer an official "disable all Shorts" option in the 
       },
       {
         title: 'Browse the Shorts Tab If You Want Them',
-        content: 'If you want to browse Shorts on purpose, tap the Shorts icon in the bottom navigation bar (the circle with a play button, or a film reel icon). Swipe up to go to the next Short, swipe down to go back. Tap the title or channel name to visit the creator\'s full channel.',
+        content: `If you want to browse Shorts on purpose, tap the Shorts icon in the bottom navigation bar (the circle with a play button, or a film reel icon). Swipe up to go to the next Short, swipe down to go back. Tap the title or channel name to visit the creator's full channel.`,
       },
       {
         title: 'Adjust Recommendations Over Time',
-        content: 'YouTube\'s recommendation algorithm learns from what you watch and engage with. Watch more of the long-form content you enjoy, subscribe to channels you like, and click "Not interested" on content you do not want. Over several weeks, your feed should shift toward your preferred content style.',
+        content: `YouTube's recommendation algorithm learns from what you watch and engage with. Watch more of the long-form content you enjoy, subscribe to channels you like, and click "Not interested" on content you do not want. Over several weeks, your feed should shift toward your preferred content style.`,
         tip: 'Clearing your watch history (Account → Settings → Clear watch history) resets your recommendations if they have drifted far from what you actually want.',
       },
     ],
@@ -469,7 +469,7 @@ YouTube does not currently offer an official "disable all Shorts" option in the 
   {
     slug: 'manage-subscriptions-iphone',
     title: 'How to Review and Cancel App Subscriptions on iPhone',
-    excerpt: 'Subscription charges can add up. Your iPhone keeps a master list of every app subscription you\'re paying for. Here\'s how to find them and cancel any you don\'t need.',
+    excerpt: `Subscription charges can add up. Your iPhone keeps a master list of every app subscription you're paying for. Here's how to find them and cancel any you don't need.`,
     category: 'phone-guides',
     tags: ['iPhone', 'subscriptions', 'cancel', 'App Store', 'money saving'],
     readTime: '4 min',
@@ -516,7 +516,7 @@ This same subscription list is visible from a Mac's App Store or from account.ap
   {
     slug: 'google-play-subscriptions',
     title: 'How to Review and Cancel Android App Subscriptions',
-    excerpt: 'Google Play tracks every subscription you\'ve signed up for through your Android phone. Here\'s how to see them all and cancel any you no longer need.',
+    excerpt: `Google Play tracks every subscription you've signed up for through your Android phone. Here's how to see them all and cancel any you no longer need.`,
     category: 'phone-guides',
     tags: ['Android', 'subscriptions', 'Google Play', 'cancel', 'money saving'],
     readTime: '4 min',
@@ -654,7 +654,7 @@ Shutterfly books regularly go on sale — 40-50% off sales happen most weekends 
   {
     slug: 'compare-streaming-services',
     title: 'The Real Monthly Cost of Streaming Services: A Complete Comparison',
-    excerpt: 'Netflix, Hulu, Disney+, Prime Video, Peacock, Max — how much does it all add up to? Here\'s a plain-English breakdown to help you decide what to keep.',
+    excerpt: `Netflix, Hulu, Disney+, Prime Video, Peacock, Max — how much does it all add up to? Here's a plain-English breakdown to help you decide what to keep.`,
     category: 'entertainment',
     tags: ['streaming', 'Netflix', 'Hulu', 'cost', 'comparison', 'cord cutting'],
     readTime: '6 min',
@@ -709,7 +709,7 @@ The most common advice: maintain one to two subscription services at a time and 
   {
     slug: 'cancel-amazon-prime-guide',
     title: 'How to Cancel Amazon Prime (and What You Lose When You Do)',
-    excerpt: 'Amazon Prime auto-renews annually. Here\'s how to cancel it, what happens to your benefits when you cancel, and whether pausing is a better option.',
+    excerpt: `Amazon Prime auto-renews annually. Here's how to cancel it, what happens to your benefits when you cancel, and whether pausing is a better option.`,
     category: 'app-guides',
     tags: ['Amazon Prime', 'cancel subscription', 'Amazon', 'money saving'],
     readTime: '4 min',
@@ -739,7 +739,7 @@ Amazon also offers a discounted Prime membership for customers who receive gover
       {
         title: 'Choose End or Cancel Immediately',
         content: 'Amazon presents two options: "End Membership" (access continues until the next billing date, no refund) or "Cancel Immediately" (access ends now, and a partial refund may be issued if you have not used Prime benefits recently). "End Membership" is usually the better choice.',
-        tip: 'If your annual renewal is coming up soon, set a calendar reminder to cancel a few days before it renews — this way you get the full year\'s benefit and avoid an unwanted charge.',
+        tip: `If your annual renewal is coming up soon, set a calendar reminder to cancel a few days before it renews — this way you get the full year's benefit and avoid an unwanted charge.`,
       },
       {
         title: 'Confirm Cancellation',
@@ -755,7 +755,7 @@ Amazon also offers a discounted Prime membership for customers who receive gover
   {
     slug: 'iphone-crash-detection',
     title: 'How iPhone Crash Detection Works and How to Set It Up',
-    excerpt: 'iPhone 14 and later can detect a car crash and automatically call 911 if you are unresponsive. Here\'s what it does, how to confirm it\'s on, and how to avoid false alerts.',
+    excerpt: `iPhone 14 and later can detect a car crash and automatically call 911 if you are unresponsive. Here's what it does, how to confirm it's on, and how to avoid false alerts.`,
     category: 'safety-guides',
     tags: ['iPhone', 'crash detection', 'emergency SOS', 'safety', 'iPhone 14'],
     readTime: '4 min',
@@ -787,8 +787,8 @@ Note that Crash Detection works even if your iPhone is in low-power mode or in a
       },
       {
         title: 'Know What to Expect After a Crash',
-        content: 'If Crash Detection activates, your iPhone sounds an alarm and shows a countdown screen. It announces: "It looks like you\'ve been in a crash." You can tap "I\'m OK" to cancel, or tap "Emergency SOS" to call immediately. If no action is taken in 10 seconds, the phone calls 911 automatically.',
-        tip: 'If you are fine and a false alarm occurs, tap "I\'m OK" quickly. If you accidentally trigger the call to 911, stay on the line and explain it was a false alarm — dispatchers are accustomed to this.',
+        content: `If Crash Detection activates, your iPhone sounds an alarm and shows a countdown screen. It announces: "It looks like you've been in a crash." You can tap "I'm OK" to cancel, or tap "Emergency SOS" to call immediately. If no action is taken in 10 seconds, the phone calls 911 automatically.`,
+        tip: `If you are fine and a false alarm occurs, tap "I'm OK" quickly. If you accidentally trigger the call to 911, stay on the line and explain it was a false alarm — dispatchers are accustomed to this.`,
       },
       {
         title: 'Review Medical ID Information',
@@ -800,7 +800,7 @@ Note that Crash Detection works even if your iPhone is in low-power mode or in a
   {
     slug: 'android-emergency-sos-setup',
     title: 'How to Set Up and Use Android Emergency SOS',
-    excerpt: 'Android has a built-in emergency SOS feature — pressing the power button rapidly calls 911 and sends your location to contacts. Here\'s how to set it up.',
+    excerpt: `Android has a built-in emergency SOS feature — pressing the power button rapidly calls 911 and sends your location to contacts. Here's how to set it up.`,
     category: 'safety-guides',
     tags: ['Android', 'Emergency SOS', 'safety', 'emergency', 'Google'],
     readTime: '4 min',
@@ -847,7 +847,7 @@ Nexus and Pixel phones also have a crisis location sharing feature that sends yo
   {
     slug: 'medigap-supplement-guide',
     title: 'What Is Medigap (Medicare Supplement) Insurance?',
-    excerpt: 'Original Medicare covers about 80% of medical costs. Medigap covers much of the rest. Here\'s a plain-English explanation of what it is and how it works.',
+    excerpt: `Original Medicare covers about 80% of medical costs. Medigap covers much of the rest. Here's a plain-English explanation of what it is and how it works.`,
     category: 'government-civic',
     tags: ['Medicare', 'Medigap', 'Medicare Supplement', 'health insurance', 'seniors'],
     readTime: '7 min',
@@ -894,7 +894,7 @@ Medigap does not cover prescription drugs (Part D), dental, vision, or hearing �
   {
     slug: 'phone-plan-comparison-guide',
     title: 'How to Compare Phone Plans and Find a Better Deal',
-    excerpt: 'Phone plans vary dramatically in price. Here\'s how to evaluate what you actually need, compare major carriers and budget alternatives, and save $20-40 a month.',
+    excerpt: `Phone plans vary dramatically in price. Here's how to evaluate what you actually need, compare major carriers and budget alternatives, and save $20-40 a month.`,
     category: 'essential-skills',
     tags: ['phone plan', 'wireless', 'Verizon', 'AT&T', 'T-Mobile', 'savings'],
     readTime: '6 min',
@@ -922,7 +922,7 @@ Approximate current prices (2026): Consumer Cellular $20-35/month, Mint Mobile $
       },
       {
         title: 'Check Your Current Coverage Area',
-        content: 'Go to each carrier\'s coverage map website. Enter your home address and places you frequently travel (relatives\' cities, favorite vacation spots). Make sure the coverage is good everywhere you use your phone. Use Verizon\'s, AT&T\'s, and T-Mobile\'s maps at their official websites.',
+        content: `Go to each carrier's coverage map website. Enter your home address and places you frequently travel (relatives' cities, favorite vacation spots). Make sure the coverage is good everywhere you use your phone. Use Verizon's, AT&T's, and T-Mobile's maps at their official websites.`,
       },
       {
         title: 'Compare MVNO Plans for Your Budget',
@@ -943,7 +943,7 @@ Approximate current prices (2026): Consumer Cellular $20-35/month, Mint Mobile $
   {
     slug: 'consumer-cellular-guide',
     title: 'Is Consumer Cellular Right for You? A Plain-English Guide',
-    excerpt: 'Consumer Cellular is a no-contract carrier on AT&T and T-Mobile\'s networks — popular with seniors for its simple plans, US-based support, and AARP discount.',
+    excerpt: `Consumer Cellular is a no-contract carrier on AT&T and T-Mobile's networks — popular with seniors for its simple plans, US-based support, and AARP discount.`,
     category: 'essential-skills',
     tags: ['Consumer Cellular', 'phone plan', 'MVNO', 'seniors', 'AARP'],
     readTime: '5 min',
@@ -971,7 +971,7 @@ Customer service is available by phone (888-345-5509) Monday-Friday 8 AM - 9 PM 
       },
       {
         title: 'Check if Your Phone Is Compatible',
-        content: 'Visit consumercellular.com → "Bring your own phone" → enter your phone\'s IMEI number. You can find your IMEI in Settings → General → About → IMEI (iPhone) or Settings → About phone → IMEI (Android). The tool tells you if your phone is compatible and which network to use.',
+        content: `Visit consumercellular.com → "Bring your own phone" → enter your phone's IMEI number. You can find your IMEI in Settings → General → About → IMEI (iPhone) or Settings → About phone → IMEI (Android). The tool tells you if your phone is compatible and which network to use.`,
       },
       {
         title: 'Sign Up and Order a SIM Card',
@@ -980,7 +980,7 @@ Customer service is available by phone (888-345-5509) Monday-Friday 8 AM - 9 PM 
       },
       {
         title: 'Transfer Your Phone Number',
-        content: 'During signup, choose "Keep my current number." Provide your current carrier\'s account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer — it typically takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.',
+        content: `During signup, choose "Keep my current number." Provide your current carrier's account number and PIN/password (call your current carrier if you do not know these). Consumer Cellular handles the transfer — it typically takes 4-6 hours. Do not cancel your old plan until the transfer is confirmed complete.`,
         warning: 'Keep your old phone active and do not cancel service until Consumer Cellular confirms your number has been fully transferred. Canceling early can permanently lose your number.',
       },
     ],

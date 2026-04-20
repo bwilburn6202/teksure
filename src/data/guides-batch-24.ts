@@ -54,7 +54,7 @@ The Universal Guide gathers recommendations from all your apps in one place. Loo
   {
     slug: 'android-split-screen-guide',
     title: 'How to Use Split Screen on Android to View Two Apps at Once',
-    excerpt: 'Android lets you run two apps side by side — perfect for reading an article while texting, or watching video while browsing. Here\'s how.',
+    excerpt: `Android lets you run two apps side by side — perfect for reading an article while texting, or watching video while browsing. Here's how.`,
     category: 'phone-guides',
     tags: ['Android', 'split screen', 'multitasking', 'tips', 'productivity'],
     readTime: '4 min',
@@ -100,7 +100,7 @@ When you're done multitasking, merging back to a single app takes one second. Th
   {
     slug: 'usps-informed-delivery-setup',
     title: 'How to Set Up USPS Informed Delivery to See Your Mail Before It Arrives',
-    excerpt: 'USPS Informed Delivery emails you photos of your incoming mail each morning — free. Here\'s how to sign up and start using it.',
+    excerpt: `USPS Informed Delivery emails you photos of your incoming mail each morning — free. Here's how to sign up and start using it.`,
     category: 'government-civic',
     tags: ['USPS', 'mail', 'Informed Delivery', 'government', 'free service'],
     readTime: '5 min',
@@ -148,7 +148,7 @@ This is a completely free service — no credit card, no subscription, no string
   {
     slug: 'schedule-email-gmail-guide',
     title: 'How to Schedule Emails in Gmail to Send at a Later Time',
-    excerpt: 'Write an email now but send it at the perfect moment. Gmail\'s schedule feature lets you pick any date and time for delivery.',
+    excerpt: `Write an email now but send it at the perfect moment. Gmail's schedule feature lets you pick any date and time for delivery.`,
     category: 'communication',
     tags: ['Gmail', 'email', 'schedule', 'tips', 'productivity'],
     readTime: '3 min',
@@ -167,7 +167,7 @@ This feature works the same way whether you are using Gmail on a computer, iPhon
     steps: [
       {
         title: 'Compose Your Email as Normal',
-        content: 'Click "Compose" in Gmail to open a new email. Fill in the recipient\'s address, subject line, and your message. Do not click "Send" yet.',
+        content: `Click "Compose" in Gmail to open a new email. Fill in the recipient's address, subject line, and your message. Do not click "Send" yet.`,
       },
       {
         title: 'Find the Schedule Option',
@@ -220,7 +220,7 @@ Many people wait until they buy a new phone to think about contacts backup, and 
       },
       {
         title: 'Export Contacts as a VCF File',
-        content: 'In the Contacts app, tap the three-dot menu → Settings → Export. Choose "Export to .vcf file." Select where to save it — your phone\'s internal storage or Google Drive. This creates a backup file you can open on any device.',
+        content: `In the Contacts app, tap the three-dot menu → Settings → Export. Choose "Export to .vcf file." Select where to save it — your phone's internal storage or Google Drive. This creates a backup file you can open on any device.`,
         tip: 'Save the VCF file to Google Drive as a permanent off-device backup. This way it survives even if you lose your phone.',
       },
       {
@@ -282,7 +282,7 @@ Copilot is included for free with Windows 11 and works best with a Microsoft acc
   {
     slug: 'chatgpt-everyday-guide',
     title: 'How to Use ChatGPT for Everyday Tasks',
-    excerpt: 'ChatGPT is a free AI that can answer questions, write letters, explain confusing topics, and help plan your day. Here\'s how to get started.',
+    excerpt: `ChatGPT is a free AI that can answer questions, write letters, explain confusing topics, and help plan your day. Here's how to get started.`,
     category: 'ai-guides',
     tags: ['ChatGPT', 'AI', 'OpenAI', 'beginner', 'assistant'],
     readTime: '6 min',
@@ -329,7 +329,7 @@ The free version of ChatGPT (called ChatGPT 4o) is powerful enough for most ever
   {
     slug: 'sling-tv-setup-guide',
     title: 'How to Set Up and Use Sling TV for Live Streaming',
-    excerpt: 'Sling TV is a cable alternative starting at $40 a month with live sports, news, and entertainment — no contract required. Here\'s how to get started.',
+    excerpt: `Sling TV is a cable alternative starting at $40 a month with live sports, news, and entertainment — no contract required. Here's how to get started.`,
     category: 'entertainment',
     tags: ['Sling TV', 'streaming', 'cord cutting', 'live TV', 'cable alternative'],
     readTime: '6 min',
@@ -420,7 +420,7 @@ Live Text does not require an internet connection — the text recognition happe
   {
     slug: 'airtag-vs-tile-compare',
     title: 'AirTag vs Tile: Which Tracker Is Right for You?',
-    excerpt: 'Lost your keys again? AirTag and Tile are small tracking devices that help you find your belongings. Here\'s how they compare so you can pick the best one.',
+    excerpt: `Lost your keys again? AirTag and Tile are small tracking devices that help you find your belongings. Here's how they compare so you can pick the best one.`,
     category: 'essential-skills',
     tags: ['AirTag', 'Tile', 'tracker', 'GPS', 'keys', 'comparison'],
     readTime: '5 min',
@@ -439,7 +439,7 @@ AirTag costs around $29 for one, or $99 for a four-pack. Tile prices range from 
     steps: [
       {
         title: 'Choose Based on Your Phone',
-        content: 'If you have an iPhone: get AirTag. It works natively with Find My, requires no separate app, and has the largest tracking network. If you have an Android phone: get Tile. The Tile app works on Android and iPhone, and Tile\'s network uses both.',
+        content: `If you have an iPhone: get AirTag. It works natively with Find My, requires no separate app, and has the largest tracking network. If you have an Android phone: get Tile. The Tile app works on Android and iPhone, and Tile's network uses both.`,
         tip: 'AirTag only works with iPhone 11 or later running iOS 14.5+. Older iPhones can still use AirTag but without Precision Finding (the feature that points you directly to the item).',
       },
       {
@@ -496,8 +496,8 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
         tip: 'Share your Medisafe profile with a family member or caregiver — they receive a notification if you miss a dose.',
       },
       {
-        title: 'Install Your Hospital\'s Patient App',
-        content: 'Most hospitals and medical groups use a platform called MyChart. Search the App Store or Google Play for "MyChart." Download the app and sign in with your patient portal credentials (ask your doctor\'s office if you do not have them). You can view test results, message your care team, and see upcoming appointments.',
+        title: `Install Your Hospital's Patient App`,
+        content: `Most hospitals and medical groups use a platform called MyChart. Search the App Store or Google Play for "MyChart." Download the app and sign in with your patient portal credentials (ask your doctor's office if you do not have them). You can view test results, message your care team, and see upcoming appointments.`,
       },
       {
         title: 'Add a Borrow Library Books App',
@@ -513,7 +513,7 @@ This guide highlights the most genuinely useful free apps for seniors in 2026, o
   {
     slug: 'windows-11-start-menu',
     title: 'How to Customize the Windows 11 Start Menu',
-    excerpt: 'Windows 11 moved the Start Menu to the center and changed how it works. Here\'s how to pin your favorite apps, reorganize it, and make it feel familiar.',
+    excerpt: `Windows 11 moved the Start Menu to the center and changed how it works. Here's how to pin your favorite apps, reorganize it, and make it feel familiar.`,
     category: 'windows-guides',
     tags: ['Windows 11', 'Start Menu', 'customize', 'tips', 'desktop'],
     readTime: '5 min',
@@ -557,7 +557,7 @@ You can also move the entire taskbar (including the Start button) back to the le
   {
     slug: 'compare-cloud-storage',
     title: 'OneDrive vs Google Drive vs iCloud: Which Cloud Storage Is Best for You?',
-    excerpt: 'Three major cloud storage services, one decision. Here\'s a plain-English comparison to help you pick the right one for your files and photos.',
+    excerpt: `Three major cloud storage services, one decision. Here's a plain-English comparison to help you pick the right one for your files and photos.`,
     category: 'essential-skills',
     tags: ['cloud storage', 'OneDrive', 'Google Drive', 'iCloud', 'comparison'],
     readTime: '6 min',
@@ -587,7 +587,7 @@ The bottom line: use OneDrive if your main device is a Windows PC. Use Google Dr
       {
         title: 'Enable Automatic Photo Backup',
         content: 'All three services can automatically back up your photos. OneDrive: open the OneDrive app on your phone → Settings → Camera upload → On. Google Photos: open the app → Profile icon → Photo settings → Backup → On. iCloud Photos: iPhone → Settings → Photos → iCloud Photos → On.',
-        tip: 'Turn on automatic backup over Wi-Fi only (not cellular data) to avoid using your phone\'s data plan.',
+        tip: `Turn on automatic backup over Wi-Fi only (not cellular data) to avoid using your phone's data plan.`,
       },
       {
         title: 'Access Your Files from Any Device',
@@ -595,7 +595,7 @@ The bottom line: use OneDrive if your main device is a Windows PC. Use Google Dr
       },
       {
         title: 'Share a File or Photo with Family',
-        content: 'All three services let you share files or folders with others. In any service, right-click (or long-press) on a file → "Share" → enter the recipient\'s email address. They receive a link to view or edit the file. This is a great way to share vacation photos with family.',
+        content: `All three services let you share files or folders with others. In any service, right-click (or long-press) on a file → "Share" → enter the recipient's email address. They receive a link to view or edit the file. This is a great way to share vacation photos with family.`,
         tip: 'Sharing a folder full of photos is faster than sending photos as email attachments — especially for large batches.',
       },
     ],
@@ -603,7 +603,7 @@ The bottom line: use OneDrive if your main device is a Windows PC. Use Google Dr
   {
     slug: 'apple-watch-fall-detection',
     title: 'How to Set Up Apple Watch Fall Detection and Emergency SOS',
-    excerpt: 'Apple Watch can detect a hard fall and automatically call 911 if you are unresponsive. Here\'s how to enable this potentially lifesaving feature.',
+    excerpt: `Apple Watch can detect a hard fall and automatically call 911 if you are unresponsive. Here's how to enable this potentially lifesaving feature.`,
     category: 'health-tech',
     tags: ['Apple Watch', 'fall detection', 'emergency SOS', 'safety', 'seniors'],
     readTime: '5 min',
@@ -628,7 +628,7 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
       {
         title: 'Enable Fall Detection on Apple Watch',
         content: 'On your iPhone, open the Watch app. Tap "Emergency SOS." Toggle on "Fall Detection." The watch now monitors your movements and will respond to hard falls.',
-        warning: 'Fall Detection may activate during intense exercise like skiing or cycling. If you get a false alert, tap "I\'m OK" immediately to cancel the emergency call.',
+        warning: `Fall Detection may activate during intense exercise like skiing or cycling. If you get a false alert, tap "I'm OK" immediately to cancel the emergency call.`,
       },
       {
         title: 'Test the Emergency SOS Button',
@@ -642,14 +642,14 @@ Many families buy an Apple Watch specifically for these features. A parent or gr
       },
       {
         title: 'Know What Happens After a Fall',
-        content: 'If Apple Watch detects a hard fall and you do not move for about 30 seconds, it taps your wrist and sounds an alarm. You can tap "I\'m OK" to dismiss it. If you do not respond within 60 seconds, the watch calls emergency services, plays a recorded message explaining the situation, and sends your GPS location to your emergency contacts.',
+        content: `If Apple Watch detects a hard fall and you do not move for about 30 seconds, it taps your wrist and sounds an alarm. You can tap "I'm OK" to dismiss it. If you do not respond within 60 seconds, the watch calls emergency services, plays a recorded message explaining the situation, and sends your GPS location to your emergency contacts.`,
       },
     ],
   },
   {
     slug: 'android-digital-wellbeing',
     title: 'How to Use Android Digital Wellbeing to Manage Screen Time',
-    excerpt: 'Android\'s built-in Digital Wellbeing tools show exactly how much time you spend on each app and let you set limits to help you use your phone more intentionally.',
+    excerpt: `Android's built-in Digital Wellbeing tools show exactly how much time you spend on each app and let you set limits to help you use your phone more intentionally.`,
     category: 'phone-guides',
     tags: ['Android', 'Digital Wellbeing', 'screen time', 'app limits', 'health'],
     readTime: '5 min',
@@ -715,7 +715,7 @@ Siri works when your iPhone is connected to the internet (for complex questions 
     steps: [
       {
         title: 'Turn On Hey Siri',
-        content: 'Open Settings on your iPhone. Tap "Siri & Search." Toggle on "Listen for \'Hey Siri\'." Your iPhone prompts you to train Siri to recognize your voice — follow the on-screen instructions and say each phrase clearly.',
+        content: `Open Settings on your iPhone. Tap "Siri & Search." Toggle on "Listen for 'Hey Siri'." Your iPhone prompts you to train Siri to recognize your voice — follow the on-screen instructions and say each phrase clearly.`,
         tip: 'If you share the phrase during training in a quiet room, Siri will be more accurate when you use it.',
       },
       {
@@ -725,7 +725,7 @@ Siri works when your iPhone is connected to the internet (for complex questions 
       },
       {
         title: 'Send a Text Message by Voice',
-        content: 'Say "Hey Siri, text Sarah, I\'ll be there at 3." Siri creates the text message and reads it back to you. Say "Yes, send it" or "No, cancel." Your message is sent without looking at your phone.',
+        content: `Say "Hey Siri, text Sarah, I'll be there at 3." Siri creates the text message and reads it back to you. Say "Yes, send it" or "No, cancel." Your message is sent without looking at your phone.`,
         tip: 'You can dictate the message content and Siri will type it out — great for people who find touchscreen typing difficult.',
       },
       {
@@ -809,7 +809,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
     steps: [
       {
         title: 'Use the One-Click Unsubscribe',
-        content: 'Open any marketing or newsletter email in Gmail. Look just below the sender\'s name — there is often a small "Unsubscribe" link in gray text. Click it. Gmail shows a confirmation — click "Unsubscribe." The company must honor this request within 10 business days by law.',
+        content: `Open any marketing or newsletter email in Gmail. Look just below the sender's name — there is often a small "Unsubscribe" link in gray text. Click it. Gmail shows a confirmation — click "Unsubscribe." The company must honor this request within 10 business days by law.`,
         tip: 'If there is no Unsubscribe link at the top, scroll to the very bottom of the email — it is almost always there in small print.',
       },
       {
@@ -823,7 +823,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
       },
       {
         title: 'Create a Filter to Automatically Sort Emails',
-        content: 'In Gmail, click the search bar at the top and click "Show search options" (the sliders icon). Enter the sender\'s email address or a keyword in the "From" or "Has the words" field. Click "Create filter." Choose an action: Skip inbox, Mark as read, Delete it, or Label it. Click "Create filter."',
+        content: `In Gmail, click the search bar at the top and click "Show search options" (the sliders icon). Enter the sender's email address or a keyword in the "From" or "Has the words" field. Click "Create filter." Choose an action: Skip inbox, Mark as read, Delete it, or Label it. Click "Create filter."`,
         tip: 'Filters run on future emails — they do not apply retroactively to existing emails in your inbox.',
       },
       {
@@ -835,7 +835,7 @@ Gmail filters let you automatically sort, label, or delete emails from specific 
   {
     slug: 'outlook-tips-seniors',
     title: 'Microsoft Outlook Tips for Everyday Email Users',
-    excerpt: 'Outlook is the email app in Microsoft 365 and Windows. Learn how to organize your inbox, recall a sent email, create folders, and set an auto-reply when you\'re away.',
+    excerpt: `Outlook is the email app in Microsoft 365 and Windows. Learn how to organize your inbox, recall a sent email, create folders, and set an auto-reply when you're away.`,
     category: 'communication',
     tags: ['Outlook', 'Microsoft', 'email', 'tips', 'inbox'],
     readTime: '6 min',
@@ -881,7 +881,7 @@ The "Recall This Message" feature is a lifesaver if you send an email to the wro
   {
     slug: 'transfer-contacts-new-phone',
     title: 'How to Transfer Your Contacts When Getting a New Phone',
-    excerpt: 'Getting a new phone? Here\'s how to move all your contacts from your old phone to your new one — whether you\'re switching from iPhone to Android or staying on the same platform.',
+    excerpt: `Getting a new phone? Here's how to move all your contacts from your old phone to your new one — whether you're switching from iPhone to Android or staying on the same platform.`,
     category: 'phone-guides',
     tags: ['contacts', 'transfer', 'new phone', 'iPhone', 'Android'],
     readTime: '5 min',
@@ -927,7 +927,7 @@ If you are not sure whether your contacts are backed up, the safest thing to do 
   {
     slug: 'smart-tv-apps-guide',
     title: 'How to Find and Install Apps on Your Smart TV',
-    excerpt: 'Your Smart TV has an app store where you can add streaming services, games, and more. Here\'s how to find, install, and manage apps on popular TV brands.',
+    excerpt: `Your Smart TV has an app store where you can add streaming services, games, and more. Here's how to find, install, and manage apps on popular TV brands.`,
     category: 'entertainment',
     tags: ['smart TV', 'apps', 'streaming', 'LG', 'Vizio', 'Samsung'],
     readTime: '5 min',
@@ -945,7 +945,7 @@ A common situation: you subscribe to a new streaming service on your phone but c
 Once an app is installed, it stays on your TV unless you remove it. You do not need to reinstall apps after unplugging or restarting your TV. App settings and your logged-in account information are also saved.`,
     steps: [
       {
-        title: 'Find Your TV\'s App Store',
+        title: `Find Your TV's App Store`,
         content: 'Press the Home button on your remote. Look for an "Apps" section, a shopping bag icon, or a tile that says "App Store" or "LG Content Store." On Roku TV, press the Home button and look for "Streaming Channels." On Google TV (TCL, Hisense), look for "Apps" in the top menu.',
       },
       {
@@ -971,7 +971,7 @@ Once an app is installed, it stays on your TV unless you remove it. You do not n
   {
     slug: 'ipad-for-seniors-guide',
     title: 'Getting Started with iPad: A Guide for New Users',
-    excerpt: 'The iPad is one of the most user-friendly devices ever made. If you\'re new to iPad, this guide covers everything you need to know to get started with confidence.',
+    excerpt: `The iPad is one of the most user-friendly devices ever made. If you're new to iPad, this guide covers everything you need to know to get started with confidence.`,
     category: 'essential-skills',
     tags: ['iPad', 'Apple', 'beginner', 'tablet', 'seniors'],
     readTime: '8 min',

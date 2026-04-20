@@ -59,12 +59,12 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Hold the top edges of both phones close together',
-        content: 'Bring the top of your iPhone within an inch or two of the other phone\'s top edge. Wait for the glowing animation to appear on both screens.',
+        content: `Bring the top of your iPhone within an inch or two of the other phone's top edge. Wait for the glowing animation to appear on both screens.`,
         tip: 'Face both phones upward and bring the tops together — like two phones doing a handshake at the top.',
       },
       {
         title: 'Choose what to share',
-        content: 'Each person sees a prompt: "Share" (sends your contact card), "Receive Only" (gets theirs, keeps yours private), or "Don\'t Share" (cancels).',
+        content: `Each person sees a prompt: "Share" (sends your contact card), "Receive Only" (gets theirs, keeps yours private), or "Don't Share" (cancels).`,
       },
       {
         title: 'Confirm the contact was added',
@@ -113,7 +113,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'iphone-vehicle-motion-cues',
     title: 'How to Use Vehicle Motion Cues to Reduce Motion Sickness',
-    excerpt: 'A built-in iPhone feature displays moving dots on screen to reduce motion sickness when you\'re reading in a car or bus.',
+    excerpt: `A built-in iPhone feature displays moving dots on screen to reduce motion sickness when you're reading in a car or bus.`,
     body: `Motion sickness happens when what your eyes see does not match what your inner ear feels. When you're a passenger in a moving vehicle and looking at a phone screen, your eyes see a still image but your body feels the car turning, accelerating, and stopping. The mismatch causes nausea for many people.\n\nApple added a feature called Vehicle Motion Cues in iOS 18 to address this. It shows small animated dots along the edges of your screen that move in sync with the vehicle's motion. Your peripheral vision picks up this movement, which helps your brain reconcile what your body is feeling with what your eyes are seeing — reducing or eliminating the sickness.\n\nThe dots are subtle. They sit in the corners of the screen and move in gentle arcs to reflect the car's movements. They do not cover content you are reading or watching.\n\nYou can set Vehicle Motion Cues to turn on automatically (the phone detects when you are in a moving vehicle), always on, or always off. The automatic option works well because it only activates when the phone's sensors detect consistent vehicle-type motion.\n\nThis feature requires iPhone 13 or newer running iOS 18 or later. If you are prone to car sickness, it is worth turning on before a long road trip.`,
     category: 'phone-guides',
     tags: ['iphone', 'motion sickness', 'vehicle motion cues', 'ios 18', 'accessibility'],
@@ -137,7 +137,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Test on your next car ride',
-        content: 'The next time you are a passenger in a car, open your phone and watch for the small dots at the screen edges. They should appear and move with the car\'s motion.',
+        content: `The next time you are a passenger in a car, open your phone and watch for the small dots at the screen edges. They should appear and move with the car's motion.`,
       },
       {
         title: 'Adjust if the dots are distracting',
@@ -149,7 +149,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'iphone-screen-distance-guide',
     title: 'How to Use iPhone Screen Distance to Protect Your Eyes',
-    excerpt: 'Screen Distance warns you when you\'re holding your iPhone too close to your face — an Apple health feature designed to protect eyesight, especially for kids.',
+    excerpt: `Screen Distance warns you when you're holding your iPhone too close to your face — an Apple health feature designed to protect eyesight, especially for kids.`,
     body: `Holding a phone too close to your face, especially in low light, has been linked to increased eye strain and in children, a higher risk of developing nearsightedness (myopia). Apple introduced a feature called Screen Distance in iOS 17 to help address this.\n\nWhen Screen Distance is on, the iPhone's front-facing TrueDepth camera (the same one used for Face ID) monitors the distance between your face and the screen. If you hold the phone closer than about 12 inches for a sustained period, a full-screen alert appears telling you to move the phone farther away. The alert does not go away until you hold the phone at a safe distance.\n\nThis feature is particularly designed for children, and Apple Surface it prominently in Screen Time settings. However, adults who spend hours reading on their phone may also benefit, especially those who tend to hold the device close without realizing it.\n\nScreen Distance does not record video or take photos of you. The distance calculation is done on-device using the depth sensor — Apple does not collect this data.\n\nYou can turn Screen Distance on in Settings under Screen Time. If you already have Screen Time set up, it takes about 30 seconds to enable. If you do not use Screen Time, you can still turn it on without applying any other restrictions.`,
     category: 'phone-guides',
     tags: ['iphone', 'eye health', 'screen distance', 'ios 17', 'screen time'],
@@ -177,7 +177,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Respond to alerts in daily use',
-        content: 'When the alert appears, simply hold the phone at arm\'s length (about 12+ inches from your face) until it clears. It only takes a moment.',
+        content: `When the alert appears, simply hold the phone at arm's length (about 12+ inches from your face) until it clears. It only takes a moment.`,
       },
     ],
   },
@@ -185,7 +185,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'iphone-adaptive-power-mode',
     title: 'How iPhone Manages Battery to Last All Day',
-    excerpt: 'Learn how Low Power Mode, Optimized Charging, and iPhone\'s automatic battery management can help you get more battery life without worry.',
+    excerpt: `Learn how Low Power Mode, Optimized Charging, and iPhone's automatic battery management can help you get more battery life without worry.`,
     body: `Modern iPhones have several built-in tools to extend battery life and protect the battery's long-term health. Understanding how they work helps you get the most out of your phone each day.\n\n**Low Power Mode** reduces background activity, disables some visual effects, and slows down mail fetching to stretch your remaining battery. You can turn it on manually at any time or let your phone offer it automatically when you drop below 20%. It turns off automatically once your battery charges back above 80%.\n\n**Optimized Battery Charging** is on by default on newer iPhones. It learns your charging habits and slows the charging speed when your battery reaches 80%, completing the charge to 100% just before you typically wake up. This reduces wear on the battery over time because lithium batteries degrade faster when kept at 100% for long periods.\n\n**Background App Refresh** is another battery drain. Go to Settings → General → Background App Refresh and turn it off for apps that do not need to update in the background — things like games or shopping apps you rarely open.\n\n**Adaptive Power Mode** in iOS 18 goes further by learning your daily usage patterns and automatically managing power. For example, it might reduce screen brightness slightly during times when you typically read, or cut back on location tracking for apps you have not opened in days.\n\nFor people who struggle to make their phone last through the day, combining these tools can easily add an hour or two of use.`,
     category: 'phone-guides',
     tags: ['iphone', 'battery life', 'low power mode', 'battery health', 'charging tips'],
@@ -200,7 +200,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Check that Optimized Battery Charging is on',
-        content: 'Go to Settings → Battery → Battery Health & Charging → Optimized Battery Charging. Make sure this is toggled on. This protects your battery\'s long-term health.',
+        content: `Go to Settings → Battery → Battery Health & Charging → Optimized Battery Charging. Make sure this is toggled on. This protects your battery's long-term health.`,
         tip: 'Leave your phone plugged in overnight when possible. Optimized Charging works best with a consistent overnight routine.',
       },
       {
@@ -222,7 +222,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'iphone-personal-hotspot-guide',
     title: 'How to Use Your iPhone as a Wi-Fi Hotspot',
-    excerpt: 'Turn your iPhone into a temporary Wi-Fi router so your laptop or tablet can use your phone\'s data connection — great for travel or areas without Wi-Fi.',
+    excerpt: `Turn your iPhone into a temporary Wi-Fi router so your laptop or tablet can use your phone's data connection — great for travel or areas without Wi-Fi.`,
     body: `When you do not have access to Wi-Fi, your iPhone can share its cellular data connection with other devices like a laptop or iPad. This feature is called Personal Hotspot (or Mobile Hotspot). Your other device connects to your iPhone the same way it would connect to a regular Wi-Fi network.\n\nYou can connect other devices to the hotspot using Wi-Fi, Bluetooth, or a USB cable. Wi-Fi is the most common method. When connected via Wi-Fi, up to five devices can share the connection at once.\n\nPersonal Hotspot uses your cellular plan's data. If you have an unlimited data plan, there are usually no extra charges, though some carriers throttle hotspot speeds after a certain amount of usage. If you have a limited plan, each device connected to the hotspot uses data from your pool — so be careful not to run videos or large downloads through the hotspot unless you have plenty of data left.\n\nYour iPhone will show a blue or green status bar at the top of the screen whenever a device is connected to your hotspot. The battery drains faster while hotspot is active, so plug in if possible.\n\nThis feature works on any iPhone that has a cellular plan. Some carriers may require you to add a hotspot feature to your plan, though most plans include it today. If hotspot appears grayed out, contact your carrier.`,
     category: 'phone-guides',
     tags: ['iphone', 'hotspot', 'personal hotspot', 'mobile data', 'wi-fi sharing'],
@@ -238,15 +238,15 @@ export const guidesBatch31: Guide[] = [
       {
         title: 'Turn on Personal Hotspot',
         content: 'Tap the toggle next to "Allow Others to Join." Your iPhone will generate a Wi-Fi network name and password.',
-        tip: 'The default hotspot name is your iPhone\'s name (like "Bailey\'s iPhone"). To change it, go to Settings → General → About → Name.',
+        tip: `The default hotspot name is your iPhone's name (like "Bailey's iPhone"). To change it, go to Settings → General → About → Name.`,
       },
       {
         title: 'Note your hotspot password',
-        content: 'Tap "Wi-Fi Password" to see the current password. You can change it to something easier to remember. Write it down if you are connecting a family member\'s device.',
+        content: `Tap "Wi-Fi Password" to see the current password. You can change it to something easier to remember. Write it down if you are connecting a family member's device.`,
       },
       {
         title: 'Connect another device to the hotspot',
-        content: 'On your laptop or tablet, open Wi-Fi settings and look for your iPhone\'s name in the list of available networks. Select it and enter the password.',
+        content: `On your laptop or tablet, open Wi-Fi settings and look for your iPhone's name in the list of available networks. Select it and enter the password.`,
       },
       {
         title: 'Turn hotspot off when done',
@@ -259,7 +259,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'android-personal-hotspot-guide',
     title: 'How to Use Your Android Phone as a Mobile Hotspot',
-    excerpt: 'Share your Android phone\'s cellular data with a laptop or tablet using the built-in Mobile Hotspot feature — works on any Android phone.',
+    excerpt: `Share your Android phone's cellular data with a laptop or tablet using the built-in Mobile Hotspot feature — works on any Android phone.`,
     body: `Android phones have a built-in Mobile Hotspot feature (sometimes called Portable Hotspot or Tethering) that lets you share your phone's internet connection with other devices. It works like a mini Wi-Fi router — other devices connect to your phone the same way they would connect to a home network.\n\nThis is useful when you are away from home Wi-Fi, traveling, or in an area with poor connectivity where your phone has a signal but no Wi-Fi is available. A laptop connecting through your hotspot will use your phone's cellular data.\n\nYou can connect up to eight devices at once over Wi-Fi, though connecting more devices slows down the speed for everyone. Battery and data both drain faster while hotspot is active, so plug in if possible and monitor data usage.\n\nThe hotspot settings are usually found in the main Settings app under Network or Connections. The exact location varies slightly by phone brand: Samsung phones call it "Mobile Hotspot," Google Pixel calls it "Hotspot," and other brands may use "Portable Hotspot" or "Tethering."\n\nMost unlimited plans include hotspot use, though some carriers throttle hotspot speeds after a certain amount of data. Check your plan details if you are unsure.`,
     category: 'phone-guides',
     tags: ['android', 'hotspot', 'mobile hotspot', 'data sharing', 'tethering'],
@@ -283,7 +283,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Connect your laptop or tablet',
-        content: 'On the device you want to connect, open Wi-Fi settings and look for your Android phone\'s hotspot name. Select it and enter the password you set.',
+        content: `On the device you want to connect, open Wi-Fi settings and look for your Android phone's hotspot name. Select it and enter the password you set.`,
       },
       {
         title: 'Monitor usage and turn off when done',
@@ -296,7 +296,7 @@ export const guidesBatch31: Guide[] = [
   {
     slug: 'android-magnification-accessibility',
     title: 'How to Zoom In on Your Android Screen',
-    excerpt: 'Android\'s Magnification feature lets you zoom in on any part of the screen with a triple-tap — great for reading small text or seeing details in photos.',
+    excerpt: `Android's Magnification feature lets you zoom in on any part of the screen with a triple-tap — great for reading small text or seeing details in photos.`,
     body: `Android has a built-in magnification feature that lets you zoom in on any part of the screen at any time. It works across all apps — websites, photos, menus, maps, text messages. You do not need to use the pinch-to-zoom gesture in every app.\n\nThere are two main magnification options:\n\n**Magnification** (triple-tap to zoom): Triple-tap anywhere on the screen to zoom in. While zoomed, drag two fingers to pan around the screen. Triple-tap again to zoom back out. This is the most popular method.\n\n**Magnification Shortcut**: Adds a button to the screen that activates magnification with a single tap, so you do not have to triple-tap every time.\n\nThe zoom level is adjustable — once zoomed in, you can pinch inward or outward to change the magnification level. Most people find 2x to 3x useful for reading text without losing too much context.\n\nMagnification is different from Display Size, which makes everything on the screen bigger permanently. Magnification is temporary zoom for close-up viewing when needed. You may want to use both: set Display Size slightly larger as your default, and use Magnification for detailed reading.\n\nThis feature works on all Android phones and tablets running Android 5.0 or later. The exact location in Settings varies slightly by brand but is always under Accessibility.`,
     category: 'phone-guides',
     tags: ['android', 'magnification', 'zoom', 'accessibility', 'large text'],
@@ -392,11 +392,11 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Confirm and wait for your driver',
-        content: 'Tap "Confirm" to request the ride. A map shows the driver approaching. You will see the driver\'s name, photo, car type, and license plate.',
+        content: `Tap "Confirm" to request the ride. A map shows the driver approaching. You will see the driver's name, photo, car type, and license plate.`,
       },
       {
         title: 'Verify the driver before getting in',
-        content: 'When the car arrives, check that the license plate matches the app. Ask "What\'s my name?" — the driver should say your name back. Never get into a car that does not match the app.',
+        content: `When the car arrives, check that the license plate matches the app. Ask "What's my name?" — the driver should say your name back. Never get into a car that does not match the app.`,
         warning: 'Never share your Uber verification code with anyone. Uber will never call you and ask for it — that is a scam.',
       },
       {
@@ -429,7 +429,7 @@ export const guidesBatch31: Guide[] = [
       {
         title: 'Explore your digital membership card',
         content: 'Tap the "Membership" tab to see your digital card. You can show this at AAA-approved hotels, car rentals, and attractions to receive member discounts.',
-        tip: 'Take a screenshot of your digital card and save it to your phone\'s Photos so you have it even without internet access.',
+        tip: `Take a screenshot of your digital card and save it to your phone's Photos so you have it even without internet access.`,
       },
       {
         title: 'Know how to request roadside help',
@@ -437,7 +437,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Track your service vehicle',
-        content: 'After submitting the request, the app shows a map with your service driver\'s location and estimated arrival time. You will receive text and push notification updates.',
+        content: `After submitting the request, the app shows a map with your service driver's location and estimated arrival time. You will receive text and push notification updates.`,
         warning: 'Make sure your phone has some battery charge before a long drive. Requesting help with 2% battery can be risky. Keep a car charger handy.',
       },
     ],
@@ -466,7 +466,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Call airlines to ask about senior fares',
-        content: 'When booking flights, call the airline\'s customer service line and ask specifically: "Do you have senior fares available for this route?" They may not be advertised online.',
+        content: `When booking flights, call the airline's customer service line and ask specifically: "Do you have senior fares available for this route?" They may not be advertised online.`,
       },
       {
         title: 'Purchase the America the Beautiful Senior Pass',
@@ -475,7 +475,7 @@ export const guidesBatch31: Guide[] = [
       },
       {
         title: 'Ask about discounts at the time of booking and at check-in',
-        content: 'Whenever booking travel, say "I\'m a senior — is there a discount available?" or "I\'m an AARP member — do you have a member rate?" Staff can often apply discounts that are not visible online.',
+        content: `Whenever booking travel, say "I'm a senior — is there a discount available?" or "I'm an AARP member — do you have a member rate?" Staff can often apply discounts that are not visible online.`,
       },
     ],
   },

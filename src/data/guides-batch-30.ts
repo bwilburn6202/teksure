@@ -25,16 +25,16 @@ Rakuten has been operating since 1999 and has paid over $3.5 billion in cash bac
     steps: [
       {
         title: 'Create a Free Rakuten Account',
-        content: 'Go to rakuten.com and click "Join Now." Enter your email and create a password. Your account is free. If you see a sign-up bonus offer (often $10-30 for new members), you\'ll earn that bonus after your first qualifying purchase over a minimum amount (usually $25-30).',
+        content: `Go to rakuten.com and click "Join Now." Enter your email and create a password. Your account is free. If you see a sign-up bonus offer (often $10-30 for new members), you'll earn that bonus after your first qualifying purchase over a minimum amount (usually $25-30).`,
       },
       {
         title: 'Install the Browser Extension',
-        content: 'After creating your account, Rakuten prompts you to install the browser extension. Click "Add to Chrome" (or your browser). Confirm the installation. The Rakuten button appears in your browser toolbar — a small yellow/orange "R" icon. This is the most convenient setup — you\'ll be reminded automatically when you visit participating stores.',
+        content: `After creating your account, Rakuten prompts you to install the browser extension. Click "Add to Chrome" (or your browser). Confirm the installation. The Rakuten button appears in your browser toolbar — a small yellow/orange "R" icon. This is the most convenient setup — you'll be reminded automatically when you visit participating stores.`,
       },
       {
         title: 'Activate Cash Back When Shopping',
         content: 'When you visit Amazon, Target, or another participating store, the Rakuten extension shows a notification (usually a small pop-up or toolbar indicator) offering cash back. Click "Activate Cash Back." Shop and checkout normally. The cash back is recorded based on your purchase total (excluding tax and shipping in most cases).',
-        tip: 'The extension only activates when you\'re actually browsing a participating store — it doesn\'t constantly monitor your browsing or interfere with other websites.',
+        tip: `The extension only activates when you're actually browsing a participating store — it doesn't constantly monitor your browsing or interfere with other websites.`,
       },
       {
         title: 'Check Your Cash Back Balance',
@@ -42,7 +42,7 @@ Rakuten has been operating since 1999 and has paid over $3.5 billion in cash bac
       },
       {
         title: 'Set Up Your Payment Method',
-        content: 'Go to Account → Big Fat Check (Rakuten\'s quirky name for payments) → choose PayPal or check. PayPal delivers funds within days of payment date. A paper check is mailed if you prefer. Minimum payment threshold is $5 — if you haven\'t earned $5, your balance rolls over to the next quarter.',
+        content: `Go to Account → Big Fat Check (Rakuten's quirky name for payments) → choose PayPal or check. PayPal delivers funds within days of payment date. A paper check is mailed if you prefer. Minimum payment threshold is $5 — if you haven't earned $5, your balance rolls over to the next quarter.`,
         tip: 'Look for "Double Cash Back" promotions at Rakuten — certain stores periodically offer 2x or more cash back for limited periods. Check the Rakuten homepage before holiday shopping seasons.',
       },
     ],
@@ -73,7 +73,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
     steps: [
       {
         title: 'Install the Honey Extension',
-        content: 'On your computer, open your web browser (Chrome, Firefox, Safari, or Edge). Go to joinhoney.com. Click "Add to [browser name]." Click "Add Extension" to confirm. Honey is now installed — you\'ll see a small Honey icon in your browser toolbar.',
+        content: `On your computer, open your web browser (Chrome, Firefox, Safari, or Edge). Go to joinhoney.com. Click "Add to [browser name]." Click "Add Extension" to confirm. Honey is now installed — you'll see a small Honey icon in your browser toolbar.`,
       },
       {
         title: 'Create a Free Honey Account',
@@ -81,16 +81,16 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
       },
       {
         title: 'Use It at Checkout',
-        content: 'Shop online normally. When you reach the checkout page where there\'s a coupon or promo code box, Honey will either pop up automatically or you\'ll see the Honey icon light up. Click "Apply Coupons" (or the Honey button). Honey runs through available codes and automatically enters the best one that gives you savings.',
-        tip: 'Even if Honey says "No savings found," it checked — there just aren\'t active coupons for that store at the moment.',
+        content: `Shop online normally. When you reach the checkout page where there's a coupon or promo code box, Honey will either pop up automatically or you'll see the Honey icon light up. Click "Apply Coupons" (or the Honey button). Honey runs through available codes and automatically enters the best one that gives you savings.`,
+        tip: `Even if Honey says "No savings found," it checked — there just aren't active coupons for that store at the moment.`,
       },
       {
         title: 'Set Up a Droplist Price Alert',
-        content: 'On any Amazon product page, look for the Honey button or icon. Click it → "Add to Droplist." Set your target price (the price at which you want to be notified). Honey sends an email when that product\'s price drops to your target or lower. Great for large purchases you\'re not in a rush to make.',
+        content: `On any Amazon product page, look for the Honey button or icon. Click it → "Add to Droplist." Set your target price (the price at which you want to be notified). Honey sends an email when that product's price drops to your target or lower. Great for large purchases you're not in a rush to make.`,
       },
       {
         title: 'Track Your Savings',
-        content: 'Click the Honey icon → "Savings." You\'ll see a history of every discount Honey applied and your total lifetime savings. The Honey Gold section shows any reward points you\'ve earned — click "Redeem" when you have enough for a gift card (minimum varies by gift card type).',
+        content: `Click the Honey icon → "Savings." You'll see a history of every discount Honey applied and your total lifetime savings. The Honey Gold section shows any reward points you've earned — click "Redeem" when you have enough for a gift card (minimum varies by gift card type).`,
       },
     ],
   },
@@ -118,12 +118,12 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
     steps: [
       {
         title: 'Look Up Any Amazon Product',
-        content: 'Go to camelcamelcamel.com. In the search bar, paste the URL of any Amazon product page, or type the product name. The site shows a price history chart. The chart shows Amazon\'s price, third-party seller prices, and used prices over time.',
-        tip: 'Copy the Amazon product URL directly from your browser address bar when you\'re viewing the item on Amazon. Paste it into CamelCamelCamel for the most accurate match.',
+        content: `Go to camelcamelcamel.com. In the search bar, paste the URL of any Amazon product page, or type the product name. The site shows a price history chart. The chart shows Amazon's price, third-party seller prices, and used prices over time.`,
+        tip: `Copy the Amazon product URL directly from your browser address bar when you're viewing the item on Amazon. Paste it into CamelCamelCamel for the most accurate match.`,
       },
       {
         title: 'Read the Price History Chart',
-        content: 'The chart shows price over time. Look for: the current price (compared to the line on the chart), the lowest price ever (shown below the chart), and the average price. If the current price is near or below the historical average, it\'s a reasonable time to buy. If it\'s significantly above the historical average, wait.',
+        content: `The chart shows price over time. Look for: the current price (compared to the line on the chart), the lowest price ever (shown below the chart), and the average price. If the current price is near or below the historical average, it's a reasonable time to buy. If it's significantly above the historical average, wait.`,
       },
       {
         title: 'Install The Camelizer Browser Extension',
@@ -131,12 +131,12 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
       },
       {
         title: 'Set a Price Drop Alert',
-        content: 'On any CamelCamelCamel product page, look for "Price Alert" or "Create Alert." Enter your target price and email address. When the Amazon price drops to your target, you receive an email notification. You don\'t need an account — just an email address.',
+        content: `On any CamelCamelCamel product page, look for "Price Alert" or "Create Alert." Enter your target price and email address. When the Amazon price drops to your target, you receive an email notification. You don't need an account — just an email address.`,
         tip: 'Set your target price at or slightly above the historical lowest price. Setting it exactly at the all-time low may mean waiting months or forever.',
       },
       {
         title: 'Use It to Evaluate "Sales"',
-        content: 'Before buying during Amazon Prime Day, Black Friday, or any sale: look up the item on CamelCamelCamel. Compare the current "sale price" to the historical chart. If the "sale" price is actually the same as or higher than its recent regular price, it\'s not a real discount. Genuine sale prices show up clearly as dips in the chart below the recent trend.',
+        content: `Before buying during Amazon Prime Day, Black Friday, or any sale: look up the item on CamelCamelCamel. Compare the current "sale price" to the historical chart. If the "sale" price is actually the same as or higher than its recent regular price, it's not a real discount. Genuine sale prices show up clearly as dips in the chart below the recent trend.`,
       },
     ],
   },
@@ -164,7 +164,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
     steps: [
       {
         title: 'Download GasBuddy',
-        content: 'Search for "GasBuddy" in the App Store (iPhone) or Google Play (Android). Download the free app. Open it — GasBuddy immediately asks for your location to show nearby stations. Allow location access. You\'ll see a list of nearby stations with their current regular gas prices.',
+        content: `Search for "GasBuddy" in the App Store (iPhone) or Google Play (Android). Download the free app. Open it — GasBuddy immediately asks for your location to show nearby stations. Allow location access. You'll see a list of nearby stations with their current regular gas prices.`,
         tip: 'The app works without creating an account, but creating one lets you save your home area, track savings, and earn points for reporting prices.',
       },
       {
@@ -173,7 +173,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
       },
       {
         title: 'Filter by Fuel Type',
-        content: 'At the top of the screen, tap the fuel type selector to switch between Regular, Mid-Grade, Premium, and Diesel. Most cars use Regular (87 octane). Check your car\'s manual or inside the fuel door to confirm what your car requires before selecting. Luxury and sports cars often require Premium.',
+        content: `At the top of the screen, tap the fuel type selector to switch between Regular, Mid-Grade, Premium, and Diesel. Most cars use Regular (87 octane). Check your car's manual or inside the fuel door to confirm what your car requires before selecting. Luxury and sports cars often require Premium.`,
         warning: 'Do not use lower-octane fuel than your car requires (some vehicles require Premium) — it can damage the engine. Using higher-octane than required is wasteful but not harmful.',
       },
       {
@@ -189,7 +189,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
   {
     slug: 'ticketmaster-mobile-guide',
     title: 'How to Get and Use Mobile Event Tickets on Your Phone',
-    excerpt: 'Most concerts and sports events now use digital mobile tickets instead of paper — here\'s how to access your Ticketmaster tickets on your phone and get in at the gate.',
+    excerpt: `Most concerts and sports events now use digital mobile tickets instead of paper — here's how to access your Ticketmaster tickets on your phone and get in at the gate.`,
     category: 'app-guides',
     tags: ['Ticketmaster', 'mobile tickets', 'events', 'concerts', 'QR code'],
     readTime: '4 min',
@@ -211,24 +211,24 @@ For people who struggle with apps or low vision: inform the venue's accessibilit
       {
         title: 'Download the Ticketmaster App',
         content: 'Search for "Ticketmaster" in the App Store (iPhone) or Google Play (Android). Download the official app (published by Ticketmaster Entertainment). Sign in to the account you used to purchase the tickets. Your tickets appear under "My Tickets" or "Events."',
-        tip: 'Download the app and log in while you\'re at home with good Wi-Fi — don\'t wait until you\'re outside the venue to figure out the app. Cell service near event venues is often slow due to crowds.',
+        tip: `Download the app and log in while you're at home with good Wi-Fi — don't wait until you're outside the venue to figure out the app. Cell service near event venues is often slow due to crowds.`,
       },
       {
         title: 'Find Your Tickets in the App',
-        content: 'Open Ticketmaster app → tap "My Events" or "Tickets" at the bottom. Your upcoming events are listed. Tap the event you\'re attending. You\'ll see your seat information and the option to "View Barcode" or "Show Ticket." Tap that to see the mobile ticket.',
+        content: `Open Ticketmaster app → tap "My Events" or "Tickets" at the bottom. Your upcoming events are listed. Tap the event you're attending. You'll see your seat information and the option to "View Barcode" or "Show Ticket." Tap that to see the mobile ticket.`,
       },
       {
         title: 'Understand the Rotating Barcode',
-        content: 'Your mobile ticket shows a QR code or barcode that rotates — it changes every few seconds. This is a security feature to prevent screenshots from working as fake tickets. The barcode only works for a short window when it\'s live on screen. Screenshots won\'t scan at the gate.',
-        warning: 'Do NOT screenshot your tickets to share. Screenshots show a frozen barcode that won\'t scan. If someone else is meeting you at the event, transfer the ticket to them through the app (tap "Transfer Tickets" in Ticketmaster).',
+        content: `Your mobile ticket shows a QR code or barcode that rotates — it changes every few seconds. This is a security feature to prevent screenshots from working as fake tickets. The barcode only works for a short window when it's live on screen. Screenshots won't scan at the gate.`,
+        warning: `Do NOT screenshot your tickets to share. Screenshots show a frozen barcode that won't scan. If someone else is meeting you at the event, transfer the ticket to them through the app (tap "Transfer Tickets" in Ticketmaster).`,
       },
       {
         title: 'Transfer Tickets to Someone Else',
-        content: 'Ticketmaster lets you send tickets to another person\'s phone without fee in most cases. Go to your ticket → tap "Transfer." Enter their name and email or phone number. They receive a link to accept the ticket into their Ticketmaster account. Once transferred, the ticket no longer appears in your account.',
+        content: `Ticketmaster lets you send tickets to another person's phone without fee in most cases. Go to your ticket → tap "Transfer." Enter their name and email or phone number. They receive a link to accept the ticket into their Ticketmaster account. Once transferred, the ticket no longer appears in your account.`,
       },
       {
         title: 'At the Venue Entrance',
-        content: 'Open the app before you reach the scanner (not right in front of it — it adds time). Show the rotating QR code to the staff member with the scanner. Hold your phone steady about 6-8 inches from the scanner. Turn up screen brightness if you\'re in sunlight. The scan takes 1-2 seconds when done correctly.',
+        content: `Open the app before you reach the scanner (not right in front of it — it adds time). Show the rotating QR code to the staff member with the scanner. Hold your phone steady about 6-8 inches from the scanner. Turn up screen brightness if you're in sunlight. The scan takes 1-2 seconds when done correctly.`,
         tip: 'Add your tickets to Apple Wallet or Google Wallet directly from the Ticketmaster app — this lets you access tickets even with poor cell service, since Wallet tickets work offline.',
       },
     ],
@@ -236,7 +236,7 @@ For people who struggle with apps or low vision: inform the venue's accessibilit
   {
     slug: 'iphone-live-photos-guide',
     title: 'What Are iPhone Live Photos and How to Use Them',
-    excerpt: 'Live Photos capture a moment in motion — 1.5 seconds before and after the shutter click. Here\'s how they work and what you can do with them.',
+    excerpt: `Live Photos capture a moment in motion — 1.5 seconds before and after the shutter click. Here's how they work and what you can do with them.`,
     category: 'phone-guides',
     tags: ['iPhone', 'Live Photos', 'camera', 'photos', 'iOS'],
     readTime: '4 min',
@@ -257,8 +257,8 @@ Live Photos take slightly more storage space than regular photos because they in
     steps: [
       {
         title: 'Take a Live Photo',
-        content: 'Open the Camera app. The Live Photos button is at the top center — it looks like two concentric circles. When it\'s yellow, Live Photos is on. When it shows a slash through it, it\'s off. Tap the button to toggle. Take photos normally — Live Photos doesn\'t change how you shoot.',
-        tip: 'Live Photos work best when there\'s motion in the scene and you hold the phone still for a moment after tapping the shutter. The 1.5 seconds of "before" motion shows what was happening right before you tapped.',
+        content: `Open the Camera app. The Live Photos button is at the top center — it looks like two concentric circles. When it's yellow, Live Photos is on. When it shows a slash through it, it's off. Tap the button to toggle. Take photos normally — Live Photos doesn't change how you shoot.`,
+        tip: `Live Photos work best when there's motion in the scene and you hold the phone still for a moment after tapping the shutter. The 1.5 seconds of "before" motion shows what was happening right before you tapped.`,
       },
       {
         title: 'View a Live Photo',
@@ -271,7 +271,7 @@ Live Photos take slightly more storage space than regular photos because they in
       },
       {
         title: 'Set a Live Photo as Your Lock Screen',
-        content: 'Long-press the lock screen → "Customize" → "Photo." Select a Live Photo. Set it as your lock screen. When you raise or tap your phone, the lock screen briefly animates the Live Photo. It\'s subtle and personalized.',
+        content: `Long-press the lock screen → "Customize" → "Photo." Select a Live Photo. Set it as your lock screen. When you raise or tap your phone, the lock screen briefly animates the Live Photo. It's subtle and personalized.`,
       },
       {
         title: 'Share a Live Photo (and What Happens)',
@@ -282,7 +282,7 @@ Live Photos take slightly more storage space than regular photos because they in
   {
     slug: 'create-qr-code-free',
     title: 'How to Create a Free QR Code for Your Business, Event, or Contact Info',
-    excerpt: 'QR codes are free to make and useful for sharing websites, contact info, Wi-Fi passwords, and more. Here\'s how to generate one in minutes.',
+    excerpt: `QR codes are free to make and useful for sharing websites, contact info, Wi-Fi passwords, and more. Here's how to generate one in minutes.`,
     category: 'essential-skills',
     tags: ['QR code', 'QR generator', 'business', 'contact card', 'free tools'],
     readTime: '4 min',
@@ -319,7 +319,7 @@ The simplest QR code generators don't require creating an account — you enter 
       },
       {
         title: 'Customize the Appearance (Optional)',
-        content: 'Most free generators let you change the QR code\'s colors, add a logo or image in the center, and change the corner style. Keep the colors high-contrast (dark code on light background or vice versa) — low-contrast QR codes don\'t scan well. Adding a logo is optional but makes the code look more polished for business use.',
+        content: `Most free generators let you change the QR code's colors, add a logo or image in the center, and change the corner style. Keep the colors high-contrast (dark code on light background or vice versa) — low-contrast QR codes don't scan well. Adding a logo is optional but makes the code look more polished for business use.`,
       },
       {
         title: 'Download and Use Your QR Code',
@@ -356,7 +356,7 @@ For RCS to work, you need the Google Messages app (or another RCS-compatible mes
       },
       {
         title: 'Enable RCS in Google Messages',
-        content: 'Open Google Messages. Tap the three dots (⋮) or your profile icon at the top right → Settings → Chat features (or "RCS chats"). Toggle "Enable chat features" (or "Turn on RCS chats") to On. Google Messages connects to Google\'s RCS network. This takes a few seconds to activate.',
+        content: `Open Google Messages. Tap the three dots (⋮) or your profile icon at the top right → Settings → Chat features (or "RCS chats"). Toggle "Enable chat features" (or "Turn on RCS chats") to On. Google Messages connects to Google's RCS network. This takes a few seconds to activate.`,
         tip: 'If you see "Connected" under Chat features, RCS is active. If it says "Waiting for activation" for more than a minute, try restarting your phone.',
       },
       {
@@ -365,18 +365,18 @@ For RCS to work, you need the Google Messages app (or another RCS-compatible mes
       },
       {
         title: 'Send Better Photos and Videos',
-        content: 'In an RCS conversation (where you see the chat bubble send icon), photos and videos you send maintain their quality. In an SMS conversation, photos are heavily compressed before sending. For the best photo quality, make sure both you and the recipient have RCS enabled. Alternatively, send photos through a dedicated app like Google Photos or Apple\'s shared library instead of messages.',
+        content: `In an RCS conversation (where you see the chat bubble send icon), photos and videos you send maintain their quality. In an SMS conversation, photos are heavily compressed before sending. For the best photo quality, make sure both you and the recipient have RCS enabled. Alternatively, send photos through a dedicated app like Google Photos or Apple's shared library instead of messages.`,
       },
       {
-        title: 'Know What RCS Can\'t Do',
-        content: 'RCS doesn\'t encrypt messages end-to-end by default the same way iMessage or WhatsApp does (though Google has added end-to-end encryption to direct messages in Google Messages). It still requires a carrier connection (not just Wi-Fi in all cases). And it requires both parties to use RCS-capable apps — if someone uses an older phone or non-RCS app, you\'ll see SMS instead.',
+        title: `Know What RCS Can't Do`,
+        content: `RCS doesn't encrypt messages end-to-end by default the same way iMessage or WhatsApp does (though Google has added end-to-end encryption to direct messages in Google Messages). It still requires a carrier connection (not just Wi-Fi in all cases). And it requires both parties to use RCS-capable apps — if someone uses an older phone or non-RCS app, you'll see SMS instead.`,
       },
     ],
   },
   {
     slug: 'screen-record-android-guide',
     title: 'How to Record Your Android Screen',
-    excerpt: 'Android\'s built-in screen recorder captures everything on your screen as a video — great for tutorials, saving video calls, or showing someone a problem.',
+    excerpt: `Android's built-in screen recorder captures everything on your screen as a video — great for tutorials, saving video calls, or showing someone a problem.`,
     category: 'phone-guides',
     tags: ['Android', 'screen record', 'screen capture', 'video', 'tutorial'],
     readTime: '4 min',
@@ -397,11 +397,11 @@ One thing to know: screen recording does capture notifications that appear durin
     steps: [
       {
         title: 'Open Quick Settings',
-        content: 'Swipe down from the top of your screen to open the notification shade. Swipe down again (or use two fingers) to expand Quick Settings — the grid of icons for Wi-Fi, Bluetooth, flashlight, etc. Look for "Screen recorder" or "Screen record." If you don\'t see it, tap the pencil/edit icon to add it from your available tiles.',
+        content: `Swipe down from the top of your screen to open the notification shade. Swipe down again (or use two fingers) to expand Quick Settings — the grid of icons for Wi-Fi, Bluetooth, flashlight, etc. Look for "Screen recorder" or "Screen record." If you don't see it, tap the pencil/edit icon to add it from your available tiles.`,
       },
       {
         title: 'Configure Recording Options',
-        content: 'Tap the Screen recorder icon. Before recording starts, a settings popup appears. Options: Sound (None = no audio, Media = captures phone sounds, Media & Mic = captures both phone sounds and your voice), and video quality settings on some phones. Choose your preferred settings. Most common: "Media & Mic" if you\'re narrating, or "Media" if you want just the phone sounds.',
+        content: `Tap the Screen recorder icon. Before recording starts, a settings popup appears. Options: Sound (None = no audio, Media = captures phone sounds, Media & Mic = captures both phone sounds and your voice), and video quality settings on some phones. Choose your preferred settings. Most common: "Media & Mic" if you're narrating, or "Media" if you want just the phone sounds.`,
       },
       {
         title: 'Start Recording',
@@ -456,7 +456,7 @@ The resulting video file appears on your Desktop by default. You can change wher
       },
       {
         title: 'Start and Stop Recording',
-        content: 'Click the "Record" button in the toolbar. Recording begins immediately (no countdown by default). A small recording indicator appears in the menu bar (top of screen). When you\'re done, click that menu bar icon to stop. Alternatively, press Command + Control + Esc to stop recording.',
+        content: `Click the "Record" button in the toolbar. Recording begins immediately (no countdown by default). A small recording indicator appears in the menu bar (top of screen). When you're done, click that menu bar icon to stop. Alternatively, press Command + Control + Esc to stop recording.`,
         tip: 'You can also stop recording by pressing Command + Shift + 5 again and clicking Stop, or by clicking the Stop button (square icon) that appears in the menu bar while recording.',
       },
       {
@@ -487,16 +487,16 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
     steps: [
       {
         title: 'Open Xbox Game Bar',
-        content: 'Press Win + G (the Windows key and G key simultaneously). The Xbox Game Bar overlay appears over your screen with several widgets. If this doesn\'t work, go to Settings → Gaming → Xbox Game Bar and make sure it\'s enabled. You may need to enable it in Settings if it was disabled.',
+        content: `Press Win + G (the Windows key and G key simultaneously). The Xbox Game Bar overlay appears over your screen with several widgets. If this doesn't work, go to Settings → Gaming → Xbox Game Bar and make sure it's enabled. You may need to enable it in Settings if it was disabled.`,
       },
       {
         title: 'Open the Capture Widget',
-        content: 'In Xbox Game Bar, click "Capture" (the camera/video icon) to open the Capture widget if it\'s not already visible. The Capture widget shows buttons for taking screenshots and recording video. If you don\'t see it, click the grid icon at the top of Game Bar and select "Capture" from the menu.',
+        content: `In Xbox Game Bar, click "Capture" (the camera/video icon) to open the Capture widget if it's not already visible. The Capture widget shows buttons for taking screenshots and recording video. If you don't see it, click the grid icon at the top of Game Bar and select "Capture" from the menu.`,
       },
       {
         title: 'Start Recording',
         content: 'In the Capture widget, click the round dot (record) button to start recording. A small recording timer appears in the corner of your screen showing the duration. Everything happening in the current active app is recorded. The fastest way: use the keyboard shortcut Win + Alt + R to start recording without opening the Game Bar overlay.',
-        tip: 'Win + Alt + R is the most efficient shortcut — it starts and stops recording instantly. You don\'t need to open Game Bar at all once you know this shortcut.',
+        tip: `Win + Alt + R is the most efficient shortcut — it starts and stops recording instantly. You don't need to open Game Bar at all once you know this shortcut.`,
       },
       {
         title: 'Stop the Recording',
@@ -512,7 +512,7 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
   {
     slug: 'voice-message-iphone-guide',
     title: 'How to Send Voice Messages on iPhone',
-    excerpt: 'Instead of typing a long text, you can record and send a voice message directly in iMessage — it\'s faster for complex thoughts or when you\'re on the go.',
+    excerpt: `Instead of typing a long text, you can record and send a voice message directly in iMessage — it's faster for complex thoughts or when you're on the go.`,
     category: 'communication',
     tags: ['iPhone', 'voice message', 'iMessage', 'audio message', 'Messages'],
     readTime: '3 min',
@@ -531,16 +531,16 @@ WhatsApp also has voice messages that work between any phone type (not just iPho
     steps: [
       {
         title: 'Open a Message Conversation',
-        content: 'Open the Messages app and navigate to a conversation with an iPhone user (iMessage, shown with blue bubbles). Audio messages only work within iMessage (blue bubbles). They don\'t work with regular SMS/green bubble texts.',
+        content: `Open the Messages app and navigate to a conversation with an iPhone user (iMessage, shown with blue bubbles). Audio messages only work within iMessage (blue bubbles). They don't work with regular SMS/green bubble texts.`,
       },
       {
         title: 'Record a Voice Message',
-        content: 'Tap the audio waveform icon (or microphone icon) to the right of the text input field. Press and hold it. You\'ll see a waveform visualization. Speak your message while holding. When you\'re done: slide up to listen before sending, or release to send immediately.',
-        tip: 'If you don\'t see the audio icon, it may be hidden behind the text field when there\'s typed text. Clear any typed text and the icon should appear.',
+        content: `Tap the audio waveform icon (or microphone icon) to the right of the text input field. Press and hold it. You'll see a waveform visualization. Speak your message while holding. When you're done: slide up to listen before sending, or release to send immediately.`,
+        tip: `If you don't see the audio icon, it may be hidden behind the text field when there's typed text. Clear any typed text and the icon should appear.`,
       },
       {
         title: 'Review Before Sending',
-        content: 'Slide your finger upward on the microphone icon (while still holding) to go to preview mode. You\'ll see a play button — tap it to listen to your recording before sending. Tap the up arrow (send) to send, or the trash icon to delete and re-record.',
+        content: `Slide your finger upward on the microphone icon (while still holding) to go to preview mode. You'll see a play button — tap it to listen to your recording before sending. Tap the up arrow (send) to send, or the trash icon to delete and re-record.`,
       },
       {
         title: 'Keep Messages From Expiring',
@@ -579,11 +579,11 @@ This is one of the highest-value features of a Google Home ecosystem — the inv
     steps: [
       {
         title: 'Open Google Home and Find Routines',
-        content: 'Open the Google Home app on your phone. Tap the "Automations" tab at the bottom (or tap the "+" and then "Routines" depending on your app version). You\'ll see pre-built starter routines like "Good morning," "Leaving home," "Arriving home," "Bedtime," and "Good night." Tap any to see and edit its current settings.',
+        content: `Open the Google Home app on your phone. Tap the "Automations" tab at the bottom (or tap the "+" and then "Routines" depending on your app version). You'll see pre-built starter routines like "Good morning," "Leaving home," "Arriving home," "Bedtime," and "Good night." Tap any to see and edit its current settings.`,
       },
       {
         title: 'Edit an Existing Routine',
-        content: 'Tap a starter routine, like "Good morning." You\'ll see "When this happens" (the trigger) and "Do these things" (the actions). Tap a trigger to change the command phrase, set a schedule time, or add multiple triggers. Tap "Add action" to add new things the routine does.',
+        content: `Tap a starter routine, like "Good morning." You'll see "When this happens" (the trigger) and "Do these things" (the actions). Tap a trigger to change the command phrase, set a schedule time, or add multiple triggers. Tap "Add action" to add new things the routine does.`,
         tip: 'The "Good morning" routine is a great starting point — add an action to "Get information about today" which reads your weather and first calendar event.',
       },
       {
@@ -596,8 +596,8 @@ This is one of the highest-value features of a Google Home ecosystem — the inv
       },
       {
         title: 'Test Your Routine',
-        content: 'Say the trigger phrase to your Google speaker: "Hey Google, Good morning." All the actions should execute in sequence. If something doesn\'t work, go back to the routine in Google Home app → check if that device is correctly linked to Google Home and shows as connected.',
-        warning: 'Make sure all smart devices in your routine are set up in Google Home first. A routine can\'t control a device that isn\'t added to your Google Home.',
+        content: `Say the trigger phrase to your Google speaker: "Hey Google, Good morning." All the actions should execute in sequence. If something doesn't work, go back to the routine in Google Home app → check if that device is correctly linked to Google Home and shows as connected.`,
+        warning: `Make sure all smart devices in your routine are set up in Google Home first. A routine can't control a device that isn't added to your Google Home.`,
       },
     ],
   },
@@ -627,12 +627,12 @@ This level of home automation used to require expensive professional systems. Wi
     steps: [
       {
         title: 'Open the Alexa App',
-        content: 'Open the Alexa app on your phone. Tap the three lines (menu) at the top left → "Routines." You\'ll see any existing routines and a "+" button to create new ones. Alexa includes a few suggested routines you can enable directly.',
+        content: `Open the Alexa app on your phone. Tap the three lines (menu) at the top left → "Routines." You'll see any existing routines and a "+" button to create new ones. Alexa includes a few suggested routines you can enable directly.`,
       },
       {
         title: 'Create a New Routine',
         content: 'Tap the "+" button. Tap "When this happens" to set the trigger. Options: Voice (say a phrase), Schedule (time-based), Smart Home (device event), Alexa app notification, or Alarm/Timer. Tap "Voice" to set a phrase trigger → enter the phrase (e.g., "morning" so saying "Alexa, morning" triggers it).',
-        tip: 'You don\'t need to say the full phrase exactly. Alexa routines recognize the key phrase even in a longer sentence. "Alexa, morning" and "Alexa, good morning" can both trigger the same routine if you set it up that way.',
+        tip: `You don't need to say the full phrase exactly. Alexa routines recognize the key phrase even in a longer sentence. "Alexa, morning" and "Alexa, good morning" can both trigger the same routine if you set it up that way.`,
       },
       {
         title: 'Add Actions',
@@ -644,7 +644,7 @@ This level of home automation used to require expensive professional systems. Wi
       },
       {
         title: 'Save and Test',
-        content: 'Tap "Save" in the top right. Say the trigger phrase to any connected Echo device. All actions should execute in order. If a smart home action doesn\'t work, check that the device is visible in your Alexa app under "Devices" and is online and connected.',
+        content: `Tap "Save" in the top right. Say the trigger phrase to any connected Echo device. All actions should execute in order. If a smart home action doesn't work, check that the device is visible in your Alexa app under "Devices" and is online and connected.`,
         tip: 'Add a "Wait" action (1-2 seconds) between rapid sequential commands to prevent Alexa from sending them too fast for devices to respond.',
       },
     ],
@@ -652,7 +652,7 @@ This level of home automation used to require expensive professional systems. Wi
   {
     slug: 'walmart-plus-guide',
     title: 'What Is Walmart+ and Is It Worth It?',
-    excerpt: 'Walmart+ is a $12.95/month membership with free delivery, gas discounts, and more — here\'s what you get and how to decide if it\'s worth the cost.',
+    excerpt: `Walmart+ is a $12.95/month membership with free delivery, gas discounts, and more — here's what you get and how to decide if it's worth the cost.`,
     category: 'app-guides',
     tags: ['Walmart+', 'Walmart', 'subscription', 'delivery', 'savings'],
     readTime: '5 min',
@@ -673,8 +673,8 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
     steps: [
       {
         title: 'Start a Free 30-Day Trial',
-        content: 'Go to walmart.com/plus or open the Walmart app → tap "Walmart+" in the menu. Tap "Start free 30-day trial." Create a Walmart.com account if you don\'t have one. Enter a payment method (required but not charged until the trial ends). Membership activates immediately.',
-        tip: 'Set a calendar reminder a day or two before the trial ends to decide whether to keep it. Cancel anytime in Account Settings if you don\'t want to continue.',
+        content: `Go to walmart.com/plus or open the Walmart app → tap "Walmart+" in the menu. Tap "Start free 30-day trial." Create a Walmart.com account if you don't have one. Enter a payment method (required but not charged until the trial ends). Membership activates immediately.`,
+        tip: `Set a calendar reminder a day or two before the trial ends to decide whether to keep it. Cancel anytime in Account Settings if you don't want to continue.`,
       },
       {
         title: 'Order Groceries With Free Delivery',
@@ -682,7 +682,7 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
       },
       {
         title: 'Use the Fuel Discount',
-        content: 'To get $0.10-$0.15/gallon off gas: open the Walmart app and go to the Walmart+ section. The fuel discount applies at Walmart Gas stations, Murphy USA stations, and participating Sam\'s Club fuel centers. Show the QR code in the app or the member ID at the pump.',
+        content: `To get $0.10-$0.15/gallon off gas: open the Walmart app and go to the Walmart+ section. The fuel discount applies at Walmart Gas stations, Murphy USA stations, and participating Sam's Club fuel centers. Show the QR code in the app or the member ID at the pump.`,
         tip: 'Combining the Walmart+ fuel discount with GasBuddy to find a cheap station on top can maximize gas savings.',
       },
       {
@@ -691,7 +691,7 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
       },
       {
         title: 'Use Mobile Scan & Go in Stores',
-        content: 'Open the Walmart app in a Walmart store. Tap "Scan & Go" at the bottom. Scan each item\'s barcode as you add it to your physical cart. The app keeps a running total. When done, tap "Pay" — you pay through the app. At the exit, show the receipt on your phone to the greeter. No checkout line.',
+        content: `Open the Walmart app in a Walmart store. Tap "Scan & Go" at the bottom. Scan each item's barcode as you add it to your physical cart. The app keeps a running total. When done, tap "Pay" — you pay through the app. At the exit, show the receipt on your phone to the greeter. No checkout line.`,
         warning: 'Scan & Go is only available at select Walmart stores. Check the app to see if your local store offers it before counting on it.',
       },
     ],
@@ -730,7 +730,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
       },
       {
         title: 'Back Up Photos With Amazon Photos',
-        content: 'Download the "Amazon Photos" app. Sign in with your Amazon account. The app asks to back up your photos — allow it. Amazon Photos stores unlimited full-resolution photos (not just thumbnails) for free with Prime. This is a genuine backup separate from your phone\'s storage. Also available at photos.amazon.com.',
+        content: `Download the "Amazon Photos" app. Sign in with your Amazon account. The app asks to back up your photos — allow it. Amazon Photos stores unlimited full-resolution photos (not just thumbnails) for free with Prime. This is a genuine backup separate from your phone's storage. Also available at photos.amazon.com.`,
         tip: 'Amazon Photos counts as a free secondary backup in addition to iCloud or Google Photos — useful as a second safety net for irreplaceable photos.',
       },
       {
@@ -773,18 +773,18 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
       },
       {
         title: 'Try Circle to Search',
-        content: 'Press and hold the home button (or the bottom of the screen if using gesture navigation) while viewing any content on screen. The screen dims and a search bar appears. Draw a circle around, or highlight, any object, text, or image. Google immediately searches for it. Works on anything visible: a plant to identify, a logo, a word you don\'t recognize.',
+        content: `Press and hold the home button (or the bottom of the screen if using gesture navigation) while viewing any content on screen. The screen dims and a search bar appears. Draw a circle around, or highlight, any object, text, or image. Google immediately searches for it. Works on anything visible: a plant to identify, a logo, a word you don't recognize.`,
       },
       {
         title: 'Use Multi Window (Split Screen)',
-        content: 'Open the first app. Tap and hold the Recents button (square icon) at the bottom. Tap "Open in split screen view." Your first app moves to the top half. Open the second app from recent apps or the home screen — it fills the bottom half. Drag the divider line to resize each app\'s portion of the screen.',
+        content: `Open the first app. Tap and hold the Recents button (square icon) at the bottom. Tap "Open in split screen view." Your first app moves to the top half. Open the second app from recent apps or the home screen — it fills the bottom half. Drag the divider line to resize each app's portion of the screen.`,
       },
       {
         title: 'Connect to Windows With Link to Windows',
-        content: 'Go to Settings → Connected devices → Link to Windows. Tap "Add a computer" and follow the prompts — you\'ll open the Phone Link app on a Windows 10/11 PC and pair via QR code. Once linked: see notifications from your phone on your PC, send and receive texts from your PC keyboard, transfer photos, and make calls.',
+        content: `Go to Settings → Connected devices → Link to Windows. Tap "Add a computer" and follow the prompts — you'll open the Phone Link app on a Windows 10/11 PC and pair via QR code. Once linked: see notifications from your phone on your PC, send and receive texts from your PC keyboard, transfer photos, and make calls.`,
       },
       {
-        title: 'Explore Samsung Health\'s Sleep Features',
+        title: `Explore Samsung Health's Sleep Features`,
         content: 'Open Samsung Health. Tap "Sleep" → "Manage." You can enable sleep tracking (uses phone sensors to estimate when you sleep and wake), set a bedtime reminder, and log sleep data. Samsung phones with a Galaxy Watch pair for more accurate sleep tracking. Sleep data helps identify patterns even without a watch.',
       },
     ],
@@ -792,7 +792,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
   {
     slug: 'mac-dock-guide',
     title: 'How to Customize Your Mac Dock',
-    excerpt: 'The Dock at the bottom of your Mac screen can be customized — add your most-used apps, remove ones you don\'t use, and resize it to your preference.',
+    excerpt: `The Dock at the bottom of your Mac screen can be customized — add your most-used apps, remove ones you don't use, and resize it to your preference.`,
     category: 'mac-guides',
     tags: ['Mac', 'Dock', 'macOS', 'customize', 'productivity'],
     readTime: '4 min',
@@ -818,7 +818,7 @@ Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to p
       },
       {
         title: 'Remove Apps From the Dock',
-        content: 'Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release — it disappears with a poof animation. Removing an app from the Dock doesn\'t uninstall it; it just removes the shortcut. The app stays in your Applications folder.',
+        content: `Right-click (or Control-click) any app icon in the Dock → "Options" → "Remove from Dock." Or drag the icon out of the Dock and release — it disappears with a poof animation. Removing an app from the Dock doesn't uninstall it; it just removes the shortcut. The app stays in your Applications folder.`,
       },
       {
         title: 'Rearrange Dock Icons',
@@ -830,7 +830,7 @@ Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to p
       },
       {
         title: 'Change Dock Settings',
-        content: 'Go to Apple menu → System Settings → Desktop & Dock. Options here: size slider (same as dragging), magnification (icons enlarge on hover), position on screen (bottom, left, or right), auto-hide, and "Show suggested and recent apps in Dock" (turn off to remove the auto-populated recent apps section). Try auto-hide — it feels intrusive for a day, then you wonder why you didn\'t use it sooner.',
+        content: `Go to Apple menu → System Settings → Desktop & Dock. Options here: size slider (same as dragging), magnification (icons enlarge on hover), position on screen (bottom, left, or right), auto-hide, and "Show suggested and recent apps in Dock" (turn off to remove the auto-populated recent apps section). Try auto-hide — it feels intrusive for a day, then you wonder why you didn't use it sooner.`,
       },
     ],
   },
@@ -865,8 +865,8 @@ Taskbar customization is limited in Windows 11 compared to Windows 10 — you ca
         content: 'Click the Start button. Find an app in the app list or search for it. Right-click the app name → "Pin to taskbar." The icon appears on your taskbar permanently. You can also right-click any app icon already running in the taskbar → "Pin to taskbar" so it stays after you close the app.',
       },
       {
-        title: 'Unpin Apps You Don\'t Use',
-        content: 'Right-click any pinned taskbar icon you don\'t want → "Unpin from taskbar." It disappears from the taskbar. You can still open it from the Start menu or search. Keeping only 5-8 apps pinned makes the taskbar less cluttered and each icon easier to find and click.',
+        title: `Unpin Apps You Don't Use`,
+        content: `Right-click any pinned taskbar icon you don't want → "Unpin from taskbar." It disappears from the taskbar. You can still open it from the Start menu or search. Keeping only 5-8 apps pinned makes the taskbar less cluttered and each icon easier to find and click.`,
         tip: 'Consider which apps you open multiple times per day — those are the ones worth pinning. Apps you open once a week are better accessed via Start menu search.',
       },
       {
@@ -875,7 +875,7 @@ Taskbar customization is limited in Windows 11 compared to Windows 10 — you ca
       },
       {
         title: 'Enable Taskbar Auto-Hide',
-        content: 'Right-click the taskbar → Taskbar settings → "Taskbar behaviors" → check "Automatically hide the taskbar." The taskbar disappears when you\'re not using it, giving you extra screen space. Hover your mouse at the bottom edge of the screen to bring it back temporarily.',
+        content: `Right-click the taskbar → Taskbar settings → "Taskbar behaviors" → check "Automatically hide the taskbar." The taskbar disappears when you're not using it, giving you extra screen space. Hover your mouse at the bottom edge of the screen to bring it back temporarily.`,
         tip: 'Auto-hide makes the most sense on laptops with smaller screens. On large monitors, keeping the taskbar visible may feel more natural.',
       },
     ],

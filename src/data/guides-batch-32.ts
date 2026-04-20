@@ -4,7 +4,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'medisafe-app-guide',
     title: 'How to Use Medisafe to Remember Your Medications',
-    excerpt: 'Medisafe sends reminders when it\'s time to take each of your medications and can alert a family member if you miss a dose.',
+    excerpt: `Medisafe sends reminders when it's time to take each of your medications and can alert a family member if you miss a dose.`,
     body: `Managing multiple medications can be challenging. Missing a dose or taking the wrong one at the wrong time is a common problem, especially when managing several prescriptions. Medisafe is a free app that helps you stay on track.\n\nWith Medisafe, you enter each medication — its name, dose, and the times you take it. The app then sends a notification at each scheduled time reminding you to take it. After you take a medication, you tap a button to confirm. If you miss a dose, the app can send an alert to a designated caregiver or family member through a feature called the MedFriend.\n\nMedisafe also tracks potential drug interactions. If you add two medications that may interact badly, the app flags the concern so you can bring it up with your doctor or pharmacist.\n\nThe app includes a refill reminder feature — it watches your supply and alerts you when you are running low so you can call in a refill before you run out. You can also log blood pressure, blood sugar, or weight if your doctor wants you to track these alongside your medications.\n\nMedisafe's free version covers all essential medication tracking. The premium version (about $4.99/month) adds more detailed health reports and additional tracking options.\n\nThis app is available on iPhone and Android and is one of the most widely recommended medication apps by pharmacists and healthcare professionals.`,
     category: 'health-tech',
     tags: ['medication', 'medisafe', 'pill reminder', 'prescription', 'health app'],
@@ -28,7 +28,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Add a MedFriend (optional)',
-        content: 'Tap your profile icon → MedFriend → Add. Enter a family member\'s email. They will receive an alert if you miss a dose for more than two hours.',
+        content: `Tap your profile icon → MedFriend → Add. Enter a family member's email. They will receive an alert if you miss a dose for more than two hours.`,
       },
       {
         title: 'Confirm doses when you take them',
@@ -57,7 +57,7 @@ export const guidesBatch32: Guide[] = [
       {
         title: 'Get your SilverSneakers member ID',
         content: 'Once eligibility is confirmed, create an account at SilverSneakers.com. Your member ID will appear in your profile and can also be stored in the SilverSneakers app.',
-        tip: 'Take a screenshot of your member ID or save it in your phone\'s wallet so you always have it when visiting a gym.',
+        tip: `Take a screenshot of your member ID or save it in your phone's wallet so you always have it when visiting a gym.`,
       },
       {
         title: 'Find participating gyms near you',
@@ -101,11 +101,11 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Set up Place Alerts',
-        content: 'Tap "Places" in the app and add locations like Home, the pharmacy, or a doctor\'s office. Toggle on notifications to receive an alert when a family member arrives or leaves.',
+        content: `Tap "Places" in the app and add locations like Home, the pharmacy, or a doctor's office. Toggle on notifications to receive an alert when a family member arrives or leaves.`,
       },
       {
         title: 'Check the family map',
-        content: 'The main screen shows a map with each family member\'s current location and their battery level. Tap a person\'s icon to see their address and the last time their location was updated.',
+        content: `The main screen shows a map with each family member's current location and their battery level. Tap a person's icon to see their address and the last time their location was updated.`,
         warning: 'Discuss Life360 with every family member before adding them. Mutual agreement makes location sharing feel supportive rather than intrusive.',
       },
     ],
@@ -142,7 +142,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Share a list with someone',
-        content: 'Open a list and tap the share icon (a person with a plus sign). Enter the other person\'s email address. They will receive an invitation to view and edit the shared list.',
+        content: `Open a list and tap the share icon (a person with a plus sign). Enter the other person's email address. They will receive an invitation to view and edit the shared list.`,
         tip: 'Shared grocery lists are especially convenient for couples — either person can add items and check off what has been bought.',
       },
     ],
@@ -273,10 +273,10 @@ export const guidesBatch32: Guide[] = [
       {
         title: 'Turn on Silence Unknown Callers',
         content: 'Go to Settings → Phone → Silence Unknown Callers → turn it on. Calls from unknown numbers go straight to voicemail. You will still see them in your missed calls.',
-        tip: 'If you are expecting a call from a new number (a doctor\'s office, a plumber), turn this off temporarily, then turn it back on after.',
+        tip: `If you are expecting a call from a new number (a doctor's office, a plumber), turn this off temporarily, then turn it back on after.`,
       },
       {
-        title: 'Enable your carrier\'s free spam filter',
+        title: `Enable your carrier's free spam filter`,
         content: 'Call your carrier (AT&T, T-Mobile, Verizon, or others) and ask to activate their spam call protection. AT&T: enable Active Armor / Call Protect in My AT&T app. T-Mobile: enable Scam Shield at T-Mobile.com. Verizon: enable Call Filter free in the My Verizon app.',
       },
       {
@@ -298,7 +298,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'call-blocking-android',
     title: 'How to Block Spam and Robocalls on Android',
-    excerpt: 'Android\'s built-in spam filter catches most robocalls automatically. Learn how to turn it on, block specific numbers, and stop unwanted calls for good.',
+    excerpt: `Android's built-in spam filter catches most robocalls automatically. Learn how to turn it on, block specific numbers, and stop unwanted calls for good.`,
     body: `Android phones have built-in tools to identify and block spam calls. Google's Phone app includes a spam detection system that automatically screens incoming calls and warns you when a likely scam call comes in.\n\nThe **Verified Calls** and **Spam Protection** features in the Google Phone app use a database of known spam numbers to label incoming calls before you answer. If a call is flagged, you see a warning on the screen. You can choose to answer, decline, or let Google Assistant screen the call on your behalf.\n\n**Google Call Screen** (available on Pixel phones and some others running the Google Phone app) is particularly powerful. When an unknown caller reaches you, Google Assistant answers and asks the caller to identify themselves. You see a live transcript of their response. You can then decide whether to pick up or not.\n\nFor Samsung Galaxy users, Samsung has its own call protection built into the Samsung Phone app, which labels likely spam calls similarly to Google's system.\n\n**Carrier spam blocking** is also available on Android. T-Mobile's Scam Shield, AT&T's ActiveArmor, and Verizon's Call Filter all offer free basic spam filtering. Some enhanced features require a paid upgrade.\n\nIf you receive a spam call that got through, you can block the number individually: open your recent calls, tap the number, and select "Block Number." Android keeps a block list that you can view and edit in Phone app settings.`,
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'android', 'call blocking', 'phone scams'],
@@ -321,7 +321,7 @@ export const guidesBatch32: Guide[] = [
         content: 'After receiving an unwanted call, go to your recent calls list. Tap the number → tap "Block/Report Spam." The number is added to your block list and that caller goes to voicemail.',
       },
       {
-        title: 'Activate your carrier\'s free spam filter',
+        title: `Activate your carrier's free spam filter`,
         content: 'T-Mobile users: go to T-Mobile.com/scam-shield. AT&T users: download the AT&T ActiveArmor app. Verizon users: open the My Verizon app and enable Call Filter. Each is free and activates within minutes.',
       },
       {
@@ -353,12 +353,12 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Browse and shop online',
-        content: 'Tap the search bar and search for items. You can shop Costco\'s full online catalog, including items not carried in your local warehouse. Choose delivery to home or pickup.',
-        tip: 'Costco\'s return policy is exceptional — most items can be returned at any time for a full refund. Keep digital receipts in the app.',
+        content: `Tap the search bar and search for items. You can shop Costco's full online catalog, including items not carried in your local warehouse. Choose delivery to home or pickup.`,
+        tip: `Costco's return policy is exceptional — most items can be returned at any time for a full refund. Keep digital receipts in the app.`,
       },
       {
         title: 'Check the weekly Hot Buys',
-        content: 'Tap "Hot Buys" on the home screen to see the current week\'s discounts. These rotate regularly. If you are planning a warehouse visit, check Hot Buys first to catch deals.',
+        content: `Tap "Hot Buys" on the home screen to see the current week's discounts. These rotate regularly. If you are planning a warehouse visit, check Hot Buys first to catch deals.`,
       },
       {
         title: 'Find Costco gas prices before filling up',
@@ -370,7 +370,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'target-circle-guide',
     title: 'How to Use Target Circle to Save Money at Target',
-    excerpt: 'Target Circle is Target\'s free loyalty program — earn 1% back on every purchase, get birthday rewards, and access member-only deals automatically.',
+    excerpt: `Target Circle is Target's free loyalty program — earn 1% back on every purchase, get birthday rewards, and access member-only deals automatically.`,
     body: `Target Circle is Target's free loyalty program that saves you money every time you shop. Membership is free and offers several benefits:\n\n**1% earnings**: You earn 1% of every purchase back in the form of Target Circle Earnings, which you can apply to a future purchase. The earnings do not expire quickly and stack up with regular shopping.\n\n**Exclusive deals**: Target Circle members get access to personalized discounts based on what they buy. When you open the Target app, Circle deals appear automatically — you can activate them with one tap before checkout.\n\n**Birthday offer**: Target Circle gives a 5% off birthday coupon valid for the week of your birthday. Set your birthday in your profile to make sure you receive it.\n\n**Voting on community support**: Members vote on local nonprofits for Target to donate to each quarter. This does not affect your savings but is a nice community feature.\n\nTarget Circle works whether you shop in the store or online. In the store, give the cashier your phone number at checkout or scan the barcode in the Target app. Online, your account applies Circle deals automatically.\n\nThe Target app also makes it easy to check prices, find what aisle an item is in, check in-store availability, and order online for store pickup or home delivery.`,
     category: 'app-guides',
     tags: ['target', 'target circle', 'savings', 'loyalty program', 'shopping'],
@@ -463,7 +463,7 @@ export const guidesBatch32: Guide[] = [
       {
         title: 'Clip coupons before shopping',
         content: 'Tap "Deals" or "Coupons" to browse available savings. Tap "Clip" on any deals you want to use. They apply automatically when your myWalgreens account is scanned at checkout.',
-        tip: 'Check the app\'s "Weekly Ad" for current sales on items you regularly buy — toiletries, vitamins, and over-the-counter medications often have good deals.',
+        tip: `Check the app's "Weekly Ad" for current sales on items you regularly buy — toiletries, vitamins, and over-the-counter medications often have good deals.`,
       },
       {
         title: 'Request a prescription refill',
@@ -478,8 +478,8 @@ export const guidesBatch32: Guide[] = [
 
   {
     slug: 'mobile-digital-id-guide',
-    title: 'How to Add Your Driver\'s License to Your Phone\'s Wallet',
-    excerpt: 'Several US states now allow you to store a digital version of your driver\'s license or state ID on your iPhone or Android phone and use it at airports and government buildings.',
+    title: `How to Add Your Driver's License to Your Phone's Wallet`,
+    excerpt: `Several US states now allow you to store a digital version of your driver's license or state ID on your iPhone or Android phone and use it at airports and government buildings.`,
     body: `A digital ID (also called a mobile driver's license or mDL) is a secure digital version of your state-issued driver's license or identification card stored on your phone. Multiple US states now issue digital IDs, and the list is growing.\n\nAs of 2026, states with active mobile ID programs include Arizona, Colorado, Georgia, Hawaii, Iowa, Maryland, Missouri, Ohio, Oklahoma, and Utah, among others. The program is expanding — check your state's DMV website to see if it is available where you live.\n\nYou can use a digital ID at select TSA checkpoints at airports (not all airports accept them yet) and some government buildings. The TSA reader works with both iPhone (using Apple Wallet) and Android (using Google Wallet).\n\n**Adding to iPhone (Apple Wallet)**: Go to the Wallet app → tap the + button → select "Driver's License or State ID" → select your state → follow the verification steps, which include scanning your physical ID and taking a selfie.\n\n**Adding to Android (Google Wallet)**: Open Google Wallet → tap "+" → select "ID" → follow your state's verification process.\n\nDigital IDs use encryption and biometric verification. When you present your digital ID to a reader, only the information required for that transaction is shared — a TSA check, for example, does not get your home address, just your age confirmation and identity. This is more private than handing over a physical license.\n\nNote: A digital ID is a complement to your physical ID, not a replacement. Always carry your physical license when driving — digital IDs are not yet accepted for traffic stops in most states.`,
     category: 'essential-skills',
     tags: ['digital id', 'mobile driver license', 'apple wallet', 'google wallet', 'state id'],
@@ -490,25 +490,25 @@ export const guidesBatch32: Guide[] = [
     steps: [
       {
         title: 'Check if your state offers a digital ID',
-        content: 'Search "[Your State] mobile driver\'s license" or visit your state DMV website. Look for "Digital ID," "mDL," or "Mobile Driver\'s License" in their services list.',
+        content: `Search "[Your State] mobile driver's license" or visit your state DMV website. Look for "Digital ID," "mDL," or "Mobile Driver's License" in their services list.`,
       },
       {
         title: 'On iPhone: open the Wallet app',
-        content: 'Open the Wallet app (it looks like a folded leather wallet). Tap the + button in the top right corner → tap "Driver\'s License or State ID."',
+        content: `Open the Wallet app (it looks like a folded leather wallet). Tap the + button in the top right corner → tap "Driver's License or State ID."`,
       },
       {
         title: 'Select your state and follow verification steps',
-        content: 'Choose your state from the list. You will be asked to scan the front and back of your physical driver\'s license and take a selfie. The app verifies the ID against your state\'s DMV records.',
-        tip: 'Have your physical driver\'s license handy during setup. Good lighting helps the ID scan go smoothly on the first try.',
+        content: `Choose your state from the list. You will be asked to scan the front and back of your physical driver's license and take a selfie. The app verifies the ID against your state's DMV records.`,
+        tip: `Have your physical driver's license handy during setup. Good lighting helps the ID scan go smoothly on the first try.`,
       },
       {
         title: 'On Android: add your ID to Google Wallet',
-        content: 'Open Google Wallet → tap the "+" button → select "ID" → select "Driver\'s License" → follow your state\'s specific enrollment steps. Some states use a separate state app rather than Google Wallet directly.',
+        content: `Open Google Wallet → tap the "+" button → select "ID" → select "Driver's License" → follow your state's specific enrollment steps. Some states use a separate state app rather than Google Wallet directly.`,
       },
       {
         title: 'Present your digital ID at TSA or approved locations',
         content: 'At an airport TSA checkpoint with a digital ID reader (look for signs), tap your iPhone or Android to the reader when prompted. Confirm with Face ID or your fingerprint to authorize the transaction.',
-        warning: 'Do not stop carrying your physical driver\'s license. Digital IDs are not accepted everywhere yet and are not valid for driving purposes in most states.',
+        warning: `Do not stop carrying your physical driver's license. Digital IDs are not accepted everywhere yet and are not valid for driving purposes in most states.`,
       },
     ],
   },
@@ -516,7 +516,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'apple-tv-plus-guide',
     title: 'How to Use Apple TV+ and Find the Best Shows',
-    excerpt: 'Apple TV+ is Apple\'s streaming service featuring original shows and movies — included free with new Apple devices and available for $9.99/month.',
+    excerpt: `Apple TV+ is Apple's streaming service featuring original shows and movies — included free with new Apple devices and available for $9.99/month.`,
     body: `Apple TV+ is Apple's subscription streaming service featuring exclusively original shows and movies. Unlike Netflix or Hulu, it does not license older content — everything on the platform was made by Apple Studios.\n\nApple TV+ costs $9.99 per month. When you buy a new iPhone, iPad, Mac, or Apple TV device, you often get a free three-month trial. The service is also included in the Apple One bundle, which combines multiple Apple subscriptions at a reduced price.\n\n**Notable Apple TV+ originals** include Ted Lasso (comedy, soccer team), Severance (thriller, office drama), The Morning Show (drama, journalism), Slow Horses (spy thriller), Shrinking (comedy, therapy), and Monarch: Legacy of Monsters (Godzilla spinoff). The library is smaller than Netflix but the shows are generally highly rated.\n\n**The Apple TV app** is available on iPhone, iPad, Mac, Apple TV devices, Samsung and LG smart TVs, Roku, Amazon Fire TV, and some PlayStation and Xbox consoles. You do not need an Apple device to watch Apple TV+.\n\nApple TV+ allows up to six family members to share a subscription through Family Sharing. Your watch progress syncs across devices — start on your phone and continue on your TV.\n\nApple TV+ has a Children & Family section with shows like Fraggle Rock, Peanuts movies, and other family-friendly content. Parental controls let you restrict content by rating.`,
     category: 'entertainment',
     tags: ['apple tv plus', 'streaming', 'apple original', 'tv shows', 'movies'],
@@ -531,8 +531,8 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Download the Apple TV app',
-        content: 'Search "Apple TV" in the App Store (iPhone/iPad) or find it on your smart TV\'s app store. The app icon is black with a white TV symbol. Sign in with your Apple ID.',
-        tip: 'The Apple TV app is pre-installed on iPhones and iPads running iOS 12.3 or later. If you don\'t see it, search your phone — it may be in a folder.',
+        content: `Search "Apple TV" in the App Store (iPhone/iPad) or find it on your smart TV's app store. The app icon is black with a white TV symbol. Sign in with your Apple ID.`,
+        tip: `The Apple TV app is pre-installed on iPhones and iPads running iOS 12.3 or later. If you don't see it, search your phone — it may be in a folder.`,
       },
       {
         title: 'Subscribe to Apple TV+',
@@ -588,7 +588,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'windows-clipboard-history-guide',
     title: 'How to Use Clipboard History in Windows 11',
-    excerpt: 'Windows 11 can remember everything you\'ve copied — not just the last item. Access your full copy history and pin items you use frequently.',
+    excerpt: `Windows 11 can remember everything you've copied — not just the last item. Access your full copy history and pin items you use frequently.`,
     body: `When you copy text or an image on a computer, it goes to the clipboard — but normally only one item is stored at a time. Each new copy replaces the previous one. Windows 11 includes a Clipboard History feature that changes this by remembering up to 25 recent copied items so you can go back and use any of them.\n\nThis is useful when you need to copy multiple pieces of information from one source and paste them into different places. For example, copying a name, then an address, then a phone number from a document and pasting each one into a form. Without Clipboard History, you would have to go back and re-copy each time. With it, all three items are waiting for you.\n\nYou open Clipboard History by pressing Windows key + V instead of Ctrl+V when you are ready to paste. A small panel appears showing your recent clipboard items. Click any item to paste it.\n\nYou can also pin items to the clipboard so they stay there even after you restart your computer. Tap the pin icon next to any clipboard entry to keep it permanently.\n\nClipboard History can also sync across your Windows devices using your Microsoft account. If you copy something on your desktop, it can be pasted on your laptop and vice versa.\n\nThis feature is turned off by default. You only need to enable it once.`,
     category: 'windows-guides',
     tags: ['windows 11', 'clipboard history', 'copy paste', 'windows tips', 'productivity'],
@@ -625,7 +625,7 @@ export const guidesBatch32: Guide[] = [
   {
     slug: 'scan-documents-android-guide',
     title: 'How to Scan Documents with Your Android Phone',
-    excerpt: 'Android phones can scan multi-page documents and save them as PDF files using Google Drive, Google Photos, or Samsung\'s built-in scanner — no separate scanner needed.',
+    excerpt: `Android phones can scan multi-page documents and save them as PDF files using Google Drive, Google Photos, or Samsung's built-in scanner — no separate scanner needed.`,
     body: `Scanning documents with your Android phone is faster and more convenient than using a flatbed scanner. You hold the phone over a paper document, and the app automatically detects the edges, corrects the perspective, and saves it as a PDF or image file.\n\nAndroid has several built-in options for scanning:\n\n**Google Drive**: Open the Google Drive app, tap the + button, then "Scan." Position the phone over the document. Drive automatically detects the page edges and takes the photo. You can add more pages for multi-page documents. The result is saved as a PDF in Google Drive.\n\n**Samsung Notes** (Samsung Galaxy phones): The Samsung Notes app has a document scanner built in. Open the app, create a new note, tap the attachment icon, and select "Scan Document." Samsung's scanner has excellent edge detection and auto-correction.\n\n**Microsoft Lens** (free download): Microsoft's scanning app is one of the best available. It has modes for documents, whiteboards, photos, and business cards. Scans can be exported to PDF, Word, OneNote, or sent to OneDrive.\n\nFor clean scans, place the document on a flat, dark-colored surface in good lighting. Avoid scanning near windows where glare is an issue. Most scanning apps have an auto-capture mode that takes the photo when the document is properly framed.`,
     category: 'essential-skills',
     tags: ['android', 'scan documents', 'pdf', 'google drive', 'paperless'],

@@ -15,7 +15,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Open Facebook Marketplace',
-        content: 'Open the Facebook app on your phone. Look for the Marketplace icon at the bottom — it looks like a small storefront or house. Tap it. You\'ll see listings from people near you. To sell something, tap "Create new listing" or the "+" button.',
+        content: `Open the Facebook app on your phone. Look for the Marketplace icon at the bottom — it looks like a small storefront or house. Tap it. You'll see listings from people near you. To sell something, tap "Create new listing" or the "+" button.`,
       },
       {
         title: 'Take clear photos and write a description',
@@ -24,17 +24,17 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Choose a pickup option',
-        content: 'For most items, choose "Local pickup" — the buyer comes to you or you meet them. Enter your general location (city and ZIP — Facebook doesn\'t show your exact address publicly). You can also offer shipping on smaller items if you\'re comfortable with that.',
+        content: `For most items, choose "Local pickup" — the buyer comes to you or you meet them. Enter your general location (city and ZIP — Facebook doesn't show your exact address publicly). You can also offer shipping on smaller items if you're comfortable with that.`,
       },
       {
         title: 'Respond to messages and arrange pickup',
-        content: 'When someone is interested, they\'ll send you a message through Messenger. Respond promptly and answer their questions. To arrange a meeting, agree on a day and time. If you\'re comfortable, you can meet at your home. Alternatively, meet in a public place — a coffee shop parking lot, a library, or the parking lot of a police station.',
+        content: `When someone is interested, they'll send you a message through Messenger. Respond promptly and answer their questions. To arrange a meeting, agree on a day and time. If you're comfortable, you can meet at your home. Alternatively, meet in a public place — a coffee shop parking lot, a library, or the parking lot of a police station.`,
         tip: 'Quick Tip: Many local police departments have designated "safe exchange zones" in their parking lots specifically for in-person sales. Check if yours does.',
       },
       {
         title: 'Get paid and complete the sale',
         content: 'Cash is the safest and simplest payment for local Marketplace sales. Only accept cash or Venmo/PayPal from a verified account. Be cautious of buyers who want to pay with a check (easy to forge) or want to overpay and have you return the difference (a classic scam).',
-        warning: 'Never accept checks, money orders, or "overpayment" offers. If a buyer can\'t pay in cash or verified app transfer, find another buyer.',
+        warning: `Never accept checks, money orders, or "overpayment" offers. If a buyer can't pay in cash or verified app transfer, find another buyer.`,
       },
     ],
   },
@@ -53,20 +53,20 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Check if your TV supports AirPlay',
-        content: 'Look in your TV\'s settings or menu for an "AirPlay" option. Samsung, LG, Sony, and Vizio smart TVs from 2019 onward usually include AirPlay. If your TV doesn\'t have it built in, you can add an Apple TV (a streaming box that plugs into your TV\'s HDMI port) or a third-party AirPlay receiver.',
+        content: `Look in your TV's settings or menu for an "AirPlay" option. Samsung, LG, Sony, and Vizio smart TVs from 2019 onward usually include AirPlay. If your TV doesn't have it built in, you can add an Apple TV (a streaming box that plugs into your TV's HDMI port) or a third-party AirPlay receiver.`,
       },
       {
         title: 'Enable AirPlay on your TV',
-        content: 'On a Samsung TV: go to Settings > General > Apple AirPlay Settings > turn on AirPlay. On an LG TV: press Home > Connection > AirPlay. On most Apple TV devices, AirPlay is always on. Check your TV\'s manual if you\'re not sure where to find it.',
+        content: `On a Samsung TV: go to Settings > General > Apple AirPlay Settings > turn on AirPlay. On an LG TV: press Home > Connection > AirPlay. On most Apple TV devices, AirPlay is always on. Check your TV's manual if you're not sure where to find it.`,
       },
       {
         title: 'Mirror your iPhone screen',
-        content: 'On your iPhone, swipe down from the top-right corner of the screen to open Control Center. Tap "Screen Mirroring" (looks like two overlapping rectangles). A list of nearby AirPlay devices will appear. Tap your TV\'s name. After a brief moment, your iPhone screen will appear on the TV.',
-        tip: 'Quick Tip: The iPhone and TV must be on the same Wi-Fi network. If you don\'t see your TV in the list, check that both are connected to the same Wi-Fi.',
+        content: `On your iPhone, swipe down from the top-right corner of the screen to open Control Center. Tap "Screen Mirroring" (looks like two overlapping rectangles). A list of nearby AirPlay devices will appear. Tap your TV's name. After a brief moment, your iPhone screen will appear on the TV.`,
+        tip: `Quick Tip: The iPhone and TV must be on the same Wi-Fi network. If you don't see your TV in the list, check that both are connected to the same Wi-Fi.`,
       },
       {
         title: 'AirPlay a specific video or photo',
-        content: 'You don\'t have to mirror your whole screen. In Photos, tap the Share button (square with an upward arrow) and choose "AirPlay" to send a photo or video directly to the TV. In supported apps like YouTube, Netflix, or Safari, look for the AirPlay icon (a rectangle with a triangle underneath) in the video player and tap it.',
+        content: `You don't have to mirror your whole screen. In Photos, tap the Share button (square with an upward arrow) and choose "AirPlay" to send a photo or video directly to the TV. In supported apps like YouTube, Netflix, or Safari, look for the AirPlay icon (a rectangle with a triangle underneath) in the video player and tap it.`,
       },
       {
         title: 'Stop AirPlay when done',
@@ -89,7 +89,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Connect your Chromecast or Google TV',
-        content: 'If you have a Chromecast (the small device that plugs into your TV\'s HDMI port) or a TV with Google TV built in (from Sony, TCL, Hisense, or Chromecast with Google TV), make sure it\'s plugged in and on the same Wi-Fi network as your phone. You can confirm by opening the Google Home app on your phone and checking that the device appears.',
+        content: `If you have a Chromecast (the small device that plugs into your TV's HDMI port) or a TV with Google TV built in (from Sony, TCL, Hisense, or Chromecast with Google TV), make sure it's plugged in and on the same Wi-Fi network as your phone. You can confirm by opening the Google Home app on your phone and checking that the device appears.`,
       },
       {
         title: 'Cast directly from an app',
@@ -99,11 +99,11 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Cast your full screen (Screen Cast)',
         content: 'To mirror your entire phone screen: swipe down from the top of your screen to open the notification shade. Look for "Cast," "Screen Cast," or "Smart View" (on Samsung). Tap it. A list of nearby devices will appear. Tap your TV or Chromecast to start mirroring.',
-        tip: 'Quick Tip: On Samsung Galaxy phones, look for "Smart View" in the quick settings panel — it\'s Samsung\'s version of screen casting.',
+        tip: `Quick Tip: On Samsung Galaxy phones, look for "Smart View" in the quick settings panel — it's Samsung's version of screen casting.`,
       },
       {
-        title: 'What if you don\'t have Chromecast?',
-        content: 'Many modern Samsung, LG, Sony, and TCL smart TVs support casting natively. Check your TV\'s settings for "Screen Mirroring," "Miracast," or "Smart View." If supported, enable it on the TV and then use your Android phone\'s screen cast feature to connect.',
+        title: `What if you don't have Chromecast?`,
+        content: `Many modern Samsung, LG, Sony, and TCL smart TVs support casting natively. Check your TV's settings for "Screen Mirroring," "Miracast," or "Smart View." If supported, enable it on the TV and then use your Android phone's screen cast feature to connect.`,
       },
       {
         title: 'Stop casting',
@@ -115,7 +115,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'manage-google-account-privacy',
     title: 'How to Review and Manage Your Google Account Privacy Settings',
-    excerpt: 'Your Google account tracks a lot. Here\'s how to review what Google has collected, turn off data tracking you don\'t want, and secure your account.',
+    excerpt: `Your Google account tracks a lot. Here's how to review what Google has collected, turn off data tracking you don't want, and secure your account.`,
     category: 'safety-guides',
     tags: ['google account', 'privacy', 'google settings', 'data privacy', 'google activity'],
     readTime: '6 min',
@@ -130,21 +130,21 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Review what Google has recorded (My Activity)',
-        content: 'Tap the "Data & Privacy" tab. Tap "My Activity." You\'ll see everything Google has recorded: searches, YouTube videos watched, maps routes, and more. To delete something: click the three dots next to an item and select "Delete." Or use "Delete activity by" to wipe activity from a date range or all time.',
+        content: `Tap the "Data & Privacy" tab. Tap "My Activity." You'll see everything Google has recorded: searches, YouTube videos watched, maps routes, and more. To delete something: click the three dots next to an item and select "Delete." Or use "Delete activity by" to wipe activity from a date range or all time.`,
         tip: 'Quick Tip: Tap "Manage my activity controls" to turn off future tracking for specific activity types. You can turn off Web & App Activity, Location History, and YouTube History independently.',
       },
       {
         title: 'Turn off location history',
-        content: 'In Data & Privacy, tap "Location History." If it\'s on, you\'ll see a timeline of everywhere Google has tracked you going. Tap "Turn off" if you don\'t want Google recording your movements. You can also delete all past location history from the same screen.',
+        content: `In Data & Privacy, tap "Location History." If it's on, you'll see a timeline of everywhere Google has tracked you going. Tap "Turn off" if you don't want Google recording your movements. You can also delete all past location history from the same screen.`,
       },
       {
         title: 'Review ad personalization',
-        content: 'Still in Data & Privacy, scroll to "Ad settings." Tap "Ad personalization." Here you can see the interests and categories Google has assigned you for targeting ads. You can turn off personalized ads entirely (you\'ll still see ads, just not targeted ones) or remove specific interest categories.',
+        content: `Still in Data & Privacy, scroll to "Ad settings." Tap "Ad personalization." Here you can see the interests and categories Google has assigned you for targeting ads. You can turn off personalized ads entirely (you'll still see ads, just not targeted ones) or remove specific interest categories.`,
       },
       {
         title: 'Check account security',
-        content: 'Tap the "Security" tab. Review: what devices are signed into your Google account (remove any you don\'t recognize), whether 2-Step Verification is enabled (turn it on if not — it\'s your best defense against account theft), and what third-party apps have access to your Google data.',
-        warning: 'If you see devices signed in that you don\'t recognize, click "See unfamiliar activity" immediately and follow the steps to secure your account.',
+        content: `Tap the "Security" tab. Review: what devices are signed into your Google account (remove any you don't recognize), whether 2-Step Verification is enabled (turn it on if not — it's your best defense against account theft), and what third-party apps have access to your Google data.`,
+        warning: `If you see devices signed in that you don't recognize, click "See unfamiliar activity" immediately and follow the steps to secure your account.`,
       },
     ],
   },
@@ -152,7 +152,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'apple-id-manage-guide',
     title: 'How to Manage Your Apple ID: Password, Payment, and Privacy',
-    excerpt: 'Your Apple ID is the key to your iPhone, iCloud, and all Apple services. Here\'s how to update your password, manage payment methods, and review what\'s connected.',
+    excerpt: `Your Apple ID is the key to your iPhone, iCloud, and all Apple services. Here's how to update your password, manage payment methods, and review what's connected.`,
     category: 'phone-guides',
     tags: ['apple id', 'icloud', 'apple account', 'password', 'payment method', 'iphone'],
     readTime: '5 min',
@@ -167,8 +167,8 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Update your Apple ID password',
-        content: 'On iPhone: tap "Sign-In & Security," then "Change Password." You\'ll need to enter your current password and then a new one. A strong Apple ID password should be at least 8 characters with a mix of letters, numbers, and symbols. Apple will never ask for your password via email or phone.',
-        warning: 'If you receive an email, text, or call claiming to be from Apple and asking for your Apple ID password or a verification code, it\'s a scam. Apple never asks for this — only enter credentials at appleid.apple.com or in Settings on your device.',
+        content: `On iPhone: tap "Sign-In & Security," then "Change Password." You'll need to enter your current password and then a new one. A strong Apple ID password should be at least 8 characters with a mix of letters, numbers, and symbols. Apple will never ask for your password via email or phone.`,
+        warning: `If you receive an email, text, or call claiming to be from Apple and asking for your Apple ID password or a verification code, it's a scam. Apple never asks for this — only enter credentials at appleid.apple.com or in Settings on your device.`,
       },
       {
         title: 'Turn on Two-Factor Authentication',
@@ -176,11 +176,11 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Review which devices are signed in',
-        content: 'Scroll down in Settings > [your name] to see a list of all Apple devices signed in with your Apple ID. Tap any device to see details. If you see a device you don\'t recognize or no longer own, tap it and choose "Remove from Account." An old phone you traded in should be removed from your account.',
+        content: `Scroll down in Settings > [your name] to see a list of all Apple devices signed in with your Apple ID. Tap any device to see details. If you see a device you don't recognize or no longer own, tap it and choose "Remove from Account." An old phone you traded in should be removed from your account.`,
       },
       {
         title: 'Manage payment methods and subscriptions',
-        content: 'On iPhone: tap "Media & Purchases," then "View Account." Tap "Manage Payments" to update your credit/debit card or Apple Pay. Tap "Subscriptions" to see all active Apple subscriptions (Apple Music, iCloud+, Apple TV+, etc.) and cancel any you don\'t want.',
+        content: `On iPhone: tap "Media & Purchases," then "View Account." Tap "Manage Payments" to update your credit/debit card or Apple Pay. Tap "Subscriptions" to see all active Apple subscriptions (Apple Music, iCloud+, Apple TV+, etc.) and cancel any you don't want.`,
         tip: 'Quick Tip: Many people are surprised by how many Apple subscriptions they have active. Reviewing this screen once every few months can save you money on forgotten services.',
       },
     ],
@@ -205,15 +205,15 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Prepare your document',
-        content: 'You need a digital copy of whatever you\'re faxing. Options:\n- Take a clear, well-lit photo of the paper with your phone\'s camera\n- Use your phone\'s built-in scanner (on iPhone: open Notes, tap the camera icon, then "Scan Documents")\n- Use a PDF file you already have saved on your phone\n\nMake sure the document is readable and all text is clear before sending.',
+        content: `You need a digital copy of whatever you're faxing. Options:\n- Take a clear, well-lit photo of the paper with your phone's camera\n- Use your phone's built-in scanner (on iPhone: open Notes, tap the camera icon, then "Scan Documents")\n- Use a PDF file you already have saved on your phone\n\nMake sure the document is readable and all text is clear before sending.`,
       },
       {
         title: 'Enter the fax number',
-        content: 'In the app, tap "New Fax" or "Send." Enter the destination fax number including the area code, just like dialing a phone number (example: 555-867-5309). If you\'re faxing to a business, their fax number is usually listed on their website or on documents they sent you.',
+        content: `In the app, tap "New Fax" or "Send." Enter the destination fax number including the area code, just like dialing a phone number (example: 555-867-5309). If you're faxing to a business, their fax number is usually listed on their website or on documents they sent you.`,
       },
       {
         title: 'Attach your document and send',
-        content: 'Select your document photo or PDF file from your phone\'s gallery or files. Add a cover page if required (some apps include a simple cover page option). Tap "Send." The app will process and transmit the fax. You\'ll receive a confirmation when the fax is successfully delivered.',
+        content: `Select your document photo or PDF file from your phone's gallery or files. Add a cover page if required (some apps include a simple cover page option). Tap "Send." The app will process and transmit the fax. You'll receive a confirmation when the fax is successfully delivered.`,
       },
       {
         title: 'Receive a fax',
@@ -237,11 +237,11 @@ export const guidesBatch22: Guide[] = [
       {
         title: 'Prepare your symptoms and medications ahead of time',
         content: 'Write down: your main concern or symptoms (when they started, how bad on a scale of 1–10, what makes them better or worse), all medications you currently take including supplements (take photos of your pill bottles if helpful), any recent test results or readings (blood pressure, blood sugar, weight), and any questions you want to ask.',
-        tip: 'Quick Tip: Keep a notepad or notes app open during the call to write down what the doctor tells you. Video appointments move quickly and it\'s easy to forget details afterward.',
+        tip: `Quick Tip: Keep a notepad or notes app open during the call to write down what the doctor tells you. Video appointments move quickly and it's easy to forget details afterward.`,
       },
       {
         title: 'Test your device and internet 15 minutes before',
-        content: 'Open the appointment link from your doctor\'s confirmation email or text before the visit starts. Most telehealth platforms have a "Test your connection" option — use it to confirm your camera and microphone work. Check that your device is charged or plugged in. Close other apps that use the internet (like streaming video) to ensure a smooth connection.',
+        content: `Open the appointment link from your doctor's confirmation email or text before the visit starts. Most telehealth platforms have a "Test your connection" option — use it to confirm your camera and microphone work. Check that your device is charged or plugged in. Close other apps that use the internet (like streaming video) to ensure a smooth connection.`,
       },
       {
         title: 'Find a good spot for the call',
@@ -249,12 +249,12 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Have your health information nearby',
-        content: 'Keep your insurance card, list of current medications, and pharmacy phone number accessible. The doctor may ask for these, need to send a prescription to a specific pharmacy, or ask follow-up questions that require checking your records. Having everything within arm\'s reach makes the visit go smoothly.',
+        content: `Keep your insurance card, list of current medications, and pharmacy phone number accessible. The doctor may ask for these, need to send a prescription to a specific pharmacy, or ask follow-up questions that require checking your records. Having everything within arm's reach makes the visit go smoothly.`,
       },
       {
-        title: 'Know what telehealth can and can\'t do',
-        content: 'Telehealth is excellent for: minor illnesses, prescription refills, mental health visits, follow-up appointments, reviewing test results, and discussing symptoms that don\'t require physical examination. It\'s not suitable for: chest pain, difficulty breathing, severe abdominal pain, or anything requiring an in-person physical exam or test. If unsure, call your doctor\'s office and ask.',
-        warning: 'If you\'re experiencing a medical emergency — chest pain, trouble breathing, severe bleeding, loss of consciousness — call 911 immediately. Do not use a telehealth app for emergencies.',
+        title: `Know what telehealth can and can't do`,
+        content: `Telehealth is excellent for: minor illnesses, prescription refills, mental health visits, follow-up appointments, reviewing test results, and discussing symptoms that don't require physical examination. It's not suitable for: chest pain, difficulty breathing, severe abdominal pain, or anything requiring an in-person physical exam or test. If unsure, call your doctor's office and ask.`,
+        warning: `If you're experiencing a medical emergency — chest pain, trouble breathing, severe bleeding, loss of consciousness — call 911 immediately. Do not use a telehealth app for emergencies.`,
       },
     ],
   },
@@ -273,7 +273,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Use Apple Health for basic tracking (iPhone)',
-        content: 'Open the Health app on your iPhone (red heart icon). Tap "Browse" to see all health categories. Tap any category (like "Symptoms") to log how you\'re feeling. You can track items like fatigue, headaches, pain, mood, sleep, blood pressure, and more. Entries are stored with the time and date automatically.',
+        content: `Open the Health app on your iPhone (red heart icon). Tap "Browse" to see all health categories. Tap any category (like "Symptoms") to log how you're feeling. You can track items like fatigue, headaches, pain, mood, sleep, blood pressure, and more. Entries are stored with the time and date automatically.`,
         tip: 'Quick Tip: Ask your doctor if they use Apple Health sharing — some doctors can directly receive data you share, which provides a more complete picture of your health over time.',
       },
       {
@@ -286,7 +286,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Track potential triggers alongside symptoms',
-        content: 'Note what you ate, your stress level, weather (cold days affect arthritis), activity level, and sleep quality alongside symptoms. Many people discover connections — like certain foods worsening acid reflux, or high-stress days preceding migraines — that they couldn\'t see day-to-day.',
+        content: `Note what you ate, your stress level, weather (cold days affect arthritis), activity level, and sleep quality alongside symptoms. Many people discover connections — like certain foods worsening acid reflux, or high-stress days preceding migraines — that they couldn't see day-to-day.`,
       },
       {
         title: 'Share your log with your doctor',
@@ -298,7 +298,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'fitbit-vs-apple-watch-compare',
     title: 'Fitbit vs Apple Watch: Which Fitness Tracker Is Right for You',
-    excerpt: 'Both track steps, heart rate, and sleep — but Apple Watch and Fitbit serve different needs. Here\'s how to decide which fits your lifestyle and budget.',
+    excerpt: `Both track steps, heart rate, and sleep — but Apple Watch and Fitbit serve different needs. Here's how to decide which fits your lifestyle and budget.`,
     category: 'health-tech',
     tags: ['fitbit', 'apple watch', 'fitness tracker', 'smartwatch', 'health tech', 'comparison'],
     readTime: '6 min',
@@ -313,12 +313,12 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Choose Apple Watch if you have an iPhone',
-        content: 'Apple Watch integrates deeply with iPhone. You can answer calls and texts from your wrist, use Siri, get turn-by-turn directions, make Apple Pay purchases, and get app notifications. The ECG heart monitoring and fall detection (which calls 911 if you fall and don\'t respond) are meaningful safety features for older adults. But the 1–2 day battery means daily charging.',
+        content: `Apple Watch integrates deeply with iPhone. You can answer calls and texts from your wrist, use Siri, get turn-by-turn directions, make Apple Pay purchases, and get app notifications. The ECG heart monitoring and fall detection (which calls 911 if you fall and don't respond) are meaningful safety features for older adults. But the 1–2 day battery means daily charging.`,
         tip: 'Quick Tip: The Apple Watch SE ($249) offers most core health and safety features at a lower price than the full Apple Watch ($399+).',
       },
       {
         title: 'Choose Fitbit if you have Android or want longer battery life',
-        content: 'If you have a Samsung or other Android phone, Fitbit is often the better fit — Apple Watch won\'t fully work with Android. Fitbits also last much longer between charges (the Fitbit Inspire 3 lasts up to 10 days), which many people find more practical than daily charging. The Fitbit app is excellent for health trend visualization.',
+        content: `If you have a Samsung or other Android phone, Fitbit is often the better fit — Apple Watch won't fully work with Android. Fitbits also last much longer between charges (the Fitbit Inspire 3 lasts up to 10 days), which many people find more practical than daily charging. The Fitbit app is excellent for health trend visualization.`,
       },
       {
         title: 'Consider the Garmin option for serious health tracking',
@@ -326,7 +326,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Where to try them before buying',
-        content: 'Best Buy and Target carry both Apple Watch and Fitbit in-store so you can try them on and see the display size. Target and Walmart have 30-day return policies if you try one and don\'t like it. Read reviews on Amazon specifically from buyers in the 60+ age group — their priorities often differ from younger reviewers.',
+        content: `Best Buy and Target carry both Apple Watch and Fitbit in-store so you can try them on and see the display size. Target and Walmart have 30-day return policies if you try one and don't like it. Read reviews on Amazon specifically from buyers in the 60+ age group — their priorities often differ from younger reviewers.`,
       },
     ],
   },
@@ -345,24 +345,24 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Open Apple News',
-        content: 'Look for the News app on your iPhone — it has a white icon with a red "N." If you don\'t see it, swipe down on your home screen and search "News." Tap to open. On first launch, Apple News will show you a setup screen to choose topics.',
+        content: `Look for the News app on your iPhone — it has a white icon with a red "N." If you don't see it, swipe down on your home screen and search "News." Tap to open. On first launch, Apple News will show you a setup screen to choose topics.`,
       },
       {
         title: 'Choose topics you care about',
         content: 'The app will show you a list of topics to follow: Politics, Health, Science, Sports, Entertainment, Food, Travel, Technology, and more. Tap the ones that interest you. You can also search for specific topics (like "gardening," "jazz music," or "local news") and follow those.',
-        tip: 'Quick Tip: Type your city name in the search bar to find and follow your local newspaper or TV station\'s news feed.',
+        tip: `Quick Tip: Type your city name in the search bar to find and follow your local newspaper or TV station's news feed.`,
       },
       {
         title: 'Browse the Today Feed',
-        content: 'The main screen (Today) shows a curated mix of top stories and articles based on your interests. Tap any headline to read the full article. When you\'re done, tap the back arrow to return to the feed. Swipe down to refresh for new stories.',
+        content: `The main screen (Today) shows a curated mix of top stories and articles based on your interests. Tap any headline to read the full article. When you're done, tap the back arrow to return to the feed. Swipe down to refresh for new stories.`,
       },
       {
         title: 'Save articles to read later',
-        content: 'See an interesting article but don\'t have time right now? Tap the bookmark icon (looks like a ribbon) on the story to save it. Find saved articles under the "Saved Stories" section in the Following tab.',
+        content: `See an interesting article but don't have time right now? Tap the bookmark icon (looks like a ribbon) on the story to save it. Find saved articles under the "Saved Stories" section in the Following tab.`,
       },
       {
         title: 'Adjust what you see',
-        content: 'Tap "Following" at the bottom of the app to manage your channels and topics. Add or remove topics anytime. If you see a source that you don\'t like or want to see less of, swipe left on a story from that source and tap "Show Less Like This" or "Block Channel."',
+        content: `Tap "Following" at the bottom of the app to manage your channels and topics. Add or remove topics anytime. If you see a source that you don't like or want to see less of, swipe left on a story from that source and tap "Show Less Like This" or "Block Channel."`,
       },
     ],
   },
@@ -385,7 +385,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Explore your personalized feed',
-        content: 'The main "For you" tab shows a personalized mix of top stories and stories Google thinks you\'ll find interesting based on your Google activity. Swipe down to refresh. Tap any headline to read the full article in a clean reading view.',
+        content: `The main "For you" tab shows a personalized mix of top stories and stories Google thinks you'll find interesting based on your Google activity. Swipe down to refresh. Tap any headline to read the full article in a clean reading view.`,
         tip: 'Quick Tip: At the bottom of each article, Google News suggests related stories and "More like this" — good for going deeper on topics you care about.',
       },
       {
@@ -394,11 +394,11 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Adjust your feed over time',
-        content: 'When you see an article you don\'t like, tap the three-dot menu (⋮) next to it and choose "Hide stories from [source]" or "Not interested in [topic]." Google News learns from these signals and adjusts your feed. The more you interact, the more accurate it gets.',
+        content: `When you see an article you don't like, tap the three-dot menu (⋮) next to it and choose "Hide stories from [source]" or "Not interested in [topic]." Google News learns from these signals and adjusts your feed. The more you interact, the more accurate it gets.`,
       },
       {
         title: 'Use the Full Coverage feature',
-        content: 'Tap any story and scroll down to see "Full Coverage." This shows how different news organizations are reporting the same story — useful for getting multiple perspectives on an important event rather than just one source\'s take.',
+        content: `Tap any story and scroll down to see "Full Coverage." This shows how different news organizations are reporting the same story — useful for getting multiple perspectives on an important event rather than just one source's take.`,
       },
     ],
   },
@@ -417,7 +417,7 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Go to Google Alerts',
-        content: 'Open a web browser on any device and go to alerts.google.com. You\'ll see a search bar at the top. Sign in with your Google account if prompted.',
+        content: `Open a web browser on any device and go to alerts.google.com. You'll see a search bar at the top. Sign in with your Google account if prompted.`,
       },
       {
         title: 'Create your first alert',
@@ -466,12 +466,12 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Remove rarely-used apps from the home screen',
-        content: 'Apps you almost never open don\'t need to take up prime home screen real estate. In jiggle mode, tap the "X" on an app you want to remove from the home screen. Choose "Remove from Home Screen" (this doesn\'t delete the app — it moves it to the App Library). You can still find it by swiping right to the App Library.',
+        content: `Apps you almost never open don't need to take up prime home screen real estate. In jiggle mode, tap the "X" on an app you want to remove from the home screen. Choose "Remove from Home Screen" (this doesn't delete the app — it moves it to the App Library). You can still find it by swiping right to the App Library.`,
         warning: 'If you choose "Delete App" instead of "Remove from Home Screen," it will be deleted entirely. Be careful — "Remove from Home Screen" keeps the app installed but hidden from the main home screen.',
       },
       {
         title: 'Rearrange home screen pages',
-        content: 'In jiggle mode, tap and hold the small dots at the bottom of the screen that represent your pages. You\'ll see thumbnails of all your home screen pages. Drag to reorder them. Tap the checkmark under any page to hide it (uncheck means it won\'t show — apps go to App Library instead).',
+        content: `In jiggle mode, tap and hold the small dots at the bottom of the screen that represent your pages. You'll see thumbnails of all your home screen pages. Drag to reorder them. Tap the checkmark under any page to hide it (uncheck means it won't show — apps go to App Library instead).`,
       },
     ],
   },
@@ -479,7 +479,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'autocorrect-settings-iphone',
     title: 'How to Fix Autocorrect and Keyboard Settings on iPhone',
-    excerpt: 'iPhone\'s autocorrect can be helpful or infuriating. Here\'s how to adjust it, turn it off, or customize your keyboard to match how you type.',
+    excerpt: `iPhone's autocorrect can be helpful or infuriating. Here's how to adjust it, turn it off, or customize your keyboard to match how you type.`,
     category: 'tips-tricks',
     tags: ['autocorrect', 'iphone keyboard', 'predictive text', 'keyboard settings', 'iphone tips'],
     readTime: '4 min',
@@ -490,12 +490,12 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Open keyboard settings',
-        content: 'Go to Settings > General > Keyboard. This is where all keyboard-related settings live. You\'ll see toggles for Auto-Correction, Auto-Capitalization, Predictive Text, Smart Punctuation, and more.',
+        content: `Go to Settings > General > Keyboard. This is where all keyboard-related settings live. You'll see toggles for Auto-Correction, Auto-Capitalization, Predictive Text, Smart Punctuation, and more.`,
       },
       {
         title: 'Adjust or turn off autocorrect',
         content: 'Toggle "Auto-Correction" off to completely disable autocorrect — your phone will stop changing words you type. If you want to keep it but reduce how aggressively it changes things, keep it on but also turn off "Predictive Text" — this shows the row of suggested words above the keyboard which can sometimes cause confusion.',
-        tip: 'Quick Tip: iOS 17 and later made autocorrect smarter — it now shows when it\'s about to correct you and gives you a chance to accept or reject. If you have this version, autocorrect is much less intrusive than it used to be.',
+        tip: `Quick Tip: iOS 17 and later made autocorrect smarter — it now shows when it's about to correct you and gives you a chance to accept or reject. If you have this version, autocorrect is much less intrusive than it used to be.`,
       },
       {
         title: 'Create text shortcuts',
@@ -507,7 +507,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Correct words autocorrect changed in the past',
-        content: 'If your iPhone keeps autocorrecting a word that you type correctly, there\'s a fix: go to Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary. This clears all the learned corrections and word history. You\'ll need to re-teach it your preferred spellings, but it stops persistent wrong corrections.',
+        content: `If your iPhone keeps autocorrecting a word that you type correctly, there's a fix: go to Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary. This clears all the learned corrections and word history. You'll need to re-teach it your preferred spellings, but it stops persistent wrong corrections.`,
       },
     ],
   },
@@ -515,7 +515,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'soundbar-setup-guide',
     title: 'How to Connect a Soundbar to Your TV',
-    excerpt: 'A soundbar dramatically improves your TV\'s audio. Learn how to connect one with HDMI ARC, optical cable, or Bluetooth — and the best settings to use.',
+    excerpt: `A soundbar dramatically improves your TV's audio. Learn how to connect one with HDMI ARC, optical cable, or Bluetooth — and the best settings to use.`,
     category: 'entertainment',
     tags: ['soundbar', 'TV audio', 'HDMI ARC', 'TV sound', 'home theater', 'setup'],
     readTime: '6 min',
@@ -525,17 +525,17 @@ export const guidesBatch22: Guide[] = [
     body: `Modern flat TVs look great but often have poor sound — the speakers are thin and point away from you, making dialogue hard to hear, especially at lower volumes. A soundbar is a long, flat speaker that sits below your TV and delivers significantly richer, clearer audio. Dialogue becomes easier to understand, music sounds fuller, and the overall experience improves dramatically.\n\nSoundbars connect to your TV in one of three ways: HDMI ARC (best quality, one cable does audio and control), optical digital cable (also good), or Bluetooth (wireless, most flexible but slightly less reliable). This guide covers all three methods so you can use whichever port your TV has.`,
     steps: [
       {
-        title: 'Identify your TV\'s audio output ports',
+        title: `Identify your TV's audio output ports`,
         content: 'Look at the back or side of your TV for:\n- HDMI ARC port: labeled "HDMI ARC" or "HDMI eARC" — this is the best connection method\n- Optical audio port: a small square port (looks like an optical fiber connection), labeled "Digital Audio Out" or "Optical"\n- Bluetooth: no port needed\n\nMost TVs made after 2010 have at least one of these. Check which port your soundbar also supports.',
       },
       {
         title: 'Connect with HDMI ARC (recommended)',
-        content: 'Plug one end of an HDMI cable into the port labeled "HDMI ARC" on your TV, and the other end into the "HDMI ARC" port on your soundbar. Power on both. Go to your TV\'s Settings > Audio > Audio Output and select "HDMI ARC" or "External speakers." Your TV remote volume buttons should now control the soundbar.',
-        tip: 'Quick Tip: HDMI ARC lets your TV remote control the soundbar volume — you won\'t need a second remote. This is a major convenience advantage over other connection methods.',
+        content: `Plug one end of an HDMI cable into the port labeled "HDMI ARC" on your TV, and the other end into the "HDMI ARC" port on your soundbar. Power on both. Go to your TV's Settings > Audio > Audio Output and select "HDMI ARC" or "External speakers." Your TV remote volume buttons should now control the soundbar.`,
+        tip: `Quick Tip: HDMI ARC lets your TV remote control the soundbar volume — you won't need a second remote. This is a major convenience advantage over other connection methods.`,
       },
       {
         title: 'Connect with optical cable',
-        content: 'Plug the optical cable into the "Digital Audio Out (Optical)" port on your TV, and into the "Optical In" port on your soundbar. Remove the plastic protective tips from both ends of the cable before inserting. In your TV\'s Settings > Audio, set output to "Digital Audio Out (Optical)." Use the soundbar\'s remote to control volume.',
+        content: `Plug the optical cable into the "Digital Audio Out (Optical)" port on your TV, and into the "Optical In" port on your soundbar. Remove the plastic protective tips from both ends of the cable before inserting. In your TV's Settings > Audio, set output to "Digital Audio Out (Optical)." Use the soundbar's remote to control volume.`,
       },
       {
         title: 'Connect via Bluetooth',
@@ -574,12 +574,12 @@ export const guidesBatch22: Guide[] = [
         content: 'You can also visit or call your local Social Security office to request a replacement. Find your nearest office at socialsecurity.gov/locator or call Social Security at 1-800-772-1213. Social Security manages Medicare enrollment and can issue replacement cards.',
       },
       {
-        title: 'Update your address if it\'s changed',
-        content: 'Your replacement card will be mailed to the address Medicare has on file. If you\'ve moved recently, update your address first by signing into your Medicare or Social Security account online, or by calling 1-800-MEDICARE. An outdated address means the card goes to the wrong place.',
+        title: `Update your address if it's changed`,
+        content: `Your replacement card will be mailed to the address Medicare has on file. If you've moved recently, update your address first by signing into your Medicare or Social Security account online, or by calling 1-800-MEDICARE. An outdated address means the card goes to the wrong place.`,
       },
       {
         title: 'Protect your Medicare number',
-        content: 'Your Medicare number is as sensitive as your Social Security number. Only give it to your doctor, hospital, or other healthcare providers. Medicare will never call and ask for your Medicare number over the phone. If someone calls asking for your Medicare number, hang up — it\'s a scam.',
+        content: `Your Medicare number is as sensitive as your Social Security number. Only give it to your doctor, hospital, or other healthcare providers. Medicare will never call and ask for your Medicare number over the phone. If someone calls asking for your Medicare number, hang up — it's a scam.`,
         warning: 'Medicare does not call asking for your Medicare card number, bank information, or Social Security number. Any such call is a scam — hang up immediately.',
       },
     ],
@@ -599,17 +599,17 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Create your my Social Security account',
-        content: 'Go to ssa.gov and click "Sign in or Create an Account." First-time users click "Create a new account." You\'ll be guided to create a Login.gov account (the federal government\'s secure single sign-on system). You\'ll need: your email address, a phone or email for verification, and your Social Security number to verify your identity.',
+        content: `Go to ssa.gov and click "Sign in or Create an Account." First-time users click "Create a new account." You'll be guided to create a Login.gov account (the federal government's secure single sign-on system). You'll need: your email address, a phone or email for verification, and your Social Security number to verify your identity.`,
         tip: 'Quick Tip: Login.gov is a secure federal system — your Social Security information stays private and is not shared with other agencies.',
       },
       {
         title: 'View your benefit estimate',
-        content: 'After signing in, tap "Estimated Benefits" or look for the "My Home" dashboard. You\'ll see estimated monthly benefit amounts at different ages: at 62 (early reduced), at your full retirement age (66–67 depending on birth year), and at 70 (maximum benefit). This helps you decide when to start collecting.',
+        content: `After signing in, tap "Estimated Benefits" or look for the "My Home" dashboard. You'll see estimated monthly benefit amounts at different ages: at 62 (early reduced), at your full retirement age (66–67 depending on birth year), and at 70 (maximum benefit). This helps you decide when to start collecting.`,
       },
       {
         title: 'Check your earnings record',
-        content: 'Tap "Earnings Record" to see every year of your work history that Social Security has on file. Review this carefully — errors in the earnings record can reduce your benefit. If you spot a year that\'s wrong or missing (for instance, a job you worked but the earnings don\'t appear), you can request a correction by contacting Social Security.',
-        warning: 'Errors in your earnings record directly reduce your monthly benefit. It\'s worth checking this at least every few years while still working, so you can correct mistakes before you retire.',
+        content: `Tap "Earnings Record" to see every year of your work history that Social Security has on file. Review this carefully — errors in the earnings record can reduce your benefit. If you spot a year that's wrong or missing (for instance, a job you worked but the earnings don't appear), you can request a correction by contacting Social Security.`,
+        warning: `Errors in your earnings record directly reduce your monthly benefit. It's worth checking this at least every few years while still working, so you can correct mistakes before you retire.`,
       },
       {
         title: 'Download a benefit verification letter',
@@ -625,7 +625,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'power-of-attorney-basics',
     title: 'What Is Power of Attorney and Why Every Adult Should Have One',
-    excerpt: 'A power of attorney lets a trusted person make decisions on your behalf if you become unable to — for finances, medical decisions, or both. Here\'s what you need to know.',
+    excerpt: `A power of attorney lets a trusted person make decisions on your behalf if you become unable to — for finances, medical decisions, or both. Here's what you need to know.`,
     category: 'life-transitions',
     tags: ['power of attorney', 'legal documents', 'estate planning', 'advance directive', 'financial planning'],
     readTime: '6 min',
@@ -636,15 +636,15 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Understand the two main types',
-        content: 'Financial Power of Attorney: Gives your agent authority to handle financial matters — bank accounts, bills, real estate, investments — if you\'re incapacitated.\n\nHealthcare Power of Attorney (also called Healthcare Proxy or Medical POA): Gives your agent authority to make medical decisions if you can\'t speak for yourself — treatment choices, end-of-life care, surgery decisions.\n\nMost people should have both.',
+        content: `Financial Power of Attorney: Gives your agent authority to handle financial matters — bank accounts, bills, real estate, investments — if you're incapacitated.\n\nHealthcare Power of Attorney (also called Healthcare Proxy or Medical POA): Gives your agent authority to make medical decisions if you can't speak for yourself — treatment choices, end-of-life care, surgery decisions.\n\nMost people should have both.`,
       },
       {
         title: 'Choose your agent carefully',
-        content: 'Your agent must be someone you trust completely. They\'ll have significant legal authority. Most people choose a spouse, adult child, sibling, or trusted close friend. Consider: who lives nearby and can act quickly, who handles stress well, who understands your wishes and values. Name a backup agent in case your first choice can\'t serve.',
+        content: `Your agent must be someone you trust completely. They'll have significant legal authority. Most people choose a spouse, adult child, sibling, or trusted close friend. Consider: who lives nearby and can act quickly, who handles stress well, who understands your wishes and values. Name a backup agent in case your first choice can't serve.`,
       },
       {
         title: 'Set up a Durable POA',
-        content: 'A "Durable" power of attorney remains in effect even if you become incapacitated — that\'s what makes it essential. A non-durable POA terminates if you become incapacitated, making it nearly useless for the purpose most people need it for. Make sure any POA you sign is explicitly "Durable."',
+        content: `A "Durable" power of attorney remains in effect even if you become incapacitated — that's what makes it essential. A non-durable POA terminates if you become incapacitated, making it nearly useless for the purpose most people need it for. Make sure any POA you sign is explicitly "Durable."`,
         tip: 'Quick Tip: Every state has slightly different POA requirements. Using a state-specific form is important. Your state bar association website usually has free or low-cost forms.',
       },
       {
@@ -653,8 +653,8 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Store and share the document',
-        content: 'Sign the POA in front of a notary public (required in most states) and witnesses. Keep the original in a safe place (fireproof box, bank safe deposit box). Give certified copies to: your agent, your bank, your doctor\'s office, and any institution that may need to act on it. Let your agent know where the original is.',
-        warning: 'A POA only takes effect under the conditions you specify. Review yours with an attorney if you\'re unsure about what triggers it. Outdated documents may not be accepted — review every 3–5 years.',
+        content: `Sign the POA in front of a notary public (required in most states) and witnesses. Keep the original in a safe place (fireproof box, bank safe deposit box). Give certified copies to: your agent, your bank, your doctor's office, and any institution that may need to act on it. Let your agent know where the original is.`,
+        warning: `A POA only takes effect under the conditions you specify. Review yours with an attorney if you're unsure about what triggers it. Outdated documents may not be accepted — review every 3–5 years.`,
       },
     ],
   },
@@ -672,25 +672,25 @@ export const guidesBatch22: Guide[] = [
     body: `Paper coupons used to mean sitting with scissors and a Sunday newspaper. Today, every major grocery chain — Kroger, Safeway/Albertsons, Publix, Giant, Stop & Shop, Food Lion, Harris Teeter, and many others — offers digital coupons through their app or website. You "clip" them with a tap on your phone, and the discounts apply automatically at checkout when you scan your loyalty card.\n\nDigital coupons require no scissors, no forgotten coupons in the car, and no checking expiration dates on paper slips. You can browse offers before you go to the store, add them to your card in 30 seconds, and save $5–$20 per trip if you shop the deals.\n\nThis guide uses Kroger as the example (the same process works at Kroger-owned stores like Fred Meyer, Ralph's, Fry's, Harris Teeter, Smith's, and others), but the steps are nearly identical at competing chains.`,
     steps: [
       {
-        title: 'Download your store\'s app',
-        content: 'Search for your grocery store by name in the App Store or Google Play Store and install the free app. Examples: "Kroger," "Safeway," "Albertsons," "Publix," "Giant." Sign in or create a free account using your email address. You\'ll need to link your existing loyalty card number or create a new loyalty card through the app.',
+        title: `Download your store's app`,
+        content: `Search for your grocery store by name in the App Store or Google Play Store and install the free app. Examples: "Kroger," "Safeway," "Albertsons," "Publix," "Giant." Sign in or create a free account using your email address. You'll need to link your existing loyalty card number or create a new loyalty card through the app.`,
       },
       {
         title: 'Find and clip digital coupons',
-        content: 'Look for "Coupons" or "Digital Coupons" in the app\'s bottom navigation or menu. You\'ll see a list of current offers — usually 100+ at any time. Each coupon shows the discount and which product it applies to. Tap "Clip" or "Add" next to any coupon you want. Clipped coupons are saved to your loyalty card.',
+        content: `Look for "Coupons" or "Digital Coupons" in the app's bottom navigation or menu. You'll see a list of current offers — usually 100+ at any time. Each coupon shows the discount and which product it applies to. Tap "Clip" or "Add" next to any coupon you want. Clipped coupons are saved to your loyalty card.`,
         tip: 'Quick Tip: Browse coupons before making your shopping list. You may find great deals on things you already planned to buy — or spot a discount that changes what you decide to pick up.',
       },
       {
         title: 'Check for personalized offers',
-        content: 'Most store apps also show "Personalized Deals" or "Just for U" offers — discounts on products you buy frequently. These are often deeper discounts than the general coupons. Check this section separately as these offers aren\'t always mixed with the main coupon list.',
+        content: `Most store apps also show "Personalized Deals" or "Just for U" offers — discounts on products you buy frequently. These are often deeper discounts than the general coupons. Check this section separately as these offers aren't always mixed with the main coupon list.`,
       },
       {
         title: 'Use your loyalty card at checkout',
-        content: 'At the store checkout, scan your loyalty card (physical card or the barcode in the app under "My Card" or "Scan Card"). All your clipped coupons automatically deduct from your total — you don\'t need to show or hand over anything. The discount appears on the checkout screen as each qualifying item is scanned.',
+        content: `At the store checkout, scan your loyalty card (physical card or the barcode in the app under "My Card" or "Scan Card"). All your clipped coupons automatically deduct from your total — you don't need to show or hand over anything. The discount appears on the checkout screen as each qualifying item is scanned.`,
       },
       {
         title: 'Check the weekly ad for more savings',
-        content: 'The app\'s "Weekly Ad" section shows this week\'s sales — usually 50–100 discounted items. Many weekly ad prices are only available with your loyalty card. Before shopping, spend 2 minutes browsing the weekly ad and building your list around what\'s on sale.',
+        content: `The app's "Weekly Ad" section shows this week's sales — usually 50–100 discounted items. Many weekly ad prices are only available with your loyalty card. Before shopping, spend 2 minutes browsing the weekly ad and building your list around what's on sale.`,
       },
     ],
   },
@@ -698,7 +698,7 @@ export const guidesBatch22: Guide[] = [
   {
     slug: 'medicare-basics-explained',
     title: 'Medicare Basics: What Parts A, B, C, and D Mean',
-    excerpt: 'Medicare has four parts that cover different types of care. Here\'s a plain-English explanation of Parts A, B, C, and D so you know what\'s covered and what\'s not.',
+    excerpt: `Medicare has four parts that cover different types of care. Here's a plain-English explanation of Parts A, B, C, and D so you know what's covered and what's not.`,
     category: 'government-civic',
     tags: ['medicare', 'medicare parts', 'medicare basics', 'part A', 'part B', 'part D'],
     readTime: '6 min',
@@ -709,11 +709,11 @@ export const guidesBatch22: Guide[] = [
     steps: [
       {
         title: 'Part A — Hospital Insurance',
-        content: 'Part A covers: inpatient hospital care (if you\'re admitted), skilled nursing facility care (after a qualifying hospital stay), hospice care, and some home health care.\n\nCost: Most people pay $0 premium for Part A if they or their spouse worked and paid Medicare taxes for 10 or more years. There is a deductible for each hospital stay.\n\nYou should enroll in Part A when you turn 65, even if you\'re still working — it\'s usually free.',
+        content: `Part A covers: inpatient hospital care (if you're admitted), skilled nursing facility care (after a qualifying hospital stay), hospice care, and some home health care.\n\nCost: Most people pay $0 premium for Part A if they or their spouse worked and paid Medicare taxes for 10 or more years. There is a deductible for each hospital stay.\n\nYou should enroll in Part A when you turn 65, even if you're still working — it's usually free.`,
       },
       {
         title: 'Part B — Medical Insurance',
-        content: 'Part B covers: doctor visits, outpatient procedures, preventive care (annual wellness visit, screenings, vaccines), lab tests, medical equipment (wheelchairs, walkers), and mental health services.\n\nCost: Most people pay $174.70/month (2024) as a premium. There\'s also a $240 annual deductible and 20% coinsurance after that.\n\nPart B is optional but most people need it. If you have employer insurance, you may be able to delay enrollment without penalty.',
+        content: `Part B covers: doctor visits, outpatient procedures, preventive care (annual wellness visit, screenings, vaccines), lab tests, medical equipment (wheelchairs, walkers), and mental health services.\n\nCost: Most people pay $174.70/month (2024) as a premium. There's also a $240 annual deductible and 20% coinsurance after that.\n\nPart B is optional but most people need it. If you have employer insurance, you may be able to delay enrollment without penalty.`,
         tip: 'Quick Tip: Parts A + B together are called "Original Medicare." They cover a lot but leave out prescription drugs, dental, vision, and hearing.',
       },
       {
@@ -722,7 +722,7 @@ export const guidesBatch22: Guide[] = [
       },
       {
         title: 'Part D — Prescription Drug Coverage',
-        content: 'Part D covers prescription medications. These are private plans you add to Original Medicare (A+B) to get drug coverage. Costs vary by plan and what drugs you take.\n\nIf you choose Medicare Advantage (Part C), drug coverage is usually included.\n\nImportant: There\'s a penalty for not enrolling in Part D when first eligible (unless you had other qualifying drug coverage). Even if you take few medications, a basic Part D plan protects you from high costs if you need expensive drugs later.',
+        content: `Part D covers prescription medications. These are private plans you add to Original Medicare (A+B) to get drug coverage. Costs vary by plan and what drugs you take.\n\nIf you choose Medicare Advantage (Part C), drug coverage is usually included.\n\nImportant: There's a penalty for not enrolling in Part D when first eligible (unless you had other qualifying drug coverage). Even if you take few medications, a basic Part D plan protects you from high costs if you need expensive drugs later.`,
       },
       {
         title: 'What Medicare does NOT cover',

@@ -33,7 +33,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Option 2 — Donate it',
-        content: 'Charities like Cell Phones for Soldiers (cellphonesforsoldiers.com) send phones to military members, and Secure the Call (securethecall.org) gives them to seniors for emergency 911 calls. Domestic violence shelters, veterans organizations, and senior centers also accept donated phones. Make sure it\'s erased first.',
+        content: `Charities like Cell Phones for Soldiers (cellphonesforsoldiers.com) send phones to military members, and Secure the Call (securethecall.org) gives them to seniors for emergency 911 calls. Domestic violence shelters, veterans organizations, and senior centers also accept donated phones. Make sure it's erased first.`,
       },
       {
         title: 'Option 3 — Recycle it',
@@ -56,24 +56,24 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Blue bubble = iMessage',
-        content: 'Blue bubbles mean the message was sent via Apple\'s iMessage system — over the internet (Wi-Fi or cellular data). iMessages only work when both you AND the person you\'re texting have an iPhone (or other Apple device) with iMessage enabled. They\'re free regardless of your text plan, encrypted, and include delivery/read receipts.',
+        content: `Blue bubbles mean the message was sent via Apple's iMessage system — over the internet (Wi-Fi or cellular data). iMessages only work when both you AND the person you're texting have an iPhone (or other Apple device) with iMessage enabled. They're free regardless of your text plan, encrypted, and include delivery/read receipts.`,
       },
       {
         title: 'Green bubble = SMS/MMS text',
-        content: 'Green bubbles mean the message was sent as a regular text message using your phone carrier\'s network (like AT&T, Verizon, or T-Mobile). This happens when the person you\'re texting has an Android phone, or has iMessage turned off. SMS counts toward your text message plan (though most plans include unlimited texts).',
+        content: `Green bubbles mean the message was sent as a regular text message using your phone carrier's network (like AT&T, Verizon, or T-Mobile). This happens when the person you're texting has an Android phone, or has iMessage turned off. SMS counts toward your text message plan (though most plans include unlimited texts).`,
         tip: 'Quick Tip: If you text someone and the bubble is green, it just means they have a non-iPhone — not that something is wrong.',
       },
       {
         title: 'Read receipts and "Delivered" — what they mean',
-        content: 'Under a blue (iMessage) bubble: "Delivered" means the message reached their device. "Read" means they opened the conversation (only shows if they have read receipts turned on for you). Under a green bubble: you typically don\'t see "Read" receipts — just "Sent."',
+        content: `Under a blue (iMessage) bubble: "Delivered" means the message reached their device. "Read" means they opened the conversation (only shows if they have read receipts turned on for you). Under a green bubble: you typically don't see "Read" receipts — just "Sent."`,
       },
       {
         title: 'What happens when iPhone sends a text to Android',
-        content: 'When you text someone with an Android phone from your iPhone, it always goes as a green SMS. You won\'t see read receipts. Photos you send will be compressed more heavily. Some iPhone-only features (like reactions/tapbacks, message effects, and thread replies) won\'t appear correctly on their end.',
+        content: `When you text someone with an Android phone from your iPhone, it always goes as a green SMS. You won't see read receipts. Photos you send will be compressed more heavily. Some iPhone-only features (like reactions/tapbacks, message effects, and thread replies) won't appear correctly on their end.`,
       },
       {
         title: 'iMessage needs internet — what to do when it fails',
-        content: 'If iMessage can\'t send (no internet, server issue), your iPhone can automatically send it as an SMS instead. Make sure this fallback is on: go to Settings > Messages > "Send as SMS" and make sure it\'s toggled on. This way your messages always go through, even if iMessage is temporarily unavailable.',
+        content: `If iMessage can't send (no internet, server issue), your iPhone can automatically send it as an SMS instead. Make sure this fallback is on: go to Settings > Messages > "Send as SMS" and make sure it's toggled on. This way your messages always go through, even if iMessage is temporarily unavailable.`,
       },
     ],
   },
@@ -81,7 +81,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'kindle-paperwhite-setup',
     title: 'How to Set Up and Use a Kindle Paperwhite',
-    excerpt: 'A Kindle Paperwhite is a dedicated e-reader that holds thousands of books in a slim device. Here\'s how to set it up and start reading.',
+    excerpt: `A Kindle Paperwhite is a dedicated e-reader that holds thousands of books in a slim device. Here's how to set it up and start reading.`,
     category: 'essential-skills',
     tags: ['kindle', 'kindle paperwhite', 'e-reader', 'ebooks', 'amazon kindle', 'reading'],
     readTime: '6 min',
@@ -92,11 +92,11 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Charge and turn on your Kindle',
-        content: 'Connect the included USB-C cable to the Kindle and a wall charger. Charge for at least an hour before first use. Press and hold the power button on the bottom edge until the screen lights up. You\'ll see the setup screen.',
+        content: `Connect the included USB-C cable to the Kindle and a wall charger. Charge for at least an hour before first use. Press and hold the power button on the bottom edge until the screen lights up. You'll see the setup screen.`,
       },
       {
         title: 'Connect to Wi-Fi',
-        content: 'On the setup screen, select your home Wi-Fi network from the list and enter your password. The Kindle needs Wi-Fi only to download books — once downloaded, you can read without any connection. The Kindle doesn\'t need to stay connected.',
+        content: `On the setup screen, select your home Wi-Fi network from the list and enter your password. The Kindle needs Wi-Fi only to download books — once downloaded, you can read without any connection. The Kindle doesn't need to stay connected.`,
       },
       {
         title: 'Register to your Amazon account',
@@ -105,7 +105,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Buy and download your first book',
-        content: 'Tap the Store icon (shopping bag icon) on the home screen. Search for a book title or author. Tap "Buy for $X.XX" or "Read for Free" (if it\'s free or included with Kindle Unlimited). Books download in seconds over Wi-Fi and appear on your home screen. Tap the cover to start reading.',
+        content: `Tap the Store icon (shopping bag icon) on the home screen. Search for a book title or author. Tap "Buy for $X.XX" or "Read for Free" (if it's free or included with Kindle Unlimited). Books download in seconds over Wi-Fi and appear on your home screen. Tap the cover to start reading.`,
       },
       {
         title: 'Adjust text size and lighting',
@@ -114,7 +114,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Borrow free library books',
-        content: 'If your library uses OverDrive or Libby, you can borrow ebooks for free. Install the Libby app on your phone or tablet, sign in with your library card, and borrow a Kindle book. Choose "Send to Kindle" and it\'ll appear on your Paperwhite over Wi-Fi within minutes.',
+        content: `If your library uses OverDrive or Libby, you can borrow ebooks for free. Install the Libby app on your phone or tablet, sign in with your library card, and borrow a Kindle book. Choose "Send to Kindle" and it'll appear on your Paperwhite over Wi-Fi within minutes.`,
       },
     ],
   },
@@ -122,7 +122,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'wyze-camera-setup',
     title: 'How to Set Up a Wyze Smart Security Camera',
-    excerpt: 'Wyze cameras are affordable indoor security cameras that let you watch your home from your phone. Here\'s how to set one up in about 10 minutes.',
+    excerpt: `Wyze cameras are affordable indoor security cameras that let you watch your home from your phone. Here's how to set one up in about 10 minutes.`,
     category: 'smart-home',
     tags: ['wyze', 'security camera', 'smart home', 'home monitoring', 'wyze cam'],
     readTime: '6 min',
@@ -137,7 +137,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Plug in and position the camera',
-        content: 'Plug the camera into any wall outlet using the included USB cable and adapter. Place it on a shelf, countertop, or use the included mount to attach it to a wall or window frame. Make sure it\'s within range of your Wi-Fi router.',
+        content: `Plug the camera into any wall outlet using the included USB cable and adapter. Place it on a shelf, countertop, or use the included mount to attach it to a wall or window frame. Make sure it's within range of your Wi-Fi router.`,
         tip: 'Quick Tip: Position the camera so the front (lens side) faces the area you want to monitor. The camera works in low light too — the infrared night vision automatically activates in the dark.',
       },
       {
@@ -146,12 +146,12 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Enter your Wi-Fi password',
-        content: 'The app will ask for your home Wi-Fi network name and password. Enter these carefully — the camera only works on 2.4 GHz Wi-Fi networks (most home networks have both 2.4 and 5 GHz; if asked, choose the 2.4 GHz version). Wait for the camera to connect — you\'ll hear a voice say "Connection successful."',
+        content: `The app will ask for your home Wi-Fi network name and password. Enter these carefully — the camera only works on 2.4 GHz Wi-Fi networks (most home networks have both 2.4 and 5 GHz; if asked, choose the 2.4 GHz version). Wait for the camera to connect — you'll hear a voice say "Connection successful."`,
       },
       {
         title: 'View your camera and set up alerts',
-        content: 'Tap your camera in the Wyze app to see the live view. Tap the camera settings (gear icon) to set up motion detection alerts — the app will notify your phone when movement is detected. You can adjust the sensitivity so pets don\'t trigger constant alerts.',
-        warning: 'Be respectful of privacy: make sure anyone who lives in or regularly visits your home knows there is a camera. Pointing cameras into a neighbor\'s property may violate local laws.',
+        content: `Tap your camera in the Wyze app to see the live view. Tap the camera settings (gear icon) to set up motion detection alerts — the app will notify your phone when movement is detected. You can adjust the sensitivity so pets don't trigger constant alerts.`,
+        warning: `Be respectful of privacy: make sure anyone who lives in or regularly visits your home knows there is a camera. Pointing cameras into a neighbor's property may violate local laws.`,
       },
     ],
   },
@@ -170,16 +170,16 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Put light in front of you, not behind',
-        content: 'The most common mistake: sitting with a bright window or lamp behind you. This makes you look like a dark silhouette. Instead, face a window or lamp — put the light source in front of you, shining on your face. Natural window light is ideal. If your room is dark, use a lamp or even a ring light (they\'re inexpensive) pointed at your face.',
+        content: `The most common mistake: sitting with a bright window or lamp behind you. This makes you look like a dark silhouette. Instead, face a window or lamp — put the light source in front of you, shining on your face. Natural window light is ideal. If your room is dark, use a lamp or even a ring light (they're inexpensive) pointed at your face.`,
         tip: 'Quick Tip: This single change — facing a light source — does more to improve your video appearance than any camera upgrade.',
       },
       {
         title: 'Position the camera at eye level',
-        content: 'If you\'re on a laptop, the camera is usually below eye level, making people look up your nose. Raise the laptop on a stack of books so the camera is at eye level. If using a phone, prop it up or use a stand so it faces you straight on, not from below.',
+        content: `If you're on a laptop, the camera is usually below eye level, making people look up your nose. Raise the laptop on a stack of books so the camera is at eye level. If using a phone, prop it up or use a stand so it faces you straight on, not from below.`,
       },
       {
         title: 'Look at the camera, not the screen',
-        content: 'It feels natural to look at the other person\'s face on screen, but that means your eyes are pointed down. To make eye contact, look directly at the camera lens (the tiny dot at the top of the screen or laptop lid). This makes you appear engaged and present to the other person.',
+        content: `It feels natural to look at the other person's face on screen, but that means your eyes are pointed down. To make eye contact, look directly at the camera lens (the tiny dot at the top of the screen or laptop lid). This makes you appear engaged and present to the other person.`,
       },
       {
         title: 'Improve your audio',
@@ -211,7 +211,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Browse and find music you like',
-        content: 'Tap "Browse" at the bottom of the app to see categories: genres, moods, decades, and playlists. If you love music from the 50s, 60s, 70s, or a specific genre like country, gospel, jazz, or classical, you\'ll find dedicated playlists. Tap a playlist to start it.',
+        content: `Tap "Browse" at the bottom of the app to see categories: genres, moods, decades, and playlists. If you love music from the 50s, 60s, 70s, or a specific genre like country, gospel, jazz, or classical, you'll find dedicated playlists. Tap a playlist to start it.`,
         tip: 'Quick Tip: Tap the search icon and type an artist name (like "Frank Sinatra" or "Dolly Parton") to find their music and see curated playlists featuring them.',
       },
       {
@@ -244,11 +244,11 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Open the Books app',
-        content: 'Look for the Books app on your iPhone or iPad — it has an orange icon with a white book on it. If you don\'t see it, swipe down on your home screen and search "Books" to find it. Tap to open.',
+        content: `Look for the Books app on your iPhone or iPad — it has an orange icon with a white book on it. If you don't see it, swipe down on your home screen and search "Books" to find it. Tap to open.`,
       },
       {
         title: 'Browse the bookstore',
-        content: 'Tap "Book Store" at the bottom of the screen to browse. You\'ll see featured titles, bestsellers, and categories. Browse by genre (Fiction, Mystery, History, etc.) or search for a specific title or author at the top. Tap any book to see its description, sample pages, and price.',
+        content: `Tap "Book Store" at the bottom of the screen to browse. You'll see featured titles, bestsellers, and categories. Browse by genre (Fiction, Mystery, History, etc.) or search for a specific title or author at the top. Tap any book to see its description, sample pages, and price.`,
         tip: 'Quick Tip: Many books offer a free sample of the first chapter or two. Tap "Get Sample" to try before you buy.',
       },
       {
@@ -257,7 +257,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Buy a book',
-        content: 'Tap a book you want, then tap the price button. You\'ll be asked to confirm with your Apple ID password or Face ID/Touch ID. The book downloads in seconds and appears in your Library. Tap Library at the bottom to find all your books.',
+        content: `Tap a book you want, then tap the price button. You'll be asked to confirm with your Apple ID password or Face ID/Touch ID. The book downloads in seconds and appears in your Library. Tap Library at the bottom to find all your books.`,
       },
       {
         title: 'Adjust text size and reading settings',
@@ -281,7 +281,7 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Open Google Play Books',
-        content: 'Look for the Google Play Books app on your Android phone — it has a blue icon with a white letter "G" and a book. If it\'s not installed, open the Play Store and search "Google Play Books" to install it free. Sign in with your Google account.',
+        content: `Look for the Google Play Books app on your Android phone — it has a blue icon with a white letter "G" and a book. If it's not installed, open the Play Store and search "Google Play Books" to install it free. Sign in with your Google account.`,
       },
       {
         title: 'Browse and buy books',
@@ -294,11 +294,11 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Adjust reading settings',
-        content: 'While reading, tap the middle of the screen to see the reading controls. Tap the "Aa" icon to adjust: text size (go large — there\'s no wrong answer), line spacing, and background. Tap the moon icon for Night Mode, which shows white text on a black background to reduce eye strain in dim rooms.',
+        content: `While reading, tap the middle of the screen to see the reading controls. Tap the "Aa" icon to adjust: text size (go large — there's no wrong answer), line spacing, and background. Tap the moon icon for Night Mode, which shows white text on a black background to reduce eye strain in dim rooms.`,
       },
       {
         title: 'Upload PDFs and other documents',
-        content: 'If you have PDF files you\'d like to read — instruction manuals, documents, anything in PDF format — tap the "Library" tab, then the upload button. Select the PDF from your phone\'s storage and it appears in your Library alongside your books. Google Play Books even lets you add notes and highlights to PDFs.',
+        content: `If you have PDF files you'd like to read — instruction manuals, documents, anything in PDF format — tap the "Library" tab, then the upload button. Select the PDF from your phone's storage and it appears in your Library alongside your books. Google Play Books even lets you add notes and highlights to PDFs.`,
       },
     ],
   },
@@ -321,20 +321,20 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Search for shows you might like',
-        content: 'Tap the Search icon at the bottom. Type a topic you enjoy — "gardening," "American history," "true crime," "cooking," "daily news" — or a show name you\'ve heard of. A list of matching podcasts will appear. Tap any show to see episode descriptions.',
+        content: `Tap the Search icon at the bottom. Type a topic you enjoy — "gardening," "American history," "true crime," "cooking," "daily news" — or a show name you've heard of. A list of matching podcasts will appear. Tap any show to see episode descriptions.`,
         tip: 'Quick Tip: Some popular shows to try: NPR News Now (5-minute news summaries), Fresh Air with Terry Gross (interviews), Stuff You Should Know (educational and fun), or How I Built This (inspiring stories).',
       },
       {
         title: 'Subscribe to a show',
-        content: 'Open a show and tap "Follow" or "Subscribe." New episodes will automatically appear in your library. The show\'s artwork will show up in your Library tab. You\'ll never miss a new episode.',
+        content: `Open a show and tap "Follow" or "Subscribe." New episodes will automatically appear in your library. The show's artwork will show up in your Library tab. You'll never miss a new episode.`,
       },
       {
         title: 'Play an episode',
-        content: 'In any show\'s page, tap any episode to play it. The playback controls appear at the bottom: play/pause button, 15-second skip back/forward buttons, and a progress bar. Tap the episode name at the bottom to expand the full player with a speed control (1x, 1.5x, 2x — useful for talk shows).',
+        content: `In any show's page, tap any episode to play it. The playback controls appear at the bottom: play/pause button, 15-second skip back/forward buttons, and a progress bar. Tap the episode name at the bottom to expand the full player with a speed control (1x, 1.5x, 2x — useful for talk shows).`,
       },
       {
         title: 'Download episodes to listen without internet',
-        content: 'Tap the down-arrow icon next to any episode to download it to your phone. Downloaded episodes play without any internet connection — perfect for commutes, flights, or areas with poor signal. Most shows auto-download the latest few episodes when you\'re on Wi-Fi.',
+        content: `Tap the down-arrow icon next to any episode to download it to your phone. Downloaded episodes play without any internet connection — perfect for commutes, flights, or areas with poor signal. Most shows auto-download the latest few episodes when you're on Wi-Fi.`,
       },
     ],
   },
@@ -366,7 +366,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Listen to podcasts',
-        content: 'Tap the Podcast section to browse thousands of free podcast shows. You\'ll find news, true crime, health, humor, and just about everything else. Tap a show, then an episode, and it starts playing.',
+        content: `Tap the Podcast section to browse thousands of free podcast shows. You'll find news, true crime, health, humor, and just about everything else. Tap a show, then an episode, and it starts playing.`,
       },
       {
         title: 'Save your favorite stations',
@@ -389,11 +389,11 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Find Accessibility settings',
-        content: 'Open the Settings app on your Android phone. Look for "Accessibility" in the list — it may be near the bottom. On Samsung Galaxy phones it\'s called "Accessibility." On Google Pixel phones it\'s under Settings > Accessibility. Tap to open.',
+        content: `Open the Settings app on your Android phone. Look for "Accessibility" in the list — it may be near the bottom. On Samsung Galaxy phones it's called "Accessibility." On Google Pixel phones it's under Settings > Accessibility. Tap to open.`,
       },
       {
         title: 'Increase text size',
-        content: 'Tap "Text and display" (or "Font size" on some phones). Move the text size slider to the right to make text larger. You\'ll see a preview at the top of the screen showing how large your text will be. Most people find "Large" or "Larger" comfortable.',
+        content: `Tap "Text and display" (or "Font size" on some phones). Move the text size slider to the right to make text larger. You'll see a preview at the top of the screen showing how large your text will be. Most people find "Large" or "Larger" comfortable.`,
         tip: 'Quick Tip: On Samsung phones, look for both "Font size" (text only) and "Screen zoom" (everything). Increasing both together makes the biggest difference.',
       },
       {
@@ -414,7 +414,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'jitterbug-lively-phone-guide',
     title: 'What Is a Jitterbug (Lively) Phone and Is It Right for You',
-    excerpt: 'Jitterbug phones — now called Lively — are designed specifically for seniors with large buttons, simple menus, and an emergency response button. Here\'s what you need to know.',
+    excerpt: `Jitterbug phones — now called Lively — are designed specifically for seniors with large buttons, simple menus, and an emergency response button. Here's what you need to know.`,
     category: 'phone-guides',
     tags: ['jitterbug', 'lively phone', 'senior phone', 'large button phone', 'simple phone'],
     readTime: '5 min',
@@ -425,7 +425,7 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Who is a Lively phone designed for?',
-        content: 'Lively phones are best for people who: find standard smartphones overwhelming or confusing, have difficulty with small touchscreen buttons, want a phone primarily for calls and emergencies, have hearing loss and need louder volume, or value the urgent response feature for safety. If you\'re comfortable with an iPhone or Android, a Lively phone would likely feel like a step down.',
+        content: `Lively phones are best for people who: find standard smartphones overwhelming or confusing, have difficulty with small touchscreen buttons, want a phone primarily for calls and emergencies, have hearing loss and need louder volume, or value the urgent response feature for safety. If you're comfortable with an iPhone or Android, a Lively phone would likely feel like a step down.`,
       },
       {
         title: 'Understand the two models',
@@ -434,15 +434,15 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'The Urgent Response feature',
-        content: 'Both models include a button (on the side of the Lively Smart, or a star button on the Flip) that connects you to Lively\'s 24/7 urgent response team. This is like a medical alert service built into the phone. The agent can assess your situation, contact emergency services, and reach family members. This service requires a plan add-on (starts at $19.99/month on top of the phone plan).',
+        content: `Both models include a button (on the side of the Lively Smart, or a star button on the Flip) that connects you to Lively's 24/7 urgent response team. This is like a medical alert service built into the phone. The agent can assess your situation, contact emergency services, and reach family members. This service requires a plan add-on (starts at $19.99/month on top of the phone plan).`,
       },
       {
         title: 'Lively phone plans',
-        content: 'Lively phones use Verizon\'s network. Plans start at $19.99/month for 300 minutes (calls only). Unlimited talk and text runs $29.99/month. Unlimited everything (talk, text, data) is $49.99/month. These are competitive with major carriers for basic usage.',
+        content: `Lively phones use Verizon's network. Plans start at $19.99/month for 300 minutes (calls only). Unlimited talk and text runs $29.99/month. Unlimited everything (talk, text, data) is $49.99/month. These are competitive with major carriers for basic usage.`,
       },
       {
         title: 'Where to try or buy a Lively phone',
-        content: 'Lively phones are sold at Best Buy stores (where you can handle them in person) and at greatcall.com or lively.com online. Best Buy staff can demonstrate both models and help you pick the right plan. There\'s a 30-day return policy if the phone isn\'t the right fit.',
+        content: `Lively phones are sold at Best Buy stores (where you can handle them in person) and at greatcall.com or lively.com online. Best Buy staff can demonstrate both models and help you pick the right plan. There's a 30-day return policy if the phone isn't the right fit.`,
       },
     ],
   },
@@ -450,7 +450,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'test-internet-speed-guide',
     title: 'How to Test Your Home Internet Speed',
-    excerpt: 'A quick internet speed test tells you exactly how fast your connection is and whether you\'re getting what you pay for from your provider.',
+    excerpt: `A quick internet speed test tells you exactly how fast your connection is and whether you're getting what you pay for from your provider.`,
     category: 'internet-connectivity',
     tags: ['internet speed', 'speed test', 'WiFi speed', 'broadband', 'bandwidth'],
     readTime: '4 min',
@@ -470,11 +470,11 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Test in the right place',
-        content: 'For the most accurate result, run the test on the device you actually use, in the room where you use it. Speed through Wi-Fi will be lower than speed directly plugged into the router via a cable — that\'s normal. Also test at different times of day; internet can be slower in the evenings when more people are online.',
+        content: `For the most accurate result, run the test on the device you actually use, in the room where you use it. Speed through Wi-Fi will be lower than speed directly plugged into the router via a cable — that's normal. Also test at different times of day; internet can be slower in the evenings when more people are online.`,
       },
       {
-        title: 'Compare to what you\'re paying for',
-        content: 'Look at your internet bill or your provider\'s website to see what speed you\'re paying for. Your test result should be at least 80% of that advertised speed. If you\'re consistently getting much less — for example, paying for 200 Mbps but only getting 20 Mbps — contact your provider and ask them to investigate.',
+        title: `Compare to what you're paying for`,
+        content: `Look at your internet bill or your provider's website to see what speed you're paying for. Your test result should be at least 80% of that advertised speed. If you're consistently getting much less — for example, paying for 200 Mbps but only getting 20 Mbps — contact your provider and ask them to investigate.`,
       },
       {
         title: 'What if your speed is very slow?',
@@ -502,7 +502,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Move closer to the router',
-        content: 'Wi-Fi signal weakens with distance and through walls. If you\'re far from the router or there are many walls between you and it, your connection will be slower. Move to a room closer to the router temporarily to test whether speed improves. If it does, consider a Wi-Fi extender ($30–$60) or a mesh Wi-Fi system to extend coverage.',
+        content: `Wi-Fi signal weakens with distance and through walls. If you're far from the router or there are many walls between you and it, your connection will be slower. Move to a room closer to the router temporarily to test whether speed improves. If it does, consider a Wi-Fi extender ($30–$60) or a mesh Wi-Fi system to extend coverage.`,
       },
       {
         title: 'Check if the problem is one device or all devices',
@@ -514,12 +514,12 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Check for service outages in your area',
-        content: 'Go to your internet provider\'s website or app and look for a service status page or outage map. You can also search "[your provider] outage [your city]." If there\'s a known outage, you just have to wait — typically outages are resolved within a few hours.',
+        content: `Go to your internet provider's website or app and look for a service status page or outage map. You can also search "[your provider] outage [your city]." If there's a known outage, you just have to wait — typically outages are resolved within a few hours.`,
       },
       {
         title: 'Call your provider if nothing helped',
-        content: 'Call the customer service number on your bill and tell them: "My internet has been slow/dropping for [X days]. I\'ve restarted my modem and router and the problem continues." Ask them to check the signal levels coming into your home, run a line test, and send a technician if needed. Technician visits for service issues are typically free.',
-        warning: 'If a stranger calls you claiming to be from your internet provider and says your connection has an issue, hang up — it may be a scam. Only call the number on your bill or the provider\'s official website.',
+        content: `Call the customer service number on your bill and tell them: "My internet has been slow/dropping for [X days]. I've restarted my modem and router and the problem continues." Ask them to check the signal levels coming into your home, run a line test, and send a technician if needed. Technician visits for service issues are typically free.`,
+        warning: `If a stranger calls you claiming to be from your internet provider and says your connection has an issue, hang up — it may be a scam. Only call the number on your bill or the provider's official website.`,
       },
     ],
   },
@@ -527,7 +527,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'print-photos-walgreens-cvs',
     title: 'How to Print Photos at Walgreens, CVS, or Walmart',
-    excerpt: 'You can print your phone photos at Walgreens, CVS, or Walmart — in-store pickup in an hour, or shipped to your door. Here\'s how to order online from your phone.',
+    excerpt: `You can print your phone photos at Walgreens, CVS, or Walmart — in-store pickup in an hour, or shipped to your door. Here's how to order online from your phone.`,
     category: 'tips-tricks',
     tags: ['photo printing', 'walgreens photo', 'cvs photo', 'walmart photo', 'print photos'],
     readTime: '5 min',
@@ -538,20 +538,20 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Open the Walgreens app or website',
-        content: 'Download the free Walgreens app from the App Store or Google Play Store, or go to walgreens.com from any browser. Look for the "Photo" or "Photo Prints" section — it\'s usually on the home screen of the app or in the navigation menu on the website. Tap or click to enter the photo center.',
+        content: `Download the free Walgreens app from the App Store or Google Play Store, or go to walgreens.com from any browser. Look for the "Photo" or "Photo Prints" section — it's usually on the home screen of the app or in the navigation menu on the website. Tap or click to enter the photo center.`,
       },
       {
         title: 'Select your photos',
-        content: 'Tap "4x6 Prints" (the most common size). You\'ll be asked to select photos from your phone\'s camera roll. Tap the photos you want to print (you can select multiple at once — tap each one). When done, tap "Next" or "Continue."',
+        content: `Tap "4x6 Prints" (the most common size). You'll be asked to select photos from your phone's camera roll. Tap the photos you want to print (you can select multiple at once — tap each one). When done, tap "Next" or "Continue."`,
         tip: 'Quick Tip: For best results, choose photos taken in good lighting. Blurry or very dark photos will look worse when printed.',
       },
       {
         title: 'Choose your order type',
-        content: 'You\'ll be asked: "Same-day pickup" (ready at your local Walgreens in about an hour) or "1-Hour Photo" or "Ship to home" (arrives in a few days). Pickup is usually fastest and lets you check quality before you leave the store.',
+        content: `You'll be asked: "Same-day pickup" (ready at your local Walgreens in about an hour) or "1-Hour Photo" or "Ship to home" (arrives in a few days). Pickup is usually fastest and lets you check quality before you leave the store.`,
       },
       {
         title: 'Review and pay',
-        content: 'The app shows you a preview of each selected photo and the total cost. Review the order, then tap "Check Out." You can pay by credit card, debit card, or Apple Pay. You\'ll get an email or app notification when your photos are ready to pick up.',
+        content: `The app shows you a preview of each selected photo and the total cost. Review the order, then tap "Check Out." You can pay by credit card, debit card, or Apple Pay. You'll get an email or app notification when your photos are ready to pick up.`,
       },
       {
         title: 'Pick up your prints',
@@ -575,7 +575,7 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Identify your iPhone model',
-        content: 'If you\'re not sure which iPhone model you have: if your iPhone has a Home button (circular button at the bottom front of the phone), it\'s an older model (iPhone 8 or earlier). If it has no Home button and a long display without a notch, or with a "Dynamic Island" cutout at the top, it\'s an iPhone X or newer.',
+        content: `If you're not sure which iPhone model you have: if your iPhone has a Home button (circular button at the bottom front of the phone), it's an older model (iPhone 8 or earlier). If it has no Home button and a long display without a notch, or with a "Dynamic Island" cutout at the top, it's an iPhone X or newer.`,
       },
       {
         title: 'Force restart iPhone X and newer (no Home button)',
@@ -591,7 +591,7 @@ export const guidesBatch21: Guide[] = [
         content: 'Press and hold both the Home button (front of phone) AND the Sleep/Wake button (top or right side) at the same time. Keep holding both until the Apple logo appears, then release.',
       },
       {
-        title: 'What to do if the iPhone won\'t restart at all',
+        title: `What to do if the iPhone won't restart at all`,
         content: 'If the force restart produces no response: connect the iPhone to its charger and wait 10 minutes (it may have a completely dead battery). If it still shows nothing after charging, the phone may need service. Contact Apple Support at apple.com/support or visit an Apple Store or Apple Authorized Service Provider.',
       },
     ],
@@ -600,7 +600,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'iphone-battery-health-check',
     title: 'How to Check Your iPhone Battery Health',
-    excerpt: 'iPhone batteries wear down over time. Checking battery health tells you how much capacity remains and whether it\'s time for a replacement.',
+    excerpt: `iPhone batteries wear down over time. Checking battery health tells you how much capacity remains and whether it's time for a replacement.`,
     category: 'phone-guides',
     tags: ['iphone battery', 'battery health', 'battery life', 'iphone', 'battery replacement'],
     readTime: '4 min',
@@ -611,16 +611,16 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Open Battery Health settings',
-        content: 'Go to Settings > Battery > Battery Health & Charging. You\'ll see a percentage labeled "Maximum Capacity." This is how much charge your battery can hold compared to when it was new.',
+        content: `Go to Settings > Battery > Battery Health & Charging. You'll see a percentage labeled "Maximum Capacity." This is how much charge your battery can hold compared to when it was new.`,
       },
       {
         title: 'Understand what the percentage means',
-        content: '100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this "significantly degraded" — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You\'re likely experiencing noticeably short battery life and should consider replacement soon.',
-        tip: 'Quick Tip: Apple guarantees iPhone batteries will hold at least 80% capacity for 500 full charge cycles — that\'s roughly 1.5–2 years of normal use.',
+        content: `100%: Battery is new or nearly new.\n80–99%: Normal range — you may notice slightly reduced battery life compared to when new, but performance is still good.\nBelow 80%: Apple considers this "significantly degraded" — battery life is noticeably reduced and replacement is worth considering.\nBelow 70%: You're likely experiencing noticeably short battery life and should consider replacement soon.`,
+        tip: `Quick Tip: Apple guarantees iPhone batteries will hold at least 80% capacity for 500 full charge cycles — that's roughly 1.5–2 years of normal use.`,
       },
       {
         title: 'Check Peak Performance Capability',
-        content: 'Below the percentage, you\'ll see a "Peak Performance Capability" message. "Your battery is currently supporting normal peak performance" means everything is fine. If you see a warning about unexpected shutdowns or reduced performance, the battery is no longer able to support peak operation.',
+        content: `Below the percentage, you'll see a "Peak Performance Capability" message. "Your battery is currently supporting normal peak performance" means everything is fine. If you see a warning about unexpected shutdowns or reduced performance, the battery is no longer able to support peak operation.`,
       },
       {
         title: 'Consider battery replacement',
@@ -635,8 +635,8 @@ export const guidesBatch21: Guide[] = [
 
   {
     slug: 'clear-cache-phone-browser',
-    title: 'How to Clear the Cache on Your Phone\'s Web Browser',
-    excerpt: 'Clearing your browser cache removes saved website data that can slow your phone or cause websites to misbehave. Here\'s how to do it on iPhone and Android.',
+    title: `How to Clear the Cache on Your Phone's Web Browser`,
+    excerpt: `Clearing your browser cache removes saved website data that can slow your phone or cause websites to misbehave. Here's how to do it on iPhone and Android.`,
     category: 'tips-tricks',
     tags: ['clear cache', 'browser cache', 'iphone safari', 'android chrome', 'website slow'],
     readTime: '4 min',
@@ -648,7 +648,7 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Clear cache on iPhone (Safari)',
         content: 'Go to Settings (not inside Safari — the main Settings app). Scroll down and tap "Safari." Scroll down and tap "Clear History and Website Data." A popup will ask you to confirm — tap "Clear History and Data." This clears the cache, browsing history, and cookies.',
-        warning: 'This will sign you out of most websites and clear your recent browsing history. You\'ll need to log back into sites you visit regularly.',
+        warning: `This will sign you out of most websites and clear your recent browsing history. You'll need to log back into sites you visit regularly.`,
       },
       {
         title: 'Clear cache on iPhone (Chrome, if you use it)',
@@ -657,15 +657,15 @@ export const guidesBatch21: Guide[] = [
       {
         title: 'Clear cache on Android (Chrome)',
         content: 'Open the Chrome app. Tap the three-dot menu (⋮) at the top right. Tap "History," then "Clear browsing data." Check "Cached images and files" (and "Cookies and site data" if you want a fuller clean). Select time range, then tap "Clear data."',
-        tip: 'Quick Tip: If you just want to fix a single website that\'s acting odd, you don\'t need to clear everything — just hold your finger on a link to that site in Chrome > "Open in incognito tab" to load a fresh version without cache.',
+        tip: `Quick Tip: If you just want to fix a single website that's acting odd, you don't need to clear everything — just hold your finger on a link to that site in Chrome > "Open in incognito tab" to load a fresh version without cache.`,
       },
       {
         title: 'Clear cache on Android (Samsung Internet)',
-        content: 'If you use Samsung\'s built-in browser instead of Chrome: open Samsung Internet, tap the three-line menu at the bottom right, tap "Settings," then "Personal browsing data," then "Delete browsing data." Check "Cached images and files" and tap "Delete."',
+        content: `If you use Samsung's built-in browser instead of Chrome: open Samsung Internet, tap the three-line menu at the bottom right, tap "Settings," then "Personal browsing data," then "Delete browsing data." Check "Cached images and files" and tap "Delete."`,
       },
       {
         title: 'How often should you clear cache?',
-        content: 'There\'s no need to clear your browser cache regularly. Do it when: a website behaves unexpectedly, your browser feels slow, you\'ve been on a shared device, or you want to remove saved sessions for privacy. Monthly clearing is fine for general phone maintenance, but not strictly necessary.',
+        content: `There's no need to clear your browser cache regularly. Do it when: a website behaves unexpectedly, your browser feels slow, you've been on a shared device, or you want to remove saved sessions for privacy. Monthly clearing is fine for general phone maintenance, but not strictly necessary.`,
       },
     ],
   },
@@ -684,16 +684,16 @@ export const guidesBatch21: Guide[] = [
     steps: [
       {
         title: 'Force close on iPhone (with Face ID — no Home button)',
-        content: 'Swipe up slowly from the bottom of the screen and pause in the middle — this opens the app switcher showing all your open apps as cards. Find the frozen app\'s card. Press and hold it briefly until a red minus circle appears, then tap the minus circle to close it. Or swipe the card upward to close it.',
+        content: `Swipe up slowly from the bottom of the screen and pause in the middle — this opens the app switcher showing all your open apps as cards. Find the frozen app's card. Press and hold it briefly until a red minus circle appears, then tap the minus circle to close it. Or swipe the card upward to close it.`,
         tip: 'Quick Tip: You can also swipe up on app cards in the switcher without the long press — just flick them upward off the screen.',
       },
       {
         title: 'Force close on iPhone (with Home button)',
-        content: 'Double-click the Home button quickly — this opens the app switcher. You\'ll see all your open apps as cards. Swipe the frozen app\'s card upward to close it.',
+        content: `Double-click the Home button quickly — this opens the app switcher. You'll see all your open apps as cards. Swipe the frozen app's card upward to close it.`,
       },
       {
         title: 'Force close on Android',
-        content: 'Tap the square (or three-line) button at the bottom of your screen — this is the "Recent apps" button. You\'ll see your open apps as cards. Swipe the frozen app card to the left or right (or up, depending on your phone) to close it. Or tap "Close all" to close everything at once.',
+        content: `Tap the square (or three-line) button at the bottom of your screen — this is the "Recent apps" button. You'll see your open apps as cards. Swipe the frozen app card to the left or right (or up, depending on your phone) to close it. Or tap "Close all" to close everything at once.`,
       },
       {
         title: 'Reopen the app',
@@ -701,7 +701,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'If the app keeps freezing',
-        content: 'If an app freezes repeatedly: make sure it\'s updated (go to the App Store or Play Store and check for updates), try restarting your phone entirely, or delete and reinstall the app. Persistent problems with a specific app should be reported to the app developer — look for a "Help" or "Feedback" option inside the app.',
+        content: `If an app freezes repeatedly: make sure it's updated (go to the App Store or Play Store and check for updates), try restarting your phone entirely, or delete and reinstall the app. Persistent problems with a specific app should be reported to the app developer — look for a "Help" or "Feedback" option inside the app.`,
       },
     ],
   },
@@ -709,7 +709,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'frozen-windows-fix',
     title: 'What to Do When Your Windows Computer Freezes Up',
-    excerpt: 'A frozen Windows computer — mouse won\'t move, nothing responds — is fixable. Here\'s what to try, in order, to get back up and running.',
+    excerpt: `A frozen Windows computer — mouse won't move, nothing responds — is fixable. Here's what to try, in order, to get back up and running.`,
     category: 'windows-guides',
     tags: ['windows frozen', 'computer freeze', 'unresponsive windows', 'restart windows', 'windows fix'],
     readTime: '5 min',
@@ -733,7 +733,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Restart Windows normally',
-        content: 'If Task Manager isn\'t responding either, try pressing the Windows key. If the Start menu appears, click the power button icon and choose "Restart." A normal restart is better than a forced shutdown because Windows can finish what it\'s doing and save open work where possible.',
+        content: `If Task Manager isn't responding either, try pressing the Windows key. If the Start menu appears, click the power button icon and choose "Restart." A normal restart is better than a forced shutdown because Windows can finish what it's doing and save open work where possible.`,
       },
       {
         title: 'Hard reboot as a last resort',
@@ -766,7 +766,7 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Try PicCollage for more control (free app)',
-        content: 'If you want more layout options, download PicCollage from the App Store or Play Store — it\'s free. Open it, tap "+" to create a new collage, choose your photos, then pick from dozens of layout templates. You can also add text, stickers, and backgrounds. When done, tap "Share" to save it to your photo library.',
+        content: `If you want more layout options, download PicCollage from the App Store or Play Store — it's free. Open it, tap "+" to create a new collage, choose your photos, then pick from dozens of layout templates. You can also add text, stickers, and backgrounds. When done, tap "Share" to save it to your photo library.`,
       },
       {
         title: 'Use Canva for greeting card-style collages (free)',
@@ -782,7 +782,7 @@ export const guidesBatch21: Guide[] = [
   {
     slug: 'amazon-returns-guide',
     title: 'How to Return Something You Bought on Amazon',
-    excerpt: 'Amazon has one of the easiest return processes in retail. Here\'s how to start a return on your phone or computer and drop it off — often with no box or label needed.',
+    excerpt: `Amazon has one of the easiest return processes in retail. Here's how to start a return on your phone or computer and drop it off — often with no box or label needed.`,
     category: 'tips-tricks',
     tags: ['amazon returns', 'return amazon order', 'amazon refund', 'online shopping', 'amazon'],
     readTime: '5 min',
@@ -797,16 +797,16 @@ export const guidesBatch21: Guide[] = [
       },
       {
         title: 'Select a reason for the return',
-        content: 'Amazon will ask why you\'re returning. Choose the most accurate reason from the dropdown (examples: "No longer needed," "Item defective or doesn\'t work," "Wrong item was sent," etc.). This doesn\'t affect your ability to return — it\'s just for Amazon\'s records. Then tap "Continue."',
+        content: `Amazon will ask why you're returning. Choose the most accurate reason from the dropdown (examples: "No longer needed," "Item defective or doesn't work," "Wrong item was sent," etc.). This doesn't affect your ability to return — it's just for Amazon's records. Then tap "Continue."`,
       },
       {
         title: 'Choose your drop-off method',
-        content: 'Amazon will show you drop-off options near you. The most convenient options:\n- "UPS Store" — Drop off without a box or label. UPS prints the label and packages it for you, free.\n- "Kohl\'s" — Drop off and they pack it free.\n- "Whole Foods" — Label-free drop off.\n\nChoose one and tap "Confirm Return."',
+        content: `Amazon will show you drop-off options near you. The most convenient options:\n- "UPS Store" — Drop off without a box or label. UPS prints the label and packages it for you, free.\n- "Kohl's" — Drop off and they pack it free.\n- "Whole Foods" — Label-free drop off.\n\nChoose one and tap "Confirm Return."`,
         tip: 'Quick Tip: The "UPS Drop Off" with no box required is by far the most convenient option — you just walk in with the loose item, they handle everything, and you get a receipt.',
       },
       {
         title: 'Get your return QR code',
-        content: 'After confirming, Amazon generates a QR code. This is your return authorization. Save a screenshot or keep the Amazon app open when you arrive at the drop-off location — the UPS or Kohl\'s associate scans this code and processes your return.',
+        content: `After confirming, Amazon generates a QR code. This is your return authorization. Save a screenshot or keep the Amazon app open when you arrive at the drop-off location — the UPS or Kohl's associate scans this code and processes your return.`,
       },
       {
         title: 'Track your refund',
