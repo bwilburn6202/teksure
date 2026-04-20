@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 61** (20 guides, 2026-04-20) — total ~2,293 guides
-- Next: **Batch 62** → **Batch 63** → ... (no upper limit)
+- Last completed: **Batch 62** (20 guides, 2026-04-20) — total ~2,313 guides
+- Next: **Batch 63** → **Batch 64** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -140,7 +140,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 59** | **20** | **2026-04-20** | Senior smartphone tips, iPhone vs Android, phone trade-in, data usage, lower phone bill, Wi-Fi calling, avoid roaming, travel tech, Google Translate, Ibotta, digital coupons, loyalty apps, Honey, identity theft, dark web, credit freeze, phishing, phone antivirus, password reuse, public Wi-Fi safety |
 | **Batch 60** | **20** | **2026-04-20** | Google Gemini, ChatGPT everyday tasks, Siri tips, Google Assistant tips, AI writing, AI for seniors, AI image gen, AI health tools, Alexa Skills, AI summarize, podcast beginners, free audiobooks, Fire tablet, AI companion, AI learning, AI recipes, AI travel, AI job help, Android tablet seniors, podcast apps |
 | **Batch 61** | **20** | **2026-04-20** | Digital BP monitor, CGM diabetes, pill reminder, health insurance app, Teladoc, sleep tracking, fall detection, step counter, water reminders, meditation apps, cooking apps, grocery list, grocery delivery, online therapy, iPhone Health, Google Fit, heart rate, blood oxygen, walking program, telehealth vs ER |
-| **Total** | **~2,293** | | |
+| **Batch 62** | **20** | **2026-04-20** | Retirement planning, Social Security timing, Medicare parts, estate planning, AARP app, volunteering, downsizing, senior housing, long-distance caregiver, caregiver burnout, TurboTax, digital banking safety, romance scam, job loss finances, senior tax breaks, POA digital, social media after death, retirement benefits, lost pension, Medicare supplement |
+| **Total** | **~2,313** | | |
 
 ---
 
