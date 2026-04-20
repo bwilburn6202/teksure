@@ -445,52 +445,6 @@ export const guidesBatch16: Guide[] = [
   },
 
   {
-    slug: 'backup-phone-contacts',
-    title: 'How to Back Up Your Phone Contacts So You Never Lose Them',
-    excerpt:
-      "Losing all your contacts when a phone breaks is avoidable. Here's how to back them up to Google or iCloud so they sync to any new phone automatically.",
-    category: 'essential-skills',
-    tags: [
-      'contacts backup',
-      'google contacts',
-      'icloud contacts',
-      'phone contacts',
-      'sync',
-      'backup',
-    ],
-    readTime: '4 min',
-    thumbnailEmoji: '📇',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `Your phone contacts represent years of accumulated phone numbers, addresses, and email addresses — family, doctors, neighbors, businesses, everyone. If your phone breaks, gets lost, or needs to be replaced, losing all those contacts can be a significant problem.\n\nThe good news: modern smartphones back up contacts automatically to Google (on Android) or iCloud (on iPhone) when the feature is turned on. Once synced to the cloud, your contacts are restored automatically whenever you set up a new phone with the same account. This guide shows you how to confirm the feature is active and what to do if it isn't.`,
-    steps: [
-      {
-        title: 'Turn on contact sync on iPhone (iCloud)',
-        content:
-          "Go to Settings → tap your name at the top → iCloud → scroll down to \"Contacts\" and make sure the toggle is turned ON (green). If it was off, tap it and choose to \"Merge\" your existing contacts with iCloud. Your contacts now sync to iCloud and can be restored on any iPhone you log into with the same Apple ID.",
-        tip: 'Quick Tip: You can view, add, or edit contacts from any computer by going to iCloud.com and signing in. This also confirms your contacts backed up successfully.',
-      },
-      {
-        title: 'Turn on contact sync on Android (Google)',
-        content:
-          "Go to Settings → tap your Google account (or Accounts → Google) → tap your Gmail address → make sure \"Contacts\" has a checkmark or toggle turned ON. On newer Android phones, go to Settings → Google → Backup and confirm \"Back up to Google Drive\" is on. Your contacts now sync to your Google account. You can view them at contacts.google.com on any computer.",
-        tip: 'Quick Tip: All your backed-up contacts appear at contacts.google.com. Sign in with your Google account to see them, edit them, or check that they were saved.',
-      },
-      {
-        title: 'Export a manual backup as extra insurance',
-        content:
-          "For an extra copy, you can export all contacts to a file (.vcf format) and save it to your computer or email it to yourself. On iPhone: go to iCloud.com → Contacts → select all (Ctrl+A or Command+A) → click the gear icon → Export vCard. On Android: open the Contacts app → Settings (three dots) → Export → save to your phone's storage → then copy that file to a computer or email it to yourself.",
-        tip: "Quick Tip: Save the exported .vcf file in Google Drive or your email so it's accessible from anywhere if you ever need to restore.",
-      },
-      {
-        title: 'Restore contacts on a new phone',
-        content:
-          "If you get a new phone: on iPhone, sign in with your Apple ID during setup and your contacts restore automatically. On Android, sign in with your Google account and your contacts restore automatically. If contacts don't appear right away, go to Settings → Google → and manually sync. Contacts from your Google or Apple account should appear within a few minutes.",
-      },
-    ],
-  },
-
-  {
     slug: 'read-phone-bill-guide',
     title: 'How to Read and Understand Your Cell Phone Bill',
     excerpt:

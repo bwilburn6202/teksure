@@ -469,27 +469,6 @@ Most brands use the same app as their washers and fridges — SmartThings for Sa
       { title: 'Download extra programs', content: 'Some Bosch and Samsung dishwashers let you download extra wash programs from the app — for baby bottles, wine glasses, or heavily soiled pots. Tap Programs in the app and pick ones to add.' },
     ],
   },
-  {
-    slug: 'set-up-robot-vacuum',
-    title: 'How to Set Up a Robot Vacuum (Roomba, Roborock, etc.)',
-    excerpt: 'Schedule cleanings, map rooms, and set no-go zones from your phone. Setup for Roomba, Roborock, Eufy, and Shark robot vacuums takes 15 minutes.',
-    category: 'smart-home',
-    tags: ['robot vacuum', 'Roomba', 'Roborock', 'smart home', 'cleaning'],
-    readTime: '7 min',
-    thumbnailEmoji: '🤖',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Robot vacuums like Roomba, Roborock, Eufy, and Shark clean your floors on a schedule while you are at work. Through the phone app you can start a cleaning, pick which rooms to vacuum, set "no-go zones" where it should not go (like around pet bowls), and see a map of your home.
-
-Each brand has its own app: iRobot Home (Roomba), Roborock, Eufy Clean, SharkClean. Setup is similar for all: download the app, plug in the dock, turn on the vacuum, and follow the pairing steps.`,
-    steps: [
-      { title: 'Set up the charging dock', content: 'Place the dock against a wall with at least 18 inches clear on each side and 3 feet clear in front. Plug it in and put the robot on the dock to start charging.' },
-      { title: `Download the brand's app`, content: 'Install the app for your vacuum brand and create an account. Charge the robot for at least two hours before the first cleaning — map quality improves with a full battery.' },
-      { title: 'Put the vacuum in pairing mode', content: 'Hold the Home and Spot Clean buttons (Roomba) or the power button (Roborock, Eufy) for 3–5 seconds until the robot beeps or says "ready to pair."' },
-      { title: 'Connect to Wi-Fi', content: 'In the app, tap Add Robot and pick your model. Enter your Wi-Fi password — use 2.4 GHz Wi-Fi, as most robot vacuums do not support 5 GHz.' },
-      { title: 'Run a mapping run', content: 'Tap Clean or Mapping Run in the app. The robot drives through every room to build a map. After it finishes, you can name rooms (Kitchen, Living Room) and set no-go zones by dragging lines on the map.' },
-    ],
-  },
   // ── WEARABLES ───────────────────────────────────────────────────────────────
   {
     slug: 'set-up-apple-watch',
@@ -616,27 +595,6 @@ A simple system works best: one folder for each big category (Bills, Family, Wor
       { title: 'Move existing emails', content: 'Drag messages from the inbox onto a folder or label in the sidebar. To move many at once, hold the Shift key while clicking the first and last message, then drag them all together.' },
       { title: 'Set up a filter or rule for future email', content: 'Create a filter (Gmail) or rule (Outlook, Apple Mail) so future emails from the same senders go straight into the right folder. See the Gmail filters guide for step-by-step instructions.' },
       { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it" — you can still search for it later, but it clears out the inbox.' },
-    ],
-  },
-  {
-    slug: 'unsubscribe-from-emails',
-    title: 'How to Unsubscribe from Unwanted Emails',
-    excerpt: 'Stop junk newsletters and promotional emails with the one-click unsubscribe button in Gmail, Outlook, and Apple Mail.',
-    category: 'tips-tricks',
-    tags: ['unsubscribe', 'email', 'newsletters', 'cleanup', 'privacy'],
-    readTime: '4 min',
-    thumbnailEmoji: '✂️',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `The U.S. CAN-SPAM Act requires every marketing email to have an unsubscribe link. Most email apps now show a quick unsubscribe button at the top of promotional messages so you do not have to hunt for the link at the bottom.
-
-One click removes you from the sender's list. Unsubscribing from one email at a time is the safest way — avoid services that promise to unsubscribe you from everything, since some of them sell your data.`,
-    steps: [
-      { title: 'Open a promotional email', content: 'Open any newsletter or marketing email you no longer want. These are usually from a company, not a person.' },
-      { title: 'Look for the Unsubscribe button', content: `In Gmail, Outlook, and Apple Mail, a small Unsubscribe link appears at the top of the message, next to the sender's name. Click or tap it.` },
-      { title: 'Confirm on the unsubscribe page', content: `Your email app may confirm on its own, or it may open the sender's website. Click Confirm or Unsubscribe if asked — legitimate senders only need one click.` },
-      { title: 'Scroll to the bottom as a backup', content: 'If you do not see an Unsubscribe button at the top, scroll to the very bottom of the email. Every legitimate marketing email has an Unsubscribe link there in small print.' },
-      { title: 'Mark as spam if the sender ignores you', content: 'If you unsubscribe and they keep emailing, mark the message as spam. In Gmail, click the exclamation-point icon; in Outlook, click Junk. Future emails from that sender will skip the inbox.' },
     ],
   },
   {

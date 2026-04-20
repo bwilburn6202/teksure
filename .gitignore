@@ -27,3 +27,7 @@ coverage/
 # TekSure Brain — generated knowledge base files (large)
 public/brain/guides/
 public/brain/knowledge-base.json
+
+# Worktree artifacts
+.claude/worktrees/
+.claire/worktrees/

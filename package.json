@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:ssr": "node --import tsx server.ts",
+    "validate:slugs": "node scripts/validate-slugs.mjs",
+    "prebuild": "npm run validate:slugs",
     "build": "vite build",
     "build:ssr": "npm run build:client && npm run build:server",
     "build:client": "vite build --outDir dist/client",
