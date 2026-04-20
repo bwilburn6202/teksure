@@ -428,27 +428,6 @@ Most U.S. public libraries have Libby. If there is a waitlist for a popular titl
     ],
   },
   {
-    slug: 'use-audible-audiobooks',
-    title: 'How to Use Audible for Audiobooks',
-    excerpt: 'Listen to audiobooks with a monthly subscription that includes one free book each month plus discounts.',
-    category: 'app-guides',
-    tags: ['Audible', 'audiobooks', 'Amazon', 'subscription'],
-    readTime: '6 min',
-    thumbnailEmoji: '🎙️',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Audible is Amazon\'s audiobook service. For about $15 a month, you get one free audiobook of your choice (any price), plus access to a library of thousands more you can listen to any time.
-
-The books you buy with credits are yours to keep forever, even if you cancel the subscription.`,
-    steps: [
-      { title: 'Sign up for Audible', content: 'Go to audible.com or open the Audible app. Sign in with your Amazon account. New users get a 30-day free trial that includes one free audiobook.' },
-      { title: 'Pick your first book', content: 'Browse by category (fiction, mystery, history, business). Tap any title to read reviews and listen to a 5-minute sample. When you are ready, tap "Buy with 1 Credit" to use your monthly credit.' },
-      { title: 'Download for offline listening', content: 'In the Audible app, tap the Library tab. Tap any book you own and then the download button so you can listen without Wi-Fi during a walk or a long drive.' },
-      { title: 'Use Audible Plus', content: 'On top of your credits, browse the "Plus Catalog" — thousands of titles are included free with your subscription. They do not cost credits but disappear from your library if you cancel.' },
-      { title: 'Manage your subscription', content: 'Go to audible.com/account to pause for up to 3 months, change your plan, or cancel. If you cancel, you still keep every book you bought with credits.' },
-    ],
-  },
-  {
     slug: 'use-hoopla-free-library-media',
     title: 'How to Use Hoopla for Free Library Movies and Books',
     excerpt: 'Stream movies, TV shows, audiobooks, music, and comics for free with your library card — no waitlists.',

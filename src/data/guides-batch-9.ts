@@ -516,27 +516,6 @@ You can search by specialty like primary care, cardiology, or physical therapy, 
 
   // ── PRESCRIPTION & PHARMACY ─────────────────────────────────────────────────
   {
-    slug: 'use-goodrx-save-prescriptions',
-    title: 'How to Use GoodRx to Save on Prescriptions',
-    excerpt: 'Use the free GoodRx app to find lower prices on prescriptions — often cheaper than your insurance copay.',
-    category: 'health-tech',
-    tags: ['GoodRx', 'prescriptions', 'savings', 'pharmacy'],
-    readTime: '6 min',
-    thumbnailEmoji: '💵',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `GoodRx is a free app and website that compares prescription prices at pharmacies near you and gives you discount coupons. For many common drugs, the GoodRx price is lower than what you would pay with insurance.
-
-You do not need insurance or a membership to use it. Show the coupon to your pharmacist at checkout, and they ring you up at the lower price.`,
-    steps: [
-      { title: 'Download the GoodRx app', content: 'On your phone, open the App Store or Play Store, search for GoodRx, and tap Install. You do not need to create an account to use it, but an account lets you save your drugs for quick lookup.' },
-      { title: 'Search for your prescription', content: 'Open the app and type the drug name in the search bar. Pick the exact drug and dose your doctor prescribed (like "Metformin 500mg").' },
-      { title: 'Enter your ZIP code', content: 'Type in your ZIP code if it is not already filled in. GoodRx will show prices at pharmacies near you, from cheapest to most expensive.' },
-      { title: 'Pick the pharmacy with the lowest price', content: 'Look at the list and pick the pharmacy you want to use. Tap "Get Free Coupon" to open the coupon on your screen.' },
-      { title: 'Show the coupon at the pharmacy', content: 'At the pharmacy counter, tell the pharmacist you want to use a GoodRx coupon instead of your insurance. Show the coupon on your phone — they will scan the codes and charge you the GoodRx price.' },
-    ],
-  },
-  {
     slug: 'use-amazon-pharmacy',
     title: 'How to Use Amazon Pharmacy for Prescriptions',
     excerpt: 'Order prescriptions through Amazon Pharmacy for home delivery, often at lower prices than your local drug store.',
