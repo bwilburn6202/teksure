@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 94** (20 guides, 2026-04-20) — total ~2,960 guides
-- Next: **Batch 95** → **Batch 96** → ... (no upper limit)
+- Last completed: **Batch 95** (20 guides, 2026-04-20) — total ~2,980 guides
+- Next: **Batch 96** → **Batch 97** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -173,7 +173,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 92** | **20** | **2026-04-20** | Live Captions Android/Windows, Personal Voice iOS, Assistive Access iPhone, Sound Recognition, Switch Access Android, Google Family Link, Kindle Fire Kids, iPad Guided Access, Mac Screen Time, Grammarly student, Zotero citations, Teams Edu, Canvas LMS, Wolfram Alpha, Samsung Circle to Search, Bixby, Galaxy Watch, Google Pixel tips, Pixel Call Screen |
 | **Batch 93** | **20** | **2026-04-20** | Word Online, Excel Online, PowerPoint Online, Outlook setup, Clipchamp, Snipping Tool, Microsoft Designer AI, scan old photos, Google PhotoScan, VHS digitizing, best tablets for seniors, Chromebook buying, iPad vs Android tablet, 5G home internet, Starlink setup, T-Mobile Home Internet, fiber internet, tech gifts for seniors, refurbished laptop, Windows vs Mac |
 | **Batch 94** | **20** | **2026-04-20** | Dark web explained, dark web monitoring, data broker removal, private browsing, Google activity controls, online banking setup, mobile check deposit, bank app security, bill pay, reading tech specs, TV buying, printer buying, router buying, RAM explained, SSD vs HDD, screen resolution, slow computer fix, WiFi drops fix, phone won't charge, home office setup |
-| **Total** | **~2,960** | | |
+| **Batch 95** | **20** | **2026-04-20** | Remote Desktop, work VPN, home office ergonomics, Toggl time tracking, Focusmate, routing numbers, wire transfers, FDIC insurance, bank statements, CPU explained, operating systems, cloud computing, bandwidth/Mbps, phishing link check, email spoofing, Authy 2FA, app crash fix, printer offline fix, Bluetooth pairing fix, computer won't start |
+| **Total** | **~2,980** | | |
 
 ---
 
