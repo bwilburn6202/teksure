@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark } from 'lucide-react';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -31,6 +31,12 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'communication': MessageSquare,
   'life-transitions': ArrowRightLeft,
   'internet-connectivity': Wifi,
+  'online-privacy': EyeOff,
+  'online-banking': Building2,
+  'buying-guides': ShoppingCart,
+  'tech-explained': Cpu,
+  'troubleshooting': Wrench,
+  'work-from-home': Briefcase,
 };
 
 const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
