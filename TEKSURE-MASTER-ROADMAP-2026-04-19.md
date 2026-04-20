@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 77** (20 guides, 2026-04-20) — total ~2,620 guides
-- Next: **Batch 78** → **Batch 79** → ... (no upper limit)
+- Last completed: **Batch 78** (20 guides, 2026-04-20) — total ~2,640 guides
+- Next: **Batch 79** → **Batch 80** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -156,7 +156,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 75** | **20** | **2026-04-20** | C25K running app, Peloton App, ClassPass, Fitbod, Day One journal, email unsubscribe, Yahoo Mail tips, HDMI ARC soundbar, indoor TV antenna, Kanopy free movies, Crackle streaming, YouTube free movies, Thumbtack, Rover pet sitters, DoorDash Dasher, Amazon Flex, Strava, 7-Minute Workout, senior fitness apps, Sworkit |
 | **Batch 76** | **20** | **2026-04-20** | Acorn TV, BritBox, CuriosityStream, Shudder horror, Movies Anywhere, Vudu free movies, Frndly TV, MasterClass, Skillshare, Udemy, Wondrium, Codecademy, Google Career Certificates, Microsoft Learn, WordPress, Squarespace, Wix, Google Sites, Linktree, Carrd |
 | **Batch 77** | **20** | **2026-04-20** | Policygenius, Lemonade renters insurance, Allstate app, GEICO app, Progressive app, State Farm app, Medicare Advantage explained, SSDI application, CHIP program, Medicaid enrollment, COBRA, health open enrollment, Twitch, Discord voice chat, Reddit beginners, Trello, Todoist, TickTick, Asana personal, Microsoft To Do tips |
-| **Total** | **~2,620** | | |
+| **Batch 78** | **20** | **2026-04-20** | Powerline adapters, ethernet setup, USB hubs, laptop docking station, Mac trackpad gestures, trackball mouse, Windows Magnifier, Mac Zoom, Android TalkBack, iPhone VoiceOver, captioned telephone, Windows High Contrast, iPhone font size, Android font size, blue light filter, Edge Read Aloud, Firefox Reader View, Chrome extensions safety, ad blockers, uBlock Origin |
+| **Total** | **~2,640** | | |
 
 ---
 
