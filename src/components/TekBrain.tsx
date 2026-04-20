@@ -1,5 +1,5 @@
 /**
- * TekBot — AI-powered chat assistant for TekSure.
+ * TekBrain — AI-powered chat assistant for TekSure.
  *
  * Features:
  *  - Device memory (localStorage) — remembers user's device across sessions
@@ -40,7 +40,7 @@ interface Message {
 
 /* ── Device memory ─────────────────────────────────────────── */
 
-const DEVICE_KEY = 'teksure_tekbot_device';
+const DEVICE_KEY = 'teksure_tekbrain_device';
 
 function loadDevice(): DeviceType {
   if (typeof window === 'undefined') return null;
@@ -55,7 +55,7 @@ function saveDevice(d: DeviceType) {
 
 /* ── Session memory (sessionStorage) ──────────────────────── */
 
-const SESSION_KEY = 'teksure_tekbot_session';
+const SESSION_KEY = 'teksure_tekbrain_session';
 
 function loadSession(): Message[] {
   if (typeof window === 'undefined') return [];
@@ -451,7 +451,7 @@ function deviceLabel(d: DeviceType) {
 
 /* ── Component ─────────────────────────────────────────────── */
 
-export function TekBot() {
+export function TekBrain() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
   const [device, setDevice] = useState<DeviceType>(loadDevice);
@@ -559,8 +559,8 @@ export function TekBot() {
     const ctx = getPageContext(location.pathname);
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
     return ctx
-      ? `Hi! I'm TekBot 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
-      : `Hi! I'm TekBot, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
+      ? `Hi! I'm TekBrain 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
+      : `Hi! I'm TekBrain, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
   }, [location.pathname, device]);
 
   /* If session is empty (first open or after clear), inject a fresh welcome */
@@ -609,8 +609,8 @@ export function TekBot() {
     const ctx = getPageContext(location.pathname);
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
     const welcome = ctx
-      ? `Hi! I'm TekBot 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
-      : `Hi! I'm TekBot, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
+      ? `Hi! I'm TekBrain 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
+      : `Hi! I'm TekBrain, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
     setMessages([{ role: 'bot', content: welcome }]);
   }
 
@@ -704,11 +704,11 @@ export function TekBot() {
             onClick={() => setOpen(true)}
             className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
             style={{ backgroundColor: 'hsl(172 50% 40%)', minHeight: 48, fontSize: 16 }}
-            aria-label="Open TekBot chat assistant"
+            aria-label="Open TekBrain chat assistant"
             aria-haspopup="dialog"
           >
             <Bot className="h-5 w-5" aria-hidden="true" />
-            <span>TekBot</span>
+            <span>TekBrain</span>
             {conversationCount > 0 && (
               <span
                 className="ml-0.5 flex items-center gap-1 rounded-full bg-white/20 px-1.5 py-0.5 text-xs font-normal"
@@ -728,7 +728,7 @@ export function TekBot() {
           <div
             role="dialog"
             aria-modal="true"
-            aria-labelledby="tekbot-heading"
+            aria-labelledby="tekbrain-heading"
             className={`fixed z-50 flex overflow-hidden rounded-2xl shadow-2xl border border-border ${
               isMobile
                 ? 'inset-x-2 bottom-2 top-16'
@@ -785,7 +785,7 @@ export function TekBot() {
               <div className="flex items-center gap-2 text-white">
                 <Bot className="h-5 w-5" aria-hidden="true" />
                 <div>
-                  <span id="tekbot-heading" className="font-bold block" style={{ fontSize: 15 }}>TekBot</span>
+                  <span id="tekbrain-heading" className="font-bold block" style={{ fontSize: 15 }}>TekBrain</span>
                   <span className="text-white/80 flex items-center gap-1" style={{ fontSize: 11 }}>
                     {memory.stats && memory.stats.total > 0 && (
                       <span className="inline-flex items-center gap-0.5" title={`${memory.stats.total} memories stored`}>
@@ -826,7 +826,7 @@ export function TekBot() {
                     aria-label={device ? `Device: ${deviceLabel(device)} — change device` : 'Select your device type'}
                     aria-expanded={showDevicePicker}
                     aria-haspopup="listbox"
-                    aria-controls="tekbot-device-listbox"
+                    aria-controls="tekbrain-device-listbox"
                   >
                     {device ? (
                       <>
@@ -848,7 +848,7 @@ export function TekBot() {
                   <>
                     {showDevicePicker && (
                       <div
-                        id="tekbot-device-listbox"
+                        id="tekbrain-device-listbox"
                         role="listbox"
                         aria-label="Select your device type"
                         className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-white shadow-xl"
@@ -891,7 +891,7 @@ export function TekBot() {
                   </>
                 </div>
 
-                <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-11 w-11" aria-label="Close TekBot">
+                <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white hover:bg-white/10 h-11 w-11" aria-label="Close TekBrain">
                   <X className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </div>
@@ -951,7 +951,7 @@ export function TekBot() {
               ))}
 
               {typing && (
-                <div className="flex justify-start" role="status" aria-label="TekBot is typing">
+                <div className="flex justify-start" role="status" aria-label="TekBrain is typing">
                   <div
                     className="flex gap-1.5 items-center rounded-2xl px-4 py-3"
                     style={{ backgroundColor: 'hsl(0 0% 100%)', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
@@ -984,9 +984,9 @@ export function TekBot() {
 
             {/* Input */}
             <div className="flex items-center gap-2 border-t border-border bg-white px-3 py-3">
-              <label htmlFor="tekbot-input" className="sr-only">Type your question for TekBot</label>
+              <label htmlFor="tekbrain-input" className="sr-only">Type your question for TekBrain</label>
               <input
-                id="tekbot-input"
+                id="tekbrain-input"
                 ref={inputRef}
                 value={input}
                 onChange={e => setInput(e.target.value)}
