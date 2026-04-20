@@ -8,6 +8,24 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script>
+      // Pre-paint theme default: dark on public routes, light on protected routes,
+      // unless the user has a stored preference. Mirrors RouteThemeDefault in App.tsx.
+      (function () {
+        try {
+          var stored = localStorage.getItem('teksure-theme');
+          if (stored === 'light') return;
+          if (stored === 'dark') {
+            document.documentElement.classList.add('dark');
+            return;
+          }
+          var protectedPaths = ['/customer', '/tech', '/admin', '/profile'];
+          var path = window.location.pathname;
+          var isProtected = protectedPaths.some(function (p) { return path.indexOf(p) === 0; });
+          if (!isProtected) document.documentElement.classList.add('dark');
+        } catch (_) { /* no-op */ }
+      })();
+    </script>
     <title>TekSure — Free Tech Help for Beginners &amp; Seniors</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
