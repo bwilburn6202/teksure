@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 72** (20 guides, 2026-04-20) — total ~2,520 guides
-- Next: **Batch 73** → **Batch 74** → ... (no upper limit)
+- Last completed: **Batch 73** (20 guides, 2026-04-20) — total ~2,540 guides
+- Next: **Batch 74** → **Batch 75** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -151,7 +151,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 70** | **20** | **2026-04-20** | Hulu + Live TV, Sling TV, FuboTV, Philo, TP-Link Deco, iCloud security, Facebook privacy, Apple impersonation scam, fake Microsoft support, lottery scam, online dating safety, crypto scam, medical alert systems, aging-in-place tech, caregiver apps, CaringBridge, IRS IP PIN, retirement budgeting, simplify finances, Lotsa Helping Hands |
 | **Batch 71** | **27** | **2026-04-20** | Mac Spotlight, Hot Corners, AirDrop, Launchpad, Finder sidebar, Google Meet record, Teams background, video call lighting, webcam upgrade, LinkedIn profile, X/Twitter, Reddit, TikTok seniors, Facebook Groups, Instagram seniors, Threads, WhatsApp Web, Telegram desktop, Signal desktop, Discord, Google Chat, iPad multitasking, iPad keyboard shortcuts, Apple Pencil, Samsung S Pen, ring light, YouTube channel |
 | **Batch 72** | **20** | **2026-04-20** | Android backup to Google, iCloud backup checklist, Mac Time Machine, Backblaze review, cloud vs local backup, Google Photos vs iCloud, backup contacts, restore iPhone, restore Android, Microsoft Copilot in Office, Alexa Flash Briefing, tech for grandparents, tech after spouse death, DeleteMe, DuckDuckGo, learn language seniors, LifeLock review, private browsing, smart home security, universal remote |
-| **Total** | **~2,520** | | |
+| **Batch 73** | **20** | **2026-04-20** | YouVersion Bible App, iNaturalist, HelloFresh, StoryWorth family memoir, surge protectors, UPS battery backup, multi-device charging station, Tile tracker, ESPN+, Discovery+, Microsoft 365 Family, Walmart Photo Center, RxSaver, NeedyMeds, SSA.gov my account, VA Health App, Tubi free TV, Starz app, Kindle Unlimited, Scribd |
+| **Total** | **~2,540** | | |
 
 ---
 
