@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 41** (20 guides, 2026-04-19) — total ~1,895 guides
-- Next: **Batch 42** → **Batch 43** → ... (no upper limit)
+- Last completed: **Batch 42** (20 guides, 2026-04-19) — total ~1,915 guides
+- Next: **Batch 43** → **Batch 44** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -120,7 +120,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 39** | **20** | **2026-04-19** | Signal private messaging, digitize old photos, compress PDF, merge PDF files, iPad buying guide for seniors, laptop buying guide for seniors, Windows 11 tips, Mac everyday tips, organize Google Drive, organize phone photos, delete duplicate photos, free up iCloud storage, Marco Polo video messaging, Medicare Extra Help program, Lifeline free phone service, SNAP EBT guide, neighborhood/community apps (Nextdoor vs Facebook Groups vs Ring Neighbors), SSI vs SSDI difference, Google Drive backup guide, iPad tips for everyday seniors |
 | **Batch 40** | **20** | **2026-04-19** | Bluesky social network, Threads app, Peacock streaming, NYT Games (Wordle/Connections), WhatsApp Channels, Netflix offline downloads, Disney+ offline downloads, Spotify offline listening, EveryDollar budgeting app, noise-canceling headphones, iPhone text size settings, iOS 18 new features, Android 15 new features, Google Photos Locked Folder, sell old tech safely, phone as TV remote, Samsung Galaxy AI features, iPhone Stolen Device Protection, recover hacked email account, online banking safety tips |
 | **Batch 41** | **20** | **2026-04-19** | YouTube Music, TripAdvisor, Vrbo vacation rentals, ParkMobile, Amtrak app, Sam's Club Scan & Go, Kroger digital coupons, iPad Stage Manager, Android Nearby Share, Apple Health Records, Amazon Subscribe & Save, Lyft medical transportation, library digital perks (free NYT/LinkedIn Learning), auto bill pay, Medicare What's Covered app, VA mobile app, record video iPhone, FaceTime SharePlay, video message guide |
-| **Total** | **~1,895** | | |
+| **Batch 42** | **20** | **2026-04-19** | iCloud Drive, iPhone Files app, Continuity Camera (iPhone as Mac webcam), iPad Sidecar, Mac Handoff & Universal Clipboard, iMessage on Mac, FaceTime on Mac, Notes app tips, BenefitsCheckUp.org, VITA free tax prep, Withings health devices, Dexcom/Libre CGM phone setup, Zoom on Smart TV, read credit report, dispute credit card charge, Google Translate camera, Google Translate offline, forgot iPhone passcode, Files by Google, Google Maps transit |
+| **Total** | **~1,915** | | |
 
 ---
 
