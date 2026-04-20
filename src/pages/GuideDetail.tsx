@@ -24,6 +24,7 @@ import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { MasteryPicker } from '@/components/MasteryPicker';
 import { getGuideThumbnailUrl, getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
+import { getGuideResources } from '@/lib/guideResources';
 import { useAuth } from '@/contexts/AuthContext';
 
 const CATEGORY_RESOURCES: Record<string, { label: string; url: string }[]> = {
@@ -388,6 +389,8 @@ const GuideDetail = () => {
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.category === guide.category)
     .slice(0, 3);
+
+  const learnMoreResources = getGuideResources(guide);
 
   const howToJsonLd = guide.steps ? {
     '@context': 'https://schema.org',
@@ -795,6 +798,34 @@ const GuideDetail = () => {
               </Button>
             </div>
           </div>
+
+          {/* Learn More — auto-generated authoritative links */}
+          {learnMoreResources.length > 0 && (
+            <Card className="mb-8 border-primary/20">
+              <CardContent className="py-5 px-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <ExternalLink className="h-4 w-4 text-primary" />
+                  <p className="text-sm font-semibold">Learn more from official sources</p>
+                </div>
+                <ul className="space-y-2">
+                  {learnMoreResources.map((r) => (
+                    <li key={r.url}>
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:underline inline-flex items-center gap-1.5"
+                      >
+                        {r.title}
+                        <span className="text-xs text-muted-foreground">— {r.source}</span>
+                        <ExternalLink className="h-3 w-3 opacity-50" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Related Guides */}
           {relatedGuides.length > 0 && (
