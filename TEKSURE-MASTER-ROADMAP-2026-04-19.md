@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 91** (20 guides, 2026-04-20) — total ~2,900 guides
-- Next: **Batch 92** → **Batch 93** → ... (no upper limit)
+- Last completed: **Batch 92** (20 guides, 2026-04-20) — total ~2,920 guides
+- Next: **Batch 93** → **Batch 94** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -170,7 +170,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 89** | **20** | **2026-04-20** | BetterHelp therapy app, Talkspace, Woebot mental health chatbot, Daylio mood journal, Sleep Cycle alarm, Pillow sleep tracker, Noisli white noise, Petcube pet camera, Whistle GPS tracker, Pawprint pet records, Vetster online vet, BarkBox subscription, Tesla app, Electrify America, EVgo charging, SpotHero parking, Swagbucks, Flipp grocery savings, Dosh cashback, Raise gift cards |
 | **Batch 90** | **20** | **2026-04-20** | Perplexity AI app, Google Gemini app, Microsoft Copilot mobile, Otter.ai transcription, Notion AI writing, Libby library app, Hoopla digital, Libro.fm audiobooks, WEBTOON comics, Realtor.com, Trulia neighborhoods, Opendoor home selling, HomeLight agent finder, Paprika recipe manager, Tasty cooking app, Food Network Kitchen, Cooklist meal planner, Notarize online, Lemonade insurance, Fabric life insurance |
 | **Batch 91** | **20** | **2026-04-20** | SimpliSafe, Ring Alarm, Arlo cameras, Blink cameras, Eufy cameras, Uber beginners, Lyft beginners, GoGoGrandparent, Swappa used phones, Back Market refurbs, Decluttr electronics, StockX sneakers, America Beautiful Senior Pass, Recreation.gov camping, NPS app offline, Geocaching, Schlage Encode lock, TP-Link Kasa bulbs, Lutron Caséta, Govee LED strips |
-| **Total** | **~2,900** | | |
+| **Batch 92** | **20** | **2026-04-20** | Live Captions Android/Windows, Personal Voice iOS, Assistive Access iPhone, Sound Recognition, Switch Access Android, Google Family Link, Kindle Fire Kids, iPad Guided Access, Mac Screen Time, Grammarly student, Zotero citations, Teams Edu, Canvas LMS, Wolfram Alpha, Samsung Circle to Search, Bixby, Galaxy Watch, Google Pixel tips, Pixel Call Screen |
+| **Total** | **~2,920** | | |
 
 ---
 
