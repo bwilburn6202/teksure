@@ -748,8 +748,8 @@ export default function ErrorDecoder() {
                     <MessageCircleQuestion className="h-4 w-4 mt-0.5 text-foreground/60" />
                     <span>
                       Paste it into{' '}
-                      <Link to="/tekbot" className="text-primary hover:underline">
-                        TekBot
+                      <Link to="/tekbrain" className="text-primary hover:underline">
+                        TekBrain
                       </Link>{' '}
                       — our AI assistant can help with unusual errors.
                     </span>

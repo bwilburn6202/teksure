@@ -48,7 +48,7 @@ You can also register your phone number at donotcall.gov for free, which is the 
       { title: 'iPhone: Silence Unknown Callers', content: 'Open Settings → Phone → Silence Unknown Callers and turn it on. Calls from numbers not in your contacts go straight to voicemail.' },
       { title: 'Android: Filter Spam Calls', content: 'Open the Phone app → three dots → Settings → Spam and Call Screen → turn on "Filter Spam Calls."' },
       { title: 'Register with the Do Not Call list', content: 'Visit donotcall.gov and enter your phone number. This reduces calls from legitimate telemarketers (though scammers ignore it).' },
-      { title: 'Activate your carrier\'s free spam blocking', content: 'AT&T: activate "ActiveArmor" in the myAT&T app. Verizon: activate "Call Filter" in the My Verizon app. T-Mobile: activate "Scam Shield" in the T-Mobile app. All are free.', tip: 'Carrier spam blocking catches many scam calls before they even ring your phone.' },
+      { title: `Activate your carrier's free spam blocking`, content: 'AT&T: activate "ActiveArmor" in the myAT&T app. Verizon: activate "Call Filter" in the My Verizon app. T-Mobile: activate "Scam Shield" in the T-Mobile app. All are free.', tip: 'Carrier spam blocking catches many scam calls before they even ring your phone.' },
     ],
   },
   {
@@ -278,10 +278,10 @@ Step 1: Connect the printer to your Wi-Fi. Most modern printers have a small scr
 
 Step 2: Add the printer to your Windows computer. Click the Start button, open Settings (the gear icon), click "Bluetooth & devices," then click "Printers & scanners," and click "Add device." Windows will search for printers on your network. When your printer appears in the list, click it and follow the prompts. For a Mac: go to Apple menu → System Settings → Printers & Scanners → click the plus (+) button. If the printer does not appear automatically, download the printer's setup app from the manufacturer's website (HP has "HP Smart," Canon has "Canon Print," Epson has "Epson Smart Panel") — these apps guide you through the process step by step and are free to download.`,
     steps: [
-      { title: 'Connect the printer to Wi-Fi', content: 'Use the printer\'s front panel screen. Look for "Wireless Setup" or "Wi-Fi Setup" in the menu. Select your home Wi-Fi network name and enter your password.' },
+      { title: 'Connect the printer to Wi-Fi', content: `Use the printer's front panel screen. Look for "Wireless Setup" or "Wi-Fi Setup" in the menu. Select your home Wi-Fi network name and enter your password.` },
       { title: 'Add the printer on Windows', content: 'Start → Settings → Bluetooth & devices → Printers & scanners → Add device. Wait for your printer to appear and click it.' },
       { title: 'Add the printer on Mac', content: 'Apple menu → System Settings → Printers & Scanners → click the + button. Your printer should appear in the list.' },
-      { title: 'Use the manufacturer\'s app if needed', content: 'HP: download "HP Smart." Canon: download "Canon Print." Epson: download "Epson Smart Panel." These free apps walk you through setup step by step.', tip: 'Make sure your computer is on the same Wi-Fi network as the printer — not a guest network.' },
+      { title: `Use the manufacturer's app if needed`, content: 'HP: download "HP Smart." Canon: download "Canon Print." Epson: download "Epson Smart Panel." These free apps walk you through setup step by step.', tip: 'Make sure your computer is on the same Wi-Fi network as the printer — not a guest network.' },
       { title: 'Print a test page', content: 'In Printers & scanners (Windows) or Printers & Scanners (Mac), click your printer → Manage → Print a test page to confirm everything is working.' },
     ],
   },
@@ -328,7 +328,7 @@ On an Android phone purchased through Google: Open the Google Play Store app, ta
       { title: 'Cancel on a computer', content: 'Go to YouTube.com → click your profile picture → Paid Memberships → find YouTube Premium → Manage → Deactivate or Cancel membership.' },
       { title: 'Cancel on iPhone', content: 'Settings → tap your name at the top → Subscriptions → YouTube Premium → Cancel Subscription.' },
       { title: 'Cancel on Android', content: 'Google Play Store → tap your profile picture → Payments & subscriptions → Subscriptions → YouTube Premium → Cancel subscription.' },
-      { title: 'Check if you signed up through another service', content: 'If none of the above find the subscription, look at your monthly bank or credit card statement to see who is charging you. Cancel through that company\'s website or app.', tip: 'After canceling you keep Premium access until the end of the current billing period. You will not receive a partial refund.' },
+      { title: 'Check if you signed up through another service', content: `If none of the above find the subscription, look at your monthly bank or credit card statement to see who is charging you. Cancel through that company's website or app.`, tip: 'After canceling you keep Premium access until the end of the current billing period. You will not receive a partial refund.' },
     ],
   },
   {
@@ -416,7 +416,7 @@ It is safe to click "Unsubscribe" when the email is from a company you recognize
 Do NOT click the unsubscribe link if the email: claims to be from a government agency (IRS, Social Security, Medicare — they do not send mass promotional emails), comes from a sender name or address you do not recognize at all, contains spelling errors or asks you to "confirm your email to unsubscribe," or was already in your Spam folder. For those emails, mark them as spam and delete them.`,
     steps: [
       { title: 'Safe to unsubscribe: emails from companies you know', content: 'If the email is from a store, bank, or website you actually use, click the Unsubscribe link at the bottom. They are legally required to remove you within 10 days.' },
-      { title: 'Use Gmail\'s built-in Unsubscribe button', content: 'In Gmail, many emails show an "Unsubscribe" link right next to the sender\'s name at the top of the email. This is Google\'s own system — it is very safe to click.' },
+      { title: `Use Gmail's built-in Unsubscribe button`, content: `In Gmail, many emails show an "Unsubscribe" link right next to the sender's name at the top of the email. This is Google's own system — it is very safe to click.` },
       { title: 'Do NOT unsubscribe from emails you do not recognize', content: 'If you do not know the company at all, or the email was already in your Spam folder, do not click any links. Just delete it.', warning: 'Clicking unsubscribe in a scam email can confirm to the scammer that your address is active, leading to more spam.' },
       { title: 'Mark suspicious emails as spam', content: 'In Gmail, right-click the email → "Report spam." On iPhone Mail, swipe left on the email → More → Move to Junk. This trains your inbox to catch similar emails in the future.' },
     ],
@@ -462,12 +462,12 @@ To set up Screen Time: On the child's device, go to Settings and tap "Screen Tim
 
 Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to turn it on and block inappropriate websites, prevent purchases, and restrict certain apps. Under "Web Content," choose "Limit Adult Websites" to filter out explicit material automatically. If the child's iPhone is linked to your Apple Family Sharing group, you can manage all these settings remotely from your own phone: go to your Settings → Screen Time → your child's name, and you will see their usage reports and can adjust limits from your own device without needing to touch theirs.`,
     steps: [
-      { title: 'Open Screen Time on the child\'s iPhone', content: 'Settings → Screen Time → Turn On Screen Time → This is My Child\'s iPhone.' },
+      { title: `Open Screen Time on the child's iPhone`, content: `Settings → Screen Time → Turn On Screen Time → This is My Child's iPhone.` },
       { title: 'Set Downtime (off hours)', content: 'Choose the hours when the phone is locked — for example, 9 PM to 7 AM on school nights. During Downtime, only apps you allow are accessible.' },
       { title: 'Set App Limits', content: 'Tap "App Limits" → Add Limit → choose categories like Social Networking or Games → set a daily time limit (e.g., 1 hour). The app shows a warning when they are close to the limit.' },
       { title: 'Create a Screen Time passcode', content: 'When prompted, create a 4-digit Screen Time passcode — different from the regular phone passcode. Only you should know this, so the child cannot change the settings.', warning: 'Do not use a passcode the child might guess. This is the key to the whole system.' },
       { title: 'Enable Content & Privacy Restrictions', content: 'Settings → Screen Time → Content & Privacy Restrictions → turn it on → Web Content → Limit Adult Websites. You can also block the ability to install new apps or make purchases.' },
-      { title: 'Manage remotely via Family Sharing', content: 'If your Apple ID and the child\'s are in the same Family group, go to your own Settings → Screen Time → your child\'s name to see usage and adjust limits from your own phone.', tip: 'Set up Family Sharing at Settings → your name → Family Sharing if you have not already.' },
+      { title: 'Manage remotely via Family Sharing', content: `If your Apple ID and the child's are in the same Family group, go to your own Settings → Screen Time → your child's name to see usage and adjust limits from your own phone.`, tip: 'Set up Family Sharing at Settings → your name → Family Sharing if you have not already.' },
     ],
   },
 
@@ -480,7 +480,7 @@ Once Screen Time is on, you can also tap "Content & Privacy Restrictions" to tur
   {
     slug: 'traffic-violation-text-scam',
     title: 'How to Spot the Fake Traffic Violation Text Scam',
-    excerpt: 'Got a text about an unpaid ticket or toll? It\'s probably a scam. Here\'s how to tell the difference and what to do.',
+    excerpt: `Got a text about an unpaid ticket or toll? It's probably a scam. Here's how to tell the difference and what to do.`,
     category: 'safety-guides',
     tags: ['scams', 'text scams', 'smishing', 'traffic', 'FTC', 'safety'],
     readTime: '5 min',
@@ -504,8 +504,8 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
       },
       {
         title: 'Verify a real fine the safe way',
-        content: 'If you think you might genuinely have an unpaid ticket or toll, check it without using the text link. Open your phone\'s browser and search for your state\'s official DMV website (for example, "California DMV official site") or your toll authority\'s official site. You can also call the phone number listed on your state\'s government website. Real fines show up in your official driving record.',
-        tip: 'The FTC\'s official traffic scam alert is at consumer.ftc.gov — search "traffic violation text scam" to read the full advisory.',
+        content: `If you think you might genuinely have an unpaid ticket or toll, check it without using the text link. Open your phone's browser and search for your state's official DMV website (for example, "California DMV official site") or your toll authority's official site. You can also call the phone number listed on your state's government website. Real fines show up in your official driving record.`,
+        tip: `The FTC's official traffic scam alert is at consumer.ftc.gov — search "traffic violation text scam" to read the full advisory.`,
       },
       {
         title: 'Report the scam text',
@@ -523,8 +523,8 @@ The scam is spreading rapidly in every state. Scammers are targeting people beca
   // Newsletter: "If you or someone you know has fallen for a scam — a fake tech support call, a gift card demand, a romance scammer — this new TekSure guide walks you through every recovery step: who to call first, how to freeze your credit for free, and how to report it so it can't happen to someone else."
   {
     slug: 'what-to-do-after-being-scammed',
-    title: 'What to Do If You\'ve Been Scammed: A Step-by-Step Recovery Guide',
-    excerpt: 'Fell for a scam? Don\'t panic. Take these steps right away to protect your money, your accounts, and your identity.',
+    title: `What to Do If You've Been Scammed: A Step-by-Step Recovery Guide`,
+    excerpt: `Fell for a scam? Don't panic. Take these steps right away to protect your money, your accounts, and your identity.`,
     category: 'safety-guides',
     tags: ['scams', 'recovery', 'identity theft', 'FTC', 'credit freeze', 'safety'],
     readTime: '8 min',
@@ -542,7 +542,7 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
       },
       {
         title: 'Contact your bank or credit card company right away',
-        content: 'If you sent money or shared your bank or card details, call the fraud department of your bank or credit card company as soon as possible. Look for the phone number on the back of your card or on your bank\'s official website. Explain what happened and ask them to reverse the transaction or freeze the account if needed. The sooner you call, the better your chances of recovering funds. For wire transfers, ask about a recall. For gift cards, call the gift card company directly — each has a fraud line.',
+        content: `If you sent money or shared your bank or card details, call the fraud department of your bank or credit card company as soon as possible. Look for the phone number on the back of your card or on your bank's official website. Explain what happened and ask them to reverse the transaction or freeze the account if needed. The sooner you call, the better your chances of recovering funds. For wire transfers, ask about a recall. For gift cards, call the gift card company directly — each has a fraud line.`,
         tip: 'For credit card charges, request a chargeback. For debit card fraud, federal law gives you better protection if you report within two business days.',
       },
       {
@@ -562,12 +562,12 @@ Scams take many forms: a fake tech support call where you gave someone remote ac
       },
       {
         title: 'Report the scam',
-        content: 'Reporting helps authorities catch scammers and warn others. Report to the FTC at ReportFraud.ftc.gov — this takes about 5 minutes and the FTC uses reports to build cases against scammers. For investment fraud, report to the SEC at sec.gov/tcr. For internet-based fraud, file a complaint with the FBI\'s Internet Crime Complaint Center at ic3.gov. For gift card scams, contact the gift card issuer and report to the FTC.',
-        tip: 'The FTC\'s website at consumer.ftc.gov/articles/what-do-if-you-were-scammed has detailed guidance for every type of scam. Bookmark it.',
+        content: `Reporting helps authorities catch scammers and warn others. Report to the FTC at ReportFraud.ftc.gov — this takes about 5 minutes and the FTC uses reports to build cases against scammers. For investment fraud, report to the SEC at sec.gov/tcr. For internet-based fraud, file a complaint with the FBI's Internet Crime Complaint Center at ic3.gov. For gift card scams, contact the gift card issuer and report to the FTC.`,
+        tip: `The FTC's website at consumer.ftc.gov/articles/what-do-if-you-were-scammed has detailed guidance for every type of scam. Bookmark it.`,
       },
       {
         title: 'Monitor your accounts for unusual activity',
-        content: 'Check your bank and credit card statements daily for the next few weeks. Look for any charges you do not recognize — even small ones (scammers often test with a small charge before making larger ones). Sign up for transaction alerts through your bank\'s app so you get a text every time money moves. Check your credit report for free at AnnualCreditReport.com — you can now check it weekly for free.',
+        content: `Check your bank and credit card statements daily for the next few weeks. Look for any charges you do not recognize — even small ones (scammers often test with a small charge before making larger ones). Sign up for transaction alerts through your bank's app so you get a text every time money moves. Check your credit report for free at AnnualCreditReport.com — you can now check it weekly for free.`,
       },
       {
         title: 'Talk to someone — you are not alone',
@@ -596,7 +596,7 @@ The key is to do the backup before you set up your new phone or hand in your old
       {
         title: 'Back up WhatsApp on your old phone (iPhone)',
         content: 'On your old iPhone, open WhatsApp → tap the Settings icon (bottom right) → tap Chats → tap Chat Backup → tap "Back Up Now." You will see a progress bar as it uploads to iCloud. Wait for it to say "Last backup: just now" before moving on. Make sure you are connected to Wi-Fi — backups can be large.',
-        tip: 'For step-by-step help from WhatsApp, visit faq.whatsapp.com and search "back up on iPhone." This is WhatsApp\'s official support page.',
+        tip: `For step-by-step help from WhatsApp, visit faq.whatsapp.com and search "back up on iPhone." This is WhatsApp's official support page.`,
         warning: 'Make sure iCloud has enough free storage. Go to Settings → your name → iCloud → Manage Storage to check. A free iCloud account includes 5 GB.',
       },
       {
@@ -615,7 +615,7 @@ The key is to do the backup before you set up your new phone or hand in your old
       {
         title: 'Switching from Android to iPhone (or iPhone to Android)',
         content: 'WhatsApp has a special built-in tool for cross-platform transfers called "Move to iOS" (when moving to iPhone) or using the Android companion app. On your new iPhone, during initial setup, use the "Move to iOS" app on your Android phone — it will prompt you to transfer WhatsApp data directly over a local wireless connection. For the iPhone-to-Android direction, open WhatsApp on your old iPhone → Settings → Chats → Move Chats to Android and follow the prompts. Both phones need to be near each other and connected to the same Wi-Fi.',
-        tip: 'WhatsApp\'s official cross-platform transfer guide is at faq.whatsapp.com — search "move WhatsApp from Android to iPhone" or vice versa.',
+        tip: `WhatsApp's official cross-platform transfer guide is at faq.whatsapp.com — search "move WhatsApp from Android to iPhone" or vice versa.`,
       },
       {
         title: 'Verify everything transferred correctly',
@@ -650,7 +650,7 @@ The most common cause is a router that needs a restart. The second most common i
       },
       {
         title: 'Forget and rejoin the Wi-Fi network on your device',
-        content: 'Sometimes your device\'s memory of the Wi-Fi network gets corrupted. On iPhone: Settings → Wi-Fi → tap the (i) next to your network name → Forget This Network → then reconnect by tapping the network name and entering your password. On Android: Settings → Wi-Fi → tap your network name → tap Forget → then reconnect. On Windows: click the Wi-Fi icon in the taskbar → right-click your network → Forget → then reconnect.',
+        content: `Sometimes your device's memory of the Wi-Fi network gets corrupted. On iPhone: Settings → Wi-Fi → tap the (i) next to your network name → Forget This Network → then reconnect by tapping the network name and entering your password. On Android: Settings → Wi-Fi → tap your network name → tap Forget → then reconnect. On Windows: click the Wi-Fi icon in the taskbar → right-click your network → Forget → then reconnect.`,
       },
       {
         title: 'Move closer to the router',
@@ -659,16 +659,16 @@ The most common cause is a router that needs a restart. The second most common i
       },
       {
         title: 'Check if too many devices are connected',
-        content: 'Every device connected to your Wi-Fi shares the same bandwidth. If many family members are streaming video, video calling, and downloading at the same time, the connection can get congested and appear to drop. Try temporarily disconnecting some devices and see if stability improves. You can manage connected devices through your router\'s admin panel — type 192.168.1.1 into your browser\'s address bar to access it (username and password are often on a sticker on the router).',
+        content: `Every device connected to your Wi-Fi shares the same bandwidth. If many family members are streaming video, video calling, and downloading at the same time, the connection can get congested and appear to drop. Try temporarily disconnecting some devices and see if stability improves. You can manage connected devices through your router's admin panel — type 192.168.1.1 into your browser's address bar to access it (username and password are often on a sticker on the router).`,
       },
       {
-        title: 'Check your router\'s age',
+        title: `Check your router's age`,
         content: 'Routers more than 5 years old may no longer receive software updates from the manufacturer, which can make them unstable and cause frequent drops. If your router is old and the problem persists after trying the steps above, contact your internet provider. Many providers will replace an old router for free, or you can purchase a new one for $50–$150. Ask your provider if they offer a modem/router combo rental — it includes automatic updates.',
-        tip: 'For more detailed Wi-Fi troubleshooting, Microsoft\'s free guide is at support.microsoft.com — search "fix Wi-Fi connection issues." Apple\'s guide is at support.apple.com — search "use wireless diagnostics."',
+        tip: `For more detailed Wi-Fi troubleshooting, Microsoft's free guide is at support.microsoft.com — search "fix Wi-Fi connection issues." Apple's guide is at support.apple.com — search "use wireless diagnostics."`,
       },
       {
-        title: 'Run your internet provider\'s speed test',
-        content: 'Visit fast.com (free, no sign-up) or speedtest.net to check your actual internet speed. If the speed shown is much lower than what you pay for, the problem is with your internet service, not your home Wi-Fi. In that case, call your internet provider\'s support line and tell them your speed test result — they can often diagnose and fix connection issues remotely.',
+        title: `Run your internet provider's speed test`,
+        content: `Visit fast.com (free, no sign-up) or speedtest.net to check your actual internet speed. If the speed shown is much lower than what you pay for, the problem is with your internet service, not your home Wi-Fi. In that case, call your internet provider's support line and tell them your speed test result — they can often diagnose and fix connection issues remotely.`,
       },
     ],
   },

@@ -1,156 +1,138 @@
-# Knowledge-Base Source Plan — 125 Sources × 10 Topics
+# Knowledge-Base Expansion — Source Plan (125 sources × 10 topics = 1,250 guides)
 
-Tracking document for the TekSure knowledge-base expansion (target: +1,250 guides).
-Rolls out in 4 waves ordered by legal/copyright risk.
+Target: +1,250 guides over 8 weeks. Lands TekSure at ~2,513 total guides
+(starting from 1,263). The plan wires 125 sources (100 authoritative +
+25 community) through the existing
+`scrape-articles → categorize-and-dedup → simplify-article → publish-to-batch`
+pipeline.
 
-**Status key:** `planned` · `seeded` · `scraping` · `simplified` · `published`
-**ToS key:** `public-domain` (gov, freely reusable) · `cc-attribution` (CC BY/BY-SA) · `reference-only` (paraphrase + attribute; no verbatim) · `platform-tos` (verify each platform's robots.txt + ToS before scraping) · `api-terms` (official API with rate limits)
+Seed rows live in `supabase/migrations/20260419_expand_content_sources.sql`.
+Update both files in lockstep if a source is added, removed, or re-tiered.
 
----
+## Rollout waves
 
-## Wave 1 — Platform + Gov (Weeks 1–2, ~200 guides)
+| Wave | When | Tiers | Sources | ~Guides | Rationale |
+|------|------|-------|---------|--------:|-----------|
+| 1 | Weeks 1–2 | T1 + T3 | 20 | 200 | Platform + gov — highest authority, lowest legal risk |
+| 2 | Weeks 3–4 | T2 + T5 + T6 | 30 | 300 | Seniors-focused + security + health — aligned with core audience |
+| 3 | Weeks 5–6 | T7 + T8 + T9 | 30 | 300 | Money + smart home + communication — common senior pain points |
+| 4 | Weeks 7–8 | T4 + T10 + T11 + T12 + T13 | 45 | 450 | Community + tech media (reference-only) — most verification work |
 
-### Tier 1 — Official Platform Support (10)
+Wave 4 runs last so the verification pipeline is proven on safer authoritative
+content before touching community posts and for-profit publishers.
 
-| Name | Domain | Type | ToS | Topics |
-|------|--------|------|-----|--------|
-| Apple Support | support.apple.com | rss | reference-only | Setup, Sign-in, Updates, Privacy, Backup, Accessibility, Troubleshooting, Security, Family Sharing, Migrate |
-| Google Support | support.google.com | rss | reference-only | Gmail setup, Account recovery, 2-step verification, Photos backup, Drive basics, Meet, Search tips, Chrome privacy, Android switch, Family Link |
-| Microsoft Support | support.microsoft.com | rss | reference-only | Windows setup, Sign-in, Updates, Defender basics, OneDrive backup, Accessibility, Printer setup, Edge privacy, Family safety, Recovery |
-| Samsung Support | samsung.com | html | reference-only | Setup, Galaxy transfer, SmartThings, Security folder, Updates, Accessibility, Camera basics, Payments, Accounts, Troubleshoot |
-| Amazon Help | amazon.com | html | reference-only | Account setup, 2FA, Order tracking, Returns, Prime, Alexa basics, Kindle basics, Payments, Digital security, Delivery preferences |
-| Meta Help Center | facebook.com | html | platform-tos | Account recovery, Privacy, 2FA, Friend requests, Marketplace safety, Video calls, Page vs profile, Memorializing, Reporting, Blocking |
-| Instagram Help | help.instagram.com | html | platform-tos | Setup, Private account, Stories basics, DMs, Reporting, 2FA, Parental supervision, Blocking, Data download, Delete account |
-| Zoom Support | support.zoom.us | rss | reference-only | Joining a call, Schedule meeting, Screen share, Backgrounds, Audio fix, Recording, Waiting room, Co-host, Phone dial-in, Privacy |
-| Roku Support | support.roku.com | html | reference-only | Setup, Pairing remote, Add channel, Private listening, Guest mode, Parental PIN, Mirroring, Voice remote, Update, Factory reset |
-| Chromebook Help | support.google.com/chromebook | rss | reference-only | Setup, Guest mode, Parental controls, Print, Offline Docs, Android apps, Updates, Accessibility, Recovery, Switching from Windows |
+## Verification model
 
-### Tier 3 — Government & Consumer Safety (10)
+| Source kind | Verification path |
+|-------------|-------------------|
+| Tier 1–3, 5–10 (authoritative) | `verified=true` by default. Model may flip to `false` if output contradicts its own reasoning. |
+| Tier 4 (tech media) | `fetch_config.reference_only=true`. Treated as inspiration — `simplify-article` rewrites from scratch and cites no verbatim phrase > 8 words. |
+| Tier 11–13 (community) | `simplify-article` injects an authoritative reference (same category, published, verified) as `<authoritative_reference>`. Model must set `verified=false` if the community advice contradicts the reference. `publish-to-batch` only publishes rows with `verified=true`. |
 
-| Name | Domain | Type | ToS | Topics |
-|------|--------|------|-----|--------|
-| FTC Consumer Advice | consumer.ftc.gov | rss | public-domain | Scam types, Report a scam, ID theft recovery, Do Not Call, Refunds, Robocalls, Phishing, Tech support scams, Romance scams, Debt collectors |
-| FCC Consumer Help | fcc.gov | rss | public-domain | Lifeline program, Robocalls, Number porting, ACP, Spam texts, Caller ID spoofing, Broadband labels, Complaint filing, Accessibility, Emergency alerts |
-| CISA | cisa.gov | rss | public-domain | Password tips, 2FA, Phishing, Ransomware, Update guidance, Secure WiFi, Mobile security, Social engineering, Family safety, Report an incident |
-| IC3 (FBI) | ic3.gov | html | public-domain | File a complaint, Romance scams, BEC, Elder fraud, Crypto scams, Tech support fraud, Ransomware, Investment fraud, Lottery scams, Online auctions |
-| USA.gov | usa.gov | rss | public-domain | Find benefits, Vote, Passport, Social Security, IRS, VA, Change of address, Government jobs, Report fraud, Tax refund |
-| SSA Online | ssa.gov | html | public-domain | Create my Social Security, Apply for benefits, Replace card, Benefit verification, Earnings record, Medicare enrollment, Direct deposit, Representative payee, Password reset, Block access |
-| Medicare.gov | medicare.gov | html | public-domain | Sign up, Enroll Part D, Find a doctor, Telehealth, Appeal denial, MyMedicare.gov login, Preventive services, Prescription drug list, Supplement plans, Moving |
-| IRS.gov | irs.gov | rss | public-domain | Identity theft PIN, IRS ID.me, File electronically, Get transcript, Direct deposit, Payment plans, Scam alerts, Free file, Refund tracking, Amended return |
-| StopBullying.gov | stopbullying.gov | html | public-domain | Cyberbullying signs, Report online, Block/mute, Talk to kids, School resources, Social media reports, Getting help, Adult support, Warning signs, Prevention |
-| NIST Cybersecurity | nist.gov | rss | public-domain | Password basics, Safe WiFi, Mobile security, Backups, Patching, Phishing, Small business, IoT security, Multi-factor auth, Secure disposal |
+## Topic templates (10 per source)
 
----
+Topics are generated by source-type rather than hand-picked:
 
-## Wave 2 — Seniors + Privacy + Health (Weeks 3–4, ~300 guides)
+- **Platform support (T1)** — Setup, Sign-in, Updates, Privacy, Backup, Accessibility, Troubleshooting, Security, Family Sharing, Transfer/Migrate
+- **Seniors (T2)** — Plain-language intros to: Email, Video calling, Photos, Banking, Maps, Messaging, Safety, Streaming, Voice assistants, Health apps
+- **Government (T3)** — Scam types, Reporting, Recovery, Benefits enrollment, Identity protection, Official apps, Data requests, Accessibility options, Fraud alerts, Secure login
+- **Tech media (T4)** — Reference-only. No fixed topic list — simplify takes the feed's top 10 most-relevant how-to posts and fully rewrites.
+- **Privacy/Security (T5)** — Password managers, 2FA, Phishing, Malware, VPNs, Data breaches, Browser privacy, Public Wi-Fi, Device theft, Scam detection
+- **Health (T6)** — Patient portals, Telehealth, Fitness trackers, Medication apps, Appointment booking, Health records, Secure messaging with providers, Accessibility, Caregiver access, Heart/BP monitoring
+- **Money (T7)** — Mobile banking, Bill pay, Zelle/Venmo/PayPal, Credit monitoring, Fraud alerts, Tax filing apps, SSA My Account, Medicare billing, Fixed-income budgeting, Check deposit
+- **Smart home (T8)** — First-time setup, Voice commands, Routines, Privacy, Device groups, Guest access, Firmware updates, Troubleshooting, Energy use, Uninstall/reset
+- **Communication (T9)** — Setup, Group calls, Screen share, Captions, Accessibility, Recording, Background blur, Muting, Notifications, Sign-out on shared devices
+- **Connectivity/Accessibility (T10)** — Plan selection, Router placement, Wi-Fi speed, Mesh, Extenders, Captions, Magnifier, Voice control, Subsidies (Lifeline), Deaf/hard-of-hearing tools
+- **Reddit (T11)** — Organic: top monthly threads per subreddit with `score ≥ fetch_config.min_score`. No fixed list.
+- **Stack Exchange (T12)** — Top-voted questions per site, each paired with its accepted answer body.
+- **YouTube (T13)** — Channel's top 10 videos from the last 12 months (by view count), with English transcript.
 
-### Tier 2 — Senior-Focused Educators (10)
+## Sources — full list
 
-AARP Tech · Senior Planet · GCFGlobal · TechBoomers · Cyber-Seniors · OATS · Generations on Line · DigitalLearn · NIA (NIH) · Goodwill Community Foundation
+Numbers match the rollout-wave assignment in the seed migration.
 
-*10 topics each: Device basics, Email, Video calls, Scam protection, Social media, Shopping, Banking, Health apps, Smart speakers, Photos.*
+### Tier 1 — Platform (10 · Wave 1)
+1. Apple Support — `support.apple.com`
+2. Microsoft Support — `support.microsoft.com`
+3. Google Support — `support.google.com`
+4. Samsung Support — `samsung.com`
+5. Amazon Help — `amazon.com`
+6. Meta Help Center — `facebook.com`
+7. WhatsApp FAQ — `faq.whatsapp.com`
+8. Netflix Help Center — `help.netflix.com`
+9. Spotify Support — `support.spotify.com`
+10. Zoom Support — `support.zoom.us`
 
-### Tier 5 — Privacy & Security (10)
+### Tier 2 — Seniors (10 · Wave 2)
+1. AARP Technology · 2. Senior Planet · 3. TechBoomers · 4. GreatCall (Lively) · 5. GetSetUp · 6. Cyber-Seniors · 7. SeniorNet · 8. Little Tech Girl · 9. Elder Tech Help · 10. Connected Living
 
-EFF Surveillance Self-Defense · Privacy Rights Clearinghouse · Have I Been Pwned · Krebs on Security · Malwarebytes Labs · Norton blog · Mozilla blog · DuckDuckGo blog · Consumer Reports Digital Lab · StaySafeOnline (NCA)
+### Tier 3 — Government (10 · Wave 1)
+1. FTC Consumer Info · 2. CISA Alerts · 3. IC3 (FBI) · 4. Medicare.gov · 5. SSA · 6. IRS News · 7. USA.gov · 8. VA · 9. Ready.gov · 10. OnGuardOnline
 
-*10 topics each: Strong passwords, Password manager, 2FA, Data breach response, VPN basics, Secure browser, Phishing ID, Public WiFi, Encrypted messaging, Privacy settings.*
+### Tier 4 — Tech Media (10 · Wave 4 · reference-only)
+1. How-To Geek · 2. Lifewire · 3. Tom's Guide · 4. MakeUseOf · 5. Digital Trends · 6. GCFGlobal · 7. The Verge · 8. Engadget · 9. CNET · 10. PCMag
 
-### Tier 6 — Health Tech (10)
+### Tier 5 — Privacy & Security (10 · Wave 2)
+1. EFF · 2. Krebs on Security · 3. NIST Cybersecurity · 4. StaySafeOnline (NCA) · 5. Have I Been Pwned · 6. Privacy Rights Clearinghouse · 7. Malwarebytes Labs · 8. Bleeping Computer · 9. StopRansomware · 10. IdentityTheft.gov
 
-Mayo Clinic · Cleveland Clinic Health Essentials · NIA · Medicare Telehealth · AARP Health Tech · Apple Health · Fitbit Help · Samsung Health · MyChart Help · HealthIT.gov
+### Tier 6 — Health Tech (10 · Wave 2)
+1. MyChart (Epic) · 2. MedlinePlus · 3. CDC · 4. Apple Health · 5. Fitbit · 6. MyFitnessPal · 7. GoodRx · 8. Teladoc · 9. AHRQ Digital Health · 10. NIA (NIH Senior Health)
 
-*10 topics each: Patient portal, Telehealth visit, Rx refills, Fitness tracker, Medication reminder, Heart health app, Sleep tracking, Fall detection, Health records, Caregiver access.*
+### Tier 7 — Money & Banking (10 · Wave 3)
+1. CFPB · 2. IRS Taxpayer Advocate · 3. SSA Benefits · 4. Zelle · 5. Venmo · 6. PayPal · 7. Chase · 8. Bank of America · 9. Credit Karma · 10. AnnualCreditReport
 
----
+### Tier 8 — Smart Home (10 · Wave 3)
+1. Alexa · 2. Google Nest · 3. Ring · 4. Roku · 5. Fire TV · 6. Apple TV · 7. Philips Hue · 8. Ecobee · 9. Chromecast · 10. SmartThings
 
-## Wave 3 — Money + Smart Home + Communication (Weeks 5–6, ~300 guides)
+### Tier 9 — Communication (10 · Wave 3)
+1. Zoom · 2. FaceTime · 3. Google Meet · 4. Microsoft Teams · 5. Signal · 6. Messenger · 7. iMessage · 8. Telegram · 9. Google Duo · 10. Skype
 
-### Tier 7 — Banking & Money (10)
+### Tier 10 — Connectivity & Accessibility (10 · Wave 4)
+1. Verizon · 2. AT&T · 3. T-Mobile · 4. Xfinity · 5. Spectrum · 6. Apple Accessibility · 7. Android Accessibility · 8. Microsoft Accessibility · 9. FCC · 10. Lifeline (USAC)
 
-CFPB · Bank of America Online Help · Chase Help · Wells Fargo Online Help · PayPal Help · Venmo Help · Zelle Help · SSA online services · AARP Money · NerdWallet Basics
+### Tier 11 — Reddit (10 · Wave 4 · verification required)
+`r/techsupport`, `r/AskTechnology`, `r/applehelp`, `r/iphonehelp`,
+`r/androidquestions`, `r/seniors`, `r/Scams`, `r/personalfinance`,
+`r/homeautomation`, `r/accessibility`.
 
-*10 topics each: Mobile check deposit, Alerts setup, Zelle send, Wire transfer, Lock card, Password reset, Statements, Fraud reporting, Joint accounts, Beneficiaries.*
+Fetch config: `top.json?t=month&limit=25`, filtered by `fetch_config.min_score`.
+Each post is paired with its single highest-voted top-level comment.
 
-### Tier 8 — Smart Home (10)
+### Tier 12 — Stack Exchange (5 · Wave 4 · verification required)
+Super User, Ask Different (apple), Android Enthusiasts, Web Apps, Information Security.
 
-Amazon Alexa Help · Google Nest Help · Apple HomeKit · Ring Help · Arlo Help · Philips Hue · Ecobee Help · Wyze Help · iRobot · Eufy Help
+Fetch config: `api.stackexchange.com/2.3/questions?sort=votes&filter=withbody`,
+paired with the top-voted answer for each question.
 
-*10 topics each: Setup, Routines, Voice commands, Sharing access, Camera privacy, Doorbell alerts, Thermostat schedule, Lights scenes, Voice intercom, Troubleshooting.*
+### Tier 13 — YouTube (10 · Wave 4 · verification required)
+Apple Support, Android (Google), Microsoft, Samsung Care US, AARP, Senior Planet,
+How-To Geek, TechBoomers, Ask Leo!, Cyber-Seniors.
 
-### Tier 9 — Communication & Email (10)
+Fetch config: YouTube Data API v3 — top 10 videos from each channel's last
+12 months by view count. Transcripts via `youtube.com/api/timedtext?lang=en`.
+Requires `YOUTUBE_API_KEY` secret.
 
-WhatsApp · FaceTime · Apple Messages · Google Messages · Gmail · Outlook · Yahoo Mail · Zoom · Skype · Signal
+## ToS notes
 
-*10 topics each: Setup, Video call, Group chat, Share photo, Voicemail, Spam filter, Block contact, Backup chats, Change number, Delete account.*
+- **Reddit**: public JSON endpoints are allowed for low-volume non-commercial use. Respect `X-Ratelimit` headers. Our scrape cap (25 posts × 10 subs × weekly) stays well under 60 req/min.
+- **Stack Exchange**: API allows 300 req/day anonymous. Attribution (link + "CC BY-SA" note) goes into the `sourceUrl` / `sourceName` guide fields.
+- **YouTube**: Data API quota = 10k units/day default. `search.list` costs 100 units per call, so 10 channels/week is trivial. `timedtext` is public but unofficial — if it breaks we fall back to description-only.
+- **Tier 4 (tech media)**: RSS-discoverable so scraping is legitimate, but their content is copyrighted. Simplify MUST paraphrase (8-word rule) and cite the original. `fetch_config.reference_only=true` enforces this downstream.
 
----
+## Operational checklist (dry-run before Wave 1 at scale)
 
-## Wave 4 — Tech Media + A11y + Community (Weeks 7–8, ~450 guides)
+1. `supabase db push` — migration applies cleanly
+2. `seed-sources.ts --tier=1,11 --limit=2` — 2 sources touched
+3. Trigger `scrape-articles` → confirm `scraped_articles` rows with correct `source_type`
+4. Trigger `categorize-and-dedup` → confirm categorization
+5. Trigger `simplify-article` on one Reddit row → inspect:
+   - Schema matches `Guide` type
+   - `verified` set correctly
+   - No banned words in body
+   - `source_url` populated
+6. `npm test -- src/__tests__/brand-voice.test.ts` passes
+7. Trigger `publish-to-batch` manually → confirm PR opens against main
+8. Check out branch, `npm run dev`, spot-check 3 guides at `/guides/{slug}`
+9. Merge PR → rows flip to `is_published=true`
 
-### Tier 4 — Mainstream Tech Media (10) — reference-only
-
-How-To Geek · Tom's Guide · CNET How-To · PCMag How-To · Lifehacker · Digital Trends · MakeUseOf · The Verge How-To · Wired How-To · Engadget How-To
-
-*Used as research input only — always paraphrase, never quote > 8 words.*
-
-### Tier 10 — Connectivity & Accessibility (10)
-
-Xfinity · Verizon · AT&T · T-Mobile · Spectrum · FCC Lifeline · Apple Accessibility · Microsoft Accessibility · Android Accessibility · WebAIM
-
-*10 topics each: Plan activation, WiFi setup, Speed test, Hearing aids, VoiceOver, Magnifier, Captions, Switch control, Voice control, Color filters.*
-
-### Tier 11 — Reddit (10) — api-terms, require verification cross-ref
-
-| Subreddit | Fetch | Threshold | Topics (organic) |
-|-----------|-------|-----------|------------------|
-| r/techsupport | reddit.com/r/techsupport/top.json?t=month | score > 50 | organic (top monthly) |
-| r/AskTechnology | same | > 50 | organic |
-| r/applehelp | same | > 50 | organic |
-| r/iphonehelp | same | > 50 | organic |
-| r/androidquestions | same | > 50 | organic |
-| r/seniors | same | > 20 (smaller sub) | organic, filtered to tech |
-| r/Scams | same | > 100 | organic, all scam posts |
-| r/personalfinance | same | > 200 | filtered to "online banking safety" keywords |
-| r/homeautomation | same | > 50 | organic |
-| r/accessibility | same | > 20 | organic |
-
-### Tier 12 — Stack Exchange (5) — api-terms, require verification cross-ref
-
-| Site | Endpoint | Threshold |
-|------|----------|-----------|
-| Super User | api.stackexchange.com/2.3/questions?site=superuser | score > 20 |
-| Ask Different | site=apple | > 15 |
-| Android Enthusiasts | site=android | > 10 |
-| Web Apps | site=webapps | > 10 |
-| Information Security | site=security | > 25 |
-
-### Tier 13 — YouTube (10) — api-terms, require verification cross-ref
-
-Apple Support · Android (Google) · Microsoft · Samsung Care US · AARP · Senior Planet · How-To Geek · TechBoomers · Ask Leo! (Leo Notenboom) · Cyber-Seniors
-
-*Fetch: YouTube Data API v3 (channel's top 10 videos last 12 months) → transcript via timedtext. Transcript + title → simplify pipeline.*
-
----
-
-## ToS summary
-
-| Category | Verbatim OK? | Attribution required? |
-|----------|--------------|----------------------|
-| Gov (T3, T10 FCC) | Yes (public domain) | Yes — good faith |
-| CC-licensed (EFF, Mozilla) | Yes with license text | Yes |
-| Platform support (T1, T6–T10) | No — paraphrase + link | Yes |
-| Mainstream media (T4) | No — paraphrase strictly | Yes |
-| Platform ToS sites (Meta/IG/Amazon) | No — caution, verify robots.txt | Yes |
-| API-accessed (Reddit/SE/YT) | Per API terms; content is user-submitted — paraphrase + verification required | Yes + verification note |
-
-## Rollout schedule
-
-| Wave | Week | Tiers | Sources seeded | Expected guides |
-|------|------|-------|----------------|-----------------|
-| 1 | 1–2 | T1 + T3 | 20 | 200 |
-| 2 | 3–4 | T2 + T5 + T6 | 30 | 300 |
-| 3 | 5–6 | T7 + T8 + T9 | 30 | 300 |
-| 4 | 7–8 | T4 + T10 + T11 + T12 + T13 | 45 | 450 |
-
-Wave 4 runs last so the community-verification flow is battle-tested on safer tiers first.
+Only after all 9 pass, enable the weekly `publish-to-batch` cron and begin Wave 1.

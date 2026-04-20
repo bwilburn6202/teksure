@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Bot, Send, User, RotateCcw, BookOpen, Lightbulb, ChevronRight } from 'lucide-react';
-import { getResponse } from '@/lib/tekbot';
+import { getResponse } from '@/lib/tekbrain';
 
 type Level = 'beginner' | 'intermediate' | 'confident';
 type Message = { role: 'ai' | 'user'; text: string; };

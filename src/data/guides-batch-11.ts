@@ -43,7 +43,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
       {
         title: 'Restart your phone once a week',
         content: 'A complete restart clears small processes that build up over time and quietly drain battery. On iPhone, press and hold the side button and either volume button, then slide to power off. Wait 30 seconds, then press the side button to turn it back on. On Android, press and hold the power button and tap Restart.',
-        tip: 'The Apple Support page for iPhone battery optimization is at support.apple.com/en-us/111840. For Android, Google\'s guide is at support.google.com — search "Android battery life tips."',
+        tip: `The Apple Support page for iPhone battery optimization is at support.apple.com/en-us/111840. For Android, Google's guide is at support.google.com — search "Android battery life tips."`,
       },
     ],
   },
@@ -52,7 +52,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
   {
     slug: 'windows-11-bitlocker-lockout-fix',
     title: 'Windows 11 Update Locked Me Out — How to Get Back In',
-    excerpt: 'Microsoft\'s April 2026 update triggered BitLocker screens on some PCs. Here is where to find your recovery key and get back in safely.',
+    excerpt: `Microsoft's April 2026 update triggered BitLocker screens on some PCs. Here is where to find your recovery key and get back in safely.`,
     category: 'windows-guides',
     tags: ['Windows 11', 'BitLocker', 'locked out', 'recovery key', 'update'],
     readTime: '7 min',
@@ -82,7 +82,7 @@ Do not panic, and do not pay anyone who calls offering to help. This is a genuin
       {
         title: 'If you cannot find the key anywhere',
         content: 'If the recovery key truly cannot be found, you will need to reset Windows — which removes all files from the drive. Before doing this, ask a trusted tech-savvy person or take the computer to a local repair shop to confirm the key really is gone. A reset should be a last resort only.',
-        tip: 'Microsoft\'s official support page for this issue is at support.microsoft.com — search for "find my BitLocker recovery key." Their support phone number is 1-800-642-7676 if you need to talk to someone.',
+        tip: `Microsoft's official support page for this issue is at support.microsoft.com — search for "find my BitLocker recovery key." Their support phone number is 1-800-642-7676 if you need to talk to someone.`,
       },
       {
         title: 'Once you are back in, run Windows Update again',
@@ -95,7 +95,7 @@ Do not panic, and do not pay anyone who calls offering to help. This is a genuin
   // Newsletter: "Getting locked out of a Google account is one of the most stressful tech moments people experience. Here is the complete step-by-step recovery guide — covering every scenario, including when your old phone number no longer works."
   {
     slug: 'get-back-into-locked-google-account',
-    title: 'Locked Out of Your Google Account? Here\'s How to Get Back In',
+    title: `Locked Out of Your Google Account? Here's How to Get Back In`,
     excerpt: 'Forgotten your Gmail password or lost access to your account? Follow these steps to recover it safely — even if your phone number changed.',
     category: 'essential-skills',
     tags: ['Google', 'Gmail', 'account recovery', 'password', 'locked out'],
@@ -110,8 +110,8 @@ The hardest part is that Google's recovery process uses information from your pa
 A few important warnings: do not use any Google account recovery service you find in a search ad or pop-up. All legitimate Google account recovery is free and happens at accounts.google.com. There is no Google phone number that helps with account recovery — anyone calling to offer help is a scammer.`,
     steps: [
       {
-        title: 'Start Google\'s account recovery process',
-        content: 'On any device with a browser, go to accounts.google.com/signin/recovery. Type your Gmail address and click Next. On the next screen, click "Forgot password?" This begins Google\'s step-by-step recovery process.',
+        title: `Start Google's account recovery process`,
+        content: `On any device with a browser, go to accounts.google.com/signin/recovery. Type your Gmail address and click Next. On the next screen, click "Forgot password?" This begins Google's step-by-step recovery process.`,
         tip: 'If possible, use the same device and browser you normally use for Gmail. Google recognizes familiar devices and is more likely to grant access without extra verification steps.',
       },
       {
@@ -121,24 +121,24 @@ A few important warnings: do not use any Google account recovery service you fin
       },
       {
         title: 'Use a verification code if you have a backup phone or email',
-        content: 'If you can\'t remember any password, Google will offer to send a verification code. It might offer to send a text to your phone number or a code to a backup email address. If your phone number is still the same, choose the text option — a 6-digit code arrives in seconds. If you have a backup email (like a work or Yahoo address), choose that instead.',
+        content: `If you can't remember any password, Google will offer to send a verification code. It might offer to send a text to your phone number or a code to a backup email address. If your phone number is still the same, choose the text option — a 6-digit code arrives in seconds. If you have a backup email (like a work or Yahoo address), choose that instead.`,
         warning: 'If your phone number has changed and you no longer have access to that number, skip this step. Do not get a new SIM card with the old number in order to receive this code — carriers cannot do this, and it will not work.',
       },
       {
-        title: 'Answer Google\'s security questions',
+        title: `Answer Google's security questions`,
         content: 'If you cannot use a code, Google will ask you questions: "When did you create this Google account?" (answer with the approximate month and year — you do not need to be exact), and "What email addresses have you used to sign in?" Answer as accurately as you can. Google is looking for reasonable answers, not perfect ones.',
       },
       {
         title: 'If nothing else works, try a trusted device',
-        content: 'If you are signed in to the Google account on another device — a tablet, an older phone, or a family member\'s computer — go to that device and try to recover from there. Google sends an approval prompt to devices already signed in, which bypasses most verification steps.',
-        tip: 'Google\'s official account recovery help page is at support.google.com/accounts/answer/7682439. If you get stuck, this page walks through every possible recovery scenario step by step.',
+        content: `If you are signed in to the Google account on another device — a tablet, an older phone, or a family member's computer — go to that device and try to recover from there. Google sends an approval prompt to devices already signed in, which bypasses most verification steps.`,
+        tip: `Google's official account recovery help page is at support.google.com/accounts/answer/7682439. If you get stuck, this page walks through every possible recovery scenario step by step.`,
       },
     ],
   },
   // ── TROUBLESHOOTING ──────────────────────────────────────────────────────────
   {
     slug: 'why-does-my-app-keep-crashing-how-to-fix-it',
-    title: 'Why Does My App Keep Crashing? Here\'s How to Fix It',
+    title: `Why Does My App Keep Crashing? Here's How to Fix It`,
     excerpt: 'When apps freeze or crash on your phone or computer, these four quick fixes solve the problem most of the time — no tech skills needed.',
     category: 'how-to',
     tags: ['app crash', 'iPhone', 'Android', 'troubleshoot', 'fix'],
@@ -163,14 +163,14 @@ Following Apple's iOS 18 release and Google's Android 15 update, many apps had t
         tip: 'Turn on automatic app updates so this happens in the background without you having to check. On iPhone: App Store → your profile → App Updates → turn on "App Updates." On Android: Play Store → your profile → Settings → Network Preferences → Auto-update apps.',
       },
       {
-        title: 'Clear the app\'s cache (Android only)',
+        title: `Clear the app's cache (Android only)`,
         content: 'On Android, go to Settings → Apps → tap the crashing app → Storage & Cache → tap "Clear Cache." This deletes temporary files the app stored — it does not delete your account, saved content, or settings. On iPhone, the equivalent is to delete and reinstall the app (see the next step) since iOS manages cache differently.',
         warning: 'Tap "Clear Cache" — not "Clear Data." Clearing data wipes the app back to a fresh install state and will log you out of your account.',
       },
       {
         title: 'Delete and reinstall the app',
         content: 'If clearing the cache did not help, delete the app and install it fresh. On iPhone, press and hold the app icon → "Remove App" → "Delete App." Then go to the App Store, search for the app, and tap the download icon. On Android, press and hold the app icon → "Uninstall." Then go to Google Play and reinstall it.',
-        tip: 'Your account information and saved content is usually stored on the company\'s servers, not on your phone — so reinstalling normally brings everything back when you sign in again. This applies to apps like Netflix, Amazon, Facebook, and Gmail. For games, your progress may be tied to your account if you are signed in, so check the game\'s settings before deleting.',
+        tip: `Your account information and saved content is usually stored on the company's servers, not on your phone — so reinstalling normally brings everything back when you sign in again. This applies to apps like Netflix, Amazon, Facebook, and Gmail. For games, your progress may be tied to your account if you are signed in, so check the game's settings before deleting.`,
       },
       {
         title: 'Restart your phone',
@@ -199,7 +199,7 @@ This guide works on Windows and Mac computers. Chrome on iPhone and Android upda
     steps: [
       {
         title: 'Open the Chrome menu',
-        content: 'Click the three vertical dots in the very top-right corner of your Chrome window (they look like a small stack of dots). This opens a dropdown menu with all of Chrome\'s options.',
+        content: `Click the three vertical dots in the very top-right corner of your Chrome window (they look like a small stack of dots). This opens a dropdown menu with all of Chrome's options.`,
         tip: 'If you see a small colored dot next to those three dots — green, orange, or red — that means an update is already waiting and needs you to restart Chrome to apply it.',
       },
       {
@@ -218,7 +218,7 @@ This guide works on Windows and Mac computers. Chrome on iPhone and Android upda
       {
         title: 'Confirm you have the latest version',
         content: 'After Chrome relaunches, go back to the three-dot menu → Help → About Google Chrome. It should now say "Google Chrome is up to date." You will also see your current version number — as of April 2026, version 135 is the latest.',
-        tip: 'Google\'s Chrome release notes and security advisories are published at chromium.googleblog.com and chromereleases.googleblog.com. You can check there any time to see what was fixed in the latest update.',
+        tip: `Google's Chrome release notes and security advisories are published at chromium.googleblog.com and chromereleases.googleblog.com. You can check there any time to see what was fixed in the latest update.`,
       },
     ],
   },

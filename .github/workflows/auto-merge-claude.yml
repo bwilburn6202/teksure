@@ -3,7 +3,7 @@ name: Auto-merge Claude & bot branches
 on:
   pull_request:
     branches: [main]
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
   auto-merge:
@@ -17,6 +17,14 @@ jobs:
       pull-requests: write
 
     steps:
+      - name: Mark draft as ready-for-review (if needed)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ github.event.pull_request.draft == true }}
+        run: |
+          gh pr ready "${{ github.event.pull_request.number }}" \
+            --repo "${{ github.repository }}"
+
       - name: Squash-merge and delete branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

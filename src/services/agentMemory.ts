@@ -1,5 +1,5 @@
 /**
- * Agent Memory Service — Four-tier persistent memory for TekBot.
+ * Agent Memory Service — Four-tier persistent memory for TekBrain.
  *
  * Inspired by agentmemory (github.com/rohitg00/agentmemory).
  *

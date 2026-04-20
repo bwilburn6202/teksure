@@ -219,7 +219,7 @@ Scammers now use artificial intelligence to create realistic-looking fake shoppi
   },
   {
     slug: 'beginners-roadmap',
-    title: 'Beginner\'s Tech Roadmap',
+    title: `Beginner's Tech Roadmap`,
     category: 'synthesis',
     tags: ['beginner', 'getting-started', 'learning', 'roadmap'],
     lastUpdated: '2026-04-01',

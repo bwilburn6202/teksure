@@ -183,7 +183,7 @@ export default function KeyboardNavigation() {
               <a href="/get-help" className="text-primary underline hover:text-primary/80">
                 Get Help
               </a>{' '}
-              page is always available. You can also open TekBot (the chat icon in the bottom-right
+              page is always available. You can also open TekBrain (the chat icon in the bottom-right
               corner) and ask any question in plain language.
             </p>
           </section>
