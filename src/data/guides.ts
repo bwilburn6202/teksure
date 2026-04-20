@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -76,6 +76,12 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'communication': 'Communication',
   'life-transitions': 'Life Transitions',
   'internet-connectivity': 'Internet & WiFi',
+  'online-privacy': 'Online Privacy & Dark Web',
+  'online-banking': 'Online Banking',
+  'buying-guides': 'Buying Guides',
+  'tech-explained': 'Tech Terms Explained',
+  'troubleshooting': 'Troubleshooting',
+  'work-from-home': 'Working from Home',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -98,6 +104,12 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'communication': 'Video calling, messaging apps, group chats, and staying connected with family and friends',
   'life-transitions': 'Setting up new devices, switching platforms, moving, and managing digital life changes',
   'internet-connectivity': 'Choosing internet plans, setting up routers, improving WiFi, and understanding your connection',
+  'online-privacy': 'Protect your personal data — dark web monitoring, data broker removal, private browsing, and keeping your information off the internet',
+  'online-banking': 'Online and mobile banking step by step — logging in safely, mobile check deposit, bill pay, transfers, and spotting bank scams',
+  'buying-guides': 'Know what to look for before you buy — plain-English guides to choosing laptops, phones, tablets, TVs, printers, and more',
+  'tech-explained': 'Confused by tech jargon? Plain-English explanations of RAM, CPU, storage, 4K, USB types, Bluetooth versions, and more',
+  'troubleshooting': 'Fix common tech problems yourself — frozen apps, slow internet, error messages, battery drain, and devices that won\'t cooperate',
+  'work-from-home': 'Set up a reliable home office — VPNs, remote desktop, video conferencing, cloud storage, and productivity tools for remote workers',
 };
 
 
