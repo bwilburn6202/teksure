@@ -22,8 +22,8 @@ import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
-import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
-import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { MasteryPicker } from '@/components/MasteryPicker';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
 import { useAuth } from '@/contexts/AuthContext';
 
 const CATEGORY_RESOURCES: Record<string, { label: string; url: string }[]> = {
@@ -274,28 +274,17 @@ const WarningBox = ({ children }: { children: React.ReactNode }) => (
 );
 
 const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: string }) => {
-  const [completed, setCompleted] = useState(() => isGuideCompleted(slug));
-
-  const handleComplete = () => {
-    markGuideCompleted(slug);
-    setCompleted(true);
-  };
-
   return (
-    <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
-      <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
-      <p className="font-bold text-base mb-1">You Did It!</p>
-      <p className="text-sm text-muted-foreground mb-4">You've completed: <strong>{guideTitle}</strong></p>
-      {completed ? (
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teksure-success/20 text-teksure-success text-sm font-medium">
-          <CheckCircle className="h-4 w-4" /> Marked as complete!
-        </div>
-      ) : (
-        <Button size="sm" variant="outline" onClick={handleComplete} className="gap-2 border-teksure-success/50 text-teksure-success hover:bg-teksure-success/10">
-          <CheckCircle className="h-4 w-4" /> Mark as Complete
-        </Button>
-      )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
+    <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 mb-8">
+      <div className="text-center mb-4">
+        <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
+        <p className="font-bold text-base mb-1">You Did It!</p>
+        <p className="text-sm text-muted-foreground">You've finished reading: <strong>{guideTitle}</strong></p>
+      </div>
+      <MasteryPicker slug={slug} />
+      <p className="text-xs text-muted-foreground mt-4 text-center">
+        Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Book a TekSure tech <span aria-hidden="true">→</span></Link>
+      </p>
     </div>
   );
 };
@@ -493,7 +482,22 @@ const GuideDetail = () => {
           {/* Header */}
           <div className="mb-10 relative">
             <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
-            <img src={getGuideThumbnailUrl(guide)} alt="" className="w-20 h-14 rounded-lg object-cover mb-4" loading="lazy" />
+            <div className="relative w-full rounded-xl overflow-hidden mb-6 bg-muted aspect-[2/1] sm:aspect-[5/2]">
+              <img
+                src={getGuideHeroUrl(guide)}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="eager"
+                onError={(e) => {
+                  const img = e.currentTarget;
+                  img.onerror = null;
+                  img.src = `https://picsum.photos/seed/${guide.slug}/1200/600`;
+                }}
+              />
+              <div className="absolute bottom-3 right-3 text-4xl sm:text-5xl bg-background/80 backdrop-blur-sm rounded-lg px-3 py-1" aria-hidden="true">
+                {guide.thumbnailEmoji}
+              </div>
+            </div>
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
               {guide.difficulty && (
@@ -541,6 +545,43 @@ const GuideDetail = () => {
               <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
             </div>
           </div>
+
+          {/* At a Glance — quick facts card */}
+          <Card className="mb-6 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+            <CardContent className="py-5 px-5">
+              <p className="text-xs uppercase tracking-wider font-semibold text-primary mb-3">At a Glance</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Category</div>
+                  <div className="font-medium">{categoryLabels[guide.category]}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Difficulty</div>
+                  <div className="font-medium">{guide.difficulty ?? 'Beginner'}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Read Time</div>
+                  <div className="font-medium">{estimatedReadTime}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Steps</div>
+                  <div className="font-medium">{guide.steps?.length ?? 0}</div>
+                </div>
+              </div>
+              {guide.tags && guide.tags.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-border/50">
+                  <div className="text-xs text-muted-foreground mb-2">Topics covered</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {guide.tags.slice(0, 8).map((tag) => (
+                      <Badge key={tag} variant="outline" className="text-xs font-normal">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </CardContent>
+          </Card>
 
           {/* Table of contents */}
           {guide.steps && guide.steps.length > 3 && (
