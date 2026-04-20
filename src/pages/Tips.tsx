@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Lightbulb, Camera, KeyRound, ShieldAlert, Trash2, FolderOpen,
   Shield, Video, BatteryCharging, RefreshCw, Lock, Globe, MailX, Star, PhoneOff, Smartphone, ShieldCheck, AlertTriangle,
-  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode, Car,
+  Users, Download, Phone, BellOff, LockKeyhole, Heart, Ban, LogOut, PauseCircle, Wifi, QrCode, Car, Monitor,
 } from 'lucide-react';
 
 interface Tip {
@@ -27,6 +27,12 @@ const featuredTip: Tip & { full: string } = {
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Windows 11 Apps Freezing When Saving Files? Here Is the Free Fix',
+    summary: 'After recent Windows 11 updates, Outlook, Word, and File Explorer started freezing when opening or saving files in OneDrive or Dropbox. Microsoft released a free patch — go to Settings → Windows Update → Check for updates, and install any available patches. A restart applies the fix in about 5 minutes.',
+    category: 'Maintenance',
+    icon: Monitor,
+  },
   {
     title: 'Update Chrome Right Now — Google Just Found 60 Security Holes',
     summary: 'Google confirmed 60 newly discovered security vulnerabilities in Chrome this week, two of them serious. The fix is already out — but it only applies after you restart Chrome. Click the three dots in the top-right corner → Help → About Google Chrome, then click Relaunch.',

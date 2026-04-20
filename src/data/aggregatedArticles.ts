@@ -1118,7 +1118,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
     thumbnailEmoji: '☁️',
     relatedSlugs: ['cw-cybersecurity-basics'],
     steps: [
-      { title: 'What is the cloud?', content: 'The cloud is simply someone else\'s computer. When you save a photo to iCloud or Google Photos, it\'s stored on Apple\'s or Google\'s powerful servers in a secure data center. You access it over the internet.' },
+      { title: 'What is the cloud?', content: 'The cloud is, in the most direct sense, someone else\'s computer. When you save a photo to iCloud or Google Photos, it\'s stored on Apple\'s or Google\'s powerful servers in a secure data center. You access it over the internet.' },
       { title: 'You already use it', content: 'Gmail, Netflix, Spotify, and Google Docs all run in the cloud. So does online banking. If you can access something from both your phone and computer, it\'s probably in the cloud.' },
       { title: 'Why it matters to you', content: 'Cloud storage means your files are safe even if your phone breaks. Cloud apps mean you don\'t need powerful hardware — the heavy work happens on remote servers. You just need internet access.' },
       { title: 'Is it safe?', content: 'Major cloud providers (Google, Apple, Microsoft, Amazon) use stronger security than most people could achieve at home. They employ encryption, access controls, and 24/7 security teams. Your data is safer in the cloud than on an unencrypted laptop.' },

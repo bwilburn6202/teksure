@@ -1183,7 +1183,7 @@ Automatically adds captions over any audio or video playing on your device — i
 
 ## Quick Tip
 
-You do not need to have a disability to benefit from accessibility features. Many people use larger text, voice control, or captions simply because they find them more comfortable. Explore your phone's Accessibility settings — you might find something that makes your daily experience much better.
+You do not need to have a disability to benefit from accessibility features. Many people use larger text, voice control, or captions because they find them more comfortable. Explore your phone's Accessibility settings — you might find something that makes your daily experience much better.
 
 (Sources: Apple Support, Google Support, 2026)`,
   },

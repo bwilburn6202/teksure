@@ -6478,7 +6478,7 @@ const coreGuides: Guide[] = [
     publishedAt: '2026-03-31',
     difficulty: 'Beginner',
     steps: [
-      { title: 'Activate Siri', content: 'On iOS 17 and later (including iOS 18), just say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
+      { title: 'Activate Siri', content: 'On iOS 18, say "Siri" — the "Hey" is no longer required. Or press and hold the Side button (or Home button on older iPhones). Wait for the Siri chime before speaking.' },
       { title: 'Enable hands-free Siri', content: 'Go to Settings > Siri > Talk to Siri and select "Always On." Now you can activate Siri hands-free at any time just by saying "Siri" without picking up your phone.', tip: 'For Apple\'s complete Siri guide, visit support.apple.com/guide/iphone/use-siri-iph83aad8922/ios' },
       { title: 'Try these voice commands', content: 'Some useful things to ask: "Siri, call [name]" — "Siri, text [name] I\'m on my way" — "Siri, set an alarm for 7am" — "Siri, remind me to take my medication at 8pm" — "Siri, what\'s the weather today?" — "Siri, open Maps" — "Siri, turn on Bluetooth." Speak naturally and Siri will understand you.' },
       { title: 'If Siri doesn\'t understand you', content: 'Speak clearly and at a normal pace — not too fast. After speaking, wait for Siri to finish processing before saying anything else. If Siri keeps misunderstanding, try rephrasing your request or check that your microphone is not blocked by a case.' },
@@ -7265,7 +7265,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Create a zip file on Windows',
-        content: 'Open File Explorer (the yellow folder icon on your taskbar). Navigate to the files or folder you want to compress. To select multiple files, hold down the Ctrl key and click each file you want to include. Once your files are highlighted, right-click on any one of them. On Windows 11, choose "Compress to ZIP file." On Windows 10, choose "Send to" and then "Compressed (zipped) folder." A new zip file will appear in the same folder — you can rename it to something descriptive by right-clicking it and choosing "Rename."',
+        content: 'Open File Explorer (the yellow folder icon on your taskbar). Navigate to the files or folder you want to compress. To select multiple files, hold down the Ctrl key and click each file you want to include. Once your files are highlighted, right-click on any one of them and choose "Compress to ZIP file." A new zip file will appear in the same folder — you can rename it to something descriptive by right-clicking it and choosing "Rename."',
         tip: 'To select all files in a folder at once, press Ctrl+A. To select a range of files, click the first one, then hold Shift and click the last one.'
       },
       {
@@ -13167,8 +13167,9 @@ import { guidesBatch8 } from './guides-batch-8';
 import { guidesBatch9 } from './guides-batch-9';
 import { guidesBatch10 } from './guides-batch-10';
 import { guidesBatch11 } from './guides-batch-11';
+import { guidesBatch12 } from './guides-batch-12';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {
