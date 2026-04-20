@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 58** (20 guides, 2026-04-19) — total ~2,233 guides
-- Next: **Batch 59** → **Batch 60** → ... (no upper limit)
+- Last completed: **Batch 59** (20 guides, 2026-04-20) — total ~2,253 guides
+- Next: **Batch 60** → **Batch 61** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -137,7 +137,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 56** | **20** | **2026-04-19** | Locked Apple Notes, Google Earth, Google Tasks, Walmart app, Target app, Grubhub, airline apps, hotel booking, TripAdvisor, OpenTable, Goodreads, OverDrive library, Find My app, Spotify tips, digital wallet, Drive folder sharing, Android accessibility, Google Photos family sharing, Android visual voicemail, Apple TV 4K |
 | **Batch 57** | **20** | **2026-04-19** | Screen record iPhone, share WiFi password, iOS Voice Control, Android Voice Access, Chromebook basics, Windows Narrator, Mac VoiceOver, swipe typing, Google Maps directions, mobile banking, online bill pay, VA benefits online, bank wire transfer, iPhone parental controls, save parking location, reverse phone lookup, call blocker apps, CapCut, Google Photos editing, iPhone photo crop |
 | **Batch 58** | **20** | **2026-04-19** | AirPlay audio, Galaxy Buds, Android automation, Always-On Display, WidgetSmith, Apple Shortcuts, Life360, Facebook Messenger, Instagram basics, Outlook app, email signature, organize inbox, unsubscribe emails, HomePod setup, smart plug, smart thermostat, Arlo camera, Nest Cam, Fire TV Stick, iCloud shared album |
-| **Total** | **~2,233** | | |
+| **Batch 59** | **20** | **2026-04-20** | Senior smartphone tips, iPhone vs Android, phone trade-in, data usage, lower phone bill, Wi-Fi calling, avoid roaming, travel tech, Google Translate, Ibotta, digital coupons, loyalty apps, Honey, identity theft, dark web, credit freeze, phishing, phone antivirus, password reuse, public Wi-Fi safety |
+| **Total** | **~2,253** | | |
 
 ---
 
