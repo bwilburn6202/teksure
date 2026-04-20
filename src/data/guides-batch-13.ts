@@ -604,7 +604,7 @@ export const guidesBatch13: Guide[] = [
       },
       {
         title: 'Use Google Assistant for quick calculations and lookups',
-        content: 'Google Assistant is great for instant answers while your hands are busy. "Hey Google, what\'s 15% of $47?" — "Hey Google, convert 350 degrees Fahrenheit to Celsius" — "Hey Google, what\'s the phone number for CVS on Oak Street?" — "Hey Google, when does Walmart close?" — "Hey Google, what are the side effects of metformin?" — "Hey Google, translate \'where is the bathroom\' into Spanish."',
+        content: `Google Assistant is great for instant answers while your hands are busy. "Hey Google, what's 15% of $47?" — "Hey Google, convert 350 degrees Fahrenheit to Celsius" — "Hey Google, what's the phone number for CVS on Oak Street?" — "Hey Google, when does Walmart close?" — "Hey Google, what are the side effects of metformin?" — "Hey Google, translate 'where is the bathroom' into Spanish."`,
       },
       {
         title: 'Control your phone\'s settings with your voice',

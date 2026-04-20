@@ -13109,4 +13109,10 @@ allGuides.forEach(g => {
   if (verifiedHelpfulSlugs.has(g.slug)) g.verifiedHelpful = true;
 });
 
-export const guides = allGuides;
+// Deduplicate by slug — keep first occurrence when the same slug appears in multiple sources
+const _seenSlugs = new Set<string>();
+export const guides = allGuides.filter(g => {
+  if (_seenSlugs.has(g.slug)) return false;
+  _seenSlugs.add(g.slug);
+  return true;
+});
