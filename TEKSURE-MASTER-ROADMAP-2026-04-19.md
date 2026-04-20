@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 52** (20 guides, 2026-04-19) — total ~2,113 guides
-- Next: **Batch 53** → **Batch 54** → ... (no upper limit)
+- Last completed: **Batch 53** (20 guides, 2026-04-19) — total ~2,133 guides
+- Next: **Batch 54** → **Batch 55** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -131,7 +131,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 50** | **20** | **2026-04-19** | Create QR code, video call lighting, scan business card, Microsoft Lens, Apple Watch face, Google Photos partner share, Amazon Household, manage Amazon subscriptions, optimize iPhone battery, Android battery care, PayPal mobile, Google Pay send money, transit card wallet, Android spam calls, buy refurbished phone, iPhone Focus filters, Android work profile, Windows Clipboard tips, Google Keep tips, Apple Maps transit |
 | **Batch 51** | **20** | **2026-04-19** | Gmail labels, Gmail snooze, Gmail multiple accounts, Apple Mail VIP, Windows Mail app, Google Drive scan, Apple Numbers, PowerPoint basics, Alexa smart home tips, Apple Maps tips, OneDrive auto backup, iCloud storage upgrade, WhatsApp voice messages, iMessage effects, Android long screenshot, iPhone full-page screenshot, Google Drive tips, App Store tips, Google Play tips, Mac backup to external drive |
 | **Batch 52** | **20** | **2026-04-19** | Android custom ringtone, edit/unsend iMessage, pin iMessage conversation, Spotify sleep timer, see WiFi password on Windows/Mac/Android, Mac AirPlay to TV, Firefox basics, Instagram DMs, alarm clock tips, iPhone bedtime alarm, iPhone accessibility overview, Google Assistant routine, smart speaker routines, Fire Stick tips, iPhone battery widget, block email sender, Alexa default music service, Google Home music |
-| **Total** | **~2,113** | | |
+| **Batch 53** | **20** | **2026-04-19** | HDMI ARC, digital TV antenna, Amazon Freevee, VLC media player, Roku remote app, iMovie basics, iPhone video trim, upload to YouTube, Apple Watch apps, Apple Watch workout, Fitbit tips, iPhone Health steps, Samsung Health walk, Windows startup programs, Mac login items, clear Windows temp files, Android storage cleanup, iPhone storage breakdown, router access, WiFi 2.4GHz vs 5GHz bands |
+| **Total** | **~2,133** | | |
 
 ---
 
