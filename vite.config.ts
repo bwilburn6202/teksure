@@ -79,11 +79,19 @@ function sitemapPlugin(): Plugin {
         { path: '/safety/parental-controls', priority: '0.5', changefreq: 'monthly' },
       ];
 
-      const guidesFile = fs.readFileSync(path.resolve(__dirname, 'src/data/guides.ts'), 'utf-8');
-      const slugRegex = /slug:\s*'([^']+)'/g;
-      const slugs: string[] = [];
-      let m;
-      while ((m = slugRegex.exec(guidesFile)) !== null) slugs.push(m[1]);
+      // Scan all guide data files for slugs (guides.ts + all batch/expansion files)
+      const dataDir = path.resolve(__dirname, 'src/data');
+      const guideFiles = fs.readdirSync(dataDir).filter((f: string) =>
+        (f.startsWith('guides') && f.endsWith('.ts')) || f === 'guides-expansion.ts'
+      );
+      const slugRegex = /slug:\s*['"]([^'"]+)['"]/g;
+      const slugSet = new Set<string>();
+      for (const file of guideFiles) {
+        const content = fs.readFileSync(path.resolve(dataDir, file), 'utf-8');
+        let m;
+        while ((m = slugRegex.exec(content)) !== null) slugSet.add(m[1]);
+      }
+      const slugs = [...slugSet];
 
       const urls = [
         ...mainPages.map(p => `  <url>\n    <loc>${BASE_URL}${p.path}</loc>\n    <lastmod>${LASTMOD}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`),
