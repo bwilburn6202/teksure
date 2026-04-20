@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 53** (20 guides, 2026-04-19) — total ~2,133 guides
-- Next: **Batch 54** → **Batch 55** → ... (no upper limit)
+- Last completed: **Batch 54** (20 guides, 2026-04-19) — total ~2,153 guides
+- Next: **Batch 55** → **Batch 56** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -132,7 +132,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 51** | **20** | **2026-04-19** | Gmail labels, Gmail snooze, Gmail multiple accounts, Apple Mail VIP, Windows Mail app, Google Drive scan, Apple Numbers, PowerPoint basics, Alexa smart home tips, Apple Maps tips, OneDrive auto backup, iCloud storage upgrade, WhatsApp voice messages, iMessage effects, Android long screenshot, iPhone full-page screenshot, Google Drive tips, App Store tips, Google Play tips, Mac backup to external drive |
 | **Batch 52** | **20** | **2026-04-19** | Android custom ringtone, edit/unsend iMessage, pin iMessage conversation, Spotify sleep timer, see WiFi password on Windows/Mac/Android, Mac AirPlay to TV, Firefox basics, Instagram DMs, alarm clock tips, iPhone bedtime alarm, iPhone accessibility overview, Google Assistant routine, smart speaker routines, Fire Stick tips, iPhone battery widget, block email sender, Alexa default music service, Google Home music |
 | **Batch 53** | **20** | **2026-04-19** | HDMI ARC, digital TV antenna, Amazon Freevee, VLC media player, Roku remote app, iMovie basics, iPhone video trim, upload to YouTube, Apple Watch apps, Apple Watch workout, Fitbit tips, iPhone Health steps, Samsung Health walk, Windows startup programs, Mac login items, clear Windows temp files, Android storage cleanup, iPhone storage breakdown, router access, WiFi 2.4GHz vs 5GHz bands |
-| **Total** | **~2,133** | | |
+| **Batch 54** | **20** | **2026-04-19** | WhatsApp backup, Telegram basics, Signal privacy, iPhone background removal, Mac Preview annotate, Mac Preview sign PDF, save-as-PDF, online chess, free senior games, Samsung camera, iPhone Action Mode, Google Photos video, iPhone contacts backup, Audible, Eventbrite, Photopea, Android contacts backup, Excel mobile, Google Meet, Adobe Express |
+| **Total** | **~2,153** | | |
 
 ---
 
