@@ -129,7 +129,9 @@ export function TierProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const syncFromBackend = async (userId: string | null) => {
       if (!userId) {
-        // Signed out — fall back to localStorage (already in state)
+        // Signed out — reset to localStorage defaults so no stale tier carries over
+        setTierState(readTier());
+        setHasChosen(readChosen());
         return;
       }
       try {
@@ -141,6 +143,10 @@ export function TierProvider({ children }: { children: ReactNode }) {
         if (data?.tier && (TIER_ORDER as string[]).includes(data.tier)) {
           setTierState(data.tier as UserTier);
           setHasChosen(true);
+        } else {
+          // User has no saved tier — clear state so the tier picker is shown
+          setTierState(null);
+          setHasChosen(false);
         }
       } catch {}
     };
