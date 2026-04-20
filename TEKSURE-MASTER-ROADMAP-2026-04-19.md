@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 63** (20 guides, 2026-04-20) — total ~2,333 guides
-- Next: **Batch 64** → **Batch 65** → ... (no upper limit)
+- Last completed: **Batch 64** (20 guides, 2026-04-20) — total ~2,353 guides
+- Next: **Batch 65** → **Batch 66** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -142,7 +142,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 61** | **20** | **2026-04-20** | Digital BP monitor, CGM diabetes, pill reminder, health insurance app, Teladoc, sleep tracking, fall detection, step counter, water reminders, meditation apps, cooking apps, grocery list, grocery delivery, online therapy, iPhone Health, Google Fit, heart rate, blood oxygen, walking program, telehealth vs ER |
 | **Batch 62** | **20** | **2026-04-20** | Retirement planning, Social Security timing, Medicare parts, estate planning, AARP app, volunteering, downsizing, senior housing, long-distance caregiver, caregiver burnout, TurboTax, digital banking safety, romance scam, job loss finances, senior tax breaks, POA digital, social media after death, retirement benefits, lost pension, Medicare supplement |
 | **Batch 63** | **20** | **2026-04-20** | Windows Settings app, Mac Finder organize, ZIP files, external drive backup, USB hub, Windows virtual desktops, Windows Snap, Mac Stage Manager, wireless printer setup, Windows scan, Windows Remote Desktop, iPhone autocorrect, Android autocorrect, laptop battery life, Android app drawer, Windows Focus Assist, Mac Focus modes, guest Wi-Fi, Wi-Fi extender, Wi-Fi analyzer |
-| **Total** | **~2,333** | | |
+| **Batch 64** | **20** | **2026-04-20** | Uber rideshare, Lyft rideshare, Waze navigation, digital boarding pass, Google Flights, Shipt grocery delivery, food delivery savings, iPhone factory reset, Android factory reset, Android battery optimization, Android app permissions, Android location privacy, auto-update apps, Roomba setup, myQ smart garage, smart smoke detector, Windows Defender scan, macOS update, Android Live Caption, iPhone Live Captions |
+| **Total** | **~2,353** | | |
 
 ---
 
