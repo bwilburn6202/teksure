@@ -125,23 +125,35 @@ export function TierProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  // On mount, if signed in, sync tier from backend (backend wins over localStorage)
+  // Sync tier from backend whenever auth state changes (login, logout, user switch)
   useEffect(() => {
-    (async () => {
+    const syncFromBackend = async (userId: string | null) => {
+      if (!userId) {
+        // Signed out — fall back to localStorage (already in state)
+        return;
+      }
       try {
-        const { data: { user } } = await supabase.auth.getUser();
-        if (!user) return;
         const { data } = await supabase
           .from('profiles')
           .select('tier')
-          .eq('id', user.id)
+          .eq('id', userId)
           .single();
         if (data?.tier && (TIER_ORDER as string[]).includes(data.tier)) {
           setTierState(data.tier as UserTier);
           setHasChosen(true);
         }
       } catch {}
-    })();
+    };
+
+    // Initial check
+    supabase.auth.getUser().then(({ data: { user } }) => syncFromBackend(user?.id ?? null));
+
+    // Re-sync on every auth state change
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      syncFromBackend(session?.user?.id ?? null);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
   const setTier = (next: UserTier) => {

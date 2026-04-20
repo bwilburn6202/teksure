@@ -46,7 +46,11 @@ interface LookupResult {
 function pickWorstVerdict(sources: SourceResult[]): Verdict {
   if (sources.some((s) => s.verdict === 'danger')) return 'danger';
   if (sources.some((s) => s.verdict === 'caution')) return 'caution';
-  if (sources.some((s) => s.verdict === 'safe')) return 'safe';
+  // Only return 'safe' when all checks succeeded — if any source timed out
+  // or failed ('unknown'), downgrade to 'caution' to avoid false negatives.
+  if (sources.some((s) => s.verdict === 'safe')) {
+    return sources.some((s) => s.verdict === 'unknown') ? 'caution' : 'safe';
+  }
   return 'unknown';
 }
 
