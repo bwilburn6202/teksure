@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 83** (20 guides, 2026-04-20) — total ~2,740 guides
-- Next: **Batch 84** → **Batch 85** → ... (no upper limit)
+- Last completed: **Batch 84** (20 guides, 2026-04-20) — total ~2,760 guides
+- Next: **Batch 85** → **Batch 86** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -162,7 +162,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 81** | **20** | **2026-04-20** | Ford Pass app, EV road trip planning, PlugShare, ChargePoint, Audiomack, Bandcamp, SoundCloud, Tidal HiFi, AirPods Pro features, Sony WH-1000XM5, Bose QuietComfort, Echo Dot setup, Echo Show 8, Alexa Drop In, Google Home Broadcast, Nest Mini, Microsoft Copilot, Google Gemini, Meta AI, Grok xAI |
 | **Batch 82** | **20** | **2026-04-20** | Home Depot app, Lowe's app, Zillow home search, Redfin, Rocket Mortgage, first-time homebuyer tools, reverse mortgage, Houzz, room planner apps, Fundrise, Poshmark, Depop, Mercari, thredUP, Whatnot, Vinted, Rent the Runway, Lyst, Rebag, Chrono24 |
 | **Batch 83** | **20** | **2026-04-20** | TurboTax mobile, H&R Block app, TaxSlayer, TaxAct, IRS Direct File, VITA free taxes, AARP Tax-Aide, Roth IRA basics, 401(k) basics, Fidelity app, Schwab app, Robinhood, Webull, Betterment, M1 Finance, YNAB, Monarch Money, Simplifi, NerdWallet app, high-yield savings accounts |
-| **Total** | **~2,740** | | |
+| **Batch 84** | **20** | **2026-04-20** | Bark monitoring, Circle Home Plus, Qustodio, Disney+ Kids Mode, Netflix Kids, Amazon Kids+, Roblox safety, Minecraft for parents, Fortnite parental controls, Epic! Books, ABCmouse, Duolingo for kids, Scratch coding, Code.org, Tynker, Apple Family Sharing, Microsoft Family Safety, Amazon Parent Dashboard, Fire Kids tablet, Osmo learning |
+| **Total** | **~2,760** | | |
 
 ---
 
