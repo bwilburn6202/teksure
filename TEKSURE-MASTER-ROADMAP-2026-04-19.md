@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 65** (20 guides, 2026-04-20) — total ~2,373 guides
-- Next: **Batch 66** → **Batch 67** → ... (no upper limit)
+- Last completed: **Batch 66** (20 guides, 2026-04-20) — total ~2,393 guides
+- Next: **Batch 67** → **Batch 68** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -144,7 +144,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 63** | **20** | **2026-04-20** | Windows Settings app, Mac Finder organize, ZIP files, external drive backup, USB hub, Windows virtual desktops, Windows Snap, Mac Stage Manager, wireless printer setup, Windows scan, Windows Remote Desktop, iPhone autocorrect, Android autocorrect, laptop battery life, Android app drawer, Windows Focus Assist, Mac Focus modes, guest Wi-Fi, Wi-Fi extender, Wi-Fi analyzer |
 | **Batch 64** | **20** | **2026-04-20** | Uber rideshare, Lyft rideshare, Waze navigation, digital boarding pass, Google Flights, Shipt grocery delivery, food delivery savings, iPhone factory reset, Android factory reset, Android battery optimization, Android app permissions, Android location privacy, auto-update apps, Roomba setup, myQ smart garage, smart smoke detector, Windows Defender scan, macOS update, Android Live Caption, iPhone Live Captions |
 | **Batch 65** | **20** | **2026-04-20** | Pandora radio, SiriusXM streaming, TuneIn live radio, Crunchyroll anime, GoodRx prescriptions, Amazon Pharmacy, Zocdoc appointments, Garmin Connect, MyHealtheVet VA portal, TSA PreCheck, IRS Free File, HealthCare.gov enrollment, Echo Show setup, Fire HD tablet, UPS My Choice, FedEx Delivery Manager, FreeTaxUSA, Chrome Remote Desktop, Seeing AI, Google Lookout |
-| **Total** | **~2,373** | | |
+| **Batch 66** | **20** | **2026-04-20** | Venmo, Zelle, Cash App, Credit Karma, Acorns investing, NordVPN, delete Google history, data broker opt-out, Calm meditation, Headspace, MyFitnessPal, Google Maps Live View AR, Turo car rental, Apple Calendar tips, Cozi family organizer, Google Messages/RCS, YouTube Kids, Proton Mail, email cleanup, GroupMe group chat |
+| **Total** | **~2,393** | | |
 
 ---
 
