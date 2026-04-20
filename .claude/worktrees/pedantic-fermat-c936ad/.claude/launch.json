@@ -1,0 +1,27 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "TekSure Dev",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--force"],
+      "port": 8080,
+      "autoPort": true
+    },
+    {
+      "name": "TekSure Preview",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "preview"],
+      "port": 4173,
+      "autoPort": true
+    },
+    {
+      "name": "TekSure Docs Dev",
+      "cwd": "/Users/baileywilburn/Documents/Claude/Projects/TekSure",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["/Users/baileywilburn/Documents/Claude/Projects/TekSure/node_modules/vite/bin/vite.js", "--port", "5175", "--strictPort"],
+      "port": 5175,
+      "autoPort": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+name: Auto-merge Claude & bot branches
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    if: |
+      startsWith(github.head_ref, 'claude/') ||
+      startsWith(github.head_ref, 'codex/') ||
+      startsWith(github.head_ref, 'vercel/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Squash-merge and delete branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ github.event.pull_request.number }}" \
+            --repo "${{ github.repository }}" \
+            --squash \
+            --delete-branch

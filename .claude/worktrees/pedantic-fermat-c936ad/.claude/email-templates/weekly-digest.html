@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TekSure Weekly Tip</title>
+  <style>
+    body { margin: 0; padding: 0; background: #f4f6f9; font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 12px; overflow: hidden; }
+    .header { background: #1D5FE8; padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; }
+    .header-left h2 { color: #ffffff; font-size: 18px; font-weight: 700; margin: 0 0 2px; }
+    .header-left p { color: rgba(255,255,255,0.75); font-size: 13px; margin: 0; }
+    .header-issue { color: rgba(255,255,255,0.6); font-size: 13px; }
+    .body { padding: 40px; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9CA3AF; margin: 0 0 10px; }
+    .tip-block { background: #EFF6FF; border-left: 4px solid #1D5FE8; border-radius: 0 8px 8px 0; padding: 20px 24px; margin-bottom: 32px; }
+    .tip-block h3 { font-size: 18px; font-weight: 700; color: #1e3a6e; margin: 0 0 10px; }
+    .tip-block p { font-size: 15px; line-height: 1.7; color: #374151; margin: 0 0 16px; }
+    .tip-block a { color: #1D5FE8; font-weight: 600; font-size: 14px; text-decoration: none; }
+    .guides-section { margin-bottom: 32px; }
+    .guide-card { border: 1px solid #E5E7EB; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; text-decoration: none; display: block; }
+    .guide-card:hover { border-color: #1D5FE8; }
+    .guide-card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .guide-card-emoji { font-size: 18px; }
+    .guide-card-tag { font-size: 11px; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em; }
+    .guide-card h4 { font-size: 15px; font-weight: 600; color: #111827; margin: 0 0 4px; }
+    .guide-card p { font-size: 13px; color: #6B7280; margin: 0; line-height: 1.5; }
+    .scam-box { background: #FEF2F2; border: 1px solid #FCA5A5; border-radius: 8px; padding: 20px 24px; margin-bottom: 32px; }
+    .scam-box .scam-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #DC2626; margin: 0 0 8px; }
+    .scam-box h4 { font-size: 16px; font-weight: 700; color: #7F1D1D; margin: 0 0 8px; }
+    .scam-box p { font-size: 14px; color: #991B1B; margin: 0 0 12px; line-height: 1.6; }
+    .scam-box a { color: #DC2626; font-weight: 600; font-size: 14px; text-decoration: none; }
+    .footer { background: #F9FAFB; border-top: 1px solid #E5E7EB; padding: 28px 40px; text-align: center; }
+    .footer p { font-size: 13px; color: #9CA3AF; margin: 0 0 6px; }
+    .footer a { color: #1D5FE8; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-left">
+        <h2>TekSure Weekly Tip</h2>
+        <p>Plain English. One email. Every week.</p>
+      </div>
+      <span class="header-issue">{{week_label}}</span>
+    </div>
+    <div class="body">
+
+      <!-- THIS WEEK'S TIP -->
+      <p class="section-label">This week's tip</p>
+      <div class="tip-block">
+        <h3>{{tip_title}}</h3>
+        <p>{{tip_body}}</p>
+        <a href="{{tip_url}}">Read the full guide →</a>
+      </div>
+
+      <!-- NEW GUIDES -->
+      <div class="guides-section">
+        <p class="section-label">New guides this week</p>
+        <!-- Guide Card — duplicate as needed -->
+        <a class="guide-card" href="{{guide_1_url}}">
+          <div class="guide-card-meta">
+            <span class="guide-card-emoji">{{guide_1_emoji}}</span>
+            <span class="guide-card-tag">{{guide_1_category}}</span>
+          </div>
+          <h4>{{guide_1_title}}</h4>
+          <p>{{guide_1_excerpt}}</p>
+        </a>
+        <a class="guide-card" href="{{guide_2_url}}">
+          <div class="guide-card-meta">
+            <span class="guide-card-emoji">{{guide_2_emoji}}</span>
+            <span class="guide-card-tag">{{guide_2_category}}</span>
+          </div>
+          <h4>{{guide_2_title}}</h4>
+          <p>{{guide_2_excerpt}}</p>
+        </a>
+        <a class="guide-card" href="{{guide_3_url}}">
+          <div class="guide-card-meta">
+            <span class="guide-card-emoji">{{guide_3_emoji}}</span>
+            <span class="guide-card-tag">{{guide_3_category}}</span>
+          </div>
+          <h4>{{guide_3_title}}</h4>
+          <p>{{guide_3_excerpt}}</p>
+        </a>
+      </div>
+
+      <!-- SCAM ALERT (include only if there's a current alert) -->
+      <div class="scam-box">
+        <p class="scam-label">⚠️ Scam Alert</p>
+        <h4>{{scam_title}}</h4>
+        <p>{{scam_summary}}</p>
+        <a href="{{scam_url}}">What to do if you see this →</a>
+      </div>
+
+    </div>
+    <div class="footer">
+      <p>You're receiving this because you signed up at <a href="https://teksure.com">teksure.com</a>.</p>
+      <p>TekSure · <a href="https://teksure.com">teksure.com</a> · <a href="mailto:hello@teksure.com">hello@teksure.com</a></p>
+      <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email preferences</a></p>
+    </div>
+  </div>
+</body>
+</html>
