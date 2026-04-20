@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 44** (20 guides, 2026-04-19) — total ~1,954 guides
-- Next: **Batch 45** → **Batch 46** → ... (no upper limit)
+- Last completed: **Batch 45** (20 guides, 2026-04-19) — total ~1,974 guides
+- Next: **Batch 46** → **Batch 47** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -123,7 +123,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 42** | **20** | **2026-04-19** | iCloud Drive, iPhone Files app, Continuity Camera (iPhone as Mac webcam), iPad Sidecar, Mac Handoff & Universal Clipboard, iMessage on Mac, FaceTime on Mac, Notes app tips, BenefitsCheckUp.org, VITA free tax prep, Withings health devices, Dexcom/Libre CGM phone setup, Zoom on Smart TV, read credit report, dispute credit card charge, Google Translate camera, Google Translate offline, forgot iPhone passcode, Files by Google, Google Maps transit |
 | **Batch 43** | **19** | **2026-04-19** | iPhone Reminders app, Microsoft To Do, Gmail out-of-office/vacation responder, recover deleted Gmail emails, fill & sign PDF on iPhone, compress photos before emailing, add contact on iPhone, set iPhone ringtone, set iPhone wallpaper, change default browser on iPhone, Google search tips, find downloaded files on Android, Alexa calling & messaging, smart speaker music commands, add boarding pass to Apple Wallet, manage iPhone notification badges, block phone number on iPhone/Android, report scam call to FTC, iPhone Weather app guide |
 | **Batch 44** | **20** | **2026-04-19** | Google Keep notes, Zoom host meeting guide, Android email setup, Facebook birthdays, Windows Photos app, create Google account, clear Google search history, iPad iMessage setup, Android gesture navigation, Google Photos slideshow on TV, Gmail search tips, AirTag setup for beginners, Samsung DeX, Zoom live captions, record Zoom meeting, Android Adaptive Battery, phone charger types (USB-C/Lightning/wireless), Facebook Marketplace selling, Chrome Reading List, find iPhone serial number |
-| **Total** | **~1,954** | | |
+| **Batch 45** | **20** | **2026-04-19** | Erase iPhone before selling, erase Android before selling, Google Drive file sharing, iPhone Measure app, Edge PDF viewer, iPhone Haptic Touch shortcuts, Amazon Prime Video tips, YouTube playlists, YouTube Watch Later, YouTube offline downloads (Premium), Apple ID trusted devices, Chrome password checkup, Android voicemail setup, Apple Maps offline, iPhone Low Power Mode, Android Battery Saver, Safari Reader Mode, Samsung Quick Share, enable TV closed captions, iPhone Emergency Bypass contact |
+| **Total** | **~1,974** | | |
 
 ---
 
