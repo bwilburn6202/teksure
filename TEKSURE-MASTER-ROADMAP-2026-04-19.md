@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 88** (20 guides, 2026-04-20) — total ~2,840 guides
-- Next: **Batch 89** → **Batch 90** → ... (no upper limit)
+- Last completed: **Batch 89** (20 guides, 2026-04-20) — total ~2,860 guides
+- Next: **Batch 90** → **Batch 91** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -167,7 +167,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 86** | **20** | **2026-04-20** | Planta, Greg plant app, All About Birds, eBird, Merlin Sound ID, Stellarium, Star Walk, NASA app, moon phases, MyRadar, tornado warning apps, air quality apps, pollen/allergy apps, hurricane prep apps, wildfire tracking, Fishbrain, AllTrails beginner, Komoot, Gaia GPS, Garmin Connect |
 | **Batch 87** | **20** | **2026-04-20** | Simply Piano, Yousician, Fender Play, Ultimate Guitar, GarageBand iPhone, Audacity, Spotify for Podcasters, Buzzsprout, Procreate, Autodesk Sketchbook, ibis Paint X, Photoshop Express, Snapseed advanced, Facetune, Pixlr, PicsArt, Remove.bg, Canva video, LumaFusion, InShot |
 | **Batch 88** | **20** | **2026-04-20** | Windows 10 EOL, Windows Defender setup, Windows Hello, BitLocker, File History backup, System Restore, Windows Services, Win11 taskbar tips, Snap Layouts, Xbox Game Pass PC, Microsoft Store, Win11 themes, Disk Cleanup, Check Disk, PowerShell beginners, Command Prompt beginners, Mac Mission Control, Mac Spaces, Mac shortcuts, Mac Activity Monitor |
-| **Total** | **~2,840** | | |
+| **Batch 89** | **20** | **2026-04-20** | BetterHelp therapy app, Talkspace, Woebot mental health chatbot, Daylio mood journal, Sleep Cycle alarm, Pillow sleep tracker, Noisli white noise, Petcube pet camera, Whistle GPS tracker, Pawprint pet records, Vetster online vet, BarkBox subscription, Tesla app, Electrify America, EVgo charging, SpotHero parking, Swagbucks, Flipp grocery savings, Dosh cashback, Raise gift cards |
+| **Total** | **~2,860** | | |
 
 ---
 
