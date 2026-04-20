@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { WifiOff } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
@@ -307,6 +307,19 @@ function OfflineBanner() {
   );
 }
 
+const FloatingChrome = () => {
+  const { pathname } = useLocation();
+  // Landing Page v2 is intentionally free of floating UI — the design removed both
+  // the TekBot launcher and the "Been Scammed?" panic button from `/`.
+  if (pathname === "/") return null;
+  return (
+    <>
+      <TekBot />
+      <ScamPanicButton />
+    </>
+  );
+};
+
 const AppContent = () => {
   const { open, onClose } = useSearchModal();
   const navigate = useNavigate();
@@ -345,8 +358,7 @@ const AppContent = () => {
       <OfflineBanner />
       {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
-      <TekBot />
-      <ScamPanicButton />
+      <FloatingChrome />
       <BackToTop />
       <Toaster />
       <Sonner />
