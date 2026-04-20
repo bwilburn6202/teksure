@@ -204,6 +204,24 @@ function emailHeuristics(email: string): SourceResult {
 // ── Cache helpers (best-effort; failure falls back silently) ────────────────
 const CACHE_TTL_HOURS = 24;
 
+/** Normalize a lookup value into a stable cache key.
+ *  - URLs: lowercase scheme + host, preserve path case
+ *  - Phone/email: fully lowercased (case-insensitive by nature) */
+function normalizeCacheKey(kind: Kind, value: string): string {
+  if (kind === 'url') {
+    try {
+      const u = new URL(value);
+      // Scheme and host are case-insensitive; path/query are case-sensitive
+      return `${kind}:${u.protocol}//${u.host.toLowerCase()}${u.pathname}${u.search}${u.hash}`;
+    } catch {
+      // Fallback if URL parsing fails — use as-is
+      return `${kind}:${value}`;
+    }
+  }
+  // Phone numbers and emails are case-insensitive
+  return `${kind}:${value.toLowerCase()}`;
+}
+
 async function getCached(
   supabaseUrl: string,
   serviceKey: string,
@@ -211,7 +229,7 @@ async function getCached(
   value: string
 ): Promise<LookupResult | null> {
   try {
-    const cacheKey = `${kind}:${value.toLowerCase()}`;
+    const cacheKey = normalizeCacheKey(kind, value);
     const resp = await fetch(
       `${supabaseUrl}/rest/v1/safety_lookup_cache?cache_key=eq.${encodeURIComponent(cacheKey)}&select=result,checked_at&limit=1`,
       {
@@ -238,7 +256,7 @@ async function setCached(
   result: LookupResult
 ): Promise<void> {
   try {
-    const cacheKey = `${kind}:${value.toLowerCase()}`;
+    const cacheKey = normalizeCacheKey(kind, value);
     await fetch(`${supabaseUrl}/rest/v1/safety_lookup_cache?on_conflict=cache_key`, {
       method: 'POST',
       headers: {

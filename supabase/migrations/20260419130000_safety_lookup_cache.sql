@@ -44,3 +44,7 @@ begin
   return deleted_count;
 end;
 $$;
+
+-- Restrict cache-purge to service_role only (prevent public/anon abuse)
+revoke execute on function public.purge_safety_lookup_cache(integer) from anon, authenticated;
+grant execute on function public.purge_safety_lookup_cache(integer) to service_role;
