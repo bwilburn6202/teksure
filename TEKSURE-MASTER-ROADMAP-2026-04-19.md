@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 46** (19 guides, 2026-04-19) — total ~1,993 guides
-- Next: **Batch 47** → **Batch 48** → ... (no upper limit)
+- Last completed: **Batch 47** (20 guides, 2026-04-19) — total ~2,013 guides
+- Next: **Batch 48** → **Batch 49** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -125,7 +125,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 44** | **20** | **2026-04-19** | Google Keep notes, Zoom host meeting guide, Android email setup, Facebook birthdays, Windows Photos app, create Google account, clear Google search history, iPad iMessage setup, Android gesture navigation, Google Photos slideshow on TV, Gmail search tips, AirTag setup for beginners, Samsung DeX, Zoom live captions, record Zoom meeting, Android Adaptive Battery, phone charger types (USB-C/Lightning/wireless), Facebook Marketplace selling, Chrome Reading List, find iPhone serial number |
 | **Batch 45** | **20** | **2026-04-19** | Erase iPhone before selling, erase Android before selling, Google Drive file sharing, iPhone Measure app, Edge PDF viewer, iPhone Haptic Touch shortcuts, Amazon Prime Video tips, YouTube playlists, YouTube Watch Later, YouTube offline downloads (Premium), Apple ID trusted devices, Chrome password checkup, Android voicemail setup, Apple Maps offline, iPhone Low Power Mode, Android Battery Saver, Safari Reader Mode, Samsung Quick Share, enable TV closed captions, iPhone Emergency Bypass contact |
 | **Batch 46** | **19** | **2026-04-19** | iPhone conference call, Android conference call, Google Forms beginners, Gmail filters/auto-sort, Google Pixel phone tips, iPhone Portrait Mode, Android Night Mode camera, iPhone camera timer/burst, Apple Watch health seniors, Google Maps saved places, iPhone Spotlight search, Windows Storage Sense, Google Smart Lock Android, iPhone flashlight, schedule text message iOS 18, iPhone volume settings, Mac Quick Look, iPhone battery replacement, Android auto-brightness |
-| **Total** | **~1,993** | | |
+| **Batch 47** | **20** | **2026-04-19** | Freeform app, iPhone Check In safety, iPhone Journal app, FaceTime reactions, Apple Home/HomeKit, USB flash drive on Windows, USB flash drive on Mac, Genius Bar appointment, mail package USPS, IRS2Go tax refund, iMessage group chat, Find in Page browser, share Apple Notes, Android one-handed mode, Windows PIN login, iPhone USB-C port, Google TV remote app, copy-paste on phones, iOS 18 Passwords app, Google Maps share ETA |
+| **Total** | **~2,013** | | |
 
 ---
 
