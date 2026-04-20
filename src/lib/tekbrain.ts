@@ -1,5 +1,5 @@
 /**
- * Shared TekBot response engine — used by TekBot.tsx and AiTutor.tsx
+ * Shared TekBrain response engine — used by TekBrain.tsx and AiTutor.tsx
  */
 
 interface KBEntry {

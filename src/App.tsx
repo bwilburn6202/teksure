@@ -12,7 +12,7 @@ import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
-import { TekBot } from "@/components/TekBot";
+import { TekBrain } from "@/components/TekBrain";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -310,11 +310,11 @@ function OfflineBanner() {
 const FloatingChrome = () => {
   const { pathname } = useLocation();
   // Landing Page v2 is intentionally free of floating UI — the design removed both
-  // the TekBot launcher and the "Been Scammed?" panic button from `/`.
+  // the TekBrain launcher and the "Been Scammed?" panic button from `/`.
   if (pathname === "/") return null;
   return (
     <>
-      <TekBot />
+      <TekBrain />
       <ScamPanicButton />
     </>
   );
