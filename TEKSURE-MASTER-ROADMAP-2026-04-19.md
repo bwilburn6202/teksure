@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 92** (20 guides, 2026-04-20) — total ~2,920 guides
-- Next: **Batch 93** → **Batch 94** → ... (no upper limit)
+- Last completed: **Batch 93** (20 guides, 2026-04-20) — total ~2,940 guides
+- Next: **Batch 94** → **Batch 95** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -171,7 +171,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 90** | **20** | **2026-04-20** | Perplexity AI app, Google Gemini app, Microsoft Copilot mobile, Otter.ai transcription, Notion AI writing, Libby library app, Hoopla digital, Libro.fm audiobooks, WEBTOON comics, Realtor.com, Trulia neighborhoods, Opendoor home selling, HomeLight agent finder, Paprika recipe manager, Tasty cooking app, Food Network Kitchen, Cooklist meal planner, Notarize online, Lemonade insurance, Fabric life insurance |
 | **Batch 91** | **20** | **2026-04-20** | SimpliSafe, Ring Alarm, Arlo cameras, Blink cameras, Eufy cameras, Uber beginners, Lyft beginners, GoGoGrandparent, Swappa used phones, Back Market refurbs, Decluttr electronics, StockX sneakers, America Beautiful Senior Pass, Recreation.gov camping, NPS app offline, Geocaching, Schlage Encode lock, TP-Link Kasa bulbs, Lutron Caséta, Govee LED strips |
 | **Batch 92** | **20** | **2026-04-20** | Live Captions Android/Windows, Personal Voice iOS, Assistive Access iPhone, Sound Recognition, Switch Access Android, Google Family Link, Kindle Fire Kids, iPad Guided Access, Mac Screen Time, Grammarly student, Zotero citations, Teams Edu, Canvas LMS, Wolfram Alpha, Samsung Circle to Search, Bixby, Galaxy Watch, Google Pixel tips, Pixel Call Screen |
-| **Total** | **~2,920** | | |
+| **Batch 93** | **20** | **2026-04-20** | Word Online, Excel Online, PowerPoint Online, Outlook setup, Clipchamp, Snipping Tool, Microsoft Designer AI, scan old photos, Google PhotoScan, VHS digitizing, best tablets for seniors, Chromebook buying, iPad vs Android tablet, 5G home internet, Starlink setup, T-Mobile Home Internet, fiber internet, tech gifts for seniors, refurbished laptop, Windows vs Mac |
+| **Total** | **~2,940** | | |
 
 ---
 
