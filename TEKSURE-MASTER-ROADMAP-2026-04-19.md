@@ -42,8 +42,8 @@
 7. Repeat immediately with next batch
 
 ### Batch numbering
-- Last completed: **Batch 67** (20 guides, 2026-04-20) — total ~2,413 guides
-- Next: **Batch 68** → **Batch 69** → ... (no upper limit)
+- Last completed: **Batch 68** (20 guides, 2026-04-20) — total ~2,433 guides
+- Next: **Batch 69** → **Batch 70** → ... (no upper limit)
 
 ### Guide format requirements
 ```typescript
@@ -146,7 +146,8 @@ Use instead: plain verbs, "Quick Tip" not "Pro Tip"
 | **Batch 65** | **20** | **2026-04-20** | Pandora radio, SiriusXM streaming, TuneIn live radio, Crunchyroll anime, GoodRx prescriptions, Amazon Pharmacy, Zocdoc appointments, Garmin Connect, MyHealtheVet VA portal, TSA PreCheck, IRS Free File, HealthCare.gov enrollment, Echo Show setup, Fire HD tablet, UPS My Choice, FedEx Delivery Manager, FreeTaxUSA, Chrome Remote Desktop, Seeing AI, Google Lookout |
 | **Batch 66** | **20** | **2026-04-20** | Venmo, Zelle, Cash App, Credit Karma, Acorns investing, NordVPN, delete Google history, data broker opt-out, Calm meditation, Headspace, MyFitnessPal, Google Maps Live View AR, Turo car rental, Apple Calendar tips, Cozi family organizer, Google Messages/RCS, YouTube Kids, Proton Mail, email cleanup, GroupMe group chat |
 | **Batch 67** | **20** | **2026-04-20** | Google Nest Hub, Chromecast, LG TV apps, Samsung TV apps, Duolingo, Khan Academy, Coursera, Blinkist, Lightroom Mobile, VSCO, ChatGPT mobile, Claude AI, Perplexity, Bluetooth pairing, Sonos setup, photo collage, Snapfish, Android developer options, iPhone Shortcuts automation, Android parental controls |
-| **Total** | **~2,413** | | |
+| **Batch 68** | **20** | **2026-04-20** | Windows 11 upgrade, macOS Sonoma, Google Docs, Microsoft 365, Teams, Yummly, Allrecipes, Mealime, grocery budget, meal planning, iPhone 16 features, AllTrails, weather apps, Android magnifier, Paprika, NYT Cooking, iPhone Emergency SOS, Google Maps Timeline, offline maps, Rome2rio |
+| **Total** | **~2,433** | | |
 
 ---
 
