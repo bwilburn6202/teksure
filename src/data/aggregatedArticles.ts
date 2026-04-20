@@ -253,12 +253,12 @@ export const aggregatedArticles: AggregatedArticle[] = [
     steps: [
       {
         title: 'Open your iPhone Settings',
-        content: 'Tap the grey gear icon called "Settings" on your iPhone\'s home screen. It\'s usually in the first row of apps.',
+        content: `Tap the grey gear icon called "Settings" on your iPhone's home screen. It's usually in the first row of apps.`,
       },
       {
         title: 'Tap "Face ID & Passcode"',
-        content: 'Scroll down a little and tap "Face ID & Passcode." You\'ll be asked to enter your current passcode to continue.',
-        tip: 'If you don\'t have a passcode set yet, you\'ll be prompted to create one first.',
+        content: `Scroll down a little and tap "Face ID & Passcode." You'll be asked to enter your current passcode to continue.`,
+        tip: `If you don't have a passcode set yet, you'll be prompted to create one first.`,
       },
       {
         title: 'Tap "Set Up Face ID"',
@@ -266,16 +266,16 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Position your face in the frame',
-        content: 'Your iPhone\'s front camera will open and show a circle. Hold the phone at eye level and fit your face inside the circle. You\'ll see a circular progress indicator.',
-        tip: 'Make sure you\'re in a well-lit area. Remove glasses or a hat if the scan doesn\'t work at first.',
+        content: `Your iPhone's front camera will open and show a circle. Hold the phone at eye level and fit your face inside the circle. You'll see a circular progress indicator.`,
+        tip: `Make sure you're in a well-lit area. Remove glasses or a hat if the scan doesn't work at first.`,
       },
       {
         title: 'Slowly move your head in a circle',
-        content: 'Gently move your head in a slow circle, as if you\'re tracing a circle with your nose. The phone will scan your face from different angles. Do this twice.',
+        content: `Gently move your head in a slow circle, as if you're tracing a circle with your nose. The phone will scan your face from different angles. Do this twice.`,
       },
       {
         title: 'Tap "Done" when finished',
-        content: 'Once the scan is complete, you\'ll see "Face ID is Now Set Up." Tap Done. Your iPhone will now unlock when you look at it.',
+        content: `Once the scan is complete, you'll see "Face ID is Now Set Up." Tap Done. Your iPhone will now unlock when you look at it.`,
         tip: 'You can add an "alternate appearance" (like with or without glasses) in the same Face ID settings screen.',
       },
     ],
@@ -313,15 +313,15 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Start a manual backup now',
-        content: 'Tap "Back Up Now" to make a backup right away. You\'ll see the date and time of your last backup at the bottom of the screen.',
-        warning: 'Make sure you have enough iCloud storage. You get 5GB for free. If it\'s full, you can upgrade storage or delete old backups from other devices.',
+        content: `Tap "Back Up Now" to make a backup right away. You'll see the date and time of your last backup at the bottom of the screen.`,
+        warning: `Make sure you have enough iCloud storage. You get 5GB for free. If it's full, you can upgrade storage or delete old backups from other devices.`,
       },
     ],
   },
   {
     slug: 'how-to-update-your-iphone',
     title: 'How to Update Your iPhone to the Latest iOS',
-    excerpt: 'Keeping your iPhone updated protects it from security issues and adds new features. Here\'s how to check and install updates.',
+    excerpt: `Keeping your iPhone updated protects it from security issues and adds new features. Here's how to check and install updates.`,
     category: 'iPhone & iPad',
     sourceId: 'apple-support',
     originalUrl: 'https://support.apple.com/en-us/111900',
@@ -334,11 +334,11 @@ export const aggregatedArticles: AggregatedArticle[] = [
     steps: [
       {
         title: 'Open Settings',
-        content: 'Tap the grey gear icon called "Settings" on your iPhone\'s home screen.',
+        content: `Tap the grey gear icon called "Settings" on your iPhone's home screen.`,
       },
       {
         title: 'Tap "General"',
-        content: 'In Settings, tap "General" — it\'s near the top of the list with an icon that looks like a gear inside a circle.',
+        content: `In Settings, tap "General" — it's near the top of the list with an icon that looks like a gear inside a circle.`,
       },
       {
         title: 'Tap "Software Update"',
@@ -346,20 +346,20 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Install the update',
-        content: 'If an update is available, tap "Install Now." You\'ll be asked to agree to Apple\'s terms. Your phone will restart as part of the update.',
+        content: `If an update is available, tap "Install Now." You'll be asked to agree to Apple's terms. Your phone will restart as part of the update.`,
         tip: 'Connect your iPhone to a charger before updating — updates can use a lot of battery.',
-        warning: 'Make sure you have a backup before updating, just in case. See our iCloud Backup guide if you haven\'t backed up recently.',
+        warning: `Make sure you have a backup before updating, just in case. See our iCloud Backup guide if you haven't backed up recently.`,
       },
       {
         title: 'Wait for the update to finish',
-        content: 'Your iPhone will show the Apple logo while it updates. This usually takes 10–20 minutes. Don\'t turn off your phone during this time.',
+        content: `Your iPhone will show the Apple logo while it updates. This usually takes 10–20 minutes. Don't turn off your phone during this time.`,
       },
     ],
   },
   {
     slug: 'how-to-use-google-password-manager',
     title: 'Save and Manage Your Passwords with Google',
-    excerpt: 'Google can remember all your passwords so you don\'t have to. This guide shows you how to use Google\'s free built-in password manager.',
+    excerpt: `Google can remember all your passwords so you don't have to. This guide shows you how to use Google's free built-in password manager.`,
     category: 'Passwords & Security',
     sourceId: 'google-support',
     originalUrl: 'https://support.google.com/accounts/answer/6208650',
@@ -372,13 +372,13 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['how-to-secure-gmail-account', 'protect-against-phishing-ftc'],
     steps: [
       {
-        title: 'Make sure you\'re signed into Google Chrome',
-        content: 'Open Google Chrome on your phone or computer. In the top-right corner, you\'ll see either your profile picture or a person icon. Tap it and sign in with your Google account if you\'re not already.',
+        title: `Make sure you're signed into Google Chrome`,
+        content: `Open Google Chrome on your phone or computer. In the top-right corner, you'll see either your profile picture or a person icon. Tap it and sign in with your Google account if you're not already.`,
       },
       {
         title: 'Let Chrome offer to save a password',
         content: 'The next time you log into a website, Chrome will ask "Save password?" at the top or bottom of your screen. Tap "Save" to store that password.',
-        tip: 'If you miss the prompt, don\'t worry — you can still add passwords manually.',
+        tip: `If you miss the prompt, don't worry — you can still add passwords manually.`,
       },
       {
         title: 'View your saved passwords',
@@ -386,7 +386,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Use autofill to log in automatically',
-        content: 'When you visit a website you\'ve saved a password for, Chrome will automatically fill in your username and password. Just tap the login fields and choose the saved account.',
+        content: `When you visit a website you've saved a password for, Chrome will automatically fill in your username and password. Just tap the login fields and choose the saved account.`,
       },
       {
         title: 'Check for weak or compromised passwords',
@@ -415,17 +415,17 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Turn on 2-Step Verification',
-        content: 'In Security settings, tap "2-Step Verification." This adds a second step when you sign in — like a code sent to your phone — so even if someone has your password, they can\'t get in.',
+        content: `In Security settings, tap "2-Step Verification." This adds a second step when you sign in — like a code sent to your phone — so even if someone has your password, they can't get in.`,
         tip: 'Use Google Prompt for the easiest experience — you just tap "Yes" on your phone to approve sign-ins.',
       },
       {
         title: 'Review connected apps',
-        content: 'Scroll to "Your connections to third-party apps & services." Review the list and remove any apps you no longer use or don\'t recognize.',
+        content: `Scroll to "Your connections to third-party apps & services." Review the list and remove any apps you no longer use or don't recognize.`,
       },
       {
         title: 'Check recent account activity',
-        content: 'At the bottom of Gmail, tap "Details" (on desktop) or go to Settings > Account Activity. You\'ll see where and when your account was last accessed. Sign out any sessions you don\'t recognize.',
-        warning: 'If you see activity from a location you don\'t recognize, change your password immediately.',
+        content: `At the bottom of Gmail, tap "Details" (on desktop) or go to Settings > Account Activity. You'll see where and when your account was last accessed. Sign out any sessions you don't recognize.`,
+        warning: `If you see activity from a location you don't recognize, change your password immediately.`,
       },
       {
         title: 'Set up a recovery phone and email',
@@ -436,7 +436,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
   {
     slug: 'how-to-update-windows-11',
     title: 'How to Update Windows 11 on Your Computer',
-    excerpt: 'Keeping Windows updated is one of the best things you can do to keep your PC safe. Here\'s the easy way to check for and install updates.',
+    excerpt: `Keeping Windows updated is one of the best things you can do to keep your PC safe. Here's the easy way to check for and install updates.`,
     category: 'Windows PC',
     sourceId: 'microsoft-support',
     originalUrl: 'https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a',
@@ -458,7 +458,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Click "Windows Update"',
-        content: 'In Settings, look in the left sidebar and click "Windows Update." If you don\'t see a sidebar, look for "Update & Security."',
+        content: `In Settings, look in the left sidebar and click "Windows Update." If you don't see a sidebar, look for "Update & Security."`,
       },
       {
         title: 'Click "Check for updates"',
@@ -467,15 +467,15 @@ export const aggregatedArticles: AggregatedArticle[] = [
       {
         title: 'Install any available updates',
         content: 'If updates are found, click "Download & Install." Your computer may need to restart to finish installing. Save any work before restarting.',
-        tip: 'You can choose "Schedule restart" to install updates at a time that\'s convenient for you.',
-        warning: 'Don\'t turn off your computer while updates are installing. It could cause problems.',
+        tip: `You can choose "Schedule restart" to install updates at a time that's convenient for you.`,
+        warning: `Don't turn off your computer while updates are installing. It could cause problems.`,
       },
     ],
   },
   {
     slug: 'how-to-use-windows-defender',
     title: 'How to Use Windows Security to Scan for Viruses',
-    excerpt: 'Windows comes with a free built-in virus scanner called Windows Security. Here\'s how to run a scan and check your protection.',
+    excerpt: `Windows comes with a free built-in virus scanner called Windows Security. Here's how to run a scan and check your protection.`,
     category: 'Windows PC',
     sourceId: 'microsoft-support',
     originalUrl: 'https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963',
@@ -505,15 +505,15 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Review the results',
-        content: 'When the scan finishes, you\'ll see "No current threats" if your computer is clean. If threats are found, Windows will show you what was found and offer to remove it.',
-        warning: 'If Windows Security is turned off and you didn\'t do it yourself, your computer may already be infected. Ask a tech professional for help.',
+        content: `When the scan finishes, you'll see "No current threats" if your computer is clean. If threats are found, Windows will show you what was found and offer to remove it.`,
+        warning: `If Windows Security is turned off and you didn't do it yourself, your computer may already be infected. Ask a tech professional for help.`,
       },
     ],
   },
   {
     slug: 'avoid-tech-support-scams-ftc',
     title: 'How to Spot and Avoid Tech Support Scams',
-    excerpt: 'Scammers pretend to be from Microsoft, Apple, or your internet company to trick you into giving them access to your computer. Here\'s how to stay safe.',
+    excerpt: `Scammers pretend to be from Microsoft, Apple, or your internet company to trick you into giving them access to your computer. Here's how to stay safe.`,
     category: 'Online Safety',
     sourceId: 'ftc',
     originalUrl: 'https://consumer.ftc.gov/articles/tech-support-scams',
@@ -532,27 +532,27 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Never give remote access to your computer',
-        content: 'If someone you don\'t know asks to "take over" or "connect to" your computer to fix a problem, refuse. Scammers use this access to steal your files, install spyware, or demand payment.',
+        content: `If someone you don't know asks to "take over" or "connect to" your computer to fix a problem, refuse. Scammers use this access to steal your files, install spyware, or demand payment.`,
       },
       {
         title: 'Hang up on unsolicited phone calls',
-        content: 'If you get a call from "Microsoft," "Apple," "Google," or your internet provider saying there\'s a problem with your computer, hang up. These companies don\'t make unsolicited calls like this.',
-        tip: 'It\'s always okay to hang up and call the company\'s real support number (found on their official website) to verify.',
+        content: `If you get a call from "Microsoft," "Apple," "Google," or your internet provider saying there's a problem with your computer, hang up. These companies don't make unsolicited calls like this.`,
+        tip: `It's always okay to hang up and call the company's real support number (found on their official website) to verify.`,
       },
       {
-        title: 'Don\'t pay with gift cards or wire transfer',
+        title: `Don't pay with gift cards or wire transfer`,
         content: 'Scammers often ask for payment in gift cards (Google Play, iTunes, Amazon) or wire transfers. Real companies never ask for payment this way. This is always a scam.',
       },
       {
         title: 'Report it to the FTC',
-        content: 'If you think you\'ve been targeted, report it at ReportFraud.ftc.gov. Your report helps the FTC stop scammers and warn others.',
+        content: `If you think you've been targeted, report it at ReportFraud.ftc.gov. Your report helps the FTC stop scammers and warn others.`,
       },
     ],
   },
   {
     slug: 'protect-against-phishing-ftc',
     title: 'How to Recognize and Avoid Phishing Emails',
-    excerpt: 'Phishing emails pretend to be from banks, Amazon, or the government to steal your information. Learn to spot them before it\'s too late.',
+    excerpt: `Phishing emails pretend to be from banks, Amazon, or the government to steal your information. Learn to spot them before it's too late.`,
     category: 'Online Safety',
     sourceId: 'ftc',
     originalUrl: 'https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams',
@@ -564,21 +564,21 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['avoid-tech-support-scams-ftc', 'how-to-secure-gmail-account'],
     steps: [
       {
-        title: 'Look at the sender\'s email address closely',
+        title: `Look at the sender's email address closely`,
         content: 'Phishing emails often use addresses that look almost right but have small differences — like "amazon-support@amaz0n.com" instead of "@amazon.com." Always check the full email address, not just the name.',
       },
       {
         title: 'Watch out for urgent language',
         content: '"Your account will be closed!" or "Verify now or lose access!" — phishing emails create panic to make you act without thinking. Slow down. Legitimate companies give you time.',
-        tip: 'If an email seems urgent, go directly to the company\'s website by typing the address yourself — don\'t click links in the email.',
+        tip: `If an email seems urgent, go directly to the company's website by typing the address yourself — don't click links in the email.`,
       },
       {
-        title: 'Don\'t click suspicious links',
-        content: 'Hover over links (on a computer) before clicking. You\'ll see the real web address at the bottom of your screen. If it looks strange or doesn\'t match the company, don\'t click it.',
+        title: `Don't click suspicious links`,
+        content: `Hover over links (on a computer) before clicking. You'll see the real web address at the bottom of your screen. If it looks strange or doesn't match the company, don't click it.`,
       },
       {
         title: 'Never enter your password from an email link',
-        content: 'If an email asks you to "verify" your password, don\'t do it from the link in the email. Instead, open a new browser tab and go directly to the website by typing its address.',
+        content: `If an email asks you to "verify" your password, don't do it from the link in the email. Instead, open a new browser tab and go directly to the website by typing its address.`,
         warning: 'Your bank, Amazon, PayPal, and similar services will never ask for your password via email.',
       },
       {
@@ -589,7 +589,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
   },
   {
     slug: 'understanding-smartphones-for-seniors',
-    title: 'A Beginner\'s Guide to Smartphones for Seniors',
+    title: `A Beginner's Guide to Smartphones for Seniors`,
     excerpt: 'Not sure what a smartphone can do or how to get started? This friendly guide covers the basics in plain language.',
     category: 'Getting Started',
     sourceId: 'aarp',
@@ -626,7 +626,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
       {
         title: 'Keeping your phone charged',
         content: 'Your phone uses a battery that needs regular charging. Plug the charging cable into the bottom of your phone and into a power outlet. A full charge usually takes 1–2 hours. Try to charge it overnight.',
-        warning: 'Don\'t let your battery reach 0% very often — it can shorten the battery\'s life over time.',
+        warning: `Don't let your battery reach 0% very often — it can shorten the battery's life over time.`,
       },
     ],
   },
@@ -647,7 +647,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
       {
         title: 'Look for the padlock icon',
         content: 'Before entering any personal information, look at the address bar at the top of your browser. You should see a padlock icon (🔒) to the left of the web address. This means the connection is encrypted.',
-        tip: 'If you see "Not Secure" or a broken padlock, don\'t enter any personal or financial information on that page.',
+        tip: `If you see "Not Secure" or a broken padlock, don't enter any personal or financial information on that page.`,
       },
       {
         title: 'Check the web address carefully',
@@ -655,16 +655,16 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Look for contact information',
-        content: 'Real businesses have a physical address, phone number, and email on their website. Scroll to the bottom of the page (the "footer"). If there\'s no contact information at all, be very cautious.',
+        content: `Real businesses have a physical address, phone number, and email on their website. Scroll to the bottom of the page (the "footer"). If there's no contact information at all, be very cautious.`,
       },
       {
         title: 'Watch out for deals that seem too good',
-        content: 'If a site is selling brand-name items for 80% off or promising huge prizes, it\'s likely fake. Scam websites lure people in with impossible deals.',
-        warning: 'Never enter your credit card information on a site you don\'t trust. When in doubt, go to the official store\'s website directly.',
+        content: `If a site is selling brand-name items for 80% off or promising huge prizes, it's likely fake. Scam websites lure people in with impossible deals.`,
+        warning: `Never enter your credit card information on a site you don't trust. When in doubt, go to the official store's website directly.`,
       },
       {
         title: 'Use a site safety checker',
-        content: 'If you\'re not sure about a website, you can check it for free at Google Safe Browsing (safebrowsing.google.com/safebrowsing/report_overview/) or VirusTotal. These tools tell you if a site has been reported as dangerous.',
+        content: `If you're not sure about a website, you can check it for free at Google Safe Browsing (safebrowsing.google.com/safebrowsing/report_overview/) or VirusTotal. These tools tell you if a site has been reported as dangerous.`,
       },
     ],
   },
@@ -688,19 +688,19 @@ export const aggregatedArticles: AggregatedArticle[] = [
       },
       {
         title: 'Go to Accounts > Sign-in options',
-        content: 'Click "Accounts" in the left sidebar, then click "Sign-in options." You\'ll see options for Windows Hello Face, Fingerprint, and PIN.',
+        content: `Click "Accounts" in the left sidebar, then click "Sign-in options." You'll see options for Windows Hello Face, Fingerprint, and PIN.`,
       },
       {
         title: 'Set up facial recognition or fingerprint',
-        content: 'Click either "Windows Hello Face" or "Windows Hello Fingerprint" (depending on your PC\'s capabilities). Click "Set up" and follow the on-screen instructions.',
-        tip: 'Not sure if your PC supports Windows Hello? If you don\'t see these options, your PC may not have the right camera or fingerprint sensor.',
+        content: `Click either "Windows Hello Face" or "Windows Hello Fingerprint" (depending on your PC's capabilities). Click "Set up" and follow the on-screen instructions.`,
+        tip: `Not sure if your PC supports Windows Hello? If you don't see these options, your PC may not have the right camera or fingerprint sensor.`,
       },
       {
         title: 'Look at the camera or scan your finger',
         content: 'For facial recognition: look at the camera while it scans your face. For fingerprint: rest your finger on the fingerprint sensor when prompted, lifting and placing it several times.',
       },
       {
-        title: 'You\'re done — try it out',
+        title: `You're done — try it out`,
         content: 'Lock your PC (Windows key + L) and then try signing back in. Your PC should recognize you without needing a password.',
       },
     ],
@@ -907,7 +907,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
   {
     slug: 'htg-windows-debloat',
     title: 'How to Remove Bloatware from Windows 11',
-    excerpt: 'Your new PC came loaded with apps you don\'t need. Here\'s how to safely remove pre-installed software and reclaim your computer.',
+    excerpt: `Your new PC came loaded with apps you don't need. Here's how to safely remove pre-installed software and reclaim your computer.`,
     category: 'Windows',
     sourceId: 'how-to-geek',
     originalUrl: 'https://www.howtogeek.com/224798/how-to-uninstall-windows-10s-built-in-apps-and-how-to-reinstall-them/',
@@ -919,9 +919,9 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['htg-speed-up-pc'],
     steps: [
       { title: 'What is bloatware?', content: 'Bloatware is software pre-installed on your computer by the manufacturer. It can include trial antivirus, games, and apps you never asked for. Removing it frees up storage and can speed up your PC.' },
-      { title: 'Uninstall from Settings', content: 'Open Settings > Apps > Installed Apps. Scroll through the list and click the three dots next to apps you don\'t use. Click Uninstall. Safe to remove: candy games, trial software, manufacturer utilities you don\'t use.' },
-      { title: 'What NOT to remove', content: 'Don\'t remove Microsoft Edge (can break Windows Update), .NET Framework, Visual C++ Redistributable, or drivers. When in doubt, search the app name online before removing it.' },
-      { title: 'Disable startup programs', content: 'Task Manager > Startup tab. Disable programs you don\'t need at startup. This speeds up boot time significantly. You can always re-enable them later.' },
+      { title: 'Uninstall from Settings', content: `Open Settings > Apps > Installed Apps. Scroll through the list and click the three dots next to apps you don't use. Click Uninstall. Safe to remove: candy games, trial software, manufacturer utilities you don't use.` },
+      { title: 'What NOT to remove', content: `Don't remove Microsoft Edge (can break Windows Update), .NET Framework, Visual C++ Redistributable, or drivers. When in doubt, search the app name online before removing it.` },
+      { title: 'Disable startup programs', content: `Task Manager > Startup tab. Disable programs you don't need at startup. This speeds up boot time significantly. You can always re-enable them later.` },
       { title: 'Use the built-in disk cleanup', content: 'Search "Disk Cleanup" in the Start menu. Select your drive and let it scan. Check boxes for temporary files, thumbnails, and previous Windows installations. Click OK to free up space.' },
     ],
   },
@@ -939,9 +939,9 @@ export const aggregatedArticles: AggregatedArticle[] = [
     thumbnailEmoji: '🚀',
     relatedSlugs: ['htg-windows-debloat'],
     steps: [
-      { title: 'Restart your computer', content: 'If you haven\'t restarted in a while, do it now. Restarting clears temporary files, closes memory-hogging processes, and applies pending updates. It\'s the single most effective speed fix.' },
+      { title: 'Restart your computer', content: `If you haven't restarted in a while, do it now. Restarting clears temporary files, closes memory-hogging processes, and applies pending updates. It's the single most effective speed fix.` },
       { title: 'Check for updates', content: 'Settings > Windows Update > Check for Updates. Outdated systems miss performance improvements and security patches. Let all updates install and restart.' },
-      { title: 'Disable startup programs', content: 'Press Ctrl+Shift+Esc for Task Manager. Click the Startup tab. Disable programs you don\'t need at boot. Each disabled program shaves seconds off startup time.' },
+      { title: 'Disable startup programs', content: `Press Ctrl+Shift+Esc for Task Manager. Click the Startup tab. Disable programs you don't need at boot. Each disabled program shaves seconds off startup time.` },
       { title: 'Free up disk space', content: 'Settings > System > Storage > Temporary Files. Delete temporary files, empty the Recycle Bin, and remove old downloads. Windows needs at least 10-15% free disk space to run well.' },
       { title: 'Check for malware', content: 'Open Windows Security > Virus & Threat Protection > Quick Scan. Malware running in the background is a common cause of slowness. If quick scan finds nothing, run a Full Scan.' },
       { title: 'Add more RAM (if applicable)', content: 'If your PC has less than 8 GB RAM, upgrading to 16 GB can dramatically improve multitasking. Check Task Manager > Performance > Memory to see current usage.' },
@@ -962,16 +962,16 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['htg-android-privacy'],
     steps: [
       { title: 'Limit ad tracking', content: 'Settings > Privacy & Security > Tracking. Turn off "Allow Apps to Request to Track." This prevents apps from tracking you across other apps and websites for advertising.' },
-      { title: 'Review location services', content: 'Settings > Privacy & Security > Location Services. Go through each app. Set most to "While Using" instead of "Always." Weather and Maps need location; most other apps don\'t.' },
+      { title: 'Review location services', content: `Settings > Privacy & Security > Location Services. Go through each app. Set most to "While Using" instead of "Always." Weather and Maps need location; most other apps don't.` },
       { title: 'Lock down Safari privacy', content: 'Settings > Safari. Turn on "Prevent Cross-Site Tracking" and "Hide IP Address." These stop advertisers from following you around the web.' },
       { title: 'Use Sign in with Apple', content: 'When apps offer social login options, choose "Sign in with Apple." It creates a unique random email address, protecting your real email from spam and data brokers.' },
-      { title: 'Check app permissions regularly', content: 'Settings > Privacy & Security shows which apps have access to your camera, microphone, contacts, and photos. Revoke access for apps that don\'t need it.' },
+      { title: 'Check app permissions regularly', content: `Settings > Privacy & Security shows which apps have access to your camera, microphone, contacts, and photos. Revoke access for apps that don't need it.` },
     ],
   },
   {
     slug: 'htg-android-privacy',
     title: 'Essential Android Privacy Settings',
-    excerpt: 'Take control of your Android phone\'s privacy with these key settings and tips.',
+    excerpt: `Take control of your Android phone's privacy with these key settings and tips.`,
     category: 'Privacy & Security',
     sourceId: 'how-to-geek',
     originalUrl: 'https://www.howtogeek.com/726439/how-to-improve-your-android-phones-privacy/',
@@ -982,11 +982,11 @@ export const aggregatedArticles: AggregatedArticle[] = [
     thumbnailEmoji: '🔒',
     relatedSlugs: ['htg-iphone-privacy'],
     steps: [
-      { title: 'Review app permissions', content: 'Settings > Privacy > Permission Manager. Check which apps access your camera, microphone, location, and contacts. Remove permissions that don\'t make sense for the app.' },
+      { title: 'Review app permissions', content: `Settings > Privacy > Permission Manager. Check which apps access your camera, microphone, location, and contacts. Remove permissions that don't make sense for the app.` },
       { title: 'Disable ad personalization', content: 'Settings > Privacy > Ads. Opt out of ad personalization. Reset your advertising ID periodically. This reduces targeted advertising across apps.' },
       { title: 'Limit Google data collection', content: 'Visit myaccount.google.com > Data & Privacy. Review and pause Web & App Activity, Location History, and YouTube History if you want more privacy.' },
-      { title: 'Use Private DNS', content: 'Settings > Network > Private DNS. Set to dns.adguard.com for automatic ad and tracker blocking, or use Cloudflare\'s 1dot1dot1dot1.cloudflare-dns.com for faster, more private browsing.' },
-      { title: 'Auto-remove old permissions', content: 'Android automatically removes permissions from apps you haven\'t used in months. Go to Settings > Apps to verify this feature is enabled for each app.' },
+      { title: 'Use Private DNS', content: `Settings > Network > Private DNS. Set to dns.adguard.com for automatic ad and tracker blocking, or use Cloudflare's 1dot1dot1dot1.cloudflare-dns.com for faster, more private browsing.` },
+      { title: 'Auto-remove old permissions', content: `Android automatically removes permissions from apps you haven't used in months. Go to Settings > Apps to verify this feature is enabled for each app.` },
     ],
   },
 
@@ -994,7 +994,7 @@ export const aggregatedArticles: AggregatedArticle[] = [
   {
     slug: 'techmeme-ai-landscape-2026',
     title: 'The AI Landscape in 2026: What You Need to Know',
-    excerpt: 'A plain-language overview of how AI is changing everyday technology, from your phone to your doctor\'s office.',
+    excerpt: `A plain-language overview of how AI is changing everyday technology, from your phone to your doctor's office.`,
     category: 'AI & Technology',
     sourceId: 'techmeme',
     originalUrl: 'https://www.techmeme.com',
@@ -1006,10 +1006,10 @@ export const aggregatedArticles: AggregatedArticle[] = [
     featured: true,
     relatedSlugs: ['techmeme-tech-trends'],
     steps: [
-      { title: 'AI assistants are everywhere', content: 'Siri, Google Assistant, Alexa, and Claude can now understand complex questions, write emails for you, summarize long documents, and help with creative projects. They\'re built into your phone, computer, and smart speakers.' },
+      { title: 'AI assistants are everywhere', content: `Siri, Google Assistant, Alexa, and Claude can now understand complex questions, write emails for you, summarize long documents, and help with creative projects. They're built into your phone, computer, and smart speakers.` },
       { title: 'AI in your photos', content: 'Google Photos and Apple Photos use AI to organize your pictures, recognize faces, search for specific objects ("photos of my dog at the beach"), and even erase unwanted elements from photos.' },
       { title: 'AI and healthcare', content: 'AI helps doctors detect diseases earlier, analyze medical images, and suggest treatment options. AI-powered health apps can track symptoms and provide personalized wellness recommendations.' },
-      { title: 'AI for writing and productivity', content: 'Tools like ChatGPT, Claude, and Microsoft Copilot can help draft emails, summarize articles, create presentations, and answer questions. They\'re free or low-cost and getting better rapidly.' },
+      { title: 'AI for writing and productivity', content: `Tools like ChatGPT, Claude, and Microsoft Copilot can help draft emails, summarize articles, create presentations, and answer questions. They're free or low-cost and getting better rapidly.` },
       { title: 'Staying safe with AI', content: 'AI can also be used to create fake images, voices, and videos (deepfakes). Always verify surprising news from multiple sources. Be cautious of AI-generated scam calls that clone familiar voices.' },
     ],
   },
@@ -1051,17 +1051,17 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['hn-terminal-basics'],
     steps: [
       { title: 'Office suites', content: 'LibreOffice replaces Microsoft Office for free: Writer (Word), Calc (Excel), Impress (PowerPoint). Download at libreoffice.org. Opens and saves Microsoft Office files.' },
-      { title: 'Photo editing', content: 'GIMP replaces Photoshop for free. It\'s powerful and handles most photo editing tasks: cropping, retouching, color correction, and filters. Available at gimp.org.' },
+      { title: 'Photo editing', content: `GIMP replaces Photoshop for free. It's powerful and handles most photo editing tasks: cropping, retouching, color correction, and filters. Available at gimp.org.` },
       { title: 'Video editing', content: 'DaVinci Resolve (free version) is professional-grade video editing used in Hollywood. Handles everything from home videos to complex productions. Available at blackmagicdesign.com.' },
       { title: 'Password manager', content: 'Bitwarden is a free, open-source password manager. Just as secure as paid alternatives. Works on every platform. Premium is only $10/year if you want extra features.' },
       { title: 'Note-taking and organization', content: 'Obsidian (free for personal use) is a powerful note-taking app. Your notes are stored as plain text files on your computer — you own your data. Logseq is another great free alternative.' },
-      { title: 'Web browser and email', content: 'Firefox (browser) and Thunderbird (email) are both free, privacy-focused, and community-developed. They don\'t track your data like some commercial alternatives.' },
+      { title: 'Web browser and email', content: `Firefox (browser) and Thunderbird (email) are both free, privacy-focused, and community-developed. They don't track your data like some commercial alternatives.` },
     ],
   },
   {
     slug: 'hn-terminal-basics',
-    title: 'The Command Line Isn\'t Scary: A Gentle Introduction',
-    excerpt: 'Learn the basics of using the terminal on any computer — it\'s simpler than you think and incredibly useful.',
+    title: `The Command Line Isn't Scary: A Gentle Introduction`,
+    excerpt: `Learn the basics of using the terminal on any computer — it's simpler than you think and incredibly useful.`,
     category: 'Software & Tools',
     sourceId: 'hacker-news',
     originalUrl: 'https://news.ycombinator.com',
@@ -1072,8 +1072,8 @@ export const aggregatedArticles: AggregatedArticle[] = [
     thumbnailEmoji: '💻',
     relatedSlugs: ['hn-open-source-alternatives'],
     steps: [
-      { title: 'What is the terminal?', content: 'The terminal (or command line) is a text-based way to control your computer. Instead of clicking, you type commands. It sounds old-fashioned but it\'s faster for many tasks and gives you more control.' },
-      { title: 'Open the terminal', content: 'Windows: search "Terminal" or "PowerShell" in the Start menu. Mac: open Applications > Utilities > Terminal. You\'ll see a blinking cursor waiting for your commands.' },
+      { title: 'What is the terminal?', content: `The terminal (or command line) is a text-based way to control your computer. Instead of clicking, you type commands. It sounds old-fashioned but it's faster for many tasks and gives you more control.` },
+      { title: 'Open the terminal', content: `Windows: search "Terminal" or "PowerShell" in the Start menu. Mac: open Applications > Utilities > Terminal. You'll see a blinking cursor waiting for your commands.` },
       { title: 'Navigate folders', content: 'Type "cd Documents" to move into your Documents folder. Type "cd .." to go back up. Type "ls" (Mac) or "dir" (Windows) to list files in the current folder. Type "pwd" to see where you are.' },
       { title: 'Do useful things', content: 'Create a folder: "mkdir MyFolder". Copy a file: "cp file.txt backup.txt" (Mac) or "copy file.txt backup.txt" (Windows). Delete a file: "rm file.txt" (Mac) or "del file.txt" (Windows).' },
       { title: 'Why bother?', content: 'The terminal can rename 500 files in seconds, automate repetitive tasks, manage system settings not available in menus, and is required for many developer tools. Even basic knowledge is valuable.' },
@@ -1097,11 +1097,11 @@ export const aggregatedArticles: AggregatedArticle[] = [
     relatedSlugs: ['cw-cloud-explained'],
     steps: [
       { title: 'Use unique passwords everywhere', content: 'Data breaches are common. If you reuse passwords, one breach exposes all your accounts. Use a password manager (Bitwarden is free) to generate and store unique passwords for every site.' },
-      { title: 'Enable two-factor authentication', content: 'Turn on 2FA for email, banking, and social media. Even if someone steals your password, they can\'t log in without the code from your phone. This single step prevents most account takeovers.' },
-      { title: 'Keep everything updated', content: 'Software updates fix security vulnerabilities. Enable automatic updates for your operating system, browser, and apps. Don\'t postpone updates — they\'re patching holes hackers actively exploit.' },
+      { title: 'Enable two-factor authentication', content: `Turn on 2FA for email, banking, and social media. Even if someone steals your password, they can't log in without the code from your phone. This single step prevents most account takeovers.` },
+      { title: 'Keep everything updated', content: `Software updates fix security vulnerabilities. Enable automatic updates for your operating system, browser, and apps. Don't postpone updates — they're patching holes hackers actively exploit.` },
       { title: 'Recognize social engineering', content: 'Most cyberattacks start with tricking a person, not hacking technology. Be skeptical of urgent requests, unexpected emails, and too-good-to-be-true offers. When in doubt, verify independently.' },
       { title: 'Back up your data', content: 'Ransomware encrypts your files and demands payment. Regular backups mean you can restore everything without paying. Use both cloud backup and a local external drive.' },
-      { title: 'Secure your home network', content: 'Change your router\'s default password. Use WPA3 encryption. Create a guest network for visitors. Update router firmware regularly. Your router is the gateway to all your connected devices.' },
+      { title: 'Secure your home network', content: `Change your router's default password. Use WPA3 encryption. Create a guest network for visitors. Update router firmware regularly. Your router is the gateway to all your connected devices.` },
     ],
   },
   {
@@ -1118,9 +1118,9 @@ export const aggregatedArticles: AggregatedArticle[] = [
     thumbnailEmoji: '☁️',
     relatedSlugs: ['cw-cybersecurity-basics'],
     steps: [
-      { title: 'What is the cloud?', content: 'The cloud is simply someone else\'s computer. When you save a photo to iCloud or Google Photos, it\'s stored on Apple\'s or Google\'s powerful servers in a secure data center. You access it over the internet.' },
-      { title: 'You already use it', content: 'Gmail, Netflix, Spotify, and Google Docs all run in the cloud. So does online banking. If you can access something from both your phone and computer, it\'s probably in the cloud.' },
-      { title: 'Why it matters to you', content: 'Cloud storage means your files are safe even if your phone breaks. Cloud apps mean you don\'t need powerful hardware — the heavy work happens on remote servers. You just need internet access.' },
+      { title: 'What is the cloud?', content: `The cloud is simply someone else's computer. When you save a photo to iCloud or Google Photos, it's stored on Apple's or Google's powerful servers in a secure data center. You access it over the internet.` },
+      { title: 'You already use it', content: `Gmail, Netflix, Spotify, and Google Docs all run in the cloud. So does online banking. If you can access something from both your phone and computer, it's probably in the cloud.` },
+      { title: 'Why it matters to you', content: `Cloud storage means your files are safe even if your phone breaks. Cloud apps mean you don't need powerful hardware — the heavy work happens on remote servers. You just need internet access.` },
       { title: 'Is it safe?', content: 'Major cloud providers (Google, Apple, Microsoft, Amazon) use stronger security than most people could achieve at home. They employ encryption, access controls, and 24/7 security teams. Your data is safer in the cloud than on an unencrypted laptop.' },
       { title: 'Cloud storage options', content: 'Google Drive: 15 GB free. iCloud: 5 GB free. OneDrive: 5 GB free. Dropbox: 2 GB free. For most people, Google Drive or iCloud (depending on your devices) with a small paid upgrade ($1-3/month) is enough.' },
     ],

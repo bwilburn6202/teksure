@@ -61,7 +61,7 @@ The good news is that BeenVerified must remove your listing if you ask. The whol
     steps: [
       { title: 'Go to the BeenVerified opt-out page', content: 'In your browser, go to beenverified.com/app/optout/search. This is their official removal page.' },
       { title: 'Search for your name', content: 'Type your first and last name, then pick the state where you live. Click Search to see a list of possible matches.' },
-      { title: 'Pick the record that matches you', content: 'Look through the results for the one with your correct age and city. Click "That\'s the one" next to your entry.' },
+      { title: 'Pick the record that matches you', content: `Look through the results for the one with your correct age and city. Click "That's the one" next to your entry.` },
       { title: 'Enter your email address', content: 'Type an email address you can check right now. BeenVerified will send a verification link to this email.' },
       { title: 'Click the link in the email', content: 'Open your email, find the message from BeenVerified, and click the verification link inside. Your record usually comes down within 24 hours.' },
     ],
@@ -89,7 +89,7 @@ Removing your listing is free and takes about 5 minutes. Your record usually dis
   },
   {
     slug: 'google-results-about-you',
-    title: 'How to Use Google\'s Results About You Tool',
+    title: `How to Use Google's Results About You Tool`,
     excerpt: 'Use a free Google tool to find web pages that show your phone number, address, or email and ask Google to hide them.',
     category: 'safety-guides',
     tags: ['Google', 'privacy', 'search results', 'personal info'],
@@ -131,7 +131,7 @@ Google will not remove news articles or pages that are in the public interest. B
   },
   {
     slug: 'check-personal-info-online',
-    title: 'How to Check What\'s Online About You',
+    title: `How to Check What's Online About You`,
     excerpt: 'Do a thorough search of your own name to find out what strangers can learn about you from public websites.',
     category: 'safety-guides',
     tags: ['privacy', 'personal info', 'search yourself', 'online footprint'],
@@ -444,7 +444,7 @@ Medicare.gov has a free Plan Finder tool that shows every plan in your area with
 The appeal is free, and there are five levels. Most people win at the first or second level if they include a letter from their doctor explaining why the service is medically needed.`,
     steps: [
       { title: 'Read the denial notice carefully', content: 'When Medicare denies a claim, they mail you a Medicare Summary Notice or a plan denial letter. This paper tells you exactly what was denied, why, and the deadline to appeal (usually 120 days).' },
-      { title: 'Ask your doctor for a support letter', content: 'Call your doctor\'s office and ask them to write a short letter explaining why this service is medically necessary. Most offices will do this for you, and it is the single most important thing for winning.' },
+      { title: 'Ask your doctor for a support letter', content: `Call your doctor's office and ask them to write a short letter explaining why this service is medically necessary. Most offices will do this for you, and it is the single most important thing for winning.` },
       { title: 'Fill out the Redetermination form', content: 'Download Form CMS-20027 from medicare.gov or call 1-800-MEDICARE to request one by mail. Fill it in with your Medicare number, the denial details, and why you think it should be covered.' },
       { title: 'Mail the appeal and keep copies', content: 'Mail the form, the doctor letter, and a copy of the denial notice to the address on your denial. Send it by certified mail so you have proof it arrived. Keep a copy of everything for yourself.' },
       { title: 'Wait for a decision', content: 'Medicare has 60 days to respond. If they still deny, the notice will tell you how to file the next level of appeal. Free help is available from your State Health Insurance Assistance Program (SHIP) — call 1-877-839-2675.' },
@@ -464,7 +464,7 @@ The appeal is free, and there are five levels. Most people win at the first or s
 
 Plans change their drug lists and doctor networks every year, so it is worth comparing your current plan to new options each fall. Changes you make take effect January 1.`,
     steps: [
-      { title: 'Check your plan\'s Annual Notice of Change', content: 'Every September, your current plan mails you a packet called the Annual Notice of Change (ANOC). Look at any differences for next year — new drug costs, removed doctors, or a higher premium.' },
+      { title: `Check your plan's Annual Notice of Change`, content: 'Every September, your current plan mails you a packet called the Annual Notice of Change (ANOC). Look at any differences for next year — new drug costs, removed doctors, or a higher premium.' },
       { title: 'Go to medicare.gov/plan-compare', content: 'Open your browser and go to medicare.gov/plan-compare. Enter your ZIP code, then sign in with your Medicare account so the tool remembers your drugs and doctors.' },
       { title: 'Run a fresh comparison for next year', content: 'The tool will show all plans available next year, including your current one. Sort by Total Yearly Cost to see which plan saves you the most based on the drugs you actually take.' },
       { title: 'Enroll in the new plan', content: 'When you find a better plan, click Enroll. Medicare handles the switch automatically — you do NOT need to cancel your old plan, it drops off on December 31.' },
@@ -489,7 +489,7 @@ Reading these notices helps you catch billing mistakes and possible fraud. You c
       { title: 'Click Claims & Statements', content: 'From your account home page, click the "Claims & Statements" menu at the top. This is where all your billing paperwork lives.' },
       { title: 'Open your latest Summary Notice', content: 'Click "Medicare Summary Notices" to see a list of past notices. Click the most recent one to open a PDF of the notice, which looks just like the paper version.' },
       { title: 'Check each claim for mistakes', content: 'Look at the list of services and dates. Make sure every visit is something you actually had. If you see a doctor you never saw or a test you never had, that is a red flag for fraud.' },
-      { title: 'Report anything suspicious', content: 'If you find a claim that does not look right, call your doctor\'s billing office first to check. If it is still wrong, call 1-800-MEDICARE or the Medicare Fraud Hotline at 1-800-HHS-TIPS.' },
+      { title: 'Report anything suspicious', content: `If you find a claim that does not look right, call your doctor's billing office first to check. If it is still wrong, call 1-800-MEDICARE or the Medicare Fraud Hotline at 1-800-HHS-TIPS.` },
     ],
   },
   {
@@ -508,9 +508,9 @@ You can search by specialty like primary care, cardiology, or physical therapy, 
     steps: [
       { title: 'Go to the Care Compare tool', content: 'Open your browser and go to medicare.gov/care-compare. This is the official tool for finding doctors and other providers.' },
       { title: 'Pick Doctors & Clinicians', content: 'On the main page, click the "Doctors & Clinicians" option. This lets you search for individual doctors.' },
-      { title: 'Enter your location and specialty', content: 'Type your ZIP code and a specialty — like "primary care", "cardiology", or the doctor\'s name if you already have one in mind.' },
+      { title: 'Enter your location and specialty', content: `Type your ZIP code and a specialty — like "primary care", "cardiology", or the doctor's name if you already have one in mind.` },
       { title: 'Filter by distance and new patients', content: 'On the results page, use the filters on the left side to set how many miles from home you are willing to drive and check "Accepting new Medicare patients" to hide doctors who are full.' },
-      { title: 'Click a doctor to see details', content: 'Click any name to see the doctor\'s address, phone number, languages spoken, and whether they accept Medicare assignment (which means they accept the Medicare-approved amount as full payment). Call the office to confirm and book.' },
+      { title: 'Click a doctor to see details', content: `Click any name to see the doctor's address, phone number, languages spoken, and whether they accept Medicare assignment (which means they accept the Medicare-approved amount as full payment). Call the office to confirm and book.` },
     ],
   },
 
@@ -575,7 +575,7 @@ The transfer usually takes a few hours. Most prescriptions can be transferred, t
       { title: 'Call or visit the new pharmacy', content: 'Call the new pharmacy or walk in during business hours. Tell them you want to transfer a prescription and give them the Rx number, drug name, and the phone number of your old pharmacy.' },
       { title: 'Wait for them to contact the old pharmacy', content: 'The new pharmacy calls or faxes your old pharmacy directly to get your prescription details. This usually takes 1 to 3 hours. They will text or call you when it is ready.' },
       { title: 'Pick up the prescription', content: 'Go to the new pharmacy, give your name at the counter, and pick up your medication. Pay with insurance or cash, just like before.' },
-      { title: 'Update auto-refills and apps', content: 'If you used the old pharmacy\'s app or auto-refills, cancel those. Then set up auto-refills at the new pharmacy so you do not run out of medication.' },
+      { title: 'Update auto-refills and apps', content: `If you used the old pharmacy's app or auto-refills, cancel those. Then set up auto-refills at the new pharmacy so you do not run out of medication.` },
     ],
   },
   {
@@ -592,7 +592,7 @@ The transfer usually takes a few hours. Most prescriptions can be transferred, t
 
 Every big pharmacy offers this for free: CVS, Walgreens, Walmart, Rite Aid, and others. It works for almost every medication except controlled drugs like some pain medicines.`,
     steps: [
-      { title: 'Open your pharmacy\'s app or website', content: 'Download your pharmacy\'s app (CVS, Walgreens, Walmart, etc.) from the App Store or Play Store. Or go to their website and sign in with your account.' },
+      { title: `Open your pharmacy's app or website`, content: `Download your pharmacy's app (CVS, Walgreens, Walmart, etc.) from the App Store or Play Store. Or go to their website and sign in with your account.` },
       { title: 'Go to your prescription list', content: 'Tap "Prescriptions" or "My Prescriptions" in the menu. You should see every current prescription you have at that pharmacy.' },
       { title: 'Turn on auto-refill for each medication', content: 'Tap the prescription you want on auto-refill. Look for a switch or button labeled "Auto-refill" or "Easy Refill" and turn it on. Repeat for each drug you want automatic.' },
       { title: 'Set how you want to be notified', content: 'Go to Account Settings or Notifications and pick text, email, or phone call. The pharmacy will notify you when each refill is ready for pickup.' },
@@ -613,7 +613,7 @@ Every big pharmacy offers this for free: CVS, Walgreens, Walmart, Rite Aid, and 
     difficulty: 'Beginner',
     body: `Zocdoc is a free website and app that shows doctors near you who are accepting new patients, with real appointment times you can book instantly. You can filter by doctor type, insurance plan, and patient ratings.
 
-Most appointments on Zocdoc are available within a week, and you can see ratings from other patients before choosing. Booking is free — the doctor\'s office still bills your insurance normally.`,
+Most appointments on Zocdoc are available within a week, and you can see ratings from other patients before choosing. Booking is free — the doctor's office still bills your insurance normally.`,
     steps: [
       { title: 'Open Zocdoc and enter your info', content: 'Go to zocdoc.com or download the Zocdoc app. Enter your ZIP code, insurance plan, and what kind of doctor you need (like primary care or dermatologist).' },
       { title: 'Review the list of doctors', content: 'Zocdoc shows a list of matching doctors with photos, reviews, and the soonest available appointment. Click any doctor to see more details, including their background and patient reviews.' },
@@ -634,13 +634,13 @@ Most appointments on Zocdoc are available within a week, and you can see ratings
     difficulty: 'Beginner',
     body: `Most hospitals and imaging centers now let you book your yearly mammogram online. You pick a date and time that works, upload your insurance, and get a confirmation email — usually in under 5 minutes.
 
-You often do not need a doctor\'s order if you are over 40 and getting a routine screening. Check with your insurance first — they usually cover one mammogram a year at 100%.`,
+You often do not need a doctor's order if you are over 40 and getting a routine screening. Check with your insurance first — they usually cover one mammogram a year at 100%.`,
     steps: [
       { title: 'Find your local imaging center or hospital', content: 'Call your insurance, check their website, or ask your doctor which imaging centers accept your plan. Common ones include RadNet, your hospital system, and Solis Mammography.' },
-      { title: 'Go to their website and look for online booking', content: 'Open the imaging center\'s website in your browser. Look for a button or menu item that says "Schedule Online", "Book an Appointment", or "Request Appointment".' },
+      { title: 'Go to their website and look for online booking', content: `Open the imaging center's website in your browser. Look for a button or menu item that says "Schedule Online", "Book an Appointment", or "Request Appointment".` },
       { title: 'Pick mammogram as the service', content: 'Choose "Screening Mammogram" if this is your yearly checkup (you have no symptoms) or "Diagnostic Mammogram" if your doctor ordered one because of a concern.' },
       { title: 'Pick a date and time', content: 'Scroll through the calendar and pick an open slot. Most centers have morning and afternoon appointments Monday through Saturday.' },
-      { title: 'Enter your info and confirm', content: 'Type in your name, date of birth, insurance details, and your doctor\'s name so they can send the results. Click Confirm. You will get a confirmation email and a reminder call or text 1-2 days before the visit.' },
+      { title: 'Enter your info and confirm', content: `Type in your name, date of birth, insurance details, and your doctor's name so they can send the results. Click Confirm. You will get a confirmation email and a reminder call or text 1-2 days before the visit.` },
     ],
   },
   {
@@ -657,7 +657,7 @@ You often do not need a doctor\'s order if you are over 40 and getting a routine
 
 Some dentists even offer a new-patient discount for booking online. You can usually request a cleaning, checkup, emergency visit, or consultation.`,
     steps: [
-      { title: 'Go to your dentist\'s website', content: 'Type your dentist\'s name into Google and click their website. Look for a button that says "Schedule", "Book Now", or "Request Appointment" — usually at the top right of the page.' },
+      { title: `Go to your dentist's website`, content: `Type your dentist's name into Google and click their website. Look for a button that says "Schedule", "Book Now", or "Request Appointment" — usually at the top right of the page.` },
       { title: 'Pick the type of visit', content: 'Choose the visit type — "Cleaning" or "Checkup" if it is a routine 6-month visit, or "New Patient" if this is your first time. Other options include emergency, whitening, or consultation.' },
       { title: 'Pick a date and time', content: 'A calendar shows open times. Pick a day and time that works for you. Many dentists have Saturday hours or early-morning slots for busy patients.' },
       { title: 'Fill in your info and insurance', content: 'Type your name, date of birth, phone number, email, and insurance card details. If you are a new patient, you may be asked to fill in your health history online ahead of time.' },
@@ -667,7 +667,7 @@ Some dentists even offer a new-patient discount for booking online. You can usua
   {
     slug: 'schedule-vet-appointment',
     title: 'How to Book a Vet Appointment Online',
-    excerpt: 'Book your pet\'s vet appointment online through your vet\'s website or pet-care apps like Petdesk or Vetster.',
+    excerpt: `Book your pet's vet appointment online through your vet's website or pet-care apps like Petdesk or Vetster.`,
     category: 'app-guides',
     tags: ['vet', 'pet', 'appointments', 'booking'],
     readTime: '6 min',
@@ -678,8 +678,8 @@ Some dentists even offer a new-patient discount for booking online. You can usua
 
 Some vets also offer video visits (called telehealth) through apps like Vetster for non-emergency questions about your pet. This can save you a drive for minor issues.`,
     steps: [
-      { title: 'Find your vet\'s booking option', content: 'Go to your vet\'s website and look for "Book Appointment", "Schedule Visit", or a link to an app like Petdesk or Allydvm. You may need to create an account with your email the first time.' },
-      { title: 'Add your pet\'s details', content: 'Type in your pet\'s name, species, breed, age, and weight. Upload their most recent vaccination record if the vet asks for it.' },
+      { title: `Find your vet's booking option`, content: `Go to your vet's website and look for "Book Appointment", "Schedule Visit", or a link to an app like Petdesk or Allydvm. You may need to create an account with your email the first time.` },
+      { title: `Add your pet's details`, content: `Type in your pet's name, species, breed, age, and weight. Upload their most recent vaccination record if the vet asks for it.` },
       { title: 'Pick the visit reason', content: 'Choose the reason for the visit — annual checkup, vaccines, sick visit, or specific problem like limping or vomiting. The vet uses this to set the right amount of time for your visit.' },
       { title: 'Pick a time and confirm', content: 'Pick a day and open time slot from the calendar. Confirm the appointment — you will get an email and usually a text reminder 1 day before.' },
       { title: 'Try a video visit for minor questions', content: 'If your question is small (like a rash, mild diarrhea, or diet advice), try an app like Vetster or Pawp. A licensed vet can do a video call for about $30-50 and often solve the issue without a drive.' },
@@ -895,7 +895,7 @@ All three assistants can run several timers at once and name them — "Oven time
       { title: 'Set a basic timer', content: 'Say "Alexa, set a timer for 10 minutes" or "Hey Google, set a timer for 10 minutes" or "Hey Siri, 10-minute timer". The speaker confirms and starts counting down.' },
       { title: 'Name timers to run several at once', content: 'Say "Alexa, set a pasta timer for 8 minutes" and "Alexa, set a garlic timer for 2 minutes". When one goes off, the speaker tells you which name is ringing so you know exactly which pot to check.' },
       { title: 'Ask for conversions', content: 'Say "Alexa, how many tablespoons in a cup?" or "Hey Google, convert 200 grams to ounces". The speaker gives you the answer out loud — handy when you are reading a European recipe.' },
-      { title: 'Ask cooking questions', content: 'Say things like "Alexa, what temperature should I cook chicken?" or "Hey Google, what\'s a substitute for buttermilk?". The assistants pull answers from the web and read them aloud.' },
+      { title: 'Ask cooking questions', content: `Say things like "Alexa, what temperature should I cook chicken?" or "Hey Google, what's a substitute for buttermilk?". The assistants pull answers from the web and read them aloud.` },
       { title: 'Check time left on a timer', content: 'Say "Alexa, how much time is left on my pasta timer?" to hear the countdown without looking at anything. Say "Cancel pasta timer" if you want to stop it early.' },
     ],
   },
@@ -1066,7 +1066,7 @@ The app sorts items into aisles automatically, so you shop in an efficient order
     steps: [
       { title: 'Install AnyList', content: 'Download AnyList from the App Store or Play Store. Open it and sign up with your email.' },
       { title: 'Create your grocery list', content: 'Tap the plus sign to start adding items. Type a food name — AnyList auto-suggests the item and puts it in the right aisle category (Produce, Dairy, etc.).' },
-      { title: 'Share with family', content: 'Tap the list name at the top and tap "Sharing". Type a family member\'s email — they get an invite. Once they accept, everyone sees the same list in real time.' },
+      { title: 'Share with family', content: `Tap the list name at the top and tap "Sharing". Type a family member's email — they get an invite. Once they accept, everyone sees the same list in real time.` },
       { title: 'Check items off as you shop', content: 'When you get to the store, open the list. Tap each item as you put it in your cart to cross it off. The checked items disappear so you can see what is left.' },
       { title: 'Save recipes and save favorite items', content: 'AnyList also has a recipe feature. Paste a recipe link, and the app pulls out the ingredients so you can add them all to your shopping list with one tap.' },
     ],
