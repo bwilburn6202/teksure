@@ -109,9 +109,10 @@ export function Navbar() {
     <>
       <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'glass shadow-sm' : 'bg-background/60 backdrop-blur-xl'}`}>
         <div className="container flex h-16 items-center justify-between">
-          {/* Logo */}
+          {/* Logo — swaps based on .dark for legibility on navy backgrounds */}
           <Link to={user ? dashboardPath : '/'} className="flex items-center gap-2.5 shrink-0" aria-label="TekSure home">
-            <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto" fetchPriority="high" />
+            <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto block dark:hidden" fetchPriority="high" />
+            <img src="/teksure-logo-white.svg" alt="" aria-hidden="true" className="h-8 w-auto hidden dark:block" fetchPriority="high" />
           </Link>
 
           {/* Desktop Nav */}
@@ -341,7 +342,8 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between h-16 px-6">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2" aria-label="TekSure home">
-              <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto" />
+              <img src="/teksure-logo.svg" alt="TekSure" className="h-8 w-auto block dark:hidden" />
+              <img src="/teksure-logo-white.svg" alt="" aria-hidden="true" className="h-8 w-auto hidden dark:block" />
             </Link>
             <Button variant="ghost" size="icon" className="h-11 w-11 rounded-full" aria-label="Close menu" onClick={() => setMobileMenuOpen(false)}>
               <X className="h-5 w-5" aria-hidden="true" />
