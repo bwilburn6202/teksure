@@ -12,7 +12,6 @@ import {
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
-import { ToolSkeleton } from '@/components/skeletons/ToolSkeleton';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -1543,7 +1542,6 @@ export default function Tools() {
         }}
       />
       <Navbar />
-      <ToolSkeleton />
       <main id="main-content" className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools' }]} />
