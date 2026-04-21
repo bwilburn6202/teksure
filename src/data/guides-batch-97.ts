@@ -832,4 +832,241 @@ Passkeys are a newer method — they use your device's biometrics (Face ID, Touc
     ],
     tip: `Quick Tip — Your primary email is the keys to the kingdom. Password resets for every other account go to it. Put the strongest 2FA you can on your email — a hardware key if possible, or a robust authenticator app at minimum.`,
   },
+  {
+    slug: `read-health-insurance-eob`,
+    title: `How to Read Your Health Insurance Explanation of Benefits`,
+    excerpt: `Decode the confusing paperwork your insurance company sends after a medical visit — what you owe, what was covered, and what to do if something looks wrong.`,
+    category: `health-tech`,
+    tags: [`health insurance`, `EOB`, `medical bills`, `insurance`, `seniors`],
+    readTime: `7 min`,
+    thumbnailEmoji: `🏥`,
+    publishedAt: `2026-04-21`,
+    difficulty: `Beginner`,
+    body: `After you see a doctor or fill a prescription, your health insurance company sends you a document called an Explanation of Benefits, or EOB. Many people mistake this for a bill and panic — or assume it means nothing and throw it away. Neither reaction is right. An EOB is a summary of what happened with your claim: what was submitted, what insurance agreed to pay, and what (if anything) you owe. Understanding it can save you money and help you catch billing errors before they become collection calls.
+
+The top of an EOB identifies you (your name and member ID), the date of service, and which provider submitted the claim. Always confirm these match your actual visit. Wrong member ID or wrong provider is a red flag for fraud.
+
+The middle section breaks down the claim line by line. You'll see a "billed amount" — what the provider charged — followed by an "allowed amount" — the maximum your insurance agreed to pay under their contract with the provider. The difference between billed and allowed is simply written off; you don't owe it. Then the EOB shows how much insurance paid, and how much goes toward your deductible, copay, or coinsurance.
+
+At the bottom you'll see a "your responsibility" total. This is what you may owe the provider. I say "may" because the EOB is not a bill — the provider will send a separate bill. Wait for that bill before paying anything.
+
+Look at the "reason codes" column, usually a series of numbers or letters. Each code explains why a claim was denied or adjusted. Common codes include "service not covered," "out-of-network provider," or "deductible not met." If you get a denial you don't agree with, you have the right to appeal — the EOB must by law explain how to do this.
+
+Keep every EOB for at least one year and match them against provider bills. Billing errors are surprisingly common. If you received a service and there's no corresponding EOB within four to six weeks, call your insurance company.`,
+    steps: [
+      {
+        title: `Find your EOB`,
+        content: `EOBs arrive by mail or through your insurance company's member portal online. Log in at your insurer's website (the address is on your insurance card), click Member Portal or MyAccount, and look for Explanation of Benefits or Claims History. You can also call the member services number on your insurance card and ask them to mail you a copy.`,
+      },
+      {
+        title: `Confirm the basics at the top`,
+        content: `Check your name, member ID, and date of service. Make sure the provider name matches who you actually saw. If any of these are wrong, call your insurance company immediately — a wrong member ID can mean someone else's claim was filed under your coverage, which is fraud.`,
+      },
+      {
+        title: `Read the allowed amount vs. billed amount`,
+        content: `The billed amount is what the provider charged. The allowed amount is the negotiated rate your insurance has with that provider. If you used an in-network provider, the difference between billed and allowed is simply written off — you don't owe it. If the allowed amount equals the billed amount, your provider is out-of-network, which means you may owe more.`,
+      },
+      {
+        title: `Find what insurance paid and what you owe`,
+        content: `After the allowed amount, the EOB shows what insurance paid. The remaining balance — labeled something like "member responsibility" or "your cost" — goes toward your deductible, copay, or coinsurance. This is the maximum you'll be asked to pay. Wait for a separate bill from the provider before sending any money.`,
+      },
+      {
+        title: `Check for denial reason codes`,
+        content: `If part of the claim was denied, look for a reason code or remark code in the right-hand column. Common ones: CO-4 means the service code didn't match the diagnosis; CO-97 means the service is considered included in another service already paid; OA-23 means the payment is the amount defined by the contract. Each denial code has instructions on whether you can appeal and how.`,
+      },
+      {
+        title: `File an appeal if something seems wrong`,
+        content: `If a covered service was denied or your share seems too high, you can appeal. Your EOB must list the appeals process. Gather supporting documents: the EOB, the provider's bill, and any notes from the visit. You typically have 180 days from the denial to file a first-level appeal. If denied again, you can request an external review by an independent organization.`,
+      },
+    ],
+    tip: `Quick Tip — Never pay a medical bill before you receive the matching EOB. The provider bill might show more than you actually owe. Match both documents to make sure the numbers agree.`,
+  },
+  {
+    slug: `bank-text-alerts-setup`,
+    title: `How to Set Up Text Alerts from Your Bank`,
+    excerpt: `Get a text message any time money moves in or out of your account — the fastest way to catch fraud or an unexpected charge before it becomes a big problem.`,
+    category: `safety`,
+    tags: [`bank alerts`, `fraud protection`, `online banking`, `text messages`, `security`],
+    readTime: `6 min`,
+    thumbnailEmoji: `🏦`,
+    publishedAt: `2026-04-21`,
+    difficulty: `Beginner`,
+    body: `Bank text alerts are one of the simplest and most effective fraud-protection tools available — and most banks offer them for free. When you turn them on, your bank sends you a text message any time there is activity on your account: a purchase over a certain dollar amount, a new login from an unknown device, a low balance, a large ATM withdrawal, or any transaction at all. You find out in seconds instead of discovering a problem weeks later when your statement arrives.
+
+Seniors are among the most common targets of bank fraud and identity theft, and catching it early is everything. If someone makes an unauthorized purchase on your debit card and you report it within two business days, federal law limits your liability to $50. Wait more than 60 days and you could be on the hook for the full amount. Text alerts give you the fastest possible notice.
+
+Every major US bank — Chase, Bank of America, Wells Fargo, Citibank, U.S. Bank, Capital One, and most credit unions — offers account alerts through their mobile app or website. The setup takes about five minutes and is done entirely in your account settings.
+
+The most useful alert to turn on first is the transaction alert with a low dollar threshold. Set it to $1 so you're notified of every single purchase. That way, if someone charges even a small test transaction (which fraudsters often do to verify a stolen card before making big purchases), you see it immediately.
+
+Low-balance alerts are also worth setting up. Pick an amount below which you'd want to know — say $200 — and the bank will warn you before you accidentally overdraft. Overdraft fees average $35 per incident at most banks.
+
+Login alerts are the third must-have. Any time someone logs into your online banking from a new browser or device, you get a text. If it wasn't you, you can change your password immediately before any damage is done.`,
+    steps: [
+      {
+        title: `Log in to your bank's website or mobile app`,
+        content: `Open your bank's app on your phone or go to your bank's website (the address is printed on your debit card or on the back of your bank statement). Log in with your username and password. If you don't have online banking set up yet, look for a "Register" or "Enroll" button on the login page and follow the steps — you'll need your account number and the last four digits of your Social Security number.`,
+      },
+      {
+        title: `Find Account Alerts or Notifications settings`,
+        content: `Once logged in, look for a gear icon (settings), your profile name, or a menu labeled something like "Account Settings," "Preferences," or "Alerts & Notifications." In mobile apps, this is often under the three-line menu in the top corner. The exact location varies by bank, but search for "alerts" in the app's search bar if you can't find it.`,
+      },
+      {
+        title: `Turn on transaction alerts with a $1 threshold`,
+        content: `Look for "Transaction Alerts," "Purchase Alerts," or "Debit Card Alerts." Set the threshold to $1.00 — this means you'll get a text for every single transaction. If you'd rather not receive that many messages, set it to $25. Make sure you select "Text Message" or "SMS" as the delivery method (not just email, which you might not check quickly).`,
+      },
+      {
+        title: `Enable low balance warnings`,
+        content: `Find "Low Balance Alert" or "Balance Alert." Enter an amount — $100, $200, or whatever feels like a warning sign for you. The bank will send a text when your balance falls below that number. This helps you avoid overdraft fees, which can add up fast.`,
+      },
+      {
+        title: `Turn on login or new device alerts`,
+        content: `Look for "Login Alerts," "Security Alerts," or "New Device Alerts." Turning this on means you'll get a text whenever someone logs into your account from a browser or device that hasn't been used before. This is a direct early warning system for account takeover attempts.`,
+      },
+      {
+        title: `Confirm your phone number and save`,
+        content: `The alerts go to the mobile number on file with your bank. Verify it is correct on the same settings page — look for "Contact Information" or "Profile." After enabling each alert type, click Save or Confirm. Some banks ask you to confirm by entering a code they text to your phone.`,
+      },
+    ],
+    tip: `Quick Tip — If you ever get a bank alert and you don't recognize the transaction, don't call the phone number in the text. Instead, call the number printed on the back of your debit or credit card, or go directly to your bank's official website.`,
+  },
+  {
+    slug: `package-shows-delivered-missing`,
+    title: `What to Do When Your Package Shows Delivered But Wasn't There`,
+    excerpt: `Step-by-step guide for tracking down a missing package that the carrier marked as delivered — including how to file a claim and get a replacement or refund.`,
+    category: `essential-skills`,
+    tags: [`package delivery`, `UPS`, `FedEx`, `USPS`, `Amazon`, `missing package`],
+    readTime: `8 min`,
+    thumbnailEmoji: `📦`,
+    publishedAt: `2026-04-21`,
+    difficulty: `Beginner`,
+    body: `Few things are more frustrating than watching your tracking app switch to "Delivered" — then going to your door and finding nothing there. This happens more often than you'd think, and in most cases your package isn't stolen; it was left at the wrong address, delivered to a neighbor, or tucked somewhere out of the way. Here is a calm, step-by-step plan for tracking it down.
+
+First, give it a little time. Carriers sometimes update tracking before the driver physically arrives. If it just turned to "Delivered," wait 30 to 60 minutes before starting your search.
+
+Next, look everywhere around your property: front door, back door, side gate, garage, porch chair, between bushes, behind a potted plant. Carriers often tuck packages out of view specifically so they aren't obvious to passersby. Check with any neighbors — drivers sometimes leave packages at a neighbor's door by mistake, especially in apartments, condos, or townhomes where unit numbers can look similar.
+
+If you live in an apartment complex, check the package locker or leasing office. Many buildings now have Amazon Hub lockers or a front desk that signs for deliveries.
+
+If none of that works, open the tracking page and look for a delivery photo. UPS, FedEx, and Amazon now routinely take a photo of where they left the package. That photo might show a neighbor's porch, a building lobby, or even the wrong address.
+
+Once you've done your physical search, it's time to contact the carrier and the retailer. Carriers can file a trace on a package — they contact the driver who made the delivery and try to recover it. This usually happens within 24 to 48 hours. In parallel, contact the retailer (Amazon, Walmart, Target, etc.) directly. Most large retailers will reship or refund a missing package without requiring you to first resolve the carrier investigation.`,
+    steps: [
+      {
+        title: `Wait 30–60 minutes, then search your property`,
+        content: `Carriers sometimes scan packages as delivered slightly before they physically arrive. Wait a short while, then check every spot around your home: front door, back door, side entrance, garage, behind planters, under outdoor furniture, and inside any mailbox or package box. Also ask any household members if they brought it inside already.`,
+      },
+      {
+        title: `Check with neighbors and your building`,
+        content: `Walk to two or three neighboring addresses — especially any with a similar house or unit number. Ask if they received an extra package. If you live in an apartment, check the leasing office, front desk, mail room, and any automated package lockers (often labeled Amazon Hub, Luxer One, or Package Concierge).`,
+      },
+      {
+        title: `Look for a delivery photo in the tracking app`,
+        content: `Open the tracking page for your package. UPS (UPS.com), FedEx (FedEx.com), Amazon (Your Orders), and USPS (USPS.com) often post a photo of where the package was left. The photo might show a different porch, a lobby, or a package locker — which tells you exactly where to look.`,
+      },
+      {
+        title: `Contact the carrier to open a package trace`,
+        content: `Call or chat with the carrier: UPS (1-800-742-5877), FedEx (1-800-463-3339), USPS (1-800-275-8777), or your regional carrier. Give them the tracking number and explain the package is missing. They'll open a "package trace" and contact the delivery driver, usually within 1 to 2 business days. Get a trace or case number for your records.`,
+      },
+      {
+        title: `Contact the retailer for a reship or refund`,
+        content: `Don't wait for the carrier investigation to conclude. Open Amazon, Walmart, Target, or wherever you ordered from. Go to Your Orders, find the item, and click "Problem with Order" or "Where's My Stuff." Most large retailers will offer a free reship or a full refund for a missing package — often without even requiring you to file a carrier claim first.`,
+      },
+      {
+        title: `File a police report if you suspect theft`,
+        content: `If you have video footage showing your package was stolen off the porch, or if multiple packages have gone missing, file a police report with your local non-emergency line (not 911). A police report number can be required by some carriers or insurance companies for larger claim amounts. It also helps local authorities track a pattern of porch theft in your neighborhood.`,
+      },
+    ],
+    tip: `Quick Tip — Most missing packages are found within 48 hours, either at a neighbor's address or signed for at the building office. Before calling anyone, do a full physical search — it saves time and stress.`,
+  },
+  {
+    slug: `fake-customer-service-numbers`,
+    title: `How to Spot Fake Customer Service Numbers Online`,
+    excerpt: `Scammers pay to put fake phone numbers at the top of search results. Learn how to find the real customer service number for any company — and avoid a costly mistake.`,
+    category: `safety`,
+    tags: [`scams`, `customer service`, `phone scams`, `online safety`, `fraud`],
+    readTime: `6 min`,
+    thumbnailEmoji: `📞`,
+    publishedAt: `2026-04-21`,
+    difficulty: `Beginner`,
+    body: `Here is a trick scammers use that has cost people thousands of dollars: they pay for Google ads showing a fake phone number at the top of search results when you type "Amazon customer service" or "Microsoft support number." The ad looks legitimate — it may even show the company's real name and logo. But the number connects you to a scammer posing as a customer service agent.
+
+Once you call, the scammer builds trust, tells you there's a serious problem with your account, and walks you toward sending gift cards, sharing your credit card number, or giving remote access to your computer. By the time you realize something is wrong, money is gone.
+
+This scam is called "tech support fraud," and the FBI reports it costs seniors in the US over $800 million per year. The good news is that avoiding it comes down to one simple habit: never call a phone number you found through a search engine. Instead, always get the number directly from the company's official website — by typing the web address yourself — or from the paperwork that came with the product.
+
+Every major company publishes its real support contact information at the bottom of their official website or on your purchase confirmation email. Amazon support is at amazon.com/help. Apple support is at apple.com/support. Microsoft support is at support.microsoft.com. Google support is at support.google.com. Use those pages, not Google search results.
+
+The same rule applies to phone numbers you see in pop-up messages, emails, or text messages. Legitimate companies do not call or text you out of the blue saying your account has a problem and demanding you call a number right now. That is always a scam.`,
+    steps: [
+      {
+        title: `Never search for a company's phone number in Google`,
+        content: `When you need customer support, don't type "Amazon phone number" or "Apple support number" into Google. Scammers buy ads that place fake numbers at the top of these results. Even results that look official — with the company name and logo — may lead to a scammer.`,
+      },
+      {
+        title: `Go directly to the company's official website`,
+        content: `Type the company's website address directly into your browser address bar — not the search box. Examples: amazon.com, apple.com, microsoft.com, bestbuy.com. Then find a "Contact Us," "Help," or "Support" link, usually at the bottom of the page. The phone number or chat option listed there is the real one.`,
+      },
+      {
+        title: `Use the phone number printed on your product or receipt`,
+        content: `The safest source of all is the physical paperwork. Look on the back of your device, on the box it came in, on your purchase receipt or order confirmation email, or on your subscription billing statement. These are real, verified numbers that were printed before you ever encountered a scammer.`,
+      },
+      {
+        title: `Recognize the signs that you've reached a fake number`,
+        content: `Real customer service agents will never: ask you to buy gift cards to pay a fee or resolve a problem; ask for remote access to your computer to "fix" an issue you didn't report; ask for your full Social Security number, credit card number, or bank PIN to verify your identity over the phone. If any of these happen, hang up immediately.`,
+      },
+      {
+        title: `Report the fake number`,
+        content: `If you found a fake number in a Google ad, you can report it: scroll to the ad in your search results, click the three-dot menu next to it, and select "Report ad." You can also report the scammer to the FTC at reportfraud.ftc.gov. This helps get the fake numbers removed faster and protects other people from the same trap.`,
+      },
+    ],
+    tip: `Quick Tip — Bookmark the support pages for companies you deal with regularly: amazon.com/help, apple.com/support, support.microsoft.com. Having them bookmarked means you'll never need to search for a number in a rush.`,
+  },
+  {
+    slug: `google-chrome-setup-seniors`,
+    title: `How to Set Up Google Chrome for Easier Reading and Browsing`,
+    excerpt: `Adjust Chrome's text size, zoom, and safety settings so every website is easier to read and safer to use — takes about 10 minutes and makes a big difference.`,
+    category: `essential-skills`,
+    tags: [`Google Chrome`, `accessibility`, `large text`, `browser settings`, `seniors`],
+    readTime: `8 min`,
+    thumbnailEmoji: `🌐`,
+    publishedAt: `2026-04-21`,
+    difficulty: `Beginner`,
+    body: `Google Chrome is the most popular web browser in the United States, and it comes with a handful of settings that can make a real difference for anyone who struggles with small text or wants a safer browsing experience. Out of the box, Chrome uses a standard font size that works well on big desktop monitors but can feel too small on a laptop or tablet. A few minutes of adjusting settings can make every website clearer and more comfortable.
+
+The most impactful change is simply increasing the default zoom level. Chrome lets you set a global zoom — meaning every website loads at a larger size automatically. You can also increase the font size independently, so text is larger even on websites that try to use small fonts. These two settings together transform the browsing experience for most people who find reading websites tiring.
+
+Chrome also has a built-in safety feature called Safe Browsing that warns you before you visit a dangerous website. There are three levels: standard, enhanced, and a basic version. Turning on Enhanced Safe Browsing gives you the fastest possible warning before you accidentally click on a phishing or malware site — it's the setting Google recommends.
+
+Two more settings worth adjusting: turn on the pop-up blocker (it's on by default, but worth confirming) and consider turning off location sharing for websites you don't trust. Many websites ask for your location — most don't need it for anything useful. A setting called "Ask before accessing" means websites have to request permission each time rather than getting it automatically.
+
+Finally, Chrome has a feature called Reading Mode that strips away ads, sidebars, and clutter from news articles, showing you just the text and images. It's available through the Reader Mode button or via an extension from the Chrome Web Store.`,
+    steps: [
+      {
+        title: `Open Chrome Settings`,
+        content: `In Chrome, click the three vertical dots in the top right corner of the browser window (it looks like ⋮). In the menu that drops down, click Settings. This opens the Chrome Settings page. Everything you'll adjust is in here.`,
+      },
+      {
+        title: `Increase the page zoom for all websites`,
+        content: `On the Settings page, look for the Appearance section (it's near the top). Find Page Zoom and click the dropdown — it probably says 100%. Change it to 110% or 125% to make all websites load at a larger size. If you're using a tablet or have any vision difficulty, 125% is a good starting point. You can always use Ctrl + Plus (Windows) or Cmd + Plus (Mac) on any individual website to zoom in further.`,
+      },
+      {
+        title: `Make the font size larger`,
+        content: `Still in the Appearance section, find Font Size and change it from Medium to Large. You can also click Customize Fonts to pick your preferred reading font and minimum font size. Choosing a font like Arial or Georgia and setting the minimum size to 14 or 16 makes text much easier to read across most websites.`,
+      },
+      {
+        title: `Turn on Enhanced Safe Browsing`,
+        content: `In the Settings search bar at the top, type "Safe Browsing." Click the Privacy and Security section, then click Security. Under Safe Browsing, select Enhanced Protection. This means Chrome checks every site you visit and every file you download against Google's constantly updated list of dangerous websites — in real time.`,
+      },
+      {
+        title: `Check your pop-up and location settings`,
+        content: `In Settings, go to Privacy and Security, then Site Settings. Under Permissions, check Pop-ups and Redirects — it should say Blocked. Also click Location — change it to "Sites can ask for your location" rather than "Allowed." This means websites have to ask permission before getting your location, and you can say no.`,
+      },
+      {
+        title: `Enable Reader Mode for article pages`,
+        content: `When reading a long news article, look for a small book-page icon at the right end of the address bar — that's Chrome's Reading Mode button. Click it to strip away ads and sidebars and show just the article text. If you don't see the button, you can enable it by going to chrome://flags in the address bar, searching for "Reading Mode," and setting it to Enabled, then restarting Chrome.`,
+      },
+    ],
+    tip: `Quick Tip — To quickly zoom in on any single webpage, hold the Ctrl key (Windows) or Cmd key (Mac) and press the Plus key. To zoom back out, press Ctrl/Cmd + Minus. Ctrl/Cmd + 0 resets to the default size.`,
+  },
 ];
