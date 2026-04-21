@@ -28,6 +28,7 @@ import { useToast } from '@/hooks/use-toast';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ─────────────────────────────────────────── */
 type BillType = 'cable' | 'internet' | 'phone' | 'cell' | 'streaming';
@@ -365,14 +366,24 @@ export default function BillNegotiator() {
       </div>
 
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto text-lg">
-        <div className="flex items-center gap-3 mb-2 no-print">
-          <PhoneCall className="h-8 w-8 text-primary" aria-hidden="true" />
-          <h1 className="text-3xl md:text-4xl font-bold">Bill Negotiator</h1>
+        <div className="relative no-print">
+          <div className="absolute right-0 top-0">
+            <BookmarkButton
+              type="tool"
+              slug="bill-negotiator"
+              title="Bill Negotiator"
+              url="/tools/bill-negotiator"
+            />
+          </div>
+          <div className="flex items-center gap-3 mb-2 pr-14">
+            <PhoneCall className="h-8 w-8 text-primary" aria-hidden="true" />
+            <h1 className="text-3xl md:text-4xl font-bold">Bill Negotiator</h1>
+          </div>
+          <p className="text-muted-foreground mb-6">
+            Answer six quick questions and we&apos;ll write you a personalized phone script to lower your
+            cable, internet, phone, cell, or streaming bill.
+          </p>
         </div>
-        <p className="text-muted-foreground mb-6 no-print">
-          Answer six quick questions and we&apos;ll write you a personalized phone script to lower your
-          cable, internet, phone, cell, or streaming bill.
-        </p>
 
         {/* Stats strip */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 no-print">

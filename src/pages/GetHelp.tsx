@@ -321,7 +321,13 @@ const GetHelp = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div
+      className="min-h-screen flex flex-col relative"
+      style={{
+        background:
+          'radial-gradient(1000px 500px at 50% -10%, #F5CDCB 0%, rgba(245,205,203,0) 60%), radial-gradient(800px 400px at 90% 10%, #FBDAD9 0%, rgba(251,218,217,0) 60%), #FAF8F4',
+      }}
+    >
       <SEOHead
         title="Get Tech Help — TekSure"
         description="Reach out for free tech support or schedule a technician appointment. Real humans, no jargon."

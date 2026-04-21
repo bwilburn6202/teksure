@@ -304,8 +304,16 @@ export default function AccessibilityHub() {
 
       <main id="main-content" className="flex-1">
         {/* ── Hero ───────────────────────────────────────────────────────── */}
-        <section aria-labelledby="hero-heading" className="border-b border-border bg-primary/5">
-          <div className="container max-w-4xl text-center py-16 md:py-24">
+        <section aria-labelledby="hero-heading" className="relative overflow-hidden border-b border-border bg-gradient-to-b from-[#F7D9C5]/60 via-[#FBE7D9]/30 to-transparent">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 opacity-60"
+            style={{
+              background:
+                'radial-gradient(800px circle at 20% 0%, rgb(247 217 197 / 0.55), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(251 231 217 / 0.45), transparent 60%)',
+            }}
+          />
+          <div className="container relative max-w-4xl text-center py-16 md:py-24">
             <div
               className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/15 mb-6"
               aria-hidden="true"

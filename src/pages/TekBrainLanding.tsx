@@ -66,22 +66,22 @@ export default function TekBrainLanding() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-gradient-to-b from-amber-50 via-[#FAF8F4] to-white">
+      <main className="min-h-screen bg-gradient-to-b from-[#E1D4F0]/50 via-[#FAF8F4] to-white">
         {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
         <section
           aria-labelledby="tekbrain-hero-heading"
           className="relative overflow-hidden"
         >
-          {/* Soft radial glow — mirrors the homepage hero's warm top-light. */}
+          {/* Soft radial glow — mirrors the homepage hero's warm top-light, shifted to violet. */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-32 h-[480px] bg-[radial-gradient(1000px_480px_at_50%_0%,#FFE9C7_0%,rgba(255,233,199,0)_65%)]"
+            className="pointer-events-none absolute inset-x-0 -top-32 h-[480px] bg-[radial-gradient(1000px_480px_at_50%_0%,#E1D4F0_0%,rgba(225,212,240,0)_65%)]"
           />
 
           <div className="relative container max-w-4xl px-4 py-16 md:py-24 text-center">
             {/* Brand chip so the page feels like part of the TekSure family. */}
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white border border-amber-200 shadow-lg shadow-amber-200/30 mb-8">
-              <Brain className="h-10 w-10 text-amber-600" aria-hidden="true" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white border border-violet-200 shadow-lg shadow-violet-200/30 mb-8">
+              <Brain className="h-10 w-10 text-violet-600" aria-hidden="true" />
             </div>
 
             <h1

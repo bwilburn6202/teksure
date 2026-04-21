@@ -12,6 +12,7 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ───────────────────────────────── */
 type Relationship = 'parent' | 'grandparent' | 'spouse' | 'myself';
@@ -277,20 +278,30 @@ export default function FamilyTechPlanner() {
       <Navbar />
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto px-4">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <Users className="h-7 w-7 text-primary" />
+        <div className="relative">
+          <div className="absolute right-0 top-0">
+            <BookmarkButton
+              type="tool"
+              slug="family-tech-planner"
+              title="Family Tech Planner"
+              url="/tools/family-tech-planner"
+            />
           </div>
-          <div>
-            <h1 className="text-3xl sm:text-4xl font-bold">Family Tech Planner</h1>
-            <p className="text-sm text-muted-foreground">For families organizing tech support for aging parents</p>
+          <div className="flex items-center gap-3 mb-3 pr-14">
+            <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Users className="h-7 w-7 text-primary" />
+            </div>
+            <div>
+              <h1 className="text-3xl sm:text-4xl font-bold">Family Tech Planner</h1>
+              <p className="text-sm text-muted-foreground">For families organizing tech support for aging parents</p>
+            </div>
           </div>
+          <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+            Helping an older family member with technology can feel like a lot. This planner walks you through a few simple
+            questions and builds a personalized plan — setup checklist, scam protection, remote help, and gentle red flags
+            to watch for. There are no wrong answers, and you can always come back and redo it.
+          </p>
         </div>
-        <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-          Helping an older family member with technology can feel like a lot. This planner walks you through a few simple
-          questions and builds a personalized plan — setup checklist, scam protection, remote help, and gentle red flags
-          to watch for. There are no wrong answers, and you can always come back and redo it.
-        </p>
 
         {/* Progress */}
         {step < TOTAL_STEPS && (

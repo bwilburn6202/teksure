@@ -6,13 +6,13 @@ import {
   Heart,
   Lightbulb,
   MessageCircle,
-  Search,
   ShieldCheck,
   Smartphone,
   Sparkles,
   Wifi,
 } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
+import { Navbar } from '@/components/layout/Navbar';
 import { guides } from '@/data/guides';
 
 /**
@@ -21,20 +21,6 @@ import { guides } from '@/data/guides';
  * palette, clear headline, two prominent CTAs, and trust indicators.
  * See DESIGN.md + teksure-next-gen-mockup.html for the design direction.
  */
-
-const navLinks = [
-  { label: 'Guides', to: '/guides' },
-  { label: 'Tools', to: '/tools' },
-  { label: 'Safety', to: '/scam-defense' },
-  { label: 'Get Help', to: '/get-help' },
-  { label: 'Resources', to: '/quick-fixes' },
-];
-
-const openSearchModal = () => {
-  document.dispatchEvent(
-    new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true })
-  );
-};
 
 const Index = () => {
   return (
@@ -105,17 +91,20 @@ const Index = () => {
           padding: 14px 24px;
         }
         .teksure-home .logo-link {
-          display: inline-flex; align-items: center; gap: 10px;
+          display: inline-flex; align-items: center;
           text-decoration: none; color: #1A1A1A;
-          font-weight: 800; font-size: 22px;
-          letter-spacing: -0.02em;
+          line-height: 0;
         }
-        .teksure-home .logo-mark {
-          width: 40px; height: 40px; border-radius: 12px;
-          background: #2A5FCC; color: #fff;
-          display: grid; place-items: center;
-          font-weight: 800; font-size: 18px;
-          box-shadow: 0 4px 12px rgba(42,95,204,0.25);
+        .teksure-home .logo-link img {
+          height: 36px; width: auto; display: block;
+        }
+        /* Hero brand mark — prominent stacked logo above the headline */
+        .teksure-home .hero-logo {
+          display: flex; justify-content: center;
+          margin: 0 auto 28px;
+        }
+        .teksure-home .hero-logo img {
+          width: 200px; height: auto; display: block;
         }
         .teksure-home .nav-main {
           display: flex; gap: 2px; margin-left: auto;
@@ -314,38 +303,25 @@ const Index = () => {
 
       <a href="#main-content" className="skip-link">Skip to main content</a>
 
-      <header className="top">
-        <div className="top-row">
-          <Link to="/" aria-label="TekSure home" className="logo-link">
-            <span className="logo-mark" aria-hidden="true">T</span>
-            TekSure
-          </Link>
-
-          <nav className="nav-main" aria-label="Primary">
-            {navLinks.map((l) => (
-              <Link key={l.to} to={l.to} className="nav-link">
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-
-          <button
-            type="button"
-            className="nav-search"
-            onClick={openSearchModal}
-            aria-label="Open search"
-          >
-            <Search size={16} strokeWidth={2} aria-hidden="true" />
-            Search
-            <kbd>⌘K</kbd>
-          </button>
-
-          <Link to="/signup" className="nav-cta">Get Started</Link>
-        </div>
-      </header>
+      {/*
+        Universal floating glass-bubble navbar.
+        Replaces the old flat cream top bar — shared across every page now.
+      */}
+      <Navbar />
 
       <main id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
         <section className="hero" aria-labelledby="hero-heading">
+          {/* Prominent brand mark — ~200px wide stacked logo above the headline */}
+          <div className="hero-logo">
+            <img
+              src="/teksure-logo-stacked.svg"
+              alt="TekSure"
+              width={200}
+              height={119}
+              fetchPriority="high"
+            />
+          </div>
+
           <span className="hero-eyebrow">
             <span className="eyebrow-dot" aria-hidden="true" />
             Free tech help · No signup required

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -292,12 +293,20 @@ export default function DigitalFootprintScanner() {
       <main className="min-h-screen bg-background">
         {/* ── Header ──────────────────────────── */}
         <section className="border-b border-border bg-muted/30">
-          <div className="container py-10 md:py-14">
+          <div className="container py-10 md:py-14 relative">
+            <div className="absolute top-6 right-6">
+              <BookmarkButton
+                type="tool"
+                slug="digital-footprint-scanner"
+                title="Digital Footprint Scanner"
+                url="/tools/digital-footprint-scanner"
+              />
+            </div>
             <div className="flex items-center gap-2 mb-4">
               <Fingerprint className="w-5 h-5 text-primary" />
               <Badge variant="outline" className="text-xs">Privacy</Badge>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Digital Footprint Scanner</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 pr-14">Digital Footprint Scanner</h1>
             <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
               This guided checklist walks you through checking what personal information is publicly
               available about you online — and shows you how to remove it. Work through each section

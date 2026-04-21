@@ -63,6 +63,7 @@ export function Footer() {
         { to: '/setup', label: 'Setup Wizard' },
         { to: '/book', label: 'Book Help' },
         { to: '/tools', label: 'Find a Tool' },
+        { to: '/glossary', label: 'Tech Glossary A–Z' },
       ],
     },
     {
@@ -73,6 +74,7 @@ export function Footer() {
         { to: '/caregiver-hub', label: 'Caregiver Resources' },
         { to: '/caregiver', label: "Caregiver's Guide" },
         { to: '/accessibility', label: 'Accessibility Hub' },
+        { to: '/stories', label: 'Real Stories' },
       ],
     },
     {
@@ -82,6 +84,7 @@ export function Footer() {
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
         { to: '/technicians', label: 'Book a technician' },
         { to: '/book', label: 'Schedule a session' },
+        { to: '/faq', label: 'FAQ' },
         { to: '/privacy', label: 'Privacy Policy' },
         { to: '/privacy', label: 'Terms of Use' },
       ],
@@ -142,13 +145,24 @@ export function Footer() {
 
       {/* Main footer body */}
       <div className="container pb-10">
-        {/* Brand */}
+        {/* Brand — horizontal wordmark, ~180px wide for footer consistency */}
         <div className="mb-10 max-w-md">
           <Link to="/" className="inline-block mb-3" aria-label="TekSure home">
             <img
-              src="/teksure-logo-stacked.svg"
+              src="/teksure-logo.svg"
               alt="TekSure"
-              className="h-16 w-auto dark:brightness-0 dark:invert"
+              width={183}
+              height={40}
+              className="h-10 w-auto block dark:hidden"
+              loading="lazy"
+            />
+            <img
+              src="/teksure-logo-white.svg"
+              alt=""
+              aria-hidden="true"
+              width={183}
+              height={40}
+              className="h-10 w-auto hidden dark:block"
               loading="lazy"
             />
           </Link>
@@ -311,10 +325,22 @@ export function Footer() {
               Terms
             </Link>
             <Link
+              to="/faq"
+              className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
+            >
+              FAQ
+            </Link>
+            <Link
               to="/roadmap"
               className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
             >
               Roadmap
+            </Link>
+            <Link
+              to="/site-index"
+              className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
+            >
+              Site Index
             </Link>
           </div>
         </div>

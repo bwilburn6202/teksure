@@ -33,20 +33,30 @@ import { HighContrastToggle } from '@/components/HighContrastToggle';
 import { LanguageToggle } from '@/components/LanguageToggle';
 
 /**
- * Warm, senior-friendly navbar matching the Index.tsx landing palette.
+ * TekSure universal navbar — glass-bubble floating pill.
  *
- * Palette:
- *   - Cream background #FAF8F4 (translucent) with backdrop blur
- *   - Warm border #E4DFD4
- *   - Navy accent #2A5FCC / hover #234FB0
- *   - Amber highlight #E87A2B for Easy Mode when active
+ * Design direction:
+ *   - The navbar is a single rounded-full pill that floats ABOVE the page,
+ *     never a flat edge-to-edge bar. A cream-tinted, frosted backdrop-blur
+ *     layer lets the page background (cream on home, sage on guides, etc.)
+ *     tint through while the bubble shape stays consistent site-wide.
+ *   - Subtle warm-white border + soft drop shadow lift it off the content.
+ *   - `position: fixed` keeps the pill pinned while scrolling. A spacer div
+ *     is rendered right after the header so page content doesn't slip beneath
+ *     it — consuming pages need no extra padding.
  *
- * Desktop layout (max 6 visible nav items, per senior-UX goal):
- *   Logo | Guides | Tools | Ask TekBrain (primary pill) | Book Help (outline pill)
- *        | — spacer — | Search | Easy Mode | Settings | Avatar / Sign In
+ * Palette (matches Index.tsx landing — cream + navy + amber):
+ *   - Cream glass:   rgba(250,248,244, 0.6) · blur 24px
+ *   - Warm edge:     rgba(255,255,255, 0.65)
+ *   - Navy accent:   #2A5FCC (hover #234FB0)
+ *   - Amber accent:  #E87A2B (Easy Mode active)
  *
- * Mobile: hamburger opens a right-side slide-out drawer with large tap
- * targets (≥ 52px), primary CTAs at top, and clear Easy Mode toggle.
+ * Desktop layout (left → right):
+ *   [Logo]  Guides  Tools  [Ask TekBrain*]  [Book Help]   ···
+ *                                           Search · Easy Mode · Settings · Avatar
+ *
+ * Mobile: hamburger opens a right-side slide-out drawer with ≥ 52px
+ * tap targets, primary CTAs on top, and a clear Easy Mode toggle.
  */
 export function Navbar() {
   const { user, logout } = useAuth();
@@ -93,21 +103,21 @@ export function Navbar() {
       new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true })
     );
 
-  // Desktop primary nav — just two quiet text links; the loud calls
-  // to action (TekBrain + Book Help) are handled by pills below.
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
+    { to: '/favorites', label: 'My Favorites' },
   ];
 
-  // Expanded set for the mobile drawer — users get more room to browse
-  // deep links without cluttering the top bar.
   const mobileBrowseLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
+    { to: '/favorites', label: 'My Favorites' },
+    { to: '/this-week', label: 'This Week' },
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
     { to: '/learn', label: 'Learning Paths' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
+    { to: '/glossary', label: 'Tech Glossary A–Z' },
     { to: '/videos', label: 'Video Tutorials' },
     { to: '/tech-help-near-me', label: 'Help Near Me' },
     { to: '/about', label: 'About TekSure' },
@@ -115,45 +125,58 @@ export function Navbar() {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Shared fragments for consistent look + focus states
+  // Shared focus ring — transparent offset reads cleanly over glass
+  // rather than painting a solid halo.
   const focusRing =
-    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5FCC] focus-visible:ring-offset-2 focus-visible:ring-offset-[#FAF8F4] dark:focus-visible:ring-offset-background';
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5FCC] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent';
 
+  // Quiet text link inside the glass pill.
   const navLinkCls =
-    `inline-flex items-center h-10 px-3.5 rounded-full text-[15px] font-semibold ` +
-    `text-[#1A1A1A] dark:text-white/85 ` +
-    `hover:text-[#2A5FCC] hover:bg-white dark:hover:bg-white/10 ` +
+    `inline-flex items-center h-11 px-4 rounded-full text-[15px] font-semibold ` +
+    `text-[#1A1A1A] dark:text-white/90 ` +
+    `hover:text-[#2A5FCC] hover:bg-white/70 dark:hover:bg-white/10 ` +
     `transition-colors ${focusRing}`;
 
   const navLinkActiveCls =
-    'text-[#2A5FCC] bg-white dark:bg-white/10 dark:text-white shadow-[0_2px_6px_rgba(0,0,0,0.04)]';
+    'text-[#2A5FCC] bg-white/80 dark:bg-white/15 dark:text-white shadow-[0_1px_3px_rgba(0,0,0,0.05)]';
 
   return (
     <>
+      {/* Floating glass-bubble pill — fixed, centered, above everything */}
       <header
         role="banner"
-        className="sticky top-0 z-50 w-full border-b border-[#E4DFD4] dark:border-white/10
-                   bg-[rgba(250,248,244,0.85)] dark:bg-[rgba(10,24,48,0.85)]
-                   backdrop-blur-md supports-[backdrop-filter]:bg-[rgba(250,248,244,0.72)]"
+        className="fixed top-3 sm:top-4 left-1/2 -translate-x-1/2 z-50
+                   w-[calc(100%-16px)] sm:w-[calc(100%-32px)] max-w-[1280px]
+                   pointer-events-none print:hidden"
       >
-        <div className="mx-auto flex max-w-[1280px] items-center gap-2 px-4 sm:px-6 h-16">
+        <div
+          className="pointer-events-auto flex items-center gap-1.5
+                     h-16 pl-3 pr-2 sm:pl-5 sm:pr-3
+                     rounded-full
+                     bg-[rgba(250,248,244,0.6)] dark:bg-[rgba(10,24,48,0.55)]
+                     supports-[backdrop-filter]:bg-[rgba(250,248,244,0.45)]
+                     supports-[backdrop-filter]:dark:bg-[rgba(10,24,48,0.4)]
+                     backdrop-blur-xl backdrop-saturate-150
+                     border border-white/65 dark:border-white/10
+                     shadow-[0_10px_40px_-12px_rgba(26,26,26,0.22),0_2px_6px_rgba(26,26,26,0.04)]"
+        >
           {/* Logo */}
           <Link
             to={user ? dashboardPath : '/'}
             aria-label="TekSure home"
-            className={`flex items-center shrink-0 mr-1 rounded-lg ${focusRing}`}
+            className={`flex items-center shrink-0 mr-1 rounded-full px-1 ${focusRing}`}
           >
             <img
               src="/teksure-logo.svg"
               alt="TekSure"
-              className="h-7 w-auto block dark:hidden"
+              className="h-8 w-auto block dark:hidden"
               fetchPriority="high"
             />
             <img
               src="/teksure-logo-white.svg"
               alt=""
               aria-hidden="true"
-              className="h-7 w-auto hidden dark:block"
+              className="h-8 w-auto hidden dark:block"
             />
           </Link>
 
@@ -174,9 +197,10 @@ export function Navbar() {
             <PreloadLink
               to="/brain"
               aria-current={isActive('/brain') ? 'page' : undefined}
-              className={`ml-2 inline-flex items-center gap-1.5 h-10 px-4 rounded-full text-[15px] font-bold
-                          bg-[#2A5FCC] text-white shadow-[0_2px_8px_rgba(42,95,204,0.28)]
-                          hover:bg-[#234FB0] hover:shadow-[0_6px_18px_rgba(42,95,204,0.4)]
+              className={`ml-1.5 inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[15px] font-bold
+                          bg-[#2A5FCC] text-white
+                          shadow-[0_4px_14px_rgba(42,95,204,0.35)]
+                          hover:bg-[#234FB0] hover:shadow-[0_8px_22px_rgba(42,95,204,0.45)]
                           hover:-translate-y-px transition-[transform,box-shadow,background-color] duration-150
                           motion-reduce:hover:transform-none ${focusRing}`}
             >
@@ -184,13 +208,13 @@ export function Navbar() {
               Ask TekBrain
             </PreloadLink>
 
-            {/* Book Help — secondary outline pill */}
+            {/* Book Help — glassy outline pill */}
             <PreloadLink
               to="/get-help"
               aria-current={isActive('/get-help') ? 'page' : undefined}
-              className={`ml-1 inline-flex items-center gap-1.5 h-10 px-4 rounded-full text-[15px] font-bold
-                          bg-white dark:bg-transparent border-2 border-[#2A5FCC] text-[#2A5FCC] dark:text-white
-                          hover:bg-[#F0F5FF] dark:hover:bg-white/10
+              className={`ml-1 inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[15px] font-bold
+                          bg-white/60 dark:bg-white/10 border-2 border-[#2A5FCC] text-[#2A5FCC] dark:text-white
+                          hover:bg-white/95 dark:hover:bg-white/15
                           hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(42,95,204,0.15)]
                           transition-[transform,box-shadow,background-color] duration-150
                           motion-reduce:hover:transform-none ${focusRing}`}
@@ -201,15 +225,16 @@ export function Navbar() {
           </nav>
 
           {/* Right utilities (desktop) */}
-          <div className="ml-auto hidden md:flex items-center gap-1.5">
+          <div className="ml-auto hidden md:flex items-center gap-1">
             {/* Search */}
             <button
               onClick={openSearch}
               aria-label="Open search"
-              className={`inline-flex items-center justify-center h-10 w-10 rounded-full
-                          bg-white dark:bg-white/5 border border-[#E4DFD4] dark:border-white/10
-                          text-[#1A1A1A] dark:text-white/80
-                          hover:text-[#2A5FCC] hover:border-[#2A5FCC] dark:hover:text-white dark:hover:border-white/30
+              className={`inline-flex items-center justify-center h-11 w-11 rounded-full
+                          bg-white/60 dark:bg-white/10 border border-white/80 dark:border-white/15
+                          text-[#1A1A1A] dark:text-white/90
+                          hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC]
+                          dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30
                           transition-colors ${focusRing}`}
             >
               <Search className="h-[18px] w-[18px]" aria-hidden="true" />
@@ -224,11 +249,11 @@ export function Navbar() {
                   ? 'Turn off Easy Mode'
                   : 'Turn on Easy Mode (larger text and simpler layout)'
               }
-              className={`inline-flex items-center gap-2 h-10 px-4 rounded-full text-[14px] font-bold border-2
+              className={`inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[14px] font-bold border-2
                           transition-colors ${focusRing}
                           ${seniorMode
-                            ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F] hover:border-[#C6661F]'
-                            : 'bg-white dark:bg-white/5 border-[#E4DFD4] dark:border-white/10 text-[#1A1A1A] dark:text-white/90 hover:border-[#E87A2B] hover:text-[#B35A00] dark:hover:text-[#E87A2B]'
+                            ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F] hover:border-[#C6661F] shadow-[0_4px_12px_rgba(232,122,43,0.35)]'
+                            : 'bg-white/60 dark:bg-white/10 border-white/80 dark:border-white/15 text-[#1A1A1A] dark:text-white/90 hover:border-[#E87A2B] hover:text-[#B35A00] dark:hover:text-[#E87A2B]'
                           }`}
             >
               <UserCog className="h-4 w-4" aria-hidden="true" />
@@ -240,10 +265,11 @@ export function Navbar() {
               <PopoverTrigger asChild>
                 <button
                   aria-label="Display and accessibility settings"
-                  className={`inline-flex items-center justify-center h-10 w-10 rounded-full
-                              bg-white dark:bg-white/5 border border-[#E4DFD4] dark:border-white/10
-                              text-[#1A1A1A] dark:text-white/80
-                              hover:text-[#2A5FCC] hover:border-[#2A5FCC] dark:hover:text-white dark:hover:border-white/30
+                  className={`inline-flex items-center justify-center h-11 w-11 rounded-full
+                              bg-white/60 dark:bg-white/10 border border-white/80 dark:border-white/15
+                              text-[#1A1A1A] dark:text-white/90
+                              hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC]
+                              dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30
                               transition-colors ${focusRing}`}
                 >
                   <Settings className="h-4 w-4" aria-hidden="true" />
@@ -276,11 +302,12 @@ export function Navbar() {
                 <DropdownMenuTrigger asChild>
                   <button
                     aria-label={`Account menu for ${user.fullName}`}
-                    className={`ml-0.5 h-10 w-10 rounded-full border border-[#E4DFD4] dark:border-white/10
-                                bg-white dark:bg-white/5 flex items-center justify-center
-                                hover:border-[#2A5FCC] dark:hover:border-white/30 transition-colors ${focusRing}`}
+                    className={`ml-0.5 h-11 w-11 rounded-full border border-white/80 dark:border-white/15
+                                bg-white/60 dark:bg-white/10 flex items-center justify-center
+                                hover:bg-white hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:border-white/30
+                                transition-colors ${focusRing}`}
                   >
-                    <Avatar className="h-8 w-8">
+                    <Avatar className="h-9 w-9">
                       <AvatarFallback className="bg-[#2A5FCC] text-white text-[11px] font-bold">
                         {initials}
                       </AvatarFallback>
@@ -319,9 +346,9 @@ export function Navbar() {
             ) : (
               <button
                 onClick={() => navigate('/login', { state: { from: location.pathname } })}
-                className={`ml-0.5 inline-flex items-center h-10 px-4 rounded-full text-[14px] font-semibold
+                className={`ml-0.5 inline-flex items-center h-11 px-4 rounded-full text-[14px] font-semibold
                             text-[#1A1A1A] dark:text-white/90
-                            hover:text-[#2A5FCC] hover:bg-white dark:hover:bg-white/10
+                            hover:bg-white/80 hover:text-[#2A5FCC] dark:hover:bg-white/15
                             transition-colors ${focusRing}`}
               >
                 Sign In
@@ -330,13 +357,13 @@ export function Navbar() {
           </div>
 
           {/* Mobile right utilities */}
-          <div className="ml-auto flex md:hidden items-center gap-1">
+          <div className="ml-auto flex md:hidden items-center gap-0.5">
             <button
               onClick={openSearch}
               aria-label="Open search"
               className={`inline-flex items-center justify-center h-11 w-11 rounded-full
                           text-[#1A1A1A] dark:text-white/90
-                          hover:text-[#2A5FCC] hover:bg-white dark:hover:bg-white/10
+                          hover:bg-white/70 dark:hover:bg-white/10
                           transition-colors ${focusRing}`}
             >
               <Search className="h-5 w-5" aria-hidden="true" />
@@ -347,7 +374,7 @@ export function Navbar() {
               aria-expanded={mobileMenuOpen}
               className={`inline-flex items-center justify-center h-11 w-11 rounded-full
                           text-[#1A1A1A] dark:text-white/90
-                          hover:text-[#2A5FCC] hover:bg-white dark:hover:bg-white/10
+                          hover:bg-white/70 dark:hover:bg-white/10
                           transition-colors ${focusRing}`}
             >
               <Menu className="h-5 w-5" aria-hidden="true" />
@@ -355,6 +382,13 @@ export function Navbar() {
           </div>
         </div>
       </header>
+
+      {/*
+        Spacer — since the pill is `position: fixed`, it doesn't reserve
+        layout space. We render a same-height sibling so page content lines
+        up below it on every page without extra per-page padding.
+      */}
+      <div aria-hidden="true" className="h-[80px] sm:h-[88px] print:hidden" />
 
       {/* Mobile slide-out drawer */}
       {mobileMenuOpen && (
@@ -436,8 +470,8 @@ export function Navbar() {
                 <Link
                   to="/brain"
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-xl text-lg font-bold
-                              bg-[#2A5FCC] text-white shadow-[0_2px_8px_rgba(42,95,204,0.28)]
+                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full text-lg font-bold
+                              bg-[#2A5FCC] text-white shadow-[0_4px_14px_rgba(42,95,204,0.35)]
                               hover:bg-[#234FB0] transition-colors ${focusRing}`}
                 >
                   <MessageCircle className="h-5 w-5" aria-hidden="true" />
@@ -446,7 +480,7 @@ export function Navbar() {
                 <Link
                   to="/get-help"
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-xl text-lg font-bold
+                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full text-lg font-bold
                               bg-white dark:bg-transparent border-2 border-[#2A5FCC]
                               text-[#2A5FCC] dark:text-white
                               hover:bg-[#F0F5FF] dark:hover:bg-white/10 transition-colors ${focusRing}`}
@@ -483,7 +517,7 @@ export function Navbar() {
               <button
                 onClick={toggleSeniorMode}
                 aria-pressed={seniorMode}
-                className={`w-full inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-xl
+                className={`w-full inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full
                             text-lg font-bold border-2 transition-colors mb-5 ${focusRing}
                             ${seniorMode
                               ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F]'

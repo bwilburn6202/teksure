@@ -13,6 +13,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
 import { ReportBrokenLink } from '@/components/ReportBrokenLink';
+import { BookmarkButton as SaveBookmarkButton } from '@/components/BookmarkButton';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -942,6 +943,19 @@ const GuideDetail = () => {
                     <ListenButton guide={guide} />
                     <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
                     <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
+                  </div>
+                  {/* Save to My Favorites — new unified bookmarks (guides + tools) */}
+                  <div className="mt-4 pt-4 border-t border-border flex items-center justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold leading-tight">Save for later</p>
+                      <p className="text-xs text-muted-foreground">Find it in My Favorites</p>
+                    </div>
+                    <SaveBookmarkButton
+                      type="guide"
+                      slug={guide.slug}
+                      title={guide.title}
+                      url={`/guides/${guide.slug}`}
+                    />
                   </div>
                 </CardContent>
               </Card>

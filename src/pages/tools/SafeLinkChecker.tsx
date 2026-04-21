@@ -23,6 +23,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ───────────────────────────────── */
 type RiskLevel = 'safe' | 'caution' | 'warning' | 'danger';
@@ -463,7 +464,15 @@ export default function SafeLinkChecker() {
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
 
         {/* Hero */}
-        <div className="text-center mb-10">
+        <div className="relative text-center mb-10">
+          <div className="absolute right-0 top-0">
+            <BookmarkButton
+              type="tool"
+              slug="safe-link-checker"
+              title="Safe Link Checker"
+              url="/tools/safe-link-checker"
+            />
+          </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-primary/10 text-primary mb-5">
             <ShieldCheck className="h-12 w-12" aria-hidden="true" />
           </div>

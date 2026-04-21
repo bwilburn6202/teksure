@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -523,12 +524,20 @@ export default function PhoneCleanupWizard() {
         <Navbar />
         <main className="min-h-screen bg-background">
           <section className="border-b border-border bg-muted/30">
-            <div className="container py-10 md:py-14">
+            <div className="container py-10 md:py-14 relative">
+              <div className="absolute top-6 right-6">
+                <BookmarkButton
+                  type="tool"
+                  slug="phone-cleanup"
+                  title="Phone Cleanup Wizard"
+                  url="/tools/phone-cleanup"
+                />
+              </div>
               <div className="flex items-center gap-2 mb-4">
                 <Smartphone className="w-5 h-5 text-primary" />
                 <Badge variant="outline" className="text-xs">Storage · Step-by-step</Badge>
               </div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-3">Phone Cleanup Wizard</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14">Phone Cleanup Wizard</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 &ldquo;Storage Almost Full&rdquo; notification again? We&apos;ll walk you through 7 simple steps to free up space on your phone. Works on iPhone or Android — nothing gets installed.
               </p>

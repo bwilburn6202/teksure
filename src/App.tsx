@@ -88,6 +88,8 @@ const TechJournal            = lazy(() => import("./pages/TechJournal"));
 const MyDevices              = lazy(() => import("./pages/MyDevices"));
 const Achievements           = lazy(() => import("./pages/Achievements"));
 const QuickReferenceCards    = lazy(() => import("./pages/QuickReferenceCards"));
+const ReferenceCards         = lazy(() => import("./pages/ReferenceCards"));
+const Checklists             = lazy(() => import("./pages/Checklists"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
 const MyRequests             = lazy(() => import("./pages/MyRequests"));
 const MyPath                 = lazy(() => import("./pages/MyPath"));
@@ -142,10 +144,12 @@ const Privacy                = lazy(() => import("./pages/Privacy"));
 const Changelog              = lazy(() => import("./pages/Changelog"));
 const GiftSession            = lazy(() => import("./pages/GiftSession"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
+const FAQ                    = lazy(() => import("./pages/FAQ"));
 
 // ── New tools (April 2026 expansion) ──
 const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
 const PrivacyAudit           = lazy(() => import("./pages/tools/PrivacyAudit"));
+const BrowserSafetyAudit     = lazy(() => import("./pages/tools/BrowserSafetyAudit"));
 const StreamingCalculator    = lazy(() => import("./pages/tools/StreamingCalculator"));
 const DataBreachChecker      = lazy(() => import("./pages/tools/DataBreachChecker"));
 const NewPhoneSetup          = lazy(() => import("./pages/tools/NewPhoneSetup"));
@@ -222,6 +226,7 @@ const RetirementTech         = lazy(() => import("./pages/RetirementTech"));
 const NewGrandparentTech     = lazy(() => import("./pages/NewGrandparentTech"));
 const AskTekSure             = lazy(() => import("./pages/AskTekSure"));
 const SuccessStories         = lazy(() => import("./pages/SuccessStories"));
+const Stories                = lazy(() => import("./pages/Stories"));
 const TechProblemOfWeek      = lazy(() => import("./pages/TechProblemOfWeek"));
 const UrlSafetyChecker       = lazy(() => import("./pages/tools/UrlSafetyChecker"));
 const QrCodeExplainer        = lazy(() => import("./pages/tools/QrCodeExplainer"));
@@ -256,9 +261,14 @@ const EobDecoder             = lazy(() => import("./pages/tools/EobDecoder"));
 const ReceiptScannerDemo     = lazy(() => import("./pages/tools/ReceiptScannerDemo"));
 const ChildAppSafetyChecker  = lazy(() => import("./pages/tools/ChildAppSafetyChecker"));
 const InternetSpeedDoctor    = lazy(() => import("./pages/tools/InternetSpeedDoctor"));
+const PhoneFirstAid          = lazy(() => import("./pages/tools/PhoneFirstAid"));
 const FamilyTechPlanner      = lazy(() => import("./pages/tools/FamilyTechPlanner"));
 const BillNegotiator         = lazy(() => import("./pages/tools/BillNegotiator"));
 const SafeLinkChecker        = lazy(() => import("./pages/tools/SafeLinkChecker"));
+const SeniorDiscountFinder   = lazy(() => import("./pages/tools/SeniorDiscountFinder"));
+const MedicarePlanChooser    = lazy(() => import("./pages/tools/MedicarePlanChooser"));
+const PracticeMode           = lazy(() => import("./pages/tools/PracticeMode"));
+const SiteIndex              = lazy(() => import("./pages/SiteIndex"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -301,17 +311,41 @@ function PageLoader() {
   }
 
   return (
-    <div className="min-h-screen bg-background" role="status" aria-live="polite" aria-label="Loading page">
-      <div className="h-14 border-b border-border" />
-      <div className="container max-w-4xl py-8 space-y-6">
-        <div className="h-9 w-3/4 bg-muted animate-pulse rounded" />
-        <div className="h-5 w-1/2 bg-muted animate-pulse rounded" />
-        <div className="space-y-4 pt-4">
-          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
-          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
-          <div className="h-32 w-full bg-muted animate-pulse rounded-xl" />
-        </div>
+    <div
+      className="min-h-screen bg-background flex flex-col items-center justify-center px-6"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading page"
+    >
+      <img
+        src="/teksure-logo.svg"
+        alt="TekSure"
+        width={183}
+        height={40}
+        className="h-10 w-auto mb-6 animate-pulse block dark:hidden"
+      />
+      <img
+        src="/teksure-logo-white.svg"
+        alt=""
+        aria-hidden="true"
+        width={183}
+        height={40}
+        className="h-10 w-auto mb-6 animate-pulse hidden dark:block"
+      />
+      <span className="sr-only">Loading…</span>
+      <div
+        aria-hidden="true"
+        className="h-1 w-40 overflow-hidden rounded-full bg-muted"
+      >
+        <div className="h-full w-1/2 bg-primary animate-[teksure-loader_1.2s_ease-in-out_infinite]" />
       </div>
+      <style>{`
+        @keyframes teksure-loader {
+          0%   { transform: translateX(-100%); }
+          50%  { transform: translateX(80%); }
+          100% { transform: translateX(200%); }
+        }
+      `}</style>
     </div>
   );
 }
@@ -511,6 +545,8 @@ const AppContent = () => {
           <Route path="/my-devices" element={<MyDevices />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/quick-reference-cards" element={<QuickReferenceCards />} />
+          <Route path="/reference-cards" element={<ReferenceCards />} />
+          <Route path="/checklists" element={<Checklists />} />
           <Route path="/get-help" element={<GetHelp />} />
           <Route path="/my-path" element={<MyPath />} />
           <Route path="/my-requests" element={<MyRequests />} />
@@ -567,6 +603,7 @@ const AppContent = () => {
           <Route path="/new-grandparent-tech" element={<NewGrandparentTech />} />
           <Route path="/ask" element={<AskTekSure />} />
           <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/stories" element={<Stories />} />
           <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
           <Route path="/tools/url-safety-checker" element={<UrlSafetyChecker />} />
           <Route path="/tools/qr-code-explainer" element={<QrCodeExplainer />} />
@@ -603,8 +640,11 @@ const AppContent = () => {
           <Route path="/tools/receipt-scanner-demo" element={<ReceiptScannerDemo />} />
           <Route path="/tools/child-app-safety-checker" element={<ChildAppSafetyChecker />} />
           <Route path="/tools/internet-speed-doctor" element={<InternetSpeedDoctor />} />
+          <Route path="/tools/phone-first-aid" element={<PhoneFirstAid />} />
           <Route path="/tools/family-tech-planner" element={<FamilyTechPlanner />} />
           <Route path="/tools/safe-link-checker" element={<SafeLinkChecker />} />
+          <Route path="/tools/senior-discount-finder" element={<SeniorDiscountFinder />} />
+          <Route path="/tools/medicare-plan-chooser" element={<MedicarePlanChooser />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
@@ -614,12 +654,14 @@ const AppContent = () => {
           <Route path="/changelog" element={<Changelog />} />
           <Route path="/gift-session" element={<GiftSession />} />
           <Route path="/memory" element={<MemoryDashboard />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
           <Route path="/tools/safe-call" element={<SafeCall />} />
 
           {/* ── New tools (April 2026 expansion) ── */}
           <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
           <Route path="/tools/privacy-audit" element={<PrivacyAudit />} />
+          <Route path="/tools/browser-safety-audit" element={<BrowserSafetyAudit />} />
           <Route path="/tools/streaming-calculator" element={<StreamingCalculator />} />
           <Route path="/tools/data-breach-checker" element={<DataBreachChecker />} />
           <Route path="/tools/new-phone-setup" element={<NewPhoneSetup />} />
@@ -651,6 +693,7 @@ const AppContent = () => {
           <Route path="/tools/wifi-password-finder" element={<WifiPasswordFinder />} />
           <Route path="/tools/tech-emergency-kit" element={<TechEmergencyKit />} />
           <Route path="/weekly-tips" element={<WeeklyTips />} />
+          <Route path="/this-week" element={<WeeklyTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
@@ -663,6 +706,12 @@ const AppContent = () => {
           <Route path="/tools/accessibility-needs-finder" element={<AccessibilityNeedsFinder />} />
           <Route path="/tools/file-organizer-guide" element={<FileOrganizerGuide />} />
           <Route path="/tools/scam-phone-database" element={<ScamPhoneDatabase />} />
+
+          {/* Practice Mode — simulated phone interface for fearless practice */}
+          <Route path="/tools/practice-mode" element={<PracticeMode />} />
+
+          {/* Site Index — human-readable sitemap of every page on TekSure */}
+          <Route path="/site-index" element={<SiteIndex />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

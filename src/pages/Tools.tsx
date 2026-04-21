@@ -22,7 +22,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 /* ── Types ─────────────────────────────────────────────── */
-type ToolCategory =
+export type ToolCategory =
   | 'All'
   | 'Safety'
   | 'Setup'
@@ -33,9 +33,9 @@ type ToolCategory =
   | 'Connectivity'
   | 'Accessibility';
 
-type Difficulty = 'Easy' | 'Medium' | 'Advanced';
+export type Difficulty = 'Easy' | 'Medium' | 'Advanced';
 
-interface Tool {
+export interface Tool {
   title: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
@@ -55,7 +55,7 @@ interface Tool {
  * difficulty + time are rough estimates so cards can
  * communicate effort at-a-glance. Tweak as needed.
  * ─────────────────────────────────────────────────────── */
-const tools: Tool[] = [
+export const tools: Tool[] = [
   /* ── Flagship / AI tools ─────────────────── */
   {
     title: 'TekBrain — Ask Anything',
@@ -1550,8 +1550,16 @@ export default function Tools() {
         </div>
 
         {/* ── Hero ─────────────────────────────── */}
-        <section className="border-b bg-gradient-to-b from-primary/[0.04] to-transparent">
-          <div className="container py-14 md:py-20">
+        <section className="relative overflow-hidden border-b bg-gradient-to-b from-[#D5E3F5]/60 via-[#E4EEF8]/30 to-transparent">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 opacity-60"
+            style={{
+              background:
+                'radial-gradient(800px circle at 20% 0%, rgb(213 227 245 / 0.55), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(195 215 236 / 0.4), transparent 60%)',
+            }}
+          />
+          <div className="container relative py-14 md:py-20">
             <div className="max-w-3xl mx-auto text-center">
               <Badge variant="secondary" className="mb-4 text-sm px-3 py-1">
                 <Sparkles className="h-3.5 w-3.5 mr-1.5" aria-hidden="true" />

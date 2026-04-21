@@ -418,24 +418,24 @@ const Guides = () => {
       {/* ══════════════════════════════════════════
             HERO
          ══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50/60 to-background dark:from-amber-950/40 dark:via-orange-950/20 dark:to-background border-b-2 border-border">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E8D4] via-[#E8F1E5]/60 to-background dark:from-emerald-950/40 dark:via-green-950/20 dark:to-background border-b-2 border-border">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 opacity-60"
           style={{
             background:
-              'radial-gradient(800px circle at 20% 0%, rgb(254 215 170 / 0.35), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(252 231 243 / 0.35), transparent 60%)',
+              'radial-gradient(800px circle at 20% 0%, rgb(216 232 212 / 0.6), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(195 221 199 / 0.45), transparent 60%)',
           }}
         />
         <div className="container relative py-16 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
             <p className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-card/70 backdrop-blur px-4 py-1.5 text-sm font-semibold text-foreground/80 mb-6">
-              <Sparkles className="h-4 w-4 text-amber-500" />
+              <Sparkles className="h-4 w-4 text-emerald-600" />
               {guides.length.toLocaleString()} plain-English guides
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-5">
               Find a guide for{' '}
-              <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-500 bg-clip-text text-transparent">
                 anything
               </span>
             </h1>
