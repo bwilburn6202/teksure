@@ -18,6 +18,7 @@
 //   creates and returns a conversation_id, which we store for follow-ups.
 // ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect, useRef, useCallback, type FormEvent } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -96,6 +97,12 @@ export default function TekBrainPage() {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   // Abort handle so "Clear conversation" (or unmount) kills any in-flight fetch.
   const abortRef = useRef<AbortController | null>(null);
+
+  // The landing page at /tekbrain links here with a `?q=<question>` param when
+  // the user clicks an example question. We auto-send it once, then clear the
+  // param from the URL so a refresh doesn't resubmit.
+  const [searchParams, setSearchParams] = useSearchParams();
+  const autoSentRef = useRef(false);
 
   // ── Lifecycle ────────────────────────────────────────────────────────────
 
@@ -298,6 +305,24 @@ export default function TekBrainPage() {
     },
     [sessionId, conversationId, sending],
   );
+
+  // Auto-send the `?q=` prompt when the user arrives from the landing page.
+  // Guarded by `autoSentRef` so it only fires once even if React re-runs the
+  // effect. Waits for `sessionId` (set on mount) because sendMessage bails out
+  // without it. Declared *after* sendMessage so we don't hit TDZ / lint issues.
+  useEffect(() => {
+    if (autoSentRef.current) return;
+    if (!sessionId) return;
+    const q = searchParams.get('q');
+    if (!q) return;
+    autoSentRef.current = true;
+    // Strip the param so reloading doesn't re-submit the same question.
+    const next = new URLSearchParams(searchParams);
+    next.delete('q');
+    setSearchParams(next, { replace: true });
+    void sendMessage(q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId]);
 
   // ── Event handlers ───────────────────────────────────────────────────────
 

@@ -194,6 +194,7 @@ const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabas
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
 const TekBrainPage           = lazy(() => import("./pages/TekBrain"));
+const TekBrainLanding        = lazy(() => import("./pages/TekBrainLanding"));
 const FreeResources          = lazy(() => import("./pages/FreeResources"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
 const Learn                  = lazy(() => import("./pages/Learn"));
@@ -257,6 +258,7 @@ const ChildAppSafetyChecker  = lazy(() => import("./pages/tools/ChildAppSafetyCh
 const InternetSpeedDoctor    = lazy(() => import("./pages/tools/InternetSpeedDoctor"));
 const FamilyTechPlanner      = lazy(() => import("./pages/tools/FamilyTechPlanner"));
 const BillNegotiator         = lazy(() => import("./pages/tools/BillNegotiator"));
+const SafeLinkChecker        = lazy(() => import("./pages/tools/SafeLinkChecker"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -450,7 +452,11 @@ const AppContent = () => {
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/brain" element={<Brain />} />
-          <Route path="/tekbrain" element={<TekBrainPage />} />
+          {/* /tekbrain is the welcoming landing page; /tekbrain/chat is the
+              actual chat UI. First-time visitors now see an explainer before
+              being dropped into a conversation. */}
+          <Route path="/tekbrain" element={<TekBrainLanding />} />
+          <Route path="/tekbrain/chat" element={<TekBrainPage />} />
           <Route path="/tools/password-strength" element={<PasswordStrength />} />
           <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
           <Route path="/tools/health-check" element={<HealthCheck />} />
@@ -598,6 +604,7 @@ const AppContent = () => {
           <Route path="/tools/child-app-safety-checker" element={<ChildAppSafetyChecker />} />
           <Route path="/tools/internet-speed-doctor" element={<InternetSpeedDoctor />} />
           <Route path="/tools/family-tech-planner" element={<FamilyTechPlanner />} />
+          <Route path="/tools/safe-link-checker" element={<SafeLinkChecker />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
