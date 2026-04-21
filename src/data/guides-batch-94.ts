@@ -52,7 +52,7 @@ You do not need to visit the dark web yourself to stay safe. The best protection
     ],
   },
   {
-    slug: `dark-web-monitoring-guide`,
+    slug: `dark-web-monitoring-services`,
     title: `How to Monitor the Dark Web for Your Personal Information`,
     excerpt: `Dark web monitoring scans hidden sites for your personal data after breaches. Learn which free and paid services work, and what to do when you get an alert.`,
     category: `online-privacy`,
