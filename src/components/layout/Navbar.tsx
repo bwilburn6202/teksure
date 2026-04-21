@@ -78,6 +78,7 @@ export function Navbar() {
   const supportLinks = [
     { to: '/free-resources', label: 'Free Tech Programs', icon: ArrowRight, desc: 'Free internet, devices & training' },
     { to: '/caregiver-hub', label: 'Caregiver Hub', icon: Users, desc: 'Helping a loved one' },
+    { to: '/accessibility', label: 'Accessibility Hub', icon: Users, desc: 'Technology for every ability' },
     { to: '/tech-help-near-me', label: 'Help Near Me', icon: ArrowRight, desc: 'Find local tech help' },
     { to: '/free-software', label: 'Free Software', icon: ArrowRight, desc: '40+ free alternatives' },
     { to: '/about', label: 'About TekSure', icon: Users, desc: 'Our mission' },
