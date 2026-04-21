@@ -702,7 +702,7 @@ export function TekBrain() {
           <button
             ref={openButtonRef}
             onClick={() => setOpen(true)}
-            className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
+            className="fixed bottom-6 right-6 z-50 hidden md:flex items-center gap-2 rounded-full px-5 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105"
             style={{ backgroundColor: 'hsl(172 50% 40%)', minHeight: 48, fontSize: 16 }}
             aria-label="Open TekBrain chat assistant"
             aria-haspopup="dialog"
