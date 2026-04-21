@@ -1,28 +1,36 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import {
+  Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2,
+  ShieldCheck, BookOpen, Phone, Heart, Wifi, CreditCard, Tv, MessageSquare,
+  ArrowRightLeft, Landmark, ArrowRight, ArrowLeft, Flame, TrendingUp, Star,
+  GraduationCap, MessageCircle, Brain,
+} from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
+import { guides, categoryLabels, categoryDescriptions, type Guide, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
-import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
-import { StarRating } from '@/components/StarRating';
-import { Progress } from '@/components/ui/progress';
-import { Button } from '@/components/ui/button';
 
-const categoryIcons: Record<string, typeof Monitor> = {
+/* ══════════════════════════════════════════════════════════════════════
+   Icon + color mapping per category
+   ══════════════════════════════════════════════════════════════════════ */
+const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'windows-guides': Monitor,
   'mac-guides': Apple,
   'essential-skills': Lightbulb,
   'tips-tricks': Sparkles,
   'ai-guides': Bot,
+  'ai-advanced': Bot,
   'safety-guides': ShieldCheck,
   'how-to': BookOpen,
   'app-guides': Phone,
+  'phone-guides': Phone,
+  'social-media': MessageSquare,
   'health-tech': Heart,
   'government-civic': Landmark,
   'financial-tech': CreditCard,
@@ -33,204 +41,287 @@ const categoryIcons: Record<string, typeof Monitor> = {
   'internet-connectivity': Wifi,
 };
 
-const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
-  const [imgError, setImgError] = useState(false);
-  return (
-  <Link to={`/guides/${guide.slug}`} className="group block h-full">
-    <div className={`rounded-2xl border h-full transition-all hover:shadow-md overflow-hidden ${
-      completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
-    }`}>
-      <div className="relative h-36 overflow-hidden bg-muted">
-        {imgError ? (
-          <div className="w-full h-full flex items-center justify-center text-4xl select-none" aria-hidden="true">
-            {guide.thumbnailEmoji}
-          </div>
-        ) : (
-        <img
-          src={getGuideThumbnailUrl(guide)}
-          alt={guide.title}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          loading="lazy"
-          onError={() => setImgError(true)}
-        />
-        )}
-        {completed && (
-          <div className="absolute top-2 right-2 bg-green-500 text-white rounded-full p-1">
-            <CheckCircle2 className="h-3.5 w-3.5" />
-          </div>
-        )}
-        {guide.difficulty && (
-          <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-0.5 rounded-full ${
-            guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
-            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
-            'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
-          }`}>
-            {guide.difficulty}
-          </span>
-        )}
-      </div>
-      <div className="p-4">
-        <div className="flex items-center gap-2 mb-2 flex-wrap">
-          <Badge variant="secondary" className="text-xs font-medium">
-            {categoryLabels[guide.category]}
-          </Badge>
-          {guide.verifiedHelpful && (
-            <Badge variant="outline" className="text-xs border-green-500/50 text-green-600 dark:text-green-400 gap-1">
-              <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
-            </Badge>
-          )}
-          <span className="flex items-center gap-1 text-xs text-muted-foreground">
-            <Clock className="h-2.5 w-2.5" /> {guide.readTime}
-          </span>
-        </div>
-        <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
-          {guide.title}
-        </h3>
-        <p className="text-sm text-foreground/70 line-clamp-2 leading-relaxed">{guide.excerpt}</p>
-        <div className="mt-2.5">
-          <StarRating guideSlug={guide.slug} readOnly size="sm" />
-        </div>
-      </div>
-    </div>
-  </Link>
-  );
+const categoryTints: Record<GuideCategory, string> = {
+  'windows-guides':        'from-sky-100 to-sky-50 dark:from-sky-950/40 dark:to-sky-950/10',
+  'mac-guides':            'from-slate-100 to-slate-50 dark:from-slate-800/40 dark:to-slate-900/10',
+  'essential-skills':      'from-amber-100 to-amber-50 dark:from-amber-950/40 dark:to-amber-950/10',
+  'tips-tricks':           'from-violet-100 to-violet-50 dark:from-violet-950/40 dark:to-violet-950/10',
+  'ai-guides':             'from-fuchsia-100 to-fuchsia-50 dark:from-fuchsia-950/40 dark:to-fuchsia-950/10',
+  'ai-advanced':           'from-fuchsia-100 to-fuchsia-50 dark:from-fuchsia-950/40 dark:to-fuchsia-950/10',
+  'safety-guides':         'from-red-100 to-red-50 dark:from-red-950/40 dark:to-red-950/10',
+  'how-to':                'from-blue-100 to-blue-50 dark:from-blue-950/40 dark:to-blue-950/10',
+  'app-guides':            'from-emerald-100 to-emerald-50 dark:from-emerald-950/40 dark:to-emerald-950/10',
+  'phone-guides':          'from-emerald-100 to-emerald-50 dark:from-emerald-950/40 dark:to-emerald-950/10',
+  'social-media':          'from-pink-100 to-pink-50 dark:from-pink-950/40 dark:to-pink-950/10',
+  'health-tech':           'from-rose-100 to-rose-50 dark:from-rose-950/40 dark:to-rose-950/10',
+  'government-civic':      'from-indigo-100 to-indigo-50 dark:from-indigo-950/40 dark:to-indigo-950/10',
+  'financial-tech':        'from-green-100 to-green-50 dark:from-green-950/40 dark:to-green-950/10',
+  'smart-home':            'from-teal-100 to-teal-50 dark:from-teal-950/40 dark:to-teal-950/10',
+  'entertainment':         'from-purple-100 to-purple-50 dark:from-purple-950/40 dark:to-purple-950/10',
+  'communication':         'from-cyan-100 to-cyan-50 dark:from-cyan-950/40 dark:to-cyan-950/10',
+  'life-transitions':      'from-orange-100 to-orange-50 dark:from-orange-950/40 dark:to-orange-950/10',
+  'internet-connectivity': 'from-sky-100 to-sky-50 dark:from-sky-950/40 dark:to-sky-950/10',
 };
 
-const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
-  <Link to={`/guides/${guide.slug}`} className="group block">
-    <div className={`flex items-center gap-3 px-3 py-2.5 min-h-[44px] border-b border-border hover:bg-accent/50 transition-colors ${
-      completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
-    }`}>
-      <img
-        src={getGuideThumbnailSmall(guide)}
-        alt={guide.title}
-        className="w-8 h-8 rounded-md object-cover shrink-0"
-        loading="lazy"
-        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-      />
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
-      </div>
-      <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
-        {categoryLabels[guide.category]}
-      </Badge>
-      <span aria-label={guide.difficulty ?? ''} className={`text-xs font-medium shrink-0 hidden md:inline ${
-        guide.difficulty === 'Beginner' ? 'text-green-600' :
-        guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
-      }`}>
-        <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
-      </span>
-      <span className="text-xs text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
-      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
-    </div>
-  </Link>
-);
+/* ══════════════════════════════════════════════════════════════════════
+   Helpers
+   ══════════════════════════════════════════════════════════════════════ */
 
-
-const POPULAR_SEARCHES = ['WiFi not working', 'forgot password', 'how to print', 'update Windows', 'slow computer'];
-
-function GuidesEmptyState({
-  search,
-  activeTab,
-  onClear,
-  onSearch,
-}: {
-  search: string;
-  activeTab: string;
-  onClear: () => void;
-  onSearch: (term: string) => void;
-}) {
-  if (search.trim() && activeTab !== 'all') {
-    return (
-      <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none">🔍</p>
-        <h2 className="text-lg font-semibold mb-2">
-          No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
-        </h2>
-        <p className="text-sm text-muted-foreground mb-6">
-          Try searching in all categories, or use a different word.
-        </p>
-        <button
-          onClick={onClear}
-          className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-        >
-          Show all guides
-        </button>
-      </div>
-    );
+/** Locate a guide that matches any of the preferred keywords (or a specific slug). */
+function pickGuide(opts: { slug?: string; keywords?: string[]; category?: GuideCategory }): Guide | undefined {
+  if (opts.slug) {
+    const hit = guides.find(g => g.slug === opts.slug);
+    if (hit) return hit;
   }
-
-  if (search.trim()) {
-    return (
-      <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none">🤷</p>
-        <h2 className="text-lg font-semibold mb-2">
-          No guides matched "{search}"
-        </h2>
-        <p className="text-sm text-muted-foreground mb-6">
-          Try using a simpler word, or pick one of these popular topics:
-        </p>
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
-          {POPULAR_SEARCHES.map(term => (
-            <button
-              key={term}
-              onClick={() => onSearch(term)}
-              className="rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
-            >
-              {term}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={onClear}
-          className="text-sm text-primary hover:underline font-medium"
-        >
-          Clear search and browse all guides
-        </button>
-      </div>
+  if (opts.keywords?.length) {
+    const kws = opts.keywords.map(k => k.toLowerCase());
+    const strict = guides.find(g =>
+      kws.every(k =>
+        g.slug.includes(k) ||
+        g.title.toLowerCase().includes(k) ||
+        g.tags.some(t => t.toLowerCase().includes(k))
+      )
     );
+    if (strict) return strict;
+    const loose = guides.find(g =>
+      kws.some(k =>
+        g.slug.includes(k) ||
+        g.title.toLowerCase().includes(k) ||
+        g.tags.some(t => t.toLowerCase().includes(k))
+      )
+    );
+    if (loose) return loose;
   }
+  if (opts.category) {
+    return guides.find(g => g.category === opts.category);
+  }
+  return undefined;
+}
 
-  // Category tab selected but no guides in it
+/* ══════════════════════════════════════════════════════════════════════
+   Featured slots — hand-picked topics
+   ══════════════════════════════════════════════════════════════════════ */
+type FeaturedSlot = {
+  heading: string;
+  blurb: string;
+  emoji: string;
+  tint: string;
+  keywords: string[];
+  preferredSlug?: string;
+};
+
+const FEATURED_SLOTS: FeaturedSlot[] = [
+  {
+    heading: 'Scam Defense',
+    blurb: 'Spot phony calls, texts, and emails before they trick you or someone you love.',
+    emoji: '🛡️',
+    tint: 'from-red-50 to-orange-50 dark:from-red-950/40 dark:to-orange-950/30',
+    preferredSlug: 'social-media-safety',
+    keywords: ['scam', 'phishing', 'spot'],
+  },
+  {
+    heading: 'Password Managers',
+    blurb: 'Let an app safely remember every password so you never lose another login.',
+    emoji: '🔑',
+    tint: 'from-amber-50 to-yellow-50 dark:from-amber-950/40 dark:to-yellow-950/30',
+    preferredSlug: 'create-strong-password',
+    keywords: ['password', 'manager'],
+  },
+  {
+    heading: 'Video Calling',
+    blurb: 'See the grandkids on Zoom, FaceTime, or WhatsApp — with confidence.',
+    emoji: '📹',
+    tint: 'from-sky-50 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/30',
+    preferredSlug: 'how-to-video-call-on-zoom',
+    keywords: ['video', 'call'],
+  },
+  {
+    heading: 'Online Banking',
+    blurb: 'Check balances and pay bills from the couch — safely, in just a few taps.',
+    emoji: '🏦',
+    tint: 'from-emerald-50 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
+    keywords: ['banking', 'online'],
+  },
+  {
+    heading: 'Smart Home',
+    blurb: 'Alexa, Nest, Ring — set them up once and enjoy a home that listens.',
+    emoji: '🏠',
+    tint: 'from-teal-50 to-cyan-50 dark:from-teal-950/40 dark:to-cyan-950/30',
+    keywords: ['smart', 'home'],
+  },
+  {
+    heading: 'Everyday AI',
+    blurb: 'Use ChatGPT and friends like a patient, helpful assistant in your pocket.',
+    emoji: '🤖',
+    tint: 'from-fuchsia-50 to-purple-50 dark:from-fuchsia-950/40 dark:to-purple-950/30',
+    keywords: ['chatgpt', 'ai'],
+  },
+];
+
+/* ══════════════════════════════════════════════════════════════════════
+   Quick-pick chips
+   ══════════════════════════════════════════════════════════════════════ */
+type QuickPick = 'popular' | 'newest' | 'beginner' | 'helpful';
+const QUICK_PICKS: { key: QuickPick; label: string; icon: typeof Flame }[] = [
+  { key: 'popular',  label: 'Most popular', icon: Flame },
+  { key: 'newest',   label: 'Newest',       icon: Sparkles },
+  { key: 'beginner', label: 'Beginner',     icon: GraduationCap },
+  { key: 'helpful',  label: 'Most helpful', icon: Star },
+];
+
+/* ══════════════════════════════════════════════════════════════════════
+   Presentational cards
+   ══════════════════════════════════════════════════════════════════════ */
+
+function GuideCard({ guide, completed }: { guide: Guide; completed?: boolean }) {
+  const diff = guide.difficulty;
   return (
-    <div className="text-center py-20 max-w-md mx-auto">
-      <p className="text-4xl mb-4 select-none">📂</p>
-      <h2 className="text-lg font-semibold mb-2">No guides in this category yet</h2>
-      <p className="text-sm text-muted-foreground mb-6">
-        We're always adding new content. In the meantime, you can browse all our guides.
-      </p>
-      <button
-        onClick={onClear}
-        className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-      >
-        Browse all guides
-      </button>
-    </div>
+    <Link
+      to={`/guides/${guide.slug}`}
+      className={`group block h-full rounded-2xl border-2 overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 ${
+        completed
+          ? 'border-green-500/50 bg-green-50/50 dark:bg-green-950/20'
+          : 'border-border bg-card'
+      }`}
+    >
+      <div className="p-5 flex flex-col h-full min-h-[44px]">
+        <div className="flex items-start gap-3 mb-3">
+          <span className="text-4xl shrink-0 select-none" aria-hidden="true">{guide.thumbnailEmoji}</span>
+          <div className="flex-1 min-w-0">
+            <h3 className="font-bold text-lg leading-snug group-hover:text-primary transition-colors line-clamp-2">
+              {guide.title}
+            </h3>
+          </div>
+          {completed && <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" aria-label="Completed" />}
+        </div>
+        <p className="text-base text-foreground/75 line-clamp-2 leading-relaxed mb-4 flex-1">
+          {guide.excerpt}
+        </p>
+        <div className="flex items-center gap-2 flex-wrap mt-auto">
+          {diff && (
+            <span className={`text-sm font-semibold px-2.5 py-1 rounded-full ${
+              diff === 'Beginner'     ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200'
+              : diff === 'Intermediate' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200'
+              :                           'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-200'
+            }`}>
+              {diff}
+            </span>
+          )}
+          <span className="inline-flex items-center gap-1 text-sm text-muted-foreground font-medium">
+            <Clock className="h-4 w-4" /> {guide.readTime}
+          </span>
+          {guide.verifiedHelpful && (
+            <Badge variant="outline" className="text-sm border-green-500/50 text-green-700 dark:text-green-300 gap-1">
+              <CheckCircle2 className="h-3.5 w-3.5" /> Verified
+            </Badge>
+          )}
+        </div>
+      </div>
+    </Link>
   );
 }
 
+function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
+  const guide = useMemo(
+    () => pickGuide({ slug: slot.preferredSlug, keywords: slot.keywords }),
+    [slot.preferredSlug, slot.keywords]
+  );
+  if (!guide) return null;
+  return (
+    <Link
+      to={`/guides/${guide.slug}`}
+      className={`group relative block rounded-3xl border-2 border-border bg-gradient-to-br ${slot.tint} p-6 md:p-7 transition-all hover:shadow-xl hover:-translate-y-0.5 min-h-[44px]`}
+    >
+      <div className="flex items-start gap-4">
+        <span className="text-5xl md:text-6xl select-none shrink-0" aria-hidden="true">{slot.emoji}</span>
+        <div className="flex-1 min-w-0">
+          <p className="text-xs font-bold uppercase tracking-wider text-foreground/60 mb-1">
+            Featured
+          </p>
+          <h3 className="font-bold text-xl md:text-2xl leading-tight mb-2 group-hover:text-primary transition-colors">
+            {slot.heading}
+          </h3>
+          <p className="text-base text-foreground/80 leading-relaxed mb-3">
+            {slot.blurb}
+          </p>
+          <p className="text-base font-medium text-foreground/90 mb-3 line-clamp-1">
+            Start here: <span className="underline underline-offset-4 decoration-2">{guide.title}</span>
+          </p>
+          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-primary">
+            Read guide <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function CategoryCard({ cat, topGuides, count }: { cat: GuideCategory; topGuides: Guide[]; count: number }) {
+  const Icon = categoryIcons[cat] ?? BookOpen;
+  const tint = categoryTints[cat] ?? 'from-amber-100 to-amber-50';
+  return (
+    <Link
+      to={`/guides?category=${cat}`}
+      className="group block rounded-3xl border-2 border-border bg-card overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 min-h-[44px]"
+    >
+      <div className={`bg-gradient-to-br ${tint} p-5 flex items-center gap-3 border-b-2 border-border`}>
+        <div className="h-14 w-14 rounded-2xl bg-background/80 backdrop-blur flex items-center justify-center shrink-0 shadow-sm">
+          <Icon className="h-7 w-7 text-foreground" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="font-bold text-xl leading-tight group-hover:text-primary transition-colors">
+            {categoryLabels[cat]}
+          </h3>
+          <p className="text-sm font-semibold text-foreground/60">
+            {count} {count === 1 ? 'guide' : 'guides'}
+          </p>
+        </div>
+      </div>
+      <div className="p-5 space-y-2">
+        {topGuides.slice(0, 3).map(g => (
+          <div key={g.slug} className="flex items-start gap-2 text-base leading-snug">
+            <span className="shrink-0 select-none" aria-hidden="true">{g.thumbnailEmoji}</span>
+            <span className="line-clamp-1 text-foreground/80 group-hover:text-foreground transition-colors">
+              {g.title}
+            </span>
+          </div>
+        ))}
+        <div className="pt-2 text-sm font-semibold text-primary inline-flex items-center gap-1">
+          Browse all <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   Page
+   ══════════════════════════════════════════════════════════════════════ */
 const Guides = () => {
+  const navigate = useNavigate();
   const [search, setSearch] = useState('');
-  const [activeTab, setActiveTab] = useState<'all' | GuideCategory>('all');
+  const [quickPick, setQuickPick] = useState<QuickPick>('popular');
+  const [activeCategory, setActiveCategory] = useState<GuideCategory | null>(null);
   const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
-  const [difficultyFilter, setDifficultyFilter] = useState<'all' | 'Beginner' | 'Intermediate' | 'Advanced'>('all');
-  const [viewMode, setViewMode] = useState<'list' | 'grid'>(() => {
-    if (typeof window === 'undefined') return 'list';
-    try { return (localStorage.getItem('teksure-guides-view') as 'list' | 'grid') || 'list'; } catch { return 'list'; }
-  });
-  const toggleView = (mode: 'list' | 'grid') => {
-    setViewMode(mode);
-    try { localStorage.setItem('teksure-guides-view', mode); } catch {}
+
+  // Pick up ?q= and ?category= URL params (links into the hub from elsewhere or category cards)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q) setSearch(q);
+    const cat = params.get('category') as GuideCategory | null;
+    if (cat && categoryLabels[cat]) setActiveCategory(cat);
+  }, []);
+
+  const clearCategory = () => {
+    setActiveCategory(null);
+    window.history.replaceState(null, '', '/guides');
   };
 
-  useEffect(() => {
-    // Check URL params for category
-    const params = new URLSearchParams(window.location.search);
-    const cat = params.get('category') as GuideCategory | null;
-    const q = params.get('q');
-    if (cat && categoryLabels[cat]) setActiveTab(cat);
-    if (q) setSearch(q);
-  }, []);
+  const categoryGuides = useMemo(
+    () => (activeCategory ? guides.filter(g => g.category === activeCategory) : []),
+    [activeCategory]
+  );
 
   useEffect(() => {
     const handleUpdate = () => setCompletedSlugs(getCompletedGuides());
@@ -241,30 +332,76 @@ const Guides = () => {
   const allSlugs = useMemo(() => guides.map(g => g.slug), []);
   const progressStats = useMemo(() => getProgressCount(allSlugs), [allSlugs]);
 
-  const filtered = useMemo(() => {
-    let results = guides;
-    if (activeTab !== 'all') results = results.filter(g => g.category === activeTab);
-    if (difficultyFilter !== 'all') results = results.filter(g => g.difficulty === difficultyFilter);
-    if (search.trim()) {
-      const q = search.toLowerCase();
-      results = results.filter(g =>
-        g.title.toLowerCase().includes(q) ||
-        g.excerpt.toLowerCase().includes(q) ||
-        g.tags.some(t => t.includes(q)) ||
-        (g.body && g.body.toLowerCase().includes(q)) ||
-        (g.steps && g.steps.some(s => s.title.toLowerCase().includes(q) || s.content.toLowerCase().includes(q)))
-      );
-    }
-    return results;
-  }, [search, activeTab, difficultyFilter]);
+  /* Category summaries for the grid — surfaces the 3 best guides per category as previews. */
+  const categorySummaries = useMemo(() => {
+    const cats = Object.keys(categoryLabels) as GuideCategory[];
+    return cats
+      .map(cat => {
+        const inCat = guides.filter(g => g.category === cat);
+        const top = [...inCat].sort((a, b) => {
+          const av = a.verifiedHelpful ? 0 : 1;
+          const bv = b.verifiedHelpful ? 0 : 1;
+          if (av !== bv) return av - bv;
+          const ab = a.difficulty === 'Beginner' ? 0 : 1;
+          const bb = b.difficulty === 'Beginner' ? 0 : 1;
+          return ab - bb;
+        }).slice(0, 3);
+        return { cat, count: inCat.length, top };
+      })
+      .filter(c => c.count > 0);
+  }, []);
 
-  const categories = Object.keys(categoryLabels) as GuideCategory[];
+  /* Quick-pick list (driven by the chip above the grid). */
+  const popularPicks = useMemo(() => {
+    const base = [...guides];
+    if (quickPick === 'newest') {
+      return base
+        .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
+        .slice(0, 6);
+    }
+    if (quickPick === 'beginner') {
+      return base.filter(g => g.difficulty === 'Beginner').slice(0, 6);
+    }
+    if (quickPick === 'helpful') {
+      return base.filter(g => g.verifiedHelpful).slice(0, 6);
+    }
+    // popular (default): verifiedHelpful first, then newest-first
+    return base
+      .sort((a, b) => {
+        const av = a.verifiedHelpful ? 0 : 1;
+        const bv = b.verifiedHelpful ? 0 : 1;
+        if (av !== bv) return av - bv;
+        return (b.publishedAt || '').localeCompare(a.publishedAt || '');
+      })
+      .slice(0, 6);
+  }, [quickPick]);
+
+  /* Trending this week — newest 6 guides published in the last 3 weeks. SSR-safe. */
+  const trendingThisWeek = useMemo(() => {
+    const threeWeeksMs = 21 * 24 * 60 * 60 * 1000;
+    const cutoff = Date.now() - threeWeeksMs;
+    const recent = guides.filter(g => {
+      if (!g.publishedAt) return false;
+      const t = Date.parse(g.publishedAt);
+      return !Number.isNaN(t) && t >= cutoff;
+    });
+    const pool = recent.length >= 6 ? recent : [...guides];
+    return pool
+      .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
+      .slice(0, 6);
+  }, []);
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = search.trim();
+    if (q) navigate(`/search?q=${encodeURIComponent(q)}`);
+  };
 
   return (
     <div id="main-content" className="min-h-screen bg-background">
       <SEOHead
-        title="Free Tech Guides for Beginners | TekSure"
-        description="Browse 1,000+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, and everyday apps. Written in plain language for beginners."
+        title={`Find a Guide for Anything | ${guides.length.toLocaleString()}+ Free Tech Guides | TekSure`}
+        description={`Browse ${guides.length.toLocaleString()}+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, banking, smart home, and everyday apps. Written in plain language for beginners.`}
         path="/guides"
         jsonLd={{
           '@context': 'https://schema.org',
@@ -278,25 +415,71 @@ const Guides = () => {
       />
       <Navbar />
 
-      {/* Header */}
-      <section className="border-b">
-        <div className="container py-14 md:py-20">
-          <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-              Guides & Tutorials
-            </h1>
-            <p className="text-muted-foreground text-lg mb-8">
-              {guides.length}+ free step-by-step guides. No jargon, just answers.
+      {/* ══════════════════════════════════════════
+            HERO
+         ══════════════════════════════════════════ */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50/60 to-background dark:from-amber-950/40 dark:via-orange-950/20 dark:to-background border-b-2 border-border">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-60"
+          style={{
+            background:
+              'radial-gradient(800px circle at 20% 0%, rgb(254 215 170 / 0.35), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(252 231 243 / 0.35), transparent 60%)',
+          }}
+        />
+        <div className="container relative py-16 md:py-24">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-card/70 backdrop-blur px-4 py-1.5 text-sm font-semibold text-foreground/80 mb-6">
+              <Sparkles className="h-4 w-4 text-amber-500" />
+              {guides.length.toLocaleString()} plain-English guides
             </p>
-            <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/60" />
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-5">
+              Find a guide for{' '}
+              <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 bg-clip-text text-transparent">
+                anything
+              </span>
+            </h1>
+            <p className="text-lg md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+              Written in plain language. No jargon. Ever.
+            </p>
+
+            <form onSubmit={handleSearchSubmit} className="relative max-w-2xl mx-auto">
+              <label htmlFor="guides-search" className="sr-only">Search guides</label>
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" />
               <Input
-                placeholder="Search guides..."
+                id="guides-search"
+                placeholder="Search 3,000+ guides..."
                 aria-label="Search guides"
-                className="pl-11 h-12 bg-card border-border/60 rounded-2xl text-sm shadow-sm focus:border-primary/40 focus:shadow-md focus:shadow-primary/[0.06] transition-all"
+                className="pl-14 pr-32 h-14 bg-card border-2 border-border rounded-2xl text-lg shadow-md focus:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 transition-all"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
+              <Button
+                type="submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 h-11 px-5 rounded-xl text-base font-semibold gap-1"
+              >
+                Search <ArrowRight className="h-4 w-4" />
+              </Button>
+            </form>
+
+            <div className="flex flex-wrap justify-center gap-2 mt-6">
+              {QUICK_PICKS.map(({ key, label, icon: Icon }) => {
+                const active = quickPick === key;
+                return (
+                  <button
+                    key={key}
+                    onClick={() => setQuickPick(key)}
+                    aria-pressed={active}
+                    className={`inline-flex items-center gap-2 rounded-full border-2 px-4 py-2 text-base font-semibold min-h-[44px] transition-all ${
+                      active
+                        ? 'bg-foreground text-background border-foreground shadow-md'
+                        : 'bg-card border-border hover:border-foreground/40 hover:bg-accent'
+                    }`}
+                  >
+                    <Icon className="h-4 w-4" /> {label}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -305,122 +488,199 @@ const Guides = () => {
       {/* Progress banner */}
       {progressStats.completed > 0 && (
         <div className="container mt-6">
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900">
-            <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+          <div className="flex items-center gap-4 p-4 rounded-2xl bg-green-50 dark:bg-green-950/20 border-2 border-green-200 dark:border-green-900">
+            <CheckCircle2 className="h-6 w-6 text-green-600 shrink-0" />
             <div className="flex-1 min-w-0">
-              <p className="text-xs font-medium text-green-700 dark:text-green-400">
-                {progressStats.completed} of {progressStats.total} completed
+              <p className="text-base font-semibold text-green-800 dark:text-green-300">
+                You've completed {progressStats.completed} of {progressStats.total} guides — nicely done.
               </p>
-              <Progress value={progressStats.pct} className="h-1 mt-1 bg-green-200 dark:bg-green-900" />
+              <Progress value={progressStats.pct} className="h-2 mt-2 bg-green-200 dark:bg-green-900" />
             </div>
-            <span className="text-xs font-bold text-green-600 dark:text-green-400">{progressStats.pct}%</span>
+            <span className="text-lg font-bold text-green-700 dark:text-green-300">{progressStats.pct}%</span>
           </div>
         </div>
       )}
 
-      {/* Main content */}
-      <section className="container py-8 pb-20">
-        <Tabs value={activeTab} onValueChange={v => setActiveTab(v as typeof activeTab)}>
-          <div className="flex items-center gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
-            <TabsList className="h-auto gap-1 bg-transparent p-0 flex-wrap">
-              <TabsTrigger
-                value="all"
-                className="text-xs rounded-full px-3 py-1.5 min-h-[44px] data-[state=active]:bg-foreground data-[state=active]:text-background"
-              >
-                All ({guides.length})
-              </TabsTrigger>
-              {categories.map(cat => {
-                const count = guides.filter(g => g.category === cat).length;
-                return (
-                  <TabsTrigger
-                    key={cat}
-                    value={cat}
-                    className="text-xs rounded-full px-3 py-1.5 min-h-[44px] data-[state=active]:bg-foreground data-[state=active]:text-background"
-                  >
-                    {categoryLabels[cat]} ({count})
-                  </TabsTrigger>
-                );
-              })}
-            </TabsList>
+      {/* ══════════════════════════════════════════
+            CATEGORY VIEW (shown when ?category=X is set)
+         ══════════════════════════════════════════ */}
+      {activeCategory && (
+        <section className="container py-12 md:py-16">
+          <button
+            onClick={clearCategory}
+            className="inline-flex items-center gap-2 text-base font-semibold text-foreground/70 hover:text-foreground transition-colors mb-6 min-h-[44px]"
+          >
+            <ArrowLeft className="h-4 w-4" /> All guides
+          </button>
+          <div className="flex items-start gap-4 mb-8">
+            {(() => {
+              const Icon = categoryIcons[activeCategory] ?? BookOpen;
+              return (
+                <div className={`h-16 w-16 rounded-2xl bg-gradient-to-br ${categoryTints[activeCategory] ?? ''} border-2 border-border flex items-center justify-center shrink-0`}>
+                  <Icon className="h-8 w-8 text-foreground" />
+                </div>
+              );
+            })()}
+            <div className="flex-1 min-w-0">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-1">
+                {categoryLabels[activeCategory]}
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                {categoryDescriptions[activeCategory]} · {categoryGuides.length} {categoryGuides.length === 1 ? 'guide' : 'guides'}
+              </p>
+            </div>
           </div>
+          {categoryGuides.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-5xl mb-4 select-none" aria-hidden="true">📂</p>
+              <p className="text-lg text-muted-foreground">No guides in this category yet — check back soon.</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+              {categoryGuides.map(g => (
+                <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
+              ))}
+            </div>
+          )}
+        </section>
+      )}
 
-          {/* Difficulty filter */}
-          <div className="flex items-center gap-2 mb-6">
-            <span className="text-xs text-muted-foreground font-medium">Difficulty:</span>
-            {(['all', 'Beginner', 'Intermediate', 'Advanced'] as const).map(level => (
-              <button
-                key={level}
-                onClick={() => setDifficultyFilter(level)}
-                className={`text-xs px-3 py-1.5 rounded-full border transition-all min-h-[44px] ${
-                  difficultyFilter === level
-                    ? level === 'Beginner' ? 'bg-green-100 border-green-300 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300'
-                    : level === 'Intermediate' ? 'bg-amber-100 border-amber-300 text-amber-700 dark:bg-amber-900/30 dark:border-amber-700 dark:text-amber-300'
-                    : level === 'Advanced' ? 'bg-red-100 border-red-300 text-red-700 dark:bg-red-900/30 dark:border-red-700 dark:text-red-300'
-                    : 'bg-foreground text-background border-foreground'
-                    : 'border-border hover:border-primary/30'
-                }`}
-              >
-                {level === 'all' ? 'All Levels' : level}
-              </button>
+      {/* ══════════════════════════════════════════
+            QUICK-PICK SECTION (driven by chip)
+         ══════════════════════════════════════════ */}
+      {!activeCategory && (
+      <>
+      <section className="container py-12 md:py-16">
+        <div className="flex items-end justify-between gap-4 mb-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+              {quickPick === 'popular'  && 'Most popular right now'}
+              {quickPick === 'newest'   && 'Just published'}
+              {quickPick === 'beginner' && 'Great for beginners'}
+              {quickPick === 'helpful'  && 'Most helpful — reader verified'}
+            </h2>
+            <p className="text-lg text-muted-foreground mt-1">
+              Tap any chip above the search bar to swap the picks.
+            </p>
+          </div>
+          <Link
+            to="/search"
+            className="hidden md:inline-flex items-center gap-1 text-base font-semibold text-primary hover:underline min-h-[44px]"
+          >
+            See all <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          {popularPicks.map(g => (
+            <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
+          ))}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+            FEATURED GUIDES (6 hand-picked topics)
+         ══════════════════════════════════════════ */}
+      <section className="bg-gradient-to-b from-background via-amber-50/40 to-background dark:via-amber-950/10 py-12 md:py-16 border-y-2 border-border">
+        <div className="container">
+          <div className="max-w-2xl mb-8 md:mb-10">
+            <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">
+              <Flame className="h-4 w-4" /> Featured
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
+              Six topics worth your time
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              The guides readers come back to the most. Start anywhere.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            {FEATURED_SLOTS.map(slot => (
+              <FeaturedCard key={slot.heading} slot={slot} />
             ))}
           </div>
+        </div>
+      </section>
 
-          <TabsContent value={activeTab} className="mt-0">
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                {activeTab !== 'all' && categoryDescriptions[activeTab as GuideCategory] && (
-                  <p className="text-sm text-muted-foreground">{categoryDescriptions[activeTab as GuideCategory]}</p>
-                )}
-              </div>
-              <div className="flex items-center gap-1 border rounded-lg p-0.5">
-                <button
-                  onClick={() => toggleView('list')}
-                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'list' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
-                  aria-label="List view"
-                  aria-pressed={viewMode === 'list'}
-                >
-                  <LayoutList className="h-4 w-4" />
-                </button>
-                <button
-                  onClick={() => toggleView('grid')}
-                  className={`p-2.5 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground'}`}
-                  aria-label="Grid view"
-                  aria-pressed={viewMode === 'grid'}
-                >
-                  <LayoutGrid className="h-4 w-4" />
-                </button>
-              </div>
-            </div>
-
-            {filtered.length === 0 ? (
-              <GuidesEmptyState search={search} activeTab={activeTab} onClear={() => { setSearch(''); setActiveTab('all'); }} onSearch={setSearch} />
-            ) : viewMode === 'list' ? (
-              <div className="border rounded-xl overflow-hidden">
-                {filtered.map((guide) => (
-                  <GuideListItem key={guide.slug} guide={guide} completed={completedSlugs.has(guide.slug)} />
-                ))}
-              </div>
-            ) : (
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filtered.map((guide, i) => (
-                  <div key={guide.slug}>
-                    <GuideCard guide={guide} completed={completedSlugs.has(guide.slug)} />
-                  </div>
-                ))}
-              </div>
-            )}
-          </TabsContent>
-        </Tabs>
-
-        {/* CTA */}
-        <div className="mt-16 text-center p-10 rounded-2xl bg-muted/50 border border-border">
-          <h2 className="text-xl font-bold mb-2">Can't find what you need?</h2>
-          <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
-            Our verified technicians are ready to help with any tech issue.
+      {/* ══════════════════════════════════════════
+            CATEGORY GRID
+         ══════════════════════════════════════════ */}
+      <section className="container py-12 md:py-16">
+        <div className="max-w-2xl mb-8 md:mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
+            Browse by topic
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Pick a category that matches what you're trying to do today.
           </p>
-          <Button asChild className="gap-2 rounded-xl">
-            <Link to="/get-help"><Phone className="h-4 w-4" /> Get Help</Link>
-          </Button>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          {categorySummaries.map(({ cat, top, count }) => (
+            <CategoryCard key={cat} cat={cat} topGuides={top} count={count} />
+          ))}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+            TRENDING THIS WEEK
+         ══════════════════════════════════════════ */}
+      <section className="bg-muted/40 border-y-2 border-border py-12 md:py-16">
+        <div className="container">
+          <div className="flex items-end justify-between gap-4 mb-6">
+            <div>
+              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-2">
+                <TrendingUp className="h-4 w-4" /> Trending this week
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
+                Fresh from our writers
+              </h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            {trendingThisWeek.map(g => (
+              <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
+            ))}
+          </div>
+        </div>
+      </section>
+      </>
+      )}
+
+      {/* ══════════════════════════════════════════
+            BOTTOM CTA — Ask TekBrain
+         ══════════════════════════════════════════ */}
+      <section className="container py-16 md:py-20">
+        <div className="relative overflow-hidden rounded-3xl border-2 border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-rose-950/40 p-8 md:p-12 text-center">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 opacity-60"
+            style={{
+              background:
+                'radial-gradient(500px circle at 50% 0%, rgb(253 186 116 / 0.3), transparent 70%)',
+            }}
+          />
+          <div className="relative">
+            <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-background/80 backdrop-blur shadow-md mb-4">
+              <Brain className="h-8 w-8 text-amber-600" />
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3">
+              Can't find what you need?
+            </h2>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-xl mx-auto mb-8 leading-relaxed">
+              Ask TekBrain — our friendly AI helper walks you through any tech problem, step by step, in plain language.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Button asChild size="lg" className="h-14 text-lg px-8 rounded-2xl gap-2 shadow-md">
+                <Link to="/tekbrain">
+                  <Brain className="h-5 w-5" /> Ask TekBrain <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="h-14 text-lg px-8 rounded-2xl gap-2 border-2">
+                <Link to="/get-help">
+                  <MessageCircle className="h-5 w-5" /> Talk to a person
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
