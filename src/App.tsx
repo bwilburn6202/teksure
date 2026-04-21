@@ -184,6 +184,7 @@ const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
 const ComputerCleanupWizard  = lazy(() => import("./pages/tools/ComputerCleanupWizard"));
+const PhoneCleanupWizard     = lazy(() => import("./pages/tools/PhoneCleanupWizard"));
 const DigitalFootprintScanner = lazy(() => import("./pages/tools/DigitalFootprintScanner"));
 const InternetPlanComparator = lazy(() => import("./pages/tools/InternetPlanComparator"));
 const ScamIqTest             = lazy(() => import("./pages/tools/ScamIqTest"));
@@ -192,6 +193,7 @@ const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGui
 const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
+const TekBrainPage           = lazy(() => import("./pages/TekBrain"));
 const FreeResources          = lazy(() => import("./pages/FreeResources"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
 const Learn                  = lazy(() => import("./pages/Learn"));
@@ -252,6 +254,9 @@ const CreditReportReader     = lazy(() => import("./pages/tools/CreditReportRead
 const EobDecoder             = lazy(() => import("./pages/tools/EobDecoder"));
 const ReceiptScannerDemo     = lazy(() => import("./pages/tools/ReceiptScannerDemo"));
 const ChildAppSafetyChecker  = lazy(() => import("./pages/tools/ChildAppSafetyChecker"));
+const InternetSpeedDoctor    = lazy(() => import("./pages/tools/InternetSpeedDoctor"));
+const FamilyTechPlanner      = lazy(() => import("./pages/tools/FamilyTechPlanner"));
+const BillNegotiator         = lazy(() => import("./pages/tools/BillNegotiator"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -445,6 +450,7 @@ const AppContent = () => {
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/brain" element={<Brain />} />
+          <Route path="/tekbrain" element={<TekBrainPage />} />
           <Route path="/tools/password-strength" element={<PasswordStrength />} />
           <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
           <Route path="/tools/health-check" element={<HealthCheck />} />
@@ -581,6 +587,7 @@ const AppContent = () => {
           {/* Round 4 tools */}
           <Route path="/tools/plain-english-translator" element={<PlainEnglishTranslator />} />
           <Route path="/tools/bill-decoder" element={<BillDecoder />} />
+          <Route path="/tools/bill-negotiator" element={<BillNegotiator />} />
           <Route path="/tools/accessibility-profile-builder" element={<AccessibilityProfileBuilder />} />
           <Route path="/tools/tech-setup-cost-estimator" element={<TechSetupCostEstimator />} />
           <Route path="/tools/wifi-qr-generator" element={<WifiQrGenerator />} />
@@ -589,6 +596,8 @@ const AppContent = () => {
           <Route path="/tools/eob-decoder" element={<EobDecoder />} />
           <Route path="/tools/receipt-scanner-demo" element={<ReceiptScannerDemo />} />
           <Route path="/tools/child-app-safety-checker" element={<ChildAppSafetyChecker />} />
+          <Route path="/tools/internet-speed-doctor" element={<InternetSpeedDoctor />} />
+          <Route path="/tools/family-tech-planner" element={<FamilyTechPlanner />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
@@ -640,6 +649,7 @@ const AppContent = () => {
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
           <Route path="/tools/smart-tv-setup" element={<SmartTvSetupWizard />} />
           <Route path="/tools/computer-cleanup-wizard" element={<ComputerCleanupWizard />} />
+          <Route path="/tools/phone-cleanup" element={<PhoneCleanupWizard />} />
           <Route path="/tools/digital-footprint-scanner" element={<DigitalFootprintScanner />} />
           <Route path="/tools/internet-plan-comparator" element={<InternetPlanComparator />} />
           <Route path="/tools/scam-iq-test" element={<ScamIqTest />} />
