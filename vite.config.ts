@@ -175,7 +175,7 @@ export default defineConfig(({ mode }) => ({
           // Radix UI + shadcn utilities — large UI primitives
           if (
             id.includes('node_modules/@radix-ui') ||
-            id.includes('node_modules/class-variance-authority') ||
+            id.includes('node_modules/class-variance-authority')
           ) return 'vendor-ui';
 
           // Guide data — large dataset, split into its own cacheable chunk

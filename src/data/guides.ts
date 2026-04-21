@@ -7869,38 +7869,6 @@ const coreGuides: Guide[] = [
     ]
   },
 
-  // GUIDE 7: How to Use QR Codes
-  {
-    slug: 'how-to-use-qr-codes',
-    title: 'How to Use QR Codes (Those Square Barcode Things)',
-    excerpt: 'Learn what QR codes are and how to scan them with your phone — it is easier than you think.',
-    category: 'essential-skills',
-    tags: ['qr code', 'camera', 'beginner'],
-    readTime: '5 min',
-    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
-    thumbnailEmoji: '📷',
-    publishedAt: '2026-04-01',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: 'What is a QR code?',
-        content: `A QR code is a square pattern of black and white dots — it looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone's camera, it instantly takes you to a website or shows you information — no typing needed.`
-      },
-      {
-        title: 'How to scan a QR code on an iPhone',
-        content: `Scanning a QR code on an iPhone is very easy — you do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone's camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.`
-      },
-      {
-        title: 'How to scan a QR code on an Android phone',
-        content: 'On most modern Android phones, the camera can scan QR codes automatically.\n\n1. Open your Camera app\n2. Point it at the QR code and hold steady\n3. A link or notification should pop up — tap it to open\n\nIf nothing happens, you may need to enable QR code scanning:\n- Go to Settings > Camera (or search for "QR" in Settings)\n- Turn on "Scan QR codes"\n\n**On Samsung phones:** You can also swipe down from the top of the screen to open Quick Settings and tap the "Scan QR code" tile. This opens a dedicated scanner that works very well.'
-      },
-      {
-        title: 'Stay safe when scanning QR codes',
-        content: 'QR codes are generally safe, but scammers have started using them to trick people. The FTC has warned about "quishing" scams in 2026 — that is phishing using QR codes. Watch out for:\n\n- **Stickers placed over real QR codes** — especially on parking meters, gas pumps, or public signs. Scammers stick their own QR code on top of the real one to send you to a fake website.\n- **QR codes in unexpected emails or texts** — if you did not expect it, do not scan it.\n- **QR codes on random flyers** — be cautious about scanning codes posted in public places by unknown people.\n\nAlways look at the website address that pops up before you tap it. If it looks suspicious or unfamiliar, do not open it.', warning: 'Be careful with QR codes on random flyers, stickers on parking meters, or in unexpected emails. Scammers can put fake QR codes over real ones to send you to phishing websites. The FTC has warned about "quishing" scams in 2026.', tip: 'If a QR code takes you to a website asking for your password or payment information, STOP. Go to that website directly by typing the address into your browser instead.'
-      },
-    ]
-  },
-
   // GUIDE 8: How to Fix Your Phone When Apps Keep Crashing
   {
     slug: 'fix-phone-apps-crashing',
