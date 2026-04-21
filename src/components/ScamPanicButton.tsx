@@ -49,7 +49,7 @@ export function ScamPanicButton() {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 left-6 z-50 flex items-center gap-2 rounded-full bg-destructive px-4 py-3 text-sm font-semibold text-destructive-foreground shadow-lg hover:bg-destructive/90 transition-colors no-print"
+        className="fixed bottom-6 left-6 z-50 hidden md:flex items-center gap-2 rounded-full bg-destructive px-4 py-3 text-sm font-semibold text-destructive-foreground shadow-lg hover:bg-destructive/90 transition-colors no-print"
         aria-label="I think I've been scammed — get help now"
         aria-haspopup="dialog"
       >
