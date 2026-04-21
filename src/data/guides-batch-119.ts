@@ -266,7 +266,7 @@ If both of you use Macs, macOS has a free built-in screen sharing feature.
 
 1. On their Mac, System Settings → General → Sharing → turn on "Screen Sharing."
 2. Note their username.
-3. On your Mac, open Finder → Go menu → "Connect to Server," type `vnc://their-computer-name.local` and connect.
+3. On your Mac, open Finder → Go menu → "Connect to Server," type "vnc://their-computer-name.local" and connect.
 
 More complicated than TeamViewer. For most families, TeamViewer is still easier.
 
