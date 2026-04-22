@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -6,453 +6,520 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Checkbox } from '@/components/ui/checkbox';
 import {
   Accessibility,
   Eye,
   Ear,
   Hand,
-  Brain,
+  Volume2,
+  MousePointer2,
+  Sparkles,
   Smartphone,
-  Printer,
-  ArrowRight,
+  Apple,
   ArrowLeft,
   CheckCircle2,
-  HeartHandshake,
+  RotateCcw,
+  ExternalLink,
+  Info,
 } from 'lucide-react';
 
-type Vision = 'none' | 'low-vision' | 'blind' | 'color-blind' | 'light-sensitive';
-type Hearing = 'none' | 'mild' | 'significant' | 'deaf' | 'hearing-aids';
-type Motor = 'none' | 'arthritis' | 'tremor' | 'limited' | 'switch';
-type Cognitive = 'none' | 'memory' | 'focus' | 'learning';
-type Device = 'iphone' | 'android-phone' | 'ipad' | 'android-tablet' | 'mac' | 'windows' | 'chromebook' | 'apple-watch' | 'smart-speaker';
+// ─── Types ─────────────────────────────────────────────────────────────────
+type YesNo = 'yes' | 'no';
+type YesSometimesNo = 'yes' | 'sometimes' | 'no';
 
-interface Feature {
-  name: string;
-  path: string;
-  why: string;
-  forNeeds: Array<Vision | Hearing | Motor | Cognitive>;
+interface Answers {
+  smallText: YesSometimesNo | null;
+  contrastTrouble: YesNo | null;
+  motionBothers: YesNo | null;
+  hearingAid: YesNo | null;
+  tapTargets: YesSometimesNo | null;
+  preferAloud: YesNo | null;
+  screenReader: YesNo | null;
 }
 
-type DeviceFeatures = Record<Device, { label: string; features: Feature[] }>;
+type FontSize = 'normal' | 'large' | 'x-large';
 
-const DEVICE_FEATURES: DeviceFeatures = {
-  iphone: {
-    label: 'iPhone',
-    features: [
-      { name: 'Display & Text Size — Larger Text', path: 'Settings → Accessibility → Display & Text Size → Larger Text', why: 'Makes text across all apps larger and easier to read', forNeeds: ['low-vision'] },
-      { name: 'Display & Text Size — Bold Text', path: 'Settings → Accessibility → Display & Text Size → Bold Text', why: 'Thicker letters that are easier to see', forNeeds: ['low-vision'] },
-      { name: 'Display & Text Size — Increase Contrast', path: 'Settings → Accessibility → Display & Text Size → Increase Contrast', why: 'Makes foreground text stand out more clearly against backgrounds', forNeeds: ['low-vision', 'light-sensitive'] },
-      { name: 'Display & Text Size — Smart Invert', path: 'Settings → Accessibility → Display & Text Size → Smart Invert', why: 'Dark mode that keeps photos looking normal — easier on sensitive eyes', forNeeds: ['light-sensitive', 'low-vision'] },
-      { name: 'Zoom', path: 'Settings → Accessibility → Zoom → On', why: 'Three-finger double tap zooms in anywhere on the screen', forNeeds: ['low-vision'] },
-      { name: 'VoiceOver', path: 'Settings → Accessibility → VoiceOver → On', why: 'Reads everything on the screen aloud so you can use the phone without sight', forNeeds: ['blind'] },
-      { name: 'Spoken Content — Speak Screen', path: 'Settings → Accessibility → Spoken Content → Speak Screen → On', why: 'Swipe two fingers down from the top of the screen to hear the whole page read aloud', forNeeds: ['low-vision', 'blind', 'learning'] },
-      { name: 'Color Filters', path: 'Settings → Accessibility → Display & Text Size → Color Filters', why: 'Adjusts colors for red-green, blue-yellow, or grayscale needs', forNeeds: ['color-blind'] },
-      { name: 'Reduce White Point', path: 'Settings → Accessibility → Display & Text Size → Reduce White Point', why: 'Dims the brightest whites — helps with light sensitivity and headaches', forNeeds: ['light-sensitive'] },
-      { name: 'Hearing Devices (Made for iPhone hearing aids)', path: 'Settings → Accessibility → Hearing Devices', why: 'Pairs your hearing aids directly to your iPhone, routing calls and audio through them', forNeeds: ['hearing-aids'] },
-      { name: 'Live Captions', path: 'Settings → Accessibility → Live Captions → On', why: 'Instantly captions any audio playing on your iPhone, including phone calls', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Sound Recognition', path: 'Settings → Accessibility → Sound Recognition', why: 'Alerts you visually when important sounds (doorbell, alarm, baby) happen', forNeeds: ['significant', 'deaf'] },
-      { name: 'RTT / TTY Relay', path: 'Settings → Accessibility → RTT/TTY', why: 'Real-time text during phone calls — type what you want to say instead of speaking', forNeeds: ['deaf', 'significant'] },
-      { name: 'Mono Audio', path: 'Settings → Accessibility → Audio & Visual → Mono Audio', why: 'Plays both audio channels in both ears — helpful if hearing is uneven', forNeeds: ['mild', 'significant'] },
-      { name: 'AssistiveTouch', path: 'Settings → Accessibility → Touch → AssistiveTouch → On', why: 'Floating on-screen button for tricky gestures like pinch, rotate, or shake', forNeeds: ['arthritis', 'tremor', 'limited'] },
-      { name: 'Touch Accommodations — Hold Duration', path: 'Settings → Accessibility → Touch → Touch Accommodations → Hold Duration', why: 'Requires you to hold longer before a touch registers — prevents accidental taps from tremor', forNeeds: ['tremor', 'arthritis'] },
-      { name: 'Back Tap', path: 'Settings → Accessibility → Touch → Back Tap', why: 'Tap the back of the phone twice or three times to run a shortcut — no reaching for small buttons', forNeeds: ['arthritis', 'limited'] },
-      { name: 'Voice Control', path: 'Settings → Accessibility → Voice Control → On', why: 'Navigate your entire phone using only your voice', forNeeds: ['limited', 'switch'] },
-      { name: 'Switch Control', path: 'Settings → Accessibility → Switch Control', why: 'Control your phone with an external switch device', forNeeds: ['switch'] },
-      { name: 'Guided Access', path: 'Settings → Accessibility → Guided Access → On', why: 'Locks you into one app and disables parts of the screen — helps with focus and prevents getting lost', forNeeds: ['focus', 'memory'] },
-      { name: 'Reduce Motion', path: 'Settings → Accessibility → Motion → Reduce Motion', why: 'Turns off sliding animations that can cause dizziness or confusion', forNeeds: ['focus', 'light-sensitive'] },
-    ],
-  },
-  'android-phone': {
-    label: 'Android phone',
-    features: [
-      { name: 'Font Size', path: 'Settings → Display → Font size → Large', why: 'Makes text across the phone bigger', forNeeds: ['low-vision'] },
-      { name: 'Display Size', path: 'Settings → Display → Display size → Larger', why: 'Makes everything on screen — icons, buttons, images — bigger', forNeeds: ['low-vision'] },
-      { name: 'High Contrast Text', path: 'Settings → Accessibility → High contrast text', why: 'Adds outlines around text so it stands out from backgrounds', forNeeds: ['low-vision'] },
-      { name: 'Magnification', path: 'Settings → Accessibility → Magnification → On', why: 'Triple-tap anywhere to zoom in', forNeeds: ['low-vision'] },
-      { name: 'TalkBack', path: 'Settings → Accessibility → TalkBack → On', why: 'Reads everything on screen aloud — lets you use the phone without sight', forNeeds: ['blind'] },
-      { name: 'Color Correction', path: 'Settings → Accessibility → Color correction', why: 'Adjusts colors for red-green or blue-yellow color blindness', forNeeds: ['color-blind'] },
-      { name: 'Select to Speak', path: 'Settings → Accessibility → Select to Speak → On', why: 'Tap a button and then tap any text to hear it read aloud', forNeeds: ['low-vision', 'learning'] },
-      { name: 'Extra Dim', path: 'Settings → Display → Extra dim', why: 'Dims the screen below the normal minimum — for bright-light sensitivity', forNeeds: ['light-sensitive'] },
-      { name: 'Live Caption', path: 'Media volume popup → caption icon', why: 'Automatic captions on any audio or video playing on your phone', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Sound Notifications', path: 'Settings → Accessibility → Sound Notifications', why: 'Alerts you to important sounds in your environment (doorbell, alarm)', forNeeds: ['significant', 'deaf'] },
-      { name: 'Hearing aids (ASHA)', path: 'Settings → Connected devices → Pair new device', why: 'Pairs modern hearing aids directly to your Android phone', forNeeds: ['hearing-aids'] },
-      { name: 'Mono audio', path: 'Settings → Accessibility → Audio adjustment → Mono audio', why: 'Plays both audio channels in both ears', forNeeds: ['mild', 'significant'] },
-      { name: 'Action Block / Voice Access', path: 'Settings → Accessibility → Voice Access → On', why: 'Full phone control by voice', forNeeds: ['limited', 'switch'] },
-      { name: 'Touch & hold delay', path: 'Settings → Accessibility → Touch & hold delay → Long', why: 'Gives you more time before a tap registers as a press-and-hold', forNeeds: ['tremor', 'arthritis'] },
-      { name: 'Switch Access', path: 'Settings → Accessibility → Switch Access', why: 'Use an external switch to control your phone', forNeeds: ['switch'] },
-      { name: 'Remove animations', path: 'Settings → Accessibility → Remove animations', why: 'Gets rid of slides and fades that can confuse or cause dizziness', forNeeds: ['focus', 'light-sensitive'] },
-    ],
-  },
-  ipad: {
-    label: 'iPad',
-    features: [
-      { name: 'Display & Text Size — Larger Text', path: 'Settings → Accessibility → Display & Text Size → Larger Text', why: 'Bigger text across the whole iPad', forNeeds: ['low-vision'] },
-      { name: 'Zoom', path: 'Settings → Accessibility → Zoom → On', why: 'Three-finger double tap to zoom in anywhere', forNeeds: ['low-vision'] },
-      { name: 'VoiceOver', path: 'Settings → Accessibility → VoiceOver → On', why: 'Full screen reader for using the iPad without sight', forNeeds: ['blind'] },
-      { name: 'Live Captions', path: 'Settings → Accessibility → Live Captions → On', why: 'Real-time captions for any audio, including FaceTime', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'AssistiveTouch', path: 'Settings → Accessibility → Touch → AssistiveTouch', why: 'On-screen helper for tricky gestures', forNeeds: ['arthritis', 'tremor', 'limited'] },
-      { name: 'Voice Control', path: 'Settings → Accessibility → Voice Control → On', why: 'Run the entire iPad with just your voice', forNeeds: ['limited', 'switch'] },
-      { name: 'Guided Access', path: 'Settings → Accessibility → Guided Access → On', why: 'Lock into one app to reduce distraction and confusion', forNeeds: ['focus', 'memory'] },
-    ],
-  },
-  'android-tablet': {
-    label: 'Android tablet',
-    features: [
-      { name: 'Font & Display Size', path: 'Settings → Display → Font size and Display size', why: 'Make text and everything bigger', forNeeds: ['low-vision'] },
-      { name: 'TalkBack', path: 'Settings → Accessibility → TalkBack', why: 'Screen reader for use without sight', forNeeds: ['blind'] },
-      { name: 'Live Caption', path: 'Media volume → caption button', why: 'Automatic captions on any audio or video', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Voice Access', path: 'Settings → Accessibility → Voice Access', why: 'Voice control for the whole tablet', forNeeds: ['limited', 'switch'] },
-    ],
-  },
-  mac: {
-    label: 'Mac',
-    features: [
-      { name: 'Zoom', path: 'System Settings → Accessibility → Zoom → Use keyboard shortcuts', why: 'Option+Cmd+= zooms in on anything on screen', forNeeds: ['low-vision'] },
-      { name: 'Display — Larger Text', path: 'System Settings → Appearance → Text size', why: 'Bigger text across the system', forNeeds: ['low-vision'] },
-      { name: 'Increase contrast', path: 'System Settings → Accessibility → Display → Increase contrast', why: 'Higher contrast makes text easier to see', forNeeds: ['low-vision'] },
-      { name: 'VoiceOver', path: 'System Settings → Accessibility → VoiceOver → On (Cmd+F5)', why: 'Full screen reader for Mac', forNeeds: ['blind'] },
-      { name: 'Color filters', path: 'System Settings → Accessibility → Display → Color filters', why: 'Adjust colors for color blindness', forNeeds: ['color-blind'] },
-      { name: 'Reduce transparency', path: 'System Settings → Accessibility → Display → Reduce transparency', why: 'Makes menus and sidebars opaque — easier to read', forNeeds: ['low-vision', 'light-sensitive'] },
-      { name: 'Live Captions', path: 'System Settings → Accessibility → Live Captions', why: 'Captions any audio playing on your Mac, including video calls', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Voice Control', path: 'System Settings → Accessibility → Voice Control → On', why: 'Operate the whole Mac by voice', forNeeds: ['limited', 'switch'] },
-      { name: 'Slow Keys', path: 'System Settings → Accessibility → Keyboard → Slow Keys', why: 'Requires you to hold a key a little longer — prevents accidental keypresses from tremor', forNeeds: ['tremor', 'arthritis'] },
-      { name: 'Sticky Keys', path: 'System Settings → Accessibility → Keyboard → Sticky Keys', why: 'Lets you press one key at a time for shortcuts like Cmd+C instead of holding them together', forNeeds: ['arthritis', 'limited'] },
-    ],
-  },
-  windows: {
-    label: 'Windows PC',
-    features: [
-      { name: 'Text size', path: 'Settings → Accessibility → Text size → Drag slider larger', why: 'Makes all text on your PC bigger', forNeeds: ['low-vision'] },
-      { name: 'Magnifier', path: 'Settings → Accessibility → Magnifier → On (Windows key + Plus)', why: 'Zooms in anywhere on screen', forNeeds: ['low-vision'] },
-      { name: 'High Contrast Themes', path: 'Settings → Accessibility → Contrast themes', why: 'Bold colors that stand out sharply against dark backgrounds', forNeeds: ['low-vision'] },
-      { name: 'Narrator', path: 'Settings → Accessibility → Narrator → On (Ctrl + Win + Enter)', why: 'Built-in Windows screen reader', forNeeds: ['blind'] },
-      { name: 'Color filters', path: 'Settings → Accessibility → Color filters', why: 'Adjust for color blindness', forNeeds: ['color-blind'] },
-      { name: 'Live captions', path: 'Settings → Accessibility → Captions → Live captions', why: 'Auto-captions for any audio on your PC', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Mono audio', path: 'Settings → Accessibility → Audio → Mono audio', why: 'Plays both channels through both speakers', forNeeds: ['mild', 'significant'] },
-      { name: 'Voice access', path: 'Settings → Accessibility → Speech → Voice access', why: 'Full PC control by voice', forNeeds: ['limited', 'switch'] },
-      { name: 'Sticky Keys / Filter Keys', path: 'Settings → Accessibility → Keyboard', why: 'Makes keyboard shortcuts easier and filters out repeated keys', forNeeds: ['arthritis', 'tremor', 'limited'] },
-      { name: 'Mouse pointer size & color', path: 'Settings → Accessibility → Mouse pointer and touch', why: 'Makes the cursor bigger and a brighter color so you can track it', forNeeds: ['low-vision'] },
-    ],
-  },
-  chromebook: {
-    label: 'Chromebook',
-    features: [
-      { name: 'Display size', path: 'Settings → Device → Displays → Display size', why: 'Everything bigger on screen', forNeeds: ['low-vision'] },
-      { name: 'ChromeVox', path: 'Settings → Accessibility → ChromeVox (Ctrl + Alt + Z)', why: 'Built-in screen reader for Chromebook', forNeeds: ['blind'] },
-      { name: 'Screen magnifier', path: 'Settings → Accessibility → Display and magnification → Screen magnifier', why: 'Zooms in on part of the screen', forNeeds: ['low-vision'] },
-      { name: 'High contrast', path: 'Settings → Accessibility → Display and magnification → Use high contrast mode', why: 'Inverts colors for easier reading', forNeeds: ['low-vision'] },
-      { name: 'Select-to-speak', path: 'Settings → Accessibility → Text-to-Speech → Select-to-speak', why: 'Highlight any text and hear it read aloud', forNeeds: ['low-vision', 'learning'] },
-      { name: 'Live Caption', path: 'Settings → Accessibility → Audio and captions → Live Caption', why: 'Captions for any audio on the Chromebook', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Dictation', path: 'Settings → Accessibility → Keyboard → Enable dictation', why: 'Type by speaking instead of using the keyboard', forNeeds: ['arthritis', 'limited'] },
-    ],
-  },
-  'apple-watch': {
-    label: 'Apple Watch',
-    features: [
-      { name: 'Larger text', path: 'On iPhone: Watch app → Accessibility → Larger Text', why: 'Bigger text on the tiny screen', forNeeds: ['low-vision'] },
-      { name: 'VoiceOver', path: 'Watch app → Accessibility → VoiceOver', why: 'Screen reader on the watch', forNeeds: ['blind'] },
-      { name: 'AssistiveTouch with hand gestures', path: 'Watch app → Accessibility → AssistiveTouch', why: 'Control your watch with one hand using pinches and clenches', forNeeds: ['limited', 'arthritis'] },
-      { name: 'Fall Detection', path: 'Watch app → Emergency SOS → Fall Detection', why: 'Watch calls for help if you fall and do not respond', forNeeds: ['limited', 'memory'] },
-      { name: 'Medication reminders', path: 'Health app → Browse → Medications', why: 'Taps your wrist to remind you to take medication', forNeeds: ['memory'] },
-    ],
-  },
-  'smart-speaker': {
-    label: 'Smart speaker',
-    features: [
-      { name: 'Slower speech rate', path: 'Alexa: Settings → Accessibility. Google: Assistant settings → Preferred speed', why: 'The speaker talks more slowly and clearly', forNeeds: ['learning', 'mild'] },
-      { name: 'Visual captions (on Echo Show or Nest Hub)', path: 'Alexa: Settings → Accessibility → Captioning. Google: Display settings → Subtitles', why: 'See captions of what the assistant is saying', forNeeds: ['mild', 'significant', 'deaf'] },
-      { name: 'Routines for reminders', path: 'Alexa or Google Home app → Routines', why: 'Have the speaker remind you daily about medication, appointments, or bedtime', forNeeds: ['memory', 'focus'] },
-    ],
-  },
-};
+interface Profile {
+  fontSize: FontSize;
+  highContrast: boolean;
+  reduceMotion: boolean;
+  captionsPreferred: boolean;
+  largerTapTargets: boolean;
+  textToSpeech: boolean;
+  screenReaderOptimized: boolean;
+}
 
-const VISION_OPTIONS: Array<{ value: Vision; label: string }> = [
-  { value: 'none', label: 'No vision issues' },
-  { value: 'low-vision', label: 'Low vision' },
-  { value: 'blind', label: 'Blindness' },
-  { value: 'color-blind', label: 'Color blindness' },
-  { value: 'light-sensitive', label: 'Sensitivity to bright screens' },
-];
-const HEARING_OPTIONS: Array<{ value: Hearing; label: string }> = [
-  { value: 'none', label: 'No hearing issues' },
-  { value: 'mild', label: 'Some hearing loss' },
-  { value: 'significant', label: 'Significant hearing loss' },
-  { value: 'deaf', label: 'Deafness' },
-  { value: 'hearing-aids', label: 'I wear hearing aids' },
-];
-const MOTOR_OPTIONS: Array<{ value: Motor; label: string }> = [
-  { value: 'none', label: 'No motor issues' },
-  { value: 'arthritis', label: 'Arthritis' },
-  { value: 'tremor', label: 'Tremor' },
-  { value: 'limited', label: 'Limited mobility' },
-  { value: 'switch', label: 'I use a switch device' },
-];
-const COGNITIVE_OPTIONS: Array<{ value: Cognitive; label: string }> = [
-  { value: 'none', label: 'No cognitive concerns' },
-  { value: 'memory', label: 'Memory concerns' },
-  { value: 'focus', label: 'Focus challenges' },
-  { value: 'learning', label: 'Learning difference' },
-];
-const DEVICE_OPTIONS: Array<{ value: Device; label: string }> = [
-  { value: 'iphone', label: 'iPhone' },
-  { value: 'android-phone', label: 'Android phone' },
-  { value: 'ipad', label: 'iPad' },
-  { value: 'android-tablet', label: 'Android tablet' },
-  { value: 'mac', label: 'Mac' },
-  { value: 'windows', label: 'Windows PC' },
-  { value: 'chromebook', label: 'Chromebook' },
-  { value: 'apple-watch', label: 'Apple Watch' },
-  { value: 'smart-speaker', label: 'Smart speaker (Alexa/Google)' },
+const STORAGE_KEY = 'teksure-a11y-profile';
+
+// ─── Question definitions ──────────────────────────────────────────────────
+interface QuestionDef {
+  id: keyof Answers;
+  icon: typeof Eye;
+  text: string;
+  options: Array<{ value: 'yes' | 'no' | 'sometimes'; label: string }>;
+}
+
+const QUESTIONS: QuestionDef[] = [
+  {
+    id: 'smallText',
+    icon: Eye,
+    text: 'Do you wear reading glasses or struggle to see small text?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'sometimes', label: 'Sometimes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'contrastTrouble',
+    icon: Eye,
+    text: 'Do you have trouble reading white text on dark backgrounds (or vice versa)?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'motionBothers',
+    icon: Sparkles,
+    text: 'Do bright flashing or moving animations bother you?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'hearingAid',
+    icon: Ear,
+    text: 'Do you use a hearing aid?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'tapTargets',
+    icon: Hand,
+    text: 'Do you have trouble with small tap targets (like tiny buttons)?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'sometimes', label: 'Sometimes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'preferAloud',
+    icon: Volume2,
+    text: 'Do you prefer to hear content read aloud?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
+  {
+    id: 'screenReader',
+    icon: MousePointer2,
+    text: 'Do you use a screen reader like VoiceOver or TalkBack?',
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No' },
+    ],
+  },
 ];
 
+// ─── Profile generation from answers ──────────────────────────────────────
+function buildProfile(a: Answers): Profile {
+  // Font size
+  let fontSize: FontSize = 'normal';
+  if (a.smallText === 'yes') fontSize = 'x-large';
+  else if (a.smallText === 'sometimes') fontSize = 'large';
+
+  // If they use a screen reader, keep text at least large for sighted companions
+  if (a.screenReader === 'yes' && fontSize === 'normal') fontSize = 'large';
+
+  return {
+    fontSize,
+    highContrast: a.contrastTrouble === 'yes',
+    reduceMotion: a.motionBothers === 'yes',
+    captionsPreferred: a.hearingAid === 'yes',
+    largerTapTargets: a.tapTargets === 'yes' || a.tapTargets === 'sometimes',
+    textToSpeech: a.preferAloud === 'yes',
+    screenReaderOptimized: a.screenReader === 'yes',
+  };
+}
+
+// ─── Apply profile to the site ─────────────────────────────────────────────
+function applyProfile(p: Profile) {
+  const html = document.documentElement;
+  const body = document.body;
+
+  // Font size — use TekSure's existing font-size-* classes on html
+  html.classList.remove('font-size-large', 'font-size-xl', 'font-size-xxl');
+  if (p.fontSize === 'large') html.classList.add('font-size-large');
+  else if (p.fontSize === 'x-large') html.classList.add('font-size-xl');
+
+  // High contrast — use TekSure's existing high-contrast class on html
+  if (p.highContrast) html.classList.add('high-contrast');
+  else html.classList.remove('high-contrast');
+
+  // User-facing semantic body classes (spec)
+  body.classList.toggle('teksure-large-text', p.fontSize !== 'normal');
+  body.classList.toggle('teksure-high-contrast', p.highContrast);
+  body.classList.toggle('teksure-reduce-motion', p.reduceMotion);
+  body.classList.toggle('teksure-large-targets', p.largerTapTargets);
+  body.classList.toggle('teksure-tts', p.textToSpeech);
+  body.classList.toggle('teksure-screen-reader', p.screenReaderOptimized);
+
+  // Persist
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  } catch {
+    /* storage disabled — best effort */
+  }
+}
+
+// ─── Component ────────────────────────────────────────────────────────────
 export default function AccessibilityProfileBuilder() {
   const [step, setStep] = useState(0);
-  const [vision, setVision] = useState<Vision[]>([]);
-  const [hearing, setHearing] = useState<Hearing[]>([]);
-  const [motor, setMotor] = useState<Motor[]>([]);
-  const [cognitive, setCognitive] = useState<Cognitive[]>([]);
-  const [devices, setDevices] = useState<Device[]>([]);
+  const [answers, setAnswers] = useState<Answers>({
+    smallText: null,
+    contrastTrouble: null,
+    motionBothers: null,
+    hearingAid: null,
+    tapTargets: null,
+    preferAloud: null,
+    screenReader: null,
+  });
+  const [done, setDone] = useState(false);
+  const [profile, setProfile] = useState<Profile | null>(null);
 
-  const toggle = <T,>(list: T[], value: T, setter: (v: T[]) => void) => {
-    if (list.includes(value)) {
-      setter(list.filter((x) => x !== value));
-    } else {
-      setter([...list, value]);
+  // On mount, load any saved profile so the preview reflects the current state
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const saved: Profile = JSON.parse(raw);
+        setProfile(saved);
+      }
+    } catch {
+      /* ignore */
     }
+  }, []);
+
+  const totalSteps = QUESTIONS.length;
+  const currentQuestion = QUESTIONS[step];
+  const progressPct = Math.round(((step + (done ? 1 : 0)) / (totalSteps + 1)) * 100);
+
+  const selectAnswer = (value: 'yes' | 'no' | 'sometimes') => {
+    const updated = { ...answers, [currentQuestion.id]: value } as Answers;
+    setAnswers(updated);
+    // auto-advance
+    if (step < totalSteps - 1) {
+      setStep(step + 1);
+    } else {
+      const p = buildProfile(updated);
+      setProfile(p);
+      applyProfile(p);
+      setDone(true);
+    }
+  };
+
+  const goBack = () => {
+    if (done) {
+      setDone(false);
+      setStep(totalSteps - 1);
+      return;
+    }
+    if (step > 0) setStep(step - 1);
   };
 
   const reset = () => {
     setStep(0);
-    setVision([]);
-    setHearing([]);
-    setMotor([]);
-    setCognitive([]);
-    setDevices([]);
+    setAnswers({
+      smallText: null,
+      contrastTrouble: null,
+      motionBothers: null,
+      hearingAid: null,
+      tapTargets: null,
+      preferAloud: null,
+      screenReader: null,
+    });
+    setDone(false);
   };
 
-  const allNeeds = [...vision, ...hearing, ...motor, ...cognitive];
+  const clearSaved = () => {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      /* ignore */
+    }
+    // Remove all applied classes
+    const html = document.documentElement;
+    html.classList.remove('font-size-large', 'font-size-xl', 'font-size-xxl', 'high-contrast');
+    const body = document.body;
+    [
+      'teksure-large-text',
+      'teksure-high-contrast',
+      'teksure-reduce-motion',
+      'teksure-large-targets',
+      'teksure-tts',
+      'teksure-screen-reader',
+    ].forEach((c) => body.classList.remove(c));
+    setProfile(null);
+    reset();
+  };
 
-  const plan = devices.map((d) => {
-    const deviceInfo = DEVICE_FEATURES[d];
-    const relevantFeatures = deviceInfo.features.filter((f) =>
-      f.forNeeds.some((n) => allNeeds.includes(n))
-    );
-    return { device: d, label: deviceInfo.label, features: relevantFeatures };
-  });
-
-  const steps = [
-    {
-      title: 'Your vision',
-      icon: Eye,
-      prompt: 'Do you have any of the following vision needs? Check all that apply.',
-      options: VISION_OPTIONS,
-      selected: vision,
-      onToggle: (v: string) => toggle(vision, v as Vision, setVision),
-    },
-    {
-      title: 'Your hearing',
-      icon: Ear,
-      prompt: 'Do you have any hearing needs? Check all that apply.',
-      options: HEARING_OPTIONS,
-      selected: hearing,
-      onToggle: (v: string) => toggle(hearing, v as Hearing, setHearing),
-    },
-    {
-      title: 'Motor and dexterity',
-      icon: Hand,
-      prompt: 'Any motor or dexterity needs? Check all that apply.',
-      options: MOTOR_OPTIONS,
-      selected: motor,
-      onToggle: (v: string) => toggle(motor, v as Motor, setMotor),
-    },
-    {
-      title: 'Memory, focus, and learning',
-      icon: Brain,
-      prompt: 'Any memory, focus, or learning needs? Check all that apply.',
-      options: COGNITIVE_OPTIONS,
-      selected: cognitive,
-      onToggle: (v: string) => toggle(cognitive, v as Cognitive, setCognitive),
-    },
-    {
-      title: 'Your devices',
-      icon: Smartphone,
-      prompt: 'Which devices do you use? Check all that apply — we will build instructions for each one.',
-      options: DEVICE_OPTIONS,
-      selected: devices,
-      onToggle: (v: string) => toggle(devices, v as Device, setDevices),
-    },
-  ];
-
-  const isResults = step >= steps.length;
-  const currentStep = steps[step];
-  const StepIcon = currentStep?.icon;
+  const CurrentIcon = currentQuestion?.icon;
+  const selectedValue = currentQuestion ? answers[currentQuestion.id] : null;
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-background teksure-a11y-quiz">
       <SEOHead
-        title="Accessibility Profile Builder — Set Up Every Device at Once | TekSure"
-        description="Build a personalized accessibility plan. Tell us about your vision, hearing, motor, and memory needs — we'll show you every setting to turn on across your iPhone, Android, Mac, PC, and more."
+        title="Accessibility Profile Builder — Make TekSure Work For You | TekSure"
+        description="Answer a few quick questions about your eyes, ears, and hands. We'll build a personalized accessibility profile, apply it to TekSure, and show you how to set up your phone to match."
+        path="/tools/accessibility-profile-builder"
       />
       <Navbar />
 
       <main className="flex-1">
-        <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Accessibility Profile Builder' }]} />
+        <PageBreadcrumb
+          items={[
+            { label: 'Tools', href: '/tools' },
+            { label: 'Accessibility Profile Builder' },
+          ]}
+        />
 
-        {/* Hero */}
-        <section className="bg-gradient-to-b from-primary/5 to-background py-12 md:py-16">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-              <Accessibility className="h-4 w-4" />
-              Your personal accessibility setup
+        {/* Hero — always larger text & high contrast within the quiz itself */}
+        <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+          <div className="container mx-auto px-4 max-w-3xl text-center">
+            <div className="inline-flex items-center gap-2 bg-primary/15 text-primary px-4 py-2 rounded-full text-base font-semibold mb-5">
+              <Accessibility className="h-5 w-5" />
+              Personalized setup
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Tell Us About You. We'll Show You How to Set Up Every Device.
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-5 leading-tight">
+              Make TekSure (and Your Phone) Work for You
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Answer 5 short questions. We will build a personalized plan with the exact settings
-              path for every feature on every device you use.
+            <p className="text-xl md:text-2xl text-foreground/90 font-medium">
+              Quick questions about your eyes, ears, and hands — we'll set everything up.
             </p>
           </div>
         </section>
 
-        {/* Wizard */}
+        {/* Quiz / Results */}
         <section className="py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-3xl">
-            {!isResults && currentStep && (
-              <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm">
-                {/* Progress */}
-                <div className="flex items-center gap-2 mb-6">
-                  {steps.map((_, i) => (
-                    <div
-                      key={i}
-                      className={`h-2 flex-1 rounded-full ${i <= step ? 'bg-primary' : 'bg-muted'}`}
-                    />
-                  ))}
+            {/* Progress bar — accessible to screen readers */}
+            <div
+              className="mb-6"
+              role="progressbar"
+              aria-valuenow={progressPct}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-label="Quiz progress"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-base font-semibold text-foreground">
+                  {done ? 'All done!' : `Question ${step + 1} of ${totalSteps}`}
+                </span>
+                <span className="text-base font-medium text-muted-foreground">{progressPct}%</span>
+              </div>
+              <div className="h-3 w-full rounded-full bg-muted overflow-hidden">
+                <div
+                  className="h-full bg-primary transition-all duration-300"
+                  style={{ width: `${progressPct}%` }}
+                />
+              </div>
+            </div>
+
+            {/* ── Quiz (extra-high contrast + large text inside the quiz) ── */}
+            {!done && currentQuestion && (
+              <div
+                className="bg-card border-2 border-foreground/15 rounded-2xl p-6 md:p-10 shadow-md quiz-card"
+                style={{ fontSize: '1.125rem' }}
+              >
+                <div className="flex items-start gap-4 mb-6">
+                  {CurrentIcon && (
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">
+                      <CurrentIcon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                  )}
+                  <h2 className="text-2xl md:text-3xl font-bold leading-snug">
+                    {currentQuestion.text}
+                  </h2>
                 </div>
 
-                <div className="flex items-center gap-3 mb-2">
-                  {StepIcon && <StepIcon className="h-6 w-6 text-primary" />}
-                  <h2 className="text-2xl font-bold">{currentStep.title}</h2>
-                </div>
-                <p className="text-muted-foreground mb-6">{currentStep.prompt}</p>
-
-                <div className="space-y-2">
-                  {currentStep.options.map((opt) => {
-                    const selected = (currentStep.selected as string[]).includes(opt.value);
+                <div
+                  className="grid gap-3 sm:gap-4"
+                  role="radiogroup"
+                  aria-label={currentQuestion.text}
+                >
+                  {currentQuestion.options.map((opt) => {
+                    const selected = selectedValue === opt.value;
                     return (
-                      <label
+                      <button
                         key={opt.value}
-                        className={`flex items-center gap-3 p-3 border rounded-lg cursor-pointer transition-colors ${
-                          selected ? 'border-primary bg-primary/5' : 'hover:bg-muted/50'
-                        }`}
+                        type="button"
+                        role="radio"
+                        aria-checked={selected}
+                        onClick={() => selectAnswer(opt.value)}
+                        className={[
+                          'w-full text-left px-5 py-5 rounded-xl border-2 transition-colors',
+                          'text-xl font-semibold min-h-[3.5rem]',
+                          'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
+                          selected
+                            ? 'border-primary bg-primary/10 text-primary'
+                            : 'border-foreground/20 bg-background hover:bg-muted hover:border-foreground/40',
+                        ].join(' ')}
                       >
-                        <Checkbox
-                          checked={selected}
-                          onCheckedChange={() => currentStep.onToggle(opt.value)}
-                        />
-                        <span className="text-base">{opt.label}</span>
-                      </label>
+                        <span className="inline-flex items-center gap-3">
+                          <span
+                            className={[
+                              'h-5 w-5 rounded-full border-2 shrink-0',
+                              selected ? 'border-primary bg-primary' : 'border-foreground/40',
+                            ].join(' ')}
+                            aria-hidden="true"
+                          />
+                          {opt.label}
+                        </span>
+                      </button>
                     );
                   })}
                 </div>
 
-                <div className="flex justify-between mt-8">
+                <div className="flex justify-between items-center mt-8 pt-6 border-t border-foreground/10">
                   <Button
                     variant="outline"
-                    onClick={() => setStep(Math.max(0, step - 1))}
+                    onClick={goBack}
                     disabled={step === 0}
-                    className="gap-2"
+                    className="gap-2 text-base h-12 px-5"
                   >
-                    <ArrowLeft className="h-4 w-4" /> Back
+                    <ArrowLeft className="h-5 w-5" /> Back
                   </Button>
-                  <Button onClick={() => setStep(step + 1)} className="gap-2">
-                    {step === steps.length - 1 ? 'Build my profile' : 'Next'}
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
+                  <span className="text-sm text-muted-foreground hidden sm:inline">
+                    Tap an answer to continue
+                  </span>
+                  <div className="w-[92px]" aria-hidden="true" />
                 </div>
               </div>
             )}
 
-            {isResults && (
+            {/* ── Results ────────────────────────────────────────────── */}
+            {done && profile && (
               <div className="space-y-6">
-                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm">
-                  <div className="flex items-center gap-3 mb-4">
-                    <CheckCircle2 className="h-7 w-7 text-green-600" />
-                    <h2 className="text-2xl font-bold">Your Accessibility Profile</h2>
+                {/* Confirmation + Summary */}
+                <div className="bg-card border-2 border-primary/30 rounded-2xl p-6 md:p-8 shadow-md">
+                  <div className="flex items-start gap-3 mb-4">
+                    <CheckCircle2 className="h-8 w-8 text-green-600 shrink-0" aria-hidden="true" />
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold mb-1">
+                        Your profile is saved and applied
+                      </h2>
+                      <p className="text-base text-muted-foreground">
+                        TekSure will remember these settings on this device. Look around — things
+                        should already feel more comfortable.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-muted-foreground mb-4">
-                    Based on what you told us, here is the exact setup for each of your devices.
-                    Print this page and keep it with you as you go through settings.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {allNeeds.filter(n => n !== 'none').length === 0 && (
-                      <Badge variant="outline">No specific needs selected</Badge>
-                    )}
-                    {[...vision, ...hearing, ...motor, ...cognitive].filter(n => n !== 'none').map((n) => (
-                      <Badge key={n} variant="secondary">{n}</Badge>
-                    ))}
+
+                  <div className="grid sm:grid-cols-2 gap-3 mt-5">
+                    <ProfileRow label="Font size" value={fontSizeLabel(profile.fontSize)} />
+                    <ProfileRow label="High contrast" value={profile.highContrast ? 'On' : 'Off'} />
+                    <ProfileRow label="Reduce motion" value={profile.reduceMotion ? 'On' : 'Off'} />
+                    <ProfileRow
+                      label="Captions preferred"
+                      value={profile.captionsPreferred ? 'Yes' : 'No'}
+                    />
+                    <ProfileRow
+                      label="Larger tap targets"
+                      value={profile.largerTapTargets ? 'On' : 'Off'}
+                    />
+                    <ProfileRow
+                      label="Text-to-speech"
+                      value={profile.textToSpeech ? 'Available' : 'Off'}
+                    />
+                    <ProfileRow
+                      label="Screen reader optimized"
+                      value={profile.screenReaderOptimized ? 'Yes' : 'No'}
+                    />
                   </div>
                 </div>
 
-                {plan.length === 0 && (
-                  <div className="bg-card border rounded-xl p-6 text-center">
-                    <p className="text-muted-foreground">
-                      No devices selected. Go back and pick at least one device to see recommendations.
+                {/* Live preview */}
+                <div className="bg-card border rounded-2xl p-6 md:p-8 shadow-sm">
+                  <h3 className="text-xl md:text-2xl font-bold mb-2 flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-primary" />
+                    This is what it looks like now
+                  </h3>
+                  <p className="text-muted-foreground mb-5">
+                    Here's a little sample of the TekSure look with your settings applied.
+                  </p>
+                  <div className="rounded-xl border-2 border-dashed border-foreground/20 p-5 space-y-4">
+                    <h4 className="font-bold text-foreground">Hello from TekSure</h4>
+                    <p className="text-foreground">
+                      This paragraph uses your chosen text size. If it feels small, rerun the quiz
+                      and pick "yes" for glasses. If it feels too big, you can always adjust.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      <Button size="lg">Primary button</Button>
+                      <Button size="lg" variant="outline">
+                        Secondary button
+                      </Button>
+                      <Badge variant="secondary">Sample badge</Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Smaller supporting text looks like this.
                     </p>
                   </div>
-                )}
-
-                {plan.map(({ device, label, features }) => (
-                  <div key={device} className="bg-card border rounded-xl p-6 md:p-8 shadow-sm">
-                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <Smartphone className="h-5 w-5 text-primary" />
-                      On your {label}
-                    </h3>
-                    {features.length === 0 ? (
-                      <p className="text-sm text-muted-foreground">
-                        We did not find features for your specific needs on this device yet. Check
-                        our <Link to="/accessibility" className="text-primary underline">Accessibility Hub</Link> for
-                        more options.
-                      </p>
-                    ) : (
-                      <ul className="space-y-5">
-                        {features.map((f) => (
-                          <li key={f.name} className="border-l-4 border-primary pl-4">
-                            <div className="font-semibold">{f.name}</div>
-                            <div className="text-sm font-mono bg-muted/50 rounded px-2 py-1 inline-block mt-1 mb-2">
-                              {f.path}
-                            </div>
-                            <p className="text-sm text-muted-foreground mb-2">{f.why}</p>
-                            <label className="flex items-center gap-2 text-sm">
-                              <Checkbox />
-                              <span>I tried this — did it help?</span>
-                            </label>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-
-                <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center space-y-3">
-                  <HeartHandshake className="h-10 w-10 text-primary mx-auto" />
-                  <h3 className="text-xl font-bold">Want deeper guides?</h3>
-                  <p className="text-muted-foreground">
-                    Our Accessibility Hub has step-by-step walkthroughs for every feature above.
-                  </p>
-                  <Button asChild size="lg">
-                    <Link to="/accessibility">Visit Accessibility Hub</Link>
-                  </Button>
                 </div>
 
-                <div className="flex flex-wrap gap-3 justify-center">
-                  <Button onClick={() => window.print()} variant="outline" className="gap-2">
-                    <Printer className="h-4 w-4" />
-                    Print my profile
-                  </Button>
-                  <Button onClick={reset} variant="outline">
-                    Start over
+                {/* Apply to phone */}
+                <div className="bg-primary/5 border-2 border-primary/20 rounded-2xl p-6 md:p-8">
+                  <h3 className="text-xl md:text-2xl font-bold mb-2 flex items-center gap-2">
+                    <Smartphone className="h-6 w-6 text-primary" />
+                    Apply to my phone too
+                  </h3>
+                  <p className="text-muted-foreground mb-5">
+                    Your phone has its own accessibility settings. Here's how to match them to your
+                    TekSure profile.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-5">
+                    <PhoneCard
+                      platform="iPhone / iPad"
+                      icon={<Apple className="h-5 w-5" />}
+                      linkLabel="Open Accessibility Settings"
+                      // Opening Settings on iOS requires the device itself; link shows the path.
+                      href="https://support.apple.com/guide/iphone/accessibility-features-iph3e2e4367/ios"
+                      steps={iphoneSteps(profile)}
+                    />
+                    <PhoneCard
+                      platform="Android"
+                      icon={<Smartphone className="h-5 w-5" />}
+                      linkLabel="Open Android Accessibility Help"
+                      href="https://support.google.com/accessibility/android/answer/6006564"
+                      steps={androidSteps(profile)}
+                    />
+                  </div>
+
+                  <p className="mt-5 text-sm text-muted-foreground flex items-start gap-2">
+                    <Info className="h-4 w-4 mt-0.5 shrink-0" />
+                    These open help pages in a new tab — the actual toggles live inside the
+                    Settings app on your phone.
+                  </p>
+                </div>
+
+                {/* Actions */}
+                <div className="flex flex-wrap gap-3 justify-between items-center pt-2">
+                  <div className="flex flex-wrap gap-3">
+                    <Button onClick={reset} variant="outline" className="gap-2 h-12 text-base">
+                      <RotateCcw className="h-4 w-4" /> Retake the quiz
+                    </Button>
+                    <Button onClick={clearSaved} variant="ghost" className="h-12 text-base">
+                      Clear my profile
+                    </Button>
+                  </div>
+                  <Button asChild size="lg" className="h-12 text-base">
+                    <Link to="/accessibility">Visit the Accessibility Hub</Link>
                   </Button>
                 </div>
               </div>
@@ -464,4 +531,110 @@ export default function AccessibilityProfileBuilder() {
       <Footer />
     </div>
   );
+}
+
+// ─── Small helpers & subcomponents ─────────────────────────────────────────
+
+function fontSizeLabel(f: FontSize): string {
+  if (f === 'large') return 'Large';
+  if (f === 'x-large') return 'X-Large';
+  return 'Normal';
+}
+
+function ProfileRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-center justify-between bg-muted/40 rounded-lg px-4 py-3 border border-border">
+      <span className="font-medium">{label}</span>
+      <span className="text-foreground font-semibold">{value}</span>
+    </div>
+  );
+}
+
+function PhoneCard({
+  platform,
+  icon,
+  steps,
+  linkLabel,
+  href,
+}: {
+  platform: string;
+  icon: React.ReactNode;
+  steps: string[];
+  linkLabel: string;
+  href: string;
+}) {
+  return (
+    <div className="bg-card border rounded-xl p-5">
+      <div className="flex items-center gap-2 mb-3">
+        {icon}
+        <h4 className="text-lg font-bold">{platform}</h4>
+      </div>
+      <ol className="space-y-2 mb-4 list-decimal list-inside">
+        {steps.map((s, i) => (
+          <li key={i} className="text-foreground leading-relaxed">
+            {s}
+          </li>
+        ))}
+      </ol>
+      <Button asChild variant="outline" size="sm" className="gap-2">
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {linkLabel}
+          <ExternalLink className="h-3.5 w-3.5" />
+        </a>
+      </Button>
+    </div>
+  );
+}
+
+function iphoneSteps(p: Profile): string[] {
+  const steps: string[] = ['Open Settings → Accessibility'];
+  if (p.fontSize !== 'normal') {
+    steps.push(
+      `Display & Text Size → Larger Text → turn on and drag slider to ${
+        p.fontSize === 'x-large' ? 'the largest size' : 'a comfortable larger size'
+      }`,
+    );
+  }
+  if (p.highContrast) {
+    steps.push('Display & Text Size → Increase Contrast → On');
+    steps.push('Display & Text Size → Bold Text → On');
+  }
+  if (p.reduceMotion) steps.push('Motion → Reduce Motion → On');
+  if (p.captionsPreferred) {
+    steps.push('Hearing Devices → pair your hearing aid (Made for iPhone)');
+    steps.push('Subtitles & Captioning → Closed Captions + SDH → On');
+    steps.push('Live Captions → On');
+  }
+  if (p.largerTapTargets) steps.push('Touch → AssistiveTouch (optional) + enable Haptic Touch delay');
+  if (p.textToSpeech) steps.push('Spoken Content → Speak Screen → On (swipe down with two fingers to read)');
+  if (p.screenReaderOptimized) steps.push('VoiceOver → On (or triple-click the side button)');
+  if (steps.length === 1) steps.push('Explore settings that suit you — no changes required based on your answers.');
+  return steps;
+}
+
+function androidSteps(p: Profile): string[] {
+  const steps: string[] = ['Open Settings → Accessibility'];
+  if (p.fontSize !== 'normal') {
+    steps.push(
+      `Display size and text → Font size → ${
+        p.fontSize === 'x-large' ? 'drag to maximum' : 'drag one or two steps larger'
+      }`,
+    );
+    steps.push('Display size and text → Display size → Larger');
+  }
+  if (p.highContrast) {
+    steps.push('Display size and text → High contrast text → On');
+    steps.push('Color and motion → Color correction (if needed)');
+  }
+  if (p.reduceMotion) steps.push('Color and motion → Remove animations → On');
+  if (p.captionsPreferred) {
+    steps.push('Hearing → Hearing aids → pair your device');
+    steps.push('Hearing → Live Caption → On');
+    steps.push('Hearing → Caption preferences → customize size & style');
+  }
+  if (p.largerTapTargets) steps.push('Interaction controls → Touch & hold delay → Long');
+  if (p.textToSpeech) steps.push('Text-to-speech output → set voice + tap Select to Speak');
+  if (p.screenReaderOptimized) steps.push('TalkBack → On (or hold both volume keys for 3 seconds)');
+  if (steps.length === 1) steps.push('Explore settings that suit you — no changes required based on your answers.');
+  return steps;
 }

@@ -459,3 +459,52 @@ html.high-contrast button:focus {
   outline: 3px solid hsl(var(--primary)) !important;
   outline-offset: 2px !important;
 }
+
+/* ─── TekSure Accessibility Profile (body classes) ────────────── */
+/* These are semantic body classes set by the Accessibility Profile
+   Builder (src/pages/tools/AccessibilityProfileBuilder.tsx).
+   The heavy lifting for font size / high contrast is done via the
+   existing html.font-size-* and html.high-contrast classes above.
+   The rules below cover the remaining behaviors. */
+
+body.teksure-reduce-motion *,
+body.teksure-reduce-motion *::before,
+body.teksure-reduce-motion *::after {
+  transition-duration: 0.01ms !important;
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+}
+
+body.teksure-reduce-motion [data-state="open"],
+body.teksure-reduce-motion [data-state="closed"],
+body.teksure-reduce-motion .animate-in,
+body.teksure-reduce-motion .animate-out,
+body.teksure-reduce-motion [class*="animate-"] {
+  animation-duration: 0.01ms !important;
+  animation-fill-mode: none !important;
+}
+
+body.teksure-large-targets button,
+body.teksure-large-targets a,
+body.teksure-large-targets [role="button"],
+body.teksure-large-targets input[type="button"],
+body.teksure-large-targets input[type="submit"] {
+  min-height: 48px !important;
+  min-width: 48px !important;
+}
+
+body.teksure-large-targets input,
+body.teksure-large-targets select,
+body.teksure-large-targets textarea {
+  min-height: 48px !important;
+}
+
+/* Quiz card itself always gets strong contrast + readable size, even
+   for users who haven't applied a profile yet. */
+.teksure-a11y-quiz .quiz-card {
+  font-size: 1.125rem;
+}
+.teksure-a11y-quiz .quiz-card button {
+  min-height: 48px;
+}

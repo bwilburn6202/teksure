@@ -1,224 +1,452 @@
-import { useState, useMemo } from 'react';
-import { Search, Rocket, Clock, CheckCircle2, Compass } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { useState, useEffect, useCallback } from 'react';
+import { Rocket, Clock, Compass, ArrowUp, Lightbulb, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { roadmapItems, RoadmapStatus } from '@/data/roadmapData';
-import { Separator } from '@/components/ui/separator';
 
+// ── Data ─────────────────────────────────────────────────────────────────────
+type RoadmapStatus = 'now' | 'next' | 'later';
+
+interface RoadmapItem {
+  id: string;
+  title: string;
+  description: string;
+  status: RoadmapStatus;
+  initialVotes: number;
+}
+
+const ROADMAP_ITEMS: RoadmapItem[] = [
+  // ── NOW ──
+  {
+    id: 'tekbrain-expansion',
+    title: 'TekBrain knowledge base expansion',
+    description:
+      'Embedding thousands more step-by-step guides so TekBrain can answer almost any everyday tech question.',
+    status: 'now',
+    initialVotes: 248,
+  },
+  {
+    id: 'mobile-app',
+    title: 'Mobile app for iOS and Android',
+    description:
+      'A simple, senior-friendly phone app with offline guides, one-tap help, and larger buttons.',
+    status: 'now',
+    initialVotes: 412,
+  },
+  {
+    id: 'spanish-guides',
+    title: 'Spanish language guides',
+    description:
+      'Every TekSure guide available in clear, everyday Spanish — written by native speakers, not machine translation.',
+    status: 'now',
+    initialVotes: 187,
+  },
+  {
+    id: 'volunteer-program',
+    title: 'Volunteer contributor program',
+    description:
+      'A welcoming way for retired techies, teachers, and kind neighbors to help write and review guides.',
+    status: 'now',
+    initialVotes: 96,
+  },
+
+  // ── NEXT ──
+  {
+    id: 'teksure-plus',
+    title: 'TekSure Plus membership tier',
+    description:
+      'Priority help, printable guide packets, and extra tools for folks who want a little more support — still free at the core.',
+    status: 'next',
+    initialVotes: 134,
+  },
+  {
+    id: 'live-video-help',
+    title: 'Live 1-on-1 tech help video sessions',
+    description:
+      'Book a friendly technician for a face-to-face video call when typing just isn\u2019t enough.',
+    status: 'next',
+    initialVotes: 356,
+  },
+  {
+    id: 'print-booklets',
+    title: 'Print-on-demand booklets by mail',
+    description:
+      'Physical, spiral-bound guidebooks mailed to your door — no printer required, easy to keep by the computer.',
+    status: 'next',
+    initialVotes: 201,
+  },
+  {
+    id: 'weekly-newsletter',
+    title: 'Weekly email newsletter',
+    description:
+      'One short, friendly email every Sunday with a helpful tip, a scam warning, and the week\u2019s best guide.',
+    status: 'next',
+    initialVotes: 289,
+  },
+  {
+    id: 'partner-library',
+    title: 'Partner library integration',
+    description:
+      'Partnering with local libraries so TekSure guides are available on library computers and at help desks.',
+    status: 'next',
+    initialVotes: 78,
+  },
+  {
+    id: 'chrome-extension',
+    title: 'Chrome extension \u2014 scam warnings',
+    description:
+      'A small browser helper that quietly warns you when a webpage or link looks like a known scam.',
+    status: 'next',
+    initialVotes: 312,
+  },
+  {
+    id: 'smart-tv-app',
+    title: 'Smart TV app with voice control',
+    description:
+      'Watch TekSure video guides on your television, and ask TekBrain questions out loud from your couch.',
+    status: 'next',
+    initialVotes: 142,
+  },
+  {
+    id: 'voice-first-calls',
+    title: 'Voice-first AI calls (TekBrain over phone)',
+    description:
+      'Call a phone number and talk to TekBrain out loud — perfect for folks who don\u2019t want to type.',
+    status: 'next',
+    initialVotes: 267,
+  },
+
+  // ── LATER ──
+  {
+    id: 'mandarin-vietnamese',
+    title: 'Mandarin and Vietnamese translations',
+    description:
+      'Expanding beyond Spanish to reach more communities with carefully translated, culturally-aware guides.',
+    status: 'later',
+    initialVotes: 64,
+  },
+  {
+    id: 'ar-glasses',
+    title: 'AR glasses tutorials',
+    description:
+      'Once augmented-reality glasses become everyday tech, we\u2019ll help people learn to use them safely.',
+    status: 'later',
+    initialVotes: 29,
+  },
+  {
+    id: 'in-person-classes',
+    title: 'In-person TekSure classes in major cities',
+    description:
+      'Small, friendly group classes at senior centers and libraries \u2014 starting with a few pilot cities.',
+    status: 'later',
+    initialVotes: 173,
+  },
+  {
+    id: 'white-label-senior-living',
+    title: 'White-label for senior living communities',
+    description:
+      'A custom version of TekSure that senior living communities can offer to every resident.',
+    status: 'later',
+    initialVotes: 87,
+  },
+  {
+    id: 'family-account-plans',
+    title: 'Family account plans',
+    description:
+      'One account shared by a whole family so adult children can help parents and grandparents remotely.',
+    status: 'later',
+    initialVotes: 221,
+  },
+  {
+    id: 'teksure-hardware',
+    title: 'TekSure Hardware \u2014 senior-friendly tablet',
+    description:
+      'A simple, pre-configured tablet with TekSure built in \u2014 big buttons, no confusing setup.',
+    status: 'later',
+    initialVotes: 308,
+  },
+  {
+    id: 'community-buddies',
+    title: 'Community tech buddies matching',
+    description:
+      'Match kind volunteers with people who need a little ongoing tech support \u2014 like a gentle pen-pal for tech questions.',
+    status: 'later',
+    initialVotes: 115,
+  },
+  {
+    id: 'video-first-guides',
+    title: 'Video-first guide format',
+    description:
+      'Short, plain-language video walkthroughs as the main format for every guide, with text as a backup.',
+    status: 'later',
+    initialVotes: 198,
+  },
+];
+
+// ── Status config ────────────────────────────────────────────────────────────
 const statusConfig: Record<RoadmapStatus, {
   label: string;
+  description: string;
   icon: typeof Rocket;
   badgeClass: string;
+  columnAccent: string;
   dotClass: string;
 }> = {
-  live: {
-    label: 'Live',
-    icon: CheckCircle2,
-    badgeClass: 'bg-[hsl(var(--teksure-success)/0.15)] text-[hsl(var(--teksure-success))] border-[hsl(var(--teksure-success)/0.3)]',
+  now: {
+    label: 'Now',
+    description: 'Currently building',
+    icon: Rocket,
+    badgeClass:
+      'bg-[hsl(var(--teksure-success)/0.15)] text-[hsl(var(--teksure-success))] border-[hsl(var(--teksure-success)/0.3)]',
+    columnAccent: 'border-[hsl(var(--teksure-success)/0.4)]',
     dotClass: 'bg-[hsl(var(--teksure-success))]',
   },
-  'in-progress': {
-    label: 'In Progress',
-    icon: Rocket,
-    badgeClass: 'bg-[hsl(var(--teksure-warning)/0.15)] text-[hsl(var(--teksure-warning))] border-[hsl(var(--teksure-warning)/0.3)]',
-    dotClass: 'bg-[hsl(var(--teksure-warning))]',
-  },
-  planned: {
-    label: 'Planned',
+  next: {
+    label: 'Next',
+    description: 'Coming soon',
     icon: Clock,
-    badgeClass: 'bg-[hsl(var(--teksure-info)/0.15)] text-[hsl(var(--teksure-info))] border-[hsl(var(--teksure-info)/0.3)]',
+    badgeClass:
+      'bg-[hsl(var(--teksure-info)/0.15)] text-[hsl(var(--teksure-info))] border-[hsl(var(--teksure-info)/0.3)]',
+    columnAccent: 'border-[hsl(var(--teksure-info)/0.4)]',
     dotClass: 'bg-[hsl(var(--teksure-info))]',
   },
-  exploring: {
-    label: 'Exploring',
+  later: {
+    label: 'Later',
+    description: 'Exploring',
     icon: Compass,
     badgeClass: 'bg-muted text-muted-foreground border-border',
+    columnAccent: 'border-border',
     dotClass: 'bg-muted-foreground',
   },
 };
 
-const statuses: RoadmapStatus[] = ['live', 'in-progress', 'planned', 'exploring'];
+const STORAGE_VOTES = 'teksure-roadmap-votes';
+const STORAGE_VOTED = 'teksure-roadmap-voted';
 
+// Safe localStorage helpers — avoid SSR crashes
+function readJSON<T>(key: string, fallback: T): T {
+  if (typeof window === 'undefined') return fallback;
+  try {
+    const raw = window.localStorage.getItem(key);
+    if (!raw) return fallback;
+    return JSON.parse(raw) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+function writeJSON(key: string, value: unknown) {
+  if (typeof window === 'undefined') return;
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // quota exceeded / private mode — silently ignore
+  }
+}
+
+// ── Page ─────────────────────────────────────────────────────────────────────
 export default function Roadmap() {
-  const [search, setSearch] = useState('');
-  const [activeStatus, setActiveStatus] = useState<'all' | RoadmapStatus>('all');
+  // Vote counts keyed by item id
+  const [votes, setVotes] = useState<Record<string, number>>({});
+  // Which items the user has already voted on
+  const [voted, setVoted] = useState<Record<string, boolean>>({});
 
-  const filtered = useMemo(() => {
-    return roadmapItems.filter(item => {
-      const matchesSearch =
-        !search ||
-        item.title.toLowerCase().includes(search.toLowerCase()) ||
-        item.description.toLowerCase().includes(search.toLowerCase()) ||
-        item.category.toLowerCase().includes(search.toLowerCase());
-      const matchesStatus = activeStatus === 'all' || item.status === activeStatus;
-      return matchesSearch && matchesStatus;
-    });
-  }, [search, activeStatus]);
+  // Load from localStorage once on mount, merging with any new items
+  useEffect(() => {
+    const savedVotes = readJSON<Record<string, number>>(STORAGE_VOTES, {});
+    const savedVoted = readJSON<Record<string, boolean>>(STORAGE_VOTED, {});
 
-  const counts = useMemo(() => {
-    const base = roadmapItems.filter(item =>
-      !search ||
-      item.title.toLowerCase().includes(search.toLowerCase()) ||
-      item.description.toLowerCase().includes(search.toLowerCase()) ||
-      item.category.toLowerCase().includes(search.toLowerCase())
-    );
-    return {
-      all: base.length,
-      live: base.filter(i => i.status === 'live').length,
-      'in-progress': base.filter(i => i.status === 'in-progress').length,
-      planned: base.filter(i => i.status === 'planned').length,
-      exploring: base.filter(i => i.status === 'exploring').length,
-    };
-  }, [search]);
-
-  const groupedByStatus = useMemo(() => {
-    if (activeStatus !== 'all') return null;
-    const groups: { status: RoadmapStatus; items: typeof filtered }[] = [];
-    for (const s of statuses) {
-      const items = filtered.filter(i => i.status === s);
-      if (items.length > 0) groups.push({ status: s, items });
+    const merged: Record<string, number> = {};
+    for (const item of ROADMAP_ITEMS) {
+      merged[item.id] = savedVotes[item.id] ?? item.initialVotes;
     }
-    return groups;
-  }, [filtered, activeStatus]);
+    setVotes(merged);
+    setVoted(savedVoted);
+  }, []);
 
-  const renderCard = (item: typeof filtered[0], i: number) => {
+  const handleUpvote = useCallback((id: string) => {
+    setVotes((prev) => {
+      const next = { ...prev, [id]: (prev[id] ?? 0) + 1 };
+      writeJSON(STORAGE_VOTES, next);
+      return next;
+    });
+    setVoted((prev) => {
+      const next = { ...prev, [id]: true };
+      writeJSON(STORAGE_VOTED, next);
+      return next;
+    });
+  }, []);
+
+  const columns: { status: RoadmapStatus; items: RoadmapItem[] }[] = (
+    ['now', 'next', 'later'] as RoadmapStatus[]
+  ).map((status) => ({
+    status,
+    items: ROADMAP_ITEMS.filter((i) => i.status === status),
+  }));
+
+  const renderCard = (item: RoadmapItem) => {
     const cfg = statusConfig[item.status];
+    const count = votes[item.id] ?? item.initialVotes;
+    const hasVoted = !!voted[item.id];
+
     return (
-      <div
-        key={item.title}
+      <Card
+        key={item.id}
+        className="rounded-2xl border border-border bg-card hover:border-primary/40 hover:shadow-md transition-all duration-200"
       >
-        <Card className="rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-200 h-full">
-          <CardContent className="p-6 flex flex-col h-full">
-            <div className="flex items-start justify-between gap-3 mb-3">
-              <h3 className="font-semibold text-foreground text-base leading-snug flex-1">{item.title}</h3>
-              <Badge className={`shrink-0 text-xs border ${cfg.badgeClass}`}>
-                {cfg.label}
-              </Badge>
-            </div>
-            <p className="text-muted-foreground text-sm flex-1 mb-4 leading-relaxed">{item.description}</p>
-            <Badge variant="outline" className="self-start text-xs font-medium">
-              {item.category}
+        <CardContent className="p-6 flex flex-col gap-4">
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="text-lg font-semibold text-foreground leading-snug flex-1">
+              {item.title}
+            </h3>
+            <Badge className={`shrink-0 text-xs border ${cfg.badgeClass}`}>
+              {cfg.label}
             </Badge>
-          </CardContent>
-        </Card>
-      </div>
+          </div>
+
+          <p className="text-base text-foreground/75 leading-relaxed">
+            {item.description}
+          </p>
+
+          <div className="pt-2 flex items-center justify-between border-t border-border/60">
+            <Button
+              type="button"
+              variant={hasVoted ? 'default' : 'outline'}
+              size="lg"
+              onClick={() => handleUpvote(item.id)}
+              disabled={hasVoted}
+              aria-label={
+                hasVoted
+                  ? `You voted for ${item.title}. ${count} total votes.`
+                  : `Vote for ${item.title}. Currently ${count} votes.`
+              }
+              className={`h-11 rounded-full px-5 text-base font-semibold gap-2 ${
+                hasVoted
+                  ? 'bg-primary text-primary-foreground cursor-default'
+                  : 'hover:bg-primary/10 hover:border-primary hover:text-primary'
+              }`}
+            >
+              <ArrowUp className="h-5 w-5" aria-hidden="true" />
+              {hasVoted ? 'Voted' : 'Upvote'}
+            </Button>
+            <span
+              className="text-lg font-semibold text-foreground tabular-nums"
+              aria-hidden="true"
+            >
+              {count.toLocaleString()}
+            </span>
+          </div>
+        </CardContent>
+      </Card>
     );
   };
 
   return (
     <>
       <SEOHead
-        title="TekSure Roadmap – See What We're Building Next"
-        description="Explore feature ideas we're building to help you master technology. See live, in-progress, planned, and exploring features on our public roadmap."
+        title="What We're Building Next | TekSure Roadmap"
+        description="Our public roadmap. See what TekSure is building now, next, and later — and vote on what should come first."
         path="/roadmap"
       />
       <Navbar />
       <main className="min-h-screen bg-background">
-        {/* Header */}
-        <section className="border-b border-border py-20">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Roadmap</h1>
-              <p className="text-muted-foreground text-lg">
-                See what we're building next to help you master technology
-              </p>
+        {/* Hero */}
+        <section className="border-b border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-background dark:from-muted/40 dark:via-muted/20 dark:to-background py-16 md:py-20">
+          <div className="container mx-auto px-4 max-w-6xl text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Rocket className="h-4 w-4" aria-hidden="true" />
+              Public Roadmap
             </div>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+              What We&rsquo;re Building Next
+            </h1>
+            <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              Our public roadmap. Vote on what should come first.
+            </p>
           </div>
         </section>
 
-        {/* Content */}
-        <div className="py-20">
-          <div className="container mx-auto px-4 max-w-6xl">
-            {/* Search and filters */}
-            <div className="flex flex-col gap-6 mb-12">
-              {/* Search */}
-              <div className="relative max-w-md">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  placeholder="Search features…"
-                  value={search}
-                  onChange={e => setSearch(e.target.value)}
-                  className="pl-10 h-11 bg-background rounded-xl border border-border"
-                />
-              </div>
-
-              {/* Status filters */}
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => setActiveStatus('all')}
-                  data-state={activeStatus === 'all' ? 'active' : 'inactive'}
-                  className={`rounded-full px-3 py-1.5 text-xs font-medium transition-all ${
-                    activeStatus === 'all'
-                      ? 'bg-foreground text-background'
-                      : 'bg-muted text-muted-foreground border border-border hover:bg-muted/80'
-                  }`}
-                >
-                  All ({counts.all})
-                </button>
-                {statuses.map(status => {
-                  const isActive = activeStatus === status;
-                  return (
-                    <button
-                      key={status}
-                      onClick={() => setActiveStatus(status)}
-                      data-state={isActive ? 'active' : 'inactive'}
-                      className={`rounded-full px-3 py-1.5 text-xs font-medium transition-all ${
-                        isActive
-                          ? 'bg-foreground text-background'
-                          : 'bg-muted text-muted-foreground border border-border hover:bg-muted/80'
-                      }`}
+        {/* Three-column roadmap */}
+        <section className="py-16 md:py-20">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6">
+              {columns.map(({ status, items }) => {
+                const cfg = statusConfig[status];
+                const Icon = cfg.icon;
+                return (
+                  <div key={status} className="flex flex-col gap-5">
+                    {/* Column header */}
+                    <div
+                      className={`rounded-2xl border-2 ${cfg.columnAccent} bg-card p-5 flex items-center gap-3`}
                     >
-                      {statusConfig[status].label} ({counts[status]})
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Results count */}
-            <p className="text-muted-foreground text-sm mb-8">
-              Showing {filtered.length} feature{filtered.length !== 1 ? 's' : ''}
-            </p>
-
-            {/* Grid */}
-            {groupedByStatus ? (
-              <div className="space-y-12">
-                {groupedByStatus.map((group, gi) => {
-                  const cfg = statusConfig[group.status];
-                  const Icon = cfg.icon;
-                  return (
-                    <div key={group.status}>
-                      {gi > 0 && <Separator className="mb-12" />}
-                      <div className="flex items-center gap-3 mb-6">
-                        <span className={`w-2.5 h-2.5 rounded-full ${cfg.dotClass}`} />
-                        <Icon className="h-5 w-5 text-muted-foreground" />
-                        <h2 className="text-lg font-semibold text-foreground">{cfg.label}</h2>
-                        <span className="text-sm text-muted-foreground">({group.items.length})</span>
-                      </div>
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        {group.items.map((item, i) => renderCard(item, gi * 20 + i))}
+                      <span
+                        className={`w-3 h-3 rounded-full ${cfg.dotClass}`}
+                        aria-hidden="true"
+                      />
+                      <Icon
+                        className="h-6 w-6 text-foreground/70"
+                        aria-hidden="true"
+                      />
+                      <div className="flex-1">
+                        <h2 className="text-2xl font-bold text-foreground leading-tight">
+                          {cfg.label}
+                        </h2>
+                        <p className="text-sm text-foreground/65">
+                          {cfg.description} &middot; {items.length} item
+                          {items.length !== 1 ? 's' : ''}
+                        </p>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {filtered.map((item, i) => renderCard(item, i))}
-              </div>
-            )}
 
-            {filtered.length === 0 && (
-              <div className="text-center py-20">
-                <p className="text-muted-foreground">No features match your search. Try a different term.</p>
-              </div>
-            )}
+                    {/* Column items */}
+                    <div className="flex flex-col gap-5">
+                      {items.map(renderCard)}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* "Have an idea?" card */}
+            <div className="mt-16">
+              <Card className="rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-amber-50/50 to-orange-50/50 dark:from-primary/10 dark:via-muted/40 dark:to-muted/40">
+                <CardContent className="p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                  <div className="shrink-0 h-16 w-16 rounded-full bg-primary/15 flex items-center justify-center">
+                    <Lightbulb
+                      className="h-8 w-8 text-primary"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      Have an idea?
+                    </h3>
+                    <p className="text-base md:text-lg text-foreground/75 leading-relaxed">
+                      We read every suggestion. Tell us what would make TekSure more
+                      helpful for you, your parents, or the folks you look after.
+                    </p>
+                  </div>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="h-14 px-8 text-base font-semibold rounded-full shadow-md hover:shadow-lg whitespace-nowrap"
+                  >
+                    <a
+                      href="mailto:roadmap@teksure.com?subject=TekSure%20Roadmap%20Idea"
+                      aria-label="Email your roadmap idea to roadmap@teksure.com"
+                    >
+                      <Mail className="mr-2 h-5 w-5" aria-hidden="true" />
+                      Share your idea
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
       <Footer />
     </>

@@ -10,6 +10,7 @@ import {
   Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
   FileSearch, Terminal, Shield, Receipt, Globe, Accessibility as AccessibilityIcon,
   Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank,
+  Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
 } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -30,7 +31,8 @@ export type ToolCategory =
   | 'Learning'
   | 'Health'
   | 'Connectivity'
-  | 'Accessibility';
+  | 'Accessibility'
+  | 'Entertainment';
 
 export type Difficulty = 'Easy' | 'Medium' | 'Advanced';
 
@@ -97,6 +99,20 @@ export const tools: Tool[] = [
 
   /* ── Safety / Security ───────────────────── */
   {
+    title: 'Social Media — Safe & Sane',
+    description: 'Platform-by-platform privacy and scam defense for Facebook, Instagram, TikTok, X, YouTube, LinkedIn, and NextDoor. In plain English.',
+    icon: Users,
+    path: '/tools/social-media-safety',
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Safety',
+    difficulty: 'Easy',
+    time: '15 min',
+    newThisMonth: true,
+    keywords: 'social media facebook instagram tiktok twitter x youtube linkedin nextdoor privacy scam hacked report block DM',
+  },
+  {
     title: 'Scam Practice Simulator',
     description: 'Practice spotting real scam emails, texts, and calls in a safe environment. Get a Scam IQ score when you finish.',
     icon: ShieldAlert,
@@ -123,6 +139,21 @@ export const tools: Tool[] = [
     time: '10 min',
     featured: true,
     newThisMonth: true,
+  },
+  {
+    title: 'Fake News Checker',
+    description: 'A 10-step walkthrough for checking whether a news story, meme, or social post is real — with fact-check links and AI-fake tips.',
+    icon: Newspaper,
+    path: '/tools/fake-news-checker',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Safety',
+    difficulty: 'Easy',
+    time: '8 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'fake news misinformation propaganda hoax fact check snopes politifact reuters ap deepfake ai generated media bias viral headline share verify',
   },
   {
     title: 'Is This a Scam?',
@@ -415,6 +446,36 @@ export const tools: Tool[] = [
 
   /* ── Setup Wizards ───────────────────────── */
   {
+    title: 'Smart Thermostat Setup',
+    description: 'Install a Nest, ecobee, Honeywell, Sensi, or Amazon thermostat yourself — C-wire check, wiring safely, schedules, and utility rebates up to $100.',
+    icon: Thermometer,
+    path: '/tools/smart-thermostat-setup',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'New',
+    category: 'Setup',
+    difficulty: 'Medium',
+    time: '60 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'nest ecobee honeywell sensi amazon smart thermostat c-wire hvac heat cooling furnace heat pump geofencing schedule rebate energy star demand response dr',
+  },
+  {
+    title: 'Kitchen Tech Helper',
+    description: 'Unbox, set up, and actually use your Instant Pot, Air Fryer, Smart Fridge, Sous Vide, Coffee Maker, and more — no 60-page manual required.',
+    icon: ChefHat,
+    path: '/tools/kitchen-tech-helper',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'New',
+    category: 'Setup',
+    difficulty: 'Easy',
+    time: '15 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'instant pot air fryer smart fridge sous vide keurig nespresso induction microwave kitchenaid bread maker breville ninja cosori zojirushi samsung lg kitchen appliance cooking recipe burn error descale pods',
+  },
+  {
     title: 'New Phone Setup Wizard',
     description: 'Got a new iPhone or Android? Walk through every setup step with clear instructions — from Apple ID to privacy settings.',
     icon: Smartphone,
@@ -461,6 +522,35 @@ export const tools: Tool[] = [
     category: 'Setup',
     difficulty: 'Medium',
     time: '15 min',
+  },
+  {
+    title: 'Rideshare Setup',
+    description: 'Set up Uber or Lyft step-by-step, turn on safety features, and learn no-smartphone options like GoGoGrandparent.',
+    icon: Car,
+    path: '/tools/rideshare-setup',
+    color: 'text-indigo-600',
+    bg: 'bg-indigo-50 dark:bg-indigo-950/30',
+    badge: 'New',
+    category: 'Setup',
+    difficulty: 'Easy',
+    time: '15 min',
+    newThisMonth: true,
+    keywords: 'uber lyft rideshare taxi senior transportation gogograndparent silverride wheelchair accessibility ride share trip schedule safety pin emergency button ridecheck tipping surge flip phone',
+  },
+  {
+    title: 'Video Call Helper',
+    description: 'Senior-friendly guide for Zoom, FaceTime, Google Meet, Skype, WhatsApp, Messenger, and GrandPad — setup, sharing your screen, captions, and etiquette for calls with grandkids.',
+    icon: Video,
+    path: '/tools/video-call-helper',
+    color: 'text-cyan-600',
+    bg: 'bg-cyan-50 dark:bg-cyan-950/30',
+    badge: 'New',
+    category: 'Setup',
+    difficulty: 'Easy',
+    time: '15 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'zoom facetime google meet skype whatsapp messenger grandpad video call family grandkids schedule captions accessibility mute camera share screen echo bandwidth',
   },
   {
     title: 'Meeting Setup Helper',
@@ -635,6 +725,81 @@ export const tools: Tool[] = [
 
   /* ── Money ──────────────────────────────── */
   {
+    title: 'Turning 65 — Checklist',
+    description: 'An interactive life-transition checklist for people approaching 65. Medicare deadlines, Social Security, senior discounts, digital cleanup, and scam warnings — plain English, saved on your device.',
+    icon: Cake,
+    path: '/checklists/turning-65',
+    color: 'text-amber-700',
+    bg: 'bg-amber-50 dark:bg-amber-950/30',
+    badge: 'New',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '30 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'turning 65 medicare enrollment iep initial enrollment period social security ssa mymedicare part a part b part c part d medigap advantage aep annual open enrollment ship aarp retirement cobra senior discount long-term care insurance power of attorney healthcare directive living will rmd required minimum distribution estate planning checklist life transition',
+  },
+  {
+    title: 'Government Benefits Portal',
+    description: 'Senior-friendly guide to every major .gov benefits portal — Social Security, Medicare, VA, IRS, SNAP, LIHEAP, and more. Skip the scam "helper" sites.',
+    icon: Landmark,
+    path: '/tools/government-benefits-portal',
+    color: 'text-blue-800',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'New',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '15 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'social security ssa medicare medicaid va veterans irs taxes snap food stamps liheap lifeline usajobs benefits gov login.gov id.me state benefits portal 211 aarp ship free tax prep vita tce legal aid area agency on aging scam helper site free government portal',
+  },
+  {
+    title: 'Free Resource Hub',
+    description: 'A senior-friendly catalog of FREE, LEGAL resources — streaming, library apps, classes, government benefits, tax help, books, software, mental health lines, and fact-check sites.',
+    icon: Gift,
+    path: '/tools/free-resource-hub',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '10 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'free legal resources streaming library app class government benefit snap liheap lifeline medicare ssa va aarp tax filing vita direct file freetaxusa libby hoopla kanopy project gutenberg librivox open library standard ebooks nls bard bookshare libreoffice gimp inkscape audacity obs canva blender vlc 988 samhsa nami friendship line griefshare snopes politifact factcheck ap reuters internet archive wayback library of congress national archives pew',
+  },
+  {
+    title: 'Banking App Setup',
+    description: 'Set up Chase, Wells Fargo, Bank of America, Capital One, U.S. Bank, Citi, or your credit union app — with biometric login, mobile check deposit, Zelle safety, and scam scripts to watch for.',
+    icon: Landmark,
+    path: '/tools/banking-app-setup',
+    color: 'text-blue-700',
+    bg: 'bg-blue-50 dark:bg-blue-950/30',
+    badge: 'New',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '20 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'chase wells fargo bank of america capital one us bank citi credit union navy federal penfed mobile banking biometric face id fingerprint zelle mobile check deposit estatements two factor 2fa alerts phishing fraud password bill pay',
+  },
+  {
+    title: 'Refund & Return Helper',
+    description: 'Step-by-step walkthroughs for getting refunds from online orders, app stores, subscriptions, scam charges, travel, and medical bills.',
+    icon: Receipt,
+    path: '/tools/refund-and-return-helper',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Money',
+    difficulty: 'Easy',
+    time: '10 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'refund return chargeback dispute amazon app store google play scam subscription billing travel hotel flight airline concert ticket medical bill stolen card unauthorized charge',
+  },
+  {
     title: 'Bill Negotiator',
     description: 'Lower your internet, phone, or cable bill with our plain-English negotiation scripts.',
     icon: Receipt,
@@ -782,6 +947,20 @@ export const tools: Tool[] = [
   },
 
   /* ── Learning ────────────────────────────── */
+  {
+    title: 'Free Learning Hub',
+    description: 'Senior-friendly directory of 100% free online learning — languages, history, computer skills, cooking, wellness, art, and more.',
+    icon: GraduationCap,
+    path: '/tools/free-learning-hub',
+    color: 'text-violet-600',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'New',
+    category: 'Learning',
+    difficulty: 'Easy',
+    time: '10 min',
+    newThisMonth: true,
+    keywords: 'free learning entertainment classes courses university khan academy duolingo languages cooking wellness yoga finance writing art history science museum library audit certificate hobby retirement',
+  },
   {
     title: 'Tech Comfort Quiz',
     description: 'Find your tech comfort level in 2 minutes — and get a personalized learning plan.',
@@ -1343,6 +1522,18 @@ export const tools: Tool[] = [
 
   /* ── Accessibility ────────────────────────── */
   {
+    title: 'Low Vision Tech Hub',
+    description: 'Every setting, every app, every trick to make phones, tablets, computers, TVs, and e-readers easier to see.',
+    icon: Eye,
+    path: '/tools/low-vision-tech-hub',
+    color: 'text-violet-500',
+    bg: 'bg-violet-50 dark:bg-violet-950/30',
+    badge: 'New',
+    category: 'Accessibility',
+    difficulty: 'Easy',
+    time: '15 min',
+  },
+  {
     title: 'Accessibility Check',
     description: 'Get tailored device settings to make tech easier based on your needs.',
     icon: AccessibilityIcon,
@@ -1390,6 +1581,23 @@ export const tools: Tool[] = [
     difficulty: 'Easy',
     time: '1 min',
   },
+
+  /* ── Entertainment ───────────────────── */
+  {
+    title: 'Library Tech Helper',
+    description: 'Your library card unlocks free ebooks, audiobooks, movies, courses, and more. Step-by-step setup for Libby, Hoopla, Kanopy, Mango, LinkedIn Learning, Ancestry, and Consumer Reports.',
+    icon: BookOpen,
+    path: '/tools/library-tech-helper',
+    color: 'text-teal-600',
+    bg: 'bg-teal-50 dark:bg-teal-950/30',
+    badge: 'New',
+    category: 'Entertainment',
+    difficulty: 'Easy',
+    time: '15 min',
+    featured: true,
+    newThisMonth: true,
+    keywords: 'library card libby hoopla kanopy cloudlibrary overdrive mango languages linkedin learning ancestry consumer reports ebooks audiobooks kindle free books movies music genealogy',
+  },
 ];
 
 /* ── Category definitions ──────────────────────────────── */
@@ -1403,6 +1611,7 @@ const categoryEmojis: Record<ToolCategory, string> = {
   Health: '❤️',
   Connectivity: '📶',
   Accessibility: '♿',
+  Entertainment: '🎬',
 };
 
 const categories: ToolCategory[] = [
@@ -1415,6 +1624,7 @@ const categories: ToolCategory[] = [
   'Health',
   'Connectivity',
   'Accessibility',
+  'Entertainment',
 ];
 
 /* ── Helpers ──────────────────────────────────────────── */

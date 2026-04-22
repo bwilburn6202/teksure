@@ -51,6 +51,18 @@ export function Footer() {
             Read our story
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
+          <div className="pt-2">
+            <p className="text-sm font-semibold uppercase tracking-wider text-foreground/70 mb-2">
+              Get involved
+            </p>
+            <Link
+              to="/volunteer"
+              className="inline-flex items-center gap-1.5 text-base font-medium text-primary hover:text-primary/80 underline-offset-4 hover:underline transition-colors"
+            >
+              Volunteer
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </div>
         </div>
       ),
     },
@@ -329,6 +341,12 @@ export function Footer() {
               className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
             >
               FAQ
+            </Link>
+            <Link
+              to="/whats-new"
+              className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
+            >
+              What&rsquo;s New
             </Link>
             <Link
               to="/roadmap"

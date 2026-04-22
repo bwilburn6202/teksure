@@ -1,549 +1,1025 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FileText, User, Users, Mail, Key, Cloud, Share2, Wallet,
-  Tv, Smartphone, Image as ImageIcon, Globe, Shield, Printer,
-  AlertTriangle, ExternalLink, CheckCircle2, ArrowRight, Lock,
+  Printer,
+  AlertTriangle,
+  FileText,
+  Save,
+  Trash2,
+  Edit3,
+  FileSignature,
+  ArrowRight,
+  BookOpen,
+  ShieldAlert,
+  Info,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { Button } from '@/components/ui/button';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
-/* ── Types ─────────────────────────────────────────── */
+/* ────────────────────────────── Types ─────────────────────────────────── */
 
-interface PersonalInfo {
+interface EmailRow { provider: string; username: string; action: string; }
+interface BankRow  { name: string; accountType: string; action: string; }
+interface InvestRow{ brokerage: string; accountType: string; action: string; }
+interface SubRow   { name: string; action: string; }
+interface DeviceRow{ device: string; passcodeLocation: string; }
+
+interface WillData {
+  // Personal info
   fullName: string;
-  dob: string;
-  ssnLast4: string;
-  address: string;
-}
-
-interface Executor {
-  name: string;
-  relationship: string;
-  phone: string;
-  email: string;
-}
-
-interface DigitalAssets {
-  emailAccounts: string;
-  passwordManager: string;
-  passwordManagerNotes: string;
-  cloudStorage: string;
-  socialMedia: string;
-  financialAccounts: string;
-  subscriptions: string;
-  devices: string;
+  dateOfBirth: string;
+  dateFilledOut: string;
+  documentLocation: string;
+  // Executor / Digital Agent
+  execName: string;
+  execRelationship: string;
+  execPhone: string;
+  execEmail: string;
+  // Backup executor
+  backupName: string;
+  backupRelationship: string;
+  backupPhone: string;
+  backupEmail: string;
+  // Email accounts (5 rows)
+  emails: EmailRow[];
+  // Social media
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+  twitter: string;
+  socialOther: string;
+  // Financial / Banking (4 rows)
+  banks: BankRow[];
+  // Investment accounts (3 rows)
+  investments: InvestRow[];
+  // Subscription services (10 rows)
+  subscriptions: SubRow[];
+  // Cloud storage
+  googleCloud: string;
+  icloud: string;
+  dropboxOther: string;
+  // Devices (4 rows)
+  devices: DeviceRow[];
+  // Password manager
+  pmProvider: string;
+  pmAccess: string;
+  // Cryptocurrency
+  cryptoAccounts: string;
+  cryptoAck: string;
+  // Photos & memories
   photoLocations: string;
-  onlineBusinesses: string;
-  emailSignatures: string;
-  domainNames: string;
+  photoPriority: string;
+  photoRecipients: string;
+  // Special instructions
+  specialInstructions: string;
+  // Where this document is kept
+  documentPhysicalLocation: string;
+  documentDigitalBackup: string;
+  // Signature
+  signatureDate: string;
 }
 
-interface PlatformInstructions {
-  appleLegacy: string;
-  googleInactive: string;
-  facebookChoice: string;
-  instagramChoice: string;
-  linkedinChoice: string;
-}
+const emptyEmail: EmailRow       = { provider: '', username: '', action: '' };
+const emptyBank: BankRow         = { name: '', accountType: '', action: '' };
+const emptyInvest: InvestRow     = { brokerage: '', accountType: '', action: '' };
+const emptySub: SubRow           = { name: '', action: '' };
+const emptyDevice: DeviceRow     = { device: '', passcodeLocation: '' };
 
-interface PasswordAccess {
-  location: string;
-  accessMethod: string;
-  emergencyContact: string;
-}
-
-interface FinalWishes {
-  photos: string;
-  emailArchive: string;
-  socialMedia: string;
-  gaming: string;
-  crypto: string;
-}
-
-const platformLinks: { id: keyof PlatformInstructions; title: string; description: string; url: string }[] = [
-  {
-    id: 'appleLegacy',
-    title: 'Apple Legacy Contact',
-    description: 'Lets a trusted person access your Apple ID data after your passing.',
-    url: 'https://support.apple.com/en-us/HT212360',
-  },
-  {
-    id: 'googleInactive',
-    title: 'Google Inactive Account Manager',
-    description: 'Decides what happens to your Google data if your account is inactive.',
-    url: 'https://myaccount.google.com/inactive',
-  },
-  {
-    id: 'facebookChoice',
-    title: 'Facebook Memorialization',
-    description: 'Choose a legacy contact or request an account be deleted after death.',
-    url: 'https://www.facebook.com/help/1568013990080948',
-  },
-  {
-    id: 'instagramChoice',
-    title: 'Instagram Memorialization',
-    description: 'Family can request memorialization or removal of an account.',
-    url: 'https://help.instagram.com/264154560391256',
-  },
-  {
-    id: 'linkedinChoice',
-    title: 'LinkedIn Account Closure',
-    description: 'Family can request a deceased member account be closed or memorialized.',
-    url: 'https://www.linkedin.com/help/linkedin/answer/a1336707',
-  },
-];
-
-const emptyPersonal: PersonalInfo = { fullName: '', dob: '', ssnLast4: '', address: '' };
-const emptyExecutor: Executor = { name: '', relationship: '', phone: '', email: '' };
-const emptyAssets: DigitalAssets = {
-  emailAccounts: '', passwordManager: '', passwordManagerNotes: '', cloudStorage: '',
-  socialMedia: '', financialAccounts: '', subscriptions: '', devices: '',
-  photoLocations: '', onlineBusinesses: '', emailSignatures: '', domainNames: '',
-};
-const emptyPlatforms: PlatformInstructions = {
-  appleLegacy: '', googleInactive: '', facebookChoice: '',
-  instagramChoice: '', linkedinChoice: '',
-};
-const emptyPassword: PasswordAccess = { location: '', accessMethod: '', emergencyContact: '' };
-const emptyWishes: FinalWishes = {
-  photos: '', emailArchive: '', socialMedia: '', gaming: '', crypto: '',
+const EMPTY_WILL: WillData = {
+  fullName: '', dateOfBirth: '', dateFilledOut: '', documentLocation: '',
+  execName: '', execRelationship: '', execPhone: '', execEmail: '',
+  backupName: '', backupRelationship: '', backupPhone: '', backupEmail: '',
+  emails: Array.from({ length: 5 }, () => ({ ...emptyEmail })),
+  facebook: '', instagram: '', linkedin: '', twitter: '', socialOther: '',
+  banks: Array.from({ length: 4 }, () => ({ ...emptyBank })),
+  investments: Array.from({ length: 3 }, () => ({ ...emptyInvest })),
+  subscriptions: Array.from({ length: 10 }, () => ({ ...emptySub })),
+  googleCloud: '', icloud: '', dropboxOther: '',
+  devices: Array.from({ length: 4 }, () => ({ ...emptyDevice })),
+  pmProvider: '', pmAccess: '',
+  cryptoAccounts: '', cryptoAck: '',
+  photoLocations: '', photoPriority: '', photoRecipients: '',
+  specialInstructions: '',
+  documentPhysicalLocation: '', documentDigitalBackup: '',
+  signatureDate: '',
 };
 
-/* ── Page ──────────────────────────────────────────── */
+const STORAGE_KEY = 'teksure-digital-will-draft';
+
+/* ─────────────────────── Autosave helpers ────────────────────────────── */
+
+function loadDraft(): WillData {
+  if (typeof window === 'undefined') return EMPTY_WILL;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return EMPTY_WILL;
+    const parsed = JSON.parse(raw);
+    // Shallow merge so new fields don't break old drafts
+    return { ...EMPTY_WILL, ...parsed };
+  } catch {
+    return EMPTY_WILL;
+  }
+}
+
+function formatSavedAgo(ts: number | null): string {
+  if (!ts) return '';
+  const seconds = Math.floor((Date.now() - ts) / 1000);
+  if (seconds < 5) return 'Saved just now';
+  if (seconds < 60) return `Saved ${seconds} seconds ago`;
+  const mins = Math.floor(seconds / 60);
+  if (mins < 60) return `Saved ${mins} minute${mins === 1 ? '' : 's'} ago`;
+  const hours = Math.floor(mins / 60);
+  return `Saved ${hours} hour${hours === 1 ? '' : 's'} ago`;
+}
+
+/* ─────────────────────── Reusable line components ────────────────────── */
+
+/**
+ * A labelled writing line. In 'form' mode it shows an editable input;
+ * in 'blank' mode it shows an empty underline for handwriting. Both
+ * render cleanly on 8.5×11 print.
+ */
+function WriteLine({
+  label, helper, value, onChange, mode, wide = false, type = 'text',
+}: {
+  label: string;
+  helper?: string;
+  value: string;
+  onChange: (v: string) => void;
+  mode: 'form' | 'blank';
+  wide?: boolean;
+  type?: 'text' | 'date' | 'tel' | 'email';
+}) {
+  return (
+    <div className={`dw-field ${wide ? 'dw-field-wide' : ''}`}>
+      <div className="dw-label">{label}</div>
+      {helper && <div className="dw-helper">{helper}</div>}
+      {mode === 'form' ? (
+        <input
+          type={type}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className="dw-input"
+          aria-label={label}
+        />
+      ) : (
+        <div className="dw-line" aria-hidden />
+      )}
+    </div>
+  );
+}
+
+/** A multi-line writing area. Shows 3 blank lines when blank, or a textarea in form mode. */
+function WriteBlock({
+  label, helper, value, onChange, mode, lines = 3,
+}: {
+  label: string;
+  helper?: string;
+  value: string;
+  onChange: (v: string) => void;
+  mode: 'form' | 'blank';
+  lines?: number;
+}) {
+  return (
+    <div className="dw-field dw-field-wide">
+      <div className="dw-label">{label}</div>
+      {helper && <div className="dw-helper">{helper}</div>}
+      {mode === 'form' ? (
+        <textarea
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          rows={lines}
+          className="dw-textarea"
+          aria-label={label}
+        />
+      ) : (
+        <div className="dw-multiline" aria-hidden>
+          {Array.from({ length: lines }).map((_, i) => (
+            <div key={i} className="dw-line" />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SectionHeader({ number, title, subtitle, icon }: {
+  number: number; title: string; subtitle?: string; icon?: ReactNode;
+}) {
+  return (
+    <div className="dw-section-head">
+      <div className="dw-section-badge">{number}</div>
+      <div>
+        <h2 className="dw-section-title">
+          {icon && <span className="dw-section-icon" aria-hidden>{icon}</span>}
+          {title}
+        </h2>
+        {subtitle && <p className="dw-section-sub">{subtitle}</p>}
+      </div>
+    </div>
+  );
+}
+
+/* ───────────────────────────── The Page ──────────────────────────────── */
 
 export default function DigitalWillTemplate() {
-  const [personal, setPersonal] = useState<PersonalInfo>(emptyPersonal);
-  const [executor, setExecutor] = useState<Executor>(emptyExecutor);
-  const [backupExecutor, setBackupExecutor] = useState<Executor>(emptyExecutor);
-  const [assets, setAssets] = useState<DigitalAssets>(emptyAssets);
-  const [platforms, setPlatforms] = useState<PlatformInstructions>(emptyPlatforms);
-  const [password, setPassword] = useState<PasswordAccess>(emptyPassword);
-  const [wishes, setWishes] = useState<FinalWishes>(emptyWishes);
-  const [generated, setGenerated] = useState(false);
+  const [data, setData] = useState<WillData>(EMPTY_WILL);
+  const [mode, setMode] = useState<'form' | 'blank'>('form');
+  const [lastSaved, setLastSaved] = useState<number | null>(null);
+  const [savedLabel, setSavedLabel] = useState<string>('');
+  const [hydrated, setHydrated] = useState(false);
 
-  const todayLong = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  // Hydrate from localStorage on mount
+  useEffect(() => {
+    const loaded = loadDraft();
+    setData(loaded);
+    // If anything was actually saved previously, mark it as loaded
+    const hasAny = JSON.stringify(loaded) !== JSON.stringify(EMPTY_WILL);
+    if (hasAny) setLastSaved(Date.now());
+    setHydrated(true);
+  }, []);
 
-  function handlePrint() {
-    window.print();
-  }
+  // Autosave whenever data changes (only after hydration, so we don't immediately
+  // overwrite a real draft with the empty default on first paint)
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      setLastSaved(Date.now());
+    } catch {
+      // Storage quota or private browsing — ignore
+    }
+  }, [data, hydrated]);
 
-  function scrollToDocument() {
-    setGenerated(true);
-    setTimeout(() => {
-      const el = document.getElementById('generated-will');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
-  }
+  // Update "Saved X minutes ago" label every 15 seconds
+  useEffect(() => {
+    setSavedLabel(formatSavedAgo(lastSaved));
+    const t = window.setInterval(() => setSavedLabel(formatSavedAgo(lastSaved)), 15_000);
+    return () => window.clearInterval(t);
+  }, [lastSaved]);
+
+  const update = useCallback(<K extends keyof WillData>(key: K, value: WillData[K]) => {
+    setData((prev) => ({ ...prev, [key]: value }));
+  }, []);
+
+  const updateEmail = (i: number, field: keyof EmailRow, value: string) => {
+    setData((p) => {
+      const next = [...p.emails];
+      next[i] = { ...next[i], [field]: value };
+      return { ...p, emails: next };
+    });
+  };
+  const updateBank = (i: number, field: keyof BankRow, value: string) => {
+    setData((p) => {
+      const next = [...p.banks];
+      next[i] = { ...next[i], [field]: value };
+      return { ...p, banks: next };
+    });
+  };
+  const updateInvest = (i: number, field: keyof InvestRow, value: string) => {
+    setData((p) => {
+      const next = [...p.investments];
+      next[i] = { ...next[i], [field]: value };
+      return { ...p, investments: next };
+    });
+  };
+  const updateSub = (i: number, field: keyof SubRow, value: string) => {
+    setData((p) => {
+      const next = [...p.subscriptions];
+      next[i] = { ...next[i], [field]: value };
+      return { ...p, subscriptions: next };
+    });
+  };
+  const updateDevice = (i: number, field: keyof DeviceRow, value: string) => {
+    setData((p) => {
+      const next = [...p.devices];
+      next[i] = { ...next[i], [field]: value };
+      return { ...p, devices: next };
+    });
+  };
+
+  const handlePrint = () => window.print();
+
+  const handleClear = () => {
+    const confirmed = window.confirm(
+      'Clear everything you have filled in so far? This cannot be undone.'
+    );
+    if (!confirmed) return;
+    setData(EMPTY_WILL);
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      // ignore
+    }
+    setLastSaved(null);
+  };
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <SEOHead
-        title="Digital Will Template — Create a Free Digital Estate Plan | TekSure"
-        description="Build a printable digital will to help your loved ones manage your email, social media, passwords, photos, and online accounts. Free template from TekSure."
+        title="Your Digital Will — Free Printable Template | TekSure"
+        description="A free, printable digital asset inheritance template. The accounts your family will need — in one document. Fill online or print blank. Senior-friendly, big-text, and free forever."
         path="/tools/digital-will-template"
       />
-      <Navbar />
 
-      {/* Hero */}
-      <section className="print:hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-background py-16">
-        <div className="container max-w-5xl mx-auto px-4 text-center">
-          <Badge className="mb-4 bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
-            <Shield className="h-3 w-3 mr-1" /> Free Template
-          </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Protect Your Digital Life For Your Loved Ones
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Fill out this form to create a printable digital will. It helps the person you trust find and
-            manage your online accounts, photos, and subscriptions after you are gone.
-          </p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            <Badge variant="outline">Takes about 20 minutes</Badge>
-            <Badge variant="outline">Nothing saved online</Badge>
-            <Badge variant="outline">Printable format</Badge>
+      {/* Scoped print styles — the whole document is one 8.5×11 page-ish layout */}
+      <style>{`
+        .dw-outer { display: flex; justify-content: center; padding: 24px 12px 48px; }
+        .dw-page {
+          width: min(8.5in, 100%);
+          background: #ffffff;
+          color: #0f172a;
+          box-sizing: border-box;
+          padding: 0.6in 0.7in 0.5in;
+          font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+          box-shadow: 0 10px 40px -10px rgba(0,0,0,0.25);
+          border-radius: 4px;
+        }
+        .dw-page h1 {
+          font-size: 28pt; line-height: 1.1;
+          margin: 0 0 6pt; font-weight: 800; letter-spacing: -0.01em;
+          color: #0f172a;
+        }
+        .dw-page .dw-tag {
+          font-size: 13pt; margin: 0 0 10pt; font-weight: 500; color: #334155;
+        }
+        .dw-page .dw-head-brand {
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 10pt; margin-bottom: 6pt;
+          font-size: 9.5pt; letter-spacing: 0.14em; text-transform: uppercase;
+          font-weight: 700; color: #4338ca;
+        }
+        .dw-page .dw-head-brand .dw-date {
+          color: #64748b; letter-spacing: 0.04em; text-transform: none; font-weight: 500;
+        }
+        .dw-page .dw-rule {
+          height: 2pt; background: #4338ca; border-radius: 2pt;
+          margin: 4pt 0 14pt; opacity: 0.85;
+        }
+        .dw-warn {
+          border: 1.5pt solid #b91c1c;
+          background: #fef2f2;
+          padding: 10pt 12pt;
+          border-radius: 5pt;
+          margin: 8pt 0 18pt;
+          display: flex; gap: 10pt; align-items: flex-start;
+        }
+        .dw-warn strong { color: #7f1d1d; }
+        .dw-warn p { margin: 0; font-size: 11pt; line-height: 1.45; color: #450a0a; }
+
+        .dw-section {
+          margin-top: 14pt;
+          padding-top: 4pt;
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        .dw-section-head {
+          display: flex; gap: 10pt; align-items: flex-start;
+          margin-bottom: 8pt;
+        }
+        .dw-section-badge {
+          width: 22pt; height: 22pt; border-radius: 999pt;
+          background: #4338ca; color: #ffffff;
+          display: flex; align-items: center; justify-content: center;
+          font-weight: 800; font-size: 11pt; flex-shrink: 0;
+        }
+        .dw-section-title {
+          font-size: 15pt; font-weight: 800; margin: 0;
+          color: #0f172a; display: flex; gap: 6pt; align-items: center;
+          text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .dw-section-icon { display: inline-flex; }
+        .dw-section-sub {
+          margin: 2pt 0 0; font-size: 10.5pt; color: #475569;
+          font-weight: 500; line-height: 1.35;
+        }
+
+        .dw-grid {
+          display: grid; grid-template-columns: 1fr 1fr;
+          gap: 10pt 18pt;
+        }
+        .dw-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+        .dw-grid-1 { grid-template-columns: 1fr; }
+
+        .dw-field { display: flex; flex-direction: column; margin-bottom: 4pt; }
+        .dw-field-wide { grid-column: 1 / -1; }
+        .dw-label {
+          font-size: 10.5pt; font-weight: 700; color: #0f172a; margin-bottom: 1pt;
+        }
+        .dw-helper {
+          font-size: 9.5pt; color: #64748b; margin-bottom: 4pt;
+          line-height: 1.3; font-style: italic;
+        }
+        .dw-line {
+          border-bottom: 0.75pt solid #0f172a;
+          height: 22pt; margin-top: 2pt;
+          width: 100%;
+        }
+        .dw-multiline .dw-line { margin-top: 0; height: 22pt; }
+        .dw-multiline .dw-line + .dw-line { margin-top: 4pt; }
+
+        .dw-input, .dw-textarea {
+          width: 100%;
+          font: inherit; font-size: 12pt;
+          border: none;
+          border-bottom: 1pt solid #94a3b8;
+          background: #fafafa;
+          padding: 6pt 4pt;
+          color: #0f172a;
+          outline: none;
+          border-radius: 2pt 2pt 0 0;
+          box-sizing: border-box;
+        }
+        .dw-input:focus, .dw-textarea:focus {
+          background: #eef2ff;
+          border-bottom-color: #4338ca;
+        }
+        .dw-textarea { resize: vertical; min-height: 3em; line-height: 1.4; }
+
+        .dw-row-heading {
+          font-size: 10pt; font-weight: 700; color: #475569;
+          text-transform: uppercase; letter-spacing: 0.08em;
+          margin: 10pt 0 4pt;
+        }
+        .dw-num-row {
+          display: grid; grid-template-columns: 18pt 1fr;
+          gap: 6pt; margin-bottom: 6pt; align-items: start;
+        }
+        .dw-num { font-weight: 700; color: #4338ca; font-size: 11pt; padding-top: 4pt; }
+
+        .dw-foot {
+          margin-top: 22pt; padding-top: 10pt;
+          border-top: 0.75pt solid #94a3b8;
+          font-size: 10pt; color: #475569; line-height: 1.4;
+        }
+        .dw-foot .dw-legal {
+          background: #fffbeb;
+          border: 1pt solid #fde68a;
+          padding: 10pt 12pt;
+          border-radius: 4pt;
+          color: #713f12;
+          font-size: 10.5pt;
+        }
+
+        /* ── Responsive (non-print) ── */
+        @media (max-width: 640px) {
+          .dw-grid, .dw-grid-3 { grid-template-columns: 1fr; }
+          .dw-page { padding: 0.4in 0.35in 0.4in; }
+          .dw-page h1 { font-size: 24pt; }
+        }
+
+        /* ── Print layout ── */
+        @page { size: letter; margin: 0.5in 0.55in; }
+        @media print {
+          html, body { background: #fff !important; }
+          .no-print, nav, header.site-header, footer.site-footer { display: none !important; }
+          .dw-outer { padding: 0 !important; }
+          .dw-page {
+            box-shadow: none !important; border-radius: 0 !important;
+            width: 100% !important; min-height: 100vh !important;
+            padding: 0 !important;
+          }
+          .dw-input, .dw-textarea {
+            border: none !important; background: transparent !important;
+            border-bottom: 0.75pt solid #0f172a !important;
+            padding: 2pt 0 !important; color: #0f172a !important;
+          }
+          .dw-textarea { min-height: auto !important; }
+          .dw-section { page-break-inside: avoid; }
+          .dw-warn { page-break-inside: avoid; }
+          .dw-foot { page-break-inside: avoid; }
+        }
+      `}</style>
+
+      {/* Navbar hidden on print */}
+      <div className="print:hidden">
+        <Navbar />
+      </div>
+
+      <main className="min-h-screen bg-background">
+        {/* Breadcrumb (non-print) */}
+        <div className="container max-w-5xl pt-4 px-4 print:hidden">
+          <PageBreadcrumb segments={[
+            { label: 'Tools', href: '/tools' },
+            { label: 'Digital Will Template' },
+          ]} />
+        </div>
+
+        {/* Hero & Controls */}
+        <section className="print:hidden container max-w-5xl mx-auto px-4 pt-6 pb-4">
+          <div className="flex items-center gap-3 text-indigo-600 text-sm font-bold uppercase tracking-widest mb-3">
+            <FileSignature className="h-5 w-5" />
+            <span>Free Printable Template</span>
           </div>
-        </div>
-      </section>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
+            Your Digital Will — Free Template
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-snug">
+            The accounts your family will need. In one document.
+            Done in under an hour.
+          </p>
 
-      {/* Disclaimer */}
-      <section className="print:hidden py-6">
-        <div className="container max-w-5xl mx-auto px-4">
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800">
-            <CardContent className="p-5 flex gap-3 items-start">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-              <p className="text-sm leading-relaxed">
-                <strong>This is not a substitute for a legal will drafted by an attorney.</strong> It is a
-                supplement to help your executor manage your digital accounts. For legal estate planning,
-                consult a licensed attorney in your state.
+          {/* Link to companion guide */}
+          <div className="mt-4">
+            <Link
+              to="/guides/digital-estate-planning-accounts-after-death"
+              className="inline-flex items-center gap-2 text-base font-semibold text-indigo-700 hover:text-indigo-900 dark:text-indigo-300 hover:underline"
+            >
+              <BookOpen className="h-4 w-4" />
+              Read the Digital Estate Planning guide first
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          {/* Important warning */}
+          <div className="mt-6 rounded-xl border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/20 dark:border-rose-900 p-5 md:p-6 flex gap-4 items-start">
+            <ShieldAlert className="h-7 w-7 md:h-8 md:w-8 text-rose-600 shrink-0 mt-0.5" aria-hidden />
+            <div className="text-base md:text-lg leading-relaxed">
+              <p className="font-bold text-rose-900 dark:text-rose-200 mb-1">
+                Do NOT put actual passwords here.
               </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Form */}
-      <section className="print:hidden pb-16">
-        <div className="container max-w-5xl mx-auto px-4 space-y-8">
-
-          {/* 1. Personal Information */}
-          <SectionCard icon={<User className="h-5 w-5" />} number={1} title="Personal Information">
-            <div className="grid md:grid-cols-2 gap-4">
-              <Field label="Full legal name">
-                <Input value={personal.fullName} onChange={(e) => setPersonal({ ...personal, fullName: e.target.value })} placeholder="Jane Margaret Doe" />
-              </Field>
-              <Field label="Date of birth">
-                <Input type="date" value={personal.dob} onChange={(e) => setPersonal({ ...personal, dob: e.target.value })} />
-              </Field>
-              <Field label="Last 4 of SSN (optional)">
-                <Input value={personal.ssnLast4} onChange={(e) => setPersonal({ ...personal, ssnLast4: e.target.value.replace(/\D/g, '').slice(0, 4) })} placeholder="1234" maxLength={4} />
-              </Field>
-              <Field label="Primary address">
-                <Input value={personal.address} onChange={(e) => setPersonal({ ...personal, address: e.target.value })} placeholder="123 Main St, Springfield, IL 62704" />
-              </Field>
+              <p className="text-rose-900/90 dark:text-rose-100/90">
+                Those go in a password manager or a sealed envelope with your
+                lawyer. <strong>This is a map, not a key.</strong> This document
+                tells your family <em>which doors exist</em> — not how to open
+                them.
+              </p>
             </div>
-          </SectionCard>
+          </div>
 
-          {/* 2. Executor */}
-          <SectionCard icon={<Users className="h-5 w-5" />} number={2} title="Executor Information" subtitle="The trusted person who will handle your digital accounts.">
-            <h3 className="font-semibold mb-3">Primary Executor</h3>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <Field label="Name"><Input value={executor.name} onChange={(e) => setExecutor({ ...executor, name: e.target.value })} /></Field>
-              <Field label="Relationship"><Input value={executor.relationship} onChange={(e) => setExecutor({ ...executor, relationship: e.target.value })} placeholder="Daughter, son, spouse, friend" /></Field>
-              <Field label="Phone"><Input type="tel" value={executor.phone} onChange={(e) => setExecutor({ ...executor, phone: e.target.value })} /></Field>
-              <Field label="Email"><Input type="email" value={executor.email} onChange={(e) => setExecutor({ ...executor, email: e.target.value })} /></Field>
+          {/* Mode toggle + toolbar */}
+          <div className="mt-6 flex flex-wrap gap-3 items-center justify-between rounded-xl border bg-muted/40 p-4">
+            <div
+              role="radiogroup"
+              aria-label="Template mode"
+              className="inline-flex rounded-lg bg-background border p-1 shadow-sm"
+            >
+              <button
+                type="button"
+                role="radio"
+                aria-checked={mode === 'form'}
+                onClick={() => setMode('form')}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-base font-semibold transition-colors ${
+                  mode === 'form'
+                    ? 'bg-indigo-600 text-white'
+                    : 'text-foreground hover:bg-muted'
+                }`}
+              >
+                <Edit3 className="h-4 w-4" />
+                Fill out online
+              </button>
+              <button
+                type="button"
+                role="radio"
+                aria-checked={mode === 'blank'}
+                onClick={() => setMode('blank')}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-base font-semibold transition-colors ${
+                  mode === 'blank'
+                    ? 'bg-indigo-600 text-white'
+                    : 'text-foreground hover:bg-muted'
+                }`}
+              >
+                <FileText className="h-4 w-4" />
+                Print blank (fill by hand)
+              </button>
             </div>
-            <h3 className="font-semibold mb-3">Backup Executor</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Field label="Name"><Input value={backupExecutor.name} onChange={(e) => setBackupExecutor({ ...backupExecutor, name: e.target.value })} /></Field>
-              <Field label="Relationship"><Input value={backupExecutor.relationship} onChange={(e) => setBackupExecutor({ ...backupExecutor, relationship: e.target.value })} /></Field>
-              <Field label="Phone"><Input type="tel" value={backupExecutor.phone} onChange={(e) => setBackupExecutor({ ...backupExecutor, phone: e.target.value })} /></Field>
-              <Field label="Email"><Input type="email" value={backupExecutor.email} onChange={(e) => setBackupExecutor({ ...backupExecutor, email: e.target.value })} /></Field>
-            </div>
-          </SectionCard>
 
-          {/* 3. Digital Assets */}
-          <SectionCard icon={<FileText className="h-5 w-5" />} number={3} title="Digital Assets Inventory" subtitle="List accounts so your executor knows what to find. Never include passwords here.">
-            <div className="space-y-5">
-              <AssetField icon={<Mail className="h-4 w-4" />} label="Email accounts (provider and username only — no passwords)" rows={3}
-                value={assets.emailAccounts} onChange={(v) => setAssets({ ...assets, emailAccounts: v })}
-                placeholder="Gmail: jane.doe@gmail.com&#10;Yahoo: janedoe1956@yahoo.com" />
-              <AssetField icon={<Lock className="h-4 w-4" />} label="Password manager (which one, and notes for the executor)" rows={2}
-                value={assets.passwordManager} onChange={(v) => setAssets({ ...assets, passwordManager: v })}
-                placeholder="1Password. Master password is in safe deposit box at First National Bank." />
-              <AssetField icon={<Cloud className="h-4 w-4" />} label="Cloud storage (Google Drive, iCloud, Dropbox, OneDrive)" rows={2}
-                value={assets.cloudStorage} onChange={(v) => setAssets({ ...assets, cloudStorage: v })}
-                placeholder="iCloud: jane.doe@icloud.com&#10;Dropbox: janedoe@gmail.com" />
-              <AssetField icon={<Share2 className="h-4 w-4" />} label="Social media accounts (Facebook, Instagram, LinkedIn, X/Twitter)" rows={3}
-                value={assets.socialMedia} onChange={(v) => setAssets({ ...assets, socialMedia: v })}
-                placeholder="Facebook: facebook.com/jane.doe.1956&#10;Instagram: @janedoe_gardens" />
-              <AssetField icon={<Wallet className="h-4 w-4" />} label="Financial accounts (bank, investment, crypto — list the institutions, not login info)" rows={3}
-                value={assets.financialAccounts} onChange={(v) => setAssets({ ...assets, financialAccounts: v })}
-                placeholder="Checking: Chase Bank&#10;Investments: Fidelity&#10;Crypto: Coinbase" />
-              <AssetField icon={<Tv className="h-4 w-4" />} label="Subscription services to cancel (Netflix, Hulu, gym apps, etc.)" rows={2}
-                value={assets.subscriptions} onChange={(v) => setAssets({ ...assets, subscriptions: v })}
-                placeholder="Netflix, Hulu, Amazon Prime, New York Times, Peloton app" />
-              <AssetField icon={<Smartphone className="h-4 w-4" />} label="Devices (phones, laptops, tablets — with model and serial if known)" rows={2}
-                value={assets.devices} onChange={(v) => setAssets({ ...assets, devices: v })}
-                placeholder="iPhone 15 Pro (serial in box), MacBook Air 2023, iPad 10th gen" />
-              <AssetField icon={<ImageIcon className="h-4 w-4" />} label="Digital photo locations" rows={2}
-                value={assets.photoLocations} onChange={(v) => setAssets({ ...assets, photoLocations: v })}
-                placeholder="iCloud Photos, external hard drive in office desk drawer, Google Photos" />
-              <AssetField icon={<Globe className="h-4 w-4" />} label="Online businesses or websites you own" rows={2}
-                value={assets.onlineBusinesses} onChange={(v) => setAssets({ ...assets, onlineBusinesses: v })}
-                placeholder="Etsy shop: JaneDoeKnits&#10;Personal blog: janesgarden.blog" />
-              <AssetField icon={<Mail className="h-4 w-4" />} label="Email signatures or auto-replies to update" rows={2}
-                value={assets.emailSignatures} onChange={(v) => setAssets({ ...assets, emailSignatures: v })}
-                placeholder="Work email needs out-of-office disabled; volunteer board email signature updated" />
-              <AssetField icon={<Globe className="h-4 w-4" />} label="Domain names owned" rows={2}
-                value={assets.domainNames} onChange={(v) => setAssets({ ...assets, domainNames: v })}
-                placeholder="janesgarden.blog — registered with GoDaddy, auto-renews yearly" />
+            <div className="flex gap-2 items-center flex-wrap">
+              {mode === 'form' && (
+                <span
+                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground"
+                  aria-live="polite"
+                >
+                  <Save className="h-4 w-4" />
+                  {savedLabel || 'Autosave on'}
+                </span>
+              )}
+              {mode === 'form' && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleClear}
+                  className="gap-1.5 text-muted-foreground hover:text-rose-600"
+                >
+                  <Trash2 className="h-4 w-4" />
+                  Clear
+                </Button>
+              )}
+              <Button onClick={handlePrint} size="lg" className="gap-2 bg-indigo-600 hover:bg-indigo-700">
+                <Printer className="h-5 w-5" />
+                Download as PDF
+              </Button>
             </div>
-          </SectionCard>
+          </div>
 
-          {/* 4. Platform Instructions */}
-          <SectionCard icon={<ExternalLink className="h-5 w-5" />} number={4} title="Platform Instructions" subtitle="Set these up now — each platform has its own legacy tool. Then note your choices below.">
-            <div className="space-y-4">
-              {platformLinks.map((p) => (
-                <div key={p.id} className="border rounded-lg p-4">
-                  <div className="flex items-start justify-between gap-4 mb-2">
-                    <div>
-                      <h3 className="font-semibold">{p.title}</h3>
-                      <p className="text-sm text-muted-foreground">{p.description}</p>
-                    </div>
-                    <a href={p.url} target="_blank" rel="noopener noreferrer"
-                       className="text-sm text-indigo-600 hover:underline shrink-0 inline-flex items-center gap-1">
-                      Set up <ExternalLink className="h-3 w-3" />
-                    </a>
+          <p className="mt-3 text-sm text-muted-foreground flex items-start gap-2">
+            <Info className="h-4 w-4 shrink-0 mt-0.5" />
+            <span>
+              In the print dialog, choose <strong>Save as PDF</strong> as the
+              destination — that lets you keep a digital copy, email it to your
+              executor, or print it later.
+            </span>
+          </p>
+        </section>
+
+        {/* The Document */}
+        <div className="dw-outer">
+          <article className="dw-page" aria-label="Digital Will Template">
+            <div className="dw-head-brand">
+              <span>TekSure · Digital Will Template</span>
+              <span className="dw-date">
+                {new Date().toLocaleDateString('en-US', {
+                  year: 'numeric', month: 'long', day: 'numeric',
+                })}
+              </span>
+            </div>
+
+            <h1>Your Digital Will</h1>
+            <p className="dw-tag">
+              The accounts your family will need. In one document.
+            </p>
+            <div className="dw-rule" />
+
+            <div className="dw-warn" role="note">
+              <AlertTriangle className="h-5 w-5 text-red-700 shrink-0 mt-0.5" aria-hidden />
+              <p>
+                <strong>Do NOT write actual passwords on this document.</strong>
+                {' '}Passwords belong in a password manager or a sealed envelope
+                with your lawyer. This form tells your family <em>what accounts
+                exist and what you want done with them</em> — nothing more.
+              </p>
+            </div>
+
+            {/* 1. Personal Information */}
+            <section className="dw-section">
+              <SectionHeader number={1} title="Personal Information" />
+              <div className="dw-grid">
+                <WriteLine mode={mode} label="Full legal name"
+                  helper="The name on your driver's license or birth certificate."
+                  value={data.fullName} onChange={(v) => update('fullName', v)} />
+                <WriteLine mode={mode} label="Date of birth"
+                  helper="Month, day, year." type="date"
+                  value={data.dateOfBirth} onChange={(v) => update('dateOfBirth', v)} />
+                <WriteLine mode={mode} label="Date this was filled out"
+                  helper="When you wrote or last updated this document." type="date"
+                  value={data.dateFilledOut} onChange={(v) => update('dateFilledOut', v)} />
+                <WriteLine mode={mode} label="Who has copies of this document"
+                  helper="For example: spouse, attorney, adult child."
+                  value={data.documentLocation} onChange={(v) => update('documentLocation', v)} />
+              </div>
+            </section>
+
+            {/* 2. Executor / Digital Agent */}
+            <section className="dw-section">
+              <SectionHeader number={2} title="Executor / Digital Agent"
+                subtitle="The person you trust to carry out these wishes." />
+              <div className="dw-grid">
+                <WriteLine mode={mode} label="Name"
+                  helper="Who will handle your digital accounts?"
+                  value={data.execName} onChange={(v) => update('execName', v)} />
+                <WriteLine mode={mode} label="Relationship"
+                  helper="Spouse, child, sibling, friend, attorney."
+                  value={data.execRelationship} onChange={(v) => update('execRelationship', v)} />
+                <WriteLine mode={mode} label="Phone" type="tel"
+                  helper="The number they are most likely to answer."
+                  value={data.execPhone} onChange={(v) => update('execPhone', v)} />
+                <WriteLine mode={mode} label="Email" type="email"
+                  helper="Where platforms can contact them."
+                  value={data.execEmail} onChange={(v) => update('execEmail', v)} />
+              </div>
+            </section>
+
+            {/* 3. Backup Executor */}
+            <section className="dw-section">
+              <SectionHeader number={3} title="Backup Executor"
+                subtitle="In case the first person is unavailable." />
+              <div className="dw-grid">
+                <WriteLine mode={mode} label="Name"
+                  helper="Second-choice trusted person."
+                  value={data.backupName} onChange={(v) => update('backupName', v)} />
+                <WriteLine mode={mode} label="Relationship"
+                  helper="Their connection to you."
+                  value={data.backupRelationship} onChange={(v) => update('backupRelationship', v)} />
+                <WriteLine mode={mode} label="Phone" type="tel"
+                  helper="Primary phone number."
+                  value={data.backupPhone} onChange={(v) => update('backupPhone', v)} />
+                <WriteLine mode={mode} label="Email" type="email"
+                  helper="Primary email address."
+                  value={data.backupEmail} onChange={(v) => update('backupEmail', v)} />
+              </div>
+            </section>
+
+            {/* 4. Email Accounts */}
+            <section className="dw-section">
+              <SectionHeader number={4} title="Email Accounts"
+                subtitle="List each email provider you use. Username only — no passwords." />
+              {data.emails.map((row, i) => (
+                <div key={i} className="dw-num-row">
+                  <div className="dw-num">{i + 1}.</div>
+                  <div className="dw-grid dw-grid-3">
+                    <WriteLine mode={mode} label="Provider"
+                      helper="Gmail, Yahoo, Outlook, AOL, etc."
+                      value={row.provider}
+                      onChange={(v) => updateEmail(i, 'provider', v)} />
+                    <WriteLine mode={mode} label="Username / address"
+                      helper="The @ address — not the password."
+                      value={row.username}
+                      onChange={(v) => updateEmail(i, 'username', v)} />
+                    <WriteLine mode={mode} label="What to do after death"
+                      helper="Close, memorialize, or forward mail."
+                      value={row.action}
+                      onChange={(v) => updateEmail(i, 'action', v)} />
                   </div>
-                  <Input placeholder="Your choice — e.g. 'Legacy contact: Mary Doe', or 'Request deletion'"
-                         value={platforms[p.id]}
-                         onChange={(e) => setPlatforms({ ...platforms, [p.id]: e.target.value })} />
                 </div>
               ))}
-            </div>
-          </SectionCard>
+            </section>
 
-          {/* 5. Password Access */}
-          <SectionCard icon={<Key className="h-5 w-5" />} number={5} title="Password Access Plan" subtitle="Never write passwords in this document. Instead, explain where they live and how to access them.">
-            <div className="space-y-4">
-              <Field label="Where are the passwords stored?">
-                <Textarea rows={2} value={password.location} onChange={(e) => setPassword({ ...password, location: e.target.value })}
-                  placeholder="In the 1Password app on my iPhone and Mac. A sealed letter with the master password is in our home safe in the bedroom closet." />
-              </Field>
-              <Field label="How can your executor access them?">
-                <Textarea rows={3} value={password.accessMethod} onChange={(e) => setPassword({ ...password, accessMethod: e.target.value })}
-                  placeholder="1) Open home safe (combination is with our attorney John Smith). 2) Find sealed envelope labeled 'Digital Will Passwords'. 3) Use master password to open 1Password." />
-              </Field>
-              <Field label="Emergency contact set up inside the password manager">
-                <Input value={password.emergencyContact} onChange={(e) => setPassword({ ...password, emergencyContact: e.target.value })}
-                  placeholder="1Password emergency kit shared with Mary Doe (executor)" />
-              </Field>
-              <div className="flex gap-3 items-start p-3 rounded-lg bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900">
-                <AlertTriangle className="h-5 w-5 text-rose-600 shrink-0" />
-                <p className="text-sm"><strong>Do not write actual passwords in this will.</strong> A printed will can be copied, lost, or seen by people it was not meant for. Point your executor to where the passwords live instead.</p>
+            {/* 5. Social Media */}
+            <section className="dw-section">
+              <SectionHeader number={5} title="Social Media"
+                subtitle="For each one: delete, memorialize, or keep active." />
+              <div className="dw-grid dw-grid-1">
+                <WriteLine mode={mode} wide label="Facebook"
+                  helper="Your profile URL or username, plus what to do (delete / memorialize / keep)."
+                  value={data.facebook} onChange={(v) => update('facebook', v)} />
+                <WriteLine mode={mode} wide label="Instagram"
+                  helper="Handle + instruction (delete / memorialize / keep)."
+                  value={data.instagram} onChange={(v) => update('instagram', v)} />
+                <WriteLine mode={mode} wide label="LinkedIn"
+                  helper="Profile + whether to close or leave as-is."
+                  value={data.linkedin} onChange={(v) => update('linkedin', v)} />
+                <WriteLine mode={mode} wide label="Twitter / X"
+                  helper="Handle + instruction."
+                  value={data.twitter} onChange={(v) => update('twitter', v)} />
+                <WriteLine mode={mode} wide label="Other platforms"
+                  helper="TikTok, Pinterest, Reddit, forums, etc."
+                  value={data.socialOther} onChange={(v) => update('socialOther', v)} />
               </div>
-            </div>
-          </SectionCard>
+            </section>
 
-          {/* 6. Final Wishes */}
-          <SectionCard icon={<CheckCircle2 className="h-5 w-5" />} number={6} title="Final Wishes for Digital Content">
-            <div className="space-y-4">
-              <Field label="What should happen to your photos?">
-                <Textarea rows={2} value={wishes.photos} onChange={(e) => setWishes({ ...wishes, photos: e.target.value })}
-                  placeholder="Share the iCloud Photos library with my children. Preserve the external backup drive for grandchildren." />
-              </Field>
-              <Field label="What should happen to your email archive?">
-                <Textarea rows={2} value={wishes.emailArchive} onChange={(e) => setWishes({ ...wishes, emailArchive: e.target.value })}
-                  placeholder="Export and save emails from the past 10 years to external drive, then close Gmail account after 90 days." />
-              </Field>
-              <Field label="What should happen to your social media?">
-                <Textarea rows={2} value={wishes.socialMedia} onChange={(e) => setWishes({ ...wishes, socialMedia: e.target.value })}
-                  placeholder="Memorialize Facebook. Delete Instagram and Twitter/X. Keep LinkedIn active for 30 days for colleagues to see the notice, then close." />
-              </Field>
-              <Field label="Online gaming or entertainment accounts">
-                <Textarea rows={2} value={wishes.gaming} onChange={(e) => setWishes({ ...wishes, gaming: e.target.value })}
-                  placeholder="Cancel Xbox Live. Donate Steam library to nephew if possible per Valve policy." />
-              </Field>
-              <Field label="Cryptocurrency (if applicable)">
-                <Textarea rows={2} value={wishes.crypto} onChange={(e) => setWishes({ ...wishes, crypto: e.target.value })}
-                  placeholder="Coinbase account holdings should be transferred to estate. Seed phrase for Ledger hardware wallet is in safe deposit box." />
-              </Field>
-            </div>
-          </SectionCard>
-
-          {/* Generate */}
-          <div className="flex flex-col sm:flex-row gap-3 items-center justify-center pt-4">
-            <Button size="lg" onClick={scrollToDocument} className="bg-indigo-600 hover:bg-indigo-700">
-              <FileText className="h-4 w-4 mr-2" /> Generate Printable Document
-            </Button>
-            {generated && (
-              <Button size="lg" variant="outline" onClick={handlePrint}>
-                <Printer className="h-4 w-4 mr-2" /> Print or Save as PDF
-              </Button>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Generated Document */}
-      {generated && (
-        <section id="generated-will" className="bg-white dark:bg-slate-950 py-10 print:py-0 print:bg-white">
-          <div className="container max-w-3xl mx-auto px-6 print:px-0 print:max-w-full">
-            <div className="prose dark:prose-invert max-w-none print:text-black">
-              <h1 className="text-3xl font-bold border-b pb-3 mb-6">
-                Digital Will & Asset Memorandum
-              </h1>
-              <p className="text-sm text-muted-foreground mb-6 print:text-black">
-                For: <strong>{personal.fullName || '[Your name]'}</strong> · Prepared on {todayLong}
-              </p>
-
-              <DocSection title="1. Personal Information">
-                <DocRow label="Full legal name" value={personal.fullName} />
-                <DocRow label="Date of birth" value={personal.dob} />
-                {personal.ssnLast4 && <DocRow label="Last 4 of SSN" value={personal.ssnLast4} />}
-                <DocRow label="Primary address" value={personal.address} />
-              </DocSection>
-
-              <DocSection title="2. Executor">
-                <h3 className="font-semibold mt-3 mb-1">Primary Executor</h3>
-                <DocRow label="Name" value={executor.name} />
-                <DocRow label="Relationship" value={executor.relationship} />
-                <DocRow label="Phone" value={executor.phone} />
-                <DocRow label="Email" value={executor.email} />
-                <h3 className="font-semibold mt-4 mb-1">Backup Executor</h3>
-                <DocRow label="Name" value={backupExecutor.name} />
-                <DocRow label="Relationship" value={backupExecutor.relationship} />
-                <DocRow label="Phone" value={backupExecutor.phone} />
-                <DocRow label="Email" value={backupExecutor.email} />
-              </DocSection>
-
-              <DocSection title="3. Digital Assets Inventory">
-                <DocRow label="Email accounts" value={assets.emailAccounts} multiline />
-                <DocRow label="Password manager" value={assets.passwordManager} multiline />
-                <DocRow label="Cloud storage" value={assets.cloudStorage} multiline />
-                <DocRow label="Social media" value={assets.socialMedia} multiline />
-                <DocRow label="Financial accounts" value={assets.financialAccounts} multiline />
-                <DocRow label="Subscriptions to cancel" value={assets.subscriptions} multiline />
-                <DocRow label="Devices" value={assets.devices} multiline />
-                <DocRow label="Photo locations" value={assets.photoLocations} multiline />
-                <DocRow label="Online businesses" value={assets.onlineBusinesses} multiline />
-                <DocRow label="Email signatures to update" value={assets.emailSignatures} multiline />
-                <DocRow label="Domain names" value={assets.domainNames} multiline />
-              </DocSection>
-
-              <DocSection title="4. Platform Instructions">
-                {platformLinks.map((p) => (
-                  <DocRow key={p.id} label={p.title} value={platforms[p.id]} />
-                ))}
-              </DocSection>
-
-              <DocSection title="5. Password Access Plan">
-                <DocRow label="Where passwords live" value={password.location} multiline />
-                <DocRow label="How to access" value={password.accessMethod} multiline />
-                <DocRow label="Emergency contact" value={password.emergencyContact} />
-                <p className="text-xs italic mt-2 print:text-black">No passwords are recorded in this document. See access plan above.</p>
-              </DocSection>
-
-              <DocSection title="6. Final Wishes for Digital Content">
-                <DocRow label="Photos" value={wishes.photos} multiline />
-                <DocRow label="Email archive" value={wishes.emailArchive} multiline />
-                <DocRow label="Social media" value={wishes.socialMedia} multiline />
-                <DocRow label="Gaming" value={wishes.gaming} multiline />
-                <DocRow label="Cryptocurrency" value={wishes.crypto} multiline />
-              </DocSection>
-
-              <div className="mt-10 border-t pt-6 text-sm print:text-black">
-                <p className="italic mb-6">
-                  This digital memorandum is a supplement to my legal will. It does not replace
-                  legally binding estate documents.
-                </p>
-                <div className="grid grid-cols-2 gap-8 mt-10">
-                  <div>
-                    <div className="border-b border-black h-10" />
-                    <p className="mt-1 text-xs">Signature</p>
-                  </div>
-                  <div>
-                    <div className="border-b border-black h-10" />
-                    <p className="mt-1 text-xs">Date</p>
-                  </div>
-                  <div>
-                    <div className="border-b border-black h-10" />
-                    <p className="mt-1 text-xs">Witness signature</p>
-                  </div>
-                  <div>
-                    <div className="border-b border-black h-10" />
-                    <p className="mt-1 text-xs">Date</p>
+            {/* 6. Financial / Banking */}
+            <section className="dw-section">
+              <SectionHeader number={6} title="Financial / Banking"
+                subtitle="Bank name + account type + what to do. No account numbers or PINs." />
+              {data.banks.map((row, i) => (
+                <div key={i} className="dw-num-row">
+                  <div className="dw-num">{i + 1}.</div>
+                  <div className="dw-grid dw-grid-3">
+                    <WriteLine mode={mode} label="Bank name"
+                      helper="Institution name only."
+                      value={row.name}
+                      onChange={(v) => updateBank(i, 'name', v)} />
+                    <WriteLine mode={mode} label="Account type"
+                      helper="Checking, savings, CD, joint."
+                      value={row.accountType}
+                      onChange={(v) => updateBank(i, 'accountType', v)} />
+                    <WriteLine mode={mode} label="What to do"
+                      helper="Close, transfer to [name], or leave for executor."
+                      value={row.action}
+                      onChange={(v) => updateBank(i, 'action', v)} />
                   </div>
                 </div>
+              ))}
+            </section>
+
+            {/* 7. Investment Accounts */}
+            <section className="dw-section">
+              <SectionHeader number={7} title="Investment Accounts"
+                subtitle="Brokerages, 401(k), IRA, pension. Institution + type + instruction." />
+              {data.investments.map((row, i) => (
+                <div key={i} className="dw-num-row">
+                  <div className="dw-num">{i + 1}.</div>
+                  <div className="dw-grid dw-grid-3">
+                    <WriteLine mode={mode} label="Brokerage / firm"
+                      helper="Fidelity, Vanguard, Schwab, employer pension."
+                      value={row.brokerage}
+                      onChange={(v) => updateInvest(i, 'brokerage', v)} />
+                    <WriteLine mode={mode} label="Account type"
+                      helper="401(k), traditional IRA, Roth IRA, brokerage."
+                      value={row.accountType}
+                      onChange={(v) => updateInvest(i, 'accountType', v)} />
+                    <WriteLine mode={mode} label="What to do"
+                      helper="Transfer to beneficiary, close, roll over."
+                      value={row.action}
+                      onChange={(v) => updateInvest(i, 'action', v)} />
+                  </div>
+                </div>
+              ))}
+            </section>
+
+            {/* 8. Subscription Services */}
+            <section className="dw-section">
+              <SectionHeader number={8} title="Subscription Services"
+                subtitle="Recurring charges that will keep hitting your card. Cancel or forward." />
+              {data.subscriptions.map((row, i) => (
+                <div key={i} className="dw-num-row">
+                  <div className="dw-num">{i + 1}.</div>
+                  <div className="dw-grid">
+                    <WriteLine mode={mode} label="Service name"
+                      helper="Netflix, Amazon Prime, Peloton, newspaper, etc."
+                      value={row.name}
+                      onChange={(v) => updateSub(i, 'name', v)} />
+                    <WriteLine mode={mode} label="Cancel or forward to family?"
+                      helper="Cancel, or transfer to [name]."
+                      value={row.action}
+                      onChange={(v) => updateSub(i, 'action', v)} />
+                  </div>
+                </div>
+              ))}
+            </section>
+
+            {/* 9. Cloud Storage */}
+            <section className="dw-section">
+              <SectionHeader number={9} title="Cloud Storage"
+                subtitle="Where your photos, files, and backups live online." />
+              <div className="dw-grid dw-grid-1">
+                <WriteLine mode={mode} wide label="Google (Drive, Photos, Gmail)"
+                  helper="Account email + what to preserve or delete."
+                  value={data.googleCloud} onChange={(v) => update('googleCloud', v)} />
+                <WriteLine mode={mode} wide label="iCloud (Apple)"
+                  helper="Apple ID + instructions. Apple needs a Legacy Contact set up — see the guide."
+                  value={data.icloud} onChange={(v) => update('icloud', v)} />
+                <WriteLine mode={mode} wide label="Dropbox, OneDrive, other"
+                  helper="Service + account + what to do with files and shared folders."
+                  value={data.dropboxOther} onChange={(v) => update('dropboxOther', v)} />
               </div>
+            </section>
+
+            {/* 10. Devices */}
+            <section className="dw-section">
+              <SectionHeader number={10} title="Devices"
+                subtitle="Phones, computers, tablets. Where are the passcodes kept?" />
+              {data.devices.map((row, i) => (
+                <div key={i} className="dw-num-row">
+                  <div className="dw-num">{i + 1}.</div>
+                  <div className="dw-grid">
+                    <WriteLine mode={mode} label="Device"
+                      helper="iPhone 15, MacBook Air 2022, iPad, Windows laptop."
+                      value={row.device}
+                      onChange={(v) => updateDevice(i, 'device', v)} />
+                    <WriteLine mode={mode} label="Passcode stored with"
+                      helper="Password manager, sealed envelope, or trusted family member."
+                      value={row.passcodeLocation}
+                      onChange={(v) => updateDevice(i, 'passcodeLocation', v)} />
+                  </div>
+                </div>
+              ))}
+            </section>
+
+            {/* 11. Password Manager */}
+            <section className="dw-section">
+              <SectionHeader number={11} title="Password Manager"
+                subtitle="This is the master key. Tell your executor how to reach it — not the master password itself." />
+              <div className="dw-grid dw-grid-1">
+                <WriteLine mode={mode} wide label="Provider"
+                  helper="1Password, Bitwarden, LastPass, Apple Passwords, Google Password Manager, etc."
+                  value={data.pmProvider} onChange={(v) => update('pmProvider', v)} />
+                <WriteBlock mode={mode} lines={3} label="How to access emergency recovery"
+                  helper="Example: 'The emergency kit is in our home safe; the safe combination is with John Smith, attorney.' Never write the master password here."
+                  value={data.pmAccess} onChange={(v) => update('pmAccess', v)} />
+              </div>
+            </section>
+
+            {/* 12. Cryptocurrency */}
+            <section className="dw-section">
+              <SectionHeader number={12} title="Cryptocurrency"
+                subtitle="Exchanges, wallets, and the single warning that matters." />
+              <div className="dw-grid dw-grid-1">
+                <WriteBlock mode={mode} lines={3} label="Exchanges and wallets"
+                  helper="Coinbase, Kraken, Ledger, Trezor. Account emails + how the seed phrase is stored. Never on paper that sits with this document."
+                  value={data.cryptoAccounts} onChange={(v) => update('cryptoAccounts', v)} />
+                <WriteBlock mode={mode} lines={2} label="Explicit acknowledgment"
+                  helper="Write or initial: 'I understand that lost seed phrases mean lost crypto forever. There is no recovery. I have stored them at [location] and my executor can find them by [method].'"
+                  value={data.cryptoAck} onChange={(v) => update('cryptoAck', v)} />
+              </div>
+            </section>
+
+            {/* 13. Photos & Memories */}
+            <section className="dw-section">
+              <SectionHeader number={13} title="Photos & Memories"
+                subtitle="The stuff nobody wants lost. Where they live and who gets what." />
+              <div className="dw-grid dw-grid-1">
+                <WriteBlock mode={mode} lines={2} label="Where they live"
+                  helper="iCloud Photos, Google Photos, external hard drive in office drawer, printed albums in the attic."
+                  value={data.photoLocations} onChange={(v) => update('photoLocations', v)} />
+                <WriteBlock mode={mode} lines={2} label="Priority for saving"
+                  helper="Which photos matter most? Wedding, childhood, grandkids, travel?"
+                  value={data.photoPriority} onChange={(v) => update('photoPriority', v)} />
+                <WriteBlock mode={mode} lines={2} label="Who gets what"
+                  helper="Example: 'Wedding album to eldest daughter. Grandkid photos shared with all children. Family videos to my son Mark.'"
+                  value={data.photoRecipients} onChange={(v) => update('photoRecipients', v)} />
+              </div>
+            </section>
+
+            {/* 14. Special Instructions */}
+            <section className="dw-section">
+              <SectionHeader number={14} title="Special Instructions"
+                subtitle="Anything specific you want done — or not done." />
+              <WriteBlock mode={mode} lines={6} label="Your specific wishes"
+                helper={'Examples: "Please send my Kindle books to my daughter." "Delete my browser history." "Do not read my private journal — burn it." "Post this final message on Facebook."'}
+                value={data.specialInstructions} onChange={(v) => update('specialInstructions', v)} />
+            </section>
+
+            {/* 15. Where This Document Is Kept */}
+            <section className="dw-section">
+              <SectionHeader number={15} title="Where This Document Is Kept"
+                subtitle="The document is only useful if your family can find it." />
+              <div className="dw-grid dw-grid-1">
+                <WriteBlock mode={mode} lines={2} label="Physical location"
+                  helper="Example: 'Locked home safe, combination known to executor.' 'Top drawer of bedroom filing cabinet.'"
+                  value={data.documentPhysicalLocation} onChange={(v) => update('documentPhysicalLocation', v)} />
+                <WriteBlock mode={mode} lines={2} label="Digital backup location"
+                  helper="Example: 'Encrypted PDF in my password manager vault.' 'Scanned copy emailed to my attorney.'"
+                  value={data.documentDigitalBackup} onChange={(v) => update('documentDigitalBackup', v)} />
+              </div>
+            </section>
+
+            {/* 16. Signature */}
+            <section className="dw-section">
+              <SectionHeader number={16} title="Signature" />
+              <div className="dw-grid">
+                <WriteLine mode={mode} label="Date" type="date"
+                  helper="The day you sign this document."
+                  value={data.signatureDate} onChange={(v) => update('signatureDate', v)} />
+                <div className="dw-field">
+                  <div className="dw-label">Signature</div>
+                  <div className="dw-helper">Sign in pen after printing.</div>
+                  <div className="dw-line" aria-hidden />
+                </div>
+              </div>
+            </section>
+
+            {/* Footer disclaimer */}
+            <div className="dw-foot">
+              <div className="dw-legal">
+                <strong>This is a template, not a legal document.</strong> It
+                helps your family find and handle your digital accounts — but
+                it is not a substitute for a will. Ask your lawyer about making
+                this legally binding under your state's RUFADAA law (the
+                Revised Uniform Fiduciary Access to Digital Assets Act, which
+                lets executors legally access digital accounts in most U.S.
+                states).
+              </div>
+              <p style={{ marginTop: 10, fontSize: '9.5pt', textAlign: 'center' }}>
+                Made with care by TekSure · teksure.com/tools/digital-will-template ·
+                Free forever.
+              </p>
             </div>
+          </article>
+        </div>
+
+        {/* Related tools (non-print) */}
+        <section className="print:hidden container max-w-5xl mx-auto px-4 py-12">
+          <h2 className="text-2xl font-bold mb-6 text-center">
+            Keep going — related free tools
+          </h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link
+              to="/guides/digital-estate-planning-accounts-after-death"
+              className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
+            >
+              <BookOpen className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-lg">Digital Estate Planning Guide</h3>
+                <p className="text-sm text-muted-foreground">
+                  The full plain-English explainer this template comes from.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="/tools/password-manager"
+              className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
+            >
+              <FileText className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-lg">Password Manager Picker</h3>
+                <p className="text-sm text-muted-foreground">
+                  The safe place to keep the passwords that don't belong here.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="/checklists"
+              className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
+            >
+              <FileSignature className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-lg">Printable Checklists</h3>
+                <p className="text-sm text-muted-foreground">
+                  "My Loved One Passed Away" and "Family Digital Legacy Plan."
+                </p>
+              </div>
+            </Link>
           </div>
         </section>
-      )}
+      </main>
 
-      {/* Related */}
-      <section className="print:hidden bg-slate-50 dark:bg-slate-950 py-12">
-        <div className="container max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related tools and guides</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <Link to="/tools/account-recovery"
-                  className="border rounded-lg p-5 hover:shadow-md transition group flex items-center justify-between">
-              <div>
-                <h3 className="font-semibold">Account Recovery Tool</h3>
-                <p className="text-sm text-muted-foreground">Plan ahead so you never get locked out.</p>
-              </div>
-              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
-            </Link>
-            <Link to="/tools/backup-wizard"
-                  className="border rounded-lg p-5 hover:shadow-md transition group flex items-center justify-between">
-              <div>
-                <h3 className="font-semibold">Backup Wizard</h3>
-                <p className="text-sm text-muted-foreground">Protect photos and documents before anything happens.</p>
-              </div>
-              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
-  );
-}
-
-/* ── Helpers ───────────────────────────────────────── */
-
-function SectionCard({
-  icon, number, title, subtitle, children,
-}: { icon: React.ReactNode; number: number; title: string; subtitle?: string; children: React.ReactNode }) {
-  return (
-    <Card>
-      <CardContent className="p-6">
-        <div className="flex items-start gap-3 mb-5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300 shrink-0">
-            {icon}
-          </div>
-          <div>
-            <p className="text-xs font-semibold text-muted-foreground">STEP {number}</p>
-            <h2 className="text-xl font-bold leading-tight">{title}</h2>
-            {subtitle && <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>}
-          </div>
-        </div>
-        {children}
-      </CardContent>
-    </Card>
-  );
-}
-
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <div className="space-y-1.5">
-      <Label className="text-sm font-medium">{label}</Label>
-      {children}
-    </div>
-  );
-}
-
-function AssetField({
-  icon, label, value, onChange, placeholder, rows = 2,
-}: { icon: React.ReactNode; label: string; value: string; onChange: (v: string) => void; placeholder?: string; rows?: number }) {
-  return (
-    <div className="space-y-1.5">
-      <Label className="text-sm font-medium flex items-center gap-2">
-        <span className="text-muted-foreground">{icon}</span>
-        {label}
-      </Label>
-      <Textarea rows={rows} value={value} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} />
-    </div>
-  );
-}
-
-function DocSection({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="mt-6">
-      <h2 className="text-xl font-bold border-b pb-1 mb-3">{title}</h2>
-      {children}
-    </div>
-  );
-}
-
-function DocRow({ label, value, multiline }: { label: string; value: string; multiline?: boolean }) {
-  return (
-    <div className="py-1.5">
-      <p className="text-sm font-semibold print:text-black">{label}</p>
-      {multiline ? (
-        <p className="text-sm whitespace-pre-line print:text-black">{value || '—'}</p>
-      ) : (
-        <p className="text-sm print:text-black">{value || '—'}</p>
-      )}
-    </div>
+      <div className="print:hidden">
+        <Footer />
+      </div>
+    </>
   );
 }
