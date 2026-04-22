@@ -1,12 +1,13 @@
 # TekSure Knowledge Base — Wiki Index
 
-*Last updated: 2026-04-06*
+*Last updated: 2026-04-22*
 
 ## AI & Workflow
 | Article | Summary |
 |---------|---------|
 | [[llm-knowledge-bases]] | Flat-file AI knowledge-base architecture, 8-step workflow, and quality controls |
 | [[ai-content-pipeline-patterns]] | Patterns for using AI to automate content creation, organization, and quality assurance |
+| [[tekbrain-private-knowledge-rag]] | TekBrain private-knowledge RAG implementation with chunking, embeddings, and hybrid retrieval |
 
 ## Content Strategy
 | Article | Summary |
