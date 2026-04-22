@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
   /* ── 1. Computer Skills for Seniors ── */
   {
     id: 'computer-skills',
-    emoji: '💻',
+    emoji: '',
     icon: Laptop,
     title: 'Computer Skills for Seniors',
     tagline: 'Plain-language computer classes made for people who did not grow up with screens.',
@@ -121,7 +121,7 @@ const CATEGORIES: Category[] = [
   /* ── 2. Languages ── */
   {
     id: 'languages',
-    emoji: '🗣️',
+    emoji: '',
     icon: Languages,
     title: 'Languages',
     tagline: 'Spanish, French, Italian, Mandarin, ASL — learn a new language at your kitchen table.',
@@ -171,7 +171,7 @@ const CATEGORIES: Category[] = [
   /* ── 3. Academic ── */
   {
     id: 'academic',
-    emoji: '🎓',
+    emoji: '',
     icon: GraduationCap,
     title: 'Academic Classes',
     tagline: 'Real classes from Harvard, MIT, Yale, and Stanford — yes, free.',
@@ -228,7 +228,7 @@ const CATEGORIES: Category[] = [
   /* ── 4. History & Culture ── */
   {
     id: 'history',
-    emoji: '🏛️',
+    emoji: '',
     icon: Landmark,
     title: 'History & Culture',
     tagline: 'Museums at your kitchen table. Documentaries for curious minds.',
@@ -284,7 +284,7 @@ const CATEGORIES: Category[] = [
   /* ── 5. Science & Nature ── */
   {
     id: 'science',
-    emoji: '🔬',
+    emoji: '',
     icon: FlaskConical,
     title: 'Science & Nature',
     tagline: 'NASA, National Geographic, Cornell bird experts — free.',
@@ -341,7 +341,7 @@ const CATEGORIES: Category[] = [
   /* ── 6. Arts & Music ── */
   {
     id: 'arts',
-    emoji: '🎨',
+    emoji: '',
     icon: Palette,
     title: 'Arts & Music',
     tagline: 'Watercolor, piano, drawing, sheet music, masterpieces — all free.',
@@ -398,7 +398,7 @@ const CATEGORIES: Category[] = [
   /* ── 7. Cooking ── */
   {
     id: 'cooking',
-    emoji: '👨‍🍳',
+    emoji: '',
     icon: ChefHat,
     title: 'Cooking',
     tagline: 'Technique, recipes, and kitchen science — from the people who wrote the books.',
@@ -449,7 +449,7 @@ const CATEGORIES: Category[] = [
   /* ── 8. Wellness & Yoga ── */
   {
     id: 'wellness',
-    emoji: '🧘',
+    emoji: '',
     icon: HeartPulse,
     title: 'Wellness & Yoga',
     tagline: 'Gentle yoga, chair workouts, balance, stretching, meditation — made for senior bodies.',
@@ -500,7 +500,7 @@ const CATEGORIES: Category[] = [
   /* ── 9. Finance & Retirement ── */
   {
     id: 'finance',
-    emoji: '💰',
+    emoji: '',
     icon: PiggyBank,
     title: 'Finance & Retirement',
     tagline: 'Retirement, Social Security, taxes, scams, investing — all without a sales pitch.',
@@ -555,7 +555,7 @@ const CATEGORIES: Category[] = [
   /* ── 10. Creative Writing ── */
   {
     id: 'writing',
-    emoji: '✍️',
+    emoji: '',
     icon: Feather,
     title: 'Creative Writing',
     tagline: 'Memoirs, essays, poetry, fiction — and a lifetime of free reading.',

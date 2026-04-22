@@ -391,7 +391,7 @@ const GetHelp = () => {
               <div className="space-y-2">
                 <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  Phone Number <span className="text-primary font-semibold">★</span>
+                  Phone Number <span className="text-primary font-semibold"></span>
                 </Label>
                 <Input id="phone" type="tel" placeholder="(555) 867-5309" value={phone} onChange={(e) => setPhone(e.target.value)} className="h-11 text-base rounded-xl border-border" />
               </div>

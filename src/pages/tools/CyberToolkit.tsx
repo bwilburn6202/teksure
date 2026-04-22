@@ -372,10 +372,10 @@ const PasswordStrengthAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }
           </div>
 
           <div className="space-y-2 text-xs text-gray-400">
-            <div>✓ Contains lowercase: {/[a-z]/.test(password) ? '✓' : '✗'}</div>
-            <div>✓ Contains uppercase: {/[A-Z]/.test(password) ? '✓' : '✗'}</div>
-            <div>✓ Contains numbers: {/[0-9]/.test(password) ? '✓' : '✗'}</div>
-            <div>✓ Contains special chars: {/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password) ? '✓' : '✗'}</div>
+            <div> Contains lowercase: {/[a-z]/.test(password) ? '' : ''}</div>
+            <div> Contains uppercase: {/[A-Z]/.test(password) ? '' : ''}</div>
+            <div> Contains numbers: {/[0-9]/.test(password) ? '' : ''}</div>
+            <div> Contains special chars: {/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password) ? '' : ''}</div>
           </div>
         </div>
       )}
@@ -808,7 +808,7 @@ const URLAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               <div className="text-xs font-medium text-red-400 mb-1">Suspicious Indicators</div>
               <ul className="text-xs text-red-300 space-y-1">
                 {analysis.suspicious.map((ind: string, i: number) => (
-                  <li key={i}>⚠ {ind}</li>
+                  <li key={i}> {ind}</li>
                 ))}
               </ul>
             </div>
@@ -1541,7 +1541,7 @@ export default function CyberToolkit() {
                 onClick={() => setSelectedTool(null)}
                 className="text-gray-400 hover:text-white transition-colors p-1"
               >
-                ✕
+                
               </button>
             </div>
             <div className="p-6">{renderToolComponent(selectedTool)}</div>

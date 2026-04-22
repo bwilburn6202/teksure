@@ -430,7 +430,7 @@ export default function ScamAlerts() {
                       <ul className="space-y-2">
                         {scam.whatToDo.map((step, i) => (
                           <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                            <span className="text-green-600 shrink-0 font-semibold">✓</span>
+                            <span className="text-green-600 shrink-0 font-semibold"></span>
                             {step}
                           </li>
                         ))}

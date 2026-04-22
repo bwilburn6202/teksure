@@ -37,8 +37,8 @@ const statusConfig: Record<Status, { label: string; icon: typeof Clock; color: s
 };
 
 const deviceLabels: Record<string, string> = {
-  phone: '📱 Phone', tablet: '📲 Tablet', computer: '💻 Computer',
-  tv: '📺 TV / Streaming', 'smart-home': '🏠 Smart Home', other: '🔧 Other',
+  phone: ' Phone', tablet: ' Tablet', computer: ' Computer',
+  tv: ' TV / Streaming', 'smart-home': ' Smart Home', other: ' Other',
 };
 
 function formatDate(iso: string) {
@@ -82,8 +82,8 @@ const bookingStatusConfig: Record<BookingStatus, { label: string; color: string;
 };
 
 const serviceLabels: Record<string, string> = {
-  wifi: '📶 WiFi & Internet', setup: '🖥️ Device Setup', security: '🔒 Security',
-  printer: '🖨️ Printer', phone: '📱 Phone / Tablet', general: '🔧 General Help',
+  wifi: ' WiFi & Internet', setup: ' Device Setup', security: ' Security',
+  printer: ' Printer', phone: ' Phone / Tablet', general: ' General Help',
 };
 
 function BookingsTab() {

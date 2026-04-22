@@ -69,7 +69,7 @@ const PROVIDERS: Provider[] = [
     id: 'gmail',
     name: 'Gmail',
     tagline: 'Google email — @gmail.com',
-    emoji: '📧',
+    emoji: '',
     support: { label: 'Gmail Help Center', url: 'https://support.google.com/mail' },
     sections: {
       unsubscribe: {
@@ -131,7 +131,7 @@ const PROVIDERS: Provider[] = [
     id: 'outlook',
     name: 'Outlook / Hotmail',
     tagline: 'Microsoft email — @outlook.com, @hotmail.com, @live.com, @msn.com',
-    emoji: '📨',
+    emoji: '',
     support: { label: 'Outlook Help', url: 'https://support.microsoft.com/en-us/outlook' },
     sections: {
       unsubscribe: {
@@ -193,7 +193,7 @@ const PROVIDERS: Provider[] = [
     id: 'yahoo',
     name: 'Yahoo Mail',
     tagline: '@yahoo.com, @ymail.com',
-    emoji: '💜',
+    emoji: '',
     support: { label: 'Yahoo Mail Help', url: 'https://help.yahoo.com/kb/mail' },
     sections: {
       unsubscribe: {
@@ -254,7 +254,7 @@ const PROVIDERS: Provider[] = [
     id: 'icloud',
     name: 'Apple iCloud Mail',
     tagline: '@icloud.com, @me.com, @mac.com',
-    emoji: '🍎',
+    emoji: '',
     support: { label: 'iCloud Mail Support', url: 'https://support.apple.com/icloud-mail' },
     sections: {
       unsubscribe: {
@@ -316,7 +316,7 @@ const PROVIDERS: Provider[] = [
     id: 'aol',
     name: 'AOL Mail',
     tagline: '@aol.com',
-    emoji: '📪',
+    emoji: '',
     support: { label: 'AOL Help', url: 'https://help.aol.com/products/aol-mail' },
     sections: {
       unsubscribe: {
@@ -741,7 +741,7 @@ function PromotionalEmailsCard() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-4 rounded-lg bg-muted/40 border border-border">
             <p className="font-semibold text-base mb-1 flex items-center gap-2">
-              <span>📧</span> Gmail Promotions tab
+              <span></span> Gmail Promotions tab
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Gmail automatically sorts deals and newsletters into a "Promotions" tab. Turn it on under Settings → Inbox → Categories. Check the tab when you feel like browsing — not every time the phone buzzes.
@@ -750,7 +750,7 @@ function PromotionalEmailsCard() {
 
           <div className="p-4 rounded-lg bg-muted/40 border border-border">
             <p className="font-semibold text-base mb-1 flex items-center gap-2">
-              <span>🎯</span> Outlook Focused Inbox
+              <span></span> Outlook Focused Inbox
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Outlook splits your mail into "Focused" (important) and "Other" (everything else). Enable under View → Show Focused Inbox. Promotions land in "Other" so they don\'t interrupt you.
@@ -759,7 +759,7 @@ function PromotionalEmailsCard() {
 
           <div className="p-4 rounded-lg bg-muted/40 border border-border">
             <p className="font-semibold text-base mb-1 flex items-center gap-2">
-              <span>📁</span> "Newsletters" folder
+              <span></span> "Newsletters" folder
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Works in every provider. Create a folder called "Newsletters" and a filter/rule that moves anything with "unsubscribe" in the body into it. Your inbox stays clean; you can still read newsletters when you want.

@@ -8,6 +8,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides } from '@/data/guides';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 
 // Spanish category labels
 const ES_CATEGORY_LABELS: Record<string, string> = {
@@ -72,7 +73,7 @@ export default function GuidesEspanol() {
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
           <div className="container max-w-2xl">
-            <div className="text-4xl mb-4">🇪🇸</div>
+            <div className="text-4xl mb-4"></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-3">Guías de Tecnología en Español</h1>
             <p className="text-muted-foreground text-lg mb-8">
               {spanishGuides.length} guías paso a paso — sin tecnicismos, solo respuestas claras. Totalmente gratis.
@@ -92,7 +93,7 @@ export default function GuidesEspanol() {
         <div className="container max-w-4xl py-12 px-4">
           {filtered.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-3xl mb-3">🔍</p>
+              <p className="text-3xl mb-3"></p>
               <p className="font-medium mb-1">No se encontraron guías</p>
               <p className="text-sm text-muted-foreground">Intenta con otras palabras clave.</p>
             </div>
@@ -103,7 +104,7 @@ export default function GuidesEspanol() {
               {filtered.map(guide => (
                 <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all">
-                    <div className="text-2xl shrink-0">{guide.thumbnailEmoji}</div>
+                    <GuideThumbnail category={guide.category} size="h-6 w-6" />
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-1">{guide.title}</p>
                       <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{guide.excerpt}</p>
@@ -132,7 +133,7 @@ export default function GuidesEspanol() {
                     {catGuides.map(guide => (
                       <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
                         <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all h-full">
-                          <div className="text-2xl shrink-0 mt-0.5">{guide.thumbnailEmoji}</div>
+                          <GuideThumbnail category={guide.category} size="h-6 w-6" />
                           <div className="flex-1 min-w-0">
                             <p className="font-medium text-sm group-hover:text-primary transition-colors leading-snug mb-1">{guide.title}</p>
                             <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
@@ -151,7 +152,7 @@ export default function GuidesEspanol() {
 
           {/* CTA */}
           <div className="mt-16 text-center p-10 rounded-2xl bg-primary/[0.04] border border-primary/10">
-            <p className="text-2xl mb-3">🌎</p>
+            <p className="text-2xl mb-3"></p>
             <h2 className="text-lg font-bold mb-2">¿Buscas ayuda en inglés también?</h2>
             <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
               TekSure tiene más de {guides.filter(g => !g.slug.startsWith('es-')).length.toLocaleString()} guías en inglés disponibles gratis.

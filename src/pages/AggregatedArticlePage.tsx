@@ -1,7 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Clock, Monitor, Apple, Smartphone, Tablet, Globe,
-  ThumbsUp, ThumbsDown, ChevronRight, Lightbulb, AlertTriangle,
+  ThumbsUp, ThumbsDown, ChevronRight, Lightbulb, AlertTriangle, BookOpen,
 } from 'lucide-react';
 import { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
@@ -90,10 +90,13 @@ export default function AggregatedArticlePage() {
               </BreadcrumbList>
             </Breadcrumb>
 
-            {/* Emoji + title */}
+            {/* Icon + title */}
             <div className="flex items-start gap-4">
-              <span className="text-5xl leading-none shrink-0 mt-1" aria-hidden="true">
-                {article.thumbnailEmoji}
+              <span
+                className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-primary/10 shrink-0 mt-1"
+                aria-hidden="true"
+              >
+                <BookOpen className="h-7 w-7 text-primary" />
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">

@@ -137,7 +137,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                         onClick={() => navigateTo(`/glossary?q=${encodeURIComponent(term)}`)}
                         className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-muted flex items-center gap-3 transition-colors"
                       >
-                        <span className="text-xl shrink-0">📖</span>
+                        <span className="text-xl shrink-0"></span>
                         <p className="text-sm font-medium">{term}</p>
                       </button>
                     ))}
@@ -146,7 +146,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
               </>
             ) : (
               <div className="text-center py-8">
-                <p className="text-4xl mb-2">🔍</p>
+                <p className="text-4xl mb-2"></p>
                 <p className="text-sm font-medium mb-1">No results found</p>
                 <button
                   onClick={() => navigateTo('/quick-fixes')}

@@ -12,6 +12,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type Guide } from '@/data/guides';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { tools, type Tool } from '@/pages/Tools';
 
 /* ── Constants ──────────────────────────────────────────── */
@@ -127,13 +128,12 @@ function GuideResultCard({ guide, query }: { guide: Guide; query: string }) {
     >
       <Card className="h-full rounded-2xl border-2 border-border bg-card hover:border-primary/40 hover:shadow-lg transition-all hover:-translate-y-0.5 group">
         <CardContent className="p-5 md:p-6 flex gap-4 md:gap-5">
-          {/* Emoji thumbnail */}
-          <div
-            className="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-primary/5 dark:bg-primary/10 flex items-center justify-center shrink-0 text-4xl md:text-5xl select-none"
-            aria-hidden="true"
-          >
-            {guide.thumbnailEmoji ?? '📖'}
-          </div>
+          {/* Category icon thumbnail */}
+          <GuideThumbnail
+            category={guide.category}
+            size="h-8 w-8 md:h-10 md:w-10"
+            className="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-primary/5 dark:bg-primary/10 flex items-center justify-center shrink-0"
+          />
 
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -266,7 +266,7 @@ function ToolResultCard({ tool, query }: { tool: Tool; query: string }) {
 function EmptyResults({ query, onSuggest }: { query: string; onSuggest: (term: string) => void }) {
   return (
     <div className="text-center py-12 md:py-16 max-w-xl mx-auto">
-      <p className="text-6xl mb-4 select-none" aria-hidden="true">🔍</p>
+      <p className="text-6xl mb-4 select-none" aria-hidden="true"></p>
       <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
         No results for "{query}"
       </h2>
@@ -324,7 +324,7 @@ function EmptyResults({ query, onSuggest }: { query: string; onSuggest: (term: s
 function NoQueryLanding({ onSuggest }: { onSuggest: (term: string) => void }) {
   return (
     <div className="text-center py-10 md:py-16 max-w-xl mx-auto">
-      <p className="text-6xl mb-4 select-none" aria-hidden="true">🔎</p>
+      <p className="text-6xl mb-4 select-none" aria-hidden="true"></p>
       <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
         What are you looking for?
       </h2>

@@ -88,7 +88,7 @@ export default function TechConfidenceScore() {
       <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">
-          <div className="text-4xl mb-3">📊</div>
+          <div className="text-4xl mb-3"></div>
           <h1 className="text-3xl font-bold mb-2">Tech Confidence Score</h1>
           <p className="text-muted-foreground">10 quick questions to measure your tech confidence — and show you what to tackle next.</p>
         </div>

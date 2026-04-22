@@ -39,12 +39,12 @@ const GIFT_OPTIONS = [
 ];
 
 const OCCASIONS = [
-  { emoji: '🎂', label: 'Birthday' },
-  { emoji: '🎄', label: 'Holiday' },
-  { emoji: '💝', label: "Mother's/Father's Day" },
-  { emoji: '🎓', label: 'Retirement' },
-  { emoji: '📱', label: 'New Device' },
-  { emoji: '💛', label: 'Thinking of You' },
+  { emoji: '', label: 'Birthday' },
+  { emoji: '', label: 'Holiday' },
+  { emoji: '', label: "Mother's/Father's Day" },
+  { emoji: '', label: 'Retirement' },
+  { emoji: '', label: 'New Device' },
+  { emoji: '', label: 'Thinking of You' },
 ];
 
 export default function GiftSession() {

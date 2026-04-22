@@ -166,11 +166,11 @@ function generatePrintContent(packId: string) {
           <div>
             <strong>${s.title}</strong>
             <p>${s.content}</p>
-            ${s.tip ? `<div class="tip">💡 ${s.tip}</div>` : ''}
+            ${s.tip ? `<div class="tip"> ${s.tip}</div>` : ''}
           </div>
         </div>
       `).join('') : ''}
-      <p class="more">📱 Full guide online: teksure.com/guides/${g.slug}</p>
+      <p class="more"> Full guide online: teksure.com/guides/${g.slug}</p>
     </div>
   `).join('');
 
@@ -226,7 +226,7 @@ export default function GuidePacks() {
       <Navbar />
       <main className="flex-1">
         <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14 text-center">
-          <div className="text-4xl mb-3">📦</div>
+          <div className="text-4xl mb-3"></div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3">Printable Guide Packs</h1>
           <p className="text-muted-foreground max-w-lg mx-auto">Download themed collections of guides as a single print-ready document — with <strong>all steps included</strong>. Perfect for keeping by the computer or sharing with someone who prefers paper.</p>
         </div>

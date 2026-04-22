@@ -31,7 +31,7 @@ type Course = {
 const courses: Course[] = [
   {
     id: 'start-here',
-    emoji: '🌱',
+    emoji: '',
     title: 'Start Here — Technology Basics',
     description:
       'Brand new to this? You are in exactly the right place. Eight short lessons that cover the essentials every device user should know — browsers, Wi-Fi, passwords, and email.',
@@ -52,7 +52,7 @@ const courses: Course[] = [
   },
   {
     id: 'stay-safe',
-    emoji: '🛡️',
+    emoji: '',
     title: 'Stay Safe Online',
     description:
       'The ten lessons that will protect you most. Passwords, phishing, scams, two-factor authentication, public Wi-Fi, and what to do when something goes wrong.',
@@ -75,7 +75,7 @@ const courses: Course[] = [
   },
   {
     id: 'your-smartphone',
-    emoji: '📱',
+    emoji: '',
     title: 'Your Smartphone',
     description:
       'Nine lessons that turn your phone from a mystery into a trusted tool — screenshots, document scanning, spam blocking, mobile payments, and medication reminders.',
@@ -97,7 +97,7 @@ const courses: Course[] = [
   },
   {
     id: 'your-computer',
-    emoji: '💻',
+    emoji: '',
     title: 'Your Computer',
     description:
       'Ten lessons for everyday computer life — documents, cloud storage, printing, electronic signatures, and the free alternatives that save you real money.',
@@ -120,7 +120,7 @@ const courses: Course[] = [
   },
   {
     id: 'living-with-ai',
-    emoji: '🤖',
+    emoji: '',
     title: 'Living with AI',
     description:
       'Six approachable lessons about using AI assistants in daily life — writing emails, getting cooking help, spotting AI-generated images, and using ChatGPT for practical things.',

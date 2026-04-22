@@ -41,14 +41,14 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { id: 'price', label: 'Price range', icon: '💰' },
-  { id: 'ease', label: 'Ease of use', icon: '🔧' },
-  { id: 'privacy', label: 'Privacy & security', icon: '🔒' },
-  { id: 'apps', label: 'App / software selection', icon: '🛒' },
-  { id: 'ecosystem', label: 'Ecosystem fit', icon: '🔌' },
-  { id: 'support', label: 'Customer support', icon: '📞' },
-  { id: 'longevity', label: 'Repair & longevity', icon: '🔄' },
-  { id: 'audience', label: 'Who it\'s best for', icon: '👥' },
+  { id: 'price', label: 'Price range', icon: '' },
+  { id: 'ease', label: 'Ease of use', icon: '' },
+  { id: 'privacy', label: 'Privacy & security', icon: '' },
+  { id: 'apps', label: 'App / software selection', icon: '' },
+  { id: 'ecosystem', label: 'Ecosystem fit', icon: '' },
+  { id: 'support', label: 'Customer support', icon: '' },
+  { id: 'longevity', label: 'Repair & longevity', icon: '' },
+  { id: 'audience', label: 'Who it\'s best for', icon: '' },
 ];
 
 interface Comparison {

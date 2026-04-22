@@ -37,7 +37,7 @@ const STORIES: Story[] = [
     age: 72,
     location: 'Ohio',
     title: 'From scared of email to teaching her grandkids',
-    emoji: '📧',
+    emoji: '',
     paragraphs: [
       'Dorothy avoided email for years because she was worried she would "break something" or click the wrong link. Her daughter finally sat her down and walked her through our Internet Basics course.',
       'Six months later, Dorothy sends her grandchildren weekly emails with photos from her garden. Last Thanksgiving, she taught her 9-year-old grandson how to attach a photo — a reversal she still laughs about.',
@@ -53,7 +53,7 @@ const STORIES: Story[] = [
     age: 68,
     location: 'Arizona',
     title: 'Spotted a bank scam before losing a dime',
-    emoji: '🛡️',
+    emoji: '',
     paragraphs: [
       'Miguel got a text saying his bank account was locked and he needed to click a link to verify his identity. Something felt off, so he opened the TekSure "Is This a Scam?" tool and pasted the message in.',
       'The tool immediately flagged it as a phishing attempt. Miguel deleted the text and called his bank directly using the number on the back of his debit card. Nothing was actually wrong with his account.',
@@ -69,7 +69,7 @@ const STORIES: Story[] = [
     age: 64,
     location: 'Maine',
     title: 'Finally understands her new smart thermostat',
-    emoji: '🌡️',
+    emoji: '',
     paragraphs: [
       'When Patricia moved into a senior community, her new apartment came with a smart thermostat she was afraid to touch. She kept it at one temperature all winter because she worried she would break it.',
       'She browsed our Smart Home category and found a step-by-step walkthrough for her exact thermostat model. Now she sets schedules, checks the temperature from her phone, and has saved about $40 a month on her utility bill.',
@@ -85,7 +85,7 @@ const STORIES: Story[] = [
     age: 75,
     location: 'Texas',
     title: 'Retired teacher becomes his community tech helper',
-    emoji: '🎓',
+    emoji: '',
     paragraphs: [
       'James spent 40 years teaching high school history. When he retired, he missed having a way to help people. He started working through TekSure guides to brush up on his own tech skills.',
       'Within a year, he was running a weekly "tech coffee hour" at his community center — no formal training, just patience and our guides pulled up on his tablet. He estimates he has helped over 60 neighbors with phones, printers, and streaming services.',
@@ -101,7 +101,7 @@ const STORIES: Story[] = [
     age: 81,
     location: 'California',
     title: 'Video-calls her great-grandkids twice a week',
-    emoji: '👵',
+    emoji: '',
     paragraphs: [
       "Ruby hadn't spoken face-to-face with her great-grandchildren since 2023. They lived in another state, and she found phones confusing and overwhelming.",
       'Her granddaughter helped her follow our FaceTime setup guide, and within 20 minutes they had a practice call working. Ruby now video-calls the kids every Tuesday and Saturday. She keeps a printed step-by-step sheet next to her iPad just in case.',
@@ -117,7 +117,7 @@ const STORIES: Story[] = [
     age: 59,
     location: 'Florida',
     title: 'Removed his mother from data broker sites',
-    emoji: '🔐',
+    emoji: '',
     paragraphs: [
       "Hector's elderly mother kept getting suspicious calls from people who seemed to know too much about her. He suspected her personal info was on data broker sites, but the removal process looked overwhelming.",
       'He used our Data Broker Removal walkthrough to submit opt-out requests to the top 15 sites over a weekend. Within two months, the suspicious calls dropped dramatically.',
@@ -133,7 +133,7 @@ const STORIES: Story[] = [
     age: 69,
     location: 'Georgia',
     title: 'Canceled 7 forgotten subscriptions, saved $840 a year',
-    emoji: '💸',
+    emoji: '',
     paragraphs: [
       'Delores suspected she was paying for things she no longer used, but her bank statement was a sea of small charges she could not identify. A friend told her about our subscription audit walkthrough.',
       'Following the checklist, she found 7 active subscriptions she had forgotten about — including a free trial from 2021 that had quietly rolled into $19.99 a month. Total annual savings: $840.',
@@ -149,7 +149,7 @@ const STORIES: Story[] = [
     age: 77,
     location: 'New York',
     title: 'Learned his iPhone was too old to be safe',
-    emoji: '📱',
+    emoji: '',
     paragraphs: [
       'Frank had been using the same iPhone for 7 years and never thought twice about it. Our Device Age Checker revealed his model no longer received security updates from Apple.',
       'He upgraded to a refurbished model from a reputable seller — following our guide to buying used phones safely — and feels much better knowing his banking app is on a supported device.',
@@ -165,7 +165,7 @@ const STORIES: Story[] = [
     age: 62,
     location: 'Illinois',
     title: 'Uses Medicare online — no more driving for small things',
-    emoji: '🏥',
+    emoji: '',
     paragraphs: [
       'Angela had been driving 45 minutes each way to her Medicare office for routine paperwork. She had a Medicare.gov account but was too nervous to use it on her own.',
       'Our Medicare.gov walkthrough took her through logging in, finding her plan, ordering a new card, and printing a summary of benefits. She has not had to drive to the office in four months.',
@@ -181,7 +181,7 @@ const STORIES: Story[] = [
     age: 70,
     location: 'Nevada',
     title: 'Helped a neighbor avoid a grandparent scam',
-    emoji: '🚨',
+    emoji: '',
     paragraphs: [
       "Roberto's neighbor came to him in tears — she had gotten a call claiming her grandson was in jail and needed bail money sent by gift cards.",
       'Roberto had read our Grandparent Scam alert the week before and recognized every warning sign. He helped her call the grandson directly (he was fine, at work), then walked her through reporting the scam to the FTC.',
@@ -197,7 +197,7 @@ const STORIES: Story[] = [
     age: 58,
     location: 'Pennsylvania',
     title: 'Organized her late husband\u2019s digital accounts',
-    emoji: '📋',
+    emoji: '',
     paragraphs: [
       "After Theresa's husband passed away, she was left with a tangle of unknown passwords, email accounts, and subscriptions she did not know existed. The estate paperwork was overwhelming.",
       'She used our digital will template and account inventory checklist to work through everything systematically. Over a few weeks, she closed dormant accounts, transferred shared ones, and put together a guide for her own kids someday.',
@@ -213,7 +213,7 @@ const STORIES: Story[] = [
     age: 66,
     location: 'Washington',
     title: 'Switched phone plans and saves $50 a month',
-    emoji: '📶',
+    emoji: '',
     paragraphs: [
       'Walter had been with the same phone carrier for 18 years and assumed switching was complicated. He used our Phone Plan Comparator to see what else was out there.',
       'The tool showed him a plan with the same coverage for $50 less per month. He followed our switching guide, kept his number, and was done in under an hour.',

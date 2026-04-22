@@ -40,11 +40,11 @@ const DEVICE_TYPES: {
   emoji: string;
   description: string;
 }[] = [
-  { id: 'iphone', label: 'iPhone', emoji: '📱', description: 'Apple iPhone (any model)' },
-  { id: 'ipad', label: 'iPad', emoji: '📋', description: 'Any Apple iPad' },
-  { id: 'android', label: 'Android Phone', emoji: '🤖', description: 'Samsung, Pixel, Motorola, etc.' },
-  { id: 'mac', label: 'Mac', emoji: '💻', description: 'MacBook, iMac, Mac Mini, etc.' },
-  { id: 'windows', label: 'Windows PC', emoji: '🖥️', description: 'Desktop or laptop running Windows' },
+  { id: 'iphone', label: 'iPhone', emoji: '', description: 'Apple iPhone (any model)' },
+  { id: 'ipad', label: 'iPad', emoji: '', description: 'Any Apple iPad' },
+  { id: 'android', label: 'Android Phone', emoji: '', description: 'Samsung, Pixel, Motorola, etc.' },
+  { id: 'mac', label: 'Mac', emoji: '', description: 'MacBook, iMac, Mac Mini, etc.' },
+  { id: 'windows', label: 'Windows PC', emoji: '', description: 'Desktop or laptop running Windows' },
 ];
 
 // Model options per device. Each maps directly to a SupportStatus so we can be precise.

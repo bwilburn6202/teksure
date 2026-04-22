@@ -25,7 +25,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'netflix-ads',
     name: 'Netflix Basic with Ads',
-    emoji: '🎬',
+    emoji: '',
     category: 'video',
     tiers: [{ label: 'Basic with Ads', price: 7, hasAds: true }],
     hasFreeTrialNote: 'Netflix occasionally offers free trials for new members.',
@@ -33,7 +33,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'netflix-standard',
     name: 'Netflix Standard',
-    emoji: '🎬',
+    emoji: '',
     category: 'video',
     tiers: [{ label: 'Standard', price: 15 }],
     cheaperAdTier: true,
@@ -41,7 +41,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'netflix-premium',
     name: 'Netflix Premium',
-    emoji: '🎬',
+    emoji: '',
     category: 'video',
     tiers: [{ label: 'Premium', price: 23 }],
     cheaperAdTier: true,
@@ -49,7 +49,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'disney',
     name: 'Disney+',
-    emoji: '🏰',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'With Ads', price: 8, hasAds: true },
@@ -61,7 +61,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'hulu',
     name: 'Hulu',
-    emoji: '📺',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'With Ads', price: 8, hasAds: true },
@@ -73,7 +73,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'max',
     name: 'Max (HBO Max)',
-    emoji: '🎭',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'With Ads', price: 10, hasAds: true },
@@ -85,7 +85,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'peacock',
     name: 'Peacock',
-    emoji: '🦚',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'With Ads', price: 6, hasAds: true },
@@ -97,7 +97,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'paramount',
     name: 'Paramount+',
-    emoji: '⛰️',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'With Ads', price: 6, hasAds: true },
@@ -109,7 +109,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'appletv',
     name: 'Apple TV+',
-    emoji: '🍎',
+    emoji: '',
     category: 'video',
     tiers: [{ label: 'Standard', price: 10 }],
     hasFreeTrialNote: 'Apple TV+ offers a 7-day free trial. New Apple devices may include 3 months free.',
@@ -117,7 +117,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'prime',
     name: 'Amazon Prime Video',
-    emoji: '📦',
+    emoji: '',
     category: 'video',
     tiers: [
       { label: 'Standalone (Video only)', price: 9 },
@@ -127,7 +127,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'spotify',
     name: 'Spotify',
-    emoji: '🎵',
+    emoji: '',
     category: 'music',
     tiers: [{ label: 'Individual', price: 11 }],
     hasFreeTrialNote: 'Spotify has a free tier with ads and shuffle-only playback.',
@@ -135,7 +135,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'applemusic',
     name: 'Apple Music',
-    emoji: '🎶',
+    emoji: '',
     category: 'music',
     tiers: [{ label: 'Individual', price: 11 }],
     hasFreeTrialNote: 'Apple Music offers a 1-month free trial for new subscribers.',
@@ -143,7 +143,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'youtube',
     name: 'YouTube Premium',
-    emoji: '▶️',
+    emoji: '',
     category: 'video',
     tiers: [{ label: 'Individual', price: 14 }],
     hasFreeTrialNote: 'YouTube is free with ads. Premium removes ads and adds background play.',
@@ -152,7 +152,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'audible',
     name: 'Audible',
-    emoji: '🎧',
+    emoji: '',
     category: 'books',
     tiers: [{ label: 'Plus (1 credit/mo)', price: 15 }],
     hasFreeTrialNote: 'Audible offers a 30-day free trial for new members.',
@@ -160,7 +160,7 @@ const SERVICES: StreamingService[] = [
   {
     id: 'kindle',
     name: 'Kindle Unlimited',
-    emoji: '📚',
+    emoji: '',
     category: 'books',
     tiers: [{ label: 'Unlimited', price: 12 }],
     hasFreeTrialNote: 'Kindle Unlimited offers a 30-day free trial.',

@@ -37,14 +37,14 @@ interface PopularQuestion {
 }
 
 const POPULAR_QUESTIONS: PopularQuestion[] = [
-  { question: 'How do I connect to WiFi?', href: '/guide/how-to-connect-to-wifi', emoji: '📶' },
-  { question: 'How do I spot a scam?', href: '/guide/how-to-spot-a-scam', emoji: '🎣' },
-  { question: 'How do I create a strong password?', href: '/guide/create-a-strong-password', emoji: '🔒' },
-  { question: 'How do I update my iPhone?', href: '/guide/how-to-update-iphone', emoji: '📱' },
-  { question: 'How do I set up two-factor authentication?', href: '/guide/set-up-two-factor-authentication', emoji: '🔐' },
-  { question: 'How do I back up my photos?', href: '/guide/how-to-back-up-photos', emoji: '🖼️' },
-  { question: 'How do I block spam calls?', href: '/guide/how-to-block-spam-calls', emoji: '🚫' },
-  { question: 'How do I use AirDrop?', href: '/guide/how-to-use-airdrop', emoji: '📤' },
+  { question: 'How do I connect to WiFi?', href: '/guide/how-to-connect-to-wifi', emoji: '' },
+  { question: 'How do I spot a scam?', href: '/guide/how-to-spot-a-scam', emoji: '' },
+  { question: 'How do I create a strong password?', href: '/guide/create-a-strong-password', emoji: '' },
+  { question: 'How do I update my iPhone?', href: '/guide/how-to-update-iphone', emoji: '' },
+  { question: 'How do I set up two-factor authentication?', href: '/guide/set-up-two-factor-authentication', emoji: '' },
+  { question: 'How do I back up my photos?', href: '/guide/how-to-back-up-photos', emoji: '' },
+  { question: 'How do I block spam calls?', href: '/guide/how-to-block-spam-calls', emoji: '' },
+  { question: 'How do I use AirDrop?', href: '/guide/how-to-use-airdrop', emoji: '' },
 ];
 
 export default function AskTekSure() {
@@ -83,7 +83,7 @@ export default function AskTekSure() {
             {/* Option 1 */}
             <Card className="border-2 border-amber-200 dark:border-amber-900 bg-white dark:bg-slate-900 hover:shadow-xl transition-shadow">
               <CardContent className="p-8 flex flex-col h-full">
-                <div className="text-5xl mb-4">🧠</div>
+                <div className="text-5xl mb-4"></div>
                 <Badge className="w-fit mb-3 bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300">
                   Fastest
                 </Badge>
@@ -105,7 +105,7 @@ export default function AskTekSure() {
             {/* Option 2 */}
             <Card className="border-2 border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 hover:shadow-xl transition-shadow">
               <CardContent className="p-8 flex flex-col h-full">
-                <div className="text-5xl mb-4">💬</div>
+                <div className="text-5xl mb-4"></div>
                 <Badge className="w-fit mb-3 bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">
                   Community
                 </Badge>
@@ -127,7 +127,7 @@ export default function AskTekSure() {
             {/* Option 3 */}
             <Card className="border-2 border-rose-200 dark:border-rose-900 bg-white dark:bg-slate-900 hover:shadow-xl transition-shadow">
               <CardContent className="p-8 flex flex-col h-full">
-                <div className="text-5xl mb-4">📞</div>
+                <div className="text-5xl mb-4"></div>
                 <Badge className="w-fit mb-3 bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300">
                   One-on-one
                 </Badge>

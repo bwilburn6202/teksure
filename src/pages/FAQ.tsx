@@ -806,7 +806,7 @@ const FAQ = () => {
           <div className="max-w-3xl mx-auto space-y-14">
             {filteredCategories.length === 0 ? (
               <div className="text-center py-16">
-                <p className="text-5xl mb-4" aria-hidden="true">🔍</p>
+                <p className="text-5xl mb-4" aria-hidden="true"></p>
                 <p className="text-xl font-semibold mb-2">No answers found</p>
                 <p className="text-muted-foreground text-base">
                   Try a different search term, or ask{' '}

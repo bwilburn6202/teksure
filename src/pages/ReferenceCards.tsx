@@ -157,7 +157,7 @@ const CARDS: CardMeta[] = [
     bg: '#FDF4FF',
     accent: '#A21CAF',
     preview: [
-      'Look for the 🔒 and "https"',
+      'Look for the  and "https"',
       'Never click unknown links',
       'Type the site yourself',
       'Use TekSure Link Checker',
@@ -666,7 +666,7 @@ function SafeBrowsingContent() {
       <div className="grid-2">
         <div className="tile">
           <h3>Look for the lock</h3>
-          <p>The address bar should show a 🔒 and start with <strong>https://</strong>. No lock = don't enter info.</p>
+          <p>The address bar should show a  and start with <strong>https://</strong>. No lock = don't enter info.</p>
         </div>
         <div className="tile">
           <h3>Check the address</h3>

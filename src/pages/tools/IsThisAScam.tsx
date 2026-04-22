@@ -417,7 +417,7 @@ const verdictConfig: Record<
 > = {
   safe: {
     label: 'Probably legitimate',
-    emoji: '🟢',
+    emoji: '',
     headline: 'No major red flags',
     recommendation:
       'We did not find common scam patterns here. That said, always verify by contacting the company directly using a phone number from their official website — not from the message itself.',
@@ -427,7 +427,7 @@ const verdictConfig: Record<
   },
   caution: {
     label: 'Be cautious',
-    emoji: '🟡',
+    emoji: '',
     headline: 'These details look suspicious',
     recommendation:
       'Be careful. Do not click any links, reply, or send money. Verify through an official channel — call the company using the number on the back of your card or their official website.',
@@ -437,7 +437,7 @@ const verdictConfig: Record<
   },
   scam: {
     label: 'Almost certainly a scam',
-    emoji: '🔴',
+    emoji: '',
     headline: 'This has all the signs of a scam',
     recommendation:
       'Do NOT respond, click links, or send money. Delete it. If you already responded or sent money, call your bank right away, then report it at ReportFraud.ftc.gov.',

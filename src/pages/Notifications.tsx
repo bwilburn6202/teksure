@@ -21,14 +21,14 @@ import { SEOHead } from '@/components/SEOHead';
 /* ── weekly tips bank ─────────────────────── */
 
 const TIPS = [
-  { title: '🔐 Tip: Enable Two-Factor Authentication', body: 'Add a second layer of security to your accounts. TekSure has a step-by-step guide to help.' },
-  { title: '🛡️ Tip: Check for Windows Updates', body: 'Keeping Windows updated closes security holes. Takes just a few minutes — do it this week!' },
-  { title: '💾 Tip: Back Up Your Files Today', body: 'When did you last back up? Use an external drive or cloud storage. TekSure\'s Backup Wizard can help.' },
-  { title: '📶 Tip: Restart Your Router Weekly', body: 'A weekly router restart clears its memory and often speeds up your connection.' },
-  { title: '🔑 Tip: Use a Password Manager', body: 'Reusing passwords is risky. A password manager creates and remembers strong unique passwords for you.' },
-  { title: '🚨 Scam Alert: Watch for Fake Tech Support Calls', body: 'Microsoft and Apple never call you out of the blue. Hang up on anyone claiming to fix your computer.' },
-  { title: '📱 Tip: Update Your Phone Apps', body: 'Outdated apps have security bugs. Open your app store and update all apps today.' },
-  { title: '☁️ Tip: Check Your Cloud Storage Space', body: 'Running low on iCloud or Google Drive? TekSure has tips to free up space quickly.' },
+  { title: 'Tip: Enable Two-Factor Authentication', body: 'Add a second layer of security to your accounts. TekSure has a step-by-step guide to help.' },
+  { title: 'Tip: Check for Windows Updates', body: 'Keeping Windows updated closes security holes. Takes just a few minutes — do it this week!' },
+  { title: 'Tip: Back Up Your Files Today', body: 'When did you last back up? Use an external drive or cloud storage. TekSure\'s Backup Wizard can help.' },
+  { title: 'Tip: Restart Your Router Weekly', body: 'A weekly router restart clears its memory and often speeds up your connection.' },
+  { title: 'Tip: Use a Password Manager', body: 'Reusing passwords is risky. A password manager creates and remembers strong unique passwords for you.' },
+  { title: 'Scam Alert: Watch for Fake Tech Support Calls', body: 'Microsoft and Apple never call you out of the blue. Hang up on anyone claiming to fix your computer.' },
+  { title: 'Tip: Update Your Phone Apps', body: 'Outdated apps have security bugs. Open your app store and update all apps today.' },
+  { title: 'Tip: Check Your Cloud Storage Space', body: 'Running low on iCloud or Google Drive? TekSure has tips to free up space quickly.' },
 ];
 
 const STORAGE_KEY = 'teksure_notifications';
@@ -113,7 +113,7 @@ export default function Notifications() {
       savePrefs(updated);
       if (result === 'granted') {
         setJustEnabled(true);
-        fireNotification('✅ TekSure Notifications Enabled!', 'You\'ll now receive weekly tech tips and scam alerts.');
+        fireNotification('TekSure Notifications Enabled!', 'You\'ll now receive weekly tech tips and scam alerts.');
       }
     } finally {
       setRequesting(false);

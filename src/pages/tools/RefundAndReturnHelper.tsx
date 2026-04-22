@@ -84,7 +84,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 1. Online purchase ── */
   {
     id: 'online-purchase',
-    emoji: '📦',
+    emoji: '',
     icon: ShoppingCart,
     title: 'Online purchase',
     tagline: 'Amazon, eBay, Walmart, Target, Etsy — item never came, broken, or wrong.',
@@ -144,7 +144,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 2. App Store ── */
   {
     id: 'app-store',
-    emoji: '🍎',
+    emoji: '',
     icon: Smartphone,
     title: 'App Store purchase (Apple)',
     tagline: 'Accidental tap, kid charged you, subscription you didn\'t mean to buy.',
@@ -190,7 +190,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 3. Google Play ── */
   {
     id: 'google-play',
-    emoji: '🤖',
+    emoji: '',
     icon: Smartphone,
     title: 'Google Play purchase',
     tagline: 'App, game, or in-app charge on an Android phone.',
@@ -237,7 +237,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 4. Forgot-to-cancel subscription ── */
   {
     id: 'forgot-cancel',
-    emoji: '🔁',
+    emoji: '',
     icon: Repeat,
     title: 'Subscription I forgot to cancel',
     tagline: 'Streaming, magazine, gym, free trial that auto-renewed.',
@@ -285,7 +285,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 5. Billing error ── */
   {
     id: 'billing-error',
-    emoji: '🧾',
+    emoji: '',
     icon: AlertCircle,
     title: 'Billing error',
     tagline: 'Charged twice, wrong amount, or a charge you don\'t recognize.',
@@ -333,7 +333,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 6. Scam charge ── */
   {
     id: 'scam-charge',
-    emoji: '🚨',
+    emoji: '',
     icon: ShieldAlert,
     title: 'Scam charge',
     tagline: 'Unauthorized purchase, fake invoice, or someone used your card.',
@@ -387,7 +387,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 7. Stolen card ── */
   {
     id: 'stolen-card',
-    emoji: '💳',
+    emoji: '',
     icon: CreditCard,
     title: 'Stolen or lost card',
     tagline: 'Physical card missing, or you know the number was stolen.',
@@ -439,7 +439,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 8. Travel ── */
   {
     id: 'travel',
-    emoji: '✈️',
+    emoji: '',
     icon: Plane,
     title: 'Travel / airline / hotel',
     tagline: 'Canceled flight, changed plans, hotel overcharged.',
@@ -492,7 +492,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 9. Restaurant / service ── */
   {
     id: 'restaurant',
-    emoji: '🍽️',
+    emoji: '',
     icon: Utensils,
     title: 'Restaurant or service',
     tagline: 'Tip charged twice, wrong food, poor service you already paid for.',
@@ -535,7 +535,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 10. Concert / event ticket ── */
   {
     id: 'event-ticket',
-    emoji: '🎟️',
+    emoji: '',
     icon: Ticket,
     title: 'Concert or event ticket',
     tagline: 'Show canceled, rescheduled, or you can\'t make it.',
@@ -581,7 +581,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 11. In-person store return ── */
   {
     id: 'in-person-return',
-    emoji: '🏬',
+    emoji: '',
     icon: Store,
     title: 'In-person store return',
     tagline: 'Best Buy, Walmart, Target, Costco, Home Depot — bring it back.',
@@ -635,7 +635,7 @@ const SCENARIOS: Scenario[] = [
   /* ── 12. Medical bill ── */
   {
     id: 'medical-bill',
-    emoji: '🏥',
+    emoji: '',
     icon: Stethoscope,
     title: 'Medical bill',
     tagline: 'Duplicate charge, in-network visit billed as out-of-network, surprise bill.',

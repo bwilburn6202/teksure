@@ -126,7 +126,7 @@ function MousePlayground() {
       <div className="bg-muted/30 rounded-2xl p-6 min-h-[300px]">
         <div className="mb-4 p-4 bg-primary/10 rounded-xl border border-primary/20">
           <p className="font-medium text-primary">{exercise.instruction}</p>
-          <p className="text-sm text-muted-foreground mt-1">💡 {exercise.hint}</p>
+          <p className="text-sm text-muted-foreground mt-1"> {exercise.hint}</p>
         </div>
 
         <div className="flex flex-wrap gap-4">

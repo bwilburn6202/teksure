@@ -4,8 +4,10 @@ import {
   Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2,
   ShieldCheck, BookOpen, Phone, Heart, Wifi, CreditCard, Tv, MessageSquare,
   ArrowRightLeft, Landmark, ArrowRight, ArrowLeft, Flame, TrendingUp, Star,
-  GraduationCap, MessageCircle, Brain,
+  GraduationCap, MessageCircle, Brain, Shield, KeyRound, Video, PiggyBank, Home,
+  type LucideIcon,
 } from 'lucide-react';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -104,7 +106,7 @@ function pickGuide(opts: { slug?: string; keywords?: string[]; category?: GuideC
 type FeaturedSlot = {
   heading: string;
   blurb: string;
-  emoji: string;
+  Icon: LucideIcon;
   tint: string;
   keywords: string[];
   preferredSlug?: string;
@@ -114,7 +116,7 @@ const FEATURED_SLOTS: FeaturedSlot[] = [
   {
     heading: 'Scam Defense',
     blurb: 'Spot phony calls, texts, and emails before they trick you or someone you love.',
-    emoji: '🛡️',
+    Icon: Shield,
     tint: 'from-red-50 to-orange-50 dark:from-red-950/40 dark:to-orange-950/30',
     preferredSlug: 'social-media-safety',
     keywords: ['scam', 'phishing', 'spot'],
@@ -122,7 +124,7 @@ const FEATURED_SLOTS: FeaturedSlot[] = [
   {
     heading: 'Password Managers',
     blurb: 'Let an app safely remember every password so you never lose another login.',
-    emoji: '🔑',
+    Icon: KeyRound,
     tint: 'from-amber-50 to-yellow-50 dark:from-amber-950/40 dark:to-yellow-950/30',
     preferredSlug: 'create-strong-password',
     keywords: ['password', 'manager'],
@@ -130,7 +132,7 @@ const FEATURED_SLOTS: FeaturedSlot[] = [
   {
     heading: 'Video Calling',
     blurb: 'See the grandkids on Zoom, FaceTime, or WhatsApp — with confidence.',
-    emoji: '📹',
+    Icon: Video,
     tint: 'from-sky-50 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/30',
     preferredSlug: 'how-to-video-call-on-zoom',
     keywords: ['video', 'call'],
@@ -138,21 +140,21 @@ const FEATURED_SLOTS: FeaturedSlot[] = [
   {
     heading: 'Online Banking',
     blurb: 'Check balances and pay bills from the couch — safely, in just a few taps.',
-    emoji: '🏦',
+    Icon: PiggyBank,
     tint: 'from-emerald-50 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
     keywords: ['banking', 'online'],
   },
   {
     heading: 'Smart Home',
     blurb: 'Alexa, Nest, Ring — set them up once and enjoy a home that listens.',
-    emoji: '🏠',
+    Icon: Home,
     tint: 'from-teal-50 to-cyan-50 dark:from-teal-950/40 dark:to-cyan-950/30',
     keywords: ['smart', 'home'],
   },
   {
     heading: 'Everyday AI',
     blurb: 'Use ChatGPT and friends like a patient, helpful assistant in your pocket.',
-    emoji: '🤖',
+    Icon: Bot,
     tint: 'from-fuchsia-50 to-purple-50 dark:from-fuchsia-950/40 dark:to-purple-950/30',
     keywords: ['chatgpt', 'ai'],
   },
@@ -186,7 +188,7 @@ function GuideCard({ guide, completed }: { guide: Guide; completed?: boolean }) 
     >
       <div className="p-5 flex flex-col h-full min-h-[44px]">
         <div className="flex items-start gap-3 mb-3">
-          <span className="text-4xl shrink-0 select-none" aria-hidden="true">{guide.thumbnailEmoji}</span>
+          <GuideThumbnail category={guide.category} size="h-8 w-8" />
           <div className="flex-1 min-w-0">
             <h3 className="font-bold text-lg leading-snug group-hover:text-primary transition-colors line-clamp-2">
               {guide.title}
@@ -233,7 +235,9 @@ function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
       className={`group relative block rounded-3xl border-2 border-border bg-gradient-to-br ${slot.tint} p-6 md:p-7 transition-all hover:shadow-xl hover:-translate-y-0.5 min-h-[44px]`}
     >
       <div className="flex items-start gap-4">
-        <span className="text-5xl md:text-6xl select-none shrink-0" aria-hidden="true">{slot.emoji}</span>
+        <span className="inline-flex items-center justify-center h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-background/70 backdrop-blur shrink-0 shadow-sm" aria-hidden="true">
+          <slot.Icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
+        </span>
         <div className="flex-1 min-w-0">
           <p className="text-xs font-bold uppercase tracking-wider text-foreground/60 mb-1">
             Featured
@@ -280,7 +284,7 @@ function CategoryCard({ cat, topGuides, count }: { cat: GuideCategory; topGuides
       <div className="p-5 space-y-2">
         {topGuides.slice(0, 3).map(g => (
           <div key={g.slug} className="flex items-start gap-2 text-base leading-snug">
-            <span className="shrink-0 select-none" aria-hidden="true">{g.thumbnailEmoji}</span>
+            <ArrowRight className="h-4 w-4 mt-1 text-primary/70 shrink-0" aria-hidden="true" />
             <span className="line-clamp-1 text-foreground/80 group-hover:text-foreground transition-colors">
               {g.title}
             </span>
@@ -532,7 +536,7 @@ const Guides = () => {
           </div>
           {categoryGuides.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-5xl mb-4 select-none" aria-hidden="true">📂</p>
+              <p className="text-5xl mb-4 select-none" aria-hidden="true"></p>
               <p className="text-lg text-muted-foreground">No guides in this category yet — check back soon.</p>
             </div>
           ) : (

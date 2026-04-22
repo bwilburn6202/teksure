@@ -70,16 +70,16 @@ const kindLabels: Record<EmailKind, string> = {
 };
 
 const kindEmojis: Record<EmailKind, string> = {
-  complain: '😤',
-  cancel: '❌',
-  'medical-records': '🏥',
-  'doctor-question': '🩺',
-  'interview-followup': '💼',
-  'thank-you': '💐',
-  'difficult-family': '💬',
-  reschedule: '📅',
-  refund: '💵',
-  benefits: '📝',
+  complain: '',
+  cancel: '',
+  'medical-records': '',
+  'doctor-question': '',
+  'interview-followup': '',
+  'thank-you': '',
+  'difficult-family': '',
+  reschedule: '',
+  refund: '',
+  benefits: '',
 };
 
 const recipientLabels: Record<Recipient, string> = {
@@ -800,7 +800,7 @@ export default function EmailWriterHelper() {
             {/* Tip note */}
             <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 no-print">
               <p className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-1">
-                💡 A couple of tips before you send
+                 A couple of tips before you send
               </p>
               <ul className="text-sm text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
                 <li>

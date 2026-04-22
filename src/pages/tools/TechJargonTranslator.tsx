@@ -222,7 +222,7 @@ const DICTIONARY: DictTerm[] = [
   { term: 'Podcast', category: 'Media', definition: 'An on-demand audio show you can stream or download.', example: 'Think of it as on-demand radio.', related: ['Streaming'] },
   { term: 'Livestream', category: 'Media', definition: 'A video broadcast happening in real time.', example: 'Church services and sports events are often livestreamed now.', related: ['Streaming'] },
   { term: 'DRM', category: 'Media', definition: 'Digital Rights Management — tech that stops you from copying or sharing media you rented or bought.', example: 'DRM is why you can\'t usually screen-record a Netflix movie.', related: ['Streaming'] },
-  { term: 'Emoji', category: 'Media', definition: 'Little picture characters you can type into messages — 😊 👍 ❤️.', example: 'Most keyboards have a smiley face button to pull up the emoji picker.', related: ['SMS'] },
+  { term: 'Emoji', category: 'Media', definition: 'Little picture characters you can type into messages —   .', example: 'Most keyboards have a smiley face button to pull up the emoji picker.', related: ['SMS'] },
   { term: 'GIF', category: 'Media', definition: 'A short, silent, looping animation. Pronounced "jif" or "gif" — people argue about this.', example: 'A reaction GIF of a cat waving is a classic.', related: ['Meme'] },
   { term: 'Meme', category: 'Media', definition: 'A joke — usually a picture with text — that spreads online.', example: 'Memes come and go in waves.', related: ['GIF'] },
   { term: 'QR code', category: 'Media', definition: 'A square barcode you scan with your phone\'s camera to open a link or menu.', example: 'Most restaurant menus are QR codes now.', related: ['URL'] },

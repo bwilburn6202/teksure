@@ -210,7 +210,7 @@ export default function Articles() {
 
             {filteredArticles.length === 0 ? (
               <div className="text-center py-16 text-muted-foreground">
-                <p className="text-4xl mb-4">🔍</p>
+                <p className="text-4xl mb-4"></p>
                 <p className="font-medium mb-1">No articles found</p>
                 <p className="text-sm">Try adjusting your search or filters.</p>
                 <Button variant="outline" size="sm" className="mt-4" onClick={clearFilters}>

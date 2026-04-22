@@ -361,8 +361,8 @@ const STEPS_ANDROID: StepContent[] = [
       'When you delete a photo, both your Gallery app and Google Photos keep it in a "Trash" folder for 30–60 days in case you change your mind. That means everything you deleted in Step 1 is still on your phone! Emptying Trash is where the real space comes back.',
     instructions: [
       'In Google Photos: open the app → tap "Library" at the bottom → tap "Trash" → tap the three dots (⋮) → "Empty Trash" → confirm with "Delete" or your fingerprint.',
-      'In Samsung Gallery: open Gallery → tap ☰ or three dots (⋮) → "Trash" → tap "Edit" or ⋮ → "Empty" → confirm.',
-      'In the Files app: open Files → tap ☰ (menu) → "Trash" → select all → delete.',
+      'In Samsung Gallery: open Gallery → tap  or three dots (⋮) → "Trash" → tap "Edit" or ⋮ → "Empty" → confirm.',
+      'In the Files app: open Files → tap  (menu) → "Trash" → select all → delete.',
       'Some phones (especially Motorola and Pixel) have a "Recently deleted" folder inside the Files app too — check there.',
     ],
     warning:

@@ -92,19 +92,19 @@ const tree: Record<string, Node> = {
     title: 'What\'s going wrong with your printer?',
     subtitle: 'Pick the problem that sounds most like yours. You can always go back.',
     options: [
-      { label: 'It won\'t print at all',                emoji: '🚫',  desc: 'I click Print and nothing happens',       next: 'wontPrint' },
-      { label: 'It prints completely blank pages',       emoji: '📄',  desc: 'Paper comes out but nothing is on it',    next: 'blankPages' },
-      { label: 'Ink spots or smudges on the paper',      emoji: '💧',  desc: 'Smears, blotches, or wet-looking marks',  next: 'smudges' },
-      { label: 'Prints look faded or streaky',           emoji: '🔅',  desc: 'Pale, missing lines, uneven colour',      next: 'faded' },
-      { label: 'Paper is jammed',                        emoji: '🧻',  desc: 'Paper stuck inside, "jam" message',       next: 'paperJam' },
-      { label: 'Can\'t connect to WiFi',                 emoji: '📶',  desc: 'Printer won\'t join my home network',     next: 'wifiConnect' },
-      { label: 'My computer can\'t find the printer',    emoji: '🔍',  desc: 'Printer isn\'t in the list of printers',  next: 'computerFind' },
-      { label: 'Printer says "Offline"',                 emoji: '💤',  desc: 'Shows offline even though it\'s on',      next: 'offline' },
-      { label: 'Weird colours — wrong or missing',       emoji: '🎨',  desc: 'Greens look blue, reds are pink, etc.',   next: 'weirdColors' },
-      { label: 'Error lights or messages flashing',      emoji: '⚠️',  desc: 'Orange / red light or an error code',     next: 'errorLights' },
-      { label: 'Out of ink or toner',                    emoji: '🪫',  desc: 'Cartridge is empty or almost empty',      next: 'outOfInk' },
-      { label: 'Two-sided (duplex) printing trouble',    emoji: '🔄',  desc: 'Jamming or one side is blank',            next: 'duplex' },
-      { label: 'Scanner isn\'t working',                 emoji: '🖼️',  desc: 'Can\'t scan to email or computer',        next: 'scanner' },
+      { label: 'It won\'t print at all',                emoji: '',  desc: 'I click Print and nothing happens',       next: 'wontPrint' },
+      { label: 'It prints completely blank pages',       emoji: '',  desc: 'Paper comes out but nothing is on it',    next: 'blankPages' },
+      { label: 'Ink spots or smudges on the paper',      emoji: '',  desc: 'Smears, blotches, or wet-looking marks',  next: 'smudges' },
+      { label: 'Prints look faded or streaky',           emoji: '',  desc: 'Pale, missing lines, uneven colour',      next: 'faded' },
+      { label: 'Paper is jammed',                        emoji: '',  desc: 'Paper stuck inside, "jam" message',       next: 'paperJam' },
+      { label: 'Can\'t connect to WiFi',                 emoji: '',  desc: 'Printer won\'t join my home network',     next: 'wifiConnect' },
+      { label: 'My computer can\'t find the printer',    emoji: '',  desc: 'Printer isn\'t in the list of printers',  next: 'computerFind' },
+      { label: 'Printer says "Offline"',                 emoji: '',  desc: 'Shows offline even though it\'s on',      next: 'offline' },
+      { label: 'Weird colours — wrong or missing',       emoji: '',  desc: 'Greens look blue, reds are pink, etc.',   next: 'weirdColors' },
+      { label: 'Error lights or messages flashing',      emoji: '',  desc: 'Orange / red light or an error code',     next: 'errorLights' },
+      { label: 'Out of ink or toner',                    emoji: '',  desc: 'Cartridge is empty or almost empty',      next: 'outOfInk' },
+      { label: 'Two-sided (duplex) printing trouble',    emoji: '',  desc: 'Jamming or one side is blank',            next: 'duplex' },
+      { label: 'Scanner isn\'t working',                 emoji: '',  desc: 'Can\'t scan to email or computer',        next: 'scanner' },
     ],
   },
 
@@ -115,9 +115,9 @@ const tree: Record<string, Node> = {
     subtitle: 'Look for a green, blue, or white power light on the front.',
     icon: Power,
     options: [
-      { label: 'No — no lights at all',           emoji: '⚫',  desc: 'Display is dark, nothing happens',   next: 'fix_powerOn' },
-      { label: 'Yes — power light is on',         emoji: '🟢',  desc: 'Ready / idle light is showing',      next: 'wontPrint_error' },
-      { label: 'Light is blinking',               emoji: '🟠',  desc: 'Amber or red blinking',              next: 'errorLights' },
+      { label: 'No — no lights at all',           emoji: '',  desc: 'Display is dark, nothing happens',   next: 'fix_powerOn' },
+      { label: 'Yes — power light is on',         emoji: '',  desc: 'Ready / idle light is showing',      next: 'wontPrint_error' },
+      { label: 'Light is blinking',               emoji: '',  desc: 'Amber or red blinking',              next: 'errorLights' },
     ],
   },
   wontPrint_error: {
@@ -125,18 +125,18 @@ const tree: Record<string, Node> = {
     title: 'Is there an error message or warning light?',
     subtitle: 'Check the small screen on the front of the printer.',
     options: [
-      { label: 'Yes — a message I can read',      emoji: '📢',  desc: 'Something like "out of paper" or "jam"', next: 'wontPrint_errorType' },
-      { label: 'No — looks ready to print',       emoji: '✅',  desc: 'Display says Ready / Idle / nothing',    next: 'wontPrint_basics' },
+      { label: 'Yes — a message I can read',      emoji: '',  desc: 'Something like "out of paper" or "jam"', next: 'wontPrint_errorType' },
+      { label: 'No — looks ready to print',       emoji: '',  desc: 'Display says Ready / Idle / nothing',    next: 'wontPrint_basics' },
     ],
   },
   wontPrint_errorType: {
     kind: 'question',
     title: 'What does the error say?',
     options: [
-      { label: 'Paper jam',                       emoji: '🧻',  next: 'paperJam' },
-      { label: 'Out of ink / toner',              emoji: '🪫',  next: 'outOfInk' },
-      { label: 'Offline',                         emoji: '💤',  next: 'offline' },
-      { label: 'Something else — just a code',    emoji: '❓',  next: 'fix_errorCode' },
+      { label: 'Paper jam',                       emoji: '',  next: 'paperJam' },
+      { label: 'Out of ink / toner',              emoji: '',  next: 'outOfInk' },
+      { label: 'Offline',                         emoji: '',  next: 'offline' },
+      { label: 'Something else — just a code',    emoji: '',  next: 'fix_errorCode' },
     ],
   },
   wontPrint_basics: {
@@ -144,8 +144,8 @@ const tree: Record<string, Node> = {
     title: 'Let\'s check the basics — which of these are you sure about?',
     subtitle: 'One of these is the cause 95% of the time.',
     options: [
-      { label: 'Paper is in the tray',            emoji: '📄',  desc: '...and not low',                      next: 'wontPrint_cartridge' },
-      { label: 'Not sure — I\'ll add paper',      emoji: '➕',  next: 'fix_loadPaper' },
+      { label: 'Paper is in the tray',            emoji: '',  desc: '...and not low',                      next: 'wontPrint_cartridge' },
+      { label: 'Not sure — I\'ll add paper',      emoji: '',  next: 'fix_loadPaper' },
     ],
   },
   wontPrint_cartridge: {
@@ -153,17 +153,17 @@ const tree: Record<string, Node> = {
     title: 'Is the ink or toner cartridge installed?',
     subtitle: 'Open the front or top cover and check — the cartridge should click firmly into place.',
     options: [
-      { label: 'Yes — it\'s in there',            emoji: '✅',  next: 'wontPrint_cables' },
-      { label: 'No, or I\'m not sure',            emoji: '❌',  next: 'fix_insertCartridge' },
+      { label: 'Yes — it\'s in there',            emoji: '',  next: 'wontPrint_cables' },
+      { label: 'No, or I\'m not sure',            emoji: '',  next: 'fix_insertCartridge' },
     ],
   },
   wontPrint_cables: {
     kind: 'question',
     title: 'Is the printer connected to your computer or WiFi?',
     options: [
-      { label: 'USB cable — plugged in',          emoji: '🔌',  next: 'fix_restartAll' },
-      { label: 'WiFi — solid signal light',       emoji: '📶',  next: 'fix_restartAll' },
-      { label: 'Not sure / cable looks loose',    emoji: '❓',  next: 'fix_cables' },
+      { label: 'USB cable — plugged in',          emoji: '',  next: 'fix_restartAll' },
+      { label: 'WiFi — solid signal light',       emoji: '',  next: 'fix_restartAll' },
+      { label: 'Not sure / cable looks loose',    emoji: '',  next: 'fix_cables' },
     ],
   },
 
@@ -284,7 +284,7 @@ const tree: Record<string, Node> = {
     icon: FileText,
     options: [
       { label: 'Yes — blank pages started right after', emoji: '🆕',  next: 'fix_cartridgeTape' },
-      { label: 'No — cartridge has been in a while',    emoji: '📅',  next: 'blankPages_head' },
+      { label: 'No — cartridge has been in a while',    emoji: '',  next: 'blankPages_head' },
     ],
   },
   blankPages_head: {
@@ -292,9 +292,9 @@ const tree: Record<string, Node> = {
     title: 'Does the printer\'s own test page come out blank too?',
     subtitle: 'On the printer\'s screen: Menu → Reports → Print Test Page (or similar).',
     options: [
-      { label: 'Yes — test page is also blank',         emoji: '📄',  next: 'fix_cleanHeads' },
-      { label: 'No — test page prints fine',            emoji: '✅',  next: 'fix_computerSide' },
-      { label: 'Not sure how to print a test page',     emoji: '❓',  next: 'fix_cleanHeads' },
+      { label: 'Yes — test page is also blank',         emoji: '',  next: 'fix_cleanHeads' },
+      { label: 'No — test page prints fine',            emoji: '',  next: 'fix_computerSide' },
+      { label: 'Not sure how to print a test page',     emoji: '',  next: 'fix_cleanHeads' },
     ],
   },
 
@@ -361,10 +361,10 @@ const tree: Record<string, Node> = {
     title: 'Where do the smudges or spots appear?',
     icon: Droplets,
     options: [
-      { label: 'All over — wet, blotchy ink',        emoji: '💧',  desc: 'Looks wet right after it prints',      next: 'fix_wetInk' },
-      { label: 'Lines or streaks on one side',       emoji: '📏',  desc: 'Recurring smears in the same spot',    next: 'fix_dirtyRollers' },
-      { label: 'Ink smears when I touch the page',   emoji: '👆',  desc: 'Ink hasn\'t set',                      next: 'fix_wetInk' },
-      { label: 'Black dots or random specks',        emoji: '⚫',  desc: 'Tiny spots on otherwise clean pages',  next: 'fix_dirtyInside' },
+      { label: 'All over — wet, blotchy ink',        emoji: '',  desc: 'Looks wet right after it prints',      next: 'fix_wetInk' },
+      { label: 'Lines or streaks on one side',       emoji: '',  desc: 'Recurring smears in the same spot',    next: 'fix_dirtyRollers' },
+      { label: 'Ink smears when I touch the page',   emoji: '',  desc: 'Ink hasn\'t set',                      next: 'fix_wetInk' },
+      { label: 'Black dots or random specks',        emoji: '',  desc: 'Tiny spots on otherwise clean pages',  next: 'fix_dirtyInside' },
     ],
   },
 
@@ -430,10 +430,10 @@ const tree: Record<string, Node> = {
     title: 'What does the fading look like?',
     icon: Palette,
     options: [
-      { label: 'Light all over — whole page is pale',    emoji: '🔅',  next: 'fix_lowInk' },
-      { label: 'One colour is missing or wrong',          emoji: '🎨',  next: 'fix_clogHead' },
-      { label: 'Thin white lines across the page',        emoji: '📏',  next: 'fix_alignHeads' },
-      { label: 'Text is fine but photos look grainy',     emoji: '🖼️',  next: 'fix_photoSettings' },
+      { label: 'Light all over — whole page is pale',    emoji: '',  next: 'fix_lowInk' },
+      { label: 'One colour is missing or wrong',          emoji: '',  next: 'fix_clogHead' },
+      { label: 'Thin white lines across the page',        emoji: '',  next: 'fix_alignHeads' },
+      { label: 'Text is fine but photos look grainy',     emoji: '',  next: 'fix_photoSettings' },
     ],
   },
 
@@ -518,9 +518,9 @@ const tree: Record<string, Node> = {
     icon: FileText,
     subtitle: 'Open the front cover and look inside. Also check the back of the printer.',
     options: [
-      { label: 'Yes — I can see and reach it',         emoji: '👀',  next: 'fix_removeJam' },
-      { label: 'No — but the printer says "jam"',      emoji: '🔍',  next: 'fix_hiddenJam' },
-      { label: 'Paper keeps jamming every time',       emoji: '🔁',  next: 'fix_repeatJam' },
+      { label: 'Yes — I can see and reach it',         emoji: '',  next: 'fix_removeJam' },
+      { label: 'No — but the printer says "jam"',      emoji: '',  next: 'fix_hiddenJam' },
+      { label: 'Paper keeps jamming every time',       emoji: '',  next: 'fix_repeatJam' },
     ],
   },
 
@@ -587,9 +587,9 @@ const tree: Record<string, Node> = {
     title: 'What happens when you try to connect to WiFi?',
     icon: Wifi,
     options: [
-      { label: 'Printer doesn\'t see my network',       emoji: '📡',  next: 'fix_wifiNotVisible' },
-      { label: 'Says my password is wrong',              emoji: '🔑',  next: 'fix_wifiPassword' },
-      { label: 'Connects but won\'t print',              emoji: '🔗',  next: 'fix_wifiSameNetwork' },
+      { label: 'Printer doesn\'t see my network',       emoji: '',  next: 'fix_wifiNotVisible' },
+      { label: 'Says my password is wrong',              emoji: '',  next: 'fix_wifiPassword' },
+      { label: 'Connects but won\'t print',              emoji: '',  next: 'fix_wifiSameNetwork' },
       { label: 'I don\'t know how to set it up',         emoji: '🆕',  next: 'fix_wifiFirstTime' },
     ],
   },
@@ -672,9 +672,9 @@ const tree: Record<string, Node> = {
     title: 'Which computer are you trying to use?',
     icon: Search,
     options: [
-      { label: 'Windows PC or laptop',                   emoji: '🪟',  next: 'fix_findWindows' },
-      { label: 'Mac',                                     emoji: '🍎',  next: 'fix_findMac' },
-      { label: 'Chromebook',                              emoji: '🌐',  next: 'fix_findChromebook' },
+      { label: 'Windows PC or laptop',                   emoji: '',  next: 'fix_findWindows' },
+      { label: 'Mac',                                     emoji: '',  next: 'fix_findMac' },
+      { label: 'Chromebook',                              emoji: '',  next: 'fix_findChromebook' },
     ],
   },
 
@@ -739,9 +739,9 @@ const tree: Record<string, Node> = {
     title: 'How is the printer connected?',
     icon: Wifi,
     options: [
-      { label: 'USB cable to computer',                  emoji: '🔌',  next: 'fix_offlineUsb' },
-      { label: 'WiFi / wireless',                         emoji: '📶',  next: 'fix_offlineWifi' },
-      { label: 'Not sure',                                emoji: '❓',  next: 'fix_offlineAny' },
+      { label: 'USB cable to computer',                  emoji: '',  next: 'fix_offlineUsb' },
+      { label: 'WiFi / wireless',                         emoji: '',  next: 'fix_offlineWifi' },
+      { label: 'Not sure',                                emoji: '',  next: 'fix_offlineAny' },
     ],
   },
 
@@ -805,10 +805,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s wrong with the colours?',
     icon: Palette,
     options: [
-      { label: 'Everything has a colour tint (yellow / blue / pink)', emoji: '🎨',  next: 'fix_colorCalibrate' },
-      { label: 'One colour is totally missing',                       emoji: '❌',  next: 'fix_clogHead' },
-      { label: 'Only printing in black and white',                    emoji: '⚫',  next: 'fix_colorMode' },
-      { label: 'Colours swapped — reds where greens should be',       emoji: '🔀',  next: 'fix_driverColor' },
+      { label: 'Everything has a colour tint (yellow / blue / pink)', emoji: '',  next: 'fix_colorCalibrate' },
+      { label: 'One colour is totally missing',                       emoji: '',  next: 'fix_clogHead' },
+      { label: 'Only printing in black and white',                    emoji: '',  next: 'fix_colorMode' },
+      { label: 'Colours swapped — reds where greens should be',       emoji: '',  next: 'fix_driverColor' },
     ],
   },
 
@@ -873,10 +873,10 @@ const tree: Record<string, Node> = {
     title: 'What do the error lights look like?',
     icon: AlertTriangle,
     options: [
-      { label: 'Blinking orange / amber',                emoji: '🟠',  next: 'fix_blinkingAmber' },
-      { label: 'Solid red',                               emoji: '🔴',  next: 'fix_solidRed' },
-      { label: 'Blinking red',                            emoji: '🚨',  next: 'fix_blinkingRed' },
-      { label: 'Error code on the screen',                emoji: '💻',  next: 'fix_errorCode' },
+      { label: 'Blinking orange / amber',                emoji: '',  next: 'fix_blinkingAmber' },
+      { label: 'Solid red',                               emoji: '',  next: 'fix_solidRed' },
+      { label: 'Blinking red',                            emoji: '',  next: 'fix_blinkingRed' },
+      { label: 'Error code on the screen',                emoji: '',  next: 'fix_errorCode' },
     ],
   },
 
@@ -963,10 +963,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s happening with two-sided printing?',
     icon: Layers,
     options: [
-      { label: 'Paper jams on the second side',          emoji: '🧻',  next: 'fix_duplexJam' },
-      { label: 'Second side comes out blank',             emoji: '📄',  next: 'fix_duplexBlank' },
-      { label: 'Pages print upside-down / wrong order',   emoji: '🔄',  next: 'fix_duplexOrientation' },
-      { label: 'My printer doesn\'t do two-sided',        emoji: '❓',  next: 'fix_manualDuplex' },
+      { label: 'Paper jams on the second side',          emoji: '',  next: 'fix_duplexJam' },
+      { label: 'Second side comes out blank',             emoji: '',  next: 'fix_duplexBlank' },
+      { label: 'Pages print upside-down / wrong order',   emoji: '',  next: 'fix_duplexOrientation' },
+      { label: 'My printer doesn\'t do two-sided',        emoji: '',  next: 'fix_manualDuplex' },
     ],
   },
 
@@ -1049,10 +1049,10 @@ const tree: Record<string, Node> = {
     title: 'What happens when you try to scan?',
     icon: Scan,
     options: [
-      { label: 'Computer doesn\'t find the scanner',      emoji: '🔍',  next: 'fix_scannerFind' },
-      { label: 'Scanner error message',                    emoji: '⚠️',  next: 'fix_scannerError' },
-      { label: 'Scans come out blank or black',            emoji: '⬛',  next: 'fix_scannerBlank' },
-      { label: 'Scans to email aren\'t sending',           emoji: '📧',  next: 'fix_scanEmail' },
+      { label: 'Computer doesn\'t find the scanner',      emoji: '',  next: 'fix_scannerFind' },
+      { label: 'Scanner error message',                    emoji: '',  next: 'fix_scannerError' },
+      { label: 'Scans come out blank or black',            emoji: '',  next: 'fix_scannerBlank' },
+      { label: 'Scans to email aren\'t sending',           emoji: '',  next: 'fix_scanEmail' },
     ],
   },
 

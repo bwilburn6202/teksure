@@ -132,7 +132,7 @@ const GMAIL_INSTRUCTIONS = {
     'Also go to "Spam" in the sidebar and click "Delete all spam messages now".',
   ],
   organize: [
-    'To star an email: click the ★ icon to the left of any email.',
+    'To star an email: click the  icon to the left of any email.',
     'To create a label (like a folder): click the three dots on an email → "Label as" → "Create new".',
     'Drag emails into labels in the left sidebar.',
     'Use "Filters and blocked addresses" in Settings to auto-sort future emails.',
