@@ -20,9 +20,7 @@
 import { useState, useEffect, useRef, useCallback, type FormEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
@@ -847,45 +845,24 @@ export default function TekBrainPage() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-        {/* ── Hero ───────────────────────────────────────────────────── */}
-        <section className="border-b border-border/60 py-10 md:py-14 text-center px-4">
-          <div className="container max-w-3xl relative">
-            <div className="absolute top-0 right-0">
-              <BookmarkButton
-                type="tool"
-                slug="tekbrain"
-                title="TekBrain — Your Personal Tech Helper"
-                url="/tekbrain"
-              />
-            </div>
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-900/40 mb-5">
-              <Brain className="h-8 w-8 text-amber-600 dark:text-amber-400" aria-hidden="true" />
-            </div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
-              Ask TekBrain anything.
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 leading-relaxed">
-              Your personal tech helper.
-            </p>
-          </div>
+      <main className="h-screen flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+        {/* ── Hero — compact, clears the fixed navbar ─────────────────── */}
+        <section className="shrink-0 border-b border-border/60 pt-20 pb-3 md:pt-20 md:pb-4 text-center px-4">
+          <h1 className="text-xl md:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Ask TekBrain anything.
+          </h1>
         </section>
 
-        {/* ── Chat area ──────────────────────────────────────────────── */}
-        <section className="container max-w-3xl px-4 py-8 md:py-10">
-          {/* Header row — always visible so Voice settings can be tweaked
-              before the first message. Clear button only appears once there's
-              a conversation to clear. */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-            {hasMessages ? (
-              <Badge variant="secondary" className="text-sm px-3 py-1">
+        {/* ── Chat area — fills remaining viewport ─────────────────────── */}
+        <section className="flex-1 min-h-0 flex flex-col container max-w-3xl w-full mx-auto px-4 py-3 md:py-4">
+          {/* Header row — Voice settings + Clear. Only shown once there's a
+              conversation to clear, to keep the blank-state uncluttered. */}
+          <div className="shrink-0 flex flex-wrap items-center justify-end gap-2 mb-3">
+            {hasMessages && (
+              <Badge variant="secondary" className="text-sm px-3 py-1 mr-auto">
                 <Sparkles className="h-4 w-4 mr-1.5" aria-hidden="true" />
                 {conversationId ? 'Conversation active' : 'New conversation'}
               </Badge>
-            ) : (
-              <span className="text-sm text-slate-500 dark:text-slate-400">
-                Type or speak your question below.
-              </span>
             )}
             <div className="flex items-center gap-2">
               <VoiceSettings
@@ -911,12 +888,10 @@ export default function TekBrainPage() {
             </div>
           </div>
 
-          {/* Scrollable message list — tall enough to feel like a chat,
-              but not so tall that the input scrolls off small screens. */}
+          {/* Scrollable message list — the only scrolling area on the page. */}
           <div
             ref={scrollContainerRef}
-            className="rounded-2xl border border-border bg-white dark:bg-slate-900/60 shadow-sm overflow-y-auto p-4 md:p-6 mb-4"
-            style={{ minHeight: '360px', maxHeight: '60vh' }}
+            className="flex-1 min-h-0 rounded-2xl border border-border bg-white dark:bg-slate-900/60 shadow-sm overflow-y-auto p-4 md:p-6 mb-3"
             aria-label="TekBrain conversation"
             aria-live="polite"
             aria-atomic="false"
@@ -1128,24 +1103,8 @@ export default function TekBrainPage() {
               </div>
             </div>
           </form>
-
-          {/* ── Reassurance footer ───────────────────────────────────── */}
-          <p className="text-base text-slate-500 dark:text-slate-400 text-center mt-8 max-w-xl mx-auto leading-relaxed">
-            TekBrain answers using TekSure&rsquo;s library of senior-friendly
-            guides. If it can&rsquo;t find an answer, it&rsquo;ll tell you
-            &mdash; and you can always{' '}
-            <a
-              href="/book"
-              className="text-amber-700 dark:text-amber-400 font-semibold underline hover:no-underline"
-            >
-              book a real person
-            </a>{' '}
-            for help.
-          </p>
         </section>
       </main>
-
-      <Footer />
     </>
   );
 }
