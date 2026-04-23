@@ -8,7 +8,7 @@ export const guidesBatch87: Guide[] = [
     category: `entertainment`,
     tags: [`simply piano`, `learn piano`, `piano app`, `music lessons`, `beginner piano`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Simply Piano is an app that teaches you to play piano using your phone or tablet's microphone. You connect a keyboard or use any piano nearby, and the app listens to what you play. It tells you right away whether you hit the right notes, held them the right length of time, or need to try again. This kind of instant feedback is what makes it so effective compared to watching videos or reading a book.
@@ -54,7 +54,7 @@ Simply Piano is made by JoyTunes and is available on iPhone, iPad, and Android. 
     category: `entertainment`,
     tags: [`yousician`, `learn guitar`, `learn piano`, `ukulele lessons`, `bass guitar`, `music app`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Yousician is a music education app that works with guitar, bass guitar, ukulele, piano, and voice. It uses your device's microphone to hear what you play and gives you a score in real time — much like a video game. This approach makes practice feel engaging rather than like a chore, and it gives you clear, immediate feedback on whether you are hitting the right notes at the right time.
@@ -99,7 +99,7 @@ Yousician is available on iPhone, iPad, Android, Windows, and Mac. You can learn
     category: `entertainment`,
     tags: [`fender play`, `guitar lessons`, `beginner guitar`, `learn guitar`, `fender`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Fender Play is a guitar learning app and website made by Fender, the company behind some of the most well-known electric and acoustic guitars in history. The platform is designed specifically for people who have never played guitar before. Every lesson is taught by a real musician on camera, and the instruction is clear, patient, and focused on getting you playing actual songs as quickly as possible.
@@ -144,7 +144,7 @@ A free trial gives you full access for a limited time. After that, a monthly or 
     category: `entertainment`,
     tags: [`ultimate guitar`, `guitar tabs`, `chords`, `tabs`, `guitar app`, `sheet music`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Ultimate Guitar is the largest online database of guitar tabs, chords, and bass lines in the world. With more than 1.5 million song entries contributed and rated by musicians worldwide, the chances are very good that the song you want to play is already in the library. You can search by song title or artist name and find multiple versions of the same song at different difficulty levels.
@@ -188,7 +188,7 @@ The app is available on iPhone, iPad, and Android. The free version covers basic
     category: `entertainment`,
     tags: [`garageband`, `iphone music`, `music production`, `recording app`, `apple garageband`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `GarageBand is Apple's free music creation app for iPhone and iPad. It comes preinstalled on most Apple devices or can be downloaded for free from the App Store. Despite being free, GarageBand is a genuinely powerful music tool used by hobbyists, bedroom producers, and even professional musicians who want to capture ideas quickly.
@@ -233,7 +233,7 @@ Apple's official GarageBand tutorials are available at support.apple.com and on 
     category: `app-guides`,
     tags: [`audacity`, `audio recording`, `audio editing`, `free audio software`, `podcast recording`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎚️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Audacity is a free, open-source audio recording and editing program that has been available for more than twenty years. It runs on Windows, Mac, and Linux, and it does not cost anything to download or use. Despite being free, Audacity is a capable tool used by podcasters, musicians, teachers, and hobbyists who need to record and edit audio without paying for expensive software.
@@ -278,7 +278,7 @@ Download Audacity for free at audacityteam.org. The site also has a comprehensiv
     category: `app-guides`,
     tags: [`spotify for podcasters`, `anchor`, `start a podcast`, `podcast recording`, `free podcasting`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Spotify for Podcasters — previously called Anchor — is the simplest way to start a podcast. The platform is completely free, handles all the technical distribution automatically, and lets you record episodes directly from your phone or computer without any special equipment. When you publish an episode, Spotify for Podcasters sends it to Spotify, Apple Podcasts, Amazon Music, Google Podcasts, and many other platforms at the same time.
@@ -323,7 +323,7 @@ Your podcast gets its own RSS feed, which is a standard format that podcast apps
     category: `app-guides`,
     tags: [`buzzsprout`, `podcast hosting`, `podcast distribution`, `podcast stats`, `start a podcast`],
     readTime: `7 min`,
-    thumbnailEmoji: `📻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Buzzsprout is a podcast hosting platform that stores your audio files, generates your podcast's RSS feed, and distributes your show to every major podcast directory — including Spotify, Apple Podcasts, Amazon Music, and iHeartRadio. Once your show is set up and connected, publishing a new episode is as straightforward as uploading a file and clicking Publish.
@@ -368,7 +368,7 @@ The free plan is a reasonable starting point to see whether podcasting is right 
     category: `app-guides`,
     tags: [`procreate`, `digital art`, `ipad drawing`, `apple pencil`, `illustration`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Procreate is the most popular drawing and painting app for iPad. It is used by professional illustrators, tattoo artists, graphic designers, and hobbyists who want a digital canvas that behaves like real art materials. Procreate costs a one-time fee of $12.99 from the App Store — there is no ongoing subscription — making it one of the best-value creative tools available.
@@ -414,7 +414,7 @@ Procreate requires iPadOS 16.2 or later. More information and official tutorials
     category: `app-guides`,
     tags: [`sketchbook`, `autodesk sketchbook`, `drawing app`, `digital sketching`, `free art app`],
     readTime: `7 min`,
-    thumbnailEmoji: `✏️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Autodesk Sketchbook is a professional-grade drawing application that is completely free to use — no subscription, no hidden fees, no limited version. The full app with all of its tools is available on iPad, iPhone, Android phones and tablets, Windows, and Mac. This cross-platform availability means you can start a sketch on your phone during a commute and continue it on your computer at home.
@@ -458,7 +458,7 @@ The app is available at sketchbook.com and through the App Store, Google Play, a
     category: `app-guides`,
     tags: [`ibis paint`, `ibis paint x`, `digital art`, `illustration app`, `drawing app`],
     readTime: `7 min`,
-    thumbnailEmoji: `🖌️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `ibis Paint X is a free drawing and illustration app for iPhone and Android that has become especially popular among manga artists, anime illustrators, and digital artists who want professional tools without spending money. The app has been downloaded more than 300 million times worldwide, and an active community of users share tutorials and completed artwork directly within the app.
@@ -503,7 +503,7 @@ ibis Paint X is available at ibisinc.com, the App Store, and Google Play. The ib
     category: `app-guides`,
     tags: [`photoshop express`, `photo editing`, `adobe`, `mobile photo editor`, `photo app`],
     readTime: `6 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Photoshop Express is Adobe's free mobile photo editing app for iPhone and Android. It brings many of the most commonly used tools from the full desktop Photoshop software into an app that is designed to be fast and accessible. You do not need any prior experience with Photoshop to use it — the interface is organized around the tasks most people actually need: adjusting brightness and color, cropping, removing unwanted objects, and applying filters.
@@ -547,7 +547,7 @@ Photoshop Express is available in the App Store and on Google Play. Adobe's offi
     category: `app-guides`,
     tags: [`snapseed`, `photo editing`, `selective edit`, `healing brush`, `raw photo`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Snapseed is a free photo editing app from Google that is available on iPhone and Android. Most people who use Snapseed know its basic filters and brightness sliders, but the app includes a set of more advanced tools that can produce professional-quality results if you know how to use them.
@@ -591,7 +591,7 @@ Snapseed is free with no in-app purchases and is available in the App Store and 
     category: `app-guides`,
     tags: [`facetune`, `portrait retouching`, `photo editing`, `selfie editing`, `photo retouch`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Facetune is a photo retouching app made by Lightricks that is designed specifically for portrait photos. It gives you tools to smooth skin texture, reduce redness, brighten the whites of eyes, whiten teeth, and adjust lighting on a face. When used at low intensity settings, these tools can make a portrait look more polished and professionally lit without making it look unnaturally altered.
@@ -636,7 +636,7 @@ Facetune's official support page and tutorial videos are available at lightricks
     category: `app-guides`,
     tags: [`pixlr`, `pixlr e`, `browser photo editor`, `free photo editing`, `online photo editor`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Pixlr E is a free online photo editing tool that runs entirely in your web browser. You do not need to download any software, create an account, or pay anything to use the core editing tools. Open pixlr.com/editor, upload a photo, and you are editing. When you are done, save the file back to your computer.
@@ -680,7 +680,7 @@ Pixlr also offers Pixlr X, a more streamlined version of the same tool at pixlr.
     category: `app-guides`,
     tags: [`picsart`, `photo editing app`, `collage maker`, `ai art`, `stickers`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `PicsArt is a free creative app for iPhone and Android that combines photo editing, sticker and text overlays, collage templates, drawing tools, and AI image generation into one platform. It is used by more than 150 million people worldwide, from social media creators and graphic design students to hobbyists who want to make fun, personalized photos.
@@ -724,7 +724,7 @@ PicsArt is free to use with ads. A PicsArt Gold subscription removes ads, unlock
     category: `app-guides`,
     tags: [`remove bg`, `background remover`, `photo background`, `ai photo`, `remove background`],
     readTime: `5 min`,
-    thumbnailEmoji: `🪄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Remove.bg is a free online tool that removes the background from any photo using artificial intelligence. You upload a photo, and within a few seconds the background is gone — leaving your subject on a transparent background that you can place onto any new background you choose.
@@ -768,7 +768,7 @@ Remove.bg processes photos on their servers, so a photo you upload leaves your d
     category: `app-guides`,
     tags: [`canva video`, `video editor`, `canva`, `social media video`, `slideshow maker`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Canva is primarily known as a graphic design tool, but it also includes a capable video editor that is well suited to creating social media content, slideshows, short promotional clips, and educational videos. If you already know how to use Canva for image designs, the video tools use the same interface — making the learning curve very short.
@@ -812,7 +812,7 @@ Start at canva.com/video-editor or use the search bar inside your Canva account 
     category: `app-guides`,
     tags: [`lumafusion`, `ipad video editing`, `video editor`, `mobile filmmaking`, `professional video`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎞️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Advanced`,
     body: `LumaFusion is a professional multi-track video editing app for iPad (and iPhone) that has become one of the most respected tools in mobile filmmaking. Journalists, documentary makers, travel creators, and independent filmmakers use it to edit complete productions directly on an iPad — without needing a desktop computer. It is available as a one-time purchase of $29.99 from the App Store, with no ongoing subscription fees.
@@ -856,7 +856,7 @@ LumaFusion requires iPadOS 16 or later. A companion version for iPhone is also a
     category: `app-guides`,
     tags: [`inshot`, `video editing`, `mobile video`, `trim video`, `social media video`],
     readTime: `6 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `InShot is a free video editing app for iPhone and Android that is designed for fast, uncomplicated edits. It is the most commonly recommended video editing app for people who want to clean up a clip, add music, put some text on screen, and post it to social media — all in ten minutes or less. The app has been downloaded more than 500 million times, which reflects how well it strikes the balance between useful features and simplicity.

@@ -13,11 +13,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   KeyRound, Wifi, Wrench, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
   HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
-  MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
+  MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity, PhoneOff,
   Bluetooth, ClipboardCheck, Trash2,
   ShieldHalf, Sliders, KeySquare, Bell,
   Brain, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, Terminal, Shield, Globe, BookOpen, Receipt,
+  FileSearch, Terminal, Shield, Globe, BookOpen, Receipt, Target,
 } from 'lucide-react';
 
 type ToolCategory = 'All' | 'Security' | 'Device Health' | 'Learning' | 'Communication' | 'Setup & Troubleshooting' | 'Money & Bills' | 'Setup Wizards';
@@ -347,6 +347,46 @@ const tools = [
     path: '/tools/phishing-scanner',
     color: 'text-red-500',
     bg: 'bg-red-50 dark:bg-red-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'URL Safety Check',
+    description: "Deeper scan for any web link — runs it past Google Safe Browsing, PhishTank, and common scam patterns before you click.",
+    icon: ShieldCheck,
+    path: '/tools/url-safety-check',
+    color: 'text-emerald-600',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Digital Footprint Scan',
+    description: 'Check if your email has appeared in a known data breach and find out exactly which accounts need a new password.',
+    icon: Eye,
+    path: '/tools/digital-footprint',
+    color: 'text-fuchsia-600',
+    bg: 'bg-fuchsia-50 dark:bg-fuchsia-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Phone Number Safety',
+    description: "Got a call from a number you don't recognize? Check it against known scam databases before you call back.",
+    icon: PhoneOff,
+    path: '/tools/phone-safety',
+    color: 'text-orange-600',
+    bg: 'bg-orange-50 dark:bg-orange-950/30',
+    badge: 'New',
+    category: 'Security' as ToolCategory,
+  },
+  {
+    title: 'Practice Rooms',
+    description: 'Train your scam-spotting eye on a fake inbox and a fake phone. Nothing here is real — just practice.',
+    icon: Target,
+    path: '/practice',
+    color: 'text-purple-600',
+    bg: 'bg-purple-50 dark:bg-purple-950/30',
     badge: 'New',
     category: 'Security' as ToolCategory,
   },
@@ -809,7 +849,7 @@ export default function Tools() {
       />
       <Navbar />
       <ToolSkeleton />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools' }]} />
         </div>
@@ -862,7 +902,7 @@ export default function Tools() {
             <TabsContent value={activeTab} className="mt-0">
               {filtered.length === 0 ? (
                 <div className="text-center py-20">
-                  <p className="text-3xl mb-3">🔍</p>
+                  <p className="text-3xl mb-3"></p>
                   <p className="font-medium mb-1">No tools found</p>
                   <p className="text-sm text-muted-foreground">
                     Try a different search term or choose another category.
@@ -879,18 +919,18 @@ export default function Tools() {
                         const catTools = tools.filter(t => t.category === cat);
                         if (catTools.length === 0) return null;
                         const catEmojis: Record<string, string> = {
-                          'Security': '🔒',
-                          'Setup Wizards': '🔧',
-                          'Device Health': '❤️',
-                          'Money & Bills': '💰',
-                          'Learning': '🎓',
-                          'Communication': '💬',
-                          'Setup & Troubleshooting': '⚡',
+                          'Security': '',
+                          'Setup Wizards': '',
+                          'Device Health': '',
+                          'Money & Bills': '',
+                          'Learning': '',
+                          'Communication': '',
+                          'Setup & Troubleshooting': '',
                         };
                         return (
                           <div key={cat}>
                             <div className="flex items-center gap-2 mb-5">
-                              <span className="text-xl">{catEmojis[cat] || '🛠️'}</span>
+                              <span className="text-xl">{catEmojis[cat] || ''}</span>
                               <h2 className="text-lg font-bold">{cat}</h2>
                               <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full ml-1">{catTools.length} tools</span>
                             </div>

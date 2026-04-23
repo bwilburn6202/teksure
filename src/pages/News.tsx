@@ -398,7 +398,7 @@ export default function News() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
@@ -414,7 +414,7 @@ export default function News() {
           <div className="container max-w-4xl mx-auto">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">
-                <span className="text-xl">🔥</span>
+                <span className="text-xl"></span>
                 <div>
                   <h2 className="font-bold text-lg">Top Tech Stories Right Now</h2>
                   <p className="text-xs text-muted-foreground">Live from Hacker News · Updates when you refresh</p>

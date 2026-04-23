@@ -32,3 +32,9 @@ public/brain/knowledge-base.json
 .claude/worktrees/
 .claire/worktrees/
 .claude/settings.local.json
+
+# Vite HMR leftovers
+vite.config.ts.timestamp-*.mjs
+
+# Old/duplicate lockfile — bun.lock is authoritative
+# bun.lockb  (keep both for now; revisit)

@@ -8,7 +8,7 @@ export const guidesBatch56: Guide[] = [
     category: `app-guides`,
     tags: [`apple notes`, `notes`, `privacy`, `iphone`, `ipad`, `mac`, `face id`, `password`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Apple Notes app lets you lock individual notes so that only you can open them. This is useful for notes that contain passwords, financial information, medical details, or anything else you want to keep private — even if someone else picks up your phone.
@@ -56,7 +56,7 @@ If you forget your notes password, Apple cannot recover it for you. Write it dow
     category: `app-guides`,
     tags: [`google earth`, `maps`, `travel`, `explore`, `landmarks`, `virtual tour`, `geography`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Earth is a free app that lets you fly anywhere on Earth and look at satellite photos, street-level images, and 3D views of buildings and mountains. You can explore your old neighborhood, check out places you want to visit, or take a virtual tour of famous landmarks — all from your couch.
@@ -102,7 +102,7 @@ Street View inside Google Earth lets you drop down to ground level and look arou
     category: `app-guides`,
     tags: [`google tasks`, `to-do list`, `gmail`, `google calendar`, `productivity`, `reminders`, `android`],
     readTime: `4 min`,
-    thumbnailEmoji: `✅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Tasks is a simple, free to-do list app that is built right into Gmail and Google Calendar. If you already use Gmail, you already have access to Google Tasks — no new account or download required.
@@ -148,7 +148,7 @@ Google Tasks does not send you pop-up reminders by default (unlike Google Keep o
     category: `app-guides`,
     tags: [`walmart`, `grocery pickup`, `walmart plus`, `shopping`, `curbside pickup`, `app`, `savings`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Walmart app makes it possible to shop for groceries without walking every aisle. You can browse items on your phone, add them to your cart, and then pick them up at the store without ever going inside. A Walmart employee collects your items and brings them right to your car.
@@ -195,7 +195,7 @@ The app works on iPhone and Android phones. You will need a Walmart account to p
     category: `app-guides`,
     tags: [`target`, `target circle`, `drive up`, `curbside pickup`, `shopping`, `rewards`, `app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎯`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Target app is a free tool that makes shopping at Target faster and more rewarding. It brings together your Target Circle rewards account, the store's weekly deals, and curbside Drive Up pickup all in one place.
@@ -239,7 +239,7 @@ You can use the app to track online orders, manage returns, and see your previou
     category: `app-guides`,
     tags: [`grubhub`, `food delivery`, `restaurants`, `ordering food`, `delivery`, `app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Grubhub is an app that connects you with local restaurants that deliver food straight to your home. You browse a menu on your phone, tap what you want, pay through the app, and a delivery driver brings your food to your door — usually within 30 to 60 minutes.
@@ -285,7 +285,7 @@ The app is available on iPhone and Android. You will need to create a free Grubh
     category: `how-to`,
     tags: [`airline app`, `boarding pass`, `check in`, `flight`, `travel`, `mobile boarding pass`, `airport`],
     readTime: `5 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most major airlines now have free apps that let you manage almost everything about your trip from your phone. You can check in for your flight, get a digital boarding pass, pick your seat, track your flight status, and receive gate change alerts — all without printing anything or standing in line.
@@ -331,7 +331,7 @@ You will need your booking confirmation number or the email address you used whe
     category: `how-to`,
     tags: [`hotel booking`, `hotels.com`, `booking.com`, `travel`, `hotel deals`, `vacation`, `reservations`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Booking a hotel room used to mean calling the hotel directly or going through a travel agent. Today, websites and apps like Hotels.com, Booking.com, and Expedia let you compare dozens of hotels in one place, read guest reviews, and often find lower prices than booking directly with the hotel.
@@ -376,7 +376,7 @@ It is also worth checking the hotel's own website after you find a rate on a boo
     category: `app-guides`,
     tags: [`tripadvisor`, `travel`, `restaurants`, `reviews`, `activities`, `tourism`, `trip planning`],
     readTime: `4 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `TripAdvisor is a website and free app where millions of travelers share honest reviews of restaurants, hotels, attractions, and activities all around the world. When you are visiting a new city or planning a trip, TripAdvisor helps you figure out where to eat, what to see, and what to skip.
@@ -423,7 +423,7 @@ Be aware that not every review on TripAdvisor is from a real customer — like a
     category: `app-guides`,
     tags: [`opentable`, `restaurant reservations`, `dining`, `booking`, `app`, `dinner`, `restaurants`],
     readTime: `4 min`,
-    thumbnailEmoji: `🍽️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `OpenTable is a free app and website that lets you book a table at thousands of restaurants across the United States without making a phone call. You search for available restaurants, pick a time that works for you, and confirm your reservation in under a minute — all from your phone or computer.
@@ -469,7 +469,7 @@ You can also use OpenTable to read restaurant reviews, view menus, and see photo
     category: `app-guides`,
     tags: [`goodreads`, `books`, `reading`, `book tracker`, `book recommendations`, `reading goal`, `library`],
     readTime: `4 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Goodreads is a free app and website where you can keep a personal record of every book you have read, every book you want to read, and every book you are reading right now. Think of it as a bookshelf you carry in your pocket.
@@ -515,7 +515,7 @@ Goodreads is owned by Amazon and works on iPhone, Android, and in any web browse
     category: `essential-skills`,
     tags: [`libby`, `overdrive`, `library`, `ebooks`, `audiobooks`, `free books`, `digital library`, `reading`],
     readTime: `5 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your local library card gives you access to thousands of free e-books and audiobooks that you can borrow and read or listen to on your phone, tablet, or computer — no trips to the library required. The app that makes this possible is called Libby, and it was created by a company called OverDrive.
@@ -561,7 +561,7 @@ Audiobooks in Libby are especially popular for people who want to "read" during 
     category: `phone-guides`,
     tags: [`find my`, `lost iphone`, `apple`, `location sharing`, `airpods`, `ipad`, `family sharing`, `lost device`],
     readTime: `5 min`,
-    thumbnailEmoji: `📍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple's Find My app is built into every iPhone, iPad, and Mac. It helps you locate a device if it goes missing — whether you left it on the couch, misplaced it in your car, or had it stolen. You can see its location on a map, play a sound to help you find it nearby, or lock it remotely if you think it was stolen.
@@ -608,7 +608,7 @@ Find My is available on your iPhone, iPad, Mac, and also through iCloud.com on a
     category: `tips-tricks`,
     tags: [`spotify`, `music`, `streaming`, `tips`, `tricks`, `crossfade`, `sleep timer`, `private session`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Spotify is packed with features that most people never discover because they are hidden in menus or settings screens. If you use Spotify regularly, knowing about these tools can make your listening experience noticeably better.
@@ -654,7 +654,7 @@ These features work on the Spotify app for iPhone and Android, and most also wor
     category: `financial-tech`,
     tags: [`digital wallet`, `apple pay`, `google pay`, `contactless payment`, `mobile payment`, `safety`, `security`],
     readTime: `5 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A digital wallet is an app on your phone that stores your credit card and debit card information securely, so you can pay at stores and online without pulling out a physical card. The most common digital wallets in the United States are Apple Pay (for iPhones) and Google Pay (for Android phones).
@@ -702,7 +702,7 @@ You do not need a special bank or credit card to use a digital wallet. Most majo
     category: `app-guides`,
     tags: [`google drive`, `sharing`, `family sharing`, `folders`, `cloud storage`, `collaboration`, `files`],
     readTime: `4 min`,
-    thumbnailEmoji: `📁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Drive is a free cloud storage service from Google where you can save files — documents, photos, videos, and more — and access them from any device. One of its most useful features is the ability to share a folder with other people so you can all put files in the same place.
@@ -748,7 +748,7 @@ Google Drive is available in any web browser at drive.google.com, and as a free 
     category: `phone-guides`,
     tags: [`android`, `accessibility`, `large text`, `magnification`, `talkback`, `seniors`, `vision`, `hearing`],
     readTime: `5 min`,
-    thumbnailEmoji: `♿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android phones come with a set of built-in accessibility features that can make the phone much easier to use if you have vision, hearing, or dexterity challenges. These features are free and already on your phone — you do not need to download anything.
@@ -801,7 +801,7 @@ These settings are found in Settings, then Accessibility on most Android phones.
     category: `app-guides`,
     tags: [`google photos`, `family sharing`, `shared album`, `photos`, `android`, `iphone`, `collaboration`],
     readTime: `5 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos is a free app from Google that stores your photos in the cloud and makes them available on any device where you are signed in to your Google account. One of its most popular features for families is shared albums — a single photo album that multiple family members can view and add to.
@@ -847,7 +847,7 @@ Google gives everyone 15 gigabytes of free storage. Google Photos compresses pho
     category: `phone-guides`,
     tags: [`visual voicemail`, `android`, `voicemail`, `phone calls`, `transcription`, `messages`],
     readTime: `4 min`,
-    thumbnailEmoji: `📬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Visual voicemail is a feature on Android phones that shows you a list of your voicemail messages — similar to how your email inbox works — and lets you read a text version of each message without having to listen to it. You can also tap to play just the messages that matter to you, in any order, rather than listening through every message from first to last.
@@ -894,7 +894,7 @@ Transcriptions are done automatically by your phone and are usually accurate eno
     category: `entertainment`,
     tags: [`apple tv`, `apple tv 4k`, `streaming`, `siri`, `airplay`, `tv`, `setup`, `remote`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple TV 4K is a small black box about the size of a hockey puck that you connect to your television. Once connected, it turns your TV into a smart TV with access to hundreds of streaming services — Apple TV+, Netflix, Hulu, Prime Video, Disney+, and many more — all controlled from a single remote.

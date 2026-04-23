@@ -39,12 +39,12 @@ const GIFT_OPTIONS = [
 ];
 
 const OCCASIONS = [
-  { emoji: '🎂', label: 'Birthday' },
-  { emoji: '🎄', label: 'Holiday' },
-  { emoji: '💝', label: "Mother's/Father's Day" },
-  { emoji: '🎓', label: 'Retirement' },
-  { emoji: '📱', label: 'New Device' },
-  { emoji: '💛', label: 'Thinking of You' },
+  { emoji: '', label: 'Birthday' },
+  { emoji: '', label: 'Holiday' },
+  { emoji: '', label: "Mother's/Father's Day" },
+  { emoji: '', label: 'Retirement' },
+  { emoji: '', label: 'New Device' },
+  { emoji: '', label: 'Thinking of You' },
 ];
 
 export default function GiftSession() {
@@ -66,7 +66,7 @@ export default function GiftSession() {
         path="/gift-session"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-4xl pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Gift a Session' }]} />
         </div>

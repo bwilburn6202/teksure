@@ -195,7 +195,7 @@ export default function EmailTemplates() {
         path="/tools/email-templates"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh]">
+      <main id="main-content" className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <Mail className="h-8 w-8 text-primary" />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Email Templates</h1>

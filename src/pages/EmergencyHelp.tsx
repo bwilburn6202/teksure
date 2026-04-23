@@ -196,7 +196,7 @@ export default function EmergencyHelp() {
         </div>
       </section>
 
-      <main className="container max-w-3xl mx-auto px-4 py-10">
+      <main id="main-content" className="container max-w-3xl mx-auto px-4 py-10">
         {/* Quick jump */}
         <Card className="mb-8 bg-muted/40">
           <CardContent className="py-5">

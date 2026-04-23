@@ -126,7 +126,7 @@ function MousePlayground() {
       <div className="bg-muted/30 rounded-2xl p-6 min-h-[300px]">
         <div className="mb-4 p-4 bg-primary/10 rounded-xl border border-primary/20">
           <p className="font-medium text-primary">{exercise.instruction}</p>
-          <p className="text-sm text-muted-foreground mt-1">💡 {exercise.hint}</p>
+          <p className="text-sm text-muted-foreground mt-1"> {exercise.hint}</p>
         </div>
 
         <div className="flex flex-wrap gap-4">
@@ -394,7 +394,7 @@ function KeyboardPlayground() {
           <p className="text-xs text-muted-foreground">A-Z, numbers, symbols</p>
         </div>
         <div className="glass-card p-4 text-center">
-          <span className="text-lg font-bold">Ctrl / ⌘</span>
+          <span className="text-lg font-bold">Ctrl / </span>
           <p className="text-sm font-medium">Modifier keys</p>
           <p className="text-xs text-muted-foreground">Combine with others</p>
         </div>
@@ -436,7 +436,7 @@ const TechPlayground = () => {
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         <div className="text-center mb-12">
           <div className="inline-flex h-16 w-16 rounded-full bg-gradient-to-br from-teksure-success/20 to-primary/5 items-center justify-center mb-6">
             <Play className="h-8 w-8 text-teksure-success" />

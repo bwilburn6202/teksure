@@ -418,7 +418,7 @@ export default function ScamAlerts() {
         }}
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Scam Alerts</h1>
@@ -464,7 +464,7 @@ export default function ScamAlerts() {
                       <ul className="space-y-2">
                         {scam.whatToDo.map((step, i) => (
                           <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                            <span className="text-green-600 shrink-0 font-semibold">✓</span>
+                            <span className="text-green-600 shrink-0 font-semibold"></span>
                             {step}
                           </li>
                         ))}

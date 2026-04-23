@@ -25,7 +25,7 @@ interface Platform {
 
 const platforms: Platform[] = [
   {
-    id: 'iphone', name: 'iPhone', icon: '📱',
+    id: 'iphone', name: 'iPhone', icon: '',
     settings: [
       { id: 'ip-loc', label: 'Turn off location tracking for apps that do not need it', why: 'Many apps request your location even when they have no reason to.', link: 'https://support.apple.com/en-us/HT207092', linkLabel: 'Apple: Location Services' },
       { id: 'ip-track', label: 'Turn on "Ask App Not to Track"', why: 'This stops apps from tracking your activity across other apps and websites.', link: 'https://support.apple.com/en-us/HT212025', linkLabel: 'Apple: App Tracking' },
@@ -40,7 +40,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'android', name: 'Android', icon: '🤖',
+    id: 'android', name: 'Android', icon: '',
     settings: [
       { id: 'an-loc', label: 'Review app location permissions', why: 'Set most apps to "Only while using" or "Deny."', link: 'https://support.google.com/android/answer/6179507', linkLabel: 'Google: Location permissions' },
       { id: 'an-ad', label: 'Opt out of ad personalization', why: 'Google uses your activity to show targeted ads. Opting out means less tracking.', link: 'https://support.google.com/android/answer/3118621', linkLabel: 'Google: Ad settings' },
@@ -55,7 +55,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'facebook', name: 'Facebook', icon: '👤',
+    id: 'facebook', name: 'Facebook', icon: '',
     settings: [
       { id: 'fb-who', label: 'Set "Who can see your future posts" to Friends Only', why: 'Posts set to Public can be seen by anyone on the internet.', link: 'https://www.facebook.com/settings?tab=privacy', linkLabel: 'Facebook Privacy Settings' },
       { id: 'fb-search', label: 'Limit who can look you up by email or phone number', why: 'Scammers can use your phone number or email to find your profile.' },
@@ -68,7 +68,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'google', name: 'Google', icon: '🔍',
+    id: 'google', name: 'Google', icon: '',
     settings: [
       { id: 'go-activity', label: 'Turn off Web & App Activity', why: 'Google saves every search and website visit. Turning this off stops that collection.', link: 'https://myactivity.google.com/activitycontrols', linkLabel: 'Google Activity Controls' },
       { id: 'go-loc', label: 'Turn off Location History', why: 'Google tracks everywhere you go and saves a timeline.' },
@@ -82,7 +82,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'instagram', name: 'Instagram', icon: '📸',
+    id: 'instagram', name: 'Instagram', icon: '',
     settings: [
       { id: 'ig-priv', label: 'Set your account to Private', why: 'A private account means only approved followers can see your posts and stories.' },
       { id: 'ig-activity', label: 'Turn off Activity Status', why: 'Activity status shows others when you were last online.' },
@@ -95,7 +95,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'amazon', name: 'Amazon', icon: '📦',
+    id: 'amazon', name: 'Amazon', icon: '',
     settings: [
       { id: 'am-2fa', label: 'Turn on two-step verification', why: 'Your Amazon account has your payment info and order history.', link: 'https://www.amazon.com/a/settings/approval', linkLabel: 'Amazon: Two-Step Verification' },
       { id: 'am-history', label: 'Review and manage your browsing history', why: 'Amazon tracks everything you look at to recommend products and target ads.' },
@@ -108,7 +108,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'whatsapp', name: 'WhatsApp', icon: '💬',
+    id: 'whatsapp', name: 'WhatsApp', icon: '',
     settings: [
       { id: 'wa-2fa', label: 'Turn on two-step verification', why: 'Adds a PIN required when registering your number again. Prevents account hijacking.' },
       { id: 'wa-photo', label: 'Set profile photo visibility to "My Contacts"', why: 'Strangers should not be able to see your profile photo.' },
@@ -121,7 +121,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'windows', name: 'Windows PC', icon: '💻',
+    id: 'windows', name: 'Windows PC', icon: '',
     settings: [
       { id: 'wi-update', label: 'Turn on automatic Windows updates', why: 'Security updates fix vulnerabilities that hackers exploit.' },
       { id: 'wi-diag', label: 'Set diagnostic data to "Required" (not Full)', why: 'Setting it to Required sends the minimum amount of data to Microsoft.' },
@@ -134,7 +134,7 @@ const platforms: Platform[] = [
     ],
   },
   {
-    id: 'mac', name: 'Mac', icon: '🍎',
+    id: 'mac', name: 'Mac', icon: '',
     settings: [
       { id: 'mc-update', label: 'Turn on automatic macOS updates', why: 'Apple regularly patches security vulnerabilities.' },
       { id: 'mc-firewall', label: 'Turn on the built-in firewall', why: 'The macOS firewall blocks unwanted incoming connections. It is off by default.' },

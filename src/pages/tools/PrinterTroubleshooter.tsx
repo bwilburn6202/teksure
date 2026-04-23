@@ -26,7 +26,7 @@ const TREE: Record<string, Node> = {
     id: 'start',
     type: 'question',
     question: 'What best describes your printer problem?',
-    emoji: '🖨️',
+    emoji: '',
   },
 
   // ── Printer offline flow ──────────────────────────────────────
@@ -41,7 +41,7 @@ const TREE: Record<string, Node> = {
   offline_turn_on: {
     id: 'offline_turn_on',
     type: 'solution',
-    emoji: '🔌',
+    emoji: '',
     statement: 'Turn on your printer',
     solution: 'Your printer may be off or not getting power.',
     solutionSteps: [
@@ -69,7 +69,7 @@ const TREE: Record<string, Node> = {
   offline_usb_replug: {
     id: 'offline_usb_replug',
     type: 'solution',
-    emoji: '🔗',
+    emoji: '',
     statement: 'Reconnect the USB cable',
     solution: 'A loose cable is one of the most common printer problems.',
     solutionSteps: [
@@ -83,7 +83,7 @@ const TREE: Record<string, Node> = {
   offline_usb_restart: {
     id: 'offline_usb_restart',
     type: 'solution',
-    emoji: '🔄',
+    emoji: '',
     statement: 'Restart your printer and computer',
     solution: 'A restart often fixes communication issues between your computer and printer.',
     solutionSteps: [
@@ -106,7 +106,7 @@ const TREE: Record<string, Node> = {
   offline_wifi_reconnect: {
     id: 'offline_wifi_reconnect',
     type: 'solution',
-    emoji: '📶',
+    emoji: '',
     statement: 'Reconnect your printer to WiFi',
     solution: 'Your printer has lost its WiFi connection.',
     solutionSteps: [
@@ -129,7 +129,7 @@ const TREE: Record<string, Node> = {
   offline_wifi_fix_network: {
     id: 'offline_wifi_fix_network',
     type: 'solution',
-    emoji: '🌐',
+    emoji: '',
     statement: 'Connect both devices to the same network',
     solution: 'Your printer and computer must be on the same WiFi network to communicate.',
     solutionSteps: [
@@ -143,7 +143,7 @@ const TREE: Record<string, Node> = {
   offline_wifi_restart_all: {
     id: 'offline_wifi_restart_all',
     type: 'solution',
-    emoji: '🔄',
+    emoji: '',
     statement: 'Restart everything',
     solution: 'When the printer shows "offline" but everything looks connected, a full restart usually fixes it.',
     solutionSteps: [
@@ -168,7 +168,7 @@ const TREE: Record<string, Node> = {
   jam_remove: {
     id: 'jam_remove',
     type: 'solution',
-    emoji: '📄',
+    emoji: '',
     statement: 'Carefully remove the jammed paper',
     solution: 'Gently pull the paper out to avoid tearing it or damaging the printer.',
     solutionSteps: [
@@ -183,7 +183,7 @@ const TREE: Record<string, Node> = {
   jam_hidden: {
     id: 'jam_hidden',
     type: 'solution',
-    emoji: '🔍',
+    emoji: '',
     statement: 'Check all access points for hidden paper',
     solution: 'Paper can get stuck in places that are hard to see at first.',
     solutionSteps: [
@@ -215,7 +215,7 @@ const TREE: Record<string, Node> = {
   quality_check_ink: {
     id: 'quality_check_ink',
     type: 'solution',
-    emoji: '🔋',
+    emoji: '',
     statement: 'Check and replace ink or toner',
     solution: 'Faded printing is usually caused by low ink or toner.',
     solutionSteps: [
@@ -230,7 +230,7 @@ const TREE: Record<string, Node> = {
   quality_faded_low: {
     id: 'quality_faded_low',
     type: 'solution',
-    emoji: '🖨️',
+    emoji: '',
     statement: 'Run a cleaning cycle',
     solution: 'If ink levels are fine but prints are faded, the print heads may be clogged.',
     solutionSteps: [
@@ -245,7 +245,7 @@ const TREE: Record<string, Node> = {
   quality_streaky: {
     id: 'quality_streaky',
     type: 'solution',
-    emoji: '🧹',
+    emoji: '',
     statement: 'Clean the print heads and check alignment',
     solution: 'Streaks or lines on printed pages are usually caused by dirty print heads or misalignment.',
     solutionSteps: [
@@ -260,7 +260,7 @@ const TREE: Record<string, Node> = {
   quality_blurry: {
     id: 'quality_blurry',
     type: 'solution',
-    emoji: '👓',
+    emoji: '',
     statement: 'Fix blurry or smudged prints',
     solution: 'Blurry prints are usually caused by paper settings, damp paper, or dirty rollers.',
     solutionSteps: [
@@ -292,7 +292,7 @@ const TREE: Record<string, Node> = {
   ink_replace: {
     id: 'ink_replace',
     type: 'solution',
-    emoji: '🛒',
+    emoji: '',
     statement: 'Replace the ink or toner cartridge',
     solution: 'When ink or toner is empty, you need a new cartridge.',
     solutionSteps: [
@@ -307,7 +307,7 @@ const TREE: Record<string, Node> = {
   ink_not_recognized: {
     id: 'ink_not_recognized',
     type: 'solution',
-    emoji: '⚠️',
+    emoji: '',
     statement: 'Fix "cartridge not recognized" errors',
     solution: 'Sometimes a printer does not recognize a cartridge even when it is installed correctly.',
     solutionSteps: [
@@ -324,24 +324,24 @@ const TREE: Record<string, Node> = {
 
 // Multi-choice start question options
 const START_OPTIONS = [
-  { label: 'Printer says "Offline"', emoji: '🚫', next: 'offline_q1' },
-  { label: 'Paper jam', emoji: '📄', next: 'jam_q1' },
-  { label: 'Print quality is poor (faded, streaky, blurry)', emoji: '👓', next: 'quality_q1' },
-  { label: 'Ink or toner problem', emoji: '🖋️', next: 'ink_q1' },
+  { label: 'Printer says "Offline"', emoji: '', next: 'offline_q1' },
+  { label: 'Paper jam', emoji: '', next: 'jam_q1' },
+  { label: 'Print quality is poor (faded, streaky, blurry)', emoji: '', next: 'quality_q1' },
+  { label: 'Ink or toner problem', emoji: '', next: 'ink_q1' },
 ];
 
 // Multi-choice for USB vs WiFi connection type
 const CONNECTION_OPTIONS = [
-  { label: 'USB cable (plugged in)', emoji: '🔗', next: 'offline_usb' },
-  { label: 'WiFi (wireless)', emoji: '📶', next: 'offline_wifi' },
-  { label: 'I\'m not sure', emoji: '❓', next: 'offline_usb' },
+  { label: 'USB cable (plugged in)', emoji: '', next: 'offline_usb' },
+  { label: 'WiFi (wireless)', emoji: '', next: 'offline_wifi' },
+  { label: 'I\'m not sure', emoji: '', next: 'offline_usb' },
 ];
 
 // Multi-choice for print quality issue type
 const QUALITY_OPTIONS = [
-  { label: 'Faded or light printing', emoji: '🔅', next: 'quality_faded' },
-  { label: 'Streaks or lines on the page', emoji: '📏', next: 'quality_streaky' },
-  { label: 'Blurry or smudged', emoji: '💧', next: 'quality_blurry' },
+  { label: 'Faded or light printing', emoji: '', next: 'quality_faded' },
+  { label: 'Streaks or lines on the page', emoji: '', next: 'quality_streaky' },
+  { label: 'Blurry or smudged', emoji: '', next: 'quality_blurry' },
 ];
 
 export default function PrinterTroubleshooter() {

@@ -415,8 +415,8 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
       <div className="flex items-center justify-between mb-4">
         <span className="text-sm text-muted-foreground">Step {currentStep + 1} of {scenario.steps.length}</span>
         <div className="flex items-center gap-2">
-          <Badge className="bg-teksure-success/10 text-teksure-success">{correct} ✓</Badge>
-          <Badge variant="destructive">{wrong} ✗</Badge>
+          <Badge className="bg-teksure-success/10 text-teksure-success">{correct} </Badge>
+          <Badge variant="destructive">{wrong} </Badge>
         </div>
       </div>
       <Progress value={progress} className="h-2 mb-6" />
@@ -535,7 +535,7 @@ const TechLifeSimulator = () => {
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         {activeScenario ? (
           <div className="max-w-2xl mx-auto">
             <Button 

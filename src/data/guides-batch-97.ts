@@ -8,7 +8,7 @@ export const guidesBatch97: Guide[] = [
     category: `smart-home`,
     tags: [`Nest thermostat`, `smart thermostat`, `Google`, `HVAC`],
     readTime: `10 min`,
-    thumbnailEmoji: `🌡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `The Google Nest Learning Thermostat is one of the most popular smart thermostats in the United States, and for good reason. It studies the temperatures you set over the first week or two, then builds a schedule automatically so your home stays comfortable without you touching a dial every day. It can also drop into Eco Mode when you leave the house, which often shaves 10 to 15 percent off heating and cooling bills.
@@ -46,7 +46,7 @@ Installation itself takes about 30 to 45 minutes. You will turn off power at the
     category: `smart-home`,
     tags: [`ecobee`, `smart thermostat`, `SmartSensor`, `HVAC`],
     readTime: `10 min`,
-    thumbnailEmoji: `🏡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `If your home has one room that always runs cold in winter or hot in summer — usually a back bedroom or a room above a garage — an ecobee thermostat is the single best fix short of replacing ductwork. What makes ecobee different from other smart thermostats is its wireless SmartSensors. You place small disc-shaped sensors in the rooms that matter to you, and ecobee averages the temperature across those sensors instead of reacting only to the hallway where most thermostats live.
@@ -87,7 +87,7 @@ Ecobee models also include a built-in Alexa speaker, intercom, and integration w
     category: `smart-home`,
     tags: [`MyQ`, `smart garage`, `Chamberlain`, `LiftMaster`],
     readTime: `9 min`,
-    thumbnailEmoji: `🚪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `MyQ is Chamberlain and LiftMaster's smart garage system, and it turns a regular garage door opener into one you can control from anywhere in the world through your phone. If you've ever driven halfway to work wondering whether you left the garage door open, MyQ solves that problem in about 20 minutes of setup.
@@ -128,7 +128,7 @@ The Amazon Key for Garage integration is notable — it allows Amazon drivers to
     category: `smart-home`,
     tags: [`Nest Protect`, `smoke detector`, `CO detector`, `Google Nest`],
     readTime: `8 min`,
-    thumbnailEmoji: `🚨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Every home needs working smoke detectors and — if you have any gas appliances, an attached garage, or a wood-burning fireplace — carbon monoxide detectors. The Nest Protect combines both in a single unit and adds two features a basic hardware-store detector cannot match: a friendly spoken pre-alert before the loud siren, and a phone notification if something is detected while you're away.
@@ -169,7 +169,7 @@ Two versions exist: battery-powered (6-year AA lithium battery life) and wired (
     category: `smart-home`,
     tags: [`leak sensor`, `smart home`, `water damage`, `Moen Flo`, `Phyn`],
     readTime: `9 min`,
-    thumbnailEmoji: `💧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Water damage is one of the single most expensive home insurance claims in the United States — the average claim runs well over $10,000, and many are far higher. The frustrating part is that almost all water damage is slow, meaning a cheap sensor could have caught the leak long before it ruined floors and drywall.
@@ -210,7 +210,7 @@ Here's a real money nudge: many home insurance companies (Travelers, State Farm,
     category: `social-media`,
     tags: [`Instagram`, `Close Friends`, `Stories`, `privacy`],
     readTime: `6 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Instagram's Close Friends feature is one of the most useful privacy tools on any social media platform, and a lot of people don't know it exists. It's a private list you curate yourself. Anyone on the list sees your Close Friends Stories and Notes; everyone else sees nothing. No one is notified when they're added or removed, so you can adjust it freely without awkward conversations.
@@ -251,7 +251,7 @@ The setup is fast. You can add or remove people from Close Friends at any time t
     category: `social-media`,
     tags: [`Bluesky`, `social network`, `Twitter alternative`, `X alternative`],
     readTime: `7 min`,
-    thumbnailEmoji: `🦋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bluesky is one of the largest social networks that grew out of the dissatisfaction many people felt with X (formerly Twitter) over the past few years. It looks and feels similar to classic Twitter — short text posts, replies, reposts, likes — but it's built on a different kind of technology (the AT Protocol) that is decentralized, meaning no single company owns the entire network.
@@ -291,7 +291,7 @@ Custom feeds are Bluesky's secret weapon. Instead of one algorithm controlling w
     category: `social-media`,
     tags: [`Mastodon`, `Fediverse`, `federated social`, `decentralized`],
     readTime: `9 min`,
-    thumbnailEmoji: `🐘`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Mastodon often gets described as "Twitter but different," and that's half true — it looks like Twitter, but the way it's built is genuinely unusual. Instead of one company running one website, Mastodon is a collection of thousands of independent servers (called "instances") that all speak the same language and connect to each other. Think of it like email: your Gmail account and a friend's Yahoo account can send messages to each other even though Gmail and Yahoo are different companies.
@@ -334,7 +334,7 @@ The official Mastodon app is fine, but many people prefer third-party apps for i
     category: `social-media`,
     tags: [`TikTok Live`, `live streaming`, `TikTok`, `social media`],
     readTime: `7 min`,
-    thumbnailEmoji: `📹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TikTok Live lets you broadcast real-time video to your followers and anyone else who happens to find the broadcast. Live streams show up at the top of the For You feed for interested viewers, and you can talk with them through live comments. The format is excellent for Q&As, crafting demos, cooking, gaming reactions, performances, or talking through an event as it happens.
@@ -375,7 +375,7 @@ During the live, you'll see floating comments, heart animations when people tap 
     category: `ai-guides`,
     tags: [`AI`, `meal planning`, `grocery list`, `ChatGPT`, `cooking`],
     readTime: `7 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Meal planning is one of those chores that most households never quite master. You walk into the grocery store without a list, buy random things, and three days later you're staring into the fridge with nothing that makes a meal. AI assistants — ChatGPT, Claude, and Google Gemini all work well here — turn this whole process into a 5-minute conversation.
@@ -418,7 +418,7 @@ Two honest cautions. AI can sometimes suggest recipes with imprecise cooking tim
     category: `ai-guides`,
     tags: [`AI`, `greeting cards`, `writing`, `birthday`, `thank you note`],
     readTime: `6 min`,
-    thumbnailEmoji: `💌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you've ever sat with a blank birthday card for 10 minutes unsure what to write, you're not alone. AI assistants are genuinely good at this task — they can generate warm, personal, non-generic messages as long as you give them real details to work with. The key word is "real." Generic prompts produce generic messages. Specific prompts produce something that could only have been written for the person receiving it.
@@ -459,7 +459,7 @@ The same approach works for thank-you notes (mention what the gift was and how y
     category: `ai-guides`,
     tags: [`AI`, `travel planning`, `itinerary`, `ChatGPT`, `vacation`],
     readTime: `8 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Planning a vacation used to mean a stack of guidebooks, a yellow highlighter, and hours on TripAdvisor. AI assistants can produce a reasonable first-draft itinerary in minutes, leaving the richer work of verifying and personalizing for you. The pattern that works best: ask the AI for structure, then verify the specifics yourself before booking anything.
@@ -502,7 +502,7 @@ Now the important part: AI hallucinations. AI can confidently invent restaurants
     category: `ai-guides`,
     tags: [`AI`, `resume`, `cover letter`, `job search`, `ChatGPT`],
     readTime: `9 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AI is one of the best tools for job applications in years, but using it well takes a little discipline. The wrong way is to paste a job posting and ask it to write you a resume and cover letter. The right way is to paste your real resume and a real job description, and ask it to help you tighten and tailor what you already have. The difference is the difference between a strong application and one that gets you rejected when the interviewer notices the resume doesn't match the person.
@@ -543,7 +543,7 @@ The one absolute rule: never let AI invent qualifications. If it writes that you
     category: `ai-guides`,
     tags: [`AI`, `bedtime story`, `kids`, `ChatGPT`, `storytelling`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AI bedtime stories are a small thing that make a big difference at the end of a long day. You can have a personalized 5-minute story ready in under a minute, starring your child as the main character, themed around their current favorite animal or topic, and ending with a gentle lesson if you want one. The kids love that the story is about them; parents love that bedtime doesn't require reading the same dinosaur book for the 400th night in a row.
@@ -586,7 +586,7 @@ A safety note worth flagging: avoid sharing more than a child's first name with 
     category: `online-privacy`,
     tags: [`public wifi`, `cafe wifi`, `hotel wifi`, `VPN`, `safety`],
     readTime: `7 min`,
-    thumbnailEmoji: `☕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Public WiFi has a mixed reputation that's mostly fair. A decade ago, public WiFi was genuinely dangerous — anyone sitting in the same cafe could easily read the web pages you were browsing and capture your passwords. Today, thanks to the widespread adoption of HTTPS (the lock icon in your browser's address bar), most traffic is encrypted between your device and the website you're visiting, even on public networks.
@@ -627,7 +627,7 @@ A trusted VPN — NordVPN, Mullvad, Proton VPN are commonly recommended — encr
     category: `online-privacy`,
     tags: [`privacy`, `Facebook`, `Instagram`, `LinkedIn`, `social media audit`],
     readTime: `9 min`,
-    thumbnailEmoji: `🕶️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Most people set up their social media accounts 5 to 15 years ago and haven't looked at the privacy settings since. In that time, each platform has added dozens of new settings and defaulted many of them to "public" or "everyone." Running a privacy checkup across your main accounts once a year catches all the small leaks and gives you clearer sense of what strangers can see about you.
@@ -670,7 +670,7 @@ X (Twitter) lets you make all your posts Protected, meaning only approved follow
     category: `online-privacy`,
     tags: [`delete accounts`, `old accounts`, `privacy`, `JustDeleteMe`, `account cleanup`],
     readTime: `9 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The average adult in the United States has dozens of online accounts they no longer use — an old Yahoo email, a MySpace profile, an account at a store that closed years ago, a forum they posted on in 2012, a free trial they forgot to cancel. Every one of those accounts holds some amount of your personal data (email, password, maybe address or phone number), and every one of them is a potential weak link if that company gets breached.
@@ -711,7 +711,7 @@ Once you've found an account, the site JustDeleteMe.xyz is your friend. It's a c
     category: `tech-explained`,
     tags: [`5G`, `WiFi`, `internet speed`, `mobile data`, `tech explained`],
     readTime: `7 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `5G and WiFi are both wireless ways to connect to the internet, but they work through different systems and are fast in different situations. Understanding the difference helps you know when to use your cellular data, when to rely on home WiFi, and whether upgrading one or the other is worth it.
@@ -753,7 +753,7 @@ Watch for data caps. Your home WiFi plan usually has no cap (or a very high one)
     category: `tech-explained`,
     tags: [`QR code`, `scan code`, `safety`, `phishing`, `tech explained`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A QR code — the black-and-white square you scan with your phone — is nothing more than a 2D barcode. It stores a bit of text, usually a web address, in a pattern a camera can read quickly. When your phone's camera looks at one, it decodes the text and offers to open the web page. QR codes went from obscure to universal during 2020, when restaurants swapped paper menus for codes to reduce shared surfaces, and the habit stuck.
@@ -794,7 +794,7 @@ The simple defense is to preview the URL before you follow it. When your phone s
     category: `tech-explained`,
     tags: [`2FA`, `two-factor`, `security`, `Yubikey`, `authenticator`],
     readTime: `9 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Two-factor authentication (2FA) means that logging in requires two things: something you know (a password) and something you have (a phone, an app code, or a physical key). 2FA is the single most effective thing most people can do to prevent their accounts from being hacked. But not all 2FA is created equal — the four common methods vary wildly in how secure they actually are.
@@ -839,7 +839,7 @@ Passkeys are a newer method — they use your device's biometrics (Face ID, Touc
     category: `health-tech`,
     tags: [`health insurance`, `EOB`, `medical bills`, `insurance`, `seniors`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `After you see a doctor or fill a prescription, your health insurance company sends you a document called an Explanation of Benefits, or EOB. Many people mistake this for a bill and panic — or assume it means nothing and throw it away. Neither reaction is right. An EOB is a summary of what happened with your claim: what was submitted, what insurance agreed to pay, and what (if anything) you owe. Understanding it can save you money and help you catch billing errors before they become collection calls.
@@ -888,7 +888,7 @@ Keep every EOB for at least one year and match them against provider bills. Bill
     category: `safety`,
     tags: [`bank alerts`, `fraud protection`, `online banking`, `text messages`, `security`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Bank text alerts are one of the simplest and most effective fraud-protection tools available — and most banks offer them for free. When you turn them on, your bank sends you a text message any time there is activity on your account: a purchase over a certain dollar amount, a new login from an unknown device, a low balance, a large ATM withdrawal, or any transaction at all. You find out in seconds instead of discovering a problem weeks later when your statement arrives.
@@ -937,7 +937,7 @@ Login alerts are the third must-have. Any time someone logs into your online ban
     category: `essential-skills`,
     tags: [`package delivery`, `UPS`, `FedEx`, `USPS`, `Amazon`, `missing package`],
     readTime: `8 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Few things are more frustrating than watching your tracking app switch to "Delivered" — then going to your door and finding nothing there. This happens more often than you'd think, and in most cases your package isn't stolen; it was left at the wrong address, delivered to a neighbor, or tucked somewhere out of the way. Here is a calm, step-by-step plan for tracking it down.
@@ -986,7 +986,7 @@ Once you've done your physical search, it's time to contact the carrier and the 
     category: `safety`,
     tags: [`scams`, `customer service`, `phone scams`, `online safety`, `fraud`],
     readTime: `6 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Here is a trick scammers use that has cost people thousands of dollars: they pay for Google ads showing a fake phone number at the top of search results when you type "Amazon customer service" or "Microsoft support number." The ad looks legitimate — it may even show the company's real name and logo. But the number connects you to a scammer posing as a customer service agent.
@@ -1029,7 +1029,7 @@ The same rule applies to phone numbers you see in pop-up messages, emails, or te
     category: `essential-skills`,
     tags: [`Google Chrome`, `accessibility`, `large text`, `browser settings`, `seniors`],
     readTime: `8 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Google Chrome is the most popular web browser in the United States, and it comes with a handful of settings that can make a real difference for anyone who struggles with small text or wants a safer browsing experience. Out of the box, Chrome uses a standard font size that works well on big desktop monitors but can feel too small on a laptop or tablet. A few minutes of adjusting settings can make every website clearer and more comfortable.

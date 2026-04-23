@@ -32,12 +32,12 @@ const categories = [
 ];
 
 const popularGuides = [
-  { title: 'How to Spot a Scam Email', category: 'Safety', time: '4 min', emoji: '🛡️' },
-  { title: 'Setting Up WiFi on Your Phone', category: 'Getting Started', time: '5 min', emoji: '📶' },
-  { title: 'Making Text Bigger on Any Device', category: 'Tips', time: '3 min', emoji: '🔍' },
-  { title: 'What is the Cloud? (Explained Simply)', category: 'Getting Started', time: '6 min', emoji: '☁️' },
-  { title: 'How to Video Call Your Family', category: 'Apps', time: '5 min', emoji: '📱' },
-  { title: 'Keeping Your Passwords Safe', category: 'Safety', time: '4 min', emoji: '🔑' },
+  { title: 'How to Spot a Scam Email', category: 'Safety', time: '4 min', emoji: '' },
+  { title: 'Setting Up WiFi on Your Phone', category: 'Getting Started', time: '5 min', emoji: '' },
+  { title: 'Making Text Bigger on Any Device', category: 'Tips', time: '3 min', emoji: '' },
+  { title: 'What is the Cloud? (Explained Simply)', category: 'Getting Started', time: '6 min', emoji: '' },
+  { title: 'How to Video Call Your Family', category: 'Apps', time: '5 min', emoji: '' },
+  { title: 'Keeping Your Passwords Safe', category: 'Safety', time: '4 min', emoji: '' },
 ];
 
 const stats = [
@@ -126,12 +126,12 @@ const MockupA = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              { emoji: '📶', label: 'WiFi Not Working' },
-              { emoji: '🐌', label: 'Computer Is Slow' },
-              { emoji: '⚠️', label: 'Suspicious Pop-ups' },
-              { emoji: '🖨️', label: 'Printer Problems' },
-              { emoji: '🔑', label: 'Forgot a Password' },
-              { emoji: '📱', label: 'Phone Storage Full' },
+              { emoji: '', label: 'WiFi Not Working' },
+              { emoji: '', label: 'Computer Is Slow' },
+              { emoji: '', label: 'Suspicious Pop-ups' },
+              { emoji: '', label: 'Printer Problems' },
+              { emoji: '', label: 'Forgot a Password' },
+              { emoji: '', label: 'Phone Storage Full' },
             ].map((item) => (
               <button
                 key={item.label}

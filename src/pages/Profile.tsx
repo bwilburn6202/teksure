@@ -44,31 +44,31 @@ export default function Profile() {
   const LEARNING_PATHS = [
     {
       id: 'beginner',
-      label: '🌱 Beginner Path',
+      label: ' Beginner Path',
       description: 'Start with the most important basics',
       slugs: ['staying-safe-online', 'creating-strong-passwords', 'windows-basics', 'wifi-connection', 'avoiding-scams'],
     },
     {
       id: 'essential',
-      label: '🛡️ Safety Essentials',
+      label: ' Safety Essentials',
       description: 'Keep yourself safe online',
       slugs: ['two-factor-auth', 'social-media-safety', 'phishing-emails', 'home-network-security', 'software-updates'],
     },
     {
       id: 'practical',
-      label: '💡 Practical Skills',
+      label: ' Practical Skills',
       description: 'Everyday tech you\'ll actually use',
       slugs: ['video-calls', 'file-management', 'photo-organization', 'email-basics', 'screen-recording'],
     },
     {
       id: 'devices',
-      label: '📱 Devices & Apps',
+      label: ' Devices & Apps',
       description: 'Get the most from your devices',
       slugs: ['iphone-basics', 'android-basics', 'smart-home-setup', 'streaming-setup', 'banking-apps'],
     },
     {
       id: 'ai',
-      label: '🤖 AI & Modern Tech',
+      label: ' AI & Modern Tech',
       description: 'Stay up to date with AI tools',
       slugs: ['chatgpt-basics', 'google-ai-tools', 'ai-image-tools', 'ai-safety', 'digital-legacy'],
     },
@@ -149,7 +149,7 @@ export default function Profile() {
         path="/profile"
       />
       <Navbar />
-      <main className="container max-w-xl py-16 min-h-screen bg-background">
+      <main id="main-content" className="container max-w-xl py-16 min-h-screen bg-background">
 
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-primary">My Profile</h1>
 
@@ -306,7 +306,7 @@ export default function Profile() {
                       <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">Next up</span>
                     )}
                     {done && (
-                      <span className="text-xs text-green-600 shrink-0">Done ✓</span>
+                      <span className="text-xs text-green-600 shrink-0">Done </span>
                     )}
                   </Link>
                 );

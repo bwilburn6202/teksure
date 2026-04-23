@@ -144,7 +144,7 @@ const Dashboard = () => {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <p className="text-sm text-muted-foreground mb-0.5">{getGreeting()},</p>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} 👋</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} </h1>
             <p className="text-muted-foreground text-sm mt-1">Here's how your tech journey is going.</p>
           </div>
           <Dialog open={open} onOpenChange={setOpen}>
@@ -388,7 +388,7 @@ const Dashboard = () => {
                   <Clock className="h-3 w-3" /> Today's tip
                 </p>
                 <p className="text-sm leading-relaxed">
-                  Lock your screen when you step away — press <kbd className="bg-muted px-1 rounded text-xs">Win + L</kbd> on Windows or <kbd className="bg-muted px-1 rounded text-xs">⌘ + Ctrl + Q</kbd> on Mac.
+                  Lock your screen when you step away — press <kbd className="bg-muted px-1 rounded text-xs">Win + L</kbd> on Windows or <kbd className="bg-muted px-1 rounded text-xs"> + Ctrl + Q</kbd> on Mac.
                 </p>
               </CardContent>
             </Card>

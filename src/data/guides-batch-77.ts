@@ -8,7 +8,7 @@ export const guidesBatch77: Guide[] = [
     category: `financial-tech`,
     tags: [`insurance`, `life insurance`, `health insurance`, `policygenius`, `compare quotes`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Finding the right insurance plan used to mean sitting through pushy sales calls or visiting an office. Policygenius changes that. It is a free online marketplace where you can compare life insurance, disability insurance, home insurance, and more — all in one place, without anyone pressuring you to buy.
@@ -55,7 +55,7 @@ Even if you are not ready to buy today, the site is a great way to learn what di
     category: `financial-tech`,
     tags: [`renters insurance`, `lemonade`, `apartment insurance`, `renter`, `insurance app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Renters insurance protects your belongings if they are stolen, damaged by fire, or destroyed in a flood — and it also covers you if someone gets hurt in your home. Many renters skip it because they think it costs too much or takes too long to set up. Lemonade addresses both concerns.
@@ -102,7 +102,7 @@ If you rent your home or apartment and do not already have renters insurance, Le
     category: `financial-tech`,
     tags: [`allstate`, `insurance app`, `car insurance`, `home insurance`, `claims`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have Allstate insurance — whether for your car, home, or both — the Allstate mobile app lets you manage almost everything without picking up the phone. You can pay your bill, pull up your insurance card, check your policy details, and report an accident all from your smartphone.
@@ -149,7 +149,7 @@ Whether you are a long-time Allstate customer or recently signed up, spending a 
     category: `financial-tech`,
     tags: [`geico`, `car insurance`, `insurance app`, `roadside assistance`, `auto insurance`],
     readTime: `5 min`,
-    thumbnailEmoji: `🦎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `GEICO is one of the largest auto insurance companies in the United States, and their mobile app is one of the most downloaded insurance apps in the country. It lets you do almost everything related to your policy without calling anyone or visiting a website on a computer.
@@ -196,7 +196,7 @@ If you are a GEICO customer and have not downloaded the app yet, it is worth tak
     category: `financial-tech`,
     tags: [`progressive`, `auto insurance`, `insurance app`, `car insurance`, `claims`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚘`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Progressive is one of the top auto insurance companies in the US, and their mobile app makes it easy to manage your coverage without waiting on hold or visiting an office. You can view your policy, pay your bill, get a digital insurance card, and report an accident — all from your phone.
@@ -243,7 +243,7 @@ For anyone with a Progressive policy, the app is the fastest way to access your 
     category: `financial-tech`,
     tags: [`state farm`, `insurance app`, `car insurance`, `home insurance`, `claims`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `State Farm is the largest property and casualty insurance company in the US. Their mobile app — called State Farm — gives customers a direct line to their policies, billing, and claims without ever picking up the phone.
@@ -292,7 +292,7 @@ Many State Farm customers also use the app to connect with their personal agent 
     category: `government-civic`,
     tags: [`medicare`, `medicare advantage`, `part c`, `health insurance`, `seniors`],
     readTime: `7 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you are on Medicare, you may have heard of Medicare Advantage — also called Medicare Part C. It is an alternative to Original Medicare (Parts A and B) that is offered by private insurance companies approved by the federal government. Understanding the difference can help you make a better choice for your health and your wallet.
@@ -339,7 +339,7 @@ You can compare Medicare Advantage plans available in your area using the offici
     category: `government-civic`,
     tags: [`ssdi`, `disability`, `social security`, `benefits`, `application`],
     readTime: `8 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Social Security Disability Insurance, or SSDI, is a federal program that provides monthly payments to people who cannot work because of a serious medical condition. It is funded through Social Security taxes that workers pay throughout their careers. If you or a family member has a disabling condition and has worked enough years in jobs covered by Social Security, you may qualify.
@@ -386,7 +386,7 @@ Even if you are denied the first time, do not give up. About two-thirds of initi
     category: `government-civic`,
     tags: [`chip`, `children's health insurance`, `medicaid`, `kids insurance`, `healthcare`],
     readTime: `6 min`,
-    thumbnailEmoji: `👶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Children's Health Insurance Program — known as CHIP — is a federal and state program that provides health insurance to children in families who earn too much to qualify for Medicaid but cannot afford private insurance. It covers millions of children across the United States.
@@ -433,7 +433,7 @@ There is no waiting period once your child is approved — coverage begins quick
     category: `government-civic`,
     tags: [`medicaid`, `health insurance`, `government benefits`, `low income`, `healthcare`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Medicaid is the largest health insurance program in the United States, covering over 90 million Americans. It is jointly funded by the federal government and individual states and provides free or very low-cost health coverage to people with limited income and resources.
@@ -480,7 +480,7 @@ If you are not sure whether you qualify, you can use the prescreening tool at be
     category: `government-civic`,
     tags: [`cobra`, `health insurance`, `job loss`, `continuation coverage`, `benefits`],
     readTime: `6 min`,
-    thumbnailEmoji: `🐍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `When you lose a job or your work hours are reduced, you may also lose your employer-sponsored health insurance. COBRA — which stands for Consolidated Omnibus Budget Reconciliation Act — gives you the right to continue that same coverage for a period of time after leaving your employer, as long as your former employer had 20 or more employees.
@@ -525,7 +525,7 @@ Because COBRA is expensive, it is worth comparing it against alternatives: a Mar
     category: `government-civic`,
     tags: [`open enrollment`, `health insurance`, `marketplace`, `ACA`, `plan selection`],
     readTime: `7 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Open enrollment is the specific time period each year when you can sign up for health insurance, change your current plan, or drop coverage you no longer need. Outside of this window, you generally cannot make changes unless you qualify for a Special Enrollment Period due to a life event like getting married, having a baby, or losing a job.
@@ -572,7 +572,7 @@ When comparing plans, look at the monthly premium (what you pay every month whet
     category: `entertainment`,
     tags: [`twitch`, `live streaming`, `gaming`, `streaming`, `entertainment`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Twitch is a live streaming platform where real people broadcast video of themselves doing things — playing video games, cooking meals, making music, painting, chatting with an audience, or teaching skills. It is owned by Amazon and is completely free to watch. As of 2026, it hosts millions of live streams every day across hundreds of categories.
@@ -619,7 +619,7 @@ If you find a streamer you enjoy, you can follow them for free. When they go liv
     category: `entertainment`,
     tags: [`discord`, `voice chat`, `video call`, `community`, `group chat`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Discord is a free communication app that combines voice calls, video chats, and text messaging in one place. It started as a tool for gamers to talk while playing together, but it has grown into a general-purpose platform for communities of all kinds — from hobby groups and book clubs to family servers and business teams.
@@ -667,7 +667,7 @@ Voice channels are especially popular for ongoing group connections. If you want
     category: `social-media`,
     tags: [`reddit`, `social media`, `communities`, `forums`, `online discussion`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Reddit is one of the most popular websites in the world, and also one of the most misunderstood. At its core, Reddit is a giant collection of communities — called subreddits — where people share links, ask questions, post photos, and have discussions about specific topics.
@@ -714,7 +714,7 @@ Reddit can feel overwhelming at first because of how much content exists. The ke
     category: `app-guides`,
     tags: [`trello`, `productivity`, `task management`, `project organization`, `to-do`],
     readTime: `6 min`,
-    thumbnailEmoji: `📌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Trello is a free visual organization tool that helps you track tasks and projects using boards, lists, and cards. It is available on computers, phones, and tablets, and it syncs across all your devices. Whether you are planning a home renovation, tracking a medical treatment plan, or managing a family move, Trello gives you a clear visual picture of everything that needs to happen.
@@ -761,7 +761,7 @@ Trello works best for ongoing projects with multiple steps. For simple daily to-
     category: `app-guides`,
     tags: [`todoist`, `to-do list`, `task manager`, `productivity`, `reminders`],
     readTime: `5 min`,
-    thumbnailEmoji: `✅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Todoist is one of the most popular to-do list apps in the world, and it is easy to see why. It is clean, fast, and available on every device — iPhone, Android, Mac, Windows, and in any web browser. You can use it to track daily chores, grocery lists, medical appointments, home maintenance tasks, and anything else you need to remember.
@@ -808,7 +808,7 @@ For people who feel overwhelmed by scattered sticky notes, forgotten mental list
     category: `app-guides`,
     tags: [`ticktick`, `to-do list`, `habit tracker`, `productivity`, `calendar`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TickTick is a task manager that goes a step beyond a basic to-do list. It combines task management, a habit tracker, and a calendar view in one clean app. If you want to manage your daily tasks, build consistent habits like drinking more water or walking every day, and see everything on a single calendar, TickTick brings it all together.
@@ -855,7 +855,7 @@ For anyone who wants more than a basic list but finds complex project management
     category: `app-guides`,
     tags: [`asana`, `project management`, `productivity`, `family planning`, `task organization`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Asana is a project management app that was originally built for business teams, but it works very well for personal projects and family coordination too. If you have ever felt overwhelmed by a big goal — renovating a room, planning a family reunion, managing a move, or organizing a medical process — Asana can help you break it down into clear, trackable steps.
@@ -902,7 +902,7 @@ There is a short learning curve compared to simpler apps, but once you understan
     category: `app-guides`,
     tags: [`microsoft to do`, `task manager`, `windows`, `productivity`, `to-do list`],
     readTime: `5 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft To Do is a free task manager made by Microsoft. It comes pre-installed on Windows 11 computers and is also available as a free app on iPhone, Android, and Mac. If you already have a Microsoft account — the kind you use for Outlook email or OneDrive — you already have access to To Do and your tasks will sync automatically across all your devices.

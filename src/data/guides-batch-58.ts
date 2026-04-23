@@ -8,7 +8,7 @@ export const guidesBatch58: Guide[] = [
     category: `phone-guides`,
     tags: [`airplay`, `iphone`, `homepod`, `wireless audio`, `streaming`, `bluetooth`, `music`, `speakers`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `AirPlay is Apple's built-in technology that lets your iPhone send audio — music, podcasts, audiobooks, or any other sound — wirelessly to a compatible speaker in the same room or anywhere in your home. You do not need any cables or Bluetooth pairing. As long as your iPhone and the speaker are connected to the same Wi-Fi network, AirPlay handles the connection automatically.
@@ -55,7 +55,7 @@ Setup is minimal — there is nothing to install. If you have a HomePod, it was 
     category: `phone-guides`,
     tags: [`galaxy buds`, `samsung`, `earbuds`, `bluetooth`, `android`, `galaxy wearable`, `pairing`, `wireless earbuds`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Samsung Galaxy Buds are wireless earbuds that work with Android phones — especially Samsung Galaxy phones. They connect via Bluetooth and offer features like noise cancellation, touch controls, and sound customization through a free app called Galaxy Wearable.
@@ -102,7 +102,7 @@ A fully charged set of Galaxy Buds typically lasts 5 to 7 hours on one charge, w
     category: `smart-home`,
     tags: [`android`, `routines`, `automation`, `samsung`, `pixel`, `bixby routines`, `shortcuts`, `productivity`],
     readTime: `7 min`,
-    thumbnailEmoji: `⚙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Your Android phone can take automatic actions based on things happening around you — the time of day, your location, which app you open, or even when you plug in a charger. These automatic actions are called Routines (on Samsung phones) or Automations (on Pixel and other Android phones). Once set up, they run in the background without you having to think about them.
@@ -155,7 +155,7 @@ This guide focuses on Samsung's Modes and Routines, which is the most widely use
     category: `phone-guides`,
     tags: [`always on display`, `iphone`, `android`, `samsung`, `pixel`, `lock screen`, `standby`, `aod`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Always-On Display (often called AOD) is a feature that keeps a dim version of your lock screen visible at all times — even when your phone is "asleep." Instead of a completely dark, blank screen, you can glance at your phone and see the time, date, battery level, and any notification icons without having to pick it up or press any buttons.
@@ -199,7 +199,7 @@ On iPhone, Always-On Display is connected to the StandBy feature — when your p
     category: `tips-tricks`,
     tags: [`widgetsmith`, `iphone`, `widgets`, `home screen`, `lock screen`, `ios`, `customization`, `personalize`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Widgets are small panels that sit on your iPhone home screen or lock screen and display useful information at a glance — things like today's weather, your upcoming calendar appointments, the time in another city, or a rotating display of your favorite photos. You can see this information without opening any app.
@@ -252,7 +252,7 @@ Widgetsmith is free to download with most features included. A paid subscription
     category: `tips-tricks`,
     tags: [`shortcuts`, `apple shortcuts`, `iphone`, `automation`, `ios`, `siri`, `productivity`, `automatic actions`],
     readTime: `7 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Apple Shortcuts is a free app that comes installed on every iPhone running iOS 13 or later. It lets you create small programs — called shortcuts — that perform multiple steps automatically with one tap or with no tapping at all.
@@ -305,7 +305,7 @@ Shortcuts you create can be run from your home screen, from Siri (say the shortc
     category: `safety-guides`,
     tags: [`life360`, `family location`, `gps`, `location sharing`, `safety`, `family app`, `android`, `iphone`],
     readTime: `6 min`,
-    thumbnailEmoji: `📍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Life360 is a family safety app that shows the location of family members on a shared map — all in real time. If you want to know that your teenager arrived safely at school, that your elderly parent made it home from an appointment, or just where your spouse is when they are running late, Life360 makes that information available from your phone.
@@ -349,7 +349,7 @@ All family members must agree to be in the Circle and must install the app thems
     category: `communication`,
     tags: [`facebook messenger`, `messenger`, `video call`, `messaging`, `facebook`, `group chat`, `photos`, `free calls`],
     readTime: `6 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Facebook Messenger is a free app that lets you send text messages, photos, and videos to your friends and family — and make voice or video calls — all over the internet, which means no phone minutes are used. As long as you have Wi-Fi or a mobile data connection, Messenger calls and messages are free no matter how far away the other person is.
@@ -402,7 +402,7 @@ Messenger is separate from the main Facebook app. You need to install Messenger 
     category: `social-media`,
     tags: [`instagram`, `social media`, `beginners`, `photos`, `stories`, `direct messages`, `feed`, `followers`],
     readTime: `7 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Instagram is a photo and video sharing app where people post pictures from their lives, follow celebrities and businesses they like, and stay connected with friends and family. It is owned by Meta, the same company that owns Facebook, but it is a separate app focused on visual content.
@@ -448,7 +448,7 @@ To use Instagram, you need the app on your phone. It is available for both iPhon
     category: `app-guides`,
     tags: [`microsoft outlook`, `outlook`, `email`, `calendar`, `office 365`, `microsoft`, `iphone`, `android`],
     readTime: `6 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Outlook is an email app made by Microsoft. It is the same Outlook that many offices use on computers, now available as a free app on your phone. You can use it to check your email, send messages, and view your calendar — all in one place.
@@ -492,7 +492,7 @@ Microsoft offers Outlook free for personal use. The free version covers everythi
     category: `how-to`,
     tags: [`email signature`, `gmail`, `outlook`, `iphone mail`, `email`, `contact info`, `professional email`, `how-to`],
     readTime: `5 min`,
-    thumbnailEmoji: `✍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `An email signature is text that appears automatically at the bottom of every email you send. Instead of typing your name and phone number at the end of every message, you set it up once and it is added for you every time.
@@ -541,7 +541,7 @@ Setting up a signature takes about two minutes, and once saved you never have to
     category: `how-to`,
     tags: [`email`, `inbox organization`, `gmail`, `folders`, `labels`, `archive`, `email management`, `productivity`],
     readTime: `6 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A cluttered email inbox can feel overwhelming — thousands of messages, important notices buried among advertisements, and no clear way to find what you need. The good news is that organizing your email is not about achieving a completely empty inbox (though that is possible). It is about creating a simple system so you can find what you need quickly and feel less stressed when you open the app.
@@ -591,7 +591,7 @@ Inbox Zero is a goal some people pursue — getting their inbox completely empty
     category: `how-to`,
     tags: [`unsubscribe`, `email`, `junk email`, `newsletters`, `inbox cleanup`, `spam`, `email management`, `productivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your email inbox is full of newsletters, promotional offers, and automatic notifications you never wanted, you are not alone. Most people receive dozens of these emails every day. The good news is that most of them are required by law to include an unsubscribe link, and removing yourself from their list stops future emails from that sender completely.
@@ -642,7 +642,7 @@ Most email apps have a Mark as Spam or Report Junk button. Use this for emails f
     category: `smart-home`,
     tags: [`homepod`, `homepod mini`, `apple`, `siri`, `smart speaker`, `airplay`, `home app`, `setup`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔈`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Apple HomePod and HomePod mini are smart speakers made by Apple. You can ask them questions, play music, set timers and alarms, control smart home devices, and make phone calls — all by speaking out loud.
@@ -693,7 +693,7 @@ Once set up, anyone in your household can use "Hey Siri" to play music or ask qu
     category: `smart-home`,
     tags: [`smart plug`, `smart home`, `wifi plug`, `app control`, `amazon echo`, `google home`, `kasa`, `wemo`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A smart plug is a small device that goes between your wall outlet and whatever you want to control — a lamp, a fan, a coffee maker, a phone charger. Once plugged in, the smart plug connects to your home Wi-Fi, and you can turn it on or off from an app on your phone, from anywhere in the world.
@@ -739,7 +739,7 @@ Most smart plugs require a 2.4 GHz Wi-Fi network (not 5 GHz). If your router bro
     category: `smart-home`,
     tags: [`smart thermostat`, `nest`, `ecobee`, `google nest`, `energy savings`, `hvac`, `smart home`, `temperature control`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `A smart thermostat replaces your existing wall thermostat and connects to your home's Wi-Fi. Once connected, you can adjust the temperature from your phone, set schedules, and let the thermostat learn your habits to save energy automatically.
@@ -789,7 +789,7 @@ Important: Installing a smart thermostat involves connecting it to your home's h
     category: `smart-home`,
     tags: [`arlo`, `security camera`, `home security`, `motion alerts`, `outdoor camera`, `smart home`, `surveillance`, `arlo app`],
     readTime: `6 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Arlo makes wireless security cameras you can place around your home — indoors or outdoors — to monitor activity and receive alerts on your phone when something moves. You can check a live view of any camera from anywhere in the world using the free Arlo app.
@@ -841,7 +841,7 @@ Arlo cameras work best when placed within a reasonable distance of your Wi-Fi ro
     category: `smart-home`,
     tags: [`google nest cam`, `nest camera`, `google home`, `security camera`, `motion alerts`, `smart home`, `google nest`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Google Nest Cam is a security camera that connects to your home Wi-Fi and lets you watch live video, receive motion alerts, and review recorded clips from the Google Home app on your phone. It is part of Google's Nest family of smart home products.
@@ -893,7 +893,7 @@ Night vision is included on all models and works automatically when the lighting
     category: `entertainment`,
     tags: [`fire tv stick`, `amazon fire tv`, `streaming`, `netflix`, `prime video`, `smart tv`, `hdmi`, `amazon`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Amazon Fire TV Stick is a small device — about the size of a USB thumb drive — that plugs into the back of your TV and turns it into a smart TV. Once set up, you can watch Netflix, Prime Video, Hulu, Disney+, Peacock, YouTube, and hundreds of other streaming services.
@@ -939,7 +939,7 @@ The Fire TV Stick requires a Wi-Fi connection. It will not work without the inte
     category: `phone-guides`,
     tags: [`icloud`, `shared album`, `photos`, `family sharing`, `iphone`, `photo sharing`, `apple photos`, `icloud photos`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A shared iCloud photo album is a private photo album in the Apple Photos app that multiple family members can all access. Anyone you invite can add photos to the album and see photos that others have added. You can think of it as a family photo album that lives on everyone's phones at the same time.

@@ -27,7 +27,7 @@ interface ServiceGuide {
 
 const serviceGuides: Record<ServiceType, ServiceGuide> = {
   google: {
-    name: 'Google / Gmail', emoji: '🔵',
+    name: 'Google / Gmail', emoji: '',
     appRequired: false, smsAvailable: true,
     steps: [
       'Go to myaccount.google.com in your browser.',
@@ -40,7 +40,7 @@ const serviceGuides: Record<ServiceType, ServiceGuide> = {
     ],
   },
   apple: {
-    name: 'Apple / iCloud', emoji: '🍎',
+    name: 'Apple / iCloud', emoji: '',
     appRequired: false, smsAvailable: true,
     steps: [
       'On your iPhone: go to Settings → tap your name at the top.',
@@ -52,7 +52,7 @@ const serviceGuides: Record<ServiceType, ServiceGuide> = {
     ],
   },
   facebook: {
-    name: 'Facebook', emoji: '🔷',
+    name: 'Facebook', emoji: '',
     appRequired: false, smsAvailable: true,
     steps: [
       'Open Facebook and tap the menu (three lines, bottom right on mobile).',
@@ -64,7 +64,7 @@ const serviceGuides: Record<ServiceType, ServiceGuide> = {
     ],
   },
   amazon: {
-    name: 'Amazon', emoji: '📦',
+    name: 'Amazon', emoji: '',
     appRequired: false, smsAvailable: true,
     steps: [
       'Go to amazon.com and sign in.',
@@ -77,7 +77,7 @@ const serviceGuides: Record<ServiceType, ServiceGuide> = {
     ],
   },
   bank: {
-    name: 'Your Bank', emoji: '🏦',
+    name: 'Your Bank', emoji: '',
     appRequired: false, smsAvailable: true,
     steps: [
       'Most banks enable 2FA automatically when you register your phone number.',
@@ -91,11 +91,11 @@ const serviceGuides: Record<ServiceType, ServiceGuide> = {
 };
 
 const services: { type: ServiceType; label: string; emoji: string; priority: string }[] = [
-  { type: 'google', label: 'Google / Gmail', emoji: '🔵', priority: 'Start here' },
-  { type: 'apple', label: 'Apple / iCloud', emoji: '🍎', priority: 'High priority' },
-  { type: 'facebook', label: 'Facebook', emoji: '🔷', priority: 'Recommended' },
-  { type: 'amazon', label: 'Amazon', emoji: '📦', priority: 'Recommended' },
-  { type: 'bank', label: 'Your Bank', emoji: '🏦', priority: 'Essential' },
+  { type: 'google', label: 'Google / Gmail', emoji: '', priority: 'Start here' },
+  { type: 'apple', label: 'Apple / iCloud', emoji: '', priority: 'High priority' },
+  { type: 'facebook', label: 'Facebook', emoji: '', priority: 'Recommended' },
+  { type: 'amazon', label: 'Amazon', emoji: '', priority: 'Recommended' },
+  { type: 'bank', label: 'Your Bank', emoji: '', priority: 'Essential' },
 ];
 
 const authApps = [
@@ -185,7 +185,7 @@ export default function TwoFactorSetup() {
                 <div className="flex items-center gap-2 p-3 rounded-lg bg-[hsl(var(--teksure-success)/0.1)] border border-[hsl(var(--teksure-success)/0.3)]">
                   <CheckCircle2 className="h-4 w-4 text-[hsl(var(--teksure-success))]" />
                   <span className="text-sm font-medium text-[hsl(var(--teksure-success))]">
-                    {completedServices.size} of {services.length} accounts secured 🎉
+                    {completedServices.size} of {services.length} accounts secured 
                   </span>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function TwoFactorSetup() {
                                     className="mt-4"
                                     onClick={() => toggleComplete(svc.type)}
                                   >
-                                    {isDone ? '✓ Mark as not done' : '✓ Mark as done'}
+                                    {isDone ? ' Mark as not done' : ' Mark as done'}
                                   </Button>
                                 </div>
                               </div>

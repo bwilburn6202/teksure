@@ -8,7 +8,7 @@ export const guidesBatch78: Guide[] = [
     category: `internet-connectivity`,
     tags: [`powerline`, `internet`, `wifi`, `home network`, `wired connection`, `ethernet`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If your WiFi signal is weak in certain rooms — a basement, a back bedroom, or a home office far from your router — powerline adapters may be the fix you have been looking for. These small devices use the electrical wiring already inside your walls to carry your internet signal from one outlet to another. You do not need to run any new cables or hire a professional to install them.
@@ -53,7 +53,7 @@ This is a great solution for seniors or anyone who wants a steady, wired connect
     category: `internet-connectivity`,
     tags: [`ethernet`, `wired internet`, `router`, `network cable`, `internet speed`, `home network`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `WiFi is convenient, but a wired ethernet connection is almost always faster and more reliable. If you have ever had a video call freeze, a movie buffer, or a slow download, switching to a wired connection can make an immediate difference. All you need is an ethernet cable and a device with an ethernet port — or a small adapter if your device does not have one.
@@ -97,7 +97,7 @@ Wired connections are especially helpful for desktop computers, smart TVs, gamin
     category: `internet-connectivity`,
     tags: [`usb hub`, `laptop ports`, `accessories`, `usb-c`, `peripherals`, `computer setup`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Many modern laptops — especially slim ones — have very few ports. Some have only one or two USB-C ports, which makes it hard to plug in a mouse, charge your phone, and connect a flash drive at the same time. A USB hub solves this problem by turning one port into four, six, or even more ports.
@@ -137,7 +137,7 @@ A USB hub is one of the most practical accessories you can add to a laptop, and 
     category: `tips-tricks`,
     tags: [`docking station`, `laptop`, `home office`, `productivity`, `monitor`, `desktop setup`],
     readTime: `6 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `A docking station — sometimes called a "dock" — is a device that sits on your desk and connects to your laptop with a single cable. Once connected, your laptop instantly gains access to all the devices plugged into the dock: a large monitor, a full-size keyboard and mouse, external speakers, a wired ethernet connection, and multiple USB ports for flash drives or other accessories.
@@ -181,7 +181,7 @@ Before purchasing, make a list of what you want to connect: how many monitors, w
     category: `mac-guides`,
     tags: [`mac`, `trackpad`, `gestures`, `macbook`, `productivity`, `shortcuts`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The trackpad on a MacBook is one of the most capable touchpads made. Beyond moving the cursor and clicking, it responds to a wide range of finger gestures that can save you a great deal of time. Once you learn these gestures, you will find yourself navigating your Mac faster and more comfortably than ever before.
@@ -224,7 +224,7 @@ These gestures work on all MacBook models, and most also work on Apple's externa
     category: `essential-skills`,
     tags: [`trackball`, `mouse`, `ergonomics`, `wrist pain`, `arthritis`, `accessibility`, `computer accessories`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A trackball mouse is a pointing device where a ball is mounted on top or on the side of the mouse, and you move the cursor by rolling that ball with your thumb or fingers rather than moving the entire mouse across a desk. The body of the mouse stays completely still while you work, which means your wrist and arm do not need to make large sweeping movements.
@@ -267,7 +267,7 @@ Learning to use a trackball takes a few days of adjustment — most people feel 
     category: `windows-guides`,
     tags: [`windows`, `magnifier`, `accessibility`, `low vision`, `zoom`, `screen reader`, `seniors`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Windows comes with a built-in tool called Magnifier that can zoom in on any part of your screen, making text, images, and buttons much easier to see. You do not need to buy anything or download any software — Magnifier is already installed on every Windows computer, and turning it on takes just a few seconds.
@@ -310,7 +310,7 @@ The quickest way to turn Magnifier on or off is the keyboard shortcut Windows ke
     category: `mac-guides`,
     tags: [`mac`, `zoom`, `accessibility`, `low vision`, `magnify`, `screen`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Every Mac computer comes with a built-in Zoom feature that can make the entire screen — or a portion of it — much larger. Whether you find text hard to read, buttons hard to see, or want a closer look at a photo or document, Mac Zoom is free, already installed, and takes less than two minutes to turn on.
@@ -349,7 +349,7 @@ For users who want even larger text without zooming the entire screen, you can a
     category: `phone-guides`,
     tags: [`android`, `talkback`, `screen reader`, `accessibility`, `blind`, `low vision`, `seniors`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TalkBack is a free accessibility feature built into every Android phone and tablet. When TalkBack is turned on, your phone speaks aloud the name of everything you touch — buttons, text, icons, menus, and notifications. This makes the phone fully usable for people who are blind, have low vision, or find it difficult to read small text on a screen.
@@ -395,7 +395,7 @@ Note: The exact location of TalkBack settings may vary slightly depending on you
     category: `phone-guides`,
     tags: [`iphone`, `voiceover`, `screen reader`, `accessibility`, `blind`, `low vision`, `apple`],
     readTime: `6 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `VoiceOver is a screen reader built into every iPhone and iPad, provided free by Apple. When VoiceOver is turned on, your iPhone speaks aloud everything on the screen — app names, button labels, text messages, emails, web pages, and notifications. You can use your iPhone entirely by touch and sound, without needing to see the screen clearly at all.
@@ -437,7 +437,7 @@ VoiceOver works on iPhones running iOS 12 or later, which covers almost every iP
     category: `health-tech`,
     tags: [`captioned phone`, `captel`, `caption call`, `hearing loss`, `accessibility`, `seniors`, `telephone`],
     readTime: `6 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A captioned telephone is a phone that displays a real-time text transcript of the conversation while you talk. As the other person speaks, their words appear on a screen — either a built-in screen on a dedicated desk phone, a tablet, or a computer. You speak normally and hear the other person as usual, while also being able to read everything they say. This makes phone calls much more manageable for people who have hearing loss, tinnitus, or difficulty understanding speech over the phone.
@@ -481,7 +481,7 @@ To qualify and get a free captioned phone, contact your state's telephone equipm
     category: `windows-guides`,
     tags: [`windows`, `high contrast`, `accessibility`, `low vision`, `eye strain`, `display`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Windows High Contrast mode changes your screen's color scheme to use bold, highly contrasting colors — typically white text on a black background, or black text on a white background — making text and interface elements much easier to distinguish. This feature is built into Windows and costs nothing to use.
@@ -520,7 +520,7 @@ Note that High Contrast mode changes the appearance of Windows itself — the St
     category: `phone-guides`,
     tags: [`iphone`, `font size`, `text size`, `accessibility`, `display zoom`, `readability`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `📏`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Reading text on an iPhone can be difficult if the default size feels too small. Apple provides two separate controls for making things larger, and using both together gives you the biggest improvement in readability. The first is Text Size, which changes the size of text inside apps. The second is Display Zoom, which enlarges everything on screen — icons, buttons, menus, and text — by increasing the display scale.
@@ -559,7 +559,7 @@ Both of these settings are completely reversible. You can change them back at an
     category: `phone-guides`,
     tags: [`android`, `font size`, `text size`, `display size`, `accessibility`, `readability`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If text on your Android phone feels too small to read comfortably, you can change it right now in a few taps. Android has two separate controls that work together: Font Size, which changes the size of text in apps and menus, and Display Size, which changes the overall scale of everything on screen — icons, buttons, images, and text all together.
@@ -600,7 +600,7 @@ Nothing about these changes is permanent — you can return to the original sett
     category: `health-tech`,
     tags: [`blue light`, `eye strain`, `night mode`, `sleep`, `screen time`, `accessibility`, `phone`, `computer`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `All screens — phones, tablets, computers, and televisions — emit blue light as part of the visible light spectrum. During the day, blue light from the sun is natural and helps keep us alert. But in the evening, blue light from screens can interfere with your body's production of melatonin, the hormone that helps you feel sleepy. This can make it harder to fall asleep at night and can contribute to eye fatigue.
@@ -644,7 +644,7 @@ Using a blue light filter is one of the easiest, lowest-effort things you can do
     category: `windows-guides`,
     tags: [`microsoft edge`, `read aloud`, `text to speech`, `accessibility`, `pdf`, `browser`, `windows`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Edge, the web browser that comes built into Windows, includes a Read Aloud feature that can read any webpage or PDF document out loud to you using a natural-sounding computer voice. This feature is completely free, already installed on your computer, and works for anyone who finds reading on a screen tiring, has low vision, or learns better by listening.
@@ -683,7 +683,7 @@ Read Aloud is especially useful for people who want to multitask — you can lis
     category: `safety-guides`,
     tags: [`firefox`, `reader view`, `reading mode`, `browser`, `accessibility`, `distraction-free`, `ad removal`],
     readTime: `4 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Many webpages are filled with advertisements, pop-up windows, blinking banners, sidebars, and other distractions that make the actual article you came to read difficult to find and focus on. Firefox Reader View solves this problem by stripping away everything except the article's text and relevant images, presenting them in a clean, calm layout that is much easier to read.
@@ -722,7 +722,7 @@ Reader View works on most article-style webpages. It does not work on homepages,
     category: `safety-guides`,
     tags: [`chrome`, `extensions`, `browser`, `safety`, `privacy`, `security`, `scams`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Chrome extensions are small add-on programs that install into the Chrome web browser to give it extra features. Some extensions block ads, others help you save passwords, check your spelling, or read text aloud. Extensions can genuinely make your browser more useful — but they also carry risks if you install the wrong ones.
@@ -762,7 +762,7 @@ It is also good practice to periodically review which extensions you have instal
     category: `safety-guides`,
     tags: [`ad blocker`, `browser`, `ads`, `privacy`, `security`, `extensions`, `chrome`, `firefox`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `An ad blocker is a browser extension that prevents most online advertisements from loading when you visit websites. This includes banner ads, pop-up windows, video ads that play automatically, and those tracking scripts that follow you across the internet to show you targeted advertising.
@@ -802,7 +802,7 @@ Some websites detect ad blockers and ask you to disable the blocker before readi
     category: `safety-guides`,
     tags: [`ublock origin`, `ad blocker`, `privacy`, `browser security`, `chrome`, `firefox`, `extensions`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `uBlock Origin is widely considered the best free ad blocker available. It blocks advertisements, tracking scripts, pop-ups, and malicious content before they load — making your browsing experience faster, cleaner, and safer. Unlike some other ad blockers, uBlock Origin uses very little of your computer's processing power and memory, so it does not slow down your browser.

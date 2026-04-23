@@ -32,28 +32,28 @@ const questions: Question[] = [
     text: 'What will you mainly use it for?',
     subtext: 'Pick the one that fits you best.',
     choices: [
-      { label: 'Emails, browsing & video calls', emoji: '📧', value: 'light' },
-      { label: 'Office work, spreadsheets & documents', emoji: '📊', value: 'office' },
-      { label: 'Photos, video editing & creative work', emoji: '🎨', value: 'creative' },
-      { label: 'Entertainment — Netflix, YouTube, games', emoji: '🎮', value: 'media' },
+      { label: 'Emails, browsing & video calls', emoji: '', value: 'light' },
+      { label: 'Office work, spreadsheets & documents', emoji: '', value: 'office' },
+      { label: 'Photos, video editing & creative work', emoji: '', value: 'creative' },
+      { label: 'Entertainment — Netflix, YouTube, games', emoji: '', value: 'media' },
     ],
   },
   {
     id: 'location',
     text: 'Where will you use it most?',
     choices: [
-      { label: 'Mostly at one desk at home', emoji: '🏠', value: 'desk' },
-      { label: 'Between home and one other place', emoji: '☕', value: 'semi' },
-      { label: 'On the move — travel, commute, outdoors', emoji: '✈️', value: 'mobile' },
+      { label: 'Mostly at one desk at home', emoji: '', value: 'desk' },
+      { label: 'Between home and one other place', emoji: '', value: 'semi' },
+      { label: 'On the move — travel, commute, outdoors', emoji: '', value: 'mobile' },
     ],
   },
   {
     id: 'keyboard',
     text: 'How important is a full keyboard to you?',
     choices: [
-      { label: 'Essential — I type a lot', emoji: '⌨️', value: 'essential' },
-      { label: 'Nice to have but not required', emoji: '🤔', value: 'nice' },
-      { label: 'Not important — I prefer touch', emoji: '👆', value: 'no' },
+      { label: 'Essential — I type a lot', emoji: '', value: 'essential' },
+      { label: 'Nice to have but not required', emoji: '', value: 'nice' },
+      { label: 'Not important — I prefer touch', emoji: '', value: 'no' },
     ],
   },
   {
@@ -61,18 +61,18 @@ const questions: Question[] = [
     text: "What's your rough budget?",
     subtext: 'Including all taxes and any extras.',
     choices: [
-      { label: 'Under $300 / $300', emoji: '💰', value: 'low' },
-      { label: '$300–$700 / $300–$700', emoji: '💳', value: 'mid' },
-      { label: '$700+ / $700+', emoji: '💎', value: 'high' },
+      { label: 'Under $300 / $300', emoji: '', value: 'low' },
+      { label: '$300–$700 / $300–$700', emoji: '', value: 'mid' },
+      { label: '$700+ / $700+', emoji: '', value: 'high' },
     ],
   },
   {
     id: 'techLevel',
     text: 'How comfortable are you with technology?',
     choices: [
-      { label: 'Beginner — I need simple and easy', emoji: '🌱', value: 'beginner' },
-      { label: 'Some experience — I manage OK', emoji: '🙂', value: 'mid' },
-      { label: 'Confident — I\'m fairly tech-savvy', emoji: '🚀', value: 'advanced' },
+      { label: 'Beginner — I need simple and easy', emoji: '', value: 'beginner' },
+      { label: 'Some experience — I manage OK', emoji: '', value: 'mid' },
+      { label: 'Confident — I\'m fairly tech-savvy', emoji: '', value: 'advanced' },
     ],
   },
 ];
@@ -131,7 +131,7 @@ function getRecommendation(answers: Answers): DeviceResult {
     tablet: {
       device: 'tablet',
       title: 'Tablet',
-      emoji: '📱',
+      emoji: '',
       tagline: 'Simple, light, and perfect for everyday tasks',
       description: 'Based on your answers, a tablet is the best fit for you. Tablets are lightweight, easy to use, have great battery life, and are ideal for browsing, video calls, reading, and entertainment.',
       pros: [
@@ -156,7 +156,7 @@ function getRecommendation(answers: Answers): DeviceResult {
     laptop: {
       device: 'laptop',
       title: 'Laptop',
-      emoji: '💻',
+      emoji: '',
       tagline: 'The most versatile choice for most people',
       description: 'A laptop is the best all-round choice for you. It gives you the power of a full computer with the flexibility to use it anywhere. Perfect for work, learning, and staying connected.',
       pros: [
@@ -181,7 +181,7 @@ function getRecommendation(answers: Answers): DeviceResult {
     desktop: {
       device: 'desktop',
       title: 'Desktop Computer',
-      emoji: '🖥️',
+      emoji: '',
       tagline: 'Maximum power for serious work at home',
       description: 'Based on how you plan to use it, a desktop computer is your best bet. Desktops offer the most power, best screen size, and are easier to upgrade over time.',
       pros: [
@@ -262,7 +262,7 @@ export default function DeviceChooser() {
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
                   <div className="flex justify-center gap-6 mb-6 text-5xl">
-                    <span>📱</span><span>💻</span><span>🖥️</span>
+                    <span></span><span></span><span></span>
                   </div>
                   <h2 className="text-xl font-semibold mb-3">Not sure which device to buy?</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mx-auto">
@@ -273,8 +273,8 @@ export default function DeviceChooser() {
 
               <div className="grid grid-cols-3 gap-3 mb-8 text-center text-sm">
                 {[
-                  { emoji: '⏱️', label: '2 minutes' },
-                  { emoji: '🎯', label: '5 questions' },
+                  { emoji: '', label: '2 minutes' },
+                  { emoji: '', label: '5 questions' },
                   { emoji: '🆓', label: 'Completely free' },
                 ].map(item => (
                   <div key={item.label} className="bg-muted/50 rounded-xl p-3">
@@ -350,7 +350,7 @@ export default function DeviceChooser() {
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-2">
                     <div>
-                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">✅ Why it suits you</p>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2"> Why it suits you</p>
                       <ul className="space-y-2">
                         {result.pros.map(p => (
                           <li key={p} className="flex items-start gap-2 text-sm">
@@ -361,7 +361,7 @@ export default function DeviceChooser() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">⚠️ Things to know</p>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2"> Things to know</p>
                       <ul className="space-y-2">
                         {result.cons.map(c => (
                           <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -376,7 +376,7 @@ export default function DeviceChooser() {
               </Card>
 
               {/* Examples */}
-              <h3 className="text-base font-semibold mb-3">💡 Specific models to consider</h3>
+              <h3 className="text-base font-semibold mb-3"> Specific models to consider</h3>
               <div className="space-y-3 mb-8">
                 {result.examples.map((ex, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-muted/50 border border-border">

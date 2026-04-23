@@ -492,7 +492,7 @@ const FreeSoftware = () => {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-1.5 text-sm font-medium mb-4">

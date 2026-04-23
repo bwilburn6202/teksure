@@ -34,11 +34,11 @@ const KB: KBEntry[] = [
   },
   {
     keywords: ['virus', 'scam', 'hacked', 'malware', 'popup', 'pop-up', 'warning', 'suspicious', 'phishing', 'fake'],
-    answer: "⚠️ Stay safe from scams:\n\n1. NEVER click pop-ups saying 'Your computer has a virus' — those are scams!\n2. NEVER give your password to anyone who calls you out of the blue.\n3. Don't click links in unexpected emails or texts.\n4. If worried, close your browser and restart the device.\n5. Real companies like Microsoft and Apple NEVER call you unsolicited.",
+    answer: " Stay safe from scams:\n\n1. NEVER click pop-ups saying 'Your computer has a virus' — those are scams!\n2. NEVER give your password to anyone who calls you out of the blue.\n3. Don't click links in unexpected emails or texts.\n4. If worried, close your browser and restart the device.\n5. Real companies like Microsoft and Apple NEVER call you unsolicited.",
   },
   {
     keywords: ['screenshot', 'screen shot', 'capture screen', 'print screen', 'snip'],
-    answer: "To take a screenshot:\n\n📱 iPhone: press Side Button + Volume Up at the same time.\n📱 Android: press Power + Volume Down at the same time.\n💻 Windows: press Windows + Shift + S (select an area).\n🍎 Mac: press Command + Shift + 3 (whole screen) or Command + Shift + 4 (select area).",
+    answer: "To take a screenshot:\n\n iPhone: press Side Button + Volume Up at the same time.\n Android: press Power + Volume Down at the same time.\n Windows: press Windows + Shift + S (select an area).\n Mac: press Command + Shift + 3 (whole screen) or Command + Shift + 4 (select area).",
   },
   {
     keywords: ['copy', 'paste', 'copy paste', 'cut', 'clipboard', 'select all'],
@@ -46,7 +46,7 @@ const KB: KBEntry[] = [
   },
   {
     keywords: ['update', 'updates', 'windows update', 'software update', 'upgrade', 'outdated'],
-    answer: "To check for updates:\n\n💻 Windows: Start → Settings → Windows Update → Check for updates.\n🍎 Mac: Apple menu → System Settings → General → Software Update.\n📱 iPhone: Settings → General → Software Update.\n📱 Android: Settings → Software Update.\n\nUpdates fix security holes and bugs — always worth doing!",
+    answer: "To check for updates:\n\n Windows: Start → Settings → Windows Update → Check for updates.\n Mac: Apple menu → System Settings → General → Software Update.\n iPhone: Settings → General → Software Update.\n Android: Settings → Software Update.\n\nUpdates fix security holes and bugs — always worth doing!",
   },
   {
     keywords: ['backup', 'back up', 'save files', 'lose data', 'lost files', 'recovery', 'restore'],
@@ -74,7 +74,7 @@ const KB: KBEntry[] = [
   },
   {
     keywords: ['restart', 'reboot', 'turn off', 'shut down', 'not turning on', "won't start"],
-    answer: "To restart your device:\n\n💻 Windows: Start → Power → Restart.\n🍎 Mac: Apple menu → Restart.\n📱 iPhone: hold Side + Volume Down → 'Slide to Power Off'.\n📱 Android: hold the power button → 'Restart'.\n\nA restart clears temporary files and fixes many common issues.",
+    answer: "To restart your device:\n\n Windows: Start → Power → Restart.\n Mac: Apple menu → Restart.\n iPhone: hold Side + Volume Down → 'Slide to Power Off'.\n Android: hold the power button → 'Restart'.\n\nA restart clears temporary files and fixes many common issues.",
   },
   {
     keywords: ['google', 'search', 'browser', 'chrome', 'safari', 'firefox', 'not loading', 'website'],

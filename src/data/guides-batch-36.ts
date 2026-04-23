@@ -8,7 +8,7 @@ export const guidesBatch36: Guide[] = [
     category: 'tips-tricks',
     tags: ['capcut', 'video editing', 'reels', 'tiktok', 'social media', 'short video'],
     readTime: '6 min',
-    thumbnailEmoji: '🎬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `CapCut is a free video editing app made by the same company as TikTok. It works on both iPhone and Android and is one of the most popular tools for creating short videos that look professional without any prior experience.
@@ -61,7 +61,7 @@ If you've ever wanted to create a slideshow video for a grandchild's birthday or
     category: 'app-guides',
     tags: ['poshmark', 'resale', 'clothing', 'secondhand', 'sell clothes', 'fashion'],
     readTime: '7 min',
-    thumbnailEmoji: '👗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Poshmark is a popular app and website where people buy and sell new and used clothing, shoes, handbags, and accessories. It's one of the most trusted resale platforms in the United States, with millions of active buyers and sellers.
@@ -107,7 +107,7 @@ The app is free to download and use. Listing items is free — you only pay when
     category: 'app-guides',
     tags: ['mercari', 'sell online', 'resale', 'declutter', 'make money', 'secondhand'],
     readTime: '6 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Mercari is an online marketplace app where you can sell almost anything — electronics, kitchen gadgets, toys, books, clothing, collectibles, and more. It's one of the easiest platforms for everyday people to list and sell used items without needing to be a professional seller.
@@ -153,7 +153,7 @@ Mercari is particularly popular for selling electronics, gaming items, trading c
     category: 'app-guides',
     tags: ['offerup', 'local selling', 'buy sell local', 'furniture resale', 'free classifieds'],
     readTime: '5 min',
-    thumbnailEmoji: '🛋️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `OfferUp is a free app for buying and selling items locally. It's similar to Craigslist but has a more modern interface, built-in messaging, user ratings, and safety features that make the experience much more trustworthy.
@@ -199,7 +199,7 @@ OfferUp is one of the best options for selling things like couches, TVs, exercis
     category: 'smart-home',
     tags: ['smart lock', 'august lock', 'door lock', 'smart home', 'keyless entry', 'home security'],
     readTime: '7 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `A smart door lock replaces or works alongside your existing deadbolt, letting you control your door using your phone, a keypad, or your voice. Popular brands include August, Schlage Encode, Kwikset Halo, and Yale.
@@ -247,7 +247,7 @@ Smart locks are especially helpful for people who forget to lock the door, want 
     category: 'smart-home',
     tags: ['philips hue', 'smart bulbs', 'smart lighting', 'smart home', 'LED lights', 'home automation'],
     readTime: '6 min',
-    thumbnailEmoji: '💡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Philips Hue is the most popular smart light bulb system in the world. You screw Hue bulbs into your existing light fixtures, connect them to a small hub that plugs into your router, and then control your lights from a phone app.
@@ -295,7 +295,7 @@ Hue works with Amazon Alexa, Google Home, and Apple HomeKit, so you can also con
     category: 'app-guides',
     tags: ['angi', `angie's list`, 'home repair', 'contractors', 'handyman', 'home services'],
     readTime: '5 min',
-    thumbnailEmoji: '🔧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Angi (formerly Angie's List) is an app and website that connects homeowners with local, background-checked home service professionals. You can find plumbers, electricians, HVAC technicians, handymen, roofers, painters, landscapers, and hundreds of other home service providers in your area.
@@ -341,7 +341,7 @@ The app also has an "Angi Services" feature where you can book pre-priced jobs l
     category: 'entertainment',
     tags: ['crunchyroll', 'anime', 'streaming', 'cartoons', 'animation', 'free streaming'],
     readTime: '5 min',
-    thumbnailEmoji: '🎌',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Crunchyroll is a streaming service specializing in anime (Japanese animation) and Asian dramas. It has the largest anime library of any service — over 1,200 series and 45,000 episodes — including popular shows like One Piece, Naruto, Dragon Ball, My Hero Academia, Demon Slayer, and Attack on Titan.
@@ -387,7 +387,7 @@ The app has parental controls, including content ratings you can filter by to av
     category: 'essential-skills',
     tags: ['babbel', 'language learning', 'spanish', 'french', 'foreign language', 'learn language'],
     readTime: '5 min',
-    thumbnailEmoji: '🌍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Babbel is a language-learning app available on iPhone, Android, and the web. It offers courses in 14 languages including Spanish, French, German, Italian, Portuguese, Dutch, Polish, Swedish, Turkish, and more.
@@ -434,7 +434,7 @@ If you're planning a trip to another country, have family members who speak anot
     category: 'safety-guides',
     tags: ['citizen app', 'safety alerts', 'local news', 'emergency alerts', 'community safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🚨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Citizen is a free smartphone app that sends you real-time safety alerts about incidents happening near you — including fires, accidents, crime, missing persons, and other emergencies. It pulls information from 911 dispatch feeds and local news sources and delivers it as notifications to your phone.
@@ -480,7 +480,7 @@ Citizen does not replace calling 911 in an emergency — it's an information too
     category: 'safety-guides',
     tags: ['ring neighbors', 'neighborhood watch', 'community safety', 'ring doorbell', 'local alerts'],
     readTime: '5 min',
-    thumbnailEmoji: '🏘️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Neighbors is a free community safety app made by Ring (owned by Amazon). It's a neighborhood watch platform where local residents, businesses, and law enforcement share safety information, video clips from security cameras, and alerts about suspicious activity.
@@ -527,7 +527,7 @@ The app is available on iPhone and Android and works across the United States.`,
     category: 'health-tech',
     tags: ['nike run club', 'running app', 'walking tracker', 'fitness tracking', 'exercise app'],
     readTime: '5 min',
-    thumbnailEmoji: '🏃',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Nike Run Club (NRC) is a free running and walking app available for iPhone and Android. It tracks your distance, pace, time, and route using your phone's GPS, and plays your music or podcasts while providing periodic audio updates during your workout.
@@ -573,7 +573,7 @@ NRC is also social: you can connect with friends, cheer each other on, and parti
     category: 'phone-guides',
     tags: ['circle to search', 'android', 'google search', 'android tips', 'pixel', 'samsung'],
     readTime: '4 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Circle to Search is an Android feature from Google that lets you search for anything on your screen without switching apps. Whether you're watching a YouTube video, reading a news article, or scrolling social media, you can circle, highlight, scribble on, or tap anything on the screen and instantly get Google search results about it.
@@ -615,7 +615,7 @@ Before Circle to Search existed, finding information about something you saw on 
     category: 'safety-guides',
     tags: ['google one', 'vpn', 'privacy', 'public wifi', 'internet security', 'online safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A VPN (Virtual Private Network) encrypts your internet connection so that other people on the same network — like at a coffee shop, airport, or library — can't see what you're doing online. Google One VPN is a built-in VPN included with Google One memberships (100 GB and above, starting at $2.99/month).
@@ -660,7 +660,7 @@ The VPN is especially worth using at airports, hotels, coffee shops, and any oth
     category: 'phone-guides',
     tags: ['airplay', 'screen mirroring', 'iphone to tv', 'cast iphone', 'apple tv', 'smart tv'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Mirroring your iPhone to your TV lets everyone in the room see what's on your phone screen — photos, videos, apps, video calls, and more. There are two main ways to do this: wirelessly using AirPlay, or with a cable.
@@ -704,7 +704,7 @@ Screen mirroring is great for showing vacation photos on the big screen, video c
     category: 'tips-tricks',
     tags: ['canva', 'greeting cards', 'invitations', 'design', 'birthday card', 'printable'],
     readTime: '6 min',
-    thumbnailEmoji: '🎨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Canva is a free design tool available on iPhone, Android, and the web. It has thousands of professionally designed templates for greeting cards, invitations, flyers, and more. You customize the text, photos, and colors to make them your own — even if you've never done graphic design before.
@@ -749,7 +749,7 @@ Designs you create in Canva are saved to your account automatically, so you can 
     category: 'phone-guides',
     tags: ['personal voice', 'accessibility', 'live speech', 'iphone accessibility', 'ALS', 'voice loss'],
     readTime: '6 min',
-    thumbnailEmoji: '🗣️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Personal Voice is an iPhone and iPad feature introduced in iOS 17 that lets you create a synthesized version of your own voice. You record yourself reading 150 short phrases, and your iPhone uses this audio to generate a digital voice that sounds like you.
@@ -796,7 +796,7 @@ To use your Personal Voice with Live Speech, you type on your phone screen and p
     category: 'safety-guides',
     tags: ['delete accounts', 'online security', 'data privacy', 'account cleanup', 'digital cleanup'],
     readTime: '6 min',
-    thumbnailEmoji: '🗑️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Every online account you've ever created holds some of your personal information — your name, email, maybe your phone number, home address, or credit card details. When companies get hacked, those old accounts you forgot about can expose your data.
@@ -843,7 +843,7 @@ Deleting accounts takes some time, but it's one of the most effective privacy ac
     category: 'phone-guides',
     tags: ['android', 'quick settings', 'android tips', 'shortcuts', 'customize android', 'notification panel'],
     readTime: '4 min',
-    thumbnailEmoji: '⚡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Quick Settings is the control panel that slides down when you swipe from the top of your Android phone's screen. It gives you quick access to settings you use frequently — like Wi-Fi, Bluetooth, airplane mode, flashlight, screen brightness, and more.
@@ -886,7 +886,7 @@ The Quick Settings panel looks slightly different depending on your Android phon
     category: 'phone-guides',
     tags: ['live voicemail', 'iphone', 'voicemail', 'phone calls', 'iOS 17', 'call screening'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Live Voicemail is an iPhone feature introduced in iOS 17 that transcribes voicemail messages in real time as they're being recorded. When a call goes to voicemail, you can see the caller's message appear as text on your screen — word by word, as they say it — without picking up the phone.

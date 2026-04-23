@@ -24,7 +24,7 @@ export default function Favorites() {
         path="/favorites"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header section with border-b */}
         <section className="border-b border-border py-8 px-4">
           <div className="container">

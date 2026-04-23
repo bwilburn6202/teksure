@@ -185,7 +185,7 @@ export default function Setup() {
       <>
         <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
         <Navbar />
-        <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
+        <main id="main-content" className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
           <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
             <CheckCircle2 className="h-16 w-16 text-green-500" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>

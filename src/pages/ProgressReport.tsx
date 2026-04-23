@@ -71,7 +71,7 @@ export default function ProgressReport() {
         path="/progress-report"
       />
       <Navbar />
-      <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
+      <main id="main-content" className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">
           <BarChart3 className="h-10 w-10 text-primary mx-auto mb-3" />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Your Monthly Progress Report</h1>

@@ -37,7 +37,7 @@ export default function TechAnxiety() {
         path="/tech-anxiety"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
             <Heart className="h-12 w-12 text-primary mx-auto mb-4" />

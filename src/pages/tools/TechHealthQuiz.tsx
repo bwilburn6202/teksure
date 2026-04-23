@@ -136,25 +136,25 @@ function getResult(score: number, maxScore: number): Result {
   const pct = score / maxScore;
   if (pct >= 0.85) return {
     grade: 'A', label: 'Tech Health Champion', color: 'text-[hsl(var(--teksure-success))]',
-    emoji: '🏆',
+    emoji: '',
     summary: 'Excellent! You\'re practising great digital hygiene across security, backup, privacy, and network safety.',
     tips: ['Keep your habits up — you\'re a great role model for friends and family!', 'Consider a password manager if you haven\'t already.'],
   };
   if (pct >= 0.65) return {
     grade: 'B', label: 'Good Tech Habits', color: 'text-blue-500',
-    emoji: '👍',
+    emoji: '',
     summary: 'You\'re doing well in most areas! A few small tweaks will take you from good to great.',
     tips: ['Enable automatic backups if you haven\'t already.', 'Consider setting up two-factor authentication on your most important accounts.', 'Review app permissions on your phone — just 5 minutes can make a difference.'],
   };
   if (pct >= 0.40) return {
     grade: 'C', label: 'Room to Improve', color: 'text-[hsl(var(--teksure-warning))]',
-    emoji: '📋',
+    emoji: '',
     summary: 'You\'re managing okay, but there are some important gaps in your tech habits that could leave you vulnerable.',
     tips: ['Start with one change: enable automatic software updates today.', 'Set up a free cloud backup (Google Photos, iCloud, or OneDrive).', 'Never reuse passwords — try a free password manager like Bitwarden.', 'Be cautious on public Wi-Fi — avoid logging into accounts on open networks.'],
   };
   return {
     grade: 'D', label: 'Needs Attention', color: 'text-red-500',
-    emoji: '🔧',
+    emoji: '',
     summary: 'Your device and data may be at risk. The good news? Each fix is simple, and TekSure guides can walk you through each one.',
     tips: ['Update your device software right now — it takes under 10 minutes.', 'Back up your photos to iCloud or Google Photos (free).', 'Change your most important passwords to unique ones.', 'Run our Cybersecurity Scorecard for a full safety check.'],
   };

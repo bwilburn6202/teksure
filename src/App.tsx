@@ -74,6 +74,16 @@ const Blog                   = lazy(() => import("./pages/Blog"));
 const Webinars               = lazy(() => import("./pages/Webinars"));
 const Ambassadors            = lazy(() => import("./pages/community/Ambassadors"));
 const PhishingScanner        = lazy(() => import("./pages/tools/PhishingScanner"));
+const UrlSafetyCheckerV2     = lazy(() => import("./pages/tools/UrlSafetyCheckerV2"));
+const DigitalFootprintScan   = lazy(() => import("./pages/tools/DigitalFootprintScan"));
+const PhoneSafetyScanner     = lazy(() => import("./pages/tools/PhoneSafetyScanner"));
+const PracticeHub            = lazy(() => import("./pages/practice/PracticeHub"));
+const PracticeInbox          = lazy(() => import("./pages/practice/PracticeInbox"));
+const PracticePhone          = lazy(() => import("./pages/practice/PracticePhone"));
+const CourseHub              = lazy(() => import("./pages/courses/CourseHub"));
+const CourseDetail           = lazy(() => import("./pages/courses/CourseDetail"));
+const CourseLesson           = lazy(() => import("./pages/courses/CourseLesson"));
+const CourseCertificate      = lazy(() => import("./pages/courses/CourseCertificate"));
 const WifiTroubleshooter     = lazy(() => import("./pages/tools/WifiTroubleshooter"));
 const TechnicianProfile      = lazy(() => import("./pages/TechnicianProfile"));
 const Book                   = lazy(() => import("./pages/Book"));
@@ -372,7 +382,10 @@ const AppContent = () => {
 
   return (
     <>
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-sm focus:font-medium">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[9999] focus:px-5 focus:py-3 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-base focus:font-semibold focus:shadow-xl focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-none"
+      >
         Skip to main content
       </a>
       <OfflineBanner />
@@ -445,6 +458,16 @@ const AppContent = () => {
           <Route path="/webinars" element={<Webinars />} />
           <Route path="/community/ambassadors" element={<Ambassadors />} />
           <Route path="/tools/phishing-scanner" element={<PhishingScanner />} />
+          <Route path="/tools/url-safety-check" element={<UrlSafetyCheckerV2 />} />
+          <Route path="/tools/digital-footprint" element={<DigitalFootprintScan />} />
+          <Route path="/tools/phone-safety" element={<PhoneSafetyScanner />} />
+          <Route path="/practice" element={<PracticeHub />} />
+          <Route path="/practice/inbox" element={<PracticeInbox />} />
+          <Route path="/practice/phone" element={<PracticePhone />} />
+          <Route path="/courses" element={<CourseHub />} />
+          <Route path="/courses/:slug" element={<CourseDetail />} />
+          <Route path="/courses/:slug/lesson/:lessonId" element={<CourseLesson />} />
+          <Route path="/courses/:slug/certificate" element={<CourseCertificate />} />
           <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
           <Route path="/tools/account-recovery" element={<AccountRecovery />} />
           <Route path="/tools/printer-troubleshooter" element={<PrinterTroubleshooter />} />

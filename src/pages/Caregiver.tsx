@@ -42,7 +42,7 @@ export default function Caregiver() {
         path="/caregiver"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <Heart className="h-12 w-12 text-primary mx-auto mb-4" />

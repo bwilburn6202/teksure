@@ -147,7 +147,7 @@ export default function Onboarding() {
           path="/onboarding"
         />
         <Navbar />
-        <main className="min-h-screen bg-background">
+        <main id="main-content" className="min-h-screen bg-background">
           <div className="container py-16 md:py-24 max-w-2xl mx-auto">
             <div
               className="text-center mb-10"

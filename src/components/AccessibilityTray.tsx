@@ -11,7 +11,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  *
  * On desktop (≥ sm) the individual toggles render inline so a visitor can
  * see in one glance that TekSure cares about readable text, contrast, and
- * language. On narrow screens we collapse to a single ♿ button that expands
+ * language. On narrow screens we collapse to a single  button that expands
  * the same cluster on tap — keeping the home view clean without hiding the
  * accessibility story.
  *

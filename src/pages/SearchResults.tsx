@@ -21,7 +21,7 @@ const SUGGESTED_SEARCHES = [
 function SearchEmptyState({ query, onSuggest }: { query: string; onSuggest: (term: string) => void }) {
   return (
     <div className="text-center py-16 max-w-md mx-auto">
-      <p className="text-4xl mb-4 select-none">🤷</p>
+      <p className="text-4xl mb-4 select-none"></p>
       <p className="text-xl font-semibold mb-2 text-primary">
         No guides matched "{query}"
       </p>
@@ -105,7 +105,7 @@ const SearchResults = () => {
       />
       <Navbar />
 
-      <main className="container py-12 flex-1">
+      <main id="main-content" className="container py-12 flex-1">
         <div className="max-w-2xl mx-auto mb-10">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">Search Results</h1>
           <div className="relative">
@@ -165,7 +165,7 @@ const SearchResults = () => {
           </Tabs>
         ) : (
           <div className="text-center py-16 max-w-md mx-auto">
-            <p className="text-4xl mb-4 select-none">🔎</p>
+            <p className="text-4xl mb-4 select-none"></p>
             <p className="text-lg font-medium mb-2 text-primary">What are you looking for?</p>
             <p className="text-muted-foreground mb-6">
               Search {guides.length}+ free guides — try topics like:

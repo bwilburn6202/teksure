@@ -8,7 +8,7 @@ export const guidesBatch45: Guide[] = [
     category: `phone-guides`,
     tags: [`iphone`, `erase`, `sell phone`, `factory reset`, `privacy`, `apple id`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Before selling, trading in, or giving your old iPhone to someone else, you must erase all your personal data. This includes your photos, messages, emails, contacts, passwords, Apple Pay cards, and any app accounts. If you skip this step, the next person who picks up the phone could see everything.
@@ -52,7 +52,7 @@ This process takes about 10–15 minutes total. The actual erase can take anywhe
     category: `phone-guides`,
     tags: [`android`, `factory reset`, `erase`, `sell phone`, `privacy`, `google account`],
     readTime: `5 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you are done with an Android phone and plan to sell it, trade it in, or donate it, a factory reset is essential. Without it, the next owner could access your Gmail, Google Pay, saved passwords, photos, and any apps where you were still logged in.
@@ -96,7 +96,7 @@ The reset process takes 5–20 minutes depending on how much data is on the phon
     category: `essential-skills`,
     tags: [`google drive`, `share files`, `share folder`, `collaboration`, `cloud storage`],
     readTime: `5 min`,
-    thumbnailEmoji: `📁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Drive lets you share any file or folder with other people — whether they use Gmail or not. Sharing is one of the most useful things about cloud storage: instead of emailing large attachments, you send a link. The other person clicks the link and sees the file in their browser.
@@ -140,7 +140,7 @@ Managing sharing is straightforward — you can see everyone who has access to a
     category: `tips-tricks`,
     tags: [`iphone`, `measure app`, `ar`, `measurements`, `ruler`, `how-to`],
     readTime: `4 min`,
-    thumbnailEmoji: `📏`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone comes with a free built-in app called Measure that uses augmented reality (AR) to measure real-world objects using the camera — no tape measure needed. You can measure the length, width, or height of objects in your home, check if a piece of furniture will fit in a space, or get quick dimensions when shopping.
@@ -183,7 +183,7 @@ For best results, hold the phone steadily and use Measure in good lighting. The 
     category: `windows-guides`,
     tags: [`pdf`, `microsoft edge`, `windows`, `read pdf`, `free`, `documents`],
     readTime: `4 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `PDF files are everywhere — bank statements, medical forms, government documents, instruction manuals, and more all come in PDF format. On Windows, you do not need Adobe Acrobat or any paid software to open them. Microsoft Edge, which is already installed on your Windows computer, opens PDF files completely free with a clean, easy-to-use interface.
@@ -226,7 +226,7 @@ PDFs saved to your computer open directly in Edge — no internet connection nee
     category: `tips-tricks`,
     tags: [`iphone`, `haptic touch`, `long press`, `shortcuts`, `gestures`, `ios`],
     readTime: `4 min`,
-    thumbnailEmoji: `✋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Haptic Touch is an iPhone feature that works when you press and hold your finger on something for about half a second. Instead of just tapping to open an app or link, you press and hold to reveal a menu of quick options — no need to open the app first.
@@ -269,7 +269,7 @@ Haptic Touch replaced the older "3D Touch" (pressure-sensitive tap) on iPhone XR
     category: `entertainment`,
     tags: [`amazon prime video`, `streaming`, `prime`, `watch offline`, `x-ray`, `tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon Prime Video is one of the most feature-rich streaming services available, and it comes free with an Amazon Prime membership. But many people use it like a simple video player and miss out on some genuinely useful features.
@@ -316,7 +316,7 @@ Multiple profiles let each family member have their own watchlist and viewing hi
     category: `entertainment`,
     tags: [`youtube`, `playlist`, `organize`, `save videos`, `collections`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `YouTube playlists are collections of videos grouped together under a name you choose. You can make a playlist of your favorite music videos, a series of exercise routines, cooking tutorials from different channels, or anything else. Playlists play back to back automatically, so you can set one going and come back to it.
@@ -359,7 +359,7 @@ You can add videos to a playlist from anywhere — the YouTube search results, a
     category: `entertainment`,
     tags: [`youtube`, `watch later`, `save video`, `queue`, `library`],
     readTime: `3 min`,
-    thumbnailEmoji: `⏰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Watch Later is YouTube's built-in list for videos you want to watch but do not have time for right now. It is like a personal queue — save something with one tap and come back to it tonight, tomorrow, or next weekend.
@@ -402,7 +402,7 @@ You can add any video to Watch Later — whether you found it in search results,
     category: `entertainment`,
     tags: [`youtube`, `offline`, `download`, `youtube premium`, `no internet`, `travel`],
     readTime: `4 min`,
-    thumbnailEmoji: `⬇️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `YouTube Premium is a paid subscription ($13.99/month) that removes ads, lets videos play in the background while your phone screen is off, and — most usefully for travelers — lets you download videos to watch offline.
@@ -446,7 +446,7 @@ For Premium subscribers, downloads work on up to 3 devices at once. Your downloa
     category: `safety-guides`,
     tags: [`apple id`, `trusted devices`, `security`, `iphone`, `icloud`, `account`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Every Apple device you sign into with your Apple ID — iPhones, iPads, Macs, Apple Watches, and Apple TVs — gets added to your trusted devices list. This list is used for two-factor authentication (the six-digit codes Apple sends when you sign in) and for iCloud services.
@@ -486,7 +486,7 @@ You can manage your trusted devices from any iPhone, iPad, Mac, or from appleid.
     category: `safety-guides`,
     tags: [`chrome`, `passwords`, `security`, `data breach`, `password checkup`, `google`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you save passwords in Google Chrome, the browser keeps a secret eye on them for you. Chrome's Password Checkup feature automatically checks your saved passwords against databases of known data breaches — if one of your passwords was exposed in a hack of a website, Chrome alerts you so you can change it.
@@ -530,7 +530,7 @@ After running the checkup, Chrome gives you direct links to the affected website
     category: `phone-guides`,
     tags: [`android`, `voicemail`, `phone`, `greeting`, `visual voicemail`, `missed calls`],
     readTime: `4 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Voicemail lets people leave you a recorded message when you miss a phone call. Setting it up on Android is a quick process, but the exact steps vary slightly depending on your carrier (Verizon, AT&T, T-Mobile, etc.).
@@ -574,7 +574,7 @@ Some carriers charge a small monthly fee for Visual Voicemail; others include it
     category: `phone-guides`,
     tags: [`apple maps`, `offline maps`, `no cell service`, `travel`, `iphone`, `navigation`],
     readTime: `4 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Maps has a feature that lets you download a portion of a map to your iPhone so you can use it for navigation even when you have no cell service or Wi-Fi. This is essential for road trips through rural areas, camping, hiking, international travel (where roaming data is expensive), or anywhere you expect to lose signal.
@@ -618,7 +618,7 @@ Offline maps expire after 30 days if you have not updated them. Apple Maps autom
     category: `phone-guides`,
     tags: [`iphone`, `battery`, `low power mode`, `battery life`, `ios`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Low Power Mode is an iPhone setting that reduces background activity and visual effects to extend battery life when you are running low on charge. When your iPhone battery drops to 20%, a notification asks if you want to turn it on. You can also turn it on manually at any time — even at 80% battery — to make your charge last longer through a long day.
@@ -662,7 +662,7 @@ Low Power Mode turns off automatically once you charge your phone back to 80% or
     category: `phone-guides`,
     tags: [`android`, `battery saver`, `battery life`, `power saving`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android's Battery Saver mode works similarly to iPhone's Low Power Mode — it reduces background activity, limits some features, and slows down certain processes to stretch your battery through a long day.
@@ -706,7 +706,7 @@ Different Android phone brands call this feature slightly different things. Sams
     category: `tips-tricks`,
     tags: [`safari`, `reader mode`, `iphone`, `ipad`, `mac`, `accessibility`, `reading`],
     readTime: `4 min`,
-    thumbnailEmoji: `📰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Many websites are so cluttered with ads, pop-ups, cookie notices, and sidebars that reading an actual article feels like an obstacle course. Safari's Reader Mode solves this in one tap — it strips everything away and shows you just the article text and images in a clean, calm layout.
@@ -749,7 +749,7 @@ You can set Safari to automatically use Reader Mode on all pages of a specific w
     category: `phone-guides`,
     tags: [`samsung`, `quick share`, `galaxy`, `file sharing`, `nearby sharing`, `wireless`],
     readTime: `4 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Samsung Quick Share is Samsung's built-in file-sharing tool for Galaxy phones and tablets. It works like Apple's AirDrop — you can send photos, videos, contacts, or any file to a nearby Samsung device wirelessly in seconds, without needing Wi-Fi, cellular data, or any cables.
@@ -793,7 +793,7 @@ Quick Share is great for transferring photos from one phone to another at a fami
     category: `essential-skills`,
     tags: [`closed captions`, `subtitles`, `tv`, `accessibility`, `hearing`, `roku`, `smart tv`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Closed captions display spoken dialogue and audio descriptions as text on screen. They are not just for people who are deaf or hard of hearing — millions of people use captions to follow along in noisy environments, to understand accents more clearly, to watch TV without disturbing others, or when learning English.
@@ -837,7 +837,7 @@ If you always want captions on, set them at the TV level — that way they apply
     category: `phone-guides`,
     tags: [`iphone`, `do not disturb`, `emergency bypass`, `contacts`, `notifications`, `focus`],
     readTime: `4 min`,
-    thumbnailEmoji: `🚨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Do Not Disturb (and the newer Focus modes) on iPhone silences calls, texts, and notifications so you can sleep, concentrate, or have uninterrupted time. But what if your adult child, spouse, or doctor needs to reach you urgently?

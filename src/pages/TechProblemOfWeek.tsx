@@ -38,7 +38,7 @@ const CURRENT_PROBLEM: TechProblem = {
   weekRange: 'April 14–20, 2026',
   dateISO: '2026-04-14',
   title: 'Widespread Facebook Password Reset Scam Emails',
-  emoji: '🎣',
+  emoji: '',
   description:
     'Scammers are blasting out fake "Facebook has detected suspicious activity on your account" emails. The emails look official — Facebook logo, professional formatting — but the reset link leads to a fake login page that steals your password. Reports have spiked this week across the US.',
   howToCheck:
@@ -57,7 +57,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'April 7–13, 2026',
     dateISO: '2026-04-07',
     title: 'iOS 18 Update Draining Battery Fast',
-    emoji: '🔋',
+    emoji: '',
     description:
       'A number of iPhone users reported that the most recent iOS point update caused their batteries to drain 30-50% faster than normal, especially on older models. Apple acknowledged the issue and is testing a fix.',
     whatToDo:
@@ -71,7 +71,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'March 31 – April 6, 2026',
     dateISO: '2026-03-31',
     title: 'Netflix Profile Switcher Breaking on Smart TVs',
-    emoji: '📺',
+    emoji: '',
     description:
       'Netflix pushed an app update that caused the profile picker to freeze on several Samsung and LG smart TVs from 2019-2021. Users were stuck on whichever profile was last used.',
     whatToDo:
@@ -85,7 +85,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'March 24–30, 2026',
     dateISO: '2026-03-24',
     title: 'Gmail Marking Legitimate Emails as Spam',
-    emoji: '📧',
+    emoji: '',
     description:
       'Gmail\u2019s spam filter began aggressively flagging legitimate emails — including bank statements, appointment confirmations, and family messages — as spam after a filter update.',
     whatToDo:
@@ -99,7 +99,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'March 17–23, 2026',
     dateISO: '2026-03-17',
     title: 'Ring Doorbell Going Offline in Cold Weather',
-    emoji: '🚪',
+    emoji: '',
     description:
       'Ring users in colder regions reported their battery-powered doorbells unexpectedly going offline when temperatures dropped below 32°F. Motion alerts stopped working entirely for many.',
     whatToDo:
@@ -113,7 +113,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'March 10–16, 2026',
     dateISO: '2026-03-10',
     title: 'Medicare.gov Login Issues After Update',
-    emoji: '🏥',
+    emoji: '',
     description:
       'Medicare.gov rolled out a redesigned login page and many users — especially those using older browsers — could not sign in. Error messages were vague and unhelpful.',
     whatToDo:
@@ -127,7 +127,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'March 3–9, 2026',
     dateISO: '2026-03-03',
     title: 'Instagram Story Privacy Setting Defaulted to Public',
-    emoji: '📸',
+    emoji: '',
     description:
       'After an app update, many Instagram users discovered their story privacy had been switched from "Close Friends" to "Public" without warning. Photos intended for a small group were visible to everyone.',
     whatToDo:
@@ -141,7 +141,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'February 24 – March 2, 2026',
     dateISO: '2026-02-24',
     title: 'Bank of America App Unexpected Logout Loops',
-    emoji: '🏦',
+    emoji: '',
     description:
       'The Bank of America mobile app repeatedly logged users out mid-session, forcing them to re-enter passwords and verification codes. Sessions timed out after as little as 60 seconds.',
     whatToDo:
@@ -155,7 +155,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'February 17–23, 2026',
     dateISO: '2026-02-17',
     title: 'Amazon Prime Video Buffering on Older Fire TVs',
-    emoji: '📼',
+    emoji: '',
     description:
       'Prime Video streams were buffering heavily or refusing to start on Fire TV Stick models from 2018 and earlier. Amazon pushed an app update that increased memory requirements.',
     whatToDo:
@@ -169,7 +169,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'February 10–16, 2026',
     dateISO: '2026-02-10',
     title: 'Chromebook Suddenly Requiring Verification Codes',
-    emoji: '💻',
+    emoji: '',
     description:
       'Many Chromebook owners were unexpectedly asked to enter a Google verification code at login — sometimes every single time. This followed a rolled-out security update.',
     whatToDo:
@@ -183,7 +183,7 @@ const PAST_PROBLEMS: TechProblem[] = [
     weekRange: 'February 3–9, 2026',
     dateISO: '2026-02-03',
     title: 'iCloud Photos Duplicating After Restore',
-    emoji: '🖼️',
+    emoji: '',
     description:
       'iPhone users who restored their device from an iCloud backup reported seeing every photo duplicated — sometimes triple or quadruple. Photo library sizes ballooned overnight.',
     whatToDo:
@@ -205,7 +205,7 @@ export default function TechProblemOfWeek() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="max-w-4xl mx-auto text-center mb-12">
           <Badge className="mb-5 bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300 text-sm px-3 py-1">

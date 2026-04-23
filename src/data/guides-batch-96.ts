@@ -8,7 +8,7 @@ export const guidesBatch96: Guide[] = [
     category: `tech-explained`,
     tags: [`battery`, `battery health`, `phone care`, `laptop care`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Every phone and laptop runs on a lithium-ion battery, and every one of those batteries slowly wears out over time. The wear is measured in charge cycles — one full cycle equals charging from 0% to 100% once, though it can be spread across several partial charges. Most modern batteries are rated for 500 to 1,000 full cycles before they drop to about 80% of their original capacity, which is when you start to notice shorter battery life.
@@ -48,7 +48,7 @@ The good news: Apple, Google, and most laptop makers now include smart charging 
     category: `tech-explained`,
     tags: [`fast charging`, `USB-PD`, `Quick Charge`, `MagSafe`, `wireless charging`],
     readTime: `6 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `"Fast charging" is a marketing term for any charging that delivers more power than the standard 5 watts phones used a decade ago. The more watts a charger can push into a battery (safely), the faster it tops up. Wattage is calculated as volts multiplied by amps — so a 20W charger might deliver 9 volts at 2.2 amps, while a 65W laptop charger might deliver 20 volts at 3.25 amps. The device and the charger "negotiate" the right voltage together every time you plug in.
@@ -87,7 +87,7 @@ One thing trips people up constantly: you need both the right adapter AND the ri
     category: `tech-explained`,
     tags: [`USB-C`, `Thunderbolt`, `USB 4`, `ports`, `tech explained`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One of the most confusing things in modern tech is that "USB-C" describes only the physical shape of the connector — that small oval plug that goes in either way up. It does not tell you anything about what the port or cable can do. Two USB-C ports that look identical on the outside can behave completely differently. One might be a slow 480 Mbps USB 2.0 port that only charges your phone; another might be a 40 Gbps Thunderbolt 4 port that drives a 4K monitor AND transfers a full movie in seconds.
@@ -126,7 +126,7 @@ Manufacturers often print tiny icons or text next to the port to tell you what y
     category: `tech-explained`,
     tags: [`HDMI`, `DisplayPort`, `DVI`, `monitor cable`, `tech explained`],
     readTime: `6 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `There are three display cables you are most likely to run into today: HDMI, DisplayPort, and the older DVI. All three carry a video signal from your computer or media device to a screen. HDMI and DisplayPort also carry audio (so you can hear sound through TV or monitor speakers without a separate cable). DVI is older, video-only, and mostly found on older monitors and desktop computers from before about 2015.
@@ -166,7 +166,7 @@ As a general rule of thumb: use HDMI for TVs, game consoles, streaming boxes, an
     category: `online-banking`,
     tags: [`credit report`, `annualcreditreport`, `Experian`, `Equifax`, `TransUnion`, `free`],
     readTime: `6 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Your credit report is a record of every loan, credit card, and line of credit tied to your name — including how reliably you pay them. Federal law guarantees you free access to this report from each of the three major credit bureaus (Experian, Equifax, and TransUnion), and there is exactly one official website set up to provide it: AnnualCreditReport.com. This site was created by the three bureaus together to comply with the Fair Credit Reporting Act, and it is the only place to get your truly free reports with no strings attached.
@@ -206,7 +206,7 @@ Since 2023, the bureaus have voluntarily extended access to weekly free reports 
     category: `online-banking`,
     tags: [`credit freeze`, `security freeze`, `identity theft`, `fraud prevention`],
     readTime: `7 min`,
-    thumbnailEmoji: `🧊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A credit freeze locks your credit report so that lenders cannot pull it when someone applies for a new loan or credit card in your name. It is the single most effective defense against identity theft because most lenders will deny an application outright if they cannot pull credit. And thanks to a 2018 federal law, placing and lifting a credit freeze is completely free at all three bureaus — no fees, no catches.
@@ -250,7 +250,7 @@ To be protected, you need to freeze your credit at all three bureaus — Experia
     category: `online-banking`,
     tags: [`fraud alert`, `credit freeze`, `identity theft`, `security`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When you are worried about identity theft, the two most common tools are fraud alerts and credit freezes. They sound similar but work very differently. A fraud alert is a note attached to your credit file asking lenders to take extra steps (like calling you) to verify your identity before opening a new account. A credit freeze, on the other hand, blocks lenders from pulling your credit report at all, so most applications get denied outright.
@@ -289,7 +289,7 @@ Which should you use? If you want the strongest protection and do not mind the s
     category: `online-banking`,
     tags: [`Apple Pay`, `Google Pay`, `Samsung Pay`, `contactless`, `tap to pay`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tap-to-pay from your phone is actually more secure than handing over your physical credit card. Here is why: when you add a card to Apple Pay, Google Wallet, or Samsung Wallet, your phone generates a unique device account number (called a token) that stands in for your real card number. When you tap the phone at a checkout, the merchant's system only ever sees the token — never your real card number, expiration date, or CVV. Even if the merchant's systems are hacked later (think Target, Home Depot), your actual card information is not at risk.
@@ -333,7 +333,7 @@ Setting up contactless payments takes about five minutes. On iPhone, use the bui
     category: `buying-guides`,
     tags: [`power bank`, `portable charger`, `battery`, `buying guide`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A portable battery (often called a power bank or portable charger) is a small rechargeable battery you can carry to top up your phone, tablet, or even a laptop when you are away from an outlet. Two numbers matter when you shop: capacity (measured in mAh or Wh) and output speed (measured in watts). Capacity tells you how many times it can charge your device before it needs to be recharged itself. Output speed tells you how fast it transfers that charge into your device.
@@ -377,7 +377,7 @@ Output speed depends on which ports the power bank has and their wattage. A 5W o
     category: `buying-guides`,
     tags: [`laptop`, `buying guide`, `computer`, `Windows`, `MacBook`],
     readTime: `8 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Buying a laptop is overwhelming because the spec sheets are packed with numbers and acronyms that do not mean much unless you build computers for a living. Start by ignoring the specs and asking one question: how will you use this laptop? The answer changes everything. A writer checking email needs nothing close to what a video editor needs, and neither needs what a gamer needs.
@@ -424,7 +424,7 @@ Display size is about portability vs. screen real estate: 13-14 inches is the sw
     category: `buying-guides`,
     tags: [`phone`, `iPhone`, `Android`, `buying guide`, `smartphone`],
     readTime: `8 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The first question when buying a new phone is not which model, but which ecosystem: Apple or Android. Your existing devices matter more than specs. If you already own a Mac, iPad, Apple Watch, or have family on iMessage, an iPhone will work better with your setup — features like AirDrop, iMessage, Handoff, and Universal Clipboard only work between Apple devices. If you own a Windows PC, Chromebook, or Android tablet, or you prefer more customization, Android fits better.
@@ -471,7 +471,7 @@ Two other things to consider. Software update length: iPhones get 6-7 years of u
     category: `life-transitions`,
     tags: [`iPhone to Android`, `switch phones`, `move phone data`, `life transitions`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Switching from iPhone to Android is more involved than switching between two Android phones, because Apple's ecosystem holds onto some data in ways designed for Apple devices. The good news: contacts, photos, videos, calendars, and most Google-based info transfer cleanly. The trickier parts are iMessage (it intercepts texts from iPhone users and sends them as blue bubbles, which will fail to reach your new Android if you do not deregister), paid apps (you have to rebuy Android versions), and iCloud photos (which need to be exported before they transfer).
@@ -519,7 +519,7 @@ Google's "Switch to Android" app (free on the App Store) handles most of the res
     category: `life-transitions`,
     tags: [`Android to iPhone`, `Move to iOS`, `switch phones`, `life transitions`],
     readTime: `7 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Switching from Android to iPhone is smoother than going the other direction, mostly because Apple built an official app called "Move to iOS" (free on Google Play) specifically to handle the transfer. It moves your contacts, text messages, calendar events, camera photos and videos, email accounts, Chrome bookmarks, and even some apps — in one go during the iPhone's initial setup. The transfer takes about 30-60 minutes depending on how many photos you have.
@@ -570,7 +570,7 @@ What does NOT transfer automatically: WhatsApp chat history (though a newer spec
     category: `life-transitions`,
     tags: [`new computer`, `setup`, `laptop`, `Windows`, `Mac`, `life transitions`],
     readTime: `8 min`,
-    thumbnailEmoji: `✅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A brand-new computer out of the box is not quite ready to use — and the settings you pick in the first hour shape how secure, fast, and useful the machine will be for the next five years. Most people plug in, click through every setup prompt as fast as possible, and end up with privacy settings set to "share everything," no backups configured, and half the drive full of pre-installed bloatware apps they will never use.
@@ -629,7 +629,7 @@ Only after the security basics are handled should you sign in to cloud services 
     category: `life-transitions`,
     tags: [`transfer files`, `new computer`, `migration`, `old computer`],
     readTime: `7 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When you buy a new computer, the most common question is: how do I get my files over? There are four main options, and the right choice depends on how much data you have and whether the two computers can be side-by-side. The four options are: external hard drive, cloud storage sync, direct cable or network transfer, and built-in migration tools (Windows Backup for Windows, Migration Assistant for Mac).
@@ -680,7 +680,7 @@ Direct transfer via cable or network is the fastest when both computers are same
     category: `life-transitions`,
     tags: [`backup`, `3-2-1`, `data protection`, `cloud backup`],
     readTime: `7 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The 3-2-1 backup rule has been the gold standard in data protection for over 20 years, and it is still the best framework for home users today. The rule: keep 3 copies of your important files, on 2 different types of media (not both on the same drive), with 1 copy stored off-site (not in your house). Following this rule means you can survive a hardware failure, a theft, a fire, a flood, or a ransomware attack without losing your files.
@@ -728,7 +728,7 @@ A real home setup that follows the rule: original files live on your computer (c
     category: `troubleshooting`,
     tags: [`email sync`, `email not working`, `fix`, `troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `📮`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When email stops updating — new messages stop arriving, or they appear hours late, or the app shows old messages and will not refresh — it is rarely a broken app. It is almost always one of six issues: a network problem, an outage at your email provider, a password change you forgot about, a full mailbox, a corrupted account setup, or (on mobile) the app being throttled by battery-saving settings.
@@ -775,7 +775,7 @@ If the basics are fine, try force-closing the app completely and reopening it. I
     category: `troubleshooting`,
     tags: [`texts not sending`, `iMessage`, `SMS`, `fix`, `troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When texts stop sending or delivering, it falls into one of two categories on either phone. On iPhone: either iMessage (blue bubbles) is failing, or SMS (green bubbles) is failing. These are completely different systems — iMessage needs internet and works between Apple devices, while SMS uses your cellular carrier and works with any phone. On Android, the same split exists: RCS (the modern rich messaging, similar to iMessage) needs internet, and SMS is the cellular fallback. Knowing which kind of message is failing points you to the fix.
@@ -826,7 +826,7 @@ Specific situations to watch for: if a contact who used to have an iPhone recent
     category: `essential-skills`,
     tags: [`file organization`, `folders`, `computer organization`, `Documents`],
     readTime: `7 min`,
-    thumbnailEmoji: `🗂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `File organization seems boring, until you cannot find the lease agreement you signed in 2022, or your computer runs out of space because you have 4,000 files titled "IMG_[number]" scattered across the desktop. A good organization system has three parts: a consistent folder structure you can predict, a consistent naming system so files sort sensibly, and a handful of rules about what goes where. Once you have these in place, finding any file takes seconds instead of minutes.
@@ -873,7 +873,7 @@ Naming files well makes them searchable and sortable. The best pattern: YYYY-MM-
     category: `essential-skills`,
     tags: [`desktop cleanup`, `organize`, `productivity`, `Windows`, `Mac`],
     readTime: `6 min`,
-    thumbnailEmoji: `🧹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A cluttered computer desktop — 80 files, screenshots from last October, PDFs whose names make no sense — has real costs beyond looking messy. Every icon on the desktop is rendered continuously by your computer's graphics system, which uses a measurable amount of RAM and slows startup. On a Mac, a packed desktop can add 5-10 seconds to login time. On Windows, it affects explorer.exe performance. Beyond speed, a cluttered desktop buries important files and makes it harder to focus — the visual noise every time you look at your screen is real.

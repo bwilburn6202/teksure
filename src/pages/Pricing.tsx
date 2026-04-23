@@ -119,7 +119,7 @@ const Pricing = () => (
       jsonLd={pricingJsonLd}
     />
     <Navbar />
-    <main className="flex-1">
+    <main id="main-content" className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-12 md:py-16 text-center">

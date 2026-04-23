@@ -8,7 +8,7 @@ export const guidesBatch40: Guide[] = [
     category: `social-media`,
     tags: [`bluesky`, `social media`, `twitter alternative`, `decentralized`],
     readTime: `6 min`,
-    thumbnailEmoji: `🦋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Bluesky is a social media platform that feels a lot like early Twitter — short posts, public conversations, and the ability to follow people who share your interests. It launched to the general public in 2024 and has grown quickly as people look for a less chaotic alternative to other platforms.
@@ -56,7 +56,7 @@ Bluesky is worth joining if you enjoyed Twitter in its earlier days, want to fol
     category: `social-media`,
     tags: [`threads`, `instagram`, `meta`, `social media`, `twitter alternative`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Threads is a social media app from Meta — the same company behind Facebook and Instagram. It launched in 2023 and quickly became one of the fastest-growing apps ever, reaching 100 million sign-ups in its first five days.
@@ -103,7 +103,7 @@ Many news organizations, public figures, sports teams, and local businesses now 
     category: `entertainment`,
     tags: [`peacock`, `streaming`, `NBC`, `free streaming`, `Bravo`, `Universal`],
     readTime: `5 min`,
-    thumbnailEmoji: `🦚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Peacock is NBCUniversal's streaming service, and one of the few that offers a genuinely useful free tier. With a free account, you get access to thousands of hours of shows and movies without paying anything or entering a credit card.
@@ -148,7 +148,7 @@ One popular feature: Peacock often streams live local NBC content, which is grea
     category: `app-guides`,
     tags: [`wordle`, `connections`, `nyt games`, `puzzles`, `strands`, `new york times`],
     readTime: `5 min`,
-    thumbnailEmoji: `🟩`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `New York Times Games has become one of the most popular ways to start the day for millions of people. The collection includes Wordle, Connections, Strands, the Mini Crossword, and the full NYT Crossword — all playable on your phone or computer.
@@ -196,7 +196,7 @@ Many people play these games as part of their morning routine, and sharing score
     category: `communication`,
     tags: [`whatsapp`, `channels`, `news`, `updates`, `follow`],
     readTime: `5 min`,
-    thumbnailEmoji: `📢`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `WhatsApp Channels is a feature added to WhatsApp in 2023 that lets you follow public broadcasts from organizations, news outlets, sports teams, and public figures — right inside the same app you use to message friends and family.
@@ -241,7 +241,7 @@ The feature is built into WhatsApp and requires no separate download. If you hav
     category: `entertainment`,
     tags: [`netflix`, `offline`, `download`, `travel`, `no wifi`, `streaming`],
     readTime: `5 min`,
-    thumbnailEmoji: `📥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Netflix has a built-in feature that lets you download movies and TV shows directly to your phone or tablet. Once downloaded, you can watch them any time — even when you have no internet connection at all.
@@ -289,7 +289,7 @@ You need a Standard or Premium Netflix plan to use downloads. The Standard with 
     category: `entertainment`,
     tags: [`disney plus`, `offline`, `download`, `travel`, `no wifi`, `streaming`, `marvel`, `star wars`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Disney+ includes a download feature that lets you save content directly to your phone or tablet for offline watching. This means you can load up movies and shows before a flight, road trip, or visit to a place with spotty internet, and watch without needing any connection.
@@ -334,7 +334,7 @@ A Disney+ subscription ($7.99/month with ads or $13.99/month without ads) is req
     category: `entertainment`,
     tags: [`spotify`, `offline`, `download`, `music`, `playlists`, `premium`, `no wifi`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Spotify Premium includes the ability to download music, podcasts, and audiobooks to your phone so you can listen without an internet connection. This is one of the main advantages of Spotify Premium over the free plan.
@@ -379,7 +379,7 @@ Downloaded content requires you to connect to the internet at least once every 3
     category: `financial-tech`,
     tags: [`everydollar`, `budgeting`, `dave ramsey`, `spending tracker`, `personal finance`],
     readTime: `6 min`,
-    thumbnailEmoji: `💵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `EveryDollar is a budgeting app created by Ramsey Solutions (the people behind financial educator Dave Ramsey). The core idea is called "zero-based budgeting" — before the month starts, you assign every dollar you expect to earn to a specific category (rent, groceries, phone bill, entertainment, savings, etc.) until the total reaches zero.
@@ -425,7 +425,7 @@ Many people find that simply writing down where they plan to spend money — bef
     category: `essential-skills`,
     tags: [`noise canceling`, `headphones`, `AirPods Pro`, `Sony`, `Bose`, `hearing`, `audio`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Noise-canceling headphones use tiny microphones and computer chips to detect the sounds around you and create opposing sound waves that cancel most of that noise out before it reaches your ears. The result: you hear much less background noise — traffic, airplane engines, conversations nearby — without having to turn your volume up loud.
@@ -474,7 +474,7 @@ Most noise-canceling headphones also include a "Transparency Mode" — this inte
     category: `phone-guides`,
     tags: [`iphone`, `text size`, `accessibility`, `larger text`, `display`, `vision`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you find yourself squinting at your iPhone screen, holding the phone at arm's length, or struggling to read small menu text — you are not alone, and you do not have to put up with it. iPhone has several built-in settings that make text and the whole display bigger and easier to see.
@@ -522,7 +522,7 @@ These settings apply across your entire iPhone — not just one app. Once you se
     category: `phone-guides`,
     tags: [`ios 18`, `iphone`, `update`, `new features`, `apple`, `home screen`, `control center`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iOS 18 is a significant update for iPhone that Apple released in September 2024. If your iPhone runs iOS 18 (iPhone XR and newer can get it), you may have already updated — but you might not know about all the changes.
@@ -572,7 +572,7 @@ Here are the most useful things that changed:
     category: `phone-guides`,
     tags: [`android 15`, `android`, `update`, `new features`, `google`, `theft protection`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android 15 is Google's operating system update released in late 2024. It is available for Google Pixel phones and many Samsung, OnePlus, and other Android devices (though the timing varies by manufacturer).
@@ -624,7 +624,7 @@ Here are the most useful changes in Android 15:
     category: `phone-guides`,
     tags: [`google photos`, `locked folder`, `privacy`, `hidden photos`, `secure`, `biometric`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos includes a feature called "Locked Folder" that works like a private vault for your most sensitive photos and videos. Content you move to the Locked Folder is hidden from your main Google Photos library, does not appear in search results, and does not sync to other devices — it stays only on your phone.
@@ -674,7 +674,7 @@ One important thing to know: photos in the Locked Folder are NOT backed up to th
     category: `essential-skills`,
     tags: [`sell phone`, `trade in`, `factory reset`, `data wipe`, `old device`, `privacy`, `ebay`, `facebook marketplace`],
     readTime: `7 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Selling an old phone, tablet, or laptop is a great way to offset the cost of a new one — and it keeps working electronics out of landfills. But if you hand over a device without properly erasing it first, you risk exposing photos, passwords, email accounts, banking apps, and personal documents to a stranger.
@@ -720,7 +720,7 @@ Always back up your data before erasing. Remove SIM cards and SD cards. Charge t
     category: `smart-home`,
     tags: [`tv remote`, `smart tv`, `samsung`, `LG`, `roku`, `fire tv`, `phone remote`, `universal remote`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have ever lost your TV remote down the couch cushions for the fifth time this week, there is a better solution: use your phone as the remote. Most modern Smart TVs and streaming devices have official apps that let your smartphone control everything — change channels, adjust volume, navigate menus, and even type on-screen with your phone's keyboard (much faster than hunting through letters with the arrow buttons).
@@ -770,7 +770,7 @@ These apps give you a virtual remote on your phone screen. Many also let you use
     category: `ai-guides`,
     tags: [`samsung`, `galaxy ai`, `circle to search`, `live translate`, `chat assist`, `AI`, `galaxy s24`, `galaxy s25`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Samsung Galaxy AI is a collection of AI-powered features built into newer Samsung Galaxy phones (Galaxy S24 series and newer, some A-series phones, and select older flagships via software update). These features are free to use and built directly into the phone — no separate app required.
@@ -813,7 +813,7 @@ Galaxy AI features are available in Settings → Advanced Features → Samsung D
       },
       {
         title: `Try Chat Assist when messaging`,
-        content: `While typing a message in any messaging app, look for a small star (✦) or Galaxy AI icon in your keyboard. Tap it to see options: rephrase the message to sound more professional, more casual, or translate it to another language. Galaxy AI rewrites the text — tap "Send" when you are happy with it.`,
+        content: `While typing a message in any messaging app, look for a small star () or Galaxy AI icon in your keyboard. Tap it to see options: rephrase the message to sound more professional, more casual, or translate it to another language. Galaxy AI rewrites the text — tap "Send" when you are happy with it.`,
       },
     ],
   },
@@ -825,7 +825,7 @@ Galaxy AI features are available in Settings → Advanced Features → Samsung D
     category: `safety-guides`,
     tags: [`iphone`, `stolen device protection`, `security`, `theft`, `apple id`, `find my`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Stolen Device Protection is a security feature Apple added to iPhones with iOS 17.3 and later. It protects you from a specific type of theft that became common: thieves watch you enter your passcode in public, then steal your phone. Within minutes, they can change your Apple ID password, turn off Find My iPhone, and lock you out of your own account permanently.
@@ -868,7 +868,7 @@ Stolen Device Protection is turned off by default. You have to enable it manuall
     category: `safety-guides`,
     tags: [`hacked email`, `account recovery`, `gmail`, `outlook`, `security`, `password`, `two-factor`],
     readTime: `7 min`,
-    thumbnailEmoji: `🚨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Finding out your email has been hacked is alarming — but it happens to millions of people every year and most can recover fully if they act quickly. The key is speed: the faster you regain control, the less damage the hacker can do.
@@ -917,7 +917,7 @@ The steps below cover Gmail and Outlook/Hotmail, which together cover the majori
     category: `financial-tech`,
     tags: [`online banking`, `bank security`, `phishing`, `two-factor`, `mobile banking`, `fraud`, `safety`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Online and mobile banking has made managing money much more convenient — check your balance, pay bills, transfer money, and deposit checks from your phone. But it also means your bank account is one stolen password away from serious financial loss if you are not careful.

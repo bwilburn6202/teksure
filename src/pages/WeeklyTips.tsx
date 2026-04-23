@@ -43,7 +43,7 @@ export default function WeeklyTips() {
     <>
       <SEOHead title="Weekly Tech Tips — One Helpful Tip Every Week | TekSure" description="Free weekly tech tips for everyday people. Practical advice on security, privacy, productivity, and staying safe online." path="/weekly-tips" />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-3xl pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Weekly Tips' }]} />
         </div>

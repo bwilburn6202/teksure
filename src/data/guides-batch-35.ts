@@ -9,7 +9,7 @@ export const guidesBatch35: Guide[] = [
     category: 'health-tech',
     tags: ['live transcribe', 'android', 'hearing', 'speech to text', 'accessibility'],
     readTime: '4 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -45,7 +45,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['guided access', 'iphone', 'accessibility', 'single app mode', 'kids'],
     readTime: '4 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -81,7 +81,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['android', 'guest mode', 'privacy', 'share phone', 'user accounts'],
     readTime: '4 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -118,7 +118,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['android', 'data limit', 'mobile data', 'data usage', 'overage'],
     readTime: '4 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -154,7 +154,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'cellular data', 'data limit', 'low data mode', 'data usage'],
     readTime: '4 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -191,7 +191,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'face id', 'app lock', 'ios 18', 'privacy'],
     readTime: '4 min',
-    thumbnailEmoji: '👁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -227,7 +227,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['android', 'app lock', 'fingerprint', 'privacy', 'samsung'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -263,7 +263,7 @@ export const guidesBatch35: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'reachability', 'one-handed', 'accessibility', 'large iphone'],
     readTime: '3 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -295,7 +295,7 @@ export const guidesBatch35: Guide[] = [
     category: 'tips-tricks',
     tags: ['iphone', 'gestures', 'undo', 'shake to undo', 'hidden features'],
     readTime: '4 min',
-    thumbnailEmoji: '🤫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -331,7 +331,7 @@ export const guidesBatch35: Guide[] = [
     category: 'communication',
     tags: ['memoji', 'iphone', 'imessage', 'avatar', 'facetime'],
     readTime: '4 min',
-    thumbnailEmoji: '😊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -367,7 +367,7 @@ export const guidesBatch35: Guide[] = [
     category: 'tips-tricks',
     tags: ['iphone', 'keyboard', 'typing tips', 'text replacement', 'one-handed keyboard'],
     readTime: '5 min',
-    thumbnailEmoji: '⌨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -403,7 +403,7 @@ export const guidesBatch35: Guide[] = [
     category: 'essential-skills',
     tags: ['gboard', 'android', 'keyboard', 'swipe typing', 'voice input'],
     readTime: '5 min',
-    thumbnailEmoji: '⌨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -439,7 +439,7 @@ export const guidesBatch35: Guide[] = [
     category: 'app-guides',
     tags: ['gmail', 'smart compose', 'email tips', 'productivity', 'writing'],
     readTime: '4 min',
-    thumbnailEmoji: '✉️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -471,11 +471,11 @@ export const guidesBatch35: Guide[] = [
     slug: 'mac-dictation-guide',
     title: 'How to Use Dictation on Mac to Type with Your Voice',
     excerpt: 'Mac has built-in dictation that lets you speak to type anywhere on your computer — emails, documents, search boxes — without any special software.',
-    body: `Mac's built-in Dictation feature lets you speak and have your words typed wherever your cursor is. Press a keyboard shortcut, speak, and the words appear in any text field — email composing, Word documents, Google Docs, search bars, notes.\n\nDictation uses your Mac's microphone. For Macs introduced in 2021 or later (with Apple Silicon), dictation works entirely on the device without sending audio to Apple's servers. Older Macs with Intel processors send audio to Apple for processing, which requires internet.\n\n**Enhanced Dictation** on Apple Silicon Macs adds:\n- Automatic punctuation based on your pauses and speech patterns\n- Real-time transcription that appears word by word as you speak\n- Emoji dictation — say "thumbs up emoji" to insert 👍\n- Formatting commands like "new paragraph," "all caps," "bold that"\n\nDictation is helpful for:\n- Writing long emails or messages without typing\n- People with arthritis, carpal tunnel, or hand pain who find typing uncomfortable\n- Drafting documents faster than you can type\n- Anyone who thinks better when speaking than typing\n\nTo use Dictation, place your cursor where you want text to appear, then press the microphone key (F5 on some Macs) or the keyboard shortcut you configure.`,
+    body: `Mac's built-in Dictation feature lets you speak and have your words typed wherever your cursor is. Press a keyboard shortcut, speak, and the words appear in any text field — email composing, Word documents, Google Docs, search bars, notes.\n\nDictation uses your Mac's microphone. For Macs introduced in 2021 or later (with Apple Silicon), dictation works entirely on the device without sending audio to Apple's servers. Older Macs with Intel processors send audio to Apple for processing, which requires internet.\n\n**Enhanced Dictation** on Apple Silicon Macs adds:\n- Automatic punctuation based on your pauses and speech patterns\n- Real-time transcription that appears word by word as you speak\n- Emoji dictation — say "thumbs up emoji" to insert \n- Formatting commands like "new paragraph," "all caps," "bold that"\n\nDictation is helpful for:\n- Writing long emails or messages without typing\n- People with arthritis, carpal tunnel, or hand pain who find typing uncomfortable\n- Drafting documents faster than you can type\n- Anyone who thinks better when speaking than typing\n\nTo use Dictation, place your cursor where you want text to appear, then press the microphone key (F5 on some Macs) or the keyboard shortcut you configure.`,
     category: 'mac-guides',
     tags: ['mac', 'dictation', 'voice typing', 'accessibility', 'macos'],
     readTime: '4 min',
-    thumbnailEmoji: '🎙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -511,7 +511,7 @@ export const guidesBatch35: Guide[] = [
     category: 'essential-skills',
     tags: ['google docs', 'voice typing', 'dictation', 'speech to text', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '🎙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -548,7 +548,7 @@ export const guidesBatch35: Guide[] = [
     category: 'app-guides',
     tags: ['merlin', 'birds', 'nature', 'bird identification', 'cornell lab'],
     readTime: '4 min',
-    thumbnailEmoji: '🐦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -584,7 +584,7 @@ export const guidesBatch35: Guide[] = [
     category: 'health-tech',
     tags: ['strava', 'fitness tracking', 'walking', 'exercise', 'gps tracker'],
     readTime: '5 min',
-    thumbnailEmoji: '🚶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

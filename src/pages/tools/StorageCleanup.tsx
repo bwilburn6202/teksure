@@ -263,10 +263,10 @@ const taskSets: Record<DeviceOS, CleanupTask[]> = {
 };
 
 const osOptions: { type: DeviceOS; label: string; emoji: string }[] = [
-  { type: 'windows', label: 'Windows PC', emoji: '🪟' },
-  { type: 'mac', label: 'Mac', emoji: '🍎' },
-  { type: 'iphone', label: 'iPhone / iPad', emoji: '📱' },
-  { type: 'android', label: 'Android Phone', emoji: '🤖' },
+  { type: 'windows', label: 'Windows PC', emoji: '' },
+  { type: 'mac', label: 'Mac', emoji: '' },
+  { type: 'iphone', label: 'iPhone / iPad', emoji: '' },
+  { type: 'android', label: 'Android Phone', emoji: '' },
 ];
 
 export default function StorageCleanup() {
@@ -448,7 +448,7 @@ export default function StorageCleanup() {
                       <Card className="border-[hsl(var(--teksure-success)/0.4)] bg-[hsl(var(--teksure-success)/0.06)]">
                         <CardContent className="p-6 text-center">
                           <CheckCircle2 className="h-10 w-10 text-[hsl(var(--teksure-success))] mx-auto mb-2" />
-                          <h3 className="font-bold text-lg mb-1">Cleanup complete! 🎉</h3>
+                          <h3 className="font-bold text-lg mb-1">Cleanup complete! </h3>
                           <p className="text-sm text-muted-foreground mb-3">
                             You've freed up an estimated {formatSize(totalEstimatedMB)} of storage. Your device should feel snappier.
                           </p>

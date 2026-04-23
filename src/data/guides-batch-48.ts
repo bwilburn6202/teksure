@@ -8,7 +8,7 @@ export const guidesBatch48: Guide[] = [
     category: `social-media`,
     tags: [`instagram`, `reels`, `short video`, `social media`, `beginners`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Instagram Reels are short videos — anywhere from a few seconds to three minutes long — that play automatically as you scroll. They can be funny clips, cooking demonstrations, travel highlights, or news from people and organizations you follow. Many people find Reels are the most engaging part of Instagram.
@@ -57,7 +57,7 @@ You can also find Reels mixed in on your regular Home feed from accounts you fol
     category: `communication`,
     tags: [`whatsapp`, `status`, `stories`, `photos`, `sharing`, `family`],
     readTime: `4 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `WhatsApp Status is a feature that lets you share photos, short videos, GIFs, or text updates with all your WhatsApp contacts at once — without sending individual messages to each person. Like Instagram and Facebook Stories, WhatsApp Status posts disappear after 24 hours.
@@ -101,7 +101,7 @@ Viewing your own posted Status and seeing who viewed it is also possible — tap
     category: `social-media`,
     tags: [`facebook`, `live video`, `facebook live`, `streaming`, `broadcast`, `watch`],
     readTime: `5 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Facebook Live is a feature that lets anyone broadcast a live video directly to their Facebook friends, followers, or the public. You might come across a Live video from a family member sharing a birthday party in real time, a church service being streamed, a local news station covering breaking news, or a public figure answering questions from viewers.
@@ -121,7 +121,7 @@ If you run a Facebook Page (for a small business or community group), going Live
       },
       {
         title: `React and comment during a Live`,
-        content: `While watching a Live, tap any of the emoji reaction icons at the bottom (like ❤️ or 👍) to send a reaction — it floats up the screen for everyone to see. Tap the comment box at the bottom to type a message. The person going Live can see your comments and may respond to you.`,
+        content: `While watching a Live, tap any of the emoji reaction icons at the bottom (like  or ) to send a reaction — it floats up the screen for everyone to see. Tap the comment box at the bottom to type a message. The person going Live can see your comments and may respond to you.`,
       },
       {
         title: `Start your own Facebook Live`,
@@ -146,7 +146,7 @@ If you run a Facebook Page (for a small business or community group), going Live
     category: `social-media`,
     tags: [`snapchat`, `family`, `grandchildren`, `photo sharing`, `messaging`, `seniors`],
     readTime: `5 min`,
-    thumbnailEmoji: `👻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Snapchat is a photo and video messaging app used by millions of people, particularly teens and young adults. If your grandchildren or younger family members use Snapchat, you might want to join so you can exchange photos, short videos, and messages in the way they prefer to communicate.
@@ -196,7 +196,7 @@ Snapchat also has a safety feature called Snapmap (visible to your friends by de
     category: `tips-tricks`,
     tags: [`chrome`, `extensions`, `browser`, `add-ons`, `productivity`, `coupon`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧩`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Chrome extensions are small add-ons you install inside your Google Chrome browser that give it extra features. Think of them like apps, but for your browser rather than your phone.
@@ -247,7 +247,7 @@ Extensions only work in Chrome on a computer — they don't carry over to Chrome
     category: `tips-tricks`,
     tags: [`chrome`, `tab groups`, `browser`, `organize`, `productivity`, `tabs`],
     readTime: `4 min`,
-    thumbnailEmoji: `📑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you ever open many browser tabs at once — recipes, shopping, news, email — things can get overwhelming quickly. Chrome's Tab Groups feature lets you bundle related tabs together under a single label with a color code, so your browser bar stays organized and you can find what you need without hunting through dozens of tabs.
@@ -291,7 +291,7 @@ This feature works on both Windows and Mac computers. It's not available in Chro
     category: `safety-guides`,
     tags: [`iphone`, `privacy`, `app privacy report`, `ios`, `permissions`, `security`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `The App Privacy Report is a built-in feature on iPhone (available in iOS 15 and later) that keeps a record of how your apps have been using sensitive data and features over the past seven days. It shows you which apps have accessed your camera, microphone, location, contacts, photos, and more — and exactly how many times.
@@ -338,7 +338,7 @@ Reviewing your App Privacy Report occasionally is a healthy privacy habit, espec
     category: `windows-guides`,
     tags: [`windows`, `paint`, `image editing`, `annotate`, `screenshot`, `drawing`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖌️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Paint has been part of Windows for decades, and it remains one of the most straightforward image tools available. While it's not a professional photo editor, Paint does many practical things that everyday users need:
@@ -388,7 +388,7 @@ Despite its simple appearance, Paint handles standard tasks reliably and opens n
     category: `mac-guides`,
     tags: [`mac`, `textedit`, `word processing`, `notes`, `documents`, `macos`],
     readTime: `4 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `TextEdit is a free text editor built into every Mac. You can use it to write notes, draft letters, create simple documents, and edit plain text files — all without needing Microsoft Word or any other paid software.
@@ -440,7 +440,7 @@ TextEdit is lightweight, opens instantly, and uses minimal system resources. For
     category: `mac-guides`,
     tags: [`mac`, `stickies`, `reminders`, `notes`, `desktop`, `macos`],
     readTime: `4 min`,
-    thumbnailEmoji: `🗒️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Stickies is a free app built into every Mac that puts digital sticky notes right on your desktop — just like the physical yellow sticky notes you might stick to your monitor or refrigerator, except these float on your screen and are always visible.
@@ -492,7 +492,7 @@ Stickies automatically save their content, so if you close and reopen the Sticki
     category: `safety-guides`,
     tags: [`windows`, `parental controls`, `family safety`, `screen time`, `children`, `grandchildren`],
     readTime: `6 min`,
-    thumbnailEmoji: `👨‍👩‍👧`,
+    thumbnailEmoji: `‍‍`,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Microsoft Family Safety is a free service from Microsoft that lets you set up parental controls on Windows computers and Xbox consoles. If you have grandchildren or children using a Windows PC, Family Safety lets you limit how long they use the computer, block inappropriate websites, require Microsoft Store app approvals, and set spending limits.
@@ -541,7 +541,7 @@ Setup takes about 20 minutes and everything is managed online at account.microso
     category: `phone-guides`,
     tags: [`nfc`, `android`, `tap to pay`, `contactless`, `file sharing`, `technology`],
     readTime: `5 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `NFC stands for Near Field Communication. It's a short-range wireless technology built into almost all Android phones made in the last several years. Despite the technical name, NFC powers several everyday tasks you've probably already seen or done.
@@ -590,7 +590,7 @@ To use NFC, it must be turned on in your Android phone's settings — check Sett
     category: `tips-tricks`,
     tags: [`chrome`, `bookmarks`, `organize`, `browser`, `folders`, `saved pages`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Chrome bookmarks are a great way to save websites you want to revisit — but if you've been using Chrome for a while, your bookmarks bar can become a jumbled mess of names that's hard to navigate. Organizing bookmarks into folders solves this quickly.
@@ -636,7 +636,7 @@ Once you get your bookmarks organized, you'll find that the websites you need ar
     category: `phone-guides`,
     tags: [`samsung`, `samsung internet`, `browser`, `android`, `galaxy`, `tips`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Samsung Internet is the default web browser on Samsung Galaxy phones and tablets. While many people switch to Google Chrome, Samsung Internet has some genuinely useful features that make it worth keeping — particularly for Galaxy users who want tight integration with their device's security features.
@@ -688,7 +688,7 @@ Samsung Internet is updated regularly through the Galaxy Store and has consisten
     category: `app-guides`,
     tags: [`outlook`, `email`, `microsoft`, `iphone`, `android`, `calendar`],
     readTime: `5 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Outlook is one of the most popular email apps in the world, and the mobile version works on both iPhone and Android. Many people assume Outlook only works with Microsoft email accounts (like @outlook.com or @hotmail.com), but the Outlook app also handles Gmail, Yahoo Mail, iCloud, and most other email services. If your workplace uses Office 365, Outlook is likely the expected email app to use.
@@ -735,7 +735,7 @@ Outlook is free to download and use. Setup is as straightforward as entering you
     category: `app-guides`,
     tags: [`apple pencil`, `ipad`, `drawing`, `handwriting`, `stylus`, `notes`],
     readTime: `5 min`,
-    thumbnailEmoji: `✏️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Pencil is a stylus designed to work with iPad, giving you a natural pen-or-pencil feel on the touchscreen. If you've ever wanted to hand-write notes, sketch ideas, sign documents, or draw on your iPad instead of typing, Apple Pencil makes all of that possible.
@@ -783,7 +783,7 @@ Pressure sensitivity means the harder you press, the darker and thicker your str
     category: `app-guides`,
     tags: [`google calendar`, `share calendar`, `family`, `scheduling`, `google`, `appointments`],
     readTime: `5 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Calendar lets you share your calendar with specific people so they can see your schedule — and you can see theirs — without having to text back and forth about who's available. This is great for couples coordinating appointments, parents and adult children staying in sync, or anyone who wants to keep their household on the same page.
@@ -832,7 +832,7 @@ Sharing works between any two people with Google accounts, and they can view you
     category: `phone-guides`,
     tags: [`bluetooth`, `car`, `music`, `iphone`, `android`, `streaming`, `audio`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your car is from 2012 or later, there's a very good chance it has Bluetooth audio built in. This lets you pair your smartphone to the car's sound system and play music, podcasts, or navigation voice directions through the car's speakers — no cables needed.
@@ -885,7 +885,7 @@ The phone's music keeps playing through the same Bluetooth connection used for p
     category: `phone-guides`,
     tags: [`android`, `voice recorder`, `audio`, `memo`, `record`, `samsung`, `google pixel`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android phones come with a built-in voice recorder app (though the name varies by manufacturer). It's perfect for recording a quick voice note to yourself, capturing audio at a meeting or lecture, saving a reminder for later, or recording a family member's voice as a keepsake.
@@ -937,7 +937,7 @@ All recordings are saved to your phone's storage and can be accessed from within
     category: `app-guides`,
     tags: [`ipad`, `drag and drop`, `multitasking`, `ios`, `split view`, `files`],
     readTime: `4 min`,
-    thumbnailEmoji: `✋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Drag and drop on iPad lets you pick up an item with your finger — a photo, a block of text, a file, or a link — hold it while you navigate to another app, and then drop it there. It's a faster and more natural way to move content between apps than the traditional copy-and-paste approach.

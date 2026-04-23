@@ -213,7 +213,7 @@ export default function ErrorDecoder() {
         path="/tools/error-decoder"
       />
       <Navbar />
-      <main className="container py-16 min-h-[60vh]">
+      <main id="main-content" className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <AlertCircle className="h-8 w-8 text-destructive" />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Error Message Decoder</h1>

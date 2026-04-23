@@ -24,7 +24,7 @@ export const guidesBatch95: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'bitlocker', 'recovery key', 'locked out', 'update', 'KB5083769'],
     readTime: '6 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
     body: `After Microsoft's April 2026 Patch Tuesday update (KB5083769), some Windows 11 computers started showing a blue "BitLocker Recovery" screen before Windows loads. The screen asks you to type a 48-digit recovery key. If this happened to you, do not panic — your computer is not broken and all your files are safe. The fix is free and takes about 5 minutes.
@@ -69,7 +69,7 @@ After you are back in, Microsoft has released a follow-up update that prevents t
     category: 'phone-guides',
     tags: ['iphone', 'battery', 'ios update', 'battery drain', 'fix', 'slow phone'],
     readTime: '6 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
     body: `After any major iPhone update, it is completely normal for your battery to drain faster than usual for the first day or two. Your iPhone has a lot of work to do after an update — it rebuilds its search index, re-downloads cached content, checks for compatibility with your apps, and reoptimizes your photos. All of this happens in the background, and it uses extra battery while it runs.
@@ -116,7 +116,7 @@ If you check your Battery settings and notice one specific app is using a surpri
     category: 'phone-guides',
     tags: ['iphone', 'storage full', 'ios update', 'not enough space', 'free up storage', 'icloud'],
     readTime: '7 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
     body: `When your iPhone tells you there is not enough storage to install an update, it can feel like a catch-22 — you need space to update, but you need to update to stay safe. The good news is you almost always have more space than you think, and there are several ways to free up enough room for any iOS update without permanently losing your photos or contacts.
@@ -162,7 +162,7 @@ If clearing space on your phone does not work, there is an alternative method: u
     category: 'app-guides',
     tags: ['gmail', 'outlook', 'apple mail', 'email', 'not working', 'fix', 'google account'],
     readTime: '7 min',
-    thumbnailEmoji: '📧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
     body: `If Gmail suddenly stopped loading, sending, or syncing in Outlook, Apple Mail, or another email program on your phone or computer, the most likely reason is a change Google made to how Gmail accounts log in to third-party apps.
@@ -209,7 +209,7 @@ This is not a problem with your Google account, and nothing is wrong with your G
     category: 'troubleshooting',
     tags: ['account recovery', 'forgot password', 'locked out', 'google account', 'microsoft account', 'apple id', 'two-factor'],
     readTime: '8 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-20',
     difficulty: 'Beginner',
     body: `Getting locked out of an email account — especially after a phone upgrade or a forgotten password — is one of the most common tech problems people face. The lock is frightening because so many other services depend on your email: bank notifications, medical apps, shopping accounts, and social media all use your email address to verify who you are.

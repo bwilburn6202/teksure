@@ -106,7 +106,7 @@ const Login = () => {
       <>
         <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" />
         <Navbar />
-        <main className="min-h-screen bg-background">
+        <main id="main-content" className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
             <div className="w-full">
               <Card className="rounded-2xl border border-border bg-card">

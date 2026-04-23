@@ -8,7 +8,7 @@ export const guidesBatch26: Guide[] = [
     category: 'app-guides',
     tags: ['Canva', 'design', 'cards', 'photos', 'free tool'],
     readTime: '6 min',
-    thumbnailEmoji: '🎨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Canva is a free online design tool that lets anyone create polished-looking cards, flyers, social media posts, and photo collages using drag-and-drop. You do not need any design experience — Canva provides thousands of ready-made templates for every occasion. You choose a template, swap in your own photos and text, and download the finished design in minutes.
@@ -55,7 +55,7 @@ Finished designs can be downloaded as image files (JPEG or PNG), printed through
     category: 'communication',
     tags: ['FaceTime', 'video call', 'Android', 'cross-platform', 'iPhone'],
     readTime: '4 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `FaceTime used to be limited to Apple devices — iPhone, iPad, and Mac only. That changed with iOS 15 and later. Now you can create a FaceTime link and share it with anyone, including Android phone users and Windows computer users. The recipient clicks the link and joins the FaceTime call through their web browser — no Apple device or app download required.
@@ -99,7 +99,7 @@ This feature requires iOS 15 or later on the iPhone creating the link. Non-Apple
     category: 'communication',
     tags: ['Discord', 'group chat', 'communication', 'family', 'voice chat'],
     readTime: '6 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Discord is a free app that lets groups of people communicate through text messages, voice calls, and video chats — all organized into channels inside a shared space called a "server." While Discord is best known as a tool for online gamers, it has grown into a general-purpose communication platform used by families, hobby groups, community organizations, book clubs, and more.
@@ -130,7 +130,7 @@ For families spread across different states or countries, Discord can serve as a
       },
       {
         title: 'Join a Voice or Video Call',
-        content: 'Voice channels show a speaker icon (🔊). Tap a voice channel to join — you immediately connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
+        content: 'Voice channels show a speaker icon (). Tap a voice channel to join — you immediately connect to a voice call with anyone else in that channel. Tap the camera icon to turn on your video. Tap the microphone icon to mute or unmute yourself.',
         tip: 'You do not need to be invited to join a voice channel — if someone is in the channel, you can tap it anytime to join the conversation. This makes it easy to drop in and chat.',
       },
       {
@@ -146,7 +146,7 @@ For families spread across different states or countries, Discord can serve as a
     category: 'essential-skills',
     tags: ['Reddit', 'community', 'forums', 'information', 'tips'],
     readTime: '5 min',
-    thumbnailEmoji: '💡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Reddit is a website organized into thousands of topic communities called "subreddits." Each subreddit (written as r/topicname) is focused on one subject — there are subreddits for technology help, cooking, travel, local cities, hobbies, health questions, news, and virtually anything else you can think of.
@@ -193,7 +193,7 @@ Reddit has communities specifically for seniors (r/seniors), technology help (r/
     category: 'entertainment',
     tags: ['YouTube', 'captions', 'subtitles', 'accessibility', 'hearing'],
     readTime: '4 min',
-    thumbnailEmoji: '🔤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `YouTube automatically generates captions for most videos — text that appears at the bottom of the screen showing what is being said. This is helpful if you are watching in a noisy environment, have difficulty hearing, or are watching a video with a heavy accent or fast-talking presenter.
@@ -240,7 +240,7 @@ Automatic captions can be translated in real time — you can watch a Spanish or
     category: 'phone-guides',
     tags: ['iPhone', 'voice dictation', 'speak to type', 'accessibility', 'iOS'],
     readTime: '4 min',
-    thumbnailEmoji: '🎙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Voice dictation on iPhone lets you speak your message instead of typing it. This is available in every app with a text field — Messages, Email, Notes, search bars, forms, and more. You tap a microphone button on the keyboard, speak naturally, and your words appear as text.
@@ -287,7 +287,7 @@ Editing dictated text works the same as editing any text — tap where you want 
     category: 'phone-guides',
     tags: ['Android', 'voice typing', 'speak to type', 'Google', 'accessibility'],
     readTime: '4 min',
-    thumbnailEmoji: '🎙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android phones have a built-in voice typing feature that lets you speak your text instead of typing. It works in any app where you can type — messaging, email, search bars, notes, forms, and more. Just tap the microphone icon on the Google keyboard and speak.
@@ -334,7 +334,7 @@ For people with arthritis, hand tremors, visual difficulties, or anyone who simp
     category: 'windows-guides',
     tags: ['Windows 11', 'voice typing', 'dictation', 'accessibility', 'speak to type'],
     readTime: '4 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Windows 11 has a built-in voice typing tool that lets you dictate text into any application by speaking. Press Windows key + H on your keyboard while your cursor is in a text field — a microphone toolbar appears and you can start speaking. Your words are transcribed into whatever you are typing, whether that is an email, a document, a search bar, or a chat message.
@@ -380,7 +380,7 @@ Windows 11 also has a full voice access feature for people with mobility impairm
     category: 'social-media',
     tags: ['Facebook', 'events', 'local activities', 'RSVP', 'social'],
     readTime: '5 min',
-    thumbnailEmoji: '📅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Facebook Events is a feature that lets you find public events happening near you, RSVP to events your friends are hosting, and create your own events to invite family and friends. It is one of Facebook's most useful tools for staying socially connected and discovering local activities.
@@ -427,7 +427,7 @@ For public events in your area, Facebook's event discovery is useful for finding
     category: 'entertainment',
     tags: ['YouTube', 'Shorts', 'video', 'tips', 'settings'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `YouTube Shorts are short videos — usually under 60 seconds — filmed vertically on a smartphone, similar to TikTok or Instagram Reels. YouTube began pushing Shorts prominently in 2022 and they now appear throughout the YouTube app alongside regular longer videos.
@@ -473,7 +473,7 @@ YouTube does not currently offer an official "disable all Shorts" option in the 
     category: 'phone-guides',
     tags: ['iPhone', 'subscriptions', 'cancel', 'App Store', 'money saving'],
     readTime: '4 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your iPhone has a hidden master list of every recurring subscription you are paying for through the App Store — apps that charge weekly, monthly, or yearly fees. Many people forget about subscriptions they signed up for and are paying for years after they stopped using the app.
@@ -520,7 +520,7 @@ This same subscription list is visible from a Mac's App Store or from account.ap
     category: 'phone-guides',
     tags: ['Android', 'subscriptions', 'Google Play', 'cancel', 'money saving'],
     readTime: '4 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your Android phone's Google Play Store keeps a master list of every app subscription you have signed up for and paid through your Google account. These are subscriptions to apps that were set up through the Google Play billing system — things like fitness apps, news apps, cloud storage, entertainment apps, and productivity tools.
@@ -564,7 +564,7 @@ To see a complete picture of all your subscriptions, check both Google Play and 
     category: 'app-guides',
     tags: ['Google Slides', 'presentation', 'slideshow', 'Google', 'free tool'],
     readTime: '6 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Google Slides is a free presentation tool, similar to Microsoft PowerPoint, that works in any web browser and on Android or iPhone through the Google Slides app. You create slides, add text and photos, and present your slideshow on a TV or screen — or share it as a link for others to view on their own devices.
@@ -611,7 +611,7 @@ Presenting from Google Slides is straightforward: open the presentation in full-
     category: 'app-guides',
     tags: ['Shutterfly', 'photo book', 'gift', 'photos', 'printing'],
     readTime: '6 min',
-    thumbnailEmoji: '📕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A Shutterfly photo book is a professional-quality printed book of your photos — hardcover, softcover, or layflat — that you design using your own pictures. It makes a heartfelt gift for grandchildren, parents, or any family event. Photo books from Shutterfly are the kind of keepsake that gets kept for decades.
@@ -658,7 +658,7 @@ Shutterfly books regularly go on sale — 40-50% off sales happen most weekends 
     category: 'entertainment',
     tags: ['streaming', 'Netflix', 'Hulu', 'cost', 'comparison', 'cord cutting'],
     readTime: '6 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Streaming services seemed like a money-saving alternative to cable when there were only one or two of them. But as more services launched and prices increased, many households now pay $80-150 per month for streaming — comparable to or more expensive than cable.
@@ -713,7 +713,7 @@ The most common advice: maintain one to two subscription services at a time and 
     category: 'app-guides',
     tags: ['Amazon Prime', 'cancel subscription', 'Amazon', 'money saving'],
     readTime: '4 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Amazon Prime costs $14.99 per month or $139 per year as of 2026. It includes free two-day shipping on millions of items, Prime Video (streaming movies and TV shows), Prime Music (100 million songs), Prime Reading (free e-books and magazines), Amazon Photos (unlimited photo storage), and early access to sales.
@@ -759,7 +759,7 @@ Amazon also offers a discounted Prime membership for customers who receive gover
     category: 'safety-guides',
     tags: ['iPhone', 'crash detection', 'emergency SOS', 'safety', 'iPhone 14'],
     readTime: '4 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Crash Detection is a safety feature available on iPhone 14 and later (all models). If your iPhone detects that you have been in a severe vehicle crash, it sounds an alarm, displays an emergency SOS screen on your phone, and — if you do not respond within 10 seconds — automatically calls 911 and shares your GPS location with emergency services. It also sends your location to your emergency contacts.
@@ -851,7 +851,7 @@ Nexus and Pixel phones also have a crisis location sharing feature that sends yo
     category: 'government-civic',
     tags: ['Medicare', 'Medigap', 'Medicare Supplement', 'health insurance', 'seniors'],
     readTime: '7 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Original Medicare (Parts A and B) covers most hospital and medical costs, but it does not cover everything. You are responsible for deductibles, copayments, and coinsurance — costs that can add up to thousands of dollars during a serious illness or surgery. Medigap (also called Medicare Supplement Insurance) is private insurance that covers many of these out-of-pocket costs that Original Medicare leaves unpaid.
@@ -898,7 +898,7 @@ Medigap does not cover prescription drugs (Part D), dental, vision, or hearing �
     category: 'essential-skills',
     tags: ['phone plan', 'wireless', 'Verizon', 'AT&T', 'T-Mobile', 'savings'],
     readTime: '6 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Many Americans are paying $70-100 or more per month for a single phone line — far more than they need to based on how they actually use their phones. A few hours of comparison shopping can often reduce phone bills by $20-50 per month without sacrificing coverage or call quality.
@@ -947,7 +947,7 @@ Approximate current prices (2026): Consumer Cellular $20-35/month, Mint Mobile $
     category: 'essential-skills',
     tags: ['Consumer Cellular', 'phone plan', 'MVNO', 'seniors', 'AARP'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Consumer Cellular is a US-based no-contract wireless carrier that runs on AT&T's and T-Mobile's networks. It is especially popular with adults 50 and older because of its simple pricing, US-based customer service, no long-term contracts, and partnership with AARP (AARP members get a 5% discount on monthly service).

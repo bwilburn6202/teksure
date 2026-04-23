@@ -117,7 +117,7 @@ const MyRequests = () => {
       <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" />
       <Navbar />
 
-      <main className="flex-1 py-10 px-4">
+      <main id="main-content" className="flex-1 py-10 px-4">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}

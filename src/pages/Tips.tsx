@@ -250,7 +250,7 @@ export default function Tips() {
         path="/tips"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Weekly Tech Tips</h1>
@@ -267,7 +267,7 @@ export default function Tips() {
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1">
-                    <div className="text-4xl shrink-0">⭐</div>
+                    <div className="text-4xl shrink-0"></div>
                     <div className="flex-1">
                       <Badge className="mb-3 text-xs font-medium bg-primary/10 text-primary border-0">Tip of the Week</Badge>
                       <CardTitle className="text-2xl">{featuredTip.title}</CardTitle>

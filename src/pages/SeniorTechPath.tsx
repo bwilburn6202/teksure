@@ -62,7 +62,7 @@ const level3Guides: GuideLink[] = [
 const levelCards = [
   {
     icon: Sprout,
-    emoji: '🌱',
+    emoji: '',
     title: 'Brand New',
     description: 'Never used a computer or smartphone before. We will start from step one.',
     levelHref: '#level-1',
@@ -71,7 +71,7 @@ const levelCards = [
   },
   {
     icon: Leaf,
-    emoji: '🌿',
+    emoji: '',
     title: 'Some Experience',
     description: 'You can check email or make a call. You want to do more.',
     levelHref: '#level-2',
@@ -80,7 +80,7 @@ const levelCards = [
   },
   {
     icon: TreePine,
-    emoji: '🌳',
+    emoji: '',
     title: 'Comfortable',
     description: 'You use your device daily and are ready for advanced topics.',
     levelHref: '#level-3',
@@ -142,7 +142,7 @@ export default function SeniorTechPath() {
         path="/senior-tech-path"
       />
       <Navbar />
-      <main className="min-h-screen bg-background text-[18px] leading-relaxed">
+      <main id="main-content" className="min-h-screen bg-background text-[18px] leading-relaxed">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tech for Seniors' }]} />
         </div>

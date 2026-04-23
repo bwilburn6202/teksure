@@ -96,7 +96,11 @@
     @apply border-border;
   }
   html {
-    font-size: 16px;
+    /* Senior-friendly default. Was 16px; raised to 17px so the
+       20+ million seniors on this site don't have to find the
+       hidden Senior Mode toggle to get readable text. All Tailwind
+       text-* sizes scale with root. */
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -111,6 +115,15 @@
   }
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.025em;
+  }
+  /* Global focus-visible ring — WCAG 2.4.7. Ensures every keyboard
+     user (including seniors using keyboard navigation) can always
+     see where focus is, even on components that don't ship their
+     own ring styles. */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 

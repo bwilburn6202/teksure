@@ -296,7 +296,7 @@ const FreeResources = () => {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      <main id="main-content" className="min-h-screen bg-gray-50 dark:bg-gray-950">
 
         {/* Hero */}
         <section className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">

@@ -125,6 +125,8 @@ export default function FirstApartmentTech() {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-green-50 to-background dark:from-green-950/30">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -300,6 +302,8 @@ export default function FirstApartmentTech() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

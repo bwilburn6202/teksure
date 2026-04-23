@@ -316,7 +316,7 @@ export default function BackupWizard() {
             <div key="intro">
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
-                  <div className="text-5xl mb-4">💾</div>
+                  <div className="text-5xl mb-4"></div>
                   <h2 className="text-xl font-semibold mb-3">Is your data backed up?</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
                     Phones break. Computers crash. A backup means you never lose your photos, contacts, or important documents. This wizard gives you a personalized plan in under 3 minutes.
@@ -485,7 +485,7 @@ export default function BackupWizard() {
           {step === 4 && plan && (
             <div key="result">
               <div className="text-center mb-8">
-                <div className="text-5xl mb-3">✅</div>
+                <div className="text-5xl mb-3"></div>
                 <h2 className="text-2xl font-bold mb-1">Your Personalized Backup Plan</h2>
                 <p className="text-muted-foreground text-sm">Follow these steps to keep your data safe</p>
               </div>
@@ -521,7 +521,7 @@ export default function BackupWizard() {
 
                         {block.tip && (
                           <div className="mt-4 flex items-start gap-2 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/40 rounded-lg px-3 py-2.5">
-                            <span className="text-amber-500 shrink-0 text-sm">💡</span>
+                            <span className="text-amber-500 shrink-0 text-sm"></span>
                             <p className="text-xs text-muted-foreground leading-relaxed">{block.tip}</p>
                           </div>
                         )}
@@ -534,7 +534,7 @@ export default function BackupWizard() {
               {/* How often reminder */}
               <Card className="mb-6 bg-primary text-primary-foreground border-0">
                 <CardContent className="py-5">
-                  <p className="font-semibold mb-1">⏰ How often should you back up?</p>
+                  <p className="font-semibold mb-1"> How often should you back up?</p>
                   <p className="text-sm opacity-90">
                     Photos: <strong>weekly</strong> or enable automatic backup ·
                     Documents: <strong>after every important change</strong> ·

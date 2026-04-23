@@ -43,7 +43,7 @@ const WARNING_SIGNS = [
 
 const SCAM_TYPES = [
   {
-    emoji: '🏛️',
+    emoji: '',
     name: 'IRS / Social Security Impersonation',
     description:
       'Callers claim you owe back taxes or that your Social Security number has been "suspended" due to suspicious activity. They may threaten arrest to pressure you into acting immediately.',
@@ -53,7 +53,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300',
   },
   {
-    emoji: '💻',
+    emoji: '',
     name: 'Tech Support Scam',
     description:
       'A frightening pop-up or phone call claims your computer is infected with a virus. They want you to call a number or let them "fix" your computer remotely — for a fee.',
@@ -63,7 +63,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300',
   },
   {
-    emoji: '💕',
+    emoji: '',
     name: 'Romance Scam',
     description:
       'Someone you meet online quickly develops a strong connection with you — but they can never meet in person or video call. Eventually, a financial crisis leads to a request for money.',
@@ -73,7 +73,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-pink-100 text-pink-700 dark:bg-pink-900/40 dark:text-pink-300',
   },
   {
-    emoji: '🎁',
+    emoji: '',
     name: 'Gift Card Scam',
     description:
       'Any legitimate business, government agency, or person asking you to pay with gift cards is running a scam — no exceptions. Scammers love gift cards because the money is nearly impossible to trace or recover.',
@@ -83,7 +83,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
   },
   {
-    emoji: '👴',
+    emoji: '',
     name: 'Grandparent Scam',
     description:
       'A caller pretends to be your grandchild (or a lawyer or police officer "helping" them), says they\'re in serious trouble — arrested, in a hospital, or stranded — and begs you not to tell other family members.',
@@ -93,7 +93,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300',
   },
   {
-    emoji: '🏆',
+    emoji: '',
     name: 'Lottery / Prize Scam',
     description:
       'You receive exciting news — you\'ve won a prize, lottery, or sweepstakes you never entered! But to claim your winnings, you\'ll need to pay a "processing fee" or "taxes" upfront first.',
@@ -103,7 +103,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-lime-100 text-lime-700 dark:bg-lime-900/40 dark:text-lime-300',
   },
   {
-    emoji: '🛍️',
+    emoji: '',
     name: 'Online Shopping Scam',
     description:
       'Fake websites advertise products at unbelievably low prices and never deliver. Sellers on marketplace sites may send an overpayment check and ask you to wire back the difference.',
@@ -113,7 +113,7 @@ const SCAM_TYPES = [
     badgeColor: 'bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300',
   },
   {
-    emoji: '📱',
+    emoji: '',
     name: 'Phishing Text / Email',
     description:
       'A message that appears to come from your bank, Amazon, USPS, or another trusted company asks you to click a link and confirm your account details. The link goes to a fake website.',
@@ -304,7 +304,7 @@ export default function ScamDefenseCenter() {
         </div>
       </section>
 
-      <main className="container max-w-4xl mx-auto px-4 py-12 space-y-16">
+      <main id="main-content" className="container max-w-4xl mx-auto px-4 py-12 space-y-16">
 
         {/* ── 2. Quick Checklist ────────────────────────────────────────────── */}
         <section id="checklist" className="scroll-mt-20">
@@ -602,17 +602,17 @@ export default function ScamDefenseCenter() {
             {/* Scam Simulator */}
             <Card className="border-2 border-orange-200 dark:border-orange-800/40 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
-                <div className="text-3xl mb-3" aria-hidden="true">🎯</div>
+                <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Practice Spotting Scams</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">
                   Try real-world examples in a safe environment. The more you practice, the easier
                   it is to recognize a scam when it really happens.
                 </p>
                 <Link
-                  to="/tools/scam-simulator"
+                  to="/practice"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline min-h-[44px]"
                 >
-                  Open Scam Simulator
+                  Open Practice Rooms
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </CardContent>
@@ -621,7 +621,7 @@ export default function ScamDefenseCenter() {
             {/* Freeze Credit Guide */}
             <Card className="border-2 border-blue-200 dark:border-blue-800/40 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
-                <div className="text-3xl mb-3" aria-hidden="true">🔒</div>
+                <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Freeze Your Credit</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">
                   A credit freeze is free and one of the most powerful tools against identity theft.
@@ -640,7 +640,7 @@ export default function ScamDefenseCenter() {
             {/* Strong Passwords Guide */}
             <Card className="border-2 border-green-200 dark:border-green-800/40 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
-                <div className="text-3xl mb-3" aria-hidden="true">🔑</div>
+                <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Create Strong Passwords</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">
                   Weak passwords make it easy for scammers to break into your accounts. Learn how to

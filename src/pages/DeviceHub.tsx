@@ -116,6 +116,8 @@ const DeviceHub = () => {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Device Hub' }]} />
       </div>
@@ -191,7 +193,7 @@ const DeviceHub = () => {
             {filteredGuides.length === 0 ? (
               <Card className="rounded-2xl border border-border bg-card">
                 <CardContent className="py-12 text-center">
-                  <p className="text-4xl mb-4">📭</p>
+                  <p className="text-4xl mb-4"></p>
                   <p className="font-medium mb-2">No guides yet for this device</p>
                   <p className="text-sm text-muted-foreground">We're adding new guides regularly. Check back soon!</p>
                 </CardContent>
@@ -232,12 +234,14 @@ const DeviceHub = () => {
 
       {!selectedDevice && (
         <section className="container py-16 text-center">
-          <p className="text-muted-foreground mb-6">👆 Select a device above to see relevant guides</p>
+          <p className="text-muted-foreground mb-6"> Select a device above to see relevant guides</p>
           <Button asChild variant="outline" className="rounded-xl">
             <Link to="/guides">Or browse all {guides.length}+ guides <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
         </section>
       )}
+
+      </main>
 
       <Footer />
     </div>

@@ -117,7 +117,7 @@ export default function Roadmap() {
         path="/roadmap"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-20">
           <div className="container mx-auto px-4 max-w-6xl">

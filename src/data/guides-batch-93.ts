@@ -8,7 +8,7 @@ export const guidesBatch93: Guide[] = [
     category: `essential-skills`,
     tags: [`Microsoft Word`, `Word Online`, `documents`, `free`, `Office 365`],
     readTime: `7 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Word Online is the free, browser-based version of the Word software many people already know. You do not need to buy Microsoft 365 or install anything on your computer to use it. All you need is a free Microsoft account and an internet connection. Word Online runs in your web browser — Chrome, Edge, Firefox, or Safari — and works on Windows, Mac, iPad, or Android.
@@ -57,7 +57,7 @@ If you have a Microsoft account from Xbox, Hotmail, Outlook.com, or a school, yo
     category: `essential-skills`,
     tags: [`Microsoft Excel`, `Excel Online`, `spreadsheet`, `free`, `budgeting`],
     readTime: `8 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Excel Online is the free, web-based version of Microsoft Excel. You access it through your browser at office.com using a free Microsoft account — no software purchase or installation required. It works on Windows, Mac, iPad, and Android, and your work saves automatically to OneDrive.
@@ -106,7 +106,7 @@ The best way to learn Excel is to start with a simple project. A monthly budget 
     category: `essential-skills`,
     tags: [`PowerPoint`, `presentations`, `slides`, `free`, `Office Online`],
     readTime: `7 min`,
-    thumbnailEmoji: `📽️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `PowerPoint Online is Microsoft's free, browser-based presentation tool. You do not need to buy software or install anything. Visit office.com in any web browser, sign in with a free Microsoft account, and you can start building slideshows immediately. Your presentations save automatically to OneDrive, and you can run your slideshow directly from the browser.
@@ -154,7 +154,7 @@ When you are ready to present, you can run your slideshow right in the browser w
     category: `essential-skills`,
     tags: [`Outlook`, `email`, `calendar`, `Microsoft`, `Office 365`],
     readTime: `8 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Outlook is one of the most widely used email and calendar programs in the world. It comes in two forms that can be confusing at first. Outlook.com is the free web-based email service — it works like Gmail but uses a @outlook.com or @hotmail.com address. The Outlook app is the full program that comes with a Microsoft 365 subscription and is also available as a free app on iPhone and Android.
@@ -203,7 +203,7 @@ Setting up Outlook takes just a few minutes, and once your account is configured
     category: `windows-guides`,
     tags: [`Clipchamp`, `video editing`, `Windows`, `free`, `beginner`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Clipchamp is a free video editor that comes built into Windows 11. You do not need to download anything extra or pay for a subscription to use the core features. Microsoft added Clipchamp to Windows 11 in 2022 after acquiring the company. It is designed for people who want to create and edit videos without needing professional video production experience.
@@ -252,7 +252,7 @@ You will need a Microsoft account to use Clipchamp. If you are signed into Windo
     category: `windows-guides`,
     tags: [`Snipping Tool`, `screenshot`, `screen recording`, `Windows`, `how-to`],
     readTime: `6 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Snipping Tool is a free program built into Windows that lets you capture screenshots — pictures of what is on your screen — and record video of your screen. It has been part of Windows for many years, but Microsoft significantly upgraded it in Windows 11 with a new design, a delay timer, an annotation pen, and a screen recording feature.
@@ -301,7 +301,7 @@ Snipping Tool also has an annotation feature that lets you draw on your screensh
     category: `ai-guides`,
     tags: [`Microsoft Designer`, `AI art`, `image generation`, `Copilot`, `graphic design`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Designer is a free AI-powered design tool from Microsoft. You can access it at designer.microsoft.com using a free Microsoft account. It lets you create images from text descriptions, design social media posts, make greeting cards, build flyers, and produce other visual content — without needing any graphic design experience or expensive software like Adobe Photoshop.
@@ -346,7 +346,7 @@ Images you create in Designer are yours to use for personal purposes. Be aware t
     category: `essential-skills`,
     tags: [`scan photos`, `digitize`, `old photos`, `family memories`, `preservation`],
     readTime: `8 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Printed photographs are not permanent. Over time, they fade, yellow, and deteriorate — especially older prints from the 1960s, 70s, and 80s. Many families discover this the hard way when they pull out an old album and find that once-vivid colors have washed out or that entire photos have stuck together. Digitizing your photos — converting them into image files stored on a computer or in the cloud — protects these irreplaceable memories from physical deterioration, fire, floods, and the general wear of time.
@@ -391,7 +391,7 @@ After scanning, the equally important step is organizing and backing up your dig
     category: `phone-guides`,
     tags: [`PhotoScan`, `Google`, `scan photos`, `glare-free`, `digitize`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Anyone who has tried to photograph a printed photo with their phone knows the problem: an annoying bright spot or washed-out area appears where the flash or overhead light reflects off the glossy surface of the print. This glare ruins the photo and cannot be easily removed after the fact.
@@ -436,7 +436,7 @@ The scanning process takes about 10 seconds per photo once you get the hang of i
     category: `life-transitions`,
     tags: [`VHS`, `camcorder`, `digitize`, `family videos`, `preservation`],
     readTime: `9 min`,
-    thumbnailEmoji: `📼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `VHS tapes and camcorder cassettes do not last forever. Most tapes manufactured between 1975 and 2000 are now in a critical window of deterioration. The magnetic material that stores your video can separate from the tape backing, a process sometimes called "sticky shed syndrome." The binder that holds the magnetic particles together also breaks down over time, causing the image quality to degrade irreversibly. Experts estimate that tapes from this era have perhaps 10 to 20 more years before many become unplayable.
@@ -481,7 +481,7 @@ The cost of digitizing varies widely. Professional mail-in services typically ch
     category: `essential-skills`,
     tags: [`tablets`, `seniors`, `iPad`, `Android`, `buying guide`],
     readTime: `8 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A tablet can be a wonderful device for older adults — the large touchscreen is easier to see than a phone, it is lighter and more portable than a laptop, and the touch-based interface feels intuitive for people who are not comfortable with a traditional mouse and keyboard. Video calls with family, reading books or news, watching videos, browsing the web, playing card games, and video chatting with doctors through telehealth services are all activities that work beautifully on a tablet.
@@ -525,7 +525,7 @@ A protective case with a built-in stand is nearly essential — tablets without 
     category: `essential-skills`,
     tags: [`Chromebook`, `laptop`, `Chrome OS`, `buying guide`, `budget laptop`],
     readTime: `7 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A Chromebook is a laptop that runs Chrome OS, an operating system made by Google. Unlike Windows or Mac laptops, a Chromebook does most of its work through web browsers and web-based apps rather than traditional installed software. This makes Chromebooks fast to start up, generally very secure, and significantly cheaper than comparable Windows or Mac laptops — many good Chromebooks sell for $200-$400.
@@ -569,7 +569,7 @@ Most people who buy a Chromebook and use it within its intended scope — web br
     category: `essential-skills`,
     tags: [`iPad`, `Android tablet`, `comparison`, `buying guide`, `tablet`],
     readTime: `7 min`,
-    thumbnailEmoji: `⚖️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Choosing between an iPad and an Android tablet is one of the most common questions people have when shopping for a tablet. The short answer for most people is this: if you use an iPhone, get an iPad. If you use an Android phone, get a Samsung Galaxy Tab or another Android tablet. When your phone and tablet run the same operating system, they work together naturally — sharing photos, contacts, and apps without extra steps.
@@ -613,7 +613,7 @@ Neither platform is inherently better — they are genuinely different tools tha
     category: `internet-connectivity`,
     tags: [`5G home internet`, `T-Mobile`, `Verizon`, `home WiFi`, `no cable`],
     readTime: `7 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `5G home internet is a type of internet service that uses the same cellular network that powers your phone — the same towers that give you 5G signal on your smartphone — to deliver broadband internet to your home. Instead of a traditional cable or DSL line running into your house, a special router (called a gateway) sits in your home near a window, receives the 5G signal from a nearby cell tower, and creates a WiFi network inside your home. Your devices connect to that WiFi just like any other home internet.
@@ -657,7 +657,7 @@ Speed-wise, most 5G home internet customers experience download speeds of 100-30
     category: `internet-connectivity`,
     tags: [`Starlink`, `satellite internet`, `rural internet`, `SpaceX`, `setup`],
     readTime: `8 min`,
-    thumbnailEmoji: `🛰️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Starlink is a satellite internet service operated by SpaceX, Elon Musk's aerospace company. Unlike traditional satellite internet (like HughesNet or Viasat), which uses large satellites in very high orbits, Starlink uses hundreds of smaller satellites in low Earth orbit — much closer to the surface. This dramatically reduces the time it takes for a signal to travel from your dish to the satellite and back, which means Starlink has much lower latency (response time) than older satellite services and feels more like cable internet in daily use.
@@ -701,7 +701,7 @@ The cost of Starlink includes a one-time equipment fee (currently around $349 fo
     category: `internet-connectivity`,
     tags: [`T-Mobile`, `home internet`, `5G`, `no cable`, `setup`],
     readTime: `6 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `T-Mobile Home Internet is a home broadband service that uses T-Mobile's 4G LTE and 5G cellular network — the same network that carries phone calls and mobile data — to deliver internet to your home. A cylindrical gateway device sits in your home, receives the cellular signal, and broadcasts a WiFi network that all your devices can connect to. No technician visit is required, no cable lines need to be run, and setup typically takes under 30 minutes.
@@ -746,7 +746,7 @@ T-Mobile offers a 15-day in-home trial, so you can set up the service, test the 
     category: `internet-connectivity`,
     tags: [`fiber internet`, `fiber optic`, `high speed`, `AT&T Fiber`, `Google Fiber`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Fiber optic internet is widely considered the best home internet technology available today. Instead of transmitting data through copper wire (like traditional cable and DSL) or through radio waves (like 5G home internet and satellite), fiber uses pulses of light traveling through thin glass or plastic cables. Light travels extremely fast and can carry enormous amounts of data, which is why fiber internet can achieve speeds that copper-based systems simply cannot match.
@@ -790,7 +790,7 @@ If fiber is available at your address, it is generally worth switching from cabl
     category: `life-transitions`,
     tags: [`tech gifts`, `seniors`, `older adults`, `gift ideas`, `technology`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Choosing a technology gift for an older adult in your life is a thoughtful idea, but it requires some careful consideration. The best tech gifts for seniors are devices and tools that are genuinely useful in their daily life, work reliably without constant maintenance, have good customer support, and do not require extensive technical knowledge to operate. A gadget that sits in a box because it was too complicated is worse than no gift at all.
@@ -834,7 +834,7 @@ Subscription-based gifts (like a streaming service) should generally not be give
     category: `essential-skills`,
     tags: [`refurbished laptop`, `used laptop`, `save money`, `buying guide`, `certified refurbished`],
     readTime: `7 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A refurbished laptop is a previously owned or returned laptop that has been inspected, repaired if necessary, cleaned, and resold — often at a significantly lower price than a new model. "Certified refurbished" is the most important label to look for: it means a manufacturer, authorized reseller, or recognized third party has gone through a formal testing and inspection process before reselling the device.
@@ -877,7 +877,7 @@ When evaluating a specific refurbished laptop, four things matter most: the proc
     category: `essential-skills`,
     tags: [`Windows`, `Mac`, `buying guide`, `comparison`, `computer`],
     readTime: `8 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Choosing between a Windows PC and a Mac is one of the most common computer buying decisions, and it is one that causes a lot of confusion. The honest answer is that both are excellent, capable computers for everyday use — email, web browsing, video calls, documents, and streaming video all work essentially the same on either platform. The choice comes down to your specific situation: what phone you use, what your budget is, whether you need specific software, and how much you value a consistent experience versus flexibility and choice.

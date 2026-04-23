@@ -467,7 +467,8 @@ const GuideDetail = () => {
         </div>
       )}
 
-      <article className="container py-8 max-w-4xl">
+      <main id="main-content" tabIndex={-1} className="outline-none">
+      <article className="container py-8 max-w-3xl">
         {/* Breadcrumbs */}
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
@@ -639,7 +640,7 @@ const GuideDetail = () => {
                             <h3 className="font-bold text-lg">{step.title}</h3>
                             <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
-                          <div className="text-base text-muted-foreground leading-relaxed">
+                          <div className="text-base text-foreground leading-relaxed">
                             <StepContent text={step.content} />
                           </div>
 
@@ -849,6 +850,7 @@ const GuideDetail = () => {
           )}
         </div>
       </article>
+      </main>
 
       <Footer />
     </div>

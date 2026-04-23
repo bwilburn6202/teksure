@@ -8,7 +8,7 @@ export const guidesBatch94: Guide[] = [
     category: `online-privacy`,
     tags: [`dark web`, `online privacy`, `internet safety`, `deep web`, `tor`],
     readTime: `7 min`,
-    thumbnailEmoji: `🕵️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When people hear the words "dark web," they often picture something dangerous and mysterious. The reality is more nuanced — and understanding it can help you protect yourself online.
@@ -58,7 +58,7 @@ You do not need to visit the dark web yourself to stay safe. The best protection
     category: `online-privacy`,
     tags: [`dark web monitoring`, `identity protection`, `data breach`, `Have I Been Pwned`, `credit monitoring`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `After a company suffers a data breach, the stolen information often appears on dark web marketplaces where criminals buy and sell personal details. Dark web monitoring services watch those marketplaces and alert you if your information shows up — giving you a head start on protecting yourself.
@@ -104,7 +104,7 @@ One alert does not mean disaster. Many people find their old email and password 
     category: `online-privacy`,
     tags: [`data brokers`, `opt out`, `personal information`, `privacy`, `Spokeo`, `WhitePages`],
     readTime: `8 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Have you ever searched your own name online and found your home address, phone number, relatives' names, and even your estimated age listed on a website you never signed up for? Those sites are called data brokers, and they make money by collecting and selling your personal information to anyone willing to pay.
@@ -152,7 +152,7 @@ One frustrating reality: your information will likely reappear. Data brokers re-
     category: `online-privacy`,
     tags: [`private browsing`, `incognito`, `privacy`, `browser`, `tracking`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Most major web browsers offer a private or incognito browsing mode — Chrome calls it Incognito, Firefox calls it Private Window, and Safari calls it Private Browsing. The name makes it sound like no one can see what you are doing. The reality is more limited than that.
@@ -194,7 +194,7 @@ For true privacy from your ISP and the websites you visit, you need a VPN (Virtu
     category: `online-privacy`,
     tags: [`Google privacy`, `My Activity`, `data control`, `delete history`, `Google account`],
     readTime: `6 min`,
-    thumbnailEmoji: `👁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google's services are free because the company uses data about your behavior to show you targeted ads. By default, Google collects quite a lot: every search you run, every YouTube video you watch, your physical location throughout the day, voice activity from Google Assistant, and activity from apps and websites that use Google's advertising system.
@@ -242,7 +242,7 @@ Finally, if you ever want to download everything Google knows about you, use the
     category: `online-banking`,
     tags: [`online banking`, `bank account`, `internet banking`, `setup`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Online banking lets you manage your bank account from your computer or phone without making a trip to the branch. You can check your balance, review recent transactions, transfer money between accounts, pay bills, and deposit checks using your phone's camera. Once it is set up, most everyday banking tasks take only a minute or two.
@@ -288,7 +288,7 @@ What can you do with online banking? Check your balance anytime. Review every tr
     category: `online-banking`,
     tags: [`mobile deposit`, `check deposit`, `bank app`, `remote deposit`, `check`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Mobile check deposit is one of the most useful features of a banking app. Instead of making a trip to a branch or ATM to deposit a paper check, you can deposit it in minutes from home using your phone's camera. The money typically appears in your account within one to two business days.
@@ -332,7 +332,7 @@ After submitting the deposit, the app will display a confirmation message with a
     category: `online-banking`,
     tags: [`bank security`, `online banking safety`, `fraud`, `account protection`, `phishing`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Online banking and mobile apps are genuinely safe when you follow a few key practices. Banks invest heavily in security technology — encryption, fraud detection, and monitoring systems that watch your account around the clock. Your job is to make sure your own habits do not create a weak link.
@@ -379,7 +379,7 @@ Turn on transaction notifications in your bank app. Most banks let you set up pu
     category: `online-banking`,
     tags: [`bill pay`, `online banking`, `automatic payments`, `utility bills`, `bank`],
     readTime: `6 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Paying bills online saves time and eliminates the need for paper checks, stamps, and envelope-licking. There are two ways to do it: through your bank's Bill Pay feature (one central place to pay all your bills), or by going directly to each company's website and setting up payment there.
@@ -425,7 +425,7 @@ You can make one-time payments for any amount, or set up recurring automatic pay
     category: `buying-guides`,
     tags: [`tech specs`, `buying guide`, `specifications`, `RAM`, `storage`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When you are shopping for a laptop, tablet, or desktop computer, the product page is full of numbers and technical terms that can feel overwhelming. The good news is that for most everyday users, only about five of those specs actually matter for how the device will feel to use day to day.
@@ -470,7 +470,7 @@ The fifth is battery life. For a laptop you plan to take anywhere, look for at l
     category: `buying-guides`,
     tags: [`TV`, `buying guide`, `4K`, `OLED`, `smart TV`, `beginners`],
     readTime: `8 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Walk into any electronics store and you will see dozens of televisions with price tags ranging from $200 to $3,000 and specifications full of acronyms. OLED, QLED, 4K, HDR, 120Hz — it sounds like a foreign language. This guide cuts through the marketing and explains what actually affects your viewing experience.
@@ -515,7 +515,7 @@ Smart TV operating systems vary. Roku TV is widely considered the most intuitive
     category: `buying-guides`,
     tags: [`printer`, `buying guide`, `inkjet`, `laser`, `home printer`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Printers have one of the most complicated true costs of any home electronics purchase. The printer itself might be inexpensive, but the ongoing cost of ink or toner can dwarf the purchase price within a year or two. Understanding this upfront is the most important part of buying the right printer.
@@ -561,7 +561,7 @@ Ink subscription services like HP Instant Ink and Epson ReadyPrint charge a mont
     category: `buying-guides`,
     tags: [`router`, `buying guide`, `Wi-Fi`, `mesh`, `home network`],
     readTime: `7 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Your internet service provider delivers a signal to your home, but your router is what takes that signal and spreads it wirelessly throughout your house. A slow or outdated router can limit your internet speed, cause dead zones in certain rooms, and drop connections regularly — even if you are paying for fast internet service.
@@ -605,7 +605,7 @@ If your ISP provides a router as part of your plan, it is often worth replacing 
     category: `tech-explained`,
     tags: [`RAM`, `memory`, `tech specs`, `computers`, `explained`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `RAM stands for Random Access Memory. Despite the technical name, the concept is straightforward: RAM is the temporary workspace your computer uses while it is running programs.
@@ -647,7 +647,7 @@ One important caveat: on most modern laptops, RAM is soldered directly to the mo
     category: `tech-explained`,
     tags: [`SSD`, `HDD`, `storage`, `hard drive`, `tech explained`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If your computer takes a long time to start up, opens programs slowly, or feels sluggish compared to newer machines, the type of storage drive inside is often the reason. The difference between the two main types of storage — HDD and SSD — has a bigger impact on how fast a computer feels than almost any other single component.
@@ -688,7 +688,7 @@ Within SSDs, there is a further distinction. SATA SSDs connect using the same in
     category: `tech-explained`,
     tags: [`resolution`, `4K`, `1080p`, `HD`, `pixels`, `tech explained`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Screen resolution describes how many individual dots of light — called pixels — make up a display. A display with more pixels packs more detail into the same physical area, producing a sharper image. A display with fewer pixels looks slightly rougher at close range, especially when displaying text or fine details.
@@ -728,7 +728,7 @@ Whether you can actually see the difference between resolutions depends on two t
     category: `troubleshooting`,
     tags: [`slow computer`, `fix`, `speed up`, `troubleshooting`, `performance`],
     readTime: `7 min`,
-    thumbnailEmoji: `🐢`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A computer that was fast when you bought it and is now slow did not break — it got bogged down. In most cases, the slowdown has a specific cause that can be identified and fixed without buying a new machine.
@@ -774,7 +774,7 @@ One more fix many people overlook: a true full shutdown and restart. Many people
     category: `troubleshooting`,
     tags: [`Wi-Fi dropping`, `internet fix`, `troubleshooting`, `network`, `connection`],
     readTime: `6 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Few things are more frustrating than a Wi-Fi connection that keeps cutting out — especially during a video call or while streaming a movie. The good news is that most Wi-Fi problems have a finite set of causes, and working through them systematically will resolve the issue in most cases.
@@ -819,7 +819,7 @@ Finally, if only one device is dropping Wi-Fi while others in your home are fine
     category: `troubleshooting`,
     tags: [`phone charging`, `fix`, `troubleshooting`, `battery`, `charging cable`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When your phone stops charging, the first instinct is to assume something is seriously wrong — a dead battery, a faulty phone, or an expensive repair. In reality, the majority of phone charging problems are caused by something much simpler: a bad cable, a dirty charging port, or a temporary software glitch.
@@ -867,7 +867,7 @@ If wireless charging works on your phone but wired does not, the charging port i
     category: `work-from-home`,
     tags: [`work from home`, `home office`, `remote work`, `tech setup`, `productivity`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Working from home full-time or even a few days per week requires a more deliberate tech setup than casual home computer use. Video calls, large file transfers, VPN connections, and hours of focused work all demand more from your equipment and internet connection than streaming a movie or browsing the web.

@@ -94,7 +94,7 @@ export default function Changelog() {
         path="/changelog"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Changelog' }]} />
         </div>

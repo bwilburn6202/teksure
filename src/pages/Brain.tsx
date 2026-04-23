@@ -158,7 +158,7 @@ export default function BrainPage() {
         path="/brain"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
           <div className="container max-w-2xl">
@@ -246,7 +246,7 @@ export default function BrainPage() {
 
                 {result.guides.length === 0 ? (
                   <div className="text-center py-12 rounded-2xl border border-border bg-muted/30">
-                    <p className="text-2xl mb-3">🤔</p>
+                    <p className="text-2xl mb-3"></p>
                     <p className="font-medium mb-2">No exact matches found</p>
                     <p className="text-sm text-muted-foreground mb-4">Try different words or browse all guides.</p>
                     <Button asChild variant="outline" className="rounded-xl gap-2">
@@ -304,7 +304,7 @@ export default function BrainPage() {
             <Card className="mt-8 border-amber-200/60 dark:border-amber-800/30 bg-amber-50/50 dark:bg-amber-950/20">
               <CardContent className="p-5">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl shrink-0">🦙</span>
+                  <span className="text-2xl shrink-0"></span>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">AI answers coming soon</h3>
                     <p className="text-xs text-muted-foreground">
@@ -319,9 +319,9 @@ export default function BrainPage() {
           {/* Info section */}
           <div className="mt-12 grid sm:grid-cols-3 gap-4 text-center">
             {[
-              { emoji: '🔒', title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
-              { emoji: '⚡', title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
-              { emoji: '🦙', title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
+              { emoji: '', title: 'Completely Private', desc: 'No data sent to any server. Search runs in your browser.' },
+              { emoji: '', title: 'Instant Results', desc: `Searches all ${guides.length.toLocaleString()}+ guides in milliseconds.` },
+              { emoji: '', title: 'AI-Enhanced', desc: 'Install Ollama for full AI answers from local models.' },
             ].map(item => (
               <div key={item.title} className="p-4 rounded-xl border border-border bg-muted/30">
                 <div className="text-2xl mb-2">{item.emoji}</div>

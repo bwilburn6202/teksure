@@ -148,9 +148,9 @@ const trees: Record<string, { label: string; icon: typeof Wifi; color: string; i
 /* ── Severity config ─────────────────────────────── */
 
 const severityConfig = {
-  easy: { label: 'Easy Fix', badge: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300', icon: '✅' },
-  medium: { label: 'Moderate', badge: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300', icon: '🔧' },
-  'call-tech': { label: 'Get Help', badge: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300', icon: '📞' },
+  easy: { label: 'Easy Fix', badge: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300', icon: '' },
+  medium: { label: 'Moderate', badge: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300', icon: '' },
+  'call-tech': { label: 'Get Help', badge: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300', icon: '' },
 };
 
 /* ── Main component ─────────────────────────────── */
@@ -277,7 +277,7 @@ export default function Troubleshooter() {
                   className="h-14 text-base gap-2"
                   onClick={() => answer((currentNode as QuestionNode).yes)}
                 >
-                  ✅ Yes
+                   Yes
                 </Button>
                 <Button
                   size="lg"
@@ -285,7 +285,7 @@ export default function Troubleshooter() {
                   className="h-14 text-base gap-2"
                   onClick={() => answer((currentNode as QuestionNode).no)}
                 >
-                  ❌ No
+                   No
                 </Button>
               </div>
 

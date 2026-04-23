@@ -48,7 +48,7 @@ interface Tip {
 const helpTypes: HelpType[] = [
   {
     icon: Library,
-    emoji: '📚',
+    emoji: '',
     title: 'Public libraries',
     description:
       "Almost every public library offers free WiFi, free computer access, and often free tech help classes. Many libraries have 1-on-1 tech tutor appointments you can book ahead — just walk in and ask at the information desk.",
@@ -57,7 +57,7 @@ const helpTypes: HelpType[] = [
   },
   {
     icon: Users,
-    emoji: '👴',
+    emoji: '',
     title: 'Senior centers',
     description:
       'Local senior centers often run weekly tech help sessions, sometimes paired with teen volunteers from nearby schools. Call ahead to confirm the schedule — sessions fill up fast and sometimes require a quick sign-up.',
@@ -68,7 +68,7 @@ const helpTypes: HelpType[] = [
   },
   {
     icon: Heart,
-    emoji: '🏢',
+    emoji: '',
     title: 'AARP chapters',
     description:
       'AARP volunteers across the country offer free tech help, especially around tax time through AARP Tax-Aide. Members and non-members are welcome at most events. Check the local events page for your area.',
@@ -76,7 +76,7 @@ const helpTypes: HelpType[] = [
   },
   {
     icon: HandHeart,
-    emoji: '🙌',
+    emoji: '',
     title: 'Nonprofit organizations',
     description:
       'Dedicated nonprofits offer structured tech training for older adults and underserved communities. Cyber-Seniors connects teens with seniors, OATS (now Senior Planet) runs in-person classes, and Human-I-T focuses on low-income households.',
@@ -85,14 +85,14 @@ const helpTypes: HelpType[] = [
   },
   {
     icon: Church,
-    emoji: '⛪',
+    emoji: '',
     title: 'Faith & community groups',
     description:
       "Churches, mosques, synagogues, and community centers often run tech help programs as part of their outreach work. If you belong to a religious community, ask at the front office — and if you don't, many programs welcome everyone regardless of faith.",
   },
   {
     icon: GraduationCap,
-    emoji: '🎓',
+    emoji: '',
     title: 'Schools & library partnerships',
     description:
       'Some high schools, colleges, and universities pair students with seniors needing tech help as part of community service or service-learning programs. Call your local high school or community college and ask about tech buddy programs.',
@@ -139,7 +139,7 @@ const TechHelpNearMe = () => {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-1.5 text-sm font-medium mb-4">

@@ -142,7 +142,7 @@ export default function Webinars() {
   const handleRegister = (webinar: Webinar) => {
     setRegistered(prev => new Set([...prev, webinar.id]));
     toast({
-      title: 'You\'re registered! 🎉',
+      title: 'You\'re registered! ',
       description: `We\'ll send a reminder to your email before "${webinar.title}" starts.`,
     });
   };
@@ -156,7 +156,7 @@ export default function Webinars() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">

@@ -131,6 +131,8 @@ const Glossary = () => {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       <div className="max-w-4xl mx-auto pt-4 px-4">
         <PageBreadcrumb segments={[{ label: 'Glossary' }]} />
       </div>
@@ -189,7 +191,7 @@ const Glossary = () => {
       <section className="py-16 md:py-20 px-4">
         {filtered.length === 0 ? (
           <div className="text-center py-16">
-            <p className="text-4xl mb-4">🔍</p>
+            <p className="text-4xl mb-4"></p>
             <p className="text-lg font-medium mb-2">No terms found</p>
             <p className="text-muted-foreground">Try a different search term.</p>
           </div>
@@ -218,7 +220,7 @@ const Glossary = () => {
                         <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
                         {item.analogy && (
                           <p className="text-xs text-primary flex items-start gap-2">
-                            <span className="shrink-0 mt-0.5">💡</span>
+                            <span className="shrink-0 mt-0.5"></span>
                             <span className="italic">{item.analogy}</span>
                           </p>
                         )}
@@ -231,6 +233,8 @@ const Glossary = () => {
           </div>
         )}
       </section>
+
+      </main>
 
       <Footer />
     </div>

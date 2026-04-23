@@ -8,7 +8,7 @@ export const guidesBatch54: Guide[] = [
     category: `communication`,
     tags: [`whatsapp`, `backup`, `google drive`, `icloud`, `android`, `iphone`, `chat`],
     readTime: `6 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `WhatsApp stores all of your text conversations, photos, and voice messages on your phone. If your phone is lost, stolen, or replaced, those messages disappear unless you have a backup saved somewhere safe. The good news is that WhatsApp can automatically back up your chats to cloud storage — Google Drive if you use an Android phone, or iCloud if you have an iPhone. Once the backup is set up, your messages are protected and can be restored the next time you sign into WhatsApp on any phone.
@@ -56,7 +56,7 @@ It is a good habit to check that your backup is actually working from time to ti
     category: `communication`,
     tags: [`telegram`, `messaging`, `groups`, `channels`, `secret chats`, `app`],
     readTime: `7 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Telegram is a free messaging app that works on iPhones, Android phones, computers, and tablets. You can send text messages, photos, videos, documents, and voice messages. Unlike some other apps, Telegram does not show you advertisements in your personal chats and it works smoothly even on older phones with slow internet connections.
@@ -98,7 +98,7 @@ Telegram is available as a free download from the Apple App Store or Google Play
     category: `communication`,
     tags: [`signal`, `privacy`, `disappearing messages`, `secure messaging`, `encryption`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Signal is a free messaging app built with privacy as its top priority. Every message, phone call, and video call made through Signal is encrypted end-to-end, which means only you and the person you are talking with can read or hear the conversation — not even Signal itself can access your messages. Signal is recommended by security researchers, journalists, and privacy advocates around the world.
@@ -147,7 +147,7 @@ Because Signal stores almost nothing on its servers, the app keeps your conversa
     category: `phone-guides`,
     tags: [`iphone`, `photos`, `background removal`, `ios 16`, `cut out`, `image editing`],
     readTime: `4 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your iPhone is running iOS 16 or newer, it has a built-in tool that can separate the main subject of a photo from its background in seconds. You do not need any extra apps or subscriptions — the feature is built right into the Photos app and the photo viewer.
@@ -187,7 +187,7 @@ The entire process takes only a couple of taps, and the original photo is never 
     category: `mac-guides`,
     tags: [`mac`, `preview`, `annotate`, `pdf`, `highlight`, `shapes`, `notes`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Preview is the app that comes built into every Mac for viewing PDFs, images, and other documents. Most people know it as a viewer, but it also has a full set of annotation tools that let you mark up files without needing a paid program like Adobe Acrobat.
@@ -235,7 +235,7 @@ These tools work for both PDFs and images, making Preview a handy all-in-one opt
     category: `mac-guides`,
     tags: [`mac`, `preview`, `sign pdf`, `signature`, `digital signature`, `pdf`],
     readTime: `5 min`,
-    thumbnailEmoji: `✍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Signing a document used to mean printing it out, signing it with a pen, and then scanning it back in. On a Mac, you can skip all of that. The Preview app — which comes installed on every Mac — has a built-in signature tool that lets you sign PDFs in seconds.
@@ -283,7 +283,7 @@ The whole process takes about two minutes once your signature is saved, and the 
     category: `essential-skills`,
     tags: [`pdf`, `save as pdf`, `print to pdf`, `iphone`, `android`, `mac`, `windows`],
     readTime: `6 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A PDF (which stands for Portable Document Format) is a type of file that looks the same on every device and every screen. When you save something as a PDF, the layout, fonts, and images stay exactly as they appeared. PDFs are great for saving important information — like a receipt, a form, an article, or an email — so you can read it later or share it with someone else.
@@ -325,7 +325,7 @@ You can also use this technique to save email confirmations, online receipts, bo
     category: `entertainment`,
     tags: [`chess`, `chess.com`, `lichess`, `online games`, `free games`, `board games`],
     readTime: `7 min`,
-    thumbnailEmoji: `♟️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Chess is one of the oldest and most popular board games in the world, and today you can play it for free online against other people or against a computer. The two best websites for beginners are Chess.com and Lichess.org. Both are free to use, work on phones and computers, and have versions designed for people who have never played before.
@@ -373,7 +373,7 @@ You can play directly in your web browser without downloading anything, or insta
     category: `entertainment`,
     tags: [`games`, `seniors`, `word games`, `puzzle games`, `card games`, `free`, `mobile games`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎮`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Free mobile games are a great way to stay mentally active, pass the time, and have fun. The best games for people who are new to smartphones are ones that are straightforward to learn, do not require fast reflexes, and do not pressure you to spend money. This guide covers games across four popular categories: word games, number puzzles, card games, and trivia.
@@ -418,7 +418,7 @@ Many people find that starting their morning with a short word game or puzzle is
     category: `phone-guides`,
     tags: [`samsung`, `galaxy`, `camera`, `pro mode`, `scene optimizer`, `selfie`, `photography`],
     readTime: `6 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Samsung Galaxy phones have some of the most capable cameras in the smartphone market, but many owners only ever use the basic automatic mode. Learning a few extra camera features can make a noticeable difference in the quality of your photos.
@@ -462,7 +462,7 @@ These tips apply to most Samsung Galaxy phones released in the last few years, i
     category: `phone-guides`,
     tags: [`iphone`, `action mode`, `video`, `stabilization`, `iphone 14`, `camera`, `ios`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Action Mode is a video recording feature introduced on the iPhone 14 that uses advanced digital image stabilization to keep your video smooth even when the camera is moving a lot. If you have ever tried to film while walking, running, or following a fast-moving subject, you know how shaky the results can be. Action Mode dramatically reduces that shake, producing video that looks much steadier without needing a tripod or gimbal.
@@ -506,7 +506,7 @@ Turning it on takes a single tap, and you can switch it on or off mid-session de
     category: `app-guides`,
     tags: [`google photos`, `video`, `editing`, `trim`, `android`, `iphone`, `cloud backup`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos is a free app that automatically backs up your photos and videos to Google's cloud storage. It comes pre-installed on most Android phones and is available as a free download for iPhone. Once your videos are backed up, you can access them from any device, and you never have to worry about losing them if your phone is damaged or replaced.
@@ -550,7 +550,7 @@ If you have an older Android phone, Google Photos may already be managing your c
     category: `phone-guides`,
     tags: [`iphone`, `contacts`, `icloud`, `backup`, `sync`, `restore`],
     readTime: `4 min`,
-    thumbnailEmoji: `📇`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone contacts are important — they contain the phone numbers and email addresses of everyone you know. If your phone is lost, stolen, or breaks, having a backup means you can get all of those contacts back on a new phone without starting from scratch.
@@ -594,7 +594,7 @@ If you have contacts stored in other accounts — like Gmail or Outlook — thos
     category: `entertainment`,
     tags: [`audible`, `audiobooks`, `amazon`, `listening`, `books`, `iphone`, `android`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Audible is an app from Amazon that lets you listen to audiobooks — professionally narrated recordings of books — on your phone, tablet, or computer. Instead of reading, you listen. You can enjoy audiobooks while driving, doing chores, going for a walk, or relaxing at home.
@@ -639,7 +639,7 @@ For people who find reading on screens tiring, or who have difficulty reading sm
     category: `app-guides`,
     tags: [`eventbrite`, `events`, `community`, `meetups`, `tickets`, `local events`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎟️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Eventbrite is a free app and website that lists thousands of events happening in your area — from free community classes and outdoor festivals to paid concerts and workshops. It is used by event organizers of all kinds, from local libraries hosting book clubs to large concert venues selling tickets.
@@ -687,7 +687,7 @@ Setting up an Eventbrite account is straightforward and only requires an email a
     category: `tips-tricks`,
     tags: [`photopea`, `photo editing`, `free`, `online tool`, `browser`, `photoshop alternative`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Photopea is a free photo editing tool that runs entirely in your web browser. You do not need to download or install anything, and you do not need to create an account. Go to photopea.com, and you can start editing photos straight away.
@@ -737,7 +737,7 @@ Photopea works on Mac, Windows, Chromebook, and iPad. On a phone, the screen may
     category: `phone-guides`,
     tags: [`android`, `contacts`, `google`, `backup`, `sync`, `restore`],
     readTime: `4 min`,
-    thumbnailEmoji: `📒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Android phone's contacts contain years of saved phone numbers and email addresses. If your phone is lost, broken, or replaced, those contacts could all disappear — unless they are backed up to your Google account.
@@ -781,7 +781,7 @@ Google account sync uses very little data and runs in the background — you wil
     category: `essential-skills`,
     tags: [`excel`, `microsoft`, `spreadsheet`, `mobile`, `iphone`, `android`, `office`],
     readTime: `6 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Excel is one of the most widely used tools for tracking numbers, making lists, and organizing information. The full desktop version requires a paid Microsoft 365 subscription, but the mobile app for iPhone and Android is free for personal use on screens smaller than 10.1 inches.
@@ -829,7 +829,7 @@ Excel on a phone can feel a little tight on a small screen because spreadsheets 
     category: `communication`,
     tags: [`google meet`, `video call`, `meetings`, `beginner`, `free`, `google`, `video chat`],
     readTime: `6 min`,
-    thumbnailEmoji: `📹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Meet is a free video calling service from Google. You can use it to have face-to-face conversations with friends and family anywhere in the world, hold virtual meetings, or join group calls with multiple people. It works on iPhone, Android phones, computers, and tablets.
@@ -880,7 +880,7 @@ Video calling does use internet data. A typical one-hour video call uses about 1
     category: `tips-tricks`,
     tags: [`adobe express`, `graphic design`, `flyer`, `social media`, `free`, `templates`, `design`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Adobe Express (previously called Adobe Spark) is a free design tool from Adobe that lets you create social media posts, flyers, invitations, posters, and more — even if you have no design experience. It works in a web browser and as a free app on iPhone and Android.

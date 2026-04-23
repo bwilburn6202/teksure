@@ -232,7 +232,7 @@ const TREE: Record<string, RecoveryNode> = {
       summary: 'From any device already logged in, you can update your contact information and then reset your password.',
       steps: [
         { text: 'On the logged-in device, open Facebook and go to your profile.' },
-        { text: 'Tap the three-line menu (☰) and go to Settings → Personal Information.' },
+        { text: 'Tap the three-line menu () and go to Settings → Personal Information.' },
         { text: 'Under "Contact info", add an email address or phone number you have access to today.' },
         { text: 'Confirm the new contact info when Facebook sends a verification code to it.' },
         { text: 'Now go to a different browser or device, visit facebook.com, and click "Forgot password?".' },

@@ -129,31 +129,31 @@ interface Recommendation {
 function getRecommendations(answers: Record<string, number>): Recommendation[] {
   const recs: Recommendation[] = [];
   if ((answers['q1'] ?? 2) < 2) {
-    recs.push({ emoji: '🔠', title: 'Increase text size', description: 'Use TekSure\'s font size toggle (the "A" button in the top bar) to make text bigger across the whole site. On your device: iPhone → Settings → Display & Brightness → Text Size.', guideSlug: 'accessibility-settings', guideLabel: 'Accessibility Guide' });
+    recs.push({ emoji: '', title: 'Increase text size', description: 'Use TekSure\'s font size toggle (the "A" button in the top bar) to make text bigger across the whole site. On your device: iPhone → Settings → Display & Brightness → Text Size.', guideSlug: 'accessibility-settings', guideLabel: 'Accessibility Guide' });
   }
   if ((answers['q2'] ?? 2) < 2) {
-    recs.push({ emoji: '🌙', title: 'Try Dark Mode', description: 'Dark mode reduces eye strain significantly. Use the moon icon in the TekSure top bar to enable it. On iPhone: Settings → Display & Brightness → Dark. On Android: Settings → Display → Dark theme.' });
+    recs.push({ emoji: '', title: 'Try Dark Mode', description: 'Dark mode reduces eye strain significantly. Use the moon icon in the TekSure top bar to enable it. On iPhone: Settings → Display & Brightness → Dark. On Android: Settings → Display → Dark theme.' });
   }
   if ((answers['q3'] ?? 2) < 2) {
-    recs.push({ emoji: '🔊', title: 'Adjust device volume & audio', description: 'On iPhone: Settings → Sounds & Haptics → Ringtone and Alerts volume. On Android: press the volume button and tap the settings icon. Also consider Bluetooth hearing aids which connect directly to modern smartphones.' });
+    recs.push({ emoji: '', title: 'Adjust device volume & audio', description: 'On iPhone: Settings → Sounds & Haptics → Ringtone and Alerts volume. On Android: press the volume button and tap the settings icon. Also consider Bluetooth hearing aids which connect directly to modern smartphones.' });
   }
   if ((answers['q4'] ?? 2) === 0) {
-    recs.push({ emoji: '💬', title: 'Turn on automatic captions', description: 'YouTube, Netflix, and most streaming services offer free automatic captions. On iPhone/iPad you can also enable "Live Captions" in Settings → Accessibility → Live Captions.' });
+    recs.push({ emoji: '', title: 'Turn on automatic captions', description: 'YouTube, Netflix, and most streaming services offer free automatic captions. On iPhone/iPad you can also enable "Live Captions" in Settings → Accessibility → Live Captions.' });
   }
   if ((answers['q5'] ?? 2) < 2) {
-    recs.push({ emoji: '👆', title: 'Enable touch accessibility options', description: 'iPhone: Settings → Accessibility → Touch → "Touch Accommodations" (holds presses longer before registering). Android: Settings → Accessibility → Interaction controls → Touch & hold delay.' });
+    recs.push({ emoji: '', title: 'Enable touch accessibility options', description: 'iPhone: Settings → Accessibility → Touch → "Touch Accommodations" (holds presses longer before registering). Android: Settings → Accessibility → Interaction controls → Touch & hold delay.' });
   }
   if ((answers['q6'] ?? 2) === 0) {
-    recs.push({ emoji: '🎙️', title: 'Try voice commands', description: 'iPhone: Activate Siri with "Hey Siri". Android: say "Hey Google". You can open apps, send messages, make calls, and more — entirely hands-free.' });
+    recs.push({ emoji: '', title: 'Try voice commands', description: 'iPhone: Activate Siri with "Hey Siri". Android: say "Hey Google". You can open apps, send messages, make calls, and more — entirely hands-free.' });
   }
   if ((answers['q7'] ?? 2) < 2) {
-    recs.push({ emoji: '🧘', title: 'Reduce visual clutter', description: 'iPhone: Settings → Accessibility → Display & Text Size → Reduce Motion + Reduce Transparency. Android: Settings → Accessibility → Visibility enhancements → Remove animations.' });
+    recs.push({ emoji: '', title: 'Reduce visual clutter', description: 'iPhone: Settings → Accessibility → Display & Text Size → Reduce Motion + Reduce Transparency. Android: Settings → Accessibility → Visibility enhancements → Remove animations.' });
   }
   if ((answers['q9'] ?? 2) < 2) {
-    recs.push({ emoji: '🎨', title: 'Use color filters', description: 'iPhone: Settings → Accessibility → Display & Text Size → Color Filters. Choose "Deuteranopia" (red-green), "Protanopia", or "Tritanopia" depending on your color blindness type.' });
+    recs.push({ emoji: '', title: 'Use color filters', description: 'iPhone: Settings → Accessibility → Display & Text Size → Color Filters. Choose "Deuteranopia" (red-green), "Protanopia", or "Tritanopia" depending on your color blindness type.' });
   }
   if ((answers['q8'] ?? 2) < 2) {
-    recs.push({ emoji: '📚', title: 'Browse TekSure guides', description: 'Our step-by-step guides are designed to be easy to follow. Save the guides you use most to Favorites so you can find them again easily.', guideSlug: 'guides', guideLabel: 'Browse all guides' });
+    recs.push({ emoji: '', title: 'Browse TekSure guides', description: 'Our step-by-step guides are designed to be easy to follow. Save the guides you use most to Favorites so you can find them again easily.', guideSlug: 'guides', guideLabel: 'Browse all guides' });
   }
   return recs;
 }
@@ -244,7 +244,7 @@ export default function AccessibilityCheck() {
                         : 'bg-muted border-border text-muted-foreground'
                     }`}
                   >
-                    {count === total ? '✓ ' : ''}{cat}
+                    {count === total ? ' ' : ''}{cat}
                   </span>
                 ))}
               </div>

@@ -8,7 +8,7 @@ export const guidesBatch50: Guide[] = [
     category: `how-to`,
     tags: [`qr code`, `business card`, `website`, `free tools`, `sharing`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A QR code is a square pattern of black and white dots that your phone camera can read. When someone points their phone at a QR code, it opens a website, shows contact information, or performs another action automatically. You do not need to type any address — the phone does all the work.
@@ -64,7 +64,7 @@ Always test your QR code after creating it. Use your phone camera to scan it and
     category: `communication`,
     tags: [`video call`, `zoom`, `facetime`, `google meet`, `lighting`, `webcam`],
     readTime: `5 min`,
-    thumbnailEmoji: `💡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have ever joined a video call and noticed that you looked dark, blurry, or washed out, you are not alone. Lighting and camera angle make a bigger difference than most people realize. The good news is that you can improve how you look on any video call — Zoom, FaceTime, Google Meet, or anything else — without spending much money at all.
@@ -114,7 +114,7 @@ A few minutes of setup before important calls can make you look more confident, 
     category: `phone-guides`,
     tags: [`business card`, `contacts`, `iphone`, `android`, `google lens`, `live text`],
     readTime: `5 min`,
-    thumbnailEmoji: `📇`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Typing out a new contact from a business card is tedious and easy to get wrong. Your phone can do this work for you automatically. Whether you have an iPhone or an Android phone, there is a built-in way to point your camera at a business card and have the phone read the name, phone number, email address, and website — then save it all as a contact with one tap.
@@ -157,7 +157,7 @@ After saving, always open the new contact record to check that the phone number 
     category: `app-guides`,
     tags: [`microsoft lens`, `scan documents`, `pdf`, `receipts`, `whiteboard`, `android`, `iphone`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft Lens is a free app made by Microsoft that turns your phone camera into a high-quality document scanner. Unlike simply taking a photo of a document, Microsoft Lens automatically adjusts perspective, sharpens the text, removes shadows, and saves the result as a clean PDF or image file. It is available for both iPhone and Android and costs nothing to download or use.
@@ -205,7 +205,7 @@ The app is free and does not put watermarks on your scans, which is a significan
     category: `phone-guides`,
     tags: [`apple watch`, `watch face`, `complications`, `customization`, `wearable`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Apple Watch face is the screen you see every time you raise your wrist. Apple lets you change not just how it looks, but what information it shows you — all without touching your iPhone. You can have a simple clock face for casual wear and a detailed one for days when you want to track your health, weather, or calendar at a glance.
@@ -252,7 +252,7 @@ Apple Watch also lets you manage faces through the Watch app on your iPhone, whi
     category: `app-guides`,
     tags: [`google photos`, `partner sharing`, `photo sharing`, `family`, `android`, `iphone`],
     readTime: `5 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos Partner Sharing is a feature that lets you share your photo library with one specific person automatically. Instead of manually sending photos one by one, you set it up once and your photos flow to your chosen partner's Google Photos account as soon as you take them — or you can share only specific photos that meet criteria you set.
@@ -306,7 +306,7 @@ This feature removes the hassle of texting photos individually. Once set up, it 
     category: `app-guides`,
     tags: [`amazon`, `amazon household`, `prime`, `prime video`, `family sharing`, `prime benefits`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `An Amazon Prime membership costs money every month or year, but you do not have to pay for two memberships for two adults in the same house. Amazon Household is a free feature that lets one Prime member share most of their Prime benefits with one other adult — and also with up to four children — all under one household arrangement.
@@ -357,7 +357,7 @@ One important note: the other adult you add must actually live in the same house
     category: `financial-tech`,
     tags: [`amazon`, `subscriptions`, `subscribe and save`, `cancel subscription`, `recurring orders`],
     readTime: `5 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon makes it very convenient to subscribe to products — household supplies, vitamins, pet food, coffee, and hundreds of other items available on an automatic recurring schedule at a discount. This feature is called Subscribe and Save. But over time, subscriptions can add up, and you may not even remember what you have signed up for. Reviewing and managing these subscriptions is straightforward once you know where to look.
@@ -404,7 +404,7 @@ Reviewing your subscriptions every few months is good practice. You may find ite
     category: `phone-guides`,
     tags: [`iphone`, `battery health`, `battery life`, `charging`, `optimized charging`, `ios`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `All rechargeable batteries wear out over time. Your iPhone battery has a limited number of charge cycles, and each full charge cycle slowly reduces how much charge it can hold. A brand new iPhone battery is rated at 100% capacity. Most Apple support guidance suggests that battery health above 80% is considered normal — but once it drops below that, your phone may struggle to last through the day or may shut off unexpectedly at low charge levels.
@@ -452,7 +452,7 @@ Several features on your iPhone consume battery faster than others. Keeping scre
     category: `phone-guides`,
     tags: [`android`, `battery health`, `battery life`, `charging`, `battery tips`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android phones use lithium-ion batteries — the same technology found in iPhones, laptops, and electric cars. These batteries are very capable, but they do degrade over time. How quickly they degrade depends significantly on how you charge and use the phone.
@@ -500,7 +500,7 @@ After two to three years of normal use, most Android phone batteries will hold n
     category: `financial-tech`,
     tags: [`paypal`, `send money`, `mobile payments`, `request payment`, `paypal app`],
     readTime: `6 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `PayPal is one of the oldest and most trusted services for sending money between people online. You do not need to share your bank account number or credit card details with the person you are paying — PayPal handles that part securely. The recipient only needs to know your email address or phone number, and you only need to know theirs.
@@ -549,7 +549,7 @@ Your PayPal balance sits in your PayPal account, separate from your bank account
     category: `financial-tech`,
     tags: [`google pay`, `google wallet`, `send money`, `mobile payments`, `request payment`],
     readTime: `5 min`,
-    thumbnailEmoji: `💸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Pay (now officially called Google Wallet in most contexts, though the payment features are still referred to as Google Pay) lets you send money to other people directly from your bank account or debit card. It works on Android phones and through the Google Pay website on a computer.
@@ -602,7 +602,7 @@ Google Pay is best for personal payments between people you know. For buying thi
     category: `essential-skills`,
     tags: [`transit card`, `apple wallet`, `google wallet`, `public transit`, `subway`, `bus`, `contactless payment`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Many cities across the United States now let you use your phone to pay for public transit — buses, subways, commuter rail, and light rail — instead of carrying a physical transit card or fumbling for exact change. The technology is called contactless payment, and it works by holding your phone near a small reader at the fare gate or on the bus. The payment happens in less than a second.
@@ -658,7 +658,7 @@ Adding money to your digital transit card is done through the transit system's a
     category: `phone-guides`,
     tags: [`spam calls`, `android`, `google phone`, `call blocking`, `robocalls`, `spam protection`],
     readTime: `5 min`,
-    thumbnailEmoji: `📵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Unwanted spam calls are one of the most frustrating parts of having a phone. Robocalls from fake warranty companies, scam calls pretending to be the IRS or Social Security Administration, and endless telemarketing calls interrupt your day and waste your time. Android phones have built-in tools to fight back.
@@ -705,7 +705,7 @@ No system catches every spam call, but enabling these features significantly red
     category: `essential-skills`,
     tags: [`refurbished phone`, `pre-owned phone`, `used phone`, `buy phone`, `iphone`, `android`, `save money`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Buying a refurbished or pre-owned phone is a sensible way to get a quality smartphone at a lower price. A refurbished phone is one that was returned, repaired, and inspected — often looking and working like new — but sold for significantly less than the original retail price. A pre-owned phone is one that was used and resold, which may or may not have been professionally inspected.
@@ -756,7 +756,7 @@ A good refurbished phone from a reputable source can provide years of reliable u
     category: `phone-guides`,
     tags: [`iphone`, `focus mode`, `focus filters`, `home screen`, `ios`, `do not disturb`, `work life balance`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎯`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `iPhone Focus Modes let you create different "modes" for different parts of your day — Work, Personal, Sleep, Fitness, or custom ones you create yourself. When a Focus mode is active, only certain people and apps can send you notifications, reducing interruptions.
@@ -810,7 +810,7 @@ Getting the most out of Focus Filters takes some initial setup time, but once co
     category: `phone-guides`,
     tags: [`android`, `work profile`, `work apps`, `privacy`, `samsung`, `pixel`, `enterprise`],
     readTime: `6 min`,
-    thumbnailEmoji: `💼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Android Work Profile is a feature built into Android that creates a completely separate, secure space on your phone for work apps and data. Think of it as having two phones in one — a personal phone and a work phone — but on a single device. Apps and data in the work profile are isolated from your personal apps, and vice versa.
@@ -860,7 +860,7 @@ A key benefit is the ability to pause the work profile. Swiping down your notifi
     category: `windows-guides`,
     tags: [`windows`, `clipboard history`, `copy paste`, `productivity`, `windows 11`, `windows 10`],
     readTime: `5 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most people know how to copy and paste — you copy something, then paste it once, and the copied item is gone the moment you copy something new. But Windows has a hidden feature called Clipboard History that saves everything you copy for later, so you can go back and paste any of the last 25 items you copied, in any order.
@@ -914,7 +914,7 @@ Text from passwords or sensitive information should not be copied and left in Cl
     category: `app-guides`,
     tags: [`google keep`, `notes app`, `organization`, `reminders`, `labels`, `productivity`],
     readTime: `6 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Keep is a free note-taking app from Google that works on Android phones, iPhones, and computers at keep.google.com. Many people use it for basic jotting down of ideas or shopping lists, but Keep has several features that make it much more useful as an organizational tool.
@@ -966,7 +966,7 @@ Archived notes do not clutter your main Keep view but remain searchable. When a 
     category: `essential-skills`,
     tags: [`apple maps`, `public transit`, `subway`, `bus`, `iphone`, `directions`, `commute`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Maps on iPhone includes a transit mode that gives you step-by-step directions using public transportation — buses, subways, trains, and ferries. If you are in a city with transit data available, Apple Maps can show you exactly which subway line to take, which stop to get off at, how long to walk to and from stations, and when the next departure is.

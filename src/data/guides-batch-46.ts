@@ -8,7 +8,7 @@ export const guidesBatch46: Guide[] = [
     category: `phone-guides`,
     tags: [`iphone`, `conference call`, `merge calls`, `three-way call`, `phone`],
     readTime: `4 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A conference call lets three or more people talk together in the same phone call. On iPhone, you can add a second person while already in a call — no special app needed. The feature is built into the standard Phone app and works with any phone number.
@@ -52,7 +52,7 @@ Note that conference calls using the Phone app are not encrypted like FaceTime c
     category: `phone-guides`,
     tags: [`android`, `conference call`, `merge calls`, `three-way call`, `phone`],
     readTime: `4 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Making a three-way conference call on Android works similarly to iPhone — you call the first person, add a second call, and then merge them together. The feature is built into the standard Phone app and works on Samsung, Google Pixel, Motorola, and most other Android phones.
@@ -95,7 +95,7 @@ Samsung phones have a slightly different interface where the merge option may ap
     category: `essential-skills`,
     tags: [`google forms`, `survey`, `rsvp`, `form`, `free`, `questionnaire`, `beginners`],
     readTime: `6 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Forms is a free tool included with every Google account that lets you create online surveys, RSVP forms, sign-up sheets, polls, quizzes, and more. You design the form, share the link, and responses are collected automatically in a spreadsheet — no paper, no tallying, no emailing back and forth.
@@ -142,7 +142,7 @@ Forms are free for individuals with a Google account. There are no limits on the
     category: `essential-skills`,
     tags: [`gmail`, `filters`, `inbox`, `organize`, `auto-sort`, `rules`, `email`],
     readTime: `5 min`,
-    thumbnailEmoji: `📬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Gmail filters are rules you set up that automatically do things to incoming emails — moving them to a folder, applying a label, marking them as read, or archiving them. Once set, filters work in the background forever, keeping your inbox organized without any effort from you.
@@ -186,7 +186,7 @@ This is one of the most powerful inbox management features in Gmail and requires
     category: `phone-guides`,
     tags: [`google pixel`, `android`, `pixel tips`, `call screen`, `magic eraser`, `features`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Pixel phones run the purest version of Android and include exclusive features built by Google that do not exist on Samsung, Motorola, or other Android phones. Many Pixel owners use their phone for years without knowing about these powerful built-in tools.
@@ -233,7 +233,7 @@ These are just a few of the features that make Pixel phones uniquely useful.`,
     category: `tips-tricks`,
     tags: [`iphone`, `portrait mode`, `camera`, `photo`, `blur`, `bokeh`, `photography`],
     readTime: `5 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Portrait Mode is a camera feature on iPhone that separates the subject from the background, blurring the background to create a shallow depth-of-field effect — the professional look you see in magazine photographs and formal portraits.
@@ -276,7 +276,7 @@ Portrait Mode also includes several lighting effects: Natural Light (the default
     category: `tips-tricks`,
     tags: [`android`, `night mode`, `camera`, `low light`, `photography`, `dark photos`],
     readTime: `4 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Taking photos in the dark used to mean grainy, blurry, nearly unusable images. Night Mode changes that completely. Available on most Android phones sold since 2019, Night Mode captures several photos in quick succession and combines them to produce a bright, sharp image in situations where the standard camera would struggle.
@@ -320,7 +320,7 @@ For outdoor night scenes like city streets, restaurant lighting, or holiday ligh
     category: `tips-tricks`,
     tags: [`iphone`, `camera`, `timer`, `burst mode`, `self-timer`, `action shots`],
     readTime: `4 min`,
-    thumbnailEmoji: `⏱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Two of the most useful but often overlooked iPhone camera features are the self-timer and Burst Mode.
@@ -360,7 +360,7 @@ Both features work in standard Photo mode — no need to switch to a special mod
     category: `health-tech`,
     tags: [`apple watch`, `health`, `seniors`, `heart rate`, `fall detection`, `steps`, `ecg`],
     readTime: `7 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Watch is one of the most capable personal health monitors available without a prescription. It continuously tracks your heart rate, counts your steps and movement, monitors blood oxygen levels (on newer models), alerts you to irregular heart rhythms, detects falls, and tracks sleep — all from your wrist.
@@ -408,7 +408,7 @@ The Watch charges every night on a small magnetic charger — most people charge
     category: `tips-tricks`,
     tags: [`google maps`, `saved places`, `favorites`, `starred places`, `navigation`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Maps lets you save any location to your personal lists so you can find it again without searching. You can save places to a "Favorites" list, a "Want to go" list, a custom "Starred places" list, or create your own named lists.
@@ -451,7 +451,7 @@ Starred places are the simplest — a star symbol marks the location on the map 
     category: `tips-tricks`,
     tags: [`iphone`, `spotlight`, `search`, `find`, `quick search`, `siri suggestions`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Spotlight is iPhone's universal search feature. Pull it up with a swipe and you can find virtually anything on or related to your phone in seconds — without tapping through apps or menus.
@@ -494,7 +494,7 @@ For apps, Spotlight is faster than searching your home screen pages. Type the fi
     category: `windows-guides`,
     tags: [`windows`, `storage sense`, `disk space`, `free up space`, `pc maintenance`, `storage`],
     readTime: `4 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Over time, Windows accumulates gigabytes of temporary files, old system files, cached data, and Recycle Bin items that serve no purpose but take up storage space. Storage Sense is a built-in Windows feature that automatically cleans up this clutter on a schedule — so your PC stays healthy without you having to do anything.
@@ -538,7 +538,7 @@ On computers with a small solid-state drive (128GB or 256GB), Storage Sense can 
     category: `tips-tricks`,
     tags: [`android`, `smart lock`, `trusted places`, `google`, `convenience`, `security`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Smart Lock is a set of features that reduce how often you need to unlock your Android phone or re-enter passwords — while keeping your account secure.
@@ -578,7 +578,7 @@ Smart Lock does not replace a strong lock screen — it works alongside it. You 
     category: `tips-tricks`,
     tags: [`iphone`, `flashlight`, `torch`, `control center`, `brightness`, `tips`],
     readTime: `3 min`,
-    thumbnailEmoji: `🔦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone has a powerful LED flashlight built into the back camera flash. It is one of the most-used features on any phone — great for finding something in a dark room, reading a menu in a dim restaurant, looking under furniture, or walking to the car at night.
@@ -615,7 +615,7 @@ The flashlight uses the camera flash LED, which runs warm during extended use. Y
     category: `tips-tricks`,
     tags: [`iphone`, `text message`, `schedule`, `imessage`, `send later`, `ios 18`],
     readTime: `4 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iOS 18 (released fall 2024) added a built-in "Send Later" feature to the Messages app on iPhone. For the first time, you can write a text message now and schedule it to send automatically at any future date and time — without keeping the app open or remembering to send it.
@@ -658,7 +658,7 @@ You can also edit or cancel a scheduled message before it sends — great if pla
     category: `phone-guides`,
     tags: [`iphone`, `volume`, `ringtone`, `alarm`, `media`, `sound settings`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iPhone actually has separate volume levels for different things — and this surprises many people who wonder why their phone still rings loudly even though they turned down the music volume.
@@ -702,7 +702,7 @@ Alarm volume is separate and set through the Clock app, not through the side but
     category: `mac-guides`,
     tags: [`mac`, `quick look`, `preview`, `finder`, `files`, `keyboard shortcut`],
     readTime: `3 min`,
-    thumbnailEmoji: `👁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Quick Look is one of the most useful and underused Mac features. Select any file in Finder and press the Space bar — a large preview window opens instantly, showing you the contents of the file without opening any app.
@@ -746,7 +746,7 @@ You can even scroll through multi-page PDFs or use arrow keys to browse through 
     category: `phone-guides`,
     tags: [`iphone`, `battery replacement`, `battery health`, `apple`, `repair`, `service`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iPhone batteries are designed to retain up to 80% of their original capacity after 500 complete charge cycles (roughly 1–2 years of normal use). After that, battery health declines, and you may notice your phone does not last as long through the day, shuts down unexpectedly, or charges slowly.
@@ -790,7 +790,7 @@ After replacement, your iPhone charges faster, lasts longer, and unexpected shut
     category: `phone-guides`,
     tags: [`android`, `brightness`, `adaptive brightness`, `screen`, `battery`, `eyes`],
     readTime: `3 min`,
-    thumbnailEmoji: `☀️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Android phone's screen brightness affects both eye comfort and battery life. A brighter screen drains the battery faster but is easier to see in sunlight. A dimmer screen is gentle on the eyes indoors and extends battery life.

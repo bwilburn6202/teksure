@@ -65,6 +65,7 @@ export function Navbar() {
 
   const learnLinks = [
     { to: '/brain', label: 'TekSure Brain', icon: BookOpen, desc: 'Ask any tech question' },
+    { to: '/courses', label: 'Courses', icon: BookOpen, desc: 'Lessons + quizzes + certificates' },
     { to: '/learn', label: 'Learning Paths', icon: BookOpen, desc: 'Structured free courses' },
     { to: '/senior-tech-path', label: 'Tech for Seniors', icon: BookOpen, desc: 'Path for adults 60+' },
     { to: '/accessibility', label: 'Accessibility', icon: BookOpen, desc: 'Make devices easier' },
@@ -146,7 +147,7 @@ export function Navbar() {
                   <div className="grid grid-cols-3 gap-x-6 gap-y-1">
                     {/* Safety */}
                     <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">🛡️ Safety</p>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">Safety</p>
                       {safetyLinks.map((link) => (
                         <PreloadLink
                           key={link.to}
@@ -160,7 +161,7 @@ export function Navbar() {
                     </div>
                     {/* Learn */}
                     <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">📚 Learn</p>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">Learn</p>
                       {learnLinks.map((link) => (
                         <PreloadLink
                           key={link.to}
@@ -174,7 +175,7 @@ export function Navbar() {
                     </div>
                     {/* Support */}
                     <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">🤝 Support</p>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2.5 flex items-center gap-1">Support</p>
                       {supportLinks.map((link) => (
                         <PreloadLink
                           key={link.to}
@@ -192,14 +193,14 @@ export function Navbar() {
                     <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2">Quick Tools</p>
                     <div className="flex flex-wrap gap-1.5">
                       {[
-                        { to: '/tools/scam-simulator', label: '🛡️ Scam Test' },
-                        { to: '/tools/password-strength', label: '🔑 Password Check' },
-                        { to: '/tools/wifi-troubleshooter', label: '📶 WiFi Fix' },
-                        { to: '/tools/cyber-scorecard', label: '🏆 Security Grade' },
-                        { to: '/tools/privacy-audit', label: '🔒 Privacy Audit' },
-                        { to: '/tools/streaming-calculator', label: '📺 Streaming Cost' },
-                        { to: '/ai-tutor', label: '🤖 AI Tutor' },
-                        { to: '/tools/guide-packs', label: '📦 Print Guides' },
+                        { to: '/tools/scam-simulator', label: 'Scam Test' },
+                        { to: '/tools/password-strength', label: 'Password Check' },
+                        { to: '/tools/wifi-troubleshooter', label: 'WiFi Fix' },
+                        { to: '/tools/cyber-scorecard', label: 'Security Grade' },
+                        { to: '/tools/privacy-audit', label: 'Privacy Audit' },
+                        { to: '/tools/streaming-calculator', label: 'Streaming Cost' },
+                        { to: '/ai-tutor', label: 'AI Tutor' },
+                        { to: '/tools/guide-packs', label: 'Print Guides' },
                       ].map(t => (
                         <PreloadLink
                           key={t.to}
@@ -244,7 +245,7 @@ export function Navbar() {
             >
               <Search className="h-3.5 w-3.5" aria-hidden="true" />
               <span className="text-muted-foreground/60">Search</span>
-              <kbd className="font-sans text-[10px] text-muted-foreground/40 ml-1 border border-border/40 rounded px-1 py-0.5" aria-hidden="true">⌘K</kbd>
+              <kbd className="font-sans text-[10px] text-muted-foreground/40 ml-1 border border-border/40 rounded px-1 py-0.5" aria-hidden="true">K</kbd>
             </button>
 
             {user ? (

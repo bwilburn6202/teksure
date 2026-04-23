@@ -8,7 +8,7 @@ export const guidesBatch74: Guide[] = [
     category: `app-guides`,
     tags: [`photos`, `photo books`, `printing`, `memories`, `chatbooks`, `gifts`],
     readTime: `6 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Chatbooks is an app that takes the work out of printing your photos. Instead of downloading photos, uploading them to a website, and designing pages yourself, Chatbooks watches your camera roll and puts photos together into a book for you. When you have enough photos — usually 60 — it creates a new book automatically and asks if you want to print it.
@@ -57,7 +57,7 @@ Photo books make meaningful gifts for grandparents, parents, or anyone who would
     category: `app-guides`,
     tags: [`photos`, `photo books`, `mixbook`, `cards`, `calendars`, `printing`, `gifts`],
     readTime: `7 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Mixbook is a website — and a mobile app — where you design your own personalized photo products. Unlike Chatbooks, which automates everything, Mixbook puts you in the driver's seat. You choose the photos, arrange them on the page, pick backgrounds and layouts, and add your own text. The result is a fully custom book, card, or calendar that looks exactly the way you want it to.
@@ -106,7 +106,7 @@ Mixbook ships anywhere in the United States, and most standard-quality orders ar
     category: `app-guides`,
     tags: [`blue apron`, `meal kit`, `cooking`, `food delivery`, `recipes`, `subscription`],
     readTime: `6 min`,
-    thumbnailEmoji: `🍳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Blue Apron is a meal kit delivery service. Each week, the company ships a box of fresh, pre-measured ingredients directly to your home, along with recipe cards that walk you through cooking each dish step by step. The idea is to take the guesswork out of weeknight cooking — you do not need to plan a menu, make a grocery list, or measure anything out. Everything you need arrives ready to use.
@@ -155,7 +155,7 @@ Blue Apron ships to most areas in the continental United States. Delivery days v
     category: `government-civic`,
     tags: [`voting`, `absentee ballot`, `mail-in ballot`, `elections`, `civic`, `voter rights`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗳️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `An absentee ballot — also called a mail-in ballot — lets you vote in an election without going to a polling place in person. Instead, your ballot is mailed to your home, you fill it out, and you send it back by mail or drop it off at an official drop box or election office.
@@ -205,7 +205,7 @@ Always use official government websites when requesting a ballot online. The cor
     category: `app-guides`,
     tags: [`petfinder`, `pet adoption`, `dogs`, `cats`, `shelters`, `rescue`, `animals`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Petfinder is the largest online database of adoptable pets in the United States. The website and app bring together listings from more than 11,000 animal shelters and rescue groups across the country. Instead of calling shelter after shelter, you can search Petfinder to see which pets are available near you, filter by species, breed, age, and size, and contact a shelter directly through the site.
@@ -249,7 +249,7 @@ You can use Petfinder at petfinder.com on any computer, or download the free Pet
     category: `health-tech`,
     tags: [`noom`, `weight loss`, `health`, `fitness`, `diet`, `coaching`, `calories`],
     readTime: `6 min`,
-    thumbnailEmoji: `🥗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Noom is a weight loss app that works differently from most calorie trackers. While it does track what you eat, the main focus of Noom is understanding why you eat the way you do — and using that understanding to build better long-term habits. The app delivers short daily lessons rooted in psychology and behavioral science, and pairs you with a human coach who checks in with you regularly.
@@ -293,7 +293,7 @@ Noom is best suited for people who want behavioral support alongside calorie tra
     category: `health-tech`,
     tags: [`lose it`, `calorie tracker`, `nutrition`, `weight loss`, `health`, `diet`, `food log`],
     readTime: `5 min`,
-    thumbnailEmoji: `🥦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Lose It! is one of the most popular free calorie tracking apps available for iPhone and Android. It helps you set a daily calorie budget based on your age, weight, height, activity level, and goal — whether that is losing weight, maintaining your current weight, or simply eating more mindfully. Each day, you log what you eat, and the app shows you how many calories you have left for the rest of the day.
@@ -337,7 +337,7 @@ The app is available at loseit.com and in the App Store and Google Play Store.`,
     category: `app-guides`,
     tags: [`tasty`, `recipes`, `cooking`, `food`, `videos`, `beginners`, `buzzfeed`],
     readTime: `5 min`,
-    thumbnailEmoji: `👨‍🍳`,
+    thumbnailEmoji: `‍`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tasty is a free recipe app made by BuzzFeed. It is particularly well-suited for people who are newer to cooking or who learn better from watching than from reading. Every recipe on Tasty comes with a short overhead video — usually one to three minutes long — showing each step of the cooking process from start to finish. Watching the video before you start cooking gives you a clear picture of what you are working toward.
@@ -380,7 +380,7 @@ Tasty is a good starting point for anyone who wants to cook more at home but doe
     category: `phone-guides`,
     tags: [`google fi`, `phone plan`, `wireless`, `prepaid`, `data`, `international`, `mvno`],
     readTime: `7 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Google Fi Wireless is a phone plan run by Google. It is what is known as a "virtual" carrier — Google does not own its own cell towers but instead uses the networks of T-Mobile and US Cellular to provide coverage. By combining multiple networks and switching between them automatically, Google Fi aims to keep you connected even in areas where a single carrier might have weak signal.
@@ -426,7 +426,7 @@ Google Fi is worth considering for people who travel frequently, use modest amou
     category: `phone-guides`,
     tags: [`tracfone`, `prepaid`, `no contract`, `phone plan`, `budget`, `minutes`, `activation`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TracFone is one of the oldest and most widely available prepaid phone services in the United States. It is a "no-contract" service, meaning you pay for your phone service in advance — by buying minutes, texts, and data — rather than signing a monthly contract and getting a bill afterward. If you stop paying, your service stops, but you owe nothing more.
@@ -470,7 +470,7 @@ One important thing to know: TracFone minutes and plans expire after a certain n
     category: `phone-guides`,
     tags: [`asurion`, `phone insurance`, `cracked screen`, `lost phone`, `claim`, `repair`, `replacement`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Asurion is the largest phone insurance provider in the United States. If you have phone insurance through Verizon, AT&T, T-Mobile, or another major carrier, there is a good chance Asurion is the company actually handling your claims. Many people discover they have Asurion insurance only when they need it — it is often added automatically when you buy a new phone from a carrier.
@@ -514,7 +514,7 @@ Claims can be filed online at asurion.com, through the MyAsurion app, or by call
     category: `financial-tech`,
     tags: [`chase`, `mobile banking`, `bank app`, `deposit check`, `pay bills`, `transfer money`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Chase Mobile app is the official banking app for JPMorgan Chase, one of the largest banks in the United States. If you have a Chase checking account, savings account, credit card, or mortgage, you can manage all of them from one app on your phone. The app is free to download and free to use — Chase does not charge extra fees for mobile banking.
@@ -558,7 +558,7 @@ The Chase Mobile app is available in the App Store (iPhone) and Google Play Stor
     category: `financial-tech`,
     tags: [`bank of america`, `mobile banking`, `app`, `deposit`, `transfer`, `bills`, `boa`],
     readTime: `6 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bank of America is one of the most widely used banks in the United States, and its Mobile Banking app brings most everyday banking tasks to your phone. Whether you have a checking account, savings account, or a Bank of America credit card, you can see all of them in one place and manage them without visiting a branch.
@@ -602,7 +602,7 @@ Download the app by searching "Bank of America Mobile Banking" in the App Store 
     category: `financial-tech`,
     tags: [`wells fargo`, `mobile banking`, `app`, `deposit`, `transfer`, `bills`, `banking`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏛️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wells Fargo is one of the four largest banks in the United States, and its Mobile app provides access to your checking accounts, savings accounts, credit cards, and loans all in one place on your phone. Like most major bank apps, it is free to download and does not cost anything extra to use for standard banking tasks.
@@ -646,7 +646,7 @@ To use the app, you need a Wells Fargo account. If you bank with Wells Fargo but
     category: `communication`,
     tags: [`google voice`, `free phone number`, `voicemail`, `wi-fi calling`, `texting`, `second number`],
     readTime: `6 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Voice is a free service from Google that gives you a real US phone number. You can use that number to make and receive phone calls, send and receive text messages, and set up a voicemail inbox — all without paying for a separate phone plan. Google Voice works over Wi-Fi or cellular data using the Google Voice app on your phone, or through the website at voice.google.com on any computer.
@@ -690,7 +690,7 @@ The Google Voice app is free and available in the App Store and Google Play Stor
     category: `phone-guides`,
     tags: [`visible`, `verizon`, `unlimited`, `prepaid`, `phone plan`, `no contract`, `wireless`],
     readTime: `6 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Visible is a wireless phone carrier owned by Verizon. It operates entirely online — there are no retail stores, no paper contracts, and no lengthy customer service phone queues. Everything from signing up to managing your account is done through the Visible app on your phone or through visible.com.
@@ -734,7 +734,7 @@ Visible is a good fit for people who want a straightforward unlimited plan witho
     category: `phone-guides`,
     tags: [`xfinity mobile`, `comcast`, `phone plan`, `wireless`, `internet bundle`, `verizon network`],
     readTime: `6 min`,
-    thumbnailEmoji: `📲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Xfinity Mobile is a wireless phone service offered by Comcast to customers who already have Xfinity home internet service. It is not available to the general public — you must be an active Xfinity internet subscriber to sign up. The upside is that Xfinity Mobile can be quite affordable for households already paying for Xfinity internet, especially for people who do not use large amounts of cellular data.
@@ -778,7 +778,7 @@ You manage Xfinity Mobile through the Xfinity app or at xfinity.com/mobile. Cust
     category: `phone-guides`,
     tags: [`att`, `senior plan`, `55 plus`, `unlimited`, `wireless`, `phone plan`, `discount`],
     readTime: `6 min`,
-    thumbnailEmoji: `👴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AT&T offers a discounted unlimited phone plan specifically for customers who are 55 years of age or older. The plan — sometimes marketed as "AT&T Unlimited 55+" or a similarly named senior discount plan — provides unlimited calling, texting, and data at a price lower than AT&T's standard unlimited plans. As of 2026, pricing for the senior plan is typically around $50 to $60 per month for two lines, which is a notable discount compared to standard two-line unlimited pricing.
@@ -822,7 +822,7 @@ Customer service is available at AT&T stores, by calling 1-800-331-0500, or onli
     category: `government-civic`,
     tags: [`voter registration`, `voting`, `elections`, `civic`, `register to vote`, `government`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗳️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Voter registration is the first step toward voting in any US election. In most states, you must be registered before you can vote — and that registration must reflect your current address. If you have moved since you last registered, or if you have never registered before, you will need to update or create your registration before the next election's registration deadline.
@@ -867,7 +867,7 @@ Voter registration is free. You should never have to pay to register to vote. If
     category: `government-civic`,
     tags: [`mail-in ballot`, `absentee voting`, `vote by mail`, `elections`, `civic`, `voter rights`],
     readTime: `7 min`,
-    thumbnailEmoji: `✉️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Voting by mail — using what is called a mail-in ballot or absentee ballot — allows you to cast your vote without going to a polling place on Election Day. Instead, your ballot is mailed to your home ahead of the election, you fill it out at your own pace, and you return it either through the mail or by dropping it off at an official location.

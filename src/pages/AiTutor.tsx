@@ -13,18 +13,18 @@ type Level = 'beginner' | 'intermediate' | 'confident';
 type Message = { role: 'ai' | 'user'; text: string; };
 
 const levelConfig: Record<Level, { label: string; emoji: string; desc: string; systemHint: string }> = {
-  beginner:     { label: 'Beginner',     emoji: '🌱', desc: 'New to tech — very simple language, no jargon', systemHint: 'The user is a complete beginner. Use extremely simple language, avoid all jargon, use analogies to everyday objects, and explain every term.' },
-  intermediate: { label: 'Intermediate', emoji: '⭐', desc: 'Some experience — plain English with a bit more depth', systemHint: 'The user has some tech experience. Use plain English. You can use some common terms like "Wi-Fi" and "app" without explanation, but avoid deep technical language.' },
-  confident:    { label: 'Confident',    emoji: '🚀', desc: 'Fairly comfortable — straightforward answers', systemHint: 'The user is fairly tech-confident. Give direct, efficient answers. Some technical language is fine.' },
+  beginner:     { label: 'Beginner',     emoji: '', desc: 'New to tech — very simple language, no jargon', systemHint: 'The user is a complete beginner. Use extremely simple language, avoid all jargon, use analogies to everyday objects, and explain every term.' },
+  intermediate: { label: 'Intermediate', emoji: '', desc: 'Some experience — plain English with a bit more depth', systemHint: 'The user has some tech experience. Use plain English. You can use some common terms like "Wi-Fi" and "app" without explanation, but avoid deep technical language.' },
+  confident:    { label: 'Confident',    emoji: '', desc: 'Fairly comfortable — straightforward answers', systemHint: 'The user is fairly tech-confident. Give direct, efficient answers. Some technical language is fine.' },
 };
 
 const lessonTopics: { emoji: string; label: string; prompt: string }[] = [
-  { emoji: '🔐', label: 'Passwords & Security', prompt: 'Teach me about keeping my accounts safe — passwords, two-factor authentication, and what to watch out for.' },
-  { emoji: '📸', label: 'Photos & Memories', prompt: 'Help me understand how to organize my photos, back them up, and share them with family.' },
-  { emoji: '📧', label: 'Email Basics', prompt: 'Walk me through how email works, how to spot a scam email, and how to keep my inbox organized.' },
-  { emoji: '📶', label: 'Wi-Fi & Internet', prompt: 'Explain Wi-Fi to me — how to connect, what a strong signal looks like, and how to stay safe on public Wi-Fi.' },
-  { emoji: '📱', label: 'Getting More from my Phone', prompt: 'What are some really useful things I might not know my phone can do? Keep it practical and simple.' },
-  { emoji: '🛒', label: 'Online Shopping Safely', prompt: 'Teach me how to shop online safely — what to look for, how to pay securely, and how to spot fake websites.' },
+  { emoji: '', label: 'Passwords & Security', prompt: 'Teach me about keeping my accounts safe — passwords, two-factor authentication, and what to watch out for.' },
+  { emoji: '', label: 'Photos & Memories', prompt: 'Help me understand how to organize my photos, back them up, and share them with family.' },
+  { emoji: '', label: 'Email Basics', prompt: 'Walk me through how email works, how to spot a scam email, and how to keep my inbox organized.' },
+  { emoji: '', label: 'Wi-Fi & Internet', prompt: 'Explain Wi-Fi to me — how to connect, what a strong signal looks like, and how to stay safe on public Wi-Fi.' },
+  { emoji: '', label: 'Getting More from my Phone', prompt: 'What are some really useful things I might not know my phone can do? Keep it practical and simple.' },
+  { emoji: '', label: 'Online Shopping Safely', prompt: 'Teach me how to shop online safely — what to look for, how to pay securely, and how to spot fake websites.' },
 ];
 
 export default function AiTutor() {
@@ -66,8 +66,8 @@ export default function AiTutor() {
     return (
       <div className="min-h-screen bg-background flex flex-col">
         <Navbar />
-        <main className="flex-1 container max-w-2xl py-14 text-center">
-          <div className="text-5xl mb-4">🎓</div>
+        <main id="main-content" className="flex-1 container max-w-2xl py-14 text-center">
+          <div className="text-5xl mb-4"></div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">AI Personal Tech Tutor</h1>
           <p className="text-muted-foreground mb-10">Your patient, always-available tutor who adapts to your level. Ask anything — no question is too basic.</p>
           <h2 className="text-lg font-semibold mb-4">First, what's your experience level?</h2>

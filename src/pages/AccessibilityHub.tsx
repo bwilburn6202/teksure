@@ -42,7 +42,7 @@ const sections: Section[] = [
   {
     id: 'vision',
     icon: Eye,
-    badge: '👁️ VISION',
+    badge: ' VISION',
     title: 'Vision',
     subtitle: 'For people with low vision or blindness',
     accent: 'from-sky-50 to-sky-100/40 dark:from-sky-950/30 dark:to-sky-900/10',
@@ -92,7 +92,7 @@ const sections: Section[] = [
   {
     id: 'hearing',
     icon: Ear,
-    badge: '👂 HEARING',
+    badge: ' HEARING',
     title: 'Hearing',
     subtitle: 'For people with hearing loss',
     accent: 'from-emerald-50 to-emerald-100/40 dark:from-emerald-950/30 dark:to-emerald-900/10',
@@ -142,7 +142,7 @@ const sections: Section[] = [
   {
     id: 'motor',
     icon: Hand,
-    badge: '✋ MOTOR',
+    badge: ' MOTOR',
     title: 'Motor',
     subtitle: 'For people with limited dexterity',
     accent: 'from-amber-50 to-amber-100/40 dark:from-amber-950/30 dark:to-amber-900/10',
@@ -192,7 +192,7 @@ const sections: Section[] = [
   {
     id: 'cognitive',
     icon: Brain,
-    badge: '🧠 COGNITIVE',
+    badge: ' COGNITIVE',
     title: 'Cognitive',
     subtitle: 'For focus, learning, and memory',
     accent: 'from-violet-50 to-violet-100/40 dark:from-violet-950/30 dark:to-violet-900/10',
@@ -269,7 +269,7 @@ export default function AccessibilityHub() {
         path="/accessibility"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
           <div className="container max-w-3xl text-center py-16 md:py-20">

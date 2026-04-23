@@ -271,23 +271,23 @@ const warrantyData: Partial<Record<Brand, Partial<Record<DeviceType, WarrantyInf
 };
 
 const brands: { id: Brand; label: string; emoji: string }[] = [
-  { id: 'apple', label: 'Apple', emoji: '🍎' },
-  { id: 'samsung', label: 'Samsung', emoji: '🔵' },
-  { id: 'microsoft', label: 'Microsoft (Surface)', emoji: '🪟' },
-  { id: 'dell', label: 'Dell', emoji: '💻' },
-  { id: 'hp', label: 'HP', emoji: '🖨️' },
-  { id: 'lenovo', label: 'Lenovo', emoji: '⬛' },
-  { id: 'google', label: 'Google (Pixel)', emoji: '🤖' },
-  { id: 'other', label: 'Other brand', emoji: '❓' },
+  { id: 'apple', label: 'Apple', emoji: '' },
+  { id: 'samsung', label: 'Samsung', emoji: '' },
+  { id: 'microsoft', label: 'Microsoft (Surface)', emoji: '' },
+  { id: 'dell', label: 'Dell', emoji: '' },
+  { id: 'hp', label: 'HP', emoji: '' },
+  { id: 'lenovo', label: 'Lenovo', emoji: '' },
+  { id: 'google', label: 'Google (Pixel)', emoji: '' },
+  { id: 'other', label: 'Other brand', emoji: '' },
 ];
 
 const deviceTypes: { id: DeviceType; label: string; emoji: string }[] = [
-  { id: 'phone', label: 'Phone / Smartphone', emoji: '📱' },
-  { id: 'tablet', label: 'Tablet', emoji: '📊' },
-  { id: 'laptop', label: 'Laptop', emoji: '💻' },
-  { id: 'desktop', label: 'Desktop PC', emoji: '🖥️' },
-  { id: 'printer', label: 'Printer', emoji: '🖨️' },
-  { id: 'tv', label: 'Smart TV', emoji: '📺' },
+  { id: 'phone', label: 'Phone / Smartphone', emoji: '' },
+  { id: 'tablet', label: 'Tablet', emoji: '' },
+  { id: 'laptop', label: 'Laptop', emoji: '' },
+  { id: 'desktop', label: 'Desktop PC', emoji: '' },
+  { id: 'printer', label: 'Printer', emoji: '' },
+  { id: 'tv', label: 'Smart TV', emoji: '' },
 ];
 
 const slide = {
@@ -371,7 +371,7 @@ export default function WarrantyChecker() {
             <div key="results" {...slide}>
               {noData ? (
                 <div className="text-center py-12">
-                  <p className="text-5xl mb-4">🔍</p>
+                  <p className="text-5xl mb-4"></p>
                   <h2 className="text-xl font-semibold mb-2">No specific data for this combination</h2>
                   <p className="text-muted-foreground mb-6">
                     We don't have specific warranty information for {brands.find(b => b.id === brand)?.label} {deviceTypes.find(d => d.id === deviceType)?.label.toLowerCase()} devices yet. Your best bet is to contact the manufacturer directly or check their website.
@@ -416,7 +416,7 @@ export default function WarrantyChecker() {
                             <p className="font-semibold mb-2">How to check your warranty</p>
                             <p className="text-sm text-muted-foreground mb-3">{info.howToCheck}</p>
                             <div className="rounded-lg bg-muted/60 p-3 mb-3">
-                              <p className="text-xs font-semibold text-muted-foreground mb-1">🔢 Where to find your serial number:</p>
+                              <p className="text-xs font-semibold text-muted-foreground mb-1"> Where to find your serial number:</p>
                               <p className="text-sm">{info.serialTip}</p>
                             </div>
                             <Button asChild size="sm">
@@ -462,7 +462,7 @@ export default function WarrantyChecker() {
                     {info.importantNotes.length > 0 && (
                       <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30">
                         <CardContent className="p-4">
-                          <p className="font-semibold text-amber-700 dark:text-amber-400 mb-2">⚠️ Important to know</p>
+                          <p className="font-semibold text-amber-700 dark:text-amber-400 mb-2"> Important to know</p>
                           <ul className="space-y-1">
                             {info.importantNotes.map((note, i) => (
                               <li key={i} className="text-sm text-amber-700/90 dark:text-amber-300/90 flex items-start gap-2">
@@ -479,7 +479,7 @@ export default function WarrantyChecker() {
                   {/* UK Consumer rights reminder */}
                   <Card className="mb-6 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
                     <CardContent className="p-4">
-                      <p className="font-semibold text-blue-700 dark:text-blue-400 mb-1">🇬🇧 UK Consumer Rights</p>
+                      <p className="font-semibold text-blue-700 dark:text-blue-400 mb-1"> UK Consumer Rights</p>
                       <p className="text-sm text-blue-700/90 dark:text-blue-300/90">
                         Under the Consumer Rights Act 2015, goods must be of satisfactory quality and last a reasonable time. You may be entitled to a repair, replacement, or refund for up to 6 years — even after the manufacturer warranty expires. Always contact the <strong>retailer</strong> (shop you bought it from) first, not just the manufacturer.
                       </p>

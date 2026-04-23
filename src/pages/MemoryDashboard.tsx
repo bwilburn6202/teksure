@@ -161,7 +161,7 @@ export default function MemoryDashboard() {
         description="View and manage what TekBot remembers about you. Your privacy is in your hands."
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Hero */}
         <div className="border-b border-border bg-gradient-to-b from-muted/50 to-background">
           <div className="max-w-3xl mx-auto px-4 py-12 text-center">

@@ -8,7 +8,7 @@ export const guidesBatch76: Guide[] = [
     category: `entertainment`,
     tags: [`acorn tv`, `british tv`, `streaming`, `mysteries`, `dramas`, `international`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎭`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Acorn TV is a streaming service focused on British and international television — think cozy mysteries, period dramas, crime thrillers, and beloved UK series you won't find on the big-name platforms. If you enjoy shows like Midsomer Murders, Doc Martin, or Agatha Raisin, this is the service built for you.
@@ -55,7 +55,7 @@ If you watch with a family member or partner, one account covers two simultaneou
     category: `entertainment`,
     tags: [`britbox`, `british tv`, `bbc`, `itv`, `streaming`, `classic tv`],
     readTime: `6 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `BritBox is a streaming service built specifically for fans of British television. It is a joint venture between BBC Studios and ITV, which means you get access to decades of programming from two of Britain's biggest broadcasters — all in one place.
@@ -101,7 +101,7 @@ The interface is clean and sorted by decade, genre, and network. If you want to 
     category: `entertainment`,
     tags: [`curiositystream`, `documentaries`, `science`, `history`, `nature`, `learning`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `CuriosityStream is a streaming service dedicated entirely to documentary films and series. It was founded by John Hendricks, the same person who created the Discovery Channel, and it shows — the content focuses on science, history, nature, technology, society, and space exploration.
@@ -147,7 +147,7 @@ The browse experience is excellent — you can filter by topic, length, difficul
     category: `entertainment`,
     tags: [`shudder`, `horror`, `thrillers`, `streaming`, `movies`, `amc`],
     readTime: `5 min`,
-    thumbnailEmoji: `👻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Shudder is a streaming service owned by AMC Networks and dedicated entirely to horror, thriller, and supernatural content. Whether you enjoy classic monster movies, psychological thrillers, slasher films, or foreign-language horror, Shudder's library covers the full spectrum of the genre.
@@ -193,7 +193,7 @@ One standout feature is Shudder TV, a free 24/7 streaming channel available insi
     category: `entertainment`,
     tags: [`movies anywhere`, `digital movies`, `itunes`, `amazon`, `google play`, `vudu`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Movies Anywhere is a free service that solves one of the most frustrating problems in digital entertainment: you buy a movie on Amazon, another on iTunes, and a third through Google Play, and suddenly your collection is scattered across three different apps. Movies Anywhere brings them all together.
@@ -239,7 +239,7 @@ The app is available on iPhone, Android, smart TVs, Roku, Amazon Fire Stick, App
     category: `entertainment`,
     tags: [`vudu`, `free movies`, `streaming`, `ad-supported`, `watch free`, `fandango`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Vudu is a digital movie service owned by Fandango that lets you buy, rent, or watch movies for free. The free section — called "Movies On Us" — includes thousands of titles available at no cost, supported by occasional advertisements similar to watching a movie on regular TV.
@@ -286,7 +286,7 @@ If you are also a Movies Anywhere user, you can link your Vudu account so that a
     category: `entertainment`,
     tags: [`frndly tv`, `hallmark channel`, `lifetime`, `live tv`, `streaming`, `affordable`],
     readTime: `5 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Frndly TV is a live TV streaming service that focuses on family-friendly and wholesome content. For under $10 per month, you get access to over 40 live channels including Hallmark Channel, Hallmark Movies & Mysteries, Lifetime, Lifetime Movies, A&E, History Channel, and more.
@@ -332,7 +332,7 @@ Setup is quick: you create an account, download the app to your device, and you'
     category: `app-guides`,
     tags: [`masterclass`, `online learning`, `courses`, `cooking`, `writing`, `experts`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `MasterClass is an online learning platform where you can take courses taught by some of the most accomplished people in the world. Want to learn cooking from Gordon Ramsay? Writing from Margaret Atwood or Neil Gaiman? Negotiation from Chris Voss? Tennis from Serena Williams? MasterClass has courses taught by the actual experts, not substitutes.
@@ -378,7 +378,7 @@ If you're unsure whether MasterClass is right for you, look for occasional promo
     category: `app-guides`,
     tags: [`skillshare`, `online classes`, `design`, `photography`, `writing`, `creative`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Skillshare is an online learning platform focused on creative and practical skills. Unlike more formal education platforms, Skillshare specializes in shorter, project-focused classes taught by working professionals — graphic designers, photographers, writers, illustrators, entrepreneurs, and more.
@@ -424,7 +424,7 @@ If you have a creative hobby you've wanted to develop — or a professional skil
     category: `app-guides`,
     tags: [`udemy`, `online courses`, `learning`, `skills`, `programming`, `professional development`],
     readTime: `5 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Udemy is one of the largest online course marketplaces in the world, with over 200,000 courses covering almost every skill imaginable — from programming and data analysis to yoga, guitar playing, cooking, photography, drawing, and personal finance.
@@ -471,7 +471,7 @@ Udemy is available on iPhone, Android, and in any web browser. The mobile app al
     category: `app-guides`,
     tags: [`wondrium`, `great courses plus`, `educational`, `history`, `science`, `lectures`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏛️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wondrium is the streaming home of The Great Courses, a long-established educational video series that has been trusted by curious learners for decades. If you've ever picked up one of those DVD lecture sets from a library sale, Wondrium is the streaming version of that experience — and it goes far beyond what was available in the DVD era.
@@ -517,7 +517,7 @@ If you are the kind of person who finds documentaries interesting but wishes the
     category: `app-guides`,
     tags: [`codecademy`, `coding`, `programming`, `learn to code`, `beginners`, `free`],
     readTime: `6 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Codecademy is one of the best-known platforms for learning to code, and it is popular precisely because it doesn't assume you know anything going in. Every lesson is interactive — you read a short explanation, write actual code in a box on the screen, and the system checks whether it worked. No special software to install. No prior experience needed.
@@ -564,7 +564,7 @@ Many people who learned to code as adults mention Codecademy as the platform whe
     category: `app-guides`,
     tags: [`google career certificates`, `job training`, `IT support`, `data analytics`, `coursera`, `free education`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Career Certificates are online training programs created by Google and hosted on the Coursera platform. They are designed to prepare people for entry-level jobs in fields like IT support, data analytics, project management, UX design, cybersecurity, and digital marketing — without requiring a college degree.
@@ -611,7 +611,7 @@ The IT Support Certificate is often recommended as a starting point because it t
     category: `app-guides`,
     tags: [`microsoft learn`, `free training`, `microsoft 365`, `excel`, `windows`, `office`],
     readTime: `5 min`,
-    thumbnailEmoji: `🪟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Learn is Microsoft's official free training platform. It offers thousands of lessons, guided learning paths, and hands-on exercises covering every Microsoft product — Windows, Microsoft 365 (which includes Word, Excel, PowerPoint, and Outlook), Microsoft Teams, OneDrive, Azure cloud services, and more.
@@ -657,7 +657,7 @@ This is worth bookmarking if you regularly use Microsoft products and want a rel
     category: `essential-skills`,
     tags: [`wordpress`, `blog`, `website`, `free website`, `blogging`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `WordPress.com is one of the world's most popular platforms for creating a free blog or website. It powers an enormous portion of the internet and has been refined over many years to be approachable for people with no technical background.
@@ -704,7 +704,7 @@ Setting up a new site takes about 20 minutes from start to your first published 
     category: `essential-skills`,
     tags: [`squarespace`, `website builder`, `portfolio`, `small business`, `blog`, `no code`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏗️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Squarespace is a website builder known for producing websites that look genuinely professional without requiring any design or coding skills. It is used by photographers, artists, small business owners, consultants, musicians, and anyone who wants an impressive online presence without hiring a web developer.
@@ -750,7 +750,7 @@ The editor works entirely in your web browser. You drag sections around, click t
     category: `essential-skills`,
     tags: [`wix`, `free website`, `drag and drop`, `website builder`, `beginners`, `no code`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Wix is one of the most popular website builders in the world and offers a genuinely free plan that lets you create and publish a website without paying anything. The free plan gives you a site at an address like username.wixsite.com/yoursite, and it includes access to hundreds of design templates and a drag-and-drop editor.
@@ -797,7 +797,7 @@ Wix has an extensive help center, tutorial videos, and a community forum where y
     category: `essential-skills`,
     tags: [`google sites`, `free website`, `google`, `website builder`, `simple`, `no code`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Sites is a free website builder included with every Google account. If you have a Gmail address, you already have access to Google Sites at no cost. It is the most straightforward website builder available, designed for people who want a functional website without any complexity or learning curve.
@@ -844,7 +844,7 @@ Changes to your site publish instantly when you click Publish. There is no appro
     category: `essential-skills`,
     tags: [`linktree`, `bio link`, `social media`, `instagram`, `link in bio`, `profiles`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Linktree is a free tool that solves a common problem for anyone with a presence on social media: most platforms only allow one clickable link in your profile. If you have a Facebook page, an Instagram account, a YouTube channel, and a personal website, you can only put one of those links in your Instagram bio.
@@ -890,7 +890,7 @@ Linktree also supports embedding a contact form, email newsletter sign-up button
     category: `essential-skills`,
     tags: [`carrd`, `one page website`, `free website`, `portfolio`, `simple`, `personal site`],
     readTime: `5 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Carrd is a website builder designed specifically for one-page websites. Instead of building a site with multiple pages and menus, you create a single, beautifully designed page that contains everything you want to share — your bio, your links, a contact form, your work samples, or any combination of those.

@@ -88,7 +88,7 @@ export default function ScamReport() {
         <Navbar />
         <main className="flex-1 container max-w-lg py-16 text-center">
           <div>
-            <div className="text-6xl mb-4">🛡️</div>
+            <div className="text-6xl mb-4"></div>
             <h2 className="text-2xl font-bold mb-3">Report Received — Thank You</h2>
             <p className="text-muted-foreground mb-6">Your report helps protect other TekSure members. Our team reviews every submission and shares patterns with relevant authorities where appropriate.</p>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-left mb-6">
@@ -119,7 +119,7 @@ export default function ScamReport() {
       <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">
-          <div className="text-4xl mb-3">🚨</div>
+          <div className="text-4xl mb-3"></div>
           <h1 className="text-3xl font-bold mb-2">Report a Scam</h1>
           <p className="text-muted-foreground max-w-md mx-auto">Spotted a scam? Tell us about it. Your report helps us warn other members and keep the community safe.</p>
         </div>

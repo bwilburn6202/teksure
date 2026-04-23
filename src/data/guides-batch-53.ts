@@ -9,7 +9,7 @@ export const guidesBatch53: Guide[] = [
     category: 'windows-guides',
     tags: ['Windows 11', 'OneDrive', 'Outlook', 'freeze', 'update', 'fix'],
     readTime: '5 min',
-    thumbnailEmoji: '🪟',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
@@ -48,7 +48,7 @@ export const guidesBatch53: Guide[] = [
     category: 'safety-guides',
     tags: ['investment scam', 'fraud', 'FTC', 'seniors', 'money', 'safety'],
     readTime: '7 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
@@ -87,7 +87,7 @@ export const guidesBatch53: Guide[] = [
     category: 'ai-guides',
     tags: ['Google', 'Gemini', 'AI', 'beginners', 'Android', 'iPhone'],
     readTime: '8 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
@@ -126,7 +126,7 @@ export const guidesBatch53: Guide[] = [
     category: 'essential-skills',
     tags: ['contacts', 'backup', 'iPhone', 'Android', 'iCloud', 'Google'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     lastVerifiedAt: '2026-04-19',
     difficulty: 'Beginner',
@@ -167,7 +167,7 @@ export const guidesBatch53: Guide[] = [
     category: `entertainment`,
     tags: [`hdmi`, `soundbar`, `tv`, `audio`, `arc`, `earc`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have a soundbar connected to your TV, you may have noticed that your TV remote doesn't always control the soundbar's volume. That's frustrating — you end up juggling two remotes. HDMI ARC solves this problem.
@@ -223,7 +223,7 @@ HDMI ARC eliminates the need for a separate optical audio cable or a second remo
     category: `entertainment`,
     tags: [`antenna`, `free tv`, `broadcast`, `local channels`, `cord cutting`, `ota`],
     readTime: `7 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Over-the-air (OTA) TV is completely free, and you don't need a cable or streaming subscription to get it. All you need is a digital TV antenna. With one, you can watch ABC, NBC, CBS, Fox, PBS, and dozens of local channels in HD quality — often with better picture quality than cable because the signal isn't compressed.
@@ -277,7 +277,7 @@ Antennas are a one-time purchase with no monthly fees. For news, sports, and net
     category: `entertainment`,
     tags: [`amazon`, `freevee`, `free streaming`, `movies`, `tv shows`, `prime video`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon Freevee is a free streaming service that gives you access to hundreds of movies and TV shows — including some original series — at no cost. You don't need an Amazon Prime membership to watch Freevee content, though you do need a free Amazon account. The catch is that Freevee content is supported by ads, similar to watching regular broadcast TV.
@@ -326,7 +326,7 @@ Freevee is a good option when you want to watch something without paying for a s
     category: `how-to`,
     tags: [`vlc`, `media player`, `video`, `audio`, `windows`, `mac`, `free software`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `VLC Media Player is a free program that plays virtually any video or audio file on your Windows PC or Mac. If you've ever tried to open a video and gotten an error saying the format isn't supported, VLC almost certainly can open it.
@@ -377,7 +377,7 @@ If you watch videos on your computer — home movies, downloaded content, videos
     category: `entertainment`,
     tags: [`roku`, `remote`, `app`, `iphone`, `android`, `private listening`, `streaming`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've ever lost your Roku remote, or if you want to type a search without hunting and pecking through an on-screen keyboard one letter at a time, the Roku mobile app is the answer. It's free, available for both iPhone and Android, and turns your phone into a full-featured replacement remote.
@@ -428,7 +428,7 @@ Even if you don't lose your physical remote often, the keyboard alone makes the 
     category: `phone-guides`,
     tags: [`imovie`, `iphone`, `ipad`, `video editing`, `apple`, `beginner`, `home video`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎞️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iMovie is Apple's free video editing app for iPhone and iPad. It lets you turn your phone's video clips into something you're proud to share — with titles, background music, and clean cuts — without needing any video editing experience.
@@ -483,7 +483,7 @@ Home movies, vacation recaps, birthday videos, and family memories all benefit f
     category: `phone-guides`,
     tags: [`iphone`, `video editing`, `photos app`, `trim video`, `rotate video`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone has a built-in video editor hiding inside the Photos app. You don't need iMovie or any other app to trim the beginning or end of a video, rotate a clip you recorded sideways, or adjust the brightness and color. The Photos app handles all of this — and the edits are non-destructive, meaning the original is always preserved.
@@ -532,7 +532,7 @@ Everything covered in this guide works on iPhones running iOS 13 or later (any i
     category: `social-media`,
     tags: [`youtube`, `upload video`, `privacy`, `unlisted`, `iphone`, `android`, `computer`],
     readTime: `7 min`,
-    thumbnailEmoji: `▶️`,
+    thumbnailEmoji: `▶`,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `YouTube isn't only for professional creators. Millions of regular people use it to share home videos with family, save personal memories, or upload videos that would otherwise take up storage space on their phone. The key is understanding YouTube's privacy settings so you control exactly who can see your video.
@@ -585,7 +585,7 @@ Keep in mind that YouTube is owned by Google. The videos you upload are stored o
     category: `phone-guides`,
     tags: [`apple watch`, `apps`, `app store`, `watchos`, `iphone`, `install apps`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Apple Watch isn't limited to the apps that came pre-installed. There's a full App Store right on your wrist — plus you can manage watch apps from the Watch app on your iPhone. Adding apps that are useful to you and removing clutter makes the watch much more practical.
@@ -638,7 +638,7 @@ Keeping only the apps you actually use makes your app grid easier to navigate an
     category: `health-tech`,
     tags: [`apple watch`, `workout`, `exercise`, `fitness`, `activity rings`, `heart rate`, `calories`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏃`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Apple Watch is one of the best fitness tracking tools available, and using it to track your workouts is straightforward. Whether you're going for a walk, a swim, or a bike ride, the Workout app records your heart rate, calories burned, distance, and pace — all without you having to do anything beyond pressing start.
@@ -691,7 +691,7 @@ You don't need to be athletic to benefit from tracking. Even 20–30 minutes of 
     category: `health-tech`,
     tags: [`fitbit`, `fitness tracker`, `sleep tracking`, `step counter`, `health`, `reminders`],
     readTime: `6 min`,
-    thumbnailEmoji: `💪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Fitbit devices are popular fitness trackers, but most people only use a fraction of what they can do. Beyond counting steps, your Fitbit can remind you to move every hour, track how long and how well you slept, and show you charts of your activity, heart rate, and sleep trends over weeks and months — all through the free Fitbit app on your phone.
@@ -742,7 +742,7 @@ These three areas — movement reminders, sleep tracking, and app history — tu
     category: `health-tech`,
     tags: [`iphone`, `health app`, `steps`, `walking`, `fitness`, `pedometer`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `👟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone counts your steps all day long using its built-in motion sensors — and you don't need to do anything to turn this on. The Health app records every step you take as long as your phone is with you. When you open the Health app for the first time, you'll already have days or weeks of step data waiting.
@@ -788,7 +788,7 @@ Step data is stored locally on your iPhone and is private — Apple doesn't shar
     category: `health-tech`,
     tags: [`samsung`, `galaxy`, `samsung health`, `steps`, `walking`, `fitness`, `android`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have a Samsung Galaxy phone, Samsung Health is already installed and already counting your steps. This free app uses your phone's built-in motion sensor to track your daily movement, and it stores weeks of step history so you can see how active you've been over time.
@@ -820,7 +820,7 @@ Samsung Health data stays on your phone and your Samsung account. You can option
       },
       {
         title: `Turn on movement reminders`,
-        content: `Go back to the Samsung Health home screen. Tap the three-line menu (☰) or your profile icon, then go to Settings > Notifications, or look for a "Move Reminder" or "Inactivity Alert" option. Turn it on and set the time window during which you want reminders (for example, 8 AM to 8 PM). Your phone will alert you after a period of low movement.`,
+        content: `Go back to the Samsung Health home screen. Tap the three-line menu () or your profile icon, then go to Settings > Notifications, or look for a "Move Reminder" or "Inactivity Alert" option. Turn it on and set the time window during which you want reminders (for example, 8 AM to 8 PM). Your phone will alert you after a period of low movement.`,
         tip: `You can set a step threshold — for example, if you haven't taken 200 steps in the last hour, the reminder fires. This is more useful than a fixed time reminder because it actually tracks inactivity.`
       },
       {
@@ -841,7 +841,7 @@ Samsung Health data stays on your phone and your Samsung account. You can option
     category: `windows-guides`,
     tags: [`windows`, `startup`, `task manager`, `boot time`, `performance`, `pc`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your Windows computer feels sluggish right after you turn it on, one of the most common culprits is too many programs launching automatically at startup. Every program that opens when Windows starts uses memory and processing power during boot — the more programs starting at once, the longer your computer takes to be fully ready to use.
@@ -888,7 +888,7 @@ The process described here works on Windows 10 and Windows 11. The Task Manager 
     category: `mac-guides`,
     tags: [`mac`, `login items`, `startup`, `macos`, `performance`, `system settings`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your Mac takes a long time to be usable after you turn it on, apps opening automatically at startup are often the cause. Many apps — like Spotify, Dropbox, Microsoft Teams, Zoom, and Adobe programs — add themselves to the startup list when you install them, hoping to be ready the moment you sit down. Over time, the list grows and your Mac gets noticeably slower to boot.
@@ -934,7 +934,7 @@ After removing several Login Items, restart your Mac to see the improvement. Man
     category: `windows-guides`,
     tags: [`windows`, `disk cleanup`, `storage`, `temp files`, `free up space`, `pc performance`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Over time, Windows accumulates temporary files — fragments created while installing programs, browsing the web, updating Windows, and during normal computer use. These files are meant to be deleted after their job is done, but Windows doesn't always clean them up automatically. They pile up and can consume gigabytes of space on your hard drive.
@@ -981,7 +981,7 @@ These steps work on Windows 10 and Windows 11. The interface looks slightly diff
     category: `phone-guides`,
     tags: [`android`, `storage`, `free up space`, `files app`, `google`, `samsung`, `phone storage`],
     readTime: `6 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your Android phone warns you that storage is almost full, it can slow down your phone, prevent you from taking new photos, and stop apps from updating. The good news is that most Android phones have built-in tools to find and delete files that are taking up space without you needing to know which files to look for.
@@ -1034,7 +1034,7 @@ If you're low on space, prioritize in this order: delete large video files and d
     category: `phone-guides`,
     tags: [`iphone`, `storage`, `free up space`, `apps`, `offload`, `ios`, `settings`],
     readTime: `6 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your iPhone shows "Storage Almost Full" warnings or says it can't take a new photo, it's time to look at what's using your storage. The good news is that iPhone has a built-in storage management screen that shows you exactly what's taking up space, sorted by size — so you know immediately where to focus.
@@ -1088,7 +1088,7 @@ This guide works on any iPhone running iOS 13 or later — which covers virtuall
     category: `internet-connectivity`,
     tags: [`router`, `wifi`, `192.168.1.1`, `password`, `home network`, `settings`, `internet`],
     readTime: `7 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Your home router has its own settings page — a mini website hosted by the router itself — where you can change your WiFi network name, update your password, and see which devices are connected to your network. Accessing it doesn't require any special software. You type an address into your web browser.
@@ -1140,7 +1140,7 @@ Common reasons to access your router: changing your WiFi name (called the SSID) 
     category: `internet-connectivity`,
     tags: [`wifi`, `2.4ghz`, `5ghz`, `router`, `wireless`, `internet`, `network`, `connectivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've noticed two WiFi networks listed when you search for available networks — often with similar names like "HomeNetwork" and "HomeNetwork-5G" or "HomeNetwork_2.4G" and "HomeNetwork_5G" — that's your router broadcasting two different bands. You don't have to pick randomly. Understanding the difference helps you choose the right one for each situation.

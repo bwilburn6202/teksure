@@ -8,7 +8,7 @@ export const guidesBatch98: Guide[] = [
     category: `essential-skills`,
     tags: [`bill pay`, `banking`, `auto-pay`, `budgeting`, `online banking`],
     readTime: `8 min`,
-    thumbnailEmoji: `💳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Automatic bill pay is one of the most practical things you can set up online. Once it's running, your bills get paid on time every month without you having to remember a due date, log in to a website, or write a check. Late fees disappear, and your credit score benefits from a consistent on-time payment history.
@@ -49,7 +49,7 @@ A few things to set up first: make sure your checking account has a comfortable 
     category: `essential-skills`,
     tags: [`Google Calendar`, `family`, `sharing`, `scheduling`, `organization`],
     readTime: `6 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Google Calendar has a sharing feature that makes it easy for family members to see each other's schedules, share a single family calendar for shared events, and reduce the "when are you free?" back-and-forth that fills up texts and phone calls.
@@ -92,7 +92,7 @@ This setup works well for families keeping track of doctor appointments, grandch
     category: `essential-skills`,
     tags: [`iPad`, `Apple`, `setup`, `beginners`, `new device`],
     readTime: `10 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Getting a new iPad is exciting, and the setup process is simpler than it used to be — but it still has a handful of decisions you'll want to make thoughtfully, especially around Apple ID, iCloud, and privacy settings. This guide walks you through every step from unboxing to ready-to-use.
@@ -137,7 +137,7 @@ If this is your very first iPad, setup takes about 10 to 15 minutes. Apple's set
     category: `privacy`,
     tags: [`targeted ads`, `privacy`, `ad tracking`, `iPhone`, `Android`, `Google`, `Facebook`],
     readTime: `8 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Intermediate`,
     body: `You've probably noticed that after you search for something online or look at a product, ads for that item seem to follow you everywhere — on websites, in apps, and on social media. This is called targeted or personalized advertising, and it's powered by tracking systems that monitor your browsing behavior, your location, and your purchase history.
@@ -178,7 +178,7 @@ One important thing to understand: opting out of targeted ads doesn't mean you'l
     category: `privacy`,
     tags: [`privacy policy`, `data privacy`, `online safety`, `digital literacy`, `red flags`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Nobody reads privacy policies. They're often 10 to 30 pages of dense legal language, and companies know most users skip them entirely. But ignoring them completely can mean unknowingly agreeing to have your data sold, your location tracked around the clock, or your photos used for commercial purposes.
@@ -219,7 +219,7 @@ Privacy policies are legally required disclosures, so companies must disclose wh
     category: `essential-skills`,
     tags: [`end of life`, `security updates`, `Windows 10`, `iOS`, `Android`, `device upgrade`],
     readTime: `7 min`,
-    thumbnailEmoji: `⚠️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `When a company announces that a product has reached "end of life" or "end of support," it means they will no longer release software updates — specifically, security updates — for that device or operating system. The product doesn't stop working. Your computer or phone will still turn on and run the software it has. But new security vulnerabilities discovered after the end-of-support date will never be fixed.
@@ -262,7 +262,7 @@ Android support varies by manufacturer. Google Pixel phones receive 5–7 years 
     category: `essential-skills`,
     tags: [`Google Chrome`, `browser update`, `security`, `software update`, `how-to`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Google releases updates for Chrome frequently — sometimes every few weeks. Most of these updates include security fixes that protect you from the latest browser vulnerabilities, phishing tricks, and malware techniques. Running an outdated version of Chrome means those protections aren't in place.
@@ -303,7 +303,7 @@ The update process takes less than 30 seconds and you don't lose anything — yo
     category: `safety`,
     tags: [`AARP`, `scam alerts`, `fraud prevention`, `seniors`, `free resources`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `The AARP Fraud Watch Network is a free program that helps people of all ages — not just AARP members — stay ahead of scams. It's one of the best free fraud-prevention resources in the country, and most people have never heard of it.
@@ -346,7 +346,7 @@ AARP also has a large library of free online videos showing exactly how common s
     category: `accessibility`,
     tags: [`iPhone`, `accessibility`, `shortcut`, `zoom`, `magnifier`, `seniors`],
     readTime: `5 min`,
-    thumbnailEmoji: `♿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Your iPhone has a hidden shortcut that can be one of the most useful features you've never heard of. Triple-clicking the side button (or the Home button on older models) can instantly turn on any accessibility feature you've set up — with no need to navigate through Settings. This is called the Accessibility Shortcut.
@@ -387,7 +387,7 @@ For anyone who uses reading glasses, has difficulty with small text, or uses the
     category: `essential-skills`,
     tags: [`Apple Translate`, `translation`, `languages`, `accessibility`, `travel`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Apple includes a free Translate app on every iPhone and iPad running iOS 14 or later — and it's often overlooked because people don't realize it's there. It can translate spoken words, typed text, and real-time conversations between two people speaking different languages. It also works offline for several languages, which is useful when traveling without cell service.
@@ -428,7 +428,7 @@ For reading signs, menus, or documents in a foreign language, Apple's Translate 
     category: `essential-skills`,
     tags: [`Screen Time`, `digital wellbeing`, `iPhone`, `app limits`, `focus`],
     readTime: `6 min`,
-    thumbnailEmoji: `⏱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `iPhone's Screen Time feature — built into every iPhone running iOS 12 or later — lets you see exactly how much time you spend on each app and set daily limits. If you've ever noticed you're spending more time on Facebook, news, or games than you'd like, Screen Time lets you set a timer that gently stops you when you've hit your limit for the day.
@@ -471,7 +471,7 @@ All of these settings can be protected with a Screen Time passcode that's differ
     category: `essential-skills`,
     tags: [`hotspot`, `mobile data`, `internet`, `iPhone`, `Android`, `Wi-Fi`],
     readTime: `6 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `A mobile hotspot turns your smartphone into a portable Wi-Fi router. When you turn it on, your phone shares its cellular data connection with other devices — your laptop, tablet, another phone, or anyone you give the hotspot password to. It's like creating a private Wi-Fi network powered by your phone's data plan.
@@ -514,7 +514,7 @@ Third, other people nearby can see your hotspot name (called the SSID) — but t
     category: `essential-skills`,
     tags: [`printing`, `AirPrint`, `iPhone`, `wireless print`, `how-to`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Most modern printers — including those from HP, Canon, Epson, and Brother sold in the past several years — support a technology called AirPrint. AirPrint is Apple's wireless printing system built into every iPhone and iPad. If your printer supports AirPrint and both your iPhone and printer are connected to the same Wi-Fi network, you can print from any app without installing drivers or connecting any cables.
@@ -555,7 +555,7 @@ If your printer doesn't support AirPrint, you may be able to use your printer ma
     category: `essential-skills`,
     tags: [`storage`, `MB`, `GB`, `TB`, `digital literacy`, `tech basics`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `If you've ever wondered what "128 GB" means on a new phone, or why your email says your storage is 90% full, or what the difference is between MB and GB internet speeds — this guide explains it all in plain English.
@@ -598,7 +598,7 @@ Cloud storage services like iCloud, Google Photos, and Google Drive use GB to de
     category: `essential-skills`,
     tags: [`Wi-Fi password`, `router`, `network`, `how-to`, `troubleshooting`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Forgetting your home Wi-Fi password is one of the most common tech problems — and one of the easiest to solve. There are five places you can find it, and at least two of them will work for almost everyone.
@@ -639,7 +639,7 @@ If none of those options work — you can reset the router to factory settings, 
     category: `essential-skills`,
     tags: [`HDMI`, `cables`, `TV`, `monitor`, `tech basics`, `setup`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `HDMI stands for High-Definition Multimedia Interface — but you don't need to remember that. What matters is what it does: an HDMI cable carries both high-definition video and audio through a single cable. One end plugs into your TV, monitor, or projector. The other end plugs into whatever you want to display: a laptop, Blu-ray player, gaming console, streaming box, or cable box.
@@ -678,7 +678,7 @@ HDMI cables are inexpensive. A quality cable for everyday use costs $5 to $15 at
     category: `safety`,
     tags: [`malware`, `virus scan`, `Windows Defender`, `Malwarebytes`, `security`, `Windows`],
     readTime: `7 min`,
-    thumbnailEmoji: `🦠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `If your Windows computer has been running slower than usual, showing unexpected pop-ups, redirecting you to strange websites, or behaving strangely, malware could be the cause. Malware is a general term for any software that's been installed without your knowledge and is doing something harmful — from collecting your passwords to sending spam to displaying ads you can't close.
@@ -719,7 +719,7 @@ Run these two scans back-to-back on a regular schedule — perhaps once a month 
     category: `essential-skills`,
     tags: [`Gmail`, `Google account`, `email`, `how-to`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Gmail is Google's free email service, and creating a Gmail account gives you much more than just an email address. With one Google account, you get: Gmail for email, Google Drive for storing and sharing files, Google Photos for backing up your pictures, Google Meet for video calls, YouTube for watching videos, and the Google Play Store for downloading apps on Android devices.
@@ -762,7 +762,7 @@ Once your account is set up, you'll be using it for years, so take a few extra m
     category: `phone-guides`,
     tags: [`overheating`, `battery`, `iPhone`, `Android`, `phone care`, `troubleshooting`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `It's normal for a smartphone to feel warm during heavy use — like a long video call, streaming video, or charging. But if your phone feels hot to the touch, shuts down with a temperature warning, or is uncomfortably warm even when you're not doing anything, something needs attention.
@@ -805,7 +805,7 @@ What you should never do: don't put an overheated phone in the freezer or immers
     category: `essential-skills`,
     tags: [`printer`, `troubleshooting`, `Windows`, `Mac`, `print queue`, `drivers`],
     readTime: `8 min`,
-    thumbnailEmoji: `🖨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Few tech frustrations match the experience of clicking Print, watching the printer supposedly receive the job, and then nothing happening. Printer problems are among the most common issues computer users face — and they're usually caused by one of a small set of fixable issues: a stuck print queue, a connection problem, the wrong printer being selected, or an outdated driver.
@@ -846,7 +846,7 @@ If your printer is connected wirelessly over Wi-Fi, connection problems are espe
     category: `phone-guides`,
     tags: [`Do Not Disturb`, `Focus`, `iPhone`, `notifications`, `sleep`, `silence`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Do Not Disturb is one of the most useful features on iPhone, and many people have never set it up intentionally. When Do Not Disturb is active, your screen stays dark and silent during incoming calls, texts, and app notifications. The calls and messages still come in — they're just silenced. You can check them when you're ready.
@@ -889,7 +889,7 @@ Setting up a Sleep schedule in the Focus system is particularly valuable. It aut
     category: `apps`,
     tags: [`Google Lens`, `camera`, `identify`, `translate`, `Android`, `iPhone`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Google Lens is a free tool that uses your phone's camera as a search engine. Instead of typing a description into Google, you point your camera at something — a plant you can't identify, a product you want to find online, a menu in a foreign language, a QR code, a document with text you want to copy — and Google figures out what it is and gives you information, links, or translations instantly.
@@ -930,7 +930,7 @@ For seniors, the plant identification and translation features are frequently th
     category: `privacy`,
     tags: [`Alexa`, `Amazon Echo`, `voice history`, `privacy`, `smart speaker`, `data deletion`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Amazon's Alexa saves audio recordings of what you say after saying "Alexa." These recordings are stored in Amazon's cloud — Amazon says they use them to improve Alexa's voice recognition, and by default they're kept indefinitely. This means there may be months or years of voice clips stored in your Amazon account that you didn't know about.
@@ -971,7 +971,7 @@ Making these changes takes about 10 minutes through the Alexa Privacy settings i
     category: `phone-guides`,
     tags: [`widgets`, `iPhone`, `Home Screen`, `customization`, `iOS`],
     readTime: `6 min`,
-    thumbnailEmoji: `🧩`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Beginner`,
     body: `Widgets are small boxes on your iPhone's Home Screen that show live information from your apps without you having to open anything. A weather widget shows today's forecast at a glance. A calendar widget shows your next appointment. A battery widget shows how much charge your iPhone and AirPods have. A Photos widget cycles through your favorite pictures.
@@ -1012,7 +1012,7 @@ For seniors and anyone who wants key information visible at a glance, widgets ar
     category: `safety`,
     tags: [`Wi-Fi security`, `router`, `home network`, `password`, `encryption`, `WPA3`],
     readTime: `8 min`,
-    thumbnailEmoji: `🔒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-21`,
     difficulty: `Intermediate`,
     body: `Your home Wi-Fi network is the gateway to the internet for every device in your home — your computers, phones, tablets, smart TVs, security cameras, smart doorbells, thermostats, and more. If someone gains unauthorized access to your network, they can potentially intercept your internet traffic, access unsecured devices, or use your connection to do something illegal.

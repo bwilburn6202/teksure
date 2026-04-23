@@ -54,7 +54,7 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
         ) : (
         <img
           src={getGuideThumbnailUrl(guide)}
-          alt={guide.title}
+          alt=""
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           onError={() => setImgError(true)}
@@ -109,7 +109,7 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
     }`}>
       <img
         src={getGuideThumbnailSmall(guide)}
-        alt={guide.title}
+        alt=""
         className="w-8 h-8 rounded-md object-cover shrink-0"
         loading="lazy"
         onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
@@ -120,7 +120,7 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
       <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
         {categoryLabels[guide.category]}
       </Badge>
-      <span aria-label={guide.difficulty ?? ''} className={`text-xs font-medium shrink-0 hidden md:inline ${
+      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-xs font-medium shrink-0 hidden md:inline ${
         guide.difficulty === 'Beginner' ? 'text-green-600' :
         guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
       }`}>
@@ -149,7 +149,7 @@ function GuidesEmptyState({
   if (search.trim() && activeTab !== 'all') {
     return (
       <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none">🔍</p>
+        <p className="text-4xl mb-4 select-none"></p>
         <h2 className="text-lg font-semibold mb-2">
           No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
         </h2>
@@ -169,7 +169,7 @@ function GuidesEmptyState({
   if (search.trim()) {
     return (
       <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none">🤷</p>
+        <p className="text-4xl mb-4 select-none"></p>
         <h2 className="text-lg font-semibold mb-2">
           No guides matched "{search}"
         </h2>
@@ -200,7 +200,7 @@ function GuidesEmptyState({
   // Category tab selected but no guides in it
   return (
     <div className="text-center py-20 max-w-md mx-auto">
-      <p className="text-4xl mb-4 select-none">📂</p>
+      <p className="text-4xl mb-4 select-none"></p>
       <h2 className="text-lg font-semibold mb-2">No guides in this category yet</h2>
       <p className="text-sm text-muted-foreground mb-6">
         We're always adding new content. In the meantime, you can browse all our guides.
@@ -284,6 +284,7 @@ const Guides = () => {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
       {/* Header */}
       <section className="border-b">
         <div className="container py-14 md:py-20">
@@ -429,6 +430,7 @@ const Guides = () => {
           </Button>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

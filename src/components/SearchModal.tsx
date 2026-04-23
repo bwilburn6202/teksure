@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, X } from 'lucide-react';
+import { Search, X, BookOpen } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { guides, categoryLabels } from '@/data/guides';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
@@ -137,7 +137,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
                         onClick={() => navigateTo(`/glossary?q=${encodeURIComponent(term)}`)}
                         className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-muted flex items-center gap-3 transition-colors"
                       >
-                        <span className="text-xl shrink-0">📖</span>
+                        <BookOpen className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden="true" />
                         <p className="text-sm font-medium">{term}</p>
                       </button>
                     ))}
@@ -146,7 +146,7 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
               </>
             ) : (
               <div className="text-center py-8">
-                <p className="text-4xl mb-2">🔍</p>
+                <Search className="h-8 w-8 mx-auto mb-2 text-muted-foreground/40" aria-hidden="true" />
                 <p className="text-sm font-medium mb-1">No results found</p>
                 <button
                   onClick={() => navigateTo('/quick-fixes')}

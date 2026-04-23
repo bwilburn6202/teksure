@@ -8,19 +8,19 @@ const helpCards = [
     icon: BookOpen,
     title: 'Free Guides & Tutorials',
     desc: 'Over 300 step-by-step guides written in plain English, covering everything from Wi-Fi setup to AI tools.',
-    emoji: '📚',
+    emoji: '',
   },
   {
     icon: Users,
     title: 'Verified Tech Support',
     desc: 'Need hands-on help? Get matched with a background-checked technician for remote or in-person support.',
-    emoji: '🤝',
+    emoji: '',
   },
   {
     icon: Headphones,
     title: 'Patient, Jargon-Free Help',
     desc: 'We explain things the way a patient friend would — no judgment, no jargon, just clear answers.',
-    emoji: '💬',
+    emoji: '',
   },
 ];
 
@@ -45,7 +45,7 @@ const About = () => (
     />
     <Navbar />
 
-    <main className="flex-1">
+    <main id="main-content" className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
         <div className="container py-16 md:py-24">

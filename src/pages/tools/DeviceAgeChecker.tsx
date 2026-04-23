@@ -19,13 +19,13 @@ interface SupportResult {
 }
 
 const DEVICE_TYPES: { id: DeviceType; label: string; emoji: string; description: string }[] = [
-  { id: 'iphone', label: 'iPhone', emoji: '📱', description: 'Apple iPhone (any model)' },
-  { id: 'android', label: 'Android Phone', emoji: '🤖', description: 'Samsung, Google Pixel, or other Android' },
-  { id: 'ipad', label: 'iPad', emoji: '📋', description: 'Any Apple iPad' },
-  { id: 'mac', label: 'Mac', emoji: '💻', description: 'MacBook, iMac, Mac Mini, etc.' },
-  { id: 'windows', label: 'Windows PC', emoji: '🖥️', description: 'Desktop or laptop running Windows' },
-  { id: 'android-tablet', label: 'Android Tablet', emoji: '📲', description: 'Samsung, Amazon Fire, or other Android tablet' },
-  { id: 'chromebook', label: 'Chromebook', emoji: '🌐', description: 'Any laptop running ChromeOS' },
+  { id: 'iphone', label: 'iPhone', emoji: '', description: 'Apple iPhone (any model)' },
+  { id: 'android', label: 'Android Phone', emoji: '', description: 'Samsung, Google Pixel, or other Android' },
+  { id: 'ipad', label: 'iPad', emoji: '', description: 'Any Apple iPad' },
+  { id: 'mac', label: 'Mac', emoji: '', description: 'MacBook, iMac, Mac Mini, etc.' },
+  { id: 'windows', label: 'Windows PC', emoji: '', description: 'Desktop or laptop running Windows' },
+  { id: 'android-tablet', label: 'Android Tablet', emoji: '', description: 'Samsung, Amazon Fire, or other Android tablet' },
+  { id: 'chromebook', label: 'Chromebook', emoji: '', description: 'Any laptop running ChromeOS' },
 ];
 
 const CURRENT_YEAR = 2026;

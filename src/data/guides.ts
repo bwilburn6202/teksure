@@ -4226,7 +4226,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up 2FA on Facebook / Instagram',
-        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu (☰) → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
+        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu () → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
       },
       {
         title: 'Save your backup codes',
@@ -4258,7 +4258,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Review your Instagram account settings',
-        content: `On Instagram: Profile → Menu (☰) → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
+        content: `On Instagram: Profile → Menu () → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
       },
       {
         title: 'Be careful what you share publicly',
@@ -4344,11 +4344,11 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update Windows',
-        content: 'Click the Start menu → Settings (⚙️) → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
+        content: 'Click the Start menu → Settings () → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
       },
       {
         title: 'Update macOS',
-        content: 'Click the Apple menu (🍎) in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
+        content: 'Click the Apple menu () in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
       },
       {
         title: 'Update your iPhone',
@@ -4360,7 +4360,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update your browser (Chrome, Edge, Safari, Firefox)',
-        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu (☰) → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
+        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu () → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
       },
       {
         title: 'Set up automatic updates everywhere',
@@ -4395,7 +4395,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up on a Chromecast',
-        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (📡), and it plays on the TV.`
+        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (), and it plays on the TV.`
       },
       {
         title: 'Setting up on Apple TV',
@@ -4426,7 +4426,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Windows (Xbox Game Bar)',
-        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button (⏺) or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
+        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button () or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
         tip: `The Xbox Game Bar doesn't record the desktop itself — only active app windows. For full desktop recording, use the free app OBS Studio or the Snipping Tool in Windows 11.`
       },
       {
@@ -4435,12 +4435,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Mac',
-        content: 'Press Command (⌘) + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
+        content: 'Press Command () + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
         tip: 'Your Mac recording saves to the Desktop automatically as a .mov file.'
       },
       {
         title: 'Screen recording on iPhone',
-        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button (⏺ in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
+        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button ( in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
       },
       {
         title: 'Screen recording on Android',
@@ -4472,7 +4472,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Move a file into a folder',
-        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command (⌘) + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
+        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command () + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
       },
       {
         title: 'Name files sensibly',
@@ -4736,7 +4736,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Share a calendar with family',
-        content: `On Google Calendar: tap the three lines (☰), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
+        content: `On Google Calendar: tap the three lines (), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
       },
       {
         title: 'Set up recurring reminders',
@@ -5177,7 +5177,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon 🔒 and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -5236,12 +5236,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Using emoji',
-        content: 'Emoji are the small pictures 😊🎉👍 you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
+        content: 'Emoji are the small pictures  you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
         tip: 'You can react to a specific message in iMessage or WhatsApp: press and hold a message until reaction emoji appear. This is a quick way to reply without typing a response.'
       },
       {
         title: 'WhatsApp tips',
-        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks (✓✓) mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
+        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks () mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
       },
     ]
   },
@@ -5267,7 +5267,7 @@ const coreGuides: Guide[] = [
       { title: 'Find and follow people', content: `Tap the magnifying glass icon (bottom bar) to search. Type a friend's name or username. Tap their profile, then tap the blue "Follow" button. You'll see their posts in your home feed. Instagram may also suggest people from your contacts — tap "Allow" when prompted to find friends already on Instagram.` },
       { title: 'Browse your feed', content: 'Tap the house icon (bottom left) to see your home feed — posts from people you follow. Scroll up and down to see more. Tap the heart icon below a photo to like it. Tap the speech bubble to leave a comment. Double-tap a photo for a quick like.' },
       { title: 'Post your first photo', content: 'Tap the + icon (bottom center). Choose a photo from your library or tap "Camera" to take one now. Add a filter if you like (swipe left/right to preview filters — "Clarendon" is popular). Write a caption describing your photo. Tap "Share" to post it. Your followers will see it in their feeds!', tip: 'You can tag people in your photo by tapping "Tag People" and tapping on a face in the image.' },
-      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu ☰ → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
+      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu  → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
     ]
   },
   {
@@ -13152,8 +13152,9 @@ import { guidesBatch95 } from './guides-batch-95';
 import { guidesBatch96 } from './guides-batch-96';
 import { guidesBatch97 } from './guides-batch-97';
 import { guidesBatch98 } from './guides-batch-98';
+import { guidesBatch99 } from './guides-batch-99';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

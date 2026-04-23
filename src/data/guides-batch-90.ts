@@ -8,7 +8,7 @@ export const guidesBatch90: Guide[] = [
     category: `ai-guides`,
     tags: [`Perplexity`, `AI search`, `research`, `chatbot`, `questions`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When you type a question into a regular search engine, you get a long list of links and have to click through several websites to piece together an answer. Perplexity AI works differently. You ask it a question in plain English and it reads the web for you, then gives you a clear answer with links to its sources right there on the same page.
@@ -60,7 +60,7 @@ Focus modes let you tell Perplexity where to search. Academic mode searches peer
     category: `ai-guides`,
     tags: [`Google Gemini`, `AI assistant`, `Android`, `Google`, `chatbot`],
     readTime: `7 min`,
-    thumbnailEmoji: `✨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Gemini is Google's AI assistant — think of it as a very knowledgeable helper that you can have a conversation with. You can ask it questions, ask it to help you write something, describe what is in a photo, or get help with tasks inside Google apps like Gmail and Google Docs.
@@ -109,7 +109,7 @@ The free version of Gemini runs on Google's standard AI model. A paid Gemini Adv
     category: `ai-guides`,
     tags: [`Microsoft Copilot`, `AI`, `Bing`, `Windows`, `productivity`],
     readTime: `7 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Copilot is Microsoft's AI assistant, powered by the same technology behind ChatGPT. It is built into Windows 11, available as a free app for iPhone and Android, and accessible in any web browser at copilot.microsoft.com. You do not need a Microsoft account to use the basic version — you can start asking questions right away.
@@ -154,7 +154,7 @@ On Windows 11, you can open Copilot by pressing the Windows key and the letter C
     category: `ai-guides`,
     tags: [`Otter.ai`, `transcription`, `meeting notes`, `voice to text`, `AI`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Otter.ai is an app that listens to conversations and turns the spoken words into written text automatically. This is called transcription. If you have ever wished you could go back and read exactly what was said in a meeting, a doctor's appointment, a class, or a phone call, Otter.ai makes that possible.
@@ -203,7 +203,7 @@ Otter.ai is useful for people who have trouble keeping up with note-taking durin
     category: `ai-guides`,
     tags: [`Notion AI`, `AI writing`, `productivity`, `notes`, `drafting`],
     readTime: `8 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Notion is a popular app for taking notes, organizing projects, and managing information. Notion AI adds an artificial intelligence writing assistant built right into your existing Notion pages — you do not need to switch to a separate app or copy and paste text anywhere.
@@ -251,7 +251,7 @@ One of the most powerful uses is asking Notion AI questions about content alread
     category: `entertainment`,
     tags: [`Libby`, `library`, `ebooks`, `audiobooks`, `free`],
     readTime: `6 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Libby is a free app made by a company called OverDrive. It connects to your local public library and lets you borrow digital books — both ebooks you can read on a screen and audiobooks you can listen to — completely free, using your existing library card. There are no late fees because borrowed books return themselves automatically when the loan period is up.
@@ -295,7 +295,7 @@ Libby works on iPhone, Android, Kindle Fire tablets, and most web browsers. Your
     category: `entertainment`,
     tags: [`Hoopla`, `library`, `streaming`, `free`, `movies`, `comics`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Hoopla is a free digital library service that works differently from Libby in one important way: there are no waiting lists. Whatever content is available in Hoopla's catalog, you can access it the moment you want it. No holds, no waiting — borrow and start watching, listening, or reading right away.
@@ -341,7 +341,7 @@ The Hoopla app is available on iPhone, Android, Kindle Fire, Roku, Apple TV, Chr
     category: `entertainment`,
     tags: [`Libro.fm`, `audiobooks`, `local bookstores`, `independent bookstore`, `listening`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Libro.fm is an audiobook service designed to support independent bookstores across the country. When you buy an audiobook through Libro.fm, a portion of every purchase goes directly to the independent bookstore you have chosen to support. You get a great audiobook, and a local bookstore you care about benefits from the sale.
@@ -387,7 +387,7 @@ Libro.fm lets you gift audiobooks to others, which is a thoughtful option for bo
     category: `entertainment`,
     tags: [`WEBTOON`, `comics`, `manga`, `free`, `reading app`],
     readTime: `5 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `WEBTOON is a free app that hosts thousands of comic series and manga from creators all over the world. Unlike traditional comic books, WEBTOON comics are designed to be read on a phone screen — you scroll down through vertical panels instead of flipping through pages. This format makes them very comfortable to read on a phone without zooming in and out.
@@ -431,7 +431,7 @@ Creating a free account lets you subscribe to series and get notified when new e
     category: `financial-tech`,
     tags: [`real estate`, `home search`, `Realtor.com`, `buying a home`, `housing`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Realtor.com is a home search website and app operated by the National Association of Realtors. It pulls listing data directly from local Multiple Listing Services (MLS) — the official databases that real estate agents use. This means the listings you see are accurate and up to date, with fewer phantom listings of homes that have already sold.
@@ -479,7 +479,7 @@ The mortgage calculator on each listing page helps you estimate monthly payments
     category: `financial-tech`,
     tags: [`Trulia`, `neighborhood research`, `real estate`, `home buying`, `crime map`],
     readTime: `7 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Trulia is a home search website and app owned by Zillow Group, but it has developed a reputation for its especially detailed neighborhood information. While you can certainly search for homes on Trulia, what makes it stand out is the depth of data it provides about the areas surrounding those homes.
@@ -529,7 +529,7 @@ Trulia also shows a Noise Score for listings, indicating whether the area has el
     category: `financial-tech`,
     tags: [`Opendoor`, `sell home`, `iBuyer`, `real estate`, `cash offer`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Opendoor is what the real estate industry calls an iBuyer — a company that purchases homes directly from sellers using its own money, then resells the homes afterward. If you want to sell your house without listing it publicly, hosting open houses, negotiating with multiple buyers, or dealing with a sale falling through at the last minute, Opendoor offers an alternative worth understanding.
@@ -573,7 +573,7 @@ Opendoor operates in dozens of major markets across the United States. It works 
     category: `financial-tech`,
     tags: [`HomeLight`, `real estate agent`, `home buying`, `home selling`, `agent comparison`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Choosing the right real estate agent is one of the most important decisions when buying or selling a home. A skilled agent can help you navigate negotiations, avoid costly mistakes, and connect you with the right buyers or listings. The problem is that most people pick an agent based on a referral from a friend or a sign they saw in a yard — without knowing whether that agent is actually good in their specific price range and neighborhood.
@@ -617,7 +617,7 @@ HomeLight also offers a Simple Sale feature (separate from agent matching) where
     category: `app-guides`,
     tags: [`Paprika`, `recipe app`, `meal planning`, `cooking`, `grocery list`],
     readTime: `6 min`,
-    thumbnailEmoji: `👨‍🍳`,
+    thumbnailEmoji: `‍`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Paprika is a recipe management app designed to solve a common problem: your favorite recipes are scattered across bookmarks, printed pages, index cards, and a dozen different websites. Paprika brings everything into one organized place that works on your phone, tablet, and computer.
@@ -667,7 +667,7 @@ Paprika syncs your recipe library across all your devices using Paprika's own sy
     category: `app-guides`,
     tags: [`Tasty`, `cooking`, `recipes`, `BuzzFeed`, `video recipes`],
     readTime: `6 min`,
-    thumbnailEmoji: `🍳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tasty is a cooking app from BuzzFeed that became famous for its short, satisfying recipe videos — the overhead-camera style videos where you watch food being made in a fast, visual way. The app takes that video experience and turns it into a fully guided cooking tool that walks you through every step of any recipe.
@@ -713,7 +713,7 @@ Tasty also features a shopping list function: add any recipe's ingredients to yo
     category: `app-guides`,
     tags: [`Food Network`, `cooking`, `live classes`, `recipes`, `streaming`],
     readTime: `6 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Food Network Kitchen is the app version of the Food Network cable channel, but it offers much more than TV episode replays. It is a full cooking education platform with thousands of recipes, on-demand cooking lessons, and live cooking classes where you can interact with real Food Network chefs in real time.
@@ -757,7 +757,7 @@ Food Network Kitchen requires a subscription after the free trial period. The ap
     category: `app-guides`,
     tags: [`Cooklist`, `meal planner`, `pantry`, `grocery`, `recipes`],
     readTime: `6 min`,
-    thumbnailEmoji: `🥗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Cooklist approaches meal planning from a different angle than most recipe apps. Instead of showing you recipes and then sending you to buy ingredients, Cooklist starts with what you already have. You tell Cooklist what is in your pantry and refrigerator, and it suggests recipes that use those ingredients — helping you cook more of what you already own before buying more.
@@ -803,7 +803,7 @@ Cooklist is free to use with core features. A premium subscription adds addition
     category: `essential-skills`,
     tags: [`notarize`, `online notary`, `documents`, `legal`, `e-signature`],
     readTime: `7 min`,
-    thumbnailEmoji: `📜`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A notary public is an official who witnesses important documents being signed and certifies that the signers are who they say they are. Notarization is required for many significant documents — real estate deeds, powers of attorney, wills, loan paperwork, affidavits, and various legal forms.
@@ -847,7 +847,7 @@ The cost for a notarization on Notarize.com is a flat fee per document, typicall
     category: `financial-tech`,
     tags: [`Lemonade`, `renters insurance`, `homeowners insurance`, `insurance app`, `claims`],
     readTime: `7 min`,
-    thumbnailEmoji: `🍋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Lemonade is an insurance company that handles everything through an app and website — no phone calls with agents, no paperwork, and no waiting days for a quote. The company was designed from the ground up around technology, which lets it offer lower prices and a faster experience than many traditional insurers.
@@ -891,7 +891,7 @@ Filing a claim on Lemonade is done through the app with an AI named Maya. You de
     category: `financial-tech`,
     tags: [`life insurance`, `Fabric`, `term life`, `family protection`, `insurance`],
     readTime: `7 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Fabric is a financial protection app built for parents and families. It offers two products in one place: term life insurance, which pays a benefit to your family if you pass away during the coverage period, and a digital will, which lets you document your wishes for your belongings and, importantly, name guardians for your children.

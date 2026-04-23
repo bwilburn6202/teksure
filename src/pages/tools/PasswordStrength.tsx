@@ -120,7 +120,7 @@ const PasswordStrength = () => {
             </div>
 
             <p className="text-xs text-muted-foreground text-center pt-2">
-              🔒 Your password is checked locally in your browser. Nothing is stored or sent anywhere.
+               Your password is checked locally in your browser. Nothing is stored or sent anywhere.
             </p>
           </CardContent>
         </Card>

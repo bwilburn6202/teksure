@@ -201,7 +201,7 @@ function DreamResult({
         <h2 className="text-2xl font-bold mb-2">Your {goal.label} Journey</h2>
         <p className="text-muted-foreground max-w-md mx-auto">
           {pct === 100 
-            ? "🎉 Amazing! You've completed this journey!" 
+            ? " Amazing! You've completed this journey!" 
             : `We've found ${matchedGuides.length} guides to help you achieve this goal.`
           }
         </p>
@@ -379,7 +379,7 @@ const TechDreamBuilder = () => {
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="mb-8 flex flex-wrap justify-center gap-2 bg-transparent h-auto p-0">
             <TabsTrigger value="goals" className="rounded-xl px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">

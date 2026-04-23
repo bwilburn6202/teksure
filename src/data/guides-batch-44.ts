@@ -8,7 +8,7 @@ export const guidesBatch44: Guide[] = [
     category: `app-guides`,
     tags: [`google keep`, `notes`, `lists`, `android`, `reminders`, `organization`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗒️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Keep is Google's free note-taking app — think of it as a digital sticky note board that you can access from your phone, tablet, or computer. It syncs automatically, so a note you write on your phone shows up on your computer and vice versa.
@@ -58,7 +58,7 @@ Keep also lets you share notes with another person. Great for collaborative shop
     category: `communication`,
     tags: [`zoom`, `video call`, `host`, `waiting room`, `meeting`, `remote`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `When you host a Zoom meeting, you have controls that regular participants do not. You can let people in from the waiting room, mute someone who has background noise, share your screen, record the call, and end the meeting for everyone when you are done.
@@ -107,7 +107,7 @@ After the call, if you recorded it, Zoom saves the recording to your computer (f
     category: `phone-guides`,
     tags: [`android`, `email`, `gmail`, `setup`, `inbox`, `account`],
     readTime: `5 min`,
-    thumbnailEmoji: `📬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Adding an email account to your Android phone means you can check your inbox, reply to messages, and send new emails right from your phone — without opening a web browser. Android phones come with the Gmail app already installed, and it handles not just Gmail but also Yahoo Mail, Outlook, AOL, and most other email providers.
@@ -153,7 +153,7 @@ Once an account is added, you will see all your email inboxes either combined in
     category: `social-media`,
     tags: [`facebook`, `birthday`, `friends`, `notifications`, `social`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Facebook has a built-in birthday reminder feature that shows you which friends have birthdays today, this week, or coming up soon. It is one of the most popular reasons people check Facebook daily — a quick way to stay connected with family and friends on their special day.
@@ -168,7 +168,7 @@ Keep in mind that Facebook only shows birthdays for friends who have chosen to s
     steps: [
       {
         title: `Find Today's Birthdays`,
-        content: `Open the Facebook app or website. Look for a birthday cake icon (🎂) at the top of your News Feed or in your notifications. Facebook also sends a notification on your phone when a friend's birthday arrives. Tap the notification to see who has a birthday.`,
+        content: `Open the Facebook app or website. Look for a birthday cake icon () at the top of your News Feed or in your notifications. Facebook also sends a notification on your phone when a friend's birthday arrives. Tap the notification to see who has a birthday.`,
       },
       {
         title: `See Upcoming Birthdays`,
@@ -197,7 +197,7 @@ Keep in mind that Facebook only shows birthdays for friends who have chosen to s
     category: `windows-guides`,
     tags: [`windows`, `photos`, `pictures`, `organize`, `edit`, `crop`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Windows Photos is the built-in photo viewer and editor on every Windows 10 and Windows 11 computer. You do not need to download anything — it is already there and ready to use. Just double-click any photo on your computer and it opens automatically in Photos.
@@ -245,7 +245,7 @@ Photos can edit videos too: trim a clip to cut out the beginning or end, add slo
     category: `essential-skills`,
     tags: [`google account`, `gmail`, `create account`, `signup`, `beginners`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A Google account is your key to dozens of free tools: Gmail for email, Google Drive for storing files, Google Photos for your pictures, Google Calendar for scheduling, YouTube for videos, and much more. Creating an account takes about five minutes and costs nothing.
@@ -293,7 +293,7 @@ After creating your account, stay signed in on your own devices for convenience,
     category: `safety-guides`,
     tags: [`google`, `search history`, `privacy`, `delete history`, `my activity`],
     readTime: `5 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Every time you search on Google while signed into your account, Google saves that search in your account history. This helps Google show you relevant results and lets you look back at what you searched for — but it also means Google is building a detailed record of your interests, health questions, and daily habits.
@@ -337,7 +337,7 @@ Clearing your search history on your phone's browser is different from clearing 
     category: `phone-guides`,
     tags: [`ipad`, `imessage`, `texting`, `sms`, `apple`, `iphone`],
     readTime: `5 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPad can do more than just browse the web and watch videos — it can also send and receive messages. The Messages app on iPad works in two ways: iMessage and SMS text forwarding.
@@ -381,7 +381,7 @@ Setting up iMessage on iPad takes about two minutes and just requires your Apple
     category: `phone-guides`,
     tags: [`android`, `gestures`, `navigation`, `swipe`, `home button`, `back`],
     readTime: `5 min`,
-    thumbnailEmoji: `👆`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Older Android phones had three buttons at the bottom of the screen: Back, Home, and Recent Apps. Newer Android phones use gestures instead — swipes on the screen — giving you more screen space for apps and content.
@@ -426,7 +426,7 @@ If you find gestures confusing, you can always switch back to the three-button l
     category: `entertainment`,
     tags: [`google photos`, `slideshow`, `chromecast`, `smart tv`, `cast`, `photos`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Photos lets you play a slideshow of your pictures and videos on your TV — a wonderful way to share vacation photos, family moments, or a photo tribute at a gathering. All you need is a phone with Google Photos and a TV that supports Google Cast (most new TVs do, and Chromecast devices add this ability to older TVs).
@@ -469,7 +469,7 @@ Once you set it up once, casting photos to your TV becomes something you can do 
     category: `essential-skills`,
     tags: [`gmail`, `search`, `email`, `find email`, `inbox`, `tips`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have used Gmail for a few years, your inbox probably has thousands of emails. Finding a specific one from six months ago can feel impossible — unless you know how to search effectively.
@@ -517,7 +517,7 @@ All Gmail search operators work the same whether you are on a computer, phone, o
     category: `phone-guides`,
     tags: [`apple airtag`, `tracking`, `find my`, `lost keys`, `iphone`, `bluetooth`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏷️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple AirTag is a small round disc — about the size of a large coin — that you attach to things you tend to misplace: your keys, wallet, purse, luggage, TV remote, or anything else. Using the Find My app on your iPhone, you can see its location on a map, play a sound to find it nearby, or get turn-by-turn walking directions directly to it.
@@ -564,7 +564,7 @@ You can attach an AirTag with a keyring holder, a loop, or a case — various ac
     category: `phone-guides`,
     tags: [`samsung`, `dex`, `galaxy`, `desktop mode`, `monitor`, `productivity`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Samsung DeX (short for Desktop Experience) is a feature built into most Samsung Galaxy phones and tablets released since 2017. When you connect your Galaxy device to an external monitor, Samsung DeX launches a desktop-style interface — with a taskbar at the bottom, resizable windows, and full support for a keyboard and mouse.
@@ -611,7 +611,7 @@ While in DeX mode, your phone screen acts as a touchpad — you swipe on the pho
     category: `communication`,
     tags: [`zoom`, `captions`, `accessibility`, `hearing`, `transcription`, `subtitles`],
     readTime: `4 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Zoom has a built-in live captions feature that displays spoken words as text at the bottom of the screen during a meeting. Each participant's words appear in real time, making it much easier to follow along — especially in a noisy environment, if you have hearing loss, or if someone has a strong accent.
@@ -655,7 +655,7 @@ Captions are generated automatically by Zoom's speech-to-text engine. Accuracy i
     category: `communication`,
     tags: [`zoom`, `record`, `meeting`, `video`, `replay`, `save`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Recording a Zoom meeting lets you save the video and audio of a call — perfect for revisiting a medical consultation, saving a family reunion call, reviewing a class or tutorial, or sharing with someone who could not attend.
@@ -703,7 +703,7 @@ The recording starts immediately when you click Record and continues until you s
     category: `phone-guides`,
     tags: [`android`, `battery`, `adaptive battery`, `battery life`, `power saving`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android phones include a feature called Adaptive Battery that uses artificial intelligence to learn which apps you use throughout the day and which ones sit idle. Apps you rarely open are restricted from running in the background, which conserves battery power for the apps you actually care about.
@@ -743,7 +743,7 @@ The feature also works alongside Battery Saver mode (which you turn on manually 
     category: `essential-skills`,
     tags: [`charger`, `usb-c`, `lightning`, `wireless charging`, `cable`, `phone accessories`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Not all phone chargers are the same, and buying the wrong cable is a frustrating waste of money. There are three main types of charging connectors used in phones today — USB-C, Lightning, and Micro-USB — plus wireless charging that does not need a cable at all.
@@ -789,7 +789,7 @@ When buying a replacement cable, check which port your phone has before ordering
     category: `financial-tech`,
     tags: [`facebook marketplace`, `sell`, `local selling`, `used items`, `safety`, `listing`],
     readTime: `6 min`,
-    thumbnailEmoji: `💰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Facebook Marketplace is a free classifieds section built into Facebook where you can sell items to buyers in your local area. It is similar to Craigslist but easier to use because buyers and sellers can see each other's Facebook profiles, which adds a layer of trust.
@@ -837,7 +837,7 @@ Safety is important. Most buyers are honest, but following a few common-sense ru
     category: `tips-tricks`,
     tags: [`chrome`, `reading list`, `save articles`, `browser`, `offline`, `bookmarks`],
     readTime: `4 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Chrome's Reading List is a feature that lets you save any web page to read at a later time. It is different from a regular bookmark — items in your Reading List are clearly marked as "read" or "unread," and Chrome also saves the page content so you can read it later even without an internet connection.
@@ -881,7 +881,7 @@ Reading List is not a replacement for bookmarks — bookmarks are for pages you 
     category: `phone-guides`,
     tags: [`iphone`, `serial number`, `warranty`, `apple`, `imei`, `trade-in`],
     readTime: `3 min`,
-    thumbnailEmoji: `🔢`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone's serial number is a unique identifier — a string of letters and numbers that Apple uses to track your specific device. You need it when making a warranty claim at the Apple Store, requesting a repair, trading your phone in for a new one, checking your warranty status online, or reporting your phone as stolen.

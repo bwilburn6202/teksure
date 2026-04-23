@@ -432,7 +432,7 @@ export default function NotificationDecoder() {
           {/* Notification cards */}
           {filtered.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-4xl mb-3">🔍</p>
+              <p className="text-4xl mb-3"></p>
               <p className="font-semibold text-lg mb-2">No results found</p>
               <p className="text-muted-foreground text-sm max-w-xs mx-auto">
                 Try different words — for example, type "virus" instead of "virus warning."

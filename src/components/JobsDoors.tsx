@@ -15,7 +15,7 @@ const doors = [
   {
     to: '/learn',
     icon: GraduationCap,
-    emoji: '🧑‍🏫',
+    emoji: '‍',
     title: 'Teach me something',
     blurb: 'Step-by-step lessons at your pace. Start with the basics or pick a topic.',
     accent: 'from-blue-500/10 to-blue-500/5',
@@ -24,7 +24,7 @@ const doors = [
   {
     to: '/quick-fixes',
     icon: Wrench,
-    emoji: '🛠️',
+    emoji: '',
     title: 'Fix something',
     blurb: 'Something is broken — phone, Wi-Fi, printer, password. Walk me through it.',
     accent: 'from-amber-500/10 to-amber-500/5',
@@ -33,7 +33,7 @@ const doors = [
   {
     to: '/scam-defense',
     icon: ShieldCheck,
-    emoji: '🛡️',
+    emoji: '',
     title: 'Is this safe?',
     blurb: 'Paste a link, phone number, or email. We\u2019ll tell you if it looks real.',
     accent: 'from-emerald-500/10 to-emerald-500/5',

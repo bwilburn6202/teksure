@@ -109,10 +109,10 @@ const permissions: PermissionType[] = [
 ];
 
 const platforms: { type: PlatformType; label: string; emoji: string }[] = [
-  { type: 'iphone', label: 'iPhone / iPad', emoji: '📱' },
-  { type: 'android', label: 'Android', emoji: '🤖' },
-  { type: 'windows', label: 'Windows PC', emoji: '🪟' },
-  { type: 'mac', label: 'Mac', emoji: '🍎' },
+  { type: 'iphone', label: 'iPhone / iPad', emoji: '' },
+  { type: 'android', label: 'Android', emoji: '' },
+  { type: 'windows', label: 'Windows PC', emoji: '' },
+  { type: 'mac', label: 'Mac', emoji: '' },
 ];
 
 const riskColors = {

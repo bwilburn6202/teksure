@@ -179,6 +179,7 @@ export default function Explore() {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
       {/* Header */}
       <section className="border-b">
         <div className="container py-12 md:py-16">
@@ -256,6 +257,7 @@ export default function Explore() {
           </Link>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

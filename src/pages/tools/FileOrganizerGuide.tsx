@@ -140,7 +140,7 @@ export default function FileOrganizerGuide() {
   const copyStructure = () => {
     if (!selectedPersona) return;
     const text = selectedPersona.folders.map(f => {
-      let out = `📁 ${f.name}\n   ${f.description}`;
+      let out = ` ${f.name}\n   ${f.description}`;
       if (f.subfolders) out += '\n   ├─ ' + f.subfolders.join('\n   ├─ ');
       return out;
     }).join('\n\n');

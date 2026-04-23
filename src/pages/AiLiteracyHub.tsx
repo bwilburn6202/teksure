@@ -408,7 +408,7 @@ export default function AiLiteracyHub() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 max-w-6xl">
+      <main id="main-content" className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
         <section className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300">

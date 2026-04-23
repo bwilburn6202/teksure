@@ -354,11 +354,11 @@ export default function PhishingScanner() {
                 <p className="text-sm font-medium mb-3">Signs of a phishing link to watch for:</p>
                 <div className="space-y-2">
                   {[
-                    '🔒 Real sites always use https:// — look for the padlock',
-                    '📧 If you didn\'t expect the link, be suspicious regardless of who sent it',
-                    '🔤 Check for subtle misspellings like "roya1mail.com" (number 1 not letter l)',
-                    '⏩ Shortened URLs like bit.ly hide where you\'re actually going',
-                    '🏦 Banks and the IRS never ask you to click a link to verify your account',
+                    ' Real sites always use https:// — look for the padlock',
+                    ' If you didn\'t expect the link, be suspicious regardless of who sent it',
+                    ' Check for subtle misspellings like "roya1mail.com" (number 1 not letter l)',
+                    ' Shortened URLs like bit.ly hide where you\'re actually going',
+                    ' Banks and the IRS never ask you to click a link to verify your account',
                   ].map((tip, i) => (
                     <p key={i} className="text-xs text-muted-foreground">{tip}</p>
                   ))}

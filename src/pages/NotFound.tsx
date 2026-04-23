@@ -30,11 +30,11 @@ const NotFound = () => {
         type="error"
       />
       <Navbar />
-      <main className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-background">
+      <main id="main-content" className="min-h-[70vh] flex flex-col items-center justify-center px-4 py-16 bg-background">
         <div className="text-center max-w-lg mx-auto">
 
           {/* Friendly visual */}
-          <div className="text-8xl mb-4 select-none">🔍</div>
+          <div className="text-8xl mb-4 select-none"></div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">
             Hmm, we can't find that page.
           </h1>

@@ -402,7 +402,7 @@ export default function JobSearchTechHub() {
         path="/job-search-tech-hub"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
           <div className="container max-w-3xl text-center py-16 md:py-20">

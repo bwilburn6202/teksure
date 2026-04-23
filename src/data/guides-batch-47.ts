@@ -8,7 +8,7 @@ export const guidesBatch47: Guide[] = [
     category: `app-guides`,
     tags: [`freeform`, `whiteboard`, `iphone`, `ipad`, `planning`, `brainstorm`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖊️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Freeform is a free app that comes built into every iPhone and iPad running iOS 16 or later. Think of it as a giant digital whiteboard where you can write notes, draw diagrams, stick photos, and add shapes — all in one place. It's great for planning a trip, organizing your thoughts before a big decision, or just brainstorming with someone else over the internet.
@@ -54,7 +54,7 @@ Freeform boards are saved automatically in iCloud, so your content stays safe an
     category: `safety-guides`,
     tags: [`check in`, `safety`, `iphone`, `ios 17`, `location`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `📍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Check In is a safety feature Apple added in iOS 17 that automatically sends a message to a trusted contact when you arrive at your destination. If you don't arrive on time — or if your iPhone detects that you've stopped moving — your contact is notified so they can check on you.
@@ -99,7 +99,7 @@ You can use Check In for short trips or longer journeys. The feature asks for yo
     category: `app-guides`,
     tags: [`journal`, `iphone`, `ios 17`, `diary`, `wellness`, `writing`],
     readTime: `5 min`,
-    thumbnailEmoji: `📔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Journal is a free app from Apple that comes pre-installed on iPhones running iOS 17.2 or later. It's a private diary for your phone — a place to record your thoughts, save meaningful photos, log what you've been listening to, or simply write down how your day went.
@@ -144,7 +144,7 @@ Journaling has real benefits for mental health — writing down what's on your m
     category: `communication`,
     tags: [`facetime`, `reactions`, `iphone`, `ios 17`, `video call`, `effects`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎉`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `FaceTime Reactions are a fun feature Apple added in iOS 17 that let you send expressive visual effects during video calls without tapping any buttons. When you make certain hand gestures in front of your iPhone's camera, FaceTime automatically plays a 3D animation that the other person can see — hearts, thumbs up, balloons, fireworks, and more.
@@ -187,7 +187,7 @@ The feature requires an iPhone 12 or newer running iOS 17 or later, and it works
     category: `smart-home`,
     tags: [`apple home`, `homekit`, `smart home`, `iphone`, `smart devices`, `automation`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Apple Home app is built into every iPhone and iPad. It's your central control panel for smart home devices — things like smart light bulbs, smart locks, video doorbells, thermostats, and security cameras that support Apple HomeKit.
@@ -232,7 +232,7 @@ The Home app is free, privacy-focused, and requires no paid subscription. Howeve
     category: `windows-guides`,
     tags: [`usb`, `flash drive`, `windows`, `file transfer`, `storage`, `backup`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A USB flash drive — also called a thumb drive, memory stick, or USB stick — is a small, portable storage device about the size of your thumb. You plug it into a USB port on your computer to store files, move documents between computers, or keep a backup copy of important things.
@@ -277,7 +277,7 @@ One important habit: always "eject" the flash drive before pulling it out. This 
     category: `mac-guides`,
     tags: [`usb`, `flash drive`, `mac`, `file transfer`, `storage`, `thumb drive`],
     readTime: `5 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A USB flash drive (also called a thumb drive or memory stick) is a small portable storage device that lets you carry files with you or back them up away from your main computer. On a Mac, connecting a flash drive is quick — the drive appears right on your desktop so you can work with it like any folder.
@@ -326,7 +326,7 @@ Flash drives are reusable, durable, and inexpensive. A 32GB drive holds roughly 
     category: `how-to`,
     tags: [`genius bar`, `apple store`, `tech support`, `iphone repair`, `apple support`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Genius Bar is Apple's in-store technical support service. It's staffed by Apple-certified technicians — called Geniuses — who can help you troubleshoot software issues, diagnose hardware problems, and walk you through how to use your devices. Best of all, the consultation itself is free.
@@ -377,7 +377,7 @@ You'll need a free Apple ID to book online. If you don't have one, you can call 
     category: `how-to`,
     tags: [`usps`, `shipping`, `mail package`, `post office`, `click-n-ship`, `postage`],
     readTime: `6 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The US Postal Service (USPS) is one of the most affordable ways to ship packages anywhere in the country. You can drop off a package at your local post office, schedule a free pickup from your front door, or print a pre-paid label online at home and drop it off at any USPS location.
@@ -424,7 +424,7 @@ If you shop at websites like Amazon or eBay frequently, you'll find the process 
     category: `government-civic`,
     tags: [`irs`, `tax refund`, `irs2go`, `taxes`, `federal refund`, `government app`],
     readTime: `4 min`,
-    thumbnailEmoji: `💵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `IRS2Go is a free, official app from the Internal Revenue Service. It's available for iPhone and Android and lets you check the status of your federal tax refund directly from your phone — no need to log into a website or call the IRS.
@@ -475,7 +475,7 @@ The app is completely free and does not require creating an account to check a r
     category: `communication`,
     tags: [`imessage`, `group chat`, `iphone`, `messages`, `group text`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iMessage group chats let you send a message to multiple people at once — all in one shared conversation where everyone can see and reply to each other. This is perfect for coordinating with family, keeping up with a circle of friends, or organizing a get-together without sending the same text to each person separately.
@@ -521,7 +521,7 @@ Group chats are saved in the Messages app just like individual conversations. Th
     category: `essential-skills`,
     tags: [`find in page`, `browser`, `ctrl-f`, `search`, `chrome`, `safari`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `"Find in Page" is one of the most useful and underused features on the internet. It lets you search for any specific word or phrase within the page you're currently reading, highlighting every place that word appears. Instead of reading an entire long article to find the one part you care about, you can search for a keyword and jump straight to it.
@@ -545,7 +545,7 @@ This is especially handy when:
       },
       {
         title: `On a Mac (any browser)`,
-        content: `Press Command + F on your keyboard (the Command key has a ⌘ symbol). The search bar appears. Type your word and use the arrows or press Enter/Return to move through the matches.`,
+        content: `Press Command + F on your keyboard (the Command key has a  symbol). The search bar appears. Type your word and use the arrows or press Enter/Return to move through the matches.`,
       },
       {
         title: `On iPhone using Safari`,
@@ -569,7 +569,7 @@ This is especially handy when:
     category: `communication`,
     tags: [`apple notes`, `share notes`, `collaborate`, `iphone`, `ipad`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Apple Notes is more than a place to jot things down — it also lets you share individual notes with other people so you can all view and edit the same note together. This is perfect for shared grocery lists, trip planning documents, family medical information, or any note where more than one person needs to contribute.
@@ -619,7 +619,7 @@ You can also lock a shared note if it contains sensitive information — but not
     category: `phone-guides`,
     tags: [`android`, `one-handed mode`, `accessibility`, `large phone`, `tips`, `gesture`],
     readTime: `4 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Modern Android phones have grown quite large, and reaching the top of the screen with just one thumb can be a stretch. One-handed mode solves this by shrinking the active screen area down to the lower portion of the display, so buttons and links are within comfortable reach when you're holding the phone with a single hand.
@@ -663,7 +663,7 @@ One-handed mode is especially helpful when you're carrying something in the othe
     category: `windows-guides`,
     tags: [`windows`, `pin`, `login`, `password`, `security`, `windows hello`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A Windows PIN is a short numeric code — typically 4 to 8 digits — that you enter to sign into your computer instead of typing a long password. It's faster, and despite being shorter, it's actually more secure than a regular password in several important ways.
@@ -713,7 +713,7 @@ Setting up a PIN is especially helpful if you find yourself typing a long passwo
     category: `phone-guides`,
     tags: [`iphone`, `usb-c`, `iphone 15`, `iphone 16`, `charging`, `accessories`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Starting with the iPhone 15, Apple switched from its proprietary Lightning connector to the industry-standard USB-C port. This is the same type of port used by most Android phones, MacBooks, iPads, and many laptops and accessories sold today.
@@ -764,7 +764,7 @@ Here's what you can do with the USB-C port on your iPhone:
     category: `entertainment`,
     tags: [`google tv`, `remote control`, `chromecast`, `android tv`, `streaming`, `app`],
     readTime: `4 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google TV is the operating system used on Chromecast with Google TV devices and many smart TVs from Sony, TCL, and other brands. If you have one of these devices, the free Google TV app for iPhone or Android can turn your phone into a complete remote control — including a keyboard for typing searches, which is much faster than hunting through letters on screen with the physical remote.
@@ -814,7 +814,7 @@ This is particularly helpful if you frequently misplace the physical remote, pre
     category: `essential-skills`,
     tags: [`copy paste`, `iphone`, `android`, `text selection`, `basics`, `tips`],
     readTime: `4 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Copying and pasting text on a phone is one of the most helpful skills to know — once you get the hang of it, you'll use it all the time. It lets you take text from one place (like an address in an email) and paste it somewhere else (like Google Maps) without retyping everything.
@@ -865,7 +865,7 @@ On iPhone, selected text shows blue handles on both sides — drag those handles
     category: `safety-guides`,
     tags: [`passwords`, `iphone`, `ios 18`, `password manager`, `security`, `saved passwords`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Starting with iOS 18, Apple added a brand-new app called Passwords directly to the iPhone home screen. Before iOS 18, you could only manage your saved passwords buried deep inside Settings > Passwords. Now there's a dedicated app that's much faster to access and easier to use.
@@ -916,7 +916,7 @@ The Passwords app is protected by Face ID or your iPhone passcode, so nobody can
     category: `app-guides`,
     tags: [`google maps`, `share location`, `eta`, `navigation`, `family safety`, `driving`],
     readTime: `4 min`,
-    thumbnailEmoji: `📍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you're driving somewhere and want your family to know when you'll arrive, Google Maps makes it very easy to share your live location and estimated time of arrival directly from inside the navigation. The person you share with doesn't need to have Google Maps open — they receive a link they can tap to see your progress on a map in any browser.
