@@ -22,6 +22,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
+import NetworkField from '@/components/NetworkField';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
@@ -847,9 +848,10 @@ export default function TekBrainPage() {
       <Navbar />
 
       <main className="relative h-screen flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-        {/* Glass-motion starfield — inverted-color stars twinkling over the
-            warm amber backdrop. Pointer-events-none so it never blocks UI. */}
-        <StarField />
+        {/* Decentralized mesh — peer nodes float, link up, and fire glowing
+            data packets at each other. Sits behind the UI; move or click on
+            empty background to interact. */}
+        <NetworkField />
 
         {/* ── Hero — restored style, reduced size, clears the fixed navbar ── */}
         <section className="relative z-10 shrink-0 border-b border-border/60 pt-16 pb-3 md:pt-20 md:pb-4 text-center px-4">
@@ -1133,64 +1135,6 @@ export default function TekBrainPage() {
 // Sub-components — kept in the same file per project convention so the page is
 // a single, self-contained artifact.
 // ─────────────────────────────────────────────────────────────────────────────
-
-// ── StarField ────────────────────────────────────────────────────────────────
-// An "inverted starry night" — warm-toned dots of varying sizes scattered over
-// the amber gradient, each twinkling at its own cadence. Purely decorative, so
-// it sits in the background with pointer-events disabled and aria-hidden.
-// The positions are hand-picked rather than random so the layout is stable
-// across renders and SSR-safe.
-const STARS: Array<{ top: string; left: string; size: number; delay: string; duration: string; opacity: number }> = [
-  { top: '8%',  left: '6%',   size: 2, delay: '0s',    duration: '4s', opacity: 0.55 },
-  { top: '14%', left: '22%',  size: 3, delay: '1.1s',  duration: '5s', opacity: 0.45 },
-  { top: '5%',  left: '38%',  size: 2, delay: '0.4s',  duration: '6s', opacity: 0.5  },
-  { top: '18%', left: '55%',  size: 2, delay: '2.2s',  duration: '4s', opacity: 0.6  },
-  { top: '9%',  left: '72%',  size: 3, delay: '0.8s',  duration: '5s', opacity: 0.5  },
-  { top: '22%', left: '88%',  size: 2, delay: '1.6s',  duration: '6s', opacity: 0.45 },
-  { top: '32%', left: '12%',  size: 2, delay: '2.8s',  duration: '5s', opacity: 0.5  },
-  { top: '40%', left: '30%',  size: 2, delay: '0.2s',  duration: '4s', opacity: 0.45 },
-  { top: '28%', left: '48%',  size: 3, delay: '1.4s',  duration: '7s', opacity: 0.55 },
-  { top: '36%', left: '66%',  size: 2, delay: '2.0s',  duration: '5s', opacity: 0.5  },
-  { top: '30%', left: '82%',  size: 2, delay: '0.6s',  duration: '6s', opacity: 0.45 },
-  { top: '52%', left: '4%',   size: 2, delay: '1.8s',  duration: '5s', opacity: 0.5  },
-  { top: '60%', left: '18%',  size: 3, delay: '0.9s',  duration: '6s', opacity: 0.55 },
-  { top: '58%', left: '42%',  size: 2, delay: '2.5s',  duration: '4s', opacity: 0.45 },
-  { top: '66%', left: '60%',  size: 2, delay: '1.3s',  duration: '5s', opacity: 0.5  },
-  { top: '54%', left: '78%',  size: 3, delay: '0.3s',  duration: '7s', opacity: 0.5  },
-  { top: '72%', left: '10%',  size: 2, delay: '1.9s',  duration: '5s', opacity: 0.45 },
-  { top: '78%', left: '28%',  size: 2, delay: '0.5s',  duration: '6s', opacity: 0.5  },
-  { top: '82%', left: '50%',  size: 3, delay: '2.3s',  duration: '5s', opacity: 0.55 },
-  { top: '74%', left: '68%',  size: 2, delay: '1.0s',  duration: '4s', opacity: 0.45 },
-  { top: '86%', left: '84%',  size: 2, delay: '0.7s',  duration: '6s', opacity: 0.5  },
-  { top: '92%', left: '16%',  size: 2, delay: '2.1s',  duration: '5s', opacity: 0.45 },
-  { top: '90%', left: '40%',  size: 3, delay: '1.5s',  duration: '7s', opacity: 0.5  },
-  { top: '88%', left: '74%',  size: 2, delay: '0.1s',  duration: '5s', opacity: 0.55 },
-];
-
-function StarField() {
-  return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden"
-    >
-      {STARS.map((s, i) => (
-        <span
-          key={i}
-          className="absolute rounded-full bg-amber-700/70 dark:bg-amber-200/70 animate-pulse"
-          style={{
-            top: s.top,
-            left: s.left,
-            width: `${s.size}px`,
-            height: `${s.size}px`,
-            opacity: s.opacity,
-            animationDelay: s.delay,
-            animationDuration: s.duration,
-          }}
-        />
-      ))}
-    </div>
-  );
-}
 
 function UserBubble({ msg }: { msg: ChatMessage }) {
   return (
