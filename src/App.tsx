@@ -63,6 +63,7 @@ const QuickReference         = lazy(() => import("./pages/tools/QuickReference")
 const Troubleshooter         = lazy(() => import("./pages/tools/Troubleshooter"));
 const DeviceChooser          = lazy(() => import("./pages/tools/DeviceChooser"));
 const BackupWizard           = lazy(() => import("./pages/tools/BackupWizard"));
+const PhotoBackupWizard      = lazy(() => import("./pages/tools/PhotoBackupWizard"));
 const SafetyCourse           = lazy(() => import("./pages/tools/SafetyCourse"));
 const Setup                  = lazy(() => import("./pages/Setup"));
 const AppRecommender         = lazy(() => import("./pages/tools/AppRecommender"));
@@ -88,6 +89,7 @@ const TechJournal            = lazy(() => import("./pages/TechJournal"));
 const MyDevices              = lazy(() => import("./pages/MyDevices"));
 const Achievements           = lazy(() => import("./pages/Achievements"));
 const QuickReferenceCards    = lazy(() => import("./pages/QuickReferenceCards"));
+const PhoneButtonPoster      = lazy(() => import("./pages/printables/PhoneButtonPoster"));
 const ReferenceCards         = lazy(() => import("./pages/ReferenceCards"));
 const Checklists             = lazy(() => import("./pages/Checklists"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
@@ -153,6 +155,8 @@ const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"))
 const PrivacyAudit           = lazy(() => import("./pages/tools/PrivacyAudit"));
 const BrowserSafetyAudit     = lazy(() => import("./pages/tools/BrowserSafetyAudit"));
 const StreamingCalculator    = lazy(() => import("./pages/tools/StreamingCalculator"));
+const SubscriptionCostAggregator = lazy(() => import("./pages/calculators/SubscriptionCostAggregator"));
+const PhoneBillDecoder       = lazy(() => import("./pages/calculators/PhoneBillDecoder"));
 const DataBreachChecker      = lazy(() => import("./pages/tools/DataBreachChecker"));
 const NewPhoneSetup          = lazy(() => import("./pages/tools/NewPhoneSetup"));
 const SubscriptionTracker    = lazy(() => import("./pages/tools/SubscriptionTracker"));
@@ -166,6 +170,7 @@ const PhonePlanComparison    = lazy(() => import("./pages/tools/PhonePlanCompari
 const DigitalLiteracyAssessment = lazy(() => import("./pages/tools/DigitalLiteracyAssessment"));
 const MeetingSetupHelper     = lazy(() => import("./pages/tools/MeetingSetupHelper"));
 const ContactBackupTool      = lazy(() => import("./pages/tools/ContactBackupTool"));
+const InternetPlanCalculator = lazy(() => import("./pages/calculators/InternetPlanCalculator"));
 
 // ── OSINT.link-inspired tools ──
 const GoogleDorkGenerator    = lazy(() => import("./pages/tools/GoogleDorkGenerator"));
@@ -192,7 +197,10 @@ const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
 const VoiceAssistantSetup    = lazy(() => import("./pages/tools/VoiceAssistantSetup"));
+const VoiceCommandCheatSheet = lazy(() => import("./pages/tools/VoiceCommandCheatSheet"));
 const LibraryTechHelper      = lazy(() => import("./pages/tools/LibraryTechHelper"));
+const LocalLibraryFinder     = lazy(() => import("./pages/tools/LocalLibraryFinder"));
+const PodcastDirectory       = lazy(() => import("./pages/tools/PodcastDirectory"));
 const TechGiftGuideTool      = lazy(() => import("./pages/tools/TechGiftGuide"));
 const MyFirstSmartphone      = lazy(() => import("./pages/tools/MyFirstSmartphone"));
 const IpadForSeniors         = lazy(() => import("./pages/tools/IpadForSeniors"));
@@ -202,6 +210,9 @@ const PhoneCleanupWizard     = lazy(() => import("./pages/tools/PhoneCleanupWiza
 const DigitalFootprintScanner = lazy(() => import("./pages/tools/DigitalFootprintScanner"));
 const InternetPlanComparator = lazy(() => import("./pages/tools/InternetPlanComparator"));
 const ScamIqTest             = lazy(() => import("./pages/tools/ScamIqTest"));
+const ScamIqQuiz             = lazy(() => import("./pages/quizzes/ScamIqQuiz"));
+const TechConfidenceQuiz     = lazy(() => import("./pages/quizzes/TechConfidenceQuiz"));
+const PhishingInbox          = lazy(() => import("./pages/practice/PhishingInbox"));
 const AccessibilityNeedsFinder = lazy(() => import("./pages/tools/AccessibilityNeedsFinder"));
 const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGuide"));
 const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
@@ -210,17 +221,22 @@ const HomeSecurityCameraSetup = lazy(() => import("./pages/tools/HomeSecurityCam
 const SmartThermostatSetup  = lazy(() => import("./pages/tools/SmartThermostatSetup"));
 const HearingAidTechHelper  = lazy(() => import("./pages/tools/HearingAidTechHelper"));
 const LowVisionTechHub       = lazy(() => import("./pages/tools/LowVisionTechHub"));
+const ScreenReaderStarter    = lazy(() => import("./pages/tools/ScreenReaderStarter"));
+const AudioTutorialHub       = lazy(() => import("./pages/tools/AudioTutorialHub"));
 const RemoteControlDecoder   = lazy(() => import("./pages/tools/RemoteControlDecoder"));
 const RideshareSetup         = lazy(() => import("./pages/tools/RideshareSetup"));
 const BankingAppSetup        = lazy(() => import("./pages/tools/BankingAppSetup"));
 const VideoCallHelper        = lazy(() => import("./pages/tools/VideoCallHelper"));
 const GovernmentBenefitsPortal = lazy(() => import("./pages/tools/GovernmentBenefitsPortal"));
+const StateBenefitsFinder   = lazy(() => import("./pages/tools/StateBenefitsFinder"));
+const DmvOnlineHelper        = lazy(() => import("./pages/tools/DmvOnlineHelper"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
 const TekBrainPage           = lazy(() => import("./pages/TekBrain"));
 const TekBrainLanding        = lazy(() => import("./pages/TekBrainLanding"));
 const FreeResources          = lazy(() => import("./pages/FreeResources"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
+const ScamAlertFeed          = lazy(() => import("./pages/ScamAlertFeed"));
 const Learn                  = lazy(() => import("./pages/Learn"));
 const AccessibilityHub       = lazy(() => import("./pages/AccessibilityHub"));
 const CaregiverHub           = lazy(() => import("./pages/CaregiverHub"));
@@ -232,6 +248,12 @@ const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics
 
 // ── Checklists (life-transition) ──
 const Turning65              = lazy(() => import("./pages/checklists/Turning65"));
+
+// ── Printables (legacy planning, binders, etc.) ──
+const DigitalEstateBinder    = lazy(() => import("./pages/printables/DigitalEstateBinder"));
+
+// ── Calculators ──
+const MedicareCostEstimator  = lazy(() => import("./pages/calculators/MedicareCostEstimator"));
 
 const TechComfortQuiz        = lazy(() => import("./pages/tools/TechComfortQuiz"));
 const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
@@ -248,6 +270,7 @@ const MovingTech             = lazy(() => import("./pages/MovingTech"));
 const RetirementTech         = lazy(() => import("./pages/RetirementTech"));
 const NewGrandparentTech     = lazy(() => import("./pages/NewGrandparentTech"));
 const AskTekSure             = lazy(() => import("./pages/AskTekSure"));
+const AskTekSureCommunity    = lazy(() => import("./pages/community/AskTekSure"));
 const SuccessStories         = lazy(() => import("./pages/SuccessStories"));
 const Stories                = lazy(() => import("./pages/Stories"));
 const TechProblemOfWeek      = lazy(() => import("./pages/TechProblemOfWeek"));
@@ -256,7 +279,11 @@ const QrCodeExplainer        = lazy(() => import("./pages/tools/QrCodeExplainer"
 const InternetSpeedNeeds     = lazy(() => import("./pages/tools/InternetSpeedNeeds"));
 const BatteryOptimizer       = lazy(() => import("./pages/tools/BatteryOptimizer"));
 const PasswordPhraseGenerator = lazy(() => import("./pages/tools/PasswordPhraseGenerator"));
+const PasswordPractice       = lazy(() => import("./pages/practice/PasswordPractice"));
 const DigitalWillTemplate    = lazy(() => import("./pages/tools/DigitalWillTemplate"));
+const GriefTechHelper        = lazy(() => import("./pages/tools/GriefTechHelper"));
+const EmergencyInfoCard      = lazy(() => import("./pages/tools/EmergencyInfoCard"));
+const CaregiverPlannerPack   = lazy(() => import("./pages/printables/CaregiverPlannerPack"));
 const WifiCoveragePlanner    = lazy(() => import("./pages/tools/WifiCoveragePlanner"));
 const StorageOptimizer       = lazy(() => import("./pages/tools/StorageOptimizer"));
 // ── Round 4 hubs ──
@@ -297,6 +324,7 @@ const MedicarePlanChooser    = lazy(() => import("./pages/tools/MedicarePlanChoo
 const PracticeMode           = lazy(() => import("./pages/tools/PracticeMode"));
 const SiteIndex              = lazy(() => import("./pages/SiteIndex"));
 const Volunteer              = lazy(() => import("./pages/Volunteer"));
+const WeeklyNewsletterTemplate = lazy(() => import("./pages/printables/WeeklyNewsletterTemplate"));
 const SettingsFinder         = lazy(() => import("./pages/tools/SettingsFinder"));
 const EmailSpamManager       = lazy(() => import("./pages/tools/EmailSpamManager"));
 const StreamingServicePicker = lazy(() => import("./pages/tools/StreamingServicePicker"));
@@ -304,6 +332,15 @@ const StreamingServicePicker = lazy(() => import("./pages/tools/StreamingService
 const RefundAndReturnHelper  = lazy(() => import("./pages/tools/RefundAndReturnHelper"));
 const KitchenTechHelper      = lazy(() => import("./pages/tools/KitchenTechHelper"));
 const FreeResourceHub        = lazy(() => import("./pages/tools/FreeResourceHub"));
+const TechJargonTranslator   = lazy(() => import("./pages/tools/TechJargonTranslator"));
+const StateAgScamLookup      = lazy(() => import("./pages/tools/StateAgScamLookup"));
+
+// ── Toolkits (hub pages) ─────────────────────────────────────────────────────
+const CaregiverToolkit       = lazy(() => import("./pages/toolkits/CaregiverToolkit"));
+
+// ── Practice sims (branching interactive safety practice) ──────────────────
+const SuspiciousCallSim      = lazy(() => import("./pages/practice/SuspiciousCallSim"));
+const VocabFlashcards        = lazy(() => import("./pages/practice/VocabFlashcards"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -540,6 +577,7 @@ const AppContent = () => {
           <Route path="/tools/troubleshooter" element={<Troubleshooter />} />
           <Route path="/tools/device-chooser" element={<DeviceChooser />} />
           <Route path="/tools/backup-wizard" element={<BackupWizard />} />
+          <Route path="/tools/photo-backup-wizard" element={<PhotoBackupWizard />} />
           <Route path="/tools/safety-course" element={<SafetyCourse />} />
           <Route path="/setup" element={<Setup />} />
           <Route path="/tools/app-recommender" element={<AppRecommender />} />
@@ -565,6 +603,7 @@ const AppContent = () => {
           <Route path="/tools/app-permissions" element={<AppPermissions />} />
           <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
           <Route path="/tools/password-manager" element={<PasswordManager />} />
+          <Route path="/tools/state-benefits-finder" element={<StateBenefitsFinder />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
           <Route path="/technicians/:id" element={<TechnicianProfile />} />
@@ -582,8 +621,12 @@ const AppContent = () => {
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/quick-reference-cards" element={<QuickReferenceCards />} />
           <Route path="/reference-cards" element={<ReferenceCards />} />
+          <Route path="/printables/phone-button-poster" element={<PhoneButtonPoster />} />
           <Route path="/checklists" element={<Checklists />} />
           <Route path="/checklists/turning-65" element={<Turning65 />} />
+          <Route path="/printables/digital-estate-binder" element={<DigitalEstateBinder />} />
+          <Route path="/calculators/medicare-cost" element={<MedicareCostEstimator />} />
+          <Route path="/calculators/phone-bill" element={<PhoneBillDecoder />} />
           <Route path="/get-help" element={<GetHelp />} />
           <Route path="/my-path" element={<MyPath />} />
           <Route path="/my-requests" element={<MyRequests />} />
@@ -614,6 +657,8 @@ const AppContent = () => {
           <Route path="/sources" element={<Sources />} />
           <Route path="/free-resources" element={<FreeResources />} />
           <Route path="/scam-defense" element={<ScamDefenseCenter />} />
+          <Route path="/scam-alerts" element={<ScamAlertFeed />} />
+          <Route path="/practice/phishing-inbox" element={<PhishingInbox />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/accessibility" element={<AccessibilityHub />} />
           <Route path="/caregiver-hub" element={<CaregiverHub />} />
@@ -640,17 +685,24 @@ const AppContent = () => {
           <Route path="/retirement-tech" element={<RetirementTech />} />
           <Route path="/new-grandparent-tech" element={<NewGrandparentTech />} />
           <Route path="/ask" element={<AskTekSure />} />
+          <Route path="/community/ask" element={<AskTekSureCommunity />} />
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
           <Route path="/tools/url-safety-checker" element={<UrlSafetyChecker />} />
+          <Route path="/tools/grief-tech-helper" element={<GriefTechHelper />} />
           <Route path="/tools/qr-code-explainer" element={<QrCodeExplainer />} />
           <Route path="/tools/internet-speed-needs" element={<InternetSpeedNeeds />} />
           <Route path="/tools/battery-optimizer" element={<BatteryOptimizer />} />
           <Route path="/tools/password-phrase-generator" element={<PasswordPhraseGenerator />} />
+          <Route path="/practice/password-practice" element={<PasswordPractice />} />
           <Route path="/tools/digital-will-template" element={<DigitalWillTemplate />} />
+          <Route path="/tools/grief-tech-helper" element={<GriefTechHelper />} />
+          <Route path="/tools/emergency-info-card" element={<EmergencyInfoCard />} />
+          <Route path="/printables/caregiver-planner" element={<CaregiverPlannerPack />} />
           <Route path="/tools/wifi-coverage-planner" element={<WifiCoveragePlanner />} />
           <Route path="/tools/storage-optimizer" element={<StorageOptimizer />} />
+          <Route path="/tools/tech-jargon-translator" element={<TechJargonTranslator />} />
           {/* Round 4 hubs */}
           <Route path="/small-business-tech-hub" element={<SmallBusinessTechHub />} />
           <Route path="/ai-literacy-hub" element={<AiLiteracyHub />} />
@@ -707,6 +759,8 @@ const AppContent = () => {
           <Route path="/tools/privacy-audit" element={<PrivacyAudit />} />
           <Route path="/tools/browser-safety-audit" element={<BrowserSafetyAudit />} />
           <Route path="/tools/streaming-calculator" element={<StreamingCalculator />} />
+          <Route path="/calculators/internet-plan" element={<InternetPlanCalculator />} />
+          <Route path="/calculators/subscriptions" element={<SubscriptionCostAggregator />} />
           <Route path="/tools/data-breach-checker" element={<DataBreachChecker />} />
           <Route path="/tools/new-phone-setup" element={<NewPhoneSetup />} />
           <Route path="/tools/subscription-tracker" element={<SubscriptionTracker />} />
@@ -744,7 +798,10 @@ const AppContent = () => {
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
           <Route path="/tools/smart-tv-setup" element={<SmartTvSetupWizard />} />
           <Route path="/tools/voice-assistant-setup" element={<VoiceAssistantSetup />} />
+          <Route path="/tools/voice-commands" element={<VoiceCommandCheatSheet />} />
           <Route path="/tools/library-tech-helper" element={<LibraryTechHelper />} />
+          <Route path="/tools/local-library-finder" element={<LocalLibraryFinder />} />
+          <Route path="/tools/podcast-directory" element={<PodcastDirectory />} />
           <Route path="/tools/tech-gift-guide" element={<TechGiftGuideTool />} />
           <Route path="/tools/my-first-smartphone" element={<MyFirstSmartphone />} />
           <Route path="/tools/ipad-for-seniors" element={<IpadForSeniors />} />
@@ -754,6 +811,8 @@ const AppContent = () => {
           <Route path="/tools/digital-footprint-scanner" element={<DigitalFootprintScanner />} />
           <Route path="/tools/internet-plan-comparator" element={<InternetPlanComparator />} />
           <Route path="/tools/scam-iq-test" element={<ScamIqTest />} />
+          <Route path="/quizzes/scam-iq" element={<ScamIqQuiz />} />
+          <Route path="/quizzes/tech-confidence" element={<TechConfidenceQuiz />} />
           <Route path="/tools/accessibility-needs-finder" element={<AccessibilityNeedsFinder />} />
           <Route path="/tools/file-organizer-guide" element={<FileOrganizerGuide />} />
           <Route path="/tools/scam-phone-database" element={<ScamPhoneDatabase />} />
@@ -762,11 +821,15 @@ const AppContent = () => {
           <Route path="/tools/smart-thermostat-setup" element={<SmartThermostatSetup />} />
           <Route path="/tools/hearing-aid-tech-helper" element={<HearingAidTechHelper />} />
           <Route path="/tools/low-vision-tech-hub" element={<LowVisionTechHub />} />
+          <Route path="/tools/audio-tutorials" element={<AudioTutorialHub />} />
+          <Route path="/tools/screen-reader-starter" element={<ScreenReaderStarter />} />
           <Route path="/tools/remote-control-decoder" element={<RemoteControlDecoder />} />
           <Route path="/tools/rideshare-setup" element={<RideshareSetup />} />
           <Route path="/tools/banking-app-setup" element={<BankingAppSetup />} />
           <Route path="/tools/video-call-helper" element={<VideoCallHelper />} />
           <Route path="/tools/government-benefits-portal" element={<GovernmentBenefitsPortal />} />
+          <Route path="/tools/state-benefits-finder" element={<StateBenefitsFinder />} />
+          <Route path="/tools/dmv-online-helper" element={<DmvOnlineHelper />} />
 
           {/* Practice Mode — simulated phone interface for fearless practice */}
           <Route path="/tools/practice-mode" element={<PracticeMode />} />
@@ -786,11 +849,24 @@ const AppContent = () => {
           {/* Kitchen Tech Helper — setup & daily-use guide for 10 kitchen appliances */}
           <Route path="/tools/kitchen-tech-helper" element={<KitchenTechHelper />} />
 
+          {/* State AG Scam Lookup — per-state consumer protection + federal agency directory */}
+          <Route path="/tools/state-ag-scam-lookup" element={<StateAgScamLookup />} />
+
+          {/* Toolkits — hub pages that group a situation into actionable sections */}
+          <Route path="/toolkits/caregiver" element={<CaregiverToolkit />} />
+
+          {/* Practice simulators — branching interactive safety practice */}
+          <Route path="/practice/suspicious-call" element={<SuspiciousCallSim />} />
+          <Route path="/practice/vocab-flashcards" element={<VocabFlashcards />} />
+
           {/* Site Index — human-readable sitemap of every page on TekSure */}
           <Route path="/site-index" element={<SiteIndex />} />
 
           {/* Volunteer — invite people to help grow TekSure */}
           <Route path="/volunteer" element={<Volunteer />} />
+
+          {/* Printables — fillable, printable one-page templates */}
+          <Route path="/printables/weekly-newsletter" element={<WeeklyNewsletterTemplate />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

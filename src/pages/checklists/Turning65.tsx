@@ -780,6 +780,68 @@ export default function Turning65() {
           </div>
         </section>
 
+        {/* ── Related TekSure tools ───────────────── */}
+        <section className="container pb-12 print:hidden">
+          <div className="max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Keep going on TekSure</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Card className="hover:border-amber-400 transition-colors">
+                <CardContent className="p-5">
+                  <div className="p-2 inline-flex rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-300 mb-3">
+                    <Landmark className="w-6 h-6" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-bold text-base md:text-lg mb-1">Government Benefits Portal</h3>
+                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                    Senior-friendly walkthroughs for every major .gov benefits site — SSA, Medicare, VA, IRS, SNAP.
+                  </p>
+                  <Link
+                    to="/tools/government-benefits-portal"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline min-h-10"
+                  >
+                    Open portal guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:border-amber-400 transition-colors">
+                <CardContent className="p-5">
+                  <div className="p-2 inline-flex rounded-lg bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300 mb-3">
+                    <HandHeart className="w-6 h-6" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-bold text-base md:text-lg mb-1">Free Resource Hub</h3>
+                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                    Free, legal resources for seniors — streaming, library apps, classes, tax help, and more.
+                  </p>
+                  <Link
+                    to="/tools/free-resource-hub"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline min-h-10"
+                  >
+                    Browse free resources <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:border-amber-400 transition-colors">
+                <CardContent className="p-5">
+                  <div className="p-2 inline-flex rounded-lg bg-amber-50 text-amber-700 dark:bg-amber-950/30 dark:text-amber-300 mb-3">
+                    <FileText className="w-6 h-6" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-bold text-base md:text-lg mb-1">Money guides</h3>
+                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                    Plain-English guides on bills, banking apps, refunds, scams, and protecting your money online.
+                  </p>
+                  <Link
+                    to="/guides?category=money"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline min-h-10"
+                  >
+                    Read money guides <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* ── Call to contact ──────────────────────── */}
         <section className="container pb-16 print:hidden">
           <Card className="bg-gradient-to-br from-amber-50 to-rose-50 dark:from-amber-950/30 dark:to-rose-950/30 border-amber-200 dark:border-amber-900">

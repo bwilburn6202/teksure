@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import {
   Tabs,
   TabsContent,
@@ -38,7 +37,6 @@ import {
   AlertOctagon,
   ShieldAlert,
   Send,
-  Copy,
   Check,
   Sparkles,
   Lightbulb,
@@ -53,7 +51,6 @@ import {
   X,
   Mail,
   Lock,
-  ShieldCheck,
 } from 'lucide-react';
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -103,7 +100,7 @@ const DICTIONARY: DictTerm[] = [
   { term: 'Cache', category: 'Internet', definition: 'Files your device stores temporarily to load websites and apps faster next time.', example: 'Clearing your cache can fix a website that keeps showing old content.', related: ['Browser', 'Cookie'] },
   { term: 'HTTPS', category: 'Internet', definition: 'The "s" stands for secure. It means the website is using an encrypted connection so the info you send (like passwords) can\'t easily be snooped on.', example: 'Look for the little padlock icon in your browser before typing a password.', related: ['Encryption', 'SSL', 'URL'] },
   { term: 'IP Address', category: 'Internet', definition: 'A unique number that identifies a device on the internet — like a mailing address for your phone or computer.', example: 'Every Wi-Fi network hands out an IP address so your devices can send and receive info.', related: ['Router', 'Wi-Fi'] },
-  { term: 'ISP', category: 'Internet', definition: 'Internet Service Provider — the company you pay for internet, like Xfinity, Spectrum, AT&T, or Verizon.', example: '"Who\'s your ISP?" is just asking who sends you your internet bill.', related: ['Modem', 'Router', 'Bandwidth'] },
+  { term: 'ISP', category: 'Internet', definition: 'Internet Service Provider — the company you pay for internet, like Xfinity, Spectrum, AT&T, or Verizon.', example: '"Who\'s your ISP?" is asking who sends you your internet bill.', related: ['Modem', 'Router', 'Bandwidth'] },
   { term: 'URL', category: 'Internet', definition: 'The address of a web page — the thing that starts with "https://".', example: 'https://teksure.com/tools is a URL.', related: ['HTTPS', 'Browser'] },
   { term: 'Wi-Fi', category: 'Internet', definition: 'A way to connect to the internet without wires, using radio waves between your device and a router.', example: 'When your phone hooks up to your home network, that\'s Wi-Fi.', related: ['Router', 'Modem', 'Bandwidth'] },
   { term: 'Router', category: 'Internet', definition: 'The box in your home that broadcasts your Wi-Fi signal and sends internet to every device.', example: 'When tech support says "reboot your router," they mean unplug the Wi-Fi box, wait 30 seconds, plug it back in.', related: ['Modem', 'Wi-Fi'] },
@@ -133,7 +130,7 @@ const DICTIONARY: DictTerm[] = [
   { term: 'Phishing', category: 'Security', definition: 'A scam where someone pretends to be a company you trust, trying to trick you into sharing a password or payment info.', example: 'That "Your Amazon account is locked — click here" email is almost always phishing.', related: ['Scam', 'Smishing'] },
   { term: 'Smishing', category: 'Security', definition: 'Phishing by text message. The "sm" is for SMS.', example: 'A text saying "USPS: your package is held, pay $2.99 here" is a classic smishing attempt.', related: ['Phishing', 'SMS'] },
   { term: 'Vishing', category: 'Security', definition: 'Phishing by phone call. The caller pretends to be the IRS, Social Security, or a grandkid in trouble.', example: 'If a caller pressures you to pay right now in gift cards, it\'s vishing.', related: ['Phishing', 'Scam'] },
-  { term: 'Scam', category: 'Security', definition: 'Any attempt to trick someone into giving up money, information, or access.', example: '"You won a prize — just pay shipping first!" That\'s a scam.', related: ['Phishing', 'Smishing'] },
+  { term: 'Scam', category: 'Security', definition: 'Any attempt to trick someone into giving up money, information, or access.', example: '"You won a prize — pay shipping first!" That\'s a scam.', related: ['Phishing', 'Smishing'] },
   { term: 'Malware', category: 'Security', definition: 'Short for "malicious software" — any program designed to harm or spy on your device.', example: 'Viruses, ransomware, and spyware are all types of malware.', related: ['Antivirus', 'Virus'] },
   { term: 'Virus', category: 'Security', definition: 'A type of malware that spreads from device to device, often by attaching to files.', example: 'Don\'t open .exe files from unknown email senders.', related: ['Malware', 'Antivirus'] },
   { term: 'Ransomware', category: 'Security', definition: 'Malware that locks your files and demands a ransom — usually in cryptocurrency — to unlock them.', example: 'Regular backups are the best defense against ransomware.', related: ['Malware', 'Backup'] },
@@ -193,7 +190,7 @@ const DICTIONARY: DictTerm[] = [
   { term: 'Download', category: 'Storage', definition: 'Copying a file from the internet to your device.', example: 'Saving a photo from a text message onto your phone is a download.', related: ['Upload'] },
   { term: 'Upload', category: 'Storage', definition: 'Copying a file from your device to the internet.', example: 'Posting a photo on Facebook uploads it to their servers.', related: ['Download'] },
   { term: 'File', category: 'Storage', definition: 'Any piece of data saved on your device — a photo, a document, a video.', example: 'A Word document and a JPG photo are both files.', related: ['Folder'] },
-  { term: 'Folder', category: 'Storage', definition: 'A container that holds files — just like a paper folder in a filing cabinet.', example: 'Your Desktop is really just a folder.', related: ['File'] },
+  { term: 'Folder', category: 'Storage', definition: 'A container that holds files — like a paper folder in a filing cabinet.', example: 'Your Desktop is really a folder.', related: ['File'] },
   { term: 'Megabyte', category: 'Storage', definition: 'A unit for measuring file size. About 1 million characters of text.', example: 'A typical photo is 3–5 megabytes (MB).', related: ['Gigabyte'] },
   { term: 'Gigabyte', category: 'Storage', definition: '1,000 megabytes. Most phones store hundreds of gigabytes.', example: 'A 30-minute 4K video is about 2–3 GB.', related: ['Megabyte', 'Terabyte'] },
   { term: 'Terabyte', category: 'Storage', definition: '1,000 gigabytes. Most external drives these days are 1 to 5 TB.', example: '2 TB fits tens of thousands of photos.', related: ['Gigabyte'] },
@@ -425,7 +422,7 @@ const ERRORS: ErrorEntry[] = [
     why: 'Usually the website forgot to renew its certificate, or your computer\'s date and time is off.',
     fixes: [
       'Check your computer or phone\'s clock — is the date right?',
-      'Try another site to see if it\'s just this one.',
+      'Try another site to see if it\'s only this one.',
       'If you weren\'t expecting to visit the site, close the tab and don\'t enter any info.',
     ],
     category: 'Network',

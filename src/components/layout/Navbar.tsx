@@ -114,6 +114,7 @@ export function Navbar() {
     { to: '/tools', label: 'Tools' },
     { to: '/favorites', label: 'My Favorites' },
     { to: '/this-week', label: 'This Week' },
+    { to: '/scam-alerts', label: 'Current Scam Alerts' },
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
     { to: '/learn', label: 'Learning Paths' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
