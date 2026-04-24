@@ -9,12 +9,12 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
 const tips = [
-  { emoji: '📡', title: 'Move closer to your router', desc: 'Walls and distance weaken Wi-Fi signals significantly.' },
-  { emoji: '🔄', title: 'Restart your router', desc: 'Unplug for 30 seconds, then plug back in. Fixes most slowdowns.' },
-  { emoji: '📺', title: 'Reduce active devices', desc: 'Too many devices streaming or downloading can slow everyone down.' },
-  { emoji: '🔌', title: 'Use an Ethernet cable', desc: 'A wired connection is always faster and more reliable than Wi-Fi.' },
-  { emoji: '⚙️', title: 'Switch to 5GHz band', desc: 'If your router supports it, 5GHz is faster (but shorter range) than 2.4GHz.' },
-  { emoji: '🛡️', title: 'Check for interference', desc: 'Microwaves, baby monitors, and other electronics can interfere with Wi-Fi.' },
+  { emoji: '', title: 'Move closer to your router', desc: 'Walls and distance weaken Wi-Fi signals significantly.' },
+  { emoji: '', title: 'Restart your router', desc: 'Unplug for 30 seconds, then plug back in. Fixes most slowdowns.' },
+  { emoji: '', title: 'Reduce active devices', desc: 'Too many devices streaming or downloading can slow everyone down.' },
+  { emoji: '', title: 'Use an Ethernet cable', desc: 'A wired connection is always faster and more reliable than Wi-Fi.' },
+  { emoji: '', title: 'Switch to 5GHz band', desc: 'If your router supports it, 5GHz is faster (but shorter range) than 2.4GHz.' },
+  { emoji: '', title: 'Check for interference', desc: 'Microwaves, baby monitors, and other electronics can interfere with Wi-Fi.' },
 ];
 
 const WifiSpeed = () => {

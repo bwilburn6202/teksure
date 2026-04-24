@@ -9,6 +9,7 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, RotateCcw, ChevronLeft, Compass } from 'lucide-react';
 import { guides, type Guide, type GuideCategory, categoryLabels } from '@/data/guides';
+import { GuideThumbnail } from '@/components/GuideThumbnail';
 
 type Device = 'phone' | 'tablet' | 'computer-windows' | 'computer-mac' | 'smart-home' | 'tv' | 'any';
 type Topic = 'safety' | 'setup' | 'apps' | 'money' | 'health' | 'internet' | 'basics' | 'ai';
@@ -269,7 +270,7 @@ const FindAGuide = () => {
                         className="block rounded-xl border border-border hover:border-primary hover:bg-primary/5 transition-colors px-4 py-3"
                       >
                         <div className="flex items-start gap-3">
-                          <div className="text-2xl" aria-hidden="true">{g.thumbnailEmoji}</div>
+                          <GuideThumbnail category={g.category} size="h-6 w-6" />
                           <div className="flex-1 min-w-0">
                             <div className="font-medium text-base mb-0.5 truncate">{g.title}</div>
                             <div className="text-sm text-muted-foreground line-clamp-2">{g.excerpt}</div>

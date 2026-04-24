@@ -26,7 +26,7 @@ const TREE: Record<string, Node> = {
     id: 'start',
     type: 'question',
     question: 'What best describes your Wi-Fi problem?',
-    emoji: '📶',
+    emoji: '',
   },
   // We use a multi-choice start, so we override this node specially
   no_connection: {
@@ -47,7 +47,7 @@ const TREE: Record<string, Node> = {
   router_off: {
     id: 'router_off',
     type: 'solution',
-    emoji: '🔌',
+    emoji: '',
     statement: 'Turn on your router',
     solution: 'Your router appears to be off.',
     solutionSteps: [
@@ -68,7 +68,7 @@ const TREE: Record<string, Node> = {
   changed_recently_no_network: {
     id: 'changed_recently_no_network',
     type: 'solution',
-    emoji: '📞',
+    emoji: '',
     statement: 'Contact your internet provider',
     solution: 'After changes to your setup, the router may need reconfiguring.',
     solutionSteps: [
@@ -81,7 +81,7 @@ const TREE: Record<string, Node> = {
   restart_router: {
     id: 'restart_router',
     type: 'solution',
-    emoji: '🔄',
+    emoji: '',
     statement: 'Restart your router',
     solution: 'A restart often fixes network visibility issues.',
     solutionSteps: [
@@ -98,13 +98,13 @@ const TREE: Record<string, Node> = {
     id: 'sees_network',
     type: 'question',
     question: 'What happens when you try to connect to your network?',
-    emoji: '🔑',
+    emoji: '',
     // Special multi-choice — handled in UI
   },
   wrong_password: {
     id: 'wrong_password',
     type: 'solution',
-    emoji: '🔑',
+    emoji: '',
     statement: 'Find your Wi-Fi password',
     solution: 'The password may have changed or was entered incorrectly.',
     solutionSteps: [
@@ -124,7 +124,7 @@ const TREE: Record<string, Node> = {
   slow_some_rooms: {
     id: 'slow_some_rooms',
     type: 'solution',
-    emoji: '📡',
+    emoji: '',
     statement: 'Improve signal in weak areas',
     solution: 'Wi-Fi signal weakens with distance and through walls.',
     solutionSteps: [
@@ -145,7 +145,7 @@ const TREE: Record<string, Node> = {
   slow_recent: {
     id: 'slow_recent',
     type: 'solution',
-    emoji: '🔄',
+    emoji: '',
     statement: 'Restart your router and check for issues',
     solution: 'Recent slowdowns are often fixed by a restart or temporary provider issues.',
     solutionSteps: [
@@ -159,7 +159,7 @@ const TREE: Record<string, Node> = {
   always_slow: {
     id: 'always_slow',
     type: 'solution',
-    emoji: '📞',
+    emoji: '',
     statement: 'Consider upgrading your package',
     solution: 'Your broadband package may not match your current usage needs.',
     solutionSteps: [
@@ -180,7 +180,7 @@ const TREE: Record<string, Node> = {
   all_devices_drop: {
     id: 'all_devices_drop',
     type: 'solution',
-    emoji: '🔄',
+    emoji: '',
     statement: 'Restart your router and check for interference',
     solution: 'Intermittent drops across all devices usually point to the router or provider.',
     solutionSteps: [
@@ -194,7 +194,7 @@ const TREE: Record<string, Node> = {
   one_device_drops: {
     id: 'one_device_drops',
     type: 'solution',
-    emoji: '📱',
+    emoji: '',
     statement: 'Fix the individual device\'s Wi-Fi connection',
     solution: 'When only one device drops, the issue is usually with that device\'s network settings.',
     solutionSteps: [
@@ -210,17 +210,17 @@ const TREE: Record<string, Node> = {
 
 // Multi-choice start question options
 const START_OPTIONS = [
-  { label: 'Can\'t connect at all', emoji: '❌', next: 'no_connection' },
-  { label: 'Connected but wrong password message', emoji: '🔑', next: 'wrong_password' },
-  { label: 'Connected but very slow', emoji: '🐌', next: 'connects_but_slow' },
-  { label: 'Connection keeps dropping', emoji: '📉', next: 'keeps_dropping' },
+  { label: 'Can\'t connect at all', emoji: '', next: 'no_connection' },
+  { label: 'Connected but wrong password message', emoji: '', next: 'wrong_password' },
+  { label: 'Connected but very slow', emoji: '', next: 'connects_but_slow' },
+  { label: 'Connection keeps dropping', emoji: '', next: 'keeps_dropping' },
 ];
 
 // For sees_network multi-choice
 const SEES_NETWORK_OPTIONS = [
-  { label: 'It says "Wrong password" or "Incorrect password"', emoji: '🔑', next: 'wrong_password' },
-  { label: 'It connects but there\'s no internet', emoji: '🌐', next: 'restart_router' },
-  { label: 'It just spins / won\'t connect', emoji: '⏳', next: 'one_device_drops' },
+  { label: 'It says "Wrong password" or "Incorrect password"', emoji: '', next: 'wrong_password' },
+  { label: 'It connects but there\'s no internet', emoji: '', next: 'restart_router' },
+  { label: 'It just spins / won\'t connect', emoji: '', next: 'one_device_drops' },
 ];
 
 export default function WifiTroubleshooter() {

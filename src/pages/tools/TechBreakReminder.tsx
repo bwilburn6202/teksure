@@ -56,35 +56,35 @@ type Stretch = {
 const STRETCHES: Stretch[] = [
   {
     name: 'Neck rolls',
-    icon: '🙆',
+    icon: '',
     instruction:
       'Sit up tall. Slowly lower your chin to your chest, then gently roll your head in a half-circle to the right, back to center, then to the left. Repeat 3 times. Never roll the full circle backward — it strains the neck.',
     duration: '30 seconds',
   },
   {
     name: 'Shoulder blade squeeze',
-    icon: '🤸',
+    icon: '',
     instruction:
       'Sit or stand with arms at your sides. Squeeze your shoulder blades together as if trying to pinch a pencil between them. Hold for 5 seconds, then release. Repeat 5 times.',
     duration: '45 seconds',
   },
   {
     name: 'Wrist stretch',
-    icon: '✋',
+    icon: '',
     instruction:
       'Extend your right arm in front of you, palm down. With your left hand, gently pull your fingers back toward your body until you feel a gentle stretch. Hold 15 seconds. Switch hands.',
     duration: '45 seconds',
   },
   {
     name: 'Seated back stretch',
-    icon: '🧘',
+    icon: '',
     instruction:
       'Sit tall in your chair. Place your right hand on the outside of your left knee and gently twist your upper body to the left. Hold for 10 seconds. Slowly return to center and switch sides.',
     duration: '30 seconds',
   },
   {
     name: 'Eye palming',
-    icon: '👀',
+    icon: '',
     instruction:
       'Rub your palms together briskly until warm. Gently cup them over your closed eyes — don\'t press on the eyeballs. Breathe slowly for 20 seconds. Feel the warmth and dark relax your eyes.',
     duration: '30 seconds',
@@ -408,7 +408,7 @@ export default function TechBreakReminder() {
       setSunsetShown(true);
       playBell();
       toast({
-        title: '🌅  The sun has set',
+        title: '  The sun has set',
         description:
           'Consider dimming your screen, turning on Night Shift / blue-light filter, or wrapping up for the evening. Good sleep starts with lower light.',
       });
@@ -875,23 +875,23 @@ export default function TechBreakReminder() {
 
 const REMINDER_COPY: Record<ReminderKey, { toastTitle: string; toastBody: string }> = {
   eyes: {
-    toastTitle: '👀  Time for the 20-20-20',
+    toastTitle: '  Time for the 20-20-20',
     toastBody: 'Look at something 20 feet away for 20 seconds. We\'ll chime when the 20 seconds are up.',
   },
   stretch: {
-    toastTitle: '🤸  Stretch break',
+    toastTitle: '  Stretch break',
     toastBody: 'Stand up, move a little. Your back will thank you.',
   },
   posture: {
-    toastTitle: '🪑  Posture check',
+    toastTitle: '  Posture check',
     toastBody: 'Feet flat, back supported, screen at eye level, elbows at 90°.',
   },
   hydration: {
-    toastTitle: '💧  Take a sip',
+    toastTitle: '  Take a sip',
     toastBody: 'A glass of water goes a long way. Most of us don\'t drink enough.',
   },
   sunset: {
-    toastTitle: '🌅  The sun has set',
+    toastTitle: '  The sun has set',
     toastBody: 'Dim your screen or turn on Night Shift / blue-light filter. Better light, better sleep.',
   },
 };

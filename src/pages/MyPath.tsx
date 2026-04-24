@@ -264,7 +264,7 @@ export default function MyPath() {
             /* ── No path chosen yet ── */
             <Card className="text-center py-10 rounded-2xl border-2 border-dashed border-border bg-card">
               <CardContent className="space-y-4">
-                <div className="text-4xl">🗺️</div>
+                <div className="text-4xl"></div>
                 <h2 className="text-xl font-semibold text-primary">Find your perfect path</h2>
                 <p className="text-muted-foreground max-w-sm mx-auto">
                   Answer 2 quick questions and we'll recommend the best learning path for you.
@@ -372,7 +372,7 @@ export default function MyPath() {
                           </Button>
                         ) : (
                           <div className="text-center py-2">
-                            <p className="text-sm font-medium text-green-600 mb-2">🎉 You've completed this path!</p>
+                            <p className="text-sm font-medium text-green-600 mb-2"> You've completed this path!</p>
                             <Button
                               variant="outline"
                               onClick={resetQuiz}

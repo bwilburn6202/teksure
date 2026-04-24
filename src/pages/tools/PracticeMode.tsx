@@ -709,7 +709,7 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
                   Grandma's Famous Cookies
                 </h2>
                 <div className="h-32 rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 mb-3 flex items-center justify-center text-white text-4xl">
-                  🍪
+                  
                 </div>
                 <h3 className="font-bold text-gray-900 dark:text-white mb-2">Ingredients</h3>
                 <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 mb-3">
@@ -736,7 +736,7 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
                     Grandma's Famous Cookies
                   </h2>
                   <div className="h-32 rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 mb-3 flex items-center justify-center text-white text-4xl">
-                    🍪
+                    
                   </div>
                 </div>
 
@@ -747,7 +747,7 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
                   aria-label="Screenshot preview"
                 >
                   <div className="h-full w-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-2xl">
-                    🍪
+                    
                   </div>
                 </button>
               </div>
@@ -777,7 +777,7 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
                       <p className="text-xs font-bold mt-1">Grandma's Cookies</p>
                     </div>
                     <div className="h-20 mx-2 rounded bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-xl">
-                      🍪
+                      
                     </div>
                     <div className="p-2 space-y-0.5">
                       <p className="text-[8px] font-bold">Ingredients</p>

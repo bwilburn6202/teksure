@@ -524,7 +524,7 @@ const SiteIndex = () => {
         <div className="max-w-5xl mx-auto space-y-16">
           {filteredSections.length === 0 && (
             <div className="text-center py-16" role="status">
-              <p className="text-4xl mb-4" aria-hidden="true">🔍</p>
+              <p className="text-4xl mb-4" aria-hidden="true"></p>
               <p className="text-lg font-medium mb-2">No pages match your search</p>
               <p className="text-muted-foreground">
                 Try a shorter or different search term.

@@ -43,8 +43,9 @@ export interface Guide {
   tags: string[];
   readTime: string;
   videoUrl?: string;
-  thumbnailEmoji: string;
-  /** URL to a relevant thumbnail image — used instead of emoji when available */
+  /** @deprecated Kept for historical data; UI renders category-based SVG icons via GuideThumbnail. */
+  thumbnailEmoji?: string;
+  /** URL to a relevant thumbnail image — used instead of the category icon when available */
   thumbnailUrl?: string;
   publishedAt: string;
   /** Date the guide content was last reviewed and confirmed accurate */

@@ -1467,7 +1467,7 @@ export default function SocialMediaSafety() {
                 <ul className="space-y-2">
                   {SHARE_SAFE.map((s, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="shrink-0 text-green-600 dark:text-green-400 mt-1">✓</span>
+                      <span className="shrink-0 text-green-600 dark:text-green-400 mt-1"></span>
                       <span className="text-base leading-relaxed text-green-900 dark:text-green-100">{s}</span>
                     </li>
                   ))}
@@ -1483,7 +1483,7 @@ export default function SocialMediaSafety() {
                 <ul className="space-y-2">
                   {SHARE_UNSAFE.map((s, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="shrink-0 text-red-600 dark:text-red-400 mt-1">✗</span>
+                      <span className="shrink-0 text-red-600 dark:text-red-400 mt-1"></span>
                       <span className="text-base leading-relaxed text-red-900 dark:text-red-100">{s}</span>
                     </li>
                   ))}

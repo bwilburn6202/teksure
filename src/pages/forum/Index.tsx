@@ -17,15 +17,15 @@ import { formatDistanceToNow } from 'date-fns';
 export type ForumCategory = 'general' | 'wifi' | 'passwords' | 'devices' | 'software' | 'smart-home' | 'scams' | 'printing';
 
 export const CATEGORIES: { value: ForumCategory | 'all'; label: string; emoji: string; description: string }[] = [
-  { value: 'all',        label: 'All Topics',            emoji: '💬', description: 'Browse everything' },
-  { value: 'general',    label: 'General',               emoji: '🙋', description: 'Introductions & general chat' },
-  { value: 'wifi',       label: 'WiFi & Internet',       emoji: '📶', description: 'Internet and network help' },
-  { value: 'passwords',  label: 'Passwords & Security',  emoji: '🔒', description: 'Stay safe online' },
-  { value: 'devices',    label: 'Phones & Computers',    emoji: '💻', description: 'Phones, tablets, computers' },
-  { value: 'software',   label: 'Apps & Software',       emoji: '📱', description: 'Apps, programs, updates' },
-  { value: 'smart-home', label: 'Smart Home',            emoji: '🏠', description: 'Alexa, smart TVs, cameras' },
-  { value: 'scams',      label: 'Scams & Safety',        emoji: '🛡️', description: 'Report and discuss scams' },
-  { value: 'printing',   label: 'Printers & Peripherals',emoji: '🖨️', description: 'Printers, scanners, accessories' },
+  { value: 'all',        label: 'All Topics',            emoji: '', description: 'Browse everything' },
+  { value: 'general',    label: 'General',               emoji: '', description: 'Introductions & general chat' },
+  { value: 'wifi',       label: 'WiFi & Internet',       emoji: '', description: 'Internet and network help' },
+  { value: 'passwords',  label: 'Passwords & Security',  emoji: '', description: 'Stay safe online' },
+  { value: 'devices',    label: 'Phones & Computers',    emoji: '', description: 'Phones, tablets, computers' },
+  { value: 'software',   label: 'Apps & Software',       emoji: '', description: 'Apps, programs, updates' },
+  { value: 'smart-home', label: 'Smart Home',            emoji: '', description: 'Alexa, smart TVs, cameras' },
+  { value: 'scams',      label: 'Scams & Safety',        emoji: '', description: 'Report and discuss scams' },
+  { value: 'printing',   label: 'Printers & Peripherals',emoji: '', description: 'Printers, scanners, accessories' },
 ];
 
 export const CATEGORY_COLORS: Record<ForumCategory, string> = {
@@ -170,7 +170,7 @@ export default function ForumIndex() {
           ) : isError ? (
             <Card className="rounded-2xl border border-border bg-card text-center py-12">
               <CardContent>
-                <p className="text-4xl mb-4 select-none">😕</p>
+                <p className="text-4xl mb-4 select-none"></p>
                 <p className="text-lg font-semibold mb-2">We couldn't load the discussions</p>
                 <p className="text-muted-foreground mb-6 max-w-xs mx-auto text-sm leading-relaxed">
                   There was a problem connecting to our servers. Check your internet
@@ -184,7 +184,7 @@ export default function ForumIndex() {
           ) : threads.length === 0 ? (
             <Card className="rounded-2xl border border-border bg-card text-center py-12">
               <CardContent>
-                <p className="text-4xl mb-4 select-none">💬</p>
+                <p className="text-4xl mb-4 select-none"></p>
                 <p className="text-lg font-semibold mb-1">No discussions here yet</p>
                 <p className="text-muted-foreground mb-5 text-sm max-w-xs mx-auto">
                   Be the first to ask a question or share a tip in this topic — no question is too simple!

@@ -2038,17 +2038,18 @@ export const tools: Tool[] = [
 ];
 
 /* ── Category definitions ──────────────────────────────── */
-const categoryEmojis: Record<ToolCategory, string> = {
-  All: '🛠️',
-  Safety: '🔒',
-  Setup: '🧰',
-  Troubleshooting: '⚡',
-  Money: '💰',
-  Learning: '🎓',
-  Health: '❤️',
-  Connectivity: '📶',
-  Accessibility: '♿',
-  Entertainment: '🎬',
+import type { LucideIcon } from 'lucide-react';
+const categoryIcons: Record<ToolCategory, LucideIcon> = {
+  All: Sparkles,
+  Safety: Shield,
+  Setup: Sliders,
+  Troubleshooting: Activity,
+  Money: PiggyBank,
+  Learning: GraduationCap,
+  Health: Heart,
+  Connectivity: Wifi,
+  Accessibility: AccessibilityIcon,
+  Entertainment: Tv,
 };
 
 const categories: ToolCategory[] = [
@@ -2268,7 +2269,7 @@ export default function Tools() {
                         : 'bg-card text-foreground border-border hover:bg-muted hover:border-foreground/20',
                     ].join(' ')}
                   >
-                    <span aria-hidden="true">{categoryEmojis[cat]}</span>
+                    {(() => { const Icon = categoryIcons[cat]; return <Icon className="h-4 w-4" aria-hidden="true" />; })()}
                     <span>{cat}</span>
                     <span className={active ? 'text-background/70' : 'text-muted-foreground'}>
                       {count}
@@ -2330,7 +2331,7 @@ export default function Tools() {
 
             {filtered.length === 0 ? (
               <div className="text-center py-20 border border-dashed rounded-2xl">
-                <p className="text-4xl mb-3" aria-hidden="true">🔍</p>
+                <p className="text-4xl mb-3" aria-hidden="true"></p>
                 <p className="text-lg font-semibold mb-1">No tools match that search</p>
                 <p className="text-sm text-muted-foreground mb-6 max-w-sm mx-auto">
                   Try a different word, pick another category, or ask TekBrain in plain English.
@@ -2360,7 +2361,7 @@ export default function Tools() {
                   return (
                     <section key={cat} aria-labelledby={`cat-${cat}`}>
                       <div className="flex items-center gap-3 mb-5 flex-wrap">
-                        <span className="text-2xl" aria-hidden="true">{categoryEmojis[cat]}</span>
+                        {(() => { const Icon = categoryIcons[cat]; return <Icon className="h-6 w-6 text-primary" aria-hidden="true" />; })()}
                         <h2 id={`cat-${cat}`} className="text-2xl font-bold">{cat}</h2>
                         <Badge variant="secondary" className="text-xs">{catTools.length} tools</Badge>
                       </div>

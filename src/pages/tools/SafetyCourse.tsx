@@ -226,7 +226,7 @@ const lessons: Lesson[] = [
 
 const Certificate = ({ onReset }: { onReset: () => void }) => (
   <div className="text-center">
-    <div className="text-6xl mb-4">🎓</div>
+    <div className="text-6xl mb-4"></div>
     <Badge className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 text-sm px-4 py-1.5 mb-4">
       Course Complete!
     </Badge>
@@ -357,7 +357,7 @@ export default function SafetyCourse() {
             <div key="intro">
               <Card className="mb-6">
                 <CardContent className="py-8 text-center">
-                  <div className="text-5xl mb-4">🔐</div>
+                  <div className="text-5xl mb-4"></div>
                   <h2 className="text-xl font-semibold mb-3">Stay Safe Online</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
                     5 short lessons covering everything beginners need to know about staying safe online — from spotting scams to protecting your privacy. Each lesson takes about 3 minutes.
@@ -476,7 +476,7 @@ export default function SafetyCourse() {
                       ? 'bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800/40'
                       : 'bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/40'
                   }`}>
-                    <span className="text-xl shrink-0">{answeredCorrectly ? '✅' : '💡'}</span>
+                    <span className="text-xl shrink-0">{answeredCorrectly ? '' : ''}</span>
                     <p className="text-sm leading-relaxed">{lesson.quiz[currentQuizQ].explanation}</p>
                   </div>
 
@@ -485,7 +485,7 @@ export default function SafetyCourse() {
                       ? 'Next Question'
                       : currentLesson < lessons.length - 1
                         ? `Next Lesson: ${lessons[currentLesson + 1].title}`
-                        : 'Finish Course 🎓'}
+                        : 'Finish Course '}
                     <ChevronRight className="h-5 w-5" />
                   </Button>
                 </div>

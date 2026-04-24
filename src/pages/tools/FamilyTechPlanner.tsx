@@ -45,26 +45,26 @@ const emptyAnswers: Answers = {
 
 /* ── Options ────────────────────────────── */
 const relationshipOptions: { id: Relationship; label: string; emoji: string; desc: string }[] = [
-  { id: 'parent',      label: 'A parent',      emoji: '👨‍👩‍👧', desc: "Mom, dad, or step-parent" },
-  { id: 'grandparent', label: 'A grandparent', emoji: '👴',      desc: "Grandma, grandpa, or elder relative" },
-  { id: 'spouse',      label: 'My spouse',     emoji: '💞',      desc: "Husband, wife, or partner" },
-  { id: 'myself',      label: 'Myself',        emoji: '🙋',      desc: "Planning for my own future" },
+  { id: 'parent',      label: 'A parent',      emoji: '', desc: "Mom, dad, or step-parent" },
+  { id: 'grandparent', label: 'A grandparent', emoji: '',      desc: "Grandma, grandpa, or elder relative" },
+  { id: 'spouse',      label: 'My spouse',     emoji: '',      desc: "Husband, wife, or partner" },
+  { id: 'myself',      label: 'Myself',        emoji: '',      desc: "Planning for my own future" },
 ];
 
 const deviceOptions: { id: Device; label: string; emoji: string; desc: string }[] = [
-  { id: 'iphone',      label: 'iPhone',       emoji: '🍎', desc: 'Apple smartphone' },
-  { id: 'android',     label: 'Android',      emoji: '🤖', desc: 'Samsung, Google, etc.' },
-  { id: 'basic-phone', label: 'Basic phone',  emoji: '☎️', desc: 'Flip phone or old-style' },
-  { id: 'no-phone',    label: 'No phone yet', emoji: '❌', desc: "Doesn't have one" },
+  { id: 'iphone',      label: 'iPhone',       emoji: '', desc: 'Apple smartphone' },
+  { id: 'android',     label: 'Android',      emoji: '', desc: 'Samsung, Google, etc.' },
+  { id: 'basic-phone', label: 'Basic phone',  emoji: '', desc: 'Flip phone or old-style' },
+  { id: 'no-phone',    label: 'No phone yet', emoji: '', desc: "Doesn't have one" },
 ];
 
 const concernOptions: { id: Concern; label: string; emoji: string; desc: string }[] = [
-  { id: 'scams',             label: 'Avoiding scams',        emoji: '🛡️', desc: 'Phone, text, and email scams' },
-  { id: 'staying-in-touch',  label: 'Staying in touch',      emoji: '💬', desc: 'Video calls, messages, photos' },
-  { id: 'emergencies',       label: 'Medical emergencies',   emoji: '🚑', desc: 'Reaching help quickly' },
-  { id: 'money',             label: 'Managing money',        emoji: '💳', desc: 'Banking, bills, payments' },
-  { id: 'shopping',          label: 'Shopping online',       emoji: '🛒', desc: 'Buying safely on Amazon, etc.' },
-  { id: 'entertainment',     label: 'Entertainment',         emoji: '🎬', desc: 'Streaming, books, games' },
+  { id: 'scams',             label: 'Avoiding scams',        emoji: '', desc: 'Phone, text, and email scams' },
+  { id: 'staying-in-touch',  label: 'Staying in touch',      emoji: '', desc: 'Video calls, messages, photos' },
+  { id: 'emergencies',       label: 'Medical emergencies',   emoji: '', desc: 'Reaching help quickly' },
+  { id: 'money',             label: 'Managing money',        emoji: '', desc: 'Banking, bills, payments' },
+  { id: 'shopping',          label: 'Shopping online',       emoji: '', desc: 'Buying safely on Amazon, etc.' },
+  { id: 'entertainment',     label: 'Entertainment',         emoji: '', desc: 'Streaming, books, games' },
 ];
 
 /* ── Guide library (TekSure guide slugs) ───── */
@@ -344,7 +344,7 @@ export default function FamilyTechPlanner() {
             <p className="text-muted-foreground mb-6">A quick snapshot so the plan matches what {forName} actually use{answers.relationship === 'myself' ? '' : 's'}.</p>
 
             <div className="mb-6">
-              <h3 className="text-lg font-medium mb-3">📱 Main phone</h3>
+              <h3 className="text-lg font-medium mb-3"> Main phone</h3>
               <div className="grid grid-cols-2 gap-3">
                 {deviceOptions.map(d => (
                   <button
@@ -367,7 +367,7 @@ export default function FamilyTechPlanner() {
             </div>
 
             <div className="mb-6">
-              <h3 className="text-lg font-medium mb-3">📶 Home WiFi</h3>
+              <h3 className="text-lg font-medium mb-3"> Home WiFi</h3>
               <div className="grid grid-cols-3 gap-3">
                 {(['yes', 'no', 'not-sure'] as WifiStatus[]).map(v => (
                   <button
@@ -386,7 +386,7 @@ export default function FamilyTechPlanner() {
             </div>
 
             <div className="mb-8">
-              <h3 className="text-lg font-medium mb-3">💻 Uses a computer?</h3>
+              <h3 className="text-lg font-medium mb-3"> Uses a computer?</h3>
               <div className="grid grid-cols-3 gap-3">
                 {(['daily', 'sometimes', 'never'] as ComputerUse[]).map(v => (
                   <button
@@ -463,9 +463,9 @@ export default function FamilyTechPlanner() {
             <p className="text-muted-foreground mb-6">This changes how we set up the plan — especially for things only someone in the room can help with.</p>
             <div className="grid gap-3 mb-8">
               {[
-                { id: 'nobody',       label: 'Nobody nearby',      emoji: '🏝️', desc: 'Family all lives far away. In-person help means a flight.' },
-                { id: 'one-person',   label: 'One person nearby',  emoji: '🙋', desc: 'A spouse, one child, or a neighbor who can drop by.' },
-                { id: 'multiple',     label: 'Multiple people',    emoji: '👨‍👩‍👧‍👦', desc: 'Several family members or friends within driving distance.' },
+                { id: 'nobody',       label: 'Nobody nearby',      emoji: '', desc: 'Family all lives far away. In-person help means a flight.' },
+                { id: 'one-person',   label: 'One person nearby',  emoji: '', desc: 'A spouse, one child, or a neighbor who can drop by.' },
+                { id: 'multiple',     label: 'Multiple people',    emoji: '', desc: 'Several family members or friends within driving distance.' },
               ].map(s => (
                 <button
                   key={s.id}
@@ -495,9 +495,9 @@ export default function FamilyTechPlanner() {
             </p>
             <div className="grid gap-3 mb-8">
               {[
-                { id: 'yes',       label: 'Yes, please set that up',       emoji: '✅', desc: "We'll recommend FaceTime screen share, Quick Assist, or TeamViewer." },
-                { id: 'no',        label: 'No, they prefer privacy',       emoji: '🔒', desc: "We'll focus on phone-walkthrough strategies instead." },
-                { id: 'not-sure',  label: 'Not sure — show me options',    emoji: '🤔', desc: "We'll explain the trade-offs and let you decide." },
+                { id: 'yes',       label: 'Yes, please set that up',       emoji: '', desc: "We'll recommend FaceTime screen share, Quick Assist, or TeamViewer." },
+                { id: 'no',        label: 'No, they prefer privacy',       emoji: '', desc: "We'll focus on phone-walkthrough strategies instead." },
+                { id: 'not-sure',  label: 'Not sure — show me options',    emoji: '', desc: "We'll explain the trade-offs and let you decide." },
               ].map(s => (
                 <button
                   key={s.id}
@@ -693,7 +693,7 @@ export default function FamilyTechPlanner() {
                   <ul className="space-y-2 text-base">
                     {plan.redFlags.map((f, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-amber-600 dark:text-amber-400 font-bold">⚠</span>
+                        <span className="text-amber-600 dark:text-amber-400 font-bold"></span>
                         <span>{f}</span>
                       </li>
                     ))}

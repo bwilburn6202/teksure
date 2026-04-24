@@ -134,41 +134,41 @@ const questions: Question[] = [
 const guidesByLevel: Record<Level, { heading: string; emoji: string; message: string; guides: GuideRec[] }> = {
   beginner: {
     heading: 'Getting Started',
-    emoji: '🌱',
+    emoji: '',
     message:
       "Great news — you're at the beginning of an exciting journey! Everyone starts somewhere, and TekSure is here to walk you through every step. These guides are written in plain, friendly language with no jargon.",
     guides: [
-      { title: 'Device Setup Checklist', description: 'Step-by-step help setting up a new phone, tablet, or computer from scratch.', path: '/tools/device-setup-checklist', emoji: '📋' },
-      { title: 'WiFi Troubleshooter', description: 'Get connected to the internet with clear, visual instructions.', path: '/tools/wifi-troubleshooter', emoji: '📶' },
-      { title: 'Jargon Translator', description: 'Confused by tech words? Type any term and get a plain-English explanation.', path: '/tools/jargon-translator', emoji: '📖' },
-      { title: 'Safety Course', description: 'Learn the basics of staying safe online — passwords, scams, and privacy.', path: '/tools/safety-course', emoji: '🛡️' },
-      { title: 'Error Decoder', description: "See a confusing error message? Paste it here and we'll explain what it means.", path: '/error-decoder', emoji: '🔍' },
+      { title: 'Device Setup Checklist', description: 'Step-by-step help setting up a new phone, tablet, or computer from scratch.', path: '/tools/device-setup-checklist', emoji: '' },
+      { title: 'WiFi Troubleshooter', description: 'Get connected to the internet with clear, visual instructions.', path: '/tools/wifi-troubleshooter', emoji: '' },
+      { title: 'Jargon Translator', description: 'Confused by tech words? Type any term and get a plain-English explanation.', path: '/tools/jargon-translator', emoji: '' },
+      { title: 'Safety Course', description: 'Learn the basics of staying safe online — passwords, scams, and privacy.', path: '/tools/safety-course', emoji: '' },
+      { title: 'Error Decoder', description: "See a confusing error message? Paste it here and we'll explain what it means.", path: '/error-decoder', emoji: '' },
     ],
   },
   intermediate: {
     heading: 'Building Confidence',
-    emoji: '🚀',
+    emoji: '',
     message:
       "You've got the basics down — nice work! Now it's time to level up your skills. These guides will help you get more done, stay safer online, and feel confident with everyday tech tasks.",
     guides: [
-      { title: 'Password Manager Guide', description: 'Stop reusing passwords — set up a secure password manager in minutes.', path: '/tools/password-manager', emoji: '🔐' },
-      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup-helper', emoji: '📹' },
-      { title: 'App Recommender', description: 'Find the best apps for your device and needs — personalized picks.', path: '/tools/app-recommender', emoji: '📱' },
-      { title: 'Phishing Scanner', description: 'Learn to spot fake emails and messages before they trick you.', path: '/tools/phishing-scanner', emoji: '🎣' },
-      { title: 'Backup Wizard', description: "Make sure your photos, contacts, and files are backed up — so you never lose what matters.", path: '/tools/backup-wizard', emoji: '💾' },
+      { title: 'Password Manager Guide', description: 'Stop reusing passwords — set up a secure password manager in minutes.', path: '/tools/password-manager', emoji: '' },
+      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup-helper', emoji: '' },
+      { title: 'App Recommender', description: 'Find the best apps for your device and needs — personalized picks.', path: '/tools/app-recommender', emoji: '' },
+      { title: 'Phishing Scanner', description: 'Learn to spot fake emails and messages before they trick you.', path: '/tools/phishing-scanner', emoji: '' },
+      { title: 'Backup Wizard', description: "Make sure your photos, contacts, and files are backed up — so you never lose what matters.", path: '/tools/backup-wizard', emoji: '' },
     ],
   },
   advanced: {
     heading: 'Power User',
-    emoji: '⚡',
+    emoji: '',
     message:
       "You're already comfortable with technology — impressive! These advanced tools will help you take control of your digital life, boost your privacy, and explore cutting-edge features.",
     guides: [
-      { title: 'Privacy Audit', description: 'Review and tighten privacy settings across all your devices and accounts.', path: '/tools/privacy-audit', emoji: '🔒' },
-      { title: 'Digital Footprint Scanner', description: 'Discover what information about you is visible online — and how to remove it.', path: '/tools/digital-footprint-scanner', emoji: '👣' },
-      { title: 'Two-Factor Authentication Setup', description: 'Add an extra layer of security to all your important accounts.', path: '/tools/two-factor-setup', emoji: '🛡️' },
-      { title: 'Subscription Auditor', description: 'Track down forgotten subscriptions and stop wasting money every month.', path: '/tools/subscription-auditor', emoji: '💰' },
-      { title: 'Home Network Map', description: 'See every device on your WiFi and secure your home network.', path: '/tools/home-network-map', emoji: '🏠' },
+      { title: 'Privacy Audit', description: 'Review and tighten privacy settings across all your devices and accounts.', path: '/tools/privacy-audit', emoji: '' },
+      { title: 'Digital Footprint Scanner', description: 'Discover what information about you is visible online — and how to remove it.', path: '/tools/digital-footprint-scanner', emoji: '' },
+      { title: 'Two-Factor Authentication Setup', description: 'Add an extra layer of security to all your important accounts.', path: '/tools/two-factor-setup', emoji: '' },
+      { title: 'Subscription Auditor', description: 'Track down forgotten subscriptions and stop wasting money every month.', path: '/tools/subscription-auditor', emoji: '' },
+      { title: 'Home Network Map', description: 'See every device on your WiFi and secure your home network.', path: '/tools/home-network-map', emoji: '' },
     ],
   },
 };
@@ -293,7 +293,7 @@ export default function TechComfortQuiz() {
 
             <div className="mt-4 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 p-4">
               <p className="text-sm text-blue-700 dark:text-blue-300">
-                💡 <strong>No pressure!</strong> There are no right or wrong answers. Just pick what feels closest to your experience.
+                 <strong>No pressure!</strong> There are no right or wrong answers. Just pick what feels closest to your experience.
               </p>
             </div>
           </div>
@@ -357,7 +357,7 @@ export default function TechComfortQuiz() {
             {/* Encouragement box */}
             <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-5 mb-6">
               <p className="text-base font-semibold text-green-700 dark:text-green-400 mb-1">
-                🎉 You're already making progress!
+                 You're already making progress!
               </p>
               <p className="text-sm text-green-700/90 dark:text-green-300/90">
                 Just by taking this assessment, you've shown that you're ready to learn. Technology is a tool — and like any tool, it gets easier with practice. We're here to help every step of the way.

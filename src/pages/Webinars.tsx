@@ -142,7 +142,7 @@ export default function Webinars() {
   const handleRegister = (webinar: Webinar) => {
     setRegistered(prev => new Set([...prev, webinar.id]));
     toast({
-      title: 'You\'re registered! 🎉',
+      title: 'You\'re registered! ',
       description: `We\'ll send a reminder to your email before "${webinar.title}" starts.`,
     });
   };

@@ -87,18 +87,18 @@ const tree: Record<string, Node> = {
     title: 'What\'s wrong with your phone?',
     subtitle: 'Pick the symptom that sounds most like your problem. You can always go back.',
     options: [
-      { label: 'My phone won\'t turn on',           emoji: '⚫',  desc: 'Screen is dark, nothing happens',         next: 'wontTurnOn' },
-      { label: 'My phone is hot',                   emoji: '🔥',  desc: 'It feels warm or uncomfortably hot',      next: 'hot' },
-      { label: 'Battery drains too fast',           emoji: '🔋',  desc: 'Dies quickly even when you don\'t use it', next: 'batteryDrain' },
-      { label: 'Screen is broken or touch not working', emoji: '📱', desc: 'Cracked, black, lines, or unresponsive', next: 'screen' },
-      { label: 'Phone is slow or frozen',           emoji: '🐢',  desc: 'Taking forever, stuck, or won\'t respond', next: 'slow' },
-      { label: 'Can\'t make or receive calls',      emoji: '📞',  desc: 'No signal, calls drop, or silence',       next: 'calls' },
-      { label: 'No sound or audio issues',          emoji: '🔇',  desc: 'Can\'t hear ringer, music, or the caller', next: 'sound' },
-      { label: 'Camera isn\'t working',             emoji: '📷',  desc: 'Black screen, blurry, or error message',  next: 'camera' },
-      { label: 'Phone keeps restarting',            emoji: '🔄',  desc: 'It turns itself off and back on',         next: 'restart' },
-      { label: 'Ran out of storage',                emoji: '💾',  desc: '"Storage full" warning, can\'t take photos', next: 'storage' },
-      { label: 'Phone is wet or dropped in water',  emoji: '💧',  desc: 'Water damage — act fast!',                next: 'water' },
-      { label: 'Lost my phone',                     emoji: '🔍',  desc: 'Can\'t find it — let\'s locate it',       next: 'lost' },
+      { label: 'My phone won\'t turn on',           emoji: '',  desc: 'Screen is dark, nothing happens',         next: 'wontTurnOn' },
+      { label: 'My phone is hot',                   emoji: '',  desc: 'It feels warm or uncomfortably hot',      next: 'hot' },
+      { label: 'Battery drains too fast',           emoji: '',  desc: 'Dies quickly even when you don\'t use it', next: 'batteryDrain' },
+      { label: 'Screen is broken or touch not working', emoji: '', desc: 'Cracked, black, lines, or unresponsive', next: 'screen' },
+      { label: 'Phone is slow or frozen',           emoji: '',  desc: 'Taking forever, stuck, or won\'t respond', next: 'slow' },
+      { label: 'Can\'t make or receive calls',      emoji: '',  desc: 'No signal, calls drop, or silence',       next: 'calls' },
+      { label: 'No sound or audio issues',          emoji: '',  desc: 'Can\'t hear ringer, music, or the caller', next: 'sound' },
+      { label: 'Camera isn\'t working',             emoji: '',  desc: 'Black screen, blurry, or error message',  next: 'camera' },
+      { label: 'Phone keeps restarting',            emoji: '',  desc: 'It turns itself off and back on',         next: 'restart' },
+      { label: 'Ran out of storage',                emoji: '',  desc: '"Storage full" warning, can\'t take photos', next: 'storage' },
+      { label: 'Phone is wet or dropped in water',  emoji: '',  desc: 'Water damage — act fast!',                next: 'water' },
+      { label: 'Lost my phone',                     emoji: '',  desc: 'Can\'t find it — let\'s locate it',       next: 'lost' },
     ],
   },
 
@@ -108,9 +108,9 @@ const tree: Record<string, Node> = {
     title: 'Is the screen completely black, or does it show something?',
     icon: Zap,
     options: [
-      { label: 'Completely black — nothing at all',  emoji: '⚫',  desc: 'No light, no image, no logo',          next: 'wontTurnOn_black' },
-      { label: 'I see a battery icon',               emoji: '🪫',  desc: 'A little battery symbol appears',       next: 'fix_chargeIt' },
-      { label: 'It shows the logo but freezes',      emoji: '⏸️',  desc: 'Apple / Samsung / brand logo stuck',   next: 'fix_forceRestart' },
+      { label: 'Completely black — nothing at all',  emoji: '',  desc: 'No light, no image, no logo',          next: 'wontTurnOn_black' },
+      { label: 'I see a battery icon',               emoji: '',  desc: 'A little battery symbol appears',       next: 'fix_chargeIt' },
+      { label: 'It shows the logo but freezes',      emoji: '',  desc: 'Apple / Samsung / brand logo stuck',   next: 'fix_forceRestart' },
     ],
   },
   wontTurnOn_black: {
@@ -118,8 +118,8 @@ const tree: Record<string, Node> = {
     title: 'Does it vibrate or make any sound when you press the power button?',
     subtitle: 'Hold the power button for a full 5 seconds and listen carefully.',
     options: [
-      { label: 'Yes — it buzzes or makes a sound',   emoji: '📳',  desc: 'Tiny vibration, chime, or click',       next: 'fix_forceRestart' },
-      { label: 'No — completely silent',             emoji: '🤐',  desc: 'Nothing at all happens',                next: 'wontTurnOn_charger' },
+      { label: 'Yes — it buzzes or makes a sound',   emoji: '',  desc: 'Tiny vibration, chime, or click',       next: 'fix_forceRestart' },
+      { label: 'No — completely silent',             emoji: '',  desc: 'Nothing at all happens',                next: 'wontTurnOn_charger' },
     ],
   },
   wontTurnOn_charger: {
@@ -127,8 +127,8 @@ const tree: Record<string, Node> = {
     title: 'Have you tried a different charger and cable?',
     subtitle: 'A dead phone often looks broken when the charger is actually the problem.',
     options: [
-      { label: 'No, I\'ve only tried one',           emoji: '🔌',  desc: 'Let\'s try swapping it',                next: 'fix_tryCharger' },
-      { label: 'Yes — different charger, still nothing', emoji: '🛠️', desc: 'Time for repair options',           next: 'fix_repairNeeded' },
+      { label: 'No, I\'ve only tried one',           emoji: '',  desc: 'Let\'s try swapping it',                next: 'fix_tryCharger' },
+      { label: 'Yes — different charger, still nothing', emoji: '', desc: 'Time for repair options',           next: 'fix_repairNeeded' },
     ],
   },
 
@@ -207,9 +207,9 @@ const tree: Record<string, Node> = {
     subtitle: 'The answer points to very different causes.',
     icon: Thermometer,
     options: [
-      { label: 'Only when it\'s charging',          emoji: '🔌',  desc: 'Cool when unplugged, hot while charging', next: 'fix_hotCharging' },
-      { label: 'Only when I\'m using it',           emoji: '🎮',  desc: 'Videos, games, camera — then it heats',  next: 'fix_hotUsing' },
-      { label: 'All the time — even sitting still', emoji: '😰',  desc: 'Warm even when I\'m not touching it',    next: 'fix_hotAlways' },
+      { label: 'Only when it\'s charging',          emoji: '',  desc: 'Cool when unplugged, hot while charging', next: 'fix_hotCharging' },
+      { label: 'Only when I\'m using it',           emoji: '',  desc: 'Videos, games, camera — then it heats',  next: 'fix_hotUsing' },
+      { label: 'All the time — even sitting still', emoji: '',  desc: 'Warm even when I\'m not touching it',    next: 'fix_hotAlways' },
     ],
   },
 
@@ -274,16 +274,16 @@ const tree: Record<string, Node> = {
     icon: Battery,
     options: [
       { label: 'Right after a software update',       emoji: '🆕',  desc: 'It was fine before the update',        next: 'fix_drainAfterUpdate' },
-      { label: 'Gradually over the past year or two', emoji: '📉',  desc: 'It\'s been getting worse for a while', next: 'fix_drainAging' },
-      { label: 'Just started in the last few days',   emoji: '⚡',  desc: 'Sudden change — something is new',     next: 'batteryDrain_newApps' },
+      { label: 'Gradually over the past year or two', emoji: '',  desc: 'It\'s been getting worse for a while', next: 'fix_drainAging' },
+      { label: 'Just started in the last few days',   emoji: '',  desc: 'Sudden change — something is new',     next: 'batteryDrain_newApps' },
     ],
   },
   batteryDrain_newApps: {
     kind: 'question',
     title: 'Did you install any new apps recently?',
     options: [
-      { label: 'Yes, a new app or two',               emoji: '📲',  desc: 'One of them may be the culprit',       next: 'fix_drainNewApp' },
-      { label: 'No — nothing new',                    emoji: '🤷',  desc: 'Then it\'s likely a background issue', next: 'fix_drainBackground' },
+      { label: 'Yes, a new app or two',               emoji: '',  desc: 'One of them may be the culprit',       next: 'fix_drainNewApp' },
+      { label: 'No — nothing new',                    emoji: '',  desc: 'Then it\'s likely a background issue', next: 'fix_drainBackground' },
     ],
   },
 
@@ -365,18 +365,18 @@ const tree: Record<string, Node> = {
     title: 'What\'s happening with the screen?',
     icon: Smartphone,
     options: [
-      { label: 'Glass is cracked',                  emoji: '💥',  desc: 'Visible cracks or shattered surface',    next: 'fix_crackedGlass' },
-      { label: 'Touch doesn\'t work',               emoji: '👆',  desc: 'I tap but nothing responds',              next: 'screen_touch' },
-      { label: 'Screen is black but I hear sounds', emoji: '🔈',  desc: 'It rings but the screen stays dark',      next: 'fix_displayDead' },
-      { label: 'Weird lines, spots, or colours',    emoji: '🌈',  desc: 'Coloured lines or dead pixels',           next: 'fix_displayDead' },
+      { label: 'Glass is cracked',                  emoji: '',  desc: 'Visible cracks or shattered surface',    next: 'fix_crackedGlass' },
+      { label: 'Touch doesn\'t work',               emoji: '',  desc: 'I tap but nothing responds',              next: 'screen_touch' },
+      { label: 'Screen is black but I hear sounds', emoji: '',  desc: 'It rings but the screen stays dark',      next: 'fix_displayDead' },
+      { label: 'Weird lines, spots, or colours',    emoji: '',  desc: 'Coloured lines or dead pixels',           next: 'fix_displayDead' },
     ],
   },
   screen_touch: {
     kind: 'question',
     title: 'Does touch work in some places but not others?',
     options: [
-      { label: 'Yes — some spots respond, others don\'t', emoji: '📍',  desc: 'Partial touch failure',           next: 'fix_touchPartial' },
-      { label: 'No — nothing responds anywhere',          emoji: '❌',  desc: 'Whole screen is dead to touch',   next: 'fix_touchDead' },
+      { label: 'Yes — some spots respond, others don\'t', emoji: '',  desc: 'Partial touch failure',           next: 'fix_touchPartial' },
+      { label: 'No — nothing responds anywhere',          emoji: '',  desc: 'Whole screen is dead to touch',   next: 'fix_touchDead' },
     ],
   },
 
@@ -458,8 +458,8 @@ const tree: Record<string, Node> = {
     title: 'Is it always slow, or frozen right this second?',
     icon: Zap,
     options: [
-      { label: 'Frozen right now — won\'t respond',  emoji: '🧊',  desc: 'Apps won\'t open, screen stuck',        next: 'fix_forceRestart' },
-      { label: 'Slow all the time',                  emoji: '🐌',  desc: 'Everything takes forever',              next: 'slow_age' },
+      { label: 'Frozen right now — won\'t respond',  emoji: '',  desc: 'Apps won\'t open, screen stuck',        next: 'fix_forceRestart' },
+      { label: 'Slow all the time',                  emoji: '',  desc: 'Everything takes forever',              next: 'slow_age' },
     ],
   },
   slow_age: {
@@ -468,8 +468,8 @@ const tree: Record<string, Node> = {
     subtitle: 'Phone age is the biggest clue here.',
     options: [
       { label: 'Less than 2 years',                 emoji: '🆕',  desc: 'Shouldn\'t be this slow yet',           next: 'fix_slowNewPhone' },
-      { label: '2 to 4 years old',                  emoji: '📅',  desc: 'Middle-aged — still fixable',           next: 'fix_slowMedium' },
-      { label: 'More than 4 years old',             emoji: '👴',  desc: 'Showing its age',                       next: 'fix_slowOld' },
+      { label: '2 to 4 years old',                  emoji: '',  desc: 'Middle-aged — still fixable',           next: 'fix_slowMedium' },
+      { label: 'More than 4 years old',             emoji: '',  desc: 'Showing its age',                       next: 'fix_slowOld' },
     ],
   },
 
@@ -533,10 +533,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s happening when you try to call?',
     icon: Phone,
     options: [
-      { label: 'No signal bars at all',              emoji: '📶',  desc: '"No Service" or empty bars',             next: 'fix_noSignal' },
-      { label: 'Have bars, but calls drop',          emoji: '📞',  desc: 'Connects then cuts out',                 next: 'fix_callsDrop' },
-      { label: 'Can\'t hear or they can\'t hear me', emoji: '🔇',  desc: 'The call connects but audio fails',      next: 'fix_callAudio' },
-      { label: 'One specific person can\'t reach me', emoji: '🚫',  desc: 'Could be a blocked number or spam filter', next: 'fix_blockedNumber' },
+      { label: 'No signal bars at all',              emoji: '',  desc: '"No Service" or empty bars',             next: 'fix_noSignal' },
+      { label: 'Have bars, but calls drop',          emoji: '',  desc: 'Connects then cuts out',                 next: 'fix_callsDrop' },
+      { label: 'Can\'t hear or they can\'t hear me', emoji: '',  desc: 'The call connects but audio fails',      next: 'fix_callAudio' },
+      { label: 'One specific person can\'t reach me', emoji: '',  desc: 'Could be a blocked number or spam filter', next: 'fix_blockedNumber' },
     ],
   },
 
@@ -618,17 +618,17 @@ const tree: Record<string, Node> = {
     title: 'When do you have no sound?',
     icon: Volume2,
     options: [
-      { label: 'On phone calls',                     emoji: '📞',  desc: 'Can\'t hear the caller',                next: 'fix_soundCalls' },
-      { label: 'Playing music or videos',            emoji: '🎵',  desc: 'YouTube, Spotify, Apple Music silent',  next: 'sound_playback' },
-      { label: 'Ringer — I don\'t hear calls or texts', emoji: '🔕',  desc: 'Silent when people call or text',    next: 'fix_ringerSilent' },
+      { label: 'On phone calls',                     emoji: '',  desc: 'Can\'t hear the caller',                next: 'fix_soundCalls' },
+      { label: 'Playing music or videos',            emoji: '',  desc: 'YouTube, Spotify, Apple Music silent',  next: 'sound_playback' },
+      { label: 'Ringer — I don\'t hear calls or texts', emoji: '',  desc: 'Silent when people call or text',    next: 'fix_ringerSilent' },
     ],
   },
   sound_playback: {
     kind: 'question',
     title: 'Are you using headphones, earbuds, or a Bluetooth speaker?',
     options: [
-      { label: 'Yes — but audio is silent or bad',  emoji: '🎧',  desc: 'Bluetooth or wired accessory issue',    next: 'fix_soundBluetooth' },
-      { label: 'No — just the phone\'s speaker',    emoji: '📱',  desc: 'Phone speaker itself is silent',        next: 'fix_soundSpeaker' },
+      { label: 'Yes — but audio is silent or bad',  emoji: '',  desc: 'Bluetooth or wired accessory issue',    next: 'fix_soundBluetooth' },
+      { label: 'No — just the phone\'s speaker',    emoji: '',  desc: 'Phone speaker itself is silent',        next: 'fix_soundSpeaker' },
     ],
   },
 
@@ -711,10 +711,10 @@ const tree: Record<string, Node> = {
     title: 'What\'s happening with the camera?',
     icon: Camera,
     options: [
-      { label: 'Black screen when I open the camera',  emoji: '⚫',  desc: 'Camera app opens but the view is dark', next: 'fix_cameraBlack' },
-      { label: 'Photos come out blurry',               emoji: '🌫️',  desc: 'Can\'t focus, fuzzy, smudged look',   next: 'fix_cameraBlur' },
-      { label: 'Camera app crashes or closes',         emoji: '💥',  desc: 'App kicks me out every time',          next: 'fix_cameraCrash' },
-      { label: '"Cannot connect to camera" error',     emoji: '⚠️',  desc: 'Error message when I open it',         next: 'fix_cameraError' },
+      { label: 'Black screen when I open the camera',  emoji: '',  desc: 'Camera app opens but the view is dark', next: 'fix_cameraBlack' },
+      { label: 'Photos come out blurry',               emoji: '',  desc: 'Can\'t focus, fuzzy, smudged look',   next: 'fix_cameraBlur' },
+      { label: 'Camera app crashes or closes',         emoji: '',  desc: 'App kicks me out every time',          next: 'fix_cameraCrash' },
+      { label: '"Cannot connect to camera" error',     emoji: '',  desc: 'Error message when I open it',         next: 'fix_cameraError' },
     ],
   },
 
@@ -796,16 +796,16 @@ const tree: Record<string, Node> = {
     title: 'When does your phone restart itself?',
     icon: RotateCcw,
     options: [
-      { label: 'When I open a specific app',         emoji: '🎯',  desc: 'Same app every time',                   next: 'fix_restartApp' },
-      { label: 'Randomly — no pattern',              emoji: '🎲',  desc: 'Could be any moment',                   next: 'restart_heat' },
+      { label: 'When I open a specific app',         emoji: '',  desc: 'Same app every time',                   next: 'fix_restartApp' },
+      { label: 'Randomly — no pattern',              emoji: '',  desc: 'Could be any moment',                   next: 'restart_heat' },
     ],
   },
   restart_heat: {
     kind: 'question',
     title: 'Is the phone hot when it restarts?',
     options: [
-      { label: 'Yes — hot to the touch',             emoji: '🔥',  desc: 'It\'s getting too warm',                next: 'fix_hotAlways' },
-      { label: 'No — it\'s cool',                    emoji: '❄️',  desc: 'No heat, just random restarts',        next: 'fix_restartHardware' },
+      { label: 'Yes — hot to the touch',             emoji: '',  desc: 'It\'s getting too warm',                next: 'fix_hotAlways' },
+      { label: 'No — it\'s cool',                    emoji: '',  desc: 'No heat, just random restarts',        next: 'fix_restartHardware' },
     ],
   },
 
@@ -852,10 +852,10 @@ const tree: Record<string, Node> = {
     icon: HardDrive,
     subtitle: 'The biggest space-eaters usually are photos, videos, or old apps.',
     options: [
-      { label: 'Not sure — I just need more space',  emoji: '💾',  desc: 'Quick cleanup walkthrough',             next: 'fix_storageFree' },
-      { label: 'Photos and videos',                   emoji: '📸',  desc: 'Too many pictures to count',            next: 'fix_storagePhotos' },
-      { label: 'Apps are taking lots of room',       emoji: '📱',  desc: 'Long list of apps',                     next: 'fix_storageApps' },
-      { label: 'Can\'t install an update or new app', emoji: '🚫',  desc: '"Not enough storage" blocking me',      next: 'fix_storageUpdates' },
+      { label: 'Not sure — I just need more space',  emoji: '',  desc: 'Quick cleanup walkthrough',             next: 'fix_storageFree' },
+      { label: 'Photos and videos',                   emoji: '',  desc: 'Too many pictures to count',            next: 'fix_storagePhotos' },
+      { label: 'Apps are taking lots of room',       emoji: '',  desc: 'Long list of apps',                     next: 'fix_storageApps' },
+      { label: 'Can\'t install an update or new app', emoji: '',  desc: '"Not enough storage" blocking me',      next: 'fix_storageUpdates' },
     ],
   },
 
@@ -939,10 +939,10 @@ const tree: Record<string, Node> = {
     icon: Droplets,
     subtitle: 'Speed matters — pick carefully and follow the steps right now.',
     options: [
-      { label: 'Just dropped in water — this minute', emoji: '💦',  desc: 'Seconds ago, phone still wet',          next: 'fix_waterImmediate' },
-      { label: 'Splashed or wet from rain',           emoji: '🌧️',  desc: 'Damp, not soaked',                     next: 'fix_waterSplash' },
-      { label: 'Got wet hours or days ago',           emoji: '⏰',  desc: 'It seems fine now',                    next: 'fix_waterOld' },
-      { label: 'Dropped on hard surface (not water)', emoji: '📉',  desc: 'Fell on floor, road, etc.',            next: 'fix_dropped' },
+      { label: 'Just dropped in water — this minute', emoji: '',  desc: 'Seconds ago, phone still wet',          next: 'fix_waterImmediate' },
+      { label: 'Splashed or wet from rain',           emoji: '',  desc: 'Damp, not soaked',                     next: 'fix_waterSplash' },
+      { label: 'Got wet hours or days ago',           emoji: '',  desc: 'It seems fine now',                    next: 'fix_waterOld' },
+      { label: 'Dropped on hard surface (not water)', emoji: '',  desc: 'Fell on floor, road, etc.',            next: 'fix_dropped' },
     ],
   },
 
@@ -1026,9 +1026,9 @@ const tree: Record<string, Node> = {
     title: 'Where did you last have your phone?',
     icon: MapPin,
     options: [
-      { label: 'Somewhere around the house / close by', emoji: '🏠',  desc: 'I just can\'t remember where I put it', next: 'fix_findLocal' },
-      { label: 'Out and about — might actually be lost', emoji: '🗺️',  desc: 'At a shop, restaurant, or in transit', next: 'fix_findRemote' },
-      { label: 'I think it was stolen',                 emoji: '🚨',  desc: 'Someone took it',                     next: 'fix_stolen' },
+      { label: 'Somewhere around the house / close by', emoji: '',  desc: 'I just can\'t remember where I put it', next: 'fix_findLocal' },
+      { label: 'Out and about — might actually be lost', emoji: '',  desc: 'At a shop, restaurant, or in transit', next: 'fix_findRemote' },
+      { label: 'I think it was stolen',                 emoji: '',  desc: 'Someone took it',                     next: 'fix_stolen' },
     ],
   },
 

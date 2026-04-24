@@ -434,11 +434,11 @@ export default function BillNegotiator() {
                   <SelectValue placeholder="Choose a bill type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="cable">📺 Cable TV</SelectItem>
-                  <SelectItem value="internet">🌐 Internet</SelectItem>
-                  <SelectItem value="phone">☎️ Home phone / landline</SelectItem>
-                  <SelectItem value="cell">📱 Cell phone</SelectItem>
-                  <SelectItem value="streaming">🎬 Streaming service</SelectItem>
+                  <SelectItem value="cable"> Cable TV</SelectItem>
+                  <SelectItem value="internet"> Internet</SelectItem>
+                  <SelectItem value="phone"> Home phone / landline</SelectItem>
+                  <SelectItem value="cell"> Cell phone</SelectItem>
+                  <SelectItem value="streaming"> Streaming service</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -644,7 +644,7 @@ export default function BillNegotiator() {
             {/* Safety / realism note */}
             <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 no-print">
               <p className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-1">
-                💡 A few things to remember
+                 A few things to remember
               </p>
               <ul className="text-sm text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
                 <li>Not every call succeeds. If the first rep won&apos;t budge, hang up politely and call back later — you may reach someone more flexible.</li>

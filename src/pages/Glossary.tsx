@@ -1254,7 +1254,7 @@ const Glossary = () => {
         <div className="max-w-3xl mx-auto">
           {filtered.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-5xl mb-4" aria-hidden="true">🔍</p>
+              <p className="text-5xl mb-4" aria-hidden="true"></p>
               <p className="text-xl font-semibold mb-2">No terms found</p>
               <p className="text-muted-foreground mb-6">
                 Try a different spelling, or browse by letter above.

@@ -25,7 +25,7 @@ interface SourceSection {
 
 const sections: SourceSection[] = [
   {
-    icon: '📚',
+    icon: '',
     title: 'Tech Support & How-To',
     sources: [
       {
@@ -73,7 +73,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '🛡️',
+    icon: '',
     title: 'Internet Safety & Cybersecurity',
     sources: [
       {
@@ -115,7 +115,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '👴',
+    icon: '',
     title: 'Seniors & Digital Literacy',
     sources: [
       {
@@ -145,7 +145,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '🏛️',
+    icon: '',
     title: 'Government & Civic Resources',
     sources: [
       {
@@ -181,7 +181,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '❤️',
+    icon: '',
     title: 'Health Technology',
     sources: [
       {
@@ -205,7 +205,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '🎥',
+    icon: '',
     title: 'Video & Multimedia Tutorials',
     sources: [
       {
@@ -241,7 +241,7 @@ const sections: SourceSection[] = [
     ],
   },
   {
-    icon: '🔧',
+    icon: '',
     title: 'Tools & Technical References',
     sources: [
       {

@@ -479,17 +479,17 @@ const discountData: DiscountCategory[] = [
 
 /* ── Question options ────────────────────── */
 const ageOptions: { id: AgeRange; label: string; emoji: string }[] = [
-  { id: '50-54', label: '50 – 54', emoji: '🎯' },
-  { id: '55-59', label: '55 – 59', emoji: '🌟' },
-  { id: '60-64', label: '60 – 64', emoji: '☀️' },
-  { id: '65-69', label: '65 – 69', emoji: '🎉' },
-  { id: '70-74', label: '70 – 74', emoji: '🌻' },
-  { id: '75+',   label: '75 or older', emoji: '🏆' },
+  { id: '50-54', label: '50 – 54', emoji: '' },
+  { id: '55-59', label: '55 – 59', emoji: '' },
+  { id: '60-64', label: '60 – 64', emoji: '' },
+  { id: '65-69', label: '65 – 69', emoji: '' },
+  { id: '70-74', label: '70 – 74', emoji: '' },
+  { id: '75+',   label: '75 or older', emoji: '' },
 ];
 
 const yesNoButton = [
-  { id: 'yes' as const, label: 'Yes', emoji: '✅' },
-  { id: 'no'  as const, label: 'No',  emoji: '❌' },
+  { id: 'yes' as const, label: 'Yes', emoji: '' },
+  { id: 'no'  as const, label: 'No',  emoji: '' },
 ];
 
 const slide = {
@@ -769,7 +769,7 @@ export default function SeniorDiscountFinder() {
 
             {/* Tips / safety notes */}
             <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 mt-8 mb-6 print:hidden">
-              <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-1">💡 Pro tip</p>
+              <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-1"> Pro tip</p>
               <p className="text-sm text-amber-700/90 dark:text-amber-300/90">
                 Always <strong>ask before paying</strong> — many businesses offer senior discounts but only apply them when you ask.
                 Carry a photo ID and, if you have one, your AARP card.

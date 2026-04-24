@@ -81,12 +81,12 @@ const STEPS: Record<Device, Step[]> = {
 };
 
 const DEVICE_LABELS: Record<Device, { label: string; emoji: string }> = {
-  iphone: { label: 'iPhone', emoji: '📱' },
-  android: { label: 'Android Phone', emoji: '🤖' },
-  ipad: { label: 'iPad', emoji: '📲' },
-  mac: { label: 'Mac', emoji: '💻' },
-  windows: { label: 'Windows Laptop', emoji: '🖥️' },
-  watch: { label: 'Apple Watch', emoji: '⌚' },
+  iphone: { label: 'iPhone', emoji: '' },
+  android: { label: 'Android Phone', emoji: '' },
+  ipad: { label: 'iPad', emoji: '' },
+  mac: { label: 'Mac', emoji: '' },
+  windows: { label: 'Windows Laptop', emoji: '' },
+  watch: { label: 'Apple Watch', emoji: '' },
 };
 
 export default function BatteryOptimizer() {

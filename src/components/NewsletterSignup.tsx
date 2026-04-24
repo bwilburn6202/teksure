@@ -130,7 +130,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
           {submitted ? (
             <div key="done" className="space-y-2">
               <CheckCircle className="h-10 w-10 text-teksure-success mx-auto" />
-              <h3 className="text-xl font-bold">You're in! 🎉</h3>
+              <h3 className="text-xl font-bold">You're in!</h3>
               <p className="text-sm text-muted-foreground">
                 Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.
               </p>

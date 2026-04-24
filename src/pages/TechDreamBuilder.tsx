@@ -201,7 +201,7 @@ function DreamResult({
         <h2 className="text-2xl font-bold mb-2">Your {goal.label} Journey</h2>
         <p className="text-muted-foreground max-w-md mx-auto">
           {pct === 100 
-            ? "🎉 Amazing! You've completed this journey!" 
+            ? " Amazing! You've completed this journey!" 
             : `We've found ${matchedGuides.length} guides to help you achieve this goal.`
           }
         </p>

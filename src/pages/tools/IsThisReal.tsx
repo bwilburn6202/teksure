@@ -58,7 +58,7 @@ const CATEGORIES: Category[] = [
   /* ── 1. News story ── */
   {
     id: 'news',
-    emoji: '📰',
+    emoji: '',
     icon: Newspaper,
     title: 'A news story',
     tagline: 'Went viral, a friend shared it, or the headline looks shocking.',
@@ -107,7 +107,7 @@ const CATEGORIES: Category[] = [
   /* ── 2. Email ── */
   {
     id: 'email',
-    emoji: '📧',
+    emoji: '',
     icon: Mail,
     title: 'An email',
     tagline: 'Claiming to be from a company, bank, or government agency.',
@@ -154,7 +154,7 @@ const CATEGORIES: Category[] = [
   /* ── 3. Deal ── */
   {
     id: 'deal',
-    emoji: '💰',
+    emoji: '',
     icon: DollarSign,
     title: 'A too-good-to-be-true deal',
     tagline: 'On Amazon, Facebook, an ad, or in an email.',
@@ -204,7 +204,7 @@ const CATEGORIES: Category[] = [
   /* ── 4. Text ── */
   {
     id: 'text',
-    emoji: '📱',
+    emoji: '',
     icon: Smartphone,
     title: 'A text message',
     tagline: 'From an unknown number or a strange short code.',
@@ -249,7 +249,7 @@ const CATEGORIES: Category[] = [
   /* ── 5. Photo/video ── */
   {
     id: 'photo',
-    emoji: '📸',
+    emoji: '',
     icon: ImageIcon,
     title: 'A photo or video',
     tagline: 'That looks suspicious, edited, or too dramatic to be real.',
@@ -295,7 +295,7 @@ const CATEGORIES: Category[] = [
   /* ── 6. AI-generated content ── */
   {
     id: 'ai',
-    emoji: '🤖',
+    emoji: '',
     icon: Bot,
     title: 'AI-generated content',
     tagline: 'Suspected deepfake, voice clone, or AI-written message.',
@@ -340,7 +340,7 @@ const CATEGORIES: Category[] = [
   /* ── 7. Social media ── */
   {
     id: 'social',
-    emoji: '👤',
+    emoji: '',
     icon: UserCircle2,
     title: 'A social media post or profile',
     tagline: 'A friend request, DM, or account that feels off.',

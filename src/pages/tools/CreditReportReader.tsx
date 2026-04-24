@@ -121,7 +121,7 @@ const sections: Section[] = [
           <li><strong>Status:</strong> "Open/Current" = healthy. "Closed" = paid off or closed (usually fine). "Charged off" / "Collections" = ugly — the lender gave up trying to collect. These hurt your score badly and stay for 7 years.</li>
           <li><strong>Date opened:</strong> Affects "length of credit history." Older is better.</li>
           <li><strong>Current balance:</strong> What you owe today. Lower is better; paying in full every month is ideal.</li>
-          <li><strong>Payment history symbols:</strong> "OK" or "✓" means paid on time. "30" = 30 days late, "60" = 60 days late, etc. "CO" = charged off. Even one 30-day-late mark can drop your score 60–100 points.</li>
+          <li><strong>Payment history symbols:</strong> "OK" or "" means paid on time. "30" = 30 days late, "60" = 60 days late, etc. "CO" = charged off. Even one 30-day-late mark can drop your score 60–100 points.</li>
           <li><strong>High credit limit / high balance:</strong> Shows the highest balance you've ever carried. Lenders look at this to judge risk.</li>
         </ul>
         <div className="mt-4 p-3 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900 text-sm text-amber-800 dark:text-amber-300">

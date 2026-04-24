@@ -172,13 +172,13 @@ const KB: KBEntry[] = [
     keywords: ['virus', 'scam', 'hacked', 'malware', 'popup', 'pop-up', 'warning', 'suspicious', 'phishing', 'fake', 'microsoft called'],
     category: 'security',
     answer:
-      "⚠️ Stay safe from scams:\n\n1. NEVER click pop-ups saying 'Your computer has a virus' — those are scams!\n2. NEVER give your password or remote access to anyone who calls you out of the blue.\n3. Don't click links in unexpected emails or texts.\n4. If worried, close your browser and restart the device.\n5. Real companies like Microsoft and Apple NEVER call you unsolicited.",
+      " Stay safe from scams:\n\n1. NEVER click pop-ups saying 'Your computer has a virus' — those are scams!\n2. NEVER give your password or remote access to anyone who calls you out of the blue.\n3. Don't click links in unexpected emails or texts.\n4. If worried, close your browser and restart the device.\n5. Real companies like Microsoft and Apple NEVER call you unsolicited.",
   },
   {
     keywords: ['screenshot', 'screen shot', 'capture screen', 'print screen', 'snip', 'snipping tool'],
     category: 'howto',
     answer:
-      "To take a screenshot:\n\n📱 iPhone: Press Side Button + Volume Up at the same time.\n📱 Android: Press Power + Volume Down at the same time.\n💻 Windows: Press Windows + Shift + S (select an area) or PrtSc (whole screen).\n🍎 Mac: Press Command + Shift + 3 (whole screen) or Command + Shift + 4 (select area).",
+      "To take a screenshot:\n\n iPhone: Press Side Button + Volume Up at the same time.\n Android: Press Power + Volume Down at the same time.\n Windows: Press Windows + Shift + S (select an area) or PrtSc (whole screen).\n Mac: Press Command + Shift + 3 (whole screen) or Command + Shift + 4 (select area).",
     deviceAnswers: {
       windows: "Screenshot on Windows:\n\n• Windows + Shift + S → drag to select an area (saved to clipboard and notifications).\n• PrtSc → whole screen copied to clipboard (paste into Paint or Word).\n• Snipping Tool (search in Start menu) for more options and annotations.",
       mac: "Screenshot on Mac:\n\n• Cmd + Shift + 3 → full screen (saved to Desktop).\n• Cmd + Shift + 4 → click and drag to select an area.\n• Cmd + Shift + 4, then Space → click a window to capture just that window.\n• Cmd + Shift + 5 → screenshot toolbar with all options.",
@@ -196,7 +196,7 @@ const KB: KBEntry[] = [
     keywords: ['update', 'updates', 'windows update', 'software update', 'upgrade', 'outdated', 'latest version'],
     category: 'updates',
     answer:
-      "To check for updates:\n\n💻 Windows: Start → Settings → Windows Update → Check for updates.\n🍎 Mac: Apple menu → System Settings → General → Software Update.\n📱 iPhone: Settings → General → Software Update.\n📱 Android: Settings → Software Update (or System → System Update).\n\nUpdates fix security holes and bugs — always worth doing!",
+      "To check for updates:\n\n Windows: Start → Settings → Windows Update → Check for updates.\n Mac: Apple menu → System Settings → General → Software Update.\n iPhone: Settings → General → Software Update.\n Android: Settings → Software Update (or System → System Update).\n\nUpdates fix security holes and bugs — always worth doing!",
     deviceAnswers: {
       windows: "Windows Update steps:\n\n1. Click Start → Settings (gear icon).\n2. Click 'Windows Update' in the left panel.\n3. Click 'Check for updates'.\n4. If updates appear, click 'Download & install'.\n5. Restart when prompted — this is important to finish the install.",
       mac: "Mac Software Update:\n\n1. Click the Apple menu (top-left) → System Settings.\n2. Click 'General' → 'Software Update'.\n3. If an update is available, click 'Update Now'.\n4. Your Mac will restart — save any open work first.",
@@ -256,7 +256,7 @@ const KB: KBEntry[] = [
     keywords: ['apps', 'install app', 'download app', 'uninstall', 'remove app', 'app store', 'google play'],
     category: 'apps',
     answer:
-      "To install or remove apps:\n\n📱 iPhone: use the App Store (blue icon). Search for the app and tap 'Get' or the price.\n📱 Android: use Google Play Store. Search and tap 'Install'.\n💻 Windows: use the Microsoft Store, or download from the app's official website.\n🍎 Mac: use the Mac App Store, or drag apps to Trash to uninstall them.",
+      "To install or remove apps:\n\n iPhone: use the App Store (blue icon). Search for the app and tap 'Get' or the price.\n Android: use Google Play Store. Search and tap 'Install'.\n Windows: use the Microsoft Store, or download from the app's official website.\n Mac: use the Mac App Store, or drag apps to Trash to uninstall them.",
     deviceAnswers: {
       iphone: "iPhone apps:\n\n• Install: App Store → search → tap 'Get' → enter your Apple ID password or use Face ID.\n• Delete: press and hold any app icon → tap 'Remove App' → 'Delete App'.\n• Offload (keeps data): Settings → General → iPhone Storage → tap the app → 'Offload App'.",
       android: "Android apps:\n\n• Install: Google Play Store → search → tap 'Install'.\n• Uninstall: press and hold the app icon → 'Uninstall', or Settings → Apps → select app → 'Uninstall'.\n• Update all apps: Play Store → profile picture (top-right) → 'Manage apps & device' → 'Update all'.",
@@ -284,7 +284,7 @@ const KB: KBEntry[] = [
     keywords: ['restart', 'reboot', 'turn off', 'shut down', 'not turning on', "won't start", 'power button'],
     category: 'howto',
     answer:
-      "To restart your device:\n\n💻 Windows: Start → Power → Restart.\n🍎 Mac: Apple menu → Restart.\n📱 iPhone: hold Side + Volume Down → 'Slide to Power Off'. Or go to Settings → General → Shut Down.\n📱 Android: hold the power button → 'Restart'.\n\nA restart clears temporary files and fixes many common issues.",
+      "To restart your device:\n\n Windows: Start → Power → Restart.\n Mac: Apple menu → Restart.\n iPhone: hold Side + Volume Down → 'Slide to Power Off'. Or go to Settings → General → Shut Down.\n Android: hold the power button → 'Restart'.\n\nA restart clears temporary files and fixes many common issues.",
   },
   {
     keywords: ['google', 'search', 'browser', 'chrome', 'safari', 'firefox', 'edge', 'not loading', 'website'],
@@ -367,7 +367,7 @@ function getResponse(input: string, device: DeviceType): string {
       return entry.answer;
     }
   }
-  return "I'm not sure about that one yet, but I'm always learning! 🤔\n\nYou might find the answer in our step-by-step guides, or try asking a different way. For tricky issues, you can also book a real technician for hands-on help.";
+  return "I'm not sure about that one yet, but I'm always learning! \n\nYou might find the answer in our step-by-step guides, or try asking a different way. For tricky issues, you can also book a real technician for hands-on help.";
 }
 
 /* ── Guide matching ────────────────────────────────────────── */
@@ -559,8 +559,8 @@ export function TekBrain() {
     const ctx = getPageContext(location.pathname);
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
     return ctx
-      ? `Hi! I'm TekBrain 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
-      : `Hi! I'm TekBrain, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
+      ? `Hi! I'm TekBrain.${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
+      : `Hi! I'm TekBrain, your friendly tech helper.${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
   }, [location.pathname, device]);
 
   /* If session is empty (first open or after clear), inject a fresh welcome */
@@ -600,7 +600,7 @@ export function TekBrain() {
     const label = d ? deviceLabel(d) : 'all devices';
     setMessages(prev => [
       ...prev,
-      { role: 'bot', content: `Got it! I'll tailor my answers for ${label} from now on. 👍` },
+      { role: 'bot', content: `Got it! I'll tailor my answers for ${label} from now on. ` },
     ]);
   }
 
@@ -609,8 +609,8 @@ export function TekBrain() {
     const ctx = getPageContext(location.pathname);
     const deviceHint = device ? ` I see you're using a ${deviceLabel(device)}.` : '';
     const welcome = ctx
-      ? `Hi! I'm TekBrain 🤖${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
-      : `Hi! I'm TekBrain, your friendly tech helper 🤖${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
+      ? `Hi! I'm TekBrain.${deviceHint}\n\nI can see you're browsing ${ctx}. Ask me anything about it, or any other tech question!`
+      : `Hi! I'm TekBrain, your friendly tech helper.${deviceHint}\n\nAsk me anything about your ${device ? deviceLabel(device) : 'computer or phone'}, WiFi, passwords, or any tech question!`;
     setMessages([{ role: 'bot', content: welcome }]);
   }
 

@@ -144,7 +144,7 @@ const Dashboard = () => {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <p className="text-sm text-muted-foreground mb-0.5">{getGreeting()},</p>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} 👋</h1>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} </h1>
             <p className="text-muted-foreground text-sm mt-1">Here's how your tech journey is going.</p>
           </div>
           <Dialog open={open} onOpenChange={setOpen}>

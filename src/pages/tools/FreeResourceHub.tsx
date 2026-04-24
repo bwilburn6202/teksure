@@ -73,7 +73,7 @@ const CATEGORIES: Category[] = [
   /* ── 1. Streaming & TV ─────────────────── */
   {
     id: 'streaming',
-    emoji: '📺',
+    emoji: '',
     icon: Tv,
     title: 'Streaming & TV',
     tagline: 'Free movies, live channels, and video — no subscription required.',
@@ -170,7 +170,7 @@ const CATEGORIES: Category[] = [
   /* ── 2. Libraries ──────────────────────── */
   {
     id: 'libraries',
-    emoji: '📚',
+    emoji: '',
     icon: Library,
     title: 'Libraries',
     tagline: 'What your local library card unlocks online.',
@@ -246,7 +246,7 @@ const CATEGORIES: Category[] = [
   /* ── 3. Learning & Classes ─────────────── */
   {
     id: 'learning',
-    emoji: '🎓',
+    emoji: '',
     icon: GraduationCap,
     title: 'Learning & Classes',
     tagline: 'Real courses, real teachers, zero tuition.',
@@ -325,7 +325,7 @@ const CATEGORIES: Category[] = [
   /* ── 4. Government Benefits ───────────── */
   {
     id: 'benefits',
-    emoji: '🏛️',
+    emoji: '',
     icon: Landmark,
     title: 'Government Benefits',
     tagline: 'Benefits you may already qualify for — no application fees, ever.',
@@ -399,7 +399,7 @@ const CATEGORIES: Category[] = [
   /* ── 5. Tax Filing ─────────────────────── */
   {
     id: 'taxes',
-    emoji: '🧾',
+    emoji: '',
     icon: FileText,
     title: 'Tax Filing',
     tagline: 'File your federal taxes for free — really free.',
@@ -459,7 +459,7 @@ const CATEGORIES: Category[] = [
   /* ── 6. Books & Audiobooks ──────────────── */
   {
     id: 'books',
-    emoji: '📖',
+    emoji: '',
     icon: BookOpen,
     title: 'Books & Audiobooks',
     tagline: 'Classic literature, free audiobooks, and accessible reading.',
@@ -531,7 +531,7 @@ const CATEGORIES: Category[] = [
   /* ── 7. Software & Apps ──────────────── */
   {
     id: 'software',
-    emoji: '💻',
+    emoji: '',
     icon: Laptop,
     title: 'Software & Apps',
     tagline: 'Free, safe replacements for expensive programs.',
@@ -620,7 +620,7 @@ const CATEGORIES: Category[] = [
   /* ── 8. Mental Health ──────────────── */
   {
     id: 'mental-health',
-    emoji: '💗',
+    emoji: '',
     icon: Heart,
     title: 'Mental Health',
     tagline: 'Free, confidential support lines and peer groups.',
@@ -699,7 +699,7 @@ const CATEGORIES: Category[] = [
   /* ── 9. Fact-Check & Research ─────────── */
   {
     id: 'fact-check',
-    emoji: '🔎',
+    emoji: '',
     icon: Search,
     title: 'Fact-Check & Research',
     tagline: 'Verify claims, research history, and check the record.',

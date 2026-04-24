@@ -320,7 +320,9 @@ function printHelp() {
 // Guide discovery + loading
 // ─────────────────────────────────────────────────────────────────────────────
 
-/** Recursively find all `guides-batch-*.ts` files under `dir`. */
+/** Recursively find all `guides-batch-*.ts` files plus the core `guides.ts`
+ *  under `dir`. The core file is required — without it the ~800 seed guides
+ *  in `src/data/guides.ts` are silently skipped from embedding. */
 async function findBatchFiles(dir: string): Promise<string[]> {
   const out: string[] = [];
 
@@ -332,7 +334,7 @@ async function findBatchFiles(dir: string): Promise<string[]> {
         await walk(full);
       } else if (
         entry.isFile() &&
-        /^guides-batch-\d+\.ts$/.test(entry.name)
+        (/^guides-batch-\d+\.ts$/.test(entry.name) || entry.name === 'guides.ts')
       ) {
         out.push(full);
       }
@@ -340,8 +342,12 @@ async function findBatchFiles(dir: string): Promise<string[]> {
   }
 
   await walk(dir);
-  // Sort numerically so log output is readable (batch-4 before batch-10).
-  out.sort((a, b) => batchNumber(a) - batchNumber(b));
+  // Sort so the core file runs first, then batches numerically.
+  out.sort((a, b) => {
+    const aCore = a.endsWith('/guides.ts') ? -1 : batchNumber(a);
+    const bCore = b.endsWith('/guides.ts') ? -1 : batchNumber(b);
+    return aCore - bCore;
+  });
   return out;
 }
 

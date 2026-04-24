@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Clock, Monitor, Apple, Smartphone, Tablet, Globe } from 'lucide-react';
+import { Clock, Monitor, Apple, Smartphone, Tablet, Globe, FileText } from 'lucide-react';
 import { ContentBadge } from '@/components/ContentBadge';
 import {
   type AggregatedArticle,
@@ -21,10 +21,12 @@ const difficultyColors = {
   Advanced:     'text-red-500 dark:text-red-400',
 } as const;
 
+// Kept in case callers want difficulty indicators later; intentionally blank
+// since site-wide emoji removal stripped the dot glyphs.
 const difficultyDots = {
-  Beginner:     '●',
-  Intermediate: '●●',
-  Advanced:     '●●●',
+  Beginner:     '',
+  Intermediate: '',
+  Advanced:     '',
 } as const;
 
 interface AggregatedArticleCardProps {
@@ -36,9 +38,11 @@ export function AggregatedArticleCard({ article, source }: AggregatedArticleCard
   return (
     <Link to={`/articles/${article.slug}`} className="group block h-full">
       <div className="p-5 rounded-2xl border border-border bg-card h-full flex flex-col transition-all hover:shadow-md hover:border-primary/20">
-        {/* Top row: emoji + badge */}
+        {/* Top row: icon + badge */}
         <div className="flex items-start justify-between mb-3 gap-2">
-          <span className="text-3xl shrink-0" aria-hidden="true">{article.thumbnailEmoji}</span>
+          <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-primary/10 shrink-0" aria-hidden="true">
+            <FileText className="h-5 w-5 text-primary" />
+          </span>
           <ContentBadge type="simplified" source={source} variant="sm" />
         </div>
 
@@ -48,7 +52,7 @@ export function AggregatedArticleCard({ article, source }: AggregatedArticleCard
             {article.category}
           </span>
           <span className={`text-xs font-medium ${difficultyColors[article.difficulty]}`}>
-            {difficultyDots[article.difficulty]} {article.difficulty}
+            {article.difficulty}
           </span>
           <span className="flex items-center gap-1 text-xs text-muted-foreground">
             <Clock className="h-2.5 w-2.5" aria-hidden="true" />

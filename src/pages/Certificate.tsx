@@ -66,7 +66,7 @@ export default function Certificate() {
       <main className="flex-1 container max-w-3xl py-12">
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
-            <div className="text-4xl mb-3">🏆</div>
+            <div className="text-4xl mb-3"></div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2">Tech Skills Certificates</h1>
             <p className="text-muted-foreground">Complete guides to unlock certificates — print and display them with pride.</p>
           </div>
@@ -121,7 +121,7 @@ export default function Certificate() {
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-0.5">
                       <p className="font-semibold">{p.name}</p>
-                      {earned ? <Badge variant="secondary" className="text-xs">Earned ✓</Badge> : <Lock className="h-3.5 w-3.5 text-muted-foreground" />}
+                      {earned ? <Badge variant="secondary" className="text-xs">Earned </Badge> : <Lock className="h-3.5 w-3.5 text-muted-foreground" />}
                     </div>
                     <p className="text-sm text-muted-foreground">
                       {earned ? `Unlocked — ${total}/${p.required} guides done` : `Complete ${p.required} guides to unlock (${total}/${p.required})`}

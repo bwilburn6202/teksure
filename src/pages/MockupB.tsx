@@ -23,14 +23,14 @@ import { SEOHead } from '@/components/SEOHead';
 
 const categories = [
   { name: 'All Topics', active: true },
-  { name: 'Getting Started', icon: '🌟' },
-  { name: 'WiFi & Internet', icon: '📶' },
-  { name: 'Safety & Scams', icon: '🛡️' },
-  { name: 'Phones & Tablets', icon: '📱' },
-  { name: 'Windows', icon: '💻' },
-  { name: 'Mac & Apple', icon: '🍎' },
-  { name: 'AI Tools', icon: '🤖' },
-  { name: 'Health Tech', icon: '❤️' },
+  { name: 'Getting Started', icon: '' },
+  { name: 'WiFi & Internet', icon: '' },
+  { name: 'Safety & Scams', icon: '' },
+  { name: 'Phones & Tablets', icon: '' },
+  { name: 'Windows', icon: '' },
+  { name: 'Mac & Apple', icon: '' },
+  { name: 'AI Tools', icon: '' },
+  { name: 'Health Tech', icon: '' },
 ];
 
 const featuredCards = [

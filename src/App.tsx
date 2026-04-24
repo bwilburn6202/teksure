@@ -450,9 +450,8 @@ function OfflineBanner() {
 
 const FloatingChrome = () => {
   const { pathname } = useLocation();
-  // Landing Page v2 is intentionally free of floating UI — the design removed both
-  // the TekBrain launcher and the "Been Scammed?" panic button from `/`.
-  if (pathname === "/") return null;
+  // The chat IS the page on `/` and `/tekbrain/chat`, so skip the launcher there.
+  if (pathname === "/" || pathname === "/tekbrain/chat") return null;
   return (
     <>
       <TekBrain />
@@ -527,7 +526,10 @@ const AppContent = () => {
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
-          <Route path="/" element={<Index />} />
+          {/* Homepage is now the TekBrain RAG chat — private-knowledge-base AI
+              agent trained on TekSure's guides. Old landing lives at /welcome. */}
+          <Route path="/" element={<TekBrainPage />} />
+          <Route path="/welcome" element={<Index />} />
           <Route path="/mockups" element={<ProtectedRoute allowedRoles={['admin']}><Mockups /></ProtectedRoute>} />
           <Route path="/mockup-a" element={<ProtectedRoute allowedRoles={['admin']}><MockupA /></ProtectedRoute>} />
           <Route path="/mockup-b" element={<ProtectedRoute allowedRoles={['admin']}><MockupB /></ProtectedRoute>} />

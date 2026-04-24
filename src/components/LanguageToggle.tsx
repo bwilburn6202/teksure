@@ -27,13 +27,13 @@ export function LanguageToggle() {
           onClick={() => setLang('en')}
           className={lang === 'en' ? 'font-semibold text-secondary' : ''}
         >
-          🇺🇸 English
+           English
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setLang('es')}
           className={lang === 'es' ? 'font-semibold text-secondary' : ''}
         >
-          🇪🇸 Español
+           Español
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

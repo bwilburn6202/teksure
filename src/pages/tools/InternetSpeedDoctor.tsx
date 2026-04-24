@@ -40,38 +40,38 @@ interface Answers {
 
 /* ── Option lists ────────────────────────── */
 const symptomOptions: { id: Symptom; label: string; emoji: string; desc: string }[] = [
-  { id: 'buffering', label: 'Videos keep buffering', emoji: '📺', desc: 'YouTube, Netflix, or live TV pauses to load' },
-  { id: 'slow-sites', label: 'Websites are slow', emoji: '🐢', desc: 'Pages take forever to open' },
-  { id: 'calls-drop', label: 'Video calls drop or freeze', emoji: '📞', desc: 'Zoom, FaceTime, or WhatsApp cuts out' },
-  { id: 'wont-connect', label: 'WiFi won\'t connect at all', emoji: '🚫', desc: 'No internet showing on my devices' },
-  { id: 'all', label: 'A bit of everything', emoji: '😵', desc: 'It\'s just generally not working right' },
+  { id: 'buffering', label: 'Videos keep buffering', emoji: '', desc: 'YouTube, Netflix, or live TV pauses to load' },
+  { id: 'slow-sites', label: 'Websites are slow', emoji: '', desc: 'Pages take forever to open' },
+  { id: 'calls-drop', label: 'Video calls drop or freeze', emoji: '', desc: 'Zoom, FaceTime, or WhatsApp cuts out' },
+  { id: 'wont-connect', label: 'WiFi won\'t connect at all', emoji: '', desc: 'No internet showing on my devices' },
+  { id: 'all', label: 'A bit of everything', emoji: '', desc: 'It\'s just generally not working right' },
 ];
 
 const whenOptions: { id: When; label: string; emoji: string; desc: string }[] = [
-  { id: 'just-now', label: 'Just started — in the last hour', emoji: '⏰', desc: 'It was working fine earlier today' },
-  { id: 'today', label: 'Today', emoji: '📅', desc: 'Started sometime this morning or afternoon' },
-  { id: 'this-week', label: 'This week', emoji: '🗓️', desc: 'It\'s been bad for a few days' },
-  { id: 'always', label: 'It\'s always been slow', emoji: '🐌', desc: 'I don\'t remember a time it worked well' },
+  { id: 'just-now', label: 'Just started — in the last hour', emoji: '', desc: 'It was working fine earlier today' },
+  { id: 'today', label: 'Today', emoji: '', desc: 'Started sometime this morning or afternoon' },
+  { id: 'this-week', label: 'This week', emoji: '', desc: 'It\'s been bad for a few days' },
+  { id: 'always', label: 'It\'s always been slow', emoji: '', desc: 'I don\'t remember a time it worked well' },
 ];
 
 const whereOptions: { id: Where; label: string; emoji: string; desc: string }[] = [
-  { id: 'everywhere', label: 'Everywhere in the house', emoji: '🏠', desc: 'No matter which room I\'m in' },
-  { id: 'some-rooms', label: 'Only in some rooms', emoji: '🚪', desc: 'Fine in one spot, bad in another' },
-  { id: 'near-router', label: 'Even right next to the router', emoji: '📡', desc: 'Slow even when I\'m sitting near it' },
-  { id: 'far-from-router', label: 'Only when I\'m far from the router', emoji: '📏', desc: 'Fine near it, weak in far rooms' },
+  { id: 'everywhere', label: 'Everywhere in the house', emoji: '', desc: 'No matter which room I\'m in' },
+  { id: 'some-rooms', label: 'Only in some rooms', emoji: '', desc: 'Fine in one spot, bad in another' },
+  { id: 'near-router', label: 'Even right next to the router', emoji: '', desc: 'Slow even when I\'m sitting near it' },
+  { id: 'far-from-router', label: 'Only when I\'m far from the router', emoji: '', desc: 'Fine near it, weak in far rooms' },
 ];
 
 const deviceOptions: { id: Device; label: string; emoji: string }[] = [
-  { id: 'phone', label: 'Just my phone', emoji: '📱' },
-  { id: 'computer', label: 'Just my computer', emoji: '💻' },
-  { id: 'tv', label: 'Just my TV or streaming box', emoji: '📺' },
-  { id: 'all', label: 'All my devices', emoji: '🔌' },
+  { id: 'phone', label: 'Just my phone', emoji: '' },
+  { id: 'computer', label: 'Just my computer', emoji: '' },
+  { id: 'tv', label: 'Just my TV or streaming box', emoji: '' },
+  { id: 'all', label: 'All my devices', emoji: '' },
 ];
 
 const restartOptions: { id: TriedRestart; label: string; emoji: string; desc: string }[] = [
-  { id: 'yes', label: 'Yes — already tried that', emoji: '✅', desc: 'Unplugged it, waited, plugged it back in' },
-  { id: 'no', label: 'No — haven\'t restarted it', emoji: '🔄', desc: 'I\'ll give that a try' },
-  { id: 'not-sure', label: 'Not sure how', emoji: '❓', desc: 'Show me how to restart the router' },
+  { id: 'yes', label: 'Yes — already tried that', emoji: '', desc: 'Unplugged it, waited, plugged it back in' },
+  { id: 'no', label: 'No — haven\'t restarted it', emoji: '', desc: 'I\'ll give that a try' },
+  { id: 'not-sure', label: 'Not sure how', emoji: '', desc: 'Show me how to restart the router' },
 ];
 
 /* ── Fix-step catalogue ──────────────────── */

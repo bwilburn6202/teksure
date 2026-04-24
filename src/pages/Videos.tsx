@@ -168,7 +168,7 @@ export default function Videos() {
         {/* Empty state */}
         {!isLoading && filtered.length === 0 && (
           <div className="text-center py-20">
-            <div className="text-5xl mb-4">🎬</div>
+            <div className="text-5xl mb-4"></div>
             <p className="text-lg font-semibold mb-2">No videos yet for this device</p>
             <p className="text-muted-foreground text-sm mb-6">
               We're always adding new tutorials. Check back soon!

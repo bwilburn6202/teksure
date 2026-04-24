@@ -392,7 +392,7 @@ export default function News() {
           <div className="container max-w-4xl mx-auto">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">
-                <span className="text-xl">🔥</span>
+                <span className="text-xl"></span>
                 <div>
                   <h2 className="font-bold text-lg">Top Tech Stories Right Now</h2>
                   <p className="text-xs text-muted-foreground">Live from Hacker News · Updates when you refresh</p>
@@ -438,7 +438,7 @@ export default function News() {
                         {story.title}
                       </p>
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="text-xs text-muted-foreground">▲ {story.score}</span>
+                        <span className="text-xs text-muted-foreground"> {story.score}</span>
                         {story.url && (
                           <span className="text-xs text-muted-foreground truncate">
                             {new URL(story.url).hostname.replace('www.', '')}

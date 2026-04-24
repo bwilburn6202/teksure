@@ -63,7 +63,7 @@ interface RedFlag {
 const freeHelp: HelpOption[] = [
   {
     icon: Library,
-    emoji: '📚',
+    emoji: '',
     title: 'Public libraries',
     offers:
       'Most US libraries offer free tech classes and one-on-one appointments with a librarian or volunteer. Bring any device — phone, laptop, tablet.',
@@ -74,7 +74,7 @@ const freeHelp: HelpOption[] = [
   },
   {
     icon: Heart,
-    emoji: '🏢',
+    emoji: '',
     title: 'AARP Tech Wednesdays',
     offers:
       'Weekly free virtual and in-person tech classes taught by AARP volunteers. Topics rotate — smartphones, scam spotting, video calling, social media.',
@@ -85,7 +85,7 @@ const freeHelp: HelpOption[] = [
   },
   {
     icon: Users,
-    emoji: '👴',
+    emoji: '',
     title: 'Senior centers',
     offers:
       'Local senior centers often have drop-in tech help, sometimes paired with teen volunteers from nearby schools as part of service-learning programs.',
@@ -96,7 +96,7 @@ const freeHelp: HelpOption[] = [
   },
   {
     icon: HandHeart,
-    emoji: '🎓',
+    emoji: '',
     title: 'Cyber-Seniors',
     offers:
       'A nonprofit that connects seniors with student volunteers for free remote (and sometimes in-person) tech tutoring. Schedule one-on-one sessions over video or phone.',
@@ -107,7 +107,7 @@ const freeHelp: HelpOption[] = [
   },
   {
     icon: BookOpen,
-    emoji: '💻',
+    emoji: '',
     title: 'GetSetUp',
     offers:
       'Live online classes designed for adults 50+ — everything from iPhone basics to Zoom, banking apps, fraud defense, even fitness and languages.',
@@ -123,7 +123,7 @@ const freeHelp: HelpOption[] = [
 const paidHelp: HelpOption[] = [
   {
     icon: Store,
-    emoji: '🛒',
+    emoji: '',
     title: 'Best Buy Geek Squad',
     offers:
       'In-home tech visits for setup, troubleshooting, smart-home install, and virus removal. Can also work remotely or at a Best Buy store.',
@@ -134,7 +134,7 @@ const paidHelp: HelpOption[] = [
   },
   {
     icon: Apple,
-    emoji: '🍎',
+    emoji: '',
     title: 'Today at Apple',
     offers:
       'Free in-store sessions at any Apple Store — hands-on with iPhone, iPad, Mac, Apple Watch. Great for device basics, photos, messages, accessibility features.',
@@ -145,7 +145,7 @@ const paidHelp: HelpOption[] = [
   },
   {
     icon: Monitor,
-    emoji: '🪟',
+    emoji: '',
     title: 'Microsoft Store Workshops',
     offers:
       'Where Microsoft Experience Centers still exist, free Windows and Surface workshops are available, plus free virtual answer desk appointments.',
@@ -159,7 +159,7 @@ const paidHelp: HelpOption[] = [
   },
   {
     icon: UserCircle,
-    emoji: '👨‍🎓',
+    emoji: '',
     title: 'Ask a teenager',
     offers:
       'Grandkids, nieces, nephews, and neighborhood teens often know their way around phones and computers. Offering $15–$25 an hour turns a favor into a reliable habit.',
@@ -174,7 +174,7 @@ const paidHelp: HelpOption[] = [
 const communityHelp: HelpOption[] = [
   {
     icon: Home,
-    emoji: '🏘️',
+    emoji: '',
     title: 'Nextdoor',
     offers:
       'The neighborhood social app. Post a polite request — "Looking for a kind neighbor to help me set up my new iPhone" — and you will often get several offers within a day.',
@@ -185,7 +185,7 @@ const communityHelp: HelpOption[] = [
   },
   {
     icon: Church,
-    emoji: '⛪',
+    emoji: '',
     title: 'Church tech ministries',
     offers:
       'Many churches, synagogues, mosques, and community centers run tech help as part of their outreach — often staffed by retired engineers and teachers who love to help.',
@@ -195,7 +195,7 @@ const communityHelp: HelpOption[] = [
   },
   {
     icon: GraduationCap,
-    emoji: '🏫',
+    emoji: '',
     title: 'Community college continuing ed',
     offers:
       'Affordable short courses on computers, smartphones, online safety, and specific apps. Classes meet weekly for a few weeks — you get real practice with a patient instructor.',
@@ -210,7 +210,7 @@ const communityHelp: HelpOption[] = [
 const emergencyHelp: HelpOption[] = [
   {
     icon: PhoneCall,
-    emoji: '📞',
+    emoji: '',
     title: 'Call a family member first',
     offers:
       'For urgent problems — you think you clicked a scam link, a charge you do not recognize, a device that will not turn on — call someone who knows you before paying anyone.',
@@ -220,7 +220,7 @@ const emergencyHelp: HelpOption[] = [
   },
   {
     icon: Wrench,
-    emoji: '🛟',
+    emoji: '',
     title: 'Book a TekSure technician',
     offers:
       'Plain-language, patient tech help over video. A TekSure helper can walk you through almost anything — from passwords to printer setup to figuring out what that pop-up means.',

@@ -29,118 +29,118 @@ type AppData = Record<Usage, Record<DeviceType, AppRec[]>>;
 const appData: AppData = {
   'video-calls': {
     iphone: [
-      { name: 'FaceTime', emoji: '📱', tagline: 'Built-in Apple video calling', description: 'Already on your iPhone — free calls to any other Apple device.', whySeniors: "No setup needed — tap a contact's name. Large clear buttons.", price: 'Free', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/facetime/id1110145091', badge: 'Best Pick' },
-      { name: 'Zoom', emoji: '💻', tagline: 'Video meetings with anyone', description: 'Join or host video calls with family, doctors, or groups.', whySeniors: 'Simple "Join a Meeting" button. Works on any device so everyone can join.', price: 'Free', rating: '4.6★', iosUrl: 'https://apps.apple.com/app/zoom/id546505307' },
+      { name: 'FaceTime', emoji: '', tagline: 'Built-in Apple video calling', description: 'Already on your iPhone — free calls to any other Apple device.', whySeniors: "No setup needed — tap a contact's name. Large clear buttons.", price: 'Free', rating: '4.8', iosUrl: 'https://apps.apple.com/app/facetime/id1110145091', badge: 'Best Pick' },
+      { name: 'Zoom', emoji: '', tagline: 'Video meetings with anyone', description: 'Join or host video calls with family, doctors, or groups.', whySeniors: 'Simple "Join a Meeting" button. Works on any device so everyone can join.', price: 'Free', rating: '4.6', iosUrl: 'https://apps.apple.com/app/zoom/id546505307' },
     ],
     android: [
-      { name: 'Google Meet', emoji: '🎥', tagline: 'Free video calls from Google', description: 'Make free video calls to anyone with a Google account.', whySeniors: 'Pre-installed on many Android phones. Big, clear interface.', price: 'Free', rating: '4.5★', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.meetings', badge: 'Best Pick' },
-      { name: 'WhatsApp', emoji: '💬', tagline: 'Chat and video call in one app', description: 'Free video calls, voice calls, and messages worldwide.', whySeniors: "Used by billions — your family probably already has it. Easy to find contacts.", price: 'Free', rating: '4.4★', androidUrl: 'https://play.google.com/store/apps/details?id=com.whatsapp' },
+      { name: 'Google Meet', emoji: '', tagline: 'Free video calls from Google', description: 'Make free video calls to anyone with a Google account.', whySeniors: 'Pre-installed on many Android phones. Big, clear interface.', price: 'Free', rating: '4.5', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.meetings', badge: 'Best Pick' },
+      { name: 'WhatsApp', emoji: '', tagline: 'Chat and video call in one app', description: 'Free video calls, voice calls, and messages worldwide.', whySeniors: "Used by billions — your family probably already has it. Easy to find contacts.", price: 'Free', rating: '4.4', androidUrl: 'https://play.google.com/store/apps/details?id=com.whatsapp' },
     ],
     windows: [
-      { name: 'Zoom', emoji: '💻', tagline: 'The most popular video call app', description: 'Join or host video meetings with anyone on any device.', whySeniors: 'Click a meeting link to join. No account needed to join other calls.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download', badge: 'Best Pick' },
-      { name: 'Microsoft Teams', emoji: '🟣', tagline: 'Video calls built into Windows', description: 'Pre-installed on Windows 11. Great for family group chats.', whySeniors: 'Already on your PC — no download needed on Windows 11.', price: 'Free', rating: '4.4★' },
+      { name: 'Zoom', emoji: '', tagline: 'The most popular video call app', description: 'Join or host video meetings with anyone on any device.', whySeniors: 'Click a meeting link to join. No account needed to join other calls.', price: 'Free', rating: '4.6', windowsUrl: 'https://zoom.us/download', badge: 'Best Pick' },
+      { name: 'Microsoft Teams', emoji: '', tagline: 'Video calls built into Windows', description: 'Pre-installed on Windows 11. Great for family group chats.', whySeniors: 'Already on your PC — no download needed on Windows 11.', price: 'Free', rating: '4.4' },
     ],
     mac: [
-      { name: 'FaceTime', emoji: '📱', tagline: 'Apple video calling on your Mac', description: 'Already installed — free calls to any Apple device.', whySeniors: 'Same easy interface on Mac as iPhone. Nothing to download.', price: 'Free', rating: '4.8★', badge: 'Best Pick' },
-      { name: 'Zoom', emoji: '💻', tagline: 'Video meetings with anyone', description: 'Join calls with family, friends, or doctors on any device.', whySeniors: 'Click a meeting link — works even if others use Android or Windows.', price: 'Free', rating: '4.6★', windowsUrl: 'https://zoom.us/download' },
+      { name: 'FaceTime', emoji: '', tagline: 'Apple video calling on your Mac', description: 'Already installed — free calls to any Apple device.', whySeniors: 'Same easy interface on Mac as iPhone. Nothing to download.', price: 'Free', rating: '4.8', badge: 'Best Pick' },
+      { name: 'Zoom', emoji: '', tagline: 'Video meetings with anyone', description: 'Join calls with family, friends, or doctors on any device.', whySeniors: 'Click a meeting link — works even if others use Android or Windows.', price: 'Free', rating: '4.6', windowsUrl: 'https://zoom.us/download' },
     ],
   },
   'banking': {
     iphone: [
-      { name: 'Your Bank\'s App', emoji: '🏦', tagline: 'Official app from your bank', description: "Search for your bank's name in the App Store — most major banks have free, official apps.", whySeniors: 'Lets you check your balance, pay bills, and transfer money safely without going to the branch.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
-      { name: 'Monzo', emoji: '💳', tagline: 'Simple digital bank', description: 'A friendly, modern bank app with very clear spending summaries.', whySeniors: 'Very simple interface. Instant notifications every time money moves.', price: 'Free', rating: '4.7★', iosUrl: 'https://apps.apple.com/app/monzo/id943948612' },
+      { name: 'Your Bank\'s App', emoji: '', tagline: 'Official app from your bank', description: "Search for your bank's name in the App Store — most major banks have free, official apps.", whySeniors: 'Lets you check your balance, pay bills, and transfer money safely without going to the branch.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
+      { name: 'Monzo', emoji: '', tagline: 'Simple digital bank', description: 'A friendly, modern bank app with very clear spending summaries.', whySeniors: 'Very simple interface. Instant notifications every time money moves.', price: 'Free', rating: '4.7', iosUrl: 'https://apps.apple.com/app/monzo/id943948612' },
     ],
     android: [
-      { name: 'Your Bank\'s App', emoji: '🏦', tagline: 'Official app from your bank', description: "Search for your bank's name in Google Play — most major banks have free, official apps.", whySeniors: 'Lets you check your balance, pay bills, and transfer money without going to the branch.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
-      { name: 'Google Pay', emoji: '🔵', tagline: 'Pay with your phone', description: 'Tap your phone on a card reader to pay — like a contactless card.', whySeniors: 'No need to dig out your wallet. Works at millions of shops.', price: 'Free', rating: '4.3★', androidUrl: 'https://pay.google.com' },
+      { name: 'Your Bank\'s App', emoji: '', tagline: 'Official app from your bank', description: "Search for your bank's name in Google Play — most major banks have free, official apps.", whySeniors: 'Lets you check your balance, pay bills, and transfer money without going to the branch.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
+      { name: 'Google Pay', emoji: '', tagline: 'Pay with your phone', description: 'Tap your phone on a card reader to pay — like a contactless card.', whySeniors: 'No need to dig out your wallet. Works at millions of shops.', price: 'Free', rating: '4.3', androidUrl: 'https://pay.google.com' },
     ],
     windows: [
-      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Your Bank\'s Website', emoji: '', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
     ],
     mac: [
-      { name: 'Your Bank\'s Website', emoji: '🌐', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Your Bank\'s Website', emoji: '', tagline: 'Use your browser', description: "Most banks have excellent websites — open your bank's website and look for 'Online Banking'.", whySeniors: 'No app to download. Large screen makes everything easier to read.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
     ],
   },
   'photos': {
     iphone: [
-      { name: 'iCloud Photos', emoji: '📸', tagline: 'Built-in Apple photo backup', description: 'Automatically backs up every photo to Apple\'s cloud — free for up to 5GB.', whySeniors: 'Nothing to set up — turn it on once and it works automatically forever.', price: 'Free (5GB) / $0.99/mo more', rating: '4.7★', badge: 'Best Pick' },
-      { name: 'Google Photos', emoji: '🖼️', tagline: 'Free unlimited photo storage', description: 'Backs up all your photos and lets you search them (e.g. "beach 2019").', whySeniors: 'Easy to share albums with family. Smart search finds photos by face, place, or date.', price: 'Free (15GB)', rating: '4.6★', iosUrl: 'https://apps.apple.com/app/google-photos/id962194608' },
+      { name: 'iCloud Photos', emoji: '', tagline: 'Built-in Apple photo backup', description: 'Automatically backs up every photo to Apple\'s cloud — free for up to 5GB.', whySeniors: 'Nothing to set up — turn it on once and it works automatically forever.', price: 'Free (5GB) / $0.99/mo more', rating: '4.7', badge: 'Best Pick' },
+      { name: 'Google Photos', emoji: '', tagline: 'Free unlimited photo storage', description: 'Backs up all your photos and lets you search them (e.g. "beach 2019").', whySeniors: 'Easy to share albums with family. Smart search finds photos by face, place, or date.', price: 'Free (15GB)', rating: '4.6', iosUrl: 'https://apps.apple.com/app/google-photos/id962194608' },
     ],
     android: [
-      { name: 'Google Photos', emoji: '🖼️', tagline: 'Free unlimited photo backup', description: 'Backs up all your photos automatically and organizes them by date and place.', whySeniors: 'Easy to share albums with family. Already on most Android phones.', price: 'Free (15GB)', rating: '4.6★', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.photos', badge: 'Best Pick' },
+      { name: 'Google Photos', emoji: '', tagline: 'Free unlimited photo backup', description: 'Backs up all your photos automatically and organizes them by date and place.', whySeniors: 'Easy to share albums with family. Already on most Android phones.', price: 'Free (15GB)', rating: '4.6', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.photos', badge: 'Best Pick' },
     ],
     windows: [
-      { name: 'Google Photos (browser)', emoji: '🖼️', tagline: 'View and manage photos online', description: 'Access all your Google Photos from photos.google.com — no download needed.', whySeniors: 'Big screen makes it easy to browse and edit photos. Download for printing.', price: 'Free (15GB)', rating: '4.6★', badge: 'Best Pick' },
-      { name: 'Microsoft Photos', emoji: '🪟', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organize photos easily.', whySeniors: 'No setup needed — double-click any photo to open it.', price: 'Free', rating: '4.2★' },
+      { name: 'Google Photos (browser)', emoji: '', tagline: 'View and manage photos online', description: 'Access all your Google Photos from photos.google.com — no download needed.', whySeniors: 'Big screen makes it easy to browse and edit photos. Download for printing.', price: 'Free (15GB)', rating: '4.6', badge: 'Best Pick' },
+      { name: 'Microsoft Photos', emoji: '', tagline: 'Built-in Windows photo viewer', description: 'Already installed on Windows — view, edit, and organize photos easily.', whySeniors: 'No setup needed — double-click any photo to open it.', price: 'Free', rating: '4.2' },
     ],
     mac: [
-      { name: 'Apple Photos', emoji: '🌸', tagline: 'Built-in Mac photo manager', description: "Already installed on your Mac — organizes photos by year, month, and day automatically.", whySeniors: 'Nothing to install. Syncs with your iPhone automatically via iCloud.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'Apple Photos', emoji: '', tagline: 'Built-in Mac photo manager', description: "Already installed on your Mac — organizes photos by year, month, and day automatically.", whySeniors: 'Nothing to install. Syncs with your iPhone automatically via iCloud.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
     ],
   },
   'shopping': {
     iphone: [
-      { name: 'Amazon', emoji: '📦', tagline: 'Huge selection, fast delivery', description: "The world's biggest online shop with millions of products.", whySeniors: 'Easy returns, fast delivery, and customer reviews help you choose safely.', price: 'Free app', rating: '4.7★', iosUrl: 'https://apps.apple.com/app/amazon/id297606951', badge: 'Best Pick' },
-      { name: 'eBay', emoji: '🛒', tagline: 'New and secondhand items', description: 'Buy new or used items — great for finding bargains.', whySeniors: 'Good buyer protection. Useful for finding discontinued products.', price: 'Free app', rating: '4.5★', iosUrl: 'https://apps.apple.com/app/ebay/id282614216' },
+      { name: 'Amazon', emoji: '', tagline: 'Huge selection, fast delivery', description: "The world's biggest online shop with millions of products.", whySeniors: 'Easy returns, fast delivery, and customer reviews help you choose safely.', price: 'Free app', rating: '4.7', iosUrl: 'https://apps.apple.com/app/amazon/id297606951', badge: 'Best Pick' },
+      { name: 'eBay', emoji: '', tagline: 'New and secondhand items', description: 'Buy new or used items — great for finding bargains.', whySeniors: 'Good buyer protection. Useful for finding discontinued products.', price: 'Free app', rating: '4.5', iosUrl: 'https://apps.apple.com/app/ebay/id282614216' },
     ],
     android: [
-      { name: 'Amazon', emoji: '📦', tagline: 'Huge selection, fast delivery', description: "The world's biggest online shop with millions of products.", whySeniors: 'Easy returns, fast delivery, and customer reviews help you choose safely.', price: 'Free app', rating: '4.7★', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping', badge: 'Best Pick' },
+      { name: 'Amazon', emoji: '', tagline: 'Huge selection, fast delivery', description: "The world's biggest online shop with millions of products.", whySeniors: 'Easy returns, fast delivery, and customer reviews help you choose safely.', price: 'Free app', rating: '4.7', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping', badge: 'Best Pick' },
     ],
     windows: [
-      { name: 'amazon.co.uk / .com', emoji: '📦', tagline: 'Shop in your browser', description: 'Visit amazon.co.uk or amazon.com in any browser — no app needed.', whySeniors: 'Large screen makes shopping easier. Easy to compare products side by side.', price: 'Free', rating: '4.7★', badge: 'Best Pick' },
+      { name: 'amazon.co.uk / .com', emoji: '', tagline: 'Shop in your browser', description: 'Visit amazon.co.uk or amazon.com in any browser — no app needed.', whySeniors: 'Large screen makes shopping easier. Easy to compare products side by side.', price: 'Free', rating: '4.7', badge: 'Best Pick' },
     ],
     mac: [
-      { name: 'amazon.co.uk / .com', emoji: '📦', tagline: 'Shop in your browser', description: 'Visit amazon.co.uk or amazon.com in your browser — no app needed.', whySeniors: 'Large screen makes shopping easier. Easy to compare products side by side.', price: 'Free', rating: '4.7★', badge: 'Best Pick' },
+      { name: 'amazon.co.uk / .com', emoji: '', tagline: 'Shop in your browser', description: 'Visit amazon.co.uk or amazon.com in your browser — no app needed.', whySeniors: 'Large screen makes shopping easier. Easy to compare products side by side.', price: 'Free', rating: '4.7', badge: 'Best Pick' },
     ],
   },
   'reading': {
     iphone: [
-      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Adjust font size to your comfort.', whySeniors: "Large font options, no glare, and you can read in the dark. Buy once, read on any device.", price: 'Free app; books from $0', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/amazon-kindle/id302584613', badge: 'Best Pick' },
-      { name: 'Libby', emoji: '📖', tagline: 'Free library books on your phone', description: 'Borrow e-books and audiobooks for free with your library card.', whySeniors: 'Completely free. Large selection. No late fees — books return automatically.', price: 'Free', rating: '4.8★', iosUrl: 'https://apps.apple.com/app/libby-by-overdrive/id1076402606' },
+      { name: 'Kindle', emoji: '', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Adjust font size to your comfort.', whySeniors: "Large font options, no glare, and you can read in the dark. Buy once, read on any device.", price: 'Free app; books from $0', rating: '4.8', iosUrl: 'https://apps.apple.com/app/amazon-kindle/id302584613', badge: 'Best Pick' },
+      { name: 'Libby', emoji: '', tagline: 'Free library books on your phone', description: 'Borrow e-books and audiobooks for free with your library card.', whySeniors: 'Completely free. Large selection. No late fees — books return automatically.', price: 'Free', rating: '4.8', iosUrl: 'https://apps.apple.com/app/libby-by-overdrive/id1076402606' },
     ],
     android: [
-      { name: 'Kindle', emoji: '📚', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Large font options.', whySeniors: 'Adjustable text size and background color for comfortable reading.', price: 'Free app; books from $0', rating: '4.7★', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.kindle', badge: 'Best Pick' },
-      { name: 'Libby', emoji: '📖', tagline: 'Free library books on your phone', description: 'Borrow e-books free with your library card.', whySeniors: 'Completely free. No late fees.', price: 'Free', rating: '4.8★', androidUrl: 'https://play.google.com/store/apps/details?id=com.overdrive.mobile.android.libby' },
+      { name: 'Kindle', emoji: '', tagline: "Amazon's e-book reader", description: 'Read millions of books — many are free. Large font options.', whySeniors: 'Adjustable text size and background color for comfortable reading.', price: 'Free app; books from $0', rating: '4.7', androidUrl: 'https://play.google.com/store/apps/details?id=com.amazon.kindle', badge: 'Best Pick' },
+      { name: 'Libby', emoji: '', tagline: 'Free library books on your phone', description: 'Borrow e-books free with your library card.', whySeniors: 'Completely free. No late fees.', price: 'Free', rating: '4.8', androidUrl: 'https://play.google.com/store/apps/details?id=com.overdrive.mobile.android.libby' },
     ],
     windows: [
-      { name: 'Kindle (browser)', emoji: '📚', tagline: "Read on your PC", description: 'Read any Kindle book at read.amazon.co.uk — no download needed.', whySeniors: 'Large screen is easier on the eyes. Adjustable font size.', price: 'Free', rating: '4.7★', badge: 'Best Pick' },
+      { name: 'Kindle (browser)', emoji: '', tagline: "Read on your PC", description: 'Read any Kindle book at read.amazon.co.uk — no download needed.', whySeniors: 'Large screen is easier on the eyes. Adjustable font size.', price: 'Free', rating: '4.7', badge: 'Best Pick' },
     ],
     mac: [
-      { name: 'Apple Books', emoji: '📗', tagline: 'Built-in Mac reading app', description: 'Already installed. Buy or get free books from the Apple Books store.', whySeniors: 'Nothing to install. Large font options. Syncs with iPhone automatically.', price: 'Free app', rating: '4.6★', badge: 'Best Pick' },
-      { name: 'Kindle (browser)', emoji: '📚', tagline: "Read on your Mac", description: 'Read any Kindle book at read.amazon.co.uk — no download needed.', whySeniors: 'Huge selection. One account works on all devices.', price: 'Free', rating: '4.7★' },
+      { name: 'Apple Books', emoji: '', tagline: 'Built-in Mac reading app', description: 'Already installed. Buy or get free books from the Apple Books store.', whySeniors: 'Nothing to install. Large font options. Syncs with iPhone automatically.', price: 'Free app', rating: '4.6', badge: 'Best Pick' },
+      { name: 'Kindle (browser)', emoji: '', tagline: "Read on your Mac", description: 'Read any Kindle book at read.amazon.co.uk — no download needed.', whySeniors: 'Huge selection. One account works on all devices.', price: 'Free', rating: '4.7' },
     ],
   },
   'health': {
     iphone: [
-      { name: 'Apple Health', emoji: '🍎', tagline: 'Built-in health tracking', description: "Already on your iPhone — tracks steps, heart rate (with Apple Watch), sleep, and more.", whySeniors: 'No setup needed. Can share data with your doctor. Emergency health card visible on lock screen.', price: 'Free', rating: '4.6★', badge: 'Best Pick' },
-      { name: 'Medisafe', emoji: '💊', tagline: 'Medication reminder app', description: 'Never forget a dose — set up reminders for every medication.', whySeniors: 'Very clear, simple design. Family members can also get notified if you miss a dose.', price: 'Free', rating: '4.7★', iosUrl: 'https://apps.apple.com/app/medisafe-medication-management/id573916946' },
+      { name: 'Apple Health', emoji: '', tagline: 'Built-in health tracking', description: "Already on your iPhone — tracks steps, heart rate (with Apple Watch), sleep, and more.", whySeniors: 'No setup needed. Can share data with your doctor. Emergency health card visible on lock screen.', price: 'Free', rating: '4.6', badge: 'Best Pick' },
+      { name: 'Medisafe', emoji: '', tagline: 'Medication reminder app', description: 'Never forget a dose — set up reminders for every medication.', whySeniors: 'Very clear, simple design. Family members can also get notified if you miss a dose.', price: 'Free', rating: '4.7', iosUrl: 'https://apps.apple.com/app/medisafe-medication-management/id573916946' },
     ],
     android: [
-      { name: 'Google Fit', emoji: '🏃', tagline: 'Free health tracker from Google', description: 'Tracks your steps, activity, and heart rate. Connects to most fitness devices.', whySeniors: 'Simple weekly summary shows how active you were. Works without a smartwatch.', price: 'Free', rating: '4.3★', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.fitness', badge: 'Best Pick' },
-      { name: 'Medisafe', emoji: '💊', tagline: 'Medication reminder app', description: 'Never forget a dose — set up reminders for every medication.', whySeniors: 'Very clear, simple design. Family can be notified if you miss a dose.', price: 'Free', rating: '4.7★', androidUrl: 'https://play.google.com/store/apps/details?id=com.medisafe.android.client' },
+      { name: 'Google Fit', emoji: '', tagline: 'Free health tracker from Google', description: 'Tracks your steps, activity, and heart rate. Connects to most fitness devices.', whySeniors: 'Simple weekly summary shows how active you were. Works without a smartwatch.', price: 'Free', rating: '4.3', androidUrl: 'https://play.google.com/store/apps/details?id=com.google.android.apps.fitness', badge: 'Best Pick' },
+      { name: 'Medisafe', emoji: '', tagline: 'Medication reminder app', description: 'Never forget a dose — set up reminders for every medication.', whySeniors: 'Very clear, simple design. Family can be notified if you miss a dose.', price: 'Free', rating: '4.7', androidUrl: 'https://play.google.com/store/apps/details?id=com.medisafe.android.client' },
     ],
     windows: [
-      { name: 'NHS App (browser)', emoji: '🏥', tagline: 'Access NHS services online', description: 'Book GP appointments, order prescriptions, and view your health record at nhs.uk.', whySeniors: 'Large screen is easiest for filling in forms and reading health information.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'NHS App (browser)', emoji: '', tagline: 'Access NHS services online', description: 'Book GP appointments, order prescriptions, and view your health record at nhs.uk.', whySeniors: 'Large screen is easiest for filling in forms and reading health information.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
     ],
     mac: [
-      { name: 'NHS App (browser)', emoji: '🏥', tagline: 'Access NHS services online', description: 'Book GP appointments, order prescriptions, and view your health record at nhs.uk.', whySeniors: 'Large screen is easiest for filling in forms and reading health information.', price: 'Free', rating: '4.5★', badge: 'Best Pick' },
+      { name: 'NHS App (browser)', emoji: '', tagline: 'Access NHS services online', description: 'Book GP appointments, order prescriptions, and view your health record at nhs.uk.', whySeniors: 'Large screen is easiest for filling in forms and reading health information.', price: 'Free', rating: '4.5', badge: 'Best Pick' },
     ],
   },
 };
 
 const usageOptions: { id: Usage; label: string; emoji: string; desc: string }[] = [
-  { id: 'video-calls', label: 'Video calls', emoji: '📹', desc: 'FaceTime, Zoom, WhatsApp video' },
-  { id: 'banking', label: 'Banking', emoji: '🏦', desc: 'Checking balance, paying bills' },
-  { id: 'photos', label: 'Photos', emoji: '📸', desc: 'Backing up and sharing photos' },
-  { id: 'shopping', label: 'Shopping', emoji: '🛒', desc: 'Buying things online safely' },
-  { id: 'reading', label: 'Reading', emoji: '📚', desc: 'E-books and audiobooks' },
-  { id: 'health', label: 'Health & medication', emoji: '💊', desc: 'Reminders, NHS access, tracking' },
+  { id: 'video-calls', label: 'Video calls', emoji: '', desc: 'FaceTime, Zoom, WhatsApp video' },
+  { id: 'banking', label: 'Banking', emoji: '', desc: 'Checking balance, paying bills' },
+  { id: 'photos', label: 'Photos', emoji: '', desc: 'Backing up and sharing photos' },
+  { id: 'shopping', label: 'Shopping', emoji: '', desc: 'Buying things online safely' },
+  { id: 'reading', label: 'Reading', emoji: '', desc: 'E-books and audiobooks' },
+  { id: 'health', label: 'Health & medication', emoji: '', desc: 'Reminders, NHS access, tracking' },
 ];
 
 const deviceOptions: { id: DeviceType; label: string; emoji: string }[] = [
-  { id: 'iphone', label: 'iPhone / iPad', emoji: '🍎' },
-  { id: 'android', label: 'Android phone', emoji: '🤖' },
-  { id: 'windows', label: 'Windows PC / Laptop', emoji: '🪟' },
-  { id: 'mac', label: 'Mac / MacBook', emoji: '💻' },
+  { id: 'iphone', label: 'iPhone / iPad', emoji: '' },
+  { id: 'android', label: 'Android phone', emoji: '' },
+  { id: 'windows', label: 'Windows PC / Laptop', emoji: '' },
+  { id: 'mac', label: 'Mac / MacBook', emoji: '' },
 ];
 
 const slide = {
@@ -250,7 +250,7 @@ export default function AppRecommender() {
                   onClick={() => { setAnswers(p => ({ ...p, budget: 'paid-ok' })); setStep(3); }}
                   className="flex items-center gap-4 p-4 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5"
                 >
-                  <span className="text-3xl">💳</span>
+                  <span className="text-3xl"></span>
                   <div>
                     <div className="font-medium">I'll consider paid apps</div>
                     <div className="text-sm text-muted-foreground">Show me the best option, free or paid</div>
@@ -324,7 +324,7 @@ export default function AppRecommender() {
               </div>
 
               <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 mb-6">
-                <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-1">🔒 Safety tip</p>
+                <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-1"> Safety tip</p>
                 <p className="text-sm text-amber-700/90 dark:text-amber-300/90">
                   Always download apps from the official App Store or Google Play — never from a random website link. Official stores check every app for safety.
                 </p>
