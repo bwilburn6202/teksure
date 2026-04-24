@@ -105,12 +105,26 @@ interface GuideChunk {
   similarity: number;
 }
 
+interface KnowledgeChunk {
+  id: string;
+  document_id: string;
+  title: string;
+  source_url: string;
+  chunk_index: number;
+  chunk_heading: string | null;
+  content: string;
+  metadata: Record<string, unknown>;
+  similarity: number;
+}
+
 // Shape we persist into tekbrain_messages.chunks_used — trimmed so the JSONB
 // stays small and the UI can render "Sources" cleanly.
 interface CitedChunk {
   id: string;
-  guide_id: string;
+  source_type: 'guide' | 'private_doc';
+  guide_id?: string;
   guide_title: string;
+  source_url?: string;
   heading: string | null;
   similarity: number;
 }
@@ -191,19 +205,15 @@ Deno.serve(async (req) => {
 
     // ── 4. Retrieve top-N relevant chunks ────────────────────────────────
     const chunks = await matchChunks(supabase, embedding, MATCH_COUNT);
+    const privateChunks = await matchPrivateChunks(supabase, embedding, MATCH_COUNT);
+    const mergedContext = mergeContext(chunks, privateChunks, MATCH_COUNT);
 
     // Lightweight citation payload saved alongside the assistant message.
-    const citedChunks: CitedChunk[] = chunks.map((c) => ({
-      id: c.id,
-      guide_id: c.guide_id,
-      guide_title: c.guide_title,
-      heading: c.heading,
-      similarity: Number(c.similarity.toFixed(4)),
-    }));
+    const citedChunks: CitedChunk[] = mergedContext.map((c) => c.citation);
 
     // ── 5. Build the messages array for the chat completion ──────────────
-    const contextBlock = buildContextBlock(chunks);
-    const systemPrompt = `${SYSTEM_PROMPT_BASE}\n\nCONTEXT (retrieved TekSure guide chunks):\n${contextBlock}`;
+    const contextBlock = buildContextBlock(mergedContext);
+    const systemPrompt = `${SYSTEM_PROMPT_BASE}\n\nCONTEXT (retrieved TekSure guide and private-document chunks):\n${contextBlock}`;
 
     // A tiny slice of prior turns keeps the conversation coherent without
     // blowing up token usage. We cap at 6 most-recent user/assistant turns.
@@ -400,17 +410,71 @@ async function matchChunks(
  * system prompt. Each chunk is numbered and labeled with its guide title so
  * the model can cite accurately.
  */
-function buildContextBlock(chunks: GuideChunk[]): string {
+function buildContextBlock(
+  chunks: Array<{ label: string; heading: string | null; content: string }>,
+): string {
   if (chunks.length === 0) {
-    return '(No matching TekSure guides were found for this question.)';
+    return '(No matching TekSure guides or private knowledge documents were found for this question.)';
   }
 
   return chunks
     .map((c, i) => {
       const heading = c.heading ? ` — ${c.heading}` : '';
-      return `[#${i + 1}] Guide: "${c.guide_title}"${heading}\n${c.content.trim()}`;
+      return `[#${i + 1}] ${c.label}${heading}\n${c.content.trim()}`;
     })
     .join('\n\n---\n\n');
+}
+
+async function matchPrivateChunks(
+  supabase: SupabaseClient,
+  queryEmbedding: number[],
+  matchCount: number,
+): Promise<KnowledgeChunk[]> {
+  const { data, error } = await supabase.rpc('match_knowledge_document_chunks', {
+    query_embedding: queryEmbedding,
+    match_count: matchCount,
+  });
+
+  if (error) {
+    console.error('match_knowledge_document_chunks error:', error);
+    return [];
+  }
+  return (data ?? []) as KnowledgeChunk[];
+}
+
+function mergeContext(guides: GuideChunk[], docs: KnowledgeChunk[], limit: number) {
+  const all = [
+    ...guides.map((g) => ({
+      score: g.similarity,
+      label: `Guide: "${g.guide_title}"`,
+      heading: g.heading,
+      content: g.content,
+      citation: {
+        id: g.id,
+        source_type: 'guide' as const,
+        guide_id: g.guide_id,
+        guide_title: g.guide_title,
+        heading: g.heading,
+        similarity: Number(g.similarity.toFixed(4)),
+      },
+    })),
+    ...docs.map((d) => ({
+      score: d.similarity,
+      label: `Private Doc: "${d.title}"`,
+      heading: d.chunk_heading,
+      content: d.content,
+      citation: {
+        id: d.id,
+        source_type: 'private_doc' as const,
+        guide_title: d.title,
+        source_url: d.source_url,
+        heading: d.chunk_heading,
+        similarity: Number(d.similarity.toFixed(4)),
+      },
+    })),
+  ];
+
+  return all.sort((a, b) => b.score - a.score).slice(0, limit);
 }
 
 /**

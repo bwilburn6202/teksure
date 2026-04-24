@@ -61,8 +61,10 @@ import {
 // ── Types matching the edge function contract ───────────────────────────────
 interface SourceChunk {
   id: string;
-  guide_id: string;
+  source_type?: 'guide' | 'private_doc';
+  guide_id?: string;
   guide_title: string;
+  source_url?: string;
   heading: string | null;
   similarity: number;
 }
@@ -1439,12 +1441,15 @@ function VoiceSettings({
 }
 
 function SourcesList({ sources }: { sources: SourceChunk[] }) {
-  // Collapse duplicate guide_ids so we show each guide once even if two
-  // chunks from the same guide were retrieved.
+  // Collapse duplicate source targets so we show each source once even if two
+  // chunks from that same source were retrieved.
   const seen = new Set<string>();
   const unique = sources.filter((s) => {
-    if (seen.has(s.guide_id)) return false;
-    seen.add(s.guide_id);
+    const key = s.source_type === 'private_doc'
+      ? `private:${s.source_url ?? s.guide_title}`
+      : `guide:${s.guide_id ?? s.guide_title}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
     return true;
   });
 
@@ -1459,12 +1464,29 @@ function SourcesList({ sources }: { sources: SourceChunk[] }) {
       <ul className="space-y-1.5">
         {unique.map((s) => (
           <li key={s.id} className="text-base md:text-lg text-slate-700 dark:text-slate-200">
-            <a
-              href={`/guides/${s.guide_id}`}
-              className="underline hover:no-underline hover:text-amber-700 dark:hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
-            >
-              {s.guide_title}
-            </a>
+            {s.source_type === 'private_doc' ? (
+              s.source_url ? (
+                <a
+                  href={s.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:no-underline hover:text-amber-700 dark:hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
+                >
+                  {s.guide_title}
+                </a>
+              ) : (
+                <span className="font-medium">{s.guide_title}</span>
+              )
+            ) : s.guide_id ? (
+              <a
+                href={`/guides/${s.guide_id}`}
+                className="underline hover:no-underline hover:text-amber-700 dark:hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
+              >
+                {s.guide_title}
+              </a>
+            ) : (
+              <span className="font-medium">{s.guide_title}</span>
+            )}
             {s.heading ? (
               <span className="text-slate-500 dark:text-slate-400"> &mdash; {s.heading}</span>
             ) : null}
