@@ -23,6 +23,7 @@ import { Footer } from '@/components/layout/Footer';
 import { guides, categoryLabels } from '@/data/guides';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { supabase } from '@/integrations/supabase/client';
+import { useTestimonials, type Testimonial } from '@/hooks/useTestimonials';
 
 /**
  * Slugs for the homepage Featured Guides row, in display order.
@@ -45,24 +46,33 @@ const FEATURED_GUIDE_SLUGS = [
  * See DESIGN.md + teksure-next-gen-mockup.html for the design direction.
  */
 
-const testimonials = [
+/**
+ * Used while Supabase is loading and as a graceful fallback if the
+ * `testimonials` table is empty / unreachable. These match the seed rows in
+ * `supabase/migrations/20260425180000_create_testimonials.sql` so day-one
+ * visitors see the same content whether or not the migration has run yet.
+ */
+const TESTIMONIAL_FALLBACK: Testimonial[] = [
   {
     quote:
       "TekSure helped me finally understand how to back up my photos. The instructions were so clear. I didn't feel stupid for the first time!",
     name: 'Margaret T.',
     detail: '67, Florida',
+    rating: 5,
   },
   {
     quote:
       'My son used to spend every Sunday helping me with my phone. Now I just go to TekSure and figure it out myself. He’s very proud.',
     name: 'Harold W.',
     detail: '72, Ohio',
+    rating: 5,
   },
   {
     quote:
       "I was almost scammed out of $2,000. TekSure's scam guide taught me exactly what to look for. I caught it in time.",
     name: 'Dorothy K.',
     detail: '69, Texas',
+    rating: 5,
   },
 ];
 
@@ -173,6 +183,8 @@ const Index = () => {
         .filter((g): g is NonNullable<typeof g> => Boolean(g)),
     [],
   );
+
+  const { testimonials } = useTestimonials(TESTIMONIAL_FALLBACK);
 
   return (
     <div className="teksure-home">
@@ -723,9 +735,11 @@ const Index = () => {
               Real notes from real people who found their footing with TekSure.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
-              {testimonials.map((t) => (
+              {testimonials.map((t) => {
+                const rating = Math.max(1, Math.min(5, t.rating ?? 5));
+                return (
                 <figure
-                  key={t.name}
+                  key={`${t.name}-${t.detail}`}
                   className="relative rounded-2xl bg-white border border-[#E4DFD4] p-7 shadow-sm flex flex-col"
                 >
                   <Quote
@@ -734,12 +748,16 @@ const Index = () => {
                   />
                   <div
                     className="flex items-center gap-1 mb-4"
-                    aria-label="5 out of 5 stars"
+                    aria-label={`${rating} out of 5 stars`}
                   >
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}
-                        className="h-5 w-5 text-[#E87A2B] fill-[#E87A2B]"
+                        className={
+                          i < rating
+                            ? 'h-5 w-5 text-[#E87A2B] fill-[#E87A2B]'
+                            : 'h-5 w-5 text-[#E4DFD4]'
+                        }
                         aria-hidden="true"
                       />
                     ))}
@@ -754,7 +772,8 @@ const Index = () => {
                     </span>
                   </figcaption>
                 </figure>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
