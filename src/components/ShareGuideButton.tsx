@@ -7,6 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { useToast } from '@/hooks/use-toast';
 
 interface ShareGuideButtonProps {
   title: string;
@@ -15,15 +16,24 @@ interface ShareGuideButtonProps {
 
 export function ShareGuideButton({ title, url }: ShareGuideButtonProps) {
   const [copied, setCopied] = useState(false);
+  const { toast } = useToast();
   const fullUrl = `https://teksure.com${url}`;
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(fullUrl);
 
+  const announceCopied = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+    toast({
+      title: 'Link copied',
+      description: 'Paste it anywhere with Ctrl+V (or ⌘V on a Mac).',
+    });
+  };
+
   const copyLink = async () => {
     try {
       await navigator.clipboard.writeText(fullUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      announceCopied();
     } catch {
       // Fallback for older browsers
       const input = document.createElement('input');
@@ -32,8 +42,7 @@ export function ShareGuideButton({ title, url }: ShareGuideButtonProps) {
       input.select();
       document.execCommand('copy');
       document.body.removeChild(input);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      announceCopied();
     }
   };
 
