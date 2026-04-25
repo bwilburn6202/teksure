@@ -58,13 +58,13 @@ export class ErrorBoundary extends React.Component<Props, State> {
             <div className="flex items-center justify-center gap-3 pt-2">
               <button
                 onClick={() => window.location.reload()}
-                className="inline-flex items-center justify-center min-h-[44px] px-5 rounded-xl text-base font-semibold border-2 border-[#E4DFD4] hover:border-[#2A5FCC] hover:text-[#2A5FCC] transition-colors"
+                className="inline-flex items-center justify-center min-h-[44px] px-5 rounded-xl text-base font-semibold border-2 border-border hover:border-primary hover:text-primary transition-colors"
               >
                 Try again
               </button>
               <button
                 onClick={() => (window.location.href = '/')}
-                className="inline-flex items-center justify-center min-h-[44px] px-5 rounded-xl text-base font-semibold bg-[#2A5FCC] text-white hover:bg-[#234FB0] transition-colors"
+                className="inline-flex items-center justify-center min-h-[44px] px-5 rounded-xl text-base font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
               >
                 Go Home
               </button>
