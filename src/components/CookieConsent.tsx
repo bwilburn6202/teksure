@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Cookie } from 'lucide-react';
 
@@ -24,7 +25,9 @@ export function CookieConsent() {
           See our <a href="/privacy" className="text-primary underline">Privacy Policy</a> for details.
         </p>
         <div className="flex gap-2 shrink-0">
-          <Button size="sm" variant="outline" onClick={accept}>Manage</Button>
+          <Button asChild size="sm" variant="outline">
+            <Link to="/privacy">Learn more</Link>
+          </Button>
           <Button size="sm" onClick={accept}>Accept</Button>
         </div>
       </div>
