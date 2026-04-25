@@ -64,9 +64,15 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <CheckCircle className="h-4 w-4" />
               You're subscribed! Weekly tips incoming             </div>
           ) : (
-            <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full">
+            <form key="form" onSubmit={handleSubmit} className="flex gap-2 w-full" aria-label="Newsletter signup">
+              <label htmlFor="newsletter-email-inline" className="sr-only">
+                Your email address
+              </label>
               <input
+                id="newsletter-email-inline"
                 type="email"
+                required
+                autoComplete="email"
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
@@ -96,9 +102,15 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <CheckCircle className="h-4 w-4" /> Subscribed! Look out for your first tip.
             </div>
           ) : (
-            <form key="f" onSubmit={handleSubmit} className="flex gap-2">
+            <form key="f" onSubmit={handleSubmit} className="flex gap-2" aria-label="Newsletter signup">
+              <label htmlFor="newsletter-email-compact" className="sr-only">
+                Your email address
+              </label>
               <input
+                id="newsletter-email-compact"
                 type="email"
+                required
+                autoComplete="email"
                 value={email}
                 onChange={e => { setEmail(e.target.value); setError(''); }}
                 placeholder="your@email.com"
@@ -141,9 +153,15 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
               <p className="text-sm text-muted-foreground mb-6">
                 One email a week with a practical tip, new guide, or scam alert. Plain English. No jargon. Unsubscribe any time.
               </p>
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2" aria-label="Newsletter signup">
+                <label htmlFor="newsletter-email-default" className="sr-only">
+                  Your email address
+                </label>
                 <input
+                  id="newsletter-email-default"
                   type="email"
+                  required
+                  autoComplete="email"
                   value={email}
                   onChange={e => { setEmail(e.target.value); setError(''); }}
                   placeholder="your@email.com"
