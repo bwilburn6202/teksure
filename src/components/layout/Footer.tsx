@@ -98,7 +98,7 @@ export function Footer() {
         { to: '/book', label: 'Schedule a session' },
         { to: '/faq', label: 'FAQ' },
         { to: '/privacy', label: 'Privacy Policy' },
-        { to: '/privacy', label: 'Terms of Use' },
+        { to: '/terms', label: 'Terms of Use' },
       ],
     },
   ];
@@ -106,7 +106,7 @@ export function Footer() {
   return (
     <footer
       aria-label="Site footer"
-      className="relative border-t border-amber-100 dark:border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-amber-50/60 dark:from-muted/40 dark:via-muted/20 dark:to-muted/40"
+      className="relative border-t border-border bg-background"
     >
       {/* Trust indicator strip */}
       <div className="border-b border-amber-100/80 dark:border-border/60 bg-white/60 dark:bg-background/40 backdrop-blur-sm">
@@ -331,7 +331,7 @@ export function Footer() {
               Privacy
             </Link>
             <Link
-              to="/privacy"
+              to="/terms"
               className="text-foreground/60 hover:text-primary hover:underline underline-offset-4 transition-colors"
             >
               Terms

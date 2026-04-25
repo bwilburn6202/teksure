@@ -108,15 +108,10 @@ export function Navbar() {
   const mobileBrowseLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
-    { to: '/favorites', label: 'My Favorites' },
-    { to: '/this-week', label: 'This Week' },
-    { to: '/scam-alerts', label: 'Current Scam Alerts' },
-    { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
     { to: '/learn', label: 'Learning Paths' },
-    { to: '/quick-fixes', label: 'Quick Fixes' },
-    { to: '/glossary', label: 'Tech Glossary A–Z' },
-    { to: '/videos', label: 'Video Tutorials' },
+    { to: '/scam-alerts', label: 'Scam Alerts' },
     { to: '/tech-help-near-me', label: 'Help Near Me' },
+    { to: '/glossary', label: 'Tech Glossary A–Z' },
     { to: '/about', label: 'About TekSure' },
   ];
 

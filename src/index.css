@@ -409,7 +409,8 @@ html.font-size-xxl {
 
 section.bg-gradient-to-b:not(.text-white),
 section.bg-gradient-to-br:not(.text-white),
-section.bg-gradient-to-r:not(.text-white) {
+section.bg-gradient-to-r:not(.text-white),
+footer.bg-gradient-to-b {
   background-image: none !important;
   background-color: hsl(var(--background)) !important;
 }

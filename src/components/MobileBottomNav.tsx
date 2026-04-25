@@ -16,7 +16,7 @@ const items = [
   { to: '/learn', label: 'Learn', icon: BookOpen },
   { to: '/tools', label: 'Tools', icon: Wrench },
   { to: '/scam-defense', label: 'Safety', icon: Shield },
-  { to: '/brain', label: 'Ask', icon: MessageCircle },
+  { to: '/tekbrain', label: 'Ask', icon: MessageCircle },
   { to: '/get-help', label: 'Help', icon: Phone },
 ] as const;
 
