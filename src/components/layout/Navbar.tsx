@@ -128,6 +128,7 @@ export function Navbar() {
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
     { to: '/learn', label: 'Learning Paths' },
     { to: '/quick-fixes', label: 'Quick Fixes' },
+    { to: '/free-resources', label: 'Free Tech Programs' },
     { to: '/glossary', label: 'Tech Glossary A–Z' },
     { to: '/videos', label: 'Video Tutorials' },
     { to: '/tech-help-near-me', label: 'Help Near Me' },
