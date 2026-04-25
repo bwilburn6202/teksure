@@ -16,7 +16,7 @@ const HowItWorks = () => (
   <div className="min-h-screen bg-background flex flex-col">
     <SEOHead
       title="How TekSure Works — Get Tech Help in 4 Simple Steps"
-      description="Getting tech support is easy with TekSure. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
+      description="Plain-English tech support, no runaround. Sign up free, describe your issue, get matched with a verified technician, and only pay when the job is done."
       path="/how-it-works"
       jsonLd={{
         '@context': 'https://schema.org',
