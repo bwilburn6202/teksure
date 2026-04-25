@@ -9,8 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -275,7 +273,6 @@ export default function FamilyTechPlanner() {
         description="Build a personalized tech support plan for aging parents. Setup checklist, scam protection, remote help, and weekly check-ins — all in one printable card."
         path="/tools/family-tech-planner"
       />
-      <Navbar />
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto px-4">
         {/* Header */}
         <div className="relative">
@@ -751,7 +748,6 @@ export default function FamilyTechPlanner() {
           </section>
         )}
       </main>
-      <Footer />
     </>
   );
 }

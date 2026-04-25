@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ShieldAlert, AlertTriangle, CheckCircle2, Baby } from 'lucide-react';
@@ -383,7 +381,6 @@ export default function ScamAlerts() {
           ],
         }}
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
@@ -459,7 +456,6 @@ export default function ScamAlerts() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

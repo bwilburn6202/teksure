@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -420,7 +418,6 @@ export default function DeviceAgeChecker() {
         description="Find out in 30 seconds whether your iPhone, iPad, Android, Mac, or Windows PC is still getting security updates — and what to do if it isn't."
         path="/tools/device-age-checker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b bg-gradient-to-b from-indigo-50/60 to-transparent dark:from-indigo-950/20">
@@ -778,7 +775,6 @@ export default function DeviceAgeChecker() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

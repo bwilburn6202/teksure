@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -28,7 +26,6 @@ export default function InternetSpeedAdvisor() {
   return (
     <>
       <SEOHead title="Internet Speed Advisor" description="Find out how much internet speed you actually need based on your household and activities." path="/tools/internet-speed-advisor" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><Wifi className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Internet Speed Advisor</h1><p className="text-muted-foreground">Find out how much speed you actually need</p></div>
         <Card className="mb-6"><CardContent className="p-6">
@@ -51,7 +48,6 @@ export default function InternetSpeedAdvisor() {
           <p className="text-sm text-muted-foreground">This is the download speed you should look for when comparing internet plans. Most providers like AT&T, Xfinity, Spectrum, and Verizon offer plans in this range.</p>
         </CardContent></Card>
       </div></main>
-      <Footer />
     </>
   );
 }

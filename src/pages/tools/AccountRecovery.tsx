@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -447,7 +445,6 @@ export default function AccountRecovery() {
         description="Locked out of Google, Apple, Facebook, Amazon, or Microsoft? Our step-by-step wizard walks you through exactly how to get back into your account — in plain English."
         path="/tools/account-recovery"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -677,7 +674,6 @@ export default function AccountRecovery() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

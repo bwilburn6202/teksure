@@ -3,8 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -102,7 +100,6 @@ export default function ForumIndex() {
           url: 'https://teksure.com/forum',
         }}
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-4xl mx-auto pt-4 px-4">
@@ -248,7 +245,6 @@ export default function ForumIndex() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

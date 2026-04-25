@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -60,7 +58,6 @@ export default function TechGiftGuide() {
         description="Curated tech gift recommendations for every budget and recipient — from tablets to smart plugs. Handpicked for real people, not tech enthusiasts."
         path="/gift-guide"
       />
-      <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14 text-center">
           <div className="text-4xl mb-3"></div>
@@ -121,7 +118,6 @@ export default function TechGiftGuide() {
           )}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -23,8 +23,6 @@ import {
   Search,
   FileSearch,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -298,7 +296,6 @@ export default function FakeNewsChecker() {
         description="A senior-friendly walkthrough for checking whether a news story, meme, or social post is real. 10-step checklist, fact-check resources, AI detection tips, and a printable pocket guide."
         path="/tools/fake-news-checker"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
         {/* ── Hero ── */}
         <section
@@ -776,7 +773,6 @@ export default function FakeNewsChecker() {
           </div>
         </section>
       </main>
-      <Footer />
 
       {/* Print styles — keep the cheat sheet to a single letter page */}
       <style>{`

@@ -4,8 +4,6 @@ import { ArrowLeftRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
@@ -118,7 +116,6 @@ export default function DeviceCompare() {
   return (
     <div className="min-h-screen">
       <SEOHead title="Device Comparison Tool | TekSure" description="Compare two devices side by side — price, battery, ease of use, and more." path="/tools/device-compare" />
-      <Navbar />
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
@@ -203,7 +200,6 @@ export default function DeviceCompare() {
         )}
       </section>
 
-      <Footer />
     </div>
   );
 }

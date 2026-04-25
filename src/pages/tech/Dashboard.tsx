@@ -9,8 +9,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
@@ -116,12 +114,10 @@ const TechDashboard = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-24 flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
           <p className="text-muted-foreground text-lg">Loading your dashboard...</p>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -129,7 +125,6 @@ const TechDashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead title="Tech Dashboard | TekSure" description="Manage your jobs, availability, and earnings." path="/tech" />
-      <Navbar />
 
       <div className="container py-8 space-y-8">
         {/* Header */}
@@ -249,7 +244,6 @@ const TechDashboard = () => {
         </section>
       </div>
 
-      <Footer />
     </div>
   );
 };

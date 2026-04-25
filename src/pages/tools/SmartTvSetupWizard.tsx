@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -701,7 +699,6 @@ export default function SmartTvSetupWizard() {
           description="A senior-friendly step-by-step wizard to set up your new streaming device or smart TV. Clear instructions, big buttons, and troubleshooting built in."
           path="/tools/smart-tv-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="border-b border-border bg-muted/30">
             <div className="container py-10 md:py-14 relative">
@@ -770,7 +767,6 @@ export default function SmartTvSetupWizard() {
             <TroubleshootingSection />
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -783,7 +779,6 @@ export default function SmartTvSetupWizard() {
         description={`Step-by-step walkthrough to set up your ${device.name}. Designed for seniors and first-time users.`}
         path="/tools/smart-tv-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-6 md:py-8">
@@ -961,7 +956,6 @@ export default function SmartTvSetupWizard() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

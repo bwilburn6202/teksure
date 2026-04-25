@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -156,7 +154,6 @@ export default function FileOrganizerGuide() {
         description="Pick your situation — retiree, parent, professional, or caregiver — and get a personalized folder structure for your computer or cloud storage."
         path="/tools/file-organizer-guide"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14">
@@ -277,7 +274,6 @@ export default function FileOrganizerGuide() {
           )}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -175,7 +173,6 @@ export default function ScamIqTest() {
     return (
       <>
         <SEOHead title="Scam IQ Test Results" description="Your score on the TekSure Scam IQ Test." path="/tools/scam-iq-test" />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="container py-14">
             <div className="max-w-2xl mx-auto text-center mb-10">
@@ -230,7 +227,6 @@ export default function ScamIqTest() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -242,7 +238,6 @@ export default function ScamIqTest() {
         description="Free 12-question quiz that tests your ability to identify phishing, phone scams, fake texts, and tech support fraud. With explanations."
         path="/tools/scam-iq-test"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14">
@@ -330,7 +325,6 @@ export default function ScamIqTest() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

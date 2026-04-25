@@ -2,8 +2,6 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { XCircle, ArrowLeft, RefreshCcw, RotateCcw, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 export default function PaymentCancel() {
@@ -17,7 +15,6 @@ export default function PaymentCancel() {
         description="Your payment was cancelled. Your booking details are still saved — you can try again."
         path="/payment/cancel"
       />
-      <Navbar />
 
       <main className="min-h-[80vh] flex items-center justify-center px-4 py-16">
         <div className="max-w-md w-full text-center space-y-6">
@@ -77,7 +74,6 @@ export default function PaymentCancel() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

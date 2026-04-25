@@ -23,8 +23,6 @@ import {
   FileSearch,
   Mail,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
@@ -1379,7 +1377,6 @@ export default function CyberToolkit() {
         description="Free browser-based cybersecurity tools: password analyzer, hash generator, IOC extractor, email header analyzer, and more. No downloads needed."
         path="/tools/cyber-toolkit"
       />
-      <Navbar />
 
       {/* Header */}
       <div className="border-b border-gray-800 bg-gray-950/50 backdrop-blur-sm">
@@ -1556,7 +1553,6 @@ export default function CyberToolkit() {
           <p className="text-xs mt-2">For educational and authorized testing purposes only. All tools run locally in your browser — no data is sent anywhere.</p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

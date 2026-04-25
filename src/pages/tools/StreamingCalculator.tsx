@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
 import { Tv, Music, BookOpen, Coffee, AlertTriangle, CheckCircle, Info, TrendingDown } from 'lucide-react';
@@ -283,7 +281,6 @@ export default function StreamingCalculator() {
         description="Check which streaming services you subscribe to and see your exact monthly and annual total. Find out if you could be saving money with cheaper tiers."
         path="/tools/streaming-calculator"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b">
@@ -443,7 +440,6 @@ export default function StreamingCalculator() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

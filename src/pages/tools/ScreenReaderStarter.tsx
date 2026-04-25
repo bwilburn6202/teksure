@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -537,7 +535,6 @@ const ScreenReaderStarter = () => {
         description="A beginner-friendly guide to the screen readers built into your phone, tablet, computer, and TV. Turn them on, turn them off, and start listening instead of reading."
         path="/tools/screen-reader-starter"
       />
-      <Navbar />
 
       <main id="main-content" className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────────────────────────── */}
@@ -1131,7 +1128,6 @@ const ScreenReaderStarter = () => {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 };

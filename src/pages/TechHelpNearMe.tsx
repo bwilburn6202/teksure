@@ -27,8 +27,6 @@ import {
   XCircle,
   PenLine,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -360,7 +358,6 @@ const TechHelpNearMe = () => {
         title="Get In-Person Tech Help Near You | TekSure"
         description="Libraries, senior centers, AARP classes, and more — often free. A friendly directory of real, human tech help in your neighborhood."
       />
-      <Navbar />
 
       <main className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
@@ -617,7 +614,6 @@ const TechHelpNearMe = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

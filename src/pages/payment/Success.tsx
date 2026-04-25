@@ -3,8 +3,6 @@ import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { CheckCircle2, ArrowRight, Calendar, MessageSquare, Mail, Phone, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 export default function PaymentSuccess() {
@@ -30,7 +28,6 @@ export default function PaymentSuccess() {
         description="Your deposit has been received. Your TekSure booking is confirmed."
         path="/payment/success"
       />
-      <Navbar />
 
       <main className="min-h-[80vh] flex items-center justify-center px-4 py-16">
         <div className="max-w-md w-full text-center space-y-6">
@@ -115,7 +112,6 @@ export default function PaymentSuccess() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

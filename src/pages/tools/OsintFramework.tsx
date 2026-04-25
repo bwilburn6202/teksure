@@ -1,6 +1,4 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -303,7 +301,6 @@ export default function OsintFramework() {
         description="Interactive directory of 1,100+ open-source intelligence (OSINT) tools organized by category and difficulty. Search usernames, emails, domains, social networks, and more."
         path="/tools/osint-framework"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -460,7 +457,6 @@ export default function OsintFramework() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

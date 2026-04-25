@@ -23,8 +23,6 @@ import {
   BookOpen,
   ShieldCheck,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -902,7 +900,6 @@ export default function WeeklyNewsletterTemplate() {
         @page { size: letter; margin: 0.5in; }
       `}</style>
 
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-7xl pt-4 px-4 print:hidden">
@@ -1711,7 +1708,6 @@ export default function WeeklyNewsletterTemplate() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

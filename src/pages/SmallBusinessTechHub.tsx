@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -361,7 +359,6 @@ export default function SmallBusinessTechHub() {
         description="The plain-English guide to the technology you need to start or run a small business: email, banking, accounting, marketing, ecommerce, AI, and the scams to avoid."
         path="/small-business-tech-hub"
       />
-      <Navbar />
 
       <main className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
@@ -484,7 +481,6 @@ export default function SmallBusinessTechHub() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

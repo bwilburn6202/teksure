@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -822,7 +820,6 @@ export default function VoiceAssistantSetup() {
           description="Compare Alexa, Google Assistant, and Siri side by side. Take a 3-question quiz to find your best match, then follow a senior-friendly step-by-step setup for your chosen device."
           path="/tools/voice-assistant-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero */}
           <section className="border-b border-border bg-muted/30">
@@ -1052,7 +1049,6 @@ export default function VoiceAssistantSetup() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1065,7 +1061,6 @@ export default function VoiceAssistantSetup() {
         description={`Step-by-step walkthrough to set up your ${device.name}. Designed for seniors and first-time users.`}
         path="/tools/voice-assistant-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-6 md:py-8">
@@ -1251,7 +1246,6 @@ export default function VoiceAssistantSetup() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

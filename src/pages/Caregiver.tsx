@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -41,7 +39,6 @@ export default function Caregiver() {
         description="As a caregiver, you can share guides, book tech support, and monitor progress for the person you support. Built for families helping older relatives with technology."
         path="/caregiver"
       />
-      <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
@@ -118,7 +115,6 @@ export default function Caregiver() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

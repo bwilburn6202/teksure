@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -67,7 +65,6 @@ export default function LlmKnowledgeBase() {
         description="Configure and generate an implementation-ready LLM knowledge base blueprint for TekSure."
         path="/llm-knowledge-base"
       />
-      <Navbar />
 
       <main className="flex-1 container py-10 md:py-14 space-y-8">
         <header className="max-w-3xl">
@@ -180,7 +177,6 @@ export default function LlmKnowledgeBase() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

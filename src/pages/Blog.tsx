@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -387,11 +385,9 @@ export default function Blog() {
             keywords: detailPost.category,
           }}
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <PostDetail post={detailPost} />
         </main>
-        <Footer />
       </>
     );
   }
@@ -407,7 +403,6 @@ export default function Blog() {
         description="Simple, jargon-free articles about technology, security, and staying safe online. Written for everyone."
         path="/blog"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
@@ -461,7 +456,6 @@ export default function Blog() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -110,7 +108,6 @@ const Newsletter = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead title="Newsletter — Admin" description="Compose and send the TekSure newsletter." path="/admin/newsletter" noindex />
-      <Navbar />
       <main id="main-content" tabIndex={-1} className="flex-1 max-w-4xl w-full mx-auto px-4 py-10 outline-none">
         <div className="flex items-center gap-3 mb-8">
           <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -242,7 +239,6 @@ const Newsletter = () => {
           </Card>
         )}
       </main>
-      <Footer />
     </div>
   );
 };

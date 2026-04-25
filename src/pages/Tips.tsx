@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -243,7 +241,6 @@ export default function Tips() {
         description="Simple, practical tech tips updated weekly — from backing up photos to spotting scams."
         path="/tips"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
@@ -306,7 +303,6 @@ export default function Tips() {
           <NewsletterSignup className="mt-20" />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1717,7 +1715,6 @@ export default function KitchenTechHelper() {
           description={`A plain-English guide to setting up and actually using your ${appliance.name} — buttons, functions, first recipe, troubleshooting, cleaning, and safety tips for seniors and first-time users.`}
           path="/tools/kitchen-tech-helper"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="border-b border-border bg-gradient-to-br from-orange-50 via-amber-50 to-rose-100 dark:from-orange-950/40 dark:via-amber-950/30 dark:to-rose-950/40">
             <div className="container py-8 md:py-12">
@@ -1963,7 +1960,6 @@ export default function KitchenTechHelper() {
             </Button>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1976,7 +1972,6 @@ export default function KitchenTechHelper() {
         description="A plain-English setup and daily-use guide for Instant Pot, Air Fryer, Smart Fridge, Sous Vide, Coffee Maker, Induction Cooktop, Microwave, Smart Oven, Stand Mixer, and Bread Maker. Built for seniors and first-time users."
         path="/tools/kitchen-tech-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero — warm coral gradient */}
         <section className="border-b border-border bg-gradient-to-br from-rose-100 via-orange-100 to-amber-100 dark:from-rose-950/50 dark:via-orange-950/40 dark:to-amber-950/40">
@@ -2269,7 +2264,6 @@ export default function KitchenTechHelper() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

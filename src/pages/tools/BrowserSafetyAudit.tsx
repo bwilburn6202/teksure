@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -412,7 +410,6 @@ export default function BrowserSafetyAudit() {
         description="Step-by-step guided browser safety audit for Chrome, Safari, Firefox, and Edge. Stops scams before they start by fixing the settings that actually matter."
         path="/tools/browser-safety-audit"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────── */}
         <section className="border-b border-border bg-gradient-to-br from-primary/5 via-background to-background">
@@ -755,7 +752,6 @@ export default function BrowserSafetyAudit() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

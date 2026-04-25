@@ -3,8 +3,6 @@ import { ShieldCheck, ChevronRight, ExternalLink, RotateCcw, Search, Clock, Wren
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ───────────────────────────────── */
@@ -314,7 +312,6 @@ export default function WarrantyChecker() {
         description="Find out if your device is still under warranty and where to get it repaired."
         path="/tools/warranty-checker"
       />
-      <Navbar />
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
 
         <div className="flex items-center gap-3 mb-2">
@@ -496,7 +493,6 @@ export default function WarrantyChecker() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

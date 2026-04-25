@@ -25,8 +25,6 @@ import {
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -362,7 +360,6 @@ export default function BillNegotiator() {
       `}</style>
 
       <div className="no-print">
-        <Navbar />
       </div>
 
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto text-lg">
@@ -662,7 +659,6 @@ export default function BillNegotiator() {
       </main>
 
       <div className="no-print">
-        <Footer />
       </div>
     </>
   );

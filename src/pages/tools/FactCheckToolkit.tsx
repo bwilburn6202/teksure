@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -69,7 +67,6 @@ export default function FactCheckToolkit() {
   return (
     <>
       <SEOHead title="Fact-Check Toolkit" description="Verify claims, check images for manipulation, spot fake news, and test your fact-checking skills." path="/tools/fact-check-toolkit" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-4xl py-12 px-4">
         <div className="text-center mb-10"><ShieldCheck className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Fact-Check Toolkit</h1><p className="text-muted-foreground max-w-lg mx-auto">Verify claims, check images for manipulation, and learn how to spot misinformation.</p></div>
 
@@ -144,7 +141,6 @@ export default function FactCheckToolkit() {
           </TabsContent>
         </Tabs>
       </div></main>
-      <Footer />
     </>
   );
 }

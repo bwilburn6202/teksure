@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -268,7 +266,6 @@ export default function Stories() {
         path="/stories"
       />
 
-      <Navbar />
 
       <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* ── Hero ──────────────────────────────────────────────────────── */}
@@ -356,7 +353,6 @@ export default function Stories() {
         </section>
       </main>
 
-      <Footer />
 
       {/* ── Full-story modal ────────────────────────────────────────────── */}
       <Dialog open={!!openStory} onOpenChange={(o) => !o && setOpenStory(null)}>

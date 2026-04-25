@@ -1,6 +1,4 @@
 import { useState, useRef } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
@@ -100,7 +98,6 @@ export default function ReceiptScannerDemo() {
         title="Receipt Scanner Demo | TekSure"
         description="See how receipt scanning works. Upload a photo of a receipt or try a sample — the tool reads the items, prices, and totals automatically."
       />
-      <Navbar />
       <main className="flex-1">
         <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Receipt Scanner Demo' }]} />
 
@@ -265,7 +262,6 @@ export default function ReceiptScannerDemo() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

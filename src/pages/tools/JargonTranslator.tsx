@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -73,7 +71,6 @@ export default function JargonTranslator() {
         description="Type any confusing tech word and get a plain-English explanation anyone can understand."
         path="/tools/jargon-translator"
       />
-      <Navbar />
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2">
           <Languages className="h-8 w-8 text-primary" />
@@ -117,7 +114,6 @@ export default function JargonTranslator() {
           ))}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

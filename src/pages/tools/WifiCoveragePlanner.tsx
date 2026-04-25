@@ -8,8 +8,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ─────────────────────────────────────────── */
@@ -217,7 +215,6 @@ export default function WifiCoveragePlanner() {
         description="Map your home layout, identify WiFi dead zones, and get free recommendations for router placement, mesh systems, and DIY fixes before you spend money."
         path="/tools/wifi-coverage-planner"
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/30 dark:to-background py-16">
@@ -478,7 +475,6 @@ export default function WifiCoveragePlanner() {
         </section>
       )}
 
-      <Footer />
     </div>
   );
 }

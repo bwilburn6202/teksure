@@ -10,8 +10,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ───────────────────────────────────────── */
@@ -290,7 +288,6 @@ export default function BackupWizard() {
         description="Step-by-step personalized guide to backing up your photos, documents, and contacts. Works for iPhone, Android, Windows, and Mac. Free and easy."
         path="/tools/backup-wizard"
       />
-      <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
 
         <div className="flex items-start gap-3 mb-8">
@@ -559,7 +556,6 @@ export default function BackupWizard() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

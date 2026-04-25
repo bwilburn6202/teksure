@@ -9,8 +9,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ───────────────────────────────── */
@@ -184,7 +182,6 @@ export default function Setup() {
     return (
       <>
         <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
-        <Navbar />
         <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
           <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
             <CheckCircle2 className="h-16 w-16 text-green-500" />
@@ -200,7 +197,6 @@ export default function Setup() {
             </div>
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -212,7 +208,6 @@ export default function Setup() {
         description="Answer 3 quick questions and get a personalized learning path matched to your device and goals."
         path="/setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background container py-12 max-w-2xl mx-auto">
 
         {/* Header */}
@@ -391,7 +386,6 @@ export default function Setup() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, AlertTriangle, CheckCircle2, ExternalLink, Phone, UserX, Lock, ChevronRight } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -265,7 +263,6 @@ export default function ScamDefenseCenter() {
           ],
         }}
       />
-      <Navbar />
 
       {/* ── 1. Hero ────────────────────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-red-600 via-red-500 to-orange-500 text-white py-16 px-4">
@@ -680,7 +677,6 @@ export default function ScamDefenseCenter() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

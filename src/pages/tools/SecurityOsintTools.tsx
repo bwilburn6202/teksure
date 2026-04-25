@@ -1,7 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -344,7 +342,6 @@ export default function SecurityOsintTools() {
           url: 'https://teksure.com/tools/security-osint',
         }}
       />
-      <Navbar />
 
       <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-gray-950 dark:to-gray-900">
         {/* Hero */}
@@ -601,7 +598,6 @@ export default function SecurityOsintTools() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

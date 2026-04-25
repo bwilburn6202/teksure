@@ -19,8 +19,6 @@ import {
   Users,
 } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { guides } from '@/data/guides';
 
 /**
@@ -650,7 +648,6 @@ const About = () => {
         }
       `}</style>
 
-      <Navbar />
 
       <main>
         {/* ============ HERO ============ */}
@@ -1005,7 +1002,6 @@ const About = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

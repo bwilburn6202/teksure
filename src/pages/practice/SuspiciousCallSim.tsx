@@ -20,8 +20,6 @@ import {
   Ban,
   Info,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -1165,7 +1163,6 @@ export default function SuspiciousCallSim() {
         title="Suspicious Call Simulator | TekSure"
         description="Practice handling suspicious phone calls — grandkid scams, IRS threats, fake Microsoft support, romance scams, and more. Safe, interactive branching practice for seniors and non-technical callers."
       />
-      <Navbar />
       <main id="main-content" className="container mx-auto px-4 py-8 max-w-5xl">
         <PageBreadcrumb items={[{ label: 'Practice' }, { label: 'Suspicious Call Simulator' }]} />
 
@@ -1662,7 +1659,6 @@ export default function SuspiciousCallSim() {
         </DialogContent>
       </Dialog>
 
-      <Footer />
     </div>
   );
 }

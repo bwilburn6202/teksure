@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -75,7 +73,6 @@ export default function ScreenTimeAnalyzer() {
         description="Find out how your screen time compares to the national average. Get personalized tips for healthier phone habits."
         path="/tools/screen-time-analyzer"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Screen Time Analyzer' }]} />
@@ -242,7 +239,6 @@ export default function ScreenTimeAnalyzer() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

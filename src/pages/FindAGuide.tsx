@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -143,7 +141,6 @@ const FindAGuide = () => {
         description="Answer three short questions and we'll point you to the best TekSure guide for what you need."
         path="/find-a-guide"
       />
-      <Navbar />
 
       <main id="main-content" tabIndex={-1} className="flex-1 w-full max-w-3xl mx-auto px-4 py-12 outline-none">
         <div className="text-center mb-10">
@@ -301,7 +298,6 @@ const FindAGuide = () => {
         )}
       </main>
 
-      <Footer />
     </div>
   );
 };

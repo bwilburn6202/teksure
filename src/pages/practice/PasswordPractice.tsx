@@ -10,8 +10,6 @@ import {
   RefreshCw,
   CheckCircle2,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -329,7 +327,6 @@ export default function PasswordPractice() {
         description="An interactive drill for making strong passwords, typing them from memory, and learning password manager basics. Your real passwords never go here."
         path="/practice/password-practice"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb
@@ -1027,7 +1024,6 @@ export default function PasswordPractice() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

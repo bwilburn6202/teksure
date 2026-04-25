@@ -17,8 +17,6 @@ import {
   Check,
   BellRing,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -1184,7 +1182,6 @@ export default function ScamAlertFeed() {
           })),
         }}
       />
-      <Navbar />
 
       {/* ── Hero ────────────────────────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-red-600 via-red-500 to-amber-500 text-white px-4 pt-24 pb-16 sm:pt-28">
@@ -1564,7 +1561,6 @@ export default function ScamAlertFeed() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

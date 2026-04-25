@@ -5,8 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -328,7 +326,6 @@ export default function SafetyCourse() {
         description="A free 5-lesson online safety course for beginners and seniors. Learn to spot scams, create strong passwords, shop safely, and protect your privacy."
         path="/tools/safety-course"
       />
-      <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Safety Course' }]} />
 
@@ -495,7 +492,6 @@ export default function SafetyCourse() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

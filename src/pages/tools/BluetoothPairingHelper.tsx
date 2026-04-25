@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -1846,7 +1844,6 @@ export default function BluetoothPairingHelper() {
         description="Pair hearing aids, earbuds, speakers, keyboards, and more with your iPhone or Android phone. Clear, senior-friendly step-by-step instructions with troubleshooting."
         path="/tools/bluetooth-pairing-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb
@@ -2263,7 +2260,6 @@ export default function BluetoothPairingHelper() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

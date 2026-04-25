@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -811,7 +809,6 @@ export default function RideshareSetup() {
           description="Compare Uber and Lyft, follow step-by-step setup, schedule rides, turn on safety features, and learn no-smartphone options like GoGoGrandparent. Senior-friendly walkthrough in plain English."
           path="/tools/rideshare-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero */}
           <section className="border-b border-border bg-muted/30">
@@ -1293,7 +1290,6 @@ export default function RideshareSetup() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1306,7 +1302,6 @@ export default function RideshareSetup() {
         description={`Step-by-step walkthrough to set up your ${app.name} account, add payment, and take your first ride. Designed for seniors and first-time users.`}
         path="/tools/rideshare-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-6 md:py-8">
@@ -1475,7 +1470,6 @@ export default function RideshareSetup() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

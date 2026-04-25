@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -215,7 +213,6 @@ export default function SafeCall() {
         description="Answer 4 quick questions about a suspicious phone call and find out if it was a scam — with clear steps on what to do next."
         path="/tools/safe-call"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Safe Call Evaluator' }]} />
@@ -410,7 +407,6 @@ export default function SafeCall() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -28,8 +28,6 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -1157,7 +1155,6 @@ export default function PrinterTroubleshooter() {
         description="Printer acting up? Answer a couple of simple questions and get clear, step-by-step fixes — won't print, paper jams, WiFi, offline, blank pages, error lights, ink and more. Senior-friendly and 100% plain language."
         path="/tools/printer-troubleshooter"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         {/* Header */}
         <div className="relative">
@@ -1423,7 +1420,6 @@ export default function PrinterTroubleshooter() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

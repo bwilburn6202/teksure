@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -638,7 +636,6 @@ export default function GovernmentBenefitsPortal() {
         description="Senior-friendly guide to every major .gov benefits portal — Social Security, Medicare, VA, IRS, SNAP, LIHEAP, and more. Skip the scam 'helper' sites that charge for free services."
         path="/tools/government-benefits-portal"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="relative border-b border-border overflow-hidden">
@@ -1217,7 +1214,6 @@ export default function GovernmentBenefitsPortal() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

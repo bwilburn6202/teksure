@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -578,7 +576,6 @@ export default function ErrorDecoder() {
         description="Paste a confusing tech error message and get a plain-English explanation of what it means, what to do about it, and whether it's a sign of a scam."
         path="/tools/error-decoder"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b">
@@ -787,7 +784,6 @@ export default function ErrorDecoder() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

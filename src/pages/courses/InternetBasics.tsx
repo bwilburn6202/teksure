@@ -15,8 +15,6 @@ import {
   Sparkles,
   Users,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -262,7 +260,6 @@ const InternetBasics = () => {
           },
         ]}
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border/40">
@@ -836,7 +833,6 @@ const InternetBasics = () => {
         </button>
       )}
 
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -126,7 +124,6 @@ export default function EmptyNestTech() {
         title="Empty Nest Tech Hub | TekSure"
         description="The kids have moved out — now what? Practical tech guidance for empty nesters: staying connected, upgrading the home, cutting the cable bill, and finding new ways to use the time."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/30">
@@ -289,7 +286,6 @@ export default function EmptyNestTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

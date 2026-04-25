@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -406,7 +404,6 @@ export default function AiLiteracyHub() {
         description="AI without the hype. Plain-English explanations of what AI is, free tools worth trying, good prompts, safety, scams to avoid, and the best free resources to learn more."
         path="/ai-literacy-hub"
       />
-      <Navbar />
 
       <main className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
@@ -541,7 +538,6 @@ export default function AiLiteracyHub() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

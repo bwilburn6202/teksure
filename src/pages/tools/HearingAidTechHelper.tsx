@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -590,7 +588,6 @@ const HearingAidTechHelper = () => {
         description="Pair, stream, adjust, and fix the most common tech issues with your hearing aids. Senior-friendly setup and troubleshooting for Phonak, Oticon, ReSound, Starkey, Widex, Signia, and OTC brands."
         path="/tools/hearing-aid-tech-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border bg-gradient-to-br from-amber-50 via-yellow-50 to-white dark:from-amber-950/20 dark:via-yellow-950/10 dark:to-background">
@@ -1351,7 +1348,6 @@ const HearingAidTechHelper = () => {
           </Card>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

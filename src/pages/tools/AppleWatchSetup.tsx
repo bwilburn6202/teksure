@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -500,7 +498,6 @@ export default function AppleWatchSetup() {
           description="A step-by-step Apple Watch setup wizard for seniors and first-time owners. 12 short steps, plus Fall Detection, Emergency SOS, Medical ID, health features, and Family Setup."
           path="/tools/apple-watch-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {Hero}
 
@@ -722,7 +719,6 @@ export default function AppleWatchSetup() {
           <MainFAQ />
           <RelatedLinks />
         </main>
-        <Footer />
       </>
     );
   }
@@ -738,7 +734,6 @@ export default function AppleWatchSetup() {
         description="A gentle, step-by-step Apple Watch pairing walkthrough. 12 short steps in plain English. Designed for seniors and first-time owners."
         path="/tools/apple-watch-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Progress header */}
         <section className="border-b border-border bg-gradient-to-br from-slate-100 via-zinc-50 to-slate-200 dark:from-slate-900/60 dark:via-zinc-900/40 dark:to-slate-800/40">
@@ -979,7 +974,6 @@ export default function AppleWatchSetup() {
           </section>
         )}
       </main>
-      <Footer />
     </>
   );
 }

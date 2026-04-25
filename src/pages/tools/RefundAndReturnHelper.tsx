@@ -40,8 +40,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { useToast } from '@/hooks/use-toast';
@@ -869,7 +867,6 @@ export default function RefundAndReturnHelper() {
         description="A step-by-step walkthrough for getting refunds from online purchases, subscriptions, billing errors, scam charges, travel, medical bills, and in-person returns. Written for real people, not lawyers."
         path="/tools/refund-and-return-helper"
       />
-      <Navbar />
       <main id="main-content" className="container py-10 sm:py-12 min-h-[80vh] max-w-3xl mx-auto">
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
@@ -1380,7 +1377,6 @@ export default function RefundAndReturnHelper() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 }

@@ -25,8 +25,6 @@ import {
   CreditCard,
   Smartphone,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -710,7 +708,6 @@ export default function EmergencyInfoCard() {
         @page { size: letter; margin: 0.5in; }
       `}</style>
 
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-6xl pt-4 px-4 print:hidden">
@@ -1455,7 +1452,6 @@ export default function EmergencyInfoCard() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

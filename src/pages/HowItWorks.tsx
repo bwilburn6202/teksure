@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { UserPlus, Search, Wrench, CreditCard, ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -31,7 +29,6 @@ const HowItWorks = () => (
         })),
       }}
     />
-    <Navbar />
     <main className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
@@ -88,7 +85,6 @@ const HowItWorks = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -300,7 +298,6 @@ export default function AccessibilityHub() {
         description="Plain-English guides to built-in accessibility features for vision, hearing, motor, and cognitive needs. Technology should adapt to you, not the other way around."
         path="/accessibility"
       />
-      <Navbar />
 
       <main id="main-content" className="flex-1">
         {/* ── Hero ───────────────────────────────────────────────────────── */}
@@ -704,7 +701,6 @@ export default function AccessibilityHub() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

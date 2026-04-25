@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -148,7 +146,6 @@ export default function KeyboardShortcuts() {
         path="/tools/keyboard-shortcuts"
       />
       <div className="print:hidden">
-        <Navbar />
       </div>
 
       <main className="container py-16 min-h-[60vh] print:py-4 print:min-h-0">
@@ -205,7 +202,6 @@ export default function KeyboardShortcuts() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

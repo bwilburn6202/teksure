@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1435,7 +1433,6 @@ export default function RemoteControlDecoder() {
         description="A senior-friendly visual guide to every button on common TV, cable, streaming, and universal remotes. Find what each button does in plain English."
         path="/tools/remote-control-decoder"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section className="border-b border-border bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200 dark:from-slate-900 dark:via-slate-950 dark:to-slate-800">
@@ -2035,7 +2032,6 @@ export default function RemoteControlDecoder() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

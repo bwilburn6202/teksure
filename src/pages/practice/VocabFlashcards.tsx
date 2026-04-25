@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -452,7 +450,6 @@ export default function VocabFlashcards() {
         description="Learn tech words that show up in emails, apps, and scam warnings. Spaced-repetition flashcards for 100+ everyday tech terms, built for beginners and seniors."
         path="/practice/vocab-flashcards"
       />
-      <Navbar />
 
       {/* Print styles — used by the "Print deck" button */}
       <style>{`
@@ -1024,7 +1021,6 @@ export default function VocabFlashcards() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

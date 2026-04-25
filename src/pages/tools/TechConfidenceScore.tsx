@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -85,7 +83,6 @@ export default function TechConfidenceScore() {
         description="Take a 10-question quiz to find out your true tech confidence level. Get a personalized learning plan matched to your result."
         path="/tools/confidence-score"
       />
-      <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">
           <div className="text-4xl mb-3"></div>
@@ -153,7 +150,6 @@ export default function TechConfidenceScore() {
           )}
         </>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,4 @@
 import { useMemo, useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -372,7 +370,6 @@ export default function MedicarePlanChooser() {
         description="A plain-English Medicare guide. Answer 7 questions and learn which Medicare plan type fits your situation — Original Medicare, Medicare Advantage, or Dual Eligibility. Free, educational, no sales pitch."
         path="/tools/medicare-plan-chooser"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Header ── */}
         <section className="border-b">
@@ -814,7 +811,6 @@ export default function MedicarePlanChooser() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

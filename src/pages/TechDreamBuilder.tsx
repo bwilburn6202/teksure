@@ -13,8 +13,6 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, type Guide } from '@/data/guides';
 import { isGuideCompleted, getCompletedGuides, getProgressCount } from '@/lib/progress';
@@ -377,7 +375,6 @@ const TechDreamBuilder = () => {
         description="Tell us what you want to do with technology — we'll build a personalized learning path just for you. No jargon, just clear steps."
         path="/dream-builder"
       />
-      <Navbar />
       
       <main className="container py-12 md:py-20">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -473,7 +470,6 @@ const TechDreamBuilder = () => {
         </Tabs>
       </main>
 
-      <Footer />
     </div>
   );
 };

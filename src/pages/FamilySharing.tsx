@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -50,7 +48,6 @@ export default function FamilySharing() {
   if (!user) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
-        <Navbar />
         <main className="flex-1 container max-w-lg py-20 text-center">
           <Shield className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
           <h2 className="text-xl font-bold mb-2 text-primary">Sign in to manage family sharing</h2>
@@ -60,7 +57,6 @@ export default function FamilySharing() {
             <Button asChild variant="outline" className="rounded-xl"><Link to="/signup">Create account</Link></Button>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
@@ -72,7 +68,6 @@ export default function FamilySharing() {
         description="Share your TekSure access with up to 4 family members. Each person gets their own account, progress tracking, and separate login."
         path="/family-sharing"
       />
-      <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
@@ -170,7 +165,6 @@ export default function FamilySharing() {
           </Card>
         )}
       </main>
-      <Footer />
     </div>
   );
 }

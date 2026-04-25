@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -741,7 +739,6 @@ export default function IpadForSeniors() {
         description="Just got an iPad? Follow a warm, step-by-step setup guide designed for seniors. 14 plain-language steps, accessibility tips, and the everyday activities you came for."
         path="/tools/ipad-for-seniors"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {Hero}
 
@@ -1422,7 +1419,6 @@ export default function IpadForSeniors() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

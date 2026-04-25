@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -289,7 +287,6 @@ export default function EobDecoder() {
         description="Your insurance EOB, decoded in plain English. We walk through every field, CPT code, and dollar amount — and tell you whether it is actually a bill."
         path="/tools/eob-decoder"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'EOB Decoder' }]} />
@@ -798,7 +795,6 @@ export default function EobDecoder() {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

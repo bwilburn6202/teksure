@@ -26,8 +26,6 @@ import {
   ArrowRight,
   Calendar,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -798,7 +796,6 @@ export default function DigitalEstateBinder() {
       `}</style>
 
       <div className="print:hidden">
-        <Navbar />
       </div>
 
       <main className="min-h-screen bg-background">
@@ -2286,7 +2283,6 @@ export default function DigitalEstateBinder() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

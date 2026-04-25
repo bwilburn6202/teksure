@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1069,7 +1067,6 @@ export default function LowVisionTechHub() {
           description={`Every built-in setting on ${selectedDevice.name} to make the screen easier to see. Plain English, step-by-step, designed for seniors.`}
           path="/tools/low-vision-tech-hub"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="border-b border-border bg-gradient-to-br from-violet-50 to-amber-50 dark:from-violet-950/30 dark:to-amber-950/20">
             <div className="container py-8 md:py-10">
@@ -1146,7 +1143,6 @@ export default function LowVisionTechHub() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1159,7 +1155,6 @@ export default function LowVisionTechHub() {
         description="Every setting, every trick, every tool to make your phone, tablet, computer, TV, and e-reader easier to see. Plain English guides for macular degeneration, glaucoma, cataracts, and more."
         path="/tools/low-vision-tech-hub"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ──────────────────────────────────────────── */}
         <section className="border-b border-border bg-gradient-to-br from-violet-50 via-violet-100 to-amber-50 dark:from-violet-950/40 dark:via-violet-900/30 dark:to-amber-950/20">
@@ -1643,7 +1638,6 @@ export default function LowVisionTechHub() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

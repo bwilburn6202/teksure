@@ -6,8 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -65,7 +63,6 @@ export default function GiftSession() {
         description="Give a loved one the gift of tech confidence. Purchase a tech support session for a parent, grandparent, or friend. Real human help, plain English."
         path="/gift-session"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container max-w-4xl pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Gift a Session' }]} />
@@ -272,7 +269,6 @@ export default function GiftSession() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

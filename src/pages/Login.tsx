@@ -9,8 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import type { UserRole } from '@/types/database';
 
@@ -105,7 +103,6 @@ const Login = () => {
     return (
       <>
         <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
             <div className="w-full">
@@ -173,7 +170,6 @@ const Login = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -182,7 +178,6 @@ const Login = () => {
     return (
       <>
         <SEOHead title="Reset Password — TekSure" description="Reset your TekSure account password" path="/login" />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
             <div className="w-full">
@@ -241,7 +236,6 @@ const Login = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -254,7 +248,6 @@ const Login = () => {
           description="Check your email to verify your TekSure account"
           path="/login"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
             <div
@@ -279,7 +272,6 @@ const Login = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -291,7 +283,6 @@ const Login = () => {
         description="Sign in to your TekSure account or create a free account"
         path="/login"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
           <div
@@ -471,7 +462,6 @@ const Login = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

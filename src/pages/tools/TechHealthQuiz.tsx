@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -212,7 +210,6 @@ export default function TechHealthQuiz() {
         description="Take our 8-question quiz to discover how healthy your digital habits are — covering security, backup, privacy, battery, and scam awareness."
         path="/tools/tech-health-quiz"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="bg-primary text-primary-foreground py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-2xl">
@@ -338,7 +335,6 @@ export default function TechHealthQuiz() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

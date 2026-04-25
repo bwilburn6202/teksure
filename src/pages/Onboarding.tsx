@@ -3,8 +3,6 @@ import { useNavigate, Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, BookOpen, Monitor, Laptop, Smartphone, HelpCircle, Sprout, Leaf, TreeDeciduous } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { useAuth } from '@/contexts/AuthContext';
 import { guides } from '@/data/guides';
@@ -146,7 +144,6 @@ export default function Onboarding() {
           description="Based on your answers, here are guides picked just for you."
           path="/onboarding"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container py-16 md:py-24 max-w-2xl mx-auto">
             <div
@@ -229,7 +226,6 @@ export default function Onboarding() {
             </div>
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -241,7 +237,6 @@ export default function Onboarding() {
         description="Tell us a little about yourself so we can recommend the right guides and tools for you."
         path="/onboarding"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container py-16 max-w-2xl mx-auto">
           {/* Header */}
@@ -425,7 +420,6 @@ export default function Onboarding() {
           </>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

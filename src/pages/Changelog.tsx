@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -93,7 +91,6 @@ export default function Changelog() {
         description="See what's new at TekSure — new guides, tools, features, and improvements shipped every week."
         path="/changelog"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Changelog' }]} />
@@ -135,7 +132,6 @@ export default function Changelog() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

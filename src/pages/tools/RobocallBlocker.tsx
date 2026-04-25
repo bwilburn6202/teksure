@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -143,7 +141,6 @@ export default function RobocallBlocker() {
         description="Get your exact carrier's instructions to stop robocalls. Free built-in tools from Verizon, AT&T, T-Mobile plus iPhone and Android settings and the best third-party apps."
         path="/tools/robocall-blocker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
@@ -416,7 +413,6 @@ export default function RobocallBlocker() {
           </section>
         )}
       </main>
-      <Footer />
     </>
   );
 }

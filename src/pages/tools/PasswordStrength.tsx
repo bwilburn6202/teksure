@@ -4,8 +4,6 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -46,7 +44,6 @@ const PasswordStrength = () => {
         description="Test how strong your password is with our free tool. Get instant feedback and tips to create stronger passwords."
         path="/tools/password-strength"
       />
-      <Navbar />
 
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Password Strength' }]} />
@@ -126,7 +123,6 @@ const PasswordStrength = () => {
         </Card>
       </section>
 
-      <Footer />
     </div>
   );
 };

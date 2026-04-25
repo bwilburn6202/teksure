@@ -1,7 +1,5 @@
 import { useState, useMemo, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -754,7 +752,6 @@ export default function TechJargonTranslator() {
         description="Paste any tech email, message, or error code and get it in plain English. Browse a 200+ term dictionary, decode common error messages, and stay safe with built-in scam detection."
         path="/tools/tech-jargon-translator"
       />
-      <Navbar />
       <main id="main-content" className="min-h-[70vh]">
         {/* ── Hero ────────────────────────────────────────────────────────── */}
         <section className="relative overflow-hidden bg-gradient-to-br from-violet-100 via-purple-50 to-fuchsia-50 dark:from-violet-950/40 dark:via-purple-950/30 dark:to-fuchsia-950/30 border-b">
@@ -1480,7 +1477,6 @@ export default function TechJargonTranslator() {
         </DialogContent>
       </Dialog>
 
-      <Footer />
     </>
   );
 }

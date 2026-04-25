@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -236,7 +234,6 @@ export default function EmailDeclutter() {
         description="Clean up your email inbox step by step. Works with Gmail, Outlook, and Apple Mail — no sign-in required."
       path="/tools/email-declutter"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -487,7 +484,6 @@ export default function EmailDeclutter() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

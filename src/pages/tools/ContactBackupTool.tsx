@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -167,7 +165,6 @@ export default function ContactBackupTool() {
         description="Step-by-step guide to back up and export your phone contacts on iPhone and Android. Includes tips for merging duplicates and recovering lost contacts."
         path="/tools/contact-backup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Contact Backup Tool' }]} />
@@ -359,7 +356,6 @@ export default function ContactBackupTool() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

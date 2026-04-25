@@ -1,6 +1,4 @@
 import { useState, type ReactNode } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -841,7 +839,6 @@ export default function Checklists() {
 
       {/* Nav hidden when printing */}
       <div className="print:hidden">
-        <Navbar />
       </div>
 
       <main className="min-h-screen bg-background">
@@ -935,7 +932,6 @@ export default function Checklists() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

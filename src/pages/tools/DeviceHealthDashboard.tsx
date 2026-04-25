@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -147,7 +145,6 @@ export default function DeviceHealthDashboard() {
         description="Check your device's health score across storage, security, battery, network, performance, and privacy. Get simple tips to improve each area."
         path="/tools/device-health"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="bg-primary text-primary-foreground py-10 md:py-14">
@@ -289,7 +286,6 @@ export default function DeviceHealthDashboard() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

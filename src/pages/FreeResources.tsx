@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { ExternalLink, Wifi, Monitor, BookOpen, Heart, Shield, Library, Info } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -294,7 +292,6 @@ const FreeResources = () => {
         description="Find free and discounted internet, devices, and tech training for seniors, low-income Americans, veterans, and rural residents. Real programs, real eligibility, no cost to apply."
         path="/free-resources"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-gray-50 dark:bg-gray-950">
 
@@ -424,7 +421,6 @@ const FreeResources = () => {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 };

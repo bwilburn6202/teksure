@@ -4,8 +4,6 @@ import { Monitor, Laptop, Smartphone, Tablet, Printer, Wifi, Tv, ArrowRight, Boo
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { guides, categoryLabels } from '@/data/guides';
@@ -114,7 +112,6 @@ const DeviceHub = () => {
         description="Select your device — Windows PC, Mac, iPhone, Android, tablet, printer, or router — and find the right tech guides instantly."
         path="/device-hub"
       />
-      <Navbar />
 
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Device Hub' }]} />
@@ -239,7 +236,6 @@ const DeviceHub = () => {
         </section>
       )}
 
-      <Footer />
     </div>
   );
 };

@@ -6,8 +6,6 @@ import {
   Tv, Music, Cloud, Newspaper, ShoppingCart, Dumbbell, Shield,
   Package, MoreHorizontal, Plane, Flag,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -359,7 +357,6 @@ export default function SubscriptionCostAggregator() {
         description="Add up every subscription you pay for. See your monthly and annual total, flag the ones you never use, and get direct cancellation links."
         path="/calculators/subscriptions"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero — warm amber gradient */}
         <section className="relative bg-gradient-to-br from-amber-100 via-amber-50 to-orange-100 dark:from-amber-950/40 dark:via-amber-900/20 dark:to-orange-950/30 border-b">
@@ -1011,7 +1008,6 @@ export default function SubscriptionCostAggregator() {
         }
       `}</style>
 
-      <Footer />
     </>
   );
 }

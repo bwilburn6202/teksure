@@ -30,8 +30,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -636,7 +634,6 @@ export default function FreeLearningHub() {
         description="Senior-friendly directory of 100% free online learning — languages, history, computer skills, cooking, wellness, art, finance, and more. Real classes from real universities at no cost."
         path="/tools/free-learning-hub"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
@@ -1061,7 +1058,6 @@ export default function FreeLearningHub() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 }

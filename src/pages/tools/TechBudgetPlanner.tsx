@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -50,7 +48,6 @@ export default function TechBudgetPlanner() {
         description="Track your monthly technology expenses across internet, phone, streaming, and more. Compare to averages and get personalized money-saving tips."
         path="/tools/tech-budget-planner"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Tech Budget Planner' }]} />
@@ -207,7 +204,6 @@ export default function TechBudgetPlanner() {
           </Button>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -7,8 +7,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
@@ -510,7 +508,6 @@ const GuideDetail = () => {
         type="article"
         jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd, faqJsonLd].filter(Boolean) as Record<string, unknown>[]}
       />
-      <Navbar />
 
       {/* Full-width progress bar across the top */}
       {guide.steps && guide.steps.length > 1 && (
@@ -964,7 +961,6 @@ const GuideDetail = () => {
         </div>
       </article>
 
-      <Footer />
     </div>
   );
 };

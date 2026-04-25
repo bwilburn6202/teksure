@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -240,7 +238,6 @@ export default function CreditReportReader() {
         description="A plain-English walkthrough of every section of your credit report, with red flags to watch for, where to get yours free, and how to dispute errors."
         path="/tools/credit-report-reader"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Credit Report Reader' }]} />
@@ -397,7 +394,6 @@ export default function CreditReportReader() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

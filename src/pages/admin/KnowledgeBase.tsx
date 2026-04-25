@@ -2,8 +2,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, Copy, Database, Download, FileText, Pencil, RefreshCw, Sparkles, Trash2, TriangleAlert } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -462,7 +460,6 @@ export default function KnowledgeBase() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SEOHead title="Knowledge Base — TekSure Admin" description="Manage the TekSure knowledge base: documents, concepts, and AI outputs." path="/admin/knowledge-base" noindex />
-      <Navbar />
 
       <main id="main-content" className="flex-1 container mx-auto px-4 py-8 max-w-7xl space-y-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
@@ -1043,7 +1040,6 @@ export default function KnowledgeBase() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

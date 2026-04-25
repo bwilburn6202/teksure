@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Brain, Trash2, RefreshCw, Shield, Eye, Zap, BookOpen, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { useAgentMemory } from '@/hooks/useAgentMemory';
 import type { MemoryEntry, MemoryTier } from '@/services/agentMemory';
 
@@ -160,7 +158,6 @@ export default function MemoryDashboard() {
         title="TekBrain Memory — TekSure"
         description="View and manage what TekBrain remembers about you. Your privacy is in your hands."
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <div className="border-b border-border bg-gradient-to-b from-muted/50 to-background">
@@ -294,7 +291,6 @@ export default function MemoryDashboard() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

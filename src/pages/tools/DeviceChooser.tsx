@@ -7,8 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Questions ───────────────────────────────────── */
@@ -242,7 +240,6 @@ export default function DeviceChooser() {
         description="Answer 5 quick questions to find out which device is right for you — tablet, laptop, or desktop. Free, unbiased recommendations for beginners."
         path="/tools/device-chooser"
       />
-      <Navbar />
       <main className="container max-w-xl py-12 min-h-[70vh]">
 
         {/* Header */}
@@ -412,7 +409,6 @@ export default function DeviceChooser() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

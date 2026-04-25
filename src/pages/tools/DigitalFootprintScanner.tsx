@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -289,7 +287,6 @@ export default function DigitalFootprintScanner() {
         description="Free guided checklist that walks you through checking your online exposure. Find out what personal information is publicly available and learn how to remove it."
         path="/tools/digital-footprint-scanner"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Header ──────────────────────────── */}
         <section className="border-b border-border bg-muted/30">
@@ -541,7 +538,6 @@ export default function DigitalFootprintScanner() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

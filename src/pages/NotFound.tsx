@@ -1,7 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState, type FormEvent } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import {
   Compass,
@@ -91,7 +89,6 @@ const NotFound = () => {
         type="error"
         noindex
       />
-      <Navbar />
       <main
         id="main-content"
         className="relative overflow-hidden px-4 py-12 md:py-20"
@@ -281,7 +278,6 @@ const NotFound = () => {
 
         </div>
       </main>
-      <Footer />
     </>
   );
 };

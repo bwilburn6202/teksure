@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Check, Shield, Clock, Star, Monitor, Home, Award, ArrowRight } from 'lucide-react';
@@ -118,7 +116,6 @@ const Pricing = () => (
       path="/pricing"
       jsonLd={pricingJsonLd}
     />
-    <Navbar />
     <main className="flex-1">
       {/* Header */}
       <section className="border-b border-border">
@@ -226,7 +223,6 @@ const Pricing = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

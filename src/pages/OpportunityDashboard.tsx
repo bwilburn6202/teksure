@@ -1,7 +1,5 @@
 import { useState, useMemo } from 'react';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
@@ -139,7 +137,6 @@ export default function OpportunityDashboard() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEOHead title="Business Opportunity Dashboard — TekSure" description="Compare 16 business models across revenue, startup cost, margins, and break-even timelines." path="/opportunity-dashboard" />
-      <Navbar />
       <main className="container py-8 space-y-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
@@ -320,7 +317,6 @@ export default function OpportunityDashboard() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </div>
   );
 }

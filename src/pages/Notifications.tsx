@@ -13,9 +13,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
 import { SafeLink } from '@/components/SafeLink';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── weekly tips bank ─────────────────────── */
@@ -144,7 +142,6 @@ export default function Notifications() {
         path="/notifications"
         canonical="/notifications"
       />
-      <Navbar />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 py-12 w-full min-h-screen bg-background">
         {/* Header */}
@@ -279,7 +276,6 @@ export default function Notifications() {
         </p>
       </main>
 
-      <Footer />
     </div>
   );
 }

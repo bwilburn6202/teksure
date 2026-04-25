@@ -1,7 +1,5 @@
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -123,7 +121,6 @@ function TechnicianDirectory() {
         description="Browse TekSure's vetted, friendly technicians. Each one is ID-verified and rated by real customers."
       path="/technicians"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">
@@ -182,7 +179,6 @@ function TechnicianDirectory() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
@@ -202,7 +198,6 @@ export default function TechnicianProfile() {
         description={`${tech.title} in ${tech.location}. ${tech.rating} stars from ${tech.reviewCount} reviews.`}
       path={`/technicians/${tech.id}`}
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto px-4 py-8">
@@ -334,7 +329,6 @@ export default function TechnicianProfile() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -501,7 +499,6 @@ export default function TechBreakReminder() {
         description="Built-in breaks, better posture, healthier habits. Gentle 20-20-20 eye reminders, stretch breaks, posture checks, hydration, and sunset wind-down."
         path="/tools/tech-break-reminder"
       />
-      <Navbar />
       <main className="min-h-screen bg-[#f7f5ee] dark:bg-background text-[#1f3a2e] dark:text-foreground">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Tech Break Reminder' }]} />
@@ -811,7 +808,6 @@ export default function TechBreakReminder() {
           </div>
         </div>
       </main>
-      <Footer />
 
       {/* Escalation modal */}
       <Dialog open={modal !== null} onOpenChange={(open) => !open && dismissModal()}>

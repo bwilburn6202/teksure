@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -60,7 +58,6 @@ export default function TechEmergencyKit() {
   return (
     <>
       <SEOHead title="Tech Emergency Kit — Digital Preparedness Checklist | TekSure" description="Make sure your digital life is prepared for emergencies. Passwords, backups, Medical ID, emergency contacts, and more." path="/tools/tech-emergency-kit" />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl pt-4 px-4"><PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Tech Emergency Kit' }]} /></div>
         <div className="container max-w-3xl py-12 px-4">
@@ -131,7 +128,6 @@ export default function TechEmergencyKit() {
           <Button variant="outline" onClick={() => window.print()} className="w-full gap-2 no-print"><Printer className="h-4 w-4" /> Print This Checklist</Button>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

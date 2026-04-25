@@ -19,8 +19,6 @@ import {
   Link2,
 } from 'lucide-react';
 
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
@@ -798,7 +796,6 @@ export default function PhishingInbox() {
   return (
     <>
       {SEO}
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white">
@@ -1316,7 +1313,6 @@ export default function PhishingInbox() {
           </div>
         </section>
       </main>
-      <Footer />
 
       {/* Review dialog */}
       <Dialog open={!!reviewEmail} onOpenChange={(o) => !o && setReviewEmail(null)}>

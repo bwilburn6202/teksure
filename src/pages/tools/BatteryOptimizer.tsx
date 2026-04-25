@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -108,7 +106,6 @@ export default function BatteryOptimizer() {
         description="Pick your device and get a tailored checklist of real, manufacturer-recommended battery saving steps. No fluff, no fake apps."
         path="/tools/battery-optimizer"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Battery Optimizer' }]} />
@@ -245,7 +242,6 @@ export default function BatteryOptimizer() {
           </a>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -33,7 +31,6 @@ export default function EmailSecurityCheck() {
   return (
     <>
       <SEOHead title="Email Security Check" description="Check if your email account is properly secured. Answer 8 questions and get personalized recommendations." path="/tools/email-security-check" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><Mail className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Email Security Check</h1><p className="text-muted-foreground">Answer 8 questions to find out if your email is properly protected</p></div>
         {done ? (
@@ -56,7 +53,6 @@ export default function EmailSecurityCheck() {
           </CardContent></Card>
         )}
       </div></main>
-      <Footer />
     </>
   );
 }

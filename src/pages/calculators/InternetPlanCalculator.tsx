@@ -24,8 +24,6 @@ import {
   Satellite,
   Signal,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
@@ -577,7 +575,6 @@ export default function InternetPlanCalculator() {
         description="Match your real household usage to the cheapest internet tier that meets it. Stop overpaying for speed you don't use."
         path="/calculators/internet-plan"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ── */}
         <section className="relative overflow-hidden border-b bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 dark:from-sky-950/40 dark:via-blue-950/30 dark:to-indigo-950/40">
@@ -1655,7 +1652,6 @@ export default function InternetPlanCalculator() {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

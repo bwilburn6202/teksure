@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -476,7 +474,6 @@ export default function IsThisAScam() {
         description="Paste a suspicious email, text, phone call, or link and our free checker will scan for common scam red flags and tell you how risky it looks."
         path="/tools/is-this-a-scam"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b">
@@ -685,7 +682,6 @@ export default function IsThisAScam() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

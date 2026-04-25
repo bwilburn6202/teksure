@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -833,7 +831,6 @@ export default function MyFirstSmartphone() {
           description="Just got your first smartphone, or switching from a flip phone? Follow a warm, step-by-step walkthrough for iPhone or Android. 15 short steps, plain English, no jargon."
           path="/tools/my-first-smartphone"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {Hero}
 
@@ -1052,7 +1049,6 @@ export default function MyFirstSmartphone() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1068,7 +1064,6 @@ export default function MyFirstSmartphone() {
         description={`A gentle, step-by-step walkthrough for your first ${phone === 'iphone' ? 'iPhone' : 'Android phone'}. 15 short steps in plain English. Designed for seniors and first-time users.`}
         path="/tools/my-first-smartphone"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Progress header */}
         <section className="border-b border-border bg-gradient-to-br from-orange-50 via-rose-50/60 to-amber-50 dark:from-orange-950/30 dark:via-rose-950/20 dark:to-amber-950/10">
@@ -1341,7 +1336,6 @@ export default function MyFirstSmartphone() {
           </section>
         )}
       </main>
-      <Footer />
     </>
   );
 }

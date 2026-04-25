@@ -1,7 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -1153,7 +1151,6 @@ export default function SettingsFinder() {
         description="Type what you want to change on your iPhone, Android, Mac or Windows — we'll show you exactly where to tap."
         path="/tools/settings-finder"
       />
-      <Navbar />
       <main className="container py-16 min-h-[60vh]">
         {/* Hero */}
         <div className="max-w-3xl">
@@ -1321,7 +1318,6 @@ export default function SettingsFinder() {
           </Button>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

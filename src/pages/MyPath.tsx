@@ -5,8 +5,6 @@ import {
   RotateCcw, ArrowRight, Lock, BookOpen, Flame,
   Sprout, Shield, Lightbulb, Smartphone, Rocket,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -196,7 +194,6 @@ export default function MyPath() {
         description="Follow a personalized step-by-step learning path and build your tech confidence at your own pace."
         path="/my-path"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
 
@@ -445,7 +442,6 @@ export default function MyPath() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

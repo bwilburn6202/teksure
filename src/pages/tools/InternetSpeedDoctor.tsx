@@ -19,8 +19,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ───────────────────────────────── */
@@ -318,7 +316,6 @@ export default function InternetSpeedDoctor() {
         description="Slow internet at home? Answer 5 simple questions and get plain-language fix steps — from router restarts to when to call your provider."
         path="/tools/internet-speed-doctor"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-2">
           <Wifi className="h-8 w-8 text-primary" />
@@ -574,7 +571,6 @@ export default function InternetSpeedDoctor() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

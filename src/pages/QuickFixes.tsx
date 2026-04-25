@@ -5,8 +5,6 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -244,7 +242,6 @@ const QuickFixes = () => {
         path="/quick-fixes"
         jsonLd={faqJsonLd}
       />
-      <Navbar />
 
       <div className="max-w-4xl mx-auto pt-4 px-4">
         <PageBreadcrumb segments={[{ label: 'Quick Fixes' }]} />
@@ -380,7 +377,6 @@ const QuickFixes = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

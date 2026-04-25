@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -34,7 +32,6 @@ export default function DeviceSetupChecklist() {
   return (
     <>
       <SEOHead title="New Computer Setup Checklist" description="Step-by-step checklist for setting up a new Windows PC or Mac the right way." path="/tools/device-setup-checklist" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><Monitor className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">New Computer Setup Checklist</h1><p className="text-muted-foreground">Set up your new computer the right way</p></div>
         {!device ? (
@@ -55,7 +52,6 @@ export default function DeviceSetupChecklist() {
           </div>
         )}
       </div></main>
-      <Footer />
     </>
   );
 }

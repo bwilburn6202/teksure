@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -126,7 +124,6 @@ export default function TwoFactorSetup() {
         description="Set up two-factor authentication (2FA) on your most important accounts — Google, Apple, Facebook, Amazon, and your bank — step by step."
         path="/tools/two-factor-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="bg-primary text-primary-foreground py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-2xl">
@@ -294,7 +291,6 @@ export default function TwoFactorSetup() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -284,7 +282,6 @@ export default function Sources() {
         description="TekSure is committed to accuracy and transparency. See the official sources we use to create and verify our guides, tools, and content."
         path="/sources"
       />
-      <Navbar />
 
       <main id="main-content" className="min-h-screen bg-background pb-16">
 
@@ -377,7 +374,6 @@ export default function Sources() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

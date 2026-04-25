@@ -25,8 +25,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -422,7 +420,6 @@ export default function IsThisReal() {
         description="A verification toolkit for seniors and beginners. Walk through plain-language checks for suspicious news, emails, deals, texts, photos, AI content, and social profiles — before you share, buy, or panic."
         path="/tools/is-this-real"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
@@ -708,7 +705,6 @@ export default function IsThisReal() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -233,7 +231,6 @@ export default function DataBrokerRemoval() {
         description="Your address, phone number, and family are listed on dozens of data broker sites. Use this free step-by-step guide to remove yourself from the 15 biggest ones."
         path="/data-broker-removal"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -465,7 +462,6 @@ export default function DataBrokerRemoval() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

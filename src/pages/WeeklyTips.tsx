@@ -12,8 +12,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { weeklyTips, type WeeklyTip } from '@/data/weekly-tips';
@@ -165,7 +163,6 @@ export default function WeeklyTips() {
         description="Five fresh, practical tech tips every week — scams to avoid, hidden settings worth turning on, quick fixes, and senior-friendly features."
         path="/this-week"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50/60 to-amber-50/40 dark:from-slate-950 dark:via-slate-950 dark:to-slate-950">
         <div className="container max-w-3xl pt-4 px-4">
@@ -422,7 +419,6 @@ export default function WeeklyTips() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

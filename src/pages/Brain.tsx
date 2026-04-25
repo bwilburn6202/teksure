@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -158,7 +156,6 @@ export default function BrainPage() {
         description="Ask TekSure any tech question and instantly find the right guide. Powered by our library of 1,100+ guides. Works offline — no API needed."
         path="/brain"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
@@ -333,7 +330,6 @@ export default function BrainPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

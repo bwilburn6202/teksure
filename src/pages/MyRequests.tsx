@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Clock, CheckCircle, Wrench, AlertCircle, Plus, Phone, Mail, Monitor, MessageSquare, User, Calendar, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
@@ -115,7 +113,6 @@ const MyRequests = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" />
-      <Navbar />
 
       <main className="flex-1 py-10 px-4">
         <div className="max-w-2xl mx-auto">
@@ -282,7 +279,6 @@ const MyRequests = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

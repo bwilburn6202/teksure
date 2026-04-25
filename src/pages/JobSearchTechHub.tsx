@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -401,7 +399,6 @@ export default function JobSearchTechHub() {
         description="A complete modern job search guide — LinkedIn, job boards, resume tools, interview prep, scam warnings, and free resources. Plus tips for after-50, gig work, and industry-specific boards."
         path="/job-search-tech-hub"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -768,7 +765,6 @@ export default function JobSearchTechHub() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

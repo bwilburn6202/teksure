@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -55,7 +53,6 @@ export default function AskTekSure() {
         description="Three simple ways to get tech help. Ask our AI brain, post in the community, or talk to a real person. No jargon. No judgment."
         path="/ask"
       />
-      <Navbar />
 
       <main className="container mx-auto px-4 py-16 md:py-24">
         {/* Hero */}
@@ -233,7 +230,6 @@ export default function AskTekSure() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

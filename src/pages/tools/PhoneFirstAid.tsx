@@ -27,8 +27,6 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -1116,7 +1114,6 @@ export default function PhoneFirstAid() {
         description="Phone acting up? Answer a few simple questions and get clear step-by-step fixes — from won't-turn-on to water damage. Senior-friendly and 100% plain language."
         path="/tools/phone-first-aid"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         {/* Header */}
         <div className="relative">
@@ -1347,7 +1344,6 @@ export default function PhoneFirstAid() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

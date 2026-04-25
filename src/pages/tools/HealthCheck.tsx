@@ -5,8 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
@@ -105,7 +103,6 @@ export default function HealthCheck() {
   return (
     <div className="min-h-screen">
       <SEOHead title="Tech Health Check | TekSure" description="Take a quick 5-question quiz to check the health of your device and get personalized tips." path="/tools/health-check" />
-      <Navbar />
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
@@ -191,7 +188,6 @@ export default function HealthCheck() {
         )}
       </section>
 
-      <Footer />
     </div>
   );
 }

@@ -19,8 +19,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ───────────────────────────────── */
@@ -554,7 +552,6 @@ export default function SeniorDiscountFinder() {
         description="Find every senior discount you qualify for — phone, groceries, restaurants, travel, tax breaks and more. Answer 5 quick questions and get a printable list with estimated savings."
         path="/tools/senior-discount-finder"
       />
-      <Navbar />
       <main className="container py-12 min-h-[80vh] max-w-3xl mx-auto print:py-4 print:max-w-full">
         <div className="flex items-center gap-3 mb-2 print:hidden">
           <Tag className="h-8 w-8 text-primary" />
@@ -788,7 +785,6 @@ export default function SeniorDiscountFinder() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

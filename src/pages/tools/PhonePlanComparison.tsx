@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -875,7 +873,6 @@ export default function PhonePlanComparison() {
         description="A senior-friendly phone plan chooser. Compare real plans across Verizon, AT&T, T-Mobile, Mint, Consumer Cellular, Lively, and more. Deterministic recommendations — no sales pitch."
         path="/tools/phone-plan-comparison"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-sky-50 via-white to-teal-50 dark:from-sky-950/30 dark:via-background dark:to-teal-950/30">
@@ -1614,7 +1611,6 @@ export default function PhonePlanComparison() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

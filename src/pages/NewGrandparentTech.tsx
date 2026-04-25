@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -240,7 +238,6 @@ export default function NewGrandparentTech() {
         title="New Grandparent Tech Guide — Stay Close Even Far Away | TekSure"
         description="The apps, video-call tips, shared photo albums, and long-distance tools that help new grandparents stay close to a new baby and the family — across any distance."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-pink-50 to-background dark:from-pink-950/30">
@@ -566,7 +563,6 @@ export default function NewGrandparentTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

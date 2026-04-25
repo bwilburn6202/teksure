@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -220,7 +218,6 @@ export default function SubscriptionAuditor() {
         description="A free two-step tool to find subscriptions you may have forgotten about, add up what you're really paying, and learn how to cancel each service."
         path="/tools/subscription-auditor"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb
@@ -478,7 +475,6 @@ export default function SubscriptionAuditor() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

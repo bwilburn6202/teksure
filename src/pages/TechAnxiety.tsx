@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -36,7 +34,6 @@ export default function TechAnxiety() {
         description="Practical tips for managing technology anxiety. Learn at your own pace, without judgment — TekSure is here to help you feel confident with technology."
         path="/tech-anxiety"
       />
-      <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
@@ -115,7 +112,6 @@ export default function TechAnxiety() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

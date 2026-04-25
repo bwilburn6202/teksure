@@ -1,7 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
@@ -362,7 +360,6 @@ export default function PlainEnglishTranslator() {
         title="Tech Jargon Translator — Explain It Like I'm 80 | TekSure"
         description="Paste any confusing tech text and get a plain-English translation. Over 160 tech terms explained in simple language anyone can understand."
       />
-      <Navbar />
 
       <main className="flex-1">
         <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Plain English Translator' }]} />
@@ -527,7 +524,6 @@ export default function PlainEnglishTranslator() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

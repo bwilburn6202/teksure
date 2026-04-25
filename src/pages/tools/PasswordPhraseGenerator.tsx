@@ -1,6 +1,4 @@
 import { useState, useCallback } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -114,7 +112,6 @@ export default function PasswordPhraseGenerator() {
         description="Generate strong passphrases you can actually remember. Four random words beat short, complex passwords every time."
         path="/tools/password-phrase-generator"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Password Phrase Generator' }]} />
@@ -266,7 +263,6 @@ export default function PasswordPhraseGenerator() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

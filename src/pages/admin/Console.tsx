@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -903,7 +901,6 @@ function HelpRequestsTab() {
 const AdminConsole = () => (
   <div className="min-h-screen bg-background">
     <SEOHead title="Admin Console — TekSure" description="TekSure admin dashboard for managing bookings, users, and support tickets." path="/admin" noindex />
-    <Navbar />
     <div className="container py-8">
       <div className="border-b border-border pb-6 mb-8">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Admin Console</h1>
@@ -954,7 +951,6 @@ const AdminConsole = () => (
         </TabsContent>
       </Tabs>
     </div>
-    <Footer />
   </div>
 );
 

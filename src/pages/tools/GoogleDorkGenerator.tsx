@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -94,7 +92,6 @@ export default function GoogleDorkGenerator() {
   return (
     <>
       <SEOHead title="Google Dork Generator" description="Build advanced Google search queries to find specific files, pages, and information on any website." path="/tools/google-dork-generator" />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container max-w-4xl py-12 px-4">
           <div className="text-center mb-10">
@@ -199,7 +196,6 @@ export default function GoogleDorkGenerator() {
           </Tabs>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

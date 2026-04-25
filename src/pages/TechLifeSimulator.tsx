@@ -12,8 +12,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 interface Scenario {
@@ -533,7 +531,6 @@ const TechLifeSimulator = () => {
         description="Practice identifying scams, safe browsing, and tech decisions in realistic scenarios. Learn by doing — no risk, just learning."
         path="/simulator"
       />
-      <Navbar />
       
       <main className="container py-12 md:py-20">
         {activeScenario ? (
@@ -618,7 +615,6 @@ const TechLifeSimulator = () => {
         )}
       </main>
 
-      <Footer />
     </div>
   );
 };

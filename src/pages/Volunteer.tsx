@@ -15,8 +15,6 @@ import {
   Users,
 } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 
 /**
  * TekSure — Volunteer page.
@@ -559,7 +557,6 @@ const Volunteer = () => {
         }
       `}</style>
 
-      <Navbar />
 
       <main>
         {/* ============ HERO ============ */}
@@ -873,7 +870,6 @@ const Volunteer = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

@@ -4,8 +4,6 @@ import { useMutation } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
 import { checkRateLimit } from '@/lib/rateLimit';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -74,7 +72,6 @@ export default function NewThread() {
   return (
     <>
       <SEOHead title="Start a Discussion — TekSure Forum" description="Ask a question or share a tip with the TekSure community." path="/forum/new" />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-2xl mx-auto px-4 py-8">
@@ -182,7 +179,6 @@ export default function NewThread() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

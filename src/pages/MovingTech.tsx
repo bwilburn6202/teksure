@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -180,7 +178,6 @@ export default function MovingTech() {
         title="Moving House Tech Checklist — Internet, Mail, Everything | TekSure"
         description="A complete moving tech checklist: 6 weeks out, internet setup, address updates, moving day essentials, and the first week in your new place. Nothing forgotten."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/30">
@@ -480,7 +477,6 @@ export default function MovingTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

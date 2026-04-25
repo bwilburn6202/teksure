@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -43,7 +41,6 @@ export default function ReverseImageSearch() {
   return (
     <>
       <SEOHead title="Reverse Image Search Hub" description="Search by image across 8+ engines. Find where photos come from, verify identities, and detect fakes." path="/tools/reverse-image-search" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-4xl py-12 px-4">
         <div className="text-center mb-10"><ImageIcon className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Reverse Image Search Hub</h1><p className="text-muted-foreground max-w-lg mx-auto">Find where an image comes from, verify if a photo is real, or discover if someone is using a stolen picture.</p></div>
 
@@ -92,7 +89,6 @@ export default function ReverseImageSearch() {
           </TabsContent>
         </Tabs>
       </div></main>
-      <Footer />
     </>
   );
 }

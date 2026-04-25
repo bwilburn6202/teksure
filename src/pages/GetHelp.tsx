@@ -13,8 +13,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Progress } from '@/components/ui/progress';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
@@ -250,7 +248,6 @@ const GetHelp = () => {
     return (
       <div className="min-h-screen bg-background flex flex-col">
         <SEOHead title="Request received — TekSure" description="Your TekSure help request has been received." path="/get-help" />
-        <Navbar />
         <main id="main-content" tabIndex={-1} className="flex-1 flex items-center justify-center px-4 py-20 outline-none">
           <div className="max-w-md w-full text-center space-y-6">
             <div className="flex justify-center">
@@ -272,7 +269,6 @@ const GetHelp = () => {
             </Button>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
@@ -282,7 +278,6 @@ const GetHelp = () => {
     return (
       <div className="min-h-screen bg-background flex flex-col">
         <SEOHead title="Booking confirmed — TekSure" description="Your TekSure booking is confirmed." path="/get-help" />
-        <Navbar />
         <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
             <div className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center">
@@ -315,7 +310,6 @@ const GetHelp = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
@@ -333,7 +327,6 @@ const GetHelp = () => {
         description="Reach out for free tech support or schedule a technician appointment. Real humans, no jargon."
         path="/get-help"
       />
-      <Navbar />
 
       <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col py-12 md:py-16 px-4 outline-none">
         <div className="max-w-2xl w-full mx-auto">
@@ -696,7 +689,6 @@ const GetHelp = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

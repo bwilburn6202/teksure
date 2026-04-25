@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
@@ -73,7 +71,6 @@ export default function TechSetupCostEstimator() {
         title="Tech Setup Cost Estimator | TekSure"
         description="Add up the real cost of setting up your home tech. Pick the devices and services you want and see an honest monthly and one-time cost estimate."
       />
-      <Navbar />
       <main className="flex-1">
         <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Tech Setup Cost Estimator' }]} />
 
@@ -220,7 +217,6 @@ export default function TechSetupCostEstimator() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

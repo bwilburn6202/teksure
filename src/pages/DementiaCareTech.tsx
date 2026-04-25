@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -266,7 +264,6 @@ export default function DementiaCareTech() {
         title="Dementia & Memory Loss Tech Hub | TekSure"
         description="Warm, practical technology guidance for caregivers of people living with dementia. Simpler devices, safety tech, medication tools, memory aids, and caregiver support."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-purple-50 to-background dark:from-purple-950/30">
@@ -618,7 +615,6 @@ export default function DementiaCareTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

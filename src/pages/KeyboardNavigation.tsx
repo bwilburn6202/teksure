@@ -1,7 +1,5 @@
 import { Keyboard, Monitor, Eye } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -118,7 +116,6 @@ export default function KeyboardNavigation() {
         title="Keyboard Navigation Guide | TekSure"
         description="Learn how to navigate websites and TekSure using only your keyboard. This accessibility guide covers shortcuts, screen reader tips, and navigation basics for all skill levels."
       />
-      <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-4xl mx-auto px-4 py-8 sm:py-12">
           <PageBreadcrumb segments={[{ label: 'Keyboard Navigation' }]} />
@@ -189,7 +186,6 @@ export default function KeyboardNavigation() {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

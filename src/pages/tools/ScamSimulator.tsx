@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -276,7 +274,6 @@ export default function ScamSimulator() {
         description="Test your ability to spot scams with 8 realistic scenarios. Learn the red flags of phishing emails, scam calls, and fake texts in a safe, interactive quiz."
         path="/tools/scam-simulator"
       />
-      <Navbar />
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         <div className="relative">
           <div className="absolute right-0 top-0">
@@ -503,7 +500,6 @@ export default function ScamSimulator() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

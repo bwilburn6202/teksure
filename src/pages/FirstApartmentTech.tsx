@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -123,7 +121,6 @@ export default function FirstApartmentTech() {
         title="First Apartment Tech Guide | TekSure"
         description="Setting up tech in your first apartment — internet setup, essential apps, smart home basics, and security tips. A practical guide for renters starting fresh."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-green-50 to-background dark:from-green-950/30">
@@ -301,7 +298,6 @@ export default function FirstApartmentTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

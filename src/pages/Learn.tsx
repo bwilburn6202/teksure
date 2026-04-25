@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -179,7 +177,6 @@ export default function Learn() {
         description="Five free courses that teach digital literacy at your own pace. No sign-up required. Start with the basics, stay safe online, master your phone, your computer, and modern AI."
         path="/learn"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -354,7 +351,6 @@ export default function Learn() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

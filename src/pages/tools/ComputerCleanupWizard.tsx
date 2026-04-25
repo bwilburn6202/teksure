@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -100,7 +98,6 @@ export default function ComputerCleanupWizard() {
         description="Free tool that walks you through cleaning up your Windows PC or Mac. Disk cleanup, startup apps, security updates — step by step."
         path="/tools/computer-cleanup-wizard"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14">
@@ -233,7 +230,6 @@ export default function ComputerCleanupWizard() {
           )}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

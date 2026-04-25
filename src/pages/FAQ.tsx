@@ -20,8 +20,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -732,7 +730,6 @@ const FAQ = () => {
         path="/faq"
         jsonLd={faqJsonLd}
       />
-      <Navbar />
 
       <div className="max-w-4xl mx-auto pt-4 px-4 w-full">
         <PageBreadcrumb segments={[{ label: 'FAQ' }]} />
@@ -905,7 +902,6 @@ const FAQ = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

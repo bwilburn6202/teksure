@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
@@ -43,7 +41,6 @@ const Privacy = () => {
         description="Learn how TekSure collects, uses, and protects your personal information. Written in plain English so everyone can understand."
         path="/privacy"
       />
-      <Navbar />
 
       <main id="main-content" className="flex-1">
         <div className="container max-w-3xl py-8 px-4 space-y-8">
@@ -171,7 +168,6 @@ const Privacy = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

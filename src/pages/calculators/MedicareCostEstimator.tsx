@@ -20,8 +20,6 @@ import {
   Users,
   RefreshCw,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -288,7 +286,6 @@ export default function MedicareCostEstimator() {
         title="Medicare Cost Estimator 2026 | Original vs Advantage | TekSure"
         description="Compare 2026 Medicare costs side-by-side. See Part A, Part B, Part D, Medigap, and Advantage plans against your real situation. Free, senior-friendly, no sign-up."
       />
-      <Navbar />
 
       <main className="flex-1">
         <PageBreadcrumb
@@ -820,7 +817,6 @@ export default function MedicareCostEstimator() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

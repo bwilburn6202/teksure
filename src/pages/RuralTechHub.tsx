@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -292,7 +290,6 @@ export default function RuralTechHub() {
         description="Practical tech guide for rural life — internet options by priority, signal boosters, weather apps, farm tools, telehealth, and government programs that help."
         path="/rural-tech-hub"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -643,7 +640,6 @@ export default function RuralTechHub() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

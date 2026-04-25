@@ -12,7 +12,6 @@ import {
   Wifi,
 } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
 import { guides } from '@/data/guides';
 
 /**
@@ -303,7 +302,6 @@ const Index = () => {
         Universal floating glass-bubble navbar.
         Replaces the old flat cream top bar — shared across every page now.
       */}
-      <Navbar />
 
       <main id="main-content" tabIndex={-1} style={{ outline: 'none' }}>
         <section className="hero" aria-labelledby="hero-heading">

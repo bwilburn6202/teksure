@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -404,7 +402,6 @@ export default function PrivacyHub() {
         description="Practical steps to reclaim your online privacy. Quick wins, threat explainers, platform-by-platform settings, and the tools that actually help — all in plain English."
         path="/privacy-hub"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -628,7 +625,6 @@ export default function PrivacyHub() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

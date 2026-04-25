@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
@@ -188,7 +186,6 @@ export default function ChildAppSafetyChecker() {
         title="Child App Safety Checker | TekSure"
         description="Look up popular apps to see age ratings, privacy risks, chat features, and parental control tips before your child downloads them."
       />
-      <Navbar />
       <main className="flex-1">
         <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Child App Safety Checker' }]} />
 
@@ -357,7 +354,6 @@ export default function ChildAppSafetyChecker() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

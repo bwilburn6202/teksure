@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -213,7 +211,6 @@ export default function VeteransTechHub() {
         description="Free tech resources, VA online services, benefits help, and family support for veterans, service members, and their loved ones — all in one place."
         path="/veterans-tech-hub"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -334,7 +331,6 @@ export default function VeteransTechHub() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

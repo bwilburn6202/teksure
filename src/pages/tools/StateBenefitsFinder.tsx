@@ -30,8 +30,6 @@ import {
   Building2,
   type LucideIcon,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1195,7 +1193,6 @@ export default function StateBenefitsFinder() {
         description="A senior-friendly, state-by-state directory of property tax relief, prescription aid, utility assistance, SHIP, SNAP, transportation, and legal aid. Plain English. Free to use."
         path="/tools/state-benefits-finder"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="relative border-b border-border overflow-hidden">
@@ -1803,7 +1800,6 @@ export default function StateBenefitsFinder() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

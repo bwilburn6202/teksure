@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { NewsletterSignup } from '@/components/NewsletterSignup';
 import { Badge } from '@/components/ui/badge';
@@ -374,7 +372,6 @@ export default function News() {
         description="Stay up to date with the latest tech news, scam alerts, and tips — explained in plain English with no jargon."
       path="/news"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Header */}
@@ -545,7 +542,6 @@ export default function News() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

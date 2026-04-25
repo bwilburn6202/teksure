@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -16,7 +14,6 @@ export default function ParentalControls() {
         description="A beginner-friendly guide for parents on setting up parental controls and keeping kids safe online."
         path="/safety/parental-controls"
       />
-      <Navbar />
       <main className="container py-16 min-h-[60vh] max-w-4xl">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <Baby className="h-8 w-8 text-primary" />
@@ -190,7 +187,6 @@ export default function ParentalControls() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 }

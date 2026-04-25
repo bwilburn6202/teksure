@@ -11,6 +11,8 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { TierProvider } from "@/contexts/TierContext";
+import { Layout } from "@/components/layout/Layout";
+import { NavLayout } from "@/components/layout/NavLayout";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { TekBrain } from "@/components/TekBrain";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
@@ -525,10 +527,15 @@ const AppContent = () => {
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
-          {/* Homepage is now the TekBrain RAG chat — private-knowledge-base AI
-              agent trained on TekSure's guides. Old landing lives at /welcome. */}
-          <Route path="/" element={<TekBrainPage />} />
-          <Route path="/welcome" element={<Index />} />
+          {/* Nav-only: full-screen pages that need no footer */}
+          <Route element={<NavLayout />}>
+            <Route path="/" element={<TekBrainPage />} />
+            <Route path="/welcome" element={<Index />} />
+            <Route path="/tekbrain/chat" element={<TekBrainPage />} />
+          </Route>
+
+          {/* All public routes — Navbar + Footer provided by Layout */}
+          <Route element={<Layout />}>
           <Route path="/mockups" element={<ProtectedRoute allowedRoles={['admin']}><Mockups /></ProtectedRoute>} />
           <Route path="/mockup-a" element={<ProtectedRoute allowedRoles={['admin']}><MockupA /></ProtectedRoute>} />
           <Route path="/mockup-b" element={<ProtectedRoute allowedRoles={['admin']}><MockupB /></ProtectedRoute>} />
@@ -563,7 +570,6 @@ const AppContent = () => {
               actual chat UI. First-time visitors now see an explainer before
               being dropped into a conversation. */}
           <Route path="/tekbrain" element={<TekBrainLanding />} />
-          <Route path="/tekbrain/chat" element={<TekBrainPage />} />
           <Route path="/tools/password-strength" element={<PasswordStrength />} />
           <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
           <Route path="/tools/health-check" element={<HealthCheck />} />
@@ -870,6 +876,7 @@ const AppContent = () => {
           <Route path="/printables/weekly-newsletter" element={<WeeklyNewsletterTemplate />} />
 
           <Route path="*" element={<NotFound />} />
+          </Route> {/* end Layout */}
         </Routes>
         </ErrorBoundary>
       </Suspense>

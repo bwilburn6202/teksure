@@ -4,8 +4,6 @@ import {
   ThumbsUp, ThumbsDown, ChevronRight, Lightbulb, AlertTriangle, BookOpen,
 } from 'lucide-react';
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
@@ -59,7 +57,6 @@ export default function AggregatedArticlePage() {
         description={article.excerpt}
         path={`/articles/${article.slug}`}
       />
-      <Navbar />
 
       <main id="main-content" className="min-h-screen bg-background pb-16">
         {/* ── Hero / header ─────────────────────────────────────────────── */}
@@ -293,7 +290,6 @@ export default function AggregatedArticlePage() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

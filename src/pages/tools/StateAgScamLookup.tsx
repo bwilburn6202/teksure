@@ -49,8 +49,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -1150,7 +1148,6 @@ export default function StateAgScamLookup() {
         description="Find your state's Attorney General consumer protection office, scam reporting hotline, online complaint form, and elder abuse resources. Plus: which federal agency to file with and a 5-question decision tree."
         path="/tools/state-ag-scam-lookup"
       />
-      <Navbar />
       <main id="main-content" className="container py-10 min-h-[80vh] max-w-4xl mx-auto">
         {/* ── Hero ── */}
         <div className="relative rounded-3xl overflow-hidden mb-10 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white shadow-xl">
@@ -1900,7 +1897,6 @@ export default function StateAgScamLookup() {
           </AlertDescription>
         </Alert>
       </main>
-      <Footer />
     </>
   );
 }

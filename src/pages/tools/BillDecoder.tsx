@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
@@ -479,7 +477,6 @@ export default function BillDecoder() {
         title="Bill Decoder — Understand Internet, Phone, Medical, & Insurance Bills | TekSure"
         description="Decode confusing bills line by line. Internet, phone, medical, insurance, and utility bills explained in plain English — with action steps for fees you should question."
       />
-      <Navbar />
 
       <main className="flex-1">
         <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Bill Decoder' }]} />
@@ -646,7 +643,6 @@ export default function BillDecoder() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

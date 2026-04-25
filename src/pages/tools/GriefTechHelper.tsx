@@ -29,8 +29,6 @@ import {
   CheckCircle2,
   Lock,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -452,7 +450,6 @@ export default function GriefTechHelper() {
         .gt-print-only { display: none; }
       `}</style>
 
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Breadcrumb */}
@@ -1298,7 +1295,6 @@ export default function GriefTechHelper() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

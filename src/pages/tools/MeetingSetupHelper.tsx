@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -221,7 +219,6 @@ export default function MeetingSetupHelper() {
         description="Step-by-step guide to set up and join video calls on Zoom, Google Meet, FaceTime, Microsoft Teams, and WhatsApp. Includes troubleshooting and pre-meeting checklist."
         path="/tools/meeting-setup-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Meeting Setup Helper' }]} />
@@ -405,7 +402,6 @@ export default function MeetingSetupHelper() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

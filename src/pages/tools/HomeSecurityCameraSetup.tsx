@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1264,7 +1262,6 @@ export default function HomeSecurityCameraSetup() {
           description="A plain-English buyer's guide and step-by-step setup wizard for Ring, Nest, Arlo, Wyze, Eufy, and Blink home security cameras. Built for seniors and first-time users."
           path="/tools/home-security-camera-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero — cool blue/slate gradient */}
           <section className="border-b border-border bg-gradient-to-br from-sky-50 via-slate-50 to-blue-100 dark:from-sky-950/40 dark:via-slate-900 dark:to-blue-950/40">
@@ -1681,7 +1678,6 @@ export default function HomeSecurityCameraSetup() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1694,7 +1690,6 @@ export default function HomeSecurityCameraSetup() {
         description={`Follow a plain-English walkthrough to set up your ${setup.brandName} security camera. Designed for seniors and first-time users.`}
         path="/tools/home-security-camera-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-gradient-to-br from-sky-50 via-slate-50 to-blue-100 dark:from-sky-950/40 dark:via-slate-900 dark:to-blue-950/40">
           <div className="container py-6 md:py-8">
@@ -1898,7 +1893,6 @@ export default function HomeSecurityCameraSetup() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

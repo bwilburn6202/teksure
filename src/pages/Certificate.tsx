@@ -1,6 +1,4 @@
 import { useRef } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -62,7 +60,6 @@ export default function Certificate() {
         description="Earn printable certificates as you complete TekSure guides. Track your learning journey and celebrate your tech achievements."
         path="/certificate"
       />
-      <Navbar />
       <main className="flex-1 container max-w-3xl py-12">
         <div className="border-b border-border pb-10 mb-10">
           <div className="text-center">
@@ -133,7 +130,6 @@ export default function Certificate() {
           })}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

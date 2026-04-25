@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Shield, Smartphone, KeyRound, MousePointerClick, MonitorX, Phone, ExternalLink, ChevronDown } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -178,7 +176,6 @@ export default function EmergencyHelp() {
         description="Step-by-step instructions for what to do right now if your phone is lost, your account is hacked, you clicked a suspicious link, or your screen shows a scary warning."
         path="/emergency-help"
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-500/10 via-background to-amber-500/10 border-b border-border py-12 px-4">
@@ -295,7 +292,6 @@ export default function EmergencyHelp() {
         </Card>
       </main>
 
-      <Footer />
     </div>
   );
 }

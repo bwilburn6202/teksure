@@ -4,8 +4,6 @@ import { Search, BookOpen, Clock, ChevronRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides } from '@/data/guides';
 import { GuideThumbnail } from '@/components/GuideThumbnail';
@@ -68,7 +66,6 @@ export default function GuidesEspanol() {
         description="Guías paso a paso de tecnología en español — sin tecnicismos, solo respuestas claras. Gratis para todos."
         path="/guias"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 text-center">
@@ -163,7 +160,6 @@ export default function GuidesEspanol() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

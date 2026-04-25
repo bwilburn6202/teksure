@@ -49,8 +49,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -1083,7 +1081,6 @@ export default function SocialMediaSafety() {
         description="A senior-friendly walkthrough for staying safe on Facebook, Instagram, TikTok, X, YouTube, LinkedIn, and NextDoor. Privacy settings, scam patterns, blocking, reporting, recovery — all in plain English."
         path="/tools/social-media-safety"
       />
-      <Navbar />
       <main
         id="main-content"
         className="container py-12 min-h-[80vh] max-w-4xl mx-auto"
@@ -1745,7 +1742,6 @@ export default function SocialMediaSafety() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 }

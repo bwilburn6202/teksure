@@ -11,8 +11,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 interface PlaygroundModule {
@@ -434,7 +432,6 @@ const TechPlayground = () => {
         description="Practice mouse, keyboard, and touch skills in a safe, interactive environment. No risk — just learning!"
         path="/playground"
       />
-      <Navbar />
       
       <main className="container py-12 md:py-20">
         <div className="text-center mb-12">
@@ -549,7 +546,6 @@ const TechPlayground = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

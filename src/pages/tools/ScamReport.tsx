@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
 import { SafeLink } from '@/components/SafeLink';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -85,7 +83,6 @@ export default function ScamReport() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
-        <Navbar />
         <main className="flex-1 container max-w-lg py-16 text-center">
           <div>
             <div className="text-6xl mb-4"></div>
@@ -104,7 +101,6 @@ export default function ScamReport() {
             </Button>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
@@ -116,7 +112,6 @@ export default function ScamReport() {
         description="Spotted a scam? Report it to TekSure. Your report helps protect others in the community and contributes to awareness of common online threats."
         path="/tools/scam-report"
       />
-      <Navbar />
       <main className="flex-1 container max-w-2xl py-12">
         <div className="text-center mb-10">
           <div className="text-4xl mb-3"></div>
@@ -198,7 +193,6 @@ export default function ScamReport() {
           <p className="text-xs text-muted-foreground text-center">Fields marked with * are required. All other fields are optional but help us investigate.</p>
         </form>
       </main>
-      <Footer />
     </div>
   );
 }

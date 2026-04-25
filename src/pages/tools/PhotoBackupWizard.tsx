@@ -26,8 +26,6 @@ import {
   Eye,
   type LucideIcon,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -396,7 +394,6 @@ export default function PhotoBackupWizard() {
         description="Senior-friendly guide to backing up your photos. Compare iCloud, Google Photos, Amazon Photos, Dropbox, OneDrive, Flickr, and SmugMug — then follow step-by-step setup."
         path="/tools/photo-backup-wizard"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────── */}
@@ -1074,7 +1071,6 @@ export default function PhotoBackupWizard() {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

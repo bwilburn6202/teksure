@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -181,7 +179,6 @@ export default function ParentalControlsWizard() {
         description="Step-by-step wizard to set up parental controls on iPhone, Android, Xbox, PlayStation, Nintendo Switch, smart TVs, and Wi-Fi routers."
         path="/tools/parental-controls-wizard"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14">
@@ -341,7 +338,6 @@ export default function ParentalControlsWizard() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -24,8 +24,6 @@ import {
   RotateCcw,
   type LucideIcon,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -427,7 +425,6 @@ export default function Turning65() {
         description="An interactive checklist for people approaching age 65. Covers Medicare, Social Security, retirement planning, senior discounts, and digital cleanup. Free, plain-English, no sales pitch."
         path="/checklists/turning-65"
       />
-      <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
         {/* Breadcrumb */}
         <div className="container pt-6 print:hidden">
@@ -863,7 +860,6 @@ export default function Turning65() {
           </Card>
         </section>
       </main>
-      <Footer />
 
       {/* Print-only one-pager styles */}
       <style>{`

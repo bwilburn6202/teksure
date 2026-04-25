@@ -34,8 +34,6 @@ import {
   ShieldAlert,
   type LucideIcon,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
@@ -805,7 +803,6 @@ export default function CaregiverToolkit() {
         description="A complete toolkit for adult children caring for aging parents — remote tech support, fraud prevention, medical coordination, staying connected, daily living tech, and self-care. Plain English. Free."
         path="/toolkits/caregiver"
       />
-      <Navbar />
       <main id="main-content" className="flex-1">
         {/* Breadcrumb */}
         <div className="container pt-6">
@@ -1189,7 +1186,6 @@ export default function CaregiverToolkit() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -3,8 +3,6 @@ import { ClipboardCheck, RotateCcw, ChevronRight, BookOpen, ArrowRight, Sparkles
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Link } from 'react-router-dom';
@@ -222,7 +220,6 @@ export default function TechComfortQuiz() {
         description="Take our friendly 10-question quiz to discover your tech comfort level and get personalized guide recommendations tailored just for you."
         path="/tools/tech-comfort-quiz"
       />
-      <Navbar />
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         {/* Header */}
         <div className="relative">
@@ -378,7 +375,6 @@ export default function TechComfortQuiz() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

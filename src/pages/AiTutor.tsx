@@ -1,6 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -65,7 +63,6 @@ export default function AiTutor() {
   if (!level) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
-        <Navbar />
         <main className="flex-1 container max-w-2xl py-14 text-center">
           <div className="text-5xl mb-4"></div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3 text-primary">AI Personal Tech Tutor</h1>
@@ -82,7 +79,6 @@ export default function AiTutor() {
             ))}
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
@@ -94,7 +90,6 @@ export default function AiTutor() {
         description="Learn technology at your own pace with a friendly AI tutor that adapts to your skill level. Ask anything and get clear, plain-English answers."
         path="/ai-tutor"
       />
-      <Navbar />
       <main className="flex-1 container max-w-3xl py-8">
         <div className="flex items-center justify-between mb-6 pb-6 border-b border-border">
           <div className="flex items-center gap-3">
@@ -186,7 +181,6 @@ export default function AiTutor() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </div>
   );
 }

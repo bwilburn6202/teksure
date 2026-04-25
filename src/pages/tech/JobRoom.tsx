@@ -10,8 +10,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { Separator } from '@/components/ui/separator';
 import { useAuth } from '@/contexts/AuthContext';
@@ -127,12 +125,10 @@ const TechJobRoom = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-16 max-w-4xl flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-10 w-10 animate-spin text-primary" />
           <p className="text-lg text-muted-foreground">Loading booking details...</p>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -141,7 +137,6 @@ const TechJobRoom = () => {
   if (error || !booking) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-16 max-w-4xl">
           <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
             <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -164,7 +159,6 @@ const TechJobRoom = () => {
             </CardContent>
           </Card>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -177,7 +171,6 @@ const TechJobRoom = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead title="Job Details — TekSure Tech" description="View and manage support job details." path={`/tech/job/${id}`} />
-      <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -382,7 +375,6 @@ const TechJobRoom = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

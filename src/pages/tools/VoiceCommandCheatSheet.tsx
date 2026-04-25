@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
@@ -730,7 +728,6 @@ export default function VoiceCommandCheatSheet() {
         description="Hundreds of voice commands seniors actually use, organized by category and assistant. Searchable, printable, and written in plain English."
         path="/tools/voice-commands"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-amber-950/30 dark:via-orange-950/20 dark:to-yellow-950/20">
@@ -1040,7 +1037,6 @@ export default function VoiceCommandCheatSheet() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

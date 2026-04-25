@@ -13,8 +13,6 @@ import {
   Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
   Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -2189,7 +2187,6 @@ export default function Tools() {
           provider: { '@type': 'Organization', name: 'TekSure', url: 'https://teksure.com' },
         }}
       />
-      <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools' }]} />
@@ -2414,7 +2411,6 @@ export default function Tools() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

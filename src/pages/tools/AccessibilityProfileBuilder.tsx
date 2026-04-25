@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
@@ -279,7 +277,6 @@ export default function AccessibilityProfileBuilder() {
         description="Answer a few quick questions about your eyes, ears, and hands. We'll build a personalized accessibility profile, apply it to TekSure, and show you how to set up your phone to match."
         path="/tools/accessibility-profile-builder"
       />
-      <Navbar />
 
       <main className="flex-1">
         <PageBreadcrumb
@@ -528,7 +525,6 @@ export default function AccessibilityProfileBuilder() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

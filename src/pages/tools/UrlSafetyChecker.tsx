@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -198,7 +196,6 @@ export default function UrlSafetyChecker() {
         description="Paste a suspicious link and get an instant safety check. We look for the most common phishing tricks — all in your browser, nothing sent anywhere."
         path="/tools/url-safety-checker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'URL Safety Checker' }]} />
@@ -345,7 +342,6 @@ export default function UrlSafetyChecker() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -154,7 +152,6 @@ export default function Webinars() {
         description="Join free online webinars hosted by TekSure. Learn about cybersecurity, smartphones, AI tools, and more in friendly, beginner-friendly sessions."
         path="/webinars"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -294,7 +291,6 @@ export default function Webinars() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

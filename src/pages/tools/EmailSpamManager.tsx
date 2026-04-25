@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
@@ -439,7 +437,6 @@ export default function EmailSpamManager() {
         description="A plain-English guide to unsubscribing, blocking, and organizing email. Step-by-step for Gmail, Outlook, Yahoo, iCloud, and AOL — without deleting anything important."
         path="/tools/email-spam-manager"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* ── HERO ──────────────────────────────────────────────────────── */}
@@ -586,7 +583,6 @@ export default function EmailSpamManager() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

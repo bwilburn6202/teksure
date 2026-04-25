@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Play, Clock, Monitor, Laptop, Smartphone, Tablet } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -113,7 +111,6 @@ export default function Videos() {
           url: 'https://teksure.com/videos',
         }}
       />
-      <Navbar />
 
       <main id="main-content" className="container py-10 max-w-5xl">
         {/* Header */}
@@ -206,7 +203,6 @@ export default function Videos() {
         )}
       </main>
 
-      <Footer />
     </div>
   );
 }

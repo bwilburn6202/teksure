@@ -1,6 +1,4 @@
 import { useMemo, useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -156,7 +154,6 @@ export default function PasswordLeakChecker() {
         description="Check whether your accounts have been exposed in known data breaches, and test how strong your passwords are. Everything happens in your browser — nothing is sent anywhere."
         path="/tools/password-leak-checker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
@@ -422,7 +419,6 @@ export default function PasswordLeakChecker() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -64,7 +62,6 @@ export default function DataBreachChecker() {
         description="Learn about major data breaches, check if your email may have been affected, and get step-by-step instructions to protect yourself after a breach."
         path="/tools/data-breach-checker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Data Breach Checker' }]} />
@@ -258,7 +255,6 @@ export default function DataBreachChecker() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

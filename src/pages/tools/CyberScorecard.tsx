@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -91,7 +89,6 @@ export default function CyberScorecard() {
         description="Check how secure your digital life is with our quick 13-question cybersecurity scorecard. Get a personalized score and actionable tips."
       path="/tools/cyber-scorecard"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -300,7 +297,6 @@ export default function CyberScorecard() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

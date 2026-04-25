@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -141,7 +139,6 @@ export default function SeniorTechPath() {
         description="A step-by-step path designed specifically for adults over 60. Start with the basics. No experience needed. No pressure. No jargon."
         path="/senior-tech-path"
       />
-      <Navbar />
       <main className="min-h-screen bg-background text-[18px] leading-relaxed">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tech for Seniors' }]} />
@@ -336,7 +333,6 @@ export default function SeniorTechPath() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

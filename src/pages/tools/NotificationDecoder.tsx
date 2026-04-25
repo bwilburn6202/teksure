@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -371,7 +369,6 @@ export default function NotificationDecoder() {
         description="Confused by a notification on your phone or computer? Look it up here and get a plain-English explanation of what it means and exactly what to do."
         path="/tools/notification-decoder"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Notification Decoder' }]} />
@@ -547,7 +544,6 @@ export default function NotificationDecoder() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

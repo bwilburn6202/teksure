@@ -3,8 +3,6 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
@@ -109,7 +107,6 @@ export default function ThreadDetail() {
   if (threadLoading) {
     return (
       <>
-        <Navbar />
         <main className="min-h-screen bg-background container max-w-3xl mx-auto px-4 py-8">
           <div className="space-y-4">
             <div className="h-8 w-32 bg-muted animate-pulse rounded" />
@@ -117,7 +114,6 @@ export default function ThreadDetail() {
             <div className="h-24 bg-muted animate-pulse rounded-xl" />
           </div>
         </main>
-        <Footer />
       </>
     );
   }
@@ -125,14 +121,12 @@ export default function ThreadDetail() {
   if (!thread) {
     return (
       <>
-        <Navbar />
         <main className="min-h-screen bg-background container max-w-3xl mx-auto px-4 py-8 text-center">
           <AlertCircle className="h-10 w-10 text-muted-foreground mx-auto mb-3" />
           <h1 className="text-xl font-semibold mb-2">Thread not found</h1>
           <p className="text-muted-foreground mb-4">This discussion may have been removed.</p>
           <Button asChild variant="outline"><Link to="/forum">Back to Forum</Link></Button>
         </main>
-        <Footer />
       </>
     );
   }
@@ -142,7 +136,6 @@ export default function ThreadDetail() {
   return (
     <>
       <SEOHead title={`${thread.title} — TekSure Forum`} description={thread.body.slice(0, 150)} path={`/forum/${thread.id}`} />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto px-4 py-8">
@@ -274,7 +267,6 @@ export default function ThreadDetail() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

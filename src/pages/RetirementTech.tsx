@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -205,7 +203,6 @@ export default function RetirementTech() {
         title="Retirement Tech Guide — Starting Fresh in Your New Chapter | TekSure"
         description="Retirement is the chance to reset your tech life. What to drop, what new apps to try, and how to handle the financial, health, social, and safety tech that matters most."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-purple-50 to-background dark:from-purple-950/30">
@@ -517,7 +514,6 @@ export default function RetirementTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

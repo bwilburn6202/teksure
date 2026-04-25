@@ -1,8 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
@@ -255,7 +253,6 @@ export default function AskTekSure() {
         description="Got a tech question? A real person will answer, and everyone can learn from the thread. Browse answered questions or ask your own."
         path="/community/ask"
       />
-      <Navbar />
 
       {/* ─── Hero ────────────────────────────────────────────────────────── */}
       <section className="border-b border-border bg-gradient-to-br from-teal-100 via-cyan-100 to-sky-100 dark:from-teal-950/50 dark:via-cyan-950/40 dark:to-sky-950/40">
@@ -494,7 +491,6 @@ export default function AskTekSure() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

@@ -26,8 +26,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { encodeText, drawToCanvas, toSvgPath, type Ecc } from '@/lib/qrcode';
 
@@ -179,7 +177,6 @@ export default function WifiQrGenerator() {
         description="Create a scannable QR code so guests can join your WiFi in one tap — no typing the password. 100% private, runs in your browser."
         path="/tools/wifi-qr-generator"
       />
-      <Navbar />
       <main
         id="main-content"
         className="container py-12 min-h-[80vh] max-w-3xl mx-auto print:py-0 print:max-w-none"
@@ -514,7 +511,6 @@ export default function WifiQrGenerator() {
           </Card>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

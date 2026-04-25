@@ -19,7 +19,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect, useRef, useCallback, type FormEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import NetworkField from '@/components/NetworkField';
@@ -845,7 +844,6 @@ export default function TekBrainPage() {
         description="Ask TekBrain any tech question and get a plain-English answer pulled from TekSure's library of senior-friendly guides. Free, no sign-up needed."
         path="/tekbrain"
       />
-      <Navbar />
 
       <main className="relative h-screen flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
         {/* Decentralized mesh — peer nodes float, link up, and fire glowing

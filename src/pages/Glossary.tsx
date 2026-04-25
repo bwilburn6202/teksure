@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { Search, BookOpen, ArrowRight, Languages } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -1158,7 +1156,6 @@ const Glossary = () => {
         }}
       />
 
-      <Navbar />
 
       <div className="max-w-4xl mx-auto pt-4 px-4">
         <PageBreadcrumb segments={[{ label: 'Glossary' }]} />
@@ -1358,7 +1355,6 @@ const Glossary = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

@@ -1,8 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Monitor, Apple, Smartphone, Tablet, Globe, Filter } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -66,7 +64,6 @@ export default function Articles() {
         description="Plain-language tech guides simplified from trusted sources like Apple, Google, Microsoft, AARP, and more. Easy to follow, no jargon."
         path="/articles"
       />
-      <Navbar />
 
       <main id="main-content" className="min-h-screen bg-background pb-16">
         {/* ── Hero ────────────────────────────────────────────────── */}
@@ -236,7 +233,6 @@ export default function Articles() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

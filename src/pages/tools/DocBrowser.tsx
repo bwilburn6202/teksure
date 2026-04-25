@@ -231,7 +231,6 @@ export default function DocBrowser() {
         description="Ask questions about tech-support documentation in plain English. Our AI reads Apple, Google, Microsoft, and safety docs so you don't have to."
         path="/tools/doc-browser"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b">
@@ -296,7 +295,6 @@ export default function DocBrowser() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

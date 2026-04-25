@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1118,7 +1116,6 @@ export default function TechGiftGuide() {
         description="A personalized tech gift recommender for buying for a parent, grandparent, spouse, or friend. Answer seven quick questions and get three gift ideas with setup difficulty, pros, cons, and where to buy."
         path="/tools/tech-gift-guide"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero — warm coral/rose gradient */}
         <section className="relative border-b border-border bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 dark:from-rose-950/30 dark:via-orange-950/20 dark:to-amber-950/20">
@@ -1680,7 +1677,6 @@ export default function TechGiftGuide() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

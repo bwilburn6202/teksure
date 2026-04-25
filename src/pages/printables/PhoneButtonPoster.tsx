@@ -14,8 +14,6 @@ import {
   Accessibility as AccessibilityIcon,
   HeartHandshake,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { BookmarkButton } from '@/components/BookmarkButton';
@@ -860,7 +858,6 @@ export default function PhoneButtonPoster() {
       `}</style>
 
       <div className="no-print">
-        <Navbar />
       </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -1269,7 +1266,6 @@ export default function PhoneButtonPoster() {
       </main>
 
       <div className="no-print">
-        <Footer />
       </div>
     </div>
   );

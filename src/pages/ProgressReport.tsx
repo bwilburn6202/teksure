@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -70,7 +68,6 @@ export default function ProgressReport() {
         description="Track your TekSure learning journey. See how many guides you've completed, your streak, confidence score, and what to tackle next."
         path="/progress-report"
       />
-      <Navbar />
       <main className="flex-1 container max-w-3xl py-12 min-h-screen bg-background">
         <div className="text-center mb-10">
           <BarChart3 className="h-10 w-10 text-primary mx-auto mb-3" />
@@ -215,7 +212,6 @@ export default function ProgressReport() {
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </div>
   );
 }

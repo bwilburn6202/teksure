@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -645,7 +643,6 @@ export default function PrivacyAudit() {
         description="Step-by-step guided privacy audit for Facebook, Google, Apple ID, iPhone, and Android. Walks you through the settings that actually matter in plain English."
         path="/tools/privacy-audit"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────── */}
         <section className="border-b border-border bg-gradient-to-br from-primary/5 via-background to-background">
@@ -979,7 +976,6 @@ export default function PrivacyAudit() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

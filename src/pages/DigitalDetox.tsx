@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -210,7 +208,6 @@ export default function DigitalDetox() {
         title="Digital Detox — Healthy Screen Time Without Guilt | TekSure"
         description="A supportive guide to changing your relationship with technology. Built-in tools, helpful apps, a 3-day reset, and answers for the situations where screens get hard."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-emerald-50 to-background dark:from-emerald-950/30">
@@ -603,7 +600,6 @@ export default function DigitalDetox() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

@@ -22,8 +22,6 @@ import {
   Copy,
 } from 'lucide-react';
 
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
@@ -478,7 +476,6 @@ export default function TechConfidenceQuiz() {
     return (
       <>
         {SEO}
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero \u2014 warm teal gradient */}
           <section className="relative overflow-hidden bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-700 text-white">
@@ -660,7 +657,6 @@ export default function TechConfidenceQuiz() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -674,7 +670,6 @@ export default function TechConfidenceQuiz() {
     return (
       <>
         {SEO}
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="bg-gradient-to-r from-teal-600 via-teal-600 to-emerald-700 text-white">
             <div className="container py-6">
@@ -795,7 +790,6 @@ export default function TechConfidenceQuiz() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -826,7 +820,6 @@ export default function TechConfidenceQuiz() {
   return (
     <>
       {SEO}
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Results hero */}
         <section className="bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-700 text-white">
@@ -1098,7 +1091,6 @@ export default function TechConfidenceQuiz() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

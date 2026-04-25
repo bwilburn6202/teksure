@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -112,7 +110,6 @@ export default function InternetSpeedNeeds() {
         description="Check what you actually do online and find the right Mbps for your home. Stop overpaying for speed you won't use."
         path="/tools/internet-speed-needs"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Internet Speed Needs' }]} />
@@ -251,7 +248,6 @@ export default function InternetSpeedNeeds() {
           </a>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -210,7 +208,6 @@ export default function AccessibilityCheck() {
         description="Find out how accessible your device setup is and get personalized tips to make tech easier to use."
       path="/tools/accessibility-check"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -403,7 +400,6 @@ export default function AccessibilityCheck() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

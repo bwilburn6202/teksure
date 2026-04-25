@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -374,7 +372,6 @@ export default function PasskeyHub() {
         description="Passwords are dying. Passkeys are taking over. A plain-English guide to what passkeys are, why they are safer, where they work now, and how to set up your first one this week."
         path="/passkey-hub"
       />
-      <Navbar />
 
       <main className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
@@ -506,7 +503,6 @@ export default function PasskeyHub() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

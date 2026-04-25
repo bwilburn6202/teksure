@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -754,7 +752,6 @@ export default function DmvOnlineHelper() {
         description="Every state's DMV online services, senior-specific renewal rules, REAL ID deadlines, appointment links, and motor vehicle scam warnings — in plain English."
         path="/tools/dmv-online-helper"
       />
-      <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
         {/* Hero */}
         <section className="relative overflow-hidden border-b border-border">
@@ -1457,7 +1454,6 @@ export default function DmvOnlineHelper() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

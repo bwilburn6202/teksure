@@ -9,8 +9,6 @@ import {
   Package, BarChart2, Users, Gift, Smile, Award, Bell,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Section data ────────────────────────── */
@@ -177,7 +175,6 @@ export default function Explore() {
         description="Find every page, tool, and guide on TekSure. A complete sitemap designed for easy browsing."
         path="/explore"
       />
-      <Navbar />
 
       {/* Header */}
       <section className="border-b">
@@ -257,7 +254,6 @@ export default function Explore() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

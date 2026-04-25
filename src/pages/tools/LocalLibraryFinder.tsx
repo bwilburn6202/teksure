@@ -1,7 +1,5 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
@@ -415,7 +413,6 @@ export default function LocalLibraryFinder() {
         description="A senior-friendly guide to finding your nearest public library and using every free service your card unlocks — ebooks, streaming, classes, notary, tax help, museum passes, and more."
         path="/tools/local-library-finder"
       />
-      <Navbar />
 
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-4xl mx-auto">
         {/* ── Hero ── */}
@@ -934,7 +931,6 @@ export default function LocalLibraryFinder() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

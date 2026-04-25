@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -87,7 +85,6 @@ export default function VpnGuide() {
         description="Learn what a VPN is, whether you need one, and how to set it up on your phone or computer in under 10 minutes."
         path="/tools/vpn-guide"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="bg-primary text-primary-foreground py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-3xl">
@@ -233,7 +230,6 @@ export default function VpnGuide() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

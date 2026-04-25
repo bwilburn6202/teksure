@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -54,7 +52,6 @@ export default function DataLeakDashboard() {
   return (
     <>
       <SEOHead title="Data Leak Dashboard" description="Check if your personal data has been exposed in a breach. Find breach-checking tools, recent breaches, and recovery steps." path="/tools/data-leak-dashboard" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-4xl py-12 px-4">
         <div className="text-center mb-10"><Shield className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Data Leak Dashboard</h1><p className="text-muted-foreground max-w-lg mx-auto">Check if your data has been exposed, see recent breaches, and learn what to do if you are affected.</p></div>
 
@@ -114,7 +111,6 @@ export default function DataLeakDashboard() {
           </TabsContent>
         </Tabs>
       </div></main>
-      <Footer />
     </>
   );
 }

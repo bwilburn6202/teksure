@@ -7,8 +7,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Progress } from '@/components/ui/progress';
@@ -201,7 +199,6 @@ export default function Troubleshooter() {
         description="Answer a few yes/no questions and we'll guide you to the exact fix for your tech problem. Works for WiFi, slow computers, printers, passwords, phones, and more."
         path="/tools/troubleshooter"
       />
-      <Navbar />
       <main className="container max-w-2xl py-12 min-h-[70vh]">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Troubleshooter' }]} />
 
@@ -361,7 +358,6 @@ export default function Troubleshooter() {
 
         </>
       </main>
-      <Footer />
     </>
   );
 }

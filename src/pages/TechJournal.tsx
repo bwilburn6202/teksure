@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -97,7 +95,6 @@ export function TechJournal() {
         path="/journal"
       />
       <div className="print:hidden">
-        <Navbar />
       </div>
 
       <main className="container py-12 min-h-[70vh]">
@@ -250,7 +247,6 @@ export function TechJournal() {
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );

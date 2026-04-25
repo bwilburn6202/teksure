@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -223,7 +221,6 @@ export default function GuidePacks() {
         path="/tools/guide-packs"
         canonical="/tools/guide-packs"
       />
-      <Navbar />
       <main className="flex-1">
         <div className="bg-gradient-to-br from-secondary/10 to-background border-b border-border py-14 text-center">
           <div className="text-4xl mb-3"></div>
@@ -280,7 +277,6 @@ export default function GuidePacks() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

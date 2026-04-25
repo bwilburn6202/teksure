@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -127,7 +125,6 @@ export default function ChromebookHub() {
         description="Chromebooks are affordable, secure, and surprisingly powerful. Whether you're considering one or already own one, here's everything you need."
         path="/chromebook"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Chromebook Guide' }]} />
@@ -415,7 +412,6 @@ export default function ChromebookHub() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

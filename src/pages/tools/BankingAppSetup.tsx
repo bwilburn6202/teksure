@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -430,7 +428,6 @@ export default function BankingAppSetup() {
         description="Senior-friendly walkthrough for setting up Chase, Wells Fargo, Bank of America, Capital One, U.S. Bank, Citi, and credit union apps. Covers biometric login, mobile check deposit, Zelle scams, alerts, and what to do if your account is compromised."
         path="/tools/banking-app-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border bg-muted/30">
@@ -873,7 +870,6 @@ export default function BankingAppSetup() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

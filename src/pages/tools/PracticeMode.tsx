@@ -28,8 +28,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ────────────────────────────────────────────────
@@ -921,7 +919,6 @@ export default function PracticeMode() {
         description="A safe, simulated phone interface where you can practice texting, video calls, screenshots, and more — without worrying about messing up your real phone."
         path="/tools/practice-mode"
       />
-      <Navbar />
       <main className="container py-8 md:py-12 min-h-[80vh] max-w-5xl mx-auto px-4">
         {/* Choose screen */}
         {!selected && (
@@ -1060,7 +1057,6 @@ export default function PracticeMode() {
           />
         )}
       </main>
-      <Footer />
     </>
   );
 }

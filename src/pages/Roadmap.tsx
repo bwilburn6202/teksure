@@ -3,8 +3,6 @@ import { Rocket, Clock, Compass, ArrowUp, Lightbulb, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 // ── Data ─────────────────────────────────────────────────────────────────────
@@ -351,7 +349,6 @@ export default function Roadmap() {
         description="Our public roadmap. See what TekSure is building now, next, and later — and vote on what should come first."
         path="/roadmap"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-background dark:from-muted/40 dark:via-muted/20 dark:to-background py-16 md:py-20">
@@ -448,7 +445,6 @@ export default function Roadmap() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

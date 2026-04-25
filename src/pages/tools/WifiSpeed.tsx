@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import { Wifi, ExternalLink, Lightbulb, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Navbar } from '@/components/layout/Navbar';
 import { SafeLink } from '@/components/SafeLink';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 
@@ -25,7 +23,6 @@ const WifiSpeed = () => {
         description="Test your internet speed instantly and get tips to improve slow Wi-Fi. No app download needed."
         path="/tools/wifi-speed"
       />
-      <Navbar />
 
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Wi-Fi Speed Test' }]} />
@@ -90,7 +87,6 @@ const WifiSpeed = () => {
         </Card>
       </section>
 
-      <Footer />
     </div>
   );
 };

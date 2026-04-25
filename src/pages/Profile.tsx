@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { User, Mail, Shield, Save, Loader2, CheckCircle, ArrowRight, MessageSquare, BookOpen, Trophy, Map, CheckCircle2, Lock } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -148,7 +146,6 @@ export default function Profile() {
         description="Manage your TekSure account details."
         path="/profile"
       />
-      <Navbar />
       <main className="container max-w-xl py-16 min-h-screen bg-background">
 
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-primary">My Profile</h1>
@@ -407,7 +404,6 @@ export default function Profile() {
         </Card>
 
       </main>
-      <Footer />
     </>
   );
 }

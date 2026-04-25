@@ -16,8 +16,6 @@ import {
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
 
@@ -434,7 +432,6 @@ const SiteIndex = () => {
           url: 'https://teksure.com/site-index',
         }}
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="border-b border-border">
@@ -627,7 +624,6 @@ const SiteIndex = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

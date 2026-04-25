@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -194,7 +192,6 @@ export default function EmailTemplates() {
         description="10 ready-to-use email templates for complaints, returns, job enquiries, meetings, IT support, and more."
         path="/tools/email-templates"
       />
-      <Navbar />
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <Mail className="h-8 w-8 text-primary" />
@@ -244,7 +241,6 @@ export default function EmailTemplates() {
           ))}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

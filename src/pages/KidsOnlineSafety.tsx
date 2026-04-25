@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -246,7 +244,6 @@ export default function KidsOnlineSafety() {
         description="A practical parent guide to raising kids in the digital age — age-by-age guidance, parental controls, the real threats, and conversation scripts that work."
         path="/kids-online-safety"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -488,7 +485,6 @@ export default function KidsOnlineSafety() {
           </Card>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

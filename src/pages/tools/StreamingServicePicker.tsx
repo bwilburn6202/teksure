@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -766,7 +764,6 @@ export default function StreamingServicePicker() {
         description="Stop paying for streaming services you don't use. Answer six quick questions and get three personalized picks — with price, free trial, and what to watch out for. Covers Netflix, Hulu, Disney+, Max, Paramount+, Peacock, Apple TV+, Prime Video, YouTube TV, Sling, Philo, Fubo, Pluto TV, and Tubi."
         path="/tools/streaming-service-picker"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero — cool blue/indigo gradient */}
         <section className="relative border-b border-border bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-50 dark:from-blue-950/30 dark:via-indigo-950/20 dark:to-sky-950/20">
@@ -1549,7 +1546,6 @@ export default function StreamingServicePicker() {
         </section>
 
       </main>
-      <Footer />
     </>
   );
 }

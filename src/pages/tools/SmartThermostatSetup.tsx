@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1094,7 +1092,6 @@ export default function SmartThermostatSetup() {
           description="A plain-English buyer's guide and step-by-step setup wizard for Google Nest, ecobee, Honeywell T-series, Sensi, and Amazon Smart Thermostat. Built for seniors and first-time installers."
           path="/tools/smart-thermostat-setup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero */}
           <section className="border-b border-border bg-gradient-to-br from-orange-50 via-amber-50 to-rose-100 dark:from-orange-950/40 dark:via-amber-950/30 dark:to-rose-950/40">
@@ -1555,7 +1552,6 @@ export default function SmartThermostatSetup() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1568,7 +1564,6 @@ export default function SmartThermostatSetup() {
         description={`Follow a plain-English walkthrough to install your ${setup.brandName} smart thermostat. Designed for seniors and first-time installers.`}
         path="/tools/smart-thermostat-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-gradient-to-br from-orange-50 via-amber-50 to-rose-100 dark:from-orange-950/40 dark:via-amber-950/30 dark:to-rose-950/40">
           <div className="container py-6 md:py-8">
@@ -1765,7 +1760,6 @@ export default function SmartThermostatSetup() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

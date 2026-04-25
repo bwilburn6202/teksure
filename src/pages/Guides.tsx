@@ -12,8 +12,6 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, categoryDescriptions, type Guide, type GuideCategory } from '@/data/guides';
 import { getCompletedGuides, getProgressCount } from '@/lib/progress';
@@ -417,7 +415,6 @@ const Guides = () => {
           numberOfItems: guides.length,
         }}
       />
-      <Navbar />
 
       {/* ══════════════════════════════════════════
             HERO
@@ -688,7 +685,6 @@ const Guides = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

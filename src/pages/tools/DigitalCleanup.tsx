@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -26,7 +24,6 @@ export default function DigitalCleanup() {
   return (
     <>
       <SEOHead title="Digital Cleanup Checklist" description="Clean up your phone, computer, and online accounts in 30 minutes. Free up space and improve performance." path="/tools/digital-cleanup" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><Trash2 className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Digital Cleanup Checklist</h1><p className="text-muted-foreground">Clean up your devices in 30 minutes</p></div>
         <div className="flex items-center justify-between mb-4"><span className="text-sm font-medium">{done.size}/{TASKS.length} tasks done</span>{done.size > 0 && <Button size="sm" variant="ghost" onClick={() => setDone(new Set())} className="gap-1 text-xs"><RotateCcw className="h-3 w-3" /> Reset</Button>}</div>
@@ -38,7 +35,6 @@ export default function DigitalCleanup() {
         ))}</div>
         {done.size === TASKS.length && <div className="text-center mt-8 p-6 rounded-xl bg-green-500/10 border border-green-500/30"><Sparkles className="h-8 w-8 text-green-500 mx-auto mb-2" /><h2 className="text-lg font-bold">All clean!</h2><p className="text-sm text-muted-foreground">Your digital life is freshly organized.</p></div>}
       </div></main>
-      <Footer />
     </>
   );
 }

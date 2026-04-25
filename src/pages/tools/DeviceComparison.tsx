@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -451,7 +449,6 @@ export default function DeviceComparison() {
         description="Side-by-side honest comparisons of the biggest tech choices — iPhone vs Android, Mac vs Windows, iPad vs Chromebook, Apple Watch vs Fitbit, and more."
         path="/tools/device-comparison"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b">
@@ -642,7 +639,6 @@ export default function DeviceComparison() {
           </Card>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

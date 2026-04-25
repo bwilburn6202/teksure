@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -333,7 +331,6 @@ export default function NewPhoneSetup() {
         description="Set up your new iPhone or Android phone with clear, step-by-step instructions. Covers Apple ID, Google Account, security, privacy, and transferring data from your old phone."
         path="/tools/new-phone-setup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'New Phone Setup' }]} />
@@ -499,7 +496,6 @@ export default function NewPhoneSetup() {
           ) : null}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

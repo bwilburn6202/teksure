@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
@@ -466,7 +464,6 @@ export default function PodcastDirectory() {
         description="A warm, plain-English guide to podcasts for older adults. How to listen on iPhone, Android, smart speakers, and computers — plus 45+ senior-friendly podcasts worth your time."
         path="/tools/podcast-directory"
       />
-      <Navbar />
 
       <main
         id="main-content"
@@ -1253,7 +1250,6 @@ export default function PodcastDirectory() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

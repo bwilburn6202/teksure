@@ -8,8 +8,6 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { guides, categoryLabels, type Guide } from '@/data/guides';
 import { GuideThumbnail } from '@/components/GuideThumbnail';
@@ -450,7 +448,6 @@ const SearchResults = () => {
         }
         path={`/search${urlQuery ? `?q=${encodeURIComponent(urlQuery)}` : ''}`}
       />
-      <Navbar />
 
       <main id="main-content" className="flex-1">
         {/* ── Hero / search header ─────────────────────────── */}
@@ -667,7 +664,6 @@ const SearchResults = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };

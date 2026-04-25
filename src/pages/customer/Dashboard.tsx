@@ -15,8 +15,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
 import { getCompletedGuides } from '@/lib/progress';
@@ -137,7 +135,6 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead title="My Dashboard — TekSure" description="View your bookings, progress, and learning stats on TekSure." path="/dashboard" />
-      <Navbar />
       <main className="container py-8 max-w-6xl">
 
         {/* Header */}
@@ -395,7 +392,6 @@ const Dashboard = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

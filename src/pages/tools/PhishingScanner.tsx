@@ -1,6 +1,4 @@
 import { useState, useRef } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -176,7 +174,6 @@ export default function PhishingScanner() {
         description="Check if a link or website address looks suspicious before you click it. Our free phishing scanner analyzes URLs for warning signs."
       path="/tools/phishing-scanner"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -369,7 +366,6 @@ export default function PhishingScanner() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

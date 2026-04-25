@@ -6,8 +6,6 @@
 
 import { Link } from 'react-router-dom';
 import { ArrowRight, Palette } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 const mockups = [
@@ -56,7 +54,6 @@ const Mockups = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead title="TekSure — Design Mockups" description="Compare three homepage redesign concepts" path="/mockups" />
-      <Navbar />
 
       <main id="main-content" className="container py-12 md:py-20">
         <div className="max-w-4xl mx-auto">
@@ -137,7 +134,6 @@ const Mockups = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

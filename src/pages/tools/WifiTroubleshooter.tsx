@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -253,7 +251,6 @@ export default function WifiTroubleshooter() {
         description="Fix your Wi-Fi problems step by step. Our interactive wizard diagnoses your connection issue and gives you clear instructions to fix it."
       path="/tools/wifi-troubleshooter"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -415,7 +412,6 @@ export default function WifiTroubleshooter() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

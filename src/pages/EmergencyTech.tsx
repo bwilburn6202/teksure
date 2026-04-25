@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -206,7 +204,6 @@ export default function EmergencyTech() {
         description="When things go wrong, tech can save you — if it's ready. Pre-disaster checklist, real product picks, the apps that matter, and what to do after the event."
         path="/emergency-tech"
       />
-      <Navbar />
       <main className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
@@ -474,7 +471,6 @@ export default function EmergencyTech() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

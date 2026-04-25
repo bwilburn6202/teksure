@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -744,7 +742,6 @@ export default function VideoCallHelper() {
         description="A senior-friendly guide to setting up and using video calls on Zoom, FaceTime, Google Meet, Skype, WhatsApp, Facebook Messenger, and GrandPad. Plain-English step-by-step."
         path="/tools/video-call-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border bg-muted/30">
@@ -1126,7 +1123,6 @@ export default function VideoCallHelper() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

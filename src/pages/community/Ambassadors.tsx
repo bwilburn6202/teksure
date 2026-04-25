@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -115,7 +113,6 @@ export default function Ambassadors() {
         description="Meet the TekSure Community Ambassadors — real people dedicated to helping others learn technology. Find out how to become an Ambassador yourself."
         path="/community/ambassadors"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
@@ -243,7 +240,6 @@ export default function Ambassadors() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

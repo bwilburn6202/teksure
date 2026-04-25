@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
@@ -379,7 +377,6 @@ export default function TechGlossaryQuiz() {
         description="Test your tech vocabulary with this fun quiz. Learn common tech terms explained in plain English."
         path="/tools/tech-glossary-quiz"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb
@@ -556,7 +553,6 @@ export default function TechGlossaryQuiz() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -1310,7 +1308,6 @@ export default function LibraryTechHelper() {
           description="Senior-friendly walkthrough for Libby, Hoopla, Kanopy, Mango, LinkedIn Learning, Ancestry, and Consumer Reports — all free with your US public library card."
           path="/tools/library-tech-helper"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           {/* Hero — warm teal gradient */}
           <section className="border-b border-border bg-gradient-to-br from-teal-50 via-cyan-50 to-emerald-50 dark:from-teal-950/40 dark:via-cyan-950/30 dark:to-emerald-950/30">
@@ -1715,7 +1712,6 @@ export default function LibraryTechHelper() {
             </div>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -1728,7 +1724,6 @@ export default function LibraryTechHelper() {
         description={`Step-by-step walkthrough to set up ${wizard.name} with your library card. Designed for seniors and first-time users.`}
         path="/tools/library-tech-helper"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-gradient-to-br from-teal-50 via-cyan-50 to-emerald-50 dark:from-teal-950/30 dark:via-cyan-950/20 dark:to-emerald-950/20">
           <div className="container py-6 md:py-8">
@@ -1931,7 +1926,6 @@ export default function LibraryTechHelper() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

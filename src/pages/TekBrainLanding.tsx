@@ -15,8 +15,6 @@
 //     and — just as important — what it isn't.
 // ─────────────────────────────────────────────────────────────────────────────
 import { useNavigate } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -64,7 +62,6 @@ export default function TekBrainLanding() {
         description="Ask any tech question in plain English and get step-by-step help, pulled from TekSure's library of 3,000+ senior-friendly guides. Free, no signup required."
         path="/tekbrain"
       />
-      <Navbar />
 
       <main className="min-h-screen bg-gradient-to-b from-[#E1D4F0]/50 via-[#FAF8F4] to-white">
         {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
@@ -518,7 +515,6 @@ export default function TekBrainLanding() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

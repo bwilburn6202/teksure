@@ -1,6 +1,4 @@
 import { useRef } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -156,7 +154,6 @@ export default function QuickReference() {
         }
       `}</style>
       <div className="no-print">
-        <Navbar />
       </div>
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 no-print">
@@ -199,7 +196,6 @@ export default function QuickReference() {
         </div>
       </main>
       <div className="no-print">
-        <Footer />
       </div>
     </>
   );

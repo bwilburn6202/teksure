@@ -1,5 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -49,7 +47,6 @@ export default function GiftSubscription() {
         description="Give someone the gift of digital confidence. Gift TekSure subscriptions from $9.99 — perfect for parents, grandparents, and loved ones."
         path="/gift"
       />
-      <Navbar />
       <main className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
@@ -126,7 +123,6 @@ export default function GiftSubscription() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

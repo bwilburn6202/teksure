@@ -10,8 +10,6 @@ import {
   Wrench,
 } from 'lucide-react';
 import { toast } from 'sonner';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -127,7 +125,6 @@ export default function Favorites() {
         description="Guides and tools you've saved on TekSure — all in one place for quick access."
         path="/favorites"
       />
-      <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
         {/* ── Hero ──────────────────────────────────────────────────────── */}
         <section className="border-b border-border py-10 px-4">
@@ -300,7 +297,6 @@ export default function Favorites() {
           )}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

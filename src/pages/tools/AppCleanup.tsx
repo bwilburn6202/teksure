@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -51,7 +49,6 @@ export default function AppCleanup() {
   return (
     <>
       <SEOHead title="App Cleanup Advisor" description="Find apps you do not need and free up storage on your phone. Get personalized recommendations for which apps to keep, review, or remove." path="/tools/app-cleanup" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-3xl py-12 px-4">
         <div className="text-center mb-10"><Trash2 className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">App Cleanup Advisor</h1><p className="text-muted-foreground max-w-lg mx-auto">Find apps wasting space on your phone and get recommendations for which to keep, review, or remove.</p></div>
 
@@ -87,7 +84,6 @@ export default function AppCleanup() {
           </div>
         </CardContent></Card>
       </div></main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -116,7 +114,6 @@ export default function InternetPlanComparator() {
         description="Compare internet plans from Spectrum, Xfinity, AT&T, Verizon, T-Mobile, and more. Personalized recommendations based on how you use the internet."
         path="/tools/internet-plan-comparator"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14">
@@ -276,7 +273,6 @@ export default function InternetPlanComparator() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

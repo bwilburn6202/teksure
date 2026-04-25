@@ -20,8 +20,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 
@@ -460,7 +458,6 @@ export default function SafeLinkChecker() {
         description="Paste any suspicious link and get a plain-language safety analysis — privacy-first, no tracking, no server calls. Spots shorteners, lookalikes, phishing keywords and more."
         path="/tools/safe-link-checker"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
 
         {/* Hero */}
@@ -701,7 +698,6 @@ export default function SafeLinkChecker() {
         </div>
 
       </main>
-      <Footer />
     </>
   );
 }

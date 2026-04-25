@@ -8,8 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { SEOHead } from '@/components/SEOHead';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { Separator } from '@/components/ui/separator';
 import { useAuth } from '@/contexts/AuthContext';
@@ -151,12 +149,10 @@ const CustomerJobRoom = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-16 max-w-4xl flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-10 w-10 animate-spin text-primary" />
           <p className="text-lg text-muted-foreground">Loading your booking...</p>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -165,7 +161,6 @@ const CustomerJobRoom = () => {
   if (error || !booking) {
     return (
       <div className="min-h-screen bg-background">
-        <Navbar />
         <div className="container py-16 max-w-4xl">
           <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
             <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -188,7 +183,6 @@ const CustomerJobRoom = () => {
             </CardContent>
           </Card>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -201,7 +195,6 @@ const CustomerJobRoom = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead title="Booking Details — TekSure" description="View details and status of your TekSure support booking." path={`/customer/job/${id}`} />
-      <Navbar />
       <div className="container py-8 max-w-4xl">
         <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -335,7 +328,6 @@ const CustomerJobRoom = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

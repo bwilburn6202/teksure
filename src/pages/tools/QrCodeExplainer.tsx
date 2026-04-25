@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
@@ -175,7 +173,6 @@ export default function QrCodeExplainer() {
         description="QR codes are links in disguise. Decode safely, paste the URL here, and find out before you scan."
         path="/tools/qr-code-explainer"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'QR Code Safety Check' }]} />
@@ -327,7 +324,6 @@ export default function QrCodeExplainer() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

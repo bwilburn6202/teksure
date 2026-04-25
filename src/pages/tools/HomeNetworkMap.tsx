@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -37,7 +35,6 @@ export default function HomeNetworkMap() {
   return (
     <>
       <SEOHead title="Home Network Map" description="Map every device on your home WiFi and get security recommendations for each one." path="/tools/home-network-map" />
-      <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-3xl py-12 px-4">
         <div className="text-center mb-10"><Wifi className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Home Network Map</h1><p className="text-muted-foreground">Map your connected devices and get security tips for each one</p></div>
 
@@ -72,7 +69,6 @@ export default function HomeNetworkMap() {
           <div className="text-center py-12 text-muted-foreground"><Wifi className="h-12 w-12 mx-auto mb-3 opacity-30" /><p className="text-sm">Start by adding the devices connected to your home WiFi.</p><p className="text-xs mt-1">Think about: phones, laptops, smart TVs, speakers, cameras, printers, game consoles, and smart home devices.</p></div>
         )}
       </div></main>
-      <Footer />
     </>
   );
 }

@@ -22,8 +22,6 @@ import {
   HelpCircle,
   type LucideIcon,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -852,7 +850,6 @@ export default function FreeResourceHub() {
         description="A plain-language catalog of FREE, LEGAL, senior-friendly resources — streaming, library apps, classes, government benefits, tax help, books, software, mental health lines, and fact-check sites."
         path="/tools/free-resource-hub"
       />
-      <Navbar />
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-4xl mx-auto">
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
@@ -1128,7 +1125,6 @@ export default function FreeResourceHub() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

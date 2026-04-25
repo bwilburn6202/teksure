@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -262,7 +260,6 @@ export default function BereavementTech() {
         title="Bereavement Tech — Honoring a Life and Navigating the Aftermath | TekSure"
         description="When someone you love dies, the tech side of grief is real. A compassionate, practical guide to accounts, memorials, digital legacy, subscriptions, and ongoing grief support."
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-slate-50 to-background dark:from-slate-900/40">
@@ -591,7 +588,6 @@ export default function BereavementTech() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

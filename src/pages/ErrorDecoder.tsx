@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -212,7 +210,6 @@ export default function ErrorDecoder() {
         description="Paste any error message and get a plain-English explanation plus 3 practical fixes."
         path="/tools/error-decoder"
       />
-      <Navbar />
       <main className="container py-16 min-h-[60vh]">
         <div className="flex items-center gap-3 mb-2 border-b border-border pb-6">
           <AlertCircle className="h-8 w-8 text-destructive" />
@@ -271,7 +268,6 @@ export default function ErrorDecoder() {
           ))}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

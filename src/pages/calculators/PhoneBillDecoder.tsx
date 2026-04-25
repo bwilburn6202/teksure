@@ -20,8 +20,6 @@ import {
   ShieldCheck,
   Receipt,
 } from 'lucide-react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { BookmarkButton } from '@/components/BookmarkButton';
@@ -447,7 +445,6 @@ export default function PhoneBillDecoder() {
         description="Paste in every line from your cell phone bill and see what each charge means, which fees are negotiable, and how to save $20 or more every month — in plain English."
         path="/calculators/phone-bill"
       />
-      <Navbar />
 
       {/* ── Hero ───────────────────────────── */}
       <section className="relative overflow-hidden border-b border-border">
@@ -1039,7 +1036,6 @@ export default function PhoneBillDecoder() {
         </Card>
       </main>
 
-      <Footer />
     </div>
   );
 }

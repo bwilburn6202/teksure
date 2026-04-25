@@ -9,8 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 
 /* ── Types ─────────────────────────────────────────── */
@@ -589,7 +587,6 @@ export default function StorageOptimizer() {
         description="Step-by-step cleanup for iPhone, Android, Mac, Windows, and Chromebook. Track your progress and reclaim gigabytes of storage for free."
         path="/tools/storage-optimizer"
       />
-      <Navbar />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950/30 dark:to-background py-16">
@@ -785,7 +782,6 @@ export default function StorageOptimizer() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

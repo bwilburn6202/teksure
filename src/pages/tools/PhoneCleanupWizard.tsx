@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
@@ -521,7 +519,6 @@ export default function PhoneCleanupWizard() {
           description="A senior-friendly step-by-step wizard that walks you through freeing up storage on your iPhone or Android phone. No software required."
           path="/tools/phone-cleanup"
         />
-        <Navbar />
         <main className="min-h-screen bg-background">
           <section className="border-b border-border bg-muted/30">
             <div className="container py-10 md:py-14 relative">
@@ -604,7 +601,6 @@ export default function PhoneCleanupWizard() {
             </Card>
           </section>
         </main>
-        <Footer />
       </>
     );
   }
@@ -617,7 +613,6 @@ export default function PhoneCleanupWizard() {
         description={`Step-by-step walkthrough to free up storage on your ${PHONE_LABEL[phone]}.`}
         path="/tools/phone-cleanup"
       />
-      <Navbar />
       <main className="min-h-screen bg-background">
         <section className="border-b border-border bg-muted/30">
           <div className="container py-6 md:py-8">
@@ -844,7 +839,6 @@ export default function PhoneCleanupWizard() {
           ) : null}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

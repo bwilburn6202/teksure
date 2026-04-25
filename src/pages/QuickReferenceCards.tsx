@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -127,7 +125,6 @@ Printed from TekSure.com
         path="/quick-reference"
       />
       <div className="print:hidden">
-        <Navbar />
       </div>
 
       <main className="container py-12 min-h-[70vh]">
@@ -259,7 +256,6 @@ Printed from TekSure.com
       </main>
 
       <div className="print:hidden">
-        <Footer />
       </div>
     </>
   );
