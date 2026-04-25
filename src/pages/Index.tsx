@@ -116,7 +116,7 @@ function HomepageNewsletter() {
           id="newsletter-heading"
           className="text-3xl md:text-4xl font-bold tracking-tight mb-3 leading-tight"
         >
-          Get a Free Tech Tip Every Tuesday
+          Get a Free Tech Tip Every Sunday
         </h2>
         <p className="text-base md:text-lg text-white/80 leading-relaxed mb-8 max-w-xl mx-auto">
           Join thousands of people learning tech the friendly way. No spam,
@@ -129,7 +129,7 @@ function HomepageNewsletter() {
             className="inline-flex items-center gap-2 text-base font-semibold bg-emerald-500/15 border border-emerald-300/30 text-emerald-100 rounded-full px-5 py-3"
           >
             <Sparkles className="h-5 w-5" aria-hidden="true" />
-            You&rsquo;re in! Check your inbox Tuesday.
+            You&rsquo;re in! Check your inbox Sunday.
           </div>
         ) : (
           <form
@@ -144,6 +144,7 @@ function HomepageNewsletter() {
               id="home-newsletter-email"
               type="email"
               required
+              autoComplete="email"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
