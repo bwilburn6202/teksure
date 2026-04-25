@@ -241,7 +241,7 @@ export function Navbar() {
               <Search className="h-[18px] w-[18px]" aria-hidden="true" />
             </button>
 
-            {/* Easy Mode — extra visible for seniors */}
+            {/* Easy Mode — glass bubble icon, matches Search/Settings */}
             <button
               onClick={toggleSeniorMode}
               aria-pressed={seniorMode}
@@ -250,15 +250,13 @@ export function Navbar() {
                   ? 'Turn off Easy Mode'
                   : 'Turn on Easy Mode (larger text and simpler layout)'
               }
-              className={`inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[14px] font-bold border-2
-                          transition-colors ${focusRing}
+              className={`inline-flex items-center justify-center h-11 w-11 rounded-full border transition-colors ${focusRing}
                           ${seniorMode
-                            ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F] hover:border-[#C6661F] shadow-[0_4px_12px_rgba(232,122,43,0.35)]'
-                            : 'bg-white/60 dark:bg-white/10 border-white/80 dark:border-white/15 text-[#1A1A1A] dark:text-white/90 hover:border-[#E87A2B] hover:text-[#B35A00] dark:hover:text-[#E87A2B]'
+                            ? 'bg-[#E87A2B]/20 border-[#E87A2B]/60 text-[#E87A2B] dark:bg-[#E87A2B]/20 dark:border-[#E87A2B]/40 shadow-[0_2px_8px_rgba(232,122,43,0.25)]'
+                            : 'bg-white/60 dark:bg-white/10 border-white/80 dark:border-white/15 text-[#1A1A1A] dark:text-white/90 hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30'
                           }`}
             >
-              <UserCog className="h-4 w-4" aria-hidden="true" />
-              {seniorMode ? 'Easy Mode: ON' : 'Easy Mode'}
+              <UserCog className="h-[18px] w-[18px]" aria-hidden="true" />
             </button>
 
             {/* Settings / Display & Accessibility */}

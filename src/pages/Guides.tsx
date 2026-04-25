@@ -422,13 +422,13 @@ const Guides = () => {
       {/* ══════════════════════════════════════════
             HERO
          ══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E8D4] via-[#E8F1E5]/60 to-background dark:from-emerald-950/40 dark:via-green-950/20 dark:to-background border-b-2 border-border">
+      <section className="relative overflow-hidden bg-background border-b-2 border-border">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-60"
+          className="pointer-events-none absolute inset-0 opacity-40"
           style={{
             background:
-              'radial-gradient(800px circle at 20% 0%, rgb(216 232 212 / 0.6), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(195 221 199 / 0.45), transparent 60%)',
+              'radial-gradient(900px circle at 50% 0%, hsl(var(--primary) / 0.07), transparent 65%)',
           }}
         />
         <div className="container relative py-16 md:py-24">
@@ -439,7 +439,7 @@ const Guides = () => {
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-5">
               Find a guide for{' '}
-              <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-500 bg-clip-text text-transparent">
+              <span className="text-gradient">
                 anything
               </span>
             </h1>

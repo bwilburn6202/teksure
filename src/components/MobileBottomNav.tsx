@@ -40,14 +40,28 @@ export function MobileBottomNav() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  'flex min-h-[56px] flex-col items-center justify-center gap-0.5 px-1 py-1.5 text-[11px] font-medium transition-colors ' +
+                  'flex min-h-[56px] flex-col items-center justify-center gap-1 px-1 py-1.5 text-[11px] font-medium transition-colors ' +
                   (isActive
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground')
                 }
               >
-                <Icon className="h-5 w-5" aria-hidden="true" />
-                <span>{item.label}</span>
+                {({ isActive }) => (
+                  <>
+                    <span
+                      className={
+                        'flex h-9 w-9 items-center justify-center rounded-full border transition-colors ' +
+                        (isActive
+                          ? 'bg-primary/10 border-primary/30 text-primary'
+                          : 'bg-white/50 border-white/70 text-muted-foreground dark:bg-white/8 dark:border-white/15 dark:text-white/70 backdrop-blur-sm')
+                      }
+                      aria-hidden="true"
+                    >
+                      <Icon className="h-[18px] w-[18px]" />
+                    </span>
+                    <span>{item.label}</span>
+                  </>
+                )}
               </NavLink>
             </li>
           );

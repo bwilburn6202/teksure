@@ -47,10 +47,6 @@ const Index = () => {
       <style>{`
         .teksure-home {
           min-height: 100vh;
-          background:
-            radial-gradient(1100px 520px at 50% -10%, #FFE9C7 0%, rgba(255,233,199,0) 60%),
-            radial-gradient(800px 400px at 90% 10%, #FFEAD2 0%, rgba(255,234,210,0) 60%),
-            #FAF8F4;
           color: #1A1A1A;
           font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
           font-weight: 500;

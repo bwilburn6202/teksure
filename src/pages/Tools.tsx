@@ -2196,13 +2196,13 @@ export default function Tools() {
         </div>
 
         {/* ── Hero ─────────────────────────────── */}
-        <section className="relative overflow-hidden border-b bg-gradient-to-b from-[#D5E3F5]/60 via-[#E4EEF8]/30 to-transparent">
+        <section className="relative overflow-hidden border-b bg-background">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 opacity-60"
+            className="pointer-events-none absolute inset-0 opacity-40"
             style={{
               background:
-                'radial-gradient(800px circle at 20% 0%, rgb(213 227 245 / 0.55), transparent 60%), radial-gradient(600px circle at 80% 20%, rgb(195 215 236 / 0.4), transparent 60%)',
+                'radial-gradient(900px circle at 50% 0%, hsl(var(--primary) / 0.07), transparent 65%)',
             }}
           />
           <div className="container relative py-14 md:py-20">
