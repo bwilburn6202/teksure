@@ -265,7 +265,7 @@ export function Footer() {
           {/* Newsletter */}
           <div>
             <h4 className="text-lg font-semibold text-foreground mb-1.5">
-              Weekly tips delivered simply
+              Weekly tips in plain English
             </h4>
             <p className="text-base text-foreground/75 mb-4 leading-relaxed">
               One short, helpful tech tip in your inbox every Sunday. No spam, ever.
@@ -276,7 +276,7 @@ export function Footer() {
                 className="flex items-center gap-2 text-base font-medium text-teksure-success"
               >
                 <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-                Thanks! We&rsquo;ll send your first tip this Tuesday.
+                Thanks! We&rsquo;ll send your first tip this Sunday.
               </div>
             ) : (
               <form
@@ -323,7 +323,7 @@ export function Footer() {
               Connect with us
             </h4>
             <p className="text-base text-foreground/75 mb-4 leading-relaxed">
-              Follow along for friendly, easy-to-understand tech tips.
+              Follow along for friendly tech tips in plain English.
             </p>
             <div className="flex md:justify-end items-center gap-3 mb-5">
               <a
