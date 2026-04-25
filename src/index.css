@@ -399,30 +399,31 @@ html.font-size-xxl {
   }
 }
 
-/* ── Senior Tech Mode ───────────────────────────────────────── */
-html.senior-mode {
-  font-size: 20px;
+/* ── Global gradient strip — page hero uniformity ──────────────────────────
+   Sections with Tailwind gradient utilities create per-page color worlds
+   (green guides, blue tools, purple hubs, etc.). These rules strip the
+   background-image from any `section` with `bg-gradient-to-b/br` UNLESS it
+   also carries `text-white`, which signals an intentional vivid accent CTA
+   (e.g. the red scam-alert banner) that should stay as designed.
+   Root-level `div.min-h-screen` page wrappers with gradients are also reset. */
+
+section.bg-gradient-to-b:not(.text-white),
+section.bg-gradient-to-br:not(.text-white),
+section.bg-gradient-to-r:not(.text-white) {
+  background-image: none !important;
+  background-color: hsl(var(--background)) !important;
 }
 
-html.senior-mode button,
-html.senior-mode a,
-html.senior-mode [role="button"] {
-  min-height: 52px !important;
-  min-width: 52px !important;
+.dark section.bg-gradient-to-b:not(.text-white),
+.dark section.bg-gradient-to-br:not(.text-white),
+.dark section.bg-gradient-to-r:not(.text-white) {
+  background-color: hsl(var(--background)) !important;
 }
 
-html.senior-mode .senior-hide {
-  display: none !important;
-}
-
-html.senior-mode .senior-simplify {
-  gap: 1.5rem !important;
-}
-
-html.senior-mode * {
-  transition-duration: 100ms !important;
-  animation-duration: 100ms !important;
-  animation-iteration-count: 1 !important;
+/* Page-root div wrappers (e.g. AskTekSure, Stories, TechHelpNearMe) */
+div.min-h-screen.bg-gradient-to-b {
+  background-image: none !important;
+  background-color: hsl(var(--background)) !important;
 }
 
 /* ─── Reduced Motion Preference ─────────────────────────── */

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Accessibility } from 'lucide-react';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
-import { SeniorModeToggle } from '@/components/SeniorModeToggle';
 import { HighContrastToggle } from '@/components/HighContrastToggle';
 import { LanguageToggle } from '@/components/LanguageToggle';
 
@@ -34,7 +33,6 @@ export function AccessibilityTray() {
         <FontSizeToggle />
         <HighContrastToggle />
         <DarkModeToggle />
-        <SeniorModeToggle />
         <LanguageToggle />
       </div>
 
@@ -60,8 +58,7 @@ export function AccessibilityTray() {
             <FontSizeToggle />
             <HighContrastToggle />
             <DarkModeToggle />
-            <SeniorModeToggle />
-            <LanguageToggle />
+                <LanguageToggle />
           </div>
         )}
       </div>

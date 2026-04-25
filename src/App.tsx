@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from
 import { useState, useEffect } from "react";
 import { WifiOff } from "lucide-react";
 import { AuthProvider } from "@/contexts/AuthContext";
-import { SeniorModeProvider } from "@/contexts/SeniorModeContext";
 import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { TierProvider } from "@/contexts/TierContext";
@@ -889,17 +888,15 @@ export const AppShell = ({ children, helmetContext }: { children?: ReactNode; he
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <LanguageProvider>
-            <SeniorModeProvider>
-              <HighContrastProvider>
-                <TierProvider>
-                  <AuthProvider>
-                    {children}
-                    <AppContent />
-                    <Analytics />
-                  </AuthProvider>
-                </TierProvider>
-              </HighContrastProvider>
-            </SeniorModeProvider>
+            <HighContrastProvider>
+              <TierProvider>
+                <AuthProvider>
+                  {children}
+                  <AppContent />
+                  <Analytics />
+                </AuthProvider>
+              </TierProvider>
+            </HighContrastProvider>
           </LanguageProvider>
         </TooltipProvider>
       </QueryClientProvider>

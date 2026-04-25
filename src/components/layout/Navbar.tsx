@@ -6,7 +6,6 @@ import {
   Search,
   LogOut,
   User,
-  UserCog,
   Settings,
   MessageSquare,
   MessageCircle,
@@ -25,10 +24,8 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
-import { useSeniorMode } from '@/contexts/SeniorModeContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
-import { SeniorModeToggle } from '@/components/SeniorModeToggle';
 import { HighContrastToggle } from '@/components/HighContrastToggle';
 import { LanguageToggle } from '@/components/LanguageToggle';
 
@@ -60,7 +57,6 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  */
 export function Navbar() {
   const { user, logout } = useAuth();
-  const { seniorMode, toggleSeniorMode } = useSeniorMode();
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -241,24 +237,6 @@ export function Navbar() {
               <Search className="h-[18px] w-[18px]" aria-hidden="true" />
             </button>
 
-            {/* Easy Mode — glass bubble icon, matches Search/Settings */}
-            <button
-              onClick={toggleSeniorMode}
-              aria-pressed={seniorMode}
-              aria-label={
-                seniorMode
-                  ? 'Turn off Easy Mode'
-                  : 'Turn on Easy Mode (larger text and simpler layout)'
-              }
-              className={`inline-flex items-center justify-center h-11 w-11 rounded-full border transition-colors ${focusRing}
-                          ${seniorMode
-                            ? 'bg-[#E87A2B]/20 border-[#E87A2B]/60 text-[#E87A2B] dark:bg-[#E87A2B]/20 dark:border-[#E87A2B]/40 shadow-[0_2px_8px_rgba(232,122,43,0.25)]'
-                            : 'bg-white/60 dark:bg-white/10 border-white/80 dark:border-white/15 text-[#1A1A1A] dark:text-white/90 hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30'
-                          }`}
-            >
-              <UserCog className="h-[18px] w-[18px]" aria-hidden="true" />
-            </button>
-
             {/* Settings / Display & Accessibility */}
             <Popover>
               <PopoverTrigger asChild>
@@ -286,7 +264,6 @@ export function Navbar() {
                   role="group"
                   aria-labelledby="display-settings-label"
                 >
-                  <SeniorModeToggle />
                   <HighContrastToggle />
                   <FontSizeToggle />
                   <DarkModeToggle />
@@ -512,21 +489,6 @@ export function Navbar() {
                 ))}
               </div>
 
-              {/* Easy Mode — huge, obvious */}
-              <button
-                onClick={toggleSeniorMode}
-                aria-pressed={seniorMode}
-                className={`w-full inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full
-                            text-lg font-bold border-2 transition-colors mb-5 ${focusRing}
-                            ${seniorMode
-                              ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F]'
-                              : 'bg-white dark:bg-transparent border-[#E4DFD4] dark:border-white/20 text-[#1A1A1A] dark:text-white hover:border-[#E87A2B] hover:text-[#B35A00] dark:hover:text-[#E87A2B]'
-                            }`}
-              >
-                <UserCog className="h-5 w-5" aria-hidden="true" />
-                {seniorMode ? 'Easy Mode: ON — Tap to turn off' : 'Turn on Easy Mode'}
-              </button>
-
               {/* Accessibility row */}
               <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
                 Display &amp; Accessibility
@@ -536,7 +498,6 @@ export function Navbar() {
                 role="group"
                 aria-label="Display and accessibility settings"
               >
-                <SeniorModeToggle />
                 <HighContrastToggle />
                 <FontSizeToggle />
                 <DarkModeToggle />
