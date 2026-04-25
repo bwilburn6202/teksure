@@ -113,6 +113,7 @@ export function Navbar() {
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
+    { to: '/pricing', label: 'Pricing' },
     { to: '/favorites', label: 'My Favorites' },
   ];
 

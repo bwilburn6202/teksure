@@ -626,6 +626,16 @@ const Index = () => {
                 </div>
               ))}
             </div>
+            <p className="text-center text-base text-[#444] mt-10">
+              Everything in steps 1 and 2 is free.{' '}
+              <Link
+                to="/pricing"
+                className="font-semibold text-[#2A5FCC] hover:underline underline-offset-4"
+              >
+                See full pricing
+              </Link>
+              .
+            </p>
           </div>
         </section>
 
