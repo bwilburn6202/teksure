@@ -584,7 +584,7 @@ export default function BereavementTech() {
                 <Link to="/guides">Browse all guides</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/book">Book a 1-on-1 session</Link>
+                <Link to="/get-help">Book a 1-on-1 session</Link>
               </Button>
             </div>
           </div>

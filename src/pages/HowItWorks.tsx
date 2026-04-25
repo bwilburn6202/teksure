@@ -82,7 +82,7 @@ const HowItWorks = () => (
               <Link to="/get-help">Get Help Now <ArrowRight className="h-4 w-4" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10">
-              <Link to="/book"><Phone className="h-4 w-4" /> Book a Session</Link>
+              <Link to="/get-help"><Phone className="h-4 w-4" /> Book a Session</Link>
             </Button>
           </div>
         </div>

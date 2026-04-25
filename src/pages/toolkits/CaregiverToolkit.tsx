@@ -1176,7 +1176,7 @@ export default function CaregiverToolkit() {
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
                 <Button asChild size="lg" className="text-base min-h-14 gap-2">
-                  <Link to="/book">
+                  <Link to="/get-help">
                     <Phone className="h-5 w-5" aria-hidden="true" />
                     Book help on their behalf
                   </Link>

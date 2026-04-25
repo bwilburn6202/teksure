@@ -34,7 +34,7 @@ const sections: Section[] = [
     icon: HelpCircle,
     links: [
       { to: '/get-help', label: 'Get Help', icon: HelpCircle },
-      { to: '/book', label: 'Book a Technician', icon: Calendar },
+      { to: '/get-help', label: 'Book a Technician', icon: Calendar },
       { to: '/ai-tutor', label: 'Talk to AI Tutor', icon: Bot },
       { to: '/my-requests', label: 'My Requests', icon: MessageSquare },
     ],

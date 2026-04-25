@@ -270,7 +270,7 @@ const account: Entry[] = [
   { to: '/certificate', label: 'Certificate of Completion', description: 'Download a certificate when you finish a path.' },
   { to: '/memory', label: 'Memory Dashboard', description: 'What TekSure has learned about your preferences.' },
   { to: '/technicians', label: 'Technicians', description: 'Browse available technicians.' },
-  { to: '/book', label: 'Book a Session', description: 'Book a one-on-one tech help session.' },
+  { to: '/pricing', label: 'Pricing', description: 'Free guides and tools, plus a $15 deposit to book a tech.' },
   { to: '/find-a-guide', label: 'Find a Guide', description: 'Help picking the right guide.' },
   { to: '/setup', label: 'Setup Wizard', description: 'A friendly setup wizard for new arrivals.' },
   { to: '/device-hub', label: 'Device Hub', description: 'A hub for setting up and managing devices.' },

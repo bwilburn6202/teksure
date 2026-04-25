@@ -173,7 +173,7 @@ export default function LlmKnowledgeBase() {
                 Use this page as the product-facing config layer, then attach backend jobs for ingest, compile, and scheduled linting.
               </p>
               <Button asChild variant="secondary">
-                <Link to="/book">Start implementation sprint</Link>
+                <Link to="/get-help">Start implementation sprint</Link>
               </Button>
             </CardContent>
           </Card>

@@ -177,7 +177,7 @@ function TechnicianDirectory() {
           <div className="text-center mt-8">
             <p className="text-muted-foreground text-sm mb-3">Ready to book?</p>
             <Button asChild size="lg" className="gap-2 rounded-xl">
-              <Link to="/book">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
+              <Link to="/get-help">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </div>
         </div>
@@ -327,7 +327,7 @@ export default function TechnicianProfile() {
                 <p className="text-sm text-muted-foreground mt-0.5">From $49 for the first hour. No fix, no charge.</p>
               </div>
               <Button asChild className="gap-2 shrink-0 rounded-xl">
-                <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/get-help">Book now <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </CardContent>
           </Card>

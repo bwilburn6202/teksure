@@ -611,7 +611,7 @@ export default function DementiaCareTech() {
                 <Link to="/caregiver-hub">Caregiver Hub</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/book">Book a 1-on-1 setup session</Link>
+                <Link to="/get-help">Book a 1-on-1 setup session</Link>
               </Button>
             </div>
           </div>

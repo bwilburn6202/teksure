@@ -559,7 +559,7 @@ export default function NewGrandparentTech() {
                 <Link to="/guides">Browse all guides</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/book">Book a setup session</Link>
+                <Link to="/get-help">Book a setup session</Link>
               </Button>
             </div>
           </div>
