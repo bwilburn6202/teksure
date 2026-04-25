@@ -6,6 +6,12 @@ export interface SEOHeadProps {
   path?: string;
   type?: string;
   ogImage?: string;
+  /**
+   * Alt text describing the og/twitter image — read by screen readers when a
+   * preview is shared and shown by clients that block remote images. When a
+   * page sets a custom `ogImage`, it should set this too.
+   */
+  ogImageAlt?: string;
   publishedTime?: string;
   modifiedTime?: string;
   canonical?: string;
@@ -16,12 +22,15 @@ export interface SEOHeadProps {
 
 const BASE_URL = 'https://teksure.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
+const DEFAULT_OG_IMAGE_ALT =
+  'TekSure — friendly, plain-English tech support for seniors and beginners.';
 const OG_IMAGE_WIDTH = 1200;
 const OG_IMAGE_HEIGHT = 630;
 
-export function SEOHead({ title, description, path = '/', type = 'website', ogImage, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
+export function SEOHead({ title, description, path = '/', type = 'website', ogImage, ogImageAlt, publishedTime, modifiedTime, canonical, jsonLd, noindex }: SEOHeadProps) {
   const url = `${BASE_URL}${path}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
+  const imageAlt = ogImageAlt ?? DEFAULT_OG_IMAGE_ALT;
   const fullTitle = title.includes('TekSure') ? title : `${title} — TekSure`;
 
   return (
@@ -39,6 +48,7 @@ export function SEOHead({ title, description, path = '/', type = 'website', ogIm
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:alt" content={imageAlt} />
       <meta property="og:image:width" content={String(OG_IMAGE_WIDTH)} />
       <meta property="og:image:height" content={String(OG_IMAGE_HEIGHT)} />
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
@@ -51,6 +61,7 @@ export function SEOHead({ title, description, path = '/', type = 'website', ogIm
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageAlt} />
 
       {/* JSON-LD */}
       {jsonLd && (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map((schema, i) => (
