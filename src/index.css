@@ -232,6 +232,31 @@
   }
 }
 
+/* ── Design Uniformity Overrides ──────────────────────────────────────────
+   All pages share a single warm-cream background (#FCFBF9 light / #050D1F dark).
+   These rules strip per-page colored hero gradients and teksure-home scoped
+   backgrounds so every route looks consistent without touching each page file. */
+
+.teksure-home {
+  background: hsl(var(--background)) !important;
+}
+
+/* Zone sections: use a single subtle primary tint instead of per-zone colors.
+   This keeps semantic meaning without creating 4 different color worlds. */
+.zone-guides,
+.zone-tools,
+.zone-safety,
+.zone-support {
+  background-color: hsl(var(--primary) / 0.035) !important;
+}
+
+.dark .zone-guides,
+.dark .zone-tools,
+.dark .zone-safety,
+.dark .zone-support {
+  background-color: hsl(var(--primary) / 0.06) !important;
+}
+
 /* ── Dark-mode safety net ──────────────────────────────────────────────────
    Some legacy pages hardcode Tailwind light utilities (`bg-white`, `text-black`,
    `text-gray-*`, etc.) that bypass the semantic-token system. These overrides
