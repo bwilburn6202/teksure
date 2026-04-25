@@ -2177,7 +2177,7 @@ export default function Tools() {
     <>
       <SEOHead
         title="Free Tech Tools & Utilities | TekSure"
-        description="99+ free tech tools for everyday people — scam simulator, password leak checker, bill negotiator, WiFi troubleshooter, accessibility finder, and more."
+        description="150+ free tech tools for everyday people — scam simulator, password leak checker, bill negotiator, WiFi troubleshooter, accessibility finder, and more."
         path="/tools"
         jsonLd={{
           '@context': 'https://schema.org',
