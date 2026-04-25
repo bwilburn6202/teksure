@@ -110,7 +110,7 @@ const tipsToAvoid = [
   {
     title: 'Do not sign long service contracts',
     description:
-      'Internet and phone carriers will offer "locked-in" rates with 2-year contracts. Month-to-month plans give you flexibility to renegotiate or switch. Competition between providers is fierce — you have more leverage than you think.',
+      'Internet and phone carriers will offer "locked-in" rates with 2-year contracts. Month-to-month plans give you flexibility to renegotiate or switch. Competition between providers is fierce — you have more bargaining power than you think.',
   },
   {
     title: 'Do not pay for features you will not use',
