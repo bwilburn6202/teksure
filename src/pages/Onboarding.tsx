@@ -40,7 +40,7 @@ const frustrationOptions = [
 ];
 
 const confidenceOptions: { id: 'beginner' | 'intermediate' | 'comfortable'; icon: React.ComponentType<{ className?: string }>; label: string; desc: string }[] = [
-  { id: 'beginner', icon: Sprout, label: 'Just starting', desc: 'I need help with the basics' },
+  { id: 'beginner', icon: Sprout, label: 'Brand new', desc: 'I need help with the basics' },
   { id: 'intermediate', icon: Leaf, label: 'Getting there', desc: 'I can do some things but get stuck' },
   { id: 'comfortable', icon: TreeDeciduous, label: 'Fairly comfortable', desc: 'I want to learn new tricks' },
 ];
@@ -143,7 +143,7 @@ export default function Onboarding() {
       <>
         <SEOHead
           title="Your Personalized Plan | TekSure"
-          description="Based on your answers, here are guides picked just for you."
+          description="Based on your answers, here are guides picked for you."
           path="/onboarding"
         />
         <Navbar />
