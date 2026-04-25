@@ -12,6 +12,7 @@ import {
   MessageCircle,
   Calendar,
   Map,
+  Phone,
   X,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -64,6 +65,12 @@ export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMac, setIsMac] = useState(false);
+
+  useEffect(() => {
+    if (typeof navigator === 'undefined') return;
+    setIsMac(/Mac|iPhone|iPad|iPod/.test(navigator.platform));
+  }, []);
 
   // Lock body scroll when drawer is open, close on Escape.
   useEffect(() => {
@@ -113,6 +120,8 @@ export function Navbar() {
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
     { to: '/favorites', label: 'My Favorites' },
+    { to: '/forum', label: 'Community Forum' },
+    { to: '/pricing', label: 'Pricing' },
     { to: '/this-week', label: 'This Week' },
     { to: '/scam-alerts', label: 'Current Scam Alerts' },
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
@@ -227,11 +236,24 @@ export function Navbar() {
 
           {/* Right utilities (desktop) */}
           <div className="ml-auto hidden md:flex items-center gap-1">
-            {/* Search */}
+            {/* Phone — small but visible click-to-call */}
+            <a
+              href="tel:18008357873"
+              className={`hidden lg:inline-flex items-center gap-1.5 h-11 px-3 rounded-full text-[14px] font-semibold
+                          text-[#2A5FCC] dark:text-white/90
+                          hover:bg-white/70 dark:hover:bg-white/10 hover:underline underline-offset-4
+                          transition-colors ${focusRing}`}
+              aria-label="Call TekSure at 1-800-TEKSURE"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              1-800-TEKSURE
+            </a>
+
+            {/* Search — labeled, prominent, with keyboard hint */}
             <button
               onClick={openSearch}
               aria-label="Open search"
-              className={`inline-flex items-center justify-center h-11 w-11 rounded-full
+              className={`inline-flex items-center gap-2 h-11 pl-3 pr-2 rounded-full
                           bg-white/60 dark:bg-white/10 border border-white/80 dark:border-white/15
                           text-[#1A1A1A] dark:text-white/90
                           hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC]
@@ -239,6 +261,16 @@ export function Navbar() {
                           transition-colors ${focusRing}`}
             >
               <Search className="h-[18px] w-[18px]" aria-hidden="true" />
+              <span className="text-[14px] font-semibold">Search</span>
+              <kbd
+                aria-hidden="true"
+                className="ml-1 inline-flex items-center justify-center h-6 px-1.5 rounded-md
+                           border border-[#E4DFD4] dark:border-white/20
+                           bg-[#FAF8F4]/80 dark:bg-white/10
+                           text-[11px] font-semibold text-[#6B6B6B] dark:text-white/70"
+              >
+                {isMac ? '⌘K' : 'Ctrl+K'}
+              </kbd>
             </button>
 
             {/* Easy Mode — glass bubble icon, matches Search/Settings */}
@@ -357,6 +389,16 @@ export function Navbar() {
 
           {/* Mobile right utilities */}
           <div className="ml-auto flex md:hidden items-center gap-0.5">
+            <a
+              href="tel:18008357873"
+              aria-label="Call TekSure"
+              className={`inline-flex items-center justify-center h-11 w-11 rounded-full
+                          text-[#2A5FCC] dark:text-white/90
+                          hover:bg-white/70 dark:hover:bg-white/10
+                          transition-colors ${focusRing}`}
+            >
+              <Phone className="h-5 w-5" aria-hidden="true" />
+            </a>
             <button
               onClick={openSearch}
               aria-label="Open search"

@@ -586,6 +586,19 @@ const GuideDetail = () => {
                 {guide.excerpt}
               </p>
 
+              {/* Print This Guide — prominent, near the top, hidden when printing */}
+              <div className="mb-5 no-print print:hidden">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="gap-2 min-h-[48px] rounded-xl border-2 hover:border-primary hover:text-primary"
+                  onClick={() => window.print()}
+                >
+                  <Printer className="h-5 w-5" aria-hidden="true" />
+                  Print This Guide
+                </Button>
+              </div>
+
               {/* Meta row */}
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground pt-4 border-t border-border/60">
                 <span className="flex items-center gap-1.5">
@@ -822,18 +835,26 @@ const GuideDetail = () => {
 
             <Separator className="mb-10 no-print" />
 
-            {/* Still stuck CTA */}
-            <div className="rounded-3xl border border-border bg-muted/50 p-10 text-center mb-12 no-print">
-              <h2 className="text-2xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
-              <p className="text-muted-foreground mb-6 max-w-md mx-auto text-base">
-                Our verified technicians can fix this issue for you — remotely or in person.
+            {/* Still stuck CTA — warm card, hidden when printing */}
+            <div className="rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-8 md:p-10 text-center mb-12 no-print print:hidden">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">Still stuck? No problem.</h2>
+              <p className="text-base md:text-lg text-foreground/80 mb-7 max-w-xl mx-auto leading-relaxed">
+                Sometimes a guide isn&rsquo;t enough. Our technicians can walk
+                you through it step by step, in plain English, on your schedule.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Button asChild size="lg" className="rounded-xl gap-2 min-h-[48px]">
-                  <Link to="/book">Book a Verified Tech <ArrowRight className="h-5 w-5" /></Link>
+                <Button asChild size="lg" className="rounded-xl gap-2 min-h-[52px] px-7 text-base font-bold">
+                  <Link to="/get-help">
+                    <Calendar className="h-5 w-5" aria-hidden="true" />
+                    Book a Tech Helper
+                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                  </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-xl min-h-[48px]">
-                  <Link to="/how-it-works">How It Works</Link>
+                <Button asChild size="lg" variant="outline" className="rounded-xl gap-2 min-h-[52px] px-7 text-base font-bold border-2">
+                  <Link to="/tekbrain/chat">
+                    <Sparkles className="h-5 w-5" aria-hidden="true" />
+                    Ask TekBrain
+                  </Link>
                 </Button>
               </div>
             </div>

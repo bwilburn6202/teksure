@@ -77,7 +77,7 @@ const Ambassadors            = lazy(() => import("./pages/community/Ambassadors"
 const PhishingScanner        = lazy(() => import("./pages/tools/PhishingScanner"));
 const WifiTroubleshooter     = lazy(() => import("./pages/tools/WifiTroubleshooter"));
 const TechnicianProfile      = lazy(() => import("./pages/TechnicianProfile"));
-const Book                   = lazy(() => import("./pages/Book"));
+const Pricing                = lazy(() => import("./pages/Pricing"));
 const PaymentSuccess         = lazy(() => import("./pages/payment/Success"));
 const PaymentCancel          = lazy(() => import("./pages/payment/Cancel"));
 const ForumIndex             = lazy(() => import("./pages/forum/Index"));
@@ -131,10 +131,6 @@ const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
 const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
-const Mockups                = lazy(() => import("./pages/Mockups"));
-const MockupA                = lazy(() => import("./pages/MockupA"));
-const MockupB                = lazy(() => import("./pages/MockupB"));
-const MockupC                = lazy(() => import("./pages/MockupC"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
@@ -450,8 +446,8 @@ function OfflineBanner() {
 
 const FloatingChrome = () => {
   const { pathname } = useLocation();
-  // The chat IS the page on `/` and `/tekbrain/chat`, so skip the launcher there.
-  if (pathname === "/" || pathname === "/tekbrain/chat") return null;
+  // The chat IS the page on `/tekbrain/chat`, so skip the launcher there.
+  if (pathname === "/tekbrain/chat") return null;
   return (
     <>
       <TekBrain />
@@ -526,18 +522,14 @@ const AppContent = () => {
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
-          {/* Homepage is now the TekBrain RAG chat — private-knowledge-base AI
-              agent trained on TekSure's guides. Old landing lives at /welcome. */}
-          <Route path="/" element={<TekBrainPage />} />
-          <Route path="/welcome" element={<Index />} />
-          <Route path="/mockups" element={<ProtectedRoute allowedRoles={['admin']}><Mockups /></ProtectedRoute>} />
-          <Route path="/mockup-a" element={<ProtectedRoute allowedRoles={['admin']}><MockupA /></ProtectedRoute>} />
-          <Route path="/mockup-b" element={<ProtectedRoute allowedRoles={['admin']}><MockupB /></ProtectedRoute>} />
-          <Route path="/mockup-c" element={<ProtectedRoute allowedRoles={['admin']}><MockupC /></ProtectedRoute>} />
+          {/* Homepage is the friendly senior-focused landing page. TekBrain
+              chat remains accessible at /brain and /tekbrain/chat. */}
+          <Route path="/" element={<Index />} />
+          <Route path="/welcome" element={<Navigate to="/" replace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          {/* Pricing page TBD */}
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/guias" element={<GuidesEspanol />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
@@ -609,7 +601,7 @@ const AppContent = () => {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/technicians" element={<TechnicianProfile />} />
           <Route path="/technicians/:id" element={<TechnicianProfile />} />
-          <Route path="/book" element={<Book />} />
+          <Route path="/book" element={<Navigate to="/get-help" replace />} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/cancel" element={<PaymentCancel />} />
           <Route path="/news" element={<News />} />

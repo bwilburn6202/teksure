@@ -15,20 +15,35 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { supabase } from '@/integrations/supabase/client';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
-      setSubscribed(true);
-      setEmail('');
-      // Reset after 4 seconds so users can subscribe again if needed
-      setTimeout(() => setSubscribed(false), 4000);
+    const trimmed = email.trim().toLowerCase();
+    if (!trimmed.includes('@') || !trimmed.includes('.')) {
+      setError('Please enter a valid email address.');
+      return;
     }
+    setSubmitting(true);
+    setError('');
+    const { error: dbError } = await supabase
+      .from('newsletter_subscribers')
+      .insert({ email: trimmed });
+    setSubmitting(false);
+    if (dbError && dbError.code !== '23505') {
+      setError('Something went wrong. Please try again.');
+      return;
+    }
+    setSubscribed(true);
+    setEmail('');
+    setTimeout(() => setSubscribed(false), 5000);
   };
 
   const columns = [
@@ -73,7 +88,7 @@ export function Footer() {
         { to: '/tekbrain', label: 'Ask TekBrain' },
         { to: '/scam-defense', label: 'Scam Help' },
         { to: '/setup', label: 'Setup Wizard' },
-        { to: '/book', label: 'Book Help' },
+        { to: '/get-help', label: 'Book Help' },
         { to: '/tools', label: 'Find a Tool' },
         { to: '/glossary', label: 'Tech Glossary A–Z' },
       ],
@@ -93,9 +108,11 @@ export function Footer() {
       title: 'Contact & Legal',
       icon: Mail,
       links: [
+        { to: 'tel:18008357873', label: 'Call us: 1-800-TEKSURE', external: true },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
         { to: '/technicians', label: 'Book a technician' },
-        { to: '/book', label: 'Schedule a session' },
+        { to: '/get-help', label: 'Schedule a session' },
+        { to: '/pricing', label: 'Pricing' },
         { to: '/faq', label: 'FAQ' },
         { to: '/privacy', label: 'Privacy Policy' },
         { to: '/privacy', label: 'Terms of Use' },
@@ -106,7 +123,7 @@ export function Footer() {
   return (
     <footer
       aria-label="Site footer"
-      className="relative border-t border-amber-100 dark:border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-amber-50/60 dark:from-muted/40 dark:via-muted/20 dark:to-muted/40"
+      className="relative border-t border-amber-100 dark:border-border bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-amber-50/60 dark:from-muted/40 dark:via-muted/20 dark:to-muted/40 print:hidden"
     >
       {/* Trust indicator strip */}
       <div className="border-b border-amber-100/80 dark:border-border/60 bg-white/60 dark:bg-background/40 backdrop-blur-sm">
@@ -147,7 +164,7 @@ export function Footer() {
             size="lg"
             className="text-base font-semibold h-14 px-8 rounded-full shadow-md hover:shadow-lg transition-all whitespace-nowrap"
           >
-            <Link to="/book" aria-label="Book a session to talk to a real human">
+            <Link to="/get-help" aria-label="Book a session to talk to a real human">
               <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
               Talk to a Real Human
             </Link>
@@ -157,27 +174,46 @@ export function Footer() {
 
       {/* Main footer body */}
       <div className="container pb-10">
-        {/* Brand — horizontal wordmark, ~180px wide for footer consistency */}
-        <div className="mb-10 max-w-md">
-          <Link to="/" className="inline-block mb-3" aria-label="TekSure home">
-            <img
-              src="/teksure-logo.svg"
-              alt="TekSure"
-              width={183}
-              height={40}
-              className="h-10 w-auto block dark:hidden"
-              loading="lazy"
-            />
-            <img
-              src="/teksure-logo-white.svg"
-              alt=""
-              aria-hidden="true"
-              width={183}
-              height={40}
-              className="h-10 w-auto hidden dark:block"
-              loading="lazy"
-            />
-          </Link>
+        {/* Brand + prominent contact line */}
+        <div className="mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+          <div className="max-w-md">
+            <Link to="/" className="inline-block mb-3" aria-label="TekSure home">
+              <img
+                src="/teksure-logo.svg"
+                alt="TekSure"
+                width={183}
+                height={40}
+                className="h-10 w-auto block dark:hidden"
+                loading="lazy"
+              />
+              <img
+                src="/teksure-logo-white.svg"
+                alt=""
+                aria-hidden="true"
+                width={183}
+                height={40}
+                className="h-10 w-auto hidden dark:block"
+                loading="lazy"
+              />
+            </Link>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base">
+            <a
+              href="tel:18008357873"
+              className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary hover:underline underline-offset-4 transition-colors"
+              aria-label="Call TekSure at 1-800-TEKSURE"
+            >
+              <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
+              1-800-TEKSURE
+            </a>
+            <a
+              href="mailto:hello@teksure.com"
+              className="inline-flex items-center gap-2 font-medium text-foreground/80 hover:text-primary hover:underline underline-offset-4 transition-colors"
+            >
+              <Mail className="h-5 w-5 text-primary" aria-hidden="true" />
+              hello@teksure.com
+            </a>
+          </div>
         </div>
 
         {/* 4-column grid */}
@@ -240,7 +276,7 @@ export function Footer() {
                 className="flex items-center gap-2 text-base font-medium text-teksure-success"
               >
                 <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-                Thanks! We&rsquo;ll send your first tip this Sunday.
+                Thanks! We&rsquo;ll send your first tip this Tuesday.
               </div>
             ) : (
               <form
@@ -256,7 +292,10 @@ export function Footer() {
                   type="email"
                   required
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setError('');
+                  }}
                   placeholder="your@email.com"
                   className="h-12 text-base flex-1 bg-white dark:bg-background"
                 />
@@ -264,11 +303,17 @@ export function Footer() {
                   type="submit"
                   size="lg"
                   variant="default"
+                  disabled={submitting}
                   className="h-12 px-6 text-base font-semibold whitespace-nowrap"
                 >
-                  Sign me up
+                  {submitting ? 'Sending…' : 'Subscribe'}
                 </Button>
               </form>
+            )}
+            {error && (
+              <p role="alert" className="mt-2 text-sm text-destructive">
+                {error}
+              </p>
             )}
           </div>
 
