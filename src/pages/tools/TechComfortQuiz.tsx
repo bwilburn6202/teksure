@@ -162,7 +162,7 @@ const guidesByLevel: Record<Level, { heading: string; emoji: string; message: st
     heading: 'Power User',
     emoji: '',
     message:
-      "You're already comfortable with technology — impressive! These advanced tools will help you take control of your digital life, boost your privacy, and explore cutting-edge features.",
+      "You're already comfortable with technology — impressive! These advanced tools will help you take control of your digital life, boost your privacy, and explore the latest features.",
     guides: [
       { title: 'Privacy Audit', description: 'Review and tighten privacy settings across all your devices and accounts.', path: '/tools/privacy-audit', emoji: '' },
       { title: 'Digital Footprint Scanner', description: 'Discover what information about you is visible online — and how to remove it.', path: '/tools/digital-footprint-scanner', emoji: '' },
