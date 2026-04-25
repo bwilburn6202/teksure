@@ -52,7 +52,7 @@ const Pricing = () => (
   <div className="min-h-screen bg-[#FAF8F4] dark:bg-background flex flex-col">
     <SEOHead
       title="TekSure Pricing — Free Tech Help"
-      description="All guides and tools on TekSure are free. Book a real technician starting with just a $15 deposit."
+      description="All guides and tools on TekSure are free. Book a real technician starting at a $15 deposit."
       path="/pricing"
       jsonLd={pricingJsonLd}
     />

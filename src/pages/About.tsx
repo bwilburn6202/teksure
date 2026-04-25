@@ -149,7 +149,7 @@ const About = () => {
     <div className="teksure-about">
       <SEOHead
         title="About TekSure — Tech Support That Finally Speaks Human"
-        description="TekSure is free tech help for seniors, caregivers, new Americans, and anyone who finds technology frustrating. No jargon, no ads, no selling your data — just plain-English guides and real human support."
+        description="TekSure is free tech help for seniors, caregivers, new Americans, and anyone who finds technology frustrating. No jargon, no ads, no selling your data — only plain-English guides and real human support."
         path="/about"
         jsonLd={{
           '@context': 'https://schema.org',

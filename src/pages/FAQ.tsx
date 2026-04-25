@@ -181,12 +181,12 @@ const categories: FAQCategory[] = [
       {
         q: 'Can I print guides?',
         plain:
-          'Yes. Every guide has a print button near the top. We strip out menus, buttons, and ads so the paper version is clean and easy to read — great for sticking on the fridge or next to the computer.',
+          'Yes. Every guide has a print button near the top. We strip out menus, buttons, and ads so the paper version is clean and clutter-free — great for sticking on the fridge or next to the computer.',
         a: (
           <>
             Yes. Every guide has a print button near the top. We strip out
-            menus, buttons, and ads so the paper version is clean and easy to
-            read &mdash; great for sticking on the fridge or next to the
+            menus, buttons, and ads so the paper version is clean and
+            clutter-free &mdash; great for sticking on the fridge or next to the
             computer. Our{' '}
             <Link to="/quick-reference-cards" className="text-primary hover:underline">Quick Reference Cards</Link>{' '}
             are designed to be printed and kept handy.
