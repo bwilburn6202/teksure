@@ -49,7 +49,7 @@ interface Section {
 const hubs: Entry[] = [
   { to: '/', label: 'Home', description: 'The TekSure welcome page — start here.' },
   { to: '/guides', label: 'Guides', description: 'Step-by-step how-to guides in plain English.' },
-  { to: '/tools', label: 'Tools', description: 'Interactive helpers — about 99 free tools to solve everyday problems.' },
+  { to: '/tools', label: 'Tools', description: 'Interactive helpers — 150+ free tools to solve everyday problems.' },
   { to: '/tekbrain', label: 'TekBrain', description: 'Your friendly, always-available AI tech helper.' },
   { to: '/tekbrain/chat', label: 'TekBrain Chat', description: 'Open the TekBrain chat directly.' },
   { to: '/brain', label: 'Brain (Knowledge Map)', description: 'A visual map of everything TekSure knows.' },
