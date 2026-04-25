@@ -6,8 +6,6 @@
  */
 
 import { useState, useEffect, useCallback } from "react";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { SEOHead } from "@/components/SEOHead";
 import { ChatMessage, MessageSender, URLGroup } from "@/types/chatWithDocs";
 import {

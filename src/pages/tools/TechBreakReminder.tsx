@@ -499,13 +499,13 @@ export default function TechBreakReminder() {
         description="Built-in breaks, better posture, healthier habits. Gentle 20-20-20 eye reminders, stretch breaks, posture checks, hydration, and sunset wind-down."
         path="/tools/tech-break-reminder"
       />
-      <main className="min-h-screen bg-[#f7f5ee] dark:bg-background text-[#1f3a2e] dark:text-foreground">
+      <main className="min-h-screen bg-background text-foreground">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Tech Break Reminder' }]} />
         </div>
 
         {/* Hero */}
-        <section className="border-b border-emerald-100 dark:border-emerald-900/30 bg-gradient-to-b from-[#eef4ea] to-[#f7f5ee] dark:from-emerald-950/20 dark:to-background">
+        <section className="border-b border-border bg-background">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-14 w-14 rounded-2xl bg-emerald-100 dark:bg-emerald-950/40 flex items-center justify-center flex-shrink-0">
@@ -732,7 +732,7 @@ export default function TechBreakReminder() {
             </CardHeader>
             <CardContent className="grid md:grid-cols-2 gap-3">
               {STRETCHES.map((s) => (
-                <div key={s.name} className="p-4 rounded-xl border bg-[#f7f5ee] dark:bg-muted/30">
+                <div key={s.name} className="p-4 rounded-xl border bg-muted/30">
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-2xl" aria-hidden="true">
                       {s.icon}
@@ -747,7 +747,7 @@ export default function TechBreakReminder() {
           </Card>
 
           {/* Senior-specific tips */}
-          <Card className="border-emerald-200 bg-[#f0f7ed] dark:bg-emerald-950/20 dark:border-emerald-900/40">
+          <Card className="border-border bg-muted/20">
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2 text-emerald-900 dark:text-emerald-100">
                 <Leaf className="h-5 w-5" aria-hidden="true" /> Tips for older eyes and older shoulders

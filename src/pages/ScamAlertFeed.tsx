@@ -1036,7 +1036,7 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
                       href={src.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-base text-[#2A5FCC] underline underline-offset-2 hover:text-[#234FB0] dark:text-blue-300"
+                      className="inline-flex items-center gap-1.5 text-base text-primary underline underline-offset-2 hover:text-primary/80 dark:text-blue-300"
                     >
                       {src.name}
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -1419,12 +1419,12 @@ export default function ScamAlertFeed() {
 
         {/* ── Subscribe stub ──────────────────────────────────────────────── */}
         <section aria-labelledby="subscribe-heading">
-          <Card className="border-2 border-[#2A5FCC]/30 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 dark:border-blue-900/40">
+          <Card className="border-2 border-primary/30 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/30 dark:to-blue-950/30 dark:border-blue-900/40">
             <CardHeader className="pb-3">
               <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-[#2A5FCC]/10 p-2 dark:bg-blue-900/40">
+                <div className="rounded-lg bg-primary/10 p-2 dark:bg-blue-900/40">
                   <BellRing
-                    className="h-5 w-5 text-[#2A5FCC] dark:text-blue-300"
+                    className="h-5 w-5 text-primary dark:text-blue-300"
                     aria-hidden="true"
                   />
                 </div>
@@ -1456,7 +1456,7 @@ export default function ScamAlertFeed() {
                 />
                 <Button
                   type="submit"
-                  className="min-h-14 text-base bg-[#2A5FCC] hover:bg-[#234FB0]"
+                  className="min-h-14 text-base bg-primary hover:bg-primary/90"
                   disabled
                 >
                   Sign me up
@@ -1488,7 +1488,7 @@ export default function ScamAlertFeed() {
                   href="https://reportfraud.ftc.gov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline underline-offset-2 text-[#2A5FCC] dark:text-blue-300"
+                  className="underline underline-offset-2 text-primary dark:text-blue-300"
                 >
                   reportfraud.ftc.gov
                 </a>{' '}
@@ -1497,7 +1497,7 @@ export default function ScamAlertFeed() {
                   href="https://www.ic3.gov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline underline-offset-2 text-[#2A5FCC] dark:text-blue-300"
+                  className="underline underline-offset-2 text-primary dark:text-blue-300"
                 >
                   ic3.gov
                 </a>
@@ -1518,7 +1518,7 @@ export default function ScamAlertFeed() {
               <Link
                 key={tool.to}
                 to={tool.to}
-                className="block rounded-xl border-2 bg-card p-4 transition-colors hover:border-[#2A5FCC] hover:bg-[#2A5FCC]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5FCC]"
+                className="block rounded-xl border-2 bg-card p-4 transition-colors hover:border-primary hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
                 <p className="text-base font-semibold mb-1">{tool.label}</p>
                 <p className="text-sm text-muted-foreground">{tool.desc}</p>
@@ -1544,7 +1544,7 @@ export default function ScamAlertFeed() {
                       Yes. Post a note in our community at{' '}
                       <Link
                         to="/community/ask"
-                        className="underline underline-offset-2 text-[#2A5FCC] dark:text-blue-300"
+                        className="underline underline-offset-2 text-primary dark:text-blue-300"
                       >
                         /community/ask
                       </Link>{' '}
@@ -1583,10 +1583,10 @@ function FilterPill({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`inline-flex min-h-11 items-center gap-1.5 rounded-full border-2 px-4 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5FCC] focus-visible:ring-offset-2 ${
+      className={`inline-flex min-h-11 items-center gap-1.5 rounded-full border-2 px-4 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
         active
-          ? 'border-[#2A5FCC] bg-[#2A5FCC] text-white'
-          : 'border-border bg-card text-foreground hover:border-[#2A5FCC] hover:text-[#2A5FCC]'
+          ? 'border-primary bg-primary text-white'
+          : 'border-border bg-card text-foreground hover:border-primary hover:text-primary'
       }`}
     >
       {icon}

@@ -63,7 +63,7 @@ export default function TekBrainLanding() {
         path="/tekbrain"
       />
 
-      <main className="min-h-screen bg-gradient-to-b from-[#E1D4F0]/50 via-[#FAF8F4] to-white">
+      <main className="min-h-screen bg-background">
         {/* ── 1. Hero ───────────────────────────────────────────────────────── */}
         <section
           aria-labelledby="tekbrain-hero-heading"
@@ -72,7 +72,7 @@ export default function TekBrainLanding() {
           {/* Soft radial glow — mirrors the homepage hero's warm top-light, shifted to violet. */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-32 h-[480px] bg-[radial-gradient(1000px_480px_at_50%_0%,#E1D4F0_0%,rgba(225,212,240,0)_65%)]"
+            className="pointer-events-none absolute inset-x-0 -top-32 h-[480px] bg-[radial-gradient(1000px_480px_at_50%_0%,hsl(var(--primary)/12)_0%,transparent_65%)]"
           />
 
           <div className="relative container max-w-4xl px-4 py-16 md:py-24 text-center">
@@ -85,7 +85,7 @@ export default function TekBrainLanding() {
               id="tekbrain-hero-heading"
               className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 text-balance leading-[1.08]"
             >
-              Meet <span className="text-[#2A5FCC]">TekBrain</span> — Your AI Tech Helper
+              Meet <span className="text-primary">TekBrain</span> — Your AI Tech Helper
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-700 leading-relaxed max-w-2xl mx-auto mb-10">
@@ -267,7 +267,7 @@ export default function TekBrainLanding() {
         {/* ── 3. Example questions — clickable cards that start the chat ───── */}
         <section
           aria-labelledby="tekbrain-examples-heading"
-          className="bg-[#FAF8F4] border-y border-amber-100"
+          className="bg-background border-y border-border"
         >
           <div className="container max-w-5xl px-4 py-16 md:py-20">
             <div className="text-center mb-10">
@@ -401,7 +401,7 @@ export default function TekBrainLanding() {
                   Need hands-on help? You can always{' '}
                   <a
                     href="/book"
-                    className="font-semibold text-[#2A5FCC] underline hover:no-underline"
+                    className="font-semibold text-primary underline hover:no-underline"
                   >
                     book a real person
                   </a>
@@ -415,15 +415,15 @@ export default function TekBrainLanding() {
         {/* ── 5. Privacy section ────────────────────────────────────────────── */}
         <section
           aria-labelledby="tekbrain-privacy-heading"
-          className="bg-[#FAF8F4] border-y border-amber-100"
+          className="bg-background border-y border-border"
         >
           <div className="container max-w-3xl px-4 py-16 md:py-20">
-            <Card className="border-2 border-[#2A5FCC]/20 bg-white shadow-md">
+            <Card className="border-2 border-primary/20 bg-white shadow-md">
               <CardContent className="p-8 md:p-10">
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div
                     aria-hidden="true"
-                    className="flex-shrink-0 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#2A5FCC] text-white self-center md:self-start"
+                    className="flex-shrink-0 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary text-white self-center md:self-start"
                   >
                     <Lock className="h-8 w-8" />
                   </div>
@@ -448,7 +448,7 @@ export default function TekBrainLanding() {
                           className="flex items-center gap-3 justify-center md:justify-start"
                         >
                           <Icon
-                            className="h-5 w-5 text-[#2A5FCC] shrink-0"
+                            className="h-5 w-5 text-primary shrink-0"
                             aria-hidden="true"
                           />
                           <span className="text-base md:text-lg text-slate-800 font-medium">
@@ -461,7 +461,7 @@ export default function TekBrainLanding() {
                       Read the full{' '}
                       <a
                         href="/privacy"
-                        className="text-[#2A5FCC] font-semibold underline hover:no-underline"
+                        className="text-primary font-semibold underline hover:no-underline"
                       >
                         privacy policy
                       </a>
@@ -506,7 +506,7 @@ export default function TekBrainLanding() {
               size="lg"
               variant="outline"
               onClick={() => navigate('/guides')}
-              className="text-lg md:text-xl px-8 py-7 min-h-[64px] border-2 border-[#2A5FCC] text-[#2A5FCC] hover:bg-[#2A5FCC]/5 hover:border-[#2A5FCC] font-semibold rounded-2xl"
+              className="text-lg md:text-xl px-8 py-7 min-h-[64px] border-2 border-primary text-primary hover:bg-primary/5 hover:border-primary font-semibold rounded-2xl"
             >
               <BookOpen className="h-5 w-5 mr-2" aria-hidden="true" />
               Browse guides instead
