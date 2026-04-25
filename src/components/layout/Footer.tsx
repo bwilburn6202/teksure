@@ -90,6 +90,7 @@ export function Footer() {
         { to: '/setup', label: 'Setup Wizard' },
         { to: '/get-help', label: 'Book Help' },
         { to: '/tools', label: 'Find a Tool' },
+        { to: '/free-resources', label: 'Free Tech Programs' },
         { to: '/glossary', label: 'Tech Glossary A–Z' },
       ],
     },
