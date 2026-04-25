@@ -296,7 +296,7 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
           <CheckCircle className="h-4 w-4" /> Mark as Complete
         </Button>
       )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
+      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/get-help" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
     </div>
   );
 };

@@ -377,7 +377,7 @@ const Dashboard = () => {
                   Book a friendly technician for a remote screen-share or an in-home visit.
                 </p>
                 <Button size="sm" className="w-full" asChild>
-                  <Link to="/book">Book a technician</Link>
+                  <Link to="/get-help">Book a technician</Link>
                 </Button>
               </CardContent>
             </Card>

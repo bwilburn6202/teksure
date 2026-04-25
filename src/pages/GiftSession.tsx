@@ -263,7 +263,7 @@ export default function GiftSession() {
               <div className="flex gap-3">
                 <Button variant="outline" onClick={() => setStep('personalize')} className="rounded-xl">Back</Button>
                 <Button className="flex-1 rounded-xl gap-2" asChild>
-                  <Link to="/book">
+                  <Link to="/get-help">
                     <Gift className="h-4 w-4" /> Complete Purchase — ${selectedOption.price}
                   </Link>
                 </Button>

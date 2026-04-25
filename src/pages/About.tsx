@@ -991,7 +991,7 @@ const About = () => {
                   <Mail size={20} aria-hidden="true" />
                   Email hello@teksure.com
                 </a>
-                <Link to="/book" className="c-btn c-secondary">
+                <Link to="/get-help" className="c-btn c-secondary">
                   <Calendar size={20} aria-hidden="true" />
                   Book a session
                 </Link>

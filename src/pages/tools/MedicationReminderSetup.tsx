@@ -465,7 +465,7 @@ const MedicationReminderSetup = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-base">
-                <Link to="/book">Book a Technician for Help</Link>
+                <Link to="/get-help">Book a Technician for Help</Link>
               </Button>
             </div>
           </CardContent>

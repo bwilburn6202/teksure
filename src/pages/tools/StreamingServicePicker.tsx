@@ -1097,7 +1097,7 @@ export default function StreamingServicePicker() {
                   Start over
                 </Button>
                 <Button asChild size="lg" className="gap-2 text-base min-h-14">
-                  <Link to="/book">
+                  <Link to="/get-help">
                     <Wrench className="w-5 h-5" />
                     Book a setup session
                   </Link>

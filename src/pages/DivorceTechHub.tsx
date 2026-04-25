@@ -613,7 +613,7 @@ export default function DivorceTechHub() {
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
                 <Button asChild size="lg" className="rounded-xl gap-2">
-                  <Link to="/book">
+                  <Link to="/get-help">
                     <Phone className="h-4 w-4" />
                     Book a session
                   </Link>

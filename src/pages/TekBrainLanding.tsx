@@ -403,7 +403,7 @@ export default function TekBrainLanding() {
                 <p className="text-sm md:text-base text-slate-500 mt-5 pt-5 border-t border-slate-200 leading-relaxed">
                   Need hands-on help? You can always{' '}
                   <a
-                    href="/book"
+                    href="/get-help"
                     className="font-semibold text-[#2A5FCC] underline hover:no-underline"
                   >
                     book a real person

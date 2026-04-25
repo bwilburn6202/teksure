@@ -55,7 +55,7 @@ export default function PaymentCancel() {
 
           <div className="flex gap-3 flex-col sm:flex-row justify-center">
             <Button asChild>
-              <Link to="/book" className="gap-2">
+              <Link to="/get-help" className="gap-2">
                 <RefreshCcw className="h-4 w-4" />
                 Try Again
               </Link>

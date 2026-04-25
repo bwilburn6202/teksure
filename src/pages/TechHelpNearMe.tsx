@@ -225,9 +225,9 @@ const emergencyHelp: HelpOption[] = [
     offers:
       'Plain-language, patient tech help over video. A TekSure helper can walk you through almost anything — from passwords to printer setup to figuring out what that pop-up means.',
     howToFind:
-      'Book online at /book. Sessions are scheduled so you never wait on hold.',
+      'Book online at /get-help. Sessions are scheduled so you never wait on hold.',
     cost: 'Flat fee per session · see pricing at booking',
-    primaryLink: { label: 'Book a session', url: '/book', internal: true },
+    primaryLink: { label: 'Book a session', url: '/get-help', internal: true },
   },
 ];
 
@@ -603,7 +603,7 @@ const TechHelpNearMe = () => {
               size="lg"
               className="bg-amber-700 hover:bg-amber-800 text-white min-h-[48px]"
             >
-              <a href="/book">Book a TekSure session</a>
+              <a href="/get-help">Book a TekSure session</a>
             </Button>
             <Button
               asChild

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   ArrowRight,
   BookOpen,
+  Clock,
   Compass,
   Heart,
   Lightbulb,
@@ -19,8 +20,23 @@ import {
 import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { guides } from '@/data/guides';
+import { guides, categoryLabels } from '@/data/guides';
+import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { supabase } from '@/integrations/supabase/client';
+
+/**
+ * Slugs for the homepage Featured Guides row, in display order.
+ * Picked for breadth: WiFi, scam-spotting, backup, 2FA, robocall blocking,
+ * keeping apps current. Each guide is verified to exist in src/data/guides*.
+ */
+const FEATURED_GUIDE_SLUGS = [
+  'how-to-find-your-wifi-password',
+  'how-to-recognize-phishing-emails',
+  'how-to-back-up-iphone-to-icloud',
+  'how-to-set-up-two-factor-authentication',
+  'how-to-block-spam-and-robocalls-on-iphone-android',
+  'how-to-update-apps',
+] as const;
 
 /**
  * TekSure landing — warm, senior-friendly homepage.
@@ -150,6 +166,14 @@ function HomepageNewsletter() {
 }
 
 const Index = () => {
+  const featuredGuides = useMemo(
+    () =>
+      FEATURED_GUIDE_SLUGS
+        .map((slug) => guides.find((g) => g.slug === slug))
+        .filter((g): g is NonNullable<typeof g> => Boolean(g)),
+    [],
+  );
+
   return (
     <div className="teksure-home">
       <SEOHead
@@ -604,6 +628,74 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* ── Featured Guides ─────────────────────────────────── */}
+        {featuredGuides.length > 0 && (
+          <section
+            aria-labelledby="featured-guides-heading"
+            className="bg-white border-y border-[#E4DFD4] px-6 py-16 md:py-20"
+          >
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-10">
+                <div>
+                  <h2
+                    id="featured-guides-heading"
+                    className="text-3xl md:text-4xl font-bold tracking-tight text-[#1A1A1A] mb-3"
+                  >
+                    Start with a popular guide
+                  </h2>
+                  <p className="text-lg text-[#444] max-w-xl">
+                    Six of the most-requested walkthroughs on TekSure — written
+                    in plain English, no tech background needed.
+                  </p>
+                </div>
+                <Link
+                  to="/guides"
+                  className="inline-flex items-center gap-1.5 text-[15px] font-bold text-[#2A5FCC] hover:underline underline-offset-4 shrink-0"
+                >
+                  Browse all guides
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {featuredGuides.map((g) => (
+                  <Link
+                    key={g.slug}
+                    to={`/guides/${g.slug}`}
+                    className="group flex flex-col rounded-2xl bg-[#FAF8F4] border border-[#E4DFD4] hover:border-[#2A5FCC] hover:shadow-[0_10px_30px_-12px_rgba(42,95,204,0.25)] transition-all p-6 text-left"
+                  >
+                    <img
+                      src={getGuideThumbnailSmall(g)}
+                      alt=""
+                      loading="lazy"
+                      className="w-14 h-14 rounded-xl object-cover mb-4 shadow-sm"
+                    />
+                    <span className="inline-flex items-center self-start gap-1.5 mb-3 rounded-full bg-white border border-[#E4DFD4] text-[12px] font-semibold text-[#2A5FCC] px-2.5 py-1 uppercase tracking-wider">
+                      {categoryLabels[g.category]}
+                    </span>
+                    <h3 className="text-lg font-bold text-[#1A1A1A] leading-snug mb-2 group-hover:text-[#2A5FCC] transition-colors">
+                      {g.title}
+                    </h3>
+                    <p className="text-[15px] text-[#444] leading-relaxed mb-4 line-clamp-3 flex-1">
+                      {g.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between text-[13px] text-[#6B6B6B] mt-auto pt-3 border-t border-[#E4DFD4]">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Clock className="h-3.5 w-3.5" aria-hidden="true" />
+                        {g.readTime}
+                      </span>
+                      {g.difficulty && (
+                        <span className="font-semibold text-[#1A1A1A]">
+                          {g.difficulty}
+                        </span>
+                      )}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── Testimonials ──────────────────────────────────────── */}
         <section

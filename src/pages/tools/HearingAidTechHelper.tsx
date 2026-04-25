@@ -1316,7 +1316,7 @@ const HearingAidTechHelper = () => {
                 body="Plain-English guides for wearables, health apps, and more."
               />
               <RelatedCard
-                to="/book"
+                to="/get-help"
                 icon={Phone}
                 title="Book a Technician"
                 body="Need a human to help set this up? $15 deposit."
@@ -1344,7 +1344,7 @@ const HearingAidTechHelper = () => {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-base min-h-14">
-                  <Link to="/book">Book a Technician</Link>
+                  <Link to="/get-help">Book a Technician</Link>
                 </Button>
               </div>
             </CardContent>

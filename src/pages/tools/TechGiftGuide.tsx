@@ -1416,7 +1416,7 @@ export default function TechGiftGuide() {
                   Start over
                 </Button>
                 <Button asChild size="lg" className="gap-2 text-base min-h-14">
-                  <Link to="/book">
+                  <Link to="/get-help">
                     <Wrench className="w-5 h-5" />
                     Book a setup session
                   </Link>
@@ -1444,7 +1444,7 @@ export default function TechGiftGuide() {
                 { name: 'Amazon Gift Card', blurb: 'The universal backup — Kindle books, accessories, household staples.' },
                 { name: 'Best Buy Gift Card', blurb: 'Great when the recipient wants in-person help picking out a device.' },
                 { name: 'Target or Walmart', blurb: 'Lets the recipient combine tech, groceries, and household items in one trip.' },
-                { name: 'TekSure Setup Session', blurb: 'Pair any gift with a setup session booked through /book — the most useful gift card of all.' },
+                { name: 'TekSure Setup Session', blurb: 'Pair any gift with a setup session booked through /get-help — the most useful gift card of all.' },
               ].map((gc) => (
                 <Card key={gc.name}>
                   <CardContent className="p-5 space-y-2">
@@ -1454,7 +1454,7 @@ export default function TechGiftGuide() {
                     </h3>
                     <p className="text-base leading-relaxed">{gc.blurb}</p>
                     {gc.name === 'TekSure Setup Session' && (
-                      <Link to="/book" className="inline-flex items-center gap-1 text-primary underline font-medium text-base">
+                      <Link to="/get-help" className="inline-flex items-center gap-1 text-primary underline font-medium text-base">
                         Book a session <ArrowRight className="w-4 h-4" />
                       </Link>
                     )}
@@ -1546,7 +1546,7 @@ export default function TechGiftGuide() {
                   <p className="text-base leading-relaxed">
                     Book a 45-minute video setup through TekSure. Hand the recipient the confirmation along with the gift — the best part is the guaranteed "first use".
                   </p>
-                  <Link to="/book" className="inline-flex items-center gap-1 text-primary underline font-medium text-base">
+                  <Link to="/get-help" className="inline-flex items-center gap-1 text-primary underline font-medium text-base">
                     Book a session <ArrowRight className="w-4 h-4" />
                   </Link>
                 </CardContent>
@@ -1656,7 +1656,7 @@ export default function TechGiftGuide() {
               },
               {
                 title: 'Book a Setup Session',
-                path: '/book',
+                path: '/get-help',
                 blurb: 'Hands-on help from a real TekSure technician — $15 deposit.',
                 icon: Wrench,
               },

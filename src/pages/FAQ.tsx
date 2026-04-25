@@ -120,7 +120,7 @@ const categories: FAQCategory[] = [
         a: (
           <>
             We earn revenue from optional paid technician sessions (you can{' '}
-            <Link to="/book" className="text-primary hover:underline">book one here</Link>),
+            <Link to="/get-help" className="text-primary hover:underline">book one here</Link>),
             a small number of tastefully-placed affiliate links in gift guides,
             and donations. We never sell your data, and we never run ads that
             track you around the internet.
@@ -297,7 +297,7 @@ const categories: FAQCategory[] = [
             questions, but like any AI it can occasionally be wrong or out of
             date. For safety-critical things &mdash; like scams or banking
             &mdash; double-check with an official source, or{' '}
-            <Link to="/book" className="text-primary hover:underline">book a real technician</Link>.
+            <Link to="/get-help" className="text-primary hover:underline">book a real technician</Link>.
           </>
         ),
       },
@@ -311,7 +311,7 @@ const categories: FAQCategory[] = [
             from medical, legal, or financial advice, and it does not have
             access to your personal accounts. For those, talk to a qualified
             human &mdash; or, for tech issues, our{' '}
-            <Link to="/book" className="text-primary hover:underline">real-human technicians</Link>.
+            <Link to="/get-help" className="text-primary hover:underline">real-human technicians</Link>.
           </>
         ),
       },
@@ -339,7 +339,7 @@ const categories: FAQCategory[] = [
             and tell us what went wrong &mdash; a real person reads every
             piece of feedback, and it helps us make the tool smarter. If you
             need a human right away, you can always{' '}
-            <Link to="/book" className="text-primary hover:underline">book a technician</Link>.
+            <Link to="/get-help" className="text-primary hover:underline">book a technician</Link>.
           </>
         ),
       },
@@ -463,7 +463,7 @@ const categories: FAQCategory[] = [
         a: (
           <>
             Open the{' '}
-            <Link to="/book" className="text-primary hover:underline">Book page</Link>,
+            <Link to="/get-help" className="text-primary hover:underline">Book page</Link>,
             pick a time, and describe your problem in your own words. We match
             you with a verified technician based on the issue, your location,
             and their availability. You can also browse individual{' '}
@@ -521,7 +521,7 @@ const categories: FAQCategory[] = [
           <>
             Absolutely. Many of our bookings include a caregiver or adult
             child sitting in. Just let us know when{' '}
-            <Link to="/book" className="text-primary hover:underline">booking</Link>{' '}
+            <Link to="/get-help" className="text-primary hover:underline">booking</Link>{' '}
             &mdash; we will send the video link to both of you. Our{' '}
             <Link to="/caregiver-hub" className="text-primary hover:underline">Caregiver Hub</Link>{' '}
             has more tips for helping a loved one remotely.
@@ -898,7 +898,7 @@ const FAQ = () => {
                 size="lg"
                 className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10"
               >
-                <Link to="/book">Book a Human</Link>
+                <Link to="/get-help">Book a Human</Link>
               </Button>
             </div>
           </div>

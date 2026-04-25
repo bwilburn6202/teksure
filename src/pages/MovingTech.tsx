@@ -473,7 +473,7 @@ export default function MovingTech() {
                 <Link to="/guides">Browse all guides</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/book">Book tech help</Link>
+                <Link to="/get-help">Book tech help</Link>
               </Button>
             </div>
           </div>

@@ -510,7 +510,7 @@ export default function RetirementTech() {
                 <Link to="/guides">Browse all guides</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/book">Book 1-on-1 tech help</Link>
+                <Link to="/get-help">Book 1-on-1 tech help</Link>
               </Button>
             </div>
           </div>

@@ -291,7 +291,7 @@ export default function FirstApartmentTech() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg">
-                <Link to="/book">Book a setup session</Link>
+                <Link to="/get-help">Book a setup session</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link to="/guides">Browse all guides</Link>
