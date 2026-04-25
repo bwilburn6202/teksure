@@ -15,7 +15,7 @@ export function SeniorModeToggle() {
             size="icon"
             onClick={toggleSeniorMode}
             aria-label={seniorMode ? 'Turn off Senior Tech Mode' : 'Turn on Senior Tech Mode'}
-            className={`h-8 w-8 rounded-lg transition-colors ${
+            className={`h-11 w-11 rounded-lg transition-colors ${
               seniorMode
                 ? 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
                 : 'text-muted-foreground hover:text-foreground'
