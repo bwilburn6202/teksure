@@ -2348,7 +2348,7 @@ function AccountGroup({
             label="Security question hint"
             value={a.securityHint}
             onChange={(v) => onChange(i, { ...a, securityHint: v })}
-            placeholder='e.g. "mother\'s maiden name — see family tree"'
+            placeholder={`e.g. "mother's maiden name — see family tree"`}
           />
           <TextAreaField
             label="Notes"

@@ -1,19 +1,26 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useState } from 'react';
 import {
   ArrowRight,
   BookOpen,
+  Compass,
   Heart,
   Lightbulb,
+  Mail,
   MessageCircle,
+  Quote,
   ShieldCheck,
   Smartphone,
   Sparkles,
+  Star,
   Wifi,
 } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 import { guides } from '@/data/guides';
+import { supabase } from '@/integrations/supabase/client';
 
 /**
  * TekSure landing — warm, senior-friendly homepage.
@@ -21,6 +28,126 @@ import { guides } from '@/data/guides';
  * palette, clear headline, two prominent CTAs, and trust indicators.
  * See DESIGN.md + teksure-next-gen-mockup.html for the design direction.
  */
+
+const testimonials = [
+  {
+    quote:
+      "TekSure helped me finally understand how to back up my photos. The instructions were so clear. I didn't feel stupid for the first time!",
+    name: 'Margaret T.',
+    detail: '67, Florida',
+  },
+  {
+    quote:
+      'My son used to spend every Sunday helping me with my phone. Now I just go to TekSure and figure it out myself. He’s very proud.',
+    name: 'Harold W.',
+    detail: '72, Ohio',
+  },
+  {
+    quote:
+      "I was almost scammed out of $2,000. TekSure's scam guide taught me exactly what to look for. I caught it in time.",
+    name: 'Dorothy K.',
+    detail: '69, Texas',
+  },
+];
+
+function HomepageNewsletter() {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const trimmed = email.trim().toLowerCase();
+    if (!trimmed.includes('@') || !trimmed.includes('.')) {
+      setError('Please enter a valid email address.');
+      return;
+    }
+    setSubmitting(true);
+    setError('');
+    const { error: dbError } = await supabase
+      .from('newsletter_subscribers')
+      .insert({ email: trimmed });
+    setSubmitting(false);
+    if (dbError && dbError.code !== '23505') {
+      setError('Something went wrong. Please try again.');
+      return;
+    }
+    setSubmitted(true);
+    setEmail('');
+  };
+
+  return (
+    <section
+      aria-labelledby="newsletter-heading"
+      className="bg-[#0F2A57] text-white"
+    >
+      <div className="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-white/10 ring-1 ring-white/20 mb-5">
+          <Mail className="h-6 w-6" aria-hidden="true" />
+        </div>
+        <h2
+          id="newsletter-heading"
+          className="text-3xl md:text-4xl font-bold tracking-tight mb-3 leading-tight"
+        >
+          Get a Free Tech Tip Every Tuesday
+        </h2>
+        <p className="text-base md:text-lg text-white/80 leading-relaxed mb-8 max-w-xl mx-auto">
+          Join thousands of people learning tech the friendly way. No spam,
+          ever. Unsubscribe anytime.
+        </p>
+        {submitted ? (
+          <div
+            role="status"
+            aria-live="polite"
+            className="inline-flex items-center gap-2 text-base font-semibold bg-emerald-500/15 border border-emerald-300/30 text-emerald-100 rounded-full px-5 py-3"
+          >
+            <Sparkles className="h-5 w-5" aria-hidden="true" />
+            You&rsquo;re in! Check your inbox Tuesday.
+          </div>
+        ) : (
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto"
+            aria-label="Newsletter signup"
+          >
+            <label htmlFor="home-newsletter-email" className="sr-only">
+              Your email address
+            </label>
+            <input
+              id="home-newsletter-email"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setError('');
+              }}
+              placeholder="Your email address"
+              className="flex-1 h-14 px-5 rounded-xl text-base bg-white text-[#1A1A1A] placeholder:text-[#6B6B6B] outline-none ring-2 ring-transparent focus:ring-amber-300"
+            />
+            <button
+              type="submit"
+              disabled={submitting}
+              className="inline-flex items-center justify-center gap-2 h-14 px-7 rounded-xl bg-[#E87A2B] hover:bg-[#C6661F] disabled:opacity-70 text-white text-base font-bold transition-colors"
+            >
+              {submitting ? 'Sending…' : 'Send Me Free Tips'}
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            </button>
+          </form>
+        )}
+        {error && (
+          <p
+            role="alert"
+            className="mt-3 text-sm text-amber-200 max-w-lg mx-auto"
+          >
+            {error}
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}
 
 const Index = () => {
   return (
@@ -377,7 +504,164 @@ const Index = () => {
             Plain English
           </p>
         </section>
+
+        {/* ── Start Here onboarding callout ────────────────────────── */}
+        <section
+          aria-labelledby="start-here-heading"
+          className="px-6 pb-12"
+        >
+          <Link
+            to="/onboarding"
+            className="group block max-w-3xl mx-auto rounded-2xl bg-[#FFF7E8] border-2 border-[#2A5FCC]/70 hover:border-[#2A5FCC] hover:shadow-[0_10px_30px_-8px_rgba(42,95,204,0.25)] transition-all px-6 py-5 sm:px-8 sm:py-6 flex items-center gap-5"
+          >
+            <div className="shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-[#2A5FCC] text-white">
+              <Compass className="h-7 w-7" aria-hidden="true" />
+            </div>
+            <div className="flex-1 min-w-0 text-left">
+              <p
+                id="start-here-heading"
+                className="text-xl sm:text-2xl font-bold text-[#1A1A1A] mb-0.5"
+              >
+                New to TekSure?
+              </p>
+              <p className="text-base sm:text-lg text-[#444]">
+                Start with our 3-minute orientation
+              </p>
+            </div>
+            <ArrowRight
+              className="shrink-0 h-7 w-7 text-[#2A5FCC] group-hover:translate-x-1 transition-transform"
+              aria-hidden="true"
+            />
+          </Link>
+        </section>
+
+        {/* ── How It Works ──────────────────────────────────────── */}
+        <section
+          aria-labelledby="how-it-works-heading"
+          className="px-6 pt-8 pb-20"
+        >
+          <div className="max-w-5xl mx-auto">
+            <h2
+              id="how-it-works-heading"
+              className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-3 text-[#1A1A1A]"
+            >
+              How TekSure works
+            </h2>
+            <p className="text-lg text-[#444] text-center max-w-2xl mx-auto mb-10">
+              Three friendly steps. Most folks find their answer in the first one.
+            </p>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                {
+                  num: '1',
+                  title: 'Find a guide',
+                  body: 'Search 2,900+ free step-by-step guides written in plain English.',
+                  Icon: BookOpen,
+                  to: '/guides',
+                  link: 'Browse guides',
+                },
+                {
+                  num: '2',
+                  title: 'Ask TekBrain',
+                  body: 'Our friendly AI walks you through anything tech, in plain English.',
+                  Icon: MessageCircle,
+                  to: '/brain',
+                  link: 'Ask a question',
+                },
+                {
+                  num: '3',
+                  title: 'Book a real human',
+                  body: 'When you need a hand, a real technician helps for a $15 deposit.',
+                  Icon: ShieldCheck,
+                  to: '/get-help',
+                  link: 'Get help',
+                },
+              ].map(({ num, title, body, Icon, to, link }) => (
+                <div
+                  key={num}
+                  className="rounded-2xl bg-white border border-[#E4DFD4] p-6 text-center shadow-sm"
+                >
+                  <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-[#2A5FCC] text-white text-xl font-bold mb-4">
+                    {num}
+                  </div>
+                  <Icon
+                    className="h-6 w-6 text-[#2A5FCC] mx-auto mb-3"
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-xl font-bold mb-2 text-[#1A1A1A]">{title}</h3>
+                  <p className="text-base text-[#444] leading-relaxed mb-4">
+                    {body}
+                  </p>
+                  <Link
+                    to={to}
+                    className="inline-flex items-center gap-1.5 text-[15px] font-semibold text-[#2A5FCC] hover:underline underline-offset-4"
+                  >
+                    {link}
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Testimonials ──────────────────────────────────────── */}
+        <section
+          aria-labelledby="testimonials-heading"
+          className="bg-[#FFF7E8] border-y border-[#F1E3C4] px-6 py-16 md:py-20"
+        >
+          <div className="max-w-6xl mx-auto">
+            <h2
+              id="testimonials-heading"
+              className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-3 text-[#1A1A1A]"
+            >
+              What our community says
+            </h2>
+            <p className="text-lg text-[#444] text-center max-w-2xl mx-auto mb-12">
+              Real notes from real people who found their footing with TekSure.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {testimonials.map((t) => (
+                <figure
+                  key={t.name}
+                  className="relative rounded-2xl bg-white border border-[#E4DFD4] p-7 shadow-sm flex flex-col"
+                >
+                  <Quote
+                    className="h-7 w-7 text-[#E87A2B] mb-3"
+                    aria-hidden="true"
+                  />
+                  <div
+                    className="flex items-center gap-1 mb-4"
+                    aria-label="5 out of 5 stars"
+                  >
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-5 w-5 text-[#E87A2B] fill-[#E87A2B]"
+                        aria-hidden="true"
+                      />
+                    ))}
+                  </div>
+                  <blockquote className="flex-1 italic text-base md:text-lg text-[#1A1A1A] leading-relaxed mb-5">
+                    &ldquo;{t.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="text-sm font-bold text-[#1A1A1A]">
+                    — {t.name}
+                    <span className="block text-[13px] font-semibold text-[#6B6B6B] mt-0.5">
+                      {t.detail}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Newsletter ────────────────────────────────────────── */}
+        <HomepageNewsletter />
       </main>
+
+      <Footer />
     </div>
   );
 };

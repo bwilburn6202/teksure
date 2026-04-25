@@ -35,6 +35,7 @@ import {
   removeBookmark,
   type Bookmark,
 } from '@/lib/bookmarks';
+import { useAuth } from '@/contexts/AuthContext';
 
 type TabValue = 'all' | 'guide' | 'tool';
 
@@ -72,6 +73,7 @@ function buildExportText(bookmarks: Bookmark[]): string {
 }
 
 export default function Favorites() {
+  const { user } = useAuth();
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
   const [tab, setTab] = useState<TabValue>('all');
 
@@ -200,29 +202,64 @@ export default function Favorites() {
         {/* ── Body ──────────────────────────────────────────────────────── */}
         <section className="container py-8">
           {bookmarks.length === 0 ? (
-            <Card className="max-w-xl mx-auto rounded-2xl border border-border bg-card">
-              <CardContent className="py-12 text-center">
-                <Heart
-                  className="h-12 w-12 text-muted-foreground/40 mx-auto mb-4"
-                  aria-hidden="true"
-                />
-                <p className="text-lg text-foreground mb-2 font-semibold">
-                  Your list is empty
-                </p>
-                <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                  You haven't saved anything yet. Tap the heart on any guide or
-                  tool to keep it here.
-                </p>
-                <div className="flex gap-2 justify-center flex-wrap">
-                  <Button asChild className="rounded-xl">
-                    <Link to="/guides">Browse guides</Link>
-                  </Button>
-                  <Button asChild variant="outline" className="rounded-xl">
-                    <Link to="/tools">Browse tools</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            !user ? (
+              <Card className="max-w-xl mx-auto rounded-2xl border border-primary/30 bg-primary/5">
+                <CardContent className="py-12 text-center">
+                  <Heart
+                    className="h-12 w-12 text-primary mx-auto mb-4"
+                    aria-hidden="true"
+                  />
+                  <h2 className="text-2xl font-bold mb-2">
+                    Save Your Favorite Guides
+                  </h2>
+                  <p className="text-base text-foreground/80 mb-7 max-w-md mx-auto leading-relaxed">
+                    Create a free account to bookmark guides and come back to
+                    them anytime, on any device.
+                  </p>
+                  <div className="flex gap-3 justify-center flex-wrap">
+                    <Button asChild size="lg" className="rounded-xl min-h-[48px] gap-2 px-6 font-bold">
+                      <Link to="/signup">
+                        Create a Free Account
+                        <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                      </Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline" className="rounded-xl min-h-[48px] px-6 font-bold border-2">
+                      <Link to="/login">Sign In</Link>
+                    </Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-6">
+                    Already saved guides on this browser?{' '}
+                    <Link to="/guides" className="text-primary hover:underline font-medium">
+                      Browse guides
+                    </Link>
+                  </p>
+                </CardContent>
+              </Card>
+            ) : (
+              <Card className="max-w-xl mx-auto rounded-2xl border border-border bg-card">
+                <CardContent className="py-12 text-center">
+                  <Heart
+                    className="h-12 w-12 text-muted-foreground/40 mx-auto mb-4"
+                    aria-hidden="true"
+                  />
+                  <p className="text-lg text-foreground mb-2 font-semibold">
+                    Your list is empty
+                  </p>
+                  <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+                    You haven't saved anything yet. Tap the heart on any guide or
+                    tool to keep it here.
+                  </p>
+                  <div className="flex gap-2 justify-center flex-wrap">
+                    <Button asChild className="rounded-xl">
+                      <Link to="/guides">Browse guides</Link>
+                    </Button>
+                    <Button asChild variant="outline" className="rounded-xl">
+                      <Link to="/tools">Browse tools</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            )
           ) : (
             <Tabs value={tab} onValueChange={(v) => setTab(v as TabValue)}>
               <TabsList className="mb-6">
