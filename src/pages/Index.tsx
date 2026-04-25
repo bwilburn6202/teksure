@@ -591,7 +591,7 @@ const Index = () => {
                 {
                   num: '1',
                   title: 'Find a guide',
-                  body: 'Search 2,900+ free step-by-step guides written in plain English.',
+                  body: `Search ${guides.length.toLocaleString()}+ free step-by-step guides written in plain English.`,
                   Icon: BookOpen,
                   to: '/guides',
                   link: 'Browse guides',

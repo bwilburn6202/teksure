@@ -452,7 +452,7 @@ const Guides = () => {
               <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" />
               <Input
                 id="guides-search"
-                placeholder="Search 3,000+ guides..."
+                placeholder={`Search ${guides.length.toLocaleString()}+ guides...`}
                 aria-label="Search guides"
                 className="pl-14 pr-32 h-14 bg-card border-2 border-border rounded-2xl text-lg shadow-md focus:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 transition-all"
                 value={search}

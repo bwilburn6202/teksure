@@ -194,7 +194,7 @@ const Pricing = () => (
               {
                 num: '1',
                 title: 'Find a guide',
-                body: 'Search 2,900+ free guides written in plain English. Step-by-step screenshots, no jargon.',
+                body: 'Search 1,800+ free guides written in plain English. Step-by-step screenshots, no jargon.',
                 icon: BookOpen,
               },
               {
