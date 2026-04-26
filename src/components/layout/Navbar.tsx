@@ -3,16 +3,12 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { PreloadLink } from '@/components/PreloadLink';
 import {
   Menu,
-  Search,
   LogOut,
   User,
   UserCog,
   Settings,
   MessageSquare,
-  MessageCircle,
-  Calendar,
   Map,
-  Phone,
   X,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -98,11 +94,6 @@ export function Navbar() {
         .slice(0, 2)
     : '';
 
-  const openSearch = () =>
-    document.dispatchEvent(
-      new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true })
-    );
-
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
@@ -111,9 +102,7 @@ export function Navbar() {
   const mobileBrowseLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
-    { to: '/favorites', label: 'My Favorites' },
     { to: '/forum', label: 'Community Forum' },
-    { to: '/pricing', label: 'Pricing' },
     { to: '/this-week', label: 'This Week' },
     { to: '/scam-alerts', label: 'Current Scam Alerts' },
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
@@ -313,28 +302,8 @@ export function Navbar() {
             )}
           </div>
 
-          {/* Mobile right utilities */}
+          {/* Mobile right utilities — only the hamburger remains. */}
           <div className="ml-auto flex md:hidden items-center gap-0.5">
-            <a
-              href="tel:18008357873"
-              aria-label="Call TekSure"
-              className={`inline-flex items-center justify-center h-11 w-11 rounded-full
-                          text-[#2A5FCC] dark:text-white/90
-                          hover:bg-white/70 dark:hover:bg-white/10
-                          transition-colors ${focusRing}`}
-            >
-              <Phone className="h-5 w-5" aria-hidden="true" />
-            </a>
-            <button
-              onClick={openSearch}
-              aria-label="Open search"
-              className={`inline-flex items-center justify-center h-11 w-11 rounded-full
-                          text-[#1A1A1A] dark:text-white/90
-                          hover:bg-white/70 dark:hover:bg-white/10
-                          transition-colors ${focusRing}`}
-            >
-              <Search className="h-5 w-5" aria-hidden="true" />
-            </button>
             <button
               onClick={() => setMobileMenuOpen(true)}
               aria-label="Open navigation menu"
@@ -431,31 +400,6 @@ export function Navbar() {
                   </div>
                 </div>
               )}
-
-              {/* Primary CTAs up top */}
-              <div className="flex flex-col gap-2.5 mb-5">
-                <Link
-                  to="/brain"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full text-lg font-bold
-                              bg-[#2A5FCC] text-white shadow-[0_4px_14px_rgba(42,95,204,0.35)]
-                              hover:bg-[#234FB0] transition-colors ${focusRing}`}
-                >
-                  <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                  Ask TekBrain
-                </Link>
-                <Link
-                  to="/get-help"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full text-lg font-bold
-                              bg-white dark:bg-transparent border-2 border-[#2A5FCC]
-                              text-[#2A5FCC] dark:text-white
-                              hover:bg-[#F0F5FF] dark:hover:bg-white/10 transition-colors ${focusRing}`}
-                >
-                  <Calendar className="h-5 w-5" aria-hidden="true" />
-                  Book Help
-                </Link>
-              </div>
 
               {/* Browse list */}
               <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
