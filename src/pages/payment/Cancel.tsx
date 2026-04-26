@@ -16,6 +16,7 @@ export default function PaymentCancel() {
         title="Payment Cancelled | TekSure"
         description="Your payment was cancelled. Your booking details are still saved — you can try again."
         path="/payment/cancel"
+        noindex
       />
       <Navbar />
 

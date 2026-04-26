@@ -183,7 +183,7 @@ export default function Setup() {
   if (alreadyDone && step === 0) {
     return (
       <>
-        <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
+        <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" noindex />
         <Navbar />
         <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
           <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
@@ -211,6 +211,7 @@ export default function Setup() {
         title="Getting Started | TekSure"
         description="Answer 3 quick questions and get a personalized learning path matched to your device and goals."
         path="/setup"
+        noindex
       />
       <Navbar />
       <main className="min-h-screen bg-background container py-12 max-w-2xl mx-auto">
