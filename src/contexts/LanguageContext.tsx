@@ -81,7 +81,7 @@ const translations: Record<Language, TranslationMap> = {
 
     // Hero
     'hero.title':       'Ayuda con la Tecnología Simplificada',
-    'hero.subtitle':    'Guías fáciles, herramientas amigables y soporte real — hecho para todos.',
+    'hero.subtitle':    'Guías claras, herramientas amigables y soporte real — hecho para todos.',
     'hero.cta.guides':  'Ver Guías',
     'hero.cta.help':    'Obtener Ayuda Ahora',
 
