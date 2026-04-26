@@ -139,7 +139,7 @@ const FEATURED_SLOTS: FeaturedSlot[] = [
   },
   {
     heading: 'Online Banking',
-    blurb: 'Check balances and pay bills from the couch — safely, in just a few taps.',
+    blurb: 'Check balances and pay bills from the couch — safely, in a few taps.',
     Icon: PiggyBank,
     tint: 'from-emerald-50 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
     keywords: ['banking', 'online'],
