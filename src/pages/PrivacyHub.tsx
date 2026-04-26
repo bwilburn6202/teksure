@@ -565,7 +565,7 @@ export default function PrivacyHub() {
                 Privacy-respecting apps we actually recommend
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Free or low-cost tools that put you back in control. None of these are paying us — they are just the best in their category.
+                Free or low-cost tools that put you back in control. None of these are paying us — they are the best in their category.
               </p>
             </div>
 
