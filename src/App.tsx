@@ -14,8 +14,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { TierProvider } from "@/contexts/TierContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { MeshGradientBackground } from "@/components/MeshGradientBackground";
-import { TekBrain } from "@/components/TekBrain";
-import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -445,19 +443,6 @@ function OfflineBanner() {
   );
 }
 
-const FloatingChrome = () => {
-  const { pathname } = useLocation();
-  // The chat IS the page on / and /tekbrain/chat, so skip the floating
-  // launcher and emergency button there — they would overlap the chat input.
-  if (pathname === "/" || pathname === "/tekbrain/chat") return null;
-  return (
-    <>
-      <TekBrain />
-      <ScamPanicButton />
-    </>
-  );
-};
-
 /**
  * All surfaces default to light for first-time visitors — a welcoming light
  * palette is easier for seniors and beginners than a dark starfield. A user's
@@ -515,7 +500,6 @@ const AppContent = () => {
       {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
       <SearchModal open={open} onClose={onClose} />
       <RouteThemeDefault />
-      <FloatingChrome />
       <MobileBottomNav />
       <BackToTop />
       <Toaster />
