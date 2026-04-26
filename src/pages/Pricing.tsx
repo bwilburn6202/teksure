@@ -33,7 +33,7 @@ const pricingJsonLd = [
         name: 'How does the $15 deposit work when booking a technician?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'You pay a $15 deposit to confirm your technician booking. The deposit is applied to the total cost of your session, so it is not an extra fee — it is simply your first payment toward the work.',
+          text: 'You pay a $15 deposit to confirm your technician booking. The deposit is applied to the total cost of your session, so it is not an extra fee — it is your first payment toward the work.',
         },
       },
       {
