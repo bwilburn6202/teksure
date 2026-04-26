@@ -10,6 +10,8 @@ import {
   MessageSquare,
   Map,
   X,
+  ChevronDown,
+  LifeBuoy,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -99,21 +101,29 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
     { to: '/tools', label: 'Tools' },
   ];
 
-  const mobileBrowseLinks = [
-    { to: '/guides', label: 'Guides' },
-    { to: '/tools', label: 'Tools' },
-    { to: '/forum', label: 'Community Forum' },
-    { to: '/this-week', label: 'This Week' },
-    { to: '/scam-alerts', label: 'Current Scam Alerts' },
+  // "More" dropdown — curated, uniform list of pages that aren't on the
+  // main pill. Same set is reused in the mobile drawer so the surfaces stay
+  // in sync.
+  const moreLinks = [
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
-    { to: '/learn', label: 'Learning Paths' },
-    { to: '/quick-fixes', label: 'Quick Fixes' },
-    { to: '/free-resources', label: 'Free Tech Programs' },
-    { to: '/glossary', label: 'Tech Glossary A–Z' },
-    { to: '/videos', label: 'Video Tutorials' },
-    { to: '/tech-help-near-me', label: 'Help Near Me' },
-    { to: '/about', label: 'About TekSure' },
+    { to: '/scam-alerts',        label: 'Current Scam Alerts' },
+    { to: '/privacy-hub',        label: 'Privacy Hub' },
+    { to: '/forum',              label: 'Community Forum' },
+    { to: '/learn',              label: 'Learning Paths' },
+    { to: '/quick-fixes',        label: 'Quick Fixes' },
+    { to: '/free-resources',     label: 'Free Tech Programs' },
+    { to: '/glossary',           label: 'Tech Glossary A–Z' },
+    { to: '/videos',             label: 'Video Tutorials' },
+    { to: '/articles',           label: 'Articles & Blog' },
+    { to: '/tech-help-near-me',  label: 'Help Near Me' },
+    { to: '/this-week',          label: 'This Week' },
+    { to: '/pricing',            label: 'Pricing' },
+    { to: '/about',              label: 'About TekSure' },
+    { to: '/faq',                label: 'FAQ' },
+    { to: '/site-index',         label: 'Site Index' },
   ];
+
+  const mobileBrowseLinks = moreLinks;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -134,16 +144,18 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
 
   return (
     <>
-      {/* Floating glass-bubble pill — fixed, centered, above everything */}
+      {/* Floating glass-bubble pill — fixed, centered, auto-fits to its
+          contents so the bar is exactly long enough to hold every button
+          with the same gap between each. */}
       <header
         role="banner"
         className="fixed top-3 sm:top-4 left-1/2 -translate-x-1/2 z-50
-                   w-[calc(100%-16px)] sm:w-[calc(100%-32px)] max-w-[1280px]
+                   w-auto max-w-[calc(100%-16px)] sm:max-w-[calc(100%-32px)]
                    pointer-events-none print:hidden"
       >
         <div
-          className="pointer-events-auto flex items-center gap-1.5
-                     h-16 pl-3 pr-2 sm:pl-5 sm:pr-3
+          className="pointer-events-auto inline-flex items-center gap-1.5
+                     h-16 px-3 sm:px-3
                      rounded-full
                      bg-white/15 dark:bg-white/[0.06]
                      supports-[backdrop-filter]:bg-white/10
@@ -157,7 +169,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           <Link
             to={user ? dashboardPath : '/'}
             aria-label="TekSure home"
-            className={`flex items-center shrink-0 mr-1 rounded-full px-1 ${focusRing}`}
+            className={`flex items-center shrink-0 rounded-full px-1 ${focusRing}`}
           >
             <img
               src="/teksure-logo.svg"
@@ -174,7 +186,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           </Link>
 
           {/* Desktop primary nav */}
-          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-0.5">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1.5">
             {primaryLinks.map((link) => (
               <PreloadLink
                 key={link.to}
@@ -185,10 +197,62 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 {link.label}
               </PreloadLink>
             ))}
+
+            {/* More — dropdown of every other top-level page, uniform list */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  aria-label="More pages"
+                  className={`${navLinkCls} gap-1`}
+                >
+                  More
+                  <ChevronDown className="h-4 w-4 opacity-70" aria-hidden="true" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="start"
+                sideOffset={10}
+                className="w-64 max-h-[70vh] overflow-y-auto p-1.5"
+              >
+                {moreLinks.map((link) => (
+                  <DropdownMenuItem
+                    key={link.to}
+                    onSelect={() => navigate(link.to)}
+                    className="cursor-pointer rounded-lg px-3 py-2.5 text-[15px] font-medium"
+                  >
+                    {link.label}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Request Help — translucent gradient blue pill, primary CTA */}
+            <PreloadLink
+              to="/get-help"
+              aria-current={isActive('/get-help') ? 'page' : undefined}
+              className={`inline-flex items-center gap-1.5 h-11 px-4 rounded-full
+                          text-[15px] font-bold text-white
+                          bg-gradient-to-r from-[#2A5FCC]/85 to-[#4B8EF8]/85
+                          supports-[backdrop-filter]:from-[#2A5FCC]/70
+                          supports-[backdrop-filter]:to-[#4B8EF8]/70
+                          backdrop-blur-md
+                          border border-white/30
+                          shadow-[0_4px_14px_rgba(42,95,204,0.30),inset_0_1px_0_rgba(255,255,255,0.35)]
+                          hover:from-[#2A5FCC] hover:to-[#4B8EF8]
+                          hover:shadow-[0_8px_22px_rgba(42,95,204,0.45),inset_0_1px_0_rgba(255,255,255,0.45)]
+                          hover:-translate-y-px
+                          transition-[transform,box-shadow,background] duration-150
+                          motion-reduce:hover:transform-none
+                          ${focusRing}`}
+            >
+              <LifeBuoy className="h-4 w-4" aria-hidden="true" />
+              Request Help
+            </PreloadLink>
           </nav>
 
-          {/* Right utilities (desktop) */}
-          <div className="ml-auto hidden md:flex items-center gap-1">
+          {/* Right utilities (desktop) — flow inline, no ml-auto, so every
+              gap between buttons is identical to the gap on the left side. */}
+          <div className="hidden md:flex items-center gap-1.5">
             {/* Easy Mode — glass bubble icon, matches Search/Settings */}
             <button
               onClick={toggleSeniorMode}
@@ -249,7 +313,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 <DropdownMenuTrigger asChild>
                   <button
                     aria-label={`Account menu for ${user.fullName}`}
-                    className={`ml-0.5 h-11 w-11 rounded-full border border-white/80 dark:border-white/15
+                    className={`h-11 w-11 rounded-full border border-white/80 dark:border-white/15
                                 bg-white/60 dark:bg-white/10 flex items-center justify-center
                                 hover:bg-white hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:border-white/30
                                 transition-colors ${focusRing}`}
@@ -293,7 +357,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
             ) : (
               <button
                 onClick={() => navigate('/login', { state: { from: location.pathname } })}
-                className={`ml-0.5 inline-flex items-center h-11 px-4 rounded-full text-[14px] font-semibold
+                className={`inline-flex items-center h-11 px-4 rounded-full text-[14px] font-semibold
                             text-[#1A1A1A] dark:text-white/90
                             hover:bg-white/80 hover:text-[#2A5FCC] dark:hover:bg-white/15
                             transition-colors ${focusRing}`}
@@ -403,6 +467,22 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                   </div>
                 </div>
               )}
+
+              {/* Primary CTA — mirrors the desktop "Request Help" pill */}
+              <Link
+                to="/get-help"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full text-lg font-bold mb-5
+                            text-white
+                            bg-gradient-to-r from-[#2A5FCC]/90 to-[#4B8EF8]/90
+                            border border-white/30
+                            shadow-[0_4px_14px_rgba(42,95,204,0.30),inset_0_1px_0_rgba(255,255,255,0.35)]
+                            hover:from-[#2A5FCC] hover:to-[#4B8EF8]
+                            transition-colors ${focusRing}`}
+              >
+                <LifeBuoy className="h-5 w-5" aria-hidden="true" />
+                Request Help
+              </Link>
 
               {/* Browse list */}
               <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
