@@ -195,6 +195,7 @@ export default function MyPath() {
         title="My Learning Path | TekSure"
         description="Follow a personalized step-by-step learning path and build your tech confidence at your own pace."
         path="/my-path"
+        noindex
       />
       <Navbar />
 

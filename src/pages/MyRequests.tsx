@@ -114,7 +114,7 @@ const MyRequests = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" />
+      <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" noindex />
       <Navbar />
 
       <main className="flex-1 py-10 px-4">
