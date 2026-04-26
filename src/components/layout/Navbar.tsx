@@ -53,8 +53,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  *   - Amber accent:  #E87A2B (Easy Mode active)
  *
  * Desktop layout (left → right):
- *   [Logo]  Guides  Tools  [Ask TekBrain*]  [Book Help]   ···
- *                                           Search · Easy Mode · Settings · Avatar
+ *   [Logo]  Guides  Tools                    Easy Mode · Settings · Avatar
  *
  * Mobile: hamburger opens a right-side slide-out drawer with ≥ 52px
  * tap targets, primary CTAs on top, and a clear Easy Mode toggle.
@@ -65,12 +64,6 @@ export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMac, setIsMac] = useState(false);
-
-  useEffect(() => {
-    if (typeof navigator === 'undefined') return;
-    setIsMac(/Mac|iPhone|iPad|iPod/.test(navigator.platform));
-  }, []);
 
   // Lock body scroll when drawer is open, close on Escape.
   useEffect(() => {
@@ -113,8 +106,6 @@ export function Navbar() {
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
-    { to: '/pricing', label: 'Pricing' },
-    { to: '/favorites', label: 'My Favorites' },
   ];
 
   const mobileBrowseLinks = [
@@ -204,77 +195,10 @@ export function Navbar() {
                 {link.label}
               </PreloadLink>
             ))}
-
-            {/* Ask TekBrain — primary pill CTA, draws attention */}
-            <PreloadLink
-              to="/brain"
-              aria-current={isActive('/brain') ? 'page' : undefined}
-              className={`ml-1.5 inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[15px] font-bold
-                          bg-[#2A5FCC] text-white
-                          shadow-[0_4px_14px_rgba(42,95,204,0.35)]
-                          hover:bg-[#234FB0] hover:shadow-[0_8px_22px_rgba(42,95,204,0.45)]
-                          hover:-translate-y-px transition-[transform,box-shadow,background-color] duration-150
-                          motion-reduce:hover:transform-none ${focusRing}`}
-            >
-              <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              Ask TekBrain
-            </PreloadLink>
-
-            {/* Book Help — glassy outline pill */}
-            <PreloadLink
-              to="/get-help"
-              aria-current={isActive('/get-help') ? 'page' : undefined}
-              className={`ml-1 inline-flex items-center gap-1.5 h-11 px-4 rounded-full text-[15px] font-bold
-                          bg-white/60 dark:bg-white/10 border-2 border-[#2A5FCC] text-[#2A5FCC] dark:text-white
-                          hover:bg-white/95 dark:hover:bg-white/15
-                          hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(42,95,204,0.15)]
-                          transition-[transform,box-shadow,background-color] duration-150
-                          motion-reduce:hover:transform-none ${focusRing}`}
-            >
-              <Calendar className="h-4 w-4" aria-hidden="true" />
-              Book Help
-            </PreloadLink>
           </nav>
 
           {/* Right utilities (desktop) */}
           <div className="ml-auto hidden md:flex items-center gap-1">
-            {/* Phone — small but visible click-to-call */}
-            <a
-              href="tel:18008357873"
-              className={`hidden lg:inline-flex items-center gap-1.5 h-11 px-3 rounded-full text-[14px] font-semibold
-                          text-[#2A5FCC] dark:text-white/90
-                          hover:bg-white/70 dark:hover:bg-white/10 hover:underline underline-offset-4
-                          transition-colors ${focusRing}`}
-              aria-label="Call TekSure at 1-800-TEKSURE"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              1-800-TEKSURE
-            </a>
-
-            {/* Search — labeled, prominent, with keyboard hint */}
-            <button
-              onClick={openSearch}
-              aria-label="Open search"
-              className={`inline-flex items-center gap-2 h-11 pl-3 pr-2 rounded-full
-                          bg-white/60 dark:bg-white/10 border border-white/80 dark:border-white/15
-                          text-[#1A1A1A] dark:text-white/90
-                          hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC]
-                          dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30
-                          transition-colors ${focusRing}`}
-            >
-              <Search className="h-[18px] w-[18px]" aria-hidden="true" />
-              <span className="text-[14px] font-semibold">Search</span>
-              <kbd
-                aria-hidden="true"
-                className="ml-1 inline-flex items-center justify-center h-6 px-1.5 rounded-md
-                           border border-[#E4DFD4] dark:border-white/20
-                           bg-[#FAF8F4]/80 dark:bg-white/10
-                           text-[11px] font-semibold text-[#6B6B6B] dark:text-white/70"
-              >
-                {isMac ? '⌘K' : 'Ctrl+K'}
-              </kbd>
-            </button>
-
             {/* Easy Mode — glass bubble icon, matches Search/Settings */}
             <button
               onClick={toggleSeniorMode}
