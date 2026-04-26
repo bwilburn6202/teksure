@@ -422,7 +422,7 @@ const Guides = () => {
       {/* ══════════════════════════════════════════
             HERO
          ══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden bg-background border-b-2 border-border">
+      <section className="relative overflow-hidden border-b border-border/40">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 opacity-40"

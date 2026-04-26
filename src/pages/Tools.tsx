@@ -2196,7 +2196,7 @@ export default function Tools() {
         </div>
 
         {/* ── Hero ─────────────────────────────── */}
-        <section className="relative overflow-hidden border-b bg-background">
+        <section className="relative overflow-hidden border-b border-border/40">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 opacity-40"
