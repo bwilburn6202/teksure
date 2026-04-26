@@ -449,6 +449,7 @@ const SearchResults = () => {
             : 'Search TekSure guides and tools.'
         }
         path={`/search${urlQuery ? `?q=${encodeURIComponent(urlQuery)}` : ''}`}
+        noindex
       />
       <Navbar />
 

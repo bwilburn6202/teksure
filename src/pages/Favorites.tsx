@@ -128,6 +128,7 @@ export default function Favorites() {
         title="My Saved Items | TekSure"
         description="Guides and tools you've saved on TekSure — all in one place for quick access."
         path="/favorites"
+        noindex
       />
       <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
