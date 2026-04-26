@@ -22,7 +22,7 @@ export type UserTier =
 export const TIER_META: Record<UserTier, { emoji: string; label: string; short: string; description: string }> = {
   'just-starting': {
     emoji: '🌱',
-    label: 'Just Starting',
+    label: 'Brand New',
     short: 'New to this',
     description: 'First steps with a phone or computer. Every word explained.',
   },
