@@ -38,7 +38,7 @@ const devices: { id: Device; label: string; icon: React.ElementType; desc: strin
 const confidenceLevels: { id: Confidence; label: string; icon: React.ElementType; desc: string }[] = [
   { id: 'beginner', label: "I'm a complete beginner", icon: Baby, desc: "Technology feels confusing — I need clear, simple steps" },
   { id: 'some', label: 'I know a little', icon: User, desc: "I can do basic things but often get stuck" },
-  { id: 'comfortable', label: "I'm fairly comfortable", icon: GraduationCap, desc: "I just want to fill in gaps and learn tips" },
+  { id: 'comfortable', label: "I'm fairly comfortable", icon: GraduationCap, desc: "I want to fill in gaps and learn tips" },
 ];
 
 const goals: { id: Goal; label: string; icon: React.ElementType; desc: string }[] = [
