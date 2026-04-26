@@ -13,6 +13,7 @@ import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { TierProvider } from "@/contexts/TierContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { MeshGradientBackground } from "@/components/MeshGradientBackground";
 import { TekBrain } from "@/components/TekBrain";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
@@ -885,6 +886,10 @@ export const AppShell = ({ children, helmetContext }: { children?: ReactNode; he
               <HighContrastProvider>
                 <TierProvider>
                   <AuthProvider>
+                    {/* Site-wide interactive mesh wallpaper — drifts on its own,
+                        leans toward the cursor, ripples on click. Mounted before
+                        page content so it sits behind every route. */}
+                    <MeshGradientBackground />
                     {children}
                     <AppContent />
                     <Analytics />

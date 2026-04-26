@@ -99,12 +99,34 @@
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Pre-paint fallback so SSR / first paint matches the mesh base
+       color before the canvas wallpaper boots. */
+    background-color: hsl(var(--background));
   }
   body {
-    @apply bg-background text-foreground;
+    /* Body is transparent so the fixed MeshGradientBackground canvas
+       (mounted in AppShell, sitting at z-index: -1) is visible site-wide. */
+    background: transparent;
+    color: hsl(var(--foreground));
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -0.011em;
     overflow-x: hidden;
+  }
+
+  /* The interactive mesh wallpaper itself — fixed, behind everything,
+     ignores pointer events. Listeners live on `window` so the page
+     stays fully interactive. */
+  canvas.teksure-mesh-bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    /* `transform: translateZ(0)` keeps the canvas on its own GPU layer
+       so it doesn't repaint underlying page content as it animates. */
+    transform: translateZ(0);
+    will-change: transform;
   }
   button, a[role="button"], [role="button"] {
     min-height: 44px;
@@ -238,7 +260,33 @@
    backgrounds so every route looks consistent without touching each page file. */
 
 .teksure-home {
-  background: hsl(var(--background)) !important;
+  /* Was a solid cream wash — now transparent so the mesh wallpaper shows
+     through the homepage hero too. */
+  background: transparent !important;
+}
+
+/* ── Wallpaper bleed-through ──────────────────────────────────────────────
+   Every page wraps its content in some flavor of `min-h-screen bg-…`. To
+   make the global mesh wallpaper visible site-wide WITHOUT touching all
+   220+ pages individually, we strip the background on those page-level
+   wrappers. Cards (`bg-card`), the floating glass navbar, and modals keep
+   their opaque surfaces because they don't carry `min-h-screen`. */
+.min-h-screen {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Cards on top of the wallpaper get a slight translucency + soft border
+   so the mesh hue tints through their edges — keeps the "interactive
+   wallpaper you can fidget with" feeling consistent across pages while
+   keeping body copy fully readable. */
+.glow-card {
+  background-color: hsl(var(--card) / 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.dark .glow-card {
+  background-color: hsl(var(--card) / 0.78);
 }
 
 /* Zone sections: use a single subtle primary tint instead of per-zone colors.
