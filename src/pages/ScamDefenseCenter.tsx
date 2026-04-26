@@ -35,7 +35,7 @@ const WARNING_SIGNS = [
   },
   {
     id: 'gut',
-    label: 'Does something just feel... wrong?',
+    label: 'Does something feel... wrong?',
   },
 ];
 
@@ -593,7 +593,7 @@ export default function ScamDefenseCenter() {
               Protect Yourself — Tools &amp; Guides
             </h2>
             <p className="text-muted-foreground mt-2">
-              Knowledge is your best defense. These free TekSure resources take just a few minutes
+              Knowledge is your best defense. These free TekSure resources take only a few minutes
               each.
             </p>
           </div>
@@ -643,7 +643,7 @@ export default function ScamDefenseCenter() {
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Create Strong Passwords</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                  Weak passwords make it easy for scammers to break into your accounts. Learn how to
+                  Weak passwords give scammers a quick way into your accounts. Learn how to
                   create strong ones you can actually remember.
                 </p>
                 <Link
