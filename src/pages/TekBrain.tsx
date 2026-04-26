@@ -845,9 +845,13 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
         description="Ask TekBrain any tech question and get a plain-English answer pulled from TekSure's library of senior-friendly guides. Free, no sign-up needed."
         path={chromeless ? '/' : '/tekbrain/chat'}
       />
-      {!chromeless && <Navbar />}
+      {/* Always render the global glass-bubble navbar so the homepage matches
+          every other route. We pass `noSpacer` because the chat layout uses
+          h-dvh + overflow-hidden and clears the floating pill with its own
+          pt-16/pt-20. */}
+      <Navbar noSpacer />
 
-      <main id="main-content" tabIndex={-1} className="relative h-screen h-dvh flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 outline-none">
+      <main id="main-content" tabIndex={-1} className="relative h-screen h-dvh flex flex-col overflow-hidden outline-none">
         {/* Decentralized mesh — peer nodes float, link up, and fire glowing
             data packets at each other. Sits behind the UI; move or click on
             empty background to interact. */}
