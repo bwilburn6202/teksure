@@ -206,7 +206,7 @@ export default function ProgressReport() {
                 <form onSubmit={handleSubscribe} className="flex gap-2">
                   <div className="flex-1">
                     <Label className="sr-only">Email address</Label>
-                    <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} />
+                    <Input type="email" autoComplete="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} />
                   </div>
                   <Button type="submit" className="shrink-0 rounded-xl">Subscribe</Button>
                 </form>

@@ -292,6 +292,7 @@ export function Footer() {
                   id="footer-newsletter-email"
                   type="email"
                   required
+                  autoComplete="email"
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
