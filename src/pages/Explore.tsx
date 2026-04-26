@@ -174,7 +174,7 @@ export default function Explore() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Explore Everything on TekSure"
-        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for easy browsing."
+        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for plain-English browsing."
         path="/explore"
       />
       <Navbar />

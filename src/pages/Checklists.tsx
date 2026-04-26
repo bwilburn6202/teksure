@@ -834,8 +834,8 @@ export default function Checklists() {
   return (
     <>
       <SEOHead
-        title="Printable Checklists — Just Check the Boxes | TekSure"
-        description="Do-this-now printable checklists for common tech situations. Tape one to the fridge. Keep one by the phone. No jargon — just the next step, and the one after that."
+        title="Printable Checklists — One Step at a Time | TekSure"
+        description="Do-this-now printable checklists for common tech situations. Tape one to the fridge. Keep one by the phone. No jargon — only the next step, and the one after that."
         path="/checklists"
       />
 

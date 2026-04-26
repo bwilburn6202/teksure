@@ -374,7 +374,7 @@ const TechDreamBuilder = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Dream Builder — Build Your Personal Tech Journey | TekSure"
-        description="Tell us what you want to do with technology — we'll build a personalized learning path just for you. No jargon, just clear steps."
+        description="Tell us what you want to do with technology — we'll build a personalized learning path tailored to you. No jargon — clear steps."
         path="/dream-builder"
       />
       <Navbar />
