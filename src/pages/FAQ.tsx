@@ -240,12 +240,12 @@ const categories: FAQCategory[] = [
       {
         q: 'Do guides work on my phone?',
         plain:
-          'Yes. TekSure is built mobile-first, so every guide, tool, and page works on phones and tablets just as well as on a computer. Large tap targets, big text, and swipe-friendly navigation throughout.',
+          'Yes. TekSure is built mobile-first, so every guide, tool, and page works on phones and tablets as well as on a computer. Large tap targets, big text, and swipe-friendly navigation throughout.',
         a: (
           <>
             Yes. TekSure is built mobile-first, so every guide, tool, and page
-            works on phones and tablets just as well as on a computer. Large
-            tap targets, big text, and swipe-friendly navigation throughout.
+            works on phones and tablets as well as on a computer. Large tap
+            targets, big text, and swipe-friendly navigation throughout.
           </>
         ),
       },
@@ -318,12 +318,12 @@ const categories: FAQCategory[] = [
       {
         q: 'Can I talk to TekBrain with my voice?',
         plain:
-          'Yes. On most phones and computers you can tap the microphone icon on your keyboard to dictate instead of typing. TekBrain reads everything aloud too — just use your device’s read-aloud feature.',
+          'Yes. On most phones and computers you can tap the microphone icon on your keyboard to dictate instead of typing. TekBrain reads everything aloud too — turn on your device’s read-aloud feature.',
         a: (
           <>
             Yes. On most phones and computers you can tap the microphone icon
             on your keyboard to dictate instead of typing. TekBrain reads
-            everything aloud too &mdash; just use your device&rsquo;s
+            everything aloud too &mdash; turn on your device&rsquo;s
             read-aloud feature (see our{' '}
             <Link to="/accessibility" className="text-primary hover:underline">Accessibility Hub</Link>).
           </>
