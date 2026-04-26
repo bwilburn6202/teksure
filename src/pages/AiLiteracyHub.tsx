@@ -174,7 +174,7 @@ const sections: Section[] = [
       {
         name: '2. Give context',
         description:
-          '"I am a senior who does not use tech much, explain simply." "I am writing to a doctor, sound professional." "I am a small-business owner, no jargon." Context shapes the answer more than anything else.',
+          '"I am a senior who does not use tech much, explain in plain language." "I am writing to a doctor, sound professional." "I am a small-business owner, no jargon." Context shapes the answer more than anything else.',
       },
       {
         name: '3. Ask for a format',

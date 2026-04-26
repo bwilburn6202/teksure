@@ -148,7 +148,7 @@ const STEPS: WizardStep[] = [
       'A "Quick Start" screen may appear next — we handle that in the next step.',
     ],
     stumble:
-      "Tapped the wrong language? Tap the small back arrow in the top-left corner, or simply restart (hold the top button + either volume button, then slide to power off) and begin again. Nothing is saved yet.",
+      "Tapped the wrong language? Tap the small back arrow in the top-left corner, or restart the iPad (hold the top button + either volume button, then slide to power off) and begin again. Nothing is saved yet.",
     screenshot: 'iPad language selection screen with English highlighted',
   },
   {
