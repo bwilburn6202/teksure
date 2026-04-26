@@ -74,16 +74,5 @@
     <div id="root"><!--ssr-outlet--></div>
     <!--ssr-head-->
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js').then(reg => {
-            console.log('ServiceWorker registered with scope:', reg.scope);
-          }).catch(() => {
-            console.log('ServiceWorker registration failed.');
-          });
-        });
-      }
-    </script>
   </body>
 </html>
