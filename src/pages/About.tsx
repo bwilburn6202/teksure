@@ -57,7 +57,7 @@ const pillars = [
     icon: Heart,
     title: 'We’ll always treat you with respect, not like a beginner',
     body:
-      'You’re not “bad at tech” — tech is bad at explaining itself. We write for smart adults who just haven’t been handed a clear explanation yet.',
+      'You’re not “bad at tech” — tech is bad at explaining itself. We write for smart adults who haven’t been handed a clear explanation yet.',
     accent: '#FFE4EF',
     ring: '#C43333',
   },
