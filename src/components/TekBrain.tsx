@@ -165,7 +165,7 @@ const KB: KBEntry[] = [
       iphone: "iPhone battery tips:\n\n1. Settings → Battery → turn on 'Low Power Mode'.\n2. Settings → Display & Brightness → lower brightness or enable Auto-Brightness.\n3. Settings → Battery → Battery Health — if below 80%, consider a replacement.\n4. Settings → Background App Refresh → turn it off to save power.\n5. Settings → Location Services → set apps to 'While Using' only.",
       android: "Android battery tips:\n\n1. Settings → Battery → turn on 'Battery Saver' or 'Power Saving Mode'.\n2. Lower screen brightness: swipe down the notification bar.\n3. Settings → Apps — check which apps are using the most battery and restrict them.\n4. Turn off 'Always On Display' if your phone has it.\n5. Settings → Location — set to 'Battery Saving' mode.",
       windows: "Laptop battery tips (Windows):\n\n1. Click the battery icon → drag the slider toward 'Best battery life'.\n2. Settings → System → Power & Sleep — set the screen to turn off sooner.\n3. Unplug accessories like external drives when not in use.\n4. Settings → Battery → Battery Saver — turn it on automatically at 20%.",
-      mac: "MacBook battery tips:\n\n1. Apple menu → System Settings → Battery → enable 'Low Power Mode'.\n2. Reduce screen brightness with the F1 key.\n3. Quit apps you're not using (Cmd+Q, not just closing the window).\n4. System Settings → Battery → turn off 'Enable Power Nap'.",
+      mac: "MacBook battery tips:\n\n1. Apple menu → System Settings → Battery → enable 'Low Power Mode'.\n2. Reduce screen brightness with the F1 key.\n3. Quit apps you're not using with Cmd+Q (closing the window alone keeps them running).\n4. System Settings → Battery → turn off 'Enable Power Nap'.",
     },
   },
   {
@@ -181,7 +181,7 @@ const KB: KBEntry[] = [
       "To take a screenshot:\n\n iPhone: Press Side Button + Volume Up at the same time.\n Android: Press Power + Volume Down at the same time.\n Windows: Press Windows + Shift + S (select an area) or PrtSc (whole screen).\n Mac: Press Command + Shift + 3 (whole screen) or Command + Shift + 4 (select area).",
     deviceAnswers: {
       windows: "Screenshot on Windows:\n\n• Windows + Shift + S → drag to select an area (saved to clipboard and notifications).\n• PrtSc → whole screen copied to clipboard (paste into Paint or Word).\n• Snipping Tool (search in Start menu) for more options and annotations.",
-      mac: "Screenshot on Mac:\n\n• Cmd + Shift + 3 → full screen (saved to Desktop).\n• Cmd + Shift + 4 → click and drag to select an area.\n• Cmd + Shift + 4, then Space → click a window to capture just that window.\n• Cmd + Shift + 5 → screenshot toolbar with all options.",
+      mac: "Screenshot on Mac:\n\n• Cmd + Shift + 3 → full screen (saved to Desktop).\n• Cmd + Shift + 4 → click and drag to select an area.\n• Cmd + Shift + 4, then Space → click a window to capture only that window.\n• Cmd + Shift + 5 → screenshot toolbar with all options.",
       iphone: "Screenshot on iPhone:\n\n• Face ID models: press Side button + Volume Up simultaneously.\n• Home button models: press Side button + Home button simultaneously.\nThe screenshot appears briefly in the bottom-left — tap it to edit, or it saves to Photos.",
       android: "Screenshot on Android:\n\n• Most phones: press Power + Volume Down at the same time.\n• Samsung: swipe the edge of your hand across the screen (if enabled).\n• Some phones: pull down the notification shade and tap 'Screenshot'.\nFind screenshots in Photos → Albums → Screenshots.",
     },
