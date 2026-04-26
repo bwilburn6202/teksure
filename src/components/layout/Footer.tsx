@@ -109,7 +109,6 @@ export function Footer() {
       title: 'Contact & Legal',
       icon: Mail,
       links: [
-        { to: 'tel:18008357873', label: 'Call us: 1-800-TEKSURE', external: true },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
         { to: '/technicians', label: 'Book a technician' },
         { to: '/get-help', label: 'Schedule a session' },
@@ -199,14 +198,6 @@ export function Footer() {
             </Link>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base">
-            <a
-              href="tel:18008357873"
-              className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-primary hover:underline underline-offset-4 transition-colors"
-              aria-label="Call TekSure at 1-800-TEKSURE"
-            >
-              <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
-              1-800-TEKSURE
-            </a>
             <a
               href="mailto:hello@teksure.com"
               className="inline-flex items-center gap-2 font-medium text-foreground/80 hover:text-primary hover:underline underline-offset-4 transition-colors"
