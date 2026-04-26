@@ -21,10 +21,12 @@ const items = [
 ] as const;
 
 const HIDDEN_PREFIXES = ['/customer', '/tech', '/admin'];
+// Pages where the chat IS the page — bottom nav would overlap the input.
+const HIDDEN_EXACT = new Set(['/', '/tekbrain/chat']);
 
 export function MobileBottomNav() {
   const { pathname } = useLocation();
-  const hidden = HIDDEN_PREFIXES.some((p) => pathname.startsWith(p));
+  const hidden = HIDDEN_PREFIXES.some((p) => pathname.startsWith(p)) || HIDDEN_EXACT.has(pathname);
   if (hidden) return null;
 
   return (
