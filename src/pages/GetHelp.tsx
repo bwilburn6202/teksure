@@ -393,7 +393,7 @@ const GetHelp = () => {
                   <Phone className="h-4 w-4 text-primary" />
                   Phone Number <span className="text-primary font-semibold"></span>
                 </Label>
-                <Input id="phone" type="tel" placeholder="(555) 867-5309" value={phone} onChange={(e) => setPhone(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="phone" type="tel" autoComplete="tel" placeholder="(555) 867-5309" value={phone} onChange={(e) => setPhone(e.target.value)} className="h-11 text-base rounded-xl border-border" />
               </div>
 
               <div className="space-y-2">
@@ -401,7 +401,7 @@ const GetHelp = () => {
                   <Mail className="h-4 w-4 text-muted-foreground" />
                   Email Address
                 </Label>
-                <Input id="email" type="email" placeholder="you@email.com" value={email} onChange={(e) => setEmail(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="email" type="email" autoComplete="email" placeholder="you@email.com" value={email} onChange={(e) => setEmail(e.target.value)} className="h-11 text-base rounded-xl border-border" />
               </div>
 
               <div className="space-y-2">
@@ -409,7 +409,7 @@ const GetHelp = () => {
                   <User className="h-4 w-4 text-muted-foreground" />
                   Your Name
                 </Label>
-                <Input id="name" type="text" placeholder="First name is fine" value={name} onChange={(e) => setName(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="name" type="text" autoComplete="given-name" placeholder="First name is fine" value={name} onChange={(e) => setName(e.target.value)} className="h-11 text-base rounded-xl border-border" />
               </div>
 
               <div className="space-y-2">
@@ -575,13 +575,13 @@ const GetHelp = () => {
                         <Label htmlFor="email" className="flex items-center gap-2 mb-2 font-semibold">
                           <Mail className="h-4 w-4" /> Email
                         </Label>
-                        <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jane@email.com" className="rounded-lg" />
+                        <Input id="email" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jane@email.com" className="rounded-lg" />
                       </div>
                       <div>
                         <Label htmlFor="phone" className="flex items-center gap-2 mb-2 font-semibold">
                           <Phone className="h-4 w-4" /> Phone
                         </Label>
-                        <Input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 123-4567" className="rounded-lg" />
+                        <Input id="phone" type="tel" autoComplete="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 123-4567" className="rounded-lg" />
                       </div>
                     </div>
 
