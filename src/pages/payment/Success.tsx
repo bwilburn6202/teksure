@@ -29,6 +29,7 @@ export default function PaymentSuccess() {
         title="Payment Confirmed | TekSure"
         description="Your deposit has been received. Your TekSure booking is confirmed."
         path="/payment/success"
+        noindex
       />
       <Navbar />
 
