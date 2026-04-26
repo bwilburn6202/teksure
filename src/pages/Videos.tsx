@@ -103,7 +103,7 @@ export default function Videos() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Free Video Tutorials for Beginners | TekSure"
-        description="Watch step-by-step video tutorials for Windows, Mac, iPhone, iPad, and Android. Free, easy-to-follow guides made for everyday people."
+        description="Watch step-by-step video tutorials for Windows, Mac, iPhone, iPad, and Android. Free, plain-English guides made for everyday people."
         path="/videos"
         jsonLd={{
           '@context': 'https://schema.org',

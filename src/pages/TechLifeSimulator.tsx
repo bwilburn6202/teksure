@@ -530,7 +530,7 @@ const TechLifeSimulator = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Life Simulator — Practice Real-World Scenarios | TekSure"
-        description="Practice identifying scams, safe browsing, and tech decisions in realistic scenarios. Learn by doing — no risk, just learning."
+        description="Practice identifying scams, safe browsing, and tech decisions in realistic scenarios. Learn by doing — no risk, only learning."
         path="/simulator"
       />
       <Navbar />

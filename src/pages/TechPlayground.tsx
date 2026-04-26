@@ -431,7 +431,7 @@ const TechPlayground = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Playground — Practice Technology Safely | TekSure"
-        description="Practice mouse, keyboard, and touch skills in a safe, interactive environment. No risk — just learning!"
+        description="Practice mouse, keyboard, and touch skills in a safe, interactive environment. No risk — only learning!"
         path="/playground"
       />
       <Navbar />
