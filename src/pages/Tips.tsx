@@ -20,7 +20,7 @@ interface Tip {
 
 const featuredTip: Tip & { full: string } = {
   title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
-  summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. The good news: you can usually free up a lot of space in just a few minutes without losing anything important.',
+  summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. The good news: you can usually free up a lot of space in a few minutes without losing anything important.',
   full: 'A "Storage Full" warning is one of the most common phone problems — and one of the easiest to fix. Start by checking what is using the most space. On iPhone, go to Settings → General → iPhone Storage. On Android, go to Settings → Storage. You will see a breakdown showing how much space photos, apps, and messages are using. The biggest space saver is usually photos and videos. If you use Google Photos or iCloud Photos, your pictures are already backed up to the cloud — you can safely delete them from your phone to reclaim space. On iPhone, go to Settings → General → iPhone Storage → tap "Review Personal Videos" or "Review Large Attachments" to find the biggest files. On Android, open the Files app (or "My Files" on Samsung) and tap "Clean" — it will suggest junk files, duplicate photos, and old downloads you can safely remove. Next, delete apps you no longer use. On iPhone, the iPhone Storage screen shows your last-used date for each app. If you have not opened an app in months, tap it and choose "Delete App." On Android, go to Settings → Apps and sort by size or last used. Finally, clear your text message attachments — old group chats with lots of photos and videos can quietly use gigabytes of space. Open your messaging app, find large conversations, and delete the ones you no longer need. Doing this cleanup once a month keeps your phone running smoothly.',
   category: 'Maintenance',
   icon: Smartphone,
@@ -65,7 +65,7 @@ const pastTips: Tip[] = [
   },
   {
     title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
-    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
+    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in a few taps.',
     category: 'Productivity',
     icon: PauseCircle,
   },
@@ -83,13 +83,13 @@ const pastTips: Tip[] = [
   },
   {
     title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
-    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
+    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes a few minutes to set up.',
     category: 'Safety',
     icon: Heart,
   },
   {
     title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
-    summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
+    summary: 'Apple released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone by getting you to visit the wrong website — no download needed.',
     category: 'Security',
     icon: ShieldAlert,
   },
