@@ -541,7 +541,7 @@ const ANDROID_STEPS: WizardStep[] = [
       'Swipe up or tap anywhere below the panel to close it.',
     ],
     stumble:
-      "Can't find airplane mode? Tap the pencil or edit icon in Quick Settings — you can drag tiles around and add the airplane tile to the top for easy access.",
+      "Can't find airplane mode? Tap the pencil or edit icon in Quick Settings — you can drag tiles around and add the airplane tile to the top for quick access.",
     screenshot: 'Quick Settings panel open with brightness, Wi-Fi, and airplane tiles visible',
     cheatSheet: 'Swipe down from top — twice for full panel. Brightness = sun slider.',
   },
