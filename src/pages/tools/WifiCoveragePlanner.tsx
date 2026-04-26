@@ -287,7 +287,7 @@ export default function WifiCoveragePlanner() {
             </div>
           </StepCard>
 
-          <StepCard step={5} title="Where are the dead zones?" icon={<MapPin className="h-5 w-5" />} subtitle="Check every room where WiFi is slow, keeps dropping, or just does not work.">
+          <StepCard step={5} title="Where are the dead zones?" icon={<MapPin className="h-5 w-5" />} subtitle="Check every room where WiFi is slow, keeps dropping, or does not work at all.">
             <div className="flex flex-wrap gap-2">
               {roomOptions.map((room) => (
                 <button key={room}
