@@ -145,12 +145,13 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           className="pointer-events-auto flex items-center gap-1.5
                      h-16 pl-3 pr-2 sm:pl-5 sm:pr-3
                      rounded-full
-                     bg-[rgba(250,248,244,0.6)] dark:bg-[rgba(10,24,48,0.55)]
-                     supports-[backdrop-filter]:bg-[rgba(250,248,244,0.45)]
-                     supports-[backdrop-filter]:dark:bg-[rgba(10,24,48,0.4)]
-                     backdrop-blur-xl backdrop-saturate-150
-                     border border-white/65 dark:border-white/10
-                     shadow-[0_10px_40px_-12px_rgba(26,26,26,0.22),0_2px_6px_rgba(26,26,26,0.04)]"
+                     bg-white/15 dark:bg-white/[0.06]
+                     supports-[backdrop-filter]:bg-white/10
+                     supports-[backdrop-filter]:dark:bg-white/[0.04]
+                     backdrop-blur-2xl backdrop-saturate-150
+                     border border-white/40 dark:border-white/15
+                     shadow-[0_8px_32px_-12px_rgba(26,26,26,0.18),inset_0_1px_0_rgba(255,255,255,0.45)]
+                     dark:shadow-[0_8px_32px_-12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)]"
         >
           {/* Logo */}
           <Link
