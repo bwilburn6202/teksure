@@ -142,6 +142,7 @@ const Login = () => {
                           <Input
                             id="new-password"
                             type="password"
+                            autoComplete="new-password"
                             value={newPassword}
                             onChange={e => setNewPassword(e.target.value)}
                             className="h-11 rounded-lg border border-border bg-background"
@@ -155,6 +156,7 @@ const Login = () => {
                           <Input
                             id="confirm-password"
                             type="password"
+                            autoComplete="new-password"
                             value={confirmPassword}
                             onChange={e => setConfirmPassword(e.target.value)}
                             className="h-11 rounded-lg border border-border bg-background"
@@ -217,6 +219,7 @@ const Login = () => {
                           <Input
                             id="reset-email"
                             type="email"
+                            autoComplete="email"
                             placeholder="you@example.com"
                             value={resetEmail}
                             onChange={e => setResetEmail(e.target.value)}
@@ -380,6 +383,7 @@ const Login = () => {
                         <Input
                           id="login-email"
                           type="email"
+                          autoComplete="email"
                           placeholder="you@example.com"
                           value={loginEmail}
                           onChange={e => setLoginEmail(e.target.value)}
@@ -392,6 +396,7 @@ const Login = () => {
                         <Input
                           id="login-password"
                           type="password"
+                          autoComplete="current-password"
                           value={loginPassword}
                           onChange={e => setLoginPassword(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -419,6 +424,7 @@ const Login = () => {
                         <Label htmlFor="signup-name" className="text-sm font-medium">Full Name</Label>
                         <Input
                           id="signup-name"
+                          autoComplete="name"
                           value={signupName}
                           onChange={e => setSignupName(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -430,6 +436,7 @@ const Login = () => {
                         <Input
                           id="signup-email"
                           type="email"
+                          autoComplete="email"
                           value={signupEmail}
                           onChange={e => setSignupEmail(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -441,6 +448,7 @@ const Login = () => {
                         <Input
                           id="signup-password"
                           type="password"
+                          autoComplete="new-password"
                           value={signupPassword}
                           onChange={e => setSignupPassword(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
