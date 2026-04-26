@@ -847,7 +847,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
       />
       {!chromeless && <Navbar />}
 
-      <main className="relative h-screen h-dvh flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <main id="main-content" tabIndex={-1} className="relative h-screen h-dvh flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 outline-none">
         {/* Decentralized mesh — peer nodes float, link up, and fire glowing
             data packets at each other. Sits behind the UI; move or click on
             empty background to interact. */}
