@@ -126,7 +126,7 @@ export default function TekBrainLanding() {
               </span>
               <span className="inline-flex items-center gap-2">
                 <BookOpen className="h-5 w-5 text-amber-600" aria-hidden="true" />
-                Powered by 3,000+ expert guides
+                Powered by 1,800+ expert guides
               </span>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function TekBrainLanding() {
                     TekBrain finds the right guide for you
                   </h3>
                   <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
-                    It searches 3,000+ TekSure guides and picks the ones that actually match your question.
+                    It searches 1,800+ TekSure guides and picks the ones that actually match your question.
                   </p>
                   {/* Visual example — stacked guide cards */}
                   <div className="space-y-2">
