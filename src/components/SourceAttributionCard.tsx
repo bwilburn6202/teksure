@@ -66,7 +66,7 @@ export function SourceAttributionCard({ source, article }: SourceAttributionCard
           variant="outline"
           size="sm"
           asChild
-          className="gap-1.5 text-xs h-8 whitespace-nowrap"
+          className="gap-1.5 text-xs min-h-[44px] px-3 whitespace-nowrap"
         >
           <a
             href={article.originalUrl}
