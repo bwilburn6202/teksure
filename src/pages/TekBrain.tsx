@@ -843,7 +843,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
       <SEOHead
         title={chromeless ? 'TekSure — Plain-English Tech Help' : 'TekBrain — Your Personal Tech Helper | TekSure'}
         description="Ask TekBrain any tech question and get a plain-English answer pulled from TekSure's library of senior-friendly guides. Free, no sign-up needed."
-        path={chromeless ? '/' : '/tekbrain'}
+        path={chromeless ? '/' : '/tekbrain/chat'}
       />
       {!chromeless && <Navbar />}
 
