@@ -132,7 +132,7 @@ const Login = () => {
                       <h2 className="text-2xl font-bold tracking-tight mb-2">Set your new password</h2>
                       <p className="text-muted-foreground mb-6">Choose a strong password — at least 6 characters.</p>
                       {error && (
-                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive text-left">
+                        <div role="alert" className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive text-left">
                           {error}
                         </div>
                       )}
@@ -209,7 +209,7 @@ const Login = () => {
                         No worries — enter your email and we'll send you a link to reset it.
                       </p>
                       {error && (
-                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
+                        <div role="alert" className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
                           {error}
                         </div>
                       )}
@@ -303,7 +303,7 @@ const Login = () => {
             <div className="mb-8 text-center">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Welcome to TekSure</h1>
               {message ? (
-                <p className="text-destructive font-medium">{message}</p>
+                <p role="alert" className="text-destructive font-medium">{message}</p>
               ) : (
                 <p className="text-muted-foreground">Sign in or create a free account</p>
               )}
@@ -313,6 +313,7 @@ const Login = () => {
               <CardContent className="p-8">
                 {error && (
                   <div
+                    role="alert"
                     className="mb-6 rounded-lg bg-destructive/10 p-4 text-sm text-destructive"
                   >
                     {error}
