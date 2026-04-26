@@ -157,26 +157,30 @@ const GetHelp = () => {
   };
 
   // ── Schedule submit helpers ─────────────────────────────────
+  // We generate the id client-side so the insert doesn't have to read the row
+  // back. The bookings SELECT policy is "authenticated only", so a returning
+  // .select() after an anonymous insert returns zero rows and .single() throws.
   const createBookingRecord = async (payStatus: 'none' | 'deposit_pending') => {
-    const { data, error: dbError } = await supabase
-      .from('bookings')
-      .insert({
-        user_id: user?.id ?? null,
-        name: name.trim(),
-        email: email.trim() || null,
-        phone: phone.trim() || null,
-        service_type: serviceType!,
-        device_type: deviceType || null,
-        preferred_date: scheduleDate!,
-        preferred_slot: scheduleSlot!,
-        problem_description: description.trim() || null,
-        status: 'pending',
-        payment_status: payStatus,
-      })
-      .select('id')
-      .single();
+    const id =
+      typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    const { error: dbError } = await supabase.from('bookings').insert({
+      id,
+      user_id: user?.id ?? null,
+      name: name.trim(),
+      email: email.trim() || null,
+      phone: phone.trim() || null,
+      service_type: serviceType!,
+      device_type: deviceType || null,
+      preferred_date: scheduleDate!,
+      preferred_slot: scheduleSlot!,
+      problem_description: description.trim() || null,
+      status: 'pending',
+      payment_status: payStatus,
+    });
     if (dbError) throw dbError;
-    return data?.id as string;
+    return id;
   };
 
   const submitPayOnDay = async () => {
