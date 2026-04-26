@@ -88,7 +88,7 @@ const FEATURED_THIS_MONTH: {
   {
     title: 'TekBrain now talks back',
     description:
-      "Our friendly AI assistant added voice mode — just tap the mic and ask. Great if typing is hard or you'd rather chat like you would with a friend.",
+      "Our friendly AI assistant added voice mode — tap the mic and ask. Great if typing is hard or you'd rather chat like you would with a friend.",
     icon: Mic,
     href: '/tekbrain',
     cta: 'Try TekBrain',
@@ -148,7 +148,7 @@ const RELEASES: MonthlyRelease[] = [
         { title: 'ChatGPT for everyday life', description: 'Real examples of how to ask for recipes, emails, and translations — no tech background needed.' },
         { title: 'Password managers made simple', description: 'Why one good password and a manager is safer than sticky notes on the monitor.' },
         { title: 'Smart home without the headache', description: 'What a smart bulb actually does, which assistants get along, and what to skip.' },
-        { title: 'Video calls that just work', description: 'FaceTime, Zoom, and Google Meet — the short version, with pictures.' },
+        { title: 'Video calls that finally work', description: 'FaceTime, Zoom, and Google Meet — the short version, with pictures.' },
         { title: 'Streaming without overpaying', description: 'How to tell which services you actually use and cancel the rest in a few clicks.' },
         { title: 'Two-factor authentication explained', description: 'What those codes are, why they matter, and how to set them up without losing access.' },
         { title: 'Cloud storage for normal people', description: 'iCloud, Google Drive, OneDrive — the differences in plain English.' },
@@ -216,7 +216,7 @@ const RELEASES: MonthlyRelease[] = [
       ],
       improvement: [
         { title: 'Initial launch content', description: 'Homepage, about page, how-it-works, and the very first Tools hub.' },
-        { title: 'Mobile responsiveness', description: 'Every page tuned to work beautifully on phones and tablets, not just desktops.' },
+        { title: 'Mobile responsiveness', description: 'Every page tuned to work beautifully on phones and tablets, not desktops alone.' },
       ],
     },
   },
