@@ -277,7 +277,7 @@ const CHECKLISTS: ChecklistMeta[] = [
           'Install pending Windows or macOS updates',
           'Empty the Trash / Recycle Bin',
           'Run a quick virus scan (Windows: Security; Mac: no action needed)',
-          'Restart the computer fully — not just close the lid',
+          'Restart the computer fully — do not only close the lid',
         ],
       },
       {
