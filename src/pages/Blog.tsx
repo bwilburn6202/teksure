@@ -25,7 +25,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'why-software-updates-matter',
     title: 'Why You Should Never Ignore Software Updates',
-    excerpt: 'That little notification telling you to update your phone or computer isn\'t just annoying — ignoring it could leave you wide open to hackers. Here\'s what\'s really happening behind the scenes.',
+    excerpt: 'That little notification telling you to update your phone or computer isn\'t only annoying — ignoring it could leave you wide open to hackers. Here\'s what\'s really happening behind the scenes.',
     category: 'Security',
     icon: RefreshCw,
     date: '2026-03-20',
@@ -58,7 +58,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'ai-tools-for-seniors',
     title: 'How AI Can Make Daily Life Easier for Older Adults',
-    excerpt: 'AI assistants aren\'t just for tech enthusiasts. From reminders to dictating messages, here are some genuinely useful ways AI tools are helping older people every day.',
+    excerpt: 'AI assistants aren\'t only for tech enthusiasts. From reminders to dictating messages, here are some genuinely useful ways AI tools are helping older people every day.',
     category: 'AI & Tech',
     icon: Bot,
     date: '2026-03-14',
@@ -74,7 +74,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'smart-tv-guide',
     title: 'Getting the Most from Your Smart TV',
-    excerpt: 'Modern smart TVs can do much more than just play channels. Here\'s a beginner\'s tour of everything your TV is probably capable of — and how to use it.',
+    excerpt: 'Modern smart TVs can do much more than play channels. Here\'s a beginner\'s tour of everything your TV is probably capable of — and how to use it.',
     category: 'Devices',
     icon: Tv,
     date: '2026-03-10',
@@ -166,7 +166,7 @@ const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'understanding-smart-speakers',
     title: 'Smart Speakers Explained: Amazon Echo, Google Nest, and Apple HomePod',
-    excerpt: 'Smart speakers let you control devices, play music, and ask questions using just your voice. But which one is right for you — and should you be worried about privacy?',
+    excerpt: 'Smart speakers let you control devices, play music, and ask questions using only your voice. But which one is right for you — and should you be worried about privacy?',
     category: 'Devices',
     icon: Volume2,
     date: '2026-03-15',
