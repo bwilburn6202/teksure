@@ -48,7 +48,7 @@ const resources: Resource[] = [
     url: 'https://www.internetessentials.com',
     category: 'Internet & Phone',
     description:
-      'Reliable home internet for just $9.95/month in areas served by Comcast. Includes free or low-cost laptop offers and free digital literacy training.',
+      'Reliable home internet for $9.95/month in areas served by Comcast. Includes free or low-cost laptop offers and free digital literacy training.',
     eligibility:
       'Available to households with at least one student on free/reduced lunch, or families receiving public assistance programs. Comcast service area required.',
   },
