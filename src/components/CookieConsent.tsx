@@ -25,10 +25,10 @@ export function CookieConsent() {
           See our <a href="/privacy" className="text-primary underline">Privacy Policy</a> for details.
         </p>
         <div className="flex gap-2 shrink-0">
-          <Button asChild size="sm" variant="outline">
+          <Button asChild size="sm" variant="outline" className="min-h-[44px] px-4">
             <Link to="/privacy">Learn more</Link>
           </Button>
-          <Button size="sm" onClick={accept}>Accept</Button>
+          <Button size="sm" onClick={accept} className="min-h-[44px] px-4">Accept</Button>
         </div>
       </div>
     </div>
