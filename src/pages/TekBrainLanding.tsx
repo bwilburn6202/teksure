@@ -61,7 +61,7 @@ export default function TekBrainLanding() {
     <>
       <SEOHead
         title="Meet TekBrain — Your AI Tech Helper | TekSure"
-        description="Ask any tech question in plain English and get step-by-step help, pulled from TekSure's library of 3,000+ senior-friendly guides. Free, no signup required."
+        description="Ask any tech question in plain English and get step-by-step help, pulled from TekSure's library of 1,800+ senior-friendly guides. Free, no signup required."
         path="/tekbrain"
       />
       <Navbar />
