@@ -18,7 +18,9 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "embed-guides": "tsx scripts/embed-all-guides.ts"
+    "embed-guides": "tsx scripts/embed-all-guides.ts",
+    "loop:critique": "node scripts/build-critique-loop.mjs",
+    "loop:critique:once": "node scripts/build-critique-loop.mjs --max-cycles=1 --checks=quick"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
