@@ -287,7 +287,7 @@ export default function BackupWizard() {
     <>
       <SEOHead
         title="Data Backup Wizard — Back Up Your Photos & Files | TekSure"
-        description="Step-by-step personalized guide to backing up your photos, documents, and contacts. Works for iPhone, Android, Windows, and Mac. Free and easy."
+        description="Step-by-step personalized guide to backing up your photos, documents, and contacts. Works for iPhone, Android, Windows, and Mac. Free, no signup."
         path="/tools/backup-wizard"
       />
       <Navbar />

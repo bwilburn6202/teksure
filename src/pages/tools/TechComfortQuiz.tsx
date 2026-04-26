@@ -219,7 +219,7 @@ export default function TechComfortQuiz() {
     <>
       <SEOHead
         title="Tech Comfort Assessment | TekSure"
-        description="Take our friendly 10-question quiz to discover your tech comfort level and get personalized guide recommendations tailored just for you."
+        description="Take our friendly 10-question quiz to discover your tech comfort level and get personalized guide recommendations tailored to you."
         path="/tools/tech-comfort-quiz"
       />
       <Navbar />
