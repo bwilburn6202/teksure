@@ -78,7 +78,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 placeholder="your@email.com"
                 className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-primary/30"
               />
-              <Button type="submit" size="sm">
+              <Button type="submit" size="sm" className="min-h-[44px] px-4">
                 Subscribe <ArrowRight className="h-3.5 w-3.5 ml-1" />
               </Button>
             </form>
@@ -116,7 +116,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                 placeholder="your@email.com"
                 className="flex-1 text-sm bg-background border border-border rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-primary/30"
               />
-              <Button type="submit" size="sm" className="shrink-0">Go</Button>
+              <Button type="submit" size="sm" className="shrink-0 min-h-[44px] px-4">Go</Button>
             </form>
           )}
         </>
