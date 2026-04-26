@@ -5,8 +5,6 @@ import {
   Menu,
   LogOut,
   User,
-  UserCog,
-  Settings,
   MessageSquare,
   Map,
   X,
@@ -21,15 +19,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
-import { useSeniorMode } from '@/contexts/SeniorModeContext';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
-import { SeniorModeToggle } from '@/components/SeniorModeToggle';
-import { HighContrastToggle } from '@/components/HighContrastToggle';
-import { LanguageToggle } from '@/components/LanguageToggle';
 
 /**
  * TekSure universal navbar — glass-bubble floating pill.
@@ -48,17 +41,16 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  *   - Cream glass:   rgba(250,248,244, 0.6) · blur 24px
  *   - Warm edge:     rgba(255,255,255, 0.65)
  *   - Navy accent:   #2A5FCC (hover #234FB0)
- *   - Amber accent:  #E87A2B (Easy Mode active)
+ *   - Toggle row:    Light/Dark + Font Size (DarkModeToggle, FontSizeToggle)
  *
  * Desktop layout (left → right):
- *   [Logo]  Guides  Tools                    Easy Mode · Settings · Avatar
+ *   [Logo]  Guides  Tools  More ▾  [Request Help]  ☼  A↕  Avatar
  *
  * Mobile: hamburger opens a right-side slide-out drawer with ≥ 52px
- * tap targets, primary CTAs on top, and a clear Easy Mode toggle.
+ * tap targets and the Request Help CTA on top.
  */
 export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
   const { user, logout } = useAuth();
-  const { seniorMode, toggleSeniorMode } = useSeniorMode();
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -154,7 +146,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                    pointer-events-none print:hidden"
       >
         <div
-          className="pointer-events-auto inline-flex items-center gap-1.5
+          className="pointer-events-auto inline-flex items-center gap-2
                      h-16 px-3 sm:px-3
                      rounded-full
                      bg-white/15 dark:bg-white/[0.06]
@@ -186,7 +178,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           </Link>
 
           {/* Desktop primary nav */}
-          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1.5">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-2">
             {primaryLinks.map((link) => (
               <PreloadLink
                 key={link.to}
@@ -252,60 +244,10 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
 
           {/* Right utilities (desktop) — flow inline, no ml-auto, so every
               gap between buttons is identical to the gap on the left side. */}
-          <div className="hidden md:flex items-center gap-1.5">
-            {/* Easy Mode — glass bubble icon, matches Search/Settings */}
-            <button
-              onClick={toggleSeniorMode}
-              aria-pressed={seniorMode}
-              aria-label={
-                seniorMode
-                  ? 'Turn off Easy Mode'
-                  : 'Turn on Easy Mode (larger text and simpler layout)'
-              }
-              className={`inline-flex items-center justify-center h-11 w-11 rounded-full border transition-colors ${focusRing}
-                          ${seniorMode
-                            ? 'bg-[#E87A2B]/20 border-[#E87A2B]/60 text-[#E87A2B] dark:bg-[#E87A2B]/20 dark:border-[#E87A2B]/40 shadow-[0_2px_8px_rgba(232,122,43,0.25)]'
-                            : 'bg-white/60 dark:bg-white/10 border-white/80 dark:border-white/15 text-[#1A1A1A] dark:text-white/90 hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30'
-                          }`}
-            >
-              <UserCog className="h-[18px] w-[18px]" aria-hidden="true" />
-            </button>
-
-            {/* Settings / Display & Accessibility */}
-            <Popover>
-              <PopoverTrigger asChild>
-                <button
-                  aria-label="Display and accessibility settings"
-                  className={`inline-flex items-center justify-center h-11 w-11 rounded-full
-                              bg-white/60 dark:bg-white/10 border border-white/80 dark:border-white/15
-                              text-[#1A1A1A] dark:text-white/90
-                              hover:bg-white hover:text-[#2A5FCC] hover:border-[#2A5FCC]
-                              dark:hover:bg-white/20 dark:hover:text-white dark:hover:border-white/30
-                              transition-colors ${focusRing}`}
-                >
-                  <Settings className="h-4 w-4" aria-hidden="true" />
-                </button>
-              </PopoverTrigger>
-              <PopoverContent align="end" className="w-auto p-4 border-[#E4DFD4]">
-                <p
-                  className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest mb-3"
-                  id="display-settings-label"
-                >
-                  Display &amp; Accessibility
-                </p>
-                <div
-                  className="flex items-center gap-1.5"
-                  role="group"
-                  aria-labelledby="display-settings-label"
-                >
-                  <SeniorModeToggle />
-                  <HighContrastToggle />
-                  <FontSizeToggle />
-                  <DarkModeToggle />
-                  <LanguageToggle />
-                </div>
-              </PopoverContent>
-            </Popover>
+          <div className="hidden md:flex items-center gap-2">
+            {/* Light/Dark + Font size — only display toggles in the bar */}
+            <DarkModeToggle />
+            <FontSizeToggle />
 
             {/* Avatar / Sign In */}
             {user ? (
@@ -507,35 +449,17 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 ))}
               </div>
 
-              {/* Easy Mode — huge, obvious */}
-              <button
-                onClick={toggleSeniorMode}
-                aria-pressed={seniorMode}
-                className={`w-full inline-flex items-center justify-center gap-2 min-h-[56px] px-5 rounded-full
-                            text-lg font-bold border-2 transition-colors mb-5 ${focusRing}
-                            ${seniorMode
-                              ? 'bg-[#E87A2B] border-[#E87A2B] text-white hover:bg-[#C6661F]'
-                              : 'bg-white dark:bg-transparent border-[#E4DFD4] dark:border-white/20 text-[#1A1A1A] dark:text-white hover:border-[#E87A2B] hover:text-[#B35A00] dark:hover:text-[#E87A2B]'
-                            }`}
-              >
-                <UserCog className="h-5 w-5" aria-hidden="true" />
-                {seniorMode ? 'Easy Mode: ON — Tap to turn off' : 'Turn on Easy Mode'}
-              </button>
-
-              {/* Accessibility row */}
+              {/* Display row — light/dark + font size only */}
               <p className="text-[11px] font-bold uppercase tracking-widest text-[#6B6B6B] dark:text-white/60 px-2 mb-2">
-                Display &amp; Accessibility
+                Display
               </p>
               <div
-                className="flex items-center flex-wrap gap-1.5 px-2 mb-5"
+                className="flex items-center flex-wrap gap-2 px-2 mb-5"
                 role="group"
-                aria-label="Display and accessibility settings"
+                aria-label="Display settings"
               >
-                <SeniorModeToggle />
-                <HighContrastToggle />
-                <FontSizeToggle />
                 <DarkModeToggle />
-                <LanguageToggle />
+                <FontSizeToggle />
               </div>
 
               {/* Auth actions */}
