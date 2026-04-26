@@ -27,6 +27,7 @@ import { Analytics } from "@vercel/analytics/react";
 const isServer = typeof window === "undefined";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
+const Landing                = lazy(() => import("./pages/Landing"));
 const Login                  = lazy(() => import("./pages/Login"));
 const Signup                 = lazy(() => import("./pages/Signup"));
 const HowItWorks             = lazy(() => import("./pages/HowItWorks"));
@@ -523,11 +524,9 @@ const AppContent = () => {
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
-          {/* Homepage is the TekBrain chat itself — a single, no-scroll
-              full-viewport screen with no nav chrome. The marketing landing
-              still lives at /tekbrain (TekBrainLanding) and the chromed chat
-              at /tekbrain/chat. */}
-          <Route path="/" element={<TekBrainPage chromeless />} />
+          {/* Homepage — centered hero on the global mesh wallpaper.
+              The TekBrain chat lives at /brain and /tekbrain/chat. */}
+          <Route path="/" element={<Landing />} />
           <Route path="/welcome" element={<Navigate to="/" replace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
