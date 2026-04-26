@@ -27,7 +27,6 @@ import { Analytics } from "@vercel/analytics/react";
 const isServer = typeof window === "undefined";
 
 // ── Lazy-loaded route components ──────────────────────────────────────────────
-const Index                  = lazy(() => import("./pages/Index"));
 const Login                  = lazy(() => import("./pages/Login"));
 const Signup                 = lazy(() => import("./pages/Signup"));
 const HowItWorks             = lazy(() => import("./pages/HowItWorks"));
@@ -447,8 +446,9 @@ function OfflineBanner() {
 
 const FloatingChrome = () => {
   const { pathname } = useLocation();
-  // The chat IS the page on `/tekbrain/chat`, so skip the launcher there.
-  if (pathname === "/tekbrain/chat") return null;
+  // The chat IS the page on / and /tekbrain/chat, so skip the floating
+  // launcher and emergency button there — they would overlap the chat input.
+  if (pathname === "/" || pathname === "/tekbrain/chat") return null;
   return (
     <>
       <TekBrain />
@@ -523,9 +523,11 @@ const AppContent = () => {
       <Suspense fallback={<PageLoader />}>
         <ErrorBoundary variant="section">
         <Routes>
-          {/* Homepage is the friendly senior-focused landing page. TekBrain
-              chat remains accessible at /brain and /tekbrain/chat. */}
-          <Route path="/" element={<Index />} />
+          {/* Homepage is the TekBrain chat itself — a single, no-scroll
+              full-viewport screen with no nav chrome. The marketing landing
+              still lives at /tekbrain (TekBrainLanding) and the chromed chat
+              at /tekbrain/chat. */}
+          <Route path="/" element={<TekBrainPage chromeless />} />
           <Route path="/welcome" element={<Navigate to="/" replace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

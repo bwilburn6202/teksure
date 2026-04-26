@@ -205,7 +205,7 @@ function uid(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
-export default function TekBrainPage() {
+export default function TekBrainPage({ chromeless = false }: { chromeless?: boolean } = {}) {
   // ── Session state ────────────────────────────────────────────────────────
   // session_id is created once per page load and passed on every POST so the
   // edge function can scope anonymous conversations. conversation_id is
@@ -841,11 +841,11 @@ export default function TekBrainPage() {
   return (
     <>
       <SEOHead
-        title="TekBrain — Your Personal Tech Helper | TekSure"
+        title={chromeless ? 'TekSure — Plain-English Tech Help' : 'TekBrain — Your Personal Tech Helper | TekSure'}
         description="Ask TekBrain any tech question and get a plain-English answer pulled from TekSure's library of senior-friendly guides. Free, no sign-up needed."
-        path="/tekbrain"
+        path={chromeless ? '/' : '/tekbrain'}
       />
-      <Navbar />
+      {!chromeless && <Navbar />}
 
       <main className="relative h-screen flex flex-col overflow-hidden bg-gradient-to-b from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
         {/* Decentralized mesh — peer nodes float, link up, and fire glowing
