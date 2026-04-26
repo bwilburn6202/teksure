@@ -8,7 +8,10 @@ function sitemapPlugin(): Plugin {
     name: 'generate-sitemap',
     buildStart() {
       const BASE_URL = 'https://teksure.com';
-      const LASTMOD = '2026-04-05';
+      // Use today's date so search engines see updated lastmod after each
+      // build instead of a frozen date. Matches scripts/generate-sitemap.mjs.
+      const _d = new Date();
+      const LASTMOD = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, '0')}-${String(_d.getDate()).padStart(2, '0')}`;
 
       const mainPages = [
         { path: '/', priority: '1.0', changefreq: 'weekly' },
