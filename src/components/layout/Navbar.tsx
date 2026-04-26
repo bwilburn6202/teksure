@@ -54,7 +54,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  * Mobile: hamburger opens a right-side slide-out drawer with ≥ 52px
  * tap targets, primary CTAs on top, and a clear Easy Mode toggle.
  */
-export function Navbar() {
+export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
   const { user, logout } = useAuth();
   const { seniorMode, toggleSeniorMode } = useSeniorMode();
   const navigate = useNavigate();
@@ -322,9 +322,11 @@ export function Navbar() {
       {/*
         Spacer — since the pill is `position: fixed`, it doesn't reserve
         layout space. We render a same-height sibling so page content lines
-        up below it on every page without extra per-page padding.
+        up below it on every page without extra per-page padding. Pages with
+        a full-viewport layout (e.g. the chat at /tekbrain) opt out via
+        `noSpacer` and clear the floating pill with their own top padding.
       */}
-      <div aria-hidden="true" className="h-[80px] sm:h-[88px] print:hidden" />
+      {!noSpacer && <div aria-hidden="true" className="h-[80px] sm:h-[88px] print:hidden" />}
 
       {/* Mobile slide-out drawer */}
       {mobileMenuOpen && (

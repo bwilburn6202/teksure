@@ -266,12 +266,15 @@
 }
 
 /* ── Wallpaper bleed-through ──────────────────────────────────────────────
-   Every page wraps its content in some flavor of `min-h-screen bg-…`. To
-   make the global mesh wallpaper visible site-wide WITHOUT touching all
-   220+ pages individually, we strip the background on those page-level
-   wrappers. Cards (`bg-card`), the floating glass navbar, and modals keep
-   their opaque surfaces because they don't carry `min-h-screen`. */
-.min-h-screen {
+   Every page wraps its content in some flavor of viewport-tall `bg-…`.
+   To make the global mesh wallpaper visible site-wide WITHOUT touching
+   all 220+ pages individually, we strip the background on those page-
+   level wrappers. Cards (`bg-card`), the floating glass navbar, and
+   modals keep their opaque surfaces because they don't use these
+   viewport-height classes. */
+.min-h-screen,
+main.h-screen,
+main.h-dvh {
   background-color: transparent !important;
   background-image: none !important;
 }
