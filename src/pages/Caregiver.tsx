@@ -28,7 +28,7 @@ const tips = [
   'Sit side-by-side rather than taking over — help them do it, don\'t do it for them.',
   'Celebrate small wins. "You connected to Wi-Fi by yourself!" matters a lot.',
   'Write down steps on a notepad in large writing and leave it by the device.',
-  'Suggest they start with TekSure\'s Beginner Basics path — just 5 short guides.',
+  'Suggest they start with TekSure\'s Beginner Basics path — only 5 short guides.',
   'Patience is the most important skill. What takes you seconds may take them minutes — that\'s OK.',
   'Set up a regular "tech time" together — 30 minutes a week makes a huge difference.',
 ];
