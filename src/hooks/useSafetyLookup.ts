@@ -68,8 +68,18 @@ export function useSafetyLookup() {
         summary:
           payload.summary ??
           "We couldn't reach every safety source, but here's what we found.",
-        reasons: Array.isArray(payload.reasons) ? payload.reasons : [],
-        sources: Array.isArray(payload.sources) ? payload.sources : [],
+        reasons: Array.isArray(payload.reasons)
+          ? (payload.reasons as unknown[]).map(r =>
+              typeof r === 'string'
+                ? { source: 'system', detail: r, severity: 'unknown' as SafetyVerdict }
+                : r as SafetyReason
+            )
+          : [],
+        sources: Array.isArray(payload.sources)
+          ? (payload.sources as unknown[]).map(s =>
+              typeof s === 'string' ? s : (s as { name: string }).name
+            )
+          : [],
         cached: payload.cached ?? false,
         checkedAt: payload.checkedAt,
       };

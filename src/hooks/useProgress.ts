@@ -136,7 +136,11 @@ export function useProgress() {
           .select('guide_slug, status, completed_at, last_seen_at')
           .eq('user_id', user.id);
 
-        if (error || !data || cancelled) return;
+        if (cancelled) return;
+        if (error || !data) {
+          setRemoteLoaded(true);
+          return;
+        }
 
         const remoteMap: Record<string, MasteryStatus> = {};
         for (const row of data) {
