@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import { formatBookingSlot } from '@/lib/bookingSlots';
 
 interface HelpRequest {
   id: string;
@@ -52,12 +53,6 @@ const deviceLabels: Record<string, string> = {
   tv: 'TV / Streaming',
   'smart-home': 'Smart Home',
   other: 'Other',
-};
-
-const slotLabels: Record<string, string> = {
-  morning: 'Morning (8am–12pm)',
-  afternoon: 'Afternoon (12pm–5pm)',
-  evening: 'Evening (5pm–9pm)',
 };
 
 function formatDate(iso: string) {
@@ -178,7 +173,7 @@ const MyRequests = () => {
 
                     {/* Time slot */}
                     <div className="text-sm text-muted-foreground">
-                      {slotLabels[b.preferred_slot] ?? b.preferred_slot}
+                      {formatBookingSlot(b.preferred_slot)}
                     </div>
 
                     {/* Details grid */}

@@ -15,7 +15,6 @@ interface BookingDetails {
   service?: string;
   date?: string;
   slot?: string;
-  time?: string;
   bookingId?: string;
 }
 
@@ -26,7 +25,7 @@ serve(async (req) => {
 
   try {
     const body: BookingDetails = await req.json();
-    const { name, email, service, date, slot, time, bookingId } = body;
+    const { name, email, service, date, slot, bookingId } = body;
 
     if (!RESEND_API_KEY) {
       return new Response(JSON.stringify({ error: 'Email service not configured' }), {
@@ -59,7 +58,7 @@ serve(async (req) => {
               <table style="width: 100%; font-size: 15px; border-collapse: collapse;">
                 <tr><td style="padding: 6px 0; color: #888; width: 100px;">Service</td><td style="font-weight: 500;">${service || 'Tech support'}</td></tr>
                 <tr><td style="padding: 6px 0; color: #888;">Date</td><td style="font-weight: 500;">${date || 'TBC'}</td></tr>
-                <tr><td style="padding: 6px 0; color: #888;">Time</td><td style="font-weight: 500;">${slot || ''} ${time ? `(${time})` : ''}</td></tr>
+                <tr><td style="padding: 6px 0; color: #888;">Time</td><td style="font-weight: 500;">${slot || ''}</td></tr>
                 <tr><td style="padding: 6px 0; color: #888;">Reference</td><td style="font-weight: 500; font-family: monospace; letter-spacing: 1px;">${ref}</td></tr>
               </table>
             </div>
@@ -95,7 +94,7 @@ serve(async (req) => {
             ${email ? `<tr><td style="padding: 8px 0; color: #888;">Email</td><td><a href="mailto:${email}" style="color: #2563eb;">${email}</a></td></tr>` : ''}
             <tr><td style="padding: 8px 0; color: #888;">Service</td><td style="font-weight: 500;">${service}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Date</td><td style="font-weight: 500;">${date}</td></tr>
-            <tr><td style="padding: 8px 0; color: #888;">Time</td><td style="font-weight: 500;">${slot} (${time})</td></tr>
+            <tr><td style="padding: 8px 0; color: #888;">Time</td><td style="font-weight: 500;">${slot}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Ref</td><td style="font-family: monospace;">${ref}</td></tr>
           </table>
           <div style="margin-top: 24px;">

@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Phone, Mail, User, Monitor, MessageSquare, CheckCircle, ArrowRight, Loader2,
   Calendar, Clock, Wrench, CheckCircle2, Wifi, Shield, Printer, Smartphone,
-  HelpCircle, CreditCard, Lock, Sunrise, Sun, Sunset, Zap, CalendarClock,
+  HelpCircle, CreditCard, Lock, Zap, CalendarClock,
 } from 'lucide-react';
+import { generateBookingSlots } from '@/lib/bookingSlots';
 import { checkRateLimit } from '@/lib/rateLimit';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,7 +22,6 @@ import { useAuth } from '@/contexts/AuthContext';
 
 type Mode = 'asap' | 'schedule';
 type ServiceType = 'wifi' | 'setup' | 'security' | 'printer' | 'phone' | 'general';
-type TimeSlot = 'morning' | 'afternoon' | 'evening';
 
 const deviceOptions = [
   { value: 'phone', label: 'Phone' },
@@ -39,12 +39,6 @@ const services: { id: ServiceType; label: string; icon: React.ElementType; desc:
   { id: 'printer',  label: 'Printer Problems',  icon: Printer,    desc: "Won't print, connection issues, drivers" },
   { id: 'phone',    label: 'Phone & Tablet',    icon: Smartphone, desc: 'Apps, settings, backups, slow performance' },
   { id: 'general',  label: 'General Help',      icon: HelpCircle, desc: "Not sure? We'll figure it out together" },
-];
-
-const timeSlots: { id: TimeSlot; label: string; time: string; icon: React.ElementType }[] = [
-  { id: 'morning',   label: 'Morning',   time: '9am – 12pm', icon: Sunrise },
-  { id: 'afternoon', label: 'Afternoon', time: '12pm – 5pm', icon: Sun },
-  { id: 'evening',   label: 'Evening',   time: '5pm – 8pm',  icon: Sunset },
 ];
 
 function getAvailableDates(): { date: string; label: string; dayName: string }[] {
@@ -93,13 +87,14 @@ const GetHelp = () => {
   const [step, setStep] = useState(0); // 0=service, 1=date/time, 2=payment, 3=success
   const [serviceType, setServiceType] = useState<ServiceType | null>(null);
   const [scheduleDate, setScheduleDate] = useState<string | null>(null);
-  const [scheduleSlot, setScheduleSlot] = useState<TimeSlot | null>(null);
+  const [scheduleSlot, setScheduleSlot] = useState<string | null>(null);
   const [paymentOption, setPaymentOption] = useState<'day' | 'deposit'>('day');
   const [bookingRef, setBookingRef] = useState('');
 
   const availableDates = getAvailableDates();
   const selectedService = services.find((s) => s.id === serviceType);
   const selectedDate = availableDates.find((d) => d.date === scheduleDate);
+  const timeSlots = useMemo(() => generateBookingSlots(), []);
   const selectedSlot = timeSlots.find((s) => s.id === scheduleSlot);
   const progress = (step / 3) * 100;
 
@@ -199,7 +194,6 @@ const GetHelp = () => {
             service: selectedService?.label,
             date: selectedDate?.label,
             slot: selectedSlot?.label,
-            time: selectedSlot?.time,
             bookingId,
           },
         });
@@ -235,7 +229,7 @@ const GetHelp = () => {
           customerEmail: email.trim() || undefined,
           serviceLabel: selectedService?.label,
           preferredDate: selectedDate ? `${selectedDate.dayName} ${selectedDate.label}` : undefined,
-          preferredSlot: selectedSlot ? `${selectedSlot.label} (${selectedSlot.time})` : undefined,
+          preferredSlot: selectedSlot?.label,
         },
       });
       if (fnError || !fnData?.url) {
@@ -296,7 +290,7 @@ const GetHelp = () => {
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Booking confirmed!</h1>
               <p className="text-muted-foreground text-lg mb-6">
                 We've got your booking for <strong>{selectedService?.label}</strong> on{' '}
-                <strong>{selectedDate?.label}</strong> in the <strong>{selectedSlot?.label.toLowerCase()}</strong>.
+                <strong>{selectedDate?.label}</strong> at <strong>{selectedSlot?.label}</strong>.
               </p>
               {email && (
                 <p className="text-sm text-muted-foreground mb-6">
@@ -529,27 +523,21 @@ const GetHelp = () => {
                   <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2">
                     <Clock className="h-4 w-4" aria-hidden="true" /> Preferred time
                   </h3>
-                  <div className="grid gap-3 sm:grid-cols-3 mb-8" role="group" aria-label="Select a time slot">
-                    {timeSlots.map((s) => {
-                      const SIcon = s.icon;
-                      return (
-                        <button
-                          key={s.id}
-                          onClick={() => setScheduleSlot(s.id)}
-                          aria-pressed={scheduleSlot === s.id}
-                          aria-label={`${s.label}, ${s.time}${scheduleSlot === s.id ? ' (selected)' : ''}`}
-                          className={`flex flex-col items-center gap-1 p-4 rounded-xl border transition-colors ${
-                            scheduleSlot === s.id
-                              ? 'border-primary bg-primary/10'
-                              : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
-                          }`}
-                        >
-                          <SIcon className="h-6 w-6 text-primary" aria-hidden="true" />
-                          <span className="font-semibold text-sm">{s.label}</span>
-                          <span className="text-xs text-muted-foreground">{s.time}</span>
-                        </button>
-                      );
-                    })}
+                  <div className="mb-8">
+                    <Label htmlFor="time-select" className="sr-only">Preferred time</Label>
+                    <Select value={scheduleSlot ?? ''} onValueChange={(v) => setScheduleSlot(v)}>
+                      <SelectTrigger id="time-select" className="h-12 text-base rounded-xl border-border">
+                        <SelectValue placeholder="Pick a time…" />
+                      </SelectTrigger>
+                      <SelectContent className="max-h-72">
+                        {timeSlots.map((s) => (
+                          <SelectItem key={s.id} value={s.id} className="text-base">{s.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Half-hour slots from 7:00 AM to 10:00 PM. Your technician will confirm before the visit.
+                    </p>
                   </div>
 
                   <div className="flex gap-3">
@@ -672,7 +660,7 @@ const GetHelp = () => {
                       <p className="font-semibold mb-3">Summary</p>
                       <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
                       <p className="flex items-center gap-2"><Calendar className="h-4 w-4 text-muted-foreground" /> <strong>{selectedDate?.dayName}, {selectedDate?.label}</strong></p>
-                      <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong> ({selectedSlot?.time})</p>
+                      <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong></p>
                       <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? 'Deposit $15 now + remainder on day' : 'Pay on the day'}</strong></p>
                     </CardContent>
                   </Card>
