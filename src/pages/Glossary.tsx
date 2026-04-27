@@ -1260,18 +1260,6 @@ const Glossary = () => {
             <p className="text-muted-foreground">Try a different search term.</p>
           </div>
         ) : (
-          <div className="space-y-12 max-w-3xl mx-auto">
-            {activeLetters.map(letter => (
-              <div
-                key={letter}
-                ref={el => { sectionRefs.current[letter] = el; }}
-                className="scroll-mt-32"
-              >
-                <Languages className="h-4 w-4" aria-hidden="true" />
-                Ask the Jargon Translator instead
-              </Link>
-            </div>
-          ) : (
             <div className="space-y-14">
               {activeLetters.map((letter) => (
                 <div
@@ -1305,6 +1293,7 @@ const Glossary = () => {
                             <span className="shrink-0 mt-0.5"></span>
                             <span className="italic">{item.analogy}</span>
                           </p>
+                        )}
 
                           {/* Related chips */}
                           {chips.length > 0 && (
@@ -1340,15 +1329,14 @@ const Glossary = () => {
                               />
                             </Link>
                           </div>
-                        </article>
-                      );
-                    })}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
             </div>
           )}
-        </div>
       </section>
 
       </main>

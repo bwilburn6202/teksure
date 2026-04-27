@@ -13,7 +13,7 @@ import { HighContrastProvider } from "@/contexts/HighContrastContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { TierProvider } from "@/contexts/TierContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
-import { TekBot } from "@/components/TekBot";
+import { TekBot } from "@/components/TekBrain";
 import { ScamPanicButton } from "@/components/ScamPanicButton";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";

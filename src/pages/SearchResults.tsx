@@ -78,25 +78,174 @@ function getHighlightedSnippet(text: string, q: string, maxLen = 180): JSX.Eleme
   const after = text.slice(idx + q.length, end);
 
   return (
-    <div className="text-center py-16 max-w-md mx-auto">
-      <p className="text-4xl mb-4 select-none"></p>
-      <p className="text-xl font-semibold mb-2 text-primary">
-        No guides matched "{query}"
-      </p>
-      <p className="text-muted-foreground mb-6 leading-relaxed">
-        We couldn't find anything for that exact phrase. Try a simpler word, or
-        pick one of these popular topics:
-      </p>
-      <div className="flex flex-wrap justify-center gap-2 mb-8">
-        {SUGGESTED_SEARCHES.map(term => (
-          <button
-            key={term}
-            onClick={() => onSuggest(term)}
-            className="rounded-full border border-border bg-muted px-3 py-1.5 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
-          >
-            {term}
-          </button>
-        ))}
+    <span>
+      {prefix}
+      {before}
+      <mark className="bg-yellow-200 dark:bg-yellow-600/40 text-foreground rounded px-0.5 font-semibold">
+        {match}
+      </mark>
+      {after}
+      {suffix}
+    </span>
+  );
+}
+
+/** Senior-friendly difficulty pill (mirrors the Tools page styling). */
+function difficultyPillClass(d?: string): string {
+  switch (d) {
+    case 'Beginner':
+    case 'Easy':
+      return 'bg-green-50 text-green-800 border-green-300 dark:bg-green-950/40 dark:text-green-300 dark:border-green-800';
+    case 'Intermediate':
+    case 'Medium':
+      return 'bg-amber-50 text-amber-800 border-amber-300 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800';
+    case 'Advanced':
+      return 'bg-rose-50 text-rose-800 border-rose-300 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-800';
+    default:
+      return 'bg-muted text-foreground border-border';
+  }
+}
+
+/* ── Result card components ─────────────────────────────── */
+
+function GuideResultCard({ guide, query }: { guide: Guide; query: string }) {
+  // Choose the best text field to snippet from — prefer the one that contains the match.
+  const q = query.toLowerCase();
+  const sourceText =
+    guide.excerpt.toLowerCase().includes(q)
+      ? guide.excerpt
+      : guide.body?.toLowerCase().includes(q)
+        ? guide.body
+        : guide.steps?.find(s =>
+          s.title.toLowerCase().includes(q) || s.content.toLowerCase().includes(q),
+        )?.content ?? guide.excerpt;
+
+  return (
+    <Link
+      to={`/guides/${guide.slug}`}
+      className="block rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/60 focus:ring-offset-2"
+      aria-label={`Read guide: ${guide.title}`}
+    >
+      <Card className="h-full rounded-2xl border-2 border-border bg-card hover:border-primary/40 hover:shadow-lg transition-all hover:-translate-y-0.5 group">
+        <CardContent className="p-5 md:p-6 flex gap-4 md:gap-5">
+          {/* Category icon thumbnail */}
+          <GuideThumbnail
+            category={guide.category}
+            size="h-8 w-8 md:h-10 md:w-10"
+            className="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-primary/5 dark:bg-primary/10 flex items-center justify-center shrink-0"
+          />
+
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+              <Badge
+                variant="secondary"
+                className="rounded-full text-xs font-medium"
+              >
+                Guide
+              </Badge>
+              <Badge
+                variant="outline"
+                className="rounded-full text-xs font-medium"
+              >
+                {categoryLabels[guide.category]}
+              </Badge>
+            </div>
+
+            <h3 className="font-bold text-lg md:text-xl leading-snug mb-2 group-hover:text-primary transition-colors">
+              {getHighlightedSnippet(guide.title, query, 120)}
+            </h3>
+
+            <p className="text-base text-muted-foreground leading-relaxed mb-3 line-clamp-2">
+              {getHighlightedSnippet(sourceText, query, 200)}
+            </p>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              {guide.difficulty && (
+                <span
+                  className={[
+                    'inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-semibold',
+                    difficultyPillClass(guide.difficulty),
+                  ].join(' ')}
+                >
+                  {guide.difficulty}
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
+                <Clock className="h-4 w-4" aria-hidden="true" />
+                {guide.readTime}
+              </span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
+  );
+}
+
+function ToolResultCard({ tool, query }: { tool: Tool; query: string }) {
+  const Icon = tool.icon;
+  const content = (
+    <Card className="h-full rounded-2xl border-2 border-border bg-card hover:border-primary/40 hover:shadow-lg transition-all hover:-translate-y-0.5 group">
+      <CardContent className="p-5 md:p-6 flex gap-4 md:gap-5">
+        <div
+          className={`h-16 w-16 md:h-20 md:w-20 rounded-2xl ${tool.bg} flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform`}
+          aria-hidden="true"
+        >
+          <Icon className={`h-8 w-8 md:h-10 md:w-10 ${tool.color}`} />
+        </div>
+
+        <div className="flex-1 min-w-0 flex flex-col">
+          <div className="flex items-center gap-2 mb-2 flex-wrap">
+            <Badge
+              variant="secondary"
+              className="rounded-full text-xs font-medium bg-violet-50 text-violet-800 border border-violet-200 dark:bg-violet-950/40 dark:text-violet-300 dark:border-violet-800"
+            >
+              Tool
+            </Badge>
+            {tool.badge && (
+              <Badge variant="outline" className="rounded-full text-xs font-medium">
+                {tool.badge}
+              </Badge>
+            )}
+          </div>
+
+          <h3 className="font-bold text-lg md:text-xl leading-snug mb-2 group-hover:text-primary transition-colors">
+            {getHighlightedSnippet(tool.title, query, 120)}
+          </h3>
+
+          <p className="text-base text-muted-foreground leading-relaxed mb-3 line-clamp-2">
+            {getHighlightedSnippet(tool.description, query, 200)}
+          </p>
+
+          <div className="flex items-center gap-2 flex-wrap mt-auto pt-2">
+            <span
+              className={[
+                'inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-semibold',
+                difficultyPillClass(tool.difficulty),
+              ].join(' ')}
+            >
+              {tool.difficulty}
+            </span>
+            <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
+              <Clock className="h-4 w-4" aria-hidden="true" />
+              {tool.time}
+            </span>
+            {tool.path && (
+              <span className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:translate-x-0.5 transition-transform">
+                Open tool
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </span>
+            )}
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+
+  if (!tool.path) {
+    return (
+      <div className="block" aria-label={tool.title}>
+        {content}
       </div>
     );
   }
@@ -304,17 +453,58 @@ const SearchResults = () => {
       />
       <Navbar />
 
-      <main id="main-content" className="container py-12 flex-1">
-        <div className="max-w-2xl mx-auto mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-primary">Search Results</h1>
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-            <Input
-              placeholder="Search guides..."
-              className="pl-10 h-12 text-base rounded-xl border border-border"
-              value={search}
-              onChange={e => handleSearch(e.target.value)}
-            />
+      <main id="main-content" className="flex-1">
+        {/* ── Hero / search header ─────────────────────────── */}
+        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-background">
+          <div className="container max-w-5xl py-10 md:py-14">
+            {urlQuery ? (
+              <>
+                <p className="text-base md:text-lg text-muted-foreground mb-2">
+                  {totalCount} {totalCount === 1 ? 'result' : 'results'} found
+                </p>
+                <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground">
+                  Results for: <span className="text-primary">"{urlQuery}"</span>
+                </h1>
+              </>
+            ) : (
+              <>
+                <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground mb-3">
+                  Search TekSure
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground">
+                  Find guides and tools that solve everyday tech questions.
+                </p>
+              </>
+            )}
+
+            {/* Always-visible search input */}
+            <form onSubmit={handleSubmit} className="mt-6 flex gap-2" role="search">
+              <label htmlFor="search-input" className="sr-only">
+                Search guides and tools
+              </label>
+              <div className="relative flex-1">
+                <Search
+                  className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none"
+                  aria-hidden="true"
+                />
+                <Input
+                  id="search-input"
+                  type="search"
+                  placeholder="Try: WiFi, scam, password, video call…"
+                  className="pl-12 h-14 text-lg rounded-xl border-2 border-border bg-background focus-visible:border-primary"
+                  value={inputValue}
+                  onChange={e => setInputValue(e.target.value)}
+                  autoComplete="off"
+                />
+              </div>
+              <Button
+                type="submit"
+                size="lg"
+                className="h-14 px-6 md:px-8 text-base font-semibold rounded-xl min-w-[100px]"
+              >
+                Search
+              </Button>
+            </form>
           </div>
         </section>
 
@@ -437,23 +627,35 @@ const SearchResults = () => {
                       </button>
                     ))}
                   </div>
-                )}
-              </TabsContent>
-            ))}
-          </Tabs>
-        ) : (
-          <div className="text-center py-16 max-w-md mx-auto">
-            <p className="text-4xl mb-4 select-none"></p>
-            <p className="text-lg font-medium mb-2 text-primary">What are you looking for?</p>
-            <p className="text-muted-foreground mb-6">
-              Search {guides.length}+ free guides — try topics like:
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {['WiFi problems', 'forgot password', 'how to print', 'slow computer', 'email setup', 'video call'].map(term => (
-                <button
-                  key={term}
-                  onClick={() => handleSearch(term)}
-                  className="rounded-full border border-border bg-muted px-3 py-1.5 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => {
+                      setPage(p => Math.min(totalPages, p + 1));
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    disabled={safePage === totalPages}
+                    className="min-h-[44px] rounded-xl border-2 text-base font-semibold"
+                  >
+                    Next
+                    <ChevronRight className="h-5 w-5 ml-1" aria-hidden="true" />
+                  </Button>
+                </nav>
+              )}
+
+              {/* Always-available fallback CTA after results */}
+              <div className="mt-12 md:mt-16 rounded-2xl border-2 border-dashed border-border bg-muted/30 p-6 md:p-8 text-center">
+                <p className="text-lg md:text-xl font-semibold mb-2">
+                  Didn't find what you needed?
+                </p>
+                <p className="text-base text-muted-foreground mb-4">
+                  Ask TekBrain for a personalized answer — it reads every guide and tool on the site.
+                </p>
+                <Button
+                  asChild
+                  size="lg"
+                  className="min-h-[48px] text-base font-semibold rounded-xl"
                 >
                   <Link to={`/tekbrain/chat?q=${encodeURIComponent(urlQuery)}`}>
                     <Brain className="h-5 w-5 mr-2" aria-hidden="true" />

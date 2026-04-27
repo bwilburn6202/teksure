@@ -1,145 +1,55 @@
-import { useMemo, useRef, useState } from 'react';
-import {
-  Mail,
-  Copy,
-  RotateCcw,
-  Sparkles,
-  ShieldCheck,
-  Minus,
-  Plus,
-  Shuffle,
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Separator } from '@/components/ui/separator';
-import { Badge } from '@/components/ui/badge';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { useToast } from '@/hooks/use-toast';
+import { useMemo, useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { PageBreadcrumb } from '@/components/PageBreadcrumb';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button';
+import {
+  Mail,
+  AlertTriangle,
+  Copy,
+  Check,
+  ShieldAlert,
+  ArrowLeft,
+  Sparkles,
+  CheckCircle2,
+} from 'lucide-react';
 
-/* ── Types ─────────────────────────────────────────── */
-type EmailKind =
-  | 'complain'
-  | 'cancel'
-  | 'medical-records'
-  | 'doctor-question'
-  | 'interview-followup'
-  | 'thank-you'
-  | 'difficult-family'
-  | 'reschedule'
-  | 'refund'
-  | 'benefits';
+type Tone = 'Professional' | 'Casual' | 'Firm but kind' | 'Warm and personal';
 
-type Recipient = 'stranger' | 'professional' | 'family' | 'friend';
-type Tone = 'polite-firm' | 'warm' | 'formal' | 'casual';
-type Length = 'short' | 'normal' | 'long';
-
-interface Inputs {
-  kind: EmailKind | '';
-  recipientType: Recipient | '';
-  recipientName: string;
-  yourName: string;
-  tone: Tone | '';
-  keyPoints: string;
+interface ScenarioField {
+  key: string;
+  label: string;
+  placeholder: string;
+  type: 'input' | 'textarea';
+  optional?: boolean;
 }
 
-/* ── Labels & metadata ─────────────────────────────── */
-const kindLabels: Record<EmailKind, string> = {
-  complain: 'Complain about bad service',
-  cancel: 'Cancel a subscription',
-  'medical-records': 'Request medical records',
-  'doctor-question': 'Ask a doctor a question',
-  'interview-followup': 'Follow up after a job interview',
-  'thank-you': 'Send a thank-you note',
-  'difficult-family': 'Address a difficult family topic',
-  reschedule: 'Reschedule an appointment',
-  refund: 'Ask for a refund',
-  benefits: 'Apply for benefits',
-};
-
-const kindEmojis: Record<EmailKind, string> = {
-  complain: '',
-  cancel: '',
-  'medical-records': '',
-  'doctor-question': '',
-  'interview-followup': '',
-  'thank-you': '',
-  'difficult-family': '',
-  reschedule: '',
-  refund: '',
-  benefits: '',
-};
-
-const recipientLabels: Record<Recipient, string> = {
-  stranger: "Someone I don't know",
-  professional: 'A professional (doctor, lawyer, agent, etc.)',
-  family: 'A family member',
-  friend: 'A friend',
-};
-
-const toneLabels: Record<Tone, string> = {
-  'polite-firm': 'Polite & firm',
-  warm: 'Warm',
-  formal: 'Formal',
-  casual: 'Casual',
-};
-
-/* ── Subject lines ─────────────────────────────────── */
-function getSubject(kind: EmailKind, tone: Tone): string {
-  const today = new Date().toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  });
-
-  switch (kind) {
-    case 'complain':
-      return tone === 'formal'
-        ? `Formal complaint regarding recent service — ${today}`
-        : `Concern about a recent experience — ${today}`;
-    case 'cancel':
-      return 'Request to cancel my subscription';
-    case 'medical-records':
-      return 'Request for a copy of my medical records';
-    case 'doctor-question':
-      return 'Quick question about my care';
-    case 'interview-followup':
-      return 'Thank you — following up on our interview';
-    case 'thank-you':
-      return 'Thank you';
-    case 'difficult-family':
-      return "Something I've been wanting to share";
-    case 'reschedule':
-      return 'Request to reschedule our appointment';
-    case 'refund':
-      return 'Refund request';
-    case 'benefits':
-      return 'Application for benefits — please see details';
-  }
+interface Scenario {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  fields: ScenarioField[];
+  tones: Tone[];
+  warning?: string;
+  templates: Record<Tone, (values: Record<string, string>) => string>;
 }
 
-/* ── Greeting ──────────────────────────────────────── */
-function getGreeting(recipient: Recipient, tone: Tone, name: string): string {
-  const n = name.trim();
-  const nameSuffix = n ? ` ${n}` : '';
+const subjectSafe = (v: string, fallback: string) => (v && v.trim() ? v.trim() : fallback);
+const lineOrBlank = (v: string) => (v && v.trim() ? v.trim() : '');
 
-  if (recipient === 'stranger') {
-    if (tone === 'formal') return 'To Whom It May Concern,';
-    if (tone === 'casual') return 'Hello,';
-    return n ? `Dear${nameSuffix},` : 'Hello,';
-  }
+const bulletize = (facts: string) =>
+  facts
+    .split('\n')
+    .map(line => line.trim())
+    .filter(Boolean)
+    .map(line => `- ${line.replace(/^[-•*]\s*/, '')}`)
+    .join('\n');
 
 const scenarios: Scenario[] = [
   {
@@ -842,411 +752,244 @@ ${subjectSafe(v.name, '[Your name]')}`,
 ];
 
 export default function EmailWriterHelper() {
-  const { toast } = useToast();
-  const [inputs, setInputs] = useState<Inputs>({
-    kind: '',
-    recipientType: '',
-    recipientName: '',
-    yourName: '',
-    tone: '',
-    keyPoints: '',
-  });
-  const [showEmail, setShowEmail] = useState(false);
-  const [length, setLength] = useState<Length>('normal');
-  const emailRef = useRef<HTMLDivElement | null>(null);
+  const [activeId, setActiveId] = useState<string | null>(null);
+  const [tone, setTone] = useState<Tone>('Professional');
+  const [values, setValues] = useState<Record<string, string>>({});
+  const [output, setOutput] = useState<string>('');
+  const [copied, setCopied] = useState(false);
 
-  const email = useMemo(() => composeEmail(inputs, length), [inputs, length]);
+  const active = useMemo(() => scenarios.find(s => s.id === activeId) ?? null, [activeId]);
 
-  const formComplete =
-    inputs.kind &&
-    inputs.recipientType &&
-    inputs.tone &&
-    inputs.keyPoints.trim().length > 0;
+  const selectScenario = (id: string) => {
+    const s = scenarios.find(sc => sc.id === id);
+    setActiveId(id);
+    setValues({});
+    setOutput('');
+    if (s) setTone(s.tones[0]);
+  };
 
-  function handleGenerate() {
-    if (!formComplete) {
-      toast({
-        title: 'A few things are missing',
-        description:
-          'Please choose the kind of email, the recipient, a tone, and add a few key points before we write the draft.',
-      });
-      return;
-    }
-    setShowEmail(true);
-    setTimeout(
-      () => emailRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
-      100,
-    );
-  }
+  const handleGenerate = () => {
+    if (!active) return;
+    const fn = active.templates[tone];
+    const result = fn ? fn(values) : '';
+    setOutput(result);
+  };
 
-  async function handleCopy() {
-    if (!email) return;
+  const handleCopy = async () => {
+    if (!output) return;
     try {
-      await navigator.clipboard.writeText(emailToPlainText(email));
-      toast({
-        title: 'Email copied to your clipboard',
-        description: 'Paste it into your email app with Ctrl+V (or Cmd+V on Mac).',
-      });
+      await navigator.clipboard.writeText(output);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
     } catch {
-      toast({
-        title: "Couldn't copy automatically",
-        description: 'Select the text below and press Ctrl+C (or Cmd+C on Mac).',
-      });
+      /* no-op */
     }
-  }
-
-  function handleTryDifferentTone() {
-    if (!inputs.tone) return;
-    const next = nextTone(inputs.tone);
-    setInputs((p) => ({ ...p, tone: next }));
-    toast({
-      title: `Rewritten with a ${toneLabels[next].toLowerCase()} tone`,
-      description: 'Take a look — tap the button again to try another.',
-    });
-  }
-
-  function handleShorter() {
-    setLength('short');
-    toast({
-      title: 'Shortened',
-      description: "We've trimmed the draft down to the essentials.",
-    });
-  }
-
-  function handleLonger() {
-    setLength('long');
-    toast({
-      title: 'Expanded',
-      description: "We've added a little more context to the draft.",
-    });
-  }
-
-  function handleReset() {
-    setInputs({
-      kind: '',
-      recipientType: '',
-      recipientName: '',
-      yourName: '',
-      tone: '',
-      keyPoints: '',
-    });
-    setLength('normal');
-    setShowEmail(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  };
 
   return (
     <>
       <SEOHead
-        title="Email Writer Helper | TekSure"
-        description="Draft clear, polite emails for any situation — complaints, cancellations, medical requests, thank-yous, family conversations, and more. Templates only — we never send your email for you."
+        title="Email Writer Helper — Write Better Emails in Plain English | TekSure"
+        description="Stuck on a tricky email? Pick a situation, fill in a few details, and get a ready-to-send email you can copy, tweak, and paste."
         path="/tools/email-writer-helper"
       />
-
-      {/* Print-only styles (for folks who want to print the draft) */}
-      <style>{`
-        @media print {
-          .no-print { display: none !important; }
-          body { background: white !important; }
-          main { padding: 0 !important; max-width: none !important; }
-          .print-break-avoid { break-inside: avoid; page-break-inside: avoid; }
-        }
-      `}</style>
-
-      <div className="no-print">
-        <Navbar />
-      </div>
-
-      <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto text-lg">
-        <div className="flex items-center gap-3 mb-2 no-print">
-          <Mail className="h-8 w-8 text-primary" aria-hidden="true" />
-          <h1 className="text-3xl md:text-4xl font-bold">Email Writer Helper</h1>
-        </div>
-        <p className="text-muted-foreground mb-6 no-print">
-          Answer four quick questions and we&apos;ll draft a polished email you can copy into your
-          email app. Works for complaints, cancellations, medical requests, thank-you notes,
-          difficult family topics, and more.
-        </p>
-
-        {/* Privacy badge */}
-        <div
-          className="flex items-start gap-3 rounded-xl border border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30 p-4 mb-8 no-print"
-          role="note"
-        >
-          <ShieldCheck
-            className="h-6 w-6 text-green-700 dark:text-green-300 shrink-0 mt-0.5"
-            aria-hidden="true"
-          />
-          <p className="text-base text-green-900 dark:text-green-100">
-            <span className="font-semibold">Your privacy is protected.</span> This tool uses
-            templates that run entirely in your browser — we never send your email for you and
-            nothing you type here leaves your device.
-          </p>
+      <Navbar />
+      <main className="min-h-screen bg-background">
+        <div className="container pt-4">
+          <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Email Writer Helper' }]} />
         </div>
 
-        {/* Input form */}
-        <Card className="no-print print-break-avoid">
-          <CardContent className="p-6 space-y-6">
-            <h2 className="text-xl font-semibold">Tell us about your email</h2>
-
-            {/* Kind of email */}
-            <div className="space-y-2">
-              <Label htmlFor="kind" className="text-base">
-                What kind of email are you writing?
-              </Label>
-              <Select
-                value={inputs.kind}
-                onValueChange={(v: EmailKind) => setInputs((p) => ({ ...p, kind: v }))}
-              >
-                <SelectTrigger id="kind" className="h-12 text-base">
-                  <SelectValue placeholder="Choose the type of email" />
-                </SelectTrigger>
-                <SelectContent>
-                  {(Object.keys(kindLabels) as EmailKind[]).map((k) => (
-                    <SelectItem key={k} value={k}>
-                      {kindEmojis[k]} {kindLabels[k]}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+        <section className="border-b">
+          <div className="container py-12 md:py-16 max-w-3xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center flex-shrink-0">
+                <Mail className="h-6 w-6 text-indigo-600" aria-hidden="true" />
+              </div>
+              <Badge variant="secondary">Free Tool</Badge>
             </div>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Need to Write an Email? We'll Help You Say It Right.
+            </h1>
+            <p className="text-muted-foreground text-lg">
+              Pick a situation below, fill in a few details, and we'll build a clear, respectful email you can copy and send. No AI, no data collection — just ready-made wording that works.
+            </p>
+          </div>
+        </section>
 
-            {/* Recipient type */}
-            <div className="space-y-3">
-              <Label className="text-base">Who will receive this email?</Label>
-              <RadioGroup
-                value={inputs.recipientType}
-                onValueChange={(v: Recipient) =>
-                  setInputs((p) => ({ ...p, recipientType: v }))
-                }
-                className="grid gap-2"
-              >
-                {(Object.keys(recipientLabels) as Recipient[]).map((r) => (
-                  <label
-                    key={r}
-                    className="flex items-center gap-3 p-3 rounded-xl border-2 border-border hover:border-primary/60 cursor-pointer"
+        <div className="container py-8 pb-24 max-w-3xl">
+          {!active ? (
+            <>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">
+                What do you need to write?
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {scenarios.map(s => (
+                  <button
+                    key={s.id}
+                    onClick={() => selectScenario(s.id)}
+                    className="text-left p-4 rounded-2xl border border-border bg-card hover:border-foreground/30 hover:shadow-md transition-all"
                   >
-                    <RadioGroupItem value={r} id={`recipient-${r}`} />
-                    <span>{recipientLabels[r]}</span>
-                  </label>
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl" aria-hidden="true">{s.icon}</span>
+                      <div>
+                        <h3 className="font-semibold text-sm mb-1">{s.title}</h3>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{s.description}</p>
+                      </div>
+                    </div>
+                  </button>
                 ))}
-              </RadioGroup>
-            </div>
+              </div>
 
-            {/* Recipient name (optional) */}
-            <div className="space-y-2">
-              <Label htmlFor="recipient-name" className="text-base">
-                Their name <span className="text-muted-foreground">(optional)</span>
-              </Label>
-              <Input
-                id="recipient-name"
-                className="h-12 text-base"
-                placeholder='e.g. "Dr. Patel", "Aunt Mary", or leave blank'
-                value={inputs.recipientName}
-                onChange={(e) =>
-                  setInputs((p) => ({ ...p, recipientName: e.target.value }))
-                }
-              />
-            </div>
-
-            {/* Tone */}
-            <div className="space-y-3">
-              <Label className="text-base">What tone fits this message?</Label>
-              <RadioGroup
-                value={inputs.tone}
-                onValueChange={(v: Tone) => setInputs((p) => ({ ...p, tone: v }))}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-2"
+              <div className="mt-10 p-5 rounded-2xl bg-muted/50 border border-border">
+                <p className="text-sm font-semibold mb-2">Why we like this tool</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  The hardest part of writing a sensitive email is staring at a blank page. We give you the first draft so you can focus on editing — which is always easier than inventing.
+                </p>
+              </div>
+            </>
+          ) : (
+            <div className="space-y-8">
+              <button
+                onClick={() => { setActiveId(null); setOutput(''); }}
+                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
               >
-                {(Object.keys(toneLabels) as Tone[]).map((t) => (
-                  <label
-                    key={t}
-                    className="flex items-center gap-3 p-3 rounded-xl border-2 border-border hover:border-primary/60 cursor-pointer"
-                  >
-                    <RadioGroupItem value={t} id={`tone-${t}`} />
-                    <span>{toneLabels[t]}</span>
-                  </label>
-                ))}
-              </RadioGroup>
-            </div>
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                Back to all scenarios
+              </button>
 
-            {/* Key points */}
-            <div className="space-y-2">
-              <Label htmlFor="key-points" className="text-base">
-                What do you want to say?{' '}
-                <span className="text-muted-foreground">(a few bullet points is plenty)</span>
-              </Label>
-              <Textarea
-                id="key-points"
-                className="text-base min-h-[160px]"
-                placeholder={
-                  'e.g.\n- My bill went up $30 this month with no warning\n- I\'ve been a customer for 7 years\n- I\'d like the old rate back or an explanation'
-                }
-                value={inputs.keyPoints}
-                onChange={(e) =>
-                  setInputs((p) => ({ ...p, keyPoints: e.target.value }))
-                }
-              />
-              <p className="text-sm text-muted-foreground">
-                Put one thought per line. Don&apos;t worry about grammar — we&apos;ll polish it up.
-              </p>
-            </div>
-
-            {/* Your name */}
-            <div className="space-y-2">
-              <Label htmlFor="your-name" className="text-base">
-                Your name <span className="text-muted-foreground">(for the signature)</span>
-              </Label>
-              <Input
-                id="your-name"
-                className="h-12 text-base"
-                placeholder="e.g. Barbara Wilson"
-                value={inputs.yourName}
-                onChange={(e) => setInputs((p) => ({ ...p, yourName: e.target.value }))}
-              />
-            </div>
-
-            <Button
-              size="lg"
-              className="w-full h-14 text-lg gap-2"
-              onClick={handleGenerate}
-              disabled={!formComplete}
-            >
-              <Sparkles className="h-5 w-5" aria-hidden="true" />
-              Write my email
-            </Button>
-          </CardContent>
-        </Card>
-
-        {/* Email output */}
-        {showEmail && email && (
-          <div ref={emailRef} className="mt-10 space-y-6">
-            {/* Action buttons */}
-            <div className="flex flex-wrap gap-3 no-print">
-              <Button size="lg" onClick={handleCopy} className="gap-2 h-12 text-base">
-                <Copy className="h-5 w-5" aria-hidden="true" /> Copy email
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={handleTryDifferentTone}
-                className="gap-2 h-12 text-base"
-              >
-                <Shuffle className="h-5 w-5" aria-hidden="true" /> Try a different tone
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={handleShorter}
-                className="gap-2 h-12 text-base"
-                disabled={length === 'short'}
-              >
-                <Minus className="h-5 w-5" aria-hidden="true" /> Make it shorter
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={handleLonger}
-                className="gap-2 h-12 text-base"
-                disabled={length === 'long'}
-              >
-                <Plus className="h-5 w-5" aria-hidden="true" /> Make it longer
-              </Button>
-              <Button
-                size="lg"
-                variant="ghost"
-                onClick={handleReset}
-                className="gap-2 h-12 text-base ml-auto"
-              >
-                <RotateCcw className="h-5 w-5" aria-hidden="true" /> Start over
-              </Button>
-            </div>
-
-            {/* Email card */}
-            <Card className="print-break-avoid">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 flex-wrap mb-4">
-                  <h2 className="text-2xl font-bold">Your email draft</h2>
-                  {inputs.kind && (
-                    <Badge className="bg-primary text-primary-foreground">
-                      {kindLabels[inputs.kind]}
-                    </Badge>
-                  )}
-                  {inputs.tone && (
-                    <Badge variant="outline">{toneLabels[inputs.tone]}</Badge>
-                  )}
-                  {length !== 'normal' && (
-                    <Badge variant="outline">
-                      {length === 'short' ? 'Shortened' : 'Expanded'}
-                    </Badge>
-                  )}
-                </div>
-
-                {/* Subject */}
-                <div className="mb-6">
-                  <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-1">
-                    Subject line
-                  </div>
-                  <div className="text-lg font-semibold rounded-lg bg-muted/60 px-4 py-3 border">
-                    {email.subject}
+              <div>
+                <div className="flex items-start gap-3 mb-2">
+                  <span className="text-3xl" aria-hidden="true">{active.icon}</span>
+                  <div>
+                    <h2 className="text-2xl font-bold">{active.title}</h2>
+                    <p className="text-sm text-muted-foreground">{active.description}</p>
                   </div>
                 </div>
+              </div>
 
-                <Separator className="mb-6" />
+              {active.warning && (
+                <div className="rounded-2xl border border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-950/20 p-5">
+                  <div className="flex gap-3 items-start">
+                    <ShieldAlert className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <div>
+                      <p className="font-semibold text-sm text-red-800 dark:text-red-300 mb-1">Don't reply.</p>
+                      <p className="text-sm text-red-700 dark:text-red-300 leading-relaxed">
+                        {active.warning}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
-                {/* Email body */}
-                <div className="space-y-5 leading-relaxed">
-                  <p className="font-semibold">{email.greeting}</p>
-
-                  <p>{email.opening}</p>
-
-                  {email.bodyPoints.length > 0 && (
-                    <>
-                      <p>{email.context}</p>
-                      {email.bodyPoints.map((line, i) => (
-                        <p key={i}>{line}</p>
+              {active.fields.length > 0 && (
+                <>
+                  <div>
+                    <Label className="text-sm font-semibold mb-3 block">Tone</Label>
+                    <div className="flex flex-wrap gap-2">
+                      {active.tones.map(t => (
+                        <button
+                          key={t}
+                          onClick={() => setTone(t)}
+                          className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors min-h-[44px] ${
+                            tone === t
+                              ? 'bg-foreground text-background border-foreground'
+                              : 'bg-background text-foreground/70 border-border hover:border-foreground/30'
+                          }`}
+                          aria-pressed={tone === t}
+                        >
+                          {t}
+                        </button>
                       ))}
-                    </>
-                  )}
-
-                  {email.ask && <p>{email.ask}</p>}
-
-                  <p>{email.closing}</p>
-
-                  <div className="pt-2">
-                    <p>{email.signOff}</p>
-                    <p className="font-semibold">{email.signature}</p>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Tip note */}
-            <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 no-print">
-              <p className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-1">
-                 A couple of tips before you send
+                  <div className="space-y-4">
+                    {active.fields.map(f => (
+                      <div key={f.key}>
+                        <Label htmlFor={`field-${f.key}`} className="text-sm font-medium mb-1.5 block">
+                          {f.label}
+                          {f.optional && <span className="text-muted-foreground font-normal"> (optional)</span>}
+                        </Label>
+                        {f.type === 'textarea' ? (
+                          <Textarea
+                            id={`field-${f.key}`}
+                            placeholder={f.placeholder}
+                            value={values[f.key] ?? ''}
+                            onChange={e => setValues(prev => ({ ...prev, [f.key]: e.target.value }))}
+                            rows={4}
+                          />
+                        ) : (
+                          <Input
+                            id={`field-${f.key}`}
+                            placeholder={f.placeholder}
+                            value={values[f.key] ?? ''}
+                            onChange={e => setValues(prev => ({ ...prev, [f.key]: e.target.value }))}
+                          />
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  <Button onClick={handleGenerate} size="lg" className="gap-2">
+                    <Sparkles className="h-4 w-4" aria-hidden="true" />
+                    Generate email
+                  </Button>
+                </>
+              )}
+
+              {active.fields.length === 0 && (
+                <Button onClick={handleGenerate} size="lg" className="gap-2">
+                  <Sparkles className="h-4 w-4" aria-hidden="true" />
+                  Show me what to do instead
+                </Button>
+              )}
+
+              {output && (
+                <div className="rounded-2xl border border-border bg-card">
+                  <div className="flex items-center justify-between px-5 py-3 border-b border-border">
+                    <p className="text-sm font-semibold">Your email (edit freely before sending)</p>
+                    <Button variant="outline" size="sm" onClick={handleCopy} className="gap-1.5">
+                      {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+                      {copied ? 'Copied' : 'Copy'}
+                    </Button>
+                  </div>
+                  <Textarea
+                    value={output}
+                    onChange={e => setOutput(e.target.value)}
+                    rows={Math.min(24, Math.max(10, output.split('\n').length + 2))}
+                    className="rounded-t-none border-0 font-mono text-sm resize-y"
+                  />
+                </div>
+              )}
+            </div>
+          )}
+
+          <div className="mt-12 p-6 rounded-2xl border border-border bg-muted/50">
+            <h3 className="font-semibold text-base mb-3 flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
+              Read it before you send
+            </h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex gap-2"><span>•</span> Did you spell names right?</li>
+              <li className="flex gap-2"><span>•</span> Right email address in the "To" field?</li>
+              <li className="flex gap-2"><span>•</span> Right dates, amounts, and reference numbers?</li>
+              <li className="flex gap-2"><span>•</span> Did you keep it short (under 200 words if possible)?</li>
+              <li className="flex gap-2"><span>•</span> Any emotional outbursts you'd regret? Sleep on it first.</li>
+              <li className="flex gap-2"><span>•</span> Did you include how to reach you back?</li>
+            </ul>
+          </div>
+
+          <div className="mt-6 p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900">
+            <div className="flex gap-3 items-start">
+              <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <p className="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
+                For anything legal, medical, or with money on the line, the best version of this email is the one you read aloud once before hitting send. If it sounds off when you hear it, it will read off too.
               </p>
-              <ul className="text-sm text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
-                <li>
-                  Read the draft out loud once. If a sentence feels wrong when you say it, edit it
-                  before sending.
-                </li>
-                <li>
-                  Double-check any names, dates, account numbers, or dollar amounts — the draft
-                  only knows what you typed in.
-                </li>
-                <li>
-                  For important emails, wait an hour and re-read before sending. A fresh pair of
-                  eyes catches a lot.
-                </li>
-              </ul>
             </div>
           </div>
-        )}
+        </div>
       </main>
-
-      <div className="no-print">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }

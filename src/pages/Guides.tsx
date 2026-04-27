@@ -285,29 +285,6 @@ const QUICK_PICKS: { key: QuickPick; label: string; icon: typeof Flame }[] = [
   { key: 'helpful',  label: 'Most helpful', icon: Star },
 ];
 
-/* ══════════════════════════════════════════════════════════════════════
-   Presentational cards
-   ══════════════════════════════════════════════════════════════════════ */
-
-function GuideCard({ guide, completed }: { guide: Guide; completed?: boolean }) {
-  const diff = guide.difficulty;
-  return (
-    <div className="text-center py-20 max-w-md mx-auto">
-      <p className="text-4xl mb-4 select-none"></p>
-      <h2 className="text-lg font-semibold mb-2">No guides in this category yet</h2>
-      <p className="text-sm text-muted-foreground mb-6">
-        We're always adding new content. In the meantime, you can browse all our guides.
-      </p>
-      <button
-        onClick={onClear}
-        className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-      >
-        Browse all guides
-      </button>
-    </div>
-  );
-}
-
 function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
   const guide = useMemo(
     () => pickGuide({ slug: slot.preferredSlug, keywords: slot.keywords }),
