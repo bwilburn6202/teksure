@@ -6,7 +6,7 @@ import type { Guide } from './guides';
 
 export const guidesBatch99: Guide[] = [
   {
-    slug: 'how-to-do-telehealth-appointment',
+    slug: `telehealth-video-visit-guide`,
     title: 'How to Do a Telehealth Appointment With Your Doctor',
     excerpt: 'A plain-English walkthrough of your first video visit with a doctor, from getting the link to ending the call.',
     category: 'health-tech',
@@ -59,7 +59,7 @@ One common hiccup: people click the link too early and land on a blank page, or 
   },
 
   {
-    slug: 'how-to-use-zoom-video-calls',
+    slug: `zoom-video-calls-guide`,
     title: 'How to Use Zoom for Video Calls With Family and Doctors',
     excerpt: 'A friendly introduction to joining and hosting Zoom video calls, with tips for clear audio and fewer surprises.',
     category: 'essential-skills',
@@ -165,7 +165,7 @@ One tip that saves heartache: when the phone asks about Face ID, iCloud Backup, 
   },
 
   {
-    slug: 'set-up-new-android-phone',
+    slug: `set-up-new-android-phone-2`,
     title: 'How to Set Up a New Android Phone Step by Step',
     excerpt: 'A calm, step-by-step guide to setting up a new Samsung, Google Pixel, or other Android phone for the first time.',
     category: 'phone-guides',
@@ -263,7 +263,7 @@ One thing that trips people up: the shortcuts use numbers across the top of the 
   },
 
   {
-    slug: 'how-to-use-amazon-alexa',
+    slug: `amazon-alexa-setup-guide`,
     title: 'How to Use Amazon Alexa on an Echo Speaker',
     excerpt: 'A gentle introduction to talking to Alexa, with voice commands seniors use most often — from the weather to setting timers.',
     category: 'smart-home',
@@ -316,7 +316,7 @@ A common worry is privacy. You can review and delete everything Alexa has ever h
   },
 
   {
-    slug: 'how-to-use-apple-maps',
+    slug: `apple-maps-navigation-guide`,
     title: 'How to Use Apple Maps for Directions and Places',
     excerpt: 'A patient guide to Apple Maps on your iPhone — from searching addresses to getting turn-by-turn driving directions.',
     category: 'app-guides',
@@ -369,7 +369,7 @@ One small difference between Apple Maps and Google Maps: Apple Maps does not ask
   },
 
   {
-    slug: 'how-to-use-google-maps',
+    slug: `google-maps-navigation-guide`,
     title: 'How to Use Google Maps for Directions and Places',
     excerpt: 'A clear, senior-friendly guide to using Google Maps on your phone to find places and get turn-by-turn directions.',
     category: 'app-guides',
@@ -422,7 +422,7 @@ One everyday tip: you can pinch the screen with two fingers to zoom in and out. 
   },
 
   {
-    slug: 'how-to-use-my-social-security-account',
+    slug: `my-social-security-account-guide`,
     title: 'How to Set Up and Use a my Social Security Account',
     excerpt: 'A careful walkthrough of creating your my Social Security online account at SSA.gov — what you can do there and what to watch out for.',
     category: 'government-civic',
@@ -479,7 +479,7 @@ If you have trouble setting up the account online, you can still go to your loca
   },
 
   {
-    slug: 'investment-scams-social-media',
+    slug: `investment-scams-social-media-2`,
     title: 'How to Spot Investment Scams on Social Media',
     excerpt: 'Learn the warning signs of fake investment schemes on Facebook, Instagram, and messaging apps — and how to report them.',
     category: 'safety-guides',
@@ -528,7 +528,7 @@ If you think you have been scammed or someone is trying, do not feel embarrassed
   },
 
   {
-    slug: 'how-to-set-up-smart-tv',
+    slug: `smart-tv-first-setup-guide`,
     title: 'How to Set Up a Smart TV Step by Step',
     excerpt: 'From unboxing to streaming your first show, here is how to connect a new smart TV to Wi-Fi and your apps.',
     category: 'entertainment',
@@ -638,7 +638,7 @@ Be careful about giving the app permission to access your location and notificat
   },
 
   {
-    slug: 'how-to-use-mychart',
+    slug: `mychart-patient-portal-guide`,
     title: 'How to Use MyChart to Talk to Your Doctor Online',
     excerpt: 'How to sign up for MyChart, message your doctor, see test results, and request prescription refills from home.',
     category: 'health-tech',
@@ -695,7 +695,7 @@ Lab results show up as soon as they are ready, often before your doctor calls yo
   },
 
   {
-    slug: 'connect-bluetooth-headphones',
+    slug: `bluetooth-headphones-connection-guide`,
     title: 'How to Connect Bluetooth Headphones to Your Phone',
     excerpt: 'A simple walkthrough of pairing wireless headphones or earbuds with your iPhone or Android phone the first time.',
     category: 'essential-skills',
@@ -748,7 +748,7 @@ Common pitfall: if your headphones were already paired to another phone or table
   },
 
   {
-    slug: 'how-to-take-better-phone-photos',
+    slug: `better-phone-photos-guide`,
     title: 'How to Take Better Photos With Your Phone',
     excerpt: 'Simple, senior-friendly photo tips — lighting, framing, and a few built-in features that make every picture look nicer.',
     category: 'tips-tricks',
@@ -801,7 +801,7 @@ A few built-in features make a huge difference. Portrait Mode (on newer iPhones 
   },
 
   {
-    slug: 'how-to-share-photos-text-email',
+    slug: `share-photos-text-email-guide`,
     title: 'How to Share Photos by Text Message or Email',
     excerpt: 'Send photos from your phone to family in a text, an email, or a shared album without headaches.',
     category: 'essential-skills',
@@ -854,7 +854,7 @@ A shared album (Apple's iCloud Shared Album, or a Google Photos album) is the be
   },
 
   {
-    slug: 'government-imposter-scam-guide',
+    slug: `government-impersonation-scam-guide`,
     title: 'How to Spot a Government Imposter Scam',
     excerpt: 'Learn how scammers pretend to be from the IRS, Social Security, or Medicare — and exactly what to do when they call.',
     category: 'safety-guides',
@@ -907,7 +907,7 @@ The best defense is a simple rule: if a call demands urgency, money, or secrecy 
   },
 
   {
-    slug: 'recovery-scam-what-to-know',
+    slug: `recovery-scam-warning-guide`,
     title: 'Recovery Scams: What to Know If You Were Scammed Before',
     excerpt: 'If you already lost money to a scam, beware the "recovery" scam — criminals who target past victims and promise to get the money back.',
     category: 'safety-guides',
@@ -960,7 +960,7 @@ The emotional side of this is the hardest part. People who have been scammed oft
   },
 
   {
-    slug: 'how-to-use-google-meet',
+    slug: `google-meet-video-calls-guide`,
     title: 'How to Use Google Meet for Video Calls',
     excerpt: 'A straightforward guide to joining and starting video calls on Google Meet from your phone, tablet, or computer.',
     category: 'essential-skills',
@@ -1013,7 +1013,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
   },
 
   {
-    slug: 'how-to-use-siri-iphone',
+    slug: `siri-iphone-guide`,
     title: 'How to Use Siri on Your iPhone',
     excerpt: 'Ask Siri to call, text, set reminders, and answer questions hands-free — here is how to get started and what to say.',
     category: 'tips-tricks',
@@ -1066,7 +1066,7 @@ Siri can also read your text messages and emails out loud when you have a Blueto
   },
 
   {
-    slug: 'how-to-use-google-assistant',
+    slug: `google-assistant-basics-guide`,
     title: 'How to Use Google Assistant on Your Phone',
     excerpt: 'Ask Google Assistant questions, set timers, make calls, and get directions hands-free on any Android or iPhone.',
     category: 'tips-tricks',
@@ -1119,7 +1119,7 @@ One extra thing Google Assistant does particularly well: it can read your screen
   },
 
   {
-    slug: 'connect-iphone-to-tv',
+    slug: `iphone-to-tv-connection-guide`,
     title: 'How to Connect Your iPhone to a TV',
     excerpt: 'Show photos, videos, or FaceTime calls from your iPhone on a big TV screen using AirPlay or a simple cable.',
     category: 'tips-tricks',
@@ -1172,7 +1172,7 @@ One common hiccup with AirPlay: if your iPhone cannot see the TV, make sure both
   },
 
   {
-    slug: 'how-to-use-apple-pay',
+    slug: `apple-pay-setup-guide`,
     title: 'How to Set Up and Use Apple Pay',
     excerpt: 'Pay safely with your iPhone or Apple Watch by holding it near a card reader — here is how to set up Apple Pay and use it.',
     category: 'financial-tech',
@@ -1229,7 +1229,7 @@ Apple Pay is accepted almost everywhere in the US. If you walk up to a register 
   },
 
   {
-    slug: 'how-to-use-zelle-safely',
+    slug: `zelle-safe-use-guide`,
     title: 'How to Use Zelle Safely to Send Money',
     excerpt: 'Zelle lets you send money from your bank to another US bank in minutes. Here is how to use it — and the one big rule for staying safe.',
     category: 'financial-tech',
@@ -1286,7 +1286,7 @@ Used between people you know — your son for rent, your grandchild for a birthd
   },
 
   {
-    slug: 'how-to-delete-apps-iphone-android',
+    slug: `delete-apps-iphone-android-guide`,
     title: 'How to Delete Apps on iPhone and Android',
     excerpt: 'Clean up your phone by removing apps you do not use — here is how to do it on iPhone and Android, safely.',
     category: 'tips-tricks',

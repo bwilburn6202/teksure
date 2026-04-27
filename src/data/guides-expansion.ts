@@ -829,7 +829,7 @@ Double-check every digit before submitting. A wrong number can send money to som
   },
 
   {
-    slug: 'dispute-credit-card-charge',
+    slug: `dispute-credit-card-charge-2`,
     title: 'How to Dispute a Charge on Your Credit Card',
     excerpt: 'Found a charge you do not recognize? Learn how to dispute it with your credit card company and get your money back.',
     category: 'financial-tech' as any,
