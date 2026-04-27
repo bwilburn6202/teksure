@@ -109,7 +109,6 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
     { to: '/articles',           label: 'Articles & Blog' },
     { to: '/tech-help-near-me',  label: 'Help Near Me' },
     { to: '/this-week',          label: 'This Week' },
-    { to: '/pricing',            label: 'Pricing' },
     { to: '/about',              label: 'About TekSure' },
     { to: '/faq',                label: 'FAQ' },
     { to: '/site-index',         label: 'Site Index' },

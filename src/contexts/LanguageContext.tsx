@@ -60,7 +60,6 @@ const translations: Record<Language, TranslationMap> = {
     'action.close':     'Close',
     'action.learnmore': 'Learn More',
     'action.bookatech': 'Book a Verified Tech',
-    'action.seeprice':  'See Pricing',
 
     // Footer
     'footer.tagline':   'Tech help built for everyone.',
@@ -113,7 +112,6 @@ const translations: Record<Language, TranslationMap> = {
     'action.close':     'Cerrar',
     'action.learnmore': 'Más Información',
     'action.bookatech': 'Contratar un Técnico',
-    'action.seeprice':  'Ver Precios',
 
     // Footer
     'footer.tagline':   'Ayuda tecnológica para todos.',

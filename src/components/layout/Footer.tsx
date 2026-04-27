@@ -112,7 +112,6 @@ export function Footer() {
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
         { to: '/technicians', label: 'Book a technician' },
         { to: '/get-help', label: 'Schedule a session' },
-        { to: '/pricing', label: 'Pricing' },
         { to: '/faq', label: 'FAQ' },
         { to: '/privacy', label: 'Privacy Policy' },
         { to: '/privacy', label: 'Terms of Use' },
