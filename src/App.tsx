@@ -76,7 +76,6 @@ const Ambassadors            = lazy(() => import("./pages/community/Ambassadors"
 const PhishingScanner        = lazy(() => import("./pages/tools/PhishingScanner"));
 const WifiTroubleshooter     = lazy(() => import("./pages/tools/WifiTroubleshooter"));
 const TechnicianProfile      = lazy(() => import("./pages/TechnicianProfile"));
-const Pricing                = lazy(() => import("./pages/Pricing"));
 const PaymentSuccess         = lazy(() => import("./pages/payment/Success"));
 const PaymentCancel          = lazy(() => import("./pages/payment/Cancel"));
 const ForumIndex             = lazy(() => import("./pages/forum/Index"));
@@ -515,7 +514,8 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/pricing" element={<Pricing />} />
+          {/* /pricing was retired — its info now lives inside /get-help */}
+          <Route path="/pricing" element={<Navigate to="/get-help" replace />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/guias" element={<GuidesEspanol />} />
           <Route path="/guides/:slug" element={<GuideDetail />} />
