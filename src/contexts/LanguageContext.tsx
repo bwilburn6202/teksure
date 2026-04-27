@@ -6,7 +6,7 @@
  *   <p>{t('hero.title')}</p>
  */
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, useCallback, type ReactNode } from 'react';
 
 export type Language = 'en' | 'es';
 
@@ -28,7 +28,7 @@ const translations: Record<Language, TranslationMap> = {
 
     // Hero (Index)
     'hero.title':       'Tech Help Made Simple',
-    'hero.subtitle':    'Easy guides, friendly tools, and real support — built for everyday people.',
+    'hero.subtitle':    'Plain-English guides, friendly tools, and real support — built for everyday people.',
     'hero.cta.guides':  'Browse Guides',
     'hero.cta.help':    'Get Help Now',
 
@@ -60,7 +60,6 @@ const translations: Record<Language, TranslationMap> = {
     'action.close':     'Close',
     'action.learnmore': 'Learn More',
     'action.bookatech': 'Book a Verified Tech',
-    'action.seeprice':  'See Pricing',
 
     // Footer
     'footer.tagline':   'Tech help built for everyone.',
@@ -81,7 +80,7 @@ const translations: Record<Language, TranslationMap> = {
 
     // Hero
     'hero.title':       'Ayuda con la Tecnología Simplificada',
-    'hero.subtitle':    'Guías fáciles, herramientas amigables y soporte real — hecho para todos.',
+    'hero.subtitle':    'Guías claras, herramientas amigables y soporte real — hecho para todos.',
     'hero.cta.guides':  'Ver Guías',
     'hero.cta.help':    'Obtener Ayuda Ahora',
 
@@ -113,7 +112,6 @@ const translations: Record<Language, TranslationMap> = {
     'action.close':     'Cerrar',
     'action.learnmore': 'Más Información',
     'action.bookatech': 'Contratar un Técnico',
-    'action.seeprice':  'Ver Precios',
 
     // Footer
     'footer.tagline':   'Ayuda tecnológica para todos.',
@@ -147,6 +145,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (typeof window !== 'undefined') localStorage.setItem('teksure_lang', l);
     setLangState(l);
   }, []);
+
+  // Keep <html lang> in sync so screen readers, browser typography, and
+  // search-engine crawlers see the correct language for the active translation.
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    document.documentElement.setAttribute('lang', lang);
+  }, [lang]);
 
   const t = useCallback(
     (key: string, fallback?: string): string =>

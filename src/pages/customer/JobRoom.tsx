@@ -324,7 +324,7 @@ const CustomerJobRoom = () => {
                   </div>
                   <div className="flex gap-3 mt-2">
                     <Button variant="outline" asChild>
-                      <Link to="/book" className="flex items-center gap-2">
+                      <Link to="/get-help" className="flex items-center gap-2">
                         <Phone className="h-4 w-4" /> Book a Call
                       </Link>
                     </Button>

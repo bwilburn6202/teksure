@@ -29,8 +29,8 @@ TekSure is an American tech support platform built for non-technical users and s
 ## Features
 
 ### Content & Education
-- **1,000+ step-by-step guides** across 12 categories (Windows, Mac, phones, safety, AI, health tech, and more)
-- **Interactive tools** (25+): password strength checker, Wi-Fi speed test, device health dashboard, phishing scanner, backup wizard, jargon translator, and more
+- **~2,900 step-by-step guides** across 19 categories (Windows, Mac, phones, safety, AI, health tech, smart home, financial tech, and more)
+- **Interactive tools** (99+): password strength checker, Wi-Fi speed test, device health dashboard, phishing scanner, backup wizard, jargon translator, and more
 - **AI tutor (TekBot)**: page-aware assistant that answers questions in plain language
 - **Video tutorials** embedded in guides with screenshot annotations
 - **Guide rating system**: 5-star reviews on every guide
@@ -70,7 +70,7 @@ TekSure is an American tech support platform built for non-technical users and s
 | **Framework** | React 18 + TypeScript |
 | **Build** | Vite 5 (SWC plugin) |
 | **Styling** | Tailwind CSS 3 + shadcn/ui (Radix primitives) |
-| **Routing** | React Router v6 (115+ routes, lazy-loaded) |
+| **Routing** | React Router v6 (220+ routes, lazy-loaded) |
 | **State** | TanStack React Query + React Context |
 | **Backend** | Supabase (PostgreSQL + Auth + Row Level Security) |
 | **Serverless** | Supabase Edge Functions (Deno) |
@@ -140,17 +140,17 @@ teksure/
 │   │   ├── SEOHead.tsx         # Dynamic meta tags
 │   │   └── ScamPanicButton.tsx # Emergency scam help
 │   │
-│   ├── pages/                  # Route page components (63 files)
+│   ├── pages/                  # Route page components (218+ files)
 │   │   ├── admin/              # Admin Console, Content Pipeline
 │   │   ├── customer/           # Customer Dashboard, Job Room
 │   │   ├── tech/               # Technician Dashboard, Job Room
 │   │   ├── forum/              # Forum Index, Thread Detail, New Thread
 │   │   ├── payment/            # Stripe Success/Cancel pages
-│   │   └── tools/              # 32 interactive tool pages
+│   │   └── tools/              # 99+ interactive tool pages
 │   │
 │   ├── data/                   # Static content data
-│   │   ├── guides.ts           # Core guide definitions (780+ guides)
-│   │   ├── guides-batch-*.ts   # Additional guide batches
+│   │   ├── guides.ts           # Core guide definitions (~790 guides)
+│   │   ├── guides-batch-*.ts   # Additional guide batches (96 batch files, ~2,100+ guides)
 │   │   ├── aggregatedArticles.ts
 │   │   └── roadmapData.ts
 │   │
@@ -166,8 +166,8 @@ teksure/
 │   └── types/                  # TypeScript type definitions
 │
 ├── supabase/
-│   ├── functions/              # 7 Edge Functions (Deno runtime)
-│   └── migrations/             # 10 SQL migration files
+│   ├── functions/              # 20 Edge Functions (Deno runtime)
+│   └── migrations/             # 26 SQL migration files
 │
 ├── scripts/                    # Screenshot generation & sitemap scripts
 ├── vite.config.ts              # Vite config (SWC, code splitting, sitemap)
@@ -234,7 +234,7 @@ TekSure uses **Supabase** (PostgreSQL) with Row Level Security (RLS) on all tabl
 | `content_sources` | Aggregated article sources |
 | `video_tutorials` | Video content metadata |
 
-See [docs/API.md](./docs/API.md) for full schema details.
+<!-- TODO: Create docs/API.md with full schema details -->
 
 ---
 
@@ -246,19 +246,32 @@ See [docs/API.md](./docs/API.md) for full schema details.
 | `stripe-webhook` | Handles Stripe payment events |
 | `send-booking-confirmation` | Booking confirmation email via Resend |
 | `send-help-confirmation` | Help request confirmation email |
+| `send-notification` | Push notifications |
+| `send-weekly-newsletter` | Weekly email digest |
+| `process-email-queue` | Async email processing |
+| `brain-query` | AI semantic search for TekSure Brain |
+| `ollama-health` | Ollama server health check |
+| `doc-chat` | Document Q&A |
+| `knowledge-base-compile` | KB compilation |
+| `knowledge-source-import` | KB import |
+| `knowledge-source-save` | KB save |
+| `publish-to-batch` | Guide batch publishing |
+| `safety-lookup` | Scam/safety data lookup |
 | `scrape-articles` | Content aggregation from external sources |
 | `simplify-article` | AI-powered article simplification |
 | `categorize-and-dedup` | Content categorization and deduplication |
+| `auth-email-hook` | Email verification hook |
+| `email-selftest` | Email testing utility |
 
 ---
 
 ## Guides System
 
-Guides are the core of TekSure: **1,000+** step-by-step tutorials across **12 categories**.
+Guides are the core of TekSure: **~2,900** step-by-step tutorials across **19 categories**.
 
 ### Categories
 
-Windows, Mac, Essential Skills, Tips & Tricks, AI Guides, AI Deep Dives, Safety & Privacy, How-To, Apps & Services, Health & Wellness Tech, Phone & Tablet, Social Media.
+Windows, Mac, Essential Skills, Tips & Tricks, AI Guides, AI Deep Dives, Safety & Privacy, How-To, Apps & Services, Health & Wellness Tech, Phone & Tablet, Social Media, Smart Home, Financial Tech, Internet & Connectivity, Communication, Entertainment, Government & Civic, Life Transitions.
 
 ### Adding a Guide
 
@@ -281,7 +294,7 @@ Add a guide object to `src/data/guides.ts`:
 }
 ```
 
-See [docs/GUIDES.md](./docs/GUIDES.md) for the full authoring guide.
+See the guide format section in [CLAUDE.md](./CLAUDE.md) for the full authoring reference.
 
 ---
 
@@ -305,7 +318,7 @@ TekSure targets **WCAG 2.1 AA** with built-in:
 
 TekSure deploys to **Vercel** with auto-deploy on push to `main`.
 
-See [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) for the full deployment guide and production checklist.
+Auto-deploys on push to `main`. See [vercel.json](./vercel.json) for deployment config.
 
 ---
 
@@ -313,11 +326,12 @@ See [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) for the full deployment guide and
 
 | Document | Description |
 |----------|-------------|
+| [CLAUDE.md](./CLAUDE.md) | Claude Code instructions, project overview, guide format |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | Development workflow and coding standards |
-| [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) | System architecture and design decisions |
-| [docs/API.md](./docs/API.md) | Database schema and Edge Function reference |
-| [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) | Deployment guide and production checklist |
-| [docs/GUIDES.md](./docs/GUIDES.md) | Guide content authoring and style guide |
+| [DESIGN.md](./DESIGN.md) | Design system and philosophy |
+| [ANALYTICS-SETUP.md](./ANALYTICS-SETUP.md) | Google Analytics 4 configuration |
+| [TESTING_STRATEGY.md](./TESTING_STRATEGY.md) | Test approach and implementation |
+| [TEKSURE-MASTER-ROADMAP-2026-04-19.md](./TEKSURE-MASTER-ROADMAP-2026-04-19.md) | Master strategic plan and roadmap |
 
 ---
 

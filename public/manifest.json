@@ -1,11 +1,11 @@
 {
   "name": "TekSure — Tech Help Made Simple",
   "short_name": "TekSure",
-  "description": "Easy tech guides, friendly tools, and real support — built for everyday people.",
+  "description": "Plain-English tech guides, friendly tools, and real support — built for everyday people.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1a3560",
+  "background_color": "#FAF8F4",
+  "theme_color": "#2A5FCC",
   "orientation": "portrait-primary",
   "icons": [
     {

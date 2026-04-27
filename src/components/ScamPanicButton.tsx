@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldAlert, X, Phone, KeyRound, Flag, Users, Ban, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -37,6 +37,17 @@ export function ScamPanicButton() {
   const [open, setOpen] = useState(false);
   const [checked, setChecked] = useState<boolean[]>(new Array(steps.length).fill(false));
 
+  // Escape closes the modal — standard dialog dismiss behavior. Mounted
+  // only while open so the listener doesn't run on every page.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
+
   const toggle = (i: number) => {
     setChecked(prev => {
       const next = [...prev];
@@ -49,7 +60,7 @@ export function ScamPanicButton() {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 left-6 z-50 flex items-center gap-2 rounded-full bg-destructive px-4 py-3 text-sm font-semibold text-destructive-foreground shadow-lg hover:bg-destructive/90 transition-colors no-print"
+        className="fixed bottom-6 left-6 z-50 hidden md:flex items-center gap-2 rounded-full bg-destructive px-4 py-3 text-sm font-semibold text-destructive-foreground shadow-lg hover:bg-destructive/90 transition-colors no-print"
         aria-label="I think I've been scammed — get help now"
         aria-haspopup="dialog"
       >

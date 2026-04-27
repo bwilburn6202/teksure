@@ -15,7 +15,7 @@ export function HighContrastToggle() {
             size="icon"
             onClick={toggleHighContrast}
             aria-label={highContrast ? 'Turn off High Contrast Mode' : 'Turn on High Contrast Mode'}
-            className={`h-8 w-8 rounded-lg transition-colors ${
+            className={`h-11 w-11 rounded-lg transition-colors ${
               highContrast
                 ? 'bg-foreground text-background hover:bg-foreground/90'
                 : 'text-muted-foreground hover:text-foreground'

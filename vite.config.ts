@@ -8,7 +8,10 @@ function sitemapPlugin(): Plugin {
     name: 'generate-sitemap',
     buildStart() {
       const BASE_URL = 'https://teksure.com';
-      const LASTMOD = '2026-04-05';
+      // Use today's date so search engines see updated lastmod after each
+      // build instead of a frozen date. Matches scripts/generate-sitemap.mjs.
+      const _d = new Date();
+      const LASTMOD = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, '0')}-${String(_d.getDate()).padStart(2, '0')}`;
 
       const mainPages = [
         { path: '/', priority: '1.0', changefreq: 'weekly' },
@@ -45,6 +48,13 @@ function sitemapPlugin(): Plugin {
         { path: '/technicians', priority: '0.5', changefreq: 'monthly' },
         { path: '/book', priority: '0.7', changefreq: 'monthly' },
         { path: '/notifications', priority: '0.4', changefreq: 'monthly' },
+        { path: '/scam-defense', priority: '0.8', changefreq: 'weekly' },
+        { path: '/free-resources', priority: '0.8', changefreq: 'weekly' },
+        { path: '/tekbrain', priority: '0.7', changefreq: 'monthly' },
+        { path: '/brain', priority: '0.6', changefreq: 'monthly' },
+        { path: '/onboarding', priority: '0.5', changefreq: 'monthly' },
+        { path: '/whats-new', priority: '0.5', changefreq: 'weekly' },
+        { path: '/site-index', priority: '0.4', changefreq: 'monthly' },
         { path: '/tools/password-strength', priority: '0.6', changefreq: 'monthly' },
         { path: '/tools/password-manager', priority: '0.6', changefreq: 'monthly' },
         { path: '/tools/wifi-speed', priority: '0.6', changefreq: 'monthly' },
@@ -167,12 +177,7 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-router';
           }
 
-          // Framer Motion — animation library, large, loaded lazily
-          if (id.includes('node_modules/framer-motion')) {
-            return 'vendor-motion';
-          }
-
-          // Supabase — only loaded when auth/db is needed
+// Supabase — only loaded when auth/db is needed
           if (id.includes('node_modules/@supabase')) {
             return 'vendor-supabase';
           }
@@ -180,10 +185,7 @@ export default defineConfig(({ mode }) => ({
           // Radix UI + shadcn utilities — large UI primitives
           if (
             id.includes('node_modules/@radix-ui') ||
-            id.includes('node_modules/class-variance-authority') ||
-            id.includes('node_modules/cmdk') ||
-            id.includes('node_modules/vaul') ||
-            id.includes('node_modules/embla-carousel')
+            id.includes('node_modules/class-variance-authority')
           ) return 'vendor-ui';
 
           // Guide data — large dataset, split into its own cacheable chunk
@@ -196,12 +198,7 @@ export default defineConfig(({ mode }) => ({
             return 'vendor-query';
           }
 
-          // Forms + validation
-          if (
-            id.includes('node_modules/react-hook-form') ||
-            id.includes('node_modules/@hookform') ||
-            id.includes('node_modules/zod')
-          ) return 'vendor-forms';
+
         },
       },
     },

@@ -16,7 +16,7 @@ export const roadmapItems: RoadmapItem[] = [
   // ── LIVE ──────────────────────────────────────────────────────
   { title: 'Step-by-Step Guides Library', description: 'A growing collection of plain-language guides that walk you through common tech tasks one step at a time.', status: 'live', category: 'Guides' },
   { title: 'Smart Search', description: 'Instantly search across guides, glossary terms, and quick fixes to find the help you need.', status: 'live', category: 'Search' },
-  { title: 'TekBot Chat Assistant', description: 'A friendly AI chat helper that answers your tech questions right on every page.', status: 'live', category: 'AI' },
+  { title: 'TekBrain Chat Assistant', description: 'A friendly AI chat helper that answers your tech questions right on every page.', status: 'live', category: 'AI' },
   { title: 'Device-Specific Help', description: 'Browse helpful information organized by device type — phones, tablets, laptops, and more.', status: 'live', category: 'Guides' },
   { title: 'SEO Optimization', description: 'Every page is optimized so you can find TekSure easily through Google and other search engines.', status: 'live', category: 'SEO' },
   { title: 'Senior-Friendly Design', description: 'Large text, clear buttons, and simple layouts designed for comfortable reading and navigation.', status: 'live', category: 'UX' },
@@ -81,7 +81,7 @@ export const roadmapItems: RoadmapItem[] = [
   { title: 'Technician Profiles', description: 'Browse vetted TekSure technicians, read reviews, and book the right person for your problem.', status: 'live', category: 'Support' },
   { title: 'Accessibility Check Quiz', description: 'Find out how accessible your device setup is and get personalized tips to make tech easier to use.', status: 'live', category: 'Accessibility' },
   { title: 'Screenshot Annotations', description: 'Guides with arrows and highlights on screenshots so you know exactly where to click.', status: 'live', category: 'Guides' },
-  { title: 'AI-Powered TekBot Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'live', category: 'AI' },
+  { title: 'AI-Powered TekBrain Upgrade', description: 'Smarter, context-aware AI responses that remember your device type and suggest related guides automatically.', status: 'live', category: 'AI' },
   { title: 'Multi-Language Support', description: 'Read guides and use TekSure in Spanish, French, and other languages.', status: 'live', category: 'Accessibility' },
   { title: 'Review & Rating System', description: 'Rate guides and technician sessions so the community can surface the most helpful content.', status: 'live', category: 'Community' },
   { title: 'Before and After Screenshots', description: 'See what your screen should look like before and after following each step.', status: 'live', category: 'Guides' },

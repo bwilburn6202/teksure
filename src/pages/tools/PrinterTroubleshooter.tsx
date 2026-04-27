@@ -1,27 +1,92 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import {
+  Printer,
+  RotateCcw,
+  ArrowLeft,
+  ChevronRight,
+  CheckCircle2,
+  AlertTriangle,
+  Wifi,
+  Plug,
+  AlertCircle,
+  Droplets,
+  Palette,
+  FileText,
+  Scan,
+  Layers,
+  Wrench,
+  Lightbulb,
+  MessageCircle,
+  BookOpen,
+  Home,
+  ExternalLink,
+  Power,
+  ShoppingCart,
+  Search,
+  type LucideIcon,
+} from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Printer, ChevronRight, ChevronLeft, RotateCcw, CheckCircle2, HelpCircle, Lightbulb } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { BookmarkButton } from '@/components/BookmarkButton';
 
-interface Node {
-  id: string;
-  question?: string;
-  statement?: string;
-  helpText?: string;
-  type: 'question' | 'solution';
-  solution?: string;
-  solutionSteps?: string[];
-  yesNext?: string;
-  noNext?: string;
+/* ─────────────────────────────────────────────────────────────────────────
+ * Decision-tree data model
+ *
+ * Same pattern as PhoneFirstAid.tsx — the tool is a state machine of nodes.
+ * Each node is either a "question" (branching options) or a "fix" (end state
+ * with concrete steps). The current node is the last item in a history stack
+ * so users can always press Back to recover from a wrong choice.
+ * ───────────────────────────────────────────────────────────────────────── */
+
+interface QuestionOption {
+  label: string;
+  desc?: string;
   emoji?: string;
+  next: string;
 }
 
-// Decision tree for printer troubleshooting
-const TREE: Record<string, Node> = {
+interface QuestionNode {
+  kind: 'question';
+  title: string;
+  subtitle?: string;
+  icon?: LucideIcon;
+  options: QuestionOption[];
+}
+
+interface FixNode {
+  kind: 'fix';
+  title: string;
+  icon?: LucideIcon;
+  /** A short plain-language explanation of *why* this fix works. */
+  why: string;
+  /** Concrete, numbered steps the user can follow. */
+  steps: string[];
+  /** What to try next if this didn't work. */
+  ifFails?: string;
+  /** Specific signs that it's time to call in a human. */
+  proHelp?: string;
+  /** When to repair vs buy a new printer — printers age out fast. */
+  replaceOrRepair?: string;
+  /** Brand-agnostic guidance on buying ink / toner / supplies. */
+  buying?: string;
+  /** Optional related TekSure guide link. */
+  guide?: { label: string; to: string };
+  /** Bright-red urgency banner (safety warnings — hot fuser, spilled toner). */
+  urgent?: string;
+}
+
+type Node = QuestionNode | FixNode;
+
+/* ─────────────────────────────────────────────────────────────────────────
+ * The tree
+ * ───────────────────────────────────────────────────────────────────────── */
+
+const tree: Record<string, Node> = {
+  /* ── Root ────────────────────────────────────────────────── */
   start: {
     id: 'start',
     type: 'question',
@@ -188,12 +253,47 @@ const TREE: Record<string, Node> = {
     solution: 'Paper can get stuck in places that are hard to see at first.',
     solutionSteps: [
       'Turn off the printer.',
-      'Open the front cover and remove the ink or toner cartridge (it usually lifts out). Look for paper behind where the cartridge sits.',
-      'Check the back of the printer. Many printers have a rear access panel that pops off or swings open.',
-      'Check the paper tray at the bottom. Remove the tray and look up inside the slot where paper feeds in.',
-      'If your printer has a duplexer (a piece on the back for two-sided printing), open it and check inside.',
-      'Remove any paper you find, put everything back together, and try printing again.',
-      'If the printer still says "paper jam" with no paper visible, the sensor may need cleaning. Contact the manufacturer or try our Get Help page.',
+      'Open the front cover. Remove the ink or toner cartridge — look for paper behind it.',
+      'Open the TOP cover if there is one — scanner beds lift on many all-in-ones.',
+      'Go to the BACK of the printer. Most have a rear access panel that pops off or swings open. Check inside.',
+      'Pull the PAPER TRAY fully out. Look up into the slot with a flashlight — paper often gets caught at the feed roller.',
+      'If your printer has a DUPLEX (two-sided) unit on the back, open it and check inside.',
+      'Remove everything you find, put it all back together, and turn on.',
+    ],
+    ifFails: 'If the printer still shows "jam" with no paper anywhere, the jam sensor may be stuck or dirty. Gently blow out the sensor with canned air — it\'s a small plastic flag or optical eye inside the paper path.',
+    proHelp: 'A jam sensor that reads jam with no paper present is a repair-shop problem. On older printers, it\'s rarely worth repairing.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_repeatJam: {
+    kind: 'fix',
+    icon: AlertCircle,
+    title: 'Paper jams every time — here\'s the checklist',
+    why: 'Repeat jams mean a physical cause: damp paper, wrong paper type, worn rollers, or a foreign object stuck inside. Fixing the cause stops the cycle.',
+    steps: [
+      'Replace the paper stack with a fresh ream. Paper that\'s been in a humid room (bathroom, basement) gets wavy and jams more.',
+      'Check the paper weight. Most printers want 20 lb / 75 gsm copier paper. Photo paper, card stock, or old onion-skin paper can jam in a printer not rated for them.',
+      'Fan the stack — hold one edge, flex the sheets, they should slide easily.',
+      'Check the paper guides — slide them snugly against the stack without bending it. Too loose = skew; too tight = jams.',
+      'Clean the pickup roller with a lint-free cloth and distilled water. Rotate the roller as you wipe. Dry 10 minutes before trying.',
+      'If jams still repeat, order a roller replacement kit for your model — usually $15–$30 and a 10-minute job.',
+    ],
+    ifFails: 'If rollers are new and paper is fresh but jams continue, something inside the paper path is bent or broken. Take it to a shop for an assessment.',
+    proHelp: 'If the printer is 5+ years old and jamming constantly, replace it. A new entry-level printer ($80–$150) costs less than a repair visit.',
+    replaceOrRepair: 'Repair rollers ($15–$30) if the printer is newer than 3 years and the main problem is misfeeds. Replace the printer if it\'s older and having multiple issues.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
+  },
+
+  /* ── 6. WiFi connect ────────────────────────────────────── */
+  wifiConnect: {
+    kind: 'question',
+    title: 'What happens when you try to connect to WiFi?',
+    icon: Wifi,
+    options: [
+      { label: 'Printer doesn\'t see my network',       emoji: '',  next: 'fix_wifiNotVisible' },
+      { label: 'Says my password is wrong',              emoji: '',  next: 'fix_wifiPassword' },
+      { label: 'Connects but won\'t print',              emoji: '',  next: 'fix_wifiSameNetwork' },
+      { label: 'I don\'t know how to set it up',         emoji: '🆕',  next: 'fix_wifiFirstTime' },
     ],
   },
 
@@ -226,6 +326,9 @@ const TREE: Record<string, Node> = {
       'You can buy cartridges at office supply stores (Staples, Office Depot), Amazon, or Walmart.',
       'Follow the instructions in your printer to replace the cartridge. Usually: open the lid, wait for the cartridge holder to move to the center, press the old one to release it, and snap the new one in.',
     ],
+    ifFails: 'If your router has only 5 GHz WiFi (some mesh systems), you\'ll need to enable 2.4 GHz specifically for the printer, or connect the printer by USB cable instead.',
+    proHelp: 'If your WiFi router is managed by your internet provider and you can\'t access its settings, call them to enable 2.4 GHz.',
+    guide: { label: 'WiFi troubleshooter', to: '/tools/wifi-troubleshooter' },
   },
   quality_faded_low: {
     id: 'quality_faded_low',
@@ -241,6 +344,9 @@ const TREE: Record<string, Node> = {
       'If printing is still faded after two cleanings, try "Deep Clean" if your printer has that option.',
       'For laser printers: open the printer, remove the toner cartridge, and gently rock it side to side to redistribute the toner inside. Then put it back.',
     ],
+    ifFails: 'If the password is definitely right but the printer still rejects it, the password may have special characters (& $ # !) that the printer\'s keypad handles poorly. Temporarily change the router password to letters and numbers only, connect the printer, then change it back.',
+    proHelp: 'Using the manufacturer\'s phone/tablet setup app is much easier than typing on the printer — HP Smart, Canon PRINT, Epson Smart Panel, etc. Download your brand\'s app.',
+    guide: { label: 'WiFi password finder', to: '/tools/wifi-password-finder' },
   },
   quality_streaky: {
     id: 'quality_streaky',
@@ -256,6 +362,9 @@ const TREE: Record<string, Node> = {
       'If streaks continue, the paper type setting might be wrong. Make sure it matches the paper you are using (plain paper, photo paper, etc.).',
       'For laser printers: streaks often mean the drum unit needs cleaning or replacing. Check your printer manual for "drum replacement."',
     ],
+    ifFails: 'If both are on the same network and it still won\'t print, remove and re-add the printer in your computer\'s settings. Windows: Settings → Printers & scanners → remove → Add device. Mac: System Settings → Printers & Scanners → minus → plus.',
+    proHelp: 'If you use a mesh system (Eero, Google WiFi, Orbi) and keep losing the printer, enable "IoT" mode or turn off "Device Isolation" in the router settings — mesh routers sometimes quarantine older devices.',
+    guide: { label: 'Home network map', to: '/tools/home-network-map' },
   },
   quality_blurry: {
     id: 'quality_blurry',
@@ -273,21 +382,41 @@ const TREE: Record<string, Node> = {
     ],
   },
 
-  // ── Ink/toner flow ────────────────────────────────────────────
-  ink_q1: {
-    id: 'ink_q1',
-    type: 'question',
-    question: 'Is your printer showing an ink or toner warning message?',
-    yesNext: 'ink_warning',
-    noNext: 'ink_not_recognized',
+  fix_findWindows: {
+    kind: 'fix',
+    icon: Search,
+    title: 'Add your printer on Windows',
+    why: 'Windows usually finds printers automatically when they\'re on the same WiFi — but sometimes it needs a nudge, or the printer was set up on a previous version of Windows.',
+    steps: [
+      'Make sure the printer is on and connected to WiFi (solid WiFi light).',
+      'On Windows: click Start → Settings → Bluetooth & devices → Printers & scanners.',
+      'Click "Add device." Windows scans for 30 seconds. Your printer should appear by name.',
+      'Click the printer\'s name → "Add device." Windows will download a driver if needed.',
+      'When it finishes, you\'ll see the printer listed as "Ready."',
+      'If it still doesn\'t appear: click "The printer that I want isn\'t listed" → "Add a printer using a TCP/IP address" → enter the printer\'s IP address (find it on the printer\'s Settings → Network menu).',
+    ],
+    ifFails: 'If Windows can\'t install the driver, download the full driver package from the manufacturer\'s website (hp.com, canon.com, epson.com, brother.com). Search for your model → "Downloads" → "Drivers."',
+    proHelp: 'If your computer and printer are both on WiFi but can\'t find each other, the router\'s "AP Isolation" may be on. Log into the router and turn it off.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
   },
-  ink_warning: {
-    id: 'ink_warning',
-    type: 'question',
-    question: 'Does the message say "low" or "empty"?',
-    helpText: '"Low" means you can usually keep printing for a while. "Empty" means you need to replace the cartridge soon.',
-    yesNext: 'ink_replace',
-    noNext: 'ink_not_recognized',
+
+  fix_findMac: {
+    kind: 'fix',
+    icon: Search,
+    title: 'Add your printer on Mac',
+    why: 'Mac uses AirPrint to find printers automatically on WiFi. If it\'s not showing up, either the printer isn\'t AirPrint-capable, or there\'s a WiFi routing issue.',
+    steps: [
+      'Make sure the printer is on and connected to the same WiFi as the Mac.',
+      'On Mac: Apple menu → System Settings → Printers & Scanners.',
+      'Click the "+" (plus) button at the bottom. Your printer should appear after a few seconds.',
+      'Select it → click "Add." macOS will download any needed driver.',
+      'If the printer doesn\'t appear: enable sharing on the printer (Settings → Network → AirPrint → On), then try again.',
+      'For older non-AirPrint printers, download and install the driver from the manufacturer\'s website BEFORE trying to add it.',
+    ],
+    ifFails: 'If the printer still won\'t add, try the IP address method. Click the "+" → IP tab → type the printer\'s IP address (from the printer\'s Settings → Network screen) → pick "Line Printer Daemon – LPD" as the protocol.',
+    proHelp: 'Very old printers (10+ years) have no Mac driver and no AirPrint. Time to replace the printer.',
+    replaceOrRepair: 'If your printer was released before 2012, there\'s often no Mac support at all. A $80 new printer beats days of troubleshooting.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
   ink_replace: {
     id: 'ink_replace',
@@ -319,6 +448,376 @@ const TREE: Record<string, Node> = {
       'Plug the printer back in and turn it on.',
       'If the error continues, the cartridge may be defective. Try a different cartridge if you have one, or return it to the store for a replacement.',
     ],
+    ifFails: 'If USB still reports offline, update the printer driver. Uninstall the current one (Windows: Settings → Apps → find your printer brand → Uninstall) then reinstall from the manufacturer\'s site.',
+    proHelp: 'If the USB cable is old (5+ years) and it\'s been bent at the connector, the wires inside may have broken. A new $8 cable may be the fastest fix.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_offlineWifi: {
+    kind: 'fix',
+    icon: Wifi,
+    title: 'WiFi printer showing offline',
+    why: 'WiFi printers go offline when they lose their connection — after a router restart, a sleep cycle, or a Windows update. Reconnecting to the same network fixes most cases.',
+    steps: [
+      'On the printer, check the WiFi light — solid = connected, blinking = disconnected.',
+      'If blinking, redo WiFi setup (Settings → Wireless → WiFi Setup → pick your network → password).',
+      'Check your computer\'s WiFi — you and the printer must be on the SAME network.',
+      'On Windows: Settings → Printers & scanners → click the printer → Printer properties → uncheck "Use printer offline."',
+      'Right-click in the print queue → clear any stuck jobs.',
+      'Restart: printer OFF, router unplug 30 sec and replug, computer restart. Once all come back, try printing.',
+    ],
+    ifFails: 'If the printer loses its WiFi constantly, the router may be assigning it a new IP address each time. In the printer\'s Network settings, set a "static IP" or "reserve" the IP in your router.',
+    proHelp: 'If you\'ve restarted everything twice and it still goes offline, remove and re-add the printer on your computer (System Settings → Printers → remove → Add).',
+    guide: { label: 'WiFi troubleshooter', to: '/tools/wifi-troubleshooter' },
+  },
+
+  fix_offlineAny: {
+    kind: 'fix',
+    icon: RotateCcw,
+    title: 'Offline fix — try this sequence',
+    why: 'The "offline" message is a catch-all. This restart sequence fixes the vast majority of cases without you needing to dig into settings.',
+    steps: [
+      'Turn OFF the printer. Unplug it for 30 seconds. Plug back in. Power on.',
+      'If WiFi: unplug the router for 30 seconds, plug back in. Wait 2 minutes.',
+      'Restart your computer (not Shut Down — Restart).',
+      'Once everything is back up, open the document and try to print.',
+      'If still offline: on the computer, Settings → Printers → click your printer → Printer properties → uncheck "Use printer offline" / set "Printer Online."',
+      'Clear the print queue — right-click the printer → See what\'s printing → Cancel All Documents.',
+    ],
+    ifFails: 'If the restart doesn\'t fix it, remove and re-add the printer. Remove first, then add — don\'t just install over the top.',
+    proHelp: 'Offline that persists after full reset = driver issue. Reinstall the latest driver from the manufacturer.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  /* ── 9. Weird colours ───────────────────────────────────── */
+  weirdColors: {
+    kind: 'question',
+    title: 'What\'s wrong with the colours?',
+    icon: Palette,
+    options: [
+      { label: 'Everything has a colour tint (yellow / blue / pink)', emoji: '',  next: 'fix_colorCalibrate' },
+      { label: 'One colour is totally missing',                       emoji: '',  next: 'fix_clogHead' },
+      { label: 'Only printing in black and white',                    emoji: '',  next: 'fix_colorMode' },
+      { label: 'Colours swapped — reds where greens should be',       emoji: '',  next: 'fix_driverColor' },
+    ],
+  },
+
+  fix_colorCalibrate: {
+    kind: 'fix',
+    icon: Palette,
+    title: 'Run a colour calibration',
+    why: 'Over time, ink flow gets slightly out of balance — one colour is delivered stronger, giving every print a tint. Calibration evens it out.',
+    steps: [
+      'On the printer screen: Settings → Maintenance → Calibrate Colour (may also be "Color Calibration" or "Colour Register").',
+      'The printer prints a test pattern and reads it back automatically, or asks you to scan it back.',
+      'Also run "Clean Print Heads" — sometimes the tint is from ONE clogged nozzle, not all.',
+      'Check that ALL colour cartridges are above 25% — a nearly-empty cartridge throws off the colour mix.',
+      'In the Print dialog, check Quality = Normal or High, and Paper Type matches your paper.',
+      'Print a colour test page to confirm.',
+    ],
+    ifFails: 'If the tint persists after calibration, replace all colour cartridges — one may be old or leaking. Original cartridges give far more consistent colour than refills or generics.',
+    proHelp: 'If calibration won\'t run, your printer may not have a built-in colour sensor. Buy a replacement colour cartridge set instead.',
+    buying: 'For photo-accurate colour, stick with genuine cartridges. Third-party brands save money for text documents but can shift colour by 10–20% on photos.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_colorMode: {
+    kind: 'fix',
+    icon: Palette,
+    title: 'Only printing in black and white',
+    why: 'Every printer has a setting for "Color" vs "Grayscale / Black Only." If grayscale is on (or colour cartridges are empty), everything comes out black and white.',
+    steps: [
+      'In the Print dialog, click Properties or Preferences (the button near the printer name).',
+      'Look for "Color" / "Grayscale" / "Print in Black & White" — make sure Color is selected.',
+      'Check colour cartridge levels. If any colour is empty, many printers refuse to use colour at all. Replace any that are low.',
+      'On the printer screen: Settings → check for a "Black Only" or "Economy Mode" — turn it off.',
+      'Restart the printer after changing settings.',
+      'Print a colour test page from the printer\'s own menu.',
+    ],
+    ifFails: 'If the printer only prints grayscale even with fresh colour cartridges and Color selected, the colour print head may be broken — see the "one colour missing" path.',
+    proHelp: 'Some printers refuse to print colour when ANY cartridge is low — even if it\'s unrelated. Replace whichever cartridge is lowest and try again.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_driverColor: {
+    kind: 'fix',
+    icon: Wrench,
+    title: 'Swapped colours — usually a driver issue',
+    why: 'When reds come out as greens or blues as yellows, the printer driver is sending the wrong colour data. A driver reinstall almost always fixes it.',
+    steps: [
+      'Download the latest driver for your printer from the manufacturer\'s website.',
+      'Uninstall the current driver. Windows: Settings → Apps → find your printer brand → Uninstall. Mac: System Settings → Printers & Scanners → remove the printer.',
+      'Restart the computer.',
+      'Install the new driver. Follow the installer\'s steps to connect the printer.',
+      'Print a colour test page.',
+      'If colours are still wrong, run the printer\'s built-in colour calibration (Settings → Maintenance → Calibrate Colour).',
+    ],
+    ifFails: 'If swapped colours survive a driver reinstall, try installing an older driver version from the manufacturer\'s archive. Some recent driver updates have colour bugs.',
+    proHelp: 'If one cartridge was installed in the wrong slot, the printer will swap those colours. Open the printer and check each cartridge matches its label (C-M-Y-K).',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  /* ── 10. Error lights ───────────────────────────────────── */
+  errorLights: {
+    kind: 'question',
+    title: 'What do the error lights look like?',
+    icon: AlertTriangle,
+    options: [
+      { label: 'Blinking orange / amber',                emoji: '',  next: 'fix_blinkingAmber' },
+      { label: 'Solid red',                               emoji: '',  next: 'fix_solidRed' },
+      { label: 'Blinking red',                            emoji: '',  next: 'fix_blinkingRed' },
+      { label: 'Error code on the screen',                emoji: '',  next: 'fix_errorCode' },
+    ],
+  },
+
+  fix_blinkingAmber: {
+    kind: 'fix',
+    icon: AlertTriangle,
+    title: 'Blinking amber — usually a warning, not a failure',
+    why: 'Amber blinking means "attention needed but not broken." Almost always: low ink, paper out, or a tray not closed fully.',
+    steps: [
+      'Open the front cover, then close it firmly. A half-latched door is the #1 false alarm.',
+      'Check the paper tray — pull it out and push it back in until it clicks.',
+      'Check for a paper jam — open all covers and look for any stuck sheets.',
+      'Check ink / toner levels. Replace any that show low or empty.',
+      'Look at the printer\'s screen for a specific message — it usually tells you exactly what\'s wrong.',
+      'Turn the printer off, wait 30 seconds, turn back on. Minor glitches clear on restart.',
+    ],
+    ifFails: 'If amber keeps blinking after all checks, the printer may need a firmware update. Install the manufacturer\'s software on your computer and run it with the printer connected — it will update automatically.',
+    proHelp: 'Persistent amber without a clear cause means a hardware sensor is glitching. An older printer isn\'t usually worth the repair.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_solidRed: {
+    kind: 'fix',
+    icon: AlertTriangle,
+    title: 'Solid red — printer is stopped',
+    why: 'Solid red means the printer has stopped and won\'t work until you clear the condition. Usually: paper jam, cartridge problem, or covers not fully closed.',
+    steps: [
+      'Check the printer\'s screen for an error message. Write it down exactly.',
+      'Open every cover — front, top, back — and close each firmly. If any aren\'t latched, red will stay on.',
+      'Check for paper jams. Even a small torn corner will trigger red.',
+      'Check each cartridge is fully clicked into place — sometimes they sit loose after a paper jam removal.',
+      'Turn the printer off, unplug for 60 seconds, plug back in. Many "stuck red" states clear with a full power cycle.',
+      'If red persists, search "[your printer model] solid red light" for model-specific fixes.',
+    ],
+    ifFails: 'If everything looks fine but red stays solid, the printer\'s control board or internal sensor has failed. On home printers, this is a replace-not-repair situation.',
+    proHelp: 'Note the light pattern when you contact support — the exact blink pattern is a code that technicians can decode.',
+    replaceOrRepair: 'Solid red that survives a full reset on a 4+ year-old home printer = replace. New entry-level printers start at $80.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
+  },
+
+  fix_blinkingRed: {
+    kind: 'fix',
+    icon: AlertTriangle,
+    title: 'Blinking red — serious error, but often fixable',
+    why: 'Blinking red usually means a more serious problem than amber — a head clog, a sensor error, or a firmware glitch. Most of the time a full reset and cartridge check will clear it.',
+    steps: [
+      'Turn the printer OFF and unplug it for 60 seconds. This matters — a quick off/on isn\'t a full reset.',
+      'While unplugged, open all covers and check for jams, loose cartridges, or anything clearly wrong.',
+      'Plug back in and turn on. Note what message or code appears.',
+      'Search "[your printer model] blinking red [error code]" to find a model-specific fix.',
+      'If no error code, try running the "restore factory defaults" option from the printer\'s menu — it clears sticky settings.',
+      'Install the latest firmware by running the manufacturer\'s software on your computer while the printer is connected.',
+    ],
+    ifFails: 'If blinking red persists after reset and firmware update, the printer may be reporting a component failure (print head, sensor, or fuser). Repair quotes for major components often exceed the price of a new printer.',
+    proHelp: 'For business-grade printers (Brother MFC, HP OfficeJet Pro, etc.) repair is often worth it. For under-$200 home printers, replacing is usually cheaper.',
+    replaceOrRepair: 'Under-$200 printer with a major error after 3+ years = replace. Business printer ($500+) with the same error = get a repair quote.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  /* ── 11. Out of ink ─────────────────────────────────────── */
+  outOfInk: {
+    kind: 'fix',
+    icon: ShoppingCart,
+    title: 'Replace the ink or toner cartridge',
+    why: 'When a cartridge is truly empty, the only fix is a new one. Shaking or refilling rarely works well on modern printers. Get the right model, install it correctly, and you\'re back in business.',
+    steps: [
+      'Find your printer\'s EXACT model number. Look on the front, inside the lid, or on a sticker on the back. Example: "HP DeskJet 2755e" or "Brother HL-L2350DW."',
+      'Find the cartridge number. It\'s printed on the current cartridge — e.g. "HP 67XL" or "Canon PG-245."',
+      'Shop online: Amazon, Staples, Office Depot, Walmart, or the manufacturer\'s site. Search "[model number] ink cartridge."',
+      'GENUINE cartridges (made by the printer brand) always work. Third-party ("compatible") cartridges are 40–60% cheaper but quality varies — stick with highly-rated brands if you go that route.',
+      'Install: open the printer, remove the old cartridge (press the tab to release), unwrap the new one, REMOVE ALL PROTECTIVE TAPE, push in until it clicks.',
+      'Close the printer and let it run its automatic alignment routine. Print a test page.',
+    ],
+    ifFails: 'If the printer doesn\'t recognise the new cartridge, wipe the gold contacts with a dry lint-free cloth, reseat it, and power-cycle the printer.',
+    proHelp: 'If you print very rarely (less than once a month), consider switching to a laser printer or ink-tank printer (Epson EcoTank, HP Smart Tank). Inkjet cartridges dry out between uses; laser toner doesn\'t.',
+    buying: 'XL or high-yield cartridges print 2–3× more pages than standard — usually the better value. A genuine HP 67XL prints ~240 pages; the standard HP 67 prints ~120 pages for 70% of the price. The XL wins every time. Keep receipts — faulty cartridges can be returned.',
+    replaceOrRepair: 'If a full set of genuine cartridges costs more than half the price of a new printer, buy a new printer. The new one comes with starter cartridges too.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
+  },
+
+  /* ── 12. Duplex ─────────────────────────────────────────── */
+  duplex: {
+    kind: 'question',
+    title: 'What\'s happening with two-sided printing?',
+    icon: Layers,
+    options: [
+      { label: 'Paper jams on the second side',          emoji: '',  next: 'fix_duplexJam' },
+      { label: 'Second side comes out blank',             emoji: '',  next: 'fix_duplexBlank' },
+      { label: 'Pages print upside-down / wrong order',   emoji: '',  next: 'fix_duplexOrientation' },
+      { label: 'My printer doesn\'t do two-sided',        emoji: '',  next: 'fix_manualDuplex' },
+    ],
+  },
+
+  fix_duplexJam: {
+    kind: 'fix',
+    icon: Layers,
+    title: 'Duplex jams — usually the paper is too light or damp',
+    why: 'Duplex printing flips the page through a tight internal path. Thin paper curls, damp paper sticks, and heavy paper gets wedged. A middle-weight dry sheet goes through fine.',
+    steps: [
+      'Use 20 lb / 75 gsm copier paper. Photo paper, card stock, and onion-skin all jam in duplex mode.',
+      'Make sure paper is fresh — humid paper curls during the flip and jams.',
+      'Clean the duplex unit. Most printers have a removable duplex module on the BACK — pull the lever, pop the unit out, look for stuck paper or torn scraps, put it back.',
+      'Reduce the amount of paper in the tray. Duplex works best with less paper loaded, not a fully stuffed tray.',
+      'If the jam happens every time, switch to manual duplex (print odd pages, flip the stack, print even pages) — see next fix.',
+      'Update printer firmware — duplex bugs are often patched.',
+    ],
+    ifFails: 'If duplex jams every time even with fresh paper, the duplex unit has worn rollers. Some printers let you swap the duplex module ($25–$50).',
+    proHelp: 'On business-class printers, duplex is usually reliable. If yours jams constantly, the duplex was an add-on accessory and may not be well-matched.',
+    replaceOrRepair: 'If duplex jams force you to baby every print, and the printer is 3+ years old, upgrade. Modern duplex units are much more reliable.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_duplexBlank: {
+    kind: 'fix',
+    icon: Layers,
+    title: 'Second side blank — check the driver setting',
+    why: 'If the back of each sheet comes out blank, the printer isn\'t actually running duplex — it\'s single-sided but using duplex paper timing. Usually a driver checkbox.',
+    steps: [
+      'In the Print dialog, click Properties or Preferences.',
+      'Look for "Two-Sided," "Duplex," or "Print on Both Sides." Make sure it\'s set to "Long Edge" (normal book) or "Short Edge" (flip top).',
+      'Confirm the printer model supports duplex. Check the spec sheet or press Settings → About on the printer.',
+      'If your printer model doesn\'t do auto-duplex, use manual duplex (print pages 1, 3, 5…, flip, print 2, 4, 6…).',
+      'Some drivers show a "manual duplex" option that prompts you to flip the stack halfway through.',
+      'Update the printer driver if options look missing.',
+    ],
+    ifFails: 'If duplex is enabled but the back is still blank, the ink / toner for one side isn\'t reaching the paper — this is rare but points to an internal mechanical issue. See a pro.',
+    proHelp: 'If duplex was ever working and just stopped, update the firmware. A recent update sometimes breaks the duplex function.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_duplexOrientation: {
+    kind: 'fix',
+    icon: Layers,
+    title: 'Upside-down or wrong-order pages',
+    why: 'Duplex has two binding options: long edge (like a book) and short edge (like a calendar flip). Picking the wrong one makes every other page upside-down.',
+    steps: [
+      'In the Print dialog, look for the "Two-Sided" option with two choices: "Long Edge" and "Short Edge."',
+      'For book-style documents (normal reading), pick LONG EDGE.',
+      'For calendar or notepad style (flip top), pick SHORT EDGE.',
+      'Try printing a 2-page test with each option to see which you want.',
+      'If pages are coming out in reverse order (last page first), look for "Reverse order printing" and turn it OFF.',
+      'Save the chosen setting as your default if the driver offers that option.',
+    ],
+    ifFails: 'If the orientation stays wrong no matter what, the printer driver may be outdated. Reinstall the latest driver from the manufacturer.',
+    proHelp: 'Some programs (especially older Office versions) override the printer driver. Print as PDF first, then print the PDF — that bypasses program quirks.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_manualDuplex: {
+    kind: 'fix',
+    icon: Layers,
+    title: 'Manual duplex — print two-sided on any printer',
+    why: 'Most printers can do two-sided manually even without auto-duplex. It takes an extra step but works fine for occasional double-sided printing.',
+    steps: [
+      'In the Print dialog, find "Print" dropdown or "Pages to Print." Pick "Odd Pages Only."',
+      'Click Print. Pages 1, 3, 5… print.',
+      'Take the printed stack. DO NOT shuffle or flip it end-to-end. Just turn it over top-to-bottom (so the printed side faces down and the top edge stays the same).',
+      'Load the flipped stack back into the paper tray.',
+      'In the Print dialog, choose "Even Pages Only" → Print.',
+      'Watch which way the first sheet feeds and learn the rhythm. Once you\'ve done it twice it\'s easy.',
+    ],
+    ifFails: 'If pages come out in the wrong order, your printer stacks face-up. Try flipping the stack in the OTHER direction — side-to-side instead of top-to-bottom.',
+    proHelp: 'Print one test page first with "Print page 1." Note which side is up when it comes out. That tells you how to flip for the second pass.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  /* ── 13. Scanner ────────────────────────────────────────── */
+  scanner: {
+    kind: 'question',
+    title: 'What happens when you try to scan?',
+    icon: Scan,
+    options: [
+      { label: 'Computer doesn\'t find the scanner',      emoji: '',  next: 'fix_scannerFind' },
+      { label: 'Scanner error message',                    emoji: '',  next: 'fix_scannerError' },
+      { label: 'Scans come out blank or black',            emoji: '',  next: 'fix_scannerBlank' },
+      { label: 'Scans to email aren\'t sending',           emoji: '',  next: 'fix_scanEmail' },
+    ],
+  },
+
+  fix_scannerFind: {
+    kind: 'fix',
+    icon: Scan,
+    title: 'Computer doesn\'t see the scanner',
+    why: 'Most all-in-ones use the same driver for printing and scanning. If the computer can print but not scan, the scanner part of the driver didn\'t install, or the scanner software isn\'t launched.',
+    steps: [
+      'Install the FULL driver package (not just "print driver") from the manufacturer\'s website. Search "[model] full driver" or "[model] software suite."',
+      'Open the manufacturer\'s scanner app — HP Smart, Canon IJ Scan Utility, Epson Scan, Brother iPrint&Scan.',
+      'On Windows: open "Windows Fax and Scan" (search for it in Start). Click "New Scan" and see if your printer appears.',
+      'On Mac: open Image Capture (Applications → Image Capture). Your printer should be in the left panel.',
+      'Make sure the printer is on, connected, and not paused.',
+      'Some printers have a "Scan To Computer" option that has to be enabled from the printer\'s menu or the manufacturer\'s app.',
+    ],
+    ifFails: 'If the scanner still doesn\'t appear, uninstall and reinstall the full printer software. Use the manufacturer\'s "removal tool" if they offer one — a normal uninstall often leaves scanner bits behind.',
+    proHelp: 'On older macOS versions with newer printers (or vice versa), the scanner may not be supported. Check the manufacturer\'s "compatible OS versions" page.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+  },
+
+  fix_scannerError: {
+    kind: 'fix',
+    icon: Scan,
+    title: 'Scanner error — common fixes',
+    why: 'Scanner errors usually mean the mechanism is stuck (transport lock on), the lid is open, or the scanner is trying to talk to the computer but losing the signal.',
+    steps: [
+      'Check the "transport lock" — some printers have a tiny switch next to the scanner glass that locks the scanner during shipping. Make sure it\'s UNLOCKED (in the print position, not shipping position).',
+      'Close the scanner lid fully.',
+      'Turn the printer off, unplug for 60 seconds, plug back in, turn on. A full reset clears most stuck scanner states.',
+      'Make sure nothing is on the scanner bed — a tiny scrap or eraser crumb can jam the sensor.',
+      'Update the printer firmware and driver.',
+      'Try scanning again after the reset.',
+    ],
+    ifFails: 'If the scanner still errors, the scan head may be stuck. Gently lift the scanner lid and look for any obstruction. Never force the scanner mechanism with your hands.',
+    proHelp: 'A scanner that errors with nothing on the bed and no lock engaged needs professional attention — the scan head motor or sensor has failed.',
+    replaceOrRepair: 'On an all-in-one that\'s 4+ years old, a failed scanner is rarely worth repairing. Replacement AIO printers start at $120.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
+  },
+
+  fix_scannerBlank: {
+    kind: 'fix',
+    icon: Scan,
+    title: 'Scans come out blank or black',
+    why: 'Blank or black scans usually mean the document is face-up when it should be face-down, the scanner glass is dirty, or the resolution is set absurdly low.',
+    steps: [
+      'Place the document FACE DOWN on the scanner glass. Line the top-left corner of the document with the corner arrow on the glass.',
+      'Close the lid gently.',
+      'Clean the scanner glass with a soft microfibre cloth and a tiny bit of glass cleaner — NOT sprayed directly. Spray the cloth, then wipe.',
+      'Check scan settings in the scanner software: Resolution should be at least 300 DPI, Color Mode "Color" or "Grayscale" (not monochrome).',
+      'Preview the scan before saving to catch problems early.',
+      'Try scanning a clearly-printed test page — like a magazine cover — to rule out faint-original issues.',
+    ],
+    ifFails: 'If scans are still black, the scanner lamp (the bright bar under the glass) may have failed. Open the lid, press Start Scan, and look for the moving light — if you see no light, the lamp is dead.',
+    proHelp: 'A dead scanner lamp is usually not economical to repair on home printers. Time to replace.',
+    replaceOrRepair: 'Dead scanner lamp on a 3+ year-old home AIO = replace. Lamps cost $40–$80 plus labour to install.',
+    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
+  },
+
+  fix_scanEmail: {
+    kind: 'fix',
+    icon: Scan,
+    title: 'Scan to email not sending',
+    why: 'Scan-to-email works by the printer logging into your email account and sending from there. Most providers (Gmail, Outlook, Yahoo) now require "app passwords" or special settings that printers need configured.',
+    steps: [
+      'Go to the printer\'s embedded web page: open a web browser on your computer and type the printer\'s IP address (find it on the printer\'s Network Settings screen).',
+      'Find "Scan to Email" → "Setup" or "SMTP settings."',
+      'Enter your email provider\'s SMTP info. Gmail: smtp.gmail.com, port 587 or 465. Outlook: smtp-mail.outlook.com, port 587.',
+      'Enter your email address AND an "app password" (NOT your regular email password). Gmail: myaccount.google.com/apppasswords. Outlook has a similar page.',
+      'Test by sending a scan to your own email address. Check the spam folder too.',
+      'If your email provider doesn\'t support SMTP, use "Scan to Folder" or "Scan to Computer" instead — then email from your computer.',
+    ],
+    ifFails: 'If scan-to-email refuses to work after correct app-password setup, your email provider may have blocked "less secure apps" — check your account security settings.',
+    proHelp: 'Scan to Email is the flakiest printer feature. The reliable alternative is Scan to Folder (to a shared network folder) or use the HP Smart / Canon PRINT / Epson Smart Panel app on your phone — scan then send as an email from the app.',
+    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
   },
 };
 
@@ -345,181 +844,293 @@ const QUALITY_OPTIONS = [
 ];
 
 export default function PrinterTroubleshooter() {
-  const [path, setPath] = useState<string[]>(['start']);
+  // History stack — current node is always the last entry. Enables reliable "Back" navigation.
+  const [history, setHistory] = useState<string[]>(['start']);
+  const currentId = history[history.length - 1];
+  const current = tree[currentId];
+  // JSX requires a capitalised local identifier for a component reference.
+  const NodeIcon = current.icon;
 
-  const currentId = path[path.length - 1];
-  const current = TREE[currentId];
+  const goTo = (id: string) => setHistory(h => [...h, id]);
+  const back = () => setHistory(h => (h.length > 1 ? h.slice(0, -1) : h));
+  const reset = () => setHistory(['start']);
 
-  const goTo = (nodeId: string) => {
-    setPath(p => [...p, nodeId]);
-  };
-
-  const goBack = () => {
-    if (path.length > 1) setPath(p => p.slice(0, -1));
-  };
-
-  const restart = () => {
-    setPath(['start']);
-  };
-
-  const isStart = currentId === 'start';
-  const isConnectionChoice = currentId === 'offline_q2';
-  const isQualityChoice = currentId === 'quality_q1';
-
-  const renderMultiChoice = (title: string, options: { label: string; emoji: string; next: string }[]) => (
-    <>
-      <div className="flex items-center gap-2 mb-4">
-        <HelpCircle className="h-5 w-5 text-primary" />
-        <h2 className="text-lg font-semibold">{title}</h2>
-      </div>
-      <div className="space-y-2">
-        {options.map(opt => (
-          <button
-            key={opt.next}
-            onClick={() => goTo(opt.next)}
-            className="w-full flex items-center gap-3 text-left px-4 py-3.5 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
-          >
-            <span className="text-2xl">{opt.emoji}</span>
-            <span className="font-medium text-sm">{opt.label}</span>
-            <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto" />
-          </button>
-        ))}
-      </div>
-    </>
-  );
+  const isRoot = history.length === 1;
+  const crumbCount = history.length;
 
   return (
     <>
       <SEOHead
-        title="Printer Troubleshooter — TekSure"
-        description="Fix your printer problems step by step. Our interactive wizard diagnoses offline printers, paper jams, print quality issues, and ink problems with clear instructions."
+        title="Printer Troubleshooter | TekSure"
+        description="Printer acting up? Answer a couple of simple questions and get clear, step-by-step fixes — won't print, paper jams, WiFi, offline, blank pages, error lights, ink and more. Senior-friendly and 100% plain language."
         path="/tools/printer-troubleshooter"
       />
       <Navbar />
-
-      <main className="min-h-screen bg-background">
-        {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
-          <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3">
-              <div className="p-3 bg-primary/10 rounded-full">
-                <Printer className="h-8 w-8 text-primary" />
-              </div>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Printer Troubleshooter</h1>
-            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-              Answer a few questions and we'll walk you through exactly how to fix your printer.
-            </p>
+      <main id="main-content" className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
+        {/* Header */}
+        <div className="relative">
+          <div className="absolute right-0 top-0">
+            <BookmarkButton
+              type="tool"
+              slug="printer-troubleshooter"
+              title="Printer Troubleshooter"
+              url="/tools/printer-troubleshooter"
+            />
           </div>
-        </section>
+          <div className="flex items-center gap-3 mb-2 pr-14">
+            <div className="rounded-xl bg-primary/10 p-2">
+              <Printer className="h-8 w-8 text-primary" aria-hidden="true" />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold">Printer Troubleshooter</h1>
+          </div>
+          <p className="text-lg text-muted-foreground mb-6">
+            Printer acting up? Pick the symptom, answer a couple of simple questions, and we'll
+            walk you through the fix in plain English. You can go back any time — nothing breaks by
+            trying.
+          </p>
+        </div>
 
-        <div className="container max-w-2xl mx-auto px-4 py-8">
-          {/* Breadcrumb */}
-          {path.length > 1 && (
-            <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-4 flex-wrap">
-              <button onClick={restart} className="hover:text-foreground transition-colors">Start</button>
-              {path.slice(1).map((id, i) => (
-                <span key={id} className="flex items-center gap-1.5">
-                  <ChevronRight className="h-3 w-3" />
-                  <span className={i === path.length - 2 ? 'text-foreground font-medium' : ''}>
-                    {TREE[id]?.statement || TREE[id]?.question?.slice(0, 30) + '…' || id}
-                  </span>
-                </span>
+        {/* Progress / breadcrumb */}
+        {!isRoot && (
+          <div className="mb-6 flex items-center gap-3 flex-wrap">
+            <Button variant="outline" size="sm" onClick={back} className="gap-2">
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Back
+            </Button>
+            <Button variant="ghost" size="sm" onClick={reset} className="gap-2">
+              <Home className="h-4 w-4" aria-hidden="true" /> Start over
+            </Button>
+            <span className="text-sm text-muted-foreground ml-auto">
+              Step {crumbCount}
+            </span>
+          </div>
+        )}
+
+        {/* ─── Question node ─── */}
+        {current.kind === 'question' && (
+          <div>
+            <div className="flex items-start gap-3 mb-2">
+              {NodeIcon && (
+                <div className="shrink-0 rounded-xl bg-primary/10 p-3 mt-1">
+                  <NodeIcon className="h-6 w-6 text-primary" aria-hidden="true" />
+                </div>
+              )}
+              <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
+                {current.title}
+              </h2>
+            </div>
+            {current.subtitle && (
+              <p className="text-base md:text-lg text-muted-foreground mb-5">
+                {current.subtitle}
+              </p>
+            )}
+
+            <div className="grid gap-3" role="list">
+              {current.options.map(opt => (
+                <button
+                  key={opt.next + opt.label}
+                  onClick={() => goTo(opt.next)}
+                  role="listitem"
+                  className="flex items-center gap-4 p-5 rounded-xl border-2 border-border bg-card text-left transition-all hover:border-primary/60 hover:bg-primary/5 focus:border-primary focus:bg-primary/5 focus:outline-none min-h-[72px]"
+                >
+                  {opt.emoji && <span className="text-4xl shrink-0" aria-hidden="true">{opt.emoji}</span>}
+                  <div className="flex-1">
+                    <div className="font-semibold text-lg">{opt.label}</div>
+                    {opt.desc && (
+                      <div className="text-sm text-muted-foreground mt-0.5">{opt.desc}</div>
+                    )}
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true" />
+                </button>
               ))}
             </div>
-          )}
+          </div>
+        )}
 
-          <Card className="border-border shadow-sm">
-            <CardContent className="p-6 md:p-8">
-              {/* Start screen */}
-              {isStart && renderMultiChoice('What\'s happening with your printer?', START_OPTIONS)}
-
-              {/* Connection type multi-choice */}
-              {isConnectionChoice && renderMultiChoice('How is your printer connected?', CONNECTION_OPTIONS)}
-
-              {/* Quality issue type multi-choice */}
-              {isQualityChoice && renderMultiChoice('What does the printed page look like?', QUALITY_OPTIONS)}
-
-              {/* Normal question */}
-              {!isStart && !isConnectionChoice && !isQualityChoice && current?.type === 'question' && (
-                <>
-                  <div className="flex items-center gap-2 mb-2">
-                    <HelpCircle className="h-5 w-5 text-primary" />
-                    <h2 className="text-lg font-semibold leading-snug">{current.question}</h2>
-                  </div>
-                  {current.helpText && (
-                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-4">
-                      <Lightbulb className="h-3.5 w-3.5 text-blue-600 shrink-0 mt-0.5" />
-                      <p className="text-xs text-blue-700 dark:text-blue-300">{current.helpText}</p>
-                    </div>
-                  )}
-                  <div className="grid grid-cols-2 gap-3 mt-4">
-                    <button
-                      onClick={() => current.yesNext && goTo(current.yesNext)}
-                      className="py-4 rounded-xl border-2 border-green-400/60 bg-green-50 dark:bg-green-900/20 hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors font-semibold text-green-700 dark:text-green-300 flex items-center justify-center gap-2"
-                    >
-                      <CheckCircle2 className="h-5 w-5" /> Yes
-                    </button>
-                    <button
-                      onClick={() => current.noNext && goTo(current.noNext)}
-                      className="py-4 rounded-xl border-2 border-red-300/60 bg-red-50 dark:bg-red-900/20 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors font-semibold text-red-600 dark:text-red-300 flex items-center justify-center gap-2"
-                    >
-                      No
-                    </button>
-                  </div>
-                </>
-              )}
-
-              {/* Solution */}
-              {current?.type === 'solution' && (
-                <>
-                  <div className="text-center mb-4">
-                    <div className="text-5xl mb-2">{current.emoji}</div>
-                    <h2 className="text-xl font-bold">{current.statement}</h2>
-                    <p className="text-sm text-muted-foreground mt-1">{current.solution}</p>
-                  </div>
-                  {current.solutionSteps && (
-                    <div className="mt-4">
-                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Steps to follow:</p>
-                      <ol className="space-y-3">
-                        {current.solutionSteps.map((step, i) => (
-                          <li key={i} className="flex gap-3">
-                            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{step}</p>
-                          </li>
-                        ))}
-                      </ol>
-                    </div>
-                  )}
-                  <div className="mt-6 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
-                    <p className="text-xs text-amber-700 dark:text-amber-300">
-                      <strong>Still not working?</strong> Printer problems can sometimes need hands-on help. Try searching for your specific printer model and error message online, or contact us for personalized support.
+        {/* ─── Fix (end state) node ─── */}
+        {current.kind === 'fix' && (
+          <div>
+            {/* Urgent banner — for hot fuser, toner spills, anything safety-critical */}
+            {current.urgent && (
+              <div className="mb-4 rounded-xl border-2 border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-700 p-4">
+                <div className="flex gap-3 items-start">
+                  <AlertTriangle className="h-6 w-6 text-red-700 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold text-red-900 dark:text-red-200 mb-1 uppercase tracking-wide">
+                      Safety first
+                    </p>
+                    <p className="text-base text-red-900/95 dark:text-red-100/95 leading-relaxed">
+                      {current.urgent}
                     </p>
                   </div>
-                  <div className="mt-4 flex gap-3">
-                    <Button variant="outline" onClick={restart} className="gap-2 flex-1">
-                      <RotateCcw className="h-4 w-4" /> Start over
-                    </Button>
-                    <Button asChild className="gap-2 flex-1">
-                      <Link to="/get-help">Get expert help <ChevronRight className="h-4 w-4" /></Link>
-                    </Button>
-                  </div>
-                </>
-              )}
-            </CardContent>
-          </Card>
+                </div>
+              </div>
+            )}
 
-          {/* Back button */}
-          {path.length > 1 && current?.type !== 'solution' && (
-            <div className="mt-3">
-              <Button variant="ghost" size="sm" onClick={goBack} className="gap-1 text-xs text-muted-foreground">
-                <ChevronLeft className="h-3 w-3" /> Previous step
+            {/* Title card */}
+            <div className="flex items-start gap-3 mb-3">
+              {NodeIcon && (
+                <div className="shrink-0 rounded-xl bg-primary/10 p-3 mt-1">
+                  <NodeIcon className="h-6 w-6 text-primary" aria-hidden="true" />
+                </div>
+              )}
+              <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+                {current.title}
+              </h2>
+            </div>
+
+            {/* Why this fix works — BLUE info callout */}
+            <Card className="mb-5 bg-blue-50 dark:bg-blue-950/30 border-blue-200 dark:border-blue-800">
+              <CardContent className="p-4 flex gap-3">
+                <Lightbulb className="h-5 w-5 text-blue-700 dark:text-blue-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <div>
+                  <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-1">Why this works</p>
+                  <p className="text-base text-blue-900/95 dark:text-blue-100/95 leading-relaxed">{current.why}</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Steps */}
+            <Card className="mb-5">
+              <CardContent className="p-5">
+                <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary" aria-hidden="true" />
+                  Follow these steps
+                </h3>
+                <ol className="space-y-3">
+                  {current.steps.map((s, i) => (
+                    <li key={i} className="flex gap-3 text-base leading-relaxed">
+                      <span className="shrink-0 inline-flex items-center justify-center h-7 w-7 rounded-full bg-primary text-primary-foreground font-bold text-sm mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span className="pt-0.5">{s}</span>
+                    </li>
+                  ))}
+                </ol>
+              </CardContent>
+            </Card>
+
+            {/* If this didn't work — AMBER callout */}
+            {current.ifFails && (
+              <Card className="mb-5 bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800">
+                <CardContent className="p-4 flex gap-3">
+                  <RotateCcw className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-semibold text-amber-900 dark:text-amber-300 mb-1">
+                      If this didn't work
+                    </p>
+                    <p className="text-base text-amber-900/95 dark:text-amber-100/95 leading-relaxed">
+                      {current.ifFails}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Pro help — ORANGE callout */}
+            {current.proHelp && (
+              <Card className="mb-5 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-800">
+                <CardContent className="p-4 flex gap-3">
+                  <Wrench className="h-5 w-5 text-orange-700 dark:text-orange-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-semibold text-orange-900 dark:text-orange-300 mb-1">
+                      When to call a professional
+                    </p>
+                    <p className="text-base text-orange-900/95 dark:text-orange-100/95 leading-relaxed">
+                      {current.proHelp}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Replace vs repair — PURPLE callout */}
+            {current.replaceOrRepair && (
+              <Card className="mb-5 bg-purple-50 dark:bg-purple-950/30 border-purple-200 dark:border-purple-800">
+                <CardContent className="p-4 flex gap-3">
+                  <AlertCircle className="h-5 w-5 text-purple-700 dark:text-purple-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-semibold text-purple-900 dark:text-purple-300 mb-1">
+                      Repair or replace?
+                    </p>
+                    <p className="text-base text-purple-900/95 dark:text-purple-100/95 leading-relaxed">
+                      {current.replaceOrRepair}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Buying guidance — SKY-BLUE callout */}
+            {current.buying && (
+              <Card className="mb-5 bg-sky-50 dark:bg-sky-950/30 border-sky-200 dark:border-sky-800">
+                <CardContent className="p-4 flex gap-3">
+                  <ShoppingCart className="h-5 w-5 text-sky-700 dark:text-sky-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-semibold text-sky-900 dark:text-sky-300 mb-1">
+                      Buying ink &amp; supplies
+                    </p>
+                    <p className="text-base text-sky-900/95 dark:text-sky-100/95 leading-relaxed">
+                      {current.buying}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Related guide + Ask TekBrain fallback */}
+            <div className="grid gap-3 sm:grid-cols-2 mb-4">
+              {current.guide && (
+                <Button variant="outline" size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
+                  <Link to={current.guide.to}>
+                    <BookOpen className="h-5 w-5 shrink-0" aria-hidden="true" />
+                    <span className="flex-1">
+                      <span className="block text-xs text-muted-foreground">Related guide</span>
+                      <span className="block font-semibold">{current.guide.label}</span>
+                    </span>
+                    <ExternalLink className="h-4 w-4 shrink-0 opacity-60" aria-hidden="true" />
+                  </Link>
+                </Button>
+              )}
+              <Button size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
+                <Link to="/tekbrain">
+                  <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
+                  <span className="flex-1">
+                    <span className="block text-xs opacity-80">Still stuck?</span>
+                    <span className="block font-semibold">Ask TekBrain</span>
+                  </span>
+                  <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+                </Link>
               </Button>
             </div>
-          )}
-        </div>
-      </main>
 
+            {/* Reassurance */}
+            <Card className="mb-4 bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800">
+              <CardContent className="p-4 flex gap-3">
+                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <div>
+                  <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-1">
+                    You're doing great.
+                  </p>
+                  <p className="text-base text-green-900/95 dark:text-green-100/95 leading-relaxed">
+                    Printer problems feel harder than they are — nearly all of them come down to
+                    cables, cartridges, paper, or a restart. Go back any time if the fix doesn't
+                    match what you see.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="flex flex-wrap gap-3">
+              <Button variant="outline" onClick={back} className="gap-2">
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Back
+              </Button>
+              <Button variant="outline" onClick={reset} className="gap-2">
+                <RotateCcw className="h-4 w-4" aria-hidden="true" /> Start over
+              </Button>
+            </div>
+          </div>
+        )}
+      </main>
       <Footer />
     </>
   );

@@ -1,306 +1,544 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Search, ExternalLink, Eye, Shield, AlertTriangle, UserX } from 'lucide-react';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Progress } from '@/components/ui/progress';
+import {
+  Search, ExternalLink, Shield, AlertTriangle, Eye, Smartphone,
+  Globe, Mail, Phone, Settings, ChevronDown, ChevronUp,
+  CheckCircle2, Fingerprint, Lock, UserX
+} from 'lucide-react';
 
-interface CheckSource {
-  name: string;
-  category: 'people-search' | 'social' | 'search' | 'data-broker' | 'breach';
-  urlTemplate: (input: string) => string;
-  description: string;
-  optOutUrl?: string;
+/* ── Section data ───────────────────────────── */
+interface CheckItem {
+  id: string;
+  label: string;
+  detail?: string;
 }
 
-const SOURCES: CheckSource[] = [
-  // People-search sites (most important for privacy)
+interface ScannerSection {
+  id: string;
+  title: string;
+  icon: React.ElementType;
+  risk: 'Low' | 'Medium' | 'High';
+  whyItMatters: string;
+  steps: string[];
+  checklist: CheckItem[];
+  externalLinks?: { label: string; url: string }[];
+}
+
+const SECTIONS: ScannerSection[] = [
   {
-    name: 'Whitepages',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.whitepages.com/name/${encodeURIComponent(q.replace(/\s+/g, '-'))}`,
-    description: 'Free lookup shows name, age range, address history, relatives, and phone numbers.',
-    optOutUrl: 'https://www.whitepages.com/suppression-requests',
+    id: 'google-yourself',
+    title: '1. Google Yourself',
+    icon: Search,
+    risk: 'High',
+    whyItMatters:
+      'When someone looks you up — a new neighbor, a potential employer, or a scammer — Google is the first place they go. You need to know what they find.',
+    steps: [
+      'Open Google.com in your web browser.',
+      'Type your full name in quotes, like "Jane Smith" and press Enter.',
+      'Look through the first 3 pages of results.',
+      'Note anything that shows your address, phone number, workplace, or photos.',
+      'Try adding your city, like "Jane Smith Dallas" to narrow results.',
+      'Check Google Images too — search your name and click "Images" at the top.',
+    ],
+    checklist: [
+      { id: 'google-searched', label: 'I searched my name on Google' },
+      { id: 'google-images', label: 'I checked Google Images for my name' },
+      { id: 'google-reviewed', label: 'I reviewed the first 3 pages of results' },
+    ],
+    externalLinks: [
+      { label: 'Open Google', url: 'https://www.google.com' },
+      { label: 'Request removal from Google', url: 'https://support.google.com/websearch/troubleshooter/9685456' },
+    ],
   },
   {
-    name: 'Spokeo',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.spokeo.com/${encodeURIComponent(q.replace(/\s+/g, '-'))}`,
-    description: 'Aggregates public records, social profiles, and contact info.',
-    optOutUrl: 'https://www.spokeo.com/optout',
+    id: 'social-media-privacy',
+    title: '2. Check Your Social Media Privacy',
+    icon: Eye,
+    risk: 'High',
+    whyItMatters:
+      'Social media profiles often reveal your birthday, location, family members, workplace, and daily habits. Scammers use this information to make their attacks more convincing.',
+    steps: [
+      'Facebook: Go to Settings > Privacy. Set "Who can see your future posts?" to "Friends."',
+      'Facebook: Under "How people find and contact you," limit who can look you up by email or phone number.',
+      'Facebook: Use the "View As" feature (Settings > Timeline) to see what strangers see.',
+      'Instagram: Go to Settings > Privacy > Account Privacy and turn on "Private Account."',
+      'X (Twitter): Go to Settings > Privacy and Safety > Protect your Tweets.',
+      'LinkedIn: Go to Settings > Visibility and review who can see your connections and email.',
+    ],
+    checklist: [
+      { id: 'fb-privacy', label: 'I checked my Facebook privacy settings' },
+      { id: 'fb-view-as', label: 'I used "View As" to see my public Facebook profile' },
+      { id: 'ig-private', label: 'I reviewed my Instagram privacy settings' },
+      { id: 'linkedin-visibility', label: 'I reviewed my LinkedIn visibility settings' },
+    ],
+    externalLinks: [
+      { label: 'Facebook Privacy Settings', url: 'https://www.facebook.com/settings?tab=privacy' },
+      { label: 'Instagram Privacy Settings', url: 'https://www.instagram.com/accounts/privacy_and_security/' },
+      { label: 'LinkedIn Visibility Settings', url: 'https://www.linkedin.com/mypreferences/d/categories/visibility' },
+    ],
   },
   {
-    name: 'BeenVerified',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.beenverified.com/people/${encodeURIComponent(q.replace(/\s+/g, '-'))}/`,
-    description: 'Paid service but free preview reveals existence of criminal records, addresses, phones.',
-    optOutUrl: 'https://www.beenverified.com/app/optout/search',
+    id: 'data-brokers',
+    title: '3. Check Data Broker Sites',
+    icon: UserX,
+    risk: 'High',
+    whyItMatters:
+      'Data broker websites collect and publish your name, address, phone number, age, relatives, and more — all publicly searchable by anyone. These are the biggest sources of exposed personal information.',
+    steps: [
+      'Visit each site below and search for your name.',
+      'If you find yourself listed, use the "Opt Out" link to request removal.',
+      'Most removals take 2–4 weeks to process.',
+      'Check back in 3–6 months — your data often reappears and you may need to opt out again.',
+      'Consider a paid removal service (DeleteMe, Incogni, Kanary) if you want ongoing protection.',
+    ],
+    checklist: [
+      { id: 'spokeo-check', label: 'I checked Spokeo', detail: 'One of the largest people-search engines' },
+      { id: 'whitepages-check', label: 'I checked WhitePages', detail: 'Shows address history and relatives' },
+      { id: 'beenverified-check', label: 'I checked BeenVerified', detail: 'Background check aggregator' },
+      { id: 'truepeoplesearch-check', label: 'I checked TruePeopleSearch', detail: 'Completely free — often very detailed' },
+      { id: 'radaris-check', label: 'I checked Radaris', detail: 'Often has property and relative data' },
+      { id: 'opted-out', label: 'I submitted opt-out requests for sites that had my info' },
+    ],
+    externalLinks: [
+      { label: 'Spokeo (search)', url: 'https://www.spokeo.com' },
+      { label: 'Spokeo (opt out)', url: 'https://www.spokeo.com/optout' },
+      { label: 'WhitePages (search)', url: 'https://www.whitepages.com' },
+      { label: 'WhitePages (opt out)', url: 'https://www.whitepages.com/suppression-requests' },
+      { label: 'BeenVerified (opt out)', url: 'https://www.beenverified.com/app/optout/search' },
+      { label: 'TruePeopleSearch (removal)', url: 'https://www.truepeoplesearch.com/removal' },
+      { label: 'Radaris (opt out)', url: 'https://radaris.com/control/privacy' },
+    ],
   },
   {
-    name: 'Intelius',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.intelius.com/people-search/${encodeURIComponent(q.replace(/\s+/g, '-'))}`,
-    description: 'Background check aggregator. Uses public records and social profiles.',
-    optOutUrl: 'https://www.intelius.com/opt-out',
+    id: 'email-breaches',
+    title: '4. Review Your Email Breach History',
+    icon: Mail,
+    risk: 'High',
+    whyItMatters:
+      'Billions of passwords and email addresses have been stolen in data breaches over the years. If your email was in a breach, hackers may have your old passwords — and many people reuse the same password on multiple sites.',
+    steps: [
+      'Go to haveibeenpwned.com (this is a trusted, free security tool run by a respected researcher).',
+      'Type your email address and click "pwned?"',
+      'Review the list of breaches your email appeared in.',
+      'For each breached site: change your password immediately if you still use it.',
+      'If you use the same password on multiple sites, change all of them.',
+      'Consider using a password manager to create strong, unique passwords.',
+    ],
+    checklist: [
+      { id: 'hibp-checked', label: 'I checked my primary email on Have I Been Pwned' },
+      { id: 'hibp-secondary', label: 'I checked any secondary or older email addresses too' },
+      { id: 'passwords-changed', label: 'I changed passwords for any breached accounts I still use' },
+    ],
+    externalLinks: [
+      { label: 'Have I Been Pwned', url: 'https://haveibeenpwned.com/' },
+      { label: 'Firefox Monitor (alternative)', url: 'https://monitor.firefox.com/' },
+    ],
   },
   {
-    name: 'Radaris',
-    category: 'people-search',
-    urlTemplate: (q) => `https://radaris.com/ng/search?ff=${encodeURIComponent(q)}`,
-    description: 'Often has the most detailed records — including properties owned and relatives.',
-    optOutUrl: 'https://radaris.com/control/privacy',
+    id: 'phone-exposure',
+    title: '5. Check Your Phone Number Exposure',
+    icon: Phone,
+    risk: 'Medium',
+    whyItMatters:
+      'If your phone number is publicly available, scammers can use it for robocalls, phishing texts, and SIM-swap attacks (where they take over your phone number to access your bank accounts).',
+    steps: [
+      'Search your phone number (with area code) on Google in quotes, like "(555) 123-4567".',
+      'Check if your number appears on any people-search sites (from Step 3).',
+      'Review who has your phone number: is it listed on any social media profiles?',
+      'Check if your number is on the National Do Not Call Registry.',
+      'Consider using a Google Voice number for public-facing registrations instead of your real number.',
+    ],
+    checklist: [
+      { id: 'phone-googled', label: 'I searched my phone number on Google' },
+      { id: 'phone-social', label: 'I checked if my number is visible on social media' },
+      { id: 'phone-dncr', label: 'I verified my number is on the Do Not Call Registry' },
+    ],
+    externalLinks: [
+      { label: 'Do Not Call Registry', url: 'https://www.donotcall.gov/' },
+      { label: 'Google Voice (free number)', url: 'https://voice.google.com/' },
+    ],
   },
   {
-    name: 'TruePeopleSearch',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.truepeoplesearch.com/results?name=${encodeURIComponent(q)}`,
-    description: 'Completely free. Includes current address, phone numbers, and relatives.',
-    optOutUrl: 'https://www.truepeoplesearch.com/removal',
+    id: 'app-permissions',
+    title: '6. Review App Permissions on Your Phone',
+    icon: Smartphone,
+    risk: 'Medium',
+    whyItMatters:
+      'Many apps request access to your camera, microphone, contacts, and location — even when they don\'t need it. A flashlight app doesn\'t need your contacts list. Reviewing permissions helps you limit who has access to your personal data.',
+    steps: [
+      'iPhone: Go to Settings > Privacy & Security. Tap each category (Location, Contacts, Photos, etc.) to see which apps have access.',
+      'iPhone: Turn off access for any app that doesn\'t need it.',
+      'Android: Go to Settings > Privacy > Permission Manager. Review each category.',
+      'Android: For each permission, tap it to see which apps have access and revoke unnecessary ones.',
+      'Pay special attention to: Location, Camera, Microphone, Contacts, and Photos.',
+      'If an app stops working after you remove a permission, you can always turn it back on.',
+    ],
+    checklist: [
+      { id: 'perms-location', label: 'I reviewed which apps have location access' },
+      { id: 'perms-camera', label: 'I reviewed camera and microphone permissions' },
+      { id: 'perms-contacts', label: 'I reviewed contacts and photos permissions' },
+      { id: 'perms-revoked', label: 'I turned off permissions for apps that don\'t need them' },
+    ],
+    externalLinks: [],
   },
   {
-    name: 'FastPeopleSearch',
-    category: 'people-search',
-    urlTemplate: (q) => `https://www.fastpeoplesearch.com/name/${encodeURIComponent(q.replace(/\s+/g, '_'))}`,
-    description: 'Same data as TruePeopleSearch — both owned by the same company.',
-    optOutUrl: 'https://www.fastpeoplesearch.com/removal',
-  },
-  // Search engines
-  {
-    name: 'Google',
-    category: 'search',
-    urlTemplate: (q) => `https://www.google.com/search?q=%22${encodeURIComponent(q)}%22`,
-    description: 'Search your full name in quotes — shows the most indexed mentions of you online.',
-  },
-  {
-    name: 'Google Images',
-    category: 'search',
-    urlTemplate: (q) => `https://www.google.com/search?q=%22${encodeURIComponent(q)}%22&tbm=isch`,
-    description: 'Photos of you publicly available — profile pictures, tagged photos, event photos.',
-  },
-  {
-    name: 'DuckDuckGo',
-    category: 'search',
-    urlTemplate: (q) => `https://duckduckgo.com/?q=%22${encodeURIComponent(q)}%22`,
-    description: 'Different algorithm than Google. Often surfaces results Google hides.',
-  },
-  {
-    name: 'Bing',
-    category: 'search',
-    urlTemplate: (q) => `https://www.bing.com/search?q=%22${encodeURIComponent(q)}%22`,
-    description: 'Microsoft\'s search. Better for LinkedIn and work-related results.',
-  },
-  // Social media
-  {
-    name: 'Facebook',
-    category: 'social',
-    urlTemplate: (q) => `https://www.facebook.com/search/people/?q=${encodeURIComponent(q)}`,
-    description: 'Even with a private profile, your name and photo may be visible.',
-  },
-  {
-    name: 'LinkedIn',
-    category: 'social',
-    urlTemplate: (q) => `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(q)}`,
-    description: 'Profiles are often public by default — includes job history and connections.',
-  },
-  {
-    name: 'Instagram',
-    category: 'social',
-    urlTemplate: (q) => `https://www.google.com/search?q=site:instagram.com+%22${encodeURIComponent(q)}%22`,
-    description: 'Instagram doesn\'t allow direct name search from search engines — use Google.',
-  },
-  {
-    name: 'X (Twitter)',
-    category: 'social',
-    urlTemplate: (q) => `https://twitter.com/search?q=${encodeURIComponent(q)}&src=typed_query&f=user`,
-    description: 'User search. Old tweets may reveal personal info.',
-  },
-  // Breach checks
-  {
-    name: 'Have I Been Pwned',
-    category: 'breach',
-    urlTemplate: () => `https://haveibeenpwned.com/`,
-    description: 'Check if your email was exposed in a data breach. Enter email on their site.',
-  },
-  {
-    name: 'Firefox Monitor',
-    category: 'breach',
-    urlTemplate: () => `https://monitor.firefox.com/`,
-    description: 'Mozilla\'s free breach checker — same data as HIBP with cleaner interface.',
-  },
-  // Data brokers (less public but important)
-  {
-    name: 'MyLife',
-    category: 'data-broker',
-    urlTemplate: (q) => `https://www.mylife.com/search-results?fn=${encodeURIComponent(q.split(' ')[0] || '')}&ln=${encodeURIComponent(q.split(' ').slice(1).join(' '))}`,
-    description: 'Publishes "reputation scores" based on public data — often misleading.',
-    optOutUrl: 'https://www.mylife.com/ci/optout',
-  },
-  {
-    name: 'PeopleFinders',
-    category: 'data-broker',
-    urlTemplate: (q) => `https://www.peoplefinders.com/people/${encodeURIComponent(q.replace(/\s+/g, '-'))}`,
-    description: 'Paid report service. Free preview confirms your data is listed.',
-    optOutUrl: 'https://www.peoplefinders.com/opt-out',
+    id: 'google-account',
+    title: '7. Check What Google Knows About You',
+    icon: Globe,
+    risk: 'Medium',
+    whyItMatters:
+      'If you use Google (Gmail, Google Maps, Chrome, YouTube, or an Android phone), Google has been collecting data about your searches, location history, YouTube watches, and more — often for years. You can see and delete this data.',
+    steps: [
+      'Go to myaccount.google.com and sign in.',
+      'Click "Data & Privacy" in the left menu.',
+      'Under "History settings," click "Web & App Activity" — this shows everything you\'ve searched.',
+      'Click "Location History" to see everywhere Google has tracked you.',
+      'Click "YouTube History" to see your watch and search history.',
+      'To delete old data: click "Auto-delete" and set it to delete after 3 months or 18 months.',
+      'Under "Ads personalization," you can see the profile Google has built about you.',
+    ],
+    checklist: [
+      { id: 'google-activity', label: 'I reviewed my Google Web & App Activity' },
+      { id: 'google-location', label: 'I checked my Google Location History' },
+      { id: 'google-autodelete', label: 'I set up auto-delete for old activity' },
+      { id: 'google-ads', label: 'I reviewed my Google ad personalization profile' },
+    ],
+    externalLinks: [
+      { label: 'Google My Account', url: 'https://myaccount.google.com/' },
+      { label: 'Google Activity Controls', url: 'https://myaccount.google.com/activitycontrols' },
+      { label: 'Google Ad Settings', url: 'https://adssettings.google.com/' },
+    ],
   },
 ];
 
-const CATEGORY_META = {
-  'people-search': { label: 'People-Search Sites', icon: UserX, color: 'text-red-600', description: 'These sell your name, address, phone, and relatives. Highest priority to opt out of.' },
-  'search': { label: 'Search Engines', icon: Search, color: 'text-blue-600', description: 'See what shows up when someone googles you.' },
-  'social': { label: 'Social Media', icon: Eye, color: 'text-purple-600', description: 'Check your public footprint on the major platforms.' },
-  'breach': { label: 'Data Breaches', icon: AlertTriangle, color: 'text-amber-600', description: 'Has your information been exposed in a hacking incident?' },
-  'data-broker': { label: 'Data Brokers', icon: Shield, color: 'text-slate-600', description: 'Companies that aggregate and sell your personal data.' },
-};
+/* ── Risk badge colors ──────────────────────── */
+function riskColor(risk: 'Low' | 'Medium' | 'High') {
+  switch (risk) {
+    case 'High':
+      return 'bg-red-100 text-red-800 border-red-300 dark:bg-red-950 dark:text-red-300 dark:border-red-800';
+    case 'Medium':
+      return 'bg-amber-100 text-amber-800 border-amber-300 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800';
+    case 'Low':
+      return 'bg-green-100 text-green-800 border-green-300 dark:bg-green-950 dark:text-green-300 dark:border-green-800';
+  }
+}
 
+function riskIcon(risk: 'Low' | 'Medium' | 'High') {
+  switch (risk) {
+    case 'High':
+      return <AlertTriangle className="w-4 h-4" />;
+    case 'Medium':
+      return <Shield className="w-4 h-4" />;
+    case 'Low':
+      return <CheckCircle2 className="w-4 h-4" />;
+  }
+}
+
+/* ── Component ──────────────────────────────── */
 export default function DigitalFootprintScanner() {
-  const [name, setName] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [checked, setChecked] = useState<Record<string, boolean>>({});
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({ 'google-yourself': true });
 
-  const handleScan = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (name.trim()) setSubmitted(true);
+  const allCheckItems = useMemo(
+    () => SECTIONS.flatMap((s) => s.checklist.map((c) => c.id)),
+    []
+  );
+  const totalItems = allCheckItems.length;
+  const completedItems = allCheckItems.filter((id) => checked[id]).length;
+  const progressPct = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
+
+  const sectionCompletion = (section: ScannerSection) => {
+    const ids = section.checklist.map((c) => c.id);
+    const done = ids.filter((id) => checked[id]).length;
+    return { done, total: ids.length, complete: done === ids.length && ids.length > 0 };
+  };
+
+  const toggle = (id: string) =>
+    setChecked((prev) => ({ ...prev, [id]: !prev[id] }));
+
+  const toggleSection = (id: string) =>
+    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
+
+  /* Summary recommendations based on what's NOT checked */
+  const getRecommendations = () => {
+    const recs: string[] = [];
+    if (!checked['google-searched']) recs.push('Search your name on Google to see what\'s publicly visible about you.');
+    if (!checked['fb-privacy']) recs.push('Lock down your Facebook privacy settings — they\'re often set to "Public" by default.');
+    if (!checked['spokeo-check'] || !checked['whitepages-check'])
+      recs.push('Check the major data broker sites and submit opt-out requests to remove your personal information.');
+    if (!checked['hibp-checked']) recs.push('Check if your email has been in any data breaches at haveibeenpwned.com.');
+    if (!checked['phone-googled']) recs.push('Search your phone number on Google to see if it\'s publicly listed anywhere.');
+    if (!checked['perms-location']) recs.push('Review the app permissions on your phone — many apps have access they don\'t need.');
+    if (!checked['google-activity']) recs.push('Review what Google has collected about your activity and set up auto-delete.');
+    if (recs.length === 0) recs.push('Great work! You\'ve completed all the checks. Consider revisiting every 3–6 months, as data brokers often re-list your information.');
+    return recs;
   };
 
   return (
     <>
       <SEOHead
-        title="Digital Footprint Scanner — What's Public About You Online?"
-        description="Free tool that shows you where to check what's publicly visible about you on the internet. Includes opt-out links for people-search sites."
+        title="Digital Footprint Scanner — Check What's Public About You Online"
+        description="Free guided checklist that walks you through checking your online exposure. Find out what personal information is publicly available and learn how to remove it."
         path="/tools/digital-footprint-scanner"
       />
       <Navbar />
       <main className="min-h-screen bg-background">
+        {/* ── Header ──────────────────────────── */}
         <section className="border-b border-border bg-muted/30">
-          <div className="container py-10 md:py-14">
+          <div className="container py-10 md:py-14 relative">
+            <div className="absolute top-6 right-6">
+              <BookmarkButton
+                type="tool"
+                slug="digital-footprint-scanner"
+                title="Digital Footprint Scanner"
+                url="/tools/digital-footprint-scanner"
+              />
+            </div>
             <div className="flex items-center gap-2 mb-4">
-              <Eye className="w-5 h-5 text-primary" />
+              <Fingerprint className="w-5 h-5 text-primary" />
               <Badge variant="outline" className="text-xs">Privacy</Badge>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Digital Footprint Scanner</h1>
-            <p className="text-muted-foreground max-w-2xl">
-              See what the internet knows about you. We'll give you direct links to the biggest people-search sites, search engines, and data brokers — plus instructions to remove yourself from each.
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 pr-14">Digital Footprint Scanner</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+              This guided checklist walks you through checking what personal information is publicly
+              available about you online — and shows you how to remove it. Work through each section
+              at your own pace.
             </p>
           </div>
         </section>
 
-        <section className="container py-10 md:py-14">
-          <form onSubmit={handleScan} className="max-w-xl mb-10">
-            <Label htmlFor="name" className="text-base mb-2 block">Your full name</Label>
-            <div className="flex gap-2">
-              <Input
-                id="name"
-                placeholder="e.g. Jane Smith"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="text-base"
-              />
-              <Button type="submit" size="lg">
-                <Search className="w-4 h-4 mr-2" />Scan
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              Your name is only used to generate search links — we never send it to any server or save it.
-            </p>
-          </form>
+        {/* ── Important notice ────────────────── */}
+        <section className="container pt-8 pb-2">
+          <Card className="border-blue-500/40 bg-blue-50/50 dark:bg-blue-950/20">
+            <CardContent className="p-5 flex items-start gap-3">
+              <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-lg mb-1">This is an educational tool — not an actual scanner</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  We don't collect or scan any of your data. This checklist gives you step-by-step
+                  instructions to check your own exposure on real websites. Your progress is saved
+                  only in your browser and is never sent anywhere.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
-          {submitted && (
-            <>
-              <Card className="mb-8 border-amber-500/40 bg-amber-50/50 dark:bg-amber-950/20">
-                <CardContent className="p-5 flex items-start gap-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-semibold mb-1">This opens links in new tabs</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Each button below opens a search on a different site. Work through them one by one to see what's out there. Prepare for a surprise — most Americans have more data exposed than they realize.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+        {/* ── Progress bar ────────────────────── */}
+        <section className="container py-6">
+          <Card>
+            <CardContent className="p-5">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-xl font-semibold">Your Progress</h2>
+                <span className="text-lg font-bold text-primary">
+                  {completedItems} / {totalItems} checks completed
+                </span>
+              </div>
+              <Progress value={progressPct} className="h-4 mb-2" />
+              <p className="text-sm text-muted-foreground">
+                {progressPct === 100
+                  ? 'All done! Scroll down for your personalized recommendations.'
+                  : progressPct > 50
+                    ? 'You\'re more than halfway there — keep going!'
+                    : 'Take your time. Each section helps protect your privacy.'}
+              </p>
+            </CardContent>
+          </Card>
+        </section>
 
-              {Object.entries(CATEGORY_META).map(([catKey, meta]) => {
-                const Icon = meta.icon;
-                const items = SOURCES.filter(s => s.category === catKey);
-                return (
-                  <div key={catKey} className="mb-8">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className={`p-2 rounded-md bg-muted ${meta.color}`}>
-                        <Icon className="w-5 h-5" />
+        {/* ── Sections ────────────────────────── */}
+        <section className="container pb-10 space-y-4">
+          {SECTIONS.map((section) => {
+            const { done, total, complete } = sectionCompletion(section);
+            const isExpanded = expanded[section.id] ?? false;
+            const Icon = section.icon;
+
+            return (
+              <Card
+                key={section.id}
+                className={complete ? 'border-green-500/40 bg-green-50/30 dark:bg-green-950/10' : ''}
+              >
+                <CardContent className="p-0">
+                  {/* Section header — clickable to expand/collapse */}
+                  <button
+                    onClick={() => toggleSection(section.id)}
+                    className="w-full flex items-center gap-4 p-5 text-left hover:bg-muted/30 transition-colors rounded-t-lg"
+                  >
+                    <div
+                      className={`p-3 rounded-lg shrink-0 ${
+                        complete
+                          ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                          : 'bg-primary/10 text-primary'
+                      }`}
+                    >
+                      {complete ? (
+                        <CheckCircle2 className="w-6 h-6" />
+                      ) : (
+                        <Icon className="w-6 h-6" />
+                      )}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <h3 className="text-xl font-semibold">{section.title}</h3>
+                        <span
+                          className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-sm font-medium border ${riskColor(section.risk)}`}
+                        >
+                          {riskIcon(section.risk)}
+                          {section.risk} Risk
+                        </span>
                       </div>
-                      <div>
-                        <h3 className="text-xl font-semibold">{meta.label}</h3>
-                        <p className="text-sm text-muted-foreground">{meta.description}</p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {done} of {total} checks completed
+                      </p>
+                    </div>
+                    {isExpanded ? (
+                      <ChevronUp className="w-5 h-5 text-muted-foreground shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-muted-foreground shrink-0" />
+                    )}
+                  </button>
+
+                  {/* Expanded content */}
+                  {isExpanded && (
+                    <div className="px-5 pb-5 border-t border-border">
+                      {/* Why it matters */}
+                      <div className="mt-5 mb-5 p-4 bg-muted/40 rounded-lg">
+                        <h4 className="font-semibold text-base mb-2 flex items-center gap-2">
+                          <AlertTriangle className="w-4 h-4 text-amber-600" />
+                          Why This Matters
+                        </h4>
+                        <p className="text-base text-muted-foreground leading-relaxed">
+                          {section.whyItMatters}
+                        </p>
+                      </div>
+
+                      {/* Step-by-step instructions */}
+                      <div className="mb-5">
+                        <h4 className="font-semibold text-base mb-3">Step-by-Step Instructions</h4>
+                        <ol className="space-y-2">
+                          {section.steps.map((step, i) => (
+                            <li key={i} className="flex items-start gap-3">
+                              <span className="shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary text-sm font-bold flex items-center justify-center mt-0.5">
+                                {i + 1}
+                              </span>
+                              <p className="text-base leading-relaxed">{step}</p>
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+
+                      {/* External links */}
+                      {section.externalLinks && section.externalLinks.length > 0 && (
+                        <div className="mb-5 flex flex-wrap gap-2">
+                          {section.externalLinks.map((link) => (
+                            <Button key={link.url} variant="outline" size="sm" asChild>
+                              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                {link.label}
+                                <ExternalLink className="w-3 h-3 ml-1.5" />
+                              </a>
+                            </Button>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Checklist */}
+                      <div className="border-t border-border pt-4">
+                        <h4 className="font-semibold text-base mb-3 flex items-center gap-2">
+                          <Settings className="w-4 h-4" />
+                          Mark What You've Checked
+                        </h4>
+                        <div className="space-y-3">
+                          {section.checklist.map((item) => (
+                            <label
+                              key={item.id}
+                              className="flex items-start gap-3 cursor-pointer group"
+                            >
+                              <Checkbox
+                                checked={checked[item.id] ?? false}
+                                onCheckedChange={() => toggle(item.id)}
+                                className="mt-1 h-5 w-5"
+                              />
+                              <div>
+                                <span
+                                  className={`text-base leading-relaxed ${
+                                    checked[item.id]
+                                      ? 'line-through text-muted-foreground'
+                                      : 'text-foreground'
+                                  }`}
+                                >
+                                  {item.label}
+                                </span>
+                                {item.detail && (
+                                  <p className="text-sm text-muted-foreground mt-0.5">{item.detail}</p>
+                                )}
+                              </div>
+                            </label>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {items.map((src) => (
-                        <Card key={src.name}>
-                          <CardContent className="p-4">
-                            <div className="flex items-start justify-between gap-2 mb-2">
-                              <h4 className="font-semibold">{src.name}</h4>
-                              {src.optOutUrl && <Badge variant="outline" className="text-xs">Opt-out available</Badge>}
-                            </div>
-                            <p className="text-xs text-muted-foreground mb-3 leading-relaxed">{src.description}</p>
-                            <div className="flex gap-2 flex-wrap">
-                              <Button size="sm" asChild>
-                                <a href={src.urlTemplate(name)} target="_blank" rel="noopener noreferrer">
-                                  Check <ExternalLink className="w-3 h-3 ml-1" />
-                                </a>
-                              </Button>
-                              {src.optOutUrl && (
-                                <Button size="sm" variant="outline" asChild>
-                                  <a href={src.optOutUrl} target="_blank" rel="noopener noreferrer">
-                                    Opt out
-                                  </a>
-                                </Button>
-                              )}
-                            </div>
-                          </CardContent>
-                        </Card>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
-
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="p-5">
-                  <h3 className="font-semibold mb-2">Want help removing yourself?</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Going through each site manually takes 3–5 hours total. Or use a paid service that does it for you:
-                  </p>
-                  <ul className="space-y-1 text-sm text-muted-foreground mb-3">
-                    <li>• <strong>DeleteMe</strong> ($129/year) — most popular, removes you from 30+ sites and keeps you off</li>
-                    <li>• <strong>Kanary</strong> ($100/year) — similar, slightly cheaper</li>
-                    <li>• <strong>Incogni</strong> ($6.50/month) — subscription, covers EU + US brokers</li>
-                  </ul>
-                  <p className="text-xs text-muted-foreground">
-                    These services are not affiliated with TekSure. Your data re-appears every 6-12 months, so removal is ongoing work.
-                  </p>
+                  )}
                 </CardContent>
               </Card>
-            </>
-          )}
+            );
+          })}
 
-          {!submitted && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
-              <Card><CardContent className="p-5">
-                <div className="text-2xl font-bold mb-1">{SOURCES.filter(s => s.category === 'people-search').length}</div>
-                <div className="text-sm text-muted-foreground">People-search sites checked</div>
-              </CardContent></Card>
-              <Card><CardContent className="p-5">
-                <div className="text-2xl font-bold mb-1">{SOURCES.filter(s => s.optOutUrl).length}</div>
-                <div className="text-sm text-muted-foreground">Direct opt-out links provided</div>
-              </CardContent></Card>
-              <Card><CardContent className="p-5">
-                <div className="text-2xl font-bold mb-1">5</div>
-                <div className="text-sm text-muted-foreground">Categories of exposure</div>
-              </CardContent></Card>
-            </div>
-          )}
+          {/* ── Summary / Recommendations ──── */}
+          <Card className="mt-8 bg-primary/5 border-primary/20">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                <Shield className="w-6 h-6 text-primary" />
+                Your Personalized Recommendations
+              </h2>
+              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
+                Based on the checks you haven't completed yet, here's what to focus on:
+              </p>
+              <div className="space-y-3">
+                {getRecommendations().map((rec, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3 bg-background rounded-lg">
+                    <span className="shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary text-sm font-bold flex items-center justify-center mt-0.5">
+                      {i + 1}
+                    </span>
+                    <p className="text-base leading-relaxed">{rec}</p>
+                  </div>
+                ))}
+              </div>
+
+              {progressPct === 100 && (
+                <div className="mt-6 p-4 bg-green-100 dark:bg-green-950 border border-green-300 dark:border-green-800 rounded-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-300" />
+                    <h3 className="font-semibold text-green-800 dark:text-green-200">
+                      All Checks Complete!
+                    </h3>
+                  </div>
+                  <p className="text-base text-green-700 dark:text-green-300 leading-relaxed">
+                    You've gone through every section of the Digital Footprint Scanner. Set a
+                    reminder to come back and check again in 3–6 months — data brokers often
+                    re-list your information over time.
+                  </p>
+                </div>
+              )}
+
+              <div className="mt-6 p-4 bg-muted/40 rounded-lg">
+                <h4 className="font-semibold mb-2">Want ongoing protection?</h4>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Going through each data broker site manually takes 3–5 hours and needs to be
+                  repeated every few months. Paid removal services handle this automatically:
+                  DeleteMe ($129/year), Kanary ($100/year), or Incogni ($6.50/month). These
+                  services are not affiliated with TekSure.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </section>
       </main>
       <Footer />

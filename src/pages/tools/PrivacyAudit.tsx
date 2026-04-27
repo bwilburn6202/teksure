@@ -2,28 +2,40 @@ import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { PageBreadcrumb } from '@/components/PageBreadcrumb';
+import { BookmarkButton } from '@/components/BookmarkButton';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Progress } from '@/components/ui/progress';
-import { Shield, ChevronDown, ChevronUp, ExternalLink, Printer, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+  ShieldCheck, ExternalLink, Lock, CheckCircle2, ArrowLeft,
+  Facebook, Apple, Smartphone, Globe, Info, BookOpen,
+} from 'lucide-react';
 
-interface PrivacySetting {
+/* ── Types ─────────────────────────────────────── */
+interface PrivacyCheck {
   id: string;
   label: string;
-  why: string;
-  link?: string;
-  linkLabel?: string;
+  where: string;         // Plain-English path like "Settings > Privacy > Face ID"
+  link?: string;         // Direct https:// link when available
+  why: string;           // 2–3 sentences on why it matters
 }
 
-interface Platform {
-  id: string;
-  name: string;
-  icon: string;
-  settings: PrivacySetting[];
+interface ServiceSection {
+  id: 'facebook' | 'google' | 'apple' | 'iphone' | 'android';
+  title: string;
+  tagline: string;
+  icon: React.ElementType;
+  color: string;          // Tailwind classes for the tile background
+  guide?: { label: string; to: string };
+  checks: PrivacyCheck[];
 }
 
-const platforms: Platform[] = [
+/* ── Service data ──────────────────────────────── */
+const SERVICES: ServiceSection[] = [
+  /* ── Facebook ───────────────────────────────── */
   {
     id: 'iphone', name: 'iPhone', icon: '',
     settings: [
@@ -39,6 +51,8 @@ const platforms: Platform[] = [
       { id: 'ip-lock-screen', label: 'Review what shows on your lock screen', why: 'Message previews on your lock screen can expose private information to anyone who picks up your phone.' },
     ],
   },
+
+  /* ── Google ─────────────────────────────────── */
   {
     id: 'android', name: 'Android', icon: '',
     settings: [
@@ -54,6 +68,8 @@ const platforms: Platform[] = [
       { id: 'an-install', label: 'Make sure "Install unknown apps" is turned off', why: 'This prevents apps from being installed outside the Google Play Store.' },
     ],
   },
+
+  /* ── Apple ID ───────────────────────────────── */
   {
     id: 'facebook', name: 'Facebook', icon: '',
     settings: [
@@ -67,6 +83,8 @@ const platforms: Platform[] = [
       { id: 'fb-profile', label: 'Review what is visible on your public profile', why: 'Your birthday, hometown, and employer can be used for identity theft.' },
     ],
   },
+
+  /* ── iPhone ─────────────────────────────────── */
   {
     id: 'google', name: 'Google', icon: '',
     settings: [
@@ -81,6 +99,8 @@ const platforms: Platform[] = [
       { id: 'go-third', label: 'Remove third-party apps with access to your account', why: 'Apps you signed into with Google may still have access to your data.', link: 'https://myaccount.google.com/permissions', linkLabel: 'Google Third-Party Access' },
     ],
   },
+
+  /* ── Android ───────────────────────────────── */
   {
     id: 'instagram', name: 'Instagram', icon: '',
     settings: [
@@ -148,134 +168,368 @@ const platforms: Platform[] = [
   },
 ];
 
+/* ── Component ─────────────────────────────────── */
 export default function PrivacyAudit() {
-  const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
   const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [expandedPlatform, setExpandedPlatform] = useState<string | null>(null);
-  const [started, setStarted] = useState(false);
+  const [activeService, setActiveService] = useState<ServiceSection['id'] | null>(null);
 
-  const togglePlatform = (id: string) => {
-    setSelectedPlatforms(prev => prev.includes(id) ? prev.filter(p => p !== id) : [...prev, id]);
+  const toggle = (id: string) =>
+    setChecked((prev) => ({ ...prev, [id]: !prev[id] }));
+
+  const serviceProgress = (service: ServiceSection) => {
+    const ids = service.checks.map((c) => c.id);
+    const done = ids.filter((id) => checked[id]).length;
+    return { done, total: ids.length, pct: Math.round((done / ids.length) * 100) };
   };
 
-  const toggleCheck = (settingId: string) => {
-    setChecked(prev => ({ ...prev, [settingId]: !prev[settingId] }));
-  };
+  const totalProgress = useMemo(() => {
+    const all = SERVICES.flatMap((s) => s.checks.map((c) => c.id));
+    const done = all.filter((id) => checked[id]).length;
+    return { done, total: all.length, pct: Math.round((done / all.length) * 100) };
+  }, [checked]);
 
-  const activePlatforms = platforms.filter(p => selectedPlatforms.includes(p.id));
-  const totalSettings = activePlatforms.reduce((sum, p) => sum + p.settings.length, 0);
-  const checkedCount = activePlatforms.reduce((sum, p) => sum + p.settings.filter(s => checked[s.id]).length, 0);
-
-  const score = useMemo(() => {
-    if (totalSettings === 0) return 0;
-    return Math.round((checkedCount / totalSettings) * 100);
-  }, [checkedCount, totalSettings]);
-
-  const scoreLabel = score >= 90 ? 'Excellent' : score >= 70 ? 'Good' : score >= 50 ? 'Fair' : score > 0 ? 'Needs Work' : 'Not Started';
-
-  const handlePrint = () => window.print();
+  const active = SERVICES.find((s) => s.id === activeService);
 
   return (
     <>
-      <SEOHead title="Privacy Settings Audit — Check Your Privacy on Every Device | TekSure" description="Get a personalized privacy checklist for your phone, computer, and social media accounts. Step-by-step guide to tighten your privacy settings." path="/tools/privacy-audit" />
+      <SEOHead
+        title="Privacy Audit — Take Back Your Privacy One Setting at a Time"
+        description="Step-by-step guided privacy audit for Facebook, Google, Apple ID, iPhone, and Android. Walks you through the settings that actually matter in plain English."
+        path="/tools/privacy-audit"
+      />
       <Navbar />
       <main className="min-h-screen bg-background">
-        <div className="container pt-4">
-          <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Privacy Audit' }]} />
-        </div>
-
-        <section className="border-b">
-          <div className="container py-12 md:py-16 max-w-3xl">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-purple-50 dark:bg-purple-950/30 flex items-center justify-center flex-shrink-0">
-                <Shield className="h-6 w-6 text-purple-600" aria-hidden="true" />
-              </div>
-              <Badge variant="secondary">Free Tool</Badge>
+        {/* ── Hero ─────────────────────────────── */}
+        <section className="border-b border-border bg-gradient-to-br from-primary/5 via-background to-background">
+          <div className="container py-12 md:py-16 relative">
+            <div className="absolute top-6 right-6">
+              <BookmarkButton
+                type="tool"
+                slug="privacy-audit"
+                title="Privacy Audit"
+                url="/tools/privacy-audit"
+              />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Privacy Settings Audit</h1>
-            <p className="text-muted-foreground text-lg">Select the devices and services you use, and we will give you a personalized checklist of privacy settings to review. Check off each one as you go and see your privacy score improve.</p>
+            <div className="flex items-center gap-2 mb-4">
+              <ShieldCheck className="w-5 h-5 text-primary" />
+              <Badge variant="outline" className="text-xs">Privacy</Badge>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 pr-14">
+              Take Back Your Privacy
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
+              We'll walk you through the settings that matter — one screen at a time.
+            </p>
           </div>
         </section>
 
-        <div className="container py-8 pb-24 max-w-3xl">
-          {!started ? (
-            <>
-              <h2 className="font-semibold text-lg mb-4">Which devices and services do you use?</h2>
-              <p className="text-sm text-muted-foreground mb-6">Select all that apply. We will build your personalized privacy checklist.</p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
-                {platforms.map(p => (
-                  <button key={p.id} onClick={() => togglePlatform(p.id)} className={`p-4 rounded-2xl border-2 text-center transition-colors min-h-[44px] ${selectedPlatforms.includes(p.id) ? 'border-primary bg-primary/5' : 'border-border hover:border-foreground/30'}`} aria-pressed={selectedPlatforms.includes(p.id)}>
-                    <span className="text-2xl block mb-1">{p.icon}</span>
-                    <span className="text-sm font-medium">{p.name}</span>
-                  </button>
-                ))}
+        {/* ── Reassurance banner ──────────────── */}
+        <section className="container pt-8 pb-2">
+          <Card className="border-blue-500/40 bg-blue-50/50 dark:bg-blue-950/20">
+            <CardContent className="p-5 flex items-start gap-3">
+              <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-semibold text-lg mb-1">Your progress stays with you</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  We don't collect any data. This is a guided checklist that shows you exactly
+                  where to tap on Facebook, Google, your iPhone, or your Android device. Your
+                  checkmarks are saved only in this browser.
+                </p>
               </div>
-              <button onClick={() => { if (selectedPlatforms.length > 0) setStarted(true); }} disabled={selectedPlatforms.length === 0} className="px-6 py-3 rounded-full bg-foreground text-background font-medium hover:opacity-90 transition-opacity min-h-[44px] disabled:opacity-40">
-                Build My Privacy Checklist ({selectedPlatforms.length} selected)
-              </button>
-            </>
-          ) : (
-            <>
-              {/* Score overview */}
-              <div className="p-5 rounded-2xl border border-border bg-card mb-8">
-                <div className="flex justify-between items-center mb-3">
-                  <div>
-                    <h2 className="font-semibold text-lg">Privacy Score: {score}%</h2>
-                    <p className="text-sm text-muted-foreground">{scoreLabel} — {checkedCount} of {totalSettings} settings checked</p>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* ── Total progress bar ──────────────── */}
+        <section className="container py-6">
+          <Card>
+            <CardContent className="p-5">
+              <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+                <h2 className="text-xl font-semibold">Overall Progress</h2>
+                <span className="text-lg font-bold text-primary">
+                  {totalProgress.done} / {totalProgress.total} settings reviewed
+                </span>
+              </div>
+              <Progress value={totalProgress.pct} className="h-4 mb-2" />
+              <p className="text-base text-muted-foreground">
+                {totalProgress.pct === 100
+                  ? 'Incredible — you have locked down every service. Come back in 6 months to re-check.'
+                  : totalProgress.pct === 0
+                    ? 'Pick a service below to get started. You do not have to do everything at once.'
+                    : 'Keep going! Small steps add up to big privacy wins.'}
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* ── Service picker OR active service ─ */}
+        {!active ? (
+          <section className="container pb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              Which service do you want to audit?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Start with the one you use most. You can come back to the others anytime.
+            </p>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {SERVICES.map((service) => {
+                const { done, total, pct } = serviceProgress(service);
+                const Icon = service.icon;
+                const complete = done === total && total > 0;
+                return (
+                  <button
+                    key={service.id}
+                    onClick={() => setActiveService(service.id)}
+                    className="text-left group"
+                  >
+                    <Card
+                      className={`h-full transition-all group-hover:shadow-md group-hover:border-primary/50 ${
+                        complete ? 'border-green-500/50' : ''
+                      }`}
+                    >
+                      <CardContent className="p-6">
+                        <div className="flex items-start gap-4 mb-4">
+                          <div className={`p-3 rounded-lg shrink-0 ${service.color}`}>
+                            {complete ? (
+                              <CheckCircle2 className="w-8 h-8" />
+                            ) : (
+                              <Icon className="w-8 h-8" />
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-2xl font-bold mb-1">{service.title}</h3>
+                            <p className="text-base text-muted-foreground leading-snug">
+                              {service.tagline}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="mt-4">
+                          <div className="flex items-center justify-between text-sm mb-1">
+                            <span className="text-muted-foreground">
+                              {done} of {total} reviewed
+                            </span>
+                            <span className="font-semibold text-primary">{pct}%</span>
+                          </div>
+                          <Progress value={pct} className="h-2" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        ) : (
+          <section className="container pb-12">
+            {/* Back button + service header */}
+            <Button
+              variant="ghost"
+              onClick={() => setActiveService(null)}
+              className="mb-4 -ml-2 text-base"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to all services
+            </Button>
+
+            <Card className="mb-6">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4 mb-4 flex-wrap">
+                  <div className={`p-3 rounded-lg shrink-0 ${active.color}`}>
+                    <active.icon className="w-8 h-8" />
                   </div>
-                  <button onClick={handlePrint} className="p-2 rounded-lg border border-border hover:bg-muted transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Print checklist">
-                    <Printer className="h-4 w-4" aria-hidden="true" />
-                  </button>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-3xl font-bold">{active.title} Privacy Audit</h2>
+                    <p className="text-lg text-muted-foreground">{active.tagline}</p>
+                  </div>
                 </div>
-                <Progress value={score} className="h-3" aria-label={`Privacy score: ${score} percent`} />
-              </div>
+                <div className="mt-4">
+                  <div className="flex items-center justify-between text-base mb-1">
+                    <span className="text-muted-foreground">
+                      {serviceProgress(active).done} of {serviceProgress(active).total} reviewed
+                    </span>
+                    <span className="font-semibold text-primary">
+                      {serviceProgress(active).pct}%
+                    </span>
+                  </div>
+                  <Progress value={serviceProgress(active).pct} className="h-3" />
+                </div>
+                {active.guide && (
+                  <div className="mt-5">
+                    <Button variant="outline" asChild>
+                      <Link to={active.guide.to}>
+                        <BookOpen className="w-4 h-4 mr-2" />
+                        {active.guide.label}
+                      </Link>
+                    </Button>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
 
-              {/* Platform checklists */}
-              <div className="space-y-4">
-                {activePlatforms.map(platform => {
-                  const isOpen = expandedPlatform === platform.id;
-                  const platformChecked = platform.settings.filter(s => checked[s.id]).length;
-                  return (
-                    <div key={platform.id} className="rounded-2xl border border-border bg-card overflow-hidden">
-                      <button className="w-full text-left p-5 flex items-center gap-4" onClick={() => setExpandedPlatform(isOpen ? null : platform.id)} aria-expanded={isOpen} aria-controls={`platform-${platform.id}`}>
-                        <span className="text-2xl">{platform.icon}</span>
+            {/* Checklist */}
+            <div className="space-y-4">
+              {active.checks.map((check, i) => {
+                const isDone = checked[check.id] ?? false;
+                return (
+                  <Card
+                    key={check.id}
+                    className={isDone ? 'border-green-500/40 bg-green-50/30 dark:bg-green-950/10' : ''}
+                  >
+                    <CardContent className="p-5">
+                      <div className="flex items-start gap-4">
+                        <Checkbox
+                          checked={isDone}
+                          onCheckedChange={() => toggle(check.id)}
+                          className="mt-1.5 h-6 w-6 shrink-0 cursor-pointer"
+                          id={`check-${check.id}`}
+                        />
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold">{platform.name}</h3>
-                          <p className="text-sm text-muted-foreground">{platformChecked} of {platform.settings.length} checked</p>
-                        </div>
-                        {platformChecked === platform.settings.length && <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" aria-label="All settings checked" />}
-                        {isOpen ? <ChevronUp className="h-4 w-4 text-muted-foreground flex-shrink-0" aria-hidden="true" /> : <ChevronDown className="h-4 w-4 text-muted-foreground flex-shrink-0" aria-hidden="true" />}
-                      </button>
+                          <div className="flex items-start gap-2 mb-3">
+                            <span className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-muted text-muted-foreground text-sm font-semibold mt-0.5">
+                              {i + 1}
+                            </span>
+                            <label
+                              htmlFor={`check-${check.id}`}
+                              className={`text-lg md:text-xl font-semibold leading-snug cursor-pointer ${
+                                isDone ? 'line-through text-muted-foreground' : 'text-foreground'
+                              }`}
+                            >
+                              {check.label}
+                            </label>
+                          </div>
 
-                      {isOpen && (
-                        <div id={`platform-${platform.id}`} className="px-5 pb-5 border-t border-border pt-4 space-y-4">
-                          {platform.settings.map(setting => (
-                            <div key={setting.id} className="flex items-start gap-3">
-                              <Checkbox id={setting.id} checked={!!checked[setting.id]} onCheckedChange={() => toggleCheck(setting.id)} className="mt-1" aria-label={setting.label} />
-                              <div className="flex-1">
-                                <label htmlFor={setting.id} className={`text-sm font-medium cursor-pointer ${checked[setting.id] ? 'line-through text-muted-foreground' : ''}`}>{setting.label}</label>
-                                <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{setting.why}</p>
-                                {setting.link && (
-                                  <a href={setting.link} target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline inline-flex items-center gap-1 mt-1">
-                                    <ExternalLink className="h-3 w-3" aria-hidden="true" /> {setting.linkLabel}
-                                  </a>
-                                )}
-                              </div>
+                          {/* Where to find it */}
+                          <div className="ml-9 mb-3 p-3 bg-muted/50 rounded-lg">
+                            <p className="text-sm font-semibold text-muted-foreground mb-1">
+                              Where to find it:
+                            </p>
+                            <p className="text-base font-mono text-foreground break-words">
+                              {check.where}
+                            </p>
+                          </div>
+
+                          {/* Why it matters */}
+                          <div className="ml-9 mb-3 flex items-start gap-2">
+                            <Info className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                            <div>
+                              <p className="text-sm font-semibold text-muted-foreground mb-1">
+                                Why it matters:
+                              </p>
+                              <p className="text-base leading-relaxed">{check.why}</p>
                             </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+                          </div>
 
-              <div className="mt-8">
-                <button onClick={() => setStarted(false)} className="px-4 py-2 rounded-full border border-border text-sm font-medium hover:bg-muted transition-colors min-h-[44px]">Change Devices</button>
+                          {/* Direct link */}
+                          {check.link && (
+                            <div className="ml-9 mt-3">
+                              <Button variant="outline" size="sm" asChild>
+                                <a
+                                  href={check.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Open this setting
+                                  <ExternalLink className="w-3 h-3 ml-1.5" />
+                                </a>
+                              </Button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+
+            {/* Service-complete card */}
+            {serviceProgress(active).pct === 100 && (
+              <Card className="mt-6 bg-green-50 dark:bg-green-950/30 border-green-300 dark:border-green-800">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-300" />
+                    <h3 className="text-xl font-bold text-green-800 dark:text-green-200">
+                      {active.title} is locked down!
+                    </h3>
+                  </div>
+                  <p className="text-base text-green-700 dark:text-green-300 leading-relaxed">
+                    Every setting reviewed. Set a reminder to come back every 6 months —
+                    services change their defaults, so it is worth a quick re-check.
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Continue to next service */}
+            <Card className="mt-6 bg-primary/5 border-primary/20">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">Keep going</h3>
+                <p className="text-base text-muted-foreground mb-4">
+                  Audit another service — your progress on this one is saved.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {SERVICES.filter((s) => s.id !== active.id).map((s) => {
+                    const { pct } = serviceProgress(s);
+                    const Icon = s.icon;
+                    return (
+                      <Button
+                        key={s.id}
+                        variant="outline"
+                        onClick={() => setActiveService(s.id)}
+                      >
+                        <Icon className="w-4 h-4 mr-2" />
+                        {s.title}
+                        {pct > 0 && pct < 100 && (
+                          <Badge variant="secondary" className="ml-2">
+                            {pct}%
+                          </Badge>
+                        )}
+                        {pct === 100 && (
+                          <CheckCircle2 className="w-4 h-4 ml-2 text-green-600" />
+                        )}
+                      </Button>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        )}
+
+        {/* ── Related tools ───────────────────── */}
+        <section className="container pb-16">
+          <Card className="bg-muted/30">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-3">Related privacy tools</h3>
+              <div className="grid gap-2 md:grid-cols-2">
+                <Button variant="outline" asChild className="justify-start h-auto py-3">
+                  <Link to="/tools/digital-footprint-scanner">
+                    <ShieldCheck className="w-5 h-5 mr-2 shrink-0" />
+                    <span className="text-left">Digital Footprint Scanner — check what is public about you</span>
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="justify-start h-auto py-3">
+                  <Link to="/tools/data-breach-checker">
+                    <Lock className="w-5 h-5 mr-2 shrink-0" />
+                    <span className="text-left">Data Breach Checker — has your email been leaked?</span>
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="justify-start h-auto py-3">
+                  <Link to="/tools/two-factor-setup">
+                    <ShieldCheck className="w-5 h-5 mr-2 shrink-0" />
+                    <span className="text-left">Two-Factor Setup — the single most important security step</span>
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="justify-start h-auto py-3">
+                  <Link to="/tools/app-permissions">
+                    <Smartphone className="w-5 h-5 mr-2 shrink-0" />
+                    <span className="text-left">App Permissions — review what each app can see</span>
+                  </Link>
+                </Button>
               </div>
-            </>
-          )}
-        </div>
+            </CardContent>
+          </Card>
+        </section>
       </main>
       <Footer />
     </>

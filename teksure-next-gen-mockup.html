@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TekSure — Next-Gen Mockup</title>
+<style>
+  :root {
+    --bg: #FAF8F4;
+    --surface: #FFFFFF;
+    --ink: #1A1A1A;
+    --ink-2: #444;
+    --muted: #6B6B6B;
+    --border: #E4DFD4;
+    --primary: #2A5FCC;
+    --primary-ink: #FFFFFF;
+    --accent: #E87A2B;
+    --good: #2E8B57;
+    --bad: #C43333;
+    --warn: #D49300;
+    --shadow: 0 2px 0 rgba(0,0,0,.04), 0 6px 20px rgba(0,0,0,.05);
+    --radius: 18px;
+    --radius-sm: 12px;
+    --focus: 0 0 0 4px rgba(42,95,204,.35);
+  }
+  html.night {
+    --bg: #1B1815;
+    --surface: #26211C;
+    --ink: #F3EEE4;
+    --ink-2: #D5CCBE;
+    --muted: #9C9283;
+    --border: #3A3329;
+    --primary: #6E9CFF;
+    --primary-ink: #0B0A09;
+    --shadow: 0 2px 0 rgba(0,0,0,.15), 0 6px 24px rgba(0,0,0,.3);
+  }
+  html.hicontrast {
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --ink: #000000;
+    --ink-2: #000000;
+    --muted: #222;
+    --border: #000000;
+    --primary: #0033A0;
+    --primary-ink: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: var(--root-size, 18px); }
+  html[data-size="lg"] { --root-size: 20px; }
+  html[data-size="xl"] { --root-size: 22px; }
+  html[data-size="xxl"] { --root-size: 26px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, system-ui, sans-serif;
+    font-weight: 500;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible { outline: none; box-shadow: var(--focus); border-radius: 10px; }
+  a { color: var(--primary); text-underline-offset: 3px; }
+  button { font: inherit; cursor: pointer; }
+  h1,h2,h3,h4 { margin: 0 0 .4em; line-height: 1.2; letter-spacing: -.01em; }
+  h1 { font-size: 3em; font-weight: 700; }
+  h2 { font-size: 2em; font-weight: 700; }
+  h3 { font-size: 1.35em; font-weight: 600; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 16px; background: var(--primary); color: var(--primary-ink); padding: 12px 18px; border-radius: 10px; z-index: 999; }
+
+  /* ── TOP BAR ─────────────────────────────── */
+  header.top {
+    position: sticky; top: 0; z-index: 30;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .top-row { display:flex; align-items:center; gap: 18px; padding: 14px 0; }
+  .logo { display:flex; align-items:center; gap: 10px; text-decoration: none; color: var(--ink); font-weight: 800; font-size: 1.35em; letter-spacing: -.02em; }
+  .logo .mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-ink); display:grid; place-items:center; font-size: 1em; }
+  nav.main { display:flex; gap: 4px; margin-left: auto; }
+  nav.main a {
+    padding: 10px 16px; border-radius: 10px; text-decoration: none; color: var(--ink);
+    font-weight: 600; font-size: .95em;
+  }
+  nav.main a:hover { background: var(--surface); }
+  nav.main a[aria-current="page"] { background: var(--surface); box-shadow: inset 0 0 0 1px var(--border); }
+  .tray {
+    display:flex; align-items:center; gap: 6px; margin-left: 8px;
+    background: var(--surface); padding: 4px; border: 1px solid var(--border); border-radius: 12px;
+  }
+  .tray button {
+    min-width: 44px; min-height: 40px; padding: 6px 10px;
+    background: transparent; border: 0; border-radius: 8px; color: var(--ink); font-weight: 600;
+  }
+  .tray button:hover { background: var(--bg); }
+  .tray button[aria-pressed="true"] { background: var(--primary); color: var(--primary-ink); }
+  .tray .sep { width:1px; height:22px; background: var(--border); margin: 0 2px; }
+
+  /* ── HERO ─────────────────────────────── */
+  main { padding: 48px 0 120px; }
+  .hero { text-align: center; max-width: 880px; margin: 0 auto 48px; }
+  .eyebrow { display:inline-block; padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; color: var(--ink-2); font-weight: 600; font-size: .9em; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(2em, 5vw, 3.4em); margin-bottom: .4em; }
+  .hero p.sub { font-size: 1.2em; color: var(--ink-2); margin: 0 auto; max-width: 640px; }
+
+  /* ── TIER PICKER ─────────────────────────────── */
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 32px 0 12px; }
+  @media (max-width: 900px) { .tiers { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .tiers { grid-template-columns: 1fr; } }
+  .tier {
+    background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius);
+    padding: 22px; text-align: left; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    min-height: 180px; display:flex; flex-direction:column; gap: 6px;
+  }
+  .tier:hover { transform: translateY(-2px); border-color: var(--primary); box-shadow: var(--shadow); }
+  .tier[aria-pressed="true"] { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(42,95,204,.14); }
+  .tier .emoji { font-size: 2.4em; line-height: 1; }
+  .tier .name { font-size: 1.25em; font-weight: 700; }
+  .tier .blurb { color: var(--ink-2); font-size: .95em; }
+
+  .skip-tier { text-align: center; margin-top: 6px; color: var(--muted); font-size: .95em; }
+  .skip-tier button { background: transparent; border: 0; color: var(--primary); text-decoration: underline; padding: 6px 10px; font-size: 1em; }
+
+  /* ── JOBS TO BE DONE ─────────────────────────────── */
+  .jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 36px 0 8px; }
+  @media (max-width: 760px) { .jobs { grid-template-columns: 1fr; } }
+  .job {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 22px; text-align: left; cursor: pointer;
+    display:flex; align-items:center; gap: 16px; min-height: 110px;
+    transition: transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .job:hover { transform: translateY(-2px); border-color: var(--primary); box-shadow: var(--shadow); }
+  .job .ic { width: 56px; height: 56px; border-radius: 14px; display:grid; place-items:center; font-size: 1.8em; flex-shrink: 0; }
+  .job.learn .ic { background: #E6F0FF; color: #1F47A3; }
+  .job.fix .ic { background: #FFEFD9; color: #B35A00; }
+  .job.safe .ic { background: #DFF1E4; color: #1E6A3D; }
+  html.night .job.learn .ic { background: #1E2E50; color: #A7C1FF; }
+  html.night .job.fix .ic { background: #3A2910; color: #F4B269; }
+  html.night .job.safe .ic { background: #17332A; color: #8CD7A4; }
+  .job .t { font-weight: 700; font-size: 1.2em; }
+  .job .d { color: var(--ink-2); font-size: .95em; margin-top: 2px; }
+
+  /* ── QUICK ASK ─────────────────────────────── */
+  .ask {
+    margin: 40px auto 0; max-width: 720px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px; box-shadow: var(--shadow);
+  }
+  .ask-row { display:flex; gap: 8px; align-items: center; }
+  .ask textarea {
+    flex:1; border: 0; background: transparent; color: var(--ink);
+    resize: none; font: inherit; padding: 10px; min-height: 44px;
+  }
+  .ask textarea:focus { outline: none; }
+  .ask .mic, .ask .go {
+    width: 48px; height: 48px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--bg); display:grid; place-items:center; font-size: 1.1em;
+  }
+  .ask .go { background: var(--primary); color: var(--primary-ink); border-color: var(--primary); }
+  .ask .hint { font-size: .9em; color: var(--muted); margin-top: 6px; padding: 0 4px; }
+
+  /* ── SECTIONS ─────────────────────────────── */
+  section.block { margin: 72px 0 0; }
+  section.block h2 { font-size: 1.8em; margin-bottom: 6px; }
+  section.block .lede { color: var(--ink-2); margin-bottom: 24px; font-size: 1.05em; }
+
+  /* ── SKILL TREE ─────────────────────────────── */
+  .tree {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 24px; box-shadow: var(--shadow);
+  }
+  .tree-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+  @media (max-width: 760px) { .tree-grid { grid-template-columns: repeat(2, 1fr); } }
+  .node {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 14px;
+    display:flex; flex-direction:column; gap: 6px; min-height: 120px;
+    position: relative;
+  }
+  .node[data-state="mastered"] { background: #EAF5EE; border-color: var(--good); }
+  .node[data-state="in-progress"] { background: #FFF6E0; border-color: var(--warn); }
+  .node[data-state="locked"] { opacity: .45; }
+  html.night .node[data-state="mastered"] { background: #1B3325; }
+  html.night .node[data-state="in-progress"] { background: #3A2D10; }
+  .node .title { font-weight: 700; font-size: 1em; }
+  .node .meta { font-size: .85em; color: var(--ink-2); }
+  .node .status { font-size: .8em; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  .node[data-state="mastered"] .status { color: var(--good); }
+  .node[data-state="in-progress"] .status { color: var(--warn); }
+  .node[data-state="locked"] .status { color: var(--muted); }
+  .node[data-state="available"] .status { color: var(--primary); }
+
+  /* ── TOOL DEMO ─────────────────────────────── */
+  .tool-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 24px; box-shadow: var(--shadow);
+  }
+  .tool-head { display:flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+  .tool-ic { width: 52px; height: 52px; border-radius: 12px; background: #DFF1E4; color: #1E6A3D; display:grid; place-items:center; font-size: 1.6em; }
+  html.night .tool-ic { background: #17332A; color: #8CD7A4; }
+  .tool-card label.url-label { display:block; font-weight: 600; margin: 14px 0 6px; }
+  .tool-card input[type="url"] {
+    width: 100%; min-height: 56px; padding: 10px 14px; font-size: 1.05em;
+    border: 2px solid var(--border); border-radius: 12px; background: var(--bg); color: var(--ink);
+  }
+  .tool-card input[type="url"]:focus { border-color: var(--primary); }
+  .tool-card button.scan {
+    min-height: 56px; padding: 0 24px; font-size: 1.05em; font-weight: 700;
+    background: var(--primary); color: var(--primary-ink); border: 2px solid var(--primary);
+    border-radius: 12px; margin-top: 14px;
+  }
+  .verdict { margin-top: 16px; padding: 18px; border-radius: 14px; border: 2px solid var(--border); }
+  .verdict.good { background: #EAF5EE; border-color: var(--good); }
+  .verdict.warn { background: #FFF6E0; border-color: var(--warn); }
+  .verdict.bad  { background: #FFE6E3; border-color: var(--bad); }
+  html.night .verdict.good { background: #1B3325; }
+  html.night .verdict.warn { background: #3A2D10; }
+  html.night .verdict.bad  { background: #3B1917; }
+  .verdict h3 { margin-bottom: 4px; }
+  .verdict .sources { font-size: .9em; color: var(--ink-2); margin-top: 10px; }
+
+  /* ── BEFORE / AFTER ─────────────────────────────── */
+  .ba { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+  .ba-toggle { display:flex; gap: 4px; background: var(--bg); padding: 4px; border-radius: 12px; width: max-content; }
+  .ba-toggle button { border: 0; background: transparent; padding: 10px 16px; border-radius: 10px; font-weight: 600; color: var(--ink); }
+  .ba-toggle button[aria-pressed="true"] { background: var(--primary); color: var(--primary-ink); }
+  .ba-view { margin-top: 16px; border: 1px dashed var(--border); border-radius: 12px; padding: 22px; min-height: 220px; }
+  .ba-view.before {
+    background: #0e0e0e; color: #e2e2e2; text-align: center; display:flex; flex-direction:column; gap: 12px; align-items: center; justify-content: center;
+  }
+  .ba-view.before .old-hero { font-size: 1.8em; font-weight: 700; }
+  .ba-view.before .old-search { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 14px 18px; width: 92%; max-width: 520px; color: #666; text-align: left; }
+  .ba-view.before .old-chips { display:flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .ba-view.before .old-chips span { padding: 6px 12px; border: 1px solid #333; border-radius: 999px; font-size: .85em; color: #aaa; }
+  .ba-view.before .old-note { color: #777; font-size: .85em; margin-top: 8px; }
+
+  /* ── FLOATING HELP ─────────────────────────────── */
+  .fab {
+    position: fixed; right: 22px; bottom: 22px; z-index: 25;
+    background: var(--accent); color: #FFF; padding: 16px 22px; border-radius: 999px;
+    border: 0; font-weight: 700; font-size: 1em; box-shadow: 0 10px 24px rgba(232,122,43,.35);
+    display:flex; gap: 10px; align-items: center;
+  }
+  .fab:hover { filter: brightness(1.05); }
+
+  /* ── FOOTER NOTE ─────────────────────────────── */
+  .footnote { margin: 80px 0 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); color: var(--ink-2); font-size: .95em; }
+  .footnote strong { color: var(--ink); }
+
+  /* ── MOBILE BOTTOM NAV ─────────────────────────── */
+  @media (max-width: 760px) {
+    nav.main { display: none; }
+    .mob-nav {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 30;
+      background: var(--surface); border-top: 1px solid var(--border);
+      display:flex; justify-content: space-around; padding: 6px 0 10px;
+    }
+    .mob-nav a { flex:1; text-align: center; color: var(--ink); text-decoration: none; font-size: .8em; font-weight: 600; padding: 6px 0; }
+    .mob-nav a .mic-ic { font-size: 1.4em; display:block; }
+    main { padding-bottom: 120px; }
+  }
+  @media (min-width: 761px) { .mob-nav { display: none; } }
+
+  .pill { display:inline-block; background: var(--bg); border: 1px solid var(--border); padding: 3px 10px; border-radius: 999px; font-size: .85em; font-weight: 600; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="top">
+  <div class="container top-row">
+    <a href="#" class="logo" aria-label="TekSure home"><span class="mark">T</span> TekSure</a>
+    <nav class="main" aria-label="Main">
+      <a href="#learn" aria-current="page">Learn</a>
+      <a href="#tools">Tools</a>
+      <a href="#safety">Safety</a>
+      <a href="#ask">Ask</a>
+      <a href="#help">Help</a>
+    </nav>
+    <div class="tray" role="toolbar" aria-label="Accessibility">
+      <button id="sz-s" aria-pressed="false" aria-label="Normal text size" title="Normal">A</button>
+      <button id="sz-l" aria-pressed="false" aria-label="Large text" title="Larger">A+</button>
+      <button id="sz-xl" aria-pressed="false" aria-label="Extra large text" title="Extra large">A++</button>
+      <span class="sep" aria-hidden="true"></span>
+      <button id="hc" aria-pressed="false" aria-label="High contrast" title="High contrast">◐</button>
+      <button id="nt" aria-pressed="false" aria-label="Night mode" title="Night">🌙</button>
+      <button id="rd" aria-pressed="false" aria-label="Read this page aloud" title="Read aloud">🔊</button>
+      <button id="tr" aria-pressed="false" aria-label="Translate" title="Translate">🌐</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div class="container">
+
+    <section class="hero">
+      <span class="eyebrow">New homepage · Tier-aware · WCAG 2.2 AA by default</span>
+      <h1>Tell us how tech feels to you right now. We'll meet you there.</h1>
+      <p class="sub">Free guides, free tools, free real-human help for anyone learning technology &mdash; at your pace, in plain English.</p>
+    </section>
+
+    <section aria-labelledby="tier-h" class="block" style="margin-top:0;">
+      <h2 id="tier-h" class="sr-only">Pick your comfort level</h2>
+      <div class="tiers" role="group" aria-labelledby="tier-h">
+        <button class="tier" data-tier="1" aria-pressed="false">
+          <span class="emoji" aria-hidden="true">🌱</span>
+          <span class="name">Just Starting</span>
+          <span class="blurb">I'm new to this and that's okay.</span>
+          <span class="pill" style="margin-top:auto;">Big buttons · Videos · Plain language</span>
+        </button>
+        <button class="tier" data-tier="2" aria-pressed="false">
+          <span class="emoji" aria-hidden="true">🌤️</span>
+          <span class="name">Getting Comfortable</span>
+          <span class="blurb">I use tech but get stuck sometimes.</span>
+          <span class="pill" style="margin-top:auto;">Step-by-step · Practice rooms</span>
+        </button>
+        <button class="tier" data-tier="3" aria-pressed="false">
+          <span class="emoji" aria-hidden="true">☀️</span>
+          <span class="name">Confident</span>
+          <span class="blurb">I'm decent with tech. Show me more.</span>
+          <span class="pill" style="margin-top:auto;">Deeper tools · Privacy · AI</span>
+        </button>
+        <button class="tier" data-tier="4" aria-pressed="false">
+          <span class="emoji" aria-hidden="true">⚡</span>
+          <span class="name">Power User</span>
+          <span class="blurb">Give me the advanced stuff.</span>
+          <span class="pill" style="margin-top:auto;">OSINT · CLI · Self-host</span>
+        </button>
+      </div>
+      <div class="skip-tier">
+        <button id="skip-tier">I'd rather browse freely &rarr;</button>
+        <span aria-hidden="true"> · </span>
+        <button id="quiz-tier" style="background:transparent;border:0;color:var(--primary);text-decoration:underline;padding:6px 10px;font-size:1em;">Take the 5-minute placement quiz</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="jobs-h" class="block">
+      <h2 id="jobs-h">What brings you here today?</h2>
+      <p class="lede">Three doors. Pick the one that matches what's on your mind.</p>
+      <div class="jobs">
+        <button class="job learn">
+          <span class="ic" aria-hidden="true">🧑‍🏫</span>
+          <span>
+            <span class="t">Teach me something</span>
+            <span class="d" style="display:block">Courses, guides, practice rooms. From "what's a browser" to AI.</span>
+          </span>
+        </button>
+        <button class="job fix">
+          <span class="ic" aria-hidden="true">🛠️</span>
+          <span>
+            <span class="t">Fix something</span>
+            <span class="d" style="display:block">Walk me through a problem right now. Step-by-step or live help.</span>
+          </span>
+        </button>
+        <button class="job safe">
+          <span class="ic" aria-hidden="true">🛡️</span>
+          <span>
+            <span class="t">Is this safe?</span>
+            <span class="d" style="display:block">Check a link, a number, a text, a call, or my whole online footprint.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="ask" role="search" aria-labelledby="ask-h">
+        <h3 id="ask-h" class="sr-only">Or ask a question</h3>
+        <div class="ask-row">
+          <button class="mic" aria-label="Speak your question">🎙️</button>
+          <textarea placeholder="Or, if you know what you're looking for, type it here…" rows="1" aria-label="Type your question"></textarea>
+          <button class="go" aria-label="Send">➜</button>
+        </div>
+        <p class="hint">Try: "My email got hacked", "Is this text from UPS real?", "How do I back up my photos?"</p>
+      </div>
+    </section>
+
+
+    <section class="block" aria-labelledby="path-h">
+      <h2 id="path-h">Your Path — Skill Tree (preview at Tier 1–2)</h2>
+      <p class="lede">Every guide you finish lights up a node. Badges, not scores. Streaks are gentle — missing a day never costs you progress.</p>
+      <div class="tree">
+        <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; align-items:center;">
+          <div><strong>3 of 24</strong> beginner skills mastered · <strong>2</strong> in progress</div>
+          <div><span class="pill">🌱 Tier: Just Starting</span> <span class="pill">🔥 4-day visit streak</span></div>
+        </div>
+        <div class="tree-grid" role="list">
+          <div class="node" data-state="mastered" role="listitem">
+            <span class="status">✅ Mastered</span>
+            <span class="title">Connect to Wi-Fi</span>
+            <span class="meta">5 min · earned "First Signal" badge</span>
+          </div>
+          <div class="node" data-state="mastered" role="listitem">
+            <span class="status">✅ Mastered</span>
+            <span class="title">Take a photo &amp; save it</span>
+            <span class="meta">4 min · earned "Shutterbug" badge</span>
+          </div>
+          <div class="node" data-state="mastered" role="listitem">
+            <span class="status">✅ Mastered</span>
+            <span class="title">Send your first text</span>
+            <span class="meta">3 min · earned "Hello World" badge</span>
+          </div>
+          <div class="node" data-state="in-progress" role="listitem">
+            <span class="status">⏳ In progress</span>
+            <span class="title">Spot a phishing email</span>
+            <span class="meta">7 min · 2 of 3 quiz questions right</span>
+          </div>
+          <div class="node" data-state="in-progress" role="listitem">
+            <span class="status">⏳ In progress</span>
+            <span class="title">Set up a password manager</span>
+            <span class="meta">10 min · watching video 2 of 4</span>
+          </div>
+          <div class="node" data-state="available" role="listitem">
+            <span class="status">👉 Start</span>
+            <span class="title">Make a video call</span>
+            <span class="meta">6 min · next recommended</span>
+          </div>
+          <div class="node" data-state="available" role="listitem">
+            <span class="status">👉 Start</span>
+            <span class="title">Back up your iPhone</span>
+            <span class="meta">8 min · next recommended</span>
+          </div>
+          <div class="node" data-state="locked" role="listitem">
+            <span class="status">🔒 Reach Tier 2</span>
+            <span class="title">Use a VPN safely</span>
+            <span class="meta">12 min · unlocks at Tier 2</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block" aria-labelledby="tool-h">
+      <h2 id="tool-h">New tool preview — URL Safety Scanner</h2>
+      <p class="lede">One of 35 new tools. Paste a link you're unsure about. We check Google Safe Browsing, PhishTank, URLVoid and Sucuri, then explain the result in plain English.</p>
+      <div class="tool-card">
+        <div class="tool-head">
+          <span class="tool-ic" aria-hidden="true">🛡️</span>
+          <div>
+            <h3 style="margin:0;">Is this link safe?</h3>
+            <div style="color:var(--ink-2); font-size:.95em;">Takes about 3 seconds · We never save the URL you paste</div>
+          </div>
+        </div>
+        <label class="url-label" for="url-in">Paste a link here</label>
+        <input id="url-in" type="url" placeholder="https://example.com" />
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <button class="scan" id="scan-btn">Check this link</button>
+          <button class="scan" id="demo-good" style="background:var(--good); border-color:var(--good);">Try a known-safe example</button>
+          <button class="scan" id="demo-bad" style="background:var(--bad); border-color:var(--bad);">Try a known-bad example</button>
+        </div>
+        <div id="verdict" class="verdict" hidden>
+          <h3 id="v-title">Checking…</h3>
+          <p id="v-body" style="margin:0;">Give us a second.</p>
+          <div class="sources" id="v-sources"></div>
+        </div>
+
+        <div style="margin-top:18px; padding-top:16px; border-top: 1px solid var(--border);">
+          <details>
+            <summary style="cursor:pointer; font-weight:600;">🧓 What does this actually do? (Plain-English)</summary>
+            <p style="margin-top:10px;">When you paste a link, TekSure asks four different safety services at once: Google's Safe Browsing list (which tracks known bad pages), PhishTank (a community list of scam sites), URLVoid (a third-party reputation check), and Sucuri (which scans for hacked pages). We combine the answers and tell you one simple thing: green, yellow, or red. We do not save the link you paste. We do not click through. You decide what to do with the answer.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block" aria-labelledby="ba-h">
+      <h2 id="ba-h">Before · After</h2>
+      <p class="lede">The homepage today vs. the homepage after the redesign.</p>
+      <div class="ba">
+        <div class="ba-toggle" role="tablist">
+          <button role="tab" aria-pressed="true" id="ba-before">Before (today)</button>
+          <button role="tab" aria-pressed="false" id="ba-after">After (this mockup)</button>
+        </div>
+        <div class="ba-view before" id="ba-view">
+          <div class="old-hero">Tech help that speaks your language.</div>
+          <div class="old-search">What do you need help with?</div>
+          <div class="old-chips">
+            <span>Get real human help</span>
+            <span>Find the right guide</span>
+            <span>Ask TekBot</span>
+            <span>Browse tools</span>
+            <span>More</span>
+          </div>
+          <div class="old-note">1,200+ guides · Real humans · Plain English</div>
+          <p style="max-width:420px; color:#888; font-size:.85em; margin-top:8px;">A dark-mode search box with no visual starting point. For a 72-year-old first-timer, the blank box is the hardest kind of blank page.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="block" aria-labelledby="summary-h">
+      <h2 id="summary-h">What changes at a glance</h2>
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
+        <div class="tool-card"><strong>Default light mode</strong> on public pages · dark is opt-in via the tray.</div>
+        <div class="tool-card"><strong>18–22px base body size</strong> · 56px hero · line-height 1.65.</div>
+        <div class="tool-card"><strong>Flat navigation</strong>, no dropdowns on desktop · always-labeled icons.</div>
+        <div class="tool-card"><strong>Accessibility tray</strong> pinned to the top of every page, never behind a menu.</div>
+        <div class="tool-card"><strong>Tier-aware homepage</strong> · picker + jobs-to-be-done + optional quiz.</div>
+        <div class="tool-card"><strong>Skill tree with gentle streaks</strong> · badges, not scores. No leaderboards by default.</div>
+        <div class="tool-card"><strong>35 new tools</strong> across OSINT, everyday comprehension, money, learning, smart-home.</div>
+        <div class="tool-card"><strong>Practice rooms</strong> · sandbox phone, sandbox inbox, sandbox browser — learn by doing safely.</div>
+        <div class="tool-card"><strong>Tier-tuned TekBot</strong> · Tier 1 gets plain-English steps, Tier 4 gets CLI snippets.</div>
+        <div class="tool-card"><strong>Live weekly classes + mentor matching</strong> — TekSure becomes a school, not only a library.</div>
+      </div>
+    </section>
+
+    <section class="footnote">
+      <strong>About this mockup.</strong> This is a working HTML prototype — try the text-size, night, and contrast buttons in the top-right, pick a tier, and click the URL-safety examples. The full written plan lives in <code>teksure-next-gen-strategy.md</code> next to this file. All copy follows the TekSure banned-words list: no "simply", "just", "obviously", "leverage", "seamless", "cutting-edge".
+    </section>
+
+  </div>
+</main>
+
+<nav class="mob-nav" aria-label="Mobile">
+  <a href="#learn"><span class="mic-ic" aria-hidden="true">📚</span>Learn</a>
+  <a href="#tools"><span class="mic-ic" aria-hidden="true">🧰</span>Tools</a>
+  <a href="#safety"><span class="mic-ic" aria-hidden="true">🛡️</span>Safety</a>
+  <a href="#ask"><span class="mic-ic" aria-hidden="true">💬</span>Ask</a>
+  <a href="#help"><span class="mic-ic" aria-hidden="true">📞</span>Help</a>
+</nav>
+
+<button class="fab" aria-label="Need a real person? Call us">
+  📞 <span>Need a real person?</span>
+</button>
+
+<script>
+  // Accessibility tray
+  const html = document.documentElement;
+  const sizeSmall = document.getElementById('sz-s');
+  const sizeLarge = document.getElementById('sz-l');
+  const sizeXL = document.getElementById('sz-xl');
+  const hc = document.getElementById('hc');
+  const nt = document.getElementById('nt');
+  const rd = document.getElementById('rd');
+
+  function setSize(v, btn){
+    html.dataset.size = v;
+    [sizeSmall, sizeLarge, sizeXL].forEach(b => b.setAttribute('aria-pressed','false'));
+    btn.setAttribute('aria-pressed','true');
+  }
+  sizeSmall.addEventListener('click', () => setSize('', sizeSmall));
+  sizeLarge.addEventListener('click', () => setSize('lg', sizeLarge));
+  sizeXL.addEventListener('click', () => setSize('xxl', sizeXL));
+
+  hc.addEventListener('click', () => {
+    const on = html.classList.toggle('hicontrast');
+    hc.setAttribute('aria-pressed', on);
+  });
+  nt.addEventListener('click', () => {
+    const on = html.classList.toggle('night');
+    nt.setAttribute('aria-pressed', on);
+  });
+  rd.addEventListener('click', () => {
+    const speaking = 'speechSynthesis' in window && window.speechSynthesis.speaking;
+    if (speaking) { window.speechSynthesis.cancel(); rd.setAttribute('aria-pressed','false'); return; }
+    if (!('speechSynthesis' in window)) return alert('Your browser does not support read-aloud.');
+    const text = document.querySelector('main').innerText.slice(0, 2000);
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.95;
+    u.onend = () => rd.setAttribute('aria-pressed','false');
+    window.speechSynthesis.speak(u);
+    rd.setAttribute('aria-pressed','true');
+  });
+
+  // Tier picker
+  document.querySelectorAll('.tier').forEach(t => {
+    t.addEventListener('click', () => {
+      document.querySelectorAll('.tier').forEach(x => x.setAttribute('aria-pressed','false'));
+      t.setAttribute('aria-pressed','true');
+      const name = t.querySelector('.name').textContent;
+      // toast-lite
+      const toast = document.createElement('div');
+      toast.textContent = `Tier set to "${name}". Your homepage, guides, and tools are now tuned to this level.`;
+      Object.assign(toast.style, { position:'fixed', left:'50%', bottom:'90px', transform:'translateX(-50%)', background:'var(--ink)', color:'var(--bg)', padding:'14px 20px', borderRadius:'12px', zIndex:50, fontWeight:600, maxWidth:'520px', textAlign:'center', boxShadow:'0 12px 32px rgba(0,0,0,.25)' });
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 4200);
+    });
+  });
+
+  document.getElementById('skip-tier').addEventListener('click', () => {
+    document.querySelectorAll('.tier').forEach(x => x.setAttribute('aria-pressed','false'));
+  });
+
+  // Before / After
+  const baBefore = document.getElementById('ba-before');
+  const baAfter = document.getElementById('ba-after');
+  const baView = document.getElementById('ba-view');
+  baBefore.addEventListener('click', () => {
+    baBefore.setAttribute('aria-pressed','true');
+    baAfter.setAttribute('aria-pressed','false');
+    baView.classList.add('before');
+    baView.innerHTML = `
+      <div class="old-hero">Tech help that speaks your language.</div>
+      <div class="old-search">What do you need help with?</div>
+      <div class="old-chips">
+        <span>Get real human help</span><span>Find the right guide</span><span>Ask TekBot</span><span>Browse tools</span><span>More</span>
+      </div>
+      <div class="old-note">1,200+ guides · Real humans · Plain English</div>
+      <p style="max-width:420px; color:#888; font-size:.85em; margin-top:8px;">A dark-mode search box with no visual starting point. For a 72-year-old first-timer, the blank box is the hardest kind of blank page.</p>
+    `;
+  });
+  baAfter.addEventListener('click', () => {
+    baBefore.setAttribute('aria-pressed','false');
+    baAfter.setAttribute('aria-pressed','true');
+    baView.classList.remove('before');
+    baView.style.background = 'var(--bg)';
+    baView.style.color = 'var(--ink)';
+    baView.innerHTML = `
+      <div style="text-align:center;">
+        <div style="font-size:1.8em; font-weight:700; margin-bottom:12px;">Tell us how tech feels to you right now.</div>
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:640px; margin:0 auto;">
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px; font-weight:600;">🌱 Just Starting</div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px; font-weight:600;">🌤️ Comfortable</div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px; font-weight:600;">☀️ Confident</div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px; font-weight:600;">⚡ Power User</div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:720px; margin:18px auto 8px;">
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px;">🧑‍🏫 <b>Teach me</b></div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px;">🛠️ <b>Fix something</b></div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px;">🛡️ <b>Is this safe?</b></div>
+        </div>
+        <p style="color:var(--ink-2); font-size:.9em; margin-top:8px;">Visible starting points · labeled icons · light by default · A+ tray always pinned top-right.</p>
+      </div>
+    `;
+  });
+
+  // URL safety scanner (demo logic — no real calls)
+  const urlIn = document.getElementById('url-in');
+  const scanBtn = document.getElementById('scan-btn');
+  const good = document.getElementById('demo-good');
+  const bad = document.getElementById('demo-bad');
+  const v = document.getElementById('verdict');
+  const vt = document.getElementById('v-title');
+  const vb = document.getElementById('v-body');
+  const vs = document.getElementById('v-sources');
+
+  function verdict(type, title, body, sources) {
+    v.hidden = false;
+    v.classList.remove('good','warn','bad');
+    v.classList.add(type);
+    vt.textContent = title;
+    vb.textContent = body;
+    vs.innerHTML = sources ? 'Checked against: ' + sources : '';
+  }
+
+  function scan(url) {
+    vt.textContent = 'Checking…';
+    vb.textContent = 'Asking Google Safe Browsing, PhishTank, URLVoid, and Sucuri.';
+    vs.textContent = '';
+    v.hidden = false; v.classList.remove('good','warn','bad');
+    setTimeout(() => {
+      if (!url) { verdict('warn', 'We need a link to check', 'Paste a web address (like https://example.com) and try again.'); return; }
+      const u = url.toLowerCase();
+      if (u.includes('phish') || u.includes('scam') || u.includes('.zip/bank') || u.includes('bit.ly/') || u.includes('free-gift')) {
+        verdict('bad', '🚫 This link looks unsafe', 'Two of four safety services flagged it as a phishing or scam page. Do not click it, and if you got it in a text or email, delete the message.', '<b>Google Safe Browsing</b> (flagged) · <b>PhishTank</b> (match) · URLVoid (clean) · Sucuri (clean)');
+      } else if (u.includes('teksure.com') || u.includes('apple.com') || u.includes('google.com') || u.includes('microsoft.com') || u.includes('aarp.org')) {
+        verdict('good', '✅ This link looks safe', 'All four safety services agree this is a legitimate, well-known site. You can open it with normal caution.', 'Google Safe Browsing · PhishTank · URLVoid · Sucuri — all clean');
+      } else {
+        verdict('warn', '⚠️ Be careful', 'None of our safety services have flagged this link, but we also do not know it well. Look at the full web address: does the domain match the company you expect? If you got this in a text or email you didn\'t expect, don\'t click it.', 'Google Safe Browsing (unknown) · PhishTank (unknown) · URLVoid (unknown) · Sucuri (clean)');
+      }
+    }, 800);
+  }
+
+  scanBtn.addEventListener('click', () => scan(urlIn.value.trim()));
+  good.addEventListener('click', () => { urlIn.value = 'https://www.apple.com/support'; scan(urlIn.value); });
+  bad.addEventListener('click', () => { urlIn.value = 'http://free-gift.scam-login.example/verify'; scan(urlIn.value); });
+</script>
+</body>
+</html>

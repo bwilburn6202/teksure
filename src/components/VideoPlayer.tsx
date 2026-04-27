@@ -141,7 +141,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
             key={opt.value}
             variant={speed === opt.value ? 'default' : 'outline'}
             size="sm"
-            className="min-h-[40px] min-w-[52px] text-sm font-semibold"
+            className="min-h-[44px] min-w-[52px] text-sm font-semibold"
             onClick={() => handleSpeedChange(opt.value)}
             aria-pressed={speed === opt.value}
           >
@@ -155,7 +155,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
         <Button
           variant={captionsOn ? 'default' : 'outline'}
           size="sm"
-          className="min-h-[40px] gap-1.5"
+          className="min-h-[44px] gap-1.5"
           onClick={handleCaptionsToggle}
           aria-pressed={captionsOn}
           aria-label={captionsOn ? 'Turn off captions' : 'Turn on captions'}
@@ -168,7 +168,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
         <Button
           variant="outline"
           size="sm"
-          className="min-h-[40px] gap-1.5"
+          className="min-h-[44px] gap-1.5"
           onClick={handleFullscreen}
           aria-label="Watch fullscreen"
         >

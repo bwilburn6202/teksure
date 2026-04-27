@@ -384,7 +384,7 @@ export default function BluetoothTroubleshooter() {
                           <RotateCcw className="h-4 w-4 mr-2" /> Start over
                         </Button>
                         <Button asChild>
-                          <Link to="/book">Book a Technician</Link>
+                          <Link to="/get-help">Book a Technician</Link>
                         </Button>
                       </div>
                     </CardContent>
