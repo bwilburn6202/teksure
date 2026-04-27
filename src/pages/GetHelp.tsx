@@ -91,6 +91,7 @@ const GetHelp = () => {
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [failedAttachmentCount, setFailedAttachmentCount] = useState(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const availableDates = getAvailableDates();
@@ -144,10 +145,13 @@ const GetHelp = () => {
     });
   };
 
-  const uploadImages = async (): Promise<string[]> => {
-    if (!images.length) return [];
+  type UploadResult = { urls: string[]; failedNames: string[] };
+
+  const uploadImages = async (): Promise<UploadResult> => {
+    if (!images.length) return { urls: [], failedNames: [] };
     const folder = `${new Date().toISOString().slice(0, 10)}/${crypto.randomUUID()}`;
     const urls: string[] = [];
+    const failedNames: string[] = [];
     for (const img of images) {
       const ext = img.file.name.split('.').pop()?.toLowerCase() || 'jpg';
       const path = `${folder}/${img.id}.${ext}`;
@@ -156,17 +160,19 @@ const GetHelp = () => {
         .upload(path, img.file, { contentType: img.file.type, upsert: false });
       if (upErr) {
         // Don't fail the whole submission for an image upload error —
-        // we still want the request to land. Log and continue.
+        // we still want the request to land. Log, track the filename
+        // so we can mention it in the saved description, and continue.
         console.error('image upload failed', upErr);
+        failedNames.push(img.file.name);
         continue;
       }
       const { data } = supabase.storage.from(ATTACHMENT_BUCKET).getPublicUrl(path);
       if (data?.publicUrl) urls.push(data.publicUrl);
     }
-    return urls;
+    return { urls, failedNames };
   };
 
-  const buildEnrichedDescription = (uploadedUrls: string[]) => {
+  const buildEnrichedDescription = (uploadedUrls: string[], failedNames: string[] = []) => {
     // Edge function only knows about `problem_description`, so we
     // prepend the optional fields as a small structured header so they
     // still show up in the customer + admin email.
@@ -189,7 +195,10 @@ const GetHelp = () => {
     const attachments = uploadedUrls.length
       ? `\n\nAttached photos:\n${uploadedUrls.map((u) => `• ${u}`).join('\n')}`
       : '';
-    return (header + body + attachments).trim() || null;
+    const failed = failedNames.length
+      ? `\n\nUser tried to attach ${failedNames.length} photo(s) but the upload didn't go through:\n${failedNames.map((n) => `• ${n}`).join('\n')}`
+      : '';
+    return (header + body + attachments + failed).trim() || null;
   };
 
   const submit = async (e: React.FormEvent) => {
@@ -211,10 +220,17 @@ const GetHelp = () => {
 
     setSubmitting(true);
     try {
-      const uploadedUrls = await uploadImages();
-      const enriched = buildEnrichedDescription(uploadedUrls);
+      const { urls: uploadedUrls, failedNames } = await uploadImages();
+      const enriched = buildEnrichedDescription(uploadedUrls, failedNames);
 
-      const { error: dbError } = await supabase.from('help_requests').insert({
+      // Attempt the rich insert (depends on the
+      // 20260427_help_requests_attachments migration). If those columns
+      // aren't present yet on the live project, Postgres returns 42703
+      // ("column does not exist"). When that happens we transparently
+      // fall back to the legacy schema so the form still works — the
+      // optional fields are already mirrored into `enriched`, so no data
+      // is lost, just less structured.
+      const richPayload = {
         user_id: user?.id ?? null,
         name: name.trim(),
         phone: phone.trim() || null,
@@ -226,11 +242,35 @@ const GetHelp = () => {
         problem_description: enriched,
         image_urls: uploadedUrls.length ? uploadedUrls : null,
         status: 'new',
-      });
+      };
+
+      let { error: dbError } = await supabase.from('help_requests').insert(richPayload);
+
+      if (dbError && (dbError as { code?: string }).code === '42703') {
+        // One or more new columns aren't on this project yet — retry with
+        // only the columns that exist in the original schema.
+        console.warn('help_requests rich insert failed (column missing) — retrying with legacy columns', dbError);
+        const legacyPayload = {
+          user_id: user?.id ?? null,
+          name: name.trim(),
+          phone: phone.trim() || null,
+          email: email.trim() || null,
+          device_type: deviceType || null,
+          problem_description: enriched,
+          status: 'new',
+        };
+        const retry = await supabase.from('help_requests').insert(legacyPayload);
+        dbError = retry.error;
+      }
 
       if (dbError) {
-        console.error(dbError);
-        setError('Something went wrong on our end. Please try again, or email hello@teksure.com.');
+        console.error('help_requests insert failed', dbError);
+        const message = (dbError as { message?: string }).message;
+        setError(
+          message
+            ? `Something went wrong: ${message}. Please try again, or email hello@teksure.com.`
+            : 'Something went wrong on our end. Please try again, or email hello@teksure.com.'
+        );
         return;
       }
 
@@ -251,6 +291,7 @@ const GetHelp = () => {
 
       // Free the preview URLs now that submission succeeded.
       images.forEach((img) => URL.revokeObjectURL(img.previewUrl));
+      setFailedAttachmentCount(failedNames.length);
       setSubmitted(true);
     } finally {
       setSubmitting(false);
@@ -296,6 +337,11 @@ const GetHelp = () => {
             {(email || phone) && (
               <p className="text-sm text-muted-foreground">
                 Confirmation going to <strong className="text-foreground">{email || phone}</strong>.
+              </p>
+            )}
+            {failedAttachmentCount > 0 && (
+              <p className="text-sm bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 text-amber-900 dark:text-amber-200 rounded-xl px-4 py-3">
+                Heads up: {failedAttachmentCount} photo{failedAttachmentCount === 1 ? '' : 's'} couldn't be uploaded. Reply to your confirmation email and we'll get them another way.
               </p>
             )}
             <Button onClick={() => navigate('/guides')} className="gap-2 rounded-xl" size="lg">
