@@ -533,7 +533,6 @@ const AppContent = () => {
           <Route path="/senior-tech-path" element={<SeniorTechPath />} />
           <Route path="/chromebook" element={<ChromebookHub />} />
           <Route path="/courses/internet-basics" element={<InternetBasics />} />
-          <Route path="/tools/error-decoder" element={<ErrorDecoderTool />} />
           <Route path="/tools/is-this-a-scam" element={<IsThisAScam />} />
           <Route path="/tools/device-comparison" element={<DeviceComparison />} />
           <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
