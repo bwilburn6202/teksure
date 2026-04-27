@@ -124,6 +124,15 @@ function appendLog(block) {
   fs.appendFileSync(outFile, `${block}\n\n`);
 }
 
+
+function getLastCycleNumber() {
+  if (!fs.existsSync(outFile)) return 0;
+  const content = fs.readFileSync(outFile, 'utf8');
+  const matches = Array.from(content.matchAll(/^## Cycle\s+(\d+)\s+—/gm));
+  if (!matches.length) return 0;
+  return Number(matches[matches.length - 1][1]) || 0;
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -132,18 +141,20 @@ async function main() {
   console.log('🔁 TekSure Build & Critique Loop started');
   console.log(`   interval=${intervalSec}s checks=${checks} out=${path.relative(root, outFile)}`);
 
+  const startingCycle = getLastCycleNumber();
   let cycle = 0;
   while (cycle < maxCycles) {
     cycle += 1;
+    const cycleNumber = startingCycle + cycle;
     const stamp = new Date().toISOString();
 
     const metrics = getMetrics();
     const checkResults = runChecks(checks);
     const critique = getCritique(metrics, checkResults);
-    const ideas = getIdeas(metrics, cycle);
+    const ideas = getIdeas(metrics, cycleNumber);
 
     const lines = [
-      `## Cycle ${cycle} — ${stamp}`,
+      `## Cycle ${cycleNumber} — ${stamp}`,
       '',
       '### Snapshot',
       `- Routes in App.tsx: **${metrics.routeCount}**`,

@@ -10,6 +10,7 @@ import {
   MessageSquare,
   Map,
   X,
+  ChevronDown,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -94,26 +95,25 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
         .slice(0, 2)
     : '';
 
-  const primaryLinks = [
-    { to: '/guides', label: 'Guides' },
-    { to: '/tools', label: 'Tools' },
+  const topLevelNavLinks = [
+    { to: '/guides', label: 'Guides', placement: 'primary' as const },
+    { to: '/tools', label: 'Tools', placement: 'primary' as const },
+    { to: '/forum', label: 'Community Forum', placement: 'more' as const },
+    { to: '/this-week', label: 'This Week', placement: 'more' as const },
+    { to: '/scam-alerts', label: 'Current Scam Alerts', placement: 'more' as const },
+    { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts', placement: 'more' as const },
+    { to: '/learn', label: 'Learning Paths', placement: 'more' as const },
+    { to: '/quick-fixes', label: 'Quick Fixes', placement: 'more' as const },
+    { to: '/free-resources', label: 'Free Tech Programs', placement: 'more' as const },
+    { to: '/glossary', label: 'Tech Glossary A–Z', placement: 'more' as const },
+    { to: '/videos', label: 'Video Tutorials', placement: 'more' as const },
+    { to: '/tech-help-near-me', label: 'Help Near Me', placement: 'more' as const },
+    { to: '/about', label: 'About TekSure', placement: 'more' as const },
   ];
 
-  const mobileBrowseLinks = [
-    { to: '/guides', label: 'Guides' },
-    { to: '/tools', label: 'Tools' },
-    { to: '/forum', label: 'Community Forum' },
-    { to: '/this-week', label: 'This Week' },
-    { to: '/scam-alerts', label: 'Current Scam Alerts' },
-    { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
-    { to: '/learn', label: 'Learning Paths' },
-    { to: '/quick-fixes', label: 'Quick Fixes' },
-    { to: '/free-resources', label: 'Free Tech Programs' },
-    { to: '/glossary', label: 'Tech Glossary A–Z' },
-    { to: '/videos', label: 'Video Tutorials' },
-    { to: '/tech-help-near-me', label: 'Help Near Me' },
-    { to: '/about', label: 'About TekSure' },
-  ];
+  const primaryLinks = topLevelNavLinks.filter((link) => link.placement === 'primary');
+  const moreLinks = topLevelNavLinks.filter((link) => link.placement === 'more');
+  const mobileBrowseLinks = topLevelNavLinks;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -138,11 +138,11 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
       <header
         role="banner"
         className="fixed top-3 sm:top-4 left-1/2 -translate-x-1/2 z-50
-                   w-[calc(100%-16px)] sm:w-[calc(100%-32px)] max-w-[1280px]
+                   w-auto
                    pointer-events-none print:hidden"
       >
         <div
-          className="pointer-events-auto flex items-center gap-1.5
+          className="pointer-events-auto inline-flex items-center gap-1.5
                      h-16 pl-3 pr-2 sm:pl-5 sm:pr-3
                      rounded-full
                      bg-white/15 dark:bg-white/[0.06]
@@ -174,7 +174,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           </Link>
 
           {/* Desktop primary nav */}
-          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-0.5">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1.5">
             {primaryLinks.map((link) => (
               <PreloadLink
                 key={link.to}
@@ -185,10 +185,35 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 {link.label}
               </PreloadLink>
             ))}
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className={`${navLinkCls}`} aria-label="More pages">
+                  More <ChevronDown className="h-4 w-4 ml-1" aria-hidden="true" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {moreLinks.map((link) => (
+                  <DropdownMenuItem key={link.to} asChild>
+                    <Link to={link.to}>{link.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <PreloadLink
+              to="/get-help"
+              className={`inline-flex items-center h-11 px-4 rounded-full text-[15px] font-semibold text-white
+                          bg-gradient-to-r from-[#2A5FCC]/80 to-[#4E8DF8]/80
+                          border border-[#8DB3FF]/70 shadow-[0_4px_14px_rgba(42,95,204,0.28)]
+                          hover:from-[#2A5FCC]/95 hover:to-[#4E8DF8]/95 transition-colors ${focusRing}`}
+            >
+              Request Help
+            </PreloadLink>
           </nav>
 
           {/* Right utilities (desktop) */}
-          <div className="ml-auto hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1.5">
             {/* Easy Mode — glass bubble icon, matches Search/Settings */}
             <button
               onClick={toggleSeniorMode}
@@ -304,7 +329,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
           </div>
 
           {/* Mobile right utilities — only the hamburger remains. */}
-          <div className="ml-auto flex md:hidden items-center gap-0.5">
+          <div className="ml-auto flex md:hidden items-center gap-1.5">
             <button
               onClick={() => setMobileMenuOpen(true)}
               aria-label="Open navigation menu"
@@ -386,6 +411,18 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
               aria-label="Mobile navigation"
               className="flex-1 overflow-y-auto px-4 py-4"
             >
+              <Button
+                onClick={() => {
+                  navigate('/get-help');
+                  setMobileMenuOpen(false);
+                }}
+                className={`w-full mb-5 min-h-[52px] text-base font-bold rounded-xl text-white
+                            bg-gradient-to-r from-[#2A5FCC]/90 to-[#4E8DF8]/90
+                            border border-[#8DB3FF]/70 ${focusRing}`}
+              >
+                Request Help
+              </Button>
+
               {user && (
                 <div className="flex items-center gap-3 mb-5 pb-5 border-b border-[#E4DFD4] dark:border-white/10">
                   <Avatar className="h-11 w-11">
