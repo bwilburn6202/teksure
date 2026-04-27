@@ -9,6 +9,7 @@
     "validate:slugs": "node scripts/validate-slugs.mjs",
     "prebuild": "npm run validate:slugs",
     "build": "vite build",
+    "prebuild:ssr": "npm run validate:slugs",
     "build:ssr": "npm run build:client && npm run build:server",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",

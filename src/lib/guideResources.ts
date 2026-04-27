@@ -212,7 +212,7 @@ function normalize(s: string): string {
  * Returns up to 5 authoritative "Learn More" links for a guide.
  */
 export function getGuideResources(guide: GuideLike): OfficialResource[] {
-  const haystack = [guide.slug, ...(guide.tags ?? []).map(normalize)].join(' ');
+  const haystack = [guide.slug, guide.category, ...(guide.tags ?? []).map(normalize)].join(' ');
   for (const rule of RULES) {
     if (rule.keywords.some((kw) => haystack.includes(kw))) {
       return rule.resources.slice(0, 5);

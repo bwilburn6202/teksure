@@ -37,7 +37,7 @@ function scan() {
 
   for (const file of files) {
     const content = fs.readFileSync(file, 'utf8');
-    const re = /slug:\s*['"]([^'"]+)['"]/g;
+    const re = /slug:\s*['"`]([^'"`]+)['"`]/g;
     let match;
     while ((match = re.exec(content)) !== null) {
       const slug = match[1];
