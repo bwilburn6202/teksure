@@ -388,6 +388,7 @@ const CommonScamsLibrary     = lazy(() => import("./pages/tools/CommonScamsLibra
 const CookieConsentDecoder   = lazy(() => import("./pages/tools/CookieConsentDecoder"));
 const SocialPrivacyLockdown  = lazy(() => import("./pages/tools/SocialPrivacyLockdown"));
 const WeatherAlertsSetup     = lazy(() => import("./pages/tools/WeatherAlertsSetup"));
+const SocialSecuritySetup    = lazy(() => import("./pages/tools/SocialSecuritySetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -957,6 +958,7 @@ const AppContent = () => {
           <Route path="/tools/cookie-consent-decoder"      element={<CookieConsentDecoder />} />
           <Route path="/tools/social-privacy-lockdown"     element={<SocialPrivacyLockdown />} />
           <Route path="/tools/weather-alerts-setup"        element={<WeatherAlertsSetup />} />
+          <Route path="/tools/social-security-setup"       element={<SocialSecuritySetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
