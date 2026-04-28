@@ -402,6 +402,7 @@ const SmartLockPicker        = lazy(() => import("./pages/tools/SmartLockPicker"
 const KindleSetup            = lazy(() => import("./pages/tools/KindleSetup"));
 const MapsNavigationSetup    = lazy(() => import("./pages/tools/MapsNavigationSetup"));
 const FindLostPhone          = lazy(() => import("./pages/tools/FindLostPhone"));
+const VideoDoorbellPicker    = lazy(() => import("./pages/tools/VideoDoorbellPicker"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -985,6 +986,7 @@ const AppContent = () => {
           <Route path="/tools/kindle-setup"                element={<KindleSetup />} />
           <Route path="/tools/maps-navigation-setup"       element={<MapsNavigationSetup />} />
           <Route path="/tools/find-lost-phone"             element={<FindLostPhone />} />
+          <Route path="/tools/video-doorbell-picker"       element={<VideoDoorbellPicker />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
