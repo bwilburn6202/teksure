@@ -475,6 +475,12 @@ const SmartScalePicker       = lazy(() => import("./pages/tools/SmartScalePicker
 const SeniorTechMistakes     = lazy(() => import("./pages/tools/SeniorTechMistakes"));
 const PhoneCarrierComparison = lazy(() => import("./pages/tools/PhoneCarrierComparison"));
 const BluetoothPairingHelp   = lazy(() => import("./pages/tools/BluetoothPairingHelper2"));
+const PhoneRepairOrReplace   = lazy(() => import("./pages/tools/PhoneRepairOrReplace"));
+const OnlineClassesPicker    = lazy(() => import("./pages/tools/OnlineClassesPicker"));
+const CallScreenerSetup      = lazy(() => import("./pages/tools/CallScreenerSetup"));
+const EmailUnsubscribeFlow   = lazy(() => import("./pages/tools/EmailUnsubscribeFlow"));
+const FamilyRecipeApp        = lazy(() => import("./pages/tools/FamilyRecipeApp"));
+const SafeSeniorComputerSetup = lazy(() => import("./pages/tools/SafeSeniorComputerSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1131,6 +1137,12 @@ const AppContent = () => {
           <Route path="/tools/senior-tech-mistakes"        element={<SeniorTechMistakes />} />
           <Route path="/tools/phone-carrier-comparison"    element={<PhoneCarrierComparison />} />
           <Route path="/tools/bluetooth-pairing-help"      element={<BluetoothPairingHelp />} />
+          <Route path="/tools/phone-repair-or-replace"     element={<PhoneRepairOrReplace />} />
+          <Route path="/tools/online-classes-picker"       element={<OnlineClassesPicker />} />
+          <Route path="/tools/call-screener-setup"         element={<CallScreenerSetup />} />
+          <Route path="/tools/email-unsubscribe-flow"      element={<EmailUnsubscribeFlow />} />
+          <Route path="/tools/family-recipe-app"           element={<FamilyRecipeApp />} />
+          <Route path="/tools/safe-senior-computer-setup"  element={<SafeSeniorComputerSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
