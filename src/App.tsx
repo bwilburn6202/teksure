@@ -405,6 +405,7 @@ const FindLostPhone          = lazy(() => import("./pages/tools/FindLostPhone"))
 const VideoDoorbellPicker    = lazy(() => import("./pages/tools/VideoDoorbellPicker"));
 const StreamingServiceSetup  = lazy(() => import("./pages/tools/StreamingServiceSetup"));
 const DocumentScannerSetup   = lazy(() => import("./pages/tools/DocumentScannerSetup"));
+const RemoteTechHelp         = lazy(() => import("./pages/tools/RemoteTechHelp"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -991,6 +992,7 @@ const AppContent = () => {
           <Route path="/tools/video-doorbell-picker"       element={<VideoDoorbellPicker />} />
           <Route path="/tools/streaming-service-setup"     element={<StreamingServiceSetup />} />
           <Route path="/tools/document-scanner-setup"      element={<DocumentScannerSetup />} />
+          <Route path="/tools/remote-tech-help"            element={<RemoteTechHelp />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
