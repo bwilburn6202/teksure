@@ -404,6 +404,7 @@ const MapsNavigationSetup    = lazy(() => import("./pages/tools/MapsNavigationSe
 const FindLostPhone          = lazy(() => import("./pages/tools/FindLostPhone"));
 const VideoDoorbellPicker    = lazy(() => import("./pages/tools/VideoDoorbellPicker"));
 const StreamingServiceSetup  = lazy(() => import("./pages/tools/StreamingServiceSetup"));
+const DocumentScannerSetup   = lazy(() => import("./pages/tools/DocumentScannerSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -989,6 +990,7 @@ const AppContent = () => {
           <Route path="/tools/find-lost-phone"             element={<FindLostPhone />} />
           <Route path="/tools/video-doorbell-picker"       element={<VideoDoorbellPicker />} />
           <Route path="/tools/streaming-service-setup"     element={<StreamingServiceSetup />} />
+          <Route path="/tools/document-scanner-setup"      element={<DocumentScannerSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
