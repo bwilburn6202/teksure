@@ -407,6 +407,7 @@ const StreamingServiceSetup  = lazy(() => import("./pages/tools/StreamingService
 const DocumentScannerSetup   = lazy(() => import("./pages/tools/DocumentScannerSetup"));
 const RemoteTechHelp         = lazy(() => import("./pages/tools/RemoteTechHelp"));
 const OnlineFormsHelper      = lazy(() => import("./pages/tools/OnlineFormsHelper"));
+const ScreenRecordingGuide   = lazy(() => import("./pages/tools/ScreenRecordingGuide"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -995,6 +996,7 @@ const AppContent = () => {
           <Route path="/tools/document-scanner-setup"      element={<DocumentScannerSetup />} />
           <Route path="/tools/remote-tech-help"            element={<RemoteTechHelp />} />
           <Route path="/tools/online-forms-helper"         element={<OnlineFormsHelper />} />
+          <Route path="/tools/screen-recording-guide"      element={<ScreenRecordingGuide />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
