@@ -390,6 +390,7 @@ const SocialPrivacyLockdown  = lazy(() => import("./pages/tools/SocialPrivacyLoc
 const WeatherAlertsSetup     = lazy(() => import("./pages/tools/WeatherAlertsSetup"));
 const SocialSecuritySetup    = lazy(() => import("./pages/tools/SocialSecuritySetup"));
 const CarPhoneSetup          = lazy(() => import("./pages/tools/CarPhoneSetup"));
+const SellOnlineSafely       = lazy(() => import("./pages/tools/SellOnlineSafely"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -961,6 +962,7 @@ const AppContent = () => {
           <Route path="/tools/weather-alerts-setup"        element={<WeatherAlertsSetup />} />
           <Route path="/tools/social-security-setup"       element={<SocialSecuritySetup />} />
           <Route path="/tools/car-phone-setup"             element={<CarPhoneSetup />} />
+          <Route path="/tools/sell-online-safely"          element={<SellOnlineSafely />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
