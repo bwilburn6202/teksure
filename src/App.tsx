@@ -400,6 +400,7 @@ const WifiCallingSetup       = lazy(() => import("./pages/tools/WifiCallingSetup
 const FitnessTrackerPicker   = lazy(() => import("./pages/tools/FitnessTrackerPicker"));
 const SmartLockPicker        = lazy(() => import("./pages/tools/SmartLockPicker"));
 const KindleSetup            = lazy(() => import("./pages/tools/KindleSetup"));
+const MapsNavigationSetup    = lazy(() => import("./pages/tools/MapsNavigationSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -981,6 +982,7 @@ const AppContent = () => {
           <Route path="/tools/fitness-tracker-picker"      element={<FitnessTrackerPicker />} />
           <Route path="/tools/smart-lock-picker"           element={<SmartLockPicker />} />
           <Route path="/tools/kindle-setup"                element={<KindleSetup />} />
+          <Route path="/tools/maps-navigation-setup"       element={<MapsNavigationSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
