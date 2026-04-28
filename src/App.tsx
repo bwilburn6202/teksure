@@ -379,6 +379,7 @@ const DictationSetup         = lazy(() => import("./pages/tools/DictationSetup")
 const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionWizard"));
 const FreeTaxFiling          = lazy(() => import("./pages/tools/FreeTaxFiling"));
 const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack"));
+const SharedFamilyCalendar   = lazy(() => import("./pages/tools/SharedFamilyCalendar"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -939,6 +940,7 @@ const AppContent = () => {
           <Route path="/tools/account-deletion-wizard"     element={<AccountDeletionWizard />} />
           <Route path="/tools/free-tax-filing"             element={<FreeTaxFiling />} />
           <Route path="/tools/library-power-pack"          element={<LibraryPowerPack />} />
+          <Route path="/tools/shared-family-calendar"      element={<SharedFamilyCalendar />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
