@@ -469,6 +469,12 @@ const GasBuddyAlternatives   = lazy(() => import("./pages/tools/GasBuddyAlternat
 const VideoEditingApps       = lazy(() => import("./pages/tools/VideoEditingApps"));
 const HomeCareAppsForFamily  = lazy(() => import("./pages/tools/HomeCareAppsForFamily"));
 const RealEstateAppPicker    = lazy(() => import("./pages/tools/RealEstateAppPicker"));
+const EstateSaleHelper       = lazy(() => import("./pages/tools/EstateSaleHelper"));
+const GroceryListApps        = lazy(() => import("./pages/tools/GroceryListApps"));
+const SmartScalePicker       = lazy(() => import("./pages/tools/SmartScalePicker"));
+const SeniorTechMistakes     = lazy(() => import("./pages/tools/SeniorTechMistakes"));
+const PhoneCarrierComparison = lazy(() => import("./pages/tools/PhoneCarrierComparison"));
+const BluetoothPairingHelp   = lazy(() => import("./pages/tools/BluetoothPairingHelper2"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1119,6 +1125,12 @@ const AppContent = () => {
           <Route path="/tools/video-editing-apps"          element={<VideoEditingApps />} />
           <Route path="/tools/home-care-apps-for-family"   element={<HomeCareAppsForFamily />} />
           <Route path="/tools/real-estate-app-picker"      element={<RealEstateAppPicker />} />
+          <Route path="/tools/estate-sale-helper"          element={<EstateSaleHelper />} />
+          <Route path="/tools/grocery-list-apps"           element={<GroceryListApps />} />
+          <Route path="/tools/smart-scale-picker"          element={<SmartScalePicker />} />
+          <Route path="/tools/senior-tech-mistakes"        element={<SeniorTechMistakes />} />
+          <Route path="/tools/phone-carrier-comparison"    element={<PhoneCarrierComparison />} />
+          <Route path="/tools/bluetooth-pairing-help"      element={<BluetoothPairingHelp />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
