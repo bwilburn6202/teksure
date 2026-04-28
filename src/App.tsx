@@ -380,6 +380,7 @@ const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionW
 const FreeTaxFiling          = lazy(() => import("./pages/tools/FreeTaxFiling"));
 const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack"));
 const SharedFamilyCalendar   = lazy(() => import("./pages/tools/SharedFamilyCalendar"));
+const LowCostInternet        = lazy(() => import("./pages/tools/LowCostInternet"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -941,6 +942,7 @@ const AppContent = () => {
           <Route path="/tools/free-tax-filing"             element={<FreeTaxFiling />} />
           <Route path="/tools/library-power-pack"          element={<LibraryPowerPack />} />
           <Route path="/tools/shared-family-calendar"      element={<SharedFamilyCalendar />} />
+          <Route path="/tools/low-cost-internet"           element={<LowCostInternet />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
