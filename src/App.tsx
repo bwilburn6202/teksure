@@ -336,6 +336,23 @@ const CaregiverToolkit       = lazy(() => import("./pages/toolkits/CaregiverTool
 const SuspiciousCallSim      = lazy(() => import("./pages/practice/SuspiciousCallSim"));
 const VocabFlashcards        = lazy(() => import("./pages/practice/VocabFlashcards"));
 
+// ── New tools and hubs (April 2026 expansion) ──────────────────────────────
+const ScamMessageDecoder     = lazy(() => import("./pages/tools/ScamMessageDecoder"));
+const PasswordHealth         = lazy(() => import("./pages/tools/PasswordHealth"));
+const DeviceRetirementHelper = lazy(() => import("./pages/tools/DeviceRetirementHelper"));
+const RobocallBlockerSetup   = lazy(() => import("./pages/tools/RobocallBlockerSetup"));
+const ScamWitnessStatement   = lazy(() => import("./pages/tools/ScamWitnessStatement"));
+const TechCheatsheetGenerator = lazy(() => import("./pages/tools/TechCheatsheetGenerator"));
+const FamilyTechRoundtable   = lazy(() => import("./pages/tools/FamilyTechRoundtable"));
+const GrandparentDeviceSetup = lazy(() => import("./pages/GrandparentDeviceSetup"));
+const AccountAfterLoss       = lazy(() => import("./pages/AccountAfterLoss"));
+const LowVisionSetup         = lazy(() => import("./pages/LowVisionSetup"));
+const DailyTip               = lazy(() => import("./pages/DailyTip"));
+const TechWillBuilder        = lazy(() => import("./pages/tools/TechWillBuilder"));
+const UpdateDecisionHelper   = lazy(() => import("./pages/tools/UpdateDecisionHelper"));
+const HearingAidPairingWizard = lazy(() => import("./pages/tools/HearingAidPairingWizard"));
+const Start                  = lazy(() => import("./pages/Start"));
+
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -847,6 +864,27 @@ const AppContent = () => {
 
           {/* Printables — fillable, printable one-page templates */}
           <Route path="/printables/weekly-newsletter" element={<WeeklyNewsletterTemplate />} />
+
+          {/* ── April 2026 expansion: new tools ─────────────────────────── */}
+          <Route path="/tools/scam-message-decoder"     element={<ScamMessageDecoder />} />
+          <Route path="/tools/password-health"          element={<PasswordHealth />} />
+          <Route path="/tools/device-retirement-helper" element={<DeviceRetirementHelper />} />
+          <Route path="/tools/robocall-blocker-setup"   element={<RobocallBlockerSetup />} />
+          <Route path="/tools/scam-witness-statement"   element={<ScamWitnessStatement />} />
+          <Route path="/tools/tech-cheatsheet-generator" element={<TechCheatsheetGenerator />} />
+          <Route path="/tools/family-tech-roundtable"   element={<FamilyTechRoundtable />} />
+
+          {/* ── April 2026 expansion: new top-level hubs ────────────────── */}
+          <Route path="/grandparent-device-setup" element={<GrandparentDeviceSetup />} />
+          <Route path="/account-after-loss"       element={<AccountAfterLoss />} />
+          <Route path="/low-vision-setup"         element={<LowVisionSetup />} />
+          <Route path="/daily-tip"                element={<DailyTip />} />
+
+          {/* ── April 2026 expansion (round 2) ──────────────────────────── */}
+          <Route path="/tools/tech-will-builder"          element={<TechWillBuilder />} />
+          <Route path="/tools/update-decision-helper"     element={<UpdateDecisionHelper />} />
+          <Route path="/tools/hearing-aid-pairing-wizard" element={<HearingAidPairingWizard />} />
+          <Route path="/start"                            element={<Start />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
