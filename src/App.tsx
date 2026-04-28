@@ -371,6 +371,7 @@ const VoicemailSetup         = lazy(() => import("./pages/tools/VoicemailSetup")
 const TechBuddySetup         = lazy(() => import("./pages/tools/TechBuddySetup"));
 const VoterInfoVerifier      = lazy(() => import("./pages/tools/VoterInfoVerifier"));
 const AmazonReviewSpotter    = lazy(() => import("./pages/tools/AmazonReviewSpotter"));
+const SpeedUpDevice          = lazy(() => import("./pages/tools/SpeedUpDevice"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -923,6 +924,7 @@ const AppContent = () => {
           <Route path="/tools/tech-buddy-setup"            element={<TechBuddySetup />} />
           <Route path="/tools/voter-info-verifier"         element={<VoterInfoVerifier />} />
           <Route path="/tools/amazon-review-spotter"       element={<AmazonReviewSpotter />} />
+          <Route path="/tools/speed-up-device"             element={<SpeedUpDevice />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
