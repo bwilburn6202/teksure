@@ -439,6 +439,7 @@ const AppContent = () => {
           <Route path="/tools/keyboard-shortcuts" element={<KeyboardShortcuts />} />
           <Route path="/tools/email-templates" element={<EmailTemplates />} />
           <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
+          <Route path="/scam-alerts" element={<Navigate to="/safety/scam-alerts" replace />} />
           <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
           <Route path="/tips" element={<Tips />} />
           <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
@@ -534,6 +535,7 @@ const AppContent = () => {
           <Route path="/chromebook" element={<ChromebookHub />} />
           <Route path="/courses/internet-basics" element={<InternetBasics />} />
           <Route path="/tools/is-this-a-scam" element={<IsThisAScam />} />
+          <Route path="/tools/is-this-real" element={<Navigate to="/tools/is-this-a-scam" replace />} />
           <Route path="/tools/device-comparison" element={<DeviceComparison />} />
           <Route path="/tools/phone-plan-comparator" element={<PhonePlanComparator />} />
           <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
