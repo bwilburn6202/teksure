@@ -362,6 +362,7 @@ const AiImageSpotter         = lazy(() => import("./pages/tools/AiImageSpotter")
 const CordCutterWizard       = lazy(() => import("./pages/tools/CordCutterWizard"));
 const OnlineBankingSafety    = lazy(() => import("./pages/tools/OnlineBankingSafety"));
 const SeniorFriendlyApps     = lazy(() => import("./pages/tools/SeniorFriendlyApps"));
+const FindLostItems          = lazy(() => import("./pages/tools/FindLostItems"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -905,6 +906,7 @@ const AppContent = () => {
           <Route path="/tools/cord-cutter-wizard"          element={<CordCutterWizard />} />
           <Route path="/tools/online-banking-safety"       element={<OnlineBankingSafety />} />
           <Route path="/tools/senior-friendly-apps"        element={<SeniorFriendlyApps />} />
+          <Route path="/tools/find-lost-items"             element={<FindLostItems />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
