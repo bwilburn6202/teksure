@@ -373,6 +373,7 @@ const VoterInfoVerifier      = lazy(() => import("./pages/tools/VoterInfoVerifie
 const AmazonReviewSpotter    = lazy(() => import("./pages/tools/AmazonReviewSpotter"));
 const SpeedUpDevice          = lazy(() => import("./pages/tools/SpeedUpDevice"));
 const RouterUpgradeHelper    = lazy(() => import("./pages/tools/RouterUpgradeHelper"));
+const TelehealthPrep         = lazy(() => import("./pages/tools/TelehealthPrep"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -927,6 +928,7 @@ const AppContent = () => {
           <Route path="/tools/amazon-review-spotter"       element={<AmazonReviewSpotter />} />
           <Route path="/tools/speed-up-device"             element={<SpeedUpDevice />} />
           <Route path="/tools/router-upgrade-helper"       element={<RouterUpgradeHelper />} />
+          <Route path="/tools/telehealth-prep"             element={<TelehealthPrep />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
