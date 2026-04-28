@@ -394,6 +394,7 @@ const SellOnlineSafely       = lazy(() => import("./pages/tools/SellOnlineSafely
 const CreditFreezeWalkthrough = lazy(() => import("./pages/tools/CreditFreezeWalkthrough"));
 const PodcastStarter         = lazy(() => import("./pages/tools/PodcastStarter"));
 const OnlineMemorialSetup    = lazy(() => import("./pages/tools/OnlineMemorialSetup"));
+const PaymentAppSetup        = lazy(() => import("./pages/tools/PaymentAppSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -969,6 +970,7 @@ const AppContent = () => {
           <Route path="/tools/credit-freeze-walkthrough"   element={<CreditFreezeWalkthrough />} />
           <Route path="/tools/podcast-starter"             element={<PodcastStarter />} />
           <Route path="/tools/online-memorial-setup"       element={<OnlineMemorialSetup />} />
+          <Route path="/tools/payment-app-setup"           element={<PaymentAppSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
