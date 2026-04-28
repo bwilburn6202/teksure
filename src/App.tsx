@@ -551,7 +551,9 @@ const AppContent = () => {
           <Route path="/retirement-tech" element={<RetirementTech />} />
           <Route path="/new-grandparent-tech" element={<NewGrandparentTech />} />
           <Route path="/ask" element={<AskTekSure />} />
+          <Route path="/community/ask" element={<Navigate to="/ask" replace />} />
           <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/stories" element={<Navigate to="/success-stories" replace />} />
           <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
           <Route path="/tools/url-safety-checker" element={<UrlSafetyChecker />} />
           <Route path="/tools/qr-code-explainer" element={<QrCodeExplainer />} />
