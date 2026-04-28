@@ -443,6 +443,7 @@ const AppContent = () => {
           <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
           <Route path="/tips" element={<Tips />} />
           <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
+          <Route path="/tools/tech-jargon-translator" element={<Navigate to="/tools/jargon-translator" replace />} />
           <Route path="/tools/quick-reference" element={<QuickReference />} />
           <Route path="/tools/troubleshooter" element={<Troubleshooter />} />
           <Route path="/tools/device-chooser" element={<DeviceChooser />} />
