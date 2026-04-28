@@ -366,6 +366,7 @@ const FindLostItems          = lazy(() => import("./pages/tools/FindLostItems"))
 const SmartSpeakerPicker     = lazy(() => import("./pages/tools/SmartSpeakerPicker"));
 const TabletOrLaptop         = lazy(() => import("./pages/tools/TabletOrLaptop"));
 const PhoneInsuranceDecision = lazy(() => import("./pages/tools/PhoneInsuranceDecision"));
+const PhotoLibraryTips       = lazy(() => import("./pages/tools/PhotoLibraryTips"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -913,6 +914,7 @@ const AppContent = () => {
           <Route path="/tools/smart-speaker-picker"        element={<SmartSpeakerPicker />} />
           <Route path="/tools/tablet-or-laptop"            element={<TabletOrLaptop />} />
           <Route path="/tools/phone-insurance-decision"    element={<PhoneInsuranceDecision />} />
+          <Route path="/tools/photo-library-tips"          element={<PhotoLibraryTips />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
