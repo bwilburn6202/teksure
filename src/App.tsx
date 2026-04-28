@@ -448,6 +448,9 @@ const RealEstateWireScam     = lazy(() => import("./pages/tools/RealEstateWireSc
 const IphoneShortcuts        = lazy(() => import("./pages/tools/IphoneShortcuts"));
 const AndroidShortcuts       = lazy(() => import("./pages/tools/AndroidShortcuts"));
 const CryptoScamDefense      = lazy(() => import("./pages/tools/CryptoScamDefense"));
+const NutritionAppPicker     = lazy(() => import("./pages/tools/NutritionAppPicker"));
+const InvestmentAppPicker    = lazy(() => import("./pages/tools/InvestmentAppPicker"));
+const BloodPressureApps      = lazy(() => import("./pages/tools/BloodPressureApps"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1077,6 +1080,9 @@ const AppContent = () => {
           <Route path="/tools/iphone-shortcuts"            element={<IphoneShortcuts />} />
           <Route path="/tools/android-shortcuts"           element={<AndroidShortcuts />} />
           <Route path="/tools/crypto-scam-defense"         element={<CryptoScamDefense />} />
+          <Route path="/tools/nutrition-app-picker"        element={<NutritionAppPicker />} />
+          <Route path="/tools/investment-app-picker"       element={<InvestmentAppPicker />} />
+          <Route path="/tools/blood-pressure-apps"         element={<BloodPressureApps />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
