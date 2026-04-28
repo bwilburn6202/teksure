@@ -374,6 +374,7 @@ const AmazonReviewSpotter    = lazy(() => import("./pages/tools/AmazonReviewSpot
 const SpeedUpDevice          = lazy(() => import("./pages/tools/SpeedUpDevice"));
 const RouterUpgradeHelper    = lazy(() => import("./pages/tools/RouterUpgradeHelper"));
 const TelehealthPrep         = lazy(() => import("./pages/tools/TelehealthPrep"));
+const MarketplaceScamSpotter = lazy(() => import("./pages/tools/MarketplaceScamSpotter"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -929,6 +930,7 @@ const AppContent = () => {
           <Route path="/tools/speed-up-device"             element={<SpeedUpDevice />} />
           <Route path="/tools/router-upgrade-helper"       element={<RouterUpgradeHelper />} />
           <Route path="/tools/telehealth-prep"             element={<TelehealthPrep />} />
+          <Route path="/tools/marketplace-scam-spotter"    element={<MarketplaceScamSpotter />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
