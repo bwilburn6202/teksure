@@ -425,6 +425,10 @@ const SmartGarageDoor        = lazy(() => import("./pages/tools/SmartGarageDoor"
 const RobotVacuumPicker      = lazy(() => import("./pages/tools/RobotVacuumPicker"));
 const ESignatureSetup        = lazy(() => import("./pages/tools/ESignatureSetup"));
 const MusicStreamingPicker   = lazy(() => import("./pages/tools/MusicStreamingPicker"));
+const HomeOfficeSetup        = lazy(() => import("./pages/tools/HomeOfficeSetup"));
+const DeepfakeVideoSpotter   = lazy(() => import("./pages/tools/DeepfakeVideoSpotter"));
+const FreeLegalHelp          = lazy(() => import("./pages/tools/FreeLegalHelp"));
+const SpouseSurvivorBenefits = lazy(() => import("./pages/tools/SpouseSurvivorBenefits"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1031,6 +1035,10 @@ const AppContent = () => {
           <Route path="/tools/robot-vacuum-picker"         element={<RobotVacuumPicker />} />
           <Route path="/tools/e-signature-setup"           element={<ESignatureSetup />} />
           <Route path="/tools/music-streaming-picker"      element={<MusicStreamingPicker />} />
+          <Route path="/tools/home-office-setup"           element={<HomeOfficeSetup />} />
+          <Route path="/tools/deepfake-video-spotter"      element={<DeepfakeVideoSpotter />} />
+          <Route path="/tools/free-legal-help"             element={<FreeLegalHelp />} />
+          <Route path="/tools/spouse-survivor-benefits"    element={<SpouseSurvivorBenefits />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
