@@ -352,6 +352,7 @@ const TechWillBuilder        = lazy(() => import("./pages/tools/TechWillBuilder"
 const UpdateDecisionHelper   = lazy(() => import("./pages/tools/UpdateDecisionHelper"));
 const HearingAidPairingWizard = lazy(() => import("./pages/tools/HearingAidPairingWizard"));
 const Start                  = lazy(() => import("./pages/Start"));
+const IdTheftRecovery        = lazy(() => import("./pages/tools/IdTheftRecovery"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -885,6 +886,7 @@ const AppContent = () => {
           <Route path="/tools/update-decision-helper"     element={<UpdateDecisionHelper />} />
           <Route path="/tools/hearing-aid-pairing-wizard" element={<HearingAidPairingWizard />} />
           <Route path="/start"                            element={<Start />} />
+          <Route path="/tools/id-theft-recovery"          element={<IdTheftRecovery />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
