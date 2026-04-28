@@ -389,6 +389,7 @@ const CookieConsentDecoder   = lazy(() => import("./pages/tools/CookieConsentDec
 const SocialPrivacyLockdown  = lazy(() => import("./pages/tools/SocialPrivacyLockdown"));
 const WeatherAlertsSetup     = lazy(() => import("./pages/tools/WeatherAlertsSetup"));
 const SocialSecuritySetup    = lazy(() => import("./pages/tools/SocialSecuritySetup"));
+const CarPhoneSetup          = lazy(() => import("./pages/tools/CarPhoneSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -959,6 +960,7 @@ const AppContent = () => {
           <Route path="/tools/social-privacy-lockdown"     element={<SocialPrivacyLockdown />} />
           <Route path="/tools/weather-alerts-setup"        element={<WeatherAlertsSetup />} />
           <Route path="/tools/social-security-setup"       element={<SocialSecuritySetup />} />
+          <Route path="/tools/car-phone-setup"             element={<CarPhoneSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
