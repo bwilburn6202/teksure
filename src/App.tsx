@@ -382,6 +382,7 @@ const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack
 const SharedFamilyCalendar   = lazy(() => import("./pages/tools/SharedFamilyCalendar"));
 const LowCostInternet        = lazy(() => import("./pages/tools/LowCostInternet"));
 const StayConnected          = lazy(() => import("./pages/tools/StayConnected"));
+const AiChatbotGuide         = lazy(() => import("./pages/tools/AiChatbotGuide"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -945,6 +946,7 @@ const AppContent = () => {
           <Route path="/tools/shared-family-calendar"      element={<SharedFamilyCalendar />} />
           <Route path="/tools/low-cost-internet"           element={<LowCostInternet />} />
           <Route path="/tools/stay-connected"              element={<StayConnected />} />
+          <Route path="/tools/ai-chatbot-guide"            element={<AiChatbotGuide />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
