@@ -573,7 +573,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
       { title: 'Click the search filter icon', content: 'In the search bar at the top, click the sliders icon on the right side. A search form appears where you can set criteria.' },
       { title: 'Set the matching criteria', content: 'Fill in any fields you want: From (for a specific sender), Subject (for keywords in the subject), Has the words (anywhere in the email). You can use multiple fields together.' },
       { title: 'Click Create filter', content: 'Below the form, click Create filter. On the next screen, pick what Gmail should do: Skip the Inbox, Apply a label, Mark as read, Star, Delete, or Forward.' },
-      { title: 'Apply to existing messages', content: 'Check the box that says Also apply filter to matching conversations. This runs the filter backwards on every email you have ever received that matches, not just new ones.' },
+      { title: 'Apply to existing messages', content: 'Check the box that says Also apply filter to matching conversations. This runs the filter backwards on every email you have ever received that matches, not only new ones.' },
     ],
   },
   {
@@ -719,8 +719,8 @@ The biggest single upgrade is lighting that comes from in front of you, not behi
 Chrome, Edge, Safari, and Firefox all support tab groups. The steps are slightly different in each, but the idea is the same: right-click a tab and pick Add to Group.`,
     steps: [
       { title: 'In Chrome or Edge, right-click a tab', content: 'Right-click any tab at the top of the browser. Pick Add Tab to New Group from the menu that appears.' },
-      { title: 'Name the group and pick a color', content: 'A small bubble appears next to the tab. Type a name (like Work or Shopping) and pick a color. The color makes it easy to tell groups apart.' },
-      { title: 'Add more tabs to the group', content: 'Right-click another tab, pick Add Tab to Group, and choose the group you just made. Or drag a tab into the colored bubble at the top of the screen.' },
+      { title: 'Name the group and pick a color', content: 'A small bubble appears next to the tab. Type a name (like Work or Shopping) and pick a color. The color lets you tell groups apart at a glance.' },
+      { title: 'Add more tabs to the group', content: 'Right-click another tab, pick Add Tab to Group, and choose the group you created. Or drag a tab into the colored bubble at the top of the screen.' },
       { title: 'Collapse the group', content: 'Click the colored group name at the top. All the tabs in that group hide away, leaving only the group name. Click again to bring them back.' },
       { title: 'In Safari, use Tab Groups', content: 'On Mac or iPhone Safari, click File, then New Tab Group (Mac) or tap the tabs icon and then the down arrow (iPhone). Tab Groups in Safari work more like saved sessions than colored labels, but the idea is similar.' },
     ],
@@ -743,7 +743,7 @@ It is useful for shopping for a gift on a shared computer, signing into a second
       { title: 'In Safari on Mac, press Cmd+Shift+N', content: 'Press Command, Shift, and N together. A new window opens with a dark address bar to show it is private.' },
       { title: 'In Safari on iPhone', content: 'Tap the tabs icon (two overlapping squares) at the bottom. Tap the button in the bottom-middle that shows the current tab group, then pick Private. New tabs are private until you switch back.' },
       { title: 'In Firefox, press Ctrl+Shift+P', content: 'On Windows, press Ctrl+Shift+P. On Mac, press Command+Shift+P. A new window opens with a purple mask icon.' },
-      { title: 'Understand the limits', content: 'Private browsing hides activity only from the device. Your internet provider, employer, school, or websites you sign into can still see what you do. For real anonymity, you need a VPN or Tor — not just incognito mode.' },
+      { title: 'Understand the limits', content: 'Private browsing hides activity only from the device. Your internet provider, employer, school, or websites you sign into can still see what you do. For real anonymity, you need a VPN or Tor — incognito mode alone is not enough.' },
     ],
   },
   {

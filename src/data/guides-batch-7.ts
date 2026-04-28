@@ -61,7 +61,7 @@ The whole setup typically takes less than 15 minutes. After it is complete, spen
     difficulty: 'Beginner',
     body: `Google Docs, Sheets, and Slides are free programs that come with any Google account. Google Docs works like Microsoft Word for writing letters and documents. Google Sheets works like Microsoft Excel for making lists and doing basic math in rows and columns. Google Slides works like Microsoft PowerPoint for creating presentations. All three run directly in the Chrome browser on your Chromebook — no installation needed.
 
-One of the biggest advantages is that your work saves automatically every few seconds to Google Drive (Google's online storage). You can start a document on your Chromebook and then open it later on a phone or a different computer just by logging into your Google account. You can also share a document with family members so you can both read or edit it at the same time.
+One of the biggest advantages is that your work saves automatically every few seconds to Google Drive (Google's online storage). You can start a document on your Chromebook and then open it later on a phone or a different computer by signing in to your Google account. You can also share a document with family members so you can both read or edit it at the same time.
 
 If someone sends you a Microsoft Word (.docx) file, you can open it in Google Docs and even save it back as a Word file when you are done.`,
     steps: [
@@ -109,7 +109,7 @@ Once your printer is set up once, it remembers the connection for future print j
     difficulty: 'Beginner',
     body: `When you turn on a new iPad for the first time, Apple walks you through each setup step one screen at a time. The process is straightforward — you will choose your language, connect to Wi-Fi, and sign in (or create) an Apple ID, which is the account that lets you download apps and back up your data. The whole setup typically takes 15–25 minutes.
 
-Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is just an email address and password that Apple uses to identify you — you can use any existing email address to create one.
+Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is an email address and password that Apple uses to identify you — you can use any existing email address to create one.
 
 After setup, take a few minutes to increase the text size and screen brightness to a comfortable level — these settings make a big difference for everyday use.`,
     steps: [
@@ -328,7 +328,7 @@ You can find Inactive Account Manager in your Google account settings at myaccou
       { title: 'Set your inactivity timeout period', content: 'Choose how long Google should wait before considering your account inactive: 3, 6, 12, or 18 months of no sign-ins. Google will send you an alert before this period ends so you can sign in if you are still active.' },
       { title: 'Add a trusted contact', content: 'Click "Add person" to name someone who will be notified when your account becomes inactive. Enter their phone number and email address. You can add up to 10 people.' },
       { title: 'Choose what data to share with them', content: 'For each trusted contact, select which parts of your Google account they can download: Gmail, Drive, Photos, Calendar, and so on. They will receive a download link with that data.' },
-      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to simply be preserved without anyone accessing it, you can skip this step.' },
+      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to stay preserved without anyone accessing it, you can skip this step.' },
     ],
   },
   {
@@ -660,7 +660,7 @@ If you lose your bookmarks (for example, after a computer issue or switching to 
       { title: 'Bookmark a page in Safari', content: 'In Safari on iPhone or iPad, tap the Share button (a square with an arrow pointing up) at the bottom of the screen. Scroll through the options and tap "Add Bookmark." Confirm the name and tap "Save."' },
       { title: 'Access your bookmarks', content: 'In Chrome, click the three vertical dots (menu) in the upper right corner and hover over "Bookmarks" to see your saved sites. In Safari on iPhone, tap the open book icon at the bottom of the screen.' },
       { title: 'Create a bookmarks folder', content: 'In Chrome, click the three dots > Bookmarks > Bookmark Manager. Right-click in the panel and select "Add new folder." Name the folder and then drag bookmarks into it. In Safari on Mac, go to Bookmarks > Edit Bookmarks to organize.' },
-      { title: 'Show the bookmarks bar', content: 'In Chrome on a computer, press Ctrl+Shift+B (Windows) or Command+Shift+B (Mac) to show a row of bookmarks just below the address bar. This makes your most-visited sites visible at all times for quick access.' },
+      { title: 'Show the bookmarks bar', content: 'In Chrome on a computer, press Ctrl+Shift+B (Windows) or Command+Shift+B (Mac) to show a row of bookmarks directly below the address bar. This makes your most-visited sites visible at all times for quick access.' },
     ],
   },
   {

@@ -2798,7 +2798,7 @@ Most modern routers include basic parental controls. Log in to your router's adm
 
 Look for "Parental Controls," "Access Control," or "Content Filtering" in the settings. Common features include: content filtering (blocks adult content and malicious websites), schedule controls (set times when specific devices can and cannot access the internet — great for bedtime), device pausing (instantly pause internet access for a specific device), and usage monitoring (see how much time devices spend online).
 
-If your router's built-in controls are limited, consider these options: many mesh WiFi systems (Google Nest WiFi, Eero, TP-Link Deco) include robust parental controls in their apps — much easier to use than traditional router settings. Third-party services like OpenDNS Family Shield (free) or Circle ($10/month device) offer more advanced filtering and monitoring.
+If your router's built-in controls are limited, consider these options: many mesh WiFi systems (Google Nest WiFi, Eero, TP-Link Deco) include built-in parental controls in their apps — more capable than most traditional router settings. Third-party services like OpenDNS Family Shield (free) or Circle ($10/month device) offer more advanced filtering and monitoring.
 
 Set reasonable expectations. Parental controls are a tool, not a complete solution. They work best as part of ongoing conversations about internet safety. Older children may find ways around filters, so open communication is important.`,
     steps: [
@@ -5060,7 +5060,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '📝',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Microsoft Word Online is a free version of the popular Word program that runs entirely in your web browser. You do not need to buy Office or install anything — just a free Microsoft account. It is great for writing letters, resumes, or any document you want to save and access from any device.`,
+    body: `Microsoft Word Online is a free version of the popular Word program that runs entirely in your web browser. You do not need to buy Office or install anything — only a free Microsoft account is required. It is great for writing letters, resumes, or any document you want to save and access from any device.`,
     steps: [
       { title: 'Create a free Microsoft account', content: 'Go to account.microsoft.com and click "Create a Microsoft account." Enter your email address (or create a new Outlook address) and follow the prompts to set a password and verify your identity.' },
       { title: 'Go to Word Online', content: 'Go to office.com and sign in with your Microsoft account. You will see a list of free Office apps. Click on "Word" to open the online version.' },
@@ -5125,8 +5125,8 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Choose a cloud storage service', content: 'Use Google Drive (drive.google.com) if you have a Gmail account — it gives you 15 GB free. Use OneDrive (onedrive.com) if you use Windows or Microsoft — also 15 GB free. Use iCloud if you have an iPhone or Mac — 5 GB free, with upgrades available.' },
       { title: 'Upload a file', content: 'On Google Drive or OneDrive, go to the website and drag a file from your computer into the browser window, or click "New" then "File upload." On iPhone, files saved in apps like Photos or Notes sync to iCloud automatically.' },
       { title: 'Access your files from another device', content: 'Sign in to the same account on any device and your files will be there. On a phone, download the Google Drive, OneDrive, or Files app (iPhone) to access your cloud files.' },
-      { title: 'Organize files into folders', content: 'Right-click (or tap and hold on mobile) to create a new folder. Drag files into folders to keep things organized. Good folder names like "Tax Documents 2025" or "Family Photos" make it easy to find things later.' },
-      { title: 'Share a file with someone', content: `Right-click a file and choose "Share." Enter the other person's email address or click "Copy link" to get a shareable link. You can choose whether they can just view it or also edit it.` },
+      { title: 'Organize files into folders', content: 'Right-click (or tap and hold on mobile) to create a new folder. Drag files into folders to keep things organized. Good folder names like "Tax Documents 2025" or "Family Photos" help you find things later.' },
+      { title: 'Share a file with someone', content: `Right-click a file and choose "Share." Enter the other person's email address or click "Copy link" to get a shareable link. You can choose whether they can view it or also edit it.` },
     ],
   },
 
@@ -5267,7 +5267,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     body: `Walmart's pickup and delivery service lets you order groceries and household items from Walmart.com or the Walmart app, then pick them up curbside without entering the store — or have them delivered to your home. Curbside pickup is free with no minimum order at most locations, making it one of the most cost-effective grocery services available.`,
     steps: [
       { title: 'Create a Walmart account', content: 'Go to walmart.com or download the Walmart app. Click "Create an account" and enter your email address and a password. You will need to add your delivery address and a payment method.' },
-      { title: 'Shop for items online', content: 'Use the search bar to find items, or browse the Grocery section. Add items to your cart just like any online store. The app shows which items are in stock at your local store.' },
+      { title: 'Shop for items online', content: 'Use the search bar to find items, or browse the Grocery section. Add items to your cart the same way as any other online store. The app shows which items are in stock at your local store.' },
       { title: 'Choose pickup or delivery at checkout', content: 'When you are ready to check out, select "Pickup" for free curbside service or "Delivery" if you prefer items brought to your door. Choose a pickup or delivery time slot that works for you.' },
       { title: 'Check in when you arrive (for pickup)', content: `When you pull into the Walmart parking lot, open the app and tap "I'm here." Tell the app which parking spot you are in. A Walmart associate will bring your order to your car — you do not need to go inside.` },
       { title: 'Review your order after pickup', content: 'If any items were out of stock, the app will show substitutions that were made. You can approve substitutions in advance in your account settings. Report any missing or incorrect items through the app for a quick refund.' },
@@ -5434,7 +5434,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
       { title: 'Choose the mobile boarding pass option', content: 'When check-in is complete, the site or app will ask how you want your boarding pass. Choose "Email" or "Add to Apple Wallet" or "Add to Google Wallet." Pick the wallet option if you can — it is the most convenient.' },
       { title: `Add the pass to your phone's wallet`, content: 'On iPhone, tap "Add to Apple Wallet" and then tap "Add." On Android, tap "Add to Google Wallet." The boarding pass will appear in your Wallet app with your flight details, seat number, and barcode.' },
       { title: 'Access the pass at the airport', content: 'Open the Wallet app (iPhone) or Google Wallet (Android) before you reach the TSA checkpoint. Show the barcode to the scanner at security and again at the gate. The pass should work even in Airplane Mode.' },
-      { title: 'Keep your phone charged', content: 'Make sure your phone has at least 50% battery before heading to the airport. Bring a charging cable or portable battery pack just in case. As a backup, screenshot your boarding pass so you have it even if the app has trouble loading.' },
+      { title: 'Keep your phone charged', content: 'Make sure your phone has at least 50% battery before heading to the airport. Bring a charging cable or portable battery pack in case your battery runs low. As a backup, screenshot your boarding pass so you have it even if the app has trouble loading.' },
     ],
   },
 
@@ -5472,7 +5472,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '🎬',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Disney Plus is a streaming service with thousands of movies and TV shows from Disney, Pixar, Marvel, Star Wars, and National Geographic — all for a monthly subscription fee. It works on smart TVs, phones, tablets, and computers, with no commercials on most plans. Getting started takes just a few minutes.`,
+    body: `Disney Plus is a streaming service with thousands of movies and TV shows from Disney, Pixar, Marvel, Star Wars, and National Geographic — all for a monthly subscription fee. It works on smart TVs, phones, tablets, and computers, with no commercials on most plans. Getting started takes a few minutes.`,
     steps: [
       { title: 'Create a Disney Plus account', content: 'Go to disneyplus.com and click "Get Disney+" or download the Disney+ app on your device. Click "Agree and Subscribe," enter your email address, create a password, and choose a subscription plan. Plans include an ad-supported option starting around $8 per month.' },
       { title: 'Enter your payment information', content: 'Enter your credit or debit card details to complete your subscription. Disney Plus offers a free trial for new members on some plans — check the current offer when you sign up.' },
@@ -5572,7 +5572,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '🎵',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and it is easy to get started.`,
+    body: `Spotify has over 100 million songs and 5 million podcasts available on demand. The free tier lets you listen with occasional ads, while Spotify Premium removes ads and lets you download music for offline listening. It works on phones, computers, smart speakers, and in your car — and getting started takes only minutes.`,
     steps: [
       { title: 'Create a free Spotify account', content: 'Go to spotify.com or download the Spotify app on your phone. Click "Sign up for free" and register with your email address or your Google or Facebook account. The free plan gives you access to the full library with ads.' },
       { title: 'Search for music or artists', content: `Tap the magnifying glass icon and type an artist name, song title, or genre. Tap a result to see that artist's top songs and albums. Tap the play button next to any song to start listening.` },
@@ -5760,7 +5760,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '💊',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and makes it easy to track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also significantly reduce your out-of-pocket costs.`,
+    body: `Managing prescriptions online saves trips to the pharmacy, lets you set up automatic refills, and lets you track your medications. Most major pharmacies — CVS, Walgreens, Rite Aid, and Walmart — have apps and websites where you can transfer prescriptions, request refills, and choose delivery or in-store pickup. Free discount tools like GoodRx can also significantly reduce your out-of-pocket costs.`,
     steps: [
       { title: 'Create an account with your pharmacy', content: `Go to your pharmacy's website (cvs.com, walgreens.com, etc.) or download their app. Create an account with your name, date of birth, insurance information, and address. Your prescription history and insurance will be linked to your account.` },
       { title: 'Transfer or add a prescription', content: `To transfer a prescription from another pharmacy, enter the current pharmacy's name and your prescription number in the transfer section. To add a new prescription, your doctor can send it electronically to your chosen pharmacy, or you can bring in a paper prescription.` },
@@ -5968,9 +5968,9 @@ Set a Screen Time passcode that is different from the child's login password. Th
     thumbnailEmoji: '📷',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner' as any,
-    body: `Smart home cameras let you check on your home in real time from anywhere in the world using your phone. Whether you want to monitor your front door, back yard, or the inside of your home while you are away, cameras from brands like Blink, Arlo, and Ring are easy to set up and can send you alerts when motion is detected. Most offer free cloud storage for short clips or affordable subscription plans for longer recordings.`,
+    body: `Smart home cameras let you check on your home in real time from anywhere in the world using your phone. Whether you want to monitor your front door, back yard, or the inside of your home while you are away, cameras from brands like Blink, Arlo, and Ring are straightforward to install and can send you alerts when motion is detected. Most offer free cloud storage for short clips or affordable subscription plans for longer recordings.`,
     steps: [
-      { title: 'Choose and install your camera', content: 'Blink cameras are battery-powered and easy to place anywhere — great for renters or locations without easy wiring. Arlo cameras offer strong video quality and weatherproofing. Ring cameras integrate well if you already have a Ring doorbell. Mount the camera in your desired location following the included instructions.' },
+      { title: 'Choose and install your camera', content: 'Blink cameras are battery-powered and can go anywhere — great for renters or locations without existing wiring. Arlo cameras offer strong video quality and weatherproofing. Ring cameras integrate well if you already have a Ring doorbell. Mount the camera in your desired location following the included instructions.' },
       { title: 'Download the companion app', content: 'Download the app for your camera brand: Blink Home Monitor app, Arlo app, or Ring app from the App Store or Google Play. Create a free account with your email address.' },
       { title: 'Add the camera in the app', content: 'Open the app and tap "Add Device" or "+" to add your camera. The app will scan a QR code on the camera or walk you through connecting it to your home WiFi network. This takes about 3 to 5 minutes.' },
       { title: 'View the live feed', content: 'Once connected, tap the camera in the app to see a live video feed. Most apps show a thumbnail of recent motion clips on the main screen. Tap "Live View" to see what the camera sees in real time from wherever you are.' },

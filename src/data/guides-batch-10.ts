@@ -229,7 +229,7 @@ Setting up the app once saves a lot of time over the years you will be insured.`
 Stick to well-known comparison sites and your state's insurance department website. Avoid sites that make you give a phone number before showing any prices — those sell your info to agents who will call for weeks.`,
     steps: [
       { title: 'Decide how much coverage you need', content: 'A common rule is 10 times your yearly income, or enough to pay off your mortgage plus raise any children. Term life (not whole life) is the cheapest option for most people.' },
-      { title: 'Use a trusted comparison site', content: 'Try Policygenius, NerdWallet, or Term4Sale. These show prices from multiple insurers side by side and do not require your phone number just to see a quote.' },
+      { title: 'Use a trusted comparison site', content: 'Try Policygenius, NerdWallet, or Term4Sale. These show prices from multiple insurers side by side and do not require your phone number to view a quote.' },
       { title: 'Answer honestly about your health', content: 'You will answer questions about your age, weight, smoking, and major health conditions. Lying to get a lower quote can void the policy later — insurers check medical records before they pay claims.' },
       { title: 'Compare at least 3 companies', content: `Note the monthly premium, the term length, and the death benefit. Look at the insurer's financial rating (A.M. Best grade of A or better is safe).` },
       { title: `Apply directly on the insurer's site`, content: `Once you pick a company, click through to the actual insurer's website to apply. Most will require a free medical exam — a nurse comes to your home to take a blood sample and measure your blood pressure.` },
@@ -290,7 +290,7 @@ H&R Block also lets you drop off your documents at a local office if you prefer 
     difficulty: 'Beginner',
     body: `FreeTaxUSA is a lesser-known tax service that is free for federal returns no matter how complex your tax situation is, including self-employment, rental property, and investments. State returns cost about $15.
 
-The site looks plainer than TurboTax or H&R Block, but the tax math is just as accurate and it is an IRS-authorized e-file provider.`,
+The site looks plainer than TurboTax or H&R Block, but the tax math is equally accurate and it is an IRS-authorized e-file provider.`,
     steps: [
       { title: 'Create a free account', content: 'Go to freetaxusa.com and click "Sign In" then "Create a new account." Use an email you check and set a strong password.' },
       { title: 'Enter your personal info', content: 'Type your name, Social Security number, address, and filing status (single, married filing jointly, head of household). If you have dependents, add their info too.' },
@@ -439,7 +439,7 @@ Most U.S. public libraries have Libby. If there is a waitlist for a popular titl
     difficulty: 'Beginner',
     body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists — you can borrow any title immediately, up to a monthly limit set by your library (often 5 to 10 items).
 
-It has more than just books: you can watch movies, TV shows, listen to music, and read comics.`,
+It offers more than books: you can watch movies, TV shows, listen to music, and read comics.`,
     steps: [
       { title: 'Check if your library offers Hoopla', content: `Go to hoopladigital.com and type your library's name. Not every library participates — if yours does not, your card will not work.` },
       { title: 'Download the app', content: 'Install Hoopla from the App Store, Play Store, Roku, Fire TV, or Apple TV. Hoopla works on almost every device you already own.' },
@@ -579,7 +579,7 @@ Subscriptions cost around $80 a month. That covers the tablet, unlimited data, a
   {
     slug: 'use-papa-companionship-app',
     title: 'How to Use Papa for Senior Companionship',
-    excerpt: 'Book a "Papa Pal" for in-person help with errands, tech support, light housekeeping, or just company.',
+    excerpt: 'Book a "Papa Pal" for in-person help with errands, tech support, light housekeeping, or companionship.',
     category: 'health-tech',
     tags: ['Papa', 'senior', 'companionship', 'caregiver'],
     readTime: '7 min',
@@ -592,7 +592,7 @@ The Papa Pals are not medical professionals — think of them more like a helpfu
     steps: [
       { title: 'Check if your plan covers Papa', content: 'Call the number on the back of your Medicare Advantage card and ask "Does my plan include Papa visits?" Many Humana, UnitedHealthcare, and Aetna plans do. If not, Papa also offers private-pay memberships.' },
       { title: 'Download the Papa app', content: 'Install Papa from the App Store or Play Store, or call Papa at 1-800-348-7951 to sign up by phone. Family members can also download the Care Circle app to schedule visits for a parent.' },
-      { title: 'Schedule your first visit', content: 'Tap "Request a visit." Pick a date, time, and what you need help with — grocery shopping, a ride to the doctor, changing light bulbs, or just having a conversation.' },
+      { title: 'Schedule your first visit', content: 'Tap "Request a visit." Pick a date, time, and what you need help with — grocery shopping, a ride to the doctor, changing light bulbs, or spending time together.' },
       { title: 'Meet your Papa Pal', content: 'Every Papa Pal has a background check and orientation. Before the visit, you see their photo and a short bio. At the door, they will show you their Papa ID before coming in.' },
       { title: 'Rate the visit afterward', content: 'The app asks you to rate the visit from 1 to 5 stars. If you like a particular Pal, request them again next time — Papa will try to match you.' },
     ],
@@ -801,7 +801,7 @@ Basic searching is free, but the detailed records and DNA matching require a sub
     difficulty: 'Intermediate',
     body: `FamilySearch is the free alternative to Ancestry, run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of indexed records and a shared public family tree where everyone collaborates on the same tree.
 
-Because the tree is shared, you can often find ancestors already researched by distant relatives — you just need to connect your branch to theirs.`,
+Because the tree is shared, you can often find ancestors already researched by distant relatives — you connect your branch to theirs.`,
     steps: [
       { title: 'Create a free account', content: 'Go to familysearch.org and click "Create a free account." Enter your name and email. You do not need to be a church member — the site is open to everyone.' },
       { title: 'Enter your parents and grandparents', content: 'Tap "Family Tree" then "Add Parent" or "Add Spouse" to start filling in what you know. Names, birth dates, places, and relationships are the key fields.' },
