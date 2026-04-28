@@ -457,6 +457,12 @@ const CountdownToRetirement  = lazy(() => import("./pages/tools/CountdownToRetir
 const BluetoothEarbudPicker  = lazy(() => import("./pages/tools/BluetoothEarbudPicker"));
 const VideoCallEtiquette     = lazy(() => import("./pages/tools/VideoCallEtiquette"));
 const PrescriptionDeliveryApps = lazy(() => import("./pages/tools/PrescriptionDeliveryApps"));
+const LanguageLearningApps   = lazy(() => import("./pages/tools/LanguageLearningApps"));
+const BrainGamesApps         = lazy(() => import("./pages/tools/BrainGamesApps"));
+const NewsAppPicker          = lazy(() => import("./pages/tools/NewsAppPicker"));
+const VoiceMemoTranscribe    = lazy(() => import("./pages/tools/VoiceMemoTranscribe"));
+const HomeVisionTest         = lazy(() => import("./pages/tools/HomeVisionTest"));
+const SmartTvAccessibility   = lazy(() => import("./pages/tools/SmartTvAccessibility"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1095,6 +1101,12 @@ const AppContent = () => {
           <Route path="/tools/bluetooth-earbud-picker"     element={<BluetoothEarbudPicker />} />
           <Route path="/tools/video-call-etiquette"        element={<VideoCallEtiquette />} />
           <Route path="/tools/prescription-delivery-apps"  element={<PrescriptionDeliveryApps />} />
+          <Route path="/tools/language-learning-apps"      element={<LanguageLearningApps />} />
+          <Route path="/tools/brain-games-apps"            element={<BrainGamesApps />} />
+          <Route path="/tools/news-app-picker"             element={<NewsAppPicker />} />
+          <Route path="/tools/voice-memo-transcribe"       element={<VoiceMemoTranscribe />} />
+          <Route path="/tools/home-vision-test"            element={<HomeVisionTest />} />
+          <Route path="/tools/smart-tv-accessibility"      element={<SmartTvAccessibility />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
