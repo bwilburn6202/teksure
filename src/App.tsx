@@ -413,6 +413,12 @@ const NewComputerSetup       = lazy(() => import("./pages/tools/NewComputerSetup
 const TranslationTools       = lazy(() => import("./pages/tools/TranslationTools"));
 const SeniorFitnessApps      = lazy(() => import("./pages/tools/SeniorFitnessApps"));
 const AiVoiceDefense         = lazy(() => import("./pages/tools/AiVoiceDefense"));
+const OnlineDoctorPortalSetup = lazy(() => import("./pages/tools/OnlineDoctorPortalSetup"));
+const CreditCardRewardsPicker = lazy(() => import("./pages/tools/CreditCardRewardsPicker"));
+const EmailOrganization      = lazy(() => import("./pages/tools/EmailOrganization"));
+const UsbStorageGuide        = lazy(() => import("./pages/tools/UsbStorageGuide"));
+const PetTechPicker          = lazy(() => import("./pages/tools/PetTechPicker"));
+const EmailSignatureBuilder  = lazy(() => import("./pages/tools/EmailSignatureBuilder"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1007,6 +1013,12 @@ const AppContent = () => {
           <Route path="/tools/translation-tools"           element={<TranslationTools />} />
           <Route path="/tools/senior-fitness-apps"         element={<SeniorFitnessApps />} />
           <Route path="/tools/ai-voice-defense"            element={<AiVoiceDefense />} />
+          <Route path="/tools/online-doctor-portal-setup"  element={<OnlineDoctorPortalSetup />} />
+          <Route path="/tools/credit-card-rewards-picker"  element={<CreditCardRewardsPicker />} />
+          <Route path="/tools/email-organization"          element={<EmailOrganization />} />
+          <Route path="/tools/usb-storage-guide"           element={<UsbStorageGuide />} />
+          <Route path="/tools/pet-tech-picker"             element={<PetTechPicker />} />
+          <Route path="/tools/email-signature-builder"     element={<EmailSignatureBuilder />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
