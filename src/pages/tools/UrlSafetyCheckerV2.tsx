@@ -166,7 +166,7 @@ export default function UrlSafetyCheckerV2() {
                   <RotateCcw className="h-4 w-4" /> Check another link
                 </Button>
                 <Button variant="ghost" asChild className="gap-2 flex-1">
-                  <Link to="/guides/avoiding-scams">
+                  <Link to="/guides/recognizing-avoiding-scams">
                     <BookOpen className="h-4 w-4" /> Learn to spot scams
                   </Link>
                 </Button>

@@ -159,9 +159,9 @@ export default function CourseLesson() {
                           </span>
                           <div className="min-w-0">
                             <p className="font-medium text-sm">{step.title}</p>
-                            {step.description && (
+                            {(step.content || step.description) && (
                               <p className="text-sm text-muted-foreground mt-0.5">
-                                {step.description}
+                                {step.content || step.description}
                               </p>
                             )}
                           </div>
