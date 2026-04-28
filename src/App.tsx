@@ -354,6 +354,7 @@ const HearingAidPairingWizard = lazy(() => import("./pages/tools/HearingAidPairi
 const Start                  = lazy(() => import("./pages/Start"));
 const IdTheftRecovery        = lazy(() => import("./pages/tools/IdTheftRecovery"));
 const EmailMigration         = lazy(() => import("./pages/tools/EmailMigration"));
+const FallDetectionSetup     = lazy(() => import("./pages/tools/FallDetectionSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -889,6 +890,7 @@ const AppContent = () => {
           <Route path="/start"                            element={<Start />} />
           <Route path="/tools/id-theft-recovery"          element={<IdTheftRecovery />} />
           <Route path="/tools/email-migration"            element={<EmailMigration />} />
+          <Route path="/tools/fall-detection-setup"       element={<FallDetectionSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
