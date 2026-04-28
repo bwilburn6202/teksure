@@ -433,6 +433,10 @@ const CallerIdSetup          = lazy(() => import("./pages/tools/CallerIdSetup"))
 const BackupVerification     = lazy(() => import("./pages/tools/BackupVerification"));
 const PhoneFamilyLinkSetup   = lazy(() => import("./pages/tools/PhoneFamilyLinkSetup"));
 const VeteranTechBenefits    = lazy(() => import("./pages/tools/VeteranTechBenefits"));
+const PrintFromPhone         = lazy(() => import("./pages/tools/PrintFromPhone"));
+const LowVisionApps          = lazy(() => import("./pages/tools/LowVisionApps"));
+const NetworkPrivacyChecker  = lazy(() => import("./pages/tools/NetworkPrivacyChecker"));
+const SeniorTransitApps      = lazy(() => import("./pages/tools/SeniorTransitApps"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1047,6 +1051,10 @@ const AppContent = () => {
           <Route path="/tools/backup-verification"         element={<BackupVerification />} />
           <Route path="/tools/phone-family-link-setup"     element={<PhoneFamilyLinkSetup />} />
           <Route path="/tools/veteran-tech-benefits"       element={<VeteranTechBenefits />} />
+          <Route path="/tools/print-from-phone"            element={<PrintFromPhone />} />
+          <Route path="/tools/low-vision-apps"             element={<LowVisionApps />} />
+          <Route path="/tools/network-privacy-checker"     element={<NetworkPrivacyChecker />} />
+          <Route path="/tools/senior-transit-apps"         element={<SeniorTransitApps />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
