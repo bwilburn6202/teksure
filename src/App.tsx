@@ -412,6 +412,7 @@ const FreeOfficeSuite        = lazy(() => import("./pages/tools/FreeOfficeSuite"
 const NewComputerSetup       = lazy(() => import("./pages/tools/NewComputerSetup"));
 const TranslationTools       = lazy(() => import("./pages/tools/TranslationTools"));
 const SeniorFitnessApps      = lazy(() => import("./pages/tools/SeniorFitnessApps"));
+const AiVoiceDefense         = lazy(() => import("./pages/tools/AiVoiceDefense"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1005,6 +1006,7 @@ const AppContent = () => {
           <Route path="/tools/new-computer-setup"          element={<NewComputerSetup />} />
           <Route path="/tools/translation-tools"           element={<TranslationTools />} />
           <Route path="/tools/senior-fitness-apps"         element={<SeniorFitnessApps />} />
+          <Route path="/tools/ai-voice-defense"            element={<AiVoiceDefense />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
