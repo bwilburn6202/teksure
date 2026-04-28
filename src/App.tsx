@@ -419,6 +419,12 @@ const EmailOrganization      = lazy(() => import("./pages/tools/EmailOrganizatio
 const UsbStorageGuide        = lazy(() => import("./pages/tools/UsbStorageGuide"));
 const PetTechPicker          = lazy(() => import("./pages/tools/PetTechPicker"));
 const EmailSignatureBuilder  = lazy(() => import("./pages/tools/EmailSignatureBuilder"));
+const GuestWifiSetup         = lazy(() => import("./pages/tools/GuestWifiSetup"));
+const HearingAidApps         = lazy(() => import("./pages/tools/HearingAidApps"));
+const SmartGarageDoor        = lazy(() => import("./pages/tools/SmartGarageDoor"));
+const RobotVacuumPicker      = lazy(() => import("./pages/tools/RobotVacuumPicker"));
+const ESignatureSetup        = lazy(() => import("./pages/tools/ESignatureSetup"));
+const MusicStreamingPicker   = lazy(() => import("./pages/tools/MusicStreamingPicker"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1019,6 +1025,12 @@ const AppContent = () => {
           <Route path="/tools/usb-storage-guide"           element={<UsbStorageGuide />} />
           <Route path="/tools/pet-tech-picker"             element={<PetTechPicker />} />
           <Route path="/tools/email-signature-builder"     element={<EmailSignatureBuilder />} />
+          <Route path="/tools/guest-wifi-setup"            element={<GuestWifiSetup />} />
+          <Route path="/tools/hearing-aid-apps"            element={<HearingAidApps />} />
+          <Route path="/tools/smart-garage-door"           element={<SmartGarageDoor />} />
+          <Route path="/tools/robot-vacuum-picker"         element={<RobotVacuumPicker />} />
+          <Route path="/tools/e-signature-setup"           element={<ESignatureSetup />} />
+          <Route path="/tools/music-streaming-picker"      element={<MusicStreamingPicker />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
