@@ -392,6 +392,7 @@ const SocialSecuritySetup    = lazy(() => import("./pages/tools/SocialSecuritySe
 const CarPhoneSetup          = lazy(() => import("./pages/tools/CarPhoneSetup"));
 const SellOnlineSafely       = lazy(() => import("./pages/tools/SellOnlineSafely"));
 const CreditFreezeWalkthrough = lazy(() => import("./pages/tools/CreditFreezeWalkthrough"));
+const PodcastStarter         = lazy(() => import("./pages/tools/PodcastStarter"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -965,6 +966,7 @@ const AppContent = () => {
           <Route path="/tools/car-phone-setup"             element={<CarPhoneSetup />} />
           <Route path="/tools/sell-online-safely"          element={<SellOnlineSafely />} />
           <Route path="/tools/credit-freeze-walkthrough"   element={<CreditFreezeWalkthrough />} />
+          <Route path="/tools/podcast-starter"             element={<PodcastStarter />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
