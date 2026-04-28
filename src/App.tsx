@@ -409,6 +409,7 @@ const RemoteTechHelp         = lazy(() => import("./pages/tools/RemoteTechHelp")
 const OnlineFormsHelper      = lazy(() => import("./pages/tools/OnlineFormsHelper"));
 const ScreenRecordingGuide   = lazy(() => import("./pages/tools/ScreenRecordingGuide"));
 const FreeOfficeSuite        = lazy(() => import("./pages/tools/FreeOfficeSuite"));
+const NewComputerSetup       = lazy(() => import("./pages/tools/NewComputerSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -999,6 +1000,7 @@ const AppContent = () => {
           <Route path="/tools/online-forms-helper"         element={<OnlineFormsHelper />} />
           <Route path="/tools/screen-recording-guide"      element={<ScreenRecordingGuide />} />
           <Route path="/tools/free-office-suite"           element={<FreeOfficeSuite />} />
+          <Route path="/tools/new-computer-setup"          element={<NewComputerSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
