@@ -387,6 +387,7 @@ const RenewIdOnline          = lazy(() => import("./pages/tools/RenewIdOnline"))
 const CommonScamsLibrary     = lazy(() => import("./pages/tools/CommonScamsLibrary"));
 const CookieConsentDecoder   = lazy(() => import("./pages/tools/CookieConsentDecoder"));
 const SocialPrivacyLockdown  = lazy(() => import("./pages/tools/SocialPrivacyLockdown"));
+const WeatherAlertsSetup     = lazy(() => import("./pages/tools/WeatherAlertsSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -955,6 +956,7 @@ const AppContent = () => {
           <Route path="/tools/common-scams-library"        element={<CommonScamsLibrary />} />
           <Route path="/tools/cookie-consent-decoder"      element={<CookieConsentDecoder />} />
           <Route path="/tools/social-privacy-lockdown"     element={<SocialPrivacyLockdown />} />
+          <Route path="/tools/weather-alerts-setup"        element={<WeatherAlertsSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
