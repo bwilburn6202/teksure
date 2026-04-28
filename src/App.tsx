@@ -368,6 +368,7 @@ const TabletOrLaptop         = lazy(() => import("./pages/tools/TabletOrLaptop")
 const PhoneInsuranceDecision = lazy(() => import("./pages/tools/PhoneInsuranceDecision"));
 const PhotoLibraryTips       = lazy(() => import("./pages/tools/PhotoLibraryTips"));
 const VoicemailSetup         = lazy(() => import("./pages/tools/VoicemailSetup"));
+const TechBuddySetup         = lazy(() => import("./pages/tools/TechBuddySetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -917,6 +918,7 @@ const AppContent = () => {
           <Route path="/tools/phone-insurance-decision"    element={<PhoneInsuranceDecision />} />
           <Route path="/tools/photo-library-tips"          element={<PhotoLibraryTips />} />
           <Route path="/tools/voicemail-setup"             element={<VoicemailSetup />} />
+          <Route path="/tools/tech-buddy-setup"            element={<TechBuddySetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
