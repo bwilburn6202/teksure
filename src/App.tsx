@@ -451,6 +451,12 @@ const CryptoScamDefense      = lazy(() => import("./pages/tools/CryptoScamDefens
 const NutritionAppPicker     = lazy(() => import("./pages/tools/NutritionAppPicker"));
 const InvestmentAppPicker    = lazy(() => import("./pages/tools/InvestmentAppPicker"));
 const BloodPressureApps      = lazy(() => import("./pages/tools/BloodPressureApps"));
+const OnlineWillEstate       = lazy(() => import("./pages/tools/OnlineWillEstate"));
+const SocialMediaFirstSteps  = lazy(() => import("./pages/tools/SocialMediaFirstSteps"));
+const CountdownToRetirement  = lazy(() => import("./pages/tools/CountdownToRetirement"));
+const BluetoothEarbudPicker  = lazy(() => import("./pages/tools/BluetoothEarbudPicker"));
+const VideoCallEtiquette     = lazy(() => import("./pages/tools/VideoCallEtiquette"));
+const PrescriptionDeliveryApps = lazy(() => import("./pages/tools/PrescriptionDeliveryApps"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1083,6 +1089,12 @@ const AppContent = () => {
           <Route path="/tools/nutrition-app-picker"        element={<NutritionAppPicker />} />
           <Route path="/tools/investment-app-picker"       element={<InvestmentAppPicker />} />
           <Route path="/tools/blood-pressure-apps"         element={<BloodPressureApps />} />
+          <Route path="/tools/online-will-estate"          element={<OnlineWillEstate />} />
+          <Route path="/tools/social-media-first-steps"    element={<SocialMediaFirstSteps />} />
+          <Route path="/tools/countdown-to-retirement"     element={<CountdownToRetirement />} />
+          <Route path="/tools/bluetooth-earbud-picker"     element={<BluetoothEarbudPicker />} />
+          <Route path="/tools/video-call-etiquette"        element={<VideoCallEtiquette />} />
+          <Route path="/tools/prescription-delivery-apps"  element={<PrescriptionDeliveryApps />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
