@@ -378,6 +378,7 @@ const MarketplaceScamSpotter = lazy(() => import("./pages/tools/MarketplaceScamS
 const DictationSetup         = lazy(() => import("./pages/tools/DictationSetup"));
 const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionWizard"));
 const FreeTaxFiling          = lazy(() => import("./pages/tools/FreeTaxFiling"));
+const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -937,6 +938,7 @@ const AppContent = () => {
           <Route path="/tools/dictation-setup"             element={<DictationSetup />} />
           <Route path="/tools/account-deletion-wizard"     element={<AccountDeletionWizard />} />
           <Route path="/tools/free-tax-filing"             element={<FreeTaxFiling />} />
+          <Route path="/tools/library-power-pack"          element={<LibraryPowerPack />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
