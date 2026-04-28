@@ -443,6 +443,11 @@ const TravelBookingSafety    = lazy(() => import("./pages/tools/TravelBookingSaf
 const ComputerRepairOptions  = lazy(() => import("./pages/tools/ComputerRepairOptions"));
 const SeniorDiscountFinderApp = lazy(() => import("./pages/tools/SeniorDiscountFinderApp"));
 const NotebookAlternatives   = lazy(() => import("./pages/tools/NotebookAlternatives"));
+const BedtimeTechRoutine     = lazy(() => import("./pages/tools/BedtimeTechRoutine"));
+const RealEstateWireScam     = lazy(() => import("./pages/tools/RealEstateWireScam"));
+const IphoneShortcuts        = lazy(() => import("./pages/tools/IphoneShortcuts"));
+const AndroidShortcuts       = lazy(() => import("./pages/tools/AndroidShortcuts"));
+const CryptoScamDefense      = lazy(() => import("./pages/tools/CryptoScamDefense"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1067,6 +1072,11 @@ const AppContent = () => {
           <Route path="/tools/computer-repair-options"     element={<ComputerRepairOptions />} />
           <Route path="/tools/senior-discount-finder-app"  element={<SeniorDiscountFinderApp />} />
           <Route path="/tools/notebook-alternatives"       element={<NotebookAlternatives />} />
+          <Route path="/tools/bedtime-tech-routine"        element={<BedtimeTechRoutine />} />
+          <Route path="/tools/real-estate-wire-scam"       element={<RealEstateWireScam />} />
+          <Route path="/tools/iphone-shortcuts"            element={<IphoneShortcuts />} />
+          <Route path="/tools/android-shortcuts"           element={<AndroidShortcuts />} />
+          <Route path="/tools/crypto-scam-defense"         element={<CryptoScamDefense />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
