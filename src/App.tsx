@@ -429,6 +429,10 @@ const HomeOfficeSetup        = lazy(() => import("./pages/tools/HomeOfficeSetup"
 const DeepfakeVideoSpotter   = lazy(() => import("./pages/tools/DeepfakeVideoSpotter"));
 const FreeLegalHelp          = lazy(() => import("./pages/tools/FreeLegalHelp"));
 const SpouseSurvivorBenefits = lazy(() => import("./pages/tools/SpouseSurvivorBenefits"));
+const CallerIdSetup          = lazy(() => import("./pages/tools/CallerIdSetup"));
+const BackupVerification     = lazy(() => import("./pages/tools/BackupVerification"));
+const PhoneFamilyLinkSetup   = lazy(() => import("./pages/tools/PhoneFamilyLinkSetup"));
+const VeteranTechBenefits    = lazy(() => import("./pages/tools/VeteranTechBenefits"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1039,6 +1043,10 @@ const AppContent = () => {
           <Route path="/tools/deepfake-video-spotter"      element={<DeepfakeVideoSpotter />} />
           <Route path="/tools/free-legal-help"             element={<FreeLegalHelp />} />
           <Route path="/tools/spouse-survivor-benefits"    element={<SpouseSurvivorBenefits />} />
+          <Route path="/tools/caller-id-setup"             element={<CallerIdSetup />} />
+          <Route path="/tools/backup-verification"         element={<BackupVerification />} />
+          <Route path="/tools/phone-family-link-setup"     element={<PhoneFamilyLinkSetup />} />
+          <Route path="/tools/veteran-tech-benefits"       element={<VeteranTechBenefits />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
