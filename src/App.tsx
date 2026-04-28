@@ -665,6 +665,7 @@ const AppContent = () => {
           <Route path="/scam-defense" element={<ScamDefenseCenter />} />
           <Route path="/scam-alerts" element={<ScamAlertFeed />} />
           <Route path="/practice/phishing-inbox" element={<PhishingInbox />} />
+          <Route path="/practice/inbox" element={<Navigate to="/practice/phishing-inbox" replace />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/accessibility" element={<AccessibilityHub />} />
           <Route path="/caregiver-hub" element={<CaregiverHub />} />
@@ -863,6 +864,7 @@ const AppContent = () => {
 
           {/* Practice simulators — branching interactive safety practice */}
           <Route path="/practice/suspicious-call" element={<SuspiciousCallSim />} />
+          <Route path="/practice/phone" element={<Navigate to="/practice/suspicious-call" replace />} />
           <Route path="/practice/vocab-flashcards" element={<VocabFlashcards />} />
 
           {/* Site Index — human-readable sitemap of every page on TekSure */}
