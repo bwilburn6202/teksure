@@ -463,6 +463,12 @@ const NewsAppPicker          = lazy(() => import("./pages/tools/NewsAppPicker"))
 const VoiceMemoTranscribe    = lazy(() => import("./pages/tools/VoiceMemoTranscribe"));
 const HomeVisionTest         = lazy(() => import("./pages/tools/HomeVisionTest"));
 const SmartTvAccessibility   = lazy(() => import("./pages/tools/SmartTvAccessibility"));
+const TelevetSetup           = lazy(() => import("./pages/tools/TelevetSetup"));
+const BoardGamesOnline       = lazy(() => import("./pages/tools/BoardGamesOnline"));
+const GasBuddyAlternatives   = lazy(() => import("./pages/tools/GasBuddyAlternatives"));
+const VideoEditingApps       = lazy(() => import("./pages/tools/VideoEditingApps"));
+const HomeCareAppsForFamily  = lazy(() => import("./pages/tools/HomeCareAppsForFamily"));
+const RealEstateAppPicker    = lazy(() => import("./pages/tools/RealEstateAppPicker"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1107,6 +1113,12 @@ const AppContent = () => {
           <Route path="/tools/voice-memo-transcribe"       element={<VoiceMemoTranscribe />} />
           <Route path="/tools/home-vision-test"            element={<HomeVisionTest />} />
           <Route path="/tools/smart-tv-accessibility"      element={<SmartTvAccessibility />} />
+          <Route path="/tools/televet-setup"               element={<TelevetSetup />} />
+          <Route path="/tools/board-games-online"          element={<BoardGamesOnline />} />
+          <Route path="/tools/gas-buddy-alternatives"      element={<GasBuddyAlternatives />} />
+          <Route path="/tools/video-editing-apps"          element={<VideoEditingApps />} />
+          <Route path="/tools/home-care-apps-for-family"   element={<HomeCareAppsForFamily />} />
+          <Route path="/tools/real-estate-app-picker"      element={<RealEstateAppPicker />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
