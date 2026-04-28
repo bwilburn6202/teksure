@@ -399,6 +399,7 @@ const OnlineShoppingSafety   = lazy(() => import("./pages/tools/OnlineShoppingSa
 const WifiCallingSetup       = lazy(() => import("./pages/tools/WifiCallingSetup"));
 const FitnessTrackerPicker   = lazy(() => import("./pages/tools/FitnessTrackerPicker"));
 const SmartLockPicker        = lazy(() => import("./pages/tools/SmartLockPicker"));
+const KindleSetup            = lazy(() => import("./pages/tools/KindleSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -979,6 +980,7 @@ const AppContent = () => {
           <Route path="/tools/wifi-calling-setup"          element={<WifiCallingSetup />} />
           <Route path="/tools/fitness-tracker-picker"      element={<FitnessTrackerPicker />} />
           <Route path="/tools/smart-lock-picker"           element={<SmartLockPicker />} />
+          <Route path="/tools/kindle-setup"                element={<KindleSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
