@@ -360,6 +360,7 @@ const SmartHomeStarter       = lazy(() => import("./pages/tools/SmartHomeStarter
 const HospitalDischargeKit   = lazy(() => import("./pages/tools/HospitalDischargeKit"));
 const AiImageSpotter         = lazy(() => import("./pages/tools/AiImageSpotter"));
 const CordCutterWizard       = lazy(() => import("./pages/tools/CordCutterWizard"));
+const OnlineBankingSafety    = lazy(() => import("./pages/tools/OnlineBankingSafety"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -901,6 +902,7 @@ const AppContent = () => {
           <Route path="/tools/hospital-discharge-kit"     element={<HospitalDischargeKit />} />
           <Route path="/tools/ai-image-spotter"            element={<AiImageSpotter />} />
           <Route path="/tools/cord-cutter-wizard"          element={<CordCutterWizard />} />
+          <Route path="/tools/online-banking-safety"       element={<OnlineBankingSafety />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
