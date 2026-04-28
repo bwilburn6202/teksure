@@ -364,6 +364,7 @@ const OnlineBankingSafety    = lazy(() => import("./pages/tools/OnlineBankingSaf
 const SeniorFriendlyApps     = lazy(() => import("./pages/tools/SeniorFriendlyApps"));
 const FindLostItems          = lazy(() => import("./pages/tools/FindLostItems"));
 const SmartSpeakerPicker     = lazy(() => import("./pages/tools/SmartSpeakerPicker"));
+const TabletOrLaptop         = lazy(() => import("./pages/tools/TabletOrLaptop"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -909,6 +910,7 @@ const AppContent = () => {
           <Route path="/tools/senior-friendly-apps"        element={<SeniorFriendlyApps />} />
           <Route path="/tools/find-lost-items"             element={<FindLostItems />} />
           <Route path="/tools/smart-speaker-picker"        element={<SmartSpeakerPicker />} />
+          <Route path="/tools/tablet-or-laptop"            element={<TabletOrLaptop />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
