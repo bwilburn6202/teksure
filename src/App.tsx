@@ -437,6 +437,12 @@ const PrintFromPhone         = lazy(() => import("./pages/tools/PrintFromPhone")
 const LowVisionApps          = lazy(() => import("./pages/tools/LowVisionApps"));
 const NetworkPrivacyChecker  = lazy(() => import("./pages/tools/NetworkPrivacyChecker"));
 const SeniorTransitApps      = lazy(() => import("./pages/tools/SeniorTransitApps"));
+const BillRefundDispute      = lazy(() => import("./pages/tools/BillRefundDispute"));
+const OnlineDatingSafety     = lazy(() => import("./pages/tools/OnlineDatingSafety"));
+const TravelBookingSafety    = lazy(() => import("./pages/tools/TravelBookingSafety"));
+const ComputerRepairOptions  = lazy(() => import("./pages/tools/ComputerRepairOptions"));
+const SeniorDiscountFinderApp = lazy(() => import("./pages/tools/SeniorDiscountFinderApp"));
+const NotebookAlternatives   = lazy(() => import("./pages/tools/NotebookAlternatives"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -1055,6 +1061,12 @@ const AppContent = () => {
           <Route path="/tools/low-vision-apps"             element={<LowVisionApps />} />
           <Route path="/tools/network-privacy-checker"     element={<NetworkPrivacyChecker />} />
           <Route path="/tools/senior-transit-apps"         element={<SeniorTransitApps />} />
+          <Route path="/tools/bill-refund-dispute"         element={<BillRefundDispute />} />
+          <Route path="/tools/online-dating-safety"        element={<OnlineDatingSafety />} />
+          <Route path="/tools/travel-booking-safety"       element={<TravelBookingSafety />} />
+          <Route path="/tools/computer-repair-options"     element={<ComputerRepairOptions />} />
+          <Route path="/tools/senior-discount-finder-app"  element={<SeniorDiscountFinderApp />} />
+          <Route path="/tools/notebook-alternatives"       element={<NotebookAlternatives />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
