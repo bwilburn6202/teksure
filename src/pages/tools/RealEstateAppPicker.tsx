@@ -20,100 +20,51 @@ interface App {
 
 const APPS: App[] = [
   {
-    name: 'Zillow',
-    price: 'Free',
+    name: 'Zillow', price: 'Free',
     whoFor: 'Browsing the most listings in one place. A good first stop to see what is out there.',
-    pros: [
-      'Largest pool of for-sale and for-rent listings in the US.',
-      'Map view, saved searches, price-drop alerts.',
-      'Mortgage calculator built in.',
-    ],
-    cons: [
-      'The Zestimate price guess can be off by tens of thousands of dollars — do not trust it as a real value.',
-      'Listings can stay up after a home is already sold.',
-      'Lots of paid agent ads.',
-    ],
+    pros: ['Largest pool of for-sale and for-rent listings in the US.', 'Map view, saved searches, price-drop alerts.', 'Mortgage calculator built in.'],
+    cons: ['The Zestimate price guess can be off by tens of thousands of dollars — do not trust it as a real value.', 'Listings can stay up after a home is already sold.', 'Lots of paid agent ads.'],
     link: 'https://www.zillow.com',
   },
   {
-    name: 'Redfin',
-    price: 'Free',
+    name: 'Redfin', price: 'Free',
     whoFor: 'Anyone who wants more accurate prices and data from real licensed agents.',
-    pros: [
-      'Updates every 5 minutes from the MLS — fewer stale homes.',
-      'Redfin Estimate tends to be closer to the true sale price than Zillow.',
-      'Lower-commission Redfin agents in many areas.',
-    ],
-    cons: [
-      'Smaller listing pool in rural areas.',
-      'Redfin agents are not in every zip code.',
-    ],
+    pros: ['Updates every 5 minutes from the MLS — fewer stale homes.', 'Redfin Estimate tends to be closer to the true sale price than Zillow.', 'Lower-commission Redfin agents in many areas.'],
+    cons: ['Smaller listing pool in rural areas.', 'Redfin agents are not in every zip code.'],
     link: 'https://www.redfin.com',
   },
   {
-    name: 'Realtor.com',
-    price: 'Free',
+    name: 'Realtor.com', price: 'Free',
     whoFor: 'Buyers who want the freshest, most accurate listing data straight from the source.',
-    pros: [
-      'Pulls directly from the MLS (the database real agents use).',
-      'Listings update faster than Zillow.',
-      'Clear school ratings and neighborhood info.',
-    ],
-    cons: [
-      'No price estimate as well known as the Zestimate.',
-      'App is a little slower than Zillow or Redfin.',
-    ],
+    pros: ['Pulls directly from the MLS (the database real agents use).', 'Listings update faster than Zillow.', 'Clear school ratings and neighborhood info.'],
+    cons: ['No price estimate as well known as the Zestimate.', 'App is a little slower than Zillow or Redfin.'],
     link: 'https://www.realtor.com',
   },
   {
-    name: 'Trulia',
-    price: 'Free',
+    name: 'Trulia', price: 'Free',
     whoFor: 'Folks who care about neighborhood feel — crime maps, schools, commute.',
-    pros: [
-      'Strong neighborhood maps — crime, schools, commute, noise.',
-      'Resident reviews of the area.',
-    ],
-    cons: [
-      'Owned by Zillow — same listings. No reason to use both.',
-      'Most seniors stick with Zillow once they see the data overlaps.',
-    ],
+    pros: ['Strong neighborhood maps — crime, schools, commute, noise.', 'Resident reviews of the area.'],
+    cons: ['Owned by Zillow — same listings. No reason to use both.', 'Most seniors stick with Zillow once they see the data overlaps.'],
     link: 'https://www.trulia.com',
   },
   {
-    name: 'Apartments.com',
-    price: 'Free',
+    name: 'Apartments.com', price: 'Free',
     whoFor: 'Renters — the best place to find senior apartments, 55+ communities, and rentals.',
-    pros: [
-      'Largest US rental listings, with 55+ filters.',
-      'Verified listings — fewer fake or expired posts.',
-      'Side-by-side compare and saved favorites.',
-    ],
-    cons: [
-      'Mostly large complexes — small private rentals are rarer here.',
-      'Some listings push you toward leasing-office calls.',
-    ],
+    pros: ['Largest US rental listings, with 55+ filters.', 'Verified listings — fewer fake or expired posts.', 'Side-by-side compare and saved favorites.'],
+    cons: ['Mostly large complexes — small private rentals are rarer here.', 'Some listings push you toward leasing-office calls.'],
     link: 'https://www.apartments.com',
   },
   {
-    name: 'AARP Livability Index',
-    price: 'Free',
+    name: 'AARP Livability Index', price: 'Free',
     whoFor: 'Anyone weighing where to move — scores cities for senior friendliness.',
-    pros: [
-      'Scores any US city or zip on housing, health, transportation, engagement.',
-      'Backed by AARP — designed for the 55+ audience.',
-      'Side-by-side compare two towns before you visit.',
-    ],
-    cons: [
-      'Not a listing app — still need Zillow or Redfin for real homes.',
-      'Data updates yearly, so very recent changes may not show.',
-    ],
+    pros: ['Scores any US city or zip on housing, health, transportation, engagement.', 'Backed by AARP — designed for the 55+ audience.', 'Side-by-side compare two towns before you visit.'],
+    cons: ['Not a listing app — still need Zillow or Redfin for real homes.', 'Data updates yearly, so very recent changes may not show.'],
     link: 'https://livabilityindex.aarp.org',
   },
 ];
 
 export default function RealEstateAppPicker() {
   const [showAll, setShowAll] = useState(false);
-
   return (
     <>
       <SEOHead
@@ -122,7 +73,6 @@ export default function RealEstateAppPicker() {
         path="/tools/real-estate-app-picker"
       />
       <Navbar />
-
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-emerald-50 via-background to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
@@ -137,10 +87,8 @@ export default function RealEstateAppPicker() {
             </p>
           </div>
         </section>
-
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Real Estate App Picker' }]} />
-
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">A word on price estimates</p>
@@ -149,7 +97,6 @@ export default function RealEstateAppPicker() {
               </p>
             </CardContent>
           </Card>
-
           <div className="space-y-4 mb-6">
             {(showAll ? APPS : APPS.slice(0, 3)).map(a => (
               <Card key={a.name} className="border-border">
@@ -162,26 +109,19 @@ export default function RealEstateAppPicker() {
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
                       <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
-                      <ul className="space-y-0.5">
-                        {a.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
-                      </ul>
+                      <ul className="space-y-0.5">{a.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}</ul>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
-                      <ul className="space-y-0.5">
-                        {a.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
-                      </ul>
+                      <ul className="space-y-0.5">{a.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}</ul>
                     </div>
                   </div>
-                  <a href={a.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
-                    Visit official site <ExternalLink className="h-3 w-3" />
-                  </a>
+                  <a href={a.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">Visit official site <ExternalLink className="h-3 w-3" /></a>
                 </CardContent>
               </Card>
             ))}
             {!showAll && (<Button variant="outline" onClick={() => setShowAll(true)}>Show all 6 picks</Button>)}
           </div>
-
           <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
             <CardContent className="p-5 flex gap-3">
               <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
@@ -194,7 +134,6 @@ export default function RealEstateAppPicker() {
               </div>
             </CardContent>
           </Card>
-
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">How to actually use these apps</p>
@@ -203,7 +142,6 @@ export default function RealEstateAppPicker() {
               </p>
             </CardContent>
           </Card>
-
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
@@ -226,7 +164,6 @@ export default function RealEstateAppPicker() {
           </p>
         </div>
       </main>
-
       <Footer />
     </>
   );

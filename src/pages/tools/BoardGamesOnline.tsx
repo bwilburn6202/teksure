@@ -26,8 +26,7 @@ const PICKS: Pick[] = [
     pros: [
       'Free account covers unlimited play and daily puzzles.',
       'Built-in lessons and a coach mode that explains every move.',
-      'Big text, clear pieces, and "play vs the computer" mode for practice.',
-      'Works in any browser plus iPhone and Android apps.',
+      'Big text, clear pieces, and a play-vs-computer mode for practice.',
     ],
     cons: ['Free tier shows ads.', 'Paid tier needed for unlimited tactics training.'],
     link: 'https://www.chess.com',
@@ -35,12 +34,11 @@ const PICKS: Pick[] = [
   {
     name: 'Lichess.org',
     cost: 'Free, no ads, ever',
-    bestFor: 'Anyone who wants chess without a single ad or pop-up. Volunteer-funded.',
+    bestFor: 'Chess without a single ad or pop-up. Volunteer-funded, open source.',
     pros: [
       'Every feature is free for everyone — no paid tier.',
       'Zero ads, zero tracking. A nonprofit project.',
-      'Plays well on older phones and slow internet.',
-      'Built-in puzzle trainer and analysis board.',
+      'Plays well on older phones, slow internet, and has a great puzzle trainer.',
     ],
     cons: ['Smaller community than Chess.com.', 'Less polished tutorial flow for beginners.'],
     link: 'https://lichess.org',
@@ -48,23 +46,21 @@ const PICKS: Pick[] = [
   {
     name: 'Tabletopia',
     cost: 'Free for guests, 5 USD/mo for premium',
-    bestFor: 'Turn-based digital board games. Over 1,800 titles including classics and indies.',
+    bestFor: 'Turn-based digital board games. Over 1,800 titles including classics.',
     pros: [
       'You and family can take turns over days, not all at once.',
-      'Huge library — Carcassonne, Scythe, classic card games.',
-      'Plays in a browser, no install needed.',
+      'Huge library (Carcassonne, Scythe, classic card games), plays in any browser.',
     ],
     cons: ['Premium needed for many newer titles.', 'Learning curve on the 3D table view.'],
     link: 'https://tabletopia.com',
   },
   {
     name: 'Words With Friends 2',
-    cost: 'Free with ads (Pro removes ads, ~10 USD/mo)',
+    cost: 'Free with ads (Pro about 10 USD/mo)',
     bestFor: 'A friendly Scrabble-style word game. Play one move when you have a minute.',
     pros: [
       'Designed for asynchronous play — make a move, come back tomorrow.',
-      'Built-in dictionary helps you learn new words.',
-      'Plays on iPhone, Android, tablet, or Facebook.',
+      'Built-in dictionary, runs on iPhone, Android, tablet, or Facebook.',
     ],
     cons: ['Free version is heavy on ads.', 'Not the official Scrabble brand.'],
     link: 'https://www.zynga.com/games/words-with-friends-2',
@@ -76,8 +72,7 @@ const PICKS: Pick[] = [
     pros: [
       'Free for almost everything — casual tables, tournaments, lessons.',
       'Big senior community, friendly to new players.',
-      'Robot partners available when you cannot find a fourth.',
-      'Owned by the American Contract Bridge League.',
+      'Robot partners available when you cannot find a fourth, and owned by the ACBL.',
     ],
     cons: ['Older interface that takes a session to learn.', 'Some special tournaments have a small entry fee.'],
     link: 'https://www.bridgebase.com',
@@ -85,11 +80,10 @@ const PICKS: Pick[] = [
   {
     name: 'Pogo Games',
     cost: 'Free with ads (Club Pogo about 7 USD/mo)',
-    bestFor: 'Hearts, Spades, Solitaire, Canasta, and other card classics. Very senior-friendly.',
+    bestFor: 'Hearts, Spades, Solitaire, Canasta, and other card classics. Senior-friendly.',
     pros: [
-      'Free version covers all the classic card games.',
-      'Big buttons, clear cards, friendly chat lobbies.',
-      'Run by EA, around since 1999 — long track record.',
+      'Free version covers all the classic card games, with friendly chat lobbies.',
+      'Big buttons, clear cards. Run by EA, around since 1999 — long track record.',
     ],
     cons: ['Ads on the free tier can feel busy.', 'Browser-based, no mobile app for most games.'],
     link: 'https://www.pogo.com',
@@ -100,7 +94,7 @@ const PICKS: Pick[] = [
     bestFor: 'Board game enthusiasts who want a virtual game table that fits any rules.',
     pros: [
       'One-time purchase — no subscription.',
-      'Thousands of free user-made boards: Catan, Risk, Monopoly, etc.',
+      'Thousands of free user-made boards: Catan, Risk, Monopoly.',
       'Voice chat built in for game nights with family.',
     ],
     cons: ['Needs a Windows, Mac, or Linux computer (no mobile).', 'Bigger learning curve than the others.'],
@@ -163,9 +157,7 @@ export default function BoardGamesOnline() {
                       </ul>
                     </div>
                   </div>
-                  <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
-                    Visit / sign up <ExternalLink className="h-3 w-3" />
-                  </a>
+                  <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">Visit / sign up <ExternalLink className="h-3 w-3" /></a>
                 </CardContent>
               </Card>
             ))}

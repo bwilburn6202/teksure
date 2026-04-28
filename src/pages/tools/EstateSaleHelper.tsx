@@ -22,106 +22,57 @@ const SERVICES: Service[] = [
   {
     name: 'EstateSales.net (find a local pro)',
     cost: '30-50% commission',
-    whoFor: 'Whole-house cleanouts where a professional runs a 2-3 day sale on site.',
-    pros: [
-      'Largest directory of vetted estate-sale companies in the US.',
-      'Read reviews and past sale photos before you call.',
-      'The pro handles pricing, staffing, and shoppers.',
-    ],
-    cons: [
-      'Commission is steep — read the contract for minimums.',
-      'Quality varies by company; always interview two or three.',
-    ],
+    whoFor: 'Whole-house cleanouts where a pro runs a 2-3 day sale on site.',
+    pros: ['Largest directory of vetted estate-sale companies in the US.', 'Read reviews and past sale photos before you call.', 'The pro handles pricing, staffing, and shoppers.'],
+    cons: ['Commission is steep — read the contract for minimums.', 'Quality varies by company; interview two or three.'],
     link: 'https://www.estatesales.net/',
   },
   {
     name: 'EverythingButTheHouse (online auction)',
     cost: 'Free pickup; commission on sales',
     whoFor: 'Out-of-state heirs who cannot run a sale in person.',
-    pros: [
-      'Crew packs and removes everything at no upfront cost.',
-      'Items sell via 7-day online auction starting at one dollar.',
-      'You get a check after the sale closes.',
-    ],
-    cons: [
-      'Bids can land low — no reserve prices on most items.',
-      'Service area is limited to roughly 30 US metros.',
-    ],
+    pros: ['Crew packs and removes everything at no upfront cost.', 'Items sell via 7-day online auction starting at one dollar.', 'You receive a check after the sale closes.'],
+    cons: ['Bids can land low — no reserve prices on most items.', 'Service area is limited to roughly 30 US metros.'],
     link: 'https://www.ebth.com/',
   },
   {
     name: 'Apple Notes Scan + Google Lens (DIY photos and value)',
     cost: 'Free',
     whoFor: 'Anyone cataloging items room by room before deciding what to do.',
-    pros: [
-      'Apple Notes Scan crops paperwork and receipts cleanly.',
-      'Google Lens identifies markings on china, art, and collectibles.',
-      'Builds a photo record for insurance and family.',
-    ],
-    cons: [
-      'Lens is a starting point — confirm value with a real appraisal.',
-      'Takes patience for a full house.',
-    ],
+    pros: ['Apple Notes Scan crops paperwork and receipts cleanly.', 'Google Lens identifies markings on china, art, and collectibles.', 'Builds a photo record for insurance and family.'],
+    cons: ['Lens is a starting point — confirm value with a real appraisal.', 'Takes patience for a full house.'],
     link: 'https://lens.google/',
   },
   {
     name: 'Worthpoint (price-history database)',
     cost: '$30/month',
     whoFor: 'Homes with antiques, china, silver, or vintage collectibles.',
-    pros: [
-      'Searchable archive of 800 million past sales across eBay and auctions.',
-      'Shows real prices items actually sold for, not asking prices.',
-      'Cancel anytime after one month.',
-    ],
-    cons: [
-      'Subscription model — only worth it if you have many items.',
-      'Steeper learning curve than eBay.',
-    ],
+    pros: ['Searchable archive of 800 million past sales across eBay and auctions.', 'Shows real prices items actually sold for, not asking prices.', 'Cancel anytime after one month.'],
+    cons: ['Subscription model — only worth it if you have many items.', 'Steeper learning curve than eBay.'],
     link: 'https://www.worthpoint.com/',
   },
   {
     name: 'eBay Sold-Listings (free price check)',
     cost: 'Free',
     whoFor: 'Quick price checks on common items before pricing your sale.',
-    pros: [
-      'Search the item, then filter to "Sold items" on the left.',
-      'Shows actual sale prices in the past 90 days.',
-      'No account needed for searching.',
-    ],
-    cons: [
-      'Coverage is thin for very rare or regional items.',
-      'Mobile filter is hidden under "Filter" then "Show more".',
-    ],
+    pros: ['Search the item, then filter to "Sold items" on the left.', 'Shows actual sale prices in the past 90 days.', 'No account needed for searching.'],
+    cons: ['Coverage is thin for very rare or regional items.', 'Mobile filter is hidden under "Filter".'],
     link: 'https://www.ebay.com/',
   },
   {
     name: 'ItsDeductible by TurboTax (donation valuations)',
     cost: 'Free',
     whoFor: 'Anyone donating to Goodwill, Salvation Army, or a church for a tax deduction.',
-    pros: [
-      'IRS-accepted fair-market values for thousands of household items.',
-      'Tracks your donations across the year.',
-      'Imports straight into TurboTax at tax time.',
-    ],
-    cons: [
-      'You still need to keep the donation receipt from the charity.',
-      'Only meaningful if you itemize deductions.',
-    ],
+    pros: ['IRS-accepted fair-market values for thousands of household items.', 'Tracks your donations across the year.', 'Imports straight into TurboTax at tax time.'],
+    cons: ['You still need to keep the donation receipt from the charity.', 'Only meaningful if you itemize.'],
     link: 'https://itsdeductibleonline.intuit.com/',
   },
   {
     name: '1-800-GOT-JUNK and College HUNKS (haul-away)',
     cost: '$150-$800 per truckload',
     whoFor: 'The leftover stuff after the sale and donations — the unsellable third.',
-    pros: [
-      'Both apps quote a price before they load the truck.',
-      'College HUNKS often donates usable items on your behalf.',
-      'Same-day pickup in most US metros.',
-    ],
-    cons: [
-      'Pricing is by truck volume, not weight — they fill the space.',
-      'Get two quotes; the first one is rarely the cheapest.',
-    ],
+    pros: ['Both apps quote a price before they load the truck.', 'College HUNKS often donates usable items on your behalf.', 'Same-day pickup in most US metros.'],
+    cons: ['Pricing is by truck volume, not weight — they fill the space.', 'Get two quotes; the first is rarely cheapest.'],
     link: 'https://www.1800gotjunk.com/',
   },
 ];
@@ -137,7 +88,6 @@ export default function EstateSaleHelper() {
         path="/tools/estate-sale-helper"
       />
       <Navbar />
-
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-amber-50 via-background to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
@@ -152,10 +102,8 @@ export default function EstateSaleHelper() {
             </p>
           </div>
         </section>
-
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Estate Sale Helper' }]} />
-
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">Three paths for clearing a home</p>
@@ -164,7 +112,6 @@ export default function EstateSaleHelper() {
               </p>
             </CardContent>
           </Card>
-
           <div className="space-y-4 mb-6">
             {(showAll ? SERVICES : SERVICES.slice(0, 3)).map(s => (
               <Card key={s.name} className="border-border">
@@ -174,7 +121,6 @@ export default function EstateSaleHelper() {
                     <Badge variant="outline">{s.cost}</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {s.whoFor}</p>
-
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
                       <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
@@ -189,35 +135,28 @@ export default function EstateSaleHelper() {
                       </ul>
                     </div>
                   </div>
-
-                  <a href={s.link} target="_blank" rel="noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
+                  <a href={s.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
                     View on official site <ExternalLink className="h-3 w-3" />
                   </a>
                 </CardContent>
               </Card>
             ))}
-            {!showAll && (
-              <Button variant="outline" onClick={() => setShowAll(true)}>Show all 7 services</Button>
-            )}
+            {!showAll && <Button variant="outline" onClick={() => setShowAll(true)}>Show all 7 services</Button>}
           </div>
-
           <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
             <CardContent className="p-5 flex gap-3">
               <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for lowball buyers and "we buy estates" cold callers</p>
-                <p className="mb-2">Once an obituary or probate filing goes public, the phone starts ringing. Strangers offer to buy "the whole house contents" for a flat thousand or two. They are betting your family will not check what is actually there.</p>
+                <p className="mb-2">Once an obituary or probate filing goes public, the phone starts ringing. Strangers offer to buy "the whole house contents" for a flat thousand or two. They are betting your family has not checked what is actually there.</p>
                 <ul className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Never accept a "today only" cash offer for the contents of a home you have not inventoried.</span></li>
+                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Never accept a "today only" cash offer for contents you have not inventoried.</span></li>
                   <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Get a second opinion from a licensed appraiser before signing anything ($200-$500 is worth it).</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>"We buy estates" callers who refuse to leave a written quote on letterhead are not legitimate.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Ask the funeral home or county clerk to suppress the home address from public obituary listings.</span></li>
+                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>"We buy estates" callers who refuse to put a written quote on letterhead are not legitimate.</span></li>
                 </ul>
               </div>
             </CardContent>
           </Card>
-
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">Before the sale — the digital cleanup</p>
@@ -226,7 +165,6 @@ export default function EstateSaleHelper() {
               </p>
             </CardContent>
           </Card>
-
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
@@ -249,7 +187,6 @@ export default function EstateSaleHelper() {
           </p>
         </div>
       </main>
-
       <Footer />
     </>
   );

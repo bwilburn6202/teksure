@@ -285,7 +285,7 @@ export default function RealEstateWireScam() {
                   </a>{' '}
                   — Federal Trade Commission
                 </li>
-                <li>Your bank\'s wire-fraud line — ask for a wire recall and the SWIFT trace</li>
+                <li>Your bank&apos;s wire-fraud line — ask for a wire recall and the SWIFT trace</li>
                 <li>Your local police department — paper report number for any insurance claim</li>
                 <li>State real-estate commission — if a licensed firm name was used in the scam</li>
               </ul>
@@ -321,7 +321,7 @@ export default function RealEstateWireScam() {
           </div>
 
           <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
-            <ChevronRight className="h-3 w-3" /> Quick Tip: the day you sign a purchase agreement, write the title company\'s real phone number on a paper card and tape it to your monitor. That number is the only one you trust during closing week.
+            <ChevronRight className="h-3 w-3" /> Quick Tip: the day you sign a purchase agreement, write the title company&apos;s real phone number on a paper card and tape it to your monitor. That number is the only one you trust during closing week.
           </p>
         </div>
       </main>

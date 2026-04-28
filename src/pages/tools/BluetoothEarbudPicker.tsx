@@ -148,10 +148,7 @@ export default function BluetoothEarbudPicker() {
                   <div className="p-2 bg-primary/10 rounded-lg"><Headphones className="h-5 w-5 text-primary" /></div>
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-base">{e.name}</p>
-                    <div className="flex gap-2 mt-1 flex-wrap">
-                      <Badge variant="outline">{e.price}</Badge>
-                      {e.highlight && <Badge className="bg-cyan-600">{e.highlight}</Badge>}
-                    </div>
+                    <div className="flex gap-2 mt-1 flex-wrap"><Badge variant="outline">{e.price}</Badge>{e.highlight && <Badge className="bg-cyan-600">{e.highlight}</Badge>}</div>
                   </div>
                 </div>
                 <p className="text-sm mb-3"><span className="font-semibold">Who it fits: </span>{e.whoFits}</p>
@@ -173,10 +170,7 @@ export default function BluetoothEarbudPicker() {
           <Card className="border-border bg-muted/30 mb-6"><CardContent className="p-5">
             <p className="text-sm font-semibold mb-2 flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" />Quick tips before you buy</p>
             <ul className="space-y-1.5 text-xs text-muted-foreground">
-              <li className="flex gap-2"><span className="text-primary">•</span><span>Match the brand to your phone when you can — AirPods with iPhone, anything else works fine on Android.</span></li>
-              <li className="flex gap-2"><span className="text-primary">•</span><span>Try at least two ear-tip sizes. The right tip is what gives good bass and noise blocking, not the price.</span></li>
-              <li className="flex gap-2"><span className="text-primary">•</span><span>If hearing loss is a real concern, AirPods Pro 2 hearing-aid mode is the best starting point at this price.</span></li>
-              <li className="flex gap-2"><span className="text-primary">•</span><span>Check the return window — a 30-day "try it" return policy is normal at Apple, Bose, and Best Buy.</span></li>
+              {['Match the brand to your phone — AirPods with iPhone, anything else works fine on Android.', 'Try at least two ear-tip sizes. The right tip gives good bass and noise blocking, not the price.', 'If hearing loss is a real concern, AirPods Pro 2 hearing-aid mode is the best starting point at this price.', 'Check the return window — a 30-day "try it" return policy is normal at Apple, Bose, and Best Buy.'].map((t, i) => (<li key={i} className="flex gap-2"><span className="text-primary">•</span><span>{t}</span></li>))}
             </ul>
           </CardContent></Card>
 
@@ -185,7 +179,7 @@ export default function BluetoothEarbudPicker() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { to: '/tools/hearing-aid-pairing-wizard', t: 'Hearing Aid Pairing Wizard', d: 'Pair real hearing aids with your phone.' },
-                { to: '/tools/podcast-starter', t: 'Podcast Starter', d: 'Your first podcasts to listen to with new earbuds.' },
+                { to: '/tools/podcast-starter', t: 'Podcast Starter', d: 'Your first podcasts for new earbuds.' },
                 { to: '/tools/music-streaming-picker', t: 'Music Streaming Picker', d: 'Pick the right music app to pair with them.' },
               ].map(r => (
                 <Link key={r.to} to={r.to} className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
@@ -195,9 +189,7 @@ export default function BluetoothEarbudPicker() {
               ))}
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
-            <Ear className="h-3 w-3" /> Quick Tip: in-ear silicone tips block more sound than open-fit AirPods 4 — better for noisy rooms, but worse if you want to hear the doorbell.
-          </p>
+          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1"><Ear className="h-3 w-3" /> Quick Tip: silicone tips block more sound than open-fit AirPods 4 — better for noisy rooms, worse if you want to hear the doorbell.</p>
         </div>
       </main>
 
