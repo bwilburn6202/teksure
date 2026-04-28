@@ -396,6 +396,7 @@ const PodcastStarter         = lazy(() => import("./pages/tools/PodcastStarter")
 const OnlineMemorialSetup    = lazy(() => import("./pages/tools/OnlineMemorialSetup"));
 const PaymentAppSetup        = lazy(() => import("./pages/tools/PaymentAppSetup"));
 const OnlineShoppingSafety   = lazy(() => import("./pages/tools/OnlineShoppingSafety"));
+const WifiCallingSetup       = lazy(() => import("./pages/tools/WifiCallingSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -973,6 +974,7 @@ const AppContent = () => {
           <Route path="/tools/online-memorial-setup"       element={<OnlineMemorialSetup />} />
           <Route path="/tools/payment-app-setup"           element={<PaymentAppSetup />} />
           <Route path="/tools/online-shopping-safety"      element={<OnlineShoppingSafety />} />
+          <Route path="/tools/wifi-calling-setup"          element={<WifiCallingSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
