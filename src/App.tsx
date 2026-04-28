@@ -385,6 +385,7 @@ const StayConnected          = lazy(() => import("./pages/tools/StayConnected"))
 const AiChatbotGuide         = lazy(() => import("./pages/tools/AiChatbotGuide"));
 const RenewIdOnline          = lazy(() => import("./pages/tools/RenewIdOnline"));
 const CommonScamsLibrary     = lazy(() => import("./pages/tools/CommonScamsLibrary"));
+const CookieConsentDecoder   = lazy(() => import("./pages/tools/CookieConsentDecoder"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -951,6 +952,7 @@ const AppContent = () => {
           <Route path="/tools/ai-chatbot-guide"            element={<AiChatbotGuide />} />
           <Route path="/tools/renew-id-online"             element={<RenewIdOnline />} />
           <Route path="/tools/common-scams-library"        element={<CommonScamsLibrary />} />
+          <Route path="/tools/cookie-consent-decoder"      element={<CookieConsentDecoder />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
