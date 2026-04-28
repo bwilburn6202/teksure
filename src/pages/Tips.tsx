@@ -19,14 +19,20 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Windows 11 Update Showed a Blue "Recovery Key" Screen — Here Is the Free Fix',
-  summary: 'Microsoft\'s April 2026 update accidentally triggered a security check on some Windows 11 PCs, locking users out with a blue screen asking for a 48-digit recovery key. Your files are safe — here is how to get back in for free in about 5 minutes.',
-  full: 'This blue screen is called a BitLocker Recovery screen. BitLocker is a Windows security feature that encrypts your data to protect it if your laptop is lost or stolen. The April 2026 update (KB5083769) accidentally triggered a security check that BitLocker treats as a sign of unauthorized hardware changes — so it locked the drive as a precaution. Your files are completely fine. You just need the recovery key to prove you are the real owner. Here is how to get it: on your phone or another device, open a browser and go to account.microsoft.com. Sign in with the same Microsoft account you use on your locked Windows computer. Tap Devices, then look for BitLocker recovery key. You will see a 48-digit number. Go back to the locked PC and type that number exactly into the box on the blue screen — then press Enter. Windows will unlock and start normally. Once you are logged in, go to Settings → Windows Update → Check for updates and install the latest patch — this fixes the underlying issue permanently. Important: do not pay anyone who calls offering to help with this. The real fix is completely free and takes about 5 minutes.',
-  category: 'Maintenance',
-  icon: Monitor,
+  title: 'How to Check If an App Is Safe Before You Download It',
+  summary: 'Not every app in the App Store or Google Play is trustworthy. Before you download, take 60 seconds to check a few things that can protect your phone, your privacy, and your money.',
+  full: 'Even though Apple and Google review apps before listing them, some shady ones still slip through. Here is how to protect yourself before you tap "Install." First, check the developer name — tap the app name in the store and look at who made it. A banking app should come from the actual bank, not a random developer name you have never heard of. Second, read the reviews and look at the star rating. Skip apps with very few reviews, or ones where all the five-star reviews sound fake or were posted on the same day. Third, check the permissions the app asks for — a flashlight app should not need access to your contacts, microphone, or location. On iPhone, go to Settings → Privacy & Security to review what each app can access. On Android, go to Settings → Apps → pick the app → Permissions. Fourth, check when the app was last updated — if it has not been updated in over a year, the developer may have abandoned it, and it could have unpatched security holes. Finally, stick to well-known apps recommended by trusted sources like AARP, Consumer Reports, or your device manufacturer. When in doubt, search the app name plus the word "scam" before downloading.',
+  category: 'Safety',
+  icon: Download,
 };
 
 const pastTips: Tip[] = [
+  {
+    title: 'Windows 11 Update Showed a Blue "Recovery Key" Screen — Here Is the Free Fix',
+    summary: 'Microsoft\'s April 2026 update accidentally triggered a security check on some Windows 11 PCs, locking users out with a blue screen asking for a 48-digit recovery key. Your files are safe — here is how to get back in for free in about 5 minutes.',
+    category: 'Maintenance',
+    icon: Monitor,
+  },
   {
     title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
     summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. On iPhone: go to Settings → General → iPhone Storage and use the built-in recommendations to delete large attachments and unused apps. On Android: open the Files app and tap "Clean." The biggest space-saver is usually old photos — if yours are backed up to Google Photos or iCloud, you can safely delete the copies on your phone.',
