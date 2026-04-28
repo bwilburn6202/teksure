@@ -99,6 +99,28 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    id: 26,
+    title: 'AARP Warns: Fake Apple Pay Texts Are Draining Bank Accounts in Minutes',
+    summary: 'AARP\'s Fraud Watch Network issued a fresh alert in April 2026 about fake text messages claiming suspicious Apple Pay activity. The texts look official and include a phone number to call. The person who answers may already know personal details like your address — pulled from data breaches — which makes the call feel real. They then pressure victims to move money, buy gift cards, or send funds via Apple Cash. Why this matters: Apple confirmed it will never ask for your password, device passcode, or two-factor code over the phone. The safe way to check any Apple Pay alert is to open the Wallet app on your iPhone yourself and look at recent transactions there — never call a number from a text. If you think a charge might be real, contact Apple at support.apple.com or call your bank using the number on the back of your card. Forward suspicious texts to reportphishing@apple.com.',
+    category: 'scams',
+    date: '2026-04-27',
+    icon: AlertTriangle,
+    readTime: '2 min',
+    source: 'AARP Fraud Watch Network',
+    sourceUrl: 'https://www.aarp.org/money/scams-fraud/iphone-apple-pay-alert/',
+  },
+  {
+    id: 25,
+    title: 'Google Pixel Battery Drain After April Update — What to Do While Google Investigates',
+    summary: 'Pixel owners reported severe battery drain and overheating after installing the April 2026 Android update, with the issue affecting Pixel 6 through Pixel 10 devices. Some users say their phones now last only a few hours on a full charge, and some are getting noticeably warm even when sitting unused. Google confirmed it is investigating but has not given a fix timeline. Why this matters: if your Pixel is suddenly running hot or losing charge fast, you are not imagining it — and you are not alone. Until Google issues a patch, three things can help. First, restart the phone (hold the power button → Restart). Second, go to Settings → Battery → Battery Usage and force-stop any app eating power in the background. Third, turn on Battery Saver mode (Settings → Battery → Battery Saver) until the fix arrives. Avoid factory-resetting your phone for now — early reports suggest it does not solve the issue.',
+    category: 'devices',
+    date: '2026-04-25',
+    icon: Smartphone,
+    readTime: '3 min',
+    source: 'Android Central',
+    sourceUrl: 'https://www.androidcentral.com/phones/google-pixel/pixel-phones-are-seeing-unusual-battery-drain-after-the-april-2026-update',
+  },
+  {
     id: 24,
     title: 'Microsoft Released an Emergency Windows 11 Fix — Here\'s How to Get It',
     summary: 'After Windows 11 security updates in early 2026, Outlook, Word, and File Explorer started freezing whenever users tried to open or save files stored in OneDrive or Dropbox. Microsoft confirmed the bug and released an emergency out-of-band patch (KB5078127 for version 25H2 and KB5082052 for version 24H2) to fix it. The fix is free and takes about 5 minutes. Go to Start → Settings → Windows Update → Check for updates. Install any available patches and restart your computer. If your apps stop freezing after the restart, the fix worked. You may also notice that some previously downloaded emails re-download in Outlook after the fix — this is normal and clears up on its own.',

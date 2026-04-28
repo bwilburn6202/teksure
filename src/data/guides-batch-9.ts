@@ -143,7 +143,7 @@ Google will not remove news articles or pages that are in the public interest. B
 
 Doing a full search of your own name once a year is a smart habit. When you see what is out there, you can decide what to remove and what to lock down.`,
     steps: [
-      { title: 'Search your full name in quotes on Google', content: 'Go to google.com and type your name with quotes around it, like "Jane Smith". The quotes tell Google to find that exact name, not just the words Jane and Smith separately.' },
+      { title: 'Search your full name in quotes on Google', content: 'Go to google.com and type your name with quotes around it, like "Jane Smith". The quotes tell Google to find that exact name, not only the words Jane and Smith separately.' },
       { title: 'Add your city for more results', content: 'Search again with your name and city, like "Jane Smith" Dallas. This often turns up people-finder sites with your address and phone number.' },
       { title: 'Search your phone number and email', content: 'Put your phone number in quotes and search it on Google. Do the same with your email address. This shows any public page that lists them.' },
       { title: 'Check the big people-search sites directly', content: 'Go to whitepages.com, spokeo.com, beenverified.com, and truepeoplesearch.com and search your name on each one. These are the sites most strangers use to look people up.' },
@@ -206,7 +206,7 @@ You can also control which specific apps get to see your location. This is a goo
     difficulty: 'Beginner',
     body: `Android phones save a detailed record of everywhere you go, and Google keeps a long history in something called Timeline. You can shut this off entirely or pick which apps get to see where you are.
 
-Turning off location tracking does not break your phone. You can still use Maps for directions when you need it — you just stop the always-on logging in the background.`,
+Turning off location tracking does not break your phone. You can still use Maps for directions when you need it — you stop the always-on background logging.`,
     steps: [
       { title: 'Open Settings', content: 'Swipe down from the top of your screen and tap the gear icon. Or find the Settings app in your app drawer.' },
       { title: 'Tap Location', content: 'Scroll down and tap Location. This shows all location settings for your phone.' },
@@ -487,7 +487,7 @@ Reading these notices helps you catch billing mistakes and possible fraud. You c
     steps: [
       { title: 'Go to medicare.gov and sign in', content: 'Open medicare.gov in your browser and click "Log In" at the top right. Sign in with your username and password, or create an account using your Medicare number.' },
       { title: 'Click Claims & Statements', content: 'From your account home page, click the "Claims & Statements" menu at the top. This is where all your billing paperwork lives.' },
-      { title: 'Open your latest Summary Notice', content: 'Click "Medicare Summary Notices" to see a list of past notices. Click the most recent one to open a PDF of the notice, which looks just like the paper version.' },
+      { title: 'Open your latest Summary Notice', content: 'Click "Medicare Summary Notices" to see a list of past notices. Click the most recent one to open a PDF of the notice, which matches the paper version.' },
       { title: 'Check each claim for mistakes', content: 'Look at the list of services and dates. Make sure every visit is something you actually had. If you see a doctor you never saw or a test you never had, that is a red flag for fraud.' },
       { title: 'Report anything suspicious', content: `If you find a claim that does not look right, call your doctor's billing office first to check. If it is still wrong, call 1-800-MEDICARE or the Medicare Fraud Hotline at 1-800-HHS-TIPS.` },
     ],
@@ -539,21 +539,21 @@ You can use your insurance, or pay cash. Amazon shows both prices before you buy
   {
     slug: 'transfer-prescription-new-pharmacy',
     title: 'How to Transfer a Prescription to a New Pharmacy',
-    excerpt: 'Move your prescription from one pharmacy to another — usually you just need to call the new pharmacy and they handle it.',
+    excerpt: 'Move your prescription from one pharmacy to another — call the new pharmacy and they handle the transfer for you.',
     category: 'health-tech',
     tags: ['prescription', 'transfer', 'pharmacy', 'CVS', 'Walgreens'],
     readTime: '5 min',
     thumbnailEmoji: '🏪',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `If you move, find a cheaper pharmacy, or just want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
+    body: `If you move, find a cheaper pharmacy, or want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
 
 The transfer usually takes a few hours. Most prescriptions can be transferred, though controlled drugs like certain pain or anxiety medicines sometimes need a new prescription from your doctor.`,
     steps: [
       { title: 'Gather your prescription info', content: 'Pick up your current pill bottle and look at the label. You need the prescription number (usually called "Rx Number"), the drug name and dose, and the name of your current pharmacy.' },
       { title: 'Call or visit the new pharmacy', content: 'Call the new pharmacy or walk in during business hours. Tell them you want to transfer a prescription and give them the Rx number, drug name, and the phone number of your old pharmacy.' },
       { title: 'Wait for them to contact the old pharmacy', content: 'The new pharmacy calls or faxes your old pharmacy directly to get your prescription details. This usually takes 1 to 3 hours. They will text or call you when it is ready.' },
-      { title: 'Pick up the prescription', content: 'Go to the new pharmacy, give your name at the counter, and pick up your medication. Pay with insurance or cash, just like before.' },
+      { title: 'Pick up the prescription', content: 'Go to the new pharmacy, give your name at the counter, and pick up your medication. Pay with insurance or cash, the same as before.' },
       { title: 'Update auto-refills and apps', content: `If you used the old pharmacy's app or auto-refills, cancel those. Then set up auto-refills at the new pharmacy so you do not run out of medication.` },
     ],
   },
@@ -705,7 +705,7 @@ The app talks you through each workout, telling you when to walk and when to run
       { title: 'Set up your profile', content: 'Enter your name and pick a voice coach that you like. The coach will speak in your headphones during workouts, telling you when to walk and run.' },
       { title: 'Do Week 1 Day 1', content: 'Start with Week 1 Day 1: a 5-minute warm-up walk, then alternating 60 seconds of running with 90 seconds of walking for 20 minutes, then a 5-minute cool-down. Put on headphones and follow the voice prompts.' },
       { title: 'Follow the schedule', content: 'Do 3 workouts per week, with a rest day in between. Each week gets a bit harder — longer running times and less walking. Repeat a week if you feel it is too much; there is no rush.' },
-      { title: 'Finish Week 9 with a 5K', content: 'By Week 9, you will be running 30 minutes without stopping — about 5K for most people. Sign up for a local 5K race or just run one yourself for the sense of accomplishment.' },
+      { title: 'Finish Week 9 with a 5K', content: 'By Week 9, you will be running 30 minutes without stopping — about 5K for most people. Sign up for a local 5K race or run one yourself for the sense of accomplishment.' },
     ],
   },
   {
@@ -766,7 +766,7 @@ After the free trial, Headspace costs $13 a month or $70 a year. Many people fin
     steps: [
       { title: 'Install Headspace', content: 'Download Headspace from the App Store or Play Store. Open it, tap Sign Up, and create an account with your email.' },
       { title: 'Start the Basics course', content: 'On the home screen, tap "Basics" or look for the free beginner pack. It is 10 sessions, each 10 minutes long, teaching you the fundamentals of meditation.' },
-      { title: 'Listen with headphones', content: 'Put on headphones, sit somewhere quiet, and tap Play on Session 1. Andy will guide you through breathing exercises and body awareness. You do not need to sit cross-legged or do anything fancy — just breathe.' },
+      { title: 'Listen with headphones', content: 'Put on headphones, sit somewhere quiet, and tap Play on Session 1. Andy will guide you through breathing exercises and body awareness. You do not need to sit cross-legged or do anything special. Focus on breathing.' },
       { title: 'Do one session a day', content: 'Try to do one session a day for 10 days in a row. The app tracks your streak and unlocks new content as you progress.' },
       { title: 'Try sleepcasts and focus music', content: 'After Basics, explore other parts of the app. Sleepcasts are bedtime stories that help you fall asleep, and Focus music is background sound for work or study.' },
     ],
@@ -892,7 +892,7 @@ All three assistants can run several timers at once and name them — "Oven time
     difficulty: 'Beginner',
     body: `Monarch Money is a budgeting app that connects to your bank accounts, credit cards, and investments to show all your money in one place. It became popular after Intuit shut down Mint in 2024.
 
-Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike free budgeting apps, and the interface is clean and easy to read.`,
+Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike free budgeting apps, and the interface is clean and straightforward to use.`,
     steps: [
       { title: 'Sign up at monarchmoney.com', content: 'Go to monarchmoney.com in your browser and click "Get Started". Sign up with your email, create a password, and start the free trial (7 days).' },
       { title: 'Connect your accounts', content: 'Click "Add Account" and search for your bank by name. Sign in with your online-banking username and password. Repeat for credit cards, loans, and investment accounts.' },
