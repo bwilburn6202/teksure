@@ -347,6 +347,42 @@ const scams: Scam[] = [
       'Call the AARP Fraud Watch Network helpline free at 877-908-3360 (Mon–Fri, 8 AM–8 PM ET) for help understanding your options',
     ],
   },
+  // Social: "Got a text saying your Apple Pay was used somewhere strange? AARP says scammers are using these fake alerts to drain bank accounts in minutes. Here's the safe way to check."
+  // Newsletter: "AARP's Fraud Watch Network just flagged a surge in fake Apple Pay alerts. The text looks official, includes a phone number to call, and the person who answers already knows your address or workplace. The safe move: never call a number from a text — open the Wallet app on your iPhone yourself and check your activity there."
+  {
+    title: 'Fake Apple Pay Alert Text Scam (April 2026)',
+    redFlags: [
+      'Text claims there was suspicious Apple Pay activity, an account lockdown, or an unauthorized purchase you do not recognize',
+      'Message includes a phone number to call right now to "verify" or "reverse" the charge — Apple never asks you to call a number from a text',
+      'When you call, the person on the line already knows personal details like your address or workplace, which makes the call feel real',
+      'They pressure you to move money, buy gift cards, or send funds via Apple Cash to "protect" your account',
+    ],
+    whatToDo: [
+      'Do not call any number from the text — open the Wallet app on your iPhone yourself and tap your card to check recent transactions',
+      'Apple will NEVER ask for your password, device passcode, or two-factor code over the phone — anyone asking is a scammer',
+      'If you think there might be a real charge, contact Apple at support.apple.com or call your bank using the number on the back of your card',
+      'Forward the suspicious text to reportphishing@apple.com and to the FTC at ReportFraud.ftc.gov',
+      'If you already shared information or moved money, call your bank immediately to stop the transactions',
+    ],
+  },
+  // Social: "Getting unsolicited calls about lowering your credit card rate? The FTC just confirmed these are scams — and they're after your card number, not your interest rate."
+  // Newsletter: "The FTC issued a fresh warning in April 2026: companies cold-calling to offer 'lower credit card interest rates' are scams. They charge an upfront fee, claim a fake relationship with your bank, and walk away with your card number. The truth: only your bank can lower your rate — and the call is free."
+  {
+    title: 'Fake Credit Card Interest Rate Reduction Scam (April 2026)',
+    redFlags: [
+      'Unsolicited robocall or live caller offers to "lower your credit card interest rate" — sometimes claiming to be from Visa, Mastercard, or your bank',
+      'Caller asks for your full credit card number, expiration, security code, or Social Security number to "verify your account"',
+      'They demand an upfront fee — often $500 to $2,000 — paid by gift card, wire transfer, Zelle, or cryptocurrency',
+      'Promise of guaranteed savings of "$2,500 or more" in interest — no legitimate company can guarantee this',
+    ],
+    whatToDo: [
+      'Hang up — Visa, Mastercard, and your bank do not cold-call to lower your rate, and any caller asking for your full card number over the phone is a scammer',
+      'Only your card issuer can change your interest rate — call the number on the back of your card and ask for a lower rate yourself, free, in about 5 minutes',
+      'Never pay an upfront fee for "rate reduction" services — under federal law, telemarketers cannot legally collect fees before the service is delivered',
+      'Add your number to the National Do Not Call Registry at donotcall.gov to cut down on these calls',
+      'Report the call to the FTC at ReportFraud.ftc.gov or 1-877-382-4357',
+    ],
+  },
   // Social: "Getting a job offer out of nowhere — great pay, fully remote, no experience needed? This is the #1 fake job scam pattern the FBI is warning about right now."
   // Newsletter: "The FBI's IC3 says fake job offer scams jumped 40% in early 2026. Scammers post convincing job listings and even hold fake 'interviews' via AI video — then ask for money for equipment or background checks. Here's what to check before you share any personal information with a new employer."
   {
