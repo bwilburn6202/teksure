@@ -355,6 +355,7 @@ const Start                  = lazy(() => import("./pages/Start"));
 const IdTheftRecovery        = lazy(() => import("./pages/tools/IdTheftRecovery"));
 const EmailMigration         = lazy(() => import("./pages/tools/EmailMigration"));
 const FallDetectionSetup     = lazy(() => import("./pages/tools/FallDetectionSetup"));
+const TravelTechChecklist    = lazy(() => import("./pages/tools/TravelTechChecklist"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -891,6 +892,7 @@ const AppContent = () => {
           <Route path="/tools/id-theft-recovery"          element={<IdTheftRecovery />} />
           <Route path="/tools/email-migration"            element={<EmailMigration />} />
           <Route path="/tools/fall-detection-setup"       element={<FallDetectionSetup />} />
+          <Route path="/tools/travel-tech-checklist"      element={<TravelTechChecklist />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
