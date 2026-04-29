@@ -1739,6 +1739,11 @@ const HuluForSeniors            = lazy(() => import("./pages/tools/HuluForSenior
 const PeacockStreamingGuide     = lazy(() => import("./pages/tools/PeacockStreamingGuide"));
 const MaxHBOStreamingGuide      = lazy(() => import("./pages/tools/MaxHBOStreamingGuide"));
 const TubiPlutoFreeStreaming    = lazy(() => import("./pages/tools/TubiPlutoFreeStreaming"));
+const SimpliSafeReview          = lazy(() => import("./pages/tools/SimpliSafeReview"));
+const RingAlarmSystemGuide      = lazy(() => import("./pages/tools/RingAlarmSystemGuide"));
+const HomeSecuritySystemCompare = lazy(() => import("./pages/tools/HomeSecuritySystemCompare"));
+const MotionSensorLightsGuide   = lazy(() => import("./pages/tools/MotionSensorLightsGuide"));
+const HomeSecurityChecklist     = lazy(() => import("./pages/tools/HomeSecurityChecklist"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3851,6 +3856,11 @@ const AppContent = () => {
           <Route path="/tools/peacock-streaming-guide" element={<PeacockStreamingGuide />} />
           <Route path="/tools/max-hbo-streaming-guide" element={<MaxHBOStreamingGuide />} />
           <Route path="/tools/tubi-pluto-free-streaming" element={<TubiPlutoFreeStreaming />} />
+          <Route path="/tools/simplisafe-review" element={<SimpliSafeReview />} />
+          <Route path="/tools/ring-alarm-system-guide" element={<RingAlarmSystemGuide />} />
+          <Route path="/tools/home-security-system-compare" element={<HomeSecuritySystemCompare />} />
+          <Route path="/tools/motion-sensor-lights-guide" element={<MotionSensorLightsGuide />} />
+          <Route path="/tools/home-security-checklist" element={<HomeSecurityChecklist />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
