@@ -1084,6 +1084,13 @@ const JunkRemovalApps        = lazy(() => import("./pages/tools/JunkRemovalApps"
 const OrganizingApps         = lazy(() => import("./pages/tools/OrganizingApps"));
 const StorageUnitPicks       = lazy(() => import("./pages/tools/StorageUnitPicks"));
 
+// ── Cycle 130 (April 29 2026) — emergency preparedness ──
+const HurricanePrep          = lazy(() => import("./pages/tools/HurricanePrep"));
+const EarthquakePrep         = lazy(() => import("./pages/tools/EarthquakePrep"));
+const BlackoutKit            = lazy(() => import("./pages/tools/BlackoutKit"));
+const EvacuationGoBag        = lazy(() => import("./pages/tools/EvacuationGoBag"));
+const FloodPrep              = lazy(() => import("./pages/tools/FloodPrep"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2711,6 +2718,13 @@ const AppContent = () => {
           <Route path="/tools/junk-removal-apps" element={<JunkRemovalApps />} />
           <Route path="/tools/organizing-apps" element={<OrganizingApps />} />
           <Route path="/tools/storage-unit-picks" element={<StorageUnitPicks />} />
+
+          {/* Cycle 130 — emergency preparedness */}
+          <Route path="/tools/hurricane-prep" element={<HurricanePrep />} />
+          <Route path="/tools/earthquake-prep" element={<EarthquakePrep />} />
+          <Route path="/tools/blackout-kit" element={<BlackoutKit />} />
+          <Route path="/tools/evacuation-go-bag" element={<EvacuationGoBag />} />
+          <Route path="/tools/flood-prep" element={<FloodPrep />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
