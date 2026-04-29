@@ -489,6 +489,13 @@ const SubscriptionAuditCoach = lazy(() => import("./pages/tools/SubscriptionAudi
 const DisputeChargeCoach     = lazy(() => import("./pages/tools/DisputeChargeCoach"));
 const MortgageRefinanceCoach = lazy(() => import("./pages/tools/MortgageRefinanceCoach"));
 
+// ── Cycle 45 (April 29 2026) — retirement accounts/withdrawal/bonds/index ──
+const RetirementAccountTypes = lazy(() => import("./pages/tools/RetirementAccountTypes"));
+const Plan401kRolloverCoach  = lazy(() => import("./pages/tools/Plan401kRolloverCoach"));
+const SafeWithdrawalRate     = lazy(() => import("./pages/tools/SafeWithdrawalRate"));
+const BondLadderCoach        = lazy(() => import("./pages/tools/BondLadderCoach"));
+const IndexFundCoach         = lazy(() => import("./pages/tools/IndexFundCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1521,6 +1528,13 @@ const AppContent = () => {
           <Route path="/tools/subscription-audit-coach" element={<SubscriptionAuditCoach />} />
           <Route path="/tools/dispute-charge-coach" element={<DisputeChargeCoach />} />
           <Route path="/tools/mortgage-refinance-coach" element={<MortgageRefinanceCoach />} />
+
+          {/* Cycle 45 — retirement accounts / rollover / withdrawal / bonds / index */}
+          <Route path="/tools/retirement-account-types" element={<RetirementAccountTypes />} />
+          <Route path="/tools/401k-rollover-coach" element={<Plan401kRolloverCoach />} />
+          <Route path="/tools/safe-withdrawal-rate" element={<SafeWithdrawalRate />} />
+          <Route path="/tools/bond-ladder-coach" element={<BondLadderCoach />} />
+          <Route path="/tools/index-fund-coach" element={<IndexFundCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
