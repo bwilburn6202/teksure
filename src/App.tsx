@@ -1420,6 +1420,13 @@ const FaceIDFingerprintSetup = lazy(() => import("./pages/tools/FaceIDFingerprin
 const AppleICloudSecurity    = lazy(() => import("./pages/tools/AppleICloudSecurity"));
 const PasskeyExplained       = lazy(() => import("./pages/tools/PasskeyExplained"));
 
+// ── Cycle 178 (April 29 2026) — government online ──
+const MySocialSecurityAccount = lazy(() => import("./pages/tools/MySocialSecurityAccount"));
+const IRSOnlineAccount       = lazy(() => import("./pages/tools/IRSOnlineAccount"));
+const MedicareDotGovTour     = lazy(() => import("./pages/tools/MedicareDotGovTour"));
+const BenefitsCheckUpTool    = lazy(() => import("./pages/tools/BenefitsCheckUpTool"));
+const USAJobsForSeniors      = lazy(() => import("./pages/tools/USAJobsForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3301,6 +3308,11 @@ const AppContent = () => {
           <Route path="/tools/face-id-fingerprint-setup" element={<FaceIDFingerprintSetup />} />
           <Route path="/tools/apple-icloud-security" element={<AppleICloudSecurity />} />
           <Route path="/tools/passkey-explained" element={<PasskeyExplained />} />
+          <Route path="/tools/my-social-security-account" element={<MySocialSecurityAccount />} />
+          <Route path="/tools/irs-online-account" element={<IRSOnlineAccount />} />
+          <Route path="/tools/medicare-dot-gov-tour" element={<MedicareDotGovTour />} />
+          <Route path="/tools/benefits-check-up-tool" element={<BenefitsCheckUpTool />} />
+          <Route path="/tools/usa-jobs-for-seniors" element={<USAJobsForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
