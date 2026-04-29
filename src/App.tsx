@@ -258,6 +258,13 @@ const CharityVettingTool     = lazy(() => import("./pages/tools/CharityVettingTo
 const SeniorTabletPicker     = lazy(() => import("./pages/tools/SeniorTabletPicker"));
 const CopyPasteCoach         = lazy(() => import("./pages/tools/CopyPasteCoach"));
 
+// ── Cycle 12 (April 29 2026) — cleanup, delivery, video calls ──
+const TechSupportPopupDefense = lazy(() => import("./pages/tools/TechSupportPopupDefense"));
+const FreeUpPhoneStorage     = lazy(() => import("./pages/tools/FreeUpPhoneStorage"));
+const ComputerCleanupCoach   = lazy(() => import("./pages/tools/ComputerCleanupCoach"));
+const GroceryDeliveryCoach   = lazy(() => import("./pages/tools/GroceryDeliveryCoach"));
+const VideoCallTipsForFamily = lazy(() => import("./pages/tools/VideoCallTipsForFamily"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1059,6 +1066,13 @@ const AppContent = () => {
           <Route path="/tools/charity-vetting-tool" element={<CharityVettingTool />} />
           <Route path="/tools/senior-tablet-picker" element={<SeniorTabletPicker />} />
           <Route path="/tools/copy-paste-coach" element={<CopyPasteCoach />} />
+
+          {/* Cycle 12 — cleanup, delivery, video calls */}
+          <Route path="/tools/tech-support-popup-defense" element={<TechSupportPopupDefense />} />
+          <Route path="/tools/free-up-phone-storage" element={<FreeUpPhoneStorage />} />
+          <Route path="/tools/computer-cleanup-coach" element={<ComputerCleanupCoach />} />
+          <Route path="/tools/grocery-delivery-coach" element={<GroceryDeliveryCoach />} />
+          <Route path="/tools/video-call-tips-for-family" element={<VideoCallTipsForFamily />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
