@@ -440,6 +440,13 @@ const AtHomeHealthTests      = lazy(() => import("./pages/tools/AtHomeHealthTest
 const SmartScaleBpCuffPicker = lazy(() => import("./pages/tools/SmartScaleBpCuffPicker"));
 const VideoMeetingHostCoach  = lazy(() => import("./pages/tools/VideoMeetingHostCoach"));
 
+// ── Cycle 38 (April 29 2026) — accounts/privacy/search/VA/SSDI ──
+const AppleIdGoogleAccountSetup = lazy(() => import("./pages/tools/AppleIdGoogleAccountSetup"));
+const PrivacyEmailPicker     = lazy(() => import("./pages/tools/PrivacyEmailPicker"));
+const BetterWebSearchCoach   = lazy(() => import("./pages/tools/BetterWebSearchCoach"));
+const VaBenefitsAndApp       = lazy(() => import("./pages/tools/VaBenefitsAndApp"));
+const SsdiVsSsiCoach         = lazy(() => import("./pages/tools/SsdiVsSsiCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1423,6 +1430,13 @@ const AppContent = () => {
           <Route path="/tools/at-home-health-tests" element={<AtHomeHealthTests />} />
           <Route path="/tools/smart-scale-bp-cuff-picker" element={<SmartScaleBpCuffPicker />} />
           <Route path="/tools/video-meeting-host-coach" element={<VideoMeetingHostCoach />} />
+
+          {/* Cycle 38 — accounts / privacy / search / VA / SSDI */}
+          <Route path="/tools/apple-id-google-account-setup" element={<AppleIdGoogleAccountSetup />} />
+          <Route path="/tools/privacy-email-picker" element={<PrivacyEmailPicker />} />
+          <Route path="/tools/better-web-search-coach" element={<BetterWebSearchCoach />} />
+          <Route path="/tools/va-benefits-and-app" element={<VaBenefitsAndApp />} />
+          <Route path="/tools/ssdi-vs-ssi-coach" element={<SsdiVsSsiCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
