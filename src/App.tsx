@@ -1231,6 +1231,13 @@ const CarRentalSeniorTips    = lazy(() => import("./pages/tools/CarRentalSeniorT
 const RoadsideAssistanceCompare = lazy(() => import("./pages/tools/RoadsideAssistanceCompare"));
 const AutomaticEmergencyBraking = lazy(() => import("./pages/tools/AutomaticEmergencyBraking"));
 
+// ── Cycle 151 (April 29 2026) — digital payments + money ──
+const ApplePaySetupSeniors   = lazy(() => import("./pages/tools/ApplePaySetupSeniors"));
+const PayPalSafelyForSeniors = lazy(() => import("./pages/tools/PayPalSafelyForSeniors"));
+const OnlineBrokerageStarter = lazy(() => import("./pages/tools/OnlineBrokerageStarter"));
+const CDTreasuryHighYield    = lazy(() => import("./pages/tools/CDTreasuryHighYield"));
+const AutoBillPaySetup       = lazy(() => import("./pages/tools/AutoBillPaySetup"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2977,6 +2984,11 @@ const AppContent = () => {
           <Route path="/tools/car-rental-senior-tips" element={<CarRentalSeniorTips />} />
           <Route path="/tools/roadside-assistance-compare" element={<RoadsideAssistanceCompare />} />
           <Route path="/tools/automatic-emergency-braking" element={<AutomaticEmergencyBraking />} />
+          <Route path="/tools/apple-pay-setup-seniors" element={<ApplePaySetupSeniors />} />
+          <Route path="/tools/paypal-safely-for-seniors" element={<PayPalSafelyForSeniors />} />
+          <Route path="/tools/online-brokerage-starter" element={<OnlineBrokerageStarter />} />
+          <Route path="/tools/cd-treasury-high-yield" element={<CDTreasuryHighYield />} />
+          <Route path="/tools/auto-bill-pay-setup" element={<AutoBillPaySetup />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
