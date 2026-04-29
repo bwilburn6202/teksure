@@ -951,6 +951,13 @@ const CardSendingApps        = lazy(() => import("./pages/tools/CardSendingApps"
 const FamilyCalendarApps     = lazy(() => import("./pages/tools/FamilyCalendarApps"));
 const ZoomThanksgivingTips   = lazy(() => import("./pages/tools/ZoomThanksgivingTips"));
 
+// ── Cycle 111 (April 29 2026) — post-retirement living ──
+const SeniorVillageOptions   = lazy(() => import("./pages/tools/SeniorVillageOptions"));
+const AssistedLivingTechCheck = lazy(() => import("./pages/tools/AssistedLivingTechCheck"));
+const RetirementCommunityFinder = lazy(() => import("./pages/tools/RetirementCommunityFinder"));
+const AgingInPlaceModifications = lazy(() => import("./pages/tools/AgingInPlaceModifications"));
+const CCRCExplained          = lazy(() => import("./pages/tools/CCRCExplained"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2445,6 +2452,13 @@ const AppContent = () => {
           <Route path="/tools/card-sending-apps" element={<CardSendingApps />} />
           <Route path="/tools/family-calendar-apps" element={<FamilyCalendarApps />} />
           <Route path="/tools/zoom-thanksgiving-tips" element={<ZoomThanksgivingTips />} />
+
+          {/* Cycle 111 — post-retirement living */}
+          <Route path="/tools/senior-village-options" element={<SeniorVillageOptions />} />
+          <Route path="/tools/assisted-living-tech-check" element={<AssistedLivingTechCheck />} />
+          <Route path="/tools/retirement-community-finder" element={<RetirementCommunityFinder />} />
+          <Route path="/tools/aging-in-place-modifications" element={<AgingInPlaceModifications />} />
+          <Route path="/tools/ccrc-explained" element={<CCRCExplained />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
