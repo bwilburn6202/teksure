@@ -1182,6 +1182,13 @@ const AirportWheelchairHelp  = lazy(() => import("./pages/tools/AirportWheelchai
 const JetLagSeniors          = lazy(() => import("./pages/tools/JetLagSeniors"));
 const PackingChecklistSeniors = lazy(() => import("./pages/tools/PackingChecklistSeniors"));
 
+// ── Cycle 144 (April 29 2026) — downsizing + decluttering ──
+const GarageSaleSeniors      = lazy(() => import("./pages/tools/GarageSaleSeniors"));
+const SeniorRelocationServices = lazy(() => import("./pages/tools/SeniorRelocationServices"));
+const HoarderHelpResources   = lazy(() => import("./pages/tools/HoarderHelpResources"));
+const MemorabiliaPreservation = lazy(() => import("./pages/tools/MemorabiliaPreservation"));
+const AtticBasementClearout  = lazy(() => import("./pages/tools/AtticBasementClearout"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2893,6 +2900,11 @@ const AppContent = () => {
           <Route path="/tools/airport-wheelchair-help" element={<AirportWheelchairHelp />} />
           <Route path="/tools/jet-lag-seniors" element={<JetLagSeniors />} />
           <Route path="/tools/packing-checklist-seniors" element={<PackingChecklistSeniors />} />
+          <Route path="/tools/garage-sale-seniors" element={<GarageSaleSeniors />} />
+          <Route path="/tools/senior-relocation-services" element={<SeniorRelocationServices />} />
+          <Route path="/tools/hoarder-help-resources" element={<HoarderHelpResources />} />
+          <Route path="/tools/memorabilia-preservation" element={<MemorabiliaPreservation />} />
+          <Route path="/tools/attic-basement-clearout" element={<AtticBasementClearout />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
