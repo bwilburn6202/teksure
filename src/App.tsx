@@ -1119,6 +1119,13 @@ const ScreenCleaner          = lazy(() => import("./pages/tools/ScreenCleaner"))
 const BatteryReplacement     = lazy(() => import("./pages/tools/BatteryReplacement"));
 const OldPhoneRepurpose      = lazy(() => import("./pages/tools/OldPhoneRepurpose"));
 
+// ── Cycle 135 (April 29 2026) — media literacy ──
+const NewsAppCompare         = lazy(() => import("./pages/tools/NewsAppCompare"));
+const FactCheckingTools      = lazy(() => import("./pages/tools/FactCheckingTools"));
+const MisinfoSpotting        = lazy(() => import("./pages/tools/MisinfoSpotting"));
+const NewsletterPicks        = lazy(() => import("./pages/tools/NewsletterPicks"));
+const MediaLiteracySeniors   = lazy(() => import("./pages/tools/MediaLiteracySeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2781,6 +2788,13 @@ const AppContent = () => {
           <Route path="/tools/screen-cleaner" element={<ScreenCleaner />} />
           <Route path="/tools/battery-replacement" element={<BatteryReplacement />} />
           <Route path="/tools/old-phone-repurpose" element={<OldPhoneRepurpose />} />
+
+          {/* Cycle 135 — media literacy */}
+          <Route path="/tools/news-app-compare" element={<NewsAppCompare />} />
+          <Route path="/tools/fact-checking-tools" element={<FactCheckingTools />} />
+          <Route path="/tools/misinfo-spotting" element={<MisinfoSpotting />} />
+          <Route path="/tools/newsletter-picks" element={<NewsletterPicks />} />
+          <Route path="/tools/media-literacy-seniors" element={<MediaLiteracySeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
