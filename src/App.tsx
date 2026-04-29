@@ -265,6 +265,13 @@ const ComputerCleanupCoach   = lazy(() => import("./pages/tools/ComputerCleanupC
 const GroceryDeliveryCoach   = lazy(() => import("./pages/tools/GroceryDeliveryCoach"));
 const VideoCallTipsForFamily = lazy(() => import("./pages/tools/VideoCallTipsForFamily"));
 
+// ── Cycle 13 (April 29 2026) — calendar / news / wellness / weather / pets ──
+const FamilyCalendarSharing  = lazy(() => import("./pages/tools/FamilyCalendarSharing"));
+const NewsAppCurator         = lazy(() => import("./pages/tools/NewsAppCurator"));
+const MeditationAppPicker    = lazy(() => import("./pages/tools/MeditationAppPicker"));
+const WeatherAlertPicker     = lazy(() => import("./pages/tools/WeatherAlertPicker"));
+const PetTechCoach           = lazy(() => import("./pages/tools/PetTechCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1073,6 +1080,13 @@ const AppContent = () => {
           <Route path="/tools/computer-cleanup-coach" element={<ComputerCleanupCoach />} />
           <Route path="/tools/grocery-delivery-coach" element={<GroceryDeliveryCoach />} />
           <Route path="/tools/video-call-tips-for-family" element={<VideoCallTipsForFamily />} />
+
+          {/* Cycle 13 — calendar / news / wellness / weather / pets */}
+          <Route path="/tools/family-calendar-sharing" element={<FamilyCalendarSharing />} />
+          <Route path="/tools/news-app-curator" element={<NewsAppCurator />} />
+          <Route path="/tools/meditation-app-picker" element={<MeditationAppPicker />} />
+          <Route path="/tools/weather-alert-picker" element={<WeatherAlertPicker />} />
+          <Route path="/tools/pet-tech-coach" element={<PetTechCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
