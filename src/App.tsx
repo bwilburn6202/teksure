@@ -825,6 +825,13 @@ const SportsStreamCompare    = lazy(() => import("./pages/tools/SportsStreamComp
 const LocalTvCordCutting     = lazy(() => import("./pages/tools/LocalTvCordCutting"));
 const ClosedCaptioningSetup  = lazy(() => import("./pages/tools/ClosedCaptioningSetup"));
 
+// ── Cycle 93 (April 29 2026) — DIY + handyman ──
+const HandymanFinder         = lazy(() => import("./pages/tools/HandymanFinder"));
+const HomeImprovementApps    = lazy(() => import("./pages/tools/HomeImprovementApps"));
+const AppliancePartsApps     = lazy(() => import("./pages/tools/AppliancePartsApps"));
+const PaintColorApps         = lazy(() => import("./pages/tools/PaintColorApps"));
+const FurnitureAssemblyHelp  = lazy(() => import("./pages/tools/FurnitureAssemblyHelp"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2193,6 +2200,13 @@ const AppContent = () => {
           <Route path="/tools/sports-stream-compare" element={<SportsStreamCompare />} />
           <Route path="/tools/local-tv-cord-cutting" element={<LocalTvCordCutting />} />
           <Route path="/tools/closed-captioning-setup" element={<ClosedCaptioningSetup />} />
+
+          {/* Cycle 93 — DIY + handyman */}
+          <Route path="/tools/handyman-finder" element={<HandymanFinder />} />
+          <Route path="/tools/home-improvement-apps" element={<HomeImprovementApps />} />
+          <Route path="/tools/appliance-parts-apps" element={<AppliancePartsApps />} />
+          <Route path="/tools/paint-color-apps" element={<PaintColorApps />} />
+          <Route path="/tools/furniture-assembly-help" element={<FurnitureAssemblyHelp />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
