@@ -853,6 +853,13 @@ const CrosswordApps          = lazy(() => import("./pages/tools/CrosswordApps"))
 const MemoirWritingApps      = lazy(() => import("./pages/tools/MemoirWritingApps"));
 const ChessPicks             = lazy(() => import("./pages/tools/ChessPicks"));
 
+// ── Cycle 97 (April 29 2026) — medication safety ──
+const PillOrganizerSmart     = lazy(() => import("./pages/tools/PillOrganizerSmart"));
+const MedReconciliation      = lazy(() => import("./pages/tools/MedReconciliation"));
+const DrugInteractionCheckers = lazy(() => import("./pages/tools/DrugInteractionCheckers"));
+const RxCouponApps           = lazy(() => import("./pages/tools/RxCouponApps"));
+const MedicationDeliveryServices = lazy(() => import("./pages/tools/MedicationDeliveryServices"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2249,6 +2256,13 @@ const AppContent = () => {
           <Route path="/tools/crossword-apps" element={<CrosswordApps />} />
           <Route path="/tools/memoir-writing-apps" element={<MemoirWritingApps />} />
           <Route path="/tools/chess-picks" element={<ChessPicks />} />
+
+          {/* Cycle 97 — medication safety */}
+          <Route path="/tools/pill-organizer-smart" element={<PillOrganizerSmart />} />
+          <Route path="/tools/med-reconciliation" element={<MedReconciliation />} />
+          <Route path="/tools/drug-interaction-checkers" element={<DrugInteractionCheckers />} />
+          <Route path="/tools/rx-coupon-apps" element={<RxCouponApps />} />
+          <Route path="/tools/medication-delivery-services" element={<MedicationDeliveryServices />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
