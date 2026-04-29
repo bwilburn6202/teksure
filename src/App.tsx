@@ -818,6 +818,13 @@ const FamilyPlanCompare      = lazy(() => import("./pages/tools/FamilyPlanCompar
 const BurnerPhoneTips        = lazy(() => import("./pages/tools/BurnerPhoneTips"));
 const RoamingTips            = lazy(() => import("./pages/tools/RoamingTips"));
 
+// ── Cycle 92 (April 29 2026) — TV + entertainment ──
+const AntennaPicks           = lazy(() => import("./pages/tools/AntennaPicks"));
+const FreeStreamingChannels  = lazy(() => import("./pages/tools/FreeStreamingChannels"));
+const SportsStreamCompare    = lazy(() => import("./pages/tools/SportsStreamCompare"));
+const LocalTvCordCutting     = lazy(() => import("./pages/tools/LocalTvCordCutting"));
+const ClosedCaptioningSetup  = lazy(() => import("./pages/tools/ClosedCaptioningSetup"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2179,6 +2186,13 @@ const AppContent = () => {
           <Route path="/tools/family-plan-compare" element={<FamilyPlanCompare />} />
           <Route path="/tools/burner-phone-tips" element={<BurnerPhoneTips />} />
           <Route path="/tools/roaming-tips" element={<RoamingTips />} />
+
+          {/* Cycle 92 — TV + entertainment */}
+          <Route path="/tools/antenna-picks" element={<AntennaPicks />} />
+          <Route path="/tools/free-streaming-channels" element={<FreeStreamingChannels />} />
+          <Route path="/tools/sports-stream-compare" element={<SportsStreamCompare />} />
+          <Route path="/tools/local-tv-cord-cutting" element={<LocalTvCordCutting />} />
+          <Route path="/tools/closed-captioning-setup" element={<ClosedCaptioningSetup />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
