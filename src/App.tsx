@@ -1098,6 +1098,13 @@ const FreezerMealPrep        = lazy(() => import("./pages/tools/FreezerMealPrep"
 const HealthySnackIdeas      = lazy(() => import("./pages/tools/HealthySnackIdeas"));
 const SoupRecipes            = lazy(() => import("./pages/tools/SoupRecipes"));
 
+// ── Cycle 132 (April 29 2026) — gardening + outdoor ──
+const RaisedBedGuide         = lazy(() => import("./pages/tools/RaisedBedGuide"));
+const ContainerGardening     = lazy(() => import("./pages/tools/ContainerGardening"));
+const BirdfeederGuide        = lazy(() => import("./pages/tools/BirdfeederGuide"));
+const ButterflyGarden        = lazy(() => import("./pages/tools/ButterflyGarden"));
+const IndoorPlantsLowMaintenance = lazy(() => import("./pages/tools/IndoorPlantsLowMaintenance"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2739,6 +2746,13 @@ const AppContent = () => {
           <Route path="/tools/freezer-meal-prep" element={<FreezerMealPrep />} />
           <Route path="/tools/healthy-snack-ideas" element={<HealthySnackIdeas />} />
           <Route path="/tools/soup-recipes" element={<SoupRecipes />} />
+
+          {/* Cycle 132 — gardening + outdoor */}
+          <Route path="/tools/raised-bed-guide" element={<RaisedBedGuide />} />
+          <Route path="/tools/container-gardening" element={<ContainerGardening />} />
+          <Route path="/tools/birdfeeder-guide" element={<BirdfeederGuide />} />
+          <Route path="/tools/butterfly-garden" element={<ButterflyGarden />} />
+          <Route path="/tools/indoor-plants-low-maintenance" element={<IndoorPlantsLowMaintenance />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
