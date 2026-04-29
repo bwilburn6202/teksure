@@ -895,6 +895,13 @@ const EncoreCareers          = lazy(() => import("./pages/tools/EncoreCareers"))
 const OnlineBusinessForSeniors = lazy(() => import("./pages/tools/OnlineBusinessForSeniors"));
 const FreelanceSenior        = lazy(() => import("./pages/tools/FreelanceSenior"));
 
+// ── Cycle 103 (April 29 2026) — crime + safety ──
+const HomeSecuritySystems    = lazy(() => import("./pages/tools/HomeSecuritySystems"));
+const IdentityTheftRecovery  = lazy(() => import("./pages/tools/IdentityTheftRecovery"));
+const SmokeAlarmTesting      = lazy(() => import("./pages/tools/SmokeAlarmTesting"));
+const FrozenAccountsRecovery = lazy(() => import("./pages/tools/FrozenAccountsRecovery"));
+const EstateFraudPrevention  = lazy(() => import("./pages/tools/EstateFraudPrevention"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2333,6 +2340,13 @@ const AppContent = () => {
           <Route path="/tools/encore-careers" element={<EncoreCareers />} />
           <Route path="/tools/online-business-for-seniors" element={<OnlineBusinessForSeniors />} />
           <Route path="/tools/freelance-senior" element={<FreelanceSenior />} />
+
+          {/* Cycle 103 — crime + safety */}
+          <Route path="/tools/home-security-systems" element={<HomeSecuritySystems />} />
+          <Route path="/tools/identity-theft-recovery" element={<IdentityTheftRecovery />} />
+          <Route path="/tools/smoke-alarm-testing" element={<SmokeAlarmTesting />} />
+          <Route path="/tools/frozen-accounts-recovery" element={<FrozenAccountsRecovery />} />
+          <Route path="/tools/estate-fraud-prevention" element={<EstateFraudPrevention />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
