@@ -1754,6 +1754,10 @@ const MedisafePillReminder      = lazy(() => import("./pages/tools/MedisafePillR
 const BloodPressureTrackingApps = lazy(() => import("./pages/tools/BloodPressureTrackingApps"));
 const AppleHealthAppTutorial    = lazy(() => import("./pages/tools/AppleHealthAppTutorial"));
 const SmartScaleForSeniors      = lazy(() => import("./pages/tools/SmartScaleForSeniors"));
+const LumosityBrainHQCompare    = lazy(() => import("./pages/tools/LumosityBrainHQCompare"));
+const ChairExercisesForSeniors  = lazy(() => import("./pages/tools/ChairExercisesForSeniors"));
+const BalanceExercisesSeniors   = lazy(() => import("./pages/tools/BalanceExercisesSeniors"));
+const WordsWithFriendsSeniors   = lazy(() => import("./pages/tools/WordsWithFriendsSeniors"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3881,6 +3885,10 @@ const AppContent = () => {
           <Route path="/tools/blood-pressure-tracking-apps" element={<BloodPressureTrackingApps />} />
           <Route path="/tools/apple-health-app-tutorial" element={<AppleHealthAppTutorial />} />
           <Route path="/tools/smart-scale-for-seniors" element={<SmartScaleForSeniors />} />
+          <Route path="/tools/lumosity-brainhq-compare" element={<LumosityBrainHQCompare />} />
+          <Route path="/tools/chair-exercises-for-seniors" element={<ChairExercisesForSeniors />} />
+          <Route path="/tools/balance-exercises-seniors" element={<BalanceExercisesSeniors />} />
+          <Route path="/tools/words-with-friends-seniors" element={<WordsWithFriendsSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
