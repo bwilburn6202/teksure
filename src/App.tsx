@@ -482,6 +482,13 @@ const OutdoorSecurityCamera  = lazy(() => import("./pages/tools/OutdoorSecurityC
 const HomeWeatherStation     = lazy(() => import("./pages/tools/HomeWeatherStation"));
 const WalkingPadStandingDesk = lazy(() => import("./pages/tools/WalkingPadStandingDesk"));
 
+// ── Cycle 44 (April 29 2026) — car/mileage/subs/dispute/refi ──
+const CarMaintenanceTracker  = lazy(() => import("./pages/tools/CarMaintenanceTracker"));
+const MileageTracker         = lazy(() => import("./pages/tools/MileageTracker"));
+const SubscriptionAuditCoach = lazy(() => import("./pages/tools/SubscriptionAuditCoach"));
+const DisputeChargeCoach     = lazy(() => import("./pages/tools/DisputeChargeCoach"));
+const MortgageRefinanceCoach = lazy(() => import("./pages/tools/MortgageRefinanceCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1507,6 +1514,13 @@ const AppContent = () => {
           <Route path="/tools/outdoor-security-camera" element={<OutdoorSecurityCamera />} />
           <Route path="/tools/home-weather-station" element={<HomeWeatherStation />} />
           <Route path="/tools/walking-pad-standing-desk" element={<WalkingPadStandingDesk />} />
+
+          {/* Cycle 44 — car / mileage / subs / dispute / refi */}
+          <Route path="/tools/car-maintenance-tracker" element={<CarMaintenanceTracker />} />
+          <Route path="/tools/mileage-tracker" element={<MileageTracker />} />
+          <Route path="/tools/subscription-audit-coach" element={<SubscriptionAuditCoach />} />
+          <Route path="/tools/dispute-charge-coach" element={<DisputeChargeCoach />} />
+          <Route path="/tools/mortgage-refinance-coach" element={<MortgageRefinanceCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
