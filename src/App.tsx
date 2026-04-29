@@ -958,6 +958,13 @@ const RetirementCommunityFinder = lazy(() => import("./pages/tools/RetirementCom
 const AgingInPlaceModifications = lazy(() => import("./pages/tools/AgingInPlaceModifications"));
 const CCRCExplained          = lazy(() => import("./pages/tools/CCRCExplained"));
 
+// ── Cycle 112 (April 29 2026) — dental + vision + hearing ──
+const OverTheCounterHearingAids = lazy(() => import("./pages/tools/OverTheCounterHearingAids"));
+const PrescriptionGlassesOnline = lazy(() => import("./pages/tools/PrescriptionGlassesOnline"));
+const DentalImplantGuide     = lazy(() => import("./pages/tools/DentalImplantGuide"));
+const ContactLensApps        = lazy(() => import("./pages/tools/ContactLensApps"));
+const TeethCleaningApps      = lazy(() => import("./pages/tools/TeethCleaningApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2459,6 +2466,13 @@ const AppContent = () => {
           <Route path="/tools/retirement-community-finder" element={<RetirementCommunityFinder />} />
           <Route path="/tools/aging-in-place-modifications" element={<AgingInPlaceModifications />} />
           <Route path="/tools/ccrc-explained" element={<CCRCExplained />} />
+
+          {/* Cycle 112 — dental + vision + hearing */}
+          <Route path="/tools/over-the-counter-hearing-aids" element={<OverTheCounterHearingAids />} />
+          <Route path="/tools/prescription-glasses-online" element={<PrescriptionGlassesOnline />} />
+          <Route path="/tools/dental-implant-guide" element={<DentalImplantGuide />} />
+          <Route path="/tools/contact-lens-apps" element={<ContactLensApps />} />
+          <Route path="/tools/teeth-cleaning-apps" element={<TeethCleaningApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
