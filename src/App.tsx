@@ -1007,6 +1007,13 @@ const AIPhotoEdit            = lazy(() => import("./pages/tools/AIPhotoEdit"));
 const AIBillNegotiate        = lazy(() => import("./pages/tools/AIBillNegotiate"));
 const AISeniorSearch         = lazy(() => import("./pages/tools/AISeniorSearch"));
 
+// ── Cycle 119 (April 29 2026) — recovery + rehab ──
+const SurgeryRecoveryTech    = lazy(() => import("./pages/tools/SurgeryRecoveryTech"));
+const PhysicalTherapyApps    = lazy(() => import("./pages/tools/PhysicalTherapyApps"));
+const MedicalEquipmentRental = lazy(() => import("./pages/tools/MedicalEquipmentRental"));
+const HomeHealthAideFind     = lazy(() => import("./pages/tools/HomeHealthAideFind"));
+const HospiceTechSupport     = lazy(() => import("./pages/tools/HospiceTechSupport"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2557,6 +2564,13 @@ const AppContent = () => {
           <Route path="/tools/ai-photo-edit" element={<AIPhotoEdit />} />
           <Route path="/tools/ai-bill-negotiate" element={<AIBillNegotiate />} />
           <Route path="/tools/ai-senior-search" element={<AISeniorSearch />} />
+
+          {/* Cycle 119 — recovery + rehab */}
+          <Route path="/tools/surgery-recovery-tech" element={<SurgeryRecoveryTech />} />
+          <Route path="/tools/physical-therapy-apps" element={<PhysicalTherapyApps />} />
+          <Route path="/tools/medical-equipment-rental" element={<MedicalEquipmentRental />} />
+          <Route path="/tools/home-health-aide-find" element={<HomeHealthAideFind />} />
+          <Route path="/tools/hospice-tech-support" element={<HospiceTechSupport />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
