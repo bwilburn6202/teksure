@@ -1525,6 +1525,13 @@ const AFibInformation        = lazy(() => import("./pages/tools/AFibInformation"
 const BloodThinnerGuide      = lazy(() => import("./pages/tools/BloodThinnerGuide"));
 const DVTPreventionSeniors   = lazy(() => import("./pages/tools/DVTPreventionSeniors"));
 
+// ── Cycle 193 (April 29 2026) — end-of-life ──
+const GreenBurialOptions     = lazy(() => import("./pages/tools/GreenBurialOptions"));
+const DeathDoulaGuide        = lazy(() => import("./pages/tools/DeathDoulaGuide"));
+const POLSTOrders            = lazy(() => import("./pages/tools/POLSTOrders"));
+const HospiceMyths           = lazy(() => import("./pages/tools/HospiceMyths"));
+const GriefForFamilyAfterDeath = lazy(() => import("./pages/tools/GriefForFamilyAfterDeath"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3481,6 +3488,11 @@ const AppContent = () => {
           <Route path="/tools/afib-information" element={<AFibInformation />} />
           <Route path="/tools/blood-thinner-guide" element={<BloodThinnerGuide />} />
           <Route path="/tools/dvt-prevention-seniors" element={<DVTPreventionSeniors />} />
+          <Route path="/tools/green-burial-options" element={<GreenBurialOptions />} />
+          <Route path="/tools/death-doula-guide" element={<DeathDoulaGuide />} />
+          <Route path="/tools/polst-orders" element={<POLSTOrders />} />
+          <Route path="/tools/hospice-myths" element={<HospiceMyths />} />
+          <Route path="/tools/grief-for-family-after-death" element={<GriefForFamilyAfterDeath />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
