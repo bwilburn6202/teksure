@@ -230,6 +230,13 @@ const BlockSpamCallsTexts    = lazy(() => import("./pages/tools/BlockSpamCallsTe
 const RemoteHelpSetup        = lazy(() => import("./pages/tools/RemoteHelpSetup"));
 const EmergencySosSetup      = lazy(() => import("./pages/tools/EmergencySosSetup"));
 
+// ── Cycle 8 (April 29 2026) — caregiver / legacy / language ──
+const DigitalLegacySetup     = lazy(() => import("./pages/tools/DigitalLegacySetup"));
+const CaregiverPhoneSetup    = lazy(() => import("./pages/tools/CaregiverPhoneSetup"));
+const PhoneSwitchHelper      = lazy(() => import("./pages/tools/PhoneSwitchHelper"));
+const TranslationAppCoach    = lazy(() => import("./pages/tools/TranslationAppCoach"));
+const CaptionedPhoneService  = lazy(() => import("./pages/tools/CaptionedPhoneService"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1003,6 +1010,13 @@ const AppContent = () => {
           <Route path="/tools/block-spam-calls-texts" element={<BlockSpamCallsTexts />} />
           <Route path="/tools/remote-help-setup" element={<RemoteHelpSetup />} />
           <Route path="/tools/emergency-sos-setup" element={<EmergencySosSetup />} />
+
+          {/* Cycle 8 — caregiver / legacy / language */}
+          <Route path="/tools/digital-legacy-setup" element={<DigitalLegacySetup />} />
+          <Route path="/tools/caregiver-phone-setup" element={<CaregiverPhoneSetup />} />
+          <Route path="/tools/phone-switch-helper" element={<PhoneSwitchHelper />} />
+          <Route path="/tools/translation-app-coach" element={<TranslationAppCoach />} />
+          <Route path="/tools/captioned-phone-service" element={<CaptionedPhoneService />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
