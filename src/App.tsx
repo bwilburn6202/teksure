@@ -1588,6 +1588,13 @@ const BestPodcastsSeniors    = lazy(() => import("./pages/tools/BestPodcastsSeni
 const KindleVsPaperbookSeniors = lazy(() => import("./pages/tools/KindleVsPaperbookSeniors"));
 const AudiobookListenWalking = lazy(() => import("./pages/tools/AudiobookListenWalking"));
 
+// ── Cycle 202 (April 29 2026) — outdoor recreation ──
+const SeniorCampingGuide     = lazy(() => import("./pages/tools/SeniorCampingGuide"));
+const KayakingForSeniors     = lazy(() => import("./pages/tools/KayakingForSeniors"));
+const BoatingForSeniors      = lazy(() => import("./pages/tools/BoatingForSeniors"));
+const BirdwatchingDeeper     = lazy(() => import("./pages/tools/BirdwatchingDeeper"));
+const OutdoorPhotographyTips = lazy(() => import("./pages/tools/OutdoorPhotographyTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3589,6 +3596,11 @@ const AppContent = () => {
           <Route path="/tools/best-podcasts-seniors" element={<BestPodcastsSeniors />} />
           <Route path="/tools/kindle-vs-paperbook-seniors" element={<KindleVsPaperbookSeniors />} />
           <Route path="/tools/audiobook-listen-walking" element={<AudiobookListenWalking />} />
+          <Route path="/tools/senior-camping-guide" element={<SeniorCampingGuide />} />
+          <Route path="/tools/kayaking-for-seniors" element={<KayakingForSeniors />} />
+          <Route path="/tools/boating-for-seniors" element={<BoatingForSeniors />} />
+          <Route path="/tools/birdwatching-deeper" element={<BirdwatchingDeeper />} />
+          <Route path="/tools/outdoor-photography-tips" element={<OutdoorPhotographyTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
