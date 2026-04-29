@@ -247,8 +247,6 @@ const audiences: Entry[] = [
   { to: '/local-help', label: 'Local Help', description: 'Local, human help options.' },
   { to: '/tech-anxiety', label: 'Tech Anxiety', description: "For when tech makes your heart race — we've got you." },
   { to: '/gift-guide', label: 'Tech Gift Guide', description: 'Thoughtful, age-appropriate tech gift ideas.' },
-  { to: '/gift', label: 'Gift a Subscription', description: 'Give TekSure to someone you love.' },
-  { to: '/gift-session', label: 'Gift a Session', description: 'Gift a one-on-one tech help session.' },
   { to: '/ai-tutor', label: 'AI Tutor', description: 'A gentle, patient AI tutor for tech basics.' },
   { to: '/progress-report', label: 'Progress Report', description: 'See how far you have come on your tech journey.' },
   { to: '/safety/parental-controls', label: 'Parental Controls', description: 'Plain-English parental controls setup.' },

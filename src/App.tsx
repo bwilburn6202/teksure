@@ -103,7 +103,6 @@ const TechGiftGuide          = lazy(() => import("./pages/TechGiftGuide"));
 const TechAnxiety            = lazy(() => import("./pages/TechAnxiety"));
 const LocalHelp              = lazy(() => import("./pages/LocalHelp"));
 const Certificate            = lazy(() => import("./pages/Certificate"));
-const GiftSubscription       = lazy(() => import("./pages/GiftSubscription"));
 const AiTutor                = lazy(() => import("./pages/AiTutor"));
 const ProgressReport         = lazy(() => import("./pages/ProgressReport"));
 const FamilySharing          = lazy(() => import("./pages/FamilySharing"));
@@ -140,7 +139,6 @@ const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const Changelog              = lazy(() => import("./pages/Changelog"));
 const WhatsNew               = lazy(() => import("./pages/WhatsNew"));
-const GiftSession            = lazy(() => import("./pages/GiftSession"));
 const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 const FAQ                    = lazy(() => import("./pages/FAQ"));
 
@@ -764,7 +762,6 @@ const AppContent = () => {
           <Route path="/tech-anxiety" element={<TechAnxiety />} />
           <Route path="/local-help" element={<LocalHelp />} />
           <Route path="/certificate" element={<Certificate />} />
-          <Route path="/gift" element={<GiftSubscription />} />
           <Route path="/ai-tutor" element={<AiTutor />} />
           <Route path="/progress-report" element={<ProgressReport />} />
           <Route path="/family-sharing" element={<FamilySharing />} />
@@ -875,7 +872,6 @@ const AppContent = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/changelog" element={<Changelog />} />
           <Route path="/whats-new" element={<WhatsNew />} />
-          <Route path="/gift-session" element={<GiftSession />} />
           <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />

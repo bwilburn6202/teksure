@@ -43,7 +43,7 @@ const popularGuides = [
 const stats = [
   { number: '200+', label: 'Free guides written in plain English' },
   { number: '30+', label: 'Interactive tools to help you learn' },
-  { number: '10,000+', label: 'People helped so far' },
+  { number: 'Free', label: 'No paywalls on guides or tools' },
 ];
 
 const MockupA = () => {

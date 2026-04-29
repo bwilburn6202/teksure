@@ -93,7 +93,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2 text-foreground/80">
               <Heart className="h-4 w-4 text-rose-500" aria-hidden="true" />
-              <span>Trusted by <strong className="text-foreground">10,000+ users</strong></span>
+              <span><strong className="text-foreground">Plain-English help</strong> for non-technical users</span>
             </li>
           </ul>
         </div>

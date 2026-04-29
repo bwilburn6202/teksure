@@ -1800,18 +1800,6 @@ export const tools: Tool[] = [
     time: '5 min',
   },
   {
-    title: 'Gift a Subscription',
-    description: 'Give someone the gift of digital confidence.',
-    icon: Gift,
-    path: '/gift',
-    color: 'text-pink-600',
-    bg: 'bg-pink-50 dark:bg-pink-950/30',
-    badge: 'Gift',
-    category: 'Connectivity',
-    difficulty: 'Easy',
-    time: '3 min',
-  },
-  {
     title: 'Dealing with Tech Anxiety',
     description: 'Practical coping strategies for anyone who finds technology stressful.',
     icon: Smile,
