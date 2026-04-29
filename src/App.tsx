@@ -1273,6 +1273,13 @@ const GutterCleaningOptions  = lazy(() => import("./pages/tools/GutterCleaningOp
 const RoofInspectionGuide    = lazy(() => import("./pages/tools/RoofInspectionGuide"));
 const ContractorVettingGuide = lazy(() => import("./pages/tools/ContractorVettingGuide"));
 
+// ── Cycle 157 (April 29 2026) — kitchen for seniors ──
+const SeniorFriendlyCookware = lazy(() => import("./pages/tools/SeniorFriendlyCookware"));
+const ToasterOvenGuide       = lazy(() => import("./pages/tools/ToasterOvenGuide"));
+const AdaptiveKitchenTools   = lazy(() => import("./pages/tools/AdaptiveKitchenTools"));
+const CoffeeMakerForSeniors  = lazy(() => import("./pages/tools/CoffeeMakerForSeniors"));
+const InductionStoveExplained = lazy(() => import("./pages/tools/InductionStoveExplained"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3049,6 +3056,11 @@ const AppContent = () => {
           <Route path="/tools/gutter-cleaning-options" element={<GutterCleaningOptions />} />
           <Route path="/tools/roof-inspection-guide" element={<RoofInspectionGuide />} />
           <Route path="/tools/contractor-vetting-guide" element={<ContractorVettingGuide />} />
+          <Route path="/tools/senior-friendly-cookware" element={<SeniorFriendlyCookware />} />
+          <Route path="/tools/toaster-oven-guide" element={<ToasterOvenGuide />} />
+          <Route path="/tools/adaptive-kitchen-tools" element={<AdaptiveKitchenTools />} />
+          <Route path="/tools/coffee-maker-for-seniors" element={<CoffeeMakerForSeniors />} />
+          <Route path="/tools/induction-stove-explained" element={<InductionStoveExplained />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
