@@ -1406,6 +1406,13 @@ const AppleTVPlusGuide       = lazy(() => import("./pages/tools/AppleTVPlusGuide
 const ParamountPlusReview    = lazy(() => import("./pages/tools/ParamountPlusReview"));
 const StreamingDeviceCompare = lazy(() => import("./pages/tools/StreamingDeviceCompare"));
 
+// ── Cycle 176 (April 29 2026) — senior puzzles + games ──
+const ChessForSeniors        = lazy(() => import("./pages/tools/ChessForSeniors"));
+const MahjongAppPicks        = lazy(() => import("./pages/tools/MahjongAppPicks"));
+const BridgeOnlineApps       = lazy(() => import("./pages/tools/BridgeOnlineApps"));
+const ScrabbleAlternatives   = lazy(() => import("./pages/tools/ScrabbleAlternatives"));
+const JigsawPuzzleStrategy   = lazy(() => import("./pages/tools/JigsawPuzzleStrategy"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3277,6 +3284,11 @@ const AppContent = () => {
           <Route path="/tools/apple-tv-plus-guide" element={<AppleTVPlusGuide />} />
           <Route path="/tools/paramount-plus-review" element={<ParamountPlusReview />} />
           <Route path="/tools/streaming-device-compare" element={<StreamingDeviceCompare />} />
+          <Route path="/tools/chess-for-seniors" element={<ChessForSeniors />} />
+          <Route path="/tools/mahjong-app-picks" element={<MahjongAppPicks />} />
+          <Route path="/tools/bridge-online-apps" element={<BridgeOnlineApps />} />
+          <Route path="/tools/scrabble-alternatives" element={<ScrabbleAlternatives />} />
+          <Route path="/tools/jigsaw-puzzle-strategy" element={<JigsawPuzzleStrategy />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
