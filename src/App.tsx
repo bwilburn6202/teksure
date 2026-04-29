@@ -671,6 +671,13 @@ const DigitalPhotoFrames     = lazy(() => import("./pages/tools/DigitalPhotoFram
 const RetirementCommunityWifi = lazy(() => import("./pages/tools/RetirementCommunityWifi"));
 const JigsawPuzzleApps       = lazy(() => import("./pages/tools/JigsawPuzzleApps"));
 
+// ── Cycle 71 (April 29 2026) — driving + delivery ──
+const RideshareForSeniors    = lazy(() => import("./pages/tools/RideshareForSeniors"));
+const FoodDeliveryCompare    = lazy(() => import("./pages/tools/FoodDeliveryCompare"));
+const CarRepairFinder        = lazy(() => import("./pages/tools/CarRepairFinder"));
+const EvChargingBasics       = lazy(() => import("./pages/tools/EvChargingBasics"));
+const RoadsideAssistanceApps = lazy(() => import("./pages/tools/RoadsideAssistanceApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1885,6 +1892,13 @@ const AppContent = () => {
           <Route path="/tools/digital-photo-frames" element={<DigitalPhotoFrames />} />
           <Route path="/tools/retirement-community-wifi" element={<RetirementCommunityWifi />} />
           <Route path="/tools/jigsaw-puzzle-apps" element={<JigsawPuzzleApps />} />
+
+          {/* Cycle 71 — driving + delivery */}
+          <Route path="/tools/rideshare-for-seniors" element={<RideshareForSeniors />} />
+          <Route path="/tools/food-delivery-compare" element={<FoodDeliveryCompare />} />
+          <Route path="/tools/car-repair-finder" element={<CarRepairFinder />} />
+          <Route path="/tools/ev-charging-basics" element={<EvChargingBasics />} />
+          <Route path="/tools/roadside-assistance-apps" element={<RoadsideAssistanceApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
