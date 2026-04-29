@@ -293,6 +293,13 @@ const DocumentScannerCoach   = lazy(() => import("./pages/tools/DocumentScannerC
 const WirelessEarbudPicker   = lazy(() => import("./pages/tools/WirelessEarbudPicker"));
 const HomeScreenOrganizer    = lazy(() => import("./pages/tools/HomeScreenOrganizer"));
 
+// ── Cycle 17 (April 29 2026) — nature/cooking/watch ──
+const PlantIdApps            = lazy(() => import("./pages/tools/PlantIdApps"));
+const BirdIdMerlin           = lazy(() => import("./pages/tools/BirdIdMerlin"));
+const StargazingApps         = lazy(() => import("./pages/tools/StargazingApps"));
+const RecipeMealApps         = lazy(() => import("./pages/tools/RecipeMealApps"));
+const AppleWatchHealthCoach  = lazy(() => import("./pages/tools/AppleWatchHealthCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1129,6 +1136,13 @@ const AppContent = () => {
           <Route path="/tools/document-scanner-coach" element={<DocumentScannerCoach />} />
           <Route path="/tools/wireless-earbud-picker" element={<WirelessEarbudPicker />} />
           <Route path="/tools/home-screen-organizer" element={<HomeScreenOrganizer />} />
+
+          {/* Cycle 17 — nature / cooking / watch */}
+          <Route path="/tools/plant-id-apps" element={<PlantIdApps />} />
+          <Route path="/tools/bird-id-merlin" element={<BirdIdMerlin />} />
+          <Route path="/tools/stargazing-apps" element={<StargazingApps />} />
+          <Route path="/tools/recipe-meal-apps" element={<RecipeMealApps />} />
+          <Route path="/tools/apple-watch-health-coach" element={<AppleWatchHealthCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
