@@ -706,6 +706,13 @@ const FamilyTreeApps         = lazy(() => import("./pages/tools/FamilyTreeApps")
 const VideoConverterFree     = lazy(() => import("./pages/tools/VideoConverterFree"));
 const PhotoBookServices      = lazy(() => import("./pages/tools/PhotoBookServices"));
 
+// ── Cycle 76 (April 29 2026) — shopping + buying ──
+const AmazonShoppingTips     = lazy(() => import("./pages/tools/AmazonShoppingTips"));
+const CostcoMembershipMath   = lazy(() => import("./pages/tools/CostcoMembershipMath"));
+const OutletDealsApps        = lazy(() => import("./pages/tools/OutletDealsApps"));
+const ReturnsRefundsHowTo    = lazy(() => import("./pages/tools/ReturnsRefundsHowTo"));
+const OnlineThriftStores     = lazy(() => import("./pages/tools/OnlineThriftStores"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1955,6 +1962,13 @@ const AppContent = () => {
           <Route path="/tools/family-tree-apps" element={<FamilyTreeApps />} />
           <Route path="/tools/video-converter-free" element={<VideoConverterFree />} />
           <Route path="/tools/photo-book-services" element={<PhotoBookServices />} />
+
+          {/* Cycle 76 — shopping + buying */}
+          <Route path="/tools/amazon-shopping-tips" element={<AmazonShoppingTips />} />
+          <Route path="/tools/costco-membership-math" element={<CostcoMembershipMath />} />
+          <Route path="/tools/outlet-deals-apps" element={<OutletDealsApps />} />
+          <Route path="/tools/returns-refunds-how-to" element={<ReturnsRefundsHowTo />} />
+          <Route path="/tools/online-thrift-stores" element={<OnlineThriftStores />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
