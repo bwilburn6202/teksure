@@ -503,6 +503,13 @@ const EraseOldPhone          = lazy(() => import("./pages/tools/EraseOldPhone"))
 const PhotoPrintAndCards     = lazy(() => import("./pages/tools/PhotoPrintAndCards"));
 const InPersonTechHelp       = lazy(() => import("./pages/tools/InPersonTechHelp"));
 
+// ── Cycle 47 (April 29 2026) — dental/vision/deepfake/genealogy/citizen ──
+const DentalInsuranceCoach   = lazy(() => import("./pages/tools/DentalInsuranceCoach"));
+const VisionInsuranceCoach   = lazy(() => import("./pages/tools/VisionInsuranceCoach"));
+const DeepfakeSpotter        = lazy(() => import("./pages/tools/DeepfakeSpotter"));
+const GenealogyDeepDive      = lazy(() => import("./pages/tools/GenealogyDeepDive"));
+const CitizenEmergencyApp    = lazy(() => import("./pages/tools/CitizenEmergencyApp"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1549,6 +1556,13 @@ const AppContent = () => {
           <Route path="/tools/erase-old-phone" element={<EraseOldPhone />} />
           <Route path="/tools/photo-print-and-cards" element={<PhotoPrintAndCards />} />
           <Route path="/tools/in-person-tech-help" element={<InPersonTechHelp />} />
+
+          {/* Cycle 47 — dental / vision / deepfake / genealogy / citizen */}
+          <Route path="/tools/dental-insurance-coach" element={<DentalInsuranceCoach />} />
+          <Route path="/tools/vision-insurance-coach" element={<VisionInsuranceCoach />} />
+          <Route path="/tools/deepfake-spotter" element={<DeepfakeSpotter />} />
+          <Route path="/tools/genealogy-deep-dive" element={<GenealogyDeepDive />} />
+          <Route path="/tools/citizen-emergency-app" element={<CitizenEmergencyApp />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
