@@ -902,6 +902,13 @@ const SmokeAlarmTesting      = lazy(() => import("./pages/tools/SmokeAlarmTestin
 const FrozenAccountsRecovery = lazy(() => import("./pages/tools/FrozenAccountsRecovery"));
 const EstateFraudPrevention  = lazy(() => import("./pages/tools/EstateFraudPrevention"));
 
+// ── Cycle 104 (April 29 2026) — grandparent-grandkid tech ──
+const GrandparentTextingApps = lazy(() => import("./pages/tools/GrandparentTextingApps"));
+const FamilyVideoGames       = lazy(() => import("./pages/tools/FamilyVideoGames"));
+const KidsPenPalApps         = lazy(() => import("./pages/tools/KidsPenPalApps"));
+const GrandparentBookClub    = lazy(() => import("./pages/tools/GrandparentBookClub"));
+const RemoteStorytelling     = lazy(() => import("./pages/tools/RemoteStorytelling"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2347,6 +2354,13 @@ const AppContent = () => {
           <Route path="/tools/smoke-alarm-testing" element={<SmokeAlarmTesting />} />
           <Route path="/tools/frozen-accounts-recovery" element={<FrozenAccountsRecovery />} />
           <Route path="/tools/estate-fraud-prevention" element={<EstateFraudPrevention />} />
+
+          {/* Cycle 104 — grandparent-grandkid tech */}
+          <Route path="/tools/grandparent-texting-apps" element={<GrandparentTextingApps />} />
+          <Route path="/tools/family-video-games" element={<FamilyVideoGames />} />
+          <Route path="/tools/kids-pen-pal-apps" element={<KidsPenPalApps />} />
+          <Route path="/tools/grandparent-book-club" element={<GrandparentBookClub />} />
+          <Route path="/tools/remote-storytelling" element={<RemoteStorytelling />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
