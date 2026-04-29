@@ -370,6 +370,13 @@ const BookTrackingApps       = lazy(() => import("./pages/tools/BookTrackingApps
 const ErgonomicComputerSetup = lazy(() => import("./pages/tools/ErgonomicComputerSetup"));
 const NotesAppPicker         = lazy(() => import("./pages/tools/NotesAppPicker"));
 
+// ── Cycle 28 (April 29 2026) — driving/sleep/power/disaster/grandkids ──
+const DefensiveDrivingCoach  = lazy(() => import("./pages/tools/DefensiveDrivingCoach"));
+const SleepTrackingApps      = lazy(() => import("./pages/tools/SleepTrackingApps"));
+const PowerBankPicker        = lazy(() => import("./pages/tools/PowerBankPicker"));
+const DisasterPrepApps       = lazy(() => import("./pages/tools/DisasterPrepApps"));
+const ChildproofForVisits    = lazy(() => import("./pages/tools/ChildproofForVisits"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1283,6 +1290,13 @@ const AppContent = () => {
           <Route path="/tools/book-tracking-apps" element={<BookTrackingApps />} />
           <Route path="/tools/ergonomic-computer-setup" element={<ErgonomicComputerSetup />} />
           <Route path="/tools/notes-app-picker" element={<NotesAppPicker />} />
+
+          {/* Cycle 28 — driving / sleep / power / disaster / grandkids */}
+          <Route path="/tools/defensive-driving-coach" element={<DefensiveDrivingCoach />} />
+          <Route path="/tools/sleep-tracking-apps" element={<SleepTrackingApps />} />
+          <Route path="/tools/power-bank-picker" element={<PowerBankPicker />} />
+          <Route path="/tools/disaster-prep-apps" element={<DisasterPrepApps />} />
+          <Route path="/tools/childproof-for-visits" element={<ChildproofForVisits />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
