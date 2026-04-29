@@ -650,6 +650,13 @@ const FakeAmazonCalls        = lazy(() => import("./pages/tools/FakeAmazonCalls"
 const MedicareScamGuide      = lazy(() => import("./pages/tools/MedicareScamGuide"));
 const PuppyScamGuide         = lazy(() => import("./pages/tools/PuppyScamGuide"));
 
+// ── Cycle 68 (April 29 2026) — phone basics ──
+const BlockNumberHowTo       = lazy(() => import("./pages/tools/BlockNumberHowTo"));
+const EmailOrganizingBasics  = lazy(() => import("./pages/tools/EmailOrganizingBasics"));
+const SilenceUnknownCallers  = lazy(() => import("./pages/tools/SilenceUnknownCallers"));
+const PhoneStorageCleanup    = lazy(() => import("./pages/tools/PhoneStorageCleanup"));
+const ScreenshotHowTo        = lazy(() => import("./pages/tools/ScreenshotHowTo"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1843,6 +1850,13 @@ const AppContent = () => {
           <Route path="/tools/fake-amazon-calls" element={<FakeAmazonCalls />} />
           <Route path="/tools/medicare-scam-guide" element={<MedicareScamGuide />} />
           <Route path="/tools/puppy-scam-guide" element={<PuppyScamGuide />} />
+
+          {/* Cycle 68 — phone basics */}
+          <Route path="/tools/block-number-how-to" element={<BlockNumberHowTo />} />
+          <Route path="/tools/email-organizing-basics" element={<EmailOrganizingBasics />} />
+          <Route path="/tools/silence-unknown-callers" element={<SilenceUnknownCallers />} />
+          <Route path="/tools/phone-storage-cleanup" element={<PhoneStorageCleanup />} />
+          <Route path="/tools/screenshot-how-to" element={<ScreenshotHowTo />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
