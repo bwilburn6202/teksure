@@ -1553,6 +1553,13 @@ const TeslaPowerwallReview   = lazy(() => import("./pages/tools/TeslaPowerwallRe
 const SolarTaxCredits        = lazy(() => import("./pages/tools/SolarTaxCredits"));
 const EnergyAuditFree        = lazy(() => import("./pages/tools/EnergyAuditFree"));
 
+// ── Cycle 197 (April 29 2026) — disaster prep ──
+const TornadoPrepGuide       = lazy(() => import("./pages/tools/TornadoPrepGuide"));
+const WildfirePrepGuide      = lazy(() => import("./pages/tools/WildfirePrepGuide"));
+const HeatwaveSafety         = lazy(() => import("./pages/tools/HeatwaveSafety"));
+const ColdSnapSafety         = lazy(() => import("./pages/tools/ColdSnapSafety"));
+const FireAlarmTest          = lazy(() => import("./pages/tools/FireAlarmTest"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3529,6 +3536,11 @@ const AppContent = () => {
           <Route path="/tools/tesla-powerwall-review" element={<TeslaPowerwallReview />} />
           <Route path="/tools/solar-tax-credits" element={<SolarTaxCredits />} />
           <Route path="/tools/energy-audit-free" element={<EnergyAuditFree />} />
+          <Route path="/tools/tornado-prep-guide" element={<TornadoPrepGuide />} />
+          <Route path="/tools/wildfire-prep-guide" element={<WildfirePrepGuide />} />
+          <Route path="/tools/heatwave-safety" element={<HeatwaveSafety />} />
+          <Route path="/tools/cold-snap-safety" element={<ColdSnapSafety />} />
+          <Route path="/tools/fire-alarm-test" element={<FireAlarmTest />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
