@@ -874,6 +874,13 @@ const MassageGunPicks        = lazy(() => import("./pages/tools/MassageGunPicks"
 const FoamRollerGuide        = lazy(() => import("./pages/tools/FoamRollerGuide"));
 const SeniorBikeOptions      = lazy(() => import("./pages/tools/SeniorBikeOptions"));
 
+// ── Cycle 100 (April 29 2026) — digital wellness ──
+const BlueLightFilters       = lazy(() => import("./pages/tools/BlueLightFilters"));
+const DigitalDetoxApps       = lazy(() => import("./pages/tools/DigitalDetoxApps"));
+const EyeStrainTips          = lazy(() => import("./pages/tools/EyeStrainTips"));
+const BedtimePhoneRoutine    = lazy(() => import("./pages/tools/BedtimePhoneRoutine"));
+const ScreenBreakReminders   = lazy(() => import("./pages/tools/ScreenBreakReminders"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2291,6 +2298,13 @@ const AppContent = () => {
           <Route path="/tools/massage-gun-picks" element={<MassageGunPicks />} />
           <Route path="/tools/foam-roller-guide" element={<FoamRollerGuide />} />
           <Route path="/tools/senior-bike-options" element={<SeniorBikeOptions />} />
+
+          {/* Cycle 100 — digital wellness */}
+          <Route path="/tools/blue-light-filters" element={<BlueLightFilters />} />
+          <Route path="/tools/digital-detox-apps" element={<DigitalDetoxApps />} />
+          <Route path="/tools/eye-strain-tips" element={<EyeStrainTips />} />
+          <Route path="/tools/bedtime-phone-routine" element={<BedtimePhoneRoutine />} />
+          <Route path="/tools/screen-break-reminders" element={<ScreenBreakReminders />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
