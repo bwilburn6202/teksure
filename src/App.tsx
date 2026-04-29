@@ -1560,6 +1560,13 @@ const HeatwaveSafety         = lazy(() => import("./pages/tools/HeatwaveSafety")
 const ColdSnapSafety         = lazy(() => import("./pages/tools/ColdSnapSafety"));
 const FireAlarmTest          = lazy(() => import("./pages/tools/FireAlarmTest"));
 
+// ── Cycle 198 (April 29 2026) — senior housing alternatives ──
+const ADUForSeniors          = lazy(() => import("./pages/tools/ADUForSeniors"));
+const ActiveAdultCommunity   = lazy(() => import("./pages/tools/ActiveAdultCommunity"));
+const CohousingForSeniors    = lazy(() => import("./pages/tools/CohousingForSeniors"));
+const AssistedLivingChoosing = lazy(() => import("./pages/tools/AssistedLivingChoosing"));
+const StayingPutChecklist    = lazy(() => import("./pages/tools/StayingPutChecklist"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3541,6 +3548,11 @@ const AppContent = () => {
           <Route path="/tools/heatwave-safety" element={<HeatwaveSafety />} />
           <Route path="/tools/cold-snap-safety" element={<ColdSnapSafety />} />
           <Route path="/tools/fire-alarm-test" element={<FireAlarmTest />} />
+          <Route path="/tools/adu-for-seniors" element={<ADUForSeniors />} />
+          <Route path="/tools/active-adult-community" element={<ActiveAdultCommunity />} />
+          <Route path="/tools/cohousing-for-seniors" element={<CohousingForSeniors />} />
+          <Route path="/tools/assisted-living-choosing" element={<AssistedLivingChoosing />} />
+          <Route path="/tools/staying-put-checklist" element={<StayingPutChecklist />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
