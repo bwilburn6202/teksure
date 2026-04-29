@@ -755,6 +755,13 @@ const OneHandedTyping        = lazy(() => import("./pages/tools/OneHandedTyping"
 const BrailleDisplays        = lazy(() => import("./pages/tools/BrailleDisplays"));
 const DictationTraining      = lazy(() => import("./pages/tools/DictationTraining"));
 
+// ── Cycle 83 (April 29 2026) — home safety ──
+const WaterShutoffGuide      = lazy(() => import("./pages/tools/WaterShutoffGuide"));
+const FireSafetyChecklist    = lazy(() => import("./pages/tools/FireSafetyChecklist"));
+const GasLeakDetect          = lazy(() => import("./pages/tools/GasLeakDetect"));
+const CarbonMonoxidePicks    = lazy(() => import("./pages/tools/CarbonMonoxidePicks"));
+const EmergencyKitChecklist  = lazy(() => import("./pages/tools/EmergencyKitChecklist"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2053,6 +2060,13 @@ const AppContent = () => {
           <Route path="/tools/one-handed-typing" element={<OneHandedTyping />} />
           <Route path="/tools/braille-displays" element={<BrailleDisplays />} />
           <Route path="/tools/dictation-training" element={<DictationTraining />} />
+
+          {/* Cycle 83 — home safety */}
+          <Route path="/tools/water-shutoff-guide" element={<WaterShutoffGuide />} />
+          <Route path="/tools/fire-safety-checklist" element={<FireSafetyChecklist />} />
+          <Route path="/tools/gas-leak-detect" element={<GasLeakDetect />} />
+          <Route path="/tools/carbon-monoxide-picks" element={<CarbonMonoxidePicks />} />
+          <Route path="/tools/emergency-kit-checklist" element={<EmergencyKitChecklist />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
