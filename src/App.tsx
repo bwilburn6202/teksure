@@ -1308,6 +1308,13 @@ const MedicareExtraHelp      = lazy(() => import("./pages/tools/MedicareExtraHel
 const LIHEAPGuide            = lazy(() => import("./pages/tools/LIHEAPGuide"));
 const SeniorPropertyTaxRelief = lazy(() => import("./pages/tools/SeniorPropertyTaxRelief"));
 
+// ── Cycle 162 (April 29 2026) — practical AI ──
+const AIWriteEmailHelp       = lazy(() => import("./pages/tools/AIWriteEmailHelp"));
+const AIDoctorAppointmentPrep = lazy(() => import("./pages/tools/AIDoctorAppointmentPrep"));
+const AITranslateRecipe      = lazy(() => import("./pages/tools/AITranslateRecipe"));
+const AIScamProtection       = lazy(() => import("./pages/tools/AIScamProtection"));
+const ClaudeForSeniors       = lazy(() => import("./pages/tools/ClaudeForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3109,6 +3116,11 @@ const AppContent = () => {
           <Route path="/tools/medicare-extra-help" element={<MedicareExtraHelp />} />
           <Route path="/tools/liheap-guide" element={<LIHEAPGuide />} />
           <Route path="/tools/senior-property-tax-relief" element={<SeniorPropertyTaxRelief />} />
+          <Route path="/tools/ai-write-email-help" element={<AIWriteEmailHelp />} />
+          <Route path="/tools/ai-doctor-appointment-prep" element={<AIDoctorAppointmentPrep />} />
+          <Route path="/tools/ai-translate-recipe" element={<AITranslateRecipe />} />
+          <Route path="/tools/ai-scam-protection" element={<AIScamProtection />} />
+          <Route path="/tools/claude-for-seniors" element={<ClaudeForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
