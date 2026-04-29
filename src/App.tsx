@@ -321,6 +321,13 @@ const InternetSpeedTestCoach = lazy(() => import("./pages/tools/InternetSpeedTes
 const BrowserPicker          = lazy(() => import("./pages/tools/BrowserPicker"));
 const OnlineLearningPicker   = lazy(() => import("./pages/tools/OnlineLearningPicker"));
 
+// ── Cycle 21 (April 29 2026) — podcasts/outdoors/repair ──
+const PodcastAppPicker       = lazy(() => import("./pages/tools/PodcastAppPicker"));
+const HikingTrailApps        = lazy(() => import("./pages/tools/HikingTrailApps"));
+const GardeningApps          = lazy(() => import("./pages/tools/GardeningApps"));
+const RvCampingApps          = lazy(() => import("./pages/tools/RvCampingApps"));
+const PhoneRepairCoach       = lazy(() => import("./pages/tools/PhoneRepairCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1185,6 +1192,13 @@ const AppContent = () => {
           <Route path="/tools/internet-speed-test-coach" element={<InternetSpeedTestCoach />} />
           <Route path="/tools/browser-picker" element={<BrowserPicker />} />
           <Route path="/tools/online-learning-picker" element={<OnlineLearningPicker />} />
+
+          {/* Cycle 21 — podcasts / outdoors / repair */}
+          <Route path="/tools/podcast-app-picker" element={<PodcastAppPicker />} />
+          <Route path="/tools/hiking-trail-apps" element={<HikingTrailApps />} />
+          <Route path="/tools/gardening-apps" element={<GardeningApps />} />
+          <Route path="/tools/rv-camping-apps" element={<RvCampingApps />} />
+          <Route path="/tools/phone-repair-coach" element={<PhoneRepairCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
