@@ -657,6 +657,13 @@ const SilenceUnknownCallers  = lazy(() => import("./pages/tools/SilenceUnknownCa
 const PhoneStorageCleanup    = lazy(() => import("./pages/tools/PhoneStorageCleanup"));
 const ScreenshotHowTo        = lazy(() => import("./pages/tools/ScreenshotHowTo"));
 
+// ── Cycle 69 (April 29 2026) — passwords + accounts ──
+const PasswordManagerCompare = lazy(() => import("./pages/tools/PasswordManagerCompare"));
+const TwoFactorAppPicks      = lazy(() => import("./pages/tools/TwoFactorAppPicks"));
+const PasskeyExplainer       = lazy(() => import("./pages/tools/PasskeyExplainer"));
+const AccountRecoveryPlan    = lazy(() => import("./pages/tools/AccountRecoveryPlan"));
+const FamilyPasswordSharing  = lazy(() => import("./pages/tools/FamilyPasswordSharing"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1857,6 +1864,13 @@ const AppContent = () => {
           <Route path="/tools/silence-unknown-callers" element={<SilenceUnknownCallers />} />
           <Route path="/tools/phone-storage-cleanup" element={<PhoneStorageCleanup />} />
           <Route path="/tools/screenshot-how-to" element={<ScreenshotHowTo />} />
+
+          {/* Cycle 69 — passwords + accounts */}
+          <Route path="/tools/password-manager-compare" element={<PasswordManagerCompare />} />
+          <Route path="/tools/two-factor-app-picks" element={<TwoFactorAppPicks />} />
+          <Route path="/tools/passkey-explainer" element={<PasskeyExplainer />} />
+          <Route path="/tools/account-recovery-plan" element={<AccountRecoveryPlan />} />
+          <Route path="/tools/family-password-sharing" element={<FamilyPasswordSharing />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
