@@ -916,6 +916,13 @@ const MedicalRecordsCarry    = lazy(() => import("./pages/tools/MedicalRecordsCa
 const SymptomCheckers        = lazy(() => import("./pages/tools/SymptomCheckers"));
 const AdvocateForYourself    = lazy(() => import("./pages/tools/AdvocateForYourself"));
 
+// ── Cycle 106 (April 29 2026) — financial well-being ──
+const BudgetingApps          = lazy(() => import("./pages/tools/BudgetingApps"));
+const DebtPayoffPlanner      = lazy(() => import("./pages/tools/DebtPayoffPlanner"));
+const RothConversionGuide    = lazy(() => import("./pages/tools/RothConversionGuide"));
+const AnnuityRealityCheck    = lazy(() => import("./pages/tools/AnnuityRealityCheck"));
+const ReverseMortgageGuide   = lazy(() => import("./pages/tools/ReverseMortgageGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2375,6 +2382,13 @@ const AppContent = () => {
           <Route path="/tools/medical-records-carry" element={<MedicalRecordsCarry />} />
           <Route path="/tools/symptom-checkers" element={<SymptomCheckers />} />
           <Route path="/tools/advocate-for-yourself" element={<AdvocateForYourself />} />
+
+          {/* Cycle 106 — financial well-being */}
+          <Route path="/tools/budgeting-apps" element={<BudgetingApps />} />
+          <Route path="/tools/debt-payoff-planner" element={<DebtPayoffPlanner />} />
+          <Route path="/tools/roth-conversion-guide" element={<RothConversionGuide />} />
+          <Route path="/tools/annuity-reality-check" element={<AnnuityRealityCheck />} />
+          <Route path="/tools/reverse-mortgage-guide" element={<ReverseMortgageGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
