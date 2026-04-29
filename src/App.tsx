@@ -1455,6 +1455,13 @@ const SmartwatchHealthFeatures = lazy(() => import("./pages/tools/SmartwatchHeal
 const AppleWatchFallDetection = lazy(() => import("./pages/tools/AppleWatchFallDetection"));
 const ECGOnAppleWatch        = lazy(() => import("./pages/tools/ECGOnAppleWatch"));
 
+// ── Cycle 183 (April 29 2026) — appliances ──
+const SmartFridgePicks       = lazy(() => import("./pages/tools/SmartFridgePicks"));
+const BidetSeniorGuide       = lazy(() => import("./pages/tools/BidetSeniorGuide"));
+const DehumidifierForSeniors = lazy(() => import("./pages/tools/DehumidifierForSeniors"));
+const MicrowaveSeniorBuy     = lazy(() => import("./pages/tools/MicrowaveSeniorBuy"));
+const WasherDryerForSeniors  = lazy(() => import("./pages/tools/WasherDryerForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3361,6 +3368,11 @@ const AppContent = () => {
           <Route path="/tools/smartwatch-health-features" element={<SmartwatchHealthFeatures />} />
           <Route path="/tools/apple-watch-fall-detection" element={<AppleWatchFallDetection />} />
           <Route path="/tools/ecg-on-apple-watch" element={<ECGOnAppleWatch />} />
+          <Route path="/tools/smart-fridge-picks" element={<SmartFridgePicks />} />
+          <Route path="/tools/bidet-senior-guide" element={<BidetSeniorGuide />} />
+          <Route path="/tools/dehumidifier-for-seniors" element={<DehumidifierForSeniors />} />
+          <Route path="/tools/microwave-senior-buy" element={<MicrowaveSeniorBuy />} />
+          <Route path="/tools/washer-dryer-for-seniors" element={<WasherDryerForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
