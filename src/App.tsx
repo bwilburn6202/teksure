@@ -1224,6 +1224,13 @@ const PetInsuranceForSeniors = lazy(() => import("./pages/tools/PetInsuranceForS
 const EmotionalSupportAnimal = lazy(() => import("./pages/tools/EmotionalSupportAnimal"));
 const FosterPetsForSeniors   = lazy(() => import("./pages/tools/FosterPetsForSeniors"));
 
+// ── Cycle 150 (April 29 2026) — driving + cars ──
+const WhenToStopDriving      = lazy(() => import("./pages/tools/WhenToStopDriving"));
+const EVForSeniors           = lazy(() => import("./pages/tools/EVForSeniors"));
+const CarRentalSeniorTips    = lazy(() => import("./pages/tools/CarRentalSeniorTips"));
+const RoadsideAssistanceCompare = lazy(() => import("./pages/tools/RoadsideAssistanceCompare"));
+const AutomaticEmergencyBraking = lazy(() => import("./pages/tools/AutomaticEmergencyBraking"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2965,6 +2972,11 @@ const AppContent = () => {
           <Route path="/tools/pet-insurance-for-seniors" element={<PetInsuranceForSeniors />} />
           <Route path="/tools/emotional-support-animal" element={<EmotionalSupportAnimal />} />
           <Route path="/tools/foster-pets-for-seniors" element={<FosterPetsForSeniors />} />
+          <Route path="/tools/when-to-stop-driving" element={<WhenToStopDriving />} />
+          <Route path="/tools/ev-for-seniors" element={<EVForSeniors />} />
+          <Route path="/tools/car-rental-senior-tips" element={<CarRentalSeniorTips />} />
+          <Route path="/tools/roadside-assistance-compare" element={<RoadsideAssistanceCompare />} />
+          <Route path="/tools/automatic-emergency-braking" element={<AutomaticEmergencyBraking />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
