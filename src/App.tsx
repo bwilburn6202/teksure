@@ -552,6 +552,13 @@ const WifiExtenderVsMesh     = lazy(() => import("./pages/tools/WifiExtenderVsMe
 const HomeMediaServer        = lazy(() => import("./pages/tools/HomeMediaServer"));
 const EthernetCoach          = lazy(() => import("./pages/tools/EthernetCoach"));
 
+// ── Cycle 54 (April 29 2026) — warehouse/advisor/annuity/trust/loyalty ──
+const WarehouseClubPick      = lazy(() => import("./pages/tools/WarehouseClubPick"));
+const FiduciaryAdvisorFinder = lazy(() => import("./pages/tools/FiduciaryAdvisorFinder"));
+const AnnuityWarning         = lazy(() => import("./pages/tools/AnnuityWarning"));
+const TrustVsWillExplainer   = lazy(() => import("./pages/tools/TrustVsWillExplainer"));
+const LoyaltyProgramsCompared = lazy(() => import("./pages/tools/LoyaltyProgramsCompared"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1647,6 +1654,13 @@ const AppContent = () => {
           <Route path="/tools/wifi-extender-vs-mesh" element={<WifiExtenderVsMesh />} />
           <Route path="/tools/home-media-server" element={<HomeMediaServer />} />
           <Route path="/tools/ethernet-coach" element={<EthernetCoach />} />
+
+          {/* Cycle 54 — warehouse / advisor / annuity / trust / loyalty */}
+          <Route path="/tools/warehouse-club-pick" element={<WarehouseClubPick />} />
+          <Route path="/tools/fiduciary-advisor-finder" element={<FiduciaryAdvisorFinder />} />
+          <Route path="/tools/annuity-warning" element={<AnnuityWarning />} />
+          <Route path="/tools/trust-vs-will-explainer" element={<TrustVsWillExplainer />} />
+          <Route path="/tools/loyalty-programs-compared" element={<LoyaltyProgramsCompared />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
