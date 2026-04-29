@@ -209,6 +209,20 @@ const UspsInformedDelivery   = lazy(() => import("./pages/tools/UspsInformedDeli
 const CallerIdVerification   = lazy(() => import("./pages/tools/CallerIdVerification"));
 const PublicChargingSafety   = lazy(() => import("./pages/tools/PublicChargingSafety"));
 
+// ── Cycle 5 (April 29 2026) — health/accessibility ──
+const MedicalIdSetup         = lazy(() => import("./pages/tools/MedicalIdSetup"));
+const LiveCaptionsSetup      = lazy(() => import("./pages/tools/LiveCaptionsSetup"));
+const BigTextDisplayCoach    = lazy(() => import("./pages/tools/BigTextDisplayCoach"));
+const MyChartHelper          = lazy(() => import("./pages/tools/MyChartHelper"));
+const CastPhoneToTv          = lazy(() => import("./pages/tools/CastPhoneToTv"));
+
+// ── Cycle 6 (April 29 2026) — money & daily life ──
+const TapToPaySetup          = lazy(() => import("./pages/tools/TapToPaySetup"));
+const ScreenshotCoach        = lazy(() => import("./pages/tools/ScreenshotCoach"));
+const AirDropHelper          = lazy(() => import("./pages/tools/AirDropHelper"));
+const MarketplaceSafety      = lazy(() => import("./pages/tools/MarketplaceSafety"));
+const BigPrintTipCalculator  = lazy(() => import("./pages/tools/BigPrintTipCalculator"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -961,6 +975,20 @@ const AppContent = () => {
           <Route path="/tools/usps-informed-delivery" element={<UspsInformedDelivery />} />
           <Route path="/tools/caller-id-verification" element={<CallerIdVerification />} />
           <Route path="/tools/public-charging-safety" element={<PublicChargingSafety />} />
+
+          {/* Cycle 5 — health/accessibility */}
+          <Route path="/tools/medical-id-setup" element={<MedicalIdSetup />} />
+          <Route path="/tools/live-captions-setup" element={<LiveCaptionsSetup />} />
+          <Route path="/tools/big-text-display" element={<BigTextDisplayCoach />} />
+          <Route path="/tools/mychart-helper" element={<MyChartHelper />} />
+          <Route path="/tools/cast-phone-to-tv" element={<CastPhoneToTv />} />
+
+          {/* Cycle 6 — money & daily life */}
+          <Route path="/tools/tap-to-pay-setup" element={<TapToPaySetup />} />
+          <Route path="/tools/screenshot-coach" element={<ScreenshotCoach />} />
+          <Route path="/tools/airdrop-helper" element={<AirDropHelper />} />
+          <Route path="/tools/marketplace-safety" element={<MarketplaceSafety />} />
+          <Route path="/tools/big-print-tip-calculator" element={<BigPrintTipCalculator />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
