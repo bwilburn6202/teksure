@@ -1637,6 +1637,13 @@ const ViolinForSeniors         = lazy(() => import("./pages/tools/ViolinForSenio
 const DrumsForSeniors          = lazy(() => import("./pages/tools/DrumsForSeniors"));
 const SingingForSeniors        = lazy(() => import("./pages/tools/SingingForSeniors"));
 
+// ── Cycle 209 (April 29 2026) — entertainment + writing ──
+const ClassicMoviePicks        = lazy(() => import("./pages/tools/ClassicMoviePicks"));
+const FamilyMovieNight         = lazy(() => import("./pages/tools/FamilyMovieNight"));
+const BlogStartingSenior       = lazy(() => import("./pages/tools/BlogStartingSenior"));
+const PoetryAppsSenior         = lazy(() => import("./pages/tools/PoetryAppsSenior"));
+const ShortStoryWriting        = lazy(() => import("./pages/tools/ShortStoryWriting"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3673,6 +3680,11 @@ const AppContent = () => {
           <Route path="/tools/violin-for-seniors" element={<ViolinForSeniors />} />
           <Route path="/tools/drums-for-seniors" element={<DrumsForSeniors />} />
           <Route path="/tools/singing-for-seniors" element={<SingingForSeniors />} />
+          <Route path="/tools/classic-movie-picks" element={<ClassicMoviePicks />} />
+          <Route path="/tools/family-movie-night" element={<FamilyMovieNight />} />
+          <Route path="/tools/blog-starting-senior" element={<BlogStartingSenior />} />
+          <Route path="/tools/poetry-apps-senior" element={<PoetryAppsSenior />} />
+          <Route path="/tools/short-story-writing" element={<ShortStoryWriting />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
