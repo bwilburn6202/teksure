@@ -1693,6 +1693,13 @@ const NailCareForSeniors        = lazy(() => import("./pages/tools/NailCareForSe
 const ShavingForSeniors         = lazy(() => import("./pages/tools/ShavingForSeniors"));
 const PerfumeColognePicks       = lazy(() => import("./pages/tools/PerfumeColognePicks"));
 
+// ── Cycle 217 (April 29 2026) — home maintenance ──
+const PlumbingBasicsForSeniors  = lazy(() => import("./pages/tools/PlumbingBasicsForSeniors"));
+const ElectricalBasicsForSeniors = lazy(() => import("./pages/tools/ElectricalBasicsForSeniors"));
+const AirFilterChangingGuide    = lazy(() => import("./pages/tools/AirFilterChangingGuide"));
+const SeasonalHomeChecklist     = lazy(() => import("./pages/tools/SeasonalHomeChecklist"));
+const ApplianceLifespanGuide    = lazy(() => import("./pages/tools/ApplianceLifespanGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3769,6 +3776,11 @@ const AppContent = () => {
           <Route path="/tools/nail-care-for-seniors" element={<NailCareForSeniors />} />
           <Route path="/tools/shaving-for-seniors" element={<ShavingForSeniors />} />
           <Route path="/tools/perfume-cologne-picks" element={<PerfumeColognePicks />} />
+          <Route path="/tools/plumbing-basics-for-seniors" element={<PlumbingBasicsForSeniors />} />
+          <Route path="/tools/electrical-basics-for-seniors" element={<ElectricalBasicsForSeniors />} />
+          <Route path="/tools/air-filter-changing-guide" element={<AirFilterChangingGuide />} />
+          <Route path="/tools/seasonal-home-checklist" element={<SeasonalHomeChecklist />} />
+          <Route path="/tools/appliance-lifespan-guide" element={<ApplianceLifespanGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
