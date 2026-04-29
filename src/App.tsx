@@ -797,6 +797,13 @@ const SwimWorkoutTrackers    = lazy(() => import("./pages/tools/SwimWorkoutTrack
 const SeniorFitnessYouTube   = lazy(() => import("./pages/tools/SeniorFitnessYouTube"));
 const StepCounterCompare     = lazy(() => import("./pages/tools/StepCounterCompare"));
 
+// ── Cycle 89 (April 29 2026) — clinical tech ──
+const TeleDentistry          = lazy(() => import("./pages/tools/TeleDentistry"));
+const EyeExamApps            = lazy(() => import("./pages/tools/EyeExamApps"));
+const HeartTrackerApps       = lazy(() => import("./pages/tools/HeartTrackerApps"));
+const BloodPressureCuffs     = lazy(() => import("./pages/tools/BloodPressureCuffs"));
+const MentalHealthAppsCompare = lazy(() => import("./pages/tools/MentalHealthAppsCompare"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2137,6 +2144,13 @@ const AppContent = () => {
           <Route path="/tools/swim-workout-trackers" element={<SwimWorkoutTrackers />} />
           <Route path="/tools/senior-fitness-youtube" element={<SeniorFitnessYouTube />} />
           <Route path="/tools/step-counter-compare" element={<StepCounterCompare />} />
+
+          {/* Cycle 89 — clinical tech */}
+          <Route path="/tools/tele-dentistry" element={<TeleDentistry />} />
+          <Route path="/tools/eye-exam-apps" element={<EyeExamApps />} />
+          <Route path="/tools/heart-tracker-apps" element={<HeartTrackerApps />} />
+          <Route path="/tools/blood-pressure-cuffs" element={<BloodPressureCuffs />} />
+          <Route path="/tools/mental-health-apps-compare" element={<MentalHealthAppsCompare />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
