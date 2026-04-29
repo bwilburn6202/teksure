@@ -1504,6 +1504,13 @@ const ChronicPainManagement  = lazy(() => import("./pages/tools/ChronicPainManag
 const GriefAfterLoss         = lazy(() => import("./pages/tools/GriefAfterLoss"));
 const CrisisLineGuide        = lazy(() => import("./pages/tools/CrisisLineGuide"));
 
+// ── Cycle 190 (April 29 2026) — substance use ──
+const AlcoholForSeniors      = lazy(() => import("./pages/tools/AlcoholForSeniors"));
+const QuitSmokingSeniors     = lazy(() => import("./pages/tools/QuitSmokingSeniors"));
+const MarijuanaForMedicalSeniors = lazy(() => import("./pages/tools/MarijuanaForMedicalSeniors"));
+const BenzodiazepineSafety   = lazy(() => import("./pages/tools/BenzodiazepineSafety"));
+const CaffeineForSeniors     = lazy(() => import("./pages/tools/CaffeineForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3445,6 +3452,11 @@ const AppContent = () => {
           <Route path="/tools/chronic-pain-management" element={<ChronicPainManagement />} />
           <Route path="/tools/grief-after-loss" element={<GriefAfterLoss />} />
           <Route path="/tools/crisis-line-guide" element={<CrisisLineGuide />} />
+          <Route path="/tools/alcohol-for-seniors" element={<AlcoholForSeniors />} />
+          <Route path="/tools/quit-smoking-seniors" element={<QuitSmokingSeniors />} />
+          <Route path="/tools/marijuana-for-medical-seniors" element={<MarijuanaForMedicalSeniors />} />
+          <Route path="/tools/benzodiazepine-safety" element={<BenzodiazepineSafety />} />
+          <Route path="/tools/caffeine-for-seniors" element={<CaffeineForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
