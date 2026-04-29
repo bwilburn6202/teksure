@@ -734,6 +734,13 @@ const RecipeAppPicks         = lazy(() => import("./pages/tools/RecipeAppPicks")
 const WoodworkingPlans       = lazy(() => import("./pages/tools/WoodworkingPlans"));
 const FishingApps            = lazy(() => import("./pages/tools/FishingApps"));
 
+// ── Cycle 80 (April 29 2026) — caregivers + senior care ──
+const CaregiverApps          = lazy(() => import("./pages/tools/CaregiverApps"));
+const AgingInPlaceTech       = lazy(() => import("./pages/tools/AgingInPlaceTech"));
+const MemoryCareApps         = lazy(() => import("./pages/tools/MemoryCareApps"));
+const ParkinsonsApps         = lazy(() => import("./pages/tools/ParkinsonsApps"));
+const RespiteCareFinders     = lazy(() => import("./pages/tools/RespiteCareFinders"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2011,6 +2018,13 @@ const AppContent = () => {
           <Route path="/tools/recipe-app-picks" element={<RecipeAppPicks />} />
           <Route path="/tools/woodworking-plans" element={<WoodworkingPlans />} />
           <Route path="/tools/fishing-apps" element={<FishingApps />} />
+
+          {/* Cycle 80 — caregivers + senior care */}
+          <Route path="/tools/caregiver-apps" element={<CaregiverApps />} />
+          <Route path="/tools/aging-in-place-tech" element={<AgingInPlaceTech />} />
+          <Route path="/tools/memory-care-apps" element={<MemoryCareApps />} />
+          <Route path="/tools/parkinsons-apps" element={<ParkinsonsApps />} />
+          <Route path="/tools/respite-care-finders" element={<RespiteCareFinders />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
