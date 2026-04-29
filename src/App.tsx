@@ -433,6 +433,13 @@ const OnlineTherapyApps      = lazy(() => import("./pages/tools/OnlineTherapyApp
 const NewlyWidowedChecklist  = lazy(() => import("./pages/tools/NewlyWidowedChecklist"));
 const SeniorDownsizingCoach  = lazy(() => import("./pages/tools/SeniorDownsizingCoach"));
 
+// ── Cycle 37 (April 29 2026) — smart display/robot vac/health tests/scale/zoom host ──
+const SmartDisplayForGrandparents = lazy(() => import("./pages/tools/SmartDisplayForGrandparents"));
+const RobotVacuumCoach       = lazy(() => import("./pages/tools/RobotVacuumCoach"));
+const AtHomeHealthTests      = lazy(() => import("./pages/tools/AtHomeHealthTests"));
+const SmartScaleBpCuffPicker = lazy(() => import("./pages/tools/SmartScaleBpCuffPicker"));
+const VideoMeetingHostCoach  = lazy(() => import("./pages/tools/VideoMeetingHostCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1409,6 +1416,13 @@ const AppContent = () => {
           <Route path="/tools/online-therapy-apps" element={<OnlineTherapyApps />} />
           <Route path="/tools/newly-widowed-checklist" element={<NewlyWidowedChecklist />} />
           <Route path="/tools/senior-downsizing-coach" element={<SeniorDownsizingCoach />} />
+
+          {/* Cycle 37 — smart display / robot vac / health tests / scale / zoom host */}
+          <Route path="/tools/smart-display-for-grandparents" element={<SmartDisplayForGrandparents />} />
+          <Route path="/tools/robot-vacuum-coach" element={<RobotVacuumCoach />} />
+          <Route path="/tools/at-home-health-tests" element={<AtHomeHealthTests />} />
+          <Route path="/tools/smart-scale-bp-cuff-picker" element={<SmartScaleBpCuffPicker />} />
+          <Route path="/tools/video-meeting-host-coach" element={<VideoMeetingHostCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
