@@ -846,6 +846,13 @@ const ScamDatingFlags        = lazy(() => import("./pages/tools/ScamDatingFlags"
 const GraceDating60Plus      = lazy(() => import("./pages/tools/GraceDating60Plus"));
 const FirstDateTech          = lazy(() => import("./pages/tools/FirstDateTech"));
 
+// ── Cycle 96 (April 29 2026) — language + learning ──
+const LanguageAppCompare     = lazy(() => import("./pages/tools/LanguageAppCompare"));
+const FreeUniversityCourses  = lazy(() => import("./pages/tools/FreeUniversityCourses"));
+const CrosswordApps          = lazy(() => import("./pages/tools/CrosswordApps"));
+const MemoirWritingApps      = lazy(() => import("./pages/tools/MemoirWritingApps"));
+const ChessPicks             = lazy(() => import("./pages/tools/ChessPicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2235,6 +2242,13 @@ const AppContent = () => {
           <Route path="/tools/scam-dating-flags" element={<ScamDatingFlags />} />
           <Route path="/tools/grace-dating-60-plus" element={<GraceDating60Plus />} />
           <Route path="/tools/first-date-tech" element={<FirstDateTech />} />
+
+          {/* Cycle 96 — language + learning */}
+          <Route path="/tools/language-app-compare" element={<LanguageAppCompare />} />
+          <Route path="/tools/free-university-courses" element={<FreeUniversityCourses />} />
+          <Route path="/tools/crossword-apps" element={<CrosswordApps />} />
+          <Route path="/tools/memoir-writing-apps" element={<MemoirWritingApps />} />
+          <Route path="/tools/chess-picks" element={<ChessPicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
