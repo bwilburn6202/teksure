@@ -545,6 +545,13 @@ const SmartDeadboltPicker    = lazy(() => import("./pages/tools/SmartDeadboltPic
 const WaterLeakDetector      = lazy(() => import("./pages/tools/WaterLeakDetector"));
 const SpecialtyInsuranceCoach = lazy(() => import("./pages/tools/SpecialtyInsuranceCoach"));
 
+// ── Cycle 53 (April 29 2026) — networking ──
+const RuralInternet          = lazy(() => import("./pages/tools/RuralInternet"));
+const CellSignalBooster      = lazy(() => import("./pages/tools/CellSignalBooster"));
+const WifiExtenderVsMesh     = lazy(() => import("./pages/tools/WifiExtenderVsMesh"));
+const HomeMediaServer        = lazy(() => import("./pages/tools/HomeMediaServer"));
+const EthernetCoach          = lazy(() => import("./pages/tools/EthernetCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1633,6 +1640,13 @@ const AppContent = () => {
           <Route path="/tools/smart-deadbolt-picker" element={<SmartDeadboltPicker />} />
           <Route path="/tools/water-leak-detector" element={<WaterLeakDetector />} />
           <Route path="/tools/specialty-insurance-coach" element={<SpecialtyInsuranceCoach />} />
+
+          {/* Cycle 53 — networking */}
+          <Route path="/tools/rural-internet" element={<RuralInternet />} />
+          <Route path="/tools/cell-signal-booster" element={<CellSignalBooster />} />
+          <Route path="/tools/wifi-extender-vs-mesh" element={<WifiExtenderVsMesh />} />
+          <Route path="/tools/home-media-server" element={<HomeMediaServer />} />
+          <Route path="/tools/ethernet-coach" element={<EthernetCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
