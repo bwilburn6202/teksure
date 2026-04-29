@@ -1392,6 +1392,13 @@ const ComicBookCollecting    = lazy(() => import("./pages/tools/ComicBookCollect
 const BaseballCardValuation  = lazy(() => import("./pages/tools/BaseballCardValuation"));
 const RecordCollectingGuide  = lazy(() => import("./pages/tools/RecordCollectingGuide"));
 
+// ── Cycle 174 (April 29 2026) — travel apps for seniors ──
+const WazeForSeniors         = lazy(() => import("./pages/tools/WazeForSeniors"));
+const AirbnbForSeniorTravelers = lazy(() => import("./pages/tools/AirbnbForSeniorTravelers"));
+const RoadtripPlanningApps   = lazy(() => import("./pages/tools/RoadtripPlanningApps"));
+const AccessibleTravelApps   = lazy(() => import("./pages/tools/AccessibleTravelApps"));
+const NationalParksTrip      = lazy(() => import("./pages/tools/NationalParksTrip"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3253,6 +3260,11 @@ const AppContent = () => {
           <Route path="/tools/comic-book-collecting" element={<ComicBookCollecting />} />
           <Route path="/tools/baseball-card-valuation" element={<BaseballCardValuation />} />
           <Route path="/tools/record-collecting-guide" element={<RecordCollectingGuide />} />
+          <Route path="/tools/waze-for-seniors" element={<WazeForSeniors />} />
+          <Route path="/tools/airbnb-for-senior-travelers" element={<AirbnbForSeniorTravelers />} />
+          <Route path="/tools/roadtrip-planning-apps" element={<RoadtripPlanningApps />} />
+          <Route path="/tools/accessible-travel-apps" element={<AccessibleTravelApps />} />
+          <Route path="/tools/national-parks-trip" element={<NationalParksTrip />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
