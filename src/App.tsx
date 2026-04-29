@@ -1658,6 +1658,13 @@ const DirectDepositSetup        = lazy(() => import("./pages/tools/DirectDeposit
 const SafeDepositBoxGuide       = lazy(() => import("./pages/tools/SafeDepositBoxGuide"));
 const EmergencyFundForSeniors   = lazy(() => import("./pages/tools/EmergencyFundForSeniors"));
 
+// ── Cycle 212 (April 29 2026) — fitness deeper ──
+const SilverSneakersGuide       = lazy(() => import("./pages/tools/SilverSneakersGuide"));
+const SeniorWalkingShoes        = lazy(() => import("./pages/tools/SeniorWalkingShoes"));
+const PilatesForSeniors         = lazy(() => import("./pages/tools/PilatesForSeniors"));
+const SwimmingForSeniors        = lazy(() => import("./pages/tools/SwimmingForSeniors"));
+const BocceLawnGames            = lazy(() => import("./pages/tools/BocceLawnGames"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3709,6 +3716,11 @@ const AppContent = () => {
           <Route path="/tools/direct-deposit-setup" element={<DirectDepositSetup />} />
           <Route path="/tools/safe-deposit-box-guide" element={<SafeDepositBoxGuide />} />
           <Route path="/tools/emergency-fund-for-seniors" element={<EmergencyFundForSeniors />} />
+          <Route path="/tools/silver-sneakers-guide" element={<SilverSneakersGuide />} />
+          <Route path="/tools/senior-walking-shoes" element={<SeniorWalkingShoes />} />
+          <Route path="/tools/pilates-for-seniors" element={<PilatesForSeniors />} />
+          <Route path="/tools/swimming-for-seniors" element={<SwimmingForSeniors />} />
+          <Route path="/tools/bocce-lawn-games" element={<BocceLawnGames />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
