@@ -1329,6 +1329,13 @@ const ERVsUrgentCare         = lazy(() => import("./pages/tools/ERVsUrgentCare")
 const MedicalBillNegotiation = lazy(() => import("./pages/tools/MedicalBillNegotiation"));
 const PrescriptionPriceShop  = lazy(() => import("./pages/tools/PrescriptionPriceShop"));
 
+// ── Cycle 165 (April 29 2026) — second-career income ──
+const EtsySellingForSeniors  = lazy(() => import("./pages/tools/EtsySellingForSeniors"));
+const FiverrFreelanceSeniors = lazy(() => import("./pages/tools/FiverrFreelanceSeniors"));
+const BecomeATutorRetiree    = lazy(() => import("./pages/tools/BecomeATutorRetiree"));
+const PetSittingIncome       = lazy(() => import("./pages/tools/PetSittingIncome"));
+const ConsultingSecondAct    = lazy(() => import("./pages/tools/ConsultingSecondAct"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3145,6 +3152,11 @@ const AppContent = () => {
           <Route path="/tools/er-vs-urgent-care" element={<ERVsUrgentCare />} />
           <Route path="/tools/medical-bill-negotiation" element={<MedicalBillNegotiation />} />
           <Route path="/tools/prescription-price-shop" element={<PrescriptionPriceShop />} />
+          <Route path="/tools/etsy-selling-for-seniors" element={<EtsySellingForSeniors />} />
+          <Route path="/tools/fiverr-freelance-seniors" element={<FiverrFreelanceSeniors />} />
+          <Route path="/tools/become-a-tutor-retiree" element={<BecomeATutorRetiree />} />
+          <Route path="/tools/pet-sitting-income" element={<PetSittingIncome />} />
+          <Route path="/tools/consulting-second-act" element={<ConsultingSecondAct />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
