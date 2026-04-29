@@ -1056,6 +1056,13 @@ const IRSPaymentPortal       = lazy(() => import("./pages/tools/IRSPaymentPortal
 const VaCom                  = lazy(() => import("./pages/tools/VaCom"));
 const DmvOnlineServices      = lazy(() => import("./pages/tools/DmvOnlineServices"));
 
+// ── Cycle 126 (April 29 2026) — phone tricks ──
+const VoiceTextingTrick      = lazy(() => import("./pages/tools/VoiceTextingTrick"));
+const FontSizeAccessibility  = lazy(() => import("./pages/tools/FontSizeAccessibility"));
+const MagnifyTextHowTo       = lazy(() => import("./pages/tools/MagnifyTextHowTo"));
+const EmergencyContactsLockScreen = lazy(() => import("./pages/tools/EmergencyContactsLockScreen"));
+const AppleWatchTextingTips  = lazy(() => import("./pages/tools/AppleWatchTextingTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2655,6 +2662,13 @@ const AppContent = () => {
           <Route path="/tools/irs-payment-portal" element={<IRSPaymentPortal />} />
           <Route path="/tools/va-com" element={<VaCom />} />
           <Route path="/tools/dmv-online-services" element={<DmvOnlineServices />} />
+
+          {/* Cycle 126 — phone tricks */}
+          <Route path="/tools/voice-texting-trick" element={<VoiceTextingTrick />} />
+          <Route path="/tools/font-size-accessibility" element={<FontSizeAccessibility />} />
+          <Route path="/tools/magnify-text-how-to" element={<MagnifyTextHowTo />} />
+          <Route path="/tools/emergency-contacts-lock-screen" element={<EmergencyContactsLockScreen />} />
+          <Route path="/tools/apple-watch-texting-tips" element={<AppleWatchTextingTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
