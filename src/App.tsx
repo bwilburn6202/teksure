@@ -1518,6 +1518,13 @@ const COPDManagement         = lazy(() => import("./pages/tools/COPDManagement")
 const KidneyHealthGuide      = lazy(() => import("./pages/tools/KidneyHealthGuide"));
 const AcidRefluxSeniors      = lazy(() => import("./pages/tools/AcidRefluxSeniors"));
 
+// ── Cycle 192 (April 29 2026) — cardiovascular ──
+const StrokeWarningSigns     = lazy(() => import("./pages/tools/StrokeWarningSigns"));
+const HeartFailureBasics     = lazy(() => import("./pages/tools/HeartFailureBasics"));
+const AFibInformation        = lazy(() => import("./pages/tools/AFibInformation"));
+const BloodThinnerGuide      = lazy(() => import("./pages/tools/BloodThinnerGuide"));
+const DVTPreventionSeniors   = lazy(() => import("./pages/tools/DVTPreventionSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3469,6 +3476,11 @@ const AppContent = () => {
           <Route path="/tools/copd-management" element={<COPDManagement />} />
           <Route path="/tools/kidney-health-guide" element={<KidneyHealthGuide />} />
           <Route path="/tools/acid-reflux-seniors" element={<AcidRefluxSeniors />} />
+          <Route path="/tools/stroke-warning-signs" element={<StrokeWarningSigns />} />
+          <Route path="/tools/heart-failure-basics" element={<HeartFailureBasics />} />
+          <Route path="/tools/afib-information" element={<AFibInformation />} />
+          <Route path="/tools/blood-thinner-guide" element={<BloodThinnerGuide />} />
+          <Route path="/tools/dvt-prevention-seniors" element={<DVTPreventionSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
