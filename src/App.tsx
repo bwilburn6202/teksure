@@ -881,6 +881,13 @@ const EyeStrainTips          = lazy(() => import("./pages/tools/EyeStrainTips"))
 const BedtimePhoneRoutine    = lazy(() => import("./pages/tools/BedtimePhoneRoutine"));
 const ScreenBreakReminders   = lazy(() => import("./pages/tools/ScreenBreakReminders"));
 
+// ── Cycle 101 (April 29 2026) — senior travel + adventure ──
+const ScenicByways           = lazy(() => import("./pages/tools/ScenicByways"));
+const AccessibleTravelGuide  = lazy(() => import("./pages/tools/AccessibleTravelGuide"));
+const SeniorTrainTravel      = lazy(() => import("./pages/tools/SeniorTrainTravel"));
+const RoadTripPlanners       = lazy(() => import("./pages/tools/RoadTripPlanners"));
+const CruisePicks            = lazy(() => import("./pages/tools/CruisePicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2305,6 +2312,13 @@ const AppContent = () => {
           <Route path="/tools/eye-strain-tips" element={<EyeStrainTips />} />
           <Route path="/tools/bedtime-phone-routine" element={<BedtimePhoneRoutine />} />
           <Route path="/tools/screen-break-reminders" element={<ScreenBreakReminders />} />
+
+          {/* Cycle 101 — senior travel + adventure */}
+          <Route path="/tools/scenic-byways" element={<ScenicByways />} />
+          <Route path="/tools/accessible-travel-guide" element={<AccessibleTravelGuide />} />
+          <Route path="/tools/senior-train-travel" element={<SeniorTrainTravel />} />
+          <Route path="/tools/road-trip-planners" element={<RoadTripPlanners />} />
+          <Route path="/tools/cruise-picks" element={<CruisePicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
