@@ -1721,6 +1721,13 @@ const MicrosoftTeamsForSeniors  = lazy(() => import("./pages/tools/MicrosoftTeam
 const OutlookBasicsSeniors      = lazy(() => import("./pages/tools/OutlookBasicsSeniors"));
 const OneDriveBasics            = lazy(() => import("./pages/tools/OneDriveBasics"));
 
+// ── Cycle 221 (April 29 2026) — music streaming ──
+const AppleMusicForSeniors      = lazy(() => import("./pages/tools/AppleMusicForSeniors"));
+const AmazonMusicForSeniors     = lazy(() => import("./pages/tools/AmazonMusicForSeniors"));
+const PandoraForSeniors         = lazy(() => import("./pages/tools/PandoraForSeniors"));
+const YouTubeMusicForSeniors    = lazy(() => import("./pages/tools/YouTubeMusicForSeniors"));
+const TuneInRadioApps           = lazy(() => import("./pages/tools/TuneInRadioApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3817,6 +3824,11 @@ const AppContent = () => {
           <Route path="/tools/microsoft-teams-for-seniors" element={<MicrosoftTeamsForSeniors />} />
           <Route path="/tools/outlook-basics-seniors" element={<OutlookBasicsSeniors />} />
           <Route path="/tools/onedrive-basics" element={<OneDriveBasics />} />
+          <Route path="/tools/apple-music-for-seniors" element={<AppleMusicForSeniors />} />
+          <Route path="/tools/amazon-music-for-seniors" element={<AmazonMusicForSeniors />} />
+          <Route path="/tools/pandora-for-seniors" element={<PandoraForSeniors />} />
+          <Route path="/tools/youtube-music-for-seniors" element={<YouTubeMusicForSeniors />} />
+          <Route path="/tools/tunein-radio-apps" element={<TuneInRadioApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
