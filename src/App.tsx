@@ -1147,6 +1147,13 @@ const GripStrengthTools      = lazy(() => import("./pages/tools/GripStrengthTool
 const StairSafetyChecklist   = lazy(() => import("./pages/tools/StairSafetyChecklist"));
 const CaneWalkerPicker       = lazy(() => import("./pages/tools/CaneWalkerPicker"));
 
+// ── Cycle 139 (April 29 2026) — senior nutrition ──
+const ProteinForSeniors      = lazy(() => import("./pages/tools/ProteinForSeniors"));
+const SaltReductionTips      = lazy(() => import("./pages/tools/SaltReductionTips"));
+const SugarReductionGuide    = lazy(() => import("./pages/tools/SugarReductionGuide"));
+const AntiInflammatoryEating = lazy(() => import("./pages/tools/AntiInflammatoryEating"));
+const SeniorSmoothieRecipes  = lazy(() => import("./pages/tools/SeniorSmoothieRecipes"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2833,6 +2840,11 @@ const AppContent = () => {
           <Route path="/tools/grip-strength-tools" element={<GripStrengthTools />} />
           <Route path="/tools/stair-safety-checklist" element={<StairSafetyChecklist />} />
           <Route path="/tools/cane-walker-picker" element={<CaneWalkerPicker />} />
+          <Route path="/tools/protein-for-seniors" element={<ProteinForSeniors />} />
+          <Route path="/tools/salt-reduction-tips" element={<SaltReductionTips />} />
+          <Route path="/tools/sugar-reduction-guide" element={<SugarReductionGuide />} />
+          <Route path="/tools/anti-inflammatory-eating" element={<AntiInflammatoryEating />} />
+          <Route path="/tools/senior-smoothie-recipes" element={<SeniorSmoothieRecipes />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
