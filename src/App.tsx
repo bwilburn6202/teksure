@@ -1259,6 +1259,13 @@ const CashbackAppPicks       = lazy(() => import("./pages/tools/CashbackAppPicks
 const PrimeDayBlackFriday    = lazy(() => import("./pages/tools/PrimeDayBlackFriday"));
 const GroceryLoyaltyTricks   = lazy(() => import("./pages/tools/GroceryLoyaltyTricks"));
 
+// ── Cycle 155 (April 29 2026) — legacy + history ──
+const AncestryDNAGuide       = lazy(() => import("./pages/tools/AncestryDNAGuide"));
+const WriteYourMemoir        = lazy(() => import("./pages/tools/WriteYourMemoir"));
+const VideoLettersGrandkids  = lazy(() => import("./pages/tools/VideoLettersGrandkids"));
+const FamilyHistoryInterview = lazy(() => import("./pages/tools/FamilyHistoryInterview"));
+const EthicalWillTemplate    = lazy(() => import("./pages/tools/EthicalWillTemplate"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3025,6 +3032,11 @@ const AppContent = () => {
           <Route path="/tools/cashback-app-picks" element={<CashbackAppPicks />} />
           <Route path="/tools/prime-day-black-friday" element={<PrimeDayBlackFriday />} />
           <Route path="/tools/grocery-loyalty-tricks" element={<GroceryLoyaltyTricks />} />
+          <Route path="/tools/ancestry-dna-guide" element={<AncestryDNAGuide />} />
+          <Route path="/tools/write-your-memoir" element={<WriteYourMemoir />} />
+          <Route path="/tools/video-letters-grandkids" element={<VideoLettersGrandkids />} />
+          <Route path="/tools/family-history-interview" element={<FamilyHistoryInterview />} />
+          <Route path="/tools/ethical-will-template" element={<EthicalWillTemplate />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
