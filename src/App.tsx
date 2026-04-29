@@ -1238,6 +1238,13 @@ const OnlineBrokerageStarter = lazy(() => import("./pages/tools/OnlineBrokerageS
 const CDTreasuryHighYield    = lazy(() => import("./pages/tools/CDTreasuryHighYield"));
 const AutoBillPaySetup       = lazy(() => import("./pages/tools/AutoBillPaySetup"));
 
+// ── Cycle 152 (April 29 2026) — entertainment + leisure ──
+const LibbyAppForSeniors     = lazy(() => import("./pages/tools/LibbyAppForSeniors"));
+const HooplaForSeniors       = lazy(() => import("./pages/tools/HooplaForSeniors"));
+const SonosSetupGuide        = lazy(() => import("./pages/tools/SonosSetupGuide"));
+const BroadwayHDForSeniors   = lazy(() => import("./pages/tools/BroadwayHDForSeniors"));
+const FreeAudiobookSources   = lazy(() => import("./pages/tools/FreeAudiobookSources"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2989,6 +2996,11 @@ const AppContent = () => {
           <Route path="/tools/online-brokerage-starter" element={<OnlineBrokerageStarter />} />
           <Route path="/tools/cd-treasury-high-yield" element={<CDTreasuryHighYield />} />
           <Route path="/tools/auto-bill-pay-setup" element={<AutoBillPaySetup />} />
+          <Route path="/tools/libby-app-for-seniors" element={<LibbyAppForSeniors />} />
+          <Route path="/tools/hoopla-for-seniors" element={<HooplaForSeniors />} />
+          <Route path="/tools/sonos-setup-guide" element={<SonosSetupGuide />} />
+          <Route path="/tools/broadway-hd-for-seniors" element={<BroadwayHDForSeniors />} />
+          <Route path="/tools/free-audiobook-sources" element={<FreeAudiobookSources />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
