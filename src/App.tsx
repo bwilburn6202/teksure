@@ -629,6 +629,13 @@ const GasPriceApps           = lazy(() => import("./pages/tools/GasPriceApps"));
 const SmartPlugBasics        = lazy(() => import("./pages/tools/SmartPlugBasics"));
 const FreezerInventory       = lazy(() => import("./pages/tools/FreezerInventory"));
 
+// ── Cycle 65 (April 29 2026) — travel + legacy ──
+const TravelInsuranceReality = lazy(() => import("./pages/tools/TravelInsuranceReality"));
+const LuggageTrackerPicks    = lazy(() => import("./pages/tools/LuggageTrackerPicks"));
+const OfflineMapsHowTo       = lazy(() => import("./pages/tools/OfflineMapsHowTo"));
+const DigitalLegacyPlanner   = lazy(() => import("./pages/tools/DigitalLegacyPlanner"));
+const MemorialFacebookGuide  = lazy(() => import("./pages/tools/MemorialFacebookGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1801,6 +1808,13 @@ const AppContent = () => {
           <Route path="/tools/gas-price-apps" element={<GasPriceApps />} />
           <Route path="/tools/smart-plug-basics" element={<SmartPlugBasics />} />
           <Route path="/tools/freezer-inventory" element={<FreezerInventory />} />
+
+          {/* Cycle 65 — travel + legacy */}
+          <Route path="/tools/travel-insurance-reality" element={<TravelInsuranceReality />} />
+          <Route path="/tools/luggage-tracker-picks" element={<LuggageTrackerPicks />} />
+          <Route path="/tools/offline-maps-how-to" element={<OfflineMapsHowTo />} />
+          <Route path="/tools/digital-legacy-planner" element={<DigitalLegacyPlanner />} />
+          <Route path="/tools/memorial-facebook-guide" element={<MemorialFacebookGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
