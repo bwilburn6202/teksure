@@ -1714,6 +1714,13 @@ const AIHealthQuestions         = lazy(() => import("./pages/tools/AIHealthQuest
 const AIFinanceAdvice           = lazy(() => import("./pages/tools/AIFinanceAdvice"));
 const AILegalQuestions          = lazy(() => import("./pages/tools/AILegalQuestions"));
 
+// ── Cycle 220 (April 29 2026) — productivity apps ──
+const GoogleSheetsBasics        = lazy(() => import("./pages/tools/GoogleSheetsBasics"));
+const GoogleSlidesBasics        = lazy(() => import("./pages/tools/GoogleSlidesBasics"));
+const MicrosoftTeamsForSeniors  = lazy(() => import("./pages/tools/MicrosoftTeamsForSeniors"));
+const OutlookBasicsSeniors      = lazy(() => import("./pages/tools/OutlookBasicsSeniors"));
+const OneDriveBasics            = lazy(() => import("./pages/tools/OneDriveBasics"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3805,6 +3812,11 @@ const AppContent = () => {
           <Route path="/tools/ai-health-questions" element={<AIHealthQuestions />} />
           <Route path="/tools/ai-finance-advice" element={<AIFinanceAdvice />} />
           <Route path="/tools/ai-legal-questions" element={<AILegalQuestions />} />
+          <Route path="/tools/google-sheets-basics" element={<GoogleSheetsBasics />} />
+          <Route path="/tools/google-slides-basics" element={<GoogleSlidesBasics />} />
+          <Route path="/tools/microsoft-teams-for-seniors" element={<MicrosoftTeamsForSeniors />} />
+          <Route path="/tools/outlook-basics-seniors" element={<OutlookBasicsSeniors />} />
+          <Route path="/tools/onedrive-basics" element={<OneDriveBasics />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
