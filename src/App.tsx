@@ -776,6 +776,13 @@ const VolunteerMatchApps     = lazy(() => import("./pages/tools/VolunteerMatchAp
 const LocalNewsApps          = lazy(() => import("./pages/tools/LocalNewsApps"));
 const CityOpenDataTools      = lazy(() => import("./pages/tools/CityOpenDataTools"));
 
+// ── Cycle 86 (April 29 2026) — pet tech ──
+const PetCameraPicks         = lazy(() => import("./pages/tools/PetCameraPicks"));
+const PetGpsTrackers         = lazy(() => import("./pages/tools/PetGpsTrackers"));
+const AutoFeederPicks        = lazy(() => import("./pages/tools/AutoFeederPicks"));
+const PetTelevetVisits       = lazy(() => import("./pages/tools/PetTelevetVisits"));
+const OnlinePetPharmacies    = lazy(() => import("./pages/tools/OnlinePetPharmacies"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2095,6 +2102,13 @@ const AppContent = () => {
           <Route path="/tools/volunteer-match-apps" element={<VolunteerMatchApps />} />
           <Route path="/tools/local-news-apps" element={<LocalNewsApps />} />
           <Route path="/tools/city-open-data-tools" element={<CityOpenDataTools />} />
+
+          {/* Cycle 86 — pet tech */}
+          <Route path="/tools/pet-camera-picks" element={<PetCameraPicks />} />
+          <Route path="/tools/pet-gps-trackers" element={<PetGpsTrackers />} />
+          <Route path="/tools/auto-feeder-picks" element={<AutoFeederPicks />} />
+          <Route path="/tools/pet-televet-visits" element={<PetTelevetVisits />} />
+          <Route path="/tools/online-pet-pharmacies" element={<OnlinePetPharmacies />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
