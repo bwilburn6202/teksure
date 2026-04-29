@@ -1665,6 +1665,13 @@ const PilatesForSeniors         = lazy(() => import("./pages/tools/PilatesForSen
 const SwimmingForSeniors        = lazy(() => import("./pages/tools/SwimmingForSeniors"));
 const BocceLawnGames            = lazy(() => import("./pages/tools/BocceLawnGames"));
 
+// ── Cycle 213 (April 29 2026) — nutrition deeper ──
+const VitaminsForSeniors        = lazy(() => import("./pages/tools/VitaminsForSeniors"));
+const SupplementSafety          = lazy(() => import("./pages/tools/SupplementSafety"));
+const MealPrepForOne            = lazy(() => import("./pages/tools/MealPrepForOne"));
+const HighFiberRecipes          = lazy(() => import("./pages/tools/HighFiberRecipes"));
+const OmegaFishOilGuide         = lazy(() => import("./pages/tools/OmegaFishOilGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3721,6 +3728,11 @@ const AppContent = () => {
           <Route path="/tools/pilates-for-seniors" element={<PilatesForSeniors />} />
           <Route path="/tools/swimming-for-seniors" element={<SwimmingForSeniors />} />
           <Route path="/tools/bocce-lawn-games" element={<BocceLawnGames />} />
+          <Route path="/tools/vitamins-for-seniors" element={<VitaminsForSeniors />} />
+          <Route path="/tools/supplement-safety" element={<SupplementSafety />} />
+          <Route path="/tools/meal-prep-for-one" element={<MealPrepForOne />} />
+          <Route path="/tools/high-fiber-recipes" element={<HighFiberRecipes />} />
+          <Route path="/tools/omega-fish-oil-guide" element={<OmegaFishOilGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
