@@ -1427,6 +1427,13 @@ const MedicareDotGovTour     = lazy(() => import("./pages/tools/MedicareDotGovTo
 const BenefitsCheckUpTool    = lazy(() => import("./pages/tools/BenefitsCheckUpTool"));
 const USAJobsForSeniors      = lazy(() => import("./pages/tools/USAJobsForSeniors"));
 
+// ── Cycle 179 (April 29 2026) — voice assistants ──
+const AlexaSkillsForSeniors  = lazy(() => import("./pages/tools/AlexaSkillsForSeniors"));
+const GoogleAssistantTraining = lazy(() => import("./pages/tools/GoogleAssistantTraining"));
+const AlexaShoppingList      = lazy(() => import("./pages/tools/AlexaShoppingList"));
+const AlexaMedReminders      = lazy(() => import("./pages/tools/AlexaMedReminders"));
+const AlexaWithDementia      = lazy(() => import("./pages/tools/AlexaWithDementia"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3313,6 +3320,11 @@ const AppContent = () => {
           <Route path="/tools/medicare-dot-gov-tour" element={<MedicareDotGovTour />} />
           <Route path="/tools/benefits-check-up-tool" element={<BenefitsCheckUpTool />} />
           <Route path="/tools/usa-jobs-for-seniors" element={<USAJobsForSeniors />} />
+          <Route path="/tools/alexa-skills-for-seniors" element={<AlexaSkillsForSeniors />} />
+          <Route path="/tools/google-assistant-training" element={<GoogleAssistantTraining />} />
+          <Route path="/tools/alexa-shopping-list" element={<AlexaShoppingList />} />
+          <Route path="/tools/alexa-med-reminders" element={<AlexaMedReminders />} />
+          <Route path="/tools/alexa-with-dementia" element={<AlexaWithDementia />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
