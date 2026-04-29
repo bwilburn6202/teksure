@@ -1749,6 +1749,11 @@ const PocketWifiAbroad          = lazy(() => import("./pages/tools/PocketWifiAbr
 const VRBOAirbnbCompareSeniors  = lazy(() => import("./pages/tools/VRBOAirbnbCompareSeniors"));
 const SoloSeniorTravelTips      = lazy(() => import("./pages/tools/SoloSeniorTravelTips"));
 const CurrencyExchangeForSeniors = lazy(() => import("./pages/tools/CurrencyExchangeForSeniors"));
+const GoodRxDrugSavings         = lazy(() => import("./pages/tools/GoodRxDrugSavings"));
+const MedisafePillReminder      = lazy(() => import("./pages/tools/MedisafePillReminder"));
+const BloodPressureTrackingApps = lazy(() => import("./pages/tools/BloodPressureTrackingApps"));
+const AppleHealthAppTutorial    = lazy(() => import("./pages/tools/AppleHealthAppTutorial"));
+const SmartScaleForSeniors      = lazy(() => import("./pages/tools/SmartScaleForSeniors"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3871,6 +3876,11 @@ const AppContent = () => {
           <Route path="/tools/vrbo-airbnb-compare-seniors" element={<VRBOAirbnbCompareSeniors />} />
           <Route path="/tools/solo-senior-travel-tips" element={<SoloSeniorTravelTips />} />
           <Route path="/tools/currency-exchange-for-seniors" element={<CurrencyExchangeForSeniors />} />
+          <Route path="/tools/goodrx-drug-savings" element={<GoodRxDrugSavings />} />
+          <Route path="/tools/medisafe-pill-reminder" element={<MedisafePillReminder />} />
+          <Route path="/tools/blood-pressure-tracking-apps" element={<BloodPressureTrackingApps />} />
+          <Route path="/tools/apple-health-app-tutorial" element={<AppleHealthAppTutorial />} />
+          <Route path="/tools/smart-scale-for-seniors" element={<SmartScaleForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
