@@ -1567,6 +1567,13 @@ const CohousingForSeniors    = lazy(() => import("./pages/tools/CohousingForSeni
 const AssistedLivingChoosing = lazy(() => import("./pages/tools/AssistedLivingChoosing"));
 const StayingPutChecklist    = lazy(() => import("./pages/tools/StayingPutChecklist"));
 
+// ── Cycle 199 (April 29 2026) — travel deals ──
+const HotelDealForSeniors    = lazy(() => import("./pages/tools/HotelDealForSeniors"));
+const AAADiscountList        = lazy(() => import("./pages/tools/AAADiscountList"));
+const AARPMembershipUse      = lazy(() => import("./pages/tools/AARPMembershipUse"));
+const SeniorAirfareDeals     = lazy(() => import("./pages/tools/SeniorAirfareDeals"));
+const SeniorRentalCarDeals   = lazy(() => import("./pages/tools/SeniorRentalCarDeals"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3553,6 +3560,11 @@ const AppContent = () => {
           <Route path="/tools/cohousing-for-seniors" element={<CohousingForSeniors />} />
           <Route path="/tools/assisted-living-choosing" element={<AssistedLivingChoosing />} />
           <Route path="/tools/staying-put-checklist" element={<StayingPutChecklist />} />
+          <Route path="/tools/hotel-deal-for-seniors" element={<HotelDealForSeniors />} />
+          <Route path="/tools/aaa-discount-list" element={<AAADiscountList />} />
+          <Route path="/tools/aarp-membership-use" element={<AARPMembershipUse />} />
+          <Route path="/tools/senior-airfare-deals" element={<SeniorAirfareDeals />} />
+          <Route path="/tools/senior-rental-car-deals" element={<SeniorRentalCarDeals />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
