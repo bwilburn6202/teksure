@@ -510,6 +510,13 @@ const DeepfakeSpotter        = lazy(() => import("./pages/tools/DeepfakeSpotter"
 const GenealogyDeepDive      = lazy(() => import("./pages/tools/GenealogyDeepDive"));
 const CitizenEmergencyApp    = lazy(() => import("./pages/tools/CitizenEmergencyApp"));
 
+// ── Cycle 48 (April 29 2026) — donate/mail/311/energy/solar ──
+const DonationPickup         = lazy(() => import("./pages/tools/DonationPickup"));
+const UspsMailForwardHold    = lazy(() => import("./pages/tools/UspsMailForwardHold"));
+const Local311Apps           = lazy(() => import("./pages/tools/Local311Apps"));
+const HomeEnergyMonitor      = lazy(() => import("./pages/tools/HomeEnergyMonitor"));
+const SolarPanelDecisionCoach = lazy(() => import("./pages/tools/SolarPanelDecisionCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1563,6 +1570,13 @@ const AppContent = () => {
           <Route path="/tools/deepfake-spotter" element={<DeepfakeSpotter />} />
           <Route path="/tools/genealogy-deep-dive" element={<GenealogyDeepDive />} />
           <Route path="/tools/citizen-emergency-app" element={<CitizenEmergencyApp />} />
+
+          {/* Cycle 48 — donate / mail / 311 / energy / solar */}
+          <Route path="/tools/donation-pickup" element={<DonationPickup />} />
+          <Route path="/tools/usps-mail-forward-hold" element={<UspsMailForwardHold />} />
+          <Route path="/tools/local-311-apps" element={<Local311Apps />} />
+          <Route path="/tools/home-energy-monitor" element={<HomeEnergyMonitor />} />
+          <Route path="/tools/solar-panel-decision-coach" element={<SolarPanelDecisionCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
