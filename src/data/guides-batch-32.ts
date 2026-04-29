@@ -148,43 +148,7 @@ export const guidesBatch32: Guide[] = [
     ],
   },
 
-  {
-    slug: 'grubhub-app-guide',
-    title: 'How to Order Food Delivery with Grubhub',
-    excerpt: 'Grubhub delivers food from local restaurants to your door — browse menus, order, pay, and track delivery all from your phone.',
-    body: `Grubhub is a food delivery service that brings restaurant meals to your home. You browse menus from nearby restaurants, place an order on the app or website, and a delivery driver brings it to your door, typically within 30 to 60 minutes.\n\nGrubhub is available in most US cities and works with hundreds of thousands of restaurant partners, from national chains like McDonald's and Panera to local diners and pizza shops. You can filter by cuisine type, delivery time, price range, and dietary preferences.\n\nDelivery fees vary by restaurant and distance, typically ranging from $0 to $6. You can also tip the driver within the app after delivery. Grubhub+ is a membership program ($9.99/month) that offers free delivery on orders over $12 from eligible restaurants.\n\nFor older adults or those with limited mobility, food delivery services like Grubhub are a practical way to enjoy restaurant food without needing to drive or go out. They also serve as a helpful resource during illness or bad weather.\n\nGrubhub accepts credit cards, debit cards, PayPal, and Venmo. You save your payment method in the app so checkout is quick. Your previous orders are saved, making it easy to reorder favorite meals.`,
-    category: 'app-guides',
-    tags: ['grubhub', 'food delivery', 'restaurant delivery', 'ordering food', 'delivery app'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: 'Download Grubhub and create an account',
-        content: 'Search "Grubhub" in the App Store or Google Play. Download the app, enter your email address, create a password, and add your delivery address.',
-      },
-      {
-        title: 'Browse restaurants',
-        content: 'The main screen shows restaurants near your delivery address. Use the filter button to narrow results by cuisine type (Italian, Chinese, American, etc.) or estimated delivery time.',
-      },
-      {
-        title: 'Add items to your cart',
-        content: 'Tap a restaurant to see its menu. Tap items to add them to your cart. Some items have options to customize — for example, choosing a side dish or specifying no onions.',
-        tip: 'Check the "Popular Items" section at the top of any restaurant menu for the most commonly ordered dishes.',
-      },
-      {
-        title: 'Checkout and add payment',
-        content: 'Tap "View Cart" then "Checkout." Add a credit card, debit card, or PayPal account. Review the order total including delivery fee and taxes before confirming.',
-      },
-      {
-        title: 'Track your order',
-        content: 'After placing the order, a tracking screen shows the order status: being prepared → picked up → on the way → delivered. You receive text notifications at each stage.',
-        warning: 'Confirm your delivery address is correct before placing the order. If the address is wrong, you may not receive a refund for undelivered food.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'amazon-fresh-guide',
     title: 'How to Order Groceries with Amazon Fresh',

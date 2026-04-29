@@ -233,53 +233,7 @@ The app also offers guided journaling prompts if you're not sure what to write a
       },
     ],
   },
-  {
-    slug: `email-unsubscribe-guide`,
-    title: `How to Unsubscribe From Unwanted Emails and Clean Up Your Inbox`,
-    excerpt: `Learn safe, proven ways to stop promotional emails from cluttering your inbox — without falling for scams or accidentally making things worse.`,
-    category: `essential-skills`,
-    tags: [`email`, `inbox`, `unsubscribe`, `spam`, `organization`, `gmail`, `outlook`],
-    readTime: `6 min`,
-    thumbnailEmoji: ``,
-    publishedAt: `2026-04-20`,
-    difficulty: `Beginner`,
-    body: `A cluttered inbox makes it hard to find the messages that actually matter. Newsletters you never read, store promotions, app notifications, and old subscriptions pile up until your email feels more like a chore than a tool. The good news is that cleaning it up is manageable once you know the right approach.
-
-The most direct method is using the unsubscribe link that most marketing emails are required by law to include. In the United States, the CAN-SPAM Act requires all commercial emails to provide a visible, working unsubscribe option. Scroll to the very bottom of the email and look for small text that says "Unsubscribe," "Manage Preferences," or "Opt Out." Clicking that link takes you to a page where you confirm your request. The sender is legally required to process it within 10 business days.
-
-Gmail has a built-in shortcut: when you open a newsletter or promotional email, look for an "Unsubscribe" link that Gmail places right next to the sender's name at the top of the email. Clicking it opens a pop-up confirming you want to unsubscribe — it's faster than scrolling to the bottom every time.
-
-For large-scale inbox cleanup, a free service called Unroll.Me shows you all your subscriptions in one list and lets you unsubscribe from multiple senders at once. A similar tool called Clean Email offers a paid version with more automation. These services are legitimate but do ask for access to your email — read their privacy policy before connecting your account.
-
-One important caution: never click "unsubscribe" in an email that looks suspicious, came from someone you don't recognize, or is asking you to log in somewhere unfamiliar. Scammers sometimes send fake "unsubscribe" links that confirm your email is active and lead to phishing sites. If the email looks odd, mark it as spam and delete it instead.
-
-After unsubscribing from the obvious senders, use your email's built-in "Promotions" or "Social" tabs (Gmail) to archive or delete batches of older messages you no longer need. A cleaner inbox takes a few sessions of work but makes email far less stressful going forward.`,
-    steps: [
-      {
-        title: `Identify emails you no longer want`,
-        content: `Open your inbox and look for newsletters, store promotions, and app notifications you haven't read in weeks. In Gmail, check the "Promotions" tab — it automatically sorts marketing emails away from personal messages. These are the candidates for unsubscribing.`,
-      },
-      {
-        title: `Use the unsubscribe link in the email`,
-        content: `Open one of the unwanted emails and scroll all the way to the bottom. Look for small text that says "Unsubscribe," "Manage Email Preferences," or "Opt Out." Click that link and follow the one or two steps on the page that opens. Most reputable companies remove you from their list within a few days.`,
-        warning: `Do not click unsubscribe links in emails that look suspicious — unexpected sender names, odd subject lines, or requests to log in. For those, mark the email as spam instead.`,
-      },
-      {
-        title: `Use Gmail's built-in unsubscribe shortcut`,
-        content: `In Gmail (on the web or in the Gmail app), open a newsletter email and look for the word "Unsubscribe" appearing in small text right next to the sender's name at the top of the email. Click it, then confirm in the pop-up. This is the fastest way to handle one sender at a time.`,
-        tip: `Quick Tip: After unsubscribing, you can also tap "Block" on that sender to prevent any future messages from them from ever reaching your inbox.`,
-      },
-      {
-        title: `Bulk-unsubscribe with a cleanup tool`,
-        content: `For a faster cleanup, visit unroll.me from your computer's web browser. Connect your Gmail or Outlook account and the service will scan your inbox and display all your subscriptions in one organized list. You can unsubscribe from multiple senders with a single click per sender, which is much faster than doing them one at a time.`,
-      },
-      {
-        title: `Delete old promotional emails in bulk`,
-        content: `In Gmail, type "category:promotions" in the search bar to see all promotional emails at once. Click "Select all conversations that match this search" and then delete the entire batch. This clears out months or years of accumulated newsletter clutter in under a minute.`,
-      },
-    ],
-  },
-  {
+    {
     slug: `yahoo-mail-guide`,
     title: `Yahoo Mail Tips: Organize Your Inbox and Switch to Gmail If You're Ready`,
     excerpt: `Get the most out of Yahoo Mail with these organization tips — and learn how to move to Gmail if you want a fresh start with a more modern email service.`,

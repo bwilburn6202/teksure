@@ -269,43 +269,7 @@ export const guidesBatch13: Guide[] = [
     ],
   },
 
-  {
-    slug: 'how-to-take-better-phone-photos',
-    title: 'How to Take Better Photos With Your Phone',
-    excerpt: 'Your phone camera is more powerful than most people realize — a few easy adjustments can make your photos look dramatically better.',
-    category: 'tips-tricks',
-    tags: ['photos', 'camera', 'iphone', 'android', 'photography', 'tips'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Modern phone cameras can take photos that rival dedicated cameras — but a few common mistakes keep most people from getting the best results. The good news is that the improvements are simple and free, using features that are already built into your phone.",
-    steps: [
-      {
-        title: 'Get the lighting right',
-        content: `Lighting is the single biggest factor in photo quality. The rule: light should be in front of your subject, not behind them. If you're taking a portrait of someone outdoors, position them so the sun (or a bright sky) is in front of their face, not behind their head. Indoors, seat the person near a window and face them toward the light. Avoid using your phone's flash for close-up portraits — it creates harsh, unflattering light.`,
-        tip: 'Overcast days with soft clouds are actually ideal for outdoor portraits — the clouds diffuse the light and eliminate harsh shadows.',
-      },
-      {
-        title: 'Tap the screen to focus on what matters',
-        content: `Your phone camera automatically tries to focus, but it doesn't always pick what's most important in your photo. Tap directly on the face, flower, or object you want sharp. A yellow square (iPhone) or circle (Android) will appear to confirm where the camera is focusing. The camera also adjusts brightness based on where you tap — tap a dark area to brighten the photo, or a bright area to darken it.`,
-      },
-      {
-        title: 'Hold the phone steady with two hands',
-        content: 'Blurry photos are almost always caused by movement when you tap the shutter button. Hold your phone with both hands and brace your elbows against your body. Take a breath and exhale slowly as you tap the shutter. You can also use the volume button on the side of your iPhone as a shutter button — many people find this less wobbly than tapping the screen.',
-        tip: 'On iPhone, use the "burst mode" for moving subjects like children or pets — press and hold the shutter button to take 10 photos per second, then pick the sharpest one.',
-      },
-      {
-        title: 'Use portrait mode for people photos',
-        content: `Most modern phones have a "Portrait" mode that blurs the background and makes the person stand out. To use it on iPhone: open Camera and swipe to "Portrait." On Android (Samsung, Pixel): look for "Portrait" in the camera modes at the bottom. Stand 3-5 feet from the subject, make sure they're in good light, and take the photo. The result looks like a professional headshot.`,
-      },
-      {
-        title: 'Edit your photos with the built-in tools',
-        content: `After taking a photo, tap "Edit" in the Photos app (iPhone) or the pencil icon (Android) to improve it without any extra apps. "Brightness" makes dark photos lighter. "Contrast" makes colors pop. "Warmth" can remove the blue cast from indoor lighting. "Sharpness" can recover some blurry detail. The "Auto" button applies all adjustments automatically — tap it first and you'll often be happy with the result.`,
-      },
-    ],
-  },
-
+  
   {
     slug: 'how-to-share-photos-text-email',
     title: 'How to Share Photos With Family by Text or Email',

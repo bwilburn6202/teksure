@@ -743,42 +743,7 @@ export const guidesBatch21: Guide[] = [
     ],
   },
 
-  {
-    slug: 'make-photo-collage-phone',
-    title: 'How to Make a Photo Collage on Your Phone',
-    excerpt: 'A photo collage puts multiple photos together in one image — perfect for sharing memories, creating a greeting card, or printing for display.',
-    category: 'tips-tricks',
-    tags: ['photo collage', 'collage app', 'iphone photos', 'android photos', 'photo editing'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `A photo collage combines multiple photos into one image — a mosaic of memories. You can make one for a birthday, anniversary, holiday, or just to share a collection of favorite photos. Collages are popular for framing, printing, sharing on social media, or texting to family.\n\nBoth iPhone and Android have some built-in tools for making simple collages, and free apps make more elaborate ones quick and easy. Google Photos has a built-in collage feature. On iPhone, you can use the Shortcuts app or Google Photos. Third-party apps like PicCollage (free) and Canva (free tier) offer the most design options.\n\nThis guide covers the fastest method using Google Photos (available on both iPhone and Android) and mentions a simple app option for more customization.`,
-    steps: [
-      {
-        title: 'Make a collage with Google Photos (iPhone or Android)',
-        content: 'Open the Google Photos app. Tap "Library" at the bottom, then "Utilities" at the top. Tap "Collage." Select 2–9 photos by tapping each one (photos are grouped by date to help you find them). Tap "Create" and Google Photos automatically arranges them into a neat grid collage.',
-        tip: 'Quick Tip: Google Photos makes the collage instantly and saves it to your library. You can then share or download it from there.',
-      },
-      {
-        title: 'Adjust the layout if needed',
-        content: 'Once the collage is created in Google Photos, you can tap individual photos in the collage to swap them, zoom in, or adjust positioning. The layout adjusts to fit the photos you chose.',
-      },
-      {
-        title: 'Try PicCollage for more control (free app)',
-        content: `If you want more layout options, download PicCollage from the App Store or Play Store — it's free. Open it, tap "+" to create a new collage, choose your photos, then pick from dozens of layout templates. You can also add text, stickers, and backgrounds. When done, tap "Share" to save it to your photo library.`,
-      },
-      {
-        title: 'Use Canva for greeting card-style collages (free)',
-        content: 'Canva (canva.com on a browser, or the free Canva app) has beautiful collage templates. Search "photo collage" in Canva, choose a template you like, tap the placeholder images to replace them with your photos, and customize text. Download as a JPEG or PNG image when done.',
-      },
-      {
-        title: 'Share or print your collage',
-        content: 'Once your collage is saved to your photo library, you can: text it to family members, share it on Facebook or email, or print it at Walgreens, CVS, or Walmart just like any photo. A 4x6 print of a collage looks great on a refrigerator or in a frame.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'amazon-returns-guide',
     title: 'How to Return Something You Bought on Amazon',

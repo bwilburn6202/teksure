@@ -275,47 +275,7 @@ export const guidesBatch16: Guide[] = [
     ],
   },
 
-  {
-    slug: 'secure-home-wifi-network',
-    title: 'How to Make Your Home Wi-Fi Network More Secure',
-    excerpt:
-      'A few simple changes to your router settings can stop strangers from using your Wi-Fi and help protect your devices from hackers.',
-    category: 'internet-connectivity',
-    tags: ['wifi security', 'router', 'network password', 'home network', 'cybersecurity'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Intermediate',
-    body: `Your home Wi-Fi network connects every device in your house to the internet — your phone, computer, smart TV, tablets, and even smart home devices. If your network is not properly secured, neighbors or strangers could connect to it and use your internet without your permission. More seriously, an unsecured network makes it easier for cybercriminals to intercept information you send and receive.\n\nThe good news is that securing your home network is not complicated. The most important steps are: changing the default router password, using a strong Wi-Fi password, and making sure your router uses modern security. Most people can complete all of these in about 15 minutes.\n\nYou do not need to be technical to follow these steps. The most important thing is knowing where to find your router's settings, which this guide explains.`,
-    steps: [
-      {
-        title: 'Access your router settings',
-        content:
-          "Your router's settings are accessed through a web browser. Open any web browser (Chrome, Safari, Edge) and type your router's IP address into the address bar. For most home routers, this is 192.168.1.1 or 192.168.0.1. Press Enter. A login page appears. The default username and password are often printed on a sticker on the back or bottom of your router — common defaults are admin/admin or admin/password. Look for a label that says \"Admin Password\" or \"Router Password.\"",
-        tip: 'Quick Tip: If neither 192.168.1.1 nor 192.168.0.1 works, check the sticker on your router for the web address to use.',
-      },
-      {
-        title: 'Change the default router admin password',
-        content:
-          "Once logged in, look for a section called \"Administration,\" \"System,\" or \"Router Settings.\" Find \"Admin Password\" or \"Router Login Password\" and change it from the default to something strong and unique (mix of letters, numbers, and symbols). Write it down and keep it somewhere safe — you rarely need this password but it is important to have it when you do. This prevents anyone else who connects to your network from being able to change your router's settings.",
-        warning:
-          'This admin password is different from your Wi-Fi password. Changing one does not change the other.',
-      },
-      {
-        title: 'Set a strong Wi-Fi password and use WPA3 or WPA2 security',
-        content:
-          "In your router settings, find \"Wireless Settings\" or \"Wi-Fi Settings.\" Look for the \"Security Mode\" or \"Encryption\" setting. Choose WPA3 if available; if not, WPA2-AES. Avoid WEP and WPA (older, insecure options). Change your Wi-Fi password to something at least 12 characters long — a phrase with spaces works well (example: PurpleSunset2026!). After saving, all your devices will need to re-enter the new password once.",
-        tip: `Quick Tip: After changing your Wi-Fi password, go to each device and reconnect with the new password. Start with the device you're most likely to use, then work through the others.`,
-      },
-      {
-        title: 'Create a guest network for visitors',
-        content:
-          "Most modern routers let you create a separate \"Guest Network\" — a second Wi-Fi network for visitors. When neighbors or guests ask for your Wi-Fi, give them the guest network password instead of your main one. This keeps your main network (and all your personal devices) separate from visitor devices. Look for \"Guest Network\" or \"Guest Wi-Fi\" in your router settings. Give it a different name and password than your main network.",
-        tip: "Quick Tip: A guest network is also great for smart home devices (smart TVs, bulbs, thermostats) which often have weaker security than phones and computers. Putting them on the guest network separates them from your sensitive devices.",
-      },
-    ],
-  },
-
+  
   {
     slug: 'cast-youtube-to-tv',
     title: 'How to Watch YouTube on Your TV From Your Phone',

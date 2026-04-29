@@ -435,35 +435,7 @@ File as soon as possible. Most states have a one-week unpaid waiting period, and
     ],
   },
 
-  {
-    slug: 'find-property-tax-info-online',
-    title: 'How to Find Your Property Tax Information Online',
-    excerpt: 'Look up your property tax assessment, payment history, and due dates through your county assessor or treasurer website.',
-    category: 'government-civic' as any,
-    tags: ['property tax', 'real estate', 'county', 'government', 'homeowner'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Property taxes are collected by your local government to fund schools, roads, and emergency services. You can look up your tax information online — including how much you owe, due dates, assessment value, and payment history.
-
-Property tax information is managed at the county level. Search "[your county name] property tax" or "[your county name] assessor" in Google and use the official .gov website.
-
-Most county websites let you search by property address, parcel number, or your name. Once you find your property, you can view your assessed value, tax rate, current amount due, past-due amounts, payment history, and information about exemptions.
-
-Many counties offer a homestead exemption that reduces your tax if the home is your primary residence. Check your county assessor's website — it could save you hundreds per year. You typically only need to apply once.
-
-If you believe your property is over-assessed, you can appeal. Look for an "Appeal" or "Protest" section on your assessor's website. Appeals are usually due within 30 to 90 days of your assessment notice.`,
-    steps: [
-      { title: `Search for your county's tax website`, content: 'Google "[your county name] property tax" or "[your county name] assessor." Click the official .gov website.' },
-      { title: 'Search for your property', content: 'Enter your home address, parcel number, or name to find your property record.' },
-      { title: 'Review your assessed value', content: 'Check the value the county assigned to your property — this is used to calculate your tax and may differ from market value.' },
-      { title: 'Check balance and due dates', content: 'Review how much you owe and when payments are due. Note any past-due amounts or penalties.' },
-      { title: 'Look into exemptions', content: 'Check if you qualify for homestead, senior, veteran, or disability exemptions that can lower your bill.' },
-      { title: 'Appeal if assessment is too high', content: `Look for the "Appeal" section on your assessor's website. Note the deadline — typically 30 to 90 days from your assessment notice.` },
-    ],
-  },
-
+  
   {
     slug: 'use-recreation-gov-national-parks',
     title: 'How to Use Recreation.gov for National Park Reservations',
@@ -634,34 +606,7 @@ Be cautious with free trials requiring a credit card — companies often start c
     ],
   },
 
-  {
-    slug: 'check-credit-score-free',
-    title: 'How to Check Your Credit Score for Free',
-    excerpt: 'Check your credit score without paying — your bank, credit card company, or free apps show your score at no cost.',
-    category: 'financial-tech' as any,
-    tags: ['credit score', 'credit', 'finances', 'banking', 'free'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Your credit score (300-850) represents your creditworthiness. A higher score means better loan rates, easier apartment approvals, and sometimes lower insurance premiums. You can check it for free — no need to pay anyone.
-
-Your bank or credit card company likely shows it for free. Chase, Bank of America, Capital One, Discover, and American Express all offer this. Log in and look for "Credit Score" or "FICO Score" on your dashboard.
-
-Credit Karma is a free app showing TransUnion and Equifax scores, updated weekly, plus factors affecting your score. It makes money by recommending products — you do not have to buy anything. Experian offers a free FICO Score at experian.com with free monitoring.
-
-Your score may vary 20-40 points between sources depending on the scoring model (FICO vs. VantageScore) and bureau. What matters is the range: 670+ is "Good," 740+ is "Very Good," 800+ is "Exceptional."
-
-Checking your own score is a "soft inquiry" and does NOT lower it. Check as often as you want. The biggest factor in your score is payment history — paying on time accounts for 35%. Setting up auto-pay for at least minimum payments is one of the most effective ways to build and maintain a good score.`,
-    steps: [
-      { title: 'Check your bank or credit card app', content: 'Log in and look for "Credit Score" or "FICO Score" on your dashboard. Most major issuers include this for free.' },
-      { title: 'Download Credit Karma', content: 'Get the free app for TransUnion and Equifax scores updated weekly, plus factors affecting your score.' },
-      { title: 'Get your Experian score', content: 'Create a free account at experian.com for your Experian FICO Score and free monitoring alerts.' },
-      { title: 'Understand the ranges', content: 'Below 580 is "Poor," 580-669 "Fair," 670-739 "Good," 740-799 "Very Good," 800+ "Exceptional."' },
-      { title: 'Know what affects your score', content: 'Payment history (35%), amounts owed (30%), credit history length (15%), new inquiries (10%), and credit types (10%). Paying on time matters most.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-fraud-alerts-bank',
     title: 'How to Set Up Fraud Alerts on Your Bank Account',
@@ -828,35 +773,7 @@ Double-check every digit before submitting. A wrong number can send money to som
     ],
   },
 
-  {
-    slug: `dispute-credit-card-charge-2`,
-    title: 'How to Dispute a Charge on Your Credit Card',
-    excerpt: 'Found a charge you do not recognize? Learn how to dispute it with your credit card company and get your money back.',
-    category: 'financial-tech' as any,
-    tags: ['credit card', 'dispute', 'fraud', 'billing', 'finances'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `If you find an unauthorized charge, wrong amount, or charge for something you did not receive on your credit card, you have the right to dispute it under the Fair Credit Billing Act. Your maximum liability for unauthorized charges is $50, and most issuers waive even that.
-
-Reasons to dispute: unauthorized transactions, billing errors (wrong amount, double charges, returned item charges), goods not received, or goods significantly different from advertised.
-
-Try contacting the merchant first for billing errors or undelivered goods — many issues resolve with a phone call. Keep records of communication. If the merchant does not resolve it, or the charge is unauthorized, contact your credit card company through the app, website, or phone number on your card.
-
-When filing: explain specifically why you are disputing ("I did not authorize this transaction" or "I was charged $75.99 but the correct amount was $45.99"). Provide supporting documents — receipts, confirmations, emails, photos.
-
-Your card company must acknowledge within 30 days and resolve within 90 days. During investigation, you do not pay the disputed amount and it cannot be reported as overdue. You must dispute within 60 days of the statement date, so review statements regularly.`,
-    steps: [
-      { title: 'Identify the suspicious charge', content: `Review your statement in your card company's app or website. Note the date, amount, and merchant name.` },
-      { title: 'Try contacting the merchant', content: 'For billing errors or undelivered goods, call or email the merchant first. Keep records of your communication.' },
-      { title: 'File a dispute with your card company', content: 'In the app or website, find the charge and tap "Dispute" or "Report a problem." Or call the number on your card.' },
-      { title: 'Provide documentation', content: 'Upload evidence: receipts, order confirmations, emails, tracking numbers, or photos of damaged goods.' },
-      { title: 'Wait for investigation', content: 'Your card company acknowledges within 30 days and resolves within 90 days. You do not pay the disputed amount during this time.' },
-      { title: 'Review the outcome', content: 'If the charge is removed, verify on your statement. If it stands, you can request the evidence used in the decision.' },
-    ],
-  },
-
+  
   {
     slug: 'understand-credit-card-statement',
     title: 'How to Understand Your Credit Card Statement',
@@ -1826,36 +1743,7 @@ To send multiple photos at once, select several before sending. Most messaging a
     ],
   },
 
-  {
-    slug: 'use-google-meet-video-calls',
-    title: 'How to Use Google Meet for Video Calls',
-    excerpt: 'Start or join a free Google Meet video call — right from your Gmail, phone, or web browser.',
-    category: 'communication' as any,
-    tags: ['Google Meet', 'video call', 'Google', 'communication', 'meetings'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Google Meet is Google's free video calling service. You can use it from your phone, tablet, or computer. Anyone with a Google account (Gmail) can start a meeting, and participants can join from a web browser without installing anything. Free calls allow up to 100 participants for up to 60 minutes.
-
-To start a meeting on your phone: download the Google Meet app, sign in with your Google account, and tap "New Meeting." You get a meeting link to share via text, email, or any messaging app.
-
-To start from a computer: go to meet.google.com, sign in with your Google account, and click "New Meeting." You can also start a meeting directly from Gmail — look for the "Meet" section in the sidebar.
-
-To join a meeting: click the meeting link someone shared with you, or go to meet.google.com and enter the meeting code. On your phone, tapping the link automatically opens the Google Meet app.
-
-During a call, use the bottom toolbar to mute/unmute your microphone, turn your camera on/off, share your screen, access the chat, and leave the meeting. Tap the three dots for more options like changing your background or adjusting layout.
-
-Google Meet is a great option for families where some members use iPhone and others use Android — it works on every platform through a web browser.`,
-    steps: [
-      { title: 'Open Google Meet', content: 'On phone: download the Google Meet app. On computer: go to meet.google.com. Sign in with your Google account.' },
-      { title: 'Start a new meeting', content: 'Tap "New Meeting" and share the link with participants via text or email.' },
-      { title: 'Join a meeting', content: 'Click the meeting link shared with you, or go to meet.google.com and enter the meeting code.' },
-      { title: 'Use call controls', content: 'The bottom toolbar has mute, camera, screen share, chat, and leave buttons.' },
-      { title: 'Share with anyone', content: 'Google Meet works on any device with a web browser — great for mixed iPhone/Android families.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-microsoft-teams',
     title: 'How to Set Up Microsoft Teams',
@@ -2288,66 +2176,8 @@ Check for software updates: Settings → System → Software Update. Installing 
     ],
   },
 
-  {
-    slug: 'switch-iphone-to-android',
-    title: 'How to Switch from iPhone to Android',
-    excerpt: 'Move your contacts, photos, messages, and apps from iPhone to a new Android phone — without losing anything.',
-    category: 'life-transitions' as any,
-    tags: ['switch', 'iPhone', 'Android', 'data transfer', 'migration'],
-    readTime: '8 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Switching from iPhone to Android is a bigger change than upgrading within the same platform, but modern transfer tools make it much smoother than it used to be. Here is what transfers and what you need to handle manually.
-
-What transfers automatically: contacts, photos and videos, calendar events, and free apps that exist on both platforms. What requires manual work: paid apps (you may need to re-purchase), iMessage threads (important to deregister — see below), app-specific data (game progress, etc.), and Apple-exclusive features (FaceTime, iMessage, AirDrop).
-
-Before switching, make sure everything is backed up. Go to iPhone Settings → your name → iCloud → iCloud Backup → Back Up Now. Also make sure your photos are backed up — download Google Photos on your iPhone and let it upload your full photo library before switching.
-
-The most critical step: turn off iMessage before switching. If you do not do this, text messages from iPhone users will continue going to iMessage (which your Android phone cannot receive) instead of SMS. Go to Settings → Messages → toggle off iMessage. Also go to Settings → FaceTime → toggle it off.
-
-During Android setup, use Google's "Switch to Android" tool or Samsung's "Smart Switch" app. These tools transfer contacts, photos, videos, calendar events, and more from your iPhone. Follow the on-screen instructions — the process usually takes 15-30 minutes depending on how much data you have.
-
-After switching, download the Android versions of your apps from the Google Play Store and sign in to each one. Set up your email, bank apps, and messaging apps on the new phone.`,
-    steps: [
-      { title: 'Back up your iPhone', content: 'Settings → your name → iCloud → iCloud Backup → Back Up Now. Also download Google Photos on iPhone and back up all photos.' },
-      { title: 'Turn off iMessage and FaceTime', content: 'This is critical. Settings → Messages → toggle off iMessage. Settings → FaceTime → toggle off. Without this step, you will miss text messages.' },
-      { title: 'Use the transfer tool during setup', content: 'During Android setup, use "Switch to Android" or Samsung Smart Switch to transfer contacts, photos, calendar, and more from your iPhone.' },
-      { title: 'Download your apps', content: 'Open Google Play Store and download the Android versions of your apps. Sign in to each with your existing accounts.' },
-      { title: 'Verify everything transferred', content: 'Check that contacts, photos, and calendar events are on your new phone. If anything is missing, it may still be in your iCloud backup.' },
-    ],
-  },
-
-  {
-    slug: 'switch-android-to-iphone',
-    title: 'How to Switch from Android to iPhone',
-    excerpt: `Move your contacts, photos, apps, and data from Android to a new iPhone using Apple's Move to iOS tool.`,
-    category: 'life-transitions' as any,
-    tags: ['switch', 'Android', 'iPhone', 'data transfer', 'migration'],
-    readTime: '8 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `Switching from Android to iPhone is straightforward with Apple's "Move to iOS" app, which transfers your contacts, message history, photos, videos, web bookmarks, mail accounts, and calendars. Free apps that exist on both platforms are also suggested for download.
-
-Before switching, make sure your Android phone is connected to WiFi and has enough battery (or is plugged in). Download the "Move to iOS" app from the Google Play Store on your Android phone. Do not start this process after you have already set up your iPhone — you need to do it during the initial iPhone setup.
-
-Turn on your new iPhone and begin setup. When you reach the "Apps & Data" screen, select "Move Data from Android." Your iPhone will display a code. Open the Move to iOS app on your Android phone and enter this code. The two devices will connect and you select what to transfer.
-
-The transfer can take anywhere from a few minutes to over an hour depending on how much data you have. Do not use either phone during the transfer. When complete, finish setting up your iPhone.
-
-After setup, open the App Store and download the iPhone versions of your apps. Sign in to each with your existing accounts. Your contacts and photos should already be on the new iPhone.
-
-Note: some Android-specific features do not exist on iPhone, and vice versa. You gain iMessage, FaceTime, AirDrop, and tight integration with other Apple devices. You may need to adjust to differences in how notifications, file management, and customization work.`,
-    steps: [
-      { title: 'Download Move to iOS on Android', content: 'On your Android phone, download the "Move to iOS" app from the Google Play Store. Make sure both phones are on WiFi and charged.' },
-      { title: 'Start iPhone setup', content: 'Turn on your new iPhone and follow the setup steps. At "Apps & Data," select "Move Data from Android."' },
-      { title: 'Enter the code', content: 'Your iPhone displays a code. Enter it in the Move to iOS app on your Android phone. The devices connect.' },
-      { title: 'Select what to transfer', content: 'Choose contacts, messages, photos, videos, bookmarks, and other data to transfer. Wait for the process to complete.' },
-      { title: 'Download your apps', content: 'After setup, open the App Store and download iPhone versions of your apps. Sign in to each with existing accounts.' },
-    ],
-  },
-
+  
+  
   {
     slug: 'transfer-data-new-computer',
     title: 'How to Transfer Your Data to a New Computer',
@@ -3705,41 +3535,7 @@ To share a file with someone, right-click it (or tap the three dots on your phon
     ],
   },
 
-  {
-    slug: 'use-microsoft-word-online-free',
-    title: 'How to Use Microsoft Word Online for Free',
-    excerpt: 'Create and edit Word documents for free using Microsoft Word Online — no software purchase or installation needed.',
-    category: 'app-guides' as any,
-    tags: ['Microsoft Word', 'Word Online', 'documents', 'free', 'Office'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `You do not need to buy Microsoft Office to use Microsoft Word. Microsoft offers a free online version called Word Online that runs in your web browser — no download or installation required. It includes most of the features everyday users need for writing letters, creating resumes, formatting documents, and more.
-
-To use Word Online, you need a free Microsoft account. If you have a Hotmail, Outlook, or Xbox account, you already have one. If not, go to account.microsoft.com and create one with your email address.
-
-Once you have an account, go to office.com (or microsoft365.com) and sign in. You will see icons for Word, Excel, PowerPoint, and other apps. Click the Word icon (the blue W) to get started. You can create a new blank document or choose from templates like resumes, cover letters, flyers, and more.
-
-The Word Online interface looks similar to the desktop version. The toolbar at the top has tabs for Home (fonts, formatting, alignment), Insert (tables, images, links), and more. The most commonly used formatting tools — bold, italic, underline, font size, text color, and alignment — are all on the Home tab.
-
-Your work saves automatically to OneDrive (Microsoft's cloud storage). You never need to press "Save" — it happens continuously as you type. You can access your document later from any computer or phone by going to office.com and signing in.
-
-To download your document as a file, click File then Save As then Download a Copy. You can download it as a Word document (.docx) or PDF. To print, use File then Print or press Ctrl + P (Command + P on Mac).
-
-Word Online also supports collaboration. Click the "Share" button in the top-right corner to invite others to view or edit the document. You can work on the same document at the same time and see each other's changes in real time.
-
-The main limitations of Word Online compared to the paid desktop version: fewer formatting options, no advanced mail merge, and no offline access. But for writing documents, formatting text, creating tables, and basic tasks, Word Online has everything you need.`,
-    steps: [
-      { title: 'Create a Microsoft account', content: 'Go to account.microsoft.com and sign up for a free account. If you have an Outlook, Hotmail, or Xbox account, use that instead.' },
-      { title: 'Go to office.com and sign in', content: 'Open your browser and go to office.com (or microsoft365.com). Sign in with your Microsoft account email and password.' },
-      { title: 'Open Word and create a document', content: 'Click the blue Word icon. Choose "Blank document" to start from scratch, or pick a template for resumes, letters, and other common formats.' },
-      { title: 'Format your document', content: 'Use the Home tab toolbar to change fonts, make text bold or italic, adjust alignment, add bullet lists, and change text color.' },
-      { title: 'Save and download', content: 'Your work saves automatically to OneDrive. To download a copy: File then Save As then Download a Copy. Choose .docx (Word format) or .pdf.' },
-      { title: 'Share with others', content: 'Click "Share" in the top-right corner. Enter email addresses to invite collaborators. Choose whether they can view only or edit the document.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-use-zoom',
     title: 'How to Set Up and Use Zoom',
@@ -5050,26 +4846,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-microsoft-word-online',
-    title: 'How to Use Microsoft Word Online for Free',
-    excerpt: 'Write, edit, and share documents using the free web version of Microsoft Word — no software to install.',
-    category: 'how-to' as any,
-    tags: ['microsoft word', 'word online', 'office 365', 'documents', 'free'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Microsoft Word Online is a free version of the popular Word program that runs entirely in your web browser. You do not need to buy Office or install anything — just a free Microsoft account. It is great for writing letters, resumes, or any document you want to save and access from any device.`,
-    steps: [
-      { title: 'Create a free Microsoft account', content: 'Go to account.microsoft.com and click "Create a Microsoft account." Enter your email address (or create a new Outlook address) and follow the prompts to set a password and verify your identity.' },
-      { title: 'Go to Word Online', content: 'Go to office.com and sign in with your Microsoft account. You will see a list of free Office apps. Click on "Word" to open the online version.' },
-      { title: 'Create or open a document', content: 'Click "New blank document" to start writing, or click "Upload" to open a document from your computer. Your document will save automatically to OneDrive as you type.' },
-      { title: 'Use the formatting toolbar', content: 'The toolbar at the top lets you change font, size, bold, italic, and paragraph alignment — the same controls as the desktop version. Click any text and then use the toolbar to format it.' },
-      { title: 'Share or download your document', content: 'Click "Share" in the top right corner to send the document to someone else by email or link. Click "File" then "Save As" then "Download a Copy" to save a .docx file to your computer.' },
-    ],
-  },
-
+  
   {
     slug: 'use-google-docs-writing',
     title: 'How to Use Google Docs for Writing',
@@ -5314,26 +5091,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'spot-fake-online-reviews',
-    title: 'How to Spot Fake Online Reviews',
-    excerpt: 'Learn the red flags of fake reviews on Amazon, Google, and other sites so you can make smarter buying decisions.',
-    category: 'safety-guides' as any,
-    tags: ['fake reviews', 'online shopping', 'scams', 'consumer protection', 'amazon'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Fake reviews are a growing problem on Amazon, Google, Yelp, and other platforms. Businesses sometimes pay for fake 5-star reviews to boost their products, while competitors may leave fake negative reviews. Learning to spot the warning signs protects you from buying poor-quality products or being misled by dishonest sellers.`,
-    steps: [
-      { title: 'Check the rating distribution', content: 'Look at the star breakdown on any product or business page. A trustworthy product usually has a mix of ratings — some 5s, some 4s, some 3s, and a few 1s. If almost every review is exactly 5 stars with very few others, that is a red flag.' },
-      { title: 'Look for verified purchase badges', content: `On Amazon, look for the "Verified Purchase" label under a reviewer's name. This means Amazon confirmed the reviewer actually bought the item. Reviews without this label should be given less weight.` },
-      { title: 'Read the 1 and 2 star reviews', content: 'Low-rated reviews are harder to fake and are often the most honest. Look for patterns — do multiple reviewers mention the same problem? That is likely a real issue with the product.' },
-      { title: 'Check reviewer profiles', content: `On Amazon, click a reviewer's name to see their review history. Be suspicious if an account has only reviewed one brand of products, left all 5-star reviews, or wrote all reviews on the same day.` },
-      { title: 'Use a fake review checker', content: 'Visit fakespot.com or reviewmeta.com and paste in the URL of an Amazon product page. These free tools analyze the reviews and give you an adjusted rating that filters out suspected fakes.' },
-    ],
-  },
-
+  
   {
     slug: 'use-coupon-cashback-apps',
     title: 'How to Use Coupon and Cashback Apps — Honey and Rakuten',
@@ -5418,26 +5176,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-digital-boarding-pass',
-    title: 'How to Use a Digital Boarding Pass on Your Phone',
-    excerpt: `Add your airline boarding pass to your phone's wallet app and breeze through the airport without printed paper.`,
-    category: 'phone-guides' as any,
-    tags: ['boarding pass', 'digital wallet', 'airport', 'travel', 'airline'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `A digital boarding pass on your phone is accepted at nearly every US airport and most international ones. It works at security checkpoints and at the gate, and it eliminates the need to find a printer before a trip. Adding it to your phone's wallet app keeps it readily accessible even if your phone loses internet connection.`,
-    steps: [
-      { title: 'Check in online 24 hours before your flight', content: `Go to the airline's website or app the day before your flight. Log in with your booking reference number and last name. Tap "Check in" and follow the prompts to confirm your seat.` },
-      { title: 'Choose the mobile boarding pass option', content: 'When check-in is complete, the site or app will ask how you want your boarding pass. Choose "Email" or "Add to Apple Wallet" or "Add to Google Wallet." Pick the wallet option if you can — it is the most convenient.' },
-      { title: `Add the pass to your phone's wallet`, content: 'On iPhone, tap "Add to Apple Wallet" and then tap "Add." On Android, tap "Add to Google Wallet." The boarding pass will appear in your Wallet app with your flight details, seat number, and barcode.' },
-      { title: 'Access the pass at the airport', content: 'Open the Wallet app (iPhone) or Google Wallet (Android) before you reach the TSA checkpoint. Show the barcode to the scanner at security and again at the gate. The pass should work even in Airplane Mode.' },
-      { title: 'Keep your phone charged', content: 'Make sure your phone has at least 50% battery before heading to the airport. Bring a charging cable or portable battery pack just in case. As a backup, screenshot your boarding pass so you have it even if the app has trouble loading.' },
-    ],
-  },
-
+  
   {
     slug: 'use-phone-abroad',
     title: 'How to Use Your Phone Abroad Without Huge Bills',
@@ -5770,26 +5509,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'set-up-medication-reminders',
-    title: 'How to Set Up Medication Reminders on Your Phone',
-    excerpt: `Never miss a dose by setting up medication reminders using your phone's built-in tools or a free app.`,
-    category: 'health-tech' as any,
-    tags: ['medication reminders', 'pills', 'health', 'alarms', 'phone reminders'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Missing doses of important medications can seriously impact your health. Your smartphone can reliably remind you to take your medications at the right time every day — no pill organizer required. You can use your phone's built-in alarm or a dedicated medication reminder app for more features like tracking whether you took a dose.`,
-    steps: [
-      { title: 'Use the built-in Clock app for simple reminders', content: 'Open the Clock app on your phone and tap "Alarm." Tap the "+" to add a new alarm. Set the time, choose "Repeat" to make it daily, and give it a label like "Morning Medication." Tap "Save." This works on both iPhone and Android.' },
-      { title: 'Use Siri or Google Assistant to set a reminder', content: 'Say "Hey Siri, remind me to take my blood pressure pill every day at 9 AM" or "Hey Google, remind me to take my medication every morning at 8 AM." Your voice assistant will create the recurring reminder automatically.' },
-      { title: 'Download a dedicated medication app', content: 'For more features, download a medication management app. Medisafe (free) and MyTherapy (free) are highly rated apps that let you log each medication with its dose and schedule, remind you when doses are due, and track whether you took each one.' },
-      { title: 'Set up Medisafe or MyTherapy', content: 'Open the app and tap "Add Medication." Enter the medication name, dosage, and the time(s) you need to take it. The app will send you a push notification at the scheduled time. Tap the notification to confirm you took the dose.' },
-      { title: 'Ask a family member to join as a caregiver', content: `Medisafe and MyTherapy let a family member or caregiver receive alerts if you miss a dose. In the app settings, look for "Add Care Partner" or "Caregiver Network" and enter the family member's email. They will get a notification if you miss a dose, providing an extra safety net.` },
-    ],
-  },
-
+  
   // ═══════════════════════════════════════════
   // COMMUNICATION (6 guides)
   // ═══════════════════════════════════════════
@@ -5834,26 +5554,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-google-meet-free',
-    title: 'How to Use Google Meet for Free Video Calls',
-    excerpt: 'Start a free video call with Google Meet directly from your browser — no app download required.',
-    category: 'communication' as any,
-    tags: ['google meet', 'video calls', 'free video call', 'google', 'meetings'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Google Meet is a free video calling service from Google that works directly in any web browser — no software to install. It is built into Gmail, so if you have a Gmail account, you already have access. Free calls support up to 100 participants and are unlimited in length for one-on-one calls.`,
-    steps: [
-      { title: 'Go to meet.google.com', content: 'Open any web browser and go to meet.google.com. Sign in with your Gmail account. If you do not have a Gmail account, you can create one for free at gmail.com.' },
-      { title: 'Start a new meeting', content: 'Click "New meeting" and then "Start an instant meeting" to begin a video call right now. Your camera and microphone will activate — allow access when your browser asks.' },
-      { title: 'Invite others to join', content: 'Once in the meeting, click the person icon or "Add others" button. You can copy the meeting link and send it by email, text, or any messaging app. Anyone with the link can join from their browser without needing a Google account.' },
-      { title: 'Join a meeting you were invited to', content: 'If someone sends you a Google Meet link (it looks like meet.google.com/abc-defg-hij), click the link. If you are signed into your Google account, you can join immediately. If not, you can join as a guest by entering your name.' },
-      { title: 'Use Meet from Gmail', content: 'Google Meet is also accessible directly from Gmail. In the left sidebar of Gmail, look for "Meet" with a video camera icon. Click "New meeting" or "Join a meeting" to start or join a call without leaving your email.' },
-    ],
-  },
-
+  
   {
     slug: 'share-photos-family-albums',
     title: 'How to Share Photos with Family Using Shared Albums',

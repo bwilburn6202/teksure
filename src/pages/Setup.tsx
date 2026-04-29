@@ -98,7 +98,7 @@ function getRecommendations(answers: SetupAnswers): Recommendation[] {
       title: 'Backing Up Your Photos',
       icon: ImageIcon,
       reason: 'Never lose a precious memory again.',
-      guideSlug: 'setup-windows-backup',
+      guideSlug: 'set-up-windows-backup',
       category: 'Essential Skills',
     });
   }

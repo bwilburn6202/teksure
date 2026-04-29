@@ -5,44 +5,7 @@
 import type { Guide } from './guides';
 
 export const guidesBatch15: Guide[] = [
-  {
-    slug: 'windows-defender-virus-scan-guide',
-    title: 'How to Run a Virus Scan With Windows Defender',
-    excerpt: "Windows Defender is a free antivirus program built into every Windows computer — here's how to run a scan and check your computer is protected.",
-    category: 'windows-guides',
-    tags: ['windows defender', 'antivirus', 'virus scan', 'security', 'windows 11', 'malware'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Windows Defender — now called Windows Security — is a free, built-in antivirus and security program that comes with every Windows computer. You do not need to buy a separate antivirus program; Windows Defender provides solid protection on its own. Here's how to check that it's running and do a virus scan.",
-    steps: [
-      {
-        title: 'Open Windows Security',
-        content: 'Click the Start button (the Windows logo at the bottom of the screen) and type "Windows Security." Open the Windows Security app. The main screen shows a dashboard with colored shields for different protection areas. Green checkmarks mean everything is working. A yellow or red warning means something needs attention.',
-        tip: 'You can also find Windows Security by clicking the small shield icon in the system tray — the cluster of small icons at the bottom right of your screen near the clock.',
-      },
-      {
-        title: 'Run a Quick Scan',
-        content: `Click "Virus & threat protection." Under "Current threats," click "Quick scan." Windows Defender scans the areas of your computer most likely to have viruses. A quick scan usually takes 2-5 minutes. When it finishes, you'll see either "No current threats" (your computer is clean) or a list of any items found. Quick scans are good for routine checks.`,
-        tip: `Run a Quick Scan about once a month even if you haven't noticed any problems. Windows Defender also scans files automatically in real time as you download and use them.`,
-      },
-      {
-        title: 'Run a Full Scan for peace of mind',
-        content: 'For a thorough check — especially if your computer has been behaving strangely — click "Virus & threat protection" → "Scan options" → check "Full scan" → click "Scan now." A full scan checks every file on your computer and typically takes 30 minutes to an hour. Your computer is usable during the scan, but it will run more slowly.',
-      },
-      {
-        title: 'Make sure real-time protection is turned on',
-        content: 'Click "Virus & threat protection" → scroll down to "Virus & threat protection settings" → click "Manage settings." Make sure "Real-time protection" is turned ON (toggle should be blue/on). Real-time protection monitors everything your computer does and blocks threats automatically — this should always be on.',
-        warning: `If you have a third-party antivirus program installed (like McAfee or Norton), Windows Defender typically turns off its real-time protection automatically to avoid conflicts. This is expected behavior — you're protected by the other program instead.`,
-      },
-      {
-        title: 'Keep Windows updated for the best protection',
-        content: `Windows Defender's virus definitions update automatically through Windows Update. To check that your updates are current: click Start → Settings → Windows Update → click "Check for updates." Install any available updates. Virus definition updates happen frequently (often daily) and are small downloads that don't require a restart.`,
-      },
-    ],
-  },
-
+  
   {
     slug: 'how-to-use-task-manager-windows',
     title: 'How to Use Task Manager to Fix a Slow or Frozen Windows Computer',
@@ -144,39 +107,7 @@ export const guidesBatch15: Guide[] = [
     ],
   },
 
-  {
-    slug: 'how-to-use-time-machine-backup-mac',
-    title: 'How to Back Up Your Mac With Time Machine',
-    excerpt: "Time Machine is Apple's free built-in backup tool — plug in an external drive and your Mac backs up automatically every hour.",
-    category: 'mac-guides',
-    tags: ['time machine', 'mac', 'backup', 'external drive', 'apple', 'data safety'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Time Machine is Apple's built-in backup feature that automatically saves copies of everything on your Mac every hour. If your Mac is ever lost, stolen, or if you accidentally delete a file, you can restore everything from a Time Machine backup. All you need is an external hard drive.",
-    steps: [
-      {
-        title: 'Get an external hard drive',
-        content: `Time Machine requires an external hard drive (a portable drive you plug in via USB). Look for one with at least 1 TB (terabyte) of capacity — they typically cost $50-$80 at Target, Best Buy, Walmart, or Amazon. Brands like Seagate, Western Digital (WD), and Samsung make reliable options. The drive should be at least 2x the size of your Mac's internal storage for the best backup coverage.`,
-        tip: 'Look for "portable hard drive" or "external hard drive" when shopping. You want a drive that connects via USB-A or USB-C depending on which ports your Mac has.',
-      },
-      {
-        title: 'Plug in the drive and set up Time Machine',
-        content: `Plug the external drive into your Mac's USB port. macOS may ask if you want to use this drive for Time Machine backups — click "Use as Backup Disk." If it doesn't ask, go to the Apple menu → System Settings → Time Machine → click "Add Backup Disk" and select your drive. Time Machine will prepare the drive (no formatting needed) and start the first backup automatically.`,
-      },
-      {
-        title: 'Let the first backup complete',
-        content: 'The first Time Machine backup copies your entire Mac — this can take 1-5 hours depending on how much data you have. Your Mac is fully usable during the backup. A Time Machine icon in the menu bar (top right of screen) spins while a backup is in progress. After the first backup, Time Machine backs up only what has changed each hour — these incremental backups take just a few minutes.',
-        tip: 'Plug your external drive into your Mac regularly (once a week is good). Time Machine backs up automatically whenever the drive is connected.',
-      },
-      {
-        title: 'Restore a file you accidentally deleted',
-        content: 'If you accidentally delete a file or need an older version of a document: click the Time Machine icon in the menu bar and click "Browse Time Machine Backups." Your desktop turns into a timeline. Navigate back in time using the arrows on the right. Find the file you need, select it, and click "Restore." The file is copied back to its original location on your Mac.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'how-to-use-airpods',
     title: 'How to Set Up and Use Apple AirPods',
