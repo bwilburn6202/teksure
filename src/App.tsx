@@ -1266,6 +1266,13 @@ const VideoLettersGrandkids  = lazy(() => import("./pages/tools/VideoLettersGran
 const FamilyHistoryInterview = lazy(() => import("./pages/tools/FamilyHistoryInterview"));
 const EthicalWillTemplate    = lazy(() => import("./pages/tools/EthicalWillTemplate"));
 
+// ── Cycle 156 (April 29 2026) — home maintenance ──
+const HVACMaintenanceGuide   = lazy(() => import("./pages/tools/HVACMaintenanceGuide"));
+const WaterHeaterGuide       = lazy(() => import("./pages/tools/WaterHeaterGuide"));
+const GutterCleaningOptions  = lazy(() => import("./pages/tools/GutterCleaningOptions"));
+const RoofInspectionGuide    = lazy(() => import("./pages/tools/RoofInspectionGuide"));
+const ContractorVettingGuide = lazy(() => import("./pages/tools/ContractorVettingGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3037,6 +3044,11 @@ const AppContent = () => {
           <Route path="/tools/video-letters-grandkids" element={<VideoLettersGrandkids />} />
           <Route path="/tools/family-history-interview" element={<FamilyHistoryInterview />} />
           <Route path="/tools/ethical-will-template" element={<EthicalWillTemplate />} />
+          <Route path="/tools/hvac-maintenance-guide" element={<HVACMaintenanceGuide />} />
+          <Route path="/tools/water-heater-guide" element={<WaterHeaterGuide />} />
+          <Route path="/tools/gutter-cleaning-options" element={<GutterCleaningOptions />} />
+          <Route path="/tools/roof-inspection-guide" element={<RoofInspectionGuide />} />
+          <Route path="/tools/contractor-vetting-guide" element={<ContractorVettingGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
