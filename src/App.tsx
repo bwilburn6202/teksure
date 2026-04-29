@@ -1728,6 +1728,13 @@ const PandoraForSeniors         = lazy(() => import("./pages/tools/PandoraForSen
 const YouTubeMusicForSeniors    = lazy(() => import("./pages/tools/YouTubeMusicForSeniors"));
 const TuneInRadioApps           = lazy(() => import("./pages/tools/TuneInRadioApps"));
 
+// ── Cycle 222 (April 29 2026) — social media ──
+const PinterestForSeniors       = lazy(() => import("./pages/tools/PinterestForSeniors"));
+const ThreadsAppGuide           = lazy(() => import("./pages/tools/ThreadsAppGuide"));
+const BlueskyExplained          = lazy(() => import("./pages/tools/BlueskyExplained"));
+const FacebookGroupsForSeniors  = lazy(() => import("./pages/tools/FacebookGroupsForSeniors"));
+const SocialMediaPrivacyAudit   = lazy(() => import("./pages/tools/SocialMediaPrivacyAudit"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3829,6 +3836,11 @@ const AppContent = () => {
           <Route path="/tools/pandora-for-seniors" element={<PandoraForSeniors />} />
           <Route path="/tools/youtube-music-for-seniors" element={<YouTubeMusicForSeniors />} />
           <Route path="/tools/tunein-radio-apps" element={<TuneInRadioApps />} />
+          <Route path="/tools/pinterest-for-seniors" element={<PinterestForSeniors />} />
+          <Route path="/tools/threads-app-guide" element={<ThreadsAppGuide />} />
+          <Route path="/tools/bluesky-explained" element={<BlueskyExplained />} />
+          <Route path="/tools/facebook-groups-for-seniors" element={<FacebookGroupsForSeniors />} />
+          <Route path="/tools/social-media-privacy-audit" element={<SocialMediaPrivacyAudit />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
