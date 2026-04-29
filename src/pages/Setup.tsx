@@ -185,8 +185,16 @@ export default function Setup() {
       <>
         <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
         <Navbar />
-        <main id="main-content" className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
-          <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
+        {/*
+          Centered hero card — sized so the visible viewport contains
+          the whole "Setup Complete" message, with the Navbar pill at top
+          and the Footer right below. min-h-[calc(100dvh-160px)] reserves
+          room for the navbar spacer (~88px) and the footer (~72px), so
+          centering happens inside the visible area instead of around the
+          midpoint of a too-tall document.
+        */}
+        <main id="main-content" className="min-h-[calc(100dvh-160px)] bg-background flex flex-col items-center justify-center px-4 py-12">
+          <div className="container max-w-xl mx-auto text-center gap-6 flex flex-col items-center">
             <CheckCircle2 className="h-16 w-16 text-green-500" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>
             <p className="text-muted-foreground text-lg">
