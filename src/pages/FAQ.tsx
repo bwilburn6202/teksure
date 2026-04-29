@@ -553,15 +553,13 @@ const categories: FAQCategory[] = [
       {
         q: 'Is there a family plan?',
         plain:
-          'Yes. Family Sharing lets you save favorites, progress, and devices for up to 6 household members under one free account. You can also gift a technician session to anyone.',
+          'Yes. Family Sharing lets you save favorites, progress, and devices for up to 6 household members under one free account.',
         a: (
           <>
             Yes.{' '}
             <Link to="/family-sharing" className="text-primary hover:underline">Family Sharing</Link>{' '}
             lets you save favorites, progress, and devices for up to 6
-            household members under one free account. You can also{' '}
-            <Link to="/gift-session" className="text-primary hover:underline">gift a technician session</Link>{' '}
-            to anyone.
+            household members under one free account.
           </>
         ),
       },

@@ -69,7 +69,6 @@ const changelog: ChangelogEntry[] = [
       { type: 'feature', text: 'Autonomous development system launched — daily health checks, weekly content, monthly audits' },
       { type: 'feature', text: 'Server-side rendering (SSR) deployed on Vercel' },
       { type: 'content', text: 'Guide library surpassed 800 guides' },
-      { type: 'feature', text: 'Stripe payments live with £15 deposit model' },
     ],
   },
   {

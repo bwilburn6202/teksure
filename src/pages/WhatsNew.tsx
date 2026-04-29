@@ -200,7 +200,6 @@ const RELEASES: MonthlyRelease[] = [
         { title: 'Booking system', description: 'Schedule a real human technician right from the website.' },
       ],
       improvement: [
-        { title: 'Stripe payments live', description: 'Pay securely online with a small deposit that comes off your final bill.' },
         { title: 'Admin dashboard', description: 'Our team can now manage bookings, content, and guides without writing code.' },
         { title: 'Email notifications', description: 'Booking confirmations and reminders so you never miss a session.' },
       ],

@@ -6,7 +6,7 @@ import {
   LogIn, GraduationCap, LayoutDashboard, KeyRound, Wifi, Laptop,
   HardDrive, Smartphone, Languages, Keyboard, AlertCircle, Eye,
   Activity, Bluetooth, Trash2, Sliders, KeySquare, Brain, Flag,
-  Package, BarChart2, Users, Gift, Smile, Award, Bell,
+  Package, BarChart2, Users, Smile, Award, Bell,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
@@ -162,7 +162,6 @@ const sections: Section[] = [
       { to: '/favorites', label: 'Favorites', icon: Heart },
       { to: '/notifications', label: 'Notifications', icon: Bell },
       { to: '/certificate', label: 'Certificates', icon: Award },
-      { to: '/gift', label: 'Gift a Subscription', icon: Gift },
     ],
   },
 ];
