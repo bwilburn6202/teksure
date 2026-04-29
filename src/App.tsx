@@ -930,6 +930,13 @@ const RemittancesGuide       = lazy(() => import("./pages/tools/RemittancesGuide
 const SpanishVotingHelp      = lazy(() => import("./pages/tools/SpanishVotingHelp"));
 const SpanishRetirementResources = lazy(() => import("./pages/tools/SpanishRetirementResources"));
 
+// ── Cycle 108 (April 29 2026) — smart home ──
+const SmartHomeStarterKit    = lazy(() => import("./pages/tools/SmartHomeStarterKit"));
+const SmartLockGuide         = lazy(() => import("./pages/tools/SmartLockGuide"));
+const SmartThermostatPicks   = lazy(() => import("./pages/tools/SmartThermostatPicks"));
+const SmartLightingBasics    = lazy(() => import("./pages/tools/SmartLightingBasics"));
+const SmartHubExplained      = lazy(() => import("./pages/tools/SmartHubExplained"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2403,6 +2410,13 @@ const AppContent = () => {
           <Route path="/tools/remittances-guide" element={<RemittancesGuide />} />
           <Route path="/tools/spanish-voting-help" element={<SpanishVotingHelp />} />
           <Route path="/tools/spanish-retirement-resources" element={<SpanishRetirementResources />} />
+
+          {/* Cycle 108 — smart home */}
+          <Route path="/tools/smart-home-starter-kit" element={<SmartHomeStarterKit />} />
+          <Route path="/tools/smart-lock-guide" element={<SmartLockGuide />} />
+          <Route path="/tools/smart-thermostat-picks" element={<SmartThermostatPicks />} />
+          <Route path="/tools/smart-lighting-basics" element={<SmartLightingBasics />} />
+          <Route path="/tools/smart-hub-explained" element={<SmartHubExplained />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
