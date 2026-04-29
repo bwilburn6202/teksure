@@ -1014,6 +1014,13 @@ const MedicalEquipmentRental = lazy(() => import("./pages/tools/MedicalEquipment
 const HomeHealthAideFind     = lazy(() => import("./pages/tools/HomeHealthAideFind"));
 const HospiceTechSupport     = lazy(() => import("./pages/tools/HospiceTechSupport"));
 
+// ── Cycle 120 (April 29 2026) — wellness milestone ──
+const SleepHygieneApps       = lazy(() => import("./pages/tools/SleepHygieneApps"));
+const MeditationFreeApps     = lazy(() => import("./pages/tools/MeditationFreeApps"));
+const SunscreenAppPicks      = lazy(() => import("./pages/tools/SunscreenAppPicks"));
+const HydrationTrackers      = lazy(() => import("./pages/tools/HydrationTrackers"));
+const GardeningHelpApps      = lazy(() => import("./pages/tools/GardeningHelpApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2571,6 +2578,13 @@ const AppContent = () => {
           <Route path="/tools/medical-equipment-rental" element={<MedicalEquipmentRental />} />
           <Route path="/tools/home-health-aide-find" element={<HomeHealthAideFind />} />
           <Route path="/tools/hospice-tech-support" element={<HospiceTechSupport />} />
+
+          {/* Cycle 120 — wellness milestone */}
+          <Route path="/tools/sleep-hygiene-apps" element={<SleepHygieneApps />} />
+          <Route path="/tools/meditation-free-apps" element={<MeditationFreeApps />} />
+          <Route path="/tools/sunscreen-app-picks" element={<SunscreenAppPicks />} />
+          <Route path="/tools/hydration-trackers" element={<HydrationTrackers />} />
+          <Route path="/tools/gardening-help-apps" element={<GardeningHelpApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
