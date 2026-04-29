@@ -1287,6 +1287,13 @@ const ElderLawAttorneyFinder = lazy(() => import("./pages/tools/ElderLawAttorney
 const FreeLegalAidForSeniors = lazy(() => import("./pages/tools/FreeLegalAidForSeniors"));
 const DebtCollectorRights    = lazy(() => import("./pages/tools/DebtCollectorRights"));
 
+// ── Cycle 159 (April 29 2026) — languages + free college ──
+const DuolingoForSeniors     = lazy(() => import("./pages/tools/DuolingoForSeniors"));
+const BabbelVsRosetta        = lazy(() => import("./pages/tools/BabbelVsRosetta"));
+const GoogleTranslateMastery = lazy(() => import("./pages/tools/GoogleTranslateMastery"));
+const FreeCollegeForSeniors  = lazy(() => import("./pages/tools/FreeCollegeForSeniors"));
+const CourseraSeniorAudit    = lazy(() => import("./pages/tools/CourseraSeniorAudit"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3073,6 +3080,11 @@ const AppContent = () => {
           <Route path="/tools/elder-law-attorney-finder" element={<ElderLawAttorneyFinder />} />
           <Route path="/tools/free-legal-aid-for-seniors" element={<FreeLegalAidForSeniors />} />
           <Route path="/tools/debt-collector-rights" element={<DebtCollectorRights />} />
+          <Route path="/tools/duolingo-for-seniors" element={<DuolingoForSeniors />} />
+          <Route path="/tools/babbel-vs-rosetta" element={<BabbelVsRosetta />} />
+          <Route path="/tools/google-translate-mastery" element={<GoogleTranslateMastery />} />
+          <Route path="/tools/free-college-for-seniors" element={<FreeCollegeForSeniors />} />
+          <Route path="/tools/coursera-senior-audit" element={<CourseraSeniorAudit />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
