@@ -307,6 +307,13 @@ const CgmCoach               = lazy(() => import("./pages/tools/CgmCoach"));
 const OnlineHearingTest      = lazy(() => import("./pages/tools/OnlineHearingTest"));
 const SkypeReplacement       = lazy(() => import("./pages/tools/SkypeReplacement"));
 
+// ── Cycle 19 (April 29 2026) — brain/genealogy/frame/sound/volunteer ──
+const BrainTrainingApps      = lazy(() => import("./pages/tools/BrainTrainingApps"));
+const GenealogyApps          = lazy(() => import("./pages/tools/GenealogyApps"));
+const DigitalPhotoFramePicker = lazy(() => import("./pages/tools/DigitalPhotoFramePicker"));
+const TvSoundBarPicker       = lazy(() => import("./pages/tools/TvSoundBarPicker"));
+const VolunteerApps          = lazy(() => import("./pages/tools/VolunteerApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1157,6 +1164,13 @@ const AppContent = () => {
           <Route path="/tools/cgm-coach" element={<CgmCoach />} />
           <Route path="/tools/online-hearing-test" element={<OnlineHearingTest />} />
           <Route path="/tools/skype-replacement" element={<SkypeReplacement />} />
+
+          {/* Cycle 19 — brain/genealogy/frame/sound/volunteer */}
+          <Route path="/tools/brain-training-apps" element={<BrainTrainingApps />} />
+          <Route path="/tools/genealogy-apps" element={<GenealogyApps />} />
+          <Route path="/tools/digital-photo-frame-picker" element={<DigitalPhotoFramePicker />} />
+          <Route path="/tools/tv-sound-bar-picker" element={<TvSoundBarPicker />} />
+          <Route path="/tools/volunteer-apps" element={<VolunteerApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
