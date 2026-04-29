@@ -181,6 +181,20 @@ const TechEmergencyKit       = lazy(() => import("./pages/tools/TechEmergencyKit
 const TechBreakReminder      = lazy(() => import("./pages/tools/TechBreakReminder"));
 const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 
+// ── Cycle 1 (April 29 2026) — net-new tools ──
+const PhishingLinkInspector  = lazy(() => import("./pages/tools/PhishingLinkInspector"));
+const TwoFactorCoach         = lazy(() => import("./pages/tools/TwoFactorCoach"));
+const SafeWordKit            = lazy(() => import("./pages/tools/SafeWordKit"));
+const PrintFromPhoneHelper   = lazy(() => import("./pages/tools/PrintFromPhoneHelper"));
+const ChargerCableIdentifier = lazy(() => import("./pages/tools/ChargerCableIdentifier"));
+
+// ── Cycle 2 (April 29 2026) — net-new tools ──
+const QrScamScanner          = lazy(() => import("./pages/tools/QrScamScanner"));
+const BatteryHealthChecker   = lazy(() => import("./pages/tools/BatteryHealthChecker"));
+const AppPermissionsReset    = lazy(() => import("./pages/tools/AppPermissionsReset"));
+const EsimSetupGuide         = lazy(() => import("./pages/tools/EsimSetupGuide"));
+const PhoneHotspotHelper     = lazy(() => import("./pages/tools/PhoneHotspotHelper"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -905,6 +919,20 @@ const AppContent = () => {
           <Route path="/tools/tech-break-reminder" element={<TechBreakReminder />} />
           <Route path="/weekly-tips" element={<WeeklyTips />} />
           <Route path="/this-week" element={<WeeklyTips />} />
+
+          {/* Cycle 1 — net-new tools (April 29 2026) */}
+          <Route path="/tools/phishing-link-inspector" element={<PhishingLinkInspector />} />
+          <Route path="/tools/two-factor-coach" element={<TwoFactorCoach />} />
+          <Route path="/tools/safe-word-kit" element={<SafeWordKit />} />
+          <Route path="/tools/print-from-phone" element={<PrintFromPhoneHelper />} />
+          <Route path="/tools/cable-identifier" element={<ChargerCableIdentifier />} />
+
+          {/* Cycle 2 — net-new tools */}
+          <Route path="/tools/qr-scam-scanner" element={<QrScamScanner />} />
+          <Route path="/tools/battery-health-checker" element={<BatteryHealthChecker />} />
+          <Route path="/tools/app-permissions-reset" element={<AppPermissionsReset />} />
+          <Route path="/tools/esim-setup-guide" element={<EsimSetupGuide />} />
+          <Route path="/tools/phone-hotspot-helper" element={<PhoneHotspotHelper />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
