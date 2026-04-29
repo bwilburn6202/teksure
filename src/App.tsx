@@ -748,6 +748,13 @@ const PaperShreddingGuide    = lazy(() => import("./pages/tools/PaperShreddingGu
 const ScannerAppPicks        = lazy(() => import("./pages/tools/ScannerAppPicks"));
 const MedicalRecordsRequest  = lazy(() => import("./pages/tools/MedicalRecordsRequest"));
 
+// ── Cycle 82 (April 29 2026) — accessibility ──
+const MagnifierAppPicks      = lazy(() => import("./pages/tools/MagnifierAppPicks"));
+const ColorBlindTools        = lazy(() => import("./pages/tools/ColorBlindTools"));
+const OneHandedTyping        = lazy(() => import("./pages/tools/OneHandedTyping"));
+const BrailleDisplays        = lazy(() => import("./pages/tools/BrailleDisplays"));
+const DictationTraining      = lazy(() => import("./pages/tools/DictationTraining"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2039,6 +2046,13 @@ const AppContent = () => {
           <Route path="/tools/paper-shredding-guide" element={<PaperShreddingGuide />} />
           <Route path="/tools/scanner-app-picks" element={<ScannerAppPicks />} />
           <Route path="/tools/medical-records-request" element={<MedicalRecordsRequest />} />
+
+          {/* Cycle 82 — accessibility */}
+          <Route path="/tools/magnifier-app-picks" element={<MagnifierAppPicks />} />
+          <Route path="/tools/color-blind-tools" element={<ColorBlindTools />} />
+          <Route path="/tools/one-handed-typing" element={<OneHandedTyping />} />
+          <Route path="/tools/braille-displays" element={<BrailleDisplays />} />
+          <Route path="/tools/dictation-training" element={<DictationTraining />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
