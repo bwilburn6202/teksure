@@ -965,6 +965,13 @@ const DentalImplantGuide     = lazy(() => import("./pages/tools/DentalImplantGui
 const ContactLensApps        = lazy(() => import("./pages/tools/ContactLensApps"));
 const TeethCleaningApps      = lazy(() => import("./pages/tools/TeethCleaningApps"));
 
+// ── Cycle 113 (April 29 2026) — senior auto + driving ──
+const SeniorDrivingTests     = lazy(() => import("./pages/tools/SeniorDrivingTests"));
+const AutoInsuranceSeniors   = lazy(() => import("./pages/tools/AutoInsuranceSeniors"));
+const BackupCameraRetrofit   = lazy(() => import("./pages/tools/BackupCameraRetrofit"));
+const BlindSpotMirrorSetups  = lazy(() => import("./pages/tools/BlindSpotMirrorSetups"));
+const SeniorRideShareAlternatives = lazy(() => import("./pages/tools/SeniorRideShareAlternatives"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2473,6 +2480,13 @@ const AppContent = () => {
           <Route path="/tools/dental-implant-guide" element={<DentalImplantGuide />} />
           <Route path="/tools/contact-lens-apps" element={<ContactLensApps />} />
           <Route path="/tools/teeth-cleaning-apps" element={<TeethCleaningApps />} />
+
+          {/* Cycle 113 — senior auto + driving */}
+          <Route path="/tools/senior-driving-tests" element={<SeniorDrivingTests />} />
+          <Route path="/tools/auto-insurance-seniors" element={<AutoInsuranceSeniors />} />
+          <Route path="/tools/backup-camera-retrofit" element={<BackupCameraRetrofit />} />
+          <Route path="/tools/blind-spot-mirror-setups" element={<BlindSpotMirrorSetups />} />
+          <Route path="/tools/senior-rideshare-alternatives" element={<SeniorRideShareAlternatives />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
