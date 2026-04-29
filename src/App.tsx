@@ -713,6 +713,13 @@ const OutletDealsApps        = lazy(() => import("./pages/tools/OutletDealsApps"
 const ReturnsRefundsHowTo    = lazy(() => import("./pages/tools/ReturnsRefundsHowTo"));
 const OnlineThriftStores     = lazy(() => import("./pages/tools/OnlineThriftStores"));
 
+// ── Cycle 77 (April 29 2026) — travel + cruise tech ──
+const CruiseAppGuide         = lazy(() => import("./pages/tools/CruiseAppGuide"));
+const AirlineAppPicks        = lazy(() => import("./pages/tools/AirlineAppPicks"));
+const TsaPrecheckGlobal      = lazy(() => import("./pages/tools/TsaPrecheckGlobal"));
+const PassportPhotoApps      = lazy(() => import("./pages/tools/PassportPhotoApps"));
+const HotelLoyaltyPrograms   = lazy(() => import("./pages/tools/HotelLoyaltyPrograms"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1969,6 +1976,13 @@ const AppContent = () => {
           <Route path="/tools/outlet-deals-apps" element={<OutletDealsApps />} />
           <Route path="/tools/returns-refunds-how-to" element={<ReturnsRefundsHowTo />} />
           <Route path="/tools/online-thrift-stores" element={<OnlineThriftStores />} />
+
+          {/* Cycle 77 — travel + cruise tech */}
+          <Route path="/tools/cruise-app-guide" element={<CruiseAppGuide />} />
+          <Route path="/tools/airline-app-picks" element={<AirlineAppPicks />} />
+          <Route path="/tools/tsa-precheck-global" element={<TsaPrecheckGlobal />} />
+          <Route path="/tools/passport-photo-apps" element={<PassportPhotoApps />} />
+          <Route path="/tools/hotel-loyalty-programs" element={<HotelLoyaltyPrograms />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
