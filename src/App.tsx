@@ -1343,6 +1343,13 @@ const RetreatCentersForSeniors = lazy(() => import("./pages/tools/RetreatCenters
 const IntermittentFastingSeniors = lazy(() => import("./pages/tools/IntermittentFastingSeniors"));
 const MinimalismForSeniors   = lazy(() => import("./pages/tools/MinimalismForSeniors"));
 
+// ── Cycle 167 (April 29 2026) — senior tech basics ──
+const GrandPadTablet         = lazy(() => import("./pages/tools/GrandPadTablet"));
+const RazMobilityPhones      = lazy(() => import("./pages/tools/RazMobilityPhones"));
+const ConsumerCellularPlans  = lazy(() => import("./pages/tools/ConsumerCellularPlans"));
+const FirstSmartphoneStarter = lazy(() => import("./pages/tools/FirstSmartphoneStarter"));
+const TabletForSeniorsBasics = lazy(() => import("./pages/tools/TabletForSeniorsBasics"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3169,6 +3176,11 @@ const AppContent = () => {
           <Route path="/tools/retreat-centers-for-seniors" element={<RetreatCentersForSeniors />} />
           <Route path="/tools/intermittent-fasting-seniors" element={<IntermittentFastingSeniors />} />
           <Route path="/tools/minimalism-for-seniors" element={<MinimalismForSeniors />} />
+          <Route path="/tools/grandpad-tablet" element={<GrandPadTablet />} />
+          <Route path="/tools/raz-mobility-phones" element={<RazMobilityPhones />} />
+          <Route path="/tools/consumer-cellular-plans" element={<ConsumerCellularPlans />} />
+          <Route path="/tools/first-smartphone-starter" element={<FirstSmartphoneStarter />} />
+          <Route path="/tools/tablet-for-seniors-basics" element={<TabletForSeniorsBasics />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
