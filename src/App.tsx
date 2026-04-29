@@ -923,6 +923,13 @@ const RothConversionGuide    = lazy(() => import("./pages/tools/RothConversionGu
 const AnnuityRealityCheck    = lazy(() => import("./pages/tools/AnnuityRealityCheck"));
 const ReverseMortgageGuide   = lazy(() => import("./pages/tools/ReverseMortgageGuide"));
 
+// ── Cycle 107 (April 29 2026) — Spanish-speaking seniors ──
+const SpanishSpeakingSupport = lazy(() => import("./pages/tools/SpanishSpeakingSupport"));
+const BilingualMedicalApps   = lazy(() => import("./pages/tools/BilingualMedicalApps"));
+const RemittancesGuide       = lazy(() => import("./pages/tools/RemittancesGuide"));
+const SpanishVotingHelp      = lazy(() => import("./pages/tools/SpanishVotingHelp"));
+const SpanishRetirementResources = lazy(() => import("./pages/tools/SpanishRetirementResources"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2389,6 +2396,13 @@ const AppContent = () => {
           <Route path="/tools/roth-conversion-guide" element={<RothConversionGuide />} />
           <Route path="/tools/annuity-reality-check" element={<AnnuityRealityCheck />} />
           <Route path="/tools/reverse-mortgage-guide" element={<ReverseMortgageGuide />} />
+
+          {/* Cycle 107 — Spanish-speaking seniors */}
+          <Route path="/tools/spanish-speaking-support" element={<SpanishSpeakingSupport />} />
+          <Route path="/tools/bilingual-medical-apps" element={<BilingualMedicalApps />} />
+          <Route path="/tools/remittances-guide" element={<RemittancesGuide />} />
+          <Route path="/tools/spanish-voting-help" element={<SpanishVotingHelp />} />
+          <Route path="/tools/spanish-retirement-resources" element={<SpanishRetirementResources />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
