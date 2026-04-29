@@ -615,6 +615,13 @@ const PauseStreamingRotation = lazy(() => import("./pages/tools/PauseStreamingRo
 const GroceryRewards         = lazy(() => import("./pages/tools/GroceryRewards"));
 const AppleOneBundleCoach    = lazy(() => import("./pages/tools/AppleOneBundleCoach"));
 
+// ── Cycle 63 (April 29 2026) — read-aloud / wifi / relay / pet / coupons ──
+const ReadAloudAnywhere      = lazy(() => import("./pages/tools/ReadAloudAnywhere"));
+const WifiPasswordSharing    = lazy(() => import("./pages/tools/WifiPasswordSharing"));
+const RelayServicesTty       = lazy(() => import("./pages/tools/RelayServicesTty"));
+const PetAdoptionApps        = lazy(() => import("./pages/tools/PetAdoptionApps"));
+const DeepCouponApps         = lazy(() => import("./pages/tools/DeepCouponApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1773,6 +1780,13 @@ const AppContent = () => {
           <Route path="/tools/pause-streaming-rotation" element={<PauseStreamingRotation />} />
           <Route path="/tools/grocery-rewards" element={<GroceryRewards />} />
           <Route path="/tools/apple-one-bundle-coach" element={<AppleOneBundleCoach />} />
+
+          {/* Cycle 63 — read-aloud / wifi / relay / pet / coupons */}
+          <Route path="/tools/read-aloud-anywhere" element={<ReadAloudAnywhere />} />
+          <Route path="/tools/wifi-password-sharing" element={<WifiPasswordSharing />} />
+          <Route path="/tools/relay-services-tty" element={<RelayServicesTty />} />
+          <Route path="/tools/pet-adoption-apps" element={<PetAdoptionApps />} />
+          <Route path="/tools/deep-coupon-apps" element={<DeepCouponApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
