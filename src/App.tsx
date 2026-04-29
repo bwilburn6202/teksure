@@ -860,6 +860,13 @@ const DrugInteractionCheckers = lazy(() => import("./pages/tools/DrugInteraction
 const RxCouponApps           = lazy(() => import("./pages/tools/RxCouponApps"));
 const MedicationDeliveryServices = lazy(() => import("./pages/tools/MedicationDeliveryServices"));
 
+// ── Cycle 98 (April 29 2026) — kitchen tech ──
+const SousVidePicks          = lazy(() => import("./pages/tools/SousVidePicks"));
+const InstantPotApps         = lazy(() => import("./pages/tools/InstantPotApps"));
+const KitchenScalePicks      = lazy(() => import("./pages/tools/KitchenScalePicks"));
+const RecipeOrganizers       = lazy(() => import("./pages/tools/RecipeOrganizers"));
+const SmartOvenPicks         = lazy(() => import("./pages/tools/SmartOvenPicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2263,6 +2270,13 @@ const AppContent = () => {
           <Route path="/tools/drug-interaction-checkers" element={<DrugInteractionCheckers />} />
           <Route path="/tools/rx-coupon-apps" element={<RxCouponApps />} />
           <Route path="/tools/medication-delivery-services" element={<MedicationDeliveryServices />} />
+
+          {/* Cycle 98 — kitchen tech */}
+          <Route path="/tools/sous-vide-picks" element={<SousVidePicks />} />
+          <Route path="/tools/instant-pot-apps" element={<InstantPotApps />} />
+          <Route path="/tools/kitchen-scale-picks" element={<KitchenScalePicks />} />
+          <Route path="/tools/recipe-organizers" element={<RecipeOrganizers />} />
+          <Route path="/tools/smart-oven-picks" element={<SmartOvenPicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
