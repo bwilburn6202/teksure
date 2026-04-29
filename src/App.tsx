@@ -1581,6 +1581,13 @@ const AttendGrandchildWedding = lazy(() => import("./pages/tools/AttendGrandchil
 const GrandparentLegalRights = lazy(() => import("./pages/tools/GrandparentLegalRights"));
 const GrandkidSummerVisits   = lazy(() => import("./pages/tools/GrandkidSummerVisits"));
 
+// ── Cycle 201 (April 29 2026) — books + podcasts ──
+const BestBooksForSeniors    = lazy(() => import("./pages/tools/BestBooksForSeniors"));
+const BookClubsHowToFind     = lazy(() => import("./pages/tools/BookClubsHowToFind"));
+const BestPodcastsSeniors    = lazy(() => import("./pages/tools/BestPodcastsSeniors"));
+const KindleVsPaperbookSeniors = lazy(() => import("./pages/tools/KindleVsPaperbookSeniors"));
+const AudiobookListenWalking = lazy(() => import("./pages/tools/AudiobookListenWalking"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3577,6 +3584,11 @@ const AppContent = () => {
           <Route path="/tools/attend-grandchild-wedding" element={<AttendGrandchildWedding />} />
           <Route path="/tools/grandparent-legal-rights" element={<GrandparentLegalRights />} />
           <Route path="/tools/grandkid-summer-visits" element={<GrandkidSummerVisits />} />
+          <Route path="/tools/best-books-for-seniors" element={<BestBooksForSeniors />} />
+          <Route path="/tools/book-clubs-how-to-find" element={<BookClubsHowToFind />} />
+          <Route path="/tools/best-podcasts-seniors" element={<BestPodcastsSeniors />} />
+          <Route path="/tools/kindle-vs-paperbook-seniors" element={<KindleVsPaperbookSeniors />} />
+          <Route path="/tools/audiobook-listen-walking" element={<AudiobookListenWalking />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
