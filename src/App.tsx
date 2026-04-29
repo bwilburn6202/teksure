@@ -195,6 +195,20 @@ const AppPermissionsReset    = lazy(() => import("./pages/tools/AppPermissionsRe
 const EsimSetupGuide         = lazy(() => import("./pages/tools/EsimSetupGuide"));
 const PhoneHotspotHelper     = lazy(() => import("./pages/tools/PhoneHotspotHelper"));
 
+// ── Cycle 3 (April 29 2026) — net-new tools ──
+const CreditFreezeCoach      = lazy(() => import("./pages/tools/CreditFreezeCoach"));
+const TollTextScamDecoder    = lazy(() => import("./pages/tools/TollTextScamDecoder"));
+const GiftCardScamDefense    = lazy(() => import("./pages/tools/GiftCardScamDefense"));
+const PaymentAppSafety       = lazy(() => import("./pages/tools/PaymentAppSafety"));
+const HotelWifiSafety        = lazy(() => import("./pages/tools/HotelWifiSafety"));
+
+// ── Cycle 4 (April 29 2026) — net-new tools ──
+const BreachResponseChecklist = lazy(() => import("./pages/tools/BreachResponseChecklist"));
+const AirTagStalkingDefense  = lazy(() => import("./pages/tools/AirTagStalkingDefense"));
+const UspsInformedDelivery   = lazy(() => import("./pages/tools/UspsInformedDelivery"));
+const CallerIdVerification   = lazy(() => import("./pages/tools/CallerIdVerification"));
+const PublicChargingSafety   = lazy(() => import("./pages/tools/PublicChargingSafety"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -933,6 +947,20 @@ const AppContent = () => {
           <Route path="/tools/app-permissions-reset" element={<AppPermissionsReset />} />
           <Route path="/tools/esim-setup-guide" element={<EsimSetupGuide />} />
           <Route path="/tools/phone-hotspot-helper" element={<PhoneHotspotHelper />} />
+
+          {/* Cycle 3 — net-new tools */}
+          <Route path="/tools/credit-freeze-coach" element={<CreditFreezeCoach />} />
+          <Route path="/tools/toll-text-scam" element={<TollTextScamDecoder />} />
+          <Route path="/tools/gift-card-scam-defense" element={<GiftCardScamDefense />} />
+          <Route path="/tools/payment-app-safety" element={<PaymentAppSafety />} />
+          <Route path="/tools/hotel-wifi-safety" element={<HotelWifiSafety />} />
+
+          {/* Cycle 4 — net-new tools */}
+          <Route path="/tools/breach-response" element={<BreachResponseChecklist />} />
+          <Route path="/tools/airtag-stalking-defense" element={<AirTagStalkingDefense />} />
+          <Route path="/tools/usps-informed-delivery" element={<UspsInformedDelivery />} />
+          <Route path="/tools/caller-id-verification" element={<CallerIdVerification />} />
+          <Route path="/tools/public-charging-safety" element={<PublicChargingSafety />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
