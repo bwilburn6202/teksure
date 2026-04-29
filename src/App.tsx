@@ -419,6 +419,13 @@ const HighYieldSavingsAndIBonds = lazy(() => import("./pages/tools/HighYieldSavi
 const CollegeSavingsForGrandkids = lazy(() => import("./pages/tools/CollegeSavingsForGrandkids"));
 const OnlineNotaryCoach      = lazy(() => import("./pages/tools/OnlineNotaryCoach"));
 
+// ── Cycle 35 (April 29 2026) — Social Security/Medicare/LTC/reverse mortgage/pension ──
+const WhenToTakeSocialSecurity = lazy(() => import("./pages/tools/WhenToTakeSocialSecurity"));
+const MedigapVsAdvantage     = lazy(() => import("./pages/tools/MedigapVsAdvantage"));
+const LongTermCarePlanning   = lazy(() => import("./pages/tools/LongTermCarePlanning"));
+const ReverseMortgageExplained = lazy(() => import("./pages/tools/ReverseMortgageExplained"));
+const PensionLumpSumDecision = lazy(() => import("./pages/tools/PensionLumpSumDecision"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1381,6 +1388,13 @@ const AppContent = () => {
           <Route path="/tools/high-yield-savings-i-bonds" element={<HighYieldSavingsAndIBonds />} />
           <Route path="/tools/college-savings-for-grandkids" element={<CollegeSavingsForGrandkids />} />
           <Route path="/tools/online-notary-coach" element={<OnlineNotaryCoach />} />
+
+          {/* Cycle 35 — Social Security / Medicare / LTC / reverse mortgage / pension */}
+          <Route path="/tools/when-to-take-social-security" element={<WhenToTakeSocialSecurity />} />
+          <Route path="/tools/medigap-vs-advantage" element={<MedigapVsAdvantage />} />
+          <Route path="/tools/long-term-care-planning" element={<LongTermCarePlanning />} />
+          <Route path="/tools/reverse-mortgage-explained" element={<ReverseMortgageExplained />} />
+          <Route path="/tools/pension-lump-sum-decision" element={<PensionLumpSumDecision />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
