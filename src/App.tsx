@@ -1623,6 +1623,13 @@ const ValentinesDayDigital     = lazy(() => import("./pages/tools/ValentinesDayD
 const HalloweenSafetySeniors   = lazy(() => import("./pages/tools/HalloweenSafetySeniors"));
 const NewYearGoalsApps         = lazy(() => import("./pages/tools/NewYearGoalsApps"));
 
+// ── Cycle 207 (April 29 2026) — pet care ──
+const DogTrainingApps          = lazy(() => import("./pages/tools/DogTrainingApps"));
+const CatCareApps              = lazy(() => import("./pages/tools/CatCareApps"));
+const PetGroomingHome          = lazy(() => import("./pages/tools/PetGroomingHome"));
+const AquariumStarterSenior    = lazy(() => import("./pages/tools/AquariumStarterSenior"));
+const PetSitterFinder          = lazy(() => import("./pages/tools/PetSitterFinder"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3649,6 +3656,11 @@ const AppContent = () => {
           <Route path="/tools/valentines-day-digital" element={<ValentinesDayDigital />} />
           <Route path="/tools/halloween-safety-seniors" element={<HalloweenSafetySeniors />} />
           <Route path="/tools/new-year-goals-apps" element={<NewYearGoalsApps />} />
+          <Route path="/tools/dog-training-apps" element={<DogTrainingApps />} />
+          <Route path="/tools/cat-care-apps" element={<CatCareApps />} />
+          <Route path="/tools/pet-grooming-home" element={<PetGroomingHome />} />
+          <Route path="/tools/aquarium-starter-senior" element={<AquariumStarterSenior />} />
+          <Route path="/tools/pet-sitter-finder" element={<PetSitterFinder />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
