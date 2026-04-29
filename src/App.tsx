@@ -1021,6 +1021,13 @@ const SunscreenAppPicks      = lazy(() => import("./pages/tools/SunscreenAppPick
 const HydrationTrackers      = lazy(() => import("./pages/tools/HydrationTrackers"));
 const GardeningHelpApps      = lazy(() => import("./pages/tools/GardeningHelpApps"));
 
+// ── Cycle 121 (April 29 2026) — internet basics ──
+const WifiPasswordReset      = lazy(() => import("./pages/tools/WifiPasswordReset"));
+const RouterPicksForSeniors  = lazy(() => import("./pages/tools/RouterPicksForSeniors"));
+const WifiExtenders          = lazy(() => import("./pages/tools/WifiExtenders"));
+const GuestNetworkSetup      = lazy(() => import("./pages/tools/GuestNetworkSetup"));
+const EthernetVsWifi         = lazy(() => import("./pages/tools/EthernetVsWifi"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2585,6 +2592,13 @@ const AppContent = () => {
           <Route path="/tools/sunscreen-app-picks" element={<SunscreenAppPicks />} />
           <Route path="/tools/hydration-trackers" element={<HydrationTrackers />} />
           <Route path="/tools/gardening-help-apps" element={<GardeningHelpApps />} />
+
+          {/* Cycle 121 — internet basics */}
+          <Route path="/tools/wifi-password-reset" element={<WifiPasswordReset />} />
+          <Route path="/tools/router-picks-for-seniors" element={<RouterPicksForSeniors />} />
+          <Route path="/tools/wifi-extenders" element={<WifiExtenders />} />
+          <Route path="/tools/guest-network-setup" element={<GuestNetworkSetup />} />
+          <Route path="/tools/ethernet-vs-wifi" element={<EthernetVsWifi />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
