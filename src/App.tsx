@@ -272,6 +272,13 @@ const MeditationAppPicker    = lazy(() => import("./pages/tools/MeditationAppPic
 const WeatherAlertPicker     = lazy(() => import("./pages/tools/WeatherAlertPicker"));
 const PetTechCoach           = lazy(() => import("./pages/tools/PetTechCoach"));
 
+// ── Cycle 14 (April 29 2026) — travel / maps / dining / discounts / Prime ──
+const TravelTechPack         = lazy(() => import("./pages/tools/TravelTechPack"));
+const MapsGpsCoach           = lazy(() => import("./pages/tools/MapsGpsCoach"));
+const RestaurantReservationCoach = lazy(() => import("./pages/tools/RestaurantReservationCoach"));
+const SeniorDiscountApps     = lazy(() => import("./pages/tools/SeniorDiscountApps"));
+const AmazonPrimeMastery     = lazy(() => import("./pages/tools/AmazonPrimeMastery"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1087,6 +1094,13 @@ const AppContent = () => {
           <Route path="/tools/meditation-app-picker" element={<MeditationAppPicker />} />
           <Route path="/tools/weather-alert-picker" element={<WeatherAlertPicker />} />
           <Route path="/tools/pet-tech-coach" element={<PetTechCoach />} />
+
+          {/* Cycle 14 — travel / maps / dining / discounts / Prime */}
+          <Route path="/tools/travel-tech-pack" element={<TravelTechPack />} />
+          <Route path="/tools/maps-gps-coach" element={<MapsGpsCoach />} />
+          <Route path="/tools/restaurant-reservation-coach" element={<RestaurantReservationCoach />} />
+          <Route path="/tools/senior-discount-apps" element={<SeniorDiscountApps />} />
+          <Route path="/tools/amazon-prime-mastery" element={<AmazonPrimeMastery />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
