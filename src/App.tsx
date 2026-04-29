@@ -1189,6 +1189,13 @@ const HoarderHelpResources   = lazy(() => import("./pages/tools/HoarderHelpResou
 const MemorabiliaPreservation = lazy(() => import("./pages/tools/MemorabiliaPreservation"));
 const AtticBasementClearout  = lazy(() => import("./pages/tools/AtticBasementClearout"));
 
+// ── Cycle 145 (April 29 2026) — senior finance + scams ──
+const BurialInsuranceVsLife  = lazy(() => import("./pages/tools/BurialInsuranceVsLife"));
+const EstimatedQuarterlyTaxes = lazy(() => import("./pages/tools/EstimatedQuarterlyTaxes"));
+const MedicareScamDefense    = lazy(() => import("./pages/tools/MedicareScamDefense"));
+const SweepstakesScamGuide   = lazy(() => import("./pages/tools/SweepstakesScamGuide"));
+const CharityScamCheck       = lazy(() => import("./pages/tools/CharityScamCheck"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2905,6 +2912,11 @@ const AppContent = () => {
           <Route path="/tools/hoarder-help-resources" element={<HoarderHelpResources />} />
           <Route path="/tools/memorabilia-preservation" element={<MemorabiliaPreservation />} />
           <Route path="/tools/attic-basement-clearout" element={<AtticBasementClearout />} />
+          <Route path="/tools/burial-insurance-vs-life" element={<BurialInsuranceVsLife />} />
+          <Route path="/tools/estimated-quarterly-taxes" element={<EstimatedQuarterlyTaxes />} />
+          <Route path="/tools/medicare-scam-defense" element={<MedicareScamDefense />} />
+          <Route path="/tools/sweepstakes-scam-guide" element={<SweepstakesScamGuide />} />
+          <Route path="/tools/charity-scam-check" element={<CharityScamCheck />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
