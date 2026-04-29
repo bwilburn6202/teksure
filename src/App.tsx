@@ -790,6 +790,13 @@ const GamingForGrandkids     = lazy(() => import("./pages/tools/GamingForGrandki
 const OnlineLearningKids     = lazy(() => import("./pages/tools/OnlineLearningKids"));
 const AudiobookKids          = lazy(() => import("./pages/tools/AudiobookKids"));
 
+// ── Cycle 88 (April 29 2026) — senior fitness ──
+const ChairYogaApps          = lazy(() => import("./pages/tools/ChairYogaApps"));
+const BalanceExerciseApps    = lazy(() => import("./pages/tools/BalanceExerciseApps"));
+const SwimWorkoutTrackers    = lazy(() => import("./pages/tools/SwimWorkoutTrackers"));
+const SeniorFitnessYouTube   = lazy(() => import("./pages/tools/SeniorFitnessYouTube"));
+const StepCounterCompare     = lazy(() => import("./pages/tools/StepCounterCompare"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2123,6 +2130,13 @@ const AppContent = () => {
           <Route path="/tools/gaming-for-grandkids" element={<GamingForGrandkids />} />
           <Route path="/tools/online-learning-kids" element={<OnlineLearningKids />} />
           <Route path="/tools/audiobook-kids" element={<AudiobookKids />} />
+
+          {/* Cycle 88 — senior fitness */}
+          <Route path="/tools/chair-yoga-apps" element={<ChairYogaApps />} />
+          <Route path="/tools/balance-exercise-apps" element={<BalanceExerciseApps />} />
+          <Route path="/tools/swim-workout-trackers" element={<SwimWorkoutTrackers />} />
+          <Route path="/tools/senior-fitness-youtube" element={<SeniorFitnessYouTube />} />
+          <Route path="/tools/step-counter-compare" element={<StepCounterCompare />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
