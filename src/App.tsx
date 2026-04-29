@@ -804,6 +804,13 @@ const HeartTrackerApps       = lazy(() => import("./pages/tools/HeartTrackerApps
 const BloodPressureCuffs     = lazy(() => import("./pages/tools/BloodPressureCuffs"));
 const MentalHealthAppsCompare = lazy(() => import("./pages/tools/MentalHealthAppsCompare"));
 
+// ── Cycle 90 (April 29 2026) — faith + community ──
+const ChurchLivestreamSetup  = lazy(() => import("./pages/tools/ChurchLivestreamSetup"));
+const HymnAppPicks           = lazy(() => import("./pages/tools/HymnAppPicks"));
+const BibleAppCompare        = lazy(() => import("./pages/tools/BibleAppCompare"));
+const OnlineGriefSupport     = lazy(() => import("./pages/tools/OnlineGriefSupport"));
+const SeniorPenPalApps       = lazy(() => import("./pages/tools/SeniorPenPalApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2151,6 +2158,13 @@ const AppContent = () => {
           <Route path="/tools/heart-tracker-apps" element={<HeartTrackerApps />} />
           <Route path="/tools/blood-pressure-cuffs" element={<BloodPressureCuffs />} />
           <Route path="/tools/mental-health-apps-compare" element={<MentalHealthAppsCompare />} />
+
+          {/* Cycle 90 — faith + community */}
+          <Route path="/tools/church-livestream-setup" element={<ChurchLivestreamSetup />} />
+          <Route path="/tools/hymn-app-picks" element={<HymnAppPicks />} />
+          <Route path="/tools/bible-app-compare" element={<BibleAppCompare />} />
+          <Route path="/tools/online-grief-support" element={<OnlineGriefSupport />} />
+          <Route path="/tools/senior-pen-pal-apps" element={<SeniorPenPalApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
