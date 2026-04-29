@@ -454,6 +454,13 @@ const CyberInsuranceExplainer = lazy(() => import("./pages/tools/CyberInsuranceE
 const UniversalRemotePicker  = lazy(() => import("./pages/tools/UniversalRemotePicker"));
 const LostTvRemoteCoach      = lazy(() => import("./pages/tools/LostTvRemoteCoach"));
 
+// ── Cycle 40 (April 29 2026) — taxes/SNAP/eldercare/lifeline/HSA-FSA ──
+const SeniorTaxCredits       = lazy(() => import("./pages/tools/SeniorTaxCredits"));
+const SeniorSnapAndFood      = lazy(() => import("./pages/tools/SeniorSnapAndFood"));
+const EldercareLocator       = lazy(() => import("./pages/tools/EldercareLocator"));
+const LifelineInternetCoach  = lazy(() => import("./pages/tools/LifelineInternetCoach"));
+const HsaFsaCoach            = lazy(() => import("./pages/tools/HsaFsaCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1451,6 +1458,13 @@ const AppContent = () => {
           <Route path="/tools/cyber-insurance-explainer" element={<CyberInsuranceExplainer />} />
           <Route path="/tools/universal-remote-picker" element={<UniversalRemotePicker />} />
           <Route path="/tools/lost-tv-remote-coach" element={<LostTvRemoteCoach />} />
+
+          {/* Cycle 40 — taxes / SNAP / eldercare / lifeline / HSA-FSA */}
+          <Route path="/tools/senior-tax-credits" element={<SeniorTaxCredits />} />
+          <Route path="/tools/senior-snap-and-food" element={<SeniorSnapAndFood />} />
+          <Route path="/tools/eldercare-locator" element={<EldercareLocator />} />
+          <Route path="/tools/lifeline-internet-coach" element={<LifelineInternetCoach />} />
+          <Route path="/tools/hsa-fsa-coach" element={<HsaFsaCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
