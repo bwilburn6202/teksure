@@ -923,48 +923,7 @@ For seniors, the plant identification and translation features are frequently th
     ],
     tip: `Quick Tip — Google Lens can identify plants and flowers with remarkable accuracy. Point it at any plant in your garden or neighborhood — it'll tell you the name, whether it's toxic to pets, and how to care for it. Gardeners use this constantly.`,
   },
-  {
-    slug: `amazon-alexa-privacy`,
-    title: `How to Review and Delete Your Alexa Voice History`,
-    excerpt: `Amazon's Alexa records and stores voice clips of everything you ask. Here's how to hear what's been recorded, delete it, and stop new recordings from being kept.`,
-    category: `online-privacy`,
-    tags: [`Alexa`, `Amazon Echo`, `voice history`, `privacy`, `smart speaker`, `data deletion`],
-    readTime: `6 min`,
-    thumbnailEmoji: ``,
-    publishedAt: `2026-04-21`,
-    difficulty: `Beginner`,
-    body: `Amazon's Alexa saves audio recordings of what you say after saying "Alexa." These recordings are stored in Amazon's cloud — Amazon says they use them to improve Alexa's voice recognition, and by default they're kept indefinitely. This means there may be months or years of voice clips stored in your Amazon account that you didn't know about.
-
-The recordings are accessible only to you (through your Amazon account), and Amazon has privacy protections around them. But many people are surprised when they discover the recordings exist at all — or when they play them back and hear personal conversations that happened near an Echo device that activated accidentally.
-
-Amazon gives you full control over these recordings. You can listen to them, delete individual clips or all of them, and set up automatic deletion so recordings are removed after 3 months or 18 months instead of being kept forever. You can also turn off the feature that allows Amazon to use your recordings for product improvement.
-
-Making these changes takes about 10 minutes through the Alexa Privacy settings in the Alexa app or at alexa.amazon.com on a computer.`,
-    steps: [
-      {
-        title: `Open Alexa privacy settings`,
-        content: `On your phone, open the Amazon Alexa app (orange icon with the Alexa wave symbol). Tap "More" in the bottom right corner, then tap "Settings." Scroll down to "Alexa Privacy" and tap it. Alternatively, on a computer, go to amazon.com, click Account, and look for "Alexa Privacy" in the account settings.`,
-      },
-      {
-        title: `Review your voice history`,
-        content: `In Alexa Privacy, tap "Review Voice History." You'll see a list of Alexa interactions, sorted by date. Tap any entry to see the text transcription of what was said and listen to the actual audio recording. Scroll through and look at what's been captured. You can filter by date range or by device. Seeing what's stored is often the most eye-opening part of this process.`,
-      },
-      {
-        title: `Delete recordings`,
-        content: `To delete a single recording: tap it, then tap "Delete recording." To delete everything: tap the filter at the top of the Voice History list, set the date range to "All history," then tap the three-dot menu and select "Delete all recordings in this date range." Confirm. All recordings are permanently deleted from Amazon's servers. You can also ask Alexa directly: "Alexa, delete everything I said today" or "Alexa, delete my voice history."`,
-      },
-      {
-        title: `Set automatic deletion`,
-        content: `In Alexa Privacy > Manage Your Alexa Data, find "Automatically delete recordings." Choose either "3 months" or "18 months." This means any voice recording older than your chosen time period is automatically and permanently deleted. This is a good ongoing privacy protection so recordings don't build up indefinitely.`,
-      },
-      {
-        title: `Turn off use of recordings for product improvement`,
-        content: `Still in Manage Your Alexa Data, find the section on using voice recordings to improve Amazon services. Toggle this off. This stops Amazon from using your audio clips in human review processes meant to improve Alexa's voice recognition. Your Alexa will still work exactly the same — Amazon doesn't need to use your recordings to serve you personally.`,
-      },
-    ],
-    tip: `Quick Tip — You can also delete recent recordings with your voice: "Alexa, delete what I just said" removes the last voice interaction. "Alexa, delete everything I said today" clears the day's recordings. No app needed.`,
-  },
-  {
+    {
     slug: `iphone-widgets-beginners`,
     title: `How to Add and Customize Widgets on Your iPhone`,
     excerpt: `Widgets show useful information — weather, calendar, photos, battery, news — on your Home Screen without opening any app. Here's how to add and arrange them.`,

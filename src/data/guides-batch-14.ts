@@ -574,43 +574,7 @@ export const guidesBatch14: Guide[] = [
     ],
   },
 
-  {
-    slug: 'how-to-use-gmail',
-    title: 'How to Set Up and Use Gmail',
-    excerpt: `Gmail is a free email service from Google — here's how to create an account, send emails, and stay organized.`,
-    category: 'essential-skills',
-    tags: ['gmail', 'email', 'google', 'setup', 'send email', 'inbox'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "Gmail is Google's free email service used by billions of people worldwide. It's accessible on any phone, tablet, or computer. If you have a Google account (or want one), you have a free Gmail address. Gmail keeps your inbox organized automatically and has powerful search so you can always find any old email.",
-    steps: [
-      {
-        title: 'Create a Gmail account',
-        content: 'Go to gmail.com in a browser or open the Gmail app. Tap "Create account." Fill in your first name, last name, and choose an email address — this will be yourname@gmail.com. Choose a password and confirm it. Google will ask for your phone number to verify your identity. Enter the 6-digit code sent to your phone. Your Gmail account is now ready.',
-        tip: 'If the username you want is already taken (like "johndoe"), try adding your birth year or a middle initial: "johndoe1955" or "john.m.doe".',
-      },
-      {
-        title: 'Send your first email',
-        content: `On computer: Click the "Compose" button (red pencil icon) on the left side. In the "To" field, type the recipient's email address. In "Subject," type a brief description of the email. Click in the large text area and type your message. Click the blue "Send" button when ready. On the app: tap the pencil/compose icon at the bottom right and follow the same steps.`,
-      },
-      {
-        title: 'Read, reply to, and organize emails',
-        content: 'Your inbox shows all received emails. Tap or click any email to read it. At the bottom of the email, tap "Reply" to respond to the sender, "Reply all" to respond to everyone on the email, or "Forward" to send the email to someone new. To delete an email, swipe it left (on phone) or check the box and click the trash icon. Deleted emails go to Trash and are automatically deleted after 30 days.',
-      },
-      {
-        title: `Use Gmail's search to find any email`,
-        content: `Gmail has powerful search built in. Click or tap the search bar at the top and type any words from the email you're looking for — the sender's name, a subject word, or any text from the message. Gmail searches all your emails instantly. You can also search for "emails from John" or "emails about dentist" in plain language.`,
-        tip: `Gmail automatically sorts promotional emails (store ads) and social media notifications into separate "Promotions" and "Social" tabs to keep your main inbox cleaner. Tap these tabs to see what's there.`,
-      },
-      {
-        title: 'Keep your inbox safe from spam',
-        content: `If a suspicious email arrives, do not click any links in it. Instead, open the email and click the three-dot menu (or right-click on a computer) and select "Report spam." Gmail will move it to Spam and use it to train its filters. For emails that keep coming that you don't want, scroll to the very bottom of the email and click "Unsubscribe" — this stops legitimate senders from emailing you again.`,
-      },
-    ],
-  },
-
+  
   {
     slug: 'how-to-check-credit-score-free',
     title: 'How to Check Your Credit Score for Free',

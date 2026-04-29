@@ -617,43 +617,7 @@ export const guidesBatch33: Guide[] = [
     ],
   },
 
-  {
-    slug: 'airdrop-setup-tips-guide',
-    title: 'How to Use AirDrop to Share Files Between Apple Devices',
-    excerpt: 'AirDrop lets you instantly send photos, videos, and files between iPhones, iPads, and Macs without email or texting — fast, wireless, and private.',
-    body: `AirDrop is Apple's wireless file-sharing feature that works between iPhones, iPads, and Macs over Wi-Fi and Bluetooth. It is the fastest way to share a photo, document, or link between Apple devices — typically transferring files in seconds with no internet required.\n\n**What AirDrop can share**: Photos, videos, PDFs, links, contacts, audio files, documents, app files, and almost any other type of content on your Apple device.\n\n**How it works**: Both devices need Wi-Fi and Bluetooth turned on (even though they do not need to be on the same Wi-Fi network). AirDrop creates a direct peer-to-peer connection between the devices. Files transfer without going through the internet.\n\n**Privacy settings**:\n- **Contacts Only**: Only people in your contacts list can send you AirDrop files\n- **Everyone for 10 Minutes**: Anyone nearby can send you a file for a limited window (good for a single exchange)\n- **Off**: AirDrop completely disabled\n\nFor most people, "Contacts Only" is the right default setting — it prevents strangers from sending you unwanted content while still allowing easy sharing with family and friends.\n\nAirDrop works when both devices are within about 30 feet of each other. If AirDrop is not appearing as an option, check that both devices have Wi-Fi and Bluetooth enabled and that AirDrop is not set to "Off."`,
-    category: 'essential-skills',
-    tags: ['airdrop', 'iphone', 'mac', 'file sharing', 'apple'],
-    readTime: '4 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    steps: [
-      {
-        title: 'Enable AirDrop on your iPhone',
-        content: 'Open Control Center (swipe down from top-right corner). Long-press the connectivity box in the top-left. Tap "AirDrop" → choose "Contacts Only" for everyday use or "Everyone for 10 Minutes" for a one-time exchange with someone not in your contacts.',
-      },
-      {
-        title: 'Select a photo or file to share',
-        content: 'Open Photos and find the photo you want to share. Tap the Share button (box with an arrow pointing up). Look for the AirDrop section showing nearby Apple devices.',
-      },
-      {
-        title: `Tap the recipient's name`,
-        content: 'Nearby Apple devices with AirDrop on appear in the share sheet with their device name. Tap the name of the person or device you want to share with.',
-        tip: 'If the recipient does not appear, make sure their iPhone is unlocked and they have AirDrop turned on. Check both devices are within 30 feet of each other.',
-      },
-      {
-        title: 'Recipient accepts the transfer',
-        content: 'The other person sees a pop-up asking if they want to accept the file. They tap "Accept" and the file transfers instantly, appearing in their Photos app (for photos) or Downloads folder (for other files).',
-      },
-      {
-        title: 'AirDrop between iPhone and Mac',
-        content: 'AirDrop also works between iPhone and Mac. On Mac, make sure AirDrop is enabled in Finder (Go → AirDrop) or Control Center. The iPhone sees the Mac as a nearby device, and vice versa.',
-        warning: 'If receiving AirDrop from strangers, change your setting to "Contacts Only." "Everyone" mode can result in unsolicited content from strangers in public places.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'bixby-samsung-guide',
     title: 'How to Use Bixby on Samsung Galaxy Phones',

@@ -17,6 +17,7 @@ import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
+import { guideRedirects } from '@/data/guide-redirects';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
@@ -378,7 +379,12 @@ const GuideDetail = () => {
   const stepCount = guide?.steps?.length || 0;
   const { activeStep, stepsRef } = useStepProgress(stepCount);
 
-  if (!guide) return <Navigate to="/guides" replace />;
+  if (!guide) {
+    if (slug && guideRedirects[slug]) {
+      return <Navigate to={`/guides/${guideRedirects[slug]}`} replace />;
+    }
+    return <Navigate to="/guides" replace />;
+  }
 
   // Guides are free for everyone — no auth required to read
 

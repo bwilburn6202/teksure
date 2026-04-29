@@ -693,55 +693,7 @@ A common mistake: deleting apps to free up space, then reinstalling them — eac
       },
     ],
   },
-  {
-    slug: 'android-storage-guide',
-    title: 'How to Free Up Storage Space on Your Android Phone',
-    excerpt: `Android running out of space? Here's how to identify what's taking up storage and clear gigabytes without losing anything important.`,
-    category: 'phone-guides',
-    tags: ['Android', 'storage', 'free up space', 'photos', 'apps'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `When an Android phone runs out of storage, apps stop updating, the camera cannot save new photos, and the phone slows down noticeably. Before buying a new phone, a storage cleanup often breathes new life into an older device.
-
-Android phones show a storage breakdown in Settings, similar to iPhone. Go to Settings → Storage to see total storage used, available space, and a breakdown by category: Apps, Photos, Videos, Audio, Downloads, System, and Other.
-
-Photos and videos are almost universally the biggest storage consumer. Years of photos from birthdays, trips, and everyday life can add up to 15-30 GB or more. The most efficient solution is Google Photos backup with automatic device storage cleanup.
-
-Google Photos backs up your photos to the cloud and can automatically remove locally stored originals after they have been safely backed up — freeing local storage while keeping every photo accessible in the cloud.
-
-Android's built-in "Files" app (on Pixel phones) and third-party storage cleaner apps like Google's Files by Google help find and remove duplicate files, cached data, and unnecessary downloads in a visual, organized way.
-
-Unlike iPhone, many Android phones have a microSD card slot that allows you to add additional storage inexpensively. A 64 GB or 128 GB microSD card can solve storage problems long-term, especially for photos and music — check if your phone model supports expandable storage.`,
-    steps: [
-      {
-        title: 'Check Storage Usage',
-        content: 'Open Settings → Storage (may be under "Device care" on Samsung). Review the breakdown by category. The largest sections — typically Photos/Videos and Apps — are where the biggest savings are found.',
-        tip: 'Samsung phones have a "Device Care" section that shows storage and can run a basic cleanup automatically.',
-      },
-      {
-        title: 'Back Up and Clear Photos with Google Photos',
-        content: 'Open Google Photos → Profile icon → "Free up space on this device." Google Photos shows how much storage can be freed by removing photos that are already safely backed up to the cloud. Tap "Free up [X] GB" to delete local copies while keeping everything in Google Photos.',
-        warning: 'Only tap "Free up space" after confirming that backup is complete (Profile icon → "Photos settings" → Backup → check that backup is on and up to date).',
-      },
-      {
-        title: 'Uninstall Unused Apps',
-        content: 'In Settings → Apps, see a full list of installed apps. Sort by size (tap "Sort" or the three-dot menu → "Sort by size"). Long-press any app you no longer use → "Uninstall." Games and entertainment apps often use 500 MB to several GB each.',
-      },
-      {
-        title: 'Clear App Caches',
-        content: 'Individual app caches accumulate over time. For the largest apps: go to Settings → Apps → tap the app → Storage → "Clear cache." Do this for your browser, streaming apps, and social media apps. This does not delete your data — only temporary files.',
-        tip: 'Social media apps like Facebook and Instagram can build caches of 1-2 GB over time. Clearing these caches regularly is safe.',
-      },
-      {
-        title: 'Use Files by Google to Find Junk',
-        content: 'Install "Files by Google" from the Play Store (free). Open it → "Clean" tab. It identifies junk files, duplicate photos, memes and screenshots, and large files. Tap "Free up space" next to each category to delete files safely. It shows you exactly what it will delete before doing so.',
-        tip: 'Check the "Downloads" folder regularly — it accumulates PDFs, APKs, images, and other files that are no longer needed. Files by Google shows the Downloads folder clearly with sizes.',
-      },
-    ],
-  },
-  {
+    {
     slug: 'laptop-battery-tips',
     title: 'How to Extend Your Laptop Battery Life',
     excerpt: `Simple settings and habits can double your laptop's battery life on a single charge. Here's what actually makes a difference on Windows and Mac.`,
