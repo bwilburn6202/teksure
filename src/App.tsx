@@ -1476,6 +1476,13 @@ const GmailForSeniors        = lazy(() => import("./pages/tools/GmailForSeniors"
 const OutlookForSeniors      = lazy(() => import("./pages/tools/OutlookForSeniors"));
 const BrowserBookmarksGuide  = lazy(() => import("./pages/tools/BrowserBookmarksGuide"));
 
+// ── Cycle 186 (April 29 2026) — social media beginners ──
+const FacebookForBeginners   = lazy(() => import("./pages/tools/FacebookForBeginners"));
+const LinkedInForRetirees    = lazy(() => import("./pages/tools/LinkedInForRetirees"));
+const RedditForSeniors       = lazy(() => import("./pages/tools/RedditForSeniors"));
+const TikTokSafetyGuide      = lazy(() => import("./pages/tools/TikTokSafetyGuide"));
+const InstagramSeniorGuide   = lazy(() => import("./pages/tools/InstagramSeniorGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3397,6 +3404,11 @@ const AppContent = () => {
           <Route path="/tools/gmail-for-seniors" element={<GmailForSeniors />} />
           <Route path="/tools/outlook-for-seniors" element={<OutlookForSeniors />} />
           <Route path="/tools/browser-bookmarks-guide" element={<BrowserBookmarksGuide />} />
+          <Route path="/tools/facebook-for-beginners" element={<FacebookForBeginners />} />
+          <Route path="/tools/linkedin-for-retirees" element={<LinkedInForRetirees />} />
+          <Route path="/tools/reddit-for-seniors" element={<RedditForSeniors />} />
+          <Route path="/tools/tiktok-safety-guide" element={<TikTokSafetyGuide />} />
+          <Route path="/tools/instagram-senior-guide" element={<InstagramSeniorGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
