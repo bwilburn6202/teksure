@@ -587,6 +587,13 @@ const FrozenPipesPrevention  = lazy(() => import("./pages/tools/FrozenPipesPreve
 const GeneratorPick          = lazy(() => import("./pages/tools/GeneratorPick"));
 const PelletGrillCoach       = lazy(() => import("./pages/tools/PelletGrillCoach"));
 
+// ── Cycle 59 (April 29 2026) — credit/HELOC/airbnb/windfall ──
+const CreditScoreCoach       = lazy(() => import("./pages/tools/CreditScoreCoach"));
+const CreditRepairScamWarning = lazy(() => import("./pages/tools/CreditRepairScamWarning"));
+const HelocCoach             = lazy(() => import("./pages/tools/HelocCoach"));
+const BecomeAirbnbHost       = lazy(() => import("./pages/tools/BecomeAirbnbHost"));
+const SuddenMoneyChecklist   = lazy(() => import("./pages/tools/SuddenMoneyChecklist"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1717,6 +1724,13 @@ const AppContent = () => {
           <Route path="/tools/frozen-pipes-prevention" element={<FrozenPipesPrevention />} />
           <Route path="/tools/generator-pick" element={<GeneratorPick />} />
           <Route path="/tools/pellet-grill-coach" element={<PelletGrillCoach />} />
+
+          {/* Cycle 59 — credit / HELOC / airbnb / windfall */}
+          <Route path="/tools/credit-score-coach" element={<CreditScoreCoach />} />
+          <Route path="/tools/credit-repair-scam-warning" element={<CreditRepairScamWarning />} />
+          <Route path="/tools/heloc-coach" element={<HelocCoach />} />
+          <Route path="/tools/become-airbnb-host" element={<BecomeAirbnbHost />} />
+          <Route path="/tools/sudden-money-checklist" element={<SuddenMoneyChecklist />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
