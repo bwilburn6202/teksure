@@ -1301,6 +1301,13 @@ const NationalCemeteryBurial = lazy(() => import("./pages/tools/NationalCemetery
 const VAHomeLoanGuide        = lazy(() => import("./pages/tools/VAHomeLoanGuide"));
 const AgentOrangeBenefits    = lazy(() => import("./pages/tools/AgentOrangeBenefits"));
 
+// ── Cycle 161 (April 29 2026) — government benefits ──
+const MealsOnWheelsGuide     = lazy(() => import("./pages/tools/MealsOnWheelsGuide"));
+const MedicareSavingsPrograms = lazy(() => import("./pages/tools/MedicareSavingsPrograms"));
+const MedicareExtraHelp      = lazy(() => import("./pages/tools/MedicareExtraHelp"));
+const LIHEAPGuide            = lazy(() => import("./pages/tools/LIHEAPGuide"));
+const SeniorPropertyTaxRelief = lazy(() => import("./pages/tools/SeniorPropertyTaxRelief"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3097,6 +3104,11 @@ const AppContent = () => {
           <Route path="/tools/national-cemetery-burial" element={<NationalCemeteryBurial />} />
           <Route path="/tools/va-home-loan-guide" element={<VAHomeLoanGuide />} />
           <Route path="/tools/agent-orange-benefits" element={<AgentOrangeBenefits />} />
+          <Route path="/tools/meals-on-wheels-guide" element={<MealsOnWheelsGuide />} />
+          <Route path="/tools/medicare-savings-programs" element={<MedicareSavingsPrograms />} />
+          <Route path="/tools/medicare-extra-help" element={<MedicareExtraHelp />} />
+          <Route path="/tools/liheap-guide" element={<LIHEAPGuide />} />
+          <Route path="/tools/senior-property-tax-relief" element={<SeniorPropertyTaxRelief />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
