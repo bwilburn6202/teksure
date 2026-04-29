@@ -559,6 +559,13 @@ const AnnuityWarning         = lazy(() => import("./pages/tools/AnnuityWarning")
 const TrustVsWillExplainer   = lazy(() => import("./pages/tools/TrustVsWillExplainer"));
 const LoyaltyProgramsCompared = lazy(() => import("./pages/tools/LoyaltyProgramsCompared"));
 
+// ── Cycle 55 (April 29 2026) — faith / disease support ──
+const BibleChristianApps     = lazy(() => import("./pages/tools/BibleChristianApps"));
+const CatholicMassApps       = lazy(() => import("./pages/tools/CatholicMassApps"));
+const JewishCalendarApps     = lazy(() => import("./pages/tools/JewishCalendarApps"));
+const IslamicPrayerApps      = lazy(() => import("./pages/tools/IslamicPrayerApps"));
+const DiseaseSupportCommunities = lazy(() => import("./pages/tools/DiseaseSupportCommunities"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1661,6 +1668,13 @@ const AppContent = () => {
           <Route path="/tools/annuity-warning" element={<AnnuityWarning />} />
           <Route path="/tools/trust-vs-will-explainer" element={<TrustVsWillExplainer />} />
           <Route path="/tools/loyalty-programs-compared" element={<LoyaltyProgramsCompared />} />
+
+          {/* Cycle 55 — faith / disease support */}
+          <Route path="/tools/bible-christian-apps" element={<BibleChristianApps />} />
+          <Route path="/tools/catholic-mass-apps" element={<CatholicMassApps />} />
+          <Route path="/tools/jewish-calendar-apps" element={<JewishCalendarApps />} />
+          <Route path="/tools/islamic-prayer-apps" element={<IslamicPrayerApps />} />
+          <Route path="/tools/disease-support-communities" element={<DiseaseSupportCommunities />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
