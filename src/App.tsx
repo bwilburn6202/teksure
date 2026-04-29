@@ -384,6 +384,13 @@ const AppleGoogleAccountRecovery = lazy(() => import("./pages/tools/AppleGoogleA
 const KeyboardShortcutsCheatsheet = lazy(() => import("./pages/tools/KeyboardShortcutsCheatsheet"));
 const TremorPhoneSetup       = lazy(() => import("./pages/tools/TremorPhoneSetup"));
 
+// ── Cycle 30 (April 29 2026) — car/EV/used cars/flights/window mgmt ──
+const CarPlayAndroidAuto     = lazy(() => import("./pages/tools/CarPlayAndroidAuto"));
+const EvChargingApps         = lazy(() => import("./pages/tools/EvChargingApps"));
+const UsedCarResearchApps    = lazy(() => import("./pages/tools/UsedCarResearchApps"));
+const FlightSearchApps       = lazy(() => import("./pages/tools/FlightSearchApps"));
+const WindowManagementCoach  = lazy(() => import("./pages/tools/WindowManagementCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1311,6 +1318,13 @@ const AppContent = () => {
           <Route path="/tools/account-recovery" element={<AppleGoogleAccountRecovery />} />
           <Route path="/tools/keyboard-shortcuts-cheatsheet" element={<KeyboardShortcutsCheatsheet />} />
           <Route path="/tools/tremor-phone-setup" element={<TremorPhoneSetup />} />
+
+          {/* Cycle 30 — car / EV / used cars / flights / window management */}
+          <Route path="/tools/carplay-android-auto" element={<CarPlayAndroidAuto />} />
+          <Route path="/tools/ev-charging-apps" element={<EvChargingApps />} />
+          <Route path="/tools/used-car-research-apps" element={<UsedCarResearchApps />} />
+          <Route path="/tools/flight-search-apps" element={<FlightSearchApps />} />
+          <Route path="/tools/window-management-coach" element={<WindowManagementCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
