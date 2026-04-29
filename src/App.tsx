@@ -1469,6 +1469,13 @@ const RiverCruiseGuide       = lazy(() => import("./pages/tools/RiverCruiseGuide
 const TrainAroundTheWorld    = lazy(() => import("./pages/tools/TrainAroundTheWorld"));
 const TouristAttractionPasses = lazy(() => import("./pages/tools/TouristAttractionPasses"));
 
+// ── Cycle 185 (April 29 2026) — basic skills ──
+const WordForSeniors         = lazy(() => import("./pages/tools/WordForSeniors"));
+const ExcelForSeniors        = lazy(() => import("./pages/tools/ExcelForSeniors"));
+const GmailForSeniors        = lazy(() => import("./pages/tools/GmailForSeniors"));
+const OutlookForSeniors      = lazy(() => import("./pages/tools/OutlookForSeniors"));
+const BrowserBookmarksGuide  = lazy(() => import("./pages/tools/BrowserBookmarksGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3385,6 +3392,11 @@ const AppContent = () => {
           <Route path="/tools/river-cruise-guide" element={<RiverCruiseGuide />} />
           <Route path="/tools/train-around-the-world" element={<TrainAroundTheWorld />} />
           <Route path="/tools/tourist-attraction-passes" element={<TouristAttractionPasses />} />
+          <Route path="/tools/word-for-seniors" element={<WordForSeniors />} />
+          <Route path="/tools/excel-for-seniors" element={<ExcelForSeniors />} />
+          <Route path="/tools/gmail-for-seniors" element={<GmailForSeniors />} />
+          <Route path="/tools/outlook-for-seniors" element={<OutlookForSeniors />} />
+          <Route path="/tools/browser-bookmarks-guide" element={<BrowserBookmarksGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
