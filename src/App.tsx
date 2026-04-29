@@ -335,6 +335,13 @@ const SeniorCellPlanPicker   = lazy(() => import("./pages/tools/SeniorCellPlanPi
 const HandymanServiceApps    = lazy(() => import("./pages/tools/HandymanServiceApps"));
 const RetirementJobsApps     = lazy(() => import("./pages/tools/RetirementJobsApps"));
 
+// ── Cycle 23 (April 29 2026) — privacy/banking/travel/brokerage/screen ──
+const FacebookPrivacyCoach   = lazy(() => import("./pages/tools/FacebookPrivacyCoach"));
+const MobileBankingCoach     = lazy(() => import("./pages/tools/MobileBankingCoach"));
+const InternationalTravelSim = lazy(() => import("./pages/tools/InternationalTravelSim"));
+const BrokeragePicker        = lazy(() => import("./pages/tools/BrokeragePicker"));
+const AdultScreenTimeCoach   = lazy(() => import("./pages/tools/AdultScreenTimeCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1213,6 +1220,13 @@ const AppContent = () => {
           <Route path="/tools/senior-cell-plan-picker" element={<SeniorCellPlanPicker />} />
           <Route path="/tools/handyman-service-apps" element={<HandymanServiceApps />} />
           <Route path="/tools/retirement-jobs-apps" element={<RetirementJobsApps />} />
+
+          {/* Cycle 23 — privacy / banking / travel / brokerage / screen */}
+          <Route path="/tools/facebook-privacy-coach" element={<FacebookPrivacyCoach />} />
+          <Route path="/tools/mobile-banking-coach" element={<MobileBankingCoach />} />
+          <Route path="/tools/international-travel-sim" element={<InternationalTravelSim />} />
+          <Route path="/tools/brokerage-picker" element={<BrokeragePicker />} />
+          <Route path="/tools/adult-screen-time-coach" element={<AdultScreenTimeCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
