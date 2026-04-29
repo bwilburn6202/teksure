@@ -1441,6 +1441,13 @@ const StarlinkForRural       = lazy(() => import("./pages/tools/StarlinkForRural
 const TMobileHomeInternet    = lazy(() => import("./pages/tools/TMobileHomeInternet"));
 const ACPInternetSubsidy     = lazy(() => import("./pages/tools/ACPInternetSubsidy"));
 
+// ── Cycle 181 (April 29 2026) — hearing tech ──
+const TinnitusReliefApps     = lazy(() => import("./pages/tools/TinnitusReliefApps"));
+const ASLLearningSeniors     = lazy(() => import("./pages/tools/ASLLearningSeniors"));
+const LiveCaptionsApps       = lazy(() => import("./pages/tools/LiveCaptionsApps"));
+const CochlearImplantBasics  = lazy(() => import("./pages/tools/CochlearImplantBasics"));
+const AssistiveListeningDevices = lazy(() => import("./pages/tools/AssistiveListeningDevices"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3337,6 +3344,11 @@ const AppContent = () => {
           <Route path="/tools/starlink-for-rural" element={<StarlinkForRural />} />
           <Route path="/tools/t-mobile-home-internet" element={<TMobileHomeInternet />} />
           <Route path="/tools/acp-internet-subsidy" element={<ACPInternetSubsidy />} />
+          <Route path="/tools/tinnitus-relief-apps" element={<TinnitusReliefApps />} />
+          <Route path="/tools/asl-learning-seniors" element={<ASLLearningSeniors />} />
+          <Route path="/tools/live-captions-apps" element={<LiveCaptionsApps />} />
+          <Route path="/tools/cochlear-implant-basics" element={<CochlearImplantBasics />} />
+          <Route path="/tools/assistive-listening-devices" element={<AssistiveListeningDevices />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
