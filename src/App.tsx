@@ -426,6 +426,13 @@ const LongTermCarePlanning   = lazy(() => import("./pages/tools/LongTermCarePlan
 const ReverseMortgageExplained = lazy(() => import("./pages/tools/ReverseMortgageExplained"));
 const PensionLumpSumDecision = lazy(() => import("./pages/tools/PensionLumpSumDecision"));
 
+// ── Cycle 36 (April 29 2026) — funeral/hospice/therapy/widow/downsize ──
+const FuneralPlanningCoach   = lazy(() => import("./pages/tools/FuneralPlanningCoach"));
+const HospicePalliativeCoach = lazy(() => import("./pages/tools/HospicePalliativeCoach"));
+const OnlineTherapyApps      = lazy(() => import("./pages/tools/OnlineTherapyApps"));
+const NewlyWidowedChecklist  = lazy(() => import("./pages/tools/NewlyWidowedChecklist"));
+const SeniorDownsizingCoach  = lazy(() => import("./pages/tools/SeniorDownsizingCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1395,6 +1402,13 @@ const AppContent = () => {
           <Route path="/tools/long-term-care-planning" element={<LongTermCarePlanning />} />
           <Route path="/tools/reverse-mortgage-explained" element={<ReverseMortgageExplained />} />
           <Route path="/tools/pension-lump-sum-decision" element={<PensionLumpSumDecision />} />
+
+          {/* Cycle 36 — funeral / hospice / therapy / widow / downsize */}
+          <Route path="/tools/funeral-planning-coach" element={<FuneralPlanningCoach />} />
+          <Route path="/tools/hospice-palliative-coach" element={<HospicePalliativeCoach />} />
+          <Route path="/tools/online-therapy-apps" element={<OnlineTherapyApps />} />
+          <Route path="/tools/newly-widowed-checklist" element={<NewlyWidowedChecklist />} />
+          <Route path="/tools/senior-downsizing-coach" element={<SeniorDownsizingCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
