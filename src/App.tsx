@@ -237,6 +237,13 @@ const PhoneSwitchHelper      = lazy(() => import("./pages/tools/PhoneSwitchHelpe
 const TranslationAppCoach    = lazy(() => import("./pages/tools/TranslationAppCoach"));
 const CaptionedPhoneService  = lazy(() => import("./pages/tools/CaptionedPhoneService"));
 
+// ── Cycle 9 (April 29 2026) — entertainment & home network ──
+const FreeStreamingServices  = lazy(() => import("./pages/tools/FreeStreamingServices"));
+const AntennaTvSetup         = lazy(() => import("./pages/tools/AntennaTvSetup"));
+const LibraryAppHelper       = lazy(() => import("./pages/tools/LibraryAppHelper"));
+const RideshareCoach         = lazy(() => import("./pages/tools/RideshareCoach"));
+const MeshWifiPicker         = lazy(() => import("./pages/tools/MeshWifiPicker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1017,6 +1024,13 @@ const AppContent = () => {
           <Route path="/tools/phone-switch-helper" element={<PhoneSwitchHelper />} />
           <Route path="/tools/translation-app-coach" element={<TranslationAppCoach />} />
           <Route path="/tools/captioned-phone-service" element={<CaptionedPhoneService />} />
+
+          {/* Cycle 9 — entertainment & home network */}
+          <Route path="/tools/free-streaming-services" element={<FreeStreamingServices />} />
+          <Route path="/tools/antenna-tv-setup" element={<AntennaTvSetup />} />
+          <Route path="/tools/library-app-helper" element={<LibraryAppHelper />} />
+          <Route path="/tools/rideshare-coach" element={<RideshareCoach />} />
+          <Route path="/tools/mesh-wifi-picker" element={<MeshWifiPicker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
