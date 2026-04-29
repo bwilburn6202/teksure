@@ -566,6 +566,13 @@ const JewishCalendarApps     = lazy(() => import("./pages/tools/JewishCalendarAp
 const IslamicPrayerApps      = lazy(() => import("./pages/tools/IslamicPrayerApps"));
 const DiseaseSupportCommunities = lazy(() => import("./pages/tools/DiseaseSupportCommunities"));
 
+// ── Cycle 56 (April 29 2026) — DIY/garage/lawn/mower/snow ──
+const DiyRepairApps          = lazy(() => import("./pages/tools/DiyRepairApps"));
+const SmartGarageOpener      = lazy(() => import("./pages/tools/SmartGarageOpener"));
+const LawnCareApps           = lazy(() => import("./pages/tools/LawnCareApps"));
+const RoboticMowerPick       = lazy(() => import("./pages/tools/RoboticMowerPick"));
+const SnowBlowerPick         = lazy(() => import("./pages/tools/SnowBlowerPick"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1675,6 +1682,13 @@ const AppContent = () => {
           <Route path="/tools/jewish-calendar-apps" element={<JewishCalendarApps />} />
           <Route path="/tools/islamic-prayer-apps" element={<IslamicPrayerApps />} />
           <Route path="/tools/disease-support-communities" element={<DiseaseSupportCommunities />} />
+
+          {/* Cycle 56 — DIY / garage / lawn / mower / snow */}
+          <Route path="/tools/diy-repair-apps" element={<DiyRepairApps />} />
+          <Route path="/tools/smart-garage-opener" element={<SmartGarageOpener />} />
+          <Route path="/tools/lawn-care-apps" element={<LawnCareApps />} />
+          <Route path="/tools/robotic-mower-pick" element={<RoboticMowerPick />} />
+          <Route path="/tools/snow-blower-pick" element={<SnowBlowerPick />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
