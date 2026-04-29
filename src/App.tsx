@@ -1315,6 +1315,13 @@ const AITranslateRecipe      = lazy(() => import("./pages/tools/AITranslateRecip
 const AIScamProtection       = lazy(() => import("./pages/tools/AIScamProtection"));
 const ClaudeForSeniors       = lazy(() => import("./pages/tools/ClaudeForSeniors"));
 
+// ── Cycle 163 (April 29 2026) — wearables + exercise ──
+const OuraRingForSeniors     = lazy(() => import("./pages/tools/OuraRingForSeniors"));
+const AppleHealthDeepDive    = lazy(() => import("./pages/tools/AppleHealthDeepDive"));
+const CGMForNonDiabetics     = lazy(() => import("./pages/tools/CGMForNonDiabetics"));
+const WalkingProgramFreshStart = lazy(() => import("./pages/tools/WalkingProgramFreshStart"));
+const PelotonAlternatives    = lazy(() => import("./pages/tools/PelotonAlternatives"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3121,6 +3128,11 @@ const AppContent = () => {
           <Route path="/tools/ai-translate-recipe" element={<AITranslateRecipe />} />
           <Route path="/tools/ai-scam-protection" element={<AIScamProtection />} />
           <Route path="/tools/claude-for-seniors" element={<ClaudeForSeniors />} />
+          <Route path="/tools/oura-ring-for-seniors" element={<OuraRingForSeniors />} />
+          <Route path="/tools/apple-health-deep-dive" element={<AppleHealthDeepDive />} />
+          <Route path="/tools/cgm-for-non-diabetics" element={<CGMForNonDiabetics />} />
+          <Route path="/tools/walking-program-fresh-start" element={<WalkingProgramFreshStart />} />
+          <Route path="/tools/peloton-alternatives" element={<PelotonAlternatives />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
