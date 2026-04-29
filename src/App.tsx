@@ -1042,6 +1042,13 @@ const MasterGardenerSignup   = lazy(() => import("./pages/tools/MasterGardenerSi
 const JuryDutyApps           = lazy(() => import("./pages/tools/JuryDutyApps"));
 const GoodSamaritanLaws      = lazy(() => import("./pages/tools/GoodSamaritanLaws"));
 
+// ── Cycle 124 (April 29 2026) — Office productivity ──
+const ZoomBeginnerTips       = lazy(() => import("./pages/tools/ZoomBeginnerTips"));
+const EmailAttachmentBasics  = lazy(() => import("./pages/tools/EmailAttachmentBasics"));
+const GoogleDocsSeniorBasics = lazy(() => import("./pages/tools/GoogleDocsSeniorBasics"));
+const PrintingFromPhone      = lazy(() => import("./pages/tools/PrintingFromPhone"));
+const BackupYourPhone        = lazy(() => import("./pages/tools/BackupYourPhone"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2627,6 +2634,13 @@ const AppContent = () => {
           <Route path="/tools/master-gardener-signup" element={<MasterGardenerSignup />} />
           <Route path="/tools/jury-duty-apps" element={<JuryDutyApps />} />
           <Route path="/tools/good-samaritan-laws" element={<GoodSamaritanLaws />} />
+
+          {/* Cycle 124 — Office productivity */}
+          <Route path="/tools/zoom-beginner-tips" element={<ZoomBeginnerTips />} />
+          <Route path="/tools/email-attachment-basics" element={<EmailAttachmentBasics />} />
+          <Route path="/tools/google-docs-senior-basics" element={<GoogleDocsSeniorBasics />} />
+          <Route path="/tools/printing-from-phone" element={<PrintingFromPhone />} />
+          <Route path="/tools/backup-your-phone" element={<BackupYourPhone />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
