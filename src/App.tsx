@@ -349,6 +349,13 @@ const MedicalRecordsOrganizer = lazy(() => import("./pages/tools/MedicalRecordsO
 const BillsPaperlessOrganizer = lazy(() => import("./pages/tools/BillsPaperlessOrganizer"));
 const JournalingApps         = lazy(() => import("./pages/tools/JournalingApps"));
 
+// ── Cycle 25 (April 29 2026) — caregiving / accessibility / health ──
+const CaregiverCoordinationApps = lazy(() => import("./pages/tools/CaregiverCoordinationApps"));
+const VoiceControlAccessibility = lazy(() => import("./pages/tools/VoiceControlAccessibility"));
+const MedicalAlertPicker     = lazy(() => import("./pages/tools/MedicalAlertPicker"));
+const TelehealthVisitCoach   = lazy(() => import("./pages/tools/TelehealthVisitCoach"));
+const OnlinePharmacyCoach    = lazy(() => import("./pages/tools/OnlinePharmacyCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1241,6 +1248,13 @@ const AppContent = () => {
           <Route path="/tools/medical-records-organizer" element={<MedicalRecordsOrganizer />} />
           <Route path="/tools/bills-paperless-organizer" element={<BillsPaperlessOrganizer />} />
           <Route path="/tools/journaling-apps" element={<JournalingApps />} />
+
+          {/* Cycle 25 — caregiving / accessibility / health */}
+          <Route path="/tools/caregiver-coordination-apps" element={<CaregiverCoordinationApps />} />
+          <Route path="/tools/voice-control-accessibility" element={<VoiceControlAccessibility />} />
+          <Route path="/tools/medical-alert-picker" element={<MedicalAlertPicker />} />
+          <Route path="/tools/telehealth-visit-coach" element={<TelehealthVisitCoach />} />
+          <Route path="/tools/online-pharmacy-coach" element={<OnlinePharmacyCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
