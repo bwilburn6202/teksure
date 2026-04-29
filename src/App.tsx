@@ -1112,6 +1112,13 @@ const GrandparentBudgetTalks = lazy(() => import("./pages/tools/GrandparentBudge
 const FinancialLiteracyKids  = lazy(() => import("./pages/tools/FinancialLiteracyKids"));
 const KidsCodingApps         = lazy(() => import("./pages/tools/KidsCodingApps"));
 
+// ── Cycle 134 (April 29 2026) — tech repair + maintenance ──
+const TonerCartridgeRefill   = lazy(() => import("./pages/tools/TonerCartridgeRefill"));
+const HardDriveBackup        = lazy(() => import("./pages/tools/HardDriveBackup"));
+const ScreenCleaner          = lazy(() => import("./pages/tools/ScreenCleaner"));
+const BatteryReplacement     = lazy(() => import("./pages/tools/BatteryReplacement"));
+const OldPhoneRepurpose      = lazy(() => import("./pages/tools/OldPhoneRepurpose"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2767,6 +2774,13 @@ const AppContent = () => {
           <Route path="/tools/grandparent-budget-talks" element={<GrandparentBudgetTalks />} />
           <Route path="/tools/financial-literacy-kids" element={<FinancialLiteracyKids />} />
           <Route path="/tools/kids-coding-apps" element={<KidsCodingApps />} />
+
+          {/* Cycle 134 — tech repair + maintenance */}
+          <Route path="/tools/toner-cartridge-refill" element={<TonerCartridgeRefill />} />
+          <Route path="/tools/hard-drive-backup" element={<HardDriveBackup />} />
+          <Route path="/tools/screen-cleaner" element={<ScreenCleaner />} />
+          <Route path="/tools/battery-replacement" element={<BatteryReplacement />} />
+          <Route path="/tools/old-phone-repurpose" element={<OldPhoneRepurpose />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
