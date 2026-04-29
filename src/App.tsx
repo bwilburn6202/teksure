@@ -1203,6 +1203,13 @@ const AirPurifierPicks       = lazy(() => import("./pages/tools/AirPurifierPicks
 const MatterStandardExplained = lazy(() => import("./pages/tools/MatterStandardExplained"));
 const SmartCeilingFanGuide   = lazy(() => import("./pages/tools/SmartCeilingFanGuide"));
 
+// ── Cycle 147 (April 29 2026) — chronic conditions ──
+const DiabetesManagementApps = lazy(() => import("./pages/tools/DiabetesManagementApps"));
+const HighBloodPressureApps  = lazy(() => import("./pages/tools/HighBloodPressureApps"));
+const CholesterolGuideSeniors = lazy(() => import("./pages/tools/CholesterolGuideSeniors"));
+const ArthritisManagement    = lazy(() => import("./pages/tools/ArthritisManagement"));
+const OsteoporosisGuide      = lazy(() => import("./pages/tools/OsteoporosisGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2929,6 +2936,11 @@ const AppContent = () => {
           <Route path="/tools/air-purifier-picks" element={<AirPurifierPicks />} />
           <Route path="/tools/matter-standard-explained" element={<MatterStandardExplained />} />
           <Route path="/tools/smart-ceiling-fan-guide" element={<SmartCeilingFanGuide />} />
+          <Route path="/tools/diabetes-management-apps" element={<DiabetesManagementApps />} />
+          <Route path="/tools/high-blood-pressure-apps" element={<HighBloodPressureApps />} />
+          <Route path="/tools/cholesterol-guide-seniors" element={<CholesterolGuideSeniors />} />
+          <Route path="/tools/arthritis-management" element={<ArthritisManagement />} />
+          <Route path="/tools/osteoporosis-guide" element={<OsteoporosisGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
