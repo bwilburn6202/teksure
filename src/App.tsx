@@ -1070,6 +1070,13 @@ const LongTermCareInsurance  = lazy(() => import("./pages/tools/LongTermCareInsu
 const FinalExpenseInsurance  = lazy(() => import("./pages/tools/FinalExpenseInsurance"));
 const RentersInsuranceSeniors = lazy(() => import("./pages/tools/RentersInsuranceSeniors"));
 
+// ── Cycle 128 (April 29 2026) — community + clubs ──
+const SeniorMeetupApps       = lazy(() => import("./pages/tools/SeniorMeetupApps"));
+const ClassReunionTools      = lazy(() => import("./pages/tools/ClassReunionTools"));
+const BookClubAppPicks       = lazy(() => import("./pages/tools/BookClubAppPicks"));
+const GardenClubFinder       = lazy(() => import("./pages/tools/GardenClubFinder"));
+const SeniorTravelGroups     = lazy(() => import("./pages/tools/SeniorTravelGroups"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2683,6 +2690,13 @@ const AppContent = () => {
           <Route path="/tools/long-term-care-insurance" element={<LongTermCareInsurance />} />
           <Route path="/tools/final-expense-insurance" element={<FinalExpenseInsurance />} />
           <Route path="/tools/renters-insurance-seniors" element={<RentersInsuranceSeniors />} />
+
+          {/* Cycle 128 — community + clubs */}
+          <Route path="/tools/senior-meetup-apps" element={<SeniorMeetupApps />} />
+          <Route path="/tools/class-reunion-tools" element={<ClassReunionTools />} />
+          <Route path="/tools/book-club-app-picks" element={<BookClubAppPicks />} />
+          <Route path="/tools/garden-club-finder" element={<GardenClubFinder />} />
+          <Route path="/tools/senior-travel-groups" element={<SeniorTravelGroups />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
