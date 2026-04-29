@@ -279,6 +279,13 @@ const RestaurantReservationCoach = lazy(() => import("./pages/tools/RestaurantRe
 const SeniorDiscountApps     = lazy(() => import("./pages/tools/SeniorDiscountApps"));
 const AmazonPrimeMastery     = lazy(() => import("./pages/tools/AmazonPrimeMastery"));
 
+// ── Cycle 15 (April 29 2026) — finance & retirement ──
+const BudgetAppPicker        = lazy(() => import("./pages/tools/BudgetAppPicker"));
+const RmdExplainer           = lazy(() => import("./pages/tools/RmdExplainer"));
+const FreeTaxFilingCoach     = lazy(() => import("./pages/tools/FreeTaxFilingCoach"));
+const MedicarePartDPicker    = lazy(() => import("./pages/tools/MedicarePartDPicker"));
+const AutoInsuranceComparison = lazy(() => import("./pages/tools/AutoInsuranceComparison"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1101,6 +1108,13 @@ const AppContent = () => {
           <Route path="/tools/restaurant-reservation-coach" element={<RestaurantReservationCoach />} />
           <Route path="/tools/senior-discount-apps" element={<SeniorDiscountApps />} />
           <Route path="/tools/amazon-prime-mastery" element={<AmazonPrimeMastery />} />
+
+          {/* Cycle 15 — finance & retirement */}
+          <Route path="/tools/budget-app-picker" element={<BudgetAppPicker />} />
+          <Route path="/tools/rmd-explainer" element={<RmdExplainer />} />
+          <Route path="/tools/free-tax-filing-coach" element={<FreeTaxFilingCoach />} />
+          <Route path="/tools/medicare-part-d-picker" element={<MedicarePartDPicker />} />
+          <Route path="/tools/auto-insurance-comparison" element={<AutoInsuranceComparison />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
