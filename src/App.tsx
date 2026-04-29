@@ -328,6 +328,13 @@ const GardeningApps          = lazy(() => import("./pages/tools/GardeningApps"))
 const RvCampingApps          = lazy(() => import("./pages/tools/RvCampingApps"));
 const PhoneRepairCoach       = lazy(() => import("./pages/tools/PhoneRepairCoach"));
 
+// ── Cycle 22 (April 29 2026) — scams/contractors/cell/handyman/jobs ──
+const DoorToDoorScamDefense  = lazy(() => import("./pages/tools/DoorToDoorScamDefense"));
+const ContractorVetting      = lazy(() => import("./pages/tools/ContractorVetting"));
+const SeniorCellPlanPicker   = lazy(() => import("./pages/tools/SeniorCellPlanPicker"));
+const HandymanServiceApps    = lazy(() => import("./pages/tools/HandymanServiceApps"));
+const RetirementJobsApps     = lazy(() => import("./pages/tools/RetirementJobsApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1199,6 +1206,13 @@ const AppContent = () => {
           <Route path="/tools/gardening-apps" element={<GardeningApps />} />
           <Route path="/tools/rv-camping-apps" element={<RvCampingApps />} />
           <Route path="/tools/phone-repair-coach" element={<PhoneRepairCoach />} />
+
+          {/* Cycle 22 — scams / contractors / cell / handyman / jobs */}
+          <Route path="/tools/door-to-door-scam-defense" element={<DoorToDoorScamDefense />} />
+          <Route path="/tools/contractor-vetting" element={<ContractorVetting />} />
+          <Route path="/tools/senior-cell-plan-picker" element={<SeniorCellPlanPicker />} />
+          <Route path="/tools/handyman-service-apps" element={<HandymanServiceApps />} />
+          <Route path="/tools/retirement-jobs-apps" element={<RetirementJobsApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
