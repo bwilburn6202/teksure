@@ -524,6 +524,13 @@ const WaterFilterPicker      = lazy(() => import("./pages/tools/WaterFilterPicke
 const SeniorVacuumPicker     = lazy(() => import("./pages/tools/SeniorVacuumPicker"));
 const RecallChecker          = lazy(() => import("./pages/tools/RecallChecker"));
 
+// ── Cycle 50 (April 29 2026) — TV/speakers/vinyl/sports/golf ──
+const SeniorTvBuyingGuide    = lazy(() => import("./pages/tools/SeniorTvBuyingGuide"));
+const BluetoothSpeakerPicker = lazy(() => import("./pages/tools/BluetoothSpeakerPicker"));
+const VinylTurntableCoach    = lazy(() => import("./pages/tools/VinylTurntableCoach"));
+const SportsStreamingPicker  = lazy(() => import("./pages/tools/SportsStreamingPicker"));
+const GolfApps               = lazy(() => import("./pages/tools/GolfApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1591,6 +1598,13 @@ const AppContent = () => {
           <Route path="/tools/water-filter-picker" element={<WaterFilterPicker />} />
           <Route path="/tools/senior-vacuum-picker" element={<SeniorVacuumPicker />} />
           <Route path="/tools/recall-checker" element={<RecallChecker />} />
+
+          {/* Cycle 50 — TV / speakers / vinyl / sports / golf */}
+          <Route path="/tools/senior-tv-buying-guide" element={<SeniorTvBuyingGuide />} />
+          <Route path="/tools/bluetooth-speaker-picker" element={<BluetoothSpeakerPicker />} />
+          <Route path="/tools/vinyl-turntable-coach" element={<VinylTurntableCoach />} />
+          <Route path="/tools/sports-streaming-picker" element={<SportsStreamingPicker />} />
+          <Route path="/tools/golf-apps" element={<GolfApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
