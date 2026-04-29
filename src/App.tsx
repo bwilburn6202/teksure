@@ -1252,6 +1252,13 @@ const TreeCareWhenToCallPro  = lazy(() => import("./pages/tools/TreeCareWhenToCa
 const LeafBlowerPicker       = lazy(() => import("./pages/tools/LeafBlowerPicker"));
 const IceMeltSidewalkSafety  = lazy(() => import("./pages/tools/IceMeltSidewalkSafety"));
 
+// ── Cycle 154 (April 29 2026) — saving money shopping ──
+const AmazonPrimePerks       = lazy(() => import("./pages/tools/AmazonPrimePerks"));
+const WalmartPlusReview      = lazy(() => import("./pages/tools/WalmartPlusReview"));
+const CashbackAppPicks       = lazy(() => import("./pages/tools/CashbackAppPicks"));
+const PrimeDayBlackFriday    = lazy(() => import("./pages/tools/PrimeDayBlackFriday"));
+const GroceryLoyaltyTricks   = lazy(() => import("./pages/tools/GroceryLoyaltyTricks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3013,6 +3020,11 @@ const AppContent = () => {
           <Route path="/tools/tree-care-when-to-call-pro" element={<TreeCareWhenToCallPro />} />
           <Route path="/tools/leaf-blower-picker" element={<LeafBlowerPicker />} />
           <Route path="/tools/ice-melt-sidewalk-safety" element={<IceMeltSidewalkSafety />} />
+          <Route path="/tools/amazon-prime-perks" element={<AmazonPrimePerks />} />
+          <Route path="/tools/walmart-plus-review" element={<WalmartPlusReview />} />
+          <Route path="/tools/cashback-app-picks" element={<CashbackAppPicks />} />
+          <Route path="/tools/prime-day-black-friday" element={<PrimeDayBlackFriday />} />
+          <Route path="/tools/grocery-loyalty-tricks" element={<GroceryLoyaltyTricks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
