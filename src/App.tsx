@@ -63,6 +63,7 @@ const QuickReference         = lazy(() => import("./pages/tools/QuickReference")
 const Troubleshooter         = lazy(() => import("./pages/tools/Troubleshooter"));
 const DeviceChooser          = lazy(() => import("./pages/tools/DeviceChooser"));
 const BackupWizard           = lazy(() => import("./pages/tools/BackupWizard"));
+const PhotoBackupWizard      = lazy(() => import("./pages/tools/PhotoBackupWizard"));
 const SafetyCourse           = lazy(() => import("./pages/tools/SafetyCourse"));
 const Setup                  = lazy(() => import("./pages/Setup"));
 const AppRecommender         = lazy(() => import("./pages/tools/AppRecommender"));
@@ -448,6 +449,7 @@ const AppContent = () => {
           <Route path="/tools/troubleshooter" element={<Troubleshooter />} />
           <Route path="/tools/device-chooser" element={<DeviceChooser />} />
           <Route path="/tools/backup-wizard" element={<BackupWizard />} />
+          <Route path="/tools/photo-backup-wizard" element={<PhotoBackupWizard />} />
           <Route path="/tools/safety-course" element={<SafetyCourse />} />
           <Route path="/setup" element={<Setup />} />
           <Route path="/tools/app-recommender" element={<AppRecommender />} />
