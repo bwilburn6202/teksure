@@ -251,6 +251,13 @@ const DigitizeOldMedia       = lazy(() => import("./pages/tools/DigitizeOldMedia
 const ESignCoach             = lazy(() => import("./pages/tools/ESignCoach"));
 const LoginGovIdMeHelper     = lazy(() => import("./pages/tools/LoginGovIdMeHelper"));
 
+// ── Cycle 11 (April 29 2026) — scams + tablet + basics ──
+const RomanceScamDefense     = lazy(() => import("./pages/tools/RomanceScamDefense"));
+const PigButcheringDefense   = lazy(() => import("./pages/tools/PigButcheringDefense"));
+const CharityVettingTool     = lazy(() => import("./pages/tools/CharityVettingTool"));
+const SeniorTabletPicker     = lazy(() => import("./pages/tools/SeniorTabletPicker"));
+const CopyPasteCoach         = lazy(() => import("./pages/tools/CopyPasteCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1045,6 +1052,13 @@ const AppContent = () => {
           <Route path="/tools/digitize-old-media" element={<DigitizeOldMedia />} />
           <Route path="/tools/esign-coach" element={<ESignCoach />} />
           <Route path="/tools/login-gov-id-me-helper" element={<LoginGovIdMeHelper />} />
+
+          {/* Cycle 11 — scams + tablet + basics */}
+          <Route path="/tools/romance-scam-defense" element={<RomanceScamDefense />} />
+          <Route path="/tools/pig-butchering-defense" element={<PigButcheringDefense />} />
+          <Route path="/tools/charity-vetting-tool" element={<CharityVettingTool />} />
+          <Route path="/tools/senior-tablet-picker" element={<SeniorTabletPicker />} />
+          <Route path="/tools/copy-paste-coach" element={<CopyPasteCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
