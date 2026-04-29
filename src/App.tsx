@@ -517,6 +517,13 @@ const Local311Apps           = lazy(() => import("./pages/tools/Local311Apps"));
 const HomeEnergyMonitor      = lazy(() => import("./pages/tools/HomeEnergyMonitor"));
 const SolarPanelDecisionCoach = lazy(() => import("./pages/tools/SolarPanelDecisionCoach"));
 
+// ── Cycle 49 (April 29 2026) — air/smoke/water/vacuum/recalls ──
+const IndoorAirQuality       = lazy(() => import("./pages/tools/IndoorAirQuality"));
+const SmokeCoDetectorMaintenance = lazy(() => import("./pages/tools/SmokeCoDetectorMaintenance"));
+const WaterFilterPicker      = lazy(() => import("./pages/tools/WaterFilterPicker"));
+const SeniorVacuumPicker     = lazy(() => import("./pages/tools/SeniorVacuumPicker"));
+const RecallChecker          = lazy(() => import("./pages/tools/RecallChecker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1577,6 +1584,13 @@ const AppContent = () => {
           <Route path="/tools/local-311-apps" element={<Local311Apps />} />
           <Route path="/tools/home-energy-monitor" element={<HomeEnergyMonitor />} />
           <Route path="/tools/solar-panel-decision-coach" element={<SolarPanelDecisionCoach />} />
+
+          {/* Cycle 49 — air / smoke / water / vacuum / recalls */}
+          <Route path="/tools/indoor-air-quality" element={<IndoorAirQuality />} />
+          <Route path="/tools/smoke-co-detector-maintenance" element={<SmokeCoDetectorMaintenance />} />
+          <Route path="/tools/water-filter-picker" element={<WaterFilterPicker />} />
+          <Route path="/tools/senior-vacuum-picker" element={<SeniorVacuumPicker />} />
+          <Route path="/tools/recall-checker" element={<RecallChecker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
