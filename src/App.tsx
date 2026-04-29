@@ -573,6 +573,13 @@ const LawnCareApps           = lazy(() => import("./pages/tools/LawnCareApps"));
 const RoboticMowerPick       = lazy(() => import("./pages/tools/RoboticMowerPick"));
 const SnowBlowerPick         = lazy(() => import("./pages/tools/SnowBlowerPick"));
 
+// ── Cycle 57 (April 29 2026) — pet/birds/chickens/sales ──
+const PetLossGrief           = lazy(() => import("./pages/tools/PetLossGrief"));
+const BirdFeederCam          = lazy(() => import("./pages/tools/BirdFeederCam"));
+const BackyardChickenApps    = lazy(() => import("./pages/tools/BackyardChickenApps"));
+const EstateSaleFinder       = lazy(() => import("./pages/tools/EstateSaleFinder"));
+const YardSaleApps           = lazy(() => import("./pages/tools/YardSaleApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1689,6 +1696,13 @@ const AppContent = () => {
           <Route path="/tools/lawn-care-apps" element={<LawnCareApps />} />
           <Route path="/tools/robotic-mower-pick" element={<RoboticMowerPick />} />
           <Route path="/tools/snow-blower-pick" element={<SnowBlowerPick />} />
+
+          {/* Cycle 57 — pet / birds / chickens / sales */}
+          <Route path="/tools/pet-loss-grief" element={<PetLossGrief />} />
+          <Route path="/tools/bird-feeder-cam" element={<BirdFeederCam />} />
+          <Route path="/tools/backyard-chicken-apps" element={<BackyardChickenApps />} />
+          <Route path="/tools/estate-sale-finder" element={<EstateSaleFinder />} />
+          <Route path="/tools/yard-sale-apps" element={<YardSaleApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
