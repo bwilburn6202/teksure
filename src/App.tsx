@@ -1744,6 +1744,11 @@ const RingAlarmSystemGuide      = lazy(() => import("./pages/tools/RingAlarmSyst
 const HomeSecuritySystemCompare = lazy(() => import("./pages/tools/HomeSecuritySystemCompare"));
 const MotionSensorLightsGuide   = lazy(() => import("./pages/tools/MotionSensorLightsGuide"));
 const HomeSecurityChecklist     = lazy(() => import("./pages/tools/HomeSecurityChecklist"));
+const TripItAppGuide            = lazy(() => import("./pages/tools/TripItAppGuide"));
+const PocketWifiAbroad          = lazy(() => import("./pages/tools/PocketWifiAbroad"));
+const VRBOAirbnbCompareSeniors  = lazy(() => import("./pages/tools/VRBOAirbnbCompareSeniors"));
+const SoloSeniorTravelTips      = lazy(() => import("./pages/tools/SoloSeniorTravelTips"));
+const CurrencyExchangeForSeniors = lazy(() => import("./pages/tools/CurrencyExchangeForSeniors"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3861,6 +3866,11 @@ const AppContent = () => {
           <Route path="/tools/home-security-system-compare" element={<HomeSecuritySystemCompare />} />
           <Route path="/tools/motion-sensor-lights-guide" element={<MotionSensorLightsGuide />} />
           <Route path="/tools/home-security-checklist" element={<HomeSecurityChecklist />} />
+          <Route path="/tools/tripit-app-guide" element={<TripItAppGuide />} />
+          <Route path="/tools/pocket-wifi-abroad" element={<PocketWifiAbroad />} />
+          <Route path="/tools/vrbo-airbnb-compare-seniors" element={<VRBOAirbnbCompareSeniors />} />
+          <Route path="/tools/solo-senior-travel-tips" element={<SoloSeniorTravelTips />} />
+          <Route path="/tools/currency-exchange-for-seniors" element={<CurrencyExchangeForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
