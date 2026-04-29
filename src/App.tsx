@@ -986,6 +986,13 @@ const BluetoothSpeakerPicks  = lazy(() => import("./pages/tools/BluetoothSpeaker
 const RadioApps              = lazy(() => import("./pages/tools/RadioApps"));
 const ConcertTicketTips      = lazy(() => import("./pages/tools/ConcertTicketTips"));
 
+// ── Cycle 116 (April 29 2026) — senior parenting + family ──
+const AdultChildBoundaries   = lazy(() => import("./pages/tools/AdultChildBoundaries"));
+const GrandparentRights      = lazy(() => import("./pages/tools/GrandparentRights"));
+const FamilyConflictApps     = lazy(() => import("./pages/tools/FamilyConflictApps"));
+const BlendedFamilyTech      = lazy(() => import("./pages/tools/BlendedFamilyTech"));
+const EstateGiftingPlanning  = lazy(() => import("./pages/tools/EstateGiftingPlanning"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2515,6 +2522,13 @@ const AppContent = () => {
           <Route path="/tools/bluetooth-speaker-picks" element={<BluetoothSpeakerPicks />} />
           <Route path="/tools/radio-apps" element={<RadioApps />} />
           <Route path="/tools/concert-ticket-tips" element={<ConcertTicketTips />} />
+
+          {/* Cycle 116 — senior parenting + family */}
+          <Route path="/tools/adult-child-boundaries" element={<AdultChildBoundaries />} />
+          <Route path="/tools/grandparent-rights" element={<GrandparentRights />} />
+          <Route path="/tools/family-conflict-apps" element={<FamilyConflictApps />} />
+          <Route path="/tools/blended-family-tech" element={<BlendedFamilyTech />} />
+          <Route path="/tools/estate-gifting-planning" element={<EstateGiftingPlanning />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
