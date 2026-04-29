@@ -979,6 +979,13 @@ const ReturnsAtCostco        = lazy(() => import("./pages/tools/ReturnsAtCostco"
 const BestBuyOpenBox         = lazy(() => import("./pages/tools/BestBuyOpenBox"));
 const TraderJoesAppGuide     = lazy(() => import("./pages/tools/TraderJoesAppGuide"));
 
+// ── Cycle 115 (April 29 2026) — senior music + audio ──
+const SpotifyForSeniors      = lazy(() => import("./pages/tools/SpotifyForSeniors"));
+const RecordPlayerStreaming  = lazy(() => import("./pages/tools/RecordPlayerStreaming"));
+const BluetoothSpeakerPicks  = lazy(() => import("./pages/tools/BluetoothSpeakerPicks"));
+const RadioApps              = lazy(() => import("./pages/tools/RadioApps"));
+const ConcertTicketTips      = lazy(() => import("./pages/tools/ConcertTicketTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2501,6 +2508,13 @@ const AppContent = () => {
           <Route path="/tools/returns-at-costco" element={<ReturnsAtCostco />} />
           <Route path="/tools/best-buy-open-box" element={<BestBuyOpenBox />} />
           <Route path="/tools/trader-joes-app-guide" element={<TraderJoesAppGuide />} />
+
+          {/* Cycle 115 — senior music + audio */}
+          <Route path="/tools/spotify-for-seniors" element={<SpotifyForSeniors />} />
+          <Route path="/tools/record-player-streaming" element={<RecordPlayerStreaming />} />
+          <Route path="/tools/bluetooth-speaker-picks" element={<BluetoothSpeakerPicks />} />
+          <Route path="/tools/radio-apps" element={<RadioApps />} />
+          <Route path="/tools/concert-ticket-tips" element={<ConcertTicketTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
