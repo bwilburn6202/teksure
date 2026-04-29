@@ -720,6 +720,13 @@ const TsaPrecheckGlobal      = lazy(() => import("./pages/tools/TsaPrecheckGloba
 const PassportPhotoApps      = lazy(() => import("./pages/tools/PassportPhotoApps"));
 const HotelLoyaltyPrograms   = lazy(() => import("./pages/tools/HotelLoyaltyPrograms"));
 
+// ── Cycle 78 (April 29 2026) — estate + insurance ──
+const HomeInventoryApps      = lazy(() => import("./pages/tools/HomeInventoryApps"));
+const WillSoftwareCompare    = lazy(() => import("./pages/tools/WillSoftwareCompare"));
+const EstateExecutorTools    = lazy(() => import("./pages/tools/EstateExecutorTools"));
+const BeneficiaryCheckup     = lazy(() => import("./pages/tools/BeneficiaryCheckup"));
+const FuneralPrearrangement  = lazy(() => import("./pages/tools/FuneralPrearrangement"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1983,6 +1990,13 @@ const AppContent = () => {
           <Route path="/tools/tsa-precheck-global" element={<TsaPrecheckGlobal />} />
           <Route path="/tools/passport-photo-apps" element={<PassportPhotoApps />} />
           <Route path="/tools/hotel-loyalty-programs" element={<HotelLoyaltyPrograms />} />
+
+          {/* Cycle 78 — estate + insurance */}
+          <Route path="/tools/home-inventory-apps" element={<HomeInventoryApps />} />
+          <Route path="/tools/will-software-compare" element={<WillSoftwareCompare />} />
+          <Route path="/tools/estate-executor-tools" element={<EstateExecutorTools />} />
+          <Route path="/tools/beneficiary-checkup" element={<BeneficiaryCheckup />} />
+          <Route path="/tools/funeral-prearrangement" element={<FuneralPrearrangement />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
