@@ -1616,6 +1616,13 @@ const QuiltingForBeginners   = lazy(() => import("./pages/tools/QuiltingForBegin
 const EmbroideryForSeniors   = lazy(() => import("./pages/tools/EmbroideryForSeniors"));
 const ScrapbookingDigital    = lazy(() => import("./pages/tools/ScrapbookingDigital"));
 
+// ── Cycle 206 (April 29 2026) — holidays ──
+const ChristmasShoppingSeniors = lazy(() => import("./pages/tools/ChristmasShoppingSeniors"));
+const ThanksgivingHostingTech  = lazy(() => import("./pages/tools/ThanksgivingHostingTech"));
+const ValentinesDayDigital     = lazy(() => import("./pages/tools/ValentinesDayDigital"));
+const HalloweenSafetySeniors   = lazy(() => import("./pages/tools/HalloweenSafetySeniors"));
+const NewYearGoalsApps         = lazy(() => import("./pages/tools/NewYearGoalsApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3637,6 +3644,11 @@ const AppContent = () => {
           <Route path="/tools/quilting-for-beginners" element={<QuiltingForBeginners />} />
           <Route path="/tools/embroidery-for-seniors" element={<EmbroideryForSeniors />} />
           <Route path="/tools/scrapbooking-digital" element={<ScrapbookingDigital />} />
+          <Route path="/tools/christmas-shopping-seniors" element={<ChristmasShoppingSeniors />} />
+          <Route path="/tools/thanksgiving-hosting-tech" element={<ThanksgivingHostingTech />} />
+          <Route path="/tools/valentines-day-digital" element={<ValentinesDayDigital />} />
+          <Route path="/tools/halloween-safety-seniors" element={<HalloweenSafetySeniors />} />
+          <Route path="/tools/new-year-goals-apps" element={<NewYearGoalsApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
