@@ -1035,6 +1035,13 @@ const MedicareSupplementCompare = lazy(() => import("./pages/tools/MedicareSuppl
 const IRMAACliffs            = lazy(() => import("./pages/tools/IRMAACliffs"));
 const RMDStrategies          = lazy(() => import("./pages/tools/RMDStrategies"));
 
+// ── Cycle 123 (April 29 2026) — civic + service ──
+const AmericorpVista         = lazy(() => import("./pages/tools/AmericorpVista"));
+const RetiredEducatorPrograms = lazy(() => import("./pages/tools/RetiredEducatorPrograms"));
+const MasterGardenerSignup   = lazy(() => import("./pages/tools/MasterGardenerSignup"));
+const JuryDutyApps           = lazy(() => import("./pages/tools/JuryDutyApps"));
+const GoodSamaritanLaws      = lazy(() => import("./pages/tools/GoodSamaritanLaws"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2613,6 +2620,13 @@ const AppContent = () => {
           <Route path="/tools/medicare-supplement-compare" element={<MedicareSupplementCompare />} />
           <Route path="/tools/irmaa-cliffs" element={<IRMAACliffs />} />
           <Route path="/tools/rmd-strategies" element={<RMDStrategies />} />
+
+          {/* Cycle 123 — civic + service */}
+          <Route path="/tools/americorp-vista" element={<AmericorpVista />} />
+          <Route path="/tools/retired-educator-programs" element={<RetiredEducatorPrograms />} />
+          <Route path="/tools/master-gardener-signup" element={<MasterGardenerSignup />} />
+          <Route path="/tools/jury-duty-apps" element={<JuryDutyApps />} />
+          <Route path="/tools/good-samaritan-laws" element={<GoodSamaritanLaws />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
