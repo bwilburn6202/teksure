@@ -42,20 +42,20 @@ export default function Landing() {
       <main
         id="main-content"
         tabIndex={-1}
-        className="min-h-[calc(100dvh-80px)] sm:min-h-[calc(100dvh-88px)]
+        className="h-[calc(100dvh-80px)] sm:h-[calc(100dvh-88px)]
                    w-full flex flex-col items-center justify-center
-                   px-4 pb-12 outline-none"
+                   px-4 overflow-hidden outline-none"
       >
         <div className="w-full max-w-3xl flex flex-col items-center">
           {/* Logo — large, horizontal */}
-          <div className="mb-10 sm:mb-12">
+          <div className="mb-6 sm:mb-10">
             <img
               src="/teksure-logo.svg"
               alt="TekSure"
               width={552}
               height={120}
               fetchPriority="high"
-              className="h-20 sm:h-24 md:h-28 w-auto block dark:hidden"
+              className="h-16 sm:h-20 md:h-24 w-auto block dark:hidden"
             />
             <img
               src="/teksure-logo-white.svg"
@@ -63,7 +63,7 @@ export default function Landing() {
               aria-hidden="true"
               width={552}
               height={120}
-              className="h-20 sm:h-24 md:h-28 w-auto hidden dark:block"
+              className="h-16 sm:h-20 md:h-24 w-auto hidden dark:block"
             />
           </div>
 
@@ -110,7 +110,7 @@ export default function Landing() {
           {/* Action chips */}
           <nav
             aria-label="Quick actions"
-            className="flex flex-wrap items-center justify-center gap-2.5 mb-12"
+            className="flex flex-wrap items-center justify-center gap-2.5 mb-8"
           >
             {chips.map((c) => (
               <Link
