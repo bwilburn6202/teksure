@@ -1133,6 +1133,13 @@ const CalendarRemindersApps  = lazy(() => import("./pages/tools/CalendarReminder
 const SudokuApps             = lazy(() => import("./pages/tools/SudokuApps"));
 const MathChallengeApps      = lazy(() => import("./pages/tools/MathChallengeApps"));
 
+// ── Cycle 137 (April 29 2026) — friend communication ──
+const TextingEtiquette       = lazy(() => import("./pages/tools/TextingEtiquette"));
+const GroupChatTips          = lazy(() => import("./pages/tools/GroupChatTips"));
+const SnailMailRevival       = lazy(() => import("./pages/tools/SnailMailRevival"));
+const HolidayCardSetup       = lazy(() => import("./pages/tools/HolidayCardSetup"));
+const ChainEmailDontShare    = lazy(() => import("./pages/tools/ChainEmailDontShare"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2809,6 +2816,11 @@ const AppContent = () => {
           <Route path="/tools/calendar-reminders-apps" element={<CalendarRemindersApps />} />
           <Route path="/tools/sudoku-apps" element={<SudokuApps />} />
           <Route path="/tools/math-challenge-apps" element={<MathChallengeApps />} />
+          <Route path="/tools/texting-etiquette" element={<TextingEtiquette />} />
+          <Route path="/tools/group-chat-tips" element={<GroupChatTips />} />
+          <Route path="/tools/snail-mail-revival" element={<SnailMailRevival />} />
+          <Route path="/tools/holiday-card-setup" element={<HolidayCardSetup />} />
+          <Route path="/tools/chain-email-dont-share" element={<ChainEmailDontShare />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
