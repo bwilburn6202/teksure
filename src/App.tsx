@@ -727,6 +727,13 @@ const EstateExecutorTools    = lazy(() => import("./pages/tools/EstateExecutorTo
 const BeneficiaryCheckup     = lazy(() => import("./pages/tools/BeneficiaryCheckup"));
 const FuneralPrearrangement  = lazy(() => import("./pages/tools/FuneralPrearrangement"));
 
+// ── Cycle 79 (April 29 2026) — hobbies + crafts ──
+const KnittingCommunityApps  = lazy(() => import("./pages/tools/KnittingCommunityApps"));
+const BirdIdApps             = lazy(() => import("./pages/tools/BirdIdApps"));
+const RecipeAppPicks         = lazy(() => import("./pages/tools/RecipeAppPicks"));
+const WoodworkingPlans       = lazy(() => import("./pages/tools/WoodworkingPlans"));
+const FishingApps            = lazy(() => import("./pages/tools/FishingApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1997,6 +2004,13 @@ const AppContent = () => {
           <Route path="/tools/estate-executor-tools" element={<EstateExecutorTools />} />
           <Route path="/tools/beneficiary-checkup" element={<BeneficiaryCheckup />} />
           <Route path="/tools/funeral-prearrangement" element={<FuneralPrearrangement />} />
+
+          {/* Cycle 79 — hobbies + crafts */}
+          <Route path="/tools/knitting-community-apps" element={<KnittingCommunityApps />} />
+          <Route path="/tools/bird-id-apps" element={<BirdIdApps />} />
+          <Route path="/tools/recipe-app-picks" element={<RecipeAppPicks />} />
+          <Route path="/tools/woodworking-plans" element={<WoodworkingPlans />} />
+          <Route path="/tools/fishing-apps" element={<FishingApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
