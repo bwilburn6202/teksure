@@ -1539,6 +1539,13 @@ const DashcamPicker          = lazy(() => import("./pages/tools/DashcamPicker"))
 const CarBatteryReplacement  = lazy(() => import("./pages/tools/CarBatteryReplacement"));
 const CarMaintenanceSchedule = lazy(() => import("./pages/tools/CarMaintenanceSchedule"));
 
+// ── Cycle 195 (April 29 2026) — DIY home ──
+const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
+const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
+const CaulkingBasics         = lazy(() => import("./pages/tools/CaulkingBasics"));
+const GeneratorTestRoutine   = lazy(() => import("./pages/tools/GeneratorTestRoutine"));
+const FurnaceFilterSwap      = lazy(() => import("./pages/tools/FurnaceFilterSwap"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3505,6 +3512,11 @@ const AppContent = () => {
           <Route path="/tools/dashcam-picker" element={<DashcamPicker />} />
           <Route path="/tools/car-battery-replacement" element={<CarBatteryReplacement />} />
           <Route path="/tools/car-maintenance-schedule" element={<CarMaintenanceSchedule />} />
+          <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
+          <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
+          <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
+          <Route path="/tools/generator-test-routine" element={<GeneratorTestRoutine />} />
+          <Route path="/tools/furnace-filter-swap" element={<FurnaceFilterSwap />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
