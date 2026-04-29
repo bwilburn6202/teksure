@@ -15,7 +15,7 @@ const doors = [
   {
     to: '/learn',
     icon: GraduationCap,
-    emoji: '',
+    emoji: '‍',
     title: 'Teach me something',
     blurb: 'Step-by-step lessons at your pace. Start with the basics or pick a topic.',
     accent: 'from-blue-500/10 to-blue-500/5',

@@ -180,7 +180,7 @@ export default function Learn() {
         path="/learn"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero */}
         <section className="border-b border-border">
           <div className="container max-w-3xl text-center py-16 md:py-20">
@@ -198,6 +198,28 @@ export default function Learn() {
               <span>43 lessons · written in plain language · updated monthly</span>
             </div>
           </div>
+        </section>
+
+        {/* Cross-link to interactive Courses */}
+        <section className="container max-w-6xl pt-10">
+          <Link
+            to="/courses"
+            className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-primary/30 bg-primary/5 p-5 hover:border-primary/50 transition-all"
+          >
+            <div className="p-3 rounded-xl bg-primary/10 text-primary shrink-0">
+              <Sparkles className="h-6 w-6" aria-hidden="true" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-semibold">
+                New: Interactive Courses with mini-quizzes and certificates
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Six flagship courses that mix guides, practice rooms, and three-question
+                quizzes. Finish every lesson to earn a named certificate.
+              </p>
+            </div>
+            <ArrowRight className="h-5 w-5 text-primary group-hover:translate-x-0.5 transition-transform shrink-0" />
+          </Link>
         </section>
 
         {/* Courses */}

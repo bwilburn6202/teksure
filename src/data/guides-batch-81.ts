@@ -8,7 +8,7 @@ export const guidesBatch81: Guide[] = [
     category: `app-guides`,
     tags: [`ford`, `fordpass`, `remote start`, `connected car`, `vehicle app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The FordPass app turns your smartphone into a remote control for your Ford vehicle. Whether you want to warm up the car before a cold morning drive, check whether you locked the doors, or find where you parked in a busy lot, FordPass puts those controls right on your phone screen.
@@ -61,7 +61,7 @@ The app is free to download and the basic account features cost nothing. Some ad
     category: `app-guides`,
     tags: [`electric vehicle`, `EV`, `road trip`, `charging stations`, `range anxiety`],
     readTime: `8 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Planning a road trip in an electric vehicle is different from planning one in a gas car, but it is very manageable once you understand a few key ideas. The main difference is that instead of stopping at any gas station along the highway, you plan your charging stops in advance — and those stops can take anywhere from 20 minutes to an hour depending on the charger type.
@@ -113,7 +113,7 @@ Pack a portable Level 2 adapter and a standard outlet adapter in your car as a b
     category: `app-guides`,
     tags: [`PlugShare`, `EV charging`, `electric vehicle`, `charging stations`, `road trip`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `PlugShare is a free app that maps every electric vehicle charging station in the United States and around the world. What makes it stand out from other charging maps is its community feature: real EV drivers check in when they use a station and leave comments about whether it worked, how long they waited, and what the surrounding area is like. This real-time information is invaluable when planning a trip or searching for a charger in an unfamiliar area.
@@ -160,7 +160,7 @@ Whether you are a new EV owner figuring out your neighborhood charging options o
     category: `app-guides`,
     tags: [`ChargePoint`, `EV charging`, `electric vehicle`, `charging network`, `app`],
     readTime: `5 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `ChargePoint operates the largest electric vehicle charging network in the United States, with more than 30,000 charging locations spread across workplaces, shopping centers, hotels, parking garages, and public lots. The free ChargePoint app is your control center for finding and using those stations — you can locate chargers near you, start a charging session, monitor your charge in real time, and pay all from your phone.
@@ -206,7 +206,7 @@ ChargePoint stations are mostly Level 2, which adds roughly 15 to 30 miles of ra
     category: `entertainment`,
     tags: [`Audiomack`, `free music`, `streaming`, `hip-hop`, `R&B`, `Afrobeats`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Audiomack is a free music streaming platform that gives you access to millions of songs, albums, mixtapes, and playlists — with no monthly subscription fee. It is particularly popular for hip-hop, R&B, Afrobeats, reggae, and gospel music, and it is one of the best places to discover independent artists who are not yet on mainstream platforms.
@@ -253,7 +253,7 @@ For anyone who wants to explore beyond mainstream radio without paying for a sub
     category: `entertainment`,
     tags: [`Bandcamp`, `independent music`, `music purchase`, `artists`, `vinyl`, `download`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bandcamp is a music platform designed around one idea: artists keep more of the money. When you buy an album or song on Bandcamp, the artist typically receives 80 to 85 percent of the sale price. This is dramatically more than what artists earn from streaming services, where a million plays might pay less than a few thousand dollars. Buying on Bandcamp is one of the most direct ways to financially support a musician you love.
@@ -300,7 +300,7 @@ If you value supporting musicians directly and owning your music rather than ren
     category: `entertainment`,
     tags: [`SoundCloud`, `free music`, `streaming`, `podcasts`, `remixes`, `independent artists`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `SoundCloud is one of the oldest and most distinctive audio platforms on the internet. While Spotify and Apple Music focus on commercially released music, SoundCloud is where artists upload original tracks, remixes, demos, DJ sets, podcasts, and experimental work long before — or instead of — going through traditional music distribution. It is the platform where many now-famous artists built their early fan base, including Billie Eilish, Post Malone, and Chance the Rapper.
@@ -346,7 +346,7 @@ Whether you are chasing the latest underground hip-hop, looking for a relaxing l
     category: `entertainment`,
     tags: [`Tidal`, `HiFi`, `lossless audio`, `music streaming`, `high quality sound`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Tidal is a music streaming service that distinguishes itself from competitors like Spotify by focusing on audio quality. Tidal HiFi streams music in lossless audio formats — meaning the sound file has not been compressed and degraded the way standard streaming services compress music. For listeners with good headphones, speakers, or home audio systems, this translates to audibly richer, cleaner, more detailed sound.
@@ -391,7 +391,7 @@ Tidal also offers a free trial period — usually 30 days — so you can test th
     category: `phone-guides`,
     tags: [`AirPods Pro`, `Apple`, `noise cancellation`, `Transparency mode`, `earbuds`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `AirPods Pro are Apple's premium earbuds with features that go far beyond playing music. Three listening modes make them stand out from standard wireless earbuds: Active Noise Cancellation, Transparency Mode, and Adaptive Audio. Understanding how these modes work and when to use them transforms how you experience everyday sound.
@@ -428,7 +428,7 @@ AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the sam
       },
       {
         title: `Use Conversation Awareness for quick interactions`,
-        content: `Conversation Awareness is a feature (AirPods Pro 2 and later, with iOS 17+) that automatically lowers your music and activates Transparency Mode when it detects you starting to speak. This means you do not need to tap anything when someone starts talking to you or when you want to say something — the AirPods handle it automatically. Enable it under Settings > Bluetooth > your AirPods > Conversation Awareness.`,
+        content: `Conversation Awareness is a feature (AirPods Pro 2 and later, with iOS 17 or later — iOS 18 is the current version) that automatically lowers your music and activates Transparency Mode when it detects you starting to speak. This means you do not need to tap anything when someone starts talking to you or when you want to say something — the AirPods handle it automatically. Enable it under Settings > Bluetooth > your AirPods > Conversation Awareness.`,
       },
     ],
   },
@@ -439,7 +439,7 @@ AirPods Pro pair with any iPhone, iPad, Mac, or Apple Watch signed in to the sam
     category: `phone-guides`,
     tags: [`Sony WH-1000XM5`, `noise canceling headphones`, `Sony`, `Bluetooth`, `audio`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Sony WH-1000XM5 are widely regarded as one of the best pairs of noise-canceling headphones on the market. They offer deep, effective noise cancellation, rich sound quality, very long battery life (up to 30 hours), and a comfortable design suitable for all-day wear. Setting them up takes only a few minutes, and once you learn the touch controls and the Sony Headphones Connect app, you will have fine-grained control over how they sound and behave.
@@ -486,7 +486,7 @@ The headphones come in two colors — black and platinum silver — and include 
     category: `phone-guides`,
     tags: [`Bose QuietComfort`, `noise canceling`, `Bose`, `Bluetooth headphones`, `audio`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bose QuietComfort headphones have been a gold standard in noise-canceling comfort for years. The name says it all — the headphones are designed to be the most comfortable pair you can wear for hours while blocking out the world around you. The current generation combines Bose's well-regarded noise cancellation with a modern USB-C charging system, long battery life, and the Bose Music app for deeper customization.
@@ -532,7 +532,7 @@ Pairing with the Bose Music app lets you customize the noise cancellation experi
     category: `smart-home`,
     tags: [`Echo Dot`, `Amazon`, `Alexa`, `smart speaker`, `voice assistant`, `setup`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Amazon Echo Dot is a small, affordable smart speaker that brings Alexa — Amazon's voice assistant — into any room of your home. It looks like a hockey puck, connects to your Wi-Fi, and responds to voice commands for everything from setting a kitchen timer to playing music, answering questions, controlling smart home devices, and making phone calls to family members.
@@ -579,7 +579,7 @@ After getting your Echo Dot working, the best way to discover its capabilities i
     category: `smart-home`,
     tags: [`Echo Show 8`, `Amazon`, `Alexa`, `smart display`, `video calls`, `smart home`],
     readTime: `7 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Amazon Echo Show 8 is a smart display — a combination of an Alexa smart speaker and an 8-inch touchscreen. This screen unlocks a range of features that a standard Echo Dot cannot offer: video calls with family, a rotating photo frame displaying your personal photos, a visual interface for weather and calendars, recipe cards while cooking, and a smart home control panel showing camera feeds and device status.
@@ -623,7 +623,7 @@ Setting up the Echo Show 8 takes about 15 minutes and requires the same Alexa ap
     category: `smart-home`,
     tags: [`Alexa`, `Drop In`, `Echo`, `family`, `intercom`, `senior care`],
     readTime: `5 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Alexa Drop In is one of the most genuinely useful features for families who want to stay connected across households. It works like a two-way intercom — when you Drop In on someone's Echo device, it connects instantly without ringing. If the recipient has a screen (like an Echo Show), they can see and hear you right away. If they have an audio-only Echo (like a Dot), they hear you through the speaker. A green light and a brief chime announces the incoming Drop In.
@@ -670,7 +670,7 @@ Drop In sessions can be ended by saying "Alexa, hang up" or by tapping the end c
     category: `smart-home`,
     tags: [`Google Home`, `Broadcast`, `Google Nest`, `smart speaker`, `intercom`, `family`],
     readTime: `4 min`,
-    thumbnailEmoji: `📢`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Home's Broadcast feature is a built-in household intercom that sends your recorded voice message to every Google or Nest speaker in your home simultaneously. It is one of the simplest and most practical features of the Google Home ecosystem, and many families use it daily without realizing it has a name.
@@ -712,7 +712,7 @@ For households with children who need reminders, elderly parents who may be in a
     category: `smart-home`,
     tags: [`Google Nest Mini`, `Google Home`, `smart speaker`, `Google Assistant`, `setup`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Google Nest Mini is a compact, affordable smart speaker about the size of a hockey puck that brings Google Assistant into any room of your home. It answers questions, plays music, controls smart home devices, sets timers and reminders, makes calls, and handles a wide range of everyday requests — all through voice commands, without touching a phone or computer.
@@ -759,7 +759,7 @@ Privacy controls are built in. The microphone button on the side of the Nest Min
     category: `ai-guides`,
     tags: [`Microsoft Copilot`, `AI assistant`, `Windows 11`, `Microsoft 365`, `writing help`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Copilot is an artificial intelligence assistant built directly into Windows 11 and Microsoft 365 applications like Word, Excel, PowerPoint, and Outlook. It can answer questions, help you write and edit documents, summarize long emails, explain data in spreadsheets, and generate images — all without leaving the apps you already use.
@@ -806,7 +806,7 @@ Copilot in Windows 11 is accessible by pressing the Windows key + C on your keyb
     category: `ai-guides`,
     tags: [`Google Gemini`, `AI assistant`, `Google AI`, `writing help`, `chatbot`],
     readTime: `6 min`,
-    thumbnailEmoji: `✨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Gemini is Google's artificial intelligence assistant, available as a standalone app, on the web at gemini.google.com, and increasingly built into Google's own apps like Gmail, Google Docs, Google Drive, and Google Messages. It is designed to help you with research, writing, answering complex questions, summarizing long content, and handling everyday tasks using conversational language.
@@ -853,7 +853,7 @@ For casual users, Gemini at gemini.google.com is the easiest starting point — 
     category: `ai-guides`,
     tags: [`Meta AI`, `Facebook AI`, `Instagram AI`, `WhatsApp AI`, `AI assistant`],
     readTime: `5 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Meta AI is an artificial intelligence assistant that Meta (the company behind Facebook, Instagram, WhatsApp, and Messenger) has built directly into all of its apps. You do not need to download anything extra — if you use any of those apps, Meta AI is already available to you inside them.
@@ -900,7 +900,7 @@ A few limitations to be aware of: Meta AI does not have access to your personal 
     category: `ai-guides`,
     tags: [`Grok`, `xAI`, `X Twitter`, `AI assistant`, `chatbot`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Grok is an artificial intelligence chatbot created by xAI, a company founded by Elon Musk. It is available inside the X platform (formerly known as Twitter) and also through a standalone website at grok.com. Grok is designed to answer questions, help with writing, analyze images, and engage in conversation — similar to other AI assistants like ChatGPT or Google Gemini.

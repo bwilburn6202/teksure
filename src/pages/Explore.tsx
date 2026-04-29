@@ -34,7 +34,7 @@ const sections: Section[] = [
     icon: HelpCircle,
     links: [
       { to: '/get-help', label: 'Get Help', icon: HelpCircle },
-      { to: '/get-help', label: 'Book a Technician', icon: Calendar },
+      { to: '/book', label: 'Book a Technician', icon: Calendar },
       { to: '/ai-tutor', label: 'Talk to AI Tutor', icon: Bot },
       { to: '/my-requests', label: 'My Requests', icon: MessageSquare },
     ],
@@ -174,11 +174,12 @@ export default function Explore() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Explore Everything on TekSure"
-        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for plain-English browsing."
+        description="Find every page, tool, and guide on TekSure. A complete sitemap designed for easy browsing."
         path="/explore"
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
       {/* Header */}
       <section className="border-b">
         <div className="container py-12 md:py-16">
@@ -256,6 +257,7 @@ export default function Explore() {
           </Link>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

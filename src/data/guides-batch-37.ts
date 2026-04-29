@@ -8,7 +8,7 @@ export const guidesBatch37: Guide[] = [
     category: 'app-guides',
     tags: ['thredup', 'secondhand', 'resale', 'used clothes', 'sustainable fashion', 'consignment'],
     readTime: '6 min',
-    thumbnailEmoji: '👚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `ThredUp is one of the largest online secondhand clothing stores in the United States. It works as a consignment shop — you can send in bags of your old clothes and ThredUp does all the work of photographing, listing, and selling them for you. In return, you receive a portion of the sale price.
@@ -54,7 +54,7 @@ For buyers, ThredUp is free to use with no membership required. Shipping is typi
     category: 'app-guides',
     tags: ['depop', 'vintage clothing', 'fashion resale', 'secondhand fashion', 'unique clothing'],
     readTime: '5 min',
-    thumbnailEmoji: '🕶️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Depop is a social marketplace app focused on fashion — particularly vintage, unique, and one-of-a-kind clothing items. It's used by millions of people to buy and sell anything from 1970s denim jackets to retro band tees, handmade jewelry, and current-season pieces at discounted prices.
@@ -100,7 +100,7 @@ Depop works on iPhone, Android, and the web at depop.com.`,
     category: 'essential-skills',
     tags: ['buy nothing', 'free stuff', 'community sharing', 'neighborhood', 'facebook groups', 'declutter'],
     readTime: '4 min',
-    thumbnailEmoji: '🎁',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Buy Nothing is a gifting economy community where neighbors give away items they no longer need — completely free, with no trading or money involved. Local groups operate on Facebook and through the official Buy Nothing app.
@@ -145,7 +145,7 @@ To participate, you'll need either Facebook (where most groups exist) or the sta
     category: 'app-guides',
     tags: ['flightaware', 'flight tracking', 'flight status', 'travel', 'airport', 'plane tracking'],
     readTime: '4 min',
-    thumbnailEmoji: '✈️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `FlightAware is a free flight tracking service available as an app and website. It shows you the real-time position of any commercial airplane on a live map, along with its departure and arrival times, altitude, speed, and whether it's running late.
@@ -190,7 +190,7 @@ The app is free. A paid subscription called AeroAPI unlocks additional features 
     category: 'app-guides',
     tags: ['stubhub', 'event tickets', 'concert tickets', 'sports tickets', 'resale', 'ticket buying'],
     readTime: '5 min',
-    thumbnailEmoji: '🎟️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `StubHub is one of the world's largest ticket resale marketplaces. When events sell out on official sites like Ticketmaster, people who bought tickets but can't attend resell them on StubHub. You can find tickets for concerts, NFL and NBA games, baseball, hockey, Broadway shows, comedy, and more.
@@ -236,7 +236,7 @@ StubHub charges a service fee on top of the ticket price — typically 10-15%. T
     category: 'app-guides',
     tags: ['seatgeek', 'ticket deals', 'concert tickets', 'sports tickets', 'ticket comparison'],
     readTime: '4 min',
-    thumbnailEmoji: '🎫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `SeatGeek is a ticket marketplace and price comparison app that makes it easier to find good deals on concert, sports, and theater tickets. Its standout feature is the "Deal Score" — a rating from 0 to 100 on every listing that tells you whether the price is below average (a good deal) or above average (expensive) compared to similar seats at the same event.
@@ -281,7 +281,7 @@ SeatGeek has its own exclusive deals and is the official ticketing partner for s
     category: 'essential-skills',
     tags: ['ticktick', 'to-do list', 'task manager', 'habit tracker', 'productivity', 'reminders'],
     readTime: '5 min',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `TickTick is a task management and habit tracker app available on iPhone, Android, Mac, Windows, and as a web app. It's one of the most highly rated to-do apps available, praised for being both capable and approachable for everyday users.
@@ -326,7 +326,7 @@ Many people find TickTick replaces a combination of sticky notes, paper lists, p
     category: 'essential-skills',
     tags: ['evernote', 'note taking', 'organization', 'digital notes', 'productivity', 'notes app'],
     readTime: '5 min',
-    thumbnailEmoji: '🐘',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Evernote is a note-taking and organization app that lets you save almost anything — typed notes, photos of paper documents, web page clippings, audio recordings, PDF files, and more. Everything is stored in your account and available on all your devices.
@@ -372,7 +372,7 @@ Many people use Evernote as their digital filing cabinet — photographing recei
     category: 'essential-skills',
     tags: ['onenote', 'microsoft', 'note taking', 'digital notebook', 'organization', 'free notes app'],
     readTime: '5 min',
-    thumbnailEmoji: '📓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Microsoft OneNote is a free digital notebook available on iPhone, Android, Mac, Windows, and the web. It organizes notes like a physical binder — with Notebooks that contain Sections, and Sections that contain Pages.
@@ -417,7 +417,7 @@ If you have Microsoft 365 (formerly Office 365), OneNote integrates with Word, E
     category: 'phone-guides',
     tags: ['app library', 'iphone', 'organize iphone', 'ios tips', 'home screen', 'iphone tips'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `App Library is an iPhone feature introduced in iOS 14 that automatically organizes all your apps into smart categories — Suggestions, Recently Added, Social, Entertainment, Utilities, Finance, and more. It lives on the far-right screen of your home screen, one swipe past all your home screen pages.
@@ -459,7 +459,7 @@ The App Library works automatically — you don't need to set anything up. All y
     category: 'phone-guides',
     tags: ['lock screen', 'widgets', 'iphone', 'ios 16', 'customize iphone', 'iphone tips'],
     readTime: '5 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Since iOS 16, iPhones have had customizable lock screens that include a widget area. You can place small informational widgets right on your lock screen — so without even unlocking your phone, you can see the time and temperature at a glance, check your next calendar event, see your step count, view battery levels for connected devices, or see UV index and air quality.
@@ -504,7 +504,7 @@ This feature requires iOS 16 or later and any recent iPhone model (iPhone 8 or n
     category: 'life-transitions',
     tags: ['care.com', 'senior care', 'caregiver', 'home care', 'babysitter', 'elder care'],
     readTime: '6 min',
-    thumbnailEmoji: '🤝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Care.com is a platform that connects families with caregivers and household service providers — including senior care aides, in-home assistants, babysitters, pet sitters, housekeepers, and tutors. With millions of caregivers listed across the United States, it's one of the most comprehensive resources for finding trusted help at home.
@@ -550,7 +550,7 @@ The platform is used by both families seeking care and individuals looking to of
     category: 'app-guides',
     tags: ['wag', 'dog walking', 'pet care', 'dog sitter', 'pet sitting', 'dog care'],
     readTime: '5 min',
-    thumbnailEmoji: '🐕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Wag is an app that connects dog owners with vetted, background-checked local pet care providers. You can book individual dog walks, recurring daily walks, drop-in visits where someone checks on your pet at home, and overnight boarding or house-sitting.
@@ -595,7 +595,7 @@ Wag is available in most US cities. If your area isn't covered, Rover (rover.com
     category: 'health-tech',
     tags: ['healthgrades', 'find a doctor', 'doctor ratings', 'healthcare', 'book appointment', 'medical'],
     readTime: '5 min',
-    thumbnailEmoji: '🩺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Healthgrades is one of the most widely used tools for finding and researching doctors in the United States. The website and app let you search for doctors by specialty, location, and insurance accepted, then view their credentials, hospital affiliations, patient ratings, and malpractice or disciplinary history.
@@ -641,7 +641,7 @@ Other sites like Vitals.com, US News Doctor Finder, and your insurance company's
     category: 'phone-guides',
     tags: ['samsung', 'find my mobile', 'lost phone', 'samsung galaxy', 'phone security', 'remote lock'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Samsung's Find My Mobile is a free service for Samsung Galaxy phone owners that lets you locate, remotely lock, or wipe your phone if it's lost or stolen. It's built into all Samsung Galaxy phones and can be accessed from any computer browser or secondary phone.
@@ -686,7 +686,7 @@ If you have a non-Samsung Android phone, use Google's Find My Device at google.c
     category: 'safety-guides',
     tags: ['apple id', 'account recovery', 'icloud', 'locked out', 'forgot password', 'apple account'],
     readTime: '6 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Your Apple ID is the account that controls everything on your iPhone and iPad — your photos in iCloud, your App Store purchases, your iMessage account, and your device itself. If you forget your Apple ID password or email address, or get locked out after too many wrong attempts, it can feel like you've lost access to everything.
@@ -732,7 +732,7 @@ Never pay anyone claiming to "recover" your Apple ID for a fee — this is a sca
     category: 'communication',
     tags: ['whatsapp', 'group chat', 'family chat', 'group messaging', 'messaging', 'whatsapp tips'],
     readTime: '5 min',
-    thumbnailEmoji: '👨‍👩‍👧‍👦',
+    thumbnailEmoji: '‍‍‍',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `WhatsApp group chats let you have a single ongoing conversation with multiple people at once. Instead of sending the same message to 5 different people individually, you send it once to the group and everyone sees it and can reply.
@@ -779,7 +779,7 @@ WhatsApp is free and works over Wi-Fi or your cellular data connection. All mess
     category: 'phone-guides',
     tags: ['location sharing', 'google maps', 'android', 'family safety', 'share location', 'family tracking'],
     readTime: '5 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Google Maps allows you to share your real-time location with specific people for a set amount of time or indefinitely. The person you share with can open Google Maps and see exactly where you are on a live map.
@@ -824,7 +824,7 @@ Location sharing uses a small amount of battery life and mobile data when active
     category: 'essential-skills',
     tags: ['temu', 'online shopping', 'shopping tips', 'budget shopping', 'discount shopping', 'consumer safety'],
     readTime: '6 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Temu is an online marketplace that sells a huge variety of products — clothing, accessories, home goods, electronics, tools, toys, and more — at very low prices. Prices are often 50-90% lower than what you'd find at US retail stores because most items ship directly from manufacturers in China.
@@ -871,7 +871,7 @@ Privacy-conscious users should know that Temu collects extensive data through it
     category: 'app-guides',
     tags: ['picturethis', 'plant identification', 'gardening', 'plant app', 'nature', 'garden help'],
     readTime: '5 min',
-    thumbnailEmoji: '🌿',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `PictureThis is a plant identification app that uses your phone's camera to identify plants, flowers, trees, and weeds in seconds. Point your camera at any plant, tap the button, and within a few seconds the app tells you exactly what it is — along with details about care, origin, common uses, and whether it's toxic to pets or people.

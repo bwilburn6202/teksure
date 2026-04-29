@@ -329,6 +329,40 @@ const scams: Scam[] = [
       'Report it to the SSA Office of Inspector General at oig.ssa.gov or call 800-269-0271',
     ],
   },
+  // Social: "Getting a call about a free Medicare benefit review? This is a scam targeting seniors right now — here's the single thing to say before you hang up."
+  // Newsletter: "Medicare impersonation scams are up sharply in 2026. Callers claim to offer a free 'annual benefit review' — but their real goal is your Medicare number and banking details. Medicare will NEVER call you unsolicited for a benefit review. Here's what to do."
+  {
+    title: 'Fake "Medicare Benefit Review" Call Scam (2026)',
+    redFlags: [
+      'Caller claims to be from "Medicare," "Social Security," or a "Medicare Benefits Office" and offers a free annual benefit review or new benefits you have not yet claimed',
+      'They ask for your Medicare ID number, Social Security number, or banking information to "update your records" or "activate your benefits"',
+      'They offer free medical equipment, dental coverage, or extra benefits you were not expecting — often described as a "limited-time program"',
+      'They pressure you to confirm details immediately or warn that your benefits will be suspended if you don\'t comply',
+    ],
+    whatToDo: [
+      'Hang up — Medicare will never call you unsolicited to offer a benefit review or ask for your Medicare number over the phone',
+      'Never give your Medicare ID, Social Security number, or bank details to anyone who calls you first — even if they already know your name and some of your information',
+      'If you want to review your actual Medicare benefits, call Medicare directly at 1-800-MEDICARE (1-800-633-4227) using the number you find yourself',
+      'Report the call to the FTC at ReportFraud.ftc.gov and to 1-800-HHS-TIPS (1-800-447-8477)',
+    ],
+  },
+  // Social: "Getting a robocall saying your electricity will be shut off in 2 hours? That's not your utility company — it's a scam. Here's what to do."
+  // Newsletter: "Utility shutoff threat scams are surging in 2026 — scammers impersonate electric and gas companies, creating artificial urgency (\"shut off in 2 hours\") to pressure immediate payment by gift card or Zelle. Your real utility company will never demand gift card payment."
+  {
+    title: 'Utility Shutoff Threat Scam (2026)',
+    redFlags: [
+      'Robocall or live caller claims your electricity, gas, or water will be disconnected within 1–2 hours unless you pay an overdue balance immediately',
+      'They demand payment by gift card, Zelle, wire transfer, or cryptocurrency — payment methods that cannot be reversed',
+      'The caller ID shows a name that looks like your utility company, but caller ID can be faked',
+      'They offer to "waive the reconnection fee" if you pay right now — creating urgency to pressure a quick decision',
+    ],
+    whatToDo: [
+      'Hang up and call your utility company directly using the number printed on your paper bill or the official website — not any number the caller gives you',
+      'Real utilities always send multiple written notices by mail before disconnecting service — they do not threaten same-day shutoff without prior written warning',
+      'Never pay a utility bill by gift card — no legitimate utility company accepts gift cards as payment, ever',
+      'Report the call to the FTC at ReportFraud.ftc.gov and to your state\'s public utilities commission',
+    ],
+  },
   // Social: "The FTC says investment scams are now the #1 way Americans lose money — average loss $20,000. Here are the exact warning signs to know before someone pitches you."
   // Newsletter: "The FTC issued a fresh alert in April 2026: investment scams have hit record levels, with AI-generated celebrity endorsements making fake platforms nearly impossible to spot at a glance. Here's how to check if any investment opportunity is real before you put any money in."
   {
@@ -345,42 +379,6 @@ const scams: Scam[] = [
       'Never pay a fee to withdraw your own money — demanding a withdrawal fee is a second theft designed to take even more from you',
       'Report suspected investment fraud to the FTC at ReportFraud.ftc.gov and to the SEC at sec.gov/tcr',
       'Call the AARP Fraud Watch Network helpline free at 877-908-3360 (Mon–Fri, 8 AM–8 PM ET) for help understanding your options',
-    ],
-  },
-  // Social: "Got a text saying your Apple Pay was used somewhere strange? AARP says scammers are using these fake alerts to drain bank accounts in minutes. Here's the safe way to check."
-  // Newsletter: "AARP's Fraud Watch Network just flagged a surge in fake Apple Pay alerts. The text looks official, includes a phone number to call, and the person who answers already knows your address or workplace. The safe move: never call a number from a text — open the Wallet app on your iPhone yourself and check your activity there."
-  {
-    title: 'Fake Apple Pay Alert Text Scam (April 2026)',
-    redFlags: [
-      'Text claims there was suspicious Apple Pay activity, an account lockdown, or an unauthorized purchase you do not recognize',
-      'Message includes a phone number to call right now to "verify" or "reverse" the charge — Apple never asks you to call a number from a text',
-      'When you call, the person on the line already knows personal details like your address or workplace, which makes the call feel real',
-      'They pressure you to move money, buy gift cards, or send funds via Apple Cash to "protect" your account',
-    ],
-    whatToDo: [
-      'Do not call any number from the text — open the Wallet app on your iPhone yourself and tap your card to check recent transactions',
-      'Apple will NEVER ask for your password, device passcode, or two-factor code over the phone — anyone asking is a scammer',
-      'If you think there might be a real charge, contact Apple at support.apple.com or call your bank using the number on the back of your card',
-      'Forward the suspicious text to reportphishing@apple.com and to the FTC at ReportFraud.ftc.gov',
-      'If you already shared information or moved money, call your bank immediately to stop the transactions',
-    ],
-  },
-  // Social: "Getting unsolicited calls about lowering your credit card rate? The FTC just confirmed these are scams — and they're after your card number, not your interest rate."
-  // Newsletter: "The FTC issued a fresh warning in April 2026: companies cold-calling to offer 'lower credit card interest rates' are scams. They charge an upfront fee, claim a fake relationship with your bank, and walk away with your card number. The truth: only your bank can lower your rate — and the call is free."
-  {
-    title: 'Fake Credit Card Interest Rate Reduction Scam (April 2026)',
-    redFlags: [
-      'Unsolicited robocall or live caller offers to "lower your credit card interest rate" — sometimes claiming to be from Visa, Mastercard, or your bank',
-      'Caller asks for your full credit card number, expiration, security code, or Social Security number to "verify your account"',
-      'They demand an upfront fee — often $500 to $2,000 — paid by gift card, wire transfer, Zelle, or cryptocurrency',
-      'Promise of guaranteed savings of "$2,500 or more" in interest — no legitimate company can guarantee this',
-    ],
-    whatToDo: [
-      'Hang up — Visa, Mastercard, and your bank do not cold-call to lower your rate, and any caller asking for your full card number over the phone is a scammer',
-      'Only your card issuer can change your interest rate — call the number on the back of your card and ask for a lower rate yourself, free, in about 5 minutes',
-      'Never pay an upfront fee for "rate reduction" services — under federal law, telemarketers cannot legally collect fees before the service is delivered',
-      'Add your number to the National Do Not Call Registry at donotcall.gov to cut down on these calls',
-      'Report the call to the FTC at ReportFraud.ftc.gov or 1-877-382-4357',
     ],
   },
   // Social: "Getting a job offer out of nowhere — great pay, fully remote, no experience needed? This is the #1 fake job scam pattern the FBI is warning about right now."
@@ -420,7 +418,7 @@ export default function ScamAlerts() {
         }}
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Scam Alerts</h1>

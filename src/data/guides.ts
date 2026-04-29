@@ -1,4 +1,4 @@
-export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity';
+export type GuideCategory = 'windows-guides' | 'mac-guides' | 'essential-skills' | 'tips-tricks' | 'ai-guides' | 'ai-advanced' | 'safety-guides' | 'how-to' | 'app-guides' | 'health-tech' | 'phone-guides' | 'social-media' | 'government-civic' | 'financial-tech' | 'smart-home' | 'entertainment' | 'communication' | 'life-transitions' | 'internet-connectivity' | 'online-privacy' | 'online-banking' | 'buying-guides' | 'tech-explained' | 'troubleshooting' | 'work-from-home';
 
 /** A visual callout overlaid on a guide step's screenshot */
 export interface ScreenshotAnnotation {
@@ -43,9 +43,8 @@ export interface Guide {
   tags: string[];
   readTime: string;
   videoUrl?: string;
-  /** @deprecated Kept for historical data; UI renders category-based SVG icons via GuideThumbnail. */
-  thumbnailEmoji?: string;
-  /** URL to a relevant thumbnail image — used instead of the category icon when available */
+  thumbnailEmoji: string;
+  /** URL to a relevant thumbnail image — used instead of emoji when available */
   thumbnailUrl?: string;
   publishedAt: string;
   /** Date the guide content was last reviewed and confirmed accurate */
@@ -77,6 +76,12 @@ export const categoryLabels: Record<GuideCategory, string> = {
   'communication': 'Communication',
   'life-transitions': 'Life Transitions',
   'internet-connectivity': 'Internet & WiFi',
+  'online-privacy': 'Online Privacy & Dark Web',
+  'online-banking': 'Online Banking',
+  'buying-guides': 'Buying Guides',
+  'tech-explained': 'Tech Terms Explained',
+  'troubleshooting': 'Troubleshooting',
+  'work-from-home': 'Working from Home',
 };
 
 export const categoryDescriptions: Record<GuideCategory, string> = {
@@ -99,6 +104,12 @@ export const categoryDescriptions: Record<GuideCategory, string> = {
   'communication': 'Video calling, messaging apps, group chats, and staying connected with family and friends',
   'life-transitions': 'Setting up new devices, switching platforms, moving, and managing digital life changes',
   'internet-connectivity': 'Choosing internet plans, setting up routers, improving WiFi, and understanding your connection',
+  'online-privacy': 'Protect your personal data — dark web monitoring, data broker removal, private browsing, and keeping your information off the internet',
+  'online-banking': 'Online and mobile banking step by step — logging in safely, mobile check deposit, bill pay, transfers, and spotting bank scams',
+  'buying-guides': 'Know what to look for before you buy — plain-English guides to choosing laptops, phones, tablets, TVs, printers, and more',
+  'tech-explained': 'Confused by tech jargon? Plain-English explanations of RAM, CPU, storage, 4K, USB types, Bluetooth versions, and more',
+  'troubleshooting': 'Fix common tech problems yourself — frozen apps, slow internet, error messages, battery drain, and devices that won\'t cooperate',
+  'work-from-home': 'Set up a reliable home office — VPNs, remote desktop, video conferencing, cloud storage, and productivity tools for remote workers',
 };
 
 
@@ -4215,7 +4226,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up 2FA on Facebook / Instagram',
-        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu (☰) → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
+        content: 'Facebook: Settings → Security and Login → Two-Factor Authentication → Edit. Instagram: Profile → Menu () → Settings → Security → Two-Factor Authentication. Both support SMS codes or an authenticator app.'
       },
       {
         title: 'Save your backup codes',
@@ -4247,7 +4258,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Review your Instagram account settings',
-        content: `On Instagram: Profile → Menu (☰) → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
+        content: `On Instagram: Profile → Menu () → Settings → Account Privacy → toggle "Private Account" on. This means only people you approve can see your posts. For your business or public page, you'll want to keep it public — but make sure your personal account is private.`
       },
       {
         title: 'Be careful what you share publicly',
@@ -4333,11 +4344,11 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update Windows',
-        content: 'Click the Start menu → Settings (⚙️) → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
+        content: 'Click the Start menu → Settings () → Windows Update → Check for Updates. Windows will download and install any available updates. If it asks to restart, save your work and let it restart — updates only fully install after a restart.', tip: 'Enable "Receive updates for other Microsoft products" in Windows Update settings to also keep Word, Excel, and Edge up to date.'
       },
       {
         title: 'Update macOS',
-        content: 'Click the Apple menu (🍎) in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
+        content: 'Click the Apple menu () in the top-left → System Settings → General → Software Update. If an update is available, click "Update Now". macOS will download in the background and prompt you to install when ready.', tip: 'You can also enable "Automatically keep my Mac up to date" to have macOS download and install updates overnight.'
       },
       {
         title: 'Update your iPhone',
@@ -4349,7 +4360,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Update your browser (Chrome, Edge, Safari, Firefox)',
-        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu (☰) → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
+        content: 'Chrome/Edge: click the three-dot menu (⋮) in the top-right → Help → About Google Chrome (or About Microsoft Edge). It will check for and install updates automatically. Safari updates automatically with macOS. Firefox: click the menu () → Help → About Firefox.', tip: `A colored dot or arrow next to the browser menu usually means an update is waiting. Don't ignore it — browsers are a primary target for hackers.`
       },
       {
         title: 'Set up automatic updates everywhere',
@@ -4384,7 +4395,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Setting up on a Chromecast',
-        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (📡), and it plays on the TV.`
+        content: `Plug the Chromecast into your TV's HDMI port. Download the Google Home app on your phone. Open Google Home → Add (+) → Set up device → New device. Follow the steps to connect your Chromecast to your Wi-Fi. Once set up, you "cast" from your phone or tablet — open Netflix on your phone, press the cast icon (), and it plays on the TV.`
       },
       {
         title: 'Setting up on Apple TV',
@@ -4415,7 +4426,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Windows (Xbox Game Bar)',
-        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button (⏺) or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
+        content: 'Press Windows key + G to open the Xbox Game Bar overlay. Click the record button () or press Windows key + Alt + R to start recording. The same shortcut stops it. Your recording saves to Videos → Captures on your PC.',
         tip: `The Xbox Game Bar doesn't record the desktop itself — only active app windows. For full desktop recording, use the free app OBS Studio or the Snipping Tool in Windows 11.`
       },
       {
@@ -4424,12 +4435,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Screen recording on Mac',
-        content: 'Press Command (⌘) + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
+        content: 'Press Command () + Shift + 5. A toolbar appears at the bottom of the screen. Click "Record Entire Screen" or "Record Selected Portion". Click Record. Stop recording by pressing the Stop button in the menu bar or pressing Command + Shift + 5 again and clicking Stop.',
         tip: 'Your Mac recording saves to the Desktop automatically as a .mov file.'
       },
       {
         title: 'Screen recording on iPhone',
-        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button (⏺ in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
+        content: 'First, add it to Control Center: Settings → Control Center → tap + next to Screen Recording. Then, swipe down from the top-right corner of the screen (or swipe up on older iPhones) to open Control Center → tap the screen record button ( in a circle). A 3-second countdown begins, then recording starts. Tap the red status bar at the top to stop.'
       },
       {
         title: 'Screen recording on Android',
@@ -4461,7 +4472,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Move a file into a folder',
-        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command (⌘) + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
+        content: 'Windows: Click the file once to select it → hold Ctrl and press X to cut it → open the destination folder → hold Ctrl and press V to paste it. You can also drag-and-drop between two open windows. Mac: Same process but use Command () + X to cut, Command + V to paste. Or drag-and-drop while holding Command.', tip: 'Drag-and-drop is easiest for most people. Open both the source and destination folders side by side, then drag files across.'
       },
       {
         title: 'Name files sensibly',
@@ -4725,7 +4736,7 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Share a calendar with family',
-        content: `On Google Calendar: tap the three lines (☰), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
+        content: `On Google Calendar: tap the three lines (), find your calendar name under "My calendars," tap the three dots next to it, then "Settings and sharing." Under "Share with specific people," add a family member's Gmail address. They'll see your events on their own Calendar app.`, tip: 'A shared family calendar is great for keeping track of appointments, school events, and holidays that affect everyone.'
       },
       {
         title: 'Set up recurring reminders',
@@ -5166,7 +5177,7 @@ const coreGuides: Guide[] = [
     steps: [
       {
         title: 'Check for the padlock — always',
-        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon 🔒 and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
+        content: 'Before entering any personal details or payment information on a shopping website, look at the address bar at the top of your browser. You should see a padlock icon  and the address should start with "https://" (the "s" stands for secure). If you see a warning, a broken padlock, or "http://" without the "s", leave the site immediately — it is not safe to enter payment details.', tip: `The padlock doesn't guarantee a site is legitimate — it just means your data is encrypted. Always double-check the website name too.`, warning: 'Scam sites can have padlocks too. Always verify the exact website address — "amazon.co.uk" is real; "amazon-deals.co.uk" or "amazon.shop-secure.com" are fakes.'
       },
       {
         title: 'Stick to trusted retailers',
@@ -5225,12 +5236,12 @@ const coreGuides: Guide[] = [
       },
       {
         title: 'Using emoji',
-        content: 'Emoji are the small pictures 😊🎉👍 you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
+        content: 'Emoji are the small pictures  you can add to messages. Tap the smiley face icon on your keyboard (on the bottom-left or near the space bar) to open the emoji keyboard. Tap any emoji to insert it. Swipe left and right to browse categories — people, animals, food, activities, travel, objects, symbols, and flags. The recently-used row at the top shows your most common picks.',
         tip: 'You can react to a specific message in iMessage or WhatsApp: press and hold a message until reaction emoji appear. This is a quick way to reply without typing a response.'
       },
       {
         title: 'WhatsApp tips',
-        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks (✓✓) mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
+        content: 'WhatsApp is the most popular messaging app in the UK. Key features: blue ticks () mean your message has been read (single tick = sent, double grey tick = delivered). You can turn off read receipts in Settings → Privacy → Read Receipts. Star important messages: hold a message → tap the star. Find starred messages: Settings → Starred Messages. To mute a noisy group: press and hold the chat → Mute.', tip: 'WhatsApp Status lets you post a photo or short video visible to your contacts for 24 hours — similar to Facebook Stories. Tap the Status tab to see what your contacts have shared.'
       },
     ]
   },
@@ -5256,7 +5267,7 @@ const coreGuides: Guide[] = [
       { title: 'Find and follow people', content: `Tap the magnifying glass icon (bottom bar) to search. Type a friend's name or username. Tap their profile, then tap the blue "Follow" button. You'll see their posts in your home feed. Instagram may also suggest people from your contacts — tap "Allow" when prompted to find friends already on Instagram.` },
       { title: 'Browse your feed', content: 'Tap the house icon (bottom left) to see your home feed — posts from people you follow. Scroll up and down to see more. Tap the heart icon below a photo to like it. Tap the speech bubble to leave a comment. Double-tap a photo for a quick like.' },
       { title: 'Post your first photo', content: 'Tap the + icon (bottom center). Choose a photo from your library or tap "Camera" to take one now. Add a filter if you like (swipe left/right to preview filters — "Clarendon" is popular). Write a caption describing your photo. Tap "Share" to post it. Your followers will see it in their feeds!', tip: 'You can tag people in your photo by tapping "Tag People" and tapping on a face in the image.' },
-      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu ☰ → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
+      { title: 'Stay safe on Instagram', content: `Go to Settings (tap your profile → hamburger menu  → Settings and Privacy). Set your account to "Private" so only approved followers see your posts. Turn off "Activity Status" so strangers can't see when you're online. Never share your home address, phone number, or financial details in posts or messages.`, warning: 'Be cautious of direct messages from strangers — scammers use Instagram to impersonate friends or offer fake prizes.' },
     ]
   },
   {
@@ -7870,6 +7881,38 @@ const coreGuides: Guide[] = [
     ]
   },
 
+  // GUIDE 7: How to Use QR Codes
+  {
+    slug: 'how-to-use-qr-codes',
+    title: 'How to Use QR Codes (Those Square Barcode Things)',
+    excerpt: 'Learn what QR codes are and how to scan them with your phone — it is easier than you think.',
+    category: 'essential-skills',
+    tags: ['qr code', 'camera', 'beginner'],
+    readTime: '5 min',
+    videoUrl: 'https://www.youtube.com/embed/4vQ4o9t5ND8',
+    thumbnailEmoji: '📷',
+    publishedAt: '2026-04-01',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'What is a QR code?',
+        content: `A QR code is a square pattern of black and white dots — it looks like a small, pixelated maze. Think of it like a barcode (the lines you see on products at the grocery store), but instead of just a product number, it can store a website address, phone number, or other information.\n\nYou have probably seen QR codes on restaurant menus ("Scan for menu"), event tickets, business cards, product packaging, or signs. When you scan one with your phone's camera, it instantly takes you to a website or shows you information — no typing needed.`
+      },
+      {
+        title: 'How to scan a QR code on an iPhone',
+        content: `Scanning a QR code on an iPhone is very easy — you do not need to download any special app.\n\n1. Open your Camera app (the icon that looks like a camera)\n2. Point your phone's camera at the QR code — hold it steady, about 6 to 12 inches away\n3. Wait a moment — a yellow notification will appear at the top of the screen showing a website address\n4. Tap that notification to open the link\n\nThat is it. Your iPhone camera automatically recognizes QR codes without you needing to press any buttons.`
+      },
+      {
+        title: 'How to scan a QR code on an Android phone',
+        content: 'On most modern Android phones, the camera can scan QR codes automatically.\n\n1. Open your Camera app\n2. Point it at the QR code and hold steady\n3. A link or notification should pop up — tap it to open\n\nIf nothing happens, you may need to enable QR code scanning:\n- Go to Settings > Camera (or search for "QR" in Settings)\n- Turn on "Scan QR codes"\n\n**On Samsung phones:** You can also swipe down from the top of the screen to open Quick Settings and tap the "Scan QR code" tile. This opens a dedicated scanner that works very well.'
+      },
+      {
+        title: 'Stay safe when scanning QR codes',
+        content: 'QR codes are generally safe, but scammers have started using them to trick people. The FTC has warned about "quishing" scams in 2026 — that is phishing using QR codes. Watch out for:\n\n- **Stickers placed over real QR codes** — especially on parking meters, gas pumps, or public signs. Scammers stick their own QR code on top of the real one to send you to a fake website.\n- **QR codes in unexpected emails or texts** — if you did not expect it, do not scan it.\n- **QR codes on random flyers** — be cautious about scanning codes posted in public places by unknown people.\n\nAlways look at the website address that pops up before you tap it. If it looks suspicious or unfamiliar, do not open it.', warning: 'Be careful with QR codes on random flyers, stickers on parking meters, or in unexpected emails. Scammers can put fake QR codes over real ones to send you to phishing websites. The FTC has warned about "quishing" scams in 2026.', tip: 'If a QR code takes you to a website asking for your password or payment information, STOP. Go to that website directly by typing the address into your browser instead.'
+      },
+    ]
+  },
+
   // GUIDE 8: How to Fix Your Phone When Apps Keep Crashing
   {
     slug: 'fix-phone-apps-crashing',
@@ -8251,7 +8294,7 @@ const coreGuides: Guide[] = [
       { title: 'Know the truth: real companies do not call you', content: 'Microsoft, Apple, Google, and your internet provider will NEVER call you to say your computer has a virus. If someone calls claiming this, it is a scam 100% of the time. These calls often show a local or toll-free number on caller ID — scammers fake this easily.' },
       { title: 'Scary pop-ups are fake too', content: 'If a pop-up appears saying "YOUR COMPUTER IS INFECTED — CALL THIS NUMBER NOW," it is a scam. Real virus alerts come from your antivirus software (like Windows Security), not from a website. Close the pop-up by pressing Alt+F4 (Windows) or Cmd+Q (Mac). If it will not close, force-restart your computer.' },
       { title: 'What scammers want', content: 'Tech support scammers want three things: remote access to your computer (so they can install real malware or steal files), your credit card number (they charge $200-$500 for fake "repairs"), and your personal information (Social Security number, bank details).' },
-      { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/get-help or call a trusted local computer repair shop. Never trust unsolicited callers.' },
+      { title: 'What to do if you already let someone in', content: 'If you gave a scammer remote access: disconnect from the internet immediately (unplug your ethernet cable or turn off WiFi), run a full virus scan with Windows Security or your antivirus, change all passwords from a different device, contact your bank if you shared payment info, and consider having a real technician check your computer.', tip: 'For real tech help, book a TekSure technician at teksure.com/book or call a trusted local computer repair shop. Never trust unsolicited callers.' },
     ]
   },
   // Social: "Got a text saying your package couldn't be delivered? Check this before you click anything."
@@ -13110,28 +13153,8 @@ import { guidesBatch96 } from './guides-batch-96';
 import { guidesBatch97 } from './guides-batch-97';
 import { guidesBatch98 } from './guides-batch-98';
 import { guidesBatch99 } from './guides-batch-99';
-import { guidesBatch100 } from './guides-batch-100';
-import { guidesBatch101 } from './guides-batch-101';
-import { guidesBatch102 } from './guides-batch-102';
-import { guidesBatch103 } from './guides-batch-103';
-import { guidesBatch104 } from './guides-batch-104';
-import { guidesBatch105 } from './guides-batch-105';
-import { guidesBatch106 } from './guides-batch-106';
-import { guidesBatch107 } from './guides-batch-107';
-import { guidesBatch108 } from './guides-batch-108';
-import { guidesBatch109 } from './guides-batch-109';
-import { guidesBatch110 } from './guides-batch-110';
-import { guidesBatch111 } from './guides-batch-111';
-import { guidesBatch112 } from './guides-batch-112';
-import { guidesBatch113 } from './guides-batch-113';
-import { guidesBatch114 } from './guides-batch-114';
-import { guidesBatch115 } from './guides-batch-115';
-import { guidesBatch117 } from './guides-batch-117';
-import { guidesBatch118 } from './guides-batch-118';
-import { guidesBatch119 } from './guides-batch-119';
-import { guidesBatch120 } from './guides-batch-120';
 
-const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99, ...guidesBatch100, ...guidesBatch101, ...guidesBatch102, ...guidesBatch103, ...guidesBatch104, ...guidesBatch105, ...guidesBatch106, ...guidesBatch107, ...guidesBatch108, ...guidesBatch109, ...guidesBatch110, ...guidesBatch111, ...guidesBatch112, ...guidesBatch113, ...guidesBatch114, ...guidesBatch115, ...guidesBatch117, ...guidesBatch118, ...guidesBatch119, ...guidesBatch120];
+const allGuides: Guide[] = [...coreGuides, ...guidesBatch4, ...guidesBatch5, ...guidesBatch6, ...guidesExpansion, ...guidesSpanish, ...guidesBatch7, ...guidesBatch8, ...guidesBatch9, ...guidesBatch10, ...guidesBatch11, ...guidesBatch12, ...guidesBatch13, ...guidesBatch14, ...guidesBatch15, ...guidesBatch16, ...guidesBatch17, ...guidesBatch18, ...guidesBatch19, ...guidesBatch20, ...guidesBatch21, ...guidesBatch22, ...guidesBatch23, ...guidesBatch24, ...guidesBatch25, ...guidesBatch26, ...guidesBatch27, ...guidesBatch28, ...guidesBatch29, ...guidesBatch30, ...guidesBatch31, ...guidesBatch32, ...guidesBatch33, ...guidesBatch34, ...guidesBatch35, ...guidesBatch36, ...guidesBatch37, ...guidesBatch38, ...guidesBatch39, ...guidesBatch40, ...guidesBatch41, ...guidesBatch42, ...guidesBatch43, ...guidesBatch44, ...guidesBatch45, ...guidesBatch46, ...guidesBatch47, ...guidesBatch48, ...guidesBatch49, ...guidesBatch50, ...guidesBatch51, ...guidesBatch52, ...guidesBatch53, ...guidesBatch54, ...guidesBatch55, ...guidesBatch56, ...guidesBatch57, ...guidesBatch58, ...guidesBatch59, ...guidesBatch60, ...guidesBatch61, ...guidesBatch62, ...guidesBatch63, ...guidesBatch64, ...guidesBatch65, ...guidesBatch66, ...guidesBatch67, ...guidesBatch68, ...guidesBatch69, ...guidesBatch70, ...guidesBatch71, ...guidesBatch72, ...guidesBatch73, ...guidesBatch74, ...guidesBatch75, ...guidesBatch76, ...guidesBatch77, ...guidesBatch78, ...guidesBatch79, ...guidesBatch80, ...guidesBatch81, ...guidesBatch82, ...guidesBatch83, ...guidesBatch84, ...guidesBatch85, ...guidesBatch86, ...guidesBatch87, ...guidesBatch88, ...guidesBatch89, ...guidesBatch90, ...guidesBatch91, ...guidesBatch92, ...guidesBatch93, ...guidesBatch94, ...guidesBatch95, ...guidesBatch96, ...guidesBatch97, ...guidesBatch98, ...guidesBatch99];
 
 // Auto-set lastVerifiedAt for guides that don't have it explicitly set
 allGuides.forEach(g => {

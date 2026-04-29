@@ -110,7 +110,7 @@ const tipsToAvoid = [
   {
     title: 'Do not sign long service contracts',
     description:
-      'Internet and phone carriers will offer "locked-in" rates with 2-year contracts. Month-to-month plans give you flexibility to renegotiate or switch. Competition between providers is fierce — you have more bargaining power than you think.',
+      'Internet and phone carriers will offer "locked-in" rates with 2-year contracts. Month-to-month plans give you flexibility to renegotiate or switch. Competition between providers is fierce — you have more leverage than you think.',
   },
   {
     title: 'Do not pay for features you will not use',
@@ -127,6 +127,8 @@ export default function EmptyNestTech() {
         description="The kids have moved out — now what? Practical tech guidance for empty nesters: staying connected, upgrading the home, cutting the cable bill, and finding new ways to use the time."
       />
       <Navbar />
+
+      <main id="main-content" tabIndex={-1} className="outline-none">
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/30">
@@ -279,7 +281,7 @@ export default function EmptyNestTech() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Button asChild size="lg">
-                <Link to="/get-help">Book a 1-on-1 setup session</Link>
+                <Link to="/book">Book a 1-on-1 setup session</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link to="/guides">Browse all guides</Link>
@@ -288,6 +290,8 @@ export default function EmptyNestTech() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

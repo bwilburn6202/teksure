@@ -9,7 +9,7 @@ export const guidesBatch32: Guide[] = [
     category: 'health-tech',
     tags: ['medication', 'medisafe', 'pill reminder', 'prescription', 'health app'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -46,7 +46,7 @@ export const guidesBatch32: Guide[] = [
     category: 'health-tech',
     tags: ['silversneakers', 'medicare', 'fitness', 'gym', 'exercise for seniors'],
     readTime: '5 min',
-    thumbnailEmoji: '🏋️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -82,7 +82,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['life360', 'family location', 'safety', 'location sharing', 'caregiver'],
     readTime: '5 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -119,7 +119,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['microsoft to do', 'task list', 'reminders', 'productivity', 'free app'],
     readTime: '5 min',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -156,7 +156,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['grubhub', 'food delivery', 'restaurant delivery', 'ordering food', 'delivery app'],
     readTime: '5 min',
-    thumbnailEmoji: '🍔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -193,7 +193,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['amazon fresh', 'grocery delivery', 'amazon prime', 'groceries online', 'delivery'],
     readTime: '5 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -230,7 +230,7 @@ export const guidesBatch32: Guide[] = [
     category: 'government-civic',
     tags: ['va.gov', 'veterans', 'va health', 'benefits', 'military'],
     readTime: '6 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -266,7 +266,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'call blocking', 'iphone', 'phone scams'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -303,7 +303,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['spam calls', 'robocalls', 'android', 'call blocking', 'phone scams'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -339,7 +339,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['costco', 'membership', 'shopping', 'warehouse', 'savings'],
     readTime: '5 min',
-    thumbnailEmoji: '🛍️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -375,7 +375,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['target', 'target circle', 'savings', 'loyalty program', 'shopping'],
     readTime: '4 min',
-    thumbnailEmoji: '🎯',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -411,7 +411,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['cvs', 'extracare', 'pharmacy', 'rewards', 'prescription refill'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -448,7 +448,7 @@ export const guidesBatch32: Guide[] = [
     category: 'app-guides',
     tags: ['walgreens', 'mywalgreens', 'pharmacy', 'rewards', 'prescription app'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -484,7 +484,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['digital id', 'mobile driver license', 'apple wallet', 'google wallet', 'state id'],
     readTime: '6 min',
-    thumbnailEmoji: '🪪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -521,7 +521,7 @@ export const guidesBatch32: Guide[] = [
     category: 'entertainment',
     tags: ['apple tv plus', 'streaming', 'apple original', 'tv shows', 'movies'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -557,7 +557,7 @@ export const guidesBatch32: Guide[] = [
     category: 'entertainment',
     tags: ['max', 'hbo max', 'streaming', 'hbo', 'warner bros'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -593,7 +593,7 @@ export const guidesBatch32: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'clipboard history', 'copy paste', 'windows tips', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -612,7 +612,7 @@ export const guidesBatch32: Guide[] = [
       },
       {
         title: 'Pin frequently used items',
-        content: 'In the Clipboard History panel, hover over any item and click the pin icon (📌). Pinned items stay in the list permanently and are not cleared when you restart your computer or clear history.',
+        content: 'In the Clipboard History panel, hover over any item and click the pin icon (). Pinned items stay in the list permanently and are not cleared when you restart your computer or clear history.',
       },
       {
         title: 'Enable cross-device clipboard sync (optional)',
@@ -630,7 +630,7 @@ export const guidesBatch32: Guide[] = [
     category: 'essential-skills',
     tags: ['android', 'scan documents', 'pdf', 'google drive', 'paperless'],
     readTime: '4 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -667,7 +667,7 @@ export const guidesBatch32: Guide[] = [
     category: 'safety-guides',
     tags: ['iphone', 'satellite', 'emergency', 'ios 18', 'no signal'],
     readTime: '5 min',
-    thumbnailEmoji: '🛰️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

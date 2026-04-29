@@ -8,7 +8,7 @@ export const guidesBatch49: Guide[] = [
     category: `app-guides`,
     tags: [`snapseed`, `photo editing`, `google`, `iphone`, `android`, `free app`, `photos`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Snapseed is a free photo editing app made by Google. It works on both iPhone and Android and gives you powerful tools to improve your photos without needing any design skills. Whether you want to brighten a dark photo, crop out a distraction, or fix a blemish, Snapseed makes it approachable.
@@ -66,7 +66,7 @@ Snapseed is available for free from the App Store (iPhone) or Google Play Store 
     category: `app-guides`,
     tags: [`walgreens`, `photo prints`, `printing photos`, `app`, `gifts`, `photos`],
     readTime: `5 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Printing photos has never been more convenient. With the Walgreens app or website, you can turn the photos on your phone into real, physical prints that you can hold, frame, or mail to family — and pick them up at your nearest Walgreens store in as little as one hour.
@@ -119,7 +119,7 @@ For printed photos to look their best, use photos taken with your phone's main c
     category: `communication`,
     tags: [`hallmark`, `ecards`, `greeting cards`, `digital cards`, `birthdays`, `holidays`, `free`],
     readTime: `4 min`,
-    thumbnailEmoji: `💌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Digital greeting cards — also called eCards — let you send a personalized, animated card to anyone with an email address for free. Two of the most popular services are Hallmark eCards (hallmark.com/ecards) and American Greetings (americangreetings.com). Both offer a large selection of cards for birthdays, holidays, sympathy, thinking of you, anniversaries, and more.
@@ -173,7 +173,7 @@ The recipient gets an email from Hallmark or American Greetings letting them kno
     category: `phone-guides`,
     tags: [`iphone`, `photos`, `editing`, `crop`, `brightness`, `filters`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `You don't need a separate app to edit photos on your iPhone. The built-in Photos app includes a full set of editing tools — you can adjust brightness, contrast, color, crop, straighten, add filters, and even remove red-eye — all without leaving the app you already use to view your pictures.
@@ -228,7 +228,7 @@ To access all of this: open a photo, tap "Edit" in the top right corner, make yo
     category: `mac-guides`,
     tags: [`mac`, `photos app`, `apple`, `albums`, `icloud`, `organize`, `memories`],
     readTime: `6 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Photos app on your Mac is designed to be the home for all your pictures. If you use iCloud Photos (which is on by default when you sign into your Apple account), every photo you take on your iPhone automatically shows up in the Mac Photos app — no cables or manual transfers needed.
@@ -285,7 +285,7 @@ If you don't see your iPhone photos on your Mac, check that you're signed into t
     category: `essential-skills`,
     tags: [`file sharing`, `google drive`, `wetransfer`, `icloud`, `dropbox`, `large files`, `email`],
     readTime: `6 min`,
-    thumbnailEmoji: `📁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most email services have a file size limit of around 25 megabytes (MB). Photos are usually fine, but videos, large folders of photos, or documents with many images can quickly exceed that limit. If you've ever tried to attach a file and gotten an error saying it's too large, you need a different approach.
@@ -337,7 +337,7 @@ For most people, WeTransfer is the quickest option for a one-time file send beca
     category: `phone-guides`,
     tags: [`ipad`, `screenshot`, `markup`, `apple pencil`, `tips`, `annotation`],
     readTime: `4 min`,
-    thumbnailEmoji: `📲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A screenshot is a photo of whatever is currently on your iPad's screen. It's useful for saving directions, capturing a recipe, documenting a problem to show someone, or sending someone what you're looking at without retyping everything.
@@ -397,7 +397,7 @@ One common use case: if you're having trouble with an app or website, take a scr
     category: `phone-guides`,
     tags: [`android`, `font size`, `display size`, `accessibility`, `text size`, `readability`, `seniors`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If the text on your Android phone feels too small to read comfortably, or the icons seem too close together to tap accurately, you can fix both problems in Settings. Android has two separate adjustments: Font Size and Display Size.
@@ -452,7 +452,7 @@ The accessibility shortcut for quickly adjusting text is also available under Se
     category: `phone-guides`,
     tags: [`iphone`, `display zoom`, `large text`, `accessibility`, `seniors`, `settings`, `bigger icons`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you find yourself squinting at your iPhone's screen, holding it at arm's length, or wishing the icons and text were bigger, iPhone has a built-in feature that can help: Display Zoom.
@@ -509,7 +509,7 @@ If you decide you prefer the original size, you can go back to Settings > Displa
     category: `essential-skills`,
     tags: [`amazon fire`, `tablet`, `setup`, `amazon account`, `kindle`, `apps`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon Fire tablets are affordable, reliable tablets made by Amazon. They're popular for reading Kindle books, watching video on Prime Video, browsing the web, and video calling family. Setting one up is a straightforward process that takes about 15 minutes.
@@ -574,7 +574,7 @@ Amazon has free customer service by phone, chat, and email. Go to amazon.com/hel
     category: `phone-guides`,
     tags: [`android`, `force stop`, `frozen app`, `troubleshooting`, `apps`, `crash`],
     readTime: `4 min`,
-    thumbnailEmoji: `🛑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Sometimes an app on your Android phone gets stuck — it stops responding to taps, shows a spinning wheel forever, or keeps crashing. This can happen to any app: Facebook, Gmail, YouTube, a banking app, or even your phone dialer. When this happens, the fastest fix is to force stop the app.
@@ -632,7 +632,7 @@ To force stop an app, you access the App Info screen either through Settings > A
     category: `phone-guides`,
     tags: [`android`, `clear cache`, `troubleshooting`, `slow apps`, `storage`, `fix crashes`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Every app on your Android phone builds up a collection of temporary files as you use it. These files — called the cache — help the app load faster by storing things it uses often, like images, settings, and login tokens. Most of the time, the cache is helpful. But over time it can become outdated or corrupted, which leads to slow behavior, freezing, login failures, or apps that crash when you open them.
@@ -691,7 +691,7 @@ Some apps accumulate hundreds of megabytes of cache over months of use. Facebook
     category: `phone-guides`,
     tags: [`iphone`, `safari`, `clear cache`, `browsing history`, `cookies`, `storage`, `troubleshooting`],
     readTime: `4 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Safari is the web browser built into every iPhone. As you browse websites, Safari saves temporary files (cache), cookies (small bits of data websites save to remember you), and your browsing history. This helps Safari load your favorite websites faster and keeps you logged into sites you visit often.
@@ -760,7 +760,7 @@ If you use Chrome or Firefox on your iPhone instead of Safari, you'll clear the 
     category: `essential-skills`,
     tags: [`google`, `gmail`, `account recovery`, `forgot password`, `locked out`, `password reset`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've forgotten your Google or Gmail password — or if someone else has changed it — Google has an official account recovery process that can help you regain access. The process is free and can often be completed in a few minutes.
@@ -823,7 +823,7 @@ Once you're back in, immediately add a recovery phone number (Settings > Securit
     category: `safety-guides`,
     tags: [`facebook`, `account recovery`, `hacked`, `locked out`, `password reset`, `security`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Being locked out of Facebook — or discovering that someone else has gotten into your account — can be stressful. The good news is that Facebook has a dedicated account recovery process, and in most cases you can regain access within a few minutes.
@@ -888,7 +888,7 @@ Facebook also has a "Trusted Contacts" feature that lets you ask friends to help
     category: `essential-skills`,
     tags: [`android tablet`, `tips`, `split screen`, `google play`, `home screen`, `kids mode`, `settings`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Android tablets are versatile devices that can serve as reading devices, video players, video calling stations, web browsers, and much more. Whether you have a Samsung Galaxy Tab, a Lenovo tablet, or another Android brand, most of the tips here apply to all of them.
@@ -945,7 +945,7 @@ Swipe down from the top of the screen to see all notifications and quick setting
     category: `app-guides`,
     tags: [`google photos`, `print photos`, `photo prints`, `order prints`, `photo books`, `android`, `iphone`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖨️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have photos stored in Google Photos, you can order printed copies without downloading them to a computer or going to a photo store. Google Photos has a built-in printing service that lets you order standard prints, photo books, canvas prints, and other photo gifts — all shipped directly to your home.
@@ -1001,7 +1001,7 @@ This is a convenient option because all your photos are already in Google Photos
     category: `health-tech`,
     tags: [`apple health`, `health sharing`, `iphone`, `doctor`, `family sharing`, `heart rate`, `fitness`],
     readTime: `5 min`,
-    thumbnailEmoji: `❤️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `The Health app on your iPhone collects data about your activity, heart rate, sleep, and more — often from your Apple Watch, but also from the phone itself. This information can be valuable to share with a family member who helps care for you, or with your doctor who wants to track your health between appointments.
@@ -1068,7 +1068,7 @@ Your iPhone tracks steps and walking distance automatically without any extra se
     category: `health-tech`,
     tags: [`android`, `emergency info`, `medical id`, `lock screen`, `first responders`, `safety`, `health`],
     readTime: `4 min`,
-    thumbnailEmoji: `🚑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `In a medical emergency, first responders may need to know your blood type, allergies, current medications, or who to contact — but your phone may be locked. Android phones have a built-in feature called Emergency Information (sometimes called Medical Info) that lets this information appear on your lock screen without anyone needing your PIN or password.
@@ -1136,7 +1136,7 @@ In an emergency where you are unconscious or unable to speak, first responders f
     category: `windows-guides`,
     tags: [`windows 11`, `quick settings`, `wi-fi`, `bluetooth`, `do not disturb`, `brightness`, `taskbar`],
     readTime: `5 min`,
-    thumbnailEmoji: `⚙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Windows 11 has a Quick Settings panel — a small menu that pops up when you click in the bottom right corner of the taskbar — that lets you control common settings without digging through the full Settings app. It's one of the most useful shortcuts for everyday use.

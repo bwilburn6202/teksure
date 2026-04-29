@@ -142,7 +142,7 @@ export default function SeniorTechPath() {
         path="/senior-tech-path"
       />
       <Navbar />
-      <main className="min-h-screen bg-background text-[18px] leading-relaxed">
+      <main id="main-content" className="min-h-screen bg-background text-[18px] leading-relaxed">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Tech for Seniors' }]} />
         </div>

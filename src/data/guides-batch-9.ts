@@ -10,7 +10,7 @@ export const guidesBatch9: Guide[] = [
     category: 'safety-guides',
     tags: ['Whitepages', 'privacy', 'data broker', 'opt out', 'personal info'],
     readTime: '6 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Whitepages is a website that collects public records and shows your name, address, phone number, and relatives to anyone who searches. You have the right to ask them to remove your listing, and the process is free.
@@ -31,7 +31,7 @@ The removal request takes about 10 minutes, and your information usually comes o
     category: 'safety-guides',
     tags: ['Spokeo', 'privacy', 'data broker', 'opt out', 'personal info'],
     readTime: '6 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Spokeo is a people-search website that shows your age, address history, phone numbers, relatives, and sometimes old email addresses. Anyone who searches your name can see this for free or pay for more details.
@@ -52,7 +52,7 @@ Spokeo has a free opt-out page that hides your profile within a day or two. You 
     category: 'safety-guides',
     tags: ['BeenVerified', 'privacy', 'data broker', 'opt out', 'personal info'],
     readTime: '6 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `BeenVerified sells background reports that include your address, phone, relatives, job history, and more. They gather all of this from public records without asking you.
@@ -73,7 +73,7 @@ The good news is that BeenVerified must remove your listing if you ask. The whol
     category: 'safety-guides',
     tags: ['TruePeopleSearch', 'privacy', 'data broker', 'opt out', 'personal info'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `TruePeopleSearch is a free website that shows your current address, past addresses, phone numbers, and relatives to anyone who searches. It is one of the most-used people-finder sites and a common source of information for scammers.
@@ -94,7 +94,7 @@ Removing your listing is free and takes about 5 minutes. Your record usually dis
     category: 'safety-guides',
     tags: ['Google', 'privacy', 'search results', 'personal info'],
     readTime: '7 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google offers a free tool called "Results About You" that scans the web for pages showing your personal contact information. When it finds something, you can ask Google to hide that page from search results in one click.
@@ -115,7 +115,7 @@ This does not delete the page from the internet, but it stops people from findin
     category: 'safety-guides',
     tags: ['Google', 'privacy', 'search', 'removal request'],
     readTime: '7 min',
-    thumbnailEmoji: '🗑️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google has a form you can use to ask them to hide specific web pages from search results. This works best for pages that show personal information like your home address, phone number, ID numbers, or private images.
@@ -136,14 +136,14 @@ Google will not remove news articles or pages that are in the public interest. B
     category: 'safety-guides',
     tags: ['privacy', 'personal info', 'search yourself', 'online footprint'],
     readTime: '8 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most people have more information online than they realize. Data-broker sites, old social media accounts, and public records all add up to a pretty detailed picture that anyone can find in about 5 minutes.
 
 Doing a full search of your own name once a year is a smart habit. When you see what is out there, you can decide what to remove and what to lock down.`,
     steps: [
-      { title: 'Search your full name in quotes on Google', content: 'Go to google.com and type your name with quotes around it, like "Jane Smith". The quotes tell Google to find that exact name, not only the words Jane and Smith separately.' },
+      { title: 'Search your full name in quotes on Google', content: 'Go to google.com and type your name with quotes around it, like "Jane Smith". The quotes tell Google to find that exact name, not just the words Jane and Smith separately.' },
       { title: 'Add your city for more results', content: 'Search again with your name and city, like "Jane Smith" Dallas. This often turns up people-finder sites with your address and phone number.' },
       { title: 'Search your phone number and email', content: 'Put your phone number in quotes and search it on Google. Do the same with your email address. This shows any public page that lists them.' },
       { title: 'Check the big people-search sites directly', content: 'Go to whitepages.com, spokeo.com, beenverified.com, and truepeoplesearch.com and search your name on each one. These are the sites most strangers use to look people up.' },
@@ -157,7 +157,7 @@ Doing a full search of your own name once a year is a smart habit. When you see 
     category: 'safety-guides',
     tags: ['DeleteMe', 'privacy', 'data broker', 'subscription', 'personal info'],
     readTime: '7 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `DeleteMe is a paid service that sends opt-out requests to over 100 data-broker websites on your behalf. It costs around $129 per year and saves you many hours of work filling out removal forms one at a time.
@@ -180,7 +180,7 @@ The service keeps checking every three months to see if your info has come back,
     category: 'safety-guides',
     tags: ['iPhone', 'location', 'privacy', 'tracking', 'iOS'],
     readTime: '6 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Your iPhone records where you go all day, every day. Apple uses this for features like suggesting traffic routes home, but you can turn it off without losing Maps or weather.
@@ -201,12 +201,12 @@ You can also control which specific apps get to see your location. This is a goo
     category: 'safety-guides',
     tags: ['Android', 'location', 'privacy', 'tracking', 'Google'],
     readTime: '6 min',
-    thumbnailEmoji: '📍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Android phones save a detailed record of everywhere you go, and Google keeps a long history in something called Timeline. You can shut this off entirely or pick which apps get to see where you are.
 
-Turning off location tracking does not break your phone. You can still use Maps for directions when you need it — you stop the always-on background logging.`,
+Turning off location tracking does not break your phone. You can still use Maps for directions when you need it — you just stop the always-on logging in the background.`,
     steps: [
       { title: 'Open Settings', content: 'Swipe down from the top of your screen and tap the gear icon. Or find the Settings app in your app drawer.' },
       { title: 'Tap Location', content: 'Scroll down and tap Location. This shows all location settings for your phone.' },
@@ -222,7 +222,7 @@ Turning off location tracking does not break your phone. You can still use Maps 
     category: 'safety-guides',
     tags: ['photos', 'privacy', 'metadata', 'GPS', 'EXIF'],
     readTime: '6 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Every photo your phone takes has hidden data attached to it, including the exact GPS spot where you stood when you snapped it. If you text or post that photo, anyone with basic tools can pull out that location.
@@ -243,7 +243,7 @@ Most social networks strip this data automatically, but texting and email usuall
     category: 'safety-guides',
     tags: ['Find My', 'iPhone', 'lost phone', 'Apple', 'security'],
     readTime: '6 min',
-    thumbnailEmoji: '🔎',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Find My iPhone lets you see your phone on a map, play a sound to help find it under the couch, lock it remotely, or erase everything if you cannot get it back. It is free and built into every iPhone.
@@ -266,7 +266,7 @@ Turn it on before you lose the phone — you cannot add it after a device is mis
     category: 'smart-home',
     tags: ['Ring', 'alarm', 'home security', 'DIY', 'smart home'],
     readTime: '10 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Ring Alarm is a do-it-yourself home security system that comes in a kit with a base station, keypad, door sensors, and a motion detector. You stick the sensors on doors and windows with peel-off tape — no drilling.
@@ -287,7 +287,7 @@ The monthly monitoring plan costs about $20 and includes professional 24/7 monit
     category: 'smart-home',
     tags: ['SimpliSafe', 'alarm', 'home security', 'DIY', 'smart home'],
     readTime: '10 min',
-    thumbnailEmoji: '🏡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `SimpliSafe is a do-it-yourself alarm system you order online and set up in under an hour. Everything is wireless and sticks to walls with removable tape, so you do not need tools or a contractor.
@@ -308,7 +308,7 @@ Monitoring costs around $30 a month for the full plan, which includes phone app 
     category: 'smart-home',
     tags: ['Nest', 'camera', 'Google', 'home security', 'smart home'],
     readTime: '7 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google Nest Cam is a small security camera that connects to your Wi-Fi and streams video to your phone. You can talk through the camera, get alerts when someone walks by, and save clips when motion happens.
@@ -329,7 +329,7 @@ The setup is done through the Google Home app and takes about 15 minutes. Basic 
     category: 'smart-home',
     tags: ['Blink', 'camera', 'Amazon', 'outdoor', 'battery'],
     readTime: '7 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Blink Outdoor is a weather-resistant camera that runs on two AA batteries for up to two years. It does not need wires, so you can stick it anywhere outside — on a porch, garage, or backyard shed.
@@ -350,7 +350,7 @@ The camera connects to Wi-Fi through a small hub called the Sync Module that plu
     category: 'smart-home',
     tags: ['Arlo', 'camera', 'home security', 'wireless', 'smart home'],
     readTime: '8 min',
-    thumbnailEmoji: '🎥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Arlo makes small, weather-proof cameras that run on rechargeable batteries. They work without wires, so you can put one on the front porch, driveway, or backyard with no drilling.
@@ -371,7 +371,7 @@ You manage everything from the Arlo app on your phone. Free plans give you live 
     category: 'safety-guides',
     tags: ['smart home', 'camera', 'security', 'passwords', 'two-factor'],
     readTime: '7 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `News stories about hackers watching people through their own security cameras are real, but they are almost always the result of weak passwords or reused ones. With a few small steps, you can make your cameras extremely hard to break into.
@@ -394,7 +394,7 @@ The most important changes are a strong unique password and two-factor sign-in. 
     category: 'government-civic',
     tags: ['Medicare', 'Part D', 'prescriptions', 'enrollment', 'insurance'],
     readTime: '8 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Medicare Part D pays for prescription drugs. Basic Medicare (Parts A and B) does not cover most prescriptions, so most people need to add Part D or a Medicare Advantage plan that includes drug coverage.
@@ -415,7 +415,7 @@ You should sign up during your 7-month enrollment window around your 65th birthd
     category: 'government-civic',
     tags: ['Medicare', 'Advantage', 'Part C', 'comparison', 'insurance'],
     readTime: '9 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Medicare Advantage (Part C) plans are offered by private insurance companies and combine Parts A, B, and usually D into one plan. Costs, doctor networks, and extra benefits like dental or vision vary widely by plan.
@@ -436,7 +436,7 @@ Medicare.gov has a free Plan Finder tool that shows every plan in your area with
     category: 'government-civic',
     tags: ['Medicare', 'appeal', 'denial', 'coverage', 'rights'],
     readTime: '9 min',
-    thumbnailEmoji: '📝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `If Medicare (or a Medicare Advantage plan) denies payment for a treatment, hospital stay, or prescription, you have the right to appeal. Many people give up after the first denial, but about half of all appeals end up being paid.
@@ -457,7 +457,7 @@ The appeal is free, and there are five levels. Most people win at the first or s
     category: 'government-civic',
     tags: ['Medicare', 'open enrollment', 'switch plans', 'annual'],
     readTime: '7 min',
-    thumbnailEmoji: '📅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Medicare Open Enrollment runs October 15 through December 7 every year. During this window, you can switch Medicare Advantage plans, change drug plans, or move from Advantage back to Original Medicare — no questions asked.
@@ -478,7 +478,7 @@ Plans change their drug lists and doctor networks every year, so it is worth com
     category: 'government-civic',
     tags: ['Medicare', 'MSN', 'billing', 'claims', 'paperwork'],
     readTime: '7 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `A Medicare Summary Notice (MSN) is a detailed statement Medicare mails you every three months showing every claim they paid. It lists the doctor, date, service, how much was billed, and how much Medicare paid.
@@ -487,7 +487,7 @@ Reading these notices helps you catch billing mistakes and possible fraud. You c
     steps: [
       { title: 'Go to medicare.gov and sign in', content: 'Open medicare.gov in your browser and click "Log In" at the top right. Sign in with your username and password, or create an account using your Medicare number.' },
       { title: 'Click Claims & Statements', content: 'From your account home page, click the "Claims & Statements" menu at the top. This is where all your billing paperwork lives.' },
-      { title: 'Open your latest Summary Notice', content: 'Click "Medicare Summary Notices" to see a list of past notices. Click the most recent one to open a PDF of the notice, which matches the paper version.' },
+      { title: 'Open your latest Summary Notice', content: 'Click "Medicare Summary Notices" to see a list of past notices. Click the most recent one to open a PDF of the notice, which looks just like the paper version.' },
       { title: 'Check each claim for mistakes', content: 'Look at the list of services and dates. Make sure every visit is something you actually had. If you see a doctor you never saw or a test you never had, that is a red flag for fraud.' },
       { title: 'Report anything suspicious', content: `If you find a claim that does not look right, call your doctor's billing office first to check. If it is still wrong, call 1-800-MEDICARE or the Medicare Fraud Hotline at 1-800-HHS-TIPS.` },
     ],
@@ -499,7 +499,7 @@ Reading these notices helps you catch billing mistakes and possible fraud. You c
     category: 'government-civic',
     tags: ['Medicare', 'doctor', 'find provider', 'accept Medicare'],
     readTime: '6 min',
-    thumbnailEmoji: '👨‍⚕️',
+    thumbnailEmoji: '‍',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Not every doctor accepts Medicare — some have opted out entirely, and others only take a limited number of Medicare patients. The Medicare.gov doctor finder shows you who accepts Medicare near you and how they are rated.
@@ -522,7 +522,7 @@ You can search by specialty like primary care, cardiology, or physical therapy, 
     category: 'health-tech',
     tags: ['Amazon', 'pharmacy', 'prescriptions', 'home delivery'],
     readTime: '7 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Amazon Pharmacy ships prescription medications to your door, often cheaper than your local pharmacy. If you have Amazon Prime, you get free two-day delivery plus access to the RxPass program ($5 per month for unlimited common generic drugs).
@@ -539,21 +539,21 @@ You can use your insurance, or pay cash. Amazon shows both prices before you buy
   {
     slug: 'transfer-prescription-new-pharmacy',
     title: 'How to Transfer a Prescription to a New Pharmacy',
-    excerpt: 'Move your prescription from one pharmacy to another — call the new pharmacy and they handle the transfer for you.',
+    excerpt: 'Move your prescription from one pharmacy to another — usually you just need to call the new pharmacy and they handle it.',
     category: 'health-tech',
     tags: ['prescription', 'transfer', 'pharmacy', 'CVS', 'Walgreens'],
     readTime: '5 min',
-    thumbnailEmoji: '🏪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
-    body: `If you move, find a cheaper pharmacy, or want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
+    body: `If you move, find a cheaper pharmacy, or just want a location closer to home, transferring your prescription is quick. You do not need to call your doctor — the new pharmacy handles everything by talking directly to your old pharmacy.
 
 The transfer usually takes a few hours. Most prescriptions can be transferred, though controlled drugs like certain pain or anxiety medicines sometimes need a new prescription from your doctor.`,
     steps: [
       { title: 'Gather your prescription info', content: 'Pick up your current pill bottle and look at the label. You need the prescription number (usually called "Rx Number"), the drug name and dose, and the name of your current pharmacy.' },
       { title: 'Call or visit the new pharmacy', content: 'Call the new pharmacy or walk in during business hours. Tell them you want to transfer a prescription and give them the Rx number, drug name, and the phone number of your old pharmacy.' },
       { title: 'Wait for them to contact the old pharmacy', content: 'The new pharmacy calls or faxes your old pharmacy directly to get your prescription details. This usually takes 1 to 3 hours. They will text or call you when it is ready.' },
-      { title: 'Pick up the prescription', content: 'Go to the new pharmacy, give your name at the counter, and pick up your medication. Pay with insurance or cash, the same as before.' },
+      { title: 'Pick up the prescription', content: 'Go to the new pharmacy, give your name at the counter, and pick up your medication. Pay with insurance or cash, just like before.' },
       { title: 'Update auto-refills and apps', content: `If you used the old pharmacy's app or auto-refills, cancel those. Then set up auto-refills at the new pharmacy so you do not run out of medication.` },
     ],
   },
@@ -564,7 +564,7 @@ The transfer usually takes a few hours. Most prescriptions can be transferred, t
     category: 'health-tech',
     tags: ['prescription', 'auto refill', 'pharmacy', 'medication'],
     readTime: '5 min',
-    thumbnailEmoji: '🔄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Automatic refills let your pharmacy get your next bottle ready before you run out. You do not need to call or tap anything — the pharmacy sends a text when it is ready to pick up.
@@ -587,7 +587,7 @@ Every big pharmacy offers this for free: CVS, Walgreens, Walmart, Rite Aid, and 
     category: 'app-guides',
     tags: ['Zocdoc', 'doctor', 'appointments', 'booking', 'insurance'],
     readTime: '7 min',
-    thumbnailEmoji: '📅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Zocdoc is a free website and app that shows doctors near you who are accepting new patients, with real appointment times you can book instantly. You can filter by doctor type, insurance plan, and patient ratings.
@@ -608,7 +608,7 @@ Most appointments on Zocdoc are available within a week, and you can see ratings
     category: 'health-tech',
     tags: ['mammogram', 'screening', 'appointments', 'women health'],
     readTime: '6 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most hospitals and imaging centers now let you book your yearly mammogram online. You pick a date and time that works, upload your insurance, and get a confirmation email — usually in under 5 minutes.
@@ -629,7 +629,7 @@ You often do not need a doctor's order if you are over 40 and getting a routine 
     category: 'health-tech',
     tags: ['dentist', 'appointments', 'booking', 'dental care'],
     readTime: '6 min',
-    thumbnailEmoji: '🦷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most dentists now let you book appointments online, either through their own website or a platform like Zocdoc. It takes 3 minutes and you can see real available times instead of leaving a message and waiting for a callback.
@@ -650,7 +650,7 @@ Some dentists even offer a new-patient discount for booking online. You can usua
     category: 'app-guides',
     tags: ['vet', 'pet', 'appointments', 'booking'],
     readTime: '6 min',
-    thumbnailEmoji: '🐕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most vet clinics now have online booking through their website or an app like Petdesk. You pick the pet, the reason for the visit, and an available time — usually within a few minutes.
@@ -673,7 +673,7 @@ Some vets also offer video visits (called telehealth) through apps like Vetster 
     category: 'health-tech',
     tags: ['MyFitnessPal', 'weight loss', 'calorie counting', 'fitness'],
     readTime: '7 min',
-    thumbnailEmoji: '📉',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `MyFitnessPal is a free app that tracks everything you eat and compares it to a daily calorie goal based on your weight-loss target. The food database has millions of items and you can often scan a barcode instead of typing.
@@ -694,7 +694,7 @@ Most people who use the app daily for 3 months lose weight because they become a
     category: 'health-tech',
     tags: ['Couch to 5K', 'running', 'fitness', 'exercise'],
     readTime: '6 min',
-    thumbnailEmoji: '🏃',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Couch to 5K (often written C25K) is a 9-week program that slowly builds you up from walking to running a full 5K (3.1 miles). You only train 3 days a week, 20 to 30 minutes per session.
@@ -705,7 +705,7 @@ The app talks you through each workout, telling you when to walk and when to run
       { title: 'Set up your profile', content: 'Enter your name and pick a voice coach that you like. The coach will speak in your headphones during workouts, telling you when to walk and run.' },
       { title: 'Do Week 1 Day 1', content: 'Start with Week 1 Day 1: a 5-minute warm-up walk, then alternating 60 seconds of running with 90 seconds of walking for 20 minutes, then a 5-minute cool-down. Put on headphones and follow the voice prompts.' },
       { title: 'Follow the schedule', content: 'Do 3 workouts per week, with a rest day in between. Each week gets a bit harder — longer running times and less walking. Repeat a week if you feel it is too much; there is no rush.' },
-      { title: 'Finish Week 9 with a 5K', content: 'By Week 9, you will be running 30 minutes without stopping — about 5K for most people. Sign up for a local 5K race or run one yourself for the sense of accomplishment.' },
+      { title: 'Finish Week 9 with a 5K', content: 'By Week 9, you will be running 30 minutes without stopping — about 5K for most people. Sign up for a local 5K race or just run one yourself for the sense of accomplishment.' },
     ],
   },
   {
@@ -715,7 +715,7 @@ The app talks you through each workout, telling you when to walk and when to run
     category: 'health-tech',
     tags: ['Nike', 'workouts', 'fitness', 'free app'],
     readTime: '6 min',
-    thumbnailEmoji: '💪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Nike Training Club (NTC) is a free app with hundreds of guided workouts from Nike trainers. You pick a workout by goal (strength, yoga, endurance, flexibility) and time (as short as 10 minutes) and follow along on your phone or TV.
@@ -736,7 +736,7 @@ There are no ads and no paywall. Workouts include video and voice-over instructi
     category: 'health-tech',
     tags: ['Calm', 'meditation', 'sleep', 'stress', 'mental health'],
     readTime: '6 min',
-    thumbnailEmoji: '🧘',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Calm is an app for meditation, sleep, and relaxation. It has hundreds of guided meditations, bedtime stories read by celebrities like Matthew McConaughey, and nature sounds that play in the background.
@@ -757,7 +757,7 @@ There is a free trial with several beginner meditations. After that, Calm Premiu
     category: 'health-tech',
     tags: ['Headspace', 'meditation', 'mindfulness', 'mental health'],
     readTime: '6 min',
-    thumbnailEmoji: '🕊️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Headspace is a meditation app built around a free 10-day beginner course called Basics. The sessions are only 10 minutes each and taught by a former monk named Andy Puddicombe who explains everything in plain language.
@@ -766,7 +766,7 @@ After the free trial, Headspace costs $13 a month or $70 a year. Many people fin
     steps: [
       { title: 'Install Headspace', content: 'Download Headspace from the App Store or Play Store. Open it, tap Sign Up, and create an account with your email.' },
       { title: 'Start the Basics course', content: 'On the home screen, tap "Basics" or look for the free beginner pack. It is 10 sessions, each 10 minutes long, teaching you the fundamentals of meditation.' },
-      { title: 'Listen with headphones', content: 'Put on headphones, sit somewhere quiet, and tap Play on Session 1. Andy will guide you through breathing exercises and body awareness. You do not need to sit cross-legged or do anything special. Focus on breathing.' },
+      { title: 'Listen with headphones', content: 'Put on headphones, sit somewhere quiet, and tap Play on Session 1. Andy will guide you through breathing exercises and body awareness. You do not need to sit cross-legged or do anything fancy — just breathe.' },
       { title: 'Do one session a day', content: 'Try to do one session a day for 10 days in a row. The app tracks your streak and unlocks new content as you progress.' },
       { title: 'Try sleepcasts and focus music', content: 'After Basics, explore other parts of the app. Sleepcasts are bedtime stories that help you fall asleep, and Focus music is background sound for work or study.' },
     ],
@@ -778,7 +778,7 @@ After the free trial, Headspace costs $13 a month or $70 a year. Many people fin
     category: 'health-tech',
     tags: ['blood pressure', 'health tracking', 'hypertension', 'apps'],
     readTime: '7 min',
-    thumbnailEmoji: '🩺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Tracking your blood pressure over time helps you and your doctor see patterns — like whether it is higher in the morning or after salty meals. A phone app makes this much easier than a paper log.
@@ -801,7 +801,7 @@ Apple Health (on iPhone) and Google Fit (on Android) both track blood pressure. 
     category: 'app-guides',
     tags: ['NYT Cooking', 'recipes', 'cooking', 'meal planning'],
     readTime: '7 min',
-    thumbnailEmoji: '👨‍🍳',
+    thumbnailEmoji: '‍',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `NYT Cooking is the recipe app from the New York Times, with thousands of recipes tested by pro cooks. Every recipe has clear instructions, a video for many, and notes from other home cooks who have made it.
@@ -822,7 +822,7 @@ It costs $5 a month after a free trial. If you cook even twice a week, it quickl
     category: 'app-guides',
     tags: ['Yummly', 'recipes', 'cooking', 'meal ideas'],
     readTime: '6 min',
-    thumbnailEmoji: '🍳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Yummly is a free recipe app with millions of recipes collected from top cooking websites. It suggests recipes based on what you tell it you like and what diet you follow, so you spend less time scrolling.
@@ -843,7 +843,7 @@ You can also search by ingredient — type in what you already have and it will 
     category: 'app-guides',
     tags: ['AllRecipes', 'recipes', 'free', 'cooking'],
     readTime: '6 min',
-    thumbnailEmoji: '📖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `AllRecipes has been around since 1997 and is the biggest free recipe site on the internet. Every recipe is posted by home cooks and reviewed by other home cooks, so you see what really works in real kitchens.
@@ -864,7 +864,7 @@ The best feature is the ratings. Sort any search by rating and you can trust tha
     category: 'smart-home',
     tags: ['Alexa', 'Google Home', 'Siri', 'timer', 'cooking'],
     readTime: '6 min',
-    thumbnailEmoji: '⏲️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Smart speakers like Amazon Echo, Google Nest, and Apple HomePod are perfect for the kitchen. You can set multiple timers, convert cups to tablespoons, and ask cooking questions without touching your phone with wet hands.
@@ -887,12 +887,12 @@ All three assistants can run several timers at once and name them — "Oven time
     category: 'financial-tech',
     tags: ['Monarch', 'budgeting', 'personal finance', 'Mint replacement'],
     readTime: '8 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Monarch Money is a budgeting app that connects to your bank accounts, credit cards, and investments to show all your money in one place. It became popular after Intuit shut down Mint in 2024.
 
-Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike free budgeting apps, and the interface is clean and straightforward to use.`,
+Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike free budgeting apps, and the interface is clean and easy to read.`,
     steps: [
       { title: 'Sign up at monarchmoney.com', content: 'Go to monarchmoney.com in your browser and click "Get Started". Sign up with your email, create a password, and start the free trial (7 days).' },
       { title: 'Connect your accounts', content: 'Click "Add Account" and search for your bank by name. Sign in with your online-banking username and password. Repeat for credit cards, loans, and investment accounts.' },
@@ -908,7 +908,7 @@ Monarch costs $15 a month, or $100 a year if paid upfront. It has no ads, unlike
     category: 'financial-tech',
     tags: ['YNAB', 'budgeting', 'personal finance', 'zero based'],
     readTime: '9 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `YNAB (short for You Need A Budget) is a budgeting app built around a method where every dollar you have is assigned a job — rent, groceries, savings, etc. — before you spend it. People who stick with it for 3 months often save thousands.
@@ -929,7 +929,7 @@ YNAB costs $109 a year or $15 a month, with a 34-day free trial. It is more hand
     category: 'financial-tech',
     tags: ['Rocket Money', 'subscriptions', 'cancel', 'savings'],
     readTime: '6 min',
-    thumbnailEmoji: '🚀',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Rocket Money (previously called Truebill) scans your bank and credit card statements for recurring charges. It shows all your subscriptions in one list, even ones you forgot about — a common source of wasted money.
@@ -950,7 +950,7 @@ The basic subscription-finder is free. Rocket Money also offers paid features (s
     category: 'financial-tech',
     tags: ['Fidelity', 'investments', '401k', 'IRA', 'stocks'],
     readTime: '7 min',
-    thumbnailEmoji: '📈',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `If you have a 401(k), IRA, or brokerage account at Fidelity, their free mobile app lets you check balances, see how your investments are doing, move money between accounts, and deposit checks.
@@ -973,7 +973,7 @@ The app is simple enough to use daily. Resist the urge to check too often with s
     category: 'tips-tricks',
     tags: ['Apple Reminders', 'tasks', 'iPhone', 'productivity'],
     readTime: '7 min',
-    thumbnailEmoji: '📝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Apple Reminders comes free on every iPhone, iPad, and Mac. It can do much more than simple to-do lists — reminders can go off at a specific time, when you arrive at a place, or when you leave.
@@ -994,7 +994,7 @@ You can also share lists with family members, so everyone can add to a grocery l
     category: 'tips-tricks',
     tags: ['Google Keep', 'notes', 'lists', 'productivity'],
     readTime: '6 min',
-    thumbnailEmoji: '🗒️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google Keep is a free note-taking app that works on any phone, tablet, or computer. Notes sync instantly between your devices, so you can start a grocery list on your phone and see it on your laptop when you sit down to plan meals.
@@ -1015,7 +1015,7 @@ Notes can be plain text, checklists, photos, or even voice recordings that Googl
     category: 'app-guides',
     tags: ['Todoist', 'tasks', 'productivity', 'GTD'],
     readTime: '7 min',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Todoist is a task-management app that is more powerful than basic reminders but still easy for beginners. You can sort tasks by project, set due dates using plain language, and get a clear daily view of what to do.
@@ -1036,7 +1036,7 @@ The free version works well for most people. Todoist Pro ($4 a month) adds thing
     category: 'app-guides',
     tags: ['AnyList', 'grocery', 'shopping', 'lists', 'family'],
     readTime: '6 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `AnyList is a free grocery list app that works great for couples and families. You share one list, and anyone can add items from their phone — so when your spouse finishes the last of the milk, they can add it right away.

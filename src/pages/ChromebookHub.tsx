@@ -128,7 +128,7 @@ export default function ChromebookHub() {
         path="/chromebook"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container pt-4">
           <PageBreadcrumb segments={[{ label: 'Chromebook Guide' }]} />
         </div>

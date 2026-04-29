@@ -8,7 +8,7 @@ export const guidesBatch43: Guide[] = [
     category: `phone-guides`,
     tags: [`reminders`, `iphone`, `to-do list`, `tasks`, `apple`, `productivity`, `organization`],
     readTime: `5 min`,
-    thumbnailEmoji: `✅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Reminders app comes pre-installed on every iPhone and iPad. It is Apple's built-in task manager — a place to keep lists of things you need to do, items you need to buy, and errands you need to run.
@@ -56,7 +56,7 @@ Reminders syncs via iCloud, so items added on your iPhone appear on your Mac and
     category: `app-guides`,
     tags: [`microsoft to do`, `task manager`, `to-do list`, `productivity`, `reminders`, `windows`],
     readTime: `5 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Microsoft To Do is a free task management app that works on every platform — iPhone, Android, Windows, and the web. It is a good choice if you want a to-do list that syncs between your phone and your Windows computer, or if you use Microsoft 365 (Outlook, Teams) for work or personal use.
@@ -105,7 +105,7 @@ Microsoft To Do is free and works with a Microsoft account (the same account use
     category: `essential-skills`,
     tags: [`gmail`, `out of office`, `vacation responder`, `automatic reply`, `email`, `away message`],
     readTime: `4 min`,
-    thumbnailEmoji: `🌴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Gmail's vacation responder (also called out-of-office reply) automatically sends a reply to anyone who emails you while you are away. This is useful when you are on vacation, traveling, dealing with a medical situation, or any time you will not be checking email regularly.
@@ -123,7 +123,7 @@ The vacation responder is available in Gmail on your computer (gmail.com). The s
     steps: [
       {
         title: `Open Gmail Settings on a computer`,
-        content: `Go to gmail.com on your computer. Click the gear icon (⚙️) in the top right corner → "See all settings." This opens the full Gmail settings page. Scroll down to the "Vacation responder" section near the bottom of the General tab.`,
+        content: `Go to gmail.com on your computer. Click the gear icon () in the top right corner → "See all settings." This opens the full Gmail settings page. Scroll down to the "Vacation responder" section near the bottom of the General tab.`,
         tip: `If you only have your phone, open Gmail.com in your phone's web browser and request "Desktop site" to access the full settings.`,
       },
       {
@@ -153,7 +153,7 @@ The vacation responder is available in Gmail on your computer (gmail.com). The s
     category: `essential-skills`,
     tags: [`gmail`, `deleted email`, `trash`, `recover email`, `email recovery`],
     readTime: `4 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you delete an email in Gmail, it is not immediately gone forever. It moves to the Trash folder, where it stays for 30 days. During that time, you can recover it — move it back to your inbox or another folder.
@@ -202,7 +202,7 @@ One more important thing: if an email seems to have disappeared from your inbox 
     category: `phone-guides`,
     tags: [`fill pdf`, `sign pdf`, `iphone`, `markup`, `electronic signature`, `documents`, `paperless`],
     readTime: `5 min`,
-    thumbnailEmoji: `✍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iPhone has a built-in tool called Markup that lets you fill out PDF forms and add your signature to documents — directly on your phone, with no printer, scanner, or extra app required.
@@ -253,7 +253,7 @@ No account or subscription is needed — Markup is completely free and built int
     category: `essential-skills`,
     tags: [`compress photos`, `reduce file size`, `email photos`, `send photos`, `image size`, `large file`],
     readTime: `4 min`,
-    thumbnailEmoji: `📉`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Modern smartphone photos are high resolution and can be 4–12 MB each. Emailing multiple photos at once can quickly exceed email attachment limits (usually 25 MB for Gmail, 10 MB for some older services). Large images also take a long time to send and receive on slow connections.
@@ -300,7 +300,7 @@ Compressing or resizing photos before sending makes them smaller — faster to s
     category: `phone-guides`,
     tags: [`contacts`, `iphone`, `add contact`, `phone book`, `address book`, `icloud contacts`],
     readTime: `4 min`,
-    thumbnailEmoji: `👤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone's contacts app is your digital phone book. Keeping it organized — with complete names, multiple phone numbers, email addresses, and birthdays — makes calling, texting, emailing, and FaceTiming much easier because you never have to remember a phone number.
@@ -352,7 +352,7 @@ Contacts sync via iCloud by default. Go to Settings → your name → iCloud →
     category: `phone-guides`,
     tags: [`ringtone`, `iphone sounds`, `notification sound`, `alert tone`, `customize phone`, `accessibility`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Changing your iPhone's ringtone is more than just personalization — it can also be practical. If you are in a room with other iPhones, having a distinctive ringtone makes it clear when it is yours ringing. A loud, distinctive tone is also important if you have trouble hearing the default ring.
@@ -404,7 +404,7 @@ iPhone comes with a large selection of built-in ringtones at no cost. You can al
     category: `phone-guides`,
     tags: [`wallpaper`, `iphone`, `lock screen`, `home screen`, `personalize`, `photo background`],
     readTime: `4 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone has two wallpapers: the lock screen (what you see when you pick up the phone) and the home screen (the background behind your app icons). You can set them to different images or the same one.
@@ -448,7 +448,7 @@ Changing the wallpaper takes about a minute and can be changed as often as you w
     category: `phone-guides`,
     tags: [`default browser`, `iphone`, `safari`, `chrome`, `firefox`, `browser settings`, `iOS`],
     readTime: `3 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `By default, all links you tap on your iPhone — in emails, text messages, social media, and other apps — open in Safari, Apple's built-in browser. If you prefer using Google Chrome, Firefox, Microsoft Edge, or another browser, you can change the default so links always open in your preferred browser.
@@ -489,7 +489,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
     category: `essential-skills`,
     tags: [`google search`, `search tips`, `Google`, `search operators`, `find information`, `internet search`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google handles over 8 billion searches per day, but most people search the same basic way they always have — typing a few words and hoping the first result is helpful. A few simple techniques can dramatically improve your search results and save significant time.
@@ -544,7 +544,7 @@ This is a simple setting change that takes about 30 seconds. You can change it b
     category: `phone-guides`,
     tags: [`android`, `downloads folder`, `find files`, `downloaded files`, `file manager`, `documents`],
     readTime: `4 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you download a file on your Android phone — a PDF form, a document, a photo from a website, or an attachment from email — it usually saves to a folder called "Downloads." Many people do not know where to find their downloads, especially older files they saved weeks ago.
@@ -597,7 +597,7 @@ Note: If you download a file from an email attachment, it may save to a differen
     category: `smart-home`,
     tags: [`alexa`, `alexa calling`, `amazon echo`, `drop in`, `voice call`, `hands free`, `family calls`],
     readTime: `5 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Amazon Alexa device (Echo, Echo Dot, Echo Show, etc.) can make and receive voice calls — and even video calls if you have an Echo Show with a screen. This means you can call family members and friends hands-free, just by speaking.
@@ -648,7 +648,7 @@ Video calling works on Echo Show devices (Echo Show 5, 8, 10, 15, and the new Ec
     category: `smart-home`,
     tags: [`alexa music`, `google home music`, `smart speaker`, `voice commands`, `play music`, `Amazon Music`, `Spotify`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Smart speakers are excellent music players — you can request any song, artist, album, genre, decade, or mood by just speaking. But many people do not know all the ways to ask, so they end up frustrated when the speaker does not play what they wanted.
@@ -701,7 +701,7 @@ To use a specific paid service, you need to connect it in the Alexa app or Googl
     category: `app-guides`,
     tags: [`apple wallet`, `boarding pass`, `travel`, `airline`, `mobile boarding pass`, `airport`],
     readTime: `4 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Carrying a digital boarding pass in Apple Wallet is one of the most convenient travel features on iPhone. Instead of printing a paper boarding pass or digging through your email at security, you hold your phone to the scanner and walk through.
@@ -753,7 +753,7 @@ Most major airlines support Apple Wallet boarding passes. The process is usually
     category: `phone-guides`,
     tags: [`notifications`, `badges`, `iphone`, `alerts`, `app notifications`, `notification settings`, `quiet`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The red number badges on app icons (the little circles showing "5" on your Mail app or "27" on Messages) and constant notification sounds can quickly become overwhelming. Every app wants your attention, and by default, most apps have permission to send you all types of notifications.
@@ -802,7 +802,7 @@ The goal is not to eliminate all notifications — it is to keep the ones that a
     category: `safety-guides`,
     tags: [`block number`, `iphone`, `android`, `block calls`, `block texts`, `unwanted calls`, `harassment`],
     readTime: `4 min`,
-    thumbnailEmoji: `🚫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Blocking a phone number prevents that number from calling you, sending you text messages, or reaching you via FaceTime (on iPhone). When a blocked number calls, the call goes directly to voicemail without your phone ringing. Texts go to a hidden "Blocked Messages" folder.
@@ -851,7 +851,7 @@ Blocking is reversible — you can unblock at any time.
     category: `safety-guides`,
     tags: [`report scam`, `FTC`, `do not call registry`, `robocall`, `scam text`, `consumer protection`],
     readTime: `4 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Getting scam calls and texts is infuriating — but you can fight back by reporting them. Your reports help the Federal Trade Commission (FTC) and the Federal Communications Commission (FCC) identify patterns, track down scammers, and take legal action.
@@ -904,7 +904,7 @@ Filing a report takes about 5 minutes. No immediate personal action results from
     category: `phone-guides`,
     tags: [`weather app`, `iphone`, `weather forecast`, `rain alert`, `severe weather`, `air quality`],
     readTime: `4 min`,
-    thumbnailEmoji: `🌤️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Weather app on iPhone was significantly upgraded with iOS 16 and later, making it one of the most detailed and visually rich weather apps available — and it is completely free and built in.

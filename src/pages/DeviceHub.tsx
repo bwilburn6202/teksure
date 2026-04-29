@@ -116,6 +116,8 @@ const DeviceHub = () => {
       />
       <Navbar />
 
+      <main id="main-content" tabIndex={-1} className="outline-none">
+
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Device Hub' }]} />
       </div>
@@ -238,6 +240,8 @@ const DeviceHub = () => {
           </Button>
         </section>
       )}
+
+      </main>
 
       <Footer />
     </div>

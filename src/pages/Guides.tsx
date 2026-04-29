@@ -1,13 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import {
-  Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2,
-  ShieldCheck, BookOpen, Phone, Heart, Wifi, CreditCard, Tv, MessageSquare,
-  ArrowRightLeft, Landmark, ArrowRight, ArrowLeft, Flame, TrendingUp, Star,
-  GraduationCap, MessageCircle, Brain, Shield, KeyRound, Video, PiggyBank, Home,
-  type LucideIcon,
-} from 'lucide-react';
-import { GuideThumbnail } from '@/components/GuideThumbnail';
+import { Link } from 'react-router-dom';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, type LucideIcon } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -41,48 +34,169 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'communication': MessageSquare,
   'life-transitions': ArrowRightLeft,
   'internet-connectivity': Wifi,
+  'online-privacy': EyeOff,
+  'online-banking': Building2,
+  'buying-guides': ShoppingCart,
+  'tech-explained': Cpu,
+  'troubleshooting': Wrench,
+  'work-from-home': Briefcase,
 };
 
-const categoryTints: Record<GuideCategory, string> = {
-  'windows-guides':        'from-sky-100 to-sky-50 dark:from-sky-950/40 dark:to-sky-950/10',
-  'mac-guides':            'from-slate-100 to-slate-50 dark:from-slate-800/40 dark:to-slate-900/10',
-  'essential-skills':      'from-amber-100 to-amber-50 dark:from-amber-950/40 dark:to-amber-950/10',
-  'tips-tricks':           'from-violet-100 to-violet-50 dark:from-violet-950/40 dark:to-violet-950/10',
-  'ai-guides':             'from-fuchsia-100 to-fuchsia-50 dark:from-fuchsia-950/40 dark:to-fuchsia-950/10',
-  'ai-advanced':           'from-fuchsia-100 to-fuchsia-50 dark:from-fuchsia-950/40 dark:to-fuchsia-950/10',
-  'safety-guides':         'from-red-100 to-red-50 dark:from-red-950/40 dark:to-red-950/10',
-  'how-to':                'from-blue-100 to-blue-50 dark:from-blue-950/40 dark:to-blue-950/10',
-  'app-guides':            'from-emerald-100 to-emerald-50 dark:from-emerald-950/40 dark:to-emerald-950/10',
-  'phone-guides':          'from-emerald-100 to-emerald-50 dark:from-emerald-950/40 dark:to-emerald-950/10',
-  'social-media':          'from-pink-100 to-pink-50 dark:from-pink-950/40 dark:to-pink-950/10',
-  'health-tech':           'from-rose-100 to-rose-50 dark:from-rose-950/40 dark:to-rose-950/10',
-  'government-civic':      'from-indigo-100 to-indigo-50 dark:from-indigo-950/40 dark:to-indigo-950/10',
-  'financial-tech':        'from-green-100 to-green-50 dark:from-green-950/40 dark:to-green-950/10',
-  'smart-home':            'from-teal-100 to-teal-50 dark:from-teal-950/40 dark:to-teal-950/10',
-  'entertainment':         'from-purple-100 to-purple-50 dark:from-purple-950/40 dark:to-purple-950/10',
-  'communication':         'from-cyan-100 to-cyan-50 dark:from-cyan-950/40 dark:to-cyan-950/10',
-  'life-transitions':      'from-orange-100 to-orange-50 dark:from-orange-950/40 dark:to-orange-950/10',
-  'internet-connectivity': 'from-sky-100 to-sky-50 dark:from-sky-950/40 dark:to-sky-950/10',
+const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
+  const [imgError, setImgError] = useState(false);
+  return (
+  <Link to={`/guides/${guide.slug}`} className="group block h-full">
+    <div className={`rounded-2xl border h-full transition-all hover:shadow-md overflow-hidden ${
+      completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
+    }`}>
+      <div className="relative h-36 overflow-hidden bg-muted">
+        {imgError ? (
+          <div className="w-full h-full flex items-center justify-center text-4xl select-none" aria-hidden="true">
+            {guide.thumbnailEmoji}
+          </div>
+        ) : (
+        <img
+          src={getGuideThumbnailUrl(guide)}
+          alt=""
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          loading="lazy"
+          onError={() => setImgError(true)}
+        />
+        )}
+        {completed && (
+          <div className="absolute top-2 right-2 bg-green-500 text-white rounded-full p-1">
+            <CheckCircle2 className="h-3.5 w-3.5" />
+          </div>
+        )}
+        {guide.difficulty && (
+          <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-0.5 rounded-full ${
+            guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
+            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
+            'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
+          }`}>
+            {guide.difficulty}
+          </span>
+        )}
+      </div>
+      <div className="p-4">
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <Badge variant="secondary" className="text-xs font-medium">
+            {categoryLabels[guide.category]}
+          </Badge>
+          {guide.verifiedHelpful && (
+            <Badge variant="outline" className="text-xs border-green-500/50 text-green-600 dark:text-green-400 gap-1">
+              <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
+            </Badge>
+          )}
+          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Clock className="h-2.5 w-2.5" /> {guide.readTime}
+          </span>
+        </div>
+        <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
+          {guide.title}
+        </h3>
+        <p className="text-sm text-foreground/70 line-clamp-2 leading-relaxed">{guide.excerpt}</p>
+        <div className="mt-2.5">
+          <StarRating guideSlug={guide.slug} readOnly size="sm" />
+        </div>
+      </div>
+    </div>
+  </Link>
+  );
 };
 
-/* ══════════════════════════════════════════════════════════════════════
-   Helpers
-   ══════════════════════════════════════════════════════════════════════ */
+const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
+  <Link to={`/guides/${guide.slug}`} className="group block">
+    <div className={`flex items-center gap-3 px-3 py-2.5 min-h-[44px] border-b border-border hover:bg-accent/50 transition-colors ${
+      completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
+    }`}>
+      <img
+        src={getGuideThumbnailSmall(guide)}
+        alt=""
+        className="w-8 h-8 rounded-md object-cover shrink-0"
+        loading="lazy"
+        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+      />
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
+      </div>
+      <Badge variant="secondary" className="text-xs font-medium shrink-0 hidden sm:inline-flex">
+        {categoryLabels[guide.category]}
+      </Badge>
+      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-xs font-medium shrink-0 hidden md:inline ${
+        guide.difficulty === 'Beginner' ? 'text-green-600' :
+        guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
+      }`}>
+        <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
+      </span>
+      <span className="text-xs text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
+      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
+    </div>
+  </Link>
+);
 
-/** Locate a guide that matches any of the preferred keywords (or a specific slug). */
-function pickGuide(opts: { slug?: string; keywords?: string[]; category?: GuideCategory }): Guide | undefined {
-  if (opts.slug) {
-    const hit = guides.find(g => g.slug === opts.slug);
-    if (hit) return hit;
+
+const POPULAR_SEARCHES = ['WiFi not working', 'forgot password', 'how to print', 'update Windows', 'slow computer'];
+
+function GuidesEmptyState({
+  search,
+  activeTab,
+  onClear,
+  onSearch,
+}: {
+  search: string;
+  activeTab: string;
+  onClear: () => void;
+  onSearch: (term: string) => void;
+}) {
+  if (search.trim() && activeTab !== 'all') {
+    return (
+      <div className="text-center py-20 max-w-md mx-auto">
+        <p className="text-4xl mb-4 select-none"></p>
+        <h2 className="text-lg font-semibold mb-2">
+          No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
+        </h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Try searching in all categories, or use a different word.
+        </p>
+        <button
+          onClick={onClear}
+          className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+        >
+          Show all guides
+        </button>
+      </div>
+    );
   }
-  if (opts.keywords?.length) {
-    const kws = opts.keywords.map(k => k.toLowerCase());
-    const strict = guides.find(g =>
-      kws.every(k =>
-        g.slug.includes(k) ||
-        g.title.toLowerCase().includes(k) ||
-        g.tags.some(t => t.toLowerCase().includes(k))
-      )
+
+  if (search.trim()) {
+    return (
+      <div className="text-center py-20 max-w-md mx-auto">
+        <p className="text-4xl mb-4 select-none"></p>
+        <h2 className="text-lg font-semibold mb-2">
+          No guides matched "{search}"
+        </h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Try using a simpler word, or pick one of these popular topics:
+        </p>
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
+          {POPULAR_SEARCHES.map(term => (
+            <button
+              key={term}
+              onClick={() => onSearch(term)}
+              className="rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
+            >
+              {term}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={onClear}
+          className="text-sm text-primary hover:underline font-medium"
+        >
+          Clear search and browse all guides
+        </button>
+      </div>
     );
     if (strict) return strict;
     const loose = guides.find(g =>
@@ -170,58 +284,6 @@ const QUICK_PICKS: { key: QuickPick; label: string; icon: typeof Flame }[] = [
   { key: 'beginner', label: 'Beginner',     icon: GraduationCap },
   { key: 'helpful',  label: 'Most helpful', icon: Star },
 ];
-
-/* ══════════════════════════════════════════════════════════════════════
-   Presentational cards
-   ══════════════════════════════════════════════════════════════════════ */
-
-function GuideCard({ guide, completed }: { guide: Guide; completed?: boolean }) {
-  const diff = guide.difficulty;
-  return (
-    <Link
-      to={`/guides/${guide.slug}`}
-      className={`group block h-full rounded-2xl border-2 overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 ${
-        completed
-          ? 'border-green-500/50 bg-green-50/50 dark:bg-green-950/20'
-          : 'border-border bg-card'
-      }`}
-    >
-      <div className="p-5 flex flex-col h-full min-h-[44px]">
-        <div className="flex items-start gap-3 mb-3">
-          <GuideThumbnail category={guide.category} size="h-8 w-8" />
-          <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-lg leading-snug group-hover:text-primary transition-colors line-clamp-2">
-              {guide.title}
-            </h3>
-          </div>
-          {completed && <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" aria-label="Completed" />}
-        </div>
-        <p className="text-base text-foreground/75 line-clamp-2 leading-relaxed mb-4 flex-1">
-          {guide.excerpt}
-        </p>
-        <div className="flex items-center gap-2 flex-wrap mt-auto">
-          {diff && (
-            <span className={`text-sm font-semibold px-2.5 py-1 rounded-full ${
-              diff === 'Beginner'     ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-200'
-              : diff === 'Intermediate' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200'
-              :                           'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-200'
-            }`}>
-              {diff}
-            </span>
-          )}
-          <span className="inline-flex items-center gap-1 text-sm text-muted-foreground font-medium">
-            <Clock className="h-4 w-4" /> {guide.readTime}
-          </span>
-          {guide.verifiedHelpful && (
-            <Badge variant="outline" className="text-sm border-green-500/50 text-green-700 dark:text-green-300 gap-1">
-              <CheckCircle2 className="h-3.5 w-3.5" /> Verified
-            </Badge>
-          )}
-        </div>
-      </div>
-    </Link>
-  );
-}
 
 function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
   const guide = useMemo(
@@ -419,23 +481,16 @@ const Guides = () => {
       />
       <Navbar />
 
-      {/* ══════════════════════════════════════════
-            HERO
-         ══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden border-b border-border/40">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-40"
-          style={{
-            background:
-              'radial-gradient(900px circle at 50% 0%, hsl(var(--primary) / 0.07), transparent 65%)',
-          }}
-        />
-        <div className="container relative py-16 md:py-24">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="inline-flex items-center gap-2 rounded-full border-2 border-border bg-card/70 backdrop-blur px-4 py-1.5 text-sm font-semibold text-foreground/80 mb-6">
-              <Sparkles className="h-4 w-4 text-emerald-600" />
-              {guides.length.toLocaleString()} plain-English guides
+      <main id="main-content" tabIndex={-1} className="outline-none">
+      {/* Header */}
+      <section className="border-b">
+        <div className="container py-14 md:py-20">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
+              Guides & Tutorials
+            </h1>
+            <p className="text-muted-foreground text-lg mb-8">
+              {guides.length}+ free step-by-step guides. No jargon, just answers.
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-5">
               Find a guide for{' '}
@@ -687,6 +742,7 @@ const Guides = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

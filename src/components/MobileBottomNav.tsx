@@ -21,12 +21,10 @@ const items = [
 ] as const;
 
 const HIDDEN_PREFIXES = ['/customer', '/tech', '/admin'];
-// Pages where the chat IS the page — bottom nav would overlap the input.
-const HIDDEN_EXACT = new Set(['/', '/tekbrain/chat']);
 
 export function MobileBottomNav() {
   const { pathname } = useLocation();
-  const hidden = HIDDEN_PREFIXES.some((p) => pathname.startsWith(p)) || HIDDEN_EXACT.has(pathname);
+  const hidden = HIDDEN_PREFIXES.some((p) => pathname.startsWith(p));
   if (hidden) return null;
 
   return (
@@ -42,28 +40,14 @@ export function MobileBottomNav() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  'flex min-h-[56px] flex-col items-center justify-center gap-1 px-1 py-1.5 text-[11px] font-medium transition-colors ' +
+                  'flex min-h-[56px] flex-col items-center justify-center gap-0.5 px-1 py-1.5 text-[11px] font-medium transition-colors ' +
                   (isActive
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground')
                 }
               >
-                {({ isActive }) => (
-                  <>
-                    <span
-                      className={
-                        'flex h-9 w-9 items-center justify-center rounded-full border transition-colors ' +
-                        (isActive
-                          ? 'bg-primary/10 border-primary/30 text-primary'
-                          : 'bg-white/50 border-white/70 text-muted-foreground dark:bg-white/8 dark:border-white/15 dark:text-white/70 backdrop-blur-sm')
-                      }
-                      aria-hidden="true"
-                    >
-                      <Icon className="h-[18px] w-[18px]" />
-                    </span>
-                    <span>{item.label}</span>
-                  </>
-                )}
+                <Icon className="h-5 w-5" aria-hidden="true" />
+                <span>{item.label}</span>
               </NavLink>
             </li>
           );

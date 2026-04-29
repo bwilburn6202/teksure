@@ -14,6 +14,19 @@ const validCategories: GuideCategory[] = [
   'health-tech',
   'phone-guides',
   'social-media',
+  'government-civic',
+  'financial-tech',
+  'smart-home',
+  'entertainment',
+  'communication',
+  'life-transitions',
+  'internet-connectivity',
+  'online-privacy',
+  'online-banking',
+  'buying-guides',
+  'tech-explained',
+  'troubleshooting',
+  'work-from-home',
 ];
 
 describe('guides data', () => {

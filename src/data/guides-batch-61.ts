@@ -8,7 +8,7 @@ export const guidesBatch61: Guide[] = [
     category: `health-tech`,
     tags: [`blood pressure`, `heart health`, `home monitoring`, `seniors`, `health app`, `hypertension`],
     readTime: `7 min`,
-    thumbnailEmoji: `🩺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A digital blood pressure monitor (also called a home blood pressure cuff) lets you check your blood pressure any time without going to a clinic. These devices are widely recommended by doctors — home readings are often more accurate than office readings because you are relaxed in a familiar place.
@@ -57,7 +57,7 @@ Important disclaimer: This guide is for informational purposes only. A home bloo
     category: `health-tech`,
     tags: [`diabetes`, `glucose`, `CGM`, `FreeStyle Libre`, `Dexcom`, `blood sugar`, `health tech`],
     readTime: `8 min`,
-    thumbnailEmoji: `📈`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A continuous glucose monitor, or CGM, is a small medical device that tracks your blood sugar levels throughout the day and night — without you having to prick your finger every few hours. It is one of the most significant advances in diabetes management in recent years.
@@ -107,7 +107,7 @@ Important disclaimer: This guide is for informational purposes only. CGM devices
     category: `health-tech`,
     tags: [`medication`, `pill reminder`, `Medisafe`, `seniors`, `health app`, `reminders`],
     readTime: `6 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Forgetting to take a medication — or forgetting whether you already took it — is one of the most common problems people face when managing their health. A medication reminder app helps by alerting you at the right time and keeping a log of every dose.
@@ -156,7 +156,7 @@ Important disclaimer: This guide is for informational purposes only. A medicatio
     category: `health-tech`,
     tags: [`health insurance`, `benefits`, `claims`, `in-network`, `insurance app`, `Medicare`, `coverage`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Every major health insurance company — including UnitedHealthcare, Blue Cross Blue Shield, Aetna, Cigna, Humana, and Medicare Advantage plans — now offers a free smartphone app that lets you manage your benefits without calling customer service or sorting through paper documents.
@@ -204,7 +204,7 @@ Important disclaimer: This guide is for informational purposes only. Always veri
     category: `health-tech`,
     tags: [`telehealth`, `Teladoc`, `video doctor`, `virtual care`, `online doctor`, `health tech`],
     readTime: `7 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Telehealth services like Teladoc let you see a licensed doctor or therapist by video call on your phone or computer, without driving to a clinic or sitting in a waiting room. This is especially helpful for common, non-emergency conditions like colds, sinus infections, rashes, urinary tract infections, allergies, and general medical questions.
@@ -252,7 +252,7 @@ Important disclaimer: This guide is for informational purposes only. Telehealth 
     category: `health-tech`,
     tags: [`sleep`, `sleep tracking`, `wearable`, `Fitbit`, `Apple Watch`, `health`, `sleep score`],
     readTime: `7 min`,
-    thumbnailEmoji: `😴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Sleep tracking apps and wearables measure how long and how well you sleep each night. They use sensors in your phone or watch — primarily motion sensors and heart rate monitors — to estimate when you fell asleep, when you woke up, and how much time you spent in different stages of sleep.
@@ -299,7 +299,7 @@ Important disclaimer: This guide is for informational purposes only. Sleep track
     category: `health-tech`,
     tags: [`fall detection`, `seniors`, `Apple Watch`, `medical alert`, `emergency`, `safety`, `Life Alert`],
     readTime: `8 min`,
-    thumbnailEmoji: `🚨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Falls are one of the leading causes of injury among adults over 65. Technology has made it possible to detect falls automatically and call for help even if the person who has fallen is unable to reach their phone.
@@ -347,7 +347,7 @@ Important disclaimer: This guide is for informational purposes only. No fall det
     category: `health-tech`,
     tags: [`step counter`, `pedometer`, `walking`, `fitness`, `health app`, `iPhone`, `Android`],
     readTime: `5 min`,
-    thumbnailEmoji: `👟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `You may not know it, but your smartphone has been quietly counting your steps all along. Both iPhones and Android phones have built-in motion sensors (called accelerometers) that detect the movement pattern of walking. The step data is stored automatically in your phone's health app — no setup required.
@@ -392,7 +392,7 @@ Important disclaimer: This guide is for informational purposes only. Consult you
     category: `health-tech`,
     tags: [`hydration`, `water`, `reminder app`, `health`, `wellness`, `WaterMinder`, `daily habits`],
     readTime: `5 min`,
-    thumbnailEmoji: `💧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Staying well hydrated is one of the simplest things you can do for your health, but many people — especially older adults — regularly do not drink enough water. As we age, our sense of thirst tends to decrease, which means you may not feel thirsty even when your body needs fluids. A hydration reminder app addresses this by sending scheduled prompts throughout the day to remind you to drink.
@@ -439,7 +439,7 @@ Important disclaimer: This guide is for informational purposes only. Water needs
     category: `health-tech`,
     tags: [`meditation`, `Calm`, `Headspace`, `stress`, `mental health`, `mindfulness`, `beginners`],
     readTime: `6 min`,
-    thumbnailEmoji: `🧘`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Meditation has been studied extensively and is associated with reduced stress, better sleep, lower blood pressure, and improved focus. But many people avoid it because they think it requires special training, complete silence, or the ability to "clear your mind" — none of which is actually true.
@@ -489,7 +489,7 @@ Important disclaimer: This guide is for informational purposes only. Meditation 
     category: `app-guides`,
     tags: [`cooking`, `recipes`, `beginners`, `kitchen`, `food apps`, `meal planning`, `step-by-step`],
     readTime: `6 min`,
-    thumbnailEmoji: `🍳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Cooking apps have changed the way people learn to cook at home. Instead of flipping through a cookbook and losing your page, a good recipe app walks you through each step in order, lets you tap to the next step when you are ready, and often includes timers, voice controls, and videos so you are never guessing what something should look like.
@@ -540,7 +540,7 @@ Quick Tip: Start with five-ingredient recipes. Fewer ingredients mean fewer chan
     category: `app-guides`,
     tags: [`grocery list`, `shopping`, `family sharing`, `AnyList`, `OurGroceries`, `organization`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A shared digital grocery list solves a very common problem: one person heads to the store only to realize the rest of the family added things to the list after they left — or forgot to add things at all. With a shared grocery list app, everyone in the household can add, remove, and check off items in real time from their own phones.
@@ -585,7 +585,7 @@ Quick Tip: Organize your list by aisle or store section. Both OurGroceries and A
     category: `app-guides`,
     tags: [`grocery delivery`, `Instacart`, `Shipt`, `Walmart+`, `Amazon Fresh`, `food delivery`, `seniors`],
     readTime: `8 min`,
-    thumbnailEmoji: `🏪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Grocery delivery apps bring your groceries directly to your door — you shop from your phone and a shopper (or delivery driver) handles the rest. This is especially helpful for people who have difficulty getting to the store, do not drive, or want to save time.
@@ -633,7 +633,7 @@ Quick Tip: For your first order on any of these services, look for a first-order
     category: `health-tech`,
     tags: [`therapy`, `mental health`, `BetterHelp`, `Talkspace`, `counseling`, `online therapy`, `telehealth`],
     readTime: `8 min`,
-    thumbnailEmoji: `🧠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Online therapy apps connect you with a licensed therapist through your phone or computer. Instead of driving to an office and sitting in a waiting room, you can attend therapy sessions from a comfortable place at home — by video call, phone call, or even by exchanging text messages.
@@ -682,7 +682,7 @@ Important disclaimer: Online therapy platforms are not appropriate for mental he
     category: `health-tech`,
     tags: [`iPhone`, `Health app`, `Apple Health`, `medical records`, `doctor`, `health tracking`, `iOS`],
     readTime: `7 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The iPhone Health app — the red icon with a white heart — is a central hub for all health-related data on your iPhone. Even if you have never opened it, it has likely been collecting some information automatically since you started carrying your phone.
@@ -730,7 +730,7 @@ Important disclaimer: This guide is for informational purposes only. The iPhone 
     category: `health-tech`,
     tags: [`Google Fit`, `Android`, `fitness tracking`, `steps`, `heart rate`, `Wear OS`, `activity`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏃`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Fit is a free health tracking app made by Google, designed for Android phones and Wear OS smartwatches. It tracks your daily steps, active minutes, heart rate (if your device has a sensor), and workouts. It also displays a weekly goal based on the World Health Organization's recommended guidelines for physical activity.
@@ -777,7 +777,7 @@ Important disclaimer: This guide is for informational purposes only. Activity tr
     category: `health-tech`,
     tags: [`heart rate`, `pulse`, `smartwatch`, `Apple Watch`, `Fitbit`, `health monitoring`, `cardio`],
     readTime: `6 min`,
-    thumbnailEmoji: `❤️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Your heart rate — the number of times your heart beats per minute — is one of the most basic indicators of cardiovascular health. Measuring it regularly can help you understand your fitness level, notice changes over time, and give your doctor useful information at appointments.
@@ -825,7 +825,7 @@ Important disclaimer: This guide is for informational purposes only. Consumer he
     category: `health-tech`,
     tags: [`blood oxygen`, `SpO2`, `Apple Watch`, `Galaxy Watch`, `Fitbit`, `pulse oximeter`, `health monitoring`],
     readTime: `7 min`,
-    thumbnailEmoji: `🫁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Blood oxygen level — also called SpO2 — is a measure of how much oxygen your red blood cells are carrying. Hospitals measure it with a finger clip device called a pulse oximeter. Many modern smartwatches now include the same technology built into the watch itself.
@@ -873,7 +873,7 @@ Important disclaimer: Smartwatch SpO2 readings are not medical-grade and should 
     category: `health-tech`,
     tags: [`walking`, `fitness`, `seniors`, `beginners`, `exercise`, `walking program`, `health app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Walking is one of the most accessible, low-impact forms of exercise available — no gym membership, no equipment beyond a comfortable pair of shoes, and minimal risk of injury compared to higher-intensity activities. Structured walking programs take the guesswork out of getting started by giving you a plan: how far to walk each day, how fast, and how to gradually build over weeks.
@@ -927,7 +927,7 @@ Important disclaimer: This guide is for informational purposes only. Consult you
     category: `health-tech`,
     tags: [`telehealth`, `urgent care`, `emergency room`, `911`, `medical care`, `health decisions`, `symptoms`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One of the most confusing decisions in health care is figuring out where to go when something is wrong. Going to the emergency room for a minor issue means a long wait and a large bill. But staying home when you need emergency care can be life-threatening. Knowing which level of care fits which situation can save you time, money, and stress.

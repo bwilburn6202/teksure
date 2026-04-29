@@ -448,9 +448,9 @@ const GetHelp = () => {
               </header>
 
               <div className="space-y-2">
-                <Label htmlFor="description" className="flex items-center gap-2 font-medium">
-                  <MessageSquare className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
-                  Describe the issue
+                <Label htmlFor="phone" className="text-sm font-medium flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  Phone Number <span className="text-primary font-semibold"></span>
                 </Label>
                 <Textarea
                   id="description"

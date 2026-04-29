@@ -8,7 +8,7 @@ export const guidesBatch51: Guide[] = [
     category: `essential-skills`,
     tags: [`gmail`, `email`, `organization`, `labels`, `inbox`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏷️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your Gmail inbox feels like a pile of unsorted mail on the kitchen table, labels can help you bring order to it. Labels work a lot like folders — you can group emails about a specific topic, person, or project into one place. But labels have an extra advantage: one email can have multiple labels at the same time. For example, a message from your doctor about a bill could be labeled both "Doctor" and "Bills."
@@ -53,7 +53,7 @@ Labels are free, built into every Gmail account, and work on both the Gmail webs
     category: `essential-skills`,
     tags: [`gmail`, `email`, `snooze`, `productivity`, `inbox management`],
     readTime: `5 min`,
-    thumbnailEmoji: `⏰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Have you ever read an email and thought, "I don't need to deal with this right now, but I don't want to forget about it"? That's exactly what Gmail's Snooze feature is made for.
@@ -96,7 +96,7 @@ Snooze works on the Gmail website and on the Gmail app for iPhone and Android. Y
     category: `phone-guides`,
     tags: [`gmail`, `multiple accounts`, `google account`, `iPhone`, `Android`, `email`],
     readTime: `6 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Many people have more than one Gmail address — maybe one for personal use and one for medical or financial matters, or one you share with a spouse. The good news is that the Gmail app on your iPhone or Android phone can handle multiple accounts at the same time, and switching between them takes just a tap.
@@ -142,7 +142,7 @@ This guide covers the Gmail app specifically. If you use a different email app l
     category: `phone-guides`,
     tags: [`apple mail`, `VIP`, `email`, `iPhone`, `iPad`, `Mac`, `notifications`],
     readTime: `5 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you get dozens of emails a day, it's easy for something important to get buried — a message from your doctor, a note from your child or grandchild, or something from your bank. Apple Mail has a feature called VIP that solves this problem.
@@ -190,7 +190,7 @@ You can add up to several dozen VIP contacts, and you can remove anyone from the
     category: `windows-guides`,
     tags: [`windows mail`, `email`, `Windows 10`, `Windows 11`, `outlook`, `setup`],
     readTime: `7 min`,
-    thumbnailEmoji: `✉️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Windows 10 and Windows 11 come with a free email app built right in — it's called Mail (or sometimes "Mail & Calendar"). You don't have to download anything to use it. It's already on your computer, waiting in the Start menu.
@@ -239,7 +239,7 @@ This guide will walk you through setting up the Mail app with a Gmail account as
     category: `app-guides`,
     tags: [`google drive`, `scan`, `documents`, `PDF`, `Android`, `paperless`],
     readTime: `5 min`,
-    thumbnailEmoji: `📄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Keeping track of paper documents — medical records, receipts, insurance cards, tax forms — is a constant challenge. The Google Drive app on Android has a built-in document scanner that makes it quick and convenient to turn any paper document into a digital file.
@@ -283,7 +283,7 @@ No additional apps, no scanner device, and no monthly fee is required — just y
     category: `mac-guides`,
     tags: [`Apple Numbers`, `spreadsheet`, `budget`, `iPhone`, `iPad`, `Mac`, `iWork`],
     readTime: `7 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A spreadsheet sounds technical, but at its heart it's just a table — rows and columns of information. Apple Numbers is Apple's free spreadsheet app, and it's available on iPhone, iPad, and Mac. It's designed to be much friendlier than a traditional spreadsheet program, with built-in templates and large, easy-to-read buttons.
@@ -333,7 +333,7 @@ This guide will show you the basics using a simple expense tracker as an example
     category: `essential-skills`,
     tags: [`PowerPoint`, `presentations`, `Microsoft`, `slides`, `Office`, `beginners`],
     readTime: `7 min`,
-    thumbnailEmoji: `📽️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A presentation is a set of slides — like digital pages that you can show on a computer screen or projector. Microsoft PowerPoint is the most widely used program for making presentations. You might use it to share photos from a trip, put together a family reunion program, present information at a community meeting, or create a visual aid for a church or club.
@@ -381,7 +381,7 @@ PowerPoint is free to use online at office.com/PowerPoint with a free Microsoft 
     category: `smart-home`,
     tags: [`Alexa`, `Amazon Echo`, `smart home`, `voice commands`, `routines`, `smart lights`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have an Amazon Echo device (the cylindrical speaker that responds to "Alexa"), you probably already know you can play music or check the weather. But Alexa's real power comes from controlling your home — lights, thermostat, door locks, and more — completely with your voice.
@@ -440,7 +440,7 @@ This works especially well if you wake up cold in the middle of the night — no
     category: `phone-guides`,
     tags: [`Apple Maps`, `navigation`, `iPhone`, `iPad`, `tips`, `Look Around`, `indoor maps`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most iPhone users know that Apple Maps gives turn-by-turn directions. But the app has many useful features that most people never discover. These features can save you time, help you prepare for trips, and even make navigation safer.
@@ -485,7 +485,7 @@ All of these features are free and built into the Maps app on your iPhone or iPa
     category: `windows-guides`,
     tags: [`OneDrive`, `backup`, `Windows`, `cloud storage`, `Microsoft`, `automatic backup`],
     readTime: `6 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Losing important files — family photos, documents, financial records — when a computer breaks down is one of the most frustrating and heartbreaking tech problems people face. The good news: Windows has a built-in way to automatically back up your most important files to the cloud, using Microsoft OneDrive. Once it's set up, it works in the background without you having to do anything.
@@ -534,7 +534,7 @@ This guide assumes you have a Microsoft account and are using Windows 10 or 11.`
     category: `phone-guides`,
     tags: [`iCloud`, `storage`, `iPhone`, `iPad`, `Mac`, `upgrade`, `Apple`],
     readTime: `6 min`,
-    thumbnailEmoji: `☁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've ever seen a message on your iPhone saying "iCloud Storage is Full," you're not alone — it's one of the most common iPhone issues. This guide will help you understand what iCloud storage is, what fills it up, how to free some of it, and what to do if you need more.
@@ -588,7 +588,7 @@ Choose a plan and tap "Buy." The charge goes to the payment method on your Apple
     category: `communication`,
     tags: [`WhatsApp`, `voice message`, `audio message`, `messaging`, `iPhone`, `Android`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎙️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `WhatsApp voice messages are one of the most popular features in the app, and for good reason: they're faster than typing, more personal than text, and much easier to use if you have trouble with small keyboards. You record your message by holding down a button, and the other person can listen to it whenever they're ready.
@@ -638,7 +638,7 @@ This guide covers both sending and listening to voice messages.`,
     category: `phone-guides`,
     tags: [`iMessage`, `effects`, `iPhone`, `text messages`, `bubble effects`, `screen effects`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎉`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you send a text message to another iPhone user through iMessage (the blue bubble messages), you can add special visual effects to your messages. These effects are a fun way to celebrate birthdays, show excitement, or add a personal touch to your messages.
@@ -694,7 +694,7 @@ Effects only work when both the sender and recipient are using iPhones with iMes
     category: `phone-guides`,
     tags: [`Android`, `screenshot`, `scrolling screenshot`, `Samsung`, `Pixel`, `long screenshot`],
     readTime: `5 min`,
-    thumbnailEmoji: `📸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A regular screenshot captures only what's currently visible on your phone's screen. But what if you want to capture a long article, an entire conversation, or a full webpage? That's where a scrolling screenshot comes in.
@@ -739,7 +739,7 @@ Note: scrolling screenshots aren't available in every app. They work best in bro
     category: `phone-guides`,
     tags: [`iPhone`, `screenshot`, `Safari`, `full page`, `PDF`, `iOS`],
     readTime: `4 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When you take a normal screenshot on your iPhone, it only captures what's currently visible on screen. If you're viewing a long webpage, you'd need to take dozens of screenshots to capture the whole thing. That's frustrating.
@@ -785,7 +785,7 @@ A small preview of the screenshot will appear in the bottom-left corner. Tap on 
     category: `essential-skills`,
     tags: [`Google Drive`, `organization`, `folders`, `cloud storage`, `files`],
     readTime: `6 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Google Drive is a free cloud storage service from Google. If you use Gmail, you already have Google Drive — it comes with every Google account, and includes 15 GB of free storage. You can use Google Drive to store photos, documents, spreadsheets, and any other files, and access them from any device with an internet connection.
@@ -832,7 +832,7 @@ The problem is that without some organization, Google Drive can become as clutte
     category: `phone-guides`,
     tags: [`App Store`, `iPhone`, `apps`, `refund`, `privacy`, `family sharing`, `wishlist`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Most iPhone users open the App Store only when they need to download something new. But Apple's App Store has several useful features that are worth knowing about — including ways to protect your privacy, get your money back if you accidentally buy something, and share apps with family members.
@@ -878,7 +878,7 @@ These features are free and available on any iPhone running a recent version of 
     category: `phone-guides`,
     tags: [`Google Play`, `Android`, `apps`, `permissions`, `in-app purchases`, `app updates`, `safety`],
     readTime: `6 min`,
-    thumbnailEmoji: `▶️`,
+    thumbnailEmoji: `▶`,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Google Play Store is where you download apps on Android phones. Beyond downloading apps, the Play Store has several important tools that help you stay in control of your phone's security, privacy, and spending.
@@ -928,7 +928,7 @@ These features are available on all Android phones with the Google Play Store, i
     category: `mac-guides`,
     tags: [`Mac`, `backup`, `Time Machine`, `external drive`, `macOS`, `data protection`],
     readTime: `7 min`,
-    thumbnailEmoji: `💾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Backing up your Mac is one of the most important things you can do to protect your files, photos, and documents. If your Mac is ever lost, stolen, or damaged — or if the hard drive fails unexpectedly — a backup means you won't lose anything.

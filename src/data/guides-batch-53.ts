@@ -1,6 +1,165 @@
 import { Guide } from './guides';
 
 export const guidesBatch53: Guide[] = [
+  // === HEAD guides: OneDrive freeze fix, investment scams, Google Gemini, contact backup ===
+  {
+    slug: 'windows-11-app-freeze-onedrive-fix',
+    title: "Windows 11 Apps Freeze When Saving Files — Here's the Free Fix",
+    excerpt: "A Windows 11 update bug causes Outlook, Word, and other apps to freeze when saving to OneDrive or Dropbox. Microsoft's free patch takes 5 minutes.",
+    category: 'windows-guides',
+    tags: ['Windows 11', 'OneDrive', 'Outlook', 'freeze', 'update', 'fix'],
+    readTime: '5 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-19',
+    lastVerifiedAt: '2026-04-19',
+    difficulty: 'Beginner',
+    body: `After installing Windows 11 security updates from January through April 2026, many users started noticing that apps like Outlook, Word, and File Explorer would freeze or become unresponsive whenever they tried to open a file from OneDrive, save to OneDrive, or access files stored in Dropbox.\n\nThis is a genuine Microsoft bug — not a virus or hardware problem. The issue affects Windows 11 versions 24H2 and 25H2. Microsoft confirmed the problem and released emergency out-of-band patches to fix it. The fix is free and takes about 5 minutes to install.\n\nYou may also notice that some previously downloaded emails re-download in Outlook, or that sent items temporarily disappear. These are side effects of the same bug and will clear up once you install the patch.`,
+    steps: [
+      {
+        title: 'Check if your PC has the bug',
+        content: 'The freeze happens when you try to open, save, or move files stored in cloud folders like OneDrive or Dropbox. If Outlook hangs when you open it, or Word freezes at the save dialog, or File Explorer stops responding when you navigate to your OneDrive folder — you are likely affected. If everything runs normally, you may have already received the fix automatically.',
+        tip: 'To check which version of Windows 11 you have: click the Start button → Settings → System → About. Look for "Windows 11" followed by a version number near the bottom.',
+      },
+      {
+        title: 'Open Windows Update',
+        content: 'Click the Start button (the Windows logo) at the bottom of your screen. Click the gear icon to open Settings. Click "Windows Update" on the left side of the Settings window.',
+      },
+      {
+        title: 'Check for and install the patch',
+        content: 'Click the "Check for updates" button. Windows will search for available updates. Look for a patch labeled KB5078127 (for version 25H2) or KB5082052 (for version 24H2) — these are the emergency fixes. If you see them listed, click "Download and Install." If you do not see those specific patches, install whatever updates are offered — Microsoft may have rolled the fix into a newer cumulative update.',
+        tip: "Microsoft's official support page for this issue is at support.microsoft.com — search for \"Windows 11 OneDrive freeze\" to find the exact KB article for your version.",
+        warning: 'Do not pay anyone offering to fix this issue remotely. The real fix is free, comes from Windows Update, and takes under 10 minutes. Scammers are using this bug to call people and offer "Windows recovery services" — hang up if you get one of those calls.',
+      },
+      {
+        title: 'Restart your computer to apply the patch',
+        content: 'After the download finishes, you will see a button to "Restart now" or a prompt that your PC will restart at a scheduled time. Click "Restart now" to apply the fix immediately. The restart takes about 3–5 minutes and your files are not affected.',
+      },
+      {
+        title: 'Test that the fix worked',
+        content: 'After restarting, try opening a file from your OneDrive folder or saving a document to OneDrive. The app should respond normally without freezing. If you use Outlook, open it and send a test email — it should load and save without hanging.',
+        tip: 'Going forward, keep Windows Update set to "Automatic" so patches like this install automatically. Go to Settings → Windows Update → Advanced Options and make sure "Receive updates for other Microsoft products" is turned on — this covers Office app patches too.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-spot-avoid-investment-scams',
+    title: 'How to Spot and Avoid Investment Scams',
+    excerpt: "Investment scams are now the #1 fraud category. The FTC says losses average $20,000 per victim. Here are the warning signs and what real investing looks like.",
+    category: 'safety-guides',
+    tags: ['investment scam', 'fraud', 'FTC', 'seniors', 'money', 'safety'],
+    readTime: '7 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-19',
+    lastVerifiedAt: '2026-04-19',
+    difficulty: 'Beginner',
+    body: `The Federal Trade Commission issued a new warning in April 2026: investment scams are now the number one way Americans lose money to fraud. The average loss per victim is around $20,000 — and many people lose far more. Scammers have gotten much better at appearing legitimate, using AI-generated celebrity videos, convincing fake trading platforms, and professional-looking websites.\n\nThe key thing to understand is that scammers target everyone, not just inexperienced investors. Intelligent, cautious people get caught too — because the scams are designed to look exactly like the real thing.\n\nThe most important rule: if someone contacts you out of nowhere about an investment, that alone is a red flag. Legitimate investment opportunities do not come through cold calls, social media messages, or unsolicited emails.`,
+    steps: [
+      {
+        title: 'Know the warning signs before you invest anything',
+        content: 'The FTC says these are the biggest red flags: a promise of guaranteed high returns with little or no risk (no real investment works this way — all investments carry some risk); pressure to invest quickly before you "miss out"; contact from someone you did not seek out — especially through social media, WhatsApp, or a text message; requests to invest using cryptocurrency, wire transfer, or gift cards (these cannot be reversed if you are scammed); an online platform that shows spectacular returns but will not let you withdraw your money without paying a fee first.',
+        tip: 'If someone promises guaranteed returns of 10%, 20%, or more with no risk — it is always a scam. Safe investments like savings accounts and treasury bonds currently pay around 4–5% per year, not 10–20% per month.',
+      },
+      {
+        title: 'Watch out for AI-generated celebrity endorsements',
+        content: 'In 2026, scammers commonly use AI-generated videos showing celebrities like Elon Musk, Warren Buffett, or local politicians "endorsing" their investment platform. These videos look and sound real but are completely fake. Before trusting any celebrity endorsement, search for the celebrity\'s name plus "investment scam" on Google. Real investment opportunities from real companies are not promoted through celebrity videos on social media.',
+        warning: "Scammers also use photos of real financial advisors from legitimate companies — they steal LinkedIn profile pictures and create fake websites. Always verify through the company's official website, found by typing the address yourself — never using a link from a message.",
+      },
+      {
+        title: 'Verify any investment opportunity before giving money',
+        content: "Before sending a single dollar, do these three checks: (1) Search the company's name on the SEC's investor.gov website — legitimate investment firms registered in the US are listed there. (2) Search the person's name plus \"FINRA BrokerCheck\" at brokercheck.finra.org — this tells you if a stockbroker or financial advisor is licensed. (3) Google the company's name plus the word \"scam\" or \"complaint\" — if others have been defrauded, you will likely find reports.",
+        tip: "The SEC's investor education website at investor.gov has a free tool called \"Check Out Your Investment Professional\" that shows whether an adviser is registered and if they have any disciplinary history.",
+      },
+      {
+        title: 'Never pay a fee to withdraw your own money',
+        content: 'One of the most common tricks in investment scams is the "withdrawal fee." Your fake account shows a large profit, but when you try to take out the money, the platform says you owe taxes, a withdrawal fee, or a "compliance deposit" first. This is always a second theft. Legitimate investment platforms never require you to pay a fee before you can access your own money. If this happens, stop immediately and do not pay anything.',
+      },
+      {
+        title: 'Report it and get help if you are targeted',
+        content: 'If you think you have encountered an investment scam — or already lost money — report it to the FTC at ReportFraud.ftc.gov and to the SEC at sec.gov/tcr. You can also call the AARP Fraud Watch Network helpline free at 877-908-3360 (Monday–Friday, 8 AM–8 PM Eastern) — trained fraud specialists can walk you through next steps and help you understand your options for recovering money.',
+        tip: "The FBI's Internet Crime Complaint Center at ic3.gov also accepts reports of investment fraud. Filing a report creates a record and helps investigators track patterns — even if you cannot immediately recover your money.",
+      },
+    ],
+  },
+  {
+    slug: 'how-to-use-google-gemini-ai',
+    title: "How to Use Google Gemini AI — A Beginner's Guide",
+    excerpt: "Gemini is Google's free AI assistant, built into Android phones and available on iPhone. It can write emails, answer questions, and explain confusing documents.",
+    category: 'ai-guides',
+    tags: ['Google', 'Gemini', 'AI', 'beginners', 'Android', 'iPhone'],
+    readTime: '8 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-19',
+    lastVerifiedAt: '2026-04-19',
+    difficulty: 'Beginner',
+    body: `Google Gemini is a free AI assistant made by Google. Think of it as a very knowledgeable helper you can have a conversation with — you ask it questions or give it a task in plain English, and it responds in plain English.\n\nIf you have an Android phone, Gemini is most likely already installed. On Samsung, Google Pixel, and most other Android phones, you can reach it by pressing and holding the home button or the power button. On iPhone, you can download the free Gemini app from the App Store. Google also released a standalone Gemini desktop app for Mac in April 2026.\n\nGemini is different from a regular search engine. Instead of showing you a list of links, it gives you a direct, conversational answer. You can ask follow-up questions, ask it to rewrite something, or have it help you draft a message.`,
+    steps: [
+      {
+        title: 'Open Gemini on your device',
+        content: 'On Android: press and hold the Home button at the bottom of your screen. A panel will slide up — this is Gemini. You can also open it from your app drawer by searching for "Gemini." On iPhone: download the free Google Gemini app from the App Store. Search for "Google Gemini" (not just "Gemini" — there are other apps with similar names). Sign in with a Google account. On computer: go to gemini.google.com in any browser and sign in with your Google account.',
+        tip: 'Google\'s official overview of Gemini is at support.google.com — search "Get started with Gemini" for the most up-to-date setup instructions.',
+      },
+      {
+        title: 'Ask your first question',
+        content: 'Type anything you want to know in the text box at the bottom, then tap the arrow to send it. You can also tap the microphone icon to speak your question instead of typing. Try a question like: "What is the weather going to be like this week?" or "What foods are high in potassium?" or "Explain what Medicare Part D covers in plain English." Gemini will give you a clear, direct answer.',
+      },
+      {
+        title: 'Use Gemini to help you write emails and messages',
+        content: 'Gemini is especially useful for writing. If you need to write a message but are not sure how to word it, type something like: "Help me write a polite email to my doctor\'s office asking to reschedule my appointment." Or: "Write a short thank-you note to my neighbor for watching my cat." Gemini will give you a draft you can copy, adjust, and send. You do not have to use the exact wording — you can ask it to "make it shorter" or "make it sound less formal" and it will try again.',
+        tip: 'YouTube\'s official Google channel has a video titled "How to Use Google Gemini" that walks through the main features with a live demo. Search "Google Gemini beginner tutorial" on YouTube to find it.',
+      },
+      {
+        title: 'Ask Gemini to explain something confusing',
+        content: 'If you receive a letter, bill, or legal document that is hard to understand, you can type or paste the confusing text and ask Gemini to explain it. For example: "Can you explain this paragraph from my insurance letter in plain English?" Or if you get a weird error message on your computer, type or copy the error and ask: "What does this error mean and how do I fix it?" Gemini will translate the technical language into something understandable.',
+        warning: 'Do not share your full Social Security number, passwords, credit card numbers, or other sensitive personal details with Gemini. For general questions about bills, documents, or procedures, it is fine to share the relevant text — but keep sensitive identifiers out of it.',
+      },
+      {
+        title: 'Adjust your privacy settings',
+        content: 'By default, Google may use your Gemini conversations to improve its AI. To turn this off: in the Gemini app, tap your profile picture in the top-right corner → tap "Gemini Apps Activity" → turn off "Gemini Apps Activity." This stops your conversations from being used for training. Your conversations are still stored for a period of time by default — you can also delete them from that same settings page.',
+        tip: 'Google\'s privacy settings for Gemini are at myaccount.google.com — look for "Data & Privacy" to see and control all your activity settings in one place.',
+      },
+    ],
+  },
+  {
+    slug: 'back-up-phone-contacts',
+    title: 'How to Back Up Your Phone Contacts So You Never Lose Them',
+    excerpt: "Most phones back up contacts automatically — but only if the right setting is on. Here's how to check and protect years of phone numbers in 2 minutes.",
+    category: 'essential-skills',
+    tags: ['contacts', 'backup', 'iPhone', 'Android', 'iCloud', 'Google'],
+    readTime: '5 min',
+    thumbnailEmoji: '',
+    publishedAt: '2026-04-19',
+    lastVerifiedAt: '2026-04-19',
+    difficulty: 'Beginner',
+    body: `Your phone contacts hold years of important information — family phone numbers, doctors, businesses, old friends. If your phone is lost, stolen, damaged, or you switch to a new phone without preparing first, all of those contacts can disappear permanently.\n\nThe good news is that both iPhone and Android are designed to back up your contacts to the cloud automatically. The bad news is that the backup only works if the right settings are turned on — and many people have never checked.\n\nThis guide takes about 2 minutes to verify on your phone. You will also learn how to export a copy of your contacts as a safety net, and what to do when switching to a new phone.`,
+    steps: [
+      {
+        title: 'Check that iCloud Contacts backup is on (iPhone)',
+        content: 'On iPhone, go to Settings → tap your name at the top → iCloud. Look for "Contacts" in the list and make sure the switch next to it is green (on). If it was off, turn it on — your contacts will start syncing to iCloud within a few minutes. As long as iCloud backup is on, your contacts are backed up whenever your phone is connected to Wi-Fi and charging.',
+        tip: 'Apple\'s support page for iCloud Contacts is at support.apple.com — search "Back up contacts on iPhone" for step-by-step photos of every screen.',
+      },
+      {
+        title: 'Check that Google Contacts sync is on (Android)',
+        content: 'On Android, go to Settings → tap "Accounts" or "Accounts and backup" (the name varies by phone brand) → tap your Google account → make sure "Contacts" has a checkmark or is toggled on. On Samsung phones, go to Settings → Accounts and Backup → Manage Accounts → tap your Google account → Account Sync → toggle Contacts on. Your contacts are now automatically synced to your Google account and will transfer to any new Android phone you sign in to.',
+        tip: 'Google\'s support page for contact sync is at support.google.com — search "Back up and sync contacts on Android" for the most current instructions.',
+      },
+      {
+        title: 'Export a backup copy of your contacts (both iPhone and Android)',
+        content: 'Cloud backup is convenient, but having a saved copy is extra insurance. On iPhone: open the Contacts app → tap your account at the top (or go to icloud.com on a computer, click Contacts, select all, then export as a .vcf file). On Android: open the Google Contacts app (or contacts.google.com on a computer) → tap the three lines in the top left → Export → choose vCard (.vcf) → Save. You can email this file to yourself or save it to a USB drive.',
+      },
+      {
+        title: 'What to do before switching to a new phone',
+        content: 'Before handing in your old phone or wiping it: (1) Make sure iCloud or Google sync is on and has finished syncing — you will see a "Last synced" timestamp in your account settings. (2) If switching between iPhone and Android (or vice versa), export your contacts as a .vcf file first and import it into the new platform. (3) Sign in to your Apple ID or Google account on the new phone — your contacts should appear automatically within a few minutes.',
+        tip: 'When you sign in to your Apple ID or Google account on a new phone, contacts, calendar, and photos all restore automatically over Wi-Fi. Make sure you are on Wi-Fi before setting up a new phone — the initial download can be large.',
+      },
+      {
+        title: 'Verify your contacts are backed up',
+        content: 'The final check: on another device (a tablet, a family member\'s phone, or a computer), sign in to icloud.com or contacts.google.com with the same account. You should see all your contacts there. If they show up on the web, they are backed up and safe — no matter what happens to your physical phone.',
+        warning: 'If you see zero contacts on the web version, your backup is not working. Go back to Step 1 or 2 and make sure sync is turned on. Wait 10 minutes and check again.',
+      },
+    ],
+  },
+
+  // === origin/main guides: entertainment, phone, health-tech, windows, mac, networking ===
   {
     slug: `hdmi-arc-guide`,
     title: `What Is HDMI ARC — And How to Use It With Your Soundbar`,
@@ -8,7 +167,7 @@ export const guidesBatch53: Guide[] = [
     category: `entertainment`,
     tags: [`hdmi`, `soundbar`, `tv`, `audio`, `arc`, `earc`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have a soundbar connected to your TV, you may have noticed that your TV remote doesn't always control the soundbar's volume. That's frustrating — you end up juggling two remotes. HDMI ARC solves this problem.
@@ -64,7 +223,7 @@ HDMI ARC eliminates the need for a separate optical audio cable or a second remo
     category: `entertainment`,
     tags: [`antenna`, `free tv`, `broadcast`, `local channels`, `cord cutting`, `ota`],
     readTime: `7 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Over-the-air (OTA) TV is completely free, and you don't need a cable or streaming subscription to get it. All you need is a digital TV antenna. With one, you can watch ABC, NBC, CBS, Fox, PBS, and dozens of local channels in HD quality — often with better picture quality than cable because the signal isn't compressed.
@@ -118,7 +277,7 @@ Antennas are a one-time purchase with no monthly fees. For news, sports, and net
     category: `entertainment`,
     tags: [`amazon`, `freevee`, `free streaming`, `movies`, `tv shows`, `prime video`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon Freevee is a free streaming service that gives you access to hundreds of movies and TV shows — including some original series — at no cost. You don't need an Amazon Prime membership to watch Freevee content, though you do need a free Amazon account. The catch is that Freevee content is supported by ads, similar to watching regular broadcast TV.
@@ -167,7 +326,7 @@ Freevee is a good option when you want to watch something without paying for a s
     category: `how-to`,
     tags: [`vlc`, `media player`, `video`, `audio`, `windows`, `mac`, `free software`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `VLC Media Player is a free program that plays virtually any video or audio file on your Windows PC or Mac. If you've ever tried to open a video and gotten an error saying the format isn't supported, VLC almost certainly can open it.
@@ -218,7 +377,7 @@ If you watch videos on your computer — home movies, downloaded content, videos
     category: `entertainment`,
     tags: [`roku`, `remote`, `app`, `iphone`, `android`, `private listening`, `streaming`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've ever lost your Roku remote, or if you want to type a search without hunting and pecking through an on-screen keyboard one letter at a time, the Roku mobile app is the answer. It's free, available for both iPhone and Android, and turns your phone into a full-featured replacement remote.
@@ -269,7 +428,7 @@ Even if you don't lose your physical remote often, the keyboard alone makes the 
     category: `phone-guides`,
     tags: [`imovie`, `iphone`, `ipad`, `video editing`, `apple`, `beginner`, `home video`],
     readTime: `8 min`,
-    thumbnailEmoji: `🎞️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `iMovie is Apple's free video editing app for iPhone and iPad. It lets you turn your phone's video clips into something you're proud to share — with titles, background music, and clean cuts — without needing any video editing experience.
@@ -324,7 +483,7 @@ Home movies, vacation recaps, birthday videos, and family memories all benefit f
     category: `phone-guides`,
     tags: [`iphone`, `video editing`, `photos app`, `trim video`, `rotate video`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone has a built-in video editor hiding inside the Photos app. You don't need iMovie or any other app to trim the beginning or end of a video, rotate a clip you recorded sideways, or adjust the brightness and color. The Photos app handles all of this — and the edits are non-destructive, meaning the original is always preserved.
@@ -373,7 +532,7 @@ Everything covered in this guide works on iPhones running iOS 13 or later (any i
     category: `social-media`,
     tags: [`youtube`, `upload video`, `privacy`, `unlisted`, `iphone`, `android`, `computer`],
     readTime: `7 min`,
-    thumbnailEmoji: `▶️`,
+    thumbnailEmoji: `▶`,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `YouTube isn't only for professional creators. Millions of regular people use it to share home videos with family, save personal memories, or upload videos that would otherwise take up storage space on their phone. The key is understanding YouTube's privacy settings so you control exactly who can see your video.
@@ -426,7 +585,7 @@ Keep in mind that YouTube is owned by Google. The videos you upload are stored o
     category: `phone-guides`,
     tags: [`apple watch`, `apps`, `app store`, `watchos`, `iphone`, `install apps`],
     readTime: `6 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Apple Watch isn't limited to the apps that came pre-installed. There's a full App Store right on your wrist — plus you can manage watch apps from the Watch app on your iPhone. Adding apps that are useful to you and removing clutter makes the watch much more practical.
@@ -479,7 +638,7 @@ Keeping only the apps you actually use makes your app grid easier to navigate an
     category: `health-tech`,
     tags: [`apple watch`, `workout`, `exercise`, `fitness`, `activity rings`, `heart rate`, `calories`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏃`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your Apple Watch is one of the best fitness tracking tools available, and using it to track your workouts is straightforward. Whether you're going for a walk, a swim, or a bike ride, the Workout app records your heart rate, calories burned, distance, and pace — all without you having to do anything beyond pressing start.
@@ -532,7 +691,7 @@ You don't need to be athletic to benefit from tracking. Even 20–30 minutes of 
     category: `health-tech`,
     tags: [`fitbit`, `fitness tracker`, `sleep tracking`, `step counter`, `health`, `reminders`],
     readTime: `6 min`,
-    thumbnailEmoji: `💪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Fitbit devices are popular fitness trackers, but most people only use a fraction of what they can do. Beyond counting steps, your Fitbit can remind you to move every hour, track how long and how well you slept, and show you charts of your activity, heart rate, and sleep trends over weeks and months — all through the free Fitbit app on your phone.
@@ -583,7 +742,7 @@ These three areas — movement reminders, sleep tracking, and app history — tu
     category: `health-tech`,
     tags: [`iphone`, `health app`, `steps`, `walking`, `fitness`, `pedometer`, `apple`],
     readTime: `5 min`,
-    thumbnailEmoji: `👟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone counts your steps all day long using its built-in motion sensors — and you don't need to do anything to turn this on. The Health app records every step you take as long as your phone is with you. When you open the Health app for the first time, you'll already have days or weeks of step data waiting.
@@ -629,7 +788,7 @@ Step data is stored locally on your iPhone and is private — Apple doesn't shar
     category: `health-tech`,
     tags: [`samsung`, `galaxy`, `samsung health`, `steps`, `walking`, `fitness`, `android`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you have a Samsung Galaxy phone, Samsung Health is already installed and already counting your steps. This free app uses your phone's built-in motion sensor to track your daily movement, and it stores weeks of step history so you can see how active you've been over time.
@@ -661,7 +820,7 @@ Samsung Health data stays on your phone and your Samsung account. You can option
       },
       {
         title: `Turn on movement reminders`,
-        content: `Go back to the Samsung Health home screen. Tap the three-line menu (☰) or your profile icon, then go to Settings > Notifications, or look for a "Move Reminder" or "Inactivity Alert" option. Turn it on and set the time window during which you want reminders (for example, 8 AM to 8 PM). Your phone will alert you after a period of low movement.`,
+        content: `Go back to the Samsung Health home screen. Tap the three-line menu () or your profile icon, then go to Settings > Notifications, or look for a "Move Reminder" or "Inactivity Alert" option. Turn it on and set the time window during which you want reminders (for example, 8 AM to 8 PM). Your phone will alert you after a period of low movement.`,
         tip: `You can set a step threshold — for example, if you haven't taken 200 steps in the last hour, the reminder fires. This is more useful than a fixed time reminder because it actually tracks inactivity.`
       },
       {
@@ -682,7 +841,7 @@ Samsung Health data stays on your phone and your Samsung account. You can option
     category: `windows-guides`,
     tags: [`windows`, `startup`, `task manager`, `boot time`, `performance`, `pc`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If your Windows computer feels sluggish right after you turn it on, one of the most common culprits is too many programs launching automatically at startup. Every program that opens when Windows starts uses memory and processing power during boot — the more programs starting at once, the longer your computer takes to be fully ready to use.
@@ -729,7 +888,7 @@ The process described here works on Windows 10 and Windows 11. The Task Manager 
     category: `mac-guides`,
     tags: [`mac`, `login items`, `startup`, `macos`, `performance`, `system settings`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your Mac takes a long time to be usable after you turn it on, apps opening automatically at startup are often the cause. Many apps — like Spotify, Dropbox, Microsoft Teams, Zoom, and Adobe programs — add themselves to the startup list when you install them, hoping to be ready the moment you sit down. Over time, the list grows and your Mac gets noticeably slower to boot.
@@ -740,7 +899,7 @@ This is different from closing or quitting an app — removing an app from Login
 
 Some Login Items are important and should stay. Your security software (like Malwarebytes or a VPN) often needs to run at login to protect you. iCloud Drive and Handoff-related services are also important for Apple features to work. When in doubt about a specific item, search its name online to understand what it does before removing it.
 
-If you're running macOS Ventura (13) or later, the instructions below apply directly. On older macOS versions (like Big Sur or Monterey), the same setting is in System Preferences > Users & Groups > Login Items — the steps are nearly the same.
+If you're running macOS Ventura (13) or later — including macOS Sequoia (15), which is the current version — the instructions below apply directly. On older macOS versions (like Big Sur or Monterey), the same setting is in System Preferences > Users & Groups > Login Items — the steps are nearly the same.
 
 After removing several Login Items, restart your Mac to see the improvement. Many people find their Mac is ready to use 30–60 seconds faster after this cleanup.`,
     steps: [
@@ -775,7 +934,7 @@ After removing several Login Items, restart your Mac to see the improvement. Man
     category: `windows-guides`,
     tags: [`windows`, `disk cleanup`, `storage`, `temp files`, `free up space`, `pc performance`],
     readTime: `6 min`,
-    thumbnailEmoji: `🗑️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Over time, Windows accumulates temporary files — fragments created while installing programs, browsing the web, updating Windows, and during normal computer use. These files are meant to be deleted after their job is done, but Windows doesn't always clean them up automatically. They pile up and can consume gigabytes of space on your hard drive.
@@ -822,7 +981,7 @@ These steps work on Windows 10 and Windows 11. The interface looks slightly diff
     category: `phone-guides`,
     tags: [`android`, `storage`, `free up space`, `files app`, `google`, `samsung`, `phone storage`],
     readTime: `6 min`,
-    thumbnailEmoji: `📂`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your Android phone warns you that storage is almost full, it can slow down your phone, prevent you from taking new photos, and stop apps from updating. The good news is that most Android phones have built-in tools to find and delete files that are taking up space without you needing to know which files to look for.
@@ -875,7 +1034,7 @@ If you're low on space, prioritize in this order: delete large video files and d
     category: `phone-guides`,
     tags: [`iphone`, `storage`, `free up space`, `apps`, `offload`, `ios`, `settings`],
     readTime: `6 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `When your iPhone shows "Storage Almost Full" warnings or says it can't take a new photo, it's time to look at what's using your storage. The good news is that iPhone has a built-in storage management screen that shows you exactly what's taking up space, sorted by size — so you know immediately where to focus.
@@ -929,7 +1088,7 @@ This guide works on any iPhone running iOS 13 or later — which covers virtuall
     category: `internet-connectivity`,
     tags: [`router`, `wifi`, `192.168.1.1`, `password`, `home network`, `settings`, `internet`],
     readTime: `7 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Your home router has its own settings page — a mini website hosted by the router itself — where you can change your WiFi network name, update your password, and see which devices are connected to your network. Accessing it doesn't require any special software. You type an address into your web browser.
@@ -981,7 +1140,7 @@ Common reasons to access your router: changing your WiFi name (called the SSID) 
     category: `internet-connectivity`,
     tags: [`wifi`, `2.4ghz`, `5ghz`, `router`, `wireless`, `internet`, `network`, `connectivity`],
     readTime: `5 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `If you've noticed two WiFi networks listed when you search for available networks — often with similar names like "HomeNetwork" and "HomeNetwork-5G" or "HomeNetwork_2.4G" and "HomeNetwork_5G" — that's your router broadcasting two different bands. You don't have to pick randomly. Understanding the difference helps you choose the right one for each situation.

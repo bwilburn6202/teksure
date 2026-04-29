@@ -100,25 +100,25 @@ const CATEGORY_ICONS: Record<NewsItem['category'], LucideIcon> = {
 const NEWS_ITEMS: NewsItem[] = [
   {
     id: 26,
-    title: 'AARP Warns: Fake Apple Pay Texts Are Draining Bank Accounts in Minutes',
-    summary: 'AARP\'s Fraud Watch Network issued a fresh alert in April 2026 about fake text messages claiming suspicious Apple Pay activity. The texts look official and include a phone number to call. The person who answers may already know personal details like your address — pulled from data breaches — which makes the call feel real. They then pressure victims to move money, buy gift cards, or send funds via Apple Cash. Why this matters: Apple confirmed it will never ask for your password, device passcode, or two-factor code over the phone. The safe way to check any Apple Pay alert is to open the Wallet app on your iPhone yourself and look at recent transactions there — never call a number from a text. If you think a charge might be real, contact Apple at support.apple.com or call your bank using the number on the back of your card. Forward suspicious texts to reportphishing@apple.com.',
-    category: 'scams',
-    date: '2026-04-27',
-    icon: AlertTriangle,
+    title: 'iPhone Battery Draining Fast After a Recent Update? Here Is What Helps',
+    summary: 'After any major iOS update, it is normal for your iPhone\'s battery to drain faster than usual for the first 24–48 hours while the phone finishes reindexing and reoptimizing in the background. If drain continues after 48 hours: go to Settings → Battery to see which app is using the most power, turn off Background App Refresh for apps that don\'t need it (Settings → General → Background App Refresh), and make sure your apps are all updated — developers release iOS-compatible versions alongside Apple\'s updates. If battery health has dropped below 80% (Settings → Battery → Battery Health & Charging), an Apple battery replacement for around $89 will restore normal battery life.',
+    category: 'devices',
+    date: '2026-04-20',
+    icon: Smartphone,
     readTime: '2 min',
-    source: 'AARP Fraud Watch Network',
-    sourceUrl: 'https://www.aarp.org/money/scams-fraud/iphone-apple-pay-alert/',
+    source: 'Apple Support',
+    sourceUrl: 'https://support.apple.com',
   },
   {
     id: 25,
-    title: 'Google Pixel Battery Drain After April Update — What to Do While Google Investigates',
-    summary: 'Pixel owners reported severe battery drain and overheating after installing the April 2026 Android update, with the issue affecting Pixel 6 through Pixel 10 devices. Some users say their phones now last only a few hours on a full charge, and some are getting noticeably warm even when sitting unused. Google confirmed it is investigating but has not given a fix timeline. Why this matters: if your Pixel is suddenly running hot or losing charge fast, you are not imagining it — and you are not alone. Until Google issues a patch, three things can help. First, restart the phone (hold the power button → Restart). Second, go to Settings → Battery → Battery Usage and force-stop any app eating power in the background. Third, turn on Battery Saver mode (Settings → Battery → Battery Saver) until the fix arrives. Avoid factory-resetting your phone for now — early reports suggest it does not solve the issue.',
+    title: 'Windows 11 April Update Is Locking Some Users Out — Here Is the Free Fix',
+    summary: 'Microsoft\'s April 2026 Patch Tuesday update (KB5083769) is triggering an unexpected BitLocker recovery screen on some Windows 11 PCs — the blue screen that asks for a 48-digit recovery key before Windows will load. Microsoft has acknowledged the issue. The fix is free and takes about 5 minutes: on your phone or another device, go to account.microsoft.com, sign in, tap Devices, and find your BitLocker recovery key. Type that 48-digit key on the blue screen to unlock your PC. Then install the follow-up update from Windows Update to prevent it recurring. Do not pay anyone who calls offering to help with this — the fix is completely free.',
     category: 'devices',
-    date: '2026-04-25',
-    icon: Smartphone,
-    readTime: '3 min',
-    source: 'Android Central',
-    sourceUrl: 'https://www.androidcentral.com/phones/google-pixel/pixel-phones-are-seeing-unusual-battery-drain-after-the-april-2026-update',
+    date: '2026-04-20',
+    icon: Monitor,
+    readTime: '2 min',
+    source: 'Microsoft Support',
+    sourceUrl: 'https://support.microsoft.com',
   },
   {
     id: 24,
@@ -398,7 +398,7 @@ export default function News() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Header */}
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto text-center">
@@ -460,7 +460,7 @@ export default function News() {
                         {story.title}
                       </p>
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="text-xs text-muted-foreground"> {story.score}</span>
+                        <span className="text-xs text-muted-foreground">▲ {story.score}</span>
                         {story.url && (
                           <span className="text-xs text-muted-foreground truncate">
                             {new URL(story.url).hostname.replace('www.', '')}

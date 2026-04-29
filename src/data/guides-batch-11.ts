@@ -12,7 +12,7 @@ export const guidesBatch11: Guide[] = [
     category: 'phone-guides',
     tags: ['battery', 'iPhone', 'Android', 'performance', 'settings'],
     readTime: '6 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `A phone that loses charge quickly is one of the most common complaints people have — and it is almost always fixable without buying a new phone. The biggest culprits are apps running in the background when you are not using them, a screen that stays on too long or is too bright, and location services running all the time.
@@ -56,7 +56,7 @@ Your phone battery also gradually loses capacity as it ages. iPhones show you ex
     category: 'windows-guides',
     tags: ['Windows 11', 'BitLocker', 'locked out', 'recovery key', 'update'],
     readTime: '7 min',
-    thumbnailEmoji: '🔓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `After installing Microsoft's April 14, 2026 security update (KB5083769), some Windows 11 computers started showing a blue screen asking for something called a "BitLocker recovery key." If this happened to you, your computer is not broken — it is asking for a security code to confirm you are the real owner.
@@ -100,7 +100,7 @@ Do not panic, and do not pay anyone who calls offering to help. This is a genuin
     category: 'essential-skills',
     tags: ['Google', 'Gmail', 'account recovery', 'password', 'locked out'],
     readTime: '8 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `Getting locked out of your Google account — which also locks you out of Gmail, Google Photos, and YouTube — is one of the most stressful tech moments people face. The good news is that Google has multiple recovery options, and most people can get back in by following a few specific steps.
@@ -143,7 +143,7 @@ A few important warnings: do not use any Google account recovery service you fin
     category: 'how-to',
     tags: ['app crash', 'iPhone', 'Android', 'troubleshoot', 'fix'],
     readTime: '5 min',
-    thumbnailEmoji: '🛠️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `When an app suddenly closes, freezes, or refuses to open, it almost always comes down to one of four causes: the app needs an update, its temporary data has gotten corrupted, your phone's memory is overloaded, or the app and your phone's operating system are out of sync after a recent update.
@@ -188,7 +188,7 @@ Following Apple's iOS 18 release and Google's Android 15 update, many apps had t
     category: 'safety-guides',
     tags: ['Chrome', 'browser', 'security update', 'Google', 'internet'],
     readTime: '4 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-18',
     difficulty: 'Beginner',
     body: `Google Chrome updates itself in the background most of the time — but the update only applies after you restart the browser. If you leave Chrome open for days or weeks without restarting, you could be using an outdated version with known security holes.

@@ -394,7 +394,7 @@ function KeyboardPlayground() {
           <p className="text-xs text-muted-foreground">A-Z, numbers, symbols</p>
         </div>
         <div className="glass-card p-4 text-center">
-          <span className="text-lg font-bold">Ctrl / ⌘</span>
+          <span className="text-lg font-bold">Ctrl / </span>
           <p className="text-sm font-medium">Modifier keys</p>
           <p className="text-xs text-muted-foreground">Combine with others</p>
         </div>
@@ -431,12 +431,12 @@ const TechPlayground = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Playground — Practice Technology Safely | TekSure"
-        description="Practice mouse, keyboard, and touch skills in a safe, interactive environment. No risk — only learning!"
+        description="Practice mouse, keyboard, and touch skills in a safe, interactive environment. No risk — just learning!"
         path="/playground"
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         <div className="text-center mb-12">
           <div className="inline-flex h-16 w-16 rounded-full bg-gradient-to-br from-teksure-success/20 to-primary/5 items-center justify-center mb-6">
             <Play className="h-8 w-8 text-teksure-success" />

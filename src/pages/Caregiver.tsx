@@ -28,7 +28,7 @@ const tips = [
   'Sit side-by-side rather than taking over — help them do it, don\'t do it for them.',
   'Celebrate small wins. "You connected to Wi-Fi by yourself!" matters a lot.',
   'Write down steps on a notepad in large writing and leave it by the device.',
-  'Suggest they start with TekSure\'s Beginner Basics path — only 5 short guides.',
+  'Suggest they start with TekSure\'s Beginner Basics path — just 5 short guides.',
   'Patience is the most important skill. What takes you seconds may take them minutes — that\'s OK.',
   'Set up a regular "tech time" together — 30 minutes a week makes a huge difference.',
 ];
@@ -42,7 +42,7 @@ export default function Caregiver() {
         path="/caregiver"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -109,7 +109,7 @@ export default function Caregiver() {
             <p className="text-muted-foreground mb-5 max-w-md mx-auto text-sm">You can book a TekSure technician session on behalf of a family member. Just mention in the notes that it's for someone else and we'll tailor our approach.</p>
             <div className="flex gap-3 justify-center flex-wrap">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
-                <Link to="/get-help"><Phone className="h-4 w-4" />Book Support for Them</Link>
+                <Link to="/book"><Phone className="h-4 w-4" />Book Support for Them</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-xl">
                 <Link to="/tech-anxiety">Tech Anxiety Resources</Link>

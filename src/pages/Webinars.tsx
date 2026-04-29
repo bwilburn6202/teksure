@@ -156,7 +156,7 @@ export default function Webinars() {
       />
       <Navbar />
 
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         {/* Hero */}
         <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">

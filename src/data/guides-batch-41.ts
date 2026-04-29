@@ -8,7 +8,7 @@ export const guidesBatch41: Guide[] = [
     category: `entertainment`,
     tags: [`youtube music`, `streaming music`, `free music`, `google`, `playlists`, `offline`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `YouTube Music is Google's music streaming service. It has one of the largest music libraries in the world and — unlike Spotify — has a free tier that lets you listen on your phone without paying anything. The free version includes ads and you cannot skip as many songs, but it is a real option for casual listening.
@@ -53,7 +53,7 @@ If you have a Google or Gmail account, you already have a YouTube Music account 
     category: `app-guides`,
     tags: [`tripadvisor`, `travel`, `hotel reviews`, `restaurant reviews`, `booking`, `travel planning`],
     readTime: `5 min`,
-    thumbnailEmoji: `🧳`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `TripAdvisor is a website and free app where travelers share honest reviews of hotels, restaurants, vacation rentals, and local attractions. With over one billion reviews from real travelers, it is one of the best resources for planning a trip or finding a good place to eat.
@@ -101,7 +101,7 @@ The free app works on iPhone and Android. The website at tripadvisor.com works o
     category: `app-guides`,
     tags: [`vrbo`, `vacation rental`, `travel`, `booking`, `house rental`, `airbnb alternative`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Vrbo (pronounced "VER-boh," which stands for Vacation Rentals by Owner) is one of the largest vacation rental platforms in the world, owned by Expedia Group. It lets you rent entire homes, cabins, beach houses, condos, and cottages — anywhere from a weekend to several months.
@@ -149,7 +149,7 @@ The Vrbo app is free on iPhone and Android. You can also use vrbo.com on any com
     category: `app-guides`,
     tags: [`parkmobile`, `parking`, `parking meter`, `phone parking`, `urban parking`],
     readTime: `4 min`,
-    thumbnailEmoji: `🅿️`,
+    thumbnailEmoji: `🅿`,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `ParkMobile is a free app that lets you pay for street parking and parking garages using your phone instead of a parking meter or payment kiosk. It is accepted at thousands of locations across the US, including cities like Washington DC, Atlanta, Chicago, and hundreds of others.
@@ -196,7 +196,7 @@ The app works on iPhone and Android. You can also pay at parkmobile.io on a comp
     category: `app-guides`,
     tags: [`amtrak`, `train travel`, `rail travel`, `mobile ticket`, `booking`, `Amtrak Guest Rewards`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚆`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Amtrak app is the official way to book and manage Amtrak train travel from your iPhone or Android phone. You can search for trains between any two cities, compare ticket prices and seat types, buy tickets, and show a mobile ticket to the conductor — no paper printout needed.
@@ -244,7 +244,7 @@ The app is free on iPhone and Android. You can also book at amtrak.com on any co
     category: `app-guides`,
     tags: [`sams club`, `scan and go`, `warehouse club`, `membership`, `shopping app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The Sam's Club app includes a feature called "Scan & Go" that changes how you shop at Sam's Club. Instead of loading items into a cart, pushing to a checkout lane, waiting in line, unloading, and reloading — you use the app to scan each item's barcode as you put it in your cart. When you are ready to leave, you pay through the app and show a receipt QR code to the exit greeter.
@@ -290,7 +290,7 @@ The Sam's Club app is free on iPhone and Android.`,
     category: `app-guides`,
     tags: [`kroger`, `digital coupons`, `fuel points`, `grocery`, `savings`, `pharmacy`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Kroger is one of the largest grocery chains in the US, and its free app is packed with money-saving features. The biggest one: digital coupons that you clip once and automatically apply at checkout — no paper cutting required.
@@ -336,7 +336,7 @@ The app works for Kroger and its family of stores, including Fry's, Ralphs, King
     category: `tips-tricks`,
     tags: [`ipad`, `stage manager`, `multitasking`, `iPadOS`, `productivity`, `split screen`],
     readTime: `5 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `Stage Manager is a multitasking feature Apple introduced in iPadOS 16 that makes using an iPad feel more like a computer. Instead of switching between apps one at a time, you can have multiple apps open in overlapping windows on the same screen — similar to how a Mac or Windows computer works.
@@ -386,7 +386,7 @@ You can use Stage Manager with or without a keyboard and trackpad, but it is mos
     category: `phone-guides`,
     tags: [`nearby share`, `android`, `file sharing`, `wireless transfer`, `quick share`, `samsung`],
     readTime: `4 min`,
-    thumbnailEmoji: `📤`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Nearby Share (called "Quick Share" on Samsung phones) is Android's built-in wireless file sharing feature. It works like Apple's AirDrop: you can send photos, videos, documents, links, contacts, and even apps to any Android phone that is physically nearby — without using the internet, email, or text messaging.
@@ -437,7 +437,7 @@ Nearby Share requires both devices to have Bluetooth and Wi-Fi turned on.`,
     category: `health-tech`,
     tags: [`apple health`, `health records`, `medical records`, `hospital`, `iPhone health app`, `FHIR`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `The iPhone Health app has a feature called Health Records that pulls your medical information — lab results, medications, immunizations, allergies, conditions, and visit notes — directly from participating hospitals and doctor's offices into a private, secure location on your phone.
@@ -485,7 +485,7 @@ Requirements: iPhone with iOS 11.3 or later (iOS 16 or later recommended for the
     category: `app-guides`,
     tags: [`amazon`, `subscribe and save`, `auto delivery`, `household items`, `discount`, `recurring orders`],
     readTime: `5 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Amazon Subscribe & Save is a feature that lets you set up automatic recurring deliveries for products you buy regularly. Instead of remembering to reorder shampoo, paper towels, vitamins, or dog food every month, you set it up once and Amazon ships it automatically.
@@ -532,7 +532,7 @@ You need an Amazon account to use Subscribe & Save. Prime membership is not requ
     category: `health-tech`,
     tags: [`lyft`, `medical transportation`, `NEMT`, `medicare advantage`, `medicaid`, `ride to doctor`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Getting to medical appointments can be a major challenge for people who cannot drive — especially seniors, people recovering from surgery, or those with disabilities. Lyft has programs specifically designed to help.
@@ -584,7 +584,7 @@ This guide focuses on using the standard Lyft app to request a medical ride your
     category: `essential-skills`,
     tags: [`library card`, `free access`, `new york times`, `linkedin learning`, `magazines`, `digital perks`],
     readTime: `6 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `A public library card is one of the best free resources most Americans never fully use. Beyond borrowing books, your card typically gets you free access to services that would cost hundreds of dollars per year if you paid for them directly.
@@ -639,7 +639,7 @@ Getting a library card is free and takes about 5 minutes at any public library. 
     category: `financial-tech`,
     tags: [`bill pay`, `automatic payment`, `autopay`, `banking`, `utilities`, `credit card`, `never miss payment`],
     readTime: `6 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Automatic bill pay means your bills get paid every month on their due date — without you logging in, writing a check, or remembering to do anything. Set it up once and it handles itself going forward.
@@ -688,7 +688,7 @@ Setting up autopay often gets you a small discount — many utility companies an
     category: `health-tech`,
     tags: [`medicare`, `what's covered`, `official app`, `medicare benefits`, `coverage lookup`, `medicare.gov`],
     readTime: `4 min`,
-    thumbnailEmoji: `🔵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The "What's Covered" app is Medicare's official free app that lets you look up whether a medical test, service, item, or medication is covered by Original Medicare (Parts A and B). Instead of calling Medicare or searching a long government website, you can search right from your phone.
@@ -736,7 +736,7 @@ The "What's Covered" app is free on iPhone and Android, developed by the Centers
     category: `government-civic`,
     tags: [`VA`, `veterans`, `VA app`, `veterans affairs`, `healthcare`, `benefits`, `prescription refill`],
     readTime: `5 min`,
-    thumbnailEmoji: `🇺🇸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `The VA: Health and Benefits app is the official mobile app of the US Department of Veterans Affairs. It gives veterans a convenient way to manage VA healthcare and benefits from their phone — without calling the VA or visiting in person for many common tasks.
@@ -788,7 +788,7 @@ The app is free on iPhone and Android from the official VA. It is one of the bes
     category: `phone-guides`,
     tags: [`iphone`, `video recording`, `camera`, `slow motion`, `4k video`, `memories`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Your iPhone takes high-quality videos that used to require expensive cameras. Whether you want to capture grandchildren playing, record a vacation memory, or document something around the house, the iPhone camera makes it simple.
@@ -842,7 +842,7 @@ Most people leave the default settings and record. But knowing the options helps
     category: `communication`,
     tags: [`facetime`, `shareplay`, `watch together`, `remote viewing`, `apple tv plus`, `disney plus`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Intermediate`,
     body: `SharePlay is a feature built into FaceTime on iPhone, iPad, and Mac that lets you watch movies, TV shows, or listen to music with someone else — even if you are hundreds of miles apart. Both people see the same content at exactly the same time, and you can talk during it using FaceTime.
@@ -893,7 +893,7 @@ SharePlay requires iPhone, iPad, or Mac. The person starting SharePlay needs iOS
     category: `communication`,
     tags: [`video message`, `send video`, `text video`, `email video`, `whatsapp video`, `share memories`],
     readTime: `5 min`,
-    thumbnailEmoji: `📹`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-19`,
     difficulty: `Beginner`,
     body: `Sending a video message to a friend or family member — a quick birthday greeting, watching the grandkids in the yard, showing off a home project — is one of the most personal ways to stay connected. But many people run into trouble because videos are large files and some methods compress them heavily or block them entirely.

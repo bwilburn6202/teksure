@@ -374,12 +374,12 @@ const TechDreamBuilder = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Dream Builder — Build Your Personal Tech Journey | TekSure"
-        description="Tell us what you want to do with technology — we'll build a personalized learning path tailored to you. No jargon — clear steps."
+        description="Tell us what you want to do with technology — we'll build a personalized learning path just for you. No jargon, just clear steps."
         path="/dream-builder"
       />
       <Navbar />
       
-      <main className="container py-12 md:py-20">
+      <main id="main-content" className="container py-12 md:py-20">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="mb-8 flex flex-wrap justify-center gap-2 bg-transparent h-auto p-0">
             <TabsTrigger value="goals" className="rounded-xl px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">

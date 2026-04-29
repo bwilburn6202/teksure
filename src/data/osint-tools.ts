@@ -20,7 +20,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'search-engines',
     name: 'Search Engines & Indexing',
-    emoji: '🔎',
+    emoji: '',
     description: 'Specialized search engines and advanced search techniques for finding public information across the web.',
     tools: [
       { name: 'Google Advanced Search', url: 'https://www.google.com/advanced_search', description: 'Precision search with filters for file type, date, domain, and more.', pricing: 'free' },
@@ -41,7 +41,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'image-search',
     name: 'Image Search & Analysis',
-    emoji: '🖼️',
+    emoji: '',
     description: 'Reverse image search tools to trace the origin of photos, find similar images, and extract metadata.',
     tools: [
       { name: 'Google Image Search', url: 'https://images.google.com', description: 'Reverse image search — upload or paste a photo URL to find where it appears online.', pricing: 'free' },
@@ -58,7 +58,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'social-media',
     name: 'Social Media OSINT',
-    emoji: '📱',
+    emoji: '',
     description: 'Tools for investigating social media profiles, posts, and connections across platforms.',
     tools: [
       { name: 'Twitter/X Advanced Search', url: 'https://twitter.com/search-advanced', description: 'Filter tweets by user, date range, location, keywords, and engagement metrics.', pricing: 'free' },
@@ -87,7 +87,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'username-lookup',
     name: 'Username & Identity Lookup',
-    emoji: '👤',
+    emoji: '',
     description: 'Check if a username exists across hundreds of websites and social platforms.',
     tools: [
       { name: 'NameChk', url: 'https://namechk.com/', description: 'Check username availability across dozens of social networks and domains at once.', pricing: 'free' },
@@ -106,7 +106,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'email-domain',
     name: 'Email, Domain & Network Analysis',
-    emoji: '✉️',
+    emoji: '',
     description: 'Tools for finding email addresses, verifying them, and investigating domains and networks.',
     tools: [
       { name: 'MXToolbox', url: 'https://mxtoolbox.com/', description: 'Check email server records (MX, SPF, DKIM), blacklists, and DNS configuration.', pricing: 'freemium' },
@@ -124,7 +124,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'people-search',
     name: 'People Search & Background Checks',
-    emoji: '🔍',
+    emoji: '',
     description: 'Look up people by name, phone number, address, or email to find public records and contact info.',
     tools: [
       { name: 'Pipl', url: 'https://pipl.com/', description: 'Deep people search engine — finds social profiles, contact info, and public records.', pricing: 'paid' },
@@ -142,7 +142,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'breach-data',
     name: 'Breached Data & Password Tools',
-    emoji: '🔐',
+    emoji: '',
     description: 'Check if your accounts have been exposed in data breaches and leaked credential databases.',
     tools: [
       { name: 'HaveIBeenPwned', url: 'https://haveibeenpwned.com/', description: 'Check if your email or phone has been in a data breach — trusted, free, and widely used.', pricing: 'free' },
@@ -168,7 +168,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'website-osint',
     name: 'Website & Domain OSINT',
-    emoji: '🌐',
+    emoji: '',
     description: 'Investigate websites — discover their technology stack, DNS records, hosting, and history.',
     tools: [
       { name: 'BuiltWith', url: 'https://builtwith.com/', description: 'See what technology any website is built with — CMS, analytics, hosting, and more.', pricing: 'freemium' },
@@ -199,7 +199,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'geospatial',
     name: 'Geospatial Intelligence (GEOINT)',
-    emoji: '🗺️',
+    emoji: '',
     description: 'Maps, satellite imagery, and location-based tools for geographic analysis.',
     tools: [
       { name: 'Google Earth Pro', url: 'https://earth.google.com/web/', description: 'Explore satellite imagery, 3D terrain, and Street View from around the world.', pricing: 'free' },
@@ -217,7 +217,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'business-osint',
     name: 'Business & Corporate OSINT',
-    emoji: '🏢',
+    emoji: '',
     description: 'Research companies, corporate records, ownership structures, and business intelligence.',
     tools: [
       { name: 'OpenCorporates', url: 'https://opencorporates.com/', description: `Search the world's largest open database of companies — 200M+ entries across 140 jurisdictions.`, pricing: 'freemium' },
@@ -232,7 +232,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'sock-puppets',
     name: 'Sock Puppets & Anonymity',
-    emoji: '🎭',
+    emoji: '',
     description: 'Tools for creating anonymous research identities and protecting your own identity during investigations.',
     tools: [
       { name: 'Fake Name Generator', url: 'https://www.fakenamegenerator.com/', description: 'Generate realistic fake identities — name, address, phone, SSN, email, and more.', pricing: 'free' },
@@ -243,7 +243,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'automation',
     name: 'Frameworks & Automation',
-    emoji: '⚙️',
+    emoji: '',
     description: 'OSINT frameworks and automation tools that combine multiple data sources and techniques.',
     tools: [
       { name: 'OSINT Framework', url: 'https://osintframework.com/', description: 'Interactive tree of OSINT tools organized by data type — the go-to starting point.', pricing: 'free' },
@@ -256,7 +256,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'working-tools',
     name: 'Technical OSINT Tools',
-    emoji: '🛠️',
+    emoji: '',
     description: 'Command-line tools and utilities for hands-on OSINT data collection and analysis.',
     tools: [
       { name: 'breach-parse', url: 'https://github.com/hmaverickadams/breach-parse', description: 'Parse large breach compilation files by domain to find leaked credentials.', pricing: 'free' },
@@ -270,7 +270,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'lab-building',
     name: 'OSINT Lab Setup',
-    emoji: '🧑‍💻',
+    emoji: '‍',
     description: 'Set up your own OSINT investigation environment with virtual machines and preconfigured tools.',
     tools: [
       { name: 'VMware Workstation Player', url: 'https://www.vmware.com/products/workstation-player.html', description: 'Run virtual machines on your computer — isolate your OSINT investigations.', pricing: 'free' },
@@ -282,7 +282,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'fact-checking',
     name: 'Fact-Checking & Verification',
-    emoji: '✅',
+    emoji: '',
     description: 'Tools to verify claims, check news stories, and spot misinformation before you share it.',
     tools: [
       { name: 'Snopes', url: 'https://www.snopes.com/', description: `The internet's oldest and most trusted fact-checking site. Search any claim or rumor.`, pricing: 'free' },
@@ -298,7 +298,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'news-media',
     name: 'News & Media Search',
-    emoji: '📰',
+    emoji: '',
     description: 'Search news sources worldwide, track stories, and find reliable journalism on any topic.',
     tools: [
       { name: 'Google News', url: 'https://news.google.com/', description: 'Search and browse news from thousands of sources, organized by topic.', pricing: 'free' },
@@ -312,7 +312,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'public-records',
     name: 'Government & Public Records',
-    emoji: '🏛️',
+    emoji: '',
     description: 'Search official government databases, court records, property records, and public filings.',
     tools: [
       { name: 'Black Book Online', url: 'https://www.blackbookonline.info/', description: 'Free directory of public record databases organized by state — courts, property, inmates.', pricing: 'free' },
@@ -327,7 +327,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'video-search',
     name: 'Video Search & Analysis',
-    emoji: '🎬',
+    emoji: '',
     description: 'Search and analyze videos across platforms — find specific content, check metadata, and verify footage.',
     tools: [
       { name: 'YouTube', url: 'https://www.youtube.com/', description: `The world's largest video platform — search for tutorials, news, and how-to content.`, pricing: 'free' },
@@ -341,7 +341,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'phone-research',
     name: 'Phone Number Research',
-    emoji: '📞',
+    emoji: '',
     description: 'Look up unknown phone numbers, identify spam callers, and verify who is calling you.',
     tools: [
       { name: 'TrueCaller', url: 'https://www.truecaller.com/', description: 'Identify unknown callers and block spam — global caller ID database.', pricing: 'freemium' },
@@ -356,7 +356,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'academic-research',
     name: 'Academic & Scientific Research',
-    emoji: '📚',
+    emoji: '',
     description: 'Search scholarly articles, medical studies, and scientific papers — useful for checking health claims.',
     tools: [
       { name: 'Google Scholar', url: 'https://scholar.google.com/', description: 'Search academic papers, theses, and court opinions across all fields.', pricing: 'free' },
@@ -370,7 +370,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'vehicle-property',
     name: 'Vehicle & Property Lookup',
-    emoji: '🚗',
+    emoji: '',
     description: 'Look up vehicle history by VIN number and search property ownership records.',
     tools: [
       { name: 'FaxVIN', url: 'https://www.faxvin.com/', description: `Free VIN check — look up a vehicle's history, recalls, and title status.`, pricing: 'freemium' },
@@ -382,7 +382,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'learning',
     name: 'Training & Learning Resources',
-    emoji: '🎓',
+    emoji: '',
     description: 'Courses, videos, and practice platforms to build your OSINT investigation skills.',
     tools: [
       { name: 'TCM Security OSINT Course', url: 'https://academy.tcm-sec.com/', description: 'Practical OSINT training from TCM Security — learn real-world investigation techniques.', pricing: 'paid' },
@@ -396,7 +396,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'transportation',
     name: 'Transportation & Flight Tracking',
-    emoji: '✈️',
+    emoji: '',
     description: 'Track flights, ships, and trains in real time using open data feeds and ADS-B signals.',
     tools: [
       { name: 'FlightRadar24', url: 'https://www.flightradar24.com/', description: 'Live flight tracker — see every commercial plane in the sky on a real-time map.', pricing: 'freemium' },
@@ -428,7 +428,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'messaging',
     name: 'Messaging App Investigation',
-    emoji: '💬',
+    emoji: '',
     description: 'Search and analyze public content on messaging platforms like Telegram, Discord, and more.',
     tools: [
       { name: 'TGStat', url: 'https://tgstat.com/', description: 'Telegram analytics — search channels, track growth, and analyze public group activity.', pricing: 'freemium' },
@@ -443,7 +443,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'dark-web',
     name: 'Dark Web & Deep Web',
-    emoji: '🕳️',
+    emoji: '',
     description: 'Tools for searching and monitoring content on the dark web and deep web (use responsibly and legally).',
     tools: [
       { name: 'Ahmia', url: 'https://ahmia.fi/', description: 'Search engine for Tor hidden services — the safest way to search the dark web from a regular browser.', pricing: 'free' },
@@ -457,7 +457,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'iot-devices',
     name: 'IoT & Connected Devices',
-    emoji: '📡',
+    emoji: '',
     description: 'Search engines for internet-connected devices — find exposed cameras, servers, routers, and smart devices.',
     tools: [
       { name: 'GreyNoise', url: 'https://www.greynoise.io/', description: 'See what devices are scanning the internet — filter out background noise from real threats.', pricing: 'freemium' },
@@ -471,7 +471,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'threat-intel',
     name: 'Threat Intelligence',
-    emoji: '🛡️',
+    emoji: '',
     description: 'Track cyber threats, malware, and attack patterns — databases used by security researchers worldwide.',
     tools: [
       { name: 'MITRE ATT&CK', url: 'https://attack.mitre.org/', description: 'The encyclopedia of hacker techniques — see how real-world attacks work step by step.', pricing: 'free' },
@@ -487,7 +487,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'wireless',
     name: 'Wireless & Radio Frequency',
-    emoji: '📶',
+    emoji: '',
     description: 'Map wireless networks, find cell towers, and explore radio frequencies around the world.',
     tools: [
       { name: 'CellMapper', url: 'https://www.cellmapper.net/', description: 'Community-built map of cell towers — find coverage from AT&T, T-Mobile, Verizon, and more.', pricing: 'free' },
@@ -501,7 +501,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'archives',
     name: 'Archives & Cached Content',
-    emoji: '🗄️',
+    emoji: '',
     description: 'Find old or deleted web pages, cached content, and archived versions of websites.',
     tools: [
       { name: 'Archive.today', url: 'https://archive.ph/', description: 'Save a snapshot of any webpage — also search for pages others have already saved.', pricing: 'free' },
@@ -515,7 +515,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'data-viz',
     name: 'Data Visualization & Link Analysis',
-    emoji: '🔗',
+    emoji: '',
     description: 'Tools for mapping connections, building timelines, and visualizing relationships between data points.',
     tools: [
       { name: 'Gephi', url: 'https://gephi.org/', description: 'Open-source network visualization software — map relationships and find hidden patterns.', pricing: 'free' },
@@ -529,7 +529,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'temp-services',
     name: 'Disposable Research Services',
-    emoji: '🎭',
+    emoji: '',
     description: 'Temporary email, phone, and identity services for safe research signups (never use for fraud).',
     tools: [
       { name: 'Guerrilla Mail', url: 'https://www.guerrillamail.com/', description: 'Disposable email address — send and receive emails without creating an account.', pricing: 'free' },
@@ -547,7 +547,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'ai-search',
     name: 'AI Search Engines',
-    emoji: '🤖',
+    emoji: '',
     description: 'AI-powered search engines that understand natural language and provide direct answers instead of just links.',
     tools: [
       { name: 'Perplexity', url: 'https://www.perplexity.ai/', description: 'AI search engine that gives direct answers with cited sources — like asking a researcher your question.', pricing: 'freemium' },
@@ -569,7 +569,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'source-code',
     name: 'Source Code Search',
-    emoji: '💻',
+    emoji: '',
     description: 'Search through publicly available source code, websites, and repositories for specific code patterns.',
     tools: [
       { name: 'GitHub Code Search', url: 'https://github.com/search', description: 'Search across all public GitHub repositories for code, commits, issues, and users.', pricing: 'free' },
@@ -583,7 +583,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'exploits',
     name: 'Exploit & Vulnerability Search',
-    emoji: '🛡️',
+    emoji: '',
     description: 'Search databases of known software vulnerabilities and security exploits for research purposes.',
     tools: [
       { name: 'Exploit-DB', url: 'https://www.exploit-db.com/', description: 'Archive of public exploits and vulnerable software — maintained by Offensive Security.', pricing: 'free' },
@@ -599,7 +599,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'google-dorks',
     name: 'Google Dork Generators',
-    emoji: '🎯',
+    emoji: '',
     description: 'Tools that help build advanced Google search queries (dorks) to find specific information on the web.',
     tools: [
       { name: 'Google Hacking Database', url: 'https://www.exploit-db.com/google-hacking-database', description: 'Collection of Google dorks organized by category — the original dork library from Exploit-DB.', pricing: 'free' },
@@ -613,7 +613,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'pastebins',
     name: 'Pastebin & Paste Sites',
-    emoji: '📋',
+    emoji: '',
     description: 'Search and monitor text-sharing sites where sensitive data is sometimes publicly posted.',
     tools: [
       { name: 'Pastebin', url: 'https://pastebin.com/', description: 'The original text-sharing site — search public pastes for leaked data or shared information.', pricing: 'freemium' },
@@ -631,7 +631,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'patents',
     name: 'Patent & Intellectual Property Search',
-    emoji: '📜',
+    emoji: '',
     description: 'Search patent databases worldwide to research inventions, trademarks, and intellectual property.',
     tools: [
       { name: 'Google Patents', url: 'https://patents.google.com/', description: 'Search 120+ million patent documents from around the world — free, with PDF downloads.', pricing: 'free' },
@@ -649,7 +649,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'translation',
     name: 'Translation & Language Tools',
-    emoji: '🌐',
+    emoji: '',
     description: 'Translate text between languages — essential for investigating foreign-language sources.',
     tools: [
       { name: 'Google Translate', url: 'https://translate.google.com/', description: 'Translate text, documents, and websites between 130+ languages — supports camera and voice input.', pricing: 'free' },
@@ -667,7 +667,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'image-enhancement',
     name: 'Image Enhancement & Upscaling',
-    emoji: '🖌️',
+    emoji: '',
     description: 'AI-powered tools to enhance, upscale, and improve the quality of images for analysis.',
     tools: [
       { name: 'Upscale.media', url: 'https://www.upscale.media/', description: 'AI image upscaler — increase resolution up to 4x without losing quality.', pricing: 'freemium' },
@@ -683,7 +683,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'ftp-search',
     name: 'FTP & File Search',
-    emoji: '🗄️',
+    emoji: '',
     description: 'Search public FTP servers and file-sharing sites for documents and files.',
     tools: [
       { name: 'Mamont', url: 'https://www.mmnt.ru/', description: 'FTP search engine — find files on public FTP servers worldwide.', pricing: 'free' },
@@ -695,7 +695,7 @@ export const osintCategories: OsintCategory[] = [
   {
     id: 'blog-search',
     name: 'Blog & Forum Search',
-    emoji: '📝',
+    emoji: '',
     description: 'Search blog posts, forum discussions, and community content across the web.',
     tools: [
       { name: 'Twingly', url: 'https://www.twingly.com/', description: 'Blog search engine covering millions of blogs in multiple languages worldwide.', pricing: 'freemium' },

@@ -8,7 +8,7 @@ export const guidesBatch59: Guide[] = [
     category: `essential-skills`,
     tags: [`smartphone`, `seniors`, `beginner`, `iphone`, `android`, `getting-started`],
     readTime: `8 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Getting a smartphone for the first time — or finally deciding to learn how to use the one you have — can feel overwhelming. There are buttons you have not pressed, apps you have never opened, and settings you are not sure about. That is completely normal. This guide walks you through the most important things to understand about your smartphone so you can feel confident using it every day.
@@ -108,7 +108,7 @@ If you are still unsure, visit a phone store and ask to hold a few different mod
     category: `how-to`,
     tags: [`trade-in`, `phone upgrade`, `save money`, `apple`, `samsung`, `verizon`, `at&t`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔄`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have an old smartphone sitting in a drawer — or even one you are currently using — it likely has real monetary value that you can put toward the cost of a new phone. Trading in your old device is one of the best ways to reduce how much you spend on an upgrade. Many people do not realize their old phone is worth $100 to $500 or more depending on the model and condition.
@@ -154,7 +154,7 @@ You can check the estimated value of your phone before committing to anything. A
     category: `phone-guides`,
     tags: [`data usage`, `cell data`, `overage`, `iphone`, `android`, `phone plan`],
     readTime: `5 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Your phone plan comes with a monthly data allowance — a set amount of internet data you can use over the cellular network (not counting your home Wi-Fi). This might be 5 gigabytes, 10 gigabytes, or unlimited data depending on your plan. If your plan has a limit, going over it can result in extra charges on your bill or a slowdown in your internet speed until the next billing cycle.
@@ -199,7 +199,7 @@ If you find that you are regularly coming close to your data limit, there are a 
     category: `financial-tech`,
     tags: [`phone bill`, `save money`, `senior discount`, `prepaid`, `carrier`, `budget`],
     readTime: `7 min`,
-    thumbnailEmoji: `💰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Phone bills in the United States average around $70 to $120 per month per line for many families, and that number can creep up over time as carriers add fees and autopay discounts quietly expire. The good news is that most people are paying more than they need to, and there are several straightforward ways to bring that number down without giving up service quality.
@@ -245,7 +245,7 @@ You can also look at what you are paying for that you may not need. Many plans i
     category: `phone-guides`,
     tags: [`wi-fi calling`, `weak signal`, `iphone`, `android`, `cell service`, `setup`],
     readTime: `5 min`,
-    thumbnailEmoji: `📶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have ever noticed that your cell signal is weak inside your home — one bar or no signal at all — you might have struggled to make or receive phone calls. This is a common problem, especially in homes with thick walls, in rural areas, or in basements. Wi-Fi Calling is a feature built into most modern smartphones that solves this problem by routing your phone calls through your home internet connection instead of the cell towers.
@@ -285,7 +285,7 @@ Setting up Wi-Fi Calling takes less than two minutes. You turn it on once in you
     category: `how-to`,
     tags: [`roaming`, `international travel`, `phone charges`, `travel`, `wi-fi calling`, `sim card`],
     readTime: `6 min`,
-    thumbnailEmoji: `✈️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `International roaming charges are one of the most unpleasant surprises a traveler can face. You land in another country, use your phone to check a map or send a message, and come home to find an extra $50, $100, or even $200 on your phone bill. These charges happen because when you use your phone outside the United States, your carrier connects through a foreign network and charges you a premium for that access.
@@ -330,7 +330,7 @@ Another option that has become popular recently is eSIM technology. Some newer p
     category: `how-to`,
     tags: [`travel`, `international`, `SIM card`, `power adapter`, `offline maps`, `security`],
     readTime: `7 min`,
-    thumbnailEmoji: `🌍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Traveling internationally with your smartphone and laptop has become much easier over the past decade, but there are still a handful of practical tech considerations that can make a big difference in your experience. Getting these things sorted before you leave home saves time, money, and frustration once you are abroad.
@@ -378,7 +378,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
     category: `app-guides`,
     tags: [`google translate`, `translation`, `travel`, `language`, `camera translate`, `app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Google Translate is a free app available for both iPhone and Android that can translate text between over 130 languages. For anyone who travels, lives in a multilingual community, or has family members who speak a different language, it is an incredibly practical tool that has improved significantly in recent years.
@@ -423,7 +423,7 @@ The app is completely free to download and use. Google does not charge for trans
     category: `financial-tech`,
     tags: [`ibotta`, `cash back`, `groceries`, `savings`, `receipt`, `app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Ibotta is a free app that pays you real cash back when you buy groceries and other everyday items. Unlike traditional coupons that require you to cut and bring paper to the store, Ibotta works through your smartphone. You select offers before shopping, make your purchases at the store, and then upload a photo of your receipt or link your store loyalty account to claim your cash. The money goes into your Ibotta account and can be transferred to PayPal, Venmo, or redeemed as gift cards.
@@ -468,7 +468,7 @@ Ibotta is a legitimate company that has been operating since 2012 and has paid o
     category: `financial-tech`,
     tags: [`coupons`, `fetch rewards`, `groceries`, `savings`, `receipt`, `points`],
     readTime: `5 min`,
-    thumbnailEmoji: `✂️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Paper coupons used to require cutting them from Sunday newspapers or sorting through flyers before each grocery trip. Digital coupon apps have replaced all of that with a much simpler process — you shop as you normally do, photograph your receipt with your smartphone, and the app automatically finds savings and rewards you with points or cash back.
@@ -509,7 +509,7 @@ None of these apps require you to change how or where you shop. They work as a l
     category: `app-guides`,
     tags: [`loyalty rewards`, `starbucks`, `target circle`, `grocery rewards`, `points`, `savings`],
     readTime: `6 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Loyalty programs have existed for decades — you probably remember collecting paper punch cards at coffee shops or carrying a key fob at the grocery store. Today, most major retailers have moved their loyalty programs to smartphone apps, which make the experience much more rewarding. Digital loyalty apps automatically track your purchases, send you personalized offers, and let you redeem rewards without carrying physical cards or coupons.
@@ -555,7 +555,7 @@ Setting up these apps takes about five minutes each. Most require only an email 
     category: `financial-tech`,
     tags: [`honey`, `coupon codes`, `online shopping`, `savings`, `browser extension`, `paypal`],
     readTime: `5 min`,
-    thumbnailEmoji: `🍯`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `When you shop online, there is often a box at checkout labeled "coupon code" or "promo code." Most people skip right past it because they do not have a code handy. Honey is a free tool that fills in that box for you automatically — it searches the internet for working discount codes for that specific store and tries them all, applying the one that saves you the most money.
@@ -601,7 +601,7 @@ Setting up Honey takes about two minutes. You install the browser extension once
     category: `safety-guides`,
     tags: [`identity theft`, `personal information`, `security`, `fraud`, `credit freeze`, `protection`],
     readTime: `8 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Identity theft happens when someone uses your personal information — your Social Security number, credit card number, bank account details, or other identifying information — without your permission, usually to steal money or open new accounts in your name. It affects millions of Americans every year and can take months or years to fully resolve. Understanding how it happens and what you can do to prevent it is one of the most valuable investments you can make in your personal security.
@@ -651,7 +651,7 @@ The encouraging news is that there are specific, practical steps that significan
     category: `safety-guides`,
     tags: [`dark web`, `data breach`, `personal information`, `security`, `haveibeenpwned`, `monitoring`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `The "dark web" is a term you may have heard in news coverage of hacking incidents or identity theft. Despite how it sounds, the dark web is not a mysterious or exotic place — it is a part of the internet that is not accessible through regular web browsers like Chrome or Safari, and where activity is intentionally anonymous. While it has some legitimate uses, it is also where criminals buy and sell stolen personal information after data breaches.
@@ -696,7 +696,7 @@ Many services now also offer dark web monitoring as part of their security packa
     category: `safety-guides`,
     tags: [`credit freeze`, `equifax`, `experian`, `transunion`, `identity theft`, `security freeze`],
     readTime: `7 min`,
-    thumbnailEmoji: `❄️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A credit freeze — also called a security freeze — is one of the most effective tools available for protecting yourself from identity theft. When you freeze your credit at all three major credit bureaus, you prevent anyone from opening new credit accounts using your name and Social Security number. This means even if a criminal has your Social Security number, they cannot use it to take out a loan, open a credit card, or apply for other credit in your name.
@@ -741,7 +741,7 @@ You will receive a PIN or a confirmation number when you set up each freeze — 
     category: `safety-guides`,
     tags: [`phishing`, `email scams`, `spam`, `security`, `fraud`, `email safety`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎣`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Phishing emails are fraudulent messages designed to look like they come from a trusted source — your bank, Amazon, the IRS, Social Security Administration, Medicare, PayPal, or another organization you regularly deal with. The goal is to trick you into clicking a link and entering your password, Social Security number, credit card information, or other sensitive data on a fake website controlled by criminals.
@@ -791,7 +791,7 @@ The volume of phishing attempts has grown dramatically because the technology to
     category: `safety-guides`,
     tags: [`antivirus`, `mobile security`, `iphone`, `android`, `malware`, `phone security`],
     readTime: `6 min`,
-    thumbnailEmoji: `🦠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you have ever used a computer, you have probably heard that antivirus software is essential. But when it comes to smartphones, the picture is more nuanced — and depends significantly on whether you have an iPhone or an Android phone.
@@ -836,7 +836,7 @@ If you do want additional security on your Android phone, Malwarebytes is a well
     category: `safety-guides`,
     tags: [`passwords`, `password manager`, `security`, `data breach`, `bitwarden`, `account safety`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Using the same password on multiple websites is one of the most common and dangerous security mistakes people make. It feels practical — it is easier to remember one password than twenty. But when any one of those websites suffers a data breach and criminals obtain your email and password combination, they immediately try that same combination on dozens of other popular websites: your bank, your email, Amazon, PayPal, and others. This attack is called "credential stuffing" and it is responsible for millions of account takeovers every year.
@@ -881,7 +881,7 @@ Password managers are not a new or experimental idea. They have been used by sec
     category: `safety-guides`,
     tags: [`public wifi`, `wi-fi security`, `VPN`, `coffee shop`, `hotel wifi`, `airport wifi`],
     readTime: `6 min`,
-    thumbnailEmoji: `☕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Public Wi-Fi networks at coffee shops, restaurants, hotels, airports, libraries, and other locations are incredibly convenient. They let you use the internet on your phone or laptop without using your cellular data. However, because these networks are open and shared by many people at once, they present different risks compared to your private home Wi-Fi network.

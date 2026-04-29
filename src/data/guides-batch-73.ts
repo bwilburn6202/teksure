@@ -8,7 +8,7 @@ export const guidesBatch73: Guide[] = [
     category: `app-guides`,
     tags: [`bible`, `faith`, `devotionals`, `reading`, `audio`, `free app`],
     readTime: `5 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `YouVersion is one of the most popular free apps in the world, and for good reason. It puts the Bible right on your phone or tablet, in hundreds of different translations and languages. Whether you prefer the King James Version, the New International Version, or a contemporary translation like the Message, you can switch between them with a tap. You can also listen to the Bible being read aloud — great if your eyes get tired or you want to follow along while doing other things around the house.
@@ -52,7 +52,7 @@ The app works even without an internet connection once you have downloaded a Bib
     category: `app-guides`,
     tags: [`nature`, `plants`, `birds`, `insects`, `identification`, `outdoors`, `free app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Have you ever spotted a colorful bird in your backyard or a strange mushroom on a walk and wondered what it was? iNaturalist is a free app that can help you find out in seconds. You take a photo with your phone, and the app's artificial intelligence compares it to millions of documented species to suggest what you are looking at. You do not need to be a nature expert — anyone can use it.
@@ -97,7 +97,7 @@ The app is a project of the California Academy of Sciences and National Geograph
     category: `app-guides`,
     tags: [`meal kit`, `food delivery`, `cooking`, `recipes`, `HelloFresh`, `subscription`],
     readTime: `6 min`,
-    thumbnailEmoji: `🍽️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `HelloFresh is a meal kit delivery service that sends you pre-measured ingredients and step-by-step recipe cards right to your front door. Instead of spending time planning meals, making shopping lists, and measuring out ingredients, you open the box, follow the card, and cook a fresh dinner. Most meals take between 30 and 45 minutes to prepare.
@@ -143,7 +143,7 @@ Ingredients arrive clearly labeled and portioned. The recipe cards use simple la
     category: `life-transitions`,
     tags: [`family history`, `memoir`, `stories`, `legacy`, `StoryWorth`, `gift`],
     readTime: `5 min`,
-    thumbnailEmoji: `📝`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `StoryWorth is a service that helps families capture and preserve the life stories of people they love. Here is how it works: you sign up and provide the email address of a family member — a parent, grandparent, aunt, or anyone whose stories you want to save. Each week, StoryWorth sends that person an email with a question. Questions might be things like "What is your earliest childhood memory?" or "What was your first job?" or "What advice would you give your younger self?"
@@ -188,7 +188,7 @@ StoryWorth lets you browse through a library of hundreds of question prompts and
     category: `essential-skills`,
     tags: [`surge protector`, `power strip`, `electronics`, `home safety`, `lightning`, `power outage`],
     readTime: `5 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Many people assume that any power strip with multiple outlets protects their electronics from power surges. This is a common and potentially costly misunderstanding. A basic power strip is nothing more than a way to add more outlets to a wall — it offers no protection at all against electrical surges. A surge protector, on the other hand, is designed to absorb excess voltage and protect connected devices like your computer, television, or printer from damage.
@@ -234,7 +234,7 @@ If you live in an area with frequent thunderstorms, consider unplugging sensitiv
     category: `essential-skills`,
     tags: [`UPS`, `battery backup`, `power outage`, `computer`, `uninterruptible power supply`, `home office`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `A UPS, which stands for uninterruptible power supply, is a device that contains a battery and sits between your computer and the wall outlet. When the power goes out — even for a fraction of a second — the UPS instantly switches to battery power so your computer keeps running without any interruption. This gives you time to save your work and shut down your computer properly instead of having it suddenly cut off.
@@ -279,7 +279,7 @@ Popular and reliable brands include APC, CyberPower, and Eaton. UPS units need p
     category: `tips-tricks`,
     tags: [`charging station`, `cables`, `organization`, `phone`, `tablet`, `home setup`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `If you find yourself hunting for charging cables scattered around the house, or if your phone is always running low because you forget to charge it at night, a dedicated home charging station can make a real difference in your daily routine. A charging station is a designated spot in your home where all your devices go to charge — and everything you need is right there waiting.
@@ -324,7 +324,7 @@ Once you have a charging station set up, build the habit of placing all your dev
     category: `app-guides`,
     tags: [`Tile`, `Bluetooth tracker`, `lost keys`, `wallet finder`, `find my stuff`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tile is a small, flat device — about the size of a large postage stamp — that you attach to things you frequently lose, like keys, a wallet, a purse, or a TV remote. When you cannot find that item, you open the Tile app on your phone and tap a button to make the Tile beep loudly. Follow the sound and you will find your missing item.
@@ -369,7 +369,7 @@ Tile works with both iPhone and Android phones.`,
     category: `entertainment`,
     tags: [`ESPN+`, `sports streaming`, `live sports`, `streaming`, `soccer`, `UFC`, `MLS`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏈`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `ESPN+ (pronounced "ESPN Plus") is a streaming service from ESPN that lets you watch live sports and sports programming over the internet, without a cable or satellite TV subscription. It is a separate service from the ESPN channel you may already receive on cable — ESPN+ has different content that you cannot get elsewhere.
@@ -414,7 +414,7 @@ You can watch ESPN+ on your smartphone, tablet, computer, Apple TV, Roku, Amazon
     category: `entertainment`,
     tags: [`Discovery+`, `HGTV`, `Food Network`, `streaming`, `true crime`, `ID`, `TLC`],
     readTime: `5 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Discovery+ is a streaming service that brings together content from many of the most popular cable networks — all in one place, available over the internet without a cable subscription. If you enjoy shows from HGTV, Food Network, TLC, Investigation Discovery (true crime), Animal Planet, Magnolia Network, or the Discovery Channel itself, Discovery+ is the service that has all of those in one app.
@@ -459,7 +459,7 @@ Signing up takes only a few minutes and you can cancel any time if you decide it
     category: `app-guides`,
     tags: [`Microsoft 365`, `Office`, `Word`, `Excel`, `OneDrive`, `family sharing`, `subscription`],
     readTime: `6 min`,
-    thumbnailEmoji: `💼`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Microsoft 365 Family (formerly called Office 365 Home) is a subscription that gives you access to Microsoft's most popular apps — Word, Excel, PowerPoint, Outlook, and more — installed on up to five devices per person. One subscription covers up to six people in your household or family, each with their own separate account. The subscription also includes 1 terabyte of OneDrive cloud storage per person, which is a huge amount of space for documents, photos, and files.
@@ -505,7 +505,7 @@ Microsoft 365 Family requires a Microsoft account to set up and manage. If you h
     category: `app-guides`,
     tags: [`Walmart`, `photo prints`, `photo book`, `personalized gifts`, `photo center`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖼️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Walmart Photo Center is an online service that lets you turn your digital photos into printed items — everything from standard prints and photo books to canvas prints, greeting cards, mugs, phone cases, blankets, and calendars. You can upload photos from your phone or computer, customize your order, and then pick it up at your local Walmart store (often same day) or have it shipped to your home.
@@ -550,7 +550,7 @@ For same-day pickup, Walmart typically has your standard prints ready in about a
     category: `health-tech`,
     tags: [`prescription savings`, `RxSaver`, `pharmacy`, `medication costs`, `drug discounts`, `coupons`],
     readTime: `5 min`,
-    thumbnailEmoji: `💊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Prescription drug prices in the United States vary enormously from one pharmacy to another — sometimes by hundreds of dollars for the same medication. RxSaver is a free service that searches pharmacy prices in your area and shows you where you can fill your prescription for the least amount of money. It also provides free discount coupons you can present at the pharmacy counter to get that lower price.
@@ -596,7 +596,7 @@ RxSaver coupons cannot be combined with insurance in most cases, so you will wan
     category: `health-tech`,
     tags: [`NeedyMeds`, `prescription assistance`, `patient assistance program`, `free medication`, `low income`, `drug costs`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `NeedyMeds is a nonprofit organization and free website that connects people with programs that help cover the cost of medications. If you are struggling to afford your prescriptions — whether you are uninsured, underinsured, or dealing with high drug costs — NeedyMeds is one of the best places to start looking for help.
@@ -643,7 +643,7 @@ This resource is especially valuable for seniors on fixed incomes, people betwee
     category: `government-civic`,
     tags: [`Social Security`, `SSA.gov`, `my Social Security`, `benefits`, `retirement`, `government account`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏛️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Creating a my Social Security account at ssa.gov is one of the most useful things you can do to manage your retirement and Social Security benefits online. Once you have an account, you can view your complete earnings history — a record of every year you worked and paid into Social Security — and see an estimate of what your monthly benefit will be when you retire. This helps you plan ahead and verify that all your work years are recorded correctly.
@@ -688,7 +688,7 @@ If you have trouble completing the online setup, Social Security has a toll-free
     category: `government-civic`,
     tags: [`VA`, `veterans`, `VA health`, `prescriptions`, `appointments`, `MyHealtheVet`, `benefits`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎖️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `The VA Health and Benefits app (formerly known as the VA mobile app) is a free smartphone application designed to help veterans manage their VA health care and benefits from their phone or tablet. This app consolidates many tasks that used to require phone calls, mail, or in-person visits into a single convenient place.
@@ -733,7 +733,7 @@ The app is available for both iPhone and Android. It is free to download and fre
     category: `entertainment`,
     tags: [`Tubi`, `free streaming`, `movies`, `TV shows`, `no subscription`, `free TV`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tubi is a streaming service that is completely free — no monthly subscription, no credit card, no trial period that automatically charges you. You can watch thousands of movies and TV shows without spending a single dollar. Tubi makes money by running commercials during programs, similar to how regular broadcast television works.
@@ -777,7 +777,7 @@ Tubi is owned by Fox Corporation and is one of the most popular free streaming s
     category: `entertainment`,
     tags: [`Starz`, `streaming`, `premium TV`, `movies`, `original series`, `subscription`],
     readTime: `5 min`,
-    thumbnailEmoji: `⭐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Starz is a premium streaming service that offers a mix of original television series, movies from major Hollywood studios, and classic favorites. It is comparable to HBO Max or Showtime in that it carries a curated, high-quality library rather than trying to have something for everyone.
@@ -823,7 +823,7 @@ Starz is available on smartphones, tablets, computers, Roku, Amazon Fire TV, App
     category: `app-guides`,
     tags: [`Kindle Unlimited`, `ebooks`, `audiobooks`, `Amazon`, `reading`, `Kindle`, `subscription`],
     readTime: `5 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Kindle Unlimited is Amazon's ebook subscription service. For a flat monthly fee (around $12 per month as of 2026), you can read as many ebooks as you want from a library of over a million titles — plus listen to a selection of audiobooks — without paying for each one individually. If you read frequently, even two or three books per month makes the subscription worthwhile compared to buying each book separately.
@@ -868,7 +868,7 @@ Amazon frequently offers introductory rates for new Kindle Unlimited subscribers
     category: `app-guides`,
     tags: [`Scribd`, `ebooks`, `audiobooks`, `magazines`, `reading`, `subscription`, `unlimited`],
     readTime: `5 min`,
-    thumbnailEmoji: `📰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Scribd describes itself as the Netflix of books — a single monthly subscription that gives you access to an enormous library of reading and listening content. For around $12 per month as of 2026, Scribd members can read ebooks, listen to audiobooks, browse magazines, access sheet music, and read academic and business documents, all without any per-item charges.

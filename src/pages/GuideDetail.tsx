@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen, ExternalLink, Sparkles, ThumbsUp, ThumbsDown, Calendar, ListOrdered, MessageSquare } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen, ExternalLink } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,7 +13,6 @@ import { SEOHead } from '@/components/SEOHead';
 import { CopyButton } from '@/components/CopyButton';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
 import { ReportBrokenLink } from '@/components/ReportBrokenLink';
-import { BookmarkButton as SaveBookmarkButton } from '@/components/BookmarkButton';
 import {
   Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -23,8 +22,9 @@ import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
 import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
-import { markGuideCompleted, isGuideCompleted } from '@/lib/progress';
-import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
+import { MasteryPicker } from '@/components/MasteryPicker';
+import { getGuideThumbnailUrl, getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
+import { getGuideResources } from '@/lib/guideResources';
 import { useAuth } from '@/contexts/AuthContext';
 
 const CATEGORY_RESOURCES: Record<string, { label: string; url: string }[]> = {
@@ -255,48 +255,37 @@ const StepScreenshot = ({
 };
 
 const ProTip = ({ children }: { children: React.ReactNode }) => (
-  <div className="mt-5 rounded-xl border border-blue-300/50 bg-blue-50 dark:bg-blue-950/25 dark:border-blue-700/40 px-5 py-4 flex items-start gap-3">
-    <Lightbulb className="h-6 w-6 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+  <div className="mt-4 rounded-lg border border-amber-300/40 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-700/40 px-4 py-3 flex items-start gap-3">
+    <Lightbulb className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
     <div>
-      <p className="text-sm font-bold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">Quick Tip</p>
-      <p className="text-base text-foreground/85 leading-relaxed">{children}</p>
+      <p className="text-sm font-bold text-amber-700 dark:text-amber-400 mb-0.5">Quick Tip</p>
+      <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
 );
 
 const WarningBox = ({ children }: { children: React.ReactNode }) => (
-  <div className="mt-5 rounded-xl border border-amber-300/60 bg-amber-50 dark:bg-amber-950/25 dark:border-amber-700/40 px-5 py-4 flex items-start gap-3">
-    <AlertTriangle className="h-6 w-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+  <div className="mt-4 rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 flex items-start gap-3">
+    <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
     <div>
-      <p className="text-sm font-bold uppercase tracking-wide text-amber-700 dark:text-amber-300 mb-1">Warning</p>
-      <p className="text-base text-foreground/85 leading-relaxed">{children}</p>
+      <p className="text-sm font-bold text-destructive mb-0.5">Warning</p>
+      <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
 );
 
 const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: string }) => {
-  const [completed, setCompleted] = useState(() => isGuideCompleted(slug));
-
-  const handleComplete = () => {
-    markGuideCompleted(slug);
-    setCompleted(true);
-  };
-
   return (
-    <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 text-center mb-8">
-      <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
-      <p className="font-bold text-base mb-1">You Did It!</p>
-      <p className="text-sm text-muted-foreground mb-4">You've completed: <strong>{guideTitle}</strong></p>
-      {completed ? (
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teksure-success/20 text-teksure-success text-sm font-medium">
-          <CheckCircle className="h-4 w-4" /> Marked as complete!
-        </div>
-      ) : (
-        <Button size="sm" variant="outline" onClick={handleComplete} className="gap-2 border-teksure-success/50 text-teksure-success hover:bg-teksure-success/10">
-          <CheckCircle className="h-4 w-4" /> Mark as Complete
-        </Button>
-      )}
-      <p className="text-xs text-muted-foreground mt-3">Need more help? <Link to="/get-help" className="text-primary hover:underline font-medium">Get Expert Help from a TekSure Tech <span aria-hidden="true">→</span></Link></p>
+    <div className="rounded-xl border border-teksure-success/30 bg-teksure-success/10 px-6 py-5 mb-8">
+      <div className="text-center mb-4">
+        <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
+        <p className="font-bold text-base mb-1">You Did It!</p>
+        <p className="text-sm text-muted-foreground">You've finished reading: <strong>{guideTitle}</strong></p>
+      </div>
+      <MasteryPicker slug={slug} />
+      <p className="text-xs text-muted-foreground mt-4 text-center">
+        Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Book a TekSure tech <span aria-hidden="true">→</span></Link>
+      </p>
     </div>
   );
 };
@@ -339,63 +328,15 @@ const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string;
   );
 };
 
-const HelpfulSection = ({ guideSlug }: { guideSlug: string }) => {
-  const storageKey = `teksure-guide-feedback-${guideSlug}`;
-  const [vote, setVote] = useState<'up' | 'down' | null>(() => {
-    if (typeof window === 'undefined') return null;
-    const stored = window.localStorage.getItem(storageKey);
-    return stored === 'up' || stored === 'down' ? stored : null;
-  });
-
-  const handleVote = (next: 'up' | 'down') => {
-    const newVote = vote === next ? null : next;
-    setVote(newVote);
-    if (typeof window !== 'undefined') {
-      if (newVote) window.localStorage.setItem(storageKey, newVote);
-      else window.localStorage.removeItem(storageKey);
-    }
-  };
-
-  return (
-    <Card className="mb-8 no-print">
-      <CardContent className="py-8 text-center">
-        <p className="text-lg font-bold mb-1">Was this guide helpful?</p>
-        <p className="text-sm text-muted-foreground mb-5">
-          Your feedback helps us make TekSure better for everyone.
-        </p>
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <Button
-            size="lg"
-            variant={vote === 'up' ? 'default' : 'outline'}
-            onClick={() => handleVote('up')}
-            className="gap-2 min-h-[48px] px-6"
-            aria-pressed={vote === 'up'}
-          >
-            <ThumbsUp className="h-5 w-5" /> Yes, helpful
-          </Button>
-          <Button
-            size="lg"
-            variant={vote === 'down' ? 'default' : 'outline'}
-            onClick={() => handleVote('down')}
-            className="gap-2 min-h-[48px] px-6"
-            aria-pressed={vote === 'down'}
-          >
-            <ThumbsDown className="h-5 w-5" /> Not really
-          </Button>
-        </div>
-        {vote && (
-          <p className="text-sm text-muted-foreground mb-5" role="status" aria-live="polite">
-            {vote === 'up' ? 'Thanks! Glad it helped.' : 'Thanks for the feedback — we\u2019ll keep improving.'}
-          </p>
-        )}
-        <div className="pt-4 border-t border-border">
-          <p className="text-sm text-muted-foreground mb-2">Want to rate with stars?</p>
-          <StarRating guideSlug={guideSlug} size="lg" />
-        </div>
-      </CardContent>
-    </Card>
-  );
-};
+const HelpfulSection = ({ guideSlug }: { guideSlug: string }) => (
+  <Card className="mb-8">
+    <CardContent className="py-6 text-center">
+      <p className="font-semibold mb-1">Rate this guide</p>
+      <p className="text-sm text-muted-foreground mb-4">How helpful was this guide?</p>
+      <StarRating guideSlug={guideSlug} size="lg" />
+    </CardContent>
+  </Card>
+);
 
 /** Scroll-based progress bar */
 const useStepProgress = (stepCount: number) => {
@@ -448,6 +389,8 @@ const GuideDetail = () => {
   const relatedGuides = guides
     .filter(g => g.slug !== slug && g.category === guide.category)
     .slice(0, 3);
+
+  const learnMoreResources = getGuideResources(guide);
 
   const howToJsonLd = guide.steps ? {
     '@context': 'https://schema.org',
@@ -512,28 +455,22 @@ const GuideDetail = () => {
       />
       <Navbar />
 
-      {/* Full-width progress bar across the top */}
+      {/* Sticky progress bar */}
       {guide.steps && guide.steps.length > 1 && (
         <div className="sticky top-14 z-40 bg-background/95 backdrop-blur border-b border-border no-print">
-          <Progress
-            value={((activeStep + 1) / guide.steps.length) * 100}
-            className="h-1.5 rounded-none"
-            aria-label={`Step ${activeStep + 1} of ${guide.steps.length}`}
-          />
-          <div className="container max-w-6xl py-2 flex items-center justify-between gap-3">
+          <div className="container max-w-4xl py-2 flex items-center gap-3">
             <span className="text-xs font-medium text-muted-foreground whitespace-nowrap">
               Step {activeStep + 1} of {guide.steps.length}
             </span>
-            <span className="text-xs text-muted-foreground hidden sm:block truncate max-w-md">
-              {guide.steps[activeStep]?.title}
-            </span>
+            <Progress value={((activeStep + 1) / guide.steps.length) * 100} className="h-2 flex-1" />
           </div>
         </div>
       )}
 
-      <article className="container py-8 max-w-6xl">
+      <main id="main-content" tabIndex={-1} className="outline-none">
+      <article className="container py-8 max-w-3xl">
         {/* Breadcrumbs */}
-        <Breadcrumb className="mb-6 no-print">
+        <Breadcrumb className="mb-6">
           <BreadcrumbList>
             <BreadcrumbItem><BreadcrumbLink asChild><Link to="/">Home</Link></BreadcrumbLink></BreadcrumbItem>
             <BreadcrumbSeparator />
@@ -545,445 +482,375 @@ const GuideDetail = () => {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-10">
-          {/* ── Main content column ─────────────────────────────── */}
-          <div className="min-w-0">
-            {/* Hero */}
-            <header className="mb-10 relative guide-hero rounded-3xl bg-gradient-to-br from-primary/5 via-background to-background border border-border p-6 sm:p-8">
-              <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
+        <div>
+          {/* Header */}
+          <div className="mb-10 relative">
+            <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
+            <div className="relative w-full rounded-xl overflow-hidden mb-6 bg-muted aspect-[2/1] sm:aspect-[5/2]">
               <img
-                src={getGuideThumbnailUrl(guide)}
+                src={getGuideHeroUrl(guide)}
                 alt=""
-                className="w-24 h-16 rounded-xl object-cover mb-5 shadow-sm"
-                loading="lazy"
+                className="w-full h-full object-cover"
+                loading="eager"
+                onError={(e) => {
+                  const img = e.currentTarget;
+                  img.onerror = null;
+                  img.src = `https://picsum.photos/seed/${guide.slug}/1200/600`;
+                }}
               />
-              <div className="flex flex-wrap items-center gap-2 mb-5">
-                <Badge variant="secondary" className="capitalize text-sm px-3 py-1">
-                  {categoryLabels[guide.category]}
+              <div className="absolute bottom-3 right-3 text-4xl sm:text-5xl bg-background/80 backdrop-blur-sm rounded-lg px-3 py-1" aria-hidden="true">
+                {guide.thumbnailEmoji}
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <Badge variant="secondary" className="capitalize">{categoryLabels[guide.category]}</Badge>
+              {guide.difficulty && (
+                <Badge variant="outline" className={
+                  guide.difficulty === 'Beginner' ? 'border-teksure-success/50 text-teksure-success' :
+                  guide.difficulty === 'Intermediate' ? 'border-teksure-warning/50 text-teksure-warning' :
+                  'border-destructive/50 text-destructive'
+                }>
+                  {guide.difficulty}
                 </Badge>
-                {guide.difficulty && (
-                  <Badge
-                    variant="outline"
-                    className={`text-sm px-3 py-1 rounded-full ${
-                      guide.difficulty === 'Beginner' ? 'border-teksure-success/50 text-teksure-success bg-teksure-success/5' :
-                      guide.difficulty === 'Intermediate' ? 'border-teksure-warning/50 text-teksure-warning bg-teksure-warning/5' :
-                      'border-destructive/50 text-destructive bg-destructive/5'
-                    }`}
-                  >
-                    {guide.difficulty}
-                  </Badge>
-                )}
-                {guide.verifiedHelpful && (
-                  <Badge variant="outline" className="border-teksure-success/50 text-teksure-success bg-teksure-success/5 gap-1 text-sm px-3 py-1 rounded-full">
-                    <CheckCircle className="h-3.5 w-3.5" /> Verified Helpful
-                  </Badge>
-                )}
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5 leading-[1.15]">
-                {guide.title}
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-5 max-w-3xl">
-                {guide.excerpt}
-              </p>
-
-              {/* Print This Guide — prominent, near the top, hidden when printing */}
-              <div className="mb-5 no-print print:hidden">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 min-h-[48px] rounded-xl border-2 hover:border-primary hover:text-primary"
-                  onClick={() => window.print()}
-                >
-                  <Printer className="h-5 w-5" aria-hidden="true" />
-                  Print This Guide
-                </Button>
-              </div>
-
-              {/* Meta row */}
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground pt-4 border-t border-border/60">
-                <span className="flex items-center gap-1.5">
-                  <Clock className="h-4 w-4" /> {estimatedReadTime}
+              )}
+              {guide.verifiedHelpful && (
+                <Badge variant="outline" className="border-teksure-success/50 text-teksure-success gap-1">
+                  <CheckCircle className="h-3.5 w-3.5" /> Verified Helpful
+                </Badge>
+              )}
+              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                <Clock className="h-3.5 w-3.5" /> {estimatedReadTime}
+              </span>
+              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                <BookOpen className="h-3.5 w-3.5" /> {guide.steps?.length || 0} steps
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {new Date(guide.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              </span>
+              {guide.lastVerifiedAt && (
+                <span className="flex items-center gap-1 text-sm text-teksure-success">
+                  <CheckCircle className="h-3.5 w-3.5" />
+                  Verified {new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
                 </span>
-                <span className="flex items-center gap-1.5">
-                  <BookOpen className="h-4 w-4" /> {guide.steps?.length || 0} steps
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="h-4 w-4" />
-                  {new Date(guide.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                </span>
-                {guide.lastVerifiedAt && (
-                  <span className="flex items-center gap-1.5 text-teksure-success">
-                    <CheckCircle className="h-4 w-4" />
-                    Verified {new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
-                  </span>
-                )}
-              </div>
-              <div className="mt-3">
-                <StarRating guideSlug={guide.slug} readOnly size="sm" />
-              </div>
-            </header>
-
-            {/* Video section — OS-specific player with DB-backed videos, falls back to static videoUrl */}
-            <GuideVideoSection
-              guideSlug={guide.slug}
-              fallbackVideoUrl={guide.videoUrl}
-              fallbackTitle={guide.title}
-            />
-
-            {/* Steps */}
-            {guide.steps && (
-              <div ref={stepsRef} className="space-y-8 mb-12">
-                {guide.steps.map((step, i) => (
-                  <section
-                    key={i}
-                    id={`step-${i + 1}`}
-                    data-step={i}
-                    className="scroll-mt-28"
-                    aria-labelledby={`step-heading-${i + 1}`}
-                  >
-                    <Card className="overflow-hidden border-l-[6px] border-l-primary shadow-sm hover:shadow-md transition-shadow">
-                      <CardContent className="py-6 px-5 sm:px-8">
-                        <div className="flex gap-4 sm:gap-6">
-                          <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl sm:text-2xl font-bold shadow-sm">
-                            {i + 1}
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-start gap-2 mb-4 flex-wrap">
-                              {(() => {
-                                const Icon = getStepIcon(step.title, step.content);
-                                return Icon ? <Icon className="h-6 w-6 text-primary/70 shrink-0 mt-0.5" /> : null;
-                              })()}
-                              <h2
-                                id={`step-heading-${i + 1}`}
-                                className="font-bold text-xl sm:text-2xl tracking-tight flex-1 min-w-0 leading-snug"
-                              >
-                                {step.title}
-                              </h2>
-                              <span className="text-xs text-muted-foreground shrink-0 mt-1.5 tabular-nums">
-                                {calcStepTime(step)}
-                              </span>
-                            </div>
-                            <div className="text-lg text-foreground/85 leading-[1.7]">
-                              <StepContent text={step.content} />
-                            </div>
-
-                            {step.screenshotUrl && (
-                              <StepScreenshot
-                                screenshotUrl={step.screenshotUrl}
-                                screenshotAlt={step.screenshotAlt}
-                                annotations={step.annotations}
-                              />
-                            )}
-
-                            {step.beforeCaption && step.afterCaption && (
-                              <BeforeAfterSlider
-                                beforeCaption={step.beforeCaption}
-                                afterCaption={step.afterCaption}
-                                beforeLabel={step.beforeLabel}
-                                afterLabel={step.afterLabel}
-                              />
-                            )}
-
-                            {step.tip && <ProTip><StepContent text={step.tip} /></ProTip>}
-                            {step.warning && <WarningBox><StepContent text={step.warning} /></WarningBox>}
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </section>
-                ))}
-              </div>
-            )}
-
-            {/* Completion banner */}
-            {guide.steps && guide.steps.length > 0 && <CompletionBanner guideTitle={guide.title} slug={guide.slug} />}
-
-            {/* Body content */}
-            {guide.body && (
-              <div className="prose prose-lg max-w-none mb-10 leading-relaxed">
-                {guide.body.split('\n\n').map((paragraph, i) => {
-                  if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                    return <h3 key={i} className="text-xl font-semibold mt-8 mb-3">{paragraph.replace(/\*\*/g, '')}</h3>;
-                  }
-                  if (paragraph.startsWith('**')) {
-                    const [boldPart, ...rest] = paragraph.split('**').filter(Boolean);
-                    return (
-                      <div key={i} className="mb-5">
-                        <h3 className="text-lg font-semibold mb-2">{boldPart}</h3>
-                        {rest.length > 0 && <p className="text-lg text-foreground/80 leading-[1.7]">{rest.join('')}</p>}
-                      </div>
-                    );
-                  }
-                  if (paragraph.startsWith('- ') || /^[\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{2700}-\u{27BF}]/u.test(paragraph)) {
-                    return (
-                      <ul key={i} className="space-y-3 mb-5">
-                        {paragraph.split('\n').map((item, j) => (
-                          <li key={j} className="flex items-start gap-3 text-lg text-foreground/80 leading-[1.7]">
-                            <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-1" />
-                            <span>{item.replace(/^[-•]\s*/, '')}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    );
-                  }
-                  if (paragraph.match(/^\d+\./)) {
-                    return (
-                      <ol key={i} className="space-y-3 mb-5">
-                        {paragraph.split('\n').map((item, j) => (
-                          <li key={j} className="flex items-start gap-3 text-lg text-foreground/80 leading-[1.7]">
-                            <span className="shrink-0 w-7 h-7 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-sm font-semibold">{j + 1}</span>
-                            <span>{item.replace(/^\d+\.\s*/, '')}</span>
-                          </li>
-                        ))}
-                      </ol>
-                    );
-                  }
-                  return <p key={i} className="text-lg text-foreground/80 leading-[1.7] mb-5">{paragraph}</p>;
-                })}
-              </div>
-            )}
-
-            {/* Was this helpful? */}
-            <HelpfulSection guideSlug={guide.slug} />
-
-            {/* Ask TekBrain follow-up CTA */}
-            <div className="rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-8 mb-10 no-print">
-              <div className="flex items-start gap-5">
-                <div className="shrink-0 w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shadow-sm">
-                  <Sparkles className="h-7 w-7" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h2 className="text-2xl font-bold mb-2">Still have questions?</h2>
-                  <p className="text-base text-muted-foreground mb-5 leading-relaxed">
-                    Ask TekBrain a follow-up question about this guide. It&rsquo;s free, no
-                    sign-up needed, and the answer will be in plain English.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button asChild size="lg" className="gap-2 min-h-[48px]">
-                      <Link to={`/tekbrain/chat?guide=${encodeURIComponent(guide.slug)}`}>
-                        <MessageSquare className="h-5 w-5" />
-                        Ask TekBrain a follow-up
-                      </Link>
-                    </Button>
-                    <Button asChild size="lg" variant="outline" className="gap-2 min-h-[48px]">
-                      <Link to="/ask">Browse common questions</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              )}
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 leading-tight">{guide.title}</h1>
+            <p className="text-lg text-muted-foreground leading-relaxed">{guide.excerpt}</p>
+            <div className="mt-3">
+              <StarRating guideSlug={guide.slug} readOnly size="sm" />
             </div>
 
-            {/* Tags */}
-            <div className="flex flex-wrap items-center gap-2 mb-10">
-              <Tag className="h-4 w-4 text-muted-foreground" />
-              {guide.tags.map(tag => (
-                <Badge key={tag} variant="outline" className="text-sm">{tag}</Badge>
-              ))}
+            <div className="flex flex-wrap gap-2 mt-5">
+              <Button variant="outline" size="sm" className="gap-2 no-print min-h-[44px]" onClick={() => window.print()}>
+                <Printer className="h-4 w-4" /> Print Guide
+              </Button>
+              <ListenButton guide={guide} />
+              <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
+              <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
             </div>
-
-            {/* Official Resources */}
-            {CATEGORY_RESOURCES[guide.category] && (
-              <div className="mb-10 p-6 rounded-2xl border border-border bg-muted/30">
-                <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
-                  <ExternalLink className="h-4 w-4 text-primary" />
-                  Official Resources
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {CATEGORY_RESOURCES[guide.category].map((r) => (
-                    <a
-                      key={r.url}
-                      href={r.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-background border border-border text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors min-h-[44px]"
-                    >
-                      {r.label}
-                      <ExternalLink className="h-3.5 w-3.5 opacity-50" />
-                    </a>
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground mt-3">
-                  Sources used to create and verify this guide.{' '}
-                  <a href="/sources" className="text-primary hover:underline">View all sources →</a>
-                </p>
-              </div>
-            )}
-
-            {/* Prev/Next */}
-            <div className="grid sm:grid-cols-2 gap-4 mb-10 no-print">
-              {prevGuide ? (
-                <Link to={`/guides/${prevGuide.slug}`} className="group">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardContent className="py-5">
-                      <p className="text-xs text-muted-foreground mb-1">← Previous</p>
-                      <p className="text-base font-medium group-hover:text-primary transition-colors line-clamp-2">{prevGuide.title}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ) : <div />}
-              {nextGuide ? (
-                <Link to={`/guides/${nextGuide.slug}`} className="group sm:text-right">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardContent className="py-5">
-                      <p className="text-xs text-muted-foreground mb-1">Next →</p>
-                      <p className="text-base font-medium group-hover:text-primary transition-colors line-clamp-2">{nextGuide.title}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ) : <div />}
-            </div>
-
-            <Separator className="mb-10 no-print" />
-
-            {/* Still stuck CTA — warm card, hidden when printing */}
-            <div className="rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-8 md:p-10 text-center mb-12 no-print print:hidden">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Still stuck? No problem.</h2>
-              <p className="text-base md:text-lg text-foreground/80 mb-7 max-w-xl mx-auto leading-relaxed">
-                Sometimes a guide isn&rsquo;t enough. Our technicians can walk
-                you through it step by step, in plain English, on your schedule.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Button asChild size="lg" className="rounded-xl gap-2 min-h-[52px] px-7 text-base font-bold">
-                  <Link to="/get-help">
-                    <Calendar className="h-5 w-5" aria-hidden="true" />
-                    Book a Tech Helper
-                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-xl gap-2 min-h-[52px] px-7 text-base font-bold border-2">
-                  <Link to="/tekbrain/chat">
-                    <Sparkles className="h-5 w-5" aria-hidden="true" />
-                    Ask TekBrain
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Related Guides */}
-            {relatedGuides.length > 0 && (
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-2">Related Guides</h2>
-                <p className="text-sm text-muted-foreground mb-6">
-                  More from {categoryLabels[guide.category]}
-                </p>
-                <div className="grid sm:grid-cols-3 gap-4">
-                  {relatedGuides.map(g => (
-                    <Link to={`/guides/${g.slug}`} key={g.slug} className="group">
-                      <Card className="h-full hover:shadow-md hover:border-primary/40 transition-all">
-                        <CardContent className="pt-5 pb-5">
-                          <img src={getGuideThumbnailSmall(g)} alt="" className="w-12 h-12 rounded-lg object-cover mb-3" loading="lazy" />
-                          <p className="text-base font-semibold group-hover:text-primary transition-colors line-clamp-2 mb-1.5">{g.title}</p>
-                          <p className="text-sm text-muted-foreground line-clamp-2 mb-2">{g.excerpt}</p>
-                          <p className="text-xs text-muted-foreground flex items-center gap-1">
-                            <Clock className="h-3 w-3" /> {calcReadTime(g)}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
 
-          {/* ── Sticky sidebar (desktop) / collapsible on mobile ─────── */}
-          <aside className="no-print">
-            <div className="lg:sticky lg:top-28 space-y-4">
-              {/* Table of contents */}
-              {guide.steps && guide.steps.length > 0 && (
-                <Card>
-                  <CardContent className="py-5 px-5">
-                    <div className="flex items-center gap-2 mb-3">
-                      <ListOrdered className="h-4 w-4 text-primary" />
-                      <h2 className="text-sm font-bold uppercase tracking-wide">In this guide</h2>
+          {/* At a Glance — quick facts card */}
+          <Card className="mb-6 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+            <CardContent className="py-5 px-5">
+              <p className="text-xs uppercase tracking-wider font-semibold text-primary mb-3">At a Glance</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Category</div>
+                  <div className="font-medium">{categoryLabels[guide.category]}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Difficulty</div>
+                  <div className="font-medium">{guide.difficulty ?? 'Beginner'}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Read Time</div>
+                  <div className="font-medium">{estimatedReadTime}</div>
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground mb-0.5">Steps</div>
+                  <div className="font-medium">{guide.steps?.length ?? 0}</div>
+                </div>
+              </div>
+              {guide.tags && guide.tags.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-border/50">
+                  <div className="text-xs text-muted-foreground mb-2">Topics covered</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {guide.tags.slice(0, 8).map((tag) => (
+                      <Badge key={tag} variant="outline" className="text-xs font-normal">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+
+          {/* Table of contents */}
+          {guide.steps && guide.steps.length > 3 && (
+            <Card className="mb-8 bg-muted/50">
+              <CardContent className="py-4">
+                <p className="text-sm font-semibold mb-2">In this guide ({guide.steps.length} steps):</p>
+                <ol className="space-y-1">
+                  {guide.steps.map((step, i) => (
+                    <li key={i}>
+                      <a href={`#step-${i + 1}`} className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                        <span className="text-xs font-mono text-primary">{i + 1}.</span>
+                        {step.title}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Video section — OS-specific player with DB-backed videos, falls back to static videoUrl */}
+          <GuideVideoSection
+            guideSlug={guide.slug}
+            fallbackVideoUrl={guide.videoUrl}
+            fallbackTitle={guide.title}
+          />
+
+          <Separator className="mb-8" />
+
+          {/* Steps */}
+          {guide.steps && (
+            <div ref={stepsRef} className="space-y-10 mb-10">
+              {guide.steps.map((step, i) => (
+                <div
+                  key={i}
+                  id={`step-${i + 1}`}
+                  data-step={i}
+                  className="scroll-mt-28"
+                >
+                  <Card className="overflow-hidden border-l-4 border-l-primary">
+                    <CardContent className="py-5 px-4 sm:px-6">
+                      <div className="flex gap-4 sm:gap-5">
+                        <div className="shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-base sm:text-lg font-bold">
+                          {i + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-3">
+                            {(() => {
+                              const Icon = getStepIcon(step.title, step.content);
+                              return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
+                            })()}
+                            <h3 className="font-bold text-lg">{step.title}</h3>
+                            <span className="text-xs text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
+                          </div>
+                          <div className="text-base text-foreground leading-relaxed">
+                            <StepContent text={step.content} />
+                          </div>
+
+                          {step.screenshotUrl && (
+                            <StepScreenshot
+                              screenshotUrl={step.screenshotUrl}
+                              screenshotAlt={step.screenshotAlt}
+                              annotations={step.annotations}
+                            />
+                          )}
+
+                          {/* Before / After comparison slider */}
+                          {step.beforeCaption && step.afterCaption && (
+                            <BeforeAfterSlider
+                              beforeCaption={step.beforeCaption}
+                              afterCaption={step.afterCaption}
+                              beforeLabel={step.beforeLabel}
+                              afterLabel={step.afterLabel}
+                            />
+                          )}
+
+                          {step.tip && <ProTip><StepContent text={step.tip} /></ProTip>}
+
+                          {step.warning && <WarningBox><StepContent text={step.warning} /></WarningBox>}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Completion banner */}
+          {guide.steps && guide.steps.length > 0 && <CompletionBanner guideTitle={guide.title} slug={guide.slug} />}
+
+          {/* Body content */}
+          {guide.body && (
+            <div className="prose prose-base max-w-none mb-8 leading-relaxed">
+              {guide.body.split('\n\n').map((paragraph, i) => {
+                if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+                  return <h3 key={i} className="text-lg font-semibold mt-6 mb-2">{paragraph.replace(/\*\*/g, '')}</h3>;
+                }
+                if (paragraph.startsWith('**')) {
+                  const [boldPart, ...rest] = paragraph.split('**').filter(Boolean);
+                  return (
+                    <div key={i} className="mb-4">
+                      <h3 className="text-base font-semibold mb-1">{boldPart}</h3>
+                      {rest.length > 0 && <p className="text-base text-muted-foreground leading-relaxed">{rest.join('')}</p>}
                     </div>
-                    <ol className="space-y-1 max-h-[50vh] overflow-y-auto pr-1">
-                      {guide.steps.map((step, i) => {
-                        const isActive = i === activeStep;
-                        return (
-                          <li key={i}>
-                            <a
-                              href={`#step-${i + 1}`}
-                              className={`group flex items-start gap-3 rounded-lg px-2 py-2 text-sm transition-colors min-h-[40px] ${
-                                isActive
-                                  ? 'bg-primary/10 text-primary font-semibold'
-                                  : 'text-muted-foreground hover:bg-muted hover:text-foreground'
-                              }`}
-                              aria-current={isActive ? 'step' : undefined}
-                            >
-                              <span
-                                className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                                  isActive
-                                    ? 'bg-primary text-primary-foreground'
-                                    : 'bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
-                                }`}
-                              >
-                                {i + 1}
-                              </span>
-                              <span className="flex-1 leading-snug">{step.title}</span>
-                            </a>
-                          </li>
-                        );
-                      })}
+                  );
+                }
+                if (paragraph.startsWith('- ') || /^[\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{2700}-\u{27BF}]/u.test(paragraph)) {
+                  return (
+                    <ul key={i} className="space-y-2 mb-4">
+                      {paragraph.split('\n').map((item, j) => (
+                        <li key={j} className="flex items-start gap-2 text-base text-muted-foreground">
+                          <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-1" />
+                          <span>{item.replace(/^[-•]\s*/, '')}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                }
+                if (paragraph.match(/^\d+\./)) {
+                  return (
+                    <ol key={i} className="space-y-2 mb-4">
+                      {paragraph.split('\n').map((item, j) => (
+                        <li key={j} className="flex items-start gap-3 text-base text-muted-foreground">
+                          <span className="shrink-0 w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-xs font-semibold">{j + 1}</span>
+                          <span>{item.replace(/^\d+\.\s*/, '')}</span>
+                        </li>
+                      ))}
                     </ol>
+                  );
+                }
+                return <p key={i} className="text-base text-muted-foreground leading-relaxed mb-4">{paragraph}</p>;
+              })}
+            </div>
+          )}
+
+          {/* Was this helpful? */}
+          <HelpfulSection guideSlug={guide.slug} />
+
+          {/* Tags */}
+          <div className="flex flex-wrap items-center gap-2 mb-8">
+            <Tag className="h-4 w-4 text-muted-foreground" />
+            {guide.tags.map(tag => (
+              <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+            ))}
+          </div>
+
+          {/* Official Resources */}
+          {CATEGORY_RESOURCES[guide.category] && (
+            <div className="mb-8 p-5 rounded-2xl border border-border bg-muted/30">
+              <h2 className="text-sm font-semibold mb-3 flex items-center gap-2">
+                <ExternalLink className="h-4 w-4 text-primary" />
+                Official Resources
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {CATEGORY_RESOURCES[guide.category].map((r) => (
+                  <a
+                    key={r.url}
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-medium text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  >
+                    {r.label}
+                    <ExternalLink className="h-3 w-3 opacity-50" />
+                  </a>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">
+                Sources used to create and verify this guide. <a href="/sources" className="text-primary hover:underline">View all sources →</a>
+              </p>
+            </div>
+          )}
+
+          {/* Prev/Next */}
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            {prevGuide ? (
+              <Link to={`/guides/${prevGuide.slug}`} className="group">
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardContent className="py-4">
+                    <p className="text-xs text-muted-foreground mb-1">← Previous</p>
+                    <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{prevGuide.title}</p>
                   </CardContent>
                 </Card>
-              )}
+              </Link>
+            ) : <div />}
+            {nextGuide ? (
+              <Link to={`/guides/${nextGuide.slug}`} className="group text-right">
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardContent className="py-4">
+                    <p className="text-xs text-muted-foreground mb-1">Next →</p>
+                    <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{nextGuide.title}</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : <div />}
+          </div>
 
-              {/* Ask TekBrain */}
-              <Card className="border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
-                <CardContent className="py-5 px-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Sparkles className="h-4 w-4 text-primary" />
-                    <h2 className="text-sm font-bold uppercase tracking-wide">Need more help?</h2>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
-                    Ask TekBrain for a plain-English answer tailored to this guide.
-                  </p>
-                  <Button asChild className="w-full gap-2 min-h-[44px]">
-                    <Link to={`/tekbrain?guide=${encodeURIComponent(guide.slug)}`}>
-                      <MessageSquare className="h-4 w-4" />
-                      Ask TekBrain about this
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+          <Separator className="mb-8" />
 
-              {/* Share / Print / Save toolbar */}
-              <Card>
-                <CardContent className="py-5 px-5">
-                  <h2 className="text-sm font-bold uppercase tracking-wide mb-3">Tools</h2>
-                  <div className="space-y-2 [&_button]:w-full [&_button]:justify-start">
-                    <Button
-                      variant="outline"
-                      className="gap-2 min-h-[44px]"
-                      onClick={() => window.print()}
-                    >
-                      <Printer className="h-4 w-4" /> Print guide
-                    </Button>
-                    <ListenButton guide={guide} />
-                    <ShareGuideButton title={guide.title} url={`/guides/${guide.slug}`} />
-                    <ReportBrokenLink guideSlug={guide.slug} guideTitle={guide.title} />
-                  </div>
-                  {/* Save to My Favorites — new unified bookmarks (guides + tools) */}
-                  <div className="mt-4 pt-4 border-t border-border flex items-center justify-between gap-3">
-                    <div className="min-w-0">
-                      <p className="text-sm font-semibold leading-tight">Save for later</p>
-                      <p className="text-xs text-muted-foreground">Find it in My Favorites</p>
-                    </div>
-                    <SaveBookmarkButton
-                      type="guide"
-                      slug={guide.slug}
-                      title={guide.title}
-                      url={`/guides/${guide.slug}`}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
+          {/* CTA */}
+          <div className="rounded-2xl border border-border bg-muted/50 p-10 text-center mb-12">
+            <h2 className="text-xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
+            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">Our verified technicians can fix this issue for you — remotely or in person.</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Button asChild size="lg" className="rounded-xl gap-2">
+                <Link to="/book">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="rounded-xl">
+                <Link to="/how-it-works">How It Works</Link>
+              </Button>
             </div>
-          </aside>
+          </div>
+
+          {/* Learn More — auto-generated authoritative links */}
+          {learnMoreResources.length > 0 && (
+            <Card className="mb-8 border-primary/20">
+              <CardContent className="py-5 px-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <ExternalLink className="h-4 w-4 text-primary" />
+                  <p className="text-sm font-semibold">Learn more from official sources</p>
+                </div>
+                <ul className="space-y-2">
+                  {learnMoreResources.map((r) => (
+                    <li key={r.url}>
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:underline inline-flex items-center gap-1.5"
+                      >
+                        {r.title}
+                        <span className="text-xs text-muted-foreground">— {r.source}</span>
+                        <ExternalLink className="h-3 w-3 opacity-50" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Related Guides */}
+          {relatedGuides.length > 0 && (
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-6">Related Guides</h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                {relatedGuides.map(g => (
+                  <Link to={`/guides/${g.slug}`} key={g.slug}>
+                    <Card className="h-full hover:shadow-md transition-shadow group">
+                      <CardContent className="pt-5">
+                        <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
+                        <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
+                        <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
+                        <p className="text-xs text-muted-foreground mt-1">{calcReadTime(g)}</p>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </article>
+      </main>
 
       <Footer />
     </div>

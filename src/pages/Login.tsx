@@ -106,7 +106,7 @@ const Login = () => {
       <>
         <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" />
         <Navbar />
-        <main className="min-h-screen bg-background">
+        <main id="main-content" className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
             <div className="w-full">
               <Card className="rounded-2xl border border-border bg-card">
@@ -132,7 +132,7 @@ const Login = () => {
                       <h2 className="text-2xl font-bold tracking-tight mb-2">Set your new password</h2>
                       <p className="text-muted-foreground mb-6">Choose a strong password — at least 6 characters.</p>
                       {error && (
-                        <div role="alert" className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive text-left">
+                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive text-left">
                           {error}
                         </div>
                       )}
@@ -142,7 +142,6 @@ const Login = () => {
                           <Input
                             id="new-password"
                             type="password"
-                            autoComplete="new-password"
                             value={newPassword}
                             onChange={e => setNewPassword(e.target.value)}
                             className="h-11 rounded-lg border border-border bg-background"
@@ -156,7 +155,6 @@ const Login = () => {
                           <Input
                             id="confirm-password"
                             type="password"
-                            autoComplete="new-password"
                             value={confirmPassword}
                             onChange={e => setConfirmPassword(e.target.value)}
                             className="h-11 rounded-lg border border-border bg-background"
@@ -209,7 +207,7 @@ const Login = () => {
                         No worries — enter your email and we'll send you a link to reset it.
                       </p>
                       {error && (
-                        <div role="alert" className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
+                        <div className="mb-4 rounded-lg bg-destructive/10 p-4 text-sm text-destructive">
                           {error}
                         </div>
                       )}
@@ -219,7 +217,6 @@ const Login = () => {
                           <Input
                             id="reset-email"
                             type="email"
-                            autoComplete="email"
                             placeholder="you@example.com"
                             value={resetEmail}
                             onChange={e => setResetEmail(e.target.value)}
@@ -303,7 +300,7 @@ const Login = () => {
             <div className="mb-8 text-center">
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">Welcome to TekSure</h1>
               {message ? (
-                <p role="alert" className="text-destructive font-medium">{message}</p>
+                <p className="text-destructive font-medium">{message}</p>
               ) : (
                 <p className="text-muted-foreground">Sign in or create a free account</p>
               )}
@@ -313,7 +310,6 @@ const Login = () => {
               <CardContent className="p-8">
                 {error && (
                   <div
-                    role="alert"
                     className="mb-6 rounded-lg bg-destructive/10 p-4 text-sm text-destructive"
                   >
                     {error}
@@ -384,7 +380,6 @@ const Login = () => {
                         <Input
                           id="login-email"
                           type="email"
-                          autoComplete="email"
                           placeholder="you@example.com"
                           value={loginEmail}
                           onChange={e => setLoginEmail(e.target.value)}
@@ -397,7 +392,6 @@ const Login = () => {
                         <Input
                           id="login-password"
                           type="password"
-                          autoComplete="current-password"
                           value={loginPassword}
                           onChange={e => setLoginPassword(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -425,7 +419,6 @@ const Login = () => {
                         <Label htmlFor="signup-name" className="text-sm font-medium">Full Name</Label>
                         <Input
                           id="signup-name"
-                          autoComplete="name"
                           value={signupName}
                           onChange={e => setSignupName(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -437,7 +430,6 @@ const Login = () => {
                         <Input
                           id="signup-email"
                           type="email"
-                          autoComplete="email"
                           value={signupEmail}
                           onChange={e => setSignupEmail(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"
@@ -449,7 +441,6 @@ const Login = () => {
                         <Input
                           id="signup-password"
                           type="password"
-                          autoComplete="new-password"
                           value={signupPassword}
                           onChange={e => setSignupPassword(e.target.value)}
                           className="h-11 rounded-lg border border-border bg-background"

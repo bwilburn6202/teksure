@@ -236,7 +236,7 @@ export default function SuccessStories() {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Disclaimer (at top) */}
         <div className="max-w-4xl mx-auto mb-10">
           <Card className="border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60">

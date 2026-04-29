@@ -8,7 +8,7 @@ export const guidesBatch80: Guide[] = [
     category: `health-tech`,
     tags: [`diabetes`, `glucose`, `CGM`, `Dexcom`, `blood sugar`, `health monitoring`],
     readTime: `7 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `A continuous glucose monitor, often called a CGM, is a small sensor you wear on your body that checks your blood sugar levels around the clock — no finger pricks required every time. The Dexcom app on your phone receives those readings every five minutes and displays them as a number and a trend arrow so you always know which direction your glucose is heading.
@@ -56,7 +56,7 @@ Always talk to your doctor before making any changes to your diabetes medication
     category: `health-tech`,
     tags: [`heart health`, `EKG`, `ECG`, `KardiaMobile`, `AliveCor`, `atrial fibrillation`, `arrhythmia`],
     readTime: `6 min`,
-    thumbnailEmoji: `❤️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `KardiaMobile is a small credit-card-sized device made by AliveCor that pairs with your smartphone. When you press your fingertips against it for 30 seconds, it records an electrocardiogram — the same type of reading a doctor's office uses to look at your heart rhythm. The result is displayed right on your phone screen and can be saved or sent to your doctor.
@@ -102,7 +102,7 @@ KardiaMobile works with most iPhones and Android phones. The device itself costs
     category: `health-tech`,
     tags: [`blood pressure`, `hypertension`, `Omron`, `heart health`, `health tracking`, `telehealth`],
     readTime: `5 min`,
-    thumbnailEmoji: `💓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Keeping track of your blood pressure at home is one of the most recommended steps for people managing hypertension or heart conditions. A single reading at the doctor's office does not always tell the whole story because many people feel anxious at appointments, which can temporarily raise their numbers — a well-known pattern sometimes called "white coat hypertension." Tracking readings at home over days and weeks gives your doctor a much more accurate picture.
@@ -147,7 +147,7 @@ Taking blood pressure correctly matters just as much as using a good monitor. Si
     category: `health-tech`,
     tags: [`weight tracking`, `BMI`, `body composition`, `Withings`, `smart scale`, `health monitoring`],
     readTime: `5 min`,
-    thumbnailEmoji: `⚖️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A Withings smart scale looks like any other bathroom scale, but after you step on it, your weight and other body measurements automatically appear in an app on your phone within seconds. There is no writing numbers down, no manual logging, and no guessing. The data is organized into charts so you can see your progress over days, weeks, and months at a glance.
@@ -192,7 +192,7 @@ Withings scales connect to your home Wi-Fi, so data syncs even if your phone is 
     category: `health-tech`,
     tags: [`nutrition`, `macros`, `protein`, `carbohydrates`, `fat`, `calorie counting`, `meal tracking`],
     readTime: `6 min`,
-    thumbnailEmoji: `🥗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Macros is short for macronutrients — the three main building blocks found in food: protein, carbohydrates, and fat. Every food you eat contains some combination of these three things, and they all serve different purposes in your body. Protein helps build and repair muscle. Carbohydrates give you energy. Fat supports your brain, hormones, and helps your body absorb vitamins.
@@ -238,7 +238,7 @@ You do not have to track every bite forever. Many people track for a few weeks t
     category: `health-tech`,
     tags: [`nutrition`, `vitamins`, `minerals`, `micronutrients`, `Cronometer`, `meal tracking`, `health`],
     readTime: `6 min`,
-    thumbnailEmoji: `🧬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Cronometer is a nutrition tracking app that goes far deeper than most calorie counters. While apps like MyFitnessPal focus mainly on calories and macros — protein, carbs, and fat — Cronometer also tracks over 80 micronutrients including vitamins A, B12, C, D, E, and K, along with minerals like iron, calcium, magnesium, potassium, and zinc. This level of detail is especially useful if you follow a special diet, take supplements, have a condition that affects nutrient absorption, or want to make sure you are actually getting everything your body needs.
@@ -283,7 +283,7 @@ The free version of Cronometer covers everything most people need. A paid upgrad
     category: `health-tech`,
     tags: [`keto`, `low-carb`, `carbohydrates`, `Carb Manager`, `meal tracking`, `net carbs`, `diabetes`],
     readTime: `5 min`,
-    thumbnailEmoji: `🥩`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Carb Manager is a food tracking app built specifically for people following a low-carbohydrate or ketogenic diet. While most tracking apps show total carbohydrates, Carb Manager focuses on net carbs — total carbohydrates minus dietary fiber and sugar alcohols. Net carbs are what most low-carb and keto dieters care about because fiber and certain sugar alcohols do not raise blood sugar the way regular carbs do.
@@ -328,7 +328,7 @@ The free version covers all the basics. Premium features include more advanced m
     category: `health-tech`,
     tags: [`telehealth`, `MDLive`, `online doctor`, `virtual visit`, `24/7 care`, `prescription`, `urgent care`],
     readTime: `6 min`,
-    thumbnailEmoji: `👨‍⚕️`,
+    thumbnailEmoji: `‍`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `MDLive is one of the largest telehealth companies in the United States. It connects patients with board-certified doctors, therapists, and psychiatrists through video or phone visits — at any hour of the day or night, including weekends and holidays. If you wake up with a bad cough at midnight, notice a rash on Saturday afternoon, or need a refill on a common medication but cannot get an appointment with your regular doctor for weeks, MDLive can help.
@@ -374,7 +374,7 @@ To use MDLive you need a smartphone, tablet, or computer with a camera and micro
     category: `health-tech`,
     tags: [`telehealth`, `Amwell`, `online doctor`, `video visit`, `virtual care`, `specialist`, `prescription`],
     readTime: `5 min`,
-    thumbnailEmoji: `🖥️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amwell is a telehealth platform that connects patients with licensed healthcare providers for video visits. You can use Amwell for urgent but non-emergency conditions, primary care visits, mental health support, nutrition counseling, and even some specialist consultations — all from your phone, tablet, or computer without leaving home.
@@ -419,7 +419,7 @@ Amwell works well for conditions like cold and flu symptoms, sinus problems, ras
     category: `health-tech`,
     tags: [`telehealth`, `Doctor On Demand`, `Included Health`, `video visit`, `mental health`, `primary care`, `prescription`],
     readTime: `5 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Doctor On Demand is a telehealth service that is now part of a larger healthcare company called Included Health. The app and brand name Doctor On Demand are still widely used, and the service works the same way it always has: you open the app, describe what is bothering you, and connect with a board-certified doctor by video on your phone or computer — usually within minutes.
@@ -464,7 +464,7 @@ If you have a primary care doctor but cannot get an appointment for weeks, Docto
     category: `health-tech`,
     tags: [`Amazon Clinic`, `telehealth`, `online doctor`, `no insurance`, `common conditions`, `prescription`, `affordable care`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amazon Clinic is an online healthcare service offered by Amazon that lets you get treated for more than 30 common health conditions at a flat, transparent price — often without needing health insurance or a prior appointment. It is available in most US states to people 18 and older.
@@ -509,7 +509,7 @@ Prescriptions from Amazon Clinic can be filled at any pharmacy or through Amazon
     category: `health-tech`,
     tags: [`One Medical`, `primary care`, `telehealth`, `same-day appointment`, `Amazon Health`, `virtual visit`, `membership`],
     readTime: `5 min`,
-    thumbnailEmoji: `🩺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One Medical is a membership-based primary care service, now owned by Amazon, that gives members access to same-day or next-day appointments at One Medical offices across major US cities, as well as 24/7 virtual visits from anywhere. It is designed for people who are frustrated by long waits to see a primary care doctor and want faster, more convenient access to ongoing care.
@@ -554,7 +554,7 @@ If you live near a One Medical office and want a primary care experience that co
     category: `health-tech`,
     tags: [`telehealth`, `video visit`, `online doctor`, `virtual care`, `beginner`, `how to`, `seniors`],
     readTime: `7 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Telehealth means seeing a doctor, nurse practitioner, or other healthcare provider over the internet instead of traveling to an office. You use a smartphone, tablet, or computer with a camera and microphone, and the visit happens through a video call — similar to the way you might video chat with a family member. The provider can see and hear you, ask you questions, look at visible symptoms, and in most cases prescribe medication if needed.
@@ -600,7 +600,7 @@ Most telehealth services are straightforward to use. If you can make a video cal
     category: `health-tech`,
     tags: [`emergency room`, `urgent care`, `ER`, `when to go`, `health decisions`, `seniors`, `medical care`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One of the most important health decisions you can make is knowing where to go when something is wrong. Going to the emergency room for a condition that could be treated at urgent care costs significantly more — often thousands of dollars more — and means much longer wait times. On the other hand, trying to treat an emergency at home or at urgent care can delay life-saving care.
@@ -645,7 +645,7 @@ Telehealth can also fill an important gap — if you are not sure whether your s
     category: `health-tech`,
     tags: [`Zocdoc`, `find a doctor`, `appointment booking`, `insurance`, `primary care`, `specialist`, `reviews`],
     readTime: `5 min`,
-    thumbnailEmoji: `📅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Finding a doctor who is accepting new patients, takes your insurance, and has an appointment available soon can feel overwhelming. Zocdoc is a free service that makes this process much faster. You enter your insurance plan, your location, and the type of doctor you need, and Zocdoc shows you a list of available providers with their real-time appointment openings — so you can book directly without calling the office and waiting on hold.
@@ -690,7 +690,7 @@ Zocdoc is completely free for patients. Doctors pay to be listed. You can use Zo
     category: `health-tech`,
     tags: [`WebMD`, `symptom checker`, `health information`, `medication`, `conditions`, `health app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `WebMD is one of the most visited health information websites in the United States, and its app brings that same wealth of information to your smartphone. The WebMD app is best used as a starting point for learning about symptoms, conditions, and medications — not as a replacement for your doctor's professional judgment.
@@ -735,7 +735,7 @@ WebMD also provides a library of articles written in collaboration with doctors 
     category: `health-tech`,
     tags: [`Mayo Clinic`, `health information`, `medical research`, `conditions`, `symptoms`, `trusted source`, `patient education`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏛️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Mayo Clinic is widely regarded as one of the most trusted names in American medicine. Its website — mayoclinic.org — offers a free, comprehensive library of health information written by Mayo Clinic physicians and reviewed for accuracy on a regular basis. Unlike some health websites that are driven primarily by advertising or traffic, Mayo Clinic's website is funded by the nonprofit organization itself and prioritizes accuracy and completeness.
@@ -780,7 +780,7 @@ You do not need to create an account to use the website. Everything in the healt
     category: `health-tech`,
     tags: [`cancer screening`, `mammogram`, `colonoscopy`, `preventive care`, `health reminders`, `seniors`, `women's health`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎗️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Cancer screenings save lives. When cancers are caught early — before symptoms develop — treatment is usually more effective and often less intensive. But keeping track of which screenings you are due for and when can be confusing, especially when different screenings have different recommended intervals and those recommendations can change based on your age, personal history, and family history.
@@ -826,7 +826,7 @@ The most important step is to talk openly with your doctor about which screening
     category: `health-tech`,
     tags: [`Sharecare`, `wellness`, `health goals`, `biometrics`, `RealAge`, `chronic condition`, `employer health`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌿`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Sharecare is a digital health platform that helps people take a more active role in managing their overall wellbeing. The app brings together health tracking, wellness programs, personalized content, and disease management resources in one place. Many employers and health insurance plans offer Sharecare as part of their wellness benefits, sometimes with incentives like gift cards or lower insurance premiums for completing health activities.
@@ -871,7 +871,7 @@ If your employer or insurance plan includes Sharecare, many of the premium featu
     category: `health-tech`,
     tags: [`Livongo`, `diabetes`, `glucose meter`, `health coaching`, `Teladoc`, `blood sugar`, `chronic condition management`],
     readTime: `7 min`,
-    thumbnailEmoji: `🩸`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Livongo, now part of Teladoc Health, is a connected diabetes management program that goes beyond a standard glucose meter. When you enroll in Livongo, you receive a cellular-enabled blood glucose meter that automatically uploads your readings to the cloud every time you test — no Bluetooth pairing, no manual entry. The readings appear instantly in the Livongo app on your phone and are reviewed by the program's health coaches and clinical team.

@@ -37,7 +37,7 @@ const TECHNICIANS: Technician[] = [
   {
     id: 'tech-james-r',
     name: 'James R.',
-    emoji: '',
+    emoji: '‍',
     title: 'Windows & Home Network Specialist',
     location: 'Manchester',
     bio: 'I\'ve been helping people with their computers for over 12 years, first as an in-house IT technician and now independently through TekSure. I specialise in making technology less stressful — whether that\'s fixing a slow PC, getting your Wi-Fi working properly, or cleaning a virus off your computer.',
@@ -59,7 +59,7 @@ const TECHNICIANS: Technician[] = [
   {
     id: 'tech-sarah-k',
     name: 'Sarah K.',
-    emoji: '',
+    emoji: '‍',
     title: 'iPhone, iPad & Mac Expert',
     location: 'London (South)',
     bio: 'As a former Apple Store employee, I know Apple products inside and out. I help people get the most from their iPhones, iPads, and Macs — from setting up a new phone to recovering lost photos, sorting out iCloud problems, and teaching people how to use their devices confidently.',
@@ -80,7 +80,7 @@ const TECHNICIANS: Technician[] = [
   {
     id: 'tech-hassan-m',
     name: 'Hassan M.',
-    emoji: '',
+    emoji: '‍',
     title: 'Security & Scam Recovery Specialist',
     location: 'Birmingham',
     bio: 'I\'m passionate about keeping people safe online. I\'ve helped dozens of people recover from scams, secure their accounts, and protect themselves in the future. I also help set up two-factor authentication, secure email, and safe browsing on all devices.',
@@ -124,7 +124,7 @@ function TechnicianDirectory() {
       path="/technicians"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <section className="border-b border-border py-10 px-4">
           <div className="container max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-primary">Our Technicians</h1>
@@ -177,7 +177,7 @@ function TechnicianDirectory() {
           <div className="text-center mt-8">
             <p className="text-muted-foreground text-sm mb-3">Ready to book?</p>
             <Button asChild size="lg" className="gap-2 rounded-xl">
-              <Link to="/get-help">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
+              <Link to="/book">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </div>
         </div>
@@ -327,7 +327,7 @@ export default function TechnicianProfile() {
                 <p className="text-sm text-muted-foreground mt-0.5">From $49 for the first hour. No fix, no charge.</p>
               </div>
               <Button asChild className="gap-2 shrink-0 rounded-xl">
-                <Link to="/get-help">Book now <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </CardContent>
           </Card>

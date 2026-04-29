@@ -119,7 +119,7 @@ export function DeviceInventory() {
         <Navbar />
       </div>
 
-      <main className="container py-12 min-h-[70vh]">
+      <main id="main-content" className="container py-12 min-h-[70vh]">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">

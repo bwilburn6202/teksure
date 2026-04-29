@@ -12,7 +12,7 @@ const plans: { name: string; price: string; saving?: string; icon: LucideIcon; p
     name: '1 Month Gift',
     price: '$9.99',
     icon: Gift,
-    perks: ['Full access to all 236+ guides', 'Unlimited TekBrain chat', 'Priority email support', 'Achievement badges', 'Personalized learning path'],
+    perks: ['Full access to all 236+ guides', 'Unlimited TekBot chat', 'Priority email support', 'Achievement badges', 'Personalized learning path'],
     highlight: false,
   },
   {
@@ -50,7 +50,7 @@ export default function GiftSubscription() {
         path="/gift"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
             <Gift className="h-12 w-12 text-primary mx-auto mb-4" />

@@ -66,7 +66,7 @@ export default function GiftSession() {
         path="/gift-session"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-4xl pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Gift a Session' }]} />
         </div>
@@ -263,7 +263,7 @@ export default function GiftSession() {
               <div className="flex gap-3">
                 <Button variant="outline" onClick={() => setStep('personalize')} className="rounded-xl">Back</Button>
                 <Button className="flex-1 rounded-xl gap-2" asChild>
-                  <Link to="/get-help">
+                  <Link to="/book">
                     <Gift className="h-4 w-4" /> Complete Purchase — ${selectedOption.price}
                   </Link>
                 </Button>

@@ -8,7 +8,7 @@ export const guidesBatch82: Guide[] = [
     category: `app-guides`,
     tags: [`home depot`, `shopping`, `home improvement`, `hardware store`, `delivery`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔨`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Home Depot app is a handy tool for anyone working on a home project, whether you are replacing a faucet, painting a room, or buying lumber. Instead of wandering the aisles looking for help, you can use the app to find exactly where a product is located inside your local store down to the aisle and bay number. That level of detail saves real time, especially in a large store.
@@ -54,7 +54,7 @@ If you need advice, the app connects you to project guides and how-to videos cre
     category: `app-guides`,
     tags: [`lowes`, `home improvement`, `shopping`, `hardware`, `delivery`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Lowe's app is built for homeowners, renters, and anyone who likes to work on their living space. It gives you access to the full Lowe's product catalog right from your phone, with features that make shopping smarter and faster. One of the most useful features is in-store navigation — the app can show you the exact aisle where a product is stocked in your local Lowe's, so you spend less time searching and more time getting things done.
@@ -96,7 +96,7 @@ For bigger projects, the app includes installation services you can schedule dir
     category: `financial-tech`,
     tags: [`zillow`, `real estate`, `home buying`, `zestimate`, `property search`],
     readTime: `7 min`,
-    thumbnailEmoji: `🏘️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Zillow is one of the most widely used real estate websites in the United States. It brings together listings from the Multiple Listing Service (MLS) — a shared database used by real estate agents — along with for-sale-by-owner properties and rental listings. You can use it to browse homes in any city, set a budget filter, and explore neighborhoods, all without contacting anyone or scheduling a visit.
@@ -139,7 +139,7 @@ Zillow also lets you save homes to a favorites list, set up alerts when new home
     category: `financial-tech`,
     tags: [`redfin`, `real estate`, `home buying`, `agent`, `property search`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Redfin is a real estate company that operates both a home search website and a brokerage with its own licensed agents. Unlike traditional real estate agencies, Redfin agents are paid a salary rather than working on commission alone. The company says this helps agents focus on finding the right home for the buyer rather than closing deals quickly. When you buy a home through a Redfin agent, you may receive a portion of the agent's commission back as a refund at closing, though this varies by state and market.
@@ -181,7 +181,7 @@ Booking a tour is built directly into the platform. You can request an in-person
     category: `financial-tech`,
     tags: [`rocket mortgage`, `mortgage`, `home loan`, `refinance`, `lending`],
     readTime: `8 min`,
-    thumbnailEmoji: `🏦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Rocket Mortgage, operated by Rocket Companies, is one of the largest mortgage lenders in the United States. The company built its reputation on letting borrowers complete the entire mortgage application process from their phone or computer, without visiting a bank branch or meeting with a loan officer in person unless they choose to. For many people, especially those who work long hours or prefer to handle finances at their own pace, this is a significant advantage.
@@ -226,7 +226,7 @@ One thing to keep in mind: because Rocket Mortgage operates online, you will not
     category: `financial-tech`,
     tags: [`first-time homebuyer`, `home buying`, `mortgage`, `real estate`, `down payment`],
     readTime: `9 min`,
-    thumbnailEmoji: `🗝️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Buying your first home is one of the largest financial decisions you will ever make. The good news is that there are now dozens of free apps and websites designed to guide first-time buyers through every step of the process — from understanding your credit score to signing closing documents. Knowing which tools to use can make the experience far less overwhelming.
@@ -271,7 +271,7 @@ Down payment assistance programs are often overlooked by first-time buyers. The 
     category: `financial-tech`,
     tags: [`reverse mortgage`, `seniors`, `home equity`, `retirement`, `HECM`],
     readTime: `10 min`,
-    thumbnailEmoji: `📋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `A reverse mortgage is a loan available to homeowners who are 62 years of age or older. Unlike a regular mortgage where you make monthly payments to a lender, a reverse mortgage works the other way around — the lender pays you. You can receive the money as a lump sum, a monthly payment, or as a line of credit you draw from when needed. The loan does not need to be repaid while you continue to live in the home as your primary residence.
@@ -318,7 +318,7 @@ Reverse mortgages are not right for everyone. If you plan to leave your home to 
     category: `app-guides`,
     tags: [`houzz`, `home design`, `renovation`, `contractors`, `interior design`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛋️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Houzz is a platform that combines home design inspiration with a marketplace for finding and hiring home improvement professionals. If you are planning a renovation and are not sure what style you want, Houzz is one of the best places to start browsing. The app contains millions of photos of real homes — kitchens, bathrooms, living rooms, gardens, and more — organized by style, room type, and color palette.
@@ -363,7 +363,7 @@ Houzz is free to browse and use as an idea-gathering tool. Professionals pay to 
     category: `app-guides`,
     tags: [`room planner`, `furniture arrangement`, `home design`, `floor plan`, `interior layout`],
     readTime: `6 min`,
-    thumbnailEmoji: `📐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Moving furniture is exhausting work, and discovering that the sofa you wrestled into position blocks the window or makes the room feel cramped is deeply frustrating. Room planning apps let you test out different layouts on your phone or computer first, so you only physically move furniture once — into the arrangement you already know will work.
@@ -408,7 +408,7 @@ The most important step before using any of these apps is measuring your room ac
     category: `financial-tech`,
     tags: [`fundrise`, `real estate investing`, `REIT`, `passive income`, `investing`],
     readTime: `8 min`,
-    thumbnailEmoji: `📈`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Fundrise is an online platform that allows regular investors — not just wealthy individuals — to invest in real estate. Traditionally, buying investment property required a large amount of money for a down payment, good credit, and the ability to manage tenants and maintenance. Fundrise removes those barriers by pooling money from many investors and using it to buy or develop real estate projects like apartment buildings, commercial properties, and single-family rental homes.
@@ -452,7 +452,7 @@ Fundrise charges an annual management fee of around 0.85 percent, which is low c
     category: `app-guides`,
     tags: [`poshmark`, `resale`, `secondhand`, `clothing`, `selling online`],
     readTime: `7 min`,
-    thumbnailEmoji: `👗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Poshmark is a social shopping platform focused on clothing, shoes, handbags, and accessories. It has two sides: you can sell items from your own closet, or you can shop other people's "closets" for pieces at lower-than-retail prices. The platform is designed to be social — users follow each other, share listings, and comment on items they like, which gives it a community feel that sets it apart from more transactional resale sites.
@@ -497,7 +497,7 @@ For anyone with a closet full of clothes they no longer wear, Poshmark is a stra
     category: `app-guides`,
     tags: [`depop`, `vintage`, `resale`, `secondhand`, `fashion`],
     readTime: `6 min`,
-    thumbnailEmoji: `👕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Depop is a resale marketplace that has become a go-to destination for vintage clothing, unique fashion pieces, and retro styles. While it attracts a younger audience, the platform is accessible and useful for anyone who wants to sell clothes they no longer wear or find interesting items at prices below retail.
@@ -542,7 +542,7 @@ Depop charges sellers a fee on each sale, plus payment processing fees. Buyers p
     category: `app-guides`,
     tags: [`mercari`, `resale`, `selling online`, `secondhand`, `marketplace`],
     readTime: `6 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Mercari is a general-purpose resale marketplace where you can sell almost any physical item — clothing, electronics, video games, toys, kitchenware, collectibles, books, and much more. Unlike Poshmark (which focuses on fashion) or Depop (which leans toward vintage clothing), Mercari is closer to a digital yard sale where nearly any category is welcome.
@@ -587,7 +587,7 @@ The platform has protections for both buyers and sellers. Buyers can rate a tran
     category: `app-guides`,
     tags: [`thredup`, `resale`, `secondhand`, `clothing`, `sustainable fashion`],
     readTime: `7 min`,
-    thumbnailEmoji: `♻️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `thredUP is one of the largest online resale platforms for women's and children's clothing. Unlike Poshmark or Mercari, where you personally photograph and list each item, thredUP handles the selling work for you. You request a free "Clean Out Kit" — a bag that thredUP mails to you — fill it with clothes you no longer wear, and send it back. thredUP's team inspects each item, photographs it, and lists it on the website. You receive a payout based on what sells.
@@ -632,7 +632,7 @@ thredUP is a particularly good fit for anyone who wants to clean out a closet wi
     category: `app-guides`,
     tags: [`whatnot`, `live shopping`, `auctions`, `collectibles`, `trading cards`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Whatnot is a live-stream marketplace where sellers host real-time auctions or fixed-price sales, and buyers watch and bid through their phones. The platform is especially popular for collectibles like trading cards (Pokémon, sports cards, Magic: The Gathering), vintage toys, comic books, sneakers, and clothing. However, the platform has expanded to include many categories.
@@ -677,7 +677,7 @@ To sell on Whatnot, you need to apply for seller access through the app. Once ap
     category: `app-guides`,
     tags: [`vinted`, `resale`, `secondhand`, `no selling fee`, `fashion`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏷️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Vinted is a European resale platform that has grown significantly in the United States. Its defining feature is that sellers pay zero fees to list or sell items. Instead, buyers pay a small service fee on each purchase, which covers the platform's costs. This means that when a seller lists a sweater for $30, they receive the full $30 — a different model from Poshmark (which charges sellers 20 percent) or Mercari (which charges 10 percent).
@@ -724,7 +724,7 @@ If you have clothes to sell and want to keep the maximum amount from each sale, 
     category: `app-guides`,
     tags: [`rent the runway`, `fashion rental`, `designer clothing`, `subscription`, `formal wear`],
     readTime: `6 min`,
-    thumbnailEmoji: `👠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Rent the Runway is a fashion rental service that allows you to wear designer clothing and accessories without purchasing them. The company rents pieces from hundreds of brands — including Diane von Furstenberg, Theory, Joie, and many others — at prices that are a fraction of their retail cost. This makes high-end fashion accessible for a special occasion, a work trip, or an event where you want to wear something special but not spend hundreds of dollars on something you will only wear once.
@@ -769,7 +769,7 @@ One practical consideration: Rent the Runway includes backup size options with m
     category: `app-guides`,
     tags: [`lyst`, `fashion`, `shopping`, `price comparison`, `clothing`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛍️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Lyst describes itself as a fashion search engine, and that is a useful way to think about it. Instead of visiting Net-a-Porter, Nordstrom, ASOS, Saks Fifth Avenue, and a dozen other online stores separately to find the right dress or jacket, you search once on Lyst and it shows you results from all of those retailers at once. You can compare prices, see size availability across stores, and click through to purchase at whichever retailer has the best deal.
@@ -813,7 +813,7 @@ For anyone who buys clothing online and currently visits multiple websites befor
     category: `app-guides`,
     tags: [`rebag`, `luxury handbags`, `authentication`, `resale`, `designer bags`],
     readTime: `7 min`,
-    thumbnailEmoji: `👜`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Rebag is a resale platform dedicated entirely to luxury handbags from brands like Louis Vuitton, Chanel, Gucci, Prada, Hermès, and similar designers. The company distinguishes itself through authentication — every bag sold on Rebag is examined by authentication specialists before it is listed for sale. Buyers can shop with confidence knowing the item has passed a verification process, which is critical in a market where counterfeit designer goods are unfortunately common.
@@ -858,7 +858,7 @@ For anyone who owns a luxury handbag they no longer use, Rebag is one of the mos
     category: `app-guides`,
     tags: [`chrono24`, `watches`, `luxury watches`, `marketplace`, `collectibles`],
     readTime: `8 min`,
-    thumbnailEmoji: `⌚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Chrono24 is the largest online marketplace for buying and selling watches, with listings from professional dealers and private sellers across more than 100 countries. The platform covers everything from entry-level brands like Seiko and Citizen to luxury timepieces from Rolex, Omega, Patek Philippe, and Audemars Piguet. Whether you are looking for a reliable everyday watch at a few hundred dollars or a collector's piece worth tens of thousands, Chrono24 likely has it listed.

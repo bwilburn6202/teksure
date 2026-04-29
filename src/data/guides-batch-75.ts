@@ -8,7 +8,7 @@ export const guidesBatch75: Guide[] = [
     category: `health-tech`,
     tags: [`running`, `fitness`, `exercise`, `beginners`, `c25k`, `walking`],
     readTime: `6 min`,
-    thumbnailEmoji: `🏃`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Starting a running habit can feel overwhelming if you've never done it before. Your lungs burn after one block, your knees complain, and you wonder how anyone ever runs a whole mile. The Couch to 5K program — available as the official C25K app on iPhone and Android — was designed specifically to solve that problem.
@@ -57,7 +57,7 @@ Remember: the goal of week one is not speed. It's showing up. Walk as briskly as
     category: `health-tech`,
     tags: [`peloton`, `fitness`, `workout classes`, `streaming`, `exercise`],
     readTime: `5 min`,
-    thumbnailEmoji: `🚴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Most people think Peloton is only for people who own the expensive stationary bike. That's not true. The Peloton app gives anyone access to the full library of classes — including yoga, strength training, stretching, walking, running, meditation, and cycling — on any phone, tablet, or TV.
@@ -103,7 +103,7 @@ Peloton instructors are motivating and encouraging without being aggressive. Man
     category: `health-tech`,
     tags: [`classpass`, `fitness classes`, `gym`, `yoga`, `pilates`, `membership`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏋️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Finding a fitness class you enjoy is half the battle of staying active. The problem is that most studios require a month-to-month membership or drop-in fees that add up quickly when you're still figuring out what you like. ClassPass solves that by giving you a credit-based membership you can use at hundreds of different studios and gyms in your city.
@@ -149,7 +149,7 @@ ClassPass also includes a selection of on-demand video classes you can do at hom
     category: `health-tech`,
     tags: [`fitbod`, `workout`, `gym`, `strength training`, `fitness app`, `personalized`],
     readTime: `6 min`,
-    thumbnailEmoji: `💪`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Walking into a gym without a plan can feel paralyzing. Which machines do you use? How many sets? How heavy? Fitbod is an app that answers all of those questions for you by building a personalized workout each time you open it.
@@ -195,7 +195,7 @@ The app also integrates with Apple Health and Google Fit, so your workouts autom
     category: `app-guides`,
     tags: [`journaling`, `diary`, `day one`, `mental health`, `writing`, `memories`],
     readTime: `5 min`,
-    thumbnailEmoji: `📓`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Keeping a journal has been linked to reduced stress, better memory, and a stronger sense of clarity about life. But blank notebooks get lost, handwriting fades, and paper can't hold photos the way digital can. Day One is a journaling app designed to make daily writing a habit you'll actually stick with.
@@ -240,7 +240,7 @@ The app also offers guided journaling prompts if you're not sure what to write a
     category: `essential-skills`,
     tags: [`email`, `inbox`, `unsubscribe`, `spam`, `organization`, `gmail`, `outlook`],
     readTime: `6 min`,
-    thumbnailEmoji: `📧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `A cluttered inbox makes it hard to find the messages that actually matter. Newsletters you never read, store promotions, app notifications, and old subscriptions pile up until your email feels more like a chore than a tool. The good news is that cleaning it up is manageable once you know the right approach.
@@ -286,7 +286,7 @@ After unsubscribing from the obvious senders, use your email's built-in "Promoti
     category: `essential-skills`,
     tags: [`yahoo mail`, `email`, `gmail`, `inbox organization`, `email management`],
     readTime: `7 min`,
-    thumbnailEmoji: `📬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Millions of Americans have had Yahoo Mail accounts for decades. If yours has grown cluttered and overwhelming — or if you've heard that Gmail might be a better option — this guide covers both: how to get more out of Yahoo Mail right now, and how to make a smooth move to Gmail if that's the direction you want to go.
@@ -330,7 +330,7 @@ If you're considering switching to Gmail, the transition is more manageable than
     category: `smart-home`,
     tags: [`hdmi arc`, `soundbar`, `tv`, `audio`, `home theater`, `cable setup`],
     readTime: `6 min`,
-    thumbnailEmoji: `📺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Soundbars make a dramatic improvement over a TV's built-in speakers, but connecting one used to mean juggling multiple cables and remotes. HDMI ARC — which stands for Audio Return Channel — was designed to fix that. With an HDMI ARC connection, one single cable handles both the audio signal going from your TV to the soundbar and the control commands that let your TV's remote also control the soundbar's volume.
@@ -374,7 +374,7 @@ Once connected and configured, you should be able to use your TV remote's volume
     category: `smart-home`,
     tags: [`tv antenna`, `free tv`, `cord cutting`, `local channels`, `hdtv`, `over-the-air`],
     readTime: `6 min`,
-    thumbnailEmoji: `📡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Before cable and streaming services, everyone watched TV with an antenna. The signal was free then, and it still is today. Over-the-air (OTA) broadcasts from your local ABC, CBS, NBC, PBS, Fox, and dozens of smaller channels transmit in full HD — often at a higher picture quality than the same channels delivered through cable, because cable companies compress the signal to save bandwidth.
@@ -419,7 +419,7 @@ One important note: a TV antenna works with any TV that has a built-in digital t
     category: `entertainment`,
     tags: [`kanopy`, `free movies`, `library card`, `streaming`, `documentaries`, `no subscription`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Streaming services keep raising their prices, and keeping up with multiple subscriptions adds up fast. Kanopy is one of the best-kept secrets in free entertainment: it's a streaming service completely free for anyone with a public library card, and it shows no ads during movies or documentaries.
@@ -464,7 +464,7 @@ You can watch Kanopy in a web browser on any computer, through the Kanopy app on
     category: `entertainment`,
     tags: [`crackle`, `free streaming`, `free movies`, `no subscription`, `ad-supported`, `tv shows`],
     readTime: `4 min`,
-    thumbnailEmoji: `🎥`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Not every streaming service needs a credit card or a monthly fee. Crackle is a free, ad-supported streaming platform that gives you access to movies and TV shows at no cost. Like watching television the traditional way, Crackle shows short commercial breaks during programs. The trade-off — watching a few ads in exchange for free entertainment — is the same deal people accepted for decades with broadcast TV.
@@ -503,7 +503,7 @@ Crackle is a good complement to Tubi, Pluto TV, and YouTube's free movie section
     category: `entertainment`,
     tags: [`youtube`, `free movies`, `streaming`, `no subscription`, `ad-supported`, `films`],
     readTime: `5 min`,
-    thumbnailEmoji: `▶️`,
+    thumbnailEmoji: `▶`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Most people know YouTube for short videos and tutorials, but the platform also has a dedicated Movies section with thousands of full-length films available to watch completely free. These movies are ad-supported — short commercial breaks appear during the film — but there's no subscription, no credit card, and no account required to watch most of them.
@@ -545,7 +545,7 @@ If you do have a YouTube account, watching free movies contributes to your YouTu
     category: `app-guides`,
     tags: [`thumbtack`, `home repair`, `plumber`, `electrician`, `handyman`, `local services`],
     readTime: `5 min`,
-    thumbnailEmoji: `🔧`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Finding a reliable plumber, electrician, or handyperson used to mean asking neighbors for recommendations, calling several businesses, leaving messages, and waiting days to hear back — all before you even got a quote. Thumbtack changes that process by connecting you with local professionals who respond with quotes directly through the app, often within hours.
@@ -591,7 +591,7 @@ Thumbtack is available as a free app on iPhone and Android, and also works on an
     category: `app-guides`,
     tags: [`rover`, `dog walking`, `pet sitting`, `pet care`, `dogs`, `cats`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Leaving your pet alone all day — or going out of town without a trusted pet sitter — is one of the more stressful parts of owning a dog or cat. Rover is an app that connects pet owners with local, reviewed pet care providers: dog walkers who come to your home, pet sitters who check in during the day, and boarding hosts who keep your pet in their own home while you travel.
@@ -636,7 +636,7 @@ Booking is handled entirely through the app or website. Payment is processed sec
     category: `app-guides`,
     tags: [`doordash`, `gig work`, `delivery`, `earn money`, `flexible work`, `dasher`],
     readTime: `6 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `DoorDash is one of the most popular food delivery apps in the United States, and the people who make those deliveries — called Dashers — are independent contractors who set their own hours and work as much or as little as they choose. Becoming a Dasher is straightforward and doesn't require any special experience or training.
@@ -682,7 +682,7 @@ The Dasher app is available for iPhone and Android and uses your phone's GPS for
     category: `app-guides`,
     tags: [`amazon flex`, `delivery`, `gig work`, `earn money`, `amazon`, `flexible hours`],
     readTime: `6 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amazon Flex is Amazon's program for independent delivery drivers who use their own vehicles to deliver Amazon packages directly to customers' homes. Unlike DoorDash, which involves restaurant food, Amazon Flex drivers pick up pre-packaged delivery batches from Amazon delivery stations, warehouses, or Whole Foods stores and bring them to the addresses printed on each label.
@@ -728,7 +728,7 @@ Amazon Flex drivers are paid every Tuesday and Friday via direct deposit. As an 
     category: `app-guides`,
     tags: [`strava`, `running`, `walking`, `cycling`, `fitness tracking`, `GPS`, `exercise`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏅`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Strava is one of the most popular fitness tracking apps in the world, used by everyone from casual walkers to professional marathon runners. At its core, Strava does something very useful: it uses your phone's GPS to record exactly where you go, how far you travel, how long it takes, and how your pace changes throughout the activity. When you finish, you get a detailed map of your route, your stats, and a personal record if you beat your previous best.
@@ -771,7 +771,7 @@ Strava's free tier includes unlimited activity recording, route mapping, and per
     category: `health-tech`,
     tags: [`7 minute workout`, `HIIT`, `exercise`, `no equipment`, `fitness`, `quick workout`],
     readTime: `5 min`,
-    thumbnailEmoji: `⏱️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Seven minutes might not sound like much, but the 7-Minute Workout is a real, research-backed exercise program that delivers meaningful health benefits. It was published in the American College of Sports Medicine's Health & Fitness Journal and designed by exercise scientists to provide both aerobic and strength benefits in a single short session.
@@ -815,7 +815,7 @@ Because the workout is short and requires no equipment, the biggest barrier to s
     category: `health-tech`,
     tags: [`senior fitness`, `older adults`, `beginners`, `low impact`, `exercise apps`, `health`],
     readTime: `7 min`,
-    thumbnailEmoji: `🧘`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Getting more physically active later in life is one of the most impactful things you can do for your long-term health. Regular movement has been linked to lower rates of heart disease, better balance and fall prevention, reduced joint pain, improved sleep, and better mental health. But starting a new exercise routine can feel intimidating — especially with an overwhelming number of apps that seem designed for young athletes rather than everyday people.
@@ -865,7 +865,7 @@ A few principles to keep in mind: any exercise is better than none, pain is a si
     category: `health-tech`,
     tags: [`sworkit`, `fitness`, `workout`, `no equipment`, `home exercise`, `beginners`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏃`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `One of the most common barriers to exercising is feeling like you need to commit to a long, intense session or it doesn't count. Sworkit was built around the opposite idea: any amount of movement is valuable, and a workout should fit your life rather than the other way around.

@@ -8,7 +8,7 @@ export const guidesBatch91: Guide[] = [
     category: `smart-home`,
     tags: [`SimpliSafe`, `home security`, `DIY`, `alarm system`, `monitoring`],
     readTime: `8 min`,
-    thumbnailEmoji: `🏠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `SimpliSafe is a home security system you set up yourself — no tools, no drilling, and no technician visit needed. Everything sticks to your walls and doors with adhesive strips that peel off cleanly when you move. You purchase the hardware once, and you can choose whether or not to pay for professional monitoring. If you skip monitoring, the alarm will still sound loudly if a sensor is triggered — you just handle calling for help yourself. If you add 24/7 professional monitoring, a real person at SimpliSafe's monitoring center will contact you and, if needed, dispatch police or fire services.
@@ -54,7 +54,7 @@ Setting up SimpliSafe does not require any special technical knowledge. You plac
     category: `smart-home`,
     tags: [`Ring`, `alarm system`, `home security`, `motion sensor`, `monitoring`],
     readTime: `8 min`,
-    thumbnailEmoji: `🔔`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Ring Alarm is Amazon's home security system that you set up yourself without a professional installer. It uses Wi-Fi (and a cellular backup) to keep your home monitored, and you control everything through the free Ring app on your phone or tablet. Ring sells systems in different sizes depending on how many sensors you need — a small apartment might use a 5-piece kit, while a larger house might need an 8-piece kit or more.
@@ -97,7 +97,7 @@ Setting up Ring Alarm is designed to take about 30 minutes. You do not need any 
     category: `smart-home`,
     tags: [`Arlo`, `security camera`, `wireless`, `outdoor camera`, `motion alerts`],
     readTime: `7 min`,
-    thumbnailEmoji: `📷`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Arlo makes wireless security cameras that run on rechargeable batteries — no power cable needed, which means you can place them almost anywhere: above the garage door, pointing at the front porch, or covering a side gate. The cameras are designed to handle rain, snow, and heat, so outdoor use is fully supported. Arlo cameras record video when motion is detected and send an alert to your phone within seconds.
@@ -144,7 +144,7 @@ This guide covers setting up your first Arlo camera, choosing the best placement
     category: `smart-home`,
     tags: [`Blink`, `security camera`, `Amazon`, `wire-free`, `home monitoring`],
     readTime: `6 min`,
-    thumbnailEmoji: `👁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Blink is Amazon's budget-friendly line of wireless security cameras. They run on two AA lithium batteries that can last up to two years, so there are no cables to run and no outlet required near your camera. Blink makes cameras for both indoor and outdoor use — the outdoor models are weather-resistant and can handle rain and temperature changes.
@@ -187,7 +187,7 @@ Blink cameras are a great starting point for home monitoring because they are af
     category: `smart-home`,
     tags: [`Eufy`, `security camera`, `no subscription`, `local storage`, `home security`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔐`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Eufy, made by Anker, stands out from most home security cameras because it does not require a monthly subscription to store your footage. Instead of sending video to a cloud server owned by the company, Eufy stores recordings locally on the HomeBase — a device that sits in your home and holds up to 16GB of storage internally. That is enough space for weeks of motion-triggered clips. Your footage stays in your home, not on someone else's server.
@@ -229,7 +229,7 @@ Eufy also supports end-to-end encryption — meaning the video is scrambled befo
     category: `essential-skills`,
     tags: [`Uber`, `rideshare`, `transportation`, `seniors`, `first ride`],
     readTime: `8 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Uber is a service that connects you with nearby drivers who use their own cars to give rides, similar to calling a taxi — but you do everything through a smartphone app instead of a phone call. You tap a few buttons, a driver comes to your exact location, and you are dropped off at your destination. The fare is charged automatically to your credit card or PayPal account, so there is no need to carry cash or fumble with payment at the end of the ride.
@@ -276,7 +276,7 @@ This guide is written for someone who has never used Uber before. It covers crea
     category: `essential-skills`,
     tags: [`Lyft`, `rideshare`, `transportation`, `beginners`, `seniors`],
     readTime: `7 min`,
-    thumbnailEmoji: `🚙`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Lyft is a rideshare service very similar to Uber — you use a smartphone app to request a ride, a nearby driver picks you up in their own car, and you are charged automatically through the app. Both services are available in most US cities and work around the clock. Many people have accounts with both apps and use whichever shows a shorter wait time or lower price on a given day.
@@ -320,7 +320,7 @@ This guide covers creating your Lyft account, requesting a ride, the key safety 
     category: `essential-skills`,
     tags: [`GoGoGrandparent`, `senior transportation`, `rideshare`, `phone call`, `no smartphone`],
     readTime: `7 min`,
-    thumbnailEmoji: `📞`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `GoGoGrandparent is a service that acts as a middleman between you and rideshare companies like Uber and Lyft. Instead of needing a smartphone and app, you call a regular phone number, follow simple voice menu prompts, and GoGoGrandparent books the ride for you. A human dispatcher is also available if you have questions or run into trouble.
@@ -364,7 +364,7 @@ GoGoGrandparent charges a service fee on top of the regular Uber or Lyft fare, t
     category: `financial-tech`,
     tags: [`Swappa`, `used phone`, `sell phone`, `buy phone`, `resale`],
     readTime: `6 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Swappa is an online marketplace specifically for buying and selling used technology — primarily smartphones, tablets, laptops, and gaming devices. Unlike general marketplaces such as Craigslist or Facebook Marketplace, Swappa verifies every listing before it goes live. Banned or reported stolen phones are blocked using their IMEI number (a unique identification code built into every phone, similar to a VIN on a car). Listings with cracked screens, water damage, or active payment plans are also rejected.
@@ -406,7 +406,7 @@ The site is straightforward to use. You can browse without creating an account, 
     category: `financial-tech`,
     tags: [`Back Market`, `refurbished`, `certified refurbished`, `used electronics`, `save money`],
     readTime: `6 min`,
-    thumbnailEmoji: `♻️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Back Market is an online store where you can buy smartphones, laptops, tablets, and other electronics that have been professionally refurbished. "Refurbished" means a used device was inspected, repaired, cleaned, and tested by a professional technician to make sure it works properly. This is different from buying a used phone on Craigslist, where there is no inspection or guarantee.
@@ -450,7 +450,7 @@ This guide explains Back Market's condition grades, how to browse for a good dea
     category: `financial-tech`,
     tags: [`Decluttr`, `sell electronics`, `old phone`, `CDs`, `DVDs`, `trade-in`],
     readTime: `5 min`,
-    thumbnailEmoji: `📦`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Decluttr is a website and app that buys used electronics and media items directly from you — you do not have to find a buyer or negotiate a price. You scan an item's barcode or enter a device's model number, and Decluttr tells you immediately what they will pay. If you accept the price, you ship your items to them for free using a prepaid shipping label they provide. Once they receive and verify the items, they pay you the next business day by PayPal, direct bank deposit, or check.
@@ -488,7 +488,7 @@ This guide walks through the entire Decluttr process from getting a quote to rec
     category: `financial-tech`,
     tags: [`StockX`, `sneakers`, `collectibles`, `resale`, `authentication`],
     readTime: `7 min`,
-    thumbnailEmoji: `👟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `StockX is an online marketplace for buying and selling high-demand physical goods — primarily sneakers, streetwear, trading cards, electronics, and collectibles. It operates differently from most resale marketplaces. Instead of browsing individual seller listings with photos and descriptions, StockX works more like a stock market: sellers list an "Ask" price (the minimum they will accept), buyers place a "Bid" (the maximum they will pay), and a sale happens automatically when a bid and ask price match. There is also a "Buy Now" option where you purchase at the current lowest ask price immediately.
@@ -530,7 +530,7 @@ StockX charges fees to both buyers and sellers. Buyers pay a "transaction fee" (
     category: `government-civic`,
     tags: [`national parks`, `senior pass`, `America the Beautiful`, `free parks`, `government benefit`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏔️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The America the Beautiful National Parks and Federal Recreational Lands Pass is a government program that gives US citizens and permanent residents access to more than 2,000 federal recreation sites across the country. These include national parks, national forests, Bureau of Land Management areas, national wildlife refuges, and Army Corps of Engineers sites.
@@ -570,7 +570,7 @@ This guide explains who qualifies, where to purchase the pass, and how to use it
     category: `government-civic`,
     tags: [`Recreation.gov`, `camping`, `national parks`, `campsite reservation`, `outdoors`],
     readTime: `7 min`,
-    thumbnailEmoji: `⛺`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Recreation.gov is the official website operated by the US government for reserving campsites, cabins, day-use areas, and permits at federal recreation sites — including national parks, national forests, and Bureau of Land Management areas. If you want to camp at Yosemite Valley, the Grand Canyon's South Rim, or Acadia National Park, this is where those reservations are made. There is no other official way to book these sites.
@@ -614,7 +614,7 @@ This guide walks through creating an account, searching for campgrounds, reading
     category: `app-guides`,
     tags: [`NPS app`, `national parks`, `offline maps`, `hiking`, `ranger programs`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The National Park Service (NPS) app is the official free app from the US government for visiting national parks. It is available for both iPhone and Android phones and is packed with information that genuinely helps during a park visit — not just park brochure text, but detailed trail maps, ranger program schedules, wildlife information, and accessibility details.
@@ -656,7 +656,7 @@ The app is also a good resource for planning. Before you go, browse ranger-led p
     category: `app-guides`,
     tags: [`geocaching`, `outdoors`, `treasure hunt`, `GPS`, `hiking`],
     readTime: `7 min`,
-    thumbnailEmoji: `🗺️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Geocaching is a real-world outdoor activity where participants use a GPS device or smartphone to find hidden containers — called caches — placed by other participants all over the world. There are more than 3 million active caches hidden in parks, forests, city streets, mountain trails, and practically every other environment imaginable. There are caches on all seven continents, including Antarctica.
@@ -701,7 +701,7 @@ The activity is completely free to start. There is a premium membership ($30/yea
     category: `smart-home`,
     tags: [`Schlage`, `smart lock`, `keypad lock`, `home security`, `no hub required`],
     readTime: `9 min`,
-    thumbnailEmoji: `🔑`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `The Schlage Encode is a smart deadbolt lock — the kind of lock that slides into the door frame to secure your door — with a built-in keypad and Wi-Fi connection. Unlike many smart locks that require a separate hub device, the Encode connects directly to your home Wi-Fi network. This means you can lock and unlock your door from your phone anywhere in the world, create and delete access codes for family members or guests, and receive notifications when the door is locked or unlocked.
@@ -747,7 +747,7 @@ The Schlage Home app is where you manage access codes, view entry logs (a histor
     category: `smart-home`,
     tags: [`Kasa`, `TP-Link`, `smart bulbs`, `no hub`, `voice control`],
     readTime: `6 min`,
-    thumbnailEmoji: `💡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `TP-Link Kasa makes some of the most popular smart light bulbs available in the US, and one big reason is that they do not require a separate hub device. Many competing smart bulbs — including some Philips Hue products — need you to purchase and plug in a central hub before the bulbs work. Kasa bulbs connect directly to your existing home Wi-Fi network, which means you screw in the bulb, download a free app, and you are ready to go.
@@ -791,7 +791,7 @@ This guide covers the full setup from screwing in the bulb to setting a daily sc
     category: `smart-home`,
     tags: [`Lutron Caséta`, `smart dimmer`, `light switch`, `smart home`, `Pico remote`],
     readTime: `9 min`,
-    thumbnailEmoji: `🔆`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Lutron Caséta is widely considered the most reliable smart dimmer switch system available for home use. While smart bulbs like Kasa or Philips Hue replace the bulb itself, Caséta replaces the light switch on the wall. This approach has a significant advantage: any bulb in the fixture — LED, halogen, or fluorescent — works correctly, and you never have to worry about someone turning the switch off and disconnecting the smart bulb from power.
@@ -839,7 +839,7 @@ Installing a Caséta dimmer involves working with your home's electrical wiring 
     category: `smart-home`,
     tags: [`Govee`, `LED strip lights`, `smart lights`, `color lights`, `ambient lighting`],
     readTime: `6 min`,
-    thumbnailEmoji: `🌈`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Govee is a popular brand of affordable smart lighting — LED strip lights, smart bulbs, table lamps, and outdoor string lights — sold primarily through Amazon. Govee lights are known for being inexpensive relative to competitors, easy to set up, and surprisingly full-featured. If you want colorful accent lighting behind your television, under your kitchen cabinets, or along the back of a desk, Govee LED strips are one of the most common choices.

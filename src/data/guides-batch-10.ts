@@ -10,7 +10,7 @@ export const guidesBatch10: Guide[] = [
     category: 'app-guides',
     tags: ['Google Flights', 'travel', 'airfare', 'booking'],
     readTime: '6 min',
-    thumbnailEmoji: '✈️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google Flights is a free website that shows prices for the same trip across many airlines on one page. It also lets you watch a route over weeks or months so you can see when prices are lowest.
@@ -31,7 +31,7 @@ You do not book through Google itself — once you find a good price, Google sen
     category: 'app-guides',
     tags: ['Expedia', 'travel', 'hotels', 'booking'],
     readTime: '6 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Expedia is a travel website that sells flights, hotels, rental cars, and cruises from many companies on one site. Bundling a flight and hotel together often costs less than booking them separately.
@@ -52,7 +52,7 @@ You earn "One Key" points on most bookings that can be used later for discounts 
     category: 'app-guides',
     tags: ['Kayak', 'travel', 'flights', 'comparison'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Kayak is a travel search site that checks hundreds of airlines and travel agencies at the same time and shows you the lowest prices. Like Google Flights, it does not sell tickets directly — it sends you to the site that has the best deal.
@@ -73,7 +73,7 @@ Kayak also has handy extras like a price forecast that tells you whether to book
     category: 'app-guides',
     tags: ['Turo', 'car rental', 'travel', 'sharing'],
     readTime: '7 min',
-    thumbnailEmoji: '🚘',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Turo is like Airbnb for cars — regular people list their cars for rent and you book one for a day or a week. Prices are often lower than traditional rental companies and you can pick unusual vehicles like pickup trucks, convertibles, or electric cars.
@@ -94,7 +94,7 @@ You pick up the car from the owner (or at some airports) and drop it back when y
     category: 'app-guides',
     tags: ['Rome2Rio', 'travel', 'trains', 'planning'],
     readTime: '5 min',
-    thumbnailEmoji: '🗺️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Rome2Rio is a free site that shows every way to travel between two places — flights, trains, buses, ferries, and driving — side by side with travel time and rough cost. It is especially helpful in Europe or Asia where trains and ferries are common.
@@ -115,7 +115,7 @@ It will not book your tickets, but it links out to the airline, train company, o
     category: 'app-guides',
     tags: ['Yelp', 'restaurants', 'reviews', 'local'],
     readTime: '5 min',
-    thumbnailEmoji: '🍽️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Yelp is a free app and website that helps you find restaurants, shops, and services nearby. Other customers post reviews, star ratings, and photos so you know what to expect before you go.
@@ -137,7 +137,7 @@ You can also use Yelp to make a reservation, check open hours, or see a menu wit
     category: 'financial-tech',
     tags: ['insurance', 'auto', 'claim', 'accident'],
     readTime: '7 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most car insurance companies now let you file a claim entirely online or through their app, usually within minutes of the accident. You upload photos of the damage, answer a few questions, and a claim adjuster is assigned to your case.
@@ -158,7 +158,7 @@ Filing online often moves faster than phoning because you can attach photos and 
     category: 'financial-tech',
     tags: ['insurance', 'home', 'claim', 'damage'],
     readTime: '7 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `If a storm damages your roof, a pipe bursts, or something is stolen, you can file a home insurance claim online in most cases. You will need photos of the damage, a list of what is broken or missing, and your policy number.
@@ -179,7 +179,7 @@ Act quickly — most insurers expect a claim within 30 to 60 days of the damage,
     category: 'health-tech',
     tags: ['insurance', 'health', 'claim', 'reimbursement'],
     readTime: '7 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most of the time, your doctor's office bills your health insurance directly and you never see the paperwork. But if you pay out of pocket for an out-of-network visit, a travel illness, or a new prescription, you can submit a claim to get some money back.
@@ -200,7 +200,7 @@ Each insurance company has its own claim form — the process is similar everywh
     category: 'financial-tech',
     tags: ['insurance', 'app', 'GEICO', 'Progressive', 'State Farm'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Every major car insurance company (GEICO, Progressive, State Farm, Allstate, Liberty Mutual, USAA, and others) has a free app that does most of what the website does. You can pay your premium, show an officer digital proof of insurance, and request a tow.
@@ -221,7 +221,7 @@ Setting up the app once saves a lot of time over the years you will be insured.`
     category: 'financial-tech',
     tags: ['life insurance', 'quotes', 'comparison', 'finance'],
     readTime: '7 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Life insurance quotes online show you how much you would pay per month for a term life policy (usually 10 to 30 years of coverage). Prices vary a lot between companies, so comparing 3 or 4 is worth the time.
@@ -229,7 +229,7 @@ Setting up the app once saves a lot of time over the years you will be insured.`
 Stick to well-known comparison sites and your state's insurance department website. Avoid sites that make you give a phone number before showing any prices — those sell your info to agents who will call for weeks.`,
     steps: [
       { title: 'Decide how much coverage you need', content: 'A common rule is 10 times your yearly income, or enough to pay off your mortgage plus raise any children. Term life (not whole life) is the cheapest option for most people.' },
-      { title: 'Use a trusted comparison site', content: 'Try Policygenius, NerdWallet, or Term4Sale. These show prices from multiple insurers side by side and do not require your phone number to view a quote.' },
+      { title: 'Use a trusted comparison site', content: 'Try Policygenius, NerdWallet, or Term4Sale. These show prices from multiple insurers side by side and do not require your phone number just to see a quote.' },
       { title: 'Answer honestly about your health', content: 'You will answer questions about your age, weight, smoking, and major health conditions. Lying to get a lower quote can void the policy later — insurers check medical records before they pay claims.' },
       { title: 'Compare at least 3 companies', content: `Note the monthly premium, the term length, and the death benefit. Look at the insurer's financial rating (A.M. Best grade of A or better is safe).` },
       { title: `Apply directly on the insurer's site`, content: `Once you pick a company, click through to the actual insurer's website to apply. Most will require a free medical exam — a nurse comes to your home to take a blood sample and measure your blood pressure.` },
@@ -243,7 +243,7 @@ Stick to well-known comparison sites and your state's insurance department websi
     category: 'financial-tech',
     tags: ['TurboTax', 'taxes', 'IRS', 'filing'],
     readTime: '9 min',
-    thumbnailEmoji: '🧾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `TurboTax is the most popular tax software in the United States. It asks plain-English questions like "Did you have a job?" and fills in the IRS forms based on your answers.
@@ -264,7 +264,7 @@ A simple W-2-only return is free with TurboTax Free Edition. More complex return
     category: 'financial-tech',
     tags: ['H&R Block', 'taxes', 'IRS', 'filing'],
     readTime: '9 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `H&R Block Online is an alternative to TurboTax with a similar step-by-step interview format. Its prices are usually a little cheaper, and their paid tiers include free chat help from a real tax professional.
@@ -290,7 +290,7 @@ H&R Block also lets you drop off your documents at a local office if you prefer 
     difficulty: 'Beginner',
     body: `FreeTaxUSA is a lesser-known tax service that is free for federal returns no matter how complex your tax situation is, including self-employment, rental property, and investments. State returns cost about $15.
 
-The site looks plainer than TurboTax or H&R Block, but the tax math is equally accurate and it is an IRS-authorized e-file provider.`,
+The site looks plainer than TurboTax or H&R Block, but the tax math is just as accurate and it is an IRS-authorized e-file provider.`,
     steps: [
       { title: 'Create a free account', content: 'Go to freetaxusa.com and click "Sign In" then "Create a new account." Use an email you check and set a strong password.' },
       { title: 'Enter your personal info', content: 'Type your name, Social Security number, address, and filing status (single, married filing jointly, head of household). If you have dependents, add their info too.' },
@@ -306,7 +306,7 @@ The site looks plainer than TurboTax or H&R Block, but the tax math is equally a
     category: 'government-civic',
     tags: ['IRS', 'transcript', 'taxes', 'government'],
     readTime: '6 min',
-    thumbnailEmoji: '📄',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `An IRS tax transcript is an official summary of your past tax return. Lenders often ask for one when you apply for a mortgage, and the FAFSA financial aid form asks for one too.
@@ -328,7 +328,7 @@ You can get a transcript free at IRS.gov in about 15 minutes — no need to requ
     category: 'smart-home',
     tags: ['AirTag', 'pet', 'tracker', 'Apple'],
     readTime: '7 min',
-    thumbnailEmoji: '🐕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `An Apple AirTag is a small button-shaped tracker that pairs with your iPhone. Many pet owners clip one to their dog or cat's collar so they can find them if they wander off, using the Find My app on any iPhone.
@@ -349,7 +349,7 @@ AirTags are not designed for pets — they do not have real-time GPS like a dedi
     category: 'smart-home',
     tags: ['Fi', 'GPS', 'dog', 'collar'],
     readTime: '7 min',
-    thumbnailEmoji: '🦮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Fi is a smart collar for dogs that uses GPS and cellular data to show their exact location at all times. Unlike an AirTag, Fi works even in rural areas because it does not depend on other phones being nearby.
@@ -370,7 +370,7 @@ The collar costs about $150 and needs a monthly plan (around $20) to get the cel
     category: 'app-guides',
     tags: ['Chewy', 'pet food', 'Autoship', 'subscription'],
     readTime: '5 min',
-    thumbnailEmoji: '🐾',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Chewy Autoship is a free program that automatically reorders your pet's food, litter, or medications on a schedule you pick. Boxes arrive every 2, 4, 6, 8, or 12 weeks — whatever matches how fast you use them.
@@ -391,7 +391,7 @@ You save 5% on every order (35% on your first one), you can skip or reschedule a
     category: 'app-guides',
     tags: ['Rover', 'pet sitter', 'dog walker', 'boarding'],
     readTime: '7 min',
-    thumbnailEmoji: '🐱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Rover is a website and app that connects pet owners with sitters, walkers, and boarding hosts in their area. You pick the type of care you need, message sitters, and book through the app — all payments are handled by Rover.
@@ -413,7 +413,7 @@ Every booking comes with the Rover Guarantee, which covers vet bills up to $25,0
     category: 'app-guides',
     tags: ['Libby', 'audiobooks', 'library', 'free'],
     readTime: '6 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Libby is a free app from your public library that lets you borrow audiobooks, e-books, and magazines using only your library card. Books return themselves automatically, so there are no late fees.
@@ -434,12 +434,12 @@ Most U.S. public libraries have Libby. If there is a waitlist for a popular titl
     category: 'app-guides',
     tags: ['Hoopla', 'library', 'free', 'streaming'],
     readTime: '6 min',
-    thumbnailEmoji: '📚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Hoopla is a free app available through many public libraries. Unlike Libby, there are no waitlists — you can borrow any title immediately, up to a monthly limit set by your library (often 5 to 10 items).
 
-It offers more than books: you can watch movies, TV shows, listen to music, and read comics.`,
+It has more than just books: you can watch movies, TV shows, listen to music, and read comics.`,
     steps: [
       { title: 'Check if your library offers Hoopla', content: `Go to hoopladigital.com and type your library's name. Not every library participates — if yours does not, your card will not work.` },
       { title: 'Download the app', content: 'Install Hoopla from the App Store, Play Store, Roku, Fire TV, or Apple TV. Hoopla works on almost every device you already own.' },
@@ -455,7 +455,7 @@ It offers more than books: you can watch movies, TV shows, listen to music, and 
     category: 'app-guides',
     tags: ['Kindle', 'e-books', 'Amazon', 'subscription'],
     readTime: '5 min',
-    thumbnailEmoji: '📘',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Kindle Unlimited is Amazon's $12/month all-you-can-read e-book service. You can borrow up to 20 books at a time from a catalog of around 4 million titles and switch them out as often as you like.
@@ -477,7 +477,7 @@ Not every book is included — bestsellers often are not. But there is plenty to
     category: 'social-media',
     tags: ['Nextdoor', 'neighborhood', 'community', 'local'],
     readTime: '6 min',
-    thumbnailEmoji: '🏘️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Nextdoor is a free social network that shows you posts only from people who live near you — usually within a few blocks. You can ask for contractor recommendations, share lost-pet alerts, or find out about a local yard sale.
@@ -498,7 +498,7 @@ Every user has to verify their address, so posts feel more local and trustworthy
     category: 'social-media',
     tags: ['Meetup', 'groups', 'hobbies', 'social'],
     readTime: '5 min',
-    thumbnailEmoji: '👥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Meetup is a website where people organize in-person gatherings around shared interests — hiking, knitting, tech, foreign languages, pickleball, book clubs, and hundreds of other topics.
@@ -519,7 +519,7 @@ It is free to join groups as a member. Some events are free, some charge a small
     category: 'social-media',
     tags: ['Bumble', 'BFF', 'friends', 'social'],
     readTime: '6 min',
-    thumbnailEmoji: '👋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Bumble BFF is a mode inside the free Bumble app that is for making friends, not dating. You swipe through other people looking for friends, match, and chat — same format as dating apps, but nobody is looking for romance.
@@ -540,7 +540,7 @@ It is especially popular after a move to a new city or after life changes like r
     category: 'social-media',
     tags: ['Facebook', 'groups', 'community', 'safety'],
     readTime: '6 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Facebook Groups are private or public communities about almost any topic — gardening, specific medical conditions, your high school reunion, or neighborhood buy-sell-trade groups.
@@ -562,7 +562,7 @@ Most groups are great for getting advice and meeting like-minded people, but sca
     category: 'phone-guides',
     tags: ['GrandPad', 'tablet', 'senior', 'simple'],
     readTime: '7 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `A GrandPad is a tablet built for older adults who want to video-call family, check email, and see photos without learning how a general-purpose iPad works. It has big buttons, no confusing menus, and a 4G cellular connection included so no Wi-Fi is needed.
@@ -579,11 +579,11 @@ Subscriptions cost around $80 a month. That covers the tablet, unlimited data, a
   {
     slug: 'use-papa-companionship-app',
     title: 'How to Use Papa for Senior Companionship',
-    excerpt: 'Book a "Papa Pal" for in-person help with errands, tech support, light housekeeping, or companionship.',
+    excerpt: 'Book a "Papa Pal" for in-person help with errands, tech support, light housekeeping, or just company.',
     category: 'health-tech',
     tags: ['Papa', 'senior', 'companionship', 'caregiver'],
     readTime: '7 min',
-    thumbnailEmoji: '🤝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Papa is a service that sends a friendly, vetted helper ("Papa Pal") to an older adult's home to run errands, do light chores, help with technology, or keep them company. Many Medicare Advantage plans cover Papa visits at no cost to the member.
@@ -592,7 +592,7 @@ The Papa Pals are not medical professionals — think of them more like a helpfu
     steps: [
       { title: 'Check if your plan covers Papa', content: 'Call the number on the back of your Medicare Advantage card and ask "Does my plan include Papa visits?" Many Humana, UnitedHealthcare, and Aetna plans do. If not, Papa also offers private-pay memberships.' },
       { title: 'Download the Papa app', content: 'Install Papa from the App Store or Play Store, or call Papa at 1-800-348-7951 to sign up by phone. Family members can also download the Care Circle app to schedule visits for a parent.' },
-      { title: 'Schedule your first visit', content: 'Tap "Request a visit." Pick a date, time, and what you need help with — grocery shopping, a ride to the doctor, changing light bulbs, or spending time together.' },
+      { title: 'Schedule your first visit', content: 'Tap "Request a visit." Pick a date, time, and what you need help with — grocery shopping, a ride to the doctor, changing light bulbs, or just having a conversation.' },
       { title: 'Meet your Papa Pal', content: 'Every Papa Pal has a background check and orientation. Before the visit, you see their photo and a short bio. At the door, they will show you their Papa ID before coming in.' },
       { title: 'Rate the visit afterward', content: 'The app asks you to rate the visit from 1 to 5 stars. If you like a particular Pal, request them again next time — Papa will try to match you.' },
     ],
@@ -604,7 +604,7 @@ The Papa Pals are not medical professionals — think of them more like a helpfu
     category: 'app-guides',
     tags: ['AARP', 'senior', 'discounts', 'news'],
     readTime: '5 min',
-    thumbnailEmoji: '🎯',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `The AARP Now app is the official app for AARP members. It shows your digital membership card, news stories written for people 50+, and a searchable list of the 1,000+ discounts AARP has negotiated with restaurants, hotels, and retailers.
@@ -625,7 +625,7 @@ Membership costs about $16 a year and often pays for itself with a few restauran
     category: 'financial-tech',
     tags: ['Silvur', 'retirement', 'planning', 'finance'],
     readTime: '7 min',
-    thumbnailEmoji: '🏖️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Silvur is a retirement planning app built for people close to or already in retirement. It connects to your Social Security, 401(k), IRA, and bank accounts to show a clear picture of your monthly retirement income and how long it will last.
@@ -647,7 +647,7 @@ Unlike general finance apps, Silvur focuses on retirement-specific questions lik
     category: 'smart-home',
     tags: ['Instant Pot', 'recipes', 'cooking', 'app'],
     readTime: '5 min',
-    thumbnailEmoji: '🍲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `The free Instant Pot app gives you thousands of tested recipes made for the Instant Pot pressure cooker, with cook times and pressure settings already calculated. Newer "Smart" Instant Pot models can connect over Bluetooth so the app starts the cooker for you.
@@ -668,7 +668,7 @@ Even if you have an older Instant Pot, the recipes alone are worth downloading t
     category: 'smart-home',
     tags: ['air fryer', 'Cosori', 'Ninja', 'smart appliance'],
     readTime: '5 min',
-    thumbnailEmoji: '🍟',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Most newer air fryers — especially Cosori, Ninja, and Instant Vortex — come with a free app that has hundreds of air fryer recipes with exact times and temperatures. Smart Wi-Fi models can also be started and stopped from your phone.
@@ -689,7 +689,7 @@ Even without Wi-Fi, the recipe library alone helps you figure out how long to co
     category: 'smart-home',
     tags: ['Keurig', 'Nespresso', 'coffee', 'smart home'],
     readTime: '5 min',
-    thumbnailEmoji: '☕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Some newer coffee makers — like the Keurig K-Supreme Plus Smart and several Nespresso machines — can connect to your Wi-Fi and let you start a brew from your phone. The apps also remember your favorite cup size and strength for each K-Cup brand.
@@ -711,7 +711,7 @@ This only works if the coffee maker has Wi-Fi built in. Older Keurigs do not con
     category: 'app-guides',
     tags: ['TaskRabbit', 'handyman', 'help', 'home'],
     readTime: '6 min',
-    thumbnailEmoji: '🔧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `TaskRabbit is an app that connects you with background-checked helpers (called Taskers) who come to your home for short jobs — assembling IKEA furniture, hanging pictures, light moving, basic cleaning, or running errands.
@@ -732,7 +732,7 @@ You see the Tasker's hourly rate and reviews before you book. Payments are handl
     category: 'app-guides',
     tags: ['Thumbtack', 'contractors', 'home services', 'pros'],
     readTime: '6 min',
-    thumbnailEmoji: '🔨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Thumbtack is a website and app that sends your project description to local pros who then send you quotes. It covers hundreds of home services — from roof repair to wedding photography.
@@ -753,7 +753,7 @@ Unlike TaskRabbit (which is for quick gigs), Thumbtack is for bigger jobs that t
     category: 'app-guides',
     tags: ['Home Depot', 'shopping', 'DIY', 'app'],
     readTime: '5 min',
-    thumbnailEmoji: '🌱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `The free Home Depot app is a handy tool whether you shop online or walk the aisles of a store. You can check whether an item is in stock at your local store, scan any product to read reviews, and find the exact aisle and bay where it is shelved.
@@ -775,7 +775,7 @@ The app also has project guides, how-to videos, and price-match alerts.`,
     category: 'app-guides',
     tags: ['Ancestry', 'genealogy', 'family tree', 'DNA'],
     readTime: '8 min',
-    thumbnailEmoji: '🌳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Ancestry.com is the largest family history site, with billions of historical records like census forms, ship passenger lists, and old newspapers. You can build a family tree going back hundreds of years.
@@ -796,12 +796,12 @@ Basic searching is free, but the detailed records and DNA matching require a sub
     category: 'app-guides',
     tags: ['FamilySearch', 'genealogy', 'free', 'records'],
     readTime: '7 min',
-    thumbnailEmoji: '📜',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `FamilySearch is the free alternative to Ancestry, run as a public service by the Church of Jesus Christ of Latter-day Saints. It has billions of indexed records and a shared public family tree where everyone collaborates on the same tree.
 
-Because the tree is shared, you can often find ancestors already researched by distant relatives — you connect your branch to theirs.`,
+Because the tree is shared, you can often find ancestors already researched by distant relatives — you just need to connect your branch to theirs.`,
     steps: [
       { title: 'Create a free account', content: 'Go to familysearch.org and click "Create a free account." Enter your name and email. You do not need to be a church member — the site is open to everyone.' },
       { title: 'Enter your parents and grandparents', content: 'Tap "Family Tree" then "Add Parent" or "Add Spouse" to start filling in what you know. Names, birth dates, places, and relationships are the key fields.' },
@@ -817,7 +817,7 @@ Because the tree is shared, you can often find ancestors already researched by d
     category: 'app-guides',
     tags: ['23andMe', 'DNA', 'ancestry', 'genetics'],
     readTime: '7 min',
-    thumbnailEmoji: '🧬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `23andMe is a DNA test you take at home by spitting into a tube and mailing it back. A few weeks later you get an ethnicity estimate (like "35% Irish, 40% Italian, 25% Scandinavian") and a list of DNA relatives who also took the test.

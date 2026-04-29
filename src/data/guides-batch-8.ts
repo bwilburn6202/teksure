@@ -10,7 +10,7 @@ export const guidesBatch8: Guide[] = [
     category: 'app-guides',
     tags: ['CarPlay', 'iPhone', 'car', 'Apple', 'driving'],
     readTime: '6 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Apple CarPlay connects your iPhone to your car's dashboard screen so you can see maps, play music, and answer calls using the car's controls instead of the phone itself. Most cars made after 2018 include CarPlay, and it usually works with a simple USB cable or wirelessly over Bluetooth.
@@ -31,7 +31,7 @@ Once set up, you can ask Siri to give directions, read text messages out loud, o
     category: 'app-guides',
     tags: ['Android Auto', 'Android', 'car', 'Google', 'driving'],
     readTime: '6 min',
-    thumbnailEmoji: '🚙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Android Auto is Google's version of CarPlay — it puts a simplified version of your Android phone on the car's screen so you can use Google Maps, play music, and hear messages read aloud while driving. Most new cars and many aftermarket radios support it.
@@ -52,7 +52,7 @@ After a one-time setup, Android Auto connects automatically whenever you start t
     category: 'app-guides',
     tags: ['EV', 'charging', 'electric car', 'PlugShare', 'ChargePoint'],
     readTime: '6 min',
-    thumbnailEmoji: '⚡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Finding a place to charge an electric vehicle (EV) has gotten much easier thanks to free apps that show every public charger in the country. The two most popular are PlugShare and ChargePoint, and both work on iPhone and Android.
@@ -73,7 +73,7 @@ These apps show which chargers are available right now, how fast they charge, wh
     category: 'how-to',
     tags: ['Bluetooth', 'car', 'hands-free', 'calling', 'phone'],
     readTime: '5 min',
-    thumbnailEmoji: '📻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Pairing your phone to your car over Bluetooth is a one-time setup that lets you take calls through the car's speakers without touching the phone. This is safer — and legal in most states — compared to holding a phone while driving.
@@ -95,7 +95,7 @@ Once paired, your phone will connect automatically every time you start the car.
     category: 'essential-skills',
     tags: ['Family Sharing', 'Apple', 'iCloud', 'subscriptions', 'family'],
     readTime: '7 min',
-    thumbnailEmoji: '👨‍👩‍👧',
+    thumbnailEmoji: '‍‍',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Apple Family Sharing lets up to six people share Apple subscriptions (iCloud, Apple Music, Apple TV+) and App Store purchases without paying multiple times. It also includes location sharing and parental controls for kids.
@@ -116,7 +116,7 @@ One person acts as the "family organizer" and invites everyone else. Each person
     category: 'essential-skills',
     tags: ['Family Link', 'Google', 'Android', 'parental controls', 'kids'],
     readTime: '7 min',
-    thumbnailEmoji: '👪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Google Family Link is a free app that lets parents manage a child's Android phone or Chromebook from their own phone. You can approve every app they download, set daily screen time limits, lock the device at bedtime, and see where the device is on a map.
@@ -137,7 +137,7 @@ Family Link works for kids under 13 (who need parent permission for a Google acc
     category: 'how-to',
     tags: ['remote desktop', 'Chrome', 'Google', 'tech support', 'family'],
     readTime: '7 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Chrome Remote Desktop is a free Google tool that lets you see and control another computer over the internet. It is perfect for helping a parent or grandparent fix a problem — you can click around on their screen as if you were sitting in front of it.
@@ -158,7 +158,7 @@ Both computers need the Chrome browser and a Google account. The person asking f
     category: 'tips-tricks',
     tags: ['seniors', 'accessibility', 'phone', 'easy mode', 'elderly'],
     readTime: '6 min',
-    thumbnailEmoji: '👵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Smartphones are useful for older adults, but factory settings often favor small text and fast motion. A few minutes of adjustments — bigger text, louder sounds, a simpler home screen — can make a phone much more comfortable to use every day.
@@ -201,7 +201,7 @@ Setting it up takes about five minutes and could save your life. The information
     category: 'tips-tricks',
     tags: ['VoiceOver', 'iPhone', 'accessibility', 'screen reader', 'blind'],
     readTime: '7 min',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `VoiceOver is Apple's built-in screen reader for iPhone and iPad. When it is on, the phone speaks whatever your finger touches — button names, text messages, web pages — so you can use the phone without looking at the screen.
@@ -222,7 +222,7 @@ VoiceOver changes how you interact with the phone: single-tap to hear an item, d
     category: 'tips-tricks',
     tags: ['TalkBack', 'Android', 'accessibility', 'screen reader', 'blind'],
     readTime: '7 min',
-    thumbnailEmoji: '📢',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `TalkBack is Google's screen reader built into every Android phone. When turned on, it reads aloud whatever you touch and changes how gestures work — single-tap to hear, double-tap to select, swipe with two fingers to scroll.
@@ -243,7 +243,7 @@ TalkBack takes time to learn, but it makes Android fully usable without sight. M
     category: 'health-tech',
     tags: ['hearing aids', 'iPhone', 'Bluetooth', 'MFi', 'accessibility'],
     readTime: '6 min',
-    thumbnailEmoji: '👂',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Made for iPhone (MFi) hearing aids connect directly to an iPhone over Bluetooth, so phone calls, music, and even GPS directions play right in your ears. Most major brands — including Phonak, Oticon, ReSound, and Starkey — now make MFi models.
@@ -264,7 +264,7 @@ Once paired, you can also change hearing-aid settings from the phone's Accessibi
     category: 'tips-tricks',
     tags: ['Live Captions', 'accessibility', 'captions', 'hearing', 'subtitles'],
     readTime: '5 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Live Captions turn spoken words into text on your screen in real time — no internet needed. It works on any audio: YouTube videos, FaceTime calls, podcasts, or even a video someone sends you.
@@ -285,7 +285,7 @@ Both iPhone (iOS 16 and newer) and Android (version 10 and newer) support Live C
     category: 'mac-guides',
     tags: ['Voice Control', 'Mac', 'accessibility', 'dictation', 'hands-free'],
     readTime: '7 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Voice Control is a built-in Mac feature that lets you control the whole computer by talking. You can open apps, click buttons, scroll, and dictate full documents without touching the keyboard or mouse.
@@ -306,7 +306,7 @@ It works entirely on the Mac — Apple does not record your voice or send it any
     category: 'windows-guides',
     tags: ['Magnifier', 'Windows', 'accessibility', 'zoom', 'vision'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Magnifier is a free, built-in Windows tool that enlarges any part of the screen — great for small text on web pages, tiny menu buttons, or photos you want to see in detail. It works in Windows 10 and Windows 11.
@@ -328,7 +328,7 @@ You can set the magnification level, pick how it follows your mouse, and even ha
     category: 'safety-guides',
     tags: ['Screen Time', 'iPhone', 'parental controls', 'kids', 'Apple'],
     readTime: '7 min',
-    thumbnailEmoji: '⏰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Screen Time is Apple's free parental-control system. On a family-shared iPhone, you can see how much time your child spends in each app, block apps during homework or bedtime, and stop them from buying apps without your permission.
@@ -349,7 +349,7 @@ You set it up through Family Sharing — the parent sends a request from their o
     category: 'safety-guides',
     tags: ['parental controls', 'Android', 'Family Link', 'Google', 'kids'],
     readTime: '6 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Android has two layers of parental control: Google Family Link (covers the whole device) and Play Store restrictions (covers what can be downloaded). Together they let you approve apps, set screen time, filter content, and lock the device at night.
@@ -370,7 +370,7 @@ Family Link is free and works for kids under 13 automatically. For teenagers, bo
     category: 'app-guides',
     tags: ['YouTube Kids', 'kids', 'video', 'parental controls', 'YouTube'],
     readTime: '6 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `YouTube Kids is a separate free app from Google, designed for children ages 12 and under. Videos are filtered for kid-friendly content, there are no comments, and parents can set time limits and block specific channels.
@@ -391,7 +391,7 @@ You control everything from a parent profile that requires your Google account p
     category: 'safety-guides',
     tags: ['website blocking', 'parental controls', 'Windows', 'Mac', 'safety'],
     readTime: '7 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Blocking websites on a home computer is a good way to keep kids safer online or to stop yourself from losing hours on distracting sites. Both Windows and Mac have built-in tools, and for Chromebooks you can use a free browser extension.
@@ -413,7 +413,7 @@ The method depends on how strict you need to be. Built-in Mac Screen Time and Wi
     category: 'smart-home',
     tags: ['smart fridge', 'Samsung', 'LG', 'smart home', 'appliances'],
     readTime: '6 min',
-    thumbnailEmoji: '🧊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Smart refrigerators connect to your home Wi-Fi so you can check the inside temperature, get a warning if someone left the door open, and create shopping lists from your phone. Some models even have touchscreens and cameras inside.
@@ -434,7 +434,7 @@ Setup happens through the brand's phone app — SmartThings for Samsung, LG Thin
     category: 'smart-home',
     tags: ['smart washer', 'smart dryer', 'laundry', 'smart home', 'appliances'],
     readTime: '6 min',
-    thumbnailEmoji: '🧺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Smart washers and dryers connect to Wi-Fi and talk to a phone app so you know when the load is done without walking to the laundry room. You can also start or pause a cycle from your phone, download specialty cycles, and get alerts if something goes wrong.
@@ -455,7 +455,7 @@ Setup is similar to other smart appliances: download the brand's app (SmartThing
     category: 'smart-home',
     tags: ['smart dishwasher', 'appliances', 'smart home', 'Wi-Fi', 'kitchen'],
     readTime: '5 min',
-    thumbnailEmoji: '🍽️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Smart dishwashers connect to Wi-Fi so you can track the cycle from your phone, get alerts when you need more rinse aid or salt, and download extra wash programs like Baby Bottles or Pots & Pans.
@@ -477,7 +477,7 @@ Most brands use the same app as their washers and fridges — SmartThings for Sa
     category: 'health-tech',
     tags: ['Apple Watch', 'setup', 'wearable', 'health', 'Apple'],
     readTime: '8 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Apple Watch is a smart watch that connects to your iPhone over Bluetooth. It shows notifications, tracks steps and heart rate, and can make emergency calls. You need an iPhone to set it up — Apple Watch does not work with Android.
@@ -498,7 +498,7 @@ Setup takes about 20 minutes the first time. You will sign in with your Apple ID
     category: 'health-tech',
     tags: ['Fitbit', 'wearable', 'fitness', 'health', 'setup'],
     readTime: '6 min',
-    thumbnailEmoji: '💪',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Fitbit is a fitness tracker owned by Google that counts steps, tracks sleep, measures heart rate, and reminds you to move. Models range from simple wristbands to full smart watches, but they all set up the same way: with the free Fitbit app on iPhone or Android.
@@ -519,7 +519,7 @@ Setup takes under 15 minutes. You create a Google account (Fitbit accounts moved
     category: 'health-tech',
     tags: ['Galaxy Watch', 'Samsung', 'Android', 'wearable', 'setup'],
     readTime: '7 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Samsung Galaxy Watch is a smart watch that works best with Android phones — especially Samsung Galaxy phones. It tracks steps, sleep, heart rate, and blood oxygen, and can even take an EKG reading. Newer models (Watch 4 and later) run Google's Wear OS.
@@ -562,7 +562,7 @@ For older adults or anyone living alone, this feature can be life-saving. Setup 
     category: 'tips-tricks',
     tags: ['Gmail', 'filters', 'email', 'organization', 'productivity'],
     readTime: '6 min',
-    thumbnailEmoji: '⚙️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Gmail filters (sometimes called rules) are instructions Gmail follows automatically when a new email arrives. You can tell Gmail to skip the inbox for newsletters, label all bank messages as "Finance," or delete spammy senders without ever seeing them.
@@ -573,7 +573,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
       { title: 'Click the search filter icon', content: 'In the search bar at the top, click the sliders icon on the right side. A search form appears where you can set criteria.' },
       { title: 'Set the matching criteria', content: 'Fill in any fields you want: From (for a specific sender), Subject (for keywords in the subject), Has the words (anywhere in the email). You can use multiple fields together.' },
       { title: 'Click Create filter', content: 'Below the form, click Create filter. On the next screen, pick what Gmail should do: Skip the Inbox, Apply a label, Mark as read, Star, Delete, or Forward.' },
-      { title: 'Apply to existing messages', content: 'Check the box that says Also apply filter to matching conversations. This runs the filter backwards on every email you have ever received that matches, not only new ones.' },
+      { title: 'Apply to existing messages', content: 'Check the box that says Also apply filter to matching conversations. This runs the filter backwards on every email you have ever received that matches, not just new ones.' },
     ],
   },
   {
@@ -583,7 +583,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
     category: 'essential-skills',
     tags: ['email', 'organization', 'folders', 'labels', 'productivity'],
     readTime: '6 min',
-    thumbnailEmoji: '📁',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels; Outlook and Apple Mail call them folders — they work the same way.
@@ -604,7 +604,7 @@ A simple system works best: one folder for each big category (Bills, Family, Wor
     category: 'essential-skills',
     tags: ['email signature', 'Gmail', 'Outlook', 'email', 'professional'],
     readTime: '5 min',
-    thumbnailEmoji: '✍️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `An email signature is text that appears at the bottom of every email you send. Most people include their name, phone number, and maybe a website or a title. Once set up, it is added automatically to every new email and reply.
@@ -626,7 +626,7 @@ Each email app has its own signature setting, but the idea is the same: type it 
     category: 'how-to',
     tags: ['dual monitors', 'setup', 'desk', 'productivity', 'Windows'],
     readTime: '6 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Two monitors give you roughly twice the workspace. You can keep email open on one screen and a document on the other, or have a video call on one while taking notes on the other. Most people who try dual monitors never go back.
@@ -647,7 +647,7 @@ You need a second monitor and a cable to connect it (HDMI, DisplayPort, or USB-C
     category: 'tips-tricks',
     tags: ['home office', 'ergonomics', 'posture', 'health', 'setup'],
     readTime: '6 min',
-    thumbnailEmoji: '💼',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `A healthy home office starts with where your monitor, chair, and keyboard sit. Small changes — raising the monitor, lowering the chair — can stop neck and wrist pain before it starts.
@@ -668,7 +668,7 @@ Ergonomics is not complicated. The rule is: eyes level with the top of the scree
     category: 'tips-tricks',
     tags: ['eye strain', 'health', 'screens', 'blue light', 'productivity'],
     readTime: '5 min',
-    thumbnailEmoji: '👁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Staring at a screen all day causes what doctors call digital eye strain — dry eyes, headaches, neck pain, and blurry vision. It is not permanent damage, but it makes you miserable.
@@ -689,7 +689,7 @@ The fixes are small: brighter or dimmer screens to match the room, bigger text, 
     category: 'tips-tricks',
     tags: ['video calls', 'Zoom', 'lighting', 'audio', 'home office'],
     readTime: '6 min',
-    thumbnailEmoji: '💡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `On a video call, people notice bad audio and bad lighting far more than a fuzzy camera. Cheap fixes — a desk lamp, earbuds with a mic, or an external USB microphone — make you look and sound much better for under $50.
@@ -711,7 +711,7 @@ The biggest single upgrade is lighting that comes from in front of you, not behi
     category: 'tips-tricks',
     tags: ['tab groups', 'Chrome', 'browser', 'productivity', 'organization'],
     readTime: '5 min',
-    thumbnailEmoji: '📑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Tab groups let you bundle related browser tabs together — like all your work tabs, all your shopping tabs, or all your research tabs — and color-code them. You can collapse a group to hide those tabs, then expand it when you need them again.
@@ -719,8 +719,8 @@ The biggest single upgrade is lighting that comes from in front of you, not behi
 Chrome, Edge, Safari, and Firefox all support tab groups. The steps are slightly different in each, but the idea is the same: right-click a tab and pick Add to Group.`,
     steps: [
       { title: 'In Chrome or Edge, right-click a tab', content: 'Right-click any tab at the top of the browser. Pick Add Tab to New Group from the menu that appears.' },
-      { title: 'Name the group and pick a color', content: 'A small bubble appears next to the tab. Type a name (like Work or Shopping) and pick a color. The color lets you tell groups apart at a glance.' },
-      { title: 'Add more tabs to the group', content: 'Right-click another tab, pick Add Tab to Group, and choose the group you created. Or drag a tab into the colored bubble at the top of the screen.' },
+      { title: 'Name the group and pick a color', content: 'A small bubble appears next to the tab. Type a name (like Work or Shopping) and pick a color. The color makes it easy to tell groups apart.' },
+      { title: 'Add more tabs to the group', content: 'Right-click another tab, pick Add Tab to Group, and choose the group you just made. Or drag a tab into the colored bubble at the top of the screen.' },
       { title: 'Collapse the group', content: 'Click the colored group name at the top. All the tabs in that group hide away, leaving only the group name. Click again to bring them back.' },
       { title: 'In Safari, use Tab Groups', content: 'On Mac or iPhone Safari, click File, then New Tab Group (Mac) or tap the tabs icon and then the down arrow (iPhone). Tab Groups in Safari work more like saved sessions than colored labels, but the idea is similar.' },
     ],
@@ -732,7 +732,7 @@ Chrome, Edge, Safari, and Firefox all support tab groups. The steps are slightly
     category: 'tips-tricks',
     tags: ['incognito', 'private browsing', 'privacy', 'Chrome', 'Safari'],
     readTime: '5 min',
-    thumbnailEmoji: '🕵️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Incognito mode (Chrome), Private Browsing (Safari, Firefox), and InPrivate (Edge) all do the same thing: they open a new window that does not save your browsing history, cookies, or any information typed into forms.
@@ -743,7 +743,7 @@ It is useful for shopping for a gift on a shared computer, signing into a second
       { title: 'In Safari on Mac, press Cmd+Shift+N', content: 'Press Command, Shift, and N together. A new window opens with a dark address bar to show it is private.' },
       { title: 'In Safari on iPhone', content: 'Tap the tabs icon (two overlapping squares) at the bottom. Tap the button in the bottom-middle that shows the current tab group, then pick Private. New tabs are private until you switch back.' },
       { title: 'In Firefox, press Ctrl+Shift+P', content: 'On Windows, press Ctrl+Shift+P. On Mac, press Command+Shift+P. A new window opens with a purple mask icon.' },
-      { title: 'Understand the limits', content: 'Private browsing hides activity only from the device. Your internet provider, employer, school, or websites you sign into can still see what you do. For real anonymity, you need a VPN or Tor — incognito mode alone is not enough.' },
+      { title: 'Understand the limits', content: 'Private browsing hides activity only from the device. Your internet provider, employer, school, or websites you sign into can still see what you do. For real anonymity, you need a VPN or Tor — not just incognito mode.' },
     ],
   },
   {
@@ -753,7 +753,7 @@ It is useful for shopping for a gift on a shared computer, signing into a second
     category: 'safety-guides',
     tags: ['extensions', 'browser', 'security', 'Chrome', 'privacy'],
     readTime: '6 min',
-    thumbnailEmoji: '🧩',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Intermediate',
     body: `Browser extensions are small add-ons that give your browser new powers — ad blockers, password managers, grammar checkers. But a bad extension can read everything you type, including passwords and credit card numbers.
@@ -774,7 +774,7 @@ Only install extensions from the official store (Chrome Web Store, Microsoft Edg
     category: 'essential-skills',
     tags: ['default browser', 'Chrome', 'Safari', 'Edge', 'browser'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-17',
     difficulty: 'Beginner',
     body: `Your default browser is the one that opens whenever you click a link in email, a document, or another app. Windows comes set to Edge; Mac comes set to Safari; iPhone comes set to Safari; Android comes set to Chrome. You can change any of these in the settings.

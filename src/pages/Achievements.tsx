@@ -117,7 +117,7 @@ export function Achievements() {
         <Navbar />
       </div>
 
-      <main className="container py-12 min-h-[70vh]">
+      <main id="main-content" className="container py-12 min-h-[70vh]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-3 mb-4">

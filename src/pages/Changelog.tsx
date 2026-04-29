@@ -76,7 +76,7 @@ const changelog: ChangelogEntry[] = [
     date: 'March 2026',
     items: [
       { type: 'feature', text: 'TekSure launched — React 18, TypeScript, Supabase, Tailwind, shadcn/ui' },
-      { type: 'feature', text: 'Core features: Guides, Tools, Forum, Booking, Admin Console, TekBrain AI' },
+      { type: 'feature', text: 'Core features: Guides, Tools, Forum, Booking, Admin Console, TekBot AI' },
       { type: 'feature', text: 'Accessibility: Senior Mode, High Contrast, Font Size, Dark Mode, Keyboard Navigation' },
       { type: 'content', text: 'Initial guide library with 300+ guides across 12 categories' },
       { type: 'feature', text: 'Interactive tools: Password Strength, WiFi Speed, Troubleshooter, Device Chooser, and more' },
@@ -94,7 +94,7 @@ export default function Changelog() {
         path="/changelog"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-3xl mx-auto pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'Changelog' }]} />
         </div>

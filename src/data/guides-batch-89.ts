@@ -8,7 +8,7 @@ export const guidesBatch89: Guide[] = [
     category: `health-tech`,
     tags: [`therapy`, `mental health`, `telehealth`, `counseling`],
     readTime: `8 min`,
-    thumbnailEmoji: `💬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `BetterHelp is an online therapy platform that connects you with licensed therapists through your phone, tablet, or computer. Instead of driving to an office and sitting in a waiting room, you can message your therapist any time or schedule a live video or phone session at a time that works for you.
@@ -59,7 +59,7 @@ Your conversations on BetterHelp are private and protected by the same confident
     category: `health-tech`,
     tags: [`therapy`, `mental health`, `online counseling`, `telehealth`],
     readTime: `7 min`,
-    thumbnailEmoji: `🧠`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Talkspace is an online therapy service that lets you work with a licensed therapist through your phone or computer. It is designed for people who want professional mental health support but may have a hard time fitting traditional in-office appointments into their schedule, or who live far from a therapist's office.
@@ -109,7 +109,7 @@ This guide is for therapy only. If you are in crisis, please call or text 988 im
     category: `health-tech`,
     tags: [`mental health`, `CBT`, `stress relief`, `chatbot`, `anxiety`],
     readTime: `6 min`,
-    thumbnailEmoji: `🤖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Woebot is a free app that uses a conversational chatbot to help you work through stress, worry, and difficult emotions. It was developed by psychologists at Stanford University and is based on Cognitive Behavioral Therapy, or CBT — a well-researched approach to mental health that focuses on identifying and changing unhelpful thought patterns.
@@ -155,7 +155,7 @@ Research on Woebot shows it can meaningfully reduce symptoms of anxiety and depr
     category: `health-tech`,
     tags: [`mood tracking`, `journaling`, `mental health`, `habits`, `wellness`],
     readTime: `5 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Daylio is a mood and activity tracking app available on iPhone and Android. The idea is to log how you feel each day — along with what you have been doing — so you can start to notice patterns over time. Many people are surprised to discover that certain activities, such as exercising, spending time outdoors, or getting enough sleep, reliably improve their mood, while others — like spending too much time on screens or skipping meals — tend to drag it down.
@@ -203,7 +203,7 @@ The app also supports reminder notifications so you do not forget to log your en
     category: `health-tech`,
     tags: [`sleep`, `alarm`, `sleep tracking`, `health`, `iPhone`],
     readTime: `6 min`,
-    thumbnailEmoji: `😴`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Sleep Cycle is an alarm clock app that does more than just buzz at a set time. It listens to your movement and breathing sounds throughout the night using your phone's microphone, then uses that information to figure out which stage of sleep you are in. The goal is to wake you up during your lightest sleep phase — the part where waking is easiest — rather than jolting you out of a deep sleep, which is what leaves you feeling groggy and disoriented.
@@ -246,7 +246,7 @@ Sleep Cycle is best placed on your nightstand — it does not need to be in your
     category: `health-tech`,
     tags: [`sleep`, `Apple Watch`, `sleep tracking`, `iPhone`, `health app`],
     readTime: `6 min`,
-    thumbnailEmoji: `🛌`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Pillow is a sleep tracking app for iPhone and Apple Watch. It records information about your sleep throughout the night — including which sleep stages you go through, your heart rate, and sounds you make while sleeping like snoring or coughing — and turns that data into a morning report you can review over coffee.
@@ -289,7 +289,7 @@ This app is for iPhone only. Android users should look at other sleep tracking a
     category: `health-tech`,
     tags: [`white noise`, `focus`, `sleep`, `productivity`, `sounds`],
     readTime: `5 min`,
-    thumbnailEmoji: `🌧️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Noisli is an app and website that plays background sounds you can mix together to create your ideal listening environment. Whether you are trying to concentrate on a task, block out distracting noises at the office or at home, or wind down before sleep, Noisli gives you a library of high-quality sounds to work with.
@@ -333,7 +333,7 @@ The timer feature is particularly useful for focus sessions. You can set Noisli 
     category: `smart-home`,
     tags: [`pet camera`, `home security`, `dog`, `cat`, `live video`],
     readTime: `6 min`,
-    thumbnailEmoji: `🐾`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Petcube is a small home camera designed specifically for pet owners. It lets you watch a live video feed of your pet from your smartphone, wherever you are — whether you are at work, running errands, or traveling. The camera connects to your home Wi-Fi and streams video directly to the Petcube app on your phone.
@@ -377,7 +377,7 @@ Petcube also offers an optional care subscription (around $5 to $10 per month pe
     category: `phone-guides`,
     tags: [`pet tracker`, `GPS`, `dog`, `lost pet`, `location`],
     readTime: `6 min`,
-    thumbnailEmoji: `📍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Whistle is a GPS tracker that clips onto your pet's collar and lets you see where they are on a map from your phone. If your dog or cat ever gets out of the yard, you can pull up the Whistle app and see their location in near real-time rather than searching the neighborhood blindly.
@@ -421,7 +421,7 @@ In addition to GPS tracking, some Whistle models also track your pet's daily act
     category: `health-tech`,
     tags: [`pet health`, `vet records`, `dog`, `cat`, `health records`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐶`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Pawprint is a free app that acts as a digital health record keeper for your pet. If you have ever scrambled to find proof of your dog's rabies vaccine when boarding them, or could not remember when your cat last had a flea treatment, Pawprint solves exactly that problem.
@@ -464,7 +464,7 @@ The app is free to download and use for the core features. A premium tier adds a
     category: `health-tech`,
     tags: [`online vet`, `telehealth`, `pet care`, `veterinarian`, `video call`],
     readTime: `6 min`,
-    thumbnailEmoji: `👨‍⚕️`,
+    thumbnailEmoji: `‍`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Vetster is an online veterinary service that lets you book a video appointment with a licensed veterinarian from your phone or computer. Instead of loading your pet into the car and sitting in a waiting room, you can speak with a vet from your living room — usually within a few hours or even sooner.
@@ -508,7 +508,7 @@ Vetster is available on iPhone, Android, and the web at vetster.com.`,
     category: `app-guides`,
     tags: [`BarkBox`, `dog subscription`, `pet toys`, `dog treats`, `subscription box`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐕`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `BarkBox is a monthly subscription service that delivers a themed box of dog toys, treats, and chews right to your door. Each month has a different theme — past boxes have featured characters from movies, seasons, and fun concepts like "Dognuts" or "Pizza Pups." Every box includes two toys, two bags of treats, and one chew, all sized for your dog.
@@ -551,7 +551,7 @@ BarkBox is a subscription, which means it automatically renews each month. You c
     category: `app-guides`,
     tags: [`Tesla`, `EV`, `electric car`, `remote start`, `charging`],
     readTime: `7 min`,
-    thumbnailEmoji: `⚡`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Tesla app is a companion app for your Tesla vehicle. It connects to your car over a cellular connection and lets you monitor and control many of your car's features from anywhere using your smartphone. You do not need to be near the car — the app works as long as both your phone and your Tesla have a data connection.
@@ -598,7 +598,7 @@ The Tesla app is free and available for iPhone and Android. You need a Tesla acc
     category: `essential-skills`,
     tags: [`EV charging`, `electric car`, `road trip`, `Electrify America`, `fast charging`],
     readTime: `7 min`,
-    thumbnailEmoji: `🔋`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Electrify America is one of the largest public fast-charging networks for electric vehicles in the United States. It was built as part of Volkswagen's commitment following an emissions settlement and now has over 900 charging locations across the country, with multiple fast chargers at each location. You will find Electrify America stations at Walmart parking lots, rest stops, and shopping centers — often places where you would stop anyway during a long drive.
@@ -644,7 +644,7 @@ You can pay at Electrify America stations in two ways: through the app linked to
     category: `essential-skills`,
     tags: [`EV charging`, `EVgo`, `electric car`, `charging station`, `fast charge`],
     readTime: `7 min`,
-    thumbnailEmoji: `🚗`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `EVgo is one of the largest public fast-charging networks in the United States, with over 1,000 charging locations and more than 3,500 individual chargers across the country. You will find EVgo stations at grocery stores, shopping malls, and parking garages — many in urban and suburban areas where drivers live and work, not just on highways.
@@ -691,7 +691,7 @@ EVgo works with most modern electric vehicles that use CCS plugs (the standard U
     category: `app-guides`,
     tags: [`parking`, `SpotHero`, `city driving`, `parking garage`, `reserve parking`],
     readTime: `6 min`,
-    thumbnailEmoji: `🅿️`,
+    thumbnailEmoji: `🅿`,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `SpotHero is an app that lets you find, compare, and reserve parking spots in advance — mostly in garages and parking lots in cities and near stadiums, airports, and event venues. Instead of arriving at your destination, circling the block hoping to find a spot, and paying full walk-up rates at a garage, SpotHero lets you lock in a parking space ahead of time, often at a discounted price.
@@ -739,7 +739,7 @@ SpotHero is free to download. You pay for parking through the app and there are 
     category: `financial-tech`,
     tags: [`Swagbucks`, `cashback`, `rewards`, `gift cards`, `earn money`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎁`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Swagbucks is a free rewards website and app that lets you earn points — called SB — by doing things you might already do online. You can earn SB by shopping through the Swagbucks portal, watching short video playlists, taking surveys, playing games, searching the web through their search engine, and discovering new apps. Once you accumulate enough SB, you can trade them for real money via PayPal or for gift cards to hundreds of stores.
@@ -782,7 +782,7 @@ Swagbucks is available as a website (swagbucks.com) and as an app on iPhone and 
     category: `financial-tech`,
     tags: [`grocery savings`, `coupons`, `Flipp`, `weekly ads`, `deals`],
     readTime: `5 min`,
-    thumbnailEmoji: `🛒`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Flipp is a free app that collects the weekly sale flyers from grocery stores, drugstores, and retailers near you and puts them all in one place. Instead of flipping through individual paper ads or checking each store's website separately, you can browse all of this week's deals in a single app.
@@ -825,7 +825,7 @@ Flipp is free and available for iPhone and Android.`,
     category: `financial-tech`,
     tags: [`cashback`, `Dosh`, `automatic savings`, `credit card`, `rewards`],
     readTime: `5 min`,
-    thumbnailEmoji: `💵`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Dosh is a cashback app that works automatically in the background. Once you link your debit or credit card to the Dosh app, you earn cashback whenever you make a purchase at a participating store, restaurant, or hotel — with no receipt scanning, no coupon codes, and no extra steps required. The cashback is added to your Dosh wallet and you can transfer it to your bank account, PayPal, or Venmo when you are ready.
@@ -869,7 +869,7 @@ Dosh is free to download and has no subscription fees. It is available for iPhon
     category: `financial-tech`,
     tags: [`gift cards`, `Raise`, `savings`, `discounts`, `shopping`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎫`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Raise is an online marketplace where real people buy and sell gift cards at prices below their face value. If someone received a $50 Applebee's gift card as a gift but never eats there, they can sell it on Raise for, say, $42. The buyer gets a $50 card for $42 — saving $8 — and the seller gets some cash back from a card they would never have used.

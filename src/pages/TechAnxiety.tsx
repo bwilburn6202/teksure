@@ -18,8 +18,8 @@ const tips = [
 const resources = [
   { icon: BookOpen, title: 'Beginner Basics Learning Path', desc: 'Start from absolute zero — we\'ll walk you through everything step by step.', href: '/my-path', cta: 'Start here' },
   { icon: Users, title: 'Community Forum', desc: 'A friendly community of people at every level. Ask any question — no judgement.', href: '/forum', cta: 'Join the community' },
-  { icon: MessageCircle, title: 'TekBrain Assistant', desc: 'Type any question in plain English and get a simple, patient answer instantly.', href: '/brain', cta: 'Ask TekBrain' },
-  { icon: Phone, title: 'Book Human Help', desc: 'Sometimes you just need a real person. Book a one-to-one session with a TekSure technician.', href: '/get-help', cta: 'Book support' },
+  { icon: MessageCircle, title: 'TekBot Assistant', desc: 'Type any question in plain English and get a simple, patient answer instantly.', href: '/', cta: 'Ask TekBot' },
+  { icon: Phone, title: 'Book Human Help', desc: 'Sometimes you just need a real person. Book a one-to-one session with a TekSure technician.', href: '/book', cta: 'Book support' },
 ];
 
 const quotes = [
@@ -37,7 +37,7 @@ export default function TechAnxiety() {
         path="/tech-anxiety"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-16">
           <div className="container max-w-2xl text-center">
             <Heart className="h-12 w-12 text-primary mx-auto mb-4" />

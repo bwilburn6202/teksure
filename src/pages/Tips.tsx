@@ -19,23 +19,23 @@ interface Tip {
 }
 
 const featuredTip: Tip & { full: string } = {
-  title: 'Got a Text About Your Apple Pay? Do Not Call the Number — Open Wallet Instead',
-  summary: 'AARP just flagged a surge in fake Apple Pay alerts that drain bank accounts within minutes. The text looks official, includes a phone number to call, and the person who answers may already know your address. Here is the safe way to check if a charge is real.',
-  full: 'Scammers are sending text messages that pretend to be from Apple — claiming there was suspicious activity on your Apple Pay, an account lockdown, or an unauthorized purchase. The message includes a phone number and urges you to call right now to "reverse the charge." When you call, the person on the line is convincing: they may already know your address, your workplace, or partial card numbers from data breaches. They will then pressure you to move money, buy gift cards, or send funds via Apple Cash to "protect your account." The truth: Apple will never send you a text with a phone number to call, and Apple will never ask for your password, device passcode, or two-factor code over the phone. Here is the safe way to check if any Apple Pay charge is real. Open the Wallet app on your iPhone yourself, tap the card the message mentioned, and scroll through recent transactions. If you do not see anything suspicious there, the text is a scam — delete it. If you see a charge you do not recognize, contact Apple at support.apple.com or call your bank using the number on the back of your card (never a number from a text). Forward suspicious texts to reportphishing@apple.com and report the scam to the FTC at ReportFraud.ftc.gov. If you already shared information or sent money, call your bank immediately to stop the transactions — speed matters in the first hour.',
+  title: 'How to Check If an App Is Safe Before You Download It',
+  summary: 'Not every app in the App Store or Google Play is trustworthy. Before you download, take 60 seconds to check a few things that can protect your phone, your privacy, and your money.',
+  full: 'Even though Apple and Google review apps before listing them, some shady ones still slip through. Here is how to protect yourself before you tap "Install." First, check the developer name — tap the app name in the store and look at who made it. A banking app should come from the actual bank, not a random developer name you have never heard of. Second, read the reviews and look at the star rating. Skip apps with very few reviews, or ones where all the five-star reviews sound fake or were posted on the same day. Third, check the permissions the app asks for — a flashlight app should not need access to your contacts, microphone, or location. On iPhone, go to Settings → Privacy & Security to review what each app can access. On Android, go to Settings → Apps → pick the app → Permissions. Fourth, check when the app was last updated — if it has not been updated in over a year, the developer may have abandoned it, and it could have unpatched security holes. Finally, stick to well-known apps recommended by trusted sources like AARP, Consumer Reports, or your device manufacturer. When in doubt, search the app name plus the word "scam" before downloading.',
   category: 'Safety',
-  icon: ShieldAlert,
+  icon: Download,
 };
 
 const pastTips: Tip[] = [
   {
-    title: 'How to Check If an App Is Safe Before You Download It',
-    summary: 'Not every app in the App Store or Google Play is trustworthy. Before you tap install, check the developer name, read recent reviews, look at the permissions, and confirm the app has been updated within the past year.',
-    category: 'Safety',
-    icon: Download,
+    title: 'Windows 11 Update Showed a Blue "Recovery Key" Screen — Here Is the Free Fix',
+    summary: 'Microsoft\'s April 2026 update accidentally triggered a security check on some Windows 11 PCs, locking users out with a blue screen asking for a 48-digit recovery key. Your files are safe — here is how to get back in for free in about 5 minutes.',
+    category: 'Maintenance',
+    icon: Monitor,
   },
   {
     title: 'Phone Says "Storage Full"? Here Is How to Free Up Space in Minutes',
-    summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. The good news: you can usually free up a lot of space in a few minutes without losing anything important.',
+    summary: 'When your phone runs out of storage, it can stop taking photos, refuse to update apps, and run slowly. On iPhone: go to Settings → General → iPhone Storage and use the built-in recommendations to delete large attachments and unused apps. On Android: open the Files app and tap "Clean." The biggest space-saver is usually old photos — if yours are backed up to Google Photos or iCloud, you can safely delete the copies on your phone.',
     category: 'Maintenance',
     icon: Smartphone,
   },
@@ -77,7 +77,7 @@ const pastTips: Tip[] = [
   },
   {
     title: 'How to Turn Off Auto-Play Videos and Save Mobile Data',
-    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in a few taps.',
+    summary: 'Videos that play automatically on websites and social media apps drain your mobile data and can be distracting — but you can turn them off in just a few taps.',
     category: 'Productivity',
     icon: PauseCircle,
   },
@@ -95,13 +95,13 @@ const pastTips: Tip[] = [
   },
   {
     title: 'Set Up an Emergency Contact on Your Phone — It Could Save Your Life',
-    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes a few minutes to set up.',
+    summary: 'Your phone has a built-in feature that lets paramedics or anyone helping you see your emergency contacts and medical info — even when the phone is locked. It takes just a few minutes to set up.',
     category: 'Safety',
     icon: Heart,
   },
   {
     title: 'Check for iPhone Updates Right Now — A Critical Security Patch Was Just Released',
-    summary: 'Apple released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone by getting you to visit the wrong website — no download needed.',
+    summary: 'Apple just released an urgent security update (iOS 18.7.7) that fixes a serious vulnerability. Without it, a hacker could break into your iPhone just by getting you to visit the wrong website — no download needed.',
     category: 'Security',
     icon: ShieldAlert,
   },
@@ -256,7 +256,7 @@ export default function Tips() {
         path="/tips"
       />
       <Navbar />
-      <main className="min-h-screen bg-background">
+      <main id="main-content" className="min-h-screen bg-background">
         <section className="border-b border-border py-16 px-4">
           <div className="container max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Weekly Tech Tips</h1>

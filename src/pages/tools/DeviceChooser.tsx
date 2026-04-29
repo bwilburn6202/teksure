@@ -51,7 +51,7 @@ const questions: Question[] = [
     id: 'keyboard',
     text: 'How important is a full keyboard to you?',
     choices: [
-      { label: 'Essential — I type a lot', emoji: '⌨', value: 'essential' },
+      { label: 'Essential — I type a lot', emoji: '', value: 'essential' },
       { label: 'Nice to have but not required', emoji: '', value: 'nice' },
       { label: 'Not important — I prefer touch', emoji: '', value: 'no' },
     ],

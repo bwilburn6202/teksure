@@ -166,8 +166,7 @@ export default function WeeklyTips() {
         path="/this-week"
       />
       <Navbar />
-
-      <main className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50/60 to-amber-50/40 dark:from-slate-950 dark:via-slate-950 dark:to-slate-950">
+      <main id="main-content" className="min-h-screen bg-background">
         <div className="container max-w-3xl pt-4 px-4">
           <PageBreadcrumb segments={[{ label: 'This Week' }]} />
         </div>

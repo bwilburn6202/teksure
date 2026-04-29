@@ -9,7 +9,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'back tap', 'shortcuts', 'accessibility', 'ios tips'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -45,7 +45,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'namedrop', 'share contacts', 'ios 17', 'airdrop'],
     readTime: '4 min',
-    thumbnailEmoji: '🤝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -81,7 +81,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'accessibility', 'hard of hearing', 'sound recognition', 'notifications'],
     readTime: '4 min',
-    thumbnailEmoji: '🔔',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -118,7 +118,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'motion sickness', 'vehicle motion cues', 'ios 18', 'accessibility'],
     readTime: '4 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -154,7 +154,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'eye health', 'screen distance', 'ios 17', 'screen time'],
     readTime: '3 min',
-    thumbnailEmoji: '👁️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -190,7 +190,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'battery life', 'low power mode', 'battery health', 'charging tips'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -227,7 +227,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'hotspot', 'personal hotspot', 'mobile data', 'wi-fi sharing'],
     readTime: '5 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -264,7 +264,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['android', 'hotspot', 'mobile hotspot', 'data sharing', 'tethering'],
     readTime: '5 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -301,7 +301,7 @@ export const guidesBatch31: Guide[] = [
     category: 'phone-guides',
     tags: ['android', 'magnification', 'zoom', 'accessibility', 'large text'],
     readTime: '4 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -337,7 +337,7 @@ export const guidesBatch31: Guide[] = [
     category: 'tips-tricks',
     tags: ['ipad', 'split view', 'multitasking', 'productivity', 'ipados'],
     readTime: '5 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -373,7 +373,7 @@ export const guidesBatch31: Guide[] = [
     category: 'app-guides',
     tags: ['uber', 'rideshare', 'transportation', 'seniors', 'ride app'],
     readTime: '6 min',
-    thumbnailEmoji: '🚕',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -414,7 +414,7 @@ export const guidesBatch31: Guide[] = [
     category: 'app-guides',
     tags: ['aaa', 'roadside assistance', 'tow truck', 'car breakdown', 'membership'],
     readTime: '5 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -451,7 +451,7 @@ export const guidesBatch31: Guide[] = [
     category: 'life-transitions',
     tags: ['senior discounts', 'travel', 'aarp', 'national parks', 'savings'],
     readTime: '6 min',
-    thumbnailEmoji: '✈️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -488,7 +488,7 @@ export const guidesBatch31: Guide[] = [
     category: 'life-transitions',
     tags: ['cruise', 'vacation', 'travel', 'seniors', 'booking'],
     readTime: '7 min',
-    thumbnailEmoji: '🚢',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -525,7 +525,7 @@ export const guidesBatch31: Guide[] = [
     category: 'financial-tech',
     tags: ['budgeting', 'pocketguard', 'spending tracker', 'personal finance', 'money app'],
     readTime: '5 min',
-    thumbnailEmoji: '💰',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -562,7 +562,7 @@ export const guidesBatch31: Guide[] = [
     category: 'financial-tech',
     tags: ['budgeting', 'goodbudget', 'envelope budgeting', 'personal finance', 'fixed income'],
     readTime: '5 min',
-    thumbnailEmoji: '✉️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -599,7 +599,7 @@ export const guidesBatch31: Guide[] = [
     category: 'entertainment',
     tags: ['spotify', 'audiobooks', 'listening', 'books', 'free audiobooks'],
     readTime: '4 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -635,7 +635,7 @@ export const guidesBatch31: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'copilot', 'ai assistant', 'microsoft', 'windows tips'],
     readTime: '5 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -672,7 +672,7 @@ export const guidesBatch31: Guide[] = [
     category: 'ai-guides',
     tags: ['chatgpt', 'ai', 'photo analysis', 'image input', 'vision'],
     readTime: '5 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -709,7 +709,7 @@ export const guidesBatch31: Guide[] = [
     category: 'communication',
     tags: ['zoom', 'virtual background', 'video call', 'privacy', 'work from home'],
     readTime: '4 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

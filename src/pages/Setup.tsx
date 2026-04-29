@@ -38,7 +38,7 @@ const devices: { id: Device; label: string; icon: React.ElementType; desc: strin
 const confidenceLevels: { id: Confidence; label: string; icon: React.ElementType; desc: string }[] = [
   { id: 'beginner', label: "I'm a complete beginner", icon: Baby, desc: "Technology feels confusing — I need clear, simple steps" },
   { id: 'some', label: 'I know a little', icon: User, desc: "I can do basic things but often get stuck" },
-  { id: 'comfortable', label: "I'm fairly comfortable", icon: GraduationCap, desc: "I want to fill in gaps and learn tips" },
+  { id: 'comfortable', label: "I'm fairly comfortable", icon: GraduationCap, desc: "I just want to fill in gaps and learn tips" },
 ];
 
 const goals: { id: Goal; label: string; icon: React.ElementType; desc: string }[] = [
@@ -183,9 +183,9 @@ export default function Setup() {
   if (alreadyDone && step === 0) {
     return (
       <>
-        <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" noindex />
+        <SEOHead title="Setup Complete | TekSure" description="Your TekSure setup is already done." path="/setup" />
         <Navbar />
-        <main className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
+        <main id="main-content" className="min-h-screen bg-background flex flex-col items-center justify-center px-4">
           <div className="container max-w-xl mx-auto py-24 text-center gap-6 flex flex-col items-center">
             <CheckCircle2 className="h-16 w-16 text-green-500" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>
@@ -211,7 +211,6 @@ export default function Setup() {
         title="Getting Started | TekSure"
         description="Answer 3 quick questions and get a personalized learning path matched to your device and goals."
         path="/setup"
-        noindex
       />
       <Navbar />
       <main className="min-h-screen bg-background container py-12 max-w-2xl mx-auto">

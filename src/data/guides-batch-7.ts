@@ -10,7 +10,7 @@ export const guidesBatch7: Guide[] = [
     category: 'essential-skills',
     tags: ['Chromebook', 'Google', 'laptop', 'beginners', 'buying guide'],
     readTime: '5 min',
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `A Chromebook is a laptop made by various manufacturers — including HP, Lenovo, and Acer — that runs Chrome OS instead of Windows or macOS. Chrome OS was built by Google and works a lot like the Chrome web browser you may already use. Almost everything on a Chromebook happens inside a browser window, so if you spend most of your computer time on websites, email, or video calls, a Chromebook can handle all of that very well.
@@ -33,7 +33,7 @@ If you mostly browse the web, use Gmail or webmail, video chat on Zoom or Google
     category: 'how-to',
     tags: ['Chromebook', 'setup', 'Google', 'Chrome OS', 'beginners'],
     readTime: '6 min',
-    thumbnailEmoji: '✅',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Setting up a new Chromebook is much faster than setting up a Windows PC or Mac because most of the setup happens through your Google account. When you turn on the Chromebook for the first time, it walks you through a few screens asking for your language, Wi-Fi network, and Google account login. Once that is done, your bookmarks, saved passwords, and Gmail are ready to go.
@@ -56,12 +56,12 @@ The whole setup typically takes less than 15 minutes. After it is complete, spen
     category: 'how-to',
     tags: ['Google Docs', 'Google Sheets', 'Google Slides', 'Chromebook', 'word processing'],
     readTime: '7 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Google Docs, Sheets, and Slides are free programs that come with any Google account. Google Docs works like Microsoft Word for writing letters and documents. Google Sheets works like Microsoft Excel for making lists and doing basic math in rows and columns. Google Slides works like Microsoft PowerPoint for creating presentations. All three run directly in the Chrome browser on your Chromebook — no installation needed.
 
-One of the biggest advantages is that your work saves automatically every few seconds to Google Drive (Google's online storage). You can start a document on your Chromebook and then open it later on a phone or a different computer by signing in to your Google account. You can also share a document with family members so you can both read or edit it at the same time.
+One of the biggest advantages is that your work saves automatically every few seconds to Google Drive (Google's online storage). You can start a document on your Chromebook and then open it later on a phone or a different computer just by logging into your Google account. You can also share a document with family members so you can both read or edit it at the same time.
 
 If someone sends you a Microsoft Word (.docx) file, you can open it in Google Docs and even save it back as a Word file when you are done.`,
     steps: [
@@ -79,7 +79,7 @@ If someone sends you a Microsoft Word (.docx) file, you can open it in Google Do
     category: 'how-to',
     tags: ['Chromebook', 'printing', 'Chrome OS', 'wireless printer', 'Google'],
     readTime: '6 min',
-    thumbnailEmoji: '🖨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Printing from a Chromebook works a little differently than printing from a Windows PC. Chromebooks do not use the same driver software that Windows uses to talk to printers. Instead, Chrome OS looks for printers that are connected to the same Wi-Fi network as your Chromebook, or printers that support a standard called IPP (Internet Printing Protocol) — which most printers made after 2017 do support automatically.
@@ -104,12 +104,12 @@ Once your printer is set up once, it remembers the connection for future print j
     category: 'phone-guides',
     tags: ['iPad', 'Apple', 'setup', 'Apple ID', 'tablet', 'beginners'],
     readTime: '7 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `When you turn on a new iPad for the first time, Apple walks you through each setup step one screen at a time. The process is straightforward — you will choose your language, connect to Wi-Fi, and sign in (or create) an Apple ID, which is the account that lets you download apps and back up your data. The whole setup typically takes 15–25 minutes.
 
-Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is an email address and password that Apple uses to identify you — you can use any existing email address to create one.
+Before you start, have your Wi-Fi network name and password ready, and your Apple ID email and password if you already have one. If you have never had an Apple device, you will create a free Apple ID during setup. An Apple ID is just an email address and password that Apple uses to identify you — you can use any existing email address to create one.
 
 After setup, take a few minutes to increase the text size and screen brightness to a comfortable level — these settings make a big difference for everyday use.`,
     steps: [
@@ -127,7 +127,7 @@ After setup, take a few minutes to increase the text size and screen brightness 
     category: 'phone-guides',
     tags: ['Android', 'tablet', 'Google', 'setup', 'Samsung', 'beginners'],
     readTime: '7 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Android tablets are made by several different companies — Samsung, Lenovo, Amazon (Fire tablets), and others — but the setup process is similar across all of them. When you turn one on for the first time, it asks you to choose a language, connect to Wi-Fi, and sign in with a Google account. Your Google account is what lets you download apps from the Google Play Store and back up your contacts and photos.
@@ -150,7 +150,7 @@ Plan for 15–20 minutes to complete the full setup. After you finish, check the
     category: 'app-guides',
     tags: ['iPad', 'tablet', 'reading', 'ebooks', 'Kindle', 'Apple Books', 'Android'],
     readTime: '6 min',
-    thumbnailEmoji: '📚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Tablets are excellent for reading books because you can make the text as large as you need, adjust the background brightness, and carry thousands of books in one lightweight device. The two most popular reading apps are Amazon Kindle (works on iPad and Android tablets) and Apple Books (iPad only). Both apps let you buy books, and many public libraries offer free ebook borrowing through an app called Libby.
@@ -173,7 +173,7 @@ Once you buy or borrow a book, it downloads to your tablet so you can read it wi
     category: 'tips-tricks',
     tags: ['iPad', 'Android', 'tablet', 'split screen', 'multitasking', 'tips'],
     readTime: '5 min',
-    thumbnailEmoji: '🔲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Intermediate',
     body: `Split screen lets you see two apps at the same time on your tablet — one on the left half and one on the right. This is useful when you want to look something up in a browser while writing notes, or when you want to watch a video while keeping an email open. The exact steps are different on iPad versus Android tablets.
@@ -198,7 +198,7 @@ Tablet screens are wide enough that split screen actually feels comfortable — 
     category: 'essential-skills',
     tags: ['Outlook', 'Hotmail', 'email', 'Microsoft', 'beginners'],
     readTime: '7 min',
-    thumbnailEmoji: '📬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Outlook.com (which was previously called Hotmail) is Microsoft's free email service. If you have an email address ending in @outlook.com, @hotmail.com, or @live.com, you already have a Microsoft account. Outlook.com works well in any web browser and also has a free app for iPhone and Android phones.
@@ -221,7 +221,7 @@ Outlook is a good choice if you use a Windows PC, because your email account can
     category: 'essential-skills',
     tags: ['Yahoo Mail', 'email', 'Yahoo', 'beginners', 'inbox'],
     readTime: '6 min',
-    thumbnailEmoji: '📮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Yahoo Mail is a free email service that has been around since 1997. If you already have an email address ending in @yahoo.com, you have a Yahoo account. Yahoo Mail can be accessed through any web browser at mail.yahoo.com or through the free Yahoo Mail app on iPhone and Android devices.
@@ -244,7 +244,7 @@ If you have had a Yahoo account for a long time and have not signed in recently,
     category: 'essential-skills',
     tags: ['email', 'attachments', 'files', 'photos', 'safety', 'beginners'],
     readTime: '6 min',
-    thumbnailEmoji: '📎',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `An email attachment is a file — like a photo, a document, or a PDF — that you send along with an email message. The person who receives the email can then open or save that file. Attaching a file is like putting a paper document inside an envelope before you mail it. Most email services let you attach files up to about 25 megabytes (MB) in size for free.
@@ -269,7 +269,7 @@ One important safety note: never open an attachment from someone you do not know
     category: 'life-transitions',
     tags: ['digital estate', 'estate planning', 'passwords', 'accounts', 'seniors', 'life planning'],
     readTime: '8 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `A digital estate plan is a document or record that lists all your online accounts — email, social media, banking, shopping, subscriptions — along with instructions for what should happen to them when you pass away or become unable to manage them yourself. Without this plan, your loved ones may spend months trying to figure out what accounts exist, how to access them, and what you would have wanted done with them.
@@ -292,7 +292,7 @@ A digital estate plan pairs well with a traditional will. Some people include th
     category: 'safety-guides',
     tags: ['passwords', 'password manager', 'family', 'security', 'account sharing'],
     readTime: '6 min',
-    thumbnailEmoji: '🔑',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Sharing passwords with a trusted family member — such as a spouse, adult child, or caregiver — is a smart part of planning for emergencies. If you become ill or are in an accident, having someone who can access your email, banking, or medical accounts can be critically important. The challenge is doing this in a way that keeps your information secure.
@@ -315,7 +315,7 @@ Never share passwords via text message, regular email, or on paper left in an ob
     category: 'life-transitions',
     tags: ['Google', 'Gmail', 'digital legacy', 'account manager', 'estate planning', 'seniors'],
     readTime: '5 min',
-    thumbnailEmoji: '⏳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Google's Inactive Account Manager is a free tool that lets you decide in advance what happens to your Google account data — your Gmail, Google Photos, Google Drive files, and more — if you stop using your account for a set period of time. You can choose to have Google notify a trusted contact who can then download your data, or you can instruct Google to delete the account automatically after a period of inactivity.
@@ -328,7 +328,7 @@ You can find Inactive Account Manager in your Google account settings at myaccou
       { title: 'Set your inactivity timeout period', content: 'Choose how long Google should wait before considering your account inactive: 3, 6, 12, or 18 months of no sign-ins. Google will send you an alert before this period ends so you can sign in if you are still active.' },
       { title: 'Add a trusted contact', content: 'Click "Add person" to name someone who will be notified when your account becomes inactive. Enter their phone number and email address. You can add up to 10 people.' },
       { title: 'Choose what data to share with them', content: 'For each trusted contact, select which parts of your Google account they can download: Gmail, Drive, Photos, Calendar, and so on. They will receive a download link with that data.' },
-      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to stay preserved without anyone accessing it, you can skip this step.' },
+      { title: 'Optionally set automatic deletion', content: 'After your trusted contacts have been notified, you can also instruct Google to delete your entire account. If you prefer your account to simply be preserved without anyone accessing it, you can skip this step.' },
     ],
   },
   {
@@ -338,7 +338,7 @@ You can find Inactive Account Manager in your Google account settings at myaccou
     category: 'life-transitions',
     tags: ['Facebook', 'memorialization', 'digital legacy', 'social media', 'bereavement', 'account removal'],
     readTime: '6 min',
-    thumbnailEmoji: '💙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `When someone passes away, their Facebook account does not disappear automatically. Facebook offers two options for family members: memorialization and removal. A memorialized account is transformed into a tribute page — the word "Remembering" appears before the person's name, the account cannot be logged into, and friends and family can still post memories on the timeline. A removed account is permanently deleted, including all photos and posts.
@@ -363,7 +363,7 @@ The process typically takes a few days to a few weeks. You can also designate a 
     category: 'app-guides',
     tags: ['Uber', 'rideshare', 'transportation', 'app', 'beginners', 'seniors'],
     readTime: '8 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Uber is a rideshare app that connects you with nearby drivers who use their own cars to give you a lift — similar to a taxi service but booked through your phone. You open the Uber app, type in where you want to go, see the price before you confirm the ride, and a driver comes to pick you up. At the end of the ride, the fare is charged automatically to the credit or debit card you have on file — no cash is needed.
@@ -386,7 +386,7 @@ Uber operates in most US cities and many smaller towns. Prices vary based on dem
     category: 'app-guides',
     tags: ['Lyft', 'rideshare', 'transportation', 'app', 'beginners', 'seniors'],
     readTime: '8 min',
-    thumbnailEmoji: '🚙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Lyft is a rideshare service that works very similarly to Uber. You request a ride through the Lyft app, a nearby driver comes to pick you up, and your payment is handled automatically through the app. Lyft is available in most US cities and many smaller communities, and the app is free to download on iPhone and Android.
@@ -409,7 +409,7 @@ To get started, you will need the free Lyft app, an account with your name and p
     category: 'health-tech',
     tags: ['medical transportation', 'NEMT', 'Medicaid', 'Medicare', 'rides', 'health', 'seniors'],
     readTime: '7 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Non-Emergency Medical Transportation (NEMT) is a service that provides rides to and from medical appointments for people who have difficulty arranging their own transportation. If you have Medicaid, you may be entitled to free NEMT rides to covered medical appointments — this is a benefit that millions of eligible people do not know about or use. Some Medicare Advantage plans also include transportation benefits.
@@ -434,7 +434,7 @@ The process for booking depends on your insurance and location, but in most case
     category: 'financial-tech',
     tags: ['mobile deposit', 'check', 'banking app', 'mobile banking', 'financial', 'beginners'],
     readTime: '6 min',
-    thumbnailEmoji: '💵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Mobile check deposit lets you deposit a paper check into your bank account by taking two photos with your phone — one of the front of the check and one of the back. The banking app on your phone sends those photos to your bank, which processes the deposit the same way it would if you walked into the branch. Most major banks offer this feature for free through their official app.
@@ -457,7 +457,7 @@ Funds from a mobile deposit usually become available within one business day, th
     category: 'financial-tech',
     tags: ['bill pay', 'online banking', 'utilities', 'financial', 'safety', 'beginners'],
     readTime: '7 min',
-    thumbnailEmoji: '🏦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Paying bills online saves time and stamps, and most utility companies, insurance providers, and lenders make it straightforward to do. There are two main ways to pay a bill online: go directly to the company's website and pay through their customer portal, or use your bank's bill pay feature to send a payment from your checking account. Both methods are safe when you use official websites and your bank's secure app.
@@ -480,7 +480,7 @@ Your bank's bill pay feature is often the safest option because you enter the co
     category: 'financial-tech',
     tags: ['Apple Pay', 'Google Pay', 'mobile payments', 'contactless', 'financial', 'security'],
     readTime: '6 min',
-    thumbnailEmoji: '📲',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Apple Pay and Google Pay are digital wallet apps that let you pay for things by holding your phone near a payment terminal at the checkout counter, instead of handing over your physical credit or debit card. They work at millions of stores in the US, including grocery stores, pharmacies, gas stations, and restaurants. You can also use them to pay on websites and apps.
@@ -505,7 +505,7 @@ Setting up takes about five minutes. Apple Pay is built into iPhones (iPhone 6 a
     category: 'communication',
     tags: ['FaceTime', 'video call', 'iPhone', 'iPad', 'Apple', 'communication', 'family'],
     readTime: '5 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `FaceTime is Apple's built-in video and voice calling app, and it comes pre-installed on every iPhone and iPad. Calls made over Wi-Fi are completely free — you can talk face-to-face with family members and friends who also have an iPhone, iPad, or Mac for as long as you want without using any of your phone plan's minutes. FaceTime also works over cellular data (your mobile data plan) when Wi-Fi is not available.
@@ -530,7 +530,7 @@ Starting in iOS 15, Apple also added the ability to invite Android and Windows u
     category: 'essential-skills',
     tags: ['Microsoft Office', 'free software', 'Google Docs', 'LibreOffice', 'word processing', 'alternatives'],
     readTime: '6 min',
-    thumbnailEmoji: '💡',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Microsoft Office (Word, Excel, PowerPoint) is the most widely known productivity suite, but it can cost $100–$150 per year as a subscription or more as a one-time purchase. Several completely free alternatives exist that can create, edit, and save files in Microsoft's own formats — so files you create can still be opened by others who use Microsoft Office.
@@ -553,7 +553,7 @@ For most everyday document needs — writing letters, making lists, creating bas
     category: 'app-guides',
     tags: ['Libby', 'library', 'ebooks', 'audiobooks', 'free', 'reading', 'app'],
     readTime: '6 min',
-    thumbnailEmoji: '📖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Libby is a free app from OverDrive that connects to your public library's digital collection. With a library card, you can borrow ebooks and audiobooks for free — no fees, no late charges, and no driving to the library. The books automatically return themselves when the borrowing period ends (usually 14 or 21 days). Most public libraries in the United States participate in the Libby program.
@@ -576,7 +576,7 @@ If you do not currently have a library card, many libraries now offer instant di
     category: 'app-guides',
     tags: ['Kindle', 'ebooks', 'Amazon', 'reading', 'app', 'free books'],
     readTime: '6 min',
-    thumbnailEmoji: '📗',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `The Kindle app is a free reading app from Amazon that turns any phone, tablet, or computer into a digital book reader. You do not need to own a Kindle e-reader device to buy and read Kindle books — the free app works on iPhone, iPad, Android, Windows computers, and Macs. Once you buy or download a book, it syncs across all your devices so you can start reading on your phone and continue on your tablet right where you left off.
@@ -599,7 +599,7 @@ The Kindle app has excellent reading customization options: you can increase the
     category: 'communication',
     tags: ['video calls', 'FaceTime', 'Zoom', 'Google Meet', 'WhatsApp', 'free', 'communication'],
     readTime: '7 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Video calling is one of the best ways to stay connected with family and friends who live far away. The good news is that several high-quality video calling options are completely free. Each one works a little differently and is best suited to different situations, so knowing the differences helps you pick the right tool.
@@ -624,7 +624,7 @@ All of these services are free for personal use and work over Wi-Fi, which means
     category: 'essential-skills',
     tags: ['web browser', 'Chrome', 'Safari', 'Firefox', 'Edge', 'internet', 'beginners'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `A web browser is the program you open to visit websites on the internet. When you want to see a news article, check your email, or watch a video online, the browser is what fetches that content from the internet and shows it to you on screen. Common web browsers include Google Chrome (the blue, red, yellow, and green circle icon), Apple Safari (the compass icon on iPhones and Macs), Microsoft Edge (the blue wave icon on Windows computers), and Mozilla Firefox (the orange and purple icon).
@@ -647,7 +647,7 @@ All the major browsers mentioned above are free, and most computers and phones c
     category: 'essential-skills',
     tags: ['bookmarks', 'browser', 'Chrome', 'Safari', 'Firefox', 'internet', 'beginners'],
     readTime: '5 min',
-    thumbnailEmoji: '⭐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `A bookmark is a saved shortcut to a website — like putting a physical bookmark in a book so you can return to that page without searching for it again. All web browsers let you save bookmarks with one or two clicks. Once saved, your bookmarks appear in a menu or bar that you can reach from anywhere in the browser, so you can jump to your favorite news site, your bank's website, or a recipe blog with a single click.
@@ -660,7 +660,7 @@ If you lose your bookmarks (for example, after a computer issue or switching to 
       { title: 'Bookmark a page in Safari', content: 'In Safari on iPhone or iPad, tap the Share button (a square with an arrow pointing up) at the bottom of the screen. Scroll through the options and tap "Add Bookmark." Confirm the name and tap "Save."' },
       { title: 'Access your bookmarks', content: 'In Chrome, click the three vertical dots (menu) in the upper right corner and hover over "Bookmarks" to see your saved sites. In Safari on iPhone, tap the open book icon at the bottom of the screen.' },
       { title: 'Create a bookmarks folder', content: 'In Chrome, click the three dots > Bookmarks > Bookmark Manager. Right-click in the panel and select "Add new folder." Name the folder and then drag bookmarks into it. In Safari on Mac, go to Bookmarks > Edit Bookmarks to organize.' },
-      { title: 'Show the bookmarks bar', content: 'In Chrome on a computer, press Ctrl+Shift+B (Windows) or Command+Shift+B (Mac) to show a row of bookmarks directly below the address bar. This makes your most-visited sites visible at all times for quick access.' },
+      { title: 'Show the bookmarks bar', content: 'In Chrome on a computer, press Ctrl+Shift+B (Windows) or Command+Shift+B (Mac) to show a row of bookmarks just below the address bar. This makes your most-visited sites visible at all times for quick access.' },
     ],
   },
   {
@@ -670,7 +670,7 @@ If you lose your bookmarks (for example, after a computer issue or switching to 
     category: 'essential-skills',
     tags: ['browser history', 'cache', 'privacy', 'Chrome', 'Safari', 'Firefox', 'Edge'],
     readTime: '6 min',
-    thumbnailEmoji: '🧹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Your browser keeps a record of every website you have visited — this is called your browsing history. It also stores temporary copies of website images and files on your device so those pages load faster when you revisit them — these temporary files are called the cache (pronounced "cash"). Clearing your history removes the list of sites you have visited, and clearing the cache removes the stored copies of web pages.
@@ -693,7 +693,7 @@ The steps are slightly different in each browser, but the basic process is the s
     category: 'tips-tricks',
     tags: ['browser zoom', 'text size', 'accessibility', 'Chrome', 'Safari', 'Firefox', 'beginners'],
     readTime: '4 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Every web browser has a built-in zoom feature that makes the entire web page — text, images, and buttons — larger or smaller. If text on websites feels too small to read comfortably, zooming in is the fastest fix. The keyboard shortcut works in Chrome, Firefox, Microsoft Edge, and Safari on a computer: hold the Ctrl key (or Command key on a Mac) and press the plus sign (+) to zoom in. Press it several times to zoom in more. Press Ctrl+minus (-) to zoom back out. Press Ctrl+0 (zero) to return to normal size.
@@ -718,7 +718,7 @@ If you find yourself zooming in on every website you visit, you can set a perman
     category: 'how-to',
     tags: ['wireless printer', 'Wi-Fi printer', 'printing', 'setup', 'home office'],
     readTime: '7 min',
-    thumbnailEmoji: '🖨️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `A wireless printer connects to your home Wi-Fi network so any device in your home — your computer, phone, or tablet — can send print jobs to it without plugging in a cable. Setting up a wireless printer involves two main steps: connecting the printer to your Wi-Fi network (using buttons or a touchscreen on the printer itself), and then adding the printer to your computer so it knows where to send print jobs.
@@ -741,7 +741,7 @@ Before you start, have your Wi-Fi network name (also called SSID) and your Wi-Fi
     category: 'how-to',
     tags: ['photo printing', 'printer', 'photos', 'home printing', 'how-to'],
     readTime: '6 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-16',
     difficulty: 'Beginner',
     body: `Printing photos at home is a good option when you want a quick print without waiting for an online order to arrive. The quality of home photo prints has improved dramatically — modern inkjet printers can produce sharp, colorful prints that rival those from a photo lab, as long as you use photo paper (not regular printer paper) and a photo-quality ink cartridge.

@@ -65,56 +65,51 @@ const freeHelp: HelpOption[] = [
     icon: Library,
     emoji: '',
     title: 'Public libraries',
-    offers:
-      'Most US libraries offer free tech classes and one-on-one appointments with a librarian or volunteer. Bring any device — phone, laptop, tablet.',
-    howToFind:
-      'Walk in and ask at the info desk, or search the IMLS public library directory for one near you.',
-    cost: 'Free',
-    primaryLink: { label: 'Find a library (IMLS)', url: 'https://www.imls.gov/search-compare' },
-  },
-  {
-    icon: Heart,
-    emoji: '',
-    title: 'AARP Tech Wednesdays',
-    offers:
-      'Weekly free virtual and in-person tech classes taught by AARP volunteers. Topics rotate — smartphones, scam spotting, video calling, social media.',
-    howToFind:
-      'Search your city on AARP local events. Members and non-members are both welcome at most sessions.',
-    cost: 'Free (no membership required)',
-    primaryLink: { label: 'AARP local events', url: 'https://local.aarp.org' },
+    description:
+      "Almost every public library offers free WiFi, free computer access, and often free tech help classes. Many libraries have 1-on-1 tech tutor appointments you can book ahead — just walk in and ask at the information desk.",
+    primaryLink: { label: 'Find libraries near you', url: 'https://www.worldcat.org/libraries' },
+    secondaryLink: { label: 'About US libraries (IMLS)', url: 'https://www.imls.gov' },
   },
   {
     icon: Users,
     emoji: '',
     title: 'Senior centers',
-    offers:
-      'Local senior centers often have drop-in tech help, sometimes paired with teen volunteers from nearby schools as part of service-learning programs.',
-    howToFind:
-      'Call the Eldercare Locator — they will tell you every senior service near your ZIP code, including tech help hours.',
-    cost: 'Free',
-    primaryLink: { label: 'Eldercare Locator', url: 'https://eldercare.acl.gov' },
+    description:
+      'Local senior centers often run weekly tech help sessions, sometimes paired with teen volunteers from nearby schools. Call ahead to confirm the schedule — sessions fill up fast and sometimes require a quick sign-up.',
+    primaryLink: {
+      label: 'Eldercare Locator (find senior services)',
+      url: 'https://eldercare.acl.gov',
+    },
+  },
+  {
+    icon: Heart,
+    emoji: '',
+    title: 'AARP chapters',
+    description:
+      'AARP volunteers across the country offer free tech help, especially around tax time through AARP Tax-Aide. Members and non-members are welcome at most events. Check the local events page for your area.',
+    primaryLink: { label: 'Find AARP local events', url: 'https://local.aarp.org' },
   },
   {
     icon: HandHeart,
     emoji: '',
-    title: 'Cyber-Seniors',
-    offers:
-      'A nonprofit that connects seniors with student volunteers for free remote (and sometimes in-person) tech tutoring. Schedule one-on-one sessions over video or phone.',
-    howToFind:
-      'Sign up on cyberseniors.org or call their toll-free line to be matched with a student mentor.',
-    cost: 'Free',
+    title: 'Nonprofit organizations',
+    description:
+      'Dedicated nonprofits offer structured tech training for older adults and underserved communities. Cyber-Seniors connects teens with seniors, OATS (now Senior Planet) runs in-person classes, and Human-I-T focuses on low-income households.',
     primaryLink: { label: 'Cyber-Seniors', url: 'https://cyberseniors.org' },
   },
   {
-    icon: BookOpen,
+    icon: Church,
     emoji: '',
-    title: 'GetSetUp',
-    offers:
-      'Live online classes designed for adults 50+ — everything from iPhone basics to Zoom, banking apps, fraud defense, even fitness and languages.',
-    howToFind:
-      'Sign up on getsetup.io. Many classes are free thanks to state and health plan partnerships.',
-    cost: 'Many classes free, some paid',
-    primaryLink: { label: 'GetSetUp', url: 'https://www.getsetup.io' },
+    title: 'Faith & community groups',
+    description:
+      "Churches, mosques, synagogues, and community centers often run tech help programs as part of their outreach work. If you belong to a religious community, ask at the front office — and if you don't, many programs welcome everyone regardless of faith.",
+  },
+  {
+    icon: GraduationCap,
+    emoji: '',
+    title: 'Schools & library partnerships',
+    description:
+      'Some high schools, colleges, and universities pair students with seniors needing tech help as part of community service or service-learning programs. Call your local high school or community college and ask about tech buddy programs.',
   },
 ];
 
@@ -362,7 +357,7 @@ const TechHelpNearMe = () => {
       />
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 md:py-16">
+      <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="mx-auto max-w-3xl text-center mb-14">
           <div className="inline-flex items-center gap-2 rounded-full bg-amber-100 text-amber-900 px-4 py-1.5 text-sm font-semibold mb-5 border border-amber-200">

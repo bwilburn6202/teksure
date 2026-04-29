@@ -14,10 +14,10 @@ export const guidesSpanish: Guide[] = [
     category: 'internet-connectivity' as any,
     tags: ['wifi', 'internet', 'connectivity', 'networking', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
-    body: `Conectarse a una red WiFi es uno de los pasos más importantes para usar internet en tu hogar, en una cafetería o en cualquier lugar público. WiFi es simplemente una forma de conectar tu dispositivo a internet sin cables. Cuando ves el símbolo de abanico (📶) en la pantalla de tu teléfono o computadora, significa que estás conectado.
+    body: `Conectarse a una red WiFi es uno de los pasos más importantes para usar internet en tu hogar, en una cafetería o en cualquier lugar público. WiFi es simplemente una forma de conectar tu dispositivo a internet sin cables. Cuando ves el símbolo de abanico () en la pantalla de tu teléfono o computadora, significa que estás conectado.
 
 Antes de empezar, necesitas dos cosas: el nombre de la red WiFi (también llamado SSID) y la contraseña. Si estás en tu casa, esta información suele estar en una etiqueta pegada en tu router — esa cajita con luces que te dio tu proveedor de internet como Spectrum, Xfinity o AT&T. Si estás en un lugar público como Starbucks o la biblioteca, pregunta al personal por la contraseña.
 
@@ -49,7 +49,7 @@ Un consejo importante: si la red no pide contraseña, ten cuidado. Las redes abi
       },
       {
         title: 'Confirma la conexión',
-        content: 'Una vez conectado, verás el símbolo de WiFi (📶) en la parte superior de tu pantalla. Abre el navegador y visita cualquier página web para confirmar que tienes internet.',
+        content: 'Una vez conectado, verás el símbolo de WiFi () en la parte superior de tu pantalla. Abre el navegador y visita cualquier página web para confirmar que tienes internet.',
       },
     ],
   },
@@ -62,7 +62,7 @@ Un consejo importante: si la red no pide contraseña, ten cuidado. Las redes abi
     category: 'safety-guides' as any,
     tags: ['password', 'security', 'safety', 'accounts', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Una contraseña segura es tu primera línea de defensa contra los hackers y los estafadores en internet. Piensa en tu contraseña como la cerradura de tu casa: si es débil, cualquiera puede entrar. Crear contraseñas fuertes es más fácil de lo que piensas, y aquí te vamos a enseñar cómo hacerlo.
@@ -110,7 +110,7 @@ Si prefieres escribir tus contraseñas en papel, guárdalas en un lugar seguro d
     category: 'safety-guides' as any,
     tags: ['phishing', 'email', 'scam', 'security', 'safety', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🎣',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Los correos electrónicos fraudulentos, conocidos como "phishing", son mensajes falsos diseñados para engañarte y robarte información personal como tu contraseña, número de tarjeta de crédito o número de Seguro Social. Estos correos parecen venir de empresas legítimas como tu banco, Amazon, Netflix o incluso del gobierno, pero en realidad son de estafadores.
@@ -160,7 +160,7 @@ Recuerda: tu banco, el IRS, Social Security y Medicare nunca te van a pedir tu c
     category: 'phone-guides' as any,
     tags: ['phone', 'update', 'ios', 'android', 'security', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Actualizar tu teléfono es como llevar tu carro al servicio: lo mantiene funcionando bien y lo protege contra problemas. Las actualizaciones de software corrigen errores, mejoran la velocidad y, lo más importante, tapan agujeros de seguridad que los hackers podrían usar para acceder a tu información.
@@ -210,7 +210,7 @@ Te recomendamos activar las actualizaciones automáticas para que tu teléfono s
     category: 'essential-skills' as any,
     tags: ['screenshot', 'phone', 'computer', 'beginner', 'essential'],
     readTime: '4 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Una captura de pantalla es como tomarle una foto a lo que aparece en la pantalla de tu teléfono o computadora. Es muy útil cuando quieres guardar una receta, un comprobante de pago, las instrucciones de un correo, o simplemente compartir algo que estás viendo con alguien más.
@@ -262,7 +262,7 @@ Todas las capturas de pantalla se guardan automáticamente. En tu teléfono, las
     category: 'financial-tech' as any,
     tags: ['zelle', 'money', 'banking', 'payments', 'finance', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Zelle es una forma rápida y segura de enviar dinero directamente de tu cuenta de banco a la cuenta de otra persona. Es como darle dinero en efectivo a alguien, pero de forma digital. El dinero llega en minutos, no en días, y lo mejor de todo es que es gratis.
@@ -310,7 +310,7 @@ Nunca uses Zelle para pagarle a alguien que no conoces personalmente. Los estafa
     category: 'financial-tech' as any,
     tags: ['apple-pay', 'google-pay', 'mobile-payment', 'contactless', 'finance', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '💳',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Apple Pay y Google Pay son formas de pagar en tiendas usando tu teléfono en lugar de una tarjeta de crédito o débito física. Funcionan acercando tu teléfono a la terminal de pago — esa maquinita donde normalmente pasas tu tarjeta. Es más rápido y, en muchos casos, más seguro que usar la tarjeta directamente.
@@ -360,7 +360,7 @@ Aunque tengas tu tarjeta en tu teléfono, tu tarjeta física seguirá funcionand
     category: 'phone-guides' as any,
     tags: ['spam', 'calls', 'block', 'phone', 'scam', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🚫',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Las llamadas no deseadas son una de las molestias más grandes de tener un teléfono celular. Pueden ser vendedores que quieren ofrecerte algo, grabaciones automáticas (llamadas "robocalls"), o peor aún, estafadores tratando de robarte información o dinero. En Estados Unidos, los estadounidenses reciben miles de millones de llamadas spam cada mes.
@@ -410,7 +410,7 @@ Si recibes una llamada sospechosa, nunca presiones ningún número cuando una gr
     category: 'communication' as any,
     tags: ['whatsapp', 'video-call', 'communication', 'messaging', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `WhatsApp es una de las aplicaciones más populares del mundo para comunicarse, especialmente entre familias hispanas en Estados Unidos y sus seres queridos en otros países. Una de sus mejores funciones es la videollamada, que te permite ver y hablar con alguien cara a cara sin importar dónde esté, totalmente gratis.
@@ -460,7 +460,7 @@ Para la mejor calidad de video, te recomendamos usar WiFi en lugar de datos celu
     category: 'government-civic' as any,
     tags: ['medicare', 'healthcare', 'government', 'insurance', 'seniors', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Medicare.gov es el sitio web oficial del gobierno federal donde puedes manejar todo lo relacionado con tu seguro médico de Medicare. Si tienes 65 años o más, o si tienes ciertas discapacidades, probablemente calificas para Medicare. Este sitio te permite revisar tu cobertura, buscar médicos que acepten Medicare, comparar planes, y verificar tus reclamaciones.
@@ -510,7 +510,7 @@ Si necesitas ayuda, puedes llamar al 1-800-MEDICARE (1-800-633-4227). El servici
     category: 'financial-tech' as any,
     tags: ['taxes', 'irs', 'free-file', 'government', 'finance', 'beginner'],
     readTime: '7 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Declarar tus impuestos no tiene que ser caro ni complicado. El IRS (Internal Revenue Service, la agencia de impuestos del gobierno federal) ofrece varias opciones para que presentes tu declaración de impuestos completamente gratis si cumples ciertos requisitos. No necesitas pagar a un contador ni comprar software costoso.
@@ -564,7 +564,7 @@ La fecha límite para declarar impuestos federales es generalmente el 15 de abri
     category: 'smart-home' as any,
     tags: ['alexa', 'echo', 'amazon', 'smart-home', 'voice-assistant', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Amazon Alexa es un asistente de voz que vive dentro de las bocinas Echo de Amazon. Puedes hablarle para pedirle que ponga música, te diga el clima, ponga alarmas, haga llamadas, controle las luces de tu casa y mucho más — todo con solo usar tu voz, sin tocar nada.
@@ -614,7 +614,7 @@ Si tienes un Echo Show (el que tiene pantalla), también puedes hacer videollama
     category: 'health-tech' as any,
     tags: ['mychart', 'patient-portal', 'healthcare', 'medical', 'health', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🩺',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `MyChart es un portal de pacientes en línea que te permite acceder a tu información médica desde tu teléfono o computadora. Miles de hospitales y clínicas en Estados Unidos usan MyChart, incluyendo sistemas como Kaiser Permanente, Cleveland Clinic, y muchos centros médicos locales. Si tu doctor usa MyChart, puedes ver tus resultados de laboratorio, programar citas, pedir recetas, y enviarle mensajes a tu médico sin tener que llamar por teléfono.
@@ -668,7 +668,7 @@ Recuerda: MyChart no es para emergencias. Si tienes una emergencia médica, llam
     category: 'phone-guides' as any,
     tags: ['iphone', 'apple', 'setup', 'phone', 'ios', 'beginner'],
     readTime: '7 min',
-    thumbnailEmoji: '🍎',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Configurar un iPhone nuevo puede parecer intimidante, pero Apple ha diseñado el proceso para que sea lo más sencillo posible. Ya sea que vengas de otro iPhone o sea tu primer teléfono Apple, esta guía te llevará paso a paso por todo el proceso. Al terminar, tendrás tu nuevo teléfono listo para usar con todas tus fotos, contactos y aplicaciones.
@@ -722,7 +722,7 @@ No olvides configurar Face ID (reconocimiento facial) o crear un código de acce
     category: 'phone-guides' as any,
     tags: ['android', 'samsung', 'google', 'setup', 'phone', 'beginner'],
     readTime: '7 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Los teléfonos Android vienen en muchas marcas como Samsung, Google Pixel, Motorola, y OnePlus, pero el proceso de configuración inicial es muy similar en todos. Esta guía te ayudará a poner en marcha tu nuevo teléfono Android, ya sea que vengas de otro Android o de un iPhone.
@@ -776,7 +776,7 @@ Tómate unos minutos para configurar la seguridad de tu teléfono: huella digita
     category: 'social-media' as any,
     tags: ['facebook', 'marketplace', 'safety', 'buy-sell', 'scam-prevention', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Facebook Marketplace es como un mercado de pulgas digital donde puedes comprar y vender cosas cerca de ti: muebles, electrónicos, ropa, carros, y mucho más. Es gratis publicar anuncios y no hay comisiones como en eBay. Millones de personas lo usan todos los días en Estados Unidos.
@@ -830,7 +830,7 @@ Para encuentros en persona, elige un lugar público durante el día: el estacion
     category: 'entertainment' as any,
     tags: ['audiobooks', 'library', 'libby', 'free', 'reading', 'entertainment', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `¿Sabías que puedes escuchar miles de audiolibros completamente gratis con tu tarjeta de biblioteca pública? Así es: las bibliotecas de Estados Unidos ofrecen libros digitales y audiolibros que puedes descargar desde tu teléfono sin tener que ir físicamente a la biblioteca. Todo lo que necesitas es una tarjeta de biblioteca válida y una aplicación gratuita llamada Libby.
@@ -880,7 +880,7 @@ Libby también te permite ajustar la velocidad de narración, poner un temporiza
     category: 'safety-guides' as any,
     tags: ['phone', 'theft', 'security', 'find-my-phone', 'safety', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Perder tu teléfono o que te lo roben es una experiencia terrible, pero no solo por el valor del aparato. Tu teléfono contiene tus fotos personales, acceso a tu banco, correos electrónicos, cuentas de redes sociales y mucha información privada. Actuar rápido puede proteger toda esa información, incluso si no puedes recuperar el teléfono.
@@ -934,7 +934,7 @@ Si sospechas que fue un robo, presenta un reporte policial. Necesitarás el núm
     category: 'safety-guides' as any,
     tags: ['2fa', 'security', 'authentication', 'safety', 'accounts', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🛡️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `La verificación en dos pasos (también conocida como autenticación de dos factores o 2FA) es como ponerle un segundo candado a tu puerta. Incluso si alguien descubre tu contraseña, no podrá entrar a tu cuenta porque necesitará un segundo código que solo tú tienes.
@@ -984,7 +984,7 @@ No te preocupes, no tendrás que poner el código cada vez que abras la app. La 
     category: 'financial-tech' as any,
     tags: ['credit-score', 'finance', 'free', 'credit-report', 'financial-literacy', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Tu puntaje de crédito es un número entre 300 y 850 que los bancos y prestamistas usan para decidir si te prestan dinero y a qué tasa de interés. Un puntaje alto (generalmente 670 o más) significa que eres responsable con tus deudas, y te ofrecerán mejores tasas en préstamos de auto, hipotecas y tarjetas de crédito. Un puntaje bajo puede hacer que te cobren más intereses o que te nieguen crédito.
@@ -1038,7 +1038,7 @@ Revisa tu reporte de crédito al menos una vez al año para verificar que no hay
     category: 'social-media' as any,
     tags: ['facebook', 'social-media', 'redes-sociales', 'beginner', 'familia'],
     readTime: '6 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Facebook es la red social más popular del mundo y es una herramienta increíble para mantenerte en contacto con tu familia, amigos y comunidad. Millones de personas en Estados Unidos la usan todos los días para compartir fotos, ver noticias y participar en grupos de interés. No necesitas ser experto en tecnología para usarla — aquí te explicamos todo desde cero.
@@ -1086,7 +1086,7 @@ Es importante que revises tu configuración de privacidad. Ve a Configuración >
     category: 'smart-home' as any,
     tags: ['smart-tv', 'television', 'streaming', 'wifi', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Un televisor inteligente (o Smart TV) es un televisor que se conecta a internet y te permite ver programas, películas y videos sin necesidad de cable tradicional. Marcas como Samsung, LG, TCL, Vizio y Roku hacen televisores inteligentes muy populares en Estados Unidos. Si acabas de comprar uno, esta guía te ayuda a configurarlo desde cero.
@@ -1134,7 +1134,7 @@ Un consejo importante: mantén tu televisor actualizado. Ve a Configuración > S
     category: 'essential-skills' as any,
     tags: ['google-maps', 'navigation', 'directions', 'gps', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🗺️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Google Maps es como tener un mapa y un GPS gratis en tu teléfono. Te dice cómo llegar a cualquier lugar, te muestra el tráfico en tiempo real, y te ayuda a encontrar restaurantes, tiendas, gasolineras y más cerca de ti. Es una de las aplicaciones más útiles que puedes tener, y aquí te enseñamos a usarla.
@@ -1178,14 +1178,14 @@ También puedes guardar lugares frecuentes como tu casa y tu trabajo. Así, cuan
     category: 'communication' as any,
     tags: ['photos', 'text-message', 'mms', 'sharing', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Compartir fotos por mensaje de texto es una de las formas más rápidas y sencillas de mandarle una imagen a un familiar o amigo. No necesitas ninguna app especial — puedes hacerlo directamente desde la aplicación de Mensajes que ya viene en tu teléfono. Aquí te enseñamos cómo hacerlo tanto en iPhone como en Android.
 
 En un iPhone, abre la app de Mensajes (el ícono verde con un globo de texto blanco). Selecciona la conversación con la persona a quien quieres enviarle la foto, o toca el ícono de nuevo mensaje para empezar una nueva. Junto al campo donde escribes, verás un ícono de cámara y un ícono de "+". Toca el "+" y luego "Fotos" para elegir una foto de tu galería, o toca la cámara para tomar una foto nueva en ese momento.
 
-En un teléfono Android, abre Google Messages o la app de mensajes que uses. Abre la conversación y toca el ícono de la imagen o el clip (📎) junto al campo de texto. Selecciona "Galería" o "Fotos" para elegir una imagen guardada, o "Cámara" para tomar una nueva.
+En un teléfono Android, abre Google Messages o la app de mensajes que uses. Abre la conversación y toca el ícono de la imagen o el clip () junto al campo de texto. Selecciona "Galería" o "Fotos" para elegir una imagen guardada, o "Cámara" para tomar una nueva.
 
 Una vez que selecciones la foto, aparecerá como vista previa en el mensaje. Puedes agregar un texto si quieres y luego tocar la flecha de enviar. La foto se enviará como un mensaje multimedia (MMS), que es diferente a un mensaje de texto normal. La mayoría de los planes de T-Mobile, AT&T, Verizon y otros proveedores incluyen MMS sin costo adicional.
 
@@ -1197,7 +1197,7 @@ Si la foto es muy pesada o quieres enviar muchas fotos a la vez, considera usar 
       },
       {
         title: 'Toca el ícono para agregar una foto',
-        content: 'En iPhone: toca el "+" junto al campo de texto y luego "Fotos". En Android: toca el ícono de la imagen (📷) o el clip (📎). Esto te abrirá la galería de fotos de tu teléfono.',
+        content: 'En iPhone: toca el "+" junto al campo de texto y luego "Fotos". En Android: toca el ícono de la imagen () o el clip (). Esto te abrirá la galería de fotos de tu teléfono.',
       },
       {
         title: 'Selecciona la foto que quieres enviar',
@@ -1222,7 +1222,7 @@ Si la foto es muy pesada o quieres enviar muchas fotos a la vez, considera usar 
     category: 'phone-guides' as any,
     tags: ['backup', 'cloud', 'icloud', 'google', 'data-protection', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '☁️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Imagina que pierdes tu teléfono o se te cae al agua. Si no tienes una copia de seguridad, podrías perder todas tus fotos, contactos, mensajes y todo lo que guardas en él. Una copia de seguridad (o "backup") es como hacer una copia de todo lo importante de tu teléfono y guardarla en un lugar seguro en internet, llamado "la nube".
@@ -1270,7 +1270,7 @@ Lo más importante es que hagas la copia de seguridad regularmente. Configúrala
     category: 'communication' as any,
     tags: ['facetime', 'video-call', 'videollamada', 'apple', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `FaceTime es la aplicación de Apple para hacer videollamadas gratis. Es como hablar por teléfono, pero puedes ver a la otra persona en la pantalla. Es perfecta para hablar con familiares que viven lejos, ver a los nietos, o simplemente ponerte al día con amigos. Y lo mejor: es completamente gratis — solo necesitas WiFi o datos.
@@ -1293,7 +1293,7 @@ Si tienes problemas con la calidad de video, asegúrate de estar en un lugar con
       },
       {
         title: 'Elige videollamada',
-        content: 'Toca el botón verde de video (📹) para iniciar la videollamada. Espera a que la otra persona conteste. Verás tu imagen en una ventanita pequeña y a la otra persona en la pantalla grande.',
+        content: 'Toca el botón verde de video () para iniciar la videollamada. Espera a que la otra persona conteste. Verás tu imagen en una ventanita pequeña y a la otra persona en la pantalla grande.',
       },
       {
         title: 'Usa los controles durante la llamada',
@@ -1318,7 +1318,7 @@ Si tienes problemas con la calidad de video, asegúrate de estar en un lugar con
     category: 'phone-guides' as any,
     tags: ['voicemail', 'phone', 'calls', 'setup', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📞',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `El correo de voz (voicemail) es un servicio que graba mensajes cuando no puedes contestar el teléfono. Es como una contestadora automática que vive dentro de tu teléfono. Cuando alguien te llama y no contestas, pueden dejar un mensaje de voz que puedes escuchar después. Es muy útil para no perder llamadas importantes del doctor, la escuela o el trabajo.
@@ -1362,7 +1362,7 @@ Si no configuras un saludo, tu proveedor usará un mensaje genérico automático
     category: 'safety-guides' as any,
     tags: ['security', 'password', 'lock-screen', 'fingerprint', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '🔒',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Proteger tu teléfono con una contraseña o PIN es como ponerle llave a tu casa. Si alguien encuentra tu teléfono o te lo roban, no podrán ver tus fotos, mensajes, correos electrónicos, apps bancarias ni nada personal. En Estados Unidos, el robo de teléfonos es un problema común, así que es muy importante que tu teléfono esté protegido.
@@ -1406,7 +1406,7 @@ Además, configura tu teléfono para que se bloquee automáticamente después de
     category: 'safety-guides' as any,
     tags: ['apps', 'download', 'app-store', 'google-play', 'safety', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '⬇️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Las aplicaciones (o "apps") agregan funciones a tu teléfono — desde ver el clima hasta hacer videollamadas con tu familia. Pero no todas las apps son seguras. Algunas apps falsas pueden robar tu información personal, llenar tu teléfono de anuncios molestos, o cobrarte sin tu permiso. Por eso es importante saber cómo descargar apps de forma segura.
@@ -1454,7 +1454,7 @@ Ten cuidado con las apps "gratis" que luego te piden suscripciones caras. Lee bi
     category: 'phone-guides' as any,
     tags: ['bluetooth', 'headphones', 'wireless', 'audio', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Los audífonos Bluetooth son audífonos inalámbricos que se conectan a tu teléfono sin cables. Son muy prácticos para escuchar música, hacer llamadas con las manos libres, o ver videos sin molestar a los demás. Bluetooth es la tecnología que permite que tus audífonos y tu teléfono se "hablen" sin necesidad de un cable.
@@ -1498,7 +1498,7 @@ Si tienes AirPods y un iPhone, el proceso es aún más fácil: simplemente abre 
     category: 'entertainment' as any,
     tags: ['spotify', 'music', 'streaming', 'entertainment', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🎵',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Spotify es una de las aplicaciones más populares para escuchar música en Estados Unidos y el mundo. Piensa en Spotify como una biblioteca gigante de música donde puedes escuchar casi cualquier canción, artista o género que quieras — desde música regional mexicana y reggaetón hasta country, pop y música clásica. Hay millones de canciones disponibles.
@@ -1546,7 +1546,7 @@ Una función muy útil es "Descubrimiento semanal" — una playlist que Spotify 
     category: 'smart-home' as any,
     tags: ['alexa', 'amazon', 'smart-speaker', 'smart-home', 'spanish', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Amazon Alexa es un asistente de voz que vive dentro de las bocinas Echo de Amazon. Le puedes hablar y ella responde: pone música, te dice el clima, configura temporizadores, te recuerda citas, controla luces inteligentes y mucho más. Y lo mejor es que Alexa habla español, así que puedes usarla completamente en tu idioma.
@@ -1573,7 +1573,7 @@ Alexa también puede hacer llamadas a otros dispositivos Alexa o teléfonos, lo 
       },
       {
         title: 'Cambia el idioma a español',
-        content: 'En la app de Alexa, ve a Dispositivos > selecciona tu Echo > Configuración del dispositivo (⚙️) > Idioma. Selecciona "Español (Estados Unidos)". Alexa ahora te hablará y entenderá en español.',
+        content: 'En la app de Alexa, ve a Dispositivos > selecciona tu Echo > Configuración del dispositivo () > Idioma. Selecciona "Español (Estados Unidos)". Alexa ahora te hablará y entenderá en español.',
       },
       {
         title: 'Prueba con comandos de voz',
@@ -1594,7 +1594,7 @@ Alexa también puede hacer llamadas a otros dispositivos Alexa o teléfonos, lo 
     category: 'phone-guides' as any,
     tags: ['storage', 'space', 'cleanup', 'phone', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🗑️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Si tu teléfono te muestra un aviso de "Almacenamiento lleno" o notas que funciona más lento de lo normal, probablemente necesitas liberar espacio. Con el tiempo, las fotos, videos, apps y archivos se van acumulando y llenan la memoria de tu teléfono. Pero no te preocupes — hay varias formas de recuperar espacio sin perder nada importante.
@@ -1642,7 +1642,7 @@ Una regla sencilla: si no has usado una app en los últimos 3 meses, probablemen
     category: 'essential-skills' as any,
     tags: ['uber', 'lyft', 'rideshare', 'transportation', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🚗',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Uber y Lyft son aplicaciones que te permiten pedir un carro con chofer desde tu teléfono. Es como pedir un taxi, pero más fácil y generalmente más barato. No necesitas llamar por teléfono ni ir a parar un taxi en la calle — simplemente abres la app, pones a dónde quieres ir, y un conductor llega a recogerte en minutos.
@@ -1690,7 +1690,7 @@ Tanto Uber como Lyft están disponibles en español. Puedes cambiar el idioma en
     category: 'communication' as any,
     tags: ['email', 'gmail', 'outlook', 'yahoo', 'setup', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '📧',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Tener tu correo electrónico en tu teléfono es como tener un buzón de correo que llevas contigo a todas partes. Puedes recibir y enviar correos al instante sin necesidad de prender la computadora. Esto es especialmente útil para recibir confirmaciones de citas médicas, recibos de compras, mensajes del trabajo o la escuela de tus hijos, y avisos importantes.
@@ -1738,7 +1738,7 @@ Un consejo importante: activa las notificaciones para que tu teléfono te avise 
     category: 'essential-skills' as any,
     tags: ['camera', 'photos', 'video', 'photography', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '📸',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `La cámara de tu teléfono es una herramienta increíble que llevas contigo a todos lados. Los teléfonos modernos toman fotos de excelente calidad — en muchos casos, mejores que las cámaras digitales de hace unos años. Ya sea para capturar un momento familiar, tomar una foto de una receta, o grabar un video del recital de tus nietos, tu teléfono puede hacerlo todo.
@@ -1765,7 +1765,7 @@ Además de fotos, puedes grabar videos deslizando al modo "Video" en la app de c
       },
       {
         title: 'Cambia a la cámara frontal para selfies',
-        content: 'Toca el ícono de flechas circulares (🔄) para cambiar entre la cámara trasera y la frontal. La cámara frontal es perfecta para tomarte fotos a ti mismo, con familia, o para videollamadas.',
+        content: 'Toca el ícono de flechas circulares () para cambiar entre la cámara trasera y la frontal. La cámara frontal es perfecta para tomarte fotos a ti mismo, con familia, o para videollamadas.',
       },
       {
         title: 'Graba un video',
@@ -1786,7 +1786,7 @@ Además de fotos, puedes grabar videos deslizando al modo "Video" en la app de c
     category: 'essential-skills' as any,
     tags: ['printing', 'wireless', 'airprint', 'documents', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🖨️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Imprimir desde tu teléfono es más fácil de lo que piensas. No necesitas cables ni una computadora — si tu impresora se conecta a WiFi (la mayoría de las impresoras modernas lo hacen), puedes enviar documentos, fotos, correos y más directamente desde tu teléfono. Es muy útil para imprimir recetas, cupones, formularios del gobierno, cartas, y fotos familiares.
@@ -1830,7 +1830,7 @@ Un consejo: antes de imprimir, revisa la vista previa en tu pantalla para asegur
     category: 'financial-tech' as any,
     tags: ['venmo', 'payments', 'money', 'safety', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Venmo es una de las aplicaciones más populares en Estados Unidos para enviar y recibir dinero entre personas. Es perfecta para dividir la cuenta de un restaurante, pagarle a alguien por un mandado, enviar dinero a tus hijos, o recibir pagos por cosas que vendas. Millones de estadounidenses la usan todos los días.
@@ -1849,7 +1849,7 @@ Para mantener tu dinero seguro, es muy importante que actives la verificación e
       },
       {
         title: 'Conecta tu banco o tarjeta de débito',
-        content: 'Ve al menú (☰) > Configuración > Métodos de pago > Agregar banco o tarjeta. Puedes conectar tu banco directamente ingresando tu usuario y contraseña de banca en línea, o agregar una tarjeta de débito manualmente.',
+        content: 'Ve al menú () > Configuración > Métodos de pago > Agregar banco o tarjeta. Puedes conectar tu banco directamente ingresando tu usuario y contraseña de banca en línea, o agregar una tarjeta de débito manualmente.',
       },
       {
         title: 'Activa la seguridad de la app',
@@ -1878,7 +1878,7 @@ Para mantener tu dinero seguro, es muy importante que actives la verificación e
     category: 'internet-connectivity' as any,
     tags: ['router', 'wifi', 'internet', 'setup', 'networking', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '📡',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Un router WiFi es la cajita que reparte la señal de internet a todos los dispositivos de tu casa — tu teléfono, computadora, televisor, tableta y más. Si acabas de contratar internet con un proveedor como Spectrum, Xfinity (Comcast), AT&T o T-Mobile Home Internet, probablemente te dieron un router o compraste uno nuevo. Aquí te enseñamos a configurarlo.
@@ -1926,7 +1926,7 @@ La ubicación del router también importa. Colócalo en un lugar central de tu c
     category: 'financial-tech' as any,
     tags: ['cash-app', 'payments', 'money-transfer', 'debit-card', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '💵',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Cash App es una aplicación gratuita de Block (antes Square) que te permite enviar y recibir dinero instantáneamente. Es muy popular en Estados Unidos, especialmente entre personas que quieren una forma rápida de mandar dinero a familiares y amigos, pagar por servicios, o incluso recibir pagos del gobierno. Más de 50 millones de personas en EE.UU. la usan.
@@ -1974,7 +1974,7 @@ Un aspecto importante de seguridad: Cash App nunca te llamará por teléfono par
     category: 'financial-tech' as any,
     tags: ['banking', 'security', 'online-banking', 'fraud', 'safety', 'beginner'],
     readTime: '6 min',
-    thumbnailEmoji: '🏦',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `La banca en línea (online banking) te permite manejar tu dinero desde tu teléfono o computadora sin ir al banco. Puedes ver tu saldo, pagar facturas, transferir dinero y depositar cheques desde la comodidad de tu casa. Los bancos más grandes de Estados Unidos como Chase, Bank of America, Wells Fargo, Citibank y Capital One tienen apps excelentes y seguras.
@@ -2022,7 +2022,7 @@ Revisa tu cuenta bancaria al menos una vez por semana. Si ves alguna transacció
     category: 'phone-guides' as any,
     tags: ['do-not-disturb', 'notifications', 'quiet', 'sleep', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '🌙',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `El modo "No Molestar" (o "Do Not Disturb" en inglés) es una función de tu teléfono que silencia llamadas, mensajes de texto, notificaciones y alertas temporalmente. Es perfecto para cuando quieres dormir sin que te despierten, cuando estás en una cita médica, en la iglesia, en una reunión, o simplemente cuando necesitas un rato de tranquilidad.
@@ -2037,7 +2037,7 @@ También puedes programar un horario para que No Molestar se active y desactive 
     steps: [
       {
         title: 'Encuentra la opción de No Molestar',
-        content: 'iPhone: ve a Ajustes > Modos de concentración > No Molestar. También puedes deslizar desde arriba a la derecha y tocar el ícono de la luna (🌙). Android: ve a Configuración > Sonido > No Molestar. También puedes deslizar hacia abajo y tocar el ícono de No Molestar.',
+        content: 'iPhone: ve a Ajustes > Modos de concentración > No Molestar. También puedes deslizar desde arriba a la derecha y tocar el ícono de la luna (). Android: ve a Configuración > Sonido > No Molestar. También puedes deslizar hacia abajo y tocar el ícono de No Molestar.',
       },
       {
         title: 'Actívalo manualmente',
@@ -2066,7 +2066,7 @@ También puedes programar un horario para que No Molestar se active y desactive 
     category: 'essential-skills' as any,
     tags: ['weather', 'clima', 'forecast', 'app', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '🌤️',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `La aplicación del clima te dice la temperatura actual, si va a llover, si hará frío o calor, y el pronóstico para los próximos días. Es como tener un meteorólogo personal en tu bolsillo. Es especialmente útil para planear qué ropa ponerte, si debes llevar sombrilla, o si es un buen día para actividades al aire libre.
@@ -2110,7 +2110,7 @@ Si quieres más opciones, apps gratuitas como Weather Channel, AccuWeather y Wea
     category: 'essential-skills' as any,
     tags: ['copy', 'paste', 'clipboard', 'essential', 'beginner'],
     readTime: '4 min',
-    thumbnailEmoji: '📋',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Copiar y pegar es una de las funciones más útiles que puedes aprender en tu teléfono. Te permite tomar un texto, una dirección, un enlace web, un número de teléfono o casi cualquier información de un lugar y ponerla en otro, sin tener que escribirla de nuevo. Es como recortar algo de un papel y pegarlo en otro.
@@ -2154,7 +2154,7 @@ También puedes copiar y pegar imágenes en muchas apps. En WhatsApp, por ejempl
     category: 'health-tech' as any,
     tags: ['medication', 'reminders', 'health', 'alarms', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Si tomas medicamentos todos los días, sabes lo fácil que es olvidar una dosis. Tu teléfono puede ayudarte a recordar exactamente cuándo tomar cada medicina, haciendo que tu salud sea una prioridad sin tener que depender solo de tu memoria. Es como tener una enfermera personal que te avisa a la hora exacta.
@@ -2202,7 +2202,7 @@ Si tomas varias medicinas al día, los recordatorios son aún más importantes. 
     category: 'entertainment' as any,
     tags: ['netflix', 'streaming', 'movies', 'tv-shows', 'entertainment', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🎬',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Netflix es uno de los servicios de entretenimiento más populares del mundo. Te permite ver miles de películas, series, documentales y programas cuando quieras, sin comerciales. En lugar de esperar a que un programa pase por televisión, tú decides qué ver y cuándo verlo. Funciona en tu teléfono, tableta, computadora, y Smart TV.
@@ -2250,7 +2250,7 @@ Netflix te recomienda películas y series basándose en lo que ves. Mientras má
     category: 'safety-guides' as any,
     tags: ['find-my-phone', 'lost-phone', 'gps', 'security', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Perder tu teléfono es una situación muy estresante, pero no te desesperes — hay herramientas que te pueden ayudar a encontrarlo. Tanto Apple como Google tienen servicios gratuitos que te permiten localizar tu teléfono en un mapa, hacerlo sonar aunque esté en silencio, e incluso borrar toda tu información remotamente si crees que fue robado.
@@ -2298,7 +2298,7 @@ Si crees que te lo robaron, puedes poner tu teléfono en "Modo perdido" (Lost Mo
     category: 'essential-skills' as any,
     tags: ['calculator', 'math', 'tips', 'essential', 'beginner'],
     readTime: '3 min',
-    thumbnailEmoji: '🔢',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Tu teléfono tiene una calculadora incorporada que puedes usar para cualquier operación matemática, desde sumar la cuenta del supermercado hasta calcular la propina en un restaurante. Es gratuita, ya viene instalada, y es mucho más rápida que buscar una calculadora de mano.
@@ -2325,7 +2325,7 @@ Un truco muy útil: si giras tu teléfono horizontalmente (de lado), la calculad
       },
       {
         title: 'Borra si te equivocas',
-        content: 'Si escribes un número equivocado, toca la tecla de borrar (⌫) para quitar el último dígito. Si quieres empezar de cero, toca "C" o "AC" (All Clear) para borrar todo el cálculo.',
+        content: 'Si escribes un número equivocado, toca la tecla de borrar () para quitar el último dígito. Si quieres empezar de cero, toca "C" o "AC" (All Clear) para borrar todo el cálculo.',
       },
       {
         title: 'Usa la calculadora científica (iPhone)',
@@ -2342,7 +2342,7 @@ Un truco muy útil: si giras tu teléfono horizontalmente (de lado), la calculad
     category: 'phone-guides' as any,
     tags: ['battery', 'power', 'settings', 'optimization', 'beginner'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     difficulty: 'Beginner',
     publishedAt: '2026-04-16',
     body: `Si tu teléfono se queda sin batería antes de que termine el día, no estás solo — es uno de los problemas más comunes. La buena noticia es que tu teléfono tiene funciones de ahorro de batería que pueden hacer que dure mucho más tiempo. Con unos ajustes sencillos, puedes ganar horas adicionales de uso.

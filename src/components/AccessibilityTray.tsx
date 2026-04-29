@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Accessibility } from 'lucide-react';
 import { FontSizeToggle } from '@/components/FontSizeToggle';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
@@ -22,27 +22,6 @@ import { LanguageToggle } from '@/components/LanguageToggle';
  */
 export function AccessibilityTray() {
   const [open, setOpen] = useState(false);
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
-
-  // Close the mobile tray on Escape or when the user taps outside it.
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(false);
-    };
-    const onPointer = (e: MouseEvent | TouchEvent) => {
-      if (!wrapperRef.current) return;
-      if (!wrapperRef.current.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener('keydown', onKey);
-    document.addEventListener('mousedown', onPointer);
-    document.addEventListener('touchstart', onPointer);
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.removeEventListener('mousedown', onPointer);
-      document.removeEventListener('touchstart', onPointer);
-    };
-  }, [open]);
 
   return (
     <>
@@ -60,7 +39,7 @@ export function AccessibilityTray() {
       </div>
 
       {/* Mobile: single button that expands inline */}
-      <div ref={wrapperRef} className="sm:hidden pointer-events-auto">
+      <div className="sm:hidden pointer-events-auto">
         <button
           type="button"
           aria-expanded={open}

@@ -8,7 +8,7 @@ export const guidesBatch30: Guide[] = [
     category: 'financial-tech',
     tags: ['Rakuten', 'cash back', 'online shopping', 'savings', 'browser extension'],
     readTime: '4 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Rakuten (formerly Ebates) is a free service that pays you a percentage of your purchase back as cash whenever you shop at a participating online store. Over 3,500 retailers participate, including Amazon, Walmart, Target, Macy's, Home Depot, Best Buy, Gap, and hundreds more. Cash back rates range from 1% to 15% or more depending on the store and current promotions.
@@ -54,7 +54,7 @@ Rakuten has been operating since 1999 and has paid over $3.5 billion in cash bac
     category: 'financial-tech',
     tags: ['Honey', 'coupon codes', 'promo codes', 'browser extension', 'savings'],
     readTime: '4 min',
-    thumbnailEmoji: '🍯',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Honey is a free browser extension that automatically tests coupon codes at checkout when you shop online. Instead of searching the web for promo codes and trying them one by one, Honey does it instantly — it tests dozens of codes, applies the one that saves you the most money, and shows you how much you saved.
@@ -101,7 +101,7 @@ Honey is available for Chrome, Firefox, Safari, Edge, and Opera on desktop compu
     category: 'financial-tech',
     tags: ['CamelCamelCamel', 'Amazon', 'price tracking', 'price history', 'deals'],
     readTime: '4 min',
-    thumbnailEmoji: '🐫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Amazon prices change constantly — sometimes several times per day. A product listed at $45 today might have been $28 last month or $62 last week. CamelCamelCamel is a free website that tracks and displays Amazon price history over time, so you can see if you're paying a fair price or if you should wait for the price to drop.
@@ -147,7 +147,7 @@ CamelCamelCamel also offers price drop alerts: tell it the price you want to pay
     category: 'app-guides',
     tags: ['GasBuddy', 'gas prices', 'fuel', 'savings', 'driving'],
     readTime: '4 min',
-    thumbnailEmoji: '⛽',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Gas prices vary significantly between stations in the same area — sometimes by $0.30-0.50 per gallon or more. GasBuddy is a free app that crowdsources gas prices from users and displays them on a map, so you can see which station has the cheapest fuel without driving around to check.
@@ -193,7 +193,7 @@ Gas prices fluctuate with oil markets, local taxes, and station competition. Kee
     category: 'app-guides',
     tags: ['Ticketmaster', 'mobile tickets', 'events', 'concerts', 'QR code'],
     readTime: '4 min',
-    thumbnailEmoji: '🎟️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Most major concerts, sports games, and live events have moved to mobile-only ticketing. Instead of paper tickets or printed PDFs, your ticket lives in an app and displays as a rotating QR code that you show to staff at the entrance. No paper, no printing required.
@@ -240,7 +240,7 @@ For people who struggle with apps or low vision: inform the venue's accessibilit
     category: 'phone-guides',
     tags: ['iPhone', 'Live Photos', 'camera', 'photos', 'iOS'],
     readTime: '4 min',
-    thumbnailEmoji: '📷',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Live Photos is an iPhone camera feature that captures a short moment of motion along with every photo — 1.5 seconds before and after the shutter tap. The result is a photo that comes alive when you press and hold on it, showing brief motion and the sounds of the moment.
@@ -286,7 +286,7 @@ Live Photos take slightly more storage space than regular photos because they in
     category: 'essential-skills',
     tags: ['QR code', 'QR generator', 'business', 'contact card', 'free tools'],
     readTime: '4 min',
-    thumbnailEmoji: '⬛',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `A QR code is a square barcode that, when scanned with a phone camera, opens a website, shows contact information, connects to Wi-Fi, or performs other actions. They're everywhere now — on restaurant menus, business cards, product packaging, store windows, and community bulletins.
@@ -335,7 +335,7 @@ The simplest QR code generators don't require creating an account — you enter 
     category: 'phone-guides',
     tags: ['RCS', 'Android', 'texting', 'Google Messages', 'iMessage'],
     readTime: '4 min',
-    thumbnailEmoji: '💬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `RCS (Rich Communication Services) is an upgraded texting standard that brings modern messaging features to Android-to-Android conversations: high-quality photo sharing, read receipts, typing indicators ("..." bubbles), group chat features, reactions, and messages sent over Wi-Fi instead of just cell data.
@@ -380,7 +380,7 @@ For RCS to work, you need the Google Messages app (or another RCS-compatible mes
     category: 'phone-guides',
     tags: ['Android', 'screen record', 'screen capture', 'video', 'tutorial'],
     readTime: '4 min',
-    thumbnailEmoji: '📹',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Android phones have a built-in screen recorder that creates a video of everything happening on your screen. No third-party app needed — it's part of the operating system on Android 10 and newer.
@@ -426,7 +426,7 @@ One thing to know: screen recording does capture notifications that appear durin
     category: 'mac-guides',
     tags: ['Mac', 'screen recording', 'macOS', 'video', 'tutorial'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `macOS has a built-in screen recorder that captures whatever is on your screen as a video file. It's part of the Screenshot toolbar in macOS Mojave and newer, and it's free with no time limits or watermarks.
@@ -472,7 +472,7 @@ The resulting video file appears on your Desktop by default. You can change wher
     category: 'windows-guides',
     tags: ['Windows 11', 'screen recording', 'Xbox Game Bar', 'video', 'tutorial'],
     readTime: '4 min',
-    thumbnailEmoji: '🎮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Windows 11 includes a built-in screen recorder called Xbox Game Bar. Despite the gaming name, it works for any on-screen activity — not just games. You can record a tutorial, capture a video call, document a tech problem, or save content from any app using this free, built-in tool.
@@ -516,7 +516,7 @@ For most recording needs, Xbox Game Bar's Capture widget is the right choice. Se
     category: 'communication',
     tags: ['iPhone', 'voice message', 'iMessage', 'audio message', 'Messages'],
     readTime: '3 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Voice messages in iMessage let you quickly record and send a short audio clip instead of typing a text. This is convenient when you're driving (using Siri or hands-free), when you have something complex to explain that would take too long to type, when you want to add tone and emotion that text doesn't convey, or when your hands are occupied.
@@ -560,7 +560,7 @@ WhatsApp also has voice messages that work between any phone type (not just iPho
     category: 'smart-home',
     tags: ['Google Home', 'routines', 'smart home', 'automation', 'Google Assistant'],
     readTime: '5 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Google Home Routines let you chain multiple smart home actions together and trigger them with a single voice command, a tap, or a schedule. Instead of saying five separate commands, you say one — and everything happens at once.
@@ -608,7 +608,7 @@ This is one of the highest-value features of a Google Home ecosystem — the inv
     category: 'smart-home',
     tags: ['Alexa', 'Amazon Echo', 'routines', 'smart home', 'automation'],
     readTime: '5 min',
-    thumbnailEmoji: '🔵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Alexa Routines are automated sequences of actions that happen when you say a phrase, at a specific time, or when a connected device triggers them. Instead of giving Alexa five separate commands every morning, one routine handles everything.
@@ -656,7 +656,7 @@ This level of home automation used to require expensive professional systems. Wi
     category: 'app-guides',
     tags: ['Walmart+', 'Walmart', 'subscription', 'delivery', 'savings'],
     readTime: '5 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Walmart+ is Walmart's paid membership program that competes directly with Amazon Prime. For $12.95/month or $98/year, members get free delivery on online orders, fuel discounts at Walmart and Murphy USA gas stations, access to Paramount+ streaming (included since 2023), free shipping with no minimum, mobile scan & go (scan and pay as you shop without waiting in a checkout line), prescription discounts, and early access to deals and product launches.
@@ -703,7 +703,7 @@ The Walmart app is required for mobile Scan & Go (which lets you scan items as y
     category: 'app-guides',
     tags: ['Amazon Prime', 'Prime benefits', 'streaming', 'Prime Video', 'savings'],
     readTime: '5 min',
-    thumbnailEmoji: '📦',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Amazon Prime costs $139 per year ($14.99/month), and most members use it primarily for free two-day shipping. But the membership includes a long list of other benefits that many Prime members don't know about — some worth significant money on their own.
@@ -747,7 +747,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
     category: 'phone-guides',
     tags: ['Samsung Galaxy', 'Android', 'tips', 'features', 'Galaxy phone'],
     readTime: '6 min',
-    thumbnailEmoji: '📱',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `Samsung Galaxy phones are among the most feature-rich Android phones available, but many of their most useful features are tucked away and easy to miss. Here are practical features that Galaxy owners find especially useful once they discover them.
@@ -796,7 +796,7 @@ A few benefits have their own apps: Prime Video has its own app (Prime Video), P
     category: 'mac-guides',
     tags: ['Mac', 'Dock', 'macOS', 'customize', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The Dock is the bar of app icons at the bottom of your Mac screen. It gives you one-click access to your favorite apps, recently used apps, and minimized windows. By default it contains Apple's apps — but you can fully customize it to hold your own favorites.
@@ -841,7 +841,7 @@ Keeping the Dock uncluttered (10-15 icons) makes it more useful than trying to p
     category: 'windows-guides',
     tags: ['Windows 11', 'taskbar', 'customize', 'productivity', 'start menu'],
     readTime: '4 min',
-    thumbnailEmoji: '💻',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The taskbar is the bar at the bottom of the Windows screen that holds the Start button, your pinned apps, and the system tray (clock, Wi-Fi, volume, etc.). Windows 11 redesigned the taskbar with a centered Start button and app icons, which many users initially found confusing after years of having them on the left.

@@ -8,7 +8,7 @@ export const guidesBatch84: Guide[] = [
     category: `safety-guides`,
     tags: [`parental controls`, `child safety`, `monitoring`, `social media`, `bark`],
     readTime: `6 min`,
-    thumbnailEmoji: `🔍`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Bark is a parental monitoring service that watches for warning signs in your child's texts, emails, and social media accounts — things like signs of bullying, depression, sexual content, or contact with strangers. Unlike apps that show parents every single message, Bark uses automated analysis to flag only the conversations that seem concerning. That means your child keeps some privacy, and you avoid the time-consuming job of reading hundreds of messages every day.
@@ -52,7 +52,7 @@ Setting up Bark takes about 20 to 30 minutes. You will create a parent account, 
     category: `safety-guides`,
     tags: [`parental controls`, `screen time`, `content filter`, `router`, `circle`],
     readTime: `7 min`,
-    thumbnailEmoji: `🛡️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Circle Home Plus is a small device that plugs into your home Wi-Fi router and gives you control over every gadget connected to your network. That includes smartphones, tablets, laptops, gaming consoles, smart TVs, and even smart speakers. Because it works at the network level, there is no app to install on every device — Circle sees all internet traffic passing through your router and can block or limit it based on rules you set.
@@ -95,7 +95,7 @@ Circle Home Plus costs about $129 upfront for the hardware, plus a $9.99 per mon
     category: `safety-guides`,
     tags: [`parental controls`, `location tracking`, `screen time`, `qustodio`, `monitoring`],
     readTime: `7 min`,
-    thumbnailEmoji: `👁️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Qustodio is a comprehensive parental control solution that works across virtually every device your child might use. Unlike tools that only work on one type of device, Qustodio has apps for iPhone, Android, Windows PC, Mac, Chromebook, and Kindle. This makes it a strong choice for families where children use a mix of different devices.
@@ -138,7 +138,7 @@ Parental controls include the ability to block specific websites or entire categ
     category: `entertainment`,
     tags: [`disney plus`, `kids mode`, `parental controls`, `streaming`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `🏰`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Disney+ Kids Mode is a special profile setting that turns the streaming app into a safe space for young viewers. When Kids Mode is turned on, the profile shows only content rated for children — think animated movies, educational shows, and age-appropriate Disney, Pixar, Marvel, and National Geographic content. The full Disney+ library, including PG-13 and TV-14 titles, is hidden from view.
@@ -176,7 +176,7 @@ You can create a Kids Mode profile for each child in your household with a Disne
     category: `entertainment`,
     tags: [`netflix`, `kids profile`, `parental controls`, `streaming`, `family`],
     readTime: `5 min`,
-    thumbnailEmoji: `🎬`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Netflix Kids profiles are a free feature available on all Netflix subscription plans. When you create a Kids profile for a child, Netflix automatically sets the content to only show titles rated for children — typically G, PG, and TV-Y through TV-G content. Older, more mature titles are not visible in the Kids profile at all.
@@ -215,7 +215,7 @@ Netflix allows up to five profiles per account, and each one can have its own na
     category: `entertainment`,
     tags: [`amazon kids`, `kids subscription`, `books for kids`, `educational apps`, `fire tablet`],
     readTime: `6 min`,
-    thumbnailEmoji: `📚`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amazon Kids+ (formerly known as FreeTime Unlimited) is a subscription service from Amazon that gives children ages 3 to 12 unlimited access to thousands of books, audiobooks, educational apps, games, videos, and Alexa skills — all curated and approved for kids. The subscription is available on Fire tablets, iPhone, iPad, Android phones, and the Amazon website.
@@ -257,7 +257,7 @@ The subscription costs $4.99 per month for Prime members and $7.99 per month wit
     category: `safety-guides`,
     tags: [`roblox`, `gaming safety`, `parental controls`, `kids online`, `spending limits`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎮`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Roblox is one of the most popular online platforms for children and teenagers, with hundreds of millions of accounts worldwide. It is not a single game but rather a platform where users can play millions of different games created by other users, as well as create their own games. Children typically love Roblox for its creativity and social elements — they can play with friends, explore new experiences, and build their own worlds.
@@ -300,7 +300,7 @@ Setting up these controls takes about 10 to 15 minutes and requires you to know 
     category: `safety-guides`,
     tags: [`minecraft`, `gaming for kids`, `parental guide`, `online safety`, `multiplayer`],
     readTime: `8 min`,
-    thumbnailEmoji: `⛏️`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Minecraft is a sandbox video game where players explore open worlds made of colorful blocks and can build almost anything they can imagine — houses, cities, machines, art, and more. There is no single objective or end goal. Players can play in "Creative Mode," where they have unlimited resources to build freely, or "Survival Mode," where they must gather materials, manage health, and defend against creatures called mobs.
@@ -345,7 +345,7 @@ The most important safety step for parents is to set up a Microsoft Family accou
     category: `safety-guides`,
     tags: [`fortnite`, `gaming parental controls`, `epic games`, `spending limits`, `online safety`],
     readTime: `7 min`,
-    thumbnailEmoji: `🎯`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Intermediate`,
     body: `Fortnite is one of the most popular video games in the world, especially among children ages 10 and up. It is a free-to-play game available on PlayStation, Xbox, Nintendo Switch, PC, and mobile devices. The main game mode is a "battle royale" where 100 players drop onto an island and compete until one player or team remains. While this sounds intense, the game's colorful cartoon style keeps the violence minimal and abstract.
@@ -388,7 +388,7 @@ The parental controls are accessed through the Epic Games website rather than th
     category: `app-guides`,
     tags: [`epic books`, `reading app for kids`, `children's books`, `audiobooks`, `digital library`],
     readTime: `5 min`,
-    thumbnailEmoji: `📖`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Epic! is a digital reading platform designed for children ages 12 and under. It gives children unlimited access to more than 40,000 books, audiobooks, learning videos, and quizzes across every interest and reading level. Titles include popular series like Dog Man, Captain Underpants, National Geographic Kids, and many more. The library also includes Spanish-language books, which makes it useful for bilingual families.
@@ -430,7 +430,7 @@ The app is available on iPhone, iPad, Android phones and tablets, Amazon Fire ta
     category: `app-guides`,
     tags: [`abcmouse`, `educational app`, `learning for kids`, `preschool`, `early education`],
     readTime: `5 min`,
-    thumbnailEmoji: `🐭`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `ABCmouse is an educational app for children ages 2 through 8 that covers the full curriculum for early childhood — reading and phonics, numbers and math, science, social studies, art, and music. The app is designed to guide children through a structured learning path, which means each activity builds on what the child has already learned rather than randomly jumping between topics.
@@ -468,7 +468,7 @@ The subscription costs $12.99 per month or $59.99 per year, and a one-month free
     category: `app-guides`,
     tags: [`duolingo`, `language learning`, `kids education`, `spanish for kids`, `learning app`],
     readTime: `5 min`,
-    thumbnailEmoji: `🦜`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Duolingo is a free language learning app that teaches more than 40 languages through short, game-like lessons. Each lesson takes about 5 to 10 minutes and uses matching, listening, speaking, and writing exercises to build vocabulary and grammar in a way that feels more like a game than traditional studying. The app awards points and streaks for daily practice, which motivates consistent learning over time.
@@ -507,7 +507,7 @@ Duolingo is free to use with ads. A Duolingo Super subscription at $6.99 per mon
     category: `app-guides`,
     tags: [`scratch`, `coding for kids`, `free coding`, `MIT`, `block coding`],
     readTime: `6 min`,
-    thumbnailEmoji: `🐱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Scratch is a free, visual programming language and online community developed by the MIT Media Lab. It is designed specifically to teach children ages 8 to 16 the foundational concepts of computer programming without requiring them to type complex code. Instead of writing code by hand, children snap together colorful blocks — like puzzle pieces — to create programs that make characters move, react to keyboard presses, play sounds, and tell stories.
@@ -550,7 +550,7 @@ Scratch requires a free account to save and share work, but children can start c
     category: `app-guides`,
     tags: [`code.org`, `hour of code`, `coding for kids`, `free education`, `computer science`],
     readTime: `6 min`,
-    thumbnailEmoji: `💻`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Code.org is a nonprofit organization with a mission to bring computer science education to every school in the world. Its website offers completely free, structured coding courses for students from kindergarten through high school, as well as for adults who want to learn programming fundamentals. Everything on Code.org is browser-based — there is nothing to download, and courses work on any device with a modern web browser.
@@ -592,7 +592,7 @@ Students can create a free Code.org account to save their progress and earn cert
     category: `app-guides`,
     tags: [`tynker`, `coding for kids`, `game design`, `minecraft mods`, `stem education`],
     readTime: `6 min`,
-    thumbnailEmoji: `🎲`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Tynker is an educational coding platform designed for children ages 5 through 17. It teaches programming through interactive games, animated stories, puzzle-solving, and creative projects. Like Code.org and Scratch, Tynker starts with visual block-based coding before gradually introducing text-based languages like Python and JavaScript for older learners who are ready to advance.
@@ -635,7 +635,7 @@ Tynker works on iPad, Android tablets, iPhone, Android phones, and web browsers 
     category: `essential-skills`,
     tags: [`apple family sharing`, `icloud family`, `app sharing`, `screen time`, `apple subscriptions`],
     readTime: `7 min`,
-    thumbnailEmoji: `🍎`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Apple Family Sharing is a built-in feature on iPhones, iPads, and Macs that allows up to six family members to share Apple subscriptions, app purchases, and iCloud storage under one family plan. When set up, everyone in the family can access shared subscriptions like Apple TV+, Apple Music, Apple Arcade, and iCloud+ without each person needing to pay separately. Apps purchased by one family member can also be shared with others at no extra cost.
@@ -678,7 +678,7 @@ Family Sharing works across all Apple devices: iPhone, iPad, iPod touch, Mac, an
     category: `essential-skills`,
     tags: [`microsoft family safety`, `windows parental controls`, `xbox parental controls`, `screen time`, `spending limits`],
     readTime: `7 min`,
-    thumbnailEmoji: `🪟`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Microsoft Family Safety is a free app and online service from Microsoft that gives parents control over how children use Windows computers, Xbox consoles, and Android devices. It works through the Microsoft Family group system — once you add your child's Microsoft account to your family group, you gain access to a dashboard where you can set screen time schedules, block inappropriate websites, cap spending in the Microsoft Store and Xbox store, and see a weekly activity report.
@@ -721,7 +721,7 @@ Microsoft Family Safety is free for anyone with a Microsoft account. The Family 
     category: `essential-skills`,
     tags: [`amazon parent dashboard`, `fire tablet`, `parental controls`, `screen time`, `kids content`],
     readTime: `6 min`,
-    thumbnailEmoji: `📊`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `The Amazon Parent Dashboard is a free online tool that lets parents manage their child's Amazon Fire tablet from anywhere — a phone, computer, or another tablet. From the dashboard, you can see what your child has been reading, watching, and playing, set daily time limits, approve new content requests, and add or remove access to specific apps and books.
@@ -764,7 +764,7 @@ The Parent Dashboard also allows children to send requests for new content. If y
     category: `essential-skills`,
     tags: [`fire kids tablet`, `amazon fire`, `tablet for kids`, `parental controls`, `kids tech`],
     readTime: `7 min`,
-    thumbnailEmoji: `📱`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Amazon Fire Kids tablets are purpose-built tablets for children, sold in versions for different age ranges — the Fire 7 Kids for ages 3 to 7, and the Fire HD 8 Kids and HD 10 Kids for ages 6 and up. These tablets come in protective foam cases in bright colors, include a two-year worry-free guarantee (Amazon replaces a broken tablet no questions asked), and come with one year of Amazon Kids+ included, giving children access to thousands of books, apps, and videos.
@@ -811,7 +811,7 @@ Setting up a Fire Kids tablet from scratch takes about 30 minutes. You will need
     category: `essential-skills`,
     tags: [`osmo`, `hands-on learning`, `educational toys`, `ipad learning`, `stem toys`],
     readTime: `6 min`,
-    thumbnailEmoji: `🧩`,
+    thumbnailEmoji: ``,
     publishedAt: `2026-04-20`,
     difficulty: `Beginner`,
     body: `Osmo is a learning system for children ages 3 to 12 that combines physical game pieces with iPad or Amazon Fire tablet apps. The system uses a small reflective device called the Osmo Base, which props up the tablet and attaches a small mirror piece over the front-facing camera. This allows the tablet's camera to see what is happening on the table in front of it — drawing on paper, placing letter tiles, counting objects — and respond in real time on the screen.

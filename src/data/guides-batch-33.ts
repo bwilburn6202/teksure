@@ -9,7 +9,7 @@ export const guidesBatch33: Guide[] = [
     category: 'entertainment',
     tags: ['vizio', 'smart tv', 'smartcast', 'streaming', 'tv setup'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -45,7 +45,7 @@ export const guidesBatch33: Guide[] = [
     category: 'entertainment',
     tags: ['google tv', 'chromecast', 'streaming', 'smart tv', 'google'],
     readTime: '5 min',
-    thumbnailEmoji: '📺',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -81,7 +81,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'standby mode', 'ios 17', 'nightstand', 'bedside clock'],
     readTime: '4 min',
-    thumbnailEmoji: '🌙',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -118,7 +118,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'lock screen', 'customize', 'ios 16', 'widgets'],
     readTime: '5 min',
-    thumbnailEmoji: '🎨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -154,7 +154,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'control center', 'customize', 'ios tips', 'flashlight'],
     readTime: '4 min',
-    thumbnailEmoji: '🎛️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -190,7 +190,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['iphone', 'dynamic island', 'live activities', 'iphone 14 pro', 'ios tips'],
     readTime: '4 min',
-    thumbnailEmoji: '⚫',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -226,7 +226,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['iphone', 'translate', 'language translation', 'travel', 'ios app'],
     readTime: '4 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -262,7 +262,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['android', 'google translate', 'translation', 'language', 'travel'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -299,7 +299,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['chrome', 'android', 'browser tips', 'reading mode', 'tab management'],
     readTime: '5 min',
-    thumbnailEmoji: '🌐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -336,7 +336,7 @@ export const guidesBatch33: Guide[] = [
     category: 'smart-home',
     tags: ['google home', 'smart home', 'google nest', 'home automation', 'google assistant'],
     readTime: '5 min',
-    thumbnailEmoji: '🏠',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -372,7 +372,7 @@ export const guidesBatch33: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'widgets', 'news feed', 'weather', 'windows tips'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -408,7 +408,7 @@ export const guidesBatch33: Guide[] = [
     category: 'mac-guides',
     tags: ['mac', 'notification center', 'widgets', 'macos', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '🖥️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -444,7 +444,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['chrome', 'profiles', 'multiple users', 'bookmarks', 'browser settings'],
     readTime: '4 min',
-    thumbnailEmoji: '👤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -480,7 +480,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['cgm', 'diabetes', 'blood sugar', 'dexcom', 'freestyle libre', 'medicare'],
     readTime: '6 min',
-    thumbnailEmoji: '📊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     steps: [
@@ -517,7 +517,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['apple watch', 'setup', 'fitness tracker', 'health', 'wearable'],
     readTime: '6 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -553,7 +553,7 @@ export const guidesBatch33: Guide[] = [
     category: 'health-tech',
     tags: ['wear os', 'smartwatch', 'android watch', 'samsung galaxy watch', 'fitness tracker'],
     readTime: '5 min',
-    thumbnailEmoji: '⌚',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -589,7 +589,7 @@ export const guidesBatch33: Guide[] = [
     category: 'communication',
     tags: ['imessage', 'games', 'family', 'iphone', 'gamepigeon'],
     readTime: '4 min',
-    thumbnailEmoji: '🎮',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -625,7 +625,7 @@ export const guidesBatch33: Guide[] = [
     category: 'essential-skills',
     tags: ['airdrop', 'iphone', 'mac', 'file sharing', 'apple'],
     readTime: '4 min',
-    thumbnailEmoji: '📤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -662,7 +662,7 @@ export const guidesBatch33: Guide[] = [
     category: 'phone-guides',
     tags: ['bixby', 'samsung', 'galaxy', 'voice assistant', 'android'],
     readTime: '5 min',
-    thumbnailEmoji: '🤖',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [
@@ -698,7 +698,7 @@ export const guidesBatch33: Guide[] = [
     category: 'windows-guides',
     tags: ['windows 11', 'laptop battery', 'battery saver', 'power settings', 'battery life'],
     readTime: '5 min',
-    thumbnailEmoji: '🔋',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     steps: [

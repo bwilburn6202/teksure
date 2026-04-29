@@ -69,7 +69,7 @@ export default function LlmKnowledgeBase() {
       />
       <Navbar />
 
-      <main className="flex-1 container py-10 md:py-14 space-y-8">
+      <main id="main-content" className="flex-1 container py-10 md:py-14 space-y-8">
         <header className="max-w-3xl">
           <Badge className="mb-3 bg-primary/10 text-primary hover:bg-primary/20">Implementation Studio</Badge>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-3">LLM Knowledge Base Builder</h1>
@@ -173,7 +173,7 @@ export default function LlmKnowledgeBase() {
                 Use this page as the product-facing config layer, then attach backend jobs for ingest, compile, and scheduled linting.
               </p>
               <Button asChild variant="secondary">
-                <Link to="/get-help">Start implementation sprint</Link>
+                <Link to="/book">Start implementation sprint</Link>
               </Button>
             </CardContent>
           </Card>

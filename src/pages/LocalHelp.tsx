@@ -65,7 +65,7 @@ export default function LocalHelp() {
         path="/local-help"
       />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="border-b border-border py-14">
           <div className="container max-w-2xl text-center">
             <MapPin className="h-10 w-10 text-primary mx-auto mb-3" />

@@ -132,8 +132,8 @@ export default function Favorites() {
       />
       <Navbar />
       <main id="main-content" className="min-h-screen bg-background">
-        {/* ── Hero ──────────────────────────────────────────────────────── */}
-        <section className="border-b border-border py-10 px-4">
+        {/* Header section with border-b */}
+        <section className="border-b border-border py-8 px-4">
           <div className="container">
             <div className="flex items-center gap-3 mb-2">
               <div className="p-2 bg-primary/10 rounded-xl">

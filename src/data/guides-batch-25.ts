@@ -8,7 +8,7 @@ export const guidesBatch25: Guide[] = [
     category: 'safety-guides',
     tags: ['Microsoft Authenticator', 'two-factor', 'security', 'login', 'account safety'],
     readTime: '5 min',
-    thumbnailEmoji: '🔐',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Microsoft Authenticator is a free app from Microsoft that works as an authentication tool for two-factor verification. When you sign in to an account, instead of only entering your password, you also verify your identity through the app — either by approving a notification or entering a 6-digit code that refreshes every 30 seconds.
@@ -55,7 +55,7 @@ The app is free, available on iPhone and Android, and stores your accounts secur
     category: 'smart-home',
     tags: ['Amazon Echo', 'Alexa', 'Echo Dot', 'smart speaker', 'setup'],
     readTime: '6 min',
-    thumbnailEmoji: '🔊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The Amazon Echo Dot is a small hockey puck-shaped speaker that runs Amazon's Alexa voice assistant. Once plugged in and set up, you can talk to Alexa to check the weather, play music, set timers, control smart lights, hear the news, make calls, and get answers to questions — all without touching any screen.
@@ -102,7 +102,7 @@ The Echo Dot does not have a screen. If you want a device with a screen for vide
     category: 'smart-home',
     tags: ['Alexa', 'Amazon Echo', 'voice commands', 'tips', 'smart home'],
     readTime: '6 min',
-    thumbnailEmoji: '🗣️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `If you have an Amazon Echo or Echo Dot, you are probably using only a fraction of what Alexa can do. Most people ask for weather and music and stop there — but Alexa has hundreds of built-in features that can genuinely make daily life more convenient, especially for hands-free situations.
@@ -149,7 +149,7 @@ Alexa also handles shopping lists. "Alexa, add milk to my shopping list" adds it
     category: 'app-guides',
     tags: ['Shutterfly', 'photo prints', 'photos', 'printing', 'gifts'],
     readTime: '5 min',
-    thumbnailEmoji: '🖼️',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Shutterfly is an online photo printing service that lets you order prints, photo books, canvas prints, mugs, calendars, and other personalized products using photos from your phone. You select your photos, choose a product, pay online, and your order arrives by mail. No trips to a photo counter required.
@@ -195,7 +195,7 @@ Competitors to Shutterfly include Walgreens Photos (for same-day pickup at a loc
     category: 'financial-tech',
     tags: ['PayPal', 'online payments', 'security', 'shopping', 'financial'],
     readTime: '6 min',
-    thumbnailEmoji: '💳',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `PayPal is an online payment service that acts as a middleman between your bank account or credit card and online stores. Instead of entering your credit card number on every website you shop at, you store your payment info securely with PayPal and pay using just your email address and password.
@@ -239,7 +239,7 @@ Your PayPal balance is not the same as a bank account — it is not FDIC insured
     category: 'government-civic',
     tags: ['Medicare', 'app', 'government', 'health insurance', 'benefits'],
     readTime: '5 min',
-    thumbnailEmoji: '🏥',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The official Medicare mobile app gives you quick access to your Medicare benefits, claims history, deductibles, and covered services — right from your phone. Instead of calling 1-800-MEDICARE or waiting for a paper explanation of benefits in the mail, you can check the status of a claim or verify coverage within seconds.
@@ -284,7 +284,7 @@ The app requires creating a Medicare.gov account if you do not have one. Your Me
     category: 'social-media',
     tags: ['Facebook Marketplace', 'buying', 'safety', 'online shopping', 'used items'],
     readTime: '5 min',
-    thumbnailEmoji: '🛒',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Facebook Marketplace is a free classifieds section on Facebook where individuals and businesses sell new and used items locally. You can find furniture, appliances, cars, electronics, clothing, and much more — often at significantly lower prices than retail.
@@ -330,7 +330,7 @@ Meeting safely in person is straightforward if you follow a few common-sense rul
     category: 'essential-skills',
     tags: ['Craigslist', 'classifieds', 'safety', 'online shopping', 'buying'],
     readTime: '5 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Craigslist is one of the oldest and largest online classifieds websites, operating in hundreds of cities across the US. People post listings for everything: furniture, jobs, apartments, cars, appliances, and services. Local Craigslist transactions are typically done in person, making them similar in many ways to Facebook Marketplace deals.
@@ -375,7 +375,7 @@ Craigslist itself advises users to never wire funds to strangers, never give fin
     category: 'internet-connectivity',
     tags: ['Wi-Fi', 'hotspot', 'free internet', 'public Wi-Fi', 'data saving'],
     readTime: '5 min',
-    thumbnailEmoji: '📶',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Free Wi-Fi hotspots are available in more places than most people realize. Libraries, coffee shops, fast food restaurants, grocery stores, hospitals, pharmacies, airports, shopping malls, hotels, and many parks all offer free wireless internet access. Connecting to free Wi-Fi instead of using your phone's cellular data can save significant data usage — especially if you have a limited data plan.
@@ -419,7 +419,7 @@ Grocery chains like Walmart, Target, and Kroger offer free Wi-Fi in-store. Publi
     category: 'essential-skills',
     tags: ['Senior Planet', 'free classes', 'seniors', 'digital literacy', 'learning'],
     readTime: '4 min',
-    thumbnailEmoji: '🎓',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Senior Planet is a nonprofit program run by AARP that provides free technology education specifically for adults 60 and older. They offer hundreds of free online classes covering everything from smartphone basics to Zoom video calls, social media, email management, online banking safety, and even coding and creative writing with AI.
@@ -466,7 +466,7 @@ In-person Senior Planet Centers are located in New York City, Los Angeles, Denve
     category: 'phone-guides',
     tags: ['Google Assistant', 'Android', 'voice commands', 'hands-free', 'tips'],
     readTime: '5 min',
-    thumbnailEmoji: '🎤',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Google Assistant is a voice assistant built into almost every Android phone. Like Apple's Siri, it responds when you say "Hey Google" (or press and hold the Home button). You can ask it questions, send text messages, set reminders, make phone calls, navigate to addresses, play music, and control your phone settings — all without touching the screen.
@@ -513,7 +513,7 @@ Some of the most useful everyday commands for older adults: checking medication 
     category: 'financial-tech',
     tags: ['Apple Cash', 'send money', 'iPhone', 'iMessage', 'payments'],
     readTime: '5 min',
-    thumbnailEmoji: '💸',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Apple Cash is Apple's built-in peer-to-peer payment service, integrated directly into the Messages app on iPhone. When you receive a payment through Apple Cash, the money sits in your virtual Apple Cash card in your Wallet app. You can use it to send money to others, spend it using Apple Pay, or transfer it to your bank account.
@@ -560,7 +560,7 @@ For most people, Apple Cash is simpler to set up and use than Venmo or Zelle, be
     category: 'phone-guides',
     tags: ['Android', 'Find My Device', 'lost phone', 'Google', 'security'],
     readTime: '5 min',
-    thumbnailEmoji: '🔎',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Google's Find My Device service lets you locate your Android phone on a map, play a sound to help you find it nearby, lock it remotely, and erase all data if you believe it is stolen — all from any web browser or another device.
@@ -606,7 +606,7 @@ Setting up a screen lock PIN or fingerprint is essential for this to matter — 
     category: 'health-tech',
     tags: ['CVS', 'Walgreens', 'pharmacy', 'prescriptions', 'app'],
     readTime: '5 min',
-    thumbnailEmoji: '💊',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The CVS and Walgreens pharmacy apps let you manage all your prescriptions in one place on your phone. Instead of calling the pharmacy or standing in line, you can request refills, check pickup status, view your prescription history, set reminders for when to pick up or take medication, and earn rewards points for store purchases.
@@ -655,7 +655,7 @@ For people who take multiple prescriptions, the medication reminder feature can 
     category: 'entertainment',
     tags: ['Apple Music', 'Family Sharing', 'music streaming', 'iPhone', 'subscription'],
     readTime: '5 min',
-    thumbnailEmoji: '🎵',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Apple Music's Family plan lets up to 6 people stream unlimited music on their own Apple devices — each with their own personal library, recommendations, and playlists — all for one monthly price. As of 2026, the Family plan costs $16.99 per month, compared to $10.99 per month for an individual plan. If two or more people in your household want Apple Music, the Family plan saves money immediately.
@@ -702,7 +702,7 @@ This same Family Sharing setup can be used to share Apple TV+, iCloud+ storage p
     category: 'entertainment',
     tags: ['Netflix', 'password sharing', 'household', 'streaming', 'account'],
     readTime: '5 min',
-    thumbnailEmoji: '🎬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Netflix changed how it handles account sharing. The new policy is based on "households" — people who live at your primary home address. Everyone in your household can use Netflix freely on any device inside the home. Family members who live elsewhere — children away at college, parents in a different city, adult children who have moved out — can no longer use your account for free under the new rules.
@@ -748,7 +748,7 @@ Managing your Netflix account — checking which devices are logged in and remov
     category: 'windows-guides',
     tags: ['Sticky Notes', 'Windows', 'reminders', 'productivity', 'notes'],
     readTime: '4 min',
-    thumbnailEmoji: '📝',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Windows Sticky Notes is a free, built-in app that creates colorful digital note cards that sit on your desktop. Every time you start your computer, your sticky notes appear on screen — making them perfect for reminders, to-do lists, shopping lists, phone numbers, or anything else you want to see each time you log in.
@@ -794,7 +794,7 @@ When you no longer need a note, hover over it and click the X button to delete i
     category: 'phone-guides',
     tags: ['iPhone', 'Mail app', 'Gmail', 'email setup', 'iOS'],
     readTime: '4 min',
-    thumbnailEmoji: '📬',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `iPhone's built-in Mail app can display all your email accounts — Gmail, Yahoo Mail, Outlook/Hotmail, iCloud, and more — in one unified inbox. Instead of opening separate apps for each email address, you see all your messages together in one place, or view each account separately.
@@ -840,7 +840,7 @@ If you prefer using a dedicated app (like the Gmail app), you do not need to add
     category: 'windows-guides',
     tags: ['Windows', 'search', 'find files', 'tips', 'productivity'],
     readTime: '4 min',
-    thumbnailEmoji: '🔍',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `The search function built into Windows is one of the most underused tools on the computer. Instead of clicking through folders trying to remember where you saved something, you can press a key combination and type a few letters — Windows finds the file, app, or setting immediately.
@@ -887,7 +887,7 @@ In Windows 11, Microsoft improved search significantly — it can now search ins
     category: 'health-tech',
     tags: ['iPhone', 'Health app', 'medical records', 'patient data', 'iOS'],
     readTime: '5 min',
-    thumbnailEmoji: '🏨',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Intermediate',
     body: `iPhone's built-in Health app can connect directly to your doctor's electronic health record system and pull your medical data — lab results, medications, allergies, immunizations, conditions, and vital signs — directly to your phone. This information updates automatically when your care team adds new data.
@@ -934,7 +934,7 @@ Not every doctor's office or small practice supports this yet — it is most rel
     category: 'entertainment',
     tags: ['Amazon Music', 'streaming', 'Prime Music', 'music', 'Amazon'],
     readTime: '5 min',
-    thumbnailEmoji: '🎧',
+    thumbnailEmoji: '',
     publishedAt: '2026-04-19',
     difficulty: 'Beginner',
     body: `Amazon offers music streaming at three different levels, and it can be confusing to understand what you get at each tier. This guide breaks it down clearly so you know exactly what you are paying for — or what you are already getting for free.
