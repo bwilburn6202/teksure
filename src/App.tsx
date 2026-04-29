@@ -1126,6 +1126,13 @@ const MisinfoSpotting        = lazy(() => import("./pages/tools/MisinfoSpotting"
 const NewsletterPicks        = lazy(() => import("./pages/tools/NewsletterPicks"));
 const MediaLiteracySeniors   = lazy(() => import("./pages/tools/MediaLiteracySeniors"));
 
+// ── Cycle 136 (April 29 2026) — memory + cognitive ──
+const MemoryAppTraining      = lazy(() => import("./pages/tools/MemoryAppTraining"));
+const ToDoListSeniors        = lazy(() => import("./pages/tools/ToDoListSeniors"));
+const CalendarRemindersApps  = lazy(() => import("./pages/tools/CalendarRemindersApps"));
+const SudokuApps             = lazy(() => import("./pages/tools/SudokuApps"));
+const MathChallengeApps      = lazy(() => import("./pages/tools/MathChallengeApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2795,6 +2802,13 @@ const AppContent = () => {
           <Route path="/tools/misinfo-spotting" element={<MisinfoSpotting />} />
           <Route path="/tools/newsletter-picks" element={<NewsletterPicks />} />
           <Route path="/tools/media-literacy-seniors" element={<MediaLiteracySeniors />} />
+
+          {/* Cycle 136 — memory + cognitive */}
+          <Route path="/tools/memory-app-training" element={<MemoryAppTraining />} />
+          <Route path="/tools/to-do-list-seniors" element={<ToDoListSeniors />} />
+          <Route path="/tools/calendar-reminders-apps" element={<CalendarRemindersApps />} />
+          <Route path="/tools/sudoku-apps" element={<SudokuApps />} />
+          <Route path="/tools/math-challenge-apps" element={<MathChallengeApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
