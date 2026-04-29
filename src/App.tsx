@@ -692,6 +692,13 @@ const FraudAlertSetup        = lazy(() => import("./pages/tools/FraudAlertSetup"
 const RetirementCalculatorPicks = lazy(() => import("./pages/tools/RetirementCalculatorPicks"));
 const CreditFreezeHowTo      = lazy(() => import("./pages/tools/CreditFreezeHowTo"));
 
+// ── Cycle 74 (April 29 2026) — smart speakers + AI voice ──
+const AlexaRoutinesPrimer    = lazy(() => import("./pages/tools/AlexaRoutinesPrimer"));
+const GoogleHomeBasics       = lazy(() => import("./pages/tools/GoogleHomeBasics"));
+const ChatGptForSeniors      = lazy(() => import("./pages/tools/ChatGptForSeniors"));
+const AppleIntelligenceGuide = lazy(() => import("./pages/tools/AppleIntelligenceGuide"));
+const VoiceShoppingTips      = lazy(() => import("./pages/tools/VoiceShoppingTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1927,6 +1934,13 @@ const AppContent = () => {
           <Route path="/tools/fraud-alert-setup" element={<FraudAlertSetup />} />
           <Route path="/tools/retirement-calculator-picks" element={<RetirementCalculatorPicks />} />
           <Route path="/tools/credit-freeze-how-to" element={<CreditFreezeHowTo />} />
+
+          {/* Cycle 74 — smart speakers + AI voice */}
+          <Route path="/tools/alexa-routines-primer" element={<AlexaRoutinesPrimer />} />
+          <Route path="/tools/google-home-basics" element={<GoogleHomeBasics />} />
+          <Route path="/tools/chatgpt-for-seniors" element={<ChatGptForSeniors />} />
+          <Route path="/tools/apple-intelligence-guide" element={<AppleIntelligenceGuide />} />
+          <Route path="/tools/voice-shopping-tips" element={<VoiceShoppingTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
