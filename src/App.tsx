@@ -1168,6 +1168,13 @@ const FootCareSeniors        = lazy(() => import("./pages/tools/FootCareSeniors"
 const SkinCareAfter65        = lazy(() => import("./pages/tools/SkinCareAfter65"));
 const HairThinningOptions    = lazy(() => import("./pages/tools/HairThinningOptions"));
 
+// ── Cycle 142 (April 29 2026) — social + emotional ──
+const LonelinessReliefGuide  = lazy(() => import("./pages/tools/LonelinessReliefGuide"));
+const SeniorMentorshipGuide  = lazy(() => import("./pages/tools/SeniorMentorshipGuide"));
+const DatingAfter60Guide     = lazy(() => import("./pages/tools/DatingAfter60Guide"));
+const SeniorRoommateMatching = lazy(() => import("./pages/tools/SeniorRoommateMatching"));
+const JoinASeniorClub        = lazy(() => import("./pages/tools/JoinASeniorClub"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2869,6 +2876,11 @@ const AppContent = () => {
           <Route path="/tools/foot-care-seniors" element={<FootCareSeniors />} />
           <Route path="/tools/skin-care-after-65" element={<SkinCareAfter65 />} />
           <Route path="/tools/hair-thinning-options" element={<HairThinningOptions />} />
+          <Route path="/tools/loneliness-relief-guide" element={<LonelinessReliefGuide />} />
+          <Route path="/tools/senior-mentorship-guide" element={<SeniorMentorshipGuide />} />
+          <Route path="/tools/dating-after-60-guide" element={<DatingAfter60Guide />} />
+          <Route path="/tools/senior-roommate-matching" element={<SeniorRoommateMatching />} />
+          <Route path="/tools/join-a-senior-club" element={<JoinASeniorClub />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
