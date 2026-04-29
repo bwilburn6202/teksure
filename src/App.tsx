@@ -888,6 +888,13 @@ const SeniorTrainTravel      = lazy(() => import("./pages/tools/SeniorTrainTrave
 const RoadTripPlanners       = lazy(() => import("./pages/tools/RoadTripPlanners"));
 const CruisePicks            = lazy(() => import("./pages/tools/CruisePicks"));
 
+// ── Cycle 102 (April 29 2026) — senior workforce ──
+const PartTimeJobsForSeniors = lazy(() => import("./pages/tools/PartTimeJobsForSeniors"));
+const RetirementHobbyMonetize = lazy(() => import("./pages/tools/RetirementHobbyMonetize"));
+const EncoreCareers          = lazy(() => import("./pages/tools/EncoreCareers"));
+const OnlineBusinessForSeniors = lazy(() => import("./pages/tools/OnlineBusinessForSeniors"));
+const FreelanceSenior        = lazy(() => import("./pages/tools/FreelanceSenior"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2319,6 +2326,13 @@ const AppContent = () => {
           <Route path="/tools/senior-train-travel" element={<SeniorTrainTravel />} />
           <Route path="/tools/road-trip-planners" element={<RoadTripPlanners />} />
           <Route path="/tools/cruise-picks" element={<CruisePicks />} />
+
+          {/* Cycle 102 — senior workforce */}
+          <Route path="/tools/part-time-jobs-for-seniors" element={<PartTimeJobsForSeniors />} />
+          <Route path="/tools/retirement-hobby-monetize" element={<RetirementHobbyMonetize />} />
+          <Route path="/tools/encore-careers" element={<EncoreCareers />} />
+          <Route path="/tools/online-business-for-seniors" element={<OnlineBusinessForSeniors />} />
+          <Route path="/tools/freelance-senior" element={<FreelanceSenior />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
