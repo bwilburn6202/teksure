@@ -1574,6 +1574,13 @@ const AARPMembershipUse      = lazy(() => import("./pages/tools/AARPMembershipUs
 const SeniorAirfareDeals     = lazy(() => import("./pages/tools/SeniorAirfareDeals"));
 const SeniorRentalCarDeals   = lazy(() => import("./pages/tools/SeniorRentalCarDeals"));
 
+// ── Cycle 200 (April 29 2026) — grandparenting ──
+const GrandkidVisitChecklist = lazy(() => import("./pages/tools/GrandkidVisitChecklist"));
+const BabysittingTipsSeniors = lazy(() => import("./pages/tools/BabysittingTipsSeniors"));
+const AttendGrandchildWedding = lazy(() => import("./pages/tools/AttendGrandchildWedding"));
+const GrandparentLegalRights = lazy(() => import("./pages/tools/GrandparentLegalRights"));
+const GrandkidSummerVisits   = lazy(() => import("./pages/tools/GrandkidSummerVisits"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3565,6 +3572,11 @@ const AppContent = () => {
           <Route path="/tools/aarp-membership-use" element={<AARPMembershipUse />} />
           <Route path="/tools/senior-airfare-deals" element={<SeniorAirfareDeals />} />
           <Route path="/tools/senior-rental-car-deals" element={<SeniorRentalCarDeals />} />
+          <Route path="/tools/grandkid-visit-checklist" element={<GrandkidVisitChecklist />} />
+          <Route path="/tools/babysitting-tips-seniors" element={<BabysittingTipsSeniors />} />
+          <Route path="/tools/attend-grandchild-wedding" element={<AttendGrandchildWedding />} />
+          <Route path="/tools/grandparent-legal-rights" element={<GrandparentLegalRights />} />
+          <Route path="/tools/grandkid-summer-visits" element={<GrandkidSummerVisits />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
