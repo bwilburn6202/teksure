@@ -475,6 +475,13 @@ const ResumeBuilderApps      = lazy(() => import("./pages/tools/ResumeBuilderApp
 const SmartHomePlatformPick  = lazy(() => import("./pages/tools/SmartHomePlatformPick"));
 const SmartBulbPicker        = lazy(() => import("./pages/tools/SmartBulbPicker"));
 
+// ── Cycle 43 (April 29 2026) — printer/fax/cam/weather/walk ──
+const SeniorPrinterPicker    = lazy(() => import("./pages/tools/SeniorPrinterPicker"));
+const OnlineFaxCoach         = lazy(() => import("./pages/tools/OnlineFaxCoach"));
+const OutdoorSecurityCamera  = lazy(() => import("./pages/tools/OutdoorSecurityCamera"));
+const HomeWeatherStation     = lazy(() => import("./pages/tools/HomeWeatherStation"));
+const WalkingPadStandingDesk = lazy(() => import("./pages/tools/WalkingPadStandingDesk"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1493,6 +1500,13 @@ const AppContent = () => {
           <Route path="/tools/resume-builder-apps" element={<ResumeBuilderApps />} />
           <Route path="/tools/smart-home-platform-pick" element={<SmartHomePlatformPick />} />
           <Route path="/tools/smart-bulb-picker" element={<SmartBulbPicker />} />
+
+          {/* Cycle 43 — printer / fax / cam / weather / walk */}
+          <Route path="/tools/senior-printer-picker" element={<SeniorPrinterPicker />} />
+          <Route path="/tools/online-fax-coach" element={<OnlineFaxCoach />} />
+          <Route path="/tools/outdoor-security-camera" element={<OutdoorSecurityCamera />} />
+          <Route path="/tools/home-weather-station" element={<HomeWeatherStation />} />
+          <Route path="/tools/walking-pad-standing-desk" element={<WalkingPadStandingDesk />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
