@@ -1322,6 +1322,13 @@ const CGMForNonDiabetics     = lazy(() => import("./pages/tools/CGMForNonDiabeti
 const WalkingProgramFreshStart = lazy(() => import("./pages/tools/WalkingProgramFreshStart"));
 const PelotonAlternatives    = lazy(() => import("./pages/tools/PelotonAlternatives"));
 
+// ── Cycle 164 (April 29 2026) — medical management ──
+const HospitalCompareGuide   = lazy(() => import("./pages/tools/HospitalCompareGuide"));
+const PreSurgeryChecklist    = lazy(() => import("./pages/tools/PreSurgeryChecklist"));
+const ERVsUrgentCare         = lazy(() => import("./pages/tools/ERVsUrgentCare"));
+const MedicalBillNegotiation = lazy(() => import("./pages/tools/MedicalBillNegotiation"));
+const PrescriptionPriceShop  = lazy(() => import("./pages/tools/PrescriptionPriceShop"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3133,6 +3140,11 @@ const AppContent = () => {
           <Route path="/tools/cgm-for-non-diabetics" element={<CGMForNonDiabetics />} />
           <Route path="/tools/walking-program-fresh-start" element={<WalkingProgramFreshStart />} />
           <Route path="/tools/peloton-alternatives" element={<PelotonAlternatives />} />
+          <Route path="/tools/hospital-compare-guide" element={<HospitalCompareGuide />} />
+          <Route path="/tools/pre-surgery-checklist" element={<PreSurgeryChecklist />} />
+          <Route path="/tools/er-vs-urgent-care" element={<ERVsUrgentCare />} />
+          <Route path="/tools/medical-bill-negotiation" element={<MedicalBillNegotiation />} />
+          <Route path="/tools/prescription-price-shop" element={<PrescriptionPriceShop />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
