@@ -594,6 +594,13 @@ const HelocCoach             = lazy(() => import("./pages/tools/HelocCoach"));
 const BecomeAirbnbHost       = lazy(() => import("./pages/tools/BecomeAirbnbHost"));
 const SuddenMoneyChecklist   = lazy(() => import("./pages/tools/SuddenMoneyChecklist"));
 
+// ── Cycle 60 (April 29 2026) — appraisers/auctions/coins/cards/collectibles ──
+const FindAnAppraiser        = lazy(() => import("./pages/tools/FindAnAppraiser"));
+const SellAntiquesAuctions   = lazy(() => import("./pages/tools/SellAntiquesAuctions"));
+const CoinCollectingApps     = lazy(() => import("./pages/tools/CoinCollectingApps"));
+const SportsCardsComics      = lazy(() => import("./pages/tools/SportsCardsComics"));
+const OldCollectiblesReality = lazy(() => import("./pages/tools/OldCollectiblesReality"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1731,6 +1738,13 @@ const AppContent = () => {
           <Route path="/tools/heloc-coach" element={<HelocCoach />} />
           <Route path="/tools/become-airbnb-host" element={<BecomeAirbnbHost />} />
           <Route path="/tools/sudden-money-checklist" element={<SuddenMoneyChecklist />} />
+
+          {/* Cycle 60 — appraisers / auctions / coins / cards / collectibles */}
+          <Route path="/tools/find-an-appraiser" element={<FindAnAppraiser />} />
+          <Route path="/tools/sell-antiques-auctions" element={<SellAntiquesAuctions />} />
+          <Route path="/tools/coin-collecting-apps" element={<CoinCollectingApps />} />
+          <Route path="/tools/sports-cards-comics" element={<SportsCardsComics />} />
+          <Route path="/tools/old-collectibles-reality" element={<OldCollectiblesReality />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
