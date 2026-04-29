@@ -636,6 +636,13 @@ const OfflineMapsHowTo       = lazy(() => import("./pages/tools/OfflineMapsHowTo
 const DigitalLegacyPlanner   = lazy(() => import("./pages/tools/DigitalLegacyPlanner"));
 const MemorialFacebookGuide  = lazy(() => import("./pages/tools/MemorialFacebookGuide"));
 
+// ── Cycle 66 (April 29 2026) — health tech ──
+const GlucoseMonitorPicks    = lazy(() => import("./pages/tools/GlucoseMonitorPicks"));
+const MedicalAlertCompare    = lazy(() => import("./pages/tools/MedicalAlertCompare"));
+const TelehealthBasics       = lazy(() => import("./pages/tools/TelehealthBasics"));
+const HearingTestApps        = lazy(() => import("./pages/tools/HearingTestApps"));
+const WellnessRingPicks      = lazy(() => import("./pages/tools/WellnessRingPicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1815,6 +1822,13 @@ const AppContent = () => {
           <Route path="/tools/offline-maps-how-to" element={<OfflineMapsHowTo />} />
           <Route path="/tools/digital-legacy-planner" element={<DigitalLegacyPlanner />} />
           <Route path="/tools/memorial-facebook-guide" element={<MemorialFacebookGuide />} />
+
+          {/* Cycle 66 — health tech */}
+          <Route path="/tools/glucose-monitor-picks" element={<GlucoseMonitorPicks />} />
+          <Route path="/tools/medical-alert-compare" element={<MedicalAlertCompare />} />
+          <Route path="/tools/telehealth-basics" element={<TelehealthBasics />} />
+          <Route path="/tools/hearing-test-apps" element={<HearingTestApps />} />
+          <Route path="/tools/wellness-ring-picks" element={<WellnessRingPicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
