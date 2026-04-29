@@ -643,6 +643,13 @@ const TelehealthBasics       = lazy(() => import("./pages/tools/TelehealthBasics
 const HearingTestApps        = lazy(() => import("./pages/tools/HearingTestApps"));
 const WellnessRingPicks      = lazy(() => import("./pages/tools/WellnessRingPicks"));
 
+// ── Cycle 67 (April 29 2026) — scam defenses ──
+const GrandparentScamDefense = lazy(() => import("./pages/tools/GrandparentScamDefense"));
+const IrsScamPlaybook        = lazy(() => import("./pages/tools/IrsScamPlaybook"));
+const FakeAmazonCalls        = lazy(() => import("./pages/tools/FakeAmazonCalls"));
+const MedicareScamGuide      = lazy(() => import("./pages/tools/MedicareScamGuide"));
+const PuppyScamGuide         = lazy(() => import("./pages/tools/PuppyScamGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1829,6 +1836,13 @@ const AppContent = () => {
           <Route path="/tools/telehealth-basics" element={<TelehealthBasics />} />
           <Route path="/tools/hearing-test-apps" element={<HearingTestApps />} />
           <Route path="/tools/wellness-ring-picks" element={<WellnessRingPicks />} />
+
+          {/* Cycle 67 — scam defenses */}
+          <Route path="/tools/grandparent-scam-defense" element={<GrandparentScamDefense />} />
+          <Route path="/tools/irs-scam-playbook" element={<IrsScamPlaybook />} />
+          <Route path="/tools/fake-amazon-calls" element={<FakeAmazonCalls />} />
+          <Route path="/tools/medicare-scam-guide" element={<MedicareScamGuide />} />
+          <Route path="/tools/puppy-scam-guide" element={<PuppyScamGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
