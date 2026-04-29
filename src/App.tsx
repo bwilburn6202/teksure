@@ -1357,6 +1357,13 @@ const PrintableHobby3D       = lazy(() => import("./pages/tools/PrintableHobby3D
 const RaspberryPiSeniors     = lazy(() => import("./pages/tools/RaspberryPiSeniors"));
 const CodingHobbyForSeniors  = lazy(() => import("./pages/tools/CodingHobbyForSeniors"));
 
+// ── Cycle 169 (April 29 2026) — senior movement ──
+const TaiChiBeginner         = lazy(() => import("./pages/tools/TaiChiBeginner"));
+const QigongForSeniors       = lazy(() => import("./pages/tools/QigongForSeniors"));
+const SeniorCyclingTips      = lazy(() => import("./pages/tools/SeniorCyclingTips"));
+const HikingForSeniors       = lazy(() => import("./pages/tools/HikingForSeniors"));
+const AquaticExerciseGuide   = lazy(() => import("./pages/tools/AquaticExerciseGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3193,6 +3200,11 @@ const AppContent = () => {
           <Route path="/tools/printable-hobby-3d" element={<PrintableHobby3D />} />
           <Route path="/tools/raspberry-pi-seniors" element={<RaspberryPiSeniors />} />
           <Route path="/tools/coding-hobby-for-seniors" element={<CodingHobbyForSeniors />} />
+          <Route path="/tools/tai-chi-beginner" element={<TaiChiBeginner />} />
+          <Route path="/tools/qigong-for-seniors" element={<QigongForSeniors />} />
+          <Route path="/tools/senior-cycling-tips" element={<SeniorCyclingTips />} />
+          <Route path="/tools/hiking-for-seniors" element={<HikingForSeniors />} />
+          <Route path="/tools/aquatic-exercise-guide" element={<AquaticExerciseGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
