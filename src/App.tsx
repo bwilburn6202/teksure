@@ -762,6 +762,13 @@ const GasLeakDetect          = lazy(() => import("./pages/tools/GasLeakDetect"))
 const CarbonMonoxidePicks    = lazy(() => import("./pages/tools/CarbonMonoxidePicks"));
 const EmergencyKitChecklist  = lazy(() => import("./pages/tools/EmergencyKitChecklist"));
 
+// ── Cycle 84 (April 29 2026) — weather + outdoor ──
+const WeatherAppPicks        = lazy(() => import("./pages/tools/WeatherAppPicks"));
+const GardenWeatherTools     = lazy(() => import("./pages/tools/GardenWeatherTools"));
+const HikingGpsApps          = lazy(() => import("./pages/tools/HikingGpsApps"));
+const BackyardSafetyAudit    = lazy(() => import("./pages/tools/BackyardSafetyAudit"));
+const SnowSafetyTech         = lazy(() => import("./pages/tools/SnowSafetyTech"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2067,6 +2074,13 @@ const AppContent = () => {
           <Route path="/tools/gas-leak-detect" element={<GasLeakDetect />} />
           <Route path="/tools/carbon-monoxide-picks" element={<CarbonMonoxidePicks />} />
           <Route path="/tools/emergency-kit-checklist" element={<EmergencyKitChecklist />} />
+
+          {/* Cycle 84 — weather + outdoor */}
+          <Route path="/tools/weather-app-picks" element={<WeatherAppPicks />} />
+          <Route path="/tools/garden-weather-tools" element={<GardenWeatherTools />} />
+          <Route path="/tools/hiking-gps-apps" element={<HikingGpsApps />} />
+          <Route path="/tools/backyard-safety-audit" element={<BackyardSafetyAudit />} />
+          <Route path="/tools/snow-safety-tech" element={<SnowSafetyTech />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
