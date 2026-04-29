@@ -1672,6 +1672,13 @@ const MealPrepForOne            = lazy(() => import("./pages/tools/MealPrepForOn
 const HighFiberRecipes          = lazy(() => import("./pages/tools/HighFiberRecipes"));
 const OmegaFishOilGuide         = lazy(() => import("./pages/tools/OmegaFishOilGuide"));
 
+// ── Cycle 214 (April 29 2026) — auto deeper ──
+const CarBuyingTipsSeniors      = lazy(() => import("./pages/tools/CarBuyingTipsSeniors"));
+const AutoLeaseVsBuy            = lazy(() => import("./pages/tools/AutoLeaseVsBuy"));
+const ElectricCarsForSeniors    = lazy(() => import("./pages/tools/ElectricCarsForSeniors"));
+const CarTradeInApps            = lazy(() => import("./pages/tools/CarTradeInApps"));
+const AutoExtendedWarranty      = lazy(() => import("./pages/tools/AutoExtendedWarranty"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3733,6 +3740,11 @@ const AppContent = () => {
           <Route path="/tools/meal-prep-for-one" element={<MealPrepForOne />} />
           <Route path="/tools/high-fiber-recipes" element={<HighFiberRecipes />} />
           <Route path="/tools/omega-fish-oil-guide" element={<OmegaFishOilGuide />} />
+          <Route path="/tools/car-buying-tips-seniors" element={<CarBuyingTipsSeniors />} />
+          <Route path="/tools/auto-lease-vs-buy" element={<AutoLeaseVsBuy />} />
+          <Route path="/tools/electric-cars-for-seniors" element={<ElectricCarsForSeniors />} />
+          <Route path="/tools/car-trade-in-apps" element={<CarTradeInApps />} />
+          <Route path="/tools/auto-extended-warranty" element={<AutoExtendedWarranty />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
