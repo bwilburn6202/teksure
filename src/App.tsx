@@ -1644,6 +1644,13 @@ const BlogStartingSenior       = lazy(() => import("./pages/tools/BlogStartingSe
 const PoetryAppsSenior         = lazy(() => import("./pages/tools/PoetryAppsSenior"));
 const ShortStoryWriting        = lazy(() => import("./pages/tools/ShortStoryWriting"));
 
+// ── Cycle 210 (April 29 2026) — file mgmt + display ──
+const WindowsFileExplorerBasics = lazy(() => import("./pages/tools/WindowsFileExplorerBasics"));
+const MacFinderBasics           = lazy(() => import("./pages/tools/MacFinderBasics"));
+const CloudFolderOrganization   = lazy(() => import("./pages/tools/CloudFolderOrganization"));
+const DarkModeGuide             = lazy(() => import("./pages/tools/DarkModeGuide"));
+const WallpaperBackgroundGuide  = lazy(() => import("./pages/tools/WallpaperBackgroundGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3685,6 +3692,11 @@ const AppContent = () => {
           <Route path="/tools/blog-starting-senior" element={<BlogStartingSenior />} />
           <Route path="/tools/poetry-apps-senior" element={<PoetryAppsSenior />} />
           <Route path="/tools/short-story-writing" element={<ShortStoryWriting />} />
+          <Route path="/tools/windows-file-explorer-basics" element={<WindowsFileExplorerBasics />} />
+          <Route path="/tools/mac-finder-basics" element={<MacFinderBasics />} />
+          <Route path="/tools/cloud-folder-organization" element={<CloudFolderOrganization />} />
+          <Route path="/tools/dark-mode-guide" element={<DarkModeGuide />} />
+          <Route path="/tools/wallpaper-background-guide" element={<WallpaperBackgroundGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
