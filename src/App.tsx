@@ -1196,6 +1196,13 @@ const MedicareScamDefense    = lazy(() => import("./pages/tools/MedicareScamDefe
 const SweepstakesScamGuide   = lazy(() => import("./pages/tools/SweepstakesScamGuide"));
 const CharityScamCheck       = lazy(() => import("./pages/tools/CharityScamCheck"));
 
+// ── Cycle 146 (April 29 2026) — smart home additions ──
+const SmartBlindsForSeniors  = lazy(() => import("./pages/tools/SmartBlindsForSeniors"));
+const RobotMopGuide          = lazy(() => import("./pages/tools/RobotMopGuide"));
+const AirPurifierPicks       = lazy(() => import("./pages/tools/AirPurifierPicks"));
+const MatterStandardExplained = lazy(() => import("./pages/tools/MatterStandardExplained"));
+const SmartCeilingFanGuide   = lazy(() => import("./pages/tools/SmartCeilingFanGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2917,6 +2924,11 @@ const AppContent = () => {
           <Route path="/tools/medicare-scam-defense" element={<MedicareScamDefense />} />
           <Route path="/tools/sweepstakes-scam-guide" element={<SweepstakesScamGuide />} />
           <Route path="/tools/charity-scam-check" element={<CharityScamCheck />} />
+          <Route path="/tools/smart-blinds-for-seniors" element={<SmartBlindsForSeniors />} />
+          <Route path="/tools/robot-mop-guide" element={<RobotMopGuide />} />
+          <Route path="/tools/air-purifier-picks" element={<AirPurifierPicks />} />
+          <Route path="/tools/matter-standard-explained" element={<MatterStandardExplained />} />
+          <Route path="/tools/smart-ceiling-fan-guide" element={<SmartCeilingFanGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
