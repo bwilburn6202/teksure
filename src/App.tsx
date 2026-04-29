@@ -468,6 +468,13 @@ const GrandkidInternetSafety = lazy(() => import("./pages/tools/GrandkidInternet
 const AppsGrandkidsUseExplained = lazy(() => import("./pages/tools/AppsGrandkidsUseExplained"));
 const GameConsoleGiftGuide   = lazy(() => import("./pages/tools/GameConsoleGiftGuide"));
 
+// ── Cycle 42 (April 29 2026) — AI/resume/smart home ──
+const AiComparisonCoach      = lazy(() => import("./pages/tools/AiComparisonCoach"));
+const AiImageGenerators      = lazy(() => import("./pages/tools/AiImageGenerators"));
+const ResumeBuilderApps      = lazy(() => import("./pages/tools/ResumeBuilderApps"));
+const SmartHomePlatformPick  = lazy(() => import("./pages/tools/SmartHomePlatformPick"));
+const SmartBulbPicker        = lazy(() => import("./pages/tools/SmartBulbPicker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1479,6 +1486,13 @@ const AppContent = () => {
           <Route path="/tools/grandkid-internet-safety" element={<GrandkidInternetSafety />} />
           <Route path="/tools/apps-grandkids-use-explained" element={<AppsGrandkidsUseExplained />} />
           <Route path="/tools/game-console-gift-guide" element={<GameConsoleGiftGuide />} />
+
+          {/* Cycle 42 — AI / resume / smart home */}
+          <Route path="/tools/ai-comparison-coach" element={<AiComparisonCoach />} />
+          <Route path="/tools/ai-image-generators" element={<AiImageGenerators />} />
+          <Route path="/tools/resume-builder-apps" element={<ResumeBuilderApps />} />
+          <Route path="/tools/smart-home-platform-pick" element={<SmartHomePlatformPick />} />
+          <Route path="/tools/smart-bulb-picker" element={<SmartBulbPicker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
