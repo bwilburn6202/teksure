@@ -1462,6 +1462,13 @@ const DehumidifierForSeniors = lazy(() => import("./pages/tools/DehumidifierForS
 const MicrowaveSeniorBuy     = lazy(() => import("./pages/tools/MicrowaveSeniorBuy"));
 const WasherDryerForSeniors  = lazy(() => import("./pages/tools/WasherDryerForSeniors"));
 
+// ── Cycle 184 (April 29 2026) — alternative travel modes ──
+const AmtrakForSeniors       = lazy(() => import("./pages/tools/AmtrakForSeniors"));
+const BusTravelForSeniors    = lazy(() => import("./pages/tools/BusTravelForSeniors"));
+const RiverCruiseGuide       = lazy(() => import("./pages/tools/RiverCruiseGuide"));
+const TrainAroundTheWorld    = lazy(() => import("./pages/tools/TrainAroundTheWorld"));
+const TouristAttractionPasses = lazy(() => import("./pages/tools/TouristAttractionPasses"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3373,6 +3380,11 @@ const AppContent = () => {
           <Route path="/tools/dehumidifier-for-seniors" element={<DehumidifierForSeniors />} />
           <Route path="/tools/microwave-senior-buy" element={<MicrowaveSeniorBuy />} />
           <Route path="/tools/washer-dryer-for-seniors" element={<WasherDryerForSeniors />} />
+          <Route path="/tools/amtrak-for-seniors" element={<AmtrakForSeniors />} />
+          <Route path="/tools/bus-travel-for-seniors" element={<BusTravelForSeniors />} />
+          <Route path="/tools/river-cruise-guide" element={<RiverCruiseGuide />} />
+          <Route path="/tools/train-around-the-world" element={<TrainAroundTheWorld />} />
+          <Route path="/tools/tourist-attraction-passes" element={<TouristAttractionPasses />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
