@@ -1630,6 +1630,13 @@ const PetGroomingHome          = lazy(() => import("./pages/tools/PetGroomingHom
 const AquariumStarterSenior    = lazy(() => import("./pages/tools/AquariumStarterSenior"));
 const PetSitterFinder          = lazy(() => import("./pages/tools/PetSitterFinder"));
 
+// ── Cycle 208 (April 29 2026) — instruments ──
+const GuitarForSeniors         = lazy(() => import("./pages/tools/GuitarForSeniors"));
+const HarmonicaForSeniors      = lazy(() => import("./pages/tools/HarmonicaForSeniors"));
+const ViolinForSeniors         = lazy(() => import("./pages/tools/ViolinForSeniors"));
+const DrumsForSeniors          = lazy(() => import("./pages/tools/DrumsForSeniors"));
+const SingingForSeniors        = lazy(() => import("./pages/tools/SingingForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3661,6 +3668,11 @@ const AppContent = () => {
           <Route path="/tools/pet-grooming-home" element={<PetGroomingHome />} />
           <Route path="/tools/aquarium-starter-senior" element={<AquariumStarterSenior />} />
           <Route path="/tools/pet-sitter-finder" element={<PetSitterFinder />} />
+          <Route path="/tools/guitar-for-seniors" element={<GuitarForSeniors />} />
+          <Route path="/tools/harmonica-for-seniors" element={<HarmonicaForSeniors />} />
+          <Route path="/tools/violin-for-seniors" element={<ViolinForSeniors />} />
+          <Route path="/tools/drums-for-seniors" element={<DrumsForSeniors />} />
+          <Route path="/tools/singing-for-seniors" element={<SingingForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
