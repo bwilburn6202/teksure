@@ -1140,6 +1140,13 @@ const SnailMailRevival       = lazy(() => import("./pages/tools/SnailMailRevival
 const HolidayCardSetup       = lazy(() => import("./pages/tools/HolidayCardSetup"));
 const ChainEmailDontShare    = lazy(() => import("./pages/tools/ChainEmailDontShare"));
 
+// ── Cycle 138 (April 29 2026) — fall prevention + mobility ──
+const FallPreventionGuide    = lazy(() => import("./pages/tools/FallPreventionGuide"));
+const PostureCheckApps       = lazy(() => import("./pages/tools/PostureCheckApps"));
+const GripStrengthTools      = lazy(() => import("./pages/tools/GripStrengthTools"));
+const StairSafetyChecklist   = lazy(() => import("./pages/tools/StairSafetyChecklist"));
+const CaneWalkerPicker       = lazy(() => import("./pages/tools/CaneWalkerPicker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2821,6 +2828,11 @@ const AppContent = () => {
           <Route path="/tools/snail-mail-revival" element={<SnailMailRevival />} />
           <Route path="/tools/holiday-card-setup" element={<HolidayCardSetup />} />
           <Route path="/tools/chain-email-dont-share" element={<ChainEmailDontShare />} />
+          <Route path="/tools/fall-prevention-guide" element={<FallPreventionGuide />} />
+          <Route path="/tools/posture-check-apps" element={<PostureCheckApps />} />
+          <Route path="/tools/grip-strength-tools" element={<GripStrengthTools />} />
+          <Route path="/tools/stair-safety-checklist" element={<StairSafetyChecklist />} />
+          <Route path="/tools/cane-walker-picker" element={<CaneWalkerPicker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
