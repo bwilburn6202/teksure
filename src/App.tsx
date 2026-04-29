@@ -1210,6 +1210,13 @@ const CholesterolGuideSeniors = lazy(() => import("./pages/tools/CholesterolGuid
 const ArthritisManagement    = lazy(() => import("./pages/tools/ArthritisManagement"));
 const OsteoporosisGuide      = lazy(() => import("./pages/tools/OsteoporosisGuide"));
 
+// ── Cycle 148 (April 29 2026) — caregiving + late-stage care ──
+const AlzheimersEarlyStage   = lazy(() => import("./pages/tools/AlzheimersEarlyStage"));
+const DementiaWanderingPrevention = lazy(() => import("./pages/tools/DementiaWanderingPrevention"));
+const AdultDayCareGuide      = lazy(() => import("./pages/tools/AdultDayCareGuide"));
+const InHomeCareAgencyVet    = lazy(() => import("./pages/tools/InHomeCareAgencyVet"));
+const NursingHomeChecklist   = lazy(() => import("./pages/tools/NursingHomeChecklist"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2941,6 +2948,11 @@ const AppContent = () => {
           <Route path="/tools/cholesterol-guide-seniors" element={<CholesterolGuideSeniors />} />
           <Route path="/tools/arthritis-management" element={<ArthritisManagement />} />
           <Route path="/tools/osteoporosis-guide" element={<OsteoporosisGuide />} />
+          <Route path="/tools/alzheimers-early-stage" element={<AlzheimersEarlyStage />} />
+          <Route path="/tools/dementia-wandering-prevention" element={<DementiaWanderingPrevention />} />
+          <Route path="/tools/adult-day-care-guide" element={<AdultDayCareGuide />} />
+          <Route path="/tools/in-home-care-agency-vet" element={<InHomeCareAgencyVet />} />
+          <Route path="/tools/nursing-home-checklist" element={<NursingHomeChecklist />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
