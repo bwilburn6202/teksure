@@ -405,6 +405,13 @@ const DrawingPhotoEditingApps = lazy(() => import("./pages/tools/DrawingPhotoEdi
 const DigitalCameraPicker    = lazy(() => import("./pages/tools/DigitalCameraPicker"));
 const DocumentaryStreaming   = lazy(() => import("./pages/tools/DocumentaryStreaming"));
 
+// ── Cycle 33 (April 29 2026) — vaccines/drugs/symptoms/doctors ──
+const AdultVaccineSchedule   = lazy(() => import("./pages/tools/AdultVaccineSchedule"));
+const DrugInteractionChecker = lazy(() => import("./pages/tools/DrugInteractionChecker"));
+const PillIdentifierApp      = lazy(() => import("./pages/tools/PillIdentifierApp"));
+const SymptomCheckerApps     = lazy(() => import("./pages/tools/SymptomCheckerApps"));
+const FindADoctorApps        = lazy(() => import("./pages/tools/FindADoctorApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1353,6 +1360,13 @@ const AppContent = () => {
           <Route path="/tools/drawing-photo-editing-apps" element={<DrawingPhotoEditingApps />} />
           <Route path="/tools/digital-camera-picker" element={<DigitalCameraPicker />} />
           <Route path="/tools/documentary-streaming" element={<DocumentaryStreaming />} />
+
+          {/* Cycle 33 — vaccines / drugs / symptoms / doctors */}
+          <Route path="/tools/adult-vaccine-schedule" element={<AdultVaccineSchedule />} />
+          <Route path="/tools/drug-interaction-checker" element={<DrugInteractionChecker />} />
+          <Route path="/tools/pill-identifier-app" element={<PillIdentifierApp />} />
+          <Route path="/tools/symptom-checker-apps" element={<SymptomCheckerApps />} />
+          <Route path="/tools/find-a-doctor-apps" element={<FindADoctorApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
