@@ -839,6 +839,13 @@ const NutritionLabelScanner  = lazy(() => import("./pages/tools/NutritionLabelSc
 const DietApps               = lazy(() => import("./pages/tools/DietApps"));
 const SeniorMealPrograms     = lazy(() => import("./pages/tools/SeniorMealPrograms"));
 
+// ── Cycle 95 (April 29 2026) — senior dating ──
+const SeniorDatingApps       = lazy(() => import("./pages/tools/SeniorDatingApps"));
+const WidowedRelationships   = lazy(() => import("./pages/tools/WidowedRelationships"));
+const ScamDatingFlags        = lazy(() => import("./pages/tools/ScamDatingFlags"));
+const GraceDating60Plus      = lazy(() => import("./pages/tools/GraceDating60Plus"));
+const FirstDateTech          = lazy(() => import("./pages/tools/FirstDateTech"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2221,6 +2228,13 @@ const AppContent = () => {
           <Route path="/tools/nutrition-label-scanner" element={<NutritionLabelScanner />} />
           <Route path="/tools/diet-apps" element={<DietApps />} />
           <Route path="/tools/senior-meal-programs" element={<SeniorMealPrograms />} />
+
+          {/* Cycle 95 — senior dating */}
+          <Route path="/tools/senior-dating-apps" element={<SeniorDatingApps />} />
+          <Route path="/tools/widowed-relationships" element={<WidowedRelationships />} />
+          <Route path="/tools/scam-dating-flags" element={<ScamDatingFlags />} />
+          <Route path="/tools/grace-dating-60-plus" element={<GraceDating60Plus />} />
+          <Route path="/tools/first-date-tech" element={<FirstDateTech />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
