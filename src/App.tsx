@@ -993,6 +993,13 @@ const FamilyConflictApps     = lazy(() => import("./pages/tools/FamilyConflictAp
 const BlendedFamilyTech      = lazy(() => import("./pages/tools/BlendedFamilyTech"));
 const EstateGiftingPlanning  = lazy(() => import("./pages/tools/EstateGiftingPlanning"));
 
+// ── Cycle 117 (April 29 2026) — privacy + data ──
+const PrivacyAuditChecklist  = lazy(() => import("./pages/tools/PrivacyAuditChecklist"));
+const DataBrokerOptOut       = lazy(() => import("./pages/tools/DataBrokerOptOut"));
+const GooglePrivacyDashboard = lazy(() => import("./pages/tools/GooglePrivacyDashboard"));
+const ApplePrivacyReport     = lazy(() => import("./pages/tools/ApplePrivacyReport"));
+const FacebookPrivacyAudit   = lazy(() => import("./pages/tools/FacebookPrivacyAudit"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2529,6 +2536,13 @@ const AppContent = () => {
           <Route path="/tools/family-conflict-apps" element={<FamilyConflictApps />} />
           <Route path="/tools/blended-family-tech" element={<BlendedFamilyTech />} />
           <Route path="/tools/estate-gifting-planning" element={<EstateGiftingPlanning />} />
+
+          {/* Cycle 117 — privacy + data */}
+          <Route path="/tools/privacy-audit-checklist" element={<PrivacyAuditChecklist />} />
+          <Route path="/tools/data-broker-opt-out" element={<DataBrokerOptOut />} />
+          <Route path="/tools/google-privacy-dashboard" element={<GooglePrivacyDashboard />} />
+          <Route path="/tools/apple-privacy-report" element={<ApplePrivacyReport />} />
+          <Route path="/tools/facebook-privacy-audit" element={<FacebookPrivacyAudit />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
