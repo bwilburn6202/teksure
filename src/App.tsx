@@ -1483,6 +1483,13 @@ const RedditForSeniors       = lazy(() => import("./pages/tools/RedditForSeniors
 const TikTokSafetyGuide      = lazy(() => import("./pages/tools/TikTokSafetyGuide"));
 const InstagramSeniorGuide   = lazy(() => import("./pages/tools/InstagramSeniorGuide"));
 
+// ── Cycle 187 (April 29 2026) — credit cards ──
+const BestCreditCardsSeniors = lazy(() => import("./pages/tools/BestCreditCardsSeniors"));
+const CreditCardFraudHelp    = lazy(() => import("./pages/tools/CreditCardFraudHelp"));
+const ATMSafetyGuide         = lazy(() => import("./pages/tools/ATMSafetyGuide"));
+const ChaseSapphireExplain   = lazy(() => import("./pages/tools/ChaseSapphireExplain"));
+const AmexPlatinumWorthIt    = lazy(() => import("./pages/tools/AmexPlatinumWorthIt"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3409,6 +3416,11 @@ const AppContent = () => {
           <Route path="/tools/reddit-for-seniors" element={<RedditForSeniors />} />
           <Route path="/tools/tiktok-safety-guide" element={<TikTokSafetyGuide />} />
           <Route path="/tools/instagram-senior-guide" element={<InstagramSeniorGuide />} />
+          <Route path="/tools/best-credit-cards-seniors" element={<BestCreditCardsSeniors />} />
+          <Route path="/tools/credit-card-fraud-help" element={<CreditCardFraudHelp />} />
+          <Route path="/tools/atm-safety-guide" element={<ATMSafetyGuide />} />
+          <Route path="/tools/chase-sapphire-explain" element={<ChaseSapphireExplain />} />
+          <Route path="/tools/amex-platinum-worth-it" element={<AmexPlatinumWorthIt />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
