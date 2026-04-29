@@ -1371,6 +1371,13 @@ const WindowsBasicsForSeniors = lazy(() => import("./pages/tools/WindowsBasicsFo
 const MicrosoftO365vsGoogle  = lazy(() => import("./pages/tools/MicrosoftO365vsGoogle"));
 const IPadVsLaptopForSeniors = lazy(() => import("./pages/tools/IPadVsLaptopForSeniors"));
 
+// ── Cycle 171 (April 29 2026) — indoor + small-space gardening ──
+const AeroGardenForSeniors   = lazy(() => import("./pages/tools/AeroGardenForSeniors"));
+const GrowLightSetup         = lazy(() => import("./pages/tools/GrowLightSetup"));
+const VegetableGardenSeniors = lazy(() => import("./pages/tools/VegetableGardenSeniors"));
+const HerbGardeningWindow    = lazy(() => import("./pages/tools/HerbGardeningWindow"));
+const RainBarrelGuide        = lazy(() => import("./pages/tools/RainBarrelGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3217,6 +3224,11 @@ const AppContent = () => {
           <Route path="/tools/windows-basics-for-seniors" element={<WindowsBasicsForSeniors />} />
           <Route path="/tools/microsoft-o365-vs-google" element={<MicrosoftO365vsGoogle />} />
           <Route path="/tools/ipad-vs-laptop-for-seniors" element={<IPadVsLaptopForSeniors />} />
+          <Route path="/tools/aerogarden-for-seniors" element={<AeroGardenForSeniors />} />
+          <Route path="/tools/grow-light-setup" element={<GrowLightSetup />} />
+          <Route path="/tools/vegetable-garden-seniors" element={<VegetableGardenSeniors />} />
+          <Route path="/tools/herb-gardening-window" element={<HerbGardeningWindow />} />
+          <Route path="/tools/rain-barrel-guide" element={<RainBarrelGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
