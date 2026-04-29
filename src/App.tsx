@@ -1546,6 +1546,13 @@ const CaulkingBasics         = lazy(() => import("./pages/tools/CaulkingBasics")
 const GeneratorTestRoutine   = lazy(() => import("./pages/tools/GeneratorTestRoutine"));
 const FurnaceFilterSwap      = lazy(() => import("./pages/tools/FurnaceFilterSwap"));
 
+// ── Cycle 196 (April 29 2026) — energy + sustainability ──
+const HeatPumpForSeniors     = lazy(() => import("./pages/tools/HeatPumpForSeniors"));
+const EVHomeChargerGuide     = lazy(() => import("./pages/tools/EVHomeChargerGuide"));
+const TeslaPowerwallReview   = lazy(() => import("./pages/tools/TeslaPowerwallReview"));
+const SolarTaxCredits        = lazy(() => import("./pages/tools/SolarTaxCredits"));
+const EnergyAuditFree        = lazy(() => import("./pages/tools/EnergyAuditFree"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3517,6 +3524,11 @@ const AppContent = () => {
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
           <Route path="/tools/generator-test-routine" element={<GeneratorTestRoutine />} />
           <Route path="/tools/furnace-filter-swap" element={<FurnaceFilterSwap />} />
+          <Route path="/tools/heat-pump-for-seniors" element={<HeatPumpForSeniors />} />
+          <Route path="/tools/ev-home-charger-guide" element={<EVHomeChargerGuide />} />
+          <Route path="/tools/tesla-powerwall-review" element={<TeslaPowerwallReview />} />
+          <Route path="/tools/solar-tax-credits" element={<SolarTaxCredits />} />
+          <Route path="/tools/energy-audit-free" element={<EnergyAuditFree />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
