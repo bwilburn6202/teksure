@@ -1217,6 +1217,13 @@ const AdultDayCareGuide      = lazy(() => import("./pages/tools/AdultDayCareGuid
 const InHomeCareAgencyVet    = lazy(() => import("./pages/tools/InHomeCareAgencyVet"));
 const NursingHomeChecklist   = lazy(() => import("./pages/tools/NursingHomeChecklist"));
 
+// ── Cycle 149 (April 29 2026) — pets for seniors ──
+const BestPetsForSeniors     = lazy(() => import("./pages/tools/BestPetsForSeniors"));
+const PetSupplyDelivery      = lazy(() => import("./pages/tools/PetSupplyDelivery"));
+const PetInsuranceForSeniors = lazy(() => import("./pages/tools/PetInsuranceForSeniors"));
+const EmotionalSupportAnimal = lazy(() => import("./pages/tools/EmotionalSupportAnimal"));
+const FosterPetsForSeniors   = lazy(() => import("./pages/tools/FosterPetsForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2953,6 +2960,11 @@ const AppContent = () => {
           <Route path="/tools/adult-day-care-guide" element={<AdultDayCareGuide />} />
           <Route path="/tools/in-home-care-agency-vet" element={<InHomeCareAgencyVet />} />
           <Route path="/tools/nursing-home-checklist" element={<NursingHomeChecklist />} />
+          <Route path="/tools/best-pets-for-seniors" element={<BestPetsForSeniors />} />
+          <Route path="/tools/pet-supply-delivery" element={<PetSupplyDelivery />} />
+          <Route path="/tools/pet-insurance-for-seniors" element={<PetInsuranceForSeniors />} />
+          <Route path="/tools/emotional-support-animal" element={<EmotionalSupportAnimal />} />
+          <Route path="/tools/foster-pets-for-seniors" element={<FosterPetsForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
