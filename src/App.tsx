@@ -1490,6 +1490,13 @@ const ATMSafetyGuide         = lazy(() => import("./pages/tools/ATMSafetyGuide")
 const ChaseSapphireExplain   = lazy(() => import("./pages/tools/ChaseSapphireExplain"));
 const AmexPlatinumWorthIt    = lazy(() => import("./pages/tools/AmexPlatinumWorthIt"));
 
+// ── Cycle 188 (April 29 2026) — preventive health ──
+const ColonCancerScreening   = lazy(() => import("./pages/tools/ColonCancerScreening"));
+const MammogramGuide         = lazy(() => import("./pages/tools/MammogramGuide"));
+const ProstateScreeningSeniors = lazy(() => import("./pages/tools/ProstateScreeningSeniors"));
+const AnnualWellnessVisit    = lazy(() => import("./pages/tools/AnnualWellnessVisit"));
+const SeniorVaccinesGuide    = lazy(() => import("./pages/tools/SeniorVaccinesGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3421,6 +3428,11 @@ const AppContent = () => {
           <Route path="/tools/atm-safety-guide" element={<ATMSafetyGuide />} />
           <Route path="/tools/chase-sapphire-explain" element={<ChaseSapphireExplain />} />
           <Route path="/tools/amex-platinum-worth-it" element={<AmexPlatinumWorthIt />} />
+          <Route path="/tools/colon-cancer-screening" element={<ColonCancerScreening />} />
+          <Route path="/tools/mammogram-guide" element={<MammogramGuide />} />
+          <Route path="/tools/prostate-screening-seniors" element={<ProstateScreeningSeniors />} />
+          <Route path="/tools/annual-wellness-visit" element={<AnnualWellnessVisit />} />
+          <Route path="/tools/senior-vaccines-guide" element={<SeniorVaccinesGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
