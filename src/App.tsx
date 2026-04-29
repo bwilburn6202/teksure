@@ -944,6 +944,13 @@ const GrandPadReview         = lazy(() => import("./pages/tools/GrandPadReview")
 const AppleWatchAsPhone      = lazy(() => import("./pages/tools/AppleWatchAsPhone"));
 const EmergencyButtonPicks   = lazy(() => import("./pages/tools/EmergencyButtonPicks"));
 
+// ── Cycle 110 (April 29 2026) — holiday + special occasions ──
+const HolidayShoppingApps    = lazy(() => import("./pages/tools/HolidayShoppingApps"));
+const GiftIdeasForGrandkids  = lazy(() => import("./pages/tools/GiftIdeasForGrandkids"));
+const CardSendingApps        = lazy(() => import("./pages/tools/CardSendingApps"));
+const FamilyCalendarApps     = lazy(() => import("./pages/tools/FamilyCalendarApps"));
+const ZoomThanksgivingTips   = lazy(() => import("./pages/tools/ZoomThanksgivingTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2431,6 +2438,13 @@ const AppContent = () => {
           <Route path="/tools/grandpad-review" element={<GrandPadReview />} />
           <Route path="/tools/apple-watch-as-phone" element={<AppleWatchAsPhone />} />
           <Route path="/tools/emergency-button-picks" element={<EmergencyButtonPicks />} />
+
+          {/* Cycle 110 — holiday + special occasions */}
+          <Route path="/tools/holiday-shopping-apps" element={<HolidayShoppingApps />} />
+          <Route path="/tools/gift-ideas-for-grandkids" element={<GiftIdeasForGrandkids />} />
+          <Route path="/tools/card-sending-apps" element={<CardSendingApps />} />
+          <Route path="/tools/family-calendar-apps" element={<FamilyCalendarApps />} />
+          <Route path="/tools/zoom-thanksgiving-tips" element={<ZoomThanksgivingTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
