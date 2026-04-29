@@ -1679,6 +1679,13 @@ const ElectricCarsForSeniors    = lazy(() => import("./pages/tools/ElectricCarsF
 const CarTradeInApps            = lazy(() => import("./pages/tools/CarTradeInApps"));
 const AutoExtendedWarranty      = lazy(() => import("./pages/tools/AutoExtendedWarranty"));
 
+// ── Cycle 215 (April 29 2026) — security deeper ──
+const SSNCompromiseSteps        = lazy(() => import("./pages/tools/SSNCompromiseSteps"));
+const SocialMediaFakeAccounts   = lazy(() => import("./pages/tools/SocialMediaFakeAccounts"));
+const ComputerVirusRemoval      = lazy(() => import("./pages/tools/ComputerVirusRemoval"));
+const EmailHackedRecovery       = lazy(() => import("./pages/tools/EmailHackedRecovery"));
+const WhatsAppScamSpotting      = lazy(() => import("./pages/tools/WhatsAppScamSpotting"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3745,6 +3752,11 @@ const AppContent = () => {
           <Route path="/tools/electric-cars-for-seniors" element={<ElectricCarsForSeniors />} />
           <Route path="/tools/car-trade-in-apps" element={<CarTradeInApps />} />
           <Route path="/tools/auto-extended-warranty" element={<AutoExtendedWarranty />} />
+          <Route path="/tools/ssn-compromise-steps" element={<SSNCompromiseSteps />} />
+          <Route path="/tools/social-media-fake-accounts" element={<SocialMediaFakeAccounts />} />
+          <Route path="/tools/computer-virus-removal" element={<ComputerVirusRemoval />} />
+          <Route path="/tools/email-hacked-recovery" element={<EmailHackedRecovery />} />
+          <Route path="/tools/whatsapp-scam-spotting" element={<WhatsAppScamSpotting />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
