@@ -741,6 +741,13 @@ const MemoryCareApps         = lazy(() => import("./pages/tools/MemoryCareApps")
 const ParkinsonsApps         = lazy(() => import("./pages/tools/ParkinsonsApps"));
 const RespiteCareFinders     = lazy(() => import("./pages/tools/RespiteCareFinders"));
 
+// ── Cycle 81 (April 29 2026) — tax + paperwork ──
+const TaxFilingPicks         = lazy(() => import("./pages/tools/TaxFilingPicks"));
+const PropertyTaxAppeal      = lazy(() => import("./pages/tools/PropertyTaxAppeal"));
+const PaperShreddingGuide    = lazy(() => import("./pages/tools/PaperShreddingGuide"));
+const ScannerAppPicks        = lazy(() => import("./pages/tools/ScannerAppPicks"));
+const MedicalRecordsRequest  = lazy(() => import("./pages/tools/MedicalRecordsRequest"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2025,6 +2032,13 @@ const AppContent = () => {
           <Route path="/tools/memory-care-apps" element={<MemoryCareApps />} />
           <Route path="/tools/parkinsons-apps" element={<ParkinsonsApps />} />
           <Route path="/tools/respite-care-finders" element={<RespiteCareFinders />} />
+
+          {/* Cycle 81 — tax + paperwork */}
+          <Route path="/tools/tax-filing-picks" element={<TaxFilingPicks />} />
+          <Route path="/tools/property-tax-appeal" element={<PropertyTaxAppeal />} />
+          <Route path="/tools/paper-shredding-guide" element={<PaperShreddingGuide />} />
+          <Route path="/tools/scanner-app-picks" element={<ScannerAppPicks />} />
+          <Route path="/tools/medical-records-request" element={<MedicalRecordsRequest />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
