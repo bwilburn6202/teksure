@@ -1294,6 +1294,13 @@ const GoogleTranslateMastery = lazy(() => import("./pages/tools/GoogleTranslateM
 const FreeCollegeForSeniors  = lazy(() => import("./pages/tools/FreeCollegeForSeniors"));
 const CourseraSeniorAudit    = lazy(() => import("./pages/tools/CourseraSeniorAudit"));
 
+// ── Cycle 160 (April 29 2026) — veteran benefits ──
+const VAAidAndAttendance     = lazy(() => import("./pages/tools/VAAidAndAttendance"));
+const TricareForLife         = lazy(() => import("./pages/tools/TricareForLife"));
+const NationalCemeteryBurial = lazy(() => import("./pages/tools/NationalCemeteryBurial"));
+const VAHomeLoanGuide        = lazy(() => import("./pages/tools/VAHomeLoanGuide"));
+const AgentOrangeBenefits    = lazy(() => import("./pages/tools/AgentOrangeBenefits"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3085,6 +3092,11 @@ const AppContent = () => {
           <Route path="/tools/google-translate-mastery" element={<GoogleTranslateMastery />} />
           <Route path="/tools/free-college-for-seniors" element={<FreeCollegeForSeniors />} />
           <Route path="/tools/coursera-senior-audit" element={<CourseraSeniorAudit />} />
+          <Route path="/tools/va-aid-and-attendance" element={<VAAidAndAttendance />} />
+          <Route path="/tools/tricare-for-life" element={<TricareForLife />} />
+          <Route path="/tools/national-cemetery-burial" element={<NationalCemeteryBurial />} />
+          <Route path="/tools/va-home-loan-guide" element={<VAHomeLoanGuide />} />
+          <Route path="/tools/agent-orange-benefits" element={<AgentOrangeBenefits />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
