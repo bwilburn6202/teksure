@@ -1734,6 +1734,11 @@ const ThreadsAppGuide           = lazy(() => import("./pages/tools/ThreadsAppGui
 const BlueskyExplained          = lazy(() => import("./pages/tools/BlueskyExplained"));
 const FacebookGroupsForSeniors  = lazy(() => import("./pages/tools/FacebookGroupsForSeniors"));
 const SocialMediaPrivacyAudit   = lazy(() => import("./pages/tools/SocialMediaPrivacyAudit"));
+const DisneyPlusForSeniors      = lazy(() => import("./pages/tools/DisneyPlusForSeniors"));
+const HuluForSeniors            = lazy(() => import("./pages/tools/HuluForSeniors"));
+const PeacockStreamingGuide     = lazy(() => import("./pages/tools/PeacockStreamingGuide"));
+const MaxHBOStreamingGuide      = lazy(() => import("./pages/tools/MaxHBOStreamingGuide"));
+const TubiPlutoFreeStreaming    = lazy(() => import("./pages/tools/TubiPlutoFreeStreaming"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3841,6 +3846,11 @@ const AppContent = () => {
           <Route path="/tools/bluesky-explained" element={<BlueskyExplained />} />
           <Route path="/tools/facebook-groups-for-seniors" element={<FacebookGroupsForSeniors />} />
           <Route path="/tools/social-media-privacy-audit" element={<SocialMediaPrivacyAudit />} />
+          <Route path="/tools/disney-plus-for-seniors" element={<DisneyPlusForSeniors />} />
+          <Route path="/tools/hulu-for-seniors" element={<HuluForSeniors />} />
+          <Route path="/tools/peacock-streaming-guide" element={<PeacockStreamingGuide />} />
+          <Route path="/tools/max-hbo-streaming-guide" element={<MaxHBOStreamingGuide />} />
+          <Route path="/tools/tubi-pluto-free-streaming" element={<TubiPlutoFreeStreaming />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
