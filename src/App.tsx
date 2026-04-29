@@ -447,6 +447,13 @@ const BetterWebSearchCoach   = lazy(() => import("./pages/tools/BetterWebSearchC
 const VaBenefitsAndApp       = lazy(() => import("./pages/tools/VaBenefitsAndApp"));
 const SsdiVsSsiCoach         = lazy(() => import("./pages/tools/SsdiVsSsiCoach"));
 
+// ── Cycle 39 (April 29 2026) — VPN/encryption/cyber/remote ──
+const VpnPicker              = lazy(() => import("./pages/tools/VpnPicker"));
+const DiskEncryptionCoach    = lazy(() => import("./pages/tools/DiskEncryptionCoach"));
+const CyberInsuranceExplainer = lazy(() => import("./pages/tools/CyberInsuranceExplainer"));
+const UniversalRemotePicker  = lazy(() => import("./pages/tools/UniversalRemotePicker"));
+const LostTvRemoteCoach      = lazy(() => import("./pages/tools/LostTvRemoteCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1437,6 +1444,13 @@ const AppContent = () => {
           <Route path="/tools/better-web-search-coach" element={<BetterWebSearchCoach />} />
           <Route path="/tools/va-benefits-and-app" element={<VaBenefitsAndApp />} />
           <Route path="/tools/ssdi-vs-ssi-coach" element={<SsdiVsSsiCoach />} />
+
+          {/* Cycle 39 — VPN / encryption / cyber / remote */}
+          <Route path="/tools/vpn-picker" element={<VpnPicker />} />
+          <Route path="/tools/disk-encryption-coach" element={<DiskEncryptionCoach />} />
+          <Route path="/tools/cyber-insurance-explainer" element={<CyberInsuranceExplainer />} />
+          <Route path="/tools/universal-remote-picker" element={<UniversalRemotePicker />} />
+          <Route path="/tools/lost-tv-remote-coach" element={<LostTvRemoteCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
