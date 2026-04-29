@@ -1336,6 +1336,13 @@ const BecomeATutorRetiree    = lazy(() => import("./pages/tools/BecomeATutorReti
 const PetSittingIncome       = lazy(() => import("./pages/tools/PetSittingIncome"));
 const ConsultingSecondAct    = lazy(() => import("./pages/tools/ConsultingSecondAct"));
 
+// ── Cycle 166 (April 29 2026) — mindfulness + simple living ──
+const GratitudePracticeApp   = lazy(() => import("./pages/tools/GratitudePracticeApp"));
+const StoicPhilosophySeniors = lazy(() => import("./pages/tools/StoicPhilosophySeniors"));
+const RetreatCentersForSeniors = lazy(() => import("./pages/tools/RetreatCentersForSeniors"));
+const IntermittentFastingSeniors = lazy(() => import("./pages/tools/IntermittentFastingSeniors"));
+const MinimalismForSeniors   = lazy(() => import("./pages/tools/MinimalismForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3157,6 +3164,11 @@ const AppContent = () => {
           <Route path="/tools/become-a-tutor-retiree" element={<BecomeATutorRetiree />} />
           <Route path="/tools/pet-sitting-income" element={<PetSittingIncome />} />
           <Route path="/tools/consulting-second-act" element={<ConsultingSecondAct />} />
+          <Route path="/tools/gratitude-practice-app" element={<GratitudePracticeApp />} />
+          <Route path="/tools/stoic-philosophy-seniors" element={<StoicPhilosophySeniors />} />
+          <Route path="/tools/retreat-centers-for-seniors" element={<RetreatCentersForSeniors />} />
+          <Route path="/tools/intermittent-fasting-seniors" element={<IntermittentFastingSeniors />} />
+          <Route path="/tools/minimalism-for-seniors" element={<MinimalismForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
