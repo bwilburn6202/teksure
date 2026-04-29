@@ -391,6 +391,13 @@ const UsedCarResearchApps    = lazy(() => import("./pages/tools/UsedCarResearchA
 const FlightSearchApps       = lazy(() => import("./pages/tools/FlightSearchApps"));
 const WindowManagementCoach  = lazy(() => import("./pages/tools/WindowManagementCoach"));
 
+// ── Cycle 31 (April 29 2026) — diet/meds/exercise/fitness/cognitive ──
+const CalorieTrackingApps    = lazy(() => import("./pages/tools/CalorieTrackingApps"));
+const MedicationReminderApps = lazy(() => import("./pages/tools/MedicationReminderApps"));
+const SeniorExerciseApps     = lazy(() => import("./pages/tools/SeniorExerciseApps"));
+const HomeFitnessSubscriptions = lazy(() => import("./pages/tools/HomeFitnessSubscriptions"));
+const CognitiveSelfTest      = lazy(() => import("./pages/tools/CognitiveSelfTest"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1325,6 +1332,13 @@ const AppContent = () => {
           <Route path="/tools/used-car-research-apps" element={<UsedCarResearchApps />} />
           <Route path="/tools/flight-search-apps" element={<FlightSearchApps />} />
           <Route path="/tools/window-management-coach" element={<WindowManagementCoach />} />
+
+          {/* Cycle 31 — diet / meds / exercise / fitness / cognitive */}
+          <Route path="/tools/calorie-tracking-apps" element={<CalorieTrackingApps />} />
+          <Route path="/tools/medication-reminder-apps" element={<MedicationReminderApps />} />
+          <Route path="/tools/senior-exercise-apps" element={<SeniorExerciseApps />} />
+          <Route path="/tools/home-fitness-subscriptions" element={<HomeFitnessSubscriptions />} />
+          <Route path="/tools/cognitive-self-test" element={<CognitiveSelfTest />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
