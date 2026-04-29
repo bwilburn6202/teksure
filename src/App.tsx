@@ -1686,6 +1686,13 @@ const ComputerVirusRemoval      = lazy(() => import("./pages/tools/ComputerVirus
 const EmailHackedRecovery       = lazy(() => import("./pages/tools/EmailHackedRecovery"));
 const WhatsAppScamSpotting      = lazy(() => import("./pages/tools/WhatsAppScamSpotting"));
 
+// ── Cycle 216 (April 29 2026) — beauty + grooming ──
+const SeniorMakeupTipsApps      = lazy(() => import("./pages/tools/SeniorMakeupTipsApps"));
+const HairCareForSeniors        = lazy(() => import("./pages/tools/HairCareForSeniors"));
+const NailCareForSeniors        = lazy(() => import("./pages/tools/NailCareForSeniors"));
+const ShavingForSeniors         = lazy(() => import("./pages/tools/ShavingForSeniors"));
+const PerfumeColognePicks       = lazy(() => import("./pages/tools/PerfumeColognePicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3757,6 +3764,11 @@ const AppContent = () => {
           <Route path="/tools/computer-virus-removal" element={<ComputerVirusRemoval />} />
           <Route path="/tools/email-hacked-recovery" element={<EmailHackedRecovery />} />
           <Route path="/tools/whatsapp-scam-spotting" element={<WhatsAppScamSpotting />} />
+          <Route path="/tools/senior-makeup-tips-apps" element={<SeniorMakeupTipsApps />} />
+          <Route path="/tools/hair-care-for-seniors" element={<HairCareForSeniors />} />
+          <Route path="/tools/nail-care-for-seniors" element={<NailCareForSeniors />} />
+          <Route path="/tools/shaving-for-seniors" element={<ShavingForSeniors />} />
+          <Route path="/tools/perfume-cologne-picks" element={<PerfumeColognePicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
