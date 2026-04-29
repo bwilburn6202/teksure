@@ -678,6 +678,13 @@ const CarRepairFinder        = lazy(() => import("./pages/tools/CarRepairFinder"
 const EvChargingBasics       = lazy(() => import("./pages/tools/EvChargingBasics"));
 const RoadsideAssistanceApps = lazy(() => import("./pages/tools/RoadsideAssistanceApps"));
 
+// ── Cycle 72 (April 29 2026) — kitchen + home tech ──
+const AirFryerBasics         = lazy(() => import("./pages/tools/AirFryerBasics"));
+const RobotVacuumPicks       = lazy(() => import("./pages/tools/RobotVacuumPicks"));
+const SmartDoorbellCompare   = lazy(() => import("./pages/tools/SmartDoorbellCompare"));
+const LeakDetectionSensors   = lazy(() => import("./pages/tools/LeakDetectionSensors"));
+const GarageDoorOpenerSmart  = lazy(() => import("./pages/tools/GarageDoorOpenerSmart"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1899,6 +1906,13 @@ const AppContent = () => {
           <Route path="/tools/car-repair-finder" element={<CarRepairFinder />} />
           <Route path="/tools/ev-charging-basics" element={<EvChargingBasics />} />
           <Route path="/tools/roadside-assistance-apps" element={<RoadsideAssistanceApps />} />
+
+          {/* Cycle 72 — kitchen + home tech */}
+          <Route path="/tools/air-fryer-basics" element={<AirFryerBasics />} />
+          <Route path="/tools/robot-vacuum-picks" element={<RobotVacuumPicks />} />
+          <Route path="/tools/smart-doorbell-compare" element={<SmartDoorbellCompare />} />
+          <Route path="/tools/leak-detection-sensors" element={<LeakDetectionSensors />} />
+          <Route path="/tools/garage-door-opener-smart" element={<GarageDoorOpenerSmart />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
