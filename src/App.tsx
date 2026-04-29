@@ -1700,6 +1700,13 @@ const AirFilterChangingGuide    = lazy(() => import("./pages/tools/AirFilterChan
 const SeasonalHomeChecklist     = lazy(() => import("./pages/tools/SeasonalHomeChecklist"));
 const ApplianceLifespanGuide    = lazy(() => import("./pages/tools/ApplianceLifespanGuide"));
 
+// ── Cycle 218 (April 29 2026) — phone basics ──
+const PhoneCaseScreenProtector  = lazy(() => import("./pages/tools/PhoneCaseScreenProtector"));
+const SwitchCellCarrier         = lazy(() => import("./pages/tools/SwitchCellCarrier"));
+const PrepaidVsContractPhones   = lazy(() => import("./pages/tools/PrepaidVsContractPhones"));
+const RingtoneCustomization     = lazy(() => import("./pages/tools/RingtoneCustomization"));
+const PhoneTrackingFamily       = lazy(() => import("./pages/tools/PhoneTrackingFamily"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3781,6 +3788,11 @@ const AppContent = () => {
           <Route path="/tools/air-filter-changing-guide" element={<AirFilterChangingGuide />} />
           <Route path="/tools/seasonal-home-checklist" element={<SeasonalHomeChecklist />} />
           <Route path="/tools/appliance-lifespan-guide" element={<ApplianceLifespanGuide />} />
+          <Route path="/tools/phone-case-screen-protector" element={<PhoneCaseScreenProtector />} />
+          <Route path="/tools/switch-cell-carrier" element={<SwitchCellCarrier />} />
+          <Route path="/tools/prepaid-vs-contract-phones" element={<PrepaidVsContractPhones />} />
+          <Route path="/tools/ringtone-customization" element={<RingtoneCustomization />} />
+          <Route path="/tools/phone-tracking-family" element={<PhoneTrackingFamily />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
