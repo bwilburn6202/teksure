@@ -1448,6 +1448,13 @@ const LiveCaptionsApps       = lazy(() => import("./pages/tools/LiveCaptionsApps
 const CochlearImplantBasics  = lazy(() => import("./pages/tools/CochlearImplantBasics"));
 const AssistiveListeningDevices = lazy(() => import("./pages/tools/AssistiveListeningDevices"));
 
+// ── Cycle 182 (April 29 2026) — smartwatches health ──
+const GarminForSeniors       = lazy(() => import("./pages/tools/GarminForSeniors"));
+const FitbitVsAppleWatch     = lazy(() => import("./pages/tools/FitbitVsAppleWatch"));
+const SmartwatchHealthFeatures = lazy(() => import("./pages/tools/SmartwatchHealthFeatures"));
+const AppleWatchFallDetection = lazy(() => import("./pages/tools/AppleWatchFallDetection"));
+const ECGOnAppleWatch        = lazy(() => import("./pages/tools/ECGOnAppleWatch"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3349,6 +3356,11 @@ const AppContent = () => {
           <Route path="/tools/live-captions-apps" element={<LiveCaptionsApps />} />
           <Route path="/tools/cochlear-implant-basics" element={<CochlearImplantBasics />} />
           <Route path="/tools/assistive-listening-devices" element={<AssistiveListeningDevices />} />
+          <Route path="/tools/garmin-for-seniors" element={<GarminForSeniors />} />
+          <Route path="/tools/fitbit-vs-apple-watch" element={<FitbitVsAppleWatch />} />
+          <Route path="/tools/smartwatch-health-features" element={<SmartwatchHealthFeatures />} />
+          <Route path="/tools/apple-watch-fall-detection" element={<AppleWatchFallDetection />} />
+          <Route path="/tools/ecg-on-apple-watch" element={<ECGOnAppleWatch />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
