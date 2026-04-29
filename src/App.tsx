@@ -363,6 +363,13 @@ const HiddenCameraDetector   = lazy(() => import("./pages/tools/HiddenCameraDete
 const SellOnlineCoach        = lazy(() => import("./pages/tools/SellOnlineCoach"));
 const UtilityBillReduction   = lazy(() => import("./pages/tools/UtilityBillReduction"));
 
+// ── Cycle 27 (April 29 2026) — books/reading/ergonomics/notes ──
+const AudiobookAppPicker     = lazy(() => import("./pages/tools/AudiobookAppPicker"));
+const ReadingAppPicker       = lazy(() => import("./pages/tools/ReadingAppPicker"));
+const BookTrackingApps       = lazy(() => import("./pages/tools/BookTrackingApps"));
+const ErgonomicComputerSetup = lazy(() => import("./pages/tools/ErgonomicComputerSetup"));
+const NotesAppPicker         = lazy(() => import("./pages/tools/NotesAppPicker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1269,6 +1276,13 @@ const AppContent = () => {
           <Route path="/tools/hidden-camera-detector" element={<HiddenCameraDetector />} />
           <Route path="/tools/sell-online-coach" element={<SellOnlineCoach />} />
           <Route path="/tools/utility-bill-reduction" element={<UtilityBillReduction />} />
+
+          {/* Cycle 27 — books / reading / ergonomics / notes */}
+          <Route path="/tools/audiobook-app-picker" element={<AudiobookAppPicker />} />
+          <Route path="/tools/reading-app-picker" element={<ReadingAppPicker />} />
+          <Route path="/tools/book-tracking-apps" element={<BookTrackingApps />} />
+          <Route path="/tools/ergonomic-computer-setup" element={<ErgonomicComputerSetup />} />
+          <Route path="/tools/notes-app-picker" element={<NotesAppPicker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
