@@ -622,6 +622,13 @@ const RelayServicesTty       = lazy(() => import("./pages/tools/RelayServicesTty
 const PetAdoptionApps        = lazy(() => import("./pages/tools/PetAdoptionApps"));
 const DeepCouponApps         = lazy(() => import("./pages/tools/DeepCouponApps"));
 
+// ── Cycle 64 (April 29 2026) — utility savings + smart-home + food ──
+const ElectricBillCutters    = lazy(() => import("./pages/tools/ElectricBillCutters"));
+const HomeWarrantyReality    = lazy(() => import("./pages/tools/HomeWarrantyReality"));
+const GasPriceApps           = lazy(() => import("./pages/tools/GasPriceApps"));
+const SmartPlugBasics        = lazy(() => import("./pages/tools/SmartPlugBasics"));
+const FreezerInventory       = lazy(() => import("./pages/tools/FreezerInventory"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1787,6 +1794,13 @@ const AppContent = () => {
           <Route path="/tools/relay-services-tty" element={<RelayServicesTty />} />
           <Route path="/tools/pet-adoption-apps" element={<PetAdoptionApps />} />
           <Route path="/tools/deep-coupon-apps" element={<DeepCouponApps />} />
+
+          {/* Cycle 64 — utility savings + smart-home + food */}
+          <Route path="/tools/electric-bill-cutters" element={<ElectricBillCutters />} />
+          <Route path="/tools/home-warranty-reality" element={<HomeWarrantyReality />} />
+          <Route path="/tools/gas-price-apps" element={<GasPriceApps />} />
+          <Route path="/tools/smart-plug-basics" element={<SmartPlugBasics />} />
+          <Route path="/tools/freezer-inventory" element={<FreezerInventory />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
