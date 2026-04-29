@@ -1063,6 +1063,13 @@ const MagnifyTextHowTo       = lazy(() => import("./pages/tools/MagnifyTextHowTo
 const EmergencyContactsLockScreen = lazy(() => import("./pages/tools/EmergencyContactsLockScreen"));
 const AppleWatchTextingTips  = lazy(() => import("./pages/tools/AppleWatchTextingTips"));
 
+// ── Cycle 127 (April 29 2026) — senior insurance ──
+const HomeInsuranceShop      = lazy(() => import("./pages/tools/HomeInsuranceShop"));
+const UmbrellaInsurance      = lazy(() => import("./pages/tools/UmbrellaInsurance"));
+const LongTermCareInsurance  = lazy(() => import("./pages/tools/LongTermCareInsurance"));
+const FinalExpenseInsurance  = lazy(() => import("./pages/tools/FinalExpenseInsurance"));
+const RentersInsuranceSeniors = lazy(() => import("./pages/tools/RentersInsuranceSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2669,6 +2676,13 @@ const AppContent = () => {
           <Route path="/tools/magnify-text-how-to" element={<MagnifyTextHowTo />} />
           <Route path="/tools/emergency-contacts-lock-screen" element={<EmergencyContactsLockScreen />} />
           <Route path="/tools/apple-watch-texting-tips" element={<AppleWatchTextingTips />} />
+
+          {/* Cycle 127 — senior insurance */}
+          <Route path="/tools/home-insurance-shop" element={<HomeInsuranceShop />} />
+          <Route path="/tools/umbrella-insurance" element={<UmbrellaInsurance />} />
+          <Route path="/tools/long-term-care-insurance" element={<LongTermCareInsurance />} />
+          <Route path="/tools/final-expense-insurance" element={<FinalExpenseInsurance />} />
+          <Route path="/tools/renters-insurance-seniors" element={<RentersInsuranceSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
