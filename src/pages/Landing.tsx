@@ -25,7 +25,7 @@ export default function Landing() {
   const chips = [
     { label: 'Get real human help', to: '/get-help' },
     { label: 'Find the right guide', to: '/guides' },
-    { label: 'Ask TekBrain',        to: '/brain' },
+    { label: 'Ask TekBrain',        to: '/tekbrain' },
     { label: 'Browse tools',        to: '/tools' },
     { label: 'More',                to: '/site-index' },
   ];
@@ -134,7 +134,7 @@ export default function Landing() {
 
           {/* Trust line */}
           <p className="text-sm sm:text-[15px] text-muted-foreground text-center">
-            <span className="font-bold text-foreground">1,200+</span>
+            <span className="font-bold text-foreground">2,500+</span>
             <span className="ml-1.5">free guides</span>
             <span className="mx-2 opacity-50" aria-hidden="true">·</span>
             Real humans
