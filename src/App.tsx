@@ -783,6 +783,13 @@ const AutoFeederPicks        = lazy(() => import("./pages/tools/AutoFeederPicks"
 const PetTelevetVisits       = lazy(() => import("./pages/tools/PetTelevetVisits"));
 const OnlinePetPharmacies    = lazy(() => import("./pages/tools/OnlinePetPharmacies"));
 
+// ── Cycle 87 (April 29 2026) — kids/grandkids tech ──
+const ScreenTimeForKids      = lazy(() => import("./pages/tools/ScreenTimeForKids"));
+const KidSafeYouTube         = lazy(() => import("./pages/tools/KidSafeYouTube"));
+const GamingForGrandkids     = lazy(() => import("./pages/tools/GamingForGrandkids"));
+const OnlineLearningKids     = lazy(() => import("./pages/tools/OnlineLearningKids"));
+const AudiobookKids          = lazy(() => import("./pages/tools/AudiobookKids"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2109,6 +2116,13 @@ const AppContent = () => {
           <Route path="/tools/auto-feeder-picks" element={<AutoFeederPicks />} />
           <Route path="/tools/pet-televet-visits" element={<PetTelevetVisits />} />
           <Route path="/tools/online-pet-pharmacies" element={<OnlinePetPharmacies />} />
+
+          {/* Cycle 87 — kids/grandkids tech */}
+          <Route path="/tools/screen-time-for-kids" element={<ScreenTimeForKids />} />
+          <Route path="/tools/kid-safe-youtube" element={<KidSafeYouTube />} />
+          <Route path="/tools/gaming-for-grandkids" element={<GamingForGrandkids />} />
+          <Route path="/tools/online-learning-kids" element={<OnlineLearningKids />} />
+          <Route path="/tools/audiobook-kids" element={<AudiobookKids />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
