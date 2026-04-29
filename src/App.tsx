@@ -223,6 +223,13 @@ const AirDropHelper          = lazy(() => import("./pages/tools/AirDropHelper"))
 const MarketplaceSafety      = lazy(() => import("./pages/tools/MarketplaceSafety"));
 const BigPrintTipCalculator  = lazy(() => import("./pages/tools/BigPrintTipCalculator"));
 
+// ── Cycle 7 (April 29 2026) — communication & SOS ──
+const GroupTextCoach         = lazy(() => import("./pages/tools/GroupTextCoach"));
+const FocusModeCoach         = lazy(() => import("./pages/tools/FocusModeCoach"));
+const BlockSpamCallsTexts    = lazy(() => import("./pages/tools/BlockSpamCallsTexts"));
+const RemoteHelpSetup        = lazy(() => import("./pages/tools/RemoteHelpSetup"));
+const EmergencySosSetup      = lazy(() => import("./pages/tools/EmergencySosSetup"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -989,6 +996,13 @@ const AppContent = () => {
           <Route path="/tools/airdrop-helper" element={<AirDropHelper />} />
           <Route path="/tools/marketplace-safety" element={<MarketplaceSafety />} />
           <Route path="/tools/big-print-tip-calculator" element={<BigPrintTipCalculator />} />
+
+          {/* Cycle 7 — communication & SOS */}
+          <Route path="/tools/group-text-coach" element={<GroupTextCoach />} />
+          <Route path="/tools/focus-mode-coach" element={<FocusModeCoach />} />
+          <Route path="/tools/block-spam-calls-texts" element={<BlockSpamCallsTexts />} />
+          <Route path="/tools/remote-help-setup" element={<RemoteHelpSetup />} />
+          <Route path="/tools/emergency-sos-setup" element={<EmergencySosSetup />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
