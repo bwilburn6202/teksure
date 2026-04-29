@@ -342,6 +342,13 @@ const InternationalTravelSim = lazy(() => import("./pages/tools/InternationalTra
 const BrokeragePicker        = lazy(() => import("./pages/tools/BrokeragePicker"));
 const AdultScreenTimeCoach   = lazy(() => import("./pages/tools/AdultScreenTimeCoach"));
 
+// ── Cycle 24 (April 29 2026) — backup/photo-org/medical/bills/journal ──
+const BackupStrategy         = lazy(() => import("./pages/tools/BackupStrategy"));
+const PhotoOrganizationCoach = lazy(() => import("./pages/tools/PhotoOrganizationCoach"));
+const MedicalRecordsOrganizer = lazy(() => import("./pages/tools/MedicalRecordsOrganizer"));
+const BillsPaperlessOrganizer = lazy(() => import("./pages/tools/BillsPaperlessOrganizer"));
+const JournalingApps         = lazy(() => import("./pages/tools/JournalingApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1227,6 +1234,13 @@ const AppContent = () => {
           <Route path="/tools/international-travel-sim" element={<InternationalTravelSim />} />
           <Route path="/tools/brokerage-picker" element={<BrokeragePicker />} />
           <Route path="/tools/adult-screen-time-coach" element={<AdultScreenTimeCoach />} />
+
+          {/* Cycle 24 — backup / photo-org / medical / bills / journal */}
+          <Route path="/tools/backup-strategy" element={<BackupStrategy />} />
+          <Route path="/tools/photo-organization-coach" element={<PhotoOrganizationCoach />} />
+          <Route path="/tools/medical-records-organizer" element={<MedicalRecordsOrganizer />} />
+          <Route path="/tools/bills-paperless-organizer" element={<BillsPaperlessOrganizer />} />
+          <Route path="/tools/journaling-apps" element={<JournalingApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
