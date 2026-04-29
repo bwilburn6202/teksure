@@ -1105,6 +1105,13 @@ const BirdfeederGuide        = lazy(() => import("./pages/tools/BirdfeederGuide"
 const ButterflyGarden        = lazy(() => import("./pages/tools/ButterflyGarden"));
 const IndoorPlantsLowMaintenance = lazy(() => import("./pages/tools/IndoorPlantsLowMaintenance"));
 
+// ── Cycle 133 (April 29 2026) — intergenerational ──
+const TeachGrandkidsTech     = lazy(() => import("./pages/tools/TeachGrandkidsTech"));
+const DigitalSavingPlans     = lazy(() => import("./pages/tools/DigitalSavingPlans"));
+const GrandparentBudgetTalks = lazy(() => import("./pages/tools/GrandparentBudgetTalks"));
+const FinancialLiteracyKids  = lazy(() => import("./pages/tools/FinancialLiteracyKids"));
+const KidsCodingApps         = lazy(() => import("./pages/tools/KidsCodingApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2753,6 +2760,13 @@ const AppContent = () => {
           <Route path="/tools/birdfeeder-guide" element={<BirdfeederGuide />} />
           <Route path="/tools/butterfly-garden" element={<ButterflyGarden />} />
           <Route path="/tools/indoor-plants-low-maintenance" element={<IndoorPlantsLowMaintenance />} />
+
+          {/* Cycle 133 — intergenerational */}
+          <Route path="/tools/teach-grandkids-tech" element={<TeachGrandkidsTech />} />
+          <Route path="/tools/digital-saving-plans" element={<DigitalSavingPlans />} />
+          <Route path="/tools/grandparent-budget-talks" element={<GrandparentBudgetTalks />} />
+          <Route path="/tools/financial-literacy-kids" element={<FinancialLiteracyKids />} />
+          <Route path="/tools/kids-coding-apps" element={<KidsCodingApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
