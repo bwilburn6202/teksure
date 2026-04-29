@@ -1175,6 +1175,13 @@ const DatingAfter60Guide     = lazy(() => import("./pages/tools/DatingAfter60Gui
 const SeniorRoommateMatching = lazy(() => import("./pages/tools/SeniorRoommateMatching"));
 const JoinASeniorClub        = lazy(() => import("./pages/tools/JoinASeniorClub"));
 
+// ── Cycle 143 (April 29 2026) — senior travel mechanics ──
+const SnowbirdSetup          = lazy(() => import("./pages/tools/SnowbirdSetup"));
+const RVTravelSeniors        = lazy(() => import("./pages/tools/RVTravelSeniors"));
+const AirportWheelchairHelp  = lazy(() => import("./pages/tools/AirportWheelchairHelp"));
+const JetLagSeniors          = lazy(() => import("./pages/tools/JetLagSeniors"));
+const PackingChecklistSeniors = lazy(() => import("./pages/tools/PackingChecklistSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2881,6 +2888,11 @@ const AppContent = () => {
           <Route path="/tools/dating-after-60-guide" element={<DatingAfter60Guide />} />
           <Route path="/tools/senior-roommate-matching" element={<SeniorRoommateMatching />} />
           <Route path="/tools/join-a-senior-club" element={<JoinASeniorClub />} />
+          <Route path="/tools/snowbird-setup" element={<SnowbirdSetup />} />
+          <Route path="/tools/rv-travel-seniors" element={<RVTravelSeniors />} />
+          <Route path="/tools/airport-wheelchair-help" element={<AirportWheelchairHelp />} />
+          <Route path="/tools/jet-lag-seniors" element={<JetLagSeniors />} />
+          <Route path="/tools/packing-checklist-seniors" element={<PackingChecklistSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
