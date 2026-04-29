@@ -685,6 +685,13 @@ const SmartDoorbellCompare   = lazy(() => import("./pages/tools/SmartDoorbellCom
 const LeakDetectionSensors   = lazy(() => import("./pages/tools/LeakDetectionSensors"));
 const GarageDoorOpenerSmart  = lazy(() => import("./pages/tools/GarageDoorOpenerSmart"));
 
+// ── Cycle 73 (April 29 2026) — money + banking ──
+const HighYieldSavingsPicks  = lazy(() => import("./pages/tools/HighYieldSavingsPicks"));
+const ZelleVenmoCashApp      = lazy(() => import("./pages/tools/ZelleVenmoCashApp"));
+const FraudAlertSetup        = lazy(() => import("./pages/tools/FraudAlertSetup"));
+const RetirementCalculatorPicks = lazy(() => import("./pages/tools/RetirementCalculatorPicks"));
+const CreditFreezeHowTo      = lazy(() => import("./pages/tools/CreditFreezeHowTo"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1913,6 +1920,13 @@ const AppContent = () => {
           <Route path="/tools/smart-doorbell-compare" element={<SmartDoorbellCompare />} />
           <Route path="/tools/leak-detection-sensors" element={<LeakDetectionSensors />} />
           <Route path="/tools/garage-door-opener-smart" element={<GarageDoorOpenerSmart />} />
+
+          {/* Cycle 73 — money + banking */}
+          <Route path="/tools/high-yield-savings-picks" element={<HighYieldSavingsPicks />} />
+          <Route path="/tools/zelle-venmo-cash-app" element={<ZelleVenmoCashApp />} />
+          <Route path="/tools/fraud-alert-setup" element={<FraudAlertSetup />} />
+          <Route path="/tools/retirement-calculator-picks" element={<RetirementCalculatorPicks />} />
+          <Route path="/tools/credit-freeze-how-to" element={<CreditFreezeHowTo />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
