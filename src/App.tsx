@@ -1758,6 +1758,10 @@ const LumosityBrainHQCompare    = lazy(() => import("./pages/tools/LumosityBrain
 const ChairExercisesForSeniors  = lazy(() => import("./pages/tools/ChairExercisesForSeniors"));
 const BalanceExercisesSeniors   = lazy(() => import("./pages/tools/BalanceExercisesSeniors"));
 const WordsWithFriendsSeniors   = lazy(() => import("./pages/tools/WordsWithFriendsSeniors"));
+const AARPTaxAideGuide          = lazy(() => import("./pages/tools/AARPTaxAideGuide"));
+const PropertyTaxExemptionSeniors = lazy(() => import("./pages/tools/PropertyTaxExemptionSeniors"));
+const SocialSecurityClaimingStrategy = lazy(() => import("./pages/tools/SocialSecurityClaimingStrategy"));
+const SeniorDiscountFinder      = lazy(() => import("./pages/tools/SeniorDiscountFinder"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
@@ -3889,6 +3893,10 @@ const AppContent = () => {
           <Route path="/tools/chair-exercises-for-seniors" element={<ChairExercisesForSeniors />} />
           <Route path="/tools/balance-exercises-seniors" element={<BalanceExercisesSeniors />} />
           <Route path="/tools/words-with-friends-seniors" element={<WordsWithFriendsSeniors />} />
+          <Route path="/tools/aarp-tax-aide-guide" element={<AARPTaxAideGuide />} />
+          <Route path="/tools/property-tax-exemption-seniors" element={<PropertyTaxExemptionSeniors />} />
+          <Route path="/tools/social-security-claiming-strategy" element={<SocialSecurityClaimingStrategy />} />
+          <Route path="/tools/senior-discount-finder" element={<SeniorDiscountFinder />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
