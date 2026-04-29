@@ -867,6 +867,13 @@ const KitchenScalePicks      = lazy(() => import("./pages/tools/KitchenScalePick
 const RecipeOrganizers       = lazy(() => import("./pages/tools/RecipeOrganizers"));
 const SmartOvenPicks         = lazy(() => import("./pages/tools/SmartOvenPicks"));
 
+// ── Cycle 99 (April 29 2026) — home gym + fitness gear ──
+const HomeGymStarter         = lazy(() => import("./pages/tools/HomeGymStarter"));
+const ResistanceBandsGuide   = lazy(() => import("./pages/tools/ResistanceBandsGuide"));
+const MassageGunPicks        = lazy(() => import("./pages/tools/MassageGunPicks"));
+const FoamRollerGuide        = lazy(() => import("./pages/tools/FoamRollerGuide"));
+const SeniorBikeOptions      = lazy(() => import("./pages/tools/SeniorBikeOptions"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2277,6 +2284,13 @@ const AppContent = () => {
           <Route path="/tools/kitchen-scale-picks" element={<KitchenScalePicks />} />
           <Route path="/tools/recipe-organizers" element={<RecipeOrganizers />} />
           <Route path="/tools/smart-oven-picks" element={<SmartOvenPicks />} />
+
+          {/* Cycle 99 — home gym + fitness gear */}
+          <Route path="/tools/home-gym-starter" element={<HomeGymStarter />} />
+          <Route path="/tools/resistance-bands-guide" element={<ResistanceBandsGuide />} />
+          <Route path="/tools/massage-gun-picks" element={<MassageGunPicks />} />
+          <Route path="/tools/foam-roller-guide" element={<FoamRollerGuide />} />
+          <Route path="/tools/senior-bike-options" element={<SeniorBikeOptions />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
