@@ -580,6 +580,13 @@ const BackyardChickenApps    = lazy(() => import("./pages/tools/BackyardChickenA
 const EstateSaleFinder       = lazy(() => import("./pages/tools/EstateSaleFinder"));
 const YardSaleApps           = lazy(() => import("./pages/tools/YardSaleApps"));
 
+// ── Cycle 58 (April 29 2026) — pencil/email/pipes/generator/grill ──
+const ApplePencilIpadCoach   = lazy(() => import("./pages/tools/ApplePencilIpadCoach"));
+const EmailFoldersRules      = lazy(() => import("./pages/tools/EmailFoldersRules"));
+const FrozenPipesPrevention  = lazy(() => import("./pages/tools/FrozenPipesPrevention"));
+const GeneratorPick          = lazy(() => import("./pages/tools/GeneratorPick"));
+const PelletGrillCoach       = lazy(() => import("./pages/tools/PelletGrillCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1703,6 +1710,13 @@ const AppContent = () => {
           <Route path="/tools/backyard-chicken-apps" element={<BackyardChickenApps />} />
           <Route path="/tools/estate-sale-finder" element={<EstateSaleFinder />} />
           <Route path="/tools/yard-sale-apps" element={<YardSaleApps />} />
+
+          {/* Cycle 58 — pencil / email / pipes / generator / grill */}
+          <Route path="/tools/apple-pencil-ipad-coach" element={<ApplePencilIpadCoach />} />
+          <Route path="/tools/email-folders-rules" element={<EmailFoldersRules />} />
+          <Route path="/tools/frozen-pipes-prevention" element={<FrozenPipesPrevention />} />
+          <Route path="/tools/generator-pick" element={<GeneratorPick />} />
+          <Route path="/tools/pellet-grill-coach" element={<PelletGrillCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
