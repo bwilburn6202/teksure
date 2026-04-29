@@ -909,6 +909,13 @@ const KidsPenPalApps         = lazy(() => import("./pages/tools/KidsPenPalApps")
 const GrandparentBookClub    = lazy(() => import("./pages/tools/GrandparentBookClub"));
 const RemoteStorytelling     = lazy(() => import("./pages/tools/RemoteStorytelling"));
 
+// ── Cycle 105 (April 29 2026) — medical visit advocacy ──
+const DoctorVisitPrep        = lazy(() => import("./pages/tools/DoctorVisitPrep"));
+const SecondOpinionApps      = lazy(() => import("./pages/tools/SecondOpinionApps"));
+const MedicalRecordsCarry    = lazy(() => import("./pages/tools/MedicalRecordsCarry"));
+const SymptomCheckers        = lazy(() => import("./pages/tools/SymptomCheckers"));
+const AdvocateForYourself    = lazy(() => import("./pages/tools/AdvocateForYourself"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2361,6 +2368,13 @@ const AppContent = () => {
           <Route path="/tools/kids-pen-pal-apps" element={<KidsPenPalApps />} />
           <Route path="/tools/grandparent-book-club" element={<GrandparentBookClub />} />
           <Route path="/tools/remote-storytelling" element={<RemoteStorytelling />} />
+
+          {/* Cycle 105 — medical visit advocacy */}
+          <Route path="/tools/doctor-visit-prep" element={<DoctorVisitPrep />} />
+          <Route path="/tools/second-opinion-apps" element={<SecondOpinionApps />} />
+          <Route path="/tools/medical-records-carry" element={<MedicalRecordsCarry />} />
+          <Route path="/tools/symptom-checkers" element={<SymptomCheckers />} />
+          <Route path="/tools/advocate-for-yourself" element={<AdvocateForYourself />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
