@@ -1077,6 +1077,13 @@ const BookClubAppPicks       = lazy(() => import("./pages/tools/BookClubAppPicks
 const GardenClubFinder       = lazy(() => import("./pages/tools/GardenClubFinder"));
 const SeniorTravelGroups     = lazy(() => import("./pages/tools/SeniorTravelGroups"));
 
+// ── Cycle 129 (April 29 2026) — home cleanup + organization ──
+const DownsizeChecklist      = lazy(() => import("./pages/tools/DownsizeChecklist"));
+const EstateSaleApps         = lazy(() => import("./pages/tools/EstateSaleApps"));
+const JunkRemovalApps        = lazy(() => import("./pages/tools/JunkRemovalApps"));
+const OrganizingApps         = lazy(() => import("./pages/tools/OrganizingApps"));
+const StorageUnitPicks       = lazy(() => import("./pages/tools/StorageUnitPicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2697,6 +2704,13 @@ const AppContent = () => {
           <Route path="/tools/book-club-app-picks" element={<BookClubAppPicks />} />
           <Route path="/tools/garden-club-finder" element={<GardenClubFinder />} />
           <Route path="/tools/senior-travel-groups" element={<SeniorTravelGroups />} />
+
+          {/* Cycle 129 — home cleanup + organization */}
+          <Route path="/tools/downsize-checklist" element={<DownsizeChecklist />} />
+          <Route path="/tools/estate-sale-apps" element={<EstateSaleApps />} />
+          <Route path="/tools/junk-removal-apps" element={<JunkRemovalApps />} />
+          <Route path="/tools/organizing-apps" element={<OrganizingApps />} />
+          <Route path="/tools/storage-unit-picks" element={<StorageUnitPicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
