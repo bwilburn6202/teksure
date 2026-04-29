@@ -538,6 +538,13 @@ const OnlineBoardGames       = lazy(() => import("./pages/tools/OnlineBoardGames
 const WineApps               = lazy(() => import("./pages/tools/WineApps"));
 const CocktailCoffeeApps     = lazy(() => import("./pages/tools/CocktailCoffeeApps"));
 
+// ── Cycle 52 (April 29 2026) — security/thermostat/lock/leak/insurance ──
+const HomeSecuritySystemPick = lazy(() => import("./pages/tools/HomeSecuritySystemPick"));
+const SmartThermostatCoach   = lazy(() => import("./pages/tools/SmartThermostatCoach"));
+const SmartDeadboltPicker    = lazy(() => import("./pages/tools/SmartDeadboltPicker"));
+const WaterLeakDetector      = lazy(() => import("./pages/tools/WaterLeakDetector"));
+const SpecialtyInsuranceCoach = lazy(() => import("./pages/tools/SpecialtyInsuranceCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1619,6 +1626,13 @@ const AppContent = () => {
           <Route path="/tools/online-board-games" element={<OnlineBoardGames />} />
           <Route path="/tools/wine-apps" element={<WineApps />} />
           <Route path="/tools/cocktail-coffee-apps" element={<CocktailCoffeeApps />} />
+
+          {/* Cycle 52 — security / thermostat / lock / leak / insurance */}
+          <Route path="/tools/home-security-system-pick" element={<HomeSecuritySystemPick />} />
+          <Route path="/tools/smart-thermostat-coach" element={<SmartThermostatCoach />} />
+          <Route path="/tools/smart-deadbolt-picker" element={<SmartDeadboltPicker />} />
+          <Route path="/tools/water-leak-detector" element={<WaterLeakDetector />} />
+          <Route path="/tools/specialty-insurance-coach" element={<SpecialtyInsuranceCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
