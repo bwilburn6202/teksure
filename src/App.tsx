@@ -461,6 +461,13 @@ const EldercareLocator       = lazy(() => import("./pages/tools/EldercareLocator
 const LifelineInternetCoach  = lazy(() => import("./pages/tools/LifelineInternetCoach"));
 const HsaFsaCoach            = lazy(() => import("./pages/tools/HsaFsaCoach"));
 
+// ── Cycle 41 (April 29 2026) — laptop/phone/grandkid safety/apps/console ──
+const SeniorLaptopPick       = lazy(() => import("./pages/tools/SeniorLaptopPick"));
+const SeniorPhonePick        = lazy(() => import("./pages/tools/SeniorPhonePick"));
+const GrandkidInternetSafety = lazy(() => import("./pages/tools/GrandkidInternetSafety"));
+const AppsGrandkidsUseExplained = lazy(() => import("./pages/tools/AppsGrandkidsUseExplained"));
+const GameConsoleGiftGuide   = lazy(() => import("./pages/tools/GameConsoleGiftGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1465,6 +1472,13 @@ const AppContent = () => {
           <Route path="/tools/eldercare-locator" element={<EldercareLocator />} />
           <Route path="/tools/lifeline-internet-coach" element={<LifelineInternetCoach />} />
           <Route path="/tools/hsa-fsa-coach" element={<HsaFsaCoach />} />
+
+          {/* Cycle 41 — laptop / phone / grandkid safety / apps / console */}
+          <Route path="/tools/senior-laptop-pick" element={<SeniorLaptopPick />} />
+          <Route path="/tools/senior-phone-pick" element={<SeniorPhonePick />} />
+          <Route path="/tools/grandkid-internet-safety" element={<GrandkidInternetSafety />} />
+          <Route path="/tools/apps-grandkids-use-explained" element={<AppsGrandkidsUseExplained />} />
+          <Route path="/tools/game-console-gift-guide" element={<GameConsoleGiftGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
