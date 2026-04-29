@@ -377,6 +377,13 @@ const PowerBankPicker        = lazy(() => import("./pages/tools/PowerBankPicker"
 const DisasterPrepApps       = lazy(() => import("./pages/tools/DisasterPrepApps"));
 const ChildproofForVisits    = lazy(() => import("./pages/tools/ChildproofForVisits"));
 
+// ── Cycle 29 (April 29 2026) — passkeys/antivirus/recovery/shortcuts/tremors ──
+const PasskeysCoach          = lazy(() => import("./pages/tools/PasskeysCoach"));
+const AntivirusPicker        = lazy(() => import("./pages/tools/AntivirusPicker"));
+const AppleGoogleAccountRecovery = lazy(() => import("./pages/tools/AppleGoogleAccountRecovery"));
+const KeyboardShortcutsCheatsheet = lazy(() => import("./pages/tools/KeyboardShortcutsCheatsheet"));
+const TremorPhoneSetup       = lazy(() => import("./pages/tools/TremorPhoneSetup"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1297,6 +1304,13 @@ const AppContent = () => {
           <Route path="/tools/power-bank-picker" element={<PowerBankPicker />} />
           <Route path="/tools/disaster-prep-apps" element={<DisasterPrepApps />} />
           <Route path="/tools/childproof-for-visits" element={<ChildproofForVisits />} />
+
+          {/* Cycle 29 — passkeys / antivirus / recovery / shortcuts / tremors */}
+          <Route path="/tools/passkeys-coach" element={<PasskeysCoach />} />
+          <Route path="/tools/antivirus-picker" element={<AntivirusPicker />} />
+          <Route path="/tools/account-recovery" element={<AppleGoogleAccountRecovery />} />
+          <Route path="/tools/keyboard-shortcuts-cheatsheet" element={<KeyboardShortcutsCheatsheet />} />
+          <Route path="/tools/tremor-phone-setup" element={<TremorPhoneSetup />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
