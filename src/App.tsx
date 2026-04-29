@@ -1161,6 +1161,13 @@ const CPAPHelpSeniors        = lazy(() => import("./pages/tools/CPAPHelpSeniors"
 const MattressPillowPicker   = lazy(() => import("./pages/tools/MattressPillowPicker"));
 const WhiteNoiseGuide        = lazy(() => import("./pages/tools/WhiteNoiseGuide"));
 
+// ── Cycle 141 (April 29 2026) — senior personal care ──
+const EarwaxRemovalGuide     = lazy(() => import("./pages/tools/EarwaxRemovalGuide"));
+const DentureCareGuide       = lazy(() => import("./pages/tools/DentureCareGuide"));
+const FootCareSeniors        = lazy(() => import("./pages/tools/FootCareSeniors"));
+const SkinCareAfter65        = lazy(() => import("./pages/tools/SkinCareAfter65"));
+const HairThinningOptions    = lazy(() => import("./pages/tools/HairThinningOptions"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2857,6 +2864,11 @@ const AppContent = () => {
           <Route path="/tools/cpap-help-seniors" element={<CPAPHelpSeniors />} />
           <Route path="/tools/mattress-pillow-picker" element={<MattressPillowPicker />} />
           <Route path="/tools/white-noise-guide" element={<WhiteNoiseGuide />} />
+          <Route path="/tools/earwax-removal-guide" element={<EarwaxRemovalGuide />} />
+          <Route path="/tools/denture-care-guide" element={<DentureCareGuide />} />
+          <Route path="/tools/foot-care-seniors" element={<FootCareSeniors />} />
+          <Route path="/tools/skin-care-after-65" element={<SkinCareAfter65 />} />
+          <Route path="/tools/hair-thinning-options" element={<HairThinningOptions />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
