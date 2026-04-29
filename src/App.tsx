@@ -1154,6 +1154,13 @@ const SugarReductionGuide    = lazy(() => import("./pages/tools/SugarReductionGu
 const AntiInflammatoryEating = lazy(() => import("./pages/tools/AntiInflammatoryEating"));
 const SeniorSmoothieRecipes  = lazy(() => import("./pages/tools/SeniorSmoothieRecipes"));
 
+// ── Cycle 140 (April 29 2026) — sleep + rest ──
+const InsomniaSeniorGuide    = lazy(() => import("./pages/tools/InsomniaSeniorGuide"));
+const MelatoninSafetyGuide   = lazy(() => import("./pages/tools/MelatoninSafetyGuide"));
+const CPAPHelpSeniors        = lazy(() => import("./pages/tools/CPAPHelpSeniors"));
+const MattressPillowPicker   = lazy(() => import("./pages/tools/MattressPillowPicker"));
+const WhiteNoiseGuide        = lazy(() => import("./pages/tools/WhiteNoiseGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2845,6 +2852,11 @@ const AppContent = () => {
           <Route path="/tools/sugar-reduction-guide" element={<SugarReductionGuide />} />
           <Route path="/tools/anti-inflammatory-eating" element={<AntiInflammatoryEating />} />
           <Route path="/tools/senior-smoothie-recipes" element={<SeniorSmoothieRecipes />} />
+          <Route path="/tools/insomnia-senior-guide" element={<InsomniaSeniorGuide />} />
+          <Route path="/tools/melatonin-safety-guide" element={<MelatoninSafetyGuide />} />
+          <Route path="/tools/cpap-help-seniors" element={<CPAPHelpSeniors />} />
+          <Route path="/tools/mattress-pillow-picker" element={<MattressPillowPicker />} />
+          <Route path="/tools/white-noise-guide" element={<WhiteNoiseGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
