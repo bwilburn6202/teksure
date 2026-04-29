@@ -1609,6 +1609,13 @@ const BallroomDancingSeniors = lazy(() => import("./pages/tools/BallroomDancingS
 const ChoirForSeniors        = lazy(() => import("./pages/tools/ChoirForSeniors"));
 const MusicTherapyApps       = lazy(() => import("./pages/tools/MusicTherapyApps"));
 
+// ── Cycle 205 (April 29 2026) — crafts ──
+const CrochetForSeniors      = lazy(() => import("./pages/tools/CrochetForSeniors"));
+const SewingMachineBasics    = lazy(() => import("./pages/tools/SewingMachineBasics"));
+const QuiltingForBeginners   = lazy(() => import("./pages/tools/QuiltingForBeginners"));
+const EmbroideryForSeniors   = lazy(() => import("./pages/tools/EmbroideryForSeniors"));
+const ScrapbookingDigital    = lazy(() => import("./pages/tools/ScrapbookingDigital"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3625,6 +3632,11 @@ const AppContent = () => {
           <Route path="/tools/ballroom-dancing-seniors" element={<BallroomDancingSeniors />} />
           <Route path="/tools/choir-for-seniors" element={<ChoirForSeniors />} />
           <Route path="/tools/music-therapy-apps" element={<MusicTherapyApps />} />
+          <Route path="/tools/crochet-for-seniors" element={<CrochetForSeniors />} />
+          <Route path="/tools/sewing-machine-basics" element={<SewingMachineBasics />} />
+          <Route path="/tools/quilting-for-beginners" element={<QuiltingForBeginners />} />
+          <Route path="/tools/embroidery-for-seniors" element={<EmbroideryForSeniors />} />
+          <Route path="/tools/scrapbooking-digital" element={<ScrapbookingDigital />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
