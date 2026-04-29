@@ -1091,6 +1091,13 @@ const BlackoutKit            = lazy(() => import("./pages/tools/BlackoutKit"));
 const EvacuationGoBag        = lazy(() => import("./pages/tools/EvacuationGoBag"));
 const FloodPrep              = lazy(() => import("./pages/tools/FloodPrep"));
 
+// ── Cycle 131 (April 29 2026) — senior cooking ──
+const SlowCookerBasics       = lazy(() => import("./pages/tools/SlowCookerBasics"));
+const OnePotMeals            = lazy(() => import("./pages/tools/OnePotMeals"));
+const FreezerMealPrep        = lazy(() => import("./pages/tools/FreezerMealPrep"));
+const HealthySnackIdeas      = lazy(() => import("./pages/tools/HealthySnackIdeas"));
+const SoupRecipes            = lazy(() => import("./pages/tools/SoupRecipes"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2725,6 +2732,13 @@ const AppContent = () => {
           <Route path="/tools/blackout-kit" element={<BlackoutKit />} />
           <Route path="/tools/evacuation-go-bag" element={<EvacuationGoBag />} />
           <Route path="/tools/flood-prep" element={<FloodPrep />} />
+
+          {/* Cycle 131 — senior cooking */}
+          <Route path="/tools/slow-cooker-basics" element={<SlowCookerBasics />} />
+          <Route path="/tools/one-pot-meals" element={<OnePotMeals />} />
+          <Route path="/tools/freezer-meal-prep" element={<FreezerMealPrep />} />
+          <Route path="/tools/healthy-snack-ideas" element={<HealthySnackIdeas />} />
+          <Route path="/tools/soup-recipes" element={<SoupRecipes />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
