@@ -1280,6 +1280,13 @@ const AdaptiveKitchenTools   = lazy(() => import("./pages/tools/AdaptiveKitchenT
 const CoffeeMakerForSeniors  = lazy(() => import("./pages/tools/CoffeeMakerForSeniors"));
 const InductionStoveExplained = lazy(() => import("./pages/tools/InductionStoveExplained"));
 
+// ── Cycle 158 (April 29 2026) — legal + credit ──
+const PowerOfAttorneyTypes   = lazy(() => import("./pages/tools/PowerOfAttorneyTypes"));
+const GuardianshipVsConservatorship = lazy(() => import("./pages/tools/GuardianshipVsConservatorship"));
+const ElderLawAttorneyFinder = lazy(() => import("./pages/tools/ElderLawAttorneyFinder"));
+const FreeLegalAidForSeniors = lazy(() => import("./pages/tools/FreeLegalAidForSeniors"));
+const DebtCollectorRights    = lazy(() => import("./pages/tools/DebtCollectorRights"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3061,6 +3068,11 @@ const AppContent = () => {
           <Route path="/tools/adaptive-kitchen-tools" element={<AdaptiveKitchenTools />} />
           <Route path="/tools/coffee-maker-for-seniors" element={<CoffeeMakerForSeniors />} />
           <Route path="/tools/induction-stove-explained" element={<InductionStoveExplained />} />
+          <Route path="/tools/power-of-attorney-types" element={<PowerOfAttorneyTypes />} />
+          <Route path="/tools/guardianship-vs-conservatorship" element={<GuardianshipVsConservatorship />} />
+          <Route path="/tools/elder-law-attorney-finder" element={<ElderLawAttorneyFinder />} />
+          <Route path="/tools/free-legal-aid-for-seniors" element={<FreeLegalAidForSeniors />} />
+          <Route path="/tools/debt-collector-rights" element={<DebtCollectorRights />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
