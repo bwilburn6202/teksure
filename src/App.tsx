@@ -601,6 +601,13 @@ const CoinCollectingApps     = lazy(() => import("./pages/tools/CoinCollectingAp
 const SportsCardsComics      = lazy(() => import("./pages/tools/SportsCardsComics"));
 const OldCollectiblesReality = lazy(() => import("./pages/tools/OldCollectiblesReality"));
 
+// ── Cycle 61 (April 29 2026) — troubleshooting ──
+const BluetoothPairingTroubleshoot = lazy(() => import("./pages/tools/BluetoothPairingTroubleshoot"));
+const PhoneWontCharge        = lazy(() => import("./pages/tools/PhoneWontCharge"));
+const BatteryDrainFix        = lazy(() => import("./pages/tools/BatteryDrainFix"));
+const InternetDownTroubleshoot = lazy(() => import("./pages/tools/InternetDownTroubleshoot"));
+const AppPhoneFrozenFix      = lazy(() => import("./pages/tools/AppPhoneFrozenFix"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1745,6 +1752,13 @@ const AppContent = () => {
           <Route path="/tools/coin-collecting-apps" element={<CoinCollectingApps />} />
           <Route path="/tools/sports-cards-comics" element={<SportsCardsComics />} />
           <Route path="/tools/old-collectibles-reality" element={<OldCollectiblesReality />} />
+
+          {/* Cycle 61 — troubleshooting */}
+          <Route path="/tools/bluetooth-pairing-troubleshoot" element={<BluetoothPairingTroubleshoot />} />
+          <Route path="/tools/phone-wont-charge" element={<PhoneWontCharge />} />
+          <Route path="/tools/battery-drain-fix" element={<BatteryDrainFix />} />
+          <Route path="/tools/internet-down-troubleshoot" element={<InternetDownTroubleshoot />} />
+          <Route path="/tools/app-phone-frozen-fix" element={<AppPhoneFrozenFix />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
