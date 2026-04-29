@@ -1651,6 +1651,13 @@ const CloudFolderOrganization   = lazy(() => import("./pages/tools/CloudFolderOr
 const DarkModeGuide             = lazy(() => import("./pages/tools/DarkModeGuide"));
 const WallpaperBackgroundGuide  = lazy(() => import("./pages/tools/WallpaperBackgroundGuide"));
 
+// ── Cycle 211 (April 29 2026) — banking essentials ──
+const CheckbookBalancingApps    = lazy(() => import("./pages/tools/CheckbookBalancingApps"));
+const MobileDepositGuide        = lazy(() => import("./pages/tools/MobileDepositGuide"));
+const DirectDepositSetup        = lazy(() => import("./pages/tools/DirectDepositSetup"));
+const SafeDepositBoxGuide       = lazy(() => import("./pages/tools/SafeDepositBoxGuide"));
+const EmergencyFundForSeniors   = lazy(() => import("./pages/tools/EmergencyFundForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3697,6 +3704,11 @@ const AppContent = () => {
           <Route path="/tools/cloud-folder-organization" element={<CloudFolderOrganization />} />
           <Route path="/tools/dark-mode-guide" element={<DarkModeGuide />} />
           <Route path="/tools/wallpaper-background-guide" element={<WallpaperBackgroundGuide />} />
+          <Route path="/tools/checkbook-balancing-apps" element={<CheckbookBalancingApps />} />
+          <Route path="/tools/mobile-deposit-guide" element={<MobileDepositGuide />} />
+          <Route path="/tools/direct-deposit-setup" element={<DirectDepositSetup />} />
+          <Route path="/tools/safe-deposit-box-guide" element={<SafeDepositBoxGuide />} />
+          <Route path="/tools/emergency-fund-for-seniors" element={<EmergencyFundForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
