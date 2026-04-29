@@ -699,6 +699,13 @@ const ChatGptForSeniors      = lazy(() => import("./pages/tools/ChatGptForSenior
 const AppleIntelligenceGuide = lazy(() => import("./pages/tools/AppleIntelligenceGuide"));
 const VoiceShoppingTips      = lazy(() => import("./pages/tools/VoiceShoppingTips"));
 
+// ── Cycle 75 (April 29 2026) — photos + memories ──
+const PhotoBackupCompare     = lazy(() => import("./pages/tools/PhotoBackupCompare"));
+const ScanOldPhotos          = lazy(() => import("./pages/tools/ScanOldPhotos"));
+const FamilyTreeApps         = lazy(() => import("./pages/tools/FamilyTreeApps"));
+const VideoConverterFree     = lazy(() => import("./pages/tools/VideoConverterFree"));
+const PhotoBookServices      = lazy(() => import("./pages/tools/PhotoBookServices"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1941,6 +1948,13 @@ const AppContent = () => {
           <Route path="/tools/chatgpt-for-seniors" element={<ChatGptForSeniors />} />
           <Route path="/tools/apple-intelligence-guide" element={<AppleIntelligenceGuide />} />
           <Route path="/tools/voice-shopping-tips" element={<VoiceShoppingTips />} />
+
+          {/* Cycle 75 — photos + memories */}
+          <Route path="/tools/photo-backup-compare" element={<PhotoBackupCompare />} />
+          <Route path="/tools/scan-old-photos" element={<ScanOldPhotos />} />
+          <Route path="/tools/family-tree-apps" element={<FamilyTreeApps />} />
+          <Route path="/tools/video-converter-free" element={<VideoConverterFree />} />
+          <Route path="/tools/photo-book-services" element={<PhotoBookServices />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
