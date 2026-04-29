@@ -972,6 +972,13 @@ const BackupCameraRetrofit   = lazy(() => import("./pages/tools/BackupCameraRetr
 const BlindSpotMirrorSetups  = lazy(() => import("./pages/tools/BlindSpotMirrorSetups"));
 const SeniorRideShareAlternatives = lazy(() => import("./pages/tools/SeniorRideShareAlternatives"));
 
+// ── Cycle 114 (April 29 2026) — senior shopping smart ──
+const BulkBuyingMath         = lazy(() => import("./pages/tools/BulkBuyingMath"));
+const CouponStackingTips     = lazy(() => import("./pages/tools/CouponStackingTips"));
+const ReturnsAtCostco        = lazy(() => import("./pages/tools/ReturnsAtCostco"));
+const BestBuyOpenBox         = lazy(() => import("./pages/tools/BestBuyOpenBox"));
+const TraderJoesAppGuide     = lazy(() => import("./pages/tools/TraderJoesAppGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2487,6 +2494,13 @@ const AppContent = () => {
           <Route path="/tools/backup-camera-retrofit" element={<BackupCameraRetrofit />} />
           <Route path="/tools/blind-spot-mirror-setups" element={<BlindSpotMirrorSetups />} />
           <Route path="/tools/senior-rideshare-alternatives" element={<SeniorRideShareAlternatives />} />
+
+          {/* Cycle 114 — senior shopping smart */}
+          <Route path="/tools/bulk-buying-math" element={<BulkBuyingMath />} />
+          <Route path="/tools/coupon-stacking-tips" element={<CouponStackingTips />} />
+          <Route path="/tools/returns-at-costco" element={<ReturnsAtCostco />} />
+          <Route path="/tools/best-buy-open-box" element={<BestBuyOpenBox />} />
+          <Route path="/tools/trader-joes-app-guide" element={<TraderJoesAppGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
