@@ -244,6 +244,13 @@ const LibraryAppHelper       = lazy(() => import("./pages/tools/LibraryAppHelper
 const RideshareCoach         = lazy(() => import("./pages/tools/RideshareCoach"));
 const MeshWifiPicker         = lazy(() => import("./pages/tools/MeshWifiPicker"));
 
+// ── Cycle 10 (April 29 2026) — AI / photos / docs / govt ──
+const AiBeginnerCoach        = lazy(() => import("./pages/tools/AiBeginnerCoach"));
+const OldPhotoRestore        = lazy(() => import("./pages/tools/OldPhotoRestore"));
+const DigitizeOldMedia       = lazy(() => import("./pages/tools/DigitizeOldMedia"));
+const ESignCoach             = lazy(() => import("./pages/tools/ESignCoach"));
+const LoginGovIdMeHelper     = lazy(() => import("./pages/tools/LoginGovIdMeHelper"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1031,6 +1038,13 @@ const AppContent = () => {
           <Route path="/tools/library-app-helper" element={<LibraryAppHelper />} />
           <Route path="/tools/rideshare-coach" element={<RideshareCoach />} />
           <Route path="/tools/mesh-wifi-picker" element={<MeshWifiPicker />} />
+
+          {/* Cycle 10 — AI / photos / docs / govt */}
+          <Route path="/tools/ai-beginner-coach" element={<AiBeginnerCoach />} />
+          <Route path="/tools/old-photo-restore" element={<OldPhotoRestore />} />
+          <Route path="/tools/digitize-old-media" element={<DigitizeOldMedia />} />
+          <Route path="/tools/esign-coach" element={<ESignCoach />} />
+          <Route path="/tools/login-gov-id-me-helper" element={<LoginGovIdMeHelper />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
