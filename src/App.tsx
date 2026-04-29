@@ -356,6 +356,13 @@ const MedicalAlertPicker     = lazy(() => import("./pages/tools/MedicalAlertPick
 const TelehealthVisitCoach   = lazy(() => import("./pages/tools/TelehealthVisitCoach"));
 const OnlinePharmacyCoach    = lazy(() => import("./pages/tools/OnlinePharmacyCoach"));
 
+// ── Cycle 26 (April 29 2026) — kitchen / inventory / privacy / sell / utilities ──
+const SmartCookingTools      = lazy(() => import("./pages/tools/SmartCookingTools"));
+const HomeInventoryApp       = lazy(() => import("./pages/tools/HomeInventoryApp"));
+const HiddenCameraDetector   = lazy(() => import("./pages/tools/HiddenCameraDetector"));
+const SellOnlineCoach        = lazy(() => import("./pages/tools/SellOnlineCoach"));
+const UtilityBillReduction   = lazy(() => import("./pages/tools/UtilityBillReduction"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1255,6 +1262,13 @@ const AppContent = () => {
           <Route path="/tools/medical-alert-picker" element={<MedicalAlertPicker />} />
           <Route path="/tools/telehealth-visit-coach" element={<TelehealthVisitCoach />} />
           <Route path="/tools/online-pharmacy-coach" element={<OnlinePharmacyCoach />} />
+
+          {/* Cycle 26 — kitchen / inventory / privacy / sell / utilities */}
+          <Route path="/tools/smart-cooking-tools" element={<SmartCookingTools />} />
+          <Route path="/tools/home-inventory-app" element={<HomeInventoryApp />} />
+          <Route path="/tools/hidden-camera-detector" element={<HiddenCameraDetector />} />
+          <Route path="/tools/sell-online-coach" element={<SellOnlineCoach />} />
+          <Route path="/tools/utility-bill-reduction" element={<UtilityBillReduction />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
