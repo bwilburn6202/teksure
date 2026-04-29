@@ -1364,6 +1364,13 @@ const SeniorCyclingTips      = lazy(() => import("./pages/tools/SeniorCyclingTip
 const HikingForSeniors       = lazy(() => import("./pages/tools/HikingForSeniors"));
 const AquaticExerciseGuide   = lazy(() => import("./pages/tools/AquaticExerciseGuide"));
 
+// ── Cycle 170 (April 29 2026) — computers + ecosystems ──
+const ChromebookForSeniors   = lazy(() => import("./pages/tools/ChromebookForSeniors"));
+const MacForSeniors          = lazy(() => import("./pages/tools/MacForSeniors"));
+const WindowsBasicsForSeniors = lazy(() => import("./pages/tools/WindowsBasicsForSeniors"));
+const MicrosoftO365vsGoogle  = lazy(() => import("./pages/tools/MicrosoftO365vsGoogle"));
+const IPadVsLaptopForSeniors = lazy(() => import("./pages/tools/IPadVsLaptopForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3205,6 +3212,11 @@ const AppContent = () => {
           <Route path="/tools/senior-cycling-tips" element={<SeniorCyclingTips />} />
           <Route path="/tools/hiking-for-seniors" element={<HikingForSeniors />} />
           <Route path="/tools/aquatic-exercise-guide" element={<AquaticExerciseGuide />} />
+          <Route path="/tools/chromebook-for-seniors" element={<ChromebookForSeniors />} />
+          <Route path="/tools/mac-for-seniors" element={<MacForSeniors />} />
+          <Route path="/tools/windows-basics-for-seniors" element={<WindowsBasicsForSeniors />} />
+          <Route path="/tools/microsoft-o365-vs-google" element={<MicrosoftO365vsGoogle />} />
+          <Route path="/tools/ipad-vs-laptop-for-seniors" element={<IPadVsLaptopForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
