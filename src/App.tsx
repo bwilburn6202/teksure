@@ -1245,6 +1245,13 @@ const SonosSetupGuide        = lazy(() => import("./pages/tools/SonosSetupGuide"
 const BroadwayHDForSeniors   = lazy(() => import("./pages/tools/BroadwayHDForSeniors"));
 const FreeAudiobookSources   = lazy(() => import("./pages/tools/FreeAudiobookSources"));
 
+// ── Cycle 153 (April 29 2026) — outdoor + seasonal ──
+const HummingbirdFeederSetup = lazy(() => import("./pages/tools/HummingbirdFeederSetup"));
+const CompostingForSeniors   = lazy(() => import("./pages/tools/CompostingForSeniors"));
+const TreeCareWhenToCallPro  = lazy(() => import("./pages/tools/TreeCareWhenToCallPro"));
+const LeafBlowerPicker       = lazy(() => import("./pages/tools/LeafBlowerPicker"));
+const IceMeltSidewalkSafety  = lazy(() => import("./pages/tools/IceMeltSidewalkSafety"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3001,6 +3008,11 @@ const AppContent = () => {
           <Route path="/tools/sonos-setup-guide" element={<SonosSetupGuide />} />
           <Route path="/tools/broadway-hd-for-seniors" element={<BroadwayHDForSeniors />} />
           <Route path="/tools/free-audiobook-sources" element={<FreeAudiobookSources />} />
+          <Route path="/tools/hummingbird-feeder-setup" element={<HummingbirdFeederSetup />} />
+          <Route path="/tools/composting-for-seniors" element={<CompostingForSeniors />} />
+          <Route path="/tools/tree-care-when-to-call-pro" element={<TreeCareWhenToCallPro />} />
+          <Route path="/tools/leaf-blower-picker" element={<LeafBlowerPicker />} />
+          <Route path="/tools/ice-melt-sidewalk-safety" element={<IceMeltSidewalkSafety />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
