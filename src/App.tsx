@@ -937,6 +937,13 @@ const SmartThermostatPicks   = lazy(() => import("./pages/tools/SmartThermostatP
 const SmartLightingBasics    = lazy(() => import("./pages/tools/SmartLightingBasics"));
 const SmartHubExplained      = lazy(() => import("./pages/tools/SmartHubExplained"));
 
+// ── Cycle 109 (April 29 2026) — senior phones + simple devices ──
+const SimplePhonesForSeniors = lazy(() => import("./pages/tools/SimplePhonesForSeniors"));
+const Jitterbug              = lazy(() => import("./pages/tools/Jitterbug"));
+const GrandPadReview         = lazy(() => import("./pages/tools/GrandPadReview"));
+const AppleWatchAsPhone      = lazy(() => import("./pages/tools/AppleWatchAsPhone"));
+const EmergencyButtonPicks   = lazy(() => import("./pages/tools/EmergencyButtonPicks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2417,6 +2424,13 @@ const AppContent = () => {
           <Route path="/tools/smart-thermostat-picks" element={<SmartThermostatPicks />} />
           <Route path="/tools/smart-lighting-basics" element={<SmartLightingBasics />} />
           <Route path="/tools/smart-hub-explained" element={<SmartHubExplained />} />
+
+          {/* Cycle 109 — senior phones + simple devices */}
+          <Route path="/tools/simple-phones-for-seniors" element={<SimplePhonesForSeniors />} />
+          <Route path="/tools/jitterbug" element={<Jitterbug />} />
+          <Route path="/tools/grandpad-review" element={<GrandPadReview />} />
+          <Route path="/tools/apple-watch-as-phone" element={<AppleWatchAsPhone />} />
+          <Route path="/tools/emergency-button-picks" element={<EmergencyButtonPicks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
