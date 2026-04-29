@@ -300,6 +300,13 @@ const StargazingApps         = lazy(() => import("./pages/tools/StargazingApps")
 const RecipeMealApps         = lazy(() => import("./pages/tools/RecipeMealApps"));
 const AppleWatchHealthCoach  = lazy(() => import("./pages/tools/AppleWatchHealthCoach"));
 
+// ── Cycle 18 (April 29 2026) — comms / smart home / health ──
+const WhatsAppCoach          = lazy(() => import("./pages/tools/WhatsAppCoach"));
+const SmartDoorbellPicker    = lazy(() => import("./pages/tools/SmartDoorbellPicker"));
+const CgmCoach               = lazy(() => import("./pages/tools/CgmCoach"));
+const OnlineHearingTest      = lazy(() => import("./pages/tools/OnlineHearingTest"));
+const SkypeReplacement       = lazy(() => import("./pages/tools/SkypeReplacement"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1143,6 +1150,13 @@ const AppContent = () => {
           <Route path="/tools/stargazing-apps" element={<StargazingApps />} />
           <Route path="/tools/recipe-meal-apps" element={<RecipeMealApps />} />
           <Route path="/tools/apple-watch-health-coach" element={<AppleWatchHealthCoach />} />
+
+          {/* Cycle 18 — comms / smart home / health */}
+          <Route path="/tools/whatsapp-coach" element={<WhatsAppCoach />} />
+          <Route path="/tools/smart-doorbell-picker" element={<SmartDoorbellPicker />} />
+          <Route path="/tools/cgm-coach" element={<CgmCoach />} />
+          <Route path="/tools/online-hearing-test" element={<OnlineHearingTest />} />
+          <Route path="/tools/skype-replacement" element={<SkypeReplacement />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
