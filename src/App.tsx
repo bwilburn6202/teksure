@@ -1028,6 +1028,13 @@ const WifiExtenders          = lazy(() => import("./pages/tools/WifiExtenders"))
 const GuestNetworkSetup      = lazy(() => import("./pages/tools/GuestNetworkSetup"));
 const EthernetVsWifi         = lazy(() => import("./pages/tools/EthernetVsWifi"));
 
+// ── Cycle 122 (April 29 2026) — tax + Medicare deeper ──
+const TaxLossHarvesting      = lazy(() => import("./pages/tools/TaxLossHarvesting"));
+const MedicareEnrollmentTimeline = lazy(() => import("./pages/tools/MedicareEnrollmentTimeline"));
+const MedicareSupplementCompare = lazy(() => import("./pages/tools/MedicareSupplementCompare"));
+const IRMAACliffs            = lazy(() => import("./pages/tools/IRMAACliffs"));
+const RMDStrategies          = lazy(() => import("./pages/tools/RMDStrategies"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2599,6 +2606,13 @@ const AppContent = () => {
           <Route path="/tools/wifi-extenders" element={<WifiExtenders />} />
           <Route path="/tools/guest-network-setup" element={<GuestNetworkSetup />} />
           <Route path="/tools/ethernet-vs-wifi" element={<EthernetVsWifi />} />
+
+          {/* Cycle 122 — tax + Medicare deeper */}
+          <Route path="/tools/tax-loss-harvesting" element={<TaxLossHarvesting />} />
+          <Route path="/tools/medicare-enrollment-timeline" element={<MedicareEnrollmentTimeline />} />
+          <Route path="/tools/medicare-supplement-compare" element={<MedicareSupplementCompare />} />
+          <Route path="/tools/irmaa-cliffs" element={<IRMAACliffs />} />
+          <Route path="/tools/rmd-strategies" element={<RMDStrategies />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
