@@ -314,6 +314,13 @@ const DigitalPhotoFramePicker = lazy(() => import("./pages/tools/DigitalPhotoFra
 const TvSoundBarPicker       = lazy(() => import("./pages/tools/TvSoundBarPicker"));
 const VolunteerApps          = lazy(() => import("./pages/tools/VolunteerApps"));
 
+// ── Cycle 20 (April 29 2026) — cloud/passwords/speed/browser/learning ──
+const CloudStoragePicker     = lazy(() => import("./pages/tools/CloudStoragePicker"));
+const PasswordManagerPicker  = lazy(() => import("./pages/tools/PasswordManagerPicker"));
+const InternetSpeedTestCoach = lazy(() => import("./pages/tools/InternetSpeedTestCoach"));
+const BrowserPicker          = lazy(() => import("./pages/tools/BrowserPicker"));
+const OnlineLearningPicker   = lazy(() => import("./pages/tools/OnlineLearningPicker"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1171,6 +1178,13 @@ const AppContent = () => {
           <Route path="/tools/digital-photo-frame-picker" element={<DigitalPhotoFramePicker />} />
           <Route path="/tools/tv-sound-bar-picker" element={<TvSoundBarPicker />} />
           <Route path="/tools/volunteer-apps" element={<VolunteerApps />} />
+
+          {/* Cycle 20 — cloud/passwords/speed/browser/learning */}
+          <Route path="/tools/cloud-storage-picker" element={<CloudStoragePicker />} />
+          <Route path="/tools/password-manager-picker" element={<PasswordManagerPicker />} />
+          <Route path="/tools/internet-speed-test-coach" element={<InternetSpeedTestCoach />} />
+          <Route path="/tools/browser-picker" element={<BrowserPicker />} />
+          <Route path="/tools/online-learning-picker" element={<OnlineLearningPicker />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
