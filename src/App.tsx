@@ -1434,6 +1434,13 @@ const AlexaShoppingList      = lazy(() => import("./pages/tools/AlexaShoppingLis
 const AlexaMedReminders      = lazy(() => import("./pages/tools/AlexaMedReminders"));
 const AlexaWithDementia      = lazy(() => import("./pages/tools/AlexaWithDementia"));
 
+// ── Cycle 180 (April 29 2026) — internet + ISP ──
+const ISPNegotiationGuide    = lazy(() => import("./pages/tools/ISPNegotiationGuide"));
+const FiberVsCableInternet   = lazy(() => import("./pages/tools/FiberVsCableInternet"));
+const StarlinkForRural       = lazy(() => import("./pages/tools/StarlinkForRural"));
+const TMobileHomeInternet    = lazy(() => import("./pages/tools/TMobileHomeInternet"));
+const ACPInternetSubsidy     = lazy(() => import("./pages/tools/ACPInternetSubsidy"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3325,6 +3332,11 @@ const AppContent = () => {
           <Route path="/tools/alexa-shopping-list" element={<AlexaShoppingList />} />
           <Route path="/tools/alexa-med-reminders" element={<AlexaMedReminders />} />
           <Route path="/tools/alexa-with-dementia" element={<AlexaWithDementia />} />
+          <Route path="/tools/isp-negotiation-guide" element={<ISPNegotiationGuide />} />
+          <Route path="/tools/fiber-vs-cable-internet" element={<FiberVsCableInternet />} />
+          <Route path="/tools/starlink-for-rural" element={<StarlinkForRural />} />
+          <Route path="/tools/t-mobile-home-internet" element={<TMobileHomeInternet />} />
+          <Route path="/tools/acp-internet-subsidy" element={<ACPInternetSubsidy />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
