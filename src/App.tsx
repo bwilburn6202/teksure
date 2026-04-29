@@ -769,6 +769,13 @@ const HikingGpsApps          = lazy(() => import("./pages/tools/HikingGpsApps"))
 const BackyardSafetyAudit    = lazy(() => import("./pages/tools/BackyardSafetyAudit"));
 const SnowSafetyTech         = lazy(() => import("./pages/tools/SnowSafetyTech"));
 
+// ── Cycle 85 (April 29 2026) — civic + community ──
+const VotingTechHelp         = lazy(() => import("./pages/tools/VotingTechHelp"));
+const NextdoorBasics         = lazy(() => import("./pages/tools/NextdoorBasics"));
+const VolunteerMatchApps     = lazy(() => import("./pages/tools/VolunteerMatchApps"));
+const LocalNewsApps          = lazy(() => import("./pages/tools/LocalNewsApps"));
+const CityOpenDataTools      = lazy(() => import("./pages/tools/CityOpenDataTools"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2081,6 +2088,13 @@ const AppContent = () => {
           <Route path="/tools/hiking-gps-apps" element={<HikingGpsApps />} />
           <Route path="/tools/backyard-safety-audit" element={<BackyardSafetyAudit />} />
           <Route path="/tools/snow-safety-tech" element={<SnowSafetyTech />} />
+
+          {/* Cycle 85 — civic + community */}
+          <Route path="/tools/voting-tech-help" element={<VotingTechHelp />} />
+          <Route path="/tools/nextdoor-basics" element={<NextdoorBasics />} />
+          <Route path="/tools/volunteer-match-apps" element={<VolunteerMatchApps />} />
+          <Route path="/tools/local-news-apps" element={<LocalNewsApps />} />
+          <Route path="/tools/city-open-data-tools" element={<CityOpenDataTools />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
