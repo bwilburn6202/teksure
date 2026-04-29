@@ -1000,6 +1000,13 @@ const GooglePrivacyDashboard = lazy(() => import("./pages/tools/GooglePrivacyDas
 const ApplePrivacyReport     = lazy(() => import("./pages/tools/ApplePrivacyReport"));
 const FacebookPrivacyAudit   = lazy(() => import("./pages/tools/FacebookPrivacyAudit"));
 
+// ── Cycle 118 (April 29 2026) — AI for seniors ──
+const ChatGPTRecipes         = lazy(() => import("./pages/tools/ChatGPTRecipes"));
+const AILetterDrafting       = lazy(() => import("./pages/tools/AILetterDrafting"));
+const AIPhotoEdit            = lazy(() => import("./pages/tools/AIPhotoEdit"));
+const AIBillNegotiate        = lazy(() => import("./pages/tools/AIBillNegotiate"));
+const AISeniorSearch         = lazy(() => import("./pages/tools/AISeniorSearch"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2543,6 +2550,13 @@ const AppContent = () => {
           <Route path="/tools/google-privacy-dashboard" element={<GooglePrivacyDashboard />} />
           <Route path="/tools/apple-privacy-report" element={<ApplePrivacyReport />} />
           <Route path="/tools/facebook-privacy-audit" element={<FacebookPrivacyAudit />} />
+
+          {/* Cycle 118 — AI for seniors */}
+          <Route path="/tools/chatgpt-recipes" element={<ChatGPTRecipes />} />
+          <Route path="/tools/ai-letter-drafting" element={<AILetterDrafting />} />
+          <Route path="/tools/ai-photo-edit" element={<AIPhotoEdit />} />
+          <Route path="/tools/ai-bill-negotiate" element={<AIBillNegotiate />} />
+          <Route path="/tools/ai-senior-search" element={<AISeniorSearch />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
