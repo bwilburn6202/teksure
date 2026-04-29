@@ -1497,6 +1497,13 @@ const ProstateScreeningSeniors = lazy(() => import("./pages/tools/ProstateScreen
 const AnnualWellnessVisit    = lazy(() => import("./pages/tools/AnnualWellnessVisit"));
 const SeniorVaccinesGuide    = lazy(() => import("./pages/tools/SeniorVaccinesGuide"));
 
+// ── Cycle 189 (April 29 2026) — mental health ──
+const SeniorDepressionGuide  = lazy(() => import("./pages/tools/SeniorDepressionGuide"));
+const AnxietyToolsForSeniors = lazy(() => import("./pages/tools/AnxietyToolsForSeniors"));
+const ChronicPainManagement  = lazy(() => import("./pages/tools/ChronicPainManagement"));
+const GriefAfterLoss         = lazy(() => import("./pages/tools/GriefAfterLoss"));
+const CrisisLineGuide        = lazy(() => import("./pages/tools/CrisisLineGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3433,6 +3440,11 @@ const AppContent = () => {
           <Route path="/tools/prostate-screening-seniors" element={<ProstateScreeningSeniors />} />
           <Route path="/tools/annual-wellness-visit" element={<AnnualWellnessVisit />} />
           <Route path="/tools/senior-vaccines-guide" element={<SeniorVaccinesGuide />} />
+          <Route path="/tools/senior-depression-guide" element={<SeniorDepressionGuide />} />
+          <Route path="/tools/anxiety-tools-for-seniors" element={<AnxietyToolsForSeniors />} />
+          <Route path="/tools/chronic-pain-management" element={<ChronicPainManagement />} />
+          <Route path="/tools/grief-after-loss" element={<GriefAfterLoss />} />
+          <Route path="/tools/crisis-line-guide" element={<CrisisLineGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
