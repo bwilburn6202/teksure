@@ -1532,6 +1532,13 @@ const POLSTOrders            = lazy(() => import("./pages/tools/POLSTOrders"));
 const HospiceMyths           = lazy(() => import("./pages/tools/HospiceMyths"));
 const GriefForFamilyAfterDeath = lazy(() => import("./pages/tools/GriefForFamilyAfterDeath"));
 
+// ── Cycle 194 (April 29 2026) — car maintenance ──
+const TirePickGuide          = lazy(() => import("./pages/tools/TirePickGuide"));
+const OilChangeFrequency     = lazy(() => import("./pages/tools/OilChangeFrequency"));
+const DashcamPicker          = lazy(() => import("./pages/tools/DashcamPicker"));
+const CarBatteryReplacement  = lazy(() => import("./pages/tools/CarBatteryReplacement"));
+const CarMaintenanceSchedule = lazy(() => import("./pages/tools/CarMaintenanceSchedule"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3493,6 +3500,11 @@ const AppContent = () => {
           <Route path="/tools/polst-orders" element={<POLSTOrders />} />
           <Route path="/tools/hospice-myths" element={<HospiceMyths />} />
           <Route path="/tools/grief-for-family-after-death" element={<GriefForFamilyAfterDeath />} />
+          <Route path="/tools/tire-pick-guide" element={<TirePickGuide />} />
+          <Route path="/tools/oil-change-frequency" element={<OilChangeFrequency />} />
+          <Route path="/tools/dashcam-picker" element={<DashcamPicker />} />
+          <Route path="/tools/car-battery-replacement" element={<CarBatteryReplacement />} />
+          <Route path="/tools/car-maintenance-schedule" element={<CarMaintenanceSchedule />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
