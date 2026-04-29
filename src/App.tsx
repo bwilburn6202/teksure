@@ -832,6 +832,13 @@ const AppliancePartsApps     = lazy(() => import("./pages/tools/AppliancePartsAp
 const PaintColorApps         = lazy(() => import("./pages/tools/PaintColorApps"));
 const FurnitureAssemblyHelp  = lazy(() => import("./pages/tools/FurnitureAssemblyHelp"));
 
+// ── Cycle 94 (April 29 2026) — nutrition + meals ──
+const MealKitDelivery        = lazy(() => import("./pages/tools/MealKitDelivery"));
+const GroceryDeliveryApps    = lazy(() => import("./pages/tools/GroceryDeliveryApps"));
+const NutritionLabelScanner  = lazy(() => import("./pages/tools/NutritionLabelScanner"));
+const DietApps               = lazy(() => import("./pages/tools/DietApps"));
+const SeniorMealPrograms     = lazy(() => import("./pages/tools/SeniorMealPrograms"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2207,6 +2214,13 @@ const AppContent = () => {
           <Route path="/tools/appliance-parts-apps" element={<AppliancePartsApps />} />
           <Route path="/tools/paint-color-apps" element={<PaintColorApps />} />
           <Route path="/tools/furniture-assembly-help" element={<FurnitureAssemblyHelp />} />
+
+          {/* Cycle 94 — nutrition + meals */}
+          <Route path="/tools/meal-kit-delivery" element={<MealKitDelivery />} />
+          <Route path="/tools/grocery-delivery-apps" element={<GroceryDeliveryApps />} />
+          <Route path="/tools/nutrition-label-scanner" element={<NutritionLabelScanner />} />
+          <Route path="/tools/diet-apps" element={<DietApps />} />
+          <Route path="/tools/senior-meal-programs" element={<SeniorMealPrograms />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
