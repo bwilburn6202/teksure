@@ -664,6 +664,13 @@ const PasskeyExplainer       = lazy(() => import("./pages/tools/PasskeyExplainer
 const AccountRecoveryPlan    = lazy(() => import("./pages/tools/AccountRecoveryPlan"));
 const FamilyPasswordSharing  = lazy(() => import("./pages/tools/FamilyPasswordSharing"));
 
+// ── Cycle 70 (April 29 2026) — entertainment + connection ──
+const VideoCallGroupTips     = lazy(() => import("./pages/tools/VideoCallGroupTips"));
+const AudiobookApps          = lazy(() => import("./pages/tools/AudiobookApps"));
+const DigitalPhotoFrames     = lazy(() => import("./pages/tools/DigitalPhotoFrames"));
+const RetirementCommunityWifi = lazy(() => import("./pages/tools/RetirementCommunityWifi"));
+const JigsawPuzzleApps       = lazy(() => import("./pages/tools/JigsawPuzzleApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1871,6 +1878,13 @@ const AppContent = () => {
           <Route path="/tools/passkey-explainer" element={<PasskeyExplainer />} />
           <Route path="/tools/account-recovery-plan" element={<AccountRecoveryPlan />} />
           <Route path="/tools/family-password-sharing" element={<FamilyPasswordSharing />} />
+
+          {/* Cycle 70 — entertainment + connection */}
+          <Route path="/tools/video-call-group-tips" element={<VideoCallGroupTips />} />
+          <Route path="/tools/audiobook-apps" element={<AudiobookApps />} />
+          <Route path="/tools/digital-photo-frames" element={<DigitalPhotoFrames />} />
+          <Route path="/tools/retirement-community-wifi" element={<RetirementCommunityWifi />} />
+          <Route path="/tools/jigsaw-puzzle-apps" element={<JigsawPuzzleApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
