@@ -1385,6 +1385,13 @@ const JewelryMakingSeniors   = lazy(() => import("./pages/tools/JewelryMakingSen
 const PotteryClassesGuide    = lazy(() => import("./pages/tools/PotteryClassesGuide"));
 const AdultColoringBooks     = lazy(() => import("./pages/tools/AdultColoringBooks"));
 
+// ── Cycle 173 (April 29 2026) — collecting hobbies ──
+const StampCollectingForSeniors = lazy(() => import("./pages/tools/StampCollectingForSeniors"));
+const AntiqueValueAppraisalApps = lazy(() => import("./pages/tools/AntiqueValueAppraisalApps"));
+const ComicBookCollecting    = lazy(() => import("./pages/tools/ComicBookCollecting"));
+const BaseballCardValuation  = lazy(() => import("./pages/tools/BaseballCardValuation"));
+const RecordCollectingGuide  = lazy(() => import("./pages/tools/RecordCollectingGuide"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3241,6 +3248,11 @@ const AppContent = () => {
           <Route path="/tools/jewelry-making-seniors" element={<JewelryMakingSeniors />} />
           <Route path="/tools/pottery-classes-guide" element={<PotteryClassesGuide />} />
           <Route path="/tools/adult-coloring-books" element={<AdultColoringBooks />} />
+          <Route path="/tools/stamp-collecting-for-seniors" element={<StampCollectingForSeniors />} />
+          <Route path="/tools/antique-value-appraisal-apps" element={<AntiqueValueAppraisalApps />} />
+          <Route path="/tools/comic-book-collecting" element={<ComicBookCollecting />} />
+          <Route path="/tools/baseball-card-valuation" element={<BaseballCardValuation />} />
+          <Route path="/tools/record-collecting-guide" element={<RecordCollectingGuide />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
