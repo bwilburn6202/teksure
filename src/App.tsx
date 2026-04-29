@@ -1602,6 +1602,13 @@ const BakingForSeniors       = lazy(() => import("./pages/tools/BakingForSeniors
 const SourdoughForSeniors    = lazy(() => import("./pages/tools/SourdoughForSeniors"));
 const CookbookPicksForSeniors = lazy(() => import("./pages/tools/CookbookPicksForSeniors"));
 
+// ── Cycle 204 (April 29 2026) — music + dance ──
+const PianoForSeniors        = lazy(() => import("./pages/tools/PianoForSeniors"));
+const UkuleleForSeniors      = lazy(() => import("./pages/tools/UkuleleForSeniors"));
+const BallroomDancingSeniors = lazy(() => import("./pages/tools/BallroomDancingSeniors"));
+const ChoirForSeniors        = lazy(() => import("./pages/tools/ChoirForSeniors"));
+const MusicTherapyApps       = lazy(() => import("./pages/tools/MusicTherapyApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3613,6 +3620,11 @@ const AppContent = () => {
           <Route path="/tools/baking-for-seniors" element={<BakingForSeniors />} />
           <Route path="/tools/sourdough-for-seniors" element={<SourdoughForSeniors />} />
           <Route path="/tools/cookbook-picks-for-seniors" element={<CookbookPicksForSeniors />} />
+          <Route path="/tools/piano-for-seniors" element={<PianoForSeniors />} />
+          <Route path="/tools/ukulele-for-seniors" element={<UkuleleForSeniors />} />
+          <Route path="/tools/ballroom-dancing-seniors" element={<BallroomDancingSeniors />} />
+          <Route path="/tools/choir-for-seniors" element={<ChoirForSeniors />} />
+          <Route path="/tools/music-therapy-apps" element={<MusicTherapyApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
