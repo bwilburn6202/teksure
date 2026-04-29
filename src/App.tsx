@@ -811,6 +811,13 @@ const BibleAppCompare        = lazy(() => import("./pages/tools/BibleAppCompare"
 const OnlineGriefSupport     = lazy(() => import("./pages/tools/OnlineGriefSupport"));
 const SeniorPenPalApps       = lazy(() => import("./pages/tools/SeniorPenPalApps"));
 
+// ── Cycle 91 (April 29 2026) — phone carrier ──
+const ProviderSwitchGuide    = lazy(() => import("./pages/tools/ProviderSwitchGuide"));
+const MvnoPickerGuide        = lazy(() => import("./pages/tools/MvnoPickerGuide"));
+const FamilyPlanCompare      = lazy(() => import("./pages/tools/FamilyPlanCompare"));
+const BurnerPhoneTips        = lazy(() => import("./pages/tools/BurnerPhoneTips"));
+const RoamingTips            = lazy(() => import("./pages/tools/RoamingTips"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2165,6 +2172,13 @@ const AppContent = () => {
           <Route path="/tools/bible-app-compare" element={<BibleAppCompare />} />
           <Route path="/tools/online-grief-support" element={<OnlineGriefSupport />} />
           <Route path="/tools/senior-pen-pal-apps" element={<SeniorPenPalApps />} />
+
+          {/* Cycle 91 — phone carrier */}
+          <Route path="/tools/provider-switch-guide" element={<ProviderSwitchGuide />} />
+          <Route path="/tools/mvno-picker-guide" element={<MvnoPickerGuide />} />
+          <Route path="/tools/family-plan-compare" element={<FamilyPlanCompare />} />
+          <Route path="/tools/burner-phone-tips" element={<BurnerPhoneTips />} />
+          <Route path="/tools/roaming-tips" element={<RoamingTips />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
