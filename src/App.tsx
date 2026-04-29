@@ -531,6 +531,13 @@ const VinylTurntableCoach    = lazy(() => import("./pages/tools/VinylTurntableCo
 const SportsStreamingPicker  = lazy(() => import("./pages/tools/SportsStreamingPicker"));
 const GolfApps               = lazy(() => import("./pages/tools/GolfApps"));
 
+// ── Cycle 51 (April 29 2026) — fishing/pickleball/games/wine/cocktail ──
+const FishingBoatingApps     = lazy(() => import("./pages/tools/FishingBoatingApps"));
+const PickleballTennisApps   = lazy(() => import("./pages/tools/PickleballTennisApps"));
+const OnlineBoardGames       = lazy(() => import("./pages/tools/OnlineBoardGames"));
+const WineApps               = lazy(() => import("./pages/tools/WineApps"));
+const CocktailCoffeeApps     = lazy(() => import("./pages/tools/CocktailCoffeeApps"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1605,6 +1612,13 @@ const AppContent = () => {
           <Route path="/tools/vinyl-turntable-coach" element={<VinylTurntableCoach />} />
           <Route path="/tools/sports-streaming-picker" element={<SportsStreamingPicker />} />
           <Route path="/tools/golf-apps" element={<GolfApps />} />
+
+          {/* Cycle 51 — fishing / pickleball / games / wine / cocktail */}
+          <Route path="/tools/fishing-boating-apps" element={<FishingBoatingApps />} />
+          <Route path="/tools/pickleball-tennis-apps" element={<PickleballTennisApps />} />
+          <Route path="/tools/online-board-games" element={<OnlineBoardGames />} />
+          <Route path="/tools/wine-apps" element={<WineApps />} />
+          <Route path="/tools/cocktail-coffee-apps" element={<CocktailCoffeeApps />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
