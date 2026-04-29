@@ -412,6 +412,13 @@ const PillIdentifierApp      = lazy(() => import("./pages/tools/PillIdentifierAp
 const SymptomCheckerApps     = lazy(() => import("./pages/tools/SymptomCheckerApps"));
 const FindADoctorApps        = lazy(() => import("./pages/tools/FindADoctorApps"));
 
+// ── Cycle 34 (April 29 2026) — wills/directives/savings/529/notary ──
+const WillEstateOnline       = lazy(() => import("./pages/tools/WillEstateOnline"));
+const AdvanceDirectiveCoach  = lazy(() => import("./pages/tools/AdvanceDirectiveCoach"));
+const HighYieldSavingsAndIBonds = lazy(() => import("./pages/tools/HighYieldSavingsAndIBonds"));
+const CollegeSavingsForGrandkids = lazy(() => import("./pages/tools/CollegeSavingsForGrandkids"));
+const OnlineNotaryCoach      = lazy(() => import("./pages/tools/OnlineNotaryCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1367,6 +1374,13 @@ const AppContent = () => {
           <Route path="/tools/pill-identifier-app" element={<PillIdentifierApp />} />
           <Route path="/tools/symptom-checker-apps" element={<SymptomCheckerApps />} />
           <Route path="/tools/find-a-doctor-apps" element={<FindADoctorApps />} />
+
+          {/* Cycle 34 — wills / directives / savings / 529 / notary */}
+          <Route path="/tools/will-estate-online" element={<WillEstateOnline />} />
+          <Route path="/tools/advance-directive-coach" element={<AdvanceDirectiveCoach />} />
+          <Route path="/tools/high-yield-savings-i-bonds" element={<HighYieldSavingsAndIBonds />} />
+          <Route path="/tools/college-savings-for-grandkids" element={<CollegeSavingsForGrandkids />} />
+          <Route path="/tools/online-notary-coach" element={<OnlineNotaryCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
