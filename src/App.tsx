@@ -608,6 +608,13 @@ const BatteryDrainFix        = lazy(() => import("./pages/tools/BatteryDrainFix"
 const InternetDownTroubleshoot = lazy(() => import("./pages/tools/InternetDownTroubleshoot"));
 const AppPhoneFrozenFix      = lazy(() => import("./pages/tools/AppPhoneFrozenFix"));
 
+// ── Cycle 62 (April 29 2026) — pharmacy/bundles/grocery/Apple ──
+const PharmacyRewards        = lazy(() => import("./pages/tools/PharmacyRewards"));
+const StreamingBundleStrategy = lazy(() => import("./pages/tools/StreamingBundleStrategy"));
+const PauseStreamingRotation = lazy(() => import("./pages/tools/PauseStreamingRotation"));
+const GroceryRewards         = lazy(() => import("./pages/tools/GroceryRewards"));
+const AppleOneBundleCoach    = lazy(() => import("./pages/tools/AppleOneBundleCoach"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1759,6 +1766,13 @@ const AppContent = () => {
           <Route path="/tools/battery-drain-fix" element={<BatteryDrainFix />} />
           <Route path="/tools/internet-down-troubleshoot" element={<InternetDownTroubleshoot />} />
           <Route path="/tools/app-phone-frozen-fix" element={<AppPhoneFrozenFix />} />
+
+          {/* Cycle 62 — pharmacy / bundles / grocery / Apple */}
+          <Route path="/tools/pharmacy-rewards" element={<PharmacyRewards />} />
+          <Route path="/tools/streaming-bundle-strategy" element={<StreamingBundleStrategy />} />
+          <Route path="/tools/pause-streaming-rotation" element={<PauseStreamingRotation />} />
+          <Route path="/tools/grocery-rewards" element={<GroceryRewards />} />
+          <Route path="/tools/apple-one-bundle-coach" element={<AppleOneBundleCoach />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
