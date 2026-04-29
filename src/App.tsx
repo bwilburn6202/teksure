@@ -1049,6 +1049,13 @@ const GoogleDocsSeniorBasics = lazy(() => import("./pages/tools/GoogleDocsSenior
 const PrintingFromPhone      = lazy(() => import("./pages/tools/PrintingFromPhone"));
 const BackupYourPhone        = lazy(() => import("./pages/tools/BackupYourPhone"));
 
+// ── Cycle 125 (April 29 2026) — government online services ──
+const SocialSecurityOnline   = lazy(() => import("./pages/tools/SocialSecurityOnline"));
+const MyMedicareGov          = lazy(() => import("./pages/tools/MyMedicareGov"));
+const IRSPaymentPortal       = lazy(() => import("./pages/tools/IRSPaymentPortal"));
+const VaCom                  = lazy(() => import("./pages/tools/VaCom"));
+const DmvOnlineServices      = lazy(() => import("./pages/tools/DmvOnlineServices"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -2641,6 +2648,13 @@ const AppContent = () => {
           <Route path="/tools/google-docs-senior-basics" element={<GoogleDocsSeniorBasics />} />
           <Route path="/tools/printing-from-phone" element={<PrintingFromPhone />} />
           <Route path="/tools/backup-your-phone" element={<BackupYourPhone />} />
+
+          {/* Cycle 125 — government online services */}
+          <Route path="/tools/social-security-online" element={<SocialSecurityOnline />} />
+          <Route path="/tools/my-medicare-gov" element={<MyMedicareGov />} />
+          <Route path="/tools/irs-payment-portal" element={<IRSPaymentPortal />} />
+          <Route path="/tools/va-com" element={<VaCom />} />
+          <Route path="/tools/dmv-online-services" element={<DmvOnlineServices />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
