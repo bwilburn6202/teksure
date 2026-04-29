@@ -398,6 +398,13 @@ const SeniorExerciseApps     = lazy(() => import("./pages/tools/SeniorExerciseAp
 const HomeFitnessSubscriptions = lazy(() => import("./pages/tools/HomeFitnessSubscriptions"));
 const CognitiveSelfTest      = lazy(() => import("./pages/tools/CognitiveSelfTest"));
 
+// ── Cycle 32 (April 29 2026) — homework/tutoring/creative/cameras/docs ──
+const HelpGrandkidsHomework  = lazy(() => import("./pages/tools/HelpGrandkidsHomework"));
+const OnlineTutoringApps     = lazy(() => import("./pages/tools/OnlineTutoringApps"));
+const DrawingPhotoEditingApps = lazy(() => import("./pages/tools/DrawingPhotoEditingApps"));
+const DigitalCameraPicker    = lazy(() => import("./pages/tools/DigitalCameraPicker"));
+const DocumentaryStreaming   = lazy(() => import("./pages/tools/DocumentaryStreaming"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1339,6 +1346,13 @@ const AppContent = () => {
           <Route path="/tools/senior-exercise-apps" element={<SeniorExerciseApps />} />
           <Route path="/tools/home-fitness-subscriptions" element={<HomeFitnessSubscriptions />} />
           <Route path="/tools/cognitive-self-test" element={<CognitiveSelfTest />} />
+
+          {/* Cycle 32 — homework / tutoring / creative / cameras / docs */}
+          <Route path="/tools/help-grandkids-homework" element={<HelpGrandkidsHomework />} />
+          <Route path="/tools/online-tutoring-apps" element={<OnlineTutoringApps />} />
+          <Route path="/tools/drawing-photo-editing-apps" element={<DrawingPhotoEditingApps />} />
+          <Route path="/tools/digital-camera-picker" element={<DigitalCameraPicker />} />
+          <Route path="/tools/documentary-streaming" element={<DocumentaryStreaming />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
