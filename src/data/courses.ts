@@ -317,7 +317,7 @@ const courseSmartphoneFirstWeek: Course = {
           'No legitimate company asks for your password by email, text, or phone. It\'s always a scam.',
         ),
       ],
-      practice: { label: 'Try the Password Leak Checker', path: '/tools/password-leak-checker' },
+      practice: { label: 'Try the Password Health Checker', path: '/tools/password-health' },
     },
     {
       id: 'emergency-basics',
@@ -518,7 +518,7 @@ const courseStayingSafe: Course = {
       title: 'Lesson 5 — Let a password manager do the work',
       outcome: 'You understand what a password manager does and whether to use one.',
       guideSlug: 'how-to-use-a-password-manager',
-      practice: { label: 'Set one up with our guide', path: '/tools/password-leak-checker' },
+      practice: { label: 'Set one up with our guide', path: '/tools/password-health' },
       quiz: [
         q(
           'What does a password manager do?',

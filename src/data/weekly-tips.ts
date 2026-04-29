@@ -110,8 +110,8 @@ export const weeklyTips: WeeklyTip[] = [
       'If an email claims to be from Apple but the link points to "apple-support-account-verify.ru," that is a phishing page. Legitimate company links point to that company\'s real domain.',
       'This one habit catches most phishing attempts before they do any damage.',
     ],
-    ctaLabel: 'Try the phishing scanner',
-    ctaHref: '/tools/phishing-scanner',
+    ctaLabel: 'Try the URL safety checker',
+    ctaHref: '/tools/url-safety-checker',
   },
   {
     id: 5,
