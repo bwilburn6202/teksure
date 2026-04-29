@@ -496,6 +496,13 @@ const SafeWithdrawalRate     = lazy(() => import("./pages/tools/SafeWithdrawalRa
 const BondLadderCoach        = lazy(() => import("./pages/tools/BondLadderCoach"));
 const IndexFundCoach         = lazy(() => import("./pages/tools/IndexFundCoach"));
 
+// ── Cycle 46 (April 29 2026) — passport/disposal/erase/photos/in-person ──
+const PassportRenewalOnline  = lazy(() => import("./pages/tools/PassportRenewalOnline"));
+const OldDeviceDisposal      = lazy(() => import("./pages/tools/OldDeviceDisposal"));
+const EraseOldPhone          = lazy(() => import("./pages/tools/EraseOldPhone"));
+const PhotoPrintAndCards     = lazy(() => import("./pages/tools/PhotoPrintAndCards"));
+const InPersonTechHelp       = lazy(() => import("./pages/tools/InPersonTechHelp"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1535,6 +1542,13 @@ const AppContent = () => {
           <Route path="/tools/safe-withdrawal-rate" element={<SafeWithdrawalRate />} />
           <Route path="/tools/bond-ladder-coach" element={<BondLadderCoach />} />
           <Route path="/tools/index-fund-coach" element={<IndexFundCoach />} />
+
+          {/* Cycle 46 — passport / disposal / erase / photos / in-person */}
+          <Route path="/tools/passport-renewal-online" element={<PassportRenewalOnline />} />
+          <Route path="/tools/old-device-disposal" element={<OldDeviceDisposal />} />
+          <Route path="/tools/erase-old-phone" element={<EraseOldPhone />} />
+          <Route path="/tools/photo-print-and-cards" element={<PhotoPrintAndCards />} />
+          <Route path="/tools/in-person-tech-help" element={<InPersonTechHelp />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
