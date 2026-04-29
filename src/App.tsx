@@ -1707,6 +1707,13 @@ const PrepaidVsContractPhones   = lazy(() => import("./pages/tools/PrepaidVsCont
 const RingtoneCustomization     = lazy(() => import("./pages/tools/RingtoneCustomization"));
 const PhoneTrackingFamily       = lazy(() => import("./pages/tools/PhoneTrackingFamily"));
 
+// ── Cycle 219 (April 29 2026) — AI use cases ──
+const AIMemoryHelpForSeniors    = lazy(() => import("./pages/tools/AIMemoryHelpForSeniors"));
+const AIShoppingAssistant       = lazy(() => import("./pages/tools/AIShoppingAssistant"));
+const AIHealthQuestions         = lazy(() => import("./pages/tools/AIHealthQuestions"));
+const AIFinanceAdvice           = lazy(() => import("./pages/tools/AIFinanceAdvice"));
+const AILegalQuestions          = lazy(() => import("./pages/tools/AILegalQuestions"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3793,6 +3800,11 @@ const AppContent = () => {
           <Route path="/tools/prepaid-vs-contract-phones" element={<PrepaidVsContractPhones />} />
           <Route path="/tools/ringtone-customization" element={<RingtoneCustomization />} />
           <Route path="/tools/phone-tracking-family" element={<PhoneTrackingFamily />} />
+          <Route path="/tools/ai-memory-help-for-seniors" element={<AIMemoryHelpForSeniors />} />
+          <Route path="/tools/ai-shopping-assistant" element={<AIShoppingAssistant />} />
+          <Route path="/tools/ai-health-questions" element={<AIHealthQuestions />} />
+          <Route path="/tools/ai-finance-advice" element={<AIFinanceAdvice />} />
+          <Route path="/tools/ai-legal-questions" element={<AILegalQuestions />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
