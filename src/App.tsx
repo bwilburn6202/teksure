@@ -1350,6 +1350,13 @@ const ConsumerCellularPlans  = lazy(() => import("./pages/tools/ConsumerCellular
 const FirstSmartphoneStarter = lazy(() => import("./pages/tools/FirstSmartphoneStarter"));
 const TabletForSeniorsBasics = lazy(() => import("./pages/tools/TabletForSeniorsBasics"));
 
+// ── Cycle 168 (April 29 2026) — emerging tech for curious seniors ──
+const VRForSeniors           = lazy(() => import("./pages/tools/VRForSeniors"));
+const DronesForSeniors       = lazy(() => import("./pages/tools/DronesForSeniors"));
+const PrintableHobby3D       = lazy(() => import("./pages/tools/PrintableHobby3D"));
+const RaspberryPiSeniors     = lazy(() => import("./pages/tools/RaspberryPiSeniors"));
+const CodingHobbyForSeniors  = lazy(() => import("./pages/tools/CodingHobbyForSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3181,6 +3188,11 @@ const AppContent = () => {
           <Route path="/tools/consumer-cellular-plans" element={<ConsumerCellularPlans />} />
           <Route path="/tools/first-smartphone-starter" element={<FirstSmartphoneStarter />} />
           <Route path="/tools/tablet-for-seniors-basics" element={<TabletForSeniorsBasics />} />
+          <Route path="/tools/vr-for-seniors" element={<VRForSeniors />} />
+          <Route path="/tools/drones-for-seniors" element={<DronesForSeniors />} />
+          <Route path="/tools/printable-hobby-3d" element={<PrintableHobby3D />} />
+          <Route path="/tools/raspberry-pi-seniors" element={<RaspberryPiSeniors />} />
+          <Route path="/tools/coding-hobby-for-seniors" element={<CodingHobbyForSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
