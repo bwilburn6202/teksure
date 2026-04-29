@@ -1399,6 +1399,13 @@ const RoadtripPlanningApps   = lazy(() => import("./pages/tools/RoadtripPlanning
 const AccessibleTravelApps   = lazy(() => import("./pages/tools/AccessibleTravelApps"));
 const NationalParksTrip      = lazy(() => import("./pages/tools/NationalParksTrip"));
 
+// ── Cycle 175 (April 29 2026) — streaming services ──
+const NetflixForSeniors      = lazy(() => import("./pages/tools/NetflixForSeniors"));
+const YouTubeForSeniors      = lazy(() => import("./pages/tools/YouTubeForSeniors"));
+const AppleTVPlusGuide       = lazy(() => import("./pages/tools/AppleTVPlusGuide"));
+const ParamountPlusReview    = lazy(() => import("./pages/tools/ParamountPlusReview"));
+const StreamingDeviceCompare = lazy(() => import("./pages/tools/StreamingDeviceCompare"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3265,6 +3272,11 @@ const AppContent = () => {
           <Route path="/tools/roadtrip-planning-apps" element={<RoadtripPlanningApps />} />
           <Route path="/tools/accessible-travel-apps" element={<AccessibleTravelApps />} />
           <Route path="/tools/national-parks-trip" element={<NationalParksTrip />} />
+          <Route path="/tools/netflix-for-seniors" element={<NetflixForSeniors />} />
+          <Route path="/tools/youtube-for-seniors" element={<YouTubeForSeniors />} />
+          <Route path="/tools/apple-tv-plus-guide" element={<AppleTVPlusGuide />} />
+          <Route path="/tools/paramount-plus-review" element={<ParamountPlusReview />} />
+          <Route path="/tools/streaming-device-compare" element={<StreamingDeviceCompare />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
