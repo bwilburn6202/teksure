@@ -1413,6 +1413,13 @@ const BridgeOnlineApps       = lazy(() => import("./pages/tools/BridgeOnlineApps
 const ScrabbleAlternatives   = lazy(() => import("./pages/tools/ScrabbleAlternatives"));
 const JigsawPuzzleStrategy   = lazy(() => import("./pages/tools/JigsawPuzzleStrategy"));
 
+// ── Cycle 177 (April 29 2026) — security upgrades ──
+const TwoFactorAuthGuide     = lazy(() => import("./pages/tools/TwoFactorAuthGuide"));
+const YubiKeyForSeniors      = lazy(() => import("./pages/tools/YubiKeyForSeniors"));
+const FaceIDFingerprintSetup = lazy(() => import("./pages/tools/FaceIDFingerprintSetup"));
+const AppleICloudSecurity    = lazy(() => import("./pages/tools/AppleICloudSecurity"));
+const PasskeyExplained       = lazy(() => import("./pages/tools/PasskeyExplained"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3289,6 +3296,11 @@ const AppContent = () => {
           <Route path="/tools/bridge-online-apps" element={<BridgeOnlineApps />} />
           <Route path="/tools/scrabble-alternatives" element={<ScrabbleAlternatives />} />
           <Route path="/tools/jigsaw-puzzle-strategy" element={<JigsawPuzzleStrategy />} />
+          <Route path="/tools/two-factor-auth-guide" element={<TwoFactorAuthGuide />} />
+          <Route path="/tools/yubikey-for-seniors" element={<YubiKeyForSeniors />} />
+          <Route path="/tools/face-id-fingerprint-setup" element={<FaceIDFingerprintSetup />} />
+          <Route path="/tools/apple-icloud-security" element={<AppleICloudSecurity />} />
+          <Route path="/tools/passkey-explained" element={<PasskeyExplained />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
