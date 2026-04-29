@@ -1378,6 +1378,13 @@ const VegetableGardenSeniors = lazy(() => import("./pages/tools/VegetableGardenS
 const HerbGardeningWindow    = lazy(() => import("./pages/tools/HerbGardeningWindow"));
 const RainBarrelGuide        = lazy(() => import("./pages/tools/RainBarrelGuide"));
 
+// ── Cycle 172 (April 29 2026) — senior crafts ──
+const WatercolorBeginnerSeniors = lazy(() => import("./pages/tools/WatercolorBeginnerSeniors"));
+const PaintByNumbersAdult    = lazy(() => import("./pages/tools/PaintByNumbersAdult"));
+const JewelryMakingSeniors   = lazy(() => import("./pages/tools/JewelryMakingSeniors"));
+const PotteryClassesGuide    = lazy(() => import("./pages/tools/PotteryClassesGuide"));
+const AdultColoringBooks     = lazy(() => import("./pages/tools/AdultColoringBooks"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3229,6 +3236,11 @@ const AppContent = () => {
           <Route path="/tools/vegetable-garden-seniors" element={<VegetableGardenSeniors />} />
           <Route path="/tools/herb-gardening-window" element={<HerbGardeningWindow />} />
           <Route path="/tools/rain-barrel-guide" element={<RainBarrelGuide />} />
+          <Route path="/tools/watercolor-beginner-seniors" element={<WatercolorBeginnerSeniors />} />
+          <Route path="/tools/paint-by-numbers-adult" element={<PaintByNumbersAdult />} />
+          <Route path="/tools/jewelry-making-seniors" element={<JewelryMakingSeniors />} />
+          <Route path="/tools/pottery-classes-guide" element={<PotteryClassesGuide />} />
+          <Route path="/tools/adult-coloring-books" element={<AdultColoringBooks />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
