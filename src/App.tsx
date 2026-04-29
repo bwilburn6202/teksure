@@ -286,6 +286,13 @@ const FreeTaxFilingCoach     = lazy(() => import("./pages/tools/FreeTaxFilingCoa
 const MedicarePartDPicker    = lazy(() => import("./pages/tools/MedicarePartDPicker"));
 const AutoInsuranceComparison = lazy(() => import("./pages/tools/AutoInsuranceComparison"));
 
+// ── Cycle 16 (April 29 2026) — music/photos/scan/audio/home screen ──
+const MusicAppPicker         = lazy(() => import("./pages/tools/MusicAppPicker"));
+const PhotoBookCreator       = lazy(() => import("./pages/tools/PhotoBookCreator"));
+const DocumentScannerCoach   = lazy(() => import("./pages/tools/DocumentScannerCoach"));
+const WirelessEarbudPicker   = lazy(() => import("./pages/tools/WirelessEarbudPicker"));
+const HomeScreenOrganizer    = lazy(() => import("./pages/tools/HomeScreenOrganizer"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -1115,6 +1122,13 @@ const AppContent = () => {
           <Route path="/tools/free-tax-filing-coach" element={<FreeTaxFilingCoach />} />
           <Route path="/tools/medicare-part-d-picker" element={<MedicarePartDPicker />} />
           <Route path="/tools/auto-insurance-comparison" element={<AutoInsuranceComparison />} />
+
+          {/* Cycle 16 — music/photos/scan/audio/home screen */}
+          <Route path="/tools/music-app-picker" element={<MusicAppPicker />} />
+          <Route path="/tools/photo-book-creator" element={<PhotoBookCreator />} />
+          <Route path="/tools/document-scanner-coach" element={<DocumentScannerCoach />} />
+          <Route path="/tools/wireless-earbud-picker" element={<WirelessEarbudPicker />} />
+          <Route path="/tools/home-screen-organizer" element={<HomeScreenOrganizer />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
