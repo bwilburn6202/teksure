@@ -1511,6 +1511,13 @@ const MarijuanaForMedicalSeniors = lazy(() => import("./pages/tools/MarijuanaFor
 const BenzodiazepineSafety   = lazy(() => import("./pages/tools/BenzodiazepineSafety"));
 const CaffeineForSeniors     = lazy(() => import("./pages/tools/CaffeineForSeniors"));
 
+// ── Cycle 191 (April 29 2026) — chronic conditions ──
+const BladderHealthSeniors   = lazy(() => import("./pages/tools/BladderHealthSeniors"));
+const ThyroidHealthSeniors   = lazy(() => import("./pages/tools/ThyroidHealthSeniors"));
+const COPDManagement         = lazy(() => import("./pages/tools/COPDManagement"));
+const KidneyHealthGuide      = lazy(() => import("./pages/tools/KidneyHealthGuide"));
+const AcidRefluxSeniors      = lazy(() => import("./pages/tools/AcidRefluxSeniors"));
+
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
 const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
@@ -3457,6 +3464,11 @@ const AppContent = () => {
           <Route path="/tools/marijuana-for-medical-seniors" element={<MarijuanaForMedicalSeniors />} />
           <Route path="/tools/benzodiazepine-safety" element={<BenzodiazepineSafety />} />
           <Route path="/tools/caffeine-for-seniors" element={<CaffeineForSeniors />} />
+          <Route path="/tools/bladder-health-seniors" element={<BladderHealthSeniors />} />
+          <Route path="/tools/thyroid-health-seniors" element={<ThyroidHealthSeniors />} />
+          <Route path="/tools/copd-management" element={<COPDManagement />} />
+          <Route path="/tools/kidney-health-guide" element={<KidneyHealthGuide />} />
+          <Route path="/tools/acid-reflux-seniors" element={<AcidRefluxSeniors />} />
 
           {/* Master Plan tools */}
           <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
