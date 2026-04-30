@@ -1303,6 +1303,11 @@ const AgentOrangeBenefits    = lazy(() => import("./pages/tools/AgentOrangeBenef
 
 // ── Cycle 161 (April 29 2026) — government benefits ──
 const MealsOnWheelsGuide     = lazy(() => import("./pages/tools/MealsOnWheelsGuide"));
+const PictureThisPlantID     = lazy(() => import("./pages/tools/PictureThisPlantID"));
+const FishbrainAnglerApps    = lazy(() => import("./pages/tools/FishbrainAnglerApps"));
+const WoodworkingPlansApps   = lazy(() => import("./pages/tools/WoodworkingPlansApps"));
+const BackyardBirdfeederApps = lazy(() => import("./pages/tools/BackyardBirdfeederApps"));
+const HuntingAppsForSeniors  = lazy(() => import("./pages/tools/HuntingAppsForSeniors"));
 const MedicareSavingsPrograms = lazy(() => import("./pages/tools/MedicareSavingsPrograms"));
 const MedicareExtraHelp      = lazy(() => import("./pages/tools/MedicareExtraHelp"));
 const LIHEAPGuide            = lazy(() => import("./pages/tools/LIHEAPGuide"));
@@ -3560,6 +3565,11 @@ const AppContent = () => {
           <Route path="/tools/va-home-loan-guide" element={<VAHomeLoanGuide />} />
           <Route path="/tools/agent-orange-benefits" element={<AgentOrangeBenefits />} />
           <Route path="/tools/meals-on-wheels-guide" element={<MealsOnWheelsGuide />} />
+          <Route path="/tools/picture-this-plant-id" element={<PictureThisPlantID />} />
+          <Route path="/tools/fishbrain-angler-apps" element={<FishbrainAnglerApps />} />
+          <Route path="/tools/woodworking-plans-apps" element={<WoodworkingPlansApps />} />
+          <Route path="/tools/backyard-birdfeeder-apps" element={<BackyardBirdfeederApps />} />
+          <Route path="/tools/hunting-apps-for-seniors" element={<HuntingAppsForSeniors />} />
           <Route path="/tools/medicare-savings-programs" element={<MedicareSavingsPrograms />} />
           <Route path="/tools/medicare-extra-help" element={<MedicareExtraHelp />} />
           <Route path="/tools/liheap-guide" element={<LIHEAPGuide />} />
