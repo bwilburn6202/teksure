@@ -1226,6 +1226,11 @@ const NursingHomeChecklist   = lazy(() => import("./pages/tools/NursingHomeCheck
 const BestPetsForSeniors     = lazy(() => import("./pages/tools/BestPetsForSeniors"));
 const PetSupplyDelivery      = lazy(() => import("./pages/tools/PetSupplyDelivery"));
 const PetInsuranceForSeniors = lazy(() => import("./pages/tools/PetInsuranceForSeniors"));
+const RoverPetSittingApp     = lazy(() => import("./pages/tools/RoverPetSittingApp"));
+const ChewyPetSuppliesGuide  = lazy(() => import("./pages/tools/ChewyPetSuppliesGuide"));
+const CanvaForSeniorsGuide   = lazy(() => import("./pages/tools/CanvaForSeniorsGuide"));
+const PhotoBookPrintingApps  = lazy(() => import("./pages/tools/PhotoBookPrintingApps"));
+const DigitalScrapbookingApps = lazy(() => import("./pages/tools/DigitalScrapbookingApps"));
 const EmotionalSupportAnimal = lazy(() => import("./pages/tools/EmotionalSupportAnimal"));
 const FosterPetsForSeniors   = lazy(() => import("./pages/tools/FosterPetsForSeniors"));
 
@@ -3516,6 +3521,11 @@ const AppContent = () => {
           <Route path="/tools/best-pets-for-seniors" element={<BestPetsForSeniors />} />
           <Route path="/tools/pet-supply-delivery" element={<PetSupplyDelivery />} />
           <Route path="/tools/pet-insurance-for-seniors" element={<PetInsuranceForSeniors />} />
+          <Route path="/tools/rover-pet-sitting-app" element={<RoverPetSittingApp />} />
+          <Route path="/tools/chewy-pet-supplies-guide" element={<ChewyPetSuppliesGuide />} />
+          <Route path="/tools/canva-for-seniors-guide" element={<CanvaForSeniorsGuide />} />
+          <Route path="/tools/photo-book-printing-apps" element={<PhotoBookPrintingApps />} />
+          <Route path="/tools/digital-scrapbooking-apps" element={<DigitalScrapbookingApps />} />
           <Route path="/tools/emotional-support-animal" element={<EmotionalSupportAnimal />} />
           <Route path="/tools/foster-pets-for-seniors" element={<FosterPetsForSeniors />} />
           <Route path="/tools/when-to-stop-driving" element={<WhenToStopDriving />} />
