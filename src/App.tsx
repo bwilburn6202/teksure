@@ -976,6 +976,11 @@ const SmartHubExplained      = lazy(() => import("./pages/tools/SmartHubExplaine
 const SimplePhonesForSeniors = lazy(() => import("./pages/tools/SimplePhonesForSeniors"));
 const Jitterbug              = lazy(() => import("./pages/tools/Jitterbug"));
 const GrandPadReview         = lazy(() => import("./pages/tools/GrandPadReview"));
+const IpadVsFireTabletSeniors = lazy(() => import("./pages/tools/IpadVsFireTabletSeniors"));
+const AppleWatchVsFitbitSeniors = lazy(() => import("./pages/tools/AppleWatchVsFitbitSeniors"));
+const SeniorMobileGames      = lazy(() => import("./pages/tools/SeniorMobileGames"));
+const ZoomFaceTimeForGrandparents = lazy(() => import("./pages/tools/ZoomFaceTimeForGrandparents"));
+const DigitalLegacyPlanning  = lazy(() => import("./pages/tools/DigitalLegacyPlanning"));
 const AppleWatchAsPhone      = lazy(() => import("./pages/tools/AppleWatchAsPhone"));
 const EmergencyButtonPicks   = lazy(() => import("./pages/tools/EmergencyButtonPicks"));
 
@@ -3354,6 +3359,11 @@ const AppContent = () => {
           <Route path="/tools/simple-phones-for-seniors" element={<SimplePhonesForSeniors />} />
           <Route path="/tools/jitterbug" element={<Jitterbug />} />
           <Route path="/tools/grandpad-review" element={<GrandPadReview />} />
+          <Route path="/tools/ipad-vs-fire-tablet-seniors" element={<IpadVsFireTabletSeniors />} />
+          <Route path="/tools/apple-watch-vs-fitbit-seniors" element={<AppleWatchVsFitbitSeniors />} />
+          <Route path="/tools/senior-mobile-games" element={<SeniorMobileGames />} />
+          <Route path="/tools/zoom-facetime-for-grandparents" element={<ZoomFaceTimeForGrandparents />} />
+          <Route path="/tools/digital-legacy-planning" element={<DigitalLegacyPlanning />} />
           <Route path="/tools/apple-watch-as-phone" element={<AppleWatchAsPhone />} />
           <Route path="/tools/emergency-button-picks" element={<EmergencyButtonPicks />} />
 
