@@ -2094,6 +2094,13 @@ const AppleIDRecoveryForSeniors             = lazy(() => import("./pages/tools/A
 const SIMTransferForSeniors                 = lazy(() => import("./pages/tools/SIMTransferForSeniors"));
 const IPhoneInsuranceForSeniors             = lazy(() => import("./pages/tools/iPhoneInsuranceForSeniors"));
 
+// ── Cycle 327 (April 30 2026) — senior calendar + scheduling ──
+const AppleCalendarTipsForSeniors           = lazy(() => import("./pages/tools/AppleCalendarTipsForSeniors"));
+const RemindersAppForSeniorsPro             = lazy(() => import("./pages/tools/RemindersAppForSeniorsPro"));
+const AppointmentTrackingForSeniors         = lazy(() => import("./pages/tools/AppointmentTrackingForSeniors"));
+const RecurringTaskSetupForSeniors          = lazy(() => import("./pages/tools/RecurringTaskSetupForSeniors"));
+const CalendlyForSeniorScheduling           = lazy(() => import("./pages/tools/CalendlyForSeniorScheduling"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4790,6 +4797,11 @@ const AppContent = () => {
           <Route path="/tools/apple-id-recovery-for-seniors" element={<AppleIDRecoveryForSeniors />} />
           <Route path="/tools/sim-transfer-for-seniors" element={<SIMTransferForSeniors />} />
           <Route path="/tools/iphone-insurance-for-seniors" element={<IPhoneInsuranceForSeniors />} />
+          <Route path="/tools/apple-calendar-tips-for-seniors" element={<AppleCalendarTipsForSeniors />} />
+          <Route path="/tools/reminders-app-for-seniors-pro" element={<RemindersAppForSeniorsPro />} />
+          <Route path="/tools/appointment-tracking-for-seniors" element={<AppointmentTrackingForSeniors />} />
+          <Route path="/tools/recurring-task-setup-for-seniors" element={<RecurringTaskSetupForSeniors />} />
+          <Route path="/tools/calendly-for-senior-scheduling" element={<CalendlyForSeniorScheduling />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
