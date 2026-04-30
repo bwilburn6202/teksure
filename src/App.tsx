@@ -1305,6 +1305,11 @@ const MelatoninSafetyGuide   = lazy(() => import("./pages/tools/MelatoninSafetyG
 const CPAPHelpSeniors        = lazy(() => import("./pages/tools/CPAPHelpSeniors"));
 const MattressPillowPicker   = lazy(() => import("./pages/tools/MattressPillowPicker"));
 const WhiteNoiseGuide        = lazy(() => import("./pages/tools/WhiteNoiseGuide"));
+const CalmAppForSeniors      = lazy(() => import("./pages/tools/CalmAppForSeniors"));
+const SleepCycleAppReview    = lazy(() => import("./pages/tools/SleepCycleAppReview"));
+const AppleWatchSleepFor60   = lazy(() => import("./pages/tools/AppleWatchSleepFor60"));
+const SleepHygieneTechSeniors = lazy(() => import("./pages/tools/SleepHygieneTechSeniors"));
+const CPAPMaintenanceApps    = lazy(() => import("./pages/tools/CPAPMaintenanceApps"));
 
 // ── Cycle 141 (April 29 2026) — senior personal care ──
 const EarwaxRemovalGuide     = lazy(() => import("./pages/tools/EarwaxRemovalGuide"));
@@ -3840,6 +3845,11 @@ const AppContent = () => {
           <Route path="/tools/cpap-help-seniors" element={<CPAPHelpSeniors />} />
           <Route path="/tools/mattress-pillow-picker" element={<MattressPillowPicker />} />
           <Route path="/tools/white-noise-guide" element={<WhiteNoiseGuide />} />
+          <Route path="/tools/calm-app-for-seniors" element={<CalmAppForSeniors />} />
+          <Route path="/tools/sleep-cycle-app-review" element={<SleepCycleAppReview />} />
+          <Route path="/tools/apple-watch-sleep-for-60" element={<AppleWatchSleepFor60 />} />
+          <Route path="/tools/sleep-hygiene-tech-seniors" element={<SleepHygieneTechSeniors />} />
+          <Route path="/tools/cpap-maintenance-apps" element={<CPAPMaintenanceApps />} />
           <Route path="/tools/earwax-removal-guide" element={<EarwaxRemovalGuide />} />
           <Route path="/tools/denture-care-guide" element={<DentureCareGuide />} />
           <Route path="/tools/foot-care-seniors" element={<FootCareSeniors />} />
