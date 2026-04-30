@@ -1641,6 +1641,11 @@ const FacebookForBeginners   = lazy(() => import("./pages/tools/FacebookForBegin
 const LinkedInForRetirees    = lazy(() => import("./pages/tools/LinkedInForRetirees"));
 const RedditForSeniors       = lazy(() => import("./pages/tools/RedditForSeniors"));
 const TikTokSafetyGuide      = lazy(() => import("./pages/tools/TikTokSafetyGuide"));
+const TikTokForSeniorViewers = lazy(() => import("./pages/tools/TikTokForSeniorViewers"));
+const InstagramReelsForSeniors = lazy(() => import("./pages/tools/InstagramReelsForSeniors"));
+const SeniorYouTubeChannels  = lazy(() => import("./pages/tools/SeniorYouTubeChannels"));
+const DiscogsForRecordCollectors = lazy(() => import("./pages/tools/DiscogsForRecordCollectors"));
+const PinterestForSeniorIdeas = lazy(() => import("./pages/tools/PinterestForSeniorIdeas"));
 const InstagramSeniorGuide   = lazy(() => import("./pages/tools/InstagramSeniorGuide"));
 
 // ── Cycle 187 (April 29 2026) — credit cards ──
@@ -4054,6 +4059,11 @@ const AppContent = () => {
           <Route path="/tools/linkedin-for-retirees" element={<LinkedInForRetirees />} />
           <Route path="/tools/reddit-for-seniors" element={<RedditForSeniors />} />
           <Route path="/tools/tiktok-safety-guide" element={<TikTokSafetyGuide />} />
+          <Route path="/tools/tiktok-for-senior-viewers" element={<TikTokForSeniorViewers />} />
+          <Route path="/tools/instagram-reels-for-seniors" element={<InstagramReelsForSeniors />} />
+          <Route path="/tools/senior-youtube-channels" element={<SeniorYouTubeChannels />} />
+          <Route path="/tools/discogs-for-record-collectors" element={<DiscogsForRecordCollectors />} />
+          <Route path="/tools/pinterest-for-senior-ideas" element={<PinterestForSeniorIdeas />} />
           <Route path="/tools/instagram-senior-guide" element={<InstagramSeniorGuide />} />
           <Route path="/tools/best-credit-cards-seniors" element={<BestCreditCardsSeniors />} />
           <Route path="/tools/credit-card-fraud-help" element={<CreditCardFraudHelp />} />
