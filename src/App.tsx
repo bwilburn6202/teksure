@@ -1807,6 +1807,13 @@ const TextingBasicsForSeniors             = lazy(() => import("./pages/tools/Tex
 const GroupTextSetupForSeniorFamilies     = lazy(() => import("./pages/tools/GroupTextSetupForSeniorFamilies"));
 const EmojiAndGifsForSeniors              = lazy(() => import("./pages/tools/EmojiAndGifsForSeniors"));
 
+// ── Cycle 286 (April 30 2026) — senior smart home apps ──
+const GoogleNestHubForSeniors             = lazy(() => import("./pages/tools/GoogleNestHubForSeniors"));
+const AppleTVSetupForSeniors              = lazy(() => import("./pages/tools/AppleTVSetupForSeniors"));
+const ChromecastForSeniorTV               = lazy(() => import("./pages/tools/ChromecastForSeniorTV"));
+const SmartSprinklerForSeniors            = lazy(() => import("./pages/tools/SmartSprinklerForSeniors"));
+const SmartCeilingFanForSeniors           = lazy(() => import("./pages/tools/SmartCeilingFanForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4298,6 +4305,11 @@ const AppContent = () => {
           <Route path="/tools/texting-basics-for-seniors" element={<TextingBasicsForSeniors />} />
           <Route path="/tools/group-text-setup-for-senior-families" element={<GroupTextSetupForSeniorFamilies />} />
           <Route path="/tools/emoji-and-gifs-for-seniors" element={<EmojiAndGifsForSeniors />} />
+          <Route path="/tools/google-nest-hub-for-seniors" element={<GoogleNestHubForSeniors />} />
+          <Route path="/tools/apple-tv-setup-for-seniors" element={<AppleTVSetupForSeniors />} />
+          <Route path="/tools/chromecast-for-senior-tv" element={<ChromecastForSeniorTV />} />
+          <Route path="/tools/smart-sprinkler-for-seniors" element={<SmartSprinklerForSeniors />} />
+          <Route path="/tools/smart-ceiling-fan-for-seniors" element={<SmartCeilingFanForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
