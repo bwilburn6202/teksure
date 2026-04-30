@@ -1987,6 +1987,11 @@ const RouterUpgradeHelper    = lazy(() => import("./pages/tools/RouterUpgradeHel
 const TelehealthPrep         = lazy(() => import("./pages/tools/TelehealthPrep"));
 const MarketplaceScamSpotter = lazy(() => import("./pages/tools/MarketplaceScamSpotter"));
 const DictationSetup         = lazy(() => import("./pages/tools/DictationSetup"));
+const OtterAITranscription   = lazy(() => import("./pages/tools/OtterAITranscription"));
+const VoiceTypingPhoneTutorial = lazy(() => import("./pages/tools/VoiceTypingPhoneTutorial"));
+const SiriCommandsCheatSheet = lazy(() => import("./pages/tools/SiriCommandsCheatSheet"));
+const AppleWatchAccessibility = lazy(() => import("./pages/tools/AppleWatchAccessibility"));
+const PhoneStylusForArthritis = lazy(() => import("./pages/tools/PhoneStylusForArthritis"));
 const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionWizard"));
 const FreeTaxFiling          = lazy(() => import("./pages/tools/FreeTaxFiling"));
 const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack"));
@@ -4100,6 +4105,11 @@ const AppContent = () => {
           <Route path="/tools/telehealth-prep"             element={<TelehealthPrep />} />
           <Route path="/tools/marketplace-scam-spotter"    element={<MarketplaceScamSpotter />} />
           <Route path="/tools/dictation-setup"             element={<DictationSetup />} />
+          <Route path="/tools/otter-ai-transcription" element={<OtterAITranscription />} />
+          <Route path="/tools/voice-typing-phone-tutorial" element={<VoiceTypingPhoneTutorial />} />
+          <Route path="/tools/siri-commands-cheat-sheet" element={<SiriCommandsCheatSheet />} />
+          <Route path="/tools/apple-watch-accessibility" element={<AppleWatchAccessibility />} />
+          <Route path="/tools/phone-stylus-for-arthritis" element={<PhoneStylusForArthritis />} />
           <Route path="/tools/account-deletion-wizard"     element={<AccountDeletionWizard />} />
           <Route path="/tools/free-tax-filing"             element={<FreeTaxFiling />} />
           <Route path="/tools/library-power-pack"          element={<LibraryPowerPack />} />
