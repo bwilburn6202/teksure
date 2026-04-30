@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
+import { formatBookingSlot } from '@/lib/bookingSlots';
 
 interface HelpRequest {
   id: string;
@@ -192,7 +193,7 @@ function BookingsTab() {
                     <TableCell className="text-muted-foreground">{serviceLabels[b.service_type] || b.service_type}</TableCell>
                     <TableCell className="text-sm">
                       {new Date(b.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
-                      <span className="text-muted-foreground ml-1 capitalize">· {b.preferred_slot}</span>
+                      <span className="text-muted-foreground ml-1">· {formatBookingSlot(b.preferred_slot)}</span>
                     </TableCell>
                     <TableCell>
                       <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${cfg.color}`}>
@@ -399,7 +400,7 @@ function JobsTab() {
                             {job.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${job.phone}`} className="hover:underline text-foreground">{job.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
                               Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
-                              {job.preferred_slot && ` · ${job.preferred_slot}`}
+                              {job.preferred_slot && ` · ${formatBookingSlot(job.preferred_slot)}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
                           </div>
@@ -545,7 +546,7 @@ function DisputesTab() {
                             {d.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${d.phone}`} className="hover:underline text-foreground">{d.phone}</a></div>}
                             <p className="text-xs text-muted-foreground pt-1">
                               Booked for {new Date(d.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
-                              {d.preferred_slot && ` at ${d.preferred_slot}`}
+                              {d.preferred_slot && ` at ${formatBookingSlot(d.preferred_slot)}`}
                             </p>
                             <p className="text-xs text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
                             {d.payment_status && (

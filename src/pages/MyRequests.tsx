@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
+import { formatBookingSlot } from '@/lib/bookingSlots';
 
 interface HelpRequest {
   id: string;
@@ -52,12 +53,6 @@ const deviceLabels: Record<string, string> = {
   tv: 'TV / Streaming',
   'smart-home': 'Smart Home',
   other: 'Other',
-};
-
-const slotLabels: Record<string, string> = {
-  morning: 'Morning (8am–12pm)',
-  afternoon: 'Afternoon (12pm–5pm)',
-  evening: 'Evening (5pm–9pm)',
 };
 
 function formatDate(iso: string) {
@@ -114,10 +109,10 @@ const MyRequests = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" />
+      <SEOHead title="My Requests — TekSure" description="View and track your TekSure help requests and appointments." path="/my-requests" noindex />
       <Navbar />
 
-      <main id="main-content" className="flex-1 py-10 px-4">
+      <main className="flex-1 py-10 px-4">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
@@ -178,7 +173,7 @@ const MyRequests = () => {
 
                     {/* Time slot */}
                     <div className="text-sm text-muted-foreground">
-                      {slotLabels[b.preferred_slot] ?? b.preferred_slot}
+                      {formatBookingSlot(b.preferred_slot)}
                     </div>
 
                     {/* Details grid */}
