@@ -2147,6 +2147,11 @@ const PrescriptionDeliveryApps = lazy(() => import("./pages/tools/PrescriptionDe
 const LanguageLearningApps   = lazy(() => import("./pages/tools/LanguageLearningApps"));
 const BrainGamesApps         = lazy(() => import("./pages/tools/BrainGamesApps"));
 const NewsAppPicker          = lazy(() => import("./pages/tools/NewsAppPicker"));
+const NYTimesAppForSeniors   = lazy(() => import("./pages/tools/NYTimesAppForSeniors"));
+const AppleNewsPlusReview    = lazy(() => import("./pages/tools/AppleNewsPlusReview"));
+const WashingtonPostAppGuide = lazy(() => import("./pages/tools/WashingtonPostAppGuide"));
+const NPRPodcastsForSeniors  = lazy(() => import("./pages/tools/NPRPodcastsForSeniors"));
+const SubstackForSeniors     = lazy(() => import("./pages/tools/SubstackForSeniors"));
 const VoiceMemoTranscribe    = lazy(() => import("./pages/tools/VoiceMemoTranscribe"));
 const HomeVisionTest         = lazy(() => import("./pages/tools/HomeVisionTest"));
 const SmartTvAccessibility   = lazy(() => import("./pages/tools/SmartTvAccessibility"));
@@ -4333,6 +4338,11 @@ const AppContent = () => {
           <Route path="/tools/language-learning-apps"      element={<LanguageLearningApps />} />
           <Route path="/tools/brain-games-apps"            element={<BrainGamesApps />} />
           <Route path="/tools/news-app-picker"             element={<NewsAppPicker />} />
+          <Route path="/tools/nytimes-app-for-seniors" element={<NYTimesAppForSeniors />} />
+          <Route path="/tools/apple-news-plus-review" element={<AppleNewsPlusReview />} />
+          <Route path="/tools/washington-post-app-guide" element={<WashingtonPostAppGuide />} />
+          <Route path="/tools/npr-podcasts-for-seniors" element={<NPRPodcastsForSeniors />} />
+          <Route path="/tools/substack-for-seniors" element={<SubstackForSeniors />} />
           <Route path="/tools/voice-memo-transcribe"       element={<VoiceMemoTranscribe />} />
           <Route path="/tools/home-vision-test"            element={<HomeVisionTest />} />
           <Route path="/tools/smart-tv-accessibility"      element={<SmartTvAccessibility />} />
