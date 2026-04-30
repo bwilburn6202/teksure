@@ -355,6 +355,11 @@ const FacebookPrivacyCoach   = lazy(() => import("./pages/tools/FacebookPrivacyC
 const MobileBankingCoach     = lazy(() => import("./pages/tools/MobileBankingCoach"));
 const InternationalTravelSim = lazy(() => import("./pages/tools/InternationalTravelSim"));
 const BrokeragePicker        = lazy(() => import("./pages/tools/BrokeragePicker"));
+const FidelityAppForSeniors  = lazy(() => import("./pages/tools/FidelityAppForSeniors"));
+const VanguardForRetirees    = lazy(() => import("./pages/tools/VanguardForRetirees"));
+const RobinhoodWebullSeniorWarning = lazy(() => import("./pages/tools/RobinhoodWebullSeniorWarning"));
+const SchwabIntelligentPortfolios = lazy(() => import("./pages/tools/SchwabIntelligentPortfolios"));
+const EstateBeneficiaryReview = lazy(() => import("./pages/tools/EstateBeneficiaryReview"));
 const AdultScreenTimeCoach   = lazy(() => import("./pages/tools/AdultScreenTimeCoach"));
 
 // ── Cycle 24 (April 29 2026) — backup/photo-org/medical/bills/journal ──
@@ -2758,6 +2763,11 @@ const AppContent = () => {
           <Route path="/tools/mobile-banking-coach" element={<MobileBankingCoach />} />
           <Route path="/tools/international-travel-sim" element={<InternationalTravelSim />} />
           <Route path="/tools/brokerage-picker" element={<BrokeragePicker />} />
+          <Route path="/tools/fidelity-app-for-seniors" element={<FidelityAppForSeniors />} />
+          <Route path="/tools/vanguard-for-retirees" element={<VanguardForRetirees />} />
+          <Route path="/tools/robinhood-webull-senior-warning" element={<RobinhoodWebullSeniorWarning />} />
+          <Route path="/tools/schwab-intelligent-portfolios" element={<SchwabIntelligentPortfolios />} />
+          <Route path="/tools/estate-beneficiary-review" element={<EstateBeneficiaryReview />} />
           <Route path="/tools/adult-screen-time-coach" element={<AdultScreenTimeCoach />} />
 
           {/* Cycle 24 — backup / photo-org / medical / bills / journal */}
