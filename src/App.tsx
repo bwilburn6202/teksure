@@ -1905,6 +1905,13 @@ const LaundryPickupForSeniors               = lazy(() => import("./pages/tools/L
 const AAAAppForSeniorEmergency              = lazy(() => import("./pages/tools/AAAAppForSeniorEmergency"));
 const AirportAssistanceForSeniors           = lazy(() => import("./pages/tools/AirportAssistanceForSeniors"));
 
+// ── Cycle 300 (April 30 2026) — senior wearables + health monitors ──
+const AppleWatchFacesForSeniors             = lazy(() => import("./pages/tools/AppleWatchFacesForSeniors"));
+const AppleWatchBandsForSeniors             = lazy(() => import("./pages/tools/AppleWatchBandsForSeniors"));
+const KardiaMobileEKGForSeniors             = lazy(() => import("./pages/tools/KardiaMobileEKGForSeniors"));
+const WithingsSmartScaleForSeniors          = lazy(() => import("./pages/tools/WithingsSmartScaleForSeniors"));
+const ContinuousGlucoseMonitorForSeniors    = lazy(() => import("./pages/tools/ContinuousGlucoseMonitorForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4466,6 +4473,11 @@ const AppContent = () => {
           <Route path="/tools/laundry-pickup-for-seniors" element={<LaundryPickupForSeniors />} />
           <Route path="/tools/aaa-app-for-senior-emergency" element={<AAAAppForSeniorEmergency />} />
           <Route path="/tools/airport-assistance-for-seniors" element={<AirportAssistanceForSeniors />} />
+          <Route path="/tools/apple-watch-faces-for-seniors" element={<AppleWatchFacesForSeniors />} />
+          <Route path="/tools/apple-watch-bands-for-seniors" element={<AppleWatchBandsForSeniors />} />
+          <Route path="/tools/kardiamobile-ekg-for-seniors" element={<KardiaMobileEKGForSeniors />} />
+          <Route path="/tools/withings-smart-scale-for-seniors" element={<WithingsSmartScaleForSeniors />} />
+          <Route path="/tools/continuous-glucose-monitor-for-seniors" element={<ContinuousGlucoseMonitorForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
