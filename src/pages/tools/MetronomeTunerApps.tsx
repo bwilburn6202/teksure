@@ -80,7 +80,7 @@ export default function MetronomeTunerApps() {
               <li>Tap or click on each beat.</li>
               <li>Speed up gradually as you get comfortable.</li>
               <li>Most songs are 80–140 BPM.</li>
-              <li>Steady tempo > fast tempo.</li>
+              <li>Steady tempo beats fast tempo.</li>
               <li>Use for practice, not performance.</li>
             </ul>
           </CardContent>
