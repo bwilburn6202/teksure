@@ -1265,6 +1265,11 @@ const MediaLiteracySeniors   = lazy(() => import("./pages/tools/MediaLiteracySen
 const MemoryAppTraining      = lazy(() => import("./pages/tools/MemoryAppTraining"));
 const ToDoListSeniors        = lazy(() => import("./pages/tools/ToDoListSeniors"));
 const CalendarRemindersApps  = lazy(() => import("./pages/tools/CalendarRemindersApps"));
+const AppleNotesForSeniors   = lazy(() => import("./pages/tools/AppleNotesForSeniors"));
+const GoogleKeepForSeniors   = lazy(() => import("./pages/tools/GoogleKeepForSeniors"));
+const GoogleCalendarSeniorTutorial = lazy(() => import("./pages/tools/GoogleCalendarSeniorTutorial"));
+const RemindersAppForSeniors = lazy(() => import("./pages/tools/RemindersAppForSeniors"));
+const SeniorContactsAppTutorial = lazy(() => import("./pages/tools/SeniorContactsAppTutorial"));
 const SudokuApps             = lazy(() => import("./pages/tools/SudokuApps"));
 const MathChallengeApps      = lazy(() => import("./pages/tools/MathChallengeApps"));
 
@@ -3798,6 +3803,11 @@ const AppContent = () => {
           <Route path="/tools/memory-app-training" element={<MemoryAppTraining />} />
           <Route path="/tools/to-do-list-seniors" element={<ToDoListSeniors />} />
           <Route path="/tools/calendar-reminders-apps" element={<CalendarRemindersApps />} />
+          <Route path="/tools/apple-notes-for-seniors" element={<AppleNotesForSeniors />} />
+          <Route path="/tools/google-keep-for-seniors" element={<GoogleKeepForSeniors />} />
+          <Route path="/tools/google-calendar-senior-tutorial" element={<GoogleCalendarSeniorTutorial />} />
+          <Route path="/tools/reminders-app-for-seniors" element={<RemindersAppForSeniors />} />
+          <Route path="/tools/senior-contacts-app-tutorial" element={<SeniorContactsAppTutorial />} />
           <Route path="/tools/sudoku-apps" element={<SudokuApps />} />
           <Route path="/tools/math-challenge-apps" element={<MathChallengeApps />} />
           <Route path="/tools/texting-etiquette" element={<TextingEtiquette />} />
