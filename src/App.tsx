@@ -318,6 +318,11 @@ const OldPhotoScanningApps   = lazy(() => import("./pages/tools/OldPhotoScanning
 const DigitalPhotoFramePicker = lazy(() => import("./pages/tools/DigitalPhotoFramePicker"));
 const TvSoundBarPicker       = lazy(() => import("./pages/tools/TvSoundBarPicker"));
 const VolunteerApps          = lazy(() => import("./pages/tools/VolunteerApps"));
+const MasterClassReviewSeniors = lazy(() => import("./pages/tools/MasterClassReviewSeniors"));
+const KhanAcademyForSeniors  = lazy(() => import("./pages/tools/KhanAcademyForSeniors"));
+const OLLILifelongLearning   = lazy(() => import("./pages/tools/OLLILifelongLearning"));
+const AARPCreateSeniorClasses = lazy(() => import("./pages/tools/AARPCreateSeniorClasses"));
+const SeniorVolunteerOpportunities = lazy(() => import("./pages/tools/SeniorVolunteerOpportunities"));
 
 // ── Cycle 20 (April 29 2026) — cloud/passwords/speed/browser/learning ──
 const CloudStoragePicker     = lazy(() => import("./pages/tools/CloudStoragePicker"));
@@ -2664,6 +2669,11 @@ const AppContent = () => {
           <Route path="/tools/digital-photo-frame-picker" element={<DigitalPhotoFramePicker />} />
           <Route path="/tools/tv-sound-bar-picker" element={<TvSoundBarPicker />} />
           <Route path="/tools/volunteer-apps" element={<VolunteerApps />} />
+          <Route path="/tools/masterclass-review-seniors" element={<MasterClassReviewSeniors />} />
+          <Route path="/tools/khan-academy-for-seniors" element={<KhanAcademyForSeniors />} />
+          <Route path="/tools/olli-lifelong-learning" element={<OLLILifelongLearning />} />
+          <Route path="/tools/aarp-create-senior-classes" element={<AARPCreateSeniorClasses />} />
+          <Route path="/tools/senior-volunteer-opportunities" element={<SeniorVolunteerOpportunities />} />
 
           {/* Cycle 20 — cloud/passwords/speed/browser/learning */}
           <Route path="/tools/cloud-storage-picker" element={<CloudStoragePicker />} />
