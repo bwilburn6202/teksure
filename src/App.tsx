@@ -1877,6 +1877,11 @@ const PerfumeColognePicks       = lazy(() => import("./pages/tools/PerfumeCologn
 const PlumbingBasicsForSeniors  = lazy(() => import("./pages/tools/PlumbingBasicsForSeniors"));
 const ElectricalBasicsForSeniors = lazy(() => import("./pages/tools/ElectricalBasicsForSeniors"));
 const AirFilterChangingGuide    = lazy(() => import("./pages/tools/AirFilterChangingGuide"));
+const ThumbtackForSeniors       = lazy(() => import("./pages/tools/ThumbtackForSeniors"));
+const HomeWarrantyShoppingSeniors = lazy(() => import("./pages/tools/HomeWarrantyShoppingSeniors"));
+const HouseCleaningServiceApps  = lazy(() => import("./pages/tools/HouseCleaningServiceApps"));
+const LawnCareSubscriptions     = lazy(() => import("./pages/tools/LawnCareSubscriptions"));
+const HVACMaintenanceApps       = lazy(() => import("./pages/tools/HVACMaintenanceApps"));
 const SeasonalHomeChecklist     = lazy(() => import("./pages/tools/SeasonalHomeChecklist"));
 const ApplianceLifespanGuide    = lazy(() => import("./pages/tools/ApplianceLifespanGuide"));
 
@@ -4243,6 +4248,11 @@ const AppContent = () => {
           <Route path="/tools/plumbing-basics-for-seniors" element={<PlumbingBasicsForSeniors />} />
           <Route path="/tools/electrical-basics-for-seniors" element={<ElectricalBasicsForSeniors />} />
           <Route path="/tools/air-filter-changing-guide" element={<AirFilterChangingGuide />} />
+          <Route path="/tools/thumbtack-for-seniors" element={<ThumbtackForSeniors />} />
+          <Route path="/tools/home-warranty-shopping-seniors" element={<HomeWarrantyShoppingSeniors />} />
+          <Route path="/tools/house-cleaning-service-apps" element={<HouseCleaningServiceApps />} />
+          <Route path="/tools/lawn-care-subscriptions" element={<LawnCareSubscriptions />} />
+          <Route path="/tools/hvac-maintenance-apps" element={<HVACMaintenanceApps />} />
           <Route path="/tools/seasonal-home-checklist" element={<SeasonalHomeChecklist />} />
           <Route path="/tools/appliance-lifespan-guide" element={<ApplianceLifespanGuide />} />
           <Route path="/tools/phone-case-screen-protector" element={<PhoneCaseScreenProtector />} />
