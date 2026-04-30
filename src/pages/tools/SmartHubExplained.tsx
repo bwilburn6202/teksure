@@ -77,7 +77,7 @@ export default function SmartHubExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Keep it simple</h3>
-            <p className="text-sm text-muted-foreground">Most seniors do best with: Echo Dot + 2-4 smart bulbs/plugs + smart doorbell. That&apos;s it. Don&apos;t over-engineer. Tech that works > fancy tech that confuses. Add things ONE at a time. Master each.</p>
+            <p className="text-sm text-muted-foreground">Most seniors do best with: Echo Dot + 2-4 smart bulbs/plugs + smart doorbell. That&apos;s it. Don&apos;t over-engineer. Tech that works beats fancy tech that confuses. Add things ONE at a time. Master each.</p>
           </CardContent>
         </Card>
       </main>

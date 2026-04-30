@@ -1885,7 +1885,6 @@ const BillNegotiator         = lazy(() => import("./pages/tools/BillNegotiator")
 const FreeLearningHub        = lazy(() => import("./pages/tools/FreeLearningHub"));
 const SocialMediaSafety      = lazy(() => import("./pages/tools/SocialMediaSafety"));
 const FakeNewsChecker        = lazy(() => import("./pages/tools/FakeNewsChecker"));
-const SeniorDiscountFinder   = lazy(() => import("./pages/tools/SeniorDiscountFinder"));
 const MedicarePlanChooser    = lazy(() => import("./pages/tools/MedicarePlanChooser"));
 const PracticeMode           = lazy(() => import("./pages/tools/PracticeMode"));
 const SiteIndex              = lazy(() => import("./pages/SiteIndex"));

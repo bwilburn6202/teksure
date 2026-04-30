@@ -7,7 +7,7 @@ import { UserCheck } from 'lucide-react';
 export default function FiduciaryAdvisorFinder() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <SEOHead title="Find a Fiduciary Financial Advisor | TekSure" description="Most "financial advisors" earn commissions for selling you products. Plain-English guide to fee-only fiduciary advisors who legally must put YOU first." />
+      <SEOHead title="Find a Fiduciary Financial Advisor | TekSure" description={`Most "financial advisors" earn commissions for selling you products. Plain-English guide to fee-only fiduciary advisors who legally must put YOU first.`} />
       <Navbar />
       <main className="flex-1 container mx-auto px-4 py-10 max-w-3xl">
         <div className="text-center mb-8">

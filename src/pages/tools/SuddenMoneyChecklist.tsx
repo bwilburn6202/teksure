@@ -66,7 +66,7 @@ export default function SuddenMoneyChecklist() {
             <h2 className="font-bold text-xl mb-3">Big mistakes</h2>
             <ul className="list-disc pl-5 space-y-1 text-sm">
               <li>Buying a luxury car in week 1.</li>
-              <li>Lending family huge sums (>3 family members ALL coming with big asks).</li>
+              <li>Lending family huge sums (more than 3 family members ALL coming with big asks).</li>
               <li>Investing in a friend\'s business.</li>
               <li>Quitting your job before plan is finalized.</li>
               <li>Buying a fancy second home.</li>

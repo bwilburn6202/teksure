@@ -81,7 +81,7 @@ export default function HomeInventoryApps() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save receipts</h2>
             <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Snap photo of receipt right after purchase. Save to Photos > "Receipts" album.</li>
+              <li>Snap photo of receipt right after purchase. Save to Photos, Receipts album.</li>
               <li>Or scan to Apple Notes / Google Drive.</li>
               <li>Email receipts — keep a "Receipts" email folder forever.</li>
               <li>Box with original packaging in basement = also proof.</li>
