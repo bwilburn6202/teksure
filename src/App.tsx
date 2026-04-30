@@ -566,6 +566,11 @@ const FishingBoatingApps     = lazy(() => import("./pages/tools/FishingBoatingAp
 const PickleballTennisApps   = lazy(() => import("./pages/tools/PickleballTennisApps"));
 const OnlineBoardGames       = lazy(() => import("./pages/tools/OnlineBoardGames"));
 const WineApps               = lazy(() => import("./pages/tools/WineApps"));
+const ChessComForSeniors     = lazy(() => import("./pages/tools/ChessComForSeniors"));
+const VivinoWineApp          = lazy(() => import("./pages/tools/VivinoWineApp"));
+const TriviaAppsForSeniors   = lazy(() => import("./pages/tools/TriviaAppsForSeniors"));
+const AARPGamesForSeniors    = lazy(() => import("./pages/tools/AARPGamesForSeniors"));
+const JeopardyAtHomeApps     = lazy(() => import("./pages/tools/JeopardyAtHomeApps"));
 const CocktailCoffeeApps     = lazy(() => import("./pages/tools/CocktailCoffeeApps"));
 
 // ── Cycle 52 (April 29 2026) — security/thermostat/lock/leak/insurance ──
@@ -3009,6 +3014,11 @@ const AppContent = () => {
           <Route path="/tools/pickleball-tennis-apps" element={<PickleballTennisApps />} />
           <Route path="/tools/online-board-games" element={<OnlineBoardGames />} />
           <Route path="/tools/wine-apps" element={<WineApps />} />
+          <Route path="/tools/chess-com-for-seniors" element={<ChessComForSeniors />} />
+          <Route path="/tools/vivino-wine-app" element={<VivinoWineApp />} />
+          <Route path="/tools/trivia-apps-for-seniors" element={<TriviaAppsForSeniors />} />
+          <Route path="/tools/aarp-games-for-seniors" element={<AARPGamesForSeniors />} />
+          <Route path="/tools/jeopardy-at-home-apps" element={<JeopardyAtHomeApps />} />
           <Route path="/tools/cocktail-coffee-apps" element={<CocktailCoffeeApps />} />
 
           {/* Cycle 52 — security / thermostat / lock / leak / insurance */}
