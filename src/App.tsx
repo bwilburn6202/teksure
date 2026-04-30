@@ -1533,6 +1533,11 @@ const QigongForSeniors       = lazy(() => import("./pages/tools/QigongForSeniors
 const SeniorCyclingTips      = lazy(() => import("./pages/tools/SeniorCyclingTips"));
 const HikingForSeniors       = lazy(() => import("./pages/tools/HikingForSeniors"));
 const AquaticExerciseGuide   = lazy(() => import("./pages/tools/AquaticExerciseGuide"));
+const StretchingAppsForSeniors = lazy(() => import("./pages/tools/StretchingAppsForSeniors"));
+const HiitForActiveSeniors   = lazy(() => import("./pages/tools/HiitForActiveSeniors"));
+const StrengthTrainingForSeniors = lazy(() => import("./pages/tools/StrengthTrainingForSeniors"));
+const SeniorTaiChiClasses    = lazy(() => import("./pages/tools/SeniorTaiChiClasses"));
+const PickleballForBeginnerSeniors = lazy(() => import("./pages/tools/PickleballForBeginnerSeniors"));
 
 // ── Cycle 170 (April 29 2026) — computers + ecosystems ──
 const ChromebookForSeniors   = lazy(() => import("./pages/tools/ChromebookForSeniors"));
@@ -4003,6 +4008,11 @@ const AppContent = () => {
           <Route path="/tools/tai-chi-beginner" element={<TaiChiBeginner />} />
           <Route path="/tools/qigong-for-seniors" element={<QigongForSeniors />} />
           <Route path="/tools/senior-cycling-tips" element={<SeniorCyclingTips />} />
+          <Route path="/tools/stretching-apps-for-seniors" element={<StretchingAppsForSeniors />} />
+          <Route path="/tools/hiit-for-active-seniors" element={<HiitForActiveSeniors />} />
+          <Route path="/tools/strength-training-for-seniors" element={<StrengthTrainingForSeniors />} />
+          <Route path="/tools/senior-tai-chi-classes" element={<SeniorTaiChiClasses />} />
+          <Route path="/tools/pickleball-for-beginner-seniors" element={<PickleballForBeginnerSeniors />} />
           <Route path="/tools/hiking-for-seniors" element={<HikingForSeniors />} />
           <Route path="/tools/aquatic-exercise-guide" element={<AquaticExerciseGuide />} />
           <Route path="/tools/chromebook-for-seniors" element={<ChromebookForSeniors />} />
