@@ -2003,6 +2003,13 @@ const CrashDetectionForSeniors              = lazy(() => import("./pages/tools/C
 const SatellitePhonesForSeniorTravel        = lazy(() => import("./pages/tools/SatellitePhonesForSeniorTravel"));
 const EmergencyContactsForSeniorPhones      = lazy(() => import("./pages/tools/EmergencyContactsForSeniorPhones"));
 
+// ── Cycle 314 (April 30 2026) — senior caregiver tools ──
+const CaringBridgeForSeniorFamilies         = lazy(() => import("./pages/tools/CaringBridgeForSeniorFamilies"));
+const MealTrainForSeniorRecovery            = lazy(() => import("./pages/tools/MealTrainForSeniorRecovery"));
+const CaregiverAppCareCoordinationForSeniors = lazy(() => import("./pages/tools/CaregiverAppCareCoordinationForSeniors"));
+const HomeHealthAideAppsForSeniors          = lazy(() => import("./pages/tools/HomeHealthAideAppsForSeniors"));
+const MedicareAdvisorAppsForSeniors         = lazy(() => import("./pages/tools/MedicareAdvisorAppsForSeniors"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4634,6 +4641,11 @@ const AppContent = () => {
           <Route path="/tools/crash-detection-for-seniors" element={<CrashDetectionForSeniors />} />
           <Route path="/tools/satellite-phones-for-senior-travel" element={<SatellitePhonesForSeniorTravel />} />
           <Route path="/tools/emergency-contacts-for-senior-phones" element={<EmergencyContactsForSeniorPhones />} />
+          <Route path="/tools/caringbridge-for-senior-families" element={<CaringBridgeForSeniorFamilies />} />
+          <Route path="/tools/meal-train-for-senior-recovery" element={<MealTrainForSeniorRecovery />} />
+          <Route path="/tools/caregiver-app-care-coordination-for-seniors" element={<CaregiverAppCareCoordinationForSeniors />} />
+          <Route path="/tools/home-health-aide-apps-for-seniors" element={<HomeHealthAideAppsForSeniors />} />
+          <Route path="/tools/medicare-advisor-apps-for-seniors" element={<MedicareAdvisorAppsForSeniors />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
