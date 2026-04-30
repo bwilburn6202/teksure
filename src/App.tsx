@@ -868,6 +868,11 @@ const MedicationDeliveryServices = lazy(() => import("./pages/tools/MedicationDe
 // ── Cycle 98 (April 29 2026) — kitchen tech ──
 const SousVidePicks          = lazy(() => import("./pages/tools/SousVidePicks"));
 const InstantPotApps         = lazy(() => import("./pages/tools/InstantPotApps"));
+const PaprikaRecipeManager   = lazy(() => import("./pages/tools/PaprikaRecipeManager"));
+const AllrecipesYummlyApps   = lazy(() => import("./pages/tools/AllrecipesYummlyApps"));
+const SmartKitchenScalesApps = lazy(() => import("./pages/tools/SmartKitchenScalesApps"));
+const MealPlanningApps       = lazy(() => import("./pages/tools/MealPlanningApps"));
+const HelloFreshSeniorReview = lazy(() => import("./pages/tools/HelloFreshSeniorReview"));
 const KitchenScalePicks      = lazy(() => import("./pages/tools/KitchenScalePicks"));
 const RecipeOrganizers       = lazy(() => import("./pages/tools/RecipeOrganizers"));
 const SmartOvenPicks         = lazy(() => import("./pages/tools/SmartOvenPicks"));
@@ -3194,6 +3199,11 @@ const AppContent = () => {
           {/* Cycle 98 — kitchen tech */}
           <Route path="/tools/sous-vide-picks" element={<SousVidePicks />} />
           <Route path="/tools/instant-pot-apps" element={<InstantPotApps />} />
+          <Route path="/tools/paprika-recipe-manager" element={<PaprikaRecipeManager />} />
+          <Route path="/tools/allrecipes-yummly-apps" element={<AllrecipesYummlyApps />} />
+          <Route path="/tools/smart-kitchen-scales-apps" element={<SmartKitchenScalesApps />} />
+          <Route path="/tools/meal-planning-apps" element={<MealPlanningApps />} />
+          <Route path="/tools/hellofresh-senior-review" element={<HelloFreshSeniorReview />} />
           <Route path="/tools/kitchen-scale-picks" element={<KitchenScalePicks />} />
           <Route path="/tools/recipe-organizers" element={<RecipeOrganizers />} />
           <Route path="/tools/smart-oven-picks" element={<SmartOvenPicks />} />
