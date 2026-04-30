@@ -1181,6 +1181,11 @@ const StorageUnitPicks       = lazy(() => import("./pages/tools/StorageUnitPicks
 
 // ── Cycle 130 (April 29 2026) — emergency preparedness ──
 const HurricanePrep          = lazy(() => import("./pages/tools/HurricanePrep"));
+const RadarScopeWeatherApp   = lazy(() => import("./pages/tools/RadarScopeWeatherApp"));
+const HurricanePrepDigital   = lazy(() => import("./pages/tools/HurricanePrepDigital"));
+const SeniorWaterSafety      = lazy(() => import("./pages/tools/SeniorWaterSafety"));
+const AppleWeatherIphone     = lazy(() => import("./pages/tools/AppleWeatherIphone"));
+const SeniorEmergencyKitDigital = lazy(() => import("./pages/tools/SeniorEmergencyKitDigital"));
 const EarthquakePrep         = lazy(() => import("./pages/tools/EarthquakePrep"));
 const BlackoutKit            = lazy(() => import("./pages/tools/BlackoutKit"));
 const EvacuationGoBag        = lazy(() => import("./pages/tools/EvacuationGoBag"));
@@ -3654,6 +3659,11 @@ const AppContent = () => {
 
           {/* Cycle 130 — emergency preparedness */}
           <Route path="/tools/hurricane-prep" element={<HurricanePrep />} />
+          <Route path="/tools/radar-scope-weather-app" element={<RadarScopeWeatherApp />} />
+          <Route path="/tools/hurricane-prep-digital" element={<HurricanePrepDigital />} />
+          <Route path="/tools/senior-water-safety" element={<SeniorWaterSafety />} />
+          <Route path="/tools/apple-weather-iphone" element={<AppleWeatherIphone />} />
+          <Route path="/tools/senior-emergency-kit-digital" element={<SeniorEmergencyKitDigital />} />
           <Route path="/tools/earthquake-prep" element={<EarthquakePrep />} />
           <Route path="/tools/blackout-kit" element={<BlackoutKit />} />
           <Route path="/tools/evacuation-go-bag" element={<EvacuationGoBag />} />
