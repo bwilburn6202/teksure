@@ -993,6 +993,11 @@ const OverTheCounterHearingAids = lazy(() => import("./pages/tools/OverTheCounte
 const PrescriptionGlassesOnline = lazy(() => import("./pages/tools/PrescriptionGlassesOnline"));
 const DentalImplantGuide     = lazy(() => import("./pages/tools/DentalImplantGuide"));
 const ContactLensApps        = lazy(() => import("./pages/tools/ContactLensApps"));
+const WarbyParkerForSeniors  = lazy(() => import("./pages/tools/WarbyParkerForSeniors"));
+const ZenniOpticalReview     = lazy(() => import("./pages/tools/ZenniOpticalReview"));
+const OnlineEyeExamApps      = lazy(() => import("./pages/tools/OnlineEyeExamApps"));
+const SeniorReadingGlassesGuide = lazy(() => import("./pages/tools/SeniorReadingGlassesGuide"));
+const ContactLensOnlineSeniors = lazy(() => import("./pages/tools/ContactLensOnlineSeniors"));
 const TeethCleaningApps      = lazy(() => import("./pages/tools/TeethCleaningApps"));
 
 // ── Cycle 113 (April 29 2026) — senior auto + driving ──
@@ -3361,6 +3366,11 @@ const AppContent = () => {
           <Route path="/tools/prescription-glasses-online" element={<PrescriptionGlassesOnline />} />
           <Route path="/tools/dental-implant-guide" element={<DentalImplantGuide />} />
           <Route path="/tools/contact-lens-apps" element={<ContactLensApps />} />
+          <Route path="/tools/warby-parker-for-seniors" element={<WarbyParkerForSeniors />} />
+          <Route path="/tools/zenni-optical-review" element={<ZenniOpticalReview />} />
+          <Route path="/tools/online-eye-exam-apps" element={<OnlineEyeExamApps />} />
+          <Route path="/tools/senior-reading-glasses-guide" element={<SeniorReadingGlassesGuide />} />
+          <Route path="/tools/contact-lens-online-seniors" element={<ContactLensOnlineSeniors />} />
           <Route path="/tools/teeth-cleaning-apps" element={<TeethCleaningApps />} />
 
           {/* Cycle 113 — senior auto + driving */}
