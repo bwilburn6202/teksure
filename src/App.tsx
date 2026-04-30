@@ -1996,6 +1996,13 @@ const PetMedicationApps                     = lazy(() => import("./pages/tools/P
 const PetTrackerForSeniors                  = lazy(() => import("./pages/tools/PetTrackerForSeniors"));
 const VetTelehealthForSeniorPets            = lazy(() => import("./pages/tools/VetTelehealthForSeniorPets"));
 
+// ── Cycle 313 (April 30 2026) — senior emergency tech ──
+const MedicalAlertWatchesForSeniors         = lazy(() => import("./pages/tools/MedicalAlertWatchesForSeniors"));
+const SOSiPhoneSetupForSeniors              = lazy(() => import("./pages/tools/SOSiPhoneSetupForSeniors"));
+const CrashDetectionForSeniors              = lazy(() => import("./pages/tools/CrashDetectionForSeniors"));
+const SatellitePhonesForSeniorTravel        = lazy(() => import("./pages/tools/SatellitePhonesForSeniorTravel"));
+const EmergencyContactsForSeniorPhones      = lazy(() => import("./pages/tools/EmergencyContactsForSeniorPhones"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4622,6 +4629,11 @@ const AppContent = () => {
           <Route path="/tools/pet-medication-apps" element={<PetMedicationApps />} />
           <Route path="/tools/pet-tracker-for-seniors" element={<PetTrackerForSeniors />} />
           <Route path="/tools/vet-telehealth-for-senior-pets" element={<VetTelehealthForSeniorPets />} />
+          <Route path="/tools/medical-alert-watches-for-seniors" element={<MedicalAlertWatchesForSeniors />} />
+          <Route path="/tools/sos-iphone-setup-for-seniors" element={<SOSiPhoneSetupForSeniors />} />
+          <Route path="/tools/crash-detection-for-seniors" element={<CrashDetectionForSeniors />} />
+          <Route path="/tools/satellite-phones-for-senior-travel" element={<SatellitePhonesForSeniorTravel />} />
+          <Route path="/tools/emergency-contacts-for-senior-phones" element={<EmergencyContactsForSeniorPhones />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
