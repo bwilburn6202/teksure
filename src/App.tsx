@@ -1253,6 +1253,11 @@ const JoinASeniorClub        = lazy(() => import("./pages/tools/JoinASeniorClub"
 // ── Cycle 143 (April 29 2026) — senior travel mechanics ──
 const SnowbirdSetup          = lazy(() => import("./pages/tools/SnowbirdSetup"));
 const RVTravelSeniors        = lazy(() => import("./pages/tools/RVTravelSeniors"));
+const RVTripWizardGuide      = lazy(() => import("./pages/tools/RVTripWizardGuide"));
+const CampendiumAllStaysApps = lazy(() => import("./pages/tools/CampendiumAllStaysApps"));
+const StarlinkRVInternet     = lazy(() => import("./pages/tools/StarlinkRVInternet"));
+const RVMaintenanceAppsCheck = lazy(() => import("./pages/tools/RVMaintenanceAppsCheck"));
+const SeniorRVCommunity      = lazy(() => import("./pages/tools/SeniorRVCommunity"));
 const AirportWheelchairHelp  = lazy(() => import("./pages/tools/AirportWheelchairHelp"));
 const JetLagSeniors          = lazy(() => import("./pages/tools/JetLagSeniors"));
 const PackingChecklistSeniors = lazy(() => import("./pages/tools/PackingChecklistSeniors"));
@@ -3672,6 +3677,11 @@ const AppContent = () => {
           <Route path="/tools/join-a-senior-club" element={<JoinASeniorClub />} />
           <Route path="/tools/snowbird-setup" element={<SnowbirdSetup />} />
           <Route path="/tools/rv-travel-seniors" element={<RVTravelSeniors />} />
+          <Route path="/tools/rv-trip-wizard-guide" element={<RVTripWizardGuide />} />
+          <Route path="/tools/campendium-allstays-apps" element={<CampendiumAllStaysApps />} />
+          <Route path="/tools/starlink-rv-internet" element={<StarlinkRVInternet />} />
+          <Route path="/tools/rv-maintenance-apps-check" element={<RVMaintenanceAppsCheck />} />
+          <Route path="/tools/senior-rv-community" element={<SeniorRVCommunity />} />
           <Route path="/tools/airport-wheelchair-help" element={<AirportWheelchairHelp />} />
           <Route path="/tools/jet-lag-seniors" element={<JetLagSeniors />} />
           <Route path="/tools/packing-checklist-seniors" element={<PackingChecklistSeniors />} />
