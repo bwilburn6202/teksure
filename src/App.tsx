@@ -1520,6 +1520,11 @@ const FiverrFreelanceSeniors = lazy(() => import("./pages/tools/FiverrFreelanceS
 const BecomeATutorRetiree    = lazy(() => import("./pages/tools/BecomeATutorRetiree"));
 const PetSittingIncome       = lazy(() => import("./pages/tools/PetSittingIncome"));
 const ConsultingSecondAct    = lazy(() => import("./pages/tools/ConsultingSecondAct"));
+const SeniorConsultingPlatforms = lazy(() => import("./pages/tools/SeniorConsultingPlatforms"));
+const AirbnbHostingForRetirees = lazy(() => import("./pages/tools/AirbnbHostingForRetirees"));
+const PetSittingIncomeForSeniors = lazy(() => import("./pages/tools/PetSittingIncomeForSeniors"));
+const SeniorTutoringIncomeApps = lazy(() => import("./pages/tools/SeniorTutoringIncomeApps"));
+const SeniorBookkeepingFreelance = lazy(() => import("./pages/tools/SeniorBookkeepingFreelance"));
 
 // ── Cycle 166 (April 29 2026) — mindfulness + simple living ──
 const GratitudePracticeApp   = lazy(() => import("./pages/tools/GratitudePracticeApp"));
@@ -4020,6 +4025,11 @@ const AppContent = () => {
           <Route path="/tools/become-a-tutor-retiree" element={<BecomeATutorRetiree />} />
           <Route path="/tools/pet-sitting-income" element={<PetSittingIncome />} />
           <Route path="/tools/consulting-second-act" element={<ConsultingSecondAct />} />
+          <Route path="/tools/senior-consulting-platforms" element={<SeniorConsultingPlatforms />} />
+          <Route path="/tools/airbnb-hosting-for-retirees" element={<AirbnbHostingForRetirees />} />
+          <Route path="/tools/pet-sitting-income-for-seniors" element={<PetSittingIncomeForSeniors />} />
+          <Route path="/tools/senior-tutoring-income-apps" element={<SeniorTutoringIncomeApps />} />
+          <Route path="/tools/senior-bookkeeping-freelance" element={<SeniorBookkeepingFreelance />} />
           <Route path="/tools/gratitude-practice-app" element={<GratitudePracticeApp />} />
           <Route path="/tools/stoic-philosophy-seniors" element={<StoicPhilosophySeniors />} />
           <Route path="/tools/retreat-centers-for-seniors" element={<RetreatCentersForSeniors />} />
