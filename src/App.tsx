@@ -1828,6 +1828,13 @@ const MonarchMoneyForSeniorBudget           = lazy(() => import("./pages/tools/M
 const EmpowerPersonalCapitalForSeniors      = lazy(() => import("./pages/tools/EmpowerPersonalCapitalForSeniors"));
 const OnlineHighYieldSavingsForSeniors      = lazy(() => import("./pages/tools/OnlineHighYieldSavingsForSeniors"));
 
+// ── Cycle 289 (April 30 2026) — senior wellness + mental health ──
+const BetterHelpForSeniors                  = lazy(() => import("./pages/tools/BetterHelpForSeniors"));
+const CompanionRobotsForSeniors             = lazy(() => import("./pages/tools/CompanionRobotsForSeniors"));
+const HeadspaceForSeniors                   = lazy(() => import("./pages/tools/HeadspaceForSeniors"));
+const AICompanionAppsForSeniors             = lazy(() => import("./pages/tools/AICompanionAppsForSeniors"));
+const SleepStoriesForSeniorInsomnia         = lazy(() => import("./pages/tools/SleepStoriesForSeniorInsomnia"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4334,6 +4341,11 @@ const AppContent = () => {
           <Route path="/tools/monarch-money-for-senior-budget" element={<MonarchMoneyForSeniorBudget />} />
           <Route path="/tools/empower-personal-capital-for-seniors" element={<EmpowerPersonalCapitalForSeniors />} />
           <Route path="/tools/online-high-yield-savings-for-seniors" element={<OnlineHighYieldSavingsForSeniors />} />
+          <Route path="/tools/better-help-for-seniors" element={<BetterHelpForSeniors />} />
+          <Route path="/tools/companion-robots-for-seniors" element={<CompanionRobotsForSeniors />} />
+          <Route path="/tools/headspace-for-seniors" element={<HeadspaceForSeniors />} />
+          <Route path="/tools/ai-companion-apps-for-seniors" element={<AICompanionAppsForSeniors />} />
+          <Route path="/tools/sleep-stories-for-senior-insomnia" element={<SleepStoriesForSeniorInsomnia />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
