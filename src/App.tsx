@@ -2012,6 +2012,11 @@ const HospitalDischargeKit   = lazy(() => import("./pages/tools/HospitalDischarg
 const AiImageSpotter         = lazy(() => import("./pages/tools/AiImageSpotter"));
 const CordCutterWizard       = lazy(() => import("./pages/tools/CordCutterWizard"));
 const OnlineBankingSafety    = lazy(() => import("./pages/tools/OnlineBankingSafety"));
+const ChaseBankAppForSeniors = lazy(() => import("./pages/tools/ChaseBankAppForSeniors"));
+const BankOfAmericaAppGuide  = lazy(() => import("./pages/tools/BankOfAmericaAppGuide"));
+const CreditCardAppManagement = lazy(() => import("./pages/tools/CreditCardAppManagement"));
+const CreditScoreMonitorApps = lazy(() => import("./pages/tools/CreditScoreMonitorApps"));
+const UsaaForVeteranSeniors  = lazy(() => import("./pages/tools/UsaaForVeteranSeniors"));
 const SeniorFriendlyApps     = lazy(() => import("./pages/tools/SeniorFriendlyApps"));
 const FindLostItems          = lazy(() => import("./pages/tools/FindLostItems"));
 const SmartSpeakerPicker     = lazy(() => import("./pages/tools/SmartSpeakerPicker"));
@@ -4172,6 +4177,11 @@ const AppContent = () => {
           <Route path="/tools/ai-image-spotter"            element={<AiImageSpotter />} />
           <Route path="/tools/cord-cutter-wizard"          element={<CordCutterWizard />} />
           <Route path="/tools/online-banking-safety"       element={<OnlineBankingSafety />} />
+          <Route path="/tools/chase-bank-app-for-seniors" element={<ChaseBankAppForSeniors />} />
+          <Route path="/tools/bank-of-america-app-guide" element={<BankOfAmericaAppGuide />} />
+          <Route path="/tools/credit-card-app-management" element={<CreditCardAppManagement />} />
+          <Route path="/tools/credit-score-monitor-apps" element={<CreditScoreMonitorApps />} />
+          <Route path="/tools/usaa-for-veteran-seniors" element={<UsaaForVeteranSeniors />} />
           <Route path="/tools/senior-friendly-apps"        element={<SeniorFriendlyApps />} />
           <Route path="/tools/find-lost-items"             element={<FindLostItems />} />
           <Route path="/tools/smart-speaker-picker"        element={<SmartSpeakerPicker />} />
