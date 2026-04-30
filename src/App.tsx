@@ -692,6 +692,11 @@ const FoodDeliveryCompare    = lazy(() => import("./pages/tools/FoodDeliveryComp
 const CarRepairFinder        = lazy(() => import("./pages/tools/CarRepairFinder"));
 const EvChargingBasics       = lazy(() => import("./pages/tools/EvChargingBasics"));
 const RoadsideAssistanceApps = lazy(() => import("./pages/tools/RoadsideAssistanceApps"));
+const UberLyftForSeniors     = lazy(() => import("./pages/tools/UberLyftForSeniors"));
+const SeniorParatransitGuide = lazy(() => import("./pages/tools/SeniorParatransitGuide"));
+const SeniorDriverEvaluation = lazy(() => import("./pages/tools/SeniorDriverEvaluation"));
+const CarRentalAppsForSeniors = lazy(() => import("./pages/tools/CarRentalAppsForSeniors"));
+const GasBuddyAppGuide       = lazy(() => import("./pages/tools/GasBuddyAppGuide"));
 
 // ── Cycle 72 (April 29 2026) — kitchen + home tech ──
 const AirFryerBasics         = lazy(() => import("./pages/tools/AirFryerBasics"));
@@ -3053,6 +3058,11 @@ const AppContent = () => {
           <Route path="/tools/car-repair-finder" element={<CarRepairFinder />} />
           <Route path="/tools/ev-charging-basics" element={<EvChargingBasics />} />
           <Route path="/tools/roadside-assistance-apps" element={<RoadsideAssistanceApps />} />
+          <Route path="/tools/uber-lyft-for-seniors" element={<UberLyftForSeniors />} />
+          <Route path="/tools/senior-paratransit-guide" element={<SeniorParatransitGuide />} />
+          <Route path="/tools/senior-driver-evaluation" element={<SeniorDriverEvaluation />} />
+          <Route path="/tools/car-rental-apps-for-seniors" element={<CarRentalAppsForSeniors />} />
+          <Route path="/tools/gas-buddy-app-guide" element={<GasBuddyAppGuide />} />
 
           {/* Cycle 72 — kitchen + home tech */}
           <Route path="/tools/air-fryer-basics" element={<AirFryerBasics />} />
