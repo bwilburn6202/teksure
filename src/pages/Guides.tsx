@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, type LucideIcon } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, type LucideIcon } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -42,6 +42,34 @@ const categoryIcons: Record<GuideCategory, typeof Monitor> = {
   'tech-explained': Cpu,
   'troubleshooting': Wrench,
   'work-from-home': Briefcase,
+};
+
+const categoryTints: Partial<Record<GuideCategory, string>> = {
+  'windows-guides': 'from-sky-100 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/30',
+  'mac-guides': 'from-slate-100 to-zinc-50 dark:from-slate-900/60 dark:to-zinc-950/30',
+  'essential-skills': 'from-amber-100 to-yellow-50 dark:from-amber-950/40 dark:to-yellow-950/30',
+  'tips-tricks': 'from-fuchsia-100 to-pink-50 dark:from-fuchsia-950/40 dark:to-pink-950/30',
+  'ai-guides': 'from-purple-100 to-violet-50 dark:from-purple-950/40 dark:to-violet-950/30',
+  'ai-advanced': 'from-violet-100 to-purple-50 dark:from-violet-950/40 dark:to-purple-950/30',
+  'safety-guides': 'from-red-100 to-orange-50 dark:from-red-950/40 dark:to-orange-950/30',
+  'how-to': 'from-emerald-100 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
+  'app-guides': 'from-indigo-100 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/30',
+  'phone-guides': 'from-blue-100 to-sky-50 dark:from-blue-950/40 dark:to-sky-950/30',
+  'social-media': 'from-pink-100 to-rose-50 dark:from-pink-950/40 dark:to-rose-950/30',
+  'health-tech': 'from-rose-100 to-red-50 dark:from-rose-950/40 dark:to-red-950/30',
+  'government-civic': 'from-slate-100 to-stone-50 dark:from-slate-900/60 dark:to-stone-950/30',
+  'financial-tech': 'from-emerald-100 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/30',
+  'smart-home': 'from-teal-100 to-cyan-50 dark:from-teal-950/40 dark:to-cyan-950/30',
+  'entertainment': 'from-fuchsia-100 to-purple-50 dark:from-fuchsia-950/40 dark:to-purple-950/30',
+  'communication': 'from-cyan-100 to-blue-50 dark:from-cyan-950/40 dark:to-blue-950/30',
+  'life-transitions': 'from-stone-100 to-amber-50 dark:from-stone-900/60 dark:to-amber-950/30',
+  'internet-connectivity': 'from-sky-100 to-cyan-50 dark:from-sky-950/40 dark:to-cyan-950/30',
+  'online-privacy': 'from-zinc-100 to-slate-50 dark:from-zinc-900/60 dark:to-slate-950/30',
+  'online-banking': 'from-green-100 to-emerald-50 dark:from-green-950/40 dark:to-emerald-950/30',
+  'buying-guides': 'from-orange-100 to-amber-50 dark:from-orange-950/40 dark:to-amber-950/30',
+  'tech-explained': 'from-indigo-100 to-violet-50 dark:from-indigo-950/40 dark:to-violet-950/30',
+  'troubleshooting': 'from-red-100 to-rose-50 dark:from-red-950/40 dark:to-rose-950/30',
+  'work-from-home': 'from-blue-100 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/30',
 };
 
 const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
