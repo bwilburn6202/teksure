@@ -290,6 +290,11 @@ const RmdExplainer           = lazy(() => import("./pages/tools/RmdExplainer"));
 const FreeTaxFilingCoach     = lazy(() => import("./pages/tools/FreeTaxFilingCoach"));
 const MedicarePartDPicker    = lazy(() => import("./pages/tools/MedicarePartDPicker"));
 const AutoInsuranceComparison = lazy(() => import("./pages/tools/AutoInsuranceComparison"));
+const HomeInsuranceShoppingSeniors = lazy(() => import("./pages/tools/HomeInsuranceShoppingSeniors"));
+const UmbrellaInsuranceSeniors = lazy(() => import("./pages/tools/UmbrellaInsuranceSeniors"));
+const LongTermCareInsuranceDeep = lazy(() => import("./pages/tools/LongTermCareInsuranceDeep"));
+const PetInsuranceComparison = lazy(() => import("./pages/tools/PetInsuranceComparison"));
+const MedigapVsAdvantage     = lazy(() => import("./pages/tools/MedigapVsAdvantage"));
 
 // ── Cycle 16 (April 29 2026) — music/photos/scan/audio/home screen ──
 const MusicAppPicker         = lazy(() => import("./pages/tools/MusicAppPicker"));
@@ -2808,6 +2813,11 @@ const AppContent = () => {
           <Route path="/tools/free-tax-filing-coach" element={<FreeTaxFilingCoach />} />
           <Route path="/tools/medicare-part-d-picker" element={<MedicarePartDPicker />} />
           <Route path="/tools/auto-insurance-comparison" element={<AutoInsuranceComparison />} />
+          <Route path="/tools/home-insurance-shopping-seniors" element={<HomeInsuranceShoppingSeniors />} />
+          <Route path="/tools/umbrella-insurance-seniors" element={<UmbrellaInsuranceSeniors />} />
+          <Route path="/tools/long-term-care-insurance-deep" element={<LongTermCareInsuranceDeep />} />
+          <Route path="/tools/pet-insurance-comparison" element={<PetInsuranceComparison />} />
+          <Route path="/tools/medigap-vs-advantage" element={<MedigapVsAdvantage />} />
 
           {/* Cycle 16 — music/photos/scan/audio/home screen */}
           <Route path="/tools/music-app-picker" element={<MusicAppPicker />} />
