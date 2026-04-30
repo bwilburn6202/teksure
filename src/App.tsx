@@ -1940,6 +1940,13 @@ const GoogleAssistantRoutinesForSeniors     = lazy(() => import("./pages/tools/G
 const SiriFamilyGroupForSeniors             = lazy(() => import("./pages/tools/SiriFamilyGroupForSeniors"));
 const SmartSpeakerPrivacyForSeniors         = lazy(() => import("./pages/tools/SmartSpeakerPrivacyForSeniors"));
 
+// ── Cycle 305 (April 30 2026) — senior writing + journaling ──
+const JournalingAppsForSeniors              = lazy(() => import("./pages/tools/JournalingAppsForSeniors"));
+const MemoirWritingAppsForSeniors           = lazy(() => import("./pages/tools/MemoirWritingAppsForSeniors"));
+const GoogleDocsForSeniorWriting            = lazy(() => import("./pages/tools/GoogleDocsForSeniorWriting"));
+const GrammarlyForSeniorWriting             = lazy(() => import("./pages/tools/GrammarlyForSeniorWriting"));
+const PenZuJournalAlternative               = lazy(() => import("./pages/tools/PenZuJournalAlternative"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4526,6 +4533,11 @@ const AppContent = () => {
           <Route path="/tools/google-assistant-routines-for-seniors" element={<GoogleAssistantRoutinesForSeniors />} />
           <Route path="/tools/siri-family-group-for-seniors" element={<SiriFamilyGroupForSeniors />} />
           <Route path="/tools/smart-speaker-privacy-for-seniors" element={<SmartSpeakerPrivacyForSeniors />} />
+          <Route path="/tools/journaling-apps-for-seniors" element={<JournalingAppsForSeniors />} />
+          <Route path="/tools/memoir-writing-apps-for-seniors" element={<MemoirWritingAppsForSeniors />} />
+          <Route path="/tools/google-docs-for-senior-writing" element={<GoogleDocsForSeniorWriting />} />
+          <Route path="/tools/grammarly-for-senior-writing" element={<GrammarlyForSeniorWriting />} />
+          <Route path="/tools/penzu-journal-alternative" element={<PenZuJournalAlternative />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
