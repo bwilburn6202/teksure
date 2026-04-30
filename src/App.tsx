@@ -920,6 +920,11 @@ const FurnitureAssemblyHelp  = lazy(() => import("./pages/tools/FurnitureAssembl
 // ── Cycle 94 (April 29 2026) — nutrition + meals ──
 const MealKitDelivery        = lazy(() => import("./pages/tools/MealKitDelivery"));
 const GroceryDeliveryApps    = lazy(() => import("./pages/tools/GroceryDeliveryApps"));
+const OpenTableForSeniors    = lazy(() => import("./pages/tools/OpenTableForSeniors"));
+const DoorDashGrubhubSeniors = lazy(() => import("./pages/tools/DoorDashGrubhubSeniors"));
+const YelpForSeniorReviewers = lazy(() => import("./pages/tools/YelpForSeniorReviewers"));
+const TipCalculatorApps      = lazy(() => import("./pages/tools/TipCalculatorApps"));
+const HappyHourFinderApps    = lazy(() => import("./pages/tools/HappyHourFinderApps"));
 const InstacartForSeniors    = lazy(() => import("./pages/tools/InstacartForSeniors"));
 const IbottaCashbackForSeniors = lazy(() => import("./pages/tools/IbottaCashbackForSeniors"));
 const AmazonFreshWalmartPlus = lazy(() => import("./pages/tools/AmazonFreshWalmartPlus"));
@@ -3433,6 +3438,11 @@ const AppContent = () => {
           {/* Cycle 94 — nutrition + meals */}
           <Route path="/tools/meal-kit-delivery" element={<MealKitDelivery />} />
           <Route path="/tools/grocery-delivery-apps" element={<GroceryDeliveryApps />} />
+          <Route path="/tools/open-table-for-seniors" element={<OpenTableForSeniors />} />
+          <Route path="/tools/doordash-grubhub-seniors" element={<DoorDashGrubhubSeniors />} />
+          <Route path="/tools/yelp-for-senior-reviewers" element={<YelpForSeniorReviewers />} />
+          <Route path="/tools/tip-calculator-apps" element={<TipCalculatorApps />} />
+          <Route path="/tools/happy-hour-finder-apps" element={<HappyHourFinderApps />} />
           <Route path="/tools/instacart-for-seniors" element={<InstacartForSeniors />} />
           <Route path="/tools/ibotta-cashback-for-seniors" element={<IbottaCashbackForSeniors />} />
           <Route path="/tools/amazon-fresh-walmart-plus" element={<AmazonFreshWalmartPlus />} />
