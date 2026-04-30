@@ -1739,6 +1739,13 @@ const DashcamPicker          = lazy(() => import("./pages/tools/DashcamPicker"))
 const CarBatteryReplacement  = lazy(() => import("./pages/tools/CarBatteryReplacement"));
 const CarMaintenanceSchedule = lazy(() => import("./pages/tools/CarMaintenanceSchedule"));
 
+// ── Cycle 277 (April 30 2026) — auto + driving apps ──
+const CarfaxKBBAppGuide        = lazy(() => import("./pages/tools/CarfaxKBBAppGuide"));
+const EVChargingForSeniors     = lazy(() => import("./pages/tools/EVChargingForSeniors"));
+const SmartParkingForSeniors   = lazy(() => import("./pages/tools/SmartParkingForSeniors"));
+const AutoFixDIYAppsForSeniors = lazy(() => import("./pages/tools/AutoFixDIYAppsForSeniors"));
+const SeniorMotorcycleRiding   = lazy(() => import("./pages/tools/SeniorMotorcycleRiding"));
+
 // ── Cycle 195 (April 29 2026) — DIY home ──
 const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
 const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
@@ -4180,6 +4187,11 @@ const AppContent = () => {
           <Route path="/tools/dashcam-picker" element={<DashcamPicker />} />
           <Route path="/tools/car-battery-replacement" element={<CarBatteryReplacement />} />
           <Route path="/tools/car-maintenance-schedule" element={<CarMaintenanceSchedule />} />
+          <Route path="/tools/carfax-kbb-app-guide" element={<CarfaxKBBAppGuide />} />
+          <Route path="/tools/ev-charging-for-seniors" element={<EVChargingForSeniors />} />
+          <Route path="/tools/smart-parking-for-seniors" element={<SmartParkingForSeniors />} />
+          <Route path="/tools/auto-fix-diy-apps-for-seniors" element={<AutoFixDIYAppsForSeniors />} />
+          <Route path="/tools/senior-motorcycle-riding" element={<SeniorMotorcycleRiding />} />
           <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
           <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
           <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
