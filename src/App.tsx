@@ -796,6 +796,11 @@ const AccessibilityShortcutsIphone = lazy(() => import("./pages/tools/Accessibil
 const AndroidAccessibilityFeatures = lazy(() => import("./pages/tools/AndroidAccessibilityFeatures"));
 const EmergencySOSPhones     = lazy(() => import("./pages/tools/EmergencySOSPhones"));
 const ColorBlindTools        = lazy(() => import("./pages/tools/ColorBlindTools"));
+const SnapseedPhotoEditing   = lazy(() => import("./pages/tools/SnapseedPhotoEditing"));
+const IphoneCameraTipsSeniors = lazy(() => import("./pages/tools/IphoneCameraTipsSeniors"));
+const PhotoOrganizingMassive = lazy(() => import("./pages/tools/PhotoOrganizingMassive"));
+const AirDropForSharing      = lazy(() => import("./pages/tools/AirDropForSharing"));
+const GooglePhotosForSeniors = lazy(() => import("./pages/tools/GooglePhotosForSeniors"));
 const OneHandedTyping        = lazy(() => import("./pages/tools/OneHandedTyping"));
 const BrailleDisplays        = lazy(() => import("./pages/tools/BrailleDisplays"));
 const DictationTraining      = lazy(() => import("./pages/tools/DictationTraining"));
@@ -3204,6 +3209,11 @@ const AppContent = () => {
           <Route path="/tools/android-accessibility-features" element={<AndroidAccessibilityFeatures />} />
           <Route path="/tools/emergency-sos-phones" element={<EmergencySOSPhones />} />
           <Route path="/tools/color-blind-tools" element={<ColorBlindTools />} />
+          <Route path="/tools/snapseed-photo-editing" element={<SnapseedPhotoEditing />} />
+          <Route path="/tools/iphone-camera-tips-seniors" element={<IphoneCameraTipsSeniors />} />
+          <Route path="/tools/photo-organizing-massive" element={<PhotoOrganizingMassive />} />
+          <Route path="/tools/airdrop-for-sharing" element={<AirDropForSharing />} />
+          <Route path="/tools/google-photos-for-seniors" element={<GooglePhotosForSeniors />} />
           <Route path="/tools/one-handed-typing" element={<OneHandedTyping />} />
           <Route path="/tools/braille-displays" element={<BrailleDisplays />} />
           <Route path="/tools/dictation-training" element={<DictationTraining />} />
